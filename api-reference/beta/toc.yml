@@ -819,14 +819,6 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-          - name: 通知
-            href: resources/notifications-api-overview.md
-            items:
-              - name: 通知
-                href: resources/projectrome-notification.md
-                items:
-                  - name: 创建和发送通知
-                    href: api/projectrome-notification-post.md
       - name: 客户预订
         displayName: 'Bookings, Microsoft Bookings'
         items:
@@ -835,7 +827,7 @@ items:
           - name: 预订业务
             href: resources/bookingbusiness.md
             items:
-              - name: 列出
+              - name: List
                 href: api/bookingbusiness-list.md
               - name: 创建
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -869,7 +861,7 @@ items:
           - name: 预订货币
             href: resources/bookingcurrency.md
             items:
-              - name: 列表
+              - name: 列出
                 href: api/bookingcurrency-list.md
               - name: 获取
                 href: api/bookingcurrency-get.md
@@ -1074,7 +1066,7 @@ items:
               - name: Android 托管的应用商店应用配置
                 href: resources/intune-apps-androidmanagedstoreappconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-androidmanagedstoreappconfiguration-list.md
                   - name: 获取
                     href: api/intune-apps-androidmanagedstoreappconfiguration-get.md
@@ -1087,7 +1079,7 @@ items:
               - name: Android 托管的应用商店应用配置架构
                 href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md
                   - name: 获取
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md
@@ -1286,7 +1278,7 @@ items:
               - name: iOS VPP 应用分配的用户许可证
                 href: resources/intune-apps-iosvppappassigneduserlicense.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-iosvppappassigneduserlicense-list.md
                   - name: 获取
                     href: api/intune-apps-iosvppappassigneduserlicense-get.md
@@ -1303,7 +1295,7 @@ items:
               - name: iOS VPP 电子书
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-books-iosvppebook-list.md
                   - name: 获取
                     href: api/intune-books-iosvppebook-get.md
@@ -1508,7 +1500,7 @@ items:
               - name: 托管的电子书类别
                 href: resources/intune-books-managedebookcategory.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-books-managedebookcategory-list.md
                   - name: 获取
                     href: api/intune-books-managedebookcategory-get.md
@@ -1521,7 +1513,7 @@ items:
               - name: 受管理的 iOS LOB 应用
                 href: resources/intune-apps-managedioslobapp.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-managedioslobapp-list.md
                   - name: 获取
                     href: api/intune-apps-managedioslobapp-get.md
@@ -1727,7 +1719,7 @@ items:
               - name: 移动 LOB 应用
                 href: resources/intune-apps-mobilelobapp.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-mobilelobapp-list.md
                   - name: 获取
                     href: api/intune-apps-mobilelobapp-get.md
@@ -1736,7 +1728,7 @@ items:
               - name: Office 客户端配置
                 href: resources/intune-cirrus-officeclientconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-cirrus-officeclientconfiguration-list.md
                   - name: 获取
                     href: api/intune-cirrus-officeclientconfiguration-get.md
@@ -2795,7 +2787,7 @@ items:
               - name: Android VPN 配置
                 href: resources/intune-deviceconfig-androidvpnconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-androidvpnconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidvpnconfiguration-get.md
@@ -2810,7 +2802,7 @@ items:
               - name: Android Wi-Fi 配置
                 href: resources/intune-deviceconfig-androidwificonfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -3875,7 +3867,7 @@ items:
               - name: iOS 企业版 Wi-Fi 配置
                 href: resources/intune-deviceconfig-iosenterprisewificonfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-get.md
@@ -3888,7 +3880,7 @@ items:
               - name: iOS 常规设备配置
                 href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -4454,7 +4446,7 @@ items:
               - name: 用户 PFX 证书
                 href: resources/intune-raimportcerts-userpfxcertificate.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-raimportcerts-userpfxcertificate-list.md
                   - name: 获取
                     href: api/intune-raimportcerts-userpfxcertificate-get.md
@@ -4519,7 +4511,7 @@ items:
               - name: Windows 10 证书配置文件基础
                 href: resources/intune-deviceconfig-windows10certificateprofilebase.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windows10certificateprofilebase-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10certificateprofilebase-get.md
@@ -6214,7 +6206,7 @@ items:
               - name: Intune 品牌打造配置文件
                 href: resources/intune-wip-intunebrandingprofile.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-wip-intunebrandingprofile-list.md
                   - name: 获取
                     href: api/intune-wip-intunebrandingprofile-get.md
@@ -6229,7 +6221,7 @@ items:
               - name: Intune 品牌打造配置文件分配
                 href: resources/intune-wip-intunebrandingprofileassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-wip-intunebrandingprofileassignment-list.md
                   - name: 获取
                     href: api/intune-wip-intunebrandingprofileassignment-get.md
@@ -7960,14 +7952,14 @@ items:
               - name: 角色定义
                 href: resources/governanceroledefinition.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/governanceroledefinition-list.md
                   - name: 获取
                     href: api/governanceroledefinition-get.md
               - name: 角色设置
                 href: resources/governancerolesetting.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/governancerolesetting-list.md
                   - name: 获取
                     href: api/governancerolesetting-get.md
@@ -8330,6 +8322,14 @@ items:
             items:
               - name: 获取资源
                 href: api/resource-get.md
+      - name: 通知
+        href: resources/notifications-api-overview.md
+        items:
+          - name: 通知
+            href: resources/projectrome-notification.md
+            items:
+              - name: 创建和发送通知
+                href: api/notifications-post.md
       - name: 个人联系人
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'

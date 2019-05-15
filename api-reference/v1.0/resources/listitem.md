@@ -1,48 +1,102 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: ListItem
+title: listItem 资源
+description: 此资源表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 873ad5961c9cadb444c6fe9f2afec69853cc5d85
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519946"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968798"
 ---
-# <a name="listitem-resource"></a><span data-ttu-id="a48fd-102">ListItem 资源</span><span class="sxs-lookup"><span data-stu-id="a48fd-102">ListItem resource</span></span>
+# <a name="listitem-resource"></a><span data-ttu-id="9d76e-103">listItem 资源</span><span class="sxs-lookup"><span data-stu-id="9d76e-103">ListItem resource</span></span>
 
-<span data-ttu-id="a48fd-103">此资源表示 SharePoint **[list][]** 中的项目。</span><span class="sxs-lookup"><span data-stu-id="a48fd-103">This resource represents an item in a SharePoint **[list][]**.</span></span>
-<span data-ttu-id="a48fd-104">该列表中的列值可通过 `fieldValueSet` 字典获得。</span><span class="sxs-lookup"><span data-stu-id="a48fd-104">Column values in the list are available through the `fieldValueSet` dictionary.</span></span>
+<span data-ttu-id="9d76e-104">此资源表示 SharePoint **[list][]** 中的项目。</span><span class="sxs-lookup"><span data-stu-id="9d76e-104">This resource represents an item in a SharePoint **[list][]**.</span></span>
+<span data-ttu-id="9d76e-105">该列表中的列值可通过 `fieldValueSet` 字典获得。</span><span class="sxs-lookup"><span data-stu-id="9d76e-105">Column values in the list are available through the `fieldValueSet` dictionary.</span></span>
 
-## <a name="tasks-on-a-listitem"></a><span data-ttu-id="a48fd-105">listItem 上的任务</span><span class="sxs-lookup"><span data-stu-id="a48fd-105">Tasks on a listItem</span></span>
+## <a name="methods"></a><span data-ttu-id="9d76e-106">方法</span><span class="sxs-lookup"><span data-stu-id="9d76e-106">Methods</span></span>
 
-<span data-ttu-id="a48fd-106">下列任务可用于 **listItem** 资源。</span><span class="sxs-lookup"><span data-stu-id="a48fd-106">The following tasks are available for **listItem** resources.</span></span>
-<span data-ttu-id="a48fd-107">下面的所有示例都与**[list][]** 相关，例如：`https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`。</span><span class="sxs-lookup"><span data-stu-id="a48fd-107">All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.</span></span>
+<span data-ttu-id="9d76e-107">下列方法可用于 **listItem** 资源。</span><span class="sxs-lookup"><span data-stu-id="9d76e-107">The following tasks are available for **listItem** resources.</span></span>
+<span data-ttu-id="9d76e-108">所有示例都与 **[list][]** 相关：`https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`。</span><span class="sxs-lookup"><span data-stu-id="9d76e-108">All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.</span></span>
 
-| <span data-ttu-id="a48fd-108">常见任务</span><span class="sxs-lookup"><span data-stu-id="a48fd-108">Common task</span></span>                    | <span data-ttu-id="a48fd-109">HTTP 方法</span><span class="sxs-lookup"><span data-stu-id="a48fd-109">HTTP method</span></span>
-|:-------------------------------|:------------------------
-| <span data-ttu-id="a48fd-110">[获取][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-110">[Get][]</span></span>                        | <span data-ttu-id="a48fd-111">GET /items/{item-id}</span><span class="sxs-lookup"><span data-stu-id="a48fd-111">GET /items/{item-id}</span></span>
-| <span data-ttu-id="a48fd-112">[获取列值][Get]</span><span class="sxs-lookup"><span data-stu-id="a48fd-112">[Get column values][Get]</span></span>       | <span data-ttu-id="a48fd-113">GET /items/{item-id}?expand=fields</span><span class="sxs-lookup"><span data-stu-id="a48fd-113">GET /items/{item-id}?expand=fields</span></span>
-| <span data-ttu-id="a48fd-114">[创建][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-114">[Create][]</span></span>                     | <span data-ttu-id="a48fd-115">POST /items</span><span class="sxs-lookup"><span data-stu-id="a48fd-115">POST /items</span></span>
-| <span data-ttu-id="a48fd-116">[删除][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-116">[Delete][]</span></span>                     | <span data-ttu-id="a48fd-117">DELETE /items/{item-id}</span><span class="sxs-lookup"><span data-stu-id="a48fd-117">DELETE /items/{item-id}</span></span>
-| <span data-ttu-id="a48fd-118">[更新][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-118">[Update][]</span></span>                     | <span data-ttu-id="a48fd-119">PATCH /items/{item-id}</span><span class="sxs-lookup"><span data-stu-id="a48fd-119">PATCH /items/{item-id}</span></span>
-| <span data-ttu-id="a48fd-120">[更新列值][Update]</span><span class="sxs-lookup"><span data-stu-id="a48fd-120">[Update column values][Update]</span></span> | <span data-ttu-id="a48fd-121">PATCH /items/{item-id}/fields</span><span class="sxs-lookup"><span data-stu-id="a48fd-121">PATCH /items/{item-id}/fields</span></span>
+| <span data-ttu-id="9d76e-109">方法</span><span class="sxs-lookup"><span data-stu-id="9d76e-109">Method</span></span>                    | <span data-ttu-id="9d76e-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="9d76e-110">Return Type</span></span> | <span data-ttu-id="9d76e-111">说明</span><span class="sxs-lookup"><span data-stu-id="9d76e-111">Description</span></span>
+|:-------------------------------|:-------------------|:------
+| <span data-ttu-id="9d76e-112">[Get][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-112">[Get][]</span></span>                   | <span data-ttu-id="9d76e-113">lisItem</span><span class="sxs-lookup"><span data-stu-id="9d76e-113">lisItem</span></span>| <span data-ttu-id="9d76e-114">获取列表中的项。</span><span class="sxs-lookup"><span data-stu-id="9d76e-114">Get an item in a list</span></span>
+| <span data-ttu-id="9d76e-115">[获取列值][Get]</span><span class="sxs-lookup"><span data-stu-id="9d76e-115">[Get column values][Get]</span></span>       | <span data-ttu-id="9d76e-116">listItem</span><span class="sxs-lookup"><span data-stu-id="9d76e-116">listItem</span></span> | <span data-ttu-id="9d76e-117">从 listItem 获取列的值。</span><span class="sxs-lookup"><span data-stu-id="9d76e-117">Get column values from listItem.</span></span>
+| <span data-ttu-id="9d76e-118">[获取分析结果][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-118">[Get analytics][]</span></span>              | <span data-ttu-id="9d76e-119">[itemAnalytics][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-119">[itemAnalytics][]</span></span>| <span data-ttu-id="9d76e-120">对此资源可获取分析。</span><span class="sxs-lookup"><span data-stu-id="9d76e-120">Get analytics for this resource.</span></span> 
+| <span data-ttu-id="9d76e-121">[按间隔获取活动][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-121">[Get activities by interval][]</span></span> | <span data-ttu-id="9d76e-122">[itemActivityStat][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-122">[itemActivityStat][]</span></span>| <span data-ttu-id="9d76e-123">在指定的时间间隔内获取 itemActivityStats 的集合。</span><span class="sxs-lookup"><span data-stu-id="9d76e-123">Get a collection of itemActivityStats within the specified time interval.</span></span>
+| <span data-ttu-id="9d76e-124">[Create][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-124">[Create][]</span></span>                     | <span data-ttu-id="9d76e-125">listItem</span><span class="sxs-lookup"><span data-stu-id="9d76e-125">listItem</span></span> | <span data-ttu-id="9d76e-126">在列表中创建新的 listItem。</span><span class="sxs-lookup"><span data-stu-id="9d76e-126">Create a new listItem in a list.</span></span>
+| <span data-ttu-id="9d76e-127">[删除][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-127">[Delete][]</span></span>                     | <span data-ttu-id="9d76e-128">无内容</span><span class="sxs-lookup"><span data-stu-id="9d76e-128">204 No Content</span></span> | <span data-ttu-id="9d76e-129">从 list 中删除项。</span><span class="sxs-lookup"><span data-stu-id="9d76e-129">Removes an item from a list.</span></span>
+| <span data-ttu-id="9d76e-130">[Update][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-130">[Update][]</span></span>                     | <span data-ttu-id="9d76e-131">[fieldValueSet][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-131">[fieldValueSet][]</span></span>| <span data-ttu-id="9d76e-132">更新 listItem 上的属性。</span><span class="sxs-lookup"><span data-stu-id="9d76e-132">Update the properties on a listItem.</span></span>
+| <span data-ttu-id="9d76e-133">[更新列值][Update]</span><span class="sxs-lookup"><span data-stu-id="9d76e-133">[Update column values][Update]</span></span> | <span data-ttu-id="9d76e-134">[fieldValueSet][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-134">[fieldValueSet][]</span></span>| <span data-ttu-id="9d76e-135">更新 listItem 上的列值。</span><span class="sxs-lookup"><span data-stu-id="9d76e-135">Update column values on a listItem.</span></span>
 
-[获取]: ../api/listitem-get.md
 [Get]: ../api/listitem-get.md
-[创建]: ../api/listitem-create.md
+[获取分析结果]: ../api/itemanalytics-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[按间隔获取活动]: ../api/itemactivitystat-getactivitybyinterval.md
+[Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 [Create]: ../api/listitem-create.md
 [删除]: ../api/listitem-delete.md
 [Delete]: ../api/listitem-delete.md
-[更新]: ../api/listitem-update.md
 [Update]: ../api/listitem-update.md
 
-## <a name="json-representation"></a><span data-ttu-id="a48fd-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a48fd-126">JSON representation</span></span>
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
 
-<span data-ttu-id="a48fd-127">下面是 **listItem** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a48fd-127">Here is a JSON representation of a **listItem** resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="9d76e-144">属性</span><span class="sxs-lookup"><span data-stu-id="9d76e-144">Properties</span></span>
+
+<span data-ttu-id="9d76e-145">**listItem** 资源具有以下属性。</span><span class="sxs-lookup"><span data-stu-id="9d76e-145">The **listItem** resource has the following properties.</span></span>
+
+| <span data-ttu-id="9d76e-146">属性名称</span><span class="sxs-lookup"><span data-stu-id="9d76e-146">Property name</span></span> | <span data-ttu-id="9d76e-147">类型</span><span class="sxs-lookup"><span data-stu-id="9d76e-147">Type</span></span>                | <span data-ttu-id="9d76e-148">说明</span><span class="sxs-lookup"><span data-stu-id="9d76e-148">Description</span></span>
+|:--------------|:--------------------|:-------------------------------
+| <span data-ttu-id="9d76e-149">contentType</span><span class="sxs-lookup"><span data-stu-id="9d76e-149">contentType</span></span>   | <span data-ttu-id="9d76e-150">[contentTypeInfo][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-150">[contentTypeInfo][]</span></span> | <span data-ttu-id="9d76e-151">此列表项的内容类型</span><span class="sxs-lookup"><span data-stu-id="9d76e-151">The content type of this list item</span></span>
+
+<span data-ttu-id="9d76e-152">以下属性继承自 \*\* [baseItem][]\*\*。</span><span class="sxs-lookup"><span data-stu-id="9d76e-152">The following properties are inherited from **[baseItem][]**.</span></span>
+
+| <span data-ttu-id="9d76e-153">属性名称</span><span class="sxs-lookup"><span data-stu-id="9d76e-153">Property name</span></span>        | <span data-ttu-id="9d76e-154">类型</span><span class="sxs-lookup"><span data-stu-id="9d76e-154">Type</span></span>              | <span data-ttu-id="9d76e-155">说明</span><span class="sxs-lookup"><span data-stu-id="9d76e-155">Description</span></span>
+|:---------------------|:------------------|:----------------------------------
+| <span data-ttu-id="9d76e-156">id</span><span class="sxs-lookup"><span data-stu-id="9d76e-156">id</span></span>                   | <span data-ttu-id="9d76e-157">string</span><span class="sxs-lookup"><span data-stu-id="9d76e-157">string</span></span>            | <span data-ttu-id="9d76e-p103">项的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p103">The unique identifier of the item. Read-only.</span></span>
+| <span data-ttu-id="9d76e-160">name</span><span class="sxs-lookup"><span data-stu-id="9d76e-160">name</span></span>                 | <span data-ttu-id="9d76e-161">string</span><span class="sxs-lookup"><span data-stu-id="9d76e-161">string</span></span>            | <span data-ttu-id="9d76e-162">项目名称/标题。</span><span class="sxs-lookup"><span data-stu-id="9d76e-162">The name / title of the item.</span></span>
+| <span data-ttu-id="9d76e-163">createdBy</span><span class="sxs-lookup"><span data-stu-id="9d76e-163">createdBy</span></span>            | <span data-ttu-id="9d76e-164">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-164">[identitySet][]</span></span>   | <span data-ttu-id="9d76e-165">此项的创建者的标识。</span><span class="sxs-lookup"><span data-stu-id="9d76e-165">Identity of the creator of this item.</span></span> <span data-ttu-id="9d76e-166">只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-166">Read-only.</span></span>
+| <span data-ttu-id="9d76e-167">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="9d76e-167">createdDateTime</span></span>      | <span data-ttu-id="9d76e-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9d76e-168">DateTimeOffset</span></span>    | <span data-ttu-id="9d76e-p105">创建项目的日期和时间。只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p105">The date and time the item was created. Read-only.</span></span>
+| <span data-ttu-id="9d76e-171">说明</span><span class="sxs-lookup"><span data-stu-id="9d76e-171">description</span></span>          | <span data-ttu-id="9d76e-172">string</span><span class="sxs-lookup"><span data-stu-id="9d76e-172">string</span></span>            | <span data-ttu-id="9d76e-173">项目的描述性文本。</span><span class="sxs-lookup"><span data-stu-id="9d76e-173">The descriptive text for the item.</span></span>
+| <span data-ttu-id="9d76e-174">eTag</span><span class="sxs-lookup"><span data-stu-id="9d76e-174">eTag</span></span>                 | <span data-ttu-id="9d76e-175">字符串</span><span class="sxs-lookup"><span data-stu-id="9d76e-175">string</span></span>            | <span data-ttu-id="9d76e-p106">该项目的 ETag。只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p106">ETag for the item. Read-only.</span></span>                                                          |
+| <span data-ttu-id="9d76e-178">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="9d76e-178">lastModifiedBy</span></span>       | <span data-ttu-id="9d76e-179">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-179">[identitySet][]</span></span>   | <span data-ttu-id="9d76e-180">此项的最后一个修饰符的标识。</span><span class="sxs-lookup"><span data-stu-id="9d76e-180">Identity of the last modifier of this item.</span></span> <span data-ttu-id="9d76e-181">只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-181">Read-only.</span></span>
+| <span data-ttu-id="9d76e-182">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9d76e-182">lastModifiedDateTime</span></span> | <span data-ttu-id="9d76e-183">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9d76e-183">DateTimeOffset</span></span>    | <span data-ttu-id="9d76e-p108">上次修改项目的日期和时间。只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p108">The date and time the item was last modified. Read-only.</span></span>
+| <span data-ttu-id="9d76e-186">parentReference</span><span class="sxs-lookup"><span data-stu-id="9d76e-186">parentReference</span></span>      | <span data-ttu-id="9d76e-187">[itemReference][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-187">[itemReference][]</span></span> | <span data-ttu-id="9d76e-p109">父信息（如果此项具有父级）。读写。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p109">Parent information, if the item has a parent. Read-write.</span></span>
+| <span data-ttu-id="9d76e-190">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="9d76e-190">sharepointIds</span></span>        | <span data-ttu-id="9d76e-191">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-191">[sharepointIds][]</span></span> | <span data-ttu-id="9d76e-p110">返回对 SharePoint REST 兼容性有用的标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p110">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>
+| <span data-ttu-id="9d76e-194">webUrl</span><span class="sxs-lookup"><span data-stu-id="9d76e-194">webUrl</span></span>               | <span data-ttu-id="9d76e-195">string (url)</span><span class="sxs-lookup"><span data-stu-id="9d76e-195">string (url)</span></span>      | <span data-ttu-id="9d76e-p111">在浏览器中显示此项目的 URL。只读。</span><span class="sxs-lookup"><span data-stu-id="9d76e-p111">URL that displays the item in the browser. Read-only.</span></span>
+
+## <a name="relationships"></a><span data-ttu-id="9d76e-198">关系</span><span class="sxs-lookup"><span data-stu-id="9d76e-198">Relationships</span></span>
+
+ <span data-ttu-id="9d76e-199">**listItem** 资源与其他资源具有以下关系。</span><span class="sxs-lookup"><span data-stu-id="9d76e-199">The **listItem** resource has the following relationships to other resources.</span></span>
+
+| <span data-ttu-id="9d76e-200">关系名称</span><span class="sxs-lookup"><span data-stu-id="9d76e-200">Relationship name</span></span> | <span data-ttu-id="9d76e-201">类型</span><span class="sxs-lookup"><span data-stu-id="9d76e-201">Type</span></span>                           | <span data-ttu-id="9d76e-202">说明</span><span class="sxs-lookup"><span data-stu-id="9d76e-202">Description</span></span>
+|:------------------|:-------------------------------|:-------------------------------
+| <span data-ttu-id="9d76e-203">activities</span><span class="sxs-lookup"><span data-stu-id="9d76e-203">activities</span></span>        | <span data-ttu-id="9d76e-204">[itemActivity][] 集合</span><span class="sxs-lookup"><span data-stu-id="9d76e-204">[itemActivity][] collection</span></span>    | <span data-ttu-id="9d76e-205">最近发生在此项上的活动的列表。</span><span class="sxs-lookup"><span data-stu-id="9d76e-205">The list of recent activities that took place on this item.</span></span>
+| <span data-ttu-id="9d76e-206">分析</span><span class="sxs-lookup"><span data-stu-id="9d76e-206">analytics</span></span>         | <span data-ttu-id="9d76e-207">[itemAnalytics][] 资源</span><span class="sxs-lookup"><span data-stu-id="9d76e-207">[itemAnalytics][] resource</span></span>     | <span data-ttu-id="9d76e-208">此项目上发生的查看活动的相关分析。</span><span class="sxs-lookup"><span data-stu-id="9d76e-208">Analytics about the view activities that took place in this site.</span></span>
+| <span data-ttu-id="9d76e-209">driveItem</span><span class="sxs-lookup"><span data-stu-id="9d76e-209">driveItem</span></span>         | <span data-ttu-id="9d76e-210">[driveItem][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-210">[driveItem][]</span></span>                  | <span data-ttu-id="9d76e-211">对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。</span><span class="sxs-lookup"><span data-stu-id="9d76e-211">For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**</span></span>
+| <span data-ttu-id="9d76e-212">fields</span><span class="sxs-lookup"><span data-stu-id="9d76e-212">fields</span></span>            | <span data-ttu-id="9d76e-213">[fieldValueSet][]</span><span class="sxs-lookup"><span data-stu-id="9d76e-213">[fieldValueSet][]</span></span>              | <span data-ttu-id="9d76e-214">在此列表项上设置的列的值。</span><span class="sxs-lookup"><span data-stu-id="9d76e-214">The values of the columns set on this list item.</span></span>
+| <span data-ttu-id="9d76e-215">版本</span><span class="sxs-lookup"><span data-stu-id="9d76e-215">versions</span></span>          | <span data-ttu-id="9d76e-216">[listItemVersion][] 集合</span><span class="sxs-lookup"><span data-stu-id="9d76e-216">[listItemVersion][] collection</span></span> | <span data-ttu-id="9d76e-217">先前版本的列表项的列表。</span><span class="sxs-lookup"><span data-stu-id="9d76e-217">The list of previous versions of the list item.</span></span>
+
+[baseItem]: baseitem.md
+[contentTypeInfo]: contenttypeinfo.md
+[driveItem]: driveitem.md
+[fieldValueSet]: fieldvalueset.md
+[identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
+[itemReference]: itemreference.md
+[list]: list.md
+[listItemVersion]: listitemversion.md
+[sharepointIds]: sharepointids.md
+
+## <a name="json-representation"></a><span data-ttu-id="9d76e-229">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9d76e-229">JSON representation</span></span>
+
+<span data-ttu-id="9d76e-230">下面是 **listItem** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9d76e-230">Here is a JSON representation of a **listItem** resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -58,6 +112,8 @@ ms.locfileid: "32519946"
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
   /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -75,56 +131,12 @@ ms.locfileid: "32519946"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="a48fd-128">属性</span><span class="sxs-lookup"><span data-stu-id="a48fd-128">Properties</span></span>
-
-<span data-ttu-id="a48fd-129">**listItem** 资源具有以下属性。</span><span class="sxs-lookup"><span data-stu-id="a48fd-129">The **listItem** resource has the following properties.</span></span>
-
-| <span data-ttu-id="a48fd-130">属性名称</span><span class="sxs-lookup"><span data-stu-id="a48fd-130">Property name</span></span> | <span data-ttu-id="a48fd-131">类型</span><span class="sxs-lookup"><span data-stu-id="a48fd-131">Type</span></span>                | <span data-ttu-id="a48fd-132">说明</span><span class="sxs-lookup"><span data-stu-id="a48fd-132">Description</span></span>
-|:--------------|:--------------------|:-------------------------------
-| <span data-ttu-id="a48fd-133">contentType</span><span class="sxs-lookup"><span data-stu-id="a48fd-133">contentType</span></span>   | <span data-ttu-id="a48fd-134">[contentTypeInfo][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-134">[contentTypeInfo][]</span></span> | <span data-ttu-id="a48fd-135">此列表项的内容类型</span><span class="sxs-lookup"><span data-stu-id="a48fd-135">The content type of this list item</span></span>
-
-<span data-ttu-id="a48fd-136">以下属性继承自 \*\* [baseItem][]\*\*。</span><span class="sxs-lookup"><span data-stu-id="a48fd-136">The following properties are inherited from **[baseItem][]**.</span></span>
-
-| <span data-ttu-id="a48fd-137">属性名称</span><span class="sxs-lookup"><span data-stu-id="a48fd-137">Property name</span></span>        | <span data-ttu-id="a48fd-138">类型</span><span class="sxs-lookup"><span data-stu-id="a48fd-138">Type</span></span>              | <span data-ttu-id="a48fd-139">说明</span><span class="sxs-lookup"><span data-stu-id="a48fd-139">Description</span></span>
-|:---------------------|:------------------|:----------------------------------
-| <span data-ttu-id="a48fd-140">id</span><span class="sxs-lookup"><span data-stu-id="a48fd-140">id</span></span>                   | <span data-ttu-id="a48fd-141">string</span><span class="sxs-lookup"><span data-stu-id="a48fd-141">string</span></span>            | <span data-ttu-id="a48fd-p103">项的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p103">The unique identifier of the item. Read-only.</span></span>
-| <span data-ttu-id="a48fd-144">name</span><span class="sxs-lookup"><span data-stu-id="a48fd-144">name</span></span>                 | <span data-ttu-id="a48fd-145">string</span><span class="sxs-lookup"><span data-stu-id="a48fd-145">string</span></span>            | <span data-ttu-id="a48fd-146">项目名称/标题。</span><span class="sxs-lookup"><span data-stu-id="a48fd-146">The name / title of the item.</span></span>
-| <span data-ttu-id="a48fd-147">createdBy</span><span class="sxs-lookup"><span data-stu-id="a48fd-147">createdBy</span></span>            | <span data-ttu-id="a48fd-148">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-148">[identitySet][]</span></span>   | <span data-ttu-id="a48fd-149">此项的创建者的标识。</span><span class="sxs-lookup"><span data-stu-id="a48fd-149">Identity of the creator of this item.</span></span> <span data-ttu-id="a48fd-150">只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-150">Read-only.</span></span>
-| <span data-ttu-id="a48fd-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="a48fd-151">createdDateTime</span></span>      | <span data-ttu-id="a48fd-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a48fd-152">DateTimeOffset</span></span>    | <span data-ttu-id="a48fd-p105">创建项目的日期和时间。只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p105">The date and time the item was created. Read-only.</span></span>
-| <span data-ttu-id="a48fd-155">说明</span><span class="sxs-lookup"><span data-stu-id="a48fd-155">description</span></span>          | <span data-ttu-id="a48fd-156">string</span><span class="sxs-lookup"><span data-stu-id="a48fd-156">string</span></span>            | <span data-ttu-id="a48fd-157">项目的描述性文本。</span><span class="sxs-lookup"><span data-stu-id="a48fd-157">The descriptive text for the item.</span></span>
-| <span data-ttu-id="a48fd-158">eTag</span><span class="sxs-lookup"><span data-stu-id="a48fd-158">eTag</span></span>                 | <span data-ttu-id="a48fd-159">字符串</span><span class="sxs-lookup"><span data-stu-id="a48fd-159">string</span></span>            | <span data-ttu-id="a48fd-p106">该项目的 ETag。只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p106">ETag for the item. Read-only.</span></span>                                                          |
-| <span data-ttu-id="a48fd-162">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="a48fd-162">lastModifiedBy</span></span>       | <span data-ttu-id="a48fd-163">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-163">[identitySet][]</span></span>   | <span data-ttu-id="a48fd-164">此项的最后一个修饰符的标识。</span><span class="sxs-lookup"><span data-stu-id="a48fd-164">Identity of the last modifier of this item.</span></span> <span data-ttu-id="a48fd-165">只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-165">Read-only.</span></span>
-| <span data-ttu-id="a48fd-166">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="a48fd-166">lastModifiedDateTime</span></span> | <span data-ttu-id="a48fd-167">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a48fd-167">DateTimeOffset</span></span>    | <span data-ttu-id="a48fd-p108">上次修改项目的日期和时间。只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p108">The date and time the item was last modified. Read-only.</span></span>
-| <span data-ttu-id="a48fd-170">parentReference</span><span class="sxs-lookup"><span data-stu-id="a48fd-170">parentReference</span></span>      | <span data-ttu-id="a48fd-171">[itemReference][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-171">[itemReference][]</span></span> | <span data-ttu-id="a48fd-p109">父信息（如果此项具有父级）。读写。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p109">Parent information, if the item has a parent. Read-write.</span></span>
-| <span data-ttu-id="a48fd-174">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="a48fd-174">sharepointIds</span></span>        | <span data-ttu-id="a48fd-175">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-175">[sharepointIds][]</span></span> | <span data-ttu-id="a48fd-p110">返回对 SharePoint REST 兼容性有用的标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p110">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>
-| <span data-ttu-id="a48fd-178">webUrl</span><span class="sxs-lookup"><span data-stu-id="a48fd-178">webUrl</span></span>               | <span data-ttu-id="a48fd-179">string (url)</span><span class="sxs-lookup"><span data-stu-id="a48fd-179">string (url)</span></span>      | <span data-ttu-id="a48fd-p111">在浏览器中显示此项目的 URL。只读。</span><span class="sxs-lookup"><span data-stu-id="a48fd-p111">URL that displays the item in the browser. Read-only.</span></span>
-
-## <a name="relationships"></a><span data-ttu-id="a48fd-182">关系</span><span class="sxs-lookup"><span data-stu-id="a48fd-182">Relationships</span></span>
-
- <span data-ttu-id="a48fd-183">**listItem** 资源与其他资源具有以下关系。</span><span class="sxs-lookup"><span data-stu-id="a48fd-183">The **listItem** resource has the following relationships to other resources.</span></span>
-
-| <span data-ttu-id="a48fd-184">关系名称</span><span class="sxs-lookup"><span data-stu-id="a48fd-184">Relationship name</span></span> | <span data-ttu-id="a48fd-185">类型</span><span class="sxs-lookup"><span data-stu-id="a48fd-185">Type</span></span>                           | <span data-ttu-id="a48fd-186">说明</span><span class="sxs-lookup"><span data-stu-id="a48fd-186">Description</span></span>
-|:------------------|:-------------------------------|:-------------------------------
-| <span data-ttu-id="a48fd-187">driveItem</span><span class="sxs-lookup"><span data-stu-id="a48fd-187">driveItem</span></span>         | <span data-ttu-id="a48fd-188">[driveItem][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-188">[driveItem][]</span></span>                  | <span data-ttu-id="a48fd-189">对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。</span><span class="sxs-lookup"><span data-stu-id="a48fd-189">For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**</span></span>
-| <span data-ttu-id="a48fd-190">fields</span><span class="sxs-lookup"><span data-stu-id="a48fd-190">fields</span></span>            | <span data-ttu-id="a48fd-191">[fieldValueSet][]</span><span class="sxs-lookup"><span data-stu-id="a48fd-191">[fieldValueSet][]</span></span>              | <span data-ttu-id="a48fd-192">在此列表项上设置的列的值。</span><span class="sxs-lookup"><span data-stu-id="a48fd-192">The values of the columns set on this list item.</span></span>
-| <span data-ttu-id="a48fd-193">版本</span><span class="sxs-lookup"><span data-stu-id="a48fd-193">versions</span></span>          | <span data-ttu-id="a48fd-194">[listItemVersion][] 集合</span><span class="sxs-lookup"><span data-stu-id="a48fd-194">[listItemVersion][] collection</span></span> | <span data-ttu-id="a48fd-195">先前版本的列表项的列表。</span><span class="sxs-lookup"><span data-stu-id="a48fd-195">The list of previous versions of the list item.</span></span>
-
-[baseItem]: baseitem.md
-[contentTypeInfo]: contenttypeinfo.md
-[driveItem]: driveitem.md
-[fieldValueSet]: fieldvalueset.md
-[identitySet]: identityset.md
-[itemReference]: itemreference.md
-[list]: list.md
-[listItemVersion]: listitemversion.md
-[sharepointIds]: sharepointids.md
-
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ListItem",
+  "tocPath": "Resources/listItem",
   "tocBookmarks": {
     "ListItem": "#"
   }
