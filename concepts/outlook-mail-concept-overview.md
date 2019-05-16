@@ -4,16 +4,18 @@ description: Outlook 是 Office 365 的消息传递通信中心。 使用它，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 14debcfb59b062e0c29b5024d32e6a5dcc4e7394
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440064"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083237"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
 Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联系人、安排会议、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 
 ## <a name="why-integrate-with-outlook-mail"></a>为什么与 Outlook 邮件集成？
 
