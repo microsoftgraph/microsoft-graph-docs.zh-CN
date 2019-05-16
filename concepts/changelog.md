@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5ca5df50b9c7ce9c16f3aa09bd54dbc1c0444dc0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3dfa65d9c285422351c82a43494aaf524b894685
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951248"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968840"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -139,6 +139,24 @@ ms.locfileid: "33951248"
 |添加项 |v1.0 | 增加了对 [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) 资源的应用程序权限的支持。|
 |添加项 |v1.0| 向 [channel](/graph/api/resources/channel?view=graph-rest-1.0) 添加了**email** 和 **webUrl** 属性。|
 | 添加项 | beta | 添加了 [chat](/api-reference/beta/resources/chat.md) 资源及相关方法。 |
+
+### <a name="onedrive-and-sharepoint-apis"></a>OneDrive 和 SharePoint API
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | v1.0        | 添加了 **analytics** 属性至 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 实体。 |
+| 添加项        | v1.0        | 添加了 **analytics** 属性至 [site](/graph/api/resources/site?view=graph-rest-beta) 实体。 |
+| 添加项        | v1.0        | 添加了 **analytics** 属性至 [listItem](/graph/api/resources/listitem?view=graph-rest-beta) 实体。 |
+| 添加项        | v1.0        | 在 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 实体上添加了 **getActivitiesByInterval** 函数。 |
+| 添加项        | v1.0        | 在 [site](/graph/api/resources/site?view=graph-rest-beta) 实体上添加了 **getActivitiesByInterval** 函数。 |
+| 添加项        | v1.0        | 在 [listItem](/graph/api/resources/listitem?view=graph-rest-beta) 实体上添加了 **getActivitiesByInterval** 函数。 |
+| 添加项        | v1.0        | 添加了 [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) 实体。 |
+| 添加项        | v1.0        | 添加了 [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta) 实体。 |
+| 添加项        | v1.0        | 添加了 [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta) 复杂类型。 |
+| 添加项        | v1.0        | 添加了 [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) 复杂类型。 |
+| 添加项        | v1.0        | 添加了 [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta) 复杂类型。 |
+| 添加项        | v1.0        | 添加了 **access** 属性至 [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) 复杂类型。 |
+| 添加项        | v1.0        | 添加了 **location** 属性至 [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) 复杂类型。 |
 
 ### <a name="outlook-mail"></a>Outlook 邮件
 
@@ -1188,7 +1206,7 @@ ms.locfileid: "33951248"
 
 ### <a name="education-apis"></a>教育版 API
 
-|更改类型|Version|说明|
+|更改类型|版本|说明|
 |:---|:---|:---|
 |更改|Beta|向 [educationsynchronizationerror](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta) 添加了 reportableIdentifier 属性。|
 |更改|Beta|更新了 [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta) API 的响应选项。|
