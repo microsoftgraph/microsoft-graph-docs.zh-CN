@@ -1,24 +1,23 @@
 ---
 title: 创建组
-description: 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
+description: 创建新的 Office 365 组或安全组。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: fca67796786bfc5a0268eef1b6bdd7262173a65c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0fc20f2882c57e336c36ca3bc73dad6b549b79de
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592662"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036344"
 ---
 # <a name="create-group"></a>创建组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可以创建请求正文中指定的新[组](../resources/group.md)。可以创建下列 3 种类型之一的组：
+创建请求正文中指定的新[组](../resources/group.md)。 你可以创建以下组之一：
 
 * Office 365 组（统一组）
-* 动态组
 * 安全组
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。
@@ -37,35 +36,32 @@ ms.locfileid: "33592662"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。 
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
 | displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
-| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 如果创建 Office 365 组，则将此设置为 **true**。 如果创建动态或安全组，则将此设置为 **false**。 必需。 |
+| mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 必需。 |
-| securityEnabled | 布尔 | 对于启用安全机制的组，请设置为 **true**。 如果创建动态或安全组，则将此设置为 **true**。 如果创建 Office 365 组，则将此设置为 **false**。 必需。 |
-| owners | string collection | 此属性表示创建时指定的组所有者。 可选。 |
-| members | 字符串集合 | 此属性表示创建时指定的组成员。 可选。 |
+| securityEnabled | boolean | 对于启用安全机制的组（包括 Office 365 组），请设置为 **true**。 必需。 |
+| owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
+| members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
 
-如果你正在创建的是 Office 365 或动态组，则按如下所述指定 **groupTypes** 属性。
-
-| 组类型 | **groupTypes** 属性 |
-|:--------------|:------------------------|
-| Office 365（也称为统一组）| "Unified" |
-| Dynamic | "DynamicMembership" |
-| 安全性 | 请勿设置。 |
+> 注意：使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 和 **mailEnabled** 初始设置为 `true`。
 
 由于**组**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建组时向其添加含有自己的数据的自定义属性。
 
@@ -73,17 +69,32 @@ POST /groups
 
 根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
+### <a name="grouptypes-options"></a>groupTypes 选项
+
+使用 **groupTypes** 属性来控制组的类型及其成员身份，如下所示：
+
+| 组类型 | 已分配成员身份 | 动态成员身份 |
+|:--------------|:------------------------|:---------------|
+| Office 365（也称为统一组）| `["Unified"]` | `["Unified","DynamicMembership"]`
+| 动态 | `[]` (_null_) | `["DynamicMembership"]`|
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
-## <a name="example"></a>示例
-#### <a name="request-1"></a>请求 1
-第一个示例请求将创建 Office 365 组。
+## <a name="examples"></a>示例
+
+### <a name="example-1-create-an-office-365-group"></a>示例 1：创建 Office 365 组
+
+以下示例将创建一个 Office 365 组。
+
+#### <a name="request"></a>请求
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 Content-length: 244
@@ -101,15 +112,18 @@ Content-length: 244
 ```
 
 #### <a name="response"></a>响应
+
 下面是一个响应示例。
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -157,13 +171,17 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>请求 2
-第二个示例请求将创建具有指定所有者和成员的 Office 365 组。
+### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>示例 2：创建包含所有者和成员的 Office 365 组
+
+以下示例将创建一个具有指定所有者和成员的 Office 365 组。
+
+#### <a name="request"></a>请求
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -186,16 +204,19 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应 
+
 下面是成功响应的示例。 它仅包括默认属性。 随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。 
+
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 

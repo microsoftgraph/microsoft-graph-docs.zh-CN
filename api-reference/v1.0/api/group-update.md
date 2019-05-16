@@ -4,12 +4,12 @@ description: 更新 group 对象的属性。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: be6ecbe4a46757bae88e93e75eb6be86563059e6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: adb66a65fa3c8612952b990e17922055d4d0984d
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613084"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036365"
 ---
 # <a name="update-group"></a>更新组
 
@@ -48,17 +48,19 @@ PATCH /groups/{id}
 |allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
-|displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
-|groupTypes|String collection|指定要创建的组的类型。可取值为 **Unified**（要创建 Office 365 组）或 **DynamicMembership**（要创建动态组）。对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。|
-|mailEnabled|Boolean|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
-|mailNickname|String|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
-|securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则为启用邮件的安全组；否则为安全组。对于 Office 365 组，此属性必须为 **false**。支持 $filter。|
+|displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|mailEnabled|布尔|指定是否为启用邮件的组。|
+|mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
+|securityEnabled|布尔|指定是否为安全组。 |
 |visibility|String|指定 Office 365 组的可见性。 可能的是包括：**专用**、**公用**或为空（解释为**公用**）。|
 
 > **注意：**
 >
 > - 可更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
 > - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes)。
+> - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](https://docs.microsoft.com/zh-CN/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
+
 
 ## <a name="response"></a>响应
 
@@ -66,7 +68,9 @@ PATCH /groups/{id}
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+以下示例演示如何创建组。
+
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 <!-- {
@@ -91,7 +95,7 @@ Content-length: 211
 }
 ```
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面是一个响应示例。
 

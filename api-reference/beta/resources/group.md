@@ -1,21 +1,21 @@
 ---
 title: 组资源类型
-description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、Microsoft Teams 中的团队、动态组或安全组。
+description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、Microsoft Teams 中的团队或安全组。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e5f369e1c95e13cb4b4c16aa3317e78c33c5d601
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cc8d3b724b42827c568377b1f4d83d6c4513414a
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036505"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组（Microsoft Teams 中的团队）、动态组或安全组。继承自 [directoryObject](directoryobject.md)。
+表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组（Microsoft Teams 中的团队）或安全组。继承自 [directoryObject](directoryobject.md)。
 
 出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。 请参阅[示例](../api/group-get.md#request-2)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "33340189"
 |[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
 |[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
 |[删除线程](../api/group-delete-thread.md) |无| 删除 thread 对象
-|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“接受的发件人”列表中的用户或组列表。|
+|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的“接受的发件人”列表中的用户或组列表。|
 |[添加 acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
 |[删除 acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
 |[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
@@ -110,15 +110,15 @@ ms.locfileid: "33340189"
 |说明|String|可选的组说明。 <br><br>默认情况下返回。|
 |displayName|String|组的显示名称。 此属性是在创建组时所必需的，并且在更新过程中不能清除。 <br><br>默认情况下返回。 支持 $filter 和 $orderby。 |
 |expirationDateTime|DateTimeOffset| 设置的组的过期时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
-|groupTypes|String collection| 指定要创建的组的类型。 可能的值是 `Unified`（创建 Office 365 组）或 `DynamicMembership`（创建动态组）。  对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。 <br><br>默认情况下返回。 支持 $filter。|
+|groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含 `Unified`，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认情况下返回。 支持 $filter。|
 |hasMembersWithLicenseErrors|Boolean| 指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>GET 操作从未返回此属性。 可将它用作 $filter 参数，获取具有许可证错误的成员的组（也就是说，此属性的筛选器为 **true**）。 请参阅[示例](../api/group-list.md#request-2)。|
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。 <br><br>仅在 $select 上返回。 只读。 |
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。|
-|mailEnabled|Boolean|指定是否为启用邮件的组。如果 **securityEnabled** 属性也为 **true**，则为启用邮件的安全组；否则为 Microsoft Exchange 通讯组。 <br><br>默认情况下返回。|
+|mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认情况下返回。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 <br><br>默认情况下返回。 支持 $filter。|
-|membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
+|membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认情况下返回。|
@@ -128,7 +128,7 @@ ms.locfileid: "33340189"
 |preferredLanguage|String|Office 365 组的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 <br><br>默认情况下返回。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要多值属性筛选器表达式的 **any** 运算符。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
-|securityEnabled|布尔|指定是否为安全组。 如果 **mailEnabled** 属性也为 true，则为启用邮件的安全组；否则为安全组。 对于 Office 365 组，此属性必须为 **false**。 <br><br>默认情况下返回。 支持 $filter。|
+|securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 $filter。|
 |theme|String|指定 Office 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenConversationsCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。 此属性与 **unseenCount** 相同。 <br><br>仅在 $select 上返回。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 此属性与 **unseenConversationsCount** 相同。<br><br>仅在 $select 上返回。 |
