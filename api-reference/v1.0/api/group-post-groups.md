@@ -1,89 +1,92 @@
 ---
 title: 创建组
-description: 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
+description: '创建请求正文中指定的新组。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: be09edf1004880160f50515e269dfb9c3fe60b55
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: baaf76455fefc6e44bf4995854d99baafb713005
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613700"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036372"
 ---
-# <a name="create-group"></a><span data-ttu-id="55213-104">创建组</span><span class="sxs-lookup"><span data-stu-id="55213-104">Create group</span></span>
-<span data-ttu-id="55213-p102">使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：</span><span class="sxs-lookup"><span data-stu-id="55213-p102">Use this API to create a new group as specified in the request body. You can create one of three types of groups:</span></span>
+# <a name="create-group"></a><span data-ttu-id="b4ca7-103">创建组</span><span class="sxs-lookup"><span data-stu-id="b4ca7-103">Create group</span></span>
+<span data-ttu-id="b4ca7-104">创建请求正文中指定的新组。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-104">Create a new channel in a Microsoft Team, as specified in the request body.</span></span> <span data-ttu-id="b4ca7-105">你可以创建以下类型的组：</span><span class="sxs-lookup"><span data-stu-id="b4ca7-105">You can use the New-DistributionGroup cmdlet to create the following types of groups:</span></span>
 
-* <span data-ttu-id="55213-107">Office 365 组（统一组）</span><span class="sxs-lookup"><span data-stu-id="55213-107">Office 365 Group (unified group)</span></span>
-* <span data-ttu-id="55213-108">动态组</span><span class="sxs-lookup"><span data-stu-id="55213-108">Dynamic group</span></span>
-* <span data-ttu-id="55213-109">安全组</span><span class="sxs-lookup"><span data-stu-id="55213-109">Security group</span></span>
+* <span data-ttu-id="b4ca7-106">Office 365 组（统一组）</span><span class="sxs-lookup"><span data-stu-id="b4ca7-106">Office 365 Group (unified group)</span></span>
+* <span data-ttu-id="b4ca7-107">安全组</span><span class="sxs-lookup"><span data-stu-id="b4ca7-107">Security group</span></span>
 
-<span data-ttu-id="55213-110">此操作在默认情况下仅返回每个组的一部分属性。</span><span class="sxs-lookup"><span data-stu-id="55213-110">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="55213-111">这些默认属性将记录在[属性](../resources/group.md#properties)部分中。</span><span class="sxs-lookup"><span data-stu-id="55213-111">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span>
+<span data-ttu-id="b4ca7-108">此操作在默认情况下仅返回每个组的一部分属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-108">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="b4ca7-109">这些默认属性将记录在[属性](../resources/group.md#properties)部分中。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-109">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span>
 
-<span data-ttu-id="55213-112">若要获取_非_默认返回的属性，请执行 GET 操作，并在 `$select` OData 查询选项中指定属性。</span><span class="sxs-lookup"><span data-stu-id="55213-112">To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="55213-113">请参阅[示例](group-get.md#request-2)。</span><span class="sxs-lookup"><span data-stu-id="55213-113">See an [example](group-get.md#request-2).</span></span>
+<span data-ttu-id="b4ca7-110">若要获取_非_默认返回的属性，请执行 GET 操作，并在 `$select` OData 查询选项中指定属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-110">To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="b4ca7-111">请参阅[示例](group-get.md#request-2)。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-111">See an [example](group-get.md#request-2).</span></span>
 
-> <span data-ttu-id="55213-p105">**注意**：虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。</span><span class="sxs-lookup"><span data-stu-id="55213-p105">**Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.</span></span>
+> <span data-ttu-id="b4ca7-p104">**注意**：虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-p104">**Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="55213-116">权限</span><span class="sxs-lookup"><span data-stu-id="55213-116">Permissions</span></span>
-<span data-ttu-id="55213-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="55213-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b4ca7-114">权限</span><span class="sxs-lookup"><span data-stu-id="b4ca7-114">Permissions</span></span>
+<span data-ttu-id="b4ca7-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="55213-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="55213-119">Permission type</span></span>      | <span data-ttu-id="55213-120">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="55213-120">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b4ca7-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="b4ca7-117">Permission type</span></span>      | <span data-ttu-id="b4ca7-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b4ca7-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="55213-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="55213-121">Delegated (work or school account)</span></span> | <span data-ttu-id="55213-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55213-122">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="55213-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="55213-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55213-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="55213-124">Not supported.</span></span>    |
-|<span data-ttu-id="55213-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="55213-125">Application</span></span> | <span data-ttu-id="55213-126">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55213-126">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="b4ca7-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b4ca7-119">Delegated (work or school account)</span></span> | <span data-ttu-id="b4ca7-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4ca7-120">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b4ca7-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b4ca7-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4ca7-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-122">Not supported.</span></span>    |
+|<span data-ttu-id="b4ca7-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="b4ca7-123">Application</span></span> | <span data-ttu-id="b4ca7-124">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4ca7-124">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="55213-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="55213-127">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b4ca7-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b4ca7-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="55213-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="55213-128">Request headers</span></span>
-| <span data-ttu-id="55213-129">名称</span><span class="sxs-lookup"><span data-stu-id="55213-129">Name</span></span>       | <span data-ttu-id="55213-130">类型</span><span class="sxs-lookup"><span data-stu-id="55213-130">Type</span></span> | <span data-ttu-id="55213-131">说明</span><span class="sxs-lookup"><span data-stu-id="55213-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b4ca7-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="b4ca7-126">Request headers</span></span>
+| <span data-ttu-id="b4ca7-127">名称</span><span class="sxs-lookup"><span data-stu-id="b4ca7-127">Name</span></span>       | <span data-ttu-id="b4ca7-128">类型</span><span class="sxs-lookup"><span data-stu-id="b4ca7-128">Type</span></span> | <span data-ttu-id="b4ca7-129">说明</span><span class="sxs-lookup"><span data-stu-id="b4ca7-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="55213-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="55213-132">Authorization</span></span>  | <span data-ttu-id="55213-133">string</span><span class="sxs-lookup"><span data-stu-id="55213-133">string</span></span>  | <span data-ttu-id="55213-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="55213-p107">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="55213-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="55213-136">Content-Type</span></span>  | <span data-ttu-id="55213-137">application/json</span><span class="sxs-lookup"><span data-stu-id="55213-137">application/json</span></span>  |
+| <span data-ttu-id="b4ca7-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4ca7-130">Authorization</span></span>  | <span data-ttu-id="b4ca7-131">string</span><span class="sxs-lookup"><span data-stu-id="b4ca7-131">string</span></span>  | <span data-ttu-id="b4ca7-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b4ca7-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b4ca7-134">Content-Type</span></span>  | <span data-ttu-id="b4ca7-135">application/json</span><span class="sxs-lookup"><span data-stu-id="b4ca7-135">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="55213-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="55213-138">Request body</span></span>
-<span data-ttu-id="55213-139">下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。</span><span class="sxs-lookup"><span data-stu-id="55213-139">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="b4ca7-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="b4ca7-136">Request body</span></span>
+<span data-ttu-id="b4ca7-137">下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-137">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
 
-| <span data-ttu-id="55213-140">属性</span><span class="sxs-lookup"><span data-stu-id="55213-140">Property</span></span> | <span data-ttu-id="55213-141">类型</span><span class="sxs-lookup"><span data-stu-id="55213-141">Type</span></span> | <span data-ttu-id="55213-142">说明</span><span class="sxs-lookup"><span data-stu-id="55213-142">Description</span></span>|
+| <span data-ttu-id="b4ca7-138">属性</span><span class="sxs-lookup"><span data-stu-id="b4ca7-138">Property</span></span> | <span data-ttu-id="b4ca7-139">类型</span><span class="sxs-lookup"><span data-stu-id="b4ca7-139">Type</span></span> | <span data-ttu-id="b4ca7-140">说明</span><span class="sxs-lookup"><span data-stu-id="b4ca7-140">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="55213-143">displayName</span><span class="sxs-lookup"><span data-stu-id="55213-143">displayName</span></span> | <span data-ttu-id="55213-144">string</span><span class="sxs-lookup"><span data-stu-id="55213-144">string</span></span> | <span data-ttu-id="55213-145">要在组的通讯簿中显示的名称。</span><span class="sxs-lookup"><span data-stu-id="55213-145">The name to display in the address book for the group.</span></span> <span data-ttu-id="55213-146">必需。</span><span class="sxs-lookup"><span data-stu-id="55213-146">Required.</span></span> |
-| <span data-ttu-id="55213-147">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="55213-147">mailEnabled</span></span> | <span data-ttu-id="55213-148">布尔</span><span class="sxs-lookup"><span data-stu-id="55213-148">boolean</span></span> | <span data-ttu-id="55213-149">对于已启用邮件的组，请设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="55213-149">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="55213-150">如果创建 Office 365 组，则将此设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="55213-150">Set this to **true** if creating an Office 365 Group.</span></span> <span data-ttu-id="55213-151">如果创建动态或安全组，则将此设置为 **false**。</span><span class="sxs-lookup"><span data-stu-id="55213-151">Set this to **false** if creating dynamic or security group.</span></span> <span data-ttu-id="55213-152">必需。</span><span class="sxs-lookup"><span data-stu-id="55213-152">Required.</span></span> |
-| <span data-ttu-id="55213-153">mailNickname</span><span class="sxs-lookup"><span data-stu-id="55213-153">mailNickname</span></span> | <span data-ttu-id="55213-154">string</span><span class="sxs-lookup"><span data-stu-id="55213-154">string</span></span> | <span data-ttu-id="55213-155">组的邮件别名。</span><span class="sxs-lookup"><span data-stu-id="55213-155">The mail alias for the group.</span></span> <span data-ttu-id="55213-156">必需。</span><span class="sxs-lookup"><span data-stu-id="55213-156">Required.</span></span> |
-| <span data-ttu-id="55213-157">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="55213-157">securityEnabled</span></span> | <span data-ttu-id="55213-158">布尔</span><span class="sxs-lookup"><span data-stu-id="55213-158">boolean</span></span> | <span data-ttu-id="55213-159">对于启用安全机制的组，请设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="55213-159">Set to **true** for security-enabled groups.</span></span> <span data-ttu-id="55213-160">如果创建动态或安全组，则将此设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="55213-160">Set this to **true** if creating a dynamic or security group.</span></span> <span data-ttu-id="55213-161">如果创建 Office 365 组，则将此设置为 **false**。</span><span class="sxs-lookup"><span data-stu-id="55213-161">Set this to **false** if creating an Office 365 group.</span></span> <span data-ttu-id="55213-162">必需。</span><span class="sxs-lookup"><span data-stu-id="55213-162">Required.</span></span> |
-| <span data-ttu-id="55213-163">owners</span><span class="sxs-lookup"><span data-stu-id="55213-163">owners</span></span> | <span data-ttu-id="55213-164">string collection</span><span class="sxs-lookup"><span data-stu-id="55213-164">string collection</span></span> | <span data-ttu-id="55213-165">此属性表示创建时指定的组所有者。</span><span class="sxs-lookup"><span data-stu-id="55213-165">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="55213-166">可选。</span><span class="sxs-lookup"><span data-stu-id="55213-166">Optional.</span></span> |
-| <span data-ttu-id="55213-167">members</span><span class="sxs-lookup"><span data-stu-id="55213-167">members</span></span> | <span data-ttu-id="55213-168">字符串集合</span><span class="sxs-lookup"><span data-stu-id="55213-168">string collection</span></span> | <span data-ttu-id="55213-169">此属性表示创建时指定的组成员。</span><span class="sxs-lookup"><span data-stu-id="55213-169">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="55213-170">可选。</span><span class="sxs-lookup"><span data-stu-id="55213-170">Optional.</span></span> |
+| <span data-ttu-id="b4ca7-141">displayName</span><span class="sxs-lookup"><span data-stu-id="b4ca7-141">displayName</span></span> | <span data-ttu-id="b4ca7-142">string</span><span class="sxs-lookup"><span data-stu-id="b4ca7-142">string</span></span> | <span data-ttu-id="b4ca7-143">要在组的通讯簿中显示的名称。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-143">The name to display in the address book for the group.</span></span> <span data-ttu-id="b4ca7-144">必需。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-144">Required.</span></span> |
+| <span data-ttu-id="b4ca7-145">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="b4ca7-145">mailEnabled</span></span> | <span data-ttu-id="b4ca7-146">布尔</span><span class="sxs-lookup"><span data-stu-id="b4ca7-146">boolean</span></span> | <span data-ttu-id="b4ca7-147">对于已启用邮件的组，请设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-147">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="b4ca7-148">必需。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-148">Required.</span></span> |
+| <span data-ttu-id="b4ca7-149">mailNickname</span><span class="sxs-lookup"><span data-stu-id="b4ca7-149">mailNickname</span></span> | <span data-ttu-id="b4ca7-150">string</span><span class="sxs-lookup"><span data-stu-id="b4ca7-150">string</span></span> | <span data-ttu-id="b4ca7-151">组的邮件别名。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-151">The mail alias for the group.</span></span> <span data-ttu-id="b4ca7-152">必需。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-152">Required.</span></span> |
+| <span data-ttu-id="b4ca7-153">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="b4ca7-153">securityEnabled</span></span> | <span data-ttu-id="b4ca7-154">boolean</span><span class="sxs-lookup"><span data-stu-id="b4ca7-154">boolean</span></span> | <span data-ttu-id="b4ca7-155">对于启用安全机制的组（包括 Office 365 组），请设置为 **true**。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-155">Set to **true** for security-enabled groups, including Office 365 groups.</span></span> <span data-ttu-id="b4ca7-156">必需。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-156">Required.</span></span> |
+| <span data-ttu-id="b4ca7-157">owners</span><span class="sxs-lookup"><span data-stu-id="b4ca7-157">owners</span></span> | <span data-ttu-id="b4ca7-158">string collection</span><span class="sxs-lookup"><span data-stu-id="b4ca7-158">string collection</span></span> | <span data-ttu-id="b4ca7-159">此属性表示创建时指定的组所有者。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-159">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="b4ca7-160">可选。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-160">Optional.</span></span> |
+| <span data-ttu-id="b4ca7-161">members</span><span class="sxs-lookup"><span data-stu-id="b4ca7-161">members</span></span> | <span data-ttu-id="b4ca7-162">字符串集合</span><span class="sxs-lookup"><span data-stu-id="b4ca7-162">string collection</span></span> | <span data-ttu-id="b4ca7-163">此属性表示创建时指定的组成员。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-163">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="b4ca7-164">可选。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-164">Optional.</span></span> |
 
+> <span data-ttu-id="b4ca7-165">注意：使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 和 **mailEnabled** 初始设置为 `true`。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-165">Note: Groups created using the Microsoft Azure portal always have **securityEnabled** and **mailEnabled** initially set to `true`.</span></span>
 
-<span data-ttu-id="55213-171">如果你正在创建的是 Office 365 或动态组，则按如下所述指定 **groupTypes** 属性。</span><span class="sxs-lookup"><span data-stu-id="55213-171">Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.</span></span>
+<span data-ttu-id="b4ca7-166">根据需要为你的组指定其他可写属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-166">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="b4ca7-167">有关详细信息，请参阅[组](../resources/group.md)资源的属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-167">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
 
-### <a name="grouptypes-options"></a><span data-ttu-id="55213-172">groupTypes 选项</span><span class="sxs-lookup"><span data-stu-id="55213-172">groupTypes options</span></span>
+><span data-ttu-id="b4ca7-168">**注意：** 以编程方式创建 Office 365 组时，若未提供用户上下文且未指定所有者，则将以匿名方式创建组。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-168">**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.</span></span>  <span data-ttu-id="b4ca7-169">这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-169">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
 
-| <span data-ttu-id="55213-173">组类型</span><span class="sxs-lookup"><span data-stu-id="55213-173">Type of group</span></span> | <span data-ttu-id="55213-174">**groupTypes** 属性</span><span class="sxs-lookup"><span data-stu-id="55213-174">**groupTypes** property</span></span> |
-|:--------------|:------------------------|
-| <span data-ttu-id="55213-175">Office 365（也称为统一组）</span><span class="sxs-lookup"><span data-stu-id="55213-175">Office 365 (aka unified group)</span></span>| <span data-ttu-id="55213-176">"Unified"</span><span class="sxs-lookup"><span data-stu-id="55213-176">"Unified"</span></span> |
-| <span data-ttu-id="55213-177">Dynamic</span><span class="sxs-lookup"><span data-stu-id="55213-177">Dynamic</span></span> | <span data-ttu-id="55213-178">"DynamicMembership"</span><span class="sxs-lookup"><span data-stu-id="55213-178">"DynamicMembership"</span></span> |
-| <span data-ttu-id="55213-179">安全性</span><span class="sxs-lookup"><span data-stu-id="55213-179">Security</span></span> | <span data-ttu-id="55213-180">请勿设置。</span><span class="sxs-lookup"><span data-stu-id="55213-180">Do not set.</span></span> |
+### <a name="grouptypes-options"></a><span data-ttu-id="b4ca7-170">groupTypes 选项</span><span class="sxs-lookup"><span data-stu-id="b4ca7-170">groupTypes options</span></span>
 
+<span data-ttu-id="b4ca7-171">使用 **groupTypes** 属性来控制组的类型及其成员身份，如下所示：</span><span class="sxs-lookup"><span data-stu-id="b4ca7-171">Use the **groupTypes** property to control the type of group and its membership, as shown below:</span></span>
 
-><span data-ttu-id="55213-181">**注意：** 以编程方式创建 Office 365 组时，若未提供用户上下文且未指定所有者，则将以匿名方式创建组。</span><span class="sxs-lookup"><span data-stu-id="55213-181">**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.</span></span>  <span data-ttu-id="55213-182">这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。</span><span class="sxs-lookup"><span data-stu-id="55213-182">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
+| <span data-ttu-id="b4ca7-172">组类型</span><span class="sxs-lookup"><span data-stu-id="b4ca7-172">Type of group</span></span> | <span data-ttu-id="b4ca7-173">已分配成员身份</span><span class="sxs-lookup"><span data-stu-id="b4ca7-173">Assigned membership</span></span> | <span data-ttu-id="b4ca7-174">动态成员身份</span><span class="sxs-lookup"><span data-stu-id="b4ca7-174">Dynamic membership</span></span> |
+|:--------------|:------------------------|:---------------|
+| <span data-ttu-id="b4ca7-175">Office 365（也称为统一组）</span><span class="sxs-lookup"><span data-stu-id="b4ca7-175">Office 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
+| <span data-ttu-id="b4ca7-176">动态</span><span class="sxs-lookup"><span data-stu-id="b4ca7-176">Dynamic</span></span> | <span data-ttu-id="b4ca7-177">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="b4ca7-177">Null</span></span> | `["DynamicMembership"]`|
 
-<span data-ttu-id="55213-p115">根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。</span><span class="sxs-lookup"><span data-stu-id="55213-p115">Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
+## <a name="response"></a><span data-ttu-id="b4ca7-178">响应</span><span class="sxs-lookup"><span data-stu-id="b4ca7-178">Response</span></span>
+<span data-ttu-id="b4ca7-179">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-179">If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="b4ca7-180">该响应仅包括组的默认属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-180">The response includes only the default properties of the group.</span></span>
 
-## <a name="response"></a><span data-ttu-id="55213-185">响应</span><span class="sxs-lookup"><span data-stu-id="55213-185">Response</span></span>
-<span data-ttu-id="55213-186">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="55213-186">If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="55213-187">该响应仅包括组的默认属性。</span><span class="sxs-lookup"><span data-stu-id="55213-187">The response includes only the default properties of the group.</span></span>
+## <a name="examples"></a><span data-ttu-id="b4ca7-181">示例</span><span class="sxs-lookup"><span data-stu-id="b4ca7-181">Examples</span></span>
 
-## <a name="example"></a><span data-ttu-id="55213-188">示例</span><span class="sxs-lookup"><span data-stu-id="55213-188">Example</span></span>
-#### <a name="request-1"></a><span data-ttu-id="55213-189">请求 1</span><span class="sxs-lookup"><span data-stu-id="55213-189">Request 1</span></span>
-<span data-ttu-id="55213-190">第一个示例请求将创建 Office 365 组。</span><span class="sxs-lookup"><span data-stu-id="55213-190">The first example request creates an Office 365 Group.</span></span>
+### <a name="example-1-create-an-office-365-group"></a><span data-ttu-id="b4ca7-182">示例 1：创建 Office 365 组</span><span class="sxs-lookup"><span data-stu-id="b4ca7-182">Create an Office 365 group</span></span>
+
+<span data-ttu-id="b4ca7-183">以下示例将创建 Office 365 组。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-183">The following example creates an Office 365 group.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="b4ca7-184">请求</span><span class="sxs-lookup"><span data-stu-id="b4ca7-184">Request</span></span>
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
 Content-length: 244
@@ -100,16 +103,18 @@ Content-length: 244
 }
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="55213-191">响应 1</span><span class="sxs-lookup"><span data-stu-id="55213-191">Response 1</span></span>
-<span data-ttu-id="55213-192">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="55213-192">The following is an example of the response.</span></span>
-><span data-ttu-id="55213-193">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="55213-193">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="55213-194">在实际调用中会返回所有默认属性。</span><span class="sxs-lookup"><span data-stu-id="55213-194">All the default properties are returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b4ca7-185">响应</span><span class="sxs-lookup"><span data-stu-id="b4ca7-185">Response</span></span>
+
+<span data-ttu-id="b4ca7-186">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-186">The following is an example of the response.</span></span>
+
+><span data-ttu-id="b4ca7-187">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-187">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b4ca7-188">在实际调用中会返回所有默认属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-188">All the default properties are returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -142,24 +147,28 @@ Content-type: application/json
       "onPremisesProvisioningErrors": []
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="55213-195">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="55213-195">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="55213-196">C#</span><span class="sxs-lookup"><span data-stu-id="55213-196">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b4ca7-189">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b4ca7-189">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b4ca7-190">C#</span><span class="sxs-lookup"><span data-stu-id="b4ca7-190">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55213-197">Javascript</span><span class="sxs-lookup"><span data-stu-id="55213-197">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4ca7-191">Javascript</span><span class="sxs-lookup"><span data-stu-id="b4ca7-191">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_group-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a><span data-ttu-id="55213-198">请求 2</span><span class="sxs-lookup"><span data-stu-id="55213-198">Request 2</span></span>
-<span data-ttu-id="55213-199">第二个示例请求将创建具有指定所有者和成员的 Office 365 组。</span><span class="sxs-lookup"><span data-stu-id="55213-199">The second example request creates an Office 365 group with an owner and members specified.</span></span>
+### <a name="example-2-create-a-group-with-owners-and-members"></a><span data-ttu-id="b4ca7-192">示例 2：创建包含所有者和成员的组</span><span class="sxs-lookup"><span data-stu-id="b4ca7-192">Example 2: Create a group with owners and members</span></span>
+
+<span data-ttu-id="b4ca7-193">以下示例将创建一个具有指定所有者和成员的 Office 365 组。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-193">The second example request creates an Office 365 group with an owner and members specified.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="b4ca7-194">请求</span><span class="sxs-lookup"><span data-stu-id="b4ca7-194">Request</span></span>
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
@@ -182,16 +191,19 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="55213-200">响应 2</span><span class="sxs-lookup"><span data-stu-id="55213-200">Response 2</span></span>
-<span data-ttu-id="55213-201">下面是成功响应的示例。</span><span class="sxs-lookup"><span data-stu-id="55213-201">The following is an example of a successful response.</span></span> <span data-ttu-id="55213-202">它仅包括默认属性。</span><span class="sxs-lookup"><span data-stu-id="55213-202">It includes only default properties.</span></span> <span data-ttu-id="55213-203">随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。</span><span class="sxs-lookup"><span data-stu-id="55213-203">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
-><span data-ttu-id="55213-204">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="55213-204">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="55213-205">在实际调用中会返回所有默认属性。</span><span class="sxs-lookup"><span data-stu-id="55213-205">All the default properties are returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b4ca7-195">响应</span><span class="sxs-lookup"><span data-stu-id="b4ca7-195">Response</span></span>
+
+<span data-ttu-id="b4ca7-196">下面是成功响应的示例。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-196">The following is an example of a successful response.</span></span> <span data-ttu-id="b4ca7-197">它仅包括默认属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-197">It includes only default properties.</span></span> <span data-ttu-id="b4ca7-198">随后可获取组的 **owners** 或 **members** 导航属性，以验证所有者或成员。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-198">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
+
+><span data-ttu-id="b4ca7-199">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-199">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b4ca7-200">在实际调用中会返回所有默认属性。</span><span class="sxs-lookup"><span data-stu-id="b4ca7-200">All the default properties are returned from an actual call.</span></span>
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -225,11 +237,11 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="55213-206">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="55213-206">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="55213-207">C#</span><span class="sxs-lookup"><span data-stu-id="55213-207">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b4ca7-201">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b4ca7-201">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b4ca7-202">C#</span><span class="sxs-lookup"><span data-stu-id="b4ca7-202">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_prepopulated_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55213-208">Javascript</span><span class="sxs-lookup"><span data-stu-id="55213-208">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4ca7-203">Javascript</span><span class="sxs-lookup"><span data-stu-id="b4ca7-203">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_prepopulated_group-Javascript-snippets.md)]
 
 ---
