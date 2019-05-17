@@ -156,14 +156,16 @@ items:
           - name: 使用笔记标记
             href: onenote-note-tags.md
           - name: 资源
-          - name: 输入和输出 HTML
-            href: onenote-input-output-html.md
-          - name: 最佳做法
-            href: onenote-best-practices.md
-          - name: 品牌准则
-            href: onenote-branding.md
-          - name: 错误代码
-            href: onenote-error-codes.md
+            expanded: true
+            items:
+              - name: 输入和输出 HTML
+                href: onenote-input-output-html.md
+              - name: 最佳做法
+                href: onenote-best-practices.md
+              - name: 品牌准则
+                href: onenote-branding.md
+              - name: 错误代码
+                href: onenote-error-codes.md
       - name: 通知（预览版）
         displayName: Notifications
         items:

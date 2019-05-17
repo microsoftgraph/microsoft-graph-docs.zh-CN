@@ -1,23 +1,23 @@
 ---
 title: 用户：findRoomLists
 description: 获取租户中定义的会议室列表。
-author: dkershaw10
+author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19bd8c7caca4aa2dc4d30c431d115dede0426e23
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 5e7fcab1baf5fba276058fb7b0c28d41bfba0414
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637386"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083283"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户中定义的会议室列表。
+获取租户中定义的会议室列表，如其 [emailAddress](../resources/emailaddress.md) 对象所表示。
 
-租户可以将会议室整理到会议室列表。 每个会议室和会议室列表用 [emailAddress](../resources/emailaddress.md) 实例表示。
+租户可以将会议室整理到会议室列表。 在此 API 中，每个会议室和会议室列表由 [emailAddress](../resources/emailaddress.md) 实例表示。
 可以获取租户中的所欲会议室列表、获取租户中的[所有会议室](user-findrooms.md)或获取特定会议室列表的[所有会议室](user-findrooms.md)。
 
 
@@ -51,7 +51,7 @@ GET /users/<id>/findRoomLists
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 集合对象。
+如果成功，此方法将在响应主体中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 对象集合。
 
 如果租户中未定义任何列表，则会返回空数组。
 

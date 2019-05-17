@@ -2,22 +2,22 @@
 title: 用户：findRooms
 description: '获取用户租户中或特定房间列表中的所有会议室。 '
 localization_priority: Priority
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5784824fe0e6c174935d12b8b22052709a61f69d
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9c7d6fb47a52e67ae5dd884d9413726e9b2e3bae
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637375"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083308"
 ---
 # <a name="user-findrooms"></a>用户：findRooms
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户租户中或特定房间列表中的所有会议室。 
+获取代表用户租户或特定会议室列表中的所有会议室的 [emailAddress](../resources/emailaddress.md) 对象。 
 
-租户可以将会议室整理到会议室列表。 每个会议室和会议室列表用 [emailAddress](../resources/emailaddress.md) 实例表示。 可以获取租户租户中的[所有会议室列表](user-findroomlists.md)、获取租户中的所有会议室，或者获取特定会议室列表的所有会议室。 最多可以访问租户中的前 100 个会议室。
+租户可以将会议室整理到会议室列表。 在此 API 中，每个会议室和会议室列表由 [emailAddress](../resources/emailaddress.md) 实例表示。 可以获取租户租户中的[所有会议室列表](user-findroomlists.md)、获取租户中的所有会议室，或者获取特定会议室列表的所有会议室。 最多可以访问租户中的前 100 个会议室。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,8 +43,8 @@ GET /users/<id>/findRooms
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/findRooms(RoomList='{room_list}')
-GET /users/<id>/findRooms(RoomList='{room_list}')
+GET /me/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## <a name="query-parameters"></a>查询参数
@@ -65,14 +65,14 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 集合对象。
+如果成功，此方法将在响应主体中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 对象集合。
 
 
 ## <a name="example"></a>示例
 
 ##### <a name="request-1"></a>请求 1
 
-第一个示例将获取已登录用户租户中定义的所有会议室。
+第一个示例将获取代表登录用户租户中定义的所有会议室的 [emailAddress](../resources/emailaddress.md) 对象。
 
 <!-- {
   "blockType": "request",
@@ -140,7 +140,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>请求 2
 
-第二个示例将获取通过电子邮件地址 Building2Rooms@contoso.onmicrosoft.com 标识的特定会议室列表中的会议室。
+第二个示例将获取 [emailAddress](../resources/emailaddress.md) 对象，该对象代表由电子邮件地址 Building2Rooms@contoso.onmicrosoft.com 标识的特定会议室列表中的会议室。
 
 <!-- {
   "blockType": "request",
