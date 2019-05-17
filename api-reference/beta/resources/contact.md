@@ -4,12 +4,12 @@ description: 联系人是 Outlook 中的一个项目，你可以在这里组织�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 749ae9ed2e15230bd88949aff00ce07fb2cf4b8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6c5c1bf0b04117a4a0ff7761866cf414f008ee7d
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341188"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108985"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -86,20 +86,20 @@ ms.locfileid: "33341188"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|类别|String 集合|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
-|changeKey|字符串|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
-|children|String 集合|联系人子女的姓名。|
+|categories|String 集合|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
+|changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
+|children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|department|String|联系人所在的部门。|
-|displayName|String|联系人的显示名称。 您可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意, 对其他属性的后续更新可能会导致自动生成的值覆盖您指定的 displayName 值。 若要保留预先存在的值, 请始终在[更新](../api/contact-update.md)操作中将其包含为 displayName。|
+|部门|String|联系人所在的部门。|
+|displayName|String|联系人的显示名称。 可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在[更新](../api/contact-update.md)操作中将其作为 displayName。|
 |emailAddresses|[typedEmailAddress](typedemailaddress.md)集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
 |flag|[followupFlag](followupflag.md)|指示联系人的状态、开始日期、截止日期或完成日期的标志值。 |
 |gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
-|id|字符串|联系人的唯一标识符。只读。|
+|id|字符串| 联系人的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]只读。 |
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -115,9 +115,9 @@ ms.locfileid: "33341188"
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|String|联系人的职位。|
+|title|字符串|联系人的职位。|
 |websites |[website](website.md) collection|与联系人关联的网站。 |
-|weddingAnniversary |Date |联系人的婚礼周年纪念。 |
+|weddingAnniversary |日期 |联系人的婚礼周年纪念。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。|
 |yomiGivenName|String|联系人的注音日文名字。|
 |yomiSurname|String|联系人的注音日文姓氏。|

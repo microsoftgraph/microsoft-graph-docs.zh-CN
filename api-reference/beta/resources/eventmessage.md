@@ -4,22 +4,22 @@ description: '表示会议请求、取消或响应（可以是下列任一行为
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e1072a8b94a9c6099494e649b66595092e737083
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d4fa746df2c2dcde7785d768c0bd9268c19c113f
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333888"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108978"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。 
+表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。
 
-**eventMessage**实体派生自[邮件](message.md), [eventMessageRequest](eventmessagerequest.md)派生自**eventMessage**并表示会议请求。 **meetingMessageType** 属性确定事件邮件类型。
+**EventMessage**实体派生自[邮件](message.md), [eventMessageRequest](eventmessagerequest.md)派生自**eventMessage**并表示会议请求。 **meetingMessageType** 属性确定事件邮件类型。
 
-如果组织者或应用发送会议请求，会议请求以 **eventMessage** 实例（其中包含 **meetingRequest** 的 **meetingMessageType**）的形式，发送到与会者收件箱中。 此外，Outlook 会自动在与会者日历中创建 **event** 实例，其中 **showAs** 属性设置为 **tentative**。 
+如果组织者或应用发送会议请求，会议请求以 **eventMessage** 实例（其中包含 **meetingRequest** 的 **meetingMessageType**）的形式，发送到与会者收件箱中。 此外，Outlook 会自动在与会者日历中创建 **event** 实例，其中 **showAs** 属性设置为 **tentative**。
 
 若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以以编程方式代表与会者响应事件, 即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
 
@@ -27,7 +27,7 @@ ms.locfileid: "33333888"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。  
+下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
@@ -105,7 +105,7 @@ ms.locfileid: "33333888"
 |flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
-|id|字串符号||
+|id|字串符号| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]只读。 |
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
@@ -121,7 +121,7 @@ ms.locfileid: "33333888"
 |meetingMessageType|String| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTentativelyAccepted`、`meetingDeclined`。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
-|定期|[patternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
 |sender|[recipient](recipient.md)|实际用于生成邮件的帐户。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
@@ -137,7 +137,7 @@ ms.locfileid: "33333888"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
@@ -150,10 +150,10 @@ ms.locfileid: "33333888"
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。|
 |[删除](../api/eventmessage-delete.md) | None |更新 eventMessage 对象。|
-|[copy](../api/message-copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
-|[createForward](../api/message-createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
-|[createReply](../api/message-createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
-|[createReplyAll](../api/message-createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
+|[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
+|[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
 |[转发](../api/message-forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
 |[移动](../api/message-move.md)|[message](message.md)|将邮件移到文件夹。此操作会在目标文件夹中新建邮件副本。|
 |[回复](../api/message-reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
@@ -162,7 +162,7 @@ ms.locfileid: "33333888"
 |[取消订阅](../api/message-unsubscribe.md)|无|使用 List-Unsubscribe 标头中的第一个 mailto 命令中指定的数据和地址发送邮件。|
 |**附件**| | |
 |[列出附件](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) 集合| 获取 eventMessage 的所有附件。|
-|[添加附件](../api/eventmessage-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
+|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取按名称标识的开放扩展。|
