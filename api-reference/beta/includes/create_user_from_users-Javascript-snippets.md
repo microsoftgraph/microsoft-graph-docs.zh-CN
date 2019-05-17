@@ -7,18 +7,13 @@ const options = {
 
 const client = Client.init(options);
 
-const user = {
-  accountEnabled: true,
-  displayName: "displayName-value",
-  mailNickname: "mailNickname-value",
-  userPrincipalName: "upn-value@tenant-value.onmicrosoft.com",
-  "passwordProfile" : {
-    forceChangePasswordNextSignIn: true,
-    password: "password-value"
-  }
+const invitation = {
+  invitedUserEmailAddress: "yyy@test.com",
+  inviteRedirectUrl: "https://myapp.com"
 };
 
-let res = await client.api('/users')
-    .post({user : user});
+let res = await client.api('/invitations')
+    .version('beta')
+    .post({invitation : invitation});
 
 ```
