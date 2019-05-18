@@ -7,8 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll')
-    .version('beta')
+let res = await client.api('/me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll')
     .post();
 
 ```

@@ -12,7 +12,6 @@ const exportPersonalData = {
 };
 
 let res = await client.api('/users/{id}/exportPersonalData')
-    .version('beta')
     .post(exportPersonalData);
 
 ```
