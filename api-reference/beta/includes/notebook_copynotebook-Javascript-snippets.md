@@ -13,6 +13,7 @@ const onenoteOperation = {
 };
 
 let res = await client.api('/me/onenote/notebooks/{id}/copyNotebook')
+    .version('beta')
     .post(onenoteOperation);
 
 ```

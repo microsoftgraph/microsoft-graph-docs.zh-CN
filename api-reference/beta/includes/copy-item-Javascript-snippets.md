@@ -16,6 +16,7 @@ const driveItem = {
 };
 
 let res = await client.api('/me/drive/items/{item-id}/copy')
+    .version('beta')
     .post(driveItem);
 
 ```

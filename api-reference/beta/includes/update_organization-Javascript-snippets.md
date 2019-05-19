@@ -20,6 +20,7 @@ const organization = {
 };
 
 let res = await client.api('/organization/{id}')
+    .version('beta')
     .update({organization : organization});
 
 ```

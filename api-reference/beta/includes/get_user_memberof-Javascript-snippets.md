@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/devices/{id}/memberOf')
+let res = await client.api('/me/memberOf')
+    .version('beta')
     .get();
 
 ```

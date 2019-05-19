@@ -12,6 +12,7 @@ const message = {
 };
 
 let res = await client.api('/me/messages/{id}/copy')
+    .version('beta')
     .post(message);
 
 ```

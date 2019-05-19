@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{user-id}')
+let res = await client.api('/users')
+    .version('beta')
     .get();
 
 ```

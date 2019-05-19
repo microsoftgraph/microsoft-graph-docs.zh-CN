@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var memberOf = await graphClient.Devices["{id}"].MemberOf
+var memberOf = await graphClient.Me.MemberOf
     .Request()
     .GetAsync();
 
