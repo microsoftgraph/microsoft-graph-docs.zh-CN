@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id|userPrincipalName}/manager')
+let res = await client.api('/contacts/{id}/manager')
+    .version('beta')
     .get();
 
 ```

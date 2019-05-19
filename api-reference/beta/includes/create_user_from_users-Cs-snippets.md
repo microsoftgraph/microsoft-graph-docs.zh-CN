@@ -3,23 +3,14 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var passwordProfile = new PasswordProfile
+var invitation = new Invitation
 {
-    ForceChangePasswordNextSignIn = true,
-    Password = "password-value",
+    InvitedUserEmailAddress = "yyy@test.com",
+    InviteRedirectUrl = "https://myapp.com",
 };
 
-var user = new User
-{
-    AccountEnabled = true,
-    DisplayName = "displayName-value",
-    MailNickname = "mailNickname-value",
-    UserPrincipalName = "upn-value@tenant-value.onmicrosoft.com",
-    PasswordProfile = passwordProfile,
-};
-
-await graphClient.Users
+await graphClient.Invitations
     .Request()
-    .AddAsync(user);
+    .AddAsync(invitation);
 
 ```

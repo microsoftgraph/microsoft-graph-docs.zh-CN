@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var message = await graphClient.Me.Messages["AAMkADhMGAAA="]
+var message = await graphClient.Me.Messages["AAMkAGI1AAAoZCfHAAA="]
     .Request()
     .GetAsync();
 

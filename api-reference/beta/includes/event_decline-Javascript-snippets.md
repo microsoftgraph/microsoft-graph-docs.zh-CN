@@ -13,6 +13,7 @@ const decline = {
 };
 
 let res = await client.api('/me/events/{id}/decline')
+    .version('beta')
     .post(decline);
 
 ```
