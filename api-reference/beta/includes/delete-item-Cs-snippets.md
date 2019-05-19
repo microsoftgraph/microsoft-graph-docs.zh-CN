@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"]
     .Request()
     .DeleteAsync();
 

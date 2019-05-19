@@ -5,7 +5,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var parentReference = new ItemReference
 {
-    Id = "{new-parent-folder-id}",
+    Id = "new-parent-folder-id",
 };
 
 var driveItem = new DriveItem

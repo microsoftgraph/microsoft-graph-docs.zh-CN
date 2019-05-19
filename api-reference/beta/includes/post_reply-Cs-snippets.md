@@ -5,7 +5,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachments = new Attachment
 {
-    LastModifiedDateTime = "datetime-value",
+    LastModifiedDateTime = "2016-10-19T10:37:00Z",
     Name = "name-value",
     ContentType = "contentType-value",
     Size = 99,
@@ -68,15 +68,15 @@ var body = new ItemBody
 var post = new Post
 {
     Body = body,
-    ReceivedDateTime = "datetime-value",
+    ReceivedDateTime = "2016-10-19T10:37:00Z",
     HasAttachments = true,
     From = from,
     Sender = sender,
     ConversationThreadId = "conversationThreadId-value",
     NewParticipants = newParticipantsList,
     ConversationId = "conversationId-value",
-    CreatedDateTime = "datetime-value",
-    LastModifiedDateTime = "datetime-value",
+    CreatedDateTime = "2016-10-19T10:37:00Z",
+    LastModifiedDateTime = "2016-10-19T10:37:00Z",
     ChangeKey = "changeKey-value",
     Categories = categoriesList,
     Id = "id-value",

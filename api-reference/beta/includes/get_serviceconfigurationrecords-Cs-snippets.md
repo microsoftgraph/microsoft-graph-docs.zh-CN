@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var serviceConfigurationRecords = await graphClient.Domains["{domain-name}"].ServiceConfigurationRecords
+var serviceConfigurationRecords = await graphClient.Domains["contoso.com"].ServiceConfigurationRecords
     .Request()
     .GetAsync();
 

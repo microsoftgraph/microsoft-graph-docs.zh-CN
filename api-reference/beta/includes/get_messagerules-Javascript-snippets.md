@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/inbox/messageRules')
+let res = await client.api('/me/mailFolders/inbox/messagerules')
+    .version('beta')
     .get();
 
 ```

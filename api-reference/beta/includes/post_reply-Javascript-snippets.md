@@ -13,7 +13,7 @@ const reply = {
       contentType: "",
       content: "content-value"
     },
-    receivedDateTime: "datetime-value",
+    receivedDateTime: "2016-10-19T10:37:00Z",
     hasAttachments: true,
     from: {
       emailAddress: {
@@ -37,8 +37,8 @@ const reply = {
       }
     ],
     conversationId: "conversationId-value",
-    createdDateTime: "datetime-value",
-    lastModifiedDateTime: "datetime-value",
+    createdDateTime: "2016-10-19T10:37:00Z",
+    lastModifiedDateTime: "2016-10-19T10:37:00Z",
     changeKey: "changeKey-value",
     categories: [
       "categories-value"
@@ -48,7 +48,7 @@ const reply = {
     },
     attachments: [
       {
-        lastModifiedDateTime: "datetime-value",
+        lastModifiedDateTime: "2016-10-19T10:37:00Z",
         name: "name-value",
         contentType: "contentType-value",
         size: 99,
@@ -60,6 +60,7 @@ const reply = {
 };
 
 let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/reply')
+    .version('beta')
     .post(reply);
 
 ```

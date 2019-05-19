@@ -8,15 +8,16 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-  @odata.type: "microsoft.graph.fileAttachment",
+  @odata.type: "#Microsoft.OutlookServices.FileAttachment",
   name: "name-value",
   contentType: "contentType-value",
   isInline: false,
   contentLocation: "contentLocation-value",
-  contentBytes: "base64-contentBytes-value"
+  contentBytes: "contentBytes-value"
 };
 
 let res = await client.api('/me/messages/{id}/attachments')
+    .version('beta')
     .post({attachment : attachment});
 
 ```
