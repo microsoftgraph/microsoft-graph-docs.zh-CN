@@ -8,7 +8,7 @@ var plannerPlan = new PlannerPlan
     Title = "title-value",
 };
 
-await graphClient.Planner.Plans["{plan-id}"]
+await graphClient.Planner.Plans["'id'"]
     .Request()
     .UpdateAsync(plannerPlan);
 

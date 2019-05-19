@@ -11,7 +11,8 @@ const plannerBucket = {
   name: "Development"
 };
 
-let res = await client.api('/planner/buckets/{bucket-id}')
+let res = await client.api('/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR')
+    .version('beta')
     .update({plannerBucket : plannerBucket});
 
 ```

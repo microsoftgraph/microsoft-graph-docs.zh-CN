@@ -11,7 +11,8 @@ const String = {
   securityEnabledOnly: true
 };
 
-let res = await client.api('/directoryObjects/{object-id}/getMemberGroups')
+let res = await client.api('/me/getMemberGroups')
+    .version('beta')
     .post(String);
 
 ```

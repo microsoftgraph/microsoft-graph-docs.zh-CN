@@ -13,6 +13,7 @@ const outlookCategory = {
 };
 
 let res = await client.api('/me/outlook/masterCategories')
+    .version('beta')
     .post({outlookCategory : outlookCategory});
 
 ```
