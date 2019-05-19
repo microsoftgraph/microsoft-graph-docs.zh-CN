@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var events = await graphClient.Groups["{id}"].Events
+var appRoleAssignments = await graphClient.ServicePrincipals["{id}"].AppRoleAssignments
     .Request()
     .GetAsync();
 

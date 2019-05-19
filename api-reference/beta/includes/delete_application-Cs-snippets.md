@@ -3,8 +3,8 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var events = await graphClient.Groups["{id}"].Events
+await graphClient.Applications["{id}"]
     .Request()
-    .GetAsync();
+    .DeleteAsync();
 
 ```

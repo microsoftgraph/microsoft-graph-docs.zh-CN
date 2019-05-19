@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/schools/10001')
+let res = await client.api('/auditLogs/directoryAudits')
     .version('beta')
     .get();
 

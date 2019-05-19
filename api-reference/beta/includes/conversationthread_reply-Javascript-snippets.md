@@ -17,6 +17,7 @@ const reply = {
 };
 
 let res = await client.api('/groups/{id}/threads/{id}/reply')
+    .version('beta')
     .post(reply);
 
 ```

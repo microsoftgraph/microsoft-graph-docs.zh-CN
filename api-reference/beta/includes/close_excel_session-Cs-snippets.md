@@ -3,8 +3,9 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var events = await graphClient.Groups["{id}"].Events
+await graphClient.Me.Drive.Items["{id}"].Workbook
+    .CloseSession(this)
     .Request()
-    .GetAsync();
+    .PostAsync()
 
 ```

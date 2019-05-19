@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var items = await graphClient.Me.Drive.Items["{item-id}"]
+var items = await graphClient.Drive.Items["{item-id}"]
     .Request()
     .Select( e => new {
              e.Content 
