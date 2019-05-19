@@ -18,6 +18,7 @@ const conversationThread = {
 };
 
 let res = await client.api('/groups/{id}/conversations/{id}/threads')
+    .version('beta')
     .post({conversationThread : conversationThread});
 
 ```

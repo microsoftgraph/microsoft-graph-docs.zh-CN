@@ -7,15 +7,13 @@ const options = {
 
 const client = Client.init(options);
 
-const listItem = {
-  fields: {
-    Title: "Widget",
-    Color: "Purple",
-    Weight: 32
-  }
+const fieldValueSet = {
+    Color: "Fuchsia",
+    Quantity: 934
 };
 
-let res = await client.api('/sites/{site-id}/lists/{list-id}/items')
-    .post({listItem : listItem});
+let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}/fields')
+    .version('beta')
+    .update({fieldValueSet : fieldValueSet});
 
 ```

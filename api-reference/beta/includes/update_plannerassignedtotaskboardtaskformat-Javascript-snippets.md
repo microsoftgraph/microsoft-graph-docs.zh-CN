@@ -13,7 +13,8 @@ const plannerAssignedToTaskBoardTaskFormat = {
   }
 };
 
-let res = await client.api('/planner/tasks/{task-id}/assignedToTaskBoardFormat')
+let res = await client.api('/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat')
+    .version('beta')
     .update({plannerAssignedToTaskBoardTaskFormat : plannerAssignedToTaskBoardTaskFormat});
 
 ```

@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Planner.Plans["{id}"]
+await graphClient.Planner.Plans["'id'"]
     .Request()
     .DeleteAsync();
 
