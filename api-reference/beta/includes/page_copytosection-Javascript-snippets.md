@@ -13,6 +13,7 @@ const onenoteOperation = {
 };
 
 let res = await client.api('/me/onenote/pages/{id}/copyToSection')
+    .version('beta')
     .post(onenoteOperation);
 
 ```

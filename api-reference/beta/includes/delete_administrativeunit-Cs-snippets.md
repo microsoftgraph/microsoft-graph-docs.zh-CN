@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Education.Classes["11022"]
+await graphClient.AdministrativeUnits["{id}"]
     .Request()
     .DeleteAsync();
 

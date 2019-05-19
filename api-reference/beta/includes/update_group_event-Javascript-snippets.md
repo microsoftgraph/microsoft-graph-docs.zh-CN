@@ -14,12 +14,13 @@ const event = {
     response: "",
     time: "datetime-value"
   },
-  iCalUId: "iCalUId-value",
+  uid: "iCalUId-value",
   reminderMinutesBeforeStart: 99,
   isReminderOn: true
 };
 
 let res = await client.api('/groups/{id}/events/{id}')
+    .version('beta')
     .update({event : event});
 
 ```
