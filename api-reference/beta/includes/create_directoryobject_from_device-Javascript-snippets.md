@@ -12,7 +12,8 @@ const directoryObject = {
   }
 };
 
-let res = await client.api('/devices/{id}/registeredUsers')
+let res = await client.api('/devices/{id}/registeredUsers/$ref')
+    .version('beta')
     .post({directoryObject : directoryObject});
 
 ```

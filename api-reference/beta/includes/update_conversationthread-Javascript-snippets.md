@@ -13,6 +13,7 @@ const conversationThread = {
 };
 
 let res = await client.api('/groups/{id}/threads/{id}')
+    .version('beta')
     .update({conversationThread : conversationThread});
 
 ```

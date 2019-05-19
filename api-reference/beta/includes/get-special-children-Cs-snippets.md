@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var children = await graphClient.Me.Drive.Special["{special-folder-name}"].Children
+var children = await graphClient.Me.Drive.Special["{name}"].Children
     .Request()
     .GetAsync();
 

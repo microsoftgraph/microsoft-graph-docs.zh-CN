@@ -3,21 +3,31 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var homeAddress = new PhysicalAddress
+var emailAddresses = new TypedEmailAddress
 {
-    Street = "123 Some street",
-    City = "Seattle",
-    State = "WA",
-    PostalCode = "98121",
+    Address = "pavelb@fabrikam.onmicrosoft.com",
+    Name = "Pavel Bansky",
+    Type = EmailType.Other,
+    OtherLabel = "Volunteer work",
 };
+
+var _emailAddresses = new TypedEmailAddress
+{
+    Type = EmailType.Personal,
+    Name = "Pavel Bansky",
+    Address = "pavelb@adatum.onmicrosoft.com",
+};
+
+var emailAddressesList = new List<TypedEmailAddress>();
+emailAddressesList.Add( _emailAddresses );
+emailAddressesList.Add( emailAddresses );
 
 var contact = new Contact
 {
-    HomeAddress = homeAddress,
-    Birthday = "1974-07-22",
+    EmailAddresses = emailAddressesList,
 };
 
-await graphClient.Me.Contacts["{id}"]
+await graphClient.Me.Contacts["AAMkADh6v5AAAvgTCEAAA="]
     .Request()
     .UpdateAsync(contact);
 

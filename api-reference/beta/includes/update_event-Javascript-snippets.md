@@ -12,15 +12,16 @@ const event = {
   originalEndTimeZone: "originalEndTimeZone-value",
   responseStatus: {
     response: "",
-    time: "datetime-value"
+    time: "2016-10-19T10:37:00Z"
   },
   recurrence: null,
-  iCalUId: "iCalUId-value",
+  uid: "iCalUId-value",
   reminderMinutesBeforeStart: 99,
   isReminderOn: true
 };
 
 let res = await client.api('/me/events/{id}')
+    .version('beta')
     .update({event : event});
 
 ```

@@ -8,21 +8,22 @@ const options = {
 const client = Client.init(options);
 
 const device = {
-  accountEnabled:false,
-  alternativeSecurityIds:
-  [
+  accountEnabled: true,
+  alternativeSecurityIds: [
     {
-      type:2,
-      key:"base64Y3YxN2E1MWFlYw=="
+      type: 99,
+      identityProvider: "identityProvider-value",
+      key: "base64Y3YxN2E1MWFlYw=="
     }
   ],
-  deviceId:"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
-  displayName:"Test device",
-  operatingSystem:"linux",
-  operatingSystemVersion:"1"
+  approximateLastSignInDateTime: "2016-10-19T10:37:00Z",
+  deviceId: "deviceId-value",
+  deviceMetadata: "deviceMetadata-value",
+  deviceVersion: 99
 };
 
 let res = await client.api('/devices')
+    .version('beta')
     .post({device : device});
 
 ```
