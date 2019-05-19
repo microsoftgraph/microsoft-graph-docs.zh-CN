@@ -14,6 +14,7 @@ const attachment = {
 };
 
 let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/attachments')
+    .version('beta')
     .post({attachment : attachment});
 
 ```

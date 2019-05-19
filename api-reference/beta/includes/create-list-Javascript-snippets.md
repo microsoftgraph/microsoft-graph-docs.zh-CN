@@ -25,6 +25,7 @@ const list = {
 };
 
 let res = await client.api('/sites/{site-id}/lists')
+    .version('beta')
     .post({list : list});
 
 ```

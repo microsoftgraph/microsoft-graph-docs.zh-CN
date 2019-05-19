@@ -12,6 +12,7 @@ const message = {
 };
 
 let res = await client.api('/me/messages/AAMkADhAAATs28OAAA=/move')
+    .version('beta')
     .post(message);
 
 ```

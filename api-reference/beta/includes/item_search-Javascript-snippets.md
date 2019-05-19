@@ -8,6 +8,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/drive/root/search(q='{search-query}')')
+    .version('beta')
     .get();
 
 ```

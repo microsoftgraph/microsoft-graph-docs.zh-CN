@@ -16,6 +16,7 @@ const inferenceClassificationOverride = {
 };
 
 let res = await client.api('/me/inferenceClassification/overrides')
+    .version('beta')
     .post({inferenceClassificationOverride : inferenceClassificationOverride});
 
 ```
