@@ -4,18 +4,18 @@ description: '可用于跟踪工作项目的 Outlook 项目。 '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8dd9c4b87ebe43755ae4ad0ce0dae92de5a9d96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341700"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34109536"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可用于跟踪工作项目的 Outlook 项目。 
+可用于跟踪工作项目的 Outlook 项目。
 
 你可以使用任务来跟踪开始、截止和实际完成日期及时间、其进度或状态、它是否为定期任务并且需要提醒。
 
@@ -28,7 +28,8 @@ ms.locfileid: "33341700"
 - reminderDateTime
 - startDateTime
 
-默认情况下，POST、GET、PATCH 和[完成](../api/outlooktask-complete.md)操作会在 UTC 的 REST 响应中返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。 以下示例在对应响应的 EST 中返回与日期相关的属性：
+默认情况下，POST、GET、PATCH 和[完成](../api/outlooktask-complete.md)操作会在 UTC 的 REST 响应中返回与日期相关的属性。
+你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。 以下示例在对应响应的 EST 中返回与日期相关的属性：
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -62,8 +63,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|要在指定时区内完成任务的日期。|
 |hasAttachments|Boolean|如果任务包含附件，则设置为 true。|
-|id|String|任务的唯一标识符。 只读。|
-|重要性|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+|id|String| 任务的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
+|importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |所有者|String|任务创建者的姓名。|
@@ -93,7 +94,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTask"
 }-->
 

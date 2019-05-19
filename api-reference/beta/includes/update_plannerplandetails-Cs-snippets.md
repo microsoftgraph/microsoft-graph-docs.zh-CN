@@ -21,7 +21,7 @@ var plannerPlanDetails = new PlannerPlanDetails
     CategoryDescriptions = categoryDescriptions,
 };
 
-await graphClient.Planner.Plans["{plan-id}"].Details
+await graphClient.Planner.Plans["xqQg5FS2LkCp935s-FIFm2QAFkHM"].Details
     .Request()
     .UpdateAsync(plannerPlanDetails);
 

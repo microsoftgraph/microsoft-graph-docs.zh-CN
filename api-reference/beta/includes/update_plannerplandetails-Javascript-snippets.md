@@ -18,7 +18,8 @@ const plannerPlanDetails = {
   }
 };
 
-let res = await client.api('/planner/plans/{plan-id}/details')
+let res = await client.api('/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details')
+    .version('beta')
     .update({plannerPlanDetails : plannerPlanDetails});
 
 ```

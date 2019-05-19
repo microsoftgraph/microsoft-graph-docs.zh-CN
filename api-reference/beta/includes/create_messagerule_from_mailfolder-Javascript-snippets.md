@@ -29,7 +29,8 @@ const messageRule = {
      }    
 };
 
-let res = await client.api('/me/mailFolders/inbox/messageRules')
+let res = await client.api('/me/mailFolders/inbox/messagerules')
+    .version('beta')
     .post({messageRule : messageRule});
 
 ```

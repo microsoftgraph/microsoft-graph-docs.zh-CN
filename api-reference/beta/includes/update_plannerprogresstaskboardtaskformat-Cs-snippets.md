@@ -8,7 +8,7 @@ var plannerProgressTaskBoardTaskFormat = new PlannerProgressTaskBoardTaskFormat
     OrderHint = "A6673H Ejkl!",
 };
 
-await graphClient.Planner.Tasks["{task-id}"].ProgressTaskBoardFormat
+await graphClient.Planner.Tasks["'id'"].ProgressTaskBoardFormat
     .Request()
     .UpdateAsync(plannerProgressTaskBoardTaskFormat);
 

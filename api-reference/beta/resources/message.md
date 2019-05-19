@@ -4,12 +4,12 @@ description: 邮箱文件夹中的邮件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f2dd5ec207ed90ccce830fd80d8bfbbded17bea1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0e2a63a8f252b20b42c51605cc9fc3ee787ff210
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342253"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34110638"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -88,9 +88,11 @@ ms.locfileid: "33342253"
 }
 
 ```
+
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
+
+| 属性 | 类型 | 说明 |
+|:---------|:-----|:------------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。 可以是 HTML 格式或文本格式。 查看有关[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)的信息。|
 |bodyPreview|String|邮件正文中的前 255 个字符。 文本格式。 如果消息包含 [mention](mention.md) 实例，该属性也包含这些提及内容的串联。 |
@@ -103,7 +105,7 @@ ms.locfileid: "33342253"
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。 |
-|id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
+|id|String| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
 |inferenceClassification|String| 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合。 该集合包括指示邮件从发件人发送到收件人所采用的网络路径的邮件头。 还可以包含保存邮件应用数据的自定义邮件头。 <br><br> 仅在应用 `$select` 查询选项时返回。 只读。|
@@ -126,9 +128,9 @@ ms.locfileid: "33342253"
 |unsubscribeEnabled|Boolean|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
 |webLink|String|要在 Outlook Web App 中打开邮件的 URL。<br><br>可以将 ispopout 参数附加到此 URL 的末尾以更改邮件的显示方式。如果 ispopout 不存在或设置为 1，则邮件显示在弹出窗口中。如果 ispopout 设置为 0，则浏览器将在 Outlook Web App 审阅窗格中显示邮件。<br><br>如果通过 Outlook Web App 登录邮箱，该邮件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br><br>可以从 iFrame 中访问此 URL。|
 
-
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+
+| 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md) 集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
 |extensions|[Extension](extension.md) 集合| 为邮件定义的开放扩展集合。 可为空。|
@@ -138,8 +140,8 @@ ms.locfileid: "33342253"
 
 ## <a name="methods"></a>方法
 
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
+| 方法 | 返回类型 |说明|
+|:-------|:------------|:----------|
 |[列出邮件](../api/user-list-messages.md) |[邮件](message.md)集合 | 获取已登录用户的邮箱中的所有邮件（包括“已删除邮件”和“待筛选邮件”文件夹）。 |
 |[创建邮件](../api/user-post-messages.md) | [邮件](message.md) | 创建新邮件的草稿。 |
 |[获取邮件](../api/message-get.md) | [邮件](message.md) |读取 message 对象的属性和关系。|
@@ -172,7 +174,7 @@ ms.locfileid: "33342253"
 
 ## <a name="see-also"></a>另请参阅
 
-- [获取邮箱设置](../api/user-get-mailboxsettings.md) 
+- [获取邮箱设置](../api/user-get-mailboxsettings.md)
 - [更新邮箱设置](../api/user-update-mailboxsettings.md)
 - [使用增量查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)
 - [获取文件夹中邮件的增量更改](/graph/delta-query-messages)

@@ -11,7 +11,8 @@ const plannerPlan = {
   title: "title-value"
 };
 
-let res = await client.api('/planner/plans/{plan-id}')
+let res = await client.api('/planner/plans/'id'')
+    .version('beta')
     .update({plannerPlan : plannerPlan});
 
 ```

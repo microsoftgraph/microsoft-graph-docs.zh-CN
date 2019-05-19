@@ -12,6 +12,7 @@ const notebook = {
 };
 
 let res = await client.api('/me/onenote/notebooks')
+    .version('beta')
     .post({notebook : notebook});
 
 ```

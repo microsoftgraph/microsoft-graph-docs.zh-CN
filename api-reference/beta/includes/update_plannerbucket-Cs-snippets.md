@@ -8,7 +8,7 @@ var plannerBucket = new PlannerBucket
     Name = "Development",
 };
 
-await graphClient.Planner.Buckets["{bucket-id}"]
+await graphClient.Planner.Buckets["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"]
     .Request()
     .UpdateAsync(plannerBucket);
 

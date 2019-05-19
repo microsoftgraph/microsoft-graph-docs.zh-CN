@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 3dfa65d9c285422351c82a43494aaf524b894685
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 69dfab3d7c7042ce7c5240f0bb3d58f5d604bdf6
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968840"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108626"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,11 @@ ms.locfileid: "33968840"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="directory-apis"></a>目录 API
+| **更改类型** | **版本** | **说明** |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](https://docs.microsoft.com/zh-CN/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |更改类型|版本|说明|
@@ -433,7 +438,7 @@ ms.locfileid: "33968840"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/en-us/graph/api/group-list-transitivemembers?view=graph-rest-beta)。|
+| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/zh-CN/graph/api/group-list-transitivemembers?view=graph-rest-beta)。|
 | 添加项 | beta | 添加了新资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。|
 | 添加 | beta | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 `createdDateTime` 属性。|
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|

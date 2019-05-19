@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: cc8d3b724b42827c568377b1f4d83d6c4513414a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 41cd5756ffb82a2e32a7e336cc24b839e310187e
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036505"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108964"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -103,6 +103,7 @@ ms.locfileid: "34036505"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
+|assignedLabels|[assignedLabel](assignedlabel.md) 集合|与 Office 365 组关联的敏感度标签对（标签 ID、标签名称）列表。 <br><br>仅在 $select 上返回。 只读。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
@@ -218,6 +219,7 @@ ms.locfileid: "34036505"
 ```json
 {
   "accessType": "string",
+  "assignedLabels": [{"@odata.type": "microsoft.graph.assignedLabel"}],
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
