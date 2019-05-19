@@ -13,6 +13,7 @@ const plannerPlan = {
 };
 
 let res = await client.api('/planner/plans')
+    .version('beta')
     .post({plannerPlan : plannerPlan});
 
 ```

@@ -13,6 +13,7 @@ const tentativelyAccept = {
 };
 
 let res = await client.api('/me/events/{id}/tentativelyAccept')
+    .version('beta')
     .post(tentativelyAccept);
 
 ```

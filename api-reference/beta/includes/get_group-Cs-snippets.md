@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var group = await graphClient.Groups["b320ee12-b1cd-4cca-b648-a437be61c5cd"]
+var group = await graphClient.Groups["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"]
     .Request()
     .GetAsync();
 

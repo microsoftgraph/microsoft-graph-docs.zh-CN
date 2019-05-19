@@ -18,6 +18,7 @@ const educationClass = {
 };
 
 let res = await client.api('/education/classes')
+    .version('beta')
     .post({educationClass : educationClass});
 
 ```

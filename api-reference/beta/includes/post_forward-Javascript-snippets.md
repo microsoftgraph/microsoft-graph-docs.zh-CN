@@ -20,6 +20,7 @@ const forward = {
 };
 
 let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/forward')
+    .version('beta')
     .post(forward);
 
 ```

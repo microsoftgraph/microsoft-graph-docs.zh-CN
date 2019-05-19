@@ -10,10 +10,11 @@ const client = Client.init(options);
 const attachment = {
   @odata.type: "#microsoft.graph.fileAttachment",
   name: "name-value",
-  contentBytes: "base64-contentBytes-value"
+  contentBytes: "contentBytes-value"
 };
 
 let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/attachments')
+    .version('beta')
     .post({attachment : attachment});
 
 ```

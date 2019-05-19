@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=')
+let res = await client.api('/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')')
+    .version('beta')
     .delete();
 
 ```

@@ -31,6 +31,7 @@ const educationSchool = {
 };
 
 let res = await client.api('/education/schools')
+    .version('beta')
     .post({educationSchool : educationSchool});
 
 ```

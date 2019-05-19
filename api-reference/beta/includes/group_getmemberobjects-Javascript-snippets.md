@@ -12,6 +12,7 @@ const String = {
 };
 
 let res = await client.api('/groups/{id}/getMemberObjects')
+    .version('beta')
     .post(String);
 
 ```
