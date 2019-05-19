@@ -12,6 +12,7 @@ const mailFolder = {
 };
 
 let res = await client.api('/me/mailFolders/{id}/copy')
+    .version('beta')
     .post(mailFolder);
 
 ```

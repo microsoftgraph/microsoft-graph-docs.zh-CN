@@ -14,6 +14,7 @@ const driveItem = {
 };
 
 let res = await client.api('/me/drive/root/children')
+    .version('beta')
     .post({driveItem : driveItem});
 
 ```

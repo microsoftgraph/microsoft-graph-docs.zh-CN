@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Domains["{domain-name}"]
+await graphClient.Domains["contoso.com"]
     .Verify()
     .Request()
     .PostAsync()
