@@ -14,7 +14,7 @@ var _event = new Event
     OriginalStartTimeZone = "originalStartTimeZone-value",
     OriginalEndTimeZone = "originalEndTimeZone-value",
     ResponseStatus = responseStatus,
-    ICalUId = "iCalUId-value",
+    Uid = "iCalUId-value",
     ReminderMinutesBeforeStart = 99,
     IsReminderOn = true,
 };
