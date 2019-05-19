@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directoryRoles/{id}')
+let res = await client.api('/auditLogs/directoryAudits')
     .version('beta')
     .get();
 
