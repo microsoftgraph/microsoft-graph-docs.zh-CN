@@ -14,7 +14,8 @@ const messageRule = {
      }
 };
 
-let res = await client.api('/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=')
+let res = await client.api('/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')')
+    .version('beta')
     .update({messageRule : messageRule});
 
 ```

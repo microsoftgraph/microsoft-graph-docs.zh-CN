@@ -3,12 +3,10 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var comment = "comment-value";
-
 var emailAddress = new EmailAddress
 {
-    Name = "name-value",
-    Address = "address-value",
+    Address = "danas@contoso.onmicrosoft.com",
+    Name = "Dana Swope",
 };
 
 var toRecipients = new Recipient
@@ -19,8 +17,16 @@ var toRecipients = new Recipient
 var toRecipientsList = new List<Recipient>();
 toRecipientsList.Add( toRecipients );
 
-await graphClient.Me.Messages["{id}"]
-    .Forward(comment,toRecipientsList)
+var message = new Message
+{
+    IsDeliveryReceiptRequested = true,
+    ToRecipients = toRecipientsList,
+};
+
+var comment = "Dana, just want to make sure you get this.";
+
+await graphClient.Me.Messages["AAMkADA1MTAAAH5JaLAAA="]
+    .Forward(message,comment,toRecipientsList)
     .Request()
     .PostAsync()
 

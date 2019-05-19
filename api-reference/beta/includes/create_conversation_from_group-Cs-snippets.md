@@ -20,7 +20,7 @@ newParticipantsList.Add( newParticipants );
 var body = new ItemBody
 {
     ContentType = BodyType.Html,
-    Content = "What do we know so far?",
+    Content = "The confirmation will come by the end of the week.",
 };
 
 var posts = new Post
@@ -42,7 +42,7 @@ threadsList.Add( threads );
 
 var conversation = new Conversation
 {
-    Topic = "New locations for this quarter",
+    Topic = "New head count",
     Threads = threadsList,
 };
 
