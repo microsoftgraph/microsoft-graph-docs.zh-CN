@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/events/AAMkADAGAADDdm4NAAA=')
+let res = await client.api('/me/events/AAMkADAGAADDdm4NAAA=/')
+    .version('beta')
     .select('subject,body,bodyPreview,organizer,attendees,start,end,location,locations')
     .get();
 
