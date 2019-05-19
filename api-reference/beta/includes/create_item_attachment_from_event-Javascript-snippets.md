@@ -9,7 +9,7 @@ const client = Client.init(options);
 
 const attachment = {
   @odata.type: "#microsoft.graph.itemAttachment",
-  name: "Holiday event", 
+  name: "Holiday event",
   item: {
         @odata.type: "microsoft.graph.event",
         subject: "Discuss gifts for children",
@@ -28,7 +28,8 @@ const attachment = {
     }
 };
 
-let res = await client.api('/me/events/AAMkAGI1AAAt9AHjAAA=/attachments')
+let res = await client.api('/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments')
+    .version('beta')
     .post({attachment : attachment});
 
 ```

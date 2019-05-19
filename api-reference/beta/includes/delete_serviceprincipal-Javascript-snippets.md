@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/tasks/'id'')
+let res = await client.api('/servicePrincipals/{id}')
     .version('beta')
     .delete();
 

@@ -7,8 +7,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/tasks/'id'')
+const String = {
+  securityEnabledOnly: true
+};
+
+let res = await client.api('/me/getMemberObjects')
     .version('beta')
-    .delete();
+    .post(String);
 
 ```

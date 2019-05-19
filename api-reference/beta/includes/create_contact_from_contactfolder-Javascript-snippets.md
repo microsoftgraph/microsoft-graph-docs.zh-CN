@@ -9,7 +9,7 @@ const client = Client.init(options);
 
 const contact = {
   parentFolderId: "parentFolderId-value",
-  birthday: "datetime-value",
+  birthday: "2016-10-19T10:37:00Z",
   fileAs: "fileAs-value",
   displayName: "displayName-value",
   givenName: "givenName-value",
@@ -17,6 +17,7 @@ const contact = {
 };
 
 let res = await client.api('/me/contactFolders/{id}/contacts')
+    .version('beta')
     .post({contact : contact});
 
 ```
