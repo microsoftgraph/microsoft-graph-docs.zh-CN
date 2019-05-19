@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var childFolders = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
+var signIn = await graphClient.AuditLogs.SignIns["{id}"]
     .Request()
     .GetAsync();
 

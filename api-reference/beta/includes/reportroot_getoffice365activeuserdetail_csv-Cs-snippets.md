@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var childFolders = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
+var getOffice365ActiveUserDetail = await graphClient.Reports.GetOffice365ActiveUserDetail('D7')
     .Request()
     .GetAsync();
 

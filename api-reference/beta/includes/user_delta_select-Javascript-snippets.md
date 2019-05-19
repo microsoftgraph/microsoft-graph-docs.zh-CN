@@ -7,8 +7,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/contacts/AAMkAGI2THk0AAA=')
+let res = await client.api('/users/delta')
     .version('beta')
+    .select('displayName,jobTitle,mobilePhone')
     .get();
 
 ```

@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var childFolders = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
+var getMailboxUsageDetail = await graphClient.Reports.GetMailboxUsageDetail('D7')
     .Request()
     .GetAsync();
 

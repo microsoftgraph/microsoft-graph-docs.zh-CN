@@ -3,13 +3,14 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = new MailFolder
+var agreement = new Agreement
 {
     DisplayName = "displayName-value",
+    IsViewingBeforeAcceptanceRequired = true,
 };
 
-await graphClient.Me.MailFolders["AAMkAGVmMDEzM"]
+await graphClient.Agreements["'id'"]
     .Request()
-    .UpdateAsync(mailFolder);
+    .UpdateAsync(agreement);
 
 ```

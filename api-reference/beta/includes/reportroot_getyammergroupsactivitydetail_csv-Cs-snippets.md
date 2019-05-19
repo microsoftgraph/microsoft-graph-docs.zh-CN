@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var childFolders = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
+var getYammerGroupsActivityDetail = await graphClient.Reports.GetYammerGroupsActivityDetail('D7')
     .Request()
     .GetAsync();
 

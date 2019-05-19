@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/contacts/AAMkAGI2THk0AAA=')
+let res = await client.api('/reports/getSkypeForBusinessDeviceUsageUserCounts(period='D7')')
     .version('beta')
     .get();
 
