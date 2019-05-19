@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/buckets/{id}')
+let res = await client.api('/planner/buckets/'id'')
+    .version('beta')
     .delete();
 
 ```

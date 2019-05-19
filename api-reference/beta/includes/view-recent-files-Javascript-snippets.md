@@ -8,6 +8,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/drive/recent')
+    .version('beta')
     .get();
 
 ```

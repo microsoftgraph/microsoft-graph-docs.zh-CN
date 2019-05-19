@@ -12,6 +12,7 @@ const permission = {
 };
 
 let res = await client.api('/me/drive/items/{item-id}/createLink')
+    .version('beta')
     .post(permission);
 
 ```

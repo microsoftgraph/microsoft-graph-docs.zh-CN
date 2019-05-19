@@ -8,10 +8,12 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  @odata.id: "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+  directoryObject: {
+  }
 };
 
 let res = await client.api('/directoryRoles/{id}/members/$ref')
+    .version('beta')
     .post({directoryObject : directoryObject});
 
 ```
