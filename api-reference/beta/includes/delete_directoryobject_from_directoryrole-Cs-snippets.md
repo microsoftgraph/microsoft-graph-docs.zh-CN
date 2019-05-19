@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.DirectoryRoles["{id}"].Members["{id}"]
+await graphClient.Directoryroles["{id}"].Members["{id}"]
     .Request()
     .DeleteAsync();
 

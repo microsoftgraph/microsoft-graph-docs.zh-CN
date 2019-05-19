@@ -11,7 +11,8 @@ const mailFolder = {
   displayName: "displayName-value",
 };
 
-let res = await client.api('/me/mailFolders/{id}')
+let res = await client.api('/me/mailFolders/AAMkAGVmMDEzM')
+    .version('beta')
     .update({mailFolder : mailFolder});
 
 ```

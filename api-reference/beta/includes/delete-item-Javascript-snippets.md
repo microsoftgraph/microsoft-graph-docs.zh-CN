@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{item-id}')
+let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}')
+    .version('beta')
     .delete();
 
 ```
