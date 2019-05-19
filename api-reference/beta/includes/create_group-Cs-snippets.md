@@ -8,11 +8,11 @@ groupTypesList.Add( "Unified" );
 
 var group = new Group
 {
-    Description = "Self help community for library",
-    DisplayName = "Library Assist",
+    Description = "Self help community for golf",
+    DisplayName = "Golf Assist",
     GroupTypes = groupTypesList,
     MailEnabled = true,
-    MailNickname = "library",
+    MailNickname = "golfassist",
     SecurityEnabled = false,
 };
 

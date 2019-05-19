@@ -7,7 +7,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/domains/{domain-name}/verify')
+let res = await client.api('/domains/contoso.com/verify')
+    .version('beta')
     .post();
 
 ```

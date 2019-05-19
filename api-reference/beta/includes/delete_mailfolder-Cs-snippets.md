@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.MailFolders["{id}"]
+await graphClient.Me.MailFolders["AAMkAGVmMDEzM"]
     .Request()
     .DeleteAsync();
 

@@ -13,6 +13,7 @@ const accept = {
 };
 
 let res = await client.api('/me/events/{id}/accept')
+    .version('beta')
     .post(accept);
 
 ```

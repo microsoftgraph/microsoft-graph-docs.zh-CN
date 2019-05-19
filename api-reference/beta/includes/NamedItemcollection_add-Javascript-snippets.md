@@ -14,6 +14,7 @@ const workbookNamedItem = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/addFormulaLocal')
+    .version('beta')
     .post(workbookNamedItem);
 
 ```
