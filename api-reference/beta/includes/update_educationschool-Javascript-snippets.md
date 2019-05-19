@@ -12,7 +12,8 @@ const educationSchool = {
   description: "Magnate school for the arts. Los Angeles School District"
 };
 
-let res = await client.api('/education/schools/{school-id}')
+let res = await client.api('/education/schools/10002')
+    .version('beta')
     .update({educationSchool : educationSchool});
 
 ```

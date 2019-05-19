@@ -5,7 +5,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var alternativeSecurityIds = new AlternativeSecurityId
 {
-    Type = 2,
+    Type = 99,
+    IdentityProvider = "identityProvider-value",
     Key = "base64Y3YxN2E1MWFlYw==",
 };
 
@@ -14,12 +15,12 @@ alternativeSecurityIdsList.Add( alternativeSecurityIds );
 
 var device = new Device
 {
-    AccountEnabled = false,
+    AccountEnabled = true,
     AlternativeSecurityIds = alternativeSecurityIdsList,
-    DeviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff",
-    DisplayName = "Test device",
-    OperatingSystem = "linux",
-    OperatingSystemVersion = "1",
+    ApproximateLastSignInDateTime = "2016-10-19T10:37:00Z",
+    DeviceId = "deviceId-value",
+    DeviceMetadata = "deviceMetadata-value",
+    DeviceVersion = 99,
 };
 
 await graphClient.Devices

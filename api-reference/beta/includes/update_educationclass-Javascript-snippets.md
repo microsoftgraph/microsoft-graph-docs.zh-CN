@@ -12,7 +12,8 @@ const educationClass = {
   displayName: "World History Level 1",
 };
 
-let res = await client.api('/education/classes/{class-id}')
+let res = await client.api('/education/classes/11014')
+    .version('beta')
     .update({educationClass : educationClass});
 
 ```

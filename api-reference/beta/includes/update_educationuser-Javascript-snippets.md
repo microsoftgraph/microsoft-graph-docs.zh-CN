@@ -14,7 +14,8 @@ const educationUser = {
   surname: "Cazares",
 };
 
-let res = await client.api('/education/users/{user-id}')
+let res = await client.api('/education/users/13020')
+    .version('beta')
     .update({educationUser : educationUser});
 
 ```
