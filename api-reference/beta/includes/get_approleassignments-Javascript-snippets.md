@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/users/13012')
+let res = await client.api('/servicePrincipals/{id}/appRoleAssignments')
     .version('beta')
     .get();
 

@@ -8,10 +8,12 @@ const options = {
 const client = Client.init(options);
 
 const workbookChartPoint = {
-  index: 8
+  index: {
+  }
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt')
+let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/ItemAt')
+    .version('beta')
     .post({workbookChartPoint : workbookChartPoint});
 
 ```
