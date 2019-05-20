@@ -16,7 +16,6 @@ const mailTips = {
 };
 
 let res = await client.api('/me/getMailTips')
-    .version('beta')
     .post(mailTips);
 
 ```

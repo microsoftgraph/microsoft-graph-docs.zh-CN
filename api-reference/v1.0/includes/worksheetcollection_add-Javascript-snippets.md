@@ -12,7 +12,6 @@ const workbookWorksheet = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/add')
-    .version('beta')
     .post(workbookWorksheet);
 
 ```

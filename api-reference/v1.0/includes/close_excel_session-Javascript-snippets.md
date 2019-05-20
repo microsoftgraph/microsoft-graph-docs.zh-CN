@@ -12,7 +12,6 @@ const closeSession = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/closeSession')
-    .version('beta')
     .post(closeSession);
 
 ```

@@ -8,7 +8,7 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableRow = {
-  index: null,
+  index: 5,
   values: [
     [1, 2, 3],
     [4, 5, 6]
@@ -16,7 +16,6 @@ const workbookTableRow = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/add')
-    .version('beta')
     .post(workbookTableRow);
 
 ```

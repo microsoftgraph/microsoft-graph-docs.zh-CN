@@ -17,7 +17,7 @@ const sendMail = {
     toRecipients: [
       {
         emailAddress: {
-          address: "samanthab@contoso.onmicrosoft.com"
+          address: "fannyd@contoso.onmicrosoft.com"
         }
       }
     ],
@@ -33,7 +33,6 @@ const sendMail = {
 };
 
 let res = await client.api('/me/sendMail')
-    .version('beta')
     .post(sendMail);
 
 ```

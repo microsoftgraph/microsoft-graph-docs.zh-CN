@@ -8,7 +8,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/shares/{shareIdOrEncodedSharingUrl}')
-    .version('beta')
     .get();
 
 ```
