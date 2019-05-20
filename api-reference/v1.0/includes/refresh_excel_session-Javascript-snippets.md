@@ -12,7 +12,6 @@ const refreshSession = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/refreshSession')
-    .version('beta')
     .post(refreshSession);
 
 ```

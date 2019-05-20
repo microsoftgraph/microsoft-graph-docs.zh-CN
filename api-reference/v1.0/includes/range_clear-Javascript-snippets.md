@@ -12,7 +12,6 @@ const clear = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/clear')
-    .version('beta')
     .post(clear);
 
 ```

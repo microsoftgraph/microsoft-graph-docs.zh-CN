@@ -11,18 +11,13 @@ const user = {
   addLicenses: [
     {
       disabledPlans: [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      skuId: "skuId-value-1"
-    },
-    {
-      disabledPlans: [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      skuId: "skuId-value-2"
+      skuId: "guid"
     }
   ],
-  removeLicenses: []
+  removeLicenses: [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
 };
 
 let res = await client.api('/me/assignLicense')
-    .version('beta')
     .post(user);
 
 ```

@@ -36,7 +36,6 @@ const event = {
 };
 
 let res = await client.api('/me/events')
-    .version('beta')
     .post({event : event});
 
 ```

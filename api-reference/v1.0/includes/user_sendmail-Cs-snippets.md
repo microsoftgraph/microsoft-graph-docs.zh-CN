@@ -18,7 +18,7 @@ ccRecipientsList.Add( ccRecipients );
 
 var emailAddress = new EmailAddress
 {
-    Address = "samanthab@contoso.onmicrosoft.com",
+    Address = "fannyd@contoso.onmicrosoft.com",
 };
 
 var toRecipients = new Recipient
