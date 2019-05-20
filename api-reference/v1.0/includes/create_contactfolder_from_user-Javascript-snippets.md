@@ -13,7 +13,6 @@ const contactFolder = {
 };
 
 let res = await client.api('/me/contactFolders')
-    .version('beta')
     .post({contactFolder : contactFolder});
 
 ```

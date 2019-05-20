@@ -35,7 +35,6 @@ const sendMail = {
 };
 
 let res = await client.api('/me/sendMail')
-    .version('beta')
     .post(sendMail);
 
 ```

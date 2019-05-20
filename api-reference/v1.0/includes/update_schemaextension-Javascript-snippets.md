@@ -21,7 +21,6 @@ const schemaExtension = {
 };
 
 let res = await client.api('/schemaExtensions/{id}')
-    .version('beta')
     .update({schemaExtension : schemaExtension});
 
 ```

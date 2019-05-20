@@ -12,7 +12,6 @@ const mailFolder = {
 };
 
 let res = await client.api('/me/mailFolders')
-    .version('beta')
     .post({mailFolder : mailFolder});
 
 ```

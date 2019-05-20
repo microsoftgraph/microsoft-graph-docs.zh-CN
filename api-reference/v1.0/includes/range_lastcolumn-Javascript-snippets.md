@@ -7,8 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/LastColumn')
-    .version('beta')
+let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/lastColumn')
     .get();
 
 ```

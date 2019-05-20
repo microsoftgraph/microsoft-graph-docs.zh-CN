@@ -3,9 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var index = new Int32
-{
-};
+var index = 3;
 
 var values = new Json
 {
