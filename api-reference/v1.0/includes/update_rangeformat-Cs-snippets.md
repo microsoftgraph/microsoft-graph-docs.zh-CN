@@ -11,7 +11,7 @@ var workbookRangeFormat = new WorkbookRangeFormat
     WrapText = false,
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"].Range('$A$1').Format
+await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{sheet-id}"].Range('$A$1').Format
     .Request()
     .UpdateAsync(workbookRangeFormat);
 
