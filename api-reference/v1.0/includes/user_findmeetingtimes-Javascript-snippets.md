@@ -49,7 +49,6 @@ const meetingTimeSuggestionsResult = {
 };
 
 let res = await client.api('/me/findMeetingTimes')
-    .version('beta')
     .post(meetingTimeSuggestionsResult);
 
 ```
