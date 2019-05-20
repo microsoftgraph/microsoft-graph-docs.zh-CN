@@ -8,12 +8,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableRow = {
-  index: {
-  }
+  index: 4
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt')
-    .version('beta')
+let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt')
     .post({workbookTableRow : workbookTableRow});
 
 ```
