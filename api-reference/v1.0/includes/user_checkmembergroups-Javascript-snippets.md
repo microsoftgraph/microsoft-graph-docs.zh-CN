@@ -14,7 +14,6 @@ const String = {
 };
 
 let res = await client.api('/me/checkMemberGroups')
-    .version('beta')
     .post(String);
 
 ```

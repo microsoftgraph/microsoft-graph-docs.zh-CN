@@ -33,7 +33,6 @@ const message = {
 };
 
 let res = await client.api('/me/messages')
-    .version('beta')
     .post({message : message});
 
 ```

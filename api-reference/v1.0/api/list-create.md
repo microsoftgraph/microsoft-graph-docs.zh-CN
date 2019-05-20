@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 576c7b8c5f2f3e7b75e336cf898312a24e712903
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 5b27d1711511e42707671f8acfae3702acb15867
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613182"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34192763"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 
@@ -49,7 +49,7 @@ POST /sites/{site-id}/lists
 Content-Type: application/json
 
 {
-  "name": "Books",
+  "displayName": "Books",
   "columns": [
     {
       "name": "Author",
@@ -100,7 +100,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
