@@ -12,7 +12,6 @@ const workbookRange = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/insert')
-    .version('beta')
     .post(workbookRange);
 
 ```

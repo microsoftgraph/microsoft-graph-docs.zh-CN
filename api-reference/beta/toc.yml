@@ -35,6 +35,8 @@ items:
         items:
           - name: 概述
             href: /graph/webhooks?toc=./ref/toc.json
+          - name: 教程
+            href: /graph/tutorials/change-notifications
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
       - name: 跟踪更改
@@ -1066,7 +1068,7 @@ items:
               - name: Android 托管的应用商店应用配置
                 href: resources/intune-apps-androidmanagedstoreappconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-androidmanagedstoreappconfiguration-list.md
                   - name: 获取
                     href: api/intune-apps-androidmanagedstoreappconfiguration-get.md
@@ -1079,7 +1081,7 @@ items:
               - name: Android 托管的应用商店应用配置架构
                 href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md
                   - name: 获取
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md
@@ -1278,7 +1280,7 @@ items:
               - name: iOS VPP 应用分配的用户许可证
                 href: resources/intune-apps-iosvppappassigneduserlicense.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-iosvppappassigneduserlicense-list.md
                   - name: 获取
                     href: api/intune-apps-iosvppappassigneduserlicense-get.md
@@ -1295,7 +1297,7 @@ items:
               - name: iOS VPP 电子书
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-books-iosvppebook-list.md
                   - name: 获取
                     href: api/intune-books-iosvppebook-get.md
@@ -1500,7 +1502,7 @@ items:
               - name: 托管的电子书类别
                 href: resources/intune-books-managedebookcategory.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-books-managedebookcategory-list.md
                   - name: 获取
                     href: api/intune-books-managedebookcategory-get.md
@@ -1513,7 +1515,7 @@ items:
               - name: 受管理的 iOS LOB 应用
                 href: resources/intune-apps-managedioslobapp.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-managedioslobapp-list.md
                   - name: 获取
                     href: api/intune-apps-managedioslobapp-get.md
@@ -1719,7 +1721,7 @@ items:
               - name: 移动 LOB 应用
                 href: resources/intune-apps-mobilelobapp.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-mobilelobapp-list.md
                   - name: 获取
                     href: api/intune-apps-mobilelobapp-get.md
@@ -1728,7 +1730,7 @@ items:
               - name: Office 客户端配置
                 href: resources/intune-cirrus-officeclientconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-cirrus-officeclientconfiguration-list.md
                   - name: 获取
                     href: api/intune-cirrus-officeclientconfiguration-get.md
@@ -3867,7 +3869,7 @@ items:
               - name: iOS 企业版 Wi-Fi 配置
                 href: resources/intune-deviceconfig-iosenterprisewificonfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-get.md
@@ -3880,7 +3882,7 @@ items:
               - name: iOS 常规设备配置
                 href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -4446,7 +4448,7 @@ items:
               - name: 用户 PFX 证书
                 href: resources/intune-raimportcerts-userpfxcertificate.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-raimportcerts-userpfxcertificate-list.md
                   - name: 获取
                     href: api/intune-raimportcerts-userpfxcertificate-get.md
@@ -4511,7 +4513,7 @@ items:
               - name: Windows 10 证书配置文件基础
                 href: resources/intune-deviceconfig-windows10certificateprofilebase.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-windows10certificateprofilebase-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10certificateprofilebase-get.md
@@ -6206,7 +6208,7 @@ items:
               - name: Intune 品牌打造配置文件
                 href: resources/intune-wip-intunebrandingprofile.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-wip-intunebrandingprofile-list.md
                   - name: 获取
                     href: api/intune-wip-intunebrandingprofile-get.md
@@ -6221,7 +6223,7 @@ items:
               - name: Intune 品牌打造配置文件分配
                 href: resources/intune-wip-intunebrandingprofileassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-wip-intunebrandingprofileassignment-list.md
                   - name: 获取
                     href: api/intune-wip-intunebrandingprofileassignment-get.md
