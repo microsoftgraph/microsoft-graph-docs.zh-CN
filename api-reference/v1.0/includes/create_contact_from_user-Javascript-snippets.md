@@ -12,27 +12,16 @@ const contact = {
   surname: "Bansky",
   emailAddresses: [
     {
-      address: "pavelb@contoso.onmicrosoft.com",
-      name: "Pavel Bansky",
-      type: "personal"
-    },
-    {
       address: "pavelb@fabrikam.onmicrosoft.com",
-      name: "Pavel Bansky",
-      type: "other",
-      otherLabel: "Volunteer work"
+      name: "Pavel Bansky"
     }
   ],
-  "phones" : [
-    {
-      number: "+1 732 555 0102",
-      type: "business"
-    }
+  businessPhones: [
+    "+1 732 555 0102"
   ]
 };
 
 let res = await client.api('/me/contacts')
-    .version('beta')
     .post({contact : contact});
 
 ```

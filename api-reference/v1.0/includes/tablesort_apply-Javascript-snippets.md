@@ -26,7 +26,6 @@ const apply = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply')
-    .version('beta')
     .post(apply);
 
 ```

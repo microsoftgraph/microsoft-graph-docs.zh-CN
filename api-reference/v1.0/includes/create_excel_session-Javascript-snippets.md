@@ -12,7 +12,6 @@ const workbookSessionInfo = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/createSession')
-    .version('beta')
     .post(workbookSessionInfo);
 
 ```

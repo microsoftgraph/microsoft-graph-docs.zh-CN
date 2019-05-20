@@ -12,7 +12,6 @@ const _delete = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/delete')
-    .version('beta')
     .post(_delete);
 
 ```

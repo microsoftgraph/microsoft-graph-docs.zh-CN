@@ -8,8 +8,7 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableColumn = {
-  index: {
-  },
+  index: 3,
   values: [
     {
     }
@@ -17,7 +16,6 @@ const workbookTableColumn = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/add')
-    .version('beta')
     .post(workbookTableColumn);
 
 ```
