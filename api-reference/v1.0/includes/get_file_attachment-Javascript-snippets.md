@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders')
+let res = await client.api('/me/events/{id}/attachments/{id}')
     .get();
 
 ```

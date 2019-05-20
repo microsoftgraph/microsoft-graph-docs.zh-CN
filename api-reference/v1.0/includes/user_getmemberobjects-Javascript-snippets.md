@@ -12,7 +12,6 @@ const String = {
 };
 
 let res = await client.api('/me/getMemberObjects')
-    .version('beta')
     .post(String);
 
 ```
