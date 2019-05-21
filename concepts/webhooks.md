@@ -3,18 +3,21 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bffab081e8f9520890f6bfe7c690b9258cd3dee
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575966"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34182088"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
 Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 
 Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它将获取更多数据、更新其缓存和视图等。
+
+> [!div class="nextstepaction"]
+> [使用 .NET Core 构建 webhook 应用](/graph/tutorials/change-notifications)
 
 ## <a name="supported-resources"></a>支持的资源
 
@@ -234,6 +237,7 @@ notification 对象具有以下属性：
 
 可在 GitHub 上获取以下代码示例。
 
+- [Microsoft Graph 培训模块 - 在 Microsoft Graph 中使用变更通知和变更跟踪](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [面向 Node.js 的 Microsoft Graph Webhooks 示例](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [面向 ASP.NET 的 Microsoft Graph Webhooks 示例](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [使用 WebJobs SDK 的 Microsoft Graph 用户 Webhooks 示例](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -243,8 +247,9 @@ notification 对象具有以下属性：
 - [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0)
 - [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [更改通知教程](/graph/tutorials/change-notifications)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[联系人]: /graph/api/resources/contact?view=graph-rest-1.0
 [对话]: /graph/api/resources/conversation?view=graph-rest-1.0
 [driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [事件]: /graph/api/resources/event?view=graph-rest-1.0

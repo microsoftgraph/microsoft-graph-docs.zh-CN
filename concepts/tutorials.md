@@ -3,18 +3,20 @@ title: Microsoft Graph 教程
 description: Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure Active Directory 身份验证并通过 Microsoft Graph 访问数据的基本应用程序。
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: 3751e9ccb1328dd06b3ddfbd85706b94b52fc79e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5e738a230f6035aac1ff86f1ad53c51ccfbd8ee
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581063"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34182095"
 ---
 # <a name="microsoft-graph-tutorials"></a>Microsoft Graph 教程
 
 Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure Active Directory 身份验证并通过 Microsoft Graph 访问数据的基本应用程序。
 
-目前，可学习以下教程：
+## <a name="build-your-first-app"></a>构建首个应用
+
+以下教程构建了一个应用，用于验证用户身份并通过 Microsoft Graph 访问日期。
 
 - [Android](/graph/tutorials/android)
 - [Angular](/graph/tutorials/angular)
@@ -23,12 +25,18 @@ Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Mic
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)
-- [Ruby](/graph/tutorials/ruby)
 - [React](/graph/tutorials/react)
+- [Ruby](/graph/tutorials/ruby)
 - [UWP](/graph/tutorials/uwp)
 - [Xamarin](/graph/tutorials/xamarin)
 
-看不到首选语言或平台？ 请在 [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis) 上申请相关语言或平台的教程。
+看不到首选语言或平台？ 请在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 上申请相关语言或平台的教程。
+
+## <a name="scenario-based-tutorials"></a>基于场景的教程
+
+以下教程重点介绍使用 Microsoft Graph 的特定场景。
+
+- [更改通知和 Delta 查询](/graph/tutorials/change-notifications)
 
 ## <a name="see-also"></a>另请参阅
 

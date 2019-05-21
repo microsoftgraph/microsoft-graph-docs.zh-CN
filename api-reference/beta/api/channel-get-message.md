@@ -4,12 +4,12 @@ description: 检索团队通道中的单个消息（不包括其回复）。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0a8d8d6ce3956e8af5f17cd42418d84b325e3577
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 48ff7af72e630973ef120808e407cce44d379f2b
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635494"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310809"
 ---
 # <a name="get-channel-message"></a>获取通道消息
 
@@ -85,6 +85,7 @@ Content-type: application/json
     "importance": "normal",
     "locale": "en-us",
     "policyViolation": null,
+    "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1555375673184?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1555375673184&parentMessageId=1555375673188",       
     "from": {
         "application": null,
         "device": null,

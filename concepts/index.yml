@@ -63,36 +63,13 @@ sections:
   - title: 文档中提供了哪些新增功能？
     items:
       - type: list
-        style: unordered
+        style: cards
+        className: cardsH
         items:
-          - html: <a href="/graph/data-connect-concept-overview">Microsoft Graph 数据连接</a>
-          - html: <a href="/graph/outlook-get-free-busy-schedule">获取忙/闲日程安排</a>
-          - html: <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">审核和登录日志</a>
-          - html: <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">标识提供者</a>
-          - html: <a href="/graph/auth">改进的身份验证指南</a>
-          - html: <a href="/graph/migrate-azure-ad-graph-overview">将应用从 Azure AD Graph 迁移到 Microsoft Graph</a>
-          - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">租户安全功能分数</a>
-          - html: <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK 指南</a>
-          - html: 'API 片段（<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">示例</a>）'
-      - type: paragraph
-        text: <b>仅限 beta 版本</b>
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a>
-          - html: <a href="/graph/api/driveitem-follow?view=graph-rest-beta">关注</a>和<a href="/graph/api/driveitem-unfollow?view=graph-rest-beta">取消关注</a>文档
-          - html: '<a href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">共享邀请</a>包含过期时间和密码'
-          - html: <a href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">访问评审</a>支持应用程序权限
-          - html: <a href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">应用程序登录报表</a>
-          - html: <a href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">Azure AD B2C 中的自定义注册和登录</a>
-          - html: <a href="/graph/api/resources/riskyuser?view=graph-rest-beta">存在风险的用户</a>和<a href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">历史记录</a>
-          - html: <a href="/graph/outlook-get-mime-message">获取消息的 MIME 内容</a>
-          - html: '<a href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">获取附件的原始/MIME 内容</a>'
-          - html: <a href="/graph/webhooks-outlook-authz">减少缺失更改通知</a>
-          - html: <a href="graph/api/resources/tiindicator?view=graph-rest-beta">威胁指示器</a>
-          - html: <a href="/graph/api/resources/securityaction?view=graph-rest-beta">安全操作</a>
-          - html: <a href="/graph/api/resources/shift?view=graph-rest-beta">排班管理</a>
-          - html: <a href="/graph/api/resources/chat?view=graph-rest-beta">一对一聊天</a>
+          - title: 正式发布
+            html: '<p><a style="color:rgb(0, 120, 212);" href="/graph/data-connect-concept-overview">Microsoft Graph 数据连接</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/outlook-get-free-busy-schedule">获取忙/闲日程安排</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">审核和登录日志</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/identityprovider?view=graph-rest-1.0">标识提供者</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/auth">改进的身份验证指南</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/migrate-azure-ad-graph-overview">将应用从 Azure AD Graph 迁移到 Microsoft Graph</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/securescore?view=graph-rest-1.0">租户安全功能分数</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK 指南</a></p><p>API 片段（<a style="color:rgb(0, 120, 212);" href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">示例</a>）</p>'
+          - title: 预览
+            html: '<p><a style="color:rgb(0, 120, 212);" href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-follow?view=graph-rest-beta">关注</a>和<a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-unfollow?view=graph-rest-beta">取消关注</a>文档</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">共享邀请</a>包含过期时间和密码</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">访问评审</a>支持应用程序权限</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">应用程序登录报表</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">Azure AD B2C 中的自定义注册和登录</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/riskyuser?view=graph-rest-beta">存在风险的用户</a>和<a style="color:rgb(0, 120, 212);" href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">历史记录</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/outlook-get-mime-message">获取邮件的 MIME 内容</a>，<a style="color:rgb(0, 120, 212);" href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">获取附件的原始/MIME 内容</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/webhooks-outlook-authz">减少缺失更改通知</a></p><p><a style="color:rgb(0, 120, 212);" href="graph/api/resources/tiindicator?view=graph-rest-beta">威胁指示器</a>，<a style="color:rgb(0, 120, 212);" href="/graph/api/resources/securityaction?view=graph-rest-beta">安全操作</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/shift?view=graph-rest-beta">排班管理</a>，<a style="color:rgb(0, 120, 212);" href="/graph/api/resources/chat?view=graph-rest-beta">1:1 聊天</a></p>'
       - type: paragraph
         text: 在<a href="/graph/changelog">更改日志</a>中查看详细信息！
   - title: 支持的平台

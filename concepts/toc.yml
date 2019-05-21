@@ -38,10 +38,10 @@ items:
             href: /graph/tutorials/php
           - name: Python
             href: /graph/tutorials/python
-          - name: Ruby
-            href: /graph/tutorials/ruby
           - name: React
             href: /graph/tutorials/react
+          - name: Ruby
+            href: /graph/tutorials/ruby
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -291,6 +291,8 @@ items:
             items:
               - name: 概述
                 href: webhooks.md
+              - name: 教程
+                href: /graph/tutorials/change-notifications
               - name: 缺少 Outlook 通知（预览版）
                 href: webhooks-outlook-authz.md
           - name: 跟踪更改
