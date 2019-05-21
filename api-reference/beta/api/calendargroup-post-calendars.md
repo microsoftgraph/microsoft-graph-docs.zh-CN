@@ -4,12 +4,12 @@ description: 此 API 可用于在用户的日历组中新建日历。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 91bf7901bd920e5ed9bcf4f9df78fa36714890d8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 079014079eafec22491785ee502853a1bf99fe25
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635797"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310844"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -68,18 +68,17 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
   "name": "create_calendar_from_calendargroup"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
+POST https://graph.microsoft.com/beta/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
+
 Content-type: application/json
-Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Marketing calendar"
 }
 ```
 
@@ -96,20 +95,26 @@ Content-length: 78
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/calendarGroups('AAMkADYAAAR9NR5AAA%3D')/calendars/$entity",
+    "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
+    "name": "Marketing calendar",
+    "color": "auto",
+    "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
+    "canShare": true,
+    "canViewPrivateItems": true,
+    "canEdit": true,
+    "owner": {
+        "name": "Adele Vance",
+        "address": "adelev@contoso.OnMicrosoft.com"
+    }
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

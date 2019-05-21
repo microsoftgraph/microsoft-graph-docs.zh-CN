@@ -4,12 +4,12 @@ description: 获取团队频道中对邮件的单个答复。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6b388fb7e02d660b6ef3d68781adfa7f5a81d975
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 34e0cd6a1496f0e86ff1bc8764f69e8e6e604a42
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635468"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310837"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
@@ -92,6 +92,7 @@ Content-type: application/json
     "importance": "normal",
     "locale": "en-us",
     "policyViolation": null,
+    "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1555377090002?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6700&createdTime=1555377090002&parentMessageId=1555375673184",
     "from": {
         "application": null,
         "device": null,
@@ -141,7 +142,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_channel_message_reply-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

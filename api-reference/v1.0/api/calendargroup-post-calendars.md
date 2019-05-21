@@ -4,12 +4,12 @@ description: 此 API 可用于在用户的日历组中新建日历。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 791615d7b934536a27d4a8d1ea88be42a4ca2d79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0cc926decb28603ad99af3306016f5eed97c7890
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503931"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311005"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -66,18 +66,17 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
   "name": "create_calendar_from_calendargroup"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
+POST https://graph.microsoft.com/v1.0/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
+
 Content-type: application/json
-Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Marketing calendar"
 }
 ```
 
@@ -94,18 +93,34 @@ Content-length: 78
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/calendarGroups('AAMkADYAAAR9NR5AAA%3D')/calendars/$entity",
+    "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
+    "name": "Marketing calendar",
+    "color": "auto",
+    "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
+    "canShare": true,
+    "canViewPrivateItems": true,
+    "canEdit": true,
+    "owner": {
+        "name": "Adele Vance",
+        "address": "adelev@contoso.OnMicrosoft.com"
+    }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -115,5 +130,9 @@ Content-length: 98
   "description": "Create Calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/calendargroup-post-calendars.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/calendargroup-post-calendars.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
