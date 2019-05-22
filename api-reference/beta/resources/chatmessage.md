@@ -4,12 +4,12 @@ description: 表示渠道或聊天实体内的单个聊天消息。 该消息可
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c2631d0ba4883160c443000fa2ecb0e1853523d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0639fd0b5317abd4814123b500ec0548f78d05ac
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339840"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311159"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -50,7 +50,7 @@ ms.locfileid: "33339840"
 |重要性| string | 消息重要性包括：正常、高。|
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此消息的反应（例如点赞）。|
 |区域设置|string|客户端设置的消息区域设置。|
-
+|webUrl|string|导航至 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

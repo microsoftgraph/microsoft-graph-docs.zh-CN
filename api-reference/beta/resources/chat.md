@@ -1,15 +1,15 @@
 ---
 title: 聊天资源类型
-description: 聊天是一个或多个参与者之间的 chatmessages 集合的集合。
+description: 聊天是一个或多个参与者之间的 Chatmessages 集合的集合。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1091021235a50d3dfa237467e319da9b131b7a72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339711"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344974"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "33339711"
 |:---------------|:--------|:----------|
 |[列出聊天](../api/chat-list.md) | [聊天](channel.md)收藏 | 获取用户所属的聊天列表。|
 |[获取聊天](../api/chat-get.md) | [参与](channel.md) | 读取聊天的属性和关系。|
-|[列出聊天中的邮件](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取1:1 或组聊天中的邮件。 |
-|[在聊天中获取邮件](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取一封邮件。 |
+|[列出聊天成员](../api/conversationmember-list.md) | [conversationmember](conversationmember.md)集合 | 获取聊天中所有用户的列表。|
+|[获取聊天成员](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | 获取聊天中的单个用户。|
+|[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 |
+|[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
 
 ## <a name="properties"></a>属性
 
@@ -38,6 +40,7 @@ ms.locfileid: "33339711"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
+| 成员 | [conversationMember](conversationmember.md)集合 | 聊天中所有人员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有邮件的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

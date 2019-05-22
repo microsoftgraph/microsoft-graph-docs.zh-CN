@@ -8973,6 +8973,10 @@ items:
                 href: api/chat-list-messages.md
               - name: 获取聊天中的消息
                 href: api/chat-get-message.md
+              - name: 获取聊天中的成员
+                href: api/conversationmember-list.md
+              - name: 获取聊天中的一个成员
+                href: api/conversationmember-get.md
           - name: 应用
             href: resources/teamsapp.md
             items:

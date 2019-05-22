@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 99f556c3585cb9bdda8756d277fb7a0211e583a3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0af2e83628b7bf221159dd0d2610feb808242f1f
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327952"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310991"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用 
 Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。作为开发人员，你可以决定应用程序请求哪些 Microsoft Graph 权限。当用户登录你的应用时，他们或处于某些情况下的管理员可以选择是否同意这些权限。如果用户同意，你的应用可以访问它所请求的资源和 API。对于没有已登录用户的应用，安装应用程序或注册时，管理员可以事先同意权限****。 
@@ -16,9 +16,11 @@ Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件�
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委派权限、应用程序权限和有效权限
 Microsoft Graph 有两类权限：**委派权限**和**应用权限**。 
 
-- **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
+- 
+  **委派权限**由具有登录用户的应用使用。对于这些应用，用户或管理员同意授予应用请求获取的权限，并向应用委派权限，以代表登录用户调用 Microsoft Graph。一些委派权限可以由非管理用户同意，而一些级别较高的权限则需要[管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)。  
 
-- **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
+- 
+  **应用权限**由没有登录用户即可运行的应用使用；例如，作为后台服务或后台程序运行的应用。应用权限只能[由管理员同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant)。 
 
 _有效权限_是应用在向 Microsoft Graph 发出请求时具有的权限。调用 Microsoft Graph 时，了解授予应用的委派权限及应用程序权限与其有效权限之间的区别非常重要。
 
@@ -253,6 +255,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |读取聊天消息  |允许应用代表你读取 Microsoft Teams 中的一对一或群组聊天消息。 |否 | 否 |
+|_Chat.ReadWrite_ |读取聊天消息并发送新消息  |允许应用代表你在 Microsoft Teams 中读取并发送一对一或群组聊天消息。 |否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 

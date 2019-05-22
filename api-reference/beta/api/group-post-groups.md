@@ -4,12 +4,12 @@ description: 创建新的 Office 365 组或安全组。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0fc20f2882c57e336c36ca3bc73dad6b549b79de
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: c2f80b915d2d813f4d002fec161a14aff6ceba45
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036344"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310865"
 ---
 # <a name="create-group"></a>创建组
 
@@ -61,7 +61,7 @@ POST /groups
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
 
-> 注意：使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 和 **mailEnabled** 初始设置为 `true`。
+> 注意：使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
 由于**组**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建组时向其添加含有自己的数据的自定义属性。
 
