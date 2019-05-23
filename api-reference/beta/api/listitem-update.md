@@ -12,21 +12,21 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2019
 ms.locfileid: "33598008"
 ---
-# <a name="update-an-item-in-a-list"></a><span data-ttu-id="42c97-102">更新列表中的项</span><span class="sxs-lookup"><span data-stu-id="42c97-102">Update an item in a list</span></span>
+# <a name="update-an-item-in-a-list"></a><span data-ttu-id="e22c6-102">更新列表中的项</span><span class="sxs-lookup"><span data-stu-id="e22c6-102">Update an item in a list</span></span>
 
-<span data-ttu-id="42c97-103">更新 **[listItem][]** 上的属性。</span><span class="sxs-lookup"><span data-stu-id="42c97-103">Update the properties on a **[listItem][]**.</span></span>
+<span data-ttu-id="e22c6-103">更新 **[listItem][]** 上的属性。</span><span class="sxs-lookup"><span data-stu-id="e22c6-103">Update the properties on a **[listItem][]**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="42c97-104">权限</span><span class="sxs-lookup"><span data-stu-id="42c97-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e22c6-104">权限</span><span class="sxs-lookup"><span data-stu-id="e22c6-104">Permissions</span></span>
 
-<span data-ttu-id="42c97-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="42c97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e22c6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e22c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="42c97-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="42c97-107">Permission type</span></span>      | <span data-ttu-id="42c97-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="42c97-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e22c6-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="e22c6-107">Permission type</span></span>      | <span data-ttu-id="e22c6-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e22c6-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="42c97-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="42c97-109">Delegated (work or school account)</span></span> | <span data-ttu-id="42c97-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42c97-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="42c97-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="42c97-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42c97-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="42c97-112">Not supported.</span></span>    |
-|<span data-ttu-id="42c97-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="42c97-113">Application</span></span> | <span data-ttu-id="42c97-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42c97-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e22c6-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e22c6-109">Delegated (work or school account)</span></span> | <span data-ttu-id="e22c6-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e22c6-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e22c6-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e22c6-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e22c6-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="e22c6-112">Not supported.</span></span>    |
+|<span data-ttu-id="e22c6-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="e22c6-113">Application</span></span> | <span data-ttu-id="e22c6-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e22c6-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="42c97-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="42c97-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e22c6-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e22c6-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,21 +34,21 @@ ms.locfileid: "33598008"
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="42c97-116">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="42c97-116">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="e22c6-116">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="e22c6-116">Optional request headers</span></span>
 
-| <span data-ttu-id="42c97-117">名称</span><span class="sxs-lookup"><span data-stu-id="42c97-117">Name</span></span>       | <span data-ttu-id="42c97-118">值</span><span class="sxs-lookup"><span data-stu-id="42c97-118">Value</span></span> | <span data-ttu-id="42c97-119">说明</span><span class="sxs-lookup"><span data-stu-id="42c97-119">Description</span></span>
+| <span data-ttu-id="e22c6-117">名称</span><span class="sxs-lookup"><span data-stu-id="e22c6-117">Name</span></span>       | <span data-ttu-id="e22c6-118">值</span><span class="sxs-lookup"><span data-stu-id="e22c6-118">Value</span></span> | <span data-ttu-id="e22c6-119">说明</span><span class="sxs-lookup"><span data-stu-id="e22c6-119">Description</span></span>
 |:-----------|:------|:--------------------------------------------------------
-| <span data-ttu-id="42c97-120">_if-match_</span><span class="sxs-lookup"><span data-stu-id="42c97-120">_if-match_</span></span> | <span data-ttu-id="42c97-121">etag</span><span class="sxs-lookup"><span data-stu-id="42c97-121">etag</span></span>  | <span data-ttu-id="42c97-122">如果包含此请求标头，且提供的 eTag 与项中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应，并且不会更新该项。</span><span class="sxs-lookup"><span data-stu-id="42c97-122">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
+| <span data-ttu-id="e22c6-120">_if-match_</span><span class="sxs-lookup"><span data-stu-id="e22c6-120">_if-match_</span></span> | <span data-ttu-id="e22c6-121">etag</span><span class="sxs-lookup"><span data-stu-id="e22c6-121">etag</span></span>  | <span data-ttu-id="e22c6-122">如果包含此请求标头，且提供的 eTag 与项中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应，并且不会更新该项。</span><span class="sxs-lookup"><span data-stu-id="e22c6-122">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="42c97-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="42c97-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e22c6-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="e22c6-123">Request body</span></span>
 
-<span data-ttu-id="42c97-124">在请求正文中，提供指定要更新的字段的 [fieldValueSet][] 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="42c97-124">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
+<span data-ttu-id="e22c6-124">在请求正文中，提供指定要更新的字段的 [fieldValueSet][] 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e22c6-124">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
 
-## <a name="example"></a><span data-ttu-id="42c97-125">示例</span><span class="sxs-lookup"><span data-stu-id="42c97-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e22c6-125">示例</span><span class="sxs-lookup"><span data-stu-id="e22c6-125">Example</span></span>
 
-<span data-ttu-id="42c97-126">下面是一个示例，使用新值更新列表项的“颜色”和“数量”字段。</span><span class="sxs-lookup"><span data-stu-id="42c97-126">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
-<span data-ttu-id="42c97-127">listItem 上的所有其他值都保持独立。</span><span class="sxs-lookup"><span data-stu-id="42c97-127">All other values on the listItem are left alone.</span></span> 
+<span data-ttu-id="e22c6-126">下面是一个示例，使用新值更新列表项的“颜色”和“数量”字段。</span><span class="sxs-lookup"><span data-stu-id="e22c6-126">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
+<span data-ttu-id="e22c6-127">listItem 上的所有其他值都保持独立。</span><span class="sxs-lookup"><span data-stu-id="e22c6-127">All other values on the listItem are left alone.</span></span> 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -62,9 +62,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="42c97-128">响应</span><span class="sxs-lookup"><span data-stu-id="42c97-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e22c6-128">响应</span><span class="sxs-lookup"><span data-stu-id="e22c6-128">Response</span></span>
 
-<span data-ttu-id="42c97-129">如果成功，此方法在已更新列表项的响应正文中返回 [fieldValueSet][]。</span><span class="sxs-lookup"><span data-stu-id="42c97-129">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
+<span data-ttu-id="e22c6-129">如果成功，此方法在已更新列表项的响应正文中返回 [fieldValueSet][]。</span><span class="sxs-lookup"><span data-stu-id="e22c6-129">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
@@ -78,9 +78,9 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="42c97-130">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="42c97-130">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e22c6-130">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="e22c6-130">SDK sample code</span></span>
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42c97-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="42c97-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e22c6-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="e22c6-131">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
 
 ---

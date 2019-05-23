@@ -3,33 +3,34 @@ title: oneDriveUsageAccountDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c13e03d1170b0ebbc53394541c4564c60c67e78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcf75fad8c39a543e69fc378546a2621f24eaeab
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563544"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344925"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a><span data-ttu-id="29622-103">oneDriveUsageAccountDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="29622-103">oneDriveUsageAccountDetail resource type</span></span>
+# <a name="onedriveusageaccountdetail-resource-type"></a><span data-ttu-id="30614-103">oneDriveUsageAccountDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="30614-103">oneDriveUsageAccountDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="29622-104">属性</span><span class="sxs-lookup"><span data-stu-id="29622-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="30614-104">属性</span><span class="sxs-lookup"><span data-stu-id="30614-104">Properties</span></span>
 
-| <span data-ttu-id="29622-105">属性</span><span class="sxs-lookup"><span data-stu-id="29622-105">Property</span></span>                | <span data-ttu-id="29622-106">类型</span><span class="sxs-lookup"><span data-stu-id="29622-106">Type</span></span>    |
+| <span data-ttu-id="30614-105">属性</span><span class="sxs-lookup"><span data-stu-id="30614-105">Property</span></span>                | <span data-ttu-id="30614-106">类型</span><span class="sxs-lookup"><span data-stu-id="30614-106">Type</span></span>    |
 | :---------------------- | :------ |
-| <span data-ttu-id="29622-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="29622-107">reportRefreshDate</span></span>       | <span data-ttu-id="29622-108">Date</span><span class="sxs-lookup"><span data-stu-id="29622-108">Date</span></span>    |
-| <span data-ttu-id="29622-109">siteUrl</span><span class="sxs-lookup"><span data-stu-id="29622-109">siteUrl</span></span>                 | <span data-ttu-id="29622-110">String</span><span class="sxs-lookup"><span data-stu-id="29622-110">String</span></span>  |
-| <span data-ttu-id="29622-111">ownerDisplayName</span><span class="sxs-lookup"><span data-stu-id="29622-111">ownerDisplayName</span></span>        | <span data-ttu-id="29622-112">String</span><span class="sxs-lookup"><span data-stu-id="29622-112">String</span></span>  |
-| <span data-ttu-id="29622-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="29622-113">isDeleted</span></span>               | <span data-ttu-id="29622-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="29622-114">Boolean</span></span> |
-| <span data-ttu-id="29622-115">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="29622-115">lastActivityDate</span></span>        | <span data-ttu-id="29622-116">Date</span><span class="sxs-lookup"><span data-stu-id="29622-116">Date</span></span>    |
-| <span data-ttu-id="29622-117">fileCount</span><span class="sxs-lookup"><span data-stu-id="29622-117">fileCount</span></span>               | <span data-ttu-id="29622-118">Int64</span><span class="sxs-lookup"><span data-stu-id="29622-118">Int64</span></span>   |
-| <span data-ttu-id="29622-119">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="29622-119">activeFileCount</span></span>         | <span data-ttu-id="29622-120">Int64</span><span class="sxs-lookup"><span data-stu-id="29622-120">Int64</span></span>   |
-| <span data-ttu-id="29622-121">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="29622-121">storageUsedInBytes</span></span>      | <span data-ttu-id="29622-122">Int64</span><span class="sxs-lookup"><span data-stu-id="29622-122">Int64</span></span>   |
-| <span data-ttu-id="29622-123">storageAllocatedInBytes</span><span class="sxs-lookup"><span data-stu-id="29622-123">storageAllocatedInBytes</span></span> | <span data-ttu-id="29622-124">Int64</span><span class="sxs-lookup"><span data-stu-id="29622-124">Int64</span></span>   |
-| <span data-ttu-id="29622-125">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="29622-125">reportPeriod</span></span>            | <span data-ttu-id="29622-126">String</span><span class="sxs-lookup"><span data-stu-id="29622-126">String</span></span>  |
+| <span data-ttu-id="30614-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="30614-107">reportRefreshDate</span></span>       | <span data-ttu-id="30614-108">日期</span><span class="sxs-lookup"><span data-stu-id="30614-108">Date</span></span>    |
+| <span data-ttu-id="30614-109">siteUrl</span><span class="sxs-lookup"><span data-stu-id="30614-109">siteUrl</span></span>                 | <span data-ttu-id="30614-110">String</span><span class="sxs-lookup"><span data-stu-id="30614-110">String</span></span>  |
+| <span data-ttu-id="30614-111">ownerDisplayName</span><span class="sxs-lookup"><span data-stu-id="30614-111">ownerDisplayName</span></span>        | <span data-ttu-id="30614-112">String</span><span class="sxs-lookup"><span data-stu-id="30614-112">String</span></span>  |
+| <span data-ttu-id="30614-113">ownerPrincipalName</span><span class="sxs-lookup"><span data-stu-id="30614-113">ownerPrincipalName</span></span>      | <span data-ttu-id="30614-114">String</span><span class="sxs-lookup"><span data-stu-id="30614-114">String</span></span>  |
+| <span data-ttu-id="30614-115">isDeleted</span><span class="sxs-lookup"><span data-stu-id="30614-115">isDeleted</span></span>               | <span data-ttu-id="30614-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="30614-116">Boolean</span></span> |
+| <span data-ttu-id="30614-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="30614-117">lastActivityDate</span></span>        | <span data-ttu-id="30614-118">日期</span><span class="sxs-lookup"><span data-stu-id="30614-118">Date</span></span>    |
+| <span data-ttu-id="30614-119">fileCount</span><span class="sxs-lookup"><span data-stu-id="30614-119">fileCount</span></span>               | <span data-ttu-id="30614-120">Int64</span><span class="sxs-lookup"><span data-stu-id="30614-120">Int64</span></span>   |
+| <span data-ttu-id="30614-121">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="30614-121">activeFileCount</span></span>         | <span data-ttu-id="30614-122">Int64</span><span class="sxs-lookup"><span data-stu-id="30614-122">Int64</span></span>   |
+| <span data-ttu-id="30614-123">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="30614-123">storageUsedInBytes</span></span>      | <span data-ttu-id="30614-124">Int64</span><span class="sxs-lookup"><span data-stu-id="30614-124">Int64</span></span>   |
+| <span data-ttu-id="30614-125">storageAllocatedInBytes</span><span class="sxs-lookup"><span data-stu-id="30614-125">storageAllocatedInBytes</span></span> | <span data-ttu-id="30614-126">Int64</span><span class="sxs-lookup"><span data-stu-id="30614-126">Int64</span></span>   |
+| <span data-ttu-id="30614-127">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="30614-127">reportPeriod</span></span>            | <span data-ttu-id="30614-128">String</span><span class="sxs-lookup"><span data-stu-id="30614-128">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="29622-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="29622-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="30614-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="30614-129">JSON representation</span></span>
 
-<span data-ttu-id="29622-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="29622-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="30614-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="30614-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,6 +42,7 @@ ms.locfileid: "32563544"
   "reportRefreshDate": "Date", 
   "siteUrl": "String", 
   "ownerDisplayName": "String", 
+  "ownerPrincipalName": "String", 
   "isDeleted": true, 
   "lastActivityDate": "Date", 
   "fileCount": 1024, 
