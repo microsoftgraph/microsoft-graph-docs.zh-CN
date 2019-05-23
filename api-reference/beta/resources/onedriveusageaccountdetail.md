@@ -3,12 +3,12 @@ title: oneDriveUsageAccountDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c13e03d1170b0ebbc53394541c4564c60c67e78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcf75fad8c39a543e69fc378546a2621f24eaeab
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563544"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344925"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>oneDriveUsageAccountDetail 资源类型
 
@@ -16,11 +16,12 @@ ms.locfileid: "32563544"
 
 | 属性                | 类型    |
 | :---------------------- | :------ |
-| reportRefreshDate       | Date    |
+| reportRefreshDate       | 日期    |
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
+| ownerPrincipalName      | String  |
 | isDeleted               | Boolean |
-| lastActivityDate        | Date    |
+| lastActivityDate        | 日期    |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | storageUsedInBytes      | Int64   |
@@ -41,6 +42,7 @@ ms.locfileid: "32563544"
   "reportRefreshDate": "Date", 
   "siteUrl": "String", 
   "ownerDisplayName": "String", 
+  "ownerPrincipalName": "String", 
   "isDeleted": true, 
   "lastActivityDate": "Date", 
   "fileCount": 1024, 
