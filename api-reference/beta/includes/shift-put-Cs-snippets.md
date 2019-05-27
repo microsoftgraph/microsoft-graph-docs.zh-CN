@@ -1,65 +1,15 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 9fad3534f0128beaede524ce88e02479e83af720
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34467886"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var activities = new ShiftActivity
-{
-    IsPaid = true,
-    StartDateTime = "2019-03-11T15:00:00Z",
-    EndDateTime = "2019-03-11T15:30:00Z",
-    Code = "",
-    DisplayName = "Lunch",
-};
-
-var activitiesList = new List<ShiftActivity>();
-activitiesList.Add( activities );
-
-var draftShift = new ShiftItem
-{
-    DisplayName = "Day shift",
-    Notes = "Please do inventory as part of your shift.",
-    StartDateTime = "2019-03-11T15:00:00Z",
-    EndDateTime = "2019-03-12T00:00:00Z",
-    Theme = ScheduleEntityTheme.Blue,
-    Activities = activitiesList,
-};
-
-var activities = new ShiftActivity
-{
-    IsPaid = true,
-    StartDateTime = "2019-03-11T15:00:00Z",
-    EndDateTime = "2019-03-11T15:15:00Z",
-    Code = "",
-    DisplayName = "Lunch",
-};
-
-var activitiesList = new List<ShiftActivity>();
-activitiesList.Add( activities );
-
-var sharedShift = new ShiftItem
-{
-    DisplayName = "Day shift",
-    Notes = "Please do inventory as part of your shift.",
-    StartDateTime = "2019-03-11T15:00:00Z",
-    EndDateTime = "2019-03-12T00:00:00Z",
-    Theme = ScheduleEntityTheme.Blue,
-    Activities = activitiesList,
-};
-
-var user = new Identity
-{
-    Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-    DisplayName = "John Doe",
-};
-
-var lastModifiedBy = new IdentitySet
-{
-    Application = null,
-    Device = null,
-    Conversation = null,
-    User = user,
-};
 
 var shift = new Shift
 {
@@ -68,13 +18,60 @@ var shift = new Shift
     LastModifiedDateTime = "2019-03-14T05:32:51.451Z",
     UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
     SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-    LastModifiedBy = lastModifiedBy,
-    SharedShift = sharedShift,
-    DraftShift = draftShift,
+    LastModifiedBy = new IdentitySet
+    {
+        Application = null,
+        Device = null,
+        Conversation = null,
+        User = new Identity
+        {
+            Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            DisplayName = "John Doe"
+        }
+    },
+    SharedShift = new ShiftItem
+    {
+        DisplayName = "Day shift",
+        Notes = "Please do inventory as part of your shift.",
+        StartDateTime = "2019-03-11T15:00:00Z",
+        EndDateTime = "2019-03-12T00:00:00Z",
+        Theme = ScheduleEntityTheme.Blue,
+        Activities = new List<ShiftActivity>()
+        {
+            new ShiftActivity
+            {
+                IsPaid = true,
+                StartDateTime = "2019-03-11T15:00:00Z",
+                EndDateTime = "2019-03-11T15:15:00Z",
+                Code = "",
+                DisplayName = "Lunch"
+            }
+        }
+    },
+    DraftShift = new ShiftItem
+    {
+        DisplayName = "Day shift",
+        Notes = "Please do inventory as part of your shift.",
+        StartDateTime = "2019-03-11T15:00:00Z",
+        EndDateTime = "2019-03-12T00:00:00Z",
+        Theme = ScheduleEntityTheme.Blue,
+        Activities = new List<ShiftActivity>()
+        {
+            new ShiftActivity
+            {
+                IsPaid = true,
+                StartDateTime = "2019-03-11T15:00:00Z",
+                EndDateTime = "2019-03-11T15:30:00Z",
+                Code = "",
+                DisplayName = "Lunch"
+            }
+        }
+    }
 };
 
 await graphClient.Teams["{teamId}"].Schedule.Shifts["{shiftId}"]
     .Request()
+    .Header("Prefer","return=representation")
     .PutAsync(shift);
 
 ```
