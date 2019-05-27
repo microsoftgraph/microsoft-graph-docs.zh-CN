@@ -2,12 +2,12 @@
 title: 获取 governanceRoleAssignment
 description: 检索 governanceRoleAssignment 的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 96499b214216576ce12f27fe448f1da9c7927847
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2e116baad573c8b99ab278771d1149ea3563209
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329732"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422421"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "33329732"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -2,12 +2,12 @@
 title: 列出 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
 localization_priority: Normal
-ms.openlocfilehash: 1e6d90c50503188e4b75b103f303e74af367081a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ed8ad77fdd2621bc14cad12a34b06836607b3b98
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324210"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422435"
 ---
 # <a name="list-governanceroleassignments"></a>列出 governanceRoleAssignments
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324210"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求

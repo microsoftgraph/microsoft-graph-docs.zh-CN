@@ -4,12 +4,12 @@ description: 使用该 API 创建新的邀请。 邀请会将外部用户添加�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9fafb0b1c9f10e91fe84185a682d7385994af5be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 498e0861808a1de5a713037b9bbe341e36714903
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33960793"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34453633"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -62,7 +62,7 @@ POST /invitations
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_invitation_post"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -111,15 +111,16 @@ Content-length: 551
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
-
 # <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_invitation_post-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_invitation_post-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

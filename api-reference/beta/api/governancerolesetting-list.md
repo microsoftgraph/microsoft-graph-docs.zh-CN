@@ -2,12 +2,12 @@
 title: 列出 governanceRoleSettings
 description: 在资源上检索 governanceRoleSettings 的集合。
 localization_priority: Normal
-ms.openlocfilehash: 95762771cd52308459aec4e015c682e05307a43b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 64bfd50a4b289a820b99c32d76b831d1fb4338d9
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324217"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422440"
 ---
 # <a name="list-governancerolesettings"></a>列出 governanceRoleSettings
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324217"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
 ## <a name="http-request"></a>HTTP 请求

@@ -4,18 +4,18 @@ description: 'Microsoft Graph 数据连接可通过核心数据管道为你提�
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0639efa0b4999e38da117f33c4b2ec74f57bcb0e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 10f5626a785e357677d6428b060e421a1bbf9138
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599840"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407063"
 ---
 # <a name="microsoft-graph-data-connect"></a>Microsoft Graph 数据连接
 
 Microsoft Graph 数据连接通过工具集为你提供 Office 365 数据和 Microsoft Azure 资源。 你可以使用 Microsoft Graph 数据连接来构建智能应用程序，以使用 Microsoft 提供的最佳开发工具访问 Microsoft 安全云中的所有有价值数据。 所有企业都对提高工作效率充满兴趣，这意味着构建能够提高知识型员工作效率的产品会带来巨大的机遇。 
 
-要想利用 Microsoft Graph 数据连接，你需要是：
+如果你同意 [Microsoft Graph 使用条款](https://developer.microsoft.com/zh-CN/graph/terms-of-use)和 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=123161)并且满足以下条件，则可以利用 Microsoft Graph 数据连接，其中这些条件包括：
 
 - 一个 ISV，它用于为所有 Office 365 客户构建智能应用程序。
 - 一名企业开发人员，他为组织内部用户构建可访问 Office 365 数据的智能应用程序。

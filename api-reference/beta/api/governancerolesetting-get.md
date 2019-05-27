@@ -2,12 +2,12 @@
 title: 获取 governanceRoleSetting
 description: 检索 governanceRoleSetting 的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: d8d920e9abbe73de573fb41a6b7be76ae9914484
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 988fc237e76c0ec653fff768a617a08d33a6998e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593442"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422344"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -23,7 +23,7 @@ ms.locfileid: "33593442"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 除了权限范围之外, 此 API 还要求请求者在资源上至少具有一个角色分配, [governanceRoleSetting](../resources/governancerolesetting.md)属于该资源。
 ## <a name="http-request"></a>HTTP 请求
@@ -113,7 +113,7 @@ Content-length: 370
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

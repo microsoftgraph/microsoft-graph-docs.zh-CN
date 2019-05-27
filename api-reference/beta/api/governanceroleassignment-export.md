@@ -2,12 +2,12 @@
 title: 导出 governanceRoleAssignmentRequests
 description: 以格式`application/octet-stream`检索 governanceRoleAssignmentRequests 的集合, 可以在浏览器中将其解析为 .csv 文件。
 localization_priority: Normal
-ms.openlocfilehash: c01234ce4976d6f900530bdd06d31a4df8e325b0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 454df89b014d3f8e0ed9a80d48b0ba7d97c29558
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324159"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422401"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324159"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 
 ## <a name="http-request"></a>HTTP 请求

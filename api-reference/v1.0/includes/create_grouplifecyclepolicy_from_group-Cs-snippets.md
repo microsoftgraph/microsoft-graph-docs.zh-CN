@@ -1,5 +1,13 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 0210192cdc78a4319d8fb5937cb5c27058dbd750
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34434257"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -7,7 +15,7 @@ var groupLifecyclePolicy = new GroupLifecyclePolicy
 {
     GroupLifetimeInDays = 100,
     ManagedGroupTypes = "Selected",
-    AlternateNotificationEmails = "admin@contoso.com",
+    AlternateNotificationEmails = "admin@contoso.com"
 };
 
 await graphClient.GroupLifecyclePolicies

@@ -1,46 +1,48 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: c9db24ae80cdcfffee6f215805fc22c67eaf6804
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34451999"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var vendorInformation = new SecurityVendorInformation
+var value = new List<Alert>()
 {
-    Provider = "String",
-    Vendor = "String",
+    new Alert
+    {
+        AssignedTo = "String",
+        ClosedDateTime = "String (timestamp)",
+        Comments = new List<String>()
+        {
+            "String"
+        },
+        Feedback = new AlertFeedback
+        {
+        },
+        Id = "String (identifier)",
+        Status = new AlertStatus
+        {
+        },
+        Tags = new List<String>()
+        {
+            "String"
+        },
+        VendorInformation = new SecurityVendorInformation
+        {
+            Provider = "String",
+            Vendor = "String"
+        }
+    }
 };
-
-var tagsList = new List<String>();
-tagsList.Add( "String" );
-
-var status = new AlertStatus
-{
-};
-
-var feedback = new AlertFeedback
-{
-};
-
-var commentsList = new List<String>();
-commentsList.Add( "String" );
-
-var value = new Alert
-{
-    AssignedTo = "String",
-    ClosedDateTime = "String (timestamp)",
-    Comments = commentsList,
-    Feedback = feedback,
-    Id = "String (identifier)",
-    Status = status,
-    Tags = tagsList,
-    VendorInformation = vendorInformation,
-};
-
-var valueList = new List<Alert>();
-valueList.Add( value );
 
 await graphClient.Security.Alerts
-    .UpdateAlerts(valueList)
+    .UpdateAlerts(value)
     .Request()
-    .PostAsync()
+    .PostAsync();
 
 ```

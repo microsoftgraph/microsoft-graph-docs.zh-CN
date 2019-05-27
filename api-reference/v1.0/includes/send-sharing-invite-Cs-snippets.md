@@ -1,15 +1,23 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 4ea96b5fa293aef934a5062eeb57466868c123da
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34455826"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var recipients = new DriveRecipient
+var recipients = new List<DriveRecipient>()
 {
-    Email = "ryan@contoso.com",
+    new DriveRecipient
+    {
+        Email = "ryan@contoso.com"
+    }
 };
-
-var recipientsList = new List<DriveRecipient>();
-recipientsList.Add( recipients );
 
 var message = "Here's the file that we're collaborating on.";
 
@@ -17,12 +25,14 @@ var requireSignIn = true;
 
 var sendInvitation = true;
 
-var rolesList = new List<String>();
-rolesList.Add( "write" );
+var roles = new List<String>()
+{
+    "write"
+};
 
 await graphClient.Me.Drive.Items["{item-id}"]
-    .Invite(requireSignIn,rolesList,sendInvitation,message,recipientsList)
+    .Invite(requireSignIn,roles,sendInvitation,message,recipients)
     .Request()
-    .PostAsync()
+    .PostAsync();
 
 ```

@@ -2,12 +2,12 @@
 title: 列出 governanceRoleDefinitions
 description: 获取资源的 governanceRoleDefinitions 集合。
 localization_priority: Normal
-ms.openlocfilehash: b79a8c27a6d2c26b5f827d87762f7edc9c0aaf3b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec648687b70dac37b6775ac1d3d14b3fcd6c7b7e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324178"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422477"
 ---
 # <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "33324178"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
 

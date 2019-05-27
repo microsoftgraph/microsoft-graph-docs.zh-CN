@@ -4,12 +4,12 @@ description: Outlook 联系人可让你存储个人联系人的数据，并且�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 241227993a8194d955d0a28f8fcfaf9f946a1e68
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555211"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407077"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 
@@ -33,7 +33,7 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 
 ### <a name="share-contact-information"></a>共享联系人信息
 
-通过联系人 API，使你能够获得已登录用户或将其联系人共享或委派给已登录用户的用户的联系人项目。 例如，如果 Garth 与 John 共享联系人文件夹，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
+通过联系人 API，使你能够获得已登录用户或将其联系人共享或委派给已登录用户的用户的联系人项目。 例如，如果 Garth 与 John 共享联系人文件夹，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](./auth/auth-concepts#microsoft-graph-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
 
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>利用 Microsoft Graph 中的人员 API 更好地利用所有人员数据
