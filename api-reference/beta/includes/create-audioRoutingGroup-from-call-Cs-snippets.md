@@ -1,20 +1,28 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 8af956d45ac54bc82405c6857c2bfe7caf5b8857
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34460873"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var receiversList = new List<String>();
-receiversList.Add( "550fae72-d251-43ec-868c-373732c2704f" );
-
-var sourcesList = new List<String>();
-sourcesList.Add( "632899f8-2ea1-4604-8413-27bd2892079f" );
 
 var AudioRoutingGroup = new AudioRoutingGroup
 {
     Id = "oneToOne",
     RoutingMode = RoutingMode.OneToOne,
-    Sources = sourcesList,
-    Receivers = receiversList,
+    Sources = new List<String>()
+    {
+        "632899f8-2ea1-4604-8413-27bd2892079f"
+    },
+    Receivers = new List<String>()
+    {
+        "550fae72-d251-43ec-868c-373732c2704f"
+    }
 };
 
 await graphClient.App.Calls["{id}"].AudioRoutingGroups
