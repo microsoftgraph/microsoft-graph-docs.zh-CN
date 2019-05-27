@@ -1,19 +1,24 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b1894850b69cc416e50f0c66afaae6de56989a71
+ms.openlocfilehash: ff3ee57a389310bc8fa1d7bd384e961710c4a4db
 ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2019
-ms.locfileid: "34437067"
+ms.locfileid: "34483385"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Domains["contoso.com"]
-    .Verify()
+var invitation = new Invitation
+{
+    InvitedUserEmailAddress = "yyy@test.com",
+    InviteRedirectUrl = "https://myapp.com"
+};
+
+await graphClient.Invitations
     .Request()
-    .PostAsync();
+    .AddAsync(invitation);
 
 ```

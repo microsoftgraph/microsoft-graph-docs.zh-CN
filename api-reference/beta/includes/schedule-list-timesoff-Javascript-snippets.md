@@ -1,5 +1,13 @@
-
-```Javascript
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: c51f8f8193d4538b0ae0a86a9b461f7d92c26807
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34481728"
+---
+```javascript
 
 const options = {
     authProvider,
