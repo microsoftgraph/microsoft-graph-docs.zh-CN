@@ -1,29 +1,33 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: a8eaf5628b438370565ac816b8adf57f3ce79d7a
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34439524"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var vendorInformation = new SecurityVendorInformation
-{
-    Provider = "Windows Defender ATP",
-    Vendor = "Microsoft",
-};
-
-var parameters = new KeyValuePair
-{
-    Name = "IP",
-    Value = "1.2.3.4",
-};
-
-var parametersList = new List<KeyValuePair>();
-parametersList.Add( parameters );
 
 var securityAction = new SecurityAction
 {
     Name = "BlockIp",
     ActionReason = "Test",
-    Parameters = parametersList,
-    VendorInformation = vendorInformation,
+    Parameters = new List<KeyValuePair>()
+    {
+        new KeyValuePair
+        {
+            Name = "IP",
+            Value = "1.2.3.4"
+        }
+    },
+    VendorInformation = new SecurityVendorInformation
+    {
+        Provider = "Windows Defender ATP",
+        Vendor = "Microsoft"
+    }
 };
 
 await graphClient.Security.SecurityActions
