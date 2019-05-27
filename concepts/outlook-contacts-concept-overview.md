@@ -4,12 +4,12 @@ description: Outlook 联系人可让你存储个人联系人的数据，并且�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 241227993a8194d955d0a28f8fcfaf9f946a1e68
-ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
+ms.openlocfilehash: 48aa735b3dd2f29f7aef9bdb6f8d433ee4dc25c3
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2019
-ms.locfileid: "34407077"
+ms.locfileid: "34422484"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 
@@ -21,7 +21,6 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 
 亿万消费者和数千万组织客户选择 Outlook 作为他们的电子邮件客户端。 通过让客户在 Outlook 中维护一个方便、集成的联系人数据存储，联系人为邮件和日历提供了一项补充功能。 对于开发者而言，利用[邮件](outlook-mail-concept-overview.md)或[日历](outlook-calendar-concept-overview.md)的丰富功能，就意味着通过用户的联系人数据开发更丰富的应用场景。
 
-
 ### <a name="automate-contact-organization"></a>自动执行联系人组织
 
 通过联系人 API，可以保持客户的组织性，与客户通过 Outlook 自己执行此操作等效：
@@ -30,16 +29,13 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 - 通过联系人 API，可以采用一致的方式分配类别联系人及事件、消息、任务和组帖子，从而增强组织和发现。 此外，可以[定义用户的主类别列表](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)，从而开发其他创造性方案。
 - 你可以对[联系人](/graph/api/resources/contact?view=graph-rest-1.0)设置一个标志以进行跟进。 （Microsoft Graph 中的标记目前为[预览状态](versioning-and-support.md#beta-version)。）
 
-
 ### <a name="share-contact-information"></a>共享联系人信息
 
-通过联系人 API，使你能够获得已登录用户或将其联系人共享或委派给已登录用户的用户的联系人项目。 例如，如果 Garth 与 John 共享联系人文件夹，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](./auth/auth-concepts#microsoft-graph-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
-
+通过联系人 API，使你能够获得已登录用户或将其联系人共享或委派给已登录用户的用户的联系人项目。 例如，如果 Garth 与 John 共享联系人文件夹，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](auth/auth-concepts.md#microsoft-graph-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>利用 Microsoft Graph 中的人员 API 更好地利用所有人员数据
 
 你可以对 Outlook [联系人](/graph/api/resources/contact?view=graph-rest-1.0)使用典型 CRUD 操作来创建和管理联系人。 作为 Microsoft Graph 的一部分，还可以使用[人员 API](people-example.md)，查看用户的 Outlook 联系人，以及社交网络、组织目录和最近通信中的人员，并返回有关所有这些来源中人员的与用户相关度最大的信息。 在人员选取器应用场景中利用这一额外智能。
-
 
 ### <a name="take-advantage-of-other-shared-features-and-conveniences-in-microsoft-graph"></a>利用 Microsoft Graph 中的其他共享功能和便利
 
@@ -48,6 +44,7 @@ Outlook 联系人可让你存储个人联系人的数据，并且属于 Office 3
 - 可以将联系人实例中的应用存储扩展为[开放扩展](extensibility-overview.md#open-extensions)，或者将强类型化的自定义数据添加到联系人架构中作为[架构扩展](extensibility-overview.md#schema-extensions)。
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的 Outlook 联系人 API](/graph/api/resources/contact?view=graph-rest-1.0)

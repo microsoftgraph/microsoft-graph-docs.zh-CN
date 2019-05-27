@@ -4,16 +4,18 @@ description: Outlook 日历属于 Office 365 中的 Outlook 消息传递中心�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8894897cc8fd9670314d5cc134a2b351b04b1f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66b9bee8f7059678a97af6c2571132212dad73dd
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555253"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422491"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
 Outlook 日历是 Office 365 中 Outlook 消息传递中心的一部分，它同样允许你管理电子邮件和联系人、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
 ## <a name="why-integrate-with-outlook-calendar"></a>为什么与 Outlook 日历集成？
 
@@ -31,7 +33,6 @@ Outlook 日历是 Office 365 中 Outlook 消息传递中心的一部分，它同
 
 - 在日历文件夹中，可以[创建](/graph/api/user-post-events?view=graph-rest-1.0)和[更新](/graph/api/event-update?view=graph-rest-1.0)单个实例[事件](/graph/api/resources/event?view=graph-rest-1.0)，或[安排和维护定期事件](outlook-schedule-recurring-events.md)。 你可以让客户使用关联的**事件**导航属性来响应[会议请求](/graph/api/resources/eventmessage?view=graph-rest-1.0)，以及[推迟](/graph/api/event-snoozereminder?view=graph-rest-1.0)或[直接关闭](/graph/api/event-dismissreminder?view=graph-rest-1.0)[提醒](/graph/api/resources/reminder?view=graph-rest-1.0)。
 
-
 ### <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>帮助客户保持同步并浏览他们的日期
 
 日历 API 可帮助客户浏览他们的日期并提高效率：
@@ -47,11 +48,10 @@ Outlook 日历是 Office 365 中 Outlook 消息传递中心的一部分，它同
 ### <a name="enhance-collaboration"></a>增强协作
 
 - 在 Outlook 中，客户可以与他人共享日历并授予读取、写入或删除日历内容的权限。 或者，他们可以委派一个日历，让另一个客户代表他们响应会议请求。 通过编程方式，虽然无法代表用户启动共享或委派操作，但可以使用一组属性来验证共享状态并启用有关共享或委派日历的应用场景：**canEdit**、**canShare**、**canViewPrivateItems**、**isShared** 和 **isSharedWithMe**。
-- 日历 API 使你能够获得已登录用户或将其日历共享或委派给已登录用户的用户的日历项目。 例如，如果 Garth 与 John 共享日历，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
+- 日历 API 使你能够获得已登录用户或将其日历共享或委派给已登录用户的用户的日历项目。 例如，如果 Garth 与 John 共享日历，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](auth/auth-concepts.md#microsoft-graph-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
 - ** Office 365 组可使组成员方便地直接在 Outlook 中进行协作、访问组对话和日历。 除了组日历和用户日历之间的一些细微差异外，通过日历 API 可像与用户日历那样与组日历进行交互。 请参阅[日历](/graph/api/resources/calendar?view=graph-rest-1.0)资源了解详细信息。
 
 ** 表示在工作或学校帐户中专门适用于 Outlook 日历的功能。
-
 
 ### <a name="schedule-smart"></a>智能日程安排
 
@@ -62,7 +62,6 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - **可[查找用户和资源在特定时间段内的忙/闲信息](outlook-get-free-busy-schedule.md)。 然后，可以将此类数据应用于各种方案，包括资源计划和事件日程安排。
 - **如果方案涉及安排在最佳时间召开会议，不妨[使用 findMeetingTimes 标识可召开会议的可能时间或地点](findmeetingtimes-example.md)。 [FindMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 函数会考虑与会者的忙/闲状态，以及所提供的任何首选会议室、时间和其他限制。 如果首次尝试未返回常见的会议时间，请检查原因，调整条件并再次调用 **findMeetingTimes**。
 
-
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>跨多个地点和时区的电话会议
 
 在全球化背景下，当今的商务会议通常涉及来自不同地点和时区的与会者。 下面介绍了如何使用日历 API 来管理此类会议：
@@ -71,7 +70,6 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - Outlook 为客户提供了组织事件和针对每个事件的开始和结束时间指定一个时区的灵活性。 为了支持这种灵活性，默认情况下，日历 API 会以 UTC 格式返回**事件**的**开始**和**结束**时间，并提供 **originalStartTimeZone** 和 **originalEndTimeZone** 属性，以记录创建事件时使用的时区。
 - 或者，可以指定 `Prefer: outlook.timezone="{time zone name}"` 标头，以便 GET 事件操作返回指定时区的**开始**和**结束**时间。 时区名称可以是 Windows 支持的任何名称，也可以是此[列表](/graph/api/resources/datetimetimezone?view=graph-rest-1.0)上的这些名称。 请参阅使用中的 `Prefer` 标头[示例](/graph/api/event-get?view=graph-rest-1.0#request-1)
 
-
 ### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>利用 Microsoft Graph 的社交智能以及其他开发者的便利性
 
 使用 Microsoft Graph 中的[人员 API](people-example.md) 连接到[人员数据](/graph/api/resources/person?view=graph-rest-1.0)，这基于用户的通信和协作模式以及业务关系。 你可以实现诸如人员选取器等控件，并在代表用户组织会议时建议与用户相关的人员。
@@ -79,11 +77,11 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 节省在外部数据存储中存储和管理应用数据的开销。 使用 Microsoft Graph，可以在各个资源实例中将自定义应用数据存储为[开放扩展](extensibility-overview.md#open-extensions)。 如果需要键入数据，或者希望能够共享类型化架构，可以将自定义应用数据存储在[架构扩展](extensibility-overview.md#schema-extensions)中。
 
 ## <a name="api-reference"></a>API 参考
+
 在查找此服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的 Outlook 日历 API](/graph/api/resources/calendar?view=graph-rest-1.0)
 - [Microsoft Graph beta 中的 Outlook 日历 API](/graph/api/resources/calendar?view=graph-rest-beta)
-
 
 ## <a name="next-steps"></a>后续步骤
 
