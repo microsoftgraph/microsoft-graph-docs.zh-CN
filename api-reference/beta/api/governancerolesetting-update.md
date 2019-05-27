@@ -2,12 +2,12 @@
 title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
 localization_priority: Normal
-ms.openlocfilehash: a35cec14924ac4d4c41966da3b631dcbfebc2644
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6f6b9d0fb565532a4f610c6434843c1f09aa259d
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593426"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422288"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -24,7 +24,7 @@ ms.locfileid: "33593426"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,7 @@ Content-length: 350
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_governancerolesetting-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

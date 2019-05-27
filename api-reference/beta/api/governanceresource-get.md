@@ -2,12 +2,12 @@
 title: 获取 governanceResource
 description: 检索 governanceResource 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 30c5c5404e11ba5394c306c8d6196cdf58954d25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 346ebe770b12d9a66c77951521e59b453fbc8ea6
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329621"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422428"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
@@ -22,7 +22,7 @@ ms.locfileid: "33329621"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
 

@@ -2,12 +2,12 @@
 title: 取消 governanceRoleAssignmentRequest
 description: 取消 governanceRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: 4972c1f283c08b1304c6a01fdc0acc1d6942aec1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 897e6753d06fda32391e9e466c0153dd8f98c661
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593512"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422470"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "33593512"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess AzureResources |
+|应用程序 | 不支持。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法**不**支持[OData 查询参数](/graph/query-parameters)。
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
