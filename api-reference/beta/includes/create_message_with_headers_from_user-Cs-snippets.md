@@ -1,49 +1,47 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 979cdb95e2ca624079bf71bd5072c54809c1c344
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34440224"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var internetMessageHeaders = new InternetMessageHeader
-{
-    Name = "x-custom-header-group-id",
-    Value = "WA001",
-};
-
-var _internetMessageHeaders = new InternetMessageHeader
-{
-    Name = "x-custom-header-group-name",
-    Value = "Washington",
-};
-
-var internetMessageHeadersList = new List<InternetMessageHeader>();
-internetMessageHeadersList.Add( _internetMessageHeaders );
-internetMessageHeadersList.Add( internetMessageHeaders );
-
-var emailAddress = new EmailAddress
-{
-    Address = "AlexW@contoso.OnMicrosoft.com",
-};
-
-var toRecipients = new Recipient
-{
-    EmailAddress = emailAddress,
-};
-
-var toRecipientsList = new List<Recipient>();
-toRecipientsList.Add( toRecipients );
-
-var body = new ItemBody
-{
-    ContentType = BodyType.Html,
-    Content = "The group represents Washington.",
-};
 
 var message = new Message
 {
     Subject = "9/8/2018: concert",
-    Body = body,
-    ToRecipients = toRecipientsList,
-    InternetMessageHeaders = internetMessageHeadersList,
+    Body = new ItemBody
+    {
+        ContentType = BodyType.Html,
+        Content = "The group represents Washington."
+    },
+    ToRecipients = new List<Recipient>()
+    {
+        new Recipient
+        {
+            EmailAddress = new EmailAddress
+            {
+                Address = "AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    },
+    InternetMessageHeaders = new List<InternetMessageHeader>()
+    {
+        new InternetMessageHeader
+        {
+            Name = "x-custom-header-group-name",
+            Value = "Washington"
+        },
+        new InternetMessageHeader
+        {
+            Name = "x-custom-header-group-id",
+            Value = "WA001"
+        }
+    }
 };
 
 await graphClient.Me.Messages
