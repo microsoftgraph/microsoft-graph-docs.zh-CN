@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: fba3e84128028cbe597fa98f1a1b1d9c71cd93cc
+ms.openlocfilehash: 70f9fbb6c8758631cb51618b6101a2f37c3ba149
 ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2019
-ms.locfileid: "34436899"
+ms.locfileid: "34483343"
 ---
 ```javascript
 
@@ -15,8 +15,13 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes/11021/assignments/19002/submissions/850f51b7/submit')
+const invitation = {
+  invitedUserEmailAddress: "yyy@test.com",
+  inviteRedirectUrl: "https://myapp.com"
+};
+
+let res = await client.api('/invitations')
     .version('beta')
-    .post();
+    .post({invitation : invitation});
 
 ```

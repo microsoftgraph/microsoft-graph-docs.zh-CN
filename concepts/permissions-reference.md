@@ -3,26 +3,26 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: fa1c479a55d6aef5653e06a85cb6f1d4148cea66
-ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
+ms.openlocfilehash: fae0b7cd490b32f7ae5691a93e164d1a9eb4a870
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2019
-ms.locfileid: "34407084"
+ms.locfileid: "34422498"
 ---
-# <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用 
+# <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
-若要使你的应用可访问 Microsoft Graph 中的数据，用户或管理员必须通过同意过程向其授予正确的权限。 本主题列出了与每个主要 Microsoft Graph API 集关联的权限。 它还提供有关如何使用权限的指导。 
+若要使你的应用可访问 Microsoft Graph 中的数据，用户或管理员必须通过同意过程向其授予正确的权限。 本主题列出了与每个主要 Microsoft Graph API 集关联的权限。 它还提供有关如何使用权限的指导。
 
-若要阅读有关权限如何工作的更多信息，请参阅[身份验证和授权基础知识](https://docs.microsoft.com/zh-CN/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions)。
+若要阅读有关权限如何工作的更多信息，请参阅[身份验证和授权基础知识](auth/auth-concepts.md#microsoft-graph-permissions)。
 
 ## <a name="microsoft-graph-permission-names"></a>Microsoft Graph 权限名称
 
-Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_。例如，_User.Read_ 授予读取已登录用户的配置文件的权限，_User.ReadWrite_ 授予读取和修改已登录用户的配置文件的权限，而 _Mail.Send_ 则授予代表已登录用户发送邮件的权限。 
+Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_。例如，_User.Read_ 授予读取已登录用户的配置文件的权限，_User.ReadWrite_ 授予读取和修改已登录用户的配置文件的权限，而 _Mail.Send_ 则授予代表已登录用户发送邮件的权限。
 
-名称的 _constraint_ 元素决定了你的应用程序在目录中具有的潜在访问范围。Microsoft Graph 当前支持以下约束： 
+名称的 _constraint_ 元素决定了你的应用程序在目录中具有的潜在访问范围。Microsoft Graph 当前支持以下约束：
 
-* **All** 授予应用对目录中指定类型的所有资源执行操作的权限。例如，_User.Read.All_ 可能授予应用读取目录中所有用户的配置文件的特权。 
+* **All** 授予应用对目录中指定类型的所有资源执行操作的权限。例如，_User.Read.All_ 可能授予应用读取目录中所有用户的配置文件的特权。
 * **Shared** 授予该应用对其他用户与已登录用户共享的资源执行操作的权限。此约束主要用于 Outlook 资源，如邮件、日历和联系人。例如，_Mail.Read.Shared_ 授予在已登录用户的邮箱中以及组织中的其他用户与已登录用户共享的邮箱中读取邮件的权限。
 * **AppFolder** 授予应用在 OneDrive 专用文件夹中读取和写入文件的权限。此约束仅在[文件权限](#files-permissions)上公开，并且仅适用于 Microsoft 帐户。
 * 如果未指定**任何约束**，则应用程序仅限于对已登录用户拥有的资源执行操作。例如，_User.Read_ 仅授予读取已登录用户的配置文件的特权，_Mail.Read_ 仅授予读取已登录用户邮箱中的邮件的权限。
@@ -131,7 +131,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 * _Application.ReadWrite.All_：删除服务主体 (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_：创建应用程序 (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_：列出调用应用程序拥有的所有应用程序 (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。  
+* _Application.ReadWrite.OwnedBy_：向拥有的应用程序添加另一个所有者 (`POST /applications/{id}/owners/$ref`)。
 > 注意：这可能需要其他权限。
 
 ---
@@ -275,13 +275,13 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 #### <a name="delegated"></a>委派
 
 * _Contacts.Read_：从登录用户的一个顶层联系人文件夹读取联系人 (`GET /me/contactfolders/{Id}/contacts/{id}`)。
-* _Contacts.ReadWrite_：更新登录用户的一个联系人的联系人照片 (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
+* _Contacts.ReadWrite_：更新登录用户的一个联系人的联系人照片 (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。
 * _Contacts.ReadWrite_：将联系人添加到登录用户的根文件夹 (`POST /me/contacts`)。
 
 #### <a name="application"></a>应用程序
 
-* _Contacts.Read_：从组织中任意用户的一个顶层联系人文件夹读取联系人 (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`)。 
-* _Contacts.ReadWrite_：更新组织中任意用户的所有联系人的照片 (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
+* _Contacts.Read_：从组织中任意用户的一个顶层联系人文件夹读取联系人 (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`)。
+* _Contacts.ReadWrite_：更新组织中任意用户的所有联系人的照片 (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。
 * _Contacts.ReadWrite_：将联系人添加到组织中任意用户的根文件夹 (`POST /users/{id | userPrincipalName}/contacts`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
@@ -336,9 +336,9 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 
 ### <a name="remarks"></a>注解
 
-Directory 权限提供访问目录资源（如组织中的 [User](/graph/api/resources/user?view=graph-rest-1.0)、[Group](/graph/api/resources/group?view=graph-rest-1.0) 和 [Device](/graph/api/resources/device?view=graph-rest-1.0)）的最高级特权。 
+Directory 权限提供访问目录资源（如组织中的 [User](/graph/api/resources/user?view=graph-rest-1.0)、[Group](/graph/api/resources/group?view=graph-rest-1.0) 和 [Device](/graph/api/resources/device?view=graph-rest-1.0)）的最高级特权。
 
-它们还专门控制对其他目录资源的访问，如[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta)、[架构扩展 API](/graph/api/resources/schemaextension?view=graph-rest-beta)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta)，以及 v1.0 和 beta API 参考文档中 **Azure Active Directory** 节点下列出的许多资源和 API。 其中包括管理单元、目录角色、目录设置、策略等。 
+它们还专门控制对其他目录资源的访问，如[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta)、[架构扩展 API](/graph/api/resources/schemaextension?view=graph-rest-beta)、[Privileged Identity Management (PIM) API](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta)，以及 v1.0 和 beta API 参考文档中 **Azure Active Directory** 节点下列出的许多资源和 API。 其中包括管理单元、目录角色、目录设置、策略等。
 
 _Directory.ReadWrite.All_ 权限可授予以下特权：
 
@@ -355,7 +355,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 > - 无权重置用户密码
 > - 无权删除资源（包括用户或组）
 > - 特别排除创建或更新以上未列出的资源。 这包括：application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains等。
- 
+
 
 ### <a name="example-usage"></a>用法示例
 
@@ -435,9 +435,9 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 ### <a name="remarks"></a>注解
 
-> **注意**：对于个人帐户，Files.Read 和 Files.ReadWrite 还会授予与登录用户共享的文件的访问权限。 
+> **注意**：对于个人帐户，Files.Read 和 Files.ReadWrite 还会授予与登录用户共享的文件的访问权限。
 
-Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。 
+Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。
 
 Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问带有 OneDrive [获取特殊文件夹](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) Microsoft Graph API 的[应用程序根特殊文件夹](https://dev.onedrive.com/misc/appfolder.htm)。
 
@@ -481,9 +481,9 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 ### <a name="remarks"></a>注解
 
-Microsoft 个人帐户不支持组功能。 
+Microsoft 个人帐户不支持组功能。
 
-对于 Office 365 组，组权限授予应用对组内容的访问权限；例如对话、文件、注释等。 
+对于 Office 365 组，组权限授予应用对组内容的访问权限；例如对话、文件、注释等。
 
 应用程序权限对受支持的 API 有一些限制。有关详细信息，请参阅[已知问题](known-issues.md)。
 
@@ -500,7 +500,7 @@ Microsoft 个人帐户不支持组功能。
 * _Group.Read.All_：读取登录用户所属的全部 Office 365 组 (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
 * _Group.Read.All_：读取诸如对话之类的所有 Office 365 组内容 (`GET /groups/{id}/conversations`)。
 * _Group.ReadWrite.All_：更新组属性，如照片 (`PUT /groups/{id}/photo/$value`)。
-* _Group.ReadWrite.All_：更新组成员 (`POST /groups/{id}/members/$ref`). 
+* _Group.ReadWrite.All_：更新组成员 (`POST /groups/{id}/members/$ref`).
 > **注意：** 这还要求 _User.ReadBasic.All_ 读取要作为成员添加的用户。
 
 #### <a name="application"></a>应用程序
@@ -569,7 +569,7 @@ _IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委
 * 读取为租户中的所有用户所生成的全部风险事件 (`GET /beta/identityRiskEvents`)
 * 读取由 Dorknet 僵尸网络所生成的恶意软件风险事件 (`GET /beta/malwareRiskEvents?$filter=malwareName eq 'Dorkbot'`)
 * 阅读最新的 50 个风险事件 (`GET /beta/identityRiskEvents?$orderBy=riskEventDateTime desc&top=50`)
- 
+
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
@@ -603,7 +603,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 * 读取租户中的所有风险用户和属性 (`GET /beta/riskyUsers`)
 * 读取所有聚合风险级别为中等的风险用户 (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
 * 阅读特定用户的风险信息 (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
- 
+
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
@@ -678,7 +678,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    读取所有邮箱中的邮件 | 允许应用在没有登录用户的情况下读取所有邮箱中的邮件。| 是 |
 | _Mail.ReadWrite_ |    读取和写入所有邮箱中的邮件 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的邮件。不包括发送电子邮件的权限。 | 是 |
-| _Mail.Send_ |    以任意用户身份发送邮件 | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。 | 是 | 
+| _Mail.Send_ |    以任意用户身份发送邮件 | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。 | 是 |
 | _MailboxSettings.Read_ |  读取用户的所有邮箱设置 | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。 | 否 |
 | _MailboxSettings.ReadWrite_ | 读取和写入所有用户邮箱设置  | 允许应用在没有登录用户的情况下创建、读取、更新和删除用户邮箱设置。不包括邮件发送权限。 | 是 |
 
@@ -770,12 +770,12 @@ _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。�
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
 
-_Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录用户可以访问的 OneNote 内容的权限。 
+_Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录用户可以访问的 OneNote 内容的权限。
 
 对于工作或学校帐户，_Notes.Read.All_ 和 _Notes.ReadWrite.All_ 允许该应用访问已登录用户有权限在组织内访问的其他用户的 OneNote 内容。
 
 ### <a name="example-usage"></a>用法示例
-#### <a name="delegated"></a>委托
+#### <a name="delegated"></a>委派
 
 * _Notes.Create_：为登录用户新建笔记本 (`POST /me/onenote/notebooks`)。
 * _Notes.Read_：读取登录用户的笔记本 (`GET /me/onenote/notebooks`)。
@@ -796,7 +796,8 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Notifications.ReadWrite.CreatedByApp_ | 提供和管理此应用的通知。 | 允许应用代表登录用户提供其通知。 此外，还允许应用读取、更新和删除此应用的用户通知项目。 |否 |
 ### <a name="remarks"></a>注解
-*Notifications.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。 与此权限相关联的 *CreatedByApp* 约束指示服务将基于通话应用的标识（Microsoft 帐户应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。 
+*Notifications.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。
+与此权限相关联的 *CreatedByApp* 约束指示服务将基于通话应用的标识（Microsoft 帐户应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委派
 * _Notifications.ReadWrite.CreatedByApp_：发布以用户为中心的通知，然后可能会将该通知传递至用户运行在不同端点上的多个应用程序客户端。 (POST /me/notifications/)。
@@ -851,11 +852,11 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 ### <a name="remarks"></a>注解
 可以使用这些权限指定要在 Azure AD 授权和令牌请求中返回的项目。Azure AD v1.0 和 v2.0 终结点以不同的方式支持它们。
 
-使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。 
+使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。
 
 使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
 
-> **重要说明**：目前，Microsoft 身份验证库 (MSAL) 默认在授权和令牌请求中指定 _offline\_access_、_openid_、_profile_ 和 _email_。也就是说，在默认情况下，如果显式指定这些权限，Azure AD 可能会返回错误。 
+> **重要说明**：目前，Microsoft 身份验证库 (MSAL) 默认在授权和令牌请求中指定 _offline\_access_、_openid_、_profile_ 和 _email_。也就是说，在默认情况下，如果显式指定这些权限，Azure AD 可能会返回错误。
 
 ---
 
@@ -876,7 +877,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 ### <a name="remarks"></a>备注
 
-People.Read.All 权限仅适用于工作和学校帐户。 
+People.Read.All 权限仅适用于工作和学校帐户。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -907,7 +908,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 ### <a name="remarks"></a>说明
 
-_ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学校帐户有效。 
+_ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学校帐户有效。
 
 对于通过委派权限读取程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限写入程序和程序控件的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。  若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
 
@@ -928,7 +929,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 | _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 |
 
 ### <a name="remarks"></a>注解
-这些报告权限仅对工作或学校帐户有效。 
+这些报告权限仅对工作或学校帐户有效。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1161,7 +1162,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 要读取或写入工作或学校帐户的直接下属 (`directReports`) 或经理 (`manager`)，应用必须具有 _User.Read.All_（只读）或 _User.ReadWrite.All_。
 
-_User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限属性集。这是因为完整的个人资料可能包含敏感的目录信息。基本个人资料仅包括以下属性： 
+_User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限属性集。这是因为完整的个人资料可能包含敏感的目录信息。基本个人资料仅包括以下属性：
 
 - displayName
 - givenName
@@ -1170,7 +1171,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 - surname
 - userPrincipalName
 
-若要读取用户的组成员资格 (`memberOf`)，则应用必须具有 [_Group.Read.All_](#group-permissions) 或 [_Group.ReadWrite.All_](#group-permissions)。但是，如果用户还具有 [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 或 [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) 中的成员资格，则应用还将需要有效权限来读取这些资源，否则 Microsoft Graph 将返回错误。这意味着应用还需要[目录权限](#directory-permissions)，而对于委派权限来说，已登录的用户还需要组织内的足够特权来访问目录角色和管理单元。 
+若要读取用户的组成员资格 (`memberOf`)，则应用必须具有 [_Group.Read.All_](#group-permissions) 或 [_Group.ReadWrite.All_](#group-permissions)。但是，如果用户还具有 [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 或 [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) 中的成员资格，则应用还将需要有效权限来读取这些资源，否则 Microsoft Graph 将返回错误。这意味着应用还需要[目录权限](#directory-permissions)，而对于委派权限来说，已登录的用户还需要组织内的足够特权来访问目录角色和管理单元。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1201,9 +1202,9 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 无。
 
 ### <a name="remarks"></a>说明
-*UserActivity.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。 
- 
-与此权限相关联的 *CreatedByApp* 约束指示服务将基于调用应用的标识（MSA 应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。 
+*UserActivity.ReadWrite.CreatedByApp* 对 Microsoft 帐户和工作或学校帐户均有效。
+
+与此权限相关联的 *CreatedByApp* 约束指示服务将基于调用应用的标识（MSA 应用 ID 或针对跨平台应用程序标识配置的一组应用 ID）对结果应用隐式筛选。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1216,7 +1217,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 ## <a name="permission-scenarios"></a>权限方案
 
-本节介绍一些面向组织中 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源的常见方案。这些表显示了应用执行方案要求的特定操作所需的权限。请注意，在某些情况下，应用执行特定操作的能力取决于权限是应用程序权限还是委派权限。如果是委派权限，应用的有效权限还将取决于组织内已登录用户的特权。有关详细信息，请参阅[委派权限、应用程序权限和有效权限](./auth/auth-concepts#microsoft-graph-permissions)。
+本节介绍一些面向组织中 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源的常见方案。这些表显示了应用执行方案要求的特定操作所需的权限。请注意，在某些情况下，应用执行特定操作的能力取决于权限是应用程序权限还是委派权限。如果是委派权限，应用的有效权限还将取决于组织内已登录用户的特权。有关详细信息，请参阅[委派权限、应用程序权限和有效权限](auth/auth-concepts.md#microsoft-graph-permissions)。
 
 ### <a name="access-scenarios-on-the-user-resource"></a>关于 User 资源的访问方案
 
@@ -1231,10 +1232,10 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | 应用想要读取和写入所有用户的完整用户个人资料    | _User.ReadWrite.All_ | 读取和写入所有用户的完整个人资料 |
 | 应用要读取和写入登录用户的文件、邮件和日历信息    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  对用户个人资料的读写权限、对用户个人资料的读写权限、对用户邮件的读写权限、具有访问用户日历的完整权限 |
 | 应用想要提交数据策略操作请求，以导出用户的个人数据 | _User.Export.All_ | 导出用户的个人数据。 |
-   
+
 
 ### <a name="access-scenarios-on-the-group-resource"></a>关于组资源的访问方案
-    
+
 | **涉及组的应用任务**  |  **必需的权限** |  **权限字符串** |
 |:-------------------------------|:---------------------|:---------------|
 | 应用想要读取基本组信息（仅限显示名称和图片），例如展示组挑选经验  | _Group.Read.All_  | 读取所有组|
