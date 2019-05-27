@@ -5,12 +5,12 @@ title: 获取 itemAnalytics
 description: 获取有关在此资源下发生的视图的 itemAnalytics。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3ecceee0a40c06a366150cf190a80802a11c5a80
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 3923237cd608207f0c06f4acd3bb241b2808605d
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970625"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34461606"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
@@ -92,6 +92,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-analytics-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-analytics-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -100,6 +110,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "BaseItem/Get analytics",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+  ]
 }
 -->
