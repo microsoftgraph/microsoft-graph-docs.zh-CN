@@ -1,46 +1,25 @@
 ---
-title: Azure AD Privileged Identity Management
-description: 以下是 Privileged Identity Management 服务提供的方法列表。
+title: Privileged Identity Management
+description: 使用适合于 Azure AD Privileged Identity Management 的 API 管理 Azure Active Directory 角色和 Azure 资源角色。
 localization_priority: Priority
-ms.openlocfilehash: e5454a976a8dcdb17fea5ef9c217fc2eec9e2670
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4aa4d969d97c89cf1dac3bebe8d0d6c01b68aedd
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344264"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422526"
 ---
-# <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
+# <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-以下是 [Privileged Identity Management](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-privileged-identity-management-configure/) 服务提供的方法列表。
+[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 是用于管理、控制和监视对组织中重要资源的访问的服务。 这包括访问 Azure AD、Azure 资源和其他 Microsoft Online Services（例如 Office 365 或 Microsoft Intune）中的资源。 Microsoft Graph 提供有你可用于管理 Azure AD 角色和 Azure 资源角色的 API。
 
-此服务构建于 OData 之上。 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
+- [适用于 Azure AD 橘色的 API](privilegedidentitymanagement-directory.md)
+- [适用于 Azure 资源角色 的 API](privilegedidentitymanagement-resources.md)
 
-## <a name="methods"></a>方法
-
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[列表 privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md) 集合 |获取 privilegedOperationEvent 对象集合。 |
-|[获取 privilegedRole](../api/privilegedrole-get.md) |[privilegedRole](privilegedrole.md)| 获取 privilegedRole 对象。|
-|[列出 privilegedRole](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md) 集合 |获取 privilegedRole 对象集合。 |
-|[列出角色分配](../api/privilegedrole-list-assignments.md) | [privilegedRoleAssignment](privilegedroleassignment.md) 集合 |获取特定角色的 privilegedRoleAssignment 集合。 每个 privilegedRoleAssignment 表示为用户分配的角色。|
-|[selfActivate](../api/privilegedrole-selfactivate.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |激活分配给请求者的角色。|
-|[selfDeactivate](../api/privilegedrole-selfdeactivate.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |停用分配给请求者的角色。|
-|[创建 privilegedRoleAssignment](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| 通过发布到 privilegedRoleAssignments 集合新建 privilegedRoleAssignment（角色分配）。|
-|[列出 privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) 集合 |获取 privilegedRoleAssignment 对象集合。 该集合包含组织的所有角色分配。 每个 privilegedRoleAssignment 表示为用户分配的角色。 |
-|[获取 privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md)|获取具有指定分配 id 的 privilegedRoleAssignment 对象。 |
-|[Delete privilegedRoleAssignment](../api/privilegedroleassignment-delete.md) | 无。 |删除 privilegedRoleAssignment 对象。 |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |将角色分配标记为永久。 |
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |使角色分配符合资格。 |
-|[My](../api/privilegedroleassignment-my.md) | [privilegedRoleAssignment](privilegedroleassignment.md) 集合|获取请求者的角色分配。 |
-|[获取 privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](../resources/privilegedrolesettings.md)|检索 privilegedRoleSettings 对象的属性。 |
-|[获取 privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](../resources/privilegedrolesummary.md)|检索 privilegedRoleSummary 对象。 |
-|[获取 privilegedApproval](../api/privilegedapproval-get.md) |[privilegedApproval](privilegedapproval.md)| 获取 privilegedApproval 对象。|
-|[列出 privilegedApproval](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) 集合 |Get privilegedApproval 对象集合。 |
-|[创建 privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |创建 privilegedApproval 对象。 |
-|[更新 privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |更新 privilegedApproval 对象。 |
-|[myrequests](../api/privilegedapproval-myrequests.md) | [privilegedApproval](privilegedapproval.md) 集合|获取请求者的审批请求。 |
+> [!IMPORTANT]
+> 在 2019 年 6 月到 7 月，用于管理 Azure AD 角色的 API 将发生更改，以遵守以下 [Azure 资源 API](privilegedidentitymanagement-resources.md) 命名空间和约定。 Azure AD PIM 将变成采用 Azure 资源约定的资源。 如果此更改直接影响你的租户，请填写 [Azure AD PIM 的 Graph API 变更表](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u)，以获取其他信息、支持以及为此 API 变更安排时间的功能。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
