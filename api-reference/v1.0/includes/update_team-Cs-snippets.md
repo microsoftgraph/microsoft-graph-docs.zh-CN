@@ -1,30 +1,32 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 3488a2dd545cb9ec6f8e80604b9830779c3e6388
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34435296"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var funSettings = new TeamFunSettings
-{
-    AllowGiphy = true,
-    GiphyContentRating = GiphyRatingType.Strict,
-};
-
-var messagingSettings = new TeamMessagingSettings
-{
-    AllowUserEditMessages = true,
-    AllowUserDeleteMessages = true,
-};
-
-var memberSettings = new TeamMemberSettings
-{
-    AllowCreateUpdateChannels = true,
-};
-
 var team = new Team
 {
-    MemberSettings = memberSettings,
-    MessagingSettings = messagingSettings,
-    FunSettings = funSettings,
+    MemberSettings = new TeamMemberSettings
+    {
+        AllowCreateUpdateChannels = true
+    },
+    MessagingSettings = new TeamMessagingSettings
+    {
+        AllowUserEditMessages = true,
+        AllowUserDeleteMessages = true
+    },
+    FunSettings = new TeamFunSettings
+    {
+        AllowGiphy = true,
+        GiphyContentRating = GiphyRatingType.Strict
+    }
 };
 
 await graphClient.Teams["{id}"]
