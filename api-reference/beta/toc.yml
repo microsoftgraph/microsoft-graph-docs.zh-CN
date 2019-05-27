@@ -7779,19 +7779,6 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: 消除
                     href: api/riskyusers-dismiss.md
-          - name: 信任框架策略
-            href: resources/trustframeworkpolicy.md
-            items:
-              - name: List
-                href: api/trustframework-list-trustframeworkpolicies.md
-              - name: 创建
-                href: api/trustframework-post-trustframeworkpolicy.md
-              - name: 获取
-                href: api/trustframeworkpolicy-get.md
-              - name: 更新
-                href: api/trustframework-put-trustframeworkpolicy.md
-              - name: 删除
-                href: api/trustframeworkpolicy-delete.md
           - name: 标识提供程序
             href: resources/identityprovider.md
             items:
@@ -7879,116 +7866,125 @@ items:
               - name: 列出已应用到应用程序的策略
                 href: api/policy-list-appliesto.md
           - name: Privileged Identity Management
-            href: resources/privilegedidentitymanagement-root.md
             items:
-              - name: 特权角色
-                href: resources/privilegedrole.md
+              - name: Privileged Identity Management
+                href: resources/privilegedidentitymanagement-root.md
+              - name: Azure AD
                 items:
-                  - name: 列出特权角色
-                    href: api/privilegedrole-list.md
-                  - name: 获取特权角色
-                    href: api/privilegedrole-get.md
-                  - name: 列出角色分配
-                    href: api/privilegedrole-list-assignments.md
-                  - name: 自我角色激活
-                    href: api/privilegedrole-selfactivate.md
-                  - name: 自我角色停用
-                    href: api/privilegedrole-selfdeactivate.md
-                  - name: 获取角色设置
-                    href: api/privilegedrolesettings-get.md
-                  - name: 更新角色设置
-                    href: api/privilegedrolesettings-update.md
-                  - name: 获取角色汇总
-                    href: api/privilegedrolesummary-get.md
-              - name: 特权角色分配
-                href: resources/privilegedroleassignment.md
+                  - name: Azure AD
+                    href: resources/privilegedidentitymanagement-directory.md
+                  - name: 特权角色
+                    href: resources/privilegedrole.md
+                    items:
+                      - name: 列出特权角色
+                        href: api/privilegedrole-list.md
+                      - name: 获取特权角色
+                        href: api/privilegedrole-get.md
+                      - name: 列出角色分配
+                        href: api/privilegedrole-list-assignments.md
+                      - name: 自我角色激活
+                        href: api/privilegedrole-selfactivate.md
+                      - name: 自我角色停用
+                        href: api/privilegedrole-selfdeactivate.md
+                      - name: 获取角色设置
+                        href: api/privilegedrolesettings-get.md
+                      - name: 更新角色设置
+                        href: api/privilegedrolesettings-update.md
+                      - name: 获取角色汇总
+                        href: api/privilegedrolesummary-get.md
+                  - name: 特权角色分配
+                    href: resources/privilegedroleassignment.md
+                    items:
+                      - name: 列出角色分配
+                        href: api/privilegedroleassignment-list.md
+                      - name: 获取角色分配
+                        href: api/privilegedroleassignment-get.md
+                      - name: 创建角色分配
+                        href: api/privilegedroleassignment-post-privilegedroleassignments.md
+                      - name: 删除角色分配
+                        href: api/privilegedroleassignment-delete.md
+                      - name: 获取我的角色分配
+                        href: api/privilegedroleassignment-my.md
+                      - name: 生成符合资格的角色分配
+                        href: api/privilegedroleassignment-makeeligible.md
+                      - name: 生成永久角色分配
+                        href: api/privilegedroleassignment_makepermanent.md
+                  - name: 特权角色分配请求
+                    href: resources/privilegedroleassignmentrequest.md
+                    items:
+                      - name: 列出角色分配
+                        href: api/privilegedroleassignmentrequest-list.md
+                      - name: 创建角色分配
+                        href: api/privilegedroleassignmentrequest-post.md
+                      - name: 取消角色分配
+                        href: api/privilegedroleassignmentrequest-cancel.md
+                      - name: 获取我的角色分配
+                        href: api/privilegedroleassignmentrequest-my.md
+                  - name: 特权批准
+                    href: resources/privilegedapproval.md
+                    items:
+                      - name: 列出特权批准
+                        href: api/privilegedapproval-list.md
+                      - name: 获取特权批准
+                        href: api/privilegedapproval-get.md
+                      - name: 更新角色分配
+                        href: api/privilegedapproval-update.md
+                  - name: 审核事件
+                    href: resources/privilegedoperationevent.md
+                    items:
+                      - name: 列出审核事件
+                        href: api/privilegedoperationevent-list.md
+              - name: Azure 资源
                 items:
-                  - name: 列出角色分配
-                    href: api/privilegedroleassignment-list.md
-                  - name: 获取角色分配
-                    href: api/privilegedroleassignment-get.md
-                  - name: 创建角色分配
-                    href: api/privilegedroleassignment-post-privilegedroleassignments.md
-                  - name: 删除角色分配
-                    href: api/privilegedroleassignment-delete.md
-                  - name: 获取我的角色分配
-                    href: api/privilegedroleassignment-my.md
-                  - name: 生成符合资格的角色分配
-                    href: api/privilegedroleassignment-makeeligible.md
-                  - name: 生成永久角色分配
-                    href: api/privilegedroleassignment_makepermanent.md
-              - name: 特权角色分配请求
-                href: resources/privilegedroleassignmentrequest.md
-                items:
-                  - name: 列出角色分配
-                    href: api/privilegedroleassignmentrequest-list.md
-                  - name: 创建角色分配
-                    href: api/privilegedroleassignmentrequest-post.md
-                  - name: 取消角色分配
-                    href: api/privilegedroleassignmentrequest-cancel.md
-                  - name: 获取我的角色分配
-                    href: api/privilegedroleassignmentrequest-my.md
-              - name: 特权批准
-                href: resources/privilegedapproval.md
-                items:
-                  - name: 列出特权批准
-                    href: api/privilegedapproval-list.md
-                  - name: 获取特权批准
-                    href: api/privilegedapproval-get.md
-                  - name: 更新角色分配
-                    href: api/privilegedapproval-update.md
-              - name: 审核事件
-                href: resources/privilegedoperationevent.md
-                items:
-                  - name: 列出审核事件
-                    href: api/privilegedoperationevent-list.md
-              - name: 托管的资源
-                href: resources/governanceresource.md
-                items:
-                  - name: 列表
-                    href: api/governanceresource-list.md
-                  - name: 获取
-                    href: api/governanceresource-get.md
-                  - name: 报名
-                    href: api/governanceresource-register.md
-              - name: 角色定义
-                href: resources/governanceroledefinition.md
-                items:
-                  - name: 列表
-                    href: api/governanceroledefinition-list.md
-                  - name: 获取
-                    href: api/governanceroledefinition-get.md
-              - name: 角色设置
-                href: resources/governancerolesetting.md
-                items:
-                  - name: 列出
-                    href: api/governancerolesetting-list.md
-                  - name: 获取
-                    href: api/governancerolesetting-get.md
-                  - name: 更新
-                    href: api/governancerolesetting-update.md
-              - name: 角色分配
-                href: resources/governanceroleassignment.md
-                items:
-                  - name: 列表
-                    href: api/governanceroleassignment-list.md
-                  - name: 获取
-                    href: api/governanceroleassignment-get.md
-                  - name: 导出
-                    href: api/governanceroleassignment-export.md
-              - name: 角色分配请求
-                href: resources/governanceroleassignmentrequest.md
-                items:
-                  - name: 列出
-                    href: api/governanceroleassignmentrequest-list.md
-                  - name: 创建
-                    href: api/governanceroleassignmentrequest-post.md
-                  - name: 获取
-                    href: api/governanceroleassignmentrequest-get.md
-                  - name: 更新
-                    href: api/governanceroleassignmentrequest-update.md
-                  - name: 取消
-                    href: api/governanceroleassignmentrequest-cancel.md
+                  - name: Azure 资源
+                    href: resources/privilegedidentitymanagement-resources.md
+                  - name: 托管的资源
+                    href: resources/governanceresource.md
+                    items:
+                      - name: 列表
+                        href: api/governanceresource-list.md
+                      - name: 获取
+                        href: api/governanceresource-get.md
+                      - name: 报名
+                        href: api/governanceresource-register.md
+                  - name: 角色定义
+                    href: resources/governanceroledefinition.md
+                    items:
+                      - name: 列表
+                        href: api/governanceroledefinition-list.md
+                      - name: 获取
+                        href: api/governanceroledefinition-get.md
+                  - name: 角色设置
+                    href: resources/governancerolesetting.md
+                    items:
+                      - name: 列出
+                        href: api/governancerolesetting-list.md
+                      - name: 获取
+                        href: api/governancerolesetting-get.md
+                      - name: 更新
+                        href: api/governancerolesetting-update.md
+                  - name: 角色分配
+                    href: resources/governanceroleassignment.md
+                    items:
+                      - name: 列表
+                        href: api/governanceroleassignment-list.md
+                      - name: 获取
+                        href: api/governanceroleassignment-get.md
+                      - name: 导出
+                        href: api/governanceroleassignment-export.md
+                  - name: 角色分配请求
+                    href: resources/governanceroleassignmentrequest.md
+                    items:
+                      - name: 列出
+                        href: api/governanceroleassignmentrequest-list.md
+                      - name: 创建
+                        href: api/governanceroleassignmentrequest-post.md
+                      - name: 获取
+                        href: api/governanceroleassignmentrequest-get.md
+                      - name: 更新
+                        href: api/governanceroleassignmentrequest-update.md
+                      - name: 取消
+                        href: api/governanceroleassignmentrequest-cancel.md
           - name: 服务主体
             href: resources/serviceprincipal.md
             items:
@@ -8066,6 +8062,19 @@ items:
                 href: api/agreement-delete.md
               - name: 列出接受状态
                 href: api/user-list-agreementacceptances.md
+          - name: 信任框架策略
+            href: resources/trustframeworkpolicy.md
+            items:
+              - name: List
+                href: api/trustframework-list-trustframeworkpolicies.md
+              - name: 创建
+                href: api/trustframework-post-trustframeworkpolicy.md
+              - name: 获取
+                href: api/trustframeworkpolicy-get.md
+              - name: 更新
+                href: api/trustframework-put-trustframeworkpolicy.md
+              - name: 删除
+                href: api/trustframeworkpolicy-delete.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:

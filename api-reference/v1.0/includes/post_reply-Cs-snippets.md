@@ -1,92 +1,82 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: ebb6dfce68b492f61780e13704477d741f5431e1
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34452833"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachments = new Attachment
-{
-    LastModifiedDateTime = "datetime-value",
-    Name = "name-value",
-    ContentType = "contentType-value",
-    Size = 99,
-    IsInline = true,
-    Id = "id-value",
-};
-
-var attachmentsList = new List<Attachment>();
-attachmentsList.Add( attachments );
-
-var inReplyTo = new Post
-{
-};
-
-var categoriesList = new List<String>();
-categoriesList.Add( "categories-value" );
-
-var emailAddress = new EmailAddress
-{
-    Name = "name-value",
-    Address = "address-value",
-};
-
-var newParticipants = new Recipient
-{
-    EmailAddress = emailAddress,
-};
-
-var newParticipantsList = new List<Recipient>();
-newParticipantsList.Add( newParticipants );
-
-var emailAddress = new EmailAddress
-{
-    Name = "name-value",
-    Address = "address-value",
-};
-
-var sender = new Recipient
-{
-    EmailAddress = emailAddress,
-};
-
-var emailAddress = new EmailAddress
-{
-    Name = "name-value",
-    Address = "address-value",
-};
-
-var from = new Recipient
-{
-    EmailAddress = emailAddress,
-};
-
-var body = new ItemBody
-{
-    ContentType = BodyType.Text,
-    Content = "content-value",
-};
-
 var post = new Post
 {
-    Body = body,
+    Body = new ItemBody
+    {
+        ContentType = BodyType.Text,
+        Content = "content-value"
+    },
     ReceivedDateTime = "datetime-value",
     HasAttachments = true,
-    From = from,
-    Sender = sender,
+    From = new Recipient
+    {
+        EmailAddress = new EmailAddress
+        {
+            Name = "name-value",
+            Address = "address-value"
+        }
+    },
+    Sender = new Recipient
+    {
+        EmailAddress = new EmailAddress
+        {
+            Name = "name-value",
+            Address = "address-value"
+        }
+    },
     ConversationThreadId = "conversationThreadId-value",
-    NewParticipants = newParticipantsList,
+    NewParticipants = new List<Recipient>()
+    {
+        new Recipient
+        {
+            EmailAddress = new EmailAddress
+            {
+                Name = "name-value",
+                Address = "address-value"
+            }
+        }
+    },
     ConversationId = "conversationId-value",
     CreatedDateTime = "datetime-value",
     LastModifiedDateTime = "datetime-value",
     ChangeKey = "changeKey-value",
-    Categories = categoriesList,
+    Categories = new List<String>()
+    {
+        "categories-value"
+    },
     Id = "id-value",
-    InReplyTo = inReplyTo,
-    Attachments = attachmentsList,
+    InReplyTo = new Post
+    {
+    },
+    Attachments = new List<Attachment>()
+    {
+        new Attachment
+        {
+            LastModifiedDateTime = "datetime-value",
+            Name = "name-value",
+            ContentType = "contentType-value",
+            Size = 99,
+            IsInline = true,
+            Id = "id-value"
+        }
+    }
 };
 
 await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"]
     .Reply(post)
     .Request()
-    .PostAsync()
+    .PostAsync();
 
 ```

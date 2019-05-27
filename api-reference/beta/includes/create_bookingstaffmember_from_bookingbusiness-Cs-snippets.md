@@ -1,89 +1,15 @@
-
-```Cs
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 452ed92d2ebedeb4fce3af43b4363e5da1e9be82
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34434432"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var timeSlots = new BookingWorkTimeSlot
-{
-    End = "17:00:00.0000000",
-    Start = "08:00:00.0000000",
-};
-
-var timeSlotsList = new List<BookingWorkTimeSlot>();
-timeSlotsList.Add( timeSlots );
-
-var workingHours = new BookingWorkHours
-{
-    Day = DayOfWeek.Friday,
-    TimeSlots = timeSlotsList,
-};
-
-var timeSlots = new BookingWorkTimeSlot
-{
-    End = "17:00:00.0000000",
-    Start = "08:00:00.0000000",
-};
-
-var timeSlotsList = new List<BookingWorkTimeSlot>();
-timeSlotsList.Add( timeSlots );
-
-var _workingHours = new BookingWorkHours
-{
-    Day = DayOfWeek.Thursday,
-    TimeSlots = timeSlotsList,
-};
-
-var timeSlots = new BookingWorkTimeSlot
-{
-    End = "17:00:00.0000000",
-    Start = "08:00:00.0000000",
-};
-
-var timeSlotsList = new List<BookingWorkTimeSlot>();
-timeSlotsList.Add( timeSlots );
-
-var __workingHours = new BookingWorkHours
-{
-    Day = DayOfWeek.Wednesday,
-    TimeSlots = timeSlotsList,
-};
-
-var timeSlots = new BookingWorkTimeSlot
-{
-    End = "17:00:00.0000000",
-    Start = "08:00:00.0000000",
-};
-
-var timeSlotsList = new List<BookingWorkTimeSlot>();
-timeSlotsList.Add( timeSlots );
-
-var ___workingHours = new BookingWorkHours
-{
-    Day = DayOfWeek.Tuesday,
-    TimeSlots = timeSlotsList,
-};
-
-var timeSlots = new BookingWorkTimeSlot
-{
-    End = "17:00:00.0000000",
-    Start = "08:00:00.0000000",
-};
-
-var timeSlotsList = new List<BookingWorkTimeSlot>();
-timeSlotsList.Add( timeSlots );
-
-var ____workingHours = new BookingWorkHours
-{
-    Day = DayOfWeek.Monday,
-    TimeSlots = timeSlotsList,
-};
-
-var workingHoursList = new List<BookingWorkHours>();
-workingHoursList.Add( ____workingHours );
-workingHoursList.Add( ___workingHours );
-workingHoursList.Add( __workingHours );
-workingHoursList.Add( _workingHours );
-workingHoursList.Add( workingHours );
 
 var bookingStaffMember = new BookingStaffMember
 {
@@ -92,7 +18,69 @@ var bookingStaffMember = new BookingStaffMember
     EmailAddress = "danas@contoso.com",
     Role = BookingStaffRole.ExternalGuest,
     UseBusinessHours = true,
-    WorkingHours = workingHoursList,
+    WorkingHours = new List<BookingWorkHours>()
+    {
+        new BookingWorkHours
+        {
+            Day = DayOfWeek.Monday,
+            TimeSlots = new List<BookingWorkTimeSlot>()
+            {
+                new BookingWorkTimeSlot
+                {
+                    End = "17:00:00.0000000",
+                    Start = "08:00:00.0000000"
+                }
+            }
+        },
+        new BookingWorkHours
+        {
+            Day = DayOfWeek.Tuesday,
+            TimeSlots = new List<BookingWorkTimeSlot>()
+            {
+                new BookingWorkTimeSlot
+                {
+                    End = "17:00:00.0000000",
+                    Start = "08:00:00.0000000"
+                }
+            }
+        },
+        new BookingWorkHours
+        {
+            Day = DayOfWeek.Wednesday,
+            TimeSlots = new List<BookingWorkTimeSlot>()
+            {
+                new BookingWorkTimeSlot
+                {
+                    End = "17:00:00.0000000",
+                    Start = "08:00:00.0000000"
+                }
+            }
+        },
+        new BookingWorkHours
+        {
+            Day = DayOfWeek.Thursday,
+            TimeSlots = new List<BookingWorkTimeSlot>()
+            {
+                new BookingWorkTimeSlot
+                {
+                    End = "17:00:00.0000000",
+                    Start = "08:00:00.0000000"
+                }
+            }
+        },
+        new BookingWorkHours
+        {
+            Day = DayOfWeek.Friday,
+            TimeSlots = new List<BookingWorkTimeSlot>()
+            {
+                new BookingWorkTimeSlot
+                {
+                    End = "17:00:00.0000000",
+                    Start = "08:00:00.0000000"
+                }
+            }
+        }
+    }
 };
 
 await graphClient.BookingBusinesses["{id}"].StaffMembers
