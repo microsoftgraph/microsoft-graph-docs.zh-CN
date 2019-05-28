@@ -81,7 +81,7 @@ Content-type: application/json
 #### <a name="sdk-sample-code"></a><span data-ttu-id="e22c6-130">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="e22c6-130">SDK sample code</span></span>
 
 # <a name="javascripttabjavascript"></a>[<span data-ttu-id="e22c6-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="e22c6-131">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
 
 ---
 

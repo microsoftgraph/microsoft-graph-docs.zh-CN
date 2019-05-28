@@ -168,10 +168,10 @@ Content-type: application/json
 ```
 #### <a name="sdk-sample-code"></a><span data-ttu-id="ecd4a-166">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ecd4a-166">SDK sample code</span></span>
 # <a name="ctabcs"></a>[<span data-ttu-id="ecd4a-167">C#</span><span class="sxs-lookup"><span data-stu-id="ecd4a-167">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-item-delta-last-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/get_item_delta_last-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[<span data-ttu-id="ecd4a-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="ecd4a-168">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-item-delta-last-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/get_item_delta_last-Javascript-snippets.md)]
 
 ---
 
