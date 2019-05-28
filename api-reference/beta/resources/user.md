@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345068"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34475204"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -69,7 +69,8 @@ ms.locfileid: "33345068"
 |[getMailTips](../api/user-getmailtips.md)|[邮件提醒](mailtips.md)集合|返回向已登录用户提供的一个或多个收件人的邮件提醒。 |
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String 集合| 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。 |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| 无 |通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序发出的用户的所有刷新和会话令牌失效。 这将强制用户再次登录到这些应用程序。|
+|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| 无 |通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序发出的用户的所有刷新和会话令牌失效。 这将强制用户再次登录到这些应用程序。 此方法被 **revokeSignInSessions** 替换。|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| 无 |通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。|
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|返回指定开始时间和结束时间范围内的日历提醒列表。|
 |[delta](../api/user-delta.md)|用户集合| 获取用户的增量更改。 |
 |[Translate Outlook identifiers](../api/user-translateexchangeids.md) |[convertIdResult 资源类型](convertidresult.md)集合| 对与 Outlook 相关的资源的标识符进行格式转换。|
@@ -207,7 +208,7 @@ ms.locfileid: "33345068"
 |活动|[event](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。 可为 Null。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
-|insights|[officeGraphInsights](officegraphinsights.md) | 只读。可为 Null。|
+|insights|[officeGraphInsights](officegraphinsights.md) | 只读。 可为 Null。|
 |joinedGroups|[group](group.md) 集合| 只读。可为 Null。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
@@ -277,11 +278,14 @@ ms.locfileid: "33345068"
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
+  "faxNumber": "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -296,12 +300,17 @@ ms.locfileid: "33345068"
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesSamAccountName": "string",
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -311,8 +320,11 @@ ms.locfileid: "33345068"
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "proxyAddresses": ["string"],
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
@@ -343,17 +355,7 @@ ms.locfileid: "33345068"
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "employeeId": "string",
-  "faxNumber": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
-  "onPremisesSamAccountName": "string",
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
-  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "showInAddressList": true
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
 }
 ```
 
