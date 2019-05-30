@@ -2,12 +2,12 @@
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: 114729351f5ae412cea77e1a97e16fd3d8300849
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc27edc71956c64d91dcc85e72ddd6c3cd65c793
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537467"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 它在响应正文中返回[privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) 。
+如果成功，此方法返回 `200 Ok` 响应代码。 它在响应正文中返回[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回标准的 HTTP 错误代码。 此外, 它还返回下表中列出的自定义错误代码。
@@ -97,7 +97,7 @@ Content-length: 304
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

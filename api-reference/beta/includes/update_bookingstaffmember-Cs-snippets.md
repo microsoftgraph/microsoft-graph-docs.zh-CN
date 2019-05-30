@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e618f39671ae0c1decea649717e0b495822abe1d
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 3fcaa64068f9b465e5670b2e2e40d99b2b2e00e0
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34465592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536692"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var bookingStaffMember = new BookingStaffMember
         new BookingWorkHours
         {
             Day = DayOfWeek.Monday,
-            TimeSlots = new List<BookingWorkTimeSlot>()
+            TimeSlots = new List<String>()
             {
             }
         },

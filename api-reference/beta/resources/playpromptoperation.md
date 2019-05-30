@@ -4,12 +4,12 @@ description: 用于获取 playPrompt 操作的结果的 playPrompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89a47fc8400d2f0d426ef6f683eb566f9c2376d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 663675bb895d452c9ad50c89f22f1a51efca20a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344360"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536993"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "33344360"
 | createdDateTime     | DateTimeOffset              | 操作的开始时间。                                                   |
 | id                  | String                      | 只读。                                                                         |
 | lastActionDateTime  | DateTimeOffset              | 操作的上一操作的时间。                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | 结果信息。 只读。 由服务器生成。                               |
+| resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。 由服务器生成。                               |
 | status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>关系

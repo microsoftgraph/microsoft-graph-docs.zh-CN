@@ -4,12 +4,12 @@ description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: fb11e06ac450aa218a8e1102557eb9e3a79f874c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dac2bbb95da7d287ce00503ac4b79cdf52a85968
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598184"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536020"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
 | includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
 | sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
-| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
+| filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。
@@ -101,6 +101,8 @@ Content-length: 179
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
@@ -119,6 +121,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

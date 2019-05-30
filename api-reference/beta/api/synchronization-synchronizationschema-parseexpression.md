@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: parseExpression'
 description: '(../resources/synchronization_attributemappingsource.md) 对象。 '
 localization_priority: Normal
-ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 79cb683571fa7a5e1b48f93a1805ae5d7a4f7202
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536146"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -43,7 +43,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|表达式               |字符串               |要分析的表达式。|
+|表达式               |String               |要分析的表达式。|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|要对表达式进行求值的测试数据对象。 可选。|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
@@ -171,6 +171,8 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
@@ -189,6 +191,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

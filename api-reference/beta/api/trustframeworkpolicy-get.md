@@ -4,12 +4,12 @@ description: 此操作将从 Azure AD B2C 租户检索现有的 trustFrameworkPo
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e16c636dd1a367978396af7fcbe21aebfa4cd37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 986d6dc109a334e0a64e5472d5de6d80850b55e3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335092"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536041"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
 
@@ -23,7 +23,7 @@ ms.locfileid: "33335092"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|TrustFramework、policy、read. All|
+|委派（工作或学校帐户）|TrustFramework、Policy、Read. All|
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|不支持。|
 
@@ -52,7 +52,7 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[trustFrameworkPolicy](../resources/trustFrameworkpolicy.md)的 XML 表示形式。  
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)的 XML 表示形式。  
 
 >**注意:** 响应内容类型将为`application/xml`。
 

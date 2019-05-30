@@ -5,12 +5,12 @@ title: itemActivity 资源类型
 description: ItemActivity 对象提供有关项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c05493ddeb8e007da6ba8b7508369b4d013e672
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 98ae9e4881de18c94490469b10df43b2aaf58140
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970637"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536685"
 ---
 # <a name="itemactivity-resource-type"></a>itemActivity 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "33970637"
 | actor    | [identitySet][]         | 操作执行者的身份。 只读。
 | activityDateTime    | DateTimeOffset | 有关活动何时发生的详细信息。 只读。
 
-[accessAction]: accessAction.md
+[accessAction]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>关系

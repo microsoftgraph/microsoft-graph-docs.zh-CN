@@ -4,12 +4,12 @@ description: 使用此 API 在指定用户的邮箱中创建新的 mailSearchFol
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 0c600048961b560364982b8b8ef5cff531ae2031
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2fc7a51675b0bfc559b5ab5c9f7a857c84c43174
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598207"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536366"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| @odata.type | 字符串 | 要创建的文件夹的类型。 设置为 "mailSearchFolder"。 |
+| @odata.type | String | 要创建的文件夹的类型。 设置为 "mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
 | includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
 | sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
-| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
+| filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 
@@ -119,6 +119,8 @@ Content-length: 179
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_mailsearchfolder-Javascript-snippets.md)]
@@ -137,6 +139,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

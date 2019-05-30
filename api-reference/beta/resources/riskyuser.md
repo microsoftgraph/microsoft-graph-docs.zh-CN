@@ -4,12 +4,12 @@ description: 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信�
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 685600c110088d9bd9809a8c754e8530b123412e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 02c1fe3bbbcf532298a5f615971d7ffbc273bf5a
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620806"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537293"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "33620806"
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列出 riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md)集合|列出有风险的用户及其属性。|
-|[获取 riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|获取特定的有风险的用户及其属性。|
+|[列出 riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyuser.md)集合|列出有风险的用户及其属性。|
+|[获取 riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|获取特定的有风险的用户及其属性。|
 |[列表历史记录](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md)集合|获取 Azure AD 用户的风险历史记录。|
 |[确认 riskyUsers 已泄露](../api/riskyusers-confirmcompromised.md)|无 |确认有风险的用户受到威胁。|
 |[消除 riskyUsers](../api/riskyusers-dismiss.md)|无 | 消除有风险的用户的风险。|

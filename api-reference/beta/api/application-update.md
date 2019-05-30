@@ -4,12 +4,12 @@ description: 更新 application 对象的属性。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2984e7d57144fd6d5e3efee7d6c9a9c8d68c529c
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636329"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535992"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -57,7 +57,7 @@ PATCH /applications/{id}
 |preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)集合| 列出了应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 PreAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
 |标记|String collection| 可用于分类和标识应用程序的自定义字符串。 |
-|web|[webApplication](../resources/webApplication.md)| 指定 Web 应用程序的设置。 |
+|web|[webApplication](../resources/webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ## <a name="response"></a>响应
 
@@ -80,7 +80,7 @@ Content-length: 72
 }
 ```
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处展示的响应对象。 
+注意：为简洁起见，可能会截断此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,7 @@ Content-length: 72
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
