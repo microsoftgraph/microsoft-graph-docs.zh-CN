@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e6bc972c1be9433c4eb92f7eb35b68297048cc87
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: d28450a838b1ec4c90de2b8a12c0884a1bfc7215
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34463685"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535873"
 ---
 ```csharp
 
@@ -35,7 +35,7 @@ var @event = new Event
         {
             Type = RecurrencePatternType.Weekly,
             Interval = 1,
-            DaysOfWeek = new List<DayOfWeek>()
+            DaysOfWeek = new List<String>()
             {
                 "Monday"
             }

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 56d8c90693b3b2b1c828d7e381b4ddab079fee9b
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 7c51581a041ddaa06333247f4df820aa5a3a626d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34434376"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536496"
 ---
 ```javascript
 
@@ -15,13 +15,13 @@ const options = {
 
 const client = Client.init(options);
 
-const calendar = {
-  name: "name-value",
-  color: {
-  }
+const calendar = Content-type: application/json
+
+{
+  name: "Marketing calendar"
 };
 
-let res = await client.api('/me/calendarGroups/{id}/calendars')
+let res = await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
     .version('beta')
     .post({calendar : calendar});
 

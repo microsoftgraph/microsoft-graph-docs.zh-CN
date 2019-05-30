@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f8f5f73a419abfaee949863598af6d0ee448e417
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 7d2e7a47884f03cf739a6570da1e93781936624a
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34460774"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535978"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const list = {
-  name: "Books",
+  displayName: "Books",
   columns: [
     {
       name: "Author",
