@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5d256f8b593a7e0770c20055efed25016954db07
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 1c9bc81f713a268d73888a3b86927986bb811650
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34477948"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536769"
 ---
 ```javascript
 
@@ -16,18 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const event = {
-  originalStartTimeZone: "originalStartTimeZone-value",
-  originalEndTimeZone: "originalEndTimeZone-value",
-  responseStatus: {
-    response: "",
-    time: "datetime-value"
-  },
-  iCalUId: "iCalUId-value",
-  reminderMinutesBeforeStart: 99,
-  isReminderOn: true
+  location:{
+      displayName:"Conf Room 2"
+  }
 };
 
-let res = await client.api('/groups/{id}/events/{id}')
+let res = await client.api('/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/calendar/events/AAMkADZlAAAAABERAAA=')
     .update({event : event});
 
 ```

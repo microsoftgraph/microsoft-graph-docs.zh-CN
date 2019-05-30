@@ -1,18 +1,24 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 16b59d90d94be2a6cdffb203bf1c8c537e0f787d
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 531415f3ba547c531c9b3e5f94525e2ac3e15ed7
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34473440"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536027"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+    new QueryOption("startDateTime", "2016-01-01T19:00:00.0000000"),
+    new QueryOption("endDateTime", "2016-10-01T19:00:00.0000000")
+};
+
 var calendarView = await graphClient.Me.CalendarView
-    .Request()
+    .Request( queryOptions )
     .GetAsync();
 
 ```

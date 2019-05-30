@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 40e45d5cbbce44cba293a62b58b282f841162e75
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: f1273b3af26aa182b90e7963bf8e5fea5d8d3b41
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34466935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535929"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var addLicenses = new List<AssignedLicense>()
 {
     new AssignedLicense
     {
-        DisabledPlans = new List<Guid>()
+        DisabledPlans = new List<String>()
         {
             "11b0131d-43c8-4bbb-b2c8-e80f9a50834a"
         },
@@ -23,7 +23,7 @@ var addLicenses = new List<AssignedLicense>()
     }
 };
 
-var removeLicenses = new List<Guid>()
+var removeLicenses = new List<String>()
 {
     "bea13e0c-3828-4daa-a392-28af7ff61a0f"
 };

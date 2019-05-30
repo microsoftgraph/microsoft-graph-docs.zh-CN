@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 08d42e50b4e0bce02e96a33f44d5c54afe37fc0d
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: f52d47303cee84dd01bbf9ba6b3932c000c3115c
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34480846"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536916"
 ---
 ```csharp
 
@@ -13,19 +13,41 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var @event = new Event
 {
-    OriginalStartTimeZone = "originalStartTimeZone-value",
-    OriginalEndTimeZone = "originalEndTimeZone-value",
-    ResponseStatus = new ResponseStatus
+    Subject = "Let's go for lunch",
+    Body = new ItemBody
     {
-        Response = ResponseType.None,
-        Time = "2016-10-19T10:37:00Z"
+        ContentType = BodyType.Html,
+        Content = "Does late morning work for you?"
     },
-    Uid = "iCalUId-value",
-    ReminderMinutesBeforeStart = 99,
-    IsReminderOn = true
+    Start = new DateTimeTimeZone
+    {
+        DateTime = "2019-06-15T12:00:00",
+        TimeZone = "Pacific Standard Time"
+    },
+    End = new DateTimeTimeZone
+    {
+        DateTime = "2019-06-15T14:00:00",
+        TimeZone = "Pacific Standard Time"
+    },
+    Location = new Location
+    {
+        DisplayName = "Harry's Bar"
+    },
+    Attendees = new List<Attendee>()
+    {
+        new Attendee
+        {
+            EmailAddress = new EmailAddress
+            {
+                Address = "adelev@contoso.onmicrosoft.com",
+                Name = "Adele Vance"
+            },
+            Type = AttendeeType.Required
+        }
+    }
 };
 
-await graphClient.Groups["{id}"].Events
+await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Events
     .Request()
     .AddAsync(@event);
 
