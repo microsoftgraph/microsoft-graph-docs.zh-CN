@@ -4,12 +4,12 @@ description: 转移活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ced05ad4539dadf490198d4a0ed70ea981672e3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 92cb446303278d95eeb9f852491566b6305d468b
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635832"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536062"
 ---
 # <a name="call-transfer"></a>呼叫: 转移
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/transfer
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
-|适用|字符串|客户端上下文。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码。
@@ -98,6 +98,8 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-transfer-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-transfer-Javascript-snippets.md)]
@@ -352,6 +354,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

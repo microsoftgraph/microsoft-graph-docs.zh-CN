@@ -4,14 +4,16 @@ description: 创建学校。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c700f40fa0cb908ec2efe210fbb22b3aadb86fa8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fb408c2df0a31ad20543de737e221a30065794fb
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33588094"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536202"
 ---
 # <a name="create-educationschool"></a>创建 educationSchool
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建学校。
 
@@ -50,7 +52,7 @@ POST /education/schools
   "name": "create_educationschool_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools
+POST https://graph.microsoft.com/beta/education/schools
 Content-type: application/json
 Content-length: 292
 
@@ -124,6 +126,8 @@ Content-length: 292
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Javascript-snippets.md)]
@@ -134,13 +138,16 @@ Content-length: 292
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationSchool",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

@@ -4,12 +4,12 @@ description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8291751b4dfc74fcd2f4ccfd194cc8bfbe66c482
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8c0bea95767881adc10c7e209825803461df20c6
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536083"
 ---
 # <a name="call-redirect"></a>呼叫: 重定向
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/redirect
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
-|targetDisposition|字符串|可能的值为:`default`|
+|targetDisposition|String|可能的值为:`default`|
 |timeout|Int32|重定向操作的超时时间 (秒)。|
 |maskCallee|Boolean|指示是否屏蔽被叫方。|
 |maskCaller|Boolean|指示是否屏蔽调用方。|
@@ -103,6 +103,8 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-redirect-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-redirect-Javascript-snippets.md)]
@@ -276,6 +278,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

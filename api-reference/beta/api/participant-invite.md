@@ -4,12 +4,12 @@ description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec1a5ee5510ddf2da0cd93cf93a28ee14eaf1b81
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 10e23f825f48b75dad1f2cb42e422d66feb8daf9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33595834"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537328"
 ---
 # <a name="participant-invite"></a>参与者: 邀请
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 要邀请的参与者。|
-|适用|字符串|客户端上下文。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
@@ -98,6 +98,8 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/participant-invite-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/participant-invite-Javascript-snippets.md)]
@@ -731,6 +733,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/participant-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/participant-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

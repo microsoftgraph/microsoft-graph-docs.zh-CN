@@ -4,12 +4,12 @@ description: 在呼叫中播放提示。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 571c8b412e6e8099aaee020ef45e2ad55b1e5707
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ad0001c1961f1c6e9126a39609d368104e133aec
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635860"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536069"
 ---
 # <a name="call-playprompt"></a>调用: playPrompt
 
@@ -45,10 +45,10 @@ POST /applications/{id}/calls/{id}/playPrompt
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[提示符](../resources/prompt.md)集合||
-|适用|字符串|客户端上下文。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[playPromptOperation](../resources/playPromptOperation.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

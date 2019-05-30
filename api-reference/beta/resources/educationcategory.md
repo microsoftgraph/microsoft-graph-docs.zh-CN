@@ -4,12 +4,12 @@ description: 可应用于工作分配的类别。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bf5ee33ec7d217c0bc4c6e4d35666d6e9f34dadb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dd9eccac3a1b6b1bdc3b0eca4c87b5e29e2135a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340594"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536173"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "33340594"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationCategory.md) | 获取现有的**educationCategory**。|
+|[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的**educationCategory**。|
 |[删除类别](../api/educationcategory-delete.md) | 无 | 删除**educationCategory**。|
 
 

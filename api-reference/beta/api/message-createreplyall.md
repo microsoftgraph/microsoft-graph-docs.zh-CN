@@ -4,12 +4,12 @@ description: '创建 "全部答复" 邮件的草稿, 以包含注释或更新任
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6ce0f40c980465896043905bfb868ef538800a00
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 67c7b5a8494220982d4a6ed86f3484953e293ff3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536965"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -130,6 +130,8 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_createreplyall-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/message_createreplyall-Javascript-snippets.md)]
@@ -148,6 +150,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

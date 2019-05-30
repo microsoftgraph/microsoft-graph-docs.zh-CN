@@ -4,12 +4,12 @@ description: 新建用户。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8e7653095ded6d4146c07c37660260ba53190df5
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 19388f645eeea78a4237a8085abdd17b3c819f08
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34479054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536979"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -56,8 +56,8 @@ POST /users
 
 由于**用户**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用`POST`操作, 并在创建用户实例时将自己的数据添加到用户实例中的自定义属性。
 
-[!NOTE]
-默认情况下, 使用此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的详细信息, 请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
+>[!NOTE]
+>默认情况下, 使用此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的详细信息, 请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 ## <a name="response"></a>响应
 

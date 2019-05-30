@@ -4,12 +4,12 @@ description: 检索聊天成员。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2c539b7240060a6434f5ece01dc242ae948a5f4
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+ms.openlocfilehash: 58087819631a9d86464d17307755d6add0af4d73
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34379272"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536104"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -85,3 +85,29 @@ Content-length: 201
   "displayName": "display-name-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_conversation_member-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_conversation_member-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "conversation: member get",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/conversationmember-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/conversationmember-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
