@@ -1,15 +1,15 @@
 ---
 title: 权限
 description: '检索指定用户拥有的最近删除的项目的列表。  '
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75d943a37899b6f1d84971305cd473a398b049bb
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555085"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656655"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**列出用户拥有的已删除项目**
 
@@ -55,7 +55,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 | 参数    | 类型 |说明|
 |:---------------|:--------|:----------|
 |userId|String|所有者的 ID。|
-|类型|字符串|要返回的所拥有的对象的类型;`Group`目前是唯一受支持的值。|
+|type|字符串|要返回的所拥有的对象的类型;`Group`目前是唯一受支持的值。|
 
 
 ## <a name="response"></a>响应

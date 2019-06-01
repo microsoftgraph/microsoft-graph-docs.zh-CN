@@ -2,14 +2,14 @@
 title: subscribedSku 资源类型
 description: 包含有关公司订阅的服务 SKU 的信息。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9e61fba199d6d3e509700fe61e75bde240c7f16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ed1a9dc5b12cf1e3b3a01b31d7a990fa7fd562c
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563719"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656466"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 

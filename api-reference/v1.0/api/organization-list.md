@@ -2,14 +2,14 @@
 title: 列出组织
 description: 检索组织对象列表。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e62157fe7fec29df4afd1e4d931a28fa6e3b77f8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fe5d240a3ac8cf5ce722666080d764daeaa86589
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611661"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657782"
 ---
 # <a name="list-organization"></a>列出组织
 
@@ -91,7 +91,7 @@ Content-length: 500
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_organization-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
