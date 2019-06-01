@@ -1,52 +1,52 @@
 ---
 title: 获取 directoryRole
 description: 检索 directoryRole 对象的属性。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a6abbd2c79401ecffe2b5b67b9771767e16944ee
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: aba5f7fc9773e9f8e49e1346ecadbd690c62c0a2
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590474"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655955"
 ---
-# <a name="get-directoryrole"></a><span data-ttu-id="da788-103">获取 directoryRole</span><span class="sxs-lookup"><span data-stu-id="da788-103">Get directoryRole</span></span>
+# <a name="get-directoryrole"></a><span data-ttu-id="3a8ed-103">获取 directoryRole</span><span class="sxs-lookup"><span data-stu-id="3a8ed-103">Get directoryRole</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da788-104">检索 directoryRole 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="da788-104">Retrieve the properties of a directoryRole object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="da788-105">权限</span><span class="sxs-lookup"><span data-stu-id="da788-105">Permissions</span></span>
-<span data-ttu-id="da788-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="da788-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3a8ed-104">检索 directoryRole 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-104">Retrieve the properties of a directoryRole object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a8ed-105">权限</span><span class="sxs-lookup"><span data-stu-id="3a8ed-105">Permissions</span></span>
+<span data-ttu-id="3a8ed-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="da788-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="da788-108">Permission type</span></span>      | <span data-ttu-id="da788-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="da788-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3a8ed-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3a8ed-108">Permission type</span></span>      | <span data-ttu-id="3a8ed-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3a8ed-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="da788-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="da788-110">Delegated (work or school account)</span></span> | <span data-ttu-id="da788-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="da788-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="da788-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="da788-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da788-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="da788-113">Not supported.</span></span>    |
-|<span data-ttu-id="da788-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="da788-114">Application</span></span> | <span data-ttu-id="da788-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da788-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="3a8ed-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3a8ed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3a8ed-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3a8ed-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3a8ed-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3a8ed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a8ed-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-113">Not supported.</span></span>    |
+|<span data-ttu-id="3a8ed-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3a8ed-114">Application</span></span> | <span data-ttu-id="3a8ed-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a8ed-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="da788-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="da788-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a8ed-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3a8ed-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="da788-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="da788-117">Optional query parameters</span></span>
-<span data-ttu-id="da788-118">此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。</span><span class="sxs-lookup"><span data-stu-id="da788-118">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3a8ed-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3a8ed-117">Optional query parameters</span></span>
+<span data-ttu-id="3a8ed-118">此方法**不**支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应（例如，此处不支持使用 $filter）。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-118">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="da788-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="da788-119">Request headers</span></span>
-| <span data-ttu-id="da788-120">名称</span><span class="sxs-lookup"><span data-stu-id="da788-120">Name</span></span>       | <span data-ttu-id="da788-121">类型</span><span class="sxs-lookup"><span data-stu-id="da788-121">Type</span></span> | <span data-ttu-id="da788-122">说明</span><span class="sxs-lookup"><span data-stu-id="da788-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3a8ed-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="3a8ed-119">Request headers</span></span>
+| <span data-ttu-id="3a8ed-120">名称</span><span class="sxs-lookup"><span data-stu-id="3a8ed-120">Name</span></span>       | <span data-ttu-id="3a8ed-121">类型</span><span class="sxs-lookup"><span data-stu-id="3a8ed-121">Type</span></span> | <span data-ttu-id="3a8ed-122">说明</span><span class="sxs-lookup"><span data-stu-id="3a8ed-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="da788-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="da788-123">Authorization</span></span>  | <span data-ttu-id="da788-124">string</span><span class="sxs-lookup"><span data-stu-id="da788-124">string</span></span>  | <span data-ttu-id="da788-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="da788-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3a8ed-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="3a8ed-123">Authorization</span></span>  | <span data-ttu-id="3a8ed-124">string</span><span class="sxs-lookup"><span data-stu-id="3a8ed-124">string</span></span>  | <span data-ttu-id="3a8ed-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="da788-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="da788-127">Request body</span></span>
-<span data-ttu-id="da788-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="da788-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a8ed-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="3a8ed-127">Request body</span></span>
+<span data-ttu-id="3a8ed-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da788-129">响应</span><span class="sxs-lookup"><span data-stu-id="da788-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3a8ed-129">响应</span><span class="sxs-lookup"><span data-stu-id="3a8ed-129">Response</span></span>
 
-<span data-ttu-id="da788-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="da788-130">If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="da788-131">示例</span><span class="sxs-lookup"><span data-stu-id="da788-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="da788-132">请求</span><span class="sxs-lookup"><span data-stu-id="da788-132">Request</span></span>
-<span data-ttu-id="da788-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="da788-133">Here is an example of the request.</span></span>
+<span data-ttu-id="3a8ed-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryRole](../resources/directoryrole.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-130">If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3a8ed-131">示例</span><span class="sxs-lookup"><span data-stu-id="3a8ed-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3a8ed-132">请求</span><span class="sxs-lookup"><span data-stu-id="3a8ed-132">Request</span></span>
+<span data-ttu-id="3a8ed-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directoryrole"
@@ -54,8 +54,8 @@ GET /directoryRoles/{id}
 ```http
 GET https://graph.microsoft.com/beta/directoryRoles/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="da788-134">响应</span><span class="sxs-lookup"><span data-stu-id="da788-134">Response</span></span>
-<span data-ttu-id="da788-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="da788-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3a8ed-134">响应</span><span class="sxs-lookup"><span data-stu-id="3a8ed-134">Response</span></span>
+<span data-ttu-id="3a8ed-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3a8ed-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,11 +73,11 @@ Content-length: 142
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="da788-138">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="da788-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="da788-139">语言</span><span class="sxs-lookup"><span data-stu-id="da788-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="3a8ed-138">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="3a8ed-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="3a8ed-139">C#</span><span class="sxs-lookup"><span data-stu-id="3a8ed-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryrole-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="da788-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="da788-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3a8ed-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="3a8ed-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryrole-Javascript-snippets.md)]
 
 ---

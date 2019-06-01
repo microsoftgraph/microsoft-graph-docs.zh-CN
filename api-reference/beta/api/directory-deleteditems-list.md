@@ -1,56 +1,56 @@
 ---
 title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d1fdf1b81ce315266cb63c9e5623caf0c161b18
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4583fc3280d4e2512d02492b1f44c47518dfb43e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590674"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656179"
 ---
-# <a name="list-deleted-items"></a><span data-ttu-id="b7b1d-103">列出已删除的项目</span><span class="sxs-lookup"><span data-stu-id="b7b1d-103">List deleted items</span></span>
+# <a name="list-deleted-items"></a><span data-ttu-id="6bc0c-103">列出已删除的项目</span><span class="sxs-lookup"><span data-stu-id="6bc0c-103">List deleted items</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b7b1d-104">从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-104">Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="6bc0c-104">从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-104">Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="b7b1d-105">目前，已删除的项目功能仅支持用于 [group](../resources/group.md) 和 [user](../resources/user.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="6bc0c-105">目前，已删除的项目功能仅支持用于 [group](../resources/group.md) 和 [user](../resources/user.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b7b1d-106">权限</span><span class="sxs-lookup"><span data-stu-id="b7b1d-106">Permissions</span></span>
-<span data-ttu-id="b7b1d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6bc0c-106">权限</span><span class="sxs-lookup"><span data-stu-id="6bc0c-106">Permissions</span></span>
+<span data-ttu-id="6bc0c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="b7b1d-109">对于用户: Directory.accessasuser.all、全部、全部读取、全部、全部、全部、全部、目录</span><span class="sxs-lookup"><span data-stu-id="b7b1d-109">For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="b7b1d-110">对于 groups: Group。 All、Directory.accessasuser.all、Group 写 All、all、all。 All</span><span class="sxs-lookup"><span data-stu-id="b7b1d-110">For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="6bc0c-109">对于用户: Directory.accessasuser.all、全部、全部读取、全部、全部、全部、全部、目录</span><span class="sxs-lookup"><span data-stu-id="6bc0c-109">For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="6bc0c-110">对于 groups: Group. All、Directory.accessasuser.all、Group 写 All、all、all。 All</span><span class="sxs-lookup"><span data-stu-id="6bc0c-110">For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b7b1d-111">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b7b1d-111">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6bc0c-111">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6bc0c-111">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-<span data-ttu-id="b7b1d-112">此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-112">This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items.</span></span> <span data-ttu-id="b7b1d-113">类型指定为 URI 的必需部分。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-113">The type is specified as a required part of the URI.</span></span> <span data-ttu-id="b7b1d-114">不支持在没有类型的情况下调用 GET /directory/deleteditems。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-114">Calling GET /directory/deleteditems without a type is not supported.</span></span>
+<span data-ttu-id="6bc0c-112">此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-112">This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items.</span></span> <span data-ttu-id="6bc0c-113">类型指定为 URI 的必需部分。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-113">The type is specified as a required part of the URI.</span></span> <span data-ttu-id="6bc0c-114">不支持在没有类型的情况下调用 GET /directory/deleteditems。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-114">Calling GET /directory/deleteditems without a type is not supported.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b7b1d-115">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b7b1d-115">Optional query parameters</span></span>
-<span data-ttu-id="b7b1d-116">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-116">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6bc0c-115">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6bc0c-115">Optional query parameters</span></span>
+<span data-ttu-id="6bc0c-116">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-116">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b7b1d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="b7b1d-117">Request headers</span></span>
-| <span data-ttu-id="b7b1d-118">名称</span><span class="sxs-lookup"><span data-stu-id="b7b1d-118">Name</span></span>      |<span data-ttu-id="b7b1d-119">说明</span><span class="sxs-lookup"><span data-stu-id="b7b1d-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6bc0c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="6bc0c-117">Request headers</span></span>
+| <span data-ttu-id="6bc0c-118">名称</span><span class="sxs-lookup"><span data-stu-id="6bc0c-118">Name</span></span>      |<span data-ttu-id="6bc0c-119">说明</span><span class="sxs-lookup"><span data-stu-id="6bc0c-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b7b1d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7b1d-120">Authorization</span></span>  | <span data-ttu-id="b7b1d-121">Bearer &lt;code&gt;。*必需*</span><span class="sxs-lookup"><span data-stu-id="b7b1d-121">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="b7b1d-122">接受</span><span class="sxs-lookup"><span data-stu-id="b7b1d-122">Accept</span></span>  | <span data-ttu-id="b7b1d-123">application/json</span><span class="sxs-lookup"><span data-stu-id="b7b1d-123">application/json</span></span> |
+| <span data-ttu-id="6bc0c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6bc0c-120">Authorization</span></span>  | <span data-ttu-id="6bc0c-121">Bearer &lt;code&gt;。*必需*</span><span class="sxs-lookup"><span data-stu-id="6bc0c-121">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="6bc0c-122">接受</span><span class="sxs-lookup"><span data-stu-id="6bc0c-122">Accept</span></span>  | <span data-ttu-id="6bc0c-123">application/json</span><span class="sxs-lookup"><span data-stu-id="6bc0c-123">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b7b1d-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="b7b1d-124">Request body</span></span>
-<span data-ttu-id="b7b1d-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6bc0c-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="6bc0c-124">Request body</span></span>
+<span data-ttu-id="6bc0c-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b7b1d-126">响应</span><span class="sxs-lookup"><span data-stu-id="b7b1d-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6bc0c-126">响应</span><span class="sxs-lookup"><span data-stu-id="6bc0c-126">Response</span></span>
 
-<span data-ttu-id="b7b1d-127">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-127">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b7b1d-128">示例</span><span class="sxs-lookup"><span data-stu-id="b7b1d-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b7b1d-129">请求</span><span class="sxs-lookup"><span data-stu-id="b7b1d-129">Request</span></span>
+<span data-ttu-id="6bc0c-127">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-127">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6bc0c-128">示例</span><span class="sxs-lookup"><span data-stu-id="6bc0c-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6bc0c-129">请求</span><span class="sxs-lookup"><span data-stu-id="6bc0c-129">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -59,8 +59,8 @@ GET /directory/deletedItems/microsoft.graph.user
 ```http
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
-##### <a name="response"></a><span data-ttu-id="b7b1d-130">响应</span><span class="sxs-lookup"><span data-stu-id="b7b1d-130">Response</span></span>
-<span data-ttu-id="b7b1d-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b7b1d-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6bc0c-130">响应</span><span class="sxs-lookup"><span data-stu-id="6bc0c-130">Response</span></span>
+<span data-ttu-id="6bc0c-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6bc0c-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,11 +87,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b7b1d-133">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b7b1d-133">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b7b1d-134">语言</span><span class="sxs-lookup"><span data-stu-id="b7b1d-134">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6bc0c-133">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="6bc0c-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6bc0c-134">C#</span><span class="sxs-lookup"><span data-stu-id="6bc0c-134">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_deleteditems-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b7b1d-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="b7b1d-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6bc0c-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="6bc0c-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_deleteditems-Javascript-snippets.md)]
 
 ---
