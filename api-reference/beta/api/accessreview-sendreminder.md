@@ -2,14 +2,14 @@
 title: SendReminder accessReview
 description: '在 "Azure AD access 评论" 功能中, 向当前活动的 accessReview 的审阅者发送提醒。  目标对象可以是一次性访问评审, 也可以是定期访问评审的实例。 '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8de9b05873ec1f28172568ce242494db0db6e3cd
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: a6bc3f8026cafceda834583f0a9c00825fb3b26b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636770"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655402"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -62,7 +62,7 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/sendReminder_accessReview-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

@@ -2,14 +2,14 @@
 title: administrativeUnit 资源类型
 description: 管理单元为用户和组目录对象提供了一个概念性容器。 通过使用管理单元, 公司管理员现在可以将管理责任委派给区域或部门管理员, 以管理包含在管理单元或范围内的用户和组。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4dbc1c00b87e35f90cb0e14169364591c28c406f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 94d6c359449400ad2b37840b34d1b62e6f1b2138
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339127"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656844"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "33339127"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|string|管理单元的可选说明。|
-|displayName|string|管理单元的显示名称。|
+|displayName|字符串|管理单元的显示名称。|
 |id|字符串|管理单元的唯一标识符。 只读。|
 |visibility|string|控制管理单元及其成员是否为隐藏或公共的。 可以设置为 HiddenMembership 或 Public。 如果未设置, 则默认行为是公共行为。 如果设置为 HiddenMembership, 则只有管理单元的成员可以列出管理单位的其他成员。|
 

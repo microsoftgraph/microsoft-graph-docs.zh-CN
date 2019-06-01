@@ -1,15 +1,15 @@
 ---
 title: 列出 registeredUser
 description: 检索已注册为设备用户的用户列表。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 857e41899c36cf7dc9600fa788e400770333d6ec
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 89f6504bc0a6f081c2dff7da193b72cebb783bb8
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590894"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656347"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -81,7 +81,7 @@ Content-length: 55
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_registeredusers-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

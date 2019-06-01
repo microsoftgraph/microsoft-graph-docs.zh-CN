@@ -1,15 +1,15 @@
 ---
 title: domainState 资源类型
 description: 表示在域上计划的异步操作的状态。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6e945b271ec9f41a4337144d8313de0a4dc36a37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c1afe3402d20c534a3e976d21a4f00de969f20ee
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334586"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657117"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "33334586"
 |:---------------|:--------|:----------|
 | lastActionDateTime | DateTimeOffset | 上一次活动发生时的时间戳。 在计划工序、异步任务启动和操作完成时, 会更新该值。 |
 | 操作 | String | 异步操作的类型。 这些值可以是*ForceDelete*或*验证* |
-| status | String | 操作的当前状态。 <br> *计划*-操作已计划, 但尚未启动。 <br> *InProgress* -任务已启动并且正在进行中。 <br> *failed* -操作失败。 |
+| status | String | 操作的当前状态。 <br> *计划*-操作已计划, 但尚未启动。 <br> *InProgress* -任务已启动并且正在进行中。 <br> *Failed* -操作失败。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

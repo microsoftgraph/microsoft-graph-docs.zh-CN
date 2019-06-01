@@ -1,15 +1,15 @@
 ---
 title: 更新应用程序
 description: 更新 application 对象的属性。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2984e7d57144fd6d5e3efee7d6c9a9c8d68c529c
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: c5ab3871c1101c170deb500e516ff179dec6929f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34535992"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655171"
 ---
 # <a name="update-application"></a>更新应用程序
 

@@ -2,14 +2,14 @@
 title: 目录资源类型（已删除的项目）
 description: . 已删除的项目将保留最多 30 天的还原时间。 30 天后，这些项目将永久删除。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 92235775143b3f8341724340e4ad301a40571adb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e9437f2f57c1ac53dc8f227149e679edd32d1ff1
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340873"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657684"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -25,9 +25,9 @@ ms.locfileid: "33340873"
 |:---------------|:------------|:------------|
 |[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 获取已删除项目的属性。 |
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
-|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
+|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| 获取最近删除的项目列表。 |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | 无 | 永久删除项目。 |
-|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 列出用户拥有的目录项。 |
+|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 列出用户拥有的目录项。 |
 
 ## <a name="properties"></a>属性
 | 属性   | 类型 |说明|

@@ -2,14 +2,14 @@
 title: 创建目录设置
 description: 根据 directorySettingTemplates 中可用的模板, 使用此 API 创建新的设置。 这些设置可以是租户级别, 也可以是对象级别 (当前仅适用于组)。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置, 仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来, 一旦能够将来宾用户添加到组中, 就可以控制此行为。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc73029a66dd1ee0fffb4e99d0dd290870de9b99
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 53177561a7c2ae36919095fab6c456b37ecac67f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590393"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655801"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
@@ -19,7 +19,7 @@ ms.locfileid: "33590393"
 
 > **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*Create groupSettings*。
 
-若要获取在 beta 版中支持的模板及其属性的列表, 请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 (对于 v1。0终结点, 请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。)
+若要获取在 beta 版中支持的模板及其属性的列表, 请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 (对于 v1.0 终结点, 请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。)
 
 
 ## <a name="permissions"></a>权限
@@ -98,7 +98,7 @@ Content-length: 244
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

@@ -2,14 +2,14 @@
 title: 组织资源类型
 description: '表示 Azure Active Directory 租户。 '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f2b7d83f8c78eb11ad4f22d456d9791982aab5c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bfde61b207979f734398ef62f988d332a4abb455
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345553"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656886"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "33345553"
 | deletedDateTime                    | DateTimeOffset                                                    | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。                                                                                     |
 |dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
 |displayName|String|租户的显示名称。|
-|id|字符串|租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 Null。 只读。|
+|id|字符串|租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
 |isMultipleDataLocationsForServicesEnabled|布尔值|如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |marketingNotificationEmails|String 集合| 不可为 null。            |
 |objectType|String|一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |

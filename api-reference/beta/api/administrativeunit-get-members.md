@@ -1,15 +1,15 @@
 ---
 title: 获取成员
 description: 使用此 API 获取管理单元中的特定成员 (用户或组)。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7bf15df8dc61bb8f86eb21aa748a3bcf96588976
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 69f2017015007c1a70fa7a1be73a01def827610b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322823"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655332"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>响应
-下面是 respone 的一个示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是 respone 的一个示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 
 ```http
 HTTP/1.1 200 OK

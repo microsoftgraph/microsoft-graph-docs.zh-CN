@@ -1,15 +1,15 @@
 ---
 title: 列出成员
 description: 使用此 API 获取管理单元中的成员列表 (用户和组)。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b156079035b2f2332d81e018eba40bced41d9aee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d48bf767e8d786002bb523e39970a3e77f72738e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322791"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655304"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -27,7 +27,7 @@ ms.locfileid: "33322791"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
-> 注意: 若要在管理单元中列出隐藏成员身份的成员, 则需要使用 Read. hidden 权限是必需的。
+> 注意: 若要在管理单元中列出隐藏成员身份的成员, 则需要使用 Read. Hidden 权限是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 

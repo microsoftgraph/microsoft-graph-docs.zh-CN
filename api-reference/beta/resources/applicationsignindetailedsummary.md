@@ -2,14 +2,14 @@
 title: applicationSignInDetailedSummary 资源类型-Microsoft Graph API
 description: 表示应用程序登录的详细摘要。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 783201ec40ac0749d2c2999649bf1c420eaba5b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4d4fcd00e305c19f1d445738a22125cc8addc143
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328497"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657635"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>applicationSignInDetailedSummary 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "33328497"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|aggregatedEventDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|aggregatedEventDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |appDisplayName|String|用户登录到的应用程序的名称。|
 |appId|String|用户登录到的应用程序的 ID。|
 |id|字符串| 一个代表登录活动的唯一 ID。|

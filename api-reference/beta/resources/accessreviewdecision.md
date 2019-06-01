@@ -1,21 +1,21 @@
 ---
 title: accessReviewDecision 资源类型
-description: 在 azure ad access 评论功能中, `accessReviewDecision`表示特定实体的访问的 azure ad 访问审核决策。  在访问评审或定期访问审核实例中, 每个审阅的用户都有`accessReviewDecision`一个。  例如, 如果一个组有两个来宾, 一个非来宾作为成员, 并且对该组执行来宾的访问审核, 则会有两个访问审核决策对象。  如果审阅者更改`accessReviewDecision`了他们的决定, 或另一个审阅者将其覆盖, 则会更新。
+description: 在 Azure AD access 评论功能中, `accessReviewDecision`表示特定实体的访问的 azure ad 访问审核决策。  在访问评审或定期访问审核实例中, 每个审阅的用户都有`accessReviewDecision`一个。  例如, 如果一个组有两个来宾, 一个非来宾作为成员, 并且对该组执行来宾的访问审核, 则会有两个访问审核决策对象。  如果审阅者更改`accessReviewDecision`了他们的决定, 或另一个审阅者将其覆盖, 则会更新。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a3ba49484f46f6d41349abbd7a857ee365ef3ff0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 034ecbdaa108d0c63378d1c00136f0415019b262
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339361"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657740"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 azure ad [access 评论](accessreviews-root.md)功能中, `accessReviewDecision`表示特定实体的访问的 azure ad 访问审核决策。  在访问评审或定期访问审核实例中, 每个审阅的用户都有`accessReviewDecision`一个。  例如, 如果一个组有两个来宾, 一个非来宾作为成员, 并且对该组执行来宾的访问审核, 则会有两个访问审核决策对象。  如果审阅者更改`accessReviewDecision`了他们的决定, 或另一个审阅者将其覆盖, 则会更新。
+在 Azure AD [access 评论](accessreviews-root.md)功能中, `accessReviewDecision`表示特定实体的访问的 azure ad 访问审核决策。  在访问评审或定期访问审核实例中, 每个审阅的用户都有`accessReviewDecision`一个。  例如, 如果一个组有两个来宾, 一个非来宾作为成员, 并且对该组执行来宾的访问审核, 则会有两个访问审核决策对象。  如果审阅者更改`accessReviewDecision`了他们的决定, 或另一个审阅者将其覆盖, 则会更新。
 
 
 ## <a name="methods"></a>方法
@@ -50,7 +50,7 @@ ms.locfileid: "33339361"
 
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。  通过使用[accessReview](accessreview.md)对象的[决策](../api/accessreview-listdecisions.md)和[mydecisions](../api/accessreview-listmydecisions.md)关系, 可以从访问审核中检索此类型的对象。
 

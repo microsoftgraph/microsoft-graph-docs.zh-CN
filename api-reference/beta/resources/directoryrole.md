@@ -1,21 +1,21 @@
 ---
 title: directoryRole 资源类型
-description: 表示 Azure AD 目录角色。 Azure AD 目录角色也称为*管理员角色*。 有关目录 (管理员) 角色的详细信息, 请参阅在 Azure AD 中分配管理员角色。 使用 Microsoft Graph, 可以将用户分配到目录角色, 以向他们授予目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下仅激活公司管理员目录角色。 若要激活其他可用的目录角色, 请使用目录角色所基于的 directoryRoleTemplate 的 ID 发送 POST 请求。 继承自 directoryObject。
+description: 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。 有关这些目录（管理员）角色的详细信息，请参阅“在 Azure AD 中分配管理员角色”。 使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅激活公司管理员目录角色。 若要激活其他可用的目录角色, 请使用目录角色所基于的 directoryRoleTemplate 的 ID 发送 POST 请求。 继承自 directoryObject。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 110febf3213431a0a44941a4cdd2bd9bca255bff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ac9b08e2e39bce6a20703089d6bfe69c8b25f55f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334572"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657901"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 目录角色。 Azure AD 目录角色也称为*管理员角色*。 有关目录 (管理员) 角色的详细信息, 请参阅[在 Azure AD 中分配管理员角色](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)。 使用 Microsoft Graph, 可以将用户分配到目录角色, 以向他们授予目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下仅激活公司管理员目录角色。 若要激活其他可用的目录角色, 请使用目录角色所基于的[directoryRoleTemplate](directoryroletemplate.md)的 ID 发送 POST 请求。 继承自 [directoryObject](directoryobject.md)。
+表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。 有关这些目录（管理员）角色的详细信息，请参阅 [在 Azure AD 中分配管理员角色](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) 使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅激活公司管理员目录角色。 若要激活其他可用的目录角色, 请使用目录角色所基于的[directoryRoleTemplate](directoryroletemplate.md)的 ID 发送 POST 请求。 继承自 [directoryObject](directoryobject.md)。
 
 默认情况下, 目录角色的作用域为 "租户范围"。  但是, 目录角色 (目前只有*用户帐户管理员*和*支持人员管理员*) 也可能作用于[管理单元](administrativeunit.md)。
 
@@ -29,24 +29,24 @@ ms.locfileid: "33334572"
 |:---------------|:--------|:----------|
 |[获取 directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |读取 directoryRol 对象的属性和关系。|
 |[列出 directoryRoles](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) 集合 | 列出租户中激活的目录角色。 |
-|[Add member](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| 通过发布到成员导航属性将用户添加到目录角色。|
-|[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) 集合| 从成员导航属性获取该目录角色成员的用户。|
-|[删除成员](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| 从目录角色中删除用户。|
+|[添加成员](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| 通过发布到成员导航属性将用户添加到目录角色。|
+|[列出成员](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) 集合| 从成员导航属性获取该目录角色成员的用户。|
+|[删除成员](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| 删除目录角色中的用户。|
 |[列出作用域内的角色成员](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 通过 scopedRoleMembership 资源集合列出此目录角色的范围限定为[管理单元](administrativeunit.md)的成员。|
 |[delta](../api/directoryrole-delta.md)|directoryRole 集合| 获取目录角色的增量更改。 |
 
 ## <a name="properties"></a>属性
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|说明|String|目录角色说明。只读。 |
-|displayName|字符串|目录角色的显示名称。只读。 |
+|说明|字符串|目录角色说明。只读。 |
+|displayName|String|目录角色的显示名称。只读。 |
 |id|字符串|目录角色唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL，只读。|
-|roleTemplateId|String| 此角色所基于的 **directoryRoleTemplate** 的 [id](directoryroletemplate.md)。使用 POST 操作在租户中激活目录角色时，必须指定其属性。激活目录角色后，其属性为只读。 |
+|roleTemplateId|String| 此角色所基于的 [directoryRoleTemplate](directoryroletemplate.md) 的 **id**。使用 POST 操作在租户中激活目录角色时，必须指定其属性。激活目录角色后，其属性为只读。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|members|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 NULL。|
+|成员|[directoryObject](directoryobject.md) 集合|是此目录角色成员的用户。HTTP 方法：GET、POST、DELETE。只读。可为 NULL。|
 |scopedMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此目录角色的作用域为 "[管理单元](administrativeunit.md)" 的成员。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

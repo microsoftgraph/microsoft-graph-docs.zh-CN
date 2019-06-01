@@ -2,14 +2,14 @@
 title: 邀请管理器
 description: '使用邀请管理器来创建一个邀请，以将外部用户添加到组织。 '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 524e97befcdc08fcf216255ee37f981a5f2b54ac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: aaa335717fe2e6829fdff42cee180cd9a3c4ffe2
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341370"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657726"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 
@@ -47,7 +47,7 @@ ms.locfileid: "33341370"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[user](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

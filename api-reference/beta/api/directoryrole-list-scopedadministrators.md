@@ -1,15 +1,15 @@
 ---
 title: 列出目录角色的 scopedMembers
 description: 检索目录角色的 scopedRoleMembership 对象的列表。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5dd74a5e540693e64afa8ed4ce72b165c72e2b63
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fe3041ffba7c3d7ca430e963847d58f665c202da
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590385"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655941"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>列出目录角色的 scopedMembers
 
@@ -83,7 +83,7 @@ Content-length: 307
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_scopedmembers_directoryrole-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

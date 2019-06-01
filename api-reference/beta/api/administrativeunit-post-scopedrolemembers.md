@@ -2,14 +2,14 @@
 title: 添加 scopedRoleMember
 description: '添加新的 scopedRoleMembership。 注意: 对于作用域角色成员身份, 目前仅支持*用户帐户管理员*和*支持人员管理员*角色。'
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b13ab81291fbdd54ad326cf06c7027ee2d6f07aa
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: bcad66d3862a6c297070b0712ad8e66a7affff1f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636609"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655220"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
@@ -89,7 +89,7 @@ Content-length: 294
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_scopedrolemembership_from_administrativeunit-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

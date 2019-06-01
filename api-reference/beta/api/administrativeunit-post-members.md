@@ -1,15 +1,15 @@
 ---
 title: 添加成员
 description: 使用此 API 将成员 (用户或组) 添加到管理单元。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7db48bdc6b608efa051493cbd27cee25f2d1263
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fd85b4a7eee6bcec3f9cc828dc12e5b971f8968a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322782"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655227"
 ---
 # <a name="add-a-member"></a>添加成员
 

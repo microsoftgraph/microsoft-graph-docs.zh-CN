@@ -2,14 +2,14 @@
 title: 删除 orgContact
 description: 删除 orgContact。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 824d6fd73761f894618bdf786d9bcfa3d757ba6a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 87394067841bb5606630db8022509d3aa9723cfc
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596816"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657271"
 ---
 # <a name="delete-orgcontact"></a>删除 orgContact
 
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/beta/contacts/{id}
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_orgcontact-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

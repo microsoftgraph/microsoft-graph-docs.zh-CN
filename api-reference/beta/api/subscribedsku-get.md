@@ -2,14 +2,14 @@
 title: 获取 subscribedSku
 description: 检索组织已获取的特定商业订阅。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b3060c13a71a718468467dca7e464198b4f20e86
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c780ef1460c98e558eee03ae8535b150b25c99b8
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638611"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657453"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -88,7 +88,7 @@ Content-length: 450
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_subscribedsku-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

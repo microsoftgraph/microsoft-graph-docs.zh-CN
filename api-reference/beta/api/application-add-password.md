@@ -1,15 +1,15 @@
 ---
 title: 添加应用程序密码
 description: 向应用程序添加强密码。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc1e0ebb215ef478c9eedbb44a0d328f35693972
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ee2000daba1f003705979ceb04e78ed920ea9281
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322654"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655157"
 ---
 # <a name="add-application-password"></a>添加应用程序密码
 

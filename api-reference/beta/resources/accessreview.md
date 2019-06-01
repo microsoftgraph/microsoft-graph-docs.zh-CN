@@ -2,14 +2,14 @@
 title: accessReview 资源类型
 description: '在 Azure AD access 评论功能中, `accessReview`表示访问评审。  '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d65d41c23b97c5883be4c062598f438640cd7c1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b1801a7f7cbd52375e4fbbfb42847b29539a2dde
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339373"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657733"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -49,7 +49,7 @@ ms.locfileid: "33339373"
 | `reviewerType`            |`String`                                                        | 目标对象的审阅者的关系类型, 一个`self` `delegated`或。 `entityOwners` 创建时为必需项。 | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | 创建此评审的用户。 |
 | `reviewedEntity`          |[identity](identity.md)                                      | 访问权检查其访问权限分配的对象。 此组可以是查看组中用户的成员身份的组, 也可以是用于查看对应用程序的用户分配的应用程序。 创建时为必需项。 | 
-| `settings`                |`microsoft.graph.accessReviewSettings`             | accessReview 的设置, 请参阅下面的类型定义。 |
+| `settings`                |`microsoft.graph.accessReviewSettings`             | AccessReview 的设置, 请参阅下面的类型定义。 |
 
 
 
@@ -67,7 +67,7 @@ ms.locfileid: "33339373"
 
 对象中是否存在这些关系, 取决于该对象是一次性访问评审、定期访问评审的系列, 还是定期访问评审的实例。
 
-| 方案 | 是否有审阅者？ | 是否有决策和 myDecisions？ | 有实例吗？ |
+| 应用场景 | 是否有审阅者？ | 是否有决策和 myDecisions？ | 有实例吗？ |
 |:---------|:---------------|:---------------|:---------------|
 |一次性访问审核|是 | 是, 启动后 | 否 |
 | 定期访问审核 | 是 | 否 | 是 |
@@ -104,7 +104,7 @@ ms.locfileid: "33339373"
 
 ```
 
-## <a name="the-accessreviewsettings-type"></a>accessReviewSettings 类型
+## <a name="the-accessreviewsettings-type"></a>AccessReviewSettings 类型
 
 在`accessReviewSettings`创建访问评审时提供其他设置, 以在启动访问评审时控制功能行为。  此类型具有以下属性: 
 
@@ -120,7 +120,7 @@ ms.locfileid: "33339373"
 | `autoApplyReviewResultsEnabled`|`Boolean` | 用于指示是否启用自动更改目标对象访问资源的自动应用功能的标志。  如果未启用, 则用户必须在评审完成后应用访问评审。 |
 | `accessRecommendationsEnabled`|`Boolean` | 指示是否已启用向审阅者显示建议的标志。 |
 
-## <a name="the-autoreviewsettings-type"></a>autoReviewSettings 类型
+## <a name="the-autoreviewsettings-type"></a>AutoReviewSettings 类型
 
 `autoReviewSettings`嵌入访问审阅设置中, 并指定访问评审完成时的功能行为。  类型具有一个属性`notReviewedResult`。
 
@@ -129,7 +129,7 @@ ms.locfileid: "33339373"
 | `notReviewedResult`          |`String`  | 必须为 `Approve`、`Deny` 或 `Recommendation` 的其中一个。 |
 
 
-## <a name="the-accessreviewrecurrencesettings-type"></a>accessReviewRecurrenceSettings 类型
+## <a name="the-accessreviewrecurrencesettings-type"></a>AccessReviewRecurrenceSettings 类型
 
 嵌入`accessReviewRecurrenceSettings`到 access 评审设置中, 并指定以固定间隔重复进行访问评审。  此类型具有以下属性:
 

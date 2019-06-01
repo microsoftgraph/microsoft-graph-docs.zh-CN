@@ -1,15 +1,15 @@
 ---
 title: targetResource 资源复杂类型-Microsoft Graph API
 description: 定义支持审核日志报告组织 (租户) 活动的 Microsoft Graph API 的 targetResource 实体资源复杂类型。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: azure-ad
-ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a52a8586d8bce211729b8dffe2a43129b94b30d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583107"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657649"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "32583107"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串|指示资源的唯一 ID。|
+|id|String|指示资源的唯一 ID。|
 |displayName|String|指示为资源定义的可见名称。 通常是在创建资源时指定的。|
 |type|String|描述资源类型。  示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。|
-|userPrincipalName|String|当 "**类型**" 设置`User`为时, 这包括启动操作的用户名;`null`对于其他类型。|
+|userPrincipalName|字符串|当 "**类型**" 设置`User`为时, 这包括启动操作的用户名;`null`对于其他类型。|
 |groupType|String|当 "**类型**" 设置`Group`为时, 这表示组类型。|
 |ModifiedProperties|[modifiedProperty](modifiedproperty.md)集合|指示已更改的每个属性的名称、旧值和新值。 属性值取决于操作**类型**。|
 

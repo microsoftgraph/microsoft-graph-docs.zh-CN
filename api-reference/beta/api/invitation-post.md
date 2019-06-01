@@ -2,14 +2,14 @@
 title: 创建邀请
 description: 使用该 API 创建新的邀请。 邀请会将外部用户添加至组织。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 498e0861808a1de5a713037b9bbe341e36714903
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: e30c6fed6fc485b9c305b0b0e8e082b7ca1833c5
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34453633"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656809"
 ---
 # <a name="create-invitation"></a>创建邀请
 

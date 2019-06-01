@@ -1,15 +1,15 @@
 ---
 title: 更新目录设置
 description: 更新特定目录设置对象的属性。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d17abb40c6cf020b23be4fc0c319ebdee2684aa
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ba33e86046443d0af573a0a7f62125cc4b419f24
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590257"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655815"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -82,7 +82,7 @@ Content-length: 178
 HTTP/1.1 204 OK
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_directorysetting-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

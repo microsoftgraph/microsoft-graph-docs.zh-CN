@@ -1,15 +1,15 @@
 ---
 title: 列出成员
 description: 检索分配给目录角色的用户列表。  只能将用户分配给目录角色。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 087124dcbf0e612a4b6a6028c871b622a1df0ca1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cba6b8fb202333ac7032a53a9265f0c5d023056b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590353"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655962"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -76,7 +76,7 @@ Content-length: 55
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_members-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

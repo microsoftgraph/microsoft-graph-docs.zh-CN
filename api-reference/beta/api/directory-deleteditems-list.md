@@ -1,15 +1,15 @@
 ---
 title: 列出已删除的项目
 description: 从已删除的项目中检索最近删除的项目列表。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d1fdf1b81ce315266cb63c9e5623caf0c161b18
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4583fc3280d4e2512d02492b1f44c47518dfb43e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590674"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656179"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 
@@ -23,7 +23,7 @@ ms.locfileid: "33590674"
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 * 对于用户: Directory.accessasuser.all、全部、全部读取、全部、全部、全部、全部、目录
-* 对于 groups: Group。 All、Directory.accessasuser.all、Group 写 All、all、all。 All
+* 对于 groups: Group. All、Directory.accessasuser.all、Group 写 All、all、all。 All
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_deleteditems-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

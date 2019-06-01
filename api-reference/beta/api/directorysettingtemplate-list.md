@@ -2,14 +2,14 @@
 title: 列出 directorySettingTemplates
 description: 目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fc4714cf5eaa6eeecd781984f027a553e12c9b49
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: adfb303e24b637af4b77ac9f3cfd357ca09ece8f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589492"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655780"
 ---
 # <a name="list-directorysettingtemplates"></a>列出 directorySettingTemplates
 
@@ -89,7 +89,7 @@ Content-length: 343
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directorysettingtemplates-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

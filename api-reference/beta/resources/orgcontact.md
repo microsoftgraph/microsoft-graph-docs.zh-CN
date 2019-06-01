@@ -2,14 +2,14 @@
 title: orgContact 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0b5daa4f674762eb7733086678dd08d1389d2c7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f0cdf5a992e5cceab62902b24de498f846ca7d60
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341821"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656928"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "33341821"
 |[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| 列出联系人的直接下属。|
 |[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 获取 memberOf 对象集合。|
 |[删除](../api/orgcontact-delete.md) | 无 |删除 orgContact 对象。 |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String 集合| 检查组成员身份。 |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String 集合| 返回指定的联系人所属的所有组。 |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| 检查组成员身份。 |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| 返回指定的联系人所属的所有组。 |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| 返回联系人所属的 directoryObjects 的列表。 |
 
 ## <a name="properties"></a>属性
@@ -45,7 +45,7 @@ ms.locfileid: "33341821"
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合       | 此组织联系人的任何同步设置错误列表。                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步,**则为 true** ; 否则为 false。**假**如果此对象最初是从本地目录同步, 但不再同步, 并且现在在 Exchange 中的 mastered;如果从未从本地目录同步此对象 (默认), 则**为 null** 。|
 | phones                       | [phone](phone.md) collection                            | 此组织联系人的电话列表。 电话类型可以是移动、商业和 businessFax。 集合中仅有一种类型可以存在。                                                                                                                       |
-| proxyAddresses               | String 集合                                         | 例如: "SMTP: bob@contoso.com"、"SMTP: bob@sales.contoso.com"。 多值属性筛选器表达式需要 **any** 运算符。 支持\$筛选器。                                                                                                                                                                               |
+| proxyAddresses               | String collection                                         | 例如: "SMTP: bob@contoso.com"、"SMTP: bob@sales.contoso.com"。 需要多值属性筛选器表达式的 **any** 运算符。 支持\$筛选器。                                                                                                                                                                               |
 | surname                      | String                                                     | 此组织联系人的姓氏。                          |
 
 ## <a name="relationships"></a>关系
@@ -54,7 +54,7 @@ ms.locfileid: "33341821"
 |:---------------|:--------|:----------|
 |directReports|[directoryObject](directoryobject.md) collection| 联系人的直接下属。 (其 "经理" 属性设置为 "联系人" 的用户和联系人。) 只读。 可为 Null。|
 |manager|[directoryObject](directoryobject.md)| 作为此联系人的经理的用户或联系人。 只读。|
-|memberOf|[directoryObject](directoryobject.md) 集合| 此联系人所属的组。 只读。 可为 Null。|
+|memberOf|[directoryObject](directoryobject.md) collection| 此联系人所属的组。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

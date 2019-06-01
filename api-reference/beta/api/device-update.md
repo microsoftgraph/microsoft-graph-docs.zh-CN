@@ -1,15 +1,15 @@
 ---
 title: 更新设备
 description: 更新设备的属性。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6b7fd867545ad499378e76295795858e3b7d3da2
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 11d6c0772bf3bffac9ff5c68a7f5b10fef0ce776
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590735"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656221"
 ---
 # <a name="update-device"></a>更新设备
 
@@ -48,7 +48,7 @@ PATCH /devices/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 如果帐户已启用，则为 **true**；否则，为 **false**。 |
-|operatingSystem|字符串|设备上的操作系统类型。|
+|operatingSystem|String|设备上的操作系统类型。|
 |operatingSystemVersion|String|设备上的操作系统版本|
 |displayName|String|设备显示名称。|
 |isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
@@ -88,7 +88,7 @@ Content-length: 31
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_device-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

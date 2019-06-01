@@ -2,14 +2,14 @@
 title: 'orgContact: 列表 memberOf'
 description: 检索联系人所属的组和管理单位的列表。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8ed702fa4e656bc0dc3940becb4de9ef35bdc85
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2b6dcaede1d448aec71a8a0318f211e658e93609
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596714"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657222"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: 列表 memberOf
 
@@ -77,7 +77,7 @@ Content-length: 55
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_memberof-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

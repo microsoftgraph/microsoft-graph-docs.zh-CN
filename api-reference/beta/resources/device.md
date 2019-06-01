@@ -2,14 +2,14 @@
 title: 设备资源类型
 description: 表示在目录中注册的设备。 可以在云中使用设备注册服务或 Intune 创建设备。 条件访问策略使用它们进行多重身份验证。 这些设备范围很广，从台式机、笔记本电脑到手机和平板电脑均包括在内。 继承自 directoryObject。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b91b6e595dfc062836d8193c7c2dad769140e51
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a19cbe489ae4e9ab3a31d9633433f7c4c7fc075a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340859"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657719"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -28,8 +28,8 @@ ms.locfileid: "33340859"
 |[更新设备](../api/device-update.md) | [设备](device.md)  |更新设备对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除设备对象。 |
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员的组。 |
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备所属的组。 此操作是可传递的。 |
-|[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
+|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
+|[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -57,7 +57,7 @@ ms.locfileid: "33340859"
 |operatingSystemVersion|String| 设备的操作系统版本。 必需。 |
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 |
 |profileType|String|设备的配置文件类型。 可能的值：<br />**RegisteredDevice**设置<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
-|systemLabels|String 集合| 系统应用于设备的标签列表。 |
+|systemLabels|String collection| 系统应用于设备的标签列表。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |名称| String | 设备的友好名称。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |状态 | String| 设备处于联机或脱机状态。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
@@ -70,10 +70,10 @@ ms.locfileid: "33340859"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
-|registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。|
+|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为 Null。|
-|registeredOwners|[directoryObject](directoryobject.md) 集合|是设备注册所有者的用户。只读。可为 NULL。|
+|registeredOwners|[directoryObject](directoryobject.md) collection|是设备注册所有者的用户。只读。可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|
 | 命令 | [命令](command.md)集合 | 发送到此设备的一组命令|
 

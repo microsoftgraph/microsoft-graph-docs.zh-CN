@@ -1,15 +1,15 @@
 ---
 title: 获取目录设置
 description: 检索特定目录设置对象的属性。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb7f6ce5b1cbfe21ccb948dd71032e805af22a8a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0f90b9511b86e4c1c30b26bc66e97d19f433231e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590231"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655850"
 ---
 # <a name="get-a-directory-setting"></a>获取目录设置
 
@@ -84,7 +84,7 @@ Content-length: 198
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directorysetting-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

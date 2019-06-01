@@ -2,20 +2,20 @@
 title: Azure AD 访问审查
 description: 您可以使用 Azure AD 访问评论来配置一次性或定期访问审核, 以证明用户访问权限的证明。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 31b55697601e78fbf1e4af460d1ee7739b126d32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d38d82d00c5ba83bc3b16cd05b69e99ec7c5aa2e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339214"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656823"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以使用[Azure AD 访问评论](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)来配置一次性或定期访问审核, 以证明用户访问权限的证明。
+您可以使用[AZURE AD 访问评论](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)来配置一次性或定期访问审核, 以证明用户访问权限的证明。
 
 组成员身份和应用程序访问的访问审核的典型客户方案包括:
    
@@ -25,9 +25,9 @@ ms.locfileid: "33339214"
    
 - 客户可以将访问审核控件收集到与您的组织相关的程序中, 以跟踪对合规性或风险敏感的应用程序的审查。
 
-还有一种相关功能, 客户可以查看和验证分配给 Azure AD 角色 (如全局管理员或 azure 订阅角色) 的管理用户的角色分配。  此功能包含在[Azure AD 特权标识管理](privilegedidentitymanagement-root.md)中。
+还有一种相关功能, 客户可以查看和验证分配给 Azure AD 角色 (如全局管理员或 Azure 订阅角色) 的管理用户的角色分配。  此功能包含在[AZURE AD 特权标识管理](privilegedidentitymanagement-root.md)中。
 
-请注意, "访问审阅" 功能 (包括 API) 包含在 Azure AD Premium P2 中。  在其中创建访问审核的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。 在创建访问审核、程序或程序控制之前, 管理员必须先拥有载入, 才能准备[programControlType](programcontroltype.md)和[businessFlowTemplate](businessflowtemplate.md)资源。 组织可以在 azure ad 角色或 azure 订阅角色 (azure ad PIM) 的访问查看的情况下集成到 azure ad 访问评论。
+请注意, "访问审阅" 功能 (包括 API) 包含在 Azure AD Premium P2 中。  在其中创建访问审核的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。 在创建访问审核、程序或程序控制之前, 管理员必须先拥有载入, 才能准备[programControlType](programcontroltype.md)和[businessFlowTemplate](businessflowtemplate.md)资源。 组织可以在 azure ad 角色或 Azure 订阅角色 (azure ad PIM) 的访问查看的情况下集成到 Azure AD 访问评论。
 
 
 ## <a name="methods"></a>方法 
@@ -64,14 +64,14 @@ ms.locfileid: "33339214"
 
 调用用户需要使用以下目录角色来管理访问评审、程序和控件。
 
-| 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+| 目标资源 | Operation | 应用权限 | 呼叫用户的必需目录角色 |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或特权角色管理员 |
-|Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview | 全局管理员或特权角色管理员 |
+|Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |
 |组或应用的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或用户管理员 |
-|组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview | 全局管理员或用户管理员 |
+|组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
 | [程序](program.md)和[programControl](programcontrol.md)| 读取 | ProgramControl 或 ProgramControl。所有 |  全局管理员、安全管理员、安全读者或用户管理员 |
-| [程序](program.md)和[programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl | 全局管理员或用户管理员 |
+| [程序](program.md)和[programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl.ReadWrite.All | 全局管理员或用户管理员 |
 
 此外, 为访问审核分配的审阅者的用户可以管理他们的决策, 而无需在目录角色中进行管理。
 

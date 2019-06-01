@@ -2,14 +2,14 @@
 title: deviceDetail 资源类型
 description: 指示与用于登录的设备相关联的设备详细信息。 包括设备浏览器和操作系统信息 (如果设备是 Azure AD 托管) 等信息。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 18d55e397cf6c892cd37aea930d446c630017a92
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f3a0d7f141723beb5194860b025fe6fa349eb95a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543168"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657698"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 指示与用于登录的设备相关联的设备详细信息。 包括设备浏览器和操作系统信息 (如果设备是 Azure AD 托管) 等信息。
@@ -22,7 +22,7 @@ ms.locfileid: "32543168"
 |浏览器|String|指示用于登录的浏览器信息。|
 |deviceId|String|指用于登录的设备的 UniqueID。|
 |displayName|String|指用于登录的设备的名称。|
-|isCompliant|布尔值|指示设备是否合规。|
+|isCompliant|Boolean|指示设备是否合规。|
 |isManaged|Boolean|指示设备是否为托管设备。|
 |operatingSystem|String|指示用于登录的 OS 名称和版本。|
 |trustType|String|指示有关登录设备是否已加入工作区、AzureAD 加入和加入域的信息。 |

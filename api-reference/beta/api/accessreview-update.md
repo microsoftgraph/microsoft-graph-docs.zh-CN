@@ -2,14 +2,14 @@
 title: 更新 accessReview
 description: 在 "Azure AD 访问评论" 功能中, 更新现有 accessReview 对象以更改其一个或多个属性。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 026b445eee69557ead9179100cd6075e06783a86
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 97df0dedafdca0cd359effff65f1082466916f4a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636728"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655395"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -99,7 +99,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_accessReview-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

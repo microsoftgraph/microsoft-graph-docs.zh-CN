@@ -2,14 +2,14 @@
 title: '应用程序: delta'
 description: 获取新创建、更新或删除的应用程序, 而无需对整个资源集合执行完全读取。 有关详细信息, 请参阅 Using Delta Query。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f39e4c1298ba5120b51ef4e54006a2226f2fa5c0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: af233dcb44eaf81ecab9bf0169268791a6854b31
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636336"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655150"
 ---
 # <a name="application-delta"></a>应用程序: delta
 
@@ -134,7 +134,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/application_delta-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

@@ -2,14 +2,14 @@
 title: 列出 subscribedSkus
 description: 检索组织已获取的商业订阅列表。
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f5d88c5ff751eb9ccde83efe9fe7dd68600d8c2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 26f8e83373e97907d9ce113626e8a09c01df793a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638688"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657383"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -93,7 +93,7 @@ Content-length: 547
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_subscribedskus-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

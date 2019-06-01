@@ -1,15 +1,15 @@
 ---
 title: directoryObjectPartnerReference 资源类型
 description: 表示对合作伙伴租户中的 directory 对象的引用。 继承自 directoryObject。
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 91d33993ea83ea7eba883534efb513fa80287a64
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 327528f41795360e0da109b513f3f3f08ac0b268
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340844"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657929"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 
