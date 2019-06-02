@@ -4,12 +4,12 @@ description: 创建新的 Office 365 组或安全组。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: c2f80b915d2d813f4d002fec161a14aff6ceba45
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: c91c43c0156aa4edda9eef71232001fdede38887
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310865"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536195"
 ---
 # <a name="create-group"></a>创建组
 
@@ -24,7 +24,7 @@ ms.locfileid: "34310865"
 
 若要获取_非_默认返回的属性，请执行 GET 操作，并在 `$select` OData 查询选项中指定属性。 请参阅[示例](group-get.md#request-2)。
 
-> **注意**：若要创建[团队](../resources/team.md)，首先要创建组，然后向组添加团队，请参阅[创建团队](../api/team-put-teams.md)。
+>**注意**：若要创建[团队](../resources/team.md)，首先要创建组，然后向组添加团队，请参阅[创建团队](../api/team-put-teams.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -61,7 +61,7 @@ POST /groups
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
 
-> 注意：使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
+> **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
 由于**组**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建组时向其添加含有自己的数据的自定义属性。
 

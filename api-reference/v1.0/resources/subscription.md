@@ -3,12 +3,12 @@ title: 订阅资源类型
 description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: db3a536395f327115af69f769f37c823013ec7fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30671dcd93b4593015a5c3cf2eeddac8d7e00c4d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563698"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536773"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -75,6 +75,7 @@ ms.locfileid: "32563698"
 
 | 资源            | 最大过期时间  |
 |:--------------------|:-------------------------|
+| 用户、组和其他目录资源   | 4230 分钟（不到 3 天）    |
 | 邮件                | 4230 分钟（不到 3 天）    |
 | 日历            | 4230 分钟（不到 3 天）    |
 | 联系人            | 4230 分钟（不到 3 天）    |

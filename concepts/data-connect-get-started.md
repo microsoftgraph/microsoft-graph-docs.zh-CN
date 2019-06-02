@@ -4,19 +4,19 @@ description: 'Office 365 管理员必须先执行两个操作，以便管理员�
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7033a5f9a823977a99a753911600545ef35b0f1c
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 0fda5a21b59a1f6abfeeca864ce0d299618c5fdd
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036512"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537161"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接入门
 
 Office 365 管理员必须先执行两个操作，以便管理员能够通过 Privileged Access Management (PAM) 控制数据移动，之后你才可以使用 Microsoft Graph 数据连接。 
 
 1. 通过 Microsoft 365 管理门户的“服务和加载项”页同意选择使用 Microsoft Graph 数据连接。**** 这样即允许了对 Microsoft Azure 的数据移动请求（即保持对数据的完全控制，但允许 Azure 资源访问它）。 在提供对特定管道的批准前，无法迁移任何数据。
-2. 在 Office 365 订阅中设置审批者组。 确保审批者组不为空。 仅此组中的用户可以批准数据移动请求。
+2. 在 Office 365 订阅中设置已启用邮件的安全组或通讯组列表。 确保审批者组不为空。 仅此组中的用户可以批准数据移动请求。
 
 ## <a name="next-steps"></a>后续步骤
 

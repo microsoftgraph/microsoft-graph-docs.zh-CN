@@ -4,12 +4,12 @@ description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526232"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536510"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
@@ -23,7 +23,7 @@ Microsoft Graph 中的教育版 API 提供对课程、学校、用户、作业�
 
 ### <a name="build-applications-that-are-aware-of-class-roster"></a>构建了解班级名册的应用程序
 
-大多数教育软件开发人员在早期便了解到，此班级名册是运行其应用程序所需的关键信息之一，而且它通常被锁定在学校的学生信息系统 (SIS) 中。 只要教师将新应用程序引入其课堂，他们就需要花时间手动将名单数据导入到该应用。 许多 ISV 通过连接 SIS 导入名单数据来解决此问题。 在具备专有格式的数百个学生信息系统中，这将成为一个挑战。 将 [Microsoft 学校数据同步](https://sds.microsoft.com/)与名单 API 结合使用，可为应用程序开发人员以及学校解决这一难题。
+大多数教育软件开发人员在早期便了解到，此班级名册是运行其应用程序所需的关键信息之一，而且它通常被锁定在学校的学生信息系统 (SIS) 中。 只要教师将新应用程序引入其课堂，他们就需要花时间手动将名单数据导入到该应用。 许多独立软件供应商 (ISV) 通过连接 SIS 导入名单数据来解决此问题。 在具备专有格式的数百个学生信息系统中，这将成为一个挑战。 将 [Microsoft 学校数据同步](https://sds.microsoft.com/)与名单 API 结合使用，可为应用程序开发人员以及学校解决这一难题。
 
 以下是名单 API 启用的一些情况：
 
