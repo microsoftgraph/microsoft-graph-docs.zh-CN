@@ -4,16 +4,19 @@ description: 从组新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9950b92acb28d8138bba363170c8e1e89b5f1d5a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c47b3e7568c09c3b7f5e3debaec2eb74e074d6e7
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335254"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669657"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> 我们正在弃用此 API 来支持[创建团队](../api/team-post.md)，并将于 2019 年末之前将其删除。 要详细了解如何通过组来创建团队，请查看[创建团队](../api/team-post.md)中的示例 4 和示例 5。
 
 从[组](../resources/group.md)新建[团队](../resources/team.md)。
 

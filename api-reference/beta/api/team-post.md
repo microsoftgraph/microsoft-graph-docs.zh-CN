@@ -4,12 +4,12 @@ description: 新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ce6b61c1d3d3490db1fe37f51f70b943121def72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c16fd80ff61e49a3a37220c06ea6f742b73131dd
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330114"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669664"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -93,7 +93,7 @@ Content-Type: application/json
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('abc123')"
+    "https://graph.microsoft.com/beta/users('userId')"
   ]
 }
 ```
@@ -109,7 +109,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>示例 3：通过使用委派权限安装的应用以及带固定选项卡的多个渠道创建团队。
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>示例 3：通过委派的权限，创建一个包含多个频道、安装了应用且固定有选项卡的团队。
 
 下面是具有完整有效负载的请求。 客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。 
 
@@ -207,7 +207,93 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a>示例 4：创建具有非标准基本模板类型的团队
+### <a name="example-4-create-a-team-from-group"></a>示例 4：通过组来创建团队
+
+下面的示例展示了你可如何在给定 **groupId** 的情况下通过[组](../resources/group.md)来创建[团队](../resources/team.md)。
+
+此调用需注意以下几点：
+
+* 要创建团队，从中创建团队的组必须至少有一名所有者。 
+* 所创建的团队将始终从组的显示名称、可见性、规范和所有者继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **owners@odata.bind** 属性，则将返回错误。
+* 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
+
+
+#### <a name="request"></a>请求
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+}
+```
+
+#### <a name="response"></a>响应
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a>示例 5：通过组创建一个包含多个频道、安装了应用且固定有选项卡的团队
+
+下列请求会对具有扩展属性的现有组进行转换，这将创建安装了应用且带有固定选项卡和多个频道的团队。
+
+若要了解有关受支持的基本模板类型和受支持的属性的更多信息，请参阅 [Teams 模板入门](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。
+
+#### <a name="request"></a>请求
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
+  "channels": [
+        {
+            "displayName": "Class Announcements 📢",
+            "isFavoriteByDefault": true
+        },
+        {
+            "displayName": "Homework 🏋️",
+            "isFavoriteByDefault": true,
+        }
+    ],
+    "memberSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false,
+        "allowAddRemoveApps": false,
+        "allowCreateUpdateRemoveTabs": false,
+        "allowCreateUpdateRemoveConnectors": false
+    },
+    "installedApps": [
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        },
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>示例 6：创建具有非标准基本模板类型的团队
 
 基本模板类型是 Microsoft 为特定行业创建的特殊模板。 这些基本模板通常包含商店中不提供的专有应用以及 Microsoft Teams 模板中尚未单独支持的团队属性。
 
@@ -238,7 +324,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>示例 5：创建具有扩展属性的非标准基本模板类型的团队
+### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>示例 7：通过扩展属性创建具有非标准基本模板类型的团队
 
 基本模板类型可以使用其他属性进行扩展，使你可以使用其他团队设置、渠道、应用或选项卡构建现有基本模板。
 
@@ -294,8 +380,8 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>另请参阅
 
-- [可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)
+- 
+  [可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)
 - [Teams 零售模板入门](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Teams 医疗保健模板入门](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [创建包含团队的组](/graph/teams-create-group-and-team)
-

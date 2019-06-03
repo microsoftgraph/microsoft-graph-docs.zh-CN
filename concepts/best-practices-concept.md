@@ -2,12 +2,12 @@
 title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
-ms.openlocfilehash: 11db24ee87485987f1bf23e750d4af59206885a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526368"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657607"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 ## <a name="storing-data-locally"></a>在本地存储数据
 
-理想情况下，应用程序应调用 Microsoft Graph 来根据需要实时检索数据。 只有在特定方案需要，且该用例被使用条款和隐私策略所涵盖，而且不违反 [Microsoft Graph 使用条款](https://developer.microsoft.com/graph/docs/misc/terms-of-use) 的情况下，在本地缓存或存储数据。 应用程序还应该实现适当的保留和删除策略。
+理想情况下，应用程序应调用 Microsoft Graph 来根据需要实时检索数据。 仅当特定方案需要，并且该用例在使用条款和隐私策略的涵盖范围内，且不违反 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use?context=/graph/context) 时，才能在本地缓存或存储数据。 应用程序还应该实现适当的保留和删除策略。
 
 ## <a name="optimizations"></a>优化
 
