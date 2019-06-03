@@ -2,14 +2,14 @@
 title: directoryRole 资源类型
 description: 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*管理员角色*。 有关这些目录（管理员）角色的详细信息，请参阅“在 Azure AD 中分配管理员角色”。 使用 Microsoft Graph，可以将用户分配给目录角色，使其具有目标角色的权限。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下，仅激活公司管理员目录角色。 若要激活其他可用的目录角色，请发送具有此目录角色所基于的 directoryRoleTemplate ID 的 POST 请求。 继承自 directoryObject。
 localization_priority: Priority
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4b3379bbbecd86612043dcc3cb8455f5c43ba9cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 89387858ac9c22fba5897460b82a2b040c40eb75
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584045"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34658013"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 

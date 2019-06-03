@@ -2,14 +2,14 @@
 title: 组织资源类型
 description: " 不支持创建和删除操作。 继承自 directoryObject。"
 localization_priority: Priority
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ecd92005849870704002c4e7617d2f0e76a7031b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b24a91b592b3674b7080fbcf5e345937dfae402
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462649"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657810"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 

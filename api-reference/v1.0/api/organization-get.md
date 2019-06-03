@@ -2,14 +2,14 @@
 title: 获取组织
 description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Priority
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8bf23b2c733a5788866a20ee76960f1b25bf0cb0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7dda606f102b189d10ee45e3cae04c23fde31570
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612737"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657817"
 ---
 # <a name="get-organization"></a>获取组织
 

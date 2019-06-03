@@ -49,7 +49,7 @@ items:
       - name: 版本控制和支持
         href: versioning-and-support.md
       - name: 使用条款
-        href: 'https://developer.microsoft.com/graph/terms-of-use'
+        href: /legal/microsoft-apis/terms-of-use?context=graph/context
   - name: 学习
     expanded: true
     items:
