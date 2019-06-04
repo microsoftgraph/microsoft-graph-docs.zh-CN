@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 获取 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e0242952a0cecef9ab23cad2cdcd3175dd08fe24
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: f189a28d9b4853492c68e581fc9790253ce6de89
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638702"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683550"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 
@@ -19,17 +19,6 @@ ms.locfileid: "33638702"
 检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
 
 [网站]: ../resources/site.md
-
-**网站**可按唯一标识符处理，此唯一标识符是下列值的复合 ID：
-
-* 网站集主机名称 (contoso.sharepoint.com)
-* 网站集的唯一 ID (GUID)
-* 网站的唯一 ID (GUID)
-
-还有一个保留的网站标识符，即 `root`。它经常用于引用给定目标的根网站，如下所示：
-
-* `/sites/root`：租户根网站。
-* `/groups/{group-id}/sites/root`：该组的团队网站。
 
 ## <a name="permissions"></a>权限
 
@@ -102,7 +91,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

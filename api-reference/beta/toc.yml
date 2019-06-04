@@ -18,6 +18,8 @@ items:
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: 管理应用访问权限 (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      - name: 限制邮箱访问
+        href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: 使用 API
     items:
       - name: 概述
@@ -829,7 +831,7 @@ items:
           - name: 预订业务
             href: resources/bookingbusiness.md
             items:
-              - name: List
+              - name: 列出
                 href: api/bookingbusiness-list.md
               - name: 创建
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -863,7 +865,7 @@ items:
           - name: 预订货币
             href: resources/bookingcurrency.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/bookingcurrency-list.md
               - name: 获取
                 href: api/bookingcurrency-get.md
@@ -2144,7 +2146,7 @@ items:
               - name: DEP iOS 注册配置文件
                 href: resources/intune-enrollment-depiosenrollmentprofile.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-enrollment-depiosenrollmentprofile-list.md
                   - name: 获取
                     href: api/intune-enrollment-depiosenrollmentprofile-get.md
@@ -2157,7 +2159,7 @@ items:
               - name: DEP macOS 注册配置文件
                 href: resources/intune-enrollment-depmacosenrollmentprofile.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-enrollment-depmacosenrollmentprofile-list.md
                   - name: 获取
                     href: api/intune-enrollment-depmacosenrollmentprofile-get.md
@@ -2789,7 +2791,7 @@ items:
               - name: Android VPN 配置
                 href: resources/intune-deviceconfig-androidvpnconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-androidvpnconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidvpnconfiguration-get.md
@@ -2804,7 +2806,7 @@ items:
               - name: Android Wi-Fi 配置
                 href: resources/intune-deviceconfig-androidwificonfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -6218,7 +6220,7 @@ items:
                     href: api/intune-wip-intunebrandingprofile-delete.md
                   - name: 更新
                     href: api/intune-wip-intunebrandingprofile-update.md
-                  - name: assign 操作
+                  - name: 分配操作
                     href: api/intune-wip-intunebrandingprofile-assign.md
               - name: Intune 品牌打造配置文件分配
                 href: resources/intune-wip-intunebrandingprofileassignment.md
@@ -7509,7 +7511,7 @@ items:
               - name: 业务流模板
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: List
+                  - name: 列出
                     href: api/businessflowtemplate-list.md
               - name: 程序
                 href: resources/program.md
@@ -7518,7 +7520,7 @@ items:
                     href: api/program-create.md
                   - name: 删除
                     href: api/program-delete.md
-                  - name: 列出
+                  - name: List
                     href: api/program-list.md
                   - name: 更新
                     href: api/program-update.md
@@ -7950,14 +7952,14 @@ items:
                   - name: 角色定义
                     href: resources/governanceroledefinition.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/governanceroledefinition-list.md
                       - name: 获取
                         href: api/governanceroledefinition-get.md
                   - name: 角色设置
                     href: resources/governancerolesetting.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/governancerolesetting-list.md
                       - name: 获取
                         href: api/governancerolesetting-get.md
@@ -8713,6 +8715,10 @@ items:
                 href: api/itemanalytics-get.md
               - name: 按间隔获取活动
                 href: api/itemactivity-getbyinterval.md
+              - name: 关注网站
+                href: api/site-follow.md
+              - name: 取消追随网站
+                href: api/site-unfollow.md
           - name: 列表
             href: resources/list.md
             items:
