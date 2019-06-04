@@ -397,18 +397,10 @@ Microsoft Graph 中的 OneNote API 支持以下列表样式：
 |已排序列表|未排序列表|
 |:------|:------|
 | 无 | 无 |
-| 
-decimal (default) | 
-disc (default) |
-| 
-lower-alpha | 
-circle |
-| 
-lower-roman | 
-
-square |
-| 
-upper-alpha | &nbsp; |
+| decimal (default) | disc (default) |
+| lower-alpha | circle |
+| lower-roman | square |
+| upper-alpha | &nbsp; |
 | upper-roman | &nbsp; |
  
 您可以在输入 HTML 中对 **ol** 或 **ul** 元素上的列表应用全局样式，但样式在 **li** 元素上返回。

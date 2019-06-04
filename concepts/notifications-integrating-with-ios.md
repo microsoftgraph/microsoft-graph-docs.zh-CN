@@ -251,7 +251,6 @@ SDK 成功提取数据更改之后，将会调用事件回调且应用客户端�
 
 ## <a name="see-also"></a>另请参阅
 
-- 
-  [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-ios/)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-ios/)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适合于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

@@ -88,10 +88,8 @@ ms.locfileid: "34063280"
 
 有关在 UWP 应用中包含和使用 NuGet 程序包的更多详细信息，请参阅：
 
-* 
-  [使用来自 nuget.org 的程序包](https://docs.microsoft.com/zh-CN/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* 
-  [快速入门：在 Visual Studio 中安装和使用程序包](https://docs.microsoft.com/zh-CN/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [使用来自 nuget.org 的程序包](https://docs.microsoft.com/zh-CN/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [快速入门：在 Visual Studio 中安装和使用程序包](https://docs.microsoft.com/zh-CN/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>初始化连接设备平台
@@ -279,7 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>另请参阅
 
-- 
-  [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-windows/)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-windows/)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适用于 Windows UWP 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

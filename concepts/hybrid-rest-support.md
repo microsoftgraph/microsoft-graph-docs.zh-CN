@@ -44,7 +44,6 @@ Microsoft Graph 提供开放性（支持 JSON、OAUTH 和 ODATA 等开放标准�
 
 IT 管理员可以在以下资源中找到详细信息：
 
-- 
-  [Exchange Server 混合部署](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Exchange Server 混合部署](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [2016 年 9 月累积更新版本](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [针对 REST API 的本地体系结构要求](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)
