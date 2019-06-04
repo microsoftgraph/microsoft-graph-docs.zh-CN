@@ -18,6 +18,8 @@ items:
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: 管理应用访问权限 (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      - name: 限制邮箱访问
+        href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: 使用 API
     items:
       - name: 概述
@@ -1721,7 +1723,7 @@ items:
               - name: macOS 自定义配置
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -1734,7 +1736,7 @@ items:
               - name: Apple 设备功能配置
                 href: resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
