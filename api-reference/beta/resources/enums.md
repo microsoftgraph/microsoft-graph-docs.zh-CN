@@ -1,12 +1,12 @@
 ---
 title: 枚举值
 description: Microsoft Graph 枚举值
-ms.openlocfilehash: 7394ee9dbfa70e7cda1269c8f61d3b77d92e8094
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f553b2378f646bf367cf75515cd758dd0e37b53a
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340159"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709402"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -15,7 +15,7 @@ ms.locfileid: "33340159"
 |母语|0|用户的父级。|
 |彼此|1| 用户的相对路径。|
 |aide|双面| 用户的 aide。|
-|dr。|第三章| 用户的医生。|
+|dr.|第三章| 用户的医生。|
 |监护|4| 用户的监护人。|
 |该子|5| 用户的子级。|
 |相互|型| 与用户的未指定关系。|
@@ -43,7 +43,7 @@ ms.locfileid: "33340159"
 
 ### <a name="timeoffreasonicontype-values"></a>timeOffReasonIconType 值
 
-|成员|
+|Member|
 |:---|
 |无|
 |car|
@@ -51,7 +51,7 @@ ms.locfileid: "33340159"
 |运行|
 |plane|
 |firstAid|
-|dr。|
+|dr.|
 |notWorking|
 |构造|
 |juryDuty|
@@ -89,7 +89,7 @@ ms.locfileid: "33340159"
 | unknown           | -1
 
 
-### <a name="physicaladdresstype-values"></a>: physicaladdresstype 值
+### <a name="physicaladdresstype-values"></a>: Physicaladdresstype 值
 
 | 值
 |:-------------------------
@@ -122,8 +122,8 @@ ms.locfileid: "33340159"
 | 值
 |:-------------------------
 | 禁用
-| alwaysenabled 启用
-| 已计划
+| Alwaysenabled 启用
+| scheduled
 
 
 ### <a name="calendarcolor-values"></a>calendarColor 值
@@ -279,7 +279,7 @@ ms.locfileid: "33340159"
 | clientDisconnected
 
 
-### <a name="bodytype-values"></a>office.mailboxenums.bodytype 值
+### <a name="bodytype-values"></a>Office.mailboxenums.bodytype 值
 | 值
 |:---------
 | text
@@ -321,10 +321,10 @@ ms.locfileid: "33340159"
 | doNotForward
 | 努力
 | 仅供参考
-| 转发
+| 前后
 | noResponseNecessary
 | 自述
-| 回复
+| 响应
 | replyToAll
 | 概述
 
@@ -463,7 +463,7 @@ ms.locfileid: "33340159"
 | 值
 |:-------------------------
 | 无
-| 组织者
+| organizer － 组织者
 | tentativelyAccepted
 | 接受
 | 邀请
@@ -507,12 +507,12 @@ ms.locfileid: "33340159"
 | preset8  | utf-8       
 | preset9  | 第       
 | preset10 | 10       
-| preset11 | 11       
-| preset12 | 12       
-| preset13 | 13       
-| preset14 | 14       
-| preset15 | 15       
-| preset16 | 16       
+| preset11 | 11x17      
+| preset12 | 12      
+| preset13 | 13      
+| preset14 | 日      
+| preset15 | 个      
+| preset16 | 位      
 | preset17 | ×      
 | preset18 | 18      
 | preset19 | 合      
@@ -618,7 +618,7 @@ ms.locfileid: "33340159"
 |无|utf-8| REG_NONE 注册表值类型。|
 |qword|第| REG_QWORD 注册表值类型。|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN 注册表值类型。|
-|sz|11 | REG_SZ 注册表值类型。|
+|sz|11x17| REG_SZ 注册表值类型。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 
@@ -679,14 +679,14 @@ ms.locfileid: "33340159"
 
 ### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 值
 
-|成员|
+|Member|
 |:---|
 |各种|
 |任意|
 
 ### <a name="risklevel-values"></a>riskLevel 值
 
-|成员|
+|Member|
 |:---|
 |降低|
 |中等|
@@ -697,7 +697,7 @@ ms.locfileid: "33340159"
 
 ### <a name="riskstate-values"></a>riskState 值
 
-|成员|
+|Member|
 |:---|
 |无|
 |confirmedSafe|
@@ -709,7 +709,7 @@ ms.locfileid: "33340159"
 
 ### <a name="riskdetail-values"></a>riskDetail 值
 
-|成员|
+|Member|
 |:---|
 |无|
 |adminGeneratedTemporaryPassword|
@@ -725,7 +725,7 @@ ms.locfileid: "33340159"
 
 ### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission 值
 
-|成员|
+|Member|
 |:---|
 |相互|
 |view|
@@ -735,9 +735,9 @@ ms.locfileid: "33340159"
 |organizationView|
 |organizationEdit|
 
-### <a name="referenceattachmentprovider-values"></a>: referenceattachmentprovider 值
+### <a name="referenceattachmentprovider-values"></a>: Referenceattachmentprovider 值
 
-|成员|
+|Member|
 |:---|
 |相互|
 |oneDriveBusiness|
@@ -746,7 +746,7 @@ ms.locfileid: "33340159"
 
 ### <a name="riskeventtype-values"></a>riskEventType 值
 
-|成员|
+|Member|
 |:---|
 |unlikelyTravel|
 |anonymizedIPAddress|
@@ -766,7 +766,7 @@ ms.locfileid: "33340159"
 
 ### <a name="networktype-values"></a>网络值
 
-|成员|
+|Member|
 |:---|
 |在内|
 |powerlink|
@@ -776,7 +776,7 @@ ms.locfileid: "33340159"
 
 ### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
 
-|成员|
+|Member|
 |:---|
 |entryId|
 |ewsId|
@@ -786,14 +786,14 @@ ms.locfileid: "33340159"
 
 ### <a name="attributeflowbehavior-values"></a>attributeFlowBehavior 值
 
-|成员|
+|Member|
 |:---|
 |flowWhenChanged|
 |flowAlways|
 
 ### <a name="attributeflowtype-values"></a>attributeFlowType 值
 
-|成员|
+|Member|
 |:---|
 |都|
 |objectAddOnly|
@@ -808,3 +808,17 @@ ms.locfileid: "33340159"
 |加法| 1       |
 |Update|双面     |
 |Delete|4     |
+
+### <a name="chatmessagetype-values"></a>chatMessageType 值
+
+|Member|
+|:---|
+|message|
+
+### <a name="chatmessageimportance-values"></a>chatMessageImportance 值
+
+|Member|
+|:---|
+|通用|
+|高效|
+|紧急|
