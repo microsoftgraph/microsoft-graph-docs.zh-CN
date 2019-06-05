@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63d4232c2af37541f2a96359f9d2a209d065bc98
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f2386228c3758cc15d9c270f0da32608e4f2b901
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343047"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683501"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -31,6 +31,8 @@ ms.locfileid: "33343047"
 | [列出页面][]                 | GET /sites/{site-id}/pages
 | [列出根网站][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [搜索网站][]           | GET /sites?search={query}
+| [关注网站][]                | POST /users/{user-id}/followedSites/add
+| [取消关注网站][]              | POST /users/{user-id}/followedSites/remove
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -41,13 +43,15 @@ ms.locfileid: "33343047"
 [列出页面]: ../api/sitepage-list.md
 [列出根网站]: ../api/site-list.md
 [搜索网站]: ../api/site-search.md
+[关注网站]: ../api/site-follow.md
+[取消关注网站]: ../api/site-unfollow.md
 
 
 ## <a name="properties"></a>属性
 
 | 属性名称            | 类型               | 说明
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | 项的唯一标识符。只读。
+| **id**                   | string             | 项的[唯一标识符](#id-property)。 只读。
 | **createdDateTime**      | DateTimeOffset     | 创建项目的日期和时间。只读。
 | **说明**          | string             | 网站的描述性文本。
 | **eTag**                 | string             | 该项目的 ETag。只读。                                                                  |
@@ -58,6 +62,17 @@ ms.locfileid: "33343047"
 | **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。
 | **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。
+
+### <a name="id-property"></a>id 属性
+**site** 由一个唯一 ID 标识，此唯一 ID 由以下值组成：
+* 网站集主机名称 (contoso.sharepoint.com)
+* 网站集的唯一 ID (GUID)
+* 网站的唯一 ID (GUID)
+  
+`root` 标识符经常用于引用给定目标的根网站，如下所示：
+
+* `/sites/root`：租户根网站。
+* `/groups/{group-id}/sites/root`：该组的团队网站。
 
 ## <a name="relationships"></a>关系
 

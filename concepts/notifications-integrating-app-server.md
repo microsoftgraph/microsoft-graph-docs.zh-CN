@@ -3,16 +3,16 @@ title: 通过应用程序服务创建和发送通知
 description: '将应用程序服务设置为通过 Microsoft Graph 向不同客户端发送以用户为中心的通知。 '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 1148c554b90fca5aeb56627e47a1d060f53f772e
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: cf40087aff3956a88f79197482db8126bbe8d96c
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063251"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683508"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>通过应用程序服务创建和发送通知
 
-可以使用 Microsoft Graph API 为用户创建和发送通知。 通知存储于活动源存储区中，并且被发送至目标用户登录的所有设备的所有应用程序客户端上。请参阅以下内容，以了解如何进行身份验证、所需的权限范围、请求标题/正文和预期响应。
+可以使用 Microsoft Graph API 为用户创建和发送通知。 通知存储在活动源存储中，并发送到目标用户登录的所有设备上的所有应用客户端。 
 
 ## <a name="authentication"></a>身份验证
 
