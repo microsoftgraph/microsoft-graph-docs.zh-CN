@@ -15,20 +15,20 @@ ms.locfileid: "33629815"
 
 Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Office 365 管理员批准数据移动请求。 数据连接管道必须由 Office 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[入门](/concepts/data-connect-get-started.md)。
 
-当复制活动请求访问权限以提取 Office 365 数据时，系统会向审批者的每名成员发送审批请求电子邮件来通知他们。 审批者可以批准或拒绝这些请求，指定应从提取的数据中清理的用户组，或撤销以前批准的请求。 审批持续有效时间为 6 个月，并且 Azure 数据工厂管道中的每次复制活动都需要一次审批。 
+当复制活动请求访问权限以提取 Office 365 数据时，系统会向审批者的每名成员发送审批请求电子邮件来通知他们。 审批者可以批准或拒绝这些请求，指定应从提取的数据中清理的用户组，或撤销以前批准的请求。 审批持续时间为 6 个月，并且 Azure 数据工厂管道中的每次复制活动都需要进行审批。 
 
-每个请求将始终包含有关数据集和将提取其相关数据的用户的以下详细信息：
+每个请求将始终包含以下详细信息，包括有关数据集和将提取其相关数据的用户：
 
 * **Requestor**：发出管道请求的用户。
-* **Duration**：在获得批准的情况下，审批将持续有效的时长 。 始终为 4320 小时（6 个月）。
-* **Reason**：请求的原因，通常为“为组织安装的应用需要审批才能访问 Office 365 数据”。
+* **Duration**：在获得批准的情况下，审批将持续有效的时长。 始终为 4320 小时（6 个月）。
+* **Reason**：请求的原因，通常为“组织安装的应用需要批准以访问 Office 365 数据”。
 * **Requested at**：请求的日期时间。
 * **Request id**：请求的 ID，用于审批目的。
 * **DataTable**：所提取的数据集（例如，已发送邮件）。
 * **Columns**：从数据表中提取的列的列表（例如，SentDateTime）。
 * **AllowedGroups**：管道针对其提取数据的一个或多个用户组。 如果组列表为空，则管道会请求访问租户内所有用户中的数据。
 * **User Scope Query**：用于筛选出用户的谓词。 仅在请求针对租户中的所有用户时适用。 如果此项为空，则不应用筛选器。 
-* **OutputUri**：将在其中存储提取的数据的输出路径。
+* **OutputUri**：将存储提取数据的输出路径。
 * **SourceTenantId**：从中提取数据的租户 ID。
 * **InstallerIdentity**：应用安装程序的标识。
 
@@ -36,8 +36,8 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 * “Application Name”和“Marketplace URI”（仅适用于通过 Azure 应用商店安装的应用程序）。
 * 应用程序隐私政策及服务条款的链接（仅在应用程序提供时可用）。
-* 应用程序实施的合规性策略，例如输出存储位置中的静态数据加密（仅在应用程序提供该策略，并且应用程序是从 Azure 应用市场中安装的情况下，此字段才可用）。
-* Deny List - 可从提取的数据中清理的用户名。 作为支持从提取的数据中清理隐私的数据集请求的一部分，此字段为空。 负责批准请求的审批者组的成员可在审批时填充该字段。 
+* 应用程序实施的合规性策略，例如输出存储位置的静态数据加密（仅在应用程序提供该策略，并且应用程序是从 Azure 应用市场中安装的情况下可用）。
+* 拒绝列表 - 可从提取数据中清理的用户组。 如果作为支持从提取数据中清理隐私的数据集请求的一部分，则此字段为空。 负责批准请求的审批者组的成员可在审批时填充该字段。 
 
 ## <a name="approving-requests"></a>审批请求
 
@@ -50,7 +50,7 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 1. 安装 Exchange Online Powershell 模块。 有关安装说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
 
 2. 使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell。 有关说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
-    >**注意**：在连接到 Exchange Online PowerShell 时，你无需为组织启用多重身份验证便可使用这些步骤。 通过 MFA 进行连接会创建一个 OAuth 令牌，PAM 将使用该令牌来为请求签名。
+    >**注意**：在连接到 Exchange Online PowerShell 时，你无需为组织启用多重身份验证便可使用这些步骤。 使用 MFA 进行连接会创建一个 OAuth 令牌，PAM 将使用该令牌来为请求签名。
 
 3. 使用你的帐户登录。 请注意，你必须是配置的数据访问审批者组的成员才能批准、拒绝或撤销请求。 来宾用户无法批准请求，即使他们是审批者组的成员。 
 
@@ -72,7 +72,7 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
    (Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
    ```
 
-   你将收到类似于如下的响应。
+   你将收到如下所示的响应。
 
    ```powershell
    Key                          Value
@@ -113,7 +113,7 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
    ```powershell 
    Revoke-ElevatedAccessAuthorization -Comment "Revoking this request!" -RequestId $requestId
    ```
-   你将看到类似于如下的响应。
+   你将看到如下所示的响应。
    
    ```powershell
    AuthorizedBy          : user@tenant.onmicrosoft.com
@@ -142,23 +142,23 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 ### <a name="approval-behavior"></a>审批行为
 
-数据连接审批请求有一些务必要注意的特殊性质：
+数据连接审批请求有一些务必要注意的特性：
 
-- 审批请求基于 Azure 数据工厂、管道和复制活动名称。 每次复制活动运行时，都将验证 Office 365 管理员是否批准了复制活动的 Office 数据访问请求，并将依据审批的参数验证复制活动运行的重要参数。
+- 审批请求基于 Azure 数据工厂、管道和复制活动名称。 每次复制活动运行时，都将验证 Office 365 管理员是否批准了复制活动关于访问 Office 数据的请求，并将依据审批的参数验证复制活动运行的重要参数。
 - 在某些条件下，将会自动触发新审批请求。 数据连接审批者将必须批准新请求，然后复制活动才能访问 Office 365 数据。
 - 如果复制活动运行的参数发生变化，则会触发一个新的审批请求。
 - 如果数据工厂、管道或复制活动名称发生变化，则会触发一个新的审批请求。
 - 例如：如果复制活动正在访问的数据表或列集发生变化，则需要进行一次新审批。
 - 必须每隔 6 个月审批一次复制活动。 如果原始审批是 6 个月前批准的，则会自动触发一个新审批请求。
-- 如果 Office 365 数据访问审批者拒绝了审批请求或撤销了以前批准的请求，则复制活动将持续失败。 你应与审批者协作，了解拒绝或撤销原因，并相应修复复制活动的参数。 将必须部署新的复制活动或更改现有复制活动的名称，以便触发新的审批请求进行审批。
-- 除非 Office 365 数据访问审批者对请求采取行动，否则审批请求将在 24 小时内过期。 将每隔 24 小时提交一次新请求以供审批。 如果看到复制活动正在等待审批（处于“等待同意”阶段），请与 Office 365 数据访问审批者协作，使你的请求获得批准。
+- 如果 Office 365 数据访问审批者拒绝了审批请求或撤销了以前批准的请求，则复制活动将持续失败。 你应与审批者协作，了解拒绝或撤销原因，并相应修复复制活动的参数。 必须部署新的复制活动或更改现有复制活动的名称，以便触发新的审批请求进行审批。
+- 如果 Office 365 数据访问审批者未处理请求，则审批请求将在 24 小时内过期。 将每隔 24 小时提交一次新请求以供审批。 如果看到复制活动正在等待审批（处于“等待同意”阶段），请与 Office 365 数据访问审批者协作，使你的请求获得批准。
 
 ## <a name="privacy-scrubbing"></a>隐私清理 
-负责审批请求的审批者组成员可指定将从提取的数据中清理其数据的用户组的名称。 如果行包含与已拒绝组的成员对应的电子邮件地址，则会从提取的数据中清理这些行。 嵌套在已拒绝组中的组将展开，并且将只会清理用户。有关如何在审批期间通过 PowerShell 或 PAM UX 应用拒绝列表的详细信息，请参阅本主题的“审批请求”部分。 
+负责审批请求的审批者组成员可指定将从提取的数据中清理其数据的用户组名称。 如果行包含与已拒绝组的成员对应的电子邮件地址，则会从提取的数据中清理这些行。 嵌套在已拒绝组中的组将展开，只会清理用户。有关如何在审批期间通过 PowerShell 或 PAM UX 应用拒绝列表的详细信息，请参阅本主题的“审批请求”部分。 
 
 下表显示了将对其内容进行隐私清理检查的数据集和列的名称。
 
-| 数据集名称                     | 用于基于拒绝列表的清理的列                                                  |
+| 数据集名称                     | 用于基于拒绝列表进行清理的列                                                  |
 |---------------------------------------------------------------------|----------------------------------------------------------|
 | **BasicDataSet_v0.Message_v0**<br>**BasicDataSet_v0.Message_v1**   | Sender、From、ToRecipients、CcRecipients、BccRecipients    |                                                                               
 | **BasicDataSet_v0.SentItem_v0**<br>**BasicDataSet_v0.SentItem_v1**  | Sender、From、ToRecipients、CcRecipients、BccRecipients  |
@@ -168,4 +168,4 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 ## <a name="next-steps"></a>后续步骤
 
-确保你的组织已通过完成[入门](/concepts/data-connect-get-started.md)中的步骤正确配置了 Privileged Access Management 以与 Microsoft Graph 数据结合使用。
+确保你的组织已完成[入门](/concepts/data-connect-get-started.md)中的步骤，正确配置了 Privileged Access Management，以便与 Microsoft Graph 数据结合使用。
