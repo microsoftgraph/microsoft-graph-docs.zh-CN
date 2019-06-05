@@ -8974,7 +8974,7 @@ items:
               - name: 获取消息回复
                 href: api/channel-get-messagereply.md
               - name: 发送消息
-                href: api/channel-post-chatmessage.md
+                href: api/channel-post-messages.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
           - name: 聊天
