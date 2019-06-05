@@ -274,6 +274,8 @@ items:
             href: permissions-reference.md
           - name: 管理应用访问权限 (CSP)
             href: auth-cloudsolutionprovider.md
+          - name: 限制邮箱访问
+            href: auth-limit-mailbox-access.md
       - name: 使用 API
         items:
           - name: 概述
