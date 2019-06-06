@@ -4,12 +4,12 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e158d6c0349eacae905936a82d659c8d5c0acec7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bab8e6ead9a88977fe84034ef1c9694d2948c498
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341391"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709388"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -39,7 +39,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[将应用添加到团队](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
 |[将选项卡添加到频道](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | 将选项卡添加（安装）到团队的频道。|
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [获取频道中的消息](../api/channel-list-messages.md) |
-|[发送渠道消息](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [向渠道发送消息](../api/channel-post-chatmessage.md) |
+|[在频道中创建 chatMessage](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。 |
 
 ## <a name="properties"></a>属性
 

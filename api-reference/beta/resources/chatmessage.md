@@ -4,18 +4,19 @@ description: 表示渠道或聊天实体内的单个聊天消息。 该消息可
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0639fd0b5317abd4814123b500ec0548f78d05ac
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: ea21d57134643c83406f449ee7cdad192afc0326
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34311159"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709409"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
+表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。
+该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 
 ## <a name="methods"></a>方法
 
@@ -25,20 +26,20 @@ ms.locfileid: "34311159"
 |[获取渠道消息](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | 获取渠道中的单个根消息。|
 |[列出消息回复](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) 集合| 获取渠道中的所有消息回复列表。|
 |[获取消息回复](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| 获取渠道中的单个消息回复。|
-|[在渠道中发送消息](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| 在渠道中创建新的顶级消息。|
-|[在渠道中回复消息](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| 在渠道中回复现有消息。|
+|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatmessage](chatmessage.md)| 在渠道中创建新的顶级消息。|
+|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| 在渠道中回复现有消息。|
 |[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 |
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
 
-
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。 消息的唯一 ID。|
-|replyToId| string | 线程的父级消息/根消息的 Id。 （仅适用于频道中的消息，不适用于聊天） |
+|replyToId| string | 只读。 线程的父级消息/根消息的 Id。 （仅适用于频道中的消息，不适用于聊天） |
 |from|[identitySet](identityset.md)| 只读。 消息发送者的详细信息。|
-|etag| string | 消息的版本号。 |
-|messageType|String|消息类型，当前支持的值包括：message、chatEvent、Typing。|
+|etag| string | 只读。 消息的版本号。 |
+|messageType|chatMessageType|邮件类型。 可取值包括：`message`。|
 |createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳。|
 |deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳，如果未删除则为 null。 |
@@ -47,10 +48,10 @@ ms.locfileid: "34311159"
 |摘要|string| 可用于推送通知的消息摘要文本和摘要视图或回退视图。 仅适用于频道消息，不适用于聊天消息。 |
 |附件|[chatMessageAttachment](chatmessageattachment.md) 集合 |附加文件。 附件目前是只读的 – 不支持发送附件。 |
 |提及|[chatMessageMention](chatmessagemention.md) 集合| 消息中提到的实体列表。 当前支持用户、机器人、团队、渠道。|
-|重要性| string | 消息重要性包括：正常、高。|
+|importance| chatMessageImportance | 邮件的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此消息的反应（例如点赞）。|
 |区域设置|string|客户端设置的消息区域设置。|
-|webUrl|string|导航至 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 

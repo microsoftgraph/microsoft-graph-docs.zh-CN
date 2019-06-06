@@ -4,12 +4,12 @@ description: 检索用户对象列表。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7326796ec45e0cb628be954e3f82f317096fb51
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fb519c1fa613b420581576099687096ec6aaa6f0
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601517"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709437"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -33,13 +33,13 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_）。 
+默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname** 和 **userPrincipalName**）。 
 
-若要返回其他属性，必须使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
+若要返回其他属性，请使用 OData `$select` 查询参数指定所需的一组 [user](../resources/user.md) 属性。 例如，若要返回 **displayName**、**givenName** 和 **postalCode**，请将以下项添加到查询 `$select=displayName,givenName,postalCode`。
 
-> 注意：某些属性无法在用户集合中返回。以下属性仅在[检索单个用户 ](./user-get.md) 时受支持：_aboutMe、birthday、hireDate、interests、mySite、pastProjects、preferredName、responsibilities、schools、skills、mailboxSettings_
+某些属性无法在用户集合中返回。 以下属性仅在[检索单个用户](./user-get.md)时受支持：**aboutMe**、**birthday**、**hireDate**、**interests**、**mySite**、**pastProjects**、**preferredName**、**responsibilities**、**schools**、**skills**、**mailboxSettings**。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,13 +54,13 @@ GET /users
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象集合。 如果返回大的用户集，则可以[在应用中使用分页](/graph/paging)。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-standard-users-request"></a>示例 1：标准用户请求
 
-默认情况下，仅返回一组有限的属性（_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_ 此示例演示了默认请求和响应。 
+默认情况下，仅返回一组有限的属性（**businessPhones**、**displayName**、**givenName**、**id**、**jobTitle**、**mail**、**mobilePhone**、**officeLocation**、**preferredLanguage**、**surname**、**userPrincipalName**）。 此示例展示了默认请求和响应。 
 
 ##### <a name="request"></a>请求
 
@@ -118,7 +118,7 @@ Content-length: 608
 
 ### <a name="example-2-users-request-using-select"></a>示例 2：使用 $select 的用户请求
 
-如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 _displayName_、_givenName_、和 _postalCode_，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`
+如果需要其他属性集，可以使用 OData `$select` 查询参数。 例如，若要返回 **displayName**、**givenName**、和 **postalCode**，则需要将以下项添加到查询 `$select=displayName,givenName,postalCode`。
 
 ##### <a name="request"></a>请求
 

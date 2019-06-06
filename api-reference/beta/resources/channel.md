@@ -4,12 +4,12 @@ description: '频道是的团队中的 chatMessages 集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b77afb1560ed451683838a617123db013b71cd6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b284cdfef42e9eb3319fc51c17febcf02eba1a1
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338759"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709430"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -28,7 +28,8 @@ ms.locfileid: "33338759"
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
-|[发送渠道消息](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [向渠道发送消息](../api/channel-post-chatmessage.md) |
+|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[列出选项卡](../api/teamstab-list.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[获取选项卡](../api/teamstab-get.md) | [teamsTab](teamstab.md) | 读取固定到频道的选项卡。|
 |[添加选项卡](../api/teamstab-add.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
