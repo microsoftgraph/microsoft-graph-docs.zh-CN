@@ -2,12 +2,12 @@
 title: 列出 businessFlowTemplates
 description: 在 "Azure AD access 评论" 功能中, 列出所有 businessFlowTemplate 对象。
 localization_priority: Normal
-ms.openlocfilehash: 3d26784caf0eb121350c7575934c4aa9dae61789
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1cb95b9c5eda1f561aaffcc936b2c95f8a21c980
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322346"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750064"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
@@ -21,7 +21,7 @@ ms.locfileid: "33322346"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview |
+|应用程序                            | AccessReview.Read.All |
 
 登录用户还必须位于允许他们阅读访问审核的目录角色中。
 
@@ -46,10 +46,10 @@ GET /businessFlowTemplates
 
 <!-- {
   "blockType": "request",
-  "name": "get_businesFlowTemplate"
+  "name": "get_businessFlowTemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/businesFlowTemplates
+GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 
 ##### <a name="response"></a>响应

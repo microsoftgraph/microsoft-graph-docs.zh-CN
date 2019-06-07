@@ -4,12 +4,12 @@ description: 添加到 educationUser 的其他信息，该属性将在用户的 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9927c2fbb34dea97258c4c1ef407d60f14e2fe50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a7ea110437bdc553448c78b6ad16541223e7d0e9
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334107"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750127"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "33334107"
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生的出生日期。|
 |externalId|String| 源系统中学生的 ID。|
-|gender|educationGender| 可取值为：`female`、`male`、`other`、`unkownFutureValue`。|
+|gender|educationGender| 可取值为：`female`、`male`、`other`。|
 |grade|String|学生的当前年级。|
 |graduationYear|String| 学生从学校毕业的年份。|
 |studentNumber|String| 学生编号。|

@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 763491bf5359eda58a1802b172d269151a647f59
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.openlocfilehash: 35b06f195b7d21b5eb3228f909823b085f44e5ff
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34683571"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709451"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -26,6 +26,14 @@ ms.locfileid: "34683571"
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) 导航属性 |
 
 ## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta        | 向 [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) 枚举添加了 **urgent** 属性。|
+| 添加项        | Beta        | 向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实体添加了 **hostedContents** 导航属性。|
+| 添加项        | Beta        | 添加了 **chatMessageHostedContent** 实体来表示由 Microsoft Teams 托管的与 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 关联的内容。 |
 
 ### <a name="reports-apis"></a>报表 API
 
@@ -1015,7 +1023,7 @@ ms.locfileid: "34683571"
 | 添加项 | Beta | 向 [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta) 添加了 **progress** 属性，以允许客户端监视同步作业的进度。|
 
 ### <a name="webhooks"></a>Webhook
-| 更改类型 | Version | 说明                              |
+| 更改类型 | 版本 | 说明                              |
 |:------------|:--------|:-----------------------------------------|
 | 重大更改 | Beta 和 v1.0 | 将驱动器根项的 [Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) [最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)缩短至 3 天。 |
 

@@ -4,12 +4,12 @@ description: 检索工作分配对象的列表。 允许教师查看该类的所
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 71024bec2b359725bda401f20a265cabbfe4ed53
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 58ce5e911806e6e4c6e19ce3e419bd9b02c1a990
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324750"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750008"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -18,42 +18,56 @@ ms.locfileid: "33324750"
 检索工作分配对象的列表。 允许教师查看该类的所有工作分配对象。 学生只能查看分配给他们的工作分配。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments   |
-|委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+| 权限类型                        | 权限（从最低特权到最高特权）                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
+| 应用程序                            | 不支持。                                                                                         |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+
+| 标头        | 值                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象集合。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
+
 下面展示了示例请求。
+
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/education/classes/<id>/assignments
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
+
 ##### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
@@ -64,6 +78,7 @@ GET https://graph.microsoft.com/beta/education/classes/<id>/assignments
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

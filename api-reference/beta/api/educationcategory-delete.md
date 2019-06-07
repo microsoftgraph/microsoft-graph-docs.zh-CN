@@ -4,12 +4,12 @@ description: 删除现有类别。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7e7f9d0682c1a279d448e82addb1434f93f2e0ec
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7cb8704d0ab48ae60b31675b9df75f3ad5070c1d
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587405"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750057"
 ---
 # <a name="delete-educationcategory"></a>删除 educationCategory
 
@@ -18,35 +18,41 @@ ms.locfileid: "33587405"
 删除现有类别。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）| EduAssignments、ReadWriteBasic、EduAssignments |
-|委派（个人 Microsoft 帐户） |   不支持。 |
-|应用程序 | 不支持。  | 
+| 权限类型                        | 权限（从最低特权到最高特权）             |
+| :------------------------------------- | :------------------------------------------------------ |
+| 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
+| 委派（个人 Microsoft 帐户） | 不支持。                                          |
+| 应用程序                            | 不支持。                                          |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/<id>/assignmentCategories/<id>
+DELETE /education/classes/{id}/assignmentCategories/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+
+| 标头        | 值                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
-
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 <!-- {
@@ -57,9 +63,10 @@ DELETE /education/classes/<id>/assignmentCategories/<id>
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCategories/19002
 ```
-### <a name="response"></a>响应
-下面是一个响应示例。 
 
+### <a name="response"></a>响应
+
+下面是一个响应示例。 
 
 <!-- {
   "blockType": "response",
@@ -69,11 +76,15 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCatego
 ```http
 HTTP/1.1 204 No Content
 ```
+
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
 
 ---

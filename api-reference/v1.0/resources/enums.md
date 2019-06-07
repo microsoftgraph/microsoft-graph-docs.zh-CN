@@ -2,12 +2,12 @@
 title: 枚举值
 description: Microsoft Graph 枚举值。
 localization_priority: Normal
-ms.openlocfilehash: 80cd2055bb33bcafa84050f669ab9a4c8e731d55
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4225ffa152672cd4fd12d231ea9837f11a75b0fa
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599973"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750183"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -16,7 +16,7 @@ ms.locfileid: "33599973"
 |母语|0|用户的父级。|
 |彼此|1| 用户的相对路径。|
 |aide|双面| 用户的 aide。|
-|dr。|第三章| 用户的医生。|
+|dr.|第三章| 用户的医生。|
 |监护|4| 用户的监护人。|
 |该子|5| 用户的子级。|
 |相互|型| 与用户的未指定关系。|
@@ -139,9 +139,6 @@ ms.locfileid: "33599973"
 |:---------------------
 | student
 | teacher
-| 无
-| 向 unknownfuturevalue
-
 
 ### <a name="meetingmessagetype-values"></a>meetingMessageType 值
 
@@ -426,12 +423,12 @@ ms.locfileid: "33599973"
 | preset8  | utf-8       
 | preset9  | 第       
 | preset10 | 10       
-| preset11 | 11       
-| preset12 | 12       
+| preset11 | 11x17      
+| preset12 | 12      
 | preset13 | 13      
-| preset14 | 14       
-| preset15 | 15       
-| preset16 | 16       
+| preset14 | 日      
+| preset15 | 个      
+| preset16 | 位      
 | preset17 | ×      
 | preset18 | 18      
 | preset19 | 合      
@@ -545,7 +542,7 @@ ms.locfileid: "33599973"
 |无|utf-8| REG_NONE 注册表值类型。|
 |qword|第| REG_QWORD 注册表值类型。|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN 注册表值类型。|
-|sz|11 | REG_SZ 注册表值类型。|
+|sz|11x17| REG_SZ 注册表值类型。|
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
 

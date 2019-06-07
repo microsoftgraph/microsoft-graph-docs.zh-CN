@@ -4,12 +4,12 @@ description: 表示要分配给用户帐户的许可证信息。 创建新用户
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ae9b89d9fe921967b50b8e290ce29026dbc35ec1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5d1aaf2784434525e2fa750ad78966d6cbf15bc8
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334049"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750134"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "33334049"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **appliesTo** | string | 要分配给许可证的用户角色类型。 可取值为：`student`、`teacher`。         |
+| **appliesTo** | string | 要分配给许可证的用户角色类型。 可取值为：`student`、`teacher`、`faculty`。         |
 | **skuIds** | 字符串集合 |  表示要分配的许可证的 SKU 标识符。        |
 
 ## <a name="json-representation"></a>JSON 表示形式
