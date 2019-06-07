@@ -7012,6 +7012,8 @@ items:
                 href: api/educationschool-post-users.md
               - name: 删除用户
                 href: api/educationschool-delete-users.md
+              - name: 获取 Delta
+                href: api/educationschool-delta.md
           - name: 课程
             href: resources/educationclass.md
             items:
@@ -7047,6 +7049,8 @@ items:
                 href: api/educationclass-list-categories.md
               - name: 创建类别
                 href: api/educationclass-post-category.md
+              - name: 获取 Delta
+                href: api/educationclass-delta.md
           - name: 用户
             href: resources/educationuser.md
             items:
@@ -7058,6 +7062,8 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
+              - name: 获取 Delta
+                href: api/educationuser-delta.md
           - name: 作业
             href: resources/educationassignment.md
             items:
@@ -7943,7 +7949,7 @@ items:
                   - name: 托管的资源
                     href: resources/governanceresource.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/governanceresource-list.md
                       - name: 获取
                         href: api/governanceresource-get.md
@@ -7952,7 +7958,7 @@ items:
                   - name: 角色定义
                     href: resources/governanceroledefinition.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/governanceroledefinition-list.md
                       - name: 获取
                         href: api/governanceroledefinition-get.md
