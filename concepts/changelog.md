@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 35b06f195b7d21b5eb3228f909823b085f44e5ff
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: cb0dc8b445ea4a02def6e9a6149026c6edb03990
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709451"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750211"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -27,6 +27,15 @@ ms.locfileid: "34709451"
 
 ## <a name="may-2019"></a>2019 年 5 月
 
+### <a name="education-apis"></a>教育版 API
+| 更改类型 | 版本 | 说明                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 添加    | beta    | 已将 taughtClasses 添加到 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)。                                                                  |
+| 添加项    | beta    | 已[将](/graph/api/resources/educationCourse?view=graph-rest-beta) educationCourse [添加到 educationClass](/graph/api/resources/educationClass?view=graph-rest-beta)。 |
+| 添加项    | beta    | 向 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)添加了[delta](/graph/delta-query-overview)支持。                                   |
+| 添加项    | beta    | 已向 [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta) 添加 [delta](/graph/delta-query-overview)。                                       |
+| 添加项    | beta    | 已向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加 [delta](/graph/delta-query-overview)。                                         |
+| 添加项    | beta    | 已向[educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values)枚举添加`faculty`选项。                              |
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
 | **更改类型** | **版本** | **说明**                  |

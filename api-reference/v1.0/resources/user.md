@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3d102e28bc04b6a2c2f8635e28f94e591c003bf5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf6bb70c43f65909dd0b8bed6f75afe985529e80
+ms.sourcegitcommit: 5cdd6a9dba70b54923ec3520ed9daad5f19a8dac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456916"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34730363"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -60,6 +60,7 @@ ms.locfileid: "32456916"
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| 返回用户所属的所有组和目录角色。检查是可传递的。 |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|返回指定开始时间和结束时间范围内的日历提醒列表。|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| 无 |通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。|
 |[delta](../api/user-delta.md)|用户集合| 获取用户的增量更改。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -126,6 +127,7 @@ ms.locfileid: "32456916"
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 **true**，否则为 **false**。 如果未设置，则将其视为 **true**。 对于通过邀请管理器邀请的用户，此属性将设置为 **false**。|
 |skills|String collection|供用户枚举其技能的列表。|
+|signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 此为只读属性。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 |state|String|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。支持 $filter。|
@@ -422,6 +424,7 @@ ms.locfileid: "32456916"
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

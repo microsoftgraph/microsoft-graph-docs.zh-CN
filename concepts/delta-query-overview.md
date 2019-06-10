@@ -3,12 +3,12 @@ title: 使用增量查询跟踪 Microsoft Graph 数据更改
 description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c040ad61902dd623ffc2010716e6a843c4d1a38
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526193"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750190"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -75,21 +75,24 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 目前，以下资源支持 delta 查询。
 
-| **资源集合** | **API** |
-|:------ | :------ |
-| 应用（预览版） | [application](/graph/api/resources/application?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/application-delta?view=graph-rest-beta) 函数 |
-| 目录对象 | [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) 函数 |
-| 目录角色 | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 资源的 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数 |
-| 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event?view=graph-rest-1.0)资源的 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数 |
-| 组 | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数 |
-| 邮件文件夹 | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数 |
-| 文件夹中的邮件 | [邮件](/graph/api/resources/message?view=graph-rest-1.0)资源的 [delta](/graph/api/message-delta?view=graph-rest-1.0) 函数 |
-| 私人联系人文件夹 | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数 |
-| 文件夹中的私人联系人 | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数 |
-| 服务主体（预览版） | [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) 函数 |
-| 用户 | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数 |
-| 驱动器项目\* | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) 函数 |
-| Planner 项目\*\* | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) 资源所有段的 [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) 函数（预览版） |
+| **资源集合**                                        | **API**                                                                                                                                                                                |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 应用（预览版）                                         | [application](/graph/api/resources/application?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/application-delta?view=graph-rest-beta) 函数                     |
+| Classes（预览版）                                              | [Class](/graph/api/resources/educationclass?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/educationclass-delta?view=graph-rest-beta) 函数                     |
+| 目录对象 （预览版）。                                    | [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) 函数        |
+| 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 资源的 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数                           |
+| 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) 函数                                       |
+| 教育用户（预览版）                                      | [教育用户](/graph/api/resources/educationuser?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/educationuser-delta?view=graph-rest-beta) 函数             |
+| 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event?view=graph-rest-1.0)资源的 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数                                                   |
+| 组                                                         | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数                                                   |
+| 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数                                    |
+| 文件夹中的邮件                                           | [邮件](/graph/api/resources/message?view=graph-rest-1.0)资源的 [delta](/graph/api/message-delta?view=graph-rest-1.0) 函数                                             |
+| 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数                           |
+| 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数                                             |
+| 学校（预览版）                                              | [学校](/graph/api/resources/educationschool?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/educationschool-delta?view=graph-rest-beta) 函数                  |
+| 服务主体（预览版）                                   | [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) 函数      |
+| 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数                                                      |
+| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) 资源所有段的 [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) 函数（预览版） |
 
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。 为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。 若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta?view=graph-rest-1.0)。
 

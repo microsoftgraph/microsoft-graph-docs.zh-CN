@@ -3,18 +3,19 @@ title: 使用查询参数自定义响应
 description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1962ee481d89ccef14d436edb41195a9b5b2529a
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564167"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750163"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
 Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中返回的数据量。 对准确查询参数的支持因 API 操作不同而不同，并且可能会在 v1.0 和数据终结点之间不同，具体取决于 API。 
 
-> **注释：** 在 v1.0 和 beta 终结点上，`$` 前缀为可选。 例如，可使用 `filter` 来代替 `$filter`。
+> [!TIP] 
+> 在 beta 终结点上，`$` 前缀是可选的。 例如，可使用 `filter` 来代替 `$filter`。 在 v1 终结点上, `$`前缀仅对 API 的一个子集是可选的。 为简单起见, 如果使用 v1 终结点, 请始终包含`$`。
 
 查询参数可以是 OData 系统查询选项，也可以是其他查询参数。 
 
@@ -245,12 +246,14 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 若要详细了解 可搜索的电子邮件属性、KQL 语法、受支持的运算符和搜索技巧，请参阅以下文章：
 
-- [Exchange 中的可搜索属性](https://docs.microsoft.com/zh-CN/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
-
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [Exchange 中的可搜索属性](https://docs.microsoft.com/zh-CN/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
 - 
-  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+  [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+- 
+  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/zh-CN/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 
