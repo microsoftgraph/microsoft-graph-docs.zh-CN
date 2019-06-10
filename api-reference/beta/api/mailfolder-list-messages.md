@@ -4,18 +4,18 @@ description: 列出登录用户的邮箱中的所有邮件, 或邮箱或驱动�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2afbf190402081587de1e6ae7373ad84c8f96183
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2e5ec3bd9518fe47840c608ee861056967ec964b
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598346"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812927"
 ---
 # <a name="list-messages"></a>列出邮件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出登录用户的邮箱中的所有邮件, 或邮箱或驱动器中指定文件夹中的邮件。
+列出指定用户的邮箱中的所有邮件, 或邮箱中指定文件夹中的邮件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -135,7 +135,7 @@ Content-length: 317
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_messages-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

@@ -4,12 +4,12 @@ description: 检索指定团队的属性和关系。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47a76715d3638937f484c5660306ecec163b3a88
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4a82949f717fd815aadb6423a7885b3ebe1da769
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330144"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812731"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -97,6 +97,9 @@ Content-length: 401
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```

@@ -1,21 +1,31 @@
 ---
 title: mailSearchFolder 资源类型
-description: mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的搜索条件匹配的所有电子邮件项目。 mailSearchFolder 继承自 mailFolder。
+description: MailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的搜索条件匹配的所有电子邮件项目。 mailSearchFolder 继承自 mailFolder。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 15f334f2910c962c367242965bd2104c8f3edb79
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7f522d6d947d190232d510662dfe2c6a70001fb2
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342743"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812920"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的搜索条件匹配的所有电子邮件项目。 mailSearchFolder 继承自[mailFolder](mailfolder.md)。
+**MailSearchFolder**是用户邮箱中的虚拟文件夹, 其中包含与指定的搜索条件匹配的所有电子邮件项目。 **mailSearchFolder**继承自[mailFolder](mailfolder.md)。 可以在用户的 Exchange Online 邮箱中的任何文件夹中创建搜索文件夹。 但是, 在 Outlook 中显示的搜索文件夹、Outlook for web 或 Outlook Live 中, 必须在**WellKnownFolderName**文件夹中创建该文件夹。 
+
+## <a name="search-folder-lifecycle"></a>搜索文件夹生命周期
+
+由于以下原因之一, Exchange Online 可以删除你的应用程序创建的搜索文件夹:
+
+1.  搜索文件夹在45天后过期 (不使用)。 
+2.  可以为每个源文件夹创建的搜索文件夹的数量存在限制。 当此限制被突破时, 将删除较旧的搜索文件夹, 以便为新的搜索文件夹。 
+
+删除搜索文件夹时, 您的应用程序应创建一个新的 "搜索文件夹" 资源并使用相同的。
+
 
 ## <a name="methods"></a>方法
 
@@ -26,15 +36,15 @@ mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的�
 | [获取搜索文件夹](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | 获取指定的搜索文件夹。 |
 | [更新搜索文件夹](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | 更新指定的搜索文件夹。 |
 | [删除搜索文件夹](../api/mailfolder-delete.md) | 无 | 删除指定的搜索文件夹。 |
-| [列出搜索文件夹中的所有邮件](../api/mailfolder-list-messages.md) | [邮件](message.md)集合 | 列出指定的搜索文件夹中的所有邮件。 |
+| [列出搜索文件夹中的所有邮件](../api/mailfolder-list-messages.md) | [message](message.md) 集合 | 列出指定的搜索文件夹中的所有邮件。 |
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| isSupported | Boolean | 指示是否可使用 REST api 编辑搜索文件夹。 |
-| includeNestedFolders | Boolean | 指示应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIDs | String 集合 | 应挖掘的邮箱文件夹。 |
+| isSupported | Boolean | 指示是否可使用 REST Api 编辑搜索文件夹。 |
+| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索以在**sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false`表示仅对**sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -50,7 +60,7 @@ mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的�
 {
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": ["string"],
+  "sourceFolderIds": ["string"],
   "filterQuery": "string"
 }
 

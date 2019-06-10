@@ -4,12 +4,12 @@ description: 介绍 Microsoft Graph API (REST) 的组资源 (实体) 的 delete 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 686c8f55a1b617c3e26f7fbcf6e789fe6ddee790
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ee4001c442c73564b35ee7dd5d8cd1716f29dcde
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593218"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812570"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -25,7 +25,7 @@ ms.locfileid: "33593218"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_group-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

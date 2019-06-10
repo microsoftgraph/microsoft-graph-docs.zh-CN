@@ -4,12 +4,12 @@ description: 检索邮件文件夹对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1934b9b124747e16a7c086a697713ed2f0a6116a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 310456f05e0a853a9a0ec78d83f4fdbdca51e236
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598547"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812857"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -69,6 +69,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
 
@@ -105,7 +106,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailfolder-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
@@ -123,6 +124,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailSearchfolder"
 }-->
 
@@ -157,14 +159,14 @@ Content-type: application/json
   "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": [
+  "sourceFolderIds": [
     "AAMkAGVmMDEzM"
   ],
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailSearchfolder-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

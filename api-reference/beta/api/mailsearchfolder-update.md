@@ -4,12 +4,12 @@ description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: dac2bbb95da7d287ce00503ac4b79cdf52a85968
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 6b5dee2fae2da89cd9fdff43465f1e57e3f57407
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536020"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812892"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -40,33 +40,33 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
 | includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[mailFolder](../resources/mailfolder.md)对象。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面展示了示例请求。
+下面是一个更新搜索文件夹的**filterQuery**属性的示例请求。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "update_mailsearchfolder"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
-  "filterQuery": "contains(subject, 'Analytics')))"
+  "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
 
@@ -81,7 +81,6 @@ Content-length: 159
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.type": "#microsoft.graph.mailSearchFolder",
@@ -94,7 +93,7 @@ Content-length: 179
   "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": [
+  "sourceFolderIds": [
       "AAMkAGVmMDEzMi"
   ],
   "filterQuery": "contains(subject, 'Analytics')"

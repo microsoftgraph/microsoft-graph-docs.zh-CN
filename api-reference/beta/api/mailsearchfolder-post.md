@@ -4,18 +4,18 @@ description: 使用此 API 在指定用户的邮箱中创建新的 mailSearchFol
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2fc7a51675b0bfc559b5ab5c9f7a857c84c43174
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 05959fe291116b1e16d0108c257ab73f38805d95
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536366"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812906"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在指定用户的邮箱中创建新的[mailSearchFolder](../resources/mailsearchfolder.md) 。
+在指定用户的邮箱中创建新的[mailSearchFolder](../resources/mailsearchfolder.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -53,35 +53,36 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | 要创建的文件夹的类型。 设置为 "mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
-| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索以在**sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false`表示仅对**sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[mailSearchFolder](../resources/mailsearchfolder.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[mailSearchFolder](../resources/mailsearchfolder.md)对象。
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。
+以下是请求的示例-它将创建包含主题中的字符串 "每周摘要" 的邮件的搜索文件夹。 搜索文件夹在应用指定的筛选器查询的同一文件夹下。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AQMkADYAAAIBDAAAAA=="],
   "name": "create_mailsearchfolder"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childfolders
+POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
 Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
-  "displayName": "Get MyAnalytics",
+  "displayName": "Weekly digests",
   "includeNestedFolders": true,
-  "sourceFolderIDs": ["AAMkAGVmMDEzM"],
-  "filterQuery": "contains(subject, 'MyAnalytics')"
+  "sourceFolderIds": ["AQMkADYAAAIBDAAAAA=="],
+  "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
 
@@ -97,25 +98,25 @@ Content-length: 159
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
-  "@odata.type": "#microsoft.graph.mailSearchFolder",
-  "id": "AAMkAGVmMDEzMx",
-  "displayName": "Get MyAnalytics",
-  "parentFolderId": "AAMkAGVmMDEzMy",
-  "childFolderCount": 0,
-  "unreadItemCount": 0,
-  "totalItemCount": 13,
-  "wellKnownName": null,
-  "isSupported": true,
-  "includeNestedFolders": true,
-  "sourceFolderIDs": [
-    "AAMkAGVmMDEzMi"
-  ],
-  "filterQuery": "contains(subject, 'MyAnalytics')"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders('AQMkADYAAAIBDAAAAA%3D%3D')/childFolders/$entity",
+    "@odata.type": "#microsoft.graph.mailSearchFolder",
+    "id": "AAMkADYfRAAAZg1yTAAA=",
+    "displayName": "Weekly digests",
+    "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+    "childFolderCount": 0,
+    "unreadItemCount": 0,
+    "totalItemCount": 0,
+    "wellKnownName": null,
+    "isSupported": true,
+    "includeNestedFolders": true,
+    "sourceFolderIds": [
+        "AQMkADYAAAIBDAAAAA=="
+    ],
+    "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码

@@ -4,12 +4,12 @@ description: 从组新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c47b3e7568c09c3b7f5e3debaec2eb74e074d6e7
-ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
+ms.openlocfilehash: 685f727a6d70f691c23e28f82ee7642d0f3a7c70
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2019
-ms.locfileid: "34669657"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812983"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 
@@ -83,6 +83,9 @@ Content-type: application/json
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
@@ -127,6 +130,9 @@ Content-length: 401
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
