@@ -4,16 +4,16 @@ description: 删除指定的 mailFolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1effb7d8e0ba6a27ddbef979f85c6e1e81adcecd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c1cd8e05cc1caa428f36ccdc56f2247f7e4e15a2
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612622"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812689"
 ---
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
-删除指定的[mailFolder](../resources/mailfolder.md)。
+删除指定的[mailFolder](../resources/mailfolder.md)。 文件夹可以是[mailSearchFolder](../resources/mailsearchfolder.md)。
 
 可以按文件夹 ID 或[已知文件夹名称](../resources/mailfolder.md)指定邮件文件夹 (如果存在)。 
 
@@ -66,7 +66,7 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_mailfolder-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

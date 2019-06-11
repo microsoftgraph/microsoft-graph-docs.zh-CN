@@ -4,12 +4,12 @@ description: 获取新创建、更新或删除的组, 包括组成员身份更�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 139bf7d1720364c0092b19e031c26078b08fc472
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 15a8bcb1193f6085748d378d3ff604edf89b3860
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614698"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812808"
 ---
 # <a name="group-delta"></a>group: delta
 获取新创建、更新或删除的组, 包括组成员身份更改, 而无需对整个组集合执行完全读取。 有关详细信息, 请参阅[Using Delta Query](/graph/delta-query-overview) 。
@@ -20,9 +20,9 @@ ms.locfileid: "33614698"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Group. All、Directory.accessasuser.all、Group、all、all、all、all 和 all。 All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All |
+|应用程序 | Group. All、Read. all、Group、All、All、All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -160,7 +160,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
@@ -210,7 +210,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
