@@ -4,12 +4,12 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 417bed70dd9745a88129e40f11ac1e0f97ddafda
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f9eb1bc357368aa2fd056927da63b63e9d7dede2
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343395"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813025"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -37,13 +37,17 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 |[Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|Office 365 <ul><li> [默认](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/zh-CN/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-simulations)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) *| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|Office 365 <ul><li> 
+  [默认](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>
+  [Cloud App Security](https://docs.microsoft.com/zh-CN/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure 信息保护](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Palo Alto 网络](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **注意：** 新的提供商将会不断加入 Microsoft Graph 安全生态系统。 要请求新的提供商或从现有提供商处获取更长时间的支持，请[在 Microsoft Graph 安全性 GitHub 存储库中提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new)。
+
+\* Azure 高级威胁防护警报通过 Microsoft Cloud App Security 集成提供。 这意味着只有在已加入[统一 SecOps 预览计划](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)并已将 Azure 高级威胁防护连接到 Microsoft Cloud App Security 的情况下，才能获得 Azure 高级威胁防护警报。
 
 ## <a name="threat-indicators-preview"></a>威胁指示器（预览版）
 
@@ -64,7 +68,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 
   > **注意：** 安全操作当前仅支持应用程序权限。
 
-## <a name="secure-score-preview"></a>安全功能分数（预览版）
+## <a name="secure-score"></a>安全功能分数
 
 [Microsoft 安全功能分数](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)是一款安全分析解决方案，可让你了解安全项目组合以及如何改进这些组合。 只需一个分数，你就可以更好地了解已采取了哪些措施来降低 Microsoft 解决方案中的风险。 此外，你还可以将你的分数与其他组织比较，以了解你的分数趋势。 Microsoft Graph 安全性 [secureScore](securescores.md) 和 [secureScoreControlProfile](securescorecontrolprofiles.md) 实体可以帮助你实现组织的安全性与生产力需求之间的平衡，同时支持相应的安全功能混合。 你也可以计划采取安全功能之后的分数。
 
@@ -86,9 +90,9 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 |提交 TI 指示器|[提交 tiIndicator](../api/tiindicator-submittiindicators.md)（预览）| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
 |更新 TI 指示器|[更新 tiIndicator](../api/tiindicator-update.md)（预览） </br>[更新多个 tiIndicator](../api/tiindicator-updatetiindicators.md)（预览）| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |删除 TI 指示器|[删除 tiIndicator](../api/tiindicator-delete.md)（预览） </br>[删除多个 tiIndicator](../api/tiindicator-deletetiindicators.md)（预览） </br>[按外部 ID 删除 tiIndicator](../api/tiindicator-deletetiindicatorsbyexternalid.md)（预览）| DELETE </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|列出安全功能分数|[List secureScores](../api/securescores-list.md)（预览版）|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|列出安全功能控制配置文件|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)（预览版）|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|更新安全功能控制配置文件|[更新 secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md)（预览）|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+|列出安全功能分数|[列出 secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|列出安全功能分数控制配置文件|[列出 secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|更新安全功能分数控制配置文件|[更新 secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 
 你可使用 Microsoft Graph [Webhook](/graph/webhooks) 来订阅和接收 Microsoft Graph 安全性 API 实体更新的相关通知。
 
@@ -96,7 +100,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 
 Microsoft Graph 安全性 API 可以为你提供使用 Microsoft 和合作伙伴的不同安全解决方案的新方式。 请按照以下步骤开始操作：
 
-- 深入了解[警报](alert.md)、[tiIndicator](tiindicator.md)（预览版）、[securityAction](securityaction.md)（预览版）、[secureScore](securescores.md)（预览版）和 [secureScoreControlProfiles](securescorecontrolprofiles.md)（预览版）。
+- 深入了解[警报](alert.md)、[tiIndicator](tiindicator.md)（预览版）、[securityAction](securityaction.md)（预览版）、[secureScore](securescores.md) 和 [secureScoreControlProfiles](securescorecontrolprofiles.md)。
 - 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。 在“**示例查询**”中，选择“**显示更多示例**”并将“安全类别”设为“**开启**”。
 - 请尝试[订阅和接收实体变更通知](/graph/webhooks)。
 

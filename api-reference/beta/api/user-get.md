@@ -4,12 +4,12 @@ description: 检索用户对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c00349e0de78c83778b972dd36e7d24c7d582db1
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 3bec928759dde2d1b29cb761316b85ce594eb88f
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637344"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812948"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -47,6 +47,9 @@ GET /users/{id | userPrincipalName}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。
+
+当成功处理请求时，此方法会返回 `202 Accepted`，但服务器需要更多时间来完成相关的后台操作。
+
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

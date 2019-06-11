@@ -4,12 +4,12 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bab8e6ead9a88977fe84034ef1c9694d2948c498
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709388"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812829"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -57,6 +57,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |isArchived|Boolean|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |用于让他人配置团队可发现性的设置。|
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
 
 ## <a name="relationships"></a>关系
@@ -83,11 +84,12 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",

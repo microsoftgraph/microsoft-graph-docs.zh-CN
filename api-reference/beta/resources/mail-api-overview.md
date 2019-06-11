@@ -4,12 +4,12 @@ description: Microsoft Graph 可让应用程序获得对个人或组织帐户中
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2c81fc7f7e91a4a568445be2e96b01d545b5be22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5baf5c6c9b03c93aaa62df9a8f0690d4afe7f437
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345129"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812955"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -47,6 +47,7 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
 | 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置[邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
+| 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
 | 获取邮件或邮件附件的 MIME 内容（预览版） | [邮件](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |
 | 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [attachment 的方法](../resources/attachment.md#methods) |
 | 获取用户的语言和时区选择 | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)、 <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
