@@ -4,12 +4,12 @@ description: '创建请求正文中指定的新组。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0a525ffffe62685e863572c0e81c808b2c6e8a02
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 2416835da76345a09370169484a83bb6ac713f90
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537119"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812815"
 ---
 # <a name="create-group"></a>创建组
 创建请求正文中指定的新组。 你可以创建以下类型的组：
@@ -28,9 +28,9 @@ ms.locfileid: "34537119"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

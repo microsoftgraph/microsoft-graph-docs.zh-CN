@@ -4,12 +4,12 @@ description: 更新 group 对象的属性。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: adb66a65fa3c8612952b990e17922055d4d0984d
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: ebbe994eb763cf859dc567f8670845adf33c0d17
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036365"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812759"
 ---
 # <a name="update-group"></a>更新组
 
@@ -21,9 +21,9 @@ ms.locfileid: "34036365"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
