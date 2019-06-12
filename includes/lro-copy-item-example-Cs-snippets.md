@@ -1,24 +1,26 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 21bc7d8d6c3eef9eaa4843f902a7728f0465d8b7
+ms.openlocfilehash: bfda972ad2a967a1a147c5aba1cff515ccf32fa9
 ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2019
-ms.locfileid: "34843365"
+ms.locfileid: "34843736"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookRangeFont = new WorkbookRangeFont
+var parentReference = new ItemReference
 {
-    Italic = true,
-    Size = 26
+    Path = "/drive/root:/Documents"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"].Range('$B$1').Format.Font
+var name = "Copy of LargeFolder1";
+
+await graphClient.Me.Drive.Items["{folder-item-id}"]
+    .Copy(name,parentReference)
     .Request()
-    .UpdateAsync(workbookRangeFont);
+    .PostAsync();
 
 ```
