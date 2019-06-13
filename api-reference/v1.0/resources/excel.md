@@ -1,19 +1,19 @@
 ---
 title: 在 Microsoft Graph 中使用 Excel
-description: 可以使用 Microsoft Graph，让 Web 和移动应用都能读取和修改在 OneDrive for Business、SharePoint 网站或组驱动器中存储的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含其他所有 Excel 资源。可以确定文件在 URL 中的位置，从而使用驱动器 API 访问工作簿。例如：
+description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive for Business、SharePoint 网站或组驱动器中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 你可以通过标识文件在该 URL 中的位置，借助 Drive API 访问工作簿。 例如：
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 0010a7244d9ba6e629849f55dfc793bf6b875b38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917683"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575798"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
-可以使用 Microsoft Graph，让 Web 和移动应用都能读取和修改在 OneDrive for Business、SharePoint 网站或组驱动器中存储的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含其他所有 Excel 资源。可以确定文件在 URL 中的位置，从而使用[驱动器 API](drive.md) 访问工作簿。例如：
+你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive for Business、SharePoint 网站或组驱动器中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 可以通过识别文件在该 URL 中的位置，借助 [驱动器 API](drive.md) 访问工作簿。 例如：
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
@@ -22,7 +22,7 @@ ms.locfileid: "27917683"
 返回属于工作簿的工作表对象的集合。    
 
 
-Excel REST API 仅支持 Office Open XML 文件格式的工作簿。不支持 `.xls` 扩展工作簿。 
+Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持扩展名为 `.xls` 的工作簿。 
 
 **注意**：仍不支持在 OneDrive 使用者平台中存储的工作簿。 目前，Excel REST API 仅支持在商业平台中存储的文件。 
 
@@ -150,7 +150,8 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -177,7 +178,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -192,7 +194,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-**注意：也可以使用 ID 检索工作表。但是，目前 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和“}”字符。示例：若要获取 ID 为 `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` 的工作表，请将路径中的 ID 进行 URL 编码，编码为 `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。 
+**注意：也可以使用 ID 检索工作表。 但是，目前 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和“}”字符。 示例：若要获取 ID 为 `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` 的工作表，请将路径中的 ID 进行 URL 编码，编码为 `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。 
 
 #### <a name="delete-a-worksheet"></a>删除工作表
 
@@ -204,7 +206,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -245,7 +248,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>列出属于工作表的图表 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -253,7 +257,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -274,18 +279,20 @@ content-type: application/json;odata.metadata
 }
 ```
 
-**注意：图表 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和 `}` 字符（例如 `{00000000-0008-0000-0100-000003000000}`）。示例：若要获取图表对象，请将路径中的 ID 进行 URL 编码，编码为 `/charts/%7B00000000-0008-0000-0100-000003000000%7D`。 
+**注意：图表 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和 `}` 字符（例如 `{00000000-0008-0000-0100-000003000000}`）。 示例：若要获取图表对象，请将路径中的 ID 进行 URL 编码，编码为 `/charts/%7B00000000-0008-0000-0100-000003000000%7D`。 
 
 #### <a name="get-chart-image"></a>获取图表图像
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -310,7 +317,8 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -361,7 +369,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>更新图表的源数据 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -372,7 +381,8 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -381,7 +391,8 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>获取表列表 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -389,7 +400,8 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -397,7 +409,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>创建表
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
 content-type: Application/Json 
@@ -407,7 +420,8 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -425,7 +439,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>更新表
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -435,7 +450,8 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -543,7 +559,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>获取表列列表
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
@@ -654,7 +671,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>添加表行
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
@@ -664,7 +682,8 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -685,7 +704,8 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>添加表列 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
@@ -724,47 +744,54 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>删除表行
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>删除表列 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>将表转换为区域 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>表排序
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -780,13 +807,15 @@ workbook-session-id: {session-id}
 ```
 
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>表筛选器
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -803,21 +832,24 @@ workbook-session-id: {session-id}
 }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>清除筛选器
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -826,7 +858,8 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>获取区域 
 
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
@@ -1031,7 +1064,8 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>区域排序
-请求<!-- { "blockType": "ignored" } -->
+请求
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1046,7 +1080,8 @@ workbook-session-id: {session-id}
 }
 ```
 
-响应<!-- { "blockType": "ignored" } -->
+响应
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -1271,7 +1306,7 @@ content-type: application/json
 
 返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。
  
-以下是一个示例。
+示例如下。
 
 <!-- { "blockType": "ignored" } -->
 ```http
