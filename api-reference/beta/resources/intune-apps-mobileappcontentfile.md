@@ -4,12 +4,12 @@ description: 包含与给定 mobileAppContent 版本关联的单个安装程序�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b0b1697bcbf4832b00f40584ebd85644c0052ac
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 05912c4b48f11b1a399d6ad7a81ff2d7eb82fcbb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949958"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990321"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
@@ -74,6 +74,7 @@ ms.locfileid: "33949958"
   "isDependency": true
 }
 ```
+
 
 
 

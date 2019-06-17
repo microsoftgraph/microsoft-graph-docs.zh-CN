@@ -4,12 +4,12 @@ description: 适用于企业的 Microsoft Store 应用。 此类不支持创建�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8870982c1322f5ee2c14dc399020f34e2fcc0924
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f704a3f373aa7dc2e0e02504ade17f177f02bc9c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950044"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986177"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>microsoftStoreForBusinessApp 资源类型
 
@@ -119,6 +119,7 @@ ms.locfileid: "33950044"
   }
 }
 ```
+
 
 
 

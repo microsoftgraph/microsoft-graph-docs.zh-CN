@@ -4,12 +4,12 @@ description: 读取 windowsInformationProtectionNetworkLearningSummary 对象的
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f86318ed6a169841f37af7aa6ef61c5c9d6b5343
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 096d3a01cec737f147d907846ca852f4f5b7eba3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898386"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990412"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>获取 windowsInformationProtectionNetworkLearningSummary
 
@@ -76,6 +76,7 @@ Content-Length: 213
   }
 }
 ```
+
 
 
 

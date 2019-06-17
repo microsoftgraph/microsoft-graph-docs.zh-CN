@@ -4,12 +4,12 @@ description: 列出 roleDefinition 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b202800aef6fc24402478b3de651e2237ffd4d5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f47ca18dfd17c39f224f6d9f5f39c0178e8c1c62
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899394"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988438"
 ---
 # <a name="list-roledefinitions"></a>列出 roleDefinitions
 
@@ -118,6 +118,7 @@ Content-Length: 1477
   ]
 }
 ```
+
 
 
 

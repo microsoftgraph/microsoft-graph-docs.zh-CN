@@ -4,12 +4,12 @@ description: TermsAndConditions 实体表示给定条款和条件 (T&C) 策略�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dc02275b32cdc3b5c0ca789890245c9b8593dec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 756b66776599b07ca95d54f75ca549a5319ef581
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949155"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989467"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -72,6 +72,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
+
 
 
 

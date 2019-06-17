@@ -4,12 +4,12 @@ description: 适用于工作所需密码类型的 Android。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14d6e1bf888ce2053ef1d77da36dc06395380193
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ab11ed4951fb61e96afc55381986e83fad7ce440
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948588"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991056"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33948588"
 |atLeastAlphabetic|5|至少需要字母密码。|
 |atLeastAlphanumeric|型|至少需要字母数字密码。|
 |alphanumericWithSymbols|步|至少需要带符号的字母数字密码。|
+
 
 
 

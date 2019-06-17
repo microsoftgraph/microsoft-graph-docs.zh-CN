@@ -4,12 +4,12 @@ description: 创建新的 mdmWindowsInformationProtectionPolicy 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ceb1a2ed499885aa918a00db5f7389ca763258d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e05dce0086bdff94e285d0ec43c64d71dabf52ca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903444"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987066"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>创建 mdmWindowsInformationProtectionPolicy
 
@@ -361,6 +361,7 @@ Content-Length: 4139
   "isAssigned": true
 }
 ```
+
 
 
 

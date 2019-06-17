@@ -4,12 +4,12 @@ description: 密钥存储提供程序 (KSP) 导入选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77695c9deab823db79a3f8a98df16ff140d87248
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4ed06e011bbd9f64645541ded8929b0f2b5984fc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946264"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989425"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>keyStorageProviderOption 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33946264"
 |useTpmKspOtherwiseFail|1|导入到受信任的平台模块 (TPM) KSP (如果存在), 否则会失败。|
 |usePassportForWorkKspOtherwiseFail|双面|导入 Passport for work KSP (如果可用), 否则会失败。|
 |useSoftwareKsp|第三章|导入到软件 KSP。|
+
 
 
 

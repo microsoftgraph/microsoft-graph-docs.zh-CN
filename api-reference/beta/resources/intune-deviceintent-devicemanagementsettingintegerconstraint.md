@@ -4,12 +4,12 @@ description: 强制整数设置允许的值范围的约束
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c58572b1fb30a3270b58070f917c90a38a4ddd72
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e8d934da42efdfed3f161e11c0fc9835191e2051
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943415"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984497"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>deviceManagementSettingIntegerConstraint 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "33943415"
   "maximumValue": 1024
 }
 ```
+
 
 
 
