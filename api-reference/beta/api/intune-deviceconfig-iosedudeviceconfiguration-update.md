@@ -4,31 +4,31 @@ description: 更新 iosEduDeviceConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbfd86b8356a1174435ad94deb7a132ae680e20f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4fb3f0c06712157aac4e2ec45f0a43cdedf36cdf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923529"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966801"
 ---
-# <a name="update-iosedudeviceconfiguration"></a><span data-ttu-id="53c36-103">更新 iosEduDeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="53c36-103">Update iosEduDeviceConfiguration</span></span>
+# <a name="update-iosedudeviceconfiguration"></a><span data-ttu-id="8907d-103">更新 iosEduDeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="8907d-103">Update iosEduDeviceConfiguration</span></span>
 
-> <span data-ttu-id="53c36-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="53c36-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8907d-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8907d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="53c36-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="53c36-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8907d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8907d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="53c36-106">更新[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="53c36-106">Update the properties of a [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
+<span data-ttu-id="8907d-106">更新[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8907d-106">Update the properties of a [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="53c36-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="53c36-107">Prerequisites</span></span>
-<span data-ttu-id="53c36-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="53c36-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8907d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="8907d-107">Prerequisites</span></span>
+<span data-ttu-id="8907d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8907d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="53c36-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="53c36-110">Permission type</span></span>|<span data-ttu-id="53c36-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="53c36-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8907d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8907d-110">Permission type</span></span>|<span data-ttu-id="8907d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8907d-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="53c36-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="53c36-112">Delegated (work or school account)</span></span>|<span data-ttu-id="53c36-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53c36-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="53c36-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="53c36-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="53c36-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="53c36-115">Not supported.</span></span>|
-|<span data-ttu-id="53c36-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="53c36-116">Application</span></span>|<span data-ttu-id="53c36-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="53c36-117">Not supported.</span></span>|
+|<span data-ttu-id="8907d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8907d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8907d-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8907d-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="8907d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8907d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8907d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8907d-115">Not supported.</span></span>|
+|<span data-ttu-id="8907d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8907d-116">Application</span></span>|<span data-ttu-id="8907d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="8907d-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="53c36-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="53c36-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8907d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8907d-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,44 +39,47 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="53c36-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="53c36-119">Request headers</span></span>
-|<span data-ttu-id="53c36-120">标头</span><span class="sxs-lookup"><span data-stu-id="53c36-120">Header</span></span>|<span data-ttu-id="53c36-121">值</span><span class="sxs-lookup"><span data-stu-id="53c36-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8907d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8907d-119">Request headers</span></span>
+|<span data-ttu-id="8907d-120">标头</span><span class="sxs-lookup"><span data-stu-id="8907d-120">Header</span></span>|<span data-ttu-id="8907d-121">值</span><span class="sxs-lookup"><span data-stu-id="8907d-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="53c36-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="53c36-122">Authorization</span></span>|<span data-ttu-id="53c36-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="53c36-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="53c36-124">接受</span><span class="sxs-lookup"><span data-stu-id="53c36-124">Accept</span></span>|<span data-ttu-id="53c36-125">application/json</span><span class="sxs-lookup"><span data-stu-id="53c36-125">application/json</span></span>|
+|<span data-ttu-id="8907d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8907d-122">Authorization</span></span>|<span data-ttu-id="8907d-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8907d-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8907d-124">接受</span><span class="sxs-lookup"><span data-stu-id="8907d-124">Accept</span></span>|<span data-ttu-id="8907d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8907d-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="53c36-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="53c36-126">Request body</span></span>
-<span data-ttu-id="53c36-127">在请求正文中, 提供[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="53c36-127">In the request body, supply a JSON representation for the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8907d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8907d-126">Request body</span></span>
+<span data-ttu-id="8907d-127">在请求正文中, 提供[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8907d-127">In the request body, supply a JSON representation for the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object.</span></span>
 
-<span data-ttu-id="53c36-128">下表显示创建[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="53c36-128">The following table shows the properties that are required when you create the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).</span></span>
+<span data-ttu-id="8907d-128">下表显示创建[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8907d-128">The following table shows the properties that are required when you create the [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md).</span></span>
 
-|<span data-ttu-id="53c36-129">属性</span><span class="sxs-lookup"><span data-stu-id="53c36-129">Property</span></span>|<span data-ttu-id="53c36-130">类型</span><span class="sxs-lookup"><span data-stu-id="53c36-130">Type</span></span>|<span data-ttu-id="53c36-131">说明</span><span class="sxs-lookup"><span data-stu-id="53c36-131">Description</span></span>|
+|<span data-ttu-id="8907d-129">属性</span><span class="sxs-lookup"><span data-stu-id="8907d-129">Property</span></span>|<span data-ttu-id="8907d-130">类型</span><span class="sxs-lookup"><span data-stu-id="8907d-130">Type</span></span>|<span data-ttu-id="8907d-131">说明</span><span class="sxs-lookup"><span data-stu-id="8907d-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="53c36-132">id</span><span class="sxs-lookup"><span data-stu-id="53c36-132">id</span></span>|<span data-ttu-id="53c36-133">字符串</span><span class="sxs-lookup"><span data-stu-id="53c36-133">String</span></span>|<span data-ttu-id="53c36-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="53c36-134">Key of the entity.</span></span> <span data-ttu-id="53c36-135">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="53c36-136">lastModifiedDateTime</span></span>|<span data-ttu-id="53c36-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="53c36-137">DateTimeOffset</span></span>|<span data-ttu-id="53c36-138">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="53c36-138">DateTime the object was last modified.</span></span> <span data-ttu-id="53c36-139">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="53c36-140">roleScopeTagIds</span></span>|<span data-ttu-id="53c36-141">String collection</span><span class="sxs-lookup"><span data-stu-id="53c36-141">String collection</span></span>|<span data-ttu-id="53c36-142">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="53c36-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="53c36-143">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="53c36-144">supportsScopeTags</span></span>|<span data-ttu-id="53c36-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="53c36-145">Boolean</span></span>|<span data-ttu-id="53c36-146">指示基础设备配置是否支持作用域标记的分配。</span><span class="sxs-lookup"><span data-stu-id="53c36-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="53c36-147">如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。</span><span class="sxs-lookup"><span data-stu-id="53c36-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="53c36-148">这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。</span><span class="sxs-lookup"><span data-stu-id="53c36-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="53c36-149">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="53c36-149">This property is read-only.</span></span> <span data-ttu-id="53c36-150">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="53c36-151">createdDateTime</span></span>|<span data-ttu-id="53c36-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="53c36-152">DateTimeOffset</span></span>|<span data-ttu-id="53c36-153">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="53c36-153">DateTime the object was created.</span></span> <span data-ttu-id="53c36-154">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-155">说明</span><span class="sxs-lookup"><span data-stu-id="53c36-155">description</span></span>|<span data-ttu-id="53c36-156">String</span><span class="sxs-lookup"><span data-stu-id="53c36-156">String</span></span>|<span data-ttu-id="53c36-157">管理员提供的设备配置的说明。</span><span class="sxs-lookup"><span data-stu-id="53c36-157">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="53c36-158">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-159">displayName</span><span class="sxs-lookup"><span data-stu-id="53c36-159">displayName</span></span>|<span data-ttu-id="53c36-160">String</span><span class="sxs-lookup"><span data-stu-id="53c36-160">String</span></span>|<span data-ttu-id="53c36-161">管理员提供的设备配置的名称。</span><span class="sxs-lookup"><span data-stu-id="53c36-161">Admin provided name of the device configuration.</span></span> <span data-ttu-id="53c36-162">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-163">version</span><span class="sxs-lookup"><span data-stu-id="53c36-163">version</span></span>|<span data-ttu-id="53c36-164">Int32</span><span class="sxs-lookup"><span data-stu-id="53c36-164">Int32</span></span>|<span data-ttu-id="53c36-165">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="53c36-165">Version of the device configuration.</span></span> <span data-ttu-id="53c36-166">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="53c36-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="53c36-167">teacherCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="53c36-167">teacherCertificateSettings</span></span>|[<span data-ttu-id="53c36-168">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="53c36-168">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="53c36-169">教师的受信任的根证书和 PFX 证书</span><span class="sxs-lookup"><span data-stu-id="53c36-169">The Trusted Root and PFX certificates for Teacher</span></span>|
-|<span data-ttu-id="53c36-170">studentCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="53c36-170">studentCertificateSettings</span></span>|[<span data-ttu-id="53c36-171">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="53c36-171">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="53c36-172">学生的受信任的根证书和 PFX 证书</span><span class="sxs-lookup"><span data-stu-id="53c36-172">The Trusted Root and PFX certificates for Student</span></span>|
-|<span data-ttu-id="53c36-173">deviceCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="53c36-173">deviceCertificateSettings</span></span>|[<span data-ttu-id="53c36-174">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="53c36-174">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="53c36-175">设备的受信任的根证书和 PFX 证书</span><span class="sxs-lookup"><span data-stu-id="53c36-175">The Trusted Root and PFX certificates for Device</span></span>|
+|<span data-ttu-id="8907d-132">id</span><span class="sxs-lookup"><span data-stu-id="8907d-132">id</span></span>|<span data-ttu-id="8907d-133">字符串</span><span class="sxs-lookup"><span data-stu-id="8907d-133">String</span></span>|<span data-ttu-id="8907d-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="8907d-134">Key of the entity.</span></span> <span data-ttu-id="8907d-135">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="8907d-136">lastModifiedDateTime</span></span>|<span data-ttu-id="8907d-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8907d-137">DateTimeOffset</span></span>|<span data-ttu-id="8907d-138">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="8907d-138">DateTime the object was last modified.</span></span> <span data-ttu-id="8907d-139">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="8907d-140">roleScopeTagIds</span></span>|<span data-ttu-id="8907d-141">String collection</span><span class="sxs-lookup"><span data-stu-id="8907d-141">String collection</span></span>|<span data-ttu-id="8907d-142">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="8907d-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="8907d-143">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-144">supportsScopeTags</span><span class="sxs-lookup"><span data-stu-id="8907d-144">supportsScopeTags</span></span>|<span data-ttu-id="8907d-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="8907d-145">Boolean</span></span>|<span data-ttu-id="8907d-146">指示基础设备配置是否支持作用域标记的分配。</span><span class="sxs-lookup"><span data-stu-id="8907d-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="8907d-147">如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。</span><span class="sxs-lookup"><span data-stu-id="8907d-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="8907d-148">这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。</span><span class="sxs-lookup"><span data-stu-id="8907d-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="8907d-149">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="8907d-149">This property is read-only.</span></span> <span data-ttu-id="8907d-150">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-151">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="8907d-151">deviceManagementApplicabilityRuleOsEdition</span></span>|[<span data-ttu-id="8907d-152">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="8907d-152">deviceManagementApplicabilityRuleOsEdition</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|<span data-ttu-id="8907d-153">适用于此策略的操作系统版本。</span><span class="sxs-lookup"><span data-stu-id="8907d-153">The OS edition applicability for this Policy.</span></span> <span data-ttu-id="8907d-154">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-155">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="8907d-155">deviceManagementApplicabilityRuleOsVersion</span></span>|[<span data-ttu-id="8907d-156">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="8907d-156">deviceManagementApplicabilityRuleOsVersion</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|<span data-ttu-id="8907d-157">此策略的操作系统版本适用性规则。</span><span class="sxs-lookup"><span data-stu-id="8907d-157">The OS version applicability rule for this Policy.</span></span> <span data-ttu-id="8907d-158">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-159">deviceManagementApplicabilityRuleDeviceMode</span><span class="sxs-lookup"><span data-stu-id="8907d-159">deviceManagementApplicabilityRuleDeviceMode</span></span>|[<span data-ttu-id="8907d-160">deviceManagementApplicabilityRuleDeviceMode</span><span class="sxs-lookup"><span data-stu-id="8907d-160">deviceManagementApplicabilityRuleDeviceMode</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|<span data-ttu-id="8907d-161">此策略的设备模式适用性规则。</span><span class="sxs-lookup"><span data-stu-id="8907d-161">The device mode applicability rule for this Policy.</span></span> <span data-ttu-id="8907d-162">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-163">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="8907d-163">createdDateTime</span></span>|<span data-ttu-id="8907d-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8907d-164">DateTimeOffset</span></span>|<span data-ttu-id="8907d-165">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="8907d-165">DateTime the object was created.</span></span> <span data-ttu-id="8907d-166">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-167">说明</span><span class="sxs-lookup"><span data-stu-id="8907d-167">description</span></span>|<span data-ttu-id="8907d-168">String</span><span class="sxs-lookup"><span data-stu-id="8907d-168">String</span></span>|<span data-ttu-id="8907d-169">管理员提供的设备配置的说明。</span><span class="sxs-lookup"><span data-stu-id="8907d-169">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="8907d-170">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-170">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-171">displayName</span><span class="sxs-lookup"><span data-stu-id="8907d-171">displayName</span></span>|<span data-ttu-id="8907d-172">String</span><span class="sxs-lookup"><span data-stu-id="8907d-172">String</span></span>|<span data-ttu-id="8907d-173">管理员提供的设备配置的名称。</span><span class="sxs-lookup"><span data-stu-id="8907d-173">Admin provided name of the device configuration.</span></span> <span data-ttu-id="8907d-174">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-174">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-175">version</span><span class="sxs-lookup"><span data-stu-id="8907d-175">version</span></span>|<span data-ttu-id="8907d-176">Int32</span><span class="sxs-lookup"><span data-stu-id="8907d-176">Int32</span></span>|<span data-ttu-id="8907d-177">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="8907d-177">Version of the device configuration.</span></span> <span data-ttu-id="8907d-178">继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="8907d-178">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="8907d-179">teacherCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="8907d-179">teacherCertificateSettings</span></span>|[<span data-ttu-id="8907d-180">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="8907d-180">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="8907d-181">教师的受信任的根证书和 PFX 证书</span><span class="sxs-lookup"><span data-stu-id="8907d-181">The Trusted Root and PFX certificates for Teacher</span></span>|
+|<span data-ttu-id="8907d-182">studentCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="8907d-182">studentCertificateSettings</span></span>|[<span data-ttu-id="8907d-183">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="8907d-183">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="8907d-184">学生的受信任的根证书和 PFX 证书</span><span class="sxs-lookup"><span data-stu-id="8907d-184">The Trusted Root and PFX certificates for Student</span></span>|
+|<span data-ttu-id="8907d-185">deviceCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="8907d-185">deviceCertificateSettings</span></span>|[<span data-ttu-id="8907d-186">iosEduCertificateSettings</span><span class="sxs-lookup"><span data-stu-id="8907d-186">iosEduCertificateSettings</span></span>](../resources/intune-deviceconfig-ioseducertificatesettings.md)|<span data-ttu-id="8907d-187">设备的受信任的根证书和 PFX 证书</span><span class="sxs-lookup"><span data-stu-id="8907d-187">The Trusted Root and PFX certificates for Device</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="53c36-176">响应</span><span class="sxs-lookup"><span data-stu-id="53c36-176">Response</span></span>
-<span data-ttu-id="53c36-177">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="53c36-177">If successful, this method returns a `200 OK` response code and an updated [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8907d-188">响应</span><span class="sxs-lookup"><span data-stu-id="8907d-188">Response</span></span>
+<span data-ttu-id="8907d-189">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8907d-189">If successful, this method returns a `200 OK` response code and an updated [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="53c36-178">示例</span><span class="sxs-lookup"><span data-stu-id="53c36-178">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8907d-190">示例</span><span class="sxs-lookup"><span data-stu-id="8907d-190">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="53c36-179">请求</span><span class="sxs-lookup"><span data-stu-id="53c36-179">Request</span></span>
-<span data-ttu-id="53c36-180">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="53c36-180">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8907d-191">请求</span><span class="sxs-lookup"><span data-stu-id="8907d-191">Request</span></span>
+<span data-ttu-id="8907d-192">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8907d-192">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1910
+Content-length: 2683
 
 {
   "@odata.type": "#microsoft.graph.iosEduDeviceConfiguration",
@@ -84,6 +87,27 @@ Content-length: 1910
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -123,12 +147,12 @@ Content-length: 1910
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="53c36-181">响应</span><span class="sxs-lookup"><span data-stu-id="53c36-181">Response</span></span>
-<span data-ttu-id="53c36-p110">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="53c36-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8907d-193">响应</span><span class="sxs-lookup"><span data-stu-id="8907d-193">Response</span></span>
+<span data-ttu-id="8907d-p113">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8907d-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2082
+Content-Length: 2855
 
 {
   "@odata.type": "#microsoft.graph.iosEduDeviceConfiguration",
@@ -138,6 +162,27 @@ Content-Length: 2082
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -177,6 +222,7 @@ Content-Length: 2082
   }
 }
 ```
+
 
 
 
