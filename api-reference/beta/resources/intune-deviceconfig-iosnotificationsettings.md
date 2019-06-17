@@ -4,39 +4,39 @@ description: 说明通知设置的项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0503d938860798408fa5eb2af20ac51dc988f8a7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 434278967fa5ffe781b53595edae69bffc725289
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946446"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995670"
 ---
-# <a name="iosnotificationsettings-resource-type"></a><span data-ttu-id="1e6a6-103">iosNotificationSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="1e6a6-103">iosNotificationSettings resource type</span></span>
+# <a name="iosnotificationsettings-resource-type"></a><span data-ttu-id="a877e-103">iosNotificationSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="a877e-103">iosNotificationSettings resource type</span></span>
 
-> <span data-ttu-id="1e6a6-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a877e-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a877e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1e6a6-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a877e-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a877e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1e6a6-106">说明通知设置的项。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-106">An item describing notification setting.</span></span>
+<span data-ttu-id="a877e-106">说明通知设置的项。</span><span class="sxs-lookup"><span data-stu-id="a877e-106">An item describing notification setting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1e6a6-107">属性</span><span class="sxs-lookup"><span data-stu-id="1e6a6-107">Properties</span></span>
-|<span data-ttu-id="1e6a6-108">属性</span><span class="sxs-lookup"><span data-stu-id="1e6a6-108">Property</span></span>|<span data-ttu-id="1e6a6-109">类型</span><span class="sxs-lookup"><span data-stu-id="1e6a6-109">Type</span></span>|<span data-ttu-id="1e6a6-110">说明</span><span class="sxs-lookup"><span data-stu-id="1e6a6-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a877e-107">属性</span><span class="sxs-lookup"><span data-stu-id="a877e-107">Properties</span></span>
+|<span data-ttu-id="a877e-108">属性</span><span class="sxs-lookup"><span data-stu-id="a877e-108">Property</span></span>|<span data-ttu-id="a877e-109">类型</span><span class="sxs-lookup"><span data-stu-id="a877e-109">Type</span></span>|<span data-ttu-id="a877e-110">说明</span><span class="sxs-lookup"><span data-stu-id="a877e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1e6a6-111">bundleID</span><span class="sxs-lookup"><span data-stu-id="1e6a6-111">bundleID</span></span>|<span data-ttu-id="1e6a6-112">String</span><span class="sxs-lookup"><span data-stu-id="1e6a6-112">String</span></span>|<span data-ttu-id="1e6a6-113">要向其应用这些通知设置的应用的捆绑 ID。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-113">Bundle id of app to which to apply these notification settings.</span></span>|
-|<span data-ttu-id="1e6a6-114">appName</span><span class="sxs-lookup"><span data-stu-id="1e6a6-114">appName</span></span>|<span data-ttu-id="1e6a6-115">String</span><span class="sxs-lookup"><span data-stu-id="1e6a6-115">String</span></span>|<span data-ttu-id="1e6a6-116">要与 bundleID 关联的应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-116">Application name to be associated with the bundleID.</span></span>|
-|<span data-ttu-id="1e6a6-117">发布者</span><span class="sxs-lookup"><span data-stu-id="1e6a6-117">publisher</span></span>|<span data-ttu-id="1e6a6-118">String</span><span class="sxs-lookup"><span data-stu-id="1e6a6-118">String</span></span>|<span data-ttu-id="1e6a6-119">要与 bundleID 关联的发布者。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-119">Publisher to be associated with the bundleID.</span></span>|
-|<span data-ttu-id="1e6a6-120">enabled</span><span class="sxs-lookup"><span data-stu-id="1e6a6-120">enabled</span></span>|<span data-ttu-id="1e6a6-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e6a6-121">Boolean</span></span>|<span data-ttu-id="1e6a6-122">指示是否允许此应用使用通知。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-122">Indicates whether notifications are allowed for this app.</span></span>|
-|<span data-ttu-id="1e6a6-123">showInNotificationCenter</span><span class="sxs-lookup"><span data-stu-id="1e6a6-123">showInNotificationCenter</span></span>|<span data-ttu-id="1e6a6-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e6a6-124">Boolean</span></span>|<span data-ttu-id="1e6a6-125">指示是否可以在通知中心中显示通知。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-125">Indicates whether notifications can be shown in notification center.</span></span>|
-|<span data-ttu-id="1e6a6-126">showOnLockScreen</span><span class="sxs-lookup"><span data-stu-id="1e6a6-126">showOnLockScreen</span></span>|<span data-ttu-id="1e6a6-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e6a6-127">Boolean</span></span>|<span data-ttu-id="1e6a6-128">指示是否可以在锁定屏幕上显示通知。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-128">Indicates whether notifications can be shown on the lock screen.</span></span>|
-|<span data-ttu-id="1e6a6-129">alertType</span><span class="sxs-lookup"><span data-stu-id="1e6a6-129">alertType</span></span>|[<span data-ttu-id="1e6a6-130">iosNotificationAlertType</span><span class="sxs-lookup"><span data-stu-id="1e6a6-130">iosNotificationAlertType</span></span>](../resources/intune-deviceconfig-iosnotificationalerttype.md)|<span data-ttu-id="1e6a6-131">指示此应用的通知的警报类型。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-131">Indicates the type of alert for notifications for this app.</span></span> <span data-ttu-id="1e6a6-132">可取值为：`deviceDefault`、`banner`、`modal`、`none`。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-132">Possible values are: `deviceDefault`, `banner`, `modal`, `none`.</span></span>|
-|<span data-ttu-id="1e6a6-133">badgesEnabled</span><span class="sxs-lookup"><span data-stu-id="1e6a6-133">badgesEnabled</span></span>|<span data-ttu-id="1e6a6-134">Boolean</span><span class="sxs-lookup"><span data-stu-id="1e6a6-134">Boolean</span></span>|<span data-ttu-id="1e6a6-135">指示是否允许此应用使用徽章。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-135">Indicates whether badges are allowed for this app.</span></span>|
-|<span data-ttu-id="1e6a6-136">soundsEnabled</span><span class="sxs-lookup"><span data-stu-id="1e6a6-136">soundsEnabled</span></span>|<span data-ttu-id="1e6a6-137">布尔值</span><span class="sxs-lookup"><span data-stu-id="1e6a6-137">Boolean</span></span>|<span data-ttu-id="1e6a6-138">指示是否允许此应用使用声音。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-138">Indicates whether sounds are allowed for this app.</span></span>|
+|<span data-ttu-id="a877e-111">bundleID</span><span class="sxs-lookup"><span data-stu-id="a877e-111">bundleID</span></span>|<span data-ttu-id="a877e-112">String</span><span class="sxs-lookup"><span data-stu-id="a877e-112">String</span></span>|<span data-ttu-id="a877e-113">要向其应用这些通知设置的应用的捆绑 ID。</span><span class="sxs-lookup"><span data-stu-id="a877e-113">Bundle id of app to which to apply these notification settings.</span></span>|
+|<span data-ttu-id="a877e-114">appName</span><span class="sxs-lookup"><span data-stu-id="a877e-114">appName</span></span>|<span data-ttu-id="a877e-115">String</span><span class="sxs-lookup"><span data-stu-id="a877e-115">String</span></span>|<span data-ttu-id="a877e-116">要与 bundleID 关联的应用程序名称。</span><span class="sxs-lookup"><span data-stu-id="a877e-116">Application name to be associated with the bundleID.</span></span>|
+|<span data-ttu-id="a877e-117">发布者</span><span class="sxs-lookup"><span data-stu-id="a877e-117">publisher</span></span>|<span data-ttu-id="a877e-118">String</span><span class="sxs-lookup"><span data-stu-id="a877e-118">String</span></span>|<span data-ttu-id="a877e-119">要与 bundleID 关联的发布者。</span><span class="sxs-lookup"><span data-stu-id="a877e-119">Publisher to be associated with the bundleID.</span></span>|
+|<span data-ttu-id="a877e-120">enabled</span><span class="sxs-lookup"><span data-stu-id="a877e-120">enabled</span></span>|<span data-ttu-id="a877e-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="a877e-121">Boolean</span></span>|<span data-ttu-id="a877e-122">指示是否允许此应用使用通知。</span><span class="sxs-lookup"><span data-stu-id="a877e-122">Indicates whether notifications are allowed for this app.</span></span>|
+|<span data-ttu-id="a877e-123">showInNotificationCenter</span><span class="sxs-lookup"><span data-stu-id="a877e-123">showInNotificationCenter</span></span>|<span data-ttu-id="a877e-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="a877e-124">Boolean</span></span>|<span data-ttu-id="a877e-125">指示是否可以在通知中心中显示通知。</span><span class="sxs-lookup"><span data-stu-id="a877e-125">Indicates whether notifications can be shown in notification center.</span></span>|
+|<span data-ttu-id="a877e-126">showOnLockScreen</span><span class="sxs-lookup"><span data-stu-id="a877e-126">showOnLockScreen</span></span>|<span data-ttu-id="a877e-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="a877e-127">Boolean</span></span>|<span data-ttu-id="a877e-128">指示是否可以在锁定屏幕上显示通知。</span><span class="sxs-lookup"><span data-stu-id="a877e-128">Indicates whether notifications can be shown on the lock screen.</span></span>|
+|<span data-ttu-id="a877e-129">alertType</span><span class="sxs-lookup"><span data-stu-id="a877e-129">alertType</span></span>|[<span data-ttu-id="a877e-130">iosNotificationAlertType</span><span class="sxs-lookup"><span data-stu-id="a877e-130">iosNotificationAlertType</span></span>](../resources/intune-deviceconfig-iosnotificationalerttype.md)|<span data-ttu-id="a877e-131">指示此应用的通知的警报类型。</span><span class="sxs-lookup"><span data-stu-id="a877e-131">Indicates the type of alert for notifications for this app.</span></span> <span data-ttu-id="a877e-132">可取值为：`deviceDefault`、`banner`、`modal`、`none`。</span><span class="sxs-lookup"><span data-stu-id="a877e-132">Possible values are: `deviceDefault`, `banner`, `modal`, `none`.</span></span>|
+|<span data-ttu-id="a877e-133">badgesEnabled</span><span class="sxs-lookup"><span data-stu-id="a877e-133">badgesEnabled</span></span>|<span data-ttu-id="a877e-134">Boolean</span><span class="sxs-lookup"><span data-stu-id="a877e-134">Boolean</span></span>|<span data-ttu-id="a877e-135">指示是否允许此应用使用徽章。</span><span class="sxs-lookup"><span data-stu-id="a877e-135">Indicates whether badges are allowed for this app.</span></span>|
+|<span data-ttu-id="a877e-136">soundsEnabled</span><span class="sxs-lookup"><span data-stu-id="a877e-136">soundsEnabled</span></span>|<span data-ttu-id="a877e-137">布尔值</span><span class="sxs-lookup"><span data-stu-id="a877e-137">Boolean</span></span>|<span data-ttu-id="a877e-138">指示是否允许此应用使用声音。</span><span class="sxs-lookup"><span data-stu-id="a877e-138">Indicates whether sounds are allowed for this app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1e6a6-139">关系</span><span class="sxs-lookup"><span data-stu-id="1e6a6-139">Relationships</span></span>
-<span data-ttu-id="1e6a6-140">无</span><span class="sxs-lookup"><span data-stu-id="1e6a6-140">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a877e-139">关系</span><span class="sxs-lookup"><span data-stu-id="a877e-139">Relationships</span></span>
+<span data-ttu-id="a877e-140">无</span><span class="sxs-lookup"><span data-stu-id="a877e-140">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1e6a6-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1e6a6-141">JSON Representation</span></span>
-<span data-ttu-id="1e6a6-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1e6a6-142">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a877e-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a877e-141">JSON Representation</span></span>
+<span data-ttu-id="a877e-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a877e-142">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNotificationSettings"
@@ -56,6 +56,7 @@ ms.locfileid: "33946446"
   "soundsEnabled": true
 }
 ```
+
 
 
 
