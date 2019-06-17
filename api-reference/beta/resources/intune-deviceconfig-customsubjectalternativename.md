@@ -4,12 +4,12 @@ description: 自定义主题备用名称定义
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf3c7a8e675c41056b1c5450b83394951b2ceab4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5c00361a62315f250c0f839338f5e7a3fe3914c3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947399"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979975"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>customSubjectAlternativeName 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33947399"
   "name": "String"
 }
 ```
+
 
 
 

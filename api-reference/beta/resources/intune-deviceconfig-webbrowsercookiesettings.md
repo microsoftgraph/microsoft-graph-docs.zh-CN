@@ -4,12 +4,12 @@ description: Web 浏览器 Cookie 设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e64308ed613c44736143498c9c049c405765059
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7f17b17f86bfe8ccff5e1a87a3bdbebad015fc0a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944486"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980360"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 
@@ -27,6 +27,7 @@ Web 浏览器 Cookie 设置。
 |allowCurrentWebSite|双面|允许来自当前网站的 cookie。|
 |allowFromWebsitesVisited|第三章|允许访问的网站中的 Cookie。|
 |allowAlways|4|始终允许 cookie。|
+
 
 
 

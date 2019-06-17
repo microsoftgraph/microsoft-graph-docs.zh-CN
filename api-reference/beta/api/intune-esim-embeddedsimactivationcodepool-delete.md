@@ -4,12 +4,12 @@ description: 删除 embeddedSIMActivationCodePool。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25a1ec24d632b2ba5f245a23116b6643f55172ca
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e64ca541f85dd3a1e4e2a4344ca583e8d3c5dd5e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908163"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982656"
 ---
 # <a name="delete-embeddedsimactivationcodepool"></a>删除 embeddedSIMActivationCodePool
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

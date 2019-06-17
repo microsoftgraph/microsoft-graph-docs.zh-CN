@@ -4,12 +4,12 @@ description: 创建新的 managedIOSLobApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f82b51d01587949294b92ea06e6589df5a5d690
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 31c9130f9c91c1c842dff605a0988ce3ce73ceeb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935550"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974616"
 ---
 # <a name="create-managedioslobapp"></a>创建 managedIOSLobApp
 
@@ -202,6 +202,7 @@ Content-Length: 1641
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

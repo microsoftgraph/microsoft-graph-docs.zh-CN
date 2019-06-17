@@ -4,12 +4,12 @@ description: 读取 auditEvent 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76a0b9c19a2e7024a93865736c722ce9bb1689c8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 183001ba52449922c98d4c9a5577099c4ba5818f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934395"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972618"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 
@@ -112,6 +112,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

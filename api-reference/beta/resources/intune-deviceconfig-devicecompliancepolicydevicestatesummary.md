@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6643fbcb7abe0dab5c7a72b8f78e7e7282aee4b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a1343abb5c460dab504e1f56b21b1b0d1185186
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947132"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979450"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "33947132"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

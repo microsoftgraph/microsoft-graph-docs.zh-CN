@@ -4,12 +4,12 @@ description: 托管设备上安装的托管或未托管应用。 未托管应用
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db6ec2e211de14ee65d66874c8512423d4bf5c34
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 098ad481c854514e988037e755cefd3dbecd8165
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942162"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983153"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -60,6 +60,7 @@ ms.locfileid: "33942162"
   "deviceCount": 1024
 }
 ```
+
 
 
 

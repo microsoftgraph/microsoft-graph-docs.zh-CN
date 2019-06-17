@@ -4,12 +4,12 @@ description: 包含用于定义位置管理条件 (要监视的感兴趣的区�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d679ef9353bbb0dd0fcedc342b793afeade158c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 70258c73aa146451dbe0aaab919fc8192017bc27
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941294"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979233"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>locationManagementCondition 资源类型
 
@@ -68,6 +68,7 @@ ms.locfileid: "33941294"
   ]
 }
 ```
+
 
 
 

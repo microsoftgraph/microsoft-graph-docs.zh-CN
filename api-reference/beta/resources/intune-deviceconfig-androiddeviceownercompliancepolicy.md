@@ -4,12 +4,12 @@ description: 本主题提供由 AndroidDeviceOwnerCompliancePolicy 资源公开�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6dd9868051b3042add59b9d68474195cacbde44
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 351f939da602c19470af6eb72948a5d3f0fce2a9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949127"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983846"
 ---
 # <a name="androiddeviceownercompliancepolicy-resource-type"></a>androidDeviceOwnerCompliancePolicy 资源类型
 
@@ -107,6 +107,7 @@ ms.locfileid: "33949127"
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

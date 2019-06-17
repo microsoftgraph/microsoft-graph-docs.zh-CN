@@ -4,12 +4,12 @@ description: 列出 embeddedSIMDeviceState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d746c489f67e0f3036dc1b679f80d7d1af96bcfc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fe92ab69b3ef2eb885ff80a4f5b03bf51bcf76a0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905530"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983713"
 ---
 # <a name="list-embeddedsimdevicestates"></a>列出 embeddedSIMDeviceStates
 
@@ -81,6 +81,7 @@ Content-Length: 602
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 强制设置的约束是格式良好的 XML
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6544844778a7e9a2437525506d6d8a21c9fb0503
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 37622619a916c3168ad3060446d6766561a7b1db
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943298"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984441"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>deviceManagementSettingXmlConstraint 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "33943298"
   "@odata.type": "#microsoft.graph.deviceManagementSettingXmlConstraint"
 }
 ```
+
 
 
 

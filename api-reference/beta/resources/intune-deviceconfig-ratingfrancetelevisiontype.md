@@ -4,12 +4,12 @@ description: 法国的电视内容评级标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eef887f74ac0d5bb2295be0684dffe56808cb54c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 082894891a6edd2a1ed8582538c4879cea6dccc4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950989"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984616"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33950989"
 |agesAbove12|第三章|对于不在12的儿童, 不建议使用-12 分类|
 |agesAbove16|4|对于16下的儿童, 不建议使用-16 分类|
 |agesAbove18|5|对于18岁以上的个人, 不建议使用-18 分类|
+
 
 
 

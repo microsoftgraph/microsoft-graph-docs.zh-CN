@@ -4,12 +4,12 @@ description: 将从哪些分支设备接收其更新
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5869bcfaa3949a8463d2625c4e7de48897a62daf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35b117b1a64650a475d392ffadf81769d3b0b08b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943604"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978666"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33943604"
 |windowsInsiderBuildFast|第三章|Windows 预览体验成员内部版本-快速|
 |windowsInsiderBuildSlow|4|Windows 预览体验成员内部版本-慢|
 |windowsInsiderBuildRelease|5|发布 Windows 预览体验成员内部版本|
+
 
 
 

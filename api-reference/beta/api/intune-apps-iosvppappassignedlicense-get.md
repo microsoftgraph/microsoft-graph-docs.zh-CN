@@ -4,12 +4,12 @@ description: 读取 iosVppAppAssignedLicense 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 294feb38f508b17f3a49fc311c11482c1e36b959
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e88e503a0dfcead07a762f9eba70657bd2ea23a3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936180"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975481"
 ---
 # <a name="get-iosvppappassignedlicense"></a>获取 iosVppAppAssignedLicense
 
@@ -78,6 +78,7 @@ Content-Length: 314
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 可以定义将在设备检测到特定 IP 网络设置时触发的
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 460977c45b34526c417dbc61360a33bed66f33d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 665bbd4cb27d533a230614a2712943c23d1b3d76
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941202"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979135"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
 
@@ -84,6 +84,7 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone
   ]
 }
 ```
+
 
 
 

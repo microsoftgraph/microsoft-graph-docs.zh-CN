@@ -4,12 +4,12 @@ description: 创建新的 deviceEnrollmentPlatformRestrictionsConfiguration 对�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d598bd14c031f9f8e87c66b718470841f3d18c73
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0c2645c0019401fcf3d9beb13049b3c5990b882a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900270"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981242"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>创建 deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -204,6 +204,7 @@ Content-Length: 2403
   }
 }
 ```
+
 
 
 

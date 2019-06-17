@@ -4,12 +4,12 @@ description: 有关实体不受支持的原因的说明。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfb4a25325826b20f77d75dc9d545ee64d12f254
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ce838f73c4ad02ecb29d540a9f0d4af065796993
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944647"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978967"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33944647"
   "propertyName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 iosVppAppAssignedUserLicense 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bfce96adf2065d171d758e47035777e0ae50e15
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e9c2cf98c4009eb1628c9b1e1c0ea26873fab24b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935977"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975369"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>列出 iosVppAppAssignedUserLicenses
 
@@ -77,6 +77,7 @@ Content-Length: 344
   ]
 }
 ```
+
 
 
 

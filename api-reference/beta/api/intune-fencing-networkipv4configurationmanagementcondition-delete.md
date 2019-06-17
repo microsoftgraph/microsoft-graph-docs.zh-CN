@@ -4,12 +4,12 @@ description: 删除 networkIPv4ConfigurationManagementCondition。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bb8fb2c5d2525c08aebb17f21d9dcd709515d1b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2cc071294dc7760e3aadc1dd2892e23a5b320c42
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905264"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984168"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>删除 networkIPv4ConfigurationManagementCondition
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

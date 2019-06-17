@@ -4,12 +4,12 @@ description: Miracast 通道的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d7d069005895898b2e79e22b8c3e61796de262
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2415cdba79ca797360eec879866300e3cca7efe1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950793"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978862"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
@@ -43,6 +43,7 @@ Miracast 通道的可能值。
 |oneHundredFiftySeven|157|OneHundredFifty-七。|
 |oneHundredSixtyOne|161|OneHundredSixty-One。|
 |oneHundredSixtyFive|165|OneHundredSixty-5。|
+
 
 
 

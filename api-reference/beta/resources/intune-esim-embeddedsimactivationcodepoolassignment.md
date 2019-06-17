@@ -4,12 +4,12 @@ description: 嵌入的 SIM 激活代码池分配实体可将特定的 embeddedSI
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cea1b130ddee79c87dc9b995ab216896609654f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 295e30c56551a03bc671579cc37851f50e2513ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941378"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979247"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33941378"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 managementConditionStatement 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e113425effad04712e3dfc45a4ae6c9bb9e7de5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 79d3fbd464234bd8043aacab4f7fd13bf5c125f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905362"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984077"
 ---
 # <a name="get-managementconditionstatement"></a>获取 managementConditionStatement
 
@@ -86,6 +86,7 @@ Content-Length: 536
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 可能会定义在设备检测到特定 IP 网络设置时触发的
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0f14907928e853ae94b51fcabb1a6c04955c673
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 34b781b89f9cdec6a4c3cfc366513a92ca25ba3e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941228"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979149"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "33941228"
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0。0/8|
+|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
 |ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
@@ -85,6 +85,7 @@ ms.locfileid: "33941228"
   ]
 }
 ```
+
 
 
 
