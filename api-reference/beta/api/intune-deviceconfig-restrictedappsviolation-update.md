@@ -4,31 +4,31 @@ description: 更新 restrictedAppsViolation 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ea5a73f26e2abc0411419ad37f0a35c5432db78
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b21401c5bdc78649187c0dd3f9a32dbb896c37c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922099"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962902"
 ---
-# <a name="update-restrictedappsviolation"></a><span data-ttu-id="94a38-103">更新 restrictedAppsViolation</span><span class="sxs-lookup"><span data-stu-id="94a38-103">Update restrictedAppsViolation</span></span>
+# <a name="update-restrictedappsviolation"></a><span data-ttu-id="169e3-103">更新 restrictedAppsViolation</span><span class="sxs-lookup"><span data-stu-id="169e3-103">Update restrictedAppsViolation</span></span>
 
-> <span data-ttu-id="94a38-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="94a38-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="169e3-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="169e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="94a38-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="94a38-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="169e3-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="169e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="94a38-106">更新[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="94a38-106">Update the properties of a [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object.</span></span>
+<span data-ttu-id="169e3-106">更新[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="169e3-106">Update the properties of a [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="94a38-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="94a38-107">Prerequisites</span></span>
-<span data-ttu-id="94a38-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="94a38-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="169e3-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="169e3-107">Prerequisites</span></span>
+<span data-ttu-id="169e3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="169e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="94a38-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="94a38-110">Permission type</span></span>|<span data-ttu-id="94a38-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="94a38-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="169e3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="169e3-110">Permission type</span></span>|<span data-ttu-id="169e3-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="169e3-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="94a38-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="94a38-112">Delegated (work or school account)</span></span>|<span data-ttu-id="94a38-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="94a38-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="94a38-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="94a38-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="94a38-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="94a38-115">Not supported.</span></span>|
-|<span data-ttu-id="94a38-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="94a38-116">Application</span></span>|<span data-ttu-id="94a38-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="94a38-117">Not supported.</span></span>|
+|<span data-ttu-id="169e3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="169e3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="169e3-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="169e3-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="169e3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="169e3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="169e3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="169e3-115">Not supported.</span></span>|
+|<span data-ttu-id="169e3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="169e3-116">Application</span></span>|<span data-ttu-id="169e3-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="169e3-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="94a38-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="94a38-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="169e3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="169e3-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,39 +37,39 @@ ms.locfileid: "33922099"
 PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedAppsViolationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="94a38-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="94a38-119">Request headers</span></span>
-|<span data-ttu-id="94a38-120">标头</span><span class="sxs-lookup"><span data-stu-id="94a38-120">Header</span></span>|<span data-ttu-id="94a38-121">值</span><span class="sxs-lookup"><span data-stu-id="94a38-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="169e3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="169e3-119">Request headers</span></span>
+|<span data-ttu-id="169e3-120">标头</span><span class="sxs-lookup"><span data-stu-id="169e3-120">Header</span></span>|<span data-ttu-id="169e3-121">值</span><span class="sxs-lookup"><span data-stu-id="169e3-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="94a38-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="94a38-122">Authorization</span></span>|<span data-ttu-id="94a38-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="94a38-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="94a38-124">接受</span><span class="sxs-lookup"><span data-stu-id="94a38-124">Accept</span></span>|<span data-ttu-id="94a38-125">application/json</span><span class="sxs-lookup"><span data-stu-id="94a38-125">application/json</span></span>|
+|<span data-ttu-id="169e3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="169e3-122">Authorization</span></span>|<span data-ttu-id="169e3-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="169e3-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="169e3-124">接受</span><span class="sxs-lookup"><span data-stu-id="169e3-124">Accept</span></span>|<span data-ttu-id="169e3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="169e3-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="94a38-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="94a38-126">Request body</span></span>
-<span data-ttu-id="94a38-127">在请求正文中, 提供[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="94a38-127">In the request body, supply a JSON representation for the [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="169e3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="169e3-126">Request body</span></span>
+<span data-ttu-id="169e3-127">在请求正文中, 提供[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="169e3-127">In the request body, supply a JSON representation for the [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object.</span></span>
 
-<span data-ttu-id="94a38-128">下表显示创建[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="94a38-128">The following table shows the properties that are required when you create the [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).</span></span>
+<span data-ttu-id="169e3-128">下表显示创建[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="169e3-128">The following table shows the properties that are required when you create the [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).</span></span>
 
-|<span data-ttu-id="94a38-129">属性</span><span class="sxs-lookup"><span data-stu-id="94a38-129">Property</span></span>|<span data-ttu-id="94a38-130">类型</span><span class="sxs-lookup"><span data-stu-id="94a38-130">Type</span></span>|<span data-ttu-id="94a38-131">说明</span><span class="sxs-lookup"><span data-stu-id="94a38-131">Description</span></span>|
+|<span data-ttu-id="169e3-129">属性</span><span class="sxs-lookup"><span data-stu-id="169e3-129">Property</span></span>|<span data-ttu-id="169e3-130">类型</span><span class="sxs-lookup"><span data-stu-id="169e3-130">Type</span></span>|<span data-ttu-id="169e3-131">说明</span><span class="sxs-lookup"><span data-stu-id="169e3-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="94a38-132">id</span><span class="sxs-lookup"><span data-stu-id="94a38-132">id</span></span>|<span data-ttu-id="94a38-133">字符串</span><span class="sxs-lookup"><span data-stu-id="94a38-133">String</span></span>|<span data-ttu-id="94a38-134">对象的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="94a38-134">Unique identifier for the object.</span></span> <span data-ttu-id="94a38-135">由 accountId、deviceId、policyId 和 userId 组成</span><span class="sxs-lookup"><span data-stu-id="94a38-135">Composed from accountId, deviceId, policyId and userId</span></span>|
-|<span data-ttu-id="94a38-136">userId</span><span class="sxs-lookup"><span data-stu-id="94a38-136">userId</span></span>|<span data-ttu-id="94a38-137">String</span><span class="sxs-lookup"><span data-stu-id="94a38-137">String</span></span>|<span data-ttu-id="94a38-138">用户唯一标识符, 必须为 Guid</span><span class="sxs-lookup"><span data-stu-id="94a38-138">User unique identifier, must be Guid</span></span>|
-|<span data-ttu-id="94a38-139">userName</span><span class="sxs-lookup"><span data-stu-id="94a38-139">userName</span></span>|<span data-ttu-id="94a38-140">String</span><span class="sxs-lookup"><span data-stu-id="94a38-140">String</span></span>|<span data-ttu-id="94a38-141">用户名</span><span class="sxs-lookup"><span data-stu-id="94a38-141">User name</span></span>|
-|<span data-ttu-id="94a38-142">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="94a38-142">managedDeviceId</span></span>|<span data-ttu-id="94a38-143">String</span><span class="sxs-lookup"><span data-stu-id="94a38-143">String</span></span>|<span data-ttu-id="94a38-144">托管设备唯一标识符, 必须为 Guid</span><span class="sxs-lookup"><span data-stu-id="94a38-144">Managed device unique identifier, must be Guid</span></span>|
-|<span data-ttu-id="94a38-145">deviceName</span><span class="sxs-lookup"><span data-stu-id="94a38-145">deviceName</span></span>|<span data-ttu-id="94a38-146">String</span><span class="sxs-lookup"><span data-stu-id="94a38-146">String</span></span>|<span data-ttu-id="94a38-147">设备名称</span><span class="sxs-lookup"><span data-stu-id="94a38-147">Device name</span></span>|
-|<span data-ttu-id="94a38-148">deviceConfigurationId</span><span class="sxs-lookup"><span data-stu-id="94a38-148">deviceConfigurationId</span></span>|<span data-ttu-id="94a38-149">String</span><span class="sxs-lookup"><span data-stu-id="94a38-149">String</span></span>|<span data-ttu-id="94a38-150">设备配置文件唯一标识符, 必须为 Guid</span><span class="sxs-lookup"><span data-stu-id="94a38-150">Device configuration profile unique identifier, must be Guid</span></span>|
-|<span data-ttu-id="94a38-151">deviceConfigurationName</span><span class="sxs-lookup"><span data-stu-id="94a38-151">deviceConfigurationName</span></span>|<span data-ttu-id="94a38-152">String</span><span class="sxs-lookup"><span data-stu-id="94a38-152">String</span></span>|<span data-ttu-id="94a38-153">设备配置文件名称</span><span class="sxs-lookup"><span data-stu-id="94a38-153">Device configuration profile name</span></span>|
-|<span data-ttu-id="94a38-154">platformType</span><span class="sxs-lookup"><span data-stu-id="94a38-154">platformType</span></span>|[<span data-ttu-id="94a38-155">policyPlatformType</span><span class="sxs-lookup"><span data-stu-id="94a38-155">policyPlatformType</span></span>](../resources/intune-deviceconfig-policyplatformtype.md)|<span data-ttu-id="94a38-156">平台类型。</span><span class="sxs-lookup"><span data-stu-id="94a38-156">Platform type.</span></span> <span data-ttu-id="94a38-157">可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。</span><span class="sxs-lookup"><span data-stu-id="94a38-157">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.</span></span>|
-|<span data-ttu-id="94a38-158">restrictedAppsState</span><span class="sxs-lookup"><span data-stu-id="94a38-158">restrictedAppsState</span></span>|[<span data-ttu-id="94a38-159">restrictedAppsState</span><span class="sxs-lookup"><span data-stu-id="94a38-159">restrictedAppsState</span></span>](../resources/intune-deviceconfig-restrictedappsstate.md)|<span data-ttu-id="94a38-160">受限制的应用程序状态。</span><span class="sxs-lookup"><span data-stu-id="94a38-160">Restricted apps state.</span></span> <span data-ttu-id="94a38-161">可取值为：`prohibitedApps`、`notApprovedApps`。</span><span class="sxs-lookup"><span data-stu-id="94a38-161">Possible values are: `prohibitedApps`, `notApprovedApps`.</span></span>|
-|<span data-ttu-id="94a38-162">restrictedApps</span><span class="sxs-lookup"><span data-stu-id="94a38-162">restrictedApps</span></span>|<span data-ttu-id="94a38-163">[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合</span><span class="sxs-lookup"><span data-stu-id="94a38-163">[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) collection</span></span>|<span data-ttu-id="94a38-164">违反受限制的应用程序的列表</span><span class="sxs-lookup"><span data-stu-id="94a38-164">List of violated restricted apps</span></span>|
+|<span data-ttu-id="169e3-132">id</span><span class="sxs-lookup"><span data-stu-id="169e3-132">id</span></span>|<span data-ttu-id="169e3-133">字符串</span><span class="sxs-lookup"><span data-stu-id="169e3-133">String</span></span>|<span data-ttu-id="169e3-134">对象的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="169e3-134">Unique identifier for the object.</span></span> <span data-ttu-id="169e3-135">由 accountId、deviceId、policyId 和 userId 组成</span><span class="sxs-lookup"><span data-stu-id="169e3-135">Composed from accountId, deviceId, policyId and userId</span></span>|
+|<span data-ttu-id="169e3-136">userId</span><span class="sxs-lookup"><span data-stu-id="169e3-136">userId</span></span>|<span data-ttu-id="169e3-137">String</span><span class="sxs-lookup"><span data-stu-id="169e3-137">String</span></span>|<span data-ttu-id="169e3-138">用户唯一标识符, 必须为 Guid</span><span class="sxs-lookup"><span data-stu-id="169e3-138">User unique identifier, must be Guid</span></span>|
+|<span data-ttu-id="169e3-139">userName</span><span class="sxs-lookup"><span data-stu-id="169e3-139">userName</span></span>|<span data-ttu-id="169e3-140">String</span><span class="sxs-lookup"><span data-stu-id="169e3-140">String</span></span>|<span data-ttu-id="169e3-141">用户名</span><span class="sxs-lookup"><span data-stu-id="169e3-141">User name</span></span>|
+|<span data-ttu-id="169e3-142">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="169e3-142">managedDeviceId</span></span>|<span data-ttu-id="169e3-143">String</span><span class="sxs-lookup"><span data-stu-id="169e3-143">String</span></span>|<span data-ttu-id="169e3-144">托管设备唯一标识符, 必须为 Guid</span><span class="sxs-lookup"><span data-stu-id="169e3-144">Managed device unique identifier, must be Guid</span></span>|
+|<span data-ttu-id="169e3-145">deviceName</span><span class="sxs-lookup"><span data-stu-id="169e3-145">deviceName</span></span>|<span data-ttu-id="169e3-146">String</span><span class="sxs-lookup"><span data-stu-id="169e3-146">String</span></span>|<span data-ttu-id="169e3-147">设备名称</span><span class="sxs-lookup"><span data-stu-id="169e3-147">Device name</span></span>|
+|<span data-ttu-id="169e3-148">deviceConfigurationId</span><span class="sxs-lookup"><span data-stu-id="169e3-148">deviceConfigurationId</span></span>|<span data-ttu-id="169e3-149">String</span><span class="sxs-lookup"><span data-stu-id="169e3-149">String</span></span>|<span data-ttu-id="169e3-150">设备配置文件唯一标识符, 必须为 Guid</span><span class="sxs-lookup"><span data-stu-id="169e3-150">Device configuration profile unique identifier, must be Guid</span></span>|
+|<span data-ttu-id="169e3-151">deviceConfigurationName</span><span class="sxs-lookup"><span data-stu-id="169e3-151">deviceConfigurationName</span></span>|<span data-ttu-id="169e3-152">String</span><span class="sxs-lookup"><span data-stu-id="169e3-152">String</span></span>|<span data-ttu-id="169e3-153">设备配置文件名称</span><span class="sxs-lookup"><span data-stu-id="169e3-153">Device configuration profile name</span></span>|
+|<span data-ttu-id="169e3-154">platformType</span><span class="sxs-lookup"><span data-stu-id="169e3-154">platformType</span></span>|[<span data-ttu-id="169e3-155">policyPlatformType</span><span class="sxs-lookup"><span data-stu-id="169e3-155">policyPlatformType</span></span>](../resources/intune-deviceconfig-policyplatformtype.md)|<span data-ttu-id="169e3-156">平台类型。</span><span class="sxs-lookup"><span data-stu-id="169e3-156">Platform type.</span></span> <span data-ttu-id="169e3-157">可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。</span><span class="sxs-lookup"><span data-stu-id="169e3-157">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.</span></span>|
+|<span data-ttu-id="169e3-158">restrictedAppsState</span><span class="sxs-lookup"><span data-stu-id="169e3-158">restrictedAppsState</span></span>|[<span data-ttu-id="169e3-159">restrictedAppsState</span><span class="sxs-lookup"><span data-stu-id="169e3-159">restrictedAppsState</span></span>](../resources/intune-deviceconfig-restrictedappsstate.md)|<span data-ttu-id="169e3-160">受限制的应用程序状态。</span><span class="sxs-lookup"><span data-stu-id="169e3-160">Restricted apps state.</span></span> <span data-ttu-id="169e3-161">可取值为：`prohibitedApps`、`notApprovedApps`。</span><span class="sxs-lookup"><span data-stu-id="169e3-161">Possible values are: `prohibitedApps`, `notApprovedApps`.</span></span>|
+|<span data-ttu-id="169e3-162">restrictedApps</span><span class="sxs-lookup"><span data-stu-id="169e3-162">restrictedApps</span></span>|<span data-ttu-id="169e3-163">[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合</span><span class="sxs-lookup"><span data-stu-id="169e3-163">[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) collection</span></span>|<span data-ttu-id="169e3-164">违反受限制的应用程序的列表</span><span class="sxs-lookup"><span data-stu-id="169e3-164">List of violated restricted apps</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="94a38-165">响应</span><span class="sxs-lookup"><span data-stu-id="94a38-165">Response</span></span>
-<span data-ttu-id="94a38-166">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="94a38-166">If successful, this method returns a `200 OK` response code and an updated [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="169e3-165">响应</span><span class="sxs-lookup"><span data-stu-id="169e3-165">Response</span></span>
+<span data-ttu-id="169e3-166">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="169e3-166">If successful, this method returns a `200 OK` response code and an updated [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="94a38-167">示例</span><span class="sxs-lookup"><span data-stu-id="94a38-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="169e3-167">示例</span><span class="sxs-lookup"><span data-stu-id="169e3-167">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="94a38-168">请求</span><span class="sxs-lookup"><span data-stu-id="94a38-168">Request</span></span>
-<span data-ttu-id="94a38-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="94a38-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="169e3-168">请求</span><span class="sxs-lookup"><span data-stu-id="169e3-168">Request</span></span>
+<span data-ttu-id="169e3-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="169e3-169">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedAppsViolationId}
 Content-type: application/json
@@ -94,8 +94,8 @@ Content-length: 564
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="94a38-170">响应</span><span class="sxs-lookup"><span data-stu-id="94a38-170">Response</span></span>
-<span data-ttu-id="94a38-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="94a38-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="169e3-170">响应</span><span class="sxs-lookup"><span data-stu-id="169e3-170">Response</span></span>
+<span data-ttu-id="169e3-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="169e3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -120,6 +120,7 @@ Content-Length: 613
   ]
 }
 ```
+
 
 
 

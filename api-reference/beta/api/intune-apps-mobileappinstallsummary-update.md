@@ -4,31 +4,31 @@ description: 更新 mobileAppInstallSummary 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cff057bdb80e57fa2bdfcf4b9c008dacd0a58b42
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91bbad1fc56069ec6fa66752efea4d2c0bcab90e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935071"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973724"
 ---
-# <a name="update-mobileappinstallsummary"></a><span data-ttu-id="4605a-103">更新 mobileAppInstallSummary</span><span class="sxs-lookup"><span data-stu-id="4605a-103">Update mobileAppInstallSummary</span></span>
+# <a name="update-mobileappinstallsummary"></a><span data-ttu-id="6427c-103">更新 mobileAppInstallSummary</span><span class="sxs-lookup"><span data-stu-id="6427c-103">Update mobileAppInstallSummary</span></span>
 
-> <span data-ttu-id="4605a-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4605a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6427c-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6427c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4605a-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4605a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6427c-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6427c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4605a-106">更新[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4605a-106">Update the properties of a [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object.</span></span>
+<span data-ttu-id="6427c-106">更新[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="6427c-106">Update the properties of a [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4605a-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4605a-107">Prerequisites</span></span>
-<span data-ttu-id="4605a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4605a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6427c-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="6427c-107">Prerequisites</span></span>
+<span data-ttu-id="6427c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6427c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4605a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4605a-110">Permission type</span></span>|<span data-ttu-id="4605a-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4605a-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6427c-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="6427c-110">Permission type</span></span>|<span data-ttu-id="6427c-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="6427c-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4605a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4605a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4605a-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4605a-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="4605a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4605a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4605a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4605a-115">Not supported.</span></span>|
-|<span data-ttu-id="4605a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4605a-116">Application</span></span>|<span data-ttu-id="4605a-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="4605a-117">Not supported.</span></span>|
+|<span data-ttu-id="6427c-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6427c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="6427c-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6427c-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="6427c-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6427c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6427c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6427c-115">Not supported.</span></span>|
+|<span data-ttu-id="6427c-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="6427c-116">Application</span></span>|<span data-ttu-id="6427c-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="6427c-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4605a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4605a-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6427c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6427c-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,40 +37,40 @@ ms.locfileid: "33935071"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4605a-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4605a-119">Request headers</span></span>
-|<span data-ttu-id="4605a-120">标头</span><span class="sxs-lookup"><span data-stu-id="4605a-120">Header</span></span>|<span data-ttu-id="4605a-121">值</span><span class="sxs-lookup"><span data-stu-id="4605a-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6427c-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="6427c-119">Request headers</span></span>
+|<span data-ttu-id="6427c-120">标头</span><span class="sxs-lookup"><span data-stu-id="6427c-120">Header</span></span>|<span data-ttu-id="6427c-121">值</span><span class="sxs-lookup"><span data-stu-id="6427c-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4605a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4605a-122">Authorization</span></span>|<span data-ttu-id="4605a-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4605a-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4605a-124">接受</span><span class="sxs-lookup"><span data-stu-id="4605a-124">Accept</span></span>|<span data-ttu-id="4605a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4605a-125">application/json</span></span>|
+|<span data-ttu-id="6427c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6427c-122">Authorization</span></span>|<span data-ttu-id="6427c-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="6427c-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6427c-124">接受</span><span class="sxs-lookup"><span data-stu-id="6427c-124">Accept</span></span>|<span data-ttu-id="6427c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6427c-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4605a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4605a-126">Request body</span></span>
-<span data-ttu-id="4605a-127">在请求正文中, 提供[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4605a-127">In the request body, supply a JSON representation for the [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6427c-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="6427c-126">Request body</span></span>
+<span data-ttu-id="6427c-127">在请求正文中, 提供[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6427c-127">In the request body, supply a JSON representation for the [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object.</span></span>
 
-<span data-ttu-id="4605a-128">下表显示创建[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4605a-128">The following table shows the properties that are required when you create the [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md).</span></span>
+<span data-ttu-id="6427c-128">下表显示创建[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="6427c-128">The following table shows the properties that are required when you create the [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md).</span></span>
 
-|<span data-ttu-id="4605a-129">属性</span><span class="sxs-lookup"><span data-stu-id="4605a-129">Property</span></span>|<span data-ttu-id="4605a-130">类型</span><span class="sxs-lookup"><span data-stu-id="4605a-130">Type</span></span>|<span data-ttu-id="4605a-131">说明</span><span class="sxs-lookup"><span data-stu-id="4605a-131">Description</span></span>|
+|<span data-ttu-id="6427c-129">属性</span><span class="sxs-lookup"><span data-stu-id="6427c-129">Property</span></span>|<span data-ttu-id="6427c-130">类型</span><span class="sxs-lookup"><span data-stu-id="6427c-130">Type</span></span>|<span data-ttu-id="6427c-131">说明</span><span class="sxs-lookup"><span data-stu-id="6427c-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4605a-132">id</span><span class="sxs-lookup"><span data-stu-id="4605a-132">id</span></span>|<span data-ttu-id="4605a-133">String</span><span class="sxs-lookup"><span data-stu-id="4605a-133">String</span></span>|<span data-ttu-id="4605a-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4605a-134">Key of the entity.</span></span>|
-|<span data-ttu-id="4605a-135">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4605a-135">installedDeviceCount</span></span>|<span data-ttu-id="4605a-136">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-136">Int32</span></span>|<span data-ttu-id="4605a-137">已成功安装此应用的设备数量。</span><span class="sxs-lookup"><span data-stu-id="4605a-137">Number of Devices that have successfully installed this app.</span></span>|
-|<span data-ttu-id="4605a-138">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4605a-138">failedDeviceCount</span></span>|<span data-ttu-id="4605a-139">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-139">Int32</span></span>|<span data-ttu-id="4605a-140">安装此应用失败的设备数量。</span><span class="sxs-lookup"><span data-stu-id="4605a-140">Number of Devices that have failed to install this app.</span></span>|
-|<span data-ttu-id="4605a-141">notApplicableDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4605a-141">notApplicableDeviceCount</span></span>|<span data-ttu-id="4605a-142">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-142">Int32</span></span>|<span data-ttu-id="4605a-143">不适用于此应用程序的设备数量。</span><span class="sxs-lookup"><span data-stu-id="4605a-143">Number of Devices that are not applicable for this app.</span></span>|
-|<span data-ttu-id="4605a-144">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4605a-144">notInstalledDeviceCount</span></span>|<span data-ttu-id="4605a-145">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-145">Int32</span></span>|<span data-ttu-id="4605a-146">未安装此应用的设备数量。</span><span class="sxs-lookup"><span data-stu-id="4605a-146">Number of Devices that does not have this app installed.</span></span>|
-|<span data-ttu-id="4605a-147">pendingInstallDeviceCount</span><span class="sxs-lookup"><span data-stu-id="4605a-147">pendingInstallDeviceCount</span></span>|<span data-ttu-id="4605a-148">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-148">Int32</span></span>|<span data-ttu-id="4605a-149">已通知安装此应用程序的设备数。</span><span class="sxs-lookup"><span data-stu-id="4605a-149">Number of Devices that have been notified to install this app.</span></span>|
-|<span data-ttu-id="4605a-150">installedUserCount</span><span class="sxs-lookup"><span data-stu-id="4605a-150">installedUserCount</span></span>|<span data-ttu-id="4605a-151">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-151">Int32</span></span>|<span data-ttu-id="4605a-152">其设备已成功安装此应用程序的用户数。</span><span class="sxs-lookup"><span data-stu-id="4605a-152">Number of Users whose devices have all succeeded to install this app.</span></span>|
-|<span data-ttu-id="4605a-153">failedUserCount</span><span class="sxs-lookup"><span data-stu-id="4605a-153">failedUserCount</span></span>|<span data-ttu-id="4605a-154">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-154">Int32</span></span>|<span data-ttu-id="4605a-155">具有1个或多个无法安装此应用程序的设备的用户数。</span><span class="sxs-lookup"><span data-stu-id="4605a-155">Number of Users that have 1 or more device that failed to install this app.</span></span>|
-|<span data-ttu-id="4605a-156">notApplicableUserCount</span><span class="sxs-lookup"><span data-stu-id="4605a-156">notApplicableUserCount</span></span>|<span data-ttu-id="4605a-157">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-157">Int32</span></span>|<span data-ttu-id="4605a-158">其设备全部不适用于此应用的用户数。</span><span class="sxs-lookup"><span data-stu-id="4605a-158">Number of Users whose devices were all not applicable for this app.</span></span>|
-|<span data-ttu-id="4605a-159">notInstalledUserCount</span><span class="sxs-lookup"><span data-stu-id="4605a-159">notInstalledUserCount</span></span>|<span data-ttu-id="4605a-160">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-160">Int32</span></span>|<span data-ttu-id="4605a-161">具有1个或多个未安装此应用程序的设备的用户数。</span><span class="sxs-lookup"><span data-stu-id="4605a-161">Number of Users that have 1 or more devices that did not install this app.</span></span>|
-|<span data-ttu-id="4605a-162">pendingInstallUserCount</span><span class="sxs-lookup"><span data-stu-id="4605a-162">pendingInstallUserCount</span></span>|<span data-ttu-id="4605a-163">Int32</span><span class="sxs-lookup"><span data-stu-id="4605a-163">Int32</span></span>|<span data-ttu-id="4605a-164">具有1个或多个设备且已收到安装此应用程序并有0个设备出现故障的用户数量。</span><span class="sxs-lookup"><span data-stu-id="4605a-164">Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.</span></span>|
+|<span data-ttu-id="6427c-132">id</span><span class="sxs-lookup"><span data-stu-id="6427c-132">id</span></span>|<span data-ttu-id="6427c-133">String</span><span class="sxs-lookup"><span data-stu-id="6427c-133">String</span></span>|<span data-ttu-id="6427c-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="6427c-134">Key of the entity.</span></span>|
+|<span data-ttu-id="6427c-135">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="6427c-135">installedDeviceCount</span></span>|<span data-ttu-id="6427c-136">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-136">Int32</span></span>|<span data-ttu-id="6427c-137">已成功安装此应用的设备数量。</span><span class="sxs-lookup"><span data-stu-id="6427c-137">Number of Devices that have successfully installed this app.</span></span>|
+|<span data-ttu-id="6427c-138">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="6427c-138">failedDeviceCount</span></span>|<span data-ttu-id="6427c-139">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-139">Int32</span></span>|<span data-ttu-id="6427c-140">安装此应用失败的设备数量。</span><span class="sxs-lookup"><span data-stu-id="6427c-140">Number of Devices that have failed to install this app.</span></span>|
+|<span data-ttu-id="6427c-141">notApplicableDeviceCount</span><span class="sxs-lookup"><span data-stu-id="6427c-141">notApplicableDeviceCount</span></span>|<span data-ttu-id="6427c-142">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-142">Int32</span></span>|<span data-ttu-id="6427c-143">不适用于此应用程序的设备数量。</span><span class="sxs-lookup"><span data-stu-id="6427c-143">Number of Devices that are not applicable for this app.</span></span>|
+|<span data-ttu-id="6427c-144">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="6427c-144">notInstalledDeviceCount</span></span>|<span data-ttu-id="6427c-145">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-145">Int32</span></span>|<span data-ttu-id="6427c-146">未安装此应用的设备数量。</span><span class="sxs-lookup"><span data-stu-id="6427c-146">Number of Devices that does not have this app installed.</span></span>|
+|<span data-ttu-id="6427c-147">pendingInstallDeviceCount</span><span class="sxs-lookup"><span data-stu-id="6427c-147">pendingInstallDeviceCount</span></span>|<span data-ttu-id="6427c-148">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-148">Int32</span></span>|<span data-ttu-id="6427c-149">已通知安装此应用程序的设备数。</span><span class="sxs-lookup"><span data-stu-id="6427c-149">Number of Devices that have been notified to install this app.</span></span>|
+|<span data-ttu-id="6427c-150">installedUserCount</span><span class="sxs-lookup"><span data-stu-id="6427c-150">installedUserCount</span></span>|<span data-ttu-id="6427c-151">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-151">Int32</span></span>|<span data-ttu-id="6427c-152">其设备已成功安装此应用程序的用户数。</span><span class="sxs-lookup"><span data-stu-id="6427c-152">Number of Users whose devices have all succeeded to install this app.</span></span>|
+|<span data-ttu-id="6427c-153">failedUserCount</span><span class="sxs-lookup"><span data-stu-id="6427c-153">failedUserCount</span></span>|<span data-ttu-id="6427c-154">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-154">Int32</span></span>|<span data-ttu-id="6427c-155">具有1个或多个无法安装此应用程序的设备的用户数。</span><span class="sxs-lookup"><span data-stu-id="6427c-155">Number of Users that have 1 or more device that failed to install this app.</span></span>|
+|<span data-ttu-id="6427c-156">notApplicableUserCount</span><span class="sxs-lookup"><span data-stu-id="6427c-156">notApplicableUserCount</span></span>|<span data-ttu-id="6427c-157">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-157">Int32</span></span>|<span data-ttu-id="6427c-158">其设备全部不适用于此应用的用户数。</span><span class="sxs-lookup"><span data-stu-id="6427c-158">Number of Users whose devices were all not applicable for this app.</span></span>|
+|<span data-ttu-id="6427c-159">notInstalledUserCount</span><span class="sxs-lookup"><span data-stu-id="6427c-159">notInstalledUserCount</span></span>|<span data-ttu-id="6427c-160">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-160">Int32</span></span>|<span data-ttu-id="6427c-161">具有1个或多个未安装此应用程序的设备的用户数。</span><span class="sxs-lookup"><span data-stu-id="6427c-161">Number of Users that have 1 or more devices that did not install this app.</span></span>|
+|<span data-ttu-id="6427c-162">pendingInstallUserCount</span><span class="sxs-lookup"><span data-stu-id="6427c-162">pendingInstallUserCount</span></span>|<span data-ttu-id="6427c-163">Int32</span><span class="sxs-lookup"><span data-stu-id="6427c-163">Int32</span></span>|<span data-ttu-id="6427c-164">具有1个或多个设备且已收到安装此应用程序并有0个设备出现故障的用户数量。</span><span class="sxs-lookup"><span data-stu-id="6427c-164">Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4605a-165">响应</span><span class="sxs-lookup"><span data-stu-id="4605a-165">Response</span></span>
-<span data-ttu-id="4605a-166">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4605a-166">If successful, this method returns a `200 OK` response code and an updated [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6427c-165">响应</span><span class="sxs-lookup"><span data-stu-id="6427c-165">Response</span></span>
+<span data-ttu-id="6427c-166">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6427c-166">If successful, this method returns a `200 OK` response code and an updated [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4605a-167">示例</span><span class="sxs-lookup"><span data-stu-id="4605a-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6427c-167">示例</span><span class="sxs-lookup"><span data-stu-id="6427c-167">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4605a-168">请求</span><span class="sxs-lookup"><span data-stu-id="4605a-168">Request</span></span>
-<span data-ttu-id="4605a-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4605a-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6427c-168">请求</span><span class="sxs-lookup"><span data-stu-id="6427c-168">Request</span></span>
+<span data-ttu-id="6427c-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6427c-169">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 Content-type: application/json
@@ -91,8 +91,8 @@ Content-length: 374
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4605a-170">响应</span><span class="sxs-lookup"><span data-stu-id="4605a-170">Response</span></span>
-<span data-ttu-id="4605a-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4605a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6427c-170">响应</span><span class="sxs-lookup"><span data-stu-id="6427c-170">Response</span></span>
+<span data-ttu-id="6427c-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6427c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -113,6 +113,7 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
+
 
 
 
