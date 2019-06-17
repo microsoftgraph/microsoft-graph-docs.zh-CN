@@ -4,12 +4,12 @@ description: 创建新的 activeDirectoryWindowsAutopilotDeploymentProfile 对�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e2f09d3c64630881f84cef7e4690cf82b230a61
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1ce952d6f84f9666a46820821c071622e096d51e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909167"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978323"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>创建 activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -155,6 +155,7 @@ Content-Length: 1339
   ]
 }
 ```
+
 
 
 

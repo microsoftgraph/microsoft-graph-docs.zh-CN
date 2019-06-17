@@ -4,12 +4,12 @@ description: 适用于 iOS EDU 的受信任的根和 PFX 证书。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4305745c8b9d12bf19c4e8be6c10f24076ec29f1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 30e7a68f76c60fafff9fc2b035a65a60307f775d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946502"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981466"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33946502"
   "certificateValidityPeriodScale": "String"
 }
 ```
+
 
 
 

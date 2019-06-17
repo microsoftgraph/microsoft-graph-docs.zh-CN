@@ -1,23 +1,23 @@
 ---
-title: 获取 managedDeviceMobileAppConfigurationDeviceSummary
-description: 读取 managedDeviceMobileAppConfigurationDeviceSummary 对象的属性和关系。
+title: 获取 deviceAppManagementTask
+description: 读取 deviceAppManagementTask 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 412c45a3adcc333210be14efcb80cf266ecdc8e7
+ms.openlocfilehash: 49cf3daa01db58deedf6b929b2dcbea9dcf47d2f
 ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974725"
+ms.locfileid: "35002327"
 ---
-# <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>获取 managedDeviceMobileAppConfigurationDeviceSummary
+# <a name="get-deviceappmanagementtask"></a>获取 deviceAppManagementTask
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) 对象的属性和关系。
+读取[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,7 +34,7 @@ ms.locfileid: "34974725"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary
+GET /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -50,14 +50,14 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary
+GET https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
 ### <a name="response"></a>响应
@@ -65,21 +65,22 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 551
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",
-    "id": "9997c455-c455-9997-55c4-979955c49799",
-    "pendingCount": 12,
-    "notApplicableCount": 2,
-    "notApplicablePlatformCount": 10,
-    "successCount": 12,
-    "errorCount": 10,
-    "failedCount": 11,
-    "conflictCount": 13,
-    "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
-    "configurationVersion": 4
+    "@odata.type": "#microsoft.graph.deviceAppManagementTask",
+    "id": "814545cc-45cc-8145-cc45-4581cc454581",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "dueDateTime": "2017-01-01T00:02:18.1994089-08:00",
+    "category": "advancedThreatProtection",
+    "priority": "high",
+    "creator": "Creator value",
+    "creatorNotes": "Creator Notes value",
+    "assignedTo": "Assigned To value",
+    "status": "pending"
   }
 }
 ```

@@ -4,12 +4,12 @@ description: 指示有关应用程序为何具有特定安装状态的其他详�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb3978f3a4ac27db2f4e2a25fd92a4d14151f0d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 439a6c2b4a903a3a2e6b8dce9340e7ca4b54362d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949722"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993317"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33949722"
 |minimumOsVersionNotMet|-1002|目标设备上的 OS 版本小于配置的最小值。|
 |minimumDiskSpaceNotMet|-1001|目标设备上的可用磁盘空间小于配置的最小值。|
 |processorArchitectureNotApplicable|-1000|设备体系结构 (例如, x86/amd64) 不适用于应用程序。|
+
 
 
 

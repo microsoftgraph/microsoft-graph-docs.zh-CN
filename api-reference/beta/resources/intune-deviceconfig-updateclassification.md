@@ -4,12 +4,12 @@ description: 自动更新分类的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1851ed4dda3d0af631632c1a2e8234794628cbe
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 195d034cd4651515e6ccf0b1dcf1dbc3fbf534ac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944640"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978946"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33944640"
 |recommendedAndImportant|1|建议和重要。|
 |重要|双面|重要.|
 |无|第三章|无。|
+
 
 
 

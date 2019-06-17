@@ -4,12 +4,12 @@ description: 网络代理服务器策略。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11ea0ef9b9714f0abe012f705bb54867b29896b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0b8424a31686605cd0c992d696e2db21350347c6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944297"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982187"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33944297"
   "useForLocalAddresses": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 windows10VpnConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 177d0ae755d3b5976b988084c656f49de5341af9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 732ea7a7aa255e3dbef5dd3357f3a7905d4a8cca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918407"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977896"
 ---
 # <a name="delete-windows10vpnconfiguration"></a>删除 windows10VpnConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

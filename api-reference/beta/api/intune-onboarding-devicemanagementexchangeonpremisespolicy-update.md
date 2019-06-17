@@ -4,12 +4,12 @@ description: 更新 deviceManagementExchangeOnPremisesPolicy 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84813ed63976f298e2b768e96ea10b9f9cf6dec8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 877cce60631d8bae03b35fde2fe4abb0c29be0d3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900108"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981025"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>更新 deviceManagementExchangeOnPremisesPolicy
 
@@ -128,6 +128,7 @@ Content-Length: 714
   ]
 }
 ```
+
 
 
 

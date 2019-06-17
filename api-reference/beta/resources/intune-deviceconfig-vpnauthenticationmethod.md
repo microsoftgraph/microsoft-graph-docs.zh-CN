@@ -4,12 +4,12 @@ description: VPN 身份验证方法。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f75c7ec53f406e7f998a89faa8d1dabf4c650de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 343b8e3809a3f61926521a43d873161b2d5eee5f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944619"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994312"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 枚举类型
 
@@ -24,7 +24,9 @@ VPN 身份验证方法。
 |:---|:---|:---|
 |证书|0|使用证书进行身份验证。|
 |usernameAndPassword|1|使用用户名和密码进行身份验证。|
+|sharedSecret|双面|使用共享密钥进行身份验证。  仅对 iOS IKEv2 有效。|
 |derivedCredential|第三章|使用派生的凭据进行身份验证。  仅对 iOS 有效。|
+
 
 
 

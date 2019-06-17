@@ -4,12 +4,12 @@ description: VPN 按需规则连接域操作。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5202c4bc2871697481f7ea1c5047b495f90a7c39
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4ce51a66957eff9d7b760796247c06a33a88accd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944563"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991609"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 枚举类型
 
@@ -24,6 +24,7 @@ VPN 按需规则连接域操作。
 |:---|:---|:---|
 |connectIfNeeded|0|如果需要, 请进行连接。|
 |neverConnect|1|从不连接。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 包含 Win32 应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92ce6dcc6df7d3743f66d77a33eb6fd7482d10f7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f6577b93a3b3eab19f0688ae2b26dcec03a526bd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949666"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993268"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 
@@ -130,7 +130,9 @@ ms.locfileid: "33949666"
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "minimumFreeDiskSpaceInMB": 1024,
   "minimumMemoryInMB": 1024,
@@ -182,6 +184,7 @@ ms.locfileid: "33949666"
   "setupFilePath": "String"
 }
 ```
+
 
 
 

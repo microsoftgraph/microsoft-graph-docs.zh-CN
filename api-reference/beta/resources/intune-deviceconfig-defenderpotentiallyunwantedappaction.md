@@ -4,12 +4,12 @@ description: 要对检测到的可能有害的应用程序 (PUA) 执行的 Defen
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de59b3f3e835f11b172bb24cfb05f0af423be6e5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3816fe9e4366d21ddab43558ea6ab703a2d4d660
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947356"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979856"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947356"
 |deviceDefault|0|PUA 保护已关闭。 Defender 将无法抵御可能有害的应用程序。|
 |数据|1|PUA 保护已开启。 已检测到的项目被阻止。 它们将显示在历史记录中, 以及其他威胁。|
 |跟踪|双面|审核模式。 Defender 将检测可能有害的应用程序, 但不执行任何操作。 您可以通过在事件查看器中搜索由 Defender 创建的事件, 查看有关应用程序 Defender 执行操作的相关信息。|
+
 
 
 

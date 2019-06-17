@@ -4,12 +4,12 @@ description: 列出 managedDeviceMobileAppConfigurationAssignment 对象的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2752dde5d4ead8e45dff751b2d1f114eca37238c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8f32a02fd0e9fb9191226d644e5147035bd388b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935669"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974844"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>列出 managedDeviceMobileAppConfigurationAssignments
 
@@ -76,6 +76,7 @@ Content-Length: 287
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: VPN 代理服务器。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26f15e8e2b6982c322ffc78cb9d6270b08bcbc3c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 75958584e0fb0dbb442b38954438567bffa1b2fb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944241"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991742"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer 资源类型
 
@@ -51,6 +51,7 @@ VPN 代理服务器。
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
 
 
 

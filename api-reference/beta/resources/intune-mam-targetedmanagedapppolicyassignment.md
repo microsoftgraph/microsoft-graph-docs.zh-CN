@@ -4,12 +4,12 @@ description: 组或应用的部署类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69b348671f9908db570b59cf75544950add90f86
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8dac2ff59cd749fcf487c53817d2b2c3c160f69a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940615"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994592"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
 
@@ -53,6 +53,7 @@ ms.locfileid: "33940615"
   }
 }
 ```
+
 
 
 

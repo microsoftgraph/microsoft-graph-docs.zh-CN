@@ -4,12 +4,12 @@ description: 包含 Windows Universal AppX 业务线应用的属性和继承的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 637da936ccdb7befeff7fc29e52a3e11be9995d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b26e4575ef79c59efa6a13367d7cd7436f7165b0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949407"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978204"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>windowsUniversalAppX 资源类型
 
@@ -128,11 +128,14 @@ ms.locfileid: "33949407"
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "String"
 }
 ```
+
 
 
 

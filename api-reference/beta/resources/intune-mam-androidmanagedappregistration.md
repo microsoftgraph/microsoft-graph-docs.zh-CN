@@ -4,12 +4,12 @@ description: 表示特定用户具有管理功能的 Android 应用的同步详�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6958b53ef27495f48572f7ff3854e3392a9f4f8c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d8d7c496540f5200e0232f388bbe3fac3b999cba
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940923"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978624"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 
@@ -95,6 +95,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "patchVersion": "String"
 }
 ```
+
 
 
 

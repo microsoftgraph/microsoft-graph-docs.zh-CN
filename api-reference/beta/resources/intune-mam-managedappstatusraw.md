@@ -4,12 +4,12 @@ description: 表示有关组织应用保护和配置的非类型化状态报告�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 529b6b654c176b5062910a2cea0d03622faa78c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12d451a87012da930bb7330cd8eb63ecaa3fec1f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940678"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994648"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
 
@@ -58,6 +58,7 @@ ms.locfileid: "33940678"
   }
 }
 ```
+
 
 
 

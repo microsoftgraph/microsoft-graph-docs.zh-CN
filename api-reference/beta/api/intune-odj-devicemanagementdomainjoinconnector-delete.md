@@ -1,23 +1,23 @@
 ---
-title: 删除 ndesConnector
-description: 删除 ndesConnector。
+title: 删除 deviceManagementDomainJoinConnector
+description: 删除 deviceManagementDomainJoinConnector。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a680f34580405009c0d0dbe13a63c7cd864fb90
+ms.openlocfilehash: 8639b3533dd600d2dbe53dda70981541a27289bd
 ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976398"
+ms.locfileid: "35002124"
 ---
-# <a name="delete-ndesconnector"></a>删除 ndesConnector
+# <a name="delete-devicemanagementdomainjoinconnector"></a>删除 deviceManagementDomainJoinConnector
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)。
+删除[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,7 +34,7 @@ ms.locfileid: "34976398"
 }
 -->
 ``` http
-DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
+DELETE /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -54,7 +54,7 @@ DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesConnectorId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
 ```
 
 ### <a name="response"></a>响应

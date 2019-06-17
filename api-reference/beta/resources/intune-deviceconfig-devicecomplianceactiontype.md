@@ -4,12 +4,12 @@ description: 计划操作类型枚举
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37caa3ca741c752a67a9f90222856b31fa4978c3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 05f9df39c563a47fa571a4badcf789ea4ddb08b1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947202"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979527"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33947202"
 |removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
 |pushNotification|第|将推送通知发送到设备|
 |remoteLock|10 |远程锁定设备|
+
 
 
 

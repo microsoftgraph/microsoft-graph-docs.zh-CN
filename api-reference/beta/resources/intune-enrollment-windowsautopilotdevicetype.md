@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 283aec39e25d09ea40f39fee3b35ac491d0ff228
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b673e1225aceb059557142bf750073c1e39a6ba3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941441"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993878"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>windowsAutopilotDeviceType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33941441"
 |:---|:---|:---|
 |windowsPc|0|Windows 电脑|
 |surfaceHub2|1|Surface Hub 2|
+
 
 
 

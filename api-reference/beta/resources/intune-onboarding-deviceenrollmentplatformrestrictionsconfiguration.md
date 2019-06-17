@@ -4,12 +4,12 @@ description: 限制用户可以注册的设备类型的设备注册配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 009d43eeab219cc482dd1258c1e33426dec81cb1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b4f4dc3eb25efe1fe14bd1b12bea2f196f92ccea
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940447"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993128"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>deviceEnrollmentPlatformRestrictionsConfiguration 资源类型
 
@@ -123,6 +123,7 @@ ms.locfileid: "33940447"
   }
 }
 ```
+
 
 
 

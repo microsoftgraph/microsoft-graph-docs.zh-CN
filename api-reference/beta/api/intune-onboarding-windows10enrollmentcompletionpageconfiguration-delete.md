@@ -4,12 +4,12 @@ description: 删除 windows10EnrollmentCompletionPageConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a3530aa9b281bb1512a2cdc86e3abe91b204721
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ccd0c48e6892ad9c5af7656d5ce2b3eeac9bfbda
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899772"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980521"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>删除 windows10EnrollmentCompletionPageConfiguration
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
