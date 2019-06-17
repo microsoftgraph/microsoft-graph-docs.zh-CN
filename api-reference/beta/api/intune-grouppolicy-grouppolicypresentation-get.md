@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentation 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9fc2109a963482d92acf0ce2a577af610123bdf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4ba5d2527be67a7375b56758677dd15e8b88742b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905047"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985022"
 ---
 # <a name="get-grouppolicypresentation"></a>获取 groupPolicyPresentation
 
@@ -77,6 +77,7 @@ Content-Length: 232
   }
 }
 ```
+
 
 
 

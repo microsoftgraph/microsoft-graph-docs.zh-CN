@@ -4,12 +4,12 @@ description: 用于标识自动登录展台配置的类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a3f90bb52d05e0cd5f3c46da268cf2829aa8c2f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58e2d250bb9f88ecf32460d5cf1bb593fb0850d3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943905"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978540"
 ---
 # <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "33943905"
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
+
 
 
 

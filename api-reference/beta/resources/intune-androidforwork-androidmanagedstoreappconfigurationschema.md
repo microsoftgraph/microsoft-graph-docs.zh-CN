@@ -4,12 +4,12 @@ description: 描述 Android 应用程序的自定义配置的架构。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3a69b7a03f706f6697985587d3cda2d25558143
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35d2b8a3c380be46865e208471af5467ca6a46f8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950548"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987710"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>androidManagedStoreAppConfigurationSchema 资源类型
 
@@ -75,6 +75,7 @@ ms.locfileid: "33950548"
   ]
 }
 ```
+
 
 
 

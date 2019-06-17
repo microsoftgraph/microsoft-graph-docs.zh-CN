@@ -4,12 +4,12 @@ description: 更新 managedAndroidStoreApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aff830d0abf9dbf872bc0f7f1252f24ba633cfe9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4e635cac001a7c4283da931845e314fcb5ff1406
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935725"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974935"
 ---
 # <a name="update-managedandroidstoreapp"></a>更新 managedAndroidStoreApp
 
@@ -193,6 +193,7 @@ Content-Length: 1436
   }
 }
 ```
+
 
 
 

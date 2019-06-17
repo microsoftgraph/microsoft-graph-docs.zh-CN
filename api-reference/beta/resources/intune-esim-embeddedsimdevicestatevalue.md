@@ -4,12 +4,12 @@ description: 描述嵌入的 SIM 激活代码的各种状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1144db582b7e6aa5f38043797cd15f3b009d4d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a22641d40b05fa41cc9542df5237a2e9e278a401
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941315"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987298"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33941315"
 |error|5|指定此配置文件存在错误。|
 |deleted|型|指定将配置文件从设备中删除。|
 |removedByUser|步|指定用户从设备中删除配置文件|
+
 
 
 

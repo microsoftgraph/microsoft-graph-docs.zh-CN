@@ -4,12 +4,12 @@ description: iOS Volume Purchase Program 设备许可证分配。 此类不支�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d0a8809f93c6736db118e682e2a55f22b023452
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6236b6f1d65a5b1d07a70407554f5af7b344258c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950387"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979324"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>iosVppAppAssignedDeviceLicense 资源类型
 
@@ -65,6 +65,7 @@ iOS Volume Purchase Program 设备许可证分配。 此类不支持创建、删
   "deviceName": "String"
 }
 ```
+
 
 
 

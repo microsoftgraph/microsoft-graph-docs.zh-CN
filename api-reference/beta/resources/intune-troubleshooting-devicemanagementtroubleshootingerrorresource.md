@@ -4,12 +4,12 @@ description: 表示指向疑难解答信息的链接的对象, 则该链接可�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 712832420b556517be8ef053cc6cd292acfeed86
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6aa8493638a4cdcc486cce0a0036328a2ff359e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939845"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988186"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>deviceManagementTroubleshootingErrorResource 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33939845"
   "link": "String"
 }
 ```
+
 
 
 

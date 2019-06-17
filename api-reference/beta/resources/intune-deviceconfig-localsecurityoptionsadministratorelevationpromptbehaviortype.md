@@ -4,12 +4,12 @@ description: LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5039fca8b3cc90e1fd87f0ff11a23685e880985
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24434b710a80e8839b95168204a4d68b31c20b4c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946033"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989355"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 
@@ -29,6 +29,7 @@ LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 |promptForCredentials|4|提示输入凭据|
 |promptForConsent|5|同意提示|
 |promptForConsentForNonWindowsBinaries|型|非 Windows 二进制文件的同意提示|
+
 
 
 

@@ -4,12 +4,12 @@ description: 帐户安全基准的每个类别合规性状态摘要的安全基�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd8f40c2997e512f690dcb48908f22b80d7e34c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 00735cb51952ec9cc8104a1d2f142d74cb773e05
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33956923"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983447"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>securityBaselineCategoryStateSummary 资源类型
 
@@ -67,6 +67,7 @@ ms.locfileid: "33956923"
   "displayName": "String"
 }
 ```
+
 
 
 

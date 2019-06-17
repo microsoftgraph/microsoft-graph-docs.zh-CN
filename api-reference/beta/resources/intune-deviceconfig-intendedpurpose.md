@@ -4,12 +4,12 @@ description: PFX 导入选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfe6b9fb6775d4314ff71b8760756856f9c840ab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0ac39e55e14e5e1a4491e9576e23ab585f894ce5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946579"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988403"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 枚举类型
 
@@ -27,6 +27,7 @@ PFX 导入选项。
 |smimeSigning|第三章|SmimeSigning|
 |vpn|4|VPN|
 |wifi|5|Wifi|
+
 
 
 

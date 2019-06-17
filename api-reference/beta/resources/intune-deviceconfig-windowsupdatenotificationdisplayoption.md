@@ -4,12 +4,12 @@ description: Windows 更新通知显示选项
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b11c793d2ef294bf9026de9f1869cdea28babfab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87ae2750ee5aea35abbbc3077940a9e1ab2ee4ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943632"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978708"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>windowsUpdateNotificationDisplayOption 枚举类型
 
@@ -26,6 +26,7 @@ Windows 更新通知显示选项
 |defaultNotifications|1|使用默认的 Windows 更新通知。|
 |restartWarningsOnly|双面|关闭所有通知, 但不包括重新启动警告。|
 |disableAllNotifications|第三章|关闭所有通知, 包括重启警告。|
+
 
 
 

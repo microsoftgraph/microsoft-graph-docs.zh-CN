@@ -4,12 +4,12 @@ description: 给定设备的设备符合性设置状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2176876460e7f146e86fb0d29ac995766e1ee84a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 63d73fbf584daeda20de327c1b62a9ccaf38b3ac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947062"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995460"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 
@@ -74,6 +74,7 @@ ms.locfileid: "33947062"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 windowsManagementAppHealthSummary 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b83bbf7b9cc3ad4e8d079d380eccc8c9bc7cb44
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 46b03b2cc81fcb2787ebef4e7b6e7d84a4f3e309
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909013"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978386"
 ---
 # <a name="get-windowsmanagementapphealthsummary"></a>获取 windowsManagementAppHealthSummary
 
@@ -77,6 +77,7 @@ Content-Length: 239
   }
 }
 ```
+
 
 
 

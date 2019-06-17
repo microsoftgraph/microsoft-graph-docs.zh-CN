@@ -4,12 +4,12 @@ description: 介绍 UPN 和设备 id 上下文中的子应用程序的安装状�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35080ad21137387fb63ff2fcb22233ff1be74cde
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6013482fe69aa7a4ccf789c677ef448e0a277991
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949890"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993352"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState 资源类型
 
@@ -56,6 +56,7 @@ ms.locfileid: "33949890"
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

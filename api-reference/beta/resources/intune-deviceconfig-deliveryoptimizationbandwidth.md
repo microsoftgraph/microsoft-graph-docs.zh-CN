@@ -4,12 +4,12 @@ description: 带宽限制类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9dbf3fc59b6cc654e788d32050d825841b1b931
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ad0bc0bbcc8d9907a7cff8c7dc1d116c37b8f58f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947300"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979730"
 ---
 # <a name="deliveryoptimizationbandwidth-resource-type"></a>deliveryOptimizationBandwidth 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "33947300"
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidth"
 }
 ```
+
 
 
 

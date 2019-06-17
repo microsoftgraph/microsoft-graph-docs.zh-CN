@@ -4,12 +4,12 @@ description: 表示 ADMX decimalTextBox 元素和 ADMX 十进制元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b65d0fb23231fa1e06edfc8e6c053cfa681cb006
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 07f35a01611f1812d35a2a9c35643650241fa007
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941091"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982929"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>groupPolicyPresentationDecimalTextBox 资源类型
 
@@ -71,6 +71,7 @@ ms.locfileid: "33941091"
   "maxValue": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 强制进行帐户宽的默认设备符合性策略规则。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf41e4ecc15c88e1d2bda61742dd8d96b91821f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cc91f41e3144f21aeef706431ebaabb6bc98328b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947391"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979926"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>defaultDeviceCompliancePolicy 资源类型
 
@@ -75,6 +75,7 @@ ms.locfileid: "33947391"
   "version": 1024
 }
 ```
+
 
 
 

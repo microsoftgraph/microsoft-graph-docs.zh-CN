@@ -4,12 +4,12 @@ description: 列出 groupPolicyConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 799a4ba7cda5c17748d1e64c350cf8765305d7b3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 36f7b8d416ec12f09c5d6a0b17a5858ce185797c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905173"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984875"
 ---
 # <a name="list-grouppolicyconfigurations"></a>列出 groupPolicyConfigurations
 
@@ -77,6 +77,7 @@ Content-Length: 374
   ]
 }
 ```
+
 
 
 

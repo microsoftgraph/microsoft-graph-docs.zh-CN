@@ -4,12 +4,12 @@ description: 更新 networkIPv4ConfigurationManagementCondition 对象的属性�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b19f29064e0fe5bd673c0ffbc0677959b9be844c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 702e3bfba5556b7292f3eba32399552196ad745a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905271"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984378"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>更新 networkIPv4ConfigurationManagementCondition
 
@@ -59,7 +59,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0。0/8|
+|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
 |ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
@@ -130,6 +130,7 @@ Content-Length: 697
   ]
 }
 ```
+
 
 
 

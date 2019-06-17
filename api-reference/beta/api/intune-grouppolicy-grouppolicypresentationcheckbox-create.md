@@ -4,12 +4,12 @@ description: 创建新的 groupPolicyPresentationCheckBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33ede1801a7aa965ce4eef38788684b89c4b712b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 81f8206f93b850d0ba6c274e132d0839e13266ab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905033"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985134"
 ---
 # <a name="create-grouppolicypresentationcheckbox"></a>创建 groupPolicyPresentationCheckBox
 
@@ -91,6 +91,7 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
+
 
 
 

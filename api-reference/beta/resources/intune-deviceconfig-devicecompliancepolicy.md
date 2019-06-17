@@ -4,12 +4,12 @@ description: '这是符合性策略的基类。 符合性策略特定于平台�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50d510f8d02cbe1c6eac5e894e246150c220c730
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 11dd53ba246f712ed95cb9db12ddce7acc27b208
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947146"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979485"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy 资源类型
 
@@ -72,6 +72,7 @@ ms.locfileid: "33947146"
   "version": 1024
 }
 ```
+
 
 
 

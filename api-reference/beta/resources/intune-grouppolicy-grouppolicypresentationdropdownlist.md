@@ -4,12 +4,12 @@ description: 表示 ADMX dropdownList 元素和 ADMX 枚举元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44c3188dda2235ea820a48a78ecfccbb9b66d70f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af9746ecba0b92bd68d7f0bd4765f4fe022864ba
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941119"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982922"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>groupPolicyPresentationDropdownList 资源类型
 
@@ -75,6 +75,7 @@ ms.locfileid: "33941119"
   "required": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 管理员同意状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2e98813ff0166517f2c9f4d6c01c26411834c01
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0a5f9cf9be27a11355c431f507cbb83f00c3637
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943373"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983349"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminConsentState 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33943373"
 |notConfigured|0|管理员未配置项目|
 |granted|1|管理员授予的项目|
 |notGranted|双面|Admin deos 不授予项目|
+
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: 删除 iosUpdateConfiguration
-description: 删除 iosUpdateConfiguration。
+title: scopedForResource 函数
+description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06379b412e53fcade931c55901adc34be4527256
+ms.openlocfilehash: f0745ef277ad852ef061ea0f4f352cf07e808604
 ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977259"
+ms.locfileid: "35002264"
 ---
-# <a name="delete-iosupdateconfiguration"></a>删除 iosUpdateConfiguration
+# <a name="scopedforresource-function"></a>scopedForResource 函数
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除 [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md)。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -34,9 +34,7 @@ ms.locfileid: "34977259"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /deviceManagement/scopedForResource
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -46,23 +44,36 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求 URL 中，提供以下查询参数（含值）。
+下表显示了可用于此函数的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|资源|String|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 Boolean。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/scopedForResource(resource='parameterValue')
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 21
+
+{
+  "value": true
+}
 ```
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 699737f8a5ba43f72579052bfcc797aac2a635da
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0099abaf692a51a4cc2c2ea0630777ab683876d5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950779"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986765"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>mediaContentRatingUnitedKingdom 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33950779"
   "tvRating": "String"
 }
 ```
+
 
 
 

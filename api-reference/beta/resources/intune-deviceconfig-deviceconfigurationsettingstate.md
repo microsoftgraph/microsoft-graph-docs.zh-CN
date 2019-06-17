@@ -4,12 +4,12 @@ description: 给定设备的设备配置设置状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc19501be107d4b63d1bd9fe9e579070f392ba79
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3e5c62cbd5ef1daa3adf0ba03931bc65b2b6d9b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995950"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -68,6 +68,7 @@ ms.locfileid: "33947006"
   "currentValue": "String"
 }
 ```
+
 
 
 

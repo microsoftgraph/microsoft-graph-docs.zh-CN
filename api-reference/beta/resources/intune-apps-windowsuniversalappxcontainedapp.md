@@ -4,12 +4,12 @@ description: 一个表示包含的 WindowsUniversalAppX 应用程序的应用程
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a98d901e7a48a082c47083e0c1a5684e9b7d33c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0345f8f6a2c5872e339d2ad69863e5c12677d861
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949372"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985659"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp 资源类型
 
@@ -55,6 +55,7 @@ ms.locfileid: "33949372"
   "appUserModelId": "String"
 }
 ```
+
 
 
 

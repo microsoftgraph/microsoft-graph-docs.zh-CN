@@ -4,12 +4,12 @@ description: 证书目标存储的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 641ea734cb352a81fa169f6251bcd8ab8f6663ce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b2baed69b2f154bf2fcc6653d4506ace07791b94
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947454"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990146"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>certificateDestinationStore 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947454"
 |computerCertStoreRoot|0|计算机证书存储-根。|
 |computerCertStoreIntermediate|1|计算机证书存储-中级。|
 |userCertStoreIntermediate|双面|用户证书存储-中级。|
+
 
 
 

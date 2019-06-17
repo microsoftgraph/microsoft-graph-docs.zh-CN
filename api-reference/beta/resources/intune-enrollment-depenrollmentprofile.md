@@ -4,12 +4,12 @@ description: DepEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da176fcdd2bd59a504701348e8b2b4f298bd9bda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7b12a0fae084e11225e886b70ae4c58b7ab0eaf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941644"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987878"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile 资源类型
 
@@ -119,6 +119,7 @@ DepEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文
   "enableSharedIPad": true
 }
 ```
+
 
 
 

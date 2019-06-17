@@ -4,12 +4,12 @@ description: 在切换到 Internet Explorer 之前, 边缘会显示什么消息�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 748cafef86666cd795e48581e07303314c556b13
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3d467d092980bce2ceff71897f3f7775d378675d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946943"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988389"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>internetExplorerMessageSetting 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33946943"
 |禁用|1|禁用.|
 |enabled|双面|了.|
 |keepGoing|第三章|KeepGoing.|
+
 
 
 

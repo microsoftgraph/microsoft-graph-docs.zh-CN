@@ -4,12 +4,12 @@ description: 设备交换访问状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa5a49ca352163f41ed747c4bf33c150ce2ecba9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35c110734078484f7bec5aac1ad31df0b66a0473
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942064"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983034"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33942064"
 |支持|双面|设备有权访问 Exchange|
 |堵塞|第三章|设备在 Exchange 中被阻止|
 |隔离|4|Exchange 中的设备被隔离|
+
 
 
 

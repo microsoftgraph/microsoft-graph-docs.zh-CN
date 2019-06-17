@@ -4,12 +4,12 @@ description: 指定区域设置的通知消息模板的文本内容。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 473aad924d3dd9e0857c364230ec8391bf92b451
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e357eaaa80600b6791c5b0a03132f0ef1c9f081b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940489"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994389"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
@@ -60,6 +60,7 @@ ms.locfileid: "33940489"
   "isDefault": true
 }
 ```
+
 
 
 

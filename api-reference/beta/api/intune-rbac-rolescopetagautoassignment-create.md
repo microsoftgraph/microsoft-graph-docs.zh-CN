@@ -1,30 +1,30 @@
 ---
-title: 创建 intuneBrandingProfileAssignment
-description: 创建新的 intuneBrandingProfileAssignment 对象。
+title: 创建 roleScopeTagAutoAssignment
+description: 创建新的 roleScopeTagAutoAssignment 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51797d3b65f4ae232919f79cd37d21360052ee7a
+ms.openlocfilehash: 5d221951cc60257a5df315d0c6e233f8c2082528
 ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990574"
+ms.locfileid: "35002432"
 ---
-# <a name="create-intunebrandingprofileassignment"></a>创建 intuneBrandingProfileAssignment
+# <a name="create-rolescopetagautoassignment"></a>创建 roleScopeTagAutoAssignment
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)对象。
+创建新的[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -34,7 +34,7 @@ ms.locfileid: "34990574"
 }
 -->
 ``` http
-POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments
+POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -44,31 +44,31 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignme
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 intuneBrandingProfileAssignment 对象的 JSON 表示形式。
+在请求正文中, 提供 roleScopeTagAutoAssignment 对象的 JSON 表示形式。
 
-下表显示创建 intuneBrandingProfileAssignment 时所需的属性。
+下表显示创建 roleScopeTagAutoAssignment 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|为品牌配置文件分配的工作分配目标。|
+|id|String|实体的键。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|特定角色范围标记的自动分配目标。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
 Content-type: application/json
-Content-length: 171
+Content-length: 166
 
 {
-  "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
+  "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
@@ -80,11 +80,11 @@ Content-length: 171
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 220
+Content-Length: 215
 
 {
-  "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
-  "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
+  "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
+  "id": "256e6375-6375-256e-7563-6e2575636e25",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
