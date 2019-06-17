@@ -4,28 +4,29 @@ description: 用户已被标记的原因
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e2e8d473ba1dad1db8cd53d990a4cd8150b5544
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8b07670130f386a5b4a3c53495464652aee7e686
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940741"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996286"
 ---
-# <a name="managedappflaggedreason-enum-type"></a><span data-ttu-id="6d8ff-103">managedAppFlaggedReason 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6d8ff-103">managedAppFlaggedReason enum type</span></span>
+# <a name="managedappflaggedreason-enum-type"></a><span data-ttu-id="c634c-103">managedAppFlaggedReason 枚举类型</span><span class="sxs-lookup"><span data-stu-id="c634c-103">managedAppFlaggedReason enum type</span></span>
 
-> <span data-ttu-id="6d8ff-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6d8ff-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c634c-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c634c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6d8ff-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6d8ff-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c634c-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c634c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6d8ff-106">用户已被标记的原因</span><span class="sxs-lookup"><span data-stu-id="6d8ff-106">The reason for which a user has been flagged</span></span>
+<span data-ttu-id="c634c-106">用户已被标记的原因</span><span class="sxs-lookup"><span data-stu-id="c634c-106">The reason for which a user has been flagged</span></span>
 
-## <a name="members"></a><span data-ttu-id="6d8ff-107">成员</span><span class="sxs-lookup"><span data-stu-id="6d8ff-107">Members</span></span>
-|<span data-ttu-id="6d8ff-108">成员</span><span class="sxs-lookup"><span data-stu-id="6d8ff-108">Member</span></span>|<span data-ttu-id="6d8ff-109">值</span><span class="sxs-lookup"><span data-stu-id="6d8ff-109">Value</span></span>|<span data-ttu-id="6d8ff-110">说明</span><span class="sxs-lookup"><span data-stu-id="6d8ff-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c634c-107">成员</span><span class="sxs-lookup"><span data-stu-id="c634c-107">Members</span></span>
+|<span data-ttu-id="c634c-108">成员</span><span class="sxs-lookup"><span data-stu-id="c634c-108">Member</span></span>|<span data-ttu-id="c634c-109">值</span><span class="sxs-lookup"><span data-stu-id="c634c-109">Value</span></span>|<span data-ttu-id="c634c-110">说明</span><span class="sxs-lookup"><span data-stu-id="c634c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6d8ff-111">无</span><span class="sxs-lookup"><span data-stu-id="6d8ff-111">none</span></span>|<span data-ttu-id="6d8ff-112">0</span><span class="sxs-lookup"><span data-stu-id="6d8ff-112">0</span></span>|<span data-ttu-id="6d8ff-113">无问题。</span><span class="sxs-lookup"><span data-stu-id="6d8ff-113">No issue.</span></span>|
-|<span data-ttu-id="6d8ff-114">rootedDevice</span><span class="sxs-lookup"><span data-stu-id="6d8ff-114">rootedDevice</span></span>|<span data-ttu-id="6d8ff-115">1</span><span class="sxs-lookup"><span data-stu-id="6d8ff-115">1</span></span>|<span data-ttu-id="6d8ff-116">应用注册在根/解锁设备上运行。</span><span class="sxs-lookup"><span data-stu-id="6d8ff-116">The app registration is running on a rooted/unlocked device.</span></span>|
-|<span data-ttu-id="6d8ff-117">androidBootloaderUnlocked</span><span class="sxs-lookup"><span data-stu-id="6d8ff-117">androidBootloaderUnlocked</span></span>|<span data-ttu-id="6d8ff-118">双面</span><span class="sxs-lookup"><span data-stu-id="6d8ff-118">2</span></span>|<span data-ttu-id="6d8ff-119">应用注册在解锁了启用程序的 Android 设备上运行。</span><span class="sxs-lookup"><span data-stu-id="6d8ff-119">The app registration is running on an Android device on which the bootloader is unlocked.</span></span>|
-|<span data-ttu-id="6d8ff-120">androidFactoryRomModified</span><span class="sxs-lookup"><span data-stu-id="6d8ff-120">androidFactoryRomModified</span></span>|<span data-ttu-id="6d8ff-121">第三章</span><span class="sxs-lookup"><span data-stu-id="6d8ff-121">3</span></span>|<span data-ttu-id="6d8ff-122">应用注册在已修改出厂 ROM 的 Android 设备上运行。</span><span class="sxs-lookup"><span data-stu-id="6d8ff-122">The app registration is running on an Android device on which the factory ROM has been modified.</span></span>|
+|<span data-ttu-id="c634c-111">无</span><span class="sxs-lookup"><span data-stu-id="c634c-111">none</span></span>|<span data-ttu-id="c634c-112">0</span><span class="sxs-lookup"><span data-stu-id="c634c-112">0</span></span>|<span data-ttu-id="c634c-113">无问题。</span><span class="sxs-lookup"><span data-stu-id="c634c-113">No issue.</span></span>|
+|<span data-ttu-id="c634c-114">rootedDevice</span><span class="sxs-lookup"><span data-stu-id="c634c-114">rootedDevice</span></span>|<span data-ttu-id="c634c-115">1</span><span class="sxs-lookup"><span data-stu-id="c634c-115">1</span></span>|<span data-ttu-id="c634c-116">应用注册在根/解锁设备上运行。</span><span class="sxs-lookup"><span data-stu-id="c634c-116">The app registration is running on a rooted/unlocked device.</span></span>|
+|<span data-ttu-id="c634c-117">androidBootloaderUnlocked</span><span class="sxs-lookup"><span data-stu-id="c634c-117">androidBootloaderUnlocked</span></span>|<span data-ttu-id="c634c-118">双面</span><span class="sxs-lookup"><span data-stu-id="c634c-118">2</span></span>|<span data-ttu-id="c634c-119">应用注册在解锁了启用程序的 Android 设备上运行。</span><span class="sxs-lookup"><span data-stu-id="c634c-119">The app registration is running on an Android device on which the bootloader is unlocked.</span></span>|
+|<span data-ttu-id="c634c-120">androidFactoryRomModified</span><span class="sxs-lookup"><span data-stu-id="c634c-120">androidFactoryRomModified</span></span>|<span data-ttu-id="c634c-121">第三章</span><span class="sxs-lookup"><span data-stu-id="c634c-121">3</span></span>|<span data-ttu-id="c634c-122">应用注册在已修改出厂 ROM 的 Android 设备上运行。</span><span class="sxs-lookup"><span data-stu-id="c634c-122">The app registration is running on an Android device on which the factory ROM has been modified.</span></span>|
+
 
 
 
