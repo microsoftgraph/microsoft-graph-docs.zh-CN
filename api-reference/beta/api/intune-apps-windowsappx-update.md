@@ -4,12 +4,12 @@ description: 更新 windowsAppX 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9fd99342a4c2b70edf1e8a451a4dcebc6e4b6190
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4b3182cb6e5e74b64431f848eaab12f1f0ecdcda
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934675"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973199"
 ---
 # <a name="update-windowsappx"></a>更新 windowsAppX
 
@@ -93,7 +93,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1367
+Content-length: 1413
 
 {
   "@odata.type": "#microsoft.graph.windowsAppX",
@@ -134,7 +134,9 @@ Content-length: 1367
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "Identity Version value"
 }
@@ -145,7 +147,7 @@ Content-length: 1367
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1539
+Content-Length: 1585
 
 {
   "@odata.type": "#microsoft.graph.windowsAppX",
@@ -189,11 +191,14 @@ Content-Length: 1539
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

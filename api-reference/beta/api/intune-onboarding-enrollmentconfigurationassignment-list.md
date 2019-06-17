@@ -4,12 +4,12 @@ description: 列出 enrollmentConfigurationAssignment 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b95737942b88d6f4ec1b5b6546a3921a976333e4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b95f05093379eed07ac1b7f2d8518f117784e40a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900073"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980906"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>列出 enrollmentConfigurationAssignments
 
@@ -76,6 +76,7 @@ Content-Length: 275
   ]
 }
 ```
+
 
 
 

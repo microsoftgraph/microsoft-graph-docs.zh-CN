@@ -4,12 +4,12 @@ description: 列出 windowsUniversalAppX 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e39e515f5ccae866eea4c006ca71dff499d0d570
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4a71ecb0c39b459a2f9c7b8250bdc9ef4c85ee30
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934479"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972716"
 ---
 # <a name="list-windowsuniversalappxs"></a>列出 windowsUniversalAppXs
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1800
+Content-Length: 1854
 
 {
   "value": [
@@ -109,13 +109,16 @@ Content-Length: 1800
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       },
       "identityVersion": "Identity Version value"
     }
   ]
 }
 ```
+
 
 
 

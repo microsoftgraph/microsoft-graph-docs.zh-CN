@@ -4,12 +4,12 @@ description: 创建新的 windowsPhone81StoreApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c38ca7ea2f6e974dffad06855be2b25688fb2c7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5fb6526edc45bcecdfe57ccf4cb77971461d7640
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934577"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972989"
 ---
 # <a name="create-windowsphone81storeapp"></a>创建 windowsPhone81StoreApp
 
@@ -147,6 +147,7 @@ Content-Length: 947
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

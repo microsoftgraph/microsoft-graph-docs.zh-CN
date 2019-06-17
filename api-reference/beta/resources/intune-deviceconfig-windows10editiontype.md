@@ -4,12 +4,12 @@ description: Windows 10 版本的类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 824fe87c381332d90adfa243ef89eeafc8cc1773
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e304cb77694554443b879b145f9735ab6b315069
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944339"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982285"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
 
@@ -35,6 +35,14 @@ Windows 10 版本的类型。
 |windows10ProfessionalWorkstation|10 |适用于工作站的 Windows 10 专业版|
 |windows10ProfessionalWorkstationN|11x17|适用于工作站的 Windows 10 专业版 N|
 |notConfigured|12|NotConfigured|
+|windows10Home|13|Windows 10 主页|
+|windows10HomeChina|日|Windows 10 家庭版中国|
+|windows10HomeN|个|Windows 10 家庭版 N|
+|windows10HomeSingleLanguage|位|Windows 10 家庭版单语言版|
+|windows10Mobile|×|Windows 10 移动版|
+|windows10IoTCore|18|Windows 10 IoT 核心|
+|windows10IoTCoreCommercial|合|Windows 10 IoT Core 商业版|
+
 
 
 

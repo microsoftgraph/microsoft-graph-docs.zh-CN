@@ -4,12 +4,12 @@ description: 列出 androidForWorkWiFiConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f329143efd7efd9c08e957a1fecce692bec98df
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c8c15240a2e3e47b3397cc1910e2cb91ca56ecf9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33929740"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34970231"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>列出 androidForWorkWiFiConfigurations
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 711
+Content-Length: 1568
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 711
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -88,6 +109,7 @@ Content-Length: 711
   ]
 }
 ```
+
 
 
 

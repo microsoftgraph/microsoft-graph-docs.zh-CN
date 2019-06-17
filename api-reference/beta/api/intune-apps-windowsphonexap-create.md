@@ -4,12 +4,12 @@ description: 创建新的 windowsPhoneXAP 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebdd779fb8b0280d46df8fa74d7debed1085cd8a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 961faf2ef7703d9dc5dd9dc8bb805992f627beb7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934556"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972898"
 ---
 # <a name="create-windowsphonexap"></a>创建 windowsPhoneXAP
 
@@ -87,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1191
+Content-length: 1237
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -123,7 +123,9 @@ Content-length: 1191
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
@@ -135,7 +137,7 @@ Content-length: 1191
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1363
+Content-Length: 1409
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -174,12 +176,15 @@ Content-Length: 1363
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

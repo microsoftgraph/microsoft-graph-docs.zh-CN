@@ -4,12 +4,12 @@ description: 读取 deviceManagementPartner 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b795bf0859b0019d0d710239de9d55fe58bf5fb0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d2e9fdb3e9903199848faebe61e27a1e48d36e56
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900052"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980962"
 ---
 # <a name="get-devicemanagementpartner"></a>获取 deviceManagementPartner
 
@@ -84,6 +84,7 @@ Content-Length: 756
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee013ccd020eb697e2617a2fdfc7dee3d0fa16af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f1e64ad7386801a47ec9b647a513f4e92afa9345
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916216"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960431"
 ---
 # <a name="updatesettings-action"></a>updateSettings 操作
 
@@ -84,6 +84,7 @@ Content-length: 252
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

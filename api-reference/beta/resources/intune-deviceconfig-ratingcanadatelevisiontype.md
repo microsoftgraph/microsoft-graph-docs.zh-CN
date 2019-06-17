@@ -4,12 +4,12 @@ description: 加拿大的电视内容评级标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b60f0af3f7dab11abc6907f8f4939b8da9b5e9e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f7c8fe4c99a6201bd17913f19a3594d3f138a44a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950898"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995754"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33950898"
 |parentalGuidance|5|PG、家长指导|
 |agesAbove14|型|14 + 分类适用于14岁及更早的查看者|
 |agesAbove18|步|18个以上的分类适用于18岁及更早的查看者|
+
 
 
 

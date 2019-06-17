@@ -4,12 +4,12 @@ description: 读取了 windowsphone81appx 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e490ea9e30b92b8ca4067fed28256e9b2e050167
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f34aeb21dbfb5d19e7757057f2ef79dcd2aec344
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934689"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973080"
 ---
 # <a name="get-windowsphone81appx"></a>获取了 windowsphone81appx
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1748
+Content-Length: 1798
 
 {
   "value": {
@@ -111,7 +111,9 @@ Content-Length: 1748
       "v10_1607": true,
       "v10_1703": true,
       "v10_1709": true,
-      "v10_1803": true
+      "v10_1803": true,
+      "v10_1809": true,
+      "v10_1903": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",
@@ -119,6 +121,7 @@ Content-Length: 1748
   }
 }
 ```
+
 
 
 

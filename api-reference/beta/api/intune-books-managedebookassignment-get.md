@@ -4,12 +4,12 @@ description: 读取 managedEBookAssignment 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a674c2871ac658f97a9b79155644dc12c0b7847a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 73836dbeba50edc1af308a7c5e15c2faea8a0d4c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934199"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972198"
 ---
 # <a name="get-managedebookassignment"></a>获取 managedEBookAssignment
 
@@ -78,6 +78,7 @@ Content-Length: 274
   }
 }
 ```
+
 
 
 

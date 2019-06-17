@@ -4,12 +4,12 @@ description: 读取 androidForWorkCompliancePolicy 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e8d40f66a1d121aa60b56951f5ae9ca8065bf29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f426c251d17f0b38afcc32653b8a2b58e972d868
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33932953"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971078"
 ---
 # <a name="get-androidforworkcompliancepolicy"></a>获取 androidForWorkCompliancePolicy
 
@@ -104,6 +104,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

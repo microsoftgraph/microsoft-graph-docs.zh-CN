@@ -4,12 +4,12 @@ description: 创建新的 windowsPrivacyDataAccessControlItem 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7241711960635b69885083d1fdc6317691b2279b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ad45bc27fb97024d40e4522083d766519ac4f017
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917483"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961432"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>创建 windowsPrivacyDataAccessControlItem
 
@@ -95,6 +95,7 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
+
 
 
 

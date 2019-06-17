@@ -4,12 +4,12 @@ description: 读取 windows10CompliancePolicy 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4650677ba9b1a3d3528650bbb7e086f090446303
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e4475f79ca4a100a24cd43cbeeead59f40b00af
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921924"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962769"
 ---
 # <a name="get-windows10compliancepolicy"></a>获取 windows10CompliancePolicy
 
@@ -120,6 +120,7 @@ Content-Length: 1977
   }
 }
 ```
+
 
 
 

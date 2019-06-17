@@ -4,12 +4,12 @@ description: 用于配置针对特定安全组和 Android 设备上指定的一�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8a33f897f82993b58342e04341f52acd2483b8f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3c882c9e15f6be0e9d553bbed53eee0a281cfd11
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940979"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963448"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
@@ -73,6 +73,7 @@ ms.locfileid: "33940979"
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为, 即阻止或擦除。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码) 超时|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的应用程序通知限制。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
 |isAssigned|Boolean|指示策略是否部署到任何包含组。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|此策略继承自[targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)的预期应用管理级别。 可取值为：`unspecified`、`unmanaged`、`mdm`、`androidEnterprise`。|
 |screenCaptureBlocked|Boolean|指示托管用户是否可以对托管应用进行屏幕截图|
@@ -153,6 +154,7 @@ ms.locfileid: "33940979"
   "appActionIfMaximumPinRetriesExceeded": "String",
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
   "allowedOutboundClipboardSharingExceptionLength": 1024,
+  "notificationRestriction": "String",
   "isAssigned": true,
   "targetedAppManagementLevels": "String",
   "screenCaptureBlocked": true,
@@ -179,6 +181,7 @@ ms.locfileid: "33940979"
   "customBrowserDisplayName": "String"
 }
 ```
+
 
 
 

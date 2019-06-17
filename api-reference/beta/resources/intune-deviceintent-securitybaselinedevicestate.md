@@ -4,12 +4,12 @@ description: 设备安全基准的安全基准合规性状态摘要。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff87b5c39d00957ddd4128bc3351879dcd5b652f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b9fb2195a2cdf68c85e05988b1d2063d21a97228
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943289"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983440"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState 资源类型
 
@@ -60,6 +60,7 @@ ms.locfileid: "33943289"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 windowsPrivacyDataAccessControlItem 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 977ed3f788cdc5abe07fbc0a7819409f6274829e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a3208d5f4eb7ac1fe20ea3d280f8522358ba8867
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917434"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961376"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>更新 windowsPrivacyDataAccessControlItem
 
@@ -95,6 +95,7 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
+
 
 
 

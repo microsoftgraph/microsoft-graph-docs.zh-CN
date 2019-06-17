@@ -4,12 +4,12 @@ description: 表示意向设置类别的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c22847e0f86a5f07655af3342a5e9ecd310d2681
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 90768fbc999860d2f5dcfcd8f0a71a3149ff58e2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943282"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963994"
 ---
 # <a name="devicemanagementintentsettingcategory-resource-type"></a>deviceManagementIntentSettingCategory 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "33943282"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
-|displayName|String|继承自[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
+|displayName|String|继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -58,6 +58,7 @@ ms.locfileid: "33943282"
   "displayName": "String"
 }
 ```
+
 
 
 

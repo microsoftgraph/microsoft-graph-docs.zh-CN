@@ -4,12 +4,12 @@ description: 使用 Apple Volume Purchase Program 令牌执行的操作的状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0faeee14db33366f8d48645e7419a97e6909398c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 43becee571f14eb172a124470750ceae1529c2c7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958604"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33940104"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

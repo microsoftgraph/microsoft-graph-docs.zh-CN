@@ -4,12 +4,12 @@ description: 更新 androidDeviceOwnerCompliancePolicy 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1895002b73e33bad59e13de870b9d965f1e9ce5d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fece06790cf5b0b788dc5189816c0dedd63c4640
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933219"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971414"
 ---
 # <a name="update-androiddeviceownercompliancepolicy"></a>更新 androidDeviceOwnerCompliancePolicy
 
@@ -151,6 +151,7 @@ Content-Length: 1104
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

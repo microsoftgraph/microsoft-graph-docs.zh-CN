@@ -4,12 +4,12 @@ description: 删除 managedEBookCategory。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 155dda2a88135c034aa3294716489875d2180ef0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 08b250c7e207bab0520900f7198522f4fbdfcf47
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934150"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972135"
 ---
 # <a name="delete-managedebookcategory"></a>删除 managedEBookCategory
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBookCategori
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

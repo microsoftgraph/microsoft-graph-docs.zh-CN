@@ -4,12 +4,12 @@ description: 介绍与设备相关的嵌入的 SIM 激活代码部署状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2fb953021dde36960faf2875131bf3bcd8e7e50
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b18548afd944b11df5df5bdeae6b4c48cf048f3f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941343"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994851"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 
@@ -66,6 +66,7 @@ ms.locfileid: "33941343"
   "stateDetails": "String"
 }
 ```
+
 
 
 

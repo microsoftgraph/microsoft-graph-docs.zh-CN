@@ -4,12 +4,12 @@ description: 强制实施设置值的约束来自允许的一组字符串
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2979f189921c0c9e7240cc5287a072b27e12b96e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 64c07f663d034cf6fa758155294730015ca6e3b4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943429"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964099"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>deviceManagementEnumConstraint 资源类型
 
@@ -49,6 +49,7 @@ ms.locfileid: "33943429"
   ]
 }
 ```
+
 
 
 

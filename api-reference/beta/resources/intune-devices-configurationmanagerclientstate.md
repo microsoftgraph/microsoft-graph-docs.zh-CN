@@ -4,12 +4,12 @@ description: 配置管理器客户端状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9be184d298b1cecc9cb3f442fb343e1e00f3d965
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b733a6593be16bf52c075176aff778f1789ba492
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943002"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983195"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33943002"
 |installFailed|utf-8|配置管理器代理安装失败。|
 |updateFailed|11x17|从版本 x 更新到配置管理器代理版本 y 的更新失败。 |
 |communicationError|合|Configuration manager 代理在过去能够到达 configuration manager 服务, 但现在无法再访问。 |
+
 
 
 

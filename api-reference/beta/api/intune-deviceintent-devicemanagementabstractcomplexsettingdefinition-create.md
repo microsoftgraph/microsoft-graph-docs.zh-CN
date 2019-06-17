@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementAbstractComplexSettingDefinition 对�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31d28a9fb4b3a213f7ed1b5d0c91715a6c1ef439
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 407c62cea85586057934943d49d87a51980f5f7b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917181"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961054"
 ---
 # <a name="create-devicemanagementabstractcomplexsettingdefinition"></a>创建 deviceManagementAbstractComplexSettingDefinition
 
@@ -149,6 +149,7 @@ Content-Length: 851
   ]
 }
 ```
+
 
 
 

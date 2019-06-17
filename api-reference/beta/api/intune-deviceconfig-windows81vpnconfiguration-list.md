@@ -4,12 +4,12 @@ description: 列出 windows81VpnConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2b1359e5dae8078d90c1045ea45c868a218bf73
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1175eabf367d0b1ef17c0018da94deb1e963293b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918134"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962160"
 ---
 # <a name="list-windows81vpnconfigurations"></a>列出 windows81VpnConfigurations
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1352
+Content-Length: 2209
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 1352
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -105,6 +126,7 @@ Content-Length: 1352
   ]
 }
 ```
+
 
 
 

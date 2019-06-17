@@ -4,12 +4,12 @@ description: 删除 deviceComplianceUserStatus。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c589487c104b6a7590bf35938adc3554211f28e7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f2b85595fc5fca1c351e7ad20946fb19e9bab1d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927592"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968054"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>删除 deviceComplianceUserStatus
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
