@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentationLongDecimalTextBox 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d827a47741f78bd6861a9560e591410fcff7066
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2c4ca07c0d1a9fd44fe3f455f50f372b2ce4f708
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904781"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964597"
 ---
 # <a name="get-grouppolicypresentationlongdecimaltextbox"></a>获取 groupPolicyPresentationLongDecimalTextBox
 
@@ -83,6 +83,7 @@ Content-Length: 377
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示与设备管理合作伙伴的连接的实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd6b51584945ee1c6cb44584324c4b84ed0acc00
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c501c6e77dd50a399a6e2a70d2fb868c17dc6c6b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940265"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993037"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 
@@ -70,6 +70,7 @@ ms.locfileid: "33940265"
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

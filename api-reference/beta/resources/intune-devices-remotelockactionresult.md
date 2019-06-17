@@ -4,12 +4,12 @@ description: 锁定操作结果，包含用于解锁的 PIN
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a8da7d99425e35c937250eee8a36ba005a133af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 31af22f66b87d8102eeaf81d68d211640326f3fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941742"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963854"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
 
@@ -51,6 +51,7 @@ ms.locfileid: "33941742"
   "unlockPin": "String"
 }
 ```
+
 
 
 

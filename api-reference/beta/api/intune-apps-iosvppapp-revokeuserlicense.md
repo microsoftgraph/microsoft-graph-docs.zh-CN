@@ -4,12 +4,12 @@ description: 为给定应用撤销分配的 iOS VPP 用户许可证。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef8e2a727e1ff73a479d06c12f28c03f01b0b00b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e3b046f47efa1f23e5af03028958dce132e0c94f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936488"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964879"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
@@ -81,6 +81,7 @@ Content-length: 66
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

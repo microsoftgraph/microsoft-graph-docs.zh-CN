@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32ff6d0db11cf75e052f4ff63287a72fd651e328
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dbb778f2ee12d2fb28b5e68850e290d8ff13915a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944752"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964302"
 ---
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33944752"
   "displayName": "String"
 }
 ```
+
 
 
 

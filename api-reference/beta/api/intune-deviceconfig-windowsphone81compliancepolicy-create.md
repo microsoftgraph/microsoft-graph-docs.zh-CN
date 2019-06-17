@@ -4,12 +4,12 @@ description: 创建新的 windowsPhone81CompliancePolicy 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9c731977024f4018cac6e30f8aefff23c1f0d1e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 44ae3c154d11215cbc1e0d741fd04f43d4090ca1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917798"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961761"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>创建 windowsPhone81CompliancePolicy
 
@@ -136,6 +136,7 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

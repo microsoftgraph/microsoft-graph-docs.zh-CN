@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementCollectionSettingDefinition 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a59f1bead14aa5a764ef1213dc65af56e4b9c0fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 161a0d432fcd1c8401fe81b36338e0debef12019
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916669"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960893"
 ---
 # <a name="create-devicemanagementcollectionsettingdefinition"></a>创建 deviceManagementCollectionSettingDefinition
 
@@ -145,6 +145,7 @@ Content-Length: 844
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
+
 
 
 

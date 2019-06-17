@@ -4,12 +4,12 @@ description: 更新 advancedThreatProtectionOnboardingDeviceSettingState 对象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c839311119f297ed2e8198d3d4c921959dd8bae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 288065c51d972dbcc5ea5e76053be07d55ceae71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933366"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971673"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>更新 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -119,6 +119,7 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
 
 
 

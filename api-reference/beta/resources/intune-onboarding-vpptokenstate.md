@@ -4,12 +4,12 @@ description: 与 Apple Volume Purchase Program 令牌关联的可能状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd568bdb4430f61a52577617876a682cc4f7ed99
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: faef244a196ae99a9ba82f4c5396db22b79be8b5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940237"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958513"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33940237"
 |期满|双面|令牌已过期。|
 |无效|第三章|令牌无效。|
 |assignedToExternalMDM|4|令牌由另一个 MDM 服务管理。|
+
 
 
 

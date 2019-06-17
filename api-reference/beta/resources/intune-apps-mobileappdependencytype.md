@@ -4,12 +4,12 @@ description: 指示与两个移动应用程序之间的关系关联的依赖关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ca22fd9b62e0affbf3a3a945c417e8695267a81
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 65a9c30b1aadbd7003e39e098d4e850675bea718
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33956935"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957638"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>mobileAppDependencyType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33956935"
 |:---|:---|:---|
 |出|0|指示安装父应用程序之前应检测子应用程序。|
 |安装|1|指示安装父应用程序之前应安装子应用程序。|
+
 
 
 

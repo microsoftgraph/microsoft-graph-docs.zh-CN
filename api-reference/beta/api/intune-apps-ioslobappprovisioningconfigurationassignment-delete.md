@@ -4,12 +4,12 @@ description: 删除 iosLobAppProvisioningConfigurationAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 255e23b297d2370c5e69e8b9e8b4334e4958e788
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2a7536ef3643a84dd97162b6147812a2e0717885
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937335"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966122"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>删除 iosLobAppProvisioningConfigurationAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

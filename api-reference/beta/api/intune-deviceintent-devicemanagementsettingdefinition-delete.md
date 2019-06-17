@@ -4,12 +4,12 @@ description: 删除 deviceManagementSettingDefinition。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 521288f5c29341336894ad6bfcb064712793177d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9e128a1ba7b476db5120ad01739aa50790fa439d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917048"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959913"
 ---
 # <a name="delete-devicemanagementsettingdefinition"></a>删除 deviceManagementSettingDefinition
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

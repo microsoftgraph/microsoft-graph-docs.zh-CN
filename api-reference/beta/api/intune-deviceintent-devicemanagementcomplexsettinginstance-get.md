@@ -4,12 +4,12 @@ description: 读取 deviceManagementComplexSettingInstance 对象的属性和关
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a304ece3347faf5c820dd9265e5edc6903775dd1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e99f10e23e872fd8ebd890be8794c7b5c5fe0615
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916526"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960648"
 ---
 # <a name="get-devicemanagementcomplexsettinginstance"></a>获取 deviceManagementComplexSettingInstance
 
@@ -79,6 +79,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

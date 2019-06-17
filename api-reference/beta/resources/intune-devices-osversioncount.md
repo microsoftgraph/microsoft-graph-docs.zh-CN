@@ -4,12 +4,12 @@ description: 包含每个 OS 版本的包含恶意软件的设备的计数
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa6c8c117fa7cfb9f131d00cff1fe55a21be37ce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4b8987017012d4db0756fc3d8a78efe99319d68
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941770"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963910"
 ---
 # <a name="osversioncount-resource-type"></a>osVersionCount 资源类型
 
@@ -44,6 +44,7 @@ ms.locfileid: "33941770"
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

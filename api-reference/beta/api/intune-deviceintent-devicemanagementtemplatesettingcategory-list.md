@@ -4,12 +4,12 @@ description: 列出 deviceManagementTemplateSettingCategory 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a91c4dc6724a270205b24e6fe0ad05ad08b09814
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6829cc41efec17f038a01eab685b01e24d0004be
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915506"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959619"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a>列出 deviceManagementTemplateSettingCategories
 
@@ -74,6 +74,7 @@ Content-Length: 215
   ]
 }
 ```
+
 
 
 

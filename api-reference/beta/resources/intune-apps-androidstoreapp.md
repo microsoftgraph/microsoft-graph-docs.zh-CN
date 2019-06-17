@@ -4,12 +4,12 @@ description: 包含 Android 应用商店应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3dee17576c3b08eca36e7324a01632709fdbc866
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 64d90c8c3bb2c891ec57c863c7238f30f4e2358e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950569"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991266"
 ---
 # <a name="androidstoreapp-resource-type"></a>androidStoreApp 资源类型
 
@@ -124,6 +124,7 @@ ms.locfileid: "33950569"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementScriptAssignment 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54e5848e79608b0dd9955316071531fb87f022a6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 898a70dbabcbff69edb4e2287dfa7ed29d24ddd2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909888"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959024"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>创建 deviceManagementScriptAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 通过 Apple Volume Purchase Program 企业版或教育版为 iOS �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6ce5ed8e699b8dbd49308591f252a8bcb30d876
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 268e905b2328b66eaf1bcd19340d96f22d40d9a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940111"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958618"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -97,6 +97,7 @@ ms.locfileid: "33940111"
   ]
 }
 ```
+
 
 
 

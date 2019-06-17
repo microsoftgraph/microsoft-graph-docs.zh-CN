@@ -4,12 +4,12 @@ description: 在 Apple Volume Purchase Program 令牌上执行的吊销许可证
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 543ec2a75c61c516cfe32632a82a7cfd08810f94
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e33a47d6fd4f40939d26a7faf41c209fe6e63651
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940251"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958583"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
 
@@ -55,6 +55,7 @@ ms.locfileid: "33940251"
   "actionFailureReason": "String"
 }
 ```
+
 
 
 

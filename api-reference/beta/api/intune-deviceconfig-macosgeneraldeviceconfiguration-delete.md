@@ -4,12 +4,12 @@ description: 删除 macOSGeneralDeviceConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0057c0a9d6a4767da23bad5aacc3221c62d945b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 00e7364243d1f1f1f4b0fe8d701179fc30884efd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922429"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963210"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>删除 macOSGeneralDeviceConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

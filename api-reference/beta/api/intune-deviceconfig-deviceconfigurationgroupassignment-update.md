@@ -4,12 +4,12 @@ description: 更新 deviceConfigurationGroupAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e114f665ea1b6cb12a0477811714040f93db778
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 49f9255ae8423895bcfce67a1107c4f3c98f90cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927480"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967669"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>更新 deviceConfigurationGroupAssignment
 
@@ -97,6 +97,7 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
+
 
 
 

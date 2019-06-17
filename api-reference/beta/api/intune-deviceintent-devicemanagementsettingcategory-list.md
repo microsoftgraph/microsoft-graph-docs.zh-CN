@@ -4,12 +4,12 @@ description: 列出 deviceManagementSettingCategory 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f1a1f2f3dfa964707672dd8338545e8949c8940
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 85c9073c95a2e3e9e2de4635bd23f82f7333afeb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915752"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960018"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>列出 deviceManagementSettingCategories
 
@@ -74,6 +74,7 @@ Content-Length: 207
   ]
 }
 ```
+
 
 
 

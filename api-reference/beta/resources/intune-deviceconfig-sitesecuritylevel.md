@@ -4,12 +4,12 @@ description: 网站安全级别的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a38c4846e134e92735f102e9eae257e84b8fb2b7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 14210e84f52ed75d594c22461da5c076b81aa4e3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944682"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964204"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33944682"
 |中等|第三章|中。|
 |mediumHigh|4|中-高。|
 |高效|5|高。|
+
 
 
 

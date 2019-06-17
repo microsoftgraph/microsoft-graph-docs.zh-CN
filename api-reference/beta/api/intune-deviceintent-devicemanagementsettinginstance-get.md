@@ -4,12 +4,12 @@ description: 读取 deviceManagementSettingInstance 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6925147b41a1d6a34cda94afa9e2e1198503815d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9440b2f2de653b298ea897d7f0c438ad499e5f4d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917090"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959878"
 ---
 # <a name="get-devicemanagementsettinginstance"></a>获取 deviceManagementSettingInstance
 
@@ -79,6 +79,7 @@ Content-Length: 227
   }
 }
 ```
+
 
 
 

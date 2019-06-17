@@ -4,18 +4,20 @@ description: 在渠道中回复现有消息。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9353751562308c7c487fff8965024d90556ceb14
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 4dea732f59c34362f6d4858e3d9f0e1601201d1d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635558"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963441"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>在渠道中回复消息
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定的[频道](../resources/channel.md)中创建对[邮件](../resources/chatmessage.md)的新答复。
+
+> **注意**: 我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -109,7 +111,7 @@ Content-length: 160
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_reply_message-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

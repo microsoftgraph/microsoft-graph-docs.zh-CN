@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea5578f39f607a66770a040c4b88fbc2d75e8ffc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: eb2df97c125827b54936ec5890923c799592ae61
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949729"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993310"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "33949729"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

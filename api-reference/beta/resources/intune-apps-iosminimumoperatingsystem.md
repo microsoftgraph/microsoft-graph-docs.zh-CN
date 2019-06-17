@@ -4,12 +4,12 @@ description: 包含 iOS 移动应用需要的最低操作系统的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 998c7a1214fb05596d4f851f7883be514d368e88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 546b63ee0b713e83c90fed8fcabdd4d9382a0740
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950436"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991203"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
@@ -48,6 +48,7 @@ ms.locfileid: "33950436"
   "v12_0": true
 }
 ```
+
 
 
 

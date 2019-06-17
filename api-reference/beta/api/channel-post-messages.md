@@ -5,18 +5,20 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0681ded7bb45eea328f9ce6a61f65683aa4d8cf9
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: dfd71d10f73d91a1f6b400dcaa4833e134043f88
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34720882"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963420"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建了 chatmessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在指定的[频道](../resources/channel.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。
+
+> **注意**: 我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
 ## <a name="permissions"></a>权限
 

@@ -4,12 +4,12 @@ description: 更新 deviceConfigurationDeviceStateSummary 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff364068a012535ad8c7a6958b9ff5e6ce5fdd49
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4a4b89fdbe68e9e9573c6f028037fc33ce1aed69
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927410"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967725"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>更新 deviceConfigurationDeviceStateSummary
 
@@ -104,6 +104,7 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 managedDeviceMobileAppConfigurationDeviceSummary 对象的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81176b262d13a5260eb2b5539d10de6a4922842d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e823acd9dcfc5aa4671b386ba787c4eb8cbe1c4e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935606"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974697"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>更新 managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -110,6 +110,7 @@ Content-Length: 409
   "configurationVersion": 4
 }
 ```
+
 
 
 

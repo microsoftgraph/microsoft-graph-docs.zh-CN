@@ -4,12 +4,12 @@ description: 表示特定用户具有管理功能的 iOS 应用的同步详细�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d807d81cc5f17404c3b0c02eae8bf95e20bf36e2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dd77c1d4d29c468a33a7620c15149380ea388695
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940888"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975845"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
 
@@ -92,6 +92,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
+
 
 
 

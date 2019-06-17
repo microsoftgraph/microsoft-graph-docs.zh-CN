@@ -4,12 +4,12 @@ description: 删除 deviceCompliancePolicyAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f2e90f62db7f7ba0644c6eaff7d336a27a19aa4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 18f94d3cc46d11a1aba31fe7d6a79c2335880eb8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927767"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968411"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>删除 deviceCompliancePolicyAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

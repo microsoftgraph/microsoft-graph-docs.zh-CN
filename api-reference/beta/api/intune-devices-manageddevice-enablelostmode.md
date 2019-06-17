@@ -4,12 +4,12 @@ description: 启用丢失模式
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e8103e113ab97f117d32b4fb50aaa828700f490
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 22f75fb0c9dd4405717584de77b06a89eaf33bb8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909671"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958478"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode 操作
 
@@ -84,6 +84,7 @@ Content-length: 103
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

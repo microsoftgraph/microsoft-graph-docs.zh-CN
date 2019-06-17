@@ -4,12 +4,12 @@ description: 列出 iosLobAppProvisioningConfigurationAssignment 对象的属性
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75f20b28b849912d0db234be97e681023cc61f24
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c3cb214a6640ec104b4893e9b95bdedd6afae450
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937412"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966066"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>列出 iosLobAppProvisioningConfigurationAssignments
 
@@ -76,6 +76,7 @@ Content-Length: 286
   ]
 }
 ```
+
 
 
 

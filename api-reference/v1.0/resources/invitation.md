@@ -1,19 +1,19 @@
 ---
-title: 邀请管理器
-description: '使用邀请管理器来创建一个邀请，以将外部用户添加到组织。 '
+title: 邀请资源类型
+description: 表示用于将外部用户添加到组织的邀请。
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2fd945f5a8c2bfcf9b877f567701afe584fefb31
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 5d048aea8713e7598f6b551d49d32a10af19793f
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657474"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914670"
 ---
-# <a name="invitation-manager"></a>邀请管理器
+# <a name="invitation-resource-type"></a>邀请资源类型
 
-使用邀请管理器来创建一个邀请，以将外部用户添加到组织。 
+表示用于将外部用户添加到组织的邀请。 
 
 邀请进程使用以下流程：
 

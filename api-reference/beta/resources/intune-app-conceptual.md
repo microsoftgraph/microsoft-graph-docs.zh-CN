@@ -4,18 +4,18 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d0e38a8129e2cfcb60895be762d5bf3d65d1b6f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6c256319d819ca3523f4a7fbeb65a3f1351a6e80
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950527"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991399"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 

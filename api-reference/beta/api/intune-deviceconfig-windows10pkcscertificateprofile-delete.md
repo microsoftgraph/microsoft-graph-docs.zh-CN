@@ -4,12 +4,12 @@ description: 删除 windows10PkcsCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d625741799037382db13eb1a5e7eb7d39350e81c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6c09fbccc2b637c613350dd8b835ced08872dacb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918505"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962454"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>删除 windows10PkcsCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

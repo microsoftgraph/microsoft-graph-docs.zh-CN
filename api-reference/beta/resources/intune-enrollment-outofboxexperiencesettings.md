@@ -4,12 +4,12 @@ description: "\"开箱即用体验\" 设置"
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb8a3c0358343a3d1051258188028ffa5c1f0293
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92a7e8e2a65817ff6aa144deaa408978804ed963
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941497"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963525"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings 资源类型
 
@@ -50,6 +50,7 @@ ms.locfileid: "33941497"
   "hideEscapeLink": true
 }
 ```
+
 
 
 

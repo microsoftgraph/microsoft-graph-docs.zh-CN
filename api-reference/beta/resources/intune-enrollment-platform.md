@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a9e2411c2eb2b6d5cd58b336deeb9f8017832e9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 306103f59de675204200284c3c10e63aa49e0163
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941476"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992505"
 ---
 # <a name="platform-enum-type"></a>平台枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941476"
 |时间|第三章|Windows 设备平台|
 |windowsMobile|4|WindowsMobile 设备平台|
 |macOS|5|Mac 设备平台|
+
 
 
 

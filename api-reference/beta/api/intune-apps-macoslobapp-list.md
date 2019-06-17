@@ -4,12 +4,12 @@ description: 列出 macOSLobApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 262cdb195121fb0e56413fe99619ccd5b0eca5f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 468a7f50e61e7de753f05affd393f23be79332b7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935935"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975299"
 ---
 # <a name="list-macoslobapps"></a>列出 macOSLobApps
 
@@ -126,6 +126,7 @@ Content-Length: 1999
   ]
 }
 ```
+
 
 
 

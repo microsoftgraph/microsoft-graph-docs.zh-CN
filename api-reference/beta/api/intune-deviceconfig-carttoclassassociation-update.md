@@ -4,12 +4,12 @@ description: 更新 cartToClassAssociation 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6f382315d1932d275936be14071af7bf2025060c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968754"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

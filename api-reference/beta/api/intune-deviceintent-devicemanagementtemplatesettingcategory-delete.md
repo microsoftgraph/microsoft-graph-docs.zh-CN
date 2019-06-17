@@ -4,12 +4,12 @@ description: 删除 deviceManagementTemplateSettingCategory。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80de4eebf10b24a5e516e3e969ba8a8aff68fca9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5bc4c3740aa1ea7fce482df448455dda5e4b6e0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915457"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959675"
 ---
 # <a name="delete-devicemanagementtemplatesettingcategory"></a>删除 deviceManagementTemplateSettingCategory
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

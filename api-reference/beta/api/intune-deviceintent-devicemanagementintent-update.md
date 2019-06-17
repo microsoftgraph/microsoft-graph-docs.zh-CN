@@ -4,12 +4,12 @@ description: 更新 deviceManagementIntent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d61a86001e85f58a9c0f8fa1cb719453029e4fe2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fd8b85ccab0153b749ff29be13187e3fd2fd4ef6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916437"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960445"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
@@ -56,6 +56,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|创建此目的的模板的 ID (如果有)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -69,14 +70,17 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
   "displayName": "Display Name value",
   "description": "Description value",
   "isAssigned": true,
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -85,7 +89,7 @@ Content-length: 204
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
@@ -94,9 +98,13 @@ Content-Length: 317
   "description": "Description value",
   "isAssigned": true,
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
+
 
 
 

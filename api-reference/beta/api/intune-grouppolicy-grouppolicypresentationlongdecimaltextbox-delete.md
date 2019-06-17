@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationLongDecimalTextBox。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e583b9ccdd71ab3d7d804b76e9acc0b392a8738f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92bc751cb6b1f1fe046f59d5542186ef62817ad2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904760"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964598"
 ---
 # <a name="delete-grouppolicypresentationlongdecimaltextbox"></a>删除 groupPolicyPresentationLongDecimalTextBox
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

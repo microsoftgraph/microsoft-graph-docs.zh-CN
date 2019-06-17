@@ -4,12 +4,12 @@ description: 表示为租户配置的 Exchange OnPremises 策略的单一实例�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 281ea3fbdbb1c166692b03859cf7ed3c8272d3b7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 05548aef02888268fa93e92fd5aeea3cfaed93a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940300"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958688"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>deviceManagementExchangeOnPremisesPolicy 资源类型
 
@@ -73,6 +73,7 @@ ms.locfileid: "33940300"
   ]
 }
 ```
+
 
 
 

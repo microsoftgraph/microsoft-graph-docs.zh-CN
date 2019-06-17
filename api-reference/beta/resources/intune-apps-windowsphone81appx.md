@@ -4,12 +4,12 @@ description: 包含 Windows Phone 8.1 AppX 业务线应用的属性和继承的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75dc48848a540e8466c625d39509540d6fa53ddc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cda84aa2f75e14dc5b4f9c13c282c73c5af24a35
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949442"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975664"
 ---
 # <a name="windowsphone81appx-resource-type"></a>了 windowsphone81appx 资源类型
 
@@ -125,13 +125,16 @@ ms.locfileid: "33949442"
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",
   "identityVersion": "String"
 }
 ```
+
 
 
 

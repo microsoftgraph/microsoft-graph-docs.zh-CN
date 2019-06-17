@@ -4,12 +4,12 @@ description: 包含 Windows AppX 业务线应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74a7126e716ddfe3facc4bdb575283acaacc8ccf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d67f54e77c91c08fcf6cae46c858be54098805de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949435"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975761"
 ---
 # <a name="windowsappx-resource-type"></a>windowsAppX 资源类型
 
@@ -125,11 +125,14 @@ ms.locfileid: "33949435"
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "String"
 }
 ```
+
 
 
 

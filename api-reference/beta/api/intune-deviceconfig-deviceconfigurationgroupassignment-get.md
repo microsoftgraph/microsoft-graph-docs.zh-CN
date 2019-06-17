@@ -4,12 +4,12 @@ description: 读取 deviceConfigurationGroupAssignment 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f2fca67879d977a9fdcc3813bbe5ec6583718fe
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 907129b8cd5486c35c59d82b4100b36d7b93e32f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927467"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967648"
 ---
 # <a name="get-deviceconfigurationgroupassignment"></a>获取 deviceConfigurationGroupAssignment
 
@@ -84,6 +84,7 @@ Content-Length: 222
   }
 }
 ```
+
 
 
 

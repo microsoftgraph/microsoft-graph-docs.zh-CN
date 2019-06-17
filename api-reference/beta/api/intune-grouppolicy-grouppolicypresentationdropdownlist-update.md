@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationDropdownList 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db3dea3d6cf32c7c374b10089399fdaa61533741
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5e5cef0d04dd6c14cadb282e22176250298e21f2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904823"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964722"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>更新 groupPolicyPresentationDropdownList
 
@@ -118,6 +118,7 @@ Content-Length: 602
   "required": true
 }
 ```
+
 
 
 
