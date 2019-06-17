@@ -4,12 +4,12 @@ description: 包含 Android 托管存储应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e49cb85e629e1151ea2a3af3d658fb3d88e04863
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f35a6ae01b710890c34780e702522f4371f337ca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950506"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991343"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp 资源类型
 
@@ -112,6 +112,7 @@ ms.locfileid: "33950506"
   "supportsOemConfig": true
 }
 ```
+
 
 
 

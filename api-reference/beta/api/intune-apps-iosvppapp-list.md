@@ -4,12 +4,12 @@ description: 列出 iosVppApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d1a3a8bd24440a57f83948107bde037453b4960
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3f5c2d2aeff71786e80790c50a31ca250474489f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936894"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966003"
 ---
 # <a name="list-iosvppapps"></a>列出 iosVppApps
 
@@ -131,6 +131,7 @@ Content-Length: 2444
   ]
 }
 ```
+
 
 
 

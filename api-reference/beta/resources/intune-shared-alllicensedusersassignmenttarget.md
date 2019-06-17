@@ -4,12 +4,12 @@ description: 表示租户中所有许可用户的赋值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d02165878c5eb9a29124958b2588569e6db302e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f2eb050b5fe6649abe6ee00141c2d2fab7eb5624
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940545"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996202"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "33940545"
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
 
 
 

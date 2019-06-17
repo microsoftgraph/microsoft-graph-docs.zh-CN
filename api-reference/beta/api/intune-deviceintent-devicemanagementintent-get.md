@@ -4,12 +4,12 @@ description: 读取 deviceManagementIntent 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15708ea3d6000222ff6d9bcd9d271a5bb4c623bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e4b91c0f810d9b042558af42207d6a120de084de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916258"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960536"
 ---
 # <a name="get-devicemanagementintent"></a>获取 deviceManagementIntent
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementI
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 418
 
 {
   "value": {
@@ -75,10 +75,14 @@ Content-Length: 350
     "description": "Description value",
     "isAssigned": true,
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "templateId": "Template Id value"
+    "templateId": "Template Id value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```
+
 
 
 

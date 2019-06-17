@@ -4,12 +4,12 @@ description: 删除 managedDeviceMobileAppConfigurationAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e83608ab1a3f3a30b43483460fd91a9b50af17a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4cd8ba5fa17030045f8e70211752cdef404eed63
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935690"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974879"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>删除 managedDeviceMobileAppConfigurationAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

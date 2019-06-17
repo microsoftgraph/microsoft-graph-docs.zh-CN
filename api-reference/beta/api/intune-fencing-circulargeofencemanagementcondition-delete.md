@@ -4,12 +4,12 @@ description: 删除 circularGeofenceManagementCondition。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 727d369b18432835effa5a1c119858ce28b8747f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 035981d88eca92577065c72e6382ee1d53eee83a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905502"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979002"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>删除 circularGeofenceManagementCondition
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 importedAppleDeviceIdentityResult 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff70a47048a4228092052bfc3364fa982b59a724
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f67bff92e7f3d25ee3b83567c4b6a3db9fcd6a4a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908642"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981949"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>列出 importedAppleDeviceIdentityResults
 
@@ -84,6 +84,7 @@ Content-Length: 715
   ]
 }
 ```
+
 
 
 

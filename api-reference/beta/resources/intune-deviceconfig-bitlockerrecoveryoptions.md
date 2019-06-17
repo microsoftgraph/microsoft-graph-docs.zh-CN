@@ -4,12 +4,12 @@ description: BitLocker 恢复选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f5ffc5c3246dbe8eeafd39df6669079e060f0da
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bf88795ac9f2708bc03607bc5d48d5ec69a822eb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947503"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991049"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions 资源类型
 
@@ -52,6 +52,7 @@ BitLocker 恢复选项。
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
+
 
 
 

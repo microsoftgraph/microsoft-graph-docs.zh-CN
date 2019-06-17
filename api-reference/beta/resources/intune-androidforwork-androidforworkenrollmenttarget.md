@@ -4,12 +4,12 @@ description: 适用于帐户的 Android for Work 设备管理目标类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1aa164ba9fcb9c303873888dc6080512eb2208e1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fa7412d13935f072d75d0e05e6d906a5cff8faf8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950590"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993415"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>androidForWorkEnrollmentTarget 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33950590"
 |各种|1|尚未记录|
 |特定|双面|尚未记录|
 |targetedAsEnrollmentRestrictions|第三章|尚未记录|
+
 
 
 

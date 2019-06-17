@@ -4,18 +4,18 @@ description: 列出用于定义和管理租户组织的基于角色的访问控�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 7bb65853c04ebe7595dfd302e9836b51fcb7cfac
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fe09f89a10524dc255d7e0e647ba793aec2529ab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940020"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993656"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执行操作并可更改托管应用程序、用户和设备。   
 
@@ -31,3 +31,4 @@ Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执�
 - [角色定义](intune-rbac-roledefinition.md)
 - [角色权限](intune-rbac-rolepermission.md)
 - [角色范围标记](intune-rbac-rolescopetag.md)
+- [角色作用域标记自动分配](intune-rbac-rolescopetagautoassignment.md)

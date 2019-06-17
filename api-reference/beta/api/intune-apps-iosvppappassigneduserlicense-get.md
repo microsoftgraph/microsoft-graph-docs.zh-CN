@@ -4,12 +4,12 @@ description: 读取 iosVppAppAssignedUserLicense 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25dd4ead9f9c27274679557524402627bc00c482
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5708bdfeb9c9fe40eee8cf3606c34771de353709
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935991"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975390"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>获取 iosVppAppAssignedUserLicense
 
@@ -78,6 +78,7 @@ Content-Length: 318
   }
 }
 ```
+
 
 
 

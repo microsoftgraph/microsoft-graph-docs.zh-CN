@@ -4,12 +4,12 @@ description: 此类包含 Windows 10 的合规性设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d27f7dd07342b930c47a3293489e74dc8fc08b6a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 85d7a05a6ba9e8c63b34920e8b7a072a08fa3d72
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944360"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992700"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>windows10CompliancePolicy 资源类型
 
@@ -144,6 +144,7 @@ ms.locfileid: "33944360"
   "tpmRequired": true
 }
 ```
+
 
 
 

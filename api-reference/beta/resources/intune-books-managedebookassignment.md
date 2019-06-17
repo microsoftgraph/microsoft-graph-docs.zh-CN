@@ -4,12 +4,12 @@ description: 包含用于为组分配电子书的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39fc5a56e4fb63a62a4fe2c15dd478efda426636
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b5f8b4cf21c5f4e746713e11c2d08aa4b5bb72d5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949862"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991616"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment 资源类型
 
@@ -56,6 +56,7 @@ ms.locfileid: "33949862"
   "installIntent": "String"
 }
 ```
+
 
 
 

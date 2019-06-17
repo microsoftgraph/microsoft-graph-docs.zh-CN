@@ -4,12 +4,12 @@ description: Suppoorted 策略的平台类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98fbad72994f6c2f800000f5128a66ac65780770
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87193858c706b0a70a851d041ad674e5dc61990d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950996"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992848"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
 
@@ -31,6 +31,7 @@ Suppoorted 策略的平台类型。
 |windows10AndLater|型|Windows 10 及更高版本。|
 |androidWorkProfile|步|AndroidWorkProfile.|
 |各种|100|所有平台。|
+
 
 
 

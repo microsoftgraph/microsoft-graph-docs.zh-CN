@@ -4,12 +4,12 @@ description: 一个代表复杂值的设置实例
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b91753befa679fe003d9d271e07cd210ee3757f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0dbef96549152ae496592a7f9cf523726a5224fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943520"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964141"
 ---
 # <a name="devicemanagementcomplexsettinginstance-resource-type"></a>deviceManagementComplexSettingInstance 资源类型
 
@@ -59,6 +59,7 @@ ms.locfileid: "33943520"
   "valueJson": "String"
 }
 ```
+
 
 
 

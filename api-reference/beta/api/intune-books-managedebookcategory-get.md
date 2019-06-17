@@ -4,12 +4,12 @@ description: 读取 managedEBookCategory 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 668594c92de07c274f8a8443c163b6439b2e6149
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b16a596e2b913fd6e2b69c2fef9d5360611cb05d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934143"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972156"
 ---
 # <a name="get-managedebookcategory"></a>获取 managedEBookCategory
 
@@ -77,6 +77,7 @@ Content-Length: 242
   }
 }
 ```
+
 
 
 

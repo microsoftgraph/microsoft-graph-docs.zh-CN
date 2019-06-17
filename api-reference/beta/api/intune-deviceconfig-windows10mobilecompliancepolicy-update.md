@@ -4,12 +4,12 @@ description: 更新 windows10MobileCompliancePolicy 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9e49f4d76e157694a59b80c20f8d5680ce55cb5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6d07a54635e0ba2aead358eeb6143714e1010289
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918589"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962538"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>更新 windows10MobileCompliancePolicy
 
@@ -171,6 +171,7 @@ Content-Length: 1330
   ]
 }
 ```
+
 
 
 

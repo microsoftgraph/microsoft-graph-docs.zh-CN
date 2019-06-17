@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16d68d88e275a2488ef86cadb9ac9e8083e962a3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 69495aa923b9944e97e603a60bd75120fa3bf778
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941511"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992512"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33941511"
 |禁止|0|不允许配对|
 |允许|1|允许配对|
 |requiresCertificate|双面|与 iTunes 配对所需的证书|
+
 
 
 

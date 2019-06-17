@@ -4,12 +4,12 @@ description: 远程操作 Intune 支持。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ad0666ffc94fcfdc09e289dde80f178e92f09af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58561626423046abe9e0d8832c82c714519ea46f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941826"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963868"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -41,6 +41,9 @@ ms.locfileid: "33941826"
 |updateDeviceAccount|位|用户启动操作以更新设备上的帐户。|
 |automaticRedeployment|×|用户启动操作以 automatice 重新部署设备|
 |关闭|18|用户启动一种关闭设备的操作。|
+|rotateFileVaultKey|20|用户启动一个操作以在 mac 上旋转 FileVaultKey。|
+|getFileVaultKey|不足|用户启动一个操作以在 mac 上获取 FileVaultKey。|
+
 
 
 

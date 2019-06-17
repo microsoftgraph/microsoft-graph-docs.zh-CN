@@ -4,12 +4,12 @@ description: 在请求该权限时, Android 应用程序权限和适用于 Andro
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4766bb91d5d1cde99a12f5a8e4903451a3ac5aca
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5237cc214ed6e5d7319d947b308cc666337e6d1b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950485"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991287"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "33950485"
   "action": "String"
 }
 ```
+
 
 
 

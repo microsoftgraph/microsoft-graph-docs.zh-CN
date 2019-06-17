@@ -4,12 +4,12 @@ description: 更新 defaultManagedAppProtection 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6664936a7962c37bd4e9eb4618d6532987d2e6b0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f0e37d0721258534752eaa0c9960e8c35fcb3541
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903829"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980024"
 ---
 # <a name="update-defaultmanagedappprotection"></a>更新 defaultManagedAppProtection
 
@@ -89,6 +89,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为, 即阻止或擦除。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码) 超时|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的应用程序通知限制。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。 (仅限 iOS)。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
 |screenCaptureBlocked|Boolean|指示是否阻止捕获屏幕。 （仅限 Android）|
 |encryptAppData|Boolean|指示是否应加密托管应用数据。 （仅限 Android）|
@@ -130,7 +131,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 3689
+Content-length: 3746
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -174,6 +175,7 @@ Content-length: 3689
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -228,7 +230,7 @@ Content-length: 3689
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3861
+Content-Length: 3918
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -275,6 +277,7 @@ Content-Length: 3861
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -323,6 +326,7 @@ Content-Length: 3861
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
+
 
 
 

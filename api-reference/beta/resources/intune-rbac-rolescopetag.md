@@ -4,12 +4,12 @@ description: 角色范围标记
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f44deb124b2347aa2d0300c9fd143b7dca21d74c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 54aa59e99a9697924512da0072e7b4e05e4fa12a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939950"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993534"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33939950"
 |[创建 roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。|
 |[删除 roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|无|删除[roleScopeTag](../resources/intune-rbac-rolescopetag.md)。|
 |[更新 roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|更新[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性。|
+|[分配操作](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)集合|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -36,7 +37,9 @@ ms.locfileid: "33939950"
 |说明|String|角色范围标记的说明。|
 
 ## <a name="relationships"></a>关系
-无
+|关系|类型|说明|
+|:---|:---|:---|
+|assignments|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)集合|此角色作用域标记的分配列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -54,6 +57,7 @@ ms.locfileid: "33939950"
   "description": "String"
 }
 ```
+
 
 
 

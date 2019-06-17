@@ -4,12 +4,12 @@ description: 读取 termsAndConditions 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9565671a5efd00fd0b6d5fbd859f68b0d0bc16de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dd438a344469ba4c756cb9aee1812e522cc7492f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933891"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972002"
 ---
 # <a name="get-termsandconditions"></a>获取 termsAndConditions
 
@@ -85,6 +85,7 @@ Content-Length: 546
   }
 }
 ```
+
 
 
 

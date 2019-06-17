@@ -4,12 +4,12 @@ description: 包含用于定义圆形地域防护管理条件 (要监视的感�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f6668f485c1d86c6643605453858d935750067f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 06acd4ae1912297d14bc23c2a942b23d9bbbf8a2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941301"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994823"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition 资源类型
 
@@ -77,6 +77,7 @@ ms.locfileid: "33941301"
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

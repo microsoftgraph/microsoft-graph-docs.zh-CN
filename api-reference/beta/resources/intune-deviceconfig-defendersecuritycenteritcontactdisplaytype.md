@@ -4,12 +4,12 @@ description: DefenderSecurityCenterITContactDisplay 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0dfe0440e8d5d888eda723a08086ef8ab3203f61
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7e79128d7998eaf6db6207a962f1bd8844a5900
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947307"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979800"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defenderSecurityCenterITContactDisplayType 枚举类型
 
@@ -26,6 +26,7 @@ DefenderSecurityCenterITContactDisplay 的可能值
 |displayInAppAndInNotifications|1|在应用程序和通知中显示|
 |displayOnlyInApp|双面|仅在应用程序中显示|
 |displayOnlyInNotifications|第三章|仅在通知中显示|
+
 
 
 

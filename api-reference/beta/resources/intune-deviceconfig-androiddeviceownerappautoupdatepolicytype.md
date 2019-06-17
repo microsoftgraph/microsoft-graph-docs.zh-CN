@@ -4,12 +4,12 @@ description: Android 设备所有者设备的应用自动更新策略状态的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92ea62ccd7f1077558d91eef4ca9e4f7157ec258
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 703e8bbb46ae289acfa09267052f9c78fe0da912
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949190"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965716"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 
@@ -27,6 +27,7 @@ Android 设备所有者设备的应用自动更新策略状态的可能值。
 |永不|双面|应用程序永远不会自动更新。|
 |wiFiOnly|第三章|仅通过 Wi-fi 自动更新应用程序。|
 |都|4|应用将在任何时候自动更新。 可能会收取数据费用。|
+
 
 
 

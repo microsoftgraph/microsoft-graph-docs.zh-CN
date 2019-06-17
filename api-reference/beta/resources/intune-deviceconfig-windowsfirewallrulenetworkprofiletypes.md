@@ -4,12 +4,12 @@ description: 表示哪些网络配置文件类型适用于防火墙规则的标�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe8df940a3389d742224a2eca2c215135e751297
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5dd5ac398700338cb4e26d435fae042773c03f8a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944052"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994095"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>windowsFirewallRuleNetworkProfileTypes 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33944052"
 |domain|1|连接到域的网络的配置文件。|
 |private|双面|专用网络的配置文件。|
 |公开|4|公用网络的配置文件。|
+
 
 
 

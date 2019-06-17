@@ -4,12 +4,12 @@ description: 通过 Windows 防火墙控制流量的规则。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbf322718bd3b95e27583350bf840cc05f2e6ca0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2f4191edfee5148094f10b7a57bb50844d3bfcca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944059"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994116"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule 资源类型
 
@@ -91,6 +91,7 @@ ms.locfileid: "33944059"
   "localUserAuthorizations": "String"
 }
 ```
+
 
 
 

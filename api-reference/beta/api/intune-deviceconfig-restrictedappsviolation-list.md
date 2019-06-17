@@ -4,12 +4,12 @@ description: 列出 restrictedAppsViolation 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39da389fb1c1000ebd55c66a01a95c66fdd3a263
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24b5096ea6003a15dd014336e9059bd2922370ff
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922078"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976321"
 ---
 # <a name="list-restrictedappsviolations"></a>列出 restrictedAppsViolations
 
@@ -87,6 +87,7 @@ Content-Length: 710
   ]
 }
 ```
+
 
 
 

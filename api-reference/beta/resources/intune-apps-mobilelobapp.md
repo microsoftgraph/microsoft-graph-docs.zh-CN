@@ -4,12 +4,12 @@ description: 包含所有移动业务线应用的属性的抽象基类。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce14b34cbf1eff0d0c90b6e086e5668e379ca84c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7cc6a08dbeb94e22fb260d40d2d6b8b6beb85050
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949812"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991784"
 ---
 # <a name="mobilelobapp-resource-type"></a>mobileLobApp 资源类型
 
@@ -104,6 +104,7 @@ ms.locfileid: "33949812"
   "size": 1024
 }
 ```
+
 
 
 

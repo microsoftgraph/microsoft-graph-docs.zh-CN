@@ -4,18 +4,18 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0741955dd2d939c70417e27842dd1964e003a146
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949197"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965849"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
@@ -55,6 +55,7 @@ ms.locfileid: "33949197"
 - [设备管理布尔值设置实例](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [设备管理集合设置定义](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [设备管理集合设置实例](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [设备管理比较结果](intune-deviceintent-devicemanagementcomparisonresult.md)
 - [设备管理复杂设置定义](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
 - [设备管理复杂设置实例](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
 - [设备管理约束](intune-deviceintent-devicemanagementconstraint.md)
@@ -79,6 +80,7 @@ ms.locfileid: "33949197"
 - [设备管理脚本用户状态](intune-devices-devicemanagementscriptuserstate.md)
 - [设备管理设置布尔约束](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [设备管理设置类别](intune-deviceintent-devicemanagementsettingcategory.md)
+- [设备管理设置比较](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [设备管理设置定义](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [设备管理设置依赖性](intune-deviceintent-devicemanagementsettingdependency.md)
 - [设备管理设置实例](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -91,6 +93,7 @@ ms.locfileid: "33949197"
 - [设备管理订阅](intune-devices-devicemanagementsubscriptions.md)
 - [设备管理模板](intune-deviceintent-devicemanagementtemplate.md)
 - [设备管理模板设置类别](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [设备管理模板类型](intune-deviceintent-devicemanagementtemplatetype.md)
 - [设备管理疑难解答错误详情](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [设备管理疑难解答错误资源](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [设备管理疑难解答事件](intune-troubleshooting-devicemanagementtroubleshootingevent.md)

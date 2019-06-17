@@ -4,12 +4,12 @@ description: 创建新的 androidWorkProfileCompliancePolicy 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5ec5bd4b37da58b62a28f8b05f5fa7933051cf8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 125d1fb858f2492bef24a2857ae3259c339dc43f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928657"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34969643"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>创建 androidWorkProfileCompliancePolicy
 
@@ -169,6 +169,7 @@ Content-Length: 1459
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

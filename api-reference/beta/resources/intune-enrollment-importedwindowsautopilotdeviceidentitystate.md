@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f392f011f4bfcc615f88b6ea965fbc2b47899c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0569bca45ccc7f5ce3a9fbe9953921a1df8f0b9a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941532"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992561"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33941532"
   "deviceErrorName": "String"
 }
 ```
+
 
 
 

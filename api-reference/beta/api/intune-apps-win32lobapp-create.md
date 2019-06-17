@@ -4,12 +4,12 @@ description: 创建新的 win32LobApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4996e14769e815061ad93ef5d5e4caa30e52b832
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bf015e82c6ecc3ee51a809bc3dccb415ca67b21a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934843"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973297"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
@@ -98,7 +98,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2732
+Content-length: 2778
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -137,7 +137,9 @@ Content-length: 2732
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "minimumFreeDiskSpaceInMB": 8,
   "minimumMemoryInMB": 1,
@@ -195,7 +197,7 @@ Content-length: 2732
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2904
+Content-Length: 2950
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -237,7 +239,9 @@ Content-Length: 2904
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "minimumFreeDiskSpaceInMB": 8,
   "minimumMemoryInMB": 1,
@@ -289,6 +293,7 @@ Content-Length: 2904
   "setupFilePath": "Setup File Path value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 用于隐私数据访问的 Windows 隐私数据类别说明符。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aebf3b636a7abdfb42d9b2febdfc5dbde2d375c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e86e45f49f21da84b5d0ae6975a032969586f2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943681"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996461"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "33943681"
 |tasks|位|允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
 |syncWithDevices|×|允许应用自动与未明确配对用户设备的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
 |trustedDevices|18|允许应用访问受信任的设备。 已添加到 Windows 10 版本 1607 中。|
+
 
 
 

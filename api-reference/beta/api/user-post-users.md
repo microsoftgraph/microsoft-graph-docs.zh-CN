@@ -4,22 +4,22 @@ description: 新建用户。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 62c57763c41c034b6c93a8e0e40780a9f0ccc69b
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: a6181a50a3d2c4c980a291f532e2ab23eca32b68
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914677"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992519"
 ---
 # <a name="create-user"></a>创建用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-新建用户。
+创建新[用户](../resources/user.md)。
 请求正文包含要创建的用户。 至少必须指定必需的用户属性。 可以选择指定其他任意可写属性。
 
 >[!NOTE]
->必须通过邀请创建外部用户。 如果需要启用外部用户的创建, 请参阅[邀请](../resources/invitation.md)。
+>若要创建外部用户, 请使用[邀请 API](invitation-post.md)。
 
 ## <a name="permissions"></a>权限
 

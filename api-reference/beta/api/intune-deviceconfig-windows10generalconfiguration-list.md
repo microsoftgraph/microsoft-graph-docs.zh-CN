@@ -4,12 +4,12 @@ description: 列出 windows10GeneralConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fddabaacee066c42d285db2a5a708e9c1865284
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76db643bd13c1badd73b335a8b0364b42cd8895d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921018"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962601"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14999
+Content-Length: 15960
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 14999
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -132,6 +153,7 @@ Content-Length: 14999
       "inkWorkspaceAccessState": "blocked",
       "inkWorkspaceBlockSuggestedApps": true,
       "smartScreenEnableAppInstallControl": true,
+      "smartScreenAppInstallControl": "anywhere",
       "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
       "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
       "bluetoothAllowedServices": [
@@ -236,6 +258,7 @@ Content-Length: 14999
       "lockScreenBlockCortana": true,
       "lockScreenBlockToastNotifications": true,
       "lockScreenTimeoutInSeconds": 10,
+      "lockScreenActivateAppsWithVoice": "enabled",
       "passwordBlockSimple": true,
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
@@ -391,6 +414,7 @@ Content-Length: 14999
   ]
 }
 ```
+
 
 
 

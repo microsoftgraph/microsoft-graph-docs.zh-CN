@@ -4,12 +4,12 @@ description: 包含 Windows Phone 8.1 应用商店应用的属性和继承的属
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d18ab0c4a370cdfbea2d793587b974fbb456c10
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 14010706e0ee87612dd0f1c6cc839d660340bf37
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949463"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975635"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>windowsPhone81StoreApp 资源类型
 
@@ -102,6 +102,7 @@ ms.locfileid: "33949463"
   "appStoreUrl": "String"
 }
 ```
+
 
 
 

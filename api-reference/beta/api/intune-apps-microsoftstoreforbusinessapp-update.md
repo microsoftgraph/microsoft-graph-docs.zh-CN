@@ -4,12 +4,12 @@ description: 更新 microsoftStoreForBusinessApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 114f2acc847fb0812a123afe840a3ccd315a16e5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8f37ede347f2d35186305a0d9c04bed4651ace2e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935459"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974368"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>更新 microsoftStoreForBusinessApp
 
@@ -176,6 +176,7 @@ Content-Length: 1304
   }
 }
 ```
+
 
 
 

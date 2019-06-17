@@ -4,12 +4,12 @@ description: 删除 iosVppEBook。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20196d9ef1d72ddd9bfe8bfb5e57fa4bc9416f93
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bab913d278cb7657aa0efa29461e24b2aa81b7da
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934304"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972394"
 ---
 # <a name="delete-iosvppebook"></a>删除 iosVppEBook
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

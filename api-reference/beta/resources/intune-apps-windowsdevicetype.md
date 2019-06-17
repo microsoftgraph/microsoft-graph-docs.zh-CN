@@ -4,12 +4,12 @@ description: 包含 Windows 设备类型的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8481fdeebccec9788d1d2d2c0691f1dd6877297e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76516a9d37fc3e9ff1e8c7efed42f3eef1f13a97
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949876"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975674"
 ---
 # <a name="windowsdevicetype-enum-type"></a>Windowsdevicetype 更改枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33949876"
 |流动|双面|是否支持移动 Windows 设备类型。|
 |全息|4|是否支持全息 Windows 设备类型。|
 |team|utf-8|是否支持团队 Windows 设备类型。|
+
 
 
 
