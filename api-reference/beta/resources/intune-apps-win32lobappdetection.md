@@ -4,12 +4,12 @@ description: 用于检测 Win32 应用程序的基类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1d4bd0374391ccb51154f2f7155b9e9f2ee506d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 414f675f0e3a9706a170910982b3ef5e2bd9c1d4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949659"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993275"
 ---
 # <a name="win32lobappdetection-resource-type"></a>win32LobAppDetection 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "33949659"
   "@odata.type": "#microsoft.graph.win32LobAppDetection"
 }
 ```
+
 
 
 

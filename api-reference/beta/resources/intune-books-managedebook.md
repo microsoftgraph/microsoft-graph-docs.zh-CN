@@ -4,12 +4,12 @@ description: 包含托管电子书基属性的抽象类。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8bf13e2c0a5c8e55a397516c21fe91d65aa413a5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949295"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991651"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
@@ -76,6 +76,7 @@ ms.locfileid: "33949295"
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

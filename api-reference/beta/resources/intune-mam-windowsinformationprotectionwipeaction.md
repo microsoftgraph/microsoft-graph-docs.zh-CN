@@ -4,12 +4,12 @@ description: 表示由租户管理员发出的用于引入并提供自己的设�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 262a27b53aaebc356c3b48987ac00ae349d90320
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dccbc89b38abd00a9b464f82cc0531e6fbab47ab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940440"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994395"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction 资源类型
 
@@ -62,6 +62,7 @@ ms.locfileid: "33940440"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

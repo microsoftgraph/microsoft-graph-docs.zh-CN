@@ -4,12 +4,12 @@ description: 创建新的 macOSLobApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7361e0808276ba201d3d5bea59d66899db3c9648
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7269003c2b68b9897db580daf1915c5d325bf98a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935970"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975348"
 ---
 # <a name="create-macoslobapp"></a>创建 macOSLobApp
 
@@ -216,6 +216,7 @@ Content-Length: 1746
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

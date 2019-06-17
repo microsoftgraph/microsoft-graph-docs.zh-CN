@@ -4,12 +4,12 @@ description: 创建新的 managedAndroidStoreApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 566ceaa4818f335b2f98ba0b3c86a5895f5d96df
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 272c2805d48cdf787b253a2e7a2ded81d8505739
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935760"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974991"
 ---
 # <a name="create-managedandroidstoreapp"></a>创建 managedAndroidStoreApp
 
@@ -191,6 +191,7 @@ Content-Length: 1436
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 创建新的 androidCompliancePolicy 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd4471f919762e689c29c62bbc4a3bacbe6e436d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a73e7c93bc122f76fe7cbbe30d4119f089af3168
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933324"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971631"
 ---
 # <a name="create-androidcompliancepolicy"></a>创建 androidCompliancePolicy
 
@@ -191,6 +191,7 @@ Content-Length: 1760
   ]
 }
 ```
+
 
 
 

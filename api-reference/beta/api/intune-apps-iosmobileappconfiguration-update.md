@@ -4,12 +4,12 @@ description: 更新 iosMobileAppConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ec86cfbfb671789ed67f154d230559e02a9df63
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 897bfae1806ea1d20cca5488272415661d0dabd4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936880"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964988"
 ---
 # <a name="update-iosmobileappconfiguration"></a>Update iosMobileAppConfiguration
 
@@ -130,6 +130,7 @@ Content-Length: 768
   ]
 }
 ```
+
 
 
 

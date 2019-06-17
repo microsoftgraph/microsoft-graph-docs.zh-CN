@@ -4,12 +4,12 @@ description: 实体表示策略定义上的列表框演示文稿的名称/值对
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6e0821ed276657fae6469cd4eb6541569df1b3f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d74b4d7383f76a395dba5dab14754ab349d70526
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941028"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992295"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>groupPolicyPresentationValueList 资源类型
 
@@ -68,6 +68,7 @@ ms.locfileid: "33941028"
   ]
 }
 ```
+
 
 
 

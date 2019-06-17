@@ -4,12 +4,12 @@ description: 删除 mobileAppAssignment
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02f22d6bb6dd021672f328bbd8e71f35d1bfe3d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ad2f19aa3ee6633eb06e2161ccaf01cec7448e58
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935347"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974137"
 ---
 # <a name="delete-mobileappassignment"></a>删除 mobileAppAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: EnrollmentProfile 资源表示必须提供预注册的配置的集�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d105f7318e177abac8071e11a21c9641d35c2359
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 47003125bd9e548774fe163f95afe17b10559389
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941581"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992666"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 
@@ -65,6 +65,7 @@ EnrollmentProfile 资源表示必须提供预注册的配置的集合, 以便能
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

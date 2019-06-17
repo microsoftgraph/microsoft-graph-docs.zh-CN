@@ -4,12 +4,12 @@ description: 列出 androidForWorkMobileAppConfiguration 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a20a5ec788777f885f810bbdbbfed118e5a45a1d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 150dea444b300809449c7a1ab952b56539696dd4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937447"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965401"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>列出 androidForWorkMobileAppConfigurations
 
@@ -93,6 +93,7 @@ Content-Length: 853
   ]
 }
 ```
+
 
 
 

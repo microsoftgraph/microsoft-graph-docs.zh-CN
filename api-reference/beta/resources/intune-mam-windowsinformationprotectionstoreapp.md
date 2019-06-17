@@ -4,12 +4,12 @@ description: 用于 Windows 信息保护的应用商店应用
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64310b1dd7924fbd77c67fd95dbb44958a163137
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 895267d331200939ffd86a5c811e8459db982f0a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940496"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994417"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp 资源类型
 
@@ -51,6 +51,7 @@ ms.locfileid: "33940496"
   "denied": true
 }
 ```
+
 
 
 

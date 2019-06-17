@@ -4,12 +4,12 @@ description: 包含 Windows 业务线应用程序的包信息的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2803779830d0e2bb88a0a91a96abfc101d15cb66
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 63b335aec3a4eeebb5d7cf031a05eaa7547bfd25
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949498"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975656"
 ---
 # <a name="windowspackageinformation-resource-type"></a>了 windowspackageinformation 资源类型
 
@@ -57,10 +57,13 @@ ms.locfileid: "33949498"
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   }
 }
 ```
+
 
 
 

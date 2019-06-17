@@ -4,12 +4,12 @@ description: 创建新的 windowsUniversalAppX 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94d12231c3fded88a25e76be2432bd397cdd83fb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8f5c4b50a6b1976fb0eea396f431f6f38d7bdaab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934507"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972730"
 ---
 # <a name="create-windowsuniversalappx"></a>创建 windowsUniversalAppX
 
@@ -92,7 +92,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1415
+Content-length: 1461
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -134,7 +134,9 @@ Content-length: 1415
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "Identity Version value"
 }
@@ -145,7 +147,7 @@ Content-length: 1415
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1587
+Content-Length: 1633
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -190,11 +192,14 @@ Content-Length: 1587
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

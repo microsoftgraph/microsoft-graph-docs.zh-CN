@@ -4,12 +4,12 @@ description: 使用 Google EMM API 的租户的同步状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6555e4722098b5f35d0098d1c1e55209926d6e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21eccae8d063a6007f6798c0909857688abe13ea
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950625"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993380"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>androidManagedStoreAccountAppSyncStatus 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33950625"
 |managementServiceError|第三章|尚未记录|
 |unknownError|4|尚未记录|
 |无|5|尚未记录|
+
 
 
 

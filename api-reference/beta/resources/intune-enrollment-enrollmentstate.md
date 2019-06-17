@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78038fc9a279536c1e68708b767c6b7c81e4e4df
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: adb8c668bf3f6d30667417500a5989734167fb5c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941574"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992659"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941574"
 |未能|第三章|未注册, 并且存在注册失败记录。|
 |notContacted|4|导入了设备, 但未注册。|
 |堵塞|5|设备已注册为 userless, 但由于应用程序安装失败而被阻止移到用户注册。|
+
 
 
 

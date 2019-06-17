@@ -4,12 +4,12 @@ description: Exchange 中的访问级别。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 853cda5253f01b9d6b108d59de89bcc678def581
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5b2c2c4e4a34a9a28dd10350bee592f9ba5dc63d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940391"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993114"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>deviceManagementExchangeAccessLevel 枚举类型
 
@@ -26,6 +26,7 @@ Exchange 中的访问级别。
 |允许|1|允许设备访问 Exchange。|
 |数据|双面|阻止设备访问 Exchange。|
 |隔离|第三章|隔离 Exchange 中的设备。|
+
 
 
 

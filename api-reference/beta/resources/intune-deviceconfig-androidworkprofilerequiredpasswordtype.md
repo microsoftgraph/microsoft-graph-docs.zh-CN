@@ -4,12 +4,12 @@ description: Android 工作配置文件必需的密码类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b384c6d5bcc3c79a967d1a4c4cdfc8299d1a56d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c1ebbbb51390d5d96afcfe0e2d4805e0ba9a3007
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947664"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993772"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>androidWorkProfileRequiredPasswordType 枚举类型
 
@@ -30,6 +30,7 @@ Android 工作配置文件必需的密码类型。
 |atLeastAlphabetic|5|至少需要字母密码。|
 |atLeastAlphanumeric|型|至少需要字母数字密码。|
 |alphanumericWithSymbols|步|至少需要带符号的字母数字密码。|
+
 
 
 

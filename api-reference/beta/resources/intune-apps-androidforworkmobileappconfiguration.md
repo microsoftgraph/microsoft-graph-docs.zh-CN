@@ -4,12 +4,12 @@ description: 包含 AFW 移动应用配置的属性、继承属性和操作。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58670a6e5b3fb64904c379214d8a456d14e65e72
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b26fea41bc75d8d57ac4f8b5a9bc8bf3d85cd661
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950513"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991392"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>androidForWorkMobileAppConfiguration 资源类型
 
@@ -89,6 +89,7 @@ ms.locfileid: "33950513"
   ]
 }
 ```
+
 
 
 

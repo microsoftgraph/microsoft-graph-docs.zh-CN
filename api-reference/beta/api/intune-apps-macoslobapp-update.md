@@ -4,12 +4,12 @@ description: 更新 macOSLobApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 640dd0bcc7604d29bcd88c3c5c5a349ae54db4d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f246f2b743154a9a74c6289670a73124ba23c572
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935914"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975292"
 ---
 # <a name="update-macoslobapp"></a>更新 macOSLobApp
 
@@ -218,6 +218,7 @@ Content-Length: 1746
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

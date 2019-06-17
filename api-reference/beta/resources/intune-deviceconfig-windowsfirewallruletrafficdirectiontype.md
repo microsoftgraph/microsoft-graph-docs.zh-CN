@@ -4,12 +4,12 @@ description: 防火墙规则流量方向。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b431bc1577460b7245b00764df4835e933662484
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 33527c435794aff131446205f3099ead38b933ca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944045"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994074"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>windowsFirewallRuleTrafficDirectionType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33944045"
 |notConfigured|0|未配置。|
 |排除|1|该规则适用于出站流量。|
 |实时|双面|规则适用于入站流量。|
+
 
 
 

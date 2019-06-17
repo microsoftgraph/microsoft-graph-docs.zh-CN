@@ -4,12 +4,12 @@ description: WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ec5470519e0d68ef5fbd267130f4aa5ffdf8b8f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fed9385e83a452bfda3a733d2b930a19b8ee92cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941448"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993885"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -95,6 +95,7 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "managedDeviceId": "String"
 }
 ```
+
 
 
 

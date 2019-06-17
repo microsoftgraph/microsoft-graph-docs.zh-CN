@@ -4,12 +4,12 @@ description: ImportedAppleDeviceIdentityResult 资源表示尝试导入 Apple �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8928cf4c7e4e67a24d5c222f84a21c801f8c089f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 021986d61afdeb5af717083657f46d308517f754
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941553"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992631"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult 资源类型
 
@@ -75,6 +75,7 @@ ImportedAppleDeviceIdentityResult 资源表示尝试导入 Apple 设备标识的
   "status": true
 }
 ```
+
 
 
 

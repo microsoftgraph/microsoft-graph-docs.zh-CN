@@ -4,12 +4,12 @@ description: 创建新的 androidLobApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f87b90118975bd6f8fa89d8142c970249cdfd052
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 37f7e27d8e40ec8537a33f6f510155f18abd1ec6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937342"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966346"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
@@ -203,6 +203,7 @@ Content-Length: 1585
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

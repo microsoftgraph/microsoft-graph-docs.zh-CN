@@ -4,12 +4,12 @@ description: 包含用于将 Win32 LOB 移动应用程序分配给组的属性�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ee2ac32773fc0ec781f22ff547dccfdcd15aea1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f8b6588c270c9b7977ddd7b3c7eb239f3b0432cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949799"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993233"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "33949799"
   "notifications": "String"
 }
 ```
+
 
 
 

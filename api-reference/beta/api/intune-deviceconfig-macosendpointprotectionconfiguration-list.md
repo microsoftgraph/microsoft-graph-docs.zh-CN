@@ -4,12 +4,12 @@ description: 列出 macOSEndpointProtectionConfiguration 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7022af8ab0d522c615b3cb4c1ed073ace4d9298a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f2077f3dbca3727f45b70376bc1262a557eb24f8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922604"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976762"
 ---
 # <a name="list-macosendpointprotectionconfigurations"></a>列出 macOSEndpointProtectionConfigurations
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 944
+Content-Length: 2469
 
 {
   "value": [
@@ -75,6 +75,27 @@ Content-Length: 944
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -90,11 +111,21 @@ Content-Length: 944
           "bundleId": "Bundle Id value",
           "allowsIncomingConnections": true
         }
-      ]
+      ],
+      "fileVaultEnabled": true,
+      "fileVaultSelectedRecoveryKeyTypes": "institutionalRecoveryKey",
+      "fileVaultInstitutionalRecoveryKeyCertificate": "ZmlsZVZhdWx0SW5zdGl0dXRpb25hbFJlY292ZXJ5S2V5Q2VydGlmaWNhdGU=",
+      "fileVaultInstitutionalRecoveryKeyCertificateFileName": "File Vault Institutional Recovery Key Certificate File Name value",
+      "fileVaultPersonalRecoveryKeyHelpMessage": "File Vault Personal Recovery Key Help Message value",
+      "fileVaultAllowDeferralUntilSignOut": true,
+      "fileVaultNumberOfTimesUserCanIgnore": 3,
+      "fileVaultDisablePromptAtSignOut": true,
+      "fileVaultPersonalRecoveryKeyRotationInMonths": 12
     }
   ]
 }
 ```
+
 
 
 

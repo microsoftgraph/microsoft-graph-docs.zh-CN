@@ -4,12 +4,12 @@ description: 用于将一组自定义设置按原样提供给配置范围确定�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f8927a4995f7b6e463db83377bc8c80b21730fa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e8d6fd389ef632aa1606fa8af070a0e83faf1d1b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940839"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991959"
 ---
 # <a name="managedappconfiguration-resource-type"></a>managedAppConfiguration 资源类型
 
@@ -72,6 +72,7 @@ ms.locfileid: "33940839"
   ]
 }
 ```
+
 
 
 

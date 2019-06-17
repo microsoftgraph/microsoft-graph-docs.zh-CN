@@ -4,12 +4,12 @@ description: 删除 androidForWorkGeneralDeviceConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e383c3dfb158e3b10a9f2716f246c91f594918f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4e47234bb16f6dd9a9159648d52ed1864e63f007
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933653"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34970854"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>删除 androidForWorkGeneralDeviceConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

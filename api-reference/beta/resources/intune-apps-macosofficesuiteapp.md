@@ -4,12 +4,12 @@ description: 包含 MacOS Office 套件应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c53b15ab7ebd4bf089e1839fca012a2851b6591
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ea209a1657b093c2b347bc014952d61bb673212b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950254"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979940"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>macOSOfficeSuiteApp 资源类型
 
@@ -100,6 +100,7 @@ ms.locfileid: "33950254"
   "dependentAppCount": 1024
 }
 ```
+
 
 
 

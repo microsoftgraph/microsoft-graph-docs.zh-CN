@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 427a3e86265d9d35eed8fbb86531e320f963b3d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 597721efb102dc318fa44bd1a6bc4f6a8781967f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946376"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995600"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus 资源类型
 
@@ -74,6 +74,7 @@ ms.locfileid: "33946376"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

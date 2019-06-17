@@ -4,12 +4,12 @@ description: 实体表示 ADMX (管理模板) XML 文件。 ADMX 文件包含组
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa766eace326dd05470b753f8daf6acfa8362e6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941133"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975936"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "33941133"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

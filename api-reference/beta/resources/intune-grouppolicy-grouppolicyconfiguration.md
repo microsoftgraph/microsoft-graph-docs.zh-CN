@@ -4,12 +4,12 @@ description: 组策略配置实体包含一个或多个组策略定义的配置�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d910bf8bdef34c60ca6bb66e1ce87ca9cf1d51ab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 544b743ab690521fee48e3609e2c62582131d6ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941175"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994242"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>groupPolicyConfiguration 资源类型
 
@@ -62,6 +62,7 @@ ms.locfileid: "33941175"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

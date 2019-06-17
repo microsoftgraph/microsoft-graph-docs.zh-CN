@@ -4,12 +4,12 @@ description: 设备配置分配实体将 AAD 组分配到特定设备配置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b042e3bb64d5a4c8ba80a8ae210aa14ab26af33f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a3580454eae767f9a9ca84e3ab196d66fb0c363d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947076"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993163"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33947076"
   }
 }
 ```
+
 
 
 

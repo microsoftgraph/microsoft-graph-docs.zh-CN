@@ -4,12 +4,12 @@ description: 包含适用于 Android 企业移动应用配置的属性、继承�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc2e32aa273e7944d409b9649bd92ee2ac755fd6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 64494a11db958ba815a2d277a47355d0c551a502
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950492"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991336"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidManagedStoreAppConfiguration 资源类型
 
@@ -91,6 +91,7 @@ ms.locfileid: "33950492"
   "appSupportsOemConfig": true
 }
 ```
+
 
 
 

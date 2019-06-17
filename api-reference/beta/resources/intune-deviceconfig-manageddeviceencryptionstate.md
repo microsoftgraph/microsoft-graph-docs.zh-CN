@@ -4,12 +4,12 @@ description: 每个设备的加密报告
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6816e8bc0bb71f4f81b3fc213db622d38ed83816
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d844183854a7d7f4f86574999d28d737712efbdb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944934"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992029"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>managedDeviceEncryptionState 资源类型
 
@@ -76,6 +76,7 @@ ms.locfileid: "33944934"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99a5779e63139ccef74fa7be96238dd274b95263
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 88fdccd3f5aa0f9cdf7b5b530a6e2a4f4f06ca97
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944913"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992050"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>managedDeviceCertificateState 资源类型
 
@@ -98,6 +98,7 @@ ms.locfileid: "33944913"
   "certificateErrorCode": 1024
 }
 ```
+
 
 
 

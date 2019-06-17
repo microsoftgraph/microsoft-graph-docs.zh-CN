@@ -4,12 +4,12 @@ description: 用于配置详细管理设置的 Windows 信息保护策略
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30f57d65aa60594be4158106726e80aabd47be36
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2d6ca1115a1d77e6989e82ee0a165d2e1162c0fb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940643"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994543"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>windowsInformationProtection 资源类型
 
@@ -209,6 +209,7 @@ ms.locfileid: "33940643"
   "isAssigned": true
 }
 ```
+
 
 
 
