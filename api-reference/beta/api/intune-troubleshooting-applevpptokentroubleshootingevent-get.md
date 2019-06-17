@@ -4,12 +4,12 @@ description: 读取 appleVppTokenTroubleshootingEvent 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d550628f5631b8dcb22b3ad71cc2c55865fa9ee3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2a8c455a58fd700488d4d6e0585a3b2365339f08
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897791"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990916"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>获取 appleVppTokenTroubleshootingEvent
 
@@ -99,6 +99,7 @@ Content-Length: 1003
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 用于标识展台配置的 AzureAD 组的类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ba3b98a0d44a993b3c5be89d4bdb01e348e9ac0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a80ef23c94424b79d1392cd5632f8dce85f675d1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943898"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978518"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>windowsKioskAzureADGroup 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "33943898"
   "groupId": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 显示 "主页" 按钮;单击 "主页" 按钮, 将加载特定的 U
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3b82acaf8ef5f6e008d759f257c7382ff64492b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3f16f883622ace795628d7c34214cc4b5d12017e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946817"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989790"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "33946817"
   "homeButtonCustomURL": "String"
 }
 ```
+
 
 
 

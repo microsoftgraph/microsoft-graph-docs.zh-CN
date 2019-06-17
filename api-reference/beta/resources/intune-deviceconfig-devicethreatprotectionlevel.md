@@ -4,12 +4,12 @@ description: 设备威胁防护 API 的设备威胁保护级别。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c60b9f2775fdad7bc9f1f2fa3ae18992fc2e4757
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 895e8bd056c688ed26ba5fe57c688c66ab6ac846
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946901"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989957"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33946901"
 |中等|第三章|设备威胁保护级别要求: 中。 中型代表设备或设备数据面临中等风险的威胁的严重程度。|
 |高效|4|设备威胁保护级别要求: 高。 High 表示对设备或设备数据带来严重风险的威胁的严重程度。|
 |notSet|10 |设备威胁保护级别要求: 未设置。 未设置表示设备不需要满足威胁保护级别。|
+
 
 
 

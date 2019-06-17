@@ -4,12 +4,12 @@ description: 更新 mobileAppAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31da8d9858426571992b25f57b8e24365ea543c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b56df8300d7c96bbb5ab3aea24716592922069f5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935284"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974123"
 ---
 # <a name="update-mobileappassignment"></a>更新 mobileAppAssignment
 
@@ -100,6 +100,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

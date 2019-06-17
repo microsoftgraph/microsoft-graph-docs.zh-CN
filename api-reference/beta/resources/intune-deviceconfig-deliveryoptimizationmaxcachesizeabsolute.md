@@ -4,12 +4,12 @@ description: 传递优化最大缓存大小绝对类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 285c1830065d18669bd6d3d02d615400af27e231
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bfeb2e4279e9858f9fd8f923657c8e32bf129396
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947188"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979583"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>deliveryOptimizationMaxCacheSizeAbsolute 资源类型
 
@@ -44,6 +44,7 @@ ms.locfileid: "33947188"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
 
 
 

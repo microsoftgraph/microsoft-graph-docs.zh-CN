@@ -4,12 +4,12 @@ description: VPN 代理服务器。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56b9177c19ec089a3c93bd388084ae20d7865ace
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72ac0afd77012cfaff67715408a8daa18e71946f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944206"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986821"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer 资源类型
 
@@ -49,6 +49,7 @@ VPN 代理服务器。
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
 
 
 

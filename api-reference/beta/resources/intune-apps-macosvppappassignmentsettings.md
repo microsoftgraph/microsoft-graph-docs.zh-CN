@@ -4,12 +4,12 @@ description: 包含用于将 Mac VPP 移动应用程序分配给组的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0c7b76b562a58e832c97cc03fb475a023247ee5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a8b63edf4e470e3418693fe299dc07a22175e09
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950317"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989145"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>macOsVppAppAssignmentSettings 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "33950317"
   "useDeviceLicensing": true
 }
 ```
+
 
 
 

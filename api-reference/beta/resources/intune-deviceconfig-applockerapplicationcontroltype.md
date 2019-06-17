@@ -4,12 +4,12 @@ description: AppLocker 应用程序控件类型的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d40e76303389c95c6f68350b1c2bd1a03208d46
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a1b3e5ec545f4466eb080f20839e12c7e5972cc0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947566"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981578"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>appLockerApplicationControlType 枚举类型
 
@@ -27,6 +27,7 @@ AppLocker 应用程序控件类型的可能值
 |auditComponentsAndStoreApps|双面|审核 Windows 组件和存储应用程序。|
 |enforceComponentsStoreAppsAndSmartlocker|第三章|强制实施 Windows 组件、存储应用和智能保险箱。|
 |auditComponentsStoreAppsAndSmartlocker|4|审核 Windows 组件、存储应用和智能保险箱。|
+
 
 
 

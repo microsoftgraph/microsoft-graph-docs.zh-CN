@@ -4,12 +4,12 @@ description: 读取 managedAppStatus 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 851b63db8a12fd7ff3bfe9d301202a90146c14ab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 15a2220765bb7b25b64a9e6df3ffc3d3a59a1c04
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903556"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987220"
 ---
 # <a name="get-managedappstatus"></a>获取 managedAppStatus
 
@@ -76,6 +76,7 @@ Content-Length: 205
   }
 }
 ```
+
 
 
 

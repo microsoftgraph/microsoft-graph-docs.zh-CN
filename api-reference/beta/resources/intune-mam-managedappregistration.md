@@ -4,12 +4,12 @@ description: ManagedAppEntity 是应用管理工作流下所有其他实体类�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5532b4feaeaedd631c6e561f9e68722cba47a14
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c618aacd448445fead1a0e55890ac7cb07dd7327
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940699"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994711"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -89,6 +89,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
+
 
 
 

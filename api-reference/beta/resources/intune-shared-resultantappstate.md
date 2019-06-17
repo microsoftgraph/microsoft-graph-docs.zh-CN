@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 904d47ebc2efe08a06f1d228b93788b47aea5144
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a4df7bdad03b2992633bf3cd4e50777a9458062b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939789"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986359"
 ---
 # <a name="resultantappstate-enum-type"></a>resultantAppState 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33939789"
 |pendingInstall|5|正在安装应用程序。|
 |unknown|99|应用程序的状态未知。|
 |notApplicable|-1|应用程序不适用。|
+
 
 
 

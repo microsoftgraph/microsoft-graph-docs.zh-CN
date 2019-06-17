@@ -4,12 +4,12 @@ description: 组策略文件或定义的类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be51705fdf1b82614269e34bd18bc1217384e41c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aea113d0ec527349f583f645a30231169cd64234
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940972"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986016"
 ---
 # <a name="grouppolicytype-enum-type"></a>groupPolicyType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33940972"
 |:---|:---|:---|
 |admxBacked|0|组策略管理模板内置到策略配置服务提供程序 (CSP)。|
 |admxIngested|1|使用策略配置服务提供程序 (CSP) 安装的组策略管理模板。|
+
 
 
 

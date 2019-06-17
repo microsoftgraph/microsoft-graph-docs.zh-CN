@@ -4,12 +4,12 @@ description: 通知消息是要发送给最终用户的消息，这些最终用�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f637ea8ae088e22c90d504495b1de5206f125ef4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 179d37f4671088deb0bc736a7873a53362aa8f7f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940426"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988214"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "33940426"
   ]
 }
 ```
+
 
 
 

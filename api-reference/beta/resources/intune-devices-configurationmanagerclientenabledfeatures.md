@@ -4,12 +4,12 @@ description: Configuration Manager 客户端已启用的功能
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37c098910ec532a1ab23ae8464c03e43cf7a9e29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fcee21d1d6d9047b273b539ec10d3cfa63c2e3ce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943037"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983223"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -54,6 +54,7 @@ Configuration Manager 客户端已启用的功能
   "officeApps": true
 }
 ```
+
 
 
 

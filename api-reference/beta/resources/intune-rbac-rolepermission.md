@@ -4,12 +4,12 @@ description: 包含为每个角色确定允许和不允许的权限的一组 Res
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c5ef360393e99b8c8a152596a2285cddd49d7e0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8cbe41bae81d165d0800a5184e1f7babedebc09d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939026"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993520"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33939026"
   ]
 }
 ```
+
 
 
 

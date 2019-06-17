@@ -4,12 +4,12 @@ description: Intune 将向客户提供在已注册的 windows 10 Azure Active Di
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 649ecb29aa3ff18960e858fc86a0f9fae316b13c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f4132aa55abc495dbd36a96714c3405e1445b42c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942057"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983013"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -83,6 +83,7 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
   "runAs32Bit": true
 }
 ```
+
 
 
 

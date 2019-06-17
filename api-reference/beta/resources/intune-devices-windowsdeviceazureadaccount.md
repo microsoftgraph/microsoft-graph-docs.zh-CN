@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73dfbc0d80186cd83ec20fec15a154594d027ad3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72a595e0dfa3bb7533f1c017818138edafa3e944
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942155"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986583"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "33942155"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 microsoftStoreForBusinessApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb060b09d4305b8b7aaaa6f3226dfa1959e14d03
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 55da404c8375958b1c09dd18d57acc52c436b86e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935438"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974382"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>删除 microsoftStoreForBusinessApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

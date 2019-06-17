@@ -4,12 +4,12 @@ description: Windows 10 VPN 配置文件目标类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 737b8e9f828d4054fef407e148b9073dd7924b5c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1a4aeb54fae64c04814b985751fec8f69383bd6b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944213"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982110"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget 枚举类型
 
@@ -25,6 +25,7 @@ Windows 10 VPN 配置文件目标类型。
 |user|0|用户目标 VPN 配置文件。|
 |设备|1|面向设备的 VPN 配置文件。|
 |autoPilotDevice|双面|AutoPilot 设备目标 VPN 配置文件。|
+
 
 
 

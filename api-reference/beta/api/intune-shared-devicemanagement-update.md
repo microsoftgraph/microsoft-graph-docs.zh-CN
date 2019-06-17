@@ -4,16 +4,16 @@ description: 更新 deviceManagement 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2621df4ec2373c06433df5df4f253971d4280a15
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a77605170d7df943b0d1a96fc2fe864b9d46e4f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898484"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989691"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -38,6 +38,7 @@ ms.locfileid: "33898484"
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
@@ -79,7 +80,7 @@ PATCH /deviceManagement
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|在 scaleunits 之间移动租户数据的日期 & 时间。|
+|accountMoveCompletionDateTime|DateTimeOffset|租户数据在 scaleunits 之间移动的日期 & 时间。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理员同意信息。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|设备保护概述。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|设备清理规则|

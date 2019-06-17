@@ -4,12 +4,12 @@ description: 更新 androidForWorkCompliancePolicy 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e334108bd80001cc3a18ee8cf5b8bc74865ef09
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a78034d13907ed1adb1ab067578373783e7c6067
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33932939"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971050"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>更新 androidForWorkCompliancePolicy
 
@@ -169,6 +169,7 @@ Content-Length: 1455
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 创建新的 managedDeviceMobileAppConfigurationUserStatus 对象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 736078b22a4977d27e2b1233265fe4fe71319c0c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e8b5c51f1fbc6ccfc31145ca8ff8d5285f254ef3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935599"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974676"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>创建 managedDeviceMobileAppConfigurationUserStatus
 
@@ -99,6 +99,7 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

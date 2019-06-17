@@ -4,12 +4,12 @@ description: 高级 BitLocker 状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a5bf6326006d17d8e562ed429c67afb83f25c9f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ff590f99d019ec62c0bc08f9dd6b4e34bd78b1f8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949136"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965792"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 
@@ -39,6 +39,7 @@ ms.locfileid: "33949136"
 |tpmNotAvailable|8192|TPM 对 BitLocker 不可用。 这意味着 TPM 不存在, 或者设置了 TPM 不可用注册表替代, 或者主机 OS 位于便携/罗马盘上|
 |tpmNotReady|16384|TPM 尚未准备好用于 BitLocker|
 |networkError|32768|网络不可用。 这是恢复密钥备份所必需的。 此报告适用于支持驱动器加密的设备|
+
 
 
 

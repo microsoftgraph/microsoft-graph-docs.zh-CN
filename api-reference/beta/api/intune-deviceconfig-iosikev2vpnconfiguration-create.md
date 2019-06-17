@@ -1,23 +1,23 @@
 ---
-title: 创建 iosVpnConfiguration
-description: 创建新的 iosVpnConfiguration 对象。
+title: 创建 iosikEv2VpnConfiguration
+description: 创建新的 iosikEv2VpnConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f98b3a58043a3cf19e1702d815e3fc3ad0b32eb
+ms.openlocfilehash: c52cbfaa0895e5bccf2c892c5435460a1ebec30d
 ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977112"
+ms.locfileid: "35001760"
 ---
-# <a name="create-iosvpnconfiguration"></a>创建 iosVpnConfiguration
+# <a name="create-iosikev2vpnconfiguration"></a>创建 iosikEv2VpnConfiguration
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)对象。
+创建新的[iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,9 +45,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 iosVpnConfiguration 对象的 JSON 表示形式。
+在请求正文中, 提供 iosikEv2VpnConfiguration 对象的 JSON 表示形式。
 
-下表显示创建 iosVpnConfiguration 时所需的属性。
+下表显示创建 iosikEv2VpnConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -78,16 +78,36 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md)集合|按需规则。 该集合最多可包含 500 个元素。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|代理服务器。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|选择将设备的 Id 共享到第三方 vpn 客户端, 以便在网络访问控制验证期间使用。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|每应用 VPN 的提供程序类型。 可取值为：`notConfigured`、`appProxy`、`packetTunnel`。|
-|userDomain|String|仅 Zscaler。 输入一个静态域, 以便在 Zscaler 应用程序中预填充 "登录" 字段。 如果保留为空, 则将改用用户的 Azure Active Directory 域。|
-|strictEnforcement|Boolean|仅 Zscaler。 阻止网络流量, 直到用户登录到 Zscaler 应用程序。 "True" 表示阻止流量。|
-|cloudName|String|仅 Zscaler。 用户分配到的 Zscaler 云。|
-|excludeList|String collection|仅 Zscaler。 不通过 Zscaler 云发送的网络地址的列表。|
+|providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|每应用 VPN 的提供程序类型。 继承自[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)。 可取值为：`notConfigured`、`appProxy`、`packetTunnel`。|
+|userDomain|String|仅 Zscaler。 输入一个静态域, 以便在 Zscaler 应用程序中预填充 "登录" 字段。 如果保留为空, 则将改用用户的 Azure Active Directory 域。 继承自[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|strictEnforcement|Boolean|仅 Zscaler。 阻止网络流量, 直到用户登录到 Zscaler 应用程序。 "True" 表示阻止流量。 继承自[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|cloudName|String|仅 Zscaler。 用户分配到的 Zscaler 云。 继承自[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|excludeList|String collection|仅 Zscaler。 不通过 Zscaler 云发送的网络地址的列表。 继承自[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|childSecurityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|子安全关联参数|
+|clientAuthenticationType|[vpnClientAuthenticationType](../resources/intune-deviceconfig-vpnclientauthenticationtype.md)|VPN 客户端将使用的客户端身份验证的类型。 可取值为：`userAuthentication`、`deviceAuthentication`。|
+|deadPeerDetectionRate|[vpnDeadPeerDetectionRate](../resources/intune-deviceconfig-vpndeadpeerdetectionrate.md)|确定检查等连接是否仍处于活动状态的频率。 . 可取值为：`medium`、`none`、`low`、`high`。|
+|disableMobilityAndMultihoming|Boolean|禁用 MOBIKE|
+|disableRedirect|Boolean|禁用重定向|
+|enableCertificateRevocationCheck|Boolean|启用尽力吊销检查;服务器响应超时不会导致它失败|
+|enableEAP|Boolean|启用仅 EAP 身份验证|
+|enablePerfectForwardSecrecy|Boolean|启用完全向前保密 (PFS)。|
+|enableUseInternalSubnetAttributes|Boolean|启用 "使用内部子网属性"。|
+|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|标识尝试通过 VPN 连接的客户端的方法。 . 可能的值是`deviceFQDN`:。|
+|remoteIdentifier|String|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
+|securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|安全关联参数|
+|serverCertificateCommonName|String|服务器身份验证中使用的 IKEv2 服务器证书的公用名|
+|serverCertificateIssuerCommonName|String|身份验证中使用的 IKEv2 服务器证书颁发者的颁发者公用名称|
+|serverCertificateType|[vpnServerCertificateType](../resources/intune-deviceconfig-vpnservercertificatetype.md)|VPN 服务器将提供给 VPN 客户端进行身份验证的证书类型。 可取值为：`rsa`、`ecdsa256`、`ecdsa384`、`ecdsa521`。|
+|sharedSecret|String|在选择共享密钥身份验证时使用|
+|tlsMaximumVersion|String|要与 EAP-TLS 身份验证一起使用的最大 TLS 版本|
+|tlsMinimumVersion|String|与 EAP-TLS 身份验证一起使用的最小 TLS 版本|
+|allowDefaultSecurityAssociationParameters|Boolean|允许使用安全关联参数, 具体方法是将所有参数设置为设备的默认值, 除非明确指定。|
+|allowDefaultChildSecurityAssociationParameters|Boolean|允许使用子安全关联参数, 具体方法是将所有参数设置为设备的默认值, 除非明确指定。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -96,10 +116,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2815
+Content-length: 4237
 
 {
-  "@odata.type": "#microsoft.graph.iosVpnConfiguration",
+  "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -191,7 +211,39 @@ Content-length: 2815
   "cloudName": "Cloud Name value",
   "excludeList": [
     "Exclude List value"
-  ]
+  ],
+  "childSecurityAssociationParameters": {
+    "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
+    "securityEncryptionAlgorithm": "des",
+    "securityIntegrityAlgorithm": "sha1_96",
+    "securityDiffieHellmanGroup": 10,
+    "lifetimeInMinutes": 1
+  },
+  "clientAuthenticationType": "deviceAuthentication",
+  "deadPeerDetectionRate": "none",
+  "disableMobilityAndMultihoming": true,
+  "disableRedirect": true,
+  "enableCertificateRevocationCheck": true,
+  "enableEAP": true,
+  "enablePerfectForwardSecrecy": true,
+  "enableUseInternalSubnetAttributes": true,
+  "localIdentifier": "deviceFQDN",
+  "remoteIdentifier": "Remote Identifier value",
+  "securityAssociationParameters": {
+    "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
+    "securityEncryptionAlgorithm": "des",
+    "securityIntegrityAlgorithm": "sha1_96",
+    "securityDiffieHellmanGroup": 10,
+    "lifetimeInMinutes": 1
+  },
+  "serverCertificateCommonName": "Server Certificate Common Name value",
+  "serverCertificateIssuerCommonName": "Server Certificate Issuer Common Name value",
+  "serverCertificateType": "ecdsa256",
+  "sharedSecret": "Shared Secret value",
+  "tlsMaximumVersion": "Tls Maximum Version value",
+  "tlsMinimumVersion": "Tls Minimum Version value",
+  "allowDefaultSecurityAssociationParameters": true,
+  "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
 
@@ -200,11 +252,11 @@ Content-length: 2815
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2987
+Content-Length: 4409
 
 {
-  "@odata.type": "#microsoft.graph.iosVpnConfiguration",
-  "id": "bd12424c-424c-bd12-4c42-12bd4c4212bd",
+  "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
+  "id": "b87b0327-0327-b87b-2703-7bb827037bb8",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -298,7 +350,39 @@ Content-Length: 2987
   "cloudName": "Cloud Name value",
   "excludeList": [
     "Exclude List value"
-  ]
+  ],
+  "childSecurityAssociationParameters": {
+    "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
+    "securityEncryptionAlgorithm": "des",
+    "securityIntegrityAlgorithm": "sha1_96",
+    "securityDiffieHellmanGroup": 10,
+    "lifetimeInMinutes": 1
+  },
+  "clientAuthenticationType": "deviceAuthentication",
+  "deadPeerDetectionRate": "none",
+  "disableMobilityAndMultihoming": true,
+  "disableRedirect": true,
+  "enableCertificateRevocationCheck": true,
+  "enableEAP": true,
+  "enablePerfectForwardSecrecy": true,
+  "enableUseInternalSubnetAttributes": true,
+  "localIdentifier": "deviceFQDN",
+  "remoteIdentifier": "Remote Identifier value",
+  "securityAssociationParameters": {
+    "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
+    "securityEncryptionAlgorithm": "des",
+    "securityIntegrityAlgorithm": "sha1_96",
+    "securityDiffieHellmanGroup": 10,
+    "lifetimeInMinutes": 1
+  },
+  "serverCertificateCommonName": "Server Certificate Common Name value",
+  "serverCertificateIssuerCommonName": "Server Certificate Issuer Common Name value",
+  "serverCertificateType": "ecdsa256",
+  "sharedSecret": "Shared Secret value",
+  "tlsMaximumVersion": "Tls Maximum Version value",
+  "tlsMinimumVersion": "Tls Minimum Version value",
+  "allowDefaultSecurityAssociationParameters": true,
+  "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
 

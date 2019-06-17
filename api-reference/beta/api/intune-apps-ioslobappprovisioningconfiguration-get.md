@@ -4,12 +4,12 @@ description: 读取 iosLobAppProvisioningConfiguration 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44e9d1a86e11870c86f0029df727674c57d87226
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a3daeee65c9a3bbfd7cfa237bacff94a2cf085ed
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937069"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966157"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>获取 iosLobAppProvisioningConfiguration
 
@@ -85,6 +85,7 @@ Content-Length: 592
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 androidWiFiConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffec057ae7768546b167b2bdf335ab012a337e72
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7288e01a65eb8b83d602ee8a86f6882bce9b55f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928720"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34969734"
 ---
 # <a name="delete-androidwificonfiguration"></a>删除 androidWiFiConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

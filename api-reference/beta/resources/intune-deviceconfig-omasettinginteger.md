@@ -4,12 +4,12 @@ description: OMA 设置整数定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef33fd372d797822a334a4b218df44572648b166
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6bdad3d10587374d913897a8052b1a8b22f74d76
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951066"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980395"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 
@@ -29,6 +29,7 @@ OMA 设置整数定义。
 |说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |值|Int32|值。|
+|isReadOnly|Boolean|通过将设置为 true, 则在 OMA-URI 中指定的 CSP (配置服务提供程序) 将执行 get, 而不是设置|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,9 +47,11 @@ OMA 设置整数定义。
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1024
+  "value": 1024,
+  "isReadOnly": true
 }
 ```
+
 
 
 

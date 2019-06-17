@@ -4,12 +4,12 @@ description: 计算机终结点保护状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6086dc05d204e4c9cb23c77f79f98c3a207de35c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0ac91095b27f7151d53ca81c43b3a77e3b8c0d87
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941889"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986590"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941889"
 |manualStepsPending|4|计算机处于挂起的手动步骤状态|
 |offlineScanPending|utf-8|计算机处于挂起的脱机扫描状态|
 |关键|位|计算机处于严重故障状态|
+
 
 
 

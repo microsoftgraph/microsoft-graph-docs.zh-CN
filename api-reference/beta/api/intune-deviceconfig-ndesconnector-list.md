@@ -4,12 +4,12 @@ description: 列出 ndesConnector 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 081a0f018ec229215e3f10014927f9a0b901f50f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 61afa761316b79c7d3ca20373d198534f1741146
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922183"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976377"
 ---
 # <a name="list-ndesconnectors"></a>列出 ndesConnectors
 
@@ -76,6 +76,7 @@ Content-Length: 285
   ]
 }
 ```
+
 
 
 
