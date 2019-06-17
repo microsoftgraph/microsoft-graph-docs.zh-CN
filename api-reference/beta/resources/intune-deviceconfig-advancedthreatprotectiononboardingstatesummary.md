@@ -4,12 +4,12 @@ description: Windows defender 高级威胁防护在帐户中加入状态摘要�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d96de8e427d265003811c751bce7b6c0675ba667
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ee8058a61daa9c1510dab5a683ac46b2eea0f590
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949120"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965789"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>advancedThreatProtectionOnboardingStateSummary 资源类型
 
@@ -65,6 +65,7 @@ Windows defender 高级威胁防护在帐户中加入状态摘要。
   "notAssignedDeviceCount": 1024
 }
 ```
+
 
 
 

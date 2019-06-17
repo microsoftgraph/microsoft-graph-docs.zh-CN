@@ -4,12 +4,12 @@ description: 更新 windowsStoreApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03ac1aa5d45e6f4a1bc6f5987729b764388fbcc6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c9bf99d5c84fcf942fd978d105e1b6e95bc608ff
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934500"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972751"
 ---
 # <a name="update-windowsstoreapp"></a>更新 windowsStoreApp
 
@@ -149,6 +149,7 @@ Content-Length: 940
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

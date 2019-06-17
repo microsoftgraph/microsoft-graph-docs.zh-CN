@@ -4,12 +4,12 @@ description: 创建新的 iosVppApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 103902121a51683f0e74752296daf100511e2f23
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 098a671deb94deb501ff3828cd53c7ee8b1bd00b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937048"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964932"
 ---
 # <a name="create-iosvppapp"></a>创建 iosVppApp
 
@@ -226,6 +226,7 @@ Content-Length: 2171
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 androidForWorkApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9990770a6464ea37a98a105fb1a4a0a05752ea8e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 23a0588eaacfc3584d0a9ecc5a4c33148345e4fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937482"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965345"
 ---
 # <a name="update-androidforworkapp"></a>更新 androidForWorkApp
 
@@ -161,6 +161,7 @@ Content-Length: 1075
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

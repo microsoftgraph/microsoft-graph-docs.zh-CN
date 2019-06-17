@@ -4,12 +4,12 @@ description: 更新 managedEBookCategory 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c808225a15ddb65a47e06445b9dcdd81fc6d20dc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a4a9f9ea4d7f8c53c5dc35aed552edb6d7bbea11
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934164"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972142"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
 
@@ -89,6 +89,7 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

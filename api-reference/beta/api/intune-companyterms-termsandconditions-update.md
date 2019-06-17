@@ -4,12 +4,12 @@ description: 更新 termsAndConditions 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5d7f951aefe0124d0576277587ddcf48dbb0fd5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 035c7470a6d28c1b979b134d5aa636afc1bc68ca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933877"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971974"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
@@ -109,6 +109,7 @@ Content-Length: 505
   "version": 7
 }
 ```
+
 
 
 

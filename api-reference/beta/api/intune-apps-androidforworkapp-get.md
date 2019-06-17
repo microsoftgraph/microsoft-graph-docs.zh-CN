@@ -4,12 +4,12 @@ description: 读取 androidForWorkApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3cd1fc8e48e55e6f3b1c45be5ef5e38ae2b3f47
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 65c4f6d96485ead0cf076a86f5ff585ae1967d84
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937489"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965373"
 ---
 # <a name="get-androidforworkapp"></a>获取 androidForWorkApp
 
@@ -104,6 +104,7 @@ Content-Length: 1154
   }
 }
 ```
+
 
 
 

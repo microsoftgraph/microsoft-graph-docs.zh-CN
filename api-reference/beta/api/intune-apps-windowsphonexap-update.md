@@ -4,12 +4,12 @@ description: 更新 windowsPhoneXAP 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdac4a797aa284310c2c13c4accc95c543efe214
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 02732588ace6f962a8d0ad10b2c932bba4865c96
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934563"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972828"
 ---
 # <a name="update-windowsphonexap"></a>更新 windowsPhoneXAP
 
@@ -89,7 +89,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1191
+Content-length: 1237
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -125,7 +125,9 @@ Content-length: 1191
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
@@ -137,7 +139,7 @@ Content-length: 1191
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1363
+Content-Length: 1409
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -176,12 +178,15 @@ Content-Length: 1363
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

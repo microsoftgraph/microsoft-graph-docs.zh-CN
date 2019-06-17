@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationTextBox 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ade36f817022dcfec2dfa7a41e60a64cbb27536e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a44a21af03503484a797e9c6c37f4869cbfb1373
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904620"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965996"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>更新 groupPolicyPresentationTextBox
 
@@ -98,6 +98,7 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
+
 
 
 

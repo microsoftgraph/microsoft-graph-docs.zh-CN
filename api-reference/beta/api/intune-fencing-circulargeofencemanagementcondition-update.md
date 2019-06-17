@@ -4,12 +4,12 @@ description: 更新 circularGeofenceManagementCondition 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0b8a6d870592269ee1e79da783f6a5c4b9774cf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2d175c4ada491c7162dae7edc4af461c56f6e69e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905474"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964778"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可能的值为`android`: `androidForWork`、 `iOS`、 `macOS` `windowsPhone81` `windows81AndLater` `windows10AndLater`、、、、 `androidWorkProfile`、`unknown`、。|
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |latitude|双精度|以度为单位的纬度, 介于-90 和 + 90 之间 (含)。|
 |longitude|Double|以度为单位的经度, 介于-180 和 + 180 之间 (含)。|
 |radiusInMeters|单精度|以米为单位的半径。|
@@ -116,6 +116,7 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

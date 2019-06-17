@@ -4,12 +4,12 @@ description: 表示 ADMX textBox 元素和 ADMX 文本元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f5b967e0366cdae2afd4fe28a7ee9bf7cbc7760
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 08edce84569edb8bd85261b0796aaa3e6a5b1eb6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941042"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964834"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>groupPolicyPresentationTextBox 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "33941042"
   "maxLength": 1024
 }
 ```
+
 
 
 

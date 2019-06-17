@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationTextBox。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70c4f0a50010624fc883db91ba3f7c220a043213
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 22af2e84ce2bae28146113f8a4aa085a70b19da5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904655"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965947"
 ---
 # <a name="delete-grouppolicypresentationtextbox"></a>删除 groupPolicyPresentationTextBox
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

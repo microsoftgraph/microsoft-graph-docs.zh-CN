@@ -4,12 +4,12 @@ description: 给定设备的 ATP 载入状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0db57f7f1fbd2f0064cf1584c5e70e6fae1ac895
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 37d614242045d63004883b1591e6a8e5907464dd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949211"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965788"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>advancedThreatProtectionOnboardingDeviceSettingState 资源类型
 
@@ -74,6 +74,7 @@ ms.locfileid: "33949211"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

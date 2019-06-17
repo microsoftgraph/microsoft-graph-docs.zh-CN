@@ -4,12 +4,12 @@ description: 表示 AirPrint 目标。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90eb7d01afacf65e96623fea35128c122e55d16b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 665e4d5a8e8c3f715150bd81075385a7a6dd8c1a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949218"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965772"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33949218"
   "forceTls": true
 }
 ```
+
 
 
 

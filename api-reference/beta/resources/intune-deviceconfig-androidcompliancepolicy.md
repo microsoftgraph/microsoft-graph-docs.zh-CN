@@ -4,12 +4,12 @@ description: 此类包含 Android 的合规性设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94c17521220fdd6e302ccd3393fff7e72b11536c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 53d7d0e05ad252224e0a8872b0679569efcf3ed3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949113"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965744"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy 资源类型
 
@@ -131,6 +131,7 @@ ms.locfileid: "33949113"
   ]
 }
 ```
+
 
 
 

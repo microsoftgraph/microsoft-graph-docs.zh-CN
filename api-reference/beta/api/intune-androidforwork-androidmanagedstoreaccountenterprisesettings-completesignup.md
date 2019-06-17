@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc9e29656bfc935b8459569542fc86201f723ed5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5bdae0ba6f2cdf4acff7eef2efe5c756f9858067
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939159"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966500"
 ---
 # <a name="completesignup-action"></a>completeSignup 操作
 
@@ -77,6 +77,7 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

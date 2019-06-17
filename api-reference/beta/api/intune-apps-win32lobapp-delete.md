@@ -4,12 +4,12 @@ description: 删除 win32LobApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f048e47fe9edc6a057b068a4bac9f9c902dc64c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72568780b1e012953e0ed6daa992e71e667f4be8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934836"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973318"
 ---
 # <a name="delete-win32lobapp"></a>删除 win32LobApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

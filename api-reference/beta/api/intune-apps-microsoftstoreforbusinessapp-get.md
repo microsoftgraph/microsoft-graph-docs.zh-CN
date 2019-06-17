@@ -4,12 +4,12 @@ description: 读取 microsoftStoreForBusinessApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9da4758819f1a22ab61886832f85eb7bfe7c84dc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: baa9b3622e5db616235808966f96ba47303ed49f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935424"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974424"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>获取 microsoftStoreForBusinessApp
 
@@ -111,6 +111,7 @@ Content-Length: 1397
   }
 }
 ```
+
 
 
 

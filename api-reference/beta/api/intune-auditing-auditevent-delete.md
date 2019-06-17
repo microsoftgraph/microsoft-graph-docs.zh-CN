@@ -4,12 +4,12 @@ description: 删除 auditEvent
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa04a1cf6305db4bbff9c8c5ea5be9806ea76321
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ee7013f8a514f5aaea67bff4eb6f6d8ad66b6a0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934409"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972590"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEvent
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

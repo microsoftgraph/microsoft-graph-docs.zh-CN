@@ -4,12 +4,12 @@ description: 创建新的 iosLobApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7489a0076a684b9f2959a669442ebe0ef318679
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 482e2bf60be2f8cef510dd3277453dbe37a2dde5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937510"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966227"
 ---
 # <a name="create-ioslobapp"></a>创建 iosLobApp
 
@@ -196,6 +196,7 @@ Content-Length: 1563
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 win32LobApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 331ca0eafe11f1a5f0a0de3b9cda4f9082af0082
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 98d6ac957d683d3545286f5b8d5ff0be0ba818f3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934822"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973325"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3101
+Content-Length: 3151
 
 {
   "value": {
@@ -110,7 +110,9 @@ Content-Length: 3101
       "v10_1607": true,
       "v10_1703": true,
       "v10_1709": true,
-      "v10_1803": true
+      "v10_1803": true,
+      "v10_1809": true,
+      "v10_1903": true
     },
     "minimumFreeDiskSpaceInMB": 8,
     "minimumMemoryInMB": 1,
@@ -163,6 +165,7 @@ Content-Length: 3101
   }
 }
 ```
+
 
 
 

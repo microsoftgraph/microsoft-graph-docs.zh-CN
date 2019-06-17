@@ -4,12 +4,12 @@ description: 读取 windowsPhone81StoreApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd69ef5d97ca4dc5a79d93118617bffa1d122dd0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 18823ffba7d0c67907e24c9e136bfe608ea3f2bf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934584"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972940"
 ---
 # <a name="get-windowsphone81storeapp"></a>获取 windowsPhone81StoreApp
 
@@ -100,6 +100,7 @@ Content-Length: 1018
   }
 }
 ```
+
 
 
 

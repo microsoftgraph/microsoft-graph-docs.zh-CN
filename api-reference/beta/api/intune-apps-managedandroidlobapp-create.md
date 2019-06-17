@@ -4,12 +4,12 @@ description: 创建新的 managedAndroidLobApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc1921d4760b28fe10acde32891f57b374e21a7b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fe1907a05707ec5f6e4903c84c4134697adc2e88
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935809"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975082"
 ---
 # <a name="create-managedandroidlobapp"></a>创建 managedAndroidLobApp
 
@@ -209,6 +209,7 @@ Content-Length: 1663
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

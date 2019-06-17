@@ -4,16 +4,19 @@ description: 使用此 API 新建用户。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0193ab061f98d1cf799a9f84133ed88a2122c2b9
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 2f023c8882600952feeacffea62b90dc167cf58a
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536447"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914684"
 ---
 # <a name="create-user"></a>创建用户
 
-创建新用户。请求正文包含要创建的用户。至少必须指定必需的用户属性。可以选择指定其他任意可写属性。
+创建新用户。请求正文包含要创建的用户。至少要为该用户指定必需的属性。可以选择指定其他任意可写属性。
+
+>[!NOTE]
+>只能通过邀请创建外部用户。 如果需要启用外部用户创建，请参阅[邀请](../resources/invitation.md)。
 
 ## <a name="permissions"></a>权限
 

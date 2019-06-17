@@ -4,12 +4,12 @@ description: 删除 androidForWorkEnterpriseWiFiConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b68dcbe7c0f8060c2e3b742f26ccca622a694f70
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ee9bd9dcd757685854d462a2dd6a020105048da0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933744"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34970917"
 ---
 # <a name="delete-androidforworkenterprisewificonfiguration"></a>删除 androidForWorkEnterpriseWiFiConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

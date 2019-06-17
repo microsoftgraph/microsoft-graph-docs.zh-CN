@@ -4,12 +4,12 @@ description: 列出 androidManagedStoreAppConfiguration 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a82c0ab1ee37757af0eb6b6a21f94c7183fd470
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 459101a6f0ef506e289e4badf5468603b305e14c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937209"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965254"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>列出 androidManagedStoreAppConfigurations
 
@@ -94,6 +94,7 @@ Content-Length: 889
   ]
 }
 ```
+
 
 
 

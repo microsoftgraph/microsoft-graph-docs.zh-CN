@@ -4,12 +4,12 @@ description: 列出 managedApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1998c604763ac26c6ae9d20c56b30928880dba4c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 082652b4b621e1d083f982aa54b95e8ed5bfc8a9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935711"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974949"
 ---
 # <a name="list-managedapps"></a>列出 managedApps
 
@@ -98,6 +98,7 @@ Content-Length: 1093
   ]
 }
 ```
+
 
 
 

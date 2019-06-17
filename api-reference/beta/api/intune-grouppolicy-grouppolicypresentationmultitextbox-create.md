@@ -4,12 +4,12 @@ description: 创建新的 groupPolicyPresentationMultiTextBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c57d8f09a7b1b26905b0a5c7854dcfe66bab6a8c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bd26f8b560151a31d6c7d1b1bbb489256910d552
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904739"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964512"
 ---
 # <a name="create-grouppolicypresentationmultitextbox"></a>创建 groupPolicyPresentationMultiTextBox
 
@@ -97,6 +97,7 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
+
 
 
 

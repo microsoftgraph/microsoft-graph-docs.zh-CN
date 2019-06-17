@@ -4,12 +4,12 @@ description: 读取 managedApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27e96751d24d5a5d80cd01af0e5f1f9187567896
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 01cb9c8b00612dcf44e6531de427778c48fa665e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935718"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974914"
 ---
 # <a name="get-managedapp"></a>获取 managedApp
 
@@ -101,6 +101,7 @@ Content-Length: 1025
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 创建新的 groupPolicyPresentationDropdownList 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7b36416d280bd3234b51203bf8e99d824a16934
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 982ba88b60df569ec58aba15de74e6d87f9231db
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904872"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964792"
 ---
 # <a name="create-grouppolicypresentationdropdownlist"></a>创建 groupPolicyPresentationDropdownList
 
@@ -117,6 +117,7 @@ Content-Length: 602
   "required": true
 }
 ```
+
 
 
 

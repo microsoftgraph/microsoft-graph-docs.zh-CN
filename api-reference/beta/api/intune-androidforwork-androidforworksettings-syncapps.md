@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7515297b62a241a276b3b7bc5718a6d75cfd2882
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d3fd80cd59991ed30aa8225efbdcda660ff57f93
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938928"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965527"
 ---
 # <a name="syncapps-action"></a>syncApps 操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/sy
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

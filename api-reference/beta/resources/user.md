@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: a397c3433de4d3615e09475059eeb58254bd3086
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34475204"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914656"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "34475204"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
+|[delta](../api/user-delta.md)|用户集合| 获取用户的增量更改。 |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|基于与会者忙闲状态、位置或时间限制查找会议时间和位置。|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) 集合 | 获取租户中定义的会议室列表。|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) 集合 | 获取用户租户中或特定房间列表中的所有会议室。 |
@@ -70,10 +71,9 @@ ms.locfileid: "34475204"
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String 集合| 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。 |
 |[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| 无 |通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序发出的用户的所有刷新和会话令牌失效。 这将强制用户再次登录到这些应用程序。 此方法被 **revokeSignInSessions** 替换。|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| 无 |通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。|
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|返回指定开始时间和结束时间范围内的日历提醒列表。|
-|[delta](../api/user-delta.md)|用户集合| 获取用户的增量更改。 |
-|[Translate Outlook identifiers](../api/user-translateexchangeids.md) |[convertIdResult 资源类型](convertidresult.md)集合| 对与 Outlook 相关的资源的标识符进行格式转换。|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| 无 |通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |[convertIdResult](convertidresult.md) 集合| 对与 Outlook 相关的资源的标识符进行格式转换。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|

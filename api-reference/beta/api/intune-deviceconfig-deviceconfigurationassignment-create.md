@@ -4,12 +4,12 @@ description: 创建新的 deviceConfigurationAssignment 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89f93804273dd6c4820c046b9a3131831aca4a68
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 592ee0a63ea9f1c39734f194590f44eb12a61e7f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927491"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967935"
 ---
 # <a name="create-deviceconfigurationassignment"></a>创建 deviceConfigurationAssignment
 
@@ -98,6 +98,7 @@ Content-Length: 218
   }
 }
 ```
+
 
 
 

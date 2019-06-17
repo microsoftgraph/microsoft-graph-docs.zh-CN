@@ -4,18 +4,18 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949162"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965853"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
 
@@ -90,6 +90,7 @@ ms.locfileid: "33949162"
 - [Android 工作配置文件 VPN 配置](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Android 工作配置文件 VPN 连接类型](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Android 工作配置文件 Wi-Fi 配置](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [应用程序安装控件类型](intune-deviceconfig-appinstallcontroltype.md)
 - [应用列表项](intune-deviceconfig-applistitem.md)
 - [应用列表类型](intune-deviceconfig-applisttype.md)
 - [应用保险箱应用程序控制类型](intune-deviceconfig-applockerapplicationcontroltype.md)
@@ -115,6 +116,7 @@ ms.locfileid: "33949162"
 - [证书吊销状态](intune-deviceconfig-certificaterevocationstatus.md)
 - [证书存储](intune-deviceconfig-certificatestore.md)
 - [证书有效期范围](intune-deviceconfig-certificatevalidityperiodscale.md)
+- [更改 uefi 设置权限](intune-deviceconfig-changeuefisettingspermission.md)
 - [配置用法](intune-deviceconfig-configurationusage.md)
 - [自定义主题替代名称](intune-deviceconfig-customsubjectalternativename.md)
 - [星期几](intune-deviceconfig-dayofweek.md)
@@ -171,6 +173,10 @@ ms.locfileid: "33949162"
 - [设备配置用户状态摘要](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [设备配置用户状态](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device Guard 本地系统颁发机构 Credential Guard 类型](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [设备管理适用性规则设备模式](intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)
+- [设备管理适用性规则 os 版本](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
+- [设备管理适用性规则 os 版本](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
+- [设备管理适用性规则类型](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [设备管理派生的凭据颁发者](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
 - [设备管理派生凭据通知类型](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
 - [设备管理派生的凭据设置](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
@@ -273,11 +279,13 @@ ms.locfileid: "33949162"
 - [iOS 更新设备状态](intune-deviceconfig-iosupdatedevicestatus.md)
 - [iOS 更新安装状态](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [iOS VPN 配置](intune-deviceconfig-iosvpnconfiguration.md)
+- [iOS VPN 安全关联参数](intune-deviceconfig-iosvpnsecurityassociationparameters.md)
 - [iOS 墙纸显示位置](intune-deviceconfig-ioswallpaperdisplaylocation.md)
 - [iOS Web 内容筛选器自动筛选](intune-deviceconfig-ioswebcontentfilterautofilter.md)
 - [iOS Web 内容筛选器基准](intune-deviceconfig-ioswebcontentfilterbase.md)
 - [iOS Web 内容筛选器特定网站访问权限](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [iOS Wi-Fi 配置](intune-deviceconfig-ioswificonfiguration.md)
+- [iOSik ev2 VPN 配置](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [密钥大小](intune-deviceconfig-keysize.md)
 - [密钥存储提供程序选项](intune-deviceconfig-keystorageprovideroption.md)
 - [密钥使用情况](intune-deviceconfig-keyusages.md)
@@ -297,6 +305,7 @@ ms.locfileid: "33949162"
 - [macOS Endpoint Protection 配置](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [macOS 企业版 Wi-Fi 配置](intune-deviceconfig-macosenterprisewificonfiguration.md)
 - [macOS 扩展配置](intune-deviceconfig-macosextensionsconfiguration.md)
+- [macOS 文件存储库恢复密钥类型](intune-deviceconfig-macosfilevaultrecoverykeytypes.md)
 - [macOS 防火墙应用程序](intune-deviceconfig-macosfirewallapplication.md)
 - [macOS 网关守卫应用源](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS 常规设备配置](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
@@ -362,6 +371,7 @@ ms.locfileid: "33949162"
 - [受限的应用冲突](intune-deviceconfig-restrictedappsviolation.md)
 - [安全搜索筛选器类型](intune-deviceconfig-safesearchfiltertype.md)
 - [安全评估帐户类型](intune-deviceconfig-secureassessmentaccounttype.md)
+- [使用 d m 的安全引导一种类型](intune-deviceconfig-securebootwithdmatype.md)
 - [服务启动类型](intune-deviceconfig-servicestarttype.md)
 - [设置源](intune-deviceconfig-settingsource.md)
 - [设置状态设备摘要](intune-deviceconfig-settingstatedevicesummary.md)
@@ -385,7 +395,12 @@ ms.locfileid: "33949162"
 - [用户名源](intune-deviceconfig-usernamesource.md)
 - [可见性设置](intune-deviceconfig-visibilitysetting.md)
 - [VPN 身份验证方法](intune-deviceconfig-vpnauthenticationmethod.md)
+- [VPN 客户端身份验证类型](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [VPN 死对等检测速率](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [VPN DNS 规则](intune-deviceconfig-vpndnsrule.md)
+- [VPN 加密算法类型](intune-deviceconfig-vpnencryptionalgorithmtype.md)
+- [VPN 完整性算法类型](intune-deviceconfig-vpnintegrityalgorithmtype.md)
+- [VPN 本地标识符](intune-deviceconfig-vpnlocalidentifier.md)
 - [VPN 按需规则](intune-deviceconfig-vpnondemandrule.md)
 - [VPN 按需规则连接操作](intune-deviceconfig-vpnondemandruleconnectionaction.md)
 - [VPN 按需规则连接域操作](intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)
@@ -393,6 +408,7 @@ ms.locfileid: "33949162"
 - [VPN 代理服务器](intune-deviceconfig-vpnproxyserver.md)
 - [VPN 路由](intune-deviceconfig-vpnroute.md)
 - [VPN 服务器](intune-deviceconfig-vpnserver.md)
+- [VPN 服务器证书类型](intune-deviceconfig-vpnservercertificatetype.md)
 - [VPN 流量规则](intune-deviceconfig-vpntrafficrule.md)
 - [VPN 流量规则应用类型](intune-deviceconfig-vpntrafficruleapptype.md)
 - [VPN 流量规则路由策略类型](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
@@ -409,6 +425,8 @@ ms.locfileid: "33949162"
 - [Windows 10 证书配置文件基础](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Windows 10 合规性策略](intune-deviceconfig-windows10compliancepolicy.md)
 - [Windows 10 自定义配置](intune-deviceconfig-windows10customconfiguration.md)
+- [Windows 10 设备固件配置界面](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Windows 10 设备模式类型](intune-deviceconfig-windows10devicemodetype.md)
 - [Windows 10 EAS 电子邮件配置文件配置](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Windows 10 版本类型](intune-deviceconfig-windows10editiontype.md)
 - [Windows 10 终结点保护配置](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -494,4 +512,4 @@ ms.locfileid: "33949162"
 - [Windows VPN 配置](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
-- [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows Wlan 企业版 eap 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

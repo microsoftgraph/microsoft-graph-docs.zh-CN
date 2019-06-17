@@ -4,12 +4,12 @@ description: 更新 androidForWorkEnrollmentProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bd44462792224f5c1865ac3ee2148861479f0ae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9e6c4b795eef38737384f86ef775391c8fa50d1a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938914"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965569"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>更新 androidForWorkEnrollmentProfile
 
@@ -119,6 +119,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

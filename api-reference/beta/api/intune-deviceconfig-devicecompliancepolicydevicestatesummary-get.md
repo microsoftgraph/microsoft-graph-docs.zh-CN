@@ -4,12 +4,12 @@ description: 读取 deviceCompliancePolicyDeviceStateSummary 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ef193d62bad7b8e1eaff95c28afcb2dabfe38fe
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7126fdad9fc0a2563c291ff6595b4d72cb153426
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927746"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968327"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>获取 deviceCompliancePolicyDeviceStateSummary
 
@@ -83,6 +83,7 @@ Content-Length: 439
   }
 }
 ```
+
 
 
 

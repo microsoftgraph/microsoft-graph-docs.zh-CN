@@ -4,12 +4,12 @@ description: 创建新的了 windowsphone81appxbundle 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 493f11c88c5996e8c151e6bb3f6ea4756168adcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2c7ced679757c316485eb436808bee5f02c26fb1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934731"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973066"
 ---
 # <a name="create-windowsphone81appxbundle"></a>创建了 windowsphone81appxbundle
 
@@ -93,7 +93,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2211
+Content-length: 2311
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -133,7 +133,9 @@ Content-length: 2211
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -155,7 +157,9 @@ Content-length: 2211
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       }
     }
   ]
@@ -167,7 +171,7 @@ Content-length: 2211
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2383
+Content-Length: 2483
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -210,7 +214,9 @@ Content-Length: 2383
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -232,12 +238,15 @@ Content-Length: 2383
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       }
     }
   ]
 }
 ```
+
 
 
 

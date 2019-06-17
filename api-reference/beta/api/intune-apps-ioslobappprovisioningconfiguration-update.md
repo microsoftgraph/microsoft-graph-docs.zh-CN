@@ -4,12 +4,12 @@ description: 更新 iosLobAppProvisioningConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aee9cde50cfca0c7c4dd0a99047b0b41a7a1639e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 677ff877f4786320b5f9df7abf1646c8f610f9c5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936915"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966150"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>更新 iosLobAppProvisioningConfiguration
 
@@ -52,7 +52,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
-|payloadFileName|String|有效负载文件名 (*。 mobileprovision | *.xml)。|
+|payloadFileName|String|有效负载文件名 (*. mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 |roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
@@ -112,6 +112,7 @@ Content-Length: 547
   "version": 7
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 iosUpdateDeviceStatus 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02f5d77642898cd0561095683b1cab13e2b847cb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ede6b78a4eb24abe910740711730416031654de8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923123"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977154"
 ---
 # <a name="get-iosupdatedevicestatus"></a>获取 iosUpdateDeviceStatus
 
@@ -86,6 +86,7 @@ Content-Length: 666
   }
 }
 ```
+
 
 
 

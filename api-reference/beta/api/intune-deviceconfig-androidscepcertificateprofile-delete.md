@@ -4,12 +4,12 @@ description: 删除 androidScepCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 629e6b870fd90199e5dc5355628ea8377a5c5dcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 02104fe5a50959c2ba1729e3bba8f975c862afcd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928930"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34969923"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>删除 androidScepCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
