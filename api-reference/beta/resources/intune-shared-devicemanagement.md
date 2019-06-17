@@ -4,12 +4,12 @@ description: 'DeviceManagement 资源代表其内容因工作流而异的容器,
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: e79bd6d5573930d041b4a8249ae993275f0e26c7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a6cb82cf68f77e83ec873bcf805004b064dfd9bb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939677"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996083"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -64,7 +64,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|在 scaleunits 之间移动租户数据的日期 & 时间。|
+|accountMoveCompletionDateTime|DateTimeOffset|租户数据在 scaleunits 之间移动的日期 & 时间。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理员同意信息。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|设备保护概述。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|设备清理规则|
@@ -72,7 +72,9 @@ DeviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |订阅|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|租户的订阅。 可取值为：`none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Windows 设备的恶意软件概述。|
 |**载入**|
-|intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。|
+|intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
+|**Odj**|
+|domainJoinConnectors|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)集合|连接器对象的列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|产品介绍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|

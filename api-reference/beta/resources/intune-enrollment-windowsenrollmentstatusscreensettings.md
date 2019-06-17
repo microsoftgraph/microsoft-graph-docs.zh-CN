@@ -4,12 +4,12 @@ description: 注册状态屏幕设置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 902e833272976495f9e2a6a7b203c061b5faea22
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d22f7497fb79921bbbf34c6f3334ccc2ae4d7d53
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941399"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994900"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
 
@@ -52,6 +52,7 @@ ms.locfileid: "33941399"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
+
 
 
 

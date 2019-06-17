@@ -4,12 +4,12 @@ description: 表示租户的 Exchange 本地条件访问设置的单例实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a0e4151150b53947fceff1a3937e703256b42f8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21b35b3d3926fe01b9fab9270ff3083df3320221
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940167"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958667"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings 资源类型
 
@@ -59,6 +59,7 @@ ms.locfileid: "33940167"
   "overrideDefaultRule": true
 }
 ```
+
 
 
 

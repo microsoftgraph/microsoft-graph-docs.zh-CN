@@ -4,12 +4,12 @@ description: RemoteAssistPartner 资源表示给定的远程协助合作伙伴�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 596027baaa5bc118c835de9aaff009bb0de180a3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7223d69c519aa0d0e99419cefb704c7e8dc27540
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939922"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996265"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -60,6 +60,7 @@ RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

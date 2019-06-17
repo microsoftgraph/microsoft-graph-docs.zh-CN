@@ -4,12 +4,12 @@ description: 向管理层添加移动设备的可能方法。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9c5c5fbdd68af1c78e55fc023a8c85642928889
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ae3edcb1d6411e889381c2171f0daeb1cbcc528
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940013"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996139"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -32,6 +32,7 @@ ms.locfileid: "33940013"
 |windowsAutoEnrollment|步|Windows 10 自动注册。 (添加工作帐户)|
 |windowsBulkAzureDomainJoin|utf-8|Windows 10 批量 Azure AD 加入。|
 |windowsCoManagement|第|由 AutoPilot 或组策略触发的 Windows 10 协同管理。|
+
 
 
 

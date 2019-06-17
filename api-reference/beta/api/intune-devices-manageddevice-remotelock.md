@@ -4,12 +4,12 @@ description: 远程锁定
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76dbba818d11fee9fdc31e27c1bde469f7750832
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aec985c9ff988f85e9ad0080ae9e9d5fd4db09ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909615"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958345"
 ---
 # <a name="remotelock-action"></a>remoteLock 操作
 
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

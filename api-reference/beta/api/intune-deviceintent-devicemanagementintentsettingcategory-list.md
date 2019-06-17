@@ -4,12 +4,12 @@ description: 列出 deviceManagementIntentSettingCategory 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb54863f3e43e1c30bb26c0278850fcc9890a49f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 95b8040a3ee2940aa6cf3cb0d098ec48f5dbfd62
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915991"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960144"
 ---
 # <a name="list-devicemanagementintentsettingcategories"></a>列出 deviceManagementIntentSettingCategories
 
@@ -74,6 +74,7 @@ Content-Length: 213
   ]
 }
 ```
+
 
 
 

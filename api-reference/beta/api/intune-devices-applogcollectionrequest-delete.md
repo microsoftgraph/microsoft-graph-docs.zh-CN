@@ -4,12 +4,12 @@ description: 删除 appLogCollectionRequest。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7427d9a5b4dab146b3bba434030c739c8b50ae6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12a8c59a5ec7434afadcb044bd158443ceb7e886
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910572"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959325"
 ---
 # <a name="delete-applogcollectionrequest"></a>删除 appLogCollectionRequest
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

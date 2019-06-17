@@ -4,12 +4,12 @@ description: 澳大利亚的电视内容评级标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ea45fe86e4d7e9a909ad6314cf1f6932df947c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a33d4998e3e2949c6833d82110b7e24c574b0307
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951035"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995775"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 枚举类型
 
@@ -31,6 +31,7 @@ ms.locfileid: "33951035"
 |成熟|型|对于超过15的查看者, 建议使用 M 分类|
 |agesAbove15|步|MA15 + 分类不适用于15岁以上的查看器|
 |agesAbove15AdultViolence|utf-8|AV15 + 分类不适用于15岁以上的观众, 特别是成人|
+
 
 
 

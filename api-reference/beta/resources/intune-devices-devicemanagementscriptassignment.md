@@ -4,12 +4,12 @@ description: 包含用于将设备管理脚本分配给组的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eefc54164e614ce9ada5f578cebf6a38eeb1d513
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b1f76f1cb230b20b01b66387bb1faed2b8a82f01
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942141"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995341"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>deviceManagementScriptAssignment 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33942141"
   }
 }
 ```
+
 
 
 

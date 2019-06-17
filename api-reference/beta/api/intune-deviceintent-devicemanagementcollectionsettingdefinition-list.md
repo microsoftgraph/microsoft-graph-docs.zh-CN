@@ -4,12 +4,12 @@ description: 列出 deviceManagementCollectionSettingDefinition 对象的属性�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b1034163e1c803ec8ade3d4f7f34f8b3813abd6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c826d21394f4a6faa9ca291be4e8f358d0aececf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916606"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960844"
 ---
 # <a name="list-devicemanagementcollectionsettingdefinitions"></a>列出 deviceManagementCollectionSettingDefinitions
 
@@ -101,6 +101,7 @@ Content-Length: 985
   ]
 }
 ```
+
 
 
 

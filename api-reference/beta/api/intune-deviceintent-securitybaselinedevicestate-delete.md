@@ -4,12 +4,12 @@ description: 删除 securityBaselineDeviceState。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44fb7514825f0474c217b5505b892b9b98d53754
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fb6566fdf2b3049c493e16fffa48bc97972860a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33914497"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959542"
 ---
 # <a name="delete-securitybaselinedevicestate"></a>删除 securityBaselineDeviceState
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

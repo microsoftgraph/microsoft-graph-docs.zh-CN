@@ -4,12 +4,12 @@ description: 移动运营商提供的嵌入的 SIM 激活代码。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1e12a25db0beb124d00b2523607b40e899b4a01
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c96bc6530de0e8e6d1fde95fa71ffb6f1bdedb18
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941336"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994879"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "33941336"
 |属性|类型|说明|
 |:---|:---|:---|
 |integratedCircuitCardIdentifier|String|由移动运营商提供的此嵌入的 SIM 激活代码的集成电路卡标识符 (ICCID)。
-输入必须与以下正则表达式匹配: "^\[0-9\]{19}\[0-9\]? $"。|
+输入必须与以下正则表达式匹配: ' ^\[0-9\]{19}\[0-9\]？ $ '。|
 |matchingIdentifier|String|GSMA Association SGP RSP 技术规范部分中指定的 MatchingIdentifier (MatchingID) 4.1。
 输入必须与以下正则表达式匹配: ' ^\[Z0-9\-\]* $ '。|
 |smdpPlusServerAddress|String|在 GSM 关联 SPG .22 RSP 技术规范中指定的 SM + 服务器的完全限定域名。
@@ -47,6 +47,7 @@ ms.locfileid: "33941336"
   "smdpPlusServerAddress": "String"
 }
 ```
+
 
 
 

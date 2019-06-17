@@ -4,12 +4,12 @@ description: 删除 termsAndConditionsAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 913b6e04bdc59a04cf4f9de7ac53550217be5e9e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c65c00e0df23c880cceef175463a09ef7e9a6ecf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933800"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971841"
 ---
 # <a name="delete-termsandconditionsassignment"></a>删除 termsAndConditionsAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

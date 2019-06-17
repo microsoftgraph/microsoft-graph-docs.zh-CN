@@ -4,12 +4,12 @@ description: 支持的电子邮件签名和加密的证书来源。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 150109f68d4cac95c07d2bc973149b1309fefc07
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a2ff58f55033660a839a5f28d0244217c62936e0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33956926"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996384"
 ---
 # <a name="emailcertificatetype-enum-type"></a>emailCertificateType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33956926"
 |无|0|不要将证书用作源。|
 |证书|1|对证书源使用证书。|
 |derivedCredential|双面|对证书源使用派生凭据。|
+
 
 
 

@@ -4,12 +4,12 @@ description: Windows 10 注册状态页面配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 043f0f8a4585fd60c0bb70494430020d383ef98f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 25bf3597c45e500f7ab11dfec49b1d97cf0ded3e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940125"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958506"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>windows10EnrollmentCompletionPageConfiguration 资源类型
 
@@ -85,6 +85,7 @@ Windows 10 注册状态页面配置
   ]
 }
 ```
+
 
 
 

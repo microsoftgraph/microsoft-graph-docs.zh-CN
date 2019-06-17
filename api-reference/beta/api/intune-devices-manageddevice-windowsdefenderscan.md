@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1a990669bf95928b655d8bec470bf7896933e83
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bf7ce35ade5b5daa93c42209e73510412114d3b0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909503"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958191"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan 操作
 
@@ -80,6 +80,7 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

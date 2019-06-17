@@ -4,12 +4,12 @@ description: 预发行版功能的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7510d81534aaabd3ea609f51834d4f7a89eb046
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d75ce18ec379ba3a295f65a54dafc8de8b37ac25
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950940"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995824"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33950940"
 |settingsOnly|1|仅设置预发布功能。|
 |settingsAndExperimentations|双面|设置和 experimentations 预发布功能。|
 |notAllowed|第三章|不允许使用预发布功能。|
+
 
 
 

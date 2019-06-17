@@ -4,12 +4,12 @@ description: 包含设备管理脚本的设备运行状态的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18e9e78898671d2c64381f7c3f4fa597ca862456
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3a6517f0dea1bac5219d7aa9d5e4158ea5bea8ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942113"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995327"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState 资源类型
 
@@ -62,6 +62,7 @@ ms.locfileid: "33942113"
   "errorDescription": "String"
 }
 ```
+
 
 
 

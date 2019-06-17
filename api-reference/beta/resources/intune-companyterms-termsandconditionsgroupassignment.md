@@ -1,15 +1,15 @@
 ---
 title: termsAndConditionsGroupAssignment 资源类型
-description: TermsAndConditionsGroupAssignment 实体表示分配给给定组的给定条款和条件 (T&C) 策略。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
+description: TermsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 417871f610e9c278e902b41c020c1d8fd904eb6a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 804ac878ef2ec691d1dd4ca5e62cf28ec4ef1770
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949135"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996601"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment 资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "33949135"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-TermsAndConditionsGroupAssignment 实体表示分配给给定组的给定条款和条件 (T&C) 策略。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
+TermsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策略分配给给定组。 组中的用户需要接受这些条款，才能将设备注册到 Intune。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -54,6 +54,7 @@ TermsAndConditionsGroupAssignment 实体表示分配给给定组的给定条款�
   "targetGroupId": "String"
 }
 ```
+
 
 
 

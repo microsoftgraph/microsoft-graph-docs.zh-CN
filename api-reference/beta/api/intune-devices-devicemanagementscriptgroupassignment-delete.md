@@ -4,12 +4,12 @@ description: 删除 deviceManagementScriptGroupAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6f0ed71630e227839ad0ea97149512f45084c38
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5d92aa95d1e314994ea878a5187efa27320f2ce7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909909"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958856"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>删除 deviceManagementScriptGroupAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

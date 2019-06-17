@@ -4,12 +4,12 @@ description: 实体表示策略定义上的十进制文本框表示形式的无�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 831ef458164aaab169a0c10424faadb4dffc49d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e518f52512240237e82588b7bd4dbdf9c207eebe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941014"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996321"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>groupPolicyPresentationValueDecimal 资源类型
 
@@ -62,6 +62,7 @@ ms.locfileid: "33941014"
   "value": 1024
 }
 ```
+
 
 
 

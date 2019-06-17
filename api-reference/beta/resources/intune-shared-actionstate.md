@@ -4,12 +4,12 @@ description: 设备上操作的状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa3e3dcd9b563301fb87b9bae0f3c2957631334b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35fccdc65eec7781f38d366e31ddb1a626005169
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939915"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996223"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33939915"
 |done|4|操作已完成, 无错误。|
 |未能|5|操作失败|
 |notSupported|型|操作不受支持。|
+
 
 
 

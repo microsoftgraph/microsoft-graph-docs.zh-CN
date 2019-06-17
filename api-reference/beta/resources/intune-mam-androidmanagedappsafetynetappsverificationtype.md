@@ -4,12 +4,12 @@ description: 管理员在托管应用上强制实施了 Android SafetyNet 设备
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef4d1f31265dbd2c89ca35bca88f686058736537
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f8e3b1a6ffb04e783ec327daa42f5e9e030e114e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940965"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995012"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>androidManagedAppSafetyNetAppsVerificationType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33940965"
 |:---|:---|:---|
 |无|0|无要求集|
 |enabled|1|要求 Android 设备已启用 SafetyNet 应用验证|
+
 
 
 

@@ -4,12 +4,12 @@ description: 此租户的合作伙伴状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5565ecff080ce8c70f1dbf3885b39477bdbe978
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f4d5401e5cd5c46e9990751585674a9e81bb6dce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940174"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958646"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940174"
 |可用|1|合作伙伴可用。|
 |enabled|双面|启用合作伙伴。|
 |无|第三章|合作伙伴无响应。|
+
 
 
 

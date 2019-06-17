@@ -4,12 +4,12 @@ description: 池代表一组嵌入的 SIM 激活代码。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 953b7693d9c95039458b8a47a95e1f3f8214fa45
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f8487a92dae1874f1d11841cf6772b7300265c3b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941371"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994858"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 
@@ -71,6 +71,7 @@ ms.locfileid: "33941371"
   "activationCodeCount": 1024
 }
 ```
+
 
 
 

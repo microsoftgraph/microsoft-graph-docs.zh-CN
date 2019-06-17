@@ -4,12 +4,12 @@ description: 更新 deviceManagementScriptGroupAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30aafd9f755c0ed7275bf1f511180779f42b29ee
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 542967403d7e1a18576b8c665c1121be2b3c8f0a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909818"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958807"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>更新 deviceManagementScriptGroupAssignment
 
@@ -86,6 +86,7 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

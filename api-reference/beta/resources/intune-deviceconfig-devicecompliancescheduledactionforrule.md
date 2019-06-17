@@ -4,12 +4,12 @@ description: 计划的规则操作
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8618cd1222cc4885eae4b892da2c25c2944ca6ef
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 09a1645d7f58552d2b2c1732f6bcb361e7a4b6dd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947111"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995488"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33947111"
   "ruleName": "String"
 }
 ```
+
 
 
 

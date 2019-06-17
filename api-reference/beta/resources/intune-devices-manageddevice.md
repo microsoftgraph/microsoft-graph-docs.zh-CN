@@ -4,12 +4,12 @@ description: 通过 Intune 托管或预注册的设备
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d0656bcf3f2726ee114e5e302a4e60f322d8e96
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ee7fd96654fe0b6c2a95332b87287d3ebff3ad2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941980"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995117"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -308,6 +308,7 @@ ms.locfileid: "33941980"
   }
 }
 ```
+
 
 
 

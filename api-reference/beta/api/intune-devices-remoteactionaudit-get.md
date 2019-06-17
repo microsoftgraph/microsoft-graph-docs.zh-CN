@@ -4,12 +4,12 @@ description: 读取 remoteActionAudit 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1849f92f00b86e2d7dd36a51afb4cebe3d9ebc45
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6d625faceac71275140fc61ebcc072fe2c016823
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909419"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958065"
 ---
 # <a name="get-remoteactionaudit"></a>获取 remoteActionAudit
 
@@ -82,6 +82,7 @@ Content-Length: 543
   }
 }
 ```
+
 
 
 

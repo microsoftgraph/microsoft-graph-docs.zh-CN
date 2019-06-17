@@ -4,12 +4,12 @@ description: VPN DNS 规则定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdb362bcbf672f491e22e2ee7d69a7e5c243e812
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9f2188efc73201aabf98267a77fee96b9c60de9d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944612"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996335"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule 资源类型
 
@@ -50,6 +50,7 @@ VPN DNS 规则定义。
   "persistent": true
 }
 ```
+
 
 
 

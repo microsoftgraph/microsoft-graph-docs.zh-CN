@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ac91647d652b6e1124932806fd9ab83414b497a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8b48f3957a5f43f7dc3a42cf52056403096bbb15
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943996"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995404"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile 资源类型
 
@@ -68,6 +68,7 @@ ms.locfileid: "33943996"
   ]
 }
 ```
+
 
 
 

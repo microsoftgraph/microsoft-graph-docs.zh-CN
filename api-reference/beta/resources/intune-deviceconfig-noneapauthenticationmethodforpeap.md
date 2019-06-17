@@ -4,12 +4,12 @@ description: 当 PEAP 为所选的 EAP 类型时进行身份验证的非 EAP 方
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 105f2a5830edd9f15fb83e77c8e337ef6147bd82
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be7c8a3d72595f0c51516e89801d8856852ca00e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950912"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958723"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33950912"
 |:---|:---|:---|
 |无|0|无。|
 |microsoftChapVersionTwo|1|Microsoft CHAP 版本 2 (毫秒-CHAP v2)。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 托管设备的摘要数据
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca88af3320b1d7ccaab57d874f3b97a853652864
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8ed08262d9b98fc0a72641f0605d717e68f2ba08
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942190"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995110"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview 资源类型
 
@@ -84,6 +84,7 @@ ms.locfileid: "33942190"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

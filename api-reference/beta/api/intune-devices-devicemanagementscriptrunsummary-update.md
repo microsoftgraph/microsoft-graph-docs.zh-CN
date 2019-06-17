@@ -4,12 +4,12 @@ description: 更新 deviceManagementScriptRunSummary 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 495b9b9085b23f40261b40805c510ae78fbf00eb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58963f558c56b4c26cffb329052d97ce942df999
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909790"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958835"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>更新 deviceManagementScriptRunSummary
 
@@ -95,6 +95,7 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
+
 
 
 

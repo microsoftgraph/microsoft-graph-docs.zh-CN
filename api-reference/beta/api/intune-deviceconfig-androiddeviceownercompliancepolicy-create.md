@@ -4,12 +4,12 @@ description: 创建新的 androidDeviceOwnerCompliancePolicy 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f36a9aaf47bb29f60c09616dd4235f45fcbbfcf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6c041ff25f4a64e9d997f52d8096f551b28c8189
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933688"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971484"
 ---
 # <a name="create-androiddeviceownercompliancepolicy"></a>创建 androidDeviceOwnerCompliancePolicy
 
@@ -151,6 +151,7 @@ Content-Length: 1104
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 设备的所有者类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb4c0fe2440c17453d5941138eade3b9911b9dda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d2a8d5ae5b55cf4682801b5fd96214bc38e4da0f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941973"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995089"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33941973"
 |unknown|0|陌生.|
 |公司|1|由公司负责。|
 |personal|双面|归某人所有。|
+
 
 
 

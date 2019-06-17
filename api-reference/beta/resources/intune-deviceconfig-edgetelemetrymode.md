@@ -4,12 +4,12 @@ description: 发送到 Microsoft 365 analytics 的浏览数据的类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7103bd1bd3ee6869e4a6f76e8a55142e35246e5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 105c0fe71aa851d8f8002920cdc9a91993f39c9f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946663"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996412"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>edgeTelemetryMode 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33946663"
 |在内|1|仅允许发送 intranet 历史记录: 仅发送 intranet 网站的浏览历史记录数据|
 |访问|双面|仅允许发送 internet 历史记录: 仅发送 internet 网站的浏览历史记录数据|
 |intranetAndInternet|第三章|允许同时发送 intranet 和 internet 历史记录: 为 intranet 和 internet 站点发送浏览历史记录数据|
+
 
 
 

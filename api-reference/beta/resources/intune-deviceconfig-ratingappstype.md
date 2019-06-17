@@ -4,12 +4,12 @@ description: 应用程序在媒体内容中的分级
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 818b57499ceb3f4cfd0136572cd229b9f0fe9e80
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 502d82b2f5cef2618a10b21f298620f135a96829
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950954"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995810"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33950954"
 |agesAbove9|第三章|9 +、年龄9及更高版本|
 |agesAbove12|4|12 +, 年龄12岁及以上 |
 |agesAbove17|5|17 +、年龄17及更高版本|
+
 
 
 
