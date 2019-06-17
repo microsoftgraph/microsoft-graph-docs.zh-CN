@@ -4,12 +4,12 @@ description: 跨帐户的设备合规性策略设置状态摘要。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6f90b1b714b8fc5575cfe9cb4fb56f5075df6fa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9aef48828c9a774074ffe7396189dc4aad98e700
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995495"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary 资源类型
 
@@ -72,6 +72,7 @@ ms.locfileid: "33947104"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

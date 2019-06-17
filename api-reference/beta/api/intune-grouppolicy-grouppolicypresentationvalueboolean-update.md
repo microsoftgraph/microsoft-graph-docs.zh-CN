@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationValueBoolean 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fad7983f44e3ee83c4b037b5d404e347f48f5a80
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b8c9477d4901bc01c3f22c8d6dc44b3828f81f23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904438"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985428"
 ---
 # <a name="update-grouppolicypresentationvalueboolean"></a>更新 groupPolicyPresentationValueBoolean
 
@@ -90,6 +90,7 @@ Content-Length: 267
   "value": true
 }
 ```
+
 
 
 

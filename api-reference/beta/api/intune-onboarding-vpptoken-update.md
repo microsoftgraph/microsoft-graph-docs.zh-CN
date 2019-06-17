@@ -4,12 +4,12 @@ description: 更新 vppToken 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1185737bf70976f9384e2005c45023d1b7fb36d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7fc1ead8c4a7c7c2a2fc6410bde39b0cc2c62de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899843"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980535"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

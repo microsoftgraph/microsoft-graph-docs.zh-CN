@@ -4,12 +4,12 @@ description: 包含 iOS 业务线应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d3d796f1f6f66de333c07ec0b03a17f2845b8d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 67302430097b1c5deb2c26e5e895efaac95bb4a0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950443"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991161"
 ---
 # <a name="ioslobapp-resource-type"></a>iosLobApp 资源类型
 
@@ -132,6 +132,7 @@ ms.locfileid: "33950443"
   "identityVersion": "String"
 }
 ```
+
 
 
 

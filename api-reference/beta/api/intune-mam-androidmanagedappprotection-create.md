@@ -4,12 +4,12 @@ description: 创建新的 androidManagedAppProtection 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7e18cd7eaedba53f44cce510656022c427b7f9d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0723c951ce3c182412108f6ed2d658ddc45bf1e2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904039"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985687"
 ---
 # <a name="create-androidmanagedappprotection"></a>创建 androidManagedAppProtection
 
@@ -89,6 +89,7 @@ POST /deviceAppManagement/androidManagedAppProtections
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为, 即阻止或擦除。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码) 超时|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的应用程序通知限制。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
 |isAssigned|Boolean|指示策略是否部署到任何包含组。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|此策略继承自[targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)的预期应用管理级别。 可取值为：`unspecified`、`unmanaged`、`mdm`、`androidEnterprise`。|
 |screenCaptureBlocked|Boolean|指示托管用户是否可以对托管应用进行屏幕截图|
@@ -120,7 +121,7 @@ POST /deviceAppManagement/androidManagedAppProtections
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections
 Content-type: application/json
-Content-length: 2910
+Content-length: 2967
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -164,6 +165,7 @@ Content-length: 2910
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "screenCaptureBlocked": true,
@@ -196,7 +198,7 @@ Content-length: 2910
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3082
+Content-Length: 3139
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -243,6 +245,7 @@ Content-Length: 3082
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "screenCaptureBlocked": true,
@@ -269,6 +272,7 @@ Content-Length: 3082
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
+
 
 
 

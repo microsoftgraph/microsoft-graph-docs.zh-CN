@@ -4,12 +4,12 @@ description: 表示防火墙规则接口类型的标志。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5452ecedf7d91c9e9241625ec76ec373b6fe7d0b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f2fa51472060c3c14719ba875be5e878e44cfb36
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944066"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994067"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>windowsFirewallRuleInterfaceTypes 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33944066"
 |远程|1|远程访问接口类型。|
 |无线|双面|无线接口类型。|
 |vlan|4|LAN 接口类型。|
+
 
 
 

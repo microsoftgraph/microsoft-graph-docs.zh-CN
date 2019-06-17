@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e0e7faa7229426f519b7a531b6fd696368e1bd4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 057b330c4091dd39c593b90bfeafff10cb650036
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938714"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965688"
 ---
 # <a name="revoketoken-action"></a>revokeToken 操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollm
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

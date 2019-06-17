@@ -4,12 +4,12 @@ description: 读取 deviceManagementAbstractComplexSettingDefinition 对象的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55a29e73ac4b64fb3074ad91fe4f2b95e3e0d995
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7b3776041773ba7461031b5feea33456179d481a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916964"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961068"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>获取 deviceManagementAbstractComplexSettingDefinition
 
@@ -104,6 +104,7 @@ Content-Length: 928
   }
 }
 ```
+
 
 
 

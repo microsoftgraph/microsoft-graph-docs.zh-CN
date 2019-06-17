@@ -4,12 +4,12 @@ description: 一个代表整数值的设置实例
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4788b49dc9565aadd5e70d09c524dd24f412710d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b6f3521eb763062ef9675cb5853562f31049afea
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943275"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964036"
 ---
 # <a name="devicemanagementintegersettinginstance-resource-type"></a>deviceManagementIntegerSettingInstance 资源类型
 
@@ -59,6 +59,7 @@ ms.locfileid: "33943275"
   "value": 1024
 }
 ```
+
 
 
 

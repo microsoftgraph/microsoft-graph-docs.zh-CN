@@ -4,12 +4,12 @@ description: 删除 deviceConfigurationConflictSummary。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fa33a5f9e77c5d8291b2d69fe53d72a5fc65e1e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f16fbfe983fb92a6b1dde534fb82f34ad3437461
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927571"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967844"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>删除 deviceConfigurationConflictSummary
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConf
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

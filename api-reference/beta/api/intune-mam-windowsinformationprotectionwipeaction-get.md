@@ -4,12 +4,12 @@ description: 读取 windowsInformationProtectionWipeAction 对象的属性和关
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eb6386085da214c8aff433b8c16d375a6b7c755
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b5ca2cb565a7bf67cb9a7f3d704b60c13094040
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900620"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981515"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>获取 windowsInformationProtectionWipeAction
 
@@ -80,6 +80,7 @@ Content-Length: 496
   }
 }
 ```
+
 
 
 

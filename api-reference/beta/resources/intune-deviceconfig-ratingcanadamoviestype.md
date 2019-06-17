@@ -4,12 +4,12 @@ description: 加拿大的电影评分标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dcb5612be1045c2c99e760ca4056e1f00004367
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6cc112ccf178d7c2a7c5d5c5e70a6306b3696b35
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950975"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995768"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "33950975"
 |agesAbove14|4|14A 分类适用于14岁以上或更早的观众|
 |agesAbove18|5|18A 分类适用于18岁以上或更早的观众|
 |受限|型|R 分类限制为18年和更早|
+
 
 
 

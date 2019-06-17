@@ -4,12 +4,12 @@ description: 加密就绪状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cb014b4b895d59175b244a5fc4398a6b12ebe1e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 451b13ecd64845b407830e807eddfb1278e00a66
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946691"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994977"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>encryptionReadinessState 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33946691"
 |:---|:---|:---|
 |notReady|0|未就绪|
 |即可|1|就绪|
+
 
 
 

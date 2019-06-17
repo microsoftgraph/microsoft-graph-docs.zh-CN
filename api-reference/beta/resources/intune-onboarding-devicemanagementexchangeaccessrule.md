@@ -4,12 +4,12 @@ description: Exchange 中的设备访问规则。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af40f1b3b0d5602c5a67a524dc7083d95681b988
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e6deeba14da683be36284f469604be70db48ea07
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940398"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993093"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 
@@ -46,6 +46,7 @@ Exchange 中的设备访问规则。
   "accessLevel": "String"
 }
 ```
+
 
 
 

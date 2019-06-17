@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 541a2038f1eb8d6f67ca86dad0664fbdec83c3cd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5cc42f774f4a59af637277d38350627a20ac9248
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927795"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968425"
 ---
 # <a name="scheduleactionsforrules-action"></a>scheduleActionsForRules 操作
 
@@ -83,6 +83,7 @@ Content-length: 242
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 macOSImportedPFXCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d962da274b1404739d2437b432cdb82a6c98ce6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b728bc5728c34abba15175934cc22814040fb3e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922330"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976650"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>删除 macOSImportedPFXCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

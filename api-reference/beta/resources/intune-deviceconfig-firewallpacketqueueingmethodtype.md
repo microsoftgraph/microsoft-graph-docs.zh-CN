@@ -4,12 +4,12 @@ description: FirewallPacketQueueingMethod 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b1802e150460e1e687b8303716a723146e4ca67
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a4c7556fb3c37f9bfd564e31744f0e27a4482d6e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946684"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985848"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 枚举类型
 
@@ -27,6 +27,7 @@ FirewallPacketQueueingMethod 的可能值
 |queueInbound|双面|对入站加密的数据包进行排队|
 |queueOutbound|第三章|队列解密出站数据包以供转发|
 |queueBoth|4|对入站和出站数据包进行排队|
+
 
 
 

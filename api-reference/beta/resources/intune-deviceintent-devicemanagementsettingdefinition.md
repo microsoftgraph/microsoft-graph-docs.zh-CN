@@ -4,12 +4,12 @@ description: 表示给定设置的定义的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b4147d5ed892eebce175d79925b7329525585a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7398d2c53975652a9de0040d6c4bb62705e515c2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943569"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984532"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>deviceManagementSettingDefinition 资源类型
 
@@ -82,6 +82,7 @@ ms.locfileid: "33943569"
   ]
 }
 ```
+
 
 
 

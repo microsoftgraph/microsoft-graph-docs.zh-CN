@@ -4,12 +4,12 @@ description: Apple 设备的使用者名称格式选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 284514b055b04b9c1c57c93b26bfd9ea59c7248a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 99e2e480091ab877f660d9bdc12de7f83f538b71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947748"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987682"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 枚举类型
 
@@ -28,6 +28,7 @@ Apple 设备的使用者名称格式选项。
 |commonNameIncludingEmail|第三章|公用名称, 包括电子邮件。|
 |commonNameAsIMEI|5|作为 IMEI 的常用名称。|
 |commonNameAsSerialNumber|型|作为序列号的常用名称。|
+
 
 
 

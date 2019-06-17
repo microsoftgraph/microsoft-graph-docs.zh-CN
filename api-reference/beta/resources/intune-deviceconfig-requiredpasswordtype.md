@@ -4,12 +4,12 @@ description: 所需密码的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c42c6ed077208180b82f1855e0532416072b1c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e8bc7a0980b95806d349c824fe242217f25866a8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944871"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986751"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33944871"
 |deviceDefault|0|设备默认值, 无意向。|
 |字母数字|1|需要字母数字密码。|
 |位数|双面|需要数字密码。|
+
 
 
 

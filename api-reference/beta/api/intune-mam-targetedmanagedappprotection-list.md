@@ -4,12 +4,12 @@ description: 列出 targetedManagedAppProtection 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 896ffca5d4621afd30b0d996ab69c13b42afd99b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8d9e25ad6e98499b99bd9eaeea41fb22b4526ce3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902883"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987486"
 ---
 # <a name="list-targetedmanagedappprotections"></a>列出 targetedManagedAppProtections
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2241
+Content-Length: 2302
 
 {
   "value": [
@@ -113,12 +113,14 @@ Content-Length: 2241
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged"
     }
   ]
 }
 ```
+
 
 
 

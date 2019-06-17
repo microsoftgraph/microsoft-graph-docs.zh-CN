@@ -4,12 +4,12 @@ description: 表示集合设置的定义的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d917ed25048d0a63196262aad1c7c945f4ce7d55
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 551b80075fce8a1edf93be6299656fdd8bf0735d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943527"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988858"
 ---
 # <a name="devicemanagementcollectionsettingdefinition-resource-type"></a>deviceManagementCollectionSettingDefinition 资源类型
 
@@ -87,6 +87,7 @@ ms.locfileid: "33943527"
   "elementDefinitionId": "String"
 }
 ```
+
 
 
 

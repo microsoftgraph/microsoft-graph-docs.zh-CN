@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationComboBox 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e842333f88f6ba08e68a67feb935819a33963971
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 04bc5333e8f8fc67a4551708823421b6127862a9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904991"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985071"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>更新 groupPolicyPresentationComboBox
 
@@ -105,6 +105,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 targetedManagedAppPolicyAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4a1fbfeffb3504ab806783372278dd790f41b3e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fce44620cbf990c32452e21ddc8e77cabf564c1d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903107"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986856"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 
@@ -94,6 +94,7 @@ Content-Length: 223
   }
 }
 ```
+
 
 
 

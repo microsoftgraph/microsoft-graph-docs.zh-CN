@@ -4,12 +4,12 @@ description: OMA 设置 Base64 定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8affdb1f073831df54837420b54f9a0ea19ad956
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6ecb77bc317216e77cb53c31b8be9bded9cafc19
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951042"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995551"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 资源类型
 
@@ -28,7 +28,7 @@ OMA 设置 Base64 定义。
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|与 Value 属性 (*.cer | * .crt | *。 p7b | * bin)。|
+|fileName|String|与 Value 属性 (*.cer | * .crt | *. p7b | * bin)。|
 |value|String|值。 （Base64 编码字符串）|
 
 ## <a name="relationships"></a>关系
@@ -51,6 +51,7 @@ OMA 设置 Base64 定义。
   "value": "String"
 }
 ```
+
 
 
 

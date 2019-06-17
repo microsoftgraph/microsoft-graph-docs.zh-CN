@@ -4,12 +4,12 @@ description: 读取 managementCondition 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba0676ac60ecfa2726abd44d8bce3a3f220c353b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8313fadf643b20103c12f5d97e826ff998ec109b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905390"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984126"
 ---
 # <a name="get-managementcondition"></a>获取 managementCondition
 
@@ -84,6 +84,7 @@ Content-Length: 468
   }
 }
 ```
+
 
 
 

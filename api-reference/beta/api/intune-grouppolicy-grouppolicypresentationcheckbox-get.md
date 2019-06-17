@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentationCheckBox 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99df46a6893a8504c1e1f050840231d7fe3cddf1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8641b3ab5d57de8a32b77c4b9faafcc070fb7acb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905005"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983692"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>获取 groupPolicyPresentationCheckBox
 
@@ -78,6 +78,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

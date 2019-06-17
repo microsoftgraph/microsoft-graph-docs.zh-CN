@@ -4,12 +4,12 @@ description: 带宽限制, 以千字节/秒为单位。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: addb48091e3682019a508b7f19832b5acccd6aa7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 626c46c035ec4a7af44c06a31f7269cde96a2b8b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947286"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979716"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute 资源类型
 
@@ -47,6 +47,7 @@ ms.locfileid: "33947286"
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 deviceAndAppManagementRoleDefinition 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea0e92996489493a63609d3529fbb471cf222d50
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 16f5decb16dcd46ecd479cd0eae3d88576368548
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899548"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988683"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>列出 deviceAndAppManagementRoleDefinitions
 
@@ -118,6 +118,7 @@ Content-Length: 1499
   ]
 }
 ```
+
 
 
 

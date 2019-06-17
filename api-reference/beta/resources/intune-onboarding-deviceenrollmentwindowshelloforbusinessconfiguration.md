@@ -4,12 +4,12 @@ description: Windows Hello 企业版设置允许用户使用笔势 (如生物特
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f98f590f049f1941ddcc0a721d66e27b6c56f373
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a5fcc6d83083d79d71f5e7393dd11d23febd92bd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940405"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993121"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 
@@ -53,6 +53,7 @@ Windows Hello 企业版设置允许用户使用笔势 (如生物特征身份验�
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去的 Pin 的功能。 必须在0和50之间设置此值 (包括这两个值), 并且用户的当前 PIN 包含在该计数中。 如果设置为 0, 则不存储以前的 Pin。 PIN 历史记录不会通过 PIN 重置来保留。|
 |pinExpirationInDays|Int32|控制在系统要求用户更改 PIN 之前可以使用 PIN 的时间段 (以天为单位)。 必须在0和730之间设置此值 (包括这两个值)。 如果设置为 0, 则用户的 PIN 永不过期|
 |enhancedBiometricsState|[启用](../resources/intune-shared-enablement.md)|控制在支持它的设备上使用反欺骗功能进行面部识别。 如果设置为 "禁用", 则不允许反欺骗功能。 如果设置为 "未配置", 则用户可以选择是否要使用反欺骗。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityKeyForSignIn|[启用](../resources/intune-shared-enablement.md)|登录的安全密钥提供远程开启/关闭 Windows Hello Sercurity Keyl 的容量。未配置将服从在 clinet 上完成的配置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -88,9 +89,11 @@ Windows Hello 企业版设置允许用户使用笔势 (如生物特征身份验�
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 1024,
   "pinExpirationInDays": 1024,
-  "enhancedBiometricsState": "String"
+  "enhancedBiometricsState": "String",
+  "securityKeyForSignIn": "String"
 }
 ```
+
 
 
 

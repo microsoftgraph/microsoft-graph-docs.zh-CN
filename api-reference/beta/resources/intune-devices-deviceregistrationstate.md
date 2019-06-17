@@ -4,12 +4,12 @@ description: 设备注册状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94ff2a645b9ea3862cee50ca086284deea02da09
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7aa2f009bc1a9fdafcabbbdbb4a5fbf5d2305b3a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942015"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995215"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33942015"
 |certificateReset|型|设备证书已重置。|
 |notRegisteredPendingEnrollment|步|设备未注册且未完成注册。|
 |unknown|utf-8|设备注册状态未知。|
+
 
 
 

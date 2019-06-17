@@ -4,12 +4,12 @@ description: 包含 MDM 移动应用配置用户状态摘要的属性、继承�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9b15a02f8293809d04dff472e40a86fda08f84a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7793b81ba9bedb8fba6a07beb40ccd4ca3d87a28
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950079"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964393"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary 资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "33950079"
   "configurationVersion": 1024
 }
 ```
+
 
 
 

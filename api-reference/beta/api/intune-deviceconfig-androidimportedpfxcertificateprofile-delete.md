@@ -4,12 +4,12 @@ description: 删除 androidImportedPFXCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 533dbb26c805cf3baa26ed95c3ca093649b7d403
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 07383dd193b96540b4a8bc00a6137777b2d6a9f6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33929686"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34970147"
 ---
 # <a name="delete-androidimportedpfxcertificateprofile"></a>删除 androidImportedPFXCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9579f087324362db640ac4ae60bd6a78ae82cb0a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5d8163f08754ee2ab91af8b652706853b540e9c0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941416"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989698"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>windowsAutopilotSyncStatus 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33941416"
 |inProgress|1|正在进行同步|
 |后|双面|同步已完成。|
 |未能|第三章|同步失败。|
+
 
 
 

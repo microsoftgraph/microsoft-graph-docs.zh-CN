@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationDecimalTextBox。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7a4c94d5968c447488ecd54513ff4d4252180ea
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 61de8bdea167ae5bfe329078271a8e2954ccad1b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904977"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985064"
 ---
 # <a name="delete-grouppolicypresentationdecimaltextbox"></a>删除 groupPolicyPresentationDecimalTextBox
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

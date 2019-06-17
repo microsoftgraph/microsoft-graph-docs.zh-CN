@@ -4,12 +4,12 @@ description: Android 工作配置文件 VPN 连接类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77f561f9fe30daed4b0c0d57094f92338a0bac28
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5e75854674d626be67b7cfcaa9707ab1fc6d4758
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947608"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982341"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 枚举类型
 
@@ -29,6 +29,7 @@ Android 工作配置文件 VPN 连接类型。
 |checkPointCapsuleVpn|4|检查点胶囊 VPN。|
 |citrix|5|Citrix|
 |paloAltoGlobalProtect|型|Palo Alto 网络 GlobalProtect。|
+
 
 
 

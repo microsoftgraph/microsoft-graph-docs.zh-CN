@@ -4,12 +4,12 @@ description: Android For Work 默认应用程序权限策略类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8db747055ab1e817b3b6cc1e519586e8add9cf7e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c4d4e4bccb65f87e5a7ba77027e636e076980408
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948659"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991182"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType 枚举类型
 
@@ -26,6 +26,7 @@ Android For Work 默认应用程序权限策略类型。
 |提示|1|行.|
 |autoGrant|双面|自动授予。|
 |autoDeny|第三章|自动拒绝。|
+
 
 
 

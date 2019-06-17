@@ -4,12 +4,12 @@ description: DepMacOSEnrollmentProfile 资源表示特定于 macOS 配置的 App
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04473231f8110228f798a3959977748585018dd4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b848745087c74a77ee33622603aab377c07f705f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941623"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987311"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>depMacOSEnrollmentProfile 资源类型
 
@@ -113,6 +113,7 @@ DepMacOSEnrollmentProfile 资源表示特定于 macOS 配置的 Apple 设备注�
   "chooseYourLockScreenDisabled": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationMultiTextBox 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10c92f40413790c8049563123975f31d2ce3eeba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0dc97d101291b8aa4d83ec522ef7a3d37fd785d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904718"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964568"
 ---
 # <a name="update-grouppolicypresentationmultitextbox"></a>更新 groupPolicyPresentationMultiTextBox
 
@@ -98,6 +98,7 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 deviceManagementScriptDeviceState 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba27d543e7eaa7632dc716ffe8ea65feb2806b60
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 999610b66eb3a6b5c18721556d783d96448415b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909867"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958919"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>获取 deviceManagementScriptDeviceState
 
@@ -80,6 +80,7 @@ Content-Length: 363
   }
 }
 ```
+
 
 
 

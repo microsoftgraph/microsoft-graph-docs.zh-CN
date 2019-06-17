@@ -4,12 +4,12 @@ description: 使用 MDM 进行 Windows 信息保护的策略
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fabaf7555e20d0cfbc757f76a88bd669c53b15d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a213dfd0854139c5c180b53bd098e1624ced0bf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940650"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994627"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>mdmWindowsInformationProtectionPolicy 资源类型
 
@@ -211,6 +211,7 @@ ms.locfileid: "33940650"
   "isAssigned": true
 }
 ```
+
 
 
 

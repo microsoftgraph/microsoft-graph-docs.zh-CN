@@ -4,12 +4,12 @@ description: iOS 批量采购计划许可证分配。 此类不支持创建、�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc967be6bc808ea6443f2fd6333b6313b11ab596
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6765b7ae313714433c848b57dec0ef1a58d7a38d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950373"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987857"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense 资源类型
 
@@ -58,6 +58,7 @@ iOS 批量采购计划许可证分配。 此类不支持创建、删除或更新
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

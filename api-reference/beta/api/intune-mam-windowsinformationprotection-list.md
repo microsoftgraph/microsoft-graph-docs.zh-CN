@@ -4,12 +4,12 @@ description: 列出 windowsInformationProtection 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2049f30fc460192161cb175a0c39b451b5067f3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 69fcc28ee3cfd37384cfa29cdba1e4077f40b060
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902918"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987423"
 ---
 # <a name="list-windowsinformationprotections"></a>列出 windowsInformationProtections
 
@@ -201,6 +201,7 @@ Content-Length: 4675
   ]
 }
 ```
+
 
 
 

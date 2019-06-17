@@ -4,12 +4,12 @@ description: 共享电脑帐户管理器策略 仅在启用了帐户管理器时
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f604df505bea11c59d1e0e3c0acdb5b638295449
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ef25086d573d084e9a4c2917eaa5f56a70bea244
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944717"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992456"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>sharedPCAccountManagerPolicy 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33944717"
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
+
 
 
 

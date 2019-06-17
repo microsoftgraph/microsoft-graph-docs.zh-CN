@@ -4,12 +4,12 @@ description: 删除 intuneBrandingProfileAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60b631748d2a1b813f8b9b8d63c76b7b3830e748
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f2e226884cbe6ebb30665507d87c14f3cdc9e20d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898980"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990559"
 ---
 # <a name="delete-intunebrandingprofileassignment"></a>删除 intuneBrandingProfileAssignment
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

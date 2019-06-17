@@ -4,12 +4,12 @@ description: 受限的应用状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 876516221e77d1e3b379c79ff1e3e26fa67f20a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92dec29f6bd5e6a01d5a14d9e1d2041c4e4d98a1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944794"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986702"
 ---
 # <a name="restrictedappsstate-enum-type"></a>restrictedAppsState 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33944794"
 |:---|:---|:---|
 |prohibitedApps|0|禁止的应用|
 |notApprovedApps|1|未批准的应用程序|
+
 
 
 

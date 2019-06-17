@@ -4,12 +4,12 @@ description: 删除 windows81WifiImportConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6338bec527432f93984246a2baed391a11437115
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7eea20bff40eb99af927df2d62c498aaeaf073d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918050"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962125"
 ---
 # <a name="delete-windows81wifiimportconfiguration"></a>删除 windows81WifiImportConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

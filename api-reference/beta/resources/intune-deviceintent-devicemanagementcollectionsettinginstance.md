@@ -4,12 +4,12 @@ description: 一个代表值集合的设置实例
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53a086c93035413369486fbc376e4f3aab5a609d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3cd2b01f2a620f54e686c7bebd60256eb1e0b0d1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943555"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986625"
 ---
 # <a name="devicemanagementcollectionsettinginstance-resource-type"></a>deviceManagementCollectionSettingInstance 资源类型
 
@@ -59,6 +59,7 @@ ms.locfileid: "33943555"
   "valueJson": "String"
 }
 ```
+
 
 
 

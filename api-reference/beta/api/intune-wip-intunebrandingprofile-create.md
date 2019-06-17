@@ -4,12 +4,12 @@ description: 创建新的 intuneBrandingProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01d487da88677db899aea4c2ec25c54d3ae3d1bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ec5e863d171c952c07acfb0ecf2c312dcd89a366
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898993"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990664"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
@@ -53,23 +53,24 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|Boolean|显示配置文件是否用于默认设置。|
-|createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
-|lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间。|
-|displayName|字符串|向最终用户显示的公司/组织名称。|
-|contactITName|String|负责 IT 支持的员工/组织名称。|
-|contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
-|contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
-|contactITNotes|String|负责 IT 支持的员工/组织的文本注释。|
-|privacyUrl|String|指向公司/组织隐私策略的 URL。|
-|onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
-|onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
-|showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在主题颜色背景上的公司门户应用程序中显示的徽标图像。|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在 "浅色背景" 的公司门户应用程序中显示的徽标图像。|
+|isDefaultProfile|Boolean|一个 Boolean 类型的值, 该值表示是否将配置文件用作默认配置文件|
+|createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
+|lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
+|displayName|字符串|向最终用户显示的公司/组织名称|
+|contactITName|String|负责 IT 支持的人员/组织的名称|
+|contactITPhoneNumber|String|负责 IT 支持的个人/组织的电话号码|
+|contactITEmailAddress|String|负责 IT 支持的个人/组织的电子邮件地址|
+|contactITNotes|String|关于负责 IT 支持的人员/组织的文本注释|
+|privacyUrl|String|指向公司/组织的隐私策略的 URL|
+|onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
+|onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 web 门户中使用的主要主题颜色|
+|showLogo|Boolean|Boolean 类型的值, 该值表示是否显示管理员提供的徽标图像|
+|showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值, 该值表示是否在徽标图像旁边显示管理员提供的显示名称|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 其徽标后面有主题颜色背景|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 徽标后面有浅背景|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
+|customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
 
 
 
@@ -83,7 +84,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1205
+Content-length: 1264
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -120,7 +121,8 @@ Content-length: 1205
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
 
@@ -129,7 +131,7 @@ Content-length: 1205
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1377
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -169,9 +171,11 @@ Content-Length: 1377
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 defaultDeviceCompliancePolicy。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40b7c0b9fe9badb4a1fe81c793555d7ea5ebce3c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12f69245a545bf36ab4e81fe1bd4265c08992539
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928041"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968726"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>删除 defaultDeviceCompliancePolicy
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

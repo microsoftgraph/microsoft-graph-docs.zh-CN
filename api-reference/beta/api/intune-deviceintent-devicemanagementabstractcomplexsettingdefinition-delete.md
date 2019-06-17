@@ -4,12 +4,12 @@ description: 删除 deviceManagementAbstractComplexSettingDefinition。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d950900b564f9085782981b851740d17f8a5e590
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 115c5405ee0d2d8f635a750c0dc354e7a4571327
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917013"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961096"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettingdefinition"></a>删除 deviceManagementAbstractComplexSettingDefinition
 
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

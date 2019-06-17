@@ -4,12 +4,12 @@ description: 读取 windowsInformationProtectionDeviceRegistration 对象的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 135f9cfe1f3d703aa7930633177619cf5cf016b5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4921289bc8ae3bcbe4b2e2b7ee8f9a0725ab65b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903083"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987822"
 ---
 # <a name="get-windowsinformationprotectiondeviceregistration"></a>获取 windowsInformationProtectionDeviceRegistration
 
@@ -80,6 +80,7 @@ Content-Length: 450
   }
 }
 ```
+
 
 
 

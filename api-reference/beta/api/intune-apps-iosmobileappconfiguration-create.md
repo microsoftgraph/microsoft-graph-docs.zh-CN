@@ -4,12 +4,12 @@ description: 创建新的 iosMobileAppConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97a81e0c1b32c5145a457c235b515eb57867b8b1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e2f55b0159ba365505accbbb8d0ffb1846747f0e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936972"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966087"
 ---
 # <a name="create-iosmobileappconfiguration"></a>创建 iosMobileAppConfiguration
 
@@ -130,6 +130,7 @@ Content-Length: 768
   ]
 }
 ```
+
 
 
 

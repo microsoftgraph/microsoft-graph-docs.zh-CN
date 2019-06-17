@@ -4,12 +4,12 @@ description: 创建新的 roleScopeTag 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 009a2f8f87c49495730b3f08be86b7238a119a97
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1e8297e48bc26a96a12bce5449a5f3017340d3fa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899429"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985260"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

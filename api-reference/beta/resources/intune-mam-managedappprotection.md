@@ -4,12 +4,12 @@ description: 用于为指定的一组应用配置详细管理设置的策略
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebe0d7a8c211c1d7066d09caa9f109062fe72ec8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0f6aed7b1372ed2856699507a1774d0050783b24
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940706"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994704"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
@@ -71,6 +71,7 @@ ms.locfileid: "33940706"
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为, 即阻止或擦除。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是无生物识别密码) 超时|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定应用程序通知限制。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -128,9 +129,11 @@ ms.locfileid: "33940706"
   "appActionIfDeviceComplianceRequired": "String",
   "appActionIfMaximumPinRetriesExceeded": "String",
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
-  "allowedOutboundClipboardSharingExceptionLength": 1024
+  "allowedOutboundClipboardSharingExceptionLength": 1024,
+  "notificationRestriction": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 充当所有设备应用管理功能的容器的单例实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8b047c470ee60ab99275675626a3917911f2a715
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9ebb14421204c364e04a7151f7898d253798f440
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939775"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996125"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -66,6 +66,8 @@ ms.locfileid: "33939775"
 |**载入**|
 |sideLoadingKeys|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)集合|安装 Windows 8 和8.1 应用程序所需的端加载密钥。|
 |vppTokens|[vppToken](../resources/intune-onboarding-vpptoken.md) 集合|此组织的 Vpp 令牌列表。|
+|**合作伙伴集成**|
+|deviceAppManagementTasks|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)集合|设备应用管理任务。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。  请注意, 这只是一个示例。查询对实际查询的响应将包含适用于上下文的属性。  

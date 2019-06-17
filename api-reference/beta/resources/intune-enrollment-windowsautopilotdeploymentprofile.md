@@ -4,12 +4,12 @@ description: Windows Autopilot 部署配置文件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0596f4cd23c98b271c5e463a973dcfd29cee6dad
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cfa37dd838e515978db7f6763d1b8e69b5c66417
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941462"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993920"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
 
@@ -93,6 +93,7 @@ Windows Autopilot 部署配置文件
   ]
 }
 ```
+
 
 
 

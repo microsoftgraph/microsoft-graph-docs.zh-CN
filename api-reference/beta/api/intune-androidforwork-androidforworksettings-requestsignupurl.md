@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1e667e4b5cd6925e080f5c4f1f6330923c0aeec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 952ba54635239e940f43e964188b641514d7a594
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939103"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966514"
 ---
 # <a name="requestsignupurl-action"></a>requestSignupUrl 操作
 
@@ -83,6 +83,7 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
+
 
 
 

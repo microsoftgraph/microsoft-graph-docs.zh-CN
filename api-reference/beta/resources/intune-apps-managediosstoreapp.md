@@ -4,12 +4,12 @@ description: 包含可以使用 Intune 应用保护策略管理的 iOS 应用商
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4159738b7a7f18dd1d6b1241a6ec1f9b593316ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 626cbba5de5804d35c6ad960cec731697ad6ad46
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950100"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989516"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp 资源类型
 
@@ -123,6 +123,7 @@ ms.locfileid: "33950100"
   }
 }
 ```
+
 
 
 

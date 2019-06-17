@@ -4,12 +4,12 @@ description: 表示模板设置类别的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd476adffd3608041cbfe0e9223940bfb2e29066
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e076e7cdeabf9246b4de83eb6488dc3fb64f1756
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943394"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984399"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>deviceManagementTemplateSettingCategory 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "33943394"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
-|displayName|String|继承自[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
+|displayName|String|继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -58,6 +58,7 @@ ms.locfileid: "33943394"
   "displayName": "String"
 }
 ```
+
 
 
 

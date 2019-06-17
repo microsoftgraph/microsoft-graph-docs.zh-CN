@@ -4,12 +4,12 @@ description: 更新 androidForWorkSettings 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 910d97b8736487023e6cc6a3f07827a41bc08b92
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 221678cef82858e37fb2ff143289b5032099e7bb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939131"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965520"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
 
@@ -113,6 +113,7 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
+
 
 
 
