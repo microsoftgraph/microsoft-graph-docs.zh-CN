@@ -4,12 +4,12 @@ description: 用于标识展台配置的应用程序信息的应用程序基类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1234fb7ef79bf5e7ad1b52ddfc6442dc15c4bec9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aee894f4177a39877842e7b239473cebb5a6ff88
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944150"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993983"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "33944150"
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
+
 
 
 

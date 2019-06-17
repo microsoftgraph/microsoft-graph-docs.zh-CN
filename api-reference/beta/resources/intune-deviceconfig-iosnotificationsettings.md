@@ -4,12 +4,12 @@ description: 说明通知设置的项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0503d938860798408fa5eb2af20ac51dc988f8a7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 434278967fa5ffe781b53595edae69bffc725289
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946446"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995670"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
@@ -56,6 +56,7 @@ ms.locfileid: "33946446"
   "soundsEnabled": true
 }
 ```
+
 
 
 

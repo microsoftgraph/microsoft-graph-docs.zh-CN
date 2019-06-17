@@ -4,12 +4,12 @@ description: 更新 enrollmentProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e8d067d8b6136fc62c6727c23f9d2bccbf8ee93
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 18b6b2fffb2055e6986ec33a91b3c6de65ca0e4b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908565"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981557"
 ---
 # <a name="update-enrollmentprofile"></a>更新 enrollmentProfile
 
@@ -101,6 +101,7 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

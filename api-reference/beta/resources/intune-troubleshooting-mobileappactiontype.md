@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 543640ad305f91cd44ff43c8151c4d7e482ac7de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bc27793c6d3be46f130814517c9b6cd2db800198
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939796"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988144"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "33939796"
 |了|第三章|已安装应用程序。|
 |#b0|4|已卸载应用程序。|
 |userRequestedInstall|5|用户请求安装|
+
 
 
 

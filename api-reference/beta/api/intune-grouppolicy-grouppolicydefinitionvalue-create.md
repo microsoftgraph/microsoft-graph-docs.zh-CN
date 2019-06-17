@@ -4,12 +4,12 @@ description: 创建新的 groupPolicyDefinitionValue 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea0ca1731607e450032d0d24d380436fe9c90736
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4badf60f5f178d51b51c0cc240f7667ae370bb4c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905089"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984728"
 ---
 # <a name="create-grouppolicydefinitionvalue"></a>创建 groupPolicyDefinitionValue
 
@@ -93,6 +93,7 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

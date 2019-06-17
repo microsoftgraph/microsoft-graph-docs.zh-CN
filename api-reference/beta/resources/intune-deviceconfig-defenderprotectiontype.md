@@ -4,12 +4,12 @@ description: Defender 保护的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b83e219bfa5b8b784880546dc4b9f5109e4e2f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ecc85ec9ba8f431f5a5b07c50f5865342a59db51
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947335"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979821"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>defenderProtectionType 枚举类型
 
@@ -25,6 +25,7 @@ Defender 保护的可能值
 |定制|0|设备默认值, 无意向。|
 |启用|1|阻止功能。|
 |auditMode|双面|允许功能, 但生成日志。|
+
 
 
 

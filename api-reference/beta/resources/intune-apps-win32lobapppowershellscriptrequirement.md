@@ -4,12 +4,12 @@ description: 包含用于检测 Win32 应用程序的 PowerShell 脚本属性
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2df6d406f5bc86b2637d60098a819138195b1383
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a85a777f0dd888296250627b6bab05d0c87dc14c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949512"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987339"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>win32LobAppPowerShellScriptRequirement 资源类型
 
@@ -57,6 +57,7 @@ ms.locfileid: "33949512"
   "detectionType": "String"
 }
 ```
+
 
 
 

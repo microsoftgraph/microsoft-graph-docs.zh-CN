@@ -4,12 +4,12 @@ description: 可扩展的身份验证协议 (EAP) 配置类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87f2aae2d7ab06ea219c9b1488992b50ce846941
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 656d32f5d98519c913e6e17de7cc7f8feccf8400
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946887"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989873"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "33946887"
 |eapTtls|不足|EAP-隧道传输层安全性 (EAP-TTLS)。|
 |peap|word|受保护的可扩展身份验证协议 (PEAP)。|
 |eapFast|43|通过安全隧道进行 EAP-灵活的身份验证 (EAP-FAST)。|
+
 
 
 

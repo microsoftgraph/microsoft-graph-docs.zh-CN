@@ -4,12 +4,12 @@ description: ConfigurationUsage 列表的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1673e885afbff8b4d57206b6cddc7a86f1872813
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c38cbc07d05340a7ed3c737966803c64585100a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947412"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979933"
 ---
 # <a name="configurationusage-enum-type"></a>configurationUsage 枚举类型
 
@@ -25,6 +25,7 @@ ConfigurationUsage 列表的可能值。
 |堵塞|0|许可证.|
 |必需|1|必需。|
 |支持|双面|可选。|
+
 
 
 

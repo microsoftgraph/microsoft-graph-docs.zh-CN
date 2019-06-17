@@ -4,12 +4,12 @@ description: 不使用 MDM 进行 Windows 信息保护的策略
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 438e7bd046b5dddfe65c30862ca32392a0e277a6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8686f60cea69195d2b215f3c14f4346b514b90a3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940503"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994480"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>windowsInformationProtectionPolicy 资源类型
 
@@ -235,6 +235,7 @@ ms.locfileid: "33940503"
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
+
 
 
 

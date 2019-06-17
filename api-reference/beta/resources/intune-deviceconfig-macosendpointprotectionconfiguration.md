@@ -4,12 +4,12 @@ description: MacOS endpoint protection 配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83ae5940d9aa985c7dd5d553c2891478e57ac587
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0fdbd1c46b870a8448381890120fe66f894b7fa4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946131"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989194"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>macOSEndpointProtectionConfiguration 资源类型
 
@@ -38,6 +38,9 @@ MacOS endpoint protection 配置文件。
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -48,6 +51,15 @@ MacOS endpoint protection 配置文件。
 |firewallBlockAllIncoming|Boolean|对应于 "阻止所有传入连接" 选项。|
 |firewallEnableStealthMode|Boolean|对应于 "启用隐形模式"。|
 |firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)集合|具有防火墙设置的应用程序列表。 不在此列表中的应用程序的防火墙设置由用户决定。 该集合最多可包含 500 个元素。|
+|fileVaultEnabled|Boolean|是否应启用 FileVault。|
+|fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|如果启用了 FileVault, 则需要确定要使用的恢复密钥的类型。 . 可取值为：`notConfigured`、`institutionalRecoveryKey`、`personalRecoveryKey`。|
+|fileVaultInstitutionalRecoveryKeyCertificate|Binary|如果所选恢复密钥类型包括 InstitutionalRecoveryKey, 则为必需。 用于设置机构恢复密钥的 DER 编码证书文件。|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|要在 UI 中显示的机构恢复密钥证书的文件名。 (* der)。|
+|fileVaultPersonalRecoveryKeyHelpMessage|String|如果所选恢复密钥类型包括 PersonalRecoveryKey, 则为必需。 向用户显示一条简短消息, 说明他们如何检索其个人恢复密钥。|
+|fileVaultAllowDeferralUntilSignOut|Boolean|可选。 如果设置为 true, 则用户可以推迟启用 FileVault, 直到他们注销。|
+|fileVaultNumberOfTimesUserCanIgnore|Int32|可选。 使用 Defer 选项时, 此值是用户可以在 FileVault 之前忽略启用 FileVault 的提示的最大次数, 用户将需要这些用户才能登录。 如果设置为-1, 则在启用 FileVault 之前, 它将始终提示启用 FileVault, 但它将允许用户绕过启用 FileVault。 将此设置为0将禁用该功能。|
+|fileVaultDisablePromptAtSignOut|Boolean|可选。 使用 Defer 选项时, 如果设置为 true, 则不提示用户在注销时启用 FileVault。|
+|fileVaultPersonalRecoveryKeyRotationInMonths|Int32|可选。 如果所选恢复密钥类型包括 PersonalRecoveryKey, 则以月为单位旋转该密钥的频率。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -77,6 +89,27 @@ MacOS endpoint protection 配置文件。
     "String"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "String"
+    ],
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "String",
+    "maxOSVersion": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -92,9 +125,19 @@ MacOS endpoint protection 配置文件。
       "bundleId": "String",
       "allowsIncomingConnections": true
     }
-  ]
+  ],
+  "fileVaultEnabled": true,
+  "fileVaultSelectedRecoveryKeyTypes": "String",
+  "fileVaultInstitutionalRecoveryKeyCertificate": "binary",
+  "fileVaultInstitutionalRecoveryKeyCertificateFileName": "String",
+  "fileVaultPersonalRecoveryKeyHelpMessage": "String",
+  "fileVaultAllowDeferralUntilSignOut": true,
+  "fileVaultNumberOfTimesUserCanIgnore": 1024,
+  "fileVaultDisablePromptAtSignOut": true,
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 1024
 }
 ```
+
 
 
 

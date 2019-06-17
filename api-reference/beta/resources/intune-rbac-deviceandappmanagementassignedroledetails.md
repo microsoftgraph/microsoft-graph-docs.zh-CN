@@ -4,12 +4,12 @@ description: 分配给用户的角色定义和角色分配的集合。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03b98e2d98774ae166bba6b9ab74d8e42953c78e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d761b8db45e1dffa8463bcee6d40e553f6853186
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940027"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993632"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>deviceAndAppManagementAssignedRoleDetails 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33940027"
   ]
 }
 ```
+
 
 
 

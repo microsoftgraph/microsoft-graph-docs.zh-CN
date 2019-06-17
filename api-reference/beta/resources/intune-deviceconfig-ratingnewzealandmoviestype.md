@@ -4,12 +4,12 @@ description: 新西兰的电影评级标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53f2c6f6fc9777b1de8522541f1e0b84284ccca9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 274d5ea373d00d4b16e5d254e1a244499518c86f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950891"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984546"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -33,6 +33,7 @@ ms.locfileid: "33950891"
 |agesAbove18|utf-8|R18 分类限制为18年以上及以上的人员|
 |受限|第|将 R 分类限制为特定访问群体|
 |agesAbove16Restricted|10 |RP16 分类要求在16下有一个父或成年人的查看者|
+
 
 
 

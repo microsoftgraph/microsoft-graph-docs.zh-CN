@@ -4,12 +4,12 @@ description: 列出 windows10EnrollmentCompletionPageConfiguration 对象的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fe9f8a9e814fc023b7c32e4cad3265cd6cc0e92
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c488d3dcb6b1b7d138b1f7cb07b130ff7c3e0759
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899786"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980472"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>列出 windows10EnrollmentCompletionPageConfigurations
 
@@ -89,6 +89,7 @@ Content-Length: 860
   ]
 }
 ```
+
 
 
 

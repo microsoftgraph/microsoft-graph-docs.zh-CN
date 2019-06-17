@@ -4,12 +4,12 @@ description: 实体表示策略定义上多行文本框演示文稿的字符串�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be9136108dfc7c566408ece4e961e5c25dfe084b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 175d0113ccf4cda201ca9feb17d684397ac064db
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941000"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987843"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>groupPolicyPresentationValueMultiText 资源类型
 
@@ -64,6 +64,7 @@ ms.locfileid: "33941000"
   ]
 }
 ```
+
 
 
 

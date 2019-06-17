@@ -4,12 +4,12 @@ description: 创建新的 mobileThreatDefenseConnector 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4551d953dd0a672d05e80b585f2909ef7957b6a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4ae0deeb2bc6910bfae6314d0703a186f7cff618
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899982"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980871"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
@@ -122,6 +122,7 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
+
 
 
 

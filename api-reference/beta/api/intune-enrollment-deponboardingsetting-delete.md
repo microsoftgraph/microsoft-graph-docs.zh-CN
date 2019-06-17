@@ -4,12 +4,12 @@ description: 删除 depOnboardingSetting。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ff1e290217fb82b2169c881b82b1b2fc39e5bc1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 85f8398da454514c26b7f0316534dcb4e731119d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908733"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980206"
 ---
 # <a name="delete-deponboardingsetting"></a>删除 depOnboardingSetting
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

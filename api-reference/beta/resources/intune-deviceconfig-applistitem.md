@@ -4,12 +4,12 @@ description: 表示托管应用程序列表中的应用
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d29fca9155ac14c7b8ebf9ad862bda3bed874353
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b6a6eb9922accf3eb59ecd8e8b0c31edc7fa7e99
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947713"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987584"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33947713"
   "appId": "String"
 }
 ```
+
 
 
 

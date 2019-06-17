@@ -4,12 +4,12 @@ description: iOS URL 书签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c8a4ff93674f9fedbed0597fb8e418a59b9ea70
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9d2f96b872d09eaf3c954f18a31219d6bfe17ddb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946558"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988361"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
 
@@ -44,6 +44,7 @@ iOS URL 书签
   "displayName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 intuneBrandingProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e7e56005bd7ecbc163ba75afef3890d0046a3b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fb93f16a8ca3508eb23688b508d13561365003fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899247"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990594"
 ---
 # <a name="list-intunebrandingprofiles"></a>列出 intuneBrandingProfiles
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1562
+Content-Length: 1625
 
 {
   "value": [
@@ -104,11 +104,13 @@ Content-Length: 1562
         "@odata.type": "microsoft.graph.mimeContent",
         "type": "Type value",
         "value": "dmFsdWU="
-      }
+      },
+      "customPrivacyMessage": "Custom Privacy Message value"
     }
   ]
 }
 ```
+
 
 
 

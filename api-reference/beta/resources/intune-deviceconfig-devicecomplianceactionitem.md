@@ -4,12 +4,12 @@ description: 计划的操作配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae816f98c4f570c1ab0c72063c7d15ad29054fae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e27d2fb5e8822dc4adc8503bbc6731e573c87759
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947181"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979534"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem 资源类型
 
@@ -60,6 +60,7 @@ ms.locfileid: "33947181"
   ]
 }
 ```
+
 
 
 

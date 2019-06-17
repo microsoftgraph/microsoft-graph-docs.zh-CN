@@ -4,12 +4,12 @@ description: 读取 androidManagedAppProtection 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b37c079c65dfc6951c48981662906dc71a2a08c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 86015eaed92de74d7ba98d5cf532d4eaa01ceb45
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904354"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985638"
 ---
 # <a name="get-androidmanagedappprotection"></a>获取 androidManagedAppProtection
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3237
+Content-Length: 3296
 
 {
   "value": {
@@ -113,6 +113,7 @@ Content-Length: 3237
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
+    "notificationRestriction": "blockOrganizationalData",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "screenCaptureBlocked": true,
@@ -140,6 +141,7 @@ Content-Length: 3237
   }
 }
 ```
+
 
 
 

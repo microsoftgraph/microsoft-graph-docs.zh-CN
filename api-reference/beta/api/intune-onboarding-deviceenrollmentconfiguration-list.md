@@ -4,12 +4,12 @@ description: 列出 deviceEnrollmentConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2d5ff6f9547abd064156ccdbf5a8e7d1be56773
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c6a80346d00a37b33c36ab50a50de84ae69bbf47
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900578"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987941"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>列出 deviceEnrollmentConfigurations
 
@@ -79,6 +79,7 @@ Content-Length: 422
   ]
 }
 ```
+
 
 
 

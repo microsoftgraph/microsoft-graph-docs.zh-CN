@@ -4,12 +4,12 @@ description: 删除 roleScopeTag。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63d8376020a94d5b47095eb5d5258fdd2bd1db01
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e58885ca37e0b8630e2fadba24428bbb419a32e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899450"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988382"
 ---
 # <a name="delete-rolescopetag"></a>删除 roleScopeTag
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScop
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

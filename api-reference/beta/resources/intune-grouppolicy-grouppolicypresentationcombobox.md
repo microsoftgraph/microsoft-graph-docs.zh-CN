@@ -4,12 +4,12 @@ description: 代表 ADMX comboBox 元素和 ADMX 文本元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 637c314d74a7db202f04c1281390467d4ae929d3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2dce61b2617917847d5158fd16dac63b879fb03b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941112"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982943"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>groupPolicyPresentationComboBox 资源类型
 
@@ -69,6 +69,7 @@ ms.locfileid: "33941112"
   "maxLength": 1024
 }
 ```
+
 
 
 

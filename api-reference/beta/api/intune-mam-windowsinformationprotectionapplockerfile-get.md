@@ -4,12 +4,12 @@ description: 读取 windowsInformationProtectionAppLockerFile 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc1a4081bdaa7829ab1c18cc57aea0a5006b522c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 404a60de299a195b20e26c674f429b4b5d9745a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902795"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987395"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>获取 windowsInformationProtectionAppLockerFile
 
@@ -81,6 +81,7 @@ Content-Length: 291
   }
 }
 ```
+
 
 
 

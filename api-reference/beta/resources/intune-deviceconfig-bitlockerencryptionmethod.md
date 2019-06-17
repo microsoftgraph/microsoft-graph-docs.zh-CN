@@ -4,12 +4,12 @@ description: BitLockerEncryptionMethod 类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 247354a9d933985f25b18756b57640e407e4a172
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12002e85e44a5be939737750491d443dfc198c89
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947524"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983601"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>bitLockerEncryptionMethod 枚举类型
 
@@ -26,6 +26,7 @@ BitLockerEncryptionMethod 类型
 |aesCbc256|4|AES-CBC 256 位。|
 |xtsAes128|型|XTS-AES 128 位。|
 |xtsAes256|步|XTS-AES 256 位。|
+
 
 
 

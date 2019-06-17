@@ -4,12 +4,12 @@ description: 通过将**signInSessionsValidFromDateTime**用户属性重置为�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1221edadd8e69139b28aaf1122409cf311986d6c
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 26f2224e74a90bbc4a47a4e31c5738d3b1baf08e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34453395"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979343"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 
@@ -19,8 +19,8 @@ ms.locfileid: "34453395"
 
 如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌, 应用程序将收到错误。 如果发生这种情况, 应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌, 这将强制用户登录。
 
-[!NOTE]
-在调用**revokeSignInSessions**后, 可能会有几分钟的短暂延迟才会被吊销令牌。
+>[!NOTE]
+>在调用**revokeSignInSessions**后, 可能会有几分钟的短暂延迟才会被吊销令牌。
 
 ## <a name="permissions"></a>权限
 
@@ -38,10 +38,12 @@ ms.locfileid: "34453395"
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 此操作没有请求内容。

@@ -4,12 +4,12 @@ description: 读取 locationManagementCondition 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 641b8a24c5de5abce1bbc35586f9354ea892380e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 608e15cfafd61b838f2a799f8ae695b17652a2d7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905446"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983909"
 ---
 # <a name="get-locationmanagementcondition"></a>获取 locationManagementCondition
 
@@ -84,6 +84,7 @@ Content-Length: 476
   }
 }
 ```
+
 
 
 

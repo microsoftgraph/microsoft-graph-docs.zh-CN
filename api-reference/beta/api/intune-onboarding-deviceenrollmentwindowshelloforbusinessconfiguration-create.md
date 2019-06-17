@@ -4,12 +4,12 @@ description: 创建新的 deviceEnrollmentWindowsHelloForBusinessConfiguration �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6184bccb43171e0323ef60cf166878c8d1b3fa3f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8e932b69a1d4a83d9f01bcf734c491556f0480e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900221"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981186"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>创建 deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -69,6 +69,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去的 Pin 的功能。 必须在0和50之间设置此值 (包括这两个值), 并且用户的当前 PIN 包含在该计数中。 如果设置为 0, 则不存储以前的 Pin。 PIN 历史记录不会通过 PIN 重置来保留。|
 |pinExpirationInDays|Int32|控制在系统要求用户更改 PIN 之前可以使用 PIN 的时间段 (以天为单位)。 必须在0和730之间设置此值 (包括这两个值)。 如果设置为 0, 则用户的 PIN 永不过期|
 |enhancedBiometricsState|[启用](../resources/intune-shared-enablement.md)|控制在支持它的设备上使用反欺骗功能进行面部识别。 如果设置为 "禁用", 则不允许反欺骗功能。 如果设置为 "未配置", 则用户可以选择是否要使用反欺骗。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|securityKeyForSignIn|[启用](../resources/intune-shared-enablement.md)|登录的安全密钥提供远程开启/关闭 Windows Hello Sercurity Keyl 的容量。未配置将服从在 clinet 上完成的配置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 
@@ -82,7 +83,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 629
+Content-length: 667
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -101,7 +102,8 @@ Content-length: 629
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
 
@@ -110,7 +112,7 @@ Content-length: 629
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 801
+Content-Length: 839
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -132,9 +134,11 @@ Content-Length: 801
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
+
 
 
 

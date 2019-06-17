@@ -4,12 +4,12 @@ description: 此类包含 Mac OS 的合规性设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd811904d76eb2eaeb7871a1320394974aaa409c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd04fa6e03413e0ac32aa85ad9235fbc06410cb6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946040"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989222"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy 资源类型
 
@@ -115,6 +115,7 @@ ms.locfileid: "33946040"
   "firewallEnableStealthMode": true
 }
 ```
+
 
 
 

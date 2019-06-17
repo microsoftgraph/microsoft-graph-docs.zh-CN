@@ -4,12 +4,12 @@ description: 每个用户的每个设备违反受限制的应用配置文件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a519399cebd0af6cb5a0b9b0f1b75b346e24764
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 27477d0f12b130975abe42f8b994282e5de5bbcb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944780"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986695"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation 资源类型
 
@@ -73,6 +73,7 @@ ms.locfileid: "33944780"
   ]
 }
 ```
+
 
 
 

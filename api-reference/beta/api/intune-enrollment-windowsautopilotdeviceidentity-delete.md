@@ -4,12 +4,12 @@ description: 删除 windowsAutopilotDeviceIdentity。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 843159e7546959e871c99cb7085db5cd930e2985
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35747db88885af73d6016f15ec66f9888abd272b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908208"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982796"
 ---
 # <a name="delete-windowsautopilotdeviceidentity"></a>删除 windowsAutopilotDeviceIdentity
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

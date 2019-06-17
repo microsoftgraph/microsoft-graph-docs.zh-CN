@@ -4,12 +4,12 @@ description: Android 设备所有者播放存储模式类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d37f57dc2481e18871fca840499142eda30ab8fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e3f13a942c5b678367262400aeeea9c80ed705b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949001"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983804"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>androidDeviceOwnerPlayStoreMode 枚举类型
 
@@ -25,6 +25,7 @@ Android 设备所有者播放存储模式类型。
 |notConfigured|0|未配置|
 |allowList|1|只有策略中的应用程序可用, 并且不在该策略中的任何应用程序将自动从设备中卸载。|
 |阻止列表|双面|所有应用均可用, 并且任何不应在设备上的应用程序应在应用程序策略中显式标记为 "已阻止"。|
+
 
 
 

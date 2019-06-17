@@ -4,12 +4,12 @@ description: 读取 softwareUpdateStatusSummary 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62a3d60fb5387f21b26d91b954fc28be435d7421
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c673c4d91ea36812b906733b4879baf59ebe579e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921889"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976236"
 ---
 # <a name="get-softwareupdatestatussummary"></a>获取 softwareUpdateStatusSummary
 
@@ -89,6 +89,7 @@ Content-Length: 620
   }
 }
 ```
+
 
 
 

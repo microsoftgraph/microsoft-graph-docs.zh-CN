@@ -4,12 +4,12 @@ description: 用于标识展台配置的 Azure 目录组的类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4c0810cfeda4f620f6733a5b824cde8d0234f38
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fd67f482c0dcd71b871d642b10528a07e7803702
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943961"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994011"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "33943961"
   "groupName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 设备 Exchange 访问状态原因。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ecd0e44a03a894ef21dfd35a97ac4f1bc272705
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 10482c09f7aa7dcf22b6091e55e74f4bd53b0c60
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942099"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983020"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "33942099"
 |azureADBlockDueToAccessPolicy|日|由 AAD 访问策略吊销的访问状态|
 |compromisedPassword|个|通过密码被破解的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|位|由托管应用程序质询吊销的访问状态|
+
 
 
 

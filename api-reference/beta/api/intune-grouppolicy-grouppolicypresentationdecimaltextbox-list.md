@@ -4,12 +4,12 @@ description: 列出 groupPolicyPresentationDecimalTextBox 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21672e4eb45859c23f95ee60c8b61a516fde3562
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c2e2709c1c2be5945a77b33ab05ae91ecf75951f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904926"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985078"
 ---
 # <a name="list-grouppolicypresentationdecimaltextboxes"></a>列出 groupPolicyPresentationDecimalTextBoxes
 
@@ -81,6 +81,7 @@ Content-Length: 407
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 包含用于检测 Win32 应用程序的注册表属性
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cd9ce4223d18d001ca1d299f8dbcae31c6f99d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3013ca82a0545379c96cf832818783dedd4576f4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949526"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986101"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection 资源类型
 
@@ -53,6 +53,7 @@ ms.locfileid: "33949526"
   "detectionValue": "String"
 }
 ```
+
 
 
 

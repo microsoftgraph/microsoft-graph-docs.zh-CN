@@ -4,12 +4,12 @@ description: 包含适用于 Android for Work (AFW) 应用的属性和继承的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 636acfd98bf7c1a2c2a235aa05b48bbd190fd711
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 00ae8935cd225f1e3dc8621b74062e13fc6fc719
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950520"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991378"
 ---
 # <a name="androidforworkapp-resource-type"></a>androidForWorkApp 资源类型
 
@@ -110,6 +110,7 @@ ms.locfileid: "33950520"
   "appStoreUrl": "String"
 }
 ```
+
 
 
 

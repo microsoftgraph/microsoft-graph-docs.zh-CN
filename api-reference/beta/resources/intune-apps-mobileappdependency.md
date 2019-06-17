@@ -4,12 +4,12 @@ description: 描述两个移动应用之间的依赖关系类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf64854db4421028d4982145a860141a7dc91f61
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4a29f658a67c3930b1b693589dc9115c0c1ff185
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949932"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990258"
 ---
 # <a name="mobileappdependency-resource-type"></a>mobileAppDependency 资源类型
 
@@ -61,6 +61,7 @@ ms.locfileid: "33949932"
   "dependentAppCount": 1024
 }
 ```
+
 
 
 

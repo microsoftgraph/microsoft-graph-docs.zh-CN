@@ -4,12 +4,12 @@ description: 定义操作的结果在 MacOS Vpp 应用中, 包含 ActionResult �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad7ad1a2cdf8eabd67c1578c387b424f3e6f6c85
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd659ab07b5db81de4e8004461bc149c236ec576
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950219"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989152"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult 资源类型
 
@@ -56,6 +56,7 @@ ms.locfileid: "33950219"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

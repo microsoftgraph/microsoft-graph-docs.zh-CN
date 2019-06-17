@@ -4,12 +4,12 @@ description: 包含用于向组分配应用程序设置配置的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c01dfd8da7d241719ca873fa910338a286f16dbd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3883c8e088a57a0709f47deea1c3210049dab301
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949911"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991833"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>mobileAppProvisioningConfigGroupAssignment 资源类型
 
@@ -52,6 +52,7 @@ ms.locfileid: "33949911"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

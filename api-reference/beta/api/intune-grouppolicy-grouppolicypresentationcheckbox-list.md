@@ -4,12 +4,12 @@ description: 列出 groupPolicyPresentationCheckBox 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6b1945c9e6280ad7e9c269dcf14372d1212ee5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a9d0d09e435c9aa2b72c0a3ba2c8fcc64d7942d4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904984"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985008"
 ---
 # <a name="list-grouppolicypresentationcheckboxes"></a>列出 groupPolicyPresentationCheckBoxes
 
@@ -76,6 +76,7 @@ Content-Length: 293
   ]
 }
 ```
+
 
 
 

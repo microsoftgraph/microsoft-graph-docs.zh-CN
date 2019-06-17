@@ -4,12 +4,12 @@ description: 邮件模板的品牌选项。 已在 Intune 管理员控制台中�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97684092c9f704ef4d477b153e4168190f588071
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3056c0965506637a9d16d0d2b52b981b424d004c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940475"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994200"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940475"
 |includeCompanyLogo|1|包括公司徽标。|
 |includeCompanyName|双面|包括公司名称。|
 |includeContactInformation|4|包含联系人信息。|
+
 
 
 

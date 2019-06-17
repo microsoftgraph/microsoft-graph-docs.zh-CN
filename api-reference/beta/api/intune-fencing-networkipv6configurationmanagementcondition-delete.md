@@ -4,12 +4,12 @@ description: 删除 networkIPv6ConfigurationManagementCondition。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91ae27033bbd4ce81ec29b481d57b8e63e9e60f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f76659ad7df5f4b7c137878dc13037a671e64de9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905278"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984350"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>删除 networkIPv6ConfigurationManagementCondition
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 一类应用程序的基类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93884a53ce20f67fadbd60fa2a8f180aba8fa826
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4dc6c54c9b788ae3456017fc0be63c636d980af8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944087"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993962"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "33944087"
   "autoLaunch": true
 }
 ```
+
 
 
 

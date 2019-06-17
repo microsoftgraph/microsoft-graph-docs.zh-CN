@@ -4,12 +4,12 @@ description: 更新 intuneBrandingProfileAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1673955a1aa96d84604db512e85acc5605d1641f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8f20a2fee2d4a6ddf595d7d75e34e000fd3a139e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898866"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990538"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>更新 intuneBrandingProfileAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 220
   }
 }
 ```
+
 
 
 

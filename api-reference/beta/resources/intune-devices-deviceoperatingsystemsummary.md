@@ -4,12 +4,12 @@ description: 设备操作系统摘要。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d53d9fdfcf3dfcc86f40ccadb3d71bdbd6b8686b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b55459189f86e298aa219e0f00d33df8e0625e68
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942036"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995250"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
@@ -50,6 +50,7 @@ ms.locfileid: "33942036"
   "unknownCount": 1024
 }
 ```
+
 
 
 

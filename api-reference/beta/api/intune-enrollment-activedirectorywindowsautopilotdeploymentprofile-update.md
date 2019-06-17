@@ -4,12 +4,12 @@ description: 更新 activeDirectoryWindowsAutopilotDeploymentProfile 对象的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c736c465ce3b78f4cd79170b6a1f6d7718ae6f9d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0b2a45e0fa86e54aef6e42503866d19fc3d6a90c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908978"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979142"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>更新 activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -157,6 +157,7 @@ Content-Length: 1339
   ]
 }
 ```
+
 
 
 

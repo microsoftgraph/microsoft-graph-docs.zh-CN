@@ -4,12 +4,12 @@ description: DefenderSecurityCenterNotificationsFromApp 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b356297ae68482af6d61e2da18cd5c50319d08f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 375a47439c9480d67e27fb14f093d1a5a1011a97
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947328"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979765"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>defenderSecurityCenterNotificationsFromAppType 枚举类型
 
@@ -25,6 +25,7 @@ DefenderSecurityCenterNotificationsFromApp 的可能值
 |notConfigured|0|未配置|
 |blockNoncriticalNotifications|1|阻止非关键通知|
 |blockAllNotifications|双面|阻止所有通知|
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 deviceAndAppManagementRoleDefinition。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a75a4787bd664e3592afdd21cfd460c04aee23c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12a135da74835ab05b11ace9500305e1cf3ca35c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899618"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988690"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>删除 deviceAndAppManagementRoleDefinition
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

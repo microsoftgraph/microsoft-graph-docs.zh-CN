@@ -4,12 +4,12 @@ description: 创建新的 managedAppOperation 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83fe69a76c4747d321bc2a52764bde65a2590eac
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b79845a9210fd34bb585196fd37fcd189d34f19a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903668"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985904"
 ---
 # <a name="create-managedappoperation"></a>创建 managedAppOperation
 
@@ -94,6 +94,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

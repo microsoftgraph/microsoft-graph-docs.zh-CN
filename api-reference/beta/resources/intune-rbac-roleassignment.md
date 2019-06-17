@@ -4,12 +4,12 @@ description: 角色分配资源。 角色分配将角色定义与成员和作用
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d2ad221405546aad502ec71a4b7403caa9306e0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 868dd3fed4c745d97e96a5aee4c3dfa5cb16a157
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940076"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993541"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 
@@ -66,6 +66,7 @@ ms.locfileid: "33940076"
   ]
 }
 ```
+
 
 
 

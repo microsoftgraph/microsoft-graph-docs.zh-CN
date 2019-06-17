@@ -4,12 +4,12 @@ description: Windows management 应用运行状况状态实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b443c95b363e926777150013e20bef4bc8bc602d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f423521ddd6e00fd887195d841c1e50518d2c428
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942169"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983966"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState 资源类型
 
@@ -60,6 +60,7 @@ Windows management 应用运行状况状态实体。
   "deviceOSVersion": "String"
 }
 ```
+
 
 
 

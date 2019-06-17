@@ -4,12 +4,12 @@ description: 证书有效期限选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ddc87957a50af40991a6610cc29536f42c49d14f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f95dece7c4b7404dc12f60a8848b964f5d30cc13
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947402"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986387"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>certificateValidityPeriodScale 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947402"
 |之前|0|天数。|
 |月度|1|月数。|
 |年内|双面|年。|
+
 
 
 

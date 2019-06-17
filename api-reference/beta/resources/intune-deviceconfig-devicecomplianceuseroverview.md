@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed7a91e9595d776151ceffe282968a82a0cebdb2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 360a823b5d73e1bb0b20f1f6f1b59c9cb4954e84
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947090"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992855"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>deviceComplianceUserOverview 资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "33947090"
   "configurationVersion": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 windowsAutopilotSettings 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41c7b8f00bdd3adbb7f2b1de1ad72a62676b8af5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 34f8a380744312e4132b36d796653d1925884eae
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908138"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982705"
 ---
 # <a name="update-windowsautopilotsettings"></a>更新 windowsAutopilotSettings
 
@@ -92,6 +92,7 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
+
 
 
 

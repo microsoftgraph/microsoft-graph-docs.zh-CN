@@ -4,12 +4,12 @@ description: 数据共享同意信息。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a062b44b24eee6a33e98be0fb3400522b4d1031
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1a221b420199d801e084746ed058b3f6dc1f53bf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942967"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983183"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent 资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "33942967"
   "grantedByUserId": "String"
 }
 ```
+
 
 
 

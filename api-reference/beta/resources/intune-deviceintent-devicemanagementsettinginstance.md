@@ -4,12 +4,12 @@ description: 设置实例的基本类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b780fad1df833a1a5d431835364493ac5afc3c6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 628ca393006666f7a655cf45832784e88f2a4d01
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943331"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984490"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>deviceManagementSettingInstance 资源类型
 
@@ -51,6 +51,7 @@ ms.locfileid: "33943331"
   "valueJson": "String"
 }
 ```
+
 
 
 

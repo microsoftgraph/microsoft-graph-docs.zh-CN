@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c066e87066a766fdef40fc75caa8818a973de4f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8190071f5ed6e239c2452bc53d802125b71339f5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943044"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983363"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "33943044"
   ]
 }
 ```
+
 
 
 
