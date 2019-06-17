@@ -4,37 +4,37 @@ description: MacOS 应用程序所需的最低操作系统。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 596b4e6de349528d6e6d5d5524918de084936417
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12be5728153e08a0e6f267c0773b9c6fef2cff8a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950226"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957687"
 ---
-# <a name="macosminimumoperatingsystem-resource-type"></a><span data-ttu-id="14c57-103">macOSMinimumOperatingSystem 资源类型</span><span class="sxs-lookup"><span data-stu-id="14c57-103">macOSMinimumOperatingSystem resource type</span></span>
+# <a name="macosminimumoperatingsystem-resource-type"></a><span data-ttu-id="f9f9c-103">macOSMinimumOperatingSystem 资源类型</span><span class="sxs-lookup"><span data-stu-id="f9f9c-103">macOSMinimumOperatingSystem resource type</span></span>
 
-> <span data-ttu-id="14c57-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="14c57-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f9f9c-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="14c57-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="14c57-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f9f9c-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="14c57-106">MacOS 应用程序所需的最低操作系统。</span><span class="sxs-lookup"><span data-stu-id="14c57-106">The minimum operating system required for a MacOS app.</span></span>
+<span data-ttu-id="f9f9c-106">MacOS 应用程序所需的最低操作系统。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-106">The minimum operating system required for a MacOS app.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="14c57-107">属性</span><span class="sxs-lookup"><span data-stu-id="14c57-107">Properties</span></span>
-|<span data-ttu-id="14c57-108">属性</span><span class="sxs-lookup"><span data-stu-id="14c57-108">Property</span></span>|<span data-ttu-id="14c57-109">类型</span><span class="sxs-lookup"><span data-stu-id="14c57-109">Type</span></span>|<span data-ttu-id="14c57-110">说明</span><span class="sxs-lookup"><span data-stu-id="14c57-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f9f9c-107">属性</span><span class="sxs-lookup"><span data-stu-id="f9f9c-107">Properties</span></span>
+|<span data-ttu-id="f9f9c-108">属性</span><span class="sxs-lookup"><span data-stu-id="f9f9c-108">Property</span></span>|<span data-ttu-id="f9f9c-109">类型</span><span class="sxs-lookup"><span data-stu-id="f9f9c-109">Type</span></span>|<span data-ttu-id="f9f9c-110">说明</span><span class="sxs-lookup"><span data-stu-id="f9f9c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="14c57-111">v10_7</span><span class="sxs-lookup"><span data-stu-id="14c57-111">v10_7</span></span>|<span data-ttu-id="14c57-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-112">Boolean</span></span>|<span data-ttu-id="14c57-113">Mac OS 10.7 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-113">Mac OS 10.7 or later.</span></span>|
-|<span data-ttu-id="14c57-114">v10_8</span><span class="sxs-lookup"><span data-stu-id="14c57-114">v10_8</span></span>|<span data-ttu-id="14c57-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-115">Boolean</span></span>|<span data-ttu-id="14c57-116">Mac OS 10.8 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-116">Mac OS 10.8 or later.</span></span>|
-|<span data-ttu-id="14c57-117">v10_9</span><span class="sxs-lookup"><span data-stu-id="14c57-117">v10_9</span></span>|<span data-ttu-id="14c57-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-118">Boolean</span></span>|<span data-ttu-id="14c57-119">Mac OS 10.9 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-119">Mac OS 10.9 or later.</span></span>|
-|<span data-ttu-id="14c57-120">v10_10</span><span class="sxs-lookup"><span data-stu-id="14c57-120">v10_10</span></span>|<span data-ttu-id="14c57-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-121">Boolean</span></span>|<span data-ttu-id="14c57-122">Mac OS 10.10 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-122">Mac OS 10.10 or later.</span></span>|
-|<span data-ttu-id="14c57-123">v10_11</span><span class="sxs-lookup"><span data-stu-id="14c57-123">v10_11</span></span>|<span data-ttu-id="14c57-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-124">Boolean</span></span>|<span data-ttu-id="14c57-125">Mac OS 10.11 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-125">Mac OS 10.11 or later.</span></span>|
-|<span data-ttu-id="14c57-126">v10_12</span><span class="sxs-lookup"><span data-stu-id="14c57-126">v10_12</span></span>|<span data-ttu-id="14c57-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-127">Boolean</span></span>|<span data-ttu-id="14c57-128">Mac OS 10.12 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-128">Mac OS 10.12 or later.</span></span>|
-|<span data-ttu-id="14c57-129">v10_13</span><span class="sxs-lookup"><span data-stu-id="14c57-129">v10_13</span></span>|<span data-ttu-id="14c57-130">Boolean</span><span class="sxs-lookup"><span data-stu-id="14c57-130">Boolean</span></span>|<span data-ttu-id="14c57-131">Mac OS 10.13 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="14c57-131">Mac OS 10.13 or later.</span></span>|
+|<span data-ttu-id="f9f9c-111">v10_7</span><span class="sxs-lookup"><span data-stu-id="f9f9c-111">v10_7</span></span>|<span data-ttu-id="f9f9c-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-112">Boolean</span></span>|<span data-ttu-id="f9f9c-113">Mac OS 10.7 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-113">Mac OS 10.7 or later.</span></span>|
+|<span data-ttu-id="f9f9c-114">v10_8</span><span class="sxs-lookup"><span data-stu-id="f9f9c-114">v10_8</span></span>|<span data-ttu-id="f9f9c-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-115">Boolean</span></span>|<span data-ttu-id="f9f9c-116">Mac OS 10.8 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-116">Mac OS 10.8 or later.</span></span>|
+|<span data-ttu-id="f9f9c-117">v10_9</span><span class="sxs-lookup"><span data-stu-id="f9f9c-117">v10_9</span></span>|<span data-ttu-id="f9f9c-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-118">Boolean</span></span>|<span data-ttu-id="f9f9c-119">Mac OS 10.9 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-119">Mac OS 10.9 or later.</span></span>|
+|<span data-ttu-id="f9f9c-120">v10_10</span><span class="sxs-lookup"><span data-stu-id="f9f9c-120">v10_10</span></span>|<span data-ttu-id="f9f9c-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-121">Boolean</span></span>|<span data-ttu-id="f9f9c-122">Mac OS 10.10 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-122">Mac OS 10.10 or later.</span></span>|
+|<span data-ttu-id="f9f9c-123">v10_11</span><span class="sxs-lookup"><span data-stu-id="f9f9c-123">v10_11</span></span>|<span data-ttu-id="f9f9c-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-124">Boolean</span></span>|<span data-ttu-id="f9f9c-125">Mac OS 10.11 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-125">Mac OS 10.11 or later.</span></span>|
+|<span data-ttu-id="f9f9c-126">v10_12</span><span class="sxs-lookup"><span data-stu-id="f9f9c-126">v10_12</span></span>|<span data-ttu-id="f9f9c-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-127">Boolean</span></span>|<span data-ttu-id="f9f9c-128">Mac OS 10.12 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-128">Mac OS 10.12 or later.</span></span>|
+|<span data-ttu-id="f9f9c-129">v10_13</span><span class="sxs-lookup"><span data-stu-id="f9f9c-129">v10_13</span></span>|<span data-ttu-id="f9f9c-130">Boolean</span><span class="sxs-lookup"><span data-stu-id="f9f9c-130">Boolean</span></span>|<span data-ttu-id="f9f9c-131">Mac OS 10.13 或更高版本。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-131">Mac OS 10.13 or later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="14c57-132">关系</span><span class="sxs-lookup"><span data-stu-id="14c57-132">Relationships</span></span>
-<span data-ttu-id="14c57-133">无</span><span class="sxs-lookup"><span data-stu-id="14c57-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f9f9c-132">关系</span><span class="sxs-lookup"><span data-stu-id="f9f9c-132">Relationships</span></span>
+<span data-ttu-id="f9f9c-133">无</span><span class="sxs-lookup"><span data-stu-id="f9f9c-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="14c57-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="14c57-134">JSON Representation</span></span>
-<span data-ttu-id="14c57-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="14c57-135">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f9f9c-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f9f9c-134">JSON Representation</span></span>
+<span data-ttu-id="f9f9c-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f9f9c-135">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem"
@@ -52,6 +52,7 @@ ms.locfileid: "33950226"
   "v10_13": true
 }
 ```
+
 
 
 

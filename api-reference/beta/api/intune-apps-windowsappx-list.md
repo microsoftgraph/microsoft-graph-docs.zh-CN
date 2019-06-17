@@ -4,31 +4,31 @@ description: 列出 windowsAppX 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35e0a900c260105a29a60ac35ba83a50add467fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1c0886f000ed4ecbbb339c6f74eda979c64f27f9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934738"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973206"
 ---
-# <a name="list-windowsappxs"></a><span data-ttu-id="cf644-103">列出 windowsAppXs</span><span class="sxs-lookup"><span data-stu-id="cf644-103">List windowsAppXs</span></span>
+# <a name="list-windowsappxs"></a><span data-ttu-id="15fcf-103">列出 windowsAppXs</span><span class="sxs-lookup"><span data-stu-id="15fcf-103">List windowsAppXs</span></span>
 
-> <span data-ttu-id="cf644-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cf644-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="15fcf-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="15fcf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cf644-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cf644-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="15fcf-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="15fcf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cf644-106">列出[windowsAppX](../resources/intune-apps-windowsappx.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="cf644-106">List properties and relationships of the [windowsAppX](../resources/intune-apps-windowsappx.md) objects.</span></span>
+<span data-ttu-id="15fcf-106">列出[windowsAppX](../resources/intune-apps-windowsappx.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="15fcf-106">List properties and relationships of the [windowsAppX](../resources/intune-apps-windowsappx.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cf644-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="cf644-107">Prerequisites</span></span>
-<span data-ttu-id="cf644-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cf644-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="15fcf-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="15fcf-107">Prerequisites</span></span>
+<span data-ttu-id="15fcf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="15fcf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cf644-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="cf644-110">Permission type</span></span>|<span data-ttu-id="cf644-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="cf644-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="15fcf-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="15fcf-110">Permission type</span></span>|<span data-ttu-id="15fcf-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="15fcf-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cf644-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cf644-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cf644-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf644-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="cf644-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cf644-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cf644-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cf644-115">Not supported.</span></span>|
-|<span data-ttu-id="cf644-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="cf644-116">Application</span></span>|<span data-ttu-id="cf644-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="cf644-117">Not supported.</span></span>|
+|<span data-ttu-id="15fcf-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="15fcf-112">Delegated (work or school account)</span></span>|<span data-ttu-id="15fcf-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="15fcf-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="15fcf-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="15fcf-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="15fcf-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="15fcf-115">Not supported.</span></span>|
+|<span data-ttu-id="15fcf-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="15fcf-116">Application</span></span>|<span data-ttu-id="15fcf-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="15fcf-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cf644-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cf644-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15fcf-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="15fcf-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,32 @@ ms.locfileid: "33934738"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cf644-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="cf644-119">Request headers</span></span>
-|<span data-ttu-id="cf644-120">标头</span><span class="sxs-lookup"><span data-stu-id="cf644-120">Header</span></span>|<span data-ttu-id="cf644-121">值</span><span class="sxs-lookup"><span data-stu-id="cf644-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15fcf-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="15fcf-119">Request headers</span></span>
+|<span data-ttu-id="15fcf-120">标头</span><span class="sxs-lookup"><span data-stu-id="15fcf-120">Header</span></span>|<span data-ttu-id="15fcf-121">值</span><span class="sxs-lookup"><span data-stu-id="15fcf-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cf644-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cf644-122">Authorization</span></span>|<span data-ttu-id="cf644-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="cf644-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cf644-124">接受</span><span class="sxs-lookup"><span data-stu-id="cf644-124">Accept</span></span>|<span data-ttu-id="cf644-125">application/json</span><span class="sxs-lookup"><span data-stu-id="cf644-125">application/json</span></span>|
+|<span data-ttu-id="15fcf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="15fcf-122">Authorization</span></span>|<span data-ttu-id="15fcf-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="15fcf-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="15fcf-124">接受</span><span class="sxs-lookup"><span data-stu-id="15fcf-124">Accept</span></span>|<span data-ttu-id="15fcf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="15fcf-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cf644-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cf644-126">Request body</span></span>
-<span data-ttu-id="cf644-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cf644-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15fcf-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="15fcf-126">Request body</span></span>
+<span data-ttu-id="15fcf-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="15fcf-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cf644-128">响应</span><span class="sxs-lookup"><span data-stu-id="cf644-128">Response</span></span>
-<span data-ttu-id="cf644-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsAppX](../resources/intune-apps-windowsappx.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="cf644-129">If successful, this method returns a `200 OK` response code and a collection of [windowsAppX](../resources/intune-apps-windowsappx.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="15fcf-128">响应</span><span class="sxs-lookup"><span data-stu-id="15fcf-128">Response</span></span>
+<span data-ttu-id="15fcf-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsAppX](../resources/intune-apps-windowsappx.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="15fcf-129">If successful, this method returns a `200 OK` response code and a collection of [windowsAppX](../resources/intune-apps-windowsappx.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cf644-130">示例</span><span class="sxs-lookup"><span data-stu-id="cf644-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="15fcf-130">示例</span><span class="sxs-lookup"><span data-stu-id="15fcf-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cf644-131">请求</span><span class="sxs-lookup"><span data-stu-id="cf644-131">Request</span></span>
-<span data-ttu-id="cf644-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cf644-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="15fcf-131">请求</span><span class="sxs-lookup"><span data-stu-id="15fcf-131">Request</span></span>
+<span data-ttu-id="15fcf-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="15fcf-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="cf644-133">响应</span><span class="sxs-lookup"><span data-stu-id="cf644-133">Response</span></span>
-<span data-ttu-id="cf644-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cf644-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="15fcf-133">响应</span><span class="sxs-lookup"><span data-stu-id="15fcf-133">Response</span></span>
+<span data-ttu-id="15fcf-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="15fcf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1748
+Content-Length: 1802
 
 {
   "value": [
@@ -108,13 +108,16 @@ Content-Length: 1748
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       },
       "identityVersion": "Identity Version value"
     }
   ]
 }
 ```
+
 
 
 

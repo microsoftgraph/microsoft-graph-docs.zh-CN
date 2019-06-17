@@ -4,33 +4,33 @@ description: 网络使用规则允许企业指定托管应用使用网络的方�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7d11b8a7591d2fce03b3f8a023e9ef90fab4f1b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2dc693eb993e6740098ab90dcae53214d8af4d0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946922"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995691"
 ---
-# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="aee40-103">iosNetworkUsageRule 资源类型</span><span class="sxs-lookup"><span data-stu-id="aee40-103">iosNetworkUsageRule resource type</span></span>
+# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="339ae-103">iosNetworkUsageRule 资源类型</span><span class="sxs-lookup"><span data-stu-id="339ae-103">iosNetworkUsageRule resource type</span></span>
 
-> <span data-ttu-id="aee40-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="aee40-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="339ae-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="339ae-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="aee40-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="aee40-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="339ae-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="339ae-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="aee40-106">网络使用规则允许企业指定托管应用使用网络的方式，例如手机数据网络。</span><span class="sxs-lookup"><span data-stu-id="aee40-106">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
+<span data-ttu-id="339ae-106">网络使用规则允许企业指定托管应用使用网络的方式，例如手机数据网络。</span><span class="sxs-lookup"><span data-stu-id="339ae-106">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="aee40-107">属性</span><span class="sxs-lookup"><span data-stu-id="aee40-107">Properties</span></span>
-|<span data-ttu-id="aee40-108">属性</span><span class="sxs-lookup"><span data-stu-id="aee40-108">Property</span></span>|<span data-ttu-id="aee40-109">类型</span><span class="sxs-lookup"><span data-stu-id="aee40-109">Type</span></span>|<span data-ttu-id="aee40-110">说明</span><span class="sxs-lookup"><span data-stu-id="aee40-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="339ae-107">属性</span><span class="sxs-lookup"><span data-stu-id="339ae-107">Properties</span></span>
+|<span data-ttu-id="339ae-108">属性</span><span class="sxs-lookup"><span data-stu-id="339ae-108">Property</span></span>|<span data-ttu-id="339ae-109">类型</span><span class="sxs-lookup"><span data-stu-id="339ae-109">Type</span></span>|<span data-ttu-id="339ae-110">说明</span><span class="sxs-lookup"><span data-stu-id="339ae-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aee40-111">managedApps</span><span class="sxs-lookup"><span data-stu-id="aee40-111">managedApps</span></span>|<span data-ttu-id="aee40-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="aee40-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="aee40-113">要应用此规则的托管应用的相关信息。</span><span class="sxs-lookup"><span data-stu-id="aee40-113">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="aee40-114">该集合最多可包含 500 个元素。</span><span class="sxs-lookup"><span data-stu-id="aee40-114">This collection can contain a maximum of 500 elements.</span></span>|
-|<span data-ttu-id="aee40-115">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="aee40-115">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="aee40-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="aee40-116">Boolean</span></span>|<span data-ttu-id="aee40-117">如果设置为 true，则在漫游时将不允许相应的托管应用使用手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="aee40-117">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
-|<span data-ttu-id="aee40-118">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="aee40-118">cellularDataBlocked</span></span>|<span data-ttu-id="aee40-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="aee40-119">Boolean</span></span>|<span data-ttu-id="aee40-120">如果设置为 true，则在任何时间均不允许相应的托管应用使用手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="aee40-120">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
+|<span data-ttu-id="339ae-111">managedApps</span><span class="sxs-lookup"><span data-stu-id="339ae-111">managedApps</span></span>|<span data-ttu-id="339ae-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="339ae-112">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="339ae-113">要应用此规则的托管应用的相关信息。</span><span class="sxs-lookup"><span data-stu-id="339ae-113">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="339ae-114">该集合最多可包含 500 个元素。</span><span class="sxs-lookup"><span data-stu-id="339ae-114">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="339ae-115">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="339ae-115">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="339ae-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="339ae-116">Boolean</span></span>|<span data-ttu-id="339ae-117">如果设置为 true，则在漫游时将不允许相应的托管应用使用手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="339ae-117">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
+|<span data-ttu-id="339ae-118">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="339ae-118">cellularDataBlocked</span></span>|<span data-ttu-id="339ae-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="339ae-119">Boolean</span></span>|<span data-ttu-id="339ae-120">如果设置为 true，则在任何时间均不允许相应的托管应用使用手机网络数据。</span><span class="sxs-lookup"><span data-stu-id="339ae-120">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="aee40-121">关系</span><span class="sxs-lookup"><span data-stu-id="aee40-121">Relationships</span></span>
-<span data-ttu-id="aee40-122">无</span><span class="sxs-lookup"><span data-stu-id="aee40-122">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="339ae-121">关系</span><span class="sxs-lookup"><span data-stu-id="339ae-121">Relationships</span></span>
+<span data-ttu-id="339ae-122">无</span><span class="sxs-lookup"><span data-stu-id="339ae-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="aee40-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aee40-123">JSON Representation</span></span>
-<span data-ttu-id="aee40-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aee40-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="339ae-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="339ae-123">JSON Representation</span></span>
+<span data-ttu-id="339ae-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="339ae-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
@@ -52,6 +52,7 @@ ms.locfileid: "33946922"
   "cellularDataBlocked": true
 }
 ```
+
 
 
 
