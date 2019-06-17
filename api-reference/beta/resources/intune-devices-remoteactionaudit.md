@@ -4,12 +4,12 @@ description: 在属于某个租户的设备上启动的远程操作的报告。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad78cbc0792ffce39857b8eb6814cf8bb8f6bdb7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: daaf42914d18e2016c7db566f9a91bd4037b10a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941917"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963882"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "33941917"
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[弃用\]请改用 InitiatedByUserPrincipalName。|
 |initiatedByUserPrincipalName|String|启动设备操作的用户的格式为 UPN。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可取值为：`unknown`、`factoryReset`、`removeCompanyData`、`resetPasscode`、`remoteLock`、`enableLostMode`、`disableLostMode`、`locateDevice`、`rebootNow`、`recoverPasscode`、`cleanWindowsDevice`、`logoutSharedAppleDeviceActiveUser`、`quickScan`、`fullScan`、`windowsDefenderUpdateSignatures`、`factoryResetKeepEnrollmentData`、`updateDeviceAccount`、`automaticRedeployment`、`shutDown`、`rotateFileVaultKey`、`getFileVaultKey`。|
 |requestDateTime|DateTimeOffset|发出操作的时间, 以 UTC 表示。|
 |deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
@@ -66,6 +66,7 @@ ms.locfileid: "33941917"
   "actionState": "String"
 }
 ```
+
 
 
 

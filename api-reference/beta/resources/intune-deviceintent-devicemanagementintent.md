@@ -4,12 +4,12 @@ description: 表示将设置应用于设备的意图的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3b840a8865545080370c5bfc8c0471f0137c746e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943442"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964071"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "33943442"
 |[updateSettings 操作](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|无|尚未记录|
 |[migrateToTemplate 操作](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|无|尚未记录|
 |[分配操作](../api/intune-deviceintent-devicemanagementintent-assign.md)|无|尚未记录|
+|[compare 函数](../api/intune-deviceintent-devicemanagementintent-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)集合|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -40,6 +41,7 @@ ms.locfileid: "33943442"
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|创建此目的的模板的 ID (如果有)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -69,9 +71,13 @@ ms.locfileid: "33943442"
   "description": "String",
   "isAssigned": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "templateId": "String"
+  "templateId": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
+
 
 
 

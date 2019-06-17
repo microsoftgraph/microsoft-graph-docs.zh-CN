@@ -4,12 +4,12 @@ description: 删除 macOSDeviceFeaturesConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 993608f32169583d5b519773066a94e775a7cbf5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2a0dc8ecf0cc053165aa77078d5afa43e23ebfea
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922829"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963350"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>删除 macOSDeviceFeaturesConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

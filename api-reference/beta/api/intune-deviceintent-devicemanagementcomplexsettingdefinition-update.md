@@ -4,12 +4,12 @@ description: 更新 deviceManagementComplexSettingDefinition 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa0b949c03941e52e6c4cedc73bb1e8dcbc07e9b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76b13443806bf6a30fa2fd6f2e6d809dc19de2fa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916533"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960697"
 ---
 # <a name="update-devicemanagementcomplexsettingdefinition"></a>更新 deviceManagementComplexSettingDefinition
 
@@ -149,6 +149,7 @@ Content-Length: 857
   ]
 }
 ```
+
 
 
 

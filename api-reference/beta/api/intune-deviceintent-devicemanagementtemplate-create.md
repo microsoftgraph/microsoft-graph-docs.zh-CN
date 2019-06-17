@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementTemplate 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 102fa662dd9cf6eef9a4949f8dc9250e69cfadbf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f0298ba9d99bd00db8e10e7b5b2afb79a0c7e3ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915984"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959766"
 ---
 # <a name="create-devicemanagementtemplate"></a>创建 deviceManagementTemplate
 
@@ -57,6 +57,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |versionInfo|String|模板的版本信息|
 |isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
 |intentCount|Int32|从此模板创建的意向数。|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`。|
+|publishedDateTime|DateTimeOffset|发布模板时|
 
 
 
@@ -70,7 +72,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 232
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -78,7 +80,9 @@ Content-length: 232
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
 
@@ -87,7 +91,7 @@ Content-length: 232
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -96,9 +100,12 @@ Content-Length: 281
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

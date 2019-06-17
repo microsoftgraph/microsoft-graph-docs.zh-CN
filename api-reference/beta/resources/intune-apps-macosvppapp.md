@@ -4,12 +4,12 @@ description: 包含 MacOS Volume 采购计划 (VPP) 应用的属性和继承的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d059a1456eaf7c5003249f2c033cd9b1f0179d59
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 61247bad9fcae8fde14cb92adb8909efcb09e889
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950233"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957750"
 ---
 # <a name="macosvppapp-resource-type"></a>macOsVppApp 资源类型
 
@@ -142,6 +142,7 @@ ms.locfileid: "33950233"
   ]
 }
 ```
+
 
 
 

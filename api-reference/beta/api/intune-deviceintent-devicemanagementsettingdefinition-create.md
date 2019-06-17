@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementSettingDefinition 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9062c48fbf3be9ab33f8abc3f7ecebc40eeef0b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0e64f7d495214fff58ecd5db3a7b47987ead4c42
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915667"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959948"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>创建 deviceManagementSettingDefinition
 
@@ -142,6 +142,7 @@ Content-Length: 777
   ]
 }
 ```
+
 
 
 
