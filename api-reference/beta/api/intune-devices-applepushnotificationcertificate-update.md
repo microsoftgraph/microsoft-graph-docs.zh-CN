@@ -4,12 +4,12 @@ description: 更新 applePushNotificationCertificate 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9446dafefaa98a421bcc11148dc6f651a6806eae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0038de8c351ff0a26443987d05b5e92025fef316
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910558"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959367"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -103,6 +103,7 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
+
 
 
 

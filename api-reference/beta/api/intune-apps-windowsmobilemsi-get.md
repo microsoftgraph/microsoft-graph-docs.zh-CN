@@ -4,12 +4,12 @@ description: 读取 windowsMobileMSI 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37be3720ce0e4be4ac1036ec991da705181a31ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 885d36321b05c8e0771c8c75d0cfce85d1c81837
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934682"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973143"
 ---
 # <a name="get-windowsmobilemsi"></a>获取 windowsMobileMSI
 
@@ -108,6 +108,7 @@ Content-Length: 1325
   }
 }
 ```
+
 
 
 

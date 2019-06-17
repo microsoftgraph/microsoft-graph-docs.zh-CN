@@ -4,12 +4,12 @@ description: Wi-fi 安全类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85c317706bb953fdeef202e4df9ec114944a7630
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2245069bfda8ced7c16d23465d510c98f1bc5eef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944437"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991532"
 ---
 # <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType 枚举类型
 
@@ -28,6 +28,7 @@ Wi-fi 安全类型。
 |wep|第三章|WEP 加密。|
 |wpa2Personal|4|WPA2-个人。|
 |wpa2Enterprise|5|WPA2-企业。 必须使用 WindowsWifiEnterpriseEAPConfiguration 类型配置企业选项。|
+
 
 
 

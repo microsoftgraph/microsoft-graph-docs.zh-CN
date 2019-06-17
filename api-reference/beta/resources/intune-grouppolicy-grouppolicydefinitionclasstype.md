@@ -4,12 +4,12 @@ description: 组策略定义类类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a8a59cb8838b74c4bed0c005f8928b9770b770a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 348a308df51ffd752f185fd326e1cdbfad13029c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941140"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975887"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "33941140"
 |:---|:---|:---|
 |user|0|标识 "用户配置" 节点下的策略设置的位置。|
 |机器码|1|标识 "计算机配置" 节点下的策略设置的位置。|
+
 
 
 

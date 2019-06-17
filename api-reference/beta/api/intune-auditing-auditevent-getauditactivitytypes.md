@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 685cf4982677d1cf572778c84badcb7184723e96
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a2373d83b82d3fba05078a9323b7018f9c56be93
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934402"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972583"
 ---
 # <a name="getauditactivitytypes-function"></a>getAuditActivityTypes 函数
 
@@ -77,6 +77,7 @@ Content-Length: 61
   ]
 }
 ```
+
 
 
 

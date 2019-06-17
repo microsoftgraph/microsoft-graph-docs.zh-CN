@@ -4,12 +4,12 @@ description: 删除 windowsStoreApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42d9a55382711cdce163e71db9f9e0e3907a4ef8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b38ce330de3d5018f726af47a104955a33de1009
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934619"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972842"
 ---
 # <a name="delete-windowsstoreapp"></a>删除 windowsStoreApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

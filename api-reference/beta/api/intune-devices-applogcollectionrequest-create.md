@@ -4,12 +4,12 @@ description: 创建新的 appLogCollectionRequest 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1308bc68e8a3bd17ab5fc9ac9262395c92f2fda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 83a4c20b64ff0d0a39b4bb736f8f89864df2f6e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910607"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959332"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
 
@@ -99,6 +99,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

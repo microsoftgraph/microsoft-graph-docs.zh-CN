@@ -4,12 +4,12 @@ description: 删除 detectedApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70cfc39d871fbbac39c168b865cf8658a4ab214c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0d896e77e6eb58d72c53c166241324d23885d586
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909958"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959164"
 ---
 # <a name="delete-detectedapp"></a>删除 detectedApp
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedA
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

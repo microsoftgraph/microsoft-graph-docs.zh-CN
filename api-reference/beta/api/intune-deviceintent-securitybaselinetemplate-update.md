@@ -4,12 +4,12 @@ description: 更新 securityBaselineTemplate 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dfd292a234eafca5ebacd3757566ff2675da6f0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f31343da2c7a5be98de891f289eeba044a31ed5b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33911705"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959409"
 ---
 # <a name="update-securitybaselinetemplate"></a>更新 securityBaselineTemplate
 
@@ -57,6 +57,8 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 |versionInfo|String|模板的版本信息继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |intentCount|Int32|从此模板创建的意向数。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`。|
+|publishedDateTime|DateTimeOffset|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承发布模板时|
 
 
 
@@ -70,7 +72,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 232
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
@@ -78,7 +80,9 @@ Content-length: 232
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
 
@@ -87,7 +91,7 @@ Content-length: 232
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
@@ -96,9 +100,12 @@ Content-Length: 281
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 
