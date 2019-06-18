@@ -4,18 +4,18 @@ description: 列出你可用于管理租户组织及其设备、应用、访问�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 883fce914176b2e08d49e4de414cc7c09776714a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 850f1866c83e755d4075a429f16a453409c2bd9a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941189"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990216"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/zh-CN/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 **Azure 门户**执行的相同 Intune 操作。  
 
