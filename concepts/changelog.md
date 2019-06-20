@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e4142e63fc319d27632a27850c72da83d4a469ef
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017757"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084038"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -230,8 +230,9 @@ ms.locfileid: "35017757"
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |v1.0 | 增加了对 [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) 资源的应用程序权限的支持。|
 |添加项 |v1.0| 向 [channel](/graph/api/resources/channel?view=graph-rest-1.0) 添加了**email** 和 **webUrl** 属性。|
-| 添加项 | beta | 添加了 [chat](/api-reference/beta/resources/chat.md) 资源及相关方法。 |
-| 添加项 | beta | 添加了 [conversation member](/api-reference/beta/resources/conversationmember.md) 资源及相关方法。 |
+|添加项 | beta | 添加了 [chat](/api-reference/beta/resources/chat.md) 资源及相关方法。 |
+|添加项 |beta| 添加了 API 以读取邮件中的[图像](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta)。|
+|添加项 | beta | 添加了 [conversation member](/api-reference/beta/resources/conversationmember.md) 资源及相关方法。 |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive 和 SharePoint API
 
@@ -1856,7 +1857,7 @@ ms.locfileid: "35017757"
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 |更改类型|版本|说明|
 |:---|:---|:---|
-|Addition|Beta|新增了实体：<br/>[auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta)<br/>[deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta)<br/>[deviceSetupConfiguration](/graph/api/resources/intune-deviceconfig-devicesetupconfiguration?view=graph-rest-beta)<br/>[enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent?view=graph-rest-beta)<br/>[macOSOfficeSuiteApp](/graph/api/resources/intune-apps-macosofficesuiteapp?view=graph-rest-beta)<br/>[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta)<br/>[ndesConnector](/graph/api/resources/intune-deviceconfig-ndesconnector?view=graph-rest-beta)<br/>|
+|添加项|Beta|新增了实体：<br/>[auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta)<br/>[deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta)<br/>[deviceSetupConfiguration](/graph/api/resources/intune-deviceconfig-devicesetupconfiguration?view=graph-rest-beta)<br/>[enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent?view=graph-rest-beta)<br/>[macOSOfficeSuiteApp](/graph/api/resources/intune-apps-macosofficesuiteapp?view=graph-rest-beta)<br/>[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta)<br/>[ndesConnector](/graph/api/resources/intune-deviceconfig-ndesconnector?view=graph-rest-beta)<br/>|
 |添加|Beta|新增了复杂类型：<br/>[auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta)<br/>[auditProperty](/graph/api/resources/intune-auditing-auditproperty?view=graph-rest-beta)<br/>[auditResource](/graph/api/resources/intune-auditing-auditresource?view=graph-rest-beta)<br/>[bulkManagedDeviceActionResult](/graph/api/resources/intune-devices-bulkmanageddeviceactionresult?view=graph-rest-beta)<br/>[deviceProtectionOverview](/graph/api/resources/intune-devices-deviceprotectionoverview?view=graph-rest-beta)<br/>[microsoftStoreForBusinessAppAssignmentSettings](/graph/api/resources/intune-apps-microsoftstoreforbusinessappassignmentsettings?view=graph-rest-beta)<br/>[operatingSystemVersionRange](/graph/api/resources/intune-deviceconfig-operatingsystemversionrange?view=graph-rest-beta)<br/>[remoteLockActionResult](/graph/api/resources/intune-devices-remotelockactionresult?view=graph-rest-beta)<br/>|
 |添加|Beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 集合新增了 executeAction 操作 |
 |添加|Beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 新增了 [wipe](/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-beta) 操作 |
@@ -2089,13 +2090,13 @@ ms.locfileid: "35017757"
 | 添加项        | beta        | 向 [Drive][Drive-beta] 资源添加了 **activities** 关系。 |
 | 添加项        | beta        | 向 [DriveItem][DriveItem-beta] 资源添加了 **publication** 属性。 |
 | 添加项        | beta        | 向 [DriveItem][DriveItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
-| 添加项        | beta        | 添加了新实体：[DriveItemVersion][DriveItemVersion-beta]、[ItemActivity][ItemActivity-beta]。 |
-| 添加项        | beta        | 新增了复杂类型：[CommentAction][CommentAction-beta]、[CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta]、[ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta]、[MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta]、[RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta] 和 [VersionAction][VersionAction-beta]。 |
+| 添加项        | beta        | 添加了新实体：[DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]。 |
+| 添加项        | beta        | 添加了新的复杂类型：[CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta] 和 [VersionAction][VersionAction-beta]。 |
 | 添加项        | beta        | 向 [ItemReference][ItemReference-beta] 复杂类型添加了 **driveType** 属性。 |
 | 删除        | beta        | 从 [SharepointIds][SharepointIds-beta] 复杂类型中删除了 **tenantId** 属性。 |
-| Addition        | v1.0        | 向 [Video][Video-beta] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
-| 添加项        | beta        | 在 [DriveItem][DriveItem-beta] 资源上添加了 [CheckIn][CheckIn-beta] 和 [CheckOut][CheckOut-beta] 操作。 |
-| 添加项        | beta        | 在 [DriveItem][DriveItem-beta] 资源上的 [CreateLink][CreateLink-beta] 操作上添加了 **expirationDateTime**、**password**、**message** 和 **recipients** 属性。 |
+| 添加项        | v1.0        | 向 [Video][Video-beta] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
+| 添加项        | beta        | 在 [DriveItem][DriveItem-beta] 资源上添加了 [CheckIn][CheckIn-beta]and [CheckOut][CheckOut-beta]。 |
+| 添加项        | beta        | 在 [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta]资源上添加了 **expirationDateTime**、**password**、**message** 和 **recipients** 属性。 |
 
 [Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
@@ -2174,15 +2175,15 @@ ms.locfileid: "35017757"
 | 添加项        | v1.0        | 添加了新实体：[ColumnDefinition][]、[ColumnLink][]、[ContentType][]、[List][]、[ListItem][] |
 | Addition        | v1.0        | 向 [Site][] 资源添加了 **columns**、**contentTypes**、**items** 和 **lists** 关系。 |
 | 添加项        | v1.0        | 新增了复杂类型：[BooleanColumn][]、[CalculatedColumn][]、[ChoiceColumn][]、[ContentTypeInfo][]、[ContentTypeOrder][]、[CurrencyColumn][]、[DateTimeColumn][]、[DefaultColumnValue][]、[ListInfo][]、[LookupColumn][]、[NumberColumn][]、[PersonOrGroupColumn][]、[SystemFacet][]、[TextColumn][]。 |
-| Addition        | beta        | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta] |
-| Addition        | beta        | 向 [ColumnDefinition][ColumnDefinition-beta] 添加了 **columnGroup**、**currency**、**defaultValue** 和 **displayName** 属性。 |
+| Addition        | beta        | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta]。 |
+| 添加项        | beta        | 向 [ColumnDefinition][ColumnDefinition-beta] 添加了 **columnGroup**、**currency**、**defaultValue** 和 **displayName** 属性。 |
 | 添加项        | beta        | 向 [List][List-beta] 资源添加了**displayName** 和 **system** 属性。 |
 | 添加项        | beta        | 向 [List][List-beta] 资源添加了 **activities** 和 **contentTypes** 关系。 |
 | 添加项        | beta        | 向 [ListItem][ListItem-beta] 资源添加了 **contentType** 属性。 |
 | 添加项        | beta        | 向 [ListItem][ListItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
 | 添加项        | beta        | 向 [Site][Site-beta] 资源添加了 **contentTypes** 关系。 |
 | 添加项        | beta        | 向 [BooleanColumn][BooleanColumn-beta] 类型添加了 **outputType** 属性。 |
-| 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
+| 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
 | 添加项        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
 | 添加项        | beta        | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
 | 更改          | beta        | 在 [LookupColumn][LookupColumn-beta] 复杂类型上将 **allowMultipleValue** 属性重命名为 **allowMultipleValues**。 |
@@ -2269,7 +2270,7 @@ ms.locfileid: "35017757"
 | Change      | Beta    | 向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **searchBlockDiacritics**、**searchDisableAutoLanguageDetection**、**searchDisableIndexingEncryptedItems**、**searchEnableRemoteQueries**、**searchDisableUseLocation**、**searchDisableIndexerBackoff**、**searchDisableIndexingRemovableDrive**、**searchEnableAutomaticIndexSizeManangement**、**smartScreenEnableAppInstallControl** 和 **privacyAdvertisingId** 属性 |
 | Change      | Beta    | 从 [windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-beta) 实体中删除了 **settingsDeviceName** 属性 |
 | Change      | Beta    | 从 [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) 实体中删除了 **restartMode** 属性 |
-| Change      | Beta    | 向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体添加了 **detectedApps** 和 **managedDevices** 导航属性 |
+| 更改      | Beta    | 向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体添加了 **detectedApps** 和 **managedDevices** 导航属性 |
 | 更改      | Beta    | 向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **privacyAccessControls** 导航属性 |
 | Change      | Beta    | 向 [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) 复杂类型添加了 **secureByDefault** 属性 |
 | Change      | Beta    | 向 [windowsUpdateScheduledInstall](/graph/api/resources/intune-deviceconfig-windowsupdatescheduledinstall?view=graph-rest-beta) 复杂类型添加了 **restartMode** 属性 |

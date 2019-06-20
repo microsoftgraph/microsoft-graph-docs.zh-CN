@@ -1,15 +1,15 @@
 ---
 title: chatMessage 资源类型
 description: 表示渠道或聊天实体内的单个聊天消息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
-localization_priority: Priority
-author: nkramer
+localization_priority: Normal
+author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea21d57134643c83406f449ee7cdad192afc0326
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709409"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084045"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -22,14 +22,17 @@ ms.locfileid: "34709409"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出渠道消息](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) 集合 | 获取渠道中的所有根消息列表。|
-|[获取渠道消息](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | 获取渠道中的单个根消息。|
-|[列出消息回复](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) 集合| 获取渠道中的所有消息回复列表。|
-|[获取消息回复](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| 获取渠道中的单个消息回复。|
-|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatmessage](chatmessage.md)| 在渠道中创建新的顶级消息。|
-|[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| 在渠道中回复现有消息。|
-|[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 |
+|[列出渠道消息](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) 集合 | 渠道中的所有根消息列表。|
+|[获取渠道消息](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | 获取渠道中的单个根消息。|
+|[列出消息回复](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) 集合| 渠道中的所有消息回复列表。|
+|[获取消息回复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取渠道中的单个消息回复。|
+|[在渠道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在渠道中创建新的顶级消息。|
+|[在渠道中回复消息](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| 在渠道中回复现有消息。|
+|[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 一对一聊天或群组聊天中的消息。 |
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
+|[列出所有托管图像](../api/chatmessagehostedimage-list-hostedimages.md) | [hostedImage](../resources/chatmessagehostedimage.md) 集合| 获取消息中的所有托管图像。|
+|[获取托管图像](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | 获取消息中的托管图像。|
+|[获取托管图像字节](../api/chatmessagehostedimage-getbytes.md) | 二进制图像数据 | 获取消息中托管图像的二进制图像数据。|
 
 ## <a name="properties"></a>属性
 
@@ -51,7 +54,6 @@ ms.locfileid: "34709409"
 |importance| chatMessageImportance | 邮件的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
 |反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此消息的反应（例如点赞）。|
 |区域设置|string|客户端设置的消息区域设置。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 

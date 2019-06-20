@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: ef2c1ee28c758107581c390cc3131a733f02a436
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.openlocfilehash: e8751a246baedaf85867f28bbd5be0f656673677
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017736"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084052"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -326,7 +326,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 | _Directory.ReadWrite.All_ |读取和写入目录数据 | 允许应用读取和写入组织目录中的数据，如用户和组。它不允许应用删除用户或组，或重置用户密码。 | 是 | 否 |
 | _Directory.AccessAsUser.All_ |以登录用户身份访问目录  | 允许应用以登录用户身份访问目录中的信息。 | 是 | 否 |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |为目录读取和写入 Privileged Identity Management 数据  | 允许应用读取和写入 Azure AD 的 Privileged Identity Management API。 | 是 | 否 |
-| _PrivilegedAccess.ReadWrite.AzureRBAC_ |为 Azure 资源读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入 Azure 资源的 Privileged Identity Management API。 | 是 | 否 |
+| _PrivilegedAccess.ReadWrite.AzureResources_ |为 Azure 资源读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入 Azure 资源的 Privileged Identity Management API。 | 是 | 否 |
 
 <br/>
 
@@ -773,7 +773,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite.All_ |    读取和写入所有 OneNote 笔记本 | 允许应用无需具有已登录用户即可读取、共享和修改组织中的所有 OneNote 笔记本。| 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 _Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
