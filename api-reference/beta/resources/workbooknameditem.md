@@ -3,11 +3,11 @@ title: workbookNamedItem 资源类型
 description: 表示单元格区域或值的定义名称。名称可以为基元的已命名对象（如以下类型中所示）、range 对象或对区域的引用。此对象可用于获取与名称相关的 range 对象。
 localization_priority: Normal
 ms.openlocfilehash: 49267379385a13b94e8639e4c129c05192b2ae6f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348607"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084080"
 ---
 # <a name="workbooknameditem-resource-type"></a>workbookNamedItem 资源类型
 

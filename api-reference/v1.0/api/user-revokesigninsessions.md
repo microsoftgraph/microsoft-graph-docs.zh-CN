@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7ab60a38e404dc13dbbc58b1103931cfe0b16c44
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001634"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35083947"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 

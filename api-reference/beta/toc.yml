@@ -9108,6 +9108,13 @@ items:
                 href: api/teamstab-delete.md
           - name: 聊天消息
             href: resources/chatmessage.md
+            items:
+              - name: 列出承载的图像
+                href: api/chatmessagehostedimage-list-hostedimages.md
+              - name: 获取托管图像
+                href: api/chatmessagehostedimage-get.md
+              - name: 获取承载的图像字节
+                href: api/chatmessagehostedimage-getbytes.md
           - name: 日历
             href: resources/event.md
             items:

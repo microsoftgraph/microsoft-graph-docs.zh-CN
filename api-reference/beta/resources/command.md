@@ -3,11 +3,11 @@ title: command 资源类型
 description: ''
 localization_priority: Normal
 ms.openlocfilehash: ad35b7ec23630e85a17a5655bed57148fe6d7bb2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348550"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084031"
 ---
 # <a name="command-resource-type"></a>command 资源类型
 
