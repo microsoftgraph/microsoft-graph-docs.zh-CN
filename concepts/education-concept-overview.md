@@ -4,20 +4,18 @@ description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: ab3aec0748c2036ba25ac28a3c2ab7b0cd7e4112
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536510"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133717"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
 Microsoft Graph 中的教育版 API 可增强 Office 365 资源和与教育情景相关的信息，其中包括有关学校、课程、用户（学生和教师）、作业以及订阅信息。 这使你能够轻松构建与各种学校和课堂情景的教育资源集成的解决方案。
 
-Microsoft Graph 中的教育版 API 提供对课程、学校、用户、作业、提交等的访问。
-
-![EDU Graph 概述](images/edugraph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
 ## <a name="why-integrate-with-education-scenarios"></a>为什么与教育情景集成？
 

@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例, 这些实例限制在特定国家/地区的地理边界内, 并由当地人员运营。
-ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599826"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133728"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -23,6 +23,8 @@ ms.locfileid: "33599826"
 本文提供了有关不同 Microsoft Graph 国家云部署的信息, 以及每个区域中的开发人员可用的功能。
 
 >**注意:**[Microsoft Graph 数据连接](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0)不支持任何国家云部署。 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
 ## <a name="app-registration-and-token-service-root-endpoints"></a>应用注册和令牌服务根终结点
 

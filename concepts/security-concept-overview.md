@@ -4,20 +4,24 @@ description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564190"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133836"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
 Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 [Microsoft Graph 安全提供程序](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0)（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 数据流](security-dataflow.md)。
 
+
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 若要了解授权，请参阅[授权和 Microsoft Graph 安全性 API](security-authorization.md)。 若要了解委托的权限和应用权限等权限，请参阅[权限](permissions-reference.md#security-permissions)。
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>为什么要使用 Microsoft Graph 安全性 API？
 

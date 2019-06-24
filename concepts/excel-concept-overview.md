@@ -4,16 +4,18 @@ description: Excel 是一个提高工作效率不可或缺的工具。 所有行
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 940a8e055a6a730bd12a7ab73e7d3a611a63e53f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e5cd85a066acf6ee1a3bfcdb659e30afe5cd75
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556128"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133725"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel 工作簿和图表 API 概述
 
 Excel 是一个提高工作效率不可或缺的工具。 所有行业和工作职能的用户都将其视为用于存储、跟踪和操作各类数据的工具。 从简单的任务跟踪和数据管理，到复杂的计算和专业报告，Excel 可用于处理各种各样的任务。 你可以使用 Microsoft Graph 中的 Excel REST API 扩展数据、计算、报告和仪表板的价值。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/I1rSkJww2Dk]
 
 ## <a name="why-integrate-with-excel"></a>为什么与 Excel 集成？
 

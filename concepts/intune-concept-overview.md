@@ -4,18 +4,20 @@ description: 'Microsoft Intune 可帮助企业管理组织内的设备和应用�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 37c77147029f58625ee8a115dffebb91ee432b30
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951192"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133766"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Intune 设备和应用 API 概述
 
 Microsoft Intune 可帮助企业管理组织内的设备和应用。 你可以使用 Microsoft Graph 中的 Intune API 来管理设备和应用，甚至可以在使用首选工具时配置 Intune。 
 
 如果你是 ISV，则还可以使用 Intune API 来管理客户端租户。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/yU1HeqNmN7A]
 
 ## <a name="why-integrate-with-intune"></a>为什么与 Intune 集成？
 

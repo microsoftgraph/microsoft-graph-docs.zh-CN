@@ -3,12 +3,12 @@ title: 使用扩展向资源添加自定义数据
 description: Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资源（如 user 和 message）访问以人为中心的丰富数据和见解。 你还可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c14e9b328d8572142bf19ac232c3405e60b2da4
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526214"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133843"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
@@ -46,6 +46,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 [开放扩展](/graph/api/resources/opentypeextension?view=graph-rest-1.0)（以前称为 Office 365 数据扩展）是提供灵活方法将非类型化应用数据直接添加到资源实例的[开放类型](https://www.odata.org/getting-started/advanced-tutorial/#openType)。
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
 开放扩展及其自定义数据可通过资源实例的 **extensions** 导航属性进行访问。
 **extensionName** 属性是开放扩展中的_预定义_唯一可写属性。 创建开放扩展时，必须为 **extensionName** 属性分配在租户内唯一的名称。
 
@@ -61,7 +63,11 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 
 ## <a name="schema-extensions"></a>架构扩展
 
+
 通过[架构扩展](/graph/api/resources/schemaextension?view=graph-rest-1.0)，可以定义一个架构，用来扩展资源类型。 首先，创建架构扩展定义。 然后，利用它通过强类型自定义数据扩展资源实例。 此外，还可以控制架构扩展的[状态](#schema-extensions-lifecycle)，让它可被其他应用发现。 相应地，这些应用可以对自己的数据使用此扩展，并在它的基础之上生成进一步的体验。
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
 在创建架构扩展定义时，你必须提供其 **id** 的唯一名称。提供两个命名选项：
 
@@ -146,6 +152,7 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/re
 
 ## <a name="see-also"></a>另请参阅
 
-- [Office 365 域](https://technet.microsoft.com/zh-CN/library/office-365-domains.aspx)
+- 
+  [Office 365 域](https://technet.microsoft.com/zh-CN/library/office-365-domains.aspx)
 
 - [添加并验证 Office 365 租户的域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

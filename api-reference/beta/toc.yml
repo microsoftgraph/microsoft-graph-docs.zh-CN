@@ -7682,6 +7682,15 @@ items:
                 href: api/application-list-owners.md
               - name: 分配所有者
                 href: api/application-post-owners.md
+              - name: 应用程序模板
+                href: resources/applicationtemplate.md
+                items:
+                  - name: 列出应用程序模板
+                    href: api/applicationtemplate-list.md
+                  - name: 获取应用程序模板
+                    href: api/applicationtemplate-get.md
+                  - name: 实例化应用程序模板
+                    href: api/applicationtemplate-instantiate.md
           - name: 审核日志
             href: resources/azure-ad-auditlog-overview.md
             items:
@@ -9261,9 +9270,9 @@ items:
           - name: Outlook 任务组
             href: resources/outlooktaskgroup.md
             items:
-              - name: List
+              - name: 列出
                 href: api/outlookuser-list-taskgroups.md
-              - name: Create
+              - name: 创建
                 href: api/outlookuser-post-taskgroups.md
               - name: 获取
                 href: api/outlooktaskgroup-get.md
