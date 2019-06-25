@@ -3,26 +3,29 @@ title: 使用查询参数自定义响应
 description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 1962ee481d89ccef14d436edb41195a9b5b2529a
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 5f986a84604a5783c16e6febc6130d4d53bd058f
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750163"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133815"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
 Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中返回的数据量。 对准确查询参数的支持因 API 操作不同而不同，并且可能会在 v1.0 和数据终结点之间不同，具体取决于 API。 
+
 
 > [!TIP] 
 > 在 beta 终结点上，`$` 前缀是可选的。 例如，可使用 `filter` 来代替 `$filter`。 在 v1 终结点上, `$`前缀仅对 API 的一个子集是可选的。 为简单起见, 如果使用 v1 终结点, 请始终包含`$`。
 
 查询参数可以是 OData 系统查询选项，也可以是其他查询参数。 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
+
 ## <a name="odata-system-query-options"></a>OData 系统查询选项
 Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询选项。 这些查询选项与 [OData V4 查询语言][odata-query]兼容。
 
->**注意：** 单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+>**注意：** 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用。
 
 | 名称                     | 说明 | 示例
 |:-------------------------|:------------|:---------|
@@ -45,7 +48,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 
 ## <a name="encoding-query-parameters"></a>对查询参数进行编码
 
-应对查询参数的值进行百分比编码。 许多 HTTP 客户端、浏览器和工具（例如，[Graph 浏览器][graph-explorer]）都可以帮助用户完成此操作。 如果查询失败，可能原因之一是未正确编码查询参数值。
+应对查询参数的值进行百分比编码。 许多 HTTP 客户端、浏览器和工具（如 [Graph 浏览器][graph-explorer]）将在这方面帮助你。 如果查询失败，可能原因之一是未正确编码查询参数值。
 
 未编码的 URL 如下所示：
 
@@ -102,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-[在 Graph 浏览器中试用][expand-example]
+[在 Graph 浏览器中试调用][expand-example]
 
 > **注意：** 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
 > 
@@ -118,9 +121,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
-[在 Graph 浏览器中试用][filter-example]
+[在 Graph 浏览器中试调用][filter-example]
 
-对 `$filter` 运算符的支持因 Microsoft Graph API 而异。 通常支持下列逻辑运算符： 
+对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符： 
 
 - 等于 (`eq`)
 - 不等于 (`ne`)
@@ -131,11 +134,11 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 - 或 (`or`)
 - 非 (`not`)
  
-通常支持 `startswith` 字符串运算符。 某些 API 支持 `any` lambda 运算符。 有关一些用法示例的信息，请参阅下表。 有关 `$filter` 语法的其他详细信息，请参阅 [OData 协议][odata-filter]。  
+通常支持 `startswith` 字符串运算符。 某些 API 支持 `any` lambda 运算符。 有关一些用法示例的信息，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
 
-下表显示使用 `$filter` 查询参数的一些示例。
+下表展示了一些使用 `$filter` 查询参数的示例。
 
-> **注意：** 单击示例以在 [Graph 浏览器][graph-explorer]中试调用。
+> **注意：** 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用。
 
 | 说明 | 示例
 |:------------|:--------|
@@ -158,7 +161,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-[在 Graph 浏览器中试用][format-example]
+[在 Graph 浏览器中试调用][format-example]
 
 > **注意：**`$format` 查询参数支持许多格式（例如，atom、xml 和 json），但可能无法返回所有格式的结果。
 
@@ -171,7 +174,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
-[在 Graph 浏览器中试用][orderby-example]
+[在 Graph 浏览器中试调用][orderby-example]
 
 还可以按复杂类型实体进行排序。下面的请求获取邮件，并按 **from** 属性的 **address** 字段（复杂类型为 **emailAddress**）进行排序：
 
@@ -326,7 +329,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-[在 Graph 浏览器中试用][select-example]
+[在 Graph 浏览器中试调用][select-example]
 
 > **重要说明：** 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
@@ -339,7 +342,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
-[在 Graph 浏览器中试用][skip-example]
+[在 Graph 浏览器中试调用][skip-example]
 
 > **注意：** 一些 Microsoft Graph API 使用 `$skip` 实现分页，如 Outlook 邮件和日历（**message**、**event** 和 **calendar**）。 当查询结果跨多个页面时，这些 API 会返回 `@odata:nextLink` 属性，具有包含 `$skip` 参数的 URL。 可以使用此 URL 返回下一页结果。 若要了解详细信息，请参阅[分页](./paging.md)。
 
@@ -360,7 +363,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-[在 Graph 浏览器中试用][top-example]
+[在 Graph 浏览器中试调用][top-example]
 
 
 ## <a name="error-handling-for-query-parameters"></a>查询参数的错误处理

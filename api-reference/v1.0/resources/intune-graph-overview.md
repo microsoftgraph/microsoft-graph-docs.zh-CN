@@ -4,16 +4,16 @@ description: " 不支持 Intune 混合部署。 "
 author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 2dfeb5ff55670f3e11b175e0472359002b09bab6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c30436c80af8621b1c633d12a11489f7e586f00
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551810"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133850"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/zh-CN/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 **Azure 门户**执行的相同 Intune 操作。  
 
@@ -37,6 +37,9 @@ Intune 向 Microsoft Graph API 提供数据的方式与其他云服务相同，�
 
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
+## <a name="accessing-the-microsoft-graph-api-for-intune"></a>访问适用于 Intune 的 Microsoft Graph API
+
+Intune 同时支持[委托的权限](https://docs.microsoft.com/graph/auth-v2-user)和[应用程序权限](https://docs.microsoft.com/graph/auth-v2-service)。 读取和写入操作都支持委托的权限。 目前，只有读取操作支持应用程序权限。 委托的权限和应用程序权限都支持单租户应用程序和多租户应用程序。 若要详细了解可通过 Microsoft Graph 获取的权限，请参阅 [ Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference)。
 
 ## <a name="using-permissions"></a>使用权限
 

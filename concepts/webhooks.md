@@ -3,21 +3,24 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 3bffab081e8f9520890f6bfe7c690b9258cd3dee
-ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
+ms.openlocfilehash: 43e4e4893cae46bb5d3bcecc1f0d7e96da4ccfed
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34182088"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133780"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
 Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 
-Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它将获取更多数据、更新其缓存和视图等。
+Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
+ 
 > [!div class="nextstepaction"]
-> [使用 .NET Core 构建 webhook 应用](/graph/tutorials/change-notifications)
+> [使用 .NET Core 生成 Webhook 应用](/graph/tutorials/change-notifications)
 
 ## <a name="supported-resources"></a>支持的资源
 

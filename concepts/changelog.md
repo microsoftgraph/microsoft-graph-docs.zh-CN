@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: f14b36b11424b46fd092e155482b727f7b19dd4a
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084038"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133794"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,13 @@ ms.locfileid: "35084038"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="june-2019"></a>2019 年 6 月
+
+
+### <a name="azure-ad-apis"></a>Azure AD API
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta  | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-instantiate.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。|
 
 ### <a name="directory-apis"></a>目录 API
 
@@ -63,6 +70,7 @@ ms.locfileid: "35084038"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 已添加 [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) 资源和相关方法。 |
 
+
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive 和 SharePoint API
 
 | **更改类型** | **版本** | **说明**                          |
@@ -70,7 +78,14 @@ ms.locfileid: "35084038"
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [followSite](/graph/api/follow-site?view=graph-rest-beta) 导航属性 |
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) 导航属性 |
 
+
+
+## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+=======
 ### <a name="outlook-mail-calendar-contacts"></a>Outlook 邮件、日历、联系人
+
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |

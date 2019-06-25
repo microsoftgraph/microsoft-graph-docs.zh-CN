@@ -3,12 +3,12 @@ title: '在应用中对 Microsoft Graph 数据进行分页 '
 description: '响应中的 odata.nextLink` 属性，其中包含下一页结果的 URL。 '
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 6a19d1873057f5a6f6ea1749a6941389b9be8eb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c39ff697de2d6afdb2f24c1ec99d2ce5a89b32c
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564174"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133801"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>在应用中对 Microsoft Graph 数据进行分页 
 
@@ -41,3 +41,8 @@ Microsoft Graph 将继续通过每次响应返回对 `@odata:nextLink` 属性中
 - 不同的 API 可能具有不同的默认页面大小和最大页面大小。
 - 如果指定超过相应 API 最大页面大小的页面大小（通过 `$top` 查询参数），则不同 API 的行为会有所不同。 具体取决于 API，所请求的页面大小可能会被忽略，它默认选择相应 API 的最大页面大小，否则 Microsoft Graph 会返回错误。 
 - 并不是所有的资源和关系都支持分页。例如，针对 [directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0) 的查询不支持分页。这包括读取角色对象本身以及角色成员。
+
+## <a name="learn-more-about-paging"></a>详细了解分页
+以下视频介绍了 Microsoft Graph 中的分页。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]

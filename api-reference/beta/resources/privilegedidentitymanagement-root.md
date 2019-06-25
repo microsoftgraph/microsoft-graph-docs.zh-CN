@@ -1,19 +1,19 @@
 ---
 title: Privileged Identity Management
-description: 使用适合于 Azure AD Privileged Identity Management 的 API 管理 Azure Active Directory 角色和 Azure 资源角色。
+description: 适合于 Azure AD Privileged Identity Management 的 API，用于管理 Azure Active Directory 角色和 Azure 资源角色。
 localization_priority: Priority
-ms.openlocfilehash: 4aa4d969d97c89cf1dac3bebe8d0d6c01b68aedd
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: e8d61cb767b5471b76bc956dc5a0aeb9dc5af19f
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422526"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133808"
 ---
-# <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
+# <a name="privileged-identity-management"></a>Privileged Identity Management
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 是用于管理、控制和监视对组织中重要资源的访问的服务。 这包括访问 Azure AD、Azure 资源和其他 Microsoft Online Services（例如 Office 365 或 Microsoft Intune）中的资源。 Microsoft Graph 提供有你可用于管理 Azure AD 角色和 Azure 资源角色的 API。
+[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 是可便于管理、控制和监视对组织中重要资源的访问的服务。 这包括访问 Azure AD、Azure 资源和其他 Microsoft Online Services（例如 Office 365 或 Microsoft Intune）中的资源。 Microsoft Graph 提供有你可用于管理 Azure AD 角色和 Azure 资源角色的 API。
 
 - [适用于 Azure AD 橘色的 API](privilegedidentitymanagement-directory.md)
 - [适用于 Azure 资源角色 的 API](privilegedidentitymanagement-resources.md)
