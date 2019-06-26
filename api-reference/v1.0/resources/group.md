@@ -4,12 +4,12 @@ description: '表示 Azure Active Directory (Azure AD) 组，可以是 Office 36
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: aafee2146d4b269f3a755cf867531085c39ffc5a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: e410de0a4ef354a636a1c3fdd9851a9a109ee6dd
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036575"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236662"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "34036575"
 
 继承自 [directoryObject](directoryobject.md)。
 
-出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。 请参阅[示例](../api/group-get.md#request-2)。
+出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
 该资源支持：
 
