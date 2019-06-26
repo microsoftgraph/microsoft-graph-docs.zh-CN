@@ -1,20 +1,20 @@
 ---
 title: 'driveItem: preview'
-description: 此操作允许您获取项目的短生存期可嵌入 url, 以呈现临时预览。
+description: 此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5e260e3dc360464b39daa5dde671a1bc11c9c6b6
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325120"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236298"
 ---
 # <a name="driveitem-preview"></a>driveItem: preview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作允许您获取项目的短生存期可嵌入 url, 以呈现临时预览。
+此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。
 
 如果要获取持续生存期的可嵌入链接, 请改用[createLink][] API。
 
@@ -29,7 +29,7 @@ ms.locfileid: "33325120"
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read, 文件. readwrite, 全部文件。
+| 委派（个人 Microsoft 帐户） | Read, 文件. ReadWrite, 全部文件。
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -78,7 +78,7 @@ POST /shares/{shareId}/driveItem/preview
 
 根据指定选项的 embed 支持的当前状态, 可能会返回 getUrl、postUrl 或 both。
 
-postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 postUrl 执行 POST, 应相应地设置内容类型。 例如：
+postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 POSTURL 执行 POST, 应相应地设置内容类型。 例如：
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -94,7 +94,7 @@ param1=value&param2=another%20value
 |:-----------|:----------------------------------------------------------------
 | 不适     | 选择用于呈现文件的适当的应用程序。 在大多数情况下, 这将`onedrive`使用预览器, 但可能因文件类型而异。
 | `onedrive` | 使用 OneDrive 预览器应用程序呈现文件。
-| `office`   | 使用 WAC (Office online) 呈现文件。 仅对 Office 文档有效。
+| `office`   | 使用 Office 的 web 版本呈现文件。 仅对 Office 文档有效。
 
 ### <a name="chrome-vs-chromeless"></a>Chrome vs chromeless
 

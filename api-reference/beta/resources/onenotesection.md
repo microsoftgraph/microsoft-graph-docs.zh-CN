@@ -2,12 +2,12 @@
 title: onenoteSection 资源类型
 description: OneNote 笔记本中的分区。 分区可包含页面。
 localization_priority: Normal
-ms.openlocfilehash: d262065f46052c1cae55b42babaa91a2e065d3ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b07ea378a4338e22896d40065e35aa599db42832
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348565"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236627"
 ---
 # <a name="onenotesection-resource-type"></a>onenoteSection 资源类型
 
@@ -24,7 +24,7 @@ OneNote 笔记本中的分区。 分区可包含页面。
 |isDefault|Boolean|指示是否为用户的默认节。 只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改节的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|links|[sectionLinks](sectionlinks.md)|用于打开分区的链接。 如果`oneNoteClientURL`安装了 OneNote 本机客户端, 则链接将在其中打开分区。 `oneNoteWebURL`链接将在 OneNote Online 中打开分区。|
+|links|[sectionLinks](sectionlinks.md)|用于打开分区的链接。 如果`oneNoteClientURL`安装了 OneNote 本机客户端, 则链接将在其中打开分区。 `oneNoteWebURL`链接将打开 web 上的 OneNote 中的分区。|
 |displayName|String|节的名称。 |
 |pagesUrl|String|`pages`终结点, 您可在其中获取该部分中所有页面的详细信息。 只读。|
 |自学|String|终结点，您可在此处获取关于节的详细信息。 只读。|

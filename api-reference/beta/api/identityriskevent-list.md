@@ -4,18 +4,19 @@ description: 检索 identityriskevent 对象的列表。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 3f26b52f988a02e3a3f9f97ca9f78f7d5c8a6cc0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d6e19bf777b96226fa270c1f49301533b63a9cae
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328463"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236417"
 ---
 # <a name="list-identityriskevents"></a>列出 identityRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 identityriskevent 对象的列表。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +51,7 @@ GET /identityRiskEvents
   "name": "get_identityriskevents"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/identityRiskEvents
+GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

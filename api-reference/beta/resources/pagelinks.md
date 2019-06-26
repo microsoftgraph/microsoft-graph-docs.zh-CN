@@ -2,12 +2,12 @@
 title: pageLinks 资源类型
 description: 用于打开 OneNote 页面的链接。
 localization_priority: Normal
-ms.openlocfilehash: d6ce07ae53b4d1f960566012d4a46e482ccbf9c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7dab353d4e936559e26a16e64b58bbf3f4c01232
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344951"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236550"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "33344951"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端, 则在其中打开页面。|
-|oneNoteWebUrl|[externalLink](externallink.md)|在 OneNote Online 中打开页面。|
+|oneNoteWebUrl|[externalLink](externallink.md)|打开 web 上的 OneNote 中的页面。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
