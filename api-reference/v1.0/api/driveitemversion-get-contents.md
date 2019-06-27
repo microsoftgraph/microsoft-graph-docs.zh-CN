@@ -3,12 +3,12 @@ title: 下载 DriveItemVersion 资源的内容
 description: 检索某个特定版本的 DriveItem 的内容。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 85ec476ae683bb670245328d4e671855b62080d9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8771db5b740c44c46471ed4321edc6289c060959
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33616258"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268899"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>下载 DriveItemVersion 资源的内容
 
@@ -68,12 +68,14 @@ HTTP/1.1 302 Found
 Location: https://onedrive.com/34FF49D6...
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-version-contents-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-version-contents-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-version-contents-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -92,6 +94,7 @@ OneDrive 不保留文件以前版本的完整元数据。
   "section": "documentation",
   "tocPath": "Items/Version history",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

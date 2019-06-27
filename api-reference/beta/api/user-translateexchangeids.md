@@ -4,12 +4,12 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1015ae12f5ecfd63b29efe38f7172321b06386ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b62027af1f21df9118fe278a8ad1b04f6796fe5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961227"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269446"
 ---
 # <a name="user-translateexchangeids"></a>用户: translateExchangeIds
 
@@ -23,7 +23,7 @@ ms.locfileid: "33961227"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:----------------|:--------------------------------------------|
-| 委派（工作或学校帐户） | User.readbasic.all, user。 User.readbasic.all, user。 all, All, user。 all, All: all |
+| 委派（工作或学校帐户） | User.readbasic.all, user. User.readbasic.all, user. all, All, user. all, All: all |
 | 委派（个人 Microsoft 帐户） | User.readbasic.all、用户读取、用户读写 |
 | 应用程序 | User.Read.All、User.ReadWrite.All |
 
@@ -131,6 +131,8 @@ Content-type: application/json
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -143,6 +145,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

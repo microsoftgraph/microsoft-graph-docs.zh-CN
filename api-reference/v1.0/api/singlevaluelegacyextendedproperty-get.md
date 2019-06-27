@@ -2,12 +2,12 @@
 title: 获取 singleValueLegacyExtendedProperty
 description: 可以使用特定的扩展属性或资源实例集合来获取扩展的单个资源实例
 localization_priority: Normal
-ms.openlocfilehash: 7b018e52dc062cb503aafc4e2a9367b5c43c9747
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c4e028ecd7e881d42ee165560beced4dd097c553
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603012"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279252"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
@@ -26,9 +26,9 @@ ms.locfileid: "33603012"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [邮件](../resources/message.md) 
 
 以及以下组资源：
 
@@ -46,12 +46,12 @@ ms.locfileid: "33603012"
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | 组 [日历](../resources/calendar.md) | Group.Read.All | 不支持 | 不支持 |
 | 组 [事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | 组[帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -223,7 +223,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|id_value|字符串|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
 
 ## <a name="request-headers"></a>请求标头
@@ -301,12 +301,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_singlevaluelegacyextendedproperty_1-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -391,6 +393,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/singlevaluelegacyextendedproperty-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

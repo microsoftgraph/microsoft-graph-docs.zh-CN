@@ -2,14 +2,16 @@
 title: 更新照片
 description: 更新 photo 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 6ca485b15ef5727fb03e450823a51daf8a227441
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1f71679f09bc4b96b3640d0b37587e2675c93a57
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33595641"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268388"
 ---
 # <a name="update-photo"></a>更新照片
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 photo 对象的属性。
 ## <a name="permissions"></a>权限
@@ -51,7 +53,7 @@ PATCH /drive/root/createdByUser/photo
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
+PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 Content-type: application/json
 Content-length: 53
 
@@ -80,26 +82,31 @@ Content-length: 53
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_photo-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_photo-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_photo-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

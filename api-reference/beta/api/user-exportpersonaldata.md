@@ -4,12 +4,12 @@ description: 提交数据策略操作请求, 由公司管理员进行导出以�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 776602eb600ca74feff61c595092e1e2518b49a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58b8d8900a7323b12c17de5bb083e4a181abe68e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961297"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270383"
 ---
 # <a name="user-exportpersonaldata"></a>用户: exportPersonalData
 
@@ -20,9 +20,9 @@ ms.locfileid: "33961297"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Export。 All 和 User。 All  |
+|委派（工作或学校帐户） |  Export. All 和 User. All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | Export。 All 和 User。 All |
+|应用程序 | Export. All 和 User. All |
 
 >**注意:** 仅当使用委派的权限时, 公司管理员才能执行导出。
 
@@ -83,6 +83,8 @@ Content-length: 48
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -105,6 +107,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,17 +4,17 @@ ms.author: dspektor
 title: 获取 websocket 终结点
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2172015e446b57706caeecf73b8da2b6b486f7d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f14f13d3c84d3f352d03ea5533649614367b7e48
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345832"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276991"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库, 可利用 websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
+Socket.io 是适用于 JavaScript 的热门通知库, 可利用 Websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
@@ -26,7 +26,7 @@ Socket.io 是适用于 JavaScript 的热门通知库, 可利用 websocket。 若
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read, 文件. readwrite, 全部文件。
+| 委派（个人 Microsoft 帐户） | Read, 文件. ReadWrite, 全部文件。
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -67,6 +67,18 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 `notificationUrl`返回的是 socket.io 终结点 URL。
 若要将它与 socket.io 客户端一起使用, 请拆分`/callback?`令牌上的字符串。
@@ -90,3 +102,17 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

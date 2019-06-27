@@ -2,12 +2,12 @@
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 2e87f4b95e20dd57f227f7ed6bfc0c81ad653437
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ab8014624e81b946ce5c9566cd586e03f16b2855
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636434"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258343"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|创建授予的时间。|
 |id|Guid|向主体分配的角色 id。  此角色必须由目标资源应用程序 **resourceId** 在其 **appRoles** 属性中声明。 如果资源未声明任何权限，则必须指定默认 id (0 GUID)。                            **注意：** 不可为 null。            |
-|principalDisplayName|字符串|已授权访问权限的主体的显示名称。|
+|principalDisplayName|String|已授权访问权限的主体的显示名称。|
 |principalId|Guid|要向其授予访问权限的主体的唯一标识符 (**objectId**)。                            **备注**: 必需。            |
 |principalType|String|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
 |resourceDisplayName|String|已对其进行分配的资源的显示名称。|
@@ -93,12 +93,14 @@ Content-length: 253
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_approleassignment-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_approleassignment-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,6 +115,7 @@ Content-length: 253
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

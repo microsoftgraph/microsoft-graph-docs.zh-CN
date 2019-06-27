@@ -2,12 +2,12 @@
 title: 创建 privilegedRoleAssignmentRequest
 description: 创建 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
-ms.openlocfilehash: d963bd1cc103928675890aa7ddeccd5fd27594c0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b39f1690724e0c899853fc8e972a1656d6250708
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593757"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267681"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -40,10 +40,10 @@ POST /privilegedRoleAssignmentRequests
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
-|roleId|字符串|角色的 ID。 此为必需属性。|
-|type|字符串|表示角色分配上的操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
-|assignmentState|字符串|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|在于|字符串|需要为角色分配请求提供审核和审阅目的的原因。|
+|roleId|String|角色的 ID。 此为必需属性。|
+|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
+|assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|在于|String|需要为角色分配请求提供审核和审阅目的的原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
 
 ## <a name="response"></a>响应
@@ -131,12 +131,14 @@ Content-length: 304
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -151,6 +153,7 @@ Content-length: 304
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
