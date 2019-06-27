@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 更新 SharePoint 列表中的记录
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7c5031a9f2d2729a268f26bb1b1489f3bae2c351
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: f365331b5941da48178194c9b02f61aaf1893ed6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536489"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264524"
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 
@@ -87,6 +87,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-listitem-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -102,6 +104,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "ListItem/Update",
   "suppressions": [
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
