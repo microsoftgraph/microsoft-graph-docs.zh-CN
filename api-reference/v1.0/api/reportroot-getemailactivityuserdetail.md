@@ -4,12 +4,12 @@ description: 获取用户执行的电子邮件活动的详细信息。
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ce7a5f71e217b639080b7ae51210a1d2397a717f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 405ec876132b6c9afce27cad6d69a7a8b2b5a60c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33607075"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275388"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot：getEmailActivityUserDetail
 
@@ -112,6 +112,8 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getemailactivityuserdetail-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/reportroot_getemailactivityuserdetail-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -135,6 +137,7 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Las
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getemailactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/reportroot-getemailactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/reportroot-getemailactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
