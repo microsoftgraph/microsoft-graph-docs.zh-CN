@@ -2,12 +2,12 @@
 title: 列出 identityProvider
 description: 检索目录中的所有 identityProvider。
 localization_priority: Normal
-ms.openlocfilehash: 483594fc9075e11f872f80303bd42b8c59b91053
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c7ddabf8aef2a4d50f6ea133ecf696c8bdda922b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592217"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262662"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -87,12 +87,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_identityproviders-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_identityproviders-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_identityproviders-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -107,6 +109,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/identityprovider-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/identityprovider-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/identityprovider-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

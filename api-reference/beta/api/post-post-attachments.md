@@ -4,12 +4,12 @@ description: 使用此 API 将 附件 添加到帖子。 自此处起
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ffcbc9984774f0e0e59fc2953ddb86d3cc3ce195
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: f637b5f6f5d976ac5c4dedac4c45649cb3de33b6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33594983"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268199"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -97,9 +97,14 @@ Content-length: 162
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Objective-C-snippets.md)]
 
 ---
 
@@ -145,15 +150,6 @@ Content-length: 162
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_post-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
 
 ## <a name="example-reference-attachment"></a>示例（参考附件）
 
@@ -209,9 +205,14 @@ HTTP 201 Created
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Objective-C-snippets.md)]
 
 ---
 
@@ -227,6 +228,8 @@ HTTP 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/post-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"

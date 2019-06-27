@@ -4,12 +4,12 @@ description: 检索组织已获取的商业订阅列表。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 26f8e83373e97907d9ce113626e8a09c01df793a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: df70ad62c5aae23d65b7ffe4e4f8a79efcd59f94
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657383"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271496"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -99,6 +99,8 @@ Content-length: 547
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_subscribedskus-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_subscribedskus-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,6 +115,7 @@ Content-length: 547
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/subscribedsku-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/subscribedsku-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/subscribedsku-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

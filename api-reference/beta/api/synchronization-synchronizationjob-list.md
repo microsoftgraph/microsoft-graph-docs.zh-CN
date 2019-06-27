@@ -2,12 +2,12 @@
 title: 列出同步作业
 description: 列出给定应用程序实例 (服务主体) 的现有作业。
 localization_priority: Normal
-ms.openlocfilehash: eb933168d3f3673f076e275ad99e56b8a46888e0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8c6f03805ce359669870c61c608a8181f7bf7338
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638072"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271370"
 ---
 # <a name="list-synchronization-jobs"></a>列出同步作业
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ##### <a name="response"></a>响应
 响应示例如下所示。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -99,12 +99,14 @@ Content-length: 2958
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_jobs-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_jobs-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_jobs-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -119,6 +121,7 @@ Content-length: 2958
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/synchronization-synchronizationjob-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationjob-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

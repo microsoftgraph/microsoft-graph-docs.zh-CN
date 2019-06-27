@@ -3,12 +3,12 @@ title: 列出 schemaExtension
 description: '获取您在当前租户中拥有的任何应用程序创建的 schemaExtension 对象的列表 (可 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: eb01bb41fefc8f7eaf4c1778df6d84fe780c2e3f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 98a1906ddee85ef27a28f90e3624058bad97624c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603634"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277362"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -88,12 +88,14 @@ Content-length: 274
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_schemaextensions-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_schemaextensions-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_schemaextensions-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,6 +115,7 @@ Content-length: 274
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

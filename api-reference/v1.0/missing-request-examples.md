@@ -2,12 +2,12 @@
 title: 将 /me 定义为单一实例
 description: 必须在文档中添加以下内容, 以确保 Markdown-扫描程序
 localization_priority: Normal
-ms.openlocfilehash: d3130362ea0790a91c4a6f6a3f1e7465584872d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 62d222b2e6b3145371f3eac564236dc75d222315
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951240"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273463"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 
@@ -36,6 +36,8 @@ Content-Type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_current_user-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_current_user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -62,6 +64,8 @@ Content-Type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_drive_from_id-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_drive_from_id-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -89,6 +93,8 @@ Content-Type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_users-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -103,6 +109,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

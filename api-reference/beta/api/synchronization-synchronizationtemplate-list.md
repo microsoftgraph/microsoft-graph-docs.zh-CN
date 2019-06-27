@@ -2,12 +2,12 @@
 title: 列出现有同步模板
 description: 列出与给定应用程序或服务主体相关联的同步模板。
 localization_priority: Normal
-ms.openlocfilehash: 9b810d3054d11891fbeb56ec02200b84b9dca4bc
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 01ddd6f02bfab06be6e2111e6bd0169492449b9d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638065"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271230"
 ---
 # <a name="list-existing-synchronization-templates"></a>列出现有同步模板
 
@@ -83,12 +83,14 @@ HTTP/1.1 200 OK
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_synchronizationtemplate-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_synchronizationtemplate-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_synchronizationtemplate-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -103,6 +105,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -3,12 +3,12 @@ title: 获取最近的用户活动
 description: " #C1. 该服务将查询最近的 historyItems, 然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。"
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 709723dfb728c169c8b596675dc26308dd60dac5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79818c371547b90719d2128ff806c875a7bd47fa
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33608377"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272728"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
@@ -139,12 +139,14 @@ Content-Type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_recent_activities-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_recent_activities-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_recent_activities-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -157,6 +159,7 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: get_recent_activities/container/contentInfo:

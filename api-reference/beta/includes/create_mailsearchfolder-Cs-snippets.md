@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: fbeeae776efbea0ae1aab65c9719e4177862c5a5
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: ea6cb94b3c7204233c7387058ef4da371631d434
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34546626"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269620"
 ---
 ```csharp
 
@@ -13,16 +13,16 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
-    DisplayName = "Get MyAnalytics",
+    DisplayName = "Weekly digests",
     IncludeNestedFolders = true,
-    SourceFolderIDs = new List<String>()
+    SourceFolderIds = new List<String>()
     {
-        "AAMkAGVmMDEzM"
+        "AQMkADYAAAIBDAAAAA=="
     },
-    FilterQuery = "contains(subject, 'MyAnalytics')"
+    FilterQuery = "contains(subject, 'weekly digest')"
 };
 
-await graphClient.Me.MailFolders["searchfolders"].ChildFolders
+await graphClient.Me.MailFolders["AQMkADYAAAIBDAAAAA=="].ChildFolders
     .Request()
     .AddAsync(mailFolder);
 

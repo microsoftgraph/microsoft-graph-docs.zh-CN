@@ -4,12 +4,12 @@ description: 删除对话。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: b9c13c996b99874541a287d97a2669daf0a1825b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af498b79b42e4f56d8ed9c9ca5897cc0f2e1a03b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566113"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273834"
 ---
 # <a name="delete-conversation"></a>删除对话
 
@@ -59,6 +59,18 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_conversation-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_conversation-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_conversation-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -67,5 +79,10 @@ HTTP/1.1 204 No Content
   "description": "Delete conversation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversation-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/conversation-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversation-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

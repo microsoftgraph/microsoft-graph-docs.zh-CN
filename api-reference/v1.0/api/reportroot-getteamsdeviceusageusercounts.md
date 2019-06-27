@@ -4,12 +4,12 @@ description: 按设备类型获取 Microsoft Teams 每日唯一用户数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 964c16e41889fe84a260af4f477aa27d8e67e02f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 907a9b88afc254999a9eda242adbf3c1a896fe51
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603964"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277173"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -96,12 +96,14 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getteamsdeviceusageusercounts-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getteamsdeviceusageusercounts-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/reportroot_getteamsdeviceusageusercounts-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -125,6 +127,7 @@ Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getteamsdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/reportroot-getteamsdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/reportroot-getteamsdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: 检索 chartlineformat 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3d2cff07b2f8142565fcfd4ee5d677f7f1796a5b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5915c8b4c11f9d2b9ee8e59421f55a6bb8ae53d4
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522662"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272350"
 ---
 # <a name="get-chartlineformat"></a>获取 ChartLineFormat
 
@@ -71,6 +71,18 @@ Content-length: 28
   "color": "color-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_chartlineformat-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_chartlineformat-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_chartlineformat-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -79,5 +91,10 @@ Content-length: 28
   "description": "Get ChartLineFormat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/chartlineformat-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/chartlineformat-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/chartlineformat-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -4,16 +4,16 @@ description: 更新指定团队的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7b978dfa53d5d96469a68ae1376b8a1f9667c305
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a2d127070e35f5c09e4b59dcf1e9ae4b4e858267
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602312"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271755"
 ---
 # <a name="update-team"></a>更新团队
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 更新指定[团队](../resources/team.md)的属性。
 
@@ -34,6 +34,7 @@ ms.locfileid: "33602312"
 ```http
 PATCH /teams/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -55,7 +56,7 @@ PATCH /teams/{id}
   "name": "update_team"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -83,28 +84,29 @@ Content-length: 211
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_team-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_team-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_team-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update Team",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/team-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/team-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/team-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/team-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/team-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

@@ -4,12 +4,12 @@ description: "  组管理员代表课程中的教师。 如果使用的是委派
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 27f4a7c6227662660e677c25ec96f37cdbe553a4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9b2db664927c4059d0d95f6190d97a3a5121d956
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33616242"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271727"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -84,12 +84,14 @@ Content-length: 224
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationclass-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_educationclass-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_educationclass-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -103,6 +105,7 @@ Content-length: 224
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

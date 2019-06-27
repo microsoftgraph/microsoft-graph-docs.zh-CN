@@ -4,12 +4,12 @@ description: 新建用户。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a6181a50a3d2c4c980a291f532e2ab23eca32b68
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: b71049243d10f7f1e05dfe403f29cebef310f0f3
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992519"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269473"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -127,6 +127,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_user_from_users_2-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_user_from_users_2-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -147,6 +149,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

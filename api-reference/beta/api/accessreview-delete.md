@@ -4,12 +4,12 @@ description: 在 "Azure AD access 评论" 功能中, 删除 accessReview 对象�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e401dc19b4ea541e5c286298a6b02c0d773dd80b
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: d7a7434d4de008ce2a3f597636c30fcf014f3de8
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655479"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258980"
 ---
 # <a name="delete-accessreview"></a>删除 accessReview
 
@@ -69,6 +69,8 @@ HTTP/1.1 204 No Content
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_accessReview-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_accessReview-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -83,6 +85,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/accessreview-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/accessreview-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

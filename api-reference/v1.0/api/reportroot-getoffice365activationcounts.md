@@ -4,12 +4,12 @@ description: 获取桌面和设备上激活的 Office 365 订阅数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1180ed5730475801821d43379789c1d688919bba
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1f06d62434d1cd632cedeea5c720ee7e40487889
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33606697"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268731"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -90,12 +90,14 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getoffice365activationcounts-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getoffice365activationcounts-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/reportroot_getoffice365activationcounts-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -119,6 +121,7 @@ Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getoffice365activationcounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/reportroot-getoffice365activationcounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/reportroot-getoffice365activationcounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

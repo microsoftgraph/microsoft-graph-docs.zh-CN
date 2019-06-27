@@ -4,12 +4,12 @@ description: 检索组所属的 groupLifecyclePolicy 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 034b9d0ff3a61a976a61c19cd0be83ed49e6d1e9
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 5ace0257e6bf8389fc3149947903bfd7d64f4e82
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812787"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273519"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
@@ -85,6 +85,8 @@ Content-length: 222
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -98,6 +100,7 @@ Content-length: 222
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

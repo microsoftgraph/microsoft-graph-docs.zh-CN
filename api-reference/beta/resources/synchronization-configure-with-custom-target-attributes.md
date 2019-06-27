@@ -2,12 +2,12 @@
 title: 配置与自定义目标属性的同步
 description: 您可以自定义同步架构, 以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名`officeCode`为的新字段来自定义 Salesforce 订阅。 你将同步从 Azure Active Directory (Azure AD) 设置为 Salesforce, 对于每个用户, 将使用 Azure AD `officeCode`中的`extensionAttribute10`字段的值填充 Salesforce 中的字段。
 localization_priority: Normal
-ms.openlocfilehash: 698c6b1cd05f3146962c9ebd5bd0e52b264a3145
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4264776fff779345049ed1ab579f53eb4a515a1e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621275"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273477"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
 
@@ -184,12 +184,14 @@ Content-Type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_synchronizationschema-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -282,6 +284,7 @@ HTTP/1.1 201 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

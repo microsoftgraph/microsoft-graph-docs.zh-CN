@@ -2,12 +2,12 @@
 title: 创建 appRoleAssignment
 description: 使用此 API 创建新的 appRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: ddc2bf3b20113840928c0f0a558bda282171789e
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 4c6090dc3b6efa4bf3929800d21c8bf67f17845d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638544"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268997"
 ---
 # <a name="create-approleassignment"></a>创建 appRoleAssignment
 
@@ -85,12 +85,14 @@ Content-length: 253
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_approleassignment_from_serviceprincipal-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_approleassignment_from_serviceprincipal-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_approleassignment_from_serviceprincipal-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -105,6 +107,7 @@ Content-length: 253
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-post-approleassignments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/serviceprincipal-post-approleassignments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/serviceprincipal-post-approleassignments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

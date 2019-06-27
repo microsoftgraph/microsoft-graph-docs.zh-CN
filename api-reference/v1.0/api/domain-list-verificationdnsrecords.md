@@ -4,12 +4,12 @@ description: 检索 domainDnsRecord 对象的列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 91cfde034ce2633d7673fa88468504c11ed1e48a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c709137376d4544b45be9facf1d0d894fc5e120b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655640"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272105"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -102,6 +102,8 @@ Content-length: 220
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_verificationdnsrecords-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_verificationdnsrecords-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -115,6 +117,7 @@ Content-length: 220
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-list-verificationdnsrecords.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/domain-list-verificationdnsrecords.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/domain-list-verificationdnsrecords.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: 更新 groupLifecyclePolicy 资源类型对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 509b2f785e4130233ffc41aaad97647542ff7ab5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: f2e7e7fd27566476e224d5c58cbd12803b6c38aa
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592286"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262718"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 
@@ -45,7 +45,7 @@ PATCH /groupLifecyclePolicies/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|alternateNotificationEmails|字符串| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
+|alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
 |groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
 |managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。 |
 
@@ -72,7 +72,7 @@ Content-length: 151
 }
 ```
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处展示的响应对象。 
+注意：为简洁起见，可能会截断此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,12 +91,14 @@ Content-length: 146
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_grouplifecyclepolicy-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_grouplifecyclepolicy-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_grouplifecyclepolicy-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -111,6 +113,7 @@ Content-length: 146
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/grouplifecyclepolicy-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/grouplifecyclepolicy-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/grouplifecyclepolicy-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

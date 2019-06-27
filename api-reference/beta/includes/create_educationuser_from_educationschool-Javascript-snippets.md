@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 903796230c79bd412100af396bedae71175cd132
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 318c0d823523ae2511c6de20231478ad997c9d52
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34480902"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269648"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const educationUser = {
   @odata.id:"https://graph.microsoft.com/beta/education/users/14008"
 };
 
-let res = await client.api('/education/schools/'id'/users/$ref')
+let res = await client.api('/education/schools/{id}/users/$ref')
     .version('beta')
     .post({educationUser : educationUser});
 

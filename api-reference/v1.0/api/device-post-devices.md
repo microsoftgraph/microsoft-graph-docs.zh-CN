@@ -4,12 +4,12 @@ description: 在组织中创建并注册一个新设备。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 48e3c8786fda2651466514c445a96ae26d7dadc6
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c70c2f4f3ce4d1d81e9fc1c2df94c41d8683485e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656473"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272952"
 ---
 # <a name="create-device"></a>创建设备
 
@@ -105,6 +105,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_device_from_devices-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_device_from_devices-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -118,6 +120,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

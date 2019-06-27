@@ -4,12 +4,12 @@ description: 更新 OneNote 页面的内容。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: e1fb7a0feb748bf32f778da255cece67e4d3fc35
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9de057a4162a77b7c48729ed7e756cc94ba3cb38
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611392"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276655"
 ---
 # <a name="update-page"></a>更新页面
 
@@ -80,10 +80,14 @@ Content-length: 312
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_page-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_page-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_page-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -97,6 +101,8 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/page-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/page-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/page-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

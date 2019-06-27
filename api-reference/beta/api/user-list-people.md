@@ -4,12 +4,12 @@ description: 检索按其与用户的相关性排序的人员对象列表, 该�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: de07eaa4b3601c91ace9894e55bd4357fbb23881
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: a06315f8e345c51615f2bae0920ce903a6dc5528
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637190"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270033"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -177,12 +177,14 @@ Content-length: 1326
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_person_collection_beta-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_person_collection_beta-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -291,6 +293,7 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

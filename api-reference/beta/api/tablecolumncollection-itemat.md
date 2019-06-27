@@ -4,12 +4,12 @@ description: 根据其在集合中的位置获取列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a5093723197dab1bd282675634bbcbec7967f276
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8f5a9376550391819ceecc7e57ba84704b17d1f2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637715"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270880"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -92,6 +92,8 @@ Content-length: 81
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/tablecolumncollection_itemat-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/tablecolumncollection_itemat-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -106,6 +108,7 @@ Content-length: 81
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/tablecolumncollection-itemat.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/tablecolumncollection-itemat.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

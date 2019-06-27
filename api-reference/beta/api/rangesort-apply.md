@@ -4,12 +4,12 @@ description: 执行排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d060e1353a5e8de50c73f41f1831136395621bb5
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ed480b695787bd341cfc09177435745865ec1a8f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639521"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267513"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -45,7 +45,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |域|workbookSortField 集合|要用作排序依据的条件列表。|
-|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
+|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
 |orientation|string|可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。|
 |方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
@@ -99,12 +99,14 @@ Content-length: 358
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/rangesort_apply-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/rangesort_apply-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/rangesort_apply-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -119,6 +121,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

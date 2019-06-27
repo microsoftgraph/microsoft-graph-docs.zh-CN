@@ -3,12 +3,12 @@ title: 列出 secureScoreControlProfiles
 description: 检索 secureScoreControlProfiles 对象的属性和关系。
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 76e728975310e73a6424cb4bd47aed9e8668fb77
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f034e10f954f948d8739828c54685ff601788596
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951342"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273162"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -43,7 +43,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 - `$skip`
 - `$top` 将返回每个安全 API 提供程序的顶部聚合结果。  
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -146,6 +146,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_securescorecontrolprofiles-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofiles-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -159,6 +161,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/security-list-securescorecontrolprofiles.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/security-list-securescorecontrolprofiles.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/security-list-securescorecontrolprofiles.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

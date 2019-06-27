@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f60383d3173b15165e50a5db40a616b2914c6cb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548311"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276970"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -71,7 +71,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 | 值          | 说明
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | 拥有该链接的任何人都可以访问, 而无需登录。 这可能包括组织外部的人员。 管理员可能禁用了匿名链接支持。
-| `organization` | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for business 和 SharePoint 中可用。
+| `organization` | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
 
 
 ## <a name="response"></a>响应
@@ -124,6 +124,18 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-link-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-link-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-link-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="creating-company-sharable-links"></a>创建公司可共享的链接
 
@@ -167,6 +179,18 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-link-scoped-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-link-scoped-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-link-scoped-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="creating-embeddable-links"></a>创建可嵌入的链接
 
@@ -209,6 +233,18 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-embedded-link-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-embedded-link-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-embedded-link-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>注解
 
@@ -221,5 +257,14 @@ Content-Type: application/json
   "description": "Create a new sharing link for an item.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
-  "tocPath": "Sharing/Create link"
+  "tocPath": "Sharing/Create link",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-createlink.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

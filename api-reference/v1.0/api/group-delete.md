@@ -4,12 +4,12 @@ description: 介绍 Microsoft Graph API (REST) 的组资源 (实体) 的 delete 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 9d0680adc000f089ba54d3af7b1e84523025d367
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: ce17e757df90be495b8a374244f086580ffa24fb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812822"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275794"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -78,6 +78,8 @@ HTTP/1.1 204 No Content
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -91,6 +93,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

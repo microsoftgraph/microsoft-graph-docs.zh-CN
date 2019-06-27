@@ -4,12 +4,12 @@ description: 检索 chartfont 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 496d827765cc3d12d048f904179f79885a5b6675
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4e6a71955891147f311f50cd35f0ba25df91fa88
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580040"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272476"
 ---
 # <a name="get-chartfont"></a>获取 ChartFont
 
@@ -76,6 +76,18 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_chartfont-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_chartfont-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_chartfont-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +96,10 @@ Content-length: 134
   "description": "Get ChartFont",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/chartfont-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/chartfont-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/chartfont-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

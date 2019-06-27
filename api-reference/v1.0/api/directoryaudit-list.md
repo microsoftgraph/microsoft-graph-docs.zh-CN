@@ -4,12 +4,12 @@ description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体)
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 35d8a2dfe2c6a322f97b2a1e4719fee8ee7a1865
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c98c1dd10dac301947838023adaa40d9a59d365c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938748"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275584"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -21,7 +21,7 @@ ms.locfileid: "33938748"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AuditLog 和所有目录。全部读取。所有 |
+|委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用 | AuditLog.Read.All |
 
@@ -58,7 +58,7 @@ GET /auditLogs/directoryaudits
 |targetResource/any (t: t/displayName eq ' {value} ') | eq |
 |targetResources/any (x: startswith (x/displayName, "{value}"))| startswith|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -109,6 +109,8 @@ Content-length: 271
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -168,6 +170,7 @@ Content-length: 271
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: 更新 chartdatalabels 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 44eb2888a878d71b04017198f3eae7bc8a637097
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ad66f2cbf4d78c1fd3570d9e98184370b0ef075
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571434"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272518"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -41,11 +41,11 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 |:---------------|:--------|:----------|
 |position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为: `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
+|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
 |showValue|布尔|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
@@ -91,6 +91,18 @@ Content-length: 134
   "showLegendKey": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,5 +111,10 @@ Content-length: 134
   "description": "Update chartdatalabels",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
