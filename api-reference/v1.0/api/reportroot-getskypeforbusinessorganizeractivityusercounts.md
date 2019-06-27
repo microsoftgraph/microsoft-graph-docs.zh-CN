@@ -4,12 +4,12 @@ description: 获取使用情况趋势，即组织中用户召开和组织的会�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5c66e860e50db8f0da44f5f3f5f87c4fd342ae17
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0f6aafae83d47b44be57490b9a05351af00f9709
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33604342"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276172"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityusercounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityUserCounts
 
@@ -100,12 +100,14 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivityusercounts-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivityusercounts-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessorganizeractivityusercounts-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -129,6 +131,7 @@ Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dia
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessorganizeractivityusercounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessorganizeractivityusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessorganizeractivityusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,14 +4,16 @@ description: 检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9597ee46257576a4ebe23c8d8c8b4b7d1d753297
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 927b79c959dbf2d80c74d4e756f786e8e5203af2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597243"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265980"
 ---
 # <a name="get-notebook"></a>获取笔记本
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[笔记本](../resources/notebook.md)对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -56,7 +58,7 @@ GET /sites/{id}/onenote/notebooks/{id}
   "name": "get_notebook"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
+GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -74,6 +76,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -88,26 +91,31 @@ Content-length: 284
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_notebook-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_notebook-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_notebook-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get notebook",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/notebook-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

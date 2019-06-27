@@ -4,12 +4,12 @@ description: 检索 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: eed81ce74d7e90ba19e90d9d4280686f5716c73e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60ff12ccd4c27b42f55132ef383e600585989762
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562039"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276536"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>获取 plannerAssignedToTaskBoardTaskFormat
 
@@ -73,6 +73,18 @@ Content-length: 225
   "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_plannerassignedtotaskboardtaskformat-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_plannerassignedtotaskboardtaskformat-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_plannerassignedtotaskboardtaskformat-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -81,5 +93,10 @@ Content-length: 225
   "description": "Get plannerAssignedToTaskBoardTaskFormat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannerassignedtotaskboardtaskformat-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/plannerassignedtotaskboardtaskformat-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerassignedtotaskboardtaskformat-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

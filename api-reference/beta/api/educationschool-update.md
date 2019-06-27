@@ -4,14 +4,16 @@ description: 更新 school 对象的属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: dc7b2bac294d52dcd70a96770619e205a2e0b4b7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 76ffa0a72b4966b884733f2c178b874290982c18
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587704"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259547"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 school 对象的属性。
 
@@ -41,15 +43,15 @@ PATCH /education/schools/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName| 字符串| 学校的显示名称| 
-|说明| 字符串 | 学校描述| 
-|principalEmail| 字符串| 主体的电子邮件地址|
-|principalName| 字符串 | 主体名称|
-|externalPrincipalId| 字符串 | 同步系统中主体的 ID。 |
-|highestGrade|字符串| 教授的最高年级。 |
-|lowestGrade|字符串| 教授的最低年级。 |
-|schoolNumber|字符串| 学校编号。|
-|externalId|字符串| 同步系统中学校的 ID。 |
-|phone|字符串| 学校电话号码。 |
+|说明| String | 学校描述| 
+|principalEmail| String| 主体的电子邮件地址|
+|principalName| String | 主体名称|
+|externalPrincipalId| String | 同步系统中主体的 ID。 |
+|highestGrade|String| 教授的最高年级。 |
+|lowestGrade|String| 教授的最低年级。 |
+|schoolNumber|String| 学校编号。|
+|externalId|String| 同步系统中学校的 ID。 |
+|phone|String| 学校电话号码。 |
 |fax|String| 学校传真号码。 |
 |address|[physicalAddress](../resources/physicaladdress.md)| 学校地址。|
 |createdBy|[identitySet](../resources/identityset.md)|创建了学校的实体。|
@@ -64,7 +66,7 @@ PATCH /education/schools/{id}
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
+PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
 Content-length: 292
 
@@ -113,26 +115,31 @@ Content-length: 292
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_educationschool-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_educationschool-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_educationschool-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

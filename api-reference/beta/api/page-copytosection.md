@@ -4,12 +4,12 @@ description: 将页面复制到特定分区。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 5811772360cfd6c50a75d664396de6638078b31b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 12b7a1fa807ac6c552e39506978f6aa929ac93d6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596179"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267772"
 ---
 # <a name="page-copytosection"></a>页面: copyToSection
 
@@ -47,8 +47,8 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|siteCollectionId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
-|siteId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
 |id|String|必需。 目标部分的 id。|
 
@@ -86,12 +86,14 @@ Content-length: 52
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/page_copytosection-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/page_copytosection-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/page_copytosection-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -106,6 +108,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

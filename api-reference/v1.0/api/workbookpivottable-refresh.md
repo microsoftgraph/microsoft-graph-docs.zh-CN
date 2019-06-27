@@ -4,12 +4,12 @@ description: 刷新数据透视表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2674e3f060a90704280f50d7b9202075accb0ab6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 34aa7bce0a2ccbef7f7ff942b38b2c11c9ebb661
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600635"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278552"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
@@ -64,10 +64,14 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/piv
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -80,6 +84,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/workbookpivottable-refresh.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/workbookpivottable-refresh.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/workbookpivottable-refresh.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

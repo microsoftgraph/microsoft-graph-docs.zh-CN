@@ -4,12 +4,12 @@ description: 获取组成员的列表。 组可以将用户、设备和其他组
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 9c604853dcaca2f07105d3fb765c74d769836bd5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 30e989817f1b0f7134a242687d49c2ae14024989
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613773"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277838"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -23,9 +23,9 @@ ms.locfileid: "33613773"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.accessasuser.all、User.readbasic.all、用户、全部、用户、全部读取。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Read。 All, User。 All |
+|应用程序 | Read. All, User. All |
 
->**注意:** 若要列出隐藏的成员资格组的成员, 则需要使用 Read。 Hidden 权限是必需的。
+>**注意:** 若要列出隐藏的成员资格组的成员, 则需要使用 Read. Hidden 权限是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,12 +104,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_transitivemembers-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_group_transitivemembers-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -123,6 +125,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

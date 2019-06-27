@@ -4,12 +4,12 @@ description: 更新 eventMessage 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 275461657a892eb0803faf515e3dce8ce3346367
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 704f27852a6fd57437905b589f73e1b9032e1404
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33586208"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259050"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categories|String|与邮件关联的类别。|
-|重要性|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
+|importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
 |isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
@@ -96,12 +96,14 @@ Content-length: 248
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_eventmessage-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_eventmessage-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_eventmessage-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ Content-length: 248
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

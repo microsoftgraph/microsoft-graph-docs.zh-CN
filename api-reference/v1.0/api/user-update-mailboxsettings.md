@@ -1,17 +1,17 @@
 ---
-title: 更新用户的邮箱设置
-description: 更新用户邮箱的一个或多个设置。 这包括自动答复（收到发件人的电子邮件时自动通知发件人）、区域设置（语言和国家/地区）、时区和工作时间的设置。
+title: 获取用户的邮箱设置
+description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置 (在收到电子邮件时自动通知人员)、区域设置 (语言和国家/地区)、时区和工作时间。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7e206babe87154d9d5456f057fb4adcb711322ec
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
-ms.translationtype: HT
+ms.openlocfilehash: d8b03e004939e205ba3f8150e8072b07723c1d63
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601717"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278649"
 ---
-# <a name="update-user-mailbox-settings"></a>更新用户的邮箱设置
+# <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
 更新用户邮箱的一个或多个设置。这包括[自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）、[区域设置](../resources/localeinfo.md)（语言和国家/地区）、时区和[工作时间](../resources/workinghours.md)的设置。
 
@@ -48,7 +48,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为未来日期范围。|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](../resources/workinghours.md)|用户工作的小时数、一周的天数和时区。|
@@ -133,6 +133,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_mailboxsettings-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_mailboxsettings-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -242,6 +244,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #errors (score: 5)",
     "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

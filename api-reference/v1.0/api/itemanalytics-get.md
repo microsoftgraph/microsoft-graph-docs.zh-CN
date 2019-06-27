@@ -5,12 +5,12 @@ title: 获取 itemAnalytics
 description: 获取有关在此资源下发生的视图的 itemAnalytics。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3923237cd608207f0c06f4acd3bb241b2808605d
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: e416c9dbb40984466d279af60c7b6ea20fa68801
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34461606"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272091"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
@@ -99,6 +99,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-analytics-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-analytics-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -111,6 +113,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "BaseItem/Get analytics",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
   ]

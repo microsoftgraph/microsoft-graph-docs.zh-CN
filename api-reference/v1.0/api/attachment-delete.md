@@ -2,12 +2,12 @@
 title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
 localization_priority: Normal
-ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa1a031826c4e0875007ba63ea8cf21695d8e49b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551461"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272665"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -17,7 +17,7 @@ ms.locfileid: "32551461"
 
 * 如果访问邮件中的附件: 邮件。
 * 如果访问事件中的附件: 日历. 读写。
-* 如果访问组帖子中的附件: group. 全部。
+* 如果访问组帖子中的附件: Group. 全部。
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -108,6 +108,18 @@ DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_attachment-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_attachment-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -115,5 +127,10 @@ HTTP/1.1 204 No Content
   "description": "Delete attachment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 48a79739124f54267147599c69ec60f567d3ab85
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: d39eaec36272ce568677451211f5f52ec6898959
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34720877"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261437"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -95,6 +95,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_hostedcontents-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_hostedcontents-Javascript-snippets.md)]
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_hostedcontents-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -103,5 +115,10 @@ Content-type: application/json
   "description": "List hostedContents",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chatmessage-list-hostedcontents.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/chatmessage-list-hostedcontents.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/chatmessage-list-hostedcontents.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)"
+  ]
 }-->

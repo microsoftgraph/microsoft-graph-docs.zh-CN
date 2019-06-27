@@ -4,12 +4,12 @@ description: 更新 tiIndicator 对象的属性。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 55459b9d095738471d8e1f6b91244752b086b238
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 7948197515c5749f0e0691f81b8336699e32ae75
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536455"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270656"
 ---
 # <a name="update-tiindicator"></a>更新 tiIndicator
 
@@ -48,7 +48,7 @@ PATCH /security/tiIndicators/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|字符串| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。|
+|action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。|
 |activityGroupNames|String collection|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
 |confidence|Int32|一个整数, 表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0– 100, 100 的值为最高。|
@@ -147,6 +147,8 @@ HTTP/1.1 204 No Content
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_tiIndicator-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_tiIndicator-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -212,6 +214,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

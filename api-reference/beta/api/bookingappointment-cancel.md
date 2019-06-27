@@ -4,12 +4,12 @@ description: 在指定的 bookingbusiness 中取消指定的 bookingAppointment,
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c96ed0403e59f4b2dd357514168361fc3bc683f6
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: d2ef29421b5d79f30d8657a1caf05f5fae1e3890
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636532"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258238"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: 取消
 
@@ -42,7 +42,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|字符串|向客户确认约会已被取消的消息。|
+|cancellationMessage|String|向客户确认约会已被取消的消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -77,12 +77,14 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/bookingappointment_cancel-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/bookingappointment_cancel-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/bookingappointment_cancel-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -97,6 +99,7 @@ HTTP/1.1 204 No content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

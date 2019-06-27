@@ -4,12 +4,12 @@ description: 检索聊天成员。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d6ef2a6f0bb101b32831c24eb861e47f129103d8
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 034332ddf3a8575e82dd7f199d53b6e2d93a7b44
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536097"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261101"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -101,6 +101,8 @@ Content-length: 201
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_conversation_member-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_conversation_member-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -115,6 +117,7 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/conversationmember-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/conversationmember-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/conversationmember-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

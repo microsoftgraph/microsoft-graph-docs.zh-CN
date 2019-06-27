@@ -5,14 +5,16 @@ ms.date: 09/11/2017
 title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bbc9d7b98cc532a8bed10da622cb49509d339d5a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 891e85f120fc9521a38469b8ed6852b9d36c9b09
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598010"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264559"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从 [list][] 中删除项。
 
@@ -35,7 +37,7 @@ ms.locfileid: "33598010"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="optional-request-headers"></a>可选的请求标头
@@ -50,10 +52,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="example"></a>示例
 
-<!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="response"></a>响应
@@ -67,23 +69,28 @@ HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
 # <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete-item-site-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/delete-item-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete-item-site-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/delete-item-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete-item-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Delete",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

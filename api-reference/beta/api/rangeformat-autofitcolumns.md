@@ -4,12 +4,12 @@ description: 根据列中的当前数据更改当前范围的列宽，以达到�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d4f5a2f47ed1a546f9fd16f73c47a98b93e1d970
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8fc9f01072d5cad92f2fe427898d81df30a8aa39
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610434"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265455"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 
@@ -68,12 +68,14 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/rangeformat_autofitcolumns-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/rangeformat_autofitcolumns-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/rangeformat_autofitcolumns-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -88,6 +90,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/rangeformat-autofitcolumns.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/rangeformat-autofitcolumns.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/rangeformat-autofitcolumns.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

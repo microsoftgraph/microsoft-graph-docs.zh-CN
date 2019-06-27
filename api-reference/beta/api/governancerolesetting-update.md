@@ -2,12 +2,12 @@
 title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
 localization_priority: Normal
-ms.openlocfilehash: 6f6b9d0fb565532a4f610c6434843c1f09aa259d
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: 73a6d8ea95d4f691cef9fc3610f7e997e9fb5be8
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422288"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263516"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -95,6 +95,8 @@ HTTP/1.1 204 No Content
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_governancerolesetting-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_governancerolesetting-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -109,6 +111,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

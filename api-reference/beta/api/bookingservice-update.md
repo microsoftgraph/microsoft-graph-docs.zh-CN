@@ -4,12 +4,12 @@ description: 更新指定 bookingbusiness 中的 bookingService 对象的属性�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 607949e8c4b00230815fa8b29eba751494efb8b3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 98bade824541db13810071bc2a256c3daf06a887
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636007"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262564"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -29,7 +29,7 @@ ms.locfileid: "33636007"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订。全部, 全部预订。全部   |
+|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -56,9 +56,9 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |说明|String|服务的文本说明。|
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |isHiddenFromCustomers|Boolean|如果为 True, 则表示此服务不可供客户预订。|
-|notes|字符串|有关此服务的其他信息。|
+|notes|String|有关此服务的其他信息。|
 |postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
 |preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
@@ -92,12 +92,14 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingservice-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingservice-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -112,6 +114,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,14 +4,16 @@ description: 创建新课程。 此操作还会创建通用组。 当您使用�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 879ccfc058bbf98a79c1ecde24aa880d66bba7f9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6f3f70ad9f1b9cd95e99fec886bd3133e04ec59e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33588047"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259708"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新课程。 此操作还会创建通用组。 当使用此 API 创建课程时，会向组添加特殊属性，继而在 Microsoft Teams 中添加分配和特殊处理等功能。
 
@@ -50,7 +52,7 @@ POST /education/classes
   "name": "create_educationclass_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes
+POST https://graph.microsoft.com/beta/education/classes
 Content-type: application/json
 Content-length: 224
 
@@ -98,26 +100,31 @@ Content-length: 224
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_educationclass_from_educationroot-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_educationclass_from_educationroot-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_educationclass_from_educationroot-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationroot-post-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

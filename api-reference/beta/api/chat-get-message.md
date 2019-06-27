@@ -4,12 +4,12 @@ description: 在聊天中检索一条消息。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69ad1bf9c5d10acdcd96f46035f8d898a4916c01
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 41bdff9689c53c3e852b32ecf167b96b8d50ec85
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591667"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261549"
 ---
 # <a name="get-chat-message"></a>获取聊天消息
 
@@ -126,6 +126,8 @@ Content-length: 201
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_chat_message-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_chat_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -140,6 +142,7 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/chat-get-message.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

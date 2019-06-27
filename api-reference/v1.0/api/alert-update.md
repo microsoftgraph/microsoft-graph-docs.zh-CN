@@ -4,12 +4,12 @@ description: 在任何集成的解决方案中更新可编辑的**alert**属性,
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d448a7d23f7370650f7ab621fb0f467a3726bce1
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551506"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264832"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -39,7 +39,7 @@ PATCH /security/alerts/{alert_id}
 
 | 名称          | 说明              |
 |:--------------|:-------------------------|
-| Authorization | 持有者 {代码}。 必需。 |
+| Authorization | Bearer {code}。 必需。 |
 | Prefer        | return = 表示形式    |
 
 ## <a name="request-body"></a>请求正文
@@ -50,11 +50,11 @@ PATCH /security/alerts/{alert_id}
 |:------------------|:-----------------------------------------------------------------------|:--|
 | assignedTo        | String                                                                 | 为会审、调查或修正分配了警报的分析师的名称。 |
 | closedDateTime    | DateTimeOffset                                                         | 警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
-| comments          | String collection                                                      | 通知的分析师注释 (针对客户通知管理)。 |
-| 征求          | alertFeedback                                                          | 通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
-| 状态            | alertStatus                                                            | 警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
-| tags              | String 集合                                                      | 可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。 |
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 **提供程序和供应商字段是必需的。** |
+| comments          | 字符串集合                                                      | 通知的分析师注释 (针对客户通知管理)。 |
+| 反馈          | alertFeedback                                                          | 分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
+| status            | alertStatus                                                            | 警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
+| tags              | String collection                                                      | 可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。 |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应
 
@@ -111,6 +111,18 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_alert-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>示例 2: 具有首选标头的请求
 
@@ -179,5 +191,12 @@ Content-type: application/json
   "description": "Update alert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

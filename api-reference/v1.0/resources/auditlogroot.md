@@ -4,12 +4,12 @@ description: 包含不同类型的审核日志。 此资源返回 singleton audi
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a0f961850e0ef48776cf708348fcbacf4c9642c3
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: e1b86250d933b382198a2527112b60e03f908aef
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536034"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273470"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot 资源类型
 
@@ -80,6 +80,8 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_auditLogs-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_auditLogs-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -93,6 +95,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/resources/auditlogroot.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/resources/auditlogroot.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/resources/auditlogroot.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

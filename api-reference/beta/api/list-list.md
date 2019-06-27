@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 24ec21489d0a5100eef02d8f31fb63ba8b5cad7f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9ea4d8445d9a74a1d557f944427abecbea2a590d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598389"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264584"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取 [site][] 的 [lists][] 的集合。
 
@@ -32,17 +34,17 @@ ms.locfileid: "33598389"
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>响应
@@ -79,12 +81,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/enum-lists-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/enum-lists-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/enum-lists-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -96,14 +100,17 @@ Content-type: application/json
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Lists/Enumerate",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/list-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/list-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/list-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

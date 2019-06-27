@@ -4,12 +4,12 @@ description: 代表请求正文中指定的用户创建联机会议。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 00965b2509a37be6809e89e14043943c315bd0ae
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: bd4d68a5e93e9b1b0afe91129d83e40135e79cbf
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636476"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258427"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 
@@ -137,6 +137,8 @@ Content-Length: 1574
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create-onlinemeeting-from-application-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create-onlinemeeting-from-application-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -151,6 +153,7 @@ Content-Length: 1574
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

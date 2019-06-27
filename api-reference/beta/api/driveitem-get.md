@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a238e1dd459ee04d5c6c7c3453edaac2d569ed84
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: d55a6e4695887626bcce3c213dab989e345bd45c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589301"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260142"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。
 
@@ -65,7 +67,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 下面是用户的 OneDrive 的根文件夹请求示例。
 
-<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
 ```http
 GET /me/drive/root
@@ -108,16 +110,18 @@ Content-type: application/json
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
 # <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-drive-root-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/get-item-metadata-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/get-item-metadata-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-item-metadata-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>说明
 
 请参阅[错误响应][error-response]，详细了解错误返回方式。
 
@@ -126,14 +130,17 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Items/Get item",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

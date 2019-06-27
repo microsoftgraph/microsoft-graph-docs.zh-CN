@@ -3,12 +3,12 @@ title: 列出订阅
 description: " 有关详细信息, 请参阅以下方案。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 3728c3fcf2fe3d78b243894632a363804a2f92c8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 62985d912992c6a45ccbec0b6e4f1bbd977156db
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638695"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271454"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -22,9 +22,9 @@ ms.locfileid: "33638695"
 
 | 权限类型  | 权限（从最低特权到最高特权）  |
 |:---------------- |:-------------------------------------------- |
-| [委派](/graph/auth-v2-user)(工作或学校帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read。所有 (请参阅下面的)。 |
-| [委派](/graph/auth-v2-user)(个人 Microsoft 帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read。所有 (请参阅下面的)。 |
-| [应用程序](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
+| [委派](/graph/auth-v2-user)(工作或学校帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。 |
+| [委派](/graph/auth-v2-user)(个人 Microsoft 帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。 |
+| [Application](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
 
 响应结果基于调用应用的上下文。 以下是常见方案的摘要：
 
@@ -119,12 +119,14 @@ Content-length: 586
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_subscriptions-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_subscriptions-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -139,6 +141,7 @@ Content-length: 586
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
