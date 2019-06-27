@@ -4,46 +4,46 @@ description: 使用此 API 创建新事件。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 89398b5636734b50c983e5dbb3526b40982d767f
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: b37358619080b545fa217c2c9264b84571104538
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310888"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277789"
 ---
-# <a name="create-event"></a><span data-ttu-id="8b7a9-103">创建事件</span><span class="sxs-lookup"><span data-stu-id="8b7a9-103">Create event</span></span>
-<span data-ttu-id="8b7a9-104">使用此 API 新建[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-104">Use this API to create a new [event](../resources/event.md).</span></span>
+# <a name="create-event"></a><span data-ttu-id="cfc5c-103">创建事件</span><span class="sxs-lookup"><span data-stu-id="cfc5c-103">Create event</span></span>
+<span data-ttu-id="cfc5c-104">使用此 API 新建[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-104">Use this API to create a new [event](../resources/event.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8b7a9-105">权限</span><span class="sxs-lookup"><span data-stu-id="8b7a9-105">Permissions</span></span>
-<span data-ttu-id="8b7a9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cfc5c-105">权限</span><span class="sxs-lookup"><span data-stu-id="cfc5c-105">Permissions</span></span>
+<span data-ttu-id="cfc5c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b7a9-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8b7a9-108">Permission type</span></span>      | <span data-ttu-id="8b7a9-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8b7a9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cfc5c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="cfc5c-108">Permission type</span></span>      | <span data-ttu-id="cfc5c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cfc5c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b7a9-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8b7a9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8b7a9-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b7a9-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b7a9-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8b7a9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b7a9-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-113">Not supported.</span></span>    |
-|<span data-ttu-id="8b7a9-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8b7a9-114">Application</span></span> | <span data-ttu-id="8b7a9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-115">Not supported.</span></span> |
+|<span data-ttu-id="cfc5c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cfc5c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cfc5c-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cfc5c-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cfc5c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cfc5c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cfc5c-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-113">Not supported.</span></span>    |
+|<span data-ttu-id="cfc5c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="cfc5c-114">Application</span></span> | <span data-ttu-id="cfc5c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8b7a9-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8b7a9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cfc5c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cfc5c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8b7a9-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8b7a9-117">Request headers</span></span>
-| <span data-ttu-id="8b7a9-118">标头</span><span class="sxs-lookup"><span data-stu-id="8b7a9-118">Header</span></span>       | <span data-ttu-id="8b7a9-119">值</span><span class="sxs-lookup"><span data-stu-id="8b7a9-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cfc5c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="cfc5c-117">Request headers</span></span>
+| <span data-ttu-id="cfc5c-118">标头</span><span class="sxs-lookup"><span data-stu-id="cfc5c-118">Header</span></span>       | <span data-ttu-id="cfc5c-119">值</span><span class="sxs-lookup"><span data-stu-id="cfc5c-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8b7a9-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8b7a9-120">Authorization</span></span>  | <span data-ttu-id="8b7a9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cfc5c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfc5c-120">Authorization</span></span>  | <span data-ttu-id="cfc5c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8b7a9-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="8b7a9-123">Request body</span></span>
-<span data-ttu-id="8b7a9-124">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-124">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cfc5c-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="cfc5c-123">Request body</span></span>
+<span data-ttu-id="cfc5c-124">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-124">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8b7a9-125">响应</span><span class="sxs-lookup"><span data-stu-id="8b7a9-125">Response</span></span>
-<span data-ttu-id="8b7a9-126">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-126">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cfc5c-125">响应</span><span class="sxs-lookup"><span data-stu-id="cfc5c-125">Response</span></span>
+<span data-ttu-id="cfc5c-126">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-126">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b7a9-127">示例</span><span class="sxs-lookup"><span data-stu-id="8b7a9-127">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="8b7a9-128">请求</span><span class="sxs-lookup"><span data-stu-id="8b7a9-128">Request</span></span>
-<span data-ttu-id="8b7a9-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cfc5c-127">示例</span><span class="sxs-lookup"><span data-stu-id="cfc5c-127">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="cfc5c-128">请求</span><span class="sxs-lookup"><span data-stu-id="cfc5c-128">Request</span></span>
+<span data-ttu-id="cfc5c-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4"],
@@ -81,11 +81,11 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="8b7a9-130">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="cfc5c-130">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="8b7a9-131">响应</span><span class="sxs-lookup"><span data-stu-id="8b7a9-131">Response</span></span>
-<span data-ttu-id="8b7a9-132">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-132">The following is an example of the response.</span></span>
-><span data-ttu-id="8b7a9-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8b7a9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="cfc5c-131">响应</span><span class="sxs-lookup"><span data-stu-id="cfc5c-131">Response</span></span>
+<span data-ttu-id="cfc5c-132">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-132">The following is an example of the response.</span></span>
+><span data-ttu-id="cfc5c-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="cfc5c-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -175,13 +175,15 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8b7a9-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="8b7a9-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8b7a9-136">C#</span><span class="sxs-lookup"><span data-stu-id="8b7a9-136">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cfc5c-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="cfc5c-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cfc5c-136">C#</span><span class="sxs-lookup"><span data-stu-id="cfc5c-136">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_event_from_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8b7a9-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="8b7a9-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cfc5c-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="cfc5c-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_event_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cfc5c-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cfc5c-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -195,6 +197,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

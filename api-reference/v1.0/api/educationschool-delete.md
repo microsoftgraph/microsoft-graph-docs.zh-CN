@@ -4,46 +4,46 @@ description: 删除学校。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d7aca1273a963f9bb1b61caccffa1fec3b8a10f2
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1586cedf2a6cbf81d39619eb2787d93c1340667c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33615852"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275038"
 ---
-# <a name="delete-educationschool"></a><span data-ttu-id="38454-103">删除 educationSchool</span><span class="sxs-lookup"><span data-stu-id="38454-103">Delete educationSchool</span></span>
+# <a name="delete-educationschool"></a><span data-ttu-id="acab4-103">删除 educationSchool</span><span class="sxs-lookup"><span data-stu-id="acab4-103">Delete educationSchool</span></span>
 
-<span data-ttu-id="38454-104">删除学校。</span><span class="sxs-lookup"><span data-stu-id="38454-104">Delete a school.</span></span>
+<span data-ttu-id="acab4-104">删除学校。</span><span class="sxs-lookup"><span data-stu-id="acab4-104">Delete a school.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="38454-105">权限</span><span class="sxs-lookup"><span data-stu-id="38454-105">Permissions</span></span>
-<span data-ttu-id="38454-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="38454-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="acab4-105">权限</span><span class="sxs-lookup"><span data-stu-id="acab4-105">Permissions</span></span>
+<span data-ttu-id="acab4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="acab4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="38454-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="38454-108">Permission type</span></span>      | <span data-ttu-id="38454-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="38454-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="acab4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="acab4-108">Permission type</span></span>      | <span data-ttu-id="acab4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="acab4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="38454-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="38454-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="38454-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="38454-111">Not supported.</span></span>  |
-|<span data-ttu-id="38454-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="38454-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="38454-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="38454-113">Not supported.</span></span>  |
-|<span data-ttu-id="38454-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="38454-114">Application</span></span> | <span data-ttu-id="38454-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38454-115">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="acab4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acab4-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="acab4-111">不支持。</span><span class="sxs-lookup"><span data-stu-id="acab4-111">Not supported.</span></span>  |
+|<span data-ttu-id="acab4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acab4-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="acab4-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="acab4-113">Not supported.</span></span>  |
+|<span data-ttu-id="acab4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="acab4-114">Application</span></span> | <span data-ttu-id="acab4-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acab4-115">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="38454-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="38454-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="acab4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="acab4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/schools/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="38454-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="38454-117">Request headers</span></span>
-| <span data-ttu-id="38454-118">标头</span><span class="sxs-lookup"><span data-stu-id="38454-118">Header</span></span>       | <span data-ttu-id="38454-119">值</span><span class="sxs-lookup"><span data-stu-id="38454-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="acab4-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="acab4-117">Request headers</span></span>
+| <span data-ttu-id="acab4-118">标头</span><span class="sxs-lookup"><span data-stu-id="acab4-118">Header</span></span>       | <span data-ttu-id="acab4-119">值</span><span class="sxs-lookup"><span data-stu-id="acab4-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="38454-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="38454-120">Authorization</span></span>  | <span data-ttu-id="38454-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="38454-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="acab4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="acab4-120">Authorization</span></span>  | <span data-ttu-id="acab4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="acab4-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="38454-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="38454-123">Request body</span></span>
-<span data-ttu-id="38454-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="38454-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="acab4-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="acab4-123">Request body</span></span>
+<span data-ttu-id="acab4-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="acab4-124">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="38454-125">响应</span><span class="sxs-lookup"><span data-stu-id="38454-125">Response</span></span>
-<span data-ttu-id="38454-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="38454-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="acab4-125">响应</span><span class="sxs-lookup"><span data-stu-id="acab4-125">Response</span></span>
+<span data-ttu-id="acab4-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="acab4-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="38454-128">示例</span><span class="sxs-lookup"><span data-stu-id="38454-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="38454-129">请求</span><span class="sxs-lookup"><span data-stu-id="38454-129">Request</span></span>
-<span data-ttu-id="38454-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="38454-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="acab4-128">示例</span><span class="sxs-lookup"><span data-stu-id="acab4-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="acab4-129">请求</span><span class="sxs-lookup"><span data-stu-id="acab4-129">Request</span></span>
+<span data-ttu-id="acab4-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="acab4-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationschool"
@@ -51,8 +51,8 @@ DELETE /education/schools/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```
-##### <a name="response"></a><span data-ttu-id="38454-131">响应</span><span class="sxs-lookup"><span data-stu-id="38454-131">Response</span></span>
-<span data-ttu-id="38454-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="38454-132">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="acab4-131">响应</span><span class="sxs-lookup"><span data-stu-id="acab4-131">Response</span></span>
+<span data-ttu-id="acab4-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="acab4-132">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -61,13 +61,15 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="38454-133">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="38454-133">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="38454-134">语言</span><span class="sxs-lookup"><span data-stu-id="38454-134">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="acab4-133">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="acab4-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="acab4-134">C#</span><span class="sxs-lookup"><span data-stu-id="acab4-134">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_educationschool-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="38454-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="38454-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="acab4-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="acab4-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_educationschool-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="acab4-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="acab4-136">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_educationschool-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -81,6 +83,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/educationschool-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/educationschool-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
