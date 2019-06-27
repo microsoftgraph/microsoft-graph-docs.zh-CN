@@ -1,18 +1,16 @@
 ---
 title: 获取订阅
 description: 检索订阅的属性和关系。
-localization_priority: Normal
+localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 0597ca754c04e684eeeca7f8e798904dea4df10c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e89c58b22302b018133c23b0dbbfaa5a3c0cc5c9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603166"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279205"
 ---
 # <a name="get-subscription"></a>获取订阅
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索订阅的属性和关系。
 
@@ -41,6 +39,7 @@ ms.locfileid: "33603166"
 
   - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
   - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。
+ 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +56,7 @@ GET /subscriptions/{id}
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
-|:-----------|:-----|:-----------|
+|:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
@@ -79,7 +78,7 @@ GET /subscriptions/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/subscriptions/{id}
+GET https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
 ##### <a name="response"></a>响应
@@ -87,7 +86,7 @@ GET https://graph.microsoft.com/beta/subscriptions/{id}
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -114,22 +113,23 @@ Content-length: 252
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_subscription-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_subscription-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get subscription",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/subscription-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/subscription-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/subscription-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/subscription-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/subscription-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->
