@@ -3,28 +3,28 @@ title: 还原 ListItem 的以前版本
 description: 将 ListItem 的以前版本还原为当前版本。 这将使用以前版本的内容创建一个新版本，但保留项的所有现有版本。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7e2dc6518b3d2cc1b12599802d0493b85a8dcbc6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ff3a9149113ee03aade7c7e2ea943a2bd6446a9a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613899"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271979"
 ---
-# <a name="restore-a-previous-version-of-a-listitem"></a><span data-ttu-id="2aac9-104">还原 ListItem 的以前版本</span><span class="sxs-lookup"><span data-stu-id="2aac9-104">Restore a previous version of a ListItem</span></span>
+# <a name="restore-a-previous-version-of-a-listitem"></a><span data-ttu-id="ebc86-104">还原 ListItem 的以前版本</span><span class="sxs-lookup"><span data-stu-id="ebc86-104">Restore a previous version of a ListItem</span></span>
 
-<span data-ttu-id="2aac9-105">将 ListItem 的以前版本还原为当前版本。</span><span class="sxs-lookup"><span data-stu-id="2aac9-105">Restore a previous version of a ListItem to be the current version.</span></span> <span data-ttu-id="2aac9-106">这将使用以前版本的内容创建一个新版本，但保留项的所有现有版本。</span><span class="sxs-lookup"><span data-stu-id="2aac9-106">This will create a new version with the contents of the previous version, but preserves all existing versions of the item.</span></span>
+<span data-ttu-id="ebc86-105">将 ListItem 的以前版本还原为当前版本。</span><span class="sxs-lookup"><span data-stu-id="ebc86-105">Restore a previous version of a ListItem to be the current version.</span></span> <span data-ttu-id="ebc86-106">这将使用以前版本的内容创建一个新版本，但保留项的所有现有版本。</span><span class="sxs-lookup"><span data-stu-id="ebc86-106">This will create a new version with the contents of the previous version, but preserves all existing versions of the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2aac9-107">权限</span><span class="sxs-lookup"><span data-stu-id="2aac9-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ebc86-107">权限</span><span class="sxs-lookup"><span data-stu-id="ebc86-107">Permissions</span></span>
 
-<span data-ttu-id="2aac9-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2aac9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ebc86-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ebc86-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="2aac9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2aac9-110">Permission type</span></span>             |         <span data-ttu-id="2aac9-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2aac9-111">Permissions (from least to most privileged)</span></span>          |
+|            <span data-ttu-id="ebc86-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ebc86-110">Permission type</span></span>             |         <span data-ttu-id="ebc86-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ebc86-111">Permissions (from least to most privileged)</span></span>          |
 | :------------------------------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="2aac9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2aac9-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="2aac9-113">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="2aac9-113">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
-| <span data-ttu-id="2aac9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2aac9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2aac9-115">无</span><span class="sxs-lookup"><span data-stu-id="2aac9-115">n/a</span></span>                                                          |
-| <span data-ttu-id="2aac9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2aac9-116">Application</span></span>                            | <span data-ttu-id="2aac9-117">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="2aac9-117">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
+| <span data-ttu-id="ebc86-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ebc86-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ebc86-113">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="ebc86-113">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
+| <span data-ttu-id="ebc86-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ebc86-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebc86-115">无</span><span class="sxs-lookup"><span data-stu-id="ebc86-115">n/a</span></span>                                                          |
+| <span data-ttu-id="ebc86-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ebc86-116">Application</span></span>                            | <span data-ttu-id="ebc86-117">Sites.ReadWrite.All、Sites.Manage.All、Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="ebc86-117">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2aac9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2aac9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ebc86-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ebc86-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,13 +33,13 @@ POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
-### <a name="request-body"></a><span data-ttu-id="2aac9-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="2aac9-119">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="ebc86-119">请求正文</span><span class="sxs-lookup"><span data-stu-id="ebc86-119">Request body</span></span>
 
-<span data-ttu-id="2aac9-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="2aac9-120">No request body is required.</span></span>
+<span data-ttu-id="ebc86-120">无需请求正文。</span><span class="sxs-lookup"><span data-stu-id="ebc86-120">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2aac9-121">示例</span><span class="sxs-lookup"><span data-stu-id="2aac9-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ebc86-121">示例</span><span class="sxs-lookup"><span data-stu-id="ebc86-121">Example</span></span>
 
-<span data-ttu-id="2aac9-122">本示例还原由 `{item-id}` 和 `{version-id}` 标识的 listItem 的一个版本。</span><span class="sxs-lookup"><span data-stu-id="2aac9-122">This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.</span></span>
+<span data-ttu-id="ebc86-122">本示例还原由 `{item-id}` 和 `{version-id}` 标识的 listItem 的一个版本。</span><span class="sxs-lookup"><span data-stu-id="ebc86-122">This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.</span></span>
 
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite sites.readwrite.all", "target": "action", "tags": "service.graph service.sharepoint" } -->
 
@@ -47,22 +47,24 @@ POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/rest
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
-## <a name="response"></a><span data-ttu-id="2aac9-123">响应</span><span class="sxs-lookup"><span data-stu-id="2aac9-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ebc86-123">响应</span><span class="sxs-lookup"><span data-stu-id="ebc86-123">Response</span></span>
 
-<span data-ttu-id="2aac9-124">如果成功，该 API 调用会返回 `204 No Content`。</span><span class="sxs-lookup"><span data-stu-id="2aac9-124">If successful, the API call returns a `204 No Content`.</span></span>
+<span data-ttu-id="ebc86-124">如果成功，该 API 调用会返回 `204 No Content`。</span><span class="sxs-lookup"><span data-stu-id="ebc86-124">If successful, the API call returns a `204 No Content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="2aac9-125">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="2aac9-125">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="2aac9-126">语言</span><span class="sxs-lookup"><span data-stu-id="2aac9-126">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ebc86-125">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ebc86-125">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ebc86-126">C#</span><span class="sxs-lookup"><span data-stu-id="ebc86-126">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/restore-item-version-listItem-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2aac9-127">Javascript</span><span class="sxs-lookup"><span data-stu-id="2aac9-127">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ebc86-127">Javascript</span><span class="sxs-lookup"><span data-stu-id="ebc86-127">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/restore-item-version-listItem-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ebc86-128">目标-C</span><span class="sxs-lookup"><span data-stu-id="ebc86-128">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/restore-item-version-listItem-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -74,6 +76,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "Items/Copy",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/listitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/listitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/listitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
