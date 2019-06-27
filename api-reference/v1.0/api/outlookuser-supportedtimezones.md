@@ -4,32 +4,32 @@ description: 获取用户支持的时区列表，就像在用户的邮箱服务�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b77c50e65f4709925a2a2b979ba5828503050352
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 087a79b1765033a68d429339a507d4833a0809b1
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611606"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274289"
 ---
-# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="f2f02-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="f2f02-103">outlookUser: supportedTimeZones</span></span>
+# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="46baa-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="46baa-103">outlookUser: supportedTimeZones</span></span>
 
-<span data-ttu-id="f2f02-104">获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。</span><span class="sxs-lookup"><span data-stu-id="f2f02-104">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="46baa-104">获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。</span><span class="sxs-lookup"><span data-stu-id="46baa-104">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="f2f02-105">可以显式指定以 Windows 时区格式返回时区，或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式返回。</span><span class="sxs-lookup"><span data-stu-id="f2f02-105">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="f2f02-106">Windows 时区是默认格式。</span><span class="sxs-lookup"><span data-stu-id="f2f02-106">The Windows format is the default.</span></span>
+<span data-ttu-id="46baa-105">可以显式指定以 Windows 时区格式返回时区，或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式返回。</span><span class="sxs-lookup"><span data-stu-id="46baa-105">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="46baa-106">Windows 时区是默认格式。</span><span class="sxs-lookup"><span data-stu-id="46baa-106">The Windows format is the default.</span></span>
 
-<span data-ttu-id="f2f02-107">在设置 Outlook 客户端时，用户从此受支持的列表中选择首选时区。</span><span class="sxs-lookup"><span data-stu-id="f2f02-107">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="f2f02-108">随后可以通过[获取用户的邮箱设置](user-get-mailboxsettings.md)获取首选时区。</span><span class="sxs-lookup"><span data-stu-id="f2f02-108">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="46baa-107">在设置 Outlook 客户端时，用户从此受支持的列表中选择首选时区。</span><span class="sxs-lookup"><span data-stu-id="46baa-107">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="46baa-108">随后可以通过[获取用户的邮箱设置](user-get-mailboxsettings.md)获取首选时区。</span><span class="sxs-lookup"><span data-stu-id="46baa-108">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="f2f02-109">权限</span><span class="sxs-lookup"><span data-stu-id="f2f02-109">Permissions</span></span>
-<span data-ttu-id="f2f02-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2f02-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="46baa-109">权限</span><span class="sxs-lookup"><span data-stu-id="46baa-109">Permissions</span></span>
+<span data-ttu-id="46baa-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="46baa-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2f02-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2f02-112">Permission type</span></span>      | <span data-ttu-id="f2f02-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2f02-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="46baa-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="46baa-112">Permission type</span></span>      | <span data-ttu-id="46baa-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="46baa-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f2f02-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2f02-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f2f02-115">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="f2f02-115">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="f2f02-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2f02-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2f02-117">User.Read</span><span class="sxs-lookup"><span data-stu-id="f2f02-117">User.Read</span></span>    |
-|<span data-ttu-id="f2f02-118">Application</span><span class="sxs-lookup"><span data-stu-id="f2f02-118">Application</span></span> | <span data-ttu-id="f2f02-119">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2f02-119">User.Read.All</span></span> |
+|<span data-ttu-id="46baa-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="46baa-114">Delegated (work or school account)</span></span> | <span data-ttu-id="46baa-115">User.Read、User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="46baa-115">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="46baa-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="46baa-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46baa-117">User.Read</span><span class="sxs-lookup"><span data-stu-id="46baa-117">User.Read</span></span>    |
+|<span data-ttu-id="46baa-118">Application</span><span class="sxs-lookup"><span data-stu-id="46baa-118">Application</span></span> | <span data-ttu-id="46baa-119">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="46baa-119">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f2f02-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2f02-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46baa-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="46baa-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedTimeZones
@@ -39,26 +39,26 @@ GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStan
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="f2f02-121">函数参数</span><span class="sxs-lookup"><span data-stu-id="f2f02-121">Function parameters</span></span>
-| <span data-ttu-id="f2f02-122">参数</span><span class="sxs-lookup"><span data-stu-id="f2f02-122">Parameter</span></span>       | <span data-ttu-id="f2f02-123">类型</span><span class="sxs-lookup"><span data-stu-id="f2f02-123">Type</span></span> | <span data-ttu-id="f2f02-124">说明</span><span class="sxs-lookup"><span data-stu-id="f2f02-124">Description</span></span>|
+## <a name="function-parameters"></a><span data-ttu-id="46baa-121">函数参数</span><span class="sxs-lookup"><span data-stu-id="46baa-121">Function parameters</span></span>
+| <span data-ttu-id="46baa-122">参数</span><span class="sxs-lookup"><span data-stu-id="46baa-122">Parameter</span></span>       | <span data-ttu-id="46baa-123">类型</span><span class="sxs-lookup"><span data-stu-id="46baa-123">Type</span></span> | <span data-ttu-id="46baa-124">说明</span><span class="sxs-lookup"><span data-stu-id="46baa-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f2f02-125">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="f2f02-125">TimeZoneStandard</span></span>  | <span data-ttu-id="f2f02-126">timeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="f2f02-126">timeZoneStandard</span></span>  | <span data-ttu-id="f2f02-127">时区格式。</span><span class="sxs-lookup"><span data-stu-id="f2f02-127">A time zone format.</span></span> <span data-ttu-id="f2f02-128">支持的值：`Windows` 和 `Iana`。</span><span class="sxs-lookup"><span data-stu-id="f2f02-128">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="f2f02-129">可选。</span><span class="sxs-lookup"><span data-stu-id="f2f02-129">Optional.</span></span> |
+| <span data-ttu-id="46baa-125">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="46baa-125">TimeZoneStandard</span></span>  | <span data-ttu-id="46baa-126">timeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="46baa-126">timeZoneStandard</span></span>  | <span data-ttu-id="46baa-127">时区格式。</span><span class="sxs-lookup"><span data-stu-id="46baa-127">A time zone format.</span></span> <span data-ttu-id="46baa-128">支持的值：`Windows` 和 `Iana`。</span><span class="sxs-lookup"><span data-stu-id="46baa-128">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="46baa-129">可选。</span><span class="sxs-lookup"><span data-stu-id="46baa-129">Optional.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="f2f02-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="f2f02-130">Request headers</span></span>
-| <span data-ttu-id="f2f02-131">名称</span><span class="sxs-lookup"><span data-stu-id="f2f02-131">Name</span></span>       | <span data-ttu-id="f2f02-132">类型</span><span class="sxs-lookup"><span data-stu-id="f2f02-132">Type</span></span> | <span data-ttu-id="f2f02-133">说明</span><span class="sxs-lookup"><span data-stu-id="f2f02-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="46baa-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="46baa-130">Request headers</span></span>
+| <span data-ttu-id="46baa-131">名称</span><span class="sxs-lookup"><span data-stu-id="46baa-131">Name</span></span>       | <span data-ttu-id="46baa-132">类型</span><span class="sxs-lookup"><span data-stu-id="46baa-132">Type</span></span> | <span data-ttu-id="46baa-133">说明</span><span class="sxs-lookup"><span data-stu-id="46baa-133">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f2f02-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2f02-134">Authorization</span></span>  | <span data-ttu-id="f2f02-135">string</span><span class="sxs-lookup"><span data-stu-id="f2f02-135">string</span></span>  | <span data-ttu-id="f2f02-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f2f02-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="46baa-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="46baa-134">Authorization</span></span>  | <span data-ttu-id="46baa-135">string</span><span class="sxs-lookup"><span data-stu-id="46baa-135">string</span></span>  | <span data-ttu-id="46baa-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="46baa-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f2f02-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="f2f02-138">Request body</span></span>
-<span data-ttu-id="f2f02-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f2f02-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46baa-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="46baa-138">Request body</span></span>
+<span data-ttu-id="46baa-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="46baa-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f2f02-140">响应</span><span class="sxs-lookup"><span data-stu-id="f2f02-140">Response</span></span>
-<span data-ttu-id="f2f02-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [timeZoneInformation](../resources/timezoneinformation.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="f2f02-141">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="46baa-140">响应</span><span class="sxs-lookup"><span data-stu-id="46baa-140">Response</span></span>
+<span data-ttu-id="46baa-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [timeZoneInformation](../resources/timezoneinformation.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="46baa-141">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f2f02-142">示例</span><span class="sxs-lookup"><span data-stu-id="f2f02-142">Example</span></span>
+## <a name="example"></a><span data-ttu-id="46baa-142">示例</span><span class="sxs-lookup"><span data-stu-id="46baa-142">Example</span></span>
 
-##### <a name="request-1"></a><span data-ttu-id="f2f02-143">请求 1</span><span class="sxs-lookup"><span data-stu-id="f2f02-143">Request 1</span></span>
-<span data-ttu-id="f2f02-144">以下示例未指定 `timeZoneStandard` 参数，并获取以 Windows 时区格式表示的受支持的时区列表。</span><span class="sxs-lookup"><span data-stu-id="f2f02-144">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
+##### <a name="request-1"></a><span data-ttu-id="46baa-143">请求 1</span><span class="sxs-lookup"><span data-stu-id="46baa-143">Request 1</span></span>
+<span data-ttu-id="46baa-144">以下示例未指定 `timeZoneStandard` 参数，并获取以 Windows 时区格式表示的受支持的时区列表。</span><span class="sxs-lookup"><span data-stu-id="46baa-144">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_default"
@@ -67,8 +67,8 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a><span data-ttu-id="f2f02-145">响应 1</span><span class="sxs-lookup"><span data-stu-id="f2f02-145">Response 1</span></span>
-<span data-ttu-id="f2f02-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f2f02-146">Here is an example of the response.</span></span> 
+##### <a name="response-1"></a><span data-ttu-id="46baa-145">响应 1</span><span class="sxs-lookup"><span data-stu-id="46baa-145">Response 1</span></span>
+<span data-ttu-id="46baa-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="46baa-146">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -102,19 +102,21 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f2f02-147">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f2f02-147">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f2f02-148">语言</span><span class="sxs-lookup"><span data-stu-id="f2f02-148">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="46baa-147">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="46baa-147">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="46baa-148">C#</span><span class="sxs-lookup"><span data-stu-id="46baa-148">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_supportedtimezones_default-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2f02-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2f02-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="46baa-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="46baa-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_supportedtimezones_default-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="46baa-150">目标-C</span><span class="sxs-lookup"><span data-stu-id="46baa-150">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_supportedtimezones_default-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request-2"></a><span data-ttu-id="f2f02-150">请求 2</span><span class="sxs-lookup"><span data-stu-id="f2f02-150">Request 2</span></span>
-<span data-ttu-id="f2f02-151">以下示例指定 `TimeZoneStandard` 参数的 `Iana`，并获取以 IANA 格式表示的受支持的时区列表。</span><span class="sxs-lookup"><span data-stu-id="f2f02-151">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
+##### <a name="request-2"></a><span data-ttu-id="46baa-151">请求 2</span><span class="sxs-lookup"><span data-stu-id="46baa-151">Request 2</span></span>
+<span data-ttu-id="46baa-152">以下示例指定 `TimeZoneStandard` 参数的 `Iana`，并获取以 IANA 格式表示的受支持的时区列表。</span><span class="sxs-lookup"><span data-stu-id="46baa-152">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -125,8 +127,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="f2f02-152">响应 2</span><span class="sxs-lookup"><span data-stu-id="f2f02-152">Response 2</span></span>
-<span data-ttu-id="f2f02-153">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f2f02-153">Here is an example of the response.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="46baa-153">响应 2</span><span class="sxs-lookup"><span data-stu-id="46baa-153">Response 2</span></span>
+<span data-ttu-id="46baa-154">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="46baa-154">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -162,13 +164,15 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f2f02-154">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f2f02-154">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f2f02-155">语言</span><span class="sxs-lookup"><span data-stu-id="f2f02-155">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="46baa-155">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="46baa-155">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="46baa-156">C#</span><span class="sxs-lookup"><span data-stu-id="46baa-156">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_supportedtimezones_iana-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2f02-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2f02-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="46baa-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="46baa-157">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_supportedtimezones_iana-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="46baa-158">目标-C</span><span class="sxs-lookup"><span data-stu-id="46baa-158">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_supportedtimezones_iana-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -183,6 +187,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
