@@ -4,12 +4,12 @@ description: '创建答复邮件的草稿以包含注释或更新任何邮件属
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8c117eda36feda59db0fd3d9a599ce65a705d4c5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 17f5815aa481400c1f15fe04d4234fbb27625550
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598303"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266071"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
@@ -135,12 +135,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/message_createreply-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/message_createreply-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/message_createreply-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -155,6 +157,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/message-createreply.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/message-createreply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/message-createreply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

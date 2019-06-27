@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取 SharePoint 网站
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 45311e25b5cdb65310efaadffc6a05a703125a47
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 3ca3df695fb72e332d65c9d6f989b4b9a8ec59cd
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602949"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279231"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
 
@@ -72,7 +70,7 @@ GET /groups/{group-id}/sites/root
 
 ### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-site" } -->
+<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}
@@ -88,12 +86,6 @@ Content-type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
-  "owner": {
-    "user": {
-      "displayName": "Daron Spektor",
-      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
-    }
-  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
@@ -108,20 +100,21 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-site-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/site-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+} -->
