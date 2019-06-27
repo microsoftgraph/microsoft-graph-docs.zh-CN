@@ -4,12 +4,12 @@ description: " 检索 alert 对象的属性和关系。"
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 36629363a3f55a654554dcbbde8bfdc113de1f37
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0fab817aca955f7829237249ae7370c11a0a4a8a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551440"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273750"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -21,9 +21,9 @@ ms.locfileid: "32551440"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  securityevents.readwrite.all、securityevents.readwrite.all 和所有   |
+|委派（工作或学校帐户） |  SecurityEvents.Read.All，SecurityEvents.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | securityevents.readwrite.all、securityevents.readwrite.all 和所有 |
+|应用程序 | SecurityEvents.Read.All，SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,7 @@ GET /security/alerts/{alert_id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -45,7 +45,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。 如果从提供程序返回的状态代码或者提供程序超时, 则响应将是一个`206 Partial Content`状态代码, 提供程序的响应在警告标头中。 有关详细信息, 请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -231,6 +231,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alert-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_alert-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -239,5 +251,10 @@ Content-type: application/json
   "description": "Get glert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
