@@ -319,6 +319,8 @@ items:
                 href: extensibility-open-users.md
               - name: 使用架构扩展（示例）
                 href: extensibility-schema-groups.md
+          - name: 使用 Postman
+            href: use-postman.md
       - name: 迁移
         expanded: false
         items:
@@ -365,6 +367,38 @@ items:
             href: sdks/create-client.md
           - name: 选择验证提供程序
             href: sdks/choose-authentication-providers.md
+      - name: 使用工具包（预览版）
+        items:
+          - name: 工具包概述
+            href: toolkit/overview.md
+          - name: 组件
+            items:
+              - name: 登录
+                href: toolkit/components/login.md
+              - name: 人员
+                href: toolkit/components/person.md
+              - name: 人员
+                href: toolkit/components/people.md
+              - name: 日程
+                href: toolkit/components/agenda.md
+              - name: 任务
+                href: toolkit/components/tasks.md
+          - name: 提供程序
+            items:
+              - name: 使用提供程序
+                href: toolkit/providers.md
+              - name: Msal 提供程序
+                href: toolkit/providers/msal.md
+              - name: SharePoint 提供程序
+                href: toolkit/providers/sharepoint.md
+              - name: Microsoft Teams 提供程序
+                href: toolkit/providers/teams.md
+              - name: 自定义提供程序
+                href: toolkit/providers/custom.md
+          - name: 对组件进行样式设置
+            href: toolkit/style.md
+          - name: 组件模板化
+            href: toolkit/templates.md
       - name: 资源
         expanded: true
         items:
