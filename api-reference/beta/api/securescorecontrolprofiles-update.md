@@ -2,12 +2,12 @@
 title: 更新 secureScoreControlProfiles
 description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfiles 属性以更改各种属性, 如 "分配给/分配" 或 "tenantNote"。
 localization_priority: Normal
-ms.openlocfilehash: 8808a73536a67d8ed4ed50f0e5dc8c05707130fa
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: d1ffdf5897a055ad526dad2e82523ef040aedcb1
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638779"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269039"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -47,8 +47,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|tenantNote|字符串|控件上的分析师注释 (针对客户控制管理)。|
-|controlStateUpdates| 字符串|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
+|tenantNote|String|控件上的分析师注释 (针对客户控制管理)。|
+|controlStateUpdates| String|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
 ## <a name="response"></a>响应
@@ -89,12 +89,14 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -110,6 +112,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: 在用户邮箱中的默认任务组 (`My Tasks`) 和默认任务�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f508aa05ad70246584ebc33bfaabc9317205011d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2fc92b6148daa9844f813d400464567b04fc3a2f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596088"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269144"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 
@@ -79,9 +79,9 @@ Content-length: 276
 ##### <a name="response"></a>响应
 POST 方法忽略请求正文中**startDateTime**和**dueDateTime**的时间部分, 并假定指定时区 (EST) 中的时间始终为午夜。
 
-由于`Prefer`标头指定了 Pst, 因此 POST 方法表示 pst 中的响应中所有与日期相关的属性。 特别是对于**startDateTime**和**DUEDATETIME**属性, POST 方法将 EST 中的午夜转换为 pst, 并在响应中将其返回到 pst 中。
+由于`Prefer`标头指定了 pst, 因此 POST 方法表示 pst 中的响应中所有与日期相关的属性。 特别是对于**startDateTime**和**DUEDATETIME**属性, POST 方法将 EST 中的午夜转换为 pst, 并在响应中将其返回到 pst 中。
 
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,12 +125,14 @@ Content-length: 576
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_outlooktask_from_outlookuser-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_outlooktask_from_outlookuser-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_outlooktask_from_outlookuser-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -145,6 +147,7 @@ Content-length: 576
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/outlookuser-post-tasks.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/outlookuser-post-tasks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/outlookuser-post-tasks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

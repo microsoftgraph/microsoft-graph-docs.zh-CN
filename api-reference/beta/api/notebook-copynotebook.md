@@ -4,12 +4,12 @@ description: 将笔记本复制到目标文档库中的 "笔记本" 文件夹。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: b0299f930d4059539d7e54eba45020f3fd7db2f9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 86ca434713218d00a72f598dea710a0b47ff3d1f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597796"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266414"
 ---
 # <a name="notebook-copynotebook"></a>笔记本: copyNotebook
 
@@ -47,10 +47,10 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|siteCollectionId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
-|siteId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
-|renameAs|字符串|副本的名称。 默认值为现有项目的名称。 |
+|renameAs|String|副本的名称。 默认值为现有项目的名称。 |
 
 ## <a name="response"></a>响应
 
@@ -86,12 +86,14 @@ Content-length: 108
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/notebook_copynotebook-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/notebook_copynotebook-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/notebook_copynotebook-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -106,6 +108,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/notebook-copynotebook.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/notebook-copynotebook.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/notebook-copynotebook.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

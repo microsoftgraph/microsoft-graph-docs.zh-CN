@@ -4,12 +4,12 @@ description: 更新指定通道的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 568236babb70a709f2c76e2804129adcbfdc0b03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 32aac6f769c3d9b28f5ce4167665cf9870568410
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328076"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262081"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -17,7 +17,7 @@ ms.locfileid: "33328076"
 
 更新指定[通道](../resources/channel.md)的属性。
 
-> **注意**: 应用程序权限和此 API 存在一个已知问题。 有关详细信息, 请参阅[已知问题列表](/graph/known-issues#application-permissions)。
+> **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[通道](../resources/channel.md)对象的 JSON 表示形式。
+在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -75,6 +75,14 @@ Content-length: 201
     "displayName": "display-name-value",
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/patch_channel-Objective-C-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,6 +93,8 @@ Content-length: 201
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-patch.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
+  ]
 }
 -->

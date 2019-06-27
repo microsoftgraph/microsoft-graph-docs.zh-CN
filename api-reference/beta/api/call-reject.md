@@ -4,12 +4,12 @@ description: 拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3a9d3f8a7c25b2617e3fa97c9e872eaba92d17e4
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 718cb80f6b60e3e664c0a209fa91eb74a34691d7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635727"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262214"
 ---
 # <a name="call-reject"></a>呼叫: 拒绝
 
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|在于|字符串|拒绝原因。|
+|在于|String|拒绝原因。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
@@ -137,12 +137,14 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/call-reject-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-reject-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/call-reject-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -185,6 +187,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-reject.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/call-reject.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-reject.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

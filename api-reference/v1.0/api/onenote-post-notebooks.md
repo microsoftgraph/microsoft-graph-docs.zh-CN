@@ -4,12 +4,12 @@ description: 创建新的 OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: b7194458e1bac49079da623400eb932979491358
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0f10795b6295b0aba4298bb238a33545b7cacc38
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611768"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274450"
 ---
 # <a name="create-notebook"></a>创建笔记本
 
@@ -40,7 +40,7 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供笔记本的名称。 
 
-笔记本名称必须是唯一的。 名称不能超过128个字符, 也不能包含以下字符: ?\/*: <> | ' "
+笔记本名称必须是唯一的。 名称不能超过128个字符, 也不能包含以下字符:？\/*: <>| ' "
 
 ## <a name="response"></a>响应
 
@@ -93,12 +93,14 @@ Content-length: 284
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_notebook_from_onenote-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_notebook_from_onenote-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_notebook_from_onenote-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -112,6 +114,7 @@ Content-length: 284
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/onenote-post-notebooks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

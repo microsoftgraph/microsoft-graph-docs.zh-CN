@@ -4,14 +4,16 @@ description: 向课程添加教师。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: dec472894196d2e2b47be63221a266d627bc90d4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 34a83f8d37e9dcbfc67c9748a2dfeb87a3dd4e74
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587737"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259757"
 ---
 # <a name="add-teacher"></a>添加教师
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 向课程添加教师。
 
@@ -50,12 +52,12 @@ POST /education/classes/{id}/teachers/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
+POST https://graph.microsoft.com/beta/education/classes/11017/teachers/$ref
 Content-type: application/json
 Content-length: 508
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/education/users/14011"
+  "@odata.id":"https://graph.microsoft.com/beta/education/users/14011"
 }
 ```
 
@@ -79,19 +81,24 @@ HTTP/1.1 204 No Content
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_educationuser_from_educationclass-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_educationuser_from_educationclass-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationclass-post-teachers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/educationclass-post-teachers.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/educationclass-post-teachers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

@@ -1,19 +1,19 @@
 ---
 title: 获取 websocket 终结点
-description: 不支持在生产应用程序中使用这些 API。
+description: 在生产应用程序中不支持使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 03dbaf8522005c2bb0c038c8ba885becc41f72dc
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ce3b93cbf9de3523225343ae8659cb09bd08e310
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591811"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260282"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-不支持在生产应用程序中使用这些 API。
+在生产应用程序中不支持使用这些 API。
 
 允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。
 Socket.io 是适用于 JavaScript 的热门通知库, 可利用 Websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
@@ -27,8 +27,8 @@ Socket.io 是适用于 JavaScript 的热门通知库, 可利用 Websocket。 若
 
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
-| 委派（工作或学校帐户）     | 文件。读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read, 文件。 ReadWrite, 全部文件。
+| 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
+| 委派（个人 Microsoft 帐户） | Read, 文件. ReadWrite, 全部文件。
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -70,12 +70,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -111,6 +113,7 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
