@@ -2,12 +2,12 @@
 title: 更新 privilegedRoleSettings
 description: 更新给定角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 17f813a72fb88948bd8906924c312ad9fce1dd79
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a20fed06c15e6eacfb62491b3f1dd930327363f2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593807"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267674"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -46,7 +46,7 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|激活角色的持续时间。 必需。|
 |id|string|角色设置的唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|布尔|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必需。|
+|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必需。|
 |lastGlobalAdmin|Boolean|仅供内部使用。|
 |maxElavationDuration|duration|已激活角色的最长持续时间。 必需。|
 |mfaOnElevation|Boolean|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。 必需。|
@@ -96,12 +96,14 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
