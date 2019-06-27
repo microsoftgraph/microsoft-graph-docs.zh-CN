@@ -4,14 +4,16 @@ description: 获取为用户收件箱定义的所有 messageRule 对象。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1e004e3474f6acc0502ddbbe7246b476fffe1095
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 031ab80ea28fc2bf711764e71513405935a515d9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598099"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266680"
 ---
 # <a name="list-rules"></a>列出规则
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取为用户收件箱定义的所有 [messageRule](../resources/messagerule.md) 对象。
 
@@ -27,8 +29,8 @@ ms.locfileid: "33598099"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messageRules
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
+GET /me/mailFolders/inbox/messagerules
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -46,11 +48,10 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
+GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -65,7 +66,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Me/mailFolders('inbox')/messageRules",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Me/mailFolders('inbox')/messageRules",
   "value":[
     {
       "id":"AQAAAJ5dZp8=",
@@ -113,26 +114,31 @@ Content-type: application/json
 
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_messagerules-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_messagerules-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_messagerules-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List rules",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-list-messagerules.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-list-messagerules.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/mailfolder-list-messagerules.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/mailfolder-list-messagerules.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/mailfolder-list-messagerules.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

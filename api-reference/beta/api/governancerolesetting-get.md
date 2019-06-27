@@ -2,12 +2,12 @@
 title: 获取 governanceRoleSetting
 description: 检索 governanceRoleSetting 的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 988fc237e76c0ec653fff768a617a08d33a6998e
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+ms.openlocfilehash: 8b47e06162da61e06b89df3758ddc775c050a41e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422344"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263502"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -119,6 +119,8 @@ Content-length: 370
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_governancerolesetting-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -133,6 +135,7 @@ Content-length: 370
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/governancerolesetting-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/governancerolesetting-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

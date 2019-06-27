@@ -4,12 +4,12 @@ description: 删除现有类别。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7cb8704d0ab48ae60b31675b9df75f3ad5070c1d
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: f9545471be06a31d664db343a214c7a96c5c9023
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750057"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259862"
 ---
 # <a name="delete-educationcategory"></a>删除 educationCategory
 
@@ -76,16 +76,15 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCatego
 ```http
 HTTP/1.1 204 No Content
 ```
-
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-
 # <a name="ctabcs"></a>[C#](#tab/cs)
-
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_educationassignment-Objective-C-snippets.md)]
 
 ---
 
@@ -101,6 +100,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/educationcategory-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/educationcategory-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/educationcategory-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

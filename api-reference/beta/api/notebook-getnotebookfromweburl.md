@@ -4,14 +4,16 @@ description: 使用 URL 路径检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c726f3ace6663676317ac0a9578b68881d33ee65
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a27f787cdedf77f0ea4237067f537d6756bcc2bc
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961270"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266400"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>笔记本: getNotebookFromWebUrl
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用其 URL 路径检索[笔记本](../resources/notebook.md)对象的属性和关系。
 
@@ -56,7 +58,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
   "name": "notebook_fromweburl"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/GetNotebookFromWebUrl
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/GetNotebookFromWebUrl
 Content-type: application/json
 
 {"webUrl":"webUrl value"}
@@ -101,6 +103,8 @@ Content-Length: 544
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -113,7 +117,8 @@ Content-Length: 544
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/notebook-getnotebookfromweburl.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

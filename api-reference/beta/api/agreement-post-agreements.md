@@ -2,12 +2,12 @@
 title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
-ms.openlocfilehash: 47f5c6572192f08dbbd3f954f9dd30678269c8e0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9dac257b60f76cb39998fc10d7539061750bd57b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636588"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258595"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -42,9 +42,9 @@ POST /agreements
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
-|files/fileName|字符串|协议文件的名称 (例如, TOU)。|
+|files/fileName|String|协议文件的名称 (例如, TOU)。|
 |files/isDefault|Boolean|指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。 如果没有任何文件被标记为默认值, 则第一项将被视为默认值。|
-|文件/语言|字符串|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
+|文件/语言|String|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
 |files/fileData/data|Binary|表示使用 PDF 文档的术语的数据。|
 
 ## <a name="response"></a>响应
@@ -96,12 +96,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

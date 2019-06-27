@@ -4,12 +4,12 @@ description: '转发邮件、添加注释或修改任何可更新的属性  '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 144e33afedd7b3536789ab9226f5111eb54d0380
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 65da496594c2b3bca70410552166be7a4ed55fcb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598503"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266078"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
@@ -99,12 +99,14 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/message_forward-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/message_forward-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/message_forward-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -119,6 +121,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/message-forward.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/message-forward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/message-forward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: 删除现有工作分配。 只有课堂中的教师才能删除工
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 10a66116b9fb3443cce72641fd8ffb7f63d6fee0
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 408e5495a816de2832a3ac18d40110cd79c1b979
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750036"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259939"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 
@@ -75,16 +75,15 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/1900
 ```http
 HTTP/1.1 204 No Content
 ```
-
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-
 # <a name="ctabcs"></a>[C#](#tab/cs)
-
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_educationassignment-Objective-C-snippets.md)]
 
 ---
 
@@ -100,6 +99,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

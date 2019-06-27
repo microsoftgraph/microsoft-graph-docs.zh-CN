@@ -2,12 +2,12 @@
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: dc27edc71956c64d91dcc85e72ddd6c3cd65c793
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 99b02ac432eab2e0fe8f2b860b92e03719404b2c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537467"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264153"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -103,6 +103,8 @@ Content-length: 304
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -117,6 +119,7 @@ Content-length: 304
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

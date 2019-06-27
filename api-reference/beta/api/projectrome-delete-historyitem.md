@@ -3,12 +3,12 @@ title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 0e55b38b2db41b5ecd92bd8dee5ba8e0559ba745
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5a3cac83c220a8fa15a3d5277af319117bd7c927
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337209"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264062"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -76,6 +76,14 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_historyItem-Objective-C-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
@@ -86,6 +94,8 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-delete-historyitem.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
+  ]
 }
 -->

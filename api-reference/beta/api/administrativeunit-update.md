@@ -4,12 +4,12 @@ description: 更新 administrativeUnit 对象的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: adf8d355c9e693ef1c79b0b774dc859e7a8d4f26
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 587d23c067f75a4a31decb68606e118fafa7632b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655213"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258630"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -45,7 +45,7 @@ PATCH /administrativeUnits/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|string|管理单元的说明。|
-|displayName|字符串|管理单元的显示名称。|
+|displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置, 则默认值为 "public"。 可以设置为 "HiddenMembership", 这将隐藏非成员的成员资格。|
 
 由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**administrativeUnit**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
@@ -91,6 +91,8 @@ HTTP/1.1 204 No Content
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_administrativeunit-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_administrativeunit-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -114,6 +116,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

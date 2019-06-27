@@ -4,12 +4,12 @@ description: 更新 contact 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 381aa191639e32677d4fccbf9e9f48c99f3d988f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d8a6d344326d1dfb03a23fc21e7e21680a827dd
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566148"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277495"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |department|String|联系人所在的部门。|
-|displayName|String|联系人的显示名称。 请注意, 对其他属性的后续更新可能会导致自动生成的值覆盖您指定的 displayName 值。 若要保留预先存在的值, 请始终在更新操作中将其包含为 displayName。|
+|displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) 集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
 |generation|String|联系人所属的代。|
@@ -81,9 +81,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|字符串|联系人的职位。|
+|title|String|联系人的职位。|
 |yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
-|yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
+|yomiGivenName|字符串|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
 ## <a name="response"></a>响应
@@ -184,6 +184,18 @@ Content-length: 1977
   "children": []
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_contact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_contact-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_contact-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -192,5 +204,10 @@ Content-length: 1977
   "description": "Update contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

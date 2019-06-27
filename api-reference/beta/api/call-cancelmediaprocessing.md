@@ -4,12 +4,12 @@ description: 取消所有正在进行的任何 PlayPrompt 或记录操作的媒�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b77868957de367cc2889627726375e48054c209c
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: d8edab0c5f7e78e81edad8914c1a636213a62919
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635804"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262340"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用: cancelMediaProcessing
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 | 参数      | 类型    | 说明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
 | 各种            | Boolean | 指示是否停止所有操作或当前操作的标志。 |
-| 适用  | 字符串  | 客户端上下文。                                            |
+| 适用  | String  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
@@ -84,12 +84,14 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -134,6 +136,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

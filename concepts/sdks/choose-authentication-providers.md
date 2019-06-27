@@ -3,22 +3,43 @@ title: 选择 Microsoft Graph 身份验证提供程序
 description: 了解如何为您的应用程序选择特定于方案的身份验证提供程序。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 5061b38249f31a6eea959ecec94899337bf57326
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8f69312b4993320e76e2fe46a2977d98c0a42c93
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630193"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275556"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-oauth-flow"></a>根据 OAuth 流选择 Microsoft Graph 身份验证提供程序
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>根据应用场景选择 Microsoft Graph 身份验证提供程序
 
-身份验证提供程序通过抽象身份验证客户端库所需的参数简化了获取访问令牌的方法。 Microsoft Graph 身份验证提供程序通过为每个平台提供适配器简化了 Microsoft 身份验证库 (MSAL) 的使用。 这些适配器处理应用程序的令牌获取。 Microsoft Graph 身份验证提供程序映射到 OAuth 授予流。 您需要知道要用于应用程序的 OAuth 授予流, 以便为您的应用程序选择适当的身份验证提供程序。
+身份验证提供程序实现使用 Microsoft 身份验证库 (MSAL) 获取令牌所需的代码;处理一些可能的错误, 如增量许可、过期密码和有条件访问等情况。, 然后设置 HTTP 请求授权标头。 下表列出了与不同[应用程序类型](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types)的方案相匹配的提供程序集。
 
-## <a name="authorization-code-oauth-flow"></a>授权代码 OAuth 流
+|应用场景 | 流/授予 | 受众 | 提供程序|
+|--|--|--|--|
+| [单页面应用程序](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
+| | 隐式 | 委派的消费者/组织 |[隐式提供程序](#ImplicitProvider) |
+| [调用 web Api 的 web 应用程序](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
+| | 授权代码 | 委派的消费者/组织 | [授权代码提供程序](#AuthCodeProvider) |
+| | 客户端凭据  | 仅限应用 | [客户端凭据提供程序](#ClientCredentialsProvider) |
+| [调用 web Api 的 Web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
+| | 代表 | 委派的消费者/组织 | [代表提供程序](#OnBehalfOfProvider) |
+| | 客户端凭据  | 仅限应用 | [客户端凭据提供程序](#ClientCredentialsProvider) |
+| [调用 web Api 的桌面应用程序](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
+| | Interactive | 委派的消费者/组织 | [交互式提供程序](#InteractiveProvider) |
+| | 集成的 Windows | 委派的组织 | [集成 Windows 提供程序](#IntegratedWindowsProvider) |
+| | 资源所有者  | 委派的组织 | [用户名/密码提供程序](#UsernamePasswordProvider) |
+| | 设备代码  | 委派的组织 | [设备代码提供程序](#DeviceCodeProvider) |
+| [守护程序应用](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
+| | 客户端凭据  | 仅限应用 | [客户端凭据提供程序](#ClientCredentialsProvider) |
+| [调用 web Api 的移动应用程序](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
+| | Interactive | 委派的消费者/组织 | [交互式提供程序](#InteractiveProvider) |
+
+
+## <a name="a-nameauthcodeproviderauthorization-code-provider"></a><a name="AuthCodeProvider"/>授权代码提供程序
 
 授权代码流使本机应用程序和 web 应用能够安全地获取用户名称中的令牌。 若要了解详细信息, 请参阅[Microsoft identity platform 和 OAuth 2.0 授权代码流](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication clientApplication = AuthorizationCodeProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
@@ -58,11 +79,11 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
 
 ---
 
-## <a name="client-credential-oauth-flow"></a>客户端凭据 OAuth 流
+##  <a name="a-nameclientcredentialsproviderclient-credentials-provider"></a><a name="ClientCredentialsProvider"/>客户端凭据提供程序
 
 客户端凭据流使服务应用程序可以在没有用户交互的情况下运行。 访问基于应用程序的标识。 有关详细信息, 请参阅[Microsoft identity platform 和 OAuth 2.0 客户端凭据流](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication clientApplication = ClientCredentialProvider.CreateClientApplication(clientId, clientCredential);
@@ -102,11 +123,11 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
 
 ---
 
-## <a name="on-behalf-of-oauth-flow"></a>代表 OAuth 流
+##  <a name="a-nameonbehalfofprovideron-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>代表提供程序
 
 当应用程序调用在其中打开 Microsoft Graph API 的服务/web API 时, 代表流是适用的。 若要了解详细信息, 请阅读[Microsoft identity platform 和 OAuth 2.0 代表流](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication clientApplication = OnBehalfOfProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
@@ -139,11 +160,11 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(clientApplication, scop
 
 ---
 
-## <a name="implicit-grant-oauth-flow"></a>隐式授予 OAuth 流
+## <a name="a-nameimplicitproviderimplicit-provider"></a><a name="ImplicitProvider"/>隐式提供程序
 
 隐式授予流在基于浏览器的应用程序中使用。 有关详细信息, 请参阅[Microsoft identity platform 和隐式授予流](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 不适用。
 
@@ -191,11 +212,11 @@ const client = Client.initWithMiddleware(options);
 
 ---
 
-## <a name="device-code-oauth-flow"></a>设备代码 OAuth 流
+##  <a name="a-namedevicecodeproviderdevice-code-provider"></a><a name="DeviceCodeProvider"/>设备代码提供程序
 
 设备代码流允许通过其他设备登录设备。 有关详细信息, 请参阅[Microsoft identity platform 和 OAuth 2.0 设备代码流](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = DeviceCodeProvider.CreateClientApplication(clientId);
@@ -228,11 +249,11 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(clientApplication, scop
 
 ---
 
-## <a name="integrated-windows-flow"></a>集成的 Windows 流
+##  <a name="a-nameintegratedwindowsproviderintegrated-windows-provider"></a><a name="IntegratedWindowsProvider"/>集成 Windows 提供程序
 
 集成的 Windows 流为 Windows 计算机提供了一种在加入域时无提示地获取访问令牌的方法。 有关详细信息, 请参阅[集成 Windows 身份验证](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = IntegratedWindowsAuthenticationProvider.CreateClientApplication(clientId);
@@ -265,11 +286,11 @@ IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuth
 
 ---
 
-## <a name="interactive-flow"></a>交互流
+##  <a name="a-nameinteractiveproviderinteractive-provider"></a><a name="InteractiveProvider"/>交互式提供程序
 
 移动应用程序 (Xamarin 和 UWP) 和桌面应用程序使用交互流, 以在用户的名称中调用 Microsoft Graph。 有关详细信息, 请参阅[以交互方式获取令牌](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = InteractiveAuthenticationProvider.CreateClientApplication(clientId);
@@ -324,13 +345,13 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ---
 
-## <a name="resource-owner-password-credential-grant-oauth-flow"></a>资源所有者密码凭据授予 OAuth 流
+##  <a name="a-nameusernamepasswordproviderusernamepassword-provider"></a><a name="UsernamePasswordProvider"/>用户名/密码提供程序
 
-资源所有者密码凭据流允许应用程序使用用户名和密码登录用户。 仅当您不能使用任何其他 OAuth 流时, 才使用此流。 有关详细信息, 请参阅[Microsoft identity platform 和 OAuth 2.0 资源所有者密码凭据](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
+用户名/密码提供程序允许应用程序使用用户名和密码登录用户。 仅当您不能使用任何其他 OAuth 流时, 才使用此流。 有关详细信息, 请参阅[Microsoft identity platform 和 OAuth 2.0 资源所有者密码凭据](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = UsernamePasswordProvider.CreateClientApplication(clientId);

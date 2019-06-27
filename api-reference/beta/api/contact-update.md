@@ -4,12 +4,12 @@ description: 更新 contact 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3a0f730976b01f6e247c199b9989bc8e9ca82c0a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 95b19ff61cf39b9ad36c220ff7b4c4f5dd8cffce
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591468"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261304"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -53,36 +53,36 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assistantName|字符串|联系人助理的姓名。|
+|assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。|
-|categories|字符串|与联系人关联的类别。|
-|children|字符串||
-|companyName|字符串|联系人所在公司的名称。|
-|department|字符串|联系人所在的部门。|
-|displayName|字符串|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
+|categories|String|与联系人关联的类别。|
+|children|String||
+|companyName|String|联系人所在公司的名称。|
+|department|String|联系人所在的部门。|
+|displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)集合|联系人的电子邮件地址。|
-|fileAs|字符串|联系人备案的姓名。|
-|gender |字符串 |联系人的性别。 |
-|generation|字符串|联系人所属的代。|
-|givenName|字符串|联系人的名。|
-|imAddresses|字符串|联系人的即时消息 (IM) 地址。|
-|initials|字符串|联系人的姓名缩写。|
-|jobTitle|字符串|联系人的职务。|
-|manager|字符串|联系人经理的姓名。
-|middleName|字符串|联系人的中间名。|
-|nickName|字符串|联系人的昵称。|
-|officeLocation|字符串|联系人的办公室位置。|
+|fileAs|String|联系人备案的姓名。|
+|gender |String |联系人的性别。 |
+|generation|String|联系人所属的代。|
+|givenName|String|联系人的名。|
+|imAddresses|String|联系人的即时消息 (IM) 地址。|
+|initials|String|联系人的姓名缩写。|
+|jobTitle|String|联系人的职务。|
+|manager|String|联系人经理的姓名。
+|middleName|String|联系人的中间名。|
+|nickName|String|联系人的昵称。|
+|officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
 |phones |[phone](../resources/phone.md) collection |与联系人关联的电话号码, 例如, 家庭电话、移动电话和商务电话。 |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md)集合 |与联系人关联的地址, 例如家庭地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
-|surname|字符串|联系人的姓氏。|
+|surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |websites |[website](../resources/website.md) collection|与联系人关联的网站。 |
 |weddingAnniversary |日期 |联系人的婚礼周年纪念。 |
-|yomiCompanyName|字符串|联系人的注音日文公司名称。此属性是可选的。|
+|yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
 |yomiGivenName|字符串|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
@@ -201,12 +201,14 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_contact-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_contact-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_contact-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -230,6 +232,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/contact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

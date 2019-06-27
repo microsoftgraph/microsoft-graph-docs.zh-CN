@@ -4,14 +4,17 @@ description: 使用此 API 可以通过 owners 导航属性从 Office 365 组、
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e6af69d5db15d7f25735e04dfeee1eaa5f03d780
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc0f9d7aea0d718cf4c467fa789ec42aa6f2ee7b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593281"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263307"
 ---
 # <a name="remove-owner"></a>删除所有者
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 使用此 API 可以通过 owners 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除所有者。
 
 ## <a name="permissions"></a>权限
@@ -45,10 +48,10 @@ DELETE /groups/{id}/owners/{id}/$ref
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "delete_owner_from_group"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 ```
 在请求中，指定要在 $ref 段后删除的 directory 对象 `id`。
 
@@ -65,25 +68,30 @@ HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
 # <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete_owner_from_group-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete_owner_from_group-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete owner",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
