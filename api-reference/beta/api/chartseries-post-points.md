@@ -4,49 +4,49 @@ description: 使用此 API 创建新 ChartPoints。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d3cee55e86a28baa76fe6ca5c12b35af2d2e71c4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: afbe102f3fdf0cc1d6fee61744c5a568ed100375
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591923"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35261528"
 ---
-# <a name="create-chartpoint"></a><span data-ttu-id="1229d-103">创建 ChartPoint</span><span class="sxs-lookup"><span data-stu-id="1229d-103">Create ChartPoint</span></span>
+# <a name="create-chartpoint"></a><span data-ttu-id="c254d-103">创建 ChartPoint</span><span class="sxs-lookup"><span data-stu-id="c254d-103">Create ChartPoint</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1229d-104">使用此 API 创建新的 ChartPoint。</span><span class="sxs-lookup"><span data-stu-id="1229d-104">Use this API to create a new ChartPoint.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1229d-105">权限</span><span class="sxs-lookup"><span data-stu-id="1229d-105">Permissions</span></span>
-<span data-ttu-id="1229d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1229d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c254d-104">使用此 API 创建新的 ChartPoint。</span><span class="sxs-lookup"><span data-stu-id="c254d-104">Use this API to create a new ChartPoint.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c254d-105">权限</span><span class="sxs-lookup"><span data-stu-id="c254d-105">Permissions</span></span>
+<span data-ttu-id="c254d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c254d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1229d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="1229d-108">Permission type</span></span>      | <span data-ttu-id="1229d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1229d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c254d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c254d-108">Permission type</span></span>      | <span data-ttu-id="c254d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c254d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1229d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1229d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1229d-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1229d-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1229d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1229d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1229d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1229d-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="1229d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="1229d-114">Application</span></span> | <span data-ttu-id="1229d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="1229d-115">Not supported.</span></span> |
+|<span data-ttu-id="c254d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c254d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c254d-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c254d-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c254d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c254d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c254d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c254d-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c254d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c254d-114">Application</span></span> | <span data-ttu-id="c254d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c254d-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1229d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1229d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c254d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c254d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="1229d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="1229d-117">Request headers</span></span>
-| <span data-ttu-id="1229d-118">名称</span><span class="sxs-lookup"><span data-stu-id="1229d-118">Name</span></span>       | <span data-ttu-id="1229d-119">说明</span><span class="sxs-lookup"><span data-stu-id="1229d-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c254d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="c254d-117">Request headers</span></span>
+| <span data-ttu-id="c254d-118">名称</span><span class="sxs-lookup"><span data-stu-id="c254d-118">Name</span></span>       | <span data-ttu-id="c254d-119">说明</span><span class="sxs-lookup"><span data-stu-id="c254d-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="1229d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1229d-120">Authorization</span></span>  | <span data-ttu-id="1229d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1229d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1229d-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1229d-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="1229d-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="1229d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c254d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c254d-120">Authorization</span></span>  | <span data-ttu-id="c254d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c254d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c254d-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c254d-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c254d-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="c254d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1229d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="1229d-126">Request body</span></span>
-<span data-ttu-id="1229d-127">在请求正文中, 提供[workbookChartPoint](../resources/workbookchartpoint.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1229d-127">In the request body, supply a JSON representation of [workbookChartPoint](../resources/workbookchartpoint.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c254d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c254d-126">Request body</span></span>
+<span data-ttu-id="c254d-127">在请求正文中, 提供[workbookChartPoint](../resources/workbookchartpoint.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c254d-127">In the request body, supply a JSON representation of [workbookChartPoint](../resources/workbookchartpoint.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1229d-128">响应</span><span class="sxs-lookup"><span data-stu-id="1229d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c254d-128">响应</span><span class="sxs-lookup"><span data-stu-id="c254d-128">Response</span></span>
 
-<span data-ttu-id="1229d-129">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[workbookChartPoint](../resources/workbookchartpoint.md)对象。</span><span class="sxs-lookup"><span data-stu-id="1229d-129">If successful, this method returns `201 Created` response code and [workbookChartPoint](../resources/workbookchartpoint.md) object in the response body.</span></span>
+<span data-ttu-id="c254d-129">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[workbookChartPoint](../resources/workbookchartpoint.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c254d-129">If successful, this method returns `201 Created` response code and [workbookChartPoint](../resources/workbookchartpoint.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1229d-130">示例</span><span class="sxs-lookup"><span data-stu-id="1229d-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1229d-131">请求</span><span class="sxs-lookup"><span data-stu-id="1229d-131">Request</span></span>
-<span data-ttu-id="1229d-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1229d-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c254d-130">示例</span><span class="sxs-lookup"><span data-stu-id="c254d-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c254d-131">请求</span><span class="sxs-lookup"><span data-stu-id="c254d-131">Request</span></span>
+<span data-ttu-id="c254d-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c254d-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chartpoints_from_chartseries"
@@ -59,9 +59,9 @@ Content-length: 3
 {
 }
 ```
-<span data-ttu-id="1229d-133">在请求正文中, 提供[workbookChartPoint](../resources/workbookchartpoint.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1229d-133">In the request body, supply a JSON representation of [workbookChartPoint](../resources/workbookchartpoint.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="1229d-134">响应</span><span class="sxs-lookup"><span data-stu-id="1229d-134">Response</span></span>
-<span data-ttu-id="1229d-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1229d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c254d-133">在请求正文中, 提供[workbookChartPoint](../resources/workbookchartpoint.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c254d-133">In the request body, supply a JSON representation of [workbookChartPoint](../resources/workbookchartpoint.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="c254d-134">响应</span><span class="sxs-lookup"><span data-stu-id="c254d-134">Response</span></span>
+<span data-ttu-id="c254d-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c254d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,13 +75,15 @@ Content-length: 3
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="1229d-138">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="1229d-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="1229d-139">语言</span><span class="sxs-lookup"><span data-stu-id="1229d-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c254d-138">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="c254d-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c254d-139">C#</span><span class="sxs-lookup"><span data-stu-id="c254d-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_chartpoints_from_chartseries-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1229d-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="1229d-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c254d-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="c254d-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_chartpoints_from_chartseries-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c254d-141">目标-C</span><span class="sxs-lookup"><span data-stu-id="c254d-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_chartpoints_from_chartseries-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -96,6 +98,7 @@ Content-length: 3
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/chartseries-post-points.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/chartseries-post-points.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/chartseries-post-points.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
