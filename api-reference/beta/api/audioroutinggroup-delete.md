@@ -4,50 +4,50 @@ description: 删除指定的音频路由组。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e4144a1701d7fe96d507911ebed0ca36e242ac47
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2a3af19dfebe7db63e720a22efe69a68a9c819b6
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636469"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258315"
 ---
-# <a name="delete-audio-routing-group"></a><span data-ttu-id="ccac8-103">删除音频路由组</span><span class="sxs-lookup"><span data-stu-id="ccac8-103">Delete audio routing group</span></span>
+# <a name="delete-audio-routing-group"></a><span data-ttu-id="5ca82-103">删除音频路由组</span><span class="sxs-lookup"><span data-stu-id="5ca82-103">Delete audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ccac8-104">删除指定的[audioRoutingGroup](../resources/audioroutinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="ccac8-104">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="5ca82-104">删除指定的[audioRoutingGroup](../resources/audioroutinggroup.md)。</span><span class="sxs-lookup"><span data-stu-id="5ca82-104">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ccac8-105">权限</span><span class="sxs-lookup"><span data-stu-id="ccac8-105">Permissions</span></span>
-<span data-ttu-id="ccac8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ccac8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ca82-105">权限</span><span class="sxs-lookup"><span data-stu-id="5ca82-105">Permissions</span></span>
+<span data-ttu-id="5ca82-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ca82-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ccac8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ccac8-108">Permission type</span></span> | <span data-ttu-id="ccac8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ccac8-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="5ca82-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ca82-108">Permission type</span></span> | <span data-ttu-id="5ca82-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5ca82-109">Permissions (from least to most privileged)</span></span>  |
 | :-------------- | :------------------------------------------- |
-| <span data-ttu-id="ccac8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ccac8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ccac8-111">不支持</span><span class="sxs-lookup"><span data-stu-id="ccac8-111">Not Supported</span></span>        |
-| <span data-ttu-id="ccac8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ccac8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccac8-113">不支持</span><span class="sxs-lookup"><span data-stu-id="ccac8-113">Not Supported</span></span>        |
-| <span data-ttu-id="ccac8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ccac8-114">Application</span></span>     | <span data-ttu-id="ccac8-115">JoinGroupCalls、InitiateGroupCalls 和所有调用</span><span class="sxs-lookup"><span data-stu-id="ccac8-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="5ca82-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ca82-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5ca82-111">不支持</span><span class="sxs-lookup"><span data-stu-id="5ca82-111">Not Supported</span></span>        |
+| <span data-ttu-id="5ca82-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ca82-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ca82-113">不支持</span><span class="sxs-lookup"><span data-stu-id="5ca82-113">Not Supported</span></span>        |
+| <span data-ttu-id="5ca82-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="5ca82-114">Application</span></span>     | <span data-ttu-id="5ca82-115">JoinGroupCalls、InitiateGroupCalls 和所有调用</span><span class="sxs-lookup"><span data-stu-id="5ca82-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ccac8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ccac8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ca82-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ca82-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
 DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ccac8-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ccac8-117">Request headers</span></span>
-| <span data-ttu-id="ccac8-118">名称</span><span class="sxs-lookup"><span data-stu-id="ccac8-118">Name</span></span>          | <span data-ttu-id="ccac8-119">说明</span><span class="sxs-lookup"><span data-stu-id="ccac8-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="5ca82-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ca82-117">Request headers</span></span>
+| <span data-ttu-id="5ca82-118">名称</span><span class="sxs-lookup"><span data-stu-id="5ca82-118">Name</span></span>          | <span data-ttu-id="5ca82-119">说明</span><span class="sxs-lookup"><span data-stu-id="5ca82-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="ccac8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ccac8-120">Authorization</span></span> | <span data-ttu-id="ccac8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ccac8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5ca82-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ca82-120">Authorization</span></span> | <span data-ttu-id="5ca82-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5ca82-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ccac8-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="ccac8-123">Request body</span></span>
-<span data-ttu-id="ccac8-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ccac8-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ca82-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ca82-123">Request body</span></span>
+<span data-ttu-id="5ca82-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5ca82-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ccac8-125">响应</span><span class="sxs-lookup"><span data-stu-id="ccac8-125">Response</span></span>
-<span data-ttu-id="ccac8-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ccac8-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5ca82-125">响应</span><span class="sxs-lookup"><span data-stu-id="5ca82-125">Response</span></span>
+<span data-ttu-id="5ca82-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="5ca82-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ccac8-128">示例</span><span class="sxs-lookup"><span data-stu-id="ccac8-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5ca82-128">示例</span><span class="sxs-lookup"><span data-stu-id="5ca82-128">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ccac8-129">请求</span><span class="sxs-lookup"><span data-stu-id="ccac8-129">Request</span></span>
-<span data-ttu-id="ccac8-130">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="ccac8-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="5ca82-129">请求</span><span class="sxs-lookup"><span data-stu-id="5ca82-129">Request</span></span>
+<span data-ttu-id="5ca82-130">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="5ca82-130">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -57,9 +57,9 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="ccac8-131">响应</span><span class="sxs-lookup"><span data-stu-id="ccac8-131">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="5ca82-131">响应</span><span class="sxs-lookup"><span data-stu-id="5ca82-131">Response</span></span>
 
-> <span data-ttu-id="ccac8-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ccac8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5ca82-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5ca82-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -68,13 +68,15 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ccac8-134">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ccac8-134">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ccac8-135">语言</span><span class="sxs-lookup"><span data-stu-id="ccac8-135">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="5ca82-134">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="5ca82-134">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="5ca82-135">C#</span><span class="sxs-lookup"><span data-stu-id="5ca82-135">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete-audioRoutingGroup-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ccac8-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="ccac8-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5ca82-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="5ca82-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete-audioRoutingGroup-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="5ca82-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="5ca82-137">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete-audioRoutingGroup-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -89,6 +91,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/audioroutinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/audioroutinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/audioroutinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,60 +4,60 @@ description: 从群组的默认日历中，获取由时间范围定义的日历�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: bbd78c02aad651fab8c57553e6157e569853d561
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e2c93015b69c7df9b130e46ea484d348adb8cab0
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593043"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263250"
 ---
-# <a name="list-calendarview"></a><span data-ttu-id="a94a8-103">列出 calendarView</span><span class="sxs-lookup"><span data-stu-id="a94a8-103">List calendarView</span></span>
+# <a name="list-calendarview"></a><span data-ttu-id="ecaed-103">列出 calendarView</span><span class="sxs-lookup"><span data-stu-id="ecaed-103">List calendarView</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a94a8-104">从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。</span><span class="sxs-lookup"><span data-stu-id="a94a8-104">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
+<span data-ttu-id="ecaed-104">从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。</span><span class="sxs-lookup"><span data-stu-id="ecaed-104">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a94a8-105">权限</span><span class="sxs-lookup"><span data-stu-id="a94a8-105">Permissions</span></span>
-<span data-ttu-id="a94a8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a94a8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ecaed-105">权限</span><span class="sxs-lookup"><span data-stu-id="ecaed-105">Permissions</span></span>
+<span data-ttu-id="ecaed-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ecaed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a94a8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a94a8-108">Permission type</span></span>      | <span data-ttu-id="a94a8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a94a8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ecaed-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ecaed-108">Permission type</span></span>      | <span data-ttu-id="ecaed-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ecaed-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a94a8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a94a8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a94a8-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a94a8-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a94a8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a94a8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a94a8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a94a8-113">Not supported.</span></span>    |
-|<span data-ttu-id="a94a8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a94a8-114">Application</span></span> | <span data-ttu-id="a94a8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a94a8-115">Not supported.</span></span> |
+|<span data-ttu-id="ecaed-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ecaed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ecaed-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecaed-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ecaed-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ecaed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecaed-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ecaed-113">Not supported.</span></span>    |
+|<span data-ttu-id="ecaed-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ecaed-114">Application</span></span> | <span data-ttu-id="ecaed-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ecaed-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a94a8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a94a8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ecaed-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ecaed-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="a94a8-117">查询参数</span><span class="sxs-lookup"><span data-stu-id="a94a8-117">Query parameters</span></span>
-<span data-ttu-id="a94a8-118">在请求 URL 中，提供以下必要查询参数的值。</span><span class="sxs-lookup"><span data-stu-id="a94a8-118">In the request URL, provide the following required query parameters with values.</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="ecaed-117">查询参数</span><span class="sxs-lookup"><span data-stu-id="ecaed-117">Query parameters</span></span>
+<span data-ttu-id="ecaed-118">在请求 URL 中，提供以下必要查询参数的值。</span><span class="sxs-lookup"><span data-stu-id="ecaed-118">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="a94a8-119">参数</span><span class="sxs-lookup"><span data-stu-id="a94a8-119">Parameter</span></span>    | <span data-ttu-id="a94a8-120">类型</span><span class="sxs-lookup"><span data-stu-id="a94a8-120">Type</span></span>   |<span data-ttu-id="a94a8-121">说明</span><span class="sxs-lookup"><span data-stu-id="a94a8-121">Description</span></span>|
+| <span data-ttu-id="ecaed-119">参数</span><span class="sxs-lookup"><span data-stu-id="ecaed-119">Parameter</span></span>    | <span data-ttu-id="ecaed-120">类型</span><span class="sxs-lookup"><span data-stu-id="ecaed-120">Type</span></span>   |<span data-ttu-id="ecaed-121">说明</span><span class="sxs-lookup"><span data-stu-id="ecaed-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a94a8-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="a94a8-122">startDateTime</span></span>|<span data-ttu-id="a94a8-123">String</span><span class="sxs-lookup"><span data-stu-id="a94a8-123">String</span></span>|<span data-ttu-id="a94a8-p102">时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="a94a8-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="a94a8-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="a94a8-126">endDateTime</span></span>|<span data-ttu-id="a94a8-127">String</span><span class="sxs-lookup"><span data-stu-id="a94a8-127">String</span></span>|<span data-ttu-id="a94a8-p103">时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="a94a8-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="ecaed-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="ecaed-122">startDateTime</span></span>|<span data-ttu-id="ecaed-123">String</span><span class="sxs-lookup"><span data-stu-id="ecaed-123">String</span></span>|<span data-ttu-id="ecaed-p102">时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="ecaed-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="ecaed-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="ecaed-126">endDateTime</span></span>|<span data-ttu-id="ecaed-127">String</span><span class="sxs-lookup"><span data-stu-id="ecaed-127">String</span></span>|<span data-ttu-id="ecaed-p103">时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="ecaed-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-<span data-ttu-id="a94a8-130">此方法还支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a94a8-130">This method also supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="ecaed-130">此方法还支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ecaed-130">This method also supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a94a8-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="a94a8-131">Request headers</span></span>
-| <span data-ttu-id="a94a8-132">名称</span><span class="sxs-lookup"><span data-stu-id="a94a8-132">Name</span></span>       | <span data-ttu-id="a94a8-133">类型</span><span class="sxs-lookup"><span data-stu-id="a94a8-133">Type</span></span> | <span data-ttu-id="a94a8-134">说明</span><span class="sxs-lookup"><span data-stu-id="a94a8-134">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ecaed-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="ecaed-131">Request headers</span></span>
+| <span data-ttu-id="ecaed-132">名称</span><span class="sxs-lookup"><span data-stu-id="ecaed-132">Name</span></span>       | <span data-ttu-id="ecaed-133">类型</span><span class="sxs-lookup"><span data-stu-id="ecaed-133">Type</span></span> | <span data-ttu-id="ecaed-134">说明</span><span class="sxs-lookup"><span data-stu-id="ecaed-134">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="a94a8-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="a94a8-135">Authorization</span></span>  | <span data-ttu-id="a94a8-136">字符串</span><span class="sxs-lookup"><span data-stu-id="a94a8-136">string</span></span> | <span data-ttu-id="a94a8-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a94a8-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="a94a8-139">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="a94a8-139">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="a94a8-140">string</span><span class="sxs-lookup"><span data-stu-id="a94a8-140">string</span></span> | <span data-ttu-id="a94a8-141">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="a94a8-141">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="a94a8-142">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="a94a8-142">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="a94a8-143">可选。</span><span class="sxs-lookup"><span data-stu-id="a94a8-143">Optional.</span></span> |
-| <span data-ttu-id="a94a8-144">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="a94a8-144">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="a94a8-145">string</span><span class="sxs-lookup"><span data-stu-id="a94a8-145">string</span></span> | <span data-ttu-id="a94a8-146">要返回的 **body** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="a94a8-146">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="a94a8-147">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="a94a8-147">Values can be "text" or "html".</span></span> <span data-ttu-id="a94a8-148">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="a94a8-148">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="a94a8-149">如果未指定此头，采用 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="a94a8-149">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="a94a8-150">可选。</span><span class="sxs-lookup"><span data-stu-id="a94a8-150">Optional.</span></span> |
+| <span data-ttu-id="ecaed-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="ecaed-135">Authorization</span></span>  | <span data-ttu-id="ecaed-136">字符串</span><span class="sxs-lookup"><span data-stu-id="ecaed-136">string</span></span> | <span data-ttu-id="ecaed-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ecaed-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ecaed-139">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ecaed-139">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="ecaed-140">string</span><span class="sxs-lookup"><span data-stu-id="ecaed-140">string</span></span> | <span data-ttu-id="ecaed-141">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="ecaed-141">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="ecaed-142">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="ecaed-142">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="ecaed-143">可选。</span><span class="sxs-lookup"><span data-stu-id="ecaed-143">Optional.</span></span> |
+| <span data-ttu-id="ecaed-144">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="ecaed-144">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="ecaed-145">string</span><span class="sxs-lookup"><span data-stu-id="ecaed-145">string</span></span> | <span data-ttu-id="ecaed-146">要返回的 **body** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="ecaed-146">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="ecaed-147">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="ecaed-147">Values can be "text" or "html".</span></span> <span data-ttu-id="ecaed-148">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="ecaed-148">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="ecaed-149">如果未指定此头，采用 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="ecaed-149">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="ecaed-150">可选。</span><span class="sxs-lookup"><span data-stu-id="ecaed-150">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a94a8-151">请求正文</span><span class="sxs-lookup"><span data-stu-id="a94a8-151">Request body</span></span>
-<span data-ttu-id="a94a8-152">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a94a8-152">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ecaed-151">请求正文</span><span class="sxs-lookup"><span data-stu-id="ecaed-151">Request body</span></span>
+<span data-ttu-id="ecaed-152">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ecaed-152">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a94a8-153">响应</span><span class="sxs-lookup"><span data-stu-id="a94a8-153">Response</span></span>
-<span data-ttu-id="a94a8-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="a94a8-154">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ecaed-153">响应</span><span class="sxs-lookup"><span data-stu-id="ecaed-153">Response</span></span>
+<span data-ttu-id="ecaed-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ecaed-154">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a94a8-155">示例</span><span class="sxs-lookup"><span data-stu-id="a94a8-155">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="a94a8-156">请求</span><span class="sxs-lookup"><span data-stu-id="a94a8-156">Request</span></span>
-<span data-ttu-id="a94a8-157">下面的示例展示了如何请求采用文本格式返回事件主体。</span><span class="sxs-lookup"><span data-stu-id="a94a8-157">The following example requests event bodies to be returned in text format.</span></span>
+## <a name="example"></a><span data-ttu-id="ecaed-155">示例</span><span class="sxs-lookup"><span data-stu-id="ecaed-155">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="ecaed-156">请求</span><span class="sxs-lookup"><span data-stu-id="ecaed-156">Request</span></span>
+<span data-ttu-id="ecaed-157">下面的示例展示了如何请求采用文本格式返回事件主体。</span><span class="sxs-lookup"><span data-stu-id="ecaed-157">The following example requests event bodies to be returned in text format.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_calendarviews"
@@ -67,9 +67,9 @@ GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 Prefer: outlook.body-content-type="text"
 ```
 
-#### <a name="response"></a><span data-ttu-id="a94a8-158">响应</span><span class="sxs-lookup"><span data-stu-id="a94a8-158">Response</span></span>
-<span data-ttu-id="a94a8-159">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a94a8-159">The following is an example of the response.</span></span>
-><span data-ttu-id="a94a8-160">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a94a8-160">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a94a8-161">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a94a8-161">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="ecaed-158">响应</span><span class="sxs-lookup"><span data-stu-id="ecaed-158">Response</span></span>
+<span data-ttu-id="ecaed-159">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ecaed-159">The following is an example of the response.</span></span>
+><span data-ttu-id="ecaed-160">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ecaed-160">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ecaed-161">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ecaed-161">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -247,13 +247,15 @@ Preference-Applied: outlook.body-content-type="text"
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a94a8-162">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="a94a8-162">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a94a8-163">语言</span><span class="sxs-lookup"><span data-stu-id="a94a8-163">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ecaed-162">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ecaed-162">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ecaed-163">C#</span><span class="sxs-lookup"><span data-stu-id="ecaed-163">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_calendarviews-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a94a8-164">Javascript</span><span class="sxs-lookup"><span data-stu-id="a94a8-164">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ecaed-164">Javascript</span><span class="sxs-lookup"><span data-stu-id="ecaed-164">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_calendarviews-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ecaed-165">目标-C</span><span class="sxs-lookup"><span data-stu-id="ecaed-165">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_calendarviews-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -268,6 +270,7 @@ Preference-Applied: outlook.body-content-type="text"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
