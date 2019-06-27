@@ -4,29 +4,29 @@ description: 在**事件**导航属性中展开参数, 以在与会者的日历�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8e739179df734af37d0c6cc70b3fdf5358a46681
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 48460738e5330af0ca79d6e702667db31430b39d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614939"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277439"
 ---
-# <a name="get-eventmessage"></a><span data-ttu-id="2c09c-103">获取 eventMessage</span><span class="sxs-lookup"><span data-stu-id="2c09c-103">Get eventMessage</span></span>
+# <a name="get-eventmessage"></a><span data-ttu-id="40b6e-103">获取 eventMessage</span><span class="sxs-lookup"><span data-stu-id="40b6e-103">Get eventMessage</span></span>
 
-<span data-ttu-id="2c09c-104">获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2c09c-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="2c09c-105">对 **event** 导航属性应用 $expand 参数，可以获取与会者日历中的相关 [event](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="2c09c-105">Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
+<span data-ttu-id="40b6e-104">获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="40b6e-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="40b6e-105">对 **event** 导航属性应用 $expand 参数，可以获取与会者日历中的相关 [event](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="40b6e-105">Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
 
-<span data-ttu-id="2c09c-106">此操作暂返回纯 HTML 格式的事件邮件正文。</span><span class="sxs-lookup"><span data-stu-id="2c09c-106">Currently, this operation returns event message bodies in only HTML format.</span></span>
+<span data-ttu-id="40b6e-106">此操作暂返回纯 HTML 格式的事件邮件正文。</span><span class="sxs-lookup"><span data-stu-id="40b6e-106">Currently, this operation returns event message bodies in only HTML format.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2c09c-107">权限</span><span class="sxs-lookup"><span data-stu-id="2c09c-107">Permissions</span></span>
-<span data-ttu-id="2c09c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2c09c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="40b6e-107">权限</span><span class="sxs-lookup"><span data-stu-id="40b6e-107">Permissions</span></span>
+<span data-ttu-id="40b6e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="40b6e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2c09c-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2c09c-110">Permission type</span></span>      | <span data-ttu-id="2c09c-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2c09c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="40b6e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="40b6e-110">Permission type</span></span>      | <span data-ttu-id="40b6e-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="40b6e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2c09c-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2c09c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2c09c-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="2c09c-113">Mail.Read</span></span>    |
-|<span data-ttu-id="2c09c-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2c09c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c09c-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="2c09c-115">Mail.Read</span></span>    |
-|<span data-ttu-id="2c09c-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2c09c-116">Application</span></span> | <span data-ttu-id="2c09c-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="2c09c-117">Mail.Read</span></span> |
+|<span data-ttu-id="40b6e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="40b6e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="40b6e-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="40b6e-113">Mail.Read</span></span>    |
+|<span data-ttu-id="40b6e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="40b6e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40b6e-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="40b6e-115">Mail.Read</span></span>    |
+|<span data-ttu-id="40b6e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="40b6e-116">Application</span></span> | <span data-ttu-id="40b6e-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="40b6e-117">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2c09c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2c09c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40b6e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="40b6e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -35,22 +35,22 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2c09c-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2c09c-119">Optional query parameters</span></span>
-<span data-ttu-id="2c09c-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2c09c-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="2c09c-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="2c09c-121">Request headers</span></span>
-| <span data-ttu-id="2c09c-122">名称</span><span class="sxs-lookup"><span data-stu-id="2c09c-122">Name</span></span>       | <span data-ttu-id="2c09c-123">类型</span><span class="sxs-lookup"><span data-stu-id="2c09c-123">Type</span></span> | <span data-ttu-id="2c09c-124">说明</span><span class="sxs-lookup"><span data-stu-id="2c09c-124">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="40b6e-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="40b6e-119">Optional query parameters</span></span>
+<span data-ttu-id="40b6e-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="40b6e-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="40b6e-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="40b6e-121">Request headers</span></span>
+| <span data-ttu-id="40b6e-122">名称</span><span class="sxs-lookup"><span data-stu-id="40b6e-122">Name</span></span>       | <span data-ttu-id="40b6e-123">类型</span><span class="sxs-lookup"><span data-stu-id="40b6e-123">Type</span></span> | <span data-ttu-id="40b6e-124">说明</span><span class="sxs-lookup"><span data-stu-id="40b6e-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="2c09c-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2c09c-125">Authorization</span></span>  | <span data-ttu-id="2c09c-126">string</span><span class="sxs-lookup"><span data-stu-id="2c09c-126">string</span></span>  | <span data-ttu-id="2c09c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2c09c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="40b6e-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="40b6e-125">Authorization</span></span>  | <span data-ttu-id="40b6e-126">string</span><span class="sxs-lookup"><span data-stu-id="40b6e-126">string</span></span>  | <span data-ttu-id="40b6e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="40b6e-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2c09c-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="2c09c-129">Request body</span></span>
-<span data-ttu-id="2c09c-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2c09c-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40b6e-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="40b6e-129">Request body</span></span>
+<span data-ttu-id="40b6e-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="40b6e-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2c09c-131">响应</span><span class="sxs-lookup"><span data-stu-id="2c09c-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="40b6e-131">响应</span><span class="sxs-lookup"><span data-stu-id="40b6e-131">Response</span></span>
 
-<span data-ttu-id="2c09c-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2c09c-132">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2c09c-133">示例</span><span class="sxs-lookup"><span data-stu-id="2c09c-133">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="2c09c-134">请求 1</span><span class="sxs-lookup"><span data-stu-id="2c09c-134">Request 1</span></span>
-<span data-ttu-id="2c09c-135">第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。</span><span class="sxs-lookup"><span data-stu-id="2c09c-135">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
+<span data-ttu-id="40b6e-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="40b6e-132">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="40b6e-133">示例</span><span class="sxs-lookup"><span data-stu-id="40b6e-133">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="40b6e-134">请求 1</span><span class="sxs-lookup"><span data-stu-id="40b6e-134">Request 1</span></span>
+<span data-ttu-id="40b6e-135">第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。</span><span class="sxs-lookup"><span data-stu-id="40b6e-135">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAImV_lAAA="],
@@ -59,8 +59,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ```
-##### <a name="response-1"></a><span data-ttu-id="2c09c-136">响应 1</span><span class="sxs-lookup"><span data-stu-id="2c09c-136">Response 1</span></span>
-<span data-ttu-id="2c09c-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2c09c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="40b6e-136">响应 1</span><span class="sxs-lookup"><span data-stu-id="40b6e-136">Response 1</span></span>
+<span data-ttu-id="40b6e-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="40b6e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -133,19 +133,21 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="2c09c-140">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="2c09c-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="2c09c-141">语言</span><span class="sxs-lookup"><span data-stu-id="2c09c-141">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="40b6e-140">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="40b6e-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="40b6e-141">C#</span><span class="sxs-lookup"><span data-stu-id="40b6e-141">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_eventmessage-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2c09c-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="2c09c-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40b6e-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="40b6e-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_eventmessage-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40b6e-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="40b6e-143">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_eventmessage-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request-2"></a><span data-ttu-id="2c09c-143">请求 2</span><span class="sxs-lookup"><span data-stu-id="2c09c-143">Request 2</span></span>
-<span data-ttu-id="2c09c-144">第二个示例展示了如何获取与事件消息关联的事件。</span><span class="sxs-lookup"><span data-stu-id="2c09c-144">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="2c09c-145">它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。</span><span class="sxs-lookup"><span data-stu-id="2c09c-145">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="40b6e-144">请求 2</span><span class="sxs-lookup"><span data-stu-id="40b6e-144">Request 2</span></span>
+<span data-ttu-id="40b6e-145">第二个示例展示了如何获取与事件消息关联的事件。</span><span class="sxs-lookup"><span data-stu-id="40b6e-145">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="40b6e-146">它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。</span><span class="sxs-lookup"><span data-stu-id="40b6e-146">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAImV_jAAA="],
@@ -154,8 +156,8 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
-##### <a name="response-2"></a><span data-ttu-id="2c09c-146">响应 2</span><span class="sxs-lookup"><span data-stu-id="2c09c-146">Response 2</span></span>
-<span data-ttu-id="2c09c-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2c09c-147">Here is an example of the response.</span></span> <span data-ttu-id="2c09c-148">响应中返回关联事件的属性。</span><span class="sxs-lookup"><span data-stu-id="2c09c-148">The properties of the associated event are returned in the response.</span></span> <span data-ttu-id="2c09c-149">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2c09c-149">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="2c09c-150">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2c09c-150">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="40b6e-147">响应 2</span><span class="sxs-lookup"><span data-stu-id="40b6e-147">Response 2</span></span>
+<span data-ttu-id="40b6e-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="40b6e-148">Here is an example of the response.</span></span> <span data-ttu-id="40b6e-149">响应中返回关联事件的属性。</span><span class="sxs-lookup"><span data-stu-id="40b6e-149">The properties of the associated event are returned in the response.</span></span> <span data-ttu-id="40b6e-150">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="40b6e-150">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="40b6e-151">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="40b6e-151">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
@@ -308,13 +310,15 @@ Content-type: application/json
    }
 }
 ``` 
-#### <a name="sdk-sample-code"></a><span data-ttu-id="2c09c-151">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="2c09c-151">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="2c09c-152">语言</span><span class="sxs-lookup"><span data-stu-id="2c09c-152">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="40b6e-152">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="40b6e-152">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="40b6e-153">C#</span><span class="sxs-lookup"><span data-stu-id="40b6e-153">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_event_based_on_eventmessage-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2c09c-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="2c09c-153">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40b6e-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="40b6e-154">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_event_based_on_eventmessage-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40b6e-155">目标-C</span><span class="sxs-lookup"><span data-stu-id="40b6e-155">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_event_based_on_eventmessage-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -328,6 +332,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/eventmessage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

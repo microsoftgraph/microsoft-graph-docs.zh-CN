@@ -4,51 +4,51 @@ description: 检索 range 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b82cd1bfdf440683aff679d17f30a7ac7f4385c2
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 177f95b5580002a7c8e8b2beae390decb17d507e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610666"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266771"
 ---
-# <a name="get-range"></a><span data-ttu-id="a79ff-103">获取范围</span><span class="sxs-lookup"><span data-stu-id="a79ff-103">Get Range</span></span>
+# <a name="get-range"></a><span data-ttu-id="2cff4-103">获取范围</span><span class="sxs-lookup"><span data-stu-id="2cff4-103">Get Range</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a79ff-104">检索 range 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="a79ff-104">Retrieve the properties and relationships of range object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a79ff-105">权限</span><span class="sxs-lookup"><span data-stu-id="a79ff-105">Permissions</span></span>
-<span data-ttu-id="a79ff-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a79ff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2cff4-104">检索 range 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2cff4-104">Retrieve the properties and relationships of range object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2cff4-105">权限</span><span class="sxs-lookup"><span data-stu-id="2cff4-105">Permissions</span></span>
+<span data-ttu-id="2cff4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2cff4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a79ff-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a79ff-108">Permission type</span></span>      | <span data-ttu-id="a79ff-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a79ff-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2cff4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2cff4-108">Permission type</span></span>      | <span data-ttu-id="2cff4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2cff4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a79ff-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a79ff-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a79ff-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a79ff-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a79ff-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a79ff-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a79ff-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a79ff-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a79ff-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a79ff-114">Application</span></span> | <span data-ttu-id="a79ff-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a79ff-115">Not supported.</span></span> |
+|<span data-ttu-id="2cff4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2cff4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2cff4-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2cff4-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2cff4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2cff4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2cff4-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2cff4-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2cff4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2cff4-114">Application</span></span> | <span data-ttu-id="2cff4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2cff4-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a79ff-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a79ff-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2cff4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2cff4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/range(address='<address>')
 GET /workbook/tables/{id|name}/columns/{id|name}/range
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a79ff-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a79ff-117">Optional query parameters</span></span>
-<span data-ttu-id="a79ff-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a79ff-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2cff4-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2cff4-117">Optional query parameters</span></span>
+<span data-ttu-id="2cff4-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2cff4-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a79ff-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a79ff-119">Request headers</span></span>
-| <span data-ttu-id="a79ff-120">名称</span><span class="sxs-lookup"><span data-stu-id="a79ff-120">Name</span></span>      |<span data-ttu-id="a79ff-121">说明</span><span class="sxs-lookup"><span data-stu-id="a79ff-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2cff4-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2cff4-119">Request headers</span></span>
+| <span data-ttu-id="2cff4-120">名称</span><span class="sxs-lookup"><span data-stu-id="2cff4-120">Name</span></span>      |<span data-ttu-id="2cff4-121">说明</span><span class="sxs-lookup"><span data-stu-id="2cff4-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a79ff-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a79ff-122">Authorization</span></span>  | <span data-ttu-id="a79ff-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a79ff-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a79ff-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a79ff-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="a79ff-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="a79ff-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2cff4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2cff4-122">Authorization</span></span>  | <span data-ttu-id="2cff4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2cff4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2cff4-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2cff4-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="2cff4-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="2cff4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a79ff-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="a79ff-128">Request body</span></span>
-<span data-ttu-id="a79ff-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a79ff-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2cff4-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="2cff4-128">Request body</span></span>
+<span data-ttu-id="2cff4-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2cff4-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a79ff-130">响应</span><span class="sxs-lookup"><span data-stu-id="a79ff-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2cff4-130">响应</span><span class="sxs-lookup"><span data-stu-id="2cff4-130">Response</span></span>
 
-<span data-ttu-id="a79ff-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookRange](../resources/workbookrange.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a79ff-131">If successful, this method returns a `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a79ff-132">示例</span><span class="sxs-lookup"><span data-stu-id="a79ff-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a79ff-133">请求</span><span class="sxs-lookup"><span data-stu-id="a79ff-133">Request</span></span>
-<span data-ttu-id="a79ff-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a79ff-134">Here is an example of the request.</span></span>
+<span data-ttu-id="2cff4-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookRange](../resources/workbookrange.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2cff4-131">If successful, this method returns a `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2cff4-132">示例</span><span class="sxs-lookup"><span data-stu-id="2cff4-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2cff4-133">请求</span><span class="sxs-lookup"><span data-stu-id="2cff4-133">Request</span></span>
+<span data-ttu-id="2cff4-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2cff4-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_range"
@@ -56,8 +56,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range
 ```
-##### <a name="response"></a><span data-ttu-id="a79ff-135">响应</span><span class="sxs-lookup"><span data-stu-id="a79ff-135">Response</span></span>
-<span data-ttu-id="a79ff-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a79ff-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2cff4-135">响应</span><span class="sxs-lookup"><span data-stu-id="2cff4-135">Response</span></span>
+<span data-ttu-id="2cff4-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2cff4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,13 +77,15 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a79ff-139">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="a79ff-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a79ff-140">语言</span><span class="sxs-lookup"><span data-stu-id="a79ff-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2cff4-139">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="2cff4-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2cff4-140">C#</span><span class="sxs-lookup"><span data-stu-id="2cff4-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_range-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a79ff-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="a79ff-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2cff4-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="2cff4-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_range-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="2cff4-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="2cff4-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_range-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -98,6 +100,7 @@ Content-length: 169
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/range-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/range-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/range-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

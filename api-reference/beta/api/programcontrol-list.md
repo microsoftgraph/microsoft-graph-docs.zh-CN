@@ -2,47 +2,47 @@
 title: 列出 programControls
 description: 在 Azure AD access 评论功能中, 列出租户中的所有程序中的所有 programControl 对象。
 localization_priority: Normal
-ms.openlocfilehash: 4b11eb6e7c35e678159a15af0938c8f07e8f02e0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9d1b583399e8006a77f8869a44e35833e123e559
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610772"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268038"
 ---
-# <a name="list-programcontrols"></a><span data-ttu-id="e00c8-103">列出 programControls</span><span class="sxs-lookup"><span data-stu-id="e00c8-103">List programControls</span></span>
+# <a name="list-programcontrols"></a><span data-ttu-id="ae4a9-103">列出 programControls</span><span class="sxs-lookup"><span data-stu-id="ae4a9-103">List programControls</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e00c8-104">在 Azure AD [access 评论](../resources/accessreviews-root.md)功能中, 列出租户中的所有程序中的所有[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e00c8-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, across all programs in the tenant.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e00c8-105">权限</span><span class="sxs-lookup"><span data-stu-id="e00c8-105">Permissions</span></span>
-<span data-ttu-id="e00c8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e00c8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ae4a9-104">在 Azure AD [access 评论](../resources/accessreviews-root.md)功能中, 列出租户中的所有程序中的所有[programControl](../resources/programcontrol.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, across all programs in the tenant.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ae4a9-105">权限</span><span class="sxs-lookup"><span data-stu-id="ae4a9-105">Permissions</span></span>
+<span data-ttu-id="ae4a9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e00c8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e00c8-108">Permission type</span></span>                        | <span data-ttu-id="e00c8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e00c8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ae4a9-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ae4a9-108">Permission type</span></span>                        | <span data-ttu-id="ae4a9-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ae4a9-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e00c8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e00c8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e00c8-111">ProgramControl、ProgramControl 和所有</span><span class="sxs-lookup"><span data-stu-id="e00c8-111">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>   |
-|<span data-ttu-id="e00c8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e00c8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e00c8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e00c8-113">Not supported.</span></span> |
-|<span data-ttu-id="e00c8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e00c8-114">Application</span></span>                            | <span data-ttu-id="e00c8-115">ProgramControl、ProgramControl 和所有</span><span class="sxs-lookup"><span data-stu-id="e00c8-115">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="ae4a9-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ae4a9-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ae4a9-111">ProgramControl、ProgramControl 和所有</span><span class="sxs-lookup"><span data-stu-id="ae4a9-111">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>   |
+|<span data-ttu-id="ae4a9-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ae4a9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae4a9-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-113">Not supported.</span></span> |
+|<span data-ttu-id="ae4a9-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ae4a9-114">Application</span></span>                            | <span data-ttu-id="ae4a9-115">ProgramControl、ProgramControl 和所有</span><span class="sxs-lookup"><span data-stu-id="ae4a9-115">ProgramControl.Read.All, ProgramControl.ReadWrite.All</span></span>  |
 
-<span data-ttu-id="e00c8-116">登录用户还必须位于允许他们读取程序的目录角色中。</span><span class="sxs-lookup"><span data-stu-id="e00c8-116">The signed in user must also be in a directory role that permits them to read a program.</span></span>
+<span data-ttu-id="ae4a9-116">登录用户还必须位于允许他们读取程序的目录角色中。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-116">The signed in user must also be in a directory role that permits them to read a program.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e00c8-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e00c8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ae4a9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ae4a9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /programControls
 ```
-## <a name="request-headers"></a><span data-ttu-id="e00c8-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e00c8-118">Request headers</span></span>
-| <span data-ttu-id="e00c8-119">名称</span><span class="sxs-lookup"><span data-stu-id="e00c8-119">Name</span></span>         | <span data-ttu-id="e00c8-120">类型</span><span class="sxs-lookup"><span data-stu-id="e00c8-120">Type</span></span>        | <span data-ttu-id="e00c8-121">说明</span><span class="sxs-lookup"><span data-stu-id="e00c8-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ae4a9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="ae4a9-118">Request headers</span></span>
+| <span data-ttu-id="ae4a9-119">名称</span><span class="sxs-lookup"><span data-stu-id="ae4a9-119">Name</span></span>         | <span data-ttu-id="ae4a9-120">类型</span><span class="sxs-lookup"><span data-stu-id="ae4a9-120">Type</span></span>        | <span data-ttu-id="ae4a9-121">说明</span><span class="sxs-lookup"><span data-stu-id="ae4a9-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="e00c8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e00c8-122">Authorization</span></span> | <span data-ttu-id="e00c8-123">string</span><span class="sxs-lookup"><span data-stu-id="e00c8-123">string</span></span> | <span data-ttu-id="e00c8-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="e00c8-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="ae4a9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae4a9-122">Authorization</span></span> | <span data-ttu-id="ae4a9-123">string</span><span class="sxs-lookup"><span data-stu-id="ae4a9-123">string</span></span> | <span data-ttu-id="ae4a9-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e00c8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e00c8-126">Request body</span></span>
-<span data-ttu-id="e00c8-127">不应提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="e00c8-127">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ae4a9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ae4a9-126">Request body</span></span>
+<span data-ttu-id="ae4a9-127">不应提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-127">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e00c8-128">响应</span><span class="sxs-lookup"><span data-stu-id="e00c8-128">Response</span></span>
-<span data-ttu-id="e00c8-129">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象的数组。</span><span class="sxs-lookup"><span data-stu-id="e00c8-129">If successful, this method returns a `200, OK` response code and an array of [programControl](../resources/programcontrol.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ae4a9-128">响应</span><span class="sxs-lookup"><span data-stu-id="ae4a9-128">Response</span></span>
+<span data-ttu-id="ae4a9-129">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象的数组。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-129">If successful, this method returns a `200, OK` response code and an array of [programControl](../resources/programcontrol.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e00c8-130">示例</span><span class="sxs-lookup"><span data-stu-id="e00c8-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e00c8-131">请求</span><span class="sxs-lookup"><span data-stu-id="e00c8-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="ae4a9-130">示例</span><span class="sxs-lookup"><span data-stu-id="ae4a9-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ae4a9-131">请求</span><span class="sxs-lookup"><span data-stu-id="ae4a9-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -52,8 +52,8 @@ GET /programControls
 GET https://graph.microsoft.com/beta/programControls
 ```
 
-##### <a name="response"></a><span data-ttu-id="e00c8-132">响应</span><span class="sxs-lookup"><span data-stu-id="e00c8-132">Response</span></span>
-><span data-ttu-id="e00c8-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e00c8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ae4a9-132">响应</span><span class="sxs-lookup"><span data-stu-id="ae4a9-132">Response</span></span>
+><span data-ttu-id="ae4a9-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,22 +80,24 @@ Content-type: application/json
 }
 
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e00c8-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="e00c8-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e00c8-136">语言</span><span class="sxs-lookup"><span data-stu-id="e00c8-136">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ae4a9-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ae4a9-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ae4a9-136">C#</span><span class="sxs-lookup"><span data-stu-id="ae4a9-136">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_programControl-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e00c8-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="e00c8-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ae4a9-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="ae4a9-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_programControl-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ae4a9-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="ae4a9-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_programControl-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="see-also"></a><span data-ttu-id="e00c8-138">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e00c8-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ae4a9-139">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ae4a9-139">See also</span></span>
 
-| <span data-ttu-id="e00c8-139">方法</span><span class="sxs-lookup"><span data-stu-id="e00c8-139">Method</span></span>           | <span data-ttu-id="e00c8-140">返回类型</span><span class="sxs-lookup"><span data-stu-id="e00c8-140">Return Type</span></span>    |<span data-ttu-id="e00c8-141">说明</span><span class="sxs-lookup"><span data-stu-id="e00c8-141">Description</span></span>|
+| <span data-ttu-id="ae4a9-140">方法</span><span class="sxs-lookup"><span data-stu-id="ae4a9-140">Method</span></span>           | <span data-ttu-id="ae4a9-141">返回类型</span><span class="sxs-lookup"><span data-stu-id="ae4a9-141">Return Type</span></span>    |<span data-ttu-id="ae4a9-142">说明</span><span class="sxs-lookup"><span data-stu-id="ae4a9-142">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="e00c8-142">列出程序的 programControls</span><span class="sxs-lookup"><span data-stu-id="e00c8-142">List programControls of a program</span></span>](program-listcontrols.md) |     <span data-ttu-id="e00c8-143">[programControl](../resources/programcontrol.md)集合</span><span class="sxs-lookup"><span data-stu-id="e00c8-143">[programControl](../resources/programcontrol.md) collection</span></span>|    <span data-ttu-id="e00c8-144">获取程序的控件的集合。</span><span class="sxs-lookup"><span data-stu-id="e00c8-144">Get a collection of the controls of a program.</span></span>|
+|[<span data-ttu-id="ae4a9-143">列出程序的 programControls</span><span class="sxs-lookup"><span data-stu-id="ae4a9-143">List programControls of a program</span></span>](program-listcontrols.md) |     <span data-ttu-id="ae4a9-144">[programControl](../resources/programcontrol.md)集合</span><span class="sxs-lookup"><span data-stu-id="ae4a9-144">[programControl](../resources/programcontrol.md) collection</span></span>|    <span data-ttu-id="ae4a9-145">获取程序的控件的集合。</span><span class="sxs-lookup"><span data-stu-id="ae4a9-145">Get a collection of the controls of a program.</span></span>|
 
 
 <!--
@@ -106,6 +108,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

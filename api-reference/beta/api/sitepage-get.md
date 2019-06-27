@@ -5,43 +5,43 @@ ms.date: 03/15/2018
 title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cb281e35f0a3b2da2c622f644c7506fb264758a0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 47a9360d54263cf60213002518df8f39e24f7656
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638574"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271552"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="62a46-102">在网站的 "网站页面" 列表中获取页面</span><span class="sxs-lookup"><span data-stu-id="62a46-102">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9c5a4-102">在网站的 "网站页面" 列表中获取页面</span><span class="sxs-lookup"><span data-stu-id="9c5a4-102">Get a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="62a46-103">返回[网站][]的 "网站页面"[列表][]中的[sitePage][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="62a46-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="9c5a4-103">返回[网站][]的 "网站页面"[列表][]中的[sitePage][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="9c5a4-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="62a46-107">权限</span><span class="sxs-lookup"><span data-stu-id="62a46-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c5a4-107">权限</span><span class="sxs-lookup"><span data-stu-id="9c5a4-107">Permissions</span></span>
 
-<span data-ttu-id="62a46-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="62a46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9c5a4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9c5a4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="62a46-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="62a46-110">Permission type</span></span>      | <span data-ttu-id="62a46-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="62a46-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c5a4-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c5a4-110">Permission type</span></span>      | <span data-ttu-id="9c5a4-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9c5a4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="62a46-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="62a46-112">Delegated (work or school account)</span></span> | <span data-ttu-id="62a46-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="62a46-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="62a46-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="62a46-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62a46-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="62a46-115">Not supported.</span></span>    |
-|<span data-ttu-id="62a46-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="62a46-116">Application</span></span> | <span data-ttu-id="62a46-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="62a46-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="9c5a4-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c5a4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9c5a4-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c5a4-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9c5a4-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c5a4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c5a4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c5a4-115">Not supported.</span></span>    |
+|<span data-ttu-id="9c5a4-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c5a4-116">Application</span></span> | <span data-ttu-id="9c5a4-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c5a4-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="62a46-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="62a46-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c5a4-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c5a4-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="62a46-119">示例</span><span class="sxs-lookup"><span data-stu-id="62a46-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9c5a4-119">示例</span><span class="sxs-lookup"><span data-stu-id="9c5a4-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="62a46-120">请求</span><span class="sxs-lookup"><span data-stu-id="62a46-120">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9c5a4-120">请求</span><span class="sxs-lookup"><span data-stu-id="9c5a4-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -49,7 +49,7 @@ GET /sites/{site-id}/pages/{page-id}
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="62a46-121">响应</span><span class="sxs-lookup"><span data-stu-id="62a46-121">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9c5a4-121">响应</span><span class="sxs-lookup"><span data-stu-id="9c5a4-121">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -133,13 +133,15 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="62a46-122">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="62a46-122">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="62a46-123">语言</span><span class="sxs-lookup"><span data-stu-id="62a46-123">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="9c5a4-122">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="9c5a4-122">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="9c5a4-123">C#</span><span class="sxs-lookup"><span data-stu-id="9c5a4-123">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-page-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="62a46-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="62a46-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9c5a4-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="9c5a4-124">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-page-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="9c5a4-125">目标-C</span><span class="sxs-lookup"><span data-stu-id="9c5a4-125">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-page-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -152,6 +154,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
   "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
