@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: fc650bf378e38a9acae85cd8c433a7fb07c03742
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: fe6b28e778100cfbfb6c5d114cea02e9dfe141e9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34475869"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263740"
 ---
 ```javascript
 
@@ -26,6 +26,9 @@ const team = {
   funSettings: {
     allowGiphy: true,
     giphyContentRating: "strict"
+  },
+  discoverySettings: {
+    showInTeamsSearchAndSuggestions: true
   }
 };
 

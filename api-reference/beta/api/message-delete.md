@@ -4,35 +4,35 @@ description: 删除指定用户的邮箱中的邮件, 或删除邮件的关系�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 0c221b08d895bcc19ebbb87996b8ef3c5f3c029a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: d1df6b9d9b1b01d2960c12ce7cee1a927843626f
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598581"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266085"
 ---
-# <a name="delete-message"></a><span data-ttu-id="96e85-103">删除邮件</span><span class="sxs-lookup"><span data-stu-id="96e85-103">Delete message</span></span>
+# <a name="delete-message"></a><span data-ttu-id="41af5-103">删除邮件</span><span class="sxs-lookup"><span data-stu-id="41af5-103">Delete message</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="96e85-104">删除指定用户的邮箱中的邮件, 或删除邮件的关系。</span><span class="sxs-lookup"><span data-stu-id="96e85-104">Delete a message in the specified user's mailbox, or delete a relationship of the message.</span></span>
+<span data-ttu-id="41af5-104">删除指定用户的邮箱中的邮件, 或删除邮件的关系。</span><span class="sxs-lookup"><span data-stu-id="41af5-104">Delete a message in the specified user's mailbox, or delete a relationship of the message.</span></span>
 
-<span data-ttu-id="96e85-105">例如, 您可以在邮件中删除特定的[@-提及](../resources/mention.md)指定用户。</span><span class="sxs-lookup"><span data-stu-id="96e85-105">For example, you can delete a specific [@-mention](../resources/mention.md) of the specified user in the message.</span></span>
+<span data-ttu-id="41af5-105">例如, 您可以在邮件中删除特定的[@-提及](../resources/mention.md)指定用户。</span><span class="sxs-lookup"><span data-stu-id="41af5-105">For example, you can delete a specific [@-mention](../resources/mention.md) of the specified user in the message.</span></span>
 
-><span data-ttu-id="96e85-106">**注释**您可能无法删除 "可恢复的项目删除" 文件夹中的项目 (由[已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`表示)。</span><span class="sxs-lookup"><span data-stu-id="96e85-106">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the [well-known folder name](../resources/mailfolder.md) `recoverableitemsdeletions`).</span></span> <span data-ttu-id="96e85-107">有关详细信息, 请参阅[已删除邮件保留](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清除已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。</span><span class="sxs-lookup"><span data-stu-id="96e85-107">See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
+><span data-ttu-id="41af5-106">**注释**您可能无法删除 "可恢复的项目删除" 文件夹中的项目 (由[已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`表示)。</span><span class="sxs-lookup"><span data-stu-id="41af5-106">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the [well-known folder name](../resources/mailfolder.md) `recoverableitemsdeletions`).</span></span> <span data-ttu-id="41af5-107">有关详细信息, 请参阅[已删除邮件保留](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清除已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。</span><span class="sxs-lookup"><span data-stu-id="41af5-107">See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="96e85-108">权限</span><span class="sxs-lookup"><span data-stu-id="96e85-108">Permissions</span></span>
-<span data-ttu-id="96e85-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="96e85-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="41af5-108">权限</span><span class="sxs-lookup"><span data-stu-id="41af5-108">Permissions</span></span>
+<span data-ttu-id="41af5-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="41af5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="96e85-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="96e85-111">Permission type</span></span>      | <span data-ttu-id="96e85-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="96e85-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="41af5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="41af5-111">Permission type</span></span>      | <span data-ttu-id="41af5-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="41af5-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="96e85-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="96e85-113">Delegated (work or school account)</span></span> | <span data-ttu-id="96e85-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="96e85-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="96e85-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="96e85-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96e85-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="96e85-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="96e85-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="96e85-117">Application</span></span> | <span data-ttu-id="96e85-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="96e85-118">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="41af5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="41af5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="41af5-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41af5-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="41af5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="41af5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="41af5-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41af5-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="41af5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="41af5-117">Application</span></span> | <span data-ttu-id="41af5-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41af5-118">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="96e85-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="96e85-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="41af5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="41af5-119">HTTP request</span></span>
 
-<span data-ttu-id="96e85-120">要删除指定的邮件, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="96e85-120">To delete the specified message:</span></span>
+<span data-ttu-id="41af5-120">要删除指定的邮件, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="41af5-120">To delete the specified message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
@@ -41,7 +41,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-<span data-ttu-id="96e85-121">删除邮件中的特定[提及](../resources/mention.md):</span><span class="sxs-lookup"><span data-stu-id="96e85-121">To delete a specific [mention](../resources/mention.md) in a message:</span></span>
+<span data-ttu-id="41af5-121">删除邮件中的特定[提及](../resources/mention.md):</span><span class="sxs-lookup"><span data-stu-id="41af5-121">To delete a specific [mention](../resources/mention.md) in a message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
@@ -50,21 +50,21 @@ DELETE /me/mailFolders/{id}/messages/{id}/mentions/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="96e85-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="96e85-122">Request headers</span></span>
-| <span data-ttu-id="96e85-123">名称</span><span class="sxs-lookup"><span data-stu-id="96e85-123">Name</span></span>       | <span data-ttu-id="96e85-124">类型</span><span class="sxs-lookup"><span data-stu-id="96e85-124">Type</span></span> | <span data-ttu-id="96e85-125">说明</span><span class="sxs-lookup"><span data-stu-id="96e85-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="41af5-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="41af5-122">Request headers</span></span>
+| <span data-ttu-id="41af5-123">名称</span><span class="sxs-lookup"><span data-stu-id="41af5-123">Name</span></span>       | <span data-ttu-id="41af5-124">类型</span><span class="sxs-lookup"><span data-stu-id="41af5-124">Type</span></span> | <span data-ttu-id="41af5-125">说明</span><span class="sxs-lookup"><span data-stu-id="41af5-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="96e85-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="96e85-126">Authorization</span></span>  | <span data-ttu-id="96e85-127">string</span><span class="sxs-lookup"><span data-stu-id="96e85-127">string</span></span>  | <span data-ttu-id="96e85-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="96e85-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="41af5-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="41af5-126">Authorization</span></span>  | <span data-ttu-id="41af5-127">string</span><span class="sxs-lookup"><span data-stu-id="41af5-127">string</span></span>  | <span data-ttu-id="41af5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="41af5-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="96e85-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="96e85-130">Request body</span></span>
-<span data-ttu-id="96e85-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="96e85-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="41af5-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="41af5-130">Request body</span></span>
+<span data-ttu-id="41af5-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="41af5-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="96e85-132">响应</span><span class="sxs-lookup"><span data-stu-id="96e85-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="41af5-132">响应</span><span class="sxs-lookup"><span data-stu-id="41af5-132">Response</span></span>
 
-<span data-ttu-id="96e85-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="96e85-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="41af5-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="41af5-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="96e85-135">示例</span><span class="sxs-lookup"><span data-stu-id="96e85-135">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="96e85-136">请求 1</span><span class="sxs-lookup"><span data-stu-id="96e85-136">Request 1</span></span>
-<span data-ttu-id="96e85-137">第一个示例删除指定的邮件。</span><span class="sxs-lookup"><span data-stu-id="96e85-137">The first example deletes the specified message.</span></span>
+## <a name="example"></a><span data-ttu-id="41af5-135">示例</span><span class="sxs-lookup"><span data-stu-id="41af5-135">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="41af5-136">请求 1</span><span class="sxs-lookup"><span data-stu-id="41af5-136">Request 1</span></span>
+<span data-ttu-id="41af5-137">第一个示例删除指定的邮件。</span><span class="sxs-lookup"><span data-stu-id="41af5-137">The first example deletes the specified message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -72,8 +72,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
-##### <a name="response-1"></a><span data-ttu-id="96e85-138">响应 1</span><span class="sxs-lookup"><span data-stu-id="96e85-138">Response 1</span></span>
-<span data-ttu-id="96e85-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="96e85-139">Here is an example of the response.</span></span> 
+##### <a name="response-1"></a><span data-ttu-id="41af5-138">响应 1</span><span class="sxs-lookup"><span data-stu-id="41af5-138">Response 1</span></span>
+<span data-ttu-id="41af5-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="41af5-139">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -81,19 +81,21 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="96e85-140">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="96e85-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="96e85-141">语言</span><span class="sxs-lookup"><span data-stu-id="96e85-141">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="41af5-140">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="41af5-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="41af5-141">C#</span><span class="sxs-lookup"><span data-stu-id="41af5-141">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_message-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="96e85-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="96e85-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="41af5-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="41af5-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_message-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="41af5-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="41af5-143">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request-2"></a><span data-ttu-id="96e85-143">请求 2</span><span class="sxs-lookup"><span data-stu-id="96e85-143">Request 2</span></span>
-<span data-ttu-id="96e85-144">下一个示例将删除指定邮件中的某个**提到**。</span><span class="sxs-lookup"><span data-stu-id="96e85-144">The next example deletes a certain **mention** in the specified message.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="41af5-144">请求 2</span><span class="sxs-lookup"><span data-stu-id="41af5-144">Request 2</span></span>
+<span data-ttu-id="41af5-145">下一个示例将删除指定邮件中的某个**提到**。</span><span class="sxs-lookup"><span data-stu-id="41af5-145">The next example deletes a certain **mention** in the specified message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_mention_in_message"
@@ -101,8 +103,8 @@ HTTP/1.1 204 No Content
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```
-##### <a name="response-2"></a><span data-ttu-id="96e85-145">响应 2</span><span class="sxs-lookup"><span data-stu-id="96e85-145">Response 2</span></span>
-<span data-ttu-id="96e85-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="96e85-146">Here is an example of the response.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="41af5-146">响应 2</span><span class="sxs-lookup"><span data-stu-id="41af5-146">Response 2</span></span>
+<span data-ttu-id="41af5-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="41af5-147">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -110,13 +112,15 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="96e85-147">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="96e85-147">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="96e85-148">语言</span><span class="sxs-lookup"><span data-stu-id="96e85-148">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="41af5-148">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="41af5-148">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="41af5-149">C#</span><span class="sxs-lookup"><span data-stu-id="41af5-149">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_mention_in_message-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="96e85-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="96e85-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="41af5-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="41af5-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_mention_in_message-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="41af5-151">目标-C</span><span class="sxs-lookup"><span data-stu-id="41af5-151">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_mention_in_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -130,6 +134,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
