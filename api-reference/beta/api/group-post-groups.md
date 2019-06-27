@@ -4,12 +4,12 @@ description: 创建新的 Office 365 组或安全组。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: e33a1fbfe4ff3c48fe80e71e9a066f8d59e31208
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 4c8bf61e3c918e75b8bb911a3558ee4681e8efe0
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812535"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236445"
 ---
 # <a name="create-group"></a>创建组
 
@@ -20,9 +20,7 @@ ms.locfileid: "34812535"
 * Office 365 组（统一组）
 * 安全组
 
-此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。
-
-若要获取_非_默认返回的属性，请执行 GET 操作，并在 `$select` OData 查询选项中指定属性。 请参阅[示例](group-get.md#request-2)。
+此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
 >**注意**：若要创建[团队](../resources/team.md)，首先要创建组，然后向组添加团队，请参阅[创建团队](../api/team-put-teams.md)。
 

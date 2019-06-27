@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f14b36b11424b46fd092e155482b727f7b19dd4a
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 799abc4fa62eaeb813a5b109c7817acf8a8f2b59
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133794"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236396"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -79,20 +79,6 @@ ms.locfileid: "35133794"
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) 导航属性 |
 
 
-
-## <a name="may-2019"></a>2019 年 5 月
-
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
-=======
-### <a name="outlook-mail-calendar-contacts"></a>Outlook 邮件、日历、联系人
-
-
-| **更改类型** | **版本**   | **说明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | v1.0 | 已添加 [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) 实体，该实体从 [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) 实体衍生而来并且支持 mailFolder 实体方法。 |
-| 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
-
-
 ## <a name="may-2019"></a>2019 年 5 月
 
 ### <a name="directory-apis"></a>目录 API
@@ -159,6 +145,13 @@ ms.locfileid: "35133794"
 | 添加项        | Beta        | 向 [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) 枚举添加了 **urgent** 属性。|
 | 添加项        | Beta        | 向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实体添加了 **hostedContents** 导航属性。|
 | 添加项        | Beta        | 添加了 **chatMessageHostedContent** 实体来表示由 Microsoft Teams 托管的与 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 关联的内容。 |
+
+### <a name="outlook-mail-calendar-contacts"></a>Outlook 邮件、日历、联系人
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 已添加 [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) 实体，该实体从 [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) 实体衍生而来并且支持 mailFolder 实体方法。 |
+| 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
 
 ### <a name="reports-apis"></a>报表 API
 
@@ -1714,7 +1707,7 @@ ms.locfileid: "35133794"
 |Addition|v1.0|在 [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0) 上添加了 [beginOnboarding](/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0) 上添加了 [disconnect](/graph/api/intune-remoteassistance-remoteassistancepartner-disconnect?view=graph-rest-1.0) 操作 |
 |添加|v1.0|在 [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-1.0) 上添加了 [downloadApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0) 函数 |
-|Addition|v1.0|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0) 上添加了 [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0) 函数 |
+|添加项|v1.0|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0) 上添加了 [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0) 函数 |
 |Addition|v1.0|在 [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0) 上添加了 [deviceConfigurationDeviceActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-1.0) 函数 |
 |添加|v1.0|在 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0) 上添加了 [verifyWindowsEnrollmentAutoDiscovery](/graph/api/intune-onboarding-devicemanagement-verifywindowsenrollmentautodiscovery?view=graph-rest-1.0) 函数 |
 |添加|v1.0|在 [managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-1.0) 集合上添加了 **getUserIdsWithFlaggedAppRegistration** 函数 |

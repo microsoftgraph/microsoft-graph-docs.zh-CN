@@ -4,12 +4,12 @@ description: '创建请求正文中指定的新组。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 2416835da76345a09370169484a83bb6ac713f90
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 9cfbe95c25d6bed66dcbc20d5e2a7039a2a74cf3
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812815"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236473"
 ---
 # <a name="create-group"></a>创建组
 创建请求正文中指定的新组。 你可以创建以下类型的组：
@@ -19,7 +19,7 @@ ms.locfileid: "34812815"
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。
 
-若要获取_非_默认返回的属性，请执行 GET 操作，并在 `$select` OData 查询选项中指定属性。 请参阅[示例](group-get.md#request-2)。
+若要获取_非_默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
 > **注意**：虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
 

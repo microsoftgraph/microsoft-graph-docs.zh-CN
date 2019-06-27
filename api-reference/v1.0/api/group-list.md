@@ -4,21 +4,17 @@ description: 列出组织中所有可用的组，包括但不限于 Office 365 �
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6f854afd94ef4d2cdd47c03ceaf157f20e4b84fc
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 26743ec0be606bc76466c6fa680824d4d2f8914a
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812780"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236480"
 ---
 # <a name="list-groups"></a>列出组
-列出组织中所有可用的组，包括但不限于 Office 365 组。
+列出组织中的所有组，包括但不限于 Office 365 组。 
 
-此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 
-
-若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 请参阅[示例](group-get.md#request-2)。
-
-**hasMembersWithLicenseErrors** 属性是例外。 请参阅关于如何使用此属性的[示例](#request-2)。
+此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,8 +58,12 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。 该响应仅包括每个组的默认属性。
 
 ## <a name="example"></a>示例
-#### <a name="request-1"></a>请求 1
-下面是一个请求示例。
+
+### <a name="example-1-return-a-list-of-group-objects"></a>示例 1：返回组对象列表
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -72,7 +72,8 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
+
 下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
@@ -151,7 +152,9 @@ Content-type: application/json
 }
 
 ```
+
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
 
@@ -161,7 +164,11 @@ Content-type: application/json
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-#### <a name="request-2"></a>请求 2
+
+### <a name="example-2-return-a-filtered-list-of-group-objects"></a>示例 2：返回经过筛选的组对象列表
+
+#### <a name="request"></a>请求
+
 此示例使用 `$filter` 查询选项获取成员在基于组的许可证分配中存在许可证错误的组。 还使用 `$select` 查询选项仅获取响应中每个组的 **id** 和 **displayName** 属性，而非其他默认或非默认属性。
 <!-- {
   "blockType": "request",
@@ -171,7 +178,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
-#### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
+
 下面是一个仅包括所请求的属性的响应示例。
 
 <!-- {
@@ -199,7 +207,9 @@ Content-type: application/json
     ]
 }
 ```
+
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Cs-snippets.md)]
 

@@ -4,12 +4,12 @@ description: 更新 bookingBusiness 对象的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7f1203eaa748ae8a5ec60fd49f665abe6ce56aac
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 25d1f592590b4afafe4358f591115b05ff273903
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636091"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35257937"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -21,7 +21,7 @@ ms.locfileid: "33636091"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订。全部, 全部预订。全部   |
+|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -42,13 +42,13 @@ PATCH /bookingBusinesses/<id>
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|企业的街道地址。|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|业务的运行时间。|
-|businessType|字符串|企业的类型。|
-|defaultCurrencyIso|字符串|业务在 Microsoft 预订中所运行的货币的代码。|
+|businessType|String|企业的类型。|
+|defaultCurrencyIso|String|业务在 Microsoft 预订中所运行的货币的代码。|
 |displayName|字符串|与客户进行交互的企业的名称。|
 |email|String|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
-|webSiteUrl|字符串|业务网站的 URL。|
+|webSiteUrl|String|业务网站的 URL。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
@@ -84,12 +84,14 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingbusiness-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingbusiness-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingbusiness-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -104,6 +106,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
