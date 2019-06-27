@@ -4,66 +4,66 @@ description: '使用此 API 创建新的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7fc275f95ae83f5f6fdc76e0b0951e9b488e45a6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: efb5d127bf0037e9e17ad690bc5fdab9976bad9c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600931"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35278608"
 ---
-# <a name="create-session"></a><span data-ttu-id="88920-103">创建会话</span><span class="sxs-lookup"><span data-stu-id="88920-103">Create Session</span></span>
+# <a name="create-session"></a><span data-ttu-id="f58d4-103">创建会话</span><span class="sxs-lookup"><span data-stu-id="f58d4-103">Create Session</span></span>
 
-<span data-ttu-id="88920-104">使用此 API 创建新的工作簿会话。</span><span class="sxs-lookup"><span data-stu-id="88920-104">Use this API to create a new workbook session.</span></span> 
+<span data-ttu-id="f58d4-104">使用此 API 创建新的工作簿会话。</span><span class="sxs-lookup"><span data-stu-id="f58d4-104">Use this API to create a new workbook session.</span></span> 
 
-<span data-ttu-id="88920-105">可以在以下任一模式下调用 Excel API：</span><span class="sxs-lookup"><span data-stu-id="88920-105">Excel APIs can be called in one of two modes:</span></span> 
+<span data-ttu-id="f58d4-105">可以在以下任一模式下调用 Excel API：</span><span class="sxs-lookup"><span data-stu-id="f58d4-105">Excel APIs can be called in one of two modes:</span></span> 
 
-1. <span data-ttu-id="88920-p101">永久会话 - 保持（保存）对工作簿所做的全部更改。这是常用的操作模式。</span><span class="sxs-lookup"><span data-stu-id="88920-p101">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
-2. <span data-ttu-id="88920-p102">非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。</span><span class="sxs-lookup"><span data-stu-id="88920-p102">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
+1. <span data-ttu-id="f58d4-p101">永久会话 - 保持（保存）对工作簿所做的全部更改。这是常用的操作模式。</span><span class="sxs-lookup"><span data-stu-id="f58d4-p101">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
+2. <span data-ttu-id="f58d4-p102">非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。</span><span class="sxs-lookup"><span data-stu-id="f58d4-p102">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
 
-<span data-ttu-id="88920-112">若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。</span><span class="sxs-lookup"><span data-stu-id="88920-112">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
+<span data-ttu-id="f58d4-112">若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。</span><span class="sxs-lookup"><span data-stu-id="f58d4-112">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
 
-><span data-ttu-id="88920-p103">**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。</span><span class="sxs-lookup"><span data-stu-id="88920-p103">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
+><span data-ttu-id="f58d4-p103">**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。</span><span class="sxs-lookup"><span data-stu-id="f58d4-p103">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
 
-## <a name="error-handling"></a><span data-ttu-id="88920-116">错误处理</span><span class="sxs-lookup"><span data-stu-id="88920-116">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="f58d4-116">错误处理</span><span class="sxs-lookup"><span data-stu-id="f58d4-116">Error Handling</span></span>
 
-<span data-ttu-id="88920-117">此请求有时可能会收到 504 HTTP 错误。</span><span class="sxs-lookup"><span data-stu-id="88920-117">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="88920-118">此错误的适当响应做法是重复发出请求。</span><span class="sxs-lookup"><span data-stu-id="88920-118">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="f58d4-117">此请求有时可能会收到 504 HTTP 错误。</span><span class="sxs-lookup"><span data-stu-id="f58d4-117">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="f58d4-118">此错误的适当响应做法是重复发出请求。</span><span class="sxs-lookup"><span data-stu-id="f58d4-118">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88920-119">权限</span><span class="sxs-lookup"><span data-stu-id="88920-119">Permissions</span></span>
-<span data-ttu-id="88920-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="88920-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f58d4-119">权限</span><span class="sxs-lookup"><span data-stu-id="f58d4-119">Permissions</span></span>
+<span data-ttu-id="f58d4-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f58d4-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88920-122">权限类型</span><span class="sxs-lookup"><span data-stu-id="88920-122">Permission type</span></span>      | <span data-ttu-id="88920-123">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="88920-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f58d4-122">权限类型</span><span class="sxs-lookup"><span data-stu-id="f58d4-122">Permission type</span></span>      | <span data-ttu-id="f58d4-123">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f58d4-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="88920-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="88920-124">Delegated (work or school account)</span></span> | <span data-ttu-id="88920-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88920-125">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="88920-126">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="88920-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88920-127">不支持。</span><span class="sxs-lookup"><span data-stu-id="88920-127">Not supported.</span></span>    |
-|<span data-ttu-id="88920-128">应用程序</span><span class="sxs-lookup"><span data-stu-id="88920-128">Application</span></span> | <span data-ttu-id="88920-129">不支持。</span><span class="sxs-lookup"><span data-stu-id="88920-129">Not supported.</span></span> |
+|<span data-ttu-id="f58d4-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f58d4-124">Delegated (work or school account)</span></span> | <span data-ttu-id="f58d4-125">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f58d4-125">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f58d4-126">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f58d4-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f58d4-127">不支持。</span><span class="sxs-lookup"><span data-stu-id="f58d4-127">Not supported.</span></span>    |
+|<span data-ttu-id="f58d4-128">应用程序</span><span class="sxs-lookup"><span data-stu-id="f58d4-128">Application</span></span> | <span data-ttu-id="f58d4-129">不支持。</span><span class="sxs-lookup"><span data-stu-id="f58d4-129">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="88920-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="88920-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f58d4-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f58d4-130">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/createSession
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="88920-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="88920-131">Request headers</span></span>
-| <span data-ttu-id="88920-132">名称</span><span class="sxs-lookup"><span data-stu-id="88920-132">Name</span></span>       | <span data-ttu-id="88920-133">说明</span><span class="sxs-lookup"><span data-stu-id="88920-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f58d4-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="f58d4-131">Request headers</span></span>
+| <span data-ttu-id="f58d4-132">名称</span><span class="sxs-lookup"><span data-stu-id="f58d4-132">Name</span></span>       | <span data-ttu-id="f58d4-133">说明</span><span class="sxs-lookup"><span data-stu-id="f58d4-133">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="88920-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="88920-134">Authorization</span></span>  | <span data-ttu-id="88920-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="88920-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f58d4-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="f58d4-134">Authorization</span></span>  | <span data-ttu-id="f58d4-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f58d4-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="88920-137">请求正文</span><span class="sxs-lookup"><span data-stu-id="88920-137">Request body</span></span>
-<span data-ttu-id="88920-138">在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="88920-138">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f58d4-137">请求正文</span><span class="sxs-lookup"><span data-stu-id="f58d4-137">Request body</span></span>
+<span data-ttu-id="f58d4-138">在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f58d4-138">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="88920-139">响应</span><span class="sxs-lookup"><span data-stu-id="88920-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f58d4-139">响应</span><span class="sxs-lookup"><span data-stu-id="f58d4-139">Response</span></span>
 
-<span data-ttu-id="88920-140">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="88920-140">If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.</span></span>
+<span data-ttu-id="f58d4-140">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f58d4-140">If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="88920-141">示例</span><span class="sxs-lookup"><span data-stu-id="88920-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="88920-142">请求</span><span class="sxs-lookup"><span data-stu-id="88920-142">Request</span></span>
-<span data-ttu-id="88920-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="88920-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f58d4-141">示例</span><span class="sxs-lookup"><span data-stu-id="f58d4-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f58d4-142">请求</span><span class="sxs-lookup"><span data-stu-id="f58d4-142">Request</span></span>
+<span data-ttu-id="f58d4-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f58d4-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_excel_session"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/createSession
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
 Content-length: 52
 
@@ -71,10 +71,10 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-<span data-ttu-id="88920-144">在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="88920-144">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
+<span data-ttu-id="f58d4-144">在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f58d4-144">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="88920-145">响应</span><span class="sxs-lookup"><span data-stu-id="88920-145">Response</span></span>
-<span data-ttu-id="88920-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="88920-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f58d4-145">响应</span><span class="sxs-lookup"><span data-stu-id="f58d4-145">Response</span></span>
+<span data-ttu-id="f58d4-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f58d4-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,13 +90,15 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="88920-149">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="88920-149">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="88920-150">语言</span><span class="sxs-lookup"><span data-stu-id="88920-150">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="f58d4-149">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f58d4-149">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="f58d4-150">C#</span><span class="sxs-lookup"><span data-stu-id="f58d4-150">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_excel_session-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="88920-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="88920-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f58d4-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="f58d4-151">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_excel_session-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f58d4-152">目标-C</span><span class="sxs-lookup"><span data-stu-id="f58d4-152">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_excel_session-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -110,7 +112,8 @@ Content-length: 52
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
