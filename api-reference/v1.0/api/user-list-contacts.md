@@ -4,12 +4,12 @@ description: 从已登录用户的默认联系人文件夹中获取联系人集�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77bcd7fd9264ff100aa325ec52a2eb1ba412a556
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7151250ef37bbac42f34d90c764ddff5ad1a9369
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33601969"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277957"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -121,6 +121,8 @@ Content-length: 263
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_contacts-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_contacts-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -134,6 +136,7 @@ Content-length: 263
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,12 +4,12 @@ description: 获取一个或多个收件人对登录用户可用的邮件提示�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ba3c606f9e54a27f46586ecc13b008a761a7d85
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 1ba2e8889be298c9c601d7db8cdecff62498ff4c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637330"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270320"
 ---
 # <a name="user-getmailtips"></a>用户: getMailTips
 
@@ -48,7 +48,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|字符串|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`: `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`: `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
 
 ## <a name="response"></a>响应
 
@@ -126,12 +126,14 @@ Content-type: application/json
 
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_getmailtips-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_getmailtips-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -146,6 +148,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
