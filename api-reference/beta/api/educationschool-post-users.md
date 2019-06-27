@@ -4,12 +4,12 @@ description: 向学校添加用户。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a50414de93cec213bc76d626a3a4d6873738e41e
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 8da24e46d555c4d673ab2a8a6083a1b670a5b070
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34749980"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259554"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>向 educationSchool 添加 educationUser
 
@@ -85,13 +85,13 @@ Content-length: 56
 ```http
 HTTP/1.1 204 No Content
 ```
-
 #### <a name="sdk-sample-code"></a>SDK 示例代码
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/create_educationuser_from_educationschool-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_educationuser_from_educationschool-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -106,6 +106,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/educationschool-post-users.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/educationschool-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

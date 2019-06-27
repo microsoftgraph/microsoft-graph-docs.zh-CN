@@ -4,14 +4,16 @@ description: 检索 attachment 对象列表。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cf588b0e0870b6873d4dc66ee79767059055a24c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a327ba6d0742689e5868afb708edebbd0534fe67
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33586231"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259085"
 ---
 # <a name="list-attachments"></a>列出附件
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 attachment 对象列表。
 ## <a name="permissions"></a>权限
@@ -51,14 +53,14 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
+GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.attachment)",
+  "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
 ```http
@@ -69,14 +71,15 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.fileAttachment",
+      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "base64-contentBytes-value",
+      "contentBytes": "contentBytes-value",
       "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
       "id": "id-value",
       "isInline": false,
+      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }
@@ -84,26 +87,31 @@ Content-length: 215
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_attachments-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_attachments-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_attachments-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List attachments",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/eventmessage-list-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/eventmessage-list-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/eventmessage-list-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/eventmessage-list-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/eventmessage-list-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->

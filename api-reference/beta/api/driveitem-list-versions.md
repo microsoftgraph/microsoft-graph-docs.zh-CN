@@ -3,14 +3,16 @@ title: 列出 DriveItem 的版本
 description: OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5f1e53326fced074bddacbaa7501ed4ed2986a68
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 268e832fc40c7505dbfe072e46fb7f9e62c82b4d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33588313"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260079"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
 根据服务和配置，每次编辑都可以创建一个新版本，每次手动保存文件或永不保存。
@@ -51,7 +53,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions
@@ -107,12 +109,14 @@ Content-Type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-previous-versions-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-previous-versions-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -124,14 +128,17 @@ OneDrive 不保留文件以前版本的完整元数据。
 当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->
