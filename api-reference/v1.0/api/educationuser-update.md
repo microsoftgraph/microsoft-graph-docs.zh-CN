@@ -4,12 +4,12 @@ description: 更新 **educationuser** 对象的属性。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 518eb4995c699450f8b489922775bae90cb45494
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 747d7b2e6171a55ad2140840b9a10d98f4eed5a7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33615533"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273813"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -40,8 +40,8 @@ PATCH /education/users/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| 字符串| 显示用户名称|
-|givenName| 字符串 | 名字 |
+|displayName| String| 显示用户名称|
+|givenName| String | 名字 |
 |middleName| String | 用户的中间名|
 |surname| 字符串 | 用户的姓|
 |mail| String| 电子邮件地址|
@@ -125,12 +125,14 @@ Content-length: 508
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_educationuser-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_educationuser-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_educationuser-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -144,6 +146,7 @@ Content-length: 508
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
