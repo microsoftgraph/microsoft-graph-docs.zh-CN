@@ -1,0 +1,27 @@
+---
+description: 自动生成的文件。 不修改
+ms.openlocfilehash: 4c7e7f7e8b95abd3792bdc1205cb3c1776ef3018
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35322733"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7"]]];
+[urlRequest setHTTPMethod:@"GET"];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        MSGraphOutlookCategory *outlookCategory = [[MSGraphOutlookCategory alloc] initWithData:data error:&nserror];
+
+}];
+
+[meDataTask execute];
+
+```

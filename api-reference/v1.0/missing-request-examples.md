@@ -2,19 +2,19 @@
 title: 将 /me 定义为单一实例
 description: 必须在文档中添加以下内容, 以确保 Markdown-扫描程序
 localization_priority: Normal
-ms.openlocfilehash: d3130362ea0790a91c4a6f6a3f1e7465584872d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 62d222b2e6b3145371f3eac564236dc75d222315
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951240"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273463"
 ---
-# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="63ddd-103">帮助程序（未包含在文档中的示例）</span><span class="sxs-lookup"><span data-stu-id="63ddd-103">Helpers (examples that aren't included in the docs)</span></span>
+# <a name="helpers-examples-that-arent-included-in-the-docs"></a><span data-ttu-id="6afb5-103">帮助程序（未包含在文档中的示例）</span><span class="sxs-lookup"><span data-stu-id="6afb5-103">Helpers (examples that aren't included in the docs)</span></span>
 
-<span data-ttu-id="63ddd-104">这些内容必须添加到文档中以确保 Markdown 扫描程序工具能够正确地处理 Graph 文档。</span><span class="sxs-lookup"><span data-stu-id="63ddd-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
+<span data-ttu-id="6afb5-104">这些内容必须添加到文档中以确保 Markdown 扫描程序工具能够正确地处理 Graph 文档。</span><span class="sxs-lookup"><span data-stu-id="6afb5-104">These are things I had to add in the docs to make sure the Markdown-Scanner tool was able to properly handle the Graph docs.</span></span>
 
 
-## <a name="define-the-me-as-singleton"></a><span data-ttu-id="63ddd-105">将 /me 定义为单一实例</span><span class="sxs-lookup"><span data-stu-id="63ddd-105">Define the /me as singleton</span></span>
+## <a name="define-the-me-as-singleton"></a><span data-ttu-id="6afb5-105">将 /me 定义为单一实例</span><span class="sxs-lookup"><span data-stu-id="6afb5-105">Define the /me as singleton</span></span>
 
 <!-- {"blockType": "request", "name": "get_current_user" } -->
 ```http
@@ -29,19 +29,21 @@ Content-Type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="63ddd-106">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="63ddd-106">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="63ddd-107">C#</span><span class="sxs-lookup"><span data-stu-id="63ddd-107">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6afb5-106">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="6afb5-106">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6afb5-107">C#</span><span class="sxs-lookup"><span data-stu-id="6afb5-107">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_current_user-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63ddd-108">Javascript</span><span class="sxs-lookup"><span data-stu-id="63ddd-108">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6afb5-108">Javascript</span><span class="sxs-lookup"><span data-stu-id="6afb5-108">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_current_user-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6afb5-109">目标-C</span><span class="sxs-lookup"><span data-stu-id="6afb5-109">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_current_user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="63ddd-109">将驱动器定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="63ddd-109">Define drives as an queryable entityset</span></span>
+## <a name="define-drives-as-an-queryable-entityset"></a><span data-ttu-id="6afb5-110">将驱动器定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="6afb5-110">Define drives as an queryable entityset</span></span>
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{drive-id}
@@ -55,19 +57,21 @@ Content-Type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="63ddd-110">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="63ddd-110">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="63ddd-111">C#</span><span class="sxs-lookup"><span data-stu-id="63ddd-111">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6afb5-111">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="6afb5-111">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6afb5-112">C#</span><span class="sxs-lookup"><span data-stu-id="6afb5-112">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_drive_from_id-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63ddd-112">Javascript</span><span class="sxs-lookup"><span data-stu-id="63ddd-112">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6afb5-113">Javascript</span><span class="sxs-lookup"><span data-stu-id="6afb5-113">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_drive_from_id-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6afb5-114">目标-C</span><span class="sxs-lookup"><span data-stu-id="6afb5-114">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_drive_from_id-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="63ddd-113">将用户定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="63ddd-113">define users as an queryable entityset</span></span>
+## <a name="define-users-as-an-queryable-entityset"></a><span data-ttu-id="6afb5-115">将用户定义为可查询实体集</span><span class="sxs-lookup"><span data-stu-id="6afb5-115">define users as an queryable entityset</span></span>
 
 <!-- {"blockType": "request", "name": "get_users" } -->
 ```http
@@ -82,13 +86,15 @@ Content-Type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="63ddd-114">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="63ddd-114">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="63ddd-115">C#</span><span class="sxs-lookup"><span data-stu-id="63ddd-115">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6afb5-116">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="6afb5-116">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6afb5-117">C#</span><span class="sxs-lookup"><span data-stu-id="6afb5-117">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63ddd-116">Javascript</span><span class="sxs-lookup"><span data-stu-id="63ddd-116">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6afb5-118">Javascript</span><span class="sxs-lookup"><span data-stu-id="6afb5-118">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6afb5-119">目标-C</span><span class="sxs-lookup"><span data-stu-id="6afb5-119">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_users-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -103,6 +109,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /missing-request-examples.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
