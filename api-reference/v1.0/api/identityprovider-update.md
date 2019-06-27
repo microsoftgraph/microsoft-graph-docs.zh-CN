@@ -4,62 +4,62 @@ description: 更新现有 identityProvider 中的属性
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3831045172c7c3b6a0d116bd28f5dfc4462ec582
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fcf0cd115c6f2e2f8b3585505b6b96c3481f6a00
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613273"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276865"
 ---
-# <a name="update-identityprovider"></a><span data-ttu-id="bb718-103">更新 identityProvider</span><span class="sxs-lookup"><span data-stu-id="bb718-103">Update identityProvider</span></span>
+# <a name="update-identityprovider"></a><span data-ttu-id="4215c-103">更新 identityProvider</span><span class="sxs-lookup"><span data-stu-id="4215c-103">Update identityProvider</span></span>
 
-<span data-ttu-id="bb718-104">更新现有 [identityProvider](../resources/identityprovider.md) 中的属性。</span><span class="sxs-lookup"><span data-stu-id="bb718-104">Update properties in an existing [identityProvider](../resources/identityprovider.md).</span></span>
+<span data-ttu-id="4215c-104">更新现有 [identityProvider](../resources/identityprovider.md) 中的属性。</span><span class="sxs-lookup"><span data-stu-id="4215c-104">Update properties in an existing [identityProvider](../resources/identityprovider.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bb718-105">权限</span><span class="sxs-lookup"><span data-stu-id="bb718-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4215c-105">权限</span><span class="sxs-lookup"><span data-stu-id="4215c-105">Permissions</span></span>
 
-<span data-ttu-id="bb718-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bb718-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4215c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4215c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bb718-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="bb718-108">Permission type</span></span>      | <span data-ttu-id="bb718-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bb718-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4215c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4215c-108">Permission type</span></span>      | <span data-ttu-id="4215c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4215c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bb718-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bb718-110">Delegated (work or school account)</span></span>|<span data-ttu-id="bb718-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bb718-111">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="bb718-112">委派（Microsoft 个人帐户）</span><span class="sxs-lookup"><span data-stu-id="bb718-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="bb718-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="bb718-113">Not supported.</span></span>|
-|<span data-ttu-id="bb718-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="bb718-114">Application</span></span>|<span data-ttu-id="bb718-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bb718-115">Not supported.</span></span>|
+|<span data-ttu-id="4215c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4215c-110">Delegated (work or school account)</span></span>|<span data-ttu-id="4215c-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4215c-111">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="4215c-112">委派（Microsoft 个人帐户）</span><span class="sxs-lookup"><span data-stu-id="4215c-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="4215c-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="4215c-113">Not supported.</span></span>|
+|<span data-ttu-id="4215c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4215c-114">Application</span></span>|<span data-ttu-id="4215c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4215c-115">Not supported.</span></span>|
 
-<span data-ttu-id="bb718-116">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="bb718-116">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="4215c-116">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="4215c-116">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="bb718-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bb718-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4215c-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4215c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityProviders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bb718-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="bb718-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4215c-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4215c-118">Request headers</span></span>
 
-|<span data-ttu-id="bb718-119">名称</span><span class="sxs-lookup"><span data-stu-id="bb718-119">Name</span></span>|<span data-ttu-id="bb718-120">说明</span><span class="sxs-lookup"><span data-stu-id="bb718-120">Description</span></span>|
+|<span data-ttu-id="4215c-119">名称</span><span class="sxs-lookup"><span data-stu-id="4215c-119">Name</span></span>|<span data-ttu-id="4215c-120">说明</span><span class="sxs-lookup"><span data-stu-id="4215c-120">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="bb718-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bb718-121">Authorization</span></span>|<span data-ttu-id="bb718-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bb718-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="bb718-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bb718-124">Content-Type</span></span>|<span data-ttu-id="bb718-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="bb718-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="4215c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4215c-121">Authorization</span></span>|<span data-ttu-id="4215c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4215c-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="4215c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4215c-124">Content-Type</span></span>|<span data-ttu-id="4215c-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="4215c-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bb718-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="bb718-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4215c-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4215c-127">Request body</span></span>
 
-<span data-ttu-id="bb718-128">在请求正文中，为 JSON 对象提供一个或多个需要更新的属性。</span><span class="sxs-lookup"><span data-stu-id="bb718-128">In the request body, provide a JSON object with one or more properties that need to be updated.</span></span>
+<span data-ttu-id="4215c-128">在请求正文中，为 JSON 对象提供一个或多个需要更新的属性。</span><span class="sxs-lookup"><span data-stu-id="4215c-128">In the request body, provide a JSON object with one or more properties that need to be updated.</span></span>
 
-|<span data-ttu-id="bb718-129">属性</span><span class="sxs-lookup"><span data-stu-id="bb718-129">Property</span></span>|<span data-ttu-id="bb718-130">类型</span><span class="sxs-lookup"><span data-stu-id="bb718-130">Type</span></span>|<span data-ttu-id="bb718-131">说明</span><span class="sxs-lookup"><span data-stu-id="bb718-131">Description</span></span>|
+|<span data-ttu-id="4215c-129">属性</span><span class="sxs-lookup"><span data-stu-id="4215c-129">Property</span></span>|<span data-ttu-id="4215c-130">类型</span><span class="sxs-lookup"><span data-stu-id="4215c-130">Type</span></span>|<span data-ttu-id="4215c-131">说明</span><span class="sxs-lookup"><span data-stu-id="4215c-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bb718-132">clientId</span><span class="sxs-lookup"><span data-stu-id="bb718-132">clientId</span></span>|<span data-ttu-id="bb718-133">字符串</span><span class="sxs-lookup"><span data-stu-id="bb718-133">String</span></span>|<span data-ttu-id="bb718-134">应用程序的客户端 ID。</span><span class="sxs-lookup"><span data-stu-id="bb718-134">The client ID for the application.</span></span> <span data-ttu-id="bb718-135">这是向标识提供程序注册应用程序时获取的客户端 ID。</span><span class="sxs-lookup"><span data-stu-id="bb718-135">This is the client ID obtained when registering the application with the identity provider.</span></span>|
-|<span data-ttu-id="bb718-136">clientSecret</span><span class="sxs-lookup"><span data-stu-id="bb718-136">clientSecret</span></span>|<span data-ttu-id="bb718-137">字符串</span><span class="sxs-lookup"><span data-stu-id="bb718-137">String</span></span>|<span data-ttu-id="bb718-138">应用程序的客户端密码。</span><span class="sxs-lookup"><span data-stu-id="bb718-138">The client secret for the application.</span></span> <span data-ttu-id="bb718-139">这是向标识提供程序注册应用程序时获取的客户端密码。</span><span class="sxs-lookup"><span data-stu-id="bb718-139">This is the client secret obtained when registering the application with the identity provider.</span></span>|
-|<span data-ttu-id="bb718-140">name</span><span class="sxs-lookup"><span data-stu-id="bb718-140">name</span></span>|<span data-ttu-id="bb718-141">字符串</span><span class="sxs-lookup"><span data-stu-id="bb718-141">String</span></span>|<span data-ttu-id="bb718-142">标识提供程序的显示名称。</span><span class="sxs-lookup"><span data-stu-id="bb718-142">The display name of the identity provider.</span></span>|
+|<span data-ttu-id="4215c-132">clientId</span><span class="sxs-lookup"><span data-stu-id="4215c-132">clientId</span></span>|<span data-ttu-id="4215c-133">字符串</span><span class="sxs-lookup"><span data-stu-id="4215c-133">String</span></span>|<span data-ttu-id="4215c-134">应用程序的客户端 ID。</span><span class="sxs-lookup"><span data-stu-id="4215c-134">The client ID for the application.</span></span> <span data-ttu-id="4215c-135">这是向标识提供程序注册应用程序时获取的客户端 ID。</span><span class="sxs-lookup"><span data-stu-id="4215c-135">This is the client ID obtained when registering the application with the identity provider.</span></span>|
+|<span data-ttu-id="4215c-136">clientSecret</span><span class="sxs-lookup"><span data-stu-id="4215c-136">clientSecret</span></span>|<span data-ttu-id="4215c-137">字符串</span><span class="sxs-lookup"><span data-stu-id="4215c-137">String</span></span>|<span data-ttu-id="4215c-138">应用程序的客户端密码。</span><span class="sxs-lookup"><span data-stu-id="4215c-138">The client secret for the application.</span></span> <span data-ttu-id="4215c-139">这是向标识提供程序注册应用程序时获取的客户端密码。</span><span class="sxs-lookup"><span data-stu-id="4215c-139">This is the client secret obtained when registering the application with the identity provider.</span></span>|
+|<span data-ttu-id="4215c-140">name</span><span class="sxs-lookup"><span data-stu-id="4215c-140">name</span></span>|<span data-ttu-id="4215c-141">字符串</span><span class="sxs-lookup"><span data-stu-id="4215c-141">String</span></span>|<span data-ttu-id="4215c-142">标识提供程序的显示名称。</span><span class="sxs-lookup"><span data-stu-id="4215c-142">The display name of the identity provider.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="bb718-143">响应</span><span class="sxs-lookup"><span data-stu-id="bb718-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4215c-143">响应</span><span class="sxs-lookup"><span data-stu-id="4215c-143">Response</span></span>
 
-<span data-ttu-id="bb718-144">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="bb718-144">If successful, this method returns `204 No Content` response code.</span></span> <span data-ttu-id="bb718-145">如果失败，将返回 `4xx` 错误并显示具体详细信息。</span><span class="sxs-lookup"><span data-stu-id="bb718-145">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="4215c-144">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="4215c-144">If successful, this method returns `204 No Content` response code.</span></span> <span data-ttu-id="4215c-145">如果失败，将返回 `4xx` 错误并显示具体详细信息。</span><span class="sxs-lookup"><span data-stu-id="4215c-145">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bb718-146">示例</span><span class="sxs-lookup"><span data-stu-id="bb718-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4215c-146">示例</span><span class="sxs-lookup"><span data-stu-id="4215c-146">Example</span></span>
 
-<span data-ttu-id="bb718-147">以下示例会更新令牌生命周期 **identityProvider** 的定义并将其设置为组织默认值。</span><span class="sxs-lookup"><span data-stu-id="bb718-147">The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.</span></span>
+<span data-ttu-id="4215c-147">以下示例会更新令牌生命周期 **identityProvider** 的定义并将其设置为组织默认值。</span><span class="sxs-lookup"><span data-stu-id="4215c-147">The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="bb718-148">请求</span><span class="sxs-lookup"><span data-stu-id="bb718-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="4215c-148">请求</span><span class="sxs-lookup"><span data-stu-id="4215c-148">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -75,7 +75,7 @@ Content-length: 41
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="bb718-149">响应</span><span class="sxs-lookup"><span data-stu-id="bb718-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="4215c-149">响应</span><span class="sxs-lookup"><span data-stu-id="4215c-149">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -84,13 +84,15 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="bb718-150">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="bb718-150">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="bb718-151">C#</span><span class="sxs-lookup"><span data-stu-id="bb718-151">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="4215c-150">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="4215c-150">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="4215c-151">C#</span><span class="sxs-lookup"><span data-stu-id="4215c-151">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update-identityprovider-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bb718-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="bb718-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4215c-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="4215c-152">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-identityprovider-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="4215c-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4215c-153">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update-identityprovider-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -104,6 +106,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/identityprovider-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/identityprovider-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/identityprovider-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
