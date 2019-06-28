@@ -1,12 +1,12 @@
 ---
 title: 枚举值
 description: Microsoft Graph 枚举值
-ms.openlocfilehash: b9e7dac80f40739854128e874b0e1fa82c0c1844
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750164"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348696"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -719,6 +719,7 @@ ms.locfileid: "34750164"
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
 |hidden|
 |向 unknownfuturevalue|
 
@@ -821,3 +822,30 @@ ms.locfileid: "34750164"
 |通用|
 |高效|
 |紧急|
+
+### <a name="tokenissuertype-values"></a>tokenIssuerType 值
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|向 unknownfuturevalue|
+
+### <a name="riskdetectiontimingtype-values"></a>riskDetectionTimingType 值
+
+|Member|
+|:---|
+|notDefined|
+|实时|
+|nearRealtime|
+|脱机|
+|向 unknownfuturevalue|
+
+
+### <a name="activitytype-values"></a>activityType 值
+
+|Member|
+|:---|
+|登录|
+|user|
+|向 unknownfuturevalue|

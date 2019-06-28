@@ -4,12 +4,12 @@ description: 检索团队通道中的单个消息（不包括其回复）。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d68adc62df32064c9caa8b57167be723a62e474
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 6393ba9fdd5c012d24fd3e65ee707cda57c93cda
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262137"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348640"
 ---
 # <a name="get-channel-message"></a>获取通道消息
 
@@ -24,7 +24,7 @@ ms.locfileid: "35262137"
 |---------|-------------|
 |委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application| 不支持。 |
+|Application| Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

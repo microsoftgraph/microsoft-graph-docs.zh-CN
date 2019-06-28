@@ -1,19 +1,17 @@
 ---
 title: 列出警报
 description: 检索警报对象列表。
-localization_priority: Normal
 author: preetikr
+localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: d18f49c5e1a0dcc8d079816ff7ad17c6e21df2ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 82861f380005390fe19adcf0073267ad1d5f7e05
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551377"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273708"
 ---
 # <a name="list-alerts"></a>列出警报
-
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[警报](../resources/alert.md)对象列表。
 
@@ -48,7 +46,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` 将返回每个安全 API 提供程序的顶部聚合结果。
+- `$top` 将返回每个安全 API 提供程序的顶部聚合结果。  
 
 若要返回其他属性，使用 OData `$select` 查询参数指定你想要的一组 **alert** 属性。  例如，若要返回 **assignedTo**、**category** 和 **severity** 属性，向查询添加以下项：`$select=assignedTo,category,severity`。
 
@@ -79,7 +77,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/alerts
+GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
 ### <a name="response"></a>响应
@@ -111,16 +109,30 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alerts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alerts-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_alerts-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

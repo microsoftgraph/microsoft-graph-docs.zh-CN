@@ -2,18 +2,16 @@
 title: checkMemberGroups
 description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 935c823c270e56760cf5400a551dc1a73aa04019
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cb46306a7ea2298bec4abb9827d93787ca843f7e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602235"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274639"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检查指定组列表中的成员身份。从列表中返回用户具有直接或可传递成员身份的组。
 
@@ -50,8 +48,8 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数 | 类型   | 说明           |
-| :-------- | :----- | :-------------------- |
+| 参数 | 类型              | 说明           |
+| :-------- | :---------------- | :-------------------- |
 | groupIds  | String collection | 组 ID 的数组 |
 
 ## <a name="response"></a>响应
@@ -72,7 +70,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -112,6 +110,8 @@ Content-length: 39
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_checkmembergroups-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_checkmembergroups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -119,16 +119,15 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

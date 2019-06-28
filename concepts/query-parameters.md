@@ -3,17 +3,16 @@ title: 使用查询参数自定义响应
 description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 5f986a84604a5783c16e6febc6130d4d53bd058f
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 26f765f2537bda8c29a6c25c9352da3558d78f9a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133815"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273799"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
 Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中返回的数据量。 对准确查询参数的支持因 API 操作不同而不同，并且可能会在 v1.0 和数据终结点之间不同，具体取决于 API。 
-
 
 > [!TIP] 
 > 在 beta 终结点上，`$` 前缀是可选的。 例如，可使用 `filter` 来代替 `$filter`。 在 v1 终结点上, `$`前缀仅对 API 的一个子集是可选的。 为简单起见, 如果使用 v1 终结点, 请始终包含`$`。
@@ -25,7 +24,9 @@ Microsoft Graph 支持可选的查询参数，可用于指定和控制响应中�
 ## <a name="odata-system-query-options"></a>OData 系统查询选项
 Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询选项。 这些查询选项与 [OData V4 查询语言][odata-query]兼容。
 
->**注意：** 单击示例可以在 [Graph 浏览器][graph-explorer]中试调用。
+>**注意：** OData 4.0 仅在 GET 操作中支持系统查询选项。
+
+单击示例可以在 [Graph 浏览器][graph-explorer]中试调用它们。
 
 | 名称                     | 说明 | 示例
 |:-------------------------|:------------|:---------|
@@ -255,8 +256,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 - 
   [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/zh-CN/library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 
