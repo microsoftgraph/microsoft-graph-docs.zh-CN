@@ -4,12 +4,12 @@ description: 检索邮件文件夹对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 010e6f0ada9de12655a5ebed341b5bbfdb26e124
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a475675e8febe78c97c8482379723801951822e7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33612664"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35266253"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -49,35 +49,47 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <a name="examples"></a>示例
+### <a name="example-1-get-a-mail-folder"></a>示例 1：获取邮件文件夹
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 ```
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value"
+  "id": "AAMkAGVmMDEzM",
+  "displayName": "Inbox",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 2,
+  "unreadItemCount": 59,
+  "totalItemCount": 60,
+  "wellKnownName": "inbox"
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
@@ -87,9 +99,74 @@ Content-length: 179
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailfolder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_mailfolder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### <a name="example-2-get-a-mail-search-folder"></a>示例 2：获取邮件搜索文件夹
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
+  "name": "get_mailSearchfolder"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzN",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 0,
+  "unreadItemCount": 6,
+  "totalItemCount": 6,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIds": [
+    "AAMkAGVmMDEzM"
+  ],
+  "filterQuery": "contains(subject, 'MyAnalytics')"
+}
+```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Javascript-snippets.md)]
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_mailSearchfolder-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,6 +177,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

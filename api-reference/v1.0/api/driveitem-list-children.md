@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 列出文件夹的内容
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a280c68561aa764ccab74dc871465fb134e39d79
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548031"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272847"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -62,17 +62,41 @@ GET /users/{user-id}/drive/items/{item-id}/children
 ```http
 GET /me/drive/root/children
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-root-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-root-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list-children-root-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>列出带已知 ID 的 DriveItem 子项
 
 若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 
-<!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-files-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-files-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list-children-files-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="list-children-of-a-driveitem-with-a-known-path"></a>列出带已知路径的 DriveItem 子项
 
@@ -84,12 +108,13 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回目标项的子项集合列表。 子项集合由 [driveItem][item-resource] 资源组成。
+如果成功，此方法将返回目标项的子项集合列表。
+子项集合由 [driveItem][item-resource] 资源组成。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
        "truncated": true,
-       "name": [ "list-children-root", "list-children", "list-children-from-path" ] } -->
+       "name": [ "list-children-root", "list-children-files", "list-children-from-path" ] } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -122,5 +147,12 @@ Content-type: application/json
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "Items/List children"
+  "tocPath": "Items/List children",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
