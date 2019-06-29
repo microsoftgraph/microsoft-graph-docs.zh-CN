@@ -4,12 +4,12 @@ description: 返回用户是其成员的所有组。 检查是可传递的，这
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 60cc7819511816728dcd901d51174c75ba365f33
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b50a56dac343181f72a2c1eb102a1e609de15a21
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270327"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395189"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -25,9 +25,9 @@ ms.locfileid: "35270327"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | User.readbasic.all 和 group. all、user. read 和 Group. all、Group. all、all、Directory.accessasuser.all、all 和 Group。 all,。 all, all,。 all 的所有子目录。 |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
-| 应用程序                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
+| 应用程序                            | Read. All 和 Group. all, 目录。 all, All, All            |
 
 ## <a name="http-request"></a>HTTP 请求
 

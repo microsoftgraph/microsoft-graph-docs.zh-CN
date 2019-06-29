@@ -4,12 +4,12 @@ description: 返回指定的 user、group 或 directory 对象所属的所有组
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0a4d216c23b52a539611e4e160e2236d66cc9ca3
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 599462c9589841fe5c49fddfbc6a6167e182ea77
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274870"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395154"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
@@ -20,9 +20,16 @@ ms.locfileid: "35274870"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All 和 Group.Read.All、Directory.Read.All    |
+|委派（工作或学校帐户） | User.readbasic.all 和 group. all、User. all 和 Group。 all, read. All, All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All 和 Group.Read.All、Directory.Read.All |
+
+使用下面的方案指南可帮助确定要使用的权限类型:
+- 使用 User. Read 和 Group。读取。获取登录用户的组成员身份的所有权限。
+- 使用 User.readbasic.all 和 Group. all 或 User. read. all 和 Group。 Read。获取任何用户的组成员身份的所有权限。
+- 使用 Group. Read。获取组的组成员身份的所有权限。
+- 使用目录读取。获取目录对象的组成员身份的所有权限。
+
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

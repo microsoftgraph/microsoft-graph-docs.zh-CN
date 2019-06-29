@@ -4,12 +4,12 @@ description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 30cc5f43a0ca61b4ebae27854e53ee52180fad0b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 524cfeff7a01de50d33224089557ecd62081dc77
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263411"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395147"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -25,11 +25,9 @@ ms.locfileid: "35263411"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
-| 应用程序                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
-
-> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用 `Group.Read.All` 权限将返回错误。 这是一个已知 bug。
+| 应用程序                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP 请求
 
