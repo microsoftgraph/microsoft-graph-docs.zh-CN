@@ -4,12 +4,12 @@ description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb46306a7ea2298bec4abb9827d93787ca843f7e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 171dffcb912c2ac26ecc3cd01388299228ca44db
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274639"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395161"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -23,11 +23,9 @@ ms.locfileid: "35274639"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | User.ReadBasic.All 和 Group.Read.All、User.Read.All 和 Group.Read.All、User.ReadWrite.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                     |
-| 应用程序                            | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
-
-> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用 `User.Read.All` 或 `User.ReadWrite.All` 权限将返回错误。 这是一个已知 bug。
+| Application                            | User.Read.All 和 Group.Read.All、User.ReadWrite.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -4,12 +4,12 @@ description: 返回用户是其成员的所有组。 检查是可传递的，这
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a99aca467e34d82025a45d5a898235f5cc7bf368
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2871dd2bfcc2de54ddeead019a54598989c20e43
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277978"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395196"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -23,9 +23,9 @@ ms.locfileid: "35277978"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 委派（工作或学校帐户）     |  User.Read、Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | User.ReadBasic.All 和 Group.Read.All、User.Read 和 Group.Read.All、User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                                                       |
-| 应用程序                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                                                                                        |
+| 应用程序                            |  User.Read.All 和 Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

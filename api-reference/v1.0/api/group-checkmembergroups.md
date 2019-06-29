@@ -4,12 +4,12 @@ description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0c0b850857b094567ba04c8c701227a6dda742bc
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9d76df33ac36ef936a1abfa873332c3be3aa0650
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275878"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395182"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -23,11 +23,11 @@ ms.locfileid: "35275878"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
-| 应用程序                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
+| Application                            | Group.Read.All、Directory.Read.All。 Directory.ReadWrite.All                               |
 
-> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用 `Group.Read.All` 权限将返回错误。 这是一个已知 bug。
+
 
 ## <a name="http-request"></a>HTTP 请求
 
