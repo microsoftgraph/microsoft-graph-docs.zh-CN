@@ -4,12 +4,12 @@ description: 获取已登录用户的邮箱中的所有邮件文件夹。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 86e2ef795db5eb3fd2973854d982cb2d7742927a
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: be5b7d684c01dcc8fd22ee83d120ea67696a3c9d
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270187"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417666"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -22,8 +22,8 @@ ms.locfileid: "35270187"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
+|委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
+|委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
 |应用程序 | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求

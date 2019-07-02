@@ -4,12 +4,12 @@ description: 获取指定文件夹中已添加、删除或更新的邮件集。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5f820413e81fe8b78dd029c48da578d03058fe94
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2c87f92c9e2b273e1446e15dc9ca36a924d77694
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598244"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417701"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -24,8 +24,8 @@ ms.locfileid: "33598244"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
+|委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
+|委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
 |应用程序 | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -116,7 +116,7 @@ Content-length: 337
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/message_delta-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

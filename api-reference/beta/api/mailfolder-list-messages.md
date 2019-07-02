@@ -4,12 +4,12 @@ description: 列出登录用户的邮箱中的所有邮件, 或邮箱或驱动�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 11ec048d16906bd1a6c95304f7956a56852bfaf6
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 91aa4ed92eb396fc4977796755cb8e377f9eb5bb
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266631"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417722"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -22,8 +22,8 @@ ms.locfileid: "35266631"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
+|委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
+|委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
 |应用程序 | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求

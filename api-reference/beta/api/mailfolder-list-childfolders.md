@@ -4,12 +4,12 @@ description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 68d85a6430d72222ffdcf52795c9fec3d0a11f2e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 275f7bcd771db43f5d091848d9be8c50c6ddb124
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266883"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417728"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -23,8 +23,8 @@ ms.locfileid: "35266883"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:------------------------------------|
-| 委派（工作或学校帐户）     | Mail.Read、Mail.ReadWrite           |
-| 委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite           |
+| 委派（工作或学校帐户）     | User.readbasic.all、邮件、读取、封写           |
+| 委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写           |
 | 应用程序                            | Mail.Read、Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP 请求
