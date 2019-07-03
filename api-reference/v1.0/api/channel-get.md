@@ -4,12 +4,12 @@ description: 检索频道的属性和关系。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1d816f281dfb8c8d9ef244e837c0c9f673c02909
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 3636fa1f941a22487f30e0f89304110952631952
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273673"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443677"
 ---
 # <a name="get-channel"></a>获取频道
 
@@ -53,6 +53,8 @@ GET /teams/{id}/channels/{id}
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel"
@@ -60,6 +62,20 @@ GET /teams/{id}/channels/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
@@ -80,18 +96,6 @@ Content-length: 201
     "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_channel-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_channel-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_channel-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,8 +106,5 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/channel-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/channel-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/channel-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
