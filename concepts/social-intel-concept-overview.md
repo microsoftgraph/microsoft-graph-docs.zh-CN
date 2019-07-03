@@ -1,17 +1,17 @@
 ---
-title: Microsoft Graph 中的社交智能和分析概述
+title: Microsoft Graph 中的社交和工作场所智能概述
 description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 3c274c6bef751c0fa39bf38c8f1472b075567da5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1ab4140272cb227898ba1db79d4ab575073e51f
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459770"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417715"
 ---
-# <a name="overview-of-social-intelligence-and-analytics-in-microsoft-graph"></a>Microsoft Graph 中的社交智能和分析概述
+# <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的社交和工作场所智能概述
 
 Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
 
@@ -93,7 +93,7 @@ GET /me/people/?$search="topic:beetle"
 在查找这些服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的人员 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Microsoft Graph beta 中的社交智能和分析 API](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [使用 Microsoft Graph API 在应用中集成社交和工作区智能](/graph/api/resources/social-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 

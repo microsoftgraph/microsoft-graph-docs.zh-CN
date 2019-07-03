@@ -1,18 +1,18 @@
 ---
 title: Microsoft Graph 中的主要服务和功能
 description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
-author: jthake-msft
+author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: c8d7a209744eade704432c2c93561d4e60070ec1
-ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
+ms.openlocfilehash: bb100d4b8c64300681dd0463184cb30b925654d2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083251"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417708"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
-借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它还提供安全性和社交智能，可以提升用户的工作效率、创意和团队协作，并保护企业资源和用户数据。 
+借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它还提供安全性和智能，可以提升用户的工作效率、创意和团队协作，并保护企业资源和用户数据。 
 
 ## <a name="users-and-groups"></a>用户和组
 
@@ -68,12 +68,12 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |团队合作 |  Microsoft Teams | 面向团队的数字中心和基于聊天的工作区，用于共享文件、笔记、日历和计划。 | [Microsoft Teams 团队合作概述](teams-concept-overview.md) |
 
 
-## <a name="social-intelligence-and-analytics"></a>社交智能和分析
+## <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 社交智能：人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的社交智能](social-intel-concept-overview.md) |
-| 社交智能：文档见解（预览） | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的社交智能](social-intel-concept-overview.md)  |
+| 社交智能：人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的社交和工作场所智能](social-intel-concept-overview.md) |
+| 社交智能：文档见解（预览） | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的社交和工作场所智能](social-intel-concept-overview.md)  |
 
 
 ## <a name="device-management"></a>设备管理
