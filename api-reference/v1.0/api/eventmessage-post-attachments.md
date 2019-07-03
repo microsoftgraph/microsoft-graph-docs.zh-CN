@@ -4,56 +4,58 @@ description: 使用此 API 新建附件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c1b61c1a0f2cfc54760f6bcf6f2ad6781cabd8ae
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: a22a485a7088083947654baa352f58a7dba6cc48
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275913"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445987"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="3bf32-103">Add attachment</span><span class="sxs-lookup"><span data-stu-id="3bf32-103">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="423ad-103">Add attachment</span><span class="sxs-lookup"><span data-stu-id="423ad-103">Add attachment</span></span>
 
-<span data-ttu-id="3bf32-104">使用此 API 新建附件。</span><span class="sxs-lookup"><span data-stu-id="3bf32-104">Use this API to create a new Attachment.</span></span>
+<span data-ttu-id="423ad-104">使用此 API 新建附件。</span><span class="sxs-lookup"><span data-stu-id="423ad-104">Use this API to create a new Attachment.</span></span>
 
-<span data-ttu-id="3bf32-105">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="3bf32-105">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="423ad-105">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="423ad-105">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="3bf32-106">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="3bf32-106">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="3bf32-107">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="3bf32-107">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="3bf32-108">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="3bf32-108">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="423ad-106">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="423ad-106">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="423ad-107">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="423ad-107">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="423ad-108">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="423ad-108">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="3bf32-109">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="3bf32-109">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="423ad-109">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="423ad-109">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="3bf32-110">权限</span><span class="sxs-lookup"><span data-stu-id="3bf32-110">Permissions</span></span>
-<span data-ttu-id="3bf32-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3bf32-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="423ad-110">权限</span><span class="sxs-lookup"><span data-stu-id="423ad-110">Permissions</span></span>
+<span data-ttu-id="423ad-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="423ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3bf32-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="3bf32-113">Permission type</span></span>      | <span data-ttu-id="3bf32-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3bf32-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="423ad-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="423ad-113">Permission type</span></span>      | <span data-ttu-id="423ad-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="423ad-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3bf32-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3bf32-115">Delegated (work or school account)</span></span> | <span data-ttu-id="3bf32-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3bf32-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="3bf32-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3bf32-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3bf32-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3bf32-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="3bf32-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="3bf32-119">Application</span></span> | <span data-ttu-id="3bf32-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3bf32-120">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="423ad-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="423ad-115">Delegated (work or school account)</span></span> | <span data-ttu-id="423ad-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="423ad-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="423ad-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="423ad-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="423ad-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="423ad-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="423ad-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="423ad-119">Application</span></span> | <span data-ttu-id="423ad-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="423ad-120">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3bf32-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3bf32-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="423ad-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="423ad-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-## <a name="request-headers"></a><span data-ttu-id="3bf32-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="3bf32-122">Request headers</span></span>
-| <span data-ttu-id="3bf32-123">名称</span><span class="sxs-lookup"><span data-stu-id="3bf32-123">Name</span></span>       | <span data-ttu-id="3bf32-124">类型</span><span class="sxs-lookup"><span data-stu-id="3bf32-124">Type</span></span> | <span data-ttu-id="3bf32-125">说明</span><span class="sxs-lookup"><span data-stu-id="3bf32-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="423ad-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="423ad-122">Request headers</span></span>
+| <span data-ttu-id="423ad-123">名称</span><span class="sxs-lookup"><span data-stu-id="423ad-123">Name</span></span>       | <span data-ttu-id="423ad-124">类型</span><span class="sxs-lookup"><span data-stu-id="423ad-124">Type</span></span> | <span data-ttu-id="423ad-125">说明</span><span class="sxs-lookup"><span data-stu-id="423ad-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="3bf32-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="3bf32-126">Authorization</span></span>  | <span data-ttu-id="3bf32-127">string</span><span class="sxs-lookup"><span data-stu-id="3bf32-127">string</span></span>  | <span data-ttu-id="3bf32-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3bf32-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3bf32-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3bf32-130">Content-Type</span></span> | <span data-ttu-id="3bf32-131">string</span><span class="sxs-lookup"><span data-stu-id="3bf32-131">string</span></span>  | <span data-ttu-id="3bf32-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="3bf32-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="423ad-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="423ad-126">Authorization</span></span>  | <span data-ttu-id="423ad-127">string</span><span class="sxs-lookup"><span data-stu-id="423ad-127">string</span></span>  | <span data-ttu-id="423ad-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="423ad-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="423ad-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="423ad-130">Content-Type</span></span> | <span data-ttu-id="423ad-131">string</span><span class="sxs-lookup"><span data-stu-id="423ad-131">string</span></span>  | <span data-ttu-id="423ad-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="423ad-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3bf32-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="3bf32-134">Request body</span></span>
-<span data-ttu-id="3bf32-135">在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3bf32-135">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="423ad-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="423ad-134">Request body</span></span>
+<span data-ttu-id="423ad-135">在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="423ad-135">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3bf32-136">响应</span><span class="sxs-lookup"><span data-stu-id="3bf32-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="423ad-136">响应</span><span class="sxs-lookup"><span data-stu-id="423ad-136">Response</span></span>
 
-<span data-ttu-id="3bf32-137">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3bf32-137">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="423ad-137">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="423ad-137">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="3bf32-138">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="3bf32-138">Example (File attachment)</span></span>
-##### <a name="request"></a><span data-ttu-id="3bf32-139">请求</span><span class="sxs-lookup"><span data-stu-id="3bf32-139">Request</span></span>
-<span data-ttu-id="3bf32-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3bf32-140">Here is an example of the request.</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="423ad-138">示例（文件附件）</span><span class="sxs-lookup"><span data-stu-id="423ad-138">Example (File attachment)</span></span>
+##### <a name="request"></a><span data-ttu-id="423ad-139">请求</span><span class="sxs-lookup"><span data-stu-id="423ad-139">Request</span></span>
+<span data-ttu-id="423ad-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="423ad-140">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="423ad-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="423ad-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_eventmessage"
@@ -72,11 +74,25 @@ Content-length: 142
   "contentBytes": "base64-contentBytes-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="423ad-142">C#</span><span class="sxs-lookup"><span data-stu-id="423ad-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-eventmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="3bf32-141">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3bf32-141">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="423ad-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="423ad-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-eventmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="3bf32-142">响应</span><span class="sxs-lookup"><span data-stu-id="3bf32-142">Response</span></span>
-<span data-ttu-id="3bf32-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3bf32-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="423ad-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="423ad-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-eventmessage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+<span data-ttu-id="423ad-145">在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="423ad-145">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="423ad-146">响应</span><span class="sxs-lookup"><span data-stu-id="423ad-146">Response</span></span>
+<span data-ttu-id="423ad-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="423ad-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,22 +101,12 @@ Content-length: 142
 ```http
 HTTP/1.1 201 Created
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3bf32-146">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="3bf32-146">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3bf32-147">C#</span><span class="sxs-lookup"><span data-stu-id="3bf32-147">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_eventmessage-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3bf32-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="3bf32-148">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_eventmessage-Javascript-snippets.md)]
+## <a name="example-item-attachment"></a><span data-ttu-id="423ad-150">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="423ad-150">Example (item attachment)</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3bf32-149">目标-C</span><span class="sxs-lookup"><span data-stu-id="3bf32-149">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_eventmessage-Objective-C-snippets.md)]
----
+##### <a name="request"></a><span data-ttu-id="423ad-151">请求</span><span class="sxs-lookup"><span data-stu-id="423ad-151">Request</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="example-item-attachment"></a><span data-ttu-id="3bf32-150">示例（项目附件）</span><span class="sxs-lookup"><span data-stu-id="3bf32-150">Example (item attachment)</span></span>
-
-##### <a name="request"></a><span data-ttu-id="3bf32-151">请求</span><span class="sxs-lookup"><span data-stu-id="3bf32-151">Request</span></span>
+# <a name="httptabhttp"></a>[<span data-ttu-id="423ad-152">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="423ad-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_item_attachment_from_eventmessage"
@@ -116,9 +122,23 @@ Content-length: 100
   "item": "message or event entity"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="423ad-153">C#</span><span class="sxs-lookup"><span data-stu-id="423ad-153">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-from-eventmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="3bf32-152">响应</span><span class="sxs-lookup"><span data-stu-id="3bf32-152">Response</span></span>
-<span data-ttu-id="3bf32-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3bf32-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="423ad-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="423ad-154">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-item-attachment-from-eventmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="423ad-155">目标-C</span><span class="sxs-lookup"><span data-stu-id="423ad-155">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-item-attachment-from-eventmessage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="423ad-156">响应</span><span class="sxs-lookup"><span data-stu-id="423ad-156">Response</span></span>
+<span data-ttu-id="423ad-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="423ad-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,18 +147,6 @@ Content-length: 100
 ```http
 HTTP/1.1 201 Created
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3bf32-156">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="3bf32-156">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3bf32-157">C#</span><span class="sxs-lookup"><span data-stu-id="3bf32-157">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_eventmessage-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3bf32-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="3bf32-158">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_eventmessage-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3bf32-159">目标-C</span><span class="sxs-lookup"><span data-stu-id="3bf32-159">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_eventmessage-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 
@@ -151,8 +159,5 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/eventmessage-post-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/eventmessage-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/eventmessage-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

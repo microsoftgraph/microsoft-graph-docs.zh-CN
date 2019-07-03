@@ -4,28 +4,28 @@ description: 更新 eventMessage 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 704f27852a6fd57437905b589f73e1b9032e1404
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9500b3b7bfaa5d1a873751de3bafe451bc3937c1
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259050"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35440881"
 ---
-# <a name="update-eventmessage"></a><span data-ttu-id="9bd2f-103">更新 eventMessage</span><span class="sxs-lookup"><span data-stu-id="9bd2f-103">Update eventMessage</span></span>
+# <a name="update-eventmessage"></a><span data-ttu-id="70dbc-103">更新 eventMessage</span><span class="sxs-lookup"><span data-stu-id="70dbc-103">Update eventMessage</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9bd2f-104">更新 [eventMessage](../resources/eventmessage.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-104">Update the properties of an [eventMessage](../resources/eventmessage.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="9bd2f-105">权限</span><span class="sxs-lookup"><span data-stu-id="9bd2f-105">Permissions</span></span>
-<span data-ttu-id="9bd2f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="70dbc-104">更新 [eventMessage](../resources/eventmessage.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="70dbc-104">Update the properties of an [eventMessage](../resources/eventmessage.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="70dbc-105">权限</span><span class="sxs-lookup"><span data-stu-id="70dbc-105">Permissions</span></span>
+<span data-ttu-id="70dbc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="70dbc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9bd2f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9bd2f-108">Permission type</span></span>      | <span data-ttu-id="9bd2f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9bd2f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70dbc-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="70dbc-108">Permission type</span></span>      | <span data-ttu-id="70dbc-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="70dbc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9bd2f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9bd2f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9bd2f-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9bd2f-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="9bd2f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9bd2f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9bd2f-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9bd2f-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="9bd2f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9bd2f-114">Application</span></span> | <span data-ttu-id="9bd2f-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9bd2f-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="70dbc-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70dbc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="70dbc-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="70dbc-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="70dbc-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70dbc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70dbc-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="70dbc-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="70dbc-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="70dbc-114">Application</span></span> | <span data-ttu-id="70dbc-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="70dbc-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9bd2f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9bd2f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70dbc-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70dbc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/messages/{id}
@@ -34,29 +34,31 @@ PATCH /users/{id | userPrincipalName}/messages/{id}
 PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="9bd2f-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="9bd2f-117">Request headers</span></span>
-| <span data-ttu-id="9bd2f-118">名称</span><span class="sxs-lookup"><span data-stu-id="9bd2f-118">Name</span></span>       | <span data-ttu-id="9bd2f-119">类型</span><span class="sxs-lookup"><span data-stu-id="9bd2f-119">Type</span></span> | <span data-ttu-id="9bd2f-120">说明</span><span class="sxs-lookup"><span data-stu-id="9bd2f-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70dbc-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="70dbc-117">Request headers</span></span>
+| <span data-ttu-id="70dbc-118">名称</span><span class="sxs-lookup"><span data-stu-id="70dbc-118">Name</span></span>       | <span data-ttu-id="70dbc-119">类型</span><span class="sxs-lookup"><span data-stu-id="70dbc-119">Type</span></span> | <span data-ttu-id="70dbc-120">说明</span><span class="sxs-lookup"><span data-stu-id="70dbc-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="9bd2f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9bd2f-121">Authorization</span></span>  | <span data-ttu-id="9bd2f-122">string</span><span class="sxs-lookup"><span data-stu-id="9bd2f-122">string</span></span>  | <span data-ttu-id="9bd2f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9bd2f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9bd2f-125">Content-Type</span></span> | <span data-ttu-id="9bd2f-126">string</span><span class="sxs-lookup"><span data-stu-id="9bd2f-126">string</span></span>  | <span data-ttu-id="9bd2f-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-p103">Nature of the data in the body of an entity. Required.</span></span> |
-## <a name="request-body"></a><span data-ttu-id="9bd2f-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="9bd2f-129">Request body</span></span>
-<span data-ttu-id="9bd2f-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。可写/可更新属性</span><span class="sxs-lookup"><span data-stu-id="9bd2f-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. Writable/Updatable properties are</span></span>
+| <span data-ttu-id="70dbc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="70dbc-121">Authorization</span></span>  | <span data-ttu-id="70dbc-122">string</span><span class="sxs-lookup"><span data-stu-id="70dbc-122">string</span></span>  | <span data-ttu-id="70dbc-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="70dbc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="70dbc-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="70dbc-125">Content-Type</span></span> | <span data-ttu-id="70dbc-126">string</span><span class="sxs-lookup"><span data-stu-id="70dbc-126">string</span></span>  | <span data-ttu-id="70dbc-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="70dbc-p103">Nature of the data in the body of an entity. Required.</span></span> |
+## <a name="request-body"></a><span data-ttu-id="70dbc-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="70dbc-129">Request body</span></span>
+<span data-ttu-id="70dbc-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。可写/可更新属性</span><span class="sxs-lookup"><span data-stu-id="70dbc-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. Writable/Updatable properties are</span></span>
 
-| <span data-ttu-id="9bd2f-134">属性</span><span class="sxs-lookup"><span data-stu-id="9bd2f-134">Property</span></span>     | <span data-ttu-id="9bd2f-135">类型</span><span class="sxs-lookup"><span data-stu-id="9bd2f-135">Type</span></span>   |<span data-ttu-id="9bd2f-136">说明</span><span class="sxs-lookup"><span data-stu-id="9bd2f-136">Description</span></span>|
+| <span data-ttu-id="70dbc-134">属性</span><span class="sxs-lookup"><span data-stu-id="70dbc-134">Property</span></span>     | <span data-ttu-id="70dbc-135">类型</span><span class="sxs-lookup"><span data-stu-id="70dbc-135">Type</span></span>   |<span data-ttu-id="70dbc-136">说明</span><span class="sxs-lookup"><span data-stu-id="70dbc-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9bd2f-137">categories</span><span class="sxs-lookup"><span data-stu-id="9bd2f-137">categories</span></span>|<span data-ttu-id="9bd2f-138">String</span><span class="sxs-lookup"><span data-stu-id="9bd2f-138">String</span></span>|<span data-ttu-id="9bd2f-139">与邮件关联的类别。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-139">The categories associated with the message.</span></span>|
-|<span data-ttu-id="9bd2f-140">importance</span><span class="sxs-lookup"><span data-stu-id="9bd2f-140">importance</span></span>|<span data-ttu-id="9bd2f-141">String</span><span class="sxs-lookup"><span data-stu-id="9bd2f-141">String</span></span>|<span data-ttu-id="9bd2f-p105">邮件的重要性。可能的值是：`Low`、`Normal`、`High`。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-p105">The importance of the message. Possible values are: `Low`, `Normal`, `High`.</span></span>|
-|<span data-ttu-id="9bd2f-144">isAllDay</span><span class="sxs-lookup"><span data-stu-id="9bd2f-144">isAllDay</span></span> |<span data-ttu-id="9bd2f-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="9bd2f-145">Boolean</span></span>|<span data-ttu-id="9bd2f-146">指示事件是否持续一整天。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-146">Indicates whether the event lasts the entire day.</span></span> <span data-ttu-id="9bd2f-147">调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-147">Adjusting this property requires adjusting the **startDateTime** and **endDateTime** properties of the event as well.</span></span>|
-|<span data-ttu-id="9bd2f-148">isDeliveryReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="9bd2f-148">isDeliveryReceiptRequested</span></span>|<span data-ttu-id="9bd2f-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="9bd2f-149">Boolean</span></span>|<span data-ttu-id="9bd2f-150">指示是否需要发送邮件已读回执。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-150">Indicates whether a read receipt is requested for the message.</span></span>|
-|<span data-ttu-id="9bd2f-151">isRead</span><span class="sxs-lookup"><span data-stu-id="9bd2f-151">isRead</span></span>|<span data-ttu-id="9bd2f-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="9bd2f-152">Boolean</span></span>|<span data-ttu-id="9bd2f-153">指示是否已阅读该邮件。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-153">Indicates whether the message has been read.</span></span>|
-|<span data-ttu-id="9bd2f-154">isReadReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="9bd2f-154">isReadReceiptRequested</span></span>|<span data-ttu-id="9bd2f-155">Boolean</span><span class="sxs-lookup"><span data-stu-id="9bd2f-155">Boolean</span></span>|<span data-ttu-id="9bd2f-156">指示是否需要发送邮件已读回执。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-156">Indicates whether a read receipt is requested for the message.</span></span>|
+|<span data-ttu-id="70dbc-137">categories</span><span class="sxs-lookup"><span data-stu-id="70dbc-137">categories</span></span>|<span data-ttu-id="70dbc-138">String</span><span class="sxs-lookup"><span data-stu-id="70dbc-138">String</span></span>|<span data-ttu-id="70dbc-139">与邮件关联的类别。</span><span class="sxs-lookup"><span data-stu-id="70dbc-139">The categories associated with the message.</span></span>|
+|<span data-ttu-id="70dbc-140">importance</span><span class="sxs-lookup"><span data-stu-id="70dbc-140">importance</span></span>|<span data-ttu-id="70dbc-141">String</span><span class="sxs-lookup"><span data-stu-id="70dbc-141">String</span></span>|<span data-ttu-id="70dbc-p105">邮件的重要性。可能的值是：`Low`、`Normal`、`High`。</span><span class="sxs-lookup"><span data-stu-id="70dbc-p105">The importance of the message. Possible values are: `Low`, `Normal`, `High`.</span></span>|
+|<span data-ttu-id="70dbc-144">isAllDay</span><span class="sxs-lookup"><span data-stu-id="70dbc-144">isAllDay</span></span> |<span data-ttu-id="70dbc-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="70dbc-145">Boolean</span></span>|<span data-ttu-id="70dbc-146">指示事件是否持续一整天。</span><span class="sxs-lookup"><span data-stu-id="70dbc-146">Indicates whether the event lasts the entire day.</span></span> <span data-ttu-id="70dbc-147">调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。</span><span class="sxs-lookup"><span data-stu-id="70dbc-147">Adjusting this property requires adjusting the **startDateTime** and **endDateTime** properties of the event as well.</span></span>|
+|<span data-ttu-id="70dbc-148">isDeliveryReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="70dbc-148">isDeliveryReceiptRequested</span></span>|<span data-ttu-id="70dbc-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="70dbc-149">Boolean</span></span>|<span data-ttu-id="70dbc-150">指示是否需要发送邮件已读回执。</span><span class="sxs-lookup"><span data-stu-id="70dbc-150">Indicates whether a read receipt is requested for the message.</span></span>|
+|<span data-ttu-id="70dbc-151">isRead</span><span class="sxs-lookup"><span data-stu-id="70dbc-151">isRead</span></span>|<span data-ttu-id="70dbc-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="70dbc-152">Boolean</span></span>|<span data-ttu-id="70dbc-153">指示是否已阅读该邮件。</span><span class="sxs-lookup"><span data-stu-id="70dbc-153">Indicates whether the message has been read.</span></span>|
+|<span data-ttu-id="70dbc-154">isReadReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="70dbc-154">isReadReceiptRequested</span></span>|<span data-ttu-id="70dbc-155">Boolean</span><span class="sxs-lookup"><span data-stu-id="70dbc-155">Boolean</span></span>|<span data-ttu-id="70dbc-156">指示是否需要发送邮件已读回执。</span><span class="sxs-lookup"><span data-stu-id="70dbc-156">Indicates whether a read receipt is requested for the message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9bd2f-157">响应</span><span class="sxs-lookup"><span data-stu-id="9bd2f-157">Response</span></span>
+## <a name="response"></a><span data-ttu-id="70dbc-157">响应</span><span class="sxs-lookup"><span data-stu-id="70dbc-157">Response</span></span>
 
-<span data-ttu-id="9bd2f-158">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-158">If successful, this method returns a `200 OK` response code and updated [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9bd2f-159">示例</span><span class="sxs-lookup"><span data-stu-id="9bd2f-159">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9bd2f-160">请求</span><span class="sxs-lookup"><span data-stu-id="9bd2f-160">Request</span></span>
-<span data-ttu-id="9bd2f-161">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-161">Here is an example of the request.</span></span>
+<span data-ttu-id="70dbc-158">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="70dbc-158">If successful, this method returns a `200 OK` response code and updated [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="70dbc-159">示例</span><span class="sxs-lookup"><span data-stu-id="70dbc-159">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="70dbc-160">请求</span><span class="sxs-lookup"><span data-stu-id="70dbc-160">Request</span></span>
+<span data-ttu-id="70dbc-161">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="70dbc-161">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="70dbc-162">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="70dbc-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_eventmessage"
@@ -70,8 +72,22 @@ Content-length: 248
   "isRead": "true",
 }
 ```
-##### <a name="response"></a><span data-ttu-id="9bd2f-162">响应</span><span class="sxs-lookup"><span data-stu-id="9bd2f-162">Response</span></span>
-<span data-ttu-id="9bd2f-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9bd2f-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="70dbc-163">C#</span><span class="sxs-lookup"><span data-stu-id="70dbc-163">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-eventmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="70dbc-164">Javascript</span><span class="sxs-lookup"><span data-stu-id="70dbc-164">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-eventmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="70dbc-165">目标-C</span><span class="sxs-lookup"><span data-stu-id="70dbc-165">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-eventmessage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="70dbc-166">响应</span><span class="sxs-lookup"><span data-stu-id="70dbc-166">Response</span></span>
+<span data-ttu-id="70dbc-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="70dbc-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,18 +111,6 @@ Content-length: 248
   "meetingMessageType": "meetingMessageType-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="9bd2f-166">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="9bd2f-166">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="9bd2f-167">C#</span><span class="sxs-lookup"><span data-stu-id="9bd2f-167">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_eventmessage-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9bd2f-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="9bd2f-168">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_eventmessage-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="9bd2f-169">目标-C</span><span class="sxs-lookup"><span data-stu-id="9bd2f-169">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_eventmessage-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -118,9 +122,6 @@ Content-length: 248
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
