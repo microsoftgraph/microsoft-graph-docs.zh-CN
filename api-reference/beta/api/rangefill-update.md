@@ -4,53 +4,55 @@ description: 更新 rangefill 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5b2cdfdd418748795d5109e291d6e05b397560ee
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 23408c2db0c62128ecf05e675ff6a15b9a91b818
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35267562"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455796"
 ---
-# <a name="update-rangefill"></a><span data-ttu-id="ff9ea-103">更新 rangefill</span><span class="sxs-lookup"><span data-stu-id="ff9ea-103">Update rangefill</span></span>
+# <a name="update-rangefill"></a><span data-ttu-id="a3023-103">更新 rangefill</span><span class="sxs-lookup"><span data-stu-id="a3023-103">Update rangefill</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ff9ea-104">更新 rangefill 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-104">Update the properties of rangefill object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ff9ea-105">权限</span><span class="sxs-lookup"><span data-stu-id="ff9ea-105">Permissions</span></span>
-<span data-ttu-id="ff9ea-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a3023-104">更新 rangefill 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a3023-104">Update the properties of rangefill object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a3023-105">权限</span><span class="sxs-lookup"><span data-stu-id="a3023-105">Permissions</span></span>
+<span data-ttu-id="a3023-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a3023-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff9ea-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ff9ea-108">Permission type</span></span>      | <span data-ttu-id="ff9ea-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ff9ea-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a3023-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a3023-108">Permission type</span></span>      | <span data-ttu-id="a3023-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a3023-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff9ea-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ff9ea-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ff9ea-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff9ea-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ff9ea-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ff9ea-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff9ea-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff9ea-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ff9ea-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ff9ea-114">Application</span></span> | <span data-ttu-id="ff9ea-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-115">Not supported.</span></span> |
+|<span data-ttu-id="a3023-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a3023-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a3023-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a3023-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a3023-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a3023-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3023-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a3023-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a3023-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a3023-114">Application</span></span> | <span data-ttu-id="a3023-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a3023-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ff9ea-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ff9ea-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3023-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a3023-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format/fill
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="ff9ea-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="ff9ea-117">Optional request headers</span></span>
-| <span data-ttu-id="ff9ea-118">名称</span><span class="sxs-lookup"><span data-stu-id="ff9ea-118">Name</span></span>       | <span data-ttu-id="ff9ea-119">说明</span><span class="sxs-lookup"><span data-stu-id="ff9ea-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="a3023-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="a3023-117">Optional request headers</span></span>
+| <span data-ttu-id="a3023-118">名称</span><span class="sxs-lookup"><span data-stu-id="a3023-118">Name</span></span>       | <span data-ttu-id="a3023-119">说明</span><span class="sxs-lookup"><span data-stu-id="a3023-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="ff9ea-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff9ea-120">Authorization</span></span>  | <span data-ttu-id="ff9ea-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ff9ea-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ff9ea-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ff9ea-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a3023-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a3023-120">Authorization</span></span>  | <span data-ttu-id="a3023-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a3023-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a3023-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a3023-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a3023-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="a3023-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ff9ea-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ff9ea-126">Request body</span></span>
-<span data-ttu-id="ff9ea-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a3023-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a3023-126">Request body</span></span>
+<span data-ttu-id="a3023-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="a3023-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="ff9ea-130">属性</span><span class="sxs-lookup"><span data-stu-id="ff9ea-130">Property</span></span>     | <span data-ttu-id="ff9ea-131">类型</span><span class="sxs-lookup"><span data-stu-id="ff9ea-131">Type</span></span>   |<span data-ttu-id="ff9ea-132">说明</span><span class="sxs-lookup"><span data-stu-id="ff9ea-132">Description</span></span>|
+| <span data-ttu-id="a3023-130">属性</span><span class="sxs-lookup"><span data-stu-id="a3023-130">Property</span></span>     | <span data-ttu-id="a3023-131">类型</span><span class="sxs-lookup"><span data-stu-id="a3023-131">Type</span></span>   |<span data-ttu-id="a3023-132">说明</span><span class="sxs-lookup"><span data-stu-id="a3023-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ff9ea-133">color</span><span class="sxs-lookup"><span data-stu-id="ff9ea-133">color</span></span>|<span data-ttu-id="ff9ea-134">string</span><span class="sxs-lookup"><span data-stu-id="ff9ea-134">string</span></span>|<span data-ttu-id="ff9ea-135">表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-135">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")</span></span>|
+|<span data-ttu-id="a3023-133">color</span><span class="sxs-lookup"><span data-stu-id="a3023-133">color</span></span>|<span data-ttu-id="a3023-134">string</span><span class="sxs-lookup"><span data-stu-id="a3023-134">string</span></span>|<span data-ttu-id="a3023-135">表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="a3023-135">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ff9ea-136">响应</span><span class="sxs-lookup"><span data-stu-id="ff9ea-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a3023-136">响应</span><span class="sxs-lookup"><span data-stu-id="a3023-136">Response</span></span>
 
-<span data-ttu-id="ff9ea-137">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookRangeFill](../resources/workbookrangefill.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-137">If successful, this method returns a `200 OK` response code and updated [workbookRangeFill](../resources/workbookrangefill.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ff9ea-138">示例</span><span class="sxs-lookup"><span data-stu-id="ff9ea-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ff9ea-139">请求</span><span class="sxs-lookup"><span data-stu-id="ff9ea-139">Request</span></span>
-<span data-ttu-id="ff9ea-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-140">Here is an example of the request.</span></span>
+<span data-ttu-id="a3023-137">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookRangeFill](../resources/workbookrangefill.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a3023-137">If successful, this method returns a `200 OK` response code and updated [workbookRangeFill](../resources/workbookrangefill.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a3023-138">示例</span><span class="sxs-lookup"><span data-stu-id="a3023-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a3023-139">请求</span><span class="sxs-lookup"><span data-stu-id="a3023-139">Request</span></span>
+<span data-ttu-id="a3023-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a3023-140">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a3023-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a3023-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangefill"
@@ -64,8 +66,22 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="ff9ea-141">响应</span><span class="sxs-lookup"><span data-stu-id="ff9ea-141">Response</span></span>
-<span data-ttu-id="ff9ea-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ff9ea-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a3023-142">C#</span><span class="sxs-lookup"><span data-stu-id="a3023-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangefill-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a3023-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="a3023-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangefill-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a3023-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="a3023-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-rangefill-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="a3023-145">响应</span><span class="sxs-lookup"><span data-stu-id="a3023-145">Response</span></span>
+<span data-ttu-id="a3023-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a3023-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,18 +93,6 @@ Content-type: application/json
 Content-length: 28
 
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ff9ea-145">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ff9ea-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ff9ea-146">C#</span><span class="sxs-lookup"><span data-stu-id="ff9ea-146">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_rangefill-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff9ea-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff9ea-147">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_rangefill-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ff9ea-148">目标-C</span><span class="sxs-lookup"><span data-stu-id="ff9ea-148">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_rangefill-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,9 +104,6 @@ Content-length: 28
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/rangefill-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/rangefill-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/rangefill-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

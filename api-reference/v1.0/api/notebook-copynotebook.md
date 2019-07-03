@@ -4,56 +4,58 @@ description: 将笔记本复制到目标文档库中的 "笔记本" 文件夹。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 01e5f0ec7edd898c53447eafe930cc72cc9561ad
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: e9fa4377d62baaa45db8dd1c9054a0fe7c72621e
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274583"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35460635"
 ---
-# <a name="notebook-copynotebook"></a><span data-ttu-id="3a2b5-104">笔记本: copyNotebook</span><span class="sxs-lookup"><span data-stu-id="3a2b5-104">notebook: copyNotebook</span></span>
-<span data-ttu-id="3a2b5-105">将笔记本复制到目标文档库中的 "笔记本" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-105">Copies a notebook to the Notebooks folder in the destination Documents library.</span></span> <span data-ttu-id="3a2b5-106">如果文件夹不存在, 则创建该文件夹。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-106">The folder is created if it doesn't exist.</span></span>
+# <a name="notebook-copynotebook"></a><span data-ttu-id="6ba5d-104">笔记本: copyNotebook</span><span class="sxs-lookup"><span data-stu-id="6ba5d-104">notebook: copyNotebook</span></span>
+<span data-ttu-id="6ba5d-105">将笔记本复制到目标文档库中的 "笔记本" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-105">Copies a notebook to the Notebooks folder in the destination Documents library.</span></span> <span data-ttu-id="6ba5d-106">如果文件夹不存在, 则创建该文件夹。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-106">The folder is created if it doesn't exist.</span></span>
 
-<span data-ttu-id="3a2b5-107">对于复制操作, 请遵循异步调用模式: 首先调用复制操作, 然后轮询操作终结点以获取结果。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-107">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+<span data-ttu-id="6ba5d-107">对于复制操作, 请遵循异步调用模式: 首先调用复制操作, 然后轮询操作终结点以获取结果。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-107">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3a2b5-108">权限</span><span class="sxs-lookup"><span data-stu-id="3a2b5-108">Permissions</span></span>
-<span data-ttu-id="3a2b5-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6ba5d-108">权限</span><span class="sxs-lookup"><span data-stu-id="6ba5d-108">Permissions</span></span>
+<span data-ttu-id="6ba5d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3a2b5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="3a2b5-111">Permission type</span></span>      | <span data-ttu-id="3a2b5-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3a2b5-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6ba5d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6ba5d-111">Permission type</span></span>      | <span data-ttu-id="6ba5d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6ba5d-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3a2b5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3a2b5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="3a2b5-114">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a2b5-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3a2b5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3a2b5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a2b5-116">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3a2b5-116">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="3a2b5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="3a2b5-117">Application</span></span> | <span data-ttu-id="3a2b5-118">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a2b5-118">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="6ba5d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6ba5d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6ba5d-114">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ba5d-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6ba5d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6ba5d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ba5d-116">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6ba5d-116">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="6ba5d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6ba5d-117">Application</span></span> | <span data-ttu-id="6ba5d-118">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ba5d-118">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3a2b5-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3a2b5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ba5d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6ba5d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks/{id}/copyNotebook
 POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/copyNotebook
 POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ```
-## <a name="request-headers"></a><span data-ttu-id="3a2b5-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="3a2b5-120">Request headers</span></span>
-| <span data-ttu-id="3a2b5-121">名称</span><span class="sxs-lookup"><span data-stu-id="3a2b5-121">Name</span></span>       | <span data-ttu-id="3a2b5-122">类型</span><span class="sxs-lookup"><span data-stu-id="3a2b5-122">Type</span></span> | <span data-ttu-id="3a2b5-123">说明</span><span class="sxs-lookup"><span data-stu-id="3a2b5-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6ba5d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6ba5d-120">Request headers</span></span>
+| <span data-ttu-id="6ba5d-121">名称</span><span class="sxs-lookup"><span data-stu-id="6ba5d-121">Name</span></span>       | <span data-ttu-id="6ba5d-122">类型</span><span class="sxs-lookup"><span data-stu-id="6ba5d-122">Type</span></span> | <span data-ttu-id="6ba5d-123">说明</span><span class="sxs-lookup"><span data-stu-id="6ba5d-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="3a2b5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3a2b5-124">Authorization</span></span>  | <span data-ttu-id="3a2b5-125">string</span><span class="sxs-lookup"><span data-stu-id="3a2b5-125">string</span></span>  | <span data-ttu-id="3a2b5-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3a2b5-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3a2b5-128">Content-Type</span></span> | <span data-ttu-id="3a2b5-129">string</span><span class="sxs-lookup"><span data-stu-id="3a2b5-129">string</span></span> | `application/json` |
+| <span data-ttu-id="6ba5d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="6ba5d-124">Authorization</span></span>  | <span data-ttu-id="6ba5d-125">string</span><span class="sxs-lookup"><span data-stu-id="6ba5d-125">string</span></span>  | <span data-ttu-id="6ba5d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6ba5d-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6ba5d-128">Content-Type</span></span> | <span data-ttu-id="6ba5d-129">string</span><span class="sxs-lookup"><span data-stu-id="6ba5d-129">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="3a2b5-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="3a2b5-130">Request body</span></span>
-<span data-ttu-id="3a2b5-131">在请求正文中, 提供一个 JSON 对象, 其中包含您的操作所需的参数。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-131">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span> <span data-ttu-id="3a2b5-132">如果无需, 可以发送空正文。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-132">It's okay to send an empty body if none are needed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ba5d-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="6ba5d-130">Request body</span></span>
+<span data-ttu-id="6ba5d-131">在请求正文中, 提供一个 JSON 对象, 其中包含您的操作所需的参数。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-131">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span> <span data-ttu-id="6ba5d-132">如果无需, 可以发送空正文。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-132">It's okay to send an empty body if none are needed.</span></span>
 
-| <span data-ttu-id="3a2b5-133">参数</span><span class="sxs-lookup"><span data-stu-id="3a2b5-133">Parameter</span></span>    | <span data-ttu-id="3a2b5-134">类型</span><span class="sxs-lookup"><span data-stu-id="3a2b5-134">Type</span></span>   |<span data-ttu-id="3a2b5-135">说明</span><span class="sxs-lookup"><span data-stu-id="3a2b5-135">Description</span></span>|
+| <span data-ttu-id="6ba5d-133">参数</span><span class="sxs-lookup"><span data-stu-id="6ba5d-133">Parameter</span></span>    | <span data-ttu-id="6ba5d-134">类型</span><span class="sxs-lookup"><span data-stu-id="6ba5d-134">Type</span></span>   |<span data-ttu-id="6ba5d-135">说明</span><span class="sxs-lookup"><span data-stu-id="6ba5d-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3a2b5-136">groupId</span><span class="sxs-lookup"><span data-stu-id="3a2b5-136">groupId</span></span>|<span data-ttu-id="3a2b5-137">String</span><span class="sxs-lookup"><span data-stu-id="3a2b5-137">String</span></span>|<span data-ttu-id="3a2b5-138">要复制到的组的 id。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-138">The id of the group to copy to.</span></span> <span data-ttu-id="3a2b5-139">仅在复制到 Office 365 组时使用。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-139">Use only when copying to an Office 365 group.</span></span>|
-|<span data-ttu-id="3a2b5-140">renameAs</span><span class="sxs-lookup"><span data-stu-id="3a2b5-140">renameAs</span></span>|<span data-ttu-id="3a2b5-141">String</span><span class="sxs-lookup"><span data-stu-id="3a2b5-141">String</span></span>|<span data-ttu-id="3a2b5-142">副本的名称。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-142">The name of the copy.</span></span> <span data-ttu-id="3a2b5-143">默认值为现有项目的名称。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-143">Defaults to the name of the existing item.</span></span> |
+|<span data-ttu-id="6ba5d-136">groupId</span><span class="sxs-lookup"><span data-stu-id="6ba5d-136">groupId</span></span>|<span data-ttu-id="6ba5d-137">String</span><span class="sxs-lookup"><span data-stu-id="6ba5d-137">String</span></span>|<span data-ttu-id="6ba5d-138">要复制到的组的 id。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-138">The id of the group to copy to.</span></span> <span data-ttu-id="6ba5d-139">仅在复制到 Office 365 组时使用。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-139">Use only when copying to an Office 365 group.</span></span>|
+|<span data-ttu-id="6ba5d-140">renameAs</span><span class="sxs-lookup"><span data-stu-id="6ba5d-140">renameAs</span></span>|<span data-ttu-id="6ba5d-141">String</span><span class="sxs-lookup"><span data-stu-id="6ba5d-141">String</span></span>|<span data-ttu-id="6ba5d-142">副本的名称。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-142">The name of the copy.</span></span> <span data-ttu-id="6ba5d-143">默认值为现有项目的名称。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-143">Defaults to the name of the existing item.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="3a2b5-144">响应</span><span class="sxs-lookup"><span data-stu-id="3a2b5-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6ba5d-144">响应</span><span class="sxs-lookup"><span data-stu-id="6ba5d-144">Response</span></span>
 
-<span data-ttu-id="3a2b5-145">如果成功, 此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-145">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="3a2b5-146">轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-146">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
+<span data-ttu-id="6ba5d-145">如果成功, 此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-145">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="6ba5d-146">轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-146">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="3a2b5-147">示例</span><span class="sxs-lookup"><span data-stu-id="3a2b5-147">Example</span></span>
-<span data-ttu-id="3a2b5-148">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-148">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="3a2b5-149">请求</span><span class="sxs-lookup"><span data-stu-id="3a2b5-149">Request</span></span>
-<span data-ttu-id="3a2b5-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6ba5d-147">示例</span><span class="sxs-lookup"><span data-stu-id="6ba5d-147">Example</span></span>
+<span data-ttu-id="6ba5d-148">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-148">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6ba5d-149">请求</span><span class="sxs-lookup"><span data-stu-id="6ba5d-149">Request</span></span>
+<span data-ttu-id="6ba5d-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-150">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="6ba5d-151">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="6ba5d-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "notebook_copynotebook"
@@ -68,9 +70,23 @@ Content-length: 108
   "renameAs": "renameAs-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6ba5d-152">C#</span><span class="sxs-lookup"><span data-stu-id="6ba5d-152">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/notebook-copynotebook-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="3a2b5-151">响应</span><span class="sxs-lookup"><span data-stu-id="3a2b5-151">Response</span></span>
-<span data-ttu-id="3a2b5-152">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3a2b5-152">Here is an example of the response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6ba5d-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="6ba5d-153">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/notebook-copynotebook-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6ba5d-154">目标-C</span><span class="sxs-lookup"><span data-stu-id="6ba5d-154">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/notebook-copynotebook-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="6ba5d-155">响应</span><span class="sxs-lookup"><span data-stu-id="6ba5d-155">Response</span></span>
+<span data-ttu-id="6ba5d-156">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6ba5d-156">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,18 +95,6 @@ Content-length: 108
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3a2b5-153">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="3a2b5-153">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3a2b5-154">C#</span><span class="sxs-lookup"><span data-stu-id="3a2b5-154">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/notebook_copynotebook-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3a2b5-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="3a2b5-155">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/notebook_copynotebook-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3a2b5-156">目标-C</span><span class="sxs-lookup"><span data-stu-id="3a2b5-156">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/notebook_copynotebook-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,8 +105,5 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/notebook-copynotebook.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/notebook-copynotebook.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/notebook-copynotebook.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

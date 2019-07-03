@@ -5,41 +5,57 @@ ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: df59cd8e8ecce2c8be340914b3ffc709cdc54849
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 1cf88b825250ff602a28919a35dfff4a71edb1c8
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271566"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35453591"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="cd968-102">搜索网站</span><span class="sxs-lookup"><span data-stu-id="cd968-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="a21a3-102">搜索网站</span><span class="sxs-lookup"><span data-stu-id="a21a3-102">Search for sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cd968-103">在 SharePoint 租户中搜索与所提供的关键字匹配的[网站][]。</span><span class="sxs-lookup"><span data-stu-id="cd968-103">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
+<span data-ttu-id="a21a3-103">在 SharePoint 租户中搜索与所提供的关键字匹配的[网站][]。</span><span class="sxs-lookup"><span data-stu-id="a21a3-103">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [网站]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="cd968-105">权限</span><span class="sxs-lookup"><span data-stu-id="cd968-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a21a3-105">权限</span><span class="sxs-lookup"><span data-stu-id="a21a3-105">Permissions</span></span>
 
-<span data-ttu-id="cd968-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cd968-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a21a3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a21a3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cd968-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="cd968-108">Permission type</span></span>                        | <span data-ttu-id="cd968-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cd968-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="a21a3-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a21a3-108">Permission type</span></span>                        | <span data-ttu-id="a21a3-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a21a3-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="cd968-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cd968-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cd968-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd968-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="cd968-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cd968-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd968-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="cd968-113">Not supported.</span></span>
-|<span data-ttu-id="cd968-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="cd968-114">Application</span></span>                            | <span data-ttu-id="cd968-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd968-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="a21a3-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a21a3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a21a3-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a21a3-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="a21a3-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a21a3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a21a3-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a21a3-113">Not supported.</span></span>
+|<span data-ttu-id="a21a3-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a21a3-114">Application</span></span>                            | <span data-ttu-id="a21a3-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a21a3-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="cd968-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cd968-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a21a3-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a21a3-116">HTTP request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a21a3-117">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a21a3-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a21a3-118">C#</span><span class="sxs-lookup"><span data-stu-id="a21a3-118">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="response"></a><span data-ttu-id="cd968-117">响应</span><span class="sxs-lookup"><span data-stu-id="cd968-117">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a21a3-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="a21a3-119">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a21a3-120">目标-C</span><span class="sxs-lookup"><span data-stu-id="a21a3-120">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+## <a name="response"></a><span data-ttu-id="a21a3-121">响应</span><span class="sxs-lookup"><span data-stu-id="a21a3-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -68,19 +84,7 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cd968-118">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="cd968-118">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="cd968-119">C#</span><span class="sxs-lookup"><span data-stu-id="cd968-119">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/search-sites-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cd968-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="cd968-120">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/search-sites-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cd968-121">目标-C</span><span class="sxs-lookup"><span data-stu-id="cd968-121">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/search-sites-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-><span data-ttu-id="cd968-122">**注意:** 用于排序的唯一属性是**createdDateTime**。</span><span class="sxs-lookup"><span data-stu-id="cd968-122">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="cd968-123">搜索筛选器是在检索搜索结果时使用多个属性的无文本搜索。</span><span class="sxs-lookup"><span data-stu-id="cd968-123">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
+><span data-ttu-id="a21a3-122">**注意:** 用于排序的唯一属性是**createdDateTime**。</span><span class="sxs-lookup"><span data-stu-id="a21a3-122">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="a21a3-123">搜索筛选器是在检索搜索结果时使用多个属性的无文本搜索。</span><span class="sxs-lookup"><span data-stu-id="a21a3-123">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!--
 {
@@ -90,9 +94,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/Search",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

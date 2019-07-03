@@ -5,29 +5,31 @@ ms.date: 09/10/2017
 title: 列出最近的文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1e1f376606eeefc9ee599992e6432c0b2830dd51
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: dec3b2065276a8db1e8cd16c823d1ef876a510d5
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279091"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458913"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="06503-102">列出最近使用的文件</span><span class="sxs-lookup"><span data-stu-id="06503-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="72468-102">列出最近使用的文件</span><span class="sxs-lookup"><span data-stu-id="72468-102">List recent files</span></span>
 
-<span data-ttu-id="06503-p101">列出已登录用户最近使用的一组项目。此集合包含用户驱动器中的项目，以及他们有从其他驱动器进行访问的权限的项目。</span><span class="sxs-lookup"><span data-stu-id="06503-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="72468-p101">列出已登录用户最近使用的一组项目。此集合包含用户驱动器中的项目，以及他们有从其他驱动器进行访问的权限的项目。</span><span class="sxs-lookup"><span data-stu-id="72468-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="06503-105">权限</span><span class="sxs-lookup"><span data-stu-id="06503-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="72468-105">权限</span><span class="sxs-lookup"><span data-stu-id="72468-105">Permissions</span></span>
 
-<span data-ttu-id="06503-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="06503-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="72468-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="72468-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06503-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="06503-108">Permission type</span></span>      | <span data-ttu-id="06503-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="06503-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="72468-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="72468-108">Permission type</span></span>      | <span data-ttu-id="72468-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="72468-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="06503-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06503-110">Delegated (work or school account)</span></span> | <span data-ttu-id="06503-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06503-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="06503-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06503-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06503-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06503-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="06503-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="06503-114">Application</span></span> | <span data-ttu-id="06503-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06503-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="72468-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="72468-110">Delegated (work or school account)</span></span> | <span data-ttu-id="72468-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72468-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="72468-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="72468-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="72468-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72468-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="72468-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="72468-114">Application</span></span> | <span data-ttu-id="72468-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72468-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="06503-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06503-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="72468-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="72468-116">HTTP request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="72468-117">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="72468-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
@@ -37,10 +39,24 @@ ms.locfileid: "35279091"
 ```http
 GET /me/drive/recent
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="72468-118">C#</span><span class="sxs-lookup"><span data-stu-id="72468-118">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## <a name="response"></a><span data-ttu-id="06503-117">响应</span><span class="sxs-lookup"><span data-stu-id="06503-117">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="72468-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="72468-119">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="06503-118">此方法返回驱动器所有者最近访问的项的 [DriveItem](../resources/driveitem.md) 资源集合。</span><span class="sxs-lookup"><span data-stu-id="06503-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="72468-120">目标-C</span><span class="sxs-lookup"><span data-stu-id="72468-120">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/view-recent-files-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+## <a name="response"></a><span data-ttu-id="72468-121">响应</span><span class="sxs-lookup"><span data-stu-id="72468-121">Response</span></span>
+
+<span data-ttu-id="72468-122">此方法返回驱动器所有者最近访问的项的 [DriveItem](../resources/driveitem.md) 资源集合。</span><span class="sxs-lookup"><span data-stu-id="72468-122">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -85,22 +101,10 @@ Content-Type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="06503-119">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="06503-119">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="06503-120">C#</span><span class="sxs-lookup"><span data-stu-id="06503-120">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/view-recent-files-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="06503-121">Javascript</span><span class="sxs-lookup"><span data-stu-id="06503-121">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/view-recent-files-Javascript-snippets.md)]
+## <a name="remarks"></a><span data-ttu-id="72468-123">注解</span><span class="sxs-lookup"><span data-stu-id="72468-123">Remarks</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="06503-122">目标-C</span><span class="sxs-lookup"><span data-stu-id="06503-122">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/view-recent-files-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="remarks"></a><span data-ttu-id="06503-123">注解</span><span class="sxs-lookup"><span data-stu-id="06503-123">Remarks</span></span>
-
-<span data-ttu-id="06503-p103">从**最近**操作返回的部分 driveItem 将包括 **remoteItem** 方面，这表明它们是其他驱动器中的项目。若要访问原始的 driveItem 对象，你将需要使用 **remoteItem** 中提供的信息发出请求，信息格式如下：</span><span class="sxs-lookup"><span data-stu-id="06503-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="72468-p103">从**最近**操作返回的部分 driveItem 将包括 **remoteItem** 方面，这表明它们是其他驱动器中的项目。若要访问原始的 driveItem 对象，你将需要使用 **remoteItem** 中提供的信息发出请求，信息格式如下：</span><span class="sxs-lookup"><span data-stu-id="72468-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
@@ -115,8 +119,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "section": "documentation",
   "tocPath": "Drives/Recent files",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

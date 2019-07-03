@@ -4,60 +4,62 @@ description: '将行添加到表的末尾。 请注意, API 可以使用此 API 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: aeb1e267fc9bc21cc1fda8a85cd8242505a11514
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1cb0a5a05def3028ae8a9309cda5eef7b69ff35a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602373"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35456055"
 ---
-# <a name="tablerowcollection-add"></a><span data-ttu-id="448e0-108">TableRowCollection: add</span><span class="sxs-lookup"><span data-stu-id="448e0-108">TableRowCollection: add</span></span>
+# <a name="tablerowcollection-add"></a><span data-ttu-id="2fb52-108">TableRowCollection: add</span><span class="sxs-lookup"><span data-stu-id="2fb52-108">TableRowCollection: add</span></span>
 
-<span data-ttu-id="448e0-109">将行添加到表的末尾。</span><span class="sxs-lookup"><span data-stu-id="448e0-109">Adds rows to the end of the table.</span></span> <span data-ttu-id="448e0-110">请注意, API 可以使用此 API 接受多行数据。</span><span class="sxs-lookup"><span data-stu-id="448e0-110">Note that the API can accept multiple rows data using this API.</span></span> <span data-ttu-id="448e0-111">一次添加一行可能会导致性能下降。</span><span class="sxs-lookup"><span data-stu-id="448e0-111">Adding one row at a time could lead to performance degradation.</span></span> <span data-ttu-id="448e0-112">建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。</span><span class="sxs-lookup"><span data-stu-id="448e0-112">The recommended approach would be to batch the rows together in a single call rather than doing single row insertion.</span></span> <span data-ttu-id="448e0-113">为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。</span><span class="sxs-lookup"><span data-stu-id="448e0-113">For best results, collect the rows to be inserted on the application side and perform single rows add operation.</span></span> <span data-ttu-id="448e0-114">试验行数, 以确定要在单个 API 调用中使用的理想行数。</span><span class="sxs-lookup"><span data-stu-id="448e0-114">Experiment with the number of rows to determine the ideal number of rows to use in single API call.</span></span> 
+<span data-ttu-id="2fb52-109">将行添加到表的末尾。</span><span class="sxs-lookup"><span data-stu-id="2fb52-109">Adds rows to the end of the table.</span></span> <span data-ttu-id="2fb52-110">请注意, API 可以使用此 API 接受多行数据。</span><span class="sxs-lookup"><span data-stu-id="2fb52-110">Note that the API can accept multiple rows data using this API.</span></span> <span data-ttu-id="2fb52-111">一次添加一行可能会导致性能下降。</span><span class="sxs-lookup"><span data-stu-id="2fb52-111">Adding one row at a time could lead to performance degradation.</span></span> <span data-ttu-id="2fb52-112">建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。</span><span class="sxs-lookup"><span data-stu-id="2fb52-112">The recommended approach would be to batch the rows together in a single call rather than doing single row insertion.</span></span> <span data-ttu-id="2fb52-113">为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。</span><span class="sxs-lookup"><span data-stu-id="2fb52-113">For best results, collect the rows to be inserted on the application side and perform single rows add operation.</span></span> <span data-ttu-id="2fb52-114">试验行数, 以确定要在单个 API 调用中使用的理想行数。</span><span class="sxs-lookup"><span data-stu-id="2fb52-114">Experiment with the number of rows to determine the ideal number of rows to use in single API call.</span></span> 
 
-## <a name="error-handling"></a><span data-ttu-id="448e0-115">错误处理</span><span class="sxs-lookup"><span data-stu-id="448e0-115">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="2fb52-115">错误处理</span><span class="sxs-lookup"><span data-stu-id="2fb52-115">Error Handling</span></span>
 
-<span data-ttu-id="448e0-116">此请求有时可能会收到 504 HTTP 错误。</span><span class="sxs-lookup"><span data-stu-id="448e0-116">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="448e0-117">此错误的适当响应做法是重复发出请求。</span><span class="sxs-lookup"><span data-stu-id="448e0-117">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="2fb52-116">此请求有时可能会收到 504 HTTP 错误。</span><span class="sxs-lookup"><span data-stu-id="2fb52-116">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="2fb52-117">此错误的适当响应做法是重复发出请求。</span><span class="sxs-lookup"><span data-stu-id="2fb52-117">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="448e0-118">权限</span><span class="sxs-lookup"><span data-stu-id="448e0-118">Permissions</span></span>
-<span data-ttu-id="448e0-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="448e0-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2fb52-118">权限</span><span class="sxs-lookup"><span data-stu-id="2fb52-118">Permissions</span></span>
+<span data-ttu-id="2fb52-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="448e0-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="448e0-121">Permission type</span></span>      | <span data-ttu-id="448e0-122">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="448e0-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2fb52-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="2fb52-121">Permission type</span></span>      | <span data-ttu-id="2fb52-122">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2fb52-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="448e0-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="448e0-123">Delegated (work or school account)</span></span> | <span data-ttu-id="448e0-124">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="448e0-124">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="448e0-125">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="448e0-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="448e0-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="448e0-126">Not supported.</span></span>    |
-|<span data-ttu-id="448e0-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="448e0-127">Application</span></span> | <span data-ttu-id="448e0-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="448e0-128">Not supported.</span></span> |
+|<span data-ttu-id="2fb52-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2fb52-123">Delegated (work or school account)</span></span> | <span data-ttu-id="2fb52-124">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fb52-124">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2fb52-125">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2fb52-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fb52-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="2fb52-126">Not supported.</span></span>    |
+|<span data-ttu-id="2fb52-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="2fb52-127">Application</span></span> | <span data-ttu-id="2fb52-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="2fb52-128">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="448e0-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="448e0-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2fb52-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2fb52-129">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows/add
 POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="448e0-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="448e0-130">Request headers</span></span>
-| <span data-ttu-id="448e0-131">名称</span><span class="sxs-lookup"><span data-stu-id="448e0-131">Name</span></span>       | <span data-ttu-id="448e0-132">说明</span><span class="sxs-lookup"><span data-stu-id="448e0-132">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2fb52-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="2fb52-130">Request headers</span></span>
+| <span data-ttu-id="2fb52-131">名称</span><span class="sxs-lookup"><span data-stu-id="2fb52-131">Name</span></span>       | <span data-ttu-id="2fb52-132">说明</span><span class="sxs-lookup"><span data-stu-id="2fb52-132">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="448e0-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="448e0-133">Authorization</span></span>  | <span data-ttu-id="448e0-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="448e0-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="448e0-136">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="448e0-136">Workbook-Session-Id</span></span>  | <span data-ttu-id="448e0-p106">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="448e0-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2fb52-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="2fb52-133">Authorization</span></span>  | <span data-ttu-id="2fb52-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2fb52-136">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2fb52-136">Workbook-Session-Id</span></span>  | <span data-ttu-id="2fb52-p106">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="448e0-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="448e0-139">Request body</span></span>
-<span data-ttu-id="448e0-140">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="448e0-140">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2fb52-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="2fb52-139">Request body</span></span>
+<span data-ttu-id="2fb52-140">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="2fb52-140">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="448e0-141">参数</span><span class="sxs-lookup"><span data-stu-id="448e0-141">Parameter</span></span>    | <span data-ttu-id="448e0-142">类型</span><span class="sxs-lookup"><span data-stu-id="448e0-142">Type</span></span>   |<span data-ttu-id="448e0-143">说明</span><span class="sxs-lookup"><span data-stu-id="448e0-143">Description</span></span>|
+| <span data-ttu-id="2fb52-141">参数</span><span class="sxs-lookup"><span data-stu-id="2fb52-141">Parameter</span></span>    | <span data-ttu-id="2fb52-142">类型</span><span class="sxs-lookup"><span data-stu-id="2fb52-142">Type</span></span>   |<span data-ttu-id="2fb52-143">说明</span><span class="sxs-lookup"><span data-stu-id="2fb52-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="448e0-144">index</span><span class="sxs-lookup"><span data-stu-id="448e0-144">index</span></span>|<span data-ttu-id="448e0-145">Int32</span><span class="sxs-lookup"><span data-stu-id="448e0-145">Int32</span></span>|<span data-ttu-id="448e0-p107">可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="448e0-p107">Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.</span></span>|
-|<span data-ttu-id="448e0-151">values</span><span class="sxs-lookup"><span data-stu-id="448e0-151">values</span></span>|<span data-ttu-id="448e0-152">Json</span><span class="sxs-lookup"><span data-stu-id="448e0-152">Json</span></span>|<span data-ttu-id="448e0-p108">可选。未设置格式的表行值的二维数组。</span><span class="sxs-lookup"><span data-stu-id="448e0-p108">Optional. A 2-dimensional array of unformatted values of the table row.</span></span>|
+|<span data-ttu-id="2fb52-144">index</span><span class="sxs-lookup"><span data-stu-id="2fb52-144">index</span></span>|<span data-ttu-id="2fb52-145">Int32</span><span class="sxs-lookup"><span data-stu-id="2fb52-145">Int32</span></span>|<span data-ttu-id="2fb52-p107">可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p107">Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.</span></span>|
+|<span data-ttu-id="2fb52-151">values</span><span class="sxs-lookup"><span data-stu-id="2fb52-151">values</span></span>|<span data-ttu-id="2fb52-152">Json</span><span class="sxs-lookup"><span data-stu-id="2fb52-152">Json</span></span>|<span data-ttu-id="2fb52-p108">可选。未设置格式的表行值的二维数组。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p108">Optional. A 2-dimensional array of unformatted values of the table row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="448e0-155">响应</span><span class="sxs-lookup"><span data-stu-id="448e0-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2fb52-155">响应</span><span class="sxs-lookup"><span data-stu-id="2fb52-155">Response</span></span>
 
-<span data-ttu-id="448e0-156">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookTableRow](../resources/tablerow.md)对象。</span><span class="sxs-lookup"><span data-stu-id="448e0-156">If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.</span></span>
+<span data-ttu-id="2fb52-156">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookTableRow](../resources/tablerow.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2fb52-156">If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="448e0-157">示例</span><span class="sxs-lookup"><span data-stu-id="448e0-157">Example</span></span>
-<span data-ttu-id="448e0-158">在此示例中, 将两行数据插入到表的末尾。</span><span class="sxs-lookup"><span data-stu-id="448e0-158">In this example two rows of data are inserted at the end of the table.</span></span> 
+## <a name="example"></a><span data-ttu-id="2fb52-157">示例</span><span class="sxs-lookup"><span data-stu-id="2fb52-157">Example</span></span>
+<span data-ttu-id="2fb52-158">在此示例中, 将两行数据插入到表的末尾。</span><span class="sxs-lookup"><span data-stu-id="2fb52-158">In this example two rows of data are inserted at the end of the table.</span></span> 
 
-##### <a name="request"></a><span data-ttu-id="448e0-159">请求</span><span class="sxs-lookup"><span data-stu-id="448e0-159">Request</span></span>
-<span data-ttu-id="448e0-160">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="448e0-160">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="2fb52-159">请求</span><span class="sxs-lookup"><span data-stu-id="2fb52-159">Request</span></span>
+<span data-ttu-id="2fb52-160">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2fb52-160">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="2fb52-161">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="2fb52-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add"
@@ -75,9 +77,15 @@ Content-length: 51
   ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2fb52-162">Javascript</span><span class="sxs-lookup"><span data-stu-id="2fb52-162">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="448e0-161">响应</span><span class="sxs-lookup"><span data-stu-id="448e0-161">Response</span></span>
-<span data-ttu-id="448e0-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="448e0-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+---
+
+
+##### <a name="response"></a><span data-ttu-id="2fb52-163">响应</span><span class="sxs-lookup"><span data-stu-id="2fb52-163">Response</span></span>
+<span data-ttu-id="2fb52-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2fb52-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,14 +101,6 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="448e0-165">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="448e0-165">SDK sample code</span></span>
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="448e0-166">Javascript</span><span class="sxs-lookup"><span data-stu-id="448e0-166">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -110,7 +110,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/tablerowcollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
       Inconsistent types between parameter (Collection) and table (None)",
     "Error: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
