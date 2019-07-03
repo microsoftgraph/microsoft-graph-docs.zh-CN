@@ -4,12 +4,12 @@ description: '回复组对话中的线程并向其添加新帖子。 您可以�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c4cbe8e1339d164f399152854d678c0179940c83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f01992144fc2eaa09fbd12b93cad57213fd1a0a4
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564216"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35442823"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -51,6 +51,8 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "conversationthread_reply"
@@ -69,6 +71,16 @@ Content-length: 1131
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/conversationthread-reply-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/conversationthread-reply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。
@@ -87,5 +99,7 @@ HTTP/1.1 202 Accepted
   "description": "conversationThread: reply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

@@ -4,12 +4,12 @@ description: 创建新呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 25e716c25ee8d06f5564b8ac6b4e3f6476f0ce84
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 790a33297646eeb84d70708233089aca6f9f15bf
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636455"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439628"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -52,11 +52,13 @@ POST /applications/{id}/calls
 
 ### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>使用服务托管媒体创建对等 VOIP 呼叫
 
-> **注意:** 此调用需要调用。 Initiate。 All 权限。
+> **注意:** 此调用需要调用. Initiate。 All 权限。
 
 ##### <a name="request"></a>请求
 下面为请求示例。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-from-application"
@@ -104,6 +106,12 @@ Content-Type: application/json
   "tenantId": "tenantId-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
@@ -159,14 +167,6 @@ Content-Type: application/json
   "tenantId": "tenantId-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-call-from-application-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---establishing"></a>通知-建立
 
@@ -227,7 +227,7 @@ Content-Type: application/json
 
 ### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>使用应用程序托管媒体创建对等 VOIP 呼叫
 
-> 注意: 需要调用。 Initiate。 All 和 AccessMedia 权限。
+> 注意: 需要调用. Initiate. All 和 AccessMedia 权限。
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -522,7 +522,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/application-post-calls.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
