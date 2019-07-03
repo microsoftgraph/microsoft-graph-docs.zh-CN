@@ -4,45 +4,45 @@ description: '获取登录用户的邮箱（包括“已删除邮件”和“待
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: fae97e9188f4069829cf066539fb9425efc3788b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b53b5894949f786e082a44b86e57a15aa9ec9668
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270082"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35456804"
 ---
-# <a name="list-messages"></a><span data-ttu-id="f2cfa-103">列出邮件</span><span class="sxs-lookup"><span data-stu-id="f2cfa-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="66319-103">列出邮件</span><span class="sxs-lookup"><span data-stu-id="66319-103">List messages</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f2cfa-104">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span> 
+<span data-ttu-id="66319-104">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="66319-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span> 
 
-<span data-ttu-id="f2cfa-105">根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-105">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="f2cfa-106">默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-106">The default page size is 10 messages.</span></span> <span data-ttu-id="f2cfa-107">若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-107">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="f2cfa-108">此 URL 包括可能已在初始请求中指定的任何查询参数。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-108">This URL includes any query parameters you may have specified in the initial request.</span></span> 
+<span data-ttu-id="66319-105">根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。</span><span class="sxs-lookup"><span data-stu-id="66319-105">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="66319-106">默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="66319-106">The default page size is 10 messages.</span></span> <span data-ttu-id="66319-107">若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。</span><span class="sxs-lookup"><span data-stu-id="66319-107">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="66319-108">此 URL 包括可能已在初始请求中指定的任何查询参数。</span><span class="sxs-lookup"><span data-stu-id="66319-108">This URL includes any query parameters you may have specified in the initial request.</span></span> 
 
-<span data-ttu-id="f2cfa-109">不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-109">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="f2cfa-110">此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-110">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="f2cfa-111">因此，甚至在初始响应中，`$skip` 值都会大于页面大小。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-111">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="f2cfa-112">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-112">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="66319-109">不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。</span><span class="sxs-lookup"><span data-stu-id="66319-109">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="66319-110">此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。</span><span class="sxs-lookup"><span data-stu-id="66319-110">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="66319-111">因此，甚至在初始响应中，`$skip` 值都会大于页面大小。</span><span class="sxs-lookup"><span data-stu-id="66319-111">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="66319-112">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="66319-112">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-<span data-ttu-id="f2cfa-113">您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-113">You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.</span></span>
+<span data-ttu-id="66319-113">您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。</span><span class="sxs-lookup"><span data-stu-id="66319-113">You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.</span></span>
 
-<span data-ttu-id="f2cfa-114">请注意, 默认情况下`GET /me/messages` , 该操作不会返回**提及**属性。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-114">Note that by default, the `GET /me/messages` operation does not return the **mentions** property.</span></span> <span data-ttu-id="f2cfa-115">使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-115">Use the `$expand` query parameter to [find details of each mention in a message](../api/message-get.md#request-2).</span></span>
+<span data-ttu-id="66319-114">请注意, 默认情况下`GET /me/messages` , 该操作不会返回**提及**属性。</span><span class="sxs-lookup"><span data-stu-id="66319-114">Note that by default, the `GET /me/messages` operation does not return the **mentions** property.</span></span> <span data-ttu-id="66319-115">使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。</span><span class="sxs-lookup"><span data-stu-id="66319-115">Use the `$expand` query parameter to [find details of each mention in a message](../api/message-get.md#request-2).</span></span>
 
-<span data-ttu-id="f2cfa-116">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="f2cfa-116">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
+<span data-ttu-id="66319-116">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="66319-116">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
 
-* <span data-ttu-id="f2cfa-117">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="f2cfa-117">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="f2cfa-118">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-118">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="f2cfa-119">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-119">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="66319-117">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="66319-117">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="66319-118">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="66319-118">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="66319-119">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="66319-119">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="f2cfa-120">权限</span><span class="sxs-lookup"><span data-stu-id="f2cfa-120">Permissions</span></span>
-<span data-ttu-id="f2cfa-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="66319-120">权限</span><span class="sxs-lookup"><span data-stu-id="66319-120">Permissions</span></span>
+<span data-ttu-id="66319-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="66319-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2cfa-123">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2cfa-123">Permission type</span></span>      | <span data-ttu-id="f2cfa-124">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2cfa-124">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="66319-123">权限类型</span><span class="sxs-lookup"><span data-stu-id="66319-123">Permission type</span></span>      | <span data-ttu-id="66319-124">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="66319-124">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f2cfa-125">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2cfa-125">Delegated (work or school account)</span></span> | <span data-ttu-id="f2cfa-126">User.readbasic.all、邮件、读取、封写</span><span class="sxs-lookup"><span data-stu-id="f2cfa-126">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f2cfa-127">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2cfa-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2cfa-128">User.readbasic.all、邮件、读取、封写</span><span class="sxs-lookup"><span data-stu-id="f2cfa-128">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f2cfa-129">应用程序</span><span class="sxs-lookup"><span data-stu-id="f2cfa-129">Application</span></span> | <span data-ttu-id="f2cfa-130">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f2cfa-130">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="66319-125">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="66319-125">Delegated (work or school account)</span></span> | <span data-ttu-id="66319-126">User.readbasic.all、邮件、读取、封写</span><span class="sxs-lookup"><span data-stu-id="66319-126">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="66319-127">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="66319-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="66319-128">User.readbasic.all、邮件、读取、封写</span><span class="sxs-lookup"><span data-stu-id="66319-128">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="66319-129">应用程序</span><span class="sxs-lookup"><span data-stu-id="66319-129">Application</span></span> | <span data-ttu-id="66319-130">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66319-130">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f2cfa-131">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2cfa-131">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="66319-131">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="66319-131">HTTP request</span></span>
 
-<span data-ttu-id="f2cfa-132">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="f2cfa-132">To get all the messages in a user's mailbox:</span></span>
+<span data-ttu-id="66319-132">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="66319-132">To get all the messages in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,7 +50,7 @@ GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-<span data-ttu-id="f2cfa-133">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="f2cfa-133">To get messages in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="66319-133">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="66319-133">To get messages in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -58,7 +58,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-<span data-ttu-id="f2cfa-134">若要获取用户邮箱中包含用户**提及**的所有邮件, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="f2cfa-134">To get all the messages in the user's mailbox that include a **mention** of the user:</span></span>
+<span data-ttu-id="66319-134">若要获取用户邮箱中包含用户**提及**的所有邮件, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="66319-134">To get all the messages in the user's mailbox that include a **mention** of the user:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -66,27 +66,29 @@ GET /me/messages?$filter=mentionsPreview/isMentioned eq true
 GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned eq true
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f2cfa-135">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f2cfa-135">Optional query parameters</span></span>
-<span data-ttu-id="f2cfa-136">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-136">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="66319-135">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="66319-135">Optional query parameters</span></span>
+<span data-ttu-id="66319-136">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="66319-136">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="f2cfa-137">您可以使用`$filter` **mentionsPreview**属性上的查询参数来获取那些提及已登录用户的消息。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-137">You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.</span></span>
+<span data-ttu-id="66319-137">您可以使用`$filter` **mentionsPreview**属性上的查询参数来获取那些提及已登录用户的消息。</span><span class="sxs-lookup"><span data-stu-id="66319-137">You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f2cfa-138">请求标头</span><span class="sxs-lookup"><span data-stu-id="f2cfa-138">Request headers</span></span>
-| <span data-ttu-id="f2cfa-139">名称</span><span class="sxs-lookup"><span data-stu-id="f2cfa-139">Name</span></span>       | <span data-ttu-id="f2cfa-140">类型</span><span class="sxs-lookup"><span data-stu-id="f2cfa-140">Type</span></span> | <span data-ttu-id="f2cfa-141">说明</span><span class="sxs-lookup"><span data-stu-id="f2cfa-141">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="66319-138">请求标头</span><span class="sxs-lookup"><span data-stu-id="66319-138">Request headers</span></span>
+| <span data-ttu-id="66319-139">名称</span><span class="sxs-lookup"><span data-stu-id="66319-139">Name</span></span>       | <span data-ttu-id="66319-140">类型</span><span class="sxs-lookup"><span data-stu-id="66319-140">Type</span></span> | <span data-ttu-id="66319-141">说明</span><span class="sxs-lookup"><span data-stu-id="66319-141">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="f2cfa-142">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2cfa-142">Authorization</span></span>  | <span data-ttu-id="f2cfa-143">string</span><span class="sxs-lookup"><span data-stu-id="f2cfa-143">string</span></span>  | <span data-ttu-id="f2cfa-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-p106">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f2cfa-146">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="f2cfa-146">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="f2cfa-147">string</span><span class="sxs-lookup"><span data-stu-id="f2cfa-147">string</span></span> | <span data-ttu-id="f2cfa-148">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-148">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="f2cfa-149">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-149">Values can be "text" or "html".</span></span> <span data-ttu-id="f2cfa-150">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-150">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="f2cfa-151">可选。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-151">Optional.</span></span> |
+| <span data-ttu-id="66319-142">Authorization</span><span class="sxs-lookup"><span data-stu-id="66319-142">Authorization</span></span>  | <span data-ttu-id="66319-143">string</span><span class="sxs-lookup"><span data-stu-id="66319-143">string</span></span>  | <span data-ttu-id="66319-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="66319-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="66319-146">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="66319-146">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="66319-147">string</span><span class="sxs-lookup"><span data-stu-id="66319-147">string</span></span> | <span data-ttu-id="66319-148">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="66319-148">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="66319-149">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="66319-149">Values can be "text" or "html".</span></span> <span data-ttu-id="66319-150">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="66319-150">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="66319-151">可选。</span><span class="sxs-lookup"><span data-stu-id="66319-151">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f2cfa-152">请求正文</span><span class="sxs-lookup"><span data-stu-id="f2cfa-152">Request body</span></span>
-<span data-ttu-id="f2cfa-153">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-153">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="66319-152">请求正文</span><span class="sxs-lookup"><span data-stu-id="66319-152">Request body</span></span>
+<span data-ttu-id="66319-153">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="66319-153">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f2cfa-154">响应</span><span class="sxs-lookup"><span data-stu-id="f2cfa-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="66319-154">响应</span><span class="sxs-lookup"><span data-stu-id="66319-154">Response</span></span>
 
-<span data-ttu-id="f2cfa-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[message](../resources/message.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-155">If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.</span></span>
+<span data-ttu-id="66319-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[message](../resources/message.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="66319-155">If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f2cfa-156">示例</span><span class="sxs-lookup"><span data-stu-id="f2cfa-156">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="f2cfa-157">请求 1</span><span class="sxs-lookup"><span data-stu-id="f2cfa-157">Request 1</span></span>
-<span data-ttu-id="f2cfa-158">第一个示例获取已登录用户的邮箱中的默认前10封邮件。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-158">The first example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="f2cfa-159">它使用 `$select` 在响应中返回每封邮件的属性的子集。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-159">It uses `$select` to return a subset of the properties of each message in the response.</span></span> 
+## <a name="example"></a><span data-ttu-id="66319-156">示例</span><span class="sxs-lookup"><span data-stu-id="66319-156">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="66319-157">请求 1</span><span class="sxs-lookup"><span data-stu-id="66319-157">Request 1</span></span>
+<span data-ttu-id="66319-158">第一个示例获取已登录用户的邮箱中的默认前10封邮件。</span><span class="sxs-lookup"><span data-stu-id="66319-158">The first example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="66319-159">它使用 `$select` 在响应中返回每封邮件的属性的子集。</span><span class="sxs-lookup"><span data-stu-id="66319-159">It uses `$select` to return a subset of the properties of each message in the response.</span></span> 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="66319-160">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="66319-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -94,8 +96,22 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ```http
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
-##### <a name="response-1"></a><span data-ttu-id="f2cfa-160">响应 1</span><span class="sxs-lookup"><span data-stu-id="f2cfa-160">Response 1</span></span>
-<span data-ttu-id="f2cfa-161">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-161">Here is an example of the response.</span></span> <span data-ttu-id="f2cfa-162">若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-162">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="66319-161">C#</span><span class="sxs-lookup"><span data-stu-id="66319-161">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66319-162">Javascript</span><span class="sxs-lookup"><span data-stu-id="66319-162">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66319-163">目标-C</span><span class="sxs-lookup"><span data-stu-id="66319-163">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response-1"></a><span data-ttu-id="66319-164">响应 1</span><span class="sxs-lookup"><span data-stu-id="66319-164">Response 1</span></span>
+<span data-ttu-id="66319-165">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="66319-165">Here is an example of the response.</span></span> <span data-ttu-id="66319-166">若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="66319-166">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -203,24 +219,14 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f2cfa-163">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f2cfa-163">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f2cfa-164">C#</span><span class="sxs-lookup"><span data-stu-id="f2cfa-164">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_messages-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2cfa-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2cfa-165">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_messages-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f2cfa-166">目标-C</span><span class="sxs-lookup"><span data-stu-id="f2cfa-166">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_messages-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-##### <a name="request-2"></a><span data-ttu-id="f2cfa-167">请求 2</span><span class="sxs-lookup"><span data-stu-id="f2cfa-167">Request 2</span></span>
-<span data-ttu-id="f2cfa-168">下一个示例将对登录用户邮箱中的所有邮件进行筛选, 以查找那些提及该用户的邮件。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-168">The next example filters all messages in the signed-in user's mailbox for those that mention the user.</span></span> <span data-ttu-id="f2cfa-169">它还`$select`用于在响应中返回每个邮件的属性子集。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-169">It also uses `$select` to return a subset of the properties of each message in the response.</span></span> 
+##### <a name="request-2"></a><span data-ttu-id="66319-167">请求 2</span><span class="sxs-lookup"><span data-stu-id="66319-167">Request 2</span></span>
+<span data-ttu-id="66319-168">下一个示例将对登录用户邮箱中的所有邮件进行筛选, 以查找那些提及该用户的邮件。</span><span class="sxs-lookup"><span data-stu-id="66319-168">The next example filters all messages in the signed-in user's mailbox for those that mention the user.</span></span> <span data-ttu-id="66319-169">它还`$select`用于在响应中返回每个邮件的属性子集。</span><span class="sxs-lookup"><span data-stu-id="66319-169">It also uses `$select` to return a subset of the properties of each message in the response.</span></span> 
 
-<span data-ttu-id="f2cfa-170">该示例还合并了查询参数字符串中的空格字符的 URL 编码。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-170">The example also incorporates URL encoding for the space characters in the query parameter string.</span></span>
+<span data-ttu-id="66319-170">该示例还合并了查询参数字符串中的空格字符的 URL 编码。</span><span class="sxs-lookup"><span data-stu-id="66319-170">The example also incorporates URL encoding for the space characters in the query parameter string.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="66319-171">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="66319-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages_with_mentions"
@@ -228,8 +234,22 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMentioned%20eq%20true&$select=Subject,Sender,ReceivedDateTime,MentionsPreview
 ```
-##### <a name="response-2"></a><span data-ttu-id="f2cfa-171">响应 2</span><span class="sxs-lookup"><span data-stu-id="f2cfa-171">Response 2</span></span>
-<span data-ttu-id="f2cfa-p111">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="66319-172">C#</span><span class="sxs-lookup"><span data-stu-id="66319-172">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-with-mentions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66319-173">Javascript</span><span class="sxs-lookup"><span data-stu-id="66319-173">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-with-mentions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66319-174">目标-C</span><span class="sxs-lookup"><span data-stu-id="66319-174">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-messages-with-mentions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response-2"></a><span data-ttu-id="66319-175">响应 2</span><span class="sxs-lookup"><span data-stu-id="66319-175">Response 2</span></span>
+<span data-ttu-id="66319-p111">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="66319-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -279,21 +299,11 @@ Content-length: 987
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f2cfa-175">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f2cfa-175">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f2cfa-176">C#</span><span class="sxs-lookup"><span data-stu-id="f2cfa-176">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_messages_with_mentions-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2cfa-177">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2cfa-177">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_messages_with_mentions-Javascript-snippets.md)]
+##### <a name="request-3"></a><span data-ttu-id="66319-179">请求 3</span><span class="sxs-lookup"><span data-stu-id="66319-179">Request 3</span></span>
+<span data-ttu-id="66319-180">第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取每个邮件的**body**和**uniqueBody**属性。</span><span class="sxs-lookup"><span data-stu-id="66319-180">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** properties of each message in text format.</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f2cfa-178">目标-C</span><span class="sxs-lookup"><span data-stu-id="f2cfa-178">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_messages_with_mentions-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-##### <a name="request-3"></a><span data-ttu-id="f2cfa-179">请求 3</span><span class="sxs-lookup"><span data-stu-id="f2cfa-179">Request 3</span></span>
-<span data-ttu-id="f2cfa-180">第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取每个邮件的**body**和**uniqueBody**属性。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-180">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** properties of each message in text format.</span></span>
+# <a name="httptabhttp"></a>[<span data-ttu-id="66319-181">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="66319-181">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages_in_text"
@@ -302,8 +312,22 @@ Content-length: 987
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
-##### <a name="response-3"></a><span data-ttu-id="f2cfa-181">响应 3</span><span class="sxs-lookup"><span data-stu-id="f2cfa-181">Response 3</span></span>
-<span data-ttu-id="f2cfa-182">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f2cfa-182">Here is an example of the response.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="66319-182">C#</span><span class="sxs-lookup"><span data-stu-id="66319-182">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-in-text-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66319-183">Javascript</span><span class="sxs-lookup"><span data-stu-id="66319-183">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-in-text-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66319-184">目标-C</span><span class="sxs-lookup"><span data-stu-id="66319-184">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-messages-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response-3"></a><span data-ttu-id="66319-185">响应 3</span><span class="sxs-lookup"><span data-stu-id="66319-185">Response 3</span></span>
+<span data-ttu-id="66319-186">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="66319-186">Here is an example of the response.</span></span> 
 
 <!--
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
@@ -369,18 +393,6 @@ Content-length: 2704
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f2cfa-183">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f2cfa-183">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f2cfa-184">C#</span><span class="sxs-lookup"><span data-stu-id="f2cfa-184">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_messages_in_text-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2cfa-185">Javascript</span><span class="sxs-lookup"><span data-stu-id="f2cfa-185">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_messages_in_text-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f2cfa-186">目标-C</span><span class="sxs-lookup"><span data-stu-id="f2cfa-186">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_messages_in_text-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -392,13 +404,6 @@ Content-length: 2704
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

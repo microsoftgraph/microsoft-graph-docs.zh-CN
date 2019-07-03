@@ -5,35 +5,35 @@ ms.date: 09/10/2017
 title: 获取 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: adf20d242dec40dd2981b90f725fb18980e1a60d
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 89efbcd3853e767316cc4b369a861476e7d30a76
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271580"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35457119"
 ---
-# <a name="get-a-site-resource"></a><span data-ttu-id="053e6-102">获取网站资源</span><span class="sxs-lookup"><span data-stu-id="053e6-102">Get a site resource</span></span>
+# <a name="get-a-site-resource"></a><span data-ttu-id="f9ca6-102">获取网站资源</span><span class="sxs-lookup"><span data-stu-id="f9ca6-102">Get a site resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="053e6-p101">检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。</span><span class="sxs-lookup"><span data-stu-id="053e6-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="f9ca6-p101">检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。</span><span class="sxs-lookup"><span data-stu-id="f9ca6-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="053e6-106">权限</span><span class="sxs-lookup"><span data-stu-id="053e6-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f9ca6-106">权限</span><span class="sxs-lookup"><span data-stu-id="f9ca6-106">Permissions</span></span>
 
-<span data-ttu-id="053e6-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="053e6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f9ca6-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f9ca6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="053e6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="053e6-109">Permission type</span></span>      | <span data-ttu-id="053e6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="053e6-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f9ca6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f9ca6-109">Permission type</span></span>      | <span data-ttu-id="f9ca6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f9ca6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="053e6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="053e6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="053e6-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="053e6-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="053e6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="053e6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="053e6-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="053e6-114">Not supported.</span></span>    |
-|<span data-ttu-id="053e6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="053e6-115">Application</span></span> | <span data-ttu-id="053e6-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="053e6-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="f9ca6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f9ca6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f9ca6-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9ca6-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f9ca6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f9ca6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9ca6-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9ca6-114">Not supported.</span></span>    |
+|<span data-ttu-id="f9ca6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f9ca6-115">Application</span></span> | <span data-ttu-id="f9ca6-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9ca6-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-the-tenants-root-site"></a><span data-ttu-id="053e6-117">获取租户的根网站</span><span class="sxs-lookup"><span data-stu-id="053e6-117">Get the tenant's root site</span></span>
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="f9ca6-117">获取租户的根网站</span><span class="sxs-lookup"><span data-stu-id="f9ca6-117">Get the tenant's root site</span></span>
 
-<span data-ttu-id="053e6-118">若要访问租户内的根 SharePoint 网站：</span><span class="sxs-lookup"><span data-stu-id="053e6-118">To access the root SharePoint site within a tenant:</span></span>
+<span data-ttu-id="f9ca6-118">若要访问租户内的根 SharePoint 网站：</span><span class="sxs-lookup"><span data-stu-id="f9ca6-118">To access the root SharePoint site within a tenant:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,33 +42,49 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="053e6-119">通过相对于服务器的 URL 访问网站</span><span class="sxs-lookup"><span data-stu-id="053e6-119">Access a site by server-relative URL</span></span>
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="f9ca6-119">通过相对于服务器的 URL 访问网站</span><span class="sxs-lookup"><span data-stu-id="f9ca6-119">Access a site by server-relative URL</span></span>
 
-<span data-ttu-id="053e6-120">如果你的服务器具有**网站**资源的相对于服务器的 URL，你可以构建请求，如下所示：</span><span class="sxs-lookup"><span data-stu-id="053e6-120">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
+<span data-ttu-id="f9ca6-120">如果你的服务器具有**网站**资源的相对于服务器的 URL，你可以构建请求，如下所示：</span><span class="sxs-lookup"><span data-stu-id="f9ca6-120">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a><span data-ttu-id="053e6-121">访问组团队网站</span><span class="sxs-lookup"><span data-stu-id="053e6-121">Access a group team site</span></span>
+## <a name="access-a-group-team-site"></a><span data-ttu-id="f9ca6-121">访问组团队网站</span><span class="sxs-lookup"><span data-stu-id="f9ca6-121">Access a group team site</span></span>
 
-<span data-ttu-id="053e6-122">若要访问组的团队网站：</span><span class="sxs-lookup"><span data-stu-id="053e6-122">To access the team site for a group:</span></span>
+<span data-ttu-id="f9ca6-122">若要访问组的团队网站：</span><span class="sxs-lookup"><span data-stu-id="f9ca6-122">To access the team site for a group:</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a><span data-ttu-id="053e6-123">示例</span><span class="sxs-lookup"><span data-stu-id="053e6-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f9ca6-123">示例</span><span class="sxs-lookup"><span data-stu-id="f9ca6-123">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="053e6-124">请求</span><span class="sxs-lookup"><span data-stu-id="053e6-124">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f9ca6-124">请求</span><span class="sxs-lookup"><span data-stu-id="f9ca6-124">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f9ca6-125">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f9ca6-125">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-site" } -->
 
 ```http
 GET /sites/{site-id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f9ca6-126">C#</span><span class="sxs-lookup"><span data-stu-id="f9ca6-126">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="053e6-125">响应</span><span class="sxs-lookup"><span data-stu-id="053e6-125">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f9ca6-127">Javascript</span><span class="sxs-lookup"><span data-stu-id="f9ca6-127">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f9ca6-128">目标-C</span><span class="sxs-lookup"><span data-stu-id="f9ca6-128">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="f9ca6-129">响应</span><span class="sxs-lookup"><span data-stu-id="f9ca6-129">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
@@ -91,18 +107,6 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="053e6-126">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="053e6-126">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="053e6-127">C#</span><span class="sxs-lookup"><span data-stu-id="053e6-127">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="053e6-128">Javascript</span><span class="sxs-lookup"><span data-stu-id="053e6-128">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="053e6-129">目标-C</span><span class="sxs-lookup"><span data-stu-id="053e6-129">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-site-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -112,9 +116,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

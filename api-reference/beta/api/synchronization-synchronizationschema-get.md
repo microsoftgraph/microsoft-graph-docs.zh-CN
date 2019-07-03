@@ -2,29 +2,29 @@
 title: 获取 synchronizationSchema
 description: 检索给定同步作业或模板的架构。
 localization_priority: Normal
-ms.openlocfilehash: ed1c937af182afaec75724273c35c7c243d25679
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 68660a4183ec659d881e2147585b3ca1d8ead06d
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271272"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458148"
 ---
-# <a name="get-synchronizationschema"></a><span data-ttu-id="d7f6b-103">获取 synchronizationSchema</span><span class="sxs-lookup"><span data-stu-id="d7f6b-103">Get synchronizationSchema</span></span>
+# <a name="get-synchronizationschema"></a><span data-ttu-id="d8cd4-103">获取 synchronizationSchema</span><span class="sxs-lookup"><span data-stu-id="d8cd4-103">Get synchronizationSchema</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d7f6b-104">检索给定同步作业或模板的架构。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-104">Retrieve the schema for a given synchronization job or template.</span></span>
+<span data-ttu-id="d8cd4-104">检索给定同步作业或模板的架构。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-104">Retrieve the schema for a given synchronization job or template.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d7f6b-105">权限</span><span class="sxs-lookup"><span data-stu-id="d7f6b-105">Permissions</span></span>
-<span data-ttu-id="d7f6b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d8cd4-105">权限</span><span class="sxs-lookup"><span data-stu-id="d8cd4-105">Permissions</span></span>
+<span data-ttu-id="d8cd4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d7f6b-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d7f6b-108">Permission type</span></span>                        | <span data-ttu-id="d7f6b-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d7f6b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d8cd4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d8cd4-108">Permission type</span></span>                        | <span data-ttu-id="d8cd4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d8cd4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d7f6b-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d7f6b-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="d7f6b-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7f6b-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="d7f6b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d7f6b-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="d7f6b-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-113">Not supported.</span></span> |
-|<span data-ttu-id="d7f6b-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d7f6b-114">Application</span></span>                            |<span data-ttu-id="d7f6b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-115">Not supported.</span></span> | 
+|<span data-ttu-id="d8cd4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d8cd4-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="d8cd4-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d8cd4-111">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="d8cd4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d8cd4-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="d8cd4-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-113">Not supported.</span></span> |
+|<span data-ttu-id="d8cd4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d8cd4-114">Application</span></span>                            |<span data-ttu-id="d8cd4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-115">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="d7f6b-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d7f6b-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d8cd4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d8cd4-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
@@ -32,24 +32,26 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema
 GET /applications/{id}/synchronization/templates/{templateId}/schema
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d7f6b-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d7f6b-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d8cd4-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d8cd4-117">Request headers</span></span>
 
-| <span data-ttu-id="d7f6b-118">名称</span><span class="sxs-lookup"><span data-stu-id="d7f6b-118">Name</span></span>           | <span data-ttu-id="d7f6b-119">类型</span><span class="sxs-lookup"><span data-stu-id="d7f6b-119">Type</span></span>    | <span data-ttu-id="d7f6b-120">说明</span><span class="sxs-lookup"><span data-stu-id="d7f6b-120">Description</span></span>|
+| <span data-ttu-id="d8cd4-118">名称</span><span class="sxs-lookup"><span data-stu-id="d8cd4-118">Name</span></span>           | <span data-ttu-id="d8cd4-119">类型</span><span class="sxs-lookup"><span data-stu-id="d8cd4-119">Type</span></span>    | <span data-ttu-id="d8cd4-120">说明</span><span class="sxs-lookup"><span data-stu-id="d8cd4-120">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="d7f6b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d7f6b-121">Authorization</span></span>  | <span data-ttu-id="d7f6b-122">string</span><span class="sxs-lookup"><span data-stu-id="d7f6b-122">string</span></span>  | <span data-ttu-id="d7f6b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d8cd4-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d8cd4-121">Authorization</span></span>  | <span data-ttu-id="d8cd4-122">string</span><span class="sxs-lookup"><span data-stu-id="d8cd4-122">string</span></span>  | <span data-ttu-id="d8cd4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d7f6b-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="d7f6b-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d8cd4-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="d8cd4-125">Request body</span></span>
 
-<span data-ttu-id="d7f6b-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d8cd4-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d7f6b-127">响应</span><span class="sxs-lookup"><span data-stu-id="d7f6b-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d8cd4-127">响应</span><span class="sxs-lookup"><span data-stu-id="d8cd4-127">Response</span></span>
 
-<span data-ttu-id="d7f6b-128">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-128">If successful, this method returns a `200 OK` response code and a [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object in the response body.</span></span>
+<span data-ttu-id="d8cd4-128">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-128">If successful, this method returns a `200 OK` response code and a [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7f6b-129">示例</span><span class="sxs-lookup"><span data-stu-id="d7f6b-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d8cd4-129">示例</span><span class="sxs-lookup"><span data-stu-id="d8cd4-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d7f6b-130">请求</span><span class="sxs-lookup"><span data-stu-id="d7f6b-130">Request</span></span>
-<span data-ttu-id="d7f6b-131">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-131">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d8cd4-130">请求</span><span class="sxs-lookup"><span data-stu-id="d8cd4-130">Request</span></span>
+<span data-ttu-id="d8cd4-131">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-131">The following is an example of a request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d8cd4-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d8cd4-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
@@ -57,11 +59,25 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d8cd4-133">C#</span><span class="sxs-lookup"><span data-stu-id="d8cd4-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="d7f6b-132">响应</span><span class="sxs-lookup"><span data-stu-id="d7f6b-132">Response</span></span>
-<span data-ttu-id="d7f6b-133">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-133">The following is an example of a response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d8cd4-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="d8cd4-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="d7f6b-134">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d7f6b-135">所有属性将在实际调用中返回。</span><span class="sxs-lookup"><span data-stu-id="d7f6b-135">All the properties will be returned in an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d8cd4-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="d8cd4-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="d8cd4-136">响应</span><span class="sxs-lookup"><span data-stu-id="d8cd4-136">Response</span></span>
+<span data-ttu-id="d8cd4-137">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-137">The following is an example of a response.</span></span>
+
+><span data-ttu-id="d8cd4-138">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d8cd4-139">所有属性将在实际调用中返回。</span><span class="sxs-lookup"><span data-stu-id="d8cd4-139">All the properties will be returned in an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,18 +131,6 @@ HTTP/1.1 200 OK
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="d7f6b-136">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="d7f6b-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="d7f6b-137">C#</span><span class="sxs-lookup"><span data-stu-id="d7f6b-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_synchronizationschema-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d7f6b-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="d7f6b-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_synchronizationschema-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="d7f6b-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="d7f6b-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_synchronizationschema-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -138,9 +142,6 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

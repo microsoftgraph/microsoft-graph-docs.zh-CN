@@ -4,32 +4,32 @@ description: 获取用户执行的 OneDrive 活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ff70b8d4e37f39e11ea4ee2b4cfd7828be15a3a7
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 793664023dfd741846e98b03fa9a8579e6676d1d
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35267331"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35446764"
 ---
-# <a name="reportroot-getonedriveactivityuserdetail"></a><span data-ttu-id="18adf-103">reportRoot: getOneDriveActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="18adf-103">reportRoot: getOneDriveActivityUserDetail</span></span>
+# <a name="reportroot-getonedriveactivityuserdetail"></a><span data-ttu-id="ac630-103">reportRoot: getOneDriveActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="ac630-103">reportRoot: getOneDriveActivityUserDetail</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18adf-104">获取用户执行的 OneDrive 活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="18adf-104">Get details about OneDrive activity by user.</span></span>
+<span data-ttu-id="ac630-104">获取用户执行的 OneDrive 活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="ac630-104">Get details about OneDrive activity by user.</span></span>
 
-> <span data-ttu-id="18adf-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - OneDrive for Business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。</span><span class="sxs-lookup"><span data-stu-id="18adf-105">**Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).</span></span>
+> <span data-ttu-id="ac630-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - OneDrive for Business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。</span><span class="sxs-lookup"><span data-stu-id="ac630-105">**Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18adf-106">权限</span><span class="sxs-lookup"><span data-stu-id="18adf-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ac630-106">权限</span><span class="sxs-lookup"><span data-stu-id="ac630-106">Permissions</span></span>
 
-<span data-ttu-id="18adf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="18adf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ac630-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ac630-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="18adf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="18adf-109">Permission type</span></span>                        | <span data-ttu-id="18adf-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="18adf-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ac630-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ac630-109">Permission type</span></span>                        | <span data-ttu-id="ac630-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ac630-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="18adf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="18adf-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="18adf-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="18adf-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="18adf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="18adf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18adf-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="18adf-114">Not supported.</span></span>                           |
-| <span data-ttu-id="18adf-115">应用</span><span class="sxs-lookup"><span data-stu-id="18adf-115">Application</span></span>                            | <span data-ttu-id="18adf-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="18adf-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="ac630-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ac630-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ac630-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ac630-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="ac630-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ac630-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac630-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac630-114">Not supported.</span></span>                           |
+| <span data-ttu-id="ac630-115">应用</span><span class="sxs-lookup"><span data-stu-id="ac630-115">Application</span></span>                            | <span data-ttu-id="ac630-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ac630-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="18adf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="18adf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ac630-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ac630-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,63 +38,65 @@ GET /reports/getOneDriveActivityUserDetail(period='{period_value}')
 GET /reports/getOneDriveActivityUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="18adf-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="18adf-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="ac630-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="ac630-118">Function parameters</span></span>
 
-<span data-ttu-id="18adf-119">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="18adf-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="ac630-119">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="ac630-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="18adf-120">参数</span><span class="sxs-lookup"><span data-stu-id="18adf-120">Parameter</span></span> | <span data-ttu-id="18adf-121">类型</span><span class="sxs-lookup"><span data-stu-id="18adf-121">Type</span></span>   | <span data-ttu-id="18adf-122">说明</span><span class="sxs-lookup"><span data-stu-id="18adf-122">Description</span></span>                              |
+| <span data-ttu-id="ac630-120">参数</span><span class="sxs-lookup"><span data-stu-id="ac630-120">Parameter</span></span> | <span data-ttu-id="ac630-121">类型</span><span class="sxs-lookup"><span data-stu-id="ac630-121">Type</span></span>   | <span data-ttu-id="ac630-122">说明</span><span class="sxs-lookup"><span data-stu-id="ac630-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="18adf-123">period</span><span class="sxs-lookup"><span data-stu-id="18adf-123">period</span></span>    | <span data-ttu-id="18adf-124">string</span><span class="sxs-lookup"><span data-stu-id="18adf-124">string</span></span> | <span data-ttu-id="18adf-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="18adf-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="18adf-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="18adf-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="18adf-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="18adf-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="18adf-128">date</span><span class="sxs-lookup"><span data-stu-id="18adf-128">date</span></span>      | <span data-ttu-id="18adf-129">Date</span><span class="sxs-lookup"><span data-stu-id="18adf-129">Date</span></span>   | <span data-ttu-id="18adf-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="18adf-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="18adf-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="18adf-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="18adf-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="18adf-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="ac630-123">period</span><span class="sxs-lookup"><span data-stu-id="ac630-123">period</span></span>    | <span data-ttu-id="ac630-124">string</span><span class="sxs-lookup"><span data-stu-id="ac630-124">string</span></span> | <span data-ttu-id="ac630-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="ac630-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="ac630-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="ac630-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="ac630-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="ac630-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="ac630-128">date</span><span class="sxs-lookup"><span data-stu-id="ac630-128">date</span></span>      | <span data-ttu-id="ac630-129">Date</span><span class="sxs-lookup"><span data-stu-id="ac630-129">Date</span></span>   | <span data-ttu-id="ac630-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="ac630-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="ac630-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="ac630-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="ac630-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="ac630-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="18adf-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="18adf-133">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="ac630-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="ac630-133">**Note:** You need to set either period or date in the URL.</span></span>
 
-<span data-ttu-id="18adf-134">此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="18adf-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="18adf-135">默认输出类型为 text/csv。</span><span class="sxs-lookup"><span data-stu-id="18adf-135">The default output type is text/csv.</span></span> <span data-ttu-id="18adf-136">但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。</span><span class="sxs-lookup"><span data-stu-id="18adf-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="ac630-134">此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ac630-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="ac630-135">默认输出类型为 text/csv。</span><span class="sxs-lookup"><span data-stu-id="ac630-135">The default output type is text/csv.</span></span> <span data-ttu-id="ac630-136">但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。</span><span class="sxs-lookup"><span data-stu-id="ac630-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="18adf-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="18adf-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ac630-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="ac630-137">Request headers</span></span>
 
-| <span data-ttu-id="18adf-138">名称</span><span class="sxs-lookup"><span data-stu-id="18adf-138">Name</span></span>          | <span data-ttu-id="18adf-139">说明</span><span class="sxs-lookup"><span data-stu-id="18adf-139">Description</span></span>               |
+| <span data-ttu-id="ac630-138">名称</span><span class="sxs-lookup"><span data-stu-id="ac630-138">Name</span></span>          | <span data-ttu-id="ac630-139">说明</span><span class="sxs-lookup"><span data-stu-id="ac630-139">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="18adf-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="18adf-140">Authorization</span></span> | <span data-ttu-id="18adf-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="18adf-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ac630-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac630-140">Authorization</span></span> | <span data-ttu-id="ac630-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ac630-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="18adf-143">响应</span><span class="sxs-lookup"><span data-stu-id="18adf-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ac630-143">响应</span><span class="sxs-lookup"><span data-stu-id="ac630-143">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="18adf-144">CSV</span><span class="sxs-lookup"><span data-stu-id="18adf-144">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="ac630-144">CSV</span><span class="sxs-lookup"><span data-stu-id="ac630-144">CSV</span></span>
 
-<span data-ttu-id="18adf-145">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="18adf-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="18adf-146">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="18adf-146">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="ac630-145">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="ac630-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="ac630-146">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="ac630-146">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="18adf-147">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="18adf-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="ac630-147">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="ac630-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="18adf-148">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="18adf-148">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="ac630-148">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="ac630-148">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="18adf-149">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="18adf-149">Report Refresh Date</span></span>
-- <span data-ttu-id="18adf-150">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="18adf-150">User Principal Name</span></span>
-- <span data-ttu-id="18adf-151">已删除</span><span class="sxs-lookup"><span data-stu-id="18adf-151">Is Deleted</span></span>
-- <span data-ttu-id="18adf-152">删除日期</span><span class="sxs-lookup"><span data-stu-id="18adf-152">Deleted Date</span></span>
-- <span data-ttu-id="18adf-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="18adf-153">Last Activity Date</span></span>
-- <span data-ttu-id="18adf-154">已查看或编辑文件数</span><span class="sxs-lookup"><span data-stu-id="18adf-154">Viewed Or Edited File Count</span></span>
-- <span data-ttu-id="18adf-155">已同步文件数</span><span class="sxs-lookup"><span data-stu-id="18adf-155">Synced File Count</span></span>
-- <span data-ttu-id="18adf-156">已内部共享文件数</span><span class="sxs-lookup"><span data-stu-id="18adf-156">Shared Internally File Count</span></span>
-- <span data-ttu-id="18adf-157">已外部共享文件数</span><span class="sxs-lookup"><span data-stu-id="18adf-157">Shared Externally File Count</span></span>
-- <span data-ttu-id="18adf-158">分配的产品</span><span class="sxs-lookup"><span data-stu-id="18adf-158">Assigned Products</span></span>
-- <span data-ttu-id="18adf-159">报表周期</span><span class="sxs-lookup"><span data-stu-id="18adf-159">Report Period</span></span>
+- <span data-ttu-id="ac630-149">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="ac630-149">Report Refresh Date</span></span>
+- <span data-ttu-id="ac630-150">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="ac630-150">User Principal Name</span></span>
+- <span data-ttu-id="ac630-151">已删除</span><span class="sxs-lookup"><span data-stu-id="ac630-151">Is Deleted</span></span>
+- <span data-ttu-id="ac630-152">删除日期</span><span class="sxs-lookup"><span data-stu-id="ac630-152">Deleted Date</span></span>
+- <span data-ttu-id="ac630-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="ac630-153">Last Activity Date</span></span>
+- <span data-ttu-id="ac630-154">已查看或编辑文件数</span><span class="sxs-lookup"><span data-stu-id="ac630-154">Viewed Or Edited File Count</span></span>
+- <span data-ttu-id="ac630-155">已同步文件数</span><span class="sxs-lookup"><span data-stu-id="ac630-155">Synced File Count</span></span>
+- <span data-ttu-id="ac630-156">已内部共享文件数</span><span class="sxs-lookup"><span data-stu-id="ac630-156">Shared Internally File Count</span></span>
+- <span data-ttu-id="ac630-157">已外部共享文件数</span><span class="sxs-lookup"><span data-stu-id="ac630-157">Shared Externally File Count</span></span>
+- <span data-ttu-id="ac630-158">分配的产品</span><span class="sxs-lookup"><span data-stu-id="ac630-158">Assigned Products</span></span>
+- <span data-ttu-id="ac630-159">报表周期</span><span class="sxs-lookup"><span data-stu-id="ac630-159">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="18adf-160">JSON</span><span class="sxs-lookup"><span data-stu-id="18adf-160">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="ac630-160">JSON</span><span class="sxs-lookup"><span data-stu-id="ac630-160">JSON</span></span>
 
-<span data-ttu-id="18adf-161">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="18adf-161">If successful, this method returns a `200 OK` response code and a **[oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md)** object in the response body.</span></span>
+<span data-ttu-id="ac630-161">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="ac630-161">If successful, this method returns a `200 OK` response code and a **[oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md)** object in the response body.</span></span>
 
-<span data-ttu-id="18adf-162">此请求的默认页面大小为200个项目。</span><span class="sxs-lookup"><span data-stu-id="18adf-162">The default page size for this request is 200 items.</span></span>
+<span data-ttu-id="ac630-162">此请求的默认页面大小为200个项目。</span><span class="sxs-lookup"><span data-stu-id="ac630-162">The default page size for this request is 200 items.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18adf-163">示例</span><span class="sxs-lookup"><span data-stu-id="18adf-163">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ac630-163">示例</span><span class="sxs-lookup"><span data-stu-id="ac630-163">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="18adf-164">CSV</span><span class="sxs-lookup"><span data-stu-id="18adf-164">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="ac630-164">CSV</span><span class="sxs-lookup"><span data-stu-id="ac630-164">CSV</span></span>
 
-<span data-ttu-id="18adf-165">下面是输出 CSV 的示例。</span><span class="sxs-lookup"><span data-stu-id="18adf-165">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="ac630-165">下面是输出 CSV 的示例。</span><span class="sxs-lookup"><span data-stu-id="ac630-165">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="18adf-166">请求</span><span class="sxs-lookup"><span data-stu-id="18adf-166">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac630-166">请求</span><span class="sxs-lookup"><span data-stu-id="ac630-166">Request</span></span>
 
-<span data-ttu-id="18adf-167">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="18adf-167">The following is an example of the request.</span></span>
+<span data-ttu-id="ac630-167">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ac630-167">The following is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ac630-168">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="ac630-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getonedriveactivityuserdetail_csv"
@@ -103,10 +105,24 @@ GET /reports/getOneDriveActivityUserDetail(date={date_value})
 ```http
 GET https://graph.microsoft.com/beta/reports/getOneDriveActivityUserDetail(period='D7')?$format=text/csv
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ac630-169">C#</span><span class="sxs-lookup"><span data-stu-id="ac630-169">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getonedriveactivityuserdetail-csv-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="18adf-168">响应</span><span class="sxs-lookup"><span data-stu-id="18adf-168">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ac630-170">Javascript</span><span class="sxs-lookup"><span data-stu-id="ac630-170">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveactivityuserdetail-csv-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="18adf-169">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="18adf-169">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ac630-171">目标-C</span><span class="sxs-lookup"><span data-stu-id="ac630-171">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveactivityuserdetail-csv-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="ac630-172">响应</span><span class="sxs-lookup"><span data-stu-id="ac630-172">Response</span></span>
+
+<span data-ttu-id="ac630-173">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ac630-173">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -115,20 +131,8 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="18adf-170">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="18adf-170">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="18adf-171">C#</span><span class="sxs-lookup"><span data-stu-id="18adf-171">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail_csv-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="18adf-172">Javascript</span><span class="sxs-lookup"><span data-stu-id="18adf-172">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail_csv-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="18adf-173">目标-C</span><span class="sxs-lookup"><span data-stu-id="18adf-173">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail_csv-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="18adf-174">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="18adf-174">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="ac630-174">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="ac630-174">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -143,14 +147,16 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Viewed Or Edited File Count,Synced File Count,Shared Internally File Count,Shared Externally File Count,Assigned Products,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="18adf-175">JSON</span><span class="sxs-lookup"><span data-stu-id="18adf-175">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="ac630-175">JSON</span><span class="sxs-lookup"><span data-stu-id="ac630-175">JSON</span></span>
 
-<span data-ttu-id="18adf-176">下面是一个返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="18adf-176">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="ac630-176">下面是一个返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="ac630-176">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="18adf-177">请求</span><span class="sxs-lookup"><span data-stu-id="18adf-177">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac630-177">请求</span><span class="sxs-lookup"><span data-stu-id="ac630-177">Request</span></span>
 
-<span data-ttu-id="18adf-178">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="18adf-178">The following is an example of the request.</span></span>
+<span data-ttu-id="ac630-178">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ac630-178">The following is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ac630-179">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="ac630-179">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getonedriveactivityuserdetail_json"
@@ -159,12 +165,26 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
 ```http
 GET https://graph.microsoft.com/beta/reports/getOneDriveActivityUserDetail(period='D7')?$format=application/json
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ac630-180">C#</span><span class="sxs-lookup"><span data-stu-id="ac630-180">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getonedriveactivityuserdetail-json-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="18adf-179">响应</span><span class="sxs-lookup"><span data-stu-id="18adf-179">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ac630-181">Javascript</span><span class="sxs-lookup"><span data-stu-id="ac630-181">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveactivityuserdetail-json-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="18adf-180">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="18adf-180">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ac630-182">目标-C</span><span class="sxs-lookup"><span data-stu-id="ac630-182">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveactivityuserdetail-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="18adf-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="18adf-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+#### <a name="response"></a><span data-ttu-id="ac630-183">响应</span><span class="sxs-lookup"><span data-stu-id="ac630-183">Response</span></span>
+
+<span data-ttu-id="ac630-184">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ac630-184">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="ac630-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ac630-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -198,18 +218,6 @@ Content-Length: 450
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="18adf-183">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="18adf-183">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="18adf-184">C#</span><span class="sxs-lookup"><span data-stu-id="18adf-184">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail_json-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="18adf-185">Javascript</span><span class="sxs-lookup"><span data-stu-id="18adf-185">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail_json-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="18adf-186">目标-C</span><span class="sxs-lookup"><span data-stu-id="18adf-186">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail_json-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -219,10 +227,5 @@ Content-Length: 450
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

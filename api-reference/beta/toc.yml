@@ -8533,16 +8533,42 @@
           items:
             - name: 标识和访问报告
               items:
-                - name: 应用程序登录摘要
-                  href: resources/applicationsigninsummary.md
+                - name: 应用程序登录
                   items:
-                    - name: 获取
-                      href: api/applicationsigninsummary-get.md
-                - name: 应用程序登录摘要详细信息
-                  href: resources/applicationsignindetailedsummary.md
+                    - name: 登录摘要
+                      href: resources/applicationsigninsummary.md
+                      items:
+                        - name: 获取登录摘要
+                          href: api/applicationsigninsummary-get.md
+                    - name: 登录详细信息
+                      href: resources/applicationsignindetailedsummary.md
+                      items:
+                        - name: 获取登录详细信息
+                          href: api/applicationsignindetailedsummary-get.md
+                - name: 注册和使用
                   items:
-                    - name: 获取
-                      href: api/applicationsignindetailedsummary-get.md
+                    - name: 概述
+                      href: resources/authenticationmethods-usage-insights-overview.md
+                    - name: 凭据用户注册计数
+                      href: resources/credentialuserregistrationcount.md
+                      items:
+                        - name: 获取注册计数
+                          href: api/reportroot-getcredentialuserregistrationcount.md
+                    - name: 凭据用户注册详细信息
+                      href: resources/credentialuserregistrationdetails.md
+                      items:
+                        - name: 列出注册详细信息
+                          href: api/reportroot-list-credentialuserregistrationdetails.md
+                    - name: 用户凭据使用详细信息
+                      href: resources/usercredentialusagedetails.md
+                      items:
+                        - name: 列出使用率详细信息
+                          href: api/reportroot-list-usercredentialusagedetails.md
+                    - name: 凭据使用情况摘要
+                      href: resources/credentialusagesummary.md
+                      items:
+                        - name: 获取使用率摘要
+                          href: api/reportroot-getcredentialusagesummary.md
             - name: Office 365 使用情况报告
               items:
                 - name: 概述
@@ -9248,7 +9274,7 @@
               items:
                 - name: List
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-tasks.md
                 - name: 获取
                   href: api/outlooktask-get.md
@@ -9265,9 +9291,9 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: List
+                - name: 列出
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-taskfolders.md
                 - name: 获取
                   href: api/outlooktaskfolder-get.md

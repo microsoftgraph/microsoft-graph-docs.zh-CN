@@ -4,48 +4,50 @@ description: 检索组织中注册的 device 对象的列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 25812f63b85bcc6e9c69dc77433aa7c4c7bb78af
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2fe296d97c066cbcc4b14d5b5cdc53625c0e3d06
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35276298"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449139"
 ---
-# <a name="list-devices"></a><span data-ttu-id="cc7ea-103">列出设备</span><span class="sxs-lookup"><span data-stu-id="cc7ea-103">List devices</span></span>
+# <a name="list-devices"></a><span data-ttu-id="cfe63-103">列出设备</span><span class="sxs-lookup"><span data-stu-id="cfe63-103">List devices</span></span>
 
-<span data-ttu-id="cc7ea-104">检索组织中注册的 device 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-104">Retrieve a list of device objects registered in the organization.</span></span>
+<span data-ttu-id="cfe63-104">检索组织中注册的 device 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="cfe63-104">Retrieve a list of device objects registered in the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cc7ea-105">权限</span><span class="sxs-lookup"><span data-stu-id="cc7ea-105">Permissions</span></span>
-<span data-ttu-id="cc7ea-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cfe63-105">权限</span><span class="sxs-lookup"><span data-stu-id="cfe63-105">Permissions</span></span>
+<span data-ttu-id="cfe63-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cfe63-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="cc7ea-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="cc7ea-108">Permission type</span></span>      | <span data-ttu-id="cc7ea-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cc7ea-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cfe63-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="cfe63-108">Permission type</span></span>      | <span data-ttu-id="cfe63-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cfe63-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc7ea-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cc7ea-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cc7ea-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cc7ea-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="cc7ea-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cc7ea-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc7ea-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-113">Not supported.</span></span>    |
-|<span data-ttu-id="cc7ea-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="cc7ea-114">Application</span></span> | <span data-ttu-id="cc7ea-115">Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cc7ea-115">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="cfe63-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cfe63-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cfe63-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cfe63-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="cfe63-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cfe63-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cfe63-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="cfe63-113">Not supported.</span></span>    |
+|<span data-ttu-id="cfe63-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="cfe63-114">Application</span></span> | <span data-ttu-id="cfe63-115">Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cfe63-115">Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc7ea-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cc7ea-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cfe63-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cfe63-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cc7ea-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="cc7ea-117">Optional query parameters</span></span>
-<span data-ttu-id="cc7ea-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="cc7ea-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="cc7ea-119">Request headers</span></span>
-| <span data-ttu-id="cc7ea-120">名称</span><span class="sxs-lookup"><span data-stu-id="cc7ea-120">Name</span></span>       | <span data-ttu-id="cc7ea-121">类型</span><span class="sxs-lookup"><span data-stu-id="cc7ea-121">Type</span></span> | <span data-ttu-id="cc7ea-122">说明</span><span class="sxs-lookup"><span data-stu-id="cc7ea-122">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="cfe63-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="cfe63-117">Optional query parameters</span></span>
+<span data-ttu-id="cfe63-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="cfe63-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cfe63-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="cfe63-119">Request headers</span></span>
+| <span data-ttu-id="cfe63-120">名称</span><span class="sxs-lookup"><span data-stu-id="cfe63-120">Name</span></span>       | <span data-ttu-id="cfe63-121">类型</span><span class="sxs-lookup"><span data-stu-id="cfe63-121">Type</span></span> | <span data-ttu-id="cfe63-122">说明</span><span class="sxs-lookup"><span data-stu-id="cfe63-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="cc7ea-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc7ea-123">Authorization</span></span>  | <span data-ttu-id="cc7ea-124">string</span><span class="sxs-lookup"><span data-stu-id="cc7ea-124">string</span></span>  | <span data-ttu-id="cc7ea-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cfe63-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfe63-123">Authorization</span></span>  | <span data-ttu-id="cfe63-124">string</span><span class="sxs-lookup"><span data-stu-id="cfe63-124">string</span></span>  | <span data-ttu-id="cfe63-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cfe63-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cc7ea-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="cc7ea-127">Request body</span></span>
-<span data-ttu-id="cc7ea-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cfe63-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="cfe63-127">Request body</span></span>
+<span data-ttu-id="cfe63-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cfe63-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc7ea-129">响应</span><span class="sxs-lookup"><span data-stu-id="cc7ea-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cfe63-129">响应</span><span class="sxs-lookup"><span data-stu-id="cfe63-129">Response</span></span>
 
-<span data-ttu-id="cc7ea-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-130">If successful, this method returns a `200 OK` response code and collection of [device](../resources/device.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cc7ea-131">示例</span><span class="sxs-lookup"><span data-stu-id="cc7ea-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cc7ea-132">请求</span><span class="sxs-lookup"><span data-stu-id="cc7ea-132">Request</span></span>
-<span data-ttu-id="cc7ea-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-133">Here is an example of the request.</span></span>
+<span data-ttu-id="cfe63-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="cfe63-130">If successful, this method returns a `200 OK` response code and collection of [device](../resources/device.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cfe63-131">示例</span><span class="sxs-lookup"><span data-stu-id="cfe63-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cfe63-132">请求</span><span class="sxs-lookup"><span data-stu-id="cfe63-132">Request</span></span>
+<span data-ttu-id="cfe63-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cfe63-133">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="cfe63-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="cfe63-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_devices"
@@ -53,9 +55,23 @@ GET /devices
 ```http
 GET https://graph.microsoft.com/v1.0/devices
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cfe63-135">C#</span><span class="sxs-lookup"><span data-stu-id="cfe63-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="cc7ea-134">响应</span><span class="sxs-lookup"><span data-stu-id="cc7ea-134">Response</span></span>
-<span data-ttu-id="cc7ea-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cc7ea-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cfe63-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="cfe63-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cfe63-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="cfe63-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-devices-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="cfe63-138">响应</span><span class="sxs-lookup"><span data-stu-id="cfe63-138">Response</span></span>
+<span data-ttu-id="cfe63-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cfe63-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,18 +95,6 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cc7ea-138">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="cc7ea-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="cc7ea-139">C#</span><span class="sxs-lookup"><span data-stu-id="cc7ea-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_devices-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cc7ea-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="cc7ea-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_devices-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cc7ea-141">目标-C</span><span class="sxs-lookup"><span data-stu-id="cc7ea-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_devices-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,8 +105,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/device-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/device-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/device-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

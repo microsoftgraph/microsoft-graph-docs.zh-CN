@@ -4,56 +4,58 @@ description: 更新 rangefont 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f5c668fdf3a70ac157817206ccd17f37b69bba8c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9ed61c107c00d975306b71b17238c557dee55c04
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263670"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35459780"
 ---
-# <a name="update-rangefont"></a><span data-ttu-id="ed12a-103">更新 rangefont</span><span class="sxs-lookup"><span data-stu-id="ed12a-103">Update rangefont</span></span>
+# <a name="update-rangefont"></a><span data-ttu-id="dd9cb-103">更新 rangefont</span><span class="sxs-lookup"><span data-stu-id="dd9cb-103">Update rangefont</span></span>
 
-<span data-ttu-id="ed12a-104">更新 rangefont 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ed12a-104">Update the properties of rangefont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ed12a-105">权限</span><span class="sxs-lookup"><span data-stu-id="ed12a-105">Permissions</span></span>
-<span data-ttu-id="ed12a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ed12a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dd9cb-104">更新 rangefont 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-104">Update the properties of rangefont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="dd9cb-105">权限</span><span class="sxs-lookup"><span data-stu-id="dd9cb-105">Permissions</span></span>
+<span data-ttu-id="dd9cb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ed12a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ed12a-108">Permission type</span></span>      | <span data-ttu-id="ed12a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ed12a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dd9cb-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dd9cb-108">Permission type</span></span>      | <span data-ttu-id="dd9cb-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dd9cb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ed12a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ed12a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ed12a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ed12a-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ed12a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ed12a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed12a-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ed12a-113">Not supported.</span></span>    |
-|<span data-ttu-id="ed12a-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ed12a-114">Application</span></span> | <span data-ttu-id="ed12a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ed12a-115">Not supported.</span></span> |
+|<span data-ttu-id="dd9cb-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dd9cb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dd9cb-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dd9cb-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="dd9cb-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dd9cb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dd9cb-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-113">Not supported.</span></span>    |
+|<span data-ttu-id="dd9cb-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="dd9cb-114">Application</span></span> | <span data-ttu-id="dd9cb-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ed12a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ed12a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dd9cb-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dd9cb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format/font
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
-## <a name="request-headers"></a><span data-ttu-id="ed12a-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ed12a-117">Request headers</span></span>
-| <span data-ttu-id="ed12a-118">名称</span><span class="sxs-lookup"><span data-stu-id="ed12a-118">Name</span></span>       | <span data-ttu-id="ed12a-119">说明</span><span class="sxs-lookup"><span data-stu-id="ed12a-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dd9cb-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="dd9cb-117">Request headers</span></span>
+| <span data-ttu-id="dd9cb-118">名称</span><span class="sxs-lookup"><span data-stu-id="dd9cb-118">Name</span></span>       | <span data-ttu-id="dd9cb-119">说明</span><span class="sxs-lookup"><span data-stu-id="dd9cb-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="ed12a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ed12a-120">Authorization</span></span>  | <span data-ttu-id="ed12a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ed12a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ed12a-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ed12a-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ed12a-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="ed12a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="dd9cb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd9cb-120">Authorization</span></span>  | <span data-ttu-id="dd9cb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dd9cb-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="dd9cb-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="dd9cb-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ed12a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ed12a-126">Request body</span></span>
-<span data-ttu-id="ed12a-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="ed12a-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dd9cb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="dd9cb-126">Request body</span></span>
+<span data-ttu-id="dd9cb-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="ed12a-130">属性</span><span class="sxs-lookup"><span data-stu-id="ed12a-130">Property</span></span>     | <span data-ttu-id="ed12a-131">类型</span><span class="sxs-lookup"><span data-stu-id="ed12a-131">Type</span></span>   |<span data-ttu-id="ed12a-132">说明</span><span class="sxs-lookup"><span data-stu-id="ed12a-132">Description</span></span>|
+| <span data-ttu-id="dd9cb-130">属性</span><span class="sxs-lookup"><span data-stu-id="dd9cb-130">Property</span></span>     | <span data-ttu-id="dd9cb-131">类型</span><span class="sxs-lookup"><span data-stu-id="dd9cb-131">Type</span></span>   |<span data-ttu-id="dd9cb-132">说明</span><span class="sxs-lookup"><span data-stu-id="dd9cb-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ed12a-133">bold</span><span class="sxs-lookup"><span data-stu-id="ed12a-133">bold</span></span>|<span data-ttu-id="ed12a-134">boolean</span><span class="sxs-lookup"><span data-stu-id="ed12a-134">boolean</span></span>|<span data-ttu-id="ed12a-135">表示字体的加粗状态。</span><span class="sxs-lookup"><span data-stu-id="ed12a-135">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="ed12a-136">color</span><span class="sxs-lookup"><span data-stu-id="ed12a-136">color</span></span>|<span data-ttu-id="ed12a-137">string</span><span class="sxs-lookup"><span data-stu-id="ed12a-137">string</span></span>|<span data-ttu-id="ed12a-p105">文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。</span><span class="sxs-lookup"><span data-stu-id="ed12a-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="ed12a-141">italic</span><span class="sxs-lookup"><span data-stu-id="ed12a-141">italic</span></span>|<span data-ttu-id="ed12a-142">布尔</span><span class="sxs-lookup"><span data-stu-id="ed12a-142">boolean</span></span>|<span data-ttu-id="ed12a-143">表示字体的斜体状态。</span><span class="sxs-lookup"><span data-stu-id="ed12a-143">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="ed12a-144">name</span><span class="sxs-lookup"><span data-stu-id="ed12a-144">name</span></span>|<span data-ttu-id="ed12a-145">string</span><span class="sxs-lookup"><span data-stu-id="ed12a-145">string</span></span>|<span data-ttu-id="ed12a-146">字体名称（例如"Calibri"）</span><span class="sxs-lookup"><span data-stu-id="ed12a-146">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="ed12a-147">大小</span><span class="sxs-lookup"><span data-stu-id="ed12a-147">size</span></span>|<span data-ttu-id="ed12a-148">double</span><span class="sxs-lookup"><span data-stu-id="ed12a-148">double</span></span>|<span data-ttu-id="ed12a-149">字号</span><span class="sxs-lookup"><span data-stu-id="ed12a-149">Font size.</span></span>|
-|<span data-ttu-id="ed12a-150">underline</span><span class="sxs-lookup"><span data-stu-id="ed12a-150">underline</span></span>|<span data-ttu-id="ed12a-151">string</span><span class="sxs-lookup"><span data-stu-id="ed12a-151">string</span></span>|<span data-ttu-id="ed12a-152">应用于字体的下划线类型。</span><span class="sxs-lookup"><span data-stu-id="ed12a-152">Type of underline applied to the font.</span></span> <span data-ttu-id="ed12a-153">可能的值包括 `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。</span><span class="sxs-lookup"><span data-stu-id="ed12a-153">The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
+|<span data-ttu-id="dd9cb-133">bold</span><span class="sxs-lookup"><span data-stu-id="dd9cb-133">bold</span></span>|<span data-ttu-id="dd9cb-134">boolean</span><span class="sxs-lookup"><span data-stu-id="dd9cb-134">boolean</span></span>|<span data-ttu-id="dd9cb-135">表示字体的加粗状态。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-135">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="dd9cb-136">color</span><span class="sxs-lookup"><span data-stu-id="dd9cb-136">color</span></span>|<span data-ttu-id="dd9cb-137">string</span><span class="sxs-lookup"><span data-stu-id="dd9cb-137">string</span></span>|<span data-ttu-id="dd9cb-p105">文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="dd9cb-141">italic</span><span class="sxs-lookup"><span data-stu-id="dd9cb-141">italic</span></span>|<span data-ttu-id="dd9cb-142">布尔</span><span class="sxs-lookup"><span data-stu-id="dd9cb-142">boolean</span></span>|<span data-ttu-id="dd9cb-143">表示字体的斜体状态。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-143">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="dd9cb-144">name</span><span class="sxs-lookup"><span data-stu-id="dd9cb-144">name</span></span>|<span data-ttu-id="dd9cb-145">string</span><span class="sxs-lookup"><span data-stu-id="dd9cb-145">string</span></span>|<span data-ttu-id="dd9cb-146">字体名称（例如"Calibri"）</span><span class="sxs-lookup"><span data-stu-id="dd9cb-146">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="dd9cb-147">大小</span><span class="sxs-lookup"><span data-stu-id="dd9cb-147">size</span></span>|<span data-ttu-id="dd9cb-148">double</span><span class="sxs-lookup"><span data-stu-id="dd9cb-148">double</span></span>|<span data-ttu-id="dd9cb-149">字号</span><span class="sxs-lookup"><span data-stu-id="dd9cb-149">Font size.</span></span>|
+|<span data-ttu-id="dd9cb-150">underline</span><span class="sxs-lookup"><span data-stu-id="dd9cb-150">underline</span></span>|<span data-ttu-id="dd9cb-151">string</span><span class="sxs-lookup"><span data-stu-id="dd9cb-151">string</span></span>|<span data-ttu-id="dd9cb-152">应用于字体的下划线类型。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-152">Type of underline applied to the font.</span></span> <span data-ttu-id="dd9cb-153">可能的值包括 `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-153">The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ed12a-154">响应</span><span class="sxs-lookup"><span data-stu-id="ed12a-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dd9cb-154">响应</span><span class="sxs-lookup"><span data-stu-id="dd9cb-154">Response</span></span>
 
-<span data-ttu-id="ed12a-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeFont](../resources/rangefont.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ed12a-155">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFont](../resources/rangefont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ed12a-156">示例</span><span class="sxs-lookup"><span data-stu-id="ed12a-156">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ed12a-157">请求</span><span class="sxs-lookup"><span data-stu-id="ed12a-157">Request</span></span>
-<span data-ttu-id="ed12a-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ed12a-158">Here is an example of the request.</span></span>
+<span data-ttu-id="dd9cb-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeFont](../resources/rangefont.md)对象。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-155">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFont](../resources/rangefont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="dd9cb-156">示例</span><span class="sxs-lookup"><span data-stu-id="dd9cb-156">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dd9cb-157">请求</span><span class="sxs-lookup"><span data-stu-id="dd9cb-157">Request</span></span>
+<span data-ttu-id="dd9cb-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-158">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="dd9cb-159">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="dd9cb-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_rangefont"
@@ -72,8 +74,22 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="ed12a-159">响应</span><span class="sxs-lookup"><span data-stu-id="ed12a-159">Response</span></span>
-<span data-ttu-id="ed12a-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ed12a-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dd9cb-160">C#</span><span class="sxs-lookup"><span data-stu-id="dd9cb-160">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-rangefont-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dd9cb-161">Javascript</span><span class="sxs-lookup"><span data-stu-id="dd9cb-161">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangefont-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dd9cb-162">目标-C</span><span class="sxs-lookup"><span data-stu-id="dd9cb-162">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-rangefont-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="dd9cb-163">响应</span><span class="sxs-lookup"><span data-stu-id="dd9cb-163">Response</span></span>
+<span data-ttu-id="dd9cb-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dd9cb-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,18 +109,6 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="ed12a-163">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ed12a-163">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="ed12a-164">C#</span><span class="sxs-lookup"><span data-stu-id="ed12a-164">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_rangefont-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ed12a-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="ed12a-165">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_rangefont-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ed12a-166">目标-C</span><span class="sxs-lookup"><span data-stu-id="ed12a-166">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_rangefont-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -115,8 +119,5 @@ Content-length: 134
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

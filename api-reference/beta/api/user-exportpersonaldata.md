@@ -4,57 +4,59 @@ description: 提交数据策略操作请求, 由公司管理员进行导出以�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58b8d8900a7323b12c17de5bb083e4a181abe68e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: c6580f820171fa587cb1fd811480a80d99213b3f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270383"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35457854"
 ---
-# <a name="user-exportpersonaldata"></a><span data-ttu-id="8247b-103">用户: exportPersonalData</span><span class="sxs-lookup"><span data-stu-id="8247b-103">user: exportPersonalData</span></span>
+# <a name="user-exportpersonaldata"></a><span data-ttu-id="3bf14-103">用户: exportPersonalData</span><span class="sxs-lookup"><span data-stu-id="3bf14-103">user: exportPersonalData</span></span>
 
-<span data-ttu-id="8247b-104">提交数据策略操作请求, 由公司管理员进行导出以导出组织用户的数据。</span><span class="sxs-lookup"><span data-stu-id="8247b-104">Submits a data policy operation request, made by a company administrator to export an organizational user's data.</span></span>
+<span data-ttu-id="3bf14-104">提交数据策略操作请求, 由公司管理员进行导出以导出组织用户的数据。</span><span class="sxs-lookup"><span data-stu-id="3bf14-104">Submits a data policy operation request, made by a company administrator to export an organizational user's data.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8247b-105">权限</span><span class="sxs-lookup"><span data-stu-id="8247b-105">Permissions</span></span>
-<span data-ttu-id="8247b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8247b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3bf14-105">权限</span><span class="sxs-lookup"><span data-stu-id="3bf14-105">Permissions</span></span>
+<span data-ttu-id="3bf14-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3bf14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8247b-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8247b-108">Permission type</span></span>      | <span data-ttu-id="8247b-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8247b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3bf14-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3bf14-108">Permission type</span></span>      | <span data-ttu-id="3bf14-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3bf14-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8247b-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8247b-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="8247b-111">Export. All 和 User. All</span><span class="sxs-lookup"><span data-stu-id="8247b-111">User.Export.All and User.Read.All</span></span>  |
-|<span data-ttu-id="8247b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8247b-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="8247b-113">不适用</span><span class="sxs-lookup"><span data-stu-id="8247b-113">Not applicable</span></span>  |
-|<span data-ttu-id="8247b-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8247b-114">Application</span></span> | <span data-ttu-id="8247b-115">Export. All 和 User. All</span><span class="sxs-lookup"><span data-stu-id="8247b-115">User.Export.All and User.Read.All</span></span> |
+|<span data-ttu-id="3bf14-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3bf14-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3bf14-111">Export. All 和 User. All</span><span class="sxs-lookup"><span data-stu-id="3bf14-111">User.Export.All and User.Read.All</span></span>  |
+|<span data-ttu-id="3bf14-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3bf14-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3bf14-113">不适用</span><span class="sxs-lookup"><span data-stu-id="3bf14-113">Not applicable</span></span>  |
+|<span data-ttu-id="3bf14-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3bf14-114">Application</span></span> | <span data-ttu-id="3bf14-115">Export. All 和 User. All</span><span class="sxs-lookup"><span data-stu-id="3bf14-115">User.Export.All and User.Read.All</span></span> |
 
-><span data-ttu-id="8247b-116">**注意:** 仅当使用委派的权限时, 公司管理员才能执行导出。</span><span class="sxs-lookup"><span data-stu-id="8247b-116">**Note:** Export can only be performed by a company administrator when the delegated permission is used.</span></span>
+><span data-ttu-id="3bf14-116">**注意:** 仅当使用委派的权限时, 公司管理员才能执行导出。</span><span class="sxs-lookup"><span data-stu-id="3bf14-116">**Note:** Export can only be performed by a company administrator when the delegated permission is used.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8247b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8247b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3bf14-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3bf14-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<id>/exportPersonalData
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8247b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8247b-118">Request headers</span></span>
-| <span data-ttu-id="8247b-119">名称</span><span class="sxs-lookup"><span data-stu-id="8247b-119">Name</span></span>       | <span data-ttu-id="8247b-120">说明</span><span class="sxs-lookup"><span data-stu-id="8247b-120">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="3bf14-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="3bf14-118">Request headers</span></span>
+| <span data-ttu-id="3bf14-119">名称</span><span class="sxs-lookup"><span data-stu-id="3bf14-119">Name</span></span>       | <span data-ttu-id="3bf14-120">说明</span><span class="sxs-lookup"><span data-stu-id="3bf14-120">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="8247b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8247b-121">Authorization</span></span>  | <span data-ttu-id="8247b-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="8247b-122">Bearer {token}</span></span>|
+| <span data-ttu-id="3bf14-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3bf14-121">Authorization</span></span>  | <span data-ttu-id="3bf14-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="3bf14-122">Bearer {token}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8247b-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="8247b-123">Request body</span></span>
-<span data-ttu-id="8247b-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="8247b-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3bf14-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="3bf14-123">Request body</span></span>
+<span data-ttu-id="3bf14-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="3bf14-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="8247b-125">参数</span><span class="sxs-lookup"><span data-stu-id="8247b-125">Parameter</span></span>    | <span data-ttu-id="8247b-126">类型</span><span class="sxs-lookup"><span data-stu-id="8247b-126">Type</span></span>   |<span data-ttu-id="8247b-127">说明</span><span class="sxs-lookup"><span data-stu-id="8247b-127">Description</span></span> |
+| <span data-ttu-id="3bf14-125">参数</span><span class="sxs-lookup"><span data-stu-id="3bf14-125">Parameter</span></span>    | <span data-ttu-id="3bf14-126">类型</span><span class="sxs-lookup"><span data-stu-id="3bf14-126">Type</span></span>   |<span data-ttu-id="3bf14-127">说明</span><span class="sxs-lookup"><span data-stu-id="3bf14-127">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8247b-128">storageLocation</span><span class="sxs-lookup"><span data-stu-id="8247b-128">storageLocation</span></span>|<span data-ttu-id="8247b-129">String</span><span class="sxs-lookup"><span data-stu-id="8247b-129">String</span></span>|<span data-ttu-id="8247b-130">这是 Azure 存储帐户的共享访问签名 (SAS) URL, 应导出数据的位置。</span><span class="sxs-lookup"><span data-stu-id="8247b-130">This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.</span></span>|
+|<span data-ttu-id="3bf14-128">storageLocation</span><span class="sxs-lookup"><span data-stu-id="3bf14-128">storageLocation</span></span>|<span data-ttu-id="3bf14-129">String</span><span class="sxs-lookup"><span data-stu-id="3bf14-129">String</span></span>|<span data-ttu-id="3bf14-130">这是 Azure 存储帐户的共享访问签名 (SAS) URL, 应导出数据的位置。</span><span class="sxs-lookup"><span data-stu-id="3bf14-130">This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8247b-131">响应</span><span class="sxs-lookup"><span data-stu-id="8247b-131">Response</span></span>
-<span data-ttu-id="8247b-132">如果成功，此方法返回 `202 Accepted` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="8247b-132">If successful, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="8247b-133">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="8247b-133">It does not return anything in the response body.</span></span> <span data-ttu-id="8247b-134">响应包含以下标头。</span><span class="sxs-lookup"><span data-stu-id="8247b-134">The response contains the following headers.</span></span>
+## <a name="response"></a><span data-ttu-id="3bf14-131">响应</span><span class="sxs-lookup"><span data-stu-id="3bf14-131">Response</span></span>
+<span data-ttu-id="3bf14-132">如果成功，此方法返回 `202 Accepted` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="3bf14-132">If successful, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="3bf14-133">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3bf14-133">It does not return anything in the response body.</span></span> <span data-ttu-id="3bf14-134">响应包含以下标头。</span><span class="sxs-lookup"><span data-stu-id="3bf14-134">The response contains the following headers.</span></span>
 
-| <span data-ttu-id="8247b-135">名称</span><span class="sxs-lookup"><span data-stu-id="8247b-135">Name</span></span>       | <span data-ttu-id="8247b-136">说明</span><span class="sxs-lookup"><span data-stu-id="8247b-136">Description</span></span> |
+| <span data-ttu-id="3bf14-135">名称</span><span class="sxs-lookup"><span data-stu-id="3bf14-135">Name</span></span>       | <span data-ttu-id="3bf14-136">说明</span><span class="sxs-lookup"><span data-stu-id="3bf14-136">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="8247b-137">Location</span><span class="sxs-lookup"><span data-stu-id="8247b-137">Location</span></span>  | <span data-ttu-id="8247b-138">用于检查请求状态的 URL。</span><span class="sxs-lookup"><span data-stu-id="8247b-138">URL to check on the status of the Request.</span></span> |
-| <span data-ttu-id="8247b-139">重试-After</span><span class="sxs-lookup"><span data-stu-id="8247b-139">Retry-After</span></span>  | <span data-ttu-id="8247b-140">以秒为单位的时间段。</span><span class="sxs-lookup"><span data-stu-id="8247b-140">Time period in seconds.</span></span> <span data-ttu-id="8247b-141">在提交请求以检查状态后, 请求生成器应等待这长时间。</span><span class="sxs-lookup"><span data-stu-id="8247b-141">Request maker should wait this long after submitting a request to check for the status.</span></span> |
+| <span data-ttu-id="3bf14-137">Location</span><span class="sxs-lookup"><span data-stu-id="3bf14-137">Location</span></span>  | <span data-ttu-id="3bf14-138">用于检查请求状态的 URL。</span><span class="sxs-lookup"><span data-stu-id="3bf14-138">URL to check on the status of the Request.</span></span> |
+| <span data-ttu-id="3bf14-139">重试-After</span><span class="sxs-lookup"><span data-stu-id="3bf14-139">Retry-After</span></span>  | <span data-ttu-id="3bf14-140">以秒为单位的时间段。</span><span class="sxs-lookup"><span data-stu-id="3bf14-140">Time period in seconds.</span></span> <span data-ttu-id="3bf14-141">在提交请求以检查状态后, 请求生成器应等待这长时间。</span><span class="sxs-lookup"><span data-stu-id="3bf14-141">Request maker should wait this long after submitting a request to check for the status.</span></span> |
 
 
-## <a name="example"></a><span data-ttu-id="8247b-142">示例</span><span class="sxs-lookup"><span data-stu-id="8247b-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8247b-143">请求</span><span class="sxs-lookup"><span data-stu-id="8247b-143">Request</span></span>
+## <a name="example"></a><span data-ttu-id="3bf14-142">示例</span><span class="sxs-lookup"><span data-stu-id="3bf14-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3bf14-143">请求</span><span class="sxs-lookup"><span data-stu-id="3bf14-143">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="3bf14-144">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3bf14-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_exportpersonaldata"
@@ -68,7 +70,21 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8247b-144">响应</span><span class="sxs-lookup"><span data-stu-id="8247b-144">Response</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3bf14-145">C#</span><span class="sxs-lookup"><span data-stu-id="3bf14-145">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3bf14-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="3bf14-146">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-exportpersonaldata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3bf14-147">目标-C</span><span class="sxs-lookup"><span data-stu-id="3bf14-147">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="3bf14-148">响应</span><span class="sxs-lookup"><span data-stu-id="3bf14-148">Response</span></span>
 
 ```http
 {
@@ -76,18 +92,6 @@ Content-length: 48
   Retry-After: 60
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8247b-145">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="8247b-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8247b-146">C#</span><span class="sxs-lookup"><span data-stu-id="8247b-146">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8247b-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="8247b-147">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="8247b-148">目标-C</span><span class="sxs-lookup"><span data-stu-id="8247b-148">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",
@@ -107,8 +111,5 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
