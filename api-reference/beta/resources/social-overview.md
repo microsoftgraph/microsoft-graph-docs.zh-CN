@@ -1,17 +1,17 @@
 ---
-title: 使用 Microsoft Graph API 在应用程序中集成社交智能
+title: 使用 Microsoft Graph API 在应用中集成社交和工作区智能
 description: Microsoft Graph 支持用户社交环境中的社交手势，并提供对有用人员和社交数据的访问权限。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 45482d2e47c97b6c09302ab60ff9c031cef1e92a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0118902f42984a541c750f34db945bc0e7ede5f2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345683"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417673"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用程序中集成社交智能
+# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成社交和工作区智能
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,6 +22,14 @@ Microsoft Graph 支持用户社交环境中的社交手势，并提供对有用�
 你可以使用 [person](../resources/person.md) 资源和 People API 从邮件、联系人和社交网络中聚合某个人员的相关信息。 根据多种通信、协作和业务关系按相关性对结果进行排序。 通过此 API 可以基于自己的条件对人员进行浏览、排序、选择、筛选或搜索。
 
 - [列出人员](../api/user-list-people.md)
+
+## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>帮助用户获得最相关的工作文档
+
+使用见解 API 为用户标识最相关的文档： 
+
+- 列出用户[常用的](../api/insights-list-trending.md)文档
+- 列出用户[使用的](../api/insights-list-used.md)文档
+- 列出[与用户共享或由用户共享的](../api/insights-list-shared.md)文档
 
 ## <a name="manage--mentions"></a>管理 @提及
 
@@ -47,9 +55,3 @@ Include the next sentence when supporting events.
 
 - [删除邮件中的提及](../api/message-delete.md#request-2)
 
-## <a name="access-social-data-around-and-about-a-user"></a>访问有关用户的社交数据
-
-Office Graph 封装了 Office 365 中的不同实体之间的关系。 使用 Office Graph 获取 Office 365 中的各个用户的社交见解。
-
-- 列出用户[常用的项目](../api/insights-list-trending.md)
-- 列出与某个用户[合作](../api/user-list-people.md)的用户
