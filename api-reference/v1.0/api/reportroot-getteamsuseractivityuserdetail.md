@@ -4,28 +4,28 @@ description: 按用户获取有关 Microsoft Teams 用户活动的详细信息�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1d5fce97a59dae80aab8792dd9b477d08a3bdb3d
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: aa3ab6e152bdbd16a6ef3ba917155c9b06b464d9
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273197"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35444405"
 ---
-# <a name="reportroot-getteamsuseractivityuserdetail"></a><span data-ttu-id="1912a-103">reportRoot：getTeamsUserActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="1912a-103">reportRoot: getTeamsUserActivityUserDetail</span></span>
+# <a name="reportroot-getteamsuseractivityuserdetail"></a><span data-ttu-id="e48a1-103">reportRoot：getTeamsUserActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="e48a1-103">reportRoot: getTeamsUserActivityUserDetail</span></span>
 
-<span data-ttu-id="1912a-104">按用户获取有关 Microsoft Teams 用户活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="1912a-104">Get details about Microsoft Teams user activity by user.</span></span>
+<span data-ttu-id="e48a1-104">按用户获取有关 Microsoft Teams 用户活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="e48a1-104">Get details about Microsoft Teams user activity by user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1912a-105">权限</span><span class="sxs-lookup"><span data-stu-id="1912a-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e48a1-105">权限</span><span class="sxs-lookup"><span data-stu-id="e48a1-105">Permissions</span></span>
 
-<span data-ttu-id="1912a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1912a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e48a1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e48a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1912a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="1912a-108">Permission type</span></span>                        | <span data-ttu-id="1912a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1912a-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e48a1-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e48a1-108">Permission type</span></span>                        | <span data-ttu-id="e48a1-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e48a1-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="1912a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1912a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="1912a-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="1912a-111">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="1912a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1912a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1912a-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="1912a-113">Not supported.</span></span>                           |
-| <span data-ttu-id="1912a-114">应用</span><span class="sxs-lookup"><span data-stu-id="1912a-114">Application</span></span>                            | <span data-ttu-id="1912a-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="1912a-115">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="e48a1-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e48a1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e48a1-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="e48a1-111">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="e48a1-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e48a1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e48a1-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e48a1-113">Not supported.</span></span>                           |
+| <span data-ttu-id="e48a1-114">应用</span><span class="sxs-lookup"><span data-stu-id="e48a1-114">Application</span></span>                            | <span data-ttu-id="e48a1-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="e48a1-115">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="1912a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1912a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e48a1-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e48a1-116">HTTP request</span></span>
 
 <!-- { "blockType": "samples" } -->
 
@@ -34,50 +34,52 @@ GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
 GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="1912a-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="1912a-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="e48a1-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="e48a1-117">Function parameters</span></span>
 
-<span data-ttu-id="1912a-118">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="1912a-118">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="e48a1-118">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="e48a1-118">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="1912a-119">参数</span><span class="sxs-lookup"><span data-stu-id="1912a-119">Parameter</span></span> | <span data-ttu-id="1912a-120">类型</span><span class="sxs-lookup"><span data-stu-id="1912a-120">Type</span></span>   | <span data-ttu-id="1912a-121">说明</span><span class="sxs-lookup"><span data-stu-id="1912a-121">Description</span></span>                              |
+| <span data-ttu-id="e48a1-119">参数</span><span class="sxs-lookup"><span data-stu-id="e48a1-119">Parameter</span></span> | <span data-ttu-id="e48a1-120">类型</span><span class="sxs-lookup"><span data-stu-id="e48a1-120">Type</span></span>   | <span data-ttu-id="e48a1-121">说明</span><span class="sxs-lookup"><span data-stu-id="e48a1-121">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="1912a-122">period</span><span class="sxs-lookup"><span data-stu-id="1912a-122">period</span></span>    | <span data-ttu-id="1912a-123">string</span><span class="sxs-lookup"><span data-stu-id="1912a-123">string</span></span> | <span data-ttu-id="1912a-124">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="1912a-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="1912a-125">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="1912a-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="1912a-126">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="1912a-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="1912a-127">date</span><span class="sxs-lookup"><span data-stu-id="1912a-127">date</span></span>      | <span data-ttu-id="1912a-128">Date</span><span class="sxs-lookup"><span data-stu-id="1912a-128">Date</span></span>   | <span data-ttu-id="1912a-129">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="1912a-129">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="1912a-130">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="1912a-130">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="1912a-131">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="1912a-131">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="e48a1-122">period</span><span class="sxs-lookup"><span data-stu-id="e48a1-122">period</span></span>    | <span data-ttu-id="e48a1-123">string</span><span class="sxs-lookup"><span data-stu-id="e48a1-123">string</span></span> | <span data-ttu-id="e48a1-124">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="e48a1-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="e48a1-125">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="e48a1-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="e48a1-126">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="e48a1-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="e48a1-127">date</span><span class="sxs-lookup"><span data-stu-id="e48a1-127">date</span></span>      | <span data-ttu-id="e48a1-128">Date</span><span class="sxs-lookup"><span data-stu-id="e48a1-128">Date</span></span>   | <span data-ttu-id="e48a1-129">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="e48a1-129">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="e48a1-130">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="e48a1-130">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="e48a1-131">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="e48a1-131">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="1912a-132">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="1912a-132">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="e48a1-132">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="e48a1-132">**Note:** You need to set either period or date in the URL.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1912a-133">请求头</span><span class="sxs-lookup"><span data-stu-id="1912a-133">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e48a1-133">请求头</span><span class="sxs-lookup"><span data-stu-id="e48a1-133">Request headers</span></span>
 
-| <span data-ttu-id="1912a-134">名称</span><span class="sxs-lookup"><span data-stu-id="1912a-134">Name</span></span>          | <span data-ttu-id="1912a-135">说明</span><span class="sxs-lookup"><span data-stu-id="1912a-135">Description</span></span>               |
+| <span data-ttu-id="e48a1-134">名称</span><span class="sxs-lookup"><span data-stu-id="e48a1-134">Name</span></span>          | <span data-ttu-id="e48a1-135">说明</span><span class="sxs-lookup"><span data-stu-id="e48a1-135">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="1912a-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="1912a-136">Authorization</span></span> | <span data-ttu-id="1912a-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1912a-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e48a1-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="e48a1-136">Authorization</span></span> | <span data-ttu-id="e48a1-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e48a1-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1912a-139">响应</span><span class="sxs-lookup"><span data-stu-id="1912a-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e48a1-139">响应</span><span class="sxs-lookup"><span data-stu-id="e48a1-139">Response</span></span>
 
-<span data-ttu-id="1912a-140">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="1912a-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="1912a-141">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="1912a-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="e48a1-140">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="e48a1-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="e48a1-141">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="e48a1-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="1912a-142">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。</span><span class="sxs-lookup"><span data-stu-id="1912a-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="e48a1-142">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。</span><span class="sxs-lookup"><span data-stu-id="e48a1-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="1912a-143">CSV 文件包含下面的列标题：</span><span class="sxs-lookup"><span data-stu-id="1912a-143">The CSV file has the following headers for columns:</span></span>
+<span data-ttu-id="e48a1-143">CSV 文件包含下面的列标题：</span><span class="sxs-lookup"><span data-stu-id="e48a1-143">The CSV file has the following headers for columns:</span></span>
 
-- <span data-ttu-id="1912a-144">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="1912a-144">Report Refresh Date</span></span>
-- <span data-ttu-id="1912a-145">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="1912a-145">User Principal Name</span></span>
-- <span data-ttu-id="1912a-146">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="1912a-146">Last Activity Date</span></span>
-- <span data-ttu-id="1912a-147">已删除</span><span class="sxs-lookup"><span data-stu-id="1912a-147">Is Deleted</span></span>
-- <span data-ttu-id="1912a-148">删除日期</span><span class="sxs-lookup"><span data-stu-id="1912a-148">Deleted Date</span></span>
-- <span data-ttu-id="1912a-149">分配的产品</span><span class="sxs-lookup"><span data-stu-id="1912a-149">Assigned Products</span></span>
-- <span data-ttu-id="1912a-150">团队聊天消息计数</span><span class="sxs-lookup"><span data-stu-id="1912a-150">Team Chat Message Count</span></span>
-- <span data-ttu-id="1912a-151">专用聊天消息计数</span><span class="sxs-lookup"><span data-stu-id="1912a-151">Private Chat Message Count</span></span>
-- <span data-ttu-id="1912a-152">呼叫计数</span><span class="sxs-lookup"><span data-stu-id="1912a-152">Call Count</span></span>
-- <span data-ttu-id="1912a-153">会议计数</span><span class="sxs-lookup"><span data-stu-id="1912a-153">Meeting Count</span></span>
-- <span data-ttu-id="1912a-154">包含其他操作</span><span class="sxs-lookup"><span data-stu-id="1912a-154">Has Other Action</span></span>
-- <span data-ttu-id="1912a-155">报表周期</span><span class="sxs-lookup"><span data-stu-id="1912a-155">Report Period</span></span>
+- <span data-ttu-id="e48a1-144">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="e48a1-144">Report Refresh Date</span></span>
+- <span data-ttu-id="e48a1-145">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="e48a1-145">User Principal Name</span></span>
+- <span data-ttu-id="e48a1-146">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="e48a1-146">Last Activity Date</span></span>
+- <span data-ttu-id="e48a1-147">已删除</span><span class="sxs-lookup"><span data-stu-id="e48a1-147">Is Deleted</span></span>
+- <span data-ttu-id="e48a1-148">删除日期</span><span class="sxs-lookup"><span data-stu-id="e48a1-148">Deleted Date</span></span>
+- <span data-ttu-id="e48a1-149">分配的产品</span><span class="sxs-lookup"><span data-stu-id="e48a1-149">Assigned Products</span></span>
+- <span data-ttu-id="e48a1-150">团队聊天消息计数</span><span class="sxs-lookup"><span data-stu-id="e48a1-150">Team Chat Message Count</span></span>
+- <span data-ttu-id="e48a1-151">专用聊天消息计数</span><span class="sxs-lookup"><span data-stu-id="e48a1-151">Private Chat Message Count</span></span>
+- <span data-ttu-id="e48a1-152">呼叫计数</span><span class="sxs-lookup"><span data-stu-id="e48a1-152">Call Count</span></span>
+- <span data-ttu-id="e48a1-153">会议计数</span><span class="sxs-lookup"><span data-stu-id="e48a1-153">Meeting Count</span></span>
+- <span data-ttu-id="e48a1-154">包含其他操作</span><span class="sxs-lookup"><span data-stu-id="e48a1-154">Has Other Action</span></span>
+- <span data-ttu-id="e48a1-155">报表周期</span><span class="sxs-lookup"><span data-stu-id="e48a1-155">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="1912a-156">示例</span><span class="sxs-lookup"><span data-stu-id="1912a-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e48a1-156">示例</span><span class="sxs-lookup"><span data-stu-id="e48a1-156">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1912a-157">请求</span><span class="sxs-lookup"><span data-stu-id="1912a-157">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e48a1-157">请求</span><span class="sxs-lookup"><span data-stu-id="e48a1-157">Request</span></span>
 
-<span data-ttu-id="1912a-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1912a-158">The following is an example of the request.</span></span>
+<span data-ttu-id="e48a1-158">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e48a1-158">The following is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="e48a1-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="e48a1-159">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getteamsuseractivityuserdetail"
@@ -86,10 +88,24 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```http
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D7')
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e48a1-160">C#</span><span class="sxs-lookup"><span data-stu-id="e48a1-160">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getteamsuseractivityuserdetail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="1912a-159">响应</span><span class="sxs-lookup"><span data-stu-id="1912a-159">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e48a1-161">Javascript</span><span class="sxs-lookup"><span data-stu-id="e48a1-161">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getteamsuseractivityuserdetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="1912a-160">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1912a-160">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e48a1-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e48a1-162">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getteamsuseractivityuserdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="e48a1-163">响应</span><span class="sxs-lookup"><span data-stu-id="e48a1-163">Response</span></span>
+
+<span data-ttu-id="e48a1-164">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e48a1-164">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -102,20 +118,8 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="1912a-161">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="1912a-161">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="1912a-162">C#</span><span class="sxs-lookup"><span data-stu-id="1912a-162">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getteamsuseractivityuserdetail-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1912a-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="1912a-163">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getteamsuseractivityuserdetail-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1912a-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1912a-164">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getteamsuseractivityuserdetail-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="1912a-165">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="1912a-165">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="e48a1-165">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="e48a1-165">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -134,8 +138,5 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getteamsuseractivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/reportroot-getteamsuseractivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getteamsuseractivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
