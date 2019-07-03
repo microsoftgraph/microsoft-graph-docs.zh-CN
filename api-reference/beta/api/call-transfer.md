@@ -4,60 +4,62 @@ description: 转移活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 220a79b7ae9e14119bdc9f868577a6c4495185a3
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: e416eccfe954f4c6a454fa62222180aa4407a87c
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262221"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438592"
 ---
-# <a name="call-transfer"></a><span data-ttu-id="796d3-103">呼叫: 转移</span><span class="sxs-lookup"><span data-stu-id="796d3-103">call: transfer</span></span>
+# <a name="call-transfer"></a><span data-ttu-id="b35ae-103">呼叫: 转移</span><span class="sxs-lookup"><span data-stu-id="b35ae-103">call: transfer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="796d3-104">转移活动呼叫。</span><span class="sxs-lookup"><span data-stu-id="796d3-104">Transfer an active call.</span></span>
+<span data-ttu-id="b35ae-104">转移活动呼叫。</span><span class="sxs-lookup"><span data-stu-id="b35ae-104">Transfer an active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="796d3-105">权限</span><span class="sxs-lookup"><span data-stu-id="796d3-105">Permissions</span></span>
-<span data-ttu-id="796d3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="796d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b35ae-105">权限</span><span class="sxs-lookup"><span data-stu-id="b35ae-105">Permissions</span></span>
+<span data-ttu-id="b35ae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b35ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="796d3-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="796d3-108">Permission type</span></span> | <span data-ttu-id="796d3-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="796d3-109">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="b35ae-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b35ae-108">Permission type</span></span> | <span data-ttu-id="b35ae-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b35ae-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="796d3-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="796d3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="796d3-111">不支持</span><span class="sxs-lookup"><span data-stu-id="796d3-111">Not Supported</span></span>                |
-| <span data-ttu-id="796d3-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="796d3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="796d3-113">不支持</span><span class="sxs-lookup"><span data-stu-id="796d3-113">Not Supported</span></span>                |
-| <span data-ttu-id="796d3-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="796d3-114">Application</span></span>     | <span data-ttu-id="796d3-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="796d3-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="b35ae-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b35ae-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b35ae-111">不支持</span><span class="sxs-lookup"><span data-stu-id="b35ae-111">Not Supported</span></span>                |
+| <span data-ttu-id="b35ae-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b35ae-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b35ae-113">不支持</span><span class="sxs-lookup"><span data-stu-id="b35ae-113">Not Supported</span></span>                |
+| <span data-ttu-id="b35ae-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b35ae-114">Application</span></span>     | <span data-ttu-id="b35ae-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="b35ae-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="796d3-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="796d3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b35ae-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b35ae-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
 POST /applications/{id}/calls/{id}/transfer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="796d3-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="796d3-117">Request headers</span></span>
-| <span data-ttu-id="796d3-118">名称</span><span class="sxs-lookup"><span data-stu-id="796d3-118">Name</span></span>          | <span data-ttu-id="796d3-119">说明</span><span class="sxs-lookup"><span data-stu-id="796d3-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="b35ae-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="b35ae-117">Request headers</span></span>
+| <span data-ttu-id="b35ae-118">名称</span><span class="sxs-lookup"><span data-stu-id="b35ae-118">Name</span></span>          | <span data-ttu-id="b35ae-119">说明</span><span class="sxs-lookup"><span data-stu-id="b35ae-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="796d3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="796d3-120">Authorization</span></span> | <span data-ttu-id="796d3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="796d3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b35ae-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b35ae-120">Authorization</span></span> | <span data-ttu-id="b35ae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b35ae-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="796d3-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="796d3-123">Request body</span></span>
-<span data-ttu-id="796d3-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="796d3-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b35ae-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="b35ae-123">Request body</span></span>
+<span data-ttu-id="b35ae-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="b35ae-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="796d3-125">参数</span><span class="sxs-lookup"><span data-stu-id="796d3-125">Parameter</span></span>      | <span data-ttu-id="796d3-126">类型</span><span class="sxs-lookup"><span data-stu-id="796d3-126">Type</span></span>    |<span data-ttu-id="796d3-127">说明</span><span class="sxs-lookup"><span data-stu-id="796d3-127">Description</span></span>|
+| <span data-ttu-id="b35ae-125">参数</span><span class="sxs-lookup"><span data-stu-id="b35ae-125">Parameter</span></span>      | <span data-ttu-id="b35ae-126">类型</span><span class="sxs-lookup"><span data-stu-id="b35ae-126">Type</span></span>    |<span data-ttu-id="b35ae-127">说明</span><span class="sxs-lookup"><span data-stu-id="b35ae-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="796d3-128">transferTarget</span><span class="sxs-lookup"><span data-stu-id="796d3-128">transferTarget</span></span>|[<span data-ttu-id="796d3-129">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="796d3-129">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="796d3-130">作为转移目标的参与者。</span><span class="sxs-lookup"><span data-stu-id="796d3-130">The participant which is the target of the transfer.</span></span>|
-|<span data-ttu-id="796d3-131">适用</span><span class="sxs-lookup"><span data-stu-id="796d3-131">clientContext</span></span>|<span data-ttu-id="796d3-132">String</span><span class="sxs-lookup"><span data-stu-id="796d3-132">String</span></span>|<span data-ttu-id="796d3-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="796d3-133">The client context.</span></span>|
+|<span data-ttu-id="b35ae-128">transferTarget</span><span class="sxs-lookup"><span data-stu-id="b35ae-128">transferTarget</span></span>|[<span data-ttu-id="b35ae-129">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="b35ae-129">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="b35ae-130">作为转移目标的参与者。</span><span class="sxs-lookup"><span data-stu-id="b35ae-130">The participant which is the target of the transfer.</span></span>|
+|<span data-ttu-id="b35ae-131">适用</span><span class="sxs-lookup"><span data-stu-id="b35ae-131">clientContext</span></span>|<span data-ttu-id="b35ae-132">String</span><span class="sxs-lookup"><span data-stu-id="b35ae-132">String</span></span>|<span data-ttu-id="b35ae-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="b35ae-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="796d3-134">响应</span><span class="sxs-lookup"><span data-stu-id="796d3-134">Response</span></span>
-<span data-ttu-id="796d3-135">返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="796d3-135">Returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="b35ae-134">响应</span><span class="sxs-lookup"><span data-stu-id="b35ae-134">Response</span></span>
+<span data-ttu-id="b35ae-135">返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="b35ae-135">Returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="796d3-136">示例</span><span class="sxs-lookup"><span data-stu-id="796d3-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b35ae-136">示例</span><span class="sxs-lookup"><span data-stu-id="b35ae-136">Examples</span></span>
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="796d3-137">直接转接呼叫, 无用户参与</span><span class="sxs-lookup"><span data-stu-id="796d3-137">Transfer call directly, with no user involvement</span></span>
+### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="b35ae-137">直接转接呼叫, 无用户参与</span><span class="sxs-lookup"><span data-stu-id="b35ae-137">Transfer call directly, with no user involvement</span></span>
 
-<span data-ttu-id="796d3-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="796d3-138">The following example shows how to call this API.</span></span>
+<span data-ttu-id="b35ae-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="b35ae-138">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="796d3-139">请求</span><span class="sxs-lookup"><span data-stu-id="796d3-139">Request</span></span>
-<span data-ttu-id="796d3-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="796d3-140">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b35ae-139">请求</span><span class="sxs-lookup"><span data-stu-id="b35ae-139">Request</span></span>
+<span data-ttu-id="b35ae-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="b35ae-140">The following example shows the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b35ae-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b35ae-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-transfer"
@@ -84,10 +86,24 @@ Content-Length: 430
   "clientContext": "clientContext-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b35ae-142">C#</span><span class="sxs-lookup"><span data-stu-id="b35ae-142">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="796d3-141">响应</span><span class="sxs-lookup"><span data-stu-id="796d3-141">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b35ae-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="b35ae-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="796d3-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="796d3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b35ae-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="b35ae-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="b35ae-145">响应</span><span class="sxs-lookup"><span data-stu-id="b35ae-145">Response</span></span>
+
+> <span data-ttu-id="b35ae-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b35ae-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,20 +113,8 @@ Content-Length: 430
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="796d3-144">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="796d3-144">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="796d3-145">C#</span><span class="sxs-lookup"><span data-stu-id="796d3-145">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/call-transfer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="796d3-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="796d3-146">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/call-transfer-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="796d3-147">目标-C</span><span class="sxs-lookup"><span data-stu-id="796d3-147">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/call-transfer-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-##### <a name="notification---transferring"></a><span data-ttu-id="796d3-148">通知-转移</span><span class="sxs-lookup"><span data-stu-id="796d3-148">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="b35ae-148">通知-转移</span><span class="sxs-lookup"><span data-stu-id="b35ae-148">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -144,7 +148,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="796d3-149">通知-传输已接受</span><span class="sxs-lookup"><span data-stu-id="796d3-149">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="b35ae-149">通知-传输已接受</span><span class="sxs-lookup"><span data-stu-id="b35ae-149">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -178,7 +182,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="796d3-150">通知终止</span><span class="sxs-lookup"><span data-stu-id="796d3-150">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="b35ae-150">通知终止</span><span class="sxs-lookup"><span data-stu-id="b35ae-150">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -208,9 +212,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a><span data-ttu-id="796d3-151">咨询转移</span><span class="sxs-lookup"><span data-stu-id="796d3-151">Consultative transfer</span></span>
+### <a name="consultative-transfer"></a><span data-ttu-id="b35ae-151">咨询转移</span><span class="sxs-lookup"><span data-stu-id="b35ae-151">Consultative transfer</span></span>
 
-##### <a name="request"></a><span data-ttu-id="796d3-152">请求</span><span class="sxs-lookup"><span data-stu-id="796d3-152">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b35ae-152">请求</span><span class="sxs-lookup"><span data-stu-id="b35ae-152">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
@@ -240,15 +244,15 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="796d3-153">响应</span><span class="sxs-lookup"><span data-stu-id="796d3-153">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b35ae-153">响应</span><span class="sxs-lookup"><span data-stu-id="b35ae-153">Response</span></span>
 
-> <span data-ttu-id="796d3-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="796d3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b35ae-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b35ae-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="796d3-156">通知-转移</span><span class="sxs-lookup"><span data-stu-id="796d3-156">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="b35ae-156">通知-转移</span><span class="sxs-lookup"><span data-stu-id="b35ae-156">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -282,7 +286,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="796d3-157">通知-传输已接受</span><span class="sxs-lookup"><span data-stu-id="796d3-157">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="b35ae-157">通知-传输已接受</span><span class="sxs-lookup"><span data-stu-id="b35ae-157">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -316,7 +320,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="796d3-158">通知终止</span><span class="sxs-lookup"><span data-stu-id="796d3-158">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="b35ae-158">通知终止</span><span class="sxs-lookup"><span data-stu-id="b35ae-158">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -356,9 +360,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
