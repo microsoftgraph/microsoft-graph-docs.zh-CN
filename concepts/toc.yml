@@ -10,6 +10,12 @@ items:
         href: overview.md
       - name: Microsoft Graph 中的服务
         href: overview-major-services.md
+      - name: 最近更新
+        items:
+          - name: 新增功能亮点
+            href: whats-new-overview.md
+          - name: API 更改日志
+            href: changelog.md
       - name: 可访问的用户
         items:
           - name: 概述
@@ -222,7 +228,7 @@ items:
       - name: 网站和列表
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
-      - name: 社交智能
+      - name: 社交和工作场所智能
         items:
           - name: 概述
             href: social-intel-concept-overview.md
@@ -408,7 +414,7 @@ items:
             href: best-practices-concept.md
           - name: 已知问题
             href: known-issues.md
-          - name: 更改日志
+          - name: API 更改日志
             href: changelog.md
           - name: 错误
             href: errors.md
