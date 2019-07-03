@@ -1,13 +1,25 @@
 ---
 title: 枚举值
 description: Microsoft Graph 枚举值
-ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: dbaa9acc7636bdf629df347efd0f59398083eef3
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348696"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435960"
 ---
+### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
 |成员|值|说明|
