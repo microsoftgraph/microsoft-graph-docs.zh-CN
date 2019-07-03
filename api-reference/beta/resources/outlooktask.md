@@ -4,12 +4,12 @@ description: '可用于跟踪工作项目的 Outlook 项目。 '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 231cb227c33e9f58e0dbe87dbf832b86bf2f017f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34109536"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35459599"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 
@@ -55,7 +55,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedTo|String|已为其分配任务的人员姓名。|
+|assignedTo|String|Outlook 中已为其分配任务的人员姓名。 只读。|
 |正文|[itemBody](itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|任务的版本。|
