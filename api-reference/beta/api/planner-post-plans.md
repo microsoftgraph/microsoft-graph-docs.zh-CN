@@ -4,59 +4,61 @@ description: 使用此 API 新建 **plannerPlan**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f92a497879b0bbcf3aeeb0fa23813200b3ac17d9
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b150021acaf209b3f950db78ab754a079109899a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264466"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445868"
 ---
-# <a name="create-plannerplan"></a><span data-ttu-id="c2090-103">创建 plannerPlan</span><span class="sxs-lookup"><span data-stu-id="c2090-103">Create plannerPlan</span></span>
+# <a name="create-plannerplan"></a><span data-ttu-id="d84ba-103">创建 plannerPlan</span><span class="sxs-lookup"><span data-stu-id="d84ba-103">Create plannerPlan</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c2090-104">使用此 API 新建 **plannerPlan**。</span><span class="sxs-lookup"><span data-stu-id="c2090-104">Use this API to create a new **plannerPlan**.</span></span>
+<span data-ttu-id="d84ba-104">使用此 API 新建 **plannerPlan**。</span><span class="sxs-lookup"><span data-stu-id="d84ba-104">Use this API to create a new **plannerPlan**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c2090-105">权限</span><span class="sxs-lookup"><span data-stu-id="c2090-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d84ba-105">权限</span><span class="sxs-lookup"><span data-stu-id="d84ba-105">Permissions</span></span>
 
-<span data-ttu-id="c2090-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c2090-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d84ba-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d84ba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c2090-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c2090-108">Permission type</span></span>                        | <span data-ttu-id="c2090-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c2090-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d84ba-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d84ba-108">Permission type</span></span>                        | <span data-ttu-id="d84ba-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d84ba-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="c2090-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c2090-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c2090-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2090-111">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="c2090-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c2090-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2090-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="c2090-113">Not supported.</span></span>                              |
-| <span data-ttu-id="c2090-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c2090-114">Application</span></span>                            | <span data-ttu-id="c2090-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c2090-115">Not supported.</span></span>                              |
+| <span data-ttu-id="d84ba-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d84ba-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d84ba-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d84ba-111">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="d84ba-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d84ba-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d84ba-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d84ba-113">Not supported.</span></span>                              |
+| <span data-ttu-id="d84ba-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d84ba-114">Application</span></span>                            | <span data-ttu-id="d84ba-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d84ba-115">Not supported.</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="c2090-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c2090-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d84ba-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d84ba-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /planner/plans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c2090-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="c2090-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d84ba-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d84ba-117">Request headers</span></span>
 
-| <span data-ttu-id="c2090-118">名称</span><span class="sxs-lookup"><span data-stu-id="c2090-118">Name</span></span>          | <span data-ttu-id="c2090-119">说明</span><span class="sxs-lookup"><span data-stu-id="c2090-119">Description</span></span>               |
+| <span data-ttu-id="d84ba-118">名称</span><span class="sxs-lookup"><span data-stu-id="d84ba-118">Name</span></span>          | <span data-ttu-id="d84ba-119">说明</span><span class="sxs-lookup"><span data-stu-id="d84ba-119">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="c2090-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2090-120">Authorization</span></span> | <span data-ttu-id="c2090-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c2090-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d84ba-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d84ba-120">Authorization</span></span> | <span data-ttu-id="d84ba-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d84ba-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c2090-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="c2090-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d84ba-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="d84ba-123">Request body</span></span>
 
-<span data-ttu-id="c2090-p103">在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。**plannerPlan** 所有者属性必须设为[组](../resources/group.md)对象的 id。</span><span class="sxs-lookup"><span data-stu-id="c2090-p103">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object. The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.</span></span>
+<span data-ttu-id="d84ba-p103">在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。**plannerPlan** 所有者属性必须设为[组](../resources/group.md)对象的 id。</span><span class="sxs-lookup"><span data-stu-id="d84ba-p103">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object. The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.</span></span>
 
-><span data-ttu-id="c2090-126">**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。</span><span class="sxs-lookup"><span data-stu-id="c2090-126">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="c2090-127">使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。</span><span class="sxs-lookup"><span data-stu-id="c2090-127">When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="c2090-128">创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。</span><span class="sxs-lookup"><span data-stu-id="c2090-128">After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).</span></span>
+><span data-ttu-id="d84ba-126">**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。</span><span class="sxs-lookup"><span data-stu-id="d84ba-126">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="d84ba-127">使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。</span><span class="sxs-lookup"><span data-stu-id="d84ba-127">When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="d84ba-128">创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。</span><span class="sxs-lookup"><span data-stu-id="d84ba-128">After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2090-129">响应</span><span class="sxs-lookup"><span data-stu-id="c2090-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d84ba-129">响应</span><span class="sxs-lookup"><span data-stu-id="d84ba-129">Response</span></span>
 
-<span data-ttu-id="c2090-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerPlan](../resources/plannerplan.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c2090-130">If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
+<span data-ttu-id="d84ba-130">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerPlan](../resources/plannerplan.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d84ba-130">If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
 
-<span data-ttu-id="c2090-p105">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="c2090-p105">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="d84ba-p105">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="d84ba-p105">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2090-134">示例</span><span class="sxs-lookup"><span data-stu-id="c2090-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d84ba-134">示例</span><span class="sxs-lookup"><span data-stu-id="d84ba-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c2090-135">请求</span><span class="sxs-lookup"><span data-stu-id="c2090-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d84ba-135">请求</span><span class="sxs-lookup"><span data-stu-id="d84ba-135">Request</span></span>
 
-<span data-ttu-id="c2090-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c2090-136">Here is an example of the request.</span></span>
+<span data-ttu-id="d84ba-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d84ba-136">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d84ba-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d84ba-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
@@ -71,12 +73,26 @@ Content-length: 381
   "title": "title-value"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d84ba-138">C#</span><span class="sxs-lookup"><span data-stu-id="d84ba-138">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerplan-from-planner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c2090-137">在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c2090-137">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d84ba-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="d84ba-139">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-plannerplan-from-planner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="c2090-138">响应</span><span class="sxs-lookup"><span data-stu-id="c2090-138">Response</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d84ba-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="d84ba-140">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-plannerplan-from-planner-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c2090-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c2090-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+---
+
+
+<span data-ttu-id="d84ba-141">在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d84ba-141">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.</span></span>
+
+### <a name="response"></a><span data-ttu-id="d84ba-142">响应</span><span class="sxs-lookup"><span data-stu-id="d84ba-142">Response</span></span>
+
+<span data-ttu-id="d84ba-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d84ba-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,18 +118,6 @@ Content-length: 357
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c2090-142">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="c2090-142">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c2090-143">C#</span><span class="sxs-lookup"><span data-stu-id="c2090-143">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c2090-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="c2090-144">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c2090-145">目标-C</span><span class="sxs-lookup"><span data-stu-id="c2090-145">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_plannerplan_from_planner-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -125,9 +129,6 @@ Content-length: 357
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
