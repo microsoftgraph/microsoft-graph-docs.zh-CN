@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 37e2bc8a383f5078c413ccc37f369442f55b597c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: ab9f23961733a37082f48c111974c2116462aeee
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272861"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445420"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -75,6 +75,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [permission](../resources/permission.md) 集合对象。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -93,6 +95,20 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -123,20 +139,8 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/send-sharing-invite-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 * 具有 `personal` **driveType**（OneDrive 个人版）的[驱动器](../resources/drive.md)无法创建或修改根 DriveItem 上的权限。
 * 如需可用角色的列表，请参阅[角色枚举](../resources/permission.md#roles-enumeration)。
@@ -157,8 +161,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

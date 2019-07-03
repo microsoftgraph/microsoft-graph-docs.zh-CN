@@ -4,12 +4,12 @@ description: 获取用户邮箱中已添加、删除或移除的邮件文件夹�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e8fb7e5f0c26945b64e485ec6c217ca6151361ca
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: c06c080c7198ce9465a51199cbc23265bf5d2573
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417750"
+ms.locfileid: "35448795"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -68,6 +68,8 @@ GET /users/<id>/mailFolders/delta
 
 你可以找到一个类似的示例，演示如何使用状态令牌跟踪邮件文件夹中的邮件更改：[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪邮件文件夹和跟踪文件夹中的邮件之间的主要区别在于，增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_delta"
@@ -77,6 +79,16 @@ GET https://graph.microsoft.com/beta/me/mailFolders/delta
 
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
@@ -111,16 +123,6 @@ Content-length: 254
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/mailfolder_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/mailfolder_delta-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>另请参阅
 
@@ -137,8 +139,6 @@ Content-length: 254
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/mailfolder-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/mailfolder-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

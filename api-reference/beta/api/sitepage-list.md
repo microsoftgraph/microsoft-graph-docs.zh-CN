@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 938624d1330a36b3f1318f09290b30bf9388e4ce
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: d4d4e525c048b6d2b76b9d361ab841526b07854f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271531"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35457140"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
 
@@ -230,18 +230,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-pages-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-pages-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-pages-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -251,9 +239,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
   "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

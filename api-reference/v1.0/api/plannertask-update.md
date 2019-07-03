@@ -4,12 +4,12 @@ description: 更新 **plannertask** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 378f1938f37b5af654116c131e808bd317f9776f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c9a8c9b7a9c3e0e0a7f212b64491ba97e949c74f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33608513"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35454333"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
@@ -40,7 +40,7 @@ PATCH /planner/tasks/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
-|assigneePriority|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner-order-hint-format.md)定义中。|
+|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner-order-hint-format.md)定义中。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
 |bucketId|String|任务所属的存储桶 id。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](../resources/planner-identifiers-disclaimer.md)在服务上完成。 |
 |conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
@@ -59,6 +59,8 @@ PATCH /planner/tasks/{id}
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertask"
@@ -82,6 +84,12 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -146,14 +154,6 @@ Content-length: 1423
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_plannertask-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -164,6 +164,5 @@ Content-length: 1423
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/plannertask-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

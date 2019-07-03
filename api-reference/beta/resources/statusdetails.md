@@ -5,18 +5,18 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d3c22e67af690a28bb974a0334af7891f0c25cfb
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 88880fbe88c0bd702eefeac5bed9668aac12a356
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349349"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455180"
 ---
 # <a name="statusdetails-resource-type"></a>statusDetails 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述设置事件的状态和关联的错误。 它是从[statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)继承的, 仅在将状态设置为 "失败" 时使用。  
+描述设置事件的状态和关联的错误。 它是从[statusBase](/graph/api/resources/statusbase?view=graph-rest-beta)继承的, 仅在将状态设置为 "失败" 时使用。  
 
 ## <a name="properties"></a>属性
 

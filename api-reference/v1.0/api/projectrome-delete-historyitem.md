@@ -3,12 +3,12 @@ title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: ffe5bf2d3a21dfb0c87f37642522d48a5ae4d719
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 5fc0088b5e8d814e15cb6231956bd8deff266b41
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272742"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458605"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -53,6 +53,8 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 下面是一个请求示例。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_historyItem"
@@ -61,6 +63,12 @@ DELETE /me/activities/{id}/historyItems/{id}
 ```http
 PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 ```
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
@@ -74,14 +82,6 @@ PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{i
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete_historyItem-Objective-C-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
@@ -92,6 +92,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/projectrome-delete-historyitem.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
   ]
 }-->

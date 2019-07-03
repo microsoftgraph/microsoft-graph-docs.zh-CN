@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 231d75798fb8c58e678fbe26a16c2bbb2299290c
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: de889892e023d5d6036ab1886534d94c4362d641
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349343"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35448589"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
 
@@ -29,7 +29,7 @@ Azure AD 将根据各种信号和机器学习持续评估用户和登录风险�
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列出 riskDetection](../api/riskdetection-list.md) | [riskDetection](riskDetection.md)集合|列出风险检测及其属性。|
+|[列出 riskDetection](../api/riskdetection-list.md) | [riskDetection](riskdetection.md)集合|列出风险检测及其属性。|
 |[获取 riskDetection](../api/riskdetection-get.md) | [riskDetection](riskdetection.md)|获取特定的风险检测及其属性。|
 
 ## <a name="properties"></a>属性

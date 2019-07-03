@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7a1333cee432c04bbc127298e005350fc21eb525
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 7afa2d17a07f671396366288be3ae28fe6fd4ead
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272098"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445798"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 
@@ -42,6 +42,8 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 下面的示例展示了如何创建新的泛型列表。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -65,6 +67,20 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 **注意：** 自定义列都是可选的。
 
@@ -99,18 +115,6 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-list-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注意：** 为清楚起见，将截断 Response 对象。
 实际调用会返回默认属性。
@@ -125,8 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "List/Create",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

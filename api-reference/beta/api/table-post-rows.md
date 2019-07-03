@@ -4,12 +4,12 @@ description: '将行添加到表的末尾。 请注意, API 可以使用此 API 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 6c181aa0dcd59ee9b0c048ece62f33c43a56ed7f
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 187a5e9028515a7e6450f4bc0e4930837d4be15f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637827"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458008"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
@@ -60,6 +60,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add"
@@ -76,6 +78,12 @@ Content-length: 51
   ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -94,14 +102,6 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -113,7 +113,6 @@ Content-length: 45
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/table-post-rows.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
