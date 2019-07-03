@@ -4,30 +4,30 @@ description: 在任何集成的解决方案中更新可编辑的**alert**属性,
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d448a7d23f7370650f7ab621fb0f467a3726bce1
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: f2fd2f03e85f8a21067f10ff2c5fa76778cc730f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264832"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443845"
 ---
-# <a name="update-alert"></a><span data-ttu-id="02591-104">更新警报</span><span class="sxs-lookup"><span data-stu-id="02591-104">Update alert</span></span>
+# <a name="update-alert"></a><span data-ttu-id="496bf-104">更新警报</span><span class="sxs-lookup"><span data-stu-id="496bf-104">Update alert</span></span>
 
-<span data-ttu-id="02591-105">在任何集成的解决方案中更新可编辑的**alert**属性, 以保持各个解决方案之间同步警报状态和分配。</span><span class="sxs-lookup"><span data-stu-id="02591-105">Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions.</span></span> <span data-ttu-id="02591-106">此方法更新任何包含所引用警报 ID 的记录的解决方案。</span><span class="sxs-lookup"><span data-stu-id="02591-106">This method updates any solution that has a record of the referenced alert ID.</span></span>
+<span data-ttu-id="496bf-105">在任何集成的解决方案中更新可编辑的**alert**属性, 以保持各个解决方案之间同步警报状态和分配。</span><span class="sxs-lookup"><span data-stu-id="496bf-105">Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions.</span></span> <span data-ttu-id="496bf-106">此方法更新任何包含所引用警报 ID 的记录的解决方案。</span><span class="sxs-lookup"><span data-stu-id="496bf-106">This method updates any solution that has a record of the referenced alert ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="02591-107">权限</span><span class="sxs-lookup"><span data-stu-id="02591-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="496bf-107">权限</span><span class="sxs-lookup"><span data-stu-id="496bf-107">Permissions</span></span>
 
-<span data-ttu-id="02591-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="02591-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="496bf-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="496bf-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="02591-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="02591-110">Permission type</span></span>                        | <span data-ttu-id="02591-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="02591-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="496bf-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="496bf-110">Permission type</span></span>                        | <span data-ttu-id="496bf-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="496bf-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="02591-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="02591-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="02591-113">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02591-113">SecurityEvents.ReadWrite.All</span></span>        |
-| <span data-ttu-id="02591-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="02591-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02591-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="02591-115">Not supported.</span></span>                      |
-| <span data-ttu-id="02591-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="02591-116">Application</span></span>                            | <span data-ttu-id="02591-117">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02591-117">SecurityEvents.ReadWrite.All</span></span>        |
+| <span data-ttu-id="496bf-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="496bf-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="496bf-113">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="496bf-113">SecurityEvents.ReadWrite.All</span></span>        |
+| <span data-ttu-id="496bf-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="496bf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="496bf-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="496bf-115">Not supported.</span></span>                      |
+| <span data-ttu-id="496bf-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="496bf-116">Application</span></span>                            | <span data-ttu-id="496bf-117">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="496bf-117">SecurityEvents.ReadWrite.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="02591-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="02591-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="496bf-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="496bf-118">HTTP request</span></span>
 
-> <span data-ttu-id="02591-119">**注意:** 您必须将**警报**ID 作为参数和 vendorInformation (包含`provider`和`vendor`使用此方法) 包括在内。</span><span class="sxs-lookup"><span data-stu-id="02591-119">**Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.</span></span>
+> <span data-ttu-id="496bf-119">**注意:** 您必须将**警报**ID 作为参数和 vendorInformation (包含`provider`和`vendor`使用此方法) 包括在内。</span><span class="sxs-lookup"><span data-stu-id="496bf-119">**Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,40 +35,42 @@ ms.locfileid: "35264832"
 PATCH /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="02591-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="02591-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="496bf-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="496bf-120">Request headers</span></span>
 
-| <span data-ttu-id="02591-121">名称</span><span class="sxs-lookup"><span data-stu-id="02591-121">Name</span></span>          | <span data-ttu-id="02591-122">说明</span><span class="sxs-lookup"><span data-stu-id="02591-122">Description</span></span>              |
+| <span data-ttu-id="496bf-121">名称</span><span class="sxs-lookup"><span data-stu-id="496bf-121">Name</span></span>          | <span data-ttu-id="496bf-122">说明</span><span class="sxs-lookup"><span data-stu-id="496bf-122">Description</span></span>              |
 |:--------------|:-------------------------|
-| <span data-ttu-id="02591-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="02591-123">Authorization</span></span> | <span data-ttu-id="02591-124">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="02591-124">Bearer {code}.</span></span> <span data-ttu-id="02591-125">必需。</span><span class="sxs-lookup"><span data-stu-id="02591-125">Required.</span></span> |
-| <span data-ttu-id="02591-126">Prefer</span><span class="sxs-lookup"><span data-stu-id="02591-126">Prefer</span></span>        | <span data-ttu-id="02591-127">return = 表示形式</span><span class="sxs-lookup"><span data-stu-id="02591-127">return=representation</span></span>    |
+| <span data-ttu-id="496bf-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="496bf-123">Authorization</span></span> | <span data-ttu-id="496bf-124">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="496bf-124">Bearer {code}.</span></span> <span data-ttu-id="496bf-125">必需。</span><span class="sxs-lookup"><span data-stu-id="496bf-125">Required.</span></span> |
+| <span data-ttu-id="496bf-126">Prefer</span><span class="sxs-lookup"><span data-stu-id="496bf-126">Prefer</span></span>        | <span data-ttu-id="496bf-127">return = 表示形式</span><span class="sxs-lookup"><span data-stu-id="496bf-127">return=representation</span></span>    |
 
-## <a name="request-body"></a><span data-ttu-id="02591-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="02591-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="496bf-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="496bf-128">Request body</span></span>
 
-<span data-ttu-id="02591-129">在请求正文中, 提供应更新的相关字段的值的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="02591-129">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="02591-130">正文**必须**包含具有有效`vendorInformation` `provider`和`vendor`字段的属性。</span><span class="sxs-lookup"><span data-stu-id="02591-130">The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="02591-131">下表列出了可以为警报更新的字段。</span><span class="sxs-lookup"><span data-stu-id="02591-131">The following table lists the fields that can be updated for an alert.</span></span> <span data-ttu-id="02591-132">未包含在请求正文中的现有属性的值不会更改。</span><span class="sxs-lookup"><span data-stu-id="02591-132">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="02591-133">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="02591-133">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="496bf-129">在请求正文中, 提供应更新的相关字段的值的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="496bf-129">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="496bf-130">正文**必须**包含具有有效`vendorInformation` `provider`和`vendor`字段的属性。</span><span class="sxs-lookup"><span data-stu-id="496bf-130">The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="496bf-131">下表列出了可以为警报更新的字段。</span><span class="sxs-lookup"><span data-stu-id="496bf-131">The following table lists the fields that can be updated for an alert.</span></span> <span data-ttu-id="496bf-132">未包含在请求正文中的现有属性的值不会更改。</span><span class="sxs-lookup"><span data-stu-id="496bf-132">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="496bf-133">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="496bf-133">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="02591-134">属性</span><span class="sxs-lookup"><span data-stu-id="02591-134">Property</span></span>          | <span data-ttu-id="02591-135">类型</span><span class="sxs-lookup"><span data-stu-id="02591-135">Type</span></span>                                                                   | <span data-ttu-id="02591-136">说明</span><span class="sxs-lookup"><span data-stu-id="02591-136">Description</span></span> |
+| <span data-ttu-id="496bf-134">属性</span><span class="sxs-lookup"><span data-stu-id="496bf-134">Property</span></span>          | <span data-ttu-id="496bf-135">类型</span><span class="sxs-lookup"><span data-stu-id="496bf-135">Type</span></span>                                                                   | <span data-ttu-id="496bf-136">说明</span><span class="sxs-lookup"><span data-stu-id="496bf-136">Description</span></span> |
 |:------------------|:-----------------------------------------------------------------------|:--|
-| <span data-ttu-id="02591-137">assignedTo</span><span class="sxs-lookup"><span data-stu-id="02591-137">assignedTo</span></span>        | <span data-ttu-id="02591-138">String</span><span class="sxs-lookup"><span data-stu-id="02591-138">String</span></span>                                                                 | <span data-ttu-id="02591-139">为会审、调查或修正分配了警报的分析师的名称。</span><span class="sxs-lookup"><span data-stu-id="02591-139">Name of the analyst the alert is assigned to for triage, investigation, or remediation.</span></span> |
-| <span data-ttu-id="02591-140">closedDateTime</span><span class="sxs-lookup"><span data-stu-id="02591-140">closedDateTime</span></span>    | <span data-ttu-id="02591-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02591-141">DateTimeOffset</span></span>                                                         | <span data-ttu-id="02591-142">警报关闭的时间。</span><span class="sxs-lookup"><span data-stu-id="02591-142">Time at which the alert was closed.</span></span> <span data-ttu-id="02591-143">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="02591-143">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="02591-144">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="02591-144">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> |
-| <span data-ttu-id="02591-145">comments</span><span class="sxs-lookup"><span data-stu-id="02591-145">comments</span></span>          | <span data-ttu-id="02591-146">字符串集合</span><span class="sxs-lookup"><span data-stu-id="02591-146">String collection</span></span>                                                      | <span data-ttu-id="02591-147">通知的分析师注释 (针对客户通知管理)。</span><span class="sxs-lookup"><span data-stu-id="02591-147">Analyst comments on the alert (for customer alert management).</span></span> |
-| <span data-ttu-id="02591-148">反馈</span><span class="sxs-lookup"><span data-stu-id="02591-148">feedback</span></span>          | <span data-ttu-id="02591-149">alertFeedback</span><span class="sxs-lookup"><span data-stu-id="02591-149">alertFeedback</span></span>                                                          | <span data-ttu-id="02591-150">分析师对警报的反馈。</span><span class="sxs-lookup"><span data-stu-id="02591-150">Analyst feedback on the alert.</span></span> <span data-ttu-id="02591-151">可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。</span><span class="sxs-lookup"><span data-stu-id="02591-151">Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.</span></span> |
-| <span data-ttu-id="02591-152">status</span><span class="sxs-lookup"><span data-stu-id="02591-152">status</span></span>            | <span data-ttu-id="02591-153">alertStatus</span><span class="sxs-lookup"><span data-stu-id="02591-153">alertStatus</span></span>                                                            | <span data-ttu-id="02591-154">警报生命周期状态 (阶段)。</span><span class="sxs-lookup"><span data-stu-id="02591-154">Alert life cycle status (stage).</span></span> <span data-ttu-id="02591-155">可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。</span><span class="sxs-lookup"><span data-stu-id="02591-155">Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.</span></span> |
-| <span data-ttu-id="02591-156">tags</span><span class="sxs-lookup"><span data-stu-id="02591-156">tags</span></span>              | <span data-ttu-id="02591-157">String collection</span><span class="sxs-lookup"><span data-stu-id="02591-157">String collection</span></span>                                                      | <span data-ttu-id="02591-158">可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。</span><span class="sxs-lookup"><span data-stu-id="02591-158">User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).</span></span> |
-| <span data-ttu-id="02591-159">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="02591-159">vendorInformation</span></span> | [<span data-ttu-id="02591-160">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="02591-160">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="02591-161">包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。</span><span class="sxs-lookup"><span data-stu-id="02591-161">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).</span></span> <span data-ttu-id="02591-162">**提供程序和供应商字段是必需的。**</span><span class="sxs-lookup"><span data-stu-id="02591-162">**Provider and vendor fields are required.**</span></span> |
+| <span data-ttu-id="496bf-137">assignedTo</span><span class="sxs-lookup"><span data-stu-id="496bf-137">assignedTo</span></span>        | <span data-ttu-id="496bf-138">String</span><span class="sxs-lookup"><span data-stu-id="496bf-138">String</span></span>                                                                 | <span data-ttu-id="496bf-139">为会审、调查或修正分配了警报的分析师的名称。</span><span class="sxs-lookup"><span data-stu-id="496bf-139">Name of the analyst the alert is assigned to for triage, investigation, or remediation.</span></span> |
+| <span data-ttu-id="496bf-140">closedDateTime</span><span class="sxs-lookup"><span data-stu-id="496bf-140">closedDateTime</span></span>    | <span data-ttu-id="496bf-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="496bf-141">DateTimeOffset</span></span>                                                         | <span data-ttu-id="496bf-142">警报关闭的时间。</span><span class="sxs-lookup"><span data-stu-id="496bf-142">Time at which the alert was closed.</span></span> <span data-ttu-id="496bf-143">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="496bf-143">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="496bf-144">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="496bf-144">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> |
+| <span data-ttu-id="496bf-145">comments</span><span class="sxs-lookup"><span data-stu-id="496bf-145">comments</span></span>          | <span data-ttu-id="496bf-146">字符串集合</span><span class="sxs-lookup"><span data-stu-id="496bf-146">String collection</span></span>                                                      | <span data-ttu-id="496bf-147">通知的分析师注释 (针对客户通知管理)。</span><span class="sxs-lookup"><span data-stu-id="496bf-147">Analyst comments on the alert (for customer alert management).</span></span> |
+| <span data-ttu-id="496bf-148">反馈</span><span class="sxs-lookup"><span data-stu-id="496bf-148">feedback</span></span>          | <span data-ttu-id="496bf-149">alertFeedback</span><span class="sxs-lookup"><span data-stu-id="496bf-149">alertFeedback</span></span>                                                          | <span data-ttu-id="496bf-150">分析师对警报的反馈。</span><span class="sxs-lookup"><span data-stu-id="496bf-150">Analyst feedback on the alert.</span></span> <span data-ttu-id="496bf-151">可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。</span><span class="sxs-lookup"><span data-stu-id="496bf-151">Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.</span></span> |
+| <span data-ttu-id="496bf-152">status</span><span class="sxs-lookup"><span data-stu-id="496bf-152">status</span></span>            | <span data-ttu-id="496bf-153">alertStatus</span><span class="sxs-lookup"><span data-stu-id="496bf-153">alertStatus</span></span>                                                            | <span data-ttu-id="496bf-154">警报生命周期状态 (阶段)。</span><span class="sxs-lookup"><span data-stu-id="496bf-154">Alert life cycle status (stage).</span></span> <span data-ttu-id="496bf-155">可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。</span><span class="sxs-lookup"><span data-stu-id="496bf-155">Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.</span></span> |
+| <span data-ttu-id="496bf-156">tags</span><span class="sxs-lookup"><span data-stu-id="496bf-156">tags</span></span>              | <span data-ttu-id="496bf-157">String collection</span><span class="sxs-lookup"><span data-stu-id="496bf-157">String collection</span></span>                                                      | <span data-ttu-id="496bf-158">可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。</span><span class="sxs-lookup"><span data-stu-id="496bf-158">User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).</span></span> |
+| <span data-ttu-id="496bf-159">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="496bf-159">vendorInformation</span></span> | [<span data-ttu-id="496bf-160">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="496bf-160">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="496bf-161">包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。</span><span class="sxs-lookup"><span data-stu-id="496bf-161">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).</span></span> <span data-ttu-id="496bf-162">**提供程序和供应商字段是必需的。**</span><span class="sxs-lookup"><span data-stu-id="496bf-162">**Provider and vendor fields are required.**</span></span> |
 
-## <a name="response"></a><span data-ttu-id="02591-163">响应</span><span class="sxs-lookup"><span data-stu-id="02591-163">Response</span></span>
+## <a name="response"></a><span data-ttu-id="496bf-163">响应</span><span class="sxs-lookup"><span data-stu-id="496bf-163">Response</span></span>
 
-<span data-ttu-id="02591-164">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="02591-164">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="496bf-164">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="496bf-164">If successful, this method returns a `204 No Content` response code.</span></span>
 
-<span data-ttu-id="02591-165">如果使用可选的请求标头, 则该方法将`200 OK`在响应正文中返回响应代码和更新的[alert](../resources/alert.md)对象。</span><span class="sxs-lookup"><span data-stu-id="02591-165">If the optional request header is used, the method returns a `200 OK` response code and the updated [alert](../resources/alert.md) object in the response body.</span></span>
+<span data-ttu-id="496bf-165">如果使用可选的请求标头, 则该方法将`200 OK`在响应正文中返回响应代码和更新的[alert](../resources/alert.md)对象。</span><span class="sxs-lookup"><span data-stu-id="496bf-165">If the optional request header is used, the method returns a `200 OK` response code and the updated [alert](../resources/alert.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="02591-166">示例</span><span class="sxs-lookup"><span data-stu-id="02591-166">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="496bf-166">示例</span><span class="sxs-lookup"><span data-stu-id="496bf-166">Examples</span></span>
 
-### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="02591-167">示例 1: 不带首选标头的请求</span><span class="sxs-lookup"><span data-stu-id="02591-167">Example 1: Request without Prefer header</span></span>
+### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="496bf-167">示例 1: 不带首选标头的请求</span><span class="sxs-lookup"><span data-stu-id="496bf-167">Example 1: Request without Prefer header</span></span>
 
-#### <a name="request"></a><span data-ttu-id="02591-168">请求</span><span class="sxs-lookup"><span data-stu-id="02591-168">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="496bf-168">请求</span><span class="sxs-lookup"><span data-stu-id="496bf-168">Request</span></span>
 
-<span data-ttu-id="02591-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="02591-169">The following is an example of the request.</span></span>
+<span data-ttu-id="496bf-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="496bf-169">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="496bf-170">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="496bf-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -95,12 +97,26 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="496bf-171">C#</span><span class="sxs-lookup"><span data-stu-id="496bf-171">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="496bf-172">Javascript</span><span class="sxs-lookup"><span data-stu-id="496bf-172">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="496bf-173">目标-C</span><span class="sxs-lookup"><span data-stu-id="496bf-173">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="02591-170">响应</span><span class="sxs-lookup"><span data-stu-id="02591-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="496bf-174">响应</span><span class="sxs-lookup"><span data-stu-id="496bf-174">Response</span></span>
 
-<span data-ttu-id="02591-171">下面是成功响应的示例。</span><span class="sxs-lookup"><span data-stu-id="02591-171">The following is an example of a successful response.</span></span>
+<span data-ttu-id="496bf-175">下面是成功响应的示例。</span><span class="sxs-lookup"><span data-stu-id="496bf-175">The following is an example of a successful response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -111,24 +127,12 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="02591-172">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="02591-172">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="02591-173">C#</span><span class="sxs-lookup"><span data-stu-id="02591-173">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="02591-174">Javascript</span><span class="sxs-lookup"><span data-stu-id="02591-174">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="496bf-176">示例 2: 具有首选标头的请求</span><span class="sxs-lookup"><span data-stu-id="496bf-176">Example 2: Request with Prefer header</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="02591-175">目标-C</span><span class="sxs-lookup"><span data-stu-id="02591-175">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_alert-Objective-C-snippets.md)]
----
+#### <a name="request"></a><span data-ttu-id="496bf-177">请求</span><span class="sxs-lookup"><span data-stu-id="496bf-177">Request</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="02591-176">示例 2: 具有首选标头的请求</span><span class="sxs-lookup"><span data-stu-id="02591-176">Example 2: Request with Prefer header</span></span>
-
-#### <a name="request"></a><span data-ttu-id="02591-177">请求</span><span class="sxs-lookup"><span data-stu-id="02591-177">Request</span></span>
-
-<span data-ttu-id="02591-178">下面的示例演示包含`Prefer`请求标头的请求。</span><span class="sxs-lookup"><span data-stu-id="02591-178">The following example shows a request that includes the `Prefer` request header.</span></span>
+<span data-ttu-id="496bf-178">下面的示例演示包含`Prefer`请求标头的请求。</span><span class="sxs-lookup"><span data-stu-id="496bf-178">The following example shows a request that includes the `Prefer` request header.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -158,11 +162,11 @@ Prefer: return=representation
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="02591-179">响应</span><span class="sxs-lookup"><span data-stu-id="02591-179">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="496bf-179">响应</span><span class="sxs-lookup"><span data-stu-id="496bf-179">Response</span></span>
 
-<span data-ttu-id="02591-180">以下是使用可选`Prefer: return=representation`请求标头时响应的示例。</span><span class="sxs-lookup"><span data-stu-id="02591-180">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
+<span data-ttu-id="496bf-180">以下是使用可选`Prefer: return=representation`请求标头时响应的示例。</span><span class="sxs-lookup"><span data-stu-id="496bf-180">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
 
-> <span data-ttu-id="02591-p110">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="02591-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="496bf-p110">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="496bf-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -193,10 +197,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -4,50 +4,50 @@ description: 获取指定的 event 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b3c09dbc4ef62609d57ca8f62a7081f58f3fa2df
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: f6962d6240e4315d9a2e9589387483351a9e0915
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259176"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441090"
 ---
-# <a name="get-event"></a><span data-ttu-id="5052a-103">获取事件</span><span class="sxs-lookup"><span data-stu-id="5052a-103">Get event</span></span>
+# <a name="get-event"></a><span data-ttu-id="26a28-103">获取事件</span><span class="sxs-lookup"><span data-stu-id="26a28-103">Get event</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5052a-104">获取指定的 [event](../resources/event.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5052a-104">Get the properties and relationships of the specified [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="26a28-104">获取指定的 [event](../resources/event.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="26a28-104">Get the properties and relationships of the specified [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="5052a-105">在下列两种情况下，应用程序可获取其他用户的日历中的事件：</span><span class="sxs-lookup"><span data-stu-id="5052a-105">There are two scenarios where an app can get an event in another user's calendar:</span></span>
+<span data-ttu-id="26a28-105">在下列两种情况下，应用程序可获取其他用户的日历中的事件：</span><span class="sxs-lookup"><span data-stu-id="26a28-105">There are two scenarios where an app can get an event in another user's calendar:</span></span>
 
-* <span data-ttu-id="5052a-106">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="5052a-106">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="5052a-107">如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="5052a-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="5052a-108">请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。</span><span class="sxs-lookup"><span data-stu-id="5052a-108">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
+* <span data-ttu-id="26a28-106">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="26a28-106">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="26a28-107">如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="26a28-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="26a28-108">请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。</span><span class="sxs-lookup"><span data-stu-id="26a28-108">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
 
-<span data-ttu-id="5052a-109">由于 **event** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="5052a-109">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.</span></span>
+<span data-ttu-id="26a28-109">由于 **event** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="26a28-109">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.</span></span>
 
 
-### <a name="support-various-time-zones"></a><span data-ttu-id="5052a-110">支持不同时区</span><span class="sxs-lookup"><span data-stu-id="5052a-110">Support various time zones</span></span>
+### <a name="support-various-time-zones"></a><span data-ttu-id="26a28-110">支持不同时区</span><span class="sxs-lookup"><span data-stu-id="26a28-110">Support various time zones</span></span>
 
-<span data-ttu-id="5052a-111">对于返回事件的所有 GET 操作，你可以使用 `Prefer: outlook.timezone` 标头在响应中指定事件开始和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="5052a-111">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
+<span data-ttu-id="26a28-111">对于返回事件的所有 GET 操作，你可以使用 `Prefer: outlook.timezone` 标头在响应中指定事件开始和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="26a28-111">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
 
-<span data-ttu-id="5052a-112">例如，下面的 `Prefer: outlook.timezone` 标头将响应中的开始和结束时间设置为东部标准时间。</span><span class="sxs-lookup"><span data-stu-id="5052a-112">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
+<span data-ttu-id="26a28-112">例如，下面的 `Prefer: outlook.timezone` 标头将响应中的开始和结束时间设置为东部标准时间。</span><span class="sxs-lookup"><span data-stu-id="26a28-112">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-<span data-ttu-id="5052a-p102">如果该事件是在不同的时区中创建的，则根据 `Prefer` 标头中指定的时区调整开始和结束时间。请查看此 [列表](../resources/datetimetimezone.md) 了解支持的时区名称。如果未指定 `Prefer: outlook.timezone` 标头，则返回用 UTC 表示的开始和结束时间。</span><span class="sxs-lookup"><span data-stu-id="5052a-p102">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
+<span data-ttu-id="26a28-p102">如果该事件是在不同的时区中创建的，则根据 `Prefer` 标头中指定的时区调整开始和结束时间。请查看此 [列表](../resources/datetimetimezone.md) 了解支持的时区名称。如果未指定 `Prefer: outlook.timezone` 标头，则返回用 UTC 表示的开始和结束时间。</span><span class="sxs-lookup"><span data-stu-id="26a28-p102">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
 
-<span data-ttu-id="5052a-116">可以使用**事件**资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。</span><span class="sxs-lookup"><span data-stu-id="5052a-116">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
+<span data-ttu-id="26a28-116">可以使用**事件**资源中的 **OriginalStartTimeZone** 和 **OriginalEndTimeZone** 属性来查找创建事件时使用的时区。</span><span class="sxs-lookup"><span data-stu-id="26a28-116">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5052a-117">权限</span><span class="sxs-lookup"><span data-stu-id="5052a-117">Permissions</span></span>
-<span data-ttu-id="5052a-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5052a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="26a28-117">权限</span><span class="sxs-lookup"><span data-stu-id="26a28-117">Permissions</span></span>
+<span data-ttu-id="26a28-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="26a28-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5052a-120">权限类型</span><span class="sxs-lookup"><span data-stu-id="5052a-120">Permission type</span></span>      | <span data-ttu-id="5052a-121">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5052a-121">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="26a28-120">权限类型</span><span class="sxs-lookup"><span data-stu-id="26a28-120">Permission type</span></span>      | <span data-ttu-id="26a28-121">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="26a28-121">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5052a-122">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5052a-122">Delegated (work or school account)</span></span> | <span data-ttu-id="5052a-123">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="5052a-123">Calendars.Read</span></span>    |
-|<span data-ttu-id="5052a-124">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5052a-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5052a-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="5052a-125">Calendars.Read</span></span>    |
-|<span data-ttu-id="5052a-126">应用程序</span><span class="sxs-lookup"><span data-stu-id="5052a-126">Application</span></span> | <span data-ttu-id="5052a-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="5052a-127">Calendars.Read</span></span> |
+|<span data-ttu-id="26a28-122">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="26a28-122">Delegated (work or school account)</span></span> | <span data-ttu-id="26a28-123">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="26a28-123">Calendars.Read</span></span>    |
+|<span data-ttu-id="26a28-124">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="26a28-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26a28-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="26a28-125">Calendars.Read</span></span>    |
+|<span data-ttu-id="26a28-126">应用程序</span><span class="sxs-lookup"><span data-stu-id="26a28-126">Application</span></span> | <span data-ttu-id="26a28-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="26a28-127">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5052a-128">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5052a-128">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26a28-128">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="26a28-128">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}
@@ -67,30 +67,32 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5052a-129">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5052a-129">Optional query parameters</span></span>
-<span data-ttu-id="5052a-130">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5052a-130">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="5052a-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="5052a-131">Request headers</span></span>
-| <span data-ttu-id="5052a-132">名称</span><span class="sxs-lookup"><span data-stu-id="5052a-132">Name</span></span>       | <span data-ttu-id="5052a-133">类型</span><span class="sxs-lookup"><span data-stu-id="5052a-133">Type</span></span> | <span data-ttu-id="5052a-134">说明</span><span class="sxs-lookup"><span data-stu-id="5052a-134">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="26a28-129">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="26a28-129">Optional query parameters</span></span>
+<span data-ttu-id="26a28-130">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="26a28-130">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="26a28-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="26a28-131">Request headers</span></span>
+| <span data-ttu-id="26a28-132">名称</span><span class="sxs-lookup"><span data-stu-id="26a28-132">Name</span></span>       | <span data-ttu-id="26a28-133">类型</span><span class="sxs-lookup"><span data-stu-id="26a28-133">Type</span></span> | <span data-ttu-id="26a28-134">说明</span><span class="sxs-lookup"><span data-stu-id="26a28-134">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="5052a-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="5052a-135">Authorization</span></span>  | <span data-ttu-id="5052a-136">字符串</span><span class="sxs-lookup"><span data-stu-id="5052a-136">string</span></span>  | <span data-ttu-id="5052a-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5052a-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5052a-139">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="5052a-139">Prefer: outlook.timezone</span></span> | <span data-ttu-id="5052a-140">string</span><span class="sxs-lookup"><span data-stu-id="5052a-140">string</span></span> | <span data-ttu-id="5052a-141">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="5052a-141">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="5052a-142">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="5052a-142">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="5052a-143">可选。</span><span class="sxs-lookup"><span data-stu-id="5052a-143">Optional.</span></span> |
-| <span data-ttu-id="5052a-144">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="5052a-144">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="5052a-145">string</span><span class="sxs-lookup"><span data-stu-id="5052a-145">string</span></span> | <span data-ttu-id="5052a-146">要返回的 **body** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="5052a-146">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="5052a-147">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="5052a-147">Values can be "text" or "html".</span></span> <span data-ttu-id="5052a-148">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="5052a-148">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="5052a-149">如果未指定此头，采用 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-149">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="5052a-150">可选。</span><span class="sxs-lookup"><span data-stu-id="5052a-150">Optional.</span></span> |
+| <span data-ttu-id="26a28-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="26a28-135">Authorization</span></span>  | <span data-ttu-id="26a28-136">字符串</span><span class="sxs-lookup"><span data-stu-id="26a28-136">string</span></span>  | <span data-ttu-id="26a28-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="26a28-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="26a28-139">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="26a28-139">Prefer: outlook.timezone</span></span> | <span data-ttu-id="26a28-140">string</span><span class="sxs-lookup"><span data-stu-id="26a28-140">string</span></span> | <span data-ttu-id="26a28-141">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="26a28-141">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="26a28-142">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="26a28-142">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="26a28-143">可选。</span><span class="sxs-lookup"><span data-stu-id="26a28-143">Optional.</span></span> |
+| <span data-ttu-id="26a28-144">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="26a28-144">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="26a28-145">string</span><span class="sxs-lookup"><span data-stu-id="26a28-145">string</span></span> | <span data-ttu-id="26a28-146">要返回的 **body** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="26a28-146">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="26a28-147">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="26a28-147">Values can be "text" or "html".</span></span> <span data-ttu-id="26a28-148">如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。</span><span class="sxs-lookup"><span data-stu-id="26a28-148">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="26a28-149">如果未指定此头，采用 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-149">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="26a28-150">可选。</span><span class="sxs-lookup"><span data-stu-id="26a28-150">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5052a-151">请求正文</span><span class="sxs-lookup"><span data-stu-id="5052a-151">Request body</span></span>
-<span data-ttu-id="5052a-152">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5052a-152">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="26a28-151">请求正文</span><span class="sxs-lookup"><span data-stu-id="26a28-151">Request body</span></span>
+<span data-ttu-id="26a28-152">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="26a28-152">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5052a-153">响应</span><span class="sxs-lookup"><span data-stu-id="5052a-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="26a28-153">响应</span><span class="sxs-lookup"><span data-stu-id="26a28-153">Response</span></span>
 
-<span data-ttu-id="5052a-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5052a-154">If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5052a-155">示例</span><span class="sxs-lookup"><span data-stu-id="5052a-155">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="5052a-156">请求 1</span><span class="sxs-lookup"><span data-stu-id="5052a-156">Request 1</span></span>
-<span data-ttu-id="5052a-p107">第一个示例获取指定的事件。它指定以下内容：</span><span class="sxs-lookup"><span data-stu-id="5052a-p107">The first example gets the specified event. It specifies the following:</span></span>
+<span data-ttu-id="26a28-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="26a28-154">If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="26a28-155">示例</span><span class="sxs-lookup"><span data-stu-id="26a28-155">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="26a28-156">请求 1</span><span class="sxs-lookup"><span data-stu-id="26a28-156">Request 1</span></span>
+<span data-ttu-id="26a28-p107">第一个示例获取指定的事件。它指定以下内容：</span><span class="sxs-lookup"><span data-stu-id="26a28-p107">The first example gets the specified event. It specifies the following:</span></span>
 
-- <span data-ttu-id="5052a-159">获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。</span><span class="sxs-lookup"><span data-stu-id="5052a-159">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
-- <span data-ttu-id="5052a-p108">返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-p108">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
+- <span data-ttu-id="26a28-159">获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。</span><span class="sxs-lookup"><span data-stu-id="26a28-159">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
+- <span data-ttu-id="26a28-p108">返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-p108">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
-<span data-ttu-id="5052a-162">该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。</span><span class="sxs-lookup"><span data-stu-id="5052a-162">The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.</span></span> 
+<span data-ttu-id="26a28-162">该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。</span><span class="sxs-lookup"><span data-stu-id="26a28-162">The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.</span></span> 
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="26a28-163">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="26a28-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event"
@@ -99,8 +101,22 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### <a name="response-1"></a><span data-ttu-id="5052a-163">响应 1</span><span class="sxs-lookup"><span data-stu-id="5052a-163">Response 1</span></span>
-<span data-ttu-id="5052a-164">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5052a-164">Here is an example of the response.</span></span> <span data-ttu-id="5052a-165">由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-165">Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="26a28-164">C#</span><span class="sxs-lookup"><span data-stu-id="26a28-164">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="26a28-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="26a28-165">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="26a28-166">目标-C</span><span class="sxs-lookup"><span data-stu-id="26a28-166">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-event-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response-1"></a><span data-ttu-id="26a28-167">响应 1</span><span class="sxs-lookup"><span data-stu-id="26a28-167">Response 1</span></span>
+<span data-ttu-id="26a28-168">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="26a28-168">Here is an example of the response.</span></span> <span data-ttu-id="26a28-169">由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-169">Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -176,24 +192,14 @@ Content-length: 1928
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="5052a-166">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="5052a-166">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="5052a-167">C#</span><span class="sxs-lookup"><span data-stu-id="5052a-167">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_event-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5052a-168">Javascript</span><span class="sxs-lookup"><span data-stu-id="5052a-168">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_event-Javascript-snippets.md)]
+##### <a name="request-2"></a><span data-ttu-id="26a28-170">请求 2</span><span class="sxs-lookup"><span data-stu-id="26a28-170">Request 2</span></span>
+<span data-ttu-id="26a28-171">第二个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定事件的**body**属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-171">The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="5052a-169">目标-C</span><span class="sxs-lookup"><span data-stu-id="5052a-169">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_event-Objective-C-snippets.md)]
----
+<span data-ttu-id="26a28-172">该请求还使用 `$select` 查询参数返回特定属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-172">The request also uses a `$select` query parameter to return specific properties.</span></span> <span data-ttu-id="26a28-173">如果没有 `$select` 参数，将返回所有事件属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-173">Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request-2"></a><span data-ttu-id="5052a-170">请求 2</span><span class="sxs-lookup"><span data-stu-id="5052a-170">Request 2</span></span>
-<span data-ttu-id="5052a-171">第二个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定事件的**body**属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-171">The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.</span></span>
-
-<span data-ttu-id="5052a-172">该请求还使用 `$select` 查询参数返回特定属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-172">The request also uses a `$select` query parameter to return specific properties.</span></span> <span data-ttu-id="5052a-173">如果没有 `$select` 参数，将返回所有事件属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-173">Without a `$select` parameter, all of the event properties will be returned.</span></span>
-
+# <a name="httptabhttp"></a>[<span data-ttu-id="26a28-174">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="26a28-174">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_in_text"
@@ -202,8 +208,22 @@ Content-length: 1928
 GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
-##### <a name="response-2"></a><span data-ttu-id="5052a-174">响应 2</span><span class="sxs-lookup"><span data-stu-id="5052a-174">Response 2</span></span>
-<span data-ttu-id="5052a-175">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5052a-175">Here is an example of the response.</span></span> <span data-ttu-id="5052a-176">以文本格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="5052a-176">The **body** property is returned in text format.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="26a28-175">C#</span><span class="sxs-lookup"><span data-stu-id="26a28-175">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-event-in-text-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="26a28-176">Javascript</span><span class="sxs-lookup"><span data-stu-id="26a28-176">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-in-text-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="26a28-177">目标-C</span><span class="sxs-lookup"><span data-stu-id="26a28-177">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-event-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response-2"></a><span data-ttu-id="26a28-178">响应 2</span><span class="sxs-lookup"><span data-stu-id="26a28-178">Response 2</span></span>
+<span data-ttu-id="26a28-179">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="26a28-179">Here is an example of the response.</span></span> <span data-ttu-id="26a28-180">以文本格式返回 **body** 属性。</span><span class="sxs-lookup"><span data-stu-id="26a28-180">The **body** property is returned in text format.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -229,24 +249,14 @@ Content-length: 636
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="5052a-177">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="5052a-177">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="5052a-178">C#</span><span class="sxs-lookup"><span data-stu-id="5052a-178">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_event_in_text-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5052a-179">Javascript</span><span class="sxs-lookup"><span data-stu-id="5052a-179">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_event_in_text-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="5052a-180">目标-C</span><span class="sxs-lookup"><span data-stu-id="5052a-180">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_event_in_text-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-##### <a name="request-3"></a><span data-ttu-id="5052a-181">请求 3</span><span class="sxs-lookup"><span data-stu-id="5052a-181">Request 3</span></span>
+##### <a name="request-3"></a><span data-ttu-id="26a28-181">请求 3</span><span class="sxs-lookup"><span data-stu-id="26a28-181">Request 3</span></span>
 
-<span data-ttu-id="5052a-182">第三个示例演示如何获取一个指定多个位置的事件。</span><span class="sxs-lookup"><span data-stu-id="5052a-182">The third example shows getting an event that specifies more than one location.</span></span> <span data-ttu-id="5052a-183">该请求指定返回特定属性的 `$select` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="5052a-183">The request specifies a `$select` query parameter to return specific properties.</span></span> 
+<span data-ttu-id="26a28-182">第三个示例演示如何获取一个指定多个位置的事件。</span><span class="sxs-lookup"><span data-stu-id="26a28-182">The third example shows getting an event that specifies more than one location.</span></span> <span data-ttu-id="26a28-183">该请求指定返回特定属性的 `$select` 查询参数。</span><span class="sxs-lookup"><span data-stu-id="26a28-183">The request specifies a `$select` query parameter to return specific properties.</span></span> 
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="26a28-184">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="26a28-184">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_multiple_locations"
@@ -254,10 +264,24 @@ Content-length: 636
 ```http
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
-##### <a name="response-3"></a><span data-ttu-id="5052a-184">响应 3</span><span class="sxs-lookup"><span data-stu-id="5052a-184">Response 3</span></span>
-<span data-ttu-id="5052a-185">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5052a-185">Here is an example of the response.</span></span> <span data-ttu-id="5052a-186">**locations** 属性包括组织事件的 3 个地点的详细信息。</span><span class="sxs-lookup"><span data-stu-id="5052a-186">The **locations** property includes details for the 3 locations that the event is organized for.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="26a28-185">C#</span><span class="sxs-lookup"><span data-stu-id="26a28-185">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-event-multiple-locations-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="5052a-187">由于请求未指定`Prefer: outlook.timezone` any 或`Prefer: outlook.body-content-type`标头, 因此**开始**和**结束**属性显示在默认的 UTC 时区中, 而正文采用的是默认的 HTML 格式。</span><span class="sxs-lookup"><span data-stu-id="5052a-187">Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.</span></span>  
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="26a28-186">Javascript</span><span class="sxs-lookup"><span data-stu-id="26a28-186">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-multiple-locations-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="26a28-187">目标-C</span><span class="sxs-lookup"><span data-stu-id="26a28-187">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-event-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response-3"></a><span data-ttu-id="26a28-188">响应 3</span><span class="sxs-lookup"><span data-stu-id="26a28-188">Response 3</span></span>
+<span data-ttu-id="26a28-189">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="26a28-189">Here is an example of the response.</span></span> <span data-ttu-id="26a28-190">**locations** 属性包括组织事件的 3 个地点的详细信息。</span><span class="sxs-lookup"><span data-stu-id="26a28-190">The **locations** property includes details for the 3 locations that the event is organized for.</span></span> 
+
+<span data-ttu-id="26a28-191">由于请求未指定`Prefer: outlook.timezone` any 或`Prefer: outlook.body-content-type`标头, 因此**开始**和**结束**属性显示在默认的 UTC 时区中, 而正文采用的是默认的 HTML 格式。</span><span class="sxs-lookup"><span data-stu-id="26a28-191">Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.</span></span>  
 
 <!-- {
   "blockType": "response",
@@ -356,24 +380,12 @@ Content-length: 1992
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="5052a-188">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="5052a-188">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="5052a-189">C#</span><span class="sxs-lookup"><span data-stu-id="5052a-189">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_event_multiple_locations-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5052a-190">Javascript</span><span class="sxs-lookup"><span data-stu-id="5052a-190">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_event_multiple_locations-Javascript-snippets.md)]
+## <a name="see-also"></a><span data-ttu-id="26a28-192">另请参阅</span><span class="sxs-lookup"><span data-stu-id="26a28-192">See also</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="5052a-191">目标-C</span><span class="sxs-lookup"><span data-stu-id="5052a-191">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_event_multiple_locations-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="see-also"></a><span data-ttu-id="5052a-192">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5052a-192">See also</span></span>
-
-- [<span data-ttu-id="5052a-193">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="5052a-193">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="5052a-194">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="5052a-194">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="5052a-195">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="5052a-195">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="26a28-193">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="26a28-193">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="26a28-194">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="26a28-194">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="26a28-195">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="26a28-195">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -386,13 +398,6 @@ Content-length: 1992
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/event-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

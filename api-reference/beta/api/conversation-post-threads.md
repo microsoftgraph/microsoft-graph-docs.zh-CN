@@ -4,52 +4,54 @@ description: 在指定会话中创建新线程。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 7915637c4e19c56abbd076f5041500348b58b5d7
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 4bc7fbb9a145a35b8c237e528230cdb55edc21ee
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35261136"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437450"
 ---
-# <a name="create-thread"></a><span data-ttu-id="f8f80-103">创建线程</span><span class="sxs-lookup"><span data-stu-id="f8f80-103">Create thread</span></span>
+# <a name="create-thread"></a><span data-ttu-id="92f9f-103">创建线程</span><span class="sxs-lookup"><span data-stu-id="92f9f-103">Create thread</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f8f80-104">在指定会话中创建新线程。</span><span class="sxs-lookup"><span data-stu-id="f8f80-104">Create a new thread in the specified conversation.</span></span>
+<span data-ttu-id="92f9f-104">在指定会话中创建新线程。</span><span class="sxs-lookup"><span data-stu-id="92f9f-104">Create a new thread in the specified conversation.</span></span>
 
-<span data-ttu-id="f8f80-p101">按指定方式创建线程和帖子。使用 [回复线程](conversationthread-reply.md) 进一步发布到该线程。或者，如果你获得帖子 ID，还可以在该线程中 [回复](post-reply.md) 帖子。</span><span class="sxs-lookup"><span data-stu-id="f8f80-p101">A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.</span></span>
+<span data-ttu-id="92f9f-p101">按指定方式创建线程和帖子。使用 [回复线程](conversationthread-reply.md) 进一步发布到该线程。或者，如果你获得帖子 ID，还可以在该线程中 [回复](post-reply.md) 帖子。</span><span class="sxs-lookup"><span data-stu-id="92f9f-p101">A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.</span></span>
 
-<span data-ttu-id="f8f80-108">注意：还可以 [通过首先创建一个线程启动一个新的对话](group-post-threads.md)</span><span class="sxs-lookup"><span data-stu-id="f8f80-108">Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).</span></span>
+<span data-ttu-id="92f9f-108">注意：还可以 [通过首先创建一个线程启动一个新的对话](group-post-threads.md)</span><span class="sxs-lookup"><span data-stu-id="92f9f-108">Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f8f80-109">权限</span><span class="sxs-lookup"><span data-stu-id="f8f80-109">Permissions</span></span>
-<span data-ttu-id="f8f80-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f8f80-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="92f9f-109">权限</span><span class="sxs-lookup"><span data-stu-id="92f9f-109">Permissions</span></span>
+<span data-ttu-id="92f9f-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92f9f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f8f80-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="f8f80-112">Permission type</span></span>      | <span data-ttu-id="f8f80-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f8f80-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="92f9f-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="92f9f-112">Permission type</span></span>      | <span data-ttu-id="92f9f-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92f9f-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f8f80-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f8f80-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f8f80-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f8f80-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f8f80-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f8f80-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f8f80-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="f8f80-117">Not supported.</span></span>    |
-|<span data-ttu-id="f8f80-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="f8f80-118">Application</span></span> | <span data-ttu-id="f8f80-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="f8f80-119">Not supported.</span></span> |
+|<span data-ttu-id="92f9f-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92f9f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="92f9f-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92f9f-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="92f9f-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92f9f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92f9f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="92f9f-117">Not supported.</span></span>    |
+|<span data-ttu-id="92f9f-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="92f9f-118">Application</span></span> | <span data-ttu-id="92f9f-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="92f9f-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f8f80-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f8f80-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92f9f-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92f9f-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations/{id}/threads
 ```
-## <a name="request-headers"></a><span data-ttu-id="f8f80-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="f8f80-121">Request headers</span></span>
-| <span data-ttu-id="f8f80-122">名称</span><span class="sxs-lookup"><span data-stu-id="f8f80-122">Name</span></span>       | <span data-ttu-id="f8f80-123">类型</span><span class="sxs-lookup"><span data-stu-id="f8f80-123">Type</span></span> | <span data-ttu-id="f8f80-124">说明</span><span class="sxs-lookup"><span data-stu-id="f8f80-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="92f9f-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="92f9f-121">Request headers</span></span>
+| <span data-ttu-id="92f9f-122">名称</span><span class="sxs-lookup"><span data-stu-id="92f9f-122">Name</span></span>       | <span data-ttu-id="92f9f-123">类型</span><span class="sxs-lookup"><span data-stu-id="92f9f-123">Type</span></span> | <span data-ttu-id="92f9f-124">说明</span><span class="sxs-lookup"><span data-stu-id="92f9f-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f8f80-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f8f80-125">Authorization</span></span>  | <span data-ttu-id="f8f80-126">string</span><span class="sxs-lookup"><span data-stu-id="f8f80-126">string</span></span>  | <span data-ttu-id="f8f80-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f8f80-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="92f9f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="92f9f-125">Authorization</span></span>  | <span data-ttu-id="92f9f-126">string</span><span class="sxs-lookup"><span data-stu-id="92f9f-126">string</span></span>  | <span data-ttu-id="92f9f-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="92f9f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f8f80-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="f8f80-129">Request body</span></span>
-<span data-ttu-id="f8f80-130">在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f8f80-130">In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="92f9f-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="92f9f-129">Request body</span></span>
+<span data-ttu-id="92f9f-130">在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="92f9f-130">In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f8f80-131">响应</span><span class="sxs-lookup"><span data-stu-id="f8f80-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="92f9f-131">响应</span><span class="sxs-lookup"><span data-stu-id="92f9f-131">Response</span></span>
 
-<span data-ttu-id="f8f80-132">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ConversationThread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f8f80-132">If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+<span data-ttu-id="92f9f-132">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ConversationThread](../resources/conversationthread.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="92f9f-132">If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f8f80-133">示例</span><span class="sxs-lookup"><span data-stu-id="f8f80-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f8f80-134">请求</span><span class="sxs-lookup"><span data-stu-id="f8f80-134">Request</span></span>
-<span data-ttu-id="f8f80-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f8f80-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="92f9f-133">示例</span><span class="sxs-lookup"><span data-stu-id="92f9f-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="92f9f-134">请求</span><span class="sxs-lookup"><span data-stu-id="92f9f-134">Request</span></span>
+<span data-ttu-id="92f9f-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="92f9f-135">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="92f9f-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="92f9f-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_conversation"
@@ -68,10 +70,24 @@ Content-type: application/json
   }]
 }
 ```
-<span data-ttu-id="f8f80-136">在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f8f80-136">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="f8f80-137">响应</span><span class="sxs-lookup"><span data-stu-id="f8f80-137">Response</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="92f9f-137">C#</span><span class="sxs-lookup"><span data-stu-id="92f9f-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationthread-from-conversation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="f8f80-p104">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新线程的 `id`。下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f8f80-p104">If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body. Here is an example of the response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="92f9f-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="92f9f-138">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationthread-from-conversation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="92f9f-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="92f9f-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversationthread-from-conversation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="92f9f-140">在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="92f9f-140">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="92f9f-141">响应</span><span class="sxs-lookup"><span data-stu-id="92f9f-141">Response</span></span>
+
+<span data-ttu-id="92f9f-p104">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新线程的 `id`。下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="92f9f-p104">If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body. Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,18 +102,6 @@ Content-length: 346
   "id": "thread-id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f8f80-140">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f8f80-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f8f80-141">C#</span><span class="sxs-lookup"><span data-stu-id="f8f80-141">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f8f80-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="f8f80-142">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f8f80-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="f8f80-143">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -109,9 +113,6 @@ Content-length: 346
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

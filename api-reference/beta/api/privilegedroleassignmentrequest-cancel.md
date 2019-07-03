@@ -2,59 +2,61 @@
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: 99b02ac432eab2e0fe8f2b860b92e03719404b2c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2501d34cc7f3facf635b116369a8235adffa986a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264153"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35444916"
 ---
-# <a name="cancel-privilegedroleassignmentrequest"></a><span data-ttu-id="3bcd8-103">取消 privilegedRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="3bcd8-103">Cancel privilegedRoleAssignmentRequest</span></span>
+# <a name="cancel-privilegedroleassignmentrequest"></a><span data-ttu-id="2c445-103">取消 privilegedRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="2c445-103">Cancel privilegedRoleAssignmentRequest</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3bcd8-104">取消[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-104">Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span>
+<span data-ttu-id="2c445-104">取消[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)。</span><span class="sxs-lookup"><span data-stu-id="2c445-104">Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3bcd8-105">权限</span><span class="sxs-lookup"><span data-stu-id="3bcd8-105">Permissions</span></span>
-<span data-ttu-id="3bcd8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2c445-105">权限</span><span class="sxs-lookup"><span data-stu-id="2c445-105">Permissions</span></span>
+<span data-ttu-id="2c445-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2c445-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3bcd8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3bcd8-108">Permission type</span></span>                        | <span data-ttu-id="3bcd8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3bcd8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2c445-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2c445-108">Permission type</span></span>                        | <span data-ttu-id="2c445-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2c445-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3bcd8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3bcd8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3bcd8-111">PrivilegedAccess 的 AzureAD、Directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="3bcd8-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="3bcd8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3bcd8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3bcd8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-113">Not supported.</span></span> |
-|<span data-ttu-id="3bcd8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3bcd8-114">Application</span></span>                            | <span data-ttu-id="3bcd8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-115">Not supported.</span></span> |
+|<span data-ttu-id="2c445-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2c445-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2c445-111">PrivilegedAccess 的 AzureAD、Directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="2c445-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2c445-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2c445-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c445-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="2c445-113">Not supported.</span></span> |
+|<span data-ttu-id="2c445-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2c445-114">Application</span></span>                            | <span data-ttu-id="2c445-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2c445-115">Not supported.</span></span> |
 
 
-### <a name="http-request"></a><span data-ttu-id="3bcd8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3bcd8-116">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="2c445-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2c445-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignmentRequests({requestid})/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3bcd8-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="3bcd8-117">Request headers</span></span>
-| <span data-ttu-id="3bcd8-118">名称</span><span class="sxs-lookup"><span data-stu-id="3bcd8-118">Name</span></span>      |<span data-ttu-id="3bcd8-119">说明</span><span class="sxs-lookup"><span data-stu-id="3bcd8-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c445-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="2c445-117">Request headers</span></span>
+| <span data-ttu-id="2c445-118">名称</span><span class="sxs-lookup"><span data-stu-id="2c445-118">Name</span></span>      |<span data-ttu-id="2c445-119">说明</span><span class="sxs-lookup"><span data-stu-id="2c445-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3bcd8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3bcd8-120">Authorization</span></span>  | <span data-ttu-id="3bcd8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2c445-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2c445-120">Authorization</span></span>  | <span data-ttu-id="2c445-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2c445-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3bcd8-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="3bcd8-123">Request body</span></span>
-<span data-ttu-id="3bcd8-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c445-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="2c445-123">Request body</span></span>
+<span data-ttu-id="2c445-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2c445-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3bcd8-125">响应</span><span class="sxs-lookup"><span data-stu-id="3bcd8-125">Response</span></span>
-<span data-ttu-id="3bcd8-126">如果成功，此方法返回 `200 Ok` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-126">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="3bcd8-127">它在响应正文中返回[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-127">It returns [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2c445-125">响应</span><span class="sxs-lookup"><span data-stu-id="2c445-125">Response</span></span>
+<span data-ttu-id="2c445-126">如果成功，此方法返回 `200 Ok` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="2c445-126">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="2c445-127">它在响应正文中返回[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 。</span><span class="sxs-lookup"><span data-stu-id="2c445-127">It returns [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) in the response body.</span></span>
 
-### <a name="error-codes"></a><span data-ttu-id="3bcd8-128">错误代码</span><span class="sxs-lookup"><span data-stu-id="3bcd8-128">Error codes</span></span>
-<span data-ttu-id="3bcd8-129">此 API 返回标准的 HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-129">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="3bcd8-130">此外, 它还返回下表中列出的自定义错误代码。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-130">In addition, it returns the custom error codes listed in the following table.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="2c445-128">错误代码</span><span class="sxs-lookup"><span data-stu-id="2c445-128">Error codes</span></span>
+<span data-ttu-id="2c445-129">此 API 返回标准的 HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="2c445-129">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="2c445-130">此外, 它还返回下表中列出的自定义错误代码。</span><span class="sxs-lookup"><span data-stu-id="2c445-130">In addition, it returns the custom error codes listed in the following table.</span></span>
 
-|<span data-ttu-id="3bcd8-131">错误代码</span><span class="sxs-lookup"><span data-stu-id="3bcd8-131">Error code</span></span>     | <span data-ttu-id="3bcd8-132">错误消息</span><span class="sxs-lookup"><span data-stu-id="3bcd8-132">Error message</span></span>              |
+|<span data-ttu-id="2c445-131">错误代码</span><span class="sxs-lookup"><span data-stu-id="2c445-131">Error code</span></span>     | <span data-ttu-id="2c445-132">错误消息</span><span class="sxs-lookup"><span data-stu-id="2c445-132">Error message</span></span>              |
 |:--------------------| :---------------------|
-| <span data-ttu-id="3bcd8-133">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="3bcd8-133">400 BadRequest</span></span> | <span data-ttu-id="3bcd8-134">RequestId 不能为 Null。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-134">RequestId cannot be Null.</span></span> |
-| <span data-ttu-id="3bcd8-135">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="3bcd8-135">400 BadRequest</span></span> | <span data-ttu-id="3bcd8-136">找不到请求 ID 的请求。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-136">Request with request ID not found.</span></span> |
-| <span data-ttu-id="3bcd8-137">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="3bcd8-137">400 BadRequest</span></span> | <span data-ttu-id="3bcd8-138">只能在状态为 "已计划" 和 "PendingApproval" 时执行取消。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-138">Cancellation can be done only on status Scheduled and PendingApproval.</span></span> |
-| <span data-ttu-id="3bcd8-139">403未经授权</span><span class="sxs-lookup"><span data-stu-id="3bcd8-139">403 UnAuthorized</span></span> | <span data-ttu-id="3bcd8-140">不允许请求者进行取消呼叫或找不到请求。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-140">Requester not allowed to make Cancel call or request not found.</span></span> |
+| <span data-ttu-id="2c445-133">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="2c445-133">400 BadRequest</span></span> | <span data-ttu-id="2c445-134">RequestId 不能为 Null。</span><span class="sxs-lookup"><span data-stu-id="2c445-134">RequestId cannot be Null.</span></span> |
+| <span data-ttu-id="2c445-135">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="2c445-135">400 BadRequest</span></span> | <span data-ttu-id="2c445-136">找不到请求 ID 的请求。</span><span class="sxs-lookup"><span data-stu-id="2c445-136">Request with request ID not found.</span></span> |
+| <span data-ttu-id="2c445-137">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="2c445-137">400 BadRequest</span></span> | <span data-ttu-id="2c445-138">只能在状态为 "已计划" 和 "PendingApproval" 时执行取消。</span><span class="sxs-lookup"><span data-stu-id="2c445-138">Cancellation can be done only on status Scheduled and PendingApproval.</span></span> |
+| <span data-ttu-id="2c445-139">403未经授权</span><span class="sxs-lookup"><span data-stu-id="2c445-139">403 UnAuthorized</span></span> | <span data-ttu-id="2c445-140">不允许请求者进行取消呼叫或找不到请求。</span><span class="sxs-lookup"><span data-stu-id="2c445-140">Requester not allowed to make Cancel call or request not found.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="3bcd8-141">示例</span><span class="sxs-lookup"><span data-stu-id="3bcd8-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3bcd8-142">请求</span><span class="sxs-lookup"><span data-stu-id="3bcd8-142">Request</span></span>
-<span data-ttu-id="3bcd8-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3bcd8-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2c445-141">示例</span><span class="sxs-lookup"><span data-stu-id="2c445-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2c445-142">请求</span><span class="sxs-lookup"><span data-stu-id="2c445-142">Request</span></span>
+<span data-ttu-id="2c445-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2c445-143">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="2c445-144">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="2c445-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cancel_privilegedRoleAssignmentRequests"
@@ -62,8 +64,22 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="2c445-145">C#</span><span class="sxs-lookup"><span data-stu-id="2c445-145">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/cancel-privilegedroleassignmentrequests-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="3bcd8-144">响应</span><span class="sxs-lookup"><span data-stu-id="3bcd8-144">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2c445-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="2c445-146">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cancel-privilegedroleassignmentrequests-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2c445-147">目标-C</span><span class="sxs-lookup"><span data-stu-id="2c445-147">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/cancel-privilegedroleassignmentrequests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="2c445-148">响应</span><span class="sxs-lookup"><span data-stu-id="2c445-148">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -96,18 +112,6 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3bcd8-145">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="3bcd8-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3bcd8-146">C#</span><span class="sxs-lookup"><span data-stu-id="3bcd8-146">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3bcd8-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="3bcd8-147">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3bcd8-148">目标-C</span><span class="sxs-lookup"><span data-stu-id="3bcd8-148">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -119,9 +123,6 @@ Content-length: 304
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -4,58 +4,58 @@ description: 拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 718cb80f6b60e3e664c0a209fa91eb74a34691d7
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: c8b087b2190ac5ae87fe0d834350c8bc75973c20
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262214"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438599"
 ---
-# <a name="call-reject"></a><span data-ttu-id="dd033-103">呼叫: 拒绝</span><span class="sxs-lookup"><span data-stu-id="dd033-103">call: reject</span></span>
+# <a name="call-reject"></a><span data-ttu-id="7ee3c-103">呼叫: 拒绝</span><span class="sxs-lookup"><span data-stu-id="7ee3c-103">call: reject</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dd033-104">拒绝传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="dd033-104">Reject an incoming call.</span></span>
+<span data-ttu-id="7ee3c-104">拒绝传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-104">Reject an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dd033-105">权限</span><span class="sxs-lookup"><span data-stu-id="dd033-105">Permissions</span></span>
-<span data-ttu-id="dd033-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dd033-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ee3c-105">权限</span><span class="sxs-lookup"><span data-stu-id="7ee3c-105">Permissions</span></span>
+<span data-ttu-id="7ee3c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="dd033-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dd033-108">Permission type</span></span> | <span data-ttu-id="dd033-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dd033-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="7ee3c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7ee3c-108">Permission type</span></span> | <span data-ttu-id="7ee3c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7ee3c-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="dd033-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dd033-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="dd033-111">不支持</span><span class="sxs-lookup"><span data-stu-id="dd033-111">Not Supported</span></span>                       |
-| <span data-ttu-id="dd033-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dd033-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dd033-113">不支持</span><span class="sxs-lookup"><span data-stu-id="dd033-113">Not Supported</span></span>                       |
-| <span data-ttu-id="dd033-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="dd033-114">Application</span></span>     | <span data-ttu-id="dd033-115">无</span><span class="sxs-lookup"><span data-stu-id="dd033-115">None</span></span>                                                       |
+| <span data-ttu-id="7ee3c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7ee3c-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7ee3c-111">不支持</span><span class="sxs-lookup"><span data-stu-id="7ee3c-111">Not Supported</span></span>                       |
+| <span data-ttu-id="7ee3c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7ee3c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ee3c-113">不支持</span><span class="sxs-lookup"><span data-stu-id="7ee3c-113">Not Supported</span></span>                       |
+| <span data-ttu-id="7ee3c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7ee3c-114">Application</span></span>     | <span data-ttu-id="7ee3c-115">无</span><span class="sxs-lookup"><span data-stu-id="7ee3c-115">None</span></span>                                                       |
 
-## <a name="http-request"></a><span data-ttu-id="dd033-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dd033-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ee3c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7ee3c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
 POST /applications/{id}/calls/{id}/reject
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dd033-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="dd033-117">Request headers</span></span>
-| <span data-ttu-id="dd033-118">名称</span><span class="sxs-lookup"><span data-stu-id="dd033-118">Name</span></span>          | <span data-ttu-id="dd033-119">说明</span><span class="sxs-lookup"><span data-stu-id="dd033-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="7ee3c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7ee3c-117">Request headers</span></span>
+| <span data-ttu-id="7ee3c-118">名称</span><span class="sxs-lookup"><span data-stu-id="7ee3c-118">Name</span></span>          | <span data-ttu-id="7ee3c-119">说明</span><span class="sxs-lookup"><span data-stu-id="7ee3c-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="dd033-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd033-120">Authorization</span></span> | <span data-ttu-id="dd033-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dd033-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7ee3c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7ee3c-120">Authorization</span></span> | <span data-ttu-id="7ee3c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dd033-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="dd033-123">Request body</span></span>
-<span data-ttu-id="dd033-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="dd033-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ee3c-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="7ee3c-123">Request body</span></span>
+<span data-ttu-id="7ee3c-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="dd033-125">参数</span><span class="sxs-lookup"><span data-stu-id="dd033-125">Parameter</span></span>      | <span data-ttu-id="dd033-126">类型</span><span class="sxs-lookup"><span data-stu-id="dd033-126">Type</span></span>    |<span data-ttu-id="dd033-127">说明</span><span class="sxs-lookup"><span data-stu-id="dd033-127">Description</span></span>|
+| <span data-ttu-id="7ee3c-125">参数</span><span class="sxs-lookup"><span data-stu-id="7ee3c-125">Parameter</span></span>      | <span data-ttu-id="7ee3c-126">类型</span><span class="sxs-lookup"><span data-stu-id="7ee3c-126">Type</span></span>    |<span data-ttu-id="7ee3c-127">说明</span><span class="sxs-lookup"><span data-stu-id="7ee3c-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dd033-128">在于</span><span class="sxs-lookup"><span data-stu-id="dd033-128">reason</span></span>|<span data-ttu-id="dd033-129">String</span><span class="sxs-lookup"><span data-stu-id="dd033-129">String</span></span>|<span data-ttu-id="dd033-130">拒绝原因。</span><span class="sxs-lookup"><span data-stu-id="dd033-130">The rejection reason.</span></span>|
+|<span data-ttu-id="7ee3c-128">在于</span><span class="sxs-lookup"><span data-stu-id="7ee3c-128">reason</span></span>|<span data-ttu-id="7ee3c-129">String</span><span class="sxs-lookup"><span data-stu-id="7ee3c-129">String</span></span>|<span data-ttu-id="7ee3c-130">拒绝原因。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-130">The rejection reason.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dd033-131">响应</span><span class="sxs-lookup"><span data-stu-id="dd033-131">Response</span></span>
-<span data-ttu-id="dd033-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="dd033-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7ee3c-131">响应</span><span class="sxs-lookup"><span data-stu-id="7ee3c-131">Response</span></span>
+<span data-ttu-id="7ee3c-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
 ```http
 Returns `202 Accepted` response code
 ```
 
-## <a name="example"></a><span data-ttu-id="dd033-134">示例</span><span class="sxs-lookup"><span data-stu-id="dd033-134">Example</span></span>
-<span data-ttu-id="dd033-135">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="dd033-135">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="7ee3c-134">示例</span><span class="sxs-lookup"><span data-stu-id="7ee3c-134">Example</span></span>
+<span data-ttu-id="7ee3c-135">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-135">The following example shows how to call this API.</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="dd033-136">通知传入</span><span class="sxs-lookup"><span data-stu-id="dd033-136">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="7ee3c-136">通知传入</span><span class="sxs-lookup"><span data-stu-id="7ee3c-136">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -108,9 +108,11 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="dd033-137">请求</span><span class="sxs-lookup"><span data-stu-id="dd033-137">Request</span></span>
-<span data-ttu-id="dd033-138">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="dd033-138">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="7ee3c-137">请求</span><span class="sxs-lookup"><span data-stu-id="7ee3c-137">Request</span></span>
+<span data-ttu-id="7ee3c-138">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-138">The following example shows the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="7ee3c-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7ee3c-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject"
@@ -124,9 +126,23 @@ Content-Length: 24
   "reason": "none"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7ee3c-140">C#</span><span class="sxs-lookup"><span data-stu-id="7ee3c-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="dd033-139">响应</span><span class="sxs-lookup"><span data-stu-id="dd033-139">Response</span></span>
-<span data-ttu-id="dd033-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="dd033-140">Here is an example of the response.</span></span> 
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7ee3c-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="7ee3c-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7ee3c-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="7ee3c-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="7ee3c-143">响应</span><span class="sxs-lookup"><span data-stu-id="7ee3c-143">Response</span></span>
+<span data-ttu-id="7ee3c-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="7ee3c-144">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -136,20 +152,8 @@ Content-Length: 24
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="dd033-141">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="dd033-141">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="dd033-142">C#</span><span class="sxs-lookup"><span data-stu-id="dd033-142">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/call-reject-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dd033-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="dd033-143">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/call-reject-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="dd033-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="dd033-144">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/call-reject-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-##### <a name="notification---deleted"></a><span data-ttu-id="dd033-145">通知-已删除</span><span class="sxs-lookup"><span data-stu-id="dd033-145">Notification - deleted</span></span>
+##### <a name="notification---deleted"></a><span data-ttu-id="7ee3c-145">通知-已删除</span><span class="sxs-lookup"><span data-stu-id="7ee3c-145">Notification - deleted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -187,9 +191,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-reject.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/call-reject.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-reject.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

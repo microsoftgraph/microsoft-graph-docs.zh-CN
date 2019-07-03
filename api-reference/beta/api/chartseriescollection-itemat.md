@@ -4,54 +4,56 @@ description: 根据其在集合中的位置检索系列
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b4da971b2cc308481493a35f5522f1f563f5a856
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 97c78588d97a3cfe38e1be87449428dafd341877
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591865"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437899"
 ---
-# <a name="chartseriescollection-itemat"></a><span data-ttu-id="cea68-103">ChartSeriesCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="cea68-103">ChartSeriesCollection: ItemAt</span></span>
+# <a name="chartseriescollection-itemat"></a><span data-ttu-id="b8042-103">ChartSeriesCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="b8042-103">ChartSeriesCollection: ItemAt</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cea68-104">根据其在集合中的位置检索系列</span><span class="sxs-lookup"><span data-stu-id="cea68-104">Retrieves a series based on its position in the collection</span></span>
-## <a name="permissions"></a><span data-ttu-id="cea68-105">权限</span><span class="sxs-lookup"><span data-stu-id="cea68-105">Permissions</span></span>
-<span data-ttu-id="cea68-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cea68-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b8042-104">根据其在集合中的位置检索系列</span><span class="sxs-lookup"><span data-stu-id="b8042-104">Retrieves a series based on its position in the collection</span></span>
+## <a name="permissions"></a><span data-ttu-id="b8042-105">权限</span><span class="sxs-lookup"><span data-stu-id="b8042-105">Permissions</span></span>
+<span data-ttu-id="b8042-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b8042-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cea68-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="cea68-108">Permission type</span></span>      | <span data-ttu-id="cea68-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cea68-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b8042-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b8042-108">Permission type</span></span>      | <span data-ttu-id="b8042-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b8042-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cea68-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cea68-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cea68-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cea68-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="cea68-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cea68-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cea68-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cea68-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="cea68-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="cea68-114">Application</span></span> | <span data-ttu-id="cea68-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cea68-115">Not supported.</span></span> |
+|<span data-ttu-id="b8042-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b8042-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b8042-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8042-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b8042-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b8042-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b8042-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8042-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b8042-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b8042-114">Application</span></span> | <span data-ttu-id="b8042-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b8042-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cea68-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cea68-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b8042-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b8042-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/series/ItemAt
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="cea68-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="cea68-117">Request headers</span></span>
-| <span data-ttu-id="cea68-118">名称</span><span class="sxs-lookup"><span data-stu-id="cea68-118">Name</span></span>       | <span data-ttu-id="cea68-119">说明</span><span class="sxs-lookup"><span data-stu-id="cea68-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b8042-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="b8042-117">Request headers</span></span>
+| <span data-ttu-id="b8042-118">名称</span><span class="sxs-lookup"><span data-stu-id="b8042-118">Name</span></span>       | <span data-ttu-id="b8042-119">说明</span><span class="sxs-lookup"><span data-stu-id="b8042-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="cea68-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cea68-120">Authorization</span></span>  | <span data-ttu-id="cea68-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cea68-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cea68-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="cea68-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="cea68-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="cea68-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b8042-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8042-120">Authorization</span></span>  | <span data-ttu-id="b8042-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b8042-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b8042-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b8042-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="b8042-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="b8042-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cea68-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cea68-126">Request body</span></span>
-<span data-ttu-id="cea68-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="cea68-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b8042-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="b8042-126">Request body</span></span>
+<span data-ttu-id="b8042-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="b8042-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="cea68-128">参数</span><span class="sxs-lookup"><span data-stu-id="cea68-128">Parameter</span></span>    | <span data-ttu-id="cea68-129">类型</span><span class="sxs-lookup"><span data-stu-id="cea68-129">Type</span></span>   |<span data-ttu-id="cea68-130">说明</span><span class="sxs-lookup"><span data-stu-id="cea68-130">Description</span></span>|
+| <span data-ttu-id="b8042-128">参数</span><span class="sxs-lookup"><span data-stu-id="b8042-128">Parameter</span></span>    | <span data-ttu-id="b8042-129">类型</span><span class="sxs-lookup"><span data-stu-id="b8042-129">Type</span></span>   |<span data-ttu-id="b8042-130">说明</span><span class="sxs-lookup"><span data-stu-id="b8042-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cea68-131">index</span><span class="sxs-lookup"><span data-stu-id="cea68-131">index</span></span>|<span data-ttu-id="cea68-132">number</span><span class="sxs-lookup"><span data-stu-id="cea68-132">number</span></span>|<span data-ttu-id="cea68-p104">要检索的对象的索引值。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="cea68-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="b8042-131">index</span><span class="sxs-lookup"><span data-stu-id="b8042-131">index</span></span>|<span data-ttu-id="b8042-132">number</span><span class="sxs-lookup"><span data-stu-id="b8042-132">number</span></span>|<span data-ttu-id="b8042-p104">要检索的对象的索引值。从零开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="b8042-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="cea68-135">响应</span><span class="sxs-lookup"><span data-stu-id="cea68-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b8042-135">响应</span><span class="sxs-lookup"><span data-stu-id="b8042-135">Response</span></span>
 
-<span data-ttu-id="cea68-136">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookChartSeries](../resources/workbookchartseries.md)对象。</span><span class="sxs-lookup"><span data-stu-id="cea68-136">If successful, this method returns `200 OK` response code and [workbookChartSeries](../resources/workbookchartseries.md) object in the response body.</span></span>
+<span data-ttu-id="b8042-136">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookChartSeries](../resources/workbookchartseries.md)对象。</span><span class="sxs-lookup"><span data-stu-id="b8042-136">If successful, this method returns `200 OK` response code and [workbookChartSeries](../resources/workbookchartseries.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cea68-137">示例</span><span class="sxs-lookup"><span data-stu-id="cea68-137">Example</span></span>
-<span data-ttu-id="cea68-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="cea68-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="cea68-139">请求</span><span class="sxs-lookup"><span data-stu-id="cea68-139">Request</span></span>
-<span data-ttu-id="cea68-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cea68-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b8042-137">示例</span><span class="sxs-lookup"><span data-stu-id="b8042-137">Example</span></span>
+<span data-ttu-id="b8042-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="b8042-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b8042-139">请求</span><span class="sxs-lookup"><span data-stu-id="b8042-139">Request</span></span>
+<span data-ttu-id="b8042-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b8042-140">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b8042-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b8042-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chartseriescollection_itemat"
@@ -66,9 +68,15 @@ Content-length: 20
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b8042-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="b8042-142">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chartseriescollection-itemat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="cea68-141">响应</span><span class="sxs-lookup"><span data-stu-id="cea68-141">Response</span></span>
-<span data-ttu-id="cea68-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cea68-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+---
+
+
+##### <a name="response"></a><span data-ttu-id="b8042-143">响应</span><span class="sxs-lookup"><span data-stu-id="b8042-143">Response</span></span>
+<span data-ttu-id="b8042-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b8042-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,14 +91,6 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cea68-145">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="cea68-145">SDK sample code</span></span>
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cea68-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="cea68-146">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/chartseriescollection_itemat-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,7 +102,6 @@ Content-length: 26
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/chartseriescollection-itemat.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

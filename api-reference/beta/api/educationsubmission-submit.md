@@ -4,49 +4,51 @@ description: 指示学生完成工作并准备好在工作分配中进行准备�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 55e8704df4374ea7fe42dc8ac7af6f496bc8984e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 58ddf90e574e146ebdbd9134ec41ae2ac76637bb
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35259498"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35441406"
 ---
-# <a name="educationsubmission-submit"></a><span data-ttu-id="6cb65-104">educationSubmission: 提交</span><span class="sxs-lookup"><span data-stu-id="6cb65-104">educationSubmission: submit</span></span>
+# <a name="educationsubmission-submit"></a><span data-ttu-id="a0711-104">educationSubmission: 提交</span><span class="sxs-lookup"><span data-stu-id="a0711-104">educationSubmission: submit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6cb65-105">指示学生完成工作并准备好在工作分配中进行准备的操作。</span><span class="sxs-lookup"><span data-stu-id="6cb65-105">An action that indicates that a student is done with the work and is ready to hand in the assignment.</span></span> <span data-ttu-id="6cb65-106">仅学生可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="6cb65-106">This action can only be taken by the student.</span></span> <span data-ttu-id="6cb65-107">这会将提交状态从 "正在运行" 更改为 "已提交"。</span><span class="sxs-lookup"><span data-stu-id="6cb65-107">This will change the status of the submission from "working" to "submitted".</span></span> <span data-ttu-id="6cb65-108">在提交过程中, 所有资源都将复制到 submittedResources 存储桶中。</span><span class="sxs-lookup"><span data-stu-id="6cb65-108">During the submit process, all the resources will be copied to the submittedResources bucket.</span></span> <span data-ttu-id="6cb65-109">教师将在 "已提交的资源" 列表中查找评分。</span><span class="sxs-lookup"><span data-stu-id="6cb65-109">The teacher will be looking at the submitted resources list for grading.</span></span>
+<span data-ttu-id="a0711-105">指示学生完成工作并准备好在工作分配中进行准备的操作。</span><span class="sxs-lookup"><span data-stu-id="a0711-105">An action that indicates that a student is done with the work and is ready to hand in the assignment.</span></span> <span data-ttu-id="a0711-106">仅学生可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="a0711-106">This action can only be taken by the student.</span></span> <span data-ttu-id="a0711-107">这会将提交状态从 "正在运行" 更改为 "已提交"。</span><span class="sxs-lookup"><span data-stu-id="a0711-107">This will change the status of the submission from "working" to "submitted".</span></span> <span data-ttu-id="a0711-108">在提交过程中, 所有资源都将复制到 submittedResources 存储桶中。</span><span class="sxs-lookup"><span data-stu-id="a0711-108">During the submit process, all the resources will be copied to the submittedResources bucket.</span></span> <span data-ttu-id="a0711-109">教师将在 "已提交的资源" 列表中查找评分。</span><span class="sxs-lookup"><span data-stu-id="a0711-109">The teacher will be looking at the submitted resources list for grading.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6cb65-110">权限</span><span class="sxs-lookup"><span data-stu-id="6cb65-110">Permissions</span></span>
-<span data-ttu-id="6cb65-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6cb65-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0711-110">权限</span><span class="sxs-lookup"><span data-stu-id="a0711-110">Permissions</span></span>
+<span data-ttu-id="a0711-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0711-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6cb65-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="6cb65-113">Permission type</span></span>      | <span data-ttu-id="6cb65-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6cb65-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0711-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0711-113">Permission type</span></span>      | <span data-ttu-id="a0711-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a0711-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6cb65-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6cb65-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="6cb65-116">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="6cb65-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="6cb65-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6cb65-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="6cb65-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="6cb65-118">Not supported.</span></span>  |
-|<span data-ttu-id="6cb65-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="6cb65-119">Application</span></span> | <span data-ttu-id="6cb65-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="6cb65-120">Not supported.</span></span> | 
+|<span data-ttu-id="a0711-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0711-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="a0711-116">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="a0711-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="a0711-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0711-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="a0711-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0711-118">Not supported.</span></span>  |
+|<span data-ttu-id="a0711-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0711-119">Application</span></span> | <span data-ttu-id="a0711-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0711-120">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="6cb65-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6cb65-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0711-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0711-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6cb65-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="6cb65-122">Request headers</span></span>
-| <span data-ttu-id="6cb65-123">标头</span><span class="sxs-lookup"><span data-stu-id="6cb65-123">Header</span></span>       | <span data-ttu-id="6cb65-124">值</span><span class="sxs-lookup"><span data-stu-id="6cb65-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a0711-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0711-122">Request headers</span></span>
+| <span data-ttu-id="a0711-123">标头</span><span class="sxs-lookup"><span data-stu-id="a0711-123">Header</span></span>       | <span data-ttu-id="a0711-124">值</span><span class="sxs-lookup"><span data-stu-id="a0711-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6cb65-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="6cb65-125">Authorization</span></span>  | <span data-ttu-id="6cb65-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6cb65-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a0711-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0711-125">Authorization</span></span>  | <span data-ttu-id="a0711-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a0711-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6cb65-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="6cb65-128">Request body</span></span>
-<span data-ttu-id="6cb65-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6cb65-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0711-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0711-128">Request body</span></span>
+<span data-ttu-id="a0711-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a0711-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6cb65-130">响应</span><span class="sxs-lookup"><span data-stu-id="6cb65-130">Response</span></span>
-<span data-ttu-id="6cb65-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="6cb65-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a0711-130">响应</span><span class="sxs-lookup"><span data-stu-id="a0711-130">Response</span></span>
+<span data-ttu-id="a0711-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="a0711-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6cb65-133">示例</span><span class="sxs-lookup"><span data-stu-id="6cb65-133">Example</span></span>
-<span data-ttu-id="6cb65-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="6cb65-134">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6cb65-135">请求</span><span class="sxs-lookup"><span data-stu-id="6cb65-135">Request</span></span>
-<span data-ttu-id="6cb65-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6cb65-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a0711-133">示例</span><span class="sxs-lookup"><span data-stu-id="a0711-133">Example</span></span>
+<span data-ttu-id="a0711-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a0711-134">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a0711-135">请求</span><span class="sxs-lookup"><span data-stu-id="a0711-135">Request</span></span>
+<span data-ttu-id="a0711-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a0711-136">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a0711-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a0711-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_submit"
@@ -54,9 +56,23 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submit
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a0711-138">C#</span><span class="sxs-lookup"><span data-stu-id="a0711-138">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-submit-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="6cb65-137">响应</span><span class="sxs-lookup"><span data-stu-id="6cb65-137">Response</span></span>
-<span data-ttu-id="6cb65-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6cb65-138">The following is an example of the response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a0711-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="a0711-139">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-submit-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a0711-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="a0711-140">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-submit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="a0711-141">响应</span><span class="sxs-lookup"><span data-stu-id="a0711-141">Response</span></span>
+<span data-ttu-id="a0711-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a0711-142">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -66,18 +82,6 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="6cb65-139">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="6cb65-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="6cb65-140">C#</span><span class="sxs-lookup"><span data-stu-id="6cb65-140">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/educationsubmission_submit-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6cb65-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="6cb65-141">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/educationsubmission_submit-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="6cb65-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="6cb65-142">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/educationsubmission_submit-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,9 +93,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -2,66 +2,68 @@
 title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
 localization_priority: Normal
-ms.openlocfilehash: 73a6d8ea95d4f691cef9fc3610f7e997e9fb5be8
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b5a38be7944aec81a3d94c3cae195995c07ece20
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263516"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35440727"
 ---
-# <a name="update-governancerolesetting"></a><span data-ttu-id="1aa31-103">更新 governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="1aa31-103">Update governanceRoleSetting</span></span>
+# <a name="update-governancerolesetting"></a><span data-ttu-id="d3d21-103">更新 governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="d3d21-103">Update governanceRoleSetting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1aa31-104">更新[governanceRoleSetting](../resources/governancerolesetting.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="1aa31-104">Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
+<span data-ttu-id="d3d21-104">更新[governanceRoleSetting](../resources/governancerolesetting.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="d3d21-104">Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1aa31-105">权限</span><span class="sxs-lookup"><span data-stu-id="1aa31-105">Permissions</span></span>
-<span data-ttu-id="1aa31-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1aa31-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3d21-105">权限</span><span class="sxs-lookup"><span data-stu-id="d3d21-105">Permissions</span></span>
+<span data-ttu-id="d3d21-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d3d21-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-><span data-ttu-id="1aa31-108">**注意:** 此 API 还要求请求者在资源上至少有`Active`一个管理员角色分配`owner` ( `user access administrator`或)。</span><span class="sxs-lookup"><span data-stu-id="1aa31-108">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.</span></span>
+><span data-ttu-id="d3d21-108">**注意:** 此 API 还要求请求者在资源上至少有`Active`一个管理员角色分配`owner` ( `user access administrator`或)。</span><span class="sxs-lookup"><span data-stu-id="d3d21-108">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.</span></span>
 
-|<span data-ttu-id="1aa31-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1aa31-109">Permission type</span></span>      | <span data-ttu-id="1aa31-110">权限</span><span class="sxs-lookup"><span data-stu-id="1aa31-110">Permissions</span></span>              |
+|<span data-ttu-id="d3d21-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="d3d21-109">Permission type</span></span>      | <span data-ttu-id="d3d21-110">权限</span><span class="sxs-lookup"><span data-stu-id="d3d21-110">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1aa31-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1aa31-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1aa31-112">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="1aa31-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="1aa31-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1aa31-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1aa31-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1aa31-114">Not supported.</span></span>    |
-|<span data-ttu-id="1aa31-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1aa31-115">Application</span></span> | <span data-ttu-id="1aa31-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1aa31-116">Not supported.</span></span> |
+|<span data-ttu-id="d3d21-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d3d21-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d3d21-112">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="d3d21-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="d3d21-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d3d21-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3d21-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="d3d21-114">Not supported.</span></span>    |
+|<span data-ttu-id="d3d21-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="d3d21-115">Application</span></span> | <span data-ttu-id="d3d21-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="d3d21-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1aa31-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1aa31-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3d21-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d3d21-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="1aa31-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="1aa31-118">Request headers</span></span>
-| <span data-ttu-id="1aa31-119">名称</span><span class="sxs-lookup"><span data-stu-id="1aa31-119">Name</span></span>       | <span data-ttu-id="1aa31-120">说明</span><span class="sxs-lookup"><span data-stu-id="1aa31-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d3d21-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="d3d21-118">Request headers</span></span>
+| <span data-ttu-id="d3d21-119">名称</span><span class="sxs-lookup"><span data-stu-id="d3d21-119">Name</span></span>       | <span data-ttu-id="d3d21-120">说明</span><span class="sxs-lookup"><span data-stu-id="d3d21-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="1aa31-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1aa31-121">Authorization</span></span>  | <span data-ttu-id="1aa31-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="1aa31-122">Bearer {code}</span></span>|
-| <span data-ttu-id="1aa31-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="1aa31-123">Content-type</span></span>  | <span data-ttu-id="1aa31-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1aa31-124">application/json</span></span>|
+| <span data-ttu-id="d3d21-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d3d21-121">Authorization</span></span>  | <span data-ttu-id="d3d21-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d3d21-122">Bearer {code}</span></span>|
+| <span data-ttu-id="d3d21-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="d3d21-123">Content-type</span></span>  | <span data-ttu-id="d3d21-124">application/json</span><span class="sxs-lookup"><span data-stu-id="d3d21-124">application/json</span></span>|
 
 
-## <a name="request-body"></a><span data-ttu-id="1aa31-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="1aa31-125">Request body</span></span>
-<span data-ttu-id="1aa31-126">在请求正文中, 提供需要更新的[governanceRuleSettings](../resources/governancerulesetting.md)的值。</span><span class="sxs-lookup"><span data-stu-id="1aa31-126">In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="d3d21-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="d3d21-125">Request body</span></span>
+<span data-ttu-id="d3d21-126">在请求正文中, 提供需要更新的[governanceRuleSettings](../resources/governancerulesetting.md)的值。</span><span class="sxs-lookup"><span data-stu-id="d3d21-126">In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated.</span></span> 
 
-| <span data-ttu-id="1aa31-127">属性</span><span class="sxs-lookup"><span data-stu-id="1aa31-127">Property</span></span>     | <span data-ttu-id="1aa31-128">类型</span><span class="sxs-lookup"><span data-stu-id="1aa31-128">Type</span></span>   |<span data-ttu-id="1aa31-129">说明</span><span class="sxs-lookup"><span data-stu-id="1aa31-129">Description</span></span>|
+| <span data-ttu-id="d3d21-127">属性</span><span class="sxs-lookup"><span data-stu-id="d3d21-127">Property</span></span>     | <span data-ttu-id="d3d21-128">类型</span><span class="sxs-lookup"><span data-stu-id="d3d21-128">Type</span></span>   |<span data-ttu-id="d3d21-129">说明</span><span class="sxs-lookup"><span data-stu-id="d3d21-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1aa31-130">adminEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="1aa31-130">adminEligibleSettings</span></span>|<span data-ttu-id="1aa31-131">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="1aa31-131">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="1aa31-132">在管理员尝试添加符合条件的角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="1aa31-132">The rule settings that are evaluated when an administrator tries to add an eligible role assignment.</span></span>|
-|<span data-ttu-id="1aa31-133">adminMemberSettings</span><span class="sxs-lookup"><span data-stu-id="1aa31-133">adminMemberSettings</span></span>|<span data-ttu-id="1aa31-134">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="1aa31-134">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="1aa31-135">在管理员尝试添加直接成员角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="1aa31-135">The rule settings that are evaluated when an administrator tries to add a direct member role assignment.</span></span>|
-|<span data-ttu-id="1aa31-136">userEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="1aa31-136">userEligibleSettings</span></span>|<span data-ttu-id="1aa31-137">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="1aa31-137">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="1aa31-138">用户尝试添加符合条件的角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="1aa31-138">The rule settings that are evaluated when a user tries to add an eligible role assignment.</span></span> <span data-ttu-id="1aa31-139">目前不支持这`pimforazurerbac`种情况, 在将来的方案中可能会用到。</span><span class="sxs-lookup"><span data-stu-id="1aa31-139">This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.</span></span>|
-|<span data-ttu-id="1aa31-140">userMemberSettings</span><span class="sxs-lookup"><span data-stu-id="1aa31-140">userMemberSettings</span></span>|<span data-ttu-id="1aa31-141">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="1aa31-141">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="1aa31-142">用户尝试激活他的角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="1aa31-142">The rule settings that are evaluated when a user tries to activate his role assignment.</span></span>|
+|<span data-ttu-id="d3d21-130">adminEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="d3d21-130">adminEligibleSettings</span></span>|<span data-ttu-id="d3d21-131">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="d3d21-131">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="d3d21-132">在管理员尝试添加符合条件的角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="d3d21-132">The rule settings that are evaluated when an administrator tries to add an eligible role assignment.</span></span>|
+|<span data-ttu-id="d3d21-133">adminMemberSettings</span><span class="sxs-lookup"><span data-stu-id="d3d21-133">adminMemberSettings</span></span>|<span data-ttu-id="d3d21-134">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="d3d21-134">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="d3d21-135">在管理员尝试添加直接成员角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="d3d21-135">The rule settings that are evaluated when an administrator tries to add a direct member role assignment.</span></span>|
+|<span data-ttu-id="d3d21-136">userEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="d3d21-136">userEligibleSettings</span></span>|<span data-ttu-id="d3d21-137">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="d3d21-137">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="d3d21-138">用户尝试添加符合条件的角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="d3d21-138">The rule settings that are evaluated when a user tries to add an eligible role assignment.</span></span> <span data-ttu-id="d3d21-139">目前不支持这`pimforazurerbac`种情况, 在将来的方案中可能会用到。</span><span class="sxs-lookup"><span data-stu-id="d3d21-139">This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.</span></span>|
+|<span data-ttu-id="d3d21-140">userMemberSettings</span><span class="sxs-lookup"><span data-stu-id="d3d21-140">userMemberSettings</span></span>|<span data-ttu-id="d3d21-141">[governanceRuleSetting](../resources/governancerulesetting.md)集合</span><span class="sxs-lookup"><span data-stu-id="d3d21-141">[governanceRuleSetting](../resources/governancerulesetting.md) collection</span></span>|<span data-ttu-id="d3d21-142">用户尝试激活他的角色分配时评估的规则设置。</span><span class="sxs-lookup"><span data-stu-id="d3d21-142">The rule settings that are evaluated when a user tries to activate his role assignment.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1aa31-143">响应</span><span class="sxs-lookup"><span data-stu-id="1aa31-143">Response</span></span>
-<span data-ttu-id="1aa31-p103">如果成功，此方法返回 `204 NoContent` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="1aa31-p103">If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="d3d21-143">响应</span><span class="sxs-lookup"><span data-stu-id="d3d21-143">Response</span></span>
+<span data-ttu-id="d3d21-p103">如果成功，此方法返回 `204 NoContent` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d3d21-p103">If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body.</span></span> 
 
-### <a name="error-codes"></a><span data-ttu-id="1aa31-146">错误代码</span><span class="sxs-lookup"><span data-stu-id="1aa31-146">Error codes</span></span>
-<span data-ttu-id="1aa31-147">此 API 返回标准的 HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="1aa31-147">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="1aa31-148">此外, 它还返回以下自定义错误代码。</span><span class="sxs-lookup"><span data-stu-id="1aa31-148">In addition, it returns the following custom error codes.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="d3d21-146">错误代码</span><span class="sxs-lookup"><span data-stu-id="d3d21-146">Error codes</span></span>
+<span data-ttu-id="d3d21-147">此 API 返回标准的 HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="d3d21-147">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="d3d21-148">此外, 它还返回以下自定义错误代码。</span><span class="sxs-lookup"><span data-stu-id="d3d21-148">In addition, it returns the following custom error codes.</span></span>
 
-|<span data-ttu-id="1aa31-149">错误代码</span><span class="sxs-lookup"><span data-stu-id="1aa31-149">Error code</span></span>     | <span data-ttu-id="1aa31-150">错误消息</span><span class="sxs-lookup"><span data-stu-id="1aa31-150">Error message</span></span>         | <span data-ttu-id="1aa31-151">详细信息</span><span class="sxs-lookup"><span data-stu-id="1aa31-151">Details</span></span>             |
+|<span data-ttu-id="d3d21-149">错误代码</span><span class="sxs-lookup"><span data-stu-id="d3d21-149">Error code</span></span>     | <span data-ttu-id="d3d21-150">错误消息</span><span class="sxs-lookup"><span data-stu-id="d3d21-150">Error message</span></span>         | <span data-ttu-id="d3d21-151">详细信息</span><span class="sxs-lookup"><span data-stu-id="d3d21-151">Details</span></span>             |
 |:--------------| :---------------------|:--------------------|
-| <span data-ttu-id="1aa31-152">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1aa31-152">400 BadRequest</span></span>| <span data-ttu-id="1aa31-153">RoleSettingNotFound</span><span class="sxs-lookup"><span data-stu-id="1aa31-153">RoleSettingNotFound</span></span>   | <span data-ttu-id="1aa31-154">[GovernanceRoleSetting](../resources/governancerolesetting.md)在系统中不存在。</span><span class="sxs-lookup"><span data-stu-id="1aa31-154">The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.</span></span>
-| <span data-ttu-id="1aa31-155">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1aa31-155">400 BadRequest</span></span>| <span data-ttu-id="1aa31-156">InvalidRoleSetting</span><span class="sxs-lookup"><span data-stu-id="1aa31-156">InvalidRoleSetting</span></span>    | <span data-ttu-id="1aa31-157">请求正文中提供的[governanceRuleSettings](../resources/governancerulesetting.md)值无效。</span><span class="sxs-lookup"><span data-stu-id="1aa31-157">The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.</span></span>
+| <span data-ttu-id="d3d21-152">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="d3d21-152">400 BadRequest</span></span>| <span data-ttu-id="d3d21-153">RoleSettingNotFound</span><span class="sxs-lookup"><span data-stu-id="d3d21-153">RoleSettingNotFound</span></span>   | <span data-ttu-id="d3d21-154">[GovernanceRoleSetting](../resources/governancerolesetting.md)在系统中不存在。</span><span class="sxs-lookup"><span data-stu-id="d3d21-154">The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.</span></span>
+| <span data-ttu-id="d3d21-155">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="d3d21-155">400 BadRequest</span></span>| <span data-ttu-id="d3d21-156">InvalidRoleSetting</span><span class="sxs-lookup"><span data-stu-id="d3d21-156">InvalidRoleSetting</span></span>    | <span data-ttu-id="d3d21-157">请求正文中提供的[governanceRuleSettings](../resources/governancerulesetting.md)值无效。</span><span class="sxs-lookup"><span data-stu-id="d3d21-157">The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1aa31-158">示例</span><span class="sxs-lookup"><span data-stu-id="1aa31-158">Example</span></span> 
-<span data-ttu-id="1aa31-159">本示例更新订阅 Wingtip 玩具-生产版中的自定义角色3的角色设置。</span><span class="sxs-lookup"><span data-stu-id="1aa31-159">This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.</span></span>
-##### <a name="request"></a><span data-ttu-id="1aa31-160">请求</span><span class="sxs-lookup"><span data-stu-id="1aa31-160">Request</span></span>
+## <a name="example"></a><span data-ttu-id="d3d21-158">示例</span><span class="sxs-lookup"><span data-stu-id="d3d21-158">Example</span></span> 
+<span data-ttu-id="d3d21-159">本示例更新订阅 Wingtip 玩具-生产版中的自定义角色3的角色设置。</span><span class="sxs-lookup"><span data-stu-id="d3d21-159">This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.</span></span>
+##### <a name="request"></a><span data-ttu-id="d3d21-160">请求</span><span class="sxs-lookup"><span data-stu-id="d3d21-160">Request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d3d21-161">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d3d21-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_governancerolesetting"
@@ -80,7 +82,21 @@ Content-length: 350
    ]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="1aa31-161">响应</span><span class="sxs-lookup"><span data-stu-id="1aa31-161">Response</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d3d21-162">C#</span><span class="sxs-lookup"><span data-stu-id="d3d21-162">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-governancerolesetting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d3d21-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="d3d21-163">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-governancerolesetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d3d21-164">目标-C</span><span class="sxs-lookup"><span data-stu-id="d3d21-164">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="d3d21-165">响应</span><span class="sxs-lookup"><span data-stu-id="d3d21-165">Response</span></span>
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.None"
@@ -88,18 +104,6 @@ Content-length: 350
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="1aa31-162">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="1aa31-162">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="1aa31-163">C#</span><span class="sxs-lookup"><span data-stu-id="1aa31-163">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_governancerolesetting-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1aa31-164">Javascript</span><span class="sxs-lookup"><span data-stu-id="1aa31-164">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_governancerolesetting-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1aa31-165">目标-C</span><span class="sxs-lookup"><span data-stu-id="1aa31-165">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_governancerolesetting-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,9 +115,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
