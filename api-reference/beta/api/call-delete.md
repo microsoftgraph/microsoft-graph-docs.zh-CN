@@ -4,12 +4,12 @@ description: 删除或挂断活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 174e3ad1c27b3a0c2e87b5c3cf3630b00168bc3b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 7a604d541d63e303c4bc199fe83b0dd7eec3f92d
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262323"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438739"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -50,6 +50,8 @@ DELETE /applications/{id}/calls/{id}
 ##### <a name="request"></a>请求
 下面为请求示例。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-call"
@@ -57,6 +59,20 @@ DELETE /applications/{id}/calls/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
@@ -69,18 +85,6 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete-call-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete-call-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete-call-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---terminating"></a>通知终止
 
@@ -151,9 +155,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/call-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

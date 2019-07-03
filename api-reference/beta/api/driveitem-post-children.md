@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 新建文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 24dd98b66eb65d190a8c2177df63a5255def96b5
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 06afd98f5928d18ff5b6ff2673e24f19265993a1
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260044"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35436317"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 
@@ -55,6 +55,8 @@ POST /users/{user-id}/drive/items/{parent-item-id}/children
 下面是请求在登录用户的 OneDrive 根文件夹下新建文件夹的示例。
 `@microsoft.graph.conflictBehavior` 属性用于指示是否已存在具有相同名称的项，服务是否应在创建文件夹时选择新名称。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
@@ -67,6 +69,20 @@ Content-Type: application/json
   "@microsoft.graph.conflictBehavior": "rename"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-folder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-folder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-folder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -107,18 +123,6 @@ Content-Type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-folder-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-folder-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-response"></a>错误响应
 
@@ -136,9 +140,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Items/Create folder",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

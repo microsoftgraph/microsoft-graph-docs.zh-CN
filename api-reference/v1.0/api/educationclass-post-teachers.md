@@ -4,12 +4,12 @@ description: 向课程添加教师。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a8318a467a673e66fd416a6a207b3dc76f6c9e6f
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 090f613499fe693c2d1c9000ee3eb963ebae6aa6
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275136"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449895"
 ---
 # <a name="add-teacher"></a>添加教师
 
@@ -45,6 +45,8 @@ POST /education/classes/{id}/teachers/$ref
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_educationclass"
@@ -58,6 +60,16 @@ Content-length: 508
   "@odata.id":"https://graph.microsoft.com/v1.0/education/users/14011"
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationuser-from-educationclass-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationuser-from-educationclass-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -74,16 +86,6 @@ Content-length: 508
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_educationuser_from_educationclass-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_educationuser_from_educationclass-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -94,7 +96,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationclass-post-teachers.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/educationclass-post-teachers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

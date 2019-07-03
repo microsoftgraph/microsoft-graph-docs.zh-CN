@@ -4,12 +4,12 @@ description: 获取用户邮箱中已添加、删除或移除的联系人文件�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9824e67b537e934d8671a685fab132afebe9baf5
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9927142888f11e1d46b6c2d37d8513a5ca623aa4
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277488"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443047"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -66,6 +66,8 @@ GET /users/{id}/contactFolders/delta
 
 演示如何使用状态令牌跟踪邮件文件夹中的邮件更改的示例与其相似：[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪联系人文件夹和跟踪文件夹中的邮件之间的主要区别在于增量查询请求 URL 以及查询响应将返回 **contactFolder** 集合而非 **message** 集合。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contactfolder_delta"
@@ -74,6 +76,20 @@ GET /users/{id}/contactFolders/delta
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contactfolder-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
@@ -105,18 +121,6 @@ Content-length: 254
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/contactfolder_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/contactfolder_delta-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/contactfolder_delta-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>另请参阅
 
@@ -132,8 +136,5 @@ Content-length: 254
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/contactfolder-delta.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/contactfolder-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/contactfolder-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

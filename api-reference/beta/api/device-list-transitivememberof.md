@@ -4,12 +4,12 @@ description: 获取设备所属的组。 此 API 请求是可传递的, 并且�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5c7e223684671632648881d5704f74f6475166d7
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 168eb9b0c204d08d9e23442443e9ac717b19934b
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260954"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437234"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 
@@ -59,6 +59,8 @@ GET /devices/{id}/transitiveMemberOf
 ### <a name="request"></a>请求
 
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_devices_transitivememberof"
@@ -67,6 +69,20 @@ GET /devices/{id}/transitiveMemberOf
 ```http
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-transitivememberof-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-transitivememberof-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-devices-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -97,18 +113,6 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_devices_transitivememberof-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_devices_transitivememberof-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_devices_transitivememberof-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -120,9 +124,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/device-list-transitivememberof.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/device-list-transitivememberof.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/device-list-transitivememberof.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

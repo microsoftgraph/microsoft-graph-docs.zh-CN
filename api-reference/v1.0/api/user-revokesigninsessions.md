@@ -4,12 +4,12 @@ description: 通过将**signInSessionsValidFromDateTime**用户属性重置为�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7ab60a38e404dc13dbbc58b1103931cfe0b16c44
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: a39c7af37cd5ab94a33a06a7dd4c91c0c4b55600
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083947"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449006"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 
@@ -53,6 +53,8 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 以下示例演示如何调用此 API。
 
 ##### <a name="request"></a>请求
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_revokesigninsessionss"
@@ -60,6 +62,20 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```http
 POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 <!-- {
@@ -80,8 +96,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

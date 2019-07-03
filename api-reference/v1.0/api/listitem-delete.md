@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 941aa81c83a44f3f634210223e61544484832160
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 727c7be2303fc31a72f24e407cf9a6dd58a748cd
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35272021"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35446211"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -50,11 +50,27 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="example"></a>示例
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-item-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-item-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-item-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## <a name="response"></a>响应
 
@@ -65,18 +81,6 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete-item-site-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete-item-site-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/delete-item-site-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
@@ -85,8 +89,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "ListItem/Delete",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

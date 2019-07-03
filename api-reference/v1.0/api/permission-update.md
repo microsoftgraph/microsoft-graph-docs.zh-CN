@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更改共享权限
 localization_priority: Normal
-ms.openlocfilehash: 043f0eda694b3bf0f7258fb07e10ff995056f1ef
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: f8edbc2aaabc7ce244fa1722204d752369d8e895
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274247"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458878"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -64,6 +64,8 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 下面是请求将共享权限上的角色更改为只读的示例。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
@@ -74,6 +76,20 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -96,18 +112,6 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update-permission-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update-permission-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[目标-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update-permission-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>错误响应
 
@@ -122,8 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Update permission",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

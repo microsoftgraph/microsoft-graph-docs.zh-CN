@@ -4,12 +4,12 @@ description: 使用此 API 创建新的 memberOf。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4b0730a7ad65770f31a36d5be39a0cd841c8809
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 07fc249adc19fc02db0005fb2d56ebda6c161728
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657152"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445315"
 ---
 # <a name="create-memberof"></a>创建 memberOf
 
@@ -46,6 +46,8 @@ POST /contacts/{id}/memberOf
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_orgcontact"
@@ -60,6 +62,12 @@ Content-length: 30
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-orgcontact-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -79,14 +87,6 @@ Content-length: 51
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_directoryobject_from_orgcontact-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -98,7 +98,6 @@ Content-length: 51
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/orgcontact-post-memberof.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

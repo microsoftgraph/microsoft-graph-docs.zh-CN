@@ -4,12 +4,12 @@ description: 获取指定文件夹中已添加、删除或更新的联系人集�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 80fa244e200cad408976112419c2c2e00b540d40
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c4e19d8243e1715b08a866965c5bf1e983392447
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591580"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437689"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -68,6 +68,8 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 
 演示如何使用状态令牌跟踪邮件文件夹中的邮件更改的示例与其相似：[获取文件夹中邮件的增量更改](/graph/delta-query-messages)。跟踪联系人和跟踪文件夹中的邮件之间的主要区别在于增量查询请求 URL 以及查询响应将返回 **mailFolder** 集合而非 **message** 集合。
  
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contact_delta"
@@ -77,6 +79,16 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts/delta?$sele
 
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contact-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contact-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 如果请求成功，响应将包含一个状态令牌，其为 _skipToken_  
@@ -110,16 +122,6 @@ Content-length: 337
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
-[!INCLUDE [sample-code](../includes/contact_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/contact_delta-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>另请参阅
 
@@ -136,8 +138,6 @@ Content-length: 337
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac8ad3a8b4a7a396c0cb35c1c72c2d1a2e309184
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 7d74e274d2db8d20cb9cf3269ab78cc12055b76c
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35147893"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439516"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
@@ -66,6 +66,8 @@ GET /applicationTemplates
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -74,6 +76,20 @@ GET /applicationTemplates
 ```http
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
