@@ -2,9 +2,10 @@
 breadcrumb_path: ./breadcrumb/toc.yml
 toc_rel: ./toc.yml
 uhfHeaderId: MSDocsHeader-MSGraph
-ms.openlocfilehash: 2c8b66a390088688841324818117cce5daa3d95f
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34669129"
+metadata:
+  ms.openlocfilehash: 2c8b66a390088688841324818117cce5daa3d95f
+  ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 05/31/2019
+  ms.locfileid: "34669129"
