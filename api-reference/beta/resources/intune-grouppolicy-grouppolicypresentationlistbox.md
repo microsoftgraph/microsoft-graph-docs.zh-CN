@@ -4,12 +4,12 @@ description: 表示 ADMX listBox 元素和 ADMX 列表元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d24b70809eb08828b2cc037a7986c6d7b5e255ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: dd7e6c5c3d12719bdcc79aef0e0df4462175b4c1
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985337"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576478"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>groupPolicyPresentationListBox 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "34985337"
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Boolean|如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列, 一个用于名称, 一个用于数据。 默认值为 false。|
+|valuePrefix|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -58,11 +59,10 @@ ms.locfileid: "34985337"
   "label": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "String"
 }
 ```
-
-
 
 
 

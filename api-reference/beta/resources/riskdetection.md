@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: de889892e023d5d6036ab1886534d94c4362d641
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 07a3a76f2ec2a4c3e1536f4b4d61e52417c2053c
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448589"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576464"
 ---
 # <a name="riskdetection-resource-type"></a>riskDetection 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "35448589"
 
 表示有关 Azure AD 租户中检测到的风险的信息。 
 
-Azure AD 将根据各种信号和机器学习持续评估用户和登录风险。 此 API 提供对 Azure AD 环境中所有风险检测的编程访问。
+Azure AD 会根据各种信号和机器学习持续评估[用户风险](riskyuser.md)和应用或用户[登录](signin.md)风险。 此 API 提供对 Azure AD 环境中所有风险检测的编程访问。
 
 有关风险事件的详细信息, 请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。
 

@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationListBox 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05681a4e4bd84da2398c42d2a0ca187b2d25506c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 5735d086f16eed785d0dae4b6ee7f925ad6b65b5
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964680"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576443"
 ---
 # <a name="update-grouppolicypresentationlistbox"></a>更新 groupPolicyPresentationListBox
 
@@ -55,6 +55,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Boolean|如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列, 一个用于名称, 一个用于数据。 默认值为 false。|
+|valuePrefix|String|尚未记录|
 
 
 
@@ -68,12 +69,13 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
 Content-type: application/json
-Content-length: 125
+Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationListBox",
   "label": "Label value",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "Value Prefix value"
 }
 ```
 
@@ -82,18 +84,17 @@ Content-length: 125
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 238
+Content-Length: 278
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationListBox",
   "label": "Label value",
   "id": "2e074c87-4c87-2e07-874c-072e874c072e",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "Value Prefix value"
 }
 ```
-
-
 
 
 

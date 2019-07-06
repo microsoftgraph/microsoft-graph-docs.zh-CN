@@ -4,12 +4,12 @@ description: 更新 groupPolicyDefinitionFile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3857e4f7b1ec5f25401f1317cdfa413952989732
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 130e66b47459958cbc32c2e9b64e2968018825cd
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984735"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576387"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
 
@@ -56,7 +56,8 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |languageCodes|String collection|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
+|a01|String|与文件关联的修订版本。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -72,27 +73,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 Content-type: application/json
-Content-length: 325
-
-{
-  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "languageCodes": [
-    "Language Codes value"
-  ],
-  "targetPrefix": "Target Prefix value",
-  "targetNamespace": "Target Namespace value",
-  "policyType": "admxIngested"
-}
-```
-
-### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 438
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
@@ -104,12 +85,32 @@ Content-Length: 438
   "targetPrefix": "Target Prefix value",
   "targetNamespace": "Target Namespace value",
   "policyType": "admxIngested",
+  "revision": "Revision value"
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 471
+
+{
+  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "languageCodes": [
+    "Language Codes value"
+  ],
+  "targetPrefix": "Target Prefix value",
+  "targetNamespace": "Target Namespace value",
+  "policyType": "admxIngested",
+  "revision": "Revision value",
   "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 实体表示 ADMX (管理模板) XML 文件。 ADMX 文件包含组
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 384b59a2c9e1b669cd71b294c6420c13b95d1102
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975936"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576485"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -33,7 +33,8 @@ ms.locfileid: "34975936"
 |languageCodes|String collection|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
+|a01|String|与文件关联的修订版本。|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -61,12 +62,11 @@ ms.locfileid: "34975936"
   "targetPrefix": "String",
   "targetNamespace": "String",
   "policyType": "String",
+  "revision": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

@@ -3,17 +3,13 @@ documentType: LandingData
 title: Microsoft Graph 身份验证概述
 metadata:
   title: Microsoft Graph 身份验证概述
-  description: '了解 OAuth 2。0的基础知识, 以及如何获取令牌以调用 Microsoft Graph API。'
+  description: '了解 OAuth 2.0 的基础知识, 以及如何获取令牌以调用 Microsoft Graph API。'
   services: active-directory
-  author: danieldobalian
+  author: CelesteDG
   manager: CelesteDG
-  ms.service: active-directory
-  ms.subservice: develop
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
   ms.date: 04/26/2019
-  ms.author: dadobali
+  ms.reviewer: jawoods
 abstract:
   description: 了解如何进行身份验证和处理权限以通过 Microsoft Graph 安全地访问数据。 浏览以下文档以了解有关应用注册、身份验证库、授权以及支持 Microsoft Graph 开发的 Microsoft identity 平台的其他部分。
   aside:
@@ -38,7 +34,7 @@ sections:
               src: ../images/index/i_get-started.svg
             title: 应用注册
           - href: /graph/auth/auth-concepts
-            html: <p>探索 OAuth 2。0的基础知识以及它在 Microsoft Graph 中的使用方式。</p>
+            html: <p>探索 OAuth 2.0 的基础知识以及它在 Microsoft Graph 中的使用方式。</p>
             image:
               src: ../images/index/i_overview.svg
             title: 身份验证基础
@@ -46,7 +42,7 @@ sections:
             html: <p>了解有关 Microsoft Graph 作用域 & 应用程序权限的详细信息。</p>
             image:
               src: ../images/index/i_code-edit.svg
-            title: 权限 & 作用域
+            title: 权限 & 范围
           - href: /graph/auth/auth-cloudsolutionprovider
             html: <p>启用应用程序对合作伙伴托管数据的访问。</p>
             image:

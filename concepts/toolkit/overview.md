@@ -3,19 +3,19 @@ title: Microsoft Graph 工具包 (预览)
 description: Microsoft Graph 工具包是框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e6d5974029625a8dd1bef0c7b981fcf2b36b747c
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: ca55500217ab23f9e6a2744da61f332e745af398
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242979"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576401"
 ---
 # <a name="microsoft-graph-toolkit-preview"></a>Microsoft Graph 工具包 (预览)
 
 Microsoft Graph 工具包是框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。 所有组件都可以访问 Microsoft Graph, 而无需进行任何自定义。
 
->[!NOTE]
->此库处于预览阶段, 处于早期开发阶段。 我们希望根据来自社区的反馈对所有组件和 Api 进行更改和改进。
+> [!NOTE]
+> 此库处于预览阶段, 处于早期开发阶段。 我们希望根据来自社区的反馈对所有组件和 Api 进行更改和改进。
 
 ## <a name="get-started"></a>入门
 

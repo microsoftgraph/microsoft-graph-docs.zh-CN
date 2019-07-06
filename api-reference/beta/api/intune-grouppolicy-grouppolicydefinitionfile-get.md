@@ -4,12 +4,12 @@ description: 读取 groupPolicyDefinitionFile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a62826b8846404833352e9814c24cb3a3de6cd7f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: a9d1b589b624cb3168d93ae5371dc13a59b7e189
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984749"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576394"
 ---
 # <a name="get-grouppolicydefinitionfile"></a>获取 groupPolicyDefinitionFile
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 479
+Content-Length: 514
 
 {
   "value": {
@@ -79,13 +79,12 @@ Content-Length: 479
     "targetPrefix": "Target Prefix value",
     "targetNamespace": "Target Namespace value",
     "policyType": "admxIngested",
+    "revision": "Revision value",
     "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
-
-
 
 
 

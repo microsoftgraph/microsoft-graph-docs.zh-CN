@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentationListBox 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3fe7f6708f4877781dd49df66396e230d39784f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fa9ceda9b2ef7a1afa610d2da51059fa8e4effba
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964673"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576457"
 ---
 # <a name="get-grouppolicypresentationlistbox"></a>获取 groupPolicyPresentationListBox
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 267
+Content-Length: 309
 
 {
   "value": {
@@ -74,12 +74,11 @@ Content-Length: 267
     "label": "Label value",
     "id": "2e074c87-4c87-2e07-874c-072e874c072e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "explicitValue": true
+    "explicitValue": true,
+    "valuePrefix": "Value Prefix value"
   }
 }
 ```
-
-
 
 
 
