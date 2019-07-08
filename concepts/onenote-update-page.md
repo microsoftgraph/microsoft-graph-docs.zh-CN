@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 97a9acb8244446191b09d99753e30d94c47c4f1e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981467"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555246"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页内容
 

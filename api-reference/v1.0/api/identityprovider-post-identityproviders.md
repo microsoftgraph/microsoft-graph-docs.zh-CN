@@ -4,12 +4,12 @@ description: 新建 identityProvider
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a33354c35903fedc3efedb84e9f2ed7bc20c9506
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63a1ae5fddcc1279c3980b8475c7cbdad0bd74f8
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537586"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -43,7 +43,7 @@ POST /identityProviders
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [identityProvider](../resources/identityProvider.md) 对象的 JSON 表示形式。 下表中列出的所有属性均未必需属性。
+在请求正文中，提供 [identityProvider](../resources/identityprovider.md) 对象的 JSON 表示形式。 下表中列出的所有属性均未必需属性。
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
@@ -54,7 +54,7 @@ POST /identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [identityProvider](../resources/identityProvider.md) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [identityProvider](../resources/identityprovider.md) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 

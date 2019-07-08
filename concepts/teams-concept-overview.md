@@ -4,16 +4,20 @@ description: 'Microsoft Teams 是团队合作和智能通信的终极中心。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 251bb02af83fc86f996c8bbf0c9ea10a5efad8ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da9999a0719d190950adf20bc119044366126f24
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584336"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621219"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
 [Microsoft Teams](https://products.office.com/microsoft-teams) 是团队合作和智能通信的终极中心。 Microsoft Teams 基于 [Office 365](https://products.office.com/) 超过 1.2 亿用户的实力和规模，提供了基于聊天的协作、会议、通话和企业语音功能。
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
+
 
 ## <a name="why-integrate-with-microsoft-teams"></a>为什么与 Microsoft Teams 集成？
 
@@ -24,7 +28,7 @@ ms.locfileid: "32584336"
 
 ![通过创建团队、添加成员和所有者、配置团队设置、添加渠道、安装应用、添加选项卡和适时存档或删除团队来自动化团队生命周期。](images/teams-lifecycle.png)
 
-当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Office 365 组过期策略](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
+当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Office 365 组过期策略](https://support.office.com/zh-CN/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>即使在无人参与的情况下也可以完成工作
 
@@ -64,14 +68,20 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 
 |应用类型|方案描述|
 |:-------|:-------------------|
-| [选项卡](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview) |在 Microsoft Teams 中呈现内容。|
-| [机器人](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/bots/bots-overview) |帮助用户通过对话完成任务。|
-| [连接器](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/connectors/connectors) |将外部服务中的更新发布到渠道。|
-| [可操作消息](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/cards/cards) |将增强交互添加到连接器卡。|
-| [消息扩展](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/messaging-extensions) |允许用户查询和共享对话中的信息。|
+| 
+  [选项卡](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview) |在 Microsoft Teams 中呈现内容。|
+| 
+  [机器人](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/bots/bots-overview) |帮助用户通过对话完成任务。|
+| 
+  [连接器](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/connectors/connectors) |将外部服务中的更新发布到渠道。|
+| 
+  [可操作消息](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/cards/cards) |将增强交互添加到连接器卡。|
+| 
+  [消息扩展](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/messaging-extensions) |允许用户查询和共享对话中的信息。|
 |网站| 在网页中呈现增强的内容。|
 |服务|通过 Web 服务使用 Microsoft Graph 数据增强客户端应用程序。|
-| [活动源](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
+| 
+  [活动源](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
 | [通话和联机会议（预览）](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |创建包含机器人的 Microsoft Teams 应用可以启动和参与音频/视频通话、基于互动语音响应 (IVR) 流路由/传输通话和参与联机会议。|
 
 ## <a name="api-reference"></a>API 参考

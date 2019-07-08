@@ -4,16 +4,19 @@ description: 'Office 365 组为用户提供了基础成员身份服务，可用�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbd06a28b96680e43bbc6b9c2a440ed1b95b21cd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578808"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621240"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph 中的 Office 365 组概述
 
 Office 365 组为用户提供了基础成员身份服务，可用于共享会话、文件、备注、日历、计划和许多其他资产。 
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
 ## <a name="why-integrate-with-office-365-groups"></a>为何要与 Office 365 组集成？   
 

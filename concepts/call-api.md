@@ -5,11 +5,11 @@ localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
 ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970414"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570248"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>调用 Microsoft Graph API
 
@@ -92,8 +92,7 @@ content-length: 982
 
 
 ## <a name="project-from-an-entity-to-properties"></a>从一个实体投影至属性
-若要仅检索用户的传记数据（如用户提供的_本人简介_描述和技能集），则可以在上一个请求中添加 _select_ 查询参数。
-例如：
+若要仅检索用户的传记数据（如用户提供的本人简介描述和技能集），则可以在上一个请求中添加 _select_ 查询参数。例如：
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
@@ -270,7 +269,7 @@ content-length: 986
 ```
 
 ## <a name="call-actions-or-functions"></a>调用操作或函数
-Microsoft Graph 还支持_操作_和_函数_，以并非简单符合标准 HTTP 方法的方式操作资源。 例如，以下 HTTPS POST 请求允许登录用户 (`me`) 发送电子邮件：
+Microsoft Graph 还支持操作和函数，以并非简单符合标准 HTTP 方法的方式操作资源。例如，以下 HTTPS POST 请求允许登录用户 (`me`) 发送电子邮件：
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>

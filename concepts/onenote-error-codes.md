@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558375"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 
@@ -343,7 +343,7 @@ OData 查询无效。
 用户的帐户有问题。
 
 ### <a name="30101"></a>30101
-用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/zh-CN/)。
+用户帐户超出了它的 OneDrive 配额。 请参阅 [OneDrive](https://onedrive.live.com/about/en-us/)。
 
 ### <a name="30102"></a>30102
 不能再向请求的节添加任何内容，因为它已经达到其最大大小。
