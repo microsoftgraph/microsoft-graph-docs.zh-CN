@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c1e1cecdcf99d146b42867dae8f332b74f2c689a
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: 03a1ffa8770772f57b0e1dc6901dbebfe8b40e23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914691"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987346"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -30,22 +30,22 @@ ms.locfileid: "34914691"
 |[Get user](../api/user-get.md) | [user](user.md) |读取 user 对象的属性和关系。|
 |[Update user](../api/user-update.md) | [user](user.md) |更新 user 对象。 |
 |[Delete user](../api/user-delete.md) | None |删除 user 对象。 |
-|[List messages](../api/user-list-messages.md) |[Message](message.md) collection| 获取已登录用户的邮箱中的所有邮件。|
-|[Create Message](../api/user-post-messages.md) |[Message](message.md)| 通过发布到邮件集合新建邮件。|
-|[List mailFolders](../api/user-list-mailfolders.md) |[MailFolder](mailfolder.md) collection| 在已登录用户的根文件夹下获取邮件文件夹集合。 |
-|[Create mailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| 通过发布到 mailFolders 集合创建新 MailFolder。|
+|[List messages](../api/user-list-messages.md) |[message](message.md) 集合| 获取已登录用户的邮箱中的所有邮件。|
+|[创建邮件](../api/user-post-messages.md) |[邮件](message.md)| 通过发布到邮件集合新建邮件。|
+|[List mailFolders](../api/user-list-mailfolders.md) |[mailFolder](mailfolder.md) 集合| 在已登录用户的根文件夹下获取邮件文件夹集合。 |
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| 通过发布到 mailFolders 集合创建新 MailFolder。|
 |[sendMail](../api/user-sendmail.md)|None|发送请求正文中指定的邮件。|
-|[List events](../api/user-list-events.md) |[Event](event.md) collection| 获取用户邮箱中的 event 对象列表。该列表包含单个实例会议和系列主控形状。|
-|[Create event](../api/user-post-events.md) |[Event](event.md)| 通过发布到事件集合创建新事件。|
-|[List calendars](../api/user-list-calendars.md) |[Calendar](calendar.md) collection| 获取 Calendar 对象集合。|
-|[Create calendar](../api/user-post-calendars.md) |[Calendar](calendar.md)| 通过发布到日历集合创建新日历。|
-|[List calendarGroups](../api/user-list-calendargroups.md) |[CalendarGroup](calendargroup.md) collection| 获取 CalendarGroup 对象集合。|
-|[Create calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| 通过发布到 calendarGroups 集合新建 CalendarGroup。|
-|[List calendarView](../api/user-list-calendarview.md) |[Event](event.md) collection| 获取 Event 对象集合。|
-|[List contacts](../api/user-list-contacts.md) |[Contact](contact.md) collection| 从已登录用户的默认联系人文件夹中获取联系人集合。|
-|[Create Contact](../api/user-post-contacts.md) |[Contact](contact.md)| 通过发布到联系人集合新建联系人。|
-|[List contactFolders](../api/user-list-contactfolders.md) |[ContactFolder](contactfolder.md) collection| 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。|
-|[Create ContactFolder](../api/user-post-contactfolders.md) |[ContactFolder](contactfolder.md)| 通过发布到 contactFolders 集合创建新 ContactFolder。|
+|[List events](../api/user-list-events.md) |[event](event.md) 集合| 获取用户邮箱中的 event 对象列表。该列表包含单个实例会议和系列主控形状。|
+|[Create event](../api/user-post-events.md) |[事件](event.md)| 通过发布到事件集合创建新事件。|
+|[List calendars](../api/user-list-calendars.md) |[calendar](calendar.md) 集合| 获取 Calendar 对象集合。|
+|[Create calendar](../api/user-post-calendars.md) |[calendar](calendar.md)| 通过发布到日历集合创建新日历。|
+|[List calendarGroups](../api/user-list-calendargroups.md) |[calendarGroup](calendargroup.md) 集合| 获取 CalendarGroup 对象集合。|
+|[Create calendarGroup](../api/user-post-calendargroups.md) |[calendarGroup](calendargroup.md)| 通过发布到 calendarGroups 集合新建 CalendarGroup。|
+|[List calendarView](../api/user-list-calendarview.md) |[event](event.md) 集合| 获取 Event 对象集合。|
+|[List contacts](../api/user-list-contacts.md) |[联系人](contact.md)集合| 从已登录用户的默认联系人文件夹中获取联系人集合。|
+|[创建联系人](../api/user-post-contacts.md) |[联系人](contact.md)| 通过发布到联系人集合新建联系人。|
+|[List contactFolders](../api/user-list-contactfolders.md) |[ContactFolder](contactfolder.md) 集合| 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。|
+|[创建 contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| 通过发布到 contactFolders 集合创建新 ContactFolder。|
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| 从 directReports 导航属性中获取向此用户报告的用户和联系人。|
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | 从 manager 导航属性中获取是此用户的经理的用户或联系人。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| 从 memberOf 导航属性中获取此用户是其直接成员的组和目录角色。|
@@ -61,6 +61,7 @@ ms.locfileid: "34914691"
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| 返回用户所属的所有组和目录角色。检查是可传递的。 |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|返回指定开始时间和结束时间范围内的日历提醒列表。|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| 无 |通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
@@ -104,7 +105,7 @@ ms.locfileid: "34914691"
 |officeLocation|String|用户公司地点的办公室位置。|
 |onPremisesDistinguishedName|String| 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
 |onPremisesDomainName|String| 包含从本地目录同步的本地 `domainFQDN`（也称为 dnsDomainName）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，此属性集是在本地主控的，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为 false），可以在创建或更新期间设置这些属性。 |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，此属性集是在本地主控的，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为 false），可以在创建或更新期间设置这些属性。 |
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **\_** 字符。 支持 $filter。                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 |
@@ -114,18 +115,19 @@ ms.locfileid: "34914691"
 |onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
 |otherMails|String| 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。 支持 $filter。|
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
+|passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredDataLocation|String|用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
 |preferredName|String|用户的首选名称。|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|为用户设置的计划。只读。不可为 null。 |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
 |proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 需要多值属性筛选器表达式的 **any** 运算符。只读，不可为 Null。支持 $filter。          |
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 **true**，否则为 **false**。 如果未设置，则将其视为 **true**。 对于通过邀请管理器邀请的用户，此属性将设置为 **false**。|
 |skills|String collection|供用户枚举其技能的列表。|
+|signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 此为只读属性。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 |state|String|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。支持 $filter。|
@@ -179,26 +181,26 @@ ms.locfileid: "34914691"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 Null。|
-|日历|[Calendar](calendar.md)|用户的主日历。只读。|
-|calendarGroups|[CalendarGroup](calendargroup.md) collection|用户的日历组。只读。可为 Null。|
-|calendarView|[Event](event.md) collection|日历的日历视图。只读。可为 Null。|
-|calendars|[Calendar](calendar.md) collection|用户的日历。只读。可为 Null。|
-|contactFolders|[ContactFolder](contactfolder.md) collection|用户的联系人文件夹。只读。可为 Null。|
-|contacts|[Contact](contact.md) collection|用户的联系人。只读。可为 Null。|
+|calendar|[calendar](calendar.md)|用户的主日历。只读。|
+|calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
+|calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
+|calendars|[calendar](calendar.md) 集合|用户的日历。只读。可为 Null。|
+|contactFolders|[ContactFolder](contactfolder.md) 集合|用户的联系人文件夹。只读。可为 Null。|
+|contacts|[contact](contact.md) 集合|用户的联系人。只读。可为 Null。|
 |createdObjects|[directoryObject](directoryobject.md) collection|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |drive|[drive](drive.md)|用户的 OneDrive。只读。|
 |drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
-|events|[Event](event.md) collection|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
+|活动|[event](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
-|licenseDetails|[LicenseDetails](licensedetails.md) 集合|此用户许可证详细信息的集合。 可为空。|
-|mailFolders|[MailFolder](mailfolder.md) collection| 用户的邮件文件夹。只读。可为 Null。|
+|licenseDetails|[licenseDetails](licensedetails.md) 集合|此用户许可证详细信息的集合。 只读。|
+|mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。只读。可为 Null。|
-|messages|[Message](message.md) collection|邮箱或文件夹中的邮件。只读。可为 Null。|
-|onenote|[Onenote](onenote.md)| 只读。|
-|outlook|[OutlookUser](outlookuser.md)| 只读。|
+|messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
+|onenote|[onenote](onenote.md)| 只读。|
+|outlook|[outlookUser](outlookuser.md)| 只读。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
 |people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 Null。
@@ -422,6 +424,7 @@ ms.locfileid: "34914691"
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

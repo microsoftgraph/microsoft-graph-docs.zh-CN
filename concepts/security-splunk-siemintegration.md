@@ -4,12 +4,12 @@ description: 可通过一个 REST 终结点管理 Microsoft Graph 安全提供�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: f411bbbfbedd1e692489b3dcb995e9d34bfab203
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22ed2806bcaea999fe396fb88f4547e6bbf7f116
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584892"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621289"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 SIEM 集成
 
@@ -90,14 +90,14 @@ ms.locfileid: "32584892"
     }
     ```
 
-  将 JSON 文件中的值替换为以下值：
+将 JSON 文件中的值替换为以下值：
 
   * **SUBSCRIPTION_ID** 是托管资源组和事件中心命名空间的 Azure 订阅的订阅 ID，你将在此处发送组织的安全警报。
   * **RESOURCE_GROUP** 是包含事件中心命名空间的资源组，你将在此处发送组织的安全警报。
   * **EVENT_HUB_NAMESPACE** 是事件中心命名空间，你将在此处发送组织的安全警报。
   * **“days”** 是要将消息保留在事件中心内的天数。
   
-&nbsp;
+
 4. 以 JSON 格式将文件另存到你将从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
 
 5. 运行以下命令以登录到 ARMClient 工具。 你需要使用全局管理员帐户凭据。
@@ -112,6 +112,9 @@ ms.locfileid: "32584892"
     ARMClient.exe put https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview  @".\AzMonConfig.json"
     ```
 
+    > **注意：** API 版本 `2017-04-01-preview` 可以安全地用于生产。
+
+
 7. 若要验证是否正确应用了设置，运行此命令并验证输出匹配 JSON 文件设置。
 
     ``` shell
@@ -119,6 +122,12 @@ ms.locfileid: "32584892"
     ```
 
 8. 退出 ARMClient 工具。 现在，你已完成将租户安全警报发送到事件中心的 Azure Monitor 的配置。
+
+>**提示：** 若要禁用从租户到事件中心的警报流，请通过运行以下 `delete` 命令删除 Azure Monitor 设置。
+
+    ``` shell
+    ARMClient.exe delete https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
+    ```
 
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>第 3 步：下载并安装用于 Splunk 的 Azure Monitor 加载项（可便于 Splunk 使用安全警报）
 

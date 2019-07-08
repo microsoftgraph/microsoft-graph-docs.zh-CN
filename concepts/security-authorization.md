@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564146"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621226"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
@@ -62,9 +62,9 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 - 如需使租户 **T1** 中的应用程序再次运行，租户 **T1** 的管理员必须向应用程序显式授予权限 **P1** 和 **P2**。
 
-## <a name="register-an-application-in-the-azure-ad-v20-endpoint"></a>在 Azure AD v2.0 终结点中注册应用程序
+## <a name="register-an-application-with-the-microsoft-identity-platform-endpoint"></a>向 Microsoft 标识平台终结点注册应用程序
 
-如需将应用程序注册到 Azure AD v2.0 终结点，将需要：
+若要向 Microsoft 标识平台终结点注册应用程序，你需要：
 
 - **应用程序名称** - 表示应用程序名称的字符串。
 - **重定向 URL** - 该 URL 发送来自 Azure AD 的身份验证响应。 请使用测试客户端 web 应用主页以开始。
@@ -72,11 +72,13 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 注册应用程序：
 
-1. 转到 https://apps.dev.microsoft.com/ 并登录。
+1. 转到 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)并登录。
     >**注意**：你无需是租户管理员。你将被重定向到“**我的应用程序**”列表。
-2. 选择“**添加应用**”，并输入“**应用程序名称**”以创建新应用程序。
-3. 在新应用程序注册页面，选择“**添加平台**” > “**Web**”。 在“**重定向 URL**”字段中，输入重定向 URL。
-4. 在“**Microsoft Graph 权限**”部分的“**委派权限**”下，选择“**添加**”。 在对话框中，选择所需的权限。 如需查看权限列表，请参阅[安全权限](permissions-reference.md#security-permissions)。
+2. 选择“**新注册**”。
+3. 在新应用程序的注册页面上，输入“**名称**”的值，然后选择希望支持的帐户类型。 在“**重定向 URI**”字段中，输入重定向 URL。
+4. 选择“**注册**”以创建应用并查看其概述页面。
+5. 转到应用的“**API 权限**”页面。
+6. 选择“**添加权限**”，然后在浮出控件中选择“**Microsoft Graph**”。 选择“**委托的权限**”。 使用搜索框查找并选择所需的权限。 如需查看权限列表，请参阅[安全权限](permissions-reference.md#security-permissions)。
 
     >**注释：** Microsoft Graph 安全性 API 需要 *.Read.All scope 才能进行 GET 查询，需要 *.ReadWrite.All scope 才能进行 PATCH/POST/DELETE 查询。
 
@@ -84,19 +86,19 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
     |:----------|:-------|:-------------------|
     |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta)（预览） | GET |
     |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta)（预览） | GET, POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（预览）</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)（预览） | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（预览）</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)（预览） | GET, POST, PATCH |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
     |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta)（预览） | GET, POST, PATCH, DELETE|
 
-5. 选择“**保存**”。
+7. 选择“**添加权限**”。
 
 保存以下信息：
 
-- 应用程序 ID
+- 应用程序（客户端）ID
 - 重定向 URL
 - 所需权限列表
 
-如需了解更多信息，请参阅[使用 Azure AD v2.0 终结点注册应用](auth-register-app-v2.md)。
+有关详细信息，请参阅[向 Microsoft 标识平台注册应用](auth-register-app-v2.md)。
 
 ## <a name="grant-permissions-to-an-application"></a>向应用程序授予权限
 
@@ -104,12 +106,12 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 如要向应用程序授予权限，将需要：
 
-- **应用程序 ID** - 应用程序注册门户中的应用程序 ID。
-- **重定向 URL** - 在应用程序注册门户中为身份验证响应设置的字符串。
+- **应用程序 ID** - Azure 应用程序注册门户中的应用程序 ID。
+- **重定向 URL** - 在 Azure 应用程序注册门户中为身份验证响应设置的字符串。
 
-如要授予权限，请执行下列操作：
+若要授予权限，请执行下列操作：
 
-- 在文本编辑器中创建以下 URL 字符串：
+- 在文本编辑器中，创建以下 URL 字符串：
 
     `https://login.microsoftonline.com/common/adminconsent?client_id=<Application Id>&state=12345&redirect_uri=<Redirect URL>`
 
@@ -144,12 +146,18 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 |**应用程序类型**|**身份验证库**|
 |------------------------|----------------------------|
-|[桌面应用 - iOS](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework：适用于 iOS 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[桌面应用 - Android](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft 身份验证库 (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[桌面应用 - .Net](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft 身份验证库 (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web 应用 - JavaScript SPA](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[适用于 JavaScript 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web 应用 - .NET Web 服务器](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookie、SystemWeb|
-|[Web 应用 - NodeJS Web 应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|
+  [桌面应用 - iOS](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework：适用于 iOS 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|
+  [桌面应用 - Android](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft 身份验证库 (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|
+  [桌面应用 - .Net](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft 身份验证库 (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|
+  [Web 应用 - JavaScript SPA](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[适用于 JavaScript 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|
+  [Web 应用 - .NET Web 服务器](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookie、SystemWeb|
+|
+  [Web 应用 - NodeJS Web 应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 对于不使用任何现有库的应用程序，请参阅[代表用户获取访问权限](auth-v2-user.md)。
 
