@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afd06dcfbefdab71a72ea2b73ff12e84328d361e
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574594"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607397"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
@@ -120,7 +120,7 @@ Wiki 选项卡不支持通过 Graph 进行配置。
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | 空字符串 ("")                                        |
-| contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 并删除 "/Forms/AllItems.aspx" 和后面的所有内容, 来查找此 url。 |
+| contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 并删除 "/Forms/AllItems.aspx" 和后面的所有内容, 来查找此 URL。 |
 | removeUrl  | 字符串      | Null                                                     |
 | websiteUrl | 字符串      | Null                                                     |
 
@@ -149,8 +149,8 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`，其中 {randomGuid} 是所生成的 GUID。                                      |
-| contentUrl | string      | 表单 `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}` 的 URL，其中 `{sectionsUrl}`、`{notebookId}` 和 `{oneNoteWebUrl}` 均可在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到。 斜杠必须经过转义。 {locale} 和 {tid} 是文本。 |
-| removeUrl  | string      | 表单 `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}` 的 URL，其中 `{sectionsUrl}`、`{notebookId}` 和 `{oneNoteWebUrl}` 均可在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到。 斜杠必须经过转义。 {locale} 和 {tid} 是文本。 |
+| contentUrl | string      | 表单`https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`的 URL, 在[GET/groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta)中`{oneNoteWebUrl}`可以找到`{notebookId}`和。 斜杠必须经过转义。 {groupId}、{locale} 和 {tid} 为文本。 |
+| removeUrl  | string      | 表单`https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`的 URL, 在[GET/groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta)中`{oneNoteWebUrl}`可以找到`{notebookId}`和。 斜杠必须经过转义。 {groupId}、{locale} 和 {tid} 为文本。 |
 | websiteUrl | string      | 表单 `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}` 的 URL，其中 `oneNoteWebUrl` 可以在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到 |
 
 ## <a name="power-bi-tabs"></a>Power BI 选项卡
