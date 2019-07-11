@@ -2,54 +2,56 @@
 title: 创建 synchronizationJob
 description: 使用默认同步架构创建新的同步作业。 作业将在禁用状态中创建。 启动同步的呼叫启动作业。
 localization_priority: Normal
-ms.openlocfilehash: b57787ee03097b7b6cfadeba077fb49773d569f3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 65ae773af55a524fdd05d95b736c4b50b22585a3
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457028"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621093"
 ---
-# <a name="create-synchronizationjob"></a><span data-ttu-id="dbda6-105">创建 synchronizationJob</span><span class="sxs-lookup"><span data-stu-id="dbda6-105">Create synchronizationJob</span></span>
+# <a name="create-synchronizationjob"></a><span data-ttu-id="852a1-105">创建 synchronizationJob</span><span class="sxs-lookup"><span data-stu-id="852a1-105">Create synchronizationJob</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dbda6-106">使用默认同步架构创建新的同步作业。</span><span class="sxs-lookup"><span data-stu-id="dbda6-106">Create new synchronization job with a default synchronization schema.</span></span> <span data-ttu-id="dbda6-107">作业将在禁用状态中创建。</span><span class="sxs-lookup"><span data-stu-id="dbda6-107">The job is created in a disabled state.</span></span> <span data-ttu-id="dbda6-108">启动同步的呼叫[启动作业](synchronization-synchronizationjob-start.md)。</span><span class="sxs-lookup"><span data-stu-id="dbda6-108">Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.</span></span>
+<span data-ttu-id="852a1-106">使用默认同步架构创建新的同步作业。</span><span class="sxs-lookup"><span data-stu-id="852a1-106">Create new synchronization job with a default synchronization schema.</span></span> <span data-ttu-id="852a1-107">作业将在禁用状态中创建。</span><span class="sxs-lookup"><span data-stu-id="852a1-107">The job is created in a disabled state.</span></span> <span data-ttu-id="852a1-108">启动同步的呼叫[启动作业](synchronization-synchronizationjob-start.md)。</span><span class="sxs-lookup"><span data-stu-id="852a1-108">Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dbda6-109">权限</span><span class="sxs-lookup"><span data-stu-id="dbda6-109">Permissions</span></span>
-<span data-ttu-id="dbda6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dbda6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="852a1-109">权限</span><span class="sxs-lookup"><span data-stu-id="852a1-109">Permissions</span></span>
+<span data-ttu-id="852a1-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="852a1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dbda6-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="dbda6-112">Permission type</span></span>                        | <span data-ttu-id="dbda6-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dbda6-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="852a1-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="852a1-112">Permission type</span></span>                        | <span data-ttu-id="852a1-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="852a1-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dbda6-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dbda6-114">Delegated (work or school account)</span></span>     |<span data-ttu-id="dbda6-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbda6-115">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="dbda6-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dbda6-116">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="dbda6-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="dbda6-117">Not supported.</span></span>|
-|<span data-ttu-id="dbda6-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="dbda6-118">Application</span></span>                            |<span data-ttu-id="dbda6-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="dbda6-119">Not supported.</span></span>  | 
+|<span data-ttu-id="852a1-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="852a1-114">Delegated (work or school account)</span></span>     |<span data-ttu-id="852a1-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="852a1-115">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="852a1-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="852a1-116">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="852a1-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="852a1-117">Not supported.</span></span>|
+|<span data-ttu-id="852a1-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="852a1-118">Application</span></span>                            |<span data-ttu-id="852a1-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="852a1-119">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="dbda6-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dbda6-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="852a1-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="852a1-120">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dbda6-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="dbda6-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="852a1-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="852a1-121">Request headers</span></span>
 
-| <span data-ttu-id="dbda6-122">名称</span><span class="sxs-lookup"><span data-stu-id="dbda6-122">Name</span></span>           | <span data-ttu-id="dbda6-123">类型</span><span class="sxs-lookup"><span data-stu-id="dbda6-123">Type</span></span>    | <span data-ttu-id="dbda6-124">说明</span><span class="sxs-lookup"><span data-stu-id="dbda6-124">Description</span></span>|
+| <span data-ttu-id="852a1-122">名称</span><span class="sxs-lookup"><span data-stu-id="852a1-122">Name</span></span>           | <span data-ttu-id="852a1-123">类型</span><span class="sxs-lookup"><span data-stu-id="852a1-123">Type</span></span>    | <span data-ttu-id="852a1-124">说明</span><span class="sxs-lookup"><span data-stu-id="852a1-124">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="dbda6-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="dbda6-125">Authorization</span></span>  | <span data-ttu-id="dbda6-126">string</span><span class="sxs-lookup"><span data-stu-id="dbda6-126">string</span></span>  | <span data-ttu-id="dbda6-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dbda6-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="852a1-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="852a1-125">Authorization</span></span>  | <span data-ttu-id="852a1-126">string</span><span class="sxs-lookup"><span data-stu-id="852a1-126">string</span></span>  | <span data-ttu-id="852a1-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="852a1-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dbda6-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="dbda6-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="852a1-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="852a1-129">Request body</span></span>
 
-<span data-ttu-id="dbda6-130">在请求正文中, 提供要创建的[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dbda6-130">In the request body, supply a JSON representation of the [synchronizationJob](../resources/synchronization-synchronizationjob.md) object to be created.</span></span> <span data-ttu-id="dbda6-131">唯一的必需属性是`templateId`。</span><span class="sxs-lookup"><span data-stu-id="dbda6-131">The only required property is `templateId`.</span></span> <span data-ttu-id="dbda6-132">`templateId`属性必须与为此应用程序/服务主体创建的一个模板相匹配。</span><span class="sxs-lookup"><span data-stu-id="dbda6-132">The `templateId` property must match one of the templates created for this application/service principal.</span></span> <span data-ttu-id="dbda6-133">若要查找可用模板, 请使用[列表模板](synchronization-synchronizationtemplate-list.md)。</span><span class="sxs-lookup"><span data-stu-id="dbda6-133">To find available templates, use [List templates](synchronization-synchronizationtemplate-list.md).</span></span>
+<span data-ttu-id="852a1-130">在请求正文中, 提供要创建的[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="852a1-130">In the request body, supply a JSON representation of the [synchronizationJob](../resources/synchronization-synchronizationjob.md) object to be created.</span></span> <span data-ttu-id="852a1-131">唯一的必需属性是`templateId`。</span><span class="sxs-lookup"><span data-stu-id="852a1-131">The only required property is `templateId`.</span></span> <span data-ttu-id="852a1-132">`templateId`属性必须与为此应用程序/服务主体创建的一个模板相匹配。</span><span class="sxs-lookup"><span data-stu-id="852a1-132">The `templateId` property must match one of the templates created for this application/service principal.</span></span> <span data-ttu-id="852a1-133">若要查找可用模板, 请使用[列表模板](synchronization-synchronizationtemplate-list.md)。</span><span class="sxs-lookup"><span data-stu-id="852a1-133">To find available templates, use [List templates](synchronization-synchronizationtemplate-list.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="dbda6-134">响应</span><span class="sxs-lookup"><span data-stu-id="dbda6-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="852a1-134">响应</span><span class="sxs-lookup"><span data-stu-id="852a1-134">Response</span></span>
 
-<span data-ttu-id="dbda6-135">如果成功, 则在`201 Created`响应正文中返回响应代码和[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象。</span><span class="sxs-lookup"><span data-stu-id="dbda6-135">If successful, returns a `201 Created` response code and a [synchronizationJob](../resources/synchronization-synchronizationjob.md) object in the response body.</span></span>
+<span data-ttu-id="852a1-135">如果成功, 则在`201 Created`响应正文中返回响应代码和[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象。</span><span class="sxs-lookup"><span data-stu-id="852a1-135">If successful, returns a `201 Created` response code and a [synchronizationJob](../resources/synchronization-synchronizationjob.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dbda6-136">示例</span><span class="sxs-lookup"><span data-stu-id="dbda6-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="852a1-136">示例</span><span class="sxs-lookup"><span data-stu-id="852a1-136">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dbda6-137">请求</span><span class="sxs-lookup"><span data-stu-id="dbda6-137">Request</span></span>
-<span data-ttu-id="dbda6-138">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="dbda6-138">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="852a1-137">请求</span><span class="sxs-lookup"><span data-stu-id="852a1-137">Request</span></span>
+<span data-ttu-id="852a1-138">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="852a1-138">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dbda6-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="dbda6-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="852a1-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="852a1-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationjob_from_synchronization"
@@ -62,25 +64,25 @@ Content-type: application/json
     "templateId": "BoxOutDelta"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dbda6-140">C#</span><span class="sxs-lookup"><span data-stu-id="dbda6-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="852a1-140">C#</span><span class="sxs-lookup"><span data-stu-id="852a1-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationjob-from-synchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dbda6-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="dbda6-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="852a1-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="852a1-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-synchronizationjob-from-synchronization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dbda6-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="dbda6-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="852a1-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="852a1-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-synchronizationjob-from-synchronization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="dbda6-143">响应</span><span class="sxs-lookup"><span data-stu-id="dbda6-143">Response</span></span>
-<span data-ttu-id="dbda6-144">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="dbda6-144">The following is an example of a response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="852a1-143">响应</span><span class="sxs-lookup"><span data-stu-id="852a1-143">Response</span></span>
+<span data-ttu-id="852a1-144">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="852a1-144">The following is an example of a response.</span></span> 
 
-><span data-ttu-id="dbda6-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="dbda6-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="852a1-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="852a1-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
