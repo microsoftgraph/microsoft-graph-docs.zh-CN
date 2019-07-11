@@ -2,12 +2,14 @@
 title: objectMapping 资源类型
 description: 定义给定对象应如何从源目录同步到目标目录。 具体而言, 它定义源目录中的对象应与目标目录中的对象匹配的方式, 应使用什么 (如果有) 作用域筛选器确定是否要预配给定的对象, 以及应如何转换对象属性源到目标目录。
 localization_priority: Normal
-ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 667a58f299847188d193a5b50bb9883721d191e9
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345558"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620512"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping 资源类型
 

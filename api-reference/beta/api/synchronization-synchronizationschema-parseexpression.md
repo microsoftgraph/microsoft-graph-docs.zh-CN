@@ -2,12 +2,14 @@
 title: 'synchronizationSchema: parseExpression'
 description: '(../resources/synchronization_attributemappingsource.md) 对象。 '
 localization_priority: Normal
-ms.openlocfilehash: 1b14e2e3c62748c504a7b5c798f640ba85045286
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 33e06afa2cafcaf596f30c84fc39aaa55cb75d3d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458162"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620995"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 

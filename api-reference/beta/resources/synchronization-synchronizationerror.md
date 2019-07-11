@@ -2,12 +2,14 @@
 title: synchronizationError 资源类型
 description: 表示同步过程中发生的错误。
 localization_priority: Normal
-ms.openlocfilehash: 7f678cdbd48a3d5f013c22120d01c28bb61738e6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b48f1f47f343995b5cb7dc9ab3de4210a5249124
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324712"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620750"
 ---
 # <a name="synchronizationerror-resource-type"></a>synchronizationError 资源类型
 

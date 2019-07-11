@@ -2,12 +2,14 @@
 title: objectDefinition 资源类型
 description: 描述对象及其属性。 对象定义是 directoryDefinition 的一部分, 它作为 synchronizationSchema 的一部分进行更新。
 localization_priority: Normal
-ms.openlocfilehash: 0e693b88e6ae983c4f854d40b49eb60405b067b6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 38a636e8b85758d21cb91bd2951916ed9db9dc7a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342922"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620526"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition 资源类型
 
@@ -21,7 +23,7 @@ ms.locfileid: "33342922"
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md)集合    | 定义对象的属性。 |
 |metadata       |[metadataEntry](synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
-|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为 Null。|
+|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为 null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

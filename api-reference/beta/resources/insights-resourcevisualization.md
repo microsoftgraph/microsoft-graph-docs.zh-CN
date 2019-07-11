@@ -4,12 +4,12 @@ description: 包含见解的属性的复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a8f6f048576ce5bc6ab532793d98fa1644e5158d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7eddc083bd38c0902f61d326926c86f48ca78714
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333561"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620905"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
@@ -62,9 +62,9 @@ ms.locfileid: "33333561"
 -   OneNotePage
 -   InfoPath
 -   Visio
--   发行商
+-   Publisher
 -   Project
--   访问
+-   Access
 -   邮件
 -   Csv
 -   存档
@@ -73,12 +73,12 @@ ms.locfileid: "33333561"
 -   视频
 -   图像
 -   Web
--   Text
+-   文本
 -   Xml
 -   Story
 -   ExternalContent
 -   Folder
--   其他
+-   Other
 
 示例查询:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 

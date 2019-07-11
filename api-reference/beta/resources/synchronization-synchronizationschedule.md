@@ -2,12 +2,14 @@
 title: synchronizationSchedule 资源类型
 description: 定义用于运行 synchronizationJob 的计划。
 localization_priority: Normal
-ms.openlocfilehash: 2ae5473463e84fdf27882df1b243049cc98ab043
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f6802f6a5a17de53ec070621c87d077dd1b45f87
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340034"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620701"
 ---
 # <a name="synchronizationschedule-resource-type"></a>synchronizationSchedule 资源类型
 
@@ -18,7 +20,7 @@ ms.locfileid: "33340034"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|时间|DateTimeOffset|此作业将到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|时间|DateTimeOffset|此作业将到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |interval|持续时间|同步迭代之间的时间间隔。|
 |state|String| 可取值为：`Active`、`Disabled`。|
 

@@ -2,12 +2,14 @@
 title: attributeMappingParameterSchema 资源类型
 description: 描述在 attributeMappingFunctionSchema 中使用的单个参数。
 localization_priority: Normal
-ms.openlocfilehash: 44234e7e76b5b0d0fb514366be6106c8177b56db
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d8624851d37f475df66ec51f1951ebbbe1ea97a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342926"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620267"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema 资源类型
 

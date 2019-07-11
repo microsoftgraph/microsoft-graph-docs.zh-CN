@@ -2,12 +2,14 @@
 title: attributeDefinition 资源类型
 description: 描述对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 04ee5ffb6cda3cc48f89a722caab3a4e46500379
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 73e218ffce2d77d0e0f716d86c74e60224fb15fb
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345624"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620400"
 ---
 # <a name="attributedefinition-resource-type"></a>attributeDefinition 资源类型
 
@@ -24,7 +26,7 @@ ms.locfileid: "33345624"
 |metadata       |[metadataEntry](../resources/synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
 |多    |Boolean    |`true`如果属性可以有多个值。 默认值为 `false`。|
 |mutability     |String     |属性的 mutability。 可能的值为`ReadWrite`: `ReadOnly`、 `Immutable`、 `WriteOnly`、。 默认值为 `ReadWrite`。|
-|name           |String     |属性的名称。 在对象定义中必须是唯一的。 不可为 Null。|
+|name           |String     |属性的名称。 在对象定义中必须是唯一的。 不可为 null。|
 |必需       |Boolean    |`true`if 属性是必需的。 如果缺少任何必需的属性, 则不能创建对象。 如果在同步过程中, 所需的属性没有任何值, 则将使用默认值。 如果默认值未设置, 则同步将记录一个错误。|
 |referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md)集合 |对于 " `reference`类型" 的属性, 列出引用的对象 (例如`manager` , 属性将`User`作为被引用对象的列表)。|
 |type           |String     |属性值类型。 可取值为：`String`、`Integer`、`Reference`、`Binary` 或 `Boolean`。 默认值为 `String`。|

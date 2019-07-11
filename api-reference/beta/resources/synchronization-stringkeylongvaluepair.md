@@ -2,12 +2,14 @@
 title: stringKeyLongValuePair 资源类型
 description: 表示键值对, 其中键是字符串, 值为 Int64。
 localization_priority: Normal
-ms.openlocfilehash: 48ca44c70e02be153aaeb5ee1171cd8c60e0fa2d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c422c565ebdbea58baa3f6709fdd5deef6cb1929
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342748"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620407"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>stringKeyLongValuePair 资源类型
 

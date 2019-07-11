@@ -2,12 +2,14 @@
 title: stringKeyAttributeMappingSourceValuePair 资源类型
 description: 表示键值对, 其中键是字符串, 值为 attributeMappingSource。
 localization_priority: Normal
-ms.openlocfilehash: 7b722fb681ceb64ac4dd58553010e704e7669584
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e513ffd0ba32780ae1a489155999716b3a7499d2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345517"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620435"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>stringKeyAttributeMappingSourceValuePair 资源类型
 

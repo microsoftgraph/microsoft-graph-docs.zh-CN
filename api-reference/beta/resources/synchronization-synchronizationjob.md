@@ -2,12 +2,14 @@
 title: synchronizationJob 资源类型
 description: 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分, 您需要授予在目标目录中读取和写入对象的权限, 并自定义作业的同步架构。
 localization_priority: Normal
-ms.openlocfilehash: 186df51b9a2a941d6c27cda03895423e311fb0b0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 19f30dd20d313d5ab7a46dd9368d391b83ee1993
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620827"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620729"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 
@@ -21,7 +23,7 @@ ms.locfileid: "33620827"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md)集合  |列出给定应用程序实例 (服务主体) 的现有作业。|
 |[获取 synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |读取 synchronizationJob 对象的属性和关系。|
-|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |为给定应用程序创建新作业。|
+|[创建](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |为给定应用程序创建新作业。|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |无   |启动同步。 如果作业处于暂停状态, 则它将从作业暂停的点继续。 如果作业处于隔离状态, 则隔离状态为 "已清除"。|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |无   |强制作业重新启动并重新处理目录中的所有对象。|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |无   |临时停止同步。 所有进度 (包括作业状态) 均保持不变, 作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。|
@@ -34,10 +36,10 @@ ms.locfileid: "33620827"
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id             |字符串                     |唯一的同步作业标识符。 只读。|
+|id             |String                     |唯一的同步作业标识符。 只读。|
 |schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 只读。|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态, 包括上次运行作业的时间、当前作业状态和错误。|
-|templateId     |字符串    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
+|templateId     |String    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

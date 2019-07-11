@@ -2,12 +2,12 @@
 title: chatMessageAttachment 资源类型
 description: 表示聊天消息实体的附件。
 localization_priority: Normal
-ms.openlocfilehash: 3358d5bd851c00b422efee8721920ffb7b74ab45
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6415ac6b52d33946f582c22c7b48770047f57866
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341455"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620884"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "33341455"
 |contentUrl|string|附件内容的 URL。 支持的协议: http、https、文件和数据。|
 |content|string|附件的内容。 如果附件是一个丰富的卡片, 请将该属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
 |name|string|附件的名称。|
-|thumbnailUrl| string |如果通道支持使用替代的较小的内容或 contentUrl 的缩略图图像, 则为该图像的 URL。 例如, 如果将 contentType 设置为 application/word 并将 contentUrl 设置为 word 文档的位置, 则可以包含表示该文档的缩略图图像。 频道可以显示缩略图图像而不是文档。 当用户单击图像时, 通道将打开文档。|
+|thumbnailUrl| string |如果通道支持使用替代的较小的内容或 contentUrl 的缩略图图像的 URL。 例如, 如果将 contentType 设置为 application/word 并将 contentUrl 设置为 Word 文档的位置, 则可以包含表示该文档的缩略图图像。 频道可以显示缩略图图像而不是文档。 当用户单击图像时, 通道将打开文档。|
 
 ## <a name="json-representation"></a>JSON 表示形式
  下面是资源的 JSON 表示形式

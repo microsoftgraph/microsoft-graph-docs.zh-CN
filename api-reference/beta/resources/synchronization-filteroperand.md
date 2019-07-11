@@ -2,12 +2,14 @@
 title: filterOperand 资源类型
 description: 包含操作数的值的集合。
 localization_priority: Normal
-ms.openlocfilehash: f5bcce50a608ec542a22bacadd9b686db11d781a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c93702ecb91da8d892de170c357e0a2381cba2f3
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342954"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621407"
 ---
 # <a name="filteroperand-resource-type"></a>filterOperand 资源类型
 
@@ -18,7 +20,7 @@ ms.locfileid: "33342954"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|值|String 集合|值的集合。|
+|值|String collection|值的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

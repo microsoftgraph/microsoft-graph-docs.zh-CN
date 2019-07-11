@@ -2,12 +2,12 @@
 title: 更新 profilephoto
 description: 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。 自此处起
 localization_priority: Normal
-ms.openlocfilehash: b4f1cc2cf446d540d4143263bdb68bf9c09cccf4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8a3c6d2ce042fa068fb0e0d99798fd8fa2be1d07
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455362"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621338"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -29,6 +29,8 @@ ms.locfileid: "35455362"
 |应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 
 > **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。
+
+> **注意:** 目前存在使用应用程序权限访问组照片的[已知问题](https://docs.microsoft.com/en-us/graph/known-issues#groups)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

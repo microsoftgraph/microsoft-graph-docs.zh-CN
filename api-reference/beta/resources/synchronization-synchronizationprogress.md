@@ -2,12 +2,14 @@
 title: synchronizationProgress 资源类型
 description: 表示 synchronizationJob 的进度向完成。
 localization_priority: Normal
-ms.openlocfilehash: d05193c7c242dc3f890aba6f4fcec5a8badc087f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 92260f5e4ee0a036322b9ce1a7593a02a0a1565a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340006"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621170"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
 

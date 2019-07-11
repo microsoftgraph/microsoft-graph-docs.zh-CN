@@ -2,12 +2,14 @@
 title: filterGroup 资源类型
 description: 定义要在范围中考虑对象必须满足的一组子句。 仅当组的所有子句都计算为`true` `true`时, 才会在组的作用域中考虑对象 (组的计算结果为)。
 localization_priority: Normal
-ms.openlocfilehash: ac71d5aa8c278c4c65edd96f0adcb8278bfd3246
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c411b85f2661829fe8739b8f8dc1cdd09639723c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342878"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621443"
 ---
 # <a name="filtergroup-resource-type"></a>filterGroup 资源类型
 

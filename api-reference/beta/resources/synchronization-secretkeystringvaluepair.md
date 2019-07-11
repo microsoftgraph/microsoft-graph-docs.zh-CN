@@ -2,12 +2,14 @@
 title: synchronizationSecretKeyStringValuePair 资源类型
 description: '表示单个机密值。 '
 localization_priority: Normal
-ms.openlocfilehash: 36ec5ababb6c972bad336b3cfa8da4d34ba66c55
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d69b6b562ba4f42fd73f4f2fe51c2ad0ec0e4ce3
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342879"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620442"
 ---
 # <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>synchronizationSecretKeyStringValuePair 资源类型
 

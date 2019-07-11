@@ -2,12 +2,14 @@
 title: 获取 synchronizationJob
 description: 检索现有同步作业及其属性。
 localization_priority: Normal
-ms.openlocfilehash: 6e21f1b86736286c624f77d4ce305d02791dfd26
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f9b081b78c861c3882d3edd51bcd339ebc6cd2c7
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457049"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621226"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 

@@ -2,12 +2,14 @@
 title: attributeMappingSource 资源类型
 description: '定义应如何从源对象提取 (或转换) 值。 例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 '
 localization_priority: Normal
-ms.openlocfilehash: 8b00cec8f49b914d37d252e5dc464720228bb825
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0c5ef197a72767fb0c764689558b9c005be856f8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345615"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621450"
 ---
 # <a name="attributemappingsource-resource-type"></a>attributeMappingSource 资源类型
 

@@ -2,12 +2,14 @@
 title: 'synchronizationSchema: 函数'
 description: 列出 attributeMappingSource 中当前支持的所有函数。
 localization_priority: Normal
-ms.openlocfilehash: a9967f1d3a6d68c847596f1e1ece2224ba0242fc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 41355675da4ec2f11f9f3b32d086a8db2aaf398b
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458155"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621009"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: 函数
 

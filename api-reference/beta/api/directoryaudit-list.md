@@ -4,12 +4,12 @@ description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体)
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 81f7cd6e9af0464f95c3c23b17089b02d550153b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6e733085214c780d2115a8053d40f15d3ed405bb
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437080"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620246"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -42,9 +42,9 @@ GET /auditLogs/directoryAudits
 
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
+|[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |`/auditLogs/directoryAudits?$filter=createdDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### <a name="attributes-supported-by-filter-parameter"></a>$Filter 参数支持的属性
 

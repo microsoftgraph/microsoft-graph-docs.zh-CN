@@ -2,12 +2,14 @@
 title: filterClause 资源类型
 description: 表示候选对象必须满足的单个断言, 并计算为`true` (object 满足断言) 或`false` (对象不满足断言)。
 localization_priority: Normal
-ms.openlocfilehash: 657651af512fff0b1daf08985e0f14983ca253f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 788dcd8741d89639ce2c57511ae54e466815e366
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342968"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621422"
 ---
 # <a name="filterclause-resource-type"></a>filterClause 资源类型
 

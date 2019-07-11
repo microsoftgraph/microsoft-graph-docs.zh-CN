@@ -2,12 +2,14 @@
 title: synchronizationSchema 资源类型
 description: 定义将同步的对象以及同步的对象。 同步架构包含特定同步作业的大部分安装信息。 通常情况下, 您将自定义一些属性映射, 或添加作用域筛选器以仅同步满足特定条件的对象。
 localization_priority: Normal
-ms.openlocfilehash: 8fd43a028a7d94b6d4a7c1e5d3c47520bff507ec
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7d4302cec5fe568f322e5a8d1b86bc4681b50f7c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339863"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620680"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 

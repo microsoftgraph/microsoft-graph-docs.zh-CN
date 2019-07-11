@@ -4,12 +4,12 @@ description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5949b3a4c1609386b7c6ede41469f35b4df8bdd5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 9594362998b5c13e2f38fcd1ca6043cf10fd80cd
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976027"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620323"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 

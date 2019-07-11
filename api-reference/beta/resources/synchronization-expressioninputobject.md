@@ -2,12 +2,14 @@
 title: expressionInputObject 资源类型
 description: '表示当[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作执行表达式评估时用作输入测试数据的对象。'
 localization_priority: Normal
-ms.openlocfilehash: 90d394639de7050eaed3b696dd8526e144cac03d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b5fb11471757328bf0b84ae5ea0977d43587d7e4
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345573"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621380"
 ---
 # <a name="expressioninputobject-resource-type"></a>expressionInputObject 资源类型
 
@@ -18,8 +20,8 @@ ms.locfileid: "33345573"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|定义|[objectDefinition](synchronization-objectdefinition.md)|test 对象的定义。|
-|properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)集合|test 对象的属性值。|
+|定义|[objectDefinition](synchronization-objectdefinition.md)|Test 对象的定义。|
+|properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)集合|Test 对象的属性值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

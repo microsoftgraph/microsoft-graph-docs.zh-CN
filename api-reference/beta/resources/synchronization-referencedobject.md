@@ -2,12 +2,14 @@
 title: referencedObject 资源类型
 description: 描述对在同一目录定义中定义的另一个对象的引用。
 localization_priority: Normal
-ms.openlocfilehash: 185691c970a5555d23b7b349cef546fb85be0893
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b06bac82ca78c3d249d3b173c0db7f72a953e2d2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345582"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620449"
 ---
 # <a name="referencedobject-resource-type"></a>referencedObject 资源类型
 

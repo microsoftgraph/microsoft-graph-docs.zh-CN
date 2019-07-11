@@ -2,12 +2,14 @@
 title: filterOperatorSchema 资源类型
 description: 介绍可在筛选器中使用的运算符。
 localization_priority: Normal
-ms.openlocfilehash: 0f0ada4aaa02efa2484ffa75d88b2c8256f15fe8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c55838e6e7d12789d1bd84d63dff95b4d9b72efa
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342854"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621366"
 ---
 # <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema 资源类型
 
@@ -22,7 +24,7 @@ ms.locfileid: "33342854"
 |源语言                       |String          |运算符的 Arity。 可取值为：`Binary`、`Unary`。 默认值为`Binary`。|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可取值为：`All`、`Any`。 仅适用于多值属性。 `All`表示所有值都必须满足条件。 `Any`表示必须至少有一个值满足条件。 默认值为`All`。|
 |name                        |String                     |运算符名称。 |
-|supportedAttributeTypes     |String 集合         |运算符支持的属性类型。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
+|supportedAttributeTypes     |String collection         |运算符支持的属性类型。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

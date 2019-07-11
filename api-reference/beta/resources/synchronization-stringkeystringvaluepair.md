@@ -2,12 +2,14 @@
 title: stringKeyStringValuePair 资源类型
 description: 表示键值对, 其中键是字符串, 值是字符串。
 localization_priority: Normal
-ms.openlocfilehash: 99e92f542ece2895591a76fcb80c322e3f6d6613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 01e9dde3631858858e90164b37a5d68a97949454
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324714"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620813"
 ---
 # <a name="stringkeystringvaluepair-resource-type"></a>stringKeyStringValuePair 资源类型
 

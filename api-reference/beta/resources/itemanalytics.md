@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
-ms.openlocfilehash: 2869655b3b645fc8d30ceec3867c28ca81ac9d51
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 862b0b14f1efeb3a83dd4b842c0eb995abeabb80
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345448"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620260"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**itemAnalytics**资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
+**ItemAnalytics**资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
 
 您还可以使用[getActivitiesByInterval][] API 检索自定义时间范围或时间间隔内的分析。
 
->**注意:****itemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +41,7 @@ ms.locfileid: "33345448"
 
 | 属性      | 类型                 | 说明
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | 项目的生命周期中的分析。
+| allTime       | [itemActivityStat][] | 对项目生命周期的分析。
 | lastSevenDays | [itemActivityStat][] | 最近七天的分析。
 
 [itemActivityStat]: itemactivitystat.md
