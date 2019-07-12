@@ -4,22 +4,22 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 1265432ea10e00d0456b4669d5e43e3a6ef7b1f7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 136f35bc47e304a8dc844a9ee4ac86cd49c8928f
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343106"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639155"
 ---
-# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="f7199-102">SharingInvitation 资源类型</span><span class="sxs-lookup"><span data-stu-id="f7199-102">SharingInvitation resource type</span></span>
+# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="0129e-102">SharingInvitation 资源类型</span><span class="sxs-lookup"><span data-stu-id="0129e-102">SharingInvitation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f7199-103">**SharingInvitation** 资源将与邀请相关的数据项分组到一个单一结构。</span><span class="sxs-lookup"><span data-stu-id="f7199-103">The **SharingInvitation** resource groups invitation-related data items into a single strucutre.</span></span>
+<span data-ttu-id="0129e-103">**SharingInvitation**资源将与邀请相关的数据项分组到一个单一结构中。</span><span class="sxs-lookup"><span data-stu-id="0129e-103">The **SharingInvitation** resource groups invitation-related data items into a single structure.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f7199-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f7199-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0129e-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0129e-104">JSON representation</span></span>
 
-<span data-ttu-id="f7199-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f7199-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="0129e-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0129e-105">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,17 +38,17 @@ ms.locfileid: "33343106"
 
 ```
 
-## <a name="properties"></a><span data-ttu-id="f7199-106">属性</span><span class="sxs-lookup"><span data-stu-id="f7199-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0129e-106">属性</span><span class="sxs-lookup"><span data-stu-id="0129e-106">Properties</span></span>
 
-| <span data-ttu-id="f7199-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="f7199-107">Property Name</span></span>  | <span data-ttu-id="f7199-108">类型</span><span class="sxs-lookup"><span data-stu-id="f7199-108">Type</span></span>                          | <span data-ttu-id="f7199-109">说明</span><span class="sxs-lookup"><span data-stu-id="f7199-109">Description</span></span>                                                                                                                   |
+| <span data-ttu-id="0129e-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="0129e-107">Property Name</span></span>  | <span data-ttu-id="0129e-108">类型</span><span class="sxs-lookup"><span data-stu-id="0129e-108">Type</span></span>                          | <span data-ttu-id="0129e-109">说明</span><span class="sxs-lookup"><span data-stu-id="0129e-109">Description</span></span>                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f7199-110">email</span><span class="sxs-lookup"><span data-stu-id="f7199-110">email</span></span>          | <span data-ttu-id="f7199-111">String</span><span class="sxs-lookup"><span data-stu-id="f7199-111">String</span></span>                        | <span data-ttu-id="f7199-p101">为共享邀请的收件人提供的电子邮件地址。只读。</span><span class="sxs-lookup"><span data-stu-id="f7199-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>                                          |
-| <span data-ttu-id="f7199-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="f7199-114">invitedBy</span></span>      | [<span data-ttu-id="f7199-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="f7199-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="f7199-p102">提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。</span><span class="sxs-lookup"><span data-stu-id="f7199-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span> |
-| <span data-ttu-id="f7199-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="f7199-118">signInRequired</span></span> | <span data-ttu-id="f7199-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="f7199-119">Boolean</span></span>                       | <span data-ttu-id="f7199-p103">如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。</span><span class="sxs-lookup"><span data-stu-id="f7199-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>                     |
+| <span data-ttu-id="0129e-110">email</span><span class="sxs-lookup"><span data-stu-id="0129e-110">email</span></span>          | <span data-ttu-id="0129e-111">String</span><span class="sxs-lookup"><span data-stu-id="0129e-111">String</span></span>                        | <span data-ttu-id="0129e-p101">为共享邀请的收件人提供的电子邮件地址。只读。</span><span class="sxs-lookup"><span data-stu-id="0129e-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>                                          |
+| <span data-ttu-id="0129e-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="0129e-114">invitedBy</span></span>      | [<span data-ttu-id="0129e-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="0129e-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="0129e-p102">提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。</span><span class="sxs-lookup"><span data-stu-id="0129e-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span> |
+| <span data-ttu-id="0129e-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="0129e-118">signInRequired</span></span> | <span data-ttu-id="0129e-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="0129e-119">Boolean</span></span>                       | <span data-ttu-id="0129e-p103">如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。</span><span class="sxs-lookup"><span data-stu-id="0129e-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>                     |
 
-## <a name="remarks"></a><span data-ttu-id="f7199-122">注解</span><span class="sxs-lookup"><span data-stu-id="f7199-122">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="0129e-122">注解</span><span class="sxs-lookup"><span data-stu-id="0129e-122">Remarks</span></span> 
 
-<span data-ttu-id="f7199-123">有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="f7199-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="0129e-123">有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="0129e-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
