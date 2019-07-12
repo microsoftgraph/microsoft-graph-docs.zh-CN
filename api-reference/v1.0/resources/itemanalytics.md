@@ -5,12 +5,12 @@ title: itemAnalytics 资源类型
 description: ItemAnalytics 对象提供有关项目上发生的活动的分析。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5c716f8faaafffe6afd75987843e6b614f5d6552
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: a18d12bd2b431d147f2d23ea2c958cd75078c9a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970635"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620414"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "33970635"
 
 | 属性      | 类型                 | 说明
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | 项目的生命周期中的分析。
+| allTime       | [itemActivityStat][] | 对项目生命周期的分析。
 | lastSevenDays | [itemActivityStat][] | 最近七天的分析。
 
 [itemActivityStat]: itemactivitystat.md

@@ -4,12 +4,12 @@ description: 本主题提供由 Windows10EndpointProtectionConfiguration 资源�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3413e0072b63aa640e57897d674b9409820f3797
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dc52880d63a00fe67f0d45d08d974be84881c062
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554385"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620575"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration 资源类型
 
@@ -35,19 +35,19 @@ ms.locfileid: "32554385"
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|firewallBlockStatefulFTP|布尔值|阻止到设备的有状态 FTP 连接|
+|firewallBlockStatefulFTP|Boolean|阻止到设备的有状态 FTP 连接|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|配置安全关联的空闲超时（以秒为单位），值范围为 300 到 3600（包括这两个值）。 这是一个时间段，在此之后安全关联将过期并被删除。 有效值为 300 至 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|选择要使用的预共享密钥编码。 可取值为：`deviceDefault`、`none`、`utF8`。|
-|firewallIPSecExemptionsAllowNeighborDiscovery|布尔值|配置 IPSec 免除项以允许邻居发现 IPv6 ICMP 类型代码|
-|firewallIPSecExemptionsAllowICMP|布尔值|配置 IPSec 免除项以允许 ICMP|
-|firewallIPSecExemptionsAllowRouterDiscovery|布尔值|配置 IPSec 免除项以允许路由器发现 IPv6 ICMP 类型代码|
-|firewallIPSecExemptionsAllowDHCP|布尔值|配置 IPSec 免除项以允许 IPv4 和 IPv6 DHCP 通信|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|配置 IPSec 免除项以允许邻居发现 IPv6 ICMP 类型代码|
+|firewallIPSecExemptionsAllowICMP|Boolean|配置 IPSec 免除项以允许 ICMP|
+|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|配置 IPSec 免除项以允许路由器发现 IPv6 ICMP 类型代码|
+|firewallIPSecExemptionsAllowDHCP|Boolean|配置 IPSec 免除项以允许 IPv4 和 IPv6 DHCP 通信|
 |firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|指定如何强制执行证书吊销列表。 可取值为：`deviceDefault`、`none`、`attempt`、`require`。|
-|firewallMergeKeyingModuleSettings|布尔值|如果键控模块不完全支持身份验证集，请指示模块仅忽略不受支持的身份验证套件而不是整个集|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|配置如何在隧道网关应用场景中应用数据包排队。 可取值为：`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound` 或 `queueBoth`。|
+|firewallMergeKeyingModuleSettings|Boolean|如果键控模块不完全支持身份验证集，请指示模块仅忽略不受支持的身份验证套件而不是整个集|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|配置如何在隧道网关应用场景中应用数据包排队。 可取值为：`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound`、`queueBoth`。|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置域网络的防火墙配置文件设置|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置公用网络的防火墙配置文件设置|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置专用网络的防火墙配置文件设置|
@@ -57,20 +57,20 @@ ms.locfileid: "32554385"
 |defenderExploitProtectionXml|Binary|包含有关 Exploit Protection 详细信息的 xml 内容。|
 |defenderExploitProtectionXmlFileName|String|从中获取 DefenderExploitProtectionXml 的文件的名称。|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|指示是否阻止用户覆盖 Exploit Protection 设置。|
-|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|使管理员能够选择在设备上允许哪些类型的应用。 可取值为：`notConfigured`、`enforceComponentsAndStoreApps`、`auditComponentsAndStoreApps`、`enforceComponentsStoreAppsAndSmartlocker` 或 `auditComponentsStoreAppsAndSmartlocker`。|
-|smartScreenEnableInShell|布尔值|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
-|smartScreenBlockOverrideForFiles|布尔值|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
-|applicationGuardEnabled|布尔值|启用 Windows Defender 应用程序防护|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|阻止剪贴板传输图像文件、文本文件或二者都不。 可取值为：`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone` 或 `blockTextFile`。|
-|applicationGuardBlockNonEnterpriseContent|布尔值|阻止企业站点加载非企业内容，例如第三方插件|
-|applicationGuardAllowPersistence|布尔值|允许 App Guard 容器（收藏夹、Cookie、Web 密码等）内的持久用户生成数据|
-|applicationGuardForceAuditing|布尔值|强制审核将存留 Windows 日志和事件以满足安全/符合性条件（示例事件是用户登录注销、特权使用、软件安装、系统更改等）|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|使管理员能够选择在设备上允许哪些类型的应用。 可取值为：`notConfigured`、`enforceComponentsAndStoreApps`、`auditComponentsAndStoreApps`、`enforceComponentsStoreAppsAndSmartlocker`、`auditComponentsStoreAppsAndSmartlocker`。|
+|smartScreenEnableInShell|Boolean|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
+|smartScreenBlockOverrideForFiles|Boolean|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
+|applicationGuardEnabled|Boolean|启用 Windows Defender 应用程序防护|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|阻止剪贴板传输图像文件、文本文件或二者都不。 可取值为：`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone`、`blockTextFile`。|
+|applicationGuardBlockNonEnterpriseContent|Boolean|阻止企业站点加载非企业内容，例如第三方插件|
+|applicationGuardAllowPersistence|Boolean|允许 App Guard 容器（收藏夹、Cookie、Web 密码等）内的持久用户生成数据|
+|applicationGuardForceAuditing|Boolean|强制审核将存留 Windows 日志和事件以满足安全/符合性条件（示例事件是用户登录注销、特权使用、软件安装、系统更改等）|
 |applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|阻止剪贴板将数据从主机共享到容器或从容器共享到主机，或阻止两种方式，或两种方式均不阻止。 可取值为：`notConfigured`、`blockBoth`、`blockHostToContainer`、`blockContainerToHost`、`blockNone`。|
-|applicationGuardAllowPrintToPDF|布尔值|允许从容器打印为 PDF 格式|
-|applicationGuardAllowPrintToXPS|布尔值|允许从容器打印为 XPS 格式|
-|applicationGuardAllowPrintToLocalPrinters|布尔值|允许从容器打印到本地打印机|
-|applicationGuardAllowPrintToNetworkPrinters|布尔值|允许从容器打印到网络打印机|
-|bitLockerDisableWarningForOtherDiskEncryption|布尔值|允许管理员禁用对用户计算机上其他磁盘加密的警告提示。|
+|applicationGuardAllowPrintToPDF|Boolean|允许从容器打印为 PDF 格式|
+|applicationGuardAllowPrintToXPS|Boolean|允许从容器打印为 XPS 格式|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|允许从容器打印到本地打印机|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|允许从容器打印到网络打印机|
+|bitLockerDisableWarningForOtherDiskEncryption|Boolean|允许管理员禁用对用户计算机上其他磁盘加密的警告提示。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|允许管理员要求使用 BitLocker 开启加密功能。 此策略仅适用于移动 SKU。|
 |bitLockerEncryptDevice|Boolean|允许管理员要求使用 BitLocker 开启加密功能。|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker 可移动驱动器策略。|

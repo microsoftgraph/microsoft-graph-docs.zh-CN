@@ -4,12 +4,12 @@ description: 创建新的 vppToken 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 713a6bf583ff9c315ec88a83811312e6a6af5d92
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7799b36db42449748facfd76711792b1427a231f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582547"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621344"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 
@@ -53,10 +53,10 @@ POST /deviceAppManagement/vppTokens
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
-|lastSyncDateTime|DateTimeOffset|上次利用 Apple Volume Purchase Program 服务并使用 Apple Volume Purchase Program 令牌完成应用程序同步的时间。|
+|lastSyncDateTime|DateTimeOffset|上次使用 Apple Volume purchase program 服务 (apple Volume purchase program 令牌) 完成应用程序同步的时间。|
 |token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
 |lastModifiedDateTime|DateTimeOffset|与 Apple Volume Purchase Program 令牌关联的上次修改日期时间。|
-|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid` 或 `assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid` 或 `assignedToExternalMDM`。|
+|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|

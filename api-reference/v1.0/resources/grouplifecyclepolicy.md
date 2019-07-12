@@ -4,12 +4,12 @@ description: 表示 Office 365 组的生命周期策略。 使用组生命周期
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 65cf8d5d06262f1d5700de26b4c4f62b005020d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5ccc60b78607077c5f822cd56c70f4895fa9cefe
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570839"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620806"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 

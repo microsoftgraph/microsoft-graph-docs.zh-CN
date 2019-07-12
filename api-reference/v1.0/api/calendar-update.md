@@ -4,14 +4,14 @@ description: '更新 calendar 对象的属性。 相应日历可以是用户的�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7a7914a9bd7dfbb3c868c2e1ae788f3c6ab9eefc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3a7c91fb8037bf2dc5c05eff32f085f622d96061
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443789"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620841"
 ---
-# <a name="update-calendar"></a>Update calendar
+# <a name="update-calendar"></a>更新日历
 
 更新 [calendar](../resources/calendar.md) 对象的属性。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 ## <a name="permissions"></a>权限
