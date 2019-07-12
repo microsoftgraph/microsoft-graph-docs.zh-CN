@@ -2,12 +2,12 @@
 title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（profilePhoto 属性）。
 localization_priority: Priority
-ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ab580436a9262e60ef9ab07bc4d61d9ee6f8d04
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576281"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620610"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -31,6 +31,8 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 |委派（个人 Microsoft 帐户） | 不支持 |
 |应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
+> 
+  **注意：** 当前有一个[已知问题](https://docs.microsoft.com/zh-CN/graph/known-issues#groups)，即使用应用程序权限访问组照片。
 
 ## <a name="http-request"></a>HTTP 请求 
 
