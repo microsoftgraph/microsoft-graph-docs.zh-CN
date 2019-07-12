@@ -3,22 +3,22 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5c5c364edb6ff8c0b840450b428cda649d4eba11
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: bfe6a16abcfc0b7ce2900c76e142139fc84df176
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576415"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621142"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
-此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
+此更改日志涵盖了 Microsoft Graph API 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="july-2019"></a>2019 年 7 月
 
-### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|将 **revision** 属性添加到了 [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) 实体|
@@ -26,24 +26,7 @@ ms.locfileid: "35576415"
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-### <a name="reports-apis"></a>报表 API
-
-| **更改类型** | **版本** | **说明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|添加项|beta| 添加了用于检索用户注册和使用情况信息的新报表：<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - 报告自助服务密码重置的使用情况。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - 报告自助服务密码重置和多重身份验证的注册数量。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - 报告自助服务密码重置和多重身份验证的使用情况。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - 报告某个用户的自助式密码重置的使用情况。</li></ul> |
-
-### <a name="identity-and-access"></a>身份和访问
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项 | beta | 添加了 [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta)，它表示 Azure AD Identity Protection 中的风险检测。 |
-| 添加项        | Beta  | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-instantiate.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。|
-| Addition | beta|添加了新资源： </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
-| Addition |beta |添加了 [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作</br>|                     |
-| Addition | v1.0 | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 **signInSessionsValidFromDateTime** 属性。 |
-| Addition | v1.0 | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 操作。 |
-
-### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|添加的新实体：<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
@@ -75,45 +58,51 @@ ms.locfileid: "35576415"
 |Addition|beta|向 [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **sharedSecret** 成员|
 |添加项|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **windows10Home**、**windows10HomeChina**、**windows10HomeN**、**windows10HomeSingleLanguage**、**windows10Mobile**、**windows10IoTCore** 和 **windows10IoTCoreCommercial** 成员|
 
-### <a name="outlook-mail"></a>Outlook 邮件
+### <a name="identity-and-access"></a>身份和访问
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | beta | 添加了 [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta)，它表示 Azure AD Identity Protection 中的风险检测。 |
+| 添加项        | Beta  | 引入了新资源类型 [applicationTemplate](/graph/api/resources/applicationtemplate.md)。 此资源类型支持从 Azure AD 应用程序库[实例化](/graph/api/applicationtemplate-instantiate.md)、[列出](/graph/api/applicationtemplate-instantiate.md)和[获取](/graph/api/applicationtemplate-get.md)应用程序。|
+| Addition | beta|添加了新资源： </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| Addition |beta |添加了 [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 操作</br>|                     |
+| Addition | v1.0 | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 **signInSessionsValidFromDateTime** 属性。 |
+| Addition | v1.0 | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 操作。 |
+
+### <a name="mail-outlook"></a>邮件 (Outlook)
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 增加了对 mailFolder API 中 Mail.ReadBasic 权限的支持：[list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta)、[get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta)、[list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) 和 [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 还在 [delta query for message](/graph/api/message-delta?view=graph-rest-beta) 和 [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta) 中添加了 Mail.ReadBasic 支持。|
 
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
 
-| **更改类型** | **版本**   | **说明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已添加 [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) 资源和相关方法。 |
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|添加项|beta| 添加了用于检索用户注册和使用情况信息的新报表：<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - 报告自助服务密码重置的使用情况。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - 报告自助服务密码重置和多重身份验证的注册数量。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - 报告自助服务密码重置和多重身份验证的使用情况。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - 报告某个用户的自助式密码重置的使用情况。</li></ul> |
 
-
-### <a name="onedrive-and-sharepoint-apis"></a>OneDrive 和 SharePoint API
+### <a name="sites-and-lists-sharepoint"></a>网站和列表 (SharePoint)
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [followSite](/graph/api/follow-site?view=graph-rest-beta) 导航属性 |
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) 导航属性 |
 
+### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 已添加 [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) 资源和相关方法。 |
 
 ## <a name="may-2019"></a>2019 年 5 月
 
-### <a name="directory-apis"></a>目录 API
-| **更改类型** | **版本** | **说明** |
+### <a name="calendar-mail-and-personal-contacts-outlook"></a>日历、邮件和个人联系人 (Outlook)
+
+| **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](https://docs.microsoft.com/zh-CN/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
+| 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
 
-### <a name="education-apis"></a>教育版 API
-| 更改类型 | 版本 | 说明                                                                                                                                                      |
-| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 添加    | beta    | 已将 taughtClasses 添加到 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)。                                                                  |
-| 添加项    | beta    | 已[将](/graph/api/resources/educationCourse?view=graph-rest-beta) educationCourse [添加到 educationClass](/graph/api/resources/educationClass?view=graph-rest-beta)。 |
-| 添加项    | beta    | 向 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)添加了[delta](/graph/delta-query-overview)支持。                                   |
-| 添加项    | beta    | 已向 [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta) 添加 [delta](/graph/delta-query-overview)。                                       |
-| 添加项    | beta    | 已向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加 [delta](/graph/delta-query-overview)。                                         |
-| 添加项    | beta    | 已向 [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) 枚举添加 `faculty` 选项。                              |
-
-### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|添加的新实体：<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta)<br/>|
@@ -155,40 +144,54 @@ ms.locfileid: "35576415"
 |添加项|beta|向 [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
 |添加项|beta|向 [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
 
-### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+### <a name="education"></a>教育
+| 更改类型 | 版本 | 说明                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 添加    | beta    | 已将 taughtClasses 添加到 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)。                                                                  |
+| 添加项    | beta    | 已[将](/graph/api/resources/educationCourse?view=graph-rest-beta) educationCourse [添加到 educationClass](/graph/api/resources/educationClass?view=graph-rest-beta)。 |
+| 添加项    | beta    | 向 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta)添加了[delta](/graph/delta-query-overview)支持。                                   |
+| 添加项    | beta    | 已向 [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta) 添加 [delta](/graph/delta-query-overview)。                                       |
+| 添加项    | beta    | 已向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加 [delta](/graph/delta-query-overview)。                                         |
+| 添加项    | beta    | 已向 [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) 枚举添加 `faculty` 选项。                              |
 
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项        | Beta        | 向 [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) 枚举添加了 **urgent** 属性。|
-| 添加项        | Beta        | 向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实体添加了 **hostedContents** 导航属性。|
-| 添加项        | Beta        | 添加了 **chatMessageHostedContent** 实体来表示由 Microsoft Teams 托管的与 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 关联的内容。 |
-
-### <a name="outlook-mail-calendar-contacts"></a>Outlook 邮件、日历、联系人
-
-| **更改类型** | **版本**   | **说明**                          |
+### <a name="group"></a>组
+| **更改类型** | **版本** | **说明** |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | v1.0 | 已添加 [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) 实体，该实体从 [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) 实体衍生而来并且支持 mailFolder 实体方法。 |
-| 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
+| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](https://docs.microsoft.com/zh-CN/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
 
-### <a name="reports-apis"></a>报表 API
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项        | Beta  | 向 [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
-| 添加项        | Beta  | 向 [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
-
-### <a name="risky-users-api"></a>风险用户 API
+### <a name="identity-and-access--identity-protection"></a>身份和访问 | 身份保护
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 添加了 [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) 实体。 |
 | Addition | Beta | 添加了[列表历史记录](/graph/api/riskyuser-list-history?view=graph-rest-beta)操作。 |
 
-### <a name="security-apis"></a>安全 API
+### <a name="mail-outlook"></a>邮件 (Outlook)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 已添加 [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) 实体，该实体从 [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) 实体衍生而来并且支持 mailFolder 实体方法。 |
+
+### <a name="reports--office-365-usage-reports"></a>报告 | Office 365 使用率报告
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta  | 向 [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
+| 添加项        | Beta  | 向 [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
+
+### <a name="security"></a>安全性
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0       | 向[安全 API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0) 添加了安全功能分数 API，包括以下资源和操作：<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0)（及相关实体）<br/>[列出 secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[列出 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[更新 secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta        | 向 [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) 枚举添加了 **urgent** 属性。|
+| 添加项        | Beta        | 向 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实体添加了 **hostedContents** 导航属性。|
+| 添加项        | Beta        | 添加了 **chatMessageHostedContent** 实体来表示由 Microsoft Teams 托管的与 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 关联的内容。 |
 
 
 ## <a name="april-2019"></a>2019 年 4 月
@@ -1218,7 +1221,7 @@ ms.locfileid: "35576415"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项        | v1.0        | 向 [directory（已删除项）](/graph/api/resources/directory?view=graph-rest-1.0)资源添加了[列出用户拥有的删除项](/graph/api/directory-deleteditems-user-owned?view=graph-rest-1.0)操作 |
+| 添加项        | v1.0        | 向[目录（已删除项目）](/graph/api/resources/directory?view=graph-rest-1.0)资源添加了[列出用户所拥有的已删除项](/graph/api/directory-deleteditems-user-owned?view=graph-rest-1.0)操作 |
 | 添加项 | beta | 向 [directory](/graph/api/resources/directory?view=graph-rest-beta) 资源添加了 [getUserOwnedObjects](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta) 函数，以列出给定用户拥有的已删除组。 |
 
 ### <a name="education-api"></a>教育版 API

@@ -3,12 +3,12 @@ title: 列出订阅
 description: 根据应用程序 ID、用户和用户的角色（含租户）检索 webhook 订阅的属性和关系。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 58300c1d3f7c54136bb443c681d477ccc0bd9734
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a82d47d01a21ee49f12228b8c1dd6e93bda61522
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450469"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621261"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### <a name="response"></a>响应
 
-以下是响应的一个示例。  请注意为简洁起见它可能被截断。  适用于请求和调用上下文的所有支持的属性将从实际调用返回。
+以下是响应示例。  请注意为简洁起见它可能被截断。  适用于请求和调用上下文的所有支持的属性将从实际调用返回。
 
 <!-- {
   "blockType": "response",

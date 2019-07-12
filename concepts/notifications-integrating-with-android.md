@@ -3,12 +3,12 @@ title: 将 Android 应用与用户通知客户端 SDK 相集成
 description: 将 Android 应用与用户通知客户端 SDK 相集成
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 8925dcb7e064015c8ee525e9f1a8c3adc4270f8a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: a0c3050d7f9c644c23696d9a2071e7427b6b565d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063264"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620302"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>将 Android 应用与用户通知客户端 SDK 相集成
 
@@ -36,20 +36,20 @@ ms.locfileid: "34063264"
 3. 在收到包含新通知的 Web 请求后，Microsoft Graph 通知会在此应用和此用户的云中安全地保留通知内容。
 4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序为 Android 应用程序，它使用 [FCM 数据消息](https://firebase.google.com/docs/cloud-messaging/concept-options)发送信号。 
 5. 由传入的推送通知向应用程序发出信号后，它会要求 SDK 获取用户通知存储中的更改。 
-6. SDK 将与 Microsoft Graph 中的用户通知存储建立安全且合规的连接。
+6. SDK 将与 Microsoft Graph 中的用户通知存储区建立安全且合规的连接。
 7. SDK 将获取数据更改 - 在本例中为新通知内容。 
 8. SDK 会触发事件回调，以在成功检索到更改后通知该应用。 
 9. 应用程序逻辑。 此步骤可捕获你的应用选择在事件回调内执行的操作。 通常，这会导致本地应用数据更改和本地 UI 更新。 在这种情况下，该应用通常会构建定制通知弹出窗口，以通知用户有关通知内容的信息。
 
 ## <a name="notification-update-flow"></a>更新通知流
 
-使用 Microsoft Graph 通知的主要好处之一是它可以安全地在云中保留通知，并将其转换为有状态资源类型。 因此，它可以帮助你的应用在跨设备方案中为同一登录用户跨不同设备管理和同步通知的正确状态。 当某台设备上的通知已标记为“已消除”或“已读”时，可以实时通知其他设备。 作为用户通知体验的一部分，可以真正实现“处理一次即可随处消除”的承诺。 
+使用 Microsoft Graph 通知的主要好处之一是它可以安全地在云中保留通知，并将其转换为有状态资源类型。 因此，它可以帮助你的应用在跨设备方案中为同一登录用户跨不同设备管理和同步通知的正确状态。 当某台设备上的通知已标记为“已消除”或“已读”时，可以实时通知其他设备。 作为用户通知体验的一部分，可以真正实现“处理一次，每处均消除”的效果。 
 
 下图显示了在一台设备上更改通知状态或删除通知，以及在另一台设备上接收/处理状态更改或删除的数据流。
 
 ![Android 应用的更新通知流](images/notifications-notification-update-android.png)
 
-请注意，流的第二部分与用于处理新传入通知的流相似。 这是设计使然 - 设计的 SDK 编程模式使应用客户端可以相似的方式处理所有类型的用户通知数据更改（新传入的通知、通知状态更改、已删除的通知）。  
+请注意，流的第二部分与用于处理新传入通知的流相似。 这是设计使然 - 设计的 SDK 编程模式使应用程序客户端可以相似的方式处理所有类型的用户通知数据更改（新传入的通知、通知状态更改、已删除的通知）。  
 
 该图显示了以下步骤：
 
@@ -59,7 +59,7 @@ ms.locfileid: "34063264"
 4. 从客户端接收更新/删除请求时，Microsoft Graph 通知将更新通知存储区，并标识已订阅此更改的其他应用客户端实例。
 5. 对于每个应用客户端订阅，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，这是 Android 应用程序，它使用 [FCM 数据消息](https://firebase.google.com/docs/cloud-messaging/concept-options)发送信号。 
 6. 由传入的推送通知向应用程序发出信号后，它会要求 SDK 获取用户通知存储中的更改。 
-7. SDK 将与 Microsoft Graph 中的用户通知存储建立安全且合规的连接。
+7. SDK 将与 Microsoft Graph 中的用户通知存储区建立安全且合规的连接。
 8. SDK 获取数据更改 - 在这种情况下，更改为通知状态更新或通知删除。 
 9. SDK 会触发事件回调，以在成功检索到更改后通知该应用。 
 10. 应用程序逻辑。 此步骤可捕获你的应用选择在事件回调内执行的操作。 通常，这会导致本地应用数据更改和本地 UI 更新。 在这种情况下，由于存在通知更新，因此应用应本地更新 UI 以反映状态更改。 例如，如果通知已标记为“已激活”，则你可以删除 Android 通知托盘中的相应通知消息，以实现“处理一次，每处均消除”的效果。 
@@ -285,7 +285,7 @@ public UserNotificationsManager(@NonNull Context context, @NonNull ConnectedDevi
 
 ## <a name="receiving-and-managing-user-notifications"></a>接收和管理用户通知
 
-本主题前面的流程图显示，处理来自应用服务器的新传入通知与处理从另一个应用客户端实例启动的通知更新或删除的编程模式类似。 以下是处理这些数据更改的步骤。 
+本主题前面的流程图显示，处理来自应用服务器的新传入通知的编程模式与处理从另一个应用客户端实例启动的通知更新或删除的编程模式类似。 以下是处理这些数据更改的步骤。 
 
 ### <a name="handling-incoming-push-notification-signal"></a>处理传入推送通知信号
 
@@ -377,6 +377,7 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>另请参阅
 
-- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-android)，以获取与 SDK 中的通知功能相关的整套 API。 
+- 
+  [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-android)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适用于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

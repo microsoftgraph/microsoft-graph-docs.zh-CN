@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 9d0d82eddf4aaf283942aa6213f28bdb9d589c65
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133759"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620885"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 

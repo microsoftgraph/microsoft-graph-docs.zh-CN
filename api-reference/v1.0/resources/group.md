@@ -4,12 +4,12 @@ description: '表示 Azure Active Directory (Azure AD) 组，可以是 Office 36
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e410de0a4ef354a636a1c3fdd9851a9a109ee6dd
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 57587b183ccc15c4ebc46784161724d9cc7af773
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236662"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620778"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -77,7 +77,7 @@ ms.locfileid: "35236662"
 |[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
 |[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
-|[创建设置](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
+|[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
 |[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
 |[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 |[更新设置](../api/groupsetting-update.md) | 无 | 更新 setting 对象。 |
