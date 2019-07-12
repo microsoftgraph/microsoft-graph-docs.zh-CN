@@ -4,12 +4,12 @@ description: 创建新的 windowsInformationProtectionPolicy 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ca794af06f4fa26063189470c54ff42ea5c3191
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: ce89df5730ad5e5c0ec7ff84278d105e80d25c33
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984287"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639148"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>创建 windowsInformationProtectionPolicy
 
@@ -85,7 +85,7 @@ POST /deviceAppManagement/windowsInformationProtectionPolicies
 |pinMinimumLength|Int32|整数值，用于设置 PIN 所需的最少字符数。 默认值为 4。 可以为此策略设置配置的最小数量为 4。 可以配置的最大数量必须小于最大 PIN 长度策略设置中配置的数量或 127（以最低者为准）。|
 |pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|整数值，用于配置 Windows Hello 企业版 PIN 中的大写字母的使用。 默认值为 NotAllow。 可取值为：`notAllow`、`requireAtLeastOne`、`allow`。|
 |pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|整数值，用于配置 Windows Hello 企业版 PIN 中的小写字母的使用。 默认值为 NotAllow。 可取值为：`notAllow`、`requireAtLeastOne`、`allow`。|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|整数值，用于配置 Windows Hello 企业版 PIN 中的特殊字母的使用。 Windows Hello 企业版 PIN 手势的有效特殊字符包括：! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \]^ _ ` { | } ~. Default is NotAllow. Possible values are: `notAllow`, `requireAtLeastOne`, `允许 "。|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|整数值，用于配置 Windows Hello 企业版 PIN 中的特殊字母的使用。 Windows Hello 企业版 PIN 手势的有效特殊字符包括：! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \]^ _ \` { | } ~。 默认值为 NotAllow。 可取值为：`notAllow`、`requireAtLeastOne`、`allow`。|
 |pinExpirationDays|Int32|整数值指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段（以天为单位）。 可以为此策略设置配置的最大数量为 730。 可以为此策略设置配置的最小数量为 0。 如果此策略设置为 0，则用户的 PIN 永远不会过期。 此节点在 Windows 10 版本 1511 中添加。 默认值为 0。|
 |numberOfPastPinsRemembered|Int32|整数值，用于指定可以关联到无法重用的用户帐户的过去 PIN 的数量。 可以为此策略设置配置的最大数量为 50。 可以为此策略设置配置的最小数量为 0。 如果此策略设置为 0，则不需要存储以前的 PIN。 此节点在 Windows 10 版本 1511 中添加。 默认值为 0。|
 |passwordMaximumAttemptCount|Int32|在擦除设备之前允许的身份验证失败次数。 值为 0 将禁用设备擦除功能。 范围是一个整数 X，其中对于台式机 4 <= X <= 16，对于移动设备 0 <= X <= 999。|

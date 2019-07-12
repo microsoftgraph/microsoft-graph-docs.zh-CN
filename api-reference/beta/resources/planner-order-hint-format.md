@@ -4,12 +4,12 @@ description: '`)'
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: a80d9d52d3eff99754fa07c8a778c59d0a39f27a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6d88fa821aba48538c102ba439439fe22a4d686f
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344716"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639189"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
 
@@ -60,7 +60,7 @@ ms.locfileid: "33344716"
 4. 第 2 项（排序提示：`'adhg'`）
 5. 第 1 项（排序提示：`'de5%'`）
 
-排序提示可指定为在列表中创建为 ` !` 的首个项目，因为在这种情况下，根本不存在上一个或下一个项目，然而，这不是必须的，因为如果未在创建项目期间指定值，服务会为项目上的所有排序提示值自动生成值。 以下示例表明将项目置于之前为空的列表中时，应使用排序提示。
+排序提示可指定为在列表中创建为 `!` 的首个项目，因为在这种情况下，根本不存在上一个或下一个项目，然而，这不是必须的，因为如果未在创建项目期间指定值，服务会为项目上的所有排序提示值自动生成值。 以下示例表明将项目置于之前为空的列表中时，应使用排序提示。
 添加第一项：
 
 1. 第 1 项（排序提示：`' !'`）

@@ -4,12 +4,13 @@ description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f8b8dd73d19cd1697b6ab090415fa56166ba7c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 10b2ab6650bb255e38eb6bfd2def745edcecd87b
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440237"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639050"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -23,9 +24,9 @@ ms.locfileid: "35440237"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All |
+|委派（工作或学校帐户） | Directory.accessasuser.all、All、All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | 不支持。 |
+|应用程序 | 组织关系。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,15 +38,17 @@ PATCH /organization/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-Type   | application/json |
+
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性  | 类型 |说明|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |

@@ -4,12 +4,12 @@ description: " 不支持创建、更新和删除。 不支持查询筛选表达�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9763592ee444cbf0ae73ffbad81288bb5fdd76c2
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c2bca99fed2b8c5328c2f2cf1ac3bf938ddcfcaa
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655115"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639022"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "34655115"
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |读取 subscribedSku 对象的属性和关系。|
-|[列出 subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
+|[获取 subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |获取组织已获取的特定商业订阅。|
+|[列出 subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |获取组织获取的商业订阅的列表。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

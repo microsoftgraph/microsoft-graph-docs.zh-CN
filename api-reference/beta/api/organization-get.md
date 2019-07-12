@@ -4,18 +4,19 @@ description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e0105a5a81a754beab637fe2199dd7e5bf5d6a7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 1460765c1218fdb397da02fab8073a833b2dd714
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450567"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639071"
 ---
 # <a name="get-organization"></a>获取组织
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索当前经过身份验证的组织的属性和关系。
+获取当前经过身份验证的组织的属性和关系。
 
 由于**组织**资源支持[扩展](/graph/extensibility-overview), 因此您还可以使用操作`GET`来获取**组织**实例中的自定义属性和扩展数据。
 
@@ -25,11 +26,11 @@ ms.locfileid: "35450567"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Read、目录。所有 |
+|委派（工作或学校帐户） | 读取、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、读写。所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Directory.Read.All |
+|应用程序 | 全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、读写。 |
 
-> 注意：授予 User.Read 权限的应用程序仅能读取组织的 *id*、*displayName* 和 *verifiedDomains* 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Directory.Read.All。
+> **注意**: 授予用户的应用程序。读取权限只能读取组织的**id**、 **displayName**和**verifiedDomains**属性。  所有其他属性将返回 `null` 值。 若要读取所有属性, 请使用组织关系。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,9 +46,9 @@ GET /organization
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
