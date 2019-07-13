@@ -4,12 +4,12 @@ description: '介绍如何将 Azure Active Directory (Azure AD) 应用迁移为�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8a63c14ef27648a1d586551ebe12e18a5f263a9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6b5236f6b7be140e1040a3169edded6e162b5e7a
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630249"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645252"
 ---
 # <a name="deploy-test-and-extend"></a>部署、测试和扩展
 
@@ -33,7 +33,7 @@ ms.locfileid: "33630249"
 
     - 请参阅[使用 Microsoft Graph 可以执行的操作](/graph/examples)
     - 浏览[Microsoft graph 博客](/graph/blogs), 了解有关 Microsoft Graph 的最新新闻和一些出色的学习系列。
-    - [更改日志](/greaph/changelog)汇总了服务和文档更新。 按照这些更新, 将帮助您跟踪引入到/beta (预览) 的新 Api 以及升级为 v1。0 (GA) 的新 Api。  这些新 Api 可为你提供新的方法, 以向你的应用添加更多价值和新体验。  
+    - [更改日志](/greaph/changelog)汇总了服务和文档更新。 按照这些更新, 将帮助您跟踪引入到/beta (预览) 的新 Api 以及升级为 v1.0 (GA) 的新 Api。  这些新 Api 可为你提供新的方法, 以向你的应用添加更多价值和新体验。  
 
 ## <a name="see-also"></a>另请参阅
 
@@ -42,7 +42,7 @@ ms.locfileid: "33630249"
 - 再次查看[检查表](migrate-azure-ad-graph-overview.md)
 - 将问题发布到[StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
 - 查看 Microsoft Graph 示例以对比现有应用程序代码并与之进行比较:
-  - **使用 REST API 的应用程序**: 浏览[快速入门和示例](/graph/get-started), 选择您的选择平台, 并在快速启动或搜索相应的示例中运行
+  - **使用 REST API 的应用程序**: 浏览[快速入门和示例](https://developer.microsoft.com/graph/get-started), 选择您的选择平台, 并在快速启动或搜索相应的示例中运行
   - **使用 .net 客户端库的应用程序**: 查看[控制台-csharp-示例](https://github.com/microsoftgraph/console-csharp-snippets-sample)和/或[dotnetcore-示例](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>后续步骤

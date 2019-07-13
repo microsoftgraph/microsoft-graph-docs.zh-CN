@@ -4,12 +4,12 @@ description: '从已删除的项目中还原最近删除的项目。 '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 798be2e38bcbb064fac4069ec7e7276bd9ed49d1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 39a63711881b0d97ab1c103c0d10f2caaadcc043
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455964"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639008"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -47,8 +47,8 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;code&gt;。*必需*|
-| 接受 | application/json |
+| Authorization  | 必需&lt;的&gt; ** 持有者令牌|
+| Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -58,7 +58,7 @@ POST /directory/deletedItems/{id}/restore
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
@@ -83,8 +83,7 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 
 ---
 
-在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

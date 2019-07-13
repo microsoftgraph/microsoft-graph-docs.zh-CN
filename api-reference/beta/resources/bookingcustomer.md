@@ -4,18 +4,18 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: f97f3d36599fe088f28176d001fecc701bb5e3ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d996c5e06c5c12e3a5115253bb73ed4a7a450258
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339035"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645212"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingCustomer 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-表示[bookingBsiness](bookingbusiness.md)的客户。
+表示[bookingBusiness](bookingbusiness.md)的客户。
 
 
 ## <a name="methods"></a>方法

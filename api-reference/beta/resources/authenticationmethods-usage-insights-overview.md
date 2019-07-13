@@ -4,12 +4,12 @@ description: 身份验证方法使用报告可帮助组织了解其最终用户�
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 19f99b0909a762201ea91399125bba841d705338
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a819276b19f2c7fdfe6ed22bd3dd07023ea08992
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35500203"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645228"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -29,10 +29,10 @@ ms.locfileid: "35500203"
 
 | Operation | 在 Graph 浏览器中试用 | 说明 |
 | --------- | --- | ----------- |
-| [getCredentialUserRegistrationcount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [获取/credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册了自助密码重置和 MFA 的用户数。 |
-| [getCredentialUsageSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [获取/credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | 获取使用自助密码重置的用户数量。 |
-| [credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [获取/credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | 获取自服务密码重置和 MFA 注册活动的用户详细信息。 |
-| [userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [获取/usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | 获取所有自助密码重置活动的用户详细信息。 |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [获取/credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册了自助密码重置和 MFA 的用户数。 |
+| [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [获取/credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | 获取使用自助密码重置的用户数量。 |
+| [credentialUserRegistrationDetails](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) | [获取/credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | 获取自服务密码重置和 MFA 注册活动的用户详细信息。 |
+| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) | [获取/usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | 获取所有自助密码重置活动的用户详细信息。 |
 
 ## <a name="licenses"></a>许可证
 

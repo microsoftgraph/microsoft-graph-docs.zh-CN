@@ -4,12 +4,12 @@ description: 介绍如何审核 Azure Active Directory (Azure AD) Api, 以将应
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ecf6d1897d8473b42ac8b5bcb45c59747eb36f13
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 14cc61039d97fa43f64599310cf86cce6c348fb2
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630270"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645245"
 ---
 # <a name="examine-azure-ad-graph-apis-app-usage"></a>检查 Azure AD Graph Api 应用程序使用情况
 
@@ -29,7 +29,7 @@ Microsoft Graph 支持 Azure AD Graph 的许多相同特性和功能。  有几�
 
 您还需要验证您的应用程序所使用的功能所需的权限。  在某些情况下, 可以使用更精细的权限。
 
-若要了解详细信息，请参阅[权限](/concepts/permissions-reference.md)。
+若要了解详细信息，请参阅[权限](permissions-reference.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

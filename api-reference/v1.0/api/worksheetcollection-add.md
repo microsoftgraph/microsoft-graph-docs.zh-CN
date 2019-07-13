@@ -4,16 +4,16 @@ description: 。请在上面启用 ()。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b8a9389ecbc9dd934f02e75a1d9b870aab832d1b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3bd363a48c3e99133246b1ab46c0d7fcb4d8aa1b
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455032"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645259"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
-向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。
+向工作簿添加新工作表。 工作表将添加到现有工作表的末尾。 如果您希望激活新添加的工作表, 请在其上调用 "激活 ()"。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
