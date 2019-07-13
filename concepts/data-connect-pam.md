@@ -4,16 +4,16 @@ description: Microsoft Graph 数据连接依赖于 Privileged Access Management 
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: b09effe96a0b6c04ee68a23016f464a8e0f9d9e0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 439a5e50779888ff1ae7ccfb11311d8b3f6b8a14
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629815"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645266"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Microsoft Graph 数据连接与 Privileged Access Management 的集成
 
-Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Office 365 管理员批准数据移动请求。 数据连接管道必须由 Office 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[入门](/concepts/data-connect-get-started.md)。
+Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允许 Office 365 管理员批准数据移动请求。 数据连接管道必须由 Office 365 管理员在启用期间指定的数据访问请求审批者批准。 若要设置审批者组，请参阅[入门](data-connect-get-started.md)。
 
 当复制活动请求访问权限以提取 Office 365 数据时，系统会向审批者的每名成员发送审批请求电子邮件来通知他们。 审批者可以批准或拒绝这些请求，指定应从提取的数据中清理的用户组，或撤销以前批准的请求。 审批持续时间为 6 个月，并且 Azure 数据工厂管道中的每次复制活动都需要进行审批。 
 
@@ -47,9 +47,9 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 使用以下步骤，通过 Exchange Online PowerShell 模块与请求交互：
 
-1. 安装 Exchange Online Powershell 模块。 有关安装说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 安装 Exchange Online Powershell 模块。 有关安装说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
 
-2. 使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell。 有关说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
+2. 使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell。 有关说明，请参阅[使用多重身份验证连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)。
     >**注意**：在连接到 Exchange Online PowerShell 时，你无需为组织启用多重身份验证便可使用这些步骤。 使用 MFA 进行连接会创建一个 OAuth 令牌，PAM 将使用该令牌来为请求签名。
 
 3. 使用你的帐户登录。 请注意，你必须是配置的数据访问审批者组的成员才能批准、拒绝或撤销请求。 来宾用户无法批准请求，即使他们是审批者组的成员。 
@@ -168,4 +168,4 @@ Microsoft Graph 数据连接依赖于 Privileged Access Management (PAM) 来允�
 
 ## <a name="next-steps"></a>后续步骤
 
-确保你的组织已完成[入门](/concepts/data-connect-get-started.md)中的步骤，正确配置了 Privileged Access Management，以便与 Microsoft Graph 数据结合使用。
+确保你的组织已完成[入门](data-connect-get-started.md)中的步骤，正确配置了 Privileged Access Management，以便与 Microsoft Graph 数据结合使用。

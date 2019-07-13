@@ -4,12 +4,12 @@ description: Excel 是一个提高工作效率不可或缺的工具。 所有行
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 11e5cd85a066acf6ee1a3bfcdb659e30afe5cd75
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: fb116658b087f09dfb3f40b065acb9218e243cee
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133725"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639057"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel 工作簿和图表 API 概述
 
@@ -40,7 +40,7 @@ Excel 还是一款出色的存储和跟踪数据的工具。 如果信息存储�
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 
-`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/ `
+`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`
 
 可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。
 
