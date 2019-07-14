@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6701c423aebfdb72758d4c93997a5b1700b3241d
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 13823057cf45dd89ede984748fc8672b9342404a
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620386"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638954"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -25,7 +25,7 @@ Microsoft Graph 团队会定期评估客户需求，增强 API 和开发体验�
 ## <a name="new-and-generally-available-released-may---july-2019"></a>新增及常用功能（2019 年 5 月 - 7 月发布）
 
 ### <a name="calendar-mail-and-personal-contacts"></a>日历、邮件和个人联系人
-Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该应用仅访问](auth-limit-mailbox-access.md)中的邮箱子集, 而不是默认的访问组织中的所有邮箱。 此类受限访问适用于授予[日历](permissions-reference.md#calendars-permissions)、 [联系人](permissions-reference.md#contacts-permissions)及[邮件和邮箱设置](permissions-reference.md#mail-permissions)的应用的任何应用程序权限。 查看相关的[博客公告](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/)。
+Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该应用仅访问邮箱 ](auth-limit-mailbox-access.md) 的子集, 而不是默认的访问组织中的所有邮箱。 此类受限访问适用于授予[日历](permissions-reference.md#calendars-permissions)、 [联系人](permissions-reference.md#contacts-permissions)及[邮件和邮箱设置](permissions-reference.md#mail-permissions)的应用的任何应用程序权限。 查看相关的[博客公告](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/)。
 
 ### <a name="example-code-snippets"></a>代码段示例
 除了 C# 和 JavaScript 之外 , v 1.0 和 beta 参考中的所有 API 主题中现在有 Objective-C 代码段。 请参阅[获取事件](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)的 Objective-C 示例。
