@@ -3,34 +3,28 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 416ba84527957b59ad4f8ff9e6d8c0194d60f245
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 6701c423aebfdb72758d4c93997a5b1700b3241d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35420427"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620386"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
 你是否知道 Microsoft Graph 中的一些新功能源于开发人员社区的热门请求？ 
 
-我们来介绍新功能的典型生命周期、Microsoft Graph 中当前新增的功能以及[共享创意](#want-to-stay-in-the-loop)的方式。
+Microsoft Graph 团队会定期评估客户需求，增强 API 和开发体验，并按以下顺序将其作为新功能发布：
 
-## <a name="life-cycle-of-a-feature"></a>功能的生命周期
+1. 处于**_预览_** 状态的 Debut。 任何相关的 REST API 更新都处于 beta 终结点 (`https://graph.microsoft.com/beta`) 中。 预览版中的功能可能会发生更改，恕不另行通知。 请不要在生产应用中使用它们。 
 
-Microsoft Graph 服务所有者会定期评估功能创意和客户需求, 并选择要支持的新方案。 若要构建新功能, 可以添加或更新 REST API。 它们可以保留相同的 API 语法并扩展功能行为。 或者, 它们可以提供更好的学习或开发体验。
+2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 仅在生产应用中使用具有 GA 状态的功能。
 
-在大多数情况下, 服务所有者将按照以下顺序发布新功能:
+让我们来看看 Microsoft Graph 中的最新动态，以及如何[分享你的想法](#want-to-stay-in-the-loop)。 有关 API 更新的详细信息，请参阅更改日志的[五月](changelog.md#may-2019)、[六月](changelog.md#june-2019)和[七月](changelog.md#july-2019)部分。 
 
-1. **_预览_** 状态下的 Debut, 这意味着功能行为可能会随之更改, 恕不另行通知。 所有者将在 beta 端点 (`https://graph.microsoft.com/beta`) 中公开任何相关的 REST API 添加或更新。 不要在成品应用中使用预览功能, 包括其 API。
+## <a name="new-and-generally-available-released-may---july-2019"></a>新增及常用功能（2019 年 5 月 - 7 月发布）
 
-2. 如果服务所有者收到了足够的反馈, 并且认为该功能切实可行, 则所有者会将该功能升级到**_常规可用性_ (GA)** 状态。 所有者也将任何相关 API 的添加或更新添加到 v 1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 可在成品应用中使用 GA 状态中的功能（包括其 API）。
-
-以下各节介绍了2019年5月和6月的新增功能。 有关 API 更新的详细信息, 请参阅 changelog 的[5月](changelog.md#may-2019)和[6月](changelog.md#june-2019)部分。 
-
-## <a name="new-and-generally-available-released-may---june-2019"></a>新增及常用功能（2019年5月 - 6月发布）
-
-### <a name="calendar-mail-and-personal-contacts"></a>"日历"、"邮件" 和 "个人联系人"
+### <a name="calendar-mail-and-personal-contacts"></a>日历、邮件和个人联系人
 Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该应用仅访问](auth-limit-mailbox-access.md)中的邮箱子集, 而不是默认的访问组织中的所有邮箱。 此类受限访问适用于授予[日历](permissions-reference.md#calendars-permissions)、 [联系人](permissions-reference.md#contacts-permissions)及[邮件和邮箱设置](permissions-reference.md#mail-permissions)的应用的任何应用程序权限。 查看相关的[博客公告](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/)。
 
 ### <a name="example-code-snippets"></a>代码段示例
@@ -49,14 +43,15 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 管理员或用户可以[吊销](/graph/api/user-revokesigninsessions?view=graph-rest-1.0)用户的所有已颁发的刷新令牌。 通常用于防止已丢失或被盗设备上的应用访问组织的数据。
 
 
-## <a name="new-in-preview-released-may---june-2019"></a>预览版中的新增功能（2019年5月 - 6月发布）
+## <a name="new-in-preview-released-may---july-2019"></a>预览版中的新增功能（2019 年 5 月 - 7 月发布）
 
 > [!IMPORTANT]
-> _预览_状态中的功能 (包括 API 和工具) 可能会随之更改, 而不会另行通知, 有些可能从未升级到 GA 状态。 请不要在成品应用中使用它们。
+> _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在成品应用中使用它们。
 
 ### <a name="devices-and-apps"></a>设备和应用
 - Intune [5月](changelog.md#may-2019)更新 
-- Intune [6月](changelog.md#june-2019)更新
+- Intune [6 月](changelog.md#june-2019)更新
+- Intune [7 月](changelog.md#july-2019)更新
 
 ### <a name="education"></a>教育
 - [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta)的增量查询。
@@ -74,7 +69,10 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 在 [mailFolder](permissions-reference.md#mail-permissions) API 中以及[邮件](/graph/api/resources/mailfolder?view=graph-rest-beta)和 [mailFolder](webhooks.md)的[更改通知](/graph/api/resources/message?view=graph-rest-beta)中使用 **Mail.ReadBasic 权限**。
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft 图形工具包
-[Microsoft Graph 工具包](/graph/toolkit/overview)是一组框架不可知的 web 组件和帮助器, 提供对 Microsoft Graph 中的数据进行身份验证和访问的便利。  由于 Microsoft Graph 工具包处于预览状态, 请仅在非成品应用中使用工具包提供的程序和组件。
+[Microsoft Graph 工具包](/graph/toolkit/overview)是一组框架不可知的 web 组件和帮助器, 提供对 Microsoft Graph 中的数据进行身份验证和访问的便利。  由于 Microsoft Graph 工具包处于预览状态，请仅在非生产应用中使用工具包提供程序和组件。
+
+### <a name="reports"></a>报告
+获取组织中用户采用的[身份验证方法的报告](/graph/api/resources/authenticationmethods-usage-insights-overview?view=graph-rest-beta)，例如自助服务密码重置和多因素身份验证 (MFA).。
 
 ### <a name="sites"></a>网站
 让用户[关注](/graph/api/site-follow?view=graph-rest-beta)或[取消关注](/graph/api/site-unfollow?view=graph-rest-beta) SharePoint 网站。
