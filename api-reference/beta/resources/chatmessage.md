@@ -4,12 +4,12 @@ description: 表示渠道或聊天实体内的单个聊天消息。 该消息可
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: 3f27434e5dd8e3ccfc949c870a239522dd96d9d3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084045"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645238"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "35084045"
 |etag| string | 只读。 消息的版本号。 |
 |messageType|chatMessageType|邮件类型。 可取值包括：`message`。|
 |createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳。|
-|lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳。|
+|lastModifiedDateTime|dateTimeOffset|只读。 有关何时创建或编辑消息的时间戳，包括何时进行回复（如果是频道中的根消息）或添加/删除回应。 |
 |deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳，如果未删除则为 null。 |
 |subject|string| 消息的主题（纯文本）。|
 |正文|[itemBody](itembody.md)|消息内容的纯文本/HTML 表示。 表示形式由正文中的 contentType 进行指定。 如果消息包含 [chatMessageMention](chatmessagemention.md)，则内容始终采用 HTML 格式。 |
