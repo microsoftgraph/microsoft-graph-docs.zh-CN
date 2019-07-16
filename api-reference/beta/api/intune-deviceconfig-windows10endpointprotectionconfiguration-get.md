@@ -4,12 +4,12 @@ description: 读取 windows10EndpointProtectionConfiguration 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf7f04ae5f4083bfe21e61b537a3855791f58e40
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: ee0b28c48d85cc3a3628dc7e9116c65a55b77eb4
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976006"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715310"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30008
+Content-Length: 30531
 
 {
   "value": {
@@ -129,6 +129,7 @@ Content-Length: 30008
         "action": "blocked",
         "trafficDirection": "out",
         "interfaceTypes": "remoteAccess",
+        "edgeTraversal": "blocked",
         "localUserAuthorizations": "Local User Authorizations value"
       }
     ],
@@ -181,6 +182,18 @@ Content-Length: 30008
       ]
     },
     "userRightsLocalLogOn": {
+      "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+      "state": "blocked",
+      "localUsersOrGroups": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+          "name": "Name value",
+          "description": "Description value",
+          "securityIdentifier": "Security Identifier value"
+        }
+      ]
+    },
+    "userRightsDenyLocalLogOn": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",
       "localUsersOrGroups": [
@@ -552,6 +565,7 @@ Content-Length: 30008
     "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
     "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
     "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+    "windowsDefenderTamperProtection": "enable",
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",

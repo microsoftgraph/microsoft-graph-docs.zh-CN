@@ -4,12 +4,12 @@ description: 更新 importedWindowsAutopilotDeviceIdentity 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8edb384dcac050778d61bb9d6a496f9a8074761a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 45665498ceb3b1ec52fa7f56bb3e4abd6013cae5
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981676"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35729990"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Update importedWindowsAutopilotDeviceIdentity
 
@@ -35,7 +35,6 @@ ms.locfileid: "34981676"
 -->
 ``` http
 PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
-PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -52,7 +51,8 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|orderIdentifier|String|Windows autopilot 设备订单 Id。|
+|orderIdentifier|String|Windows autopilot 设备订单 Id。 -弃用|
+|groupTag|String|Windows autopilot 设备的 Group 标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
 |importId|String|Windows autopilot 设备的导入 Id。|
@@ -72,11 +72,12 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 645
+Content-length: 679
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "importId": "Import Id value",
@@ -97,12 +98,13 @@ Content-length: 645
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 694
+Content-Length: 728
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "importId": "Import Id value",

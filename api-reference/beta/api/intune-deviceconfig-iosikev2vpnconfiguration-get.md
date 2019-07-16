@@ -4,12 +4,12 @@ description: 读取 iosikEv2VpnConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdc92d9d95070b27f70460d19a5db29d44c258e2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 032e66f68595222ea1c3d2d6a8b9181d19acb164
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001711"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715380"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>获取 iosikEv2VpnConfiguration
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4684
+Content-Length: 4679
 
 {
   "value": {
@@ -182,7 +182,7 @@ Content-Length: 4684
     "enableEAP": true,
     "enablePerfectForwardSecrecy": true,
     "enableUseInternalSubnetAttributes": true,
-    "localIdentifier": "deviceFQDN",
+    "localIdentifier": "empty",
     "remoteIdentifier": "Remote Identifier value",
     "securityAssociationParameters": {
       "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",

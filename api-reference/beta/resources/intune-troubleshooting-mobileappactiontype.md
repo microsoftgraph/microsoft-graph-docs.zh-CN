@@ -1,15 +1,15 @@
 ---
 title: mobileAppActionType 枚举类型
-description: 尚未记录
+description: 定义 Intune 应用程序的操作类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc27793c6d3be46f130814517c9b6cd2db800198
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 7f2959137eceb8da591f3376b43ad33c10149aa2
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988144"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35740105"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 枚举类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "34988144"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+定义 Intune 应用程序的操作类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
@@ -27,7 +27,6 @@ ms.locfileid: "34988144"
 |了|第三章|已安装应用程序。|
 |#b0|4|已卸载应用程序。|
 |userRequestedInstall|5|用户请求安装|
-
 
 
 

@@ -4,12 +4,12 @@ description: 读取 androidManagedStoreAppConfigurationSchema 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4529ecfc4425e1a2e16ebb6d7eb7be06ad8d9fd8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 5cc7413fe6a5f526649aff327c9e0dd2371b1088
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965422"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705189"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>获取 androidManagedStoreAppConfigurationSchema
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConf
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 923
+Content-Length: 1755
 
 {
   "value": {
@@ -75,6 +75,32 @@ Content-Length: 923
     "schemaItems": [
       {
         "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+        "index": 5,
+        "parentIndex": 11,
+        "schemaItemKey": "Schema Item Key value",
+        "displayName": "Display Name value",
+        "description": "Description value",
+        "defaultBoolValue": true,
+        "defaultIntValue": 15,
+        "defaultStringValue": "Default String Value value",
+        "defaultStringArrayValue": [
+          "Default String Array Value value"
+        ],
+        "dataType": "integer",
+        "selections": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ]
+      }
+    ],
+    "nestedSchemaItems": [
+      {
+        "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+        "index": 5,
+        "parentIndex": 11,
         "schemaItemKey": "Schema Item Key value",
         "displayName": "Display Name value",
         "description": "Description value",

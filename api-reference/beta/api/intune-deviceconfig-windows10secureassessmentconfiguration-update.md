@@ -4,12 +4,12 @@ description: 更新 windows10SecureAssessmentConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf9d4392e04952eb040ca856cce3c2375c3ebc86
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 25fdcbb6ccf3be8b6ed3a647024c54a859a10019
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962384"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715219"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>更新 windows10SecureAssessmentConfiguration
 
@@ -65,10 +65,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |launchUri|String|启动安全评估浏览器时指向自动加载的评估的 URL 链接。 它必须是有效的 URL (http\[s\]://msdn.microsoft.com/)。|
 |configurationAccount|String|用于配置 Windows 设备进行测试的帐户。 用户可以是域帐户（域\用户）、AAD 帐户 (username@tenant.com) 或本地帐户（用户名）。|
-|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|由 ConfigurationAccount 使用的帐户类型。 可取值为：`azureADAccount`、`domainAccount`、`localAccount`。|
+|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|由 ConfigurationAccount 使用的帐户类型。 可取值为：`azureADAccount`、`domainAccount`、`localAccount`、`localGuestAccount`。|
 |allowPrinting|Boolean|指示在测试期间是否允许应用打印。|
 |allowScreenCapture|Boolean|指示在测试期间是否允许屏幕捕获功能。|
 |allowTextSuggestion|Boolean|指示在测试期间是否允许文本建议。|
+|localGuestAccountName|String|指定在登录屏幕上显示的本地来宾帐户的显示文本。 通常是评估的名称。 当用户在登录屏幕上单击本地来宾帐户时, 将使用指定的评估 URL 启动评估应用程序。 只能在运行 Windows 10 版本1903或更高版本的设备上使用本地来宾帐户登录来配置安全评估。 重要说明: 必须使用 assessmentAppUserModelID 设置此属性, 才能使本地来宾帐户登录体验正常工作以进行安全评估。|
+|assessmentAppUserModelId|String|指定当用户使用本地来宾帐户登录安全评估时启动的评估应用程序的应用程序用户模型 ID。 重要说明: 必须使用 localGuestAccountName 设置此属性, 才能使本地来宾帐户登录体验正常工作以进行安全评估。|
 
 
 
@@ -82,7 +84,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1272
+Content-length: 1403
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -119,7 +121,9 @@ Content-length: 1272
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "Local Guest Account Name value",
+  "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
 
@@ -128,7 +132,7 @@ Content-length: 1272
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1444
+Content-Length: 1575
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -168,7 +172,9 @@ Content-Length: 1444
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "Local Guest Account Name value",
+  "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
 

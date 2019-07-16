@@ -4,12 +4,12 @@ description: 加密提供程序使用的填充方案的受支持的值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4219734edcaf4e40ea4885ef539189e30d86683
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1a079075d3e0a44a773c854df55df1635d54584c
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992330"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739272"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "34992330"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|尚未记录|
-|pkcs1|1|尚未记录|
-|oaepSha1|双面|尚未记录|
-|oaepSha256|第三章|尚未记录|
-|oaepSha384|4|尚未记录|
-|oaepSha512|5|尚未记录|
+|无|0|不使用填充。|
+|pkcs1|1|使用 PKCS # 1 填充。|
+|oaepSha1|双面|使用 OAEP SHA-1 填充。|
+|oaepSha256|第三章|使用 OAEP SHA-256 填充。|
+|oaepSha384|4|使用 OAEP SHA-384 填充。|
+|oaepSha512|5|使用 OAEP SHA-512 填充。|
 
 
 

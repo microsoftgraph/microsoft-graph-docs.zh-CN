@@ -4,12 +4,12 @@ description: 通过 Windows 防火墙控制流量的规则。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f4191edfee5148094f10b7a57bb50844d3bfcca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: ae5c51a2ce5b3f86f03e651162611e8d219e7da2
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994116"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737662"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule 资源类型
 
@@ -51,7 +51,9 @@ ms.locfileid: "34994116"
 - 有效的 IPv6 地址。
 - 不包含空格的 IPv4 地址范围, 格式为 "起始地址-结束地址"。
 - 不包含空格的 IPv6 地址范围, 格式为 "起始地址-结束地址"。
-默认值为任意地址。 || profileTypes |[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|指定规则所属的配置文件。 如果未指定, 则默认值为 All。 可能的值为`notConfigured`: `domain`、 `private`、 `public`、。 || 操作 |[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|规则强制执行的操作。 如果未指定, 则允许使用默认值。 可能的值为`notConfigured`: `blocked`、 `allowed`、。 || trafficDirection |[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|启用了规则的流量方向。 如果未指定, 则默认值为 Out。可能的值为`notConfigured`: `out`、 `in`、。 || interfaceTypes |[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|规则的接口类型。 可能的值为`notConfigured`: `remoteAccess`、 `wireless`、 `lan`、。 || localUserAuthorizations |String |指定应用程序容器的授权本地用户的列表。 这是安全描述符定义语言 (SDDL) 格式的字符串。 |
+默认值为任意地址。 || profileTypes |[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|指定规则所属的配置文件。 如果未指定, 则默认值为 All。 可能的值为`notConfigured`: `domain`、 `private`、 `public`、。 || 操作 |[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|规则强制执行的操作。 如果未指定, 则允许使用默认值。 可能的值为`notConfigured`: `blocked`、 `allowed`、。 || trafficDirection |[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|启用了规则的流量方向。 如果未指定, 则默认值为 Out。可能的值为`notConfigured`: `out`、 `in`、。 || interfaceTypes |[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|规则的接口类型。 可能的值为`notConfigured`: `remoteAccess`、 `wireless`、 `lan`、。 || edgeTraversal |[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|指示是否为此规则启用或禁用边缘遍历。
+EdgeTraversal 设置指示允许特定入站流量通过 Nat 和使用 Teredo 隧道技术的其他边缘设备进行隧道传递。 为了使此设置正常工作, 具有入站防火墙规则的应用程序或服务需要支持 IPv6。 此设置的主应用程序允许主机上的侦听器通过 Teredo IPv6 地址进行全局寻址。
+默认情况下, 新规则已禁用 EdgeTraversal 属性。 可能的值为`notConfigured`: `blocked`、 `allowed`、。 || localUserAuthorizations |String |指定应用程序容器的授权本地用户的列表。 这是安全描述符定义语言 (SDDL) 格式的字符串。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -88,6 +90,7 @@ ms.locfileid: "34994116"
   "action": "String",
   "trafficDirection": "String",
   "interfaceTypes": "String",
+  "edgeTraversal": "String",
   "localUserAuthorizations": "String"
 }
 ```

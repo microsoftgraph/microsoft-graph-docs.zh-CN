@@ -4,12 +4,12 @@ description: 描述 Android 应用程序的自定义配置的架构。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35d2b8a3c380be46865e208471af5467ca6a46f8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fbf66567ed8d2404ee8da1dd854c44d4faec23cc
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987710"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35741204"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>androidManagedStoreAppConfigurationSchema 资源类型
 
@@ -33,7 +33,8 @@ ms.locfileid: "34987710"
 |:---|:---|:---|
 |id|String|架构对应的应用程序的 Android 包名称的实体密钥|
 |exampleJson|Binary|包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置|
-|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合，每个项表示架构中命名的配置选项|
+|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合, 每个项表示架构中的命名配置选项。 它仅包含根级别的配置。|
+|nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合, 每个项表示架构中的命名配置选项。 它包含所有配置的简单列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,6 +55,32 @@ ms.locfileid: "34987710"
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
+      "schemaItemKey": "String",
+      "displayName": "String",
+      "description": "String",
+      "defaultBoolValue": true,
+      "defaultIntValue": 1024,
+      "defaultStringValue": "String",
+      "defaultStringArrayValue": [
+        "String"
+      ],
+      "dataType": "String",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
       "schemaItemKey": "String",
       "displayName": "String",
       "description": "String",

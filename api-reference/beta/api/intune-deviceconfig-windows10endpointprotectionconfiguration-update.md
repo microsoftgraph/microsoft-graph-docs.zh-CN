@@ -4,12 +4,12 @@ description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9594362998b5c13e2f38fcd1ca6043cf10fd80cd
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 55428e62bdb320ffceadc705dc0bde8a05eaf05c
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620323"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715317"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 
@@ -69,7 +69,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定允许哪些用户和组通过网络连接到计算机。 支持的状态为 "允许"。|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限决定了阻止哪些用户和组通过网络连接到计算机。 支持状态块。|
 |userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限允许进程在不进行身份验证的情况下模拟任何用户。 因此, 该过程可以获得与该用户相同的本地资源的访问权限。 仅支持 NotConfigured 和允许的状态|
-|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户可以登录到计算机。 所有支持的状态 NotConfigured、允许和阻止 |
+|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户可以登录到计算机。 支持的状态 NotConfigured (允许) |
+|userRightsDenyLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户无法登录到计算机。 状态 NotConfigured, 受阻止 |
 |userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定在备份文件和目录时, 哪些用户可以绕过文件、目录、注册表和其他持久对象权限。 仅支持 NotConfigured 和允许的状态|
 |userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户和组可以更改计算机内部时钟上的时间和日期。 仅支持 NotConfigured 和允许的状态|
 |userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此安全设置确定用户是否可以创建可用于所有会话的全局对象。 可以创建全局对象的用户可能会影响在其他用户的会话下运行的进程, 这可能导致应用程序故障或数据损坏。 仅支持 NotConfigured 和允许的状态|
@@ -166,6 +167,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderSecurityCenterHelpURL|String|"帮助" 门户 URL 将向用户显示。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|要从应用程序的显示区域中显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置向最终用户显示 IT 联系人信息的位置。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
+|windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|配置 windows defender TamperProtection 设置。 可取值为：`notConfigured`、`enable`、`disable`。|
 |firewallBlockStatefulFTP|Boolean|阻止到设备的有状态 FTP 连接|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|配置安全关联的空闲超时（以秒为单位），值范围为 300 到 3600（包括这两个值）。 这是一个时间段，在此之后安全关联将过期并被删除。 有效值为 300 至 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|选择要使用的预共享密钥编码。 可取值为：`deviceDefault`、`none`、`utF8`。|
@@ -252,7 +254,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 28463
+Content-length: 28958
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -310,6 +312,7 @@ Content-length: 28463
       "action": "blocked",
       "trafficDirection": "out",
       "interfaceTypes": "remoteAccess",
+      "edgeTraversal": "blocked",
       "localUserAuthorizations": "Local User Authorizations value"
     }
   ],
@@ -362,6 +365,18 @@ Content-length: 28463
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
     "localUsersOrGroups": [
@@ -733,6 +748,7 @@ Content-length: 28463
   "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
   "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
   "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+  "windowsDefenderTamperProtection": "enable",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
@@ -937,7 +953,7 @@ Content-length: 28463
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 28635
+Content-Length: 29130
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -998,6 +1014,7 @@ Content-Length: 28635
       "action": "blocked",
       "trafficDirection": "out",
       "interfaceTypes": "remoteAccess",
+      "edgeTraversal": "blocked",
       "localUserAuthorizations": "Local User Authorizations value"
     }
   ],
@@ -1050,6 +1067,18 @@ Content-Length: 28635
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
     "localUsersOrGroups": [
@@ -1421,6 +1450,7 @@ Content-Length: 28635
   "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
   "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
   "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+  "windowsDefenderTamperProtection": "enable",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
