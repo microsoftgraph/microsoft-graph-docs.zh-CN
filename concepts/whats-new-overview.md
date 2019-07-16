@@ -3,18 +3,18 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 13823057cf45dd89ede984748fc8672b9342404a
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 5500d80f1fc9ac4ec0a0a097c106c619aa76f1c9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35638954"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731789"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
 你是否知道 Microsoft Graph 中的一些新功能源于开发人员社区的热门请求？ 
 
-Microsoft Graph 团队会定期评估客户需求，增强 API 和开发体验，并按以下顺序将其作为新功能发布：
+Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新功能：
 
 1. 处于**_预览_** 状态的 Debut。 任何相关的 REST API 更新都处于 beta 终结点 (`https://graph.microsoft.com/beta`) 中。 预览版中的功能可能会发生更改，恕不另行通知。 请不要在生产应用中使用它们。 
 
@@ -29,6 +29,9 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 
 ### <a name="example-code-snippets"></a>代码段示例
 除了 C# 和 JavaScript 之外 , v 1.0 和 beta 参考中的所有 API 主题中现在有 Objective-C 代码段。 请参阅[获取事件](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)的 Objective-C 示例。
+
+### <a name="identity-and-access"></a>身份和访问
+使用[新的委派和应用程序权限](permissions-reference.md#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_ 来访问[组织](/graph/api/resources/organization?view=graph-rest-1.0)和相关资源，例如[订阅的 SKU](/graph/api/resources/subscribedsku?view=graph-rest-1.0)。
 
 ### <a name="mail"></a>邮件
 使用[邮件搜索文件夹](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0) API 来搜索邮件, 并访问 Outlook 电子邮件搜索结果。 查看相关的[博客公告](https://developer.microsoft.com/en-us/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/)。
@@ -55,7 +58,10 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 
 ### <a name="education"></a>教育
 - [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta)的增量查询。
-- [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) 和 [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta)的增量查询和属性添加。 
+- [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) 和 [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta)的增量查询和属性添加。
+
+### <a name="files"></a>文件 
+在为文件、文件夹或其他 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) [创建共享链接](/graph/api/driveitem-createlink?view=graph-rest-beta)时，应用到期日期/时间或密码。
 
 ### <a name="group"></a>组
 获取[敏感度标签](/graph/api/resources/assignedlabel?view=graph-rest-beta) , 帮助保护 Office 365 组的敏感数据并满足合规性策略。 这些标签是[assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta)对象，由 Microsoft 365 安全与合规性中心的管理员发布，作为 Microsoft 信息保护功能的一部分。 
@@ -64,6 +70,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 - 获取[应用程序](/graph/api/resources/applicationtemplate?view=graph-rest-beta)的实例, 或将 Azure AD 应用程序库中的实例作为模板添加到目录中。
 - 获取租户中所有[预配事件](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta)的列表。
 - 获取有关 Azure AD 环境中[检测到的用户或登录风险](/graph/api/resources/riskdetection?view=graph-rest-beta)的信息。 此风险检测功能是 Azure AD 标识保护的一部分。
+- 使用[新的委派和应用程序权限](permissions-reference.md#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_ 来访问[组织](/graph/api/resources/organization?view=graph-rest-beta)和相关资源，例如[订阅的 SKU](/graph/api/resources/subscribedsku?view=graph-rest-beta)。
 
 ### <a name="mail"></a>邮件
 在 [mailFolder](permissions-reference.md#mail-permissions) API 中以及[邮件](/graph/api/resources/mailfolder?view=graph-rest-beta)和 [mailFolder](webhooks.md)的[更改通知](/graph/api/resources/message?view=graph-rest-beta)中使用 **Mail.ReadBasic 权限**。
