@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: 0921cec73d405262470ed30b7f0d61534f6b5ab4
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 03cfa3d532b2eb0494cc220c1c315b14bd9652c1
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036568"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35735093"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 
@@ -194,7 +194,7 @@ Content-Type: application/json
 {
   "error": {
     "code": "ErrorSendAsDenied",
-    "message": "The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account., Cannot submit message.",
+    "message": "The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account. Cannot submit message.",
     "innerError": {
       "request-id": "24e7991e-01ae-4cc2-8e06-532a96fd8948",
       "date": "2019-01-16T18:53:25"
