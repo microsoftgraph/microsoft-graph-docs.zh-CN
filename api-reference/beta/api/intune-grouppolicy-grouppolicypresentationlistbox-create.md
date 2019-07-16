@@ -4,31 +4,31 @@ description: 创建新的 groupPolicyPresentationListBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5de84a8867e14737611b6d10ab7d2c69159e22b2
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: ebbd214e4ba46e3c02d7ca9f69730e4ec06262d6
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576471"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35721974"
 ---
-# <a name="create-grouppolicypresentationlistbox"></a><span data-ttu-id="0d72f-103">创建 groupPolicyPresentationListBox</span><span class="sxs-lookup"><span data-stu-id="0d72f-103">Create groupPolicyPresentationListBox</span></span>
+# <a name="create-grouppolicypresentationlistbox"></a><span data-ttu-id="26c52-103">创建 groupPolicyPresentationListBox</span><span class="sxs-lookup"><span data-stu-id="26c52-103">Create groupPolicyPresentationListBox</span></span>
 
-> <span data-ttu-id="0d72f-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0d72f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="26c52-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="26c52-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0d72f-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0d72f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="26c52-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="26c52-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0d72f-106">创建新的[groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)对象。</span><span class="sxs-lookup"><span data-stu-id="0d72f-106">Create a new [groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) object.</span></span>
+<span data-ttu-id="26c52-106">创建新的[groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)对象。</span><span class="sxs-lookup"><span data-stu-id="26c52-106">Create a new [groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0d72f-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="0d72f-107">Prerequisites</span></span>
-<span data-ttu-id="0d72f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0d72f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="26c52-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="26c52-107">Prerequisites</span></span>
+<span data-ttu-id="26c52-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="26c52-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0d72f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="0d72f-110">Permission type</span></span>|<span data-ttu-id="0d72f-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0d72f-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="26c52-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="26c52-110">Permission type</span></span>|<span data-ttu-id="26c52-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="26c52-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0d72f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0d72f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0d72f-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d72f-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="0d72f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0d72f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0d72f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="0d72f-115">Not supported.</span></span>|
-|<span data-ttu-id="0d72f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="0d72f-116">Application</span></span>|<span data-ttu-id="0d72f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="0d72f-117">Not supported.</span></span>|
+|<span data-ttu-id="26c52-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="26c52-112">Delegated (work or school account)</span></span>|<span data-ttu-id="26c52-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26c52-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="26c52-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="26c52-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="26c52-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="26c52-115">Not supported.</span></span>|
+|<span data-ttu-id="26c52-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="26c52-116">Application</span></span>|<span data-ttu-id="26c52-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="26c52-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0d72f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0d72f-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26c52-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="26c52-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "35576471"
 POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0d72f-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="0d72f-119">Request headers</span></span>
-|<span data-ttu-id="0d72f-120">标头</span><span class="sxs-lookup"><span data-stu-id="0d72f-120">Header</span></span>|<span data-ttu-id="0d72f-121">值</span><span class="sxs-lookup"><span data-stu-id="0d72f-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="26c52-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="26c52-119">Request headers</span></span>
+|<span data-ttu-id="26c52-120">标头</span><span class="sxs-lookup"><span data-stu-id="26c52-120">Header</span></span>|<span data-ttu-id="26c52-121">值</span><span class="sxs-lookup"><span data-stu-id="26c52-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0d72f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0d72f-122">Authorization</span></span>|<span data-ttu-id="0d72f-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0d72f-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0d72f-124">接受</span><span class="sxs-lookup"><span data-stu-id="0d72f-124">Accept</span></span>|<span data-ttu-id="0d72f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0d72f-125">application/json</span></span>|
+|<span data-ttu-id="26c52-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="26c52-122">Authorization</span></span>|<span data-ttu-id="26c52-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="26c52-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="26c52-124">接受</span><span class="sxs-lookup"><span data-stu-id="26c52-124">Accept</span></span>|<span data-ttu-id="26c52-125">application/json</span><span class="sxs-lookup"><span data-stu-id="26c52-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0d72f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="0d72f-126">Request body</span></span>
-<span data-ttu-id="0d72f-127">在请求正文中, 提供 groupPolicyPresentationListBox 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0d72f-127">In the request body, supply a JSON representation for the groupPolicyPresentationListBox object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="26c52-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="26c52-126">Request body</span></span>
+<span data-ttu-id="26c52-127">在请求正文中, 提供 groupPolicyPresentationListBox 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="26c52-127">In the request body, supply a JSON representation for the groupPolicyPresentationListBox object.</span></span>
 
-<span data-ttu-id="0d72f-128">下表显示创建 groupPolicyPresentationListBox 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="0d72f-128">The following table shows the properties that are required when you create the groupPolicyPresentationListBox.</span></span>
+<span data-ttu-id="26c52-128">下表显示创建 groupPolicyPresentationListBox 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="26c52-128">The following table shows the properties that are required when you create the groupPolicyPresentationListBox.</span></span>
 
-|<span data-ttu-id="0d72f-129">属性</span><span class="sxs-lookup"><span data-stu-id="0d72f-129">Property</span></span>|<span data-ttu-id="0d72f-130">类型</span><span class="sxs-lookup"><span data-stu-id="0d72f-130">Type</span></span>|<span data-ttu-id="0d72f-131">说明</span><span class="sxs-lookup"><span data-stu-id="0d72f-131">Description</span></span>|
+|<span data-ttu-id="26c52-129">属性</span><span class="sxs-lookup"><span data-stu-id="26c52-129">Property</span></span>|<span data-ttu-id="26c52-130">类型</span><span class="sxs-lookup"><span data-stu-id="26c52-130">Type</span></span>|<span data-ttu-id="26c52-131">说明</span><span class="sxs-lookup"><span data-stu-id="26c52-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0d72f-132">label</span><span class="sxs-lookup"><span data-stu-id="0d72f-132">label</span></span>|<span data-ttu-id="0d72f-133">String</span><span class="sxs-lookup"><span data-stu-id="0d72f-133">String</span></span>|<span data-ttu-id="0d72f-134">任何演示文稿实体的本地化文本标签。</span><span class="sxs-lookup"><span data-stu-id="0d72f-134">Localized text label for any presentation entity.</span></span> <span data-ttu-id="0d72f-135">默认值为空白。</span><span class="sxs-lookup"><span data-stu-id="0d72f-135">The default value is empty.</span></span> <span data-ttu-id="0d72f-136">继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="0d72f-136">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
-|<span data-ttu-id="0d72f-137">id</span><span class="sxs-lookup"><span data-stu-id="0d72f-137">id</span></span>|<span data-ttu-id="0d72f-138">String</span><span class="sxs-lookup"><span data-stu-id="0d72f-138">String</span></span>|<span data-ttu-id="0d72f-139">实体的键。</span><span class="sxs-lookup"><span data-stu-id="0d72f-139">Key of the entity.</span></span> <span data-ttu-id="0d72f-140">继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="0d72f-140">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
-|<span data-ttu-id="0d72f-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="0d72f-141">lastModifiedDateTime</span></span>|<span data-ttu-id="0d72f-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0d72f-142">DateTimeOffset</span></span>|<span data-ttu-id="0d72f-143">上次修改实体的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0d72f-143">The date and time the entity was last modified.</span></span> <span data-ttu-id="0d72f-144">继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="0d72f-144">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
-|<span data-ttu-id="0d72f-145">explicitValue</span><span class="sxs-lookup"><span data-stu-id="0d72f-145">explicitValue</span></span>|<span data-ttu-id="0d72f-146">Boolean</span><span class="sxs-lookup"><span data-stu-id="0d72f-146">Boolean</span></span>|<span data-ttu-id="0d72f-147">如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。</span><span class="sxs-lookup"><span data-stu-id="0d72f-147">If this option is specified true the user must specify the registry subkey value and the registry subkey name.</span></span> <span data-ttu-id="0d72f-148">列表框显示两列, 一个用于名称, 一个用于数据。</span><span class="sxs-lookup"><span data-stu-id="0d72f-148">The list box shows two columns, one for the name and one for the data.</span></span> <span data-ttu-id="0d72f-149">默认值为 false。</span><span class="sxs-lookup"><span data-stu-id="0d72f-149">The default value is false.</span></span>|
-|<span data-ttu-id="0d72f-150">valuePrefix</span><span class="sxs-lookup"><span data-stu-id="0d72f-150">valuePrefix</span></span>|<span data-ttu-id="0d72f-151">String</span><span class="sxs-lookup"><span data-stu-id="0d72f-151">String</span></span>|<span data-ttu-id="0d72f-152">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0d72f-152">Not yet documented</span></span>|
+|<span data-ttu-id="26c52-132">label</span><span class="sxs-lookup"><span data-stu-id="26c52-132">label</span></span>|<span data-ttu-id="26c52-133">String</span><span class="sxs-lookup"><span data-stu-id="26c52-133">String</span></span>|<span data-ttu-id="26c52-134">任何演示文稿实体的本地化文本标签。</span><span class="sxs-lookup"><span data-stu-id="26c52-134">Localized text label for any presentation entity.</span></span> <span data-ttu-id="26c52-135">默认值为空白。</span><span class="sxs-lookup"><span data-stu-id="26c52-135">The default value is empty.</span></span> <span data-ttu-id="26c52-136">继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="26c52-136">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="26c52-137">id</span><span class="sxs-lookup"><span data-stu-id="26c52-137">id</span></span>|<span data-ttu-id="26c52-138">String</span><span class="sxs-lookup"><span data-stu-id="26c52-138">String</span></span>|<span data-ttu-id="26c52-139">实体的键。</span><span class="sxs-lookup"><span data-stu-id="26c52-139">Key of the entity.</span></span> <span data-ttu-id="26c52-140">继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="26c52-140">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="26c52-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="26c52-141">lastModifiedDateTime</span></span>|<span data-ttu-id="26c52-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="26c52-142">DateTimeOffset</span></span>|<span data-ttu-id="26c52-143">上次修改实体的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="26c52-143">The date and time the entity was last modified.</span></span> <span data-ttu-id="26c52-144">继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="26c52-144">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="26c52-145">explicitValue</span><span class="sxs-lookup"><span data-stu-id="26c52-145">explicitValue</span></span>|<span data-ttu-id="26c52-146">Boolean</span><span class="sxs-lookup"><span data-stu-id="26c52-146">Boolean</span></span>|<span data-ttu-id="26c52-147">如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。</span><span class="sxs-lookup"><span data-stu-id="26c52-147">If this option is specified true the user must specify the registry subkey value and the registry subkey name.</span></span> <span data-ttu-id="26c52-148">列表框显示两列, 一个用于名称, 一个用于数据。</span><span class="sxs-lookup"><span data-stu-id="26c52-148">The list box shows two columns, one for the name and one for the data.</span></span> <span data-ttu-id="26c52-149">默认值为 false。</span><span class="sxs-lookup"><span data-stu-id="26c52-149">The default value is false.</span></span>|
+|<span data-ttu-id="26c52-150">valuePrefix</span><span class="sxs-lookup"><span data-stu-id="26c52-150">valuePrefix</span></span>|<span data-ttu-id="26c52-151">String</span><span class="sxs-lookup"><span data-stu-id="26c52-151">String</span></span>|<span data-ttu-id="26c52-152">尚未记录</span><span class="sxs-lookup"><span data-stu-id="26c52-152">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="0d72f-153">响应</span><span class="sxs-lookup"><span data-stu-id="0d72f-153">Response</span></span>
-<span data-ttu-id="0d72f-154">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)对象。</span><span class="sxs-lookup"><span data-stu-id="0d72f-154">If successful, this method returns a `201 Created` response code and a [groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="26c52-153">响应</span><span class="sxs-lookup"><span data-stu-id="26c52-153">Response</span></span>
+<span data-ttu-id="26c52-154">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md)对象。</span><span class="sxs-lookup"><span data-stu-id="26c52-154">If successful, this method returns a `201 Created` response code and a [groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0d72f-155">示例</span><span class="sxs-lookup"><span data-stu-id="0d72f-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="26c52-155">示例</span><span class="sxs-lookup"><span data-stu-id="26c52-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0d72f-156">请求</span><span class="sxs-lookup"><span data-stu-id="0d72f-156">Request</span></span>
-<span data-ttu-id="0d72f-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0d72f-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="26c52-156">请求</span><span class="sxs-lookup"><span data-stu-id="26c52-156">Request</span></span>
+<span data-ttu-id="26c52-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="26c52-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 Content-type: application/json
@@ -78,8 +78,8 @@ Content-length: 165
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0d72f-158">响应</span><span class="sxs-lookup"><span data-stu-id="0d72f-158">Response</span></span>
-<span data-ttu-id="0d72f-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0d72f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="26c52-158">响应</span><span class="sxs-lookup"><span data-stu-id="26c52-158">Response</span></span>
+<span data-ttu-id="26c52-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="26c52-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -94,6 +94,8 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
+
+
 
 
 
