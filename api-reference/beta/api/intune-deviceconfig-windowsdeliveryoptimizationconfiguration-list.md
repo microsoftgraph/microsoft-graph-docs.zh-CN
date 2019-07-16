@@ -4,12 +4,12 @@ description: 列出 windowsDeliveryOptimizationConfiguration 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fefbcc0a28d77e3e851a3ca58c71d572ac0ac044
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: cf2b79111b88ac46be3c06f469401d5b13b3d3b0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961999"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715688"
 ---
 # <a name="list-windowsdeliveryoptimizationconfigurations"></a>列出 windowsDeliveryOptimizationConfigurations
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2246
+Content-Length: 2472
 
 {
   "value": [
@@ -119,7 +119,12 @@ Content-Length: 2246
       "maximumCacheSize": {
         "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
       },
-      "vpnPeerCaching": "enabled"
+      "vpnPeerCaching": "enabled",
+      "cacheServerHostNames": [
+        "Cache Server Host Names value"
+      ],
+      "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+      "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
     }
   ]
 }

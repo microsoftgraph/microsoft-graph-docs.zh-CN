@@ -4,12 +4,12 @@ description: Windows 传递优化配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c1b4006a9e18bb617c243183e98ff21280410e7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c34a8d1a87be09e66c09909486bb8b4ccd8fb2c7
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994144"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737655"
 ---
 # <a name="windowsdeliveryoptimizationconfiguration-resource-type"></a>windowsDeliveryOptimizationConfiguration 资源类型
 
@@ -65,6 +65,9 @@ Windows 传递优化配置
 |maximumCacheAgeInDays|Int32|指定在成功下载后, 每个文件保留在传递优化缓存中的最长时间 (以天为单位) (0-3650)。 有效值为0至3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|指定传递优化的最大缓存大小 (以百分比或 GB 为单位)。|
 |vpnPeerCaching|[启用](../resources/intune-shared-enablement.md)|指定是否允许设备在通过 VPN 连接到域网络时参与对等缓存。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|cacheServerHostNames|String collection|指定缓存服务器的主机名。|
+|cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|指定前台下载延迟从缓存服务器回退到 HTTP 源的秒数。 有效的值为0到2592000。|
+|cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|指定从缓存服务器回退到用于后台下载的 HTTP 源的秒数。 有效的值为0到2592000。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -138,7 +141,12 @@ Windows 传递优化配置
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "String"
+  "vpnPeerCaching": "String",
+  "cacheServerHostNames": [
+    "String"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 1024,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 1024
 }
 ```
 

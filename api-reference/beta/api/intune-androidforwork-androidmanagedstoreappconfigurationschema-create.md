@@ -4,12 +4,12 @@ description: 创建新的 androidManagedStoreAppConfigurationSchema 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a5004d4131b9ec127a6a70765cfb49a7c6ab51b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: f1eccfe840161e891102710be77c95364c94b9ac
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965457"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705196"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>创建 androidManagedStoreAppConfigurationSchema
 
@@ -52,7 +52,8 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |:---|:---|:---|
 |id|String|架构对应的应用程序的 Android 包名称的实体密钥|
 |exampleJson|Binary|包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置|
-|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合，每个项表示架构中命名的配置选项|
+|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合, 每个项表示架构中的命名配置选项。 它仅包含根级别的配置。|
+|nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合, 每个项表示架构中的命名配置选项。 它包含所有配置的简单列表。|
 
 
 
@@ -66,7 +67,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas
 Content-type: application/json
-Content-length: 805
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -74,6 +75,32 @@ Content-length: 805
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",
@@ -101,7 +128,7 @@ Content-length: 805
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -110,6 +137,32 @@ Content-Length: 854
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",

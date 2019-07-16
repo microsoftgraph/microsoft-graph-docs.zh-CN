@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ddd017ee2dc02e91d98ad57787e6f95c5b89b8e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 4da744d7acd78b31b27238805fb63aa9cb7e3186
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981718"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35729997"
 ---
 # <a name="import-action"></a>导入操作
 
@@ -35,7 +35,6 @@ ms.locfileid: "34981718"
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
-POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/import
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -66,7 +65,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 822
+Content-length: 860
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
@@ -74,6 +73,7 @@ Content-length: 822
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",
@@ -96,7 +96,7 @@ Content-length: 822
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 787
+Content-Length: 825
 
 {
   "value": [
@@ -104,6 +104,7 @@ Content-Length: 787
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",

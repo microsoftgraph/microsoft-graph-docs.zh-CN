@@ -4,12 +4,12 @@ description: 创建新的 androidDeviceOwnerEnrollmentProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09d963044791e6f501363fcf557bee7114c2efd6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 4de16093511d822ff295fc68416855d6be496123
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966647"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35705224"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
@@ -62,6 +62,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
+|scopeTags|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -75,7 +76,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles
 Content-type: application/json
-Content-length: 565
+Content-length: 613
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -91,7 +92,10 @@ Content-length: 565
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "scopeTags": [
+    "Scope Tags value"
+  ]
 }
 ```
 
@@ -100,7 +104,7 @@ Content-length: 565
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 737
+Content-Length: 785
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -119,7 +123,10 @@ Content-Length: 737
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "scopeTags": [
+    "Scope Tags value"
+  ]
 }
 ```
 

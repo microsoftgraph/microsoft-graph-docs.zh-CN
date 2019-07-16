@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a087192b9ff46b79f5f585cc9515b9c78d806e99
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 025008a74df37daee068fe557df1511d60dcc48f
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990006"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734456"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "34990006"
 |deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入, 则可能会删除公司数据, 并且设备将不受管理。 有效值为30至270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
 |derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
+|androidDeviceAdministratorEnrollmentEnabled|Boolean|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,7 +50,8 @@ ms.locfileid: "34990006"
   "enhancedJailBreak": true,
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
-  "derivedCredentialUrl": "String"
+  "derivedCredentialUrl": "String",
+  "androidDeviceAdministratorEnrollmentEnabled": true
 }
 ```
 

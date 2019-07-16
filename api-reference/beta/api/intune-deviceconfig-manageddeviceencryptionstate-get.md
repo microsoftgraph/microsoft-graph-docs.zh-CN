@@ -4,12 +4,12 @@ description: 读取 managedDeviceEncryptionState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edc66636d0a7a781a0336e0e665eb4fdb7f7b182
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fb36d0e3b3132cde541604b8256c54576e4d1d63
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962951"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715338"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>获取 managedDeviceEncryptionState
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryptionSta
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 762
+Content-Length: 810
 
 {
   "value": {
@@ -80,6 +80,7 @@ Content-Length: 762
     "encryptionState": "encrypted",
     "encryptionPolicySettingState": "notApplicable",
     "advancedBitLockerStates": "noUserConsent",
+    "fileVaultStates": "driveEncryptedByUser",
     "policyDetails": [
       {
         "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",

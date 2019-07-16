@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58e0fc5e76904e133b5e9a31e2b32d8ecf87b91c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 249b67852d4b796be465c79cadde9b07d97f695a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436464"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35713149"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -49,10 +49,12 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 请求正文定义应用程序正在请求的共享链接的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   名称    |  类型  |                                 说明                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
-| **scope** | 字符串 | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
+|   属性                 |  类型  |                                 说明                                                               |
+| :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
+|类型               | string | 要创建的共享链接的类型。 "查看"、"编辑" 或 "嵌入"。                                    |
+|password           | string | 由创建者设置的共享链接的密码。 可选和 OneDrive 仅限个人版。         |
+|expirationDateTime | string | 格式为 Yyyy-mm-ddthh: MM: ssZ 的字符串表示该权限的过期时间。 |
+|scope              | 字符串 | 可选。 要创建的链接的范围。 "匿名" 或 "组织"。                              |
 
 
 ### <a name="link-types"></a>链接类型
@@ -61,19 +63,20 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 类型值 | 说明                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| `view`     | 创建到 DriveItem 的只读链接。                                                        |
-| `edit`     | 创建到 DriveItem 的读写链接。                                                       |
-| `embed`    | 创建到 DriveItem 的可嵌入链接。 此选项仅适用于 OneDrive 个人版中的文件。 |
+| view     | 创建到 DriveItem 的只读链接。                                                        |
+| edit     | 创建到 DriveItem 的读写链接。                                                       |
+| 嵌入    | 创建到 DriveItem 的可嵌入链接。 此选项仅适用于 OneDrive 个人版中的文件。 |
 
 ### <a name="scope-types"></a>范围类型
 
 **scope** 参数允许使用以下值。
 如果未指定 **scope** 参数，则为组织创建默认的链接类型。
 
-| 类型值     | 说明                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | 创建到任意用户都可使用链接访问的 DriveItem 的链接。 管理员可能会禁用匿名链接。                 |
-| `organization` | 创建到用户组织内任意用户都可访问的 DriveItem 的链接。 OneDrive 个人版不支持组织链接范围。 |
+| 值          | 说明
+|:---------------|:------------------------------------------------------------
+| 匿名    | 拥有该链接的任何人都可以访问, 而无需登录。 这可能包括组织外部的人员。 管理员可能禁用了匿名链接支持。
+| 组织 | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
+
 
 ## <a name="response"></a>响应
 
@@ -101,6 +104,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -138,7 +142,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 

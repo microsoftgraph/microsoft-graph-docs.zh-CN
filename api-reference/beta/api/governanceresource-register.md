@@ -1,66 +1,80 @@
 ---
-title: 注册 governanceResource
-description: 在 PIM 中注册非托管的 governanceResource 对象。
+title: 'governanceResource: register'
+description: 在 PIM 中注册 governanceResource 对象。
 localization_priority: Normal
-ms.openlocfilehash: 814ccd84d449f20882e1febbf0d48216ba3f5b89
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 2b8457f7ddee4564ca6b6b300121ddb7b8247e34
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422456"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35713917"
 ---
-# <a name="register-governanceresource"></a>注册 governanceResource
+# <a name="governanceresource-register"></a>governanceResource: register
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在特权标识管理中注册非托管的[governanceResource](../resources/governanceresource.md)对象。
+在特权标识管理中注册[governanceResource](../resources/governanceresource.md)对象。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意:** 此 API 还要求请求者在资源上至少有一个活动角色分配。
 
-|权限类型      | 权限              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+| 权限类型 | 权限 |
+|:--------------- |:----------- |
+| 委派（工作或学校帐户） | PrivilegedAccess AzureResources |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/resources/register
 ```
 
-### <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法**仅**支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-### <a name="request-headers"></a>请求标头
-| 名称      |说明|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
-| Content-type  | application/json|
+## <a name="request-headers"></a>请求标头
 
-### <a name="request-body"></a>请求正文
+| 名称 | 说明 |
+|:---- |:----------- |
+| Authorization | 持有者 {token} |
+| Content-type | application/json |
 
-|参数      |类型                 |必需 |说明|
-|:-------------|:----------------------|:--------|:----------|
-|externalId    |String                 |✓        |要在 PIM 中注册的资源的 externalId。|
+## <a name="request-body"></a>请求正文
 
-### <a name="response"></a>响应
+| 属性 | 类型 | 说明 |
+|:---------- |:---- |:----------- |
+| externalId | String | 要在 PIM 中注册的资源的外部标识符。 如果注册订阅, 则标识符为预置的订阅标识符`/subscriptions/`。 例如，`/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`。 |
+
+## <a name="response"></a>响应
+
 如果成功, 此方法将`200 OK`返回响应。
 
-### <a name="example"></a>示例
-本示例演示如何注册 Azure 订阅 Wingtip 玩具-生产。
+## <a name="example"></a>示例
+
+以下示例演示如何调用此 API。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"
 }-->
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/register
+Content-type: application/json
+
+{
+  "externalId": "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"
+}
 ```
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "truncated": false,

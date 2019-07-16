@@ -4,12 +4,12 @@ description: 读取 windows10SecureAssessmentConfiguration 对象的属性和关
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 014e2ac097159d816bbb1877fe85d9f0c84ce0c8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 9c65f492e42634e0e2775a6663bb93626afaaded
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962391"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715275"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>获取 windows10SecureAssessmentConfiguration
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1539
+Content-Length: 1674
 
 {
   "value": {
@@ -108,7 +108,9 @@ Content-Length: 1539
     "configurationAccountType": "domainAccount",
     "allowPrinting": true,
     "allowScreenCapture": true,
-    "allowTextSuggestion": true
+    "allowTextSuggestion": true,
+    "localGuestAccountName": "Local Guest Account Name value",
+    "assessmentAppUserModelId": "Assessment App User Model Id value"
   }
 }
 ```

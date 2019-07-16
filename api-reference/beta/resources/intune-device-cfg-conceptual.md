@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: b651acefa45cee6e4e89c6c391890dd263cc414a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965853"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731572"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -214,6 +214,7 @@ ms.locfileid: "34965853"
 - [加密报表策略详细信息](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [加密状态](intune-deviceconfig-encryptionstate.md)
 - [扩展密钥用法](intune-deviceconfig-extendedkeyusage.md)
+- [文件电子仓库状态](intune-deviceconfig-filevaultstate.md)
 - [防火墙证书吊销列表检查方法类型](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [防火墙数据包排入队列方法类型](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [防火墙预共享的密钥编码方法类型](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
@@ -316,6 +317,7 @@ ms.locfileid: "34965853"
 - [macOS 信任的根证书](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 配置](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi 配置](intune-deviceconfig-macoswificonfiguration.md)
+- [托管所有设备证书状态](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [受管理的设备证书状态](intune-deviceconfig-manageddevicecertificatestate.md)
 - [托管设备加密状态](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [托管设备报告的应用](intune-deviceconfig-manageddevicereportedapp.md)
@@ -344,7 +346,10 @@ ms.locfileid: "34965853"
 - [OMA 设置整数](intune-deviceconfig-omasettinginteger.md)
 - [OMA 设置字符串](intune-deviceconfig-omasettingstring.md)
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
+- [在本地加密有效负载](intune-raimportcerts-onpremencryptedpayload.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
+- [Pfx recryption 请求](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
 - [策略平台类型](intune-deviceconfig-policyplatformtype.md)
 - [预发布功能](intune-deviceconfig-prereleasefeatures.md)
 - [分级应用类型](intune-deviceconfig-ratingappstype.md)
@@ -456,6 +461,7 @@ ms.locfileid: "34965853"
 - [Windows 应用启动布局磁贴大小](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Windows 证书配置文件基础](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Windows Defender 高级威胁防护配置](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
+- [Windows defender 防篡改保护选项](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows 防火墙网络配置文件](intune-deviceconfig-windowsfirewallnetworkprofile.md)
@@ -475,6 +481,7 @@ ms.locfileid: "34965853"
 - [Windows Kiosk Azure AD 用户](intune-deviceconfig-windowskioskazureaduser.md)
 - [Windows Kiosk 配置](intune-deviceconfig-windowskioskconfiguration.md)
 - [Windows Kiosk 桌面应用](intune-deviceconfig-windowskioskdesktopapp.md)
+- [Windows 展台强制更新计划](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Windows Kiosk 本地组](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Windows Kiosk 本地用户](intune-deviceconfig-windowskiosklocaluser.md)
 - [Windows Kiosk 多个应用](intune-deviceconfig-windowskioskmultipleapps.md)
@@ -506,10 +513,11 @@ ms.locfileid: "34965853"
 - [Windows 更新安装计划类型](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Windows 更新通知显示选项](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows 更新计划安装](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Windows 更新状态](intune-deviceconfig-windowsupdatestate.md)
 - [Windows 更新状态](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows 更新类型](intune-deviceconfig-windowsupdatetype.md)
 - [Windows 用户帐户控制设置](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Windows VPN 配置](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
-- [Windows Wlan 企业版 eap 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

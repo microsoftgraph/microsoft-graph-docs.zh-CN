@@ -4,12 +4,12 @@ description: 此实体提供展台资源公开的已声明方法、属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8da4c53d22621f08faf4edb27be2da10ce5674c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 32a7d319314d1fddc40724d686de797dcd1d15d1
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978505"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731747"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "34978505"
 |kioskBrowserBlockedURLs|String collection|指定展台浏览器不应导航到的 Url|
 |kioskBrowserBlockedUrlExceptions|String collection|指定展台浏览器允许其导航到的 Url|
 |edgeKioskEnablePublicBrowsing|Boolean|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|强制更新对展台设备的计划。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -150,7 +151,15 @@ ms.locfileid: "34978505"
   "kioskBrowserBlockedUrlExceptions": [
     "String"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "String (timestamp)",
+    "recurrence": "String",
+    "dayofWeek": "String",
+    "dayofMonth": 1024,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 

@@ -4,12 +4,12 @@ description: 导入 Windows AutoPilot 的设备。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5a5058f3930acb8cc1af4acf59254b4fd5ab67c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 0e22a68bb9805417af9c81b8e1c79b7c49813358
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992568"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734449"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
@@ -33,7 +33,8 @@ ms.locfileid: "34992568"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|orderIdentifier|String|Windows autopilot 设备订单 Id。|
+|orderIdentifier|String|Windows autopilot 设备订单 Id。 -弃用|
+|groupTag|String|Windows autopilot 设备的 Group 标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
 |importId|String|Windows autopilot 设备的导入 Id。|
@@ -57,6 +58,7 @@ ms.locfileid: "34992568"
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
   "orderIdentifier": "String",
+  "groupTag": "String",
   "serialNumber": "String",
   "productKey": "String",
   "importId": "String",

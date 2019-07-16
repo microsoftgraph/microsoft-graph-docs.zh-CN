@@ -4,12 +4,12 @@ description: 注册配置文件，用于使用 Google 的云管理注册 COSU �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92fc907fdc0e50e5d983ac0dbb6f8a122c92641a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 53c3f1e26956b1f3cce830b7e7b2fed6a2e3df72
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992890"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737368"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "34992890"
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
+|scopeTags|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -75,7 +76,10 @@ ms.locfileid: "34992890"
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "String",
     "value": "binary"
-  }
+  },
+  "scopeTags": [
+    "String"
+  ]
 }
 ```
 

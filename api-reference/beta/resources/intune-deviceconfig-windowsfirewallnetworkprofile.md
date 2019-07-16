@@ -4,12 +4,12 @@ description: Windows 防火墙配置文件策略。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0550422acce5abae9cc6ca6f38a3dfb7a8455040
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 4de9535041770afb7183dfe99cde11072da344e8
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994130"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731754"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile 资源类型
 
@@ -37,8 +37,8 @@ Windows 防火墙配置文件策略。
 |globalPortRulesFromGroupPolicyNotMerged|Boolean|配置防火墙以阻止将组策略中的全局端口规则与本地存储中的规则合并, 而不是忽略本地存储规则。 当 GlobalPortRulesFromGroupPolicyNotMerged 和 GlobalPortRulesFromGroupPolicyMerged 均为 true 时, GlobalPortRulesFromGroupPolicyMerged 优先。|
 |connectionSecurityRulesFromGroupPolicyMerged|Boolean|将防火墙配置为将组策略中的连接安全规则与本地存储中的连接进行合并, 而不是忽略本地存储规则。 当 ConnectionSecurityRulesFromGroupPolicyNotMerged 和 ConnectionSecurityRulesFromGroupPolicyMerged 均为 true 时, ConnectionSecurityRulesFromGroupPolicyMerged 优先。|
 |connectionSecurityRulesFromGroupPolicyNotMerged|Boolean|配置防火墙以阻止将组策略中的连接安全规则与本地存储中的连接进行合并, 而不是忽略本地存储规则。 当 ConnectionSecurityRulesFromGroupPolicyNotMerged 和 ConnectionSecurityRulesFromGroupPolicyMerged 均为 true 时, ConnectionSecurityRulesFromGroupPolicyMerged 优先。|
-|outboundConnectionsRequired|Boolean|默认情况下, 将防火墙配置为允许所有传出连接。 当 OutboundConnectionsRequired 和 OutboundConnectionsBlocked 均为 true 时, OutboundConnectionsBlocked 优先。|
-|outboundConnectionsBlocked|Boolean|默认情况下, 将防火墙配置为阻止所有传出连接。 当 OutboundConnectionsRequired 和 OutboundConnectionsBlocked 均为 true 时, OutboundConnectionsBlocked 优先。|
+|outboundConnectionsRequired|Boolean|默认情况下, 将防火墙配置为允许所有传出连接。 当 OutboundConnectionsRequired 和 OutboundConnectionsBlocked 均为 true 时, OutboundConnectionsBlocked 优先。 此设置将应用于 Windows 版本1809及更高版本。|
+|outboundConnectionsBlocked|Boolean|默认情况下, 将防火墙配置为阻止所有传出连接。 当 OutboundConnectionsRequired 和 OutboundConnectionsBlocked 均为 true 时, OutboundConnectionsBlocked 优先。 此设置将应用于 Windows 版本1809及更高版本。|
 |inboundConnectionsRequired|Boolean|默认情况下, 将防火墙配置为允许所有传入连接。 当 InboundConnectionsRequired 和 InboundConnectionsBlocked 均为 true 时, InboundConnectionsBlocked 优先。|
 |inboundConnectionsBlocked|Boolean|默认情况下, 将防火墙配置为阻止所有传入连接。 当 InboundConnectionsRequired 和 InboundConnectionsBlocked 均为 true 时, InboundConnectionsBlocked 优先。|
 |securedPacketExemptionAllowed|Boolean|将防火墙配置为允许主机计算机对该流量的未经请求的网络流量进行响应, 即使 stealthModeBlocked 设置为 true, 该流量仍受 IPSec 保护。 当 SecuredPacketExemptionBlocked 和 SecuredPacketExemptionAllowed 均为 true 时, SecuredPacketExemptionAllowed 优先。|

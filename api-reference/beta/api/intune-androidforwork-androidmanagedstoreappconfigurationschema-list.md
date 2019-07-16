@@ -4,12 +4,12 @@ description: 列出 androidManagedStoreAppConfigurationSchema 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 150912f43cfeaaf90378d21ca7e90040fbfd8d4a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fc691c0b48517e7e828b99e9aba53713fdf8e59c
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966430"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35711530"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>列出 androidManagedStoreAppConfigurationSchemas
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConf
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 987
+Content-Length: 1871
 
 {
   "value": [
@@ -73,6 +73,32 @@ Content-Length: 987
       "schemaItems": [
         {
           "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
+          "schemaItemKey": "Schema Item Key value",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "defaultBoolValue": true,
+          "defaultIntValue": 15,
+          "defaultStringValue": "Default String Value value",
+          "defaultStringArrayValue": [
+            "Default String Array Value value"
+          ],
+          "dataType": "integer",
+          "selections": [
+            {
+              "@odata.type": "microsoft.graph.keyValuePair",
+              "name": "Name value",
+              "value": "Value value"
+            }
+          ]
+        }
+      ],
+      "nestedSchemaItems": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
           "schemaItemKey": "Schema Item Key value",
           "displayName": "Display Name value",
           "description": "Description value",

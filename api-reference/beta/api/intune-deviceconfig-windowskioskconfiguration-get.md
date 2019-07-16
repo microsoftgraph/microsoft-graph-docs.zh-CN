@@ -4,12 +4,12 @@ description: 读取 windowsKioskConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b89641fb27c3b5b503be60b00878ec59c4f8f896
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: d7177bfd9daec6484af66377e02ec4e9b8dfd389
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961817"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35722009"
 ---
 # <a name="get-windowskioskconfiguration"></a>获取 windowsKioskConfiguration
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2867
+Content-Length: 3186
 
 {
   "value": {
@@ -145,7 +145,15 @@ Content-Length: 2867
     "kioskBrowserBlockedUrlExceptions": [
       "Kiosk Browser Blocked Url Exceptions value"
     ],
-    "edgeKioskEnablePublicBrowsing": true
+    "edgeKioskEnablePublicBrowsing": true,
+    "windowsKioskForceUpdateSchedule": {
+      "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "recurrence": "daily",
+      "dayofWeek": "monday",
+      "dayofMonth": 10,
+      "runImmediatelyIfAfterStartDateTime": true
+    }
   }
 }
 ```

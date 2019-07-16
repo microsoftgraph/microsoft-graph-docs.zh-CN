@@ -4,12 +4,12 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 026cc2175fbb826fd6068adec68a9661215981ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 421b4bb400137f7704ca40737ff422649b66f8b6
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959759"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35730004"
 ---
 # <a name="createinstance-action"></a>createInstance 操作
 
@@ -54,6 +54,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 |displayName|String|尚未记录|
 |说明|String|尚未记录|
 |settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|尚未记录|
+|roleScopeTagIds|String collection|尚未记录|
 
 
 
@@ -68,7 +69,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/createInstance
 
 Content-type: application/json
-Content-length: 336
+Content-length: 398
 
 {
   "displayName": "Display Name value",
@@ -80,6 +81,9 @@ Content-length: 336
       "definitionId": "Definition Id value",
       "valueJson": "Value Json value"
     }
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
