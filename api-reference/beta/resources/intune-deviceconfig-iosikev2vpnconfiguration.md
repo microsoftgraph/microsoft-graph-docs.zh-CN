@@ -4,12 +4,12 @@ description: 通过提供此配置文件中的配置, 可以指示 iOS 设备连
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26c189e14850562c39c5fa00737e33ba38c82049
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 69267d6d100f54569450a0469952c5bfe4b788f9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002684"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737501"
 ---
 # <a name="iosikev2vpnconfiguration-resource-type"></a>iosikEv2VpnConfiguration 资源类型
 
@@ -75,7 +75,7 @@ ms.locfileid: "35002684"
 |enableEAP|Boolean|启用仅 EAP 身份验证|
 |enablePerfectForwardSecrecy|Boolean|启用完全向前保密 (PFS)。|
 |enableUseInternalSubnetAttributes|Boolean|启用 "使用内部子网属性"。|
-|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|标识尝试通过 VPN 连接的客户端的方法。 . 可能的值是`deviceFQDN`:。|
+|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|标识尝试通过 VPN 连接的客户端的方法。 . 可取值为：`deviceFQDN`、`empty`、`clientCertificateSubjectName`。|
 |remoteIdentifier|String|IKEv2 服务器的地址。 必须是 FQDN、UserFQDN、网络地址或 ASN1DN|
 |securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|安全关联参数|
 |serverCertificateCommonName|String|服务器身份验证中使用的 IKEv2 服务器证书的公用名|
