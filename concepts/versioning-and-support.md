@@ -2,12 +2,12 @@
 title: 'Microsoft Graph 的版本控制、支持和重大更改策略 '
 description: 本文介绍了 Microsoft Graph 的支持和重大更改策略，以及当前可用的 Microsoft Graph API 版本。
 localization_priority: Priority
-ms.openlocfilehash: a362fba9bd66c029d7e4b9675b07d8d178fab561
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 8ac36dd12feb10eb545cea80cd8d59023b6d9783
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656872"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778696"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph 的版本控制、支持和中断性变更策略
 
@@ -29,21 +29,21 @@ Microsoft Graph 在版本中进行了许多更改。这些更改已在 [Microsof
 
 非后向兼容更改的示例如下：
 
- - 对与资源关联的 URL 或基本请求/响应进行更改
- - 删除、重命名或更改声明的属性的类型
- - 删除或重命名 API 或 API 参数
- - 添加所需的请求标头
+- 对与资源关联的 URL 或基本请求/响应进行更改
+- 删除、重命名或更改声明的属性的类型
+- 删除或重命名 API 或 API 参数
+- 添加所需的请求标头
 
 向后兼容的更改示例如下：
 
- - 添加可为 Null 或具有默认值的属性
- - 向枚举添加成员
- - 删除、重命名或更改开放扩展的类型
- - 删除、重命名或更改注释的类型
- - 向现有集合引入分页
- - 更改错误代码
- - 更改属性的顺序
- - 更改不透明字符串（如资源 ID）的长度或格式
+- 添加可为 Null 或具有默认值的属性
+- 向枚举添加成员
+- 删除、重命名或更改开放扩展的类型
+- 删除、重命名或更改注释的类型
+- 向现有集合引入分页
+- 更改错误代码
+- 更改属性的顺序
+- 更改不透明字符串（如资源 ID）的长度或格式
 
 >**注意：** 随着时间的推移，我们将更新向后兼容更改的列表。如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)的[模型版本控制](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分中描述的指导。
 

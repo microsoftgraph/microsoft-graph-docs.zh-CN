@@ -4,12 +4,12 @@ description: 日历中的事件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5288087a5288f31903dcc25fd4ef186c1bcf8783
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0be46df98faf4540e221a140daf0ec22355fc24a
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555918"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778724"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "32555918"
 
 > **注释：** 与用户日历、组日历及其事件交互的方式稍有不同：
 
- - 只可以组织 [calendarGroup](calendargroup.md) 中的用户日历。
- - Outlook 将代表组自动接受所有会议请求。 只可以[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)_用户_日历中的会议请求。
-  - Outlook 不支持对组事件提供提醒。 只可以[暂停](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)_用户_日历中的[提醒](reminder.md)。
+- 只可以组织 [calendarGroup](calendargroup.md) 中的用户日历。
+- Outlook 将代表组自动接受所有会议请求。 只可以[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)_用户_日历中的会议请求。
+- Outlook 不支持对组事件提供提醒。 只可以[暂停](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)_用户_日历中的[提醒](reminder.md)。
 
 ## <a name="methods"></a>方法
 

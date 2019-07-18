@@ -4,12 +4,12 @@ description: 可通过单个 REST 终结点管理 Microsoft Graph 安全提供�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 83e631a4e276e06ac4f43366d95cde7a2f455777
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49db00a3a667922d6d7fc50365ea1ad9282c3a8d
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573491"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778276"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>使用 Azure Monitor 将 Microsoft Graph 安全性 API 警报与 IBM QRadar SIEM 集成
 
@@ -83,14 +83,12 @@ ms.locfileid: "32573491"
     }
     ```
 
-  将 JSON 文件中的值替换为以下值：
+    将 JSON 文件中的值替换为以下值：
 
-  * **SUBSCRIPTION_ID** 是托管资源组和事件中心命名空间的 Azure 订阅的订阅 ID，你将在此处发送组织的安全警报。
-  * **RESOURCE_GROUP** 是包含事件中心命名空间的资源组，你将在此处发送组织的安全警报。
-  * **EVENT_HUB_NAMESPACE** 是事件中心命名空间，你将在此处发送组织的安全警报。
-  * **“days”** 是要将消息保留在事件中心内的天数。
-  
-&nbsp;
+    * **SUBSCRIPTION_ID** 是托管资源组和事件中心命名空间的 Azure 订阅的订阅 ID，你将在此处发送组织的安全警报。
+    * **RESOURCE_GROUP** 是包含事件中心命名空间的资源组，你将在此处发送组织的安全警报。
+    * **EVENT_HUB_NAMESPACE** 是事件中心命名空间，你将在此处发送组织的安全警报。
+    * **“days”** 是要将消息保留在事件中心内的天数。
 
 4. 以 JSON 格式将文件另存到你将从中调用 ARMClient.exe 的目录。 例如，将文件命名为 **AzMonConfig.json**。
 

@@ -3,12 +3,12 @@ title: 管理 Microsoft Graph 通知的应用注册和 API 权限
 description: 为接收通过 Microsoft Graph 发送的通知，首先需要在 Microsoft Azure 门户上注册应用程序。
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: 93ee4d83afac73b7d7ae90abe8e2876ffe688b68
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: dc102f451b3f206bbfefe1d3c38c3995041f04fa
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063277"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778633"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>管理 Microsoft Graph 通知的应用注册和 API 权限
 
@@ -43,19 +43,19 @@ ms.locfileid: "34063277"
     
 添加以下权限：
 
-  - User.Read - 允许应用程序登录你的用户
+- User.Read - 允许应用程序登录你的用户
 
-  - Device.Read - 允许标识用户的设备列表
+- Device.Read - 允许标识用户的设备列表
 
-  - Device.Command - 允许通信至用户的设备
+- Device.Command - 允许通信至用户的设备
 
-  - UserActivity.ReadWrite.CreatedByApp - 允许应用订阅以获取通知检索
+- UserActivity.ReadWrite.CreatedByApp - 允许应用订阅以获取通知检索
 
-  - Notifications.ReadWrite.CreatedByApp - 允许通知访问和传送
+- Notifications.ReadWrite.CreatedByApp - 允许通知访问和传送
 
-  - wns.connect - 允许连接至 Windows 通知服务
+- wns.connect - 允许连接至 Windows 通知服务
 
-  ![显示 Azure 门户中的通知委派权限的屏幕截图](images/notifications-api-permissions-list.png)
+![显示 Azure 门户中的通知委派权限的屏幕截图](images/notifications-api-permissions-list.png)
 
 ## <a name="next-steps"></a>后续步骤
 

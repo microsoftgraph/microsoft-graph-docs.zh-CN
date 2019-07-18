@@ -4,12 +4,12 @@ description: 在工作或学校设置中，一种常见方案是查看用户何�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 171a8a41b2f51335d7f5d5f38b63590421d94d48
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555204"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778283"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
 
@@ -174,8 +174,8 @@ Content-type: application/json
 
 - 事件被标记为低敏感度级别（`normal` 或 `personal`），且符合以下一个或多个条件：
 
-   - 所请求的用户的日历设置允许用户登录后查看主题行和位置
-   - 所请求的用户的日历与已登录用户共享
+  - 所请求的用户的日历设置允许用户登录后查看主题行和位置
+  - 所请求的用户的日历与已登录用户共享
 
 无论已登录用户是否是组织中的管理员，都需遵循这些条件。 所请求的用户可控制返回的事件数据。
 

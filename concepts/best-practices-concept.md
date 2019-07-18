@@ -2,12 +2,12 @@
 title: 使用 Microsoft Graph 的最佳做法
 description: 本文介绍可用于帮助你的应用程序充分利用 Microsoft Graph 的最佳做法，内容涉及了解 Microsoft Graph、提高应用性能，以及让应用程序对最终用户更具可靠性等。
 localization_priority: Priority
-ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 50b5149708a342b08e953790aa1b40c9335c418c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657607"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778679"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>使用 Microsoft Graph 的最佳做法
 
@@ -40,14 +40,14 @@ ms.locfileid: "34657607"
 <!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
 - **在配置应用时请考虑周全**。 这会直接影响最终用户和管理体验，以及应用程序的采用和安全性。 例如：
 
-    - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
-    - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes)。
-    - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
+  - 应用程序的隐私声明、使用条款、名称、徽标和域名都将出现在同意和其他体验中，所以一定要仔细配置，以便终端用户可以理解它们。
+  - 考虑谁将同意你的应用程序（终端用户或管理员），并适当将应用程序配置为[请求权限](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-scopes)。
+  - 确保理解[静态、动态和增量同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)之间的区别。
 
 - **请考虑多租户应用程序**。 预期客户有不同的应用程序和不同状态的同意控件。 例如：
 
-    - 租户管理员可以禁用最终用户同意应用程序的功能。 在这种情况下，管理员需要代表他们的用户同意。
-    - 租户管理员可以设置自定义授权策略，如阻止用户读取其他用户的配置文件，或者将自助服务组创建限制为一组有限用户。 在这种情况下，应用程序应在代表用户操作的情况下处理 403 错误响应。
+  - 租户管理员可以禁用最终用户同意应用程序的功能。 在这种情况下，管理员需要代表他们的用户同意。
+  - 租户管理员可以设置自定义授权策略，如阻止用户读取其他用户的配置文件，或者将自助服务组创建限制为一组有限用户。 在这种情况下，应用程序应在代表用户操作的情况下处理 403 错误响应。
 
 ## <a name="handle-responses-effectively"></a>有效处理响应
 

@@ -3,12 +3,12 @@ title: 减少 Outlook 资源丢失订阅和通知（预览版）
 description: 由于用户密码重置等安全事件，Outlook 可能会暂停传递更改通知。 需要处理特殊生命周期事件（`subscriptionRemoved` 和 `missed`），以确保传递通知不间断。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 1c430743f860536ef20fa2ad9974e580c78a6f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f273046c084e83375c835349b43caebcefca473
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32683975"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778241"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>减少 Outlook 资源丢失订阅和通知（预览版） 
 
@@ -138,7 +138,7 @@ Content-Type: application/json
 ### <a name="actions-to-take"></a>要采取的操作
 
 1. 通过使用 `202 - Accepted` 响应 POST 调用[确认](webhooks.md#notifications)收到通知。
-  - 如果忽略这些信号，则无需做其他任何事情。 或者：
+    - 如果忽略这些信号，则无需做其他任何事情。 或者：
 2. [验证](webhooks.md#notifications)通知的真实性。
 3. 执行资源的完整数据重新同步，以标识未作为通知发送的更改。 
 

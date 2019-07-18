@@ -4,12 +4,12 @@ description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 79212e9f196f3eb20468d34c34dc9d4588718615
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: c1a93242071f8ad1aa208ca3361f16d08c13d682
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620148"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778752"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
@@ -71,16 +71,16 @@ Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内�
 ## <a name="next-steps"></a>后续步骤
 
 - 若要开始使用教育版 API，请参阅：
-    - [使用名单 API](/graph/api/resources/education-overview?view=graph-rest-1.0)
-    - [使用作业 API](/graph/api/resources/educationassignment?view=graph-rest-beta)
-    - [使用 SDS 管理 API](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
+  - [使用名单 API](/graph/api/resources/education-overview?view=graph-rest-1.0)
+  - [使用作业 API](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [使用 SDS 管理 API](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中试用教育版 API。
 - 浏览下面的教育相关示例：
-    - [SSO 和排班 .NET 示例](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [SSO 和排班 Angular Node 示例](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [SSO 和排班 Python 示例](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [SSO 和排班 PHP 示例](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [配置文件管理 API 示例](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+  - [SSO 和排班 .NET 示例](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
+  - [SSO 和排班 Angular Node 示例](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
+  - [SSO 和排班 Python 示例](https://github.com/OfficeDev/O365-EDU-Python-Samples)
+  - [SSO 和排班 PHP 示例](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+  - [配置文件管理 API 示例](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
 
