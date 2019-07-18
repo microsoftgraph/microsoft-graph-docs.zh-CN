@@ -248,6 +248,8 @@ items:
             href: teams-list-all-teams.md
           - name: 配置内置选项卡
             href: teams-configuring-builtin-tabs.md
+          - name: 受保护的 API
+            href: teams-protected-apis.md
       - name: 工作簿和图表
         displayName: Excel
         items:
