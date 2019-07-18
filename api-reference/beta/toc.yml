@@ -9217,9 +9217,9 @@
                 - name: 获取聊天
                   href: api/chat-get.md
                 - name: 列出聊天中的消息
-                  href: api/chat-list-messages.md
+                  href: api/chatmessage-list.md
                 - name: 获取聊天中的消息
-                  href: api/chat-get-message.md
+                  href: api/chatmessage-get.md
                 - name: 获取聊天中的成员
                   href: api/conversationmember-list.md
                 - name: 获取聊天中的一个成员
