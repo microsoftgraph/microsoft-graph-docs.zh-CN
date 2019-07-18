@@ -2,12 +2,12 @@
 title: 创建 programControl
 description: 在 "Azure AD access 评论" 功能中, 创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
-ms.openlocfilehash: 5c8bf73cc62a937848577baf3358ead189f88aae
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 101606433c16f711e0d0301cf97b325149459bd3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450077"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778437"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -17,9 +17,9 @@ ms.locfileid: "35450077"
 
 在发出此请求之前, 呼叫者必须先
 
- - [创建了一个程序](program-create.md)或[检索了一个程序](program-list.md), 以使`programId`其值包含在请求中,
- - [创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md), 以在请求中包含`controlId`的值, 以及
- - [检索了程序控制类型的列表](programcontroltype-list.md), 以将值`controlTypeId`包含在请求中。
+- [创建了一个程序](program-create.md)或[检索了一个程序](program-list.md), 以使`programId`其值包含在请求中,
+- [创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md), 以在请求中包含`controlId`的值, 以及
+- [检索了程序控制类型的列表](programcontroltype-list.md), 以将值`controlTypeId`包含在请求中。
 
 
 ## <a name="permissions"></a>权限

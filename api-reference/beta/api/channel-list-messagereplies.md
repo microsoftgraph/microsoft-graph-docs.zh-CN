@@ -4,12 +4,12 @@ description: 在团队的频道中列出邮件的所有答复。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bc637d1eaec19bd3de18517c9339b8c15c9d663
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2db1c418ef669776c945e4c2176a49648ba185c4
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438473"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778405"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
 
@@ -26,7 +26,10 @@ ms.locfileid: "35438473"
 |---------|-------------|
 |委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 不支持。 |
+|应用程序| Group.Read.All、Group.ReadWrite.All|
+
+> [!NOTE]
+> 在使用应用程序权限调用此 API 之前, 您必须请求访问权限。 有关详细信息, 请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

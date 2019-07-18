@@ -4,12 +4,12 @@ description: 介绍 Microsoft Graph API 中登录资源 (实体) 的 get 方法�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f4c10ffcf600fd51b0d6531f78c38cc2066ae4a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0f258b49d763ddda90b5ee5b05de92a2b44722f0
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444188"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778439"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -23,7 +23,7 @@ ms.locfileid: "35444188"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All |
+|应用 | AuditLog 和所有目录。全部读取. 所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 

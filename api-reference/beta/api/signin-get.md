@@ -4,12 +4,12 @@ description: 检索租户的特定 Azure AD 用户登录事件。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e168bccfbecc080cb2a6fdd0e8b06260ae0ede
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c7111e8f63684cd98a1c21d0de72e9adb246353c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453619"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778448"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -25,8 +25,11 @@ ms.locfileid: "35453619"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All |
+|委派（工作或学校帐户） | Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用 | AuditLog.Read.All | 
+|应用程序 | Directory.Read.All | 
+
 
 此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 

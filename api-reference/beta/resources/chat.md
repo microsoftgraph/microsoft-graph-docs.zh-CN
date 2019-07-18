@@ -4,12 +4,12 @@ description: 聊天是一个或多个参与者之间的 Chatmessages 集合的�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344974"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778656"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "34344974"
 |[获取聊天](../api/chat-get.md) | [参与](channel.md) | 读取聊天的属性和关系。|
 |[列出聊天成员](../api/conversationmember-list.md) | [conversationmember](conversationmember.md)集合 | 获取聊天中所有用户的列表。|
 |[获取聊天成员](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | 获取聊天中的单个用户。|
-|[列出聊天中的消息](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 |
-|[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
+|[列出聊天中的消息](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 |
+|[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
 
 ## <a name="properties"></a>属性
 

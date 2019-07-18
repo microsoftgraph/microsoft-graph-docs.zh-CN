@@ -3,11 +3,11 @@ author: jasonjoh
 ms.topic: include
 ms.author: jasonjoh
 ms.openlocfilehash: 3c82d71d934c81fff11dbf44b08e855eafa321b5
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34843302"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35738453"
 ---
 <!-- markdownlint-disable MD041 -->
 

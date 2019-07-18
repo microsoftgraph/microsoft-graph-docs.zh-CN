@@ -3,12 +3,12 @@ title: schemaExtension 资源类型（架构扩展）
 description: '可以通过架构扩展定义架构来扩展强类型的自定义数据并将其添加到资源类型。自定义数据在扩展资源上作为复杂类型显示。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a6d7ed28b1fedefe1b4172bb780e3a014e4d3ff7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 65b70a00b9da6b41a178d07b9eeb42ed8e92a2f6
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343453"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778655"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension 资源类型（架构扩展）
 
@@ -18,15 +18,15 @@ ms.locfileid: "33343453"
 
 以下资源类型支持架构扩展：
 
- - [administrativeUnit](administrativeunit.md)
- - [联系人](contact.md)
- - [设备](device.md)
- - 用户或 Office 365 组日历上的[事件](event.md)。
- - Office 365 组的[帖子](post.md)
- - [组](group.md)
- - [邮件](message.md) 
- - [组织](organization.md)
- - [用户](user.md)
+- [administrativeUnit](administrativeunit.md)
+- [联系人](contact.md)
+- [设备](device.md)
+- 用户或 Office 365 组日历上的[事件](event.md)。
+- Office 365 组的[帖子](post.md)
+- [组](group.md)
+- [邮件](message.md) 
+- [组织](organization.md)
+- [用户](user.md)
 
 请参阅[架构扩展示例](/graph/extensibility-schema-groups)了解如何将自定义数据添加到组。
 

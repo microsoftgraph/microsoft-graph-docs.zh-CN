@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包提供程序
 description: Microsoft Graph 工具包提供程序为所有组件启用身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e89247daf92471b4a7c6aa16f34396eaedaaa37a
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242975"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778710"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph 工具包提供程序
 
@@ -37,13 +37,13 @@ Providers.globalProvider = new MsalProvider({
 
 `Providers`全局变量公开以下属性和函数
 
-   - `globalProvider : IProvider`
+- `globalProvider : IProvider`
 
 将此属性设置为要全局使用的提供程序。 所有组件均使用此属性获取对提供程序的引用。 设置此属性将触发该`onProvidersChanged`事件。
 
-   - `function onProviderUpdated(callbackFunction)`
+- `function onProviderUpdated(callbackFunction)`
 
- 当`callbackFunction`提供程序发生更改或提供程序的状态更改时, 将调用此函数。 `ProvidersChangedState`枚举值将传递给函数以指示更新的内容。
+当`callbackFunction`提供程序发生更改或提供程序的状态更改时, 将调用此函数。 `ProvidersChangedState`枚举值将传递给函数以指示更新的内容。
 
 ## <a name="implement-your-own-provider"></a>实现您自己的提供程序
 

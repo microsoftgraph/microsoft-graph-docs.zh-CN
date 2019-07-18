@@ -4,12 +4,12 @@ description: 将应用程序从 Azure AD Graph 迁移到 Microsoft Graph 的清�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 78b6ba30d84a2ca71ae8998df1321b2b8e0ba331
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 905a692e6a4fddf71b6488e1695957cba5b182ae
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630221"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778262"
 ---
 # <a name="app-migration-planning-checklist"></a>应用迁移规划清单
 
@@ -33,7 +33,7 @@ ms.locfileid: "33630221"
 
 检查您的应用程序使用[的 api](migrate-azure-ad-graph-audit-api-use.md) 、所需的权限, 并与已知差异的列表进行比较。  
 
-验证应用程序所需的 Api 在 Microsoft Graph v1。0中通常可用, 并且这些 Api 的工作方式相同。
+验证应用程序所需的 Api 在 Microsoft Graph v1.0 中通常可用, 并且这些 Api 的工作方式相同。
 
 在某些情况下, 新功能和功能旨在取代早期的方法。
 
@@ -41,9 +41,9 @@ ms.locfileid: "33630221"
 
 ## <a name="step-3-review-app-details"></a>步骤 3: 查看应用程序详细信息
 
-  - [应用注册](migrate-azure-ad-graph-app-registration.md)和同意更改 (应为 "无")。
-  - 令牌获取和[身份验证库](migrate-azure-ad-graph-authentication-library.md)。
-  - 对于 .NET 应用程序, 使用[客户端库](migrate-azure-ad-graph-client-libraries.md)。
+- [应用注册](migrate-azure-ad-graph-app-registration.md)和同意更改 (应为 "无")。
+- 令牌获取和[身份验证库](migrate-azure-ad-graph-authentication-library.md)。
+- 对于 .NET 应用程序, 使用[客户端库](migrate-azure-ad-graph-client-libraries.md)。
 
 ## <a name="step-4-deploy-test-and-extend-your-app"></a>步骤 4: 部署、测试和扩展应用程序
 

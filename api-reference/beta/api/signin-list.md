@@ -4,12 +4,12 @@ description: 描述 Microsoft Graph API (REST) 中 signIn 资源（实体）的�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f40d1cd32a8156d88d80ed43b87f5d125a1a0ca
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3ccd1dc320cfa2bab425dad3002ea727baeea15e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457168"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778458"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -24,8 +24,11 @@ ms.locfileid: "35457168"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All |
+|委派（工作或学校帐户） | Directory.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
 |应用 | AuditLog.Read.All | 
+|应用程序 | Directory.Read.All  | 
+
 
 此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 

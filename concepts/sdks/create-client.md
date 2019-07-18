@@ -3,12 +3,12 @@ title: 创建 Microsoft Graph 客户端
 description: 介绍如何创建用于调用 Microsoft Graph 的客户端。 包含如何设置身份验证和选择 sovereign 云。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 3d120f626f3623545366a105aaf9c072c8501e1b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cfff3b8f19b27e360977259d06df730abfd38bf3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630186"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778731"
 ---
 # <a name="create-a-microsoft-graph-client"></a>创建 Microsoft Graph 客户端
 
@@ -16,12 +16,17 @@ Microsoft Graph 客户端旨在使调用 Microsoft Graph 更加简单。 您可�
 
 下面的代码示例演示如何使用支持的语言创建具有身份验证提供程序的 Microsoft Graph 客户端的实例。 身份验证提供程序将处理获取应用程序的访问令牌。 每种语言和平台都提供了许多不同的身份验证提供程序。 不同的应用程序提供程序支持不同的客户端方案。 有关适合您的方案的提供程序和选项的详细信息, 请参阅[选择身份验证提供程序](choose-authentication-providers.md)。
 
-# <a name="ctabcs"></a>[语言](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-var app = DeviceCodeProvider.CreateClientApplication("INSERT-CLIENT-APP-ID");
-var authProvider = new DeviceCodeProvider(app);
-var client = new GraphServiceClient(authProvider);
+// Build a client application.
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create("INSERT-CLIENT-APP-ID")
+            .Build();
+// Create an authentication provider by passing in a client application and graph scopes.
+DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
+// Create a new instance of GraphServiceClient with the authentication provider.
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -37,7 +42,7 @@ const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
 // Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
 const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, scopes);
+const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
 # <a name="javatabjava"></a>[Java](#tab/Java)

@@ -1,24 +1,24 @@
 ---
 title: licenseAssignmentState 资源类型
-description: 'user 实体的**licenseAssignmentStates**属性是**licenseAssignmentState**的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括如下信息:  '
+description: 'User 实体的**licenseAssignmentStates**属性是**licenseAssignmentState**的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括如下信息:  '
 localization_priority: Normal
-ms.openlocfilehash: 1aa91dcb841c8f3219ba0ea00ad615777da89aa9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e720070c4c97c58fd3c99e49656d7ca33f5fb9d4
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345337"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778423"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[user](user.md)实体的**licenseAssignmentStates**属性是**licenseAssignmentState**的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括如下信息:  
+[User](user.md)实体的**LicenseAssignmentStates**属性是**licenseAssignmentState**的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括如下信息:  
 
- - 为用户禁用了哪些计划
- - 是否将许可证直接分配给用户或从组继承。
- - 工作分配的当前状态
- - 如果工作分配状态为 "错误", 则失败的错误详细信息是什么？ 
+- 为用户禁用了哪些计划
+- 是否将许可证直接分配给用户或从组继承。
+- 工作分配的当前状态
+- 如果工作分配状态为 "错误", 则失败的错误详细信息是什么？ 
 
 
 ## <a name="properties"></a>属性

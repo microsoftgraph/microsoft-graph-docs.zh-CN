@@ -3,12 +3,12 @@ title: 打开 OneNote 客户端
 description: '可以使用页面或笔记本的 **links** 属性将 OneNote 应用程序打开到特定的页面或笔记本。 '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: b4ad078443bd6d85c46a6e23552ddc730c725b51
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: d9f4ec45e79ed0526b4d02a6c3f676944384ab46
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236284"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778290"
 ---
 # <a name="open-the-onenote-client"></a>打开 OneNote 客户端
 
@@ -31,13 +31,13 @@ ms.locfileid: "35236284"
 
 - **oneNoteClientUrl** 
 
-    - 打开 OneNote 客户端（如果设备上已安装）。 此 URL 包括 *onenote* 前缀。
-    - 如果设备上安装了特定于语言的版本，则打开该版本。 否则，请使用平台语言设置。
+  - 打开 OneNote 客户端（如果设备上已安装）。 此 URL 包括 *onenote* 前缀。
+  - 如果设备上安装了特定于语言的版本，则打开该版本。 否则，请使用平台语言设置。
 
 - **oneNoteWebUrl** 
 
-    - 如果设备上的默认浏览器支持, 则在 web 上打开 OneNote。 
-    - 使用浏览器语言设置。
+  - 如果设备上的默认浏览器支持, 则在 web 上打开 OneNote。 
+  - 使用浏览器语言设置。
 
 
 OneNote API 在以下操作的 HTTP 响应中返回 **links** 属性：
