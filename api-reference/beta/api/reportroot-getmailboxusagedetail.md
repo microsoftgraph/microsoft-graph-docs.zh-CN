@@ -4,12 +4,12 @@ description: 获取邮箱使用情况的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1fdd5346fa95453b4f2504382e5f20206bea0fb1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0fa58a26d37ea8ec772d9c7fccfd4bb61dead81b
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447030"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805076"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot：getMailboxUsageDetail
 
@@ -75,6 +75,8 @@ CSV 文件包含下面的列标题。
 - 发出警告配额（字节）
 - 禁止发送配额（字节）
 - 禁止发送/接收配额（字节）
+- 已删除邮件数
+- 删除的项目大小 (字节)
 - 报表周期
 
 ### <a name="json"></a>JSON
@@ -142,7 +144,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -208,6 +210,8 @@ Content-Length: 526
       "lastActivityDate": "2017-09-01", 
       "itemCount": 138481, 
       "storageUsedInBytes": 10414748704, 
+      "deletedItemCount": 138481,
+      "deletedItemSizeInBytes": 10414748704, 
       "issueWarningQuotaInBytes": 10522698752, 
       "prohibitSendQuotaInBytes": 10630040576, 
       "prohibitSendReceiveQuotaInBytes": 10737418240, 

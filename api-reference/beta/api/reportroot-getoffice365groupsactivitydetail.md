@@ -4,12 +4,12 @@ description: 获取组执行的 Office 365 组活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: b7725ca7f56db7873d49729518a37dd3934ed3d0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b0435fd85e813942fd5e4a8b087e5a220a934fdd
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446883"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805072"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -84,6 +84,7 @@ CSV 文件包含下面的列标题。
 - 已使用的 Exchange 邮箱存储（字节）
 - SharePoint 文件总数
 - 已使用的 SharePoint 网站存储（字节）
+- 组 Id
 - 报表周期
 
 由世纪互联运营的 Microsoft Graph 中国不支持以下各列:
@@ -163,7 +164,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -220,6 +221,7 @@ Content-Length: 674
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityDetail)", 
   "value": [
     {
+      "groupId": "0003cf63-7ff3-4471-b24b-50ffbfb8b5d2",
       "reportRefreshDate": "2017-09-01", 
       "groupDisplayName": "groupDisplayName-value", 
       "isDeleted": false, 
