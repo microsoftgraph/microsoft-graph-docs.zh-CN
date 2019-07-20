@@ -4,12 +4,12 @@ description: '检索团队频道中的消息列表（无回复）。 若要获�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: be255279415c8c973666b328c9edf922607a8d7b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 741c5f31e0b867a5fe6624cb81ea790e61c1fedb
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438459"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778395"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -27,7 +27,10 @@ ms.locfileid: "35438459"
 |---------|-------------|
 |委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application| 不支持。 |
+|应用程序| Group.Read.All、Group.ReadWrite.All|
+
+> [!NOTE]
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 

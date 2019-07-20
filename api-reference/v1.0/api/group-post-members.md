@@ -1,20 +1,23 @@
 ---
 title: 添加成员
-description: 使用此 API 可以通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
+description: 通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9a819ee95010a6702aabf55c92f0106716fdd80d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a3ccacd1ebb1985cd09de31f9568df86660451af
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456391"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778427"
 ---
 # <a name="add-member"></a>添加成员
-使用此 API 可以通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
+通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
 
-可以添加用户或其他组。 重要说明：只能将用户添加到 Office 365 组。
+可以添加用户或其他组。 
+
+> [!IMPORTANT]
+> 仅能将用户添加到 Office 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

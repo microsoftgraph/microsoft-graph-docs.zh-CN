@@ -4,12 +4,12 @@ description: 检索团队通道中的单个消息（不包括其回复）。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea69a9926a07c0f9fcd05a70bdf409fd9bd4d922
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 884da7f1f27c20c3012c8f8a1d38681d472a8337
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438508"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778404"
 ---
 # <a name="get-channel-message"></a>获取通道消息
 
@@ -25,6 +25,9 @@ ms.locfileid: "35438508"
 |委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
 |Application| Group.Read.All、Group.ReadWrite.All |
+
+> [!NOTE]
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
