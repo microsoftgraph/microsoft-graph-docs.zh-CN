@@ -178,7 +178,7 @@
                 - name: 获取 Delta
                   href: api/user-delta.md
             - name: 日历
-              href: resources/event.md
+              href: resources/calendar.md
               displayName: 'Outlook, Outlook calendar'
               items:
                 - name: 列出事件
@@ -245,8 +245,10 @@
             - name: 组
               href: resources/group.md
               items:
-                - name: 列出 memberOf
+                - name: 列出隶属于
                   href: api/user-list-memberof.md
+                - name: 列出的可传递成员
+                  href: api/user-list-transitivememberof.md
             - name: 邮件
               href: resources/message.md
               items:
@@ -353,10 +355,16 @@
                   href: api/group-list-grouplifecyclepolicies.md
                 - name: 列出隶属于
                   href: api/group-list-memberof.md
+                - name: 列出的可传递成员
+                  href: api/group-list-transitivememberof.md
                 - name: 列出成员
                   href: api/group-list-members.md
+                - name: List transitive members
+                  href: api/group-list-transitivemembers.md
                 - name: 列出所有者
                   href: api/group-list-owners.md
+                - name: List photos
+                  href: api/group-list-photos.md
                 - name: 更新组
                   href: api/group-update.md
                 - name: 删除收藏夹
@@ -390,7 +398,9 @@
                       href: api/grouplifecyclepolicy-addgroup.md
                     - name: 删除组
                       href: api/grouplifecyclepolicy-removegroup.md
-            - name: 附件
+                - name: 验证属性
+                  href: api/group-validateproperties.md
+            - name: Attachment
               href: resources/attachment.md
               items:
                 - name: 文件附件资源
@@ -835,7 +845,7 @@
                 - name: iOS VPP 应用
                   href: resources/intune-apps-iosvppapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-iosvppapp-list.md
                     - name: 获取
                       href: api/intune-apps-iosvppapp-get.md
@@ -850,7 +860,7 @@
                 - name: iOS VPP 电子书
                   href: resources/intune-books-iosvppebook.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-books-iosvppebook-list.md
                     - name: 获取
                       href: api/intune-books-iosvppebook-get.md
@@ -1060,7 +1070,7 @@
                 - name: 移动应用
                   href: resources/intune-apps-mobileapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-mobileapp-list.md
                     - name: 获取
                       href: api/intune-apps-mobileapp-get.md
@@ -1069,7 +1079,7 @@
                 - name: 移动应用分配
                   href: resources/intune-apps-mobileappassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-mobileappassignment-list.md
                     - name: 获取
                       href: api/intune-apps-mobileappassignment-get.md
@@ -1281,7 +1291,7 @@
                 - name: Android 符合性策略
                   href: resources/intune-deviceconfig-androidcompliancepolicy.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidcompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidcompliancepolicy-get.md
@@ -1294,7 +1304,7 @@
                 - name: Android 自定义配置
                   href: resources/intune-deviceconfig-androidcustomconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidcustomconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidcustomconfiguration-get.md
@@ -1716,7 +1726,7 @@
                 - name: iOS 更新配置
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -1729,7 +1739,7 @@
                 - name: iOS 更新设备状态
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -1899,7 +1909,7 @@
                 - name: 共享电脑配置
                   href: resources/intune-deviceconfig-sharedpcconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-sharedpcconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-sharedpcconfiguration-get.md
@@ -1931,7 +1941,7 @@
                 - name: Windows 10 符合性策略
                   href: resources/intune-deviceconfig-windows10compliancepolicy.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -2561,7 +2571,7 @@
                 - name: 受管理的应用配置目标
                   href: resources/intune-mam-targetedmanagedappconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-targetedmanagedappconfiguration-list.md
                     - name: 获取
                       href: api/intune-mam-targetedmanagedappconfiguration-get.md
@@ -2578,7 +2588,7 @@
                 - name: 目标托管应用程序策略分配
                   href: resources/intune-mam-targetedmanagedapppolicyassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-mam-targetedmanagedapppolicyassignment-list.md
                     - name: 获取
                       href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
@@ -2773,7 +2783,7 @@
                 - name: 注册配置分配
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: 获取
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -2790,7 +2800,7 @@
                 - name: 移动威胁防护连接器
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: 获取
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -3229,6 +3239,8 @@
                   href: api/device-post-registeredusers.md
                 - name: 列出设备组
                   href: api/device-list-memberof.md
+                - name: 列出设备可传递组
+                  href: api/device-list-transitivememberof.md
             - name: 目录对象
               href: resources/directoryobject.md
               items:
@@ -3244,6 +3256,8 @@
                   href: api/directoryobject-checkmembergroups.md
                 - name: 按 ID 获取对象
                   href: api/directoryobject-getbyids.md
+                - name: 验证属性
+                  href: api/directoryobject-validateproperties.md
             - name: 目录角色
               href: resources/directoryrole.md
               items:

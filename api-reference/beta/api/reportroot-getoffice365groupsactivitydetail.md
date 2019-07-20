@@ -4,32 +4,32 @@ description: 获取组执行的 Office 365 组活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: b7725ca7f56db7873d49729518a37dd3934ed3d0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b0435fd85e813942fd5e4a8b087e5a220a934fdd
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446883"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805072"
 ---
-# <a name="reportroot-getoffice365groupsactivitydetail"></a><span data-ttu-id="b0dbd-103">reportRoot: getOffice365GroupsActivityDetail</span><span class="sxs-lookup"><span data-stu-id="b0dbd-103">reportRoot: getOffice365GroupsActivityDetail</span></span>
+# <a name="reportroot-getoffice365groupsactivitydetail"></a><span data-ttu-id="c3bd0-103">reportRoot: getOffice365GroupsActivityDetail</span><span class="sxs-lookup"><span data-stu-id="c3bd0-103">reportRoot: getOffice365GroupsActivityDetail</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b0dbd-104">获取组执行的 Office 365 组活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-104">Get details about Office 365 Groups activity by group.</span></span>
+<span data-ttu-id="c3bd0-104">获取组执行的 Office 365 组活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-104">Get details about Office 365 Groups activity by group.</span></span>
 
-> <span data-ttu-id="b0dbd-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-105">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
+> <span data-ttu-id="c3bd0-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-105">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b0dbd-106">权限</span><span class="sxs-lookup"><span data-stu-id="b0dbd-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c3bd0-106">权限</span><span class="sxs-lookup"><span data-stu-id="c3bd0-106">Permissions</span></span>
 
-<span data-ttu-id="b0dbd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c3bd0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b0dbd-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b0dbd-109">Permission type</span></span>                        | <span data-ttu-id="b0dbd-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b0dbd-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c3bd0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="c3bd0-109">Permission type</span></span>                        | <span data-ttu-id="c3bd0-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c3bd0-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="b0dbd-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b0dbd-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b0dbd-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0dbd-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="b0dbd-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b0dbd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0dbd-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-114">Not supported.</span></span>                           |
-| <span data-ttu-id="b0dbd-115">应用</span><span class="sxs-lookup"><span data-stu-id="b0dbd-115">Application</span></span>                            | <span data-ttu-id="b0dbd-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="b0dbd-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="c3bd0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c3bd0-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c3bd0-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="c3bd0-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="c3bd0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c3bd0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3bd0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-114">Not supported.</span></span>                           |
+| <span data-ttu-id="c3bd0-115">应用</span><span class="sxs-lookup"><span data-stu-id="c3bd0-115">Application</span></span>                            | <span data-ttu-id="c3bd0-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="c3bd0-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="b0dbd-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b0dbd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3bd0-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c3bd0-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,84 +38,85 @@ GET /reports/getOffice365GroupsActivityDetail(period='{period_value}')
 GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="b0dbd-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="c3bd0-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-118">Function parameters</span></span>
 
-<span data-ttu-id="b0dbd-119">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="c3bd0-119">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="b0dbd-120">参数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-120">Parameter</span></span> | <span data-ttu-id="b0dbd-121">类型</span><span class="sxs-lookup"><span data-stu-id="b0dbd-121">Type</span></span>   | <span data-ttu-id="b0dbd-122">说明</span><span class="sxs-lookup"><span data-stu-id="b0dbd-122">Description</span></span>                              |
+| <span data-ttu-id="c3bd0-120">参数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-120">Parameter</span></span> | <span data-ttu-id="c3bd0-121">类型</span><span class="sxs-lookup"><span data-stu-id="c3bd0-121">Type</span></span>   | <span data-ttu-id="c3bd0-122">说明</span><span class="sxs-lookup"><span data-stu-id="c3bd0-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="b0dbd-123">period</span><span class="sxs-lookup"><span data-stu-id="b0dbd-123">period</span></span>    | <span data-ttu-id="b0dbd-124">string</span><span class="sxs-lookup"><span data-stu-id="b0dbd-124">string</span></span> | <span data-ttu-id="b0dbd-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="b0dbd-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="b0dbd-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="b0dbd-128">date</span><span class="sxs-lookup"><span data-stu-id="b0dbd-128">date</span></span>      | <span data-ttu-id="b0dbd-129">Date</span><span class="sxs-lookup"><span data-stu-id="b0dbd-129">Date</span></span>   | <span data-ttu-id="b0dbd-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="b0dbd-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="b0dbd-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="c3bd0-123">period</span><span class="sxs-lookup"><span data-stu-id="c3bd0-123">period</span></span>    | <span data-ttu-id="c3bd0-124">string</span><span class="sxs-lookup"><span data-stu-id="c3bd0-124">string</span></span> | <span data-ttu-id="c3bd0-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="c3bd0-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="c3bd0-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="c3bd0-128">date</span><span class="sxs-lookup"><span data-stu-id="c3bd0-128">date</span></span>      | <span data-ttu-id="c3bd0-129">Date</span><span class="sxs-lookup"><span data-stu-id="c3bd0-129">Date</span></span>   | <span data-ttu-id="c3bd0-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="c3bd0-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="c3bd0-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="b0dbd-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-133">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="c3bd0-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-133">**Note:** You need to set either period or date in the URL.</span></span>
 
-<span data-ttu-id="b0dbd-134">此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="b0dbd-135">默认输出类型为 text/csv。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-135">The default output type is text/csv.</span></span> <span data-ttu-id="b0dbd-136">但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="c3bd0-134">此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="c3bd0-135">默认输出类型为 text/csv。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-135">The default output type is text/csv.</span></span> <span data-ttu-id="c3bd0-136">但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b0dbd-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="b0dbd-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c3bd0-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="c3bd0-137">Request headers</span></span>
 
-| <span data-ttu-id="b0dbd-138">名称</span><span class="sxs-lookup"><span data-stu-id="b0dbd-138">Name</span></span>          | <span data-ttu-id="b0dbd-139">说明</span><span class="sxs-lookup"><span data-stu-id="b0dbd-139">Description</span></span>               |
+| <span data-ttu-id="c3bd0-138">名称</span><span class="sxs-lookup"><span data-stu-id="c3bd0-138">Name</span></span>          | <span data-ttu-id="c3bd0-139">说明</span><span class="sxs-lookup"><span data-stu-id="c3bd0-139">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="b0dbd-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0dbd-140">Authorization</span></span> | <span data-ttu-id="b0dbd-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c3bd0-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3bd0-140">Authorization</span></span> | <span data-ttu-id="c3bd0-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="b0dbd-143">响应</span><span class="sxs-lookup"><span data-stu-id="b0dbd-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c3bd0-143">响应</span><span class="sxs-lookup"><span data-stu-id="c3bd0-143">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="b0dbd-144">CSV</span><span class="sxs-lookup"><span data-stu-id="b0dbd-144">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="c3bd0-144">CSV</span><span class="sxs-lookup"><span data-stu-id="c3bd0-144">CSV</span></span>
 
-<span data-ttu-id="b0dbd-145">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="b0dbd-146">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-146">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="c3bd0-145">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="c3bd0-146">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-146">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="b0dbd-147">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="c3bd0-147">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="b0dbd-148">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-148">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="c3bd0-148">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-148">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="b0dbd-149">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="b0dbd-149">Report Refresh Date</span></span>
-- <span data-ttu-id="b0dbd-150">组显示名称</span><span class="sxs-lookup"><span data-stu-id="b0dbd-150">Group Display Name</span></span>
-- <span data-ttu-id="b0dbd-151">已删除</span><span class="sxs-lookup"><span data-stu-id="b0dbd-151">Is Deleted</span></span>
-- <span data-ttu-id="b0dbd-152">所有者主体名称</span><span class="sxs-lookup"><span data-stu-id="b0dbd-152">Owner Principal Name</span></span>
-- <span data-ttu-id="b0dbd-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="b0dbd-153">Last Activity Date</span></span>
-- <span data-ttu-id="b0dbd-154">组类型</span><span class="sxs-lookup"><span data-stu-id="b0dbd-154">Group Type</span></span>
-- <span data-ttu-id="b0dbd-155">成员数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-155">Member Count</span></span>
-- <span data-ttu-id="b0dbd-156">外部成员数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-156">External Member Count</span></span>
-- <span data-ttu-id="b0dbd-157">已接收 Exchange 电子邮件数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-157">Exchange Received Email Count</span></span>
-- <span data-ttu-id="b0dbd-158">SharePoint 活跃文件数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-158">SharePoint Active File Count</span></span>
-- <span data-ttu-id="b0dbd-159">已发布 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-159">Yammer Posted Message Count</span></span>
-- <span data-ttu-id="b0dbd-160">已阅读 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-160">Yammer Read Message Count</span></span>
-- <span data-ttu-id="b0dbd-161">已赞 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-161">Yammer Liked Message Count</span></span>
-- <span data-ttu-id="b0dbd-162">Exchange 邮箱总项数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-162">Exchange Mailbox Total Item Count</span></span>
-- <span data-ttu-id="b0dbd-163">已使用的 Exchange 邮箱存储（字节）</span><span class="sxs-lookup"><span data-stu-id="b0dbd-163">Exchange Mailbox Storage Used (Byte)</span></span>
-- <span data-ttu-id="b0dbd-164">SharePoint 文件总数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-164">SharePoint Total File Count</span></span>
-- <span data-ttu-id="b0dbd-165">已使用的 SharePoint 网站存储（字节）</span><span class="sxs-lookup"><span data-stu-id="b0dbd-165">SharePoint Site Storage Used (Byte)</span></span>
-- <span data-ttu-id="b0dbd-166">报表周期</span><span class="sxs-lookup"><span data-stu-id="b0dbd-166">Report Period</span></span>
+- <span data-ttu-id="c3bd0-149">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="c3bd0-149">Report Refresh Date</span></span>
+- <span data-ttu-id="c3bd0-150">组显示名称</span><span class="sxs-lookup"><span data-stu-id="c3bd0-150">Group Display Name</span></span>
+- <span data-ttu-id="c3bd0-151">已删除</span><span class="sxs-lookup"><span data-stu-id="c3bd0-151">Is Deleted</span></span>
+- <span data-ttu-id="c3bd0-152">所有者主体名称</span><span class="sxs-lookup"><span data-stu-id="c3bd0-152">Owner Principal Name</span></span>
+- <span data-ttu-id="c3bd0-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="c3bd0-153">Last Activity Date</span></span>
+- <span data-ttu-id="c3bd0-154">组类型</span><span class="sxs-lookup"><span data-stu-id="c3bd0-154">Group Type</span></span>
+- <span data-ttu-id="c3bd0-155">成员数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-155">Member Count</span></span>
+- <span data-ttu-id="c3bd0-156">外部成员数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-156">External Member Count</span></span>
+- <span data-ttu-id="c3bd0-157">已接收 Exchange 电子邮件数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-157">Exchange Received Email Count</span></span>
+- <span data-ttu-id="c3bd0-158">SharePoint 活跃文件数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-158">SharePoint Active File Count</span></span>
+- <span data-ttu-id="c3bd0-159">已发布 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-159">Yammer Posted Message Count</span></span>
+- <span data-ttu-id="c3bd0-160">已阅读 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-160">Yammer Read Message Count</span></span>
+- <span data-ttu-id="c3bd0-161">已赞 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-161">Yammer Liked Message Count</span></span>
+- <span data-ttu-id="c3bd0-162">Exchange 邮箱总项数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-162">Exchange Mailbox Total Item Count</span></span>
+- <span data-ttu-id="c3bd0-163">已使用的 Exchange 邮箱存储（字节）</span><span class="sxs-lookup"><span data-stu-id="c3bd0-163">Exchange Mailbox Storage Used (Byte)</span></span>
+- <span data-ttu-id="c3bd0-164">SharePoint 文件总数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-164">SharePoint Total File Count</span></span>
+- <span data-ttu-id="c3bd0-165">已使用的 SharePoint 网站存储（字节）</span><span class="sxs-lookup"><span data-stu-id="c3bd0-165">SharePoint Site Storage Used (Byte)</span></span>
+- <span data-ttu-id="c3bd0-166">组 Id</span><span class="sxs-lookup"><span data-stu-id="c3bd0-166">Group Id</span></span>
+- <span data-ttu-id="c3bd0-167">报表周期</span><span class="sxs-lookup"><span data-stu-id="c3bd0-167">Report Period</span></span>
 
-<span data-ttu-id="b0dbd-167">由世纪互联运营的 Microsoft Graph 中国不支持以下各列:</span><span class="sxs-lookup"><span data-stu-id="b0dbd-167">The following columns are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
+<span data-ttu-id="c3bd0-168">由世纪互联运营的 Microsoft Graph 中国不支持以下各列:</span><span class="sxs-lookup"><span data-stu-id="c3bd0-168">The following columns are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
 
-- <span data-ttu-id="b0dbd-168">已发布 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-168">Yammer Posted Message Count</span></span>
-- <span data-ttu-id="b0dbd-169">已阅读 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-169">Yammer Read Message Count</span></span>
-- <span data-ttu-id="b0dbd-170">已赞 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="b0dbd-170">Yammer Liked Message Count</span></span>
+- <span data-ttu-id="c3bd0-169">已发布 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-169">Yammer Posted Message Count</span></span>
+- <span data-ttu-id="c3bd0-170">已阅读 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-170">Yammer Read Message Count</span></span>
+- <span data-ttu-id="c3bd0-171">已赞 Yammer 消息数</span><span class="sxs-lookup"><span data-stu-id="c3bd0-171">Yammer Liked Message Count</span></span>
 
-### <a name="json"></a><span data-ttu-id="b0dbd-171">JSON</span><span class="sxs-lookup"><span data-stu-id="b0dbd-171">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="c3bd0-172">JSON</span><span class="sxs-lookup"><span data-stu-id="c3bd0-172">JSON</span></span>
 
-<span data-ttu-id="b0dbd-172">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-172">If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object in the response body.</span></span>
+<span data-ttu-id="c3bd0-173">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-173">If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object in the response body.</span></span>
 
-<span data-ttu-id="b0dbd-173">由世纪互联运营的 Microsoft Graph 中国不支持**[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象中的以下属性:</span><span class="sxs-lookup"><span data-stu-id="b0dbd-173">The following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
+<span data-ttu-id="c3bd0-174">由世纪互联运营的 Microsoft Graph 中国不支持**[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象中的以下属性:</span><span class="sxs-lookup"><span data-stu-id="c3bd0-174">The following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:</span></span>
 
-- <span data-ttu-id="b0dbd-174">yammerPostedMessageCount</span><span class="sxs-lookup"><span data-stu-id="b0dbd-174">yammerPostedMessageCount</span></span>
-- <span data-ttu-id="b0dbd-175">yammerReadMessageCount</span><span class="sxs-lookup"><span data-stu-id="b0dbd-175">yammerReadMessageCount</span></span>
-- <span data-ttu-id="b0dbd-176">yammerLikedMessageCount</span><span class="sxs-lookup"><span data-stu-id="b0dbd-176">yammerLikedMessageCount</span></span>
+- <span data-ttu-id="c3bd0-175">yammerPostedMessageCount</span><span class="sxs-lookup"><span data-stu-id="c3bd0-175">yammerPostedMessageCount</span></span>
+- <span data-ttu-id="c3bd0-176">yammerReadMessageCount</span><span class="sxs-lookup"><span data-stu-id="c3bd0-176">yammerReadMessageCount</span></span>
+- <span data-ttu-id="c3bd0-177">yammerLikedMessageCount</span><span class="sxs-lookup"><span data-stu-id="c3bd0-177">yammerLikedMessageCount</span></span>
 
-<span data-ttu-id="b0dbd-177">此请求的默认页面大小为200个项目。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-177">The default page size for this request is 200 items.</span></span>
+<span data-ttu-id="c3bd0-178">此请求的默认页面大小为200个项目。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-178">The default page size for this request is 200 items.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b0dbd-178">示例</span><span class="sxs-lookup"><span data-stu-id="b0dbd-178">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c3bd0-179">示例</span><span class="sxs-lookup"><span data-stu-id="c3bd0-179">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="b0dbd-179">CSV</span><span class="sxs-lookup"><span data-stu-id="b0dbd-179">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="c3bd0-180">CSV</span><span class="sxs-lookup"><span data-stu-id="c3bd0-180">CSV</span></span>
 
-<span data-ttu-id="b0dbd-180">下面是输出 CSV 的示例。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-180">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="c3bd0-181">下面是输出 CSV 的示例。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-181">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b0dbd-181">请求</span><span class="sxs-lookup"><span data-stu-id="b0dbd-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c3bd0-182">请求</span><span class="sxs-lookup"><span data-stu-id="c3bd0-182">Request</span></span>
 
-<span data-ttu-id="b0dbd-182">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-182">The following is an example of the request.</span></span>
+<span data-ttu-id="c3bd0-183">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-183">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b0dbd-183">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b0dbd-183">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c3bd0-184">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="c3bd0-184">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365groupsactivitydetail_csv"
@@ -124,24 +125,24 @@ GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 ```http
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b0dbd-184">C#</span><span class="sxs-lookup"><span data-stu-id="b0dbd-184">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c3bd0-185">C#</span><span class="sxs-lookup"><span data-stu-id="c3bd0-185">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365groupsactivitydetail-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0dbd-185">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0dbd-185">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c3bd0-186">Javascript</span><span class="sxs-lookup"><span data-stu-id="c3bd0-186">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365groupsactivitydetail-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0dbd-186">目标-C</span><span class="sxs-lookup"><span data-stu-id="b0dbd-186">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c3bd0-187">目标-C</span><span class="sxs-lookup"><span data-stu-id="c3bd0-187">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365groupsactivitydetail-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="b0dbd-187">响应</span><span class="sxs-lookup"><span data-stu-id="b0dbd-187">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c3bd0-188">响应</span><span class="sxs-lookup"><span data-stu-id="c3bd0-188">Response</span></span>
 
-<span data-ttu-id="b0dbd-188">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-188">The following is an example of the response.</span></span>
+<span data-ttu-id="c3bd0-189">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-189">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -151,7 +152,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="b0dbd-189">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-189">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="c3bd0-190">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-190">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -163,19 +164,19 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="b0dbd-190">JSON</span><span class="sxs-lookup"><span data-stu-id="b0dbd-190">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="c3bd0-191">JSON</span><span class="sxs-lookup"><span data-stu-id="c3bd0-191">JSON</span></span>
 
-<span data-ttu-id="b0dbd-191">下面是一个返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-191">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="c3bd0-192">下面是一个返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-192">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b0dbd-192">请求</span><span class="sxs-lookup"><span data-stu-id="b0dbd-192">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c3bd0-193">请求</span><span class="sxs-lookup"><span data-stu-id="c3bd0-193">Request</span></span>
 
-<span data-ttu-id="b0dbd-193">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-193">The following is an example of the request.</span></span>
+<span data-ttu-id="c3bd0-194">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-194">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b0dbd-194">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b0dbd-194">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c3bd0-195">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="c3bd0-195">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getoffice365groupsactivitydetail_json"
@@ -184,26 +185,26 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
 ```http
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b0dbd-195">C#</span><span class="sxs-lookup"><span data-stu-id="b0dbd-195">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c3bd0-196">C#</span><span class="sxs-lookup"><span data-stu-id="c3bd0-196">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365groupsactivitydetail-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0dbd-196">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0dbd-196">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c3bd0-197">Javascript</span><span class="sxs-lookup"><span data-stu-id="c3bd0-197">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365groupsactivitydetail-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0dbd-197">目标-C</span><span class="sxs-lookup"><span data-stu-id="b0dbd-197">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c3bd0-198">目标-C</span><span class="sxs-lookup"><span data-stu-id="c3bd0-198">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365groupsactivitydetail-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="b0dbd-198">响应</span><span class="sxs-lookup"><span data-stu-id="b0dbd-198">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c3bd0-199">响应</span><span class="sxs-lookup"><span data-stu-id="c3bd0-199">Response</span></span>
 
-<span data-ttu-id="b0dbd-199">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-199">The following is an example of the response.</span></span>
+<span data-ttu-id="c3bd0-200">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-200">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b0dbd-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b0dbd-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c3bd0-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c3bd0-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -220,6 +221,7 @@ Content-Length: 674
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365GroupsActivityDetail)", 
   "value": [
     {
+      "groupId": "0003cf63-7ff3-4471-b24b-50ffbfb8b5d2",
       "reportRefreshDate": "2017-09-01", 
       "groupDisplayName": "groupDisplayName-value", 
       "isDeleted": false, 
