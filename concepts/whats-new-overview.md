@@ -12,7 +12,7 @@ ms.locfileid: "35731789"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
-你是否知道 Microsoft Graph 中的一些新功能源于开发人员社区的热门请求？ 
+你是否知道 Microsoft Graph 中的一些新功能来源于开发人员社区的热门请求？ 
 
 Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新功能：
 
