@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621135"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805258"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -71,6 +71,7 @@ ms.locfileid: "35621135"
 |[获取对话](../api/group-get-conversation.md) |[conversation](conversation.md)| 读取 conversation 对象的属性。|
 |[列出对话](../api/group-list-conversations.md) |[conversation](conversation.md) 集合| 获取 conversation 对象集合。|
 |[删除对话](../api/group-delete-conversation.md) |无|删除 conversation 对象。|
+|[创建线程](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| 创建新的对话线程。|
 |[获取线程](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| 读取 thread 对象的属性。|
 |[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
 |[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|

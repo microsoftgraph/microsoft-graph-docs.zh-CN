@@ -4,12 +4,12 @@ description: 日历中的事件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 0d8e25276613461098f2194daa60bf260cc7887b
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778465"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805268"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -102,7 +102,7 @@ ms.locfileid: "35778465"
 |categories|String collection|与事件相关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|事件的结束日期和时间。|
+|end|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间使用 UTC 格式。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
@@ -125,8 +125,8 @@ ms.locfileid: "35778465"
 |sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|定期系列主项的 ID（如果此事件是定期系列的一部分）。|
 |showAs|String|要显示的状态。 可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
-|start|[DateTimeTimeZone](datetimetimezone.md)|事件的开始时间。|
-|主题|String|事件的主题行文本。|
+|start|[DateTimeTimeZone](datetimetimezone.md)|事件的开始日期、时间和时区。 默认情况下，开始时间使用 UTC 格式。|
+|subject|String|事件的主题行文本。|
 |type|String|事件类型。 可取值为：`singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读|
 |uid|String|由不同日历间的所有事件实例共享的唯一标识符。 **注释：** 此属性与 v1.0 终结点上的[事件资源](/graph/api/resources/event?view=graph-rest-1.0)的 `iCalUid` 属性相同，但不能保证拥有相同的值。|
 |webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
