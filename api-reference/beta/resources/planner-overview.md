@@ -4,12 +4,12 @@ description: 你可以使用 Microsoft Graph 中的 Planner API 创建任务并�
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 29fdbe5403292638e8b6067a5e8b81d8e1bef250
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b09efbb6e20946f18a1a4fd6a4c7d4ea77319a52
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344606"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820680"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
@@ -25,7 +25,7 @@ Office 365 组是 Planner API 中的计划的所有者。
 若要[获取组所有的计划](../api/plannergroup-list-plans.md)，请发出以下 HTTP 请求。
 
 ``` http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 [创建新计划](../api/planner-post-plans.md)时，通过在计划对象上设置 `owner` 属性，可使组成为其所有者。 计划必须归组所有。
@@ -39,7 +39,7 @@ GET /groups/{id}/planner/plans
 若要[检索计划的任务](../api/plannerplan-list-tasks.md)，请发出以下 HTTP 请求。
 
 ``` http
-GET /planner/plans/{id}/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="tasks"></a>任务

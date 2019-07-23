@@ -4,12 +4,12 @@ description: 介绍 Microsoft Graph API 中登录资源 (实体) 的列表方法
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 44df448a514e173d4e22d615a27afdd07843593f
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 7e8499538ba5a5fa61159f4c1a5db68454dbf0d7
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778472"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820813"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -63,8 +63,8 @@ GET auditLogs/signIns
 |initiatedBy/user/userPrincipalName| eq、startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetails/浏览器| eq、startswith|
-|deviceDetails/操作系统| eq、startswith|
+|deviceDetail/browser| eq、startswith|
+|deviceDetail/operatingSystem| eq、startswith|
 |correlationId| eq|
 |isRisky| eq|
 

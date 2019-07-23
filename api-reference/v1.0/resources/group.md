@@ -4,12 +4,12 @@ description: '表示 Azure Active Directory (Azure AD) 组，可以是 Office 36
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 57587b183ccc15c4ebc46784161724d9cc7af773
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 170f89c0e7c4e701e8b98a5aac8c02404b174b4e
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620778"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805240"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -54,8 +54,9 @@ ms.locfileid: "35620778"
 |[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
 |[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 |[更新设置](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | 更新设置对象。 |
-|[删除设置](../api/groupsetting-delete.md) | 无 | 删除设置对象。 |
-|**日历**| | |
+|[删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
+|[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+|**Calendar**| | |
 |[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
 |[获取事件](../api/group-get-event.md) |[event](event.md)|读取 event 对象的属性。|
 |[列出事件](../api/group-list-events.md) |[event](event.md) 集合| 获取 event 对象集合。|
@@ -67,6 +68,7 @@ ms.locfileid: "35620778"
 |[获取对话](../api/group-get-conversation.md) |[conversation](conversation.md)| 读取 conversation 对象的属性。|
 |[列出对话](../api/group-list-conversations.md) |[conversation](conversation.md) 集合| 获取 conversation 对象集合。|
 |[删除对话](../api/group-delete-conversation.md) |无|删除 conversation 对象。|
+|[创建线程](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| 创建新的对话线程。|
 |[获取线程](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| 读取 thread 对象的属性。|
 |[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
 |[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
@@ -81,7 +83,9 @@ ms.locfileid: "35620778"
 |[获取设置](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 读取特定设置对象的属性。 |
 |[列出设置](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) 集合 | 列出所有设置对象的属性。 |
 |[更新设置](../api/groupsetting-update.md) | 无 | 更新 setting 对象。 |
-|[删除设置](../api/groupsetting-delete.md) | 无 | 删除设置对象。 |
+|[删除设置](../api/groupsetting-delete.md) | 无 | 删除 setting 对象。 |
+|[获取设置模板](../api/groupsettingtemplate-get.md) | 无 | 读取设置模板的属性。 |
+|[列出设置模板](../api/groupsettingtemplate-list.md) | 无 | 列出所有设置模板的属性。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|

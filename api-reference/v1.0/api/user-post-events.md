@@ -2,20 +2,20 @@
 title: 创建事件
 description: 在用户的默认日历或指定日历中创建事件。
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1c79fad8e5ec6265d98acf3d16f99d869eaa6db8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: fe9864474a83a827430b539d80127441b548ecb1
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460124"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805093"
 ---
 # <a name="create-event"></a>创建事件
 
 在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
 
-可以将事件的各开始和结束时间的时区指定为这些值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 
+可以将事件的各开始和结束时间的时区指定为其值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
 发送事件时，服务器会向所有与会者发送邀请。
 

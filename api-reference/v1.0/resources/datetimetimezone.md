@@ -2,12 +2,14 @@
 title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
 localization_priority: Priority
-ms.openlocfilehash: 9e031b053ebc185ee02fa11571019529a870cf04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 5927c10a99b91e0130b8ceb30c33ae1fa19af3dd
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574769"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805051"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -17,9 +19,13 @@ ms.locfileid: "32574769"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |dateTime|字符串|日期和时间组合表示形式的单个时间点（`{date}T{time}`；例如 `2017-08-29T04:00:00.0000000`）。|
-|timeZone|字符串|以下时区名称之一。|
+|timeZone|String|表示时区，例如“太平洋标准时间”。 有关更多可能的值，请参见下文。|
 
-_TimeZone_ 属性可以设置为 Windows 支持的任意时区，以及以下时区名称。
+通常，**timeZone** 属性_可以_ 设置为 [Windows 当前支持的任意时区](https://docs.microsoft.com/zh-CN/windows-hardware/manufacture/desktop/default-time-zones)，以及[日历 API 支持的其他时区](#additional-time-zones)。 
+
+将 **dateTimeTimeZone** 与某一方法（例如[创建](../api/user-post-events.md)或[更新](../api/event-update.md)事件）结合使用时，请注意支持的实际时区，这可能是一个较小的子集。
+
+### <a name="additional-time-zones"></a>其他时区
 
 Etc/GMT+12
 

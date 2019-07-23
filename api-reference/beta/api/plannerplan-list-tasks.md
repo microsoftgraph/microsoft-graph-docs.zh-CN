@@ -1,21 +1,21 @@
 ---
 title: 列出任务
-description: 检索与 plannerPlan 对象关联的 **plannertask** 对象的列表。
+description: 检索与 plannerPlan 对象关联的**plannerTask**对象的列表。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d6ffb5b9c8c1173d768f997efea31d415338bb9d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cdffe20f835a0cea1166e6111a69a84e85c8d645
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445819"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820750"
 ---
 # <a name="list-tasks"></a>列出任务
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与 [plannerPlan](../resources/plannerplan.md) 对象关联的 **plannertask** 对象的列表。
+检索与[plannerPlan](../resources/plannerplan.md)对象关联的[plannerTask](../resources/plannertask.md)对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "35445819"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/<id>/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -41,7 +41,7 @@ GET /planner/plans/<id>/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [plannerTask](../resources/plannertask.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[plannerTask](../resources/plannertask.md)对象集合。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -72,7 +72,9 @@ GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

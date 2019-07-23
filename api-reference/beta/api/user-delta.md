@@ -1,15 +1,15 @@
 ---
 title: 'user: delta'
-description: 获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。 有关详细信息，请参阅“跟踪更改”。
+description: 获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f6d940617e85715b1986f417993d956eab283c0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 05e0e6addf6b075621d6e66467d2fbb4fbfa8af4
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450889"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820820"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -68,7 +68,7 @@ GET /users/delta
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
-### <a name="response"></a>响应
+## <a name="response"></a>响应
 
 如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](../resources/user.md)集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
@@ -80,7 +80,7 @@ GET /users/delta
   - 这表示未返回关于资源现有状态的更多数据。 保存并使用 `deltaLink` URL 来了解下一轮资源更改。
   - 只有对于在签发 `deltaLink` 之后更改的属性，你才可以选择指定 `Prefer:return=minimal` 标头以包含在响应值中。
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认：返回与初始 Delta 请求相同的属性
+### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认：返回与初始 Delta 请求相同的属性
 
 默认情况下，使用 `deltaLink` 或 `nextLink` 的请求将通过以下方式返回与初始 Delta 查询中选择的相同属性：
 
@@ -89,20 +89,22 @@ GET /users/delta
 - 如果之前从未设置属性，则它不会包括在响应中。
 
 
-> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外，Delta 响应往往过大，因为它们包含所有属性值，如下面的[第二个示例](#request-2)所示。
+> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外, delta 响应由于包含所有属性值 (如[示例 2](#example-2-selecting-three-properties)中所示), 因此变大。
 
-#### <a name="alternative-return-only-the-changed-properties"></a>备用：仅返回更改的属性
+### <a name="alternative-return-only-the-changed-properties"></a>备用：仅返回更改的属性
 
 添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：
 
 - 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
 - 如果属性未更改，则该属性不会包括在响应中。 （不同于默认行为。）
 
-> **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅下面的[第三个示例](#request-3)。
+> **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅[示例 3](#example-3-alternative-minimal-response-behavior)。
 
-### <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-#### <a name="request-1"></a>请求 1
+### <a name="example-1-default-properties"></a>示例 1: 默认属性
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。 没有 `$select` 参数，因为将跟踪并返回默认的属性集。
 
@@ -130,7 +132,7 @@ GET https://graph.microsoft.com/beta/users/delta
 ---
 
 
-#### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
@@ -170,9 +172,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-2"></a>请求 2
+### <a name="example-2-selecting-three-properties"></a>示例 2: 选择三个属性
 
-下一个示例所示为通过默认响应行为选择 3 种更改跟踪属性时的初始请求：
+#### <a name="request"></a>请求
+
+下一个示例显示了使用默认响应行为选择三个更改跟踪属性的初始请求。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
@@ -198,9 +202,9 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 ---
 
 
-#### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，所有 3 种属性将包括在响应中，并且无法知道在获得 `deltaLink` 之后发生更改的属性。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意, 所有这三个属性都包含在响应中, 并且不知道是在获取之后`deltaLink`更改的。
 
 <!-- {
   "blockType": "response",
@@ -226,9 +230,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-3"></a>请求 3
+### <a name="example-3-alternative-minimal-response-behavior"></a>示例 3: 替代最小响应行为
 
-下一个示例所示为通过备用最小响应行为选择 3 种更改跟踪属性时的初始请求：
+#### <a name="request"></a>请求
+
+下一个示例显示了使用可选的最小响应行为选择三个更改跟踪属性的初始请求。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
@@ -255,7 +261,7 @@ Prefer: return=minimal
 ---
 
 
-#### <a name="response-3"></a>响应 3
+#### <a name="response"></a>响应
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，`mobilePhone` 属性不包括在内，这意味着它在上一轮 Delta 查询之后未发生更改；并且 `displayName` 和 `jobTitle` 将包括在内，这意味着其值已发生更改。
 
@@ -281,6 +287,7 @@ Content-type: application/json
   ]
 }
 ```
+## <a name="see-also"></a>另请参阅
 
 - [使用 Delta 查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)。
 - [获取用户的增量更改](/graph/delta-query-users)。

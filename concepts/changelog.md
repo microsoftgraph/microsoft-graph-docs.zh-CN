@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d294584e402875980cee1fd0ca2666c68256681
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778745"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805233"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -46,12 +46,7 @@ ms.locfileid: "35778745"
 |添加项|beta|向 [windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta) 复杂类型添加了 **edgeTraversal** 属性|
 |添加项|beta|向 [secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta) 枚举类型添加了 **localGuestAccount** 成员|
 |添加项|beta|向 [vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) 枚举类型添加了 **empty** 和 **clientCertificateSubjectName** 成员|
-
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
-
-|更改类型|版本|说明|
-|:---|:---|:---|
-|添加|beta|将 **revision** 属性添加到了 [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) 实体|
+|添加项|beta|将 **revision** 属性添加到了 [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) 实体|
 |添加项|beta|将 **valuePrefix** 属性添加到了 [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) 实体|
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
@@ -65,12 +60,21 @@ ms.locfileid: "35778745"
 |:----------------|:------------|:-----------------------------------------|
 | 添加项 | v1.0 | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，用于获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-1.0) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) 资源。 |
 | 添加项 | beta | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，用于获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-beta) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) 资源。 |
+| 添加项 | v1.0 | 在[组](/graph/api/group-delta?view=graph-rest-1.0)中添加了 [group:validateProperties 函数](/graph/api/group-validateproperties?view=graph-rest-1.0)和 [directoryobject:validateProperties 函数](/graph/api/group-validateproperties?view=graph-rest-1.0)，用于验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+
+### <a name="reports"></a>报告
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemCount** 属性。|
+| 添加项        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemSizeInBytes** 属性。|
+| 添加项        | Beta  | 向 [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) 实体添加了 **groupId** 属性。|
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 添加了对[列出频道消息](/api-reference/beta/api/channel-list-messages.md)，[获取频道消息](/api-reference/beta/api/channel-get-message.md)，[列出消息回复](/api-reference/beta/api/channel-list-messagereplies.md)，以及[获取消息回复的应用程序权限的支持。 |
+| 添加项 | beta | 添加了对[列出频道消息](/api-reference/beta/api/channel-list-messages.md)，[获取频道消息](/api-reference/beta/api/channel-get-message.md)，[列出消息回复](/api-reference/beta/api/channel-list-messagereplies.md)，以及[获取消息回复](/api-reference/beta/api/channel-get-messagereply.md)的应用程序权限的支持。 |
 | 添加项 | beta | 添加了对[在聊天中列出消息](/api-reference/beta/api/chatmessage-list.md)和[在聊天中获取消息](/api-reference/beta/api/chatmessage-get.md)的应用程序权限的支持。 |
 
 ## <a name="june-2019"></a>2019 年 6 月
@@ -594,7 +598,7 @@ ms.locfileid: "35778745"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/zh-CN/graph/api/group-list-transitivemembers?view=graph-rest-beta)。|
+| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/zh-CN/graph/api/resources/group?view=graph-rest-beta)。|
 | 添加项 | beta | 添加了新资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。|
 | 添加 | beta | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 `createdDateTime` 属性。|
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|
@@ -2000,7 +2004,7 @@ ms.locfileid: "35778745"
 |更改内容|Beta|将 **subscriberCarrier**、**meid**、**totalStorageSpaceInBytes** 和 **freeStorageSpaceInBytes** 属性添加到 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体|
 |更改内容|Beta|将 **enrollmentType** 属性从 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体删除|
 |更改内容|Beta|将 **versionNumber** 和 **buildNumber** 属性添加到 [managedIOSLobApp](/graph/api/resources/intune-apps-managedioslobapp?view=graph-rest-beta) 实体|
-|更改内容|Beta|将 **displayVersion** 属性添加到 [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta) 实体|
+|更改|Beta|将 **displayVersion** 属性添加到 [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta) 实体|
 |更改内容|Beta|将 **defaultDeviceEnrollmentRestrictions**、**defaultDeviceEnrollmentWindowsHelloForBusinessSettings** 和 **defaultDeviceEnrollmentLimit** 属性从 [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) 实体删除|
 |更改内容|Beta|将 **isAssigned** 属性添加到 [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta) 实体|
 |更改内容|Beta|将 **isAssigned** 属性添加到 [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-beta) 实体|

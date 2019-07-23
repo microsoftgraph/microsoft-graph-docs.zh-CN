@@ -4,12 +4,12 @@ description: 从群组的默认日历中，获取由时间范围定义的日历�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a3a1352ada3adac6ae87f1c98b5fbdb546298b9e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 860a7e398727cad1d3158645990237c4786cc3be
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440503"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820702"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -40,7 +40,10 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 |startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
 
-此方法还支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法还支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+
+> [!NOTE] 
+> [事件](../resources/event.md)的`$select` **createdDateTime**和**lastModifiedDateTime**属性不支持。 若要获取它们的值, 只**** 需查询 calendarView `$select`而无需应用。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |

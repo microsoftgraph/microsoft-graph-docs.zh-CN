@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory 对象。**directoryObject** 类型�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b71de12ba6a0053cd97749fd72dc22f7ab961539
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: ae7340d273a2a02673fdfe5115e602f24680c221
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658027"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805205"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "34658027"
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
 
 ## <a name="properties"></a>属性
 

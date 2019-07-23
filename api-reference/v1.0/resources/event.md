@@ -4,12 +4,12 @@ description: 日历中的事件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 0be46df98faf4540e221a140daf0ec22355fc24a
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 887674cb70f5c3247d4a617f6ab6f591340bd0c4
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778724"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805275"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -64,7 +64,7 @@ ms.locfileid: "35778724"
 |categories|String collection|与事件相关联的类别。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
+|end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间为 UTC 时间。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。 只读。|
 |id|String| 只读。|
@@ -88,7 +88,7 @@ ms.locfileid: "35778724"
 |sensitivity|敏感度| 可能的值包括 `normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|定期系列主项的 ID（如果此事件是定期系列的一部分）。|
 |showAs|freeBusyStatus|要显示的状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
-|start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。|
+|start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。 默认情况下，开始时间为 UTC 时间。|
 |subject|String|事件的主题行文本。|
 |type|eventType|事件类型。 可能的值包括 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读。|
 |webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
