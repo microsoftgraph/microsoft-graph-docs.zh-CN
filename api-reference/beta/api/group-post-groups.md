@@ -4,12 +4,12 @@ description: 创建新的 Office 365 组或安全组。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: cee571584f37feece435892caef0b0c648d13184
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fdce0d9422f15a72d8857372c7685e58e70c802c
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440279"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820645"
 ---
 # <a name="create-group"></a>创建组
 
@@ -63,13 +63,13 @@ POST /groups
 
 由于**组**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `POST` 操作，并在创建组时向其添加含有自己的数据的自定义属性。
 
->**注意：** 以编程方式创建 Office 365 组时，若未提供用户上下文且未指定所有者，则将以匿名方式创建组。  这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
+>**注意：** 以编程方式创建 Office 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
 
-根据需要为你的组指定其他可写属性。有关详细信息，请参阅[组](../resources/group.md)资源的属性。
+根据需要为你的组指定其他可写属性。 有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
 ### <a name="grouptypes-options"></a>groupTypes 选项
 
-使用 **groupTypes** 属性来控制组的类型及其成员身份，如下所示：
+使用 **groupTypes** 属性来控制组的类型及其成员身份，如图所示。
 
 | 组类型 | 已分配成员身份 | 动态成员身份 |
 |:--------------|:------------------------|:---------------|
@@ -78,13 +78,13 @@ POST /groups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
+如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-an-office-365-group"></a>示例 1：创建 Office 365 组
 
-以下示例将创建一个 Office 365 组。
+以下示例将创建 Office 365 组。
 
 #### <a name="request"></a>请求
 

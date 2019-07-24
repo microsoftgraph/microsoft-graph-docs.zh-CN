@@ -4,12 +4,12 @@ description: '创建请求正文中指定的新组。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: b1fca0941b04099be02e2f9929c0683655dfeaa1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f6b911e0e3e602ce96c10cab22a27ed26788df6e
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456405"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820603"
 ---
 # <a name="create-group"></a>创建组
 创建请求正文中指定的新组。 你可以创建以下类型的组：
@@ -21,7 +21,7 @@ ms.locfileid: "35456405"
 
 若要获取_非_默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
 
-> **注意**：虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
+> **注意：** 虽然 Microsoft Teams 是在 Office 365 组的基础之上构建而成，但暂不能通过此 API 创建团队。 可以使用其他组 API 来管理已在 Microsoft Teams UI 中创建的团队。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -60,11 +60,11 @@ POST /groups
 
 根据需要为你的组指定其他可写属性。 有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
->**注意：** 以编程方式创建 Office 365 组时，若未提供用户上下文且未指定所有者，则将以匿名方式创建组。  这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
+>**注意：** 以编程方式创建 Office 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
 
 ### <a name="grouptypes-options"></a>groupTypes 选项
 
-使用 **groupTypes** 属性来控制组的类型及其成员身份，如下所示：
+使用 **groupTypes** 属性来控制组的类型及其成员身份，如图所示。
 
 | 组类型 | 已分配成员身份 | 动态成员身份 |
 |:--------------|:------------------------|:---------------|
@@ -72,7 +72,7 @@ POST /groups
 | 动态 | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
+如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [group](../resources/group.md) 对象。 该响应仅包括组的默认属性。
 
 ## <a name="examples"></a>示例
 

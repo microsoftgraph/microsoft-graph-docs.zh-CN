@@ -761,6 +761,18 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: 获取多值属性
                       href: api/multivaluelegacyextendedproperty-get.md
+            - name: 带来
+              items:
+                - name: 带来
+                  href: resources/place.md
+                - name: 会议室资源
+                  href: resources/room.md
+                - name: 会议室列表资源
+                  href: resources/roomlist.md
+                - name: 列表位置
+                  href: api/place-list.md
+                - name: 获取位置
+                  href: api/place-get.md
         - name: 呼叫和联机会议
           displayName: Microsoft Teams
           items:
@@ -811,8 +823,10 @@
                       href: api/participant-invite.md
                 - name: 更改屏幕共享角色
                   href: api/call-changescreensharingrole.md
-                - name: 自行取消静音
+                - name: 取消应用程序静音
                   href: api/call-unmute.md
+                - name: 静音应用程序
+                  href: api/call-mute.md
                 - name: 更新元数据
                   href: api/call-updatemetadata.md
                 - name: 音频路由组
@@ -1033,7 +1047,7 @@
                 - name: Android for Work 移动应用配置
                   href: resources/intune-apps-androidforworkmobileappconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-androidforworkmobileappconfiguration-list.md
                     - name: 获取
                       href: api/intune-apps-androidforworkmobileappconfiguration-get.md
@@ -1063,7 +1077,7 @@
                 - name: Android LOB 应用
                   href: resources/intune-apps-androidlobapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-androidlobapp-list.md
                     - name: 获取
                       href: api/intune-apps-androidlobapp-get.md
@@ -1266,7 +1280,7 @@
                 - name: iOS 应用商店应用
                   href: resources/intune-apps-iosstoreapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-iosstoreapp-list.md
                     - name: 获取
                       href: api/intune-apps-iosstoreapp-get.md
@@ -1281,7 +1295,7 @@
                 - name: iOS VPP 应用
                   href: resources/intune-apps-iosvppapp.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-iosvppapp-list.md
                     - name: 获取
                       href: api/intune-apps-iosvppapp-get.md
@@ -1680,7 +1694,7 @@
                 - name: 移动应用内容文件
                   href: resources/intune-apps-mobileappcontentfile.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-mobileappcontentfile-list.md
                     - name: 获取
                       href: api/intune-apps-mobileappcontentfile-get.md
@@ -1716,7 +1730,7 @@
                 - name: 移动应用安装状态
                   href: resources/intune-apps-mobileappinstallstatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-mobileappinstallstatus-list.md
                     - name: 获取
                       href: api/intune-apps-mobileappinstallstatus-get.md
@@ -1878,7 +1892,7 @@
                 - name: Win32 LOB 应用
                   href: resources/intune-apps-win32lobapp.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-win32lobapp-list.md
                     - name: 获取
                       href: api/intune-apps-win32lobapp-get.md
@@ -1931,7 +1945,7 @@
                 - name: Windows APPX
                   href: resources/intune-apps-windowsappx.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-windowsappx-list.md
                     - name: 获取
                       href: api/intune-apps-windowsappx-get.md
@@ -2128,7 +2142,7 @@
                 - name: 条款和条件组分配
                   href: resources/intune-companyterms-termsandconditionsgroupassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-companyterms-termsandconditionsgroupassignment-list.md
                     - name: 获取
                       href: api/intune-companyterms-termsandconditionsgroupassignment-get.md
@@ -2144,7 +2158,7 @@
                 - name: Active Directory Windows Autopilot Deployment 配置文件
                   href: resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-list.md
                     - name: 获取
                       href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-get.md
@@ -2322,7 +2336,7 @@
                 - name: 已导入的 Windows Autopilot 设备标识
                   href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                     - name: 获取
                       href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -2362,7 +2376,7 @@
                 - name: Windows Autopilot Deployment 配置文件分配
                   href: resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-list.md
                     - name: 获取
                       href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-get.md
@@ -2562,14 +2576,14 @@
                 - name: Android for Work 证书配置文件基础
                   href: resources/intune-deviceconfig-androidforworkcertificateprofilebase.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md
                 - name: Android for Work 符合性策略
                   href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -2781,7 +2795,7 @@
                 - name: Android PKCS 证书配置文件
                   href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -2796,7 +2810,7 @@
                 - name: Android SCEP 证书配置文件
                   href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -2991,7 +3005,7 @@
                 - name: Android 工作配置文件 VPN 配置
                   href: resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md
@@ -3006,7 +3020,7 @@
                 - name: Android 工作配置文件 Wi-Fi 配置
                   href: resources/intune-deviceconfig-androidworkprofilewificonfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-androidworkprofilewificonfiguration-get.md
@@ -3200,7 +3214,7 @@
                 - name: 设备合规性策略
                   href: resources/intune-deviceconfig-devicecompliancepolicy.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-devicecompliancepolicy-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancepolicy-get.md
@@ -3213,7 +3227,7 @@
                 - name: 设备符合性策略分配
                   href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
@@ -3626,7 +3640,7 @@
                 - name: 组策略演示文稿下拉列表
                   href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
@@ -3654,7 +3668,7 @@
                 - name: 组策略演示文稿长小数位数文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-get.md
@@ -3838,7 +3852,7 @@
                 - name: iOS 自定义配置
                   href: resources/intune-deviceconfig-ioscustomconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-ioscustomconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-ioscustomconfiguration-get.md
@@ -3864,7 +3878,7 @@
                 - name: iOS 设备功能配置
                   href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
@@ -4477,7 +4491,7 @@
                 - name: 受限的应用冲突
                   href: resources/intune-deviceconfig-restrictedappsviolation.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-restrictedappsviolation-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-restrictedappsviolation-get.md
@@ -4500,7 +4514,7 @@
                 - name: 设置状态设备摘要
                   href: resources/intune-deviceconfig-settingstatedevicesummary.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-settingstatedevicesummary-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-settingstatedevicesummary-get.md
@@ -4693,7 +4707,7 @@
                 - name: Windows 10 EAS 电子邮件配置文件配置
                   href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
@@ -4708,7 +4722,7 @@
                 - name: Windows 10 Endpoint Protection 配置
                   href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -4907,7 +4921,7 @@
                 - name: Windows 8.1 信任的根证书
                   href: resources/intune-deviceconfig-windows81trustedrootcertificate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-windows81trustedrootcertificate-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows81trustedrootcertificate-get.md
@@ -4920,7 +4934,7 @@
                 - name: Windows 8.1 VPN 配置
                   href: resources/intune-deviceconfig-windows81vpnconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-windows81vpnconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-windows81vpnconfiguration-get.md
@@ -6406,7 +6420,7 @@
                 - name: iOS 受管理的应用保护
                   href: resources/intune-mam-iosmanagedappprotection.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-iosmanagedappprotection-list.md
                     - name: 获取
                       href: api/intune-mam-iosmanagedappprotection-get.md
@@ -6419,7 +6433,7 @@
                 - name: iOS 托管的应用注册
                   href: resources/intune-mam-iosmanagedappregistration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-mam-iosmanagedappregistration-list.md
                     - name: 获取
                       href: api/intune-mam-iosmanagedappregistration-get.md
@@ -6622,7 +6636,7 @@
                 - name: Windows 信息保护设备注册
                   href: resources/intune-mam-windowsinformationprotectiondeviceregistration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-list.md
                     - name: 获取
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-get.md
@@ -6641,7 +6655,7 @@
                 - name: Windows 信息保护网络学习摘要
                   href: resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
                     - name: 获取
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
@@ -6841,7 +6855,7 @@
                 - name: 组织
                   href: resources/intune-onboarding-organization.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-onboarding-organization-list.md
                     - name: 获取
                       href: api/intune-onboarding-organization-get.md
@@ -6852,7 +6866,7 @@
                 - name: 侧加载密钥
                   href: resources/intune-onboarding-sideloadingkey.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-onboarding-sideloadingkey-list.md
                     - name: 获取
                       href: api/intune-onboarding-sideloadingkey-get.md
@@ -7706,7 +7720,7 @@
                 - name: 业务流模板
                   href: resources/businessflowtemplate.md
                   items:
-                    - name: List
+                    - name: 列出
                       href: api/businessflowtemplate-list.md
                 - name: 程序
                   href: resources/program.md
@@ -7715,7 +7729,7 @@
                       href: api/program-create.md
                     - name: 删除
                       href: api/program-delete.md
-                    - name: 列出
+                    - name: List
                       href: api/program-list.md
                     - name: 更新
                       href: api/program-update.md
@@ -8028,6 +8042,57 @@
                   href: api/oauth2permissiongrant-update.md
                 - name: 删除 oauth2 权限授予
                   href: api/oauth2permissiongrant-delete.md
+            - name: 内部部署发布
+              href: resources/onpremisespublishingprofile-root.md
+              items:
+                - name: 内部部署代理
+                  href: resources/onpremisesagent.md
+                  items:
+                    - name: 列表
+                      href: api/onpremisesagent-list.md
+                    - name: 获取
+                      href: api/onpremisesagent-get.md
+                    - name: 分配给代理组
+                      href: api/onpremisesagent-post-agentgroups.md
+                    - name: 从代理组中删除
+                      href: api/onpremisesagent-delete-agentgroups.md
+                - name: 内部部署代理组
+                  href: resources/onpremisesagentgroup.md
+                  items:
+                    - name: 列表
+                      href: api/onpremisesagentgroup-list.md
+                    - name: 获取
+                      href: api/onpremisesagentgroup-get.md
+                    - name: 创建
+                      href: api/onpremisesagentgroup-post.md
+                    - name: 更新
+                      href: api/onpremisesagentgroup-update.md
+                    - name: 删除
+                      href: api/onpremisesagentgroup-delete.md
+                - name: 本地发布配置文件
+                  href: resources/onpremisespublishingprofile.md
+                  items:
+                    - name: 获取
+                      href: api/onpremisespublishingprofile-get.md
+                    - name: 更新
+                      href: api/onpremisespublishingprofile-update.md
+                - name: 已发布资源
+                  href: resources/publishedresource.md
+                  items:
+                    - name: 列表
+                      href: api/publishedresource-list.md
+                    - name: 获取
+                      href: api/publishedresource-get.md
+                    - name: 创建
+                      href: api/publishedresource-post.md
+                    - name: 更新
+                      href: api/publishedresource-update.md
+                    - name: 删除
+                      href: api/publishedresource-delete.md
+                    - name: 分配给代理组
+                      href: api/publishedresource-post-agentgroups.md
+                    - name: 从代理组中删除
+                      href: api/publishedresource-delete-agentgroups.md
             - name: 组织
               href: resources/organization.md
               items:
@@ -8163,7 +8228,7 @@
                     - name: 托管的资源
                       href: resources/governanceresource.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/governanceresource-list.md
                         - name: 获取
                           href: api/governanceresource-get.md
@@ -9420,9 +9485,9 @@
             - name: Outlook 任务组
               href: resources/outlooktaskgroup.md
               items:
-                - name: List
+                - name: 列出
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-taskgroups.md
                 - name: 获取
                   href: api/outlooktaskgroup-get.md

@@ -2,19 +2,25 @@
 title: onPremisesPublishing 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 8531a68ad56dad0f44ef8cd55e9fabeff47a6c2e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: resourcePageType
+ms.openlocfilehash: ff5ca6afc76ab60ab82f045d0309832e34e8d708
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341786"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840766"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+一个**onPremisesPublishing**对象, 表示用于发布内部部署[应用程序](application.md)的属性集。
+
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+| 属性|类型|说明|
 |:---------------|:--------|:----------|
 |customDomainCertificate|String|使用自定义域时与应用程序关联的证书的详细信息。 使用默认域时为 Null。|
 |externalAuthenticationType|String|详细说明应用程序的预身份验证设置可能的值为`passthru`: `aadPreAuthentication`、。|
@@ -50,7 +56,7 @@ ms.locfileid: "33341786"
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2019-02-04 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",

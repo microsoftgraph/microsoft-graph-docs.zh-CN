@@ -1,23 +1,26 @@
 ---
 title: 添加成员
-description: 使用此 API 可以通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
+description: 通过**members**导航属性将成员添加到 Office 365 组或安全组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9ed8ef9f054a9d0c7a69ab21067664b7fd2f6853
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a735b65e1b391e77c270b861a551cc833d9f12e2
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440258"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840731"
 ---
 # <a name="add-member"></a>添加成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可以通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
+通过**members**导航属性将成员添加到 Office 365 组或安全组。
 
-可以添加用户或其他组。 重要说明：只能将用户添加到 Office 365 组。
+可以添加用户或其他组。 
+
+> [!Important]
+> 只能将用户添加到 Office 365 组中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,9 +38,9 @@ POST /groups/{id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称 | 说明|
+|:---- |:-----------|
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 JSON 表示形式。
@@ -46,7 +49,7 @@ POST /groups/{id}/members/$ref
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
@@ -75,7 +78,7 @@ Content-length: 30
 
 在请求正文中, 提供要添加的[directoryObject](../resources/directoryobject.md)、 `id` [USER](../resources/user.md)或[group](../resources/group.md)对象的 JSON 表示形式。
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面是一个响应示例。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {

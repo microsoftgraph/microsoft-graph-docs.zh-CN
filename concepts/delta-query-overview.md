@@ -3,12 +3,12 @@ title: 使用增量查询跟踪 Microsoft Graph 数据更改
 description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 9c040ad61902dd623ffc2010716e6a843c4d1a38
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750190"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820799"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -44,7 +44,14 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
-如果客户使用查询参数，则它必须在初始请求中指定。Microsoft Graph 自动将指定参数编码为响应中提供的 `nextLink` 或 `deltaLink`。调用应用程序只需预先指定其所需的查询参数一次。Microsoft Graph 将为所有后续请求自动添加指定参数。
+如果客户使用查询参数，则它必须在初始请求中指定。Microsoft Graph 自动将指定参数编码为响应中提供的 `nextLink` 或 `deltaLink`。调用应用程序只需预先指定查询参数一次。Microsoft Graph 将为所有后续请求自动添加指定参数。
+
+请注意以下相关可选查询参数：
+
+- `$orderby` 不是增量查询支持的查询参数。
+ - 不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `nextLink` 序列的任意位置，并以合并逻辑进行处理。
+
+对于用户和组，以下限制适用于使用某些查询参数：
 
 对于用户和组，在使用某些查询参数时受到限制：
 

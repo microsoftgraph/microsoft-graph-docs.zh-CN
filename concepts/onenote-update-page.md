@@ -1,22 +1,22 @@
 ---
-title: 更新 OneNote 页内容
+title: 更新 OneNote 页面内容
 description: " Office 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 97a9acb8244446191b09d99753e30d94c47c4f1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 939875ce060abeb4a76d33bea68b3e3bbb49a203
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555246"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840759"
 ---
 # <a name="update-onenote-page-content"></a>更新 OneNote 页内容
 
 **适用于** OneDrive 上的消费者笔记本 | Office 365 上的企业级笔记本
 
 
-若要更新 OneNote 页内容，请向此页的 *content* 终结点发送 PATCH 请求：
+若要更新 OneNote 页面的内容，请向此页面的 *content* 终结点发送 PATCH 请求：
 
 `PATCH ../notes/pages/{id}/content`</p>
 
@@ -25,7 +25,7 @@ ms.locfileid: "32555246"
 
 <a name="request-uri"></a>
 
-## <a name="construct-the-request-uri"></a>构造请求 URI
+## <a name="construct-the-request-uri"></a>构建请求 URI
 
 若要构建请求 URI，请从服务根 URL 开始：
 
@@ -58,13 +58,16 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 
 以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。
 
+> [!NOTE]
+> 在更新 OneNote 页面上的图像时, 不能使用 www 链接。 服务不会尝试下载随机资源。 相反, 图像必须是请求的一部分, 或者是通过图像数据 url 或多部分请求的部分名称。
+
 ```json
 [
    {
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url-or-part-name" alt="Image above the target paragraph" />'
+    'content':'<img src="image-data-url-or-part-name" alt="Image above the target paragraph" />'
   }, 
   {
     'target':'#list-id',
@@ -139,8 +142,8 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 - 对于 **append** 和 **insert** 操作，可以使用任一 ID 作为目标值。
 - 对于 **replace** 操作，必须为除页标题及 div 中的图像和对象之外的所有元素使用生成的 ID。 
-    - 若要替换标题，请使用 **title** 关键字。 
-    - 若要替换 div 中的图像和对象，请使用 **data-id** 或 **id**。
+  - 若要替换标题，请使用 **title** 关键字。 
+  - 若要替换 div 中的图像和对象，请使用 **data-id** 或 **id**。
 
 以下示例为目标使用了 **id** 值。 不要将 # 前缀用于生成的 ID。
 
@@ -280,7 +283,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
      'target':'#para1',
      'action':'insert',
      'position':'before',
-     'content':'<img src="image-url-or-part-name" alt="Image inserted above the target" />'
+     'content':'<img src="image-data-url-or-part-name" alt="Image inserted above the target" />'
   },
   {
     'target':'#para2',
@@ -384,7 +387,7 @@ Authorization: Bearer {token}
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url" alt="New image from a URL" />'
+    'content':'<img src="image-data-url" alt="New image from a URL" />'
   }, 
   {
     'target':'#list-id',
