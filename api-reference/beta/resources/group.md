@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: 81a87d1ec6575516e12edab99ee205056b8b4593
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805258"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840745"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -57,7 +57,6 @@ ms.locfileid: "35805258"
 |[删除设置](../api/directorysetting-delete.md) | 无 |删除 setting 对象。 |
 |[List endpoints](../api/group-list-endpoints.md) |[endpoint](endpoint.md) 集合| 获取 endpoint 对象集合。 |
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
-|[delta](../api/group-delta.md)|组集合| 获取组的增量更改。 |
 |[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 | 
 |**Calendar**| | |
 |[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
