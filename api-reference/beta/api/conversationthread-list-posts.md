@@ -4,12 +4,12 @@ description: '获取指定线程的帖子。 您可以同时指定父对话和�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: eaa5dc4a0184980d69327209aabd9dbbc12ce75d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ba48a498738e2b819995e87882dd2194f29c0d0b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437377"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862898"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-posts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-posts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

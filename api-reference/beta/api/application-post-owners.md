@@ -4,18 +4,20 @@ description: 使用此 API 创建新的所有者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3a0270d18856b32b6298ab66740ec754123dbbd8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 7c7ace73e1d6a2db3bac4502f9ddae6f4f0c0e1f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439586"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856769"
 ---
 # <a name="create-owner"></a>创建所有者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的所有者。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,24 +30,24 @@ ms.locfileid: "35439586"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/owners
+POST /applications/{id}/owners/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。  |
+| 名称 | 说明|
+|:---- |:---------- |
+| Authorization | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
+在请求正文中, 提供要作为所有者分配的目录对象的标识符。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面为请求示例。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
@@ -53,14 +55,14 @@ POST /applications/{id}/owners
   "name": "create_directoryobject_from_application"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/owners
+POST https://graph.microsoft.com/beta/applications/{id}/owners/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+"@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
+
 ```
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-application-javascript-snippets.md)]
@@ -68,24 +70,19 @@ Content-length: 30
 
 ---
 
-在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

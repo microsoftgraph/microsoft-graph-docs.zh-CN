@@ -4,12 +4,12 @@ description: 更新课程属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 54e8c9f446b604beb9856389697dd0003b4c18f3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ac3ce20d4536a37d56988d72a0bbf69ff691930d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449902"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881496"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -77,6 +77,10 @@ Content-length: 224
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationclass-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

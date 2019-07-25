@@ -4,12 +4,12 @@ description: 更新 event 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 36f7c643bd843f20488304dbc365455c01877354
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: 3a54fbeaf896633541ef20c3120add56d086565c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805065"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859421"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -120,6 +120,10 @@ Content-length: 285
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

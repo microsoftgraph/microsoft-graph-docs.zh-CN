@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 签出文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: acb10e216cbf4537bee78ac7ad9562d2ebdb062f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e92af4dea2e5b0678e72bc3311042acba9266a5b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436492"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861402"
 ---
 # <a name="check-out-a-driveitem-resource"></a>签出 DriveItem 资源
 
@@ -65,6 +65,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/checkout-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

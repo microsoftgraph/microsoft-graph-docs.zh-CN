@@ -4,12 +4,12 @@ description: 获取已激活 Office 365 的用户的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 4f16e070f2ac39e83b70185192bf19d09eab1038
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9df409f6dbe3943a2adda64953e9be10e43bc4e1
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460607"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881050"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserDetail
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activationsuserdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationsuserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

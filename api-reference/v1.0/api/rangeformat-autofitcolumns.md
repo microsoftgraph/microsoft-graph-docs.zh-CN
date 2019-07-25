@@ -4,12 +4,12 @@ description: 根据列中的当前数据更改当前范围的列宽，以达到�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 822d6e56839eaa7c86d99ff6ff3310ff6c0749b7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ad6ae979aba1c1ccf1f147175192f3a82a8b1a44
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459788"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883100"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rangeformat-autofitcolumns-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rangeformat-autofitcolumns-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

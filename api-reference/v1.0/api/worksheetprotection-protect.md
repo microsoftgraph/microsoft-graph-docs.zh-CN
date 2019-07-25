@@ -4,12 +4,12 @@ description: 保护工作表。如果工作表处于受保护状态，则会引�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a740d2c82e98d2149cb39b11f8fccbe59b6d5823
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ef6c11925122837fb8333b9fe59f4920e564689d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455019"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884163"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -87,6 +87,10 @@ Content-length: 383
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/worksheetprotection-protect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/worksheetprotection-protect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

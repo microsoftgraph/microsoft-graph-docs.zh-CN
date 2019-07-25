@@ -4,12 +4,12 @@ description: 检索分配给目录角色的用户列表。  只能将用户分�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5bc68b6a0a70a99c24e2f4cedd4ae909f201a13e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 272f245218e62b0bec8f4f6af7e31ee3d34b9dd1
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459326"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865861"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

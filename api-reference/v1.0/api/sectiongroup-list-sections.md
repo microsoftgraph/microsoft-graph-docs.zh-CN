@@ -4,12 +4,12 @@ description: 从指定分区组中检索 onenoteSection 对象的列表。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f7983c1aed70f640984453409cd81f2350e4496e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 4cbf57f87d7f6d7d9a2cabe5c25e20043fe0224a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461482"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882995"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -58,21 +58,25 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_sections"
+  "name": "sectionsgroup_get_sections"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-sections-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/sectionsgroup-get-sections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-sections-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/sectionsgroup-get-sections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-sections-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/sectionsgroup-get-sections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/sectionsgroup-get-sections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: '在单个增量查询中获取以下类型的新创建、更新或
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 12b47fe6d9faf30872441e26c538c3d3eab2a02d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 477760601072d5cae461d3dfb5eb2cb8c251f6f3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437052"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862442"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 
@@ -110,22 +110,26 @@ GET /directoryObjects/delta
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "directory_object_delta"
 }-->
 
 ```http
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/directory-object-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/directory-object-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/directory-object-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directory-object-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,6 +223,10 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -284,6 +292,10 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Micros
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

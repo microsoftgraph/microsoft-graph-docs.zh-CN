@@ -4,12 +4,12 @@ description: 获取组是其直接成员的组和管理单元。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 65132e45aa7b6d4f6d492e2a9f5e5b74194587c5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a8a61d96261965b85b3dafac6959f28f2b61f6ac
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440426"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858389"
 ---
 # <a name="list-group-memberof"></a>列出组 memberOf
 
@@ -58,21 +58,25 @@ GET /groups/{id}/memberOf
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "group_get_memberof"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-memberof-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-memberof-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-memberof-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-get-memberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

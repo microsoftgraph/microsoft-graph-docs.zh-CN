@@ -4,12 +4,12 @@ description: 获取用户拥有的 directory 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c855d323badca2ea0ed33e1f0faf25a44e5a1007
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c0d69c3377b0c95350ed0f5a634bac6e89ecfc72
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460208"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882888"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/me/ownedObjects
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-ownedobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-ownedobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

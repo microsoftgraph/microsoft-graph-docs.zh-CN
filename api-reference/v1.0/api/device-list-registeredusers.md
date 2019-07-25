@@ -4,12 +4,12 @@ description: 检索已注册为设备用户的用户列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d7901498156fddf7eb228a0d5eb957d4f615a824
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: af08b5b248d83e5002f2dfc3380df2d3ee0347b5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459461"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883414"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-registeredusers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-registeredusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

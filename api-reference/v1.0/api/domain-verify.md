@@ -4,12 +4,12 @@ description: 验证域的所有权。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 63cd4ca87125d88da9d4ff3f0d653d98910a6911
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ac8a1dd07b2fd426b05952f003a9bdf39f4cafab
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461209"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883231"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-verify-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-verify-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

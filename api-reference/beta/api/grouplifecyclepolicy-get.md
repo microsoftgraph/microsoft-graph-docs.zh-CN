@@ -4,12 +4,12 @@ description: 检索 groupLifecyclePolicy 对象的属性和关系。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 601cc4b84d32b9bf3679d715e54a22162e2e32e2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: eaeb455e8016427df29f6c82708c9a83fe260526
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442662"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858027"
 ---
 # <a name="get-grouplifecyclepolicy"></a>获取 groupLifecyclePolicy
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-grouplifecyclepolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

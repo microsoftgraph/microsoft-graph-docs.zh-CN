@@ -2,12 +2,12 @@
 title: 'Filter: clear'
 description: 清除给定列上的筛选器。
 localization_priority: Normal
-ms.openlocfilehash: 2bc1d1f607f062ca7566189d184f37bc74ab09df
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 13f0cf39d43ba96e1d66689286791cf969f6b49c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440860"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859267"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -64,6 +64,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/filter-clear-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/filter-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

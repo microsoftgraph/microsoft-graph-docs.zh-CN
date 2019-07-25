@@ -4,12 +4,12 @@ description: 更新 worksheet 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1e5f20526e628ac8c98d05805d0556a8ec7c2164
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 365ec4c2b3e13fa72c0925ff35c10bc1a85b6c45
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450644"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884226"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -76,6 +76,10 @@ Content-length: 100
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-worksheet-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-worksheet-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

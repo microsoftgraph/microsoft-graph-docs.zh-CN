@@ -2,12 +2,12 @@
 title: 'Filter: apply'
 description: 在给定列中应用给定的筛选条件。
 localization_priority: Normal
-ms.openlocfilehash: 17952c246e3a43555f2c495281349c07de779f33
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2202450da875b8f1a3d3ce671bf2718f6a9ca76f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459746"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885534"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
@@ -87,6 +87,10 @@ Content-length: 321
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/filter-apply-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/filter-apply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

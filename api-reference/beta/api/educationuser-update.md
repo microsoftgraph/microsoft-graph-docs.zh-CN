@@ -4,12 +4,12 @@ description: 更新 **educationuser** 对象的属性。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4ba79c00d95764be03b98eac86d521debd808b19
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 49e2853233919051ada1dfc29db197f4f43e890f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441168"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859843"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -90,6 +90,10 @@ Content-length: 508
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

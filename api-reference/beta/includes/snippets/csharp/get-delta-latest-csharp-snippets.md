@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1e368a464a693aaf45e11457c2a8dad12971d199
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 33a10630411230cc5e9fd5ab855f3e129cc3de64
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35520404"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861282"
 ---
 ```csharp
 
@@ -16,7 +16,8 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("token", "latest")
 };
 
-var delta = await graphClient.Me.Drive.Root.Delta()
+var delta = await graphClient.Me.Drive.Root
+    .Delta()
     .Request( queryOptions )
     .GetAsync();
 

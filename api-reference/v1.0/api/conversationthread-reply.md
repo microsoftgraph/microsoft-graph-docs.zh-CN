@@ -4,12 +4,12 @@ description: '回复组对话中的线程并向其添加新帖子。 您可以�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f01992144fc2eaa09fbd12b93cad57213fd1a0a4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 711a16aad7bae595eb4cc55f2cdc24ec784dfa69
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442823"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883595"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -77,6 +77,10 @@ Content-length: 1131
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/conversationthread-reply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/conversationthread-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

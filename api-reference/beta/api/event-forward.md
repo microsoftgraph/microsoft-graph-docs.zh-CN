@@ -4,12 +4,12 @@ description: '此操作允许会议事件的组织者或与会者转发 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5ad26f76ff9d71bf453f967ad00f3018f6ce4361
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 391263a5f2e9b5de2256830b986c9582b6299af2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441070"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859646"
 ---
 # <a name="event-forward"></a>事件: 前进
 
@@ -105,6 +105,10 @@ Content-length: 56
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-forward-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-forward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

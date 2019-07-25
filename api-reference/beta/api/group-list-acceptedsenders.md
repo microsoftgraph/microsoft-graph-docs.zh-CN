@@ -4,12 +4,12 @@ description: 获取此组的“接受的发件人”列表中的用户或组列�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 88488ed413a95308c28e4f1cba7a25a866be3b11
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2ccd38e8f28a348d174afa7cff6025c71262c89f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440524"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858539"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-acceptedsenders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-acceptedsenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

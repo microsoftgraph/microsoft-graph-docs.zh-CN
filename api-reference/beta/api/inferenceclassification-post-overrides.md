@@ -2,12 +2,12 @@
 title: 创建 inferenceClassificationOverride
 description: '为由 SMTP 地址标识的发件人创建重点收件箱覆盖。 将对来自该 SMTP 地址的未来邮件进行一致的分类 '
 localization_priority: Normal
-ms.openlocfilehash: caab9c5ddea9ac3d1744768435bc5cd291db0024
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3d47140ff4e5aa9c333dc279e2722d93d9ea8ace
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441826"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857490"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-inferenceclassificationoverride-from-inferenceclassification-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-inferenceclassificationoverride-from-inferenceclassification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

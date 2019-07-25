@@ -4,12 +4,12 @@ description: 通过使用联系人文件夹 ID 获取联系人文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9410643e34711e6928b23364d87eb0db9e75e7a6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 47d5ba998edc35505d8c7fb6a34f2f58d560eb10
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443040"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883967"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contactfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-contactfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

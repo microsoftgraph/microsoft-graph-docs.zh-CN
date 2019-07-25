@@ -4,12 +4,12 @@ description: 获取某个组的所有线程。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 00317f4df1ac7fd43625266ce746ac15cbd9511a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cd2f71f988b6d29560e5717791e192b285a76ee3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440363"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858238"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-threads-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-threads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

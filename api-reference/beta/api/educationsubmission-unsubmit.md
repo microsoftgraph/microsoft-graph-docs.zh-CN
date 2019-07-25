@@ -4,12 +4,12 @@ description: '一个操作, 指示学生希望在工作分配在打开后进行�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5d5696a3343f183ab8d18ce458eee30ddc61e1ec
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b5ef81d78d0228dbb101d3d7490efc0fe3f4301e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441378"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860253"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-unsubmit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-unsubmit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

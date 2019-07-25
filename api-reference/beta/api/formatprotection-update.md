@@ -2,12 +2,12 @@
 title: 更新 formatProtection
 description: 更新 formatprotection 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 9dad60b9be7783962f3909829d4d2b2b6cb48c1b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f3eb949ed073dc70ed0252727b272ec57f30cede
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440825"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859178"
 ---
 # <a name="update-formatprotection"></a>更新 formatProtection
 
@@ -75,6 +75,10 @@ Content-length: 45
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-formatprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-formatprotection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

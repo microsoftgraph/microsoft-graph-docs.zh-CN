@@ -4,12 +4,12 @@ description: '获取在验证过程中生成的错误和/或在租户中同步�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 49fcbd63aec89c9d1b97c79237a10b934a19ac27
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c2db0467f86f015f31c40cd59d549a7843b580ce
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441343"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860058"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-error-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-error-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

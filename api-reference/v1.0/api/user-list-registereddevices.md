@@ -4,12 +4,12 @@ description: 获取用户的注册设备列表。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 345410c16ab91c97e18f539699ede7571c94e6c9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 00548dd85279ebb9aeb9c99c3772abfbb70c964b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460194"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882846"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/me/registeredDevices
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-registereddevices-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-registereddevices-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

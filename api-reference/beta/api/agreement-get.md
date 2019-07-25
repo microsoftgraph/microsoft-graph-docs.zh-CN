@@ -2,12 +2,12 @@
 title: 获取协议
 description: 检索协议对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 587ec829881dea30118b6f8998acfd1ab87f9c44
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1f1767f78cb1a2ff3beb9c14ab8866a54588d8ce
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439817"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855459"
 ---
 # <a name="get-agreement"></a>获取协议
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/agreements/<id>?$expand=files
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-agreement-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

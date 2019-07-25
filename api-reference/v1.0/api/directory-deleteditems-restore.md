@@ -4,12 +4,12 @@ description: '从已删除的项目中还原最近删除的项目。 '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 39a63711881b0d97ab1c103c0d10f2caaadcc043
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 867d6ea0f603a8b75e181454a651647e11a86ef2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639008"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880446"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: Get endpoint
 description: 检索特定终结点对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 78b1dd46e39fa25ecc77f257726d6884086c87a7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0bd4e87d44b0f3b204a6139e0da0f464c1c9db27
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441154"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859806"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-endpoint-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoint-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
