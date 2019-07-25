@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 901f492b1c78cd27eeb055f0ab1d284042786ccc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9c4c716f177875ce7a5a390c35e05a239a83cedd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35478986"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878359"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extension = new Extension
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","microsoft.graph.openTypeExtension"}
+    },
     ExtensionName = "Com.Contoso.Referral",
     CompanyName = "Wingtip Toys",
     DealValue = 500050,
