@@ -2,50 +2,50 @@
 title: 列出 businessFlowTemplates
 description: 在 "Azure AD access 评论" 功能中, 列出所有 businessFlowTemplate 对象。
 localization_priority: Normal
-ms.openlocfilehash: a9c623eedc34c7c4d7901a0a03ed81d070eb0af7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 738986efa97f97c58eb76abad0eeb01e3a0a12fc
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438949"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865177"
 ---
-# <a name="list-businessflowtemplates"></a><span data-ttu-id="4d7c3-103">列出 businessFlowTemplates</span><span class="sxs-lookup"><span data-stu-id="4d7c3-103">List businessFlowTemplates</span></span>
+# <a name="list-businessflowtemplates"></a><span data-ttu-id="6d943-103">列出 businessFlowTemplates</span><span class="sxs-lookup"><span data-stu-id="6d943-103">List businessFlowTemplates</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4d7c3-104">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 列出所有[businessFlowTemplate](../resources/businessflowtemplate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [businessFlowTemplate](../resources/businessflowtemplate.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4d7c3-105">权限</span><span class="sxs-lookup"><span data-stu-id="4d7c3-105">Permissions</span></span>
-<span data-ttu-id="4d7c3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6d943-104">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 列出所有[businessFlowTemplate](../resources/businessflowtemplate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6d943-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [businessFlowTemplate](../resources/businessflowtemplate.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6d943-105">权限</span><span class="sxs-lookup"><span data-stu-id="6d943-105">Permissions</span></span>
+<span data-ttu-id="6d943-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6d943-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4d7c3-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d7c3-108">Permission type</span></span>                        | <span data-ttu-id="4d7c3-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4d7c3-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6d943-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6d943-108">Permission type</span></span>                        | <span data-ttu-id="6d943-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6d943-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4d7c3-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d7c3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="4d7c3-111">AccessReview、AccessReview 和所有</span><span class="sxs-lookup"><span data-stu-id="4d7c3-111">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="4d7c3-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d7c3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d7c3-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-113">Not supported.</span></span> |
-|<span data-ttu-id="4d7c3-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4d7c3-114">Application</span></span>                            | <span data-ttu-id="4d7c3-115">AccessReview.Read.All</span><span class="sxs-lookup"><span data-stu-id="4d7c3-115">AccessReview.Read.All</span></span> |
+|<span data-ttu-id="6d943-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6d943-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="6d943-111">AccessReview、AccessReview 和所有</span><span class="sxs-lookup"><span data-stu-id="6d943-111">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="6d943-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6d943-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d943-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="6d943-113">Not supported.</span></span> |
+|<span data-ttu-id="6d943-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6d943-114">Application</span></span>                            | <span data-ttu-id="6d943-115">AccessReview.Read.All</span><span class="sxs-lookup"><span data-stu-id="6d943-115">AccessReview.Read.All</span></span> |
 
-<span data-ttu-id="4d7c3-116">登录用户还必须位于允许他们阅读访问审核的目录角色中。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-116">The signed in user must also be in a directory role that permits them to read an access review.</span></span>
+<span data-ttu-id="6d943-116">登录用户还必须位于允许他们阅读访问审核的目录角色中。</span><span class="sxs-lookup"><span data-stu-id="6d943-116">The signed in user must also be in a directory role that permits them to read an access review.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4d7c3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d7c3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6d943-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6d943-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /businessFlowTemplates
 ```
-## <a name="request-headers"></a><span data-ttu-id="4d7c3-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4d7c3-118">Request headers</span></span>
-| <span data-ttu-id="4d7c3-119">名称</span><span class="sxs-lookup"><span data-stu-id="4d7c3-119">Name</span></span>         | <span data-ttu-id="4d7c3-120">类型</span><span class="sxs-lookup"><span data-stu-id="4d7c3-120">Type</span></span>        | <span data-ttu-id="4d7c3-121">说明</span><span class="sxs-lookup"><span data-stu-id="4d7c3-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="6d943-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="6d943-118">Request headers</span></span>
+| <span data-ttu-id="6d943-119">名称</span><span class="sxs-lookup"><span data-stu-id="6d943-119">Name</span></span>         | <span data-ttu-id="6d943-120">类型</span><span class="sxs-lookup"><span data-stu-id="6d943-120">Type</span></span>        | <span data-ttu-id="6d943-121">说明</span><span class="sxs-lookup"><span data-stu-id="6d943-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="4d7c3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d7c3-122">Authorization</span></span> | <span data-ttu-id="4d7c3-123">string</span><span class="sxs-lookup"><span data-stu-id="4d7c3-123">string</span></span> | <span data-ttu-id="4d7c3-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="6d943-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6d943-122">Authorization</span></span> | <span data-ttu-id="6d943-123">string</span><span class="sxs-lookup"><span data-stu-id="6d943-123">string</span></span> | <span data-ttu-id="6d943-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="6d943-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4d7c3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4d7c3-126">Request body</span></span>
-<span data-ttu-id="4d7c3-127">不应提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-127">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6d943-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="6d943-126">Request body</span></span>
+<span data-ttu-id="6d943-127">不应提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="6d943-127">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4d7c3-128">响应</span><span class="sxs-lookup"><span data-stu-id="4d7c3-128">Response</span></span>
-<span data-ttu-id="4d7c3-129">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[businessFlowTemplate](../resources/businessflowtemplate.md)对象的数组。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-129">If successful, this method returns a `200, OK` response code and an array of [businessFlowTemplate](../resources/businessflowtemplate.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6d943-128">响应</span><span class="sxs-lookup"><span data-stu-id="6d943-128">Response</span></span>
+<span data-ttu-id="6d943-129">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[businessFlowTemplate](../resources/businessflowtemplate.md)对象的数组。</span><span class="sxs-lookup"><span data-stu-id="6d943-129">If successful, this method returns a `200, OK` response code and an array of [businessFlowTemplate](../resources/businessflowtemplate.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4d7c3-130">示例</span><span class="sxs-lookup"><span data-stu-id="4d7c3-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4d7c3-131">请求</span><span class="sxs-lookup"><span data-stu-id="4d7c3-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="6d943-130">示例</span><span class="sxs-lookup"><span data-stu-id="6d943-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6d943-131">请求</span><span class="sxs-lookup"><span data-stu-id="6d943-131">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4d7c3-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="4d7c3-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6d943-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="6d943-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_businessFlowTemplate"
@@ -53,23 +53,27 @@ GET /businessFlowTemplates
 ```http
 GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4d7c3-133">C#</span><span class="sxs-lookup"><span data-stu-id="4d7c3-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6d943-133">C#</span><span class="sxs-lookup"><span data-stu-id="6d943-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-businessflowtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4d7c3-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="4d7c3-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6d943-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="6d943-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-businessflowtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4d7c3-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="4d7c3-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6d943-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="6d943-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-businessflowtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="6d943-136">Java</span><span class="sxs-lookup"><span data-stu-id="6d943-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-businessflowtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4d7c3-136">响应</span><span class="sxs-lookup"><span data-stu-id="4d7c3-136">Response</span></span>
-><span data-ttu-id="4d7c3-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6d943-137">响应</span><span class="sxs-lookup"><span data-stu-id="6d943-137">Response</span></span>
+><span data-ttu-id="6d943-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6d943-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,11 +107,11 @@ Content-type: application/json
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4d7c3-139">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4d7c3-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6d943-140">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6d943-140">See also</span></span>
 
-| <span data-ttu-id="4d7c3-140">方法</span><span class="sxs-lookup"><span data-stu-id="4d7c3-140">Method</span></span>           | <span data-ttu-id="4d7c3-141">返回类型</span><span class="sxs-lookup"><span data-stu-id="4d7c3-141">Return Type</span></span>    |<span data-ttu-id="4d7c3-142">说明</span><span class="sxs-lookup"><span data-stu-id="4d7c3-142">Description</span></span>|
+| <span data-ttu-id="6d943-141">方法</span><span class="sxs-lookup"><span data-stu-id="6d943-141">Method</span></span>           | <span data-ttu-id="6d943-142">返回类型</span><span class="sxs-lookup"><span data-stu-id="6d943-142">Return Type</span></span>    |<span data-ttu-id="6d943-143">说明</span><span class="sxs-lookup"><span data-stu-id="6d943-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="4d7c3-143">创建 accessReview</span><span class="sxs-lookup"><span data-stu-id="4d7c3-143">Create accessReview</span></span>](accessreview-create.md) |    [<span data-ttu-id="4d7c3-144">accessReview</span><span class="sxs-lookup"><span data-stu-id="4d7c3-144">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="4d7c3-145">创建新的 accessReview。</span><span class="sxs-lookup"><span data-stu-id="4d7c3-145">Create a new accessReview.</span></span> |
+|[<span data-ttu-id="6d943-144">创建 accessReview</span><span class="sxs-lookup"><span data-stu-id="6d943-144">Create accessReview</span></span>](accessreview-create.md) |    [<span data-ttu-id="6d943-145">accessReview</span><span class="sxs-lookup"><span data-stu-id="6d943-145">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="6d943-146">创建新的 accessReview。</span><span class="sxs-lookup"><span data-stu-id="6d943-146">Create a new accessReview.</span></span> |
 
 
 

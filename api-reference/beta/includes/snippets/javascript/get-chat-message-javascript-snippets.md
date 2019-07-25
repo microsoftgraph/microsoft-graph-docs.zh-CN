@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3fac72fb98be0a82a0e2480ad3efd5d76ba79c5e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 275c4238b928bbee46d810821d944b52cfaebf29
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35707773"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863558"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/chats/{id}')
+let res = await client.api('/me/chats/{id}/messages/{id}')
     .version('beta')
     .get();
 
