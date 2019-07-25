@@ -4,12 +4,12 @@ description: 检索**onlineMeeting**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e762035192bb3387f916e2bd7cf1772478952808
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1b1c704ad0ebe417c9e5bf6cbf0a5db64e719fab
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450252"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878745"
 ---
 # <a name="get-online-meeting"></a>获取联机会议
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

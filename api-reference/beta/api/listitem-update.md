@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 更新 SharePoint 列表中的记录
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4849c3a4c2478ee21da0d64d8096377fd00eaef6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b8c0b3db13b956776357f99bad4c8aa7ac338a77
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449153"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880179"
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 
@@ -75,6 +75,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

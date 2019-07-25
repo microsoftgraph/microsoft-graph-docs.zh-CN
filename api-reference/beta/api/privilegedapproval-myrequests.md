@@ -2,12 +2,12 @@
 title: 'privilegedApproval: myRequests'
 description: 获取请求者的审批请求。
 localization_priority: Normal
-ms.openlocfilehash: b97a9cf4251441ac4f7d4b8e64294d54e3d6b7c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ba7ae2f191c36754188d1074a455b6ecc9ed8562
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445070"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875904"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedapproval-myrequests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedapproval-myrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

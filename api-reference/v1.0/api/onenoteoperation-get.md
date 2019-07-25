@@ -4,12 +4,12 @@ description: '获取长时间运行的 OneNote 操作的状态。 这适用于�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ae44a94114c7ed85633393bfc1a9014116ed32ac
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f3a23d79792e1d5b642a4a89428567f4b242caaa
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457595"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890209"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onenoteoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onenoteoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

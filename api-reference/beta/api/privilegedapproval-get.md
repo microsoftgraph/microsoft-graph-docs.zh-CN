@@ -2,12 +2,12 @@
 title: 获取 privilegedApproval
 description: 检索 privilegedapproval 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 4e964d51ee930814565f5e8eadaff85e4077e24f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a0704a970a93f40f316946aa193359b03f828573
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445091"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875956"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/privilegedApproval/<id>
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedapproval-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

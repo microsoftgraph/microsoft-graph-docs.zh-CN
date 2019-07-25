@@ -4,12 +4,12 @@ description: 检索对用户订阅的对象所做的更改。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: f5be8eb19d3af787e8a8910f702b51d2fc4095d6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 37a6a1f4eacc3046c61cc088511456565610341c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448345"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35876196"
 ---
 # <a name="planner-delta"></a>Planner: delta
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: 列出 privilegedRoleAssignmentRequests
 description: '检索 privilegedRoleAssignmentRequest 的集合。 '
 localization_priority: Normal
-ms.openlocfilehash: 4451eedf072be4f2b35a7524e4f7e5393c4326e8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 88fff78f0049254cc3077e91ff95c1eef4fc3940
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444902"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875579"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>列出 privilegedRoleAssignmentRequests
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignmentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

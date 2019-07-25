@@ -4,12 +4,12 @@ description: 获取用户邮箱中的所有 Outlook 任务。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5d08e9e8ade8a3537d27ec33a61006456668ddae
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5bdb0c23fb74c5a8ada8e228a0b3f6a1554aa308
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447136"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877405"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8ccb8f1eaca5f32bd7b4820331a9aea5f6898e0d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3c93ecf2eed61cc6509631dd873ded2e442e5bee
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449209"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880325"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -70,6 +70,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
