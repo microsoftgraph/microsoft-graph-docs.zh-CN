@@ -4,12 +4,12 @@ description: '此函数返回您应上载所有基于文件的资源 (Word、Exc
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 97730a35e107cbaa3f3901fac8eceb473e89c602
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 104c9dddae4383fded06d5efd9678a28b570d002
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436170"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860785"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

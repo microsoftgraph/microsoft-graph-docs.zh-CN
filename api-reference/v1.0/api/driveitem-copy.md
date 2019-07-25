@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 复制文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a709c362ba8a37728479da01c20679d430b219e8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 99987dc70099e74a0d5273a40d3cb8a69af7ecdb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446029"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881791"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
@@ -81,6 +81,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

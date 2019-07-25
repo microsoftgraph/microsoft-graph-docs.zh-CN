@@ -2,12 +2,12 @@
 title: 列出 identityProvider
 description: 检索目录中的所有 identityProvider。
 localization_priority: Normal
-ms.openlocfilehash: 8af8806c2d932bbaa488252dbf5a665640ac4c6a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ed70262efd04878d054852d5fa0f692afe6238e2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442235"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857604"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

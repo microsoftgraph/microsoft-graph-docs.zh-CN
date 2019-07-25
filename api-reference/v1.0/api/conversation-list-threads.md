@@ -4,12 +4,12 @@ description: 获取组对话中的所有线程。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 432d2757d2cc5142fa2b8660ebf8bfcd649800fa
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 146009aa17b5defe65501e49674dd3279a9f6e69
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442914"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883706"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threads-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-threads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

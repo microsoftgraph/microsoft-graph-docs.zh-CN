@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 签入文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 84958a6dcbadb0b92d7a25bfb36bb53edbd3189a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 18c06435e4fed868f13998a3724f4b13c0853c20
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436520"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861441"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>签入对 DriveItem 资源的更改
 
@@ -76,6 +76,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
