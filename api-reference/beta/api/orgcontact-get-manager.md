@@ -4,12 +4,12 @@ description: 获取联系人的经理
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f23a8e3f58bc4bbdc6404c7b0602c594865b9fd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 16e5da17cc0cd4d1cc6e52c6eaeca04cd5c6fe14
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445399"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877976"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: 获取管理器
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,12 +3,12 @@ title: 删除 schemaExtension
 description: 删除架构扩展定义。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 7a72dd4cbd4102520d3284a4b8e1dd27725b4ee4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c3ce95154319519e7dd6b4353389e392f169de35
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457518"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870680"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -69,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

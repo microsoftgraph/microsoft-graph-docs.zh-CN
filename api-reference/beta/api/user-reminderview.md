@@ -4,12 +4,12 @@ description: '返回指定开始时间和结束时间范围内的日历提醒列
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b968a838208e893be3b2f7fb480ef3dcf0250a06
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 02a4e0ff951e3ebd0e9f0df7e056f33e2f6cc4db
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35452919"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866769"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reminderview-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-reminderview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

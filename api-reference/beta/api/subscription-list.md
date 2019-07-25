@@ -3,12 +3,12 @@ title: 列出订阅
 description: " 有关详细信息, 请参阅以下方案。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 48cef32dd829dcbecff02104e8045391f9779d0f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b42b84c56638c206b3ea440efba880e4ab024601
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457084"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869447"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

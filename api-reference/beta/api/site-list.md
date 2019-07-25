@@ -3,12 +3,12 @@ title: 枚举网站
 description: 列出组织中符合提供的筛选条件和查询选项的可用 [sites] []。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 29b1a3c043712de4eca359b5b58c27308b78ee22
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 912266f0fda8104f538caa3cbc400a55b109572d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453647"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869630"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=s
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-sites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

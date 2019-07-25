@@ -2,12 +2,12 @@
 title: 列出 servicePrincipals
 description: 检索 servicePrincipal 对象列表。
 localization_priority: Normal
-ms.openlocfilehash: 8f1ba69fcea65fb96d95b497121466e4a50ddc66
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 40d6998cf464a5d31c01a661f1dde3095f42fb60
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453738"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869938"
 ---
 # <a name="list-serviceprincipals"></a>列出 servicePrincipals
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: 列出 servicePrincipal memberOf
 description: 获取此服务主体是其直接成员的组和目录角色。 此操作不可传递。
 localization_priority: Normal
-ms.openlocfilehash: 7df5c9bc09a019eaf8e29181328b2246419fe776
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f58210131c0ae8e107f5e4f4f7361cf741aec8b7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457294"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870041"
 ---
 # <a name="list-serviceprincipal-memberof"></a>列出 servicePrincipal memberOf
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-memberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

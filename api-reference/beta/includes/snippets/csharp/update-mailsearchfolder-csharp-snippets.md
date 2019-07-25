@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7a8541c506be09c6aeed64673e2bfd14642ddfa8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f324309b5795c36acda4f59f4c435aaf1d4cd380
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35500601"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879836"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","microsoft.graph.mailSearchFolder"}
+    },
     FilterQuery = "contains(subject, 'Analytics')"
 };
 

@@ -2,12 +2,12 @@
 title: 'servicePrincipal: List oAuth2Permissiongrants'
 description: 检索 oAuth2Permissiongrant 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 1ba240e054b3583746f48006da3a7e73f52a0672
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0a22aba0c8b5b553c32e6ef643e24982d9aa88fd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453745"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870015"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal: List oAuth2Permissiongrants
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongran
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-oauth2permissiongrants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

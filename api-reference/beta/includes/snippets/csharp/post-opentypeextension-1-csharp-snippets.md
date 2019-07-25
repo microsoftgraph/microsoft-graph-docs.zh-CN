@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 44643064b53829741042a604fb082ab2e9575681
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 04230414b68d1fde64016bc08524006fc40db2e7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35478987"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878352"
 ---
 ```csharp
 
@@ -33,6 +33,10 @@ var message = new Message
     {
         new Extension
         {
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"@odata.type","microsoft.graph.openTypeExtension"}
+            },
             ExtensionName = "Com.Contoso.Referral",
             CompanyName = "Wingtip Toys",
             ExpirationDate = "2015-12-30T11:00:00Z",

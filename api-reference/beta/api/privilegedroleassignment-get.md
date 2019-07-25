@@ -2,12 +2,12 @@
 title: 获取 privilegedRoleAssignment
 description: 检索 privilegedRoleAssignment 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 2a1c87f1693d0999221f62832851bdcb2c13f9f8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b21ec9ca5fe189f99193419ab1751893d293906d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444979"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875741"
 ---
 # <a name="get-privilegedroleassignment"></a>获取 privilegedRoleAssignment
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedroleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

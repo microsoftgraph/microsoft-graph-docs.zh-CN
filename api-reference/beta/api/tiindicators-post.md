@@ -4,12 +4,12 @@ description: 创建新的 tiIndicator。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 208458da18f637b02da7f911289787203b7b5677
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 990084b4e928527bbd43ee631489bc165d7f36f1
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35451295"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35868104"
 ---
 # <a name="create-threat-intelligence-indicator"></a>创建威胁情报指标
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tiindicator-from-security-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-tiindicator-from-security-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
