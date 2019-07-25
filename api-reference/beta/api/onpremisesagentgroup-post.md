@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 752081e6b50460e8185f4bddddce603bf54e5d86
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 1771976abc56bb2b39850dcc925003df8965192e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841092"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878268"
 ---
 # <a name="create-onpremisesagentgroup"></a>创建 onPremisesAgentGroup
 
@@ -61,6 +61,8 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_onpremisesagent_from_onpremisesagentgroup"
@@ -69,6 +71,16 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagent-from-onpremisesagentgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagent-from-onpremisesagentgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 在请求正文中, 提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。
 

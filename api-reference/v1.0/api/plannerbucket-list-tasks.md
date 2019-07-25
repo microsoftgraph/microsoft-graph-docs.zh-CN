@@ -4,12 +4,12 @@ description: 检索与 plannerBucket 对象关联的 **plannerTask** 对象的�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 4709489e936a168f1cefdad91fcb2f2bf46c18a8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0760db5cf8601874cb90301bd1043522b2a102b0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456622"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892113"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

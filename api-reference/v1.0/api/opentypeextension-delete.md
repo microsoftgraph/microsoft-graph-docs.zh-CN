@@ -3,12 +3,12 @@ title: 删除开放扩展
 description: '从指定的资源实例中删除开放扩展（openTypeExtension 对象）。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: acc3cfcc710751df3d77f0c26b0dcad8726c5d50
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1d7a993b441fba614a8675fed1e189105735227c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445588"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894406"
 ---
 # <a name="delete-open-extension"></a>删除开放扩展
 
@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

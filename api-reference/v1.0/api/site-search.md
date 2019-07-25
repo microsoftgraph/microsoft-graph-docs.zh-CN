@@ -6,12 +6,12 @@ title: 搜索网站
 description: 在 SharePoint 租户中搜索与所提供的关键字匹配的网站。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2b1c598ed6c635487de2b2f35c0dc606f1e69b18
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9815eb67128e5b13611d142f2c595efb169b80e7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458598"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892213"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -48,6 +48,10 @@ GET /sites?search={query}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/search-sites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

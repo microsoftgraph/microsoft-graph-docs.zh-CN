@@ -4,12 +4,12 @@ description: 将页面复制到特定分区。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: bf23acefeda340fe94f5f36efee4048c15ff2612
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dd54f5c69c6f45e119ee625419c452468c42a102
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455257"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892927"
 ---
 # <a name="page-copytosection"></a>页面: copyToSection
 将页面复制到特定分区。
@@ -80,6 +80,10 @@ Content-length: 52
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/page-copytosection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/page-copytosection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

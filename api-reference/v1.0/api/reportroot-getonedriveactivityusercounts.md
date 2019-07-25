@@ -4,12 +4,12 @@ description: 获取 OneDrive 活跃用户数趋势。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 3e9a6ba9b8774cbc07a1a0a56be075a5f22f6d9e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a99f7350a692d016585a7e32f2e4d226e2255ea1
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444398"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35893752"
 ---
 # <a name="reportroot-getonedriveactivityusercounts"></a>reportRoot: getOneDriveActivityUserCounts
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityUserCounts(perio
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveactivityusercounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getonedriveactivityusercounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

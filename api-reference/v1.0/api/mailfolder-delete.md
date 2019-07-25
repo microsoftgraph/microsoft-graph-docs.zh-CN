@@ -4,12 +4,12 @@ description: 删除指定的 mailFolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2d393b4423f63d32415ba0294a33e3fc5a4c3df6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ab447e3e74f5ef078328d487ff06a88a74f7a899
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460691"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35893108"
 ---
 # <a name="delete-mailfolder"></a>删除 mailFolder
 
@@ -68,6 +68,10 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

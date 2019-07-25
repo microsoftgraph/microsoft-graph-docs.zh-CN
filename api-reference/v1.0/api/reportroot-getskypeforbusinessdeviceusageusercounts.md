@@ -4,12 +4,12 @@ description: 获取使用情况趋势，即组织中有多少用户已使用 Sky
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ee6f9281ec4877f51bb5b41d29e71a6da0f6bd09
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3a8428e179f9f2b8eae0cea9fa7c1e0d22e39154
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444460"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892446"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessDeviceUsageUserC
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinessdeviceusageusercounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinessdeviceusageusercounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

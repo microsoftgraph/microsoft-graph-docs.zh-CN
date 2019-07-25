@@ -4,12 +4,12 @@ description: 获取组织中的用户邮箱总数和报表周期内的每日活�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 65f082b6f823acb0a37929a23806a987437cd761
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a0fa3f60d981057cf2dc14cbf459cccc8eeb4dfe
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35454039"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894377"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageMailboxCounts(period
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagemailboxcounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmailboxusagemailboxcounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

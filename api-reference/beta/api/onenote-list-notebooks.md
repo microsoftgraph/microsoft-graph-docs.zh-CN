@@ -4,12 +4,12 @@ description: 检索 notebook 对象列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 0066b5a30480dff308e38225fb845ecd5052ed0e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ec135f1681464f3d1185d6222cb6aef2c57f89bc
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450070"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878919"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-notebooks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-notebooks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

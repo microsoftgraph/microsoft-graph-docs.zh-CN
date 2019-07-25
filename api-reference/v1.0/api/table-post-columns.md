@@ -4,12 +4,12 @@ description: 使用此 API 创建新的 TableColumn。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d3fd1281c3b84695c9cd565cdd3d257a14b9f501
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 92b7c3cdc2dd5ba3b3f4b8beacaa1f7276997d44
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459263"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892689"
 ---
 # <a name="create-tablecolumn"></a>创建 TableColumn
 
@@ -74,6 +74,10 @@ Content-length: 81
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tablecolumn-from-table-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-tablecolumn-from-table-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

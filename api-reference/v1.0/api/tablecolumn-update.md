@@ -4,12 +4,12 @@ description: 更新 tablecolumn 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: acf871096ef56ade0abbab9c4ecd2fba3ef7d483
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 50ea190eb65edd81dd2fbd2c33e98a1c1bf361c3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460950"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894261"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
@@ -75,6 +75,10 @@ Content-length: 81
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tablecolumn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tablecolumn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

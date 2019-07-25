@@ -4,12 +4,12 @@ description: 将笔记本复制到目标文档库中的 "笔记本" 文件夹。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: e7f3c2b57cccbdfea8d80796934fde22da1b5cdd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c1e785a20c63bb8f83ffbdaa9f1653e1d20a824a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450273"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879156"
 ---
 # <a name="notebook-copynotebook"></a>笔记本: copyNotebook
 
@@ -86,6 +86,10 @@ Content-length: 108
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/notebook-copynotebook-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/notebook-copynotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
