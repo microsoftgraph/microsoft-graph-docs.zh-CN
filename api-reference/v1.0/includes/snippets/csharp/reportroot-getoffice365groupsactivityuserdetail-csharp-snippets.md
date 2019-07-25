@@ -1,17 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: be650d47890c14e974c31c6164137a3a2fa7b7e9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 4935196f6b87284aa2d01de589848a271e393c5f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739395"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35893949"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var report = await graphClient.Reports.GetOffice365GroupsActivityDetail('D7')
+var report = await graphClient.Reports
+    .GetOffice365GroupsActivityDetail('D7')
     .Request()
     .GetAsync();
 
