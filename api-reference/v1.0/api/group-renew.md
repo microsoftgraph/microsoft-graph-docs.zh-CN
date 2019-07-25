@@ -4,12 +4,12 @@ description: 续订组以更新到期时间。 续订后，组的有效期就会
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 4df9ea8fc4d8cd1f397e6bb20f9cf136e03a23d3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 264763a7f5997a989ad54056caa898a450f0da38
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460047"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885437"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -69,6 +69,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

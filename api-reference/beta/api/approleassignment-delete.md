@@ -2,12 +2,12 @@
 title: 删除 appRoleAssignment
 description: 删除 appRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: 628b24b2abdf41cdc2d04c009cc0dfb7625c3028
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 578780b4bd760a17269619e0a8a1f755b4f66b7a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439495"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856930"
 ---
 # <a name="delete-approleassignment"></a>删除 appRoleAssignment
 
@@ -65,6 +65,10 @@ DELETE https://graph.microsoft.com/beta/appRoleAssignments/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

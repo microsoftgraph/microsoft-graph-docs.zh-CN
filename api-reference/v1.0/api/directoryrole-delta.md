@@ -4,12 +4,12 @@ description: 获取新创建、更新或删除的目录角色, 而无需对整�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3d5d8a920429625ea4bba8e00a4a224412b4abf5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8b3d5d0b3784da5a187a0638fe3925d7b1635cbc
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459347"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865865"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryrole-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryrole-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

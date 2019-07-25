@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 727c7be2303fc31a72f24e407cf9a6dd58a748cd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fd472f685b5fc35809f3516ed1b3f13e1f77e9ae
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446211"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880719"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -67,6 +67,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-item-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-item-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

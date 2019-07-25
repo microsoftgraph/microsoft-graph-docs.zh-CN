@@ -4,12 +4,12 @@ description: 列出租户中激活的目录角色。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ee852b8b374df330d4aa1c8d8756eb4d2616080
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 25c743b0eed01ffa760fb2f4387ad4ca39fca37b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459319"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865921"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoles
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryroles-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

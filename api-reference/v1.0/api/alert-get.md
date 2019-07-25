@@ -4,12 +4,12 @@ description: " 检索 alert 对象的属性和关系。"
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 363f7f56b373869aee941a068a74b38404d5ee83
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 573519edb0346c5d4b6145b7df6a88524737ae8e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443866"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882651"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
