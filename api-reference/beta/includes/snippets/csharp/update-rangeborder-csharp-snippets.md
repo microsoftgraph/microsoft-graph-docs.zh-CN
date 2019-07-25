@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f18ed013b33fde79418997401c49a7f5a6bc1655
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 731b68afbc52f626f0ad856b2b14478554a02d13
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35479822"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35874593"
 ---
 ```csharp
 
@@ -19,7 +19,8 @@ var workbookRangeBorder = new WorkbookRangeBorder
     Weight = "weight-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"].Range().Format.Borders["{sideIndex}"]
+await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+    .Range().Format.Borders["{sideIndex}"]
     .Request()
     .UpdateAsync(workbookRangeBorder);
 

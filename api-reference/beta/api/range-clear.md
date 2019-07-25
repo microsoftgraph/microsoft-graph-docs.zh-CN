@@ -4,12 +4,12 @@ description: 清除范围值、格式、填充、边框等。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d2d6ed46a79716ab9cac02f367eddc21fc9a68ac
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ee58a41a7692c32de9a70bf7d1fd03727714eb04
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447164"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35874942"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -79,6 +79,10 @@ Content-length: 32
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-clear-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/range-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
