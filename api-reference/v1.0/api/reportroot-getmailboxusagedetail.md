@@ -4,12 +4,12 @@ description: 获取邮箱使用情况的详细信息。
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 0ec06a813d0e7080c9b3b4f2ae8565bca9031e4a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 451be57666719f011ba89992089b54ad16d88f29
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448561"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894426"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot：getMailboxUsageDetail
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageDetail(period='D7')
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusageuserdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmailboxusageuserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 获取 SharePoint 网站
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 95008d1c084902167a098641bc9eefef8c378c7d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d97444f715daa67f82bd9f739a09eae588aa0ab9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461447"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891547"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 
@@ -87,6 +87,10 @@ GET /sites/{site-id}
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 介绍删除 Microsoft Graph API (REST) 的用户资源（实体）
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fef9dc57e7630bb210868674a575dca993f1e8c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 198268b2dbfdb9a06fb3954387673adf1bab5f67
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460551"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892598"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

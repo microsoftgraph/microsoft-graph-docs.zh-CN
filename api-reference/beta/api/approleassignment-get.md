@@ -2,12 +2,12 @@
 title: 获取 appRoleAssignment
 description: 检索 approleassignment 对象的属性和关系。
 localization_priority: Priority
-ms.openlocfilehash: b14a200ee2eadb3c2f68449f33ad137ff02ed474
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6465134b37bef4791e2f3c9e83d2b34180d5fc3e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439481"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856644"
 ---
 # <a name="get-approleassignment"></a>获取 appRoleAssignment
 
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

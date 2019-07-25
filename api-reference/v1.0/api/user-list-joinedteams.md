@@ -4,12 +4,12 @@ description: 获取用户不是其直接成员的 Microsoft Teams 团队。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 629ec201a93c1947637143785d61f2a2f971a307
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 946b82af4ca5cbfdc90e8b7187dc438d2e7df963
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460369"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888857"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
