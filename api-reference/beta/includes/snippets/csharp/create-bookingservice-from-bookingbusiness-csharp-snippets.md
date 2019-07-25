@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 04c42a4cc6d84fe11ce20d07d37f65cb6ba1f2b0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ceeabfadcb0a259dd9a73f75315ef757e7ee6a62
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35479771"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865542"
 ---
 ```csharp
 
@@ -13,11 +13,29 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingService = new BookingService
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"staffMemberIds@odata.type","#Collection(String)"},
+        {"defaultReminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
+        {"defaultPriceType@odata.type","#microsoft.graph.bookingPriceType"},
+        {"@odata.type","#microsoft.graph.bookingService"}
+    },
     DefaultDuration = "PT1H30M",
     DefaultLocation = new Location
     {
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+            {"locationType@odata.type","#microsoft.graph.locationType"},
+            {"@odata.type","#microsoft.graph.location"}
+        },
         Address = new PhysicalAddress
         {
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"type@odata.type","#microsoft.graph.physicalAddressType"},
+                {"@odata.type","#microsoft.graph.physicalAddress"}
+            },
             City = "Buffalo",
             CountryOrRegion = "USA",
             PostalCode = "98052",
@@ -40,6 +58,11 @@ var bookingService = new BookingService
     {
         new BookingReminder
         {
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"},
+                {"@odata.type","#microsoft.graph.bookingReminder"}
+            },
             Message = "Please be reminded that this service is tomorrow.",
             Offset = "P1D",
             Recipients = BookingReminderRecipients.AllAttendees
@@ -53,6 +76,10 @@ var bookingService = new BookingService
     PreBuffer = "PT5M",
     SchedulingPolicy = new BookingSchedulingPolicy
     {
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"@odata.type","#microsoft.graph.bookingSchedulingPolicy"}
+        },
         AllowStaffSelection = true,
         MaximumAdvance = "P10D",
         MinimumLeadTime = "PT10H",

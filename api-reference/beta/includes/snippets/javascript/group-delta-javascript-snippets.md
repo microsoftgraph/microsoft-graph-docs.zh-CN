@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1a7a9fd8404184ee96bf74c469bd7f7519978589
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5ee9271eb6a5410c0dbba0d0c0f017070be7e06e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35479060"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858749"
 ---
 ```javascript
 
@@ -17,8 +17,6 @@ const client = Client.init(options);
 
 let res = await client.api('/groups/delta')
     .version('beta')
-    .header('Prefer','return=minimal')
-    .select('displayName,description,mailNickname')
     .get();
 
 ```

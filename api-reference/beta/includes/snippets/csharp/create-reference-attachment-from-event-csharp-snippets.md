@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: aea6ee894134ff4f14418367836965c391f4dd14
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3fa4180fbdf43ab37f50e22d6679a2bbc76b4143
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35499482"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859504"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = new Attachment
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","#microsoft.graph.referenceAttachment"}
+    },
     Name = "Personal pictures",
     SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
     ProviderType = "oneDriveConsumer",

@@ -4,57 +4,57 @@ description: 获取给定范围上方的一定数量的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d4542c797cab15c9ecc0d85b6a66c83f65188588
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c9a12f8054e71ad7fdf1c6d7392669f0a539bfca
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458759"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884975"
 ---
-# <a name="workbookrange-rowsabove"></a><span data-ttu-id="7c306-103">workbookRange: rowsAbove</span><span class="sxs-lookup"><span data-stu-id="7c306-103">workbookRange: rowsAbove</span></span>
+# <a name="workbookrange-rowsabove"></a><span data-ttu-id="55708-103">workbookRange: rowsAbove</span><span class="sxs-lookup"><span data-stu-id="55708-103">workbookRange: rowsAbove</span></span>
 
-<span data-ttu-id="7c306-104">获取给定范围上方的一定数量的行。</span><span class="sxs-lookup"><span data-stu-id="7c306-104">Gets a certain number of rows above a given range.</span></span>
+<span data-ttu-id="55708-104">获取给定范围上方的一定数量的行。</span><span class="sxs-lookup"><span data-stu-id="55708-104">Gets a certain number of rows above a given range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7c306-105">权限</span><span class="sxs-lookup"><span data-stu-id="7c306-105">Permissions</span></span>
-<span data-ttu-id="7c306-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7c306-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="55708-105">权限</span><span class="sxs-lookup"><span data-stu-id="55708-105">Permissions</span></span>
+<span data-ttu-id="55708-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="55708-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7c306-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7c306-108">Permission type</span></span>      | <span data-ttu-id="7c306-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7c306-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="55708-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="55708-108">Permission type</span></span>      | <span data-ttu-id="55708-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="55708-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7c306-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7c306-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7c306-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7c306-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7c306-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7c306-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c306-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="7c306-113">Not supported.</span></span>    |
-|<span data-ttu-id="7c306-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7c306-114">Application</span></span> | <span data-ttu-id="7c306-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7c306-115">Not supported.</span></span> |
+|<span data-ttu-id="55708-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="55708-110">Delegated (work or school account)</span></span> | <span data-ttu-id="55708-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="55708-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="55708-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="55708-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55708-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="55708-113">Not supported.</span></span>    |
+|<span data-ttu-id="55708-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="55708-114">Application</span></span> | <span data-ttu-id="55708-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="55708-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7c306-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7c306-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55708-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="55708-116">HTTP request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7c306-117">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7c306-117">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="55708-117">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="55708-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="7c306-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="7c306-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="55708-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="55708-118">Function parameters</span></span>
 
-| <span data-ttu-id="7c306-119">参数</span><span class="sxs-lookup"><span data-stu-id="7c306-119">Parameter</span></span>    | <span data-ttu-id="7c306-120">类型</span><span class="sxs-lookup"><span data-stu-id="7c306-120">Type</span></span>   |<span data-ttu-id="7c306-121">说明</span><span class="sxs-lookup"><span data-stu-id="7c306-121">Description</span></span>|
+| <span data-ttu-id="55708-119">参数</span><span class="sxs-lookup"><span data-stu-id="55708-119">Parameter</span></span>    | <span data-ttu-id="55708-120">类型</span><span class="sxs-lookup"><span data-stu-id="55708-120">Type</span></span>   |<span data-ttu-id="55708-121">说明</span><span class="sxs-lookup"><span data-stu-id="55708-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7c306-122">count</span><span class="sxs-lookup"><span data-stu-id="7c306-122">count</span></span>|<span data-ttu-id="7c306-123">Int32</span><span class="sxs-lookup"><span data-stu-id="7c306-123">Int32</span></span>|<span data-ttu-id="7c306-p102">可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="7c306-p102">Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
+|<span data-ttu-id="55708-122">count</span><span class="sxs-lookup"><span data-stu-id="55708-122">count</span></span>|<span data-ttu-id="55708-123">Int32</span><span class="sxs-lookup"><span data-stu-id="55708-123">Int32</span></span>|<span data-ttu-id="55708-p102">可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="55708-p102">Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="7c306-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="7c306-129">Request headers</span></span>
-| <span data-ttu-id="7c306-130">名称</span><span class="sxs-lookup"><span data-stu-id="7c306-130">Name</span></span>       | <span data-ttu-id="7c306-131">说明</span><span class="sxs-lookup"><span data-stu-id="7c306-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="55708-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="55708-129">Request headers</span></span>
+| <span data-ttu-id="55708-130">名称</span><span class="sxs-lookup"><span data-stu-id="55708-130">Name</span></span>       | <span data-ttu-id="55708-131">说明</span><span class="sxs-lookup"><span data-stu-id="55708-131">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7c306-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="7c306-132">Authorization</span></span>  | <span data-ttu-id="7c306-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7c306-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7c306-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7c306-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="7c306-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="7c306-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="55708-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="55708-132">Authorization</span></span>  | <span data-ttu-id="55708-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="55708-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="55708-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="55708-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="55708-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="55708-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7c306-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="7c306-138">Request body</span></span>
-<span data-ttu-id="7c306-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7c306-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="55708-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="55708-138">Request body</span></span>
+<span data-ttu-id="55708-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="55708-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7c306-140">响应</span><span class="sxs-lookup"><span data-stu-id="7c306-140">Response</span></span>
-<span data-ttu-id="7c306-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7c306-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="55708-140">响应</span><span class="sxs-lookup"><span data-stu-id="55708-140">Response</span></span>
+<span data-ttu-id="55708-141">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="55708-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7c306-142">示例</span><span class="sxs-lookup"><span data-stu-id="7c306-142">Example</span></span>
-<span data-ttu-id="7c306-143">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="7c306-143">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="7c306-144">请求</span><span class="sxs-lookup"><span data-stu-id="7c306-144">Request</span></span>
-<span data-ttu-id="7c306-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7c306-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="55708-142">示例</span><span class="sxs-lookup"><span data-stu-id="55708-142">Example</span></span>
+<span data-ttu-id="55708-143">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="55708-143">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="55708-144">请求</span><span class="sxs-lookup"><span data-stu-id="55708-144">Request</span></span>
+<span data-ttu-id="55708-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="55708-145">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -64,25 +64,29 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7c306-146">C#</span><span class="sxs-lookup"><span data-stu-id="7c306-146">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="55708-146">C#</span><span class="sxs-lookup"><span data-stu-id="55708-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7c306-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="7c306-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55708-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="55708-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsabove-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7c306-148">目标-C</span><span class="sxs-lookup"><span data-stu-id="7c306-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="55708-148">目标-C</span><span class="sxs-lookup"><span data-stu-id="55708-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookrange-rowsabove-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="55708-149">Java</span><span class="sxs-lookup"><span data-stu-id="55708-149">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookrange-rowsabove-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7c306-149">响应</span><span class="sxs-lookup"><span data-stu-id="7c306-149">Response</span></span>
-<span data-ttu-id="7c306-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7c306-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="55708-150">响应</span><span class="sxs-lookup"><span data-stu-id="55708-150">Response</span></span>
+<span data-ttu-id="55708-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="55708-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7c306-153">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7c306-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="55708-154">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="55708-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,9 +107,9 @@ Content-length: 157
 }
 ```
 
-<span data-ttu-id="7c306-154">如果不带可选`count`参数调用, 则此函数将返回区域上方的单个行。</span><span class="sxs-lookup"><span data-stu-id="7c306-154">If called without the optional `count` parameter, this function returns the single row above the range.</span></span>
+<span data-ttu-id="55708-155">如果不带可选`count`参数调用, 则此函数将返回区域上方的单个行。</span><span class="sxs-lookup"><span data-stu-id="55708-155">If called without the optional `count` parameter, this function returns the single row above the range.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7c306-155">请求</span><span class="sxs-lookup"><span data-stu-id="7c306-155">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="55708-156">请求</span><span class="sxs-lookup"><span data-stu-id="55708-156">Request</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -115,22 +119,26 @@ Content-length: 157
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7c306-156">C#</span><span class="sxs-lookup"><span data-stu-id="7c306-156">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="55708-157">C#</span><span class="sxs-lookup"><span data-stu-id="55708-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-nocount-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7c306-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="7c306-157">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55708-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="55708-158">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsabove-nocount-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7c306-158">目标-C</span><span class="sxs-lookup"><span data-stu-id="7c306-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="55708-159">目标-C</span><span class="sxs-lookup"><span data-stu-id="55708-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookrange-rowsabove-nocount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="55708-160">Java</span><span class="sxs-lookup"><span data-stu-id="55708-160">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookrange-rowsabove-nocount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7c306-159">响应</span><span class="sxs-lookup"><span data-stu-id="7c306-159">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="55708-161">响应</span><span class="sxs-lookup"><span data-stu-id="55708-161">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

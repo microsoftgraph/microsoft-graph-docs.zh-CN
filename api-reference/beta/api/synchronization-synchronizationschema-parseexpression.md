@@ -4,60 +4,60 @@ description: '(../resources/synchronization_attributemappingsource.md) 对象。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 33e06afa2cafcaf596f30c84fc39aaa55cb75d3d
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 24e223be3dc5ffbe50aed30ffabcf8959bdbaa6c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620995"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869133"
 ---
-# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="e5ec3-103">synchronizationSchema: parseExpression</span><span class="sxs-lookup"><span data-stu-id="e5ec3-103">synchronizationSchema: parseExpression</span></span>
+# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="3c3b4-103">synchronizationSchema: parseExpression</span><span class="sxs-lookup"><span data-stu-id="3c3b4-103">synchronizationSchema: parseExpression</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5ec3-104">将给定的字符串表达式解析为 [attributeMappingSource | (.。。/resources/synchronization_attributemappingsource.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
+<span data-ttu-id="3c3b4-104">将给定的字符串表达式解析为 [attributeMappingSource | (.。。/resources/synchronization_attributemappingsource.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
 
-<span data-ttu-id="e5ec3-105">有关表达式的详细信息, 请参阅[在 Azure Active Directory 中编写属性映射的表达式](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
+<span data-ttu-id="3c3b4-105">有关表达式的详细信息, 请参阅[在 Azure Active Directory 中编写属性映射的表达式](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e5ec3-106">权限</span><span class="sxs-lookup"><span data-stu-id="e5ec3-106">Permissions</span></span>
-<span data-ttu-id="e5ec3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3c3b4-106">权限</span><span class="sxs-lookup"><span data-stu-id="3c3b4-106">Permissions</span></span>
+<span data-ttu-id="3c3b4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5ec3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e5ec3-109">Permission type</span></span>                        | <span data-ttu-id="e5ec3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e5ec3-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3c3b4-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3c3b4-109">Permission type</span></span>                        | <span data-ttu-id="3c3b4-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3c3b4-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e5ec3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e5ec3-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="e5ec3-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5ec3-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="e5ec3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e5ec3-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="e5ec3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-114">Not supported.</span></span>|
-|<span data-ttu-id="e5ec3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e5ec3-115">Application</span></span>                            |<span data-ttu-id="e5ec3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-116">Not supported.</span></span>| 
+|<span data-ttu-id="3c3b4-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3c3b4-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="3c3b4-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3c3b4-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="3c3b4-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3c3b4-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="3c3b4-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-114">Not supported.</span></span>|
+|<span data-ttu-id="3c3b4-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="3c3b4-115">Application</span></span>                            |<span data-ttu-id="3c3b4-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="e5ec3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e5ec3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3c3b4-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3c3b4-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpression
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e5ec3-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e5ec3-118">Request headers</span></span>
-| <span data-ttu-id="e5ec3-119">名称</span><span class="sxs-lookup"><span data-stu-id="e5ec3-119">Name</span></span>       | <span data-ttu-id="e5ec3-120">说明</span><span class="sxs-lookup"><span data-stu-id="e5ec3-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3c3b4-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="3c3b4-118">Request headers</span></span>
+| <span data-ttu-id="3c3b4-119">名称</span><span class="sxs-lookup"><span data-stu-id="3c3b4-119">Name</span></span>       | <span data-ttu-id="3c3b4-120">说明</span><span class="sxs-lookup"><span data-stu-id="3c3b4-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e5ec3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5ec3-121">Authorization</span></span>  | <span data-ttu-id="e5ec3-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="e5ec3-122">Bearer {code}</span></span>|
+| <span data-ttu-id="3c3b4-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3c3b4-121">Authorization</span></span>  | <span data-ttu-id="3c3b4-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="3c3b4-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e5ec3-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="e5ec3-123">Request body</span></span>
-<span data-ttu-id="e5ec3-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3c3b4-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="3c3b4-123">Request body</span></span>
+<span data-ttu-id="3c3b4-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e5ec3-125">参数</span><span class="sxs-lookup"><span data-stu-id="e5ec3-125">Parameter</span></span>    | <span data-ttu-id="e5ec3-126">类型</span><span class="sxs-lookup"><span data-stu-id="e5ec3-126">Type</span></span>   |<span data-ttu-id="e5ec3-127">说明</span><span class="sxs-lookup"><span data-stu-id="e5ec3-127">Description</span></span>|
+| <span data-ttu-id="3c3b4-125">参数</span><span class="sxs-lookup"><span data-stu-id="3c3b4-125">Parameter</span></span>    | <span data-ttu-id="3c3b4-126">类型</span><span class="sxs-lookup"><span data-stu-id="3c3b4-126">Type</span></span>   |<span data-ttu-id="3c3b4-127">说明</span><span class="sxs-lookup"><span data-stu-id="3c3b4-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e5ec3-128">表达式</span><span class="sxs-lookup"><span data-stu-id="e5ec3-128">expression</span></span>               |<span data-ttu-id="e5ec3-129">String</span><span class="sxs-lookup"><span data-stu-id="e5ec3-129">String</span></span>               |<span data-ttu-id="e5ec3-130">要分析的表达式。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-130">Expression to parse.</span></span>|
-|<span data-ttu-id="e5ec3-131">testInputObject</span><span class="sxs-lookup"><span data-stu-id="e5ec3-131">testInputObject</span></span>          |[<span data-ttu-id="e5ec3-132">expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="e5ec3-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="e5ec3-133">要对表达式进行求值的测试数据对象。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="e5ec3-134">可选。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-134">Optional.</span></span>|
-|<span data-ttu-id="e5ec3-135">targetAttributeDefinition</span><span class="sxs-lookup"><span data-stu-id="e5ec3-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="e5ec3-136">attributeDefinition</span><span class="sxs-lookup"><span data-stu-id="e5ec3-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="e5ec3-137">将映射到此表达式的属性的定义。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="e5ec3-138">可选。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-138">Optional.</span></span>|
+|<span data-ttu-id="3c3b4-128">表达式</span><span class="sxs-lookup"><span data-stu-id="3c3b4-128">expression</span></span>               |<span data-ttu-id="3c3b4-129">String</span><span class="sxs-lookup"><span data-stu-id="3c3b4-129">String</span></span>               |<span data-ttu-id="3c3b4-130">要分析的表达式。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-130">Expression to parse.</span></span>|
+|<span data-ttu-id="3c3b4-131">testInputObject</span><span class="sxs-lookup"><span data-stu-id="3c3b4-131">testInputObject</span></span>          |[<span data-ttu-id="3c3b4-132">expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="3c3b4-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="3c3b4-133">要对表达式进行求值的测试数据对象。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="3c3b4-134">可选。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-134">Optional.</span></span>|
+|<span data-ttu-id="3c3b4-135">targetAttributeDefinition</span><span class="sxs-lookup"><span data-stu-id="3c3b4-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="3c3b4-136">attributeDefinition</span><span class="sxs-lookup"><span data-stu-id="3c3b4-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="3c3b4-137">将映射到此表达式的属性的定义。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="3c3b4-138">可选。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-138">Optional.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e5ec3-139">响应</span><span class="sxs-lookup"><span data-stu-id="e5ec3-139">Response</span></span>
-<span data-ttu-id="e5ec3-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3c3b4-139">响应</span><span class="sxs-lookup"><span data-stu-id="3c3b4-139">Response</span></span>
+<span data-ttu-id="3c3b4-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5ec3-141">示例</span><span class="sxs-lookup"><span data-stu-id="e5ec3-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3c3b4-141">示例</span><span class="sxs-lookup"><span data-stu-id="3c3b4-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e5ec3-142">请求</span><span class="sxs-lookup"><span data-stu-id="e5ec3-142">Request</span></span>
-<span data-ttu-id="e5ec3-143">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-143">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="3c3b4-142">请求</span><span class="sxs-lookup"><span data-stu-id="3c3b4-142">Request</span></span>
+<span data-ttu-id="3c3b4-143">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-143">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e5ec3-144">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e5ec3-144">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3c3b4-144">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3c3b4-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
@@ -116,25 +116,29 @@ Content-type: application/json
     }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e5ec3-145">C#</span><span class="sxs-lookup"><span data-stu-id="e5ec3-145">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3c3b4-145">C#</span><span class="sxs-lookup"><span data-stu-id="3c3b4-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-parseexpression-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e5ec3-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="e5ec3-146">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3c3b4-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="3c3b4-146">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e5ec3-147">目标-C</span><span class="sxs-lookup"><span data-stu-id="e5ec3-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3c3b4-147">目标-C</span><span class="sxs-lookup"><span data-stu-id="3c3b4-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="3c3b4-148">Java</span><span class="sxs-lookup"><span data-stu-id="3c3b4-148">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-parseexpression-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e5ec3-148">响应</span><span class="sxs-lookup"><span data-stu-id="e5ec3-148">Response</span></span>
-<span data-ttu-id="e5ec3-149">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-149">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3c3b4-149">响应</span><span class="sxs-lookup"><span data-stu-id="3c3b4-149">Response</span></span>
+<span data-ttu-id="3c3b4-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-150">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="e5ec3-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e5ec3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3c3b4-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3c3b4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
