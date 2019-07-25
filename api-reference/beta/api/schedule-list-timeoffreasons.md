@@ -4,31 +4,31 @@ description: 获取计划中的 timeOffReasons 列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a793326f3ab5a86754e62d1866c608c0133adb4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 704800f028740a3c42a1ab843fee86912b200fcb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450357"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870878"
 ---
-# <a name="list-timeoffreasons"></a><span data-ttu-id="9e317-103">列出 timeOffReasons</span><span class="sxs-lookup"><span data-stu-id="9e317-103">List timeOffReasons</span></span>
+# <a name="list-timeoffreasons"></a><span data-ttu-id="dd9c5-103">列出 timeOffReasons</span><span class="sxs-lookup"><span data-stu-id="dd9c5-103">List timeOffReasons</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="9e317-104">获取[计划](../resources/schedule.md)中的[timeOffReasons](../resources/timeoffreason.md)列表。</span><span class="sxs-lookup"><span data-stu-id="9e317-104">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="dd9c5-104">获取[计划](../resources/schedule.md)中的[timeOffReasons](../resources/timeoffreason.md)列表。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-104">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9e317-105">权限</span><span class="sxs-lookup"><span data-stu-id="9e317-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dd9c5-105">权限</span><span class="sxs-lookup"><span data-stu-id="dd9c5-105">Permissions</span></span>
 
-<span data-ttu-id="9e317-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9e317-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dd9c5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9e317-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9e317-108">Permission type</span></span>      | <span data-ttu-id="9e317-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9e317-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dd9c5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dd9c5-108">Permission type</span></span>      | <span data-ttu-id="dd9c5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dd9c5-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9e317-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9e317-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9e317-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e317-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9e317-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9e317-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e317-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e317-113">Not supported.</span></span>    |
-|<span data-ttu-id="9e317-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9e317-114">Application</span></span> | <span data-ttu-id="9e317-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e317-115">Not supported.</span></span> |
+|<span data-ttu-id="dd9c5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dd9c5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dd9c5-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dd9c5-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dd9c5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dd9c5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dd9c5-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-113">Not supported.</span></span>    |
+|<span data-ttu-id="dd9c5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="dd9c5-114">Application</span></span> | <span data-ttu-id="dd9c5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-115">Not supported.</span></span> |
 
-> <span data-ttu-id="9e317-116">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="9e317-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="9e317-117">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="9e317-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="dd9c5-116">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="dd9c5-117">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="9e317-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9e317-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dd9c5-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dd9c5-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "35450357"
 GET /teams/{teamId}/schedule/timeOffReasons
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9e317-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="9e317-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dd9c5-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="dd9c5-119">Request headers</span></span>
 
-| <span data-ttu-id="9e317-120">标头</span><span class="sxs-lookup"><span data-stu-id="9e317-120">Header</span></span>       | <span data-ttu-id="9e317-121">值</span><span class="sxs-lookup"><span data-stu-id="9e317-121">Value</span></span> |
+| <span data-ttu-id="dd9c5-120">标头</span><span class="sxs-lookup"><span data-stu-id="dd9c5-120">Header</span></span>       | <span data-ttu-id="dd9c5-121">值</span><span class="sxs-lookup"><span data-stu-id="dd9c5-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9e317-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e317-122">Authorization</span></span>  | <span data-ttu-id="9e317-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9e317-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9e317-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9e317-125">Content-Type</span></span>  | <span data-ttu-id="9e317-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9e317-126">application/json</span></span>  |
+| <span data-ttu-id="dd9c5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd9c5-122">Authorization</span></span>  | <span data-ttu-id="dd9c5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="dd9c5-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dd9c5-125">Content-Type</span></span>  | <span data-ttu-id="dd9c5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="dd9c5-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9e317-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9e317-127">Request body</span></span>
-<span data-ttu-id="9e317-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9e317-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dd9c5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="dd9c5-127">Request body</span></span>
+<span data-ttu-id="dd9c5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9e317-129">响应</span><span class="sxs-lookup"><span data-stu-id="9e317-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dd9c5-129">响应</span><span class="sxs-lookup"><span data-stu-id="dd9c5-129">Response</span></span>
 
-<span data-ttu-id="9e317-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[timeOffReason](../resources/timeoffreason.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="9e317-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
+<span data-ttu-id="dd9c5-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[timeOffReason](../resources/timeoffreason.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9e317-131">示例</span><span class="sxs-lookup"><span data-stu-id="9e317-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dd9c5-131">示例</span><span class="sxs-lookup"><span data-stu-id="dd9c5-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9e317-132">请求</span><span class="sxs-lookup"><span data-stu-id="9e317-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dd9c5-132">请求</span><span class="sxs-lookup"><span data-stu-id="dd9c5-132">Request</span></span>
 
-<span data-ttu-id="9e317-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9e317-133">The following is an example of the request.</span></span>
+<span data-ttu-id="dd9c5-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9e317-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9e317-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="dd9c5-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="dd9c5-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
@@ -64,26 +64,30 @@ GET /teams/{teamId}/schedule/timeOffReasons
 ```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9e317-135">C#</span><span class="sxs-lookup"><span data-stu-id="9e317-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dd9c5-135">C#</span><span class="sxs-lookup"><span data-stu-id="dd9c5-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-list-timeoffreasons-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9e317-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="9e317-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dd9c5-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="dd9c5-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-list-timeoffreasons-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9e317-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="9e317-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dd9c5-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="dd9c5-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-timeoffreasons-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="dd9c5-138">Java</span><span class="sxs-lookup"><span data-stu-id="dd9c5-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-list-timeoffreasons-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="9e317-138">响应</span><span class="sxs-lookup"><span data-stu-id="9e317-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="dd9c5-139">响应</span><span class="sxs-lookup"><span data-stu-id="dd9c5-139">Response</span></span>
 
-<span data-ttu-id="9e317-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9e317-139">The following is an example of the response.</span></span> 
+<span data-ttu-id="dd9c5-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="9e317-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9e317-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="dd9c5-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="dd9c5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

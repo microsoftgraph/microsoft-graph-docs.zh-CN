@@ -4,31 +4,31 @@ description: 获取日程安排中的班次列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56672ae4e6e4cd0b91af9b0eebe91dd197c5ab52
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 17a41e65da08db307c98bc4624fc55c73b71965c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450364"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870893"
 ---
-# <a name="list-shifts"></a><span data-ttu-id="6f568-103">列出班次</span><span class="sxs-lookup"><span data-stu-id="6f568-103">List shifts</span></span>
+# <a name="list-shifts"></a><span data-ttu-id="db266-103">列出班次</span><span class="sxs-lookup"><span data-stu-id="db266-103">List shifts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="6f568-104">按[计划](../resources/schedule.md)获取[班次](../resources/shift.md)实例的列表。</span><span class="sxs-lookup"><span data-stu-id="6f568-104">Get the list of [shift](../resources/shift.md) instances in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="db266-104">按[计划](../resources/schedule.md)获取[班次](../resources/shift.md)实例的列表。</span><span class="sxs-lookup"><span data-stu-id="db266-104">Get the list of [shift](../resources/shift.md) instances in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6f568-105">权限</span><span class="sxs-lookup"><span data-stu-id="6f568-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="db266-105">权限</span><span class="sxs-lookup"><span data-stu-id="db266-105">Permissions</span></span>
 
-<span data-ttu-id="6f568-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6f568-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="db266-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="db266-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6f568-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6f568-108">Permission type</span></span>      | <span data-ttu-id="6f568-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6f568-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="db266-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="db266-108">Permission type</span></span>      | <span data-ttu-id="db266-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="db266-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6f568-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6f568-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6f568-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f568-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6f568-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6f568-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f568-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="6f568-113">Not supported.</span></span>    |
-|<span data-ttu-id="6f568-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6f568-114">Application</span></span> | <span data-ttu-id="6f568-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6f568-115">Not supported.</span></span> |
+|<span data-ttu-id="db266-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="db266-110">Delegated (work or school account)</span></span> | <span data-ttu-id="db266-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db266-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="db266-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="db266-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db266-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="db266-113">Not supported.</span></span>    |
+|<span data-ttu-id="db266-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="db266-114">Application</span></span> | <span data-ttu-id="db266-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="db266-115">Not supported.</span></span> |
 
-> <span data-ttu-id="6f568-116">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="6f568-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6f568-117">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="6f568-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="db266-116">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="db266-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="db266-117">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="db266-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6f568-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6f568-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db266-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="db266-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,30 +36,30 @@ ms.locfileid: "35450364"
 GET /teams/{teamId}/schedule/shifts
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6f568-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6f568-119">Optional query parameters</span></span>
-<span data-ttu-id="6f568-120">此方法支持 $filter [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6f568-120">This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="db266-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="db266-119">Optional query parameters</span></span>
+<span data-ttu-id="db266-120">此方法支持 $filter [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="db266-120">This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6f568-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="6f568-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="db266-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="db266-121">Request headers</span></span>
 
-| <span data-ttu-id="6f568-122">标头</span><span class="sxs-lookup"><span data-stu-id="6f568-122">Header</span></span>       | <span data-ttu-id="6f568-123">值</span><span class="sxs-lookup"><span data-stu-id="6f568-123">Value</span></span> |
+| <span data-ttu-id="db266-122">标头</span><span class="sxs-lookup"><span data-stu-id="db266-122">Header</span></span>       | <span data-ttu-id="db266-123">值</span><span class="sxs-lookup"><span data-stu-id="db266-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6f568-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="6f568-124">Authorization</span></span>  | <span data-ttu-id="6f568-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6f568-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6f568-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6f568-127">Content-Type</span></span>  | <span data-ttu-id="6f568-128">application/json</span><span class="sxs-lookup"><span data-stu-id="6f568-128">application/json</span></span>  |
+| <span data-ttu-id="db266-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="db266-124">Authorization</span></span>  | <span data-ttu-id="db266-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="db266-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="db266-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="db266-127">Content-Type</span></span>  | <span data-ttu-id="db266-128">application/json</span><span class="sxs-lookup"><span data-stu-id="db266-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6f568-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="6f568-129">Request body</span></span>
-<span data-ttu-id="6f568-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6f568-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db266-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="db266-129">Request body</span></span>
+<span data-ttu-id="db266-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="db266-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6f568-131">响应</span><span class="sxs-lookup"><span data-stu-id="6f568-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="db266-131">响应</span><span class="sxs-lookup"><span data-stu-id="db266-131">Response</span></span>
 
-<span data-ttu-id="6f568-132">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="6f568-132">If successful, this method returns a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.</span></span>
+<span data-ttu-id="db266-132">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="db266-132">If successful, this method returns a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6f568-133">示例</span><span class="sxs-lookup"><span data-stu-id="6f568-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="db266-133">示例</span><span class="sxs-lookup"><span data-stu-id="db266-133">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6f568-134">请求</span><span class="sxs-lookup"><span data-stu-id="6f568-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="db266-134">请求</span><span class="sxs-lookup"><span data-stu-id="db266-134">Request</span></span>
 
-<span data-ttu-id="6f568-135">下面是一个请求的示例, 该请求获取具有共享版本的所有**shift**对象和在2019年3月18日之间的草稿版本。</span><span class="sxs-lookup"><span data-stu-id="6f568-135">The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.</span></span>
+<span data-ttu-id="db266-135">下面是一个请求的示例, 该请求获取具有共享版本的所有**shift**对象和在2019年3月18日之间的草稿版本。</span><span class="sxs-lookup"><span data-stu-id="db266-135">The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6f568-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="6f568-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="db266-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="db266-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-list-shifts"
@@ -67,26 +67,30 @@ GET /teams/{teamId}/schedule/shifts
 ```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6f568-137">C#</span><span class="sxs-lookup"><span data-stu-id="6f568-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="db266-137">C#</span><span class="sxs-lookup"><span data-stu-id="db266-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-list-shifts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f568-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="6f568-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="db266-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="db266-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-list-shifts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6f568-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="6f568-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="db266-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="db266-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-shifts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="db266-140">Java</span><span class="sxs-lookup"><span data-stu-id="db266-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-list-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6f568-140">响应</span><span class="sxs-lookup"><span data-stu-id="6f568-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="db266-141">响应</span><span class="sxs-lookup"><span data-stu-id="db266-141">Response</span></span>
 
-<span data-ttu-id="6f568-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6f568-141">The following is an example of the response.</span></span> 
+<span data-ttu-id="db266-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="db266-142">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="6f568-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6f568-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="db266-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="db266-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
