@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: a9d6fbf463e9399f42279892e5793a503631df86
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 3766f4ff3db0355419476ecca0cd3b4fed722b9d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35736915"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881160"
 ---
 ```csharp
 
@@ -17,7 +17,8 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("enddatetime", "2016-12-30T00:00:00Z")
 };
 
-var delta = await graphClient.Me.CalendarView.Delta()
+var delta = await graphClient.Me.CalendarView
+    .Delta()
     .Request( queryOptions )
     .Header("Prefer","odata.maxpagesize=2")
     .GetAsync();

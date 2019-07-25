@@ -4,54 +4,54 @@ description: 续订组以更新到期时间。 续订后，组的有效期就会
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 4df9ea8fc4d8cd1f397e6bb20f9cf136e03a23d3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 264763a7f5997a989ad54056caa898a450f0da38
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460047"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885437"
 ---
-# <a name="group-renew"></a><span data-ttu-id="47556-104">group: renew</span><span class="sxs-lookup"><span data-stu-id="47556-104">group: renew</span></span>
+# <a name="group-renew"></a><span data-ttu-id="f578c-104">group: renew</span><span class="sxs-lookup"><span data-stu-id="f578c-104">group: renew</span></span>
 
-<span data-ttu-id="47556-105">续订组以更新到期时间。</span><span class="sxs-lookup"><span data-stu-id="47556-105">Renews a group's expiration.</span></span> <span data-ttu-id="47556-106">续订后，组的有效期就会延长策略中定义的天数。</span><span class="sxs-lookup"><span data-stu-id="47556-106">When a group is renewed, the group expiration is extended by the number of days defined in the policy.</span></span>
+<span data-ttu-id="f578c-105">续订组以更新到期时间。</span><span class="sxs-lookup"><span data-stu-id="f578c-105">Renews a group's expiration.</span></span> <span data-ttu-id="f578c-106">续订后，组的有效期就会延长策略中定义的天数。</span><span class="sxs-lookup"><span data-stu-id="f578c-106">When a group is renewed, the group expiration is extended by the number of days defined in the policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="47556-107">权限</span><span class="sxs-lookup"><span data-stu-id="47556-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f578c-107">权限</span><span class="sxs-lookup"><span data-stu-id="f578c-107">Permissions</span></span>
 
-<span data-ttu-id="47556-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="47556-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f578c-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f578c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
  
 
-|<span data-ttu-id="47556-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="47556-110">Permission type</span></span>      | <span data-ttu-id="47556-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="47556-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f578c-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f578c-110">Permission type</span></span>      | <span data-ttu-id="f578c-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f578c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="47556-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="47556-112">Delegated (work or school account)</span></span> | <span data-ttu-id="47556-113">Group.ReadWrite.All 或 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47556-113">Group.ReadWrite.All or Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="47556-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="47556-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47556-115">不支持</span><span class="sxs-lookup"><span data-stu-id="47556-115">Not supported</span></span> |
-|<span data-ttu-id="47556-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="47556-116">Application</span></span> | <span data-ttu-id="47556-117">Group.ReadWrite.All 或 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47556-117">Group.ReadWrite.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f578c-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f578c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f578c-113">Group.ReadWrite.All 或 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f578c-113">Group.ReadWrite.All or Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f578c-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f578c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f578c-115">不支持</span><span class="sxs-lookup"><span data-stu-id="f578c-115">Not supported</span></span> |
+|<span data-ttu-id="f578c-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f578c-116">Application</span></span> | <span data-ttu-id="f578c-117">Group.ReadWrite.All 或 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f578c-117">Group.ReadWrite.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="47556-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="47556-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f578c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f578c-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/renew
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="47556-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="47556-119">Request headers</span></span>
-| <span data-ttu-id="47556-120">名称</span><span class="sxs-lookup"><span data-stu-id="47556-120">Name</span></span>       | <span data-ttu-id="47556-121">说明</span><span class="sxs-lookup"><span data-stu-id="47556-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f578c-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f578c-119">Request headers</span></span>
+| <span data-ttu-id="f578c-120">名称</span><span class="sxs-lookup"><span data-stu-id="f578c-120">Name</span></span>       | <span data-ttu-id="f578c-121">说明</span><span class="sxs-lookup"><span data-stu-id="f578c-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="47556-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="47556-122">Authorization</span></span>  | <span data-ttu-id="47556-123">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="47556-123">Bearer {token}</span></span> |
+| <span data-ttu-id="f578c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f578c-122">Authorization</span></span>  | <span data-ttu-id="f578c-123">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="f578c-123">Bearer {token}</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="47556-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="47556-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f578c-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="f578c-124">Request body</span></span>
 
-<span data-ttu-id="47556-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="47556-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f578c-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f578c-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="47556-126">响应</span><span class="sxs-lookup"><span data-stu-id="47556-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f578c-126">响应</span><span class="sxs-lookup"><span data-stu-id="f578c-126">Response</span></span>
 
-<span data-ttu-id="47556-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="47556-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f578c-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f578c-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="47556-129">示例</span><span class="sxs-lookup"><span data-stu-id="47556-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f578c-129">示例</span><span class="sxs-lookup"><span data-stu-id="f578c-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="47556-130">请求</span><span class="sxs-lookup"><span data-stu-id="47556-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f578c-130">请求</span><span class="sxs-lookup"><span data-stu-id="f578c-130">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="47556-131">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="47556-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f578c-131">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f578c-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_renew"
@@ -59,23 +59,27 @@ POST /groups/{id}/renew
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="47556-132">C#</span><span class="sxs-lookup"><span data-stu-id="47556-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f578c-132">C#</span><span class="sxs-lookup"><span data-stu-id="f578c-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="47556-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="47556-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f578c-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="f578c-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="47556-134">目标-C</span><span class="sxs-lookup"><span data-stu-id="47556-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f578c-134">目标-C</span><span class="sxs-lookup"><span data-stu-id="f578c-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="f578c-135">Java</span><span class="sxs-lookup"><span data-stu-id="f578c-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="47556-135">响应</span><span class="sxs-lookup"><span data-stu-id="47556-135">Response</span></span>
-<span data-ttu-id="47556-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="47556-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f578c-136">响应</span><span class="sxs-lookup"><span data-stu-id="f578c-136">Response</span></span>
+<span data-ttu-id="f578c-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f578c-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
