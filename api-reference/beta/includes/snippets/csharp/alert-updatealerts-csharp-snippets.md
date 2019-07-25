@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: c9db24ae80cdcfffee6f215805fc22c67eaf6804
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8c00e66b2e48a48daab61f11c8fd7da02657704d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35479984"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855352"
 ---
 ```csharp
 
@@ -23,10 +23,18 @@ var value = new List<Alert>()
         },
         Feedback = new AlertFeedback
         {
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"@odata.type","microsoft.graph.alertFeedback"}
+            }
         },
         Id = "String (identifier)",
         Status = new AlertStatus
         {
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"@odata.type","microsoft.graph.alertStatus"}
+            }
         },
         Tags = new List<String>()
         {

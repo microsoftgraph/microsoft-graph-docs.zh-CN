@@ -4,28 +4,28 @@ description: 清除图表元素的线条格式。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d6afd4b29f1d8aacf089b8ef660f3cfa2cae9308
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 883e691dc7209e3618cc556bc9d10394813f5725
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438053"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863939"
 ---
-# <a name="chartlineformat-clear"></a><span data-ttu-id="3812e-103">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="3812e-103">ChartLineFormat: clear</span></span>
+# <a name="chartlineformat-clear"></a><span data-ttu-id="cb61c-103">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="cb61c-103">ChartLineFormat: clear</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3812e-104">清除图表元素的线条格式。</span><span class="sxs-lookup"><span data-stu-id="3812e-104">Clear the line format of a chart element.</span></span>
-## <a name="permissions"></a><span data-ttu-id="3812e-105">权限</span><span class="sxs-lookup"><span data-stu-id="3812e-105">Permissions</span></span>
-<span data-ttu-id="3812e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3812e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cb61c-104">清除图表元素的线条格式。</span><span class="sxs-lookup"><span data-stu-id="cb61c-104">Clear the line format of a chart element.</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb61c-105">权限</span><span class="sxs-lookup"><span data-stu-id="cb61c-105">Permissions</span></span>
+<span data-ttu-id="cb61c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cb61c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3812e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3812e-108">Permission type</span></span>      | <span data-ttu-id="3812e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3812e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cb61c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="cb61c-108">Permission type</span></span>      | <span data-ttu-id="cb61c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cb61c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3812e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3812e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3812e-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3812e-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="3812e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3812e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3812e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3812e-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="3812e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3812e-114">Application</span></span> | <span data-ttu-id="3812e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3812e-115">Not supported.</span></span> |
+|<span data-ttu-id="cb61c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cb61c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cb61c-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cb61c-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="cb61c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cb61c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb61c-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cb61c-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="cb61c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="cb61c-114">Application</span></span> | <span data-ttu-id="cb61c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cb61c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3812e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3812e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb61c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cb61c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line/clear
@@ -33,24 +33,24 @@ POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/
 POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines/format/line/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="3812e-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="3812e-117">Request headers</span></span>
-| <span data-ttu-id="3812e-118">名称</span><span class="sxs-lookup"><span data-stu-id="3812e-118">Name</span></span>       | <span data-ttu-id="3812e-119">说明</span><span class="sxs-lookup"><span data-stu-id="3812e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cb61c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="cb61c-117">Request headers</span></span>
+| <span data-ttu-id="cb61c-118">名称</span><span class="sxs-lookup"><span data-stu-id="cb61c-118">Name</span></span>       | <span data-ttu-id="cb61c-119">说明</span><span class="sxs-lookup"><span data-stu-id="cb61c-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="3812e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3812e-120">Authorization</span></span>  | <span data-ttu-id="3812e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3812e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3812e-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="3812e-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="3812e-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="3812e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="cb61c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cb61c-120">Authorization</span></span>  | <span data-ttu-id="cb61c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cb61c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cb61c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="cb61c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="cb61c-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="cb61c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3812e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="3812e-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb61c-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="cb61c-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="3812e-127">响应</span><span class="sxs-lookup"><span data-stu-id="3812e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cb61c-127">响应</span><span class="sxs-lookup"><span data-stu-id="cb61c-127">Response</span></span>
 
-<span data-ttu-id="3812e-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3812e-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cb61c-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="cb61c-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3812e-130">示例</span><span class="sxs-lookup"><span data-stu-id="3812e-130">Example</span></span>
-<span data-ttu-id="3812e-131">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="3812e-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="3812e-132">请求</span><span class="sxs-lookup"><span data-stu-id="3812e-132">Request</span></span>
-<span data-ttu-id="3812e-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3812e-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cb61c-130">示例</span><span class="sxs-lookup"><span data-stu-id="cb61c-130">Example</span></span>
+<span data-ttu-id="cb61c-131">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="cb61c-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb61c-132">请求</span><span class="sxs-lookup"><span data-stu-id="cb61c-132">Request</span></span>
+<span data-ttu-id="cb61c-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cb61c-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3812e-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3812e-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cb61c-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="cb61c-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chartlineformat_clear"
@@ -58,23 +58,27 @@ POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line/clear
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3812e-135">C#</span><span class="sxs-lookup"><span data-stu-id="3812e-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cb61c-135">C#</span><span class="sxs-lookup"><span data-stu-id="cb61c-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chartlineformat-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3812e-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="3812e-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb61c-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb61c-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartlineformat-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3812e-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="3812e-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cb61c-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="cb61c-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chartlineformat-clear-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="cb61c-138">Java</span><span class="sxs-lookup"><span data-stu-id="cb61c-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chartlineformat-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3812e-138">响应</span><span class="sxs-lookup"><span data-stu-id="3812e-138">Response</span></span>
-<span data-ttu-id="3812e-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3812e-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="cb61c-139">响应</span><span class="sxs-lookup"><span data-stu-id="cb61c-139">Response</span></span>
+<span data-ttu-id="cb61c-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="cb61c-140">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
