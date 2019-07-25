@@ -4,12 +4,12 @@ description: "  组管理员代表课程中的教师。 如果使用的是委派
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: b2f1bbb2e756a32d636154bb3d71e95cf0ae7e11
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a4458287c9473e49c55ed2afae981cfaa61ebb69
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449972"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886445"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

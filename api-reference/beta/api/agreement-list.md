@@ -2,12 +2,12 @@
 title: 列出协议
 description: 检索协议对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: d11c561dcd52970ab3143f93a0e3a7917969216d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bb6ea113238c9a6e991b3ae3068182497969390e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439803"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855504"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/agreements
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
