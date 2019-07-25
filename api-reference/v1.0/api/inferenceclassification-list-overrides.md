@@ -2,12 +2,12 @@
 title: 列表替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
 localization_priority: Normal
-ms.openlocfilehash: 9545c70c18fc117df115873a2e2145fa1d6b1d09
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8bbe0eb84f03e4a6c11114c9eca78640e4f0036f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444601"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880866"
 ---
 # <a name="list-overrides"></a>列表替代
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-overrides-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-overrides-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

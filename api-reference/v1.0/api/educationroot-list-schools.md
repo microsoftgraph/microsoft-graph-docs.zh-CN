@@ -4,12 +4,12 @@ description: 检索所有 school 对象的列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9dd70e0ab162c3718f108d01dfdc5a63118fae76
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8b7d65114241de75a83d83bd7ee40ecb316d4349
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449888"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881411"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -28,23 +28,23 @@ ms.locfileid: "35449888"
 <!-- { "blockType": "ignored" } -->
 ```http GET /education/schools
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-## Request headers
-| Header       | Value |
+## <a name="request-headers"></a>请求标头
+| 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 
-## Request body
-Do not supply a request body for this method.
-## Response
-If successful, this method returns a `200 OK` response code and a collection of [educationSchool](../resources/educationschool.md) objects in the response body.
-## Example
-##### Request
-The following is an example of the request.
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+## <a name="response"></a>响应
+如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationSchool](../resources/educationschool.md) 对象的集合。
+## <a name="example"></a>示例
+##### <a name="request"></a>请求
+下面展示了示例请求。
 
-# [HTTP](#tab/http)
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schools"
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/v1.0/education/schools
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 组设置模板表示一组模板，用于创建组设置并在租�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd34c3004211243c0146f5c0200bcdf2fb821600
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c8d1bfca75705dd7bca696acd8a54c97b3ef8941
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447381"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889392"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettingtemplates-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

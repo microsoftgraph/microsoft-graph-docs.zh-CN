@@ -4,12 +4,12 @@ description: 获取设备所属的组。 此 API 请求是可传递的, 并且�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 168eb9b0c204d08d9e23442443e9ac717b19934b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6fc506433a12d8ee5b1e54150c5dc54bff39e5b7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437234"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862686"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-devices-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

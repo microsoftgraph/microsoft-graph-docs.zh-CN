@@ -4,12 +4,12 @@ description: 获取已登录用户的邮箱中的所有邮件文件夹。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ff3798bdc0d4f3c95814be90ad7337ef8bd83fb5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c006e1f4b8714c332b9a1d3144c660784fda11f5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457728"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867235"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -24,7 +24,7 @@ ms.locfileid: "35457728"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
 |委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
-|应用程序 | Mail.Read、Mail.ReadWrite |
+|应用程序 | User.readbasic.all、邮件、读取、封写 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: 列出 memberOf
 description: 检索连接器所属的 connectorgroup。
 localization_priority: Normal
-ms.openlocfilehash: 19d6e8c45751f5c257c00381c90e77b7bff0bb19
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 28051e687d65beaea3962e2f4befce9f9c9d8f25
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327476"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863405"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -47,7 +47,7 @@ GET /connectors/{id}/memberOf
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "connector_get_memberof"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectors/{id}/memberOf

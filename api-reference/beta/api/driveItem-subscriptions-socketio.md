@@ -3,12 +3,12 @@ title: 获取 websocket 终结点
 description: 在生产应用程序中不支持使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 13162b809de74dee1471d85ea58a472f280565d2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1af28effcb9a0ddecf09f018c5e40c175f94d898
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436513"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861438"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -62,6 +62,10 @@ GET /me/drive/root/subscriptions/socketIo
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

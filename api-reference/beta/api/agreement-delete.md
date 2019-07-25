@@ -2,12 +2,12 @@
 title: 删除协议
 description: 删除协议对象。
 localization_priority: Normal
-ms.openlocfilehash: 4b7e10567c658799c97f881026de812f3b510162
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2b0bf56bf63a62cacd757035f10f0cbb48a30604
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439831"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35855517"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -61,6 +61,10 @@ DELETE https://graph.microsoft.com/beta/agreements/<id>
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-agreement-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
