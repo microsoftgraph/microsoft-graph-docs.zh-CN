@@ -4,53 +4,53 @@ description: 更新 chartlineformat 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 25b417f44d10645426ac5a3539877b917e0caca9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 12b653a629def4f575934c21ffda353a4b1fb5ee
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443264"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886101"
 ---
-# <a name="update-chartlineformat"></a><span data-ttu-id="7e868-103">更新 chartlineformat</span><span class="sxs-lookup"><span data-stu-id="7e868-103">Update chartlineformat</span></span>
+# <a name="update-chartlineformat"></a><span data-ttu-id="c8d78-103">更新 chartlineformat</span><span class="sxs-lookup"><span data-stu-id="c8d78-103">Update chartlineformat</span></span>
 
-<span data-ttu-id="7e868-104">更新 chartlineformat 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7e868-104">Update the properties of chartlineformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7e868-105">权限</span><span class="sxs-lookup"><span data-stu-id="7e868-105">Permissions</span></span>
-<span data-ttu-id="7e868-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7e868-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c8d78-104">更新 chartlineformat 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="c8d78-104">Update the properties of chartlineformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c8d78-105">权限</span><span class="sxs-lookup"><span data-stu-id="c8d78-105">Permissions</span></span>
+<span data-ttu-id="c8d78-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c8d78-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7e868-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7e868-108">Permission type</span></span>      | <span data-ttu-id="7e868-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7e868-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c8d78-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c8d78-108">Permission type</span></span>      | <span data-ttu-id="c8d78-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c8d78-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7e868-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7e868-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7e868-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7e868-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7e868-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7e868-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e868-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="7e868-113">Not supported.</span></span>    |
-|<span data-ttu-id="7e868-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7e868-114">Application</span></span> | <span data-ttu-id="7e868-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7e868-115">Not supported.</span></span> |
+|<span data-ttu-id="c8d78-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c8d78-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c8d78-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c8d78-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c8d78-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c8d78-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8d78-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8d78-113">Not supported.</span></span>    |
+|<span data-ttu-id="c8d78-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c8d78-114">Application</span></span> | <span data-ttu-id="c8d78-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c8d78-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7e868-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7e868-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8d78-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c8d78-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7e868-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="7e868-117">Optional request headers</span></span>
-| <span data-ttu-id="7e868-118">名称</span><span class="sxs-lookup"><span data-stu-id="7e868-118">Name</span></span>       | <span data-ttu-id="7e868-119">说明</span><span class="sxs-lookup"><span data-stu-id="7e868-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="c8d78-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="c8d78-117">Optional request headers</span></span>
+| <span data-ttu-id="c8d78-118">名称</span><span class="sxs-lookup"><span data-stu-id="c8d78-118">Name</span></span>       | <span data-ttu-id="c8d78-119">说明</span><span class="sxs-lookup"><span data-stu-id="c8d78-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7e868-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e868-120">Authorization</span></span>  | <span data-ttu-id="7e868-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7e868-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7e868-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7e868-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="7e868-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="7e868-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c8d78-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c8d78-120">Authorization</span></span>  | <span data-ttu-id="c8d78-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c8d78-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c8d78-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c8d78-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c8d78-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="c8d78-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7e868-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="7e868-126">Request body</span></span>
-<span data-ttu-id="7e868-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="7e868-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8d78-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c8d78-126">Request body</span></span>
+<span data-ttu-id="c8d78-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="c8d78-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7e868-130">属性</span><span class="sxs-lookup"><span data-stu-id="7e868-130">Property</span></span>     | <span data-ttu-id="7e868-131">类型</span><span class="sxs-lookup"><span data-stu-id="7e868-131">Type</span></span>   |<span data-ttu-id="7e868-132">说明</span><span class="sxs-lookup"><span data-stu-id="7e868-132">Description</span></span>|
+| <span data-ttu-id="c8d78-130">属性</span><span class="sxs-lookup"><span data-stu-id="c8d78-130">Property</span></span>     | <span data-ttu-id="c8d78-131">类型</span><span class="sxs-lookup"><span data-stu-id="c8d78-131">Type</span></span>   |<span data-ttu-id="c8d78-132">说明</span><span class="sxs-lookup"><span data-stu-id="c8d78-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7e868-133">color</span><span class="sxs-lookup"><span data-stu-id="7e868-133">color</span></span>|<span data-ttu-id="7e868-134">string</span><span class="sxs-lookup"><span data-stu-id="7e868-134">string</span></span>|<span data-ttu-id="7e868-135">表示图表中的线条颜色的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="7e868-135">HTML color code representing the color of lines in the chart.</span></span>|
+|<span data-ttu-id="c8d78-133">color</span><span class="sxs-lookup"><span data-stu-id="c8d78-133">color</span></span>|<span data-ttu-id="c8d78-134">string</span><span class="sxs-lookup"><span data-stu-id="c8d78-134">string</span></span>|<span data-ttu-id="c8d78-135">表示图表中的线条颜色的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="c8d78-135">HTML color code representing the color of lines in the chart.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7e868-136">响应</span><span class="sxs-lookup"><span data-stu-id="7e868-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c8d78-136">响应</span><span class="sxs-lookup"><span data-stu-id="c8d78-136">Response</span></span>
 
-<span data-ttu-id="7e868-137">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartLineFormat](../resources/chartlineformat.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7e868-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7e868-138">示例</span><span class="sxs-lookup"><span data-stu-id="7e868-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7e868-139">请求</span><span class="sxs-lookup"><span data-stu-id="7e868-139">Request</span></span>
-<span data-ttu-id="7e868-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7e868-140">Here is an example of the request.</span></span>
+<span data-ttu-id="c8d78-137">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartLineFormat](../resources/chartlineformat.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c8d78-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c8d78-138">示例</span><span class="sxs-lookup"><span data-stu-id="c8d78-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c8d78-139">请求</span><span class="sxs-lookup"><span data-stu-id="c8d78-139">Request</span></span>
+<span data-ttu-id="c8d78-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c8d78-140">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7e868-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7e868-141">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c8d78-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="c8d78-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chartlineformat"
@@ -64,22 +64,26 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7e868-142">C#</span><span class="sxs-lookup"><span data-stu-id="7e868-142">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c8d78-142">C#</span><span class="sxs-lookup"><span data-stu-id="c8d78-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartlineformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e868-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="7e868-143">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c8d78-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="c8d78-143">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chartlineformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e868-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="7e868-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c8d78-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="c8d78-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chartlineformat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="c8d78-145">Java</span><span class="sxs-lookup"><span data-stu-id="c8d78-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-chartlineformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7e868-145">响应</span><span class="sxs-lookup"><span data-stu-id="7e868-145">Response</span></span>
-<span data-ttu-id="7e868-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7e868-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c8d78-146">响应</span><span class="sxs-lookup"><span data-stu-id="c8d78-146">Response</span></span>
+<span data-ttu-id="c8d78-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c8d78-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

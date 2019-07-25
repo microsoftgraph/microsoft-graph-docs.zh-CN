@@ -4,51 +4,51 @@ description: 检索 licenseDetails 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e37bc87beea03c2fc2a5f045635d2d33b8c01bf1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f5fd5c332983e20b4988205eb01a150ce59c625b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460327"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888856"
 ---
-# <a name="list-licensedetails"></a><span data-ttu-id="2e627-103">List licenseDetails</span><span class="sxs-lookup"><span data-stu-id="2e627-103">List licenseDetails</span></span>
+# <a name="list-licensedetails"></a><span data-ttu-id="e0716-103">List licenseDetails</span><span class="sxs-lookup"><span data-stu-id="e0716-103">List licenseDetails</span></span>
 
-<span data-ttu-id="2e627-104">检索 licenseDetails 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="2e627-104">Retrieve a list of licenseDetails objects.</span></span>
+<span data-ttu-id="e0716-104">检索 licenseDetails 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="e0716-104">Retrieve a list of licenseDetails objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2e627-105">权限</span><span class="sxs-lookup"><span data-stu-id="2e627-105">Permissions</span></span>
-<span data-ttu-id="2e627-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2e627-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e0716-105">权限</span><span class="sxs-lookup"><span data-stu-id="e0716-105">Permissions</span></span>
+<span data-ttu-id="e0716-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e0716-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2e627-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2e627-108">Permission type</span></span>      | <span data-ttu-id="2e627-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2e627-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e0716-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e0716-108">Permission type</span></span>      | <span data-ttu-id="e0716-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e0716-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2e627-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2e627-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2e627-111">User. read, User. all, All, all, Directory.accessasuser.all, all, all, all, all。 All</span><span class="sxs-lookup"><span data-stu-id="2e627-111">User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="2e627-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2e627-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e627-113">User.Read</span><span class="sxs-lookup"><span data-stu-id="2e627-113">User.Read</span></span>    |
-|<span data-ttu-id="2e627-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2e627-114">Application</span></span> | <span data-ttu-id="2e627-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e627-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="e0716-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e0716-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e0716-111">User. read, User. all, All, all, Directory.accessasuser.all, all, all, all, all。 All</span><span class="sxs-lookup"><span data-stu-id="e0716-111">User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="e0716-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e0716-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e0716-113">User.Read</span><span class="sxs-lookup"><span data-stu-id="e0716-113">User.Read</span></span>    |
+|<span data-ttu-id="e0716-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e0716-114">Application</span></span> | <span data-ttu-id="e0716-115">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e0716-115">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2e627-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2e627-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e0716-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e0716-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2e627-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2e627-117">Optional query parameters</span></span>
-<span data-ttu-id="2e627-118">此方法**不**支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="2e627-118">This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e0716-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e0716-117">Optional query parameters</span></span>
+<span data-ttu-id="e0716-118">此方法**不**支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="e0716-118">This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2e627-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2e627-119">Request headers</span></span>
-| <span data-ttu-id="2e627-120">名称</span><span class="sxs-lookup"><span data-stu-id="2e627-120">Name</span></span>      |<span data-ttu-id="2e627-121">说明</span><span class="sxs-lookup"><span data-stu-id="2e627-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e0716-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e0716-119">Request headers</span></span>
+| <span data-ttu-id="e0716-120">名称</span><span class="sxs-lookup"><span data-stu-id="e0716-120">Name</span></span>      |<span data-ttu-id="e0716-121">说明</span><span class="sxs-lookup"><span data-stu-id="e0716-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2e627-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e627-122">Authorization</span></span>  | <span data-ttu-id="2e627-123">持有&lt;者代码&gt;</span><span class="sxs-lookup"><span data-stu-id="2e627-123">Bearer &lt;code&gt;</span></span>|
+| <span data-ttu-id="e0716-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0716-122">Authorization</span></span>  | <span data-ttu-id="e0716-123">持有&lt;者代码&gt;</span><span class="sxs-lookup"><span data-stu-id="e0716-123">Bearer &lt;code&gt;</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2e627-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="2e627-124">Request body</span></span>
-<span data-ttu-id="2e627-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2e627-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e0716-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="e0716-124">Request body</span></span>
+<span data-ttu-id="e0716-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e0716-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2e627-126">响应</span><span class="sxs-lookup"><span data-stu-id="2e627-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e0716-126">响应</span><span class="sxs-lookup"><span data-stu-id="e0716-126">Response</span></span>
 
-<span data-ttu-id="2e627-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[licenseDetails](../resources/licensedetails.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="2e627-127">If successful, this method returns a `200 OK` response code and collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2e627-128">示例</span><span class="sxs-lookup"><span data-stu-id="2e627-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2e627-129">请求</span><span class="sxs-lookup"><span data-stu-id="2e627-129">Request</span></span>
+<span data-ttu-id="e0716-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[licenseDetails](../resources/licensedetails.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="e0716-127">If successful, this method returns a `200 OK` response code and collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e0716-128">示例</span><span class="sxs-lookup"><span data-stu-id="e0716-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e0716-129">请求</span><span class="sxs-lookup"><span data-stu-id="e0716-129">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2e627-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="2e627-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e0716-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e0716-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_licensedetails"
@@ -56,22 +56,26 @@ GET /users/{id}/licenseDetails
 ```http
 GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2e627-131">C#</span><span class="sxs-lookup"><span data-stu-id="2e627-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e0716-131">C#</span><span class="sxs-lookup"><span data-stu-id="e0716-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-licensedetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2e627-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="2e627-132">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e0716-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="e0716-132">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-licensedetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2e627-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="2e627-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e0716-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="e0716-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-licensedetails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="e0716-134">Java</span><span class="sxs-lookup"><span data-stu-id="e0716-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="2e627-134">响应</span><span class="sxs-lookup"><span data-stu-id="2e627-134">Response</span></span>
-<span data-ttu-id="2e627-p102">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2e627-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e0716-135">响应</span><span class="sxs-lookup"><span data-stu-id="e0716-135">Response</span></span>
+<span data-ttu-id="e0716-p102">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e0716-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

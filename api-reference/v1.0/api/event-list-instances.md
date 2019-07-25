@@ -4,29 +4,29 @@ description: 获取指定的时间范围的事件的实例（发生次数）。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5c46cf052ef476bc228f130bc855303d7c2cea4d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b09eb74ac6366ddfdf0e04606aec189eff942012
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448631"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35887305"
 ---
-# <a name="list-instances"></a><span data-ttu-id="d5def-103">列出实例</span><span class="sxs-lookup"><span data-stu-id="d5def-103">List instances</span></span>
+# <a name="list-instances"></a><span data-ttu-id="69fcb-103">列出实例</span><span class="sxs-lookup"><span data-stu-id="69fcb-103">List instances</span></span>
 
-<span data-ttu-id="d5def-104">获取指定的时间范围的事件的实例（发生次数）。</span><span class="sxs-lookup"><span data-stu-id="d5def-104">Get the instances (occurrences) of an event for a specified time range.</span></span> 
+<span data-ttu-id="69fcb-104">获取指定的时间范围的事件的实例（发生次数）。</span><span class="sxs-lookup"><span data-stu-id="69fcb-104">Get the instances (occurrences) of an event for a specified time range.</span></span> 
 
-<span data-ttu-id="d5def-105">如果事件的类型是 `seriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。</span><span class="sxs-lookup"><span data-stu-id="d5def-105">If the event is a `seriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.</span></span>
+<span data-ttu-id="69fcb-105">如果事件的类型是 `seriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。</span><span class="sxs-lookup"><span data-stu-id="69fcb-105">If the event is a `seriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d5def-106">权限</span><span class="sxs-lookup"><span data-stu-id="d5def-106">Permissions</span></span>
-<span data-ttu-id="d5def-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d5def-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="69fcb-106">权限</span><span class="sxs-lookup"><span data-stu-id="69fcb-106">Permissions</span></span>
+<span data-ttu-id="69fcb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="69fcb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d5def-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="d5def-109">Permission type</span></span>      | <span data-ttu-id="d5def-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d5def-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="69fcb-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="69fcb-109">Permission type</span></span>      | <span data-ttu-id="69fcb-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="69fcb-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d5def-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d5def-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d5def-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d5def-112">Calendars.Read</span></span>    |
-|<span data-ttu-id="d5def-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d5def-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5def-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d5def-114">Calendars.Read</span></span>    |
-|<span data-ttu-id="d5def-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="d5def-115">Application</span></span> | <span data-ttu-id="d5def-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d5def-116">Calendars.Read</span></span> |
+|<span data-ttu-id="69fcb-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69fcb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="69fcb-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="69fcb-112">Calendars.Read</span></span>    |
+|<span data-ttu-id="69fcb-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="69fcb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69fcb-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="69fcb-114">Calendars.Read</span></span>    |
+|<span data-ttu-id="69fcb-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="69fcb-115">Application</span></span> | <span data-ttu-id="69fcb-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="69fcb-116">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d5def-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d5def-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69fcb-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69fcb-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -46,33 +46,33 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/ins
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-## <a name="query-parameters"></a><span data-ttu-id="d5def-118">查询参数</span><span class="sxs-lookup"><span data-stu-id="d5def-118">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="69fcb-118">查询参数</span><span class="sxs-lookup"><span data-stu-id="69fcb-118">Query parameters</span></span>
 
-<span data-ttu-id="d5def-119">在请求 URL 中，提供以下必要查询参数的值。</span><span class="sxs-lookup"><span data-stu-id="d5def-119">In the request URL, provide the following required query parameters with values.</span></span>
+<span data-ttu-id="69fcb-119">在请求 URL 中，提供以下必要查询参数的值。</span><span class="sxs-lookup"><span data-stu-id="69fcb-119">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="d5def-120">参数</span><span class="sxs-lookup"><span data-stu-id="d5def-120">Parameter</span></span>    | <span data-ttu-id="d5def-121">类型</span><span class="sxs-lookup"><span data-stu-id="d5def-121">Type</span></span>   |<span data-ttu-id="d5def-122">说明</span><span class="sxs-lookup"><span data-stu-id="d5def-122">Description</span></span>|
+| <span data-ttu-id="69fcb-120">参数</span><span class="sxs-lookup"><span data-stu-id="69fcb-120">Parameter</span></span>    | <span data-ttu-id="69fcb-121">类型</span><span class="sxs-lookup"><span data-stu-id="69fcb-121">Type</span></span>   |<span data-ttu-id="69fcb-122">说明</span><span class="sxs-lookup"><span data-stu-id="69fcb-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d5def-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="d5def-123">startDateTime</span></span>|<span data-ttu-id="d5def-124">String</span><span class="sxs-lookup"><span data-stu-id="d5def-124">String</span></span>|<span data-ttu-id="d5def-p102">时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="d5def-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="d5def-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="d5def-127">endDateTime</span></span>|<span data-ttu-id="d5def-128">String</span><span class="sxs-lookup"><span data-stu-id="d5def-128">String</span></span>|<span data-ttu-id="d5def-p103">时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="d5def-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="69fcb-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="69fcb-123">startDateTime</span></span>|<span data-ttu-id="69fcb-124">String</span><span class="sxs-lookup"><span data-stu-id="69fcb-124">String</span></span>|<span data-ttu-id="69fcb-p102">时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="69fcb-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="69fcb-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="69fcb-127">endDateTime</span></span>|<span data-ttu-id="69fcb-128">String</span><span class="sxs-lookup"><span data-stu-id="69fcb-128">String</span></span>|<span data-ttu-id="69fcb-p103">时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。</span><span class="sxs-lookup"><span data-stu-id="69fcb-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-<span data-ttu-id="d5def-131">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="d5def-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="d5def-132">请求标头</span><span class="sxs-lookup"><span data-stu-id="d5def-132">Request headers</span></span>
-| <span data-ttu-id="d5def-133">名称</span><span class="sxs-lookup"><span data-stu-id="d5def-133">Name</span></span>       | <span data-ttu-id="d5def-134">类型</span><span class="sxs-lookup"><span data-stu-id="d5def-134">Type</span></span> | <span data-ttu-id="d5def-135">说明</span><span class="sxs-lookup"><span data-stu-id="d5def-135">Description</span></span> |
+<span data-ttu-id="69fcb-131">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="69fcb-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="69fcb-132">请求标头</span><span class="sxs-lookup"><span data-stu-id="69fcb-132">Request headers</span></span>
+| <span data-ttu-id="69fcb-133">名称</span><span class="sxs-lookup"><span data-stu-id="69fcb-133">Name</span></span>       | <span data-ttu-id="69fcb-134">类型</span><span class="sxs-lookup"><span data-stu-id="69fcb-134">Type</span></span> | <span data-ttu-id="69fcb-135">说明</span><span class="sxs-lookup"><span data-stu-id="69fcb-135">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="d5def-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5def-136">Authorization</span></span>  | <span data-ttu-id="d5def-137">string</span><span class="sxs-lookup"><span data-stu-id="d5def-137">string</span></span> | <span data-ttu-id="d5def-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d5def-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d5def-140">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="d5def-140">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="d5def-141">string</span><span class="sxs-lookup"><span data-stu-id="d5def-141">string</span></span> | <span data-ttu-id="d5def-142">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="d5def-142">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="d5def-143">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="d5def-143">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="d5def-144">可选。</span><span class="sxs-lookup"><span data-stu-id="d5def-144">Optional.</span></span> |
+| <span data-ttu-id="69fcb-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="69fcb-136">Authorization</span></span>  | <span data-ttu-id="69fcb-137">string</span><span class="sxs-lookup"><span data-stu-id="69fcb-137">string</span></span> | <span data-ttu-id="69fcb-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="69fcb-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="69fcb-140">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="69fcb-140">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="69fcb-141">string</span><span class="sxs-lookup"><span data-stu-id="69fcb-141">string</span></span> | <span data-ttu-id="69fcb-142">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="69fcb-142">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="69fcb-143">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="69fcb-143">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="69fcb-144">可选。</span><span class="sxs-lookup"><span data-stu-id="69fcb-144">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d5def-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="d5def-145">Request body</span></span>
-<span data-ttu-id="d5def-146">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d5def-146">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="69fcb-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="69fcb-145">Request body</span></span>
+<span data-ttu-id="69fcb-146">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="69fcb-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d5def-147">响应</span><span class="sxs-lookup"><span data-stu-id="d5def-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69fcb-147">响应</span><span class="sxs-lookup"><span data-stu-id="69fcb-147">Response</span></span>
 
-<span data-ttu-id="d5def-148">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="d5def-148">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d5def-149">示例</span><span class="sxs-lookup"><span data-stu-id="d5def-149">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d5def-150">请求</span><span class="sxs-lookup"><span data-stu-id="d5def-150">Request</span></span>
-<span data-ttu-id="d5def-151">下面的示例在指定的时间范围内, 事件是定期系列的主事件的事件发生和异常。</span><span class="sxs-lookup"><span data-stu-id="d5def-151">The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.</span></span>
+<span data-ttu-id="69fcb-148">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="69fcb-148">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="69fcb-149">示例</span><span class="sxs-lookup"><span data-stu-id="69fcb-149">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="69fcb-150">请求</span><span class="sxs-lookup"><span data-stu-id="69fcb-150">Request</span></span>
+<span data-ttu-id="69fcb-151">下面的示例在指定的时间范围内, 事件是定期系列的主事件的事件发生和异常。</span><span class="sxs-lookup"><span data-stu-id="69fcb-151">The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d5def-152">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d5def-152">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="69fcb-152">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="69fcb-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGUzYRgWAAA="],
@@ -81,22 +81,26 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d5def-153">C#</span><span class="sxs-lookup"><span data-stu-id="d5def-153">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="69fcb-153">C#</span><span class="sxs-lookup"><span data-stu-id="69fcb-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-instances-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5def-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="d5def-154">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="69fcb-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="69fcb-154">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-instances-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5def-155">目标-C</span><span class="sxs-lookup"><span data-stu-id="d5def-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="69fcb-155">目标-C</span><span class="sxs-lookup"><span data-stu-id="69fcb-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-instances-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="69fcb-156">Java</span><span class="sxs-lookup"><span data-stu-id="69fcb-156">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-instances-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d5def-156">响应</span><span class="sxs-lookup"><span data-stu-id="d5def-156">Response</span></span>
-<span data-ttu-id="d5def-157">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d5def-157">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="69fcb-157">响应</span><span class="sxs-lookup"><span data-stu-id="69fcb-157">Response</span></span>
+<span data-ttu-id="69fcb-158">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="69fcb-158">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "get_instances",

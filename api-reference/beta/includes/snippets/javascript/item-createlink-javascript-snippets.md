@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e06611a9dfcf9c4d067818939ad5fb0cc3cfe580
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 19477d8fab0d4c3095f97385817264ff7e491351
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713157"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861330"
 ---
 ```javascript
 
@@ -17,6 +17,7 @@ const client = Client.init(options);
 
 const permission = {
   type: "view",
+  password: "ThisIsMyPrivatePassword",
   scope: "anonymous"
 };
 

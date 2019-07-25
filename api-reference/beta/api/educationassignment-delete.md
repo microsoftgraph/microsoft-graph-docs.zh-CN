@@ -4,30 +4,30 @@ description: 删除现有工作分配。 只有课堂中的教师才能删除工
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 39d26a7fdc20ec7a28e89d1186733821f5189850
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d223de4ba4310b3ec62e37210551b24e43300c5c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436177"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860799"
 ---
-# <a name="delete-educationassignment"></a><span data-ttu-id="d1818-104">删除 educationAssignment</span><span class="sxs-lookup"><span data-stu-id="d1818-104">Delete educationAssignment</span></span>
+# <a name="delete-educationassignment"></a><span data-ttu-id="42d7f-104">删除 educationAssignment</span><span class="sxs-lookup"><span data-stu-id="42d7f-104">Delete educationAssignment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d1818-105">删除现有工作分配。</span><span class="sxs-lookup"><span data-stu-id="d1818-105">Delete an existing assignment.</span></span> <span data-ttu-id="d1818-106">只有课堂中的教师才能删除工作分配。</span><span class="sxs-lookup"><span data-stu-id="d1818-106">Only teachers within a class can delete assignments.</span></span>
+<span data-ttu-id="42d7f-105">删除现有工作分配。</span><span class="sxs-lookup"><span data-stu-id="42d7f-105">Delete an existing assignment.</span></span> <span data-ttu-id="42d7f-106">只有课堂中的教师才能删除工作分配。</span><span class="sxs-lookup"><span data-stu-id="42d7f-106">Only teachers within a class can delete assignments.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d1818-107">权限</span><span class="sxs-lookup"><span data-stu-id="d1818-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="42d7f-107">权限</span><span class="sxs-lookup"><span data-stu-id="42d7f-107">Permissions</span></span>
 
-<span data-ttu-id="d1818-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d1818-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="42d7f-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="42d7f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d1818-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d1818-110">Permission type</span></span>                        | <span data-ttu-id="d1818-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d1818-111">Permissions (from least to most privileged)</span></span>             |
+| <span data-ttu-id="42d7f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="42d7f-110">Permission type</span></span>                        | <span data-ttu-id="42d7f-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="42d7f-111">Permissions (from least to most privileged)</span></span>             |
 | :------------------------------------- | :------------------------------------------------------ |
-| <span data-ttu-id="d1818-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d1818-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d1818-113">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="d1818-113">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="d1818-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d1818-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1818-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d1818-115">Not Supported.</span></span>                                          |
-| <span data-ttu-id="d1818-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d1818-116">Application</span></span>                            | <span data-ttu-id="d1818-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="d1818-117">Not Supported.</span></span>                                          |
+| <span data-ttu-id="42d7f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="42d7f-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="42d7f-113">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="42d7f-113">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="42d7f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="42d7f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42d7f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="42d7f-115">Not Supported.</span></span>                                          |
+| <span data-ttu-id="42d7f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="42d7f-116">Application</span></span>                            | <span data-ttu-id="42d7f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="42d7f-117">Not Supported.</span></span>                                          |
 
-## <a name="http-request"></a><span data-ttu-id="d1818-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d1818-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42d7f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="42d7f-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,28 +35,28 @@ ms.locfileid: "35436177"
 DELETE /education/classes/{id}/assignments/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d1818-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d1818-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="42d7f-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="42d7f-119">Request headers</span></span>
 
-| <span data-ttu-id="d1818-120">标头</span><span class="sxs-lookup"><span data-stu-id="d1818-120">Header</span></span>        | <span data-ttu-id="d1818-121">值</span><span class="sxs-lookup"><span data-stu-id="d1818-121">Value</span></span>                     |
+| <span data-ttu-id="42d7f-120">标头</span><span class="sxs-lookup"><span data-stu-id="42d7f-120">Header</span></span>        | <span data-ttu-id="42d7f-121">值</span><span class="sxs-lookup"><span data-stu-id="42d7f-121">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="d1818-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1818-122">Authorization</span></span> | <span data-ttu-id="d1818-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d1818-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="42d7f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="42d7f-122">Authorization</span></span> | <span data-ttu-id="42d7f-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="42d7f-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d1818-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="d1818-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="42d7f-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="42d7f-125">Request body</span></span>
 
-<span data-ttu-id="d1818-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d1818-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="42d7f-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="42d7f-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d1818-127">响应</span><span class="sxs-lookup"><span data-stu-id="d1818-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="42d7f-127">响应</span><span class="sxs-lookup"><span data-stu-id="42d7f-127">Response</span></span>
 
-<span data-ttu-id="d1818-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d1818-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="42d7f-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="42d7f-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d1818-130">示例</span><span class="sxs-lookup"><span data-stu-id="d1818-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="42d7f-130">示例</span><span class="sxs-lookup"><span data-stu-id="42d7f-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d1818-131">请求</span><span class="sxs-lookup"><span data-stu-id="d1818-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="42d7f-131">请求</span><span class="sxs-lookup"><span data-stu-id="42d7f-131">Request</span></span>
 
-<span data-ttu-id="d1818-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d1818-132">The following is an example of the request.</span></span>
+<span data-ttu-id="42d7f-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="42d7f-132">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d1818-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d1818-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="42d7f-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="42d7f-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignment"
@@ -65,22 +65,26 @@ DELETE /education/classes/{id}/assignments/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d1818-134">C#</span><span class="sxs-lookup"><span data-stu-id="d1818-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="42d7f-134">C#</span><span class="sxs-lookup"><span data-stu-id="42d7f-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d1818-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="d1818-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42d7f-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="42d7f-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d1818-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="d1818-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="42d7f-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="42d7f-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="42d7f-137">Java</span><span class="sxs-lookup"><span data-stu-id="42d7f-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="d1818-137">响应</span><span class="sxs-lookup"><span data-stu-id="d1818-137">Response</span></span>
-<span data-ttu-id="d1818-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d1818-138">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="42d7f-138">响应</span><span class="sxs-lookup"><span data-stu-id="42d7f-138">Response</span></span>
+<span data-ttu-id="42d7f-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="42d7f-139">The following is an example of the response.</span></span> 
 
 
 <!-- {
