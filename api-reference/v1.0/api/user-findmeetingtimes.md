@@ -4,12 +4,12 @@ description: 根据组织者和与会者的空闲状况以及指定为参数的�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e757c92d89d980776800ea4df6eee0af46edc0a3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8d3c1ae87ad4fede96fa87e2abc55c6ce9f2ddad
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460495"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884065"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
@@ -178,6 +178,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-findmeetingtimes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

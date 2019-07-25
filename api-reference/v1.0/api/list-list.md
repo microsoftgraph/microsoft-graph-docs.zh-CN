@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 8f4d037a1de7592fff295a8f1cfeec40aa331b26
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d5ead524312fe1beffc561d8e936c8742c0e723a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459004"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888321"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 
@@ -56,6 +56,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

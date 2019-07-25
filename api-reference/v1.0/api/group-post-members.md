@@ -4,12 +4,12 @@ description: 通过 **members** 导航属性将成员添加到 Office 365 组、
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a3ccacd1ebb1985cd09de31f9568df86660451af
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 71a2eba3523898621231f29be775ba03ae45c517
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778427"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890073"
 ---
 # <a name="add-member"></a>添加成员
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
@@ -52,7 +52,7 @@ POST /groups/{id}/members/$ref
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_member_from_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
@@ -64,11 +64,19 @@ Content-length: 30
 }
 ```
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-group-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 列出驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 21c811e501116c8865686a9f5efb379e3631c229
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9d9df5b89e85d578fe5f8a811b0812ae9d780a4c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458507"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894081"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 
@@ -51,6 +51,10 @@ GET /groups/{groupId}/drives
 [!INCLUDE [sample-code](../includes/snippets/objc/group-list-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-list-drives-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -77,6 +81,10 @@ GET /sites/{siteId}/drives
 [!INCLUDE [sample-code](../includes/snippets/objc/site-list-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/site-list-drives-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,6 +109,10 @@ GET /users/{userId}/drives
 [!INCLUDE [sample-code](../includes/snippets/objc/user-list-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-drives-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -123,6 +135,10 @@ GET /me/drives
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-drives-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/enum-drives-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

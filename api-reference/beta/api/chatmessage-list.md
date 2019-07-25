@@ -4,12 +4,12 @@ description: '在聊天中检索消息列表。 '
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 88da7fc02365bd5b1b97488c1192e0ac36e733bc
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 43d4647930edaaa00c9d06e06c27fb5002730608
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778773"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863442"
 ---
 # <a name="list-chat-messages"></a>列出聊天消息
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

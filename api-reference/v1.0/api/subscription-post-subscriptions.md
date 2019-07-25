@@ -3,12 +3,12 @@ title: 创建订阅
 description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 1d7b8c65df3aefba65a992d6212d170144f00f2b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dfb96444206cef77f4e58e35968a20168c868432
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450462"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894319"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 检索一组 person 对象，这些对象按与 user 的相关程�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 9ae83dbea4176ca818f9539f3676ff1febade3cb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 316ca4e1e1e3238519bf43e07dc960211060684b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460201"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882861"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/me/people
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

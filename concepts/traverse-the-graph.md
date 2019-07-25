@@ -1,15 +1,15 @@
 ---
-title: 遍历 Microsoft Graph
+title: 通过导航 Microsoft Graph 访问数据和方法
 description: 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
 localization_priority: Priority
-ms.openlocfilehash: 6f368568f34e1a81bddb38948325e5d97150f493
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2b02ca0ed623fa17d9b640ff0bb1c17c3b3e022e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951222"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840647"
 ---
-# <a name="traverse-microsoft-graph"></a>遍历 Microsoft Graph
+# <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>通过导航 Microsoft Graph 访问数据和方法
 
 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
 
@@ -32,20 +32,23 @@ ms.locfileid: "33951222"
 
 可以使用元数据了解 Microsoft Graph 中实体之间的关系，并建立可在这些实体间导航的 URL。
 
-路径 URL 资源名称、查询参数以及操作参数和值不区分大小写。不过，分配的值、实体 ID 和其他 base-64 编码的值区分大小写。
+> [!NOTE]
+> - 在使用资源 ID 时，应保持与其从 Microsoft Graph API 返回时相同的大小写。
+> - 假设资源 ID、分配的值和其他 base-64 编码的值_区分大小写_。
+> - 假设路径 URL 资源名称、查询参数以及操作参数和值_不区分大小写_。
 
 ## <a name="view-a-collection-of-resources"></a>查看资源集合
 
-Microsoft Graph 允许用户使用 HTTP GET 查询查看租户中的资源。查询响应包括每个资源的属性，每个资源由其 ID 标识。资源 ID 的格式可以是 GUID，并且通常根据资源类型而变化。
+Microsoft Graph 允许用户使用 HTTP `GET` 查询来查看租户中的资源。 查询响应包括每个资源的属性。 实体资源均由其 ID 标识。 资源 ID 的格式可以是 GUID，并且通常根据资源类型而变化。
 
-例如，可以获取在租户中定义的用户集合：
+例如，可以获取在租户中定义的[用户](/graph/api/resources/user?view=graph-rest-1.0)资源集合：
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-如果成功，将会收到 200 OK 响应，其中包含有效负载中的 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源的集合。每个用户都由 **id** 属性标识，并附带其默认属性。为简单起见，下面所示的有效负载将被截断。
+如果成功，将会收到 200 OK 响应，其中包含有效负载中的 **user** 资源的集合。每个用户都由 **id** 属性标识，并附带其默认属性。为简单起见，下面所示的有效负载将被截断。
 
 ```no-highlight
 HTTP/1.1 200 OK
@@ -137,7 +140,9 @@ Content-type: application/json
 
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>按 ID 查看集合中的特定资源
 
-继续使用 **user** 作为示例 - 要查看有关用户的信息，则使用 HTTP GET 请求根据用户 ID 获取特定用户。对于**user** 实体，可以使用 **id** 或 **userPrincipalName** 属性作为标识符。以下请求示例使用 **userPrincipalName** 值作为用户 ID。
+继续使用**用户**作为示例 - 要查看有关用户的信息，则使用 HTTP GET 请求根据用户 ID 获取特定用户。 对于**用户**实体，可以使用 **id** 或 **userPrincipalName** 属性作为标识符。
+
+以下请求示例使用 **userPrincipalName** 值作为用户 ID。
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
@@ -194,7 +199,9 @@ content-length: 169
 此时，仅返回 **aboutMe**、**displayName** 和 **skills** 基本属性（而不是 **user** 实体上的整个属性集）。
 
 ## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>读取集合中资源的特定属性
-除了读取单个资源的特定属性，还可以将类似的 [$select](query-parameters.md) 查询参数应用于集合，只要使用返回到各自的特定属性即可返回集合中的所有资源。例如，要查询已登录用户的驱动器项目姓名，你可以提交以下 HTTPS GET 请求：
+除了读取单个资源的特定属性，还可以将类似的 [$select](query-parameters.md) 查询参数应用于集合，只要使用返回到各自的特定属性即可返回集合中的所有资源。
+
+例如，要查询已登录用户的驱动器项目姓名，你可以提交以下 HTTPS GET 请求：
 
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
@@ -258,7 +265,7 @@ Authorization : Bearer {access_token}
 ```
 
 
-成功的响应返回 200 OK 状态和有效负载，如下所示。
+成功响应返回“200 正常”状态和有效负载，如下所示。
 
 
 ```no-highlight
@@ -294,10 +301,10 @@ content-length: 147
   ]
 }
 ```
-通过转到元数据、查找 EntityType，并查看 EntityType 的所有 NavigationProperties，可以在给定的资源上查看所有的关系。
+通过转到元数据、查找 `EntityType`，并查看该 `EntityType` 的每个 `NavigationProperty`，可以查看给定资源上的所有关系。
 
-## <a name="call-functions"></a>调用函数
-Microsoft Graph 还支持_函数_以并不仅仅是创建、读取、更新和删除 (CRUD) 操作的方式来操作资源。它们通常采用 HTTPS POST 请求的形式以便输入函数参数。例如，以下函数允许已登录用户 (`me`) 发送电子邮件。
+## <a name="call-actions-and-functions"></a>调用操作和函数
+Microsoft Graph 还支持_操作_和_函数_以并不仅仅是创建、读取、更新和删除 (CRUD) 操作的方式来操作资源。 它们通常采用 HTTPS POST 请求的形式以便输入操作或函数参数。 例如，以下操作允许已登录用户 (`me`) 发送电子邮件。
 
 ```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
@@ -315,7 +322,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@a830edad9050849NDA1.onmicrosoft.com"
+          "address": "garthf@contoso.onmicrosoft.com"
         }
       }
     ],

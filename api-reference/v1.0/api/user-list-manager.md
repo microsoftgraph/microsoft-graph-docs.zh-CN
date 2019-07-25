@@ -4,12 +4,12 @@ description: 获取用户的经理。 返回指定为用户经理的用户或联
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 21cde36f31a3d8c117172e1e6278ad2299569525
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 42a80ce885a8e02927182b9b34deff8411054902
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460278"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865875"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

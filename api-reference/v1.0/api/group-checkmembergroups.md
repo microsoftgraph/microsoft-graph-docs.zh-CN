@@ -4,12 +4,12 @@ description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: ad182a184455872b961af8f1df825774e29009db
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: efbdec470861e791e0d849d20667d8f46d37dc0f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448143"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891167"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -91,6 +91,10 @@ Content-length: 44
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

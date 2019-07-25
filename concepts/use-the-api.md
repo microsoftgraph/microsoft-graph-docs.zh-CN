@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph API
 description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你注册应用并获取身份验证令牌以用于用户或服务后，可以向 Microsoft Graph API 发送请求。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 0d4c49e2b2961b99afac2445976c3d56234262bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18de281cc0becfacfdabe5fb81a68358f04c3747
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575889"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840640"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -18,22 +18,25 @@ Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风�
 
 要在资源（如用户或电子邮件）中读取或写入资源，可以创建如下请求：
 
+<!-- {
+  "blockType": "ignored"
+}-->
 ```http
-https://graph.microsoft.com/{version}/{resource}?query-parameters
+{HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}
 ```
 
 请求的组成部分包括：
 
-* [HTTP 方法](#http-methods) - 在 Microsoft Graph 请求上所使用的 HTTP 方法。
-* [`{version}`](#version) - 你的应用程序正在使用的 Microsoft Graph API 版本。
-* [`{resource}`](#resource) - 你正在引用的 Microsoft Graph 中的资源。
-* [查询参数](#query-parameters-optional) - 一组用于修改请求或响应的可选参数。
+* [{HTTP method}](#http-methods) - 在 Microsoft Graph 请求上所使用的 HTTP 方法。
+* [{version}](#version) - 你的应用程序正在使用的 Microsoft Graph API 版本。
+* [{resource}](#resource) - 你正在引用的 Microsoft Graph 中的资源。 
+* [{query-parameters}](#query-parameters-optional) - 可自定义响应的可选 OData 查询选项或 REST 方法参数。
 
 在你发出请求后，响应便会返回，其中包括： 
 
 * 状态代码 - 表示成功或失败的 HTTP 状态代码。若要详细了解 HTTP 错误代码，请参阅[错误](errors.md)。
 * 响应消息 - 请求获取的数据或操作结果。对于某些操作，响应消息可能为空。
-* **“下一步”** 链接 - 如果请求返回大量数据，需要通过选择 **“下一步”** 翻阅数据。有关详细信息，请参阅[分页](paging.md)。
+* `nextLink` - 如果请求返回大量数据，则需要使用 `@odata.nextLink` 中返回的 URL 对其进行翻页。有关详细信息，请参阅[分页](paging.md)。
 
 ## <a name="http-methods"></a>HTTP 方法
 
@@ -48,8 +51,8 @@ Microsoft Graph 使用请求上的 HTTP 方法来确定请求正在执行的操�
 | PUT    | 替换为新资源。           |
 | DELETE | 删除资源。                           |
 
-* 对于 **GET** 和 **DELETE** 方法，不需要任何请求正文。
-* **POST**、**PATCH** 和 **PUT** 方法需要通常以 JSON 格式指定的请求正文，此正文包含了其他信息，如资源的属性值。
+* 对于 CRUD 方法 `GET` 和 `DELETE`，不需要任何请求正文。
+* `POST`、`PATCH` 和 `PUT` 方法需要通常以 JSON 格式指定的请求正文，此正文包含了其他信息，如资源的属性值。
 
 ## <a name="version"></a>版本
 
@@ -62,27 +65,41 @@ Microsoft Graph 目前支持以下两种版本：`v1.0` 和 `beta`。
 
 若要详细了解 API 版本，请参阅[版本控制和支持](versioning-and-support.md)。
 
-## <a name="resource"></a>资源
+## <a name="resource"></a>Resource
 
-你的 URL 将包含资源或你正在请求中交互的资源，如 `me`、`users`、`groups`、`drives` 和 `sites`。每个顶级资源也包括你可以用来访问其他资源的**关系**（如 `me/messages` 或 `me/drive`）。你还可以使用**方法**与资源交互；例如，要发送电子邮件，则使用 `me/sendMail`。
+资源可以是实体或复杂类型，通常使用属性定义。 实体与复杂类型的不同之处在于前者始终包含 **id** 属性。
 
-若要详细了解如何导航资源关系和方法，请参阅[遍历 Graph](traverse-the-graph.md)。 
+你的 URL 将包含你正在请求中与之交互的资源，如`me`、**用户**、**组**、**驱动器**和**网站**。 通常，顶级资源还包括可以用来访问其他资源的_关系_（如 `me/messages` 或 `me/drive`）。 还可以使用_方法_与资源交互；例如，若要发送电子邮件，可以使用 `me/sendMail`。 有关详细信息，请参阅[通过导航 Microsoft Graph 访问数据和方法](traverse-the-graph.md)。
 
 每个资源可能需要不同的权限来访问它。通常，你需要用来创建或更新资源的权限比读取时要求的权限更高。有关所需权限的详细信息，请参见方法引用主题。 
 
 有关权限的详细信息，请参阅[权限引用](permissions-reference.md)。
 
-## <a name="query-parameters-optional"></a>查询参数（可选）
+## <a name="query-parameters"></a>查询参数
 
-你可以使用可选的查询参数，在 Microsoft Graph 应用中自定义响应。使用查询参数来包含比默认响应更多或更少的属性、过滤匹配自定义查询项目的响应，或为方法提供其他参数。
+查询参数可以是 OData 系统查询选项，也可以是方法接受的用于自定义其响应的其他字符串。
 
-例如，添加以下筛选器参数会将返回的邮件限制为仅 `emailAddress` 属性为 `jon@contoso.com` 的邮件。
+你可以使用可选的 OData 系统查询选项来包含比默认响应更多或更少的属性、过滤与自定义查询匹配的项的响应，或为方法提供其他参数。
 
+例如，添加以下 `filter` 参数会将返回的邮件限制为 `emailAddress` 属性仅为 `jon@contoso.com` 的邮件。
+
+<!-- {
+  "blockType": "ignored"
+}-->
 ```http
-https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
+GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
 
-有关查询参数的详细信息，请参阅[自定义响应](query-parameters.md)。
+有关 OData 查询选项的详细信息，请参阅[使用查询参数自定义响应](query-parameters.md)。
+
+除 OData 查询选项之外，某些方法还需要将参数值指定为查询 URL 的一部分。 例如，你可以通过查询**用户**的 **calendarView** 关系，并将时段 `startDateTime` 和 `endDateTime` 值指定为查询参数来获取用户日历中某个时间段内发生的事件的集合：
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
+```
 
 ## <a name="next-steps"></a>后续步骤
 

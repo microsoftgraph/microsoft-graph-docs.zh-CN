@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 5f2af5521071821d7271547f207ccefa0d17aade
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620885"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840752"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -844,6 +844,22 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 ---
 
+## <a name="on-premises-publishing-profiles-permissions"></a>本地发布配置文件权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    访问本地发布配置文件| 允许应用通过代表已登录用户创建、查看、更新和删除本地发布的资源、本地代理和代理组来管理混合标识服务配置。 | 否 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    访问本地发布配置文件| 允许应用通过代表已登录用户创建、查看、更新和删除本地发布的资源、本地代理和代理组来管理混合标识服务配置。 | 否 | 否 |
+
+---
+
 ## <a name="openid-permissions"></a>OpenID 权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -867,6 +883,37 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
 
 > **重要说明**：目前，Microsoft 身份验证库 (MSAL) 默认在授权和令牌请求中指定 _offline\_access_、_openid_、_profile_ 和 _email_。也就是说，在默认情况下，如果显式指定这些权限，Azure AD 可能会返回错误。
+
+---
+
+## <a name="organization-permissions"></a>组织权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Organization.Read.All_ |读取组织信息 | 允许应用代表已登录用户读取组织和相关资源。相关资源包括订阅的 SKU 和租户品牌信息等内容。|是 | 否 |
+| _Organization.ReadWrite.All_ |读取和写入组织信息 | 允许应用代表已登录用户读取和写入组织和相关资源。相关资源包括订阅的 SKU 和租户品牌信息等内容。 |是 | 否 |
+
+<br/>
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|权限    |显示字符串   |说明 |需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Organization.Read.All_ |读取组织信息 | 允许应用在没有已登录用户的情况下读取组织和相关资源。相关资源包括订阅的 SKU 和租户品牌信息等内容。 | 是 |
+| _Organization.ReadWrite.All_ |读取和写入组织信息 | 允许应用在没有已登录用户的情况下读取和写入组织和相关资源。相关资源包括订阅的 SKU 和租户品牌信息等内容。 |是 |
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>Delegated
+
+* _Organization.Read.All_：获取组织信息 (`GET /organization`)。
+* _Organization.Read.All_：获取组织订阅的 SKU (`GET /subscribedSkus`)。
+
+#### <a name="application"></a>应用程序
+
+* _Organization.ReadWrite.All_：更新组织信息（例如 **technicalNotificationMails**）(`PATCH /organization/{id}`)。
 
 ---
 
@@ -896,6 +943,22 @@ People.Read.All 权限仅适用于工作和学校帐户。
 * _People.Read.All_：读取同一组织中与其他用户相关的人员列表 (`GET /users('{id})/people`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="places-permissions"></a>位置权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Place.Read.All_ |读取所有公司位置 |允许应用读取日历事件和其他应用程序的公司位置（会议室和房间列表）。 |否 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Place.Read.All_ |   读取所有公司位置 | 允许应用读取日历事件和其他应用程序的公司位置（会议室和房间列表）。| 是 |
 
 ---
 

@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805233"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840633"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,17 @@ ms.locfileid: "35805233"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="july-2019"></a>2019 年 7 月
+
+### <a name="calendar--places"></a>日历 | 位置
+
+首次推出位置 API，为应用中的位置提供丰富的细节。
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta  | 添加了[房间列表](/graph/api/resources/roomlist?view=graph-rest-beta)资源|
+| 添加项        | Beta  | 添加了[房间](/graph/api/resources/room?view=graph-rest-beta)资源|
+| Addition        | Beta  | 添加了[位置](/graph/api/resources/place?view=graph-rest-beta)资源|
+|Addition         | Beta  | [为位置 API 添加了委派和应用程序权限](permissions-reference.md#places-permissions)：Place.Read.All |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -77,9 +88,11 @@ ms.locfileid: "35805233"
 | 添加项 | beta | 添加了对[列出频道消息](/api-reference/beta/api/channel-list-messages.md)，[获取频道消息](/api-reference/beta/api/channel-get-message.md)，[列出消息回复](/api-reference/beta/api/channel-list-messagereplies.md)，以及[获取消息回复](/api-reference/beta/api/channel-get-messagereply.md)的应用程序权限的支持。 |
 | 添加项 | beta | 添加了对[在聊天中列出消息](/api-reference/beta/api/chatmessage-list.md)和[在聊天中获取消息](/api-reference/beta/api/chatmessage-get.md)的应用程序权限的支持。 |
 
+
 ## <a name="june-2019"></a>2019 年 6 月
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|添加的新实体：<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
@@ -1198,7 +1211,7 @@ ms.locfileid: "35805233"
 |添加项|beta|向 [editionUpgradeLicenseType](/graph/api/resources/intune-deviceconfig-editionupgradelicensetype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员|
 |添加项|beta|向 [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) 枚举类型添加了 **unknown** 成员|
 |添加项|beta|向 [mobileAppActionType](/graph/api/resources/intune-troubleshooting-mobileappactiontype?view=graph-rest-beta) 枚举类型添加了 **userRequestedInstall** 成员|
-|添加项|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员
+|添加|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员
 
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
@@ -1571,7 +1584,7 @@ ms.locfileid: "35805233"
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 |更改类型|版本|说明|
 |:---|:---|:---|
-|Addition|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
+|添加|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|新增了复杂类型：<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>publication</b> 属性 |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>versions</b> 导航属性 |
@@ -3031,7 +3044,7 @@ ms.locfileid: "35805233"
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 添加了 shared 集合以允许按 shareId 或共享 URL 访问共享的 driveItem。 |
-| 添加项        | Beta        | 向驱动器添加了 _search_ 函数，允许搜索驱动器根文件夹之外的更多项。 |
+| Addition        | Beta        | 向驱动器添加了 _search_ 函数，允许搜索驱动器根文件夹之外的更多项。 |
 
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)

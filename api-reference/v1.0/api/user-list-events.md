@@ -4,12 +4,12 @@ description: '获取用户邮箱中的 event 对象列表。 该列表中包含�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1364e62084aaa45a9c75f4c1c46c80342de2389d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6dc8b7cc5109b054bb5b8285770c3cfdff6f381a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460355"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888860"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -106,6 +106,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-events-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

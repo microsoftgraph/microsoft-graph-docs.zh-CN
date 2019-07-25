@@ -4,12 +4,12 @@ description: 检索警报对象列表。
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 7828b525eb494b2904de43cf1215f5b53233e93d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 828836ceddc0b1ae3a5439be13edeac1ebd9c491
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35735124"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882668"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

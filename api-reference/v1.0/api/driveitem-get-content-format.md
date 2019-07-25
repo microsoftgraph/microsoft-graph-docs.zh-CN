@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 2470f3f8176b7b7b5b79757f6f0feb54eae6c3a8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e66d302c7397690f6975363f9c3785f8b620756d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445434"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890967"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -72,6 +72,10 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

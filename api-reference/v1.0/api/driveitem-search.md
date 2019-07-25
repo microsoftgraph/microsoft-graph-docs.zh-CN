@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 搜索文件
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6fe76479bcce1d71a272d8597f228cbf789e6b9d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 875f1a8e405f1ccabcfa66f1f361137aa331de22
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443971"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881626"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -74,6 +74,10 @@ GET /me/drive/root/search(q='{search-query}')
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-search-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -131,6 +135,10 @@ GET /me/drive/search(q='{search-query}')
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-all-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-search-all-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

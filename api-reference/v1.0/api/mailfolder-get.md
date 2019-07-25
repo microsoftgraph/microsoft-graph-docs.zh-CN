@@ -4,12 +4,12 @@ description: 检索邮件文件夹对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: cc1f8fc816d34a05957b4cde61d76517113dcfee
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 139c58dd7fbc24a63bfd4e4af50b6bcd57c928df
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35454410"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856563"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -136,6 +140,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailsearchfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

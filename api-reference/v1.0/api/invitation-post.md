@@ -4,12 +4,12 @@ description: 使用该 API 创建新的邀请。 邀请会将外部用户添加�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7b2d304d454f10bc33b2a8567313335f914ffdc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 31504e7ee292bad076fdff3cc9268c1a4168f373
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448519"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888419"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -84,6 +84,10 @@ Content-length: 551
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-invitation-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

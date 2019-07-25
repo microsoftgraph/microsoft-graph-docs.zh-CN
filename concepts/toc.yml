@@ -290,6 +290,8 @@ items:
         items:
           - name: 概述
             href: use-the-api.md
+          - name: 访问数据和方法
+            href: traverse-the-graph.md
           - name: 分页
             href: paging.md
           - name: 使用查询参数

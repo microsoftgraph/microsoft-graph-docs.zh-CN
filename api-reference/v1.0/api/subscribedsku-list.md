@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 360c7d1ad6242af1569e5c81bf98d06276fc5a7d
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: e5f6753f4712a2b7d90031fa78ae38e60e5e1425
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639113"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890566"
 ---
 # <a name="list-subscribedskus"></a>列出 subscribedSkus
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedskus-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
