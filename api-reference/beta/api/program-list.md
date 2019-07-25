@@ -2,12 +2,12 @@
 title: 列出程序
 description: 在 "Azure AD access 评论" 功能中, 列出所有程序对象。
 localization_priority: Normal
-ms.openlocfilehash: 8919e67df0b2f77279df1324483d8524de8aa2ab
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 29661ca95df8f3b5aea3b94dab6700bb7332d260
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455341"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875411"
 ---
 # <a name="list-programs"></a>列出程序
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/programs
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-program-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

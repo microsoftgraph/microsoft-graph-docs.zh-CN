@@ -4,12 +4,12 @@ description: 检索标记为用户收藏的 plannerPlans 的列表。 您可以�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 56773902d911b9baed23a73eb536b99315cca02e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0e0ee8a174611f44b8fb5af9d45570694a4c9db8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455110"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35876181"
 ---
 # <a name="list-favoriteplans"></a>列出 favoritePlans
 
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-favoriteplans-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-favoriteplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
