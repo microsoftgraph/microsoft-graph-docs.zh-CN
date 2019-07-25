@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f94b31191afecde70b503c1622cfea74a22e1fc2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: da8c04b64f26d5029e08232f8baed651120a6687
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35478985"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878353"
 ---
 ```csharp
 
@@ -31,6 +31,10 @@ var conversation = new Conversation
                     {
                         new Extension
                         {
+                            AdditionalData = new Dictionary<string, object>()
+                            {
+                                {"@odata.type","microsoft.graph.openTypeExtension"}
+                            },
                             ExtensionName = "Com.Contoso.Benefits",
                             CompanyName = "Contoso",
                             ExpirationDate = "2016-08-03T11:00:00Z",

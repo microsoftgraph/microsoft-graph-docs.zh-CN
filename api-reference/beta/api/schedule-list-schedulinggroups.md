@@ -4,12 +4,12 @@ description: 获取此计划中的 schedulingGroup 列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 28573cb4e495d0d138cedefe0ba4c34c743bb44a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0bbfe0110dccbeb5642f6d9fe94db9fe40db9ba0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447667"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870939"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-schedulinggroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-list-schedulinggroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

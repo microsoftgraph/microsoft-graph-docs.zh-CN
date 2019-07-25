@@ -2,12 +2,12 @@
 title: Delete privilegedRoleAssignment
 description: 删除 privilegedRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: 76db67452db136d126774f2b7c93e372e7e582f2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5d5ebe739e8b6da13ca7f0b6b2a2313a378e680c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444993"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875769"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
@@ -69,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-privilegedroleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-privilegedroleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

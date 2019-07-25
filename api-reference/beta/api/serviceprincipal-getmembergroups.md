@@ -2,12 +2,12 @@
 title: 'servicePrincipal: getMemberGroups'
 description: 获取此服务主体所属组的列表。  检查是可传递的。
 localization_priority: Normal
-ms.openlocfilehash: be98f3ae10119658c521eca2f00dfa8b3242b34b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5bf175e73a68857e04dbb0ca4da51176a969acbe
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453766"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870133"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
@@ -76,6 +76,10 @@ Content-length: 33
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

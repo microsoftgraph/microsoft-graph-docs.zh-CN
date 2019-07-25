@@ -4,12 +4,12 @@ description: 包含不同类型的审核日志。 此资源返回 singleton audi
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c43367465ac89116fcdca2460deb832d2cfbe746
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3b8a90ae97c3ad1ff8c59ad9789c6b1c18498496
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444020"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889616"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot 资源类型
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-auditlogs-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
