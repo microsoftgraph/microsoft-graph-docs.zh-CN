@@ -4,12 +4,12 @@ description: 消除对用户日历中的事件触发的提醒。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f3b35c2528eae44f3657792fa201ee5ff130c66d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b04879b8af87fc58923d6eb8472d8b54ba97d5de
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458288"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35887426"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-dismissreminder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-dismissreminder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

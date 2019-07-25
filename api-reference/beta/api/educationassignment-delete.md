@@ -4,12 +4,12 @@ description: 删除现有工作分配。 只有课堂中的教师才能删除工
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 39d26a7fdc20ec7a28e89d1186733821f5189850
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d223de4ba4310b3ec62e37210551b24e43300c5c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436177"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860799"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/1900
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

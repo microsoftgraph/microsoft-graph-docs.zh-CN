@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: bc954c01a5eb6d9e9f9e9b7656f52b251513d977
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 55f7725ffe62e428b0ed38ceeb0683224888745c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35500758"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865262"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingService = new BookingService
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","#microsoft.graph.bookingService"}
+    },
     DefaultDuration = "PT30M"
 };
 

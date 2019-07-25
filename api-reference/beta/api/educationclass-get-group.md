@@ -4,12 +4,12 @@ description: 检索与此 **educationClass** 对应的 Office 365 **group**。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e899b9e5f35024c543122e72930cbb8f0afd52ba
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 57410d1c686454b5843d5d1b2d5769753b8a25ba
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436079"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860645"
 ---
 # <a name="get-group"></a>获取组
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 重置当前用户自上次访问后未查看的所有帖子的 uns
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c3efd8af12f75767fe20d027719e7b3c4b0e6e83
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 790fc7f1e1e457789ed677c4fb544da3f597cb19
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444468"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35885359"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。仅支持 Office 365 组。
@@ -62,6 +62,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-resetunseencount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-resetunseencount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

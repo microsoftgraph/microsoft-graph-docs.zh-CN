@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c6081ae9d7991fd05950c395210e56f4b33eafaa
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bd813caf274755ef13102e98e02132c3fda2d13e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436212"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860864"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 
@@ -74,6 +74,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-version-contents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

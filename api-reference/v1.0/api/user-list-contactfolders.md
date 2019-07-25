@@ -4,12 +4,12 @@ description: 获取已登录用户的默认联系人文件夹中的联系人文�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba2305461e574ee19d02629a6fcd8c8f04ffc8ac
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 953288929eb6dff832103bb85af0df2fe0be28be
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460348"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886018"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contactfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-contactfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

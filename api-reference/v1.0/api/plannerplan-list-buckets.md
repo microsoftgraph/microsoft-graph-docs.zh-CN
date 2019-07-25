@@ -4,12 +4,12 @@ description: 检索 plannerPlan 对象包含的 **plannerbucket** 对象的列�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8372c9cfda40a7b2364db9780a0a060399ca3fe8
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: c63959142d3da35f20852755ba22eb6bd87d0b56
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820779"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35887131"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-buckets-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-buckets-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

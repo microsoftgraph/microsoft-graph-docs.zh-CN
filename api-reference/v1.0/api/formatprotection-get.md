@@ -2,12 +2,12 @@
 title: 获取 FormatProtection
 description: 检索 formatprotection 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: fecc4f7f3fd6dc431b2427e1fca53a5d2af527be
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: de72993ab0c6a72b5bc0fff55beb24ad3588f33f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459739"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888226"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-formatprotection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-formatprotection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
