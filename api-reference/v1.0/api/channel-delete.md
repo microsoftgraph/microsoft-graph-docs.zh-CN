@@ -4,55 +4,55 @@ description: 删除频道。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4d710ad9acdd176a13ca382aefe7d67441fe02a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e4e84fb7e011a6a4a56dea7a71748fac85f17e07
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443705"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882294"
 ---
-# <a name="delete-channel"></a><span data-ttu-id="97fec-103">删除频道</span><span class="sxs-lookup"><span data-stu-id="97fec-103">Delete channel</span></span>
+# <a name="delete-channel"></a><span data-ttu-id="68c0f-103">删除频道</span><span class="sxs-lookup"><span data-stu-id="68c0f-103">Delete channel</span></span>
 
 
 
-<span data-ttu-id="97fec-104">删除[频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="97fec-104">Delete the [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="68c0f-104">删除[频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="68c0f-104">Delete the [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="97fec-105">**请注意**：应用程序权限和此 API 存在已知问题。</span><span class="sxs-lookup"><span data-stu-id="97fec-105">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="97fec-106">有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。</span><span class="sxs-lookup"><span data-stu-id="97fec-106">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
+> <span data-ttu-id="68c0f-105">**请注意**：应用程序权限和此 API 存在已知问题。</span><span class="sxs-lookup"><span data-stu-id="68c0f-105">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="68c0f-106">有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。</span><span class="sxs-lookup"><span data-stu-id="68c0f-106">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
 
-> <span data-ttu-id="97fec-107">**注意**: 已删除频道中的数据将继续存储几周, 以允许团队所有者恢复已删除的频道。</span><span class="sxs-lookup"><span data-stu-id="97fec-107">**Note**: The data in deleted channels will continue to be stored for several weeks to allow team owner to recovery deleted channel.</span></span> <span data-ttu-id="97fec-108">在这段时间内, 可能不会创建具有相同 displayName 的新通道。</span><span class="sxs-lookup"><span data-stu-id="97fec-108">During that time, a new channel with the same displayName may not be created.</span></span>
+> <span data-ttu-id="68c0f-107">**注意**: 已删除频道中的数据将继续存储几周, 以允许团队所有者恢复已删除的频道。</span><span class="sxs-lookup"><span data-stu-id="68c0f-107">**Note**: The data in deleted channels will continue to be stored for several weeks to allow team owner to recovery deleted channel.</span></span> <span data-ttu-id="68c0f-108">在这段时间内, 可能不会创建具有相同 displayName 的新通道。</span><span class="sxs-lookup"><span data-stu-id="68c0f-108">During that time, a new channel with the same displayName may not be created.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="97fec-109">权限</span><span class="sxs-lookup"><span data-stu-id="97fec-109">Permissions</span></span>
-<span data-ttu-id="97fec-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="97fec-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="68c0f-109">权限</span><span class="sxs-lookup"><span data-stu-id="68c0f-109">Permissions</span></span>
+<span data-ttu-id="68c0f-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="68c0f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97fec-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="97fec-112">Permission type</span></span>      | <span data-ttu-id="97fec-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="97fec-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="68c0f-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="68c0f-112">Permission type</span></span>      | <span data-ttu-id="68c0f-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="68c0f-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97fec-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="97fec-114">Delegated (work or school account)</span></span> | <span data-ttu-id="97fec-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97fec-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="97fec-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="97fec-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97fec-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="97fec-117">Not supported.</span></span>    |
-|<span data-ttu-id="97fec-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="97fec-118">Application</span></span> | <span data-ttu-id="97fec-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97fec-119">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="68c0f-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="68c0f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="68c0f-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68c0f-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="68c0f-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="68c0f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="68c0f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="68c0f-117">Not supported.</span></span>    |
+|<span data-ttu-id="68c0f-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="68c0f-118">Application</span></span> | <span data-ttu-id="68c0f-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68c0f-119">Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="97fec-120">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="97fec-120">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="97fec-121">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。</span><span class="sxs-lookup"><span data-stu-id="97fec-121">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="68c0f-120">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="68c0f-120">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="68c0f-121">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。</span><span class="sxs-lookup"><span data-stu-id="68c0f-121">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="97fec-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="97fec-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="68c0f-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="68c0f-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{id}/channels/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="97fec-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="97fec-123">Request headers</span></span>
-| <span data-ttu-id="97fec-124">标头</span><span class="sxs-lookup"><span data-stu-id="97fec-124">Header</span></span>       | <span data-ttu-id="97fec-125">值</span><span class="sxs-lookup"><span data-stu-id="97fec-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="68c0f-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="68c0f-123">Request headers</span></span>
+| <span data-ttu-id="68c0f-124">标头</span><span class="sxs-lookup"><span data-stu-id="68c0f-124">Header</span></span>       | <span data-ttu-id="68c0f-125">值</span><span class="sxs-lookup"><span data-stu-id="68c0f-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="97fec-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="97fec-126">Authorization</span></span>  | <span data-ttu-id="97fec-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="97fec-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="68c0f-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="68c0f-126">Authorization</span></span>  | <span data-ttu-id="68c0f-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="68c0f-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="97fec-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="97fec-129">Request body</span></span>
-<span data-ttu-id="97fec-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="97fec-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="68c0f-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="68c0f-129">Request body</span></span>
+<span data-ttu-id="68c0f-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="68c0f-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="97fec-131">响应</span><span class="sxs-lookup"><span data-stu-id="97fec-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="68c0f-131">响应</span><span class="sxs-lookup"><span data-stu-id="68c0f-131">Response</span></span>
 
-<span data-ttu-id="97fec-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="97fec-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="97fec-134">示例</span><span class="sxs-lookup"><span data-stu-id="97fec-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="97fec-135">请求</span><span class="sxs-lookup"><span data-stu-id="97fec-135">Request</span></span>
-<span data-ttu-id="97fec-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="97fec-136">The following is an example of the request.</span></span>
+<span data-ttu-id="68c0f-p106">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="68c0f-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="68c0f-134">示例</span><span class="sxs-lookup"><span data-stu-id="68c0f-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="68c0f-135">请求</span><span class="sxs-lookup"><span data-stu-id="68c0f-135">Request</span></span>
+<span data-ttu-id="68c0f-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="68c0f-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="97fec-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="97fec-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="68c0f-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="68c0f-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_channel"
@@ -61,24 +61,28 @@ DELETE /teams/{id}/channels/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="97fec-138">C#</span><span class="sxs-lookup"><span data-stu-id="97fec-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="68c0f-138">C#</span><span class="sxs-lookup"><span data-stu-id="68c0f-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="97fec-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="97fec-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="68c0f-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="68c0f-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="97fec-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="97fec-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="68c0f-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="68c0f-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="68c0f-141">Java</span><span class="sxs-lookup"><span data-stu-id="68c0f-141">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="97fec-141">响应</span><span class="sxs-lookup"><span data-stu-id="97fec-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="68c0f-142">响应</span><span class="sxs-lookup"><span data-stu-id="68c0f-142">Response</span></span>
 
-<span data-ttu-id="97fec-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="97fec-142">The following is an example of the response.</span></span> 
+<span data-ttu-id="68c0f-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="68c0f-143">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
