@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8823d80a3786ea8a8d3b1b3e1f7a1ef467e7384c
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 789ebd230630ea506ce010db14627257668bbf44
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840973"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875007"
 ---
-# <a name="create-publishedresource"></a><span data-ttu-id="00f5c-103">创建 publishedResource</span><span class="sxs-lookup"><span data-stu-id="00f5c-103">Create publishedResource</span></span>
+# <a name="create-publishedresource"></a><span data-ttu-id="9ed44-103">创建 publishedResource</span><span class="sxs-lookup"><span data-stu-id="9ed44-103">Create publishedResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="00f5c-104">创建新的[publishedResource](../resources/publishedresource.md)对象。</span><span class="sxs-lookup"><span data-stu-id="00f5c-104">Create a new [publishedResource](../resources/publishedresource.md) object.</span></span>
+<span data-ttu-id="9ed44-104">创建新的[publishedResource](../resources/publishedresource.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9ed44-104">Create a new [publishedResource](../resources/publishedresource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="00f5c-105">权限</span><span class="sxs-lookup"><span data-stu-id="00f5c-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9ed44-105">权限</span><span class="sxs-lookup"><span data-stu-id="9ed44-105">Permissions</span></span>
 
-<span data-ttu-id="00f5c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="00f5c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9ed44-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9ed44-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="00f5c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="00f5c-108">Permission type</span></span>                        | <span data-ttu-id="00f5c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="00f5c-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9ed44-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9ed44-108">Permission type</span></span>                        | <span data-ttu-id="9ed44-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9ed44-109">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="00f5c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="00f5c-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="00f5c-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="00f5c-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="00f5c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="00f5c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00f5c-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="00f5c-113">Not supported.</span></span> |
-| <span data-ttu-id="00f5c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="00f5c-114">Application</span></span>                            | <span data-ttu-id="00f5c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="00f5c-115">Not supported.</span></span> |
+|<span data-ttu-id="9ed44-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9ed44-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="9ed44-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="9ed44-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="9ed44-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9ed44-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ed44-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="9ed44-113">Not supported.</span></span> |
+| <span data-ttu-id="9ed44-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9ed44-114">Application</span></span>                            | <span data-ttu-id="9ed44-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9ed44-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="00f5c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="00f5c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9ed44-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9ed44-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,32 +36,34 @@ ms.locfileid: "35840973"
 POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="00f5c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="00f5c-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9ed44-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="9ed44-117">Request headers</span></span>
 
-| <span data-ttu-id="00f5c-118">名称</span><span class="sxs-lookup"><span data-stu-id="00f5c-118">Name</span></span>      |<span data-ttu-id="00f5c-119">说明</span><span class="sxs-lookup"><span data-stu-id="00f5c-119">Description</span></span>|
+| <span data-ttu-id="9ed44-118">名称</span><span class="sxs-lookup"><span data-stu-id="9ed44-118">Name</span></span>      |<span data-ttu-id="9ed44-119">说明</span><span class="sxs-lookup"><span data-stu-id="9ed44-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="00f5c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="00f5c-120">Authorization</span></span> | <span data-ttu-id="00f5c-121">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="00f5c-121">Bearer {token}</span></span> |
+| <span data-ttu-id="9ed44-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ed44-120">Authorization</span></span> | <span data-ttu-id="9ed44-121">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="9ed44-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="00f5c-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="00f5c-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9ed44-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="9ed44-122">Request body</span></span>
 
-<span data-ttu-id="00f5c-123">在请求正文中, 提供[publishedResource](../resources/publishedresource.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="00f5c-123">In the request body, supply a JSON representation of a [publishedResource](../resources/publishedresource.md) object.</span></span>
+<span data-ttu-id="9ed44-123">在请求正文中, 提供[publishedResource](../resources/publishedresource.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9ed44-123">In the request body, supply a JSON representation of a [publishedResource](../resources/publishedresource.md) object.</span></span>
 
-<span data-ttu-id="00f5c-124">提供以下属性的值。</span><span class="sxs-lookup"><span data-stu-id="00f5c-124">Supply the values for the following properties.</span></span>
+<span data-ttu-id="9ed44-124">提供以下属性的值。</span><span class="sxs-lookup"><span data-stu-id="9ed44-124">Supply the values for the following properties.</span></span>
 
-| <span data-ttu-id="00f5c-125">属性</span><span class="sxs-lookup"><span data-stu-id="00f5c-125">Property</span></span>     | <span data-ttu-id="00f5c-126">类型</span><span class="sxs-lookup"><span data-stu-id="00f5c-126">Type</span></span>        | <span data-ttu-id="00f5c-127">说明</span><span class="sxs-lookup"><span data-stu-id="00f5c-127">Description</span></span> |
+| <span data-ttu-id="9ed44-125">属性</span><span class="sxs-lookup"><span data-stu-id="9ed44-125">Property</span></span>     | <span data-ttu-id="9ed44-126">类型</span><span class="sxs-lookup"><span data-stu-id="9ed44-126">Type</span></span>        | <span data-ttu-id="9ed44-127">说明</span><span class="sxs-lookup"><span data-stu-id="9ed44-127">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="00f5c-128">displayName</span><span class="sxs-lookup"><span data-stu-id="00f5c-128">displayName</span></span>|<span data-ttu-id="00f5c-129">String</span><span class="sxs-lookup"><span data-stu-id="00f5c-129">String</span></span>|<span data-ttu-id="00f5c-130">PublishedResource 的显示名称。</span><span class="sxs-lookup"><span data-stu-id="00f5c-130">Display Name of the publishedResource.</span></span>|
-|<span data-ttu-id="00f5c-131">resourceName</span><span class="sxs-lookup"><span data-stu-id="00f5c-131">resourceName</span></span>|<span data-ttu-id="00f5c-132">String</span><span class="sxs-lookup"><span data-stu-id="00f5c-132">String</span></span>|<span data-ttu-id="00f5c-133">PublishedResource 的名称。</span><span class="sxs-lookup"><span data-stu-id="00f5c-133">Name of the publishedResource.</span></span>|
+|<span data-ttu-id="9ed44-128">displayName</span><span class="sxs-lookup"><span data-stu-id="9ed44-128">displayName</span></span>|<span data-ttu-id="9ed44-129">String</span><span class="sxs-lookup"><span data-stu-id="9ed44-129">String</span></span>|<span data-ttu-id="9ed44-130">PublishedResource 的显示名称。</span><span class="sxs-lookup"><span data-stu-id="9ed44-130">Display Name of the publishedResource.</span></span>|
+|<span data-ttu-id="9ed44-131">resourceName</span><span class="sxs-lookup"><span data-stu-id="9ed44-131">resourceName</span></span>|<span data-ttu-id="9ed44-132">String</span><span class="sxs-lookup"><span data-stu-id="9ed44-132">String</span></span>|<span data-ttu-id="9ed44-133">PublishedResource 的名称。</span><span class="sxs-lookup"><span data-stu-id="9ed44-133">Name of the publishedResource.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="00f5c-134">响应</span><span class="sxs-lookup"><span data-stu-id="00f5c-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9ed44-134">响应</span><span class="sxs-lookup"><span data-stu-id="9ed44-134">Response</span></span>
 
-<span data-ttu-id="00f5c-135">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[publishedResource](../resources/publishedresource.md)对象。</span><span class="sxs-lookup"><span data-stu-id="00f5c-135">If successful, this method returns a `201 Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.</span></span>
+<span data-ttu-id="9ed44-135">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[publishedResource](../resources/publishedresource.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9ed44-135">If successful, this method returns a `201 Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="00f5c-136">示例</span><span class="sxs-lookup"><span data-stu-id="00f5c-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9ed44-136">示例</span><span class="sxs-lookup"><span data-stu-id="9ed44-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="00f5c-137">请求</span><span class="sxs-lookup"><span data-stu-id="00f5c-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9ed44-137">请求</span><span class="sxs-lookup"><span data-stu-id="9ed44-137">Request</span></span>
 
-<span data-ttu-id="00f5c-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="00f5c-138">The following is an example of the request.</span></span>
+<span data-ttu-id="9ed44-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9ed44-138">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="9ed44-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9ed44-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_publishedresource_from_onpremisespublishingprofile"
@@ -76,12 +78,30 @@ Content-Type: application/json
     "resourceName": "domain1.contoso.com"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9ed44-140">C#</span><span class="sxs-lookup"><span data-stu-id="9ed44-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-publishedresource-from-onpremisespublishingprofile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="00f5c-139">响应</span><span class="sxs-lookup"><span data-stu-id="00f5c-139">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9ed44-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="9ed44-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-publishedresource-from-onpremisespublishingprofile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="00f5c-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="00f5c-140">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9ed44-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="9ed44-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-publishedresource-from-onpremisespublishingprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="00f5c-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="00f5c-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javatabjava"></a>[<span data-ttu-id="9ed44-143">Java</span><span class="sxs-lookup"><span data-stu-id="9ed44-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-publishedresource-from-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="9ed44-144">响应</span><span class="sxs-lookup"><span data-stu-id="9ed44-144">Response</span></span>
+
+<span data-ttu-id="9ed44-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9ed44-145">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="9ed44-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9ed44-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
