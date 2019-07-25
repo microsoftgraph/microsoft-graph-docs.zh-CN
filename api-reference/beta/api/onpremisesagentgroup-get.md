@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4243f0e16d432d9756ec2f414aae23ad8ed4730b
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 2943cd2d65ac79e2b50b5c2cb09c7431effb12e9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841141"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878550"
 ---
-# <a name="get-onpremisesagentgroup"></a><span data-ttu-id="e62a5-103">获取 onPremisesAgentGroup</span><span class="sxs-lookup"><span data-stu-id="e62a5-103">Get onPremisesAgentGroup</span></span>
+# <a name="get-onpremisesagentgroup"></a><span data-ttu-id="4e4af-103">获取 onPremisesAgentGroup</span><span class="sxs-lookup"><span data-stu-id="4e4af-103">Get onPremisesAgentGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e62a5-104">检索[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e62a5-104">Retrieve the properties and relationships of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
+<span data-ttu-id="4e4af-104">检索[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4e4af-104">Retrieve the properties and relationships of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e62a5-105">权限</span><span class="sxs-lookup"><span data-stu-id="e62a5-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4e4af-105">权限</span><span class="sxs-lookup"><span data-stu-id="4e4af-105">Permissions</span></span>
 
-<span data-ttu-id="e62a5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e62a5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4e4af-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4e4af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e62a5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e62a5-108">Permission type</span></span>                        | <span data-ttu-id="e62a5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e62a5-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4e4af-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4e4af-108">Permission type</span></span>                        | <span data-ttu-id="4e4af-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4e4af-109">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e62a5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e62a5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e62a5-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="e62a5-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="e62a5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e62a5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e62a5-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e62a5-113">Not supported.</span></span> |
-| <span data-ttu-id="e62a5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e62a5-114">Application</span></span>                            | <span data-ttu-id="e62a5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e62a5-115">Not supported.</span></span> |
+|<span data-ttu-id="4e4af-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4e4af-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="4e4af-111">OnPremisesPublishingProfiles</span><span class="sxs-lookup"><span data-stu-id="4e4af-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="4e4af-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4e4af-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e4af-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="4e4af-113">Not supported.</span></span> |
+| <span data-ttu-id="4e4af-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4e4af-114">Application</span></span>                            | <span data-ttu-id="4e4af-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4e4af-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e62a5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e62a5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4e4af-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4e4af-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +36,31 @@ ms.locfileid: "35841141"
 GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e62a5-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e62a5-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4e4af-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4e4af-117">Optional query parameters</span></span>
 
-<span data-ttu-id="e62a5-118">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e62a5-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="4e4af-118">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4e4af-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e62a5-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e62a5-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4e4af-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4e4af-119">Request headers</span></span>
 
-| <span data-ttu-id="e62a5-120">名称</span><span class="sxs-lookup"><span data-stu-id="e62a5-120">Name</span></span>      |<span data-ttu-id="e62a5-121">说明</span><span class="sxs-lookup"><span data-stu-id="e62a5-121">Description</span></span>|
+| <span data-ttu-id="4e4af-120">名称</span><span class="sxs-lookup"><span data-stu-id="4e4af-120">Name</span></span>      |<span data-ttu-id="4e4af-121">说明</span><span class="sxs-lookup"><span data-stu-id="4e4af-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e62a5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e62a5-122">Authorization</span></span> | <span data-ttu-id="e62a5-123">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="e62a5-123">Bearer {token}</span></span> |
+| <span data-ttu-id="4e4af-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4e4af-122">Authorization</span></span> | <span data-ttu-id="4e4af-123">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="4e4af-123">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e62a5-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="e62a5-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4e4af-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="4e4af-124">Request body</span></span>
 
-<span data-ttu-id="e62a5-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e62a5-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="4e4af-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4e4af-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e62a5-126">响应</span><span class="sxs-lookup"><span data-stu-id="e62a5-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4e4af-126">响应</span><span class="sxs-lookup"><span data-stu-id="4e4af-126">Response</span></span>
 
-<span data-ttu-id="e62a5-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和请求的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e62a5-127">If successful, this method returns a `200 OK` response code and the requested [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.</span></span>
+<span data-ttu-id="4e4af-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和请求的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4e4af-127">If successful, this method returns a `200 OK` response code and the requested [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e62a5-128">示例</span><span class="sxs-lookup"><span data-stu-id="e62a5-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4e4af-128">示例</span><span class="sxs-lookup"><span data-stu-id="4e4af-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e62a5-129">请求</span><span class="sxs-lookup"><span data-stu-id="e62a5-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4e4af-129">请求</span><span class="sxs-lookup"><span data-stu-id="4e4af-129">Request</span></span>
 
-<span data-ttu-id="e62a5-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e62a5-130">The following is an example of the request.</span></span>
+<span data-ttu-id="4e4af-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4e4af-130">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="4e4af-131">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="4e4af-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onpremisesagentgroup"
@@ -67,12 +69,30 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 ```http
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/2d55ed41-1619-4848-92bb-0576d3038682/?$expand=publishedResources,agents
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4e4af-132">C#</span><span class="sxs-lookup"><span data-stu-id="4e4af-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-onpremisesagentgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="e62a5-131">响应</span><span class="sxs-lookup"><span data-stu-id="e62a5-131">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4e4af-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="4e4af-133">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-onpremisesagentgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="e62a5-132">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="e62a5-132">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4e4af-134">目标-C</span><span class="sxs-lookup"><span data-stu-id="4e4af-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-onpremisesagentgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="e62a5-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e62a5-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javatabjava"></a>[<span data-ttu-id="4e4af-135">Java</span><span class="sxs-lookup"><span data-stu-id="4e4af-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="4e4af-136">响应</span><span class="sxs-lookup"><span data-stu-id="4e4af-136">Response</span></span>
+
+<span data-ttu-id="4e4af-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4e4af-137">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="4e4af-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4e4af-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
