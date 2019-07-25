@@ -3,12 +3,12 @@ title: 下载 DriveItemVersion 资源的内容
 description: 检索某个特定版本的 DriveItem 的内容。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57b1c3bac23c12e7c9a9b2840e20177610c1559a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 93670b36a555fa709409a0af95401d79db8c6b71
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448066"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857247"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>下载 DriveItemVersion 资源的内容
 
@@ -68,6 +68,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-version-contents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

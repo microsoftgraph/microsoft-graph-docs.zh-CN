@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6a27aa30b8d48cd6a7c79bbcf4224440dcdd15b2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9c01e64b2e19bc0b7319ead67b6a87d520f07fb6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35478317"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35864944"
 ---
 ```csharp
 
@@ -15,6 +15,10 @@ var callbackUri = "callbackUri-value";
 
 var mediaConfig = new MediaConfig
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","#microsoft.graph.appHostedMediaConfig"}
+    },
     Blob = "<media config blob>"
 };
 

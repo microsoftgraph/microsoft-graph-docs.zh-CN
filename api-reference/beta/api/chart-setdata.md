@@ -4,12 +4,12 @@ description: 重置图表的源数据。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: acde87f47f4972d2a6b84556cf2458b53158db59
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 29298cca008a5844c7aeea0149fd7d6769ce7c7f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438319"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35864274"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -79,6 +79,10 @@ Content-length: 70
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chart-setdata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chart-setdata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

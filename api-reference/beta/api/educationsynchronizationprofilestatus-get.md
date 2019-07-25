@@ -4,12 +4,12 @@ description: 获取租户中特定学校数据同步配置文件的状态。 响
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e17c8275c97e71430bc512bc85b87c976df18550
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ec1d86e7f9b4fc0ea57daf1bb979a45ed7abb9be
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441259"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859939"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-status-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-status-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

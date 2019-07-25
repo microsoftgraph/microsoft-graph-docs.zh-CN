@@ -2,12 +2,12 @@
 title: 列出 businessFlowTemplates
 description: 在 "Azure AD access 评论" 功能中, 列出所有 businessFlowTemplate 对象。
 localization_priority: Normal
-ms.openlocfilehash: a9c623eedc34c7c4d7901a0a03ed81d070eb0af7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 738986efa97f97c58eb76abad0eeb01e3a0a12fc
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438949"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865177"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-businessflowtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-businessflowtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

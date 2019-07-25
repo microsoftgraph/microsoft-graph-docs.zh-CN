@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b1382ebc406eabd547fbf30f7015f280cfd249c7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6492aeceae15078e615622c754d858b08ae4c598
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35519900"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869135"
 ---
 ```csharp
 
@@ -218,6 +218,10 @@ var testInputObject = new ExpressionInputObject
         new StringKeyObjectValuePair
         {
             Key = "appRoleAssignments",
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"value@odata.type","#Collection(String)"}
+            },
             Value = new List<String>()
             {
                 "Default Assignment"

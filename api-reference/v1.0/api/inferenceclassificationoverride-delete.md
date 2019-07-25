@@ -2,12 +2,12 @@
 title: 删除 inferenceClassificationOverride
 description: 删除由其 ID 指定的替代。
 localization_priority: Normal
-ms.openlocfilehash: 3f1b98e38a431cf98a85c960e439f225c20e348c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f65c95ec40672335d4a9eae330ae1ba080030405
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444622"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880816"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>删除 inferenceClassificationOverride
 
@@ -62,6 +62,10 @@ DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-inferenceclassificationoverride-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

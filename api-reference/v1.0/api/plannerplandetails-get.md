@@ -4,12 +4,12 @@ description: 检索 **plannerplandetails** 对象的属性和关系。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6cc21c3523da051f1ad59d98856998ce6965466c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 958097ead1275d9812e1d0de351e0a21bda78e85
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461188"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888789"
 ---
 # <a name="get-plannerplandetails"></a>获取 plannerPlanDetails
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerplandetails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-plannerplandetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

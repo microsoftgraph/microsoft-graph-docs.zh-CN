@@ -4,12 +4,12 @@ description: 在呼叫中开始和停止共享屏幕。 此 API 用于允许应�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9d7b046db81bd08ac07774c16e81fb89f6857a16
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 75d423e54309853d2fd6b39043a14e5bd5926daf
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438753"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35864841"
 ---
 # <a name="call-changescreensharingrole"></a>调用: changeScreenSharingRole
 
@@ -79,6 +79,10 @@ Content-Length: 24
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 获取组成员的列表。 组可以将用户、设备和其他组
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 05876f64c97c7cb5782656bb8bea6bc645c831dd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e788b10e7bf777498454f1546ba317ad1e2125b4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446246"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888978"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivemembers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivemembers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

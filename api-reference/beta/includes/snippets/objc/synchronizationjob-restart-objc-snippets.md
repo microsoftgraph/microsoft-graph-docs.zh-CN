@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f269befa443d26c7c14183c9aba1f84616cf538e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2d9a3040970fba0aadfd391fc9d7a91cbccfe25d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35521225"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869261"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphSynchronizationJobRestartCriteria *criteria = [[MSGraphSynchronizationJobRestartCriteria alloc] init];
-[criteria setResetScope: [MSGraphSynchronizationJobRestartScope ConnectorDataStore]];
+[criteria setResetScope: [MSGraphSynchronizationJobRestartScope Watermark]];
 payloadDictionary[@"criteria"] = criteria;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

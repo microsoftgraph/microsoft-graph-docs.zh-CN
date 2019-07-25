@@ -4,12 +4,12 @@ description: 解除工作表保护
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 31d11f6896fca17a6dde073faf8cc0426b96ae47
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 4cf7350f0728689121e84399bff8fe16e8925b1b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458696"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865997"
 ---
 # <a name="workbookworksheetprotection-unprotect"></a>workbookWorksheetProtection: 取消保护
 
@@ -77,6 +77,10 @@ Content-length: 34
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookworksheetprotection-unprotect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookworksheetprotection-unprotect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
