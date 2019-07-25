@@ -8297,6 +8297,11 @@
                   href: resources/synchronization-configure-with-custom-target-attributes.md
                 - name: 同步目录扩展属性
                   href: resources/synchronization-configure-with-directory-extension-attributes.md
+                - name: 目录定义
+                  href: resources/synchronization-directorydefinition.md
+                  items:
+                    - name: 发现
+                      href: api/directorydefinition-discover.md
                 - name: 作业
                   href: resources/synchronization-synchronizationjob.md
                   items:

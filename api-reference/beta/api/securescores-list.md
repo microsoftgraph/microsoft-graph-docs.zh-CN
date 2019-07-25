@@ -2,30 +2,30 @@
 title: 列出 secureScores
 description: 检索 secureScores 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 1a4994b2e767906b0058bf85936375949f609fbd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 68484cebfa0ca447a468b9d92868e62e5d2deb8f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457343"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870336"
 ---
-# <a name="list-securescores"></a><span data-ttu-id="2205f-103">列出 secureScores</span><span class="sxs-lookup"><span data-stu-id="2205f-103">List secureScores</span></span>
+# <a name="list-securescores"></a><span data-ttu-id="55f71-103">列出 secureScores</span><span class="sxs-lookup"><span data-stu-id="55f71-103">List secureScores</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2205f-104">检索[secureScores](../resources/securescores.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="2205f-104">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
+<span data-ttu-id="55f71-104">检索[secureScores](../resources/securescores.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="55f71-104">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2205f-105">权限</span><span class="sxs-lookup"><span data-stu-id="2205f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="55f71-105">权限</span><span class="sxs-lookup"><span data-stu-id="55f71-105">Permissions</span></span>
 
-<span data-ttu-id="2205f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2205f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="55f71-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="55f71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2205f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2205f-108">Permission type</span></span>      | <span data-ttu-id="2205f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2205f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="55f71-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="55f71-108">Permission type</span></span>      | <span data-ttu-id="55f71-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="55f71-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2205f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2205f-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="2205f-111">Securityevents.readwrite.all、Securityevents.readwrite.all、All。</span><span class="sxs-lookup"><span data-stu-id="2205f-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
-|<span data-ttu-id="2205f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2205f-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2205f-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="2205f-113">Not supported.</span></span>  |
-|<span data-ttu-id="2205f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2205f-114">Application</span></span> | <span data-ttu-id="2205f-115">Securityevents.readwrite.all、Securityevents.readwrite.all、All。</span><span class="sxs-lookup"><span data-stu-id="2205f-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="55f71-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="55f71-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="55f71-111">Securityevents.readwrite.all、Securityevents.readwrite.all、All。</span><span class="sxs-lookup"><span data-stu-id="55f71-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
+|<span data-ttu-id="55f71-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="55f71-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="55f71-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="55f71-113">Not supported.</span></span>  |
+|<span data-ttu-id="55f71-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="55f71-114">Application</span></span> | <span data-ttu-id="55f71-115">Securityevents.readwrite.all、Securityevents.readwrite.all、All。</span><span class="sxs-lookup"><span data-stu-id="55f71-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2205f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2205f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55f71-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="55f71-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,27 +33,27 @@ ms.locfileid: "35457343"
 GET /security/secureScores
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2205f-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="2205f-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="55f71-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="55f71-117">Request headers</span></span>
 
-| <span data-ttu-id="2205f-118">名称</span><span class="sxs-lookup"><span data-stu-id="2205f-118">Name</span></span>      |<span data-ttu-id="2205f-119">说明</span><span class="sxs-lookup"><span data-stu-id="2205f-119">Description</span></span>|
+| <span data-ttu-id="55f71-118">名称</span><span class="sxs-lookup"><span data-stu-id="55f71-118">Name</span></span>      |<span data-ttu-id="55f71-119">说明</span><span class="sxs-lookup"><span data-stu-id="55f71-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2205f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2205f-120">Authorization</span></span>  | <span data-ttu-id="2205f-121">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="2205f-121">Bearer {code}.</span></span> <span data-ttu-id="2205f-122">必需。</span><span class="sxs-lookup"><span data-stu-id="2205f-122">Required.</span></span>|
+| <span data-ttu-id="55f71-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="55f71-120">Authorization</span></span>  | <span data-ttu-id="55f71-121">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="55f71-121">Bearer {code}.</span></span> <span data-ttu-id="55f71-122">必需。</span><span class="sxs-lookup"><span data-stu-id="55f71-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2205f-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="2205f-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="55f71-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="55f71-123">Request body</span></span>
 
-<span data-ttu-id="2205f-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2205f-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="55f71-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="55f71-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2205f-125">响应</span><span class="sxs-lookup"><span data-stu-id="2205f-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="55f71-125">响应</span><span class="sxs-lookup"><span data-stu-id="55f71-125">Response</span></span>
 
-<span data-ttu-id="2205f-126">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**secureScores**对象。</span><span class="sxs-lookup"><span data-stu-id="2205f-126">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
+<span data-ttu-id="55f71-126">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**secureScores**对象。</span><span class="sxs-lookup"><span data-stu-id="55f71-126">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2205f-127">示例</span><span class="sxs-lookup"><span data-stu-id="2205f-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="55f71-127">示例</span><span class="sxs-lookup"><span data-stu-id="55f71-127">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2205f-128">请求</span><span class="sxs-lookup"><span data-stu-id="2205f-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="55f71-128">请求</span><span class="sxs-lookup"><span data-stu-id="55f71-128">Request</span></span>
 
-<span data-ttu-id="2205f-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2205f-129">The following is an example of the request.</span></span>
+<span data-ttu-id="55f71-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="55f71-129">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2205f-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="2205f-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="55f71-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="55f71-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescores_list"
@@ -62,24 +62,28 @@ GET /security/secureScores
 ```http
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2205f-131">C#</span><span class="sxs-lookup"><span data-stu-id="2205f-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="55f71-131">C#</span><span class="sxs-lookup"><span data-stu-id="55f71-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescores-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2205f-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="2205f-132">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55f71-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="55f71-132">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescores-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2205f-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="2205f-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="55f71-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="55f71-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescores-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="55f71-134">Java</span><span class="sxs-lookup"><span data-stu-id="55f71-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2205f-134">响应</span><span class="sxs-lookup"><span data-stu-id="2205f-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="55f71-135">响应</span><span class="sxs-lookup"><span data-stu-id="55f71-135">Response</span></span>
 
-<span data-ttu-id="2205f-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2205f-135">The following is an example of the response.</span></span>
+<span data-ttu-id="55f71-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="55f71-136">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

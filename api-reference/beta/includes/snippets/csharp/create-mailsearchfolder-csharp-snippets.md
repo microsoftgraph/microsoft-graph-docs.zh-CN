@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: ea6cb94b3c7204233c7387058ef4da371631d434
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2f9dd8fd7656738c63b2c2c2afef4fec3ac43960
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35499496"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879859"
 ---
 ```csharp
 
@@ -13,6 +13,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.type","microsoft.graph.mailSearchFolder"}
+    },
     DisplayName = "Weekly digests",
     IncludeNestedFolders = true,
     SourceFolderIds = new List<String>()
