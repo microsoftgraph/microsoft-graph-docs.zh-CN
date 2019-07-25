@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 5f2af5521071821d7271547f207ccefa0d17aade
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 2fb1c89f8862131862869caabb5bb384fc6cb4c9
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840752"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35893149"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -684,6 +684,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    读取所有邮箱中的邮件 | 允许应用在没有登录用户的情况下读取所有邮箱中的邮件。| 是 |
+| _Mail.ReadBasic.All_ |    读取所有用户基本邮件（预览版） | （预览版）让应用能够读取所有用户的邮箱，但不读取正文、previewBody、附件和所有扩展属性。 不包含邮件搜索权限。 | 是 | 否
 | _Mail.ReadWrite_ |    读取和写入所有邮箱中的邮件 | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的邮件。不包括发送电子邮件的权限。 | 是 |
 | _Mail.Send_ |    以任意用户身份发送邮件 | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。 | 是 |
 | _MailboxSettings.Read_ |  读取用户的所有邮箱设置 | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。 | 否 |

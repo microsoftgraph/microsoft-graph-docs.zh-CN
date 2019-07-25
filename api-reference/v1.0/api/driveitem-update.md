@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 更新文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a8519e9c74ceae6ea50c6bc38cf88120709480e6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7ec2ff2c438588074783e953598509eed1730f90
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460677"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881608"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
