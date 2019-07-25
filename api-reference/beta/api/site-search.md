@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1cf88b825250ff602a28919a35dfff4a71edb1c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dad30e8f80fe192449fb2a011c8415dddc1b213c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453591"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869608"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -49,6 +49,10 @@ GET https://graph.microsoft.com/beta/sites?search={query}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/search-sites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

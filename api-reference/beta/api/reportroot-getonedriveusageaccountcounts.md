@@ -4,12 +4,12 @@ description: 获取 OneDrive for Business 活跃网站数趋势。 用户在其�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 79396cb1d5190b8f0e577513b53ec8ad58712467
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bae62cd46877b200f0f5170c628eecb4aa09d9e4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446743"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873024"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 
@@ -106,6 +106,10 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountCounts(perio
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveusageaccountcounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getonedriveusageaccountcounts-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -164,6 +168,10 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountCounts(perio
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getonedriveusageaccountcounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getonedriveusageaccountcounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

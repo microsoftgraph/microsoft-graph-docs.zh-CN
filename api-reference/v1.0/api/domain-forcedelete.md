@@ -4,12 +4,12 @@ description: 使用异步长时间运行的操作删除域。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fe9c6cfa49b3e991cab3d32922b7b5bba8d33e2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a662d86f3050fdad5e371f0d62c93745fa98afed
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461265"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889952"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 
@@ -98,6 +98,10 @@ Content-length: 33
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

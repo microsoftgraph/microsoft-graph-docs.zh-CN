@@ -2,12 +2,12 @@
 title: 'servicePrincipal: delta'
 description: 获取新创建、更新或删除的服务主体, 而无需对整个资源集合执行完全读取。 有关详细信息, 请参阅 Using Delta Query。
 localization_priority: Normal
-ms.openlocfilehash: 017cfc4ed82e68e04ef414acd98c2344721017e6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2a0dd5a7e4b7573c1a0fd738ff5a54fd88ad7246
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453787"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870169"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: delta
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

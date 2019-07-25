@@ -4,12 +4,12 @@ description: 获取组织使用的存储空间。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e588903fa88ad7cd5fbd5cfc501f5f6a6a5e05b3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 57813fa7b7875c2648333ca38abc4e2f85f75f9c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446989"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873647"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagestorage-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmailboxusagestorage-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagestorage-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmailboxusagestorage-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 通过设置 schedulingGroup 的 isActive 属性将其标记为非�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b84912b1b2ebe9fdf6ff83e44bca5be963ca4f25
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d09ffdf218f3b687d29b2f14cf8bd7a1b4c91ef6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457532"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870728"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-delete-schedulinggroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-delete-schedulinggroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

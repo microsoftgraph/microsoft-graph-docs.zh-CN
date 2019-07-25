@@ -4,12 +4,12 @@ description: 删除指定的 outlookCategory 对象。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7a20e8156087c7e34e0ced01f12f1a9cf305017e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7c9a58dc1c970d68ec2956854388b0ab5b9814a7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450693"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877805"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 
@@ -67,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/masterCategories/4b1c2495-54c
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-outlookcategory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

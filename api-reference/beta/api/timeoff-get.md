@@ -4,12 +4,12 @@ description: 按 ID 获取 timeOff。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e2429db3e28fd0ea6fad377f0145e28a0df00ac0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6cc0d75684e040855a85b71e5aa0a4b4ecccb2ca
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456888"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35868055"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-get-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timeoff-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

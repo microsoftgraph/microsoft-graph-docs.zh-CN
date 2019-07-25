@@ -2,12 +2,12 @@
 title: 列出 programControls
 description: 在 Azure AD access 评论功能中, 列出租户中的所有程序中的所有 programControl 对象。
 localization_priority: Normal
-ms.openlocfilehash: 3116aa54e6bf6bb766db3744ba7bd79c12db0781
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 431adc38a6f456990d06f7df6cc343b90bee9084
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455425"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875291"
 ---
 # <a name="list-programcontrols"></a>列出 programControls
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/programControls
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

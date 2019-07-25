@@ -4,12 +4,12 @@ description: 描述 Microsoft Graph API (REST) 中 signIn 资源（实体）的�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3ccd1dc320cfa2bab425dad3002ea727baeea15e
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 658d4abbbdeaff1f6f6de7c01756d821f4d4433b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778458"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869741"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -105,6 +105,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

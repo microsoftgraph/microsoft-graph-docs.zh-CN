@@ -2,12 +2,12 @@
 title: 创建 appRoleAssignment
 description: 使用此 API 创建新的 appRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: 5f47d1d7809182f963469b02e6781462997e5d67
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3b3820394681ed27b862465e041f21d34c2b0835
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457210"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869895"
 ---
 # <a name="create-approleassignment"></a>创建 appRoleAssignment
 
@@ -74,6 +74,10 @@ Content-length: 233
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-approleassignment-from-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-approleassignment-from-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

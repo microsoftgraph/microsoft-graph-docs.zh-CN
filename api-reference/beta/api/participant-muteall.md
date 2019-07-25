@@ -4,12 +4,12 @@ description: 将呼叫中的所有参与者设为静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a322d04dbfa9b35111cbd549564ec39beea7dd8e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0c7f2d3bd4c15d04dd227744161608e1b8abf9e6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453913"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877021"
 ---
 # <a name="participant-muteall"></a>参与者: muteAll
 
@@ -82,6 +82,10 @@ Content-Length: 81
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-muteall-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

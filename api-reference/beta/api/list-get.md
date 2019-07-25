@@ -4,12 +4,12 @@ title: 获取列表的元数据
 description: 返回 [列表] [] 的元数据。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 60764674ab8aeca106434c4c4400b339a7296152
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: b60b5b1d6190738d133a030c96149688fc9fc88b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840773"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880343"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -63,6 +63,10 @@ GET /sites/{site-id}/lists/{list-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -107,6 +111,10 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-multi-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-multi-expand-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

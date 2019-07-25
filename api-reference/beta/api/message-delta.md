@@ -4,12 +4,12 @@ description: 获取指定文件夹中已添加、删除或更新的邮件集。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7b093d809ceb4df70b191ce9f38fb7cf594b4675
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e2cf07046d12c0b7d13abed4723a8141f69ab972
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449762"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879640"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -26,7 +26,7 @@ ms.locfileid: "35449762"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.readbasic.all、邮件、读取、封写    |
 |委派（个人 Microsoft 帐户） | User.readbasic.all、邮件、读取、封写    |
-|应用程序 | Mail.Read、Mail.ReadWrite |
+|应用程序 | User.readbasic.all、邮件、读取、封写 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -87,6 +87,10 @@ Prefer: odata.maxpagesize=2
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

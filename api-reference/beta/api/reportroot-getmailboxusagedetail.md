@@ -4,12 +4,12 @@ description: 获取邮箱使用情况的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 0fa58a26d37ea8ec772d9c7fccfd4bb61dead81b
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: fde6fd233ef61cfce718898418c9a2b756c253df
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805076"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873778"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot：getMailboxUsageDetail
 
@@ -117,6 +117,10 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagedetail-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmailboxusagedetail-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -175,6 +179,10 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagedetail-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmailboxusagedetail-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

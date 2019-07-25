@@ -4,12 +4,12 @@ description: 检索用户最近查看过的 plannerPlans 列表。 您可以通�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 3428a174e77b46234effef0e505d2516ff34f421
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dd1aa46a8b270464c13373000967ec5114ca4674
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455152"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35876140"
 ---
 # <a name="list-recentplans"></a>列出 recentPlans
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recentplans-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-recentplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

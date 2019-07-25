@@ -4,12 +4,12 @@ description: 创建新的 securityAction 对象。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 293be54ec8dcf6aaa069186a366b6fd13db8a430
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 96f0c5b9ffbcdcda125cb43421fdcffc617c89ea
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453780"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870245"
 ---
 # <a name="create-securityaction"></a>创建 securityAction
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-securityaction-from-security-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-securityaction-from-security-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

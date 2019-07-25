@@ -4,12 +4,12 @@ description: 获取每个电子邮件应用的唯一用户数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 44363371ba2d975141988e1e3277001973ee356c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 253c672bc415937c6799f9f46b186d70ac64e213
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447059"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873932"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 
@@ -111,6 +111,10 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageAppsUserCounts(peri
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageappsusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageappsusercounts-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -169,6 +173,10 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageAppsUserCounts(peri
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageappsusercounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageappsusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

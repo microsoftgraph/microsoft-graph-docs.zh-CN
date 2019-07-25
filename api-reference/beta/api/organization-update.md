@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 10b2ab6650bb255e38eb6bfd2def745edcecd87b
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 81c16d8c5e4a942a4833c8f575de4b62f9a8a018
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639050"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878086"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -99,6 +99,10 @@ Content-length: 411
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
