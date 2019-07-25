@@ -4,12 +4,12 @@ description: 检索 applicationSignInDetailSummary 对象的属性和关系。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 10bac5c994bd38b551b266a2134a2a738f9558d7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 58a6ed05ee0bbc17049381e1442c7b183878df77
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439565"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856757"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<i
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationsignindetailedsummary-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationsignindetailedsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

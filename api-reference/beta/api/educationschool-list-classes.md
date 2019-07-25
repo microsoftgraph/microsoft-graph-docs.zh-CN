@@ -4,12 +4,12 @@ description: 检索学校所拥有的课程列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a6fdac70e14033c86965f34d5af41e0ca64899f7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8291c1e09d577503d634ee1956ed1ea138ce4078
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441476"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860218"
 ---
 # <a name="list-educationclasses"></a>列出 educationClasses
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/education/schools/10002/classes
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

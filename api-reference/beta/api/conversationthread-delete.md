@@ -4,12 +4,12 @@ description: 删除 conversationThread。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 0db360081d9d371f52bc8a40428ac293ed537e3f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e0fc12d6eb3dde6e925b2bfd63f58a4bea2c4692
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437429"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35862952"
 ---
 # <a name="delete-conversationthread"></a>删除 conversationThread
 
@@ -66,6 +66,10 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-conversationthread-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-conversationthread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

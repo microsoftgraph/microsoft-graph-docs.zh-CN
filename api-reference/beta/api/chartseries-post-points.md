@@ -4,12 +4,12 @@ description: 使用此 API 创建新 ChartPoints。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aafd2add391105bae4df6f82f31b1db62e29997c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9f04161d1e8c440ca69e528e7039ac004451e47d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437941"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863785"
 ---
 # <a name="create-chartpoint"></a>创建 ChartPoint
 
@@ -71,6 +71,10 @@ Content-length: 3
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chartpoints-from-chartseries-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chartpoints-from-chartseries-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

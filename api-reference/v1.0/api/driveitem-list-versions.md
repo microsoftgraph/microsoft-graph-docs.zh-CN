@@ -3,12 +3,12 @@ title: 列出 DriveItem 的版本
 description: OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a635005c5ebdd86b4c8e7cad388aa9dc071ac856
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2020cfeaaf8a47ca92312a3650813f910d9b9006
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443978"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35881719"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
 
@@ -68,6 +68,10 @@ GET /me/drive/items/{item-id}/versions
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

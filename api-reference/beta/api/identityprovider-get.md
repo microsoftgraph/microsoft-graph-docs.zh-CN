@@ -2,12 +2,12 @@
 title: 获取 identityProvider
 description: 检索现有 Identityprovider.read.all 的属性。
 localization_priority: Normal
-ms.openlocfilehash: a9fc7f58cc5adfbf04dde938eaa376656a2b1dad
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c6f9468e800319e18368f5d6d6d8ed8b26240491
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442564"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857632"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

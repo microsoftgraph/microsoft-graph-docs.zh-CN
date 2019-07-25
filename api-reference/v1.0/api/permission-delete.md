@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 删除对项目的访问权限
 localization_priority: Normal
-ms.openlocfilehash: c7506538628a2003c9070ffd7d42c3170da14921
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b2e454515c25aeff2249db69be78ca9d74f6b0ea
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455264"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886507"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 
@@ -71,6 +71,10 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

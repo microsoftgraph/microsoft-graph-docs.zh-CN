@@ -4,12 +4,12 @@ description: 重新启动同步作业, 强制它重新处理目录中的所有�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 765b8801c808a71426fc6a5150229e028429436f
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 429624fbcbded49c5f0c60669fca93ea7985029c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621086"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869264"
 ---
 # <a name="restart-synchronizationjob"></a>重新启动 synchronizationJob
 
@@ -67,7 +67,7 @@ Content-type: application/json
 
 {
    "criteria": {
-       "resetScope": "ConnectorDataStore, Escrows, QuarantineState"
+       "resetScope": "Watermark, Escrows, QuarantineState"
    }
 }
 ```
@@ -81,6 +81,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-restart-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-restart-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

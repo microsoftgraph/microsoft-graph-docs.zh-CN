@@ -3,12 +3,12 @@ title: 更新订阅
 description: 通过延长到期时间续订订阅。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 200d361e4c39f4916a2200a3262994f8c09a4eff
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0320ad06516e0d0f7a1def7f294ae8c56a345ebd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457070"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869420"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

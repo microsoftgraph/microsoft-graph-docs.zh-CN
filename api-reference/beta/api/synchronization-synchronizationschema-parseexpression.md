@@ -4,12 +4,12 @@ description: '(../resources/synchronization_attributemappingsource.md) 对象。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 33e06afa2cafcaf596f30c84fc39aaa55cb75d3d
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 24e223be3dc5ffbe50aed30ffabcf8959bdbaa6c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620995"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869133"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -126,6 +126,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-parseexpression-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

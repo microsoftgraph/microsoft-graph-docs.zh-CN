@@ -4,12 +4,12 @@ description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体)
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9de0f618fe4582af02e2202ef8ae529448a9838
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 52f67940086ea7e23331feb4addabeeffcd9d2c0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455978"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880412"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -19,15 +19,16 @@ ms.locfileid: "35455978"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AuditLog 和所有目录。全部读取. 所有 |
-|委派（个人 Microsoft 帐户） | 不支持   |
-|应用 | AuditLog.Read.All |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | AuditLog 和所有目录。全部读取. 所有    |
+| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 应用                            | AuditLog.Read.All                           |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /auditLogs/directoryaudits
 ```
@@ -36,33 +37,33 @@ GET /auditLogs/directoryaudits
 
 此方法支持以下 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
-|名称     |说明                            |示例|
-|:--------------------|:----------------|:--------------------------------------|
-|[$filter](/graph/query_parameters#filter-parameter)|筛选结果（行）。 |`/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
-|[$top](/graph/query_parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+| 名称                                                       | 说明                                                                   | 示例                                                                     |
+| :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [\$筛选器](/graph/query_parameters#filter-parameter)       | 筛选结果（行）。                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
+| [\$返回页首](/graph/query_parameters#top-parameter)             | 设置结果的页面大小。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。 | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>$Filter 参数支持的属性
+### <a name="attributes-supported-by-filter-parameter"></a>Filter 参数支持\$的属性
 
-|属性名 |支持的运算符|
-|:----------------|:------|
-|activityDisplayName| eq、startswith|
-|activityDateTime| eq、ge、le|
-|loggedByService|eq|
-|initiatedBy/user/id|eq|
-|initiatedBy/user/displayName| eq|
-|initiatedBy/user/userPrincipalName| eq、startswith|
-|initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
-|targetResource/any (t: t/id eq "{value}")| eq|
-|targetResource/any (t: t/displayName eq ' {value} ') | eq |
-|targetResources/any (x: startswith (x/displayName, "{value}"))| startswith|
+| 属性名                                               | 支持的运算符 |
+| :----------------------------------------------------------- | :------------------ |
+| activityDisplayName                                          | eq、startswith      |
+| activityDateTime                                             | eq、ge、le          |
+| loggedByService                                              | eq                  |
+| initiatedBy/user/id                                          | eq                  |
+| initiatedBy/user/displayName                                 | eq                  |
+| initiatedBy/user/userPrincipalName                           | eq、startswith      |
+| initiatedBy/app/appId                                        | eq                  |
+| initiatedBy/app/appDisplayName                               | eq                  |
+| targetResources/any (t: t/id eq "{value}")                    | eq                  |
+| targetResources/any (t: t/displayName eq ' {value} ')            | eq                  |
+| targetResources/any (x: startswith (x/displayName, "{value}")) | startswith          |
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称      |说明|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+| 名称          | 说明   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>请求正文
 
@@ -84,6 +85,7 @@ GET /auditLogs/directoryaudits
   "blockType": "request",
   "name": "get_directoryaudit"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
@@ -99,13 +101,18 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -113,11 +120,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
   "@odata.type": "microsoft.graph.directoryaudit",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
 ```
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -140,7 +150,7 @@ Content-length: 271
             },
             "app": null
         },
-        "targetResource": [{
+        "targetResources": [{
             "id": "ef7e527d-6c92-4234-8c6d-cf6fdfb57f95",
             "displayName": "Example.com",
             "Type": "Group",

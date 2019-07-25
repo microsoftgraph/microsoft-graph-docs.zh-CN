@@ -4,12 +4,12 @@ description: 获取用户所属的组、目录角色和管理单元。 此 API �
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2ed36ec80cb3f17a19d0e9d3f40723a8a999cc9a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b3b543556a690cf800eb8656f078eb3b3001fa7e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35452940"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867039"
 ---
 # <a name="list-user-transitive-memberof"></a>列出用户可传递的 memberOf
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/transitiveMemberOf
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

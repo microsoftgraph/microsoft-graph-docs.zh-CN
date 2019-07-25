@@ -4,12 +4,12 @@ description: 重新计算 Excel 中当前打开的所有工作簿。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fc82d01c7304ca566534d650f7fdda8dc6ca295e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e5514d72c9cf59c4e909adda43f525329d570c26
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448484"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866473"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: 计算
 
@@ -76,6 +76,10 @@ Content-length: 48
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookapplication-calculate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookapplication-calculate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
