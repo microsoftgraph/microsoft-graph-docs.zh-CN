@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 730b9a2526e82c055c282d3c02bfa1bad35d8031
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840633"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890328"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -61,6 +61,7 @@ ms.locfileid: "35840633"
 |添加项|beta|将 **valuePrefix** 属性添加到了 [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) 实体|
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
+
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|向 [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) 操作添加了 **expirationDatetime** 和 **password** 属性。 |
@@ -72,8 +73,17 @@ ms.locfileid: "35840633"
 | 添加项 | v1.0 | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，用于获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-1.0) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) 资源。 |
 | 添加项 | beta | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，用于获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-beta) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) 资源。 |
 | 添加项 | v1.0 | 在[组](/graph/api/group-delta?view=graph-rest-1.0)中添加了 [group:validateProperties 函数](/graph/api/group-validateproperties?view=graph-rest-1.0)和 [directoryobject:validateProperties 函数](/graph/api/group-validateproperties?view=graph-rest-1.0)，用于验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+| 添加项 | Beta |向资源类型 [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta) 添加了“version”、“discoveryDateTime”和“discoverabilities”属性。|
+| 添加项 | Beta |添加了 [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) 方法。|
 
-### <a name="reports"></a>报告
+### <a name="mail-outlook"></a>邮件 (Outlook)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 增加了对 mailFolder API 中 Mail.ReadBasic.All 权限的支持：[list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta)、[get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta)、[list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) 和 [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 还在 [delta query for message](/graph/api/message-delta?view=graph-rest-beta) 和 [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta) 中添加了 Mail.ReadBasic.All 支持。|
+
+
+### <a name="reports"></a>报表
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -162,8 +172,6 @@ ms.locfileid: "35840633"
 
 ## <a name="may-2019"></a>2019 年 5 月
 
-### <a name="calendar-mail-and-personal-contacts-outlook"></a>日历、邮件和个人联系人 (Outlook)
-
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
@@ -245,7 +253,6 @@ ms.locfileid: "35840633"
 | 添加项        | Beta  | 向 [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
 | 添加项        | Beta  | 向 [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
 
-### <a name="security"></a>安全性
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1584,7 +1591,7 @@ ms.locfileid: "35840633"
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 |更改类型|版本|说明|
 |:---|:---|:---|
-|添加|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
+|Addition|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|新增了复杂类型：<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0)<br/> |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>publication</b> 属性 |
 |添加项|v1.0|向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体添加了 <b>versions</b> 导航属性 |
