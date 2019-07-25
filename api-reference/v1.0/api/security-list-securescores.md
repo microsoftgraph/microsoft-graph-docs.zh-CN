@@ -3,12 +3,12 @@ title: 列出 secureScores
 description: 检索 secureScore 对象的列表。
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: a632a0abdf15d91fc37a511ab75b50d8233d5a4c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7fcf0cf5350d179f69fabe278ed8a8f70f32784d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441623"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891602"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescores-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-securescores-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

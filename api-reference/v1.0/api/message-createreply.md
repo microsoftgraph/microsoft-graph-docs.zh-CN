@@ -4,12 +4,12 @@ description: 创建回复的草稿以指定邮件。 然后，可以更新草稿
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9b45669b14bbeb0977e1437eb611074857193d04
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 409ca69cc1664cf486748ad0c39d888086e54a33
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444174"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889742"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createreply-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-createreply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

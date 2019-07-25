@@ -3,12 +3,12 @@ title: 删除活动
 description: 删除应用程序的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 28bea3ec0c9e29ca826fe628fe0336911232d8ca
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6df91f6111381a9795fa9a046f30d6e45a55a4b4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448922"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894011"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

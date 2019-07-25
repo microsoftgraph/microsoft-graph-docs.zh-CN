@@ -2,12 +2,12 @@
 title: NamedItem：Range
 description: 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
 localization_priority: Normal
-ms.openlocfilehash: a77a34659540dbfbea101a1a88e258d5ad20a5fb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5d397820b216b1d067394082e8d7d8d1cf2f9406
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460656"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890273"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 
@@ -63,6 +63,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditem-range-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/nameditem-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

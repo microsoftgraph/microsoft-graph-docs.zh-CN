@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ab9f23961733a37082f48c111974c2116462aeee
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 129e94aef36e9779dd114848880ddba5243b218e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445420"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890798"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

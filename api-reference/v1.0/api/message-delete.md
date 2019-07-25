@@ -4,12 +4,12 @@ description: 删除指定用户的邮箱中的邮件, 或删除邮件的关系�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b051aa1bd1c82c4ec7ee9655427b6782bd6a6517
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ca16d714d402068634996daff68e75bfb17cf918
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449790"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892849"
 ---
 # <a name="delete-message"></a>删除邮件
 
@@ -68,6 +68,10 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

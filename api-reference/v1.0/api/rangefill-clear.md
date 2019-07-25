@@ -4,12 +4,12 @@ description: 重置范围背景。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bdea1f432c575c199020919d7d6573efb02eb9af
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8fe2ca08a5e3c803abcdfd039656aad6fbd11a1f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459816"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892569"
 ---
 # <a name="rangefill-clear"></a>RangeFill: clear
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rangefill-clear-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rangefill-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

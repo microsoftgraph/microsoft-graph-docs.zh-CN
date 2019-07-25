@@ -2,12 +2,12 @@
 title: 创建程序
 description: 在 "Azure AD access 评论" 功能中, 创建一个新的程序对象。
 localization_priority: Normal
-ms.openlocfilehash: fba14e8c16afae7f1b5160ff1709d678193766ec
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 239eef0fe2b2026b9329b84e0c38641dda788707
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455327"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875454"
 ---
 # <a name="create-program"></a>创建程序
 
@@ -78,6 +78,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-program-from-programs-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-program-from-programs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

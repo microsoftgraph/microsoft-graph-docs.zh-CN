@@ -4,12 +4,12 @@ description: 介绍 Microsoft Graph API 中登录资源 (实体) 的 get 方法�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f258b49d763ddda90b5ee5b05de92a2b44722f0
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 535edf47a43c248240479f6567869f78cb374b18
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778439"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891598"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

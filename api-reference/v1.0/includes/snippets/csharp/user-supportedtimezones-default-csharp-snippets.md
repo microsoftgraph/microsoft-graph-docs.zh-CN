@@ -1,17 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: bb4877f494f4bd4f9620268232baa74d70474948
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2560ec005d7be76aa9be823be7dd6952c37b1df4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35508948"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35892964"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var supportedTimeZones = await graphClient.Me.Outlook.SupportedTimeZones()
+var supportedTimeZones = await graphClient.Me.Outlook
+    .SupportedTimeZones()
     .Request()
     .GetAsync();
 

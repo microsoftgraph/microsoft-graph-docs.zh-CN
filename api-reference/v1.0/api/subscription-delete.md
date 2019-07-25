@@ -3,12 +3,12 @@ title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 50cd70ed1284b9ea165118db6af3141a6dadec6a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2cb6fc4cc68588abb0f5c8a92fa0adfe9b343959
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459886"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890620"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-subscription-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
