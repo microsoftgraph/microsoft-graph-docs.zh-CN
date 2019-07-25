@@ -2,12 +2,12 @@
 title: 列出 programControlTypes
 description: 在 "Azure AD access 评论" 功能中, 列出所有 programControlType 对象。
 localization_priority: Normal
-ms.openlocfilehash: 2f8e5c500d454d35c06c913a38d14499288ab916
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: edd94f45159a068fd49905fca275b3bba7e2d3e7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455446"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875289"
 ---
 # <a name="list-programcontroltypes"></a>列出 programControlTypes
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontroltype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-programcontroltype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

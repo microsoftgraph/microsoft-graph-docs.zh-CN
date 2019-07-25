@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d27bb8827d201280ffb9b7ab6f41c3c4c18dc3b7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5feed6c868544938adad98165439b6360728f151
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449230"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880303"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 
@@ -79,6 +79,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

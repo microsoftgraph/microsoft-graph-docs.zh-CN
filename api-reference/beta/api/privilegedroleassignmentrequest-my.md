@@ -2,12 +2,12 @@
 title: 'privilegedRoleAssignmentRequest: my'
 description: 获取请求者的特权角色分配请求。
 localization_priority: Normal
-ms.openlocfilehash: 173d152dc414f1cee1e7b04d5a54a94d588d178d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 669a3bca407e7cd5744a9a7f38031ff02abd48da
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444888"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875559"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignmentrequest-my-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

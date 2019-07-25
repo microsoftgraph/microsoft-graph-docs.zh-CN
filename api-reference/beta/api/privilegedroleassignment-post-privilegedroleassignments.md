@@ -2,12 +2,12 @@
 title: 创建 privilegedRoleAssignment
 description: 使用此 API 创建新的 privilegedRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: 14a80e0cf8c90a4d5d3ec72a2d91df2843af0778
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2e0f77b74825ebacedc5647524f38ba32ef14d62
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444909"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875628"
 ---
 # <a name="create-privilegedroleassignment"></a>创建 privilegedRoleAssignment
 
@@ -72,6 +72,10 @@ Content-length: 164
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-privilegedroleassignment-from-privilegedroleassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedroleassignment-from-privilegedroleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6b16750ee6f6a4539b3c7fadde29a4a4c68edc75
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 849bb3f60f67d9cc44dd65b47faf5b69dac857ff
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35479391"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877308"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 const outlookTask = {
-  assignedTo: "Dana Swope",
   subject: "Shop for children's weekend",
   startDateTime: {
       dateTime: "2016-05-03T09:00:00",

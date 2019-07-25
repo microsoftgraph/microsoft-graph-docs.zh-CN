@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 614ce17626ee9b79b4db4d576d54f24497d99f10
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 694731f0faaf0e2061afe48d83e64cec334e0ca6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35479997"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877305"
 ---
 ```objc
 
@@ -18,7 +18,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOutlookTask *outlookTask = [[MSGraphOutlookTask alloc] init];
-[outlookTask setAssignedTo:@"Dana Swope"];
 [outlookTask setSubject:@"Shop for children's weekend"];
 MSGraphDateTimeTimeZone *startDateTime = [[MSGraphDateTimeTimeZone alloc] init];
 [startDateTime setDateTime: "2016-05-03T09:00:00"];

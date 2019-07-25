@@ -2,12 +2,12 @@
 title: 列出程序的 programControls
 description: 在 "Azure AD access 评论" 功能中, 列出链接到特定程序的所有 programControl 对象。
 localization_priority: Normal
-ms.openlocfilehash: 2f37381acf7283e907f5129b0c5bf02fd61f7c09
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c809bbf95900875d306a8d2cbb0270f832a4968d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455320"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875384"
 ---
 # <a name="list-programcontrols-of-a-program"></a>列出程序的 programControls
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-from-program-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-from-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

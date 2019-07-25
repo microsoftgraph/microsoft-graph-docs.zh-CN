@@ -2,12 +2,12 @@
 title: 删除程序
 description: 在 "Azure AD access 评论" 功能中, 删除一个程序对象。
 localization_priority: Normal
-ms.openlocfilehash: 39e5263f381717e4ef6e7d2b4b02d2c5cc8fa7cd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a772117d5e39015012fabd2c81b9787de7d3e2fd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455334"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875418"
 ---
 # <a name="delete-program"></a>删除程序
 
@@ -67,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f91
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-program-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

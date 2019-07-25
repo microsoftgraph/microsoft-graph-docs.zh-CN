@@ -2,12 +2,12 @@
 title: 获取 privilegedRoleSettings
 description: 检索给定角色的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 985b58c560b6f152f01c72de3ebd03e834822042
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b4dbb6f378288a727f4c0c97541f9cb3e0eb8eda
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444832"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875523"
 ---
 # <a name="get-privilegedrolesettings"></a>获取 privilegedRoleSettings
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/settings
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedrolesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

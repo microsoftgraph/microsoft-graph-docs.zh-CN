@@ -4,12 +4,12 @@ description: 获取为用户收件箱定义的所有 messageRule 对象。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: cb33f50efc14d397344b13b57144bf0232e7e4d0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: bb14e7574de2ecb8e7e010cbee7983962d0a6f95
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448788"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879942"
 ---
 # <a name="list-rules"></a>列出规则
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messagerules-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messagerules-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
