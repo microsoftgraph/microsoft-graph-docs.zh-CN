@@ -4,12 +4,12 @@ description: 检索 **plannerplan** 对象的属性和关系。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2a4889baafa893aaf199fd3ddc50eddde38b00fe
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 47777b46d46094e00dc4c7e950beacd9455175fa
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820757"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35876440"
 ---
 # <a name="get-plannerplan"></a>获取 plannerPlan
 
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/planner/plans/<id>
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerplan-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-plannerplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: 更新照片
 description: 更新 photo 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 77ec96503e95b91de3e724375349520f042f2002
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0d12b83f7c9436cce14a27ed5f27741b4ac92da3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35454207"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35876902"
 ---
 # <a name="update-photo"></a>更新照片
 
@@ -75,6 +75,10 @@ Content-length: 53
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-photo-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 获取与整个表相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aa2f39894957a582cc728741f0e27ed786d5d1f5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: abbdf211e4ef26d26eac23666244492e2828dfe5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450413"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891562"
 ---
 # <a name="table-range"></a>Table:Range
 
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/table-range-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/table-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
