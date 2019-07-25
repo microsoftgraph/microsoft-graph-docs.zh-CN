@@ -4,59 +4,59 @@ description: 检索特定组设置对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ef401733d328b94f762c967a9a899dc95fdd79f1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ed3eadf8834256783b119670c02e193f22f79fdb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447423"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886759"
 ---
-# <a name="get-a-group-setting"></a><span data-ttu-id="83de5-103">获取组设置</span><span class="sxs-lookup"><span data-stu-id="83de5-103">Get a group setting</span></span>
+# <a name="get-a-group-setting"></a><span data-ttu-id="afb93-103">获取组设置</span><span class="sxs-lookup"><span data-stu-id="afb93-103">Get a group setting</span></span>
 
-<span data-ttu-id="83de5-104">检索特定组设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="83de5-104">Retrieve the properties of a specific of group setting object.</span></span>
+<span data-ttu-id="afb93-104">检索特定组设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="afb93-104">Retrieve the properties of a specific of group setting object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="83de5-105">权限</span><span class="sxs-lookup"><span data-stu-id="83de5-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="afb93-105">权限</span><span class="sxs-lookup"><span data-stu-id="afb93-105">Permissions</span></span>
 
-<span data-ttu-id="83de5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="83de5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="afb93-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="afb93-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="83de5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="83de5-108">Permission type</span></span>      | <span data-ttu-id="83de5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="83de5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="afb93-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="afb93-108">Permission type</span></span>      | <span data-ttu-id="afb93-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="afb93-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="83de5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="83de5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="83de5-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="83de5-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="83de5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="83de5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="83de5-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="83de5-113">Not supported.</span></span>    |
-|<span data-ttu-id="83de5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="83de5-114">Application</span></span> | <span data-ttu-id="83de5-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="83de5-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="afb93-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="afb93-110">Delegated (work or school account)</span></span> | <span data-ttu-id="afb93-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="afb93-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="afb93-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="afb93-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="afb93-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="afb93-113">Not supported.</span></span>    |
+|<span data-ttu-id="afb93-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="afb93-114">Application</span></span> | <span data-ttu-id="afb93-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="afb93-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="83de5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="83de5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="afb93-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="afb93-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="83de5-117">获取特定的租户范围或组设置。</span><span class="sxs-lookup"><span data-stu-id="83de5-117">Get a specific tenant-wide or group setting.</span></span>
+<span data-ttu-id="afb93-117">获取特定的租户范围或组设置。</span><span class="sxs-lookup"><span data-stu-id="afb93-117">Get a specific tenant-wide or group setting.</span></span>
 
 ```http
 GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="83de5-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="83de5-118">Optional query parameters</span></span>
-<span data-ttu-id="83de5-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="83de5-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="afb93-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="afb93-118">Optional query parameters</span></span>
+<span data-ttu-id="afb93-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="afb93-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-> <span data-ttu-id="83de5-120">注意：不支持 $filter。</span><span class="sxs-lookup"><span data-stu-id="83de5-120">Note: $filter is not supported.</span></span>
+> <span data-ttu-id="afb93-120">注意：不支持 $filter。</span><span class="sxs-lookup"><span data-stu-id="afb93-120">Note: $filter is not supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="83de5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="83de5-121">Request headers</span></span>
-| <span data-ttu-id="83de5-122">名称</span><span class="sxs-lookup"><span data-stu-id="83de5-122">Name</span></span> | <span data-ttu-id="83de5-123">说明</span><span class="sxs-lookup"><span data-stu-id="83de5-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="afb93-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="afb93-121">Request headers</span></span>
+| <span data-ttu-id="afb93-122">名称</span><span class="sxs-lookup"><span data-stu-id="afb93-122">Name</span></span> | <span data-ttu-id="afb93-123">说明</span><span class="sxs-lookup"><span data-stu-id="afb93-123">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="83de5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="83de5-124">Authorization</span></span> | <span data-ttu-id="83de5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="83de5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="afb93-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="afb93-124">Authorization</span></span> | <span data-ttu-id="afb93-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="afb93-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="83de5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="83de5-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="afb93-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="afb93-127">Request body</span></span>
 
-<span data-ttu-id="83de5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="83de5-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="afb93-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="afb93-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="83de5-129">响应</span><span class="sxs-lookup"><span data-stu-id="83de5-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="afb93-129">响应</span><span class="sxs-lookup"><span data-stu-id="afb93-129">Response</span></span>
 
-<span data-ttu-id="83de5-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象。</span><span class="sxs-lookup"><span data-stu-id="83de5-130">If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
+<span data-ttu-id="afb93-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象。</span><span class="sxs-lookup"><span data-stu-id="afb93-130">If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="83de5-131">示例</span><span class="sxs-lookup"><span data-stu-id="83de5-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="83de5-132">请求</span><span class="sxs-lookup"><span data-stu-id="83de5-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="afb93-131">示例</span><span class="sxs-lookup"><span data-stu-id="afb93-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="afb93-132">请求</span><span class="sxs-lookup"><span data-stu-id="afb93-132">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="83de5-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="83de5-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="afb93-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="afb93-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groupsetting"
@@ -65,23 +65,27 @@ GET /groups/{id}/settings/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="83de5-134">C#</span><span class="sxs-lookup"><span data-stu-id="83de5-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="afb93-134">C#</span><span class="sxs-lookup"><span data-stu-id="afb93-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="83de5-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="83de5-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="afb93-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="afb93-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="83de5-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="83de5-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="afb93-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="afb93-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="afb93-137">Java</span><span class="sxs-lookup"><span data-stu-id="afb93-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="83de5-137">响应</span><span class="sxs-lookup"><span data-stu-id="83de5-137">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="afb93-138">响应</span><span class="sxs-lookup"><span data-stu-id="afb93-138">Response</span></span>
 
-<span data-ttu-id="83de5-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="83de5-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="afb93-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="afb93-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
