@@ -4,61 +4,61 @@ description: 创建一个新表。区域源地址确定将在其下添加表的�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 406dac3f3c96223dc2f8af75782ff288f83dcdc1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 19b8d825e8b55e2516e495407ca9fe3feeb61cde
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456629"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889531"
 ---
-# <a name="tablecollection-add"></a><span data-ttu-id="92b58-105">TableCollection: add</span><span class="sxs-lookup"><span data-stu-id="92b58-105">TableCollection: add</span></span>
+# <a name="tablecollection-add"></a><span data-ttu-id="616ff-105">TableCollection: add</span><span class="sxs-lookup"><span data-stu-id="616ff-105">TableCollection: add</span></span>
 
-<span data-ttu-id="92b58-p102">创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。</span><span class="sxs-lookup"><span data-stu-id="92b58-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
+<span data-ttu-id="616ff-p102">创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。</span><span class="sxs-lookup"><span data-stu-id="616ff-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
 
-## <a name="error-handling"></a><span data-ttu-id="92b58-109">错误处理</span><span class="sxs-lookup"><span data-stu-id="92b58-109">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="616ff-109">错误处理</span><span class="sxs-lookup"><span data-stu-id="616ff-109">Error Handling</span></span>
 
-<span data-ttu-id="92b58-110">此请求有时可能会收到 504 HTTP 错误。</span><span class="sxs-lookup"><span data-stu-id="92b58-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="92b58-111">此错误的适当响应做法是重复发出请求。</span><span class="sxs-lookup"><span data-stu-id="92b58-111">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="616ff-110">此请求有时可能会收到 504 HTTP 错误。</span><span class="sxs-lookup"><span data-stu-id="616ff-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="616ff-111">此错误的适当响应做法是重复发出请求。</span><span class="sxs-lookup"><span data-stu-id="616ff-111">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="92b58-112">权限</span><span class="sxs-lookup"><span data-stu-id="92b58-112">Permissions</span></span>
-<span data-ttu-id="92b58-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92b58-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="616ff-112">权限</span><span class="sxs-lookup"><span data-stu-id="616ff-112">Permissions</span></span>
+<span data-ttu-id="616ff-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="616ff-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="92b58-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="92b58-115">Permission type</span></span>      | <span data-ttu-id="92b58-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92b58-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="616ff-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="616ff-115">Permission type</span></span>      | <span data-ttu-id="616ff-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="616ff-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="92b58-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92b58-117">Delegated (work or school account)</span></span> | <span data-ttu-id="92b58-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="92b58-118">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="92b58-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92b58-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92b58-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="92b58-120">Not supported.</span></span>    |
-|<span data-ttu-id="92b58-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="92b58-121">Application</span></span> | <span data-ttu-id="92b58-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="92b58-122">Not supported.</span></span> |
+|<span data-ttu-id="616ff-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="616ff-117">Delegated (work or school account)</span></span> | <span data-ttu-id="616ff-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="616ff-118">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="616ff-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="616ff-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="616ff-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="616ff-120">Not supported.</span></span>    |
+|<span data-ttu-id="616ff-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="616ff-121">Application</span></span> | <span data-ttu-id="616ff-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="616ff-122">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="92b58-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92b58-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="616ff-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="616ff-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/add
 POST /workbook/worksheets/{id|name}/tables/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="92b58-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="92b58-124">Request headers</span></span>
-| <span data-ttu-id="92b58-125">名称</span><span class="sxs-lookup"><span data-stu-id="92b58-125">Name</span></span>       | <span data-ttu-id="92b58-126">说明</span><span class="sxs-lookup"><span data-stu-id="92b58-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="616ff-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="616ff-124">Request headers</span></span>
+| <span data-ttu-id="616ff-125">名称</span><span class="sxs-lookup"><span data-stu-id="616ff-125">Name</span></span>       | <span data-ttu-id="616ff-126">说明</span><span class="sxs-lookup"><span data-stu-id="616ff-126">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="92b58-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="92b58-127">Authorization</span></span>  | <span data-ttu-id="92b58-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="92b58-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="92b58-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="92b58-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="92b58-p106">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="92b58-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="616ff-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="616ff-127">Authorization</span></span>  | <span data-ttu-id="616ff-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="616ff-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="616ff-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="616ff-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="616ff-p106">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="616ff-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="92b58-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="92b58-133">Request body</span></span>
-<span data-ttu-id="92b58-134">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="92b58-134">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="616ff-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="616ff-133">Request body</span></span>
+<span data-ttu-id="616ff-134">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="616ff-134">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="92b58-135">参数</span><span class="sxs-lookup"><span data-stu-id="92b58-135">Parameter</span></span>    | <span data-ttu-id="92b58-136">类型</span><span class="sxs-lookup"><span data-stu-id="92b58-136">Type</span></span>   |<span data-ttu-id="92b58-137">说明</span><span class="sxs-lookup"><span data-stu-id="92b58-137">Description</span></span>|
+| <span data-ttu-id="616ff-135">参数</span><span class="sxs-lookup"><span data-stu-id="616ff-135">Parameter</span></span>    | <span data-ttu-id="616ff-136">类型</span><span class="sxs-lookup"><span data-stu-id="616ff-136">Type</span></span>   |<span data-ttu-id="616ff-137">说明</span><span class="sxs-lookup"><span data-stu-id="616ff-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="92b58-138">address</span><span class="sxs-lookup"><span data-stu-id="92b58-138">address</span></span>|<span data-ttu-id="92b58-139">string</span><span class="sxs-lookup"><span data-stu-id="92b58-139">string</span></span>|<span data-ttu-id="92b58-p107">表示数据源的 range 对象的地址或名称。如果该地址不包含工作表名称，则使用当前活动的工作表。</span><span class="sxs-lookup"><span data-stu-id="92b58-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
-|<span data-ttu-id="92b58-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="92b58-142">hasHeaders</span></span>|<span data-ttu-id="92b58-143">boolean</span><span class="sxs-lookup"><span data-stu-id="92b58-143">boolean</span></span>|<span data-ttu-id="92b58-p108">指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。</span><span class="sxs-lookup"><span data-stu-id="92b58-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
+|<span data-ttu-id="616ff-138">address</span><span class="sxs-lookup"><span data-stu-id="616ff-138">address</span></span>|<span data-ttu-id="616ff-139">string</span><span class="sxs-lookup"><span data-stu-id="616ff-139">string</span></span>|<span data-ttu-id="616ff-p107">表示数据源的 range 对象的地址或名称。如果该地址不包含工作表名称，则使用当前活动的工作表。</span><span class="sxs-lookup"><span data-stu-id="616ff-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
+|<span data-ttu-id="616ff-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="616ff-142">hasHeaders</span></span>|<span data-ttu-id="616ff-143">boolean</span><span class="sxs-lookup"><span data-stu-id="616ff-143">boolean</span></span>|<span data-ttu-id="616ff-p108">指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。</span><span class="sxs-lookup"><span data-stu-id="616ff-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="92b58-147">响应</span><span class="sxs-lookup"><span data-stu-id="92b58-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="616ff-147">响应</span><span class="sxs-lookup"><span data-stu-id="616ff-147">Response</span></span>
 
-<span data-ttu-id="92b58-148">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookTable](../resources/table.md)对象。</span><span class="sxs-lookup"><span data-stu-id="92b58-148">If successful, this method returns `200 OK` response code and [WorkbookTable](../resources/table.md) object in the response body.</span></span>
+<span data-ttu-id="616ff-148">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookTable](../resources/table.md)对象。</span><span class="sxs-lookup"><span data-stu-id="616ff-148">If successful, this method returns `200 OK` response code and [WorkbookTable](../resources/table.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="92b58-149">示例</span><span class="sxs-lookup"><span data-stu-id="92b58-149">Example</span></span>
-<span data-ttu-id="92b58-150">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="92b58-150">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="92b58-151">请求</span><span class="sxs-lookup"><span data-stu-id="92b58-151">Request</span></span>
-<span data-ttu-id="92b58-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="92b58-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="616ff-149">示例</span><span class="sxs-lookup"><span data-stu-id="616ff-149">Example</span></span>
+<span data-ttu-id="616ff-150">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="616ff-150">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="616ff-151">请求</span><span class="sxs-lookup"><span data-stu-id="616ff-151">Request</span></span>
+<span data-ttu-id="616ff-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="616ff-152">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="92b58-153">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="92b58-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="616ff-153">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="616ff-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablecollection_add"
@@ -73,23 +73,27 @@ Content-length: 54
   "hasHeaders": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="92b58-154">C#</span><span class="sxs-lookup"><span data-stu-id="92b58-154">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="616ff-154">C#</span><span class="sxs-lookup"><span data-stu-id="616ff-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="92b58-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="92b58-155">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="616ff-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="616ff-155">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablecollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="92b58-156">目标-C</span><span class="sxs-lookup"><span data-stu-id="92b58-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="616ff-156">目标-C</span><span class="sxs-lookup"><span data-stu-id="616ff-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tablecollection-add-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="616ff-157">Java</span><span class="sxs-lookup"><span data-stu-id="616ff-157">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablecollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="92b58-157">响应</span><span class="sxs-lookup"><span data-stu-id="92b58-157">Response</span></span>
-<span data-ttu-id="92b58-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="92b58-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="616ff-158">响应</span><span class="sxs-lookup"><span data-stu-id="616ff-158">Response</span></span>
+<span data-ttu-id="616ff-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="616ff-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
