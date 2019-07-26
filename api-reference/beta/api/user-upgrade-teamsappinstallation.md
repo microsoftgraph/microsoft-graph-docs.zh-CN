@@ -1,20 +1,22 @@
 ---
-title: 从团队中删除应用
-description: 从指定的团队中卸载应用程序。
+title: 'teamsAppInstallation: upgrade'
+description: 在用户的个人作用域中升级应用程序安装
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 149b905a6e090960351ae0da70b2a6080fea8fa1
+ms.openlocfilehash: 7461c6e320ffcacc0d26ccffe90681ab6215db15
 ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908472"
+ms.locfileid: "35908535"
 ---
-# <a name="remove-app-from-team"></a>从团队中删除应用
+# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: upgrade
 
-从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+将指定[用户](../resources/user.md)的个人作用域中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
 
 ## <a name="permissions"></a>权限
 
@@ -22,14 +24,14 @@ ms.locfileid: "35908472"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All    |
+|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+POST /users/{id}/teamwork/installedApps/{id}/upgrade
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,34 +53,37 @@ DELETE /teams/{id}/installedApps/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
 <!-- {
   "blockType": "request",
-  "name": "uninstall_teamsapp"
+  "name": "user_upgrade_teamsApp"
 }-->
-
 ```http
-DELETE /teams/{id}/installedApps/{id}
+POST /users/{id}/teamwork/installedApps/{id}/upgrade
 ```
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
-  "name": "uninstall_teamsapp",
+  "name": "user_upgrade_teamsApp",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "Upgrade teamsApp for user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

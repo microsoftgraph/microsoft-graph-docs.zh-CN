@@ -1,15 +1,15 @@
 ---
 title: 创建应用程序
 description: 使用此 API 新建应用程序。
-author: VinodRavichandran
+author: davidmu1
 localization_priority: Priority
-ms.prod: microsoft-teams
-ms.openlocfilehash: 53dfc3ab842b37f299b8f6ec7ec1494c12d3d758
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 775f7d59ba19ed015b7af5d66e9d52ae817ec65c
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855203"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908318"
 ---
 # <a name="create-application"></a>创建应用程序
 

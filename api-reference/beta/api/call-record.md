@@ -4,18 +4,22 @@ description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fad06769f81b9840b89a43cf3e759c86454edef0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 97f182c58af3ac75d816b3e8a0e7a6fb5f3af1d7
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438627"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908332"
 ---
 # <a name="call-record"></a>call: record
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-录制呼叫。
+从呼叫中录制简短的音频剪辑。 如果 bot 希望在发出提示后从呼叫者处捕获语音响应, 这将非常有用。
+
+> [!Note]
+> 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[呼叫](../resources/call.md)支持此记录操作。 此操作不会记录整个调用。 录制的最大长度为5分钟。 录制不会由 bot 平台保存 permamently, 在呼叫结束后不久将被丢弃。 在录制操作完成后, 机器人必须立即下载录制 (使用已完成通知中给出的**recordingLocation**值)。
+
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,18 +47,17 @@ POST /applications/{id}/calls/{id}/record
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合 (如果有)。 客户可以选择单独指定 "playPrompt" 操作, 也可以指定为 "record" 的一部分-通常所有记录都由一个提示 preceeded |
-|bargeInAllowed|Boolean| 允许用户在提示完成前输入选项。                                                                 |
-|initialSilenceTimeoutInSeconds | Int32| 允许从我们开始记录操作到超时和运行失败的时间开始的最大初始静音。 如果我们正在播放提示, 则此计时器在提示完成后启动。 |
-|maxSilenceTimeoutInSeconds|Int32| 最大无声超时 (秒)。|
-|maxRecordDurationInSeconds|Int32| 以秒为单位的最大记录持续时间。|
-|playBeep|Boolean| 播放提示后播放嘟嘟声。|
-|streamWhileRecording|Boolean|如果设置为 true, 将在录制开始后提供资源位置。 |
+|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合 (如果有)。 客户可以选择单独指定 "playPrompt" 操作, 也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。 当前支持仅作为集合的一部分的单个提示。 |
+|bargeInAllowed|Boolean| 如果为 true, 则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|initialSilenceTimeoutInSeconds | Int32| 允许从我们开始记录操作到超时和运行失败的时间开始的最大初始静音。 如果我们正在播放提示, 则此计时器在提示完成后启动。 默认值 = 5 秒, 最小值 = 1 秒, 最大值 = 300 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音 (暂停) 时间。 默认值 = 5 秒, 最小值 = 1 秒, 最大值 = 300 秒。|
+|maxRecordDurationInSeconds|Int32| 停止录制前的记录操作的最长持续时间。 默认值 = 5 秒, 最小值 = 1 秒, 最大值 = 300 秒。|
+|playBeep|Boolean| 如果为 true, 则会播放提示音, 指示用户可以开始记录其邮件。 默认值为 true。|
 |stopTones|String collection|指定结束录音的停止音。|
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+此方法返回`200 OK`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -82,16 +85,13 @@ Content-Length: 394
       "mediaInfo": {
         "uri": "https://cdn.contoso.com/beep.wav",
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      "loop": 5
+      }
     }
   ],
-  "maxRecordDurationInSeconds": 1800,
-  "initialSilenceTimeoutInSeconds": 10,
+  "maxRecordDurationInSeconds": 10,
+  "initialSilenceTimeoutInSeconds": 5,
   "maxSilenceTimeoutInSeconds": 2,
-  "recordingFormat": "wav",
   "playBeep": true,
-  "streamWhileRecording": true,
   "stopTones": [ "#", "11", "*" ]
 }
 ```
@@ -112,8 +112,16 @@ Content-Length: 394
   "@odata.type": "microsoft.graph.recordOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+
 ```
 
 ##### <a name="notification---operation-completed"></a>通知-操作已完成
@@ -147,6 +155,35 @@ Content-Type: application/json
     }
   ]
 }
+```
+
+##### <a name="get-recording-file---request"></a>获取录制文件-请求
+下面的示例展示了获取录制内容的请求。
+
+<!-- {
+  "blockType": "ignored",
+  "name": "download_recorded_file",
+}-->
+```http
+GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Authorization: Bearer <recordingAccessToken>
+```
+
+##### <a name="get-recording-file---response"></a>获取录制文件-响应
+下面是一个响应示例。 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "download_recorded_file",
+  "truncated": true
+}-->
+```http
+GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Transfer-Encoding: chunked
+Date: Thu, 17 Jan 2019 01:46:37 GMT
+Content-Type: application/octet-stream
+
+(application/octet-stream of size 160696 bytes)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

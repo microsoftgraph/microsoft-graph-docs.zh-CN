@@ -1,43 +1,48 @@
 ---
 title: teamsAppInstallation 资源类型
-description: '在团队中安装的 teamsApp。 '
-author: nkramer
+description: '安装在团队中的 teamsApp、聊天或用户的个人作用域。 '
+author: clearab
+doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d8770a21b11c9ba1042c9a0f59d9405dce96f9d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 55e1246616b7a3d76c6170a02286a2cde2a15d3a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345800"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908507"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[团队](team.md)中安装的[teamsApp](teamsapp.md) 。 作为应用程序的一部分的任何 bot 都将成为向其添加应用程序的任何团队的一部分。
+安装在[团队](team.md)中的[teamsApp](teamsapp.md) 、[聊天](chat.md)或[用户](user.md)的个人作用域。 作为应用程序一部分的任何 bot 都将成为向其添加应用程序的任何团队、聊天或用户个人范围的一部分。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | 列出在团队中安装的应用程序。|
-|[添加应用程序](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | 将应用添加（安装）到团队。|
-|[删除应用程序](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除 (卸载) 应用程序。|
-|[升级应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到最新版本的应用程序。|
+|[列出团队中安装的应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在团队中安装的应用程序。|
+|[将应用添加到团队](../api/teamsappinstallation-add.md) |无 | 将应用添加（安装）到团队。|
+|[从团队中删除应用](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除 (卸载) 应用程序。|
+|[升级在团队中安装的应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到最新版本的应用程序。|
+|[列出为用户安装的应用程序](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。|
+|[为用户添加应用程序](../api/user-add-teamsappinstallation.md) | | 在用户的个人作用域中添加 (安装) 应用程序。|
+|[删除用户的应用程序](../api/user-delete-teamsappinstallation.md) | 无 | 删除 (卸载) 用户个人作用域中的应用程序。|
+|[为用户安装的升级应用程序](../api/user-upgrade-teamsappinstallation.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 id (而不是团队 appid)。 |
+| id                  | string   | 唯一的 ID (而不是团队的 ap ID)。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系   | 类型    | 说明 |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| 已安装的应用程序。 |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| 此版本的应用程序的详细信息。 |
+|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| 此版本的应用程序的详细信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,7 +54,7 @@ ms.locfileid: "33345800"
 
 ```json
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
@@ -58,7 +63,6 @@ ms.locfileid: "33345800"
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -72,4 +76,3 @@ ms.locfileid: "33345800"
   "suppressions": []
 }
 -->
-

@@ -1,20 +1,22 @@
 ---
-title: 从团队中删除应用
-description: 从指定的团队中卸载应用程序。
+title: 为用户安装应用程序
+description: 在指定用户的个人作用域中安装应用程序。
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 149b905a6e090960351ae0da70b2a6080fea8fa1
+ms.openlocfilehash: 009d2efe115d8b07f9bdead07965d402db65e65a
 ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908472"
+ms.locfileid: "35908542"
 ---
-# <a name="remove-app-from-team"></a>从团队中删除应用
+# <a name="install-app-for-user"></a>为用户安装应用程序
 
-从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+在指定[用户](../resources/user.md)的个人作用域中安装[应用程序](../resources/teamsapp.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -22,14 +24,14 @@ ms.locfileid: "35908472"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） |  User.ReadWrite.All、Directory.ReadWrite.All     |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All    |
+|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+POST /users/{id}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -40,11 +42,15 @@ DELETE /teams/{id}/installedApps/{id}
 
 ## <a name="request-body"></a>请求正文
 
-请勿提供此方法的请求正文。
+请求正文应包含要添加的现有目录应用程序的 ID。
+
+| 属性   | 类型 |说明|
+|:---------------|:--------|:----------|
+|teamsApp|String|要添加的应用程序的 ID。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `201 Created` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -53,31 +59,35 @@ DELETE /teams/{id}/installedApps/{id}
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "uninstall_teamsapp"
+  "name": "user_add_teamsApp"
 }-->
-
 ```http
-DELETE /teams/{id}/installedApps/{id}
+POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
+Content-type: application/json
+
+{
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
 ```
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
-  "name": "uninstall_teamsapp",
   "truncated": true
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "User add teamsAppInstallations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

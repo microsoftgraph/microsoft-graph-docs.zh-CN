@@ -1,20 +1,22 @@
 ---
-title: 从团队中删除应用
-description: 从指定的团队中卸载应用程序。
+title: 卸载用户的应用程序
+description: 从指定用户的个人作用域中卸载应用程序。
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 149b905a6e090960351ae0da70b2a6080fea8fa1
+ms.openlocfilehash: 42030378f3d66c11d1d9f8d8856739c54508c302
 ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908472"
+ms.locfileid: "35908528"
 ---
-# <a name="remove-app-from-team"></a>从团队中删除应用
+# <a name="uninstall-app-for-user"></a>卸载用户的应用程序
 
-从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+从指定[用户](../resources/user.md)的个人作用域中卸载[应用程序](../resources/teamsappinstallation.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -22,14 +24,14 @@ ms.locfileid: "35908472"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） |User.ReadWrite.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All    |
+|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+DELETE /users/{id}/teamwork/installedApps/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,22 +55,20 @@ DELETE /teams/{id}/installedApps/{id}
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "uninstall_teamsapp"
+  "name": "user_delete_teamsApp"
 }-->
-
 ```http
-DELETE /teams/{id}/installedApps/{id}
+DELETE https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 ```
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
-  "name": "uninstall_teamsapp",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -77,7 +77,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "User delete teamsAppInstallations,
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

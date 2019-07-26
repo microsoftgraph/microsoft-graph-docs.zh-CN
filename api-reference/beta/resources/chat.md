@@ -1,15 +1,16 @@
 ---
 title: 聊天资源类型
 description: 聊天是一个或多个参与者之间的 Chatmessages 集合的集合。
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 83ab8428fb09a7a2dc0546dcebdf2f409d90d25a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778656"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908488"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -19,7 +20,7 @@ ms.locfileid: "35778656"
 
 ## <a name="methods"></a>方法
 
-|  方法       |  返回类型  | 说明| 
+|  方法       |  返回类型  | 说明|
 |:---------------|:--------|:----------|
 |[列出聊天](../api/chat-list.md) | [聊天](channel.md)收藏 | 获取用户所属的聊天列表。|
 |[获取聊天](../api/chat-get.md) | [参与](channel.md) | 读取聊天的属性和关系。|
@@ -30,7 +31,7 @@ ms.locfileid: "35778656"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |说明|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 | id| String| 聊天的唯一标识符。 只读。|
 | topic| String|  Optional聊天的主题或主题。 仅适用于组聊天。|
@@ -38,9 +39,11 @@ ms.locfileid: "35778656"
 | lastUpdatedDateTime| dateTimeOffset|  更新聊天的日期和时间。 只读。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+
+| 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-| 成员 | [conversationMember](conversationmember.md)集合 | 聊天中所有人员的集合。 可为 Null。 |
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) 集合 | 聊天中所有应用的集合。 可为 Null。 |
+| members | [conversationMember](conversationmember.md)集合 | 聊天中所有人员的集合。 可为 Null。 |
 | messages | [chatMessage](chatmessage.md) 集合 | 聊天中所有邮件的集合。 可为 Null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

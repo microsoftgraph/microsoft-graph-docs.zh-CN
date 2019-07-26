@@ -1,15 +1,16 @@
 ---
 title: 升级团队中的应用程序
 description: 升级团队中的应用程序安装
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 569fb5b0f8f117ebfa8496fd5f9b2ba023a113d9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f40951eb3c33b638542a8e2210911adffb15a444
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335280"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908325"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
 
@@ -34,11 +35,13 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -47,24 +50,26 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
+
 下面展示了示例请求。
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsapp"
 }-->
 
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### <a name="response"></a>响应
+
+### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "upgrade_teamsapp",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,16 +1,16 @@
 ---
 title: 创建所有者
 description: 使用此 API 创建新的所有者。
-author: VinodRavichandran
+author: davidmu1
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c7ace73e1d6a2db3bac4502f9ddae6f4f0c0e1f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fbf78bb61c57ef447da07663b5032ab213e3b46e
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856769"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908311"
 ---
 # <a name="create-owner"></a>创建所有者
 

@@ -1,15 +1,16 @@
 ---
 title: 列出团队中的应用
 description: 检索在指定团队中安装的应用程序的列表。
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f3901f8890e22a1ec3b9f3404e1fa2a4b7548329
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ab4c453b289165a24afcc8d19244e31263abf3d4
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868300"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908353"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -51,11 +52,13 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[teamsApp](../resources/teamsapp.md)对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[teamsAppInstallation](../resources/teamsappinstallation.md)对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-list-installed-apps"></a>示例 1: 列出已安装的应用程序
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -64,10 +67,10 @@ GET /teams/{id}/installedApps
   "blockType": "request",
   "name": "get_installed_teams_apps"
 }-->
-
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,22 +89,21 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 
 ---
 
-
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
+  "name": "get_installed_teams_apps",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
@@ -112,9 +114,9 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>示例--获取已安装应用程序的名称
+### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>示例 2: 获取已安装应用程序的名称和其他详细信息
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -146,22 +148,22 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDe
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
+  "name": "get_installed_teams_apps_expand",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
     "value": [

@@ -1,19 +1,18 @@
 ---
 title: 升级团队中的应用程序
 description: 升级团队中的应用程序安装
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 06d5cda13f5dd494074f4e424568ceb3960a2e20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c717ca93c832736671f856a6454bcf0de877681c
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534351"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908459"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
 
@@ -25,7 +24,7 @@ ms.locfileid: "32534351"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | Group.ReadWrite.All    |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,11 +33,13 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -47,40 +48,38 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ## <a name="example"></a>示例
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
+
 下面展示了示例请求。
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsapp"
 }-->
 
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### <a name="response"></a>响应
+
+### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "upgrade_teamsapp",
+  "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsappinstallation-upgrade.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

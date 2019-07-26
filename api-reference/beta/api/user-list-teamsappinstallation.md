@@ -1,20 +1,22 @@
 ---
-title: 列出团队中的应用
-description: 检索在指定团队中安装的应用程序的列表。
+title: 列出为用户安装的应用程序
+description: 检索在指定用户的个人作用域中安装的应用程序的列表。
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5396201db71ce5cfb399fed367313818cd3c5c4
+ms.openlocfilehash: c31e731aba27fff245ecd92fc9d93d20d2c1fe27
 ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908500"
+ms.locfileid: "35908549"
 ---
-# <a name="list-apps-in-team"></a>列出团队中的应用
+# <a name="list-apps-installed-for-user"></a>列出为用户安装的应用程序
 
-检索在指定[团队](../resources/team.md)中[安装的应用程序](../resources/teamsappinstallation.md)的列表。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+检索在指定[用户](../resources/user.md)的个人作用域中安装的[应用程序](../resources/teamsappinstallation.md)的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -22,16 +24,16 @@ ms.locfileid: "35908500"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All    |
+|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/installedApps
+GET /users/{id}/teamwork/installedApps
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,46 +56,26 @@ GET /teams/{id}/installedApps
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-installed-apps"></a>示例 1: 列出已安装的应用程序
+### <a name="example-1-list-apps-installed-for-the-specified-user"></a>示例 1: 列出为指定用户安装的应用程序
+
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "get_installed_teams_apps"
+  "name": "user_list_teamsApps"
 }-->
-
 ```http
-GET /teams/{id}/installedApps
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-installed-teams-apps-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-installed-teams-apps-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-installed-teams-apps-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
-  "name": "get_installed_teams_apps",
+  "name": "user_list_teamsApps",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -111,48 +93,27 @@ Content-type: application/json
   ]
 }
 ```
-
-### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>示例 2: 获取已安装应用程序的名称和其他详细信息
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>示例 2: 获取为用户安装的应用程序的名称和其他详细信息
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "get_installed_teams_apps_expand"
+  "blockType": "ignored",
+  "name": "user_list_teamsApps_details"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-expand-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-installed-teams-apps-expand-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-installed-teams-apps-expand-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-installed-teams-apps-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
-  "name": "get_installed_teams_apps_expand",
+  "name": "user_list_teamsApps_details",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -199,10 +160,8 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List owners",
+  "description": "User list teamsAppInstallations",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "tocPath": ""
 }-->
