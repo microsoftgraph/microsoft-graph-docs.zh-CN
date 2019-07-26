@@ -4,16 +4,19 @@ description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 124f4a05f30196b622b62ecd82ea15a892e3682b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 252664f760f4eee57d0365a0850e040b0315fdc2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448331"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890720"
 ---
 # <a name="get-organization"></a>获取组织
 
-检索当前经过身份验证的组织的属性和关系。
+获取当前经过身份验证的组织的属性和关系。
+
+由于 **organization** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取 **organization** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 
@@ -21,11 +24,11 @@ ms.locfileid: "35448331"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
+|委派（工作或学校帐户） | User.Read、Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | Organization.Read.All、Directory.Read.All、Organization.ReadWrite.All、Directory.ReadWrite.All |
 
-> 注意：授予 User.Read 权限的应用程序仅能读取组织的 *id*、*displayName* 和 *verifiedDomains* 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Directory.Read.All。
+> **注意**：授予 User.Read 权限的应用程序仅能读取组织的 **id**, **displayName** 和 **verifiedDomains** 属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用 Organization.Read.All。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,9 +44,9 @@ GET /organization
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 名称       | 说明|
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -78,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
