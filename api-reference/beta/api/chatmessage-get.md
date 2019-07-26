@@ -1,17 +1,17 @@
 ---
-title: 获取了 chatmessage
+title: 获取 chatMessage
 description: 在聊天中检索一条消息。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4f59c4f881f971a514b4922e572619a5d9a757b
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
-ms.translationtype: MT
+ms.openlocfilehash: 8d2335ea5e98816c86aff400685663320afa0325
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778388"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863560"
 ---
-# <a name="get-chatmessage"></a>获取了 chatmessage
+# <a name="get-chatmessage"></a>获取 chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,12 +23,12 @@ ms.locfileid: "35778388"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 聊天、阅读和读写   |
+|委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Chat.Read.All   |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前, 您必须请求访问权限。 有关详细信息, 请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,7 +59,7 @@ GET /chats/{id}/messages/{id}
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
@@ -75,8 +75,12 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

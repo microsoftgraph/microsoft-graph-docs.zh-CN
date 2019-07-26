@@ -4,12 +4,12 @@ description: 获取用户的直接下属。 返回指定此用户作为经理的
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6e15d754339198b1db3757da470203f96a9b0550
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 7c9549fe4dfc5c91ec4cdc8278ffbeb8165a3b3a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460362"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888894"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directreports-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directreports-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 删除现有的 identityProvider
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 464ae5b8490a1cd5f9762dd4c1443c4d74a8acd0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0f17ec2c90ae94931cd4339f1534a1a6de04800d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447360"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889401"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

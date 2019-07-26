@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 获取文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 292e3f3c1b0d1a6d21c7835e9c0ead7876b39d6a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 39078bba85f6ab5262c182d39c3ed785d9a4c9c0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445427"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880978"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -82,6 +82,10 @@ GET /me/drive/root
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-root-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-drive-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

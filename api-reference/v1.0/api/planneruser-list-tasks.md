@@ -4,12 +4,12 @@ description: 检索分配给用户的 **plannertask** 对象的列表。
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 7cc3124080a6fd32199300bb6eb8dd3c8579c574
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5051b61a7d3f89fad7b69bf4498cd25ed790af58
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458836"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35887003"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/me/planner/tasks
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

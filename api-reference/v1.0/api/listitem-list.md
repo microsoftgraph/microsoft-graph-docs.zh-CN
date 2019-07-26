@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 检索 SharePoint 列表中的项
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: cf3afcf2148ef057b38c6a8b93371cc9a7ff76fc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0eda28675e4b785b6745ea15f167a9236ac8f8c0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460719"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884541"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -58,6 +58,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

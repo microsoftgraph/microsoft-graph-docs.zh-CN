@@ -4,12 +4,12 @@ description: '检索组的所有者列表。所有者是一组具有 group 对�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: d11f43416a653c7471433c17ec9bb6ac92fcd7b0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: beface16a11784a9d91c771ebc888bf4b15377f7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458281"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889066"
 ---
 # <a name="list-owners"></a>列出所有者
 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
@@ -50,21 +50,25 @@ GET /groups/{id}/owners
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_owners"
+  "name": "group_get_owners"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-owners-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-get-owners-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-owners-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-owners-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-owners-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/group-get-owners-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
