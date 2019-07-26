@@ -4113,17 +4113,11 @@
                   href: api/channel-list.md
                 - name: 创建频道
                   href: api/channel-post.md
-                - name: 获取通道
+                - name: 获取频道
                   href: api/channel-get.md
-            - name: 应用
+            - name: 应用程序目录
               href: resources/teamsapp.md
               items:
-                - name: 列出团队中的应用
-                  href: api/teamsappinstallation-list.md
-                - name: 向团队添加应用
-                  href: api/teamsappinstallation-add.md
-                - name: 从团队中删除应用
-                  href: api/teamsappinstallation-delete.md
                 - name: 向目录发布应用
                   href: api/teamsapp-publish.md
                 - name: 列出目录中的应用
@@ -4132,6 +4126,21 @@
                   href: api/teamsapp-update.md
                 - name: 从目录中删除应用
                   href: api/teamsapp-delete.md
+            - name: 应用
+              items:
+                - name: 安装的应用
+                  href: resources/teamsappinstallation.md
+                - name: 列出团队中的应用
+                  href: api/teamsappinstallation-list.md
+                - name: 向团队添加应用
+                  href: api/teamsappinstallation-add.md
+                - name: 从团队中删除应用
+                  href: api/teamsappinstallation-delete.md
+                - name: 为团队升级已安装的应用程序
+                  href: api/teamsappinstallation-upgrade.md
+            - name: Tab
+              href: resources/teamstab.md
+              items:
                 - name: 列出选项卡
                   href: api/teamstab-list.md
                 - name: 获取选项卡
