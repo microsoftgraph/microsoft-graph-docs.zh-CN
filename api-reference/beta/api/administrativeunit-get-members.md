@@ -4,12 +4,12 @@ description: 使用此 API 获取管理单元中的特定成员 (用户或组)�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69f2017015007c1a70fa7a1be73a01def827610b
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 3a9752d37fed21ebadbd0e05cc30831b13f30ef5
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655332"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917948"
 ---
 # <a name="get-a-member"></a>获取成员
 
@@ -23,9 +23,9 @@ ms.locfileid: "34655332"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit、AdministrativeUnit、all、Directory.accessasuser.all。 All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | AdministrativeUnit、AdministrativeUnit 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 

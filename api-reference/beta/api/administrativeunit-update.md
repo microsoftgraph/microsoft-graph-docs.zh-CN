@@ -4,12 +4,12 @@ description: 更新 administrativeUnit 对象的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5953e67b86503c0736d9bbab551d7bd393b4c944
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fe3323ad96dbd5599e8ac332d3b5ca372d9c66f9
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855553"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918004"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -22,9 +22,9 @@ ms.locfileid: "35855553"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

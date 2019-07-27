@@ -4,12 +4,12 @@ description: 使用此 API 可从管理单元中删除成员 (用户或组)。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 21bb1fc226f9c16883de32773592ca4bd52a4758
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c307a802e2d574950b89c3f5644b5fbf70d90e34
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655409"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917929"
 ---
 # <a name="remove-a-member"></a>删除成员
 
@@ -23,9 +23,9 @@ ms.locfileid: "34655409"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

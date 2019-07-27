@@ -4,12 +4,12 @@ description: 删除 administrativeUnit。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f2f8073058767e54bcb36626ad864ea3257924fa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 6d23a1d9de8bb844fe3595a26cdf6869b4f2817e
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855874"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917987"
 ---
 # <a name="delete-administrativeunit"></a>删除 administrativeUnit
 
@@ -23,9 +23,9 @@ ms.locfileid: "35855874"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

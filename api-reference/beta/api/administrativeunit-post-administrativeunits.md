@@ -4,12 +4,12 @@ description: 使用此 API 创建新的 administrativeUnit。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e98b9ebc4b9159e9ac604f45d7d1e36edf859dd8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 81b35e8dca3942ca23952ca79257a80612a3a5a1
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855749"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917954"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 
@@ -22,9 +22,9 @@ ms.locfileid: "35855749"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | AdministrativeUnit |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

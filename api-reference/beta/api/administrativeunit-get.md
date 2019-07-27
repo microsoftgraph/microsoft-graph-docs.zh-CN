@@ -4,12 +4,12 @@ description: 检索 administrativeUnit 对象的属性和关系。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a583e7d826e1fb57a11c0a11fc899360ea64252d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ca95b7538bb3cc112602cd713e66473558adb27e
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855783"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917969"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -25,9 +25,9 @@ ms.locfileid: "35855783"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | AdministrativeUnit、AdministrativeUnit、all、Directory.accessasuser.all。 All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | AdministrativeUnit、AdministrativeUnit 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
