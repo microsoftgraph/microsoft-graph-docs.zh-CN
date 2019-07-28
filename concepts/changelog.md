@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 730b9a2526e82c055c282d3c02bfa1bad35d8031
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4bc30ed6b491587d4b809ce3457aaa20bb7e9c4a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890328"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908444"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -95,8 +95,13 @@ ms.locfileid: "35890328"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 添加了对[列出频道消息](/api-reference/beta/api/channel-list-messages.md)，[获取频道消息](/api-reference/beta/api/channel-get-message.md)，[列出消息回复](/api-reference/beta/api/channel-list-messagereplies.md)，以及[获取消息回复](/api-reference/beta/api/channel-get-messagereply.md)的应用程序权限的支持。 |
-| 添加项 | beta | 添加了对[在聊天中列出消息](/api-reference/beta/api/chatmessage-list.md)和[在聊天中获取消息](/api-reference/beta/api/chatmessage-get.md)的应用程序权限的支持。 |
+| 添加项 | beta | 添加了对[列出频道消息](/graph/api/channel-list-messages?view=graph-rest-beta)，[获取频道消息](/graph/api/channel-get-message?view=graph-rest-beta)，[列出消息回复](/graph/api/channel-list-messagereplies?view=graph-rest-beta)，以及[获取消息回复](/graph/api/channel-get-messagereply?view=graph-rest-beta)的应用程序权限的支持。 |
+| 添加项 | beta | 添加了对[在聊天中列出消息](/graph/api/chatmessage-list?view=graph-rest-beta)和[在聊天中获取消息](/graph/api/chatmessage-get?view=graph-rest-beta)的应用程序权限的支持。 |
+| 添加项 | beta | 已将**installedApps**属性添加到[聊天](/graph/api/resources/chat?view=graph-rest-beta)资源。|
+| 添加项 | beta | 已添加**用户** 资源的"[聊天](/graph/api/resources/user?view=graph-rest-beta)"属性的导航绑定。|
+| 添加项 | beta | 添加了[团队合作](/graph/api/resources/teamwork?view=graph-rest-beta)的资源。 |
+| 添加项 | beta | 添加了[userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta)的资源。 |
+| 添加项 | beta | 向[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加了新方法，为用户个人应用启用以下方法： <br>[列出为用户安装的应用](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[为用户安装应用](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[为用户卸载应用](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[升级为用户安装的应用](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
 
 ## <a name="june-2019"></a>2019 年 6 月
@@ -397,7 +402,7 @@ ms.locfileid: "35890328"
 |Addition|beta|向 [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
 |添加项|beta|向 [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta) 实体添加了 **allowedOutboundClipboardSharingExceptionLength** 属性|
 |Addition|beta|向 [sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta) 实体添加了 **fastFirstSignIn** 属性|
-|Addition|beta|向 [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta) 属性添加了 **tpmRequired** 属性|
+|添加项|beta|向 [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta) 属性添加了 **tpmRequired** 属性|
 |Addition|beta|向 [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) 实体添加了 **firewallRules** 属性|
 |Addition|beta|向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **authenticationWebSignIn**、**privacyDisableLaunchExperience** 和 **appManagementPackageFamilyNamesToLaunchAfterLogOn** 属性|
 |删除|beta|从 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体中删除了 **defenderScheduleScanDay** 属性|
@@ -1873,7 +1878,7 @@ ms.locfileid: "35890328"
 |添加项|Beta|新增了实体：<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta)<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta)<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta)<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta)<br/>|
 |添加|Beta|新增了复杂类型：<br/>[resourceAction](/graph/api/resources/intune-rbac-resourceaction?view=graph-rest-beta)<br/>[updateWindowsDeviceAccountActionParameter](/graph/api/resources/intune-devices-updatewindowsdeviceaccountactionparameter?view=graph-rest-beta)<br/>[vppTokenActionResult](/graph/api/resources/intune-onboarding-vpptokenactionresult?view=graph-rest-beta)<br/>[windowsDeviceAADAccount](/graph/api/resources/intune-devices-windowsdeviceaadaccount?view=graph-rest-beta)<br/>[windowsDeviceAccount](/graph/api/resources/intune-devices-windowsdeviceaccount?view=graph-rest-beta)<br/>[windowsDeviceADAccount](/graph/api/resources/intune-devices-windowsdeviceadaccount?view=graph-rest-beta)<br/>|
 |添加|Beta|对 [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta) 新增了 [revokeTokens](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketokens?view=graph-rest-beta) 操作 |
-|添加|Beta|对 [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta) 新增了 [createToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-createtoken?view=graph-rest-beta) 操作 |
+|添加项|Beta|对 [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta) 新增了 [createToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-createtoken?view=graph-rest-beta) 操作 |
 |添加|Beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 新增了 [wipe](/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-beta) 操作 |
 |添加|Beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 新增了 [updateWindowsDeviceAccount](/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-beta) 操作 |
 |添加|Beta|对 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 新增了 [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) 操作 |
@@ -2172,13 +2177,13 @@ ms.locfileid: "35890328"
 | 添加项        | beta        | 向 [Drive][Drive-beta] 资源添加了 **activities** 关系。 |
 | 添加项        | beta        | 向 [DriveItem][DriveItem-beta] 资源添加了 **publication** 属性。 |
 | 添加项        | beta        | 向 [DriveItem][DriveItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
-| 添加项        | beta        | 添加了新实体：[DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]。 |
-| 添加项        | beta        | 添加了新的复杂类型：[CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta] 和 [VersionAction][VersionAction-beta]。 |
+| 添加项        | beta        | 添加了新实体：[DriveItemVersion][DriveItemVersion-beta]、[ItemActivity][ItemActivity-beta]。 |
+| 添加项        | beta        | 新增了复杂类型：[CommentAction][CommentAction-beta]、[CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta]、[ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta]、[MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta]、[RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta] 和 [VersionAction][VersionAction-beta]。 |
 | 添加项        | beta        | 向 [ItemReference][ItemReference-beta] 复杂类型添加了 **driveType** 属性。 |
 | 删除        | beta        | 从 [SharepointIds][SharepointIds-beta] 复杂类型中删除了 **tenantId** 属性。 |
 | 添加项        | v1.0        | 向 [Video][Video-beta] 复杂类型添加了 **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC** 和 **frameRate** 属性。 |
-| 添加项        | beta        | 在 [DriveItem][DriveItem-beta] 资源上添加了 [CheckIn][CheckIn-beta]and [CheckOut][CheckOut-beta]。 |
-| 添加项        | beta        | 在 [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta]资源上添加了 **expirationDateTime**、**password**、**message** 和 **recipients** 属性。 |
+| 添加项        | beta        | 在 [DriveItem][CheckIn-beta] 资源上添加了 [CheckIn][CheckOut-beta] 和 [CheckOut][DriveItem-beta] 操作。 |
+| 添加项        | beta        | 在 **DriveItem** 资源上的 **CreateLink** 操作上添加了 **expirationDateTime**、**password**、[message][CreateLink-beta] 和 [recipients][DriveItem-beta] 属性。 |
 
 [Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
@@ -2234,7 +2239,7 @@ ms.locfileid: "35890328"
 | 添加项        | v1.0        | 添加了新实体：[ColumnDefinition][]、[ColumnLink][]、[ContentType][]、[List][]、[ListItem][] |
 | Addition        | v1.0        | 向 [Site][] 资源添加了 **columns**、**contentTypes**、**items** 和 **lists** 关系。 |
 | 添加项        | v1.0        | 新增了复杂类型：[BooleanColumn][]、[CalculatedColumn][]、[ChoiceColumn][]、[ContentTypeInfo][]、[ContentTypeOrder][]、[CurrencyColumn][]、[DateTimeColumn][]、[DefaultColumnValue][]、[ListInfo][]、[LookupColumn][]、[NumberColumn][]、[PersonOrGroupColumn][]、[SystemFacet][]、[TextColumn][]。 |
-| Addition        | beta        | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta]。 |
+| Addition        | beta        | 添加了新实体：[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta], |
 | 添加项        | beta        | 向 [ColumnDefinition][ColumnDefinition-beta] 添加了 **columnGroup**、**currency**、**defaultValue** 和 **displayName** 属性。 |
 | 添加项        | beta        | 向 [List][List-beta] 资源添加了**displayName** 和 **system** 属性。 |
 | 添加项        | beta        | 向 [List][List-beta] 资源添加了 **activities** 和 **contentTypes** 关系。 |
@@ -2242,7 +2247,7 @@ ms.locfileid: "35890328"
 | 添加项        | beta        | 向 [ListItem][ListItem-beta] 资源添加了 **activities** 和 **versions** 关系。 |
 | 添加项        | beta        | 向 [Site][Site-beta] 资源添加了 **contentTypes** 关系。 |
 | 添加项        | beta        | 向 [BooleanColumn][BooleanColumn-beta] 类型添加了 **outputType** 属性。 |
-| 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
+| 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
 | 添加项        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
 | 添加项        | beta        | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
 | 更改          | beta        | 在 [LookupColumn][LookupColumn-beta] 复杂类型上将 **allowMultipleValue** 属性重命名为 **allowMultipleValues**。 |
@@ -3364,7 +3369,7 @@ ms.locfileid: "35890328"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 向**referenceAttachment**实体添加了新属性：_sourceUrl_、_providerType_、_thumbnailUrl_、_previewUrl_、_permission_ 和 _isFolder_。 （参考附件在 **event**、**message**、**outlookTask**或**post**中受到支持。）  |
+| 添加项        | Beta        | 向 _referenceAttachment_ 实体添加了新属性 _sourceUrl_、_providerType_、_thumbnailUrl_、_previewUrl_、_permission_ 和 **isFolder**。 （参考附件在 **event**、**message**、**outlookTask**或**post**中受到支持。）  |
 | 添加项        | Beta        | 向**referenceAttachment**实体添加了_singleValueExtendedProperties_和_multiValueExtendedProperties_属性。 |
 | 添加项        | Beta        | 添加了以下新枚举类型：_referenceAttachmentProvider_ 和 _referenceAttachmentPermission_。 |
 
