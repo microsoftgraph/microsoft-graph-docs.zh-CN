@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fb1c89f8862131862869caabb5bb384fc6cb4c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: eb9c334049dced94111cd78e22481e532c5ecd7c
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893149"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917997"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -70,6 +70,42 @@ _AccessReview.Read.All_ 和 _AccessReview.ReadWrite.All_ 仅对工作或学校�
 对于通过委派权限读取 Azure AD 角色的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或特权角色管理员。 对于通过委派权限写入 Azure AD 角色的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或特权角色管理员。
 
 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+
+---
+
+## <a name="administrative-units-permissions"></a>管理单元权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AdministrativeUnit.Read.All_ |   读取管理单元  | 允许应用代表已登录的用户读取管理单元和管理单元成员身份。 | 是 | 否 |
+| _AdministrativeUnit.ReadWrite.All_ |   读取和写入管理单元  | 允许应用代表已登录的用户创建、读取、更新和删除管理单元并管理管理单元成员身份。 | 是 | 否 |
+
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AdministrativeUnit.Read.All_ |   读取所有管理单元 | 允许应用在没有登录用户的情况下读取管理单元和管理单元成员身份。 | 是 |
+| _AdministrativeUnit.ReadWrite.All_ |   读取和写入所有管理单元 | 允许应用在没有登录用户的情况下创建、读取、更新和删除管理单元并管理管理单元成员身份。 | 是 |
+
+### <a name="remarks"></a>说明
+使用 _AdministrativeUnit.Read.All_ 权限，应用程序可以读取包括成员在内的管理单元信息。
+
+使用 _AdministrativeUnit.ReadWrite.All_ 权限，应用程序可以创建、读取、更新和删除包括成员在内的管理单元信息。
+
+_AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+- _AdministrativeUnit.Read.All_：读取管理单元 (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_：读取管理单元成员列表 (`GET /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.ReadWrite.All_：创建管理单元 (`POST /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_：更新管理单元 (`PATCH /beta/administrativeUnits/<id>`)
+- _AdministrativeUnit.ReadWrite.All_：将成员添加到管理单元 (`POST /beta/administrativeUnits/<id>/members`)
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
 
@@ -1012,6 +1048,43 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 * _Reports.Read.All_：读取电子邮件应用程序在 7 天内的使用情况详情报告 (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`)。
 * _Reports.Read.All_：读取电子邮件在日期“2017-01-01”的的活动详情报告 (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`)。
 * _Reports.Read.All_：读取 Office 365 激活详情报告 (`GET /reports/Office365Activations(view='Detail')/content`)。
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="role-management-permissions"></a>角色管理权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _RoleManagement.Read.Directory_ | 读取目录 RBAC 设置 | 允许应用代表已登录的用户读取公司目录的基于角色的访问控制 (RBAC) 设置。  这包括读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
+| _RoleManagement.ReadWrite.Directory_ | 读取和写入目录 RBAC 设置 | 允许应用代表已登录的用户读取和管理公司目录的基于角色的访问控制 (RBAC) 设置。 这包括实例化目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _RoleManagement.Read.Directory_ | 读取所有目录 RBAC 设置 | 允许应用在没有已登录用户的情况下读取公司目录的基于角色的访问控制 (RBAC) 设置。  这包括读取目录角色模板、目录角色和成员身份。 | 是 |
+| _RoleManagement.ReadWrite.Directory_ | 读取和写入所有目录 RBAC 设置 | 允许应用在没有已登录用户的情况下读取并管理公司目录的基于角色的访问控制 (RBAC) 设置。 这包括实例化目录角色和管理目录角色成员身份，以及读取目录角色模板、目录角色和成员身份。 | 是 |
+
+### <a name="remarks"></a>说明
+使用 _RoleManagement.Read.Directory_ 权限，应用程序可以读取 directoryRoles 和 directoryRoleTemplates。 这包括读取目录角色的成员身份信息。
+
+使用 _RoleManagement.ReadWrite.Directory_ 权限，应用程序可以读取和写入 directoryRoles（directoryRoleTemplates 是只读资源）。 这包括向目录角色添加成员和从目录角色中删除成员。
+
+角色管理权限仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+- _RoleManagement.Read.Directory_：读取可用角色模板列表 (`GET /directoryRoleTemplates`)
+- _RoleManagement.Read.Directory_：读取你的目录中已激活角色的列表 (`GET /directoryRoles`)
+- _RoleManagement.Read.Directory_：读取某一角色的成员列表 (`GET /directoryRoles/<id>/members`)
+- _RoleManagement.Read.Directory_：读取某一角色的管理单元范围的成员列表 (`GET /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.ReadWrite.Directory_：激活来自角色模板的目录角色 (`POST /directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_：将成员添加到目录角色 (`POST /directoryRoles/<id>/members`)
+- _RoleManagement.ReadWrite.Directory_：将管理单元范围的成员添加到目录角色 (`POST /directoryRoles/<id>/scopedMembers`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
