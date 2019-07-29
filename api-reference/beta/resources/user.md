@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67a43e13be16b8e57832c8b9bcacf0658b3c0531
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c71d9d5d64750c6df48a6e9fdf602d4bec4a0760
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995019"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908487"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -52,7 +52,7 @@ ms.locfileid: "34995019"
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | 从 manager 导航属性中获取是此用户的经理的用户或联系人。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 从 memberOf 导航属性中获取此用户直接所属的组、目录角色和管理单元。|
 |[List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出用户所属的所有组、目录角色和管理单元。 此操作是可传递的，并包括用户以嵌套方式所属的组。 |
-|[List joinedTeams](../api/user-list-joinedteams.md) |[groups](group.md) 集合| 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams。|
+|[List joinedTeams](../api/user-list-joinedteams.md) |[团队](team.md) 集合| 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。|
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| 从 ownedDevices 导航属性中获取此用户所拥有的设备。|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。|
 |[List plannerTasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取分配给此用户的 plannerTasks。|
@@ -214,7 +214,8 @@ ms.locfileid: "34995019"
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。只读。可为 Null。|
-|joinedTeams|[group](group.md) 集合|用户所属的 Microsoft Teams。 只读。 可为 Null。|
+|joinedTeams|[团队](team.md) 集合|用户所属的 Microsoft Teams 团队。 只读。 可为空。|
+|团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 Null。|
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 只读。 可为 Null。|
@@ -253,6 +254,7 @@ ms.locfileid: "34995019"
     "manager",
     "memberOf",
     "joinedTeams",
+    "teamwork",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
@@ -352,6 +354,7 @@ ms.locfileid: "34995019"
   "manager": {"@odata.type": "microsoft.graph.directoryObject"},
   "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "teamwork": {"@odata.type": "microsoft.graph.teamwork"},
   "messages": [{ "@odata.type": "microsoft.graph.message"}],
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],

@@ -1,15 +1,16 @@
 ---
 title: 团队资源类型
 description: 'Microsoft Teams 中的团队是频道的集合。 '
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 85315d43b1de42e74b83d0ba9664ebfdb7847258
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812829"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908514"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -17,9 +18,7 @@ ms.locfileid: "34812829"
 
 Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
 
-每个团队与一个[组](../resources/group.md)相关联。
-该组具有与团队相同的 ID，例如 /groups/{id}/team 与 /teams/{id} 相同。
-有关使用组和团队内部成员的详细信息，请参阅[使用 Microsoft Graph REST API 来处理 Microsoft Teams](teams-api-overview.md)。
+每个团队与一个[组](../resources/group.md)相关联。 该组具有与团队相同的 ID，例如 `/groups/{id}/team` 与 `/teams/{id}` 相同。 有关使用组和团队内部成员的详细信息，请参阅[使用 Microsoft Graph REST API 来处理 Microsoft Teams](teams-api-overview.md)。
 
 ## <a name="methods"></a>方法
 
@@ -44,7 +43,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型   | 说明 |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |displayName|string| 团队的名称。 |
 |description|string| 组的说明（可选）。 |
@@ -62,16 +61,16 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   | 说明 |
+| 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |apps|[teamsApp](teamsapp.md) 集合| （已过时）此团队中安装的应用。|
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
+|primaryChannel|[频道](channel.md)|与团队相关联的主要频道。|
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。 |
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -116,5 +115,6 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 -->
 
 ## <a name="see-also"></a>另请参阅
+
 - [创建包含团队的组](/graph/teams-create-group-and-team)
 - [Teams API 概述](teams-api-overview.md)
