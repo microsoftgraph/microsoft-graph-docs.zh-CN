@@ -4,12 +4,12 @@ description: 更新 **educationuser** 对象的属性。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a0f3f7a1ed9f28f8b6a09ccf278adff39d7dc07d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: e38f555d9264ecf2280a2b09a97264ebee7bc96e
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887508"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932072"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
 |primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可能的值包括 `student`、`teacher`、`enum_sentinel`。|
 |student|[educationStudent](../resources/educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
-|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色为教师，此部分将包含特定于教师的数据。|
+|teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色是教师, 此块将包含教师特定的数据。|
 
 
 ## <a name="response"></a>响应

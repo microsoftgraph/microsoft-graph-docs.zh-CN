@@ -4,12 +4,12 @@ description: 管理单元为用户和组目录对象提供了一个概念性容�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 94d6c359449400ad2b37840b34d1b62e6f1b2138
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: a773df792a0f21480510c2a4eaf2aa32e3e10ba9
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656844"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932066"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "34656844"
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
 |[添加作用域角色成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加作用域角色成员。|
-|[列出作用域内的角色成员](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 获取作用域范围的角色管理员的列表。|
+|[列出作用域内的角色成员](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 获取作用域角色管理员的列表。|
 |[获取作用域角色成员](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 获取特定的作用域角色成员。|
 |[删除作用域范围的角色成员](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 删除作用域角色成员。|
 |**开放扩展**| | |
@@ -51,8 +51,8 @@ ms.locfileid: "34656844"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|string|管理单元的可选说明。|
-|displayName|字符串|管理单元的显示名称。|
-|id|字符串|管理单元的唯一标识符。 只读。|
+|displayName|string|管理单元的显示名称。|
+|id|string|管理单元的唯一标识符。 只读。|
 |visibility|string|控制管理单元及其成员是否为隐藏或公共的。 可以设置为 HiddenMembership 或 Public。 如果未设置, 则默认行为是公共行为。 如果设置为 HiddenMembership, 则只有管理单元的成员可以列出管理单位的其他成员。|
 
 ## <a name="relationships"></a>关系

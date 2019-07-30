@@ -4,18 +4,20 @@ description: 在呼叫中播放提示。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cfb12ecbe41dd0676bebf1c38115eb4d5a55213c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cc65ed5b9ced14cd259bf678ee1152089d654e2c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438669"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931089"
 ---
 # <a name="call-playprompt"></a>调用: playPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在呼叫中播放提示。
+
+有关如何处理操作的详细信息, 请参阅[commsOperation](../resources/commsoperation.md)
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,11 +46,12 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[提示符](../resources/prompt.md)集合||
+|提示|[提示符](../resources/prompt.md)集合| 目前, 仅支持单个提示符, 类型[MediaPrompt](../resources/mediaprompt.md) 。|
+|loop|布尔值| 循环值。 如果为 true, 则表示无限循环。 默认值为 false。 |
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -63,7 +66,7 @@ POST /applications/{id}/calls/{id}/playPrompt
   "name": "call-playPrompt"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/playPrompt
+POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt
 Content-Type: application/json
 Content-Length: 166
 
@@ -73,12 +76,13 @@ Content-Length: 166
     {
       "@odata.type": "#microsoft.graph.mediaPrompt",
       "mediaInfo": {
+        "@odata.type": "#microsoft.graph.mediaInfo",
         "uri": "https://cdn.contoso.com/beep.wav",
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
-      "loop": 5
-    }
-  ]
+    },
+  ],
+  "loop": false
 }
 ```
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
@@ -100,10 +104,22 @@ Content-Length: 166
 ```http
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "@odata.type": "#microsoft.graph.playPromptOperation",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+
 ```
 
 ##### <a name="notification---operation-completed"></a>通知-操作已完成
 
+ >**注意:** 如果发生无限循环, 则不会发送此通知。
+ 
 ```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
@@ -116,8 +132,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {

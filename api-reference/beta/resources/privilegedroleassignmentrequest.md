@@ -2,12 +2,12 @@
 title: privilegedRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理中对角色分配操作的请求。
 localization_priority: Normal
-ms.openlocfilehash: 240c84ecb0bf4f8d0e171f647f21eb6730c28d44
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 54d3fe72ab0cd9145f549e88e356ed30e2b9ef56
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621212"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932515"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "35621212"
 |status|String| 只读。角色分配请求的状态。 值可以是`NotStarted``Completed`、、`RequestedApproval``Scheduled``Approved``ApprovalDenied``Revoked``RequestExpired`、、、、、、、、。`ApprovalAborted``Cancelling``Cancelled`|
 |ticketNumber|String| 角色分配的 ticketNumber。 |
 |ticketSystem|String| 角色分配的 ticketSystem。|
-|type|字符串| 表示角色分配上操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。|
+|type|字符串| 表示角色分配上操作的类型。 值可以是`AdminAdd`: Administrators 将用户添加到角色;`UserAdd`: 用户添加角色分配。|
 |userId|String| 用户的 id。|
 
 ## <a name="relationships"></a>关系

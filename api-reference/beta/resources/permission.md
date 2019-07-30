@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Permission
+title: 权限资源类型
+description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
-ms.openlocfilehash: e8a4adaa3c1d41270e172f9d0b0e1bf3829927c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.prod: sharepoint
+ms.openlocfilehash: e43889f3dcab5c887cffe58cfcc4ac632389f980
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344943"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932462"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "33344943"
 共享权限具有许多不同的形式。
 **权限**资源通过资源上的 facet 表示这些不同的表单。
 
->**注意:** OneDrive for business 和 SharePoint 文档库不返回**inheritedFrom**属性。
+>**注意:** OneDrive for Business 和 SharePoint 文档库不返回**inheritedFrom**属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,7 +71,7 @@ ms.locfileid: "33344943"
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | roles               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
 | shareId             | String                      | 可用于通过**[共享 API][]** 访问此共享项的唯一标记。 只读。
-| expirationDateTime  | DateTimeOffset              | yyyy-mm-ddthh: MM: ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
+| expirationDateTime  | DateTimeOffset              | Yyyy-mm-ddthh: MM: ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
 | hasPassword         | Boolean                     | 这指示是否为此权限设置了密码, 它仅显示为 "响应"。 可选和只读, 仅适用于 OneDrive 个人版。
 
 ### <a name="roles-enumeration-values"></a>角色枚举值
@@ -141,6 +142,25 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 }
 ```
 
+### <a name="existing-access-link"></a>现有访问链接
+
+此链接不向用户授予任何其他权限。
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
 ### <a name="specific-people-link"></a>特定人员链接
 
 此链接提供对`grantedToIdentities`集合中特定人员的读取和写入访问权限。
@@ -176,8 +196,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 ## <a name="sharing-invitations"></a>共享邀请
 
-[邀请][]API 发送的权限可能在[邀请][SharingInvitation] facet 中有其他信息。
-如果邀请发送到与已知帐户不匹配的电子邮件地址, 则在兑换邀请之前 (首次单击该链接并登录时), 可能不会设置**grantedTo**属性。
+由[邀请][]或[授予][]API 发送的权限可以在[邀请][SharingInvitation] facet 中为不匹配已知帐户的电子邮件地址提供其他信息。 在这种情况下, **grantedTo**属性可能不会设置, 直到该邀请链接被兑换 (当用户首次单击该链接并登录) 时才会发生此事件。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -231,6 +250,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 
 [createLink]: ../api/driveitem-createlink.md
+[授]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [特]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

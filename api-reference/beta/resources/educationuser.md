@@ -4,12 +4,12 @@ description: 系统中的用户。 这是特定于教育的用户变体，具有
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 616c11bca1711dead0007d153b77bcf377490a7a
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 028107941c134569caf7f4c1efc13f7d752dcb1b
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750106"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932004"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -58,7 +58,7 @@ ms.locfileid: "34750106"
 | residenceAddress  | [physicalAddress]                                     | 用户所在的地址。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | student           | [educationStudent]                                    | 如果主要角色为学生，此部分将包含特定于学生的数据。                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | surname           | 字符串                                                | 用户的姓氏。 支持\$筛选器。                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| teacher           | [educationTeacher]                                    | 如果主要角色为教师，此部分将包含特定于教师的数据。                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| teacher           | [educationTeacher]                                    | 如果主要角色是教师, 此块将包含教师特定的数据。                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | usageLocation     | String                                                | 两个字母组成的国家/地区代码（ISO 标准 3166）。 鉴于检查服务在国家/地区的可用性的法律要求，这对将分配许可证的用户而言是必需的。 示例包括：“US”、“JP”和“GB”。 不可为 null。 支持\$筛选器。                                                                                                                                                                                                                                                               |
 | userPrincipalName | 字符串                                                | 用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。 |
 | userType          | String                                                | 可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 支持\$筛选器。                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -151,5 +151,5 @@ ms.locfileid: "34750106"
 [了解 identityset]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
-[user]: user.md
+[用户]: user.md
 [directoryobject]: directoryobject.md

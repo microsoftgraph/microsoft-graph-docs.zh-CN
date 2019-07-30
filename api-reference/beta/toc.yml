@@ -7442,6 +7442,8 @@
                   href: api/itemactivity-getbyinterval.md
                 - name: 预览项目
                   href: api/driveitem-preview.md
+                - name: 绑定
+                  href: resources/bundle.md
             - name: 权限
               href: resources/permission.md
               items:
@@ -7449,6 +7451,8 @@
                   href: api/driveitem-createlink.md
                 - name: 使用共享链接
                   href: api/shares-get.md
+                - name: 将用户添加到共享链接
+                  href: api/permission-grant.md
                 - name: 列出权限
                   href: api/driveitem-list-permissions.md
                 - name: 添加权限
@@ -9483,7 +9487,7 @@
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
-                - name: List
+                - name: 列出
                   href: api/outlookuser-list-tasks.md
                 - name: 创建
                   href: api/outlookuser-post-tasks.md

@@ -2,12 +2,12 @@
 title: 创建 privilegedRoleAssignmentRequest
 description: 创建 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
-ms.openlocfilehash: f2b69bd44b1d8506f016757b5c309bf50ed0423f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0cb7e958e9eaf8550d1262ed00e66ee477cbd195
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875538"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931849"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -41,7 +41,7 @@ POST /privilegedRoleAssignmentRequests
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
+|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`: Administrators 将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
 |assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
 |在于|String|需要为角色分配请求提供审核和审阅目的的原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|

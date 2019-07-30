@@ -2,12 +2,12 @@
 title: governanceRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理中对角色分配操作的请求。
 localization_priority: Normal
-ms.openlocfilehash: 13834b683fa909b51f3f81550aad426808c034d2
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 3a828bc14def823aeba6e06f2efe924c67ba5052
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620925"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931877"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest 资源类型
 

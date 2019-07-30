@@ -1,27 +1,26 @@
 ---
 title: mediaPrompt 资源类型
-description: mediaPrompt 类型。
+description: MediaPrompt 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa08436d46777b4e82712e3288ec17047c33a1ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: cd2a700298c6f8163e3162e244f66468e1a94e7c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342623"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932483"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-mediaPrompt 类型。
+MediaPrompt 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性    | 类型                      | 说明                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| loop        | Int32                     | 循环计数。 0值指示无限循环。 默认值为 `1`。 |
 | mediaInfo   | [mediaInfo](mediainfo.md) | 媒体信息                                                           |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -38,7 +37,6 @@ mediaPrompt 类型。
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
@@ -51,11 +49,12 @@ mediaPrompt 类型。
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
     "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-  },
-  "loop": 5
+  }
 }
 ```
 

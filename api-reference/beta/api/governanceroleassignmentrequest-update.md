@@ -2,12 +2,12 @@
 title: 更新 governanceRoleAssignmentRequests
 description: 使管理员能够更新状态为的`AdminApproved` `PendingAdminDecision`governanceRoleAssignmentRequests `AdminDenied`上的决策 (或)。
 localization_priority: Normal
-ms.openlocfilehash: 2fc215fd95cd621e3aa29ef0fcd653964dc6208d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 5995addbd9c7a491b884aea505f2ab8d4b8c750d
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859058"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931175"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 

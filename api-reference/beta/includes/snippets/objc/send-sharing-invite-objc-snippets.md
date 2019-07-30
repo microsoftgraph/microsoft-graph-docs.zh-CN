@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9fed70fb403838c3fd46e567dae5bfc95fe6d479
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: f64d1c82b0523893dc1b26042365835eb05b7c77
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712953"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931634"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{item-id}/invite"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/shares/{encoded-sharing-url}/permission/grant"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -20,29 +20,16 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *recipientsList = [[NSMutableArray alloc] init];
 MSGraphDriveRecipient *recipients = [[MSGraphDriveRecipient alloc] init];
-[recipients setEmail:@"ryan@contoso.org"];
+[recipients setEmail:@"john@contoso.com"];
+[recipientsList addObject: recipients];
+MSGraphDriveRecipient *recipients = [[MSGraphDriveRecipient alloc] init];
+[recipients setEmail:@"ryan@external.com"];
 [recipientsList addObject: recipients];
 payloadDictionary[@"recipients"] = recipientsList;
 
-NSString *message = @"Here's the file that we're collaborating on.";
-payloadDictionary[@"message"] = message;
-
-BOOL requireSignIn = YES;
-payloadDictionary[@"requireSignIn"] = requireSignIn;
-
-BOOL sendInvitation = YES;
-payloadDictionary[@"sendInvitation"] = sendInvitation;
-
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];
-[rolesList addObject: @"write"];
+[rolesList addObject: @"read"];
 payloadDictionary[@"roles"] = rolesList;
-
-NSString *password = @"password123";
-payloadDictionary[@"password"] = password;
-
-NSString *expirationDateTimeDateTimeString = @"07/15/2018 14:00:00";
-NSDate *expirationDateTime = [NSDate ms_dateFromString: expirationDateTimeDateTimeString];
-payloadDictionary[@"expirationDateTime"] = expirationDateTime;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

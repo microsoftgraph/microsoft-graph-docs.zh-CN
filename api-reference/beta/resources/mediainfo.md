@@ -4,12 +4,12 @@ description: 在提示操作中使用的媒体信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c6f8e4f4ceea184f9663c433672d0892ed92467
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 81fbb1228e8b8821a3a92a6f285a3abc758701ca
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342637"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932421"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
@@ -20,8 +20,9 @@ ms.locfileid: "33342637"
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | 资源的唯一标识。 |
-| url            | String  | 资源的路径。            |
+| resourceId     | String  | 可选, 用于唯一标识资源。 如果传递了提示 uri, 则会将此 resourceId 作为密钥进行缓存。 |
+| url            | String  | 要播放的提示的路径。 目前仅支持带有 16000 (16KHz) 采样速率的波形文件 (.wav) 格式的单通道、16位样本。 |
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
