@@ -4,12 +4,12 @@ description: '检索团队频道中的消息列表（无回复）。 若要获�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1c7f5eb6a5358a4cfd4d9bfcac3a7fd1756c4db4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f50b14c91bb86c81de000d9593b889f1224cd063
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864470"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931052"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -17,7 +17,7 @@ ms.locfileid: "35864470"
 
 检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。 
 
-若要获取消息的回复，请调用[列出消息回复](channel-get-messagereply.md)或[获取消息回复](channel-list-messagereplies.md) API。 
+若要获取消息的回复，请调用[列出消息回复](channel-list-messagereplies.md)或[获取消息回复](channel-get-messagereply.md) API。 
 
 ## <a name="permissions"></a>权限
 
