@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8c2eef52d320275af92b1baa07f89b5c3c5aa21f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: dc03346b15e3bfcf77d636409bbf05fada3eb048
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856925"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933795"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OnlineMeeting OnlineMeeting = new OnlineMeeting();
-OnlineMeeting.meetingType = MeetingType.MEET_NOW;
+OnlineMeeting onlineMeeting = new OnlineMeeting();
+onlineMeeting.meetingType = MeetingType.MEET_NOW;
 MeetingParticipants participants = new MeetingParticipants();
 MeetingParticipantInfo organizer = new MeetingParticipantInfo();
 IdentitySet identity = new IdentitySet();
@@ -21,11 +21,11 @@ user.id = "550fae72-d251-43ec-868c-373732c2704f";
 identity.user = user;
 organizer.identity = identity;
 participants.organizer = organizer;
-OnlineMeeting.participants = participants;
-OnlineMeeting.subject = "subject-value";
+onlineMeeting.participants = participants;
+onlineMeeting.subject = "subject-value";
 
 graphClient.app().onlineMeetings()
     .buildRequest()
-    .post(OnlineMeeting);
+    .post(onlineMeeting);
 
 ```
