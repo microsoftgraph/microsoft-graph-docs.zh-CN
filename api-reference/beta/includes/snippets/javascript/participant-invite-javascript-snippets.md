@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e0188059c57aa7cccca7ca0801ff86379fadadf5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: fec6dba30411f1838c5c83503f4f1c5e658a1d18
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730554"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933834"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const inviteParticipantsOperation = {
   participants: [
     {
       endpointType: "default",
@@ -36,6 +36,6 @@ const CommsOperation = {
 
 let res = await client.api('/app/calls/{id}/participants/invite')
     .version('beta')
-    .post(CommsOperation);
+    .post(inviteParticipantsOperation);
 
 ```

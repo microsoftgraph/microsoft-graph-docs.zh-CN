@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6994ba25156d3426032f609881014d1888692178
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: aef0225a1690321dbdc964447ba1127f272f4d7c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708812"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933820"
 ---
 ```objc
 
@@ -19,7 +19,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphInvitationParticipantInfo *transferTarget = [[MSGraphInvitationParticipantInfo alloc] init];
-[transferTarget setEndpointType: [MSGraphEndpointType Default]];
+[transferTarget setEndpointType: [MSGraphEndpointType default]];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];

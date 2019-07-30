@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: de09363645eca2f6fddbb55339377c5e8459372d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: ef1702cdb00e0c5920049b789a7fcdece1d20573
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708799"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933811"
 ---
 ```csharp
 
@@ -31,7 +31,7 @@ var transferTarget = new InvitationParticipantInfo
 var clientContext = "clientContext-value";
 
 await graphClient.App.Calls["{id}"]
-    .Transfer(transferTarget,target,replacesCallId)
+    .Transfer(transferTarget)
     .Request()
     .PostAsync();
 

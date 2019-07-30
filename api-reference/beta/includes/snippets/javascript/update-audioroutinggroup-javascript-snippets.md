@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b5460552df924aafb294daae1eb870c46a13d24f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 528fbc549aa192d7a6df9a551a3ac9624f6d51d1
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709985"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933796"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const AudioRoutingGroup = {
+const audioRoutingGroup = {
   id: "oneToOne",
   routingMode: "oneToOne",
   sources: [
@@ -29,6 +29,6 @@ const AudioRoutingGroup = {
 
 let res = await client.api('/app/calls/{id}/audioRoutingGroups/{id}')
     .version('beta')
-    .update({AudioRoutingGroup : AudioRoutingGroup});
+    .update({audioRoutingGroup : audioRoutingGroup});
 
 ```

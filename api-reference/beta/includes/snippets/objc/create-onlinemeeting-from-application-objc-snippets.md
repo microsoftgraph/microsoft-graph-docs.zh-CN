@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 76863c22526585db16e784a3ce986afc99922ef8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 911b25f1dcf6bded14923256a6a98198c5422762
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711469"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933793"
 ---
 ```objc
 
@@ -16,8 +16,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphOnlineMeeting *OnlineMeeting = [[MSGraphOnlineMeeting alloc] init];
-[OnlineMeeting setMeetingType: [MSGraphMeetingType MeetNow]];
+MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] init];
+[onlineMeeting setMeetingType: [MSGraphMeetingType meetNow]];
 MSGraphMeetingParticipants *participants = [[MSGraphMeetingParticipants alloc] init];
 MSGraphMeetingParticipantInfo *organizer = [[MSGraphMeetingParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
@@ -26,12 +26,12 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [identity setUser:user];
 [organizer setIdentity:identity];
 [participants setOrganizer:organizer];
-[OnlineMeeting setParticipants:participants];
-[OnlineMeeting setSubject:@"subject-value"];
+[onlineMeeting setParticipants:participants];
+[onlineMeeting setSubject:@"subject-value"];
 
 NSError *error;
-NSData *OnlineMeetingData = [OnlineMeeting getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:OnlineMeetingData];
+NSData *onlineMeetingData = [onlineMeeting getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:onlineMeetingData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
