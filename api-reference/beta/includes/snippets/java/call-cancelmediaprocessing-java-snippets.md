@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: acc1d6e1d915e28fde5380293115b46a70caaab0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 22c6bd21b38952dfd58afeb3c8b08a3ff1f3a068
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864870"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933800"
 ---
 ```java
 
@@ -16,7 +16,7 @@ boolean all = True;
 String clientContext = "clientContext-value";
 
 graphClient.app().calls("{id}")
-    .cancelMediaProcessing(all,clientContext)
+    .cancelMediaProcessing(clientContext)
     .buildRequest()
     .post();
 

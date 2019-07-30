@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 432682dd2adf61ec8d0956f63a8873299f630eff
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: dc74e32a340a8df3d4719aad40cecd70338cbde2
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708914"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933827"
 ---
 ```objc
 
@@ -21,9 +21,9 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *ParticipantList = [[NSMutableArray alloc] init];
-        ParticipantList = [jsonFinal valueForKey:@"value"];
-        MSGraphParticipant *Participant = [[MSGraphParticipant alloc] initWithDictionary:[ParticipantList objectAtIndex: 0] error:&nserror];
+        NSMutableArray *participantList = [[NSMutableArray alloc] init];
+        participantList = [jsonFinal valueForKey:@"value"];
+        MSGraphParticipant *participant = [[MSGraphParticipant alloc] initWithDictionary:[participantList objectAtIndex: 0] error:&nserror];
 
 }];
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6baa80e9ed4ca4ab9c118d20e276fd554a744cd9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 391c26b56023314d79c0351051ca2097fc9e697c
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708806"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933817"
 ---
 ```csharp
 
@@ -39,7 +39,7 @@ var maskCallee = false;
 var maskCaller = false;
 
 await graphClient.App.Calls["{id}"]
-    .Redirect(targets,targetDisposition,timeout,maskCallee,maskCaller)
+    .Redirect(targets,targetDisposition,timeout,maskCallee,maskCaller,callbackUri)
     .Request()
     .PostAsync();
 

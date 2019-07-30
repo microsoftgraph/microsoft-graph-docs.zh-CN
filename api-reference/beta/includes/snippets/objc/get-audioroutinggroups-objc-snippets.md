@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2d92eb879e7efc0646c2b5616a4570d61b7e113f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c21809742b4136d02bace064285220b2938bb094
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708935"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933828"
 ---
 ```objc
 
@@ -20,9 +20,9 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *AudioRoutingGroupList = [[NSMutableArray alloc] init];
-        AudioRoutingGroupList = [jsonFinal valueForKey:@"value"];
-        MSGraphAudioRoutingGroup *AudioRoutingGroup = [[MSGraphAudioRoutingGroup alloc] initWithDictionary:[AudioRoutingGroupList objectAtIndex: 0] error:&nserror];
+        NSMutableArray *audioRoutingGroupList = [[NSMutableArray alloc] init];
+        audioRoutingGroupList = [jsonFinal valueForKey:@"value"];
+        MSGraphAudioRoutingGroup *audioRoutingGroup = [[MSGraphAudioRoutingGroup alloc] initWithDictionary:[audioRoutingGroupList objectAtIndex: 0] error:&nserror];
 
 }];
 

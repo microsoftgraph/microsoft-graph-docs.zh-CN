@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6f7cd72190f060ef467daf0371d68b49075ae254
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: ce55e517542b7000bda2a89b705f0448520ed8c1
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708794"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933818"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *targetsList = [[NSMutableArray alloc] init];
 MSGraphInvitationParticipantInfo *targets = [[MSGraphInvitationParticipantInfo alloc] init];
-[targets setEndpointType: [MSGraphEndpointType Default]];
+[targets setEndpointType: [MSGraphEndpointType default]];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];
@@ -33,7 +33,7 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [targetsList addObject: targets];
 payloadDictionary[@"targets"] = targetsList;
 
-MSGraphCallDisposition *targetDisposition = [MSGraphCallDisposition Default];
+MSGraphCallDisposition *targetDisposition = [MSGraphCallDisposition default];
 payloadDictionary[@"targetDisposition"] = targetDisposition;
 
 int32_t timeout = 99;

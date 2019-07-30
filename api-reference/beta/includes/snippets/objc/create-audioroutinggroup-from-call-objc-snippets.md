@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: bc5123c55707f6d186167ea06da92841cc629feb
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 5b889c18d229e22625743483b2ce0a780e587b0a
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708790"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933825"
 ---
 ```objc
 
@@ -16,19 +16,19 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphAudioRoutingGroup *AudioRoutingGroup = [[MSGraphAudioRoutingGroup alloc] init];
-[AudioRoutingGroup setId:@"oneToOne"];
-[AudioRoutingGroup setRoutingMode: [MSGraphRoutingMode OneToOne]];
+MSGraphAudioRoutingGroup *audioRoutingGroup = [[MSGraphAudioRoutingGroup alloc] init];
+[audioRoutingGroup setId:@"oneToOne"];
+[audioRoutingGroup setRoutingMode: [MSGraphRoutingMode oneToOne]];
 NSMutableArray *sourcesList = [[NSMutableArray alloc] init];
 [sourcesList addObject: @"632899f8-2ea1-4604-8413-27bd2892079f"];
-[AudioRoutingGroup setSources:sourcesList];
+[audioRoutingGroup setSources:sourcesList];
 NSMutableArray *receiversList = [[NSMutableArray alloc] init];
 [receiversList addObject: @"550fae72-d251-43ec-868c-373732c2704f"];
-[AudioRoutingGroup setReceivers:receiversList];
+[audioRoutingGroup setReceivers:receiversList];
 
 NSError *error;
-NSData *AudioRoutingGroupData = [AudioRoutingGroup getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:AudioRoutingGroupData];
+NSData *audioRoutingGroupData = [audioRoutingGroup getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:audioRoutingGroupData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

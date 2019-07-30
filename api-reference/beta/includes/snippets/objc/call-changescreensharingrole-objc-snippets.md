@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5b1de3220c64c0688131d31bc70663b5d7a83694
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 75e71d963c3838cf876333b018f626a8c9044c6b
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708978"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933832"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-MSGraphScreenSharingRole *role = [MSGraphScreenSharingRole Viewer];
+MSGraphScreenSharingRole *role = [MSGraphScreenSharingRole viewer];
 payloadDictionary[@"role"] = role;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

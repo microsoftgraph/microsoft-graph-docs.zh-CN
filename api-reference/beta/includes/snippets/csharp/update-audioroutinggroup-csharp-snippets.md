@@ -1,17 +1,17 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: eb54bdb6a6aab192139e409ac0bd18821c98a99b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 81ea9a8ca7ce30f89efed2606dee77afe152ebb6
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709990"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933819"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var AudioRoutingGroup = new AudioRoutingGroup
+var audioRoutingGroup = new AudioRoutingGroup
 {
     Id = "oneToOne",
     RoutingMode = RoutingMode.OneToOne,
@@ -28,6 +28,6 @@ var AudioRoutingGroup = new AudioRoutingGroup
 
 await graphClient.App.Calls["{id}"].AudioRoutingGroups["{id}"]
     .Request()
-    .UpdateAsync(AudioRoutingGroup);
+    .UpdateAsync(audioRoutingGroup);
 
 ```

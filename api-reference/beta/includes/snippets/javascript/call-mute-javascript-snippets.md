@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f12a47f2883fdd42ef1d2e257f65328ae548d553
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: a4440a28956977483167f6eed422928895f589c3
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708895"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933826"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const muteParticipantOperation = {
   clientContext: "clientContext-value"
 };
 
 let res = await client.api('/app/calls/{id}/mute')
     .version('beta')
-    .post(CommsOperation);
+    .post(muteParticipantOperation);
 
 ```

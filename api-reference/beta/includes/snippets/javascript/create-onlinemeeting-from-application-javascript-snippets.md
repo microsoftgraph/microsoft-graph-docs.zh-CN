@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 59747d0f9db174a15bdf57cbae6ec3adee872ba9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 481efa9c9ff69832bda11ec1ecf52ba63bf62b68
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711470"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35933792"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const OnlineMeeting = {
+const onlineMeeting = {
   meetingType: "meetNow",
   participants: {
     organizer: {
@@ -31,6 +31,6 @@ const OnlineMeeting = {
 
 let res = await client.api('/app/onlineMeetings')
     .version('beta')
-    .post({OnlineMeeting : OnlineMeeting});
+    .post({onlineMeeting : onlineMeeting});
 
 ```
