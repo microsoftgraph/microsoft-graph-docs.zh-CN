@@ -4,39 +4,39 @@ description: 从组新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 685f727a6d70f691c23e28f82ee7642d0f3a7c70
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 9ffcde0aac75ace6438f5187dd2c63696a3ace74
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812983"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931931"
 ---
-# <a name="create-team-from-group"></a><span data-ttu-id="f3f9f-103">从组创建团队</span><span class="sxs-lookup"><span data-stu-id="f3f9f-103">Create team from group</span></span>
+# <a name="create-team-from-group"></a><span data-ttu-id="b33cb-103">从组创建团队</span><span class="sxs-lookup"><span data-stu-id="b33cb-103">Create team from group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> <span data-ttu-id="f3f9f-104">我们正在弃用此 API 来支持[创建团队](../api/team-post.md)，并将于 2019 年末之前将其删除。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-104">This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019.</span></span> <span data-ttu-id="f3f9f-105">要详细了解如何通过组来创建团队，请查看[创建团队](../api/team-post.md)中的示例 4 和示例 5。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-105">For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).</span></span>
+> <span data-ttu-id="b33cb-104">我们正在弃用此 API 来支持[创建团队](../api/team-post.md)，并将于 2019 年末之前将其删除。</span><span class="sxs-lookup"><span data-stu-id="b33cb-104">This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019.</span></span> <span data-ttu-id="b33cb-105">要详细了解如何通过组来创建团队，请查看[创建团队](../api/team-post.md)中的示例 4 和示例 5。</span><span class="sxs-lookup"><span data-stu-id="b33cb-105">For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).</span></span>
 
-<span data-ttu-id="f3f9f-106">从[组](../resources/group.md)新建[团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-106">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
+<span data-ttu-id="b33cb-106">从[组](../resources/group.md)新建[团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="b33cb-106">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
 
-<span data-ttu-id="f3f9f-107">若要创建团队，组必须至少拥有一个所有者。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-107">In order to create a team, the group must have a least one owner.</span></span>
+<span data-ttu-id="b33cb-107">若要创建团队，组必须至少拥有一个所有者。</span><span class="sxs-lookup"><span data-stu-id="b33cb-107">In order to create a team, the group must have a least one owner.</span></span>
 
-<span data-ttu-id="f3f9f-108">如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-108">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="f3f9f-109">建议的模式是重试“创建团队呼叫”三次，每次呼叫之间延迟 10 秒。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-109">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
+<span data-ttu-id="b33cb-108">如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。</span><span class="sxs-lookup"><span data-stu-id="b33cb-108">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="b33cb-109">建议的模式是重试“创建团队呼叫”三次，每次呼叫之间延迟 10 秒。</span><span class="sxs-lookup"><span data-stu-id="b33cb-109">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f3f9f-110">权限</span><span class="sxs-lookup"><span data-stu-id="f3f9f-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b33cb-110">权限</span><span class="sxs-lookup"><span data-stu-id="b33cb-110">Permissions</span></span>
 
-<span data-ttu-id="f3f9f-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b33cb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b33cb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f3f9f-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="f3f9f-113">Permission type</span></span>      | <span data-ttu-id="f3f9f-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f3f9f-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b33cb-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="b33cb-113">Permission type</span></span>      | <span data-ttu-id="b33cb-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b33cb-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f3f9f-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f3f9f-115">Delegated (work or school account)</span></span> | <span data-ttu-id="f3f9f-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3f9f-116">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f3f9f-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f3f9f-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3f9f-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-118">Not supported.</span></span>    |
-|<span data-ttu-id="f3f9f-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="f3f9f-119">Application</span></span> | <span data-ttu-id="f3f9f-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3f9f-120">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="b33cb-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b33cb-115">Delegated (work or school account)</span></span> | <span data-ttu-id="b33cb-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b33cb-116">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b33cb-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b33cb-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b33cb-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="b33cb-118">Not supported.</span></span>    |
+|<span data-ttu-id="b33cb-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="b33cb-119">Application</span></span> | <span data-ttu-id="b33cb-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b33cb-120">Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="f3f9f-121">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="f3f9f-122">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-122">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="b33cb-121">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="b33cb-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="b33cb-122">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。</span><span class="sxs-lookup"><span data-stu-id="b33cb-122">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f3f9f-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f3f9f-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b33cb-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b33cb-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,28 +44,30 @@ ms.locfileid: "34812983"
 PUT /groups/{id}/team
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f3f9f-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="f3f9f-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b33cb-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="b33cb-124">Request headers</span></span>
 
-| <span data-ttu-id="f3f9f-125">标头</span><span class="sxs-lookup"><span data-stu-id="f3f9f-125">Header</span></span>       | <span data-ttu-id="f3f9f-126">值</span><span class="sxs-lookup"><span data-stu-id="f3f9f-126">Value</span></span> |
+| <span data-ttu-id="b33cb-125">标头</span><span class="sxs-lookup"><span data-stu-id="b33cb-125">Header</span></span>       | <span data-ttu-id="b33cb-126">值</span><span class="sxs-lookup"><span data-stu-id="b33cb-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f3f9f-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3f9f-127">Authorization</span></span>  | <span data-ttu-id="f3f9f-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f3f9f-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f3f9f-130">Content-Type</span></span>  | <span data-ttu-id="f3f9f-131">application/json</span><span class="sxs-lookup"><span data-stu-id="f3f9f-131">application/json</span></span>  |
+| <span data-ttu-id="b33cb-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="b33cb-127">Authorization</span></span>  | <span data-ttu-id="b33cb-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b33cb-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b33cb-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b33cb-130">Content-Type</span></span>  | <span data-ttu-id="b33cb-131">application/json</span><span class="sxs-lookup"><span data-stu-id="b33cb-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f3f9f-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="f3f9f-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b33cb-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="b33cb-132">Request body</span></span>
 
-<span data-ttu-id="f3f9f-133">在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-133">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="b33cb-133">在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b33cb-133">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f3f9f-134">响应</span><span class="sxs-lookup"><span data-stu-id="f3f9f-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b33cb-134">响应</span><span class="sxs-lookup"><span data-stu-id="b33cb-134">Response</span></span>
 
-<span data-ttu-id="f3f9f-135">如果成功，此方法应该会在响应正文中返回 `201 Created` 响应代码和 [team](../resources/team.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-135">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
+<span data-ttu-id="b33cb-135">如果成功，此方法应该会在响应正文中返回 `201 Created` 响应代码和 [team](../resources/team.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b33cb-135">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f3f9f-136">示例</span><span class="sxs-lookup"><span data-stu-id="f3f9f-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b33cb-136">示例</span><span class="sxs-lookup"><span data-stu-id="b33cb-136">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f3f9f-137">请求</span><span class="sxs-lookup"><span data-stu-id="f3f9f-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b33cb-137">请求</span><span class="sxs-lookup"><span data-stu-id="b33cb-137">Request</span></span>
 
-<span data-ttu-id="f3f9f-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-138">The following is an example of the request.</span></span>
+<span data-ttu-id="b33cb-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b33cb-138">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b33cb-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="b33cb-139">--Http</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_team"
 }-->
 ```http
@@ -89,14 +91,32 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b33cb-140">C#</span><span class="sxs-lookup"><span data-stu-id="b33cb-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="f3f9f-139">响应</span><span class="sxs-lookup"><span data-stu-id="f3f9f-139">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b33cb-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="b33cb-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="f3f9f-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-140">The following is an example of the response.</span></span> 
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b33cb-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b33cb-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="f3f9f-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f3f9f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javatabjava"></a>[<span data-ttu-id="b33cb-143">Java</span><span class="sxs-lookup"><span data-stu-id="b33cb-143">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="b33cb-144">响应</span><span class="sxs-lookup"><span data-stu-id="b33cb-144">Response</span></span>
+
+<span data-ttu-id="b33cb-145">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b33cb-145">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="b33cb-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b33cb-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
@@ -150,6 +170,6 @@ Content-length: 401
 }
 -->
 
-## <a name="see-also"></a><span data-ttu-id="f3f9f-143">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f3f9f-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b33cb-148">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b33cb-148">See also</span></span>
 
-- [<span data-ttu-id="f3f9f-144">创建包含团队的组</span><span class="sxs-lookup"><span data-stu-id="f3f9f-144">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="b33cb-149">创建包含团队的组</span><span class="sxs-lookup"><span data-stu-id="b33cb-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
