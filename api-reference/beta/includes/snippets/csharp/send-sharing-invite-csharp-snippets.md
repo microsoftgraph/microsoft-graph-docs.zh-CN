@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e75c28942a50ea791787e701ef38b819478dcc28
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 29efcb266954cb7d3326fc679fb2d6cb9b479173
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712954"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931627"
 ---
 ```csharp
 
@@ -15,27 +15,21 @@ var recipients = new List<DriveRecipient>()
 {
     new DriveRecipient
     {
-        Email = "ryan@contoso.org"
+        Email = "john@contoso.com"
+    },
+    new DriveRecipient
+    {
+        Email = "ryan@external.com"
     }
 };
 
-var message = "Here's the file that we're collaborating on.";
-
-var requireSignIn = true;
-
-var sendInvitation = true;
-
 var roles = new List<String>()
 {
-    "write"
+    "read"
 };
 
-var password = "password123";
-
-var expirationDateTime = 7/15/2018 2:00:00 PM;
-
-await graphClient.Me.Drive.Items["{item-id}"]
-    .Invite(requireSignIn,roles,sendInvitation,message,recipients,expirationDateTime,password)
+await graphClient.Shares["{encoded-sharing-url}"].Permission
+    .Grant(roles,recipients)
     .Request()
     .PostAsync();
 

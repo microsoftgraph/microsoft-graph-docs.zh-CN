@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 545de9d7069b84b7a495582cb12601eb1ded5de5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 386c118504141b7bc1b1dde4cbdaabd2b6b9651e
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861139"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931628"
 ---
 ```java
 
@@ -13,25 +13,19 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
 DriveRecipient recipients = new DriveRecipient();
-recipients.email = "ryan@contoso.org";
+recipients.email = "john@contoso.com";
 
 recipientsList.add(recipients);
+DriveRecipient recipients1 = new DriveRecipient();
+recipients1.email = "ryan@external.com";
 
-String message = "Here's the file that we're collaborating on.";
-
-boolean requireSignIn = True;
-
-boolean sendInvitation = True;
+recipientsList.add(recipients1);
 
 LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("write");
+rolesList.add("read");
 
-String password = "password123";
-
-int expirationDateTime = 7/15/2018 2:00:00 PM;
-
-graphClient.me().drive().items("{item-id}")
-    .invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,expirationDateTime,password)
+graphClient.shares("{encoded-sharing-url}").permission()
+    .grant(rolesList,recipientsList)
     .buildRequest()
     .post();
 
