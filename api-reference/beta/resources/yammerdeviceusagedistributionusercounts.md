@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1797facecb5047badb35c0a4d876680e817cc643
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6dcfef0f86913ee1afe98681b71f9210216dd416
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555078"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006975"
 ---
 # <a name="yammerdeviceusagedistributionusercounts-resource-type"></a>yammerDeviceUsageDistributionUserCounts 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "32555078"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | web               | Int32  |
 | windowsPhone      | Int32  |
 | androidPhone      | Int32  |

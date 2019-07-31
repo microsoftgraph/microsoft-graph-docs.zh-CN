@@ -4,12 +4,13 @@ description: 包含会议组织者的会议信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 129e8a60edd89d45eb6e48715a59231475d52b99
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009270"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "33341755"
 | 属性                     | 类型                          | 说明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | allowConversationWithoutHost | Boolean                       | 指示会话离开的主机后是否可以继续会话。 |
-| 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
+| organizer － 组织者                    | [identitySet](identityset.md) | 组织者 Azure Active Directory 标识。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

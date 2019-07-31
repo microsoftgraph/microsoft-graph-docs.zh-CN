@@ -4,12 +4,13 @@ description: 注册配置文件，用于使用 Google 的云管理注册 COSU �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53c3f1e26956b1f3cce830b7e7b2fed6a2e3df72
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: f4aa50fdbfeaf4249296c67804dff4e95e3ac8e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737368"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006204"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 

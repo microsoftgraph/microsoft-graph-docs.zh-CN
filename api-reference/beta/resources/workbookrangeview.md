@@ -4,12 +4,13 @@ description: RangeView 表示父范围的一组可见单元格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fdc09b4c88e3105624f322697784cfa4e654ee96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b71f6eadcf110c2942cf02f43b3aa8b5db2db4cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007086"
 ---
 # <a name="workbookrangeview-resource-type"></a>workbookRangeView 资源类型
 

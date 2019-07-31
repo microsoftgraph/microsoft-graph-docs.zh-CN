@@ -2,12 +2,15 @@
 title: inferenceClassificationOverride 资源类型
 description: 表示来自特定发件人的传入邮件应始终按如下方式分类的用户替代
 localization_priority: Normal
-ms.openlocfilehash: 59ed4c472d7972ae4292388572bbb66b7a588996
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d01cbeb7b031c3e3b9ed66757a155eca6e33e479
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340037"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005763"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 

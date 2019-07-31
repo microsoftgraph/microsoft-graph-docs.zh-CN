@@ -4,12 +4,13 @@ description: 一组用户日历。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2503fd7c113b8b55ba090fbc9504145e12596d4e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e556743517436950e3608247b537307e5bb97e3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013041"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 

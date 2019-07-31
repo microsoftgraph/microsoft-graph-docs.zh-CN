@@ -2,12 +2,15 @@
 title: 配置邀请邮件
 description: 使用 invitedusermessageinfo 对象允许您配置邀请邮件。
 localization_priority: Normal
-ms.openlocfilehash: 458efdade9b5cd7b538ffa3e217ec915dac93ad9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 1c9fffd2edec48fb528dcb2f6c5a751dd4f32d30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010103"
 ---
 # <a name="configuring-the-invitation-message"></a>配置邀请邮件
 

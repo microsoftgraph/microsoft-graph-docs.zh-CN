@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 176e960c7d9ae8dd1bc29600ad7b64e45e2940fa
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+doc_type: resourcePageType
+ms.openlocfilehash: dfc45c4973194d26c1830f8c36d3bf3b407d2e3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009501"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail 资源类型
 

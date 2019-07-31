@@ -4,12 +4,13 @@ description: MailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7f522d6d947d190232d510662dfe2c6a70001fb2
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: resourcePageType
+ms.openlocfilehash: f709347d8ba81a5b42ab512a80beae8780805f2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812920"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009844"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder 资源类型
 
