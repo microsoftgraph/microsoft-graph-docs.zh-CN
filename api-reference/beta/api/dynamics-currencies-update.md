@@ -6,51 +6,52 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e243325d4a7e7536c1e079385f695ef2cc7359c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7bdacde2564fac7e3ee8f9a74960c15d5da50d1d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458549"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956476"
 ---
-# <a name="update-currencies"></a><span data-ttu-id="25c85-103">更新货币</span><span class="sxs-lookup"><span data-stu-id="25c85-103">Update currencies</span></span>
-<span data-ttu-id="25c85-104">更新 Dynamics 365 Business Central 的 currency 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="25c85-104">Update the properties of a currency object for Dynamics 365 Business Central.</span></span>
+# <a name="update-currencies"></a><span data-ttu-id="b2de2-103">更新货币</span><span class="sxs-lookup"><span data-stu-id="b2de2-103">Update currencies</span></span>
+<span data-ttu-id="b2de2-104">更新 Dynamics 365 Business Central 的 currency 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="b2de2-104">Update the properties of a currency object for Dynamics 365 Business Central.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="25c85-105">权限</span><span class="sxs-lookup"><span data-stu-id="25c85-105">Permissions</span></span>
-<span data-ttu-id="25c85-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="25c85-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b2de2-105">权限</span><span class="sxs-lookup"><span data-stu-id="b2de2-105">Permissions</span></span>
+<span data-ttu-id="b2de2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b2de2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="25c85-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="25c85-108">Permission type</span></span> |<span data-ttu-id="25c85-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="25c85-109">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="b2de2-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b2de2-108">Permission type</span></span> |<span data-ttu-id="b2de2-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b2de2-109">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="25c85-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="25c85-110">Delegated (work or school account)</span></span>|<span data-ttu-id="25c85-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25c85-111">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="25c85-112">委派 (个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="25c85-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="25c85-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="25c85-113">Not supported.</span></span>|
-|<span data-ttu-id="25c85-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="25c85-114">Application</span></span>|<span data-ttu-id="25c85-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25c85-115">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="b2de2-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b2de2-110">Delegated (work or school account)</span></span>|<span data-ttu-id="b2de2-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2de2-111">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="b2de2-112">委派 (个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="b2de2-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="b2de2-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="b2de2-113">Not supported.</span></span>|
+|<span data-ttu-id="b2de2-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b2de2-114">Application</span></span>|<span data-ttu-id="b2de2-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2de2-115">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="25c85-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="25c85-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b2de2-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b2de2-116">HTTP request</span></span>
 ```
 PATCH /financials/companies('{id}')/currencies('{id}')
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="25c85-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="25c85-117">Optional query parameters</span></span>
-<span data-ttu-id="25c85-118">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="25c85-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b2de2-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b2de2-117">Optional query parameters</span></span>
+<span data-ttu-id="b2de2-118">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b2de2-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="25c85-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="25c85-119">Request headers</span></span>
-|<span data-ttu-id="25c85-120">标头</span><span class="sxs-lookup"><span data-stu-id="25c85-120">Header</span></span>       |<span data-ttu-id="25c85-121">值</span><span class="sxs-lookup"><span data-stu-id="25c85-121">Value</span></span>                    |
+## <a name="request-headers"></a><span data-ttu-id="b2de2-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="b2de2-119">Request headers</span></span>
+|<span data-ttu-id="b2de2-120">标头</span><span class="sxs-lookup"><span data-stu-id="b2de2-120">Header</span></span>       |<span data-ttu-id="b2de2-121">值</span><span class="sxs-lookup"><span data-stu-id="b2de2-121">Value</span></span>                    |
 |-------------|-------------------------|
-|<span data-ttu-id="25c85-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="25c85-122">Authorization</span></span>|<span data-ttu-id="25c85-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="25c85-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="25c85-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="25c85-125">Content-Type</span></span> |<span data-ttu-id="25c85-126">application/json</span><span class="sxs-lookup"><span data-stu-id="25c85-126">application/json</span></span>         |
-|<span data-ttu-id="25c85-127">If-Match</span><span class="sxs-lookup"><span data-stu-id="25c85-127">If-Match</span></span>     |<span data-ttu-id="25c85-128">必需。</span><span class="sxs-lookup"><span data-stu-id="25c85-128">Required.</span></span> <span data-ttu-id="25c85-129">如果包含此请求标头, 且提供的 eTag 与**货币**中的当前标记不匹配, 则不会更新**货币**。</span><span class="sxs-lookup"><span data-stu-id="25c85-129">When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be updated.</span></span> |
+|<span data-ttu-id="b2de2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2de2-122">Authorization</span></span>|<span data-ttu-id="b2de2-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b2de2-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b2de2-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b2de2-125">Content-Type</span></span> |<span data-ttu-id="b2de2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b2de2-126">application/json</span></span>         |
+|<span data-ttu-id="b2de2-127">If-Match</span><span class="sxs-lookup"><span data-stu-id="b2de2-127">If-Match</span></span>     |<span data-ttu-id="b2de2-128">必需。</span><span class="sxs-lookup"><span data-stu-id="b2de2-128">Required.</span></span> <span data-ttu-id="b2de2-129">如果包含此请求标头, 且提供的 eTag 与**货币**中的当前标记不匹配, 则不会更新**货币**。</span><span class="sxs-lookup"><span data-stu-id="b2de2-129">When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be updated.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="25c85-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="25c85-130">Request body</span></span>
-<span data-ttu-id="25c85-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="25c85-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b2de2-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="b2de2-130">Request body</span></span>
+<span data-ttu-id="b2de2-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="b2de2-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="25c85-134">响应</span><span class="sxs-lookup"><span data-stu-id="25c85-134">Response</span></span>
-<span data-ttu-id="25c85-135">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的**货币**对象。</span><span class="sxs-lookup"><span data-stu-id="25c85-135">If successful, this method returns a `200 OK` response code and an updated **currencies** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b2de2-134">响应</span><span class="sxs-lookup"><span data-stu-id="b2de2-134">Response</span></span>
+<span data-ttu-id="b2de2-135">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的**货币**对象。</span><span class="sxs-lookup"><span data-stu-id="b2de2-135">If successful, this method returns a `200 OK` response code and an updated **currencies** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="25c85-136">示例</span><span class="sxs-lookup"><span data-stu-id="25c85-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b2de2-136">示例</span><span class="sxs-lookup"><span data-stu-id="b2de2-136">Example</span></span>
 
-<span data-ttu-id="25c85-137">**请求**</span><span class="sxs-lookup"><span data-stu-id="25c85-137">**Request**</span></span>
+<span data-ttu-id="b2de2-137">**请求**</span><span class="sxs-lookup"><span data-stu-id="b2de2-137">**Request**</span></span>
 
-<span data-ttu-id="25c85-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="25c85-138">Here is an example of the request.</span></span>
+<span data-ttu-id="b2de2-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b2de2-138">Here is an example of the request.</span></span>
 ```json
 PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
 Content-type: application/json
@@ -60,11 +61,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="25c85-139">**响应**</span><span class="sxs-lookup"><span data-stu-id="25c85-139">**Response**</span></span>
+<span data-ttu-id="b2de2-139">**响应**</span><span class="sxs-lookup"><span data-stu-id="b2de2-139">**Response**</span></span>
 
-<span data-ttu-id="25c85-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="25c85-140">Here is an example of the response.</span></span> 
+<span data-ttu-id="b2de2-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b2de2-140">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="25c85-141">**注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="25c85-141">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="25c85-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="25c85-142">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b2de2-141">**注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b2de2-141">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b2de2-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b2de2-142">All the properties will be returned from an actual call.</span></span>
 
 ```json
 HTTP/1.1 200 OK

@@ -4,31 +4,32 @@ description: 创建新的 androidManagedStoreAppConfigurationSchema 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1eccfe840161e891102710be77c95364c94b9ac
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 8ef1ebcfdb92700b1260433b7085ff9db2a14c00
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952532"
 ---
-# <a name="create-androidmanagedstoreappconfigurationschema"></a><span data-ttu-id="255a1-103">创建 androidManagedStoreAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="255a1-103">Create androidManagedStoreAppConfigurationSchema</span></span>
+# <a name="create-androidmanagedstoreappconfigurationschema"></a><span data-ttu-id="2c3a0-103">创建 androidManagedStoreAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="2c3a0-103">Create androidManagedStoreAppConfigurationSchema</span></span>
 
-> <span data-ttu-id="255a1-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="255a1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2c3a0-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="255a1-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="255a1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2c3a0-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="255a1-106">创建新的[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)对象。</span><span class="sxs-lookup"><span data-stu-id="255a1-106">Create a new [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
+<span data-ttu-id="2c3a0-106">创建新的[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-106">Create a new [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="255a1-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="255a1-107">Prerequisites</span></span>
-<span data-ttu-id="255a1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="255a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2c3a0-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="2c3a0-107">Prerequisites</span></span>
+<span data-ttu-id="2c3a0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="255a1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="255a1-110">Permission type</span></span>|<span data-ttu-id="255a1-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="255a1-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2c3a0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2c3a0-110">Permission type</span></span>|<span data-ttu-id="2c3a0-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2c3a0-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="255a1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="255a1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="255a1-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="255a1-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="255a1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="255a1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="255a1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="255a1-115">Not supported.</span></span>|
-|<span data-ttu-id="255a1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="255a1-116">Application</span></span>|<span data-ttu-id="255a1-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="255a1-117">Not supported.</span></span>|
+|<span data-ttu-id="2c3a0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2c3a0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2c3a0-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2c3a0-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="2c3a0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2c3a0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2c3a0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-115">Not supported.</span></span>|
+|<span data-ttu-id="2c3a0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2c3a0-116">Application</span></span>|<span data-ttu-id="2c3a0-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="255a1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="255a1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c3a0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2c3a0-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,33 +38,33 @@ ms.locfileid: "35705196"
 POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="255a1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="255a1-119">Request headers</span></span>
-|<span data-ttu-id="255a1-120">标头</span><span class="sxs-lookup"><span data-stu-id="255a1-120">Header</span></span>|<span data-ttu-id="255a1-121">值</span><span class="sxs-lookup"><span data-stu-id="255a1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c3a0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2c3a0-119">Request headers</span></span>
+|<span data-ttu-id="2c3a0-120">标头</span><span class="sxs-lookup"><span data-stu-id="2c3a0-120">Header</span></span>|<span data-ttu-id="2c3a0-121">值</span><span class="sxs-lookup"><span data-stu-id="2c3a0-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="255a1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="255a1-122">Authorization</span></span>|<span data-ttu-id="255a1-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="255a1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="255a1-124">接受</span><span class="sxs-lookup"><span data-stu-id="255a1-124">Accept</span></span>|<span data-ttu-id="255a1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="255a1-125">application/json</span></span>|
+|<span data-ttu-id="2c3a0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2c3a0-122">Authorization</span></span>|<span data-ttu-id="2c3a0-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2c3a0-124">接受</span><span class="sxs-lookup"><span data-stu-id="2c3a0-124">Accept</span></span>|<span data-ttu-id="2c3a0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2c3a0-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="255a1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="255a1-126">Request body</span></span>
-<span data-ttu-id="255a1-127">在请求正文中, 提供 androidManagedStoreAppConfigurationSchema 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="255a1-127">In the request body, supply a JSON representation for the androidManagedStoreAppConfigurationSchema object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c3a0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2c3a0-126">Request body</span></span>
+<span data-ttu-id="2c3a0-127">在请求正文中, 提供 androidManagedStoreAppConfigurationSchema 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-127">In the request body, supply a JSON representation for the androidManagedStoreAppConfigurationSchema object.</span></span>
 
-<span data-ttu-id="255a1-128">下表显示创建 androidManagedStoreAppConfigurationSchema 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="255a1-128">The following table shows the properties that are required when you create the androidManagedStoreAppConfigurationSchema.</span></span>
+<span data-ttu-id="2c3a0-128">下表显示创建 androidManagedStoreAppConfigurationSchema 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-128">The following table shows the properties that are required when you create the androidManagedStoreAppConfigurationSchema.</span></span>
 
-|<span data-ttu-id="255a1-129">属性</span><span class="sxs-lookup"><span data-stu-id="255a1-129">Property</span></span>|<span data-ttu-id="255a1-130">类型</span><span class="sxs-lookup"><span data-stu-id="255a1-130">Type</span></span>|<span data-ttu-id="255a1-131">说明</span><span class="sxs-lookup"><span data-stu-id="255a1-131">Description</span></span>|
+|<span data-ttu-id="2c3a0-129">属性</span><span class="sxs-lookup"><span data-stu-id="2c3a0-129">Property</span></span>|<span data-ttu-id="2c3a0-130">类型</span><span class="sxs-lookup"><span data-stu-id="2c3a0-130">Type</span></span>|<span data-ttu-id="2c3a0-131">说明</span><span class="sxs-lookup"><span data-stu-id="2c3a0-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="255a1-132">id</span><span class="sxs-lookup"><span data-stu-id="255a1-132">id</span></span>|<span data-ttu-id="255a1-133">String</span><span class="sxs-lookup"><span data-stu-id="255a1-133">String</span></span>|<span data-ttu-id="255a1-134">架构对应的应用程序的 Android 包名称的实体密钥</span><span class="sxs-lookup"><span data-stu-id="255a1-134">Key of the entity the Android package name for the application the schema corresponds to</span></span>|
-|<span data-ttu-id="255a1-135">exampleJson</span><span class="sxs-lookup"><span data-stu-id="255a1-135">exampleJson</span></span>|<span data-ttu-id="255a1-136">Binary</span><span class="sxs-lookup"><span data-stu-id="255a1-136">Binary</span></span>|<span data-ttu-id="255a1-137">包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置</span><span class="sxs-lookup"><span data-stu-id="255a1-137">UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app</span></span>|
-|<span data-ttu-id="255a1-138">schemaItems</span><span class="sxs-lookup"><span data-stu-id="255a1-138">schemaItems</span></span>|<span data-ttu-id="255a1-139">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="255a1-139">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="255a1-140">项集合, 每个项表示架构中的命名配置选项。</span><span class="sxs-lookup"><span data-stu-id="255a1-140">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="255a1-141">它仅包含根级别的配置。</span><span class="sxs-lookup"><span data-stu-id="255a1-141">It only contains the root-level configuration.</span></span>|
-|<span data-ttu-id="255a1-142">nestedSchemaItems</span><span class="sxs-lookup"><span data-stu-id="255a1-142">nestedSchemaItems</span></span>|<span data-ttu-id="255a1-143">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="255a1-143">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="255a1-144">项集合, 每个项表示架构中的命名配置选项。</span><span class="sxs-lookup"><span data-stu-id="255a1-144">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="255a1-145">它包含所有配置的简单列表。</span><span class="sxs-lookup"><span data-stu-id="255a1-145">It contains a flat list of all configuration.</span></span>|
+|<span data-ttu-id="2c3a0-132">id</span><span class="sxs-lookup"><span data-stu-id="2c3a0-132">id</span></span>|<span data-ttu-id="2c3a0-133">String</span><span class="sxs-lookup"><span data-stu-id="2c3a0-133">String</span></span>|<span data-ttu-id="2c3a0-134">架构对应的应用程序的 Android 包名称的实体密钥</span><span class="sxs-lookup"><span data-stu-id="2c3a0-134">Key of the entity the Android package name for the application the schema corresponds to</span></span>|
+|<span data-ttu-id="2c3a0-135">exampleJson</span><span class="sxs-lookup"><span data-stu-id="2c3a0-135">exampleJson</span></span>|<span data-ttu-id="2c3a0-136">Binary</span><span class="sxs-lookup"><span data-stu-id="2c3a0-136">Binary</span></span>|<span data-ttu-id="2c3a0-137">包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置</span><span class="sxs-lookup"><span data-stu-id="2c3a0-137">UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app</span></span>|
+|<span data-ttu-id="2c3a0-138">schemaItems</span><span class="sxs-lookup"><span data-stu-id="2c3a0-138">schemaItems</span></span>|<span data-ttu-id="2c3a0-139">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="2c3a0-139">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="2c3a0-140">项集合, 每个项表示架构中的命名配置选项。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-140">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="2c3a0-141">它仅包含根级别的配置。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-141">It only contains the root-level configuration.</span></span>|
+|<span data-ttu-id="2c3a0-142">nestedSchemaItems</span><span class="sxs-lookup"><span data-stu-id="2c3a0-142">nestedSchemaItems</span></span>|<span data-ttu-id="2c3a0-143">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="2c3a0-143">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="2c3a0-144">项集合, 每个项表示架构中的命名配置选项。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-144">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="2c3a0-145">它包含所有配置的简单列表。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-145">It contains a flat list of all configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="255a1-146">响应</span><span class="sxs-lookup"><span data-stu-id="255a1-146">Response</span></span>
-<span data-ttu-id="255a1-147">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)对象。</span><span class="sxs-lookup"><span data-stu-id="255a1-147">If successful, this method returns a `201 Created` response code and a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2c3a0-146">响应</span><span class="sxs-lookup"><span data-stu-id="2c3a0-146">Response</span></span>
+<span data-ttu-id="2c3a0-147">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-147">If successful, this method returns a `201 Created` response code and a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="255a1-148">示例</span><span class="sxs-lookup"><span data-stu-id="255a1-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2c3a0-148">示例</span><span class="sxs-lookup"><span data-stu-id="2c3a0-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="255a1-149">请求</span><span class="sxs-lookup"><span data-stu-id="255a1-149">Request</span></span>
-<span data-ttu-id="255a1-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="255a1-150">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2c3a0-149">请求</span><span class="sxs-lookup"><span data-stu-id="2c3a0-149">Request</span></span>
+<span data-ttu-id="2c3a0-150">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-150">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas
 Content-type: application/json
@@ -123,8 +124,8 @@ Content-length: 1585
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="255a1-151">响应</span><span class="sxs-lookup"><span data-stu-id="255a1-151">Response</span></span>
-<span data-ttu-id="255a1-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="255a1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2c3a0-151">响应</span><span class="sxs-lookup"><span data-stu-id="2c3a0-151">Response</span></span>
+<span data-ttu-id="2c3a0-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2c3a0-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

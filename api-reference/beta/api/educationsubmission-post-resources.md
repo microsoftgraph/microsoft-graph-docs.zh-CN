@@ -4,50 +4,51 @@ description: '将资源添加到 "资源" 列表中。 此操作只能由分配�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8eb183d13832767a63800cc4957769eb6062d516
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 36b7f0432577dacb716c0eaa2ee232cc3e49a40e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322871"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955066"
 ---
-# <a name="create-educationsubmissionresource"></a><span data-ttu-id="759f0-107">创建 educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="759f0-107">Create educationSubmissionResource</span></span>
+# <a name="create-educationsubmissionresource"></a><span data-ttu-id="9c431-107">创建 educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="9c431-107">Create educationSubmissionResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="759f0-108">将资源添加到 "资源" 列表中。</span><span class="sxs-lookup"><span data-stu-id="759f0-108">Adds a resource to the resources list.</span></span> <span data-ttu-id="759f0-109">此操作只能由分配了此提交的学生完成。</span><span class="sxs-lookup"><span data-stu-id="759f0-109">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="759f0-110">如果未将**allowStudentsToAddResources**标志设置为 true, 则此操作将不会成功。</span><span class="sxs-lookup"><span data-stu-id="759f0-110">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="759f0-111">如果调用方要创建新的基于文件的资源, 则必须将该文件上载到与提交相关联的 "资源" 文件夹中。</span><span class="sxs-lookup"><span data-stu-id="759f0-111">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="759f0-112">如果文件不存在或不在该文件夹中, 则 POST 请求将失败。</span><span class="sxs-lookup"><span data-stu-id="759f0-112">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
+<span data-ttu-id="9c431-108">将资源添加到 "资源" 列表中。</span><span class="sxs-lookup"><span data-stu-id="9c431-108">Adds a resource to the resources list.</span></span> <span data-ttu-id="9c431-109">此操作只能由分配了此提交的学生完成。</span><span class="sxs-lookup"><span data-stu-id="9c431-109">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="9c431-110">如果未将**allowStudentsToAddResources**标志设置为 true, 则此操作将不会成功。</span><span class="sxs-lookup"><span data-stu-id="9c431-110">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="9c431-111">如果调用方要创建新的基于文件的资源, 则必须将该文件上载到与提交相关联的 "资源" 文件夹中。</span><span class="sxs-lookup"><span data-stu-id="9c431-111">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="9c431-112">如果文件不存在或不在该文件夹中, 则 POST 请求将失败。</span><span class="sxs-lookup"><span data-stu-id="9c431-112">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="759f0-113">权限</span><span class="sxs-lookup"><span data-stu-id="759f0-113">Permissions</span></span>
-<span data-ttu-id="759f0-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="759f0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c431-113">权限</span><span class="sxs-lookup"><span data-stu-id="9c431-113">Permissions</span></span>
+<span data-ttu-id="9c431-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9c431-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="759f0-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="759f0-116">Permission type</span></span>      | <span data-ttu-id="759f0-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="759f0-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c431-116">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c431-116">Permission type</span></span>      | <span data-ttu-id="9c431-117">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9c431-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="759f0-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="759f0-118">Delegated (work or school account)</span></span> |  <span data-ttu-id="759f0-119">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="759f0-119">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="759f0-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="759f0-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="759f0-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="759f0-121">Not supported.</span></span>  |
-|<span data-ttu-id="759f0-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="759f0-122">Application</span></span> | <span data-ttu-id="759f0-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="759f0-123">Not supported.</span></span> | 
+|<span data-ttu-id="9c431-118">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c431-118">Delegated (work or school account)</span></span> |  <span data-ttu-id="9c431-119">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="9c431-119">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="9c431-120">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c431-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c431-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c431-121">Not supported.</span></span>  |
+|<span data-ttu-id="9c431-122">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c431-122">Application</span></span> | <span data-ttu-id="9c431-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="9c431-123">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="759f0-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="759f0-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c431-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c431-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="759f0-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="759f0-125">Request headers</span></span>
-| <span data-ttu-id="759f0-126">标头</span><span class="sxs-lookup"><span data-stu-id="759f0-126">Header</span></span>       | <span data-ttu-id="759f0-127">值</span><span class="sxs-lookup"><span data-stu-id="759f0-127">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="9c431-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="9c431-125">Request headers</span></span>
+| <span data-ttu-id="9c431-126">标头</span><span class="sxs-lookup"><span data-stu-id="9c431-126">Header</span></span>       | <span data-ttu-id="9c431-127">值</span><span class="sxs-lookup"><span data-stu-id="9c431-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="759f0-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="759f0-128">Authorization</span></span>  | <span data-ttu-id="759f0-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="759f0-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="759f0-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="759f0-131">Content-Type</span></span>  | <span data-ttu-id="759f0-132">application/json</span><span class="sxs-lookup"><span data-stu-id="759f0-132">application/json</span></span>  |
+| <span data-ttu-id="9c431-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c431-128">Authorization</span></span>  | <span data-ttu-id="9c431-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9c431-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9c431-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9c431-131">Content-Type</span></span>  | <span data-ttu-id="9c431-132">application/json</span><span class="sxs-lookup"><span data-stu-id="9c431-132">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="759f0-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="759f0-133">Request body</span></span>
-<span data-ttu-id="759f0-134">在请求正文中, 提供[educationSubmissionResource](../resources/educationsubmissionresource.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="759f0-134">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9c431-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="9c431-133">Request body</span></span>
+<span data-ttu-id="9c431-134">在请求正文中, 提供[educationSubmissionResource](../resources/educationsubmissionresource.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9c431-134">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="759f0-135">响应</span><span class="sxs-lookup"><span data-stu-id="759f0-135">Response</span></span>
-<span data-ttu-id="759f0-136">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。</span><span class="sxs-lookup"><span data-stu-id="759f0-136">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9c431-135">响应</span><span class="sxs-lookup"><span data-stu-id="9c431-135">Response</span></span>
+<span data-ttu-id="9c431-136">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9c431-136">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="759f0-137">示例</span><span class="sxs-lookup"><span data-stu-id="759f0-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="759f0-138">请求</span><span class="sxs-lookup"><span data-stu-id="759f0-138">Request</span></span>
-<span data-ttu-id="759f0-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="759f0-139">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9c431-137">示例</span><span class="sxs-lookup"><span data-stu-id="9c431-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9c431-138">请求</span><span class="sxs-lookup"><span data-stu-id="9c431-138">Request</span></span>
+<span data-ttu-id="9c431-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9c431-139">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationsubmissionresource_from_educationsubmission"
@@ -87,10 +88,10 @@ Content-length: 1097
 
 ```
 
-##### <a name="response"></a><span data-ttu-id="759f0-140">响应</span><span class="sxs-lookup"><span data-stu-id="759f0-140">Response</span></span>
-<span data-ttu-id="759f0-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="759f0-141">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9c431-140">响应</span><span class="sxs-lookup"><span data-stu-id="9c431-140">Response</span></span>
+<span data-ttu-id="9c431-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9c431-141">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="759f0-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="759f0-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9c431-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9c431-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
