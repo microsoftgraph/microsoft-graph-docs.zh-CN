@@ -4,12 +4,13 @@ description: 删除 appLogCollectionRequest。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12a8c59a5ec7434afadcb044bd158443ceb7e886
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0b55ff9f4333e5065f053968b37a0207605d61d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981785"
 ---
 # <a name="delete-applogcollectionrequest"></a>删除 appLogCollectionRequest
 

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 下面是 columnDefinition 资源的 JSON 表示形式。
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: c5cce4c3db7b66ff46a6bab0bbfaacd0ecc9a6cc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7f60d33f8fbfe76c9dfd0ca02c98df96ca6ab380
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341385"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973291"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
@@ -59,7 +61,7 @@ ms.locfileid: "33341385"
 以下属性表示列存储的数据类型以及该数据的其他设置。
 与类型相关的属性 (boolean、计算、choice、currency、dateTime、lookup、number、personOrGroup、text) 是相互排斥的--一个列只能有一个指定的属性。
 
-| 属性名称           | 类型    | 说明
+| 属性名           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
 | **说明**         | string  | 面向用户的列描述。

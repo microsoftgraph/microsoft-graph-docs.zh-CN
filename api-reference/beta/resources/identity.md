@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 身份资源表示主角的身份。
 ms.date: 09/14/2017
-title: 身份
+title: 标识
 localization_priority: Normal
-ms.openlocfilehash: a2ba76d5bac372be0a40001028dfb54e690a14fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: cb05aa4a8ddf9d4e641bcebdff3f5984ddd34d61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333667"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971821"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 

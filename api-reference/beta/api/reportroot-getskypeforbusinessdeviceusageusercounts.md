@@ -4,12 +4,13 @@ description: 获取使用情况趋势，即组织中有多少用户已使用 Sky
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 83f9dc0fe5c9350d31213a07925900d0cce9495a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 088f76656c993b8a26e6d023a38a92759d83f6b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988081"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 

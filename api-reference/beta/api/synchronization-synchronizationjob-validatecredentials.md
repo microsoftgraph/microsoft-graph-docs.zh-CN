@@ -2,14 +2,15 @@
 title: 'synchronizationJob: validateCredentials'
 description: 验证凭据在租户中是否有效。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ee711e1ef6a74c667ac2f6c72bd45c9ac2e9eec4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: c12f2d810841fb3f168e1196d466f6162ad4e1a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869231"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982697"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 

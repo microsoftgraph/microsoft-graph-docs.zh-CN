@@ -4,12 +4,13 @@ description: 可以基于可用的 directorySettingTemplates 创建目录设置,
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eccdb3b19acb286a8b67393f9a7b441b108627c
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: fdef82ef7585d3b59510b491f6b10396afbf6763
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657880"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973823"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting 资源类型
 
@@ -34,7 +35,7 @@ ms.locfileid: "34657880"
 |:---------------|:--------|:----------|
 |displayName|string|来自关联模板的此组设置的显示名称。 只读。|
 |id|string| 这些设置的唯一标识符。 只读。|
-|templateId|字符串| 用于创建此组设置的模板的唯一标识符。 只读。|
+|templateId|string| 用于创建此组设置的模板的唯一标识符。 只读。|
 |values|[settingValue](settingvalue.md)集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。|
 
 ## <a name="relationships"></a>关系

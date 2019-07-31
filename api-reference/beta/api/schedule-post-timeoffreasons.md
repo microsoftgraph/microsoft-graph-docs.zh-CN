@@ -4,12 +4,13 @@ description: 创建新的 timeOffReason。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e616884d4a222bb771857acf305a3cf2bdba028
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ccfd3dd5c45d95cdf0187c5c2d1532538976ac5f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982929"
 ---
 # <a name="create-timeoffreason"></a>创建 timeOffReason
 

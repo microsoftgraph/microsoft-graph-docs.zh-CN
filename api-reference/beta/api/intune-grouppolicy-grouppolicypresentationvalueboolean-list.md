@@ -4,12 +4,13 @@ description: 列出 groupPolicyPresentationValueBoolean 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d28ddcf77bd9f36d0164e6be162108e110f073e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 85659e3307b537e634d07fc18e233045a0d3c397
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989229"
 ---
 # <a name="list-grouppolicypresentationvaluebooleans"></a>列出 groupPolicyPresentationValueBooleans
 

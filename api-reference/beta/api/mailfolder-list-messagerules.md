@@ -4,12 +4,13 @@ description: 获取为用户收件箱定义的所有 messageRule 对象。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bb14e7574de2ecb8e7e010cbee7983962d0a6f95
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c6e800ab7a42d38b397cfcfd4426e59f4b9ae80b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984062"
 ---
 # <a name="list-rules"></a>列出规则
 

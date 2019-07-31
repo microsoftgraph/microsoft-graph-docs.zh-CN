@@ -4,12 +4,13 @@ description: 在**assignTo**属性中使用。 此超类是抽象的, 无法
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 2f7c9c6dcf634ceb030a2958d7cc4761428b5af6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1b47a9de683c62986054e6ed2b5926af03bbd4ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340603"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972780"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>educationAssignmentRecipient 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "33340603"
 在**assignTo**属性中使用。 此超类是抽象的, 不能将赋值中的属性设置为此值。 此超类别表示在发布工作分配时应将分配分配给谁。
 
 
-[educationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。
+[EducationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。
 
 ## <a name="properties"></a>属性
 无。

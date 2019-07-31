@@ -2,12 +2,15 @@
 title: 列出 privilegedRoleAssignments
 description: 检索 privilegedRoleAssignment 对象的列表, 这些对象对应于组织的所有角色分配。
 localization_priority: Normal
-ms.openlocfilehash: ad6b122e792d16df67dd4225515f3de665ba3338
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4a55d33bf6c9bcecc8a1c643176a630648f7e379
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875727"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983377"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 

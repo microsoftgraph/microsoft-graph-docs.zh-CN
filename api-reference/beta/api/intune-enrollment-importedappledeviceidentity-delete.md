@@ -4,12 +4,13 @@ description: 删除 importedAppleDeviceIdentity。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 107bcbec700933979c407a19dea409279292d321
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b5fbbd670b52135d22ed56f259abfca1b07602b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986937"
 ---
 # <a name="delete-importedappledeviceidentity"></a>删除 importedAppleDeviceIdentity
 

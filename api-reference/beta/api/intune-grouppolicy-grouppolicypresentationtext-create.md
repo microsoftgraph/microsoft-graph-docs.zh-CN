@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationText 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fda32f3bcff44ac3c5f3f54cfa4b0d49df8348c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 60518f0f67a85db6d14d1500ff7f6769c7f6ed2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964540"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980784"
 ---
 # <a name="create-grouppolicypresentationtext"></a>创建 groupPolicyPresentationText
 

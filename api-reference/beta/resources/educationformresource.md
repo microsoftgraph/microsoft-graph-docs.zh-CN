@@ -1,21 +1,22 @@
 ---
 title: educationFormResource 资源类型
-description: educationResource 的子类。 此资源是窗体。
+description: EducationResource 的子类。 此资源是窗体。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3f2747d94c80732091db06294b26546afc567e03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d2e10ea6db0236b7deff3581c2e1b4f97c589045
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972717"
 ---
 # <a name="educationformresource-resource-type"></a>educationFormResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationResource](educationresource.md)的子类。 此资源是窗体。
+[EducationResource](educationresource.md)的子类。 此资源是窗体。
 
 
 ## <a name="properties"></a>属性

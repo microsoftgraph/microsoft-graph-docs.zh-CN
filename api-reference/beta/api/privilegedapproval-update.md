@@ -2,12 +2,15 @@
 title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 240036a9ee4df57745ca1a613511b2141eec6796
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6103e01ea9832bd7858215576eaeb4319514d6be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332070"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978803"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -20,7 +23,7 @@ ms.locfileid: "33332070"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、directory.accessasuser.all    |
+|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、Directory.accessasuser.all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 

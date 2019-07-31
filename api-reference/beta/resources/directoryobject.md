@@ -4,12 +4,13 @@ description: 表示 Azure Active Directory 对象。**directoryObject** 类型�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: edf28af539673064b5afe8ce75c726bb3799b2c4
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 5bc558f92b4c812f95f7a859dbfea6a43a2fe33b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973836"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 

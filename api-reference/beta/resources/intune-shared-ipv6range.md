@@ -3,13 +3,14 @@ title: iPv6Range 资源类型
 description: IPv6 范围定义。
 author: rolyon
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: Intune
-ms.openlocfilehash: 24ee76f226e54e2f04da2f3cf4ebf47e6e4fa537
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1f2b46cea71d097955ca9e78cc74f6f0cddd1002
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995978"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967371"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 

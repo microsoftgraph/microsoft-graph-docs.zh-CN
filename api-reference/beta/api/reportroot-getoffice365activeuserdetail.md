@@ -4,12 +4,13 @@ description: 获取 Office 365 活跃用户的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e41c67aa2b21a97b96fe42132bb65491220d9b6c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 04ec9ec4d66e3b1a486b00aba9c2121d2f733e23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988235"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot：getOffice365ActiveUserDetail
 

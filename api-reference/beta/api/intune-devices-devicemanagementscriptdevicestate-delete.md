@@ -4,12 +4,13 @@ description: 删除 deviceManagementScriptDeviceState。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a1496291c7162c8db5610440b5e6117bad1f39c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1ce2358017d34d78449623db558d2c2758a5ad9a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958912"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981587"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>删除 deviceManagementScriptDeviceState
 

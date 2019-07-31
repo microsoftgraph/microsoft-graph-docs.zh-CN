@@ -2,14 +2,15 @@
 title: 获取 synchronizationSchema
 description: 检索给定同步作业或模板的架构。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 779a4ccc2438c4be5343074afe7ea8e10d54f5e6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 55f6b6935808cd96bf9eebf8e2662d0649bbb66c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977665"
 ---
 # <a name="get-synchronizationschema"></a>获取 synchronizationSchema
 

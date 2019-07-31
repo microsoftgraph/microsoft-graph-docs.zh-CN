@@ -4,12 +4,13 @@ description: 包含要同步的实体的列表及其自定义项 (如果有)。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 0d1a886557e37bb19b23c5e0c1d74b937112cc58
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d31be9bd808f411c1e208ab953784fdefd65fdda
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334102"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972437"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>educationSynchronizationCustomizations 资源类型
 

@@ -4,12 +4,13 @@ description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e0df30888c904f2605449b37eeb6ba6cd56c9862
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ee383b480d36246f03bb999e1b98bc2c7becbdf9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983535"
 ---
 # <a name="participant-invite"></a>参与者: 邀请
 

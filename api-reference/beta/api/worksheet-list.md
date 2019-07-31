@@ -4,12 +4,13 @@ description: 检索 worksheet 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 23b56e9094dac3e6bed65d35e122552370364f3b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a8dc4a0e10eceb23571646fe5281420a569b60a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866186"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987234"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 

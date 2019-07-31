@@ -4,12 +4,13 @@ description: 将范围单元格合并到工作表的一个区域中。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 11bc82ad632a26b5b92672c51a4b7ae20a344146
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8bada1d0b755b48d64e1c0c9cb9b5528d570e424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874734"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988459"
 ---
 # <a name="range-merge"></a>Range: merge
 

@@ -4,12 +4,13 @@ description: 创建新的 detectedApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27466c770f360faff1643343237d02445b6e6d5c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4b483ce89b4d187d178018db12b99064230e4d8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986104"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
 

@@ -4,12 +4,13 @@ description: 使用此 API 创建新的 CalendarGroup。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 477576ab5c944b35ec9e554f8d1bd0da850d380d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 802c76350af0e8e8a1811b3ef992cdf88bcda47d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867011"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987514"
 ---
 # <a name="create-calendargroup"></a>创建 CalendarGroup
 

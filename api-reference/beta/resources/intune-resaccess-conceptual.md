@@ -4,12 +4,13 @@ description: 列出管理租户组织的资源访问证书的适用于 Intune �
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ed680af82eb041e93cf73cb6ed3c390b989d8bc3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: d566e570273cfecf213462ab4bf9cea5b76086a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996258"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967530"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>在 Intune 中管理资源访问证书
 

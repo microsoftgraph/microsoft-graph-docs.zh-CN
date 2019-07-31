@@ -4,12 +4,13 @@ description: 在指定的 outlookTaskGroup 下创建 Outlook 任务文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 59f6b6b2d12a68ded2cd22c8f859686f7b2fef20
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 6290b055322c1264117e7aae75573774b4831e72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337920"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983696"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 

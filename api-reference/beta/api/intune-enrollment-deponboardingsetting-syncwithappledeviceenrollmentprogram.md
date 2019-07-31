@@ -4,12 +4,13 @@ description: 在 Apple 设备注册计划和 Intune 之间进行同步
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3ab3225fa30431b72b38f51c0d2cc5354d38fc5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 990494bf52a6d6974a86af7c3a9f643c8df4c760
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985264"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>syncWithAppleDeviceEnrollmentProgram 操作
 

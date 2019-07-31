@@ -2,12 +2,15 @@
 title: List oauth2PermissionGrants
 description: 检索 oauth2PermissionGrant 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: b6ec733c73d281e64978b11ebdf3c43d9eb94378
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5577560aa9ddce4427ee6d824049b3e8084cd9f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988949"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 

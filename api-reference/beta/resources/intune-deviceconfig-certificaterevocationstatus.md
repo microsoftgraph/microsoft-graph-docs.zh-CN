@@ -4,12 +4,13 @@ description: 证书吊销状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef7181707e6e80c9ad816f345f2a299dbce147e7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 9a1231373597096905d4e0614d4b1b6e2d70b6c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990111"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971009"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 枚举类型
 

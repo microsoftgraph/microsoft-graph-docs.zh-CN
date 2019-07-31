@@ -4,12 +4,13 @@ description: 删除 depEnrollmentProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9561ccab4edebec1b6718e448502dd1f21687c1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 05481b05f9a830e63ac69b9fda1f4c44250d799e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986923"
 ---
 # <a name="delete-depenrollmentprofile"></a>删除 depEnrollmentProfile
 

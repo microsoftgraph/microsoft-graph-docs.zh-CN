@@ -4,12 +4,13 @@ description: '检索与工作表关联的已命名项的列表。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: af0d3e5505f1f4eab2de3e08ec70cfe277d9be5f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ef4f432edd2446f05fe423abe337d7a88eb09ee5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987248"
 ---
 # <a name="list-names"></a>列出名称
 

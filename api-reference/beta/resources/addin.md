@@ -2,12 +2,15 @@
 title: addIn 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 777b9e2eac1ec4052fae30b13d09aaf91a808375
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 46daa8c4f1218b3de485643a47f7acbe881c661c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339121"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974524"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 

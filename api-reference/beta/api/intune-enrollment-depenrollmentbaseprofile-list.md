@@ -4,12 +4,13 @@ description: 列出 depEnrollmentBaseProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db9938b5b0d97b8866ef81c5dff10ed7c7d4bbff
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 13af9452b5872d6d88d04b04a854ea233e0bcc28
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979107"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986902"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>列出 depEnrollmentBaseProfiles
 

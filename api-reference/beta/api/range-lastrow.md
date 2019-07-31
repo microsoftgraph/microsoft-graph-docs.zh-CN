@@ -4,12 +4,13 @@ description: .
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 88ff25b7026431ffc2f430e44c25de93a348c2a1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7ed1241f949908a570b7c402a34ed93e0bd104dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874736"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988466"
 ---
 # <a name="range-lastrow"></a>Range:LastRow
 

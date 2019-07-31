@@ -2,12 +2,15 @@
 title: governanceRoleDefinition 资源类型
 description: 表示角色定义。 对于 Azure 资源, 它可以表示 Azure RBAC 角色, 如所有者、读者、参与者等。
 localization_priority: Normal
-ms.openlocfilehash: c760cc04b8dae39c06d0dbc2c4821401bd75a699
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 668f5430e8f098986b7d5398f32c9c35543a7e11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971849"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 

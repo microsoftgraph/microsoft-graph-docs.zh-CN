@@ -4,12 +4,13 @@ description: 工作日的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53e3829abf56318ff32e0f528d08325e910a01ce
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 4248f9ec0e773bab165788aa3cfe5adddb67ee41
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970974"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 

@@ -4,12 +4,13 @@ description: 检索按其与用户的相关性排序的人员对象列表, 该�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: d3b7f815fb75b17f88db234cae4fdea626d34bfb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f2909dd1d14c7d10aa3aeba2ec9dd5c4224e0bd2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867134"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987577"
 ---
 # <a name="list-people"></a>列出人员
 

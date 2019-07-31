@@ -4,12 +4,13 @@ description: 将笔记本复制到目标文档库中的 "笔记本" 文件夹。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: c1e785a20c63bb8f83ffbdaa9f1653e1d20a824a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 38c8bc918b49ee6e4da5ed7ff921d1f661a0c4a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879156"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983748"
 ---
 # <a name="notebook-copynotebook"></a>笔记本: copyNotebook
 

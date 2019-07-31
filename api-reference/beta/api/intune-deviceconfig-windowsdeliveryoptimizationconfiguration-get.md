@@ -4,12 +4,13 @@ description: 读取 windowsDeliveryOptimizationConfiguration 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1db12c11724bda5d85a65cbbe3b6813102bb61a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 57dc5729f5c798897f093628e9c9036ba407835a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982240"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>获取 windowsDeliveryOptimizationConfiguration
 

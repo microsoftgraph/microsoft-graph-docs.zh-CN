@@ -4,12 +4,13 @@ description: 删除 tiIndicator 对象。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8ebe38fc4bb0727f53f4753d48885c98a47bca1c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e29999ad47c1252762fd4b1c9c243ba2f9f68d93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987927"
 ---
 # <a name="delete-threat-intelligence-indicator"></a>删除威胁情报指标
 

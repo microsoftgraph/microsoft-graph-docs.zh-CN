@@ -4,12 +4,13 @@ description: 获取组织中使用唯一设备的用户数。 报表会显示每
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ccf06410a83ee67f6cfb2725488facb5661c9020
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ad9831a80d7322b3eb40bed451c305c1fcecbc97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872379"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988041"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 

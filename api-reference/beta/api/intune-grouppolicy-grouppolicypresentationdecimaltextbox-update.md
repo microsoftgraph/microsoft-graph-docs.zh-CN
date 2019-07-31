@@ -4,12 +4,13 @@ description: 更新 groupPolicyPresentationDecimalTextBox 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8943bf99bed0fcc3e29e3f681929f54b0d753a74
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f3c8d1ef03e4da38bcad2b838aa9279082565e5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985092"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989565"
 ---
 # <a name="update-grouppolicypresentationdecimaltextbox"></a>更新 groupPolicyPresentationDecimalTextBox
 

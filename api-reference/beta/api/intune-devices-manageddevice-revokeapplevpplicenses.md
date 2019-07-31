@@ -4,12 +4,13 @@ description: 吊销设备的所有 Apple Vpp 许可证
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b423bd3354df7c31f87079f0137d158f19b95af1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 816502539b0f2af92545a504e415aac3a0d0be2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958289"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985761"
 ---
 # <a name="revokeapplevpplicenses-action"></a>revokeAppleVppLicenses 操作
 

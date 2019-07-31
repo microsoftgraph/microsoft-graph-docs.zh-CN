@@ -4,12 +4,13 @@ description: 获取用户执行的 OneDrive 活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e5b91ea48c79ee7ea9a53bb5337a65d01703e8ed
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d081f2c1bfc2c790fa2ce6c57adbdc76e4ae02fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983241"
 ---
 # <a name="reportroot-getonedriveactivityuserdetail"></a>reportRoot: getOneDriveActivityUserDetail
 

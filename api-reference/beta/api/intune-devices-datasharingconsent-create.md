@@ -4,12 +4,13 @@ description: 创建新的 dataSharingConsent 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0748a104a9976f691f0f2f84e542ef37f57edbac
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b569e19baf9265be6d4937f6d6c025cb80730cb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959255"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986181"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 

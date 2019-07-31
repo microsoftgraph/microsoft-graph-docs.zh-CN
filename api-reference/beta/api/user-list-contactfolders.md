@@ -4,12 +4,13 @@ description: 获取登录用户的邮箱中的所有联系人文件夹。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9bbf27a992bcc52ca19d491e4a8888eb77a20b47
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3f86c35f673e26daf6d56c2425b46be64f34b90c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867424"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987670"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 

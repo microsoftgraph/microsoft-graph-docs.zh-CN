@@ -4,12 +4,13 @@ description: 检索与 plannerBucket 对象关联的 **plannerTask** 对象的�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 33af57fe8b56ab46edff757fda8bc2ac6d68ac8b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5c4f48f0426c4eca715fe9ba0f4ec2c16d6982f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876551"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988557"
 ---
 # <a name="list-tasks"></a>列出任务
 

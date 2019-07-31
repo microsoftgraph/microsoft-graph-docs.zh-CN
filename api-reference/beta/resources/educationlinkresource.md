@@ -1,21 +1,22 @@
 ---
 title: educationLinkResource 资源类型
-description: educationResource 的子类。 此资源是链接, 不具有与之关联的任何其他数据。
+description: EducationResource 的子类。 此资源是链接, 不具有与之关联的任何其他数据。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cd6e2d05fec5bebc00545947023a7ebc7c7150a1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 58558ba55846614ce0bf0d08614faab34e4989af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334231"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972654"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationResource](educationresource.md)的子类。 此资源是链接, 不具有与之关联的任何其他数据。
+[EducationResource](educationresource.md)的子类。 此资源是链接, 不具有与之关联的任何其他数据。
 
 
 ## <a name="properties"></a>属性

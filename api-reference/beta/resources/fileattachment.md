@@ -2,18 +2,21 @@
 title: fileAttachment 资源类型
 description: 附加到事件的文件 (如文本文件或 Word 文档)
 localization_priority: Normal
-ms.openlocfilehash: d4c33619c7521d980c1c6c51fd7158390aec47b1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 966de812c8b0507c3d757d42fba5624c0b82ce4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340220"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972038"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-附加到[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的文件 (如文本文件或 Word 文档)。 **contentBytes**属性包含文件的 base64 编码内容。  
+附加到[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的文件 (如文本文件或 Word 文档)。 **ContentBytes**属性包含文件的 base64 编码内容。  
 
 创建文件附件时，在请求正文中包括以下内容：
 

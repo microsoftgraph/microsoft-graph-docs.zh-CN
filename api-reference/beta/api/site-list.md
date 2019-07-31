@@ -3,12 +3,14 @@ title: 枚举网站
 description: 列出组织中符合提供的筛选条件和查询选项的可用 [sites] []。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 912266f0fda8104f538caa3cbc400a55b109572d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: bb8748b5f28b31bcb62207826c0ed7a02664e5dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869630"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982800"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 

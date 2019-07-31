@@ -4,12 +4,13 @@ description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fbb07f14f9cd43212109fdee45171ac09bbdd64d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333896"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972073"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -62,7 +63,7 @@ authorization: Bearer {access-token}
 { "persistChanges": true }
 ```
 
-如果 `persistChanges` 值设置为 `false`，返回非永久会话 ID。  
+当 `persistChanges` 值设置为 `false` 时，则返回非永久会话 id。  
 
 
 #### <a name="response"></a>响应
@@ -81,7 +82,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="usage"></a>用法 
 
-将前一个调用中返回的会话 ID  
+将前一个调用中返回的会话 ID   
 作为 `workbook-session-id` HTTP 标头的后续 API 请求中的标头进行传递。 
 
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +92,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->注意: 如果会话 id 已过期, 则会`404`在会话中返回 HTTP 错误代码。 在此类 scenarion 中, 可以选择创建新会话并继续。 另一种方法是定期刷新会话以保持会话处于活动状态。 通常情况下, 持续会话在大约7分钟的不活动状态后过期。 非永久会话在大约5分钟不活动后过期。 
+>注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。 在这种情况下，可以选择新建一个会话，然后继续。 另一种方法是定期刷新会话，以使会话处于活动状态。 通常，如果永久会话处于不活动状态的时间达到 7 分钟左右，则会话会过期。 如果非永久会话处于不活动状态的时间达到 5 分钟左右，则会过期。 
 
 ## <a name="common-excel-scenarios"></a>常见的 Excel 方案
 
@@ -165,7 +166,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-a-new-worksheet"></a>获取新工作表 
+#### <a name="get-a-new-worksheet"></a>获取新的工作表 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -191,7 +192,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-* * 注意: 还可以使用 ID 检索工作表。 但是, 当前 ID 包含`{`和 '} ' 字符, 这些字符需要经过 URL 编码, API 才能正常工作。 示例: 若要获取 ID 为的`{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`工作表, URL 会将路径中的 ID 编码为`/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。 
+**注意：也可以使用 ID 检索工作表。 但是，目前 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和“}”字符。 示例：若要获取 ID 为 `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` 的工作表，请将路径中的 ID 进行 URL 编码，编码为 `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。 
 
 #### <a name="delete-a-worksheet"></a>删除工作表
 
@@ -276,7 +277,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-* * 注意: 图表 ID 包含`{`和`}`字符 (例如: `{00000000-0008-0000-0100-000003000000}`), 需要 URL 编码才能使 API 正常工作。 示例: 为了获取 chart 对象, URL 将路径中的 ID 编码为`/charts/%7B00000000-0008-0000-0100-000003000000%7D`。 
+**注意：图表 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和 `}` 字符（例如 `{00000000-0008-0000-0100-000003000000}`）。 示例：若要获取图表对象，请将路径中的 ID 进行 URL 编码，编码为 `/charts/%7B00000000-0008-0000-0100-000003000000%7D`。 
 
 #### <a name="get-chart-image"></a>获取图表图像
 
@@ -853,7 +854,7 @@ HTTP code: 204 No Content
 
 ### <a name="range-operations"></a>区域操作
 
-#### <a name="get-range"></a>获取范围 
+#### <a name="get-range"></a>获取区域 
 
 请求
 <!-- { "blockType": "ignored" } -->
@@ -1209,7 +1210,7 @@ content-type: application/json
 
 ### <a name="unbounded-range"></a>无限区域
 
-#### <a name="read"></a>阅读
+#### <a name="read"></a>读取
 
 无限区域地址仅包含列或行标识符和未指定的行标识符或列标识符（分别），例如：
 

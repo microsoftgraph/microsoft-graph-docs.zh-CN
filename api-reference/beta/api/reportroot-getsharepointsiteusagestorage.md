@@ -4,12 +4,13 @@ description: 获取报表周期内分配和使用的存储趋势。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 109bfafa20da5f4564cb8e4b2f2c9cb6663c43a2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f0c46abc8f77e7129941083f1a6a3cd533b1ab16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988074"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 

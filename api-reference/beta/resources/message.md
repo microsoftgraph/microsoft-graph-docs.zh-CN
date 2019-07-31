@@ -4,12 +4,13 @@ description: 邮箱文件夹中的邮件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 0e2a63a8f252b20b42c51605cc9fc3ee787ff210
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+doc_type: resourcePageType
+ms.openlocfilehash: f6b79b397ac84154c6c89d46d792dbd00f2fb2a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34110638"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966739"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 

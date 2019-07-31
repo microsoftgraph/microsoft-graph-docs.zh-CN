@@ -4,12 +4,13 @@ description: 获取给定范围左侧的一定数量的列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7ef6a350e3da997f0f33423a779e6301023753d7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 136fc09801864abacd2eb7d5e1a4225e69b2418e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987332"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 

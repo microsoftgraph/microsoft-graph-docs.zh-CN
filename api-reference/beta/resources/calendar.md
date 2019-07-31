@@ -4,12 +4,13 @@ description: 日历即事件容器。 可以是用户的日历，也可以是 Of
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 169e400609e6e6405369b65693e9a17625111e12
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.openlocfilehash: 5f4acc0a2f0f12b4595cf3b61d36f777aec55867
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973462"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 

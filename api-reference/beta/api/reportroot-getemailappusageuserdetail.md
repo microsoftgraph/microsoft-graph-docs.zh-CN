@@ -4,12 +4,13 @@ description: 获取用户在不同电子邮件应用中执行的活动的详细�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 006e1fa06889e3cdc13e438f51fecadd923dc2f9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c1d59d3b122cc71327cb98c6186415b0b079dc41
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873850"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988417"
 ---
 # <a name="reportroot-getemailappusageuserdetail"></a>reportRoot: getEmailAppUsageUserDetail
 

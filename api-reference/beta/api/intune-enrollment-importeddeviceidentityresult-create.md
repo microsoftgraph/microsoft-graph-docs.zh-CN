@@ -4,12 +4,13 @@ description: 创建新的 importedDeviceIdentityResult 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ca322e7f9dcb96d451f05966c7c48f68d5b5395
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6e97af9dd013544cc30d9d980689bfa45eed7d33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981865"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986839"
 ---
 # <a name="create-importeddeviceidentityresult"></a>创建 importedDeviceIdentityResult
 

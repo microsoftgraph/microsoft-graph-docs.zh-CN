@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 865da0c1e1256e2ba2a25902e37a00da9081eedf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 96d44856ad52c983e61181fc64b93477fbe79e6c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543061"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972948"
 ---
 # <a name="employees-resource-type"></a>员工资源类型
 表示 Dynamics 365 Business Central 中的员工。
@@ -29,7 +30,7 @@ ms.locfileid: "32543061"
 | 属性           | 类型   |说明                                            |
 |:-------------------|:-------|:------------------------------------------------------|
 |id                  |GUID    |员工 ID。 不可编辑。                         |
-|数字              |string  |员工编号。 只读。                        |
+|number              |string  |员工编号。 只读。                        |
 |displayName         |string  |员工 givenName + 姓。 只读。           |
 |givenName           |string  |员工的名字。                        |
 |middleName          |string  |员工的中间名。                       |
@@ -42,7 +43,7 @@ ms.locfileid: "32543061"
 |personalEmail       |string  |指定员工的个人电子邮件地址。       |
 |employmentDate      |date    |指定员工开始为公司工作的日期。|
 |terminationDate     |date    |指定由于退休或开除而终止员工的日期。|
-|status              |string  |指定员工的状态。 可能的值包括活动、非活动或已终止|
+|状态              |string  |指定员工的状态。 可能的值包括活动、非活动或已终止|
 |birthDate           |date    |指定员工的出生日期。                |
 |头像             |stream  |员工头像。 只读。                       |
 |lastModifiedDateTime|datetime|上次修改员工的日期/时间。 只读。|  

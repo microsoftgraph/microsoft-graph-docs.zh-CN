@@ -4,12 +4,13 @@ description: 获取 OneDrive for Business 活跃网站数趋势。 用户在其�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: bae62cd46877b200f0f5170c628eecb4aa09d9e4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a550df2c1f915fd0a37c191ca98ea8c1678058c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873024"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988151"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 

@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4efbdeadb07df83912687b58770a54707e96cba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2784c3bd832b786d377ef844f972e203a0e996b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982019"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986951"
 ---
 # <a name="importappledeviceidentitylist-action"></a>importAppleDeviceIdentityList 操作
 

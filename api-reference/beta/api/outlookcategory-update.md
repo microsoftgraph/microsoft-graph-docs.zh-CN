@@ -4,12 +4,13 @@ description: '更新指定 outlookCategory 对象的可写属性 **color**。 �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d7602ee69472a447127e106613df30722f6df794
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fd9a6d820d647b93a6e0954a6c39ef62afb21ec2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877770"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988788"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 

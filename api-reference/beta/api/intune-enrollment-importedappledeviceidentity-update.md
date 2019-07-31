@@ -4,12 +4,13 @@ description: 更新 importedAppleDeviceIdentity 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 501a8bb31d5b01b184f4a53bb4f68fbd27661675
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7d04157845e556d927ab6ed4d5cb15c1d34d7659
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982334"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986916"
 ---
 # <a name="update-importedappledeviceidentity"></a>更新 importedAppleDeviceIdentity
 

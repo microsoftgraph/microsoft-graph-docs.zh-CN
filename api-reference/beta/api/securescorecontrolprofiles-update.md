@@ -2,12 +2,15 @@
 title: 更新 secureScoreControlProfiles
 description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfiles 属性以更改各种属性, 如 "分配给/分配" 或 "tenantNote"。
 localization_priority: Normal
-ms.openlocfilehash: d55ae60cccc60d1801e450cc7ce5ca28b0c71225
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3450422320cf1d80bdd4cfd2f7e67960c0bafdbc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870351"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978043"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 

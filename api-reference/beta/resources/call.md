@@ -4,12 +4,13 @@ description: 当应用程序有传入呼叫或应用程序通过 `app/calls` 上
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9d297a60538901b6117a7e20f32fa0cc437b9b84
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cd5c4cda918ecc9a9cd317bc610688e0297c0787
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338785"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973485"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -83,7 +84,7 @@ ms.locfileid: "33338785"
 
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。 可为 NULL。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。可为空。                                                |
 | operations          | [commsOperation](commsoperation.md) 集合       | 只读。可为空。                                                |
 | participants        | [participant](participant.md) 集合             | 只读。可为空。                                                |
 

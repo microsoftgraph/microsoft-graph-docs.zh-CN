@@ -2,12 +2,15 @@
 title: changeTrackedEntity 资源类型
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: 838aeca84b6928c709a3c4775c95ab3ef8fd7692
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3815b22c7bd76a894df0e98415e0c30bb77decd1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33347938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974051"
 ---
 # <a name="changetrackedentity-resource-type"></a>changeTrackedEntity 资源类型
 

@@ -1,21 +1,22 @@
 ---
 title: educationOneNoteResource 资源类型
-description: 'educationResource 的子类。 这表示 OneNote 页面的位置。  '
+description: 'EducationResource 的子类。 这表示 OneNote 页面的位置。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a1d7796941edebe6ad1cb126d58b5e7600373ee0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 659ca7f55309499314f94ea62e9433c919856dc6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340546"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972647"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationResource](educationresource.md)的子类。 这表示 OneNote 页面的位置。  
+[EducationResource](educationresource.md)的子类。 这表示 OneNote 页面的位置。  
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

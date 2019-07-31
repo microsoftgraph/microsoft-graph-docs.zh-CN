@@ -2,15 +2,15 @@
 title: chatMessageReaction 资源类型
 description: '表示对了 chatmessage 实体的反应。 '
 localization_priority: Normal
+doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-doc_type: resourcePageType
-ms.openlocfilehash: dd1eac9a4630e097f06cf99f30d371de9e32eb5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: e1193e65697187f705f2758c2c195e5519326dc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973983"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction 资源类型
 

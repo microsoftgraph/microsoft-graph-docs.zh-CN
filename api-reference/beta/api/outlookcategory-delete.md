@@ -4,12 +4,13 @@ description: 删除指定的 outlookCategory 对象。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7c9a58dc1c970d68ec2956854388b0ab5b9814a7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b780ca65af894662f459bbce2d3d64c49170034d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877805"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988774"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 

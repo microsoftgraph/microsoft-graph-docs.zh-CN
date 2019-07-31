@@ -4,12 +4,13 @@ description: '表示教育用户类型与用户帐户所属域之间的映射。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 628fbdea770c685eca0194fb95a314e2e542d2fc
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: 86e65d46c8037ebcbb2c98f9f9e93f94f34bbdef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750155"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972703"
 ---
 # <a name="educationidentitydomain-resource-type"></a>educationIdentityDomain 资源类型
 

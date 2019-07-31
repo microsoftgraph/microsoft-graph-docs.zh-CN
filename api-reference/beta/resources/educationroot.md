@@ -4,12 +4,13 @@ description: '`/education` 命名空间公开特定于教育部门的功能。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 83879a2fe448e97f62dc592b42d1cbc1d3d5cf39
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8084b1aae61ffb9e9982fbf8b5f4b8e430a85da1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334185"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972563"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
 

@@ -4,12 +4,13 @@ description: LanManagerAuthenticationLevel 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a80aefec83c0c2a577af9b8dfed5dcea1ff7d79
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f76a0b685a0759a4455d8de805424ddd09758a63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970281"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 枚举类型
 
