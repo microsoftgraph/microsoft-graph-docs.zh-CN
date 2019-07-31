@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 通过创建上载会话，使应用程序可以上载最大大小的文件。
 ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325317"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957190"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -90,7 +91,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | driveItemUploadableProperties | 有关要上载的文件的数据
-| deferCommit          | Boolean                       | 如果设置为 true, 则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for business 上。
+| deferCommit          | Boolean                       | 如果设置为 true, 则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
 
 ## <a name="item-properties"></a>项目属性
 

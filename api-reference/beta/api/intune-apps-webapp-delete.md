@@ -4,12 +4,13 @@ description: 删除 webApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8af0b3a7476c68c013bcacde1d0c6fdfda5ba5df
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7a184361437ebefd71e14c35e7d7ce5e25737fe2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973395"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960319"
 ---
 # <a name="delete-webapp"></a>删除 webApp
 

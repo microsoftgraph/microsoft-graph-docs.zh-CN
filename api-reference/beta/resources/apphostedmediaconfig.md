@@ -4,12 +4,13 @@ description: 由应用程序托管的媒体堆栈。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0cb34d0673404c90607a8f1ac442ca1b7c504ce9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: abc9cd8aa916c4e0b9141f79151fbd7e9f2d3b8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339179"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013365"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
 

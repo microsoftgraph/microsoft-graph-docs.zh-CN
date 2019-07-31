@@ -4,12 +4,13 @@ description: 检索课程的教师列表。 委派令牌必须是课程的成员
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 107450f8b50e14116f25e60c5de322eaf3bb3980
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6a7f25ecfbff2fbce041bda37d197f0033cf1587
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860577"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955381"
 ---
 # <a name="list-teachers"></a>列出教师
 

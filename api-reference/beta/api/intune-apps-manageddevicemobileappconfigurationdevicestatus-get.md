@@ -4,12 +4,13 @@ description: 读取 managedDeviceMobileAppConfigurationDeviceStatus 对象的属
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ea055ccc48c33dacf144c57178cac641f095607
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f0c94aaa518efc50261ca687d47b1d90266a9ebe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961572"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>获取 managedDeviceMobileAppConfigurationDeviceStatus
 

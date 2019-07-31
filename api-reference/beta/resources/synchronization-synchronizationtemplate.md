@@ -2,14 +2,15 @@
 title: synchronizationTemplate 资源类型
 description: " 任何人都可以检索模板以查看默认设置, 包括同步架构。"
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 125b8fe81aedc285da33380c3043827c7c534ab8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: a9176c092d62b4ee43d15d29884a3882fd3c627e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620645"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964597"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate 资源类型
 

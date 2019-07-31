@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: ThumbnailSet 资源是键控的 缩略图 资源集合。
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-ms.openlocfilehash: e3e3305e398651478c88d4c3aa75e753ce26acd5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: bb8c286cd8c3827317edc9a24e4d14dbe963a05d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964343"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
 

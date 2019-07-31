@@ -2,12 +2,15 @@
 title: skypeForBusinessDeviceUsageUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 95f2f6cf1f3f6c54c4b6b4b39a7118cd8a94b224
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b84cf9c7654354446fb7c6a5005befe3d17a0fa4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555932"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964912"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>skypeForBusinessDeviceUsageUserDetail 资源类型
 
@@ -15,14 +18,14 @@ ms.locfileid: "32555932"
 
 | 属性          | 类型    |
 | :---------------- | :------ |
-| reportRefreshDate | Date    |
+| reportRefreshDate | 日期    |
 | userPrincipalName | String  |
-| lastActivityDate  | Date    |
-| usedWindows       | 布尔值 |
-| usedWindowsPhone  | 布尔值 |
-| usedAndroidPhone  | 布尔值 |
-| usediPhone        | 布尔值 |
-| usediPad          | 布尔值 |
+| lastActivityDate  | 日期    |
+| usedWindows       | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -2,18 +2,21 @@
 title: anonymousIpRiskEvent 资源类型
 description: Azure Active Directory 标识保护检测到的一个风险事件, 其中的帐户登录尝试来自看似匿名的 IP 地址。 有关风险事件的完整信息, 请参阅 Azure AD Identity Protection 文档。
 localization_priority: Normal
-ms.openlocfilehash: 8fa1210a8899af11e295e6503dfcae51dba43776
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5016aac704feb35383dc34e58f3ed06657733edf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339165"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013387"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>anonymousIpRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的一个风险事件, 其中的帐户登录尝试来自看似匿名的 IP 地址。 有关风险事件的完整信息, 请参阅[Azure AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的一个风险事件, 其中的帐户登录尝试来自看似匿名的 IP 地址。 有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法

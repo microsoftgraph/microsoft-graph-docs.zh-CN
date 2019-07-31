@@ -4,12 +4,13 @@ description: 删除 windowsAppX。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76b6a5c8acceb79d6ac555f11733f4797d3515fa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 14b9da06f92b25dce4d6868493ec583d55b0cbe3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960179"
 ---
 # <a name="delete-windowsappx"></a>删除 windowsAppX
 

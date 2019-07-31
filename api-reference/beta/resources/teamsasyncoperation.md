@@ -4,12 +4,13 @@ description: 'Microsoft 团队 async operation 是 transcends 一个 API 请求�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c016b90ae6198204e9b99e3ae1e8d72b22919e8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a3a0e74d936282edb58f166ca7b4c8e5a51ff116
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345765"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964485"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 

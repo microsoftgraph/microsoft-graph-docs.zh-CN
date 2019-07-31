@@ -4,12 +4,13 @@ description: 用于配置团队中的消息传递和提及的设置。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48d9281a032bebd9d65936cbf9effd78416ffc7d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3a89ed35c820338cde7b3f22a7345c860b1a4427
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341451"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964527"
 ---
 # <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings 资源类型
 

@@ -1,22 +1,23 @@
 ---
 title: plannerPlanContextCollection 资源类型
-description: '**plannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是 plannerPlan 对象的一部分。 属性-值对中的值是 plannerPlanContext 对象。'
+description: '**PlannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是 plannerPlan 对象的一部分。 属性-值对中的值是 plannerPlanContext 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8d5394ff8a9503ab9ffba4810c9c2cad0d9a2fbf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 34fecf604b68fe092e1feeac2c0e99cc0d59cd77
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344451"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965927"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>plannerPlanContextCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-**plannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是[plannerPlan](plannerplan.md)对象的一部分。 属性-值对中的值是[plannerPlanContext](plannerplancontext.md)对象。
+**PlannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是[plannerPlan](plannerplan.md)对象的一部分。 属性-值对中的值是[plannerPlanContext](plannerplancontext.md)对象。
 
 
 ## <a name="properties"></a>属性

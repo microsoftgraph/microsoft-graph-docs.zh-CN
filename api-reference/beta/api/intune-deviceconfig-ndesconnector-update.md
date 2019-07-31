@@ -4,12 +4,13 @@ description: 更新 ndesConnector 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ae9ebc8701ec0c91c378b65156970571a5d0125
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 40ba2077b1a2e21d7c1940c2657efa22a953abea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946598"
 ---
 # <a name="update-ndesconnector"></a>更新 ndesConnector
 

@@ -2,12 +2,15 @@
 title: registryKeyState 资源类型
 description: 包含有关与警报相关的注册表项更改的信息, 以及更改了注册表项的过程。
 localization_priority: Normal
-ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 672a782b97b3a96c9a7065f3bf5c7b5b9030f282
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965451"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
 

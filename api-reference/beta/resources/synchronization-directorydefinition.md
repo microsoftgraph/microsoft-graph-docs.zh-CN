@@ -2,15 +2,15 @@
 title: directoryDefinition 资源类型
 description: 提供有关目录及其对象的同步引擎信息。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-doc_type: resourcePageType
-ms.openlocfilehash: 56c1f5a6a15f7ab6724feff68aa38eba1ef22694
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0858c714fab3fbfb862119d5ece1af2650888391
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888137"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964807"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition 资源类型
 

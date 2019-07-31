@@ -1,21 +1,22 @@
 ---
 title: serviceHostedMediaConfig 资源类型
-description: serviceHostedMediaConfig 类型。
+description: ServiceHostedMediaConfig 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fbd59694940d6d0b3abea1a8d56bd426a3dfbb3a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f56928a7294fba1cb31f5061a2c7b8f7bb70f02a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965199"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-serviceHostedMediaConfig 类型。
+ServiceHostedMediaConfig 类型。
 
 ## <a name="properties"></a>属性
 

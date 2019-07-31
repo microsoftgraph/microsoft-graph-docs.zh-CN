@@ -4,12 +4,13 @@ description: 读取了 windowsphone81appxbundle 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db43f1323f2897a58433dec6cc90d9597df9389e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1b2d2eb1956d025985914ae20e1c8b0d540a0a14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959969"
 ---
 # <a name="get-windowsphone81appxbundle"></a>获取了 windowsphone81appxbundle
 

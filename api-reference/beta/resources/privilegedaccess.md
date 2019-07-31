@@ -2,12 +2,15 @@
 title: privilegedAccess 资源类型
 description: " 例如, `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。"
 localization_priority: Normal
-ms.openlocfilehash: 2dd131dd8f1ba5a2e7668949d2a03a9ab3321d1d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7f59f8420be6ff97511415e944d154cb5d59950f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965787"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess 资源类型
 
@@ -28,7 +31,7 @@ ms.locfileid: "33344257"
 ## <a name="relationships"></a>关系
 | 关系   | 类型                                         |说明|
 |:---------------|:---------------------------------------------|:----------|
-|资源       |[governanceResource](../resources/governanceresource.md)集合            |提供程序的资源集合。|
+|resources       |[governanceResource](../resources/governanceresource.md)集合            |提供程序的资源集合。|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)集合|提供程序的角色分配的集合。|
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)集合|提供程序的角色 defintions 的集合。|
 |roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)集合|提供程序的角色分配请求的集合。|

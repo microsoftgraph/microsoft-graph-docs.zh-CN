@@ -4,12 +4,13 @@ description: 表示管理工作簿的 Excel workbookApplication。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3db8c640ebb2fd36a0902563c28a3ec51bfa99d8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 71c7c92e623fc2a9c05b9e1e8448f329615c51e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348592"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964107"
 ---
 # <a name="workbookapplication-resource-type"></a>workbookApplication 资源类型
 

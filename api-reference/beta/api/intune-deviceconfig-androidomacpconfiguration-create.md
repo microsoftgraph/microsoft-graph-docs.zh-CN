@@ -4,12 +4,13 @@ description: 创建新的 androidOmaCpConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bcd334d05a20b911477bf42116b12a3589bcb91
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 61c9ef5aafeedae8ec71e8a10e757dffd2ca89d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970105"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962839"
 ---
 # <a name="create-androidomacpconfiguration"></a>创建 androidOmaCpConfiguration
 

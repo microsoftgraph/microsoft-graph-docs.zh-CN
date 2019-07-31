@@ -1,21 +1,22 @@
 ---
 title: plannerExternalReference 资源类型
-description: '**plannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是 externalReferences 对象中的属性-值对的值。'
+description: '**PlannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是 externalReferences 对象中的属性-值对的值。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6d2bce70afbeee3848f3055530daf732afe8a2b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2ac2b6bef3f2e4e24bfc6e789536f4952d89bb6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344821"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965999"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是[externalReferences 对象](plannerexternalreferences.md)中的属性-值对的值。
+**PlannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是[externalReferences 对象](plannerexternalreferences.md)中的属性-值对的值。
 
 
 

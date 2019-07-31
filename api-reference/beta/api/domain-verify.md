@@ -4,12 +4,13 @@ description: 验证域的所有权。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0359f96a8114c121b5061a238e819e87a6558269
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 35117ca704e369466dc05d66d7501994f340c0eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957358"
 ---
 # <a name="domain-verify"></a>域：验证
 

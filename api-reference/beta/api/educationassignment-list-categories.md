@@ -4,12 +4,13 @@ description: 列出与此工作分配相关联的所有类别。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3a66e74a0addd6b6064e1e5ad66aba74895f0451
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e74e1bfd808e3bc7a5dcd7b5e3bc18aebf248b11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324695"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955650"
 ---
 # <a name="list-categories"></a>列出类别
 

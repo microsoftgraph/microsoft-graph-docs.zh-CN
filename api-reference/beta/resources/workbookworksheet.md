@@ -4,12 +4,13 @@ description: Excel 工作表是由单元格组成的网格。 它可以包含数
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1700c61ed84b1ac218163e2cff3ac812f59cc8ed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 93386edf60e30069068ceb2fa437fb128b239302
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348575"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963855"
 ---
 # <a name="workbookworksheet-resource-type"></a>workbookWorksheet 资源类型
 

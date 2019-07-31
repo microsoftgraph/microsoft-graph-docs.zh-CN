@@ -4,12 +4,13 @@ description: 列出已提交进行评分的资源。 拥有提交的学生无法
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fa98baff82250e8da68f21c2b3779b387977f763
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 371302640df794465764755492088ec2015278ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955116"
 ---
 # <a name="list-submittedresources"></a>列出 submittedResources
 

@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 使用指定的父项或路径在驱动器中新建文件夹或 DriveItem。
 ms.date: 09/10/2017
 title: 新建文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bf0dfda6a51d00fe58e4ab30ef1af445991da1f3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b38f6d62bdc90afc62591afa053f50c1b9c42497
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860962"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957015"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 

@@ -4,12 +4,13 @@ description: 列出 windowsMobileMSI 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52e1fe2a447a79883e5c8168a880e661e9b50ce2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0a7c61dfafb96f0a6e4a8e8211ac416d5c7734a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973136"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960081"
 ---
 # <a name="list-windowsmobilemsis"></a>列出 windowsMobileMSIs
 

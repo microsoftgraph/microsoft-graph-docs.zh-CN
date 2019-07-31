@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 9142c4d86b627f1d1e1e790c9b3b279b07005ad2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 682ff7952b39cd71399441014c528eaba32ac4b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013388"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 

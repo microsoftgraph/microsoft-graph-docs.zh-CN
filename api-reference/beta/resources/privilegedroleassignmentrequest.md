@@ -2,12 +2,15 @@
 title: privilegedRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理中对角色分配操作的请求。
 localization_priority: Normal
-ms.openlocfilehash: 54d3fe72ab0cd9145f549e88e356ed30e2b9ef56
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 881f5e47d7a441a297c21a0463e49496aeaf7a07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932515"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965731"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest 资源类型
 

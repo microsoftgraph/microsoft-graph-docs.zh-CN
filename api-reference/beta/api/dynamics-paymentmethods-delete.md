@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 7b418160573eb9acf2f0c9e9f2ab0d352b59d846
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1c447be1946d2a5144b15476f70a211c754aa170
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956091"
 ---
 # <a name="delete-paymentmethods"></a>删除 paymentMethods
 从 Dynamics 365 Business Central 中删除付款方法对象。

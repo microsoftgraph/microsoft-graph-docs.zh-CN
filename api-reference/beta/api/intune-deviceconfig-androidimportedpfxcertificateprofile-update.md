@@ -4,12 +4,13 @@ description: 更新 androidImportedPFXCertificateProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c13a5d5e9b0437b0c022c31437204971ba9e1358
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d2396f51b1647cab066fd1ab80b8813bccc50708
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962867"
 ---
 # <a name="update-androidimportedpfxcertificateprofile"></a>更新 androidImportedPFXCertificateProfile
 

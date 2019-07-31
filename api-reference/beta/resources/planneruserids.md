@@ -1,21 +1,22 @@
 ---
 title: plannerUserIds 资源类型
-description: '**plannerUserIds**资源表示与计划共享的用户 id 的列表。 这是开放类型。 如果您使用的是 Office 365 组, 请使用组 API 来管理组成员身份, 以共享组的计划。 您还可以将组的现有成员添加到此集合中, 但它们不需要他们访问该组拥有的计划。'
+description: '**PlannerUserIds**资源表示与计划共享的用户 id 的列表。 这是开放类型。 如果您使用的是 Office 365 组, 请使用组 API 来管理组成员身份, 以共享组的计划。 您还可以将组的现有成员添加到此集合中, 但它们不需要他们访问该组拥有的计划。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 83717714d58cd0c442b42c23c9aa361bcd3b2261
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3382da3131040f6ae3dc78102ac6e5d64a23695c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344369"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965843"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerUserIds**资源表示与[计划](plannerplan.md)共享的用户 id 的列表。 这是开放类型。 如果您使用的是 Office 365 组, 请使用组 API 来管理组成员身份, 以共享[组的](group.md)计划。 您还可以将组的现有成员添加到此集合中, 但它们不需要他们访问该组拥有的计划。
+**PlannerUserIds**资源表示与[计划](plannerplan.md)共享的用户 id 的列表。 这是开放类型。 如果您使用的是 Office 365 组, 请使用组 API 来管理组成员身份, 以共享[组的](group.md)计划。 您还可以将组的现有成员添加到此集合中, 但它们不需要他们访问该组拥有的计划。
 
 
 ## <a name="properties"></a>属性

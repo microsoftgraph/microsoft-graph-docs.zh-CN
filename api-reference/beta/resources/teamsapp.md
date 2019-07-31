@@ -4,12 +4,13 @@ description: Microsoft Teams 应用对话框中的应用。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2686bddad3c70e60c764647d5bef453fd7524462
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f629851225570426b5785911bbbdb3337f43149f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964506"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 

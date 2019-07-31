@@ -4,12 +4,13 @@ description: 描述团队的特殊用例。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8700896c32a83a3e157186f405c435589ce03815
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: enumPageType
+ms.openlocfilehash: a0ff737b196cc486aa01d5e0f5a34c30edc7c8bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964422"
 ---
 # <a name="teamspecialization-enum-type"></a>teamSpecialization 枚举类型
 

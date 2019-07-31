@@ -4,12 +4,13 @@ description: 创建新的 androidForWorkGeneralDeviceConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66e33e800250a182a1d25aba8d1952af98d19d33
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0eb3e6fd1f0a94b07ec3fe0fff6288c6a60320f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963659"
 ---
 # <a name="create-androidforworkgeneraldeviceconfiguration"></a>创建 androidForWorkGeneralDeviceConfiguration
 

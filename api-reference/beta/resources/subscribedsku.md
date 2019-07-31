@@ -4,12 +4,13 @@ description: " 不支持创建、更新和删除。 不支持查询筛选表达�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c2bca99fed2b8c5328c2f2cf1ac3bf938ddcfcaa
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: resourcePageType
+ms.openlocfilehash: 9e57ff1e59c7caf5b29e582b7381492a7eee5b4c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639022"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964815"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 

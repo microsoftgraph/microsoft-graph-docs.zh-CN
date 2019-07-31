@@ -1,21 +1,22 @@
 ---
 title: teamsAsyncOperationType 枚举类型
-description: teamsAsyncOperation 的类型。 将在此处添加成员, 因为支持更多的异步操作。
+description: TeamsAsyncOperation 的类型。 将在此处添加成员, 因为支持更多的异步操作。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ad1fdb80768a6f4c7043b5431bd0ed84bf2f25f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: enumPageType
+ms.openlocfilehash: ce67f7561609ac4a2724f2804aa4462957784b0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341531"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964457"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[teamsAsyncOperation](teamsasyncoperation.md)的类型。 将在此处添加成员, 因为支持更多的异步操作。
+[TeamsAsyncOperation](teamsasyncoperation.md)的类型。 将在此处添加成员, 因为支持更多的异步操作。
 
 ## <a name="members"></a>成员
 

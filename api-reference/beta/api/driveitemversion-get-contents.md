@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: '检索 driveItem 的特定版本的内容。 '
 ms.date: 09/10/2017
 title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bd813caf274755ef13102e98e02132c3fda2d13e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c7ed8f8100a7910a79569a7e017f37d3d636a26c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860864"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956952"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 

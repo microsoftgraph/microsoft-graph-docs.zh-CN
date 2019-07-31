@@ -4,12 +4,13 @@ description: .
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e0ee9fd708c0837ca23473e8509f184645fa52fa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e2b0e901284a56c5b123bf4f89b5a5573796ad50
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860731"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955689"
 ---
 # <a name="delete-educationassignmentresource"></a>删除 educationAssignmentResource
 

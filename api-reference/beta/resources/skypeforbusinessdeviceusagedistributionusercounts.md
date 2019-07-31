@@ -2,12 +2,15 @@
 title: skypeForBusinessDeviceUsageDistributionUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 3658bec2d99c5098b970e35240221dbf954beba6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b5c90db3ec241017781d52bbb623d728a7959445
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581259"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964940"
 ---
 # <a name="skypeforbusinessdeviceusagedistributionusercounts-resource-type"></a>skypeForBusinessDeviceUsageDistributionUserCounts 资源类型
 
@@ -15,7 +18,7 @@ ms.locfileid: "32581259"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | 时间           | Int64  |
 | windowsPhone      | Int64  |
 | androidPhone      | Int64  |

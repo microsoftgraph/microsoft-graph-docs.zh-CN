@@ -1,20 +1,22 @@
 ---
 title: resultInfo 资源类型
-description: resultInfo 类型。
+description: ResultInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2406c29c12af81ee6981b8ffa59e630a5451c2fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343547"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965367"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-resultInfo 类型。
+ResultInfo 类型。
 
 ## <a name="properties"></a>属性
 

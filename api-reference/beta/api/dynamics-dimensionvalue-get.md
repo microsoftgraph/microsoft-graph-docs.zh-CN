@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ad8d9f26faa4fcc2f03f2da04c073857bcfd152f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c9b51a4291adfc6e446c428989aaa04b7540453d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956329"
 ---
 # <a name="get-dimensionvalues"></a>获取 dimensionValues
 检索 Dynamics 365 Business Central 的维度值对象的属性和关系。
