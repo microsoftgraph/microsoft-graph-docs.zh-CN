@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: 从网站中的网站页面 [列表] 获取 sitePage 对象的集合。 将返回网站中的所有页面 (使用分页)。
 ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d4d4e525c048b6d2b76b9d361ab841526b07854f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 74d21d999fc6075de1a5425e9b37ad09ed455293
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977844"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
 

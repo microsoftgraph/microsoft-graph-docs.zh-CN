@@ -4,12 +4,13 @@ description: 更新 telecomExpenseManagementPartner 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 418d609aaa750e2b3ffd947d2620492b3dd421f3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5b13c382e773b7e67fe751520d73cb8ded6b2196
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957890"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979538"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>更新 telecomExpenseManagementPartner
 

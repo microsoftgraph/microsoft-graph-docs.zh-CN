@@ -4,12 +4,13 @@ description: 表示 onlineMeeting 的电话访问信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1371e80830bf148588f6bda91326b0521fcdda42
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 94dc02920e7270fbfdacb10ee9a8edee8315fc67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974281"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 

@@ -4,12 +4,13 @@ description: '列出 Microsoft 团队应用程序目录中的应用程序。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 229d91768f222a6bfc4bbf0de726a2f6d40c0da4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cfb7cc45d41d779d63ef4c13ff28996ed035abe3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330125"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977536"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>列出 Microsoft 团队应用程序目录中已发布的应用程序
 
@@ -28,7 +29,7 @@ ms.locfileid: "33330125"
 |:---------------------------------------|:------------------------------------|
 | 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All            |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| Application                            | 不支持                       |
+| 应用程序                            | 不支持                       |
 
 ## <a name="http-request"></a>HTTP 请求
 

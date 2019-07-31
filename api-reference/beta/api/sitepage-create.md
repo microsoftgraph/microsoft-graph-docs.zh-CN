@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: 在网站的 "网站页面" 列表中创建新的 sitePage。
 ms.date: 05/07/2018
 title: 在 SharePoint 网站中创建新页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93376d4b724bfea59c44456eb61bc22f9837444b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: bb54af97b1a2527893c5090e52e5bb7aa8381c94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330143"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977865"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中创建页面
 
@@ -184,7 +185,7 @@ Content-type: application/json
 
 **注意：** 为清楚起见，将截断 Response 对象。 实际调用会返回默认属性。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [网站]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md

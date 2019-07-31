@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: FolderView 资源提供或设置关于文件夹的用户体验建议。
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: fa1ecc3152492ceeee61a9bc94ae1b4dfbb8ff3d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 5238c749d509339cd0e922e49b7e2d4d2da3b23f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333728"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973546"
 ---
 # <a name="folderview-resource-type"></a>FolderView 资源类型
 
@@ -17,7 +19,7 @@ ms.locfileid: "33333728"
 
 **FolderView** 资源提供或设置关于文件夹的用户体验建议。
 
-可通过 [driveItem][item-resource] 资源的 [folder][folder-facet] 属性获取。
+它可从[driveItem][item-resource]资源的[folder][folder-facet]属性中获取。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

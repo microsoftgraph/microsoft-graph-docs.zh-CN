@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: 从网站的 "网站页面" 列表中删除 sitePage。
 ms.date: 05/07/2018
 title: 从 SharePoint 网站中删除页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d5c38a5f5b96a100cfbae0eba30f957b079568e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: bdf3dacabb99d5dfcfe47dcb954ff1cfd0b62ccb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977858"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>从网站的 "网站页面" 列表中删除页面
 

@@ -4,12 +4,13 @@ description: Dynamics 365 Business Central 中的维度。
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 92ba48a7ad55b6a7dff28ccc1547769c149e378b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5bd5382ae020baaf726db53f9252c4d3498833ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543086"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973623"
 ---
 # <a name="dimensions-resource-type"></a>维度资源类型
 表示 Dynamics 365 Business Central 中的维度。

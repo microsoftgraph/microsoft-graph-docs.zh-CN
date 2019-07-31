@@ -4,12 +4,13 @@ description: 删除 windows10EndpointProtectionConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2858b170c620d8ed5264bcd3d00bbe9179cb6c02
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 38686d6c0d8fbbc926d4ad7fcb50caffe7bcfc70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962650"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976915"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>删除 windows10EndpointProtectionConfiguration
 

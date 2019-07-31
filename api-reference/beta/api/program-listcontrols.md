@@ -2,12 +2,15 @@
 title: 列出程序的 programControls
 description: 在 "Azure AD access 评论" 功能中, 列出链接到特定程序的所有 programControl 对象。
 localization_priority: Normal
-ms.openlocfilehash: c809bbf95900875d306a8d2cbb0270f832a4968d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b01e755ead872b61ac4f3523bbe8d93ebd670fbd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978565"
 ---
 # <a name="list-programcontrols-of-a-program"></a>列出程序的 programControls
 

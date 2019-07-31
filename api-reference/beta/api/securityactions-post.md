@@ -4,12 +4,13 @@ description: 创建新的 securityAction 对象。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 96f0c5b9ffbcdcda125cb43421fdcffc617c89ea
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 155e7a3155179cc82e6e065f51a966f739ea344b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870245"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977971"
 ---
 # <a name="create-securityaction"></a>创建 securityAction
 

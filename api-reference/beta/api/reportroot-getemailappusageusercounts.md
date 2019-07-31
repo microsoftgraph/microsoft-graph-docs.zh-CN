@@ -4,12 +4,13 @@ description: 获取使用任意电子邮件应用连接到 Exchange Online 的�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 77de092d01aa7d80b1ff097cb5e17505b20fec5c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 65d91d08b2b3446fbba613d5de876607b7b8f9f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873890"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978145"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 

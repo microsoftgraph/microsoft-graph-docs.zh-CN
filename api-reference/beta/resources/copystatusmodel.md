@@ -2,12 +2,15 @@
 title: copyStatusModel 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 1eb41726f2d72109ef4a297a1c994c9bae74fd5a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2bc83b7eb519b3d11adc9f548becbec4444f1ef0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973950"
 ---
 # <a name="copystatusmodel-resource-type"></a>copyStatusModel 资源类型
 

@@ -4,12 +4,13 @@ description: 创建新的 windows81WifiImportConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3954c04cdb80846c39ab514baa0bbfbd0dd4d08e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 414b39361272d6d0f98a7454c1a79996738354eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977004"
 ---
 # <a name="create-windows81wifiimportconfiguration"></a>创建 windows81WifiImportConfiguration
 

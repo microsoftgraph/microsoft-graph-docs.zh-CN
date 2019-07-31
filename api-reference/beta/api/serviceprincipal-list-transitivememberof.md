@@ -2,12 +2,15 @@
 title: 列出 servicePrincipal 可传递的 memberOf
 description: 获取此服务主体所属的组和目录角色。 此操作是可传递的, 将包括此服务主体是其嵌套成员的所有组。
 localization_priority: Normal
-ms.openlocfilehash: 440c55cd30ef87bb3589ba6336f799297597a925
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f4560b030debfdd9325733cc99210c4e9c436128
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869930"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977921"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>列出 servicePrincipal 可传递的 memberOf
 

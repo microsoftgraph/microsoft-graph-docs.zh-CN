@@ -3,12 +3,14 @@ title: 列出订阅
 description: " 有关详细信息, 请参阅以下方案。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: b42b84c56638c206b3ea440efba880e4ab024601
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 1cdedb3c9720ef9099f2ed6608ac33df5f820b4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869447"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977779"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 

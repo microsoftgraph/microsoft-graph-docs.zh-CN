@@ -4,12 +4,13 @@ description: 读取 windows10PFXImportCertificateProfile 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04e7dbd0eec903459b921cdd477d8b673b607771
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bd0d3badad0276a63b4cfe9b4ce3a7a2b0e861d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977228"
 ---
 # <a name="get-windows10pfximportcertificateprofile"></a>获取 windows10PFXImportCertificateProfile
 

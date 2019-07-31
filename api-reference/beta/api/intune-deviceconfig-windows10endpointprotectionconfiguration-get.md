@@ -4,12 +4,13 @@ description: 读取 windows10EndpointProtectionConfiguration 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee0b28c48d85cc3a3628dc7e9116c65a55b77eb4
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 32b7192b273164f4eb3ae46ead79b3f34f84b056
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715310"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976906"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 

@@ -4,12 +4,13 @@ description: 表示添加到租户中特定域的 DNS 区域文件中的 MX 记�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b61638c2013257eebbe77f4c36a274619d6daf2b
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 7472118f1a7a7fb30ac1bc4e4775f04f4a84fca4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657110"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973777"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord 资源类型
 

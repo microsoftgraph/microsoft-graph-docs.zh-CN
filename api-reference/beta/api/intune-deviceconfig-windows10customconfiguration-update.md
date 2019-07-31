@@ -4,12 +4,13 @@ description: 更新 windows10CustomConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd3355fb7fbbfe2fe68e0a6d6e9bd78d2d84aacf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f69891e9ac5b215cfc914b350829e7ecb462f4bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973455"
 ---
 # <a name="update-windows10customconfiguration"></a>更新 windows10CustomConfiguration
 

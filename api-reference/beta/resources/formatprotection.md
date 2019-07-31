@@ -2,12 +2,15 @@
 title: FormatProtection 资源类型
 description: 表示对范围对象的格式保护。
 localization_priority: Normal
-ms.openlocfilehash: 7375ea26caef3d8b06421441a712974c209b53ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 036c09c1d5e4dfec043e6a1dc612aa728d6588f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333681"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973539"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
 

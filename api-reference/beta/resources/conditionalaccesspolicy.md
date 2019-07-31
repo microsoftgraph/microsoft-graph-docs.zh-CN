@@ -2,12 +2,15 @@
 title: conditionalAccessPolicy 资源类型
 description: 指示与相应登录活动触发的条件访问策略或策略相关的属性
 localization_priority: Normal
-ms.openlocfilehash: 7b043e739f84715fb02fbdbd25599e5cfccc284a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2c45be8ee32c26187ccf42154ba6c06b60f5efc1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543369"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973214"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 指示与相应登录活动触发的条件访问策略或策略相关的属性

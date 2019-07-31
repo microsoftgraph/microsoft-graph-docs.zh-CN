@@ -2,12 +2,15 @@
 title: 创建程序
 description: 在 "Azure AD access 评论" 功能中, 创建一个新的程序对象。
 localization_priority: Normal
-ms.openlocfilehash: 239eef0fe2b2026b9329b84e0c38641dda788707
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 0a446fd04bd79763120cbaa01134f5cbabbcbf52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875454"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978607"
 ---
 # <a name="create-program"></a>创建程序
 
