@@ -4,34 +4,35 @@ description: 表示图表坐标轴标题格式。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c98cfee5c776f761c4e84479bb6a4b3f2814bb06
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e992f083bd063ea7708f0aec4261ec04cbcc8539
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348553"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007282"
 ---
-# <a name="workbookchartaxistitleformat-resource-type"></a><span data-ttu-id="be708-103">workbookChartAxisTitleFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="be708-103">workbookChartAxisTitleFormat resource type</span></span>
+# <a name="workbookchartaxistitleformat-resource-type"></a><span data-ttu-id="1157b-103">workbookChartAxisTitleFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="1157b-103">workbookChartAxisTitleFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="be708-104">表示图表坐标轴标题格式。</span><span class="sxs-lookup"><span data-stu-id="be708-104">Represents the chart axis title formatting.</span></span>
+<span data-ttu-id="1157b-104">表示图表坐标轴标题格式。</span><span class="sxs-lookup"><span data-stu-id="1157b-104">Represents the chart axis title formatting.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="be708-105">方法</span><span class="sxs-lookup"><span data-stu-id="be708-105">Methods</span></span>
-<span data-ttu-id="be708-106">无</span><span class="sxs-lookup"><span data-stu-id="be708-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="1157b-105">方法</span><span class="sxs-lookup"><span data-stu-id="1157b-105">Methods</span></span>
+<span data-ttu-id="1157b-106">无</span><span class="sxs-lookup"><span data-stu-id="1157b-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="be708-107">属性</span><span class="sxs-lookup"><span data-stu-id="be708-107">Properties</span></span>
-<span data-ttu-id="be708-108">无</span><span class="sxs-lookup"><span data-stu-id="be708-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="1157b-107">属性</span><span class="sxs-lookup"><span data-stu-id="1157b-107">Properties</span></span>
+<span data-ttu-id="1157b-108">无</span><span class="sxs-lookup"><span data-stu-id="1157b-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="be708-109">关系</span><span class="sxs-lookup"><span data-stu-id="be708-109">Relationships</span></span>
-| <span data-ttu-id="be708-110">关系</span><span class="sxs-lookup"><span data-stu-id="be708-110">Relationship</span></span> | <span data-ttu-id="be708-111">类型</span><span class="sxs-lookup"><span data-stu-id="be708-111">Type</span></span>   |<span data-ttu-id="be708-112">说明</span><span class="sxs-lookup"><span data-stu-id="be708-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="1157b-109">关系</span><span class="sxs-lookup"><span data-stu-id="1157b-109">Relationships</span></span>
+| <span data-ttu-id="1157b-110">关系</span><span class="sxs-lookup"><span data-stu-id="1157b-110">Relationship</span></span> | <span data-ttu-id="1157b-111">类型</span><span class="sxs-lookup"><span data-stu-id="1157b-111">Type</span></span>   |<span data-ttu-id="1157b-112">说明</span><span class="sxs-lookup"><span data-stu-id="1157b-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="be708-113">font</span><span class="sxs-lookup"><span data-stu-id="be708-113">font</span></span>|[<span data-ttu-id="be708-114">workbookChartFont</span><span class="sxs-lookup"><span data-stu-id="be708-114">workbookChartFont</span></span>](workbookchartfont.md)|<span data-ttu-id="be708-115">表示图表坐标轴标题对象的字体属性，例如字体名称、字体大小、颜色等。</span><span class="sxs-lookup"><span data-stu-id="be708-115">Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.</span></span> <span data-ttu-id="be708-116">只读。</span><span class="sxs-lookup"><span data-stu-id="be708-116">Read-only.</span></span>|
+|<span data-ttu-id="1157b-113">font</span><span class="sxs-lookup"><span data-stu-id="1157b-113">font</span></span>|[<span data-ttu-id="1157b-114">workbookChartFont</span><span class="sxs-lookup"><span data-stu-id="1157b-114">workbookChartFont</span></span>](workbookchartfont.md)|<span data-ttu-id="1157b-115">表示图表坐标轴标题对象的字体属性，例如字体名称、字体大小、颜色等。</span><span class="sxs-lookup"><span data-stu-id="1157b-115">Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.</span></span> <span data-ttu-id="1157b-116">只读。</span><span class="sxs-lookup"><span data-stu-id="1157b-116">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="be708-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="be708-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1157b-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1157b-117">JSON representation</span></span>
 
-<span data-ttu-id="be708-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="be708-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1157b-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1157b-118">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

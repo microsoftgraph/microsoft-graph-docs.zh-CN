@@ -2,28 +2,31 @@
 title: signInStatus 资源类型
 description: 提供登录的登录状态 (成功或失败)
 localization_priority: Normal
-ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d336e226b2855687da0aae889afd9d92141c895c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008304"
 ---
-# <a name="signinstatus-resource-type"></a><span data-ttu-id="00b13-103">signInStatus 资源类型</span><span class="sxs-lookup"><span data-stu-id="00b13-103">signInStatus resource type</span></span>
-<span data-ttu-id="00b13-104">提供登录的登录状态 (成功或失败)</span><span class="sxs-lookup"><span data-stu-id="00b13-104">Provides the sign-in status (Success or Failure) of the sign-in</span></span>
+# <a name="signinstatus-resource-type"></a><span data-ttu-id="38e04-103">signInStatus 资源类型</span><span class="sxs-lookup"><span data-stu-id="38e04-103">signInStatus resource type</span></span>
+<span data-ttu-id="38e04-104">提供登录的登录状态 (成功或失败)</span><span class="sxs-lookup"><span data-stu-id="38e04-104">Provides the sign-in status (Success or Failure) of the sign-in</span></span>
 
 
 
-## <a name="properties"></a><span data-ttu-id="00b13-105">属性</span><span class="sxs-lookup"><span data-stu-id="00b13-105">Properties</span></span>
-| <span data-ttu-id="00b13-106">属性</span><span class="sxs-lookup"><span data-stu-id="00b13-106">Property</span></span>     | <span data-ttu-id="00b13-107">类型</span><span class="sxs-lookup"><span data-stu-id="00b13-107">Type</span></span>   |<span data-ttu-id="00b13-108">说明</span><span class="sxs-lookup"><span data-stu-id="00b13-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="38e04-105">属性</span><span class="sxs-lookup"><span data-stu-id="38e04-105">Properties</span></span>
+| <span data-ttu-id="38e04-106">属性</span><span class="sxs-lookup"><span data-stu-id="38e04-106">Property</span></span>     | <span data-ttu-id="38e04-107">类型</span><span class="sxs-lookup"><span data-stu-id="38e04-107">Type</span></span>   |<span data-ttu-id="38e04-108">说明</span><span class="sxs-lookup"><span data-stu-id="38e04-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="00b13-109">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="00b13-109">additionalDetails</span></span>|<span data-ttu-id="00b13-110">String</span><span class="sxs-lookup"><span data-stu-id="00b13-110">String</span></span>|<span data-ttu-id="00b13-111">提供有关登录活动的其他详细信息</span><span class="sxs-lookup"><span data-stu-id="00b13-111">Provides additional details on the sign-in activity</span></span>|
-|<span data-ttu-id="00b13-112">errorCode</span><span class="sxs-lookup"><span data-stu-id="00b13-112">errorCode</span></span>|<span data-ttu-id="00b13-113">Int32</span><span class="sxs-lookup"><span data-stu-id="00b13-113">Int32</span></span>|<span data-ttu-id="00b13-114">提供在登录失败过程中生成的 5-6digit 错误代码。</span><span class="sxs-lookup"><span data-stu-id="00b13-114">Provides the 5-6digit error code that's generated during a sign-in failure.</span></span> <span data-ttu-id="00b13-115">查看[错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。</span><span class="sxs-lookup"><span data-stu-id="00b13-115">Check out the [list of error codes and messages](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).</span></span>|
-|<span data-ttu-id="00b13-116">failureReason</span><span class="sxs-lookup"><span data-stu-id="00b13-116">failureReason</span></span>|<span data-ttu-id="00b13-117">String</span><span class="sxs-lookup"><span data-stu-id="00b13-117">String</span></span>|<span data-ttu-id="00b13-118">为相应的登录活动提供错误消息或失败原因。</span><span class="sxs-lookup"><span data-stu-id="00b13-118">Provides the error message or the reason for failure for the corresponding sign-in activity.</span></span> <span data-ttu-id="00b13-119">查看[错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。</span><span class="sxs-lookup"><span data-stu-id="00b13-119">Check out the [list of error codes and messages](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).</span></span>|
+|<span data-ttu-id="38e04-109">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="38e04-109">additionalDetails</span></span>|<span data-ttu-id="38e04-110">String</span><span class="sxs-lookup"><span data-stu-id="38e04-110">String</span></span>|<span data-ttu-id="38e04-111">提供有关登录活动的其他详细信息</span><span class="sxs-lookup"><span data-stu-id="38e04-111">Provides additional details on the sign-in activity</span></span>|
+|<span data-ttu-id="38e04-112">errorCode</span><span class="sxs-lookup"><span data-stu-id="38e04-112">errorCode</span></span>|<span data-ttu-id="38e04-113">Int32</span><span class="sxs-lookup"><span data-stu-id="38e04-113">Int32</span></span>|<span data-ttu-id="38e04-114">提供在登录失败过程中生成的 5-6digit 错误代码。</span><span class="sxs-lookup"><span data-stu-id="38e04-114">Provides the 5-6digit error code that's generated during a sign-in failure.</span></span> <span data-ttu-id="38e04-115">查看[错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。</span><span class="sxs-lookup"><span data-stu-id="38e04-115">Check out the [list of error codes and messages](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).</span></span>|
+|<span data-ttu-id="38e04-116">failureReason</span><span class="sxs-lookup"><span data-stu-id="38e04-116">failureReason</span></span>|<span data-ttu-id="38e04-117">String</span><span class="sxs-lookup"><span data-stu-id="38e04-117">String</span></span>|<span data-ttu-id="38e04-118">为相应的登录活动提供错误消息或失败原因。</span><span class="sxs-lookup"><span data-stu-id="38e04-118">Provides the error message or the reason for failure for the corresponding sign-in activity.</span></span> <span data-ttu-id="38e04-119">查看[错误代码和消息的列表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)。</span><span class="sxs-lookup"><span data-stu-id="38e04-119">Check out the [list of error codes and messages](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="00b13-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="00b13-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="38e04-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="38e04-120">JSON representation</span></span>
 
-<span data-ttu-id="00b13-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="00b13-121">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="38e04-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="38e04-121">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

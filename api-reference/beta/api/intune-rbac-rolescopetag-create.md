@@ -4,31 +4,32 @@ description: 创建新的 roleScopeTag 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e8297e48bc26a96a12bce5449a5f3017340d3fa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 86948b3c82a5198977de7ef799002d1dab69ecbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985260"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995620"
 ---
-# <a name="create-rolescopetag"></a><span data-ttu-id="44bd7-103">创建 roleScopeTag</span><span class="sxs-lookup"><span data-stu-id="44bd7-103">Create roleScopeTag</span></span>
+# <a name="create-rolescopetag"></a><span data-ttu-id="2815d-103">创建 roleScopeTag</span><span class="sxs-lookup"><span data-stu-id="2815d-103">Create roleScopeTag</span></span>
 
-> <span data-ttu-id="44bd7-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="44bd7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2815d-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2815d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="44bd7-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="44bd7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2815d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2815d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="44bd7-106">创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。</span><span class="sxs-lookup"><span data-stu-id="44bd7-106">Create a new [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.</span></span>
+<span data-ttu-id="2815d-106">创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2815d-106">Create a new [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="44bd7-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="44bd7-107">Prerequisites</span></span>
-<span data-ttu-id="44bd7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="44bd7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2815d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="2815d-107">Prerequisites</span></span>
+<span data-ttu-id="2815d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2815d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="44bd7-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="44bd7-110">Permission type</span></span>|<span data-ttu-id="44bd7-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="44bd7-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2815d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2815d-110">Permission type</span></span>|<span data-ttu-id="2815d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2815d-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="44bd7-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="44bd7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="44bd7-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44bd7-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="44bd7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="44bd7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="44bd7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="44bd7-115">Not supported.</span></span>|
-|<span data-ttu-id="44bd7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="44bd7-116">Application</span></span>|<span data-ttu-id="44bd7-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="44bd7-117">Not supported.</span></span>|
+|<span data-ttu-id="2815d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2815d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2815d-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2815d-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="2815d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2815d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2815d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2815d-115">Not supported.</span></span>|
+|<span data-ttu-id="2815d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2815d-116">Application</span></span>|<span data-ttu-id="2815d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="2815d-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="44bd7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="44bd7-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2815d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2815d-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,32 +39,32 @@ POST /deviceManagement/roleScopeTags
 POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="44bd7-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="44bd7-119">Request headers</span></span>
-|<span data-ttu-id="44bd7-120">标头</span><span class="sxs-lookup"><span data-stu-id="44bd7-120">Header</span></span>|<span data-ttu-id="44bd7-121">值</span><span class="sxs-lookup"><span data-stu-id="44bd7-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2815d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2815d-119">Request headers</span></span>
+|<span data-ttu-id="2815d-120">标头</span><span class="sxs-lookup"><span data-stu-id="2815d-120">Header</span></span>|<span data-ttu-id="2815d-121">值</span><span class="sxs-lookup"><span data-stu-id="2815d-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="44bd7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="44bd7-122">Authorization</span></span>|<span data-ttu-id="44bd7-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="44bd7-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="44bd7-124">接受</span><span class="sxs-lookup"><span data-stu-id="44bd7-124">Accept</span></span>|<span data-ttu-id="44bd7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="44bd7-125">application/json</span></span>|
+|<span data-ttu-id="2815d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2815d-122">Authorization</span></span>|<span data-ttu-id="2815d-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2815d-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2815d-124">接受</span><span class="sxs-lookup"><span data-stu-id="2815d-124">Accept</span></span>|<span data-ttu-id="2815d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2815d-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="44bd7-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="44bd7-126">Request body</span></span>
-<span data-ttu-id="44bd7-127">在请求正文中, 提供 roleScopeTag 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="44bd7-127">In the request body, supply a JSON representation for the roleScopeTag object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2815d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2815d-126">Request body</span></span>
+<span data-ttu-id="2815d-127">在请求正文中, 提供 roleScopeTag 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2815d-127">In the request body, supply a JSON representation for the roleScopeTag object.</span></span>
 
-<span data-ttu-id="44bd7-128">下表显示创建 roleScopeTag 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="44bd7-128">The following table shows the properties that are required when you create the roleScopeTag.</span></span>
+<span data-ttu-id="2815d-128">下表显示创建 roleScopeTag 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="2815d-128">The following table shows the properties that are required when you create the roleScopeTag.</span></span>
 
-|<span data-ttu-id="44bd7-129">属性</span><span class="sxs-lookup"><span data-stu-id="44bd7-129">Property</span></span>|<span data-ttu-id="44bd7-130">类型</span><span class="sxs-lookup"><span data-stu-id="44bd7-130">Type</span></span>|<span data-ttu-id="44bd7-131">说明</span><span class="sxs-lookup"><span data-stu-id="44bd7-131">Description</span></span>|
+|<span data-ttu-id="2815d-129">属性</span><span class="sxs-lookup"><span data-stu-id="2815d-129">Property</span></span>|<span data-ttu-id="2815d-130">类型</span><span class="sxs-lookup"><span data-stu-id="2815d-130">Type</span></span>|<span data-ttu-id="2815d-131">说明</span><span class="sxs-lookup"><span data-stu-id="2815d-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="44bd7-132">id</span><span class="sxs-lookup"><span data-stu-id="44bd7-132">id</span></span>|<span data-ttu-id="44bd7-133">字符串</span><span class="sxs-lookup"><span data-stu-id="44bd7-133">String</span></span>|<span data-ttu-id="44bd7-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="44bd7-134">Key of the entity.</span></span> <span data-ttu-id="44bd7-135">此为只读，且自动生成。</span><span class="sxs-lookup"><span data-stu-id="44bd7-135">This is read-only and automatically generated.</span></span>|
-|<span data-ttu-id="44bd7-136">displayName</span><span class="sxs-lookup"><span data-stu-id="44bd7-136">displayName</span></span>|<span data-ttu-id="44bd7-137">String</span><span class="sxs-lookup"><span data-stu-id="44bd7-137">String</span></span>|<span data-ttu-id="44bd7-138">角色范围标记的显示名称或友好名称。</span><span class="sxs-lookup"><span data-stu-id="44bd7-138">The display or friendly name of the Role Scope Tag.</span></span>|
-|<span data-ttu-id="44bd7-139">说明</span><span class="sxs-lookup"><span data-stu-id="44bd7-139">description</span></span>|<span data-ttu-id="44bd7-140">String</span><span class="sxs-lookup"><span data-stu-id="44bd7-140">String</span></span>|<span data-ttu-id="44bd7-141">角色范围标记的说明。</span><span class="sxs-lookup"><span data-stu-id="44bd7-141">Description of the Role Scope Tag.</span></span>|
+|<span data-ttu-id="2815d-132">id</span><span class="sxs-lookup"><span data-stu-id="2815d-132">id</span></span>|<span data-ttu-id="2815d-133">字符串</span><span class="sxs-lookup"><span data-stu-id="2815d-133">String</span></span>|<span data-ttu-id="2815d-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="2815d-134">Key of the entity.</span></span> <span data-ttu-id="2815d-135">此为只读，且自动生成。</span><span class="sxs-lookup"><span data-stu-id="2815d-135">This is read-only and automatically generated.</span></span>|
+|<span data-ttu-id="2815d-136">displayName</span><span class="sxs-lookup"><span data-stu-id="2815d-136">displayName</span></span>|<span data-ttu-id="2815d-137">String</span><span class="sxs-lookup"><span data-stu-id="2815d-137">String</span></span>|<span data-ttu-id="2815d-138">角色范围标记的显示名称或友好名称。</span><span class="sxs-lookup"><span data-stu-id="2815d-138">The display or friendly name of the Role Scope Tag.</span></span>|
+|<span data-ttu-id="2815d-139">说明</span><span class="sxs-lookup"><span data-stu-id="2815d-139">description</span></span>|<span data-ttu-id="2815d-140">String</span><span class="sxs-lookup"><span data-stu-id="2815d-140">String</span></span>|<span data-ttu-id="2815d-141">角色范围标记的说明。</span><span class="sxs-lookup"><span data-stu-id="2815d-141">Description of the Role Scope Tag.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="44bd7-142">响应</span><span class="sxs-lookup"><span data-stu-id="44bd7-142">Response</span></span>
-<span data-ttu-id="44bd7-143">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。</span><span class="sxs-lookup"><span data-stu-id="44bd7-143">If successful, this method returns a `201 Created` response code and a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2815d-142">响应</span><span class="sxs-lookup"><span data-stu-id="2815d-142">Response</span></span>
+<span data-ttu-id="2815d-143">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2815d-143">If successful, this method returns a `201 Created` response code and a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="44bd7-144">示例</span><span class="sxs-lookup"><span data-stu-id="44bd7-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2815d-144">示例</span><span class="sxs-lookup"><span data-stu-id="2815d-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="44bd7-145">请求</span><span class="sxs-lookup"><span data-stu-id="44bd7-145">Request</span></span>
-<span data-ttu-id="44bd7-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="44bd7-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2815d-145">请求</span><span class="sxs-lookup"><span data-stu-id="2815d-145">Request</span></span>
+<span data-ttu-id="2815d-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2815d-146">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleScopeTags
 Content-type: application/json
@@ -76,8 +77,8 @@ Content-length: 133
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="44bd7-147">响应</span><span class="sxs-lookup"><span data-stu-id="44bd7-147">Response</span></span>
-<span data-ttu-id="44bd7-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="44bd7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2815d-147">响应</span><span class="sxs-lookup"><span data-stu-id="2815d-147">Response</span></span>
+<span data-ttu-id="2815d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2815d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

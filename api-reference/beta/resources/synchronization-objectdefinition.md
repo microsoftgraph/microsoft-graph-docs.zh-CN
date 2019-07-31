@@ -2,32 +2,33 @@
 title: objectDefinition 资源类型
 description: 描述对象及其属性。 对象定义是 directoryDefinition 的一部分, 它作为 synchronizationSchema 的一部分进行更新。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 38a636e8b85758d21cb91bd2951916ed9db9dc7a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: bbd02d40408ef53f8c731cadb4bd96aca6475102
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620526"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007870"
 ---
-# <a name="objectdefinition-resource-type"></a><span data-ttu-id="0d116-104">objectDefinition 资源类型</span><span class="sxs-lookup"><span data-stu-id="0d116-104">objectDefinition resource type</span></span>
+# <a name="objectdefinition-resource-type"></a><span data-ttu-id="72141-104">objectDefinition 资源类型</span><span class="sxs-lookup"><span data-stu-id="72141-104">objectDefinition resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0d116-105">描述对象及其属性。</span><span class="sxs-lookup"><span data-stu-id="0d116-105">Describes an object and its attributes.</span></span> <span data-ttu-id="0d116-106">对象定义是[directoryDefinition](synchronization-directorydefinition.md)的一部分, 它作为[synchronizationSchema](synchronization-synchronizationschema.md)的一部分进行更新。</span><span class="sxs-lookup"><span data-stu-id="0d116-106">Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).</span></span>
+<span data-ttu-id="72141-105">描述对象及其属性。</span><span class="sxs-lookup"><span data-stu-id="72141-105">Describes an object and its attributes.</span></span> <span data-ttu-id="72141-106">对象定义是[directoryDefinition](synchronization-directorydefinition.md)的一部分, 它作为[synchronizationSchema](synchronization-synchronizationschema.md)的一部分进行更新。</span><span class="sxs-lookup"><span data-stu-id="72141-106">Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0d116-107">属性</span><span class="sxs-lookup"><span data-stu-id="0d116-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="72141-107">属性</span><span class="sxs-lookup"><span data-stu-id="72141-107">Properties</span></span>
 
-| <span data-ttu-id="0d116-108">属性</span><span class="sxs-lookup"><span data-stu-id="0d116-108">Property</span></span>      | <span data-ttu-id="0d116-109">类型</span><span class="sxs-lookup"><span data-stu-id="0d116-109">Type</span></span>      | <span data-ttu-id="0d116-110">说明</span><span class="sxs-lookup"><span data-stu-id="0d116-110">Description</span></span>    |
+| <span data-ttu-id="72141-108">属性</span><span class="sxs-lookup"><span data-stu-id="72141-108">Property</span></span>      | <span data-ttu-id="72141-109">类型</span><span class="sxs-lookup"><span data-stu-id="72141-109">Type</span></span>      | <span data-ttu-id="72141-110">说明</span><span class="sxs-lookup"><span data-stu-id="72141-110">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="0d116-111">attributes</span><span class="sxs-lookup"><span data-stu-id="0d116-111">attributes</span></span>     |<span data-ttu-id="0d116-112">[attributeDefinition](synchronization-attributedefinition.md)集合</span><span class="sxs-lookup"><span data-stu-id="0d116-112">[attributeDefinition](synchronization-attributedefinition.md) collection</span></span>    | <span data-ttu-id="0d116-113">定义对象的属性。</span><span class="sxs-lookup"><span data-stu-id="0d116-113">Defines attributes of the object.</span></span> |
-|<span data-ttu-id="0d116-114">metadata</span><span class="sxs-lookup"><span data-stu-id="0d116-114">metadata</span></span>       |<span data-ttu-id="0d116-115">[metadataEntry](synchronization-metadataentry.md)集合</span><span class="sxs-lookup"><span data-stu-id="0d116-115">[metadataEntry](synchronization-metadataentry.md) collection</span></span>   |<span data-ttu-id="0d116-116">其他扩展属性。</span><span class="sxs-lookup"><span data-stu-id="0d116-116">Additional extension properties.</span></span> <span data-ttu-id="0d116-117">除非明确提到, 否则不应更改元数据值。</span><span class="sxs-lookup"><span data-stu-id="0d116-117">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
-|<span data-ttu-id="0d116-118">name</span><span class="sxs-lookup"><span data-stu-id="0d116-118">name</span></span>           |<span data-ttu-id="0d116-119">String</span><span class="sxs-lookup"><span data-stu-id="0d116-119">String</span></span>     |<span data-ttu-id="0d116-120">对象的名称。</span><span class="sxs-lookup"><span data-stu-id="0d116-120">Name of the object.</span></span> <span data-ttu-id="0d116-121">在目录定义中必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="0d116-121">Must be unique within a directory definition.</span></span> <span data-ttu-id="0d116-122">不可为 null。</span><span class="sxs-lookup"><span data-stu-id="0d116-122">Not nullable.</span></span>|
+|<span data-ttu-id="72141-111">attributes</span><span class="sxs-lookup"><span data-stu-id="72141-111">attributes</span></span>     |<span data-ttu-id="72141-112">[attributeDefinition](synchronization-attributedefinition.md)集合</span><span class="sxs-lookup"><span data-stu-id="72141-112">[attributeDefinition](synchronization-attributedefinition.md) collection</span></span>    | <span data-ttu-id="72141-113">定义对象的属性。</span><span class="sxs-lookup"><span data-stu-id="72141-113">Defines attributes of the object.</span></span> |
+|<span data-ttu-id="72141-114">metadata</span><span class="sxs-lookup"><span data-stu-id="72141-114">metadata</span></span>       |<span data-ttu-id="72141-115">[metadataEntry](synchronization-metadataentry.md)集合</span><span class="sxs-lookup"><span data-stu-id="72141-115">[metadataEntry](synchronization-metadataentry.md) collection</span></span>   |<span data-ttu-id="72141-116">其他扩展属性。</span><span class="sxs-lookup"><span data-stu-id="72141-116">Additional extension properties.</span></span> <span data-ttu-id="72141-117">除非明确提到, 否则不应更改元数据值。</span><span class="sxs-lookup"><span data-stu-id="72141-117">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
+|<span data-ttu-id="72141-118">name</span><span class="sxs-lookup"><span data-stu-id="72141-118">name</span></span>           |<span data-ttu-id="72141-119">String</span><span class="sxs-lookup"><span data-stu-id="72141-119">String</span></span>     |<span data-ttu-id="72141-120">对象的名称。</span><span class="sxs-lookup"><span data-stu-id="72141-120">Name of the object.</span></span> <span data-ttu-id="72141-121">在目录定义中必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="72141-121">Must be unique within a directory definition.</span></span> <span data-ttu-id="72141-122">不可为 null。</span><span class="sxs-lookup"><span data-stu-id="72141-122">Not nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0d116-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0d116-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="72141-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="72141-123">JSON representation</span></span>
 
-<span data-ttu-id="0d116-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0d116-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="72141-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="72141-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +46,7 @@ ms.locfileid: "35620526"
 }
 ```
 
-## <a name="json-example"></a><span data-ttu-id="0d116-125">JSON 示例</span><span class="sxs-lookup"><span data-stu-id="0d116-125">JSON Example</span></span>
+## <a name="json-example"></a><span data-ttu-id="72141-125">JSON 示例</span><span class="sxs-lookup"><span data-stu-id="72141-125">JSON Example</span></span>
 
 <!-- {
   "blockType": "resource",

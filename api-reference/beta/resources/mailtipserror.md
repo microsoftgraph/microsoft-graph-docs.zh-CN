@@ -4,28 +4,29 @@ description: 操作过程中发生的错误。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bcf56c3f5f090fd2f14f3556442e5c19ece9c6cf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0c17a2fa6cd5475c043fddadef735599c954779d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009816"
 ---
-# <a name="mailtipserror-resource-type"></a><span data-ttu-id="e335f-103">mailTipsError 资源类型</span><span class="sxs-lookup"><span data-stu-id="e335f-103">mailTipsError resource type</span></span>
+# <a name="mailtipserror-resource-type"></a><span data-ttu-id="6c72d-103">mailTipsError 资源类型</span><span class="sxs-lookup"><span data-stu-id="6c72d-103">mailTipsError resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e335f-104">操作过程中发生的错误。</span><span class="sxs-lookup"><span data-stu-id="e335f-104">An error that occurs during an action.</span></span>
+<span data-ttu-id="6c72d-104">操作过程中发生的错误。</span><span class="sxs-lookup"><span data-stu-id="6c72d-104">An error that occurs during an action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e335f-105">属性</span><span class="sxs-lookup"><span data-stu-id="e335f-105">Properties</span></span>
-| <span data-ttu-id="e335f-106">属性</span><span class="sxs-lookup"><span data-stu-id="e335f-106">Property</span></span>     | <span data-ttu-id="e335f-107">类型</span><span class="sxs-lookup"><span data-stu-id="e335f-107">Type</span></span>   |<span data-ttu-id="e335f-108">描述</span><span class="sxs-lookup"><span data-stu-id="e335f-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6c72d-105">属性</span><span class="sxs-lookup"><span data-stu-id="6c72d-105">Properties</span></span>
+| <span data-ttu-id="6c72d-106">属性</span><span class="sxs-lookup"><span data-stu-id="6c72d-106">Property</span></span>     | <span data-ttu-id="6c72d-107">类型</span><span class="sxs-lookup"><span data-stu-id="6c72d-107">Type</span></span>   |<span data-ttu-id="6c72d-108">描述</span><span class="sxs-lookup"><span data-stu-id="6c72d-108">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="e335f-109">message</span><span class="sxs-lookup"><span data-stu-id="e335f-109">message</span></span> | <span data-ttu-id="e335f-110">String</span><span class="sxs-lookup"><span data-stu-id="e335f-110">String</span></span> | <span data-ttu-id="e335f-111">错误消息。</span><span class="sxs-lookup"><span data-stu-id="e335f-111">The error message.</span></span> |
-| <span data-ttu-id="e335f-112">code</span><span class="sxs-lookup"><span data-stu-id="e335f-112">code</span></span> | <span data-ttu-id="e335f-113">String</span><span class="sxs-lookup"><span data-stu-id="e335f-113">String</span></span> | <span data-ttu-id="e335f-114">错误代码。</span><span class="sxs-lookup"><span data-stu-id="e335f-114">The error code.</span></span> |
+| <span data-ttu-id="6c72d-109">message</span><span class="sxs-lookup"><span data-stu-id="6c72d-109">message</span></span> | <span data-ttu-id="6c72d-110">String</span><span class="sxs-lookup"><span data-stu-id="6c72d-110">String</span></span> | <span data-ttu-id="6c72d-111">错误消息。</span><span class="sxs-lookup"><span data-stu-id="6c72d-111">The error message.</span></span> |
+| <span data-ttu-id="6c72d-112">code</span><span class="sxs-lookup"><span data-stu-id="6c72d-112">code</span></span> | <span data-ttu-id="6c72d-113">String</span><span class="sxs-lookup"><span data-stu-id="6c72d-113">String</span></span> | <span data-ttu-id="6c72d-114">错误代码。</span><span class="sxs-lookup"><span data-stu-id="6c72d-114">The error code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="e335f-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e335f-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6c72d-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6c72d-115">JSON representation</span></span>
 
-<span data-ttu-id="e335f-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e335f-116">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6c72d-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6c72d-116">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
