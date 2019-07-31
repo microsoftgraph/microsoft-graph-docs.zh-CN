@@ -4,12 +4,13 @@ description: OS X 受信任的根证书配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 438f1425a720407cf77179bdfd47863904d3545a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4c99fee805f65c0678a75c81ae2f4a6bd8dbcf5f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992085"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000898"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>macOSTrustedRootCertificate 资源类型
 

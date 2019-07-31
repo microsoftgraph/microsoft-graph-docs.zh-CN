@@ -4,12 +4,13 @@ description: 包含已排除的 Office365 应用程序的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91418a1a60a87f381dc15c63a60d69e8c264a5c3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6bd731107571e8959418466541e2947d40d16072
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991245"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006008"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 

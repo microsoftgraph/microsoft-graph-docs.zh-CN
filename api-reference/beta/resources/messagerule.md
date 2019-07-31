@@ -4,12 +4,13 @@ description: 适用于用户收件箱邮件的规则。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d74d4c6a5121355113a883c5c8096420986b6549
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2bdcdba51424f7f864acb454869522b0996ef254
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009697"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 

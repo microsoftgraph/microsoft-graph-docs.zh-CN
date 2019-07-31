@@ -1,19 +1,22 @@
 ---
 title: passwordCredential 资源类型
-description: 包含与应用程序或服务主体相关联的密码凭据。 servicePrincipal 实体和 application 实体的**passwordCredentials**属性是**passwordCredential**的集合。
+description: 包含与应用程序或服务主体相关联的密码凭据。 ServicePrincipal 实体和 application 实体的**passwordCredentials**属性是**passwordCredential**的集合。
 localization_priority: Normal
-ms.openlocfilehash: f00deb42dcc24fc6d8218239d5d807ee21b2f7c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 72b07c92456ba8c1b1681b8d00b1dc5d512bc355
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345004"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009200"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordCredential 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含与应用程序或服务主体相关联的密码凭据。 [servicePrincipal](serviceprincipal.md)实体和[application](application.md)实体的**passwordCredentials**属性是**passwordCredential**的集合。
+包含与应用程序或服务主体相关联的密码凭据。 [ServicePrincipal](serviceprincipal.md)实体和[Application](application.md)实体的**passwordCredentials**属性是**passwordCredential**的集合。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -4,12 +4,13 @@ description: FirewallPreSharedKeyEncodingMethod 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbbb68e9bc2472d1ab4a7ad0082059bc29fe0fcb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: ddd167d69674c0e32c184aa0f68bd7698331ee3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004295"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>firewallPreSharedKeyEncodingMethodType 枚举类型
 

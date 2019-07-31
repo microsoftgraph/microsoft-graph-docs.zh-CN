@@ -4,12 +4,13 @@ description: 更新 roleDefinition 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf767d6a48f8546147f525fb1756e8e9c7fc2d9c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4bfbf0765362670b5f8c875a711fbb3cc9ee1e3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988459"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995627"
 ---
 # <a name="update-roledefinition"></a>更新 roleDefinition
 

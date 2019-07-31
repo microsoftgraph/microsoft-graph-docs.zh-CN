@@ -4,12 +4,13 @@ description: MacOS 应用程序所需的最低操作系统。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12be5728153e08a0e6f267c0773b9c6fef2cff8a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 455c9ce625bc36b1f3423cba2a7538d1d912f6ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957687"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005434"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem 资源类型
 

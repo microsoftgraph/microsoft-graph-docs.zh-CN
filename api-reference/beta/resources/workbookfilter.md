@@ -2,12 +2,15 @@
 title: workbookFilter 资源类型
 description: 管理表格列的筛选。
 localization_priority: Normal
-ms.openlocfilehash: 79ded0bfca0ace3b2d7c1bcdb4cd8dd2696802a4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: f3622a2efd952907214add4343bb5958adebe606
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007121"
 ---
 # <a name="workbookfilter-resource-type"></a>workbookFilter 资源类型
 

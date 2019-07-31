@@ -4,12 +4,13 @@ description: 管理对 Table 对象的排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6ba1e7cdcf48a3ac5cf8262be2174481016aad2e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ea0332f1ad00029cf511f2bc55aca80836e5ef2c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348576"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007030"
 ---
 # <a name="workbooktablesort-resource-type"></a>workbookTableSort 资源类型
 

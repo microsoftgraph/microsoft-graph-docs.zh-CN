@@ -4,18 +4,19 @@ description: 您可以使用 Microsoft Graph 查询由 Azure AD Identity Protect
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 892387c3149f7492b5494a02bbd5e4200cc7757c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: d43f3a54e8ec8aebd0c8018cea9986c0c161a073
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005819"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>使用 Azure AD 标识保护 API (预览)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以使用 Microsoft Graph 查询由[Azure AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)检测到的每种风险事件类型的[identityRiskEvent](identityriskevent.md)资源。 这些事件对使用 Azure AD 高级 P2 的客户可用。 具有 Azure AD 高级 P1 的客户可以使用事件子集。
+您可以使用 Microsoft Graph 查询由[AZURE AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)检测到的每种风险事件类型的[identityRiskEvent](identityriskevent.md)资源。 这些事件对使用 Azure AD 高级 P2 的客户可用。 具有 Azure AD 高级 P1 的客户可以使用事件子集。
 
 * [来自匿名 IP 地址的登录](anonymousipriskevent.md)
 * [来自受恶意软件感染的设备的登录](malwareriskevent.md)

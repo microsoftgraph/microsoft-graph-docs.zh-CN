@@ -4,12 +4,13 @@ description: 删除 groupPolicyPresentationValueMultiText。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cc2534634a8a4f4694b698647f0cfc5ede61f12
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e12a3b4ec5e27b66bc140169f955045847fbb152
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985792"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995172"
 ---
 # <a name="delete-grouppolicypresentationvaluemultitext"></a>删除 groupPolicyPresentationValueMultiText
 

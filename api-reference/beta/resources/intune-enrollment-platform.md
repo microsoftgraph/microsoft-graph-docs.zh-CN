@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 306103f59de675204200284c3c10e63aa49e0163
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0e3f9c5ab02d85b6f0d2ca1610c2f902dc5563d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999036"
 ---
 # <a name="platform-enum-type"></a>平台枚举类型
 

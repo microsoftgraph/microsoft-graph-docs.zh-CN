@@ -2,12 +2,15 @@
 title: implicitGrantSettings 资源类型
 description: 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求令牌。 在隐式流中, 可以使用单独的属性来请求 ID 和访问令牌。 若要启用隐式流, 下列属性中必须至少有一个设置为 true。
 localization_priority: Normal
-ms.openlocfilehash: 1026f3b97a3305dff7a715fae000ab9695ac8e9d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 92ba18488cc2700b565be47bac3874b6d75e1c13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333608"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005791"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>implicitGrantSettings 资源类型
 

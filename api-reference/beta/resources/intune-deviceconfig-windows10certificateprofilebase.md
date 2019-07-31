@@ -4,12 +4,13 @@ description: Windows 10 证书配置文件的基本类。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76487a79746e8a8d117128780b20bbc909cc34b5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2c79f0bd118eff4a96295a46c34ce87bfecf1036
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992743"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000450"
 ---
 # <a name="windows10certificateprofilebase-resource-type"></a>windows10CertificateProfileBase 资源类型
 

@@ -4,12 +4,13 @@ description: 通过提供此配置文件中的配置, 可以指示 Windows 10 �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9426ec065449d4cdd68da876977196a1fe5b44c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: dc72a3b0b8934b5056bad261cc2f11121293f6e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982117"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000366"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>windows10VpnConfiguration 资源类型
 

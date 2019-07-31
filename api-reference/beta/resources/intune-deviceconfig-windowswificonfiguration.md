@@ -4,12 +4,13 @@ description: 设备配置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff3e3249bfbc202ea0e0b9610d05a2cef341bcd5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2be946a26d9ffa41eadb3e42a0cbaa4eca85f941
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983699"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000065"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>windowsWifiConfiguration 资源类型
 

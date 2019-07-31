@@ -4,12 +4,13 @@ description: Domainname 源。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fc122b050fcd41e093032b190ad3ae5ecf85a72
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 7034c9e3f1f746ade93fa9cb1aa4068b49ace26b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004517"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 枚举类型
 

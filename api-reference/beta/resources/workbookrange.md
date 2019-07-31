@@ -4,12 +4,13 @@ description: 区域表示一个或多个相邻的单元格，例如单元格、�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: bf3a142452e6582808731c979e060540fb456760
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: baf4dc86e4a13436e1dc96edc4f1a84967a88e38
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348606"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007079"
 ---
 # <a name="workbookrange-resource-type"></a>workbookRange 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "33348606"
 |[Entirecolumn](../api/range-entirecolumn.md)|[workbookRange](workbookrange.md)|获取表示区域整列的对象。|
 |[Entirerow](../api/range-entirerow.md)|[workbookRange](workbookrange.md)|获取表示区域整行的对象。|
 |[Intersection](../api/range-intersection.md)|[workbookRange](workbookrange.md)|获取表示指定区域的矩形交集的 range 对象。|
-|[Lastcell](../api/range-lastcell.md)|[区域](workbookrange.md)|获取区域内的最后一个单元格。例如，“B2:D5”的最后一个单元格是“D5”。|
+|[Lastcell](../api/range-lastcell.md)|[Range](workbookrange.md)|获取区域内的最后一个单元格。例如，“B2:D5”的最后一个单元格是“D5”。|
 |[Lastcolumn](../api/range-lastcolumn.md)|[workbookRange](workbookrange.md)|获取区域内的最后一列。例如，“B2:D5”的最后一列是“D2:D5”。|
 |[Lastrow](../api/range-lastrow.md)|[区域](workbookrange.md)|获取区域内的最后一行。例如，“B2:D5”的最后一行是“B5:D5”。|
 |[Offsetrange](../api/range-offsetrange.md)|[workbookRange](workbookrange.md)|获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。|

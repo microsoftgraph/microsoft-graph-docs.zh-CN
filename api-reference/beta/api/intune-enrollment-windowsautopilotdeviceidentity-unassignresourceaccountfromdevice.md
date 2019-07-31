@@ -4,12 +4,13 @@ description: 取消分配 Autopilot 设备中的资源帐户。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a47c07fb6e2e0a981386e5d4ab666007845f43c6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 03f1dc44b3491e563972a7d3b4950c608f8d8020
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995487"
 ---
 # <a name="unassignresourceaccountfromdevice-action"></a>unassignResourceAccountFromDevice 操作
 

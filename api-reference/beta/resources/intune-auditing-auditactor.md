@@ -4,12 +4,13 @@ description: 包含审核主角的属性的类。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 633f5f4c513d6f770df643c26934b994a134e450
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: eb27d70155716e0e30b80c5f9fa7c77b0386b011
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985617"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004888"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 

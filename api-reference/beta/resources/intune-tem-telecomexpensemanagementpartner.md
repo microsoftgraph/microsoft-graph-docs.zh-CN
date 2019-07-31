@@ -4,12 +4,13 @@ description: telecomExpenseManagementPartner 资源表示给定 TEM 服务的元
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6f0a0fd7b98627adfb49c88f619c6d8d6fd9fbe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 66f9b1270db2d9ba685f98d8de8939e0a39c9aaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991000"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010369"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner 资源类型
 

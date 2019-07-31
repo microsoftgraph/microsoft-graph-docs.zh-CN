@@ -4,12 +4,13 @@ description: 将用户连接到在用户周围进行趋势分析的文档 (与�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 90ebc84aa66fcd3dfd352d79256b725bf7a6d0e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7963a3c518fd4fc946da4f6714a3aa52aa4b87eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006218"
 ---
 # <a name="trending-resource-type"></a>趋势资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "33333573"
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | 可用于在体验中可视化文档的属性。 |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | 参考趋势文档的属性, 例如文档的 url 和类型。 |
 | lastModifiedDateTime  | DateTimeOffset            | |
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|

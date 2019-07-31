@@ -2,12 +2,15 @@
 title: governanceRoleSetting 资源类型
 description: " 规则等。"
 localization_priority: Normal
-ms.openlocfilehash: 09e8cb65f8318294d483a2ad66a7119d7b48822a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 1bd1821bbb3336386b54b62ebe7b4787c85d1ebf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340216"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006421"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
@@ -20,13 +23,13 @@ ms.locfileid: "33340216"
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md)集合|列出资源的角色设置的集合。|
-|[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
+|[获取](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
 |[更新](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |更新角色设置对象。 |
 
 ## <a name="properties"></a>属性
 |属性               |类型                                      |说明|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |字符串                                  |roleSetting 的 id。|
+|id                   |字符串                                  |RoleSetting 的 id。|
 |resourceId           |String                                  |必需。 与角色设置相关联的资源的 id。|
 |roleDefinitionId     |String                                  |必需。 与角色设置相关联的角色定义的 id。|
 |isDefault            |Boolean                                 |只读。 指示 roleSetting 是否为默认 roleSetting|

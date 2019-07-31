@@ -4,12 +4,13 @@ description: 封装图表标题的格式属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3827b44ae24a63f8fe048575633cc3b5508ac300
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ce00af7877b4602e76c390635478713835da2f2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348614"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007135"
 ---
 # <a name="workbookcharttitleformat-resource-type"></a>workbookChartTitleFormat 资源类型
 

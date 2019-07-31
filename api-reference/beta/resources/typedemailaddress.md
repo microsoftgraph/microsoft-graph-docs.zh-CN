@@ -2,12 +2,15 @@
 title: typedEmailAddress 资源类型
 description: 表示联系人的名称、电子邮件地址及其对应的电子邮件地址类型。
 localization_priority: Normal
-ms.openlocfilehash: 92f3f1f89c73fe968c7fb06f7c5ed4b0eff883fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c5ece5d1ad1c5c38253d73353b05b94727855fd5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007569"
 ---
 # <a name="typedemailaddress-resource-type"></a>typedEmailAddress 资源类型
 
