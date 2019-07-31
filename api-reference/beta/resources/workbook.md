@@ -4,64 +4,65 @@ description: 工作簿是顶级对象，它包含相关 workbook 对象，例如
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b2dbc2e53eec9b5c64d4249351e8c8366e07f2fd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7653aecb9f10523ce838ec2832a6080f462291f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341407"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007345"
 ---
-# <a name="workbook-resource-type"></a><span data-ttu-id="4b4e5-103">工作簿资源类型</span><span class="sxs-lookup"><span data-stu-id="4b4e5-103">workbook resource type</span></span>
+# <a name="workbook-resource-type"></a><span data-ttu-id="04507-103">工作簿资源类型</span><span class="sxs-lookup"><span data-stu-id="04507-103">workbook resource type</span></span>
 
-<span data-ttu-id="4b4e5-104">工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-104">Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.</span></span>
+<span data-ttu-id="04507-104">工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。</span><span class="sxs-lookup"><span data-stu-id="04507-104">Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4b4e5-105">属性</span><span class="sxs-lookup"><span data-stu-id="4b4e5-105">Properties</span></span>
-<span data-ttu-id="4b4e5-106">无</span><span class="sxs-lookup"><span data-stu-id="4b4e5-106">None</span></span>
+## <a name="properties"></a><span data-ttu-id="04507-105">属性</span><span class="sxs-lookup"><span data-stu-id="04507-105">Properties</span></span>
+<span data-ttu-id="04507-106">无</span><span class="sxs-lookup"><span data-stu-id="04507-106">None</span></span>
 
-## <a name="methods"></a><span data-ttu-id="4b4e5-107">方法</span><span class="sxs-lookup"><span data-stu-id="4b4e5-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="04507-107">方法</span><span class="sxs-lookup"><span data-stu-id="04507-107">Methods</span></span>
 
-| <span data-ttu-id="4b4e5-108">方法</span><span class="sxs-lookup"><span data-stu-id="4b4e5-108">Method</span></span>       | <span data-ttu-id="4b4e5-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="4b4e5-109">Return Type</span></span>  |<span data-ttu-id="4b4e5-110">说明</span><span class="sxs-lookup"><span data-stu-id="4b4e5-110">Description</span></span>|
+| <span data-ttu-id="04507-108">方法</span><span class="sxs-lookup"><span data-stu-id="04507-108">Method</span></span>       | <span data-ttu-id="04507-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="04507-109">Return Type</span></span>  |<span data-ttu-id="04507-110">说明</span><span class="sxs-lookup"><span data-stu-id="04507-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="4b4e5-111">Create Session</span><span class="sxs-lookup"><span data-stu-id="4b4e5-111">Create Session</span></span>](../api/workbook-createsession.md) | [<span data-ttu-id="4b4e5-112">workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="4b4e5-112">workbookSessionInfo</span></span>](workbooksessioninfo.md) |<span data-ttu-id="4b4e5-113">创建工作簿会话以启动永久或非永久会话。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-113">Create a workbook session to start a persistent or non-persistent session.</span></span>|
-|[<span data-ttu-id="4b4e5-114">Close Session</span><span class="sxs-lookup"><span data-stu-id="4b4e5-114">Close Session</span></span>](../api/workbook-closesession.md) | <span data-ttu-id="4b4e5-115">无</span><span class="sxs-lookup"><span data-stu-id="4b4e5-115">None</span></span> |<span data-ttu-id="4b4e5-116">关闭现有会话。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-116">Close an existing session.</span></span>|
-|[<span data-ttu-id="4b4e5-117">Refresh Session</span><span class="sxs-lookup"><span data-stu-id="4b4e5-117">Refresh Session</span></span>](../api/workbook-refreshsession.md) | <span data-ttu-id="4b4e5-118">无</span><span class="sxs-lookup"><span data-stu-id="4b4e5-118">None</span></span> |<span data-ttu-id="4b4e5-119">刷新现有会话。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-119">Refresh an existing session.</span></span>|
+|[<span data-ttu-id="04507-111">Create Session</span><span class="sxs-lookup"><span data-stu-id="04507-111">Create Session</span></span>](../api/workbook-createsession.md) | [<span data-ttu-id="04507-112">workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="04507-112">workbookSessionInfo</span></span>](workbooksessioninfo.md) |<span data-ttu-id="04507-113">创建工作簿会话以启动永久或非永久会话。</span><span class="sxs-lookup"><span data-stu-id="04507-113">Create a workbook session to start a persistent or non-persistent session.</span></span>|
+|[<span data-ttu-id="04507-114">Close Session</span><span class="sxs-lookup"><span data-stu-id="04507-114">Close Session</span></span>](../api/workbook-closesession.md) | <span data-ttu-id="04507-115">无</span><span class="sxs-lookup"><span data-stu-id="04507-115">None</span></span> |<span data-ttu-id="04507-116">关闭现有会话。</span><span class="sxs-lookup"><span data-stu-id="04507-116">Close an existing session.</span></span>|
+|[<span data-ttu-id="04507-117">Refresh Session</span><span class="sxs-lookup"><span data-stu-id="04507-117">Refresh Session</span></span>](../api/workbook-refreshsession.md) | <span data-ttu-id="04507-118">无</span><span class="sxs-lookup"><span data-stu-id="04507-118">None</span></span> |<span data-ttu-id="04507-119">刷新现有会话。</span><span class="sxs-lookup"><span data-stu-id="04507-119">Refresh an existing session.</span></span>|
 
 
-## <a name="relationships"></a><span data-ttu-id="4b4e5-120">关系</span><span class="sxs-lookup"><span data-stu-id="4b4e5-120">Relationships</span></span>
-| <span data-ttu-id="4b4e5-121">关系</span><span class="sxs-lookup"><span data-stu-id="4b4e5-121">Relationship</span></span> | <span data-ttu-id="4b4e5-122">类型</span><span class="sxs-lookup"><span data-stu-id="4b4e5-122">Type</span></span>   |<span data-ttu-id="4b4e5-123">说明</span><span class="sxs-lookup"><span data-stu-id="4b4e5-123">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="04507-120">关系</span><span class="sxs-lookup"><span data-stu-id="04507-120">Relationships</span></span>
+| <span data-ttu-id="04507-121">关系</span><span class="sxs-lookup"><span data-stu-id="04507-121">Relationship</span></span> | <span data-ttu-id="04507-122">类型</span><span class="sxs-lookup"><span data-stu-id="04507-122">Type</span></span>   |<span data-ttu-id="04507-123">说明</span><span class="sxs-lookup"><span data-stu-id="04507-123">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4b4e5-124">names</span><span class="sxs-lookup"><span data-stu-id="4b4e5-124">names</span></span>|<span data-ttu-id="4b4e5-125">[workbookNamedItem](workbooknameditem.md)集合</span><span class="sxs-lookup"><span data-stu-id="4b4e5-125">[workbookNamedItem](workbooknameditem.md) collection</span></span> |<span data-ttu-id="4b4e5-p101">表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-p101">Represents a collection of workbook scoped named items (named ranges and constants). Read-only.</span></span>|
-|<span data-ttu-id="4b4e5-128">表格</span><span class="sxs-lookup"><span data-stu-id="4b4e5-128">tables</span></span>|<span data-ttu-id="4b4e5-129">[workbookTable](workbooktable.md)集合</span><span class="sxs-lookup"><span data-stu-id="4b4e5-129">[workbookTable](workbooktable.md) collection</span></span> |<span data-ttu-id="4b4e5-p102">表示与工作簿关联的表的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-p102">Represents a collection of tables associated with the workbook. Read-only.</span></span>|
-|<span data-ttu-id="4b4e5-132">Worksheets</span><span class="sxs-lookup"><span data-stu-id="4b4e5-132">worksheets</span></span>|<span data-ttu-id="4b4e5-133">[workbookWorksheet](workbookworksheet.md)集合</span><span class="sxs-lookup"><span data-stu-id="4b4e5-133">[workbookWorksheet](workbookworksheet.md) collection</span></span> |<span data-ttu-id="4b4e5-p103">表示与工作簿关联的工作表的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-p103">Represents a collection of worksheets associated with the workbook. Read-only.</span></span>|
+|<span data-ttu-id="04507-124">names</span><span class="sxs-lookup"><span data-stu-id="04507-124">names</span></span>|<span data-ttu-id="04507-125">[workbookNamedItem](workbooknameditem.md)集合</span><span class="sxs-lookup"><span data-stu-id="04507-125">[workbookNamedItem](workbooknameditem.md) collection</span></span> |<span data-ttu-id="04507-p101">表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="04507-p101">Represents a collection of workbook scoped named items (named ranges and constants). Read-only.</span></span>|
+|<span data-ttu-id="04507-128">表格</span><span class="sxs-lookup"><span data-stu-id="04507-128">tables</span></span>|<span data-ttu-id="04507-129">[workbookTable](workbooktable.md)集合</span><span class="sxs-lookup"><span data-stu-id="04507-129">[workbookTable](workbooktable.md) collection</span></span> |<span data-ttu-id="04507-p102">表示与工作簿关联的表的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="04507-p102">Represents a collection of tables associated with the workbook. Read-only.</span></span>|
+|<span data-ttu-id="04507-132">Worksheets</span><span class="sxs-lookup"><span data-stu-id="04507-132">worksheets</span></span>|<span data-ttu-id="04507-133">[workbookWorksheet](workbookworksheet.md)集合</span><span class="sxs-lookup"><span data-stu-id="04507-133">[workbookWorksheet](workbookworksheet.md) collection</span></span> |<span data-ttu-id="04507-p103">表示与工作簿关联的工作表的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="04507-p103">Represents a collection of worksheets associated with the workbook. Read-only.</span></span>|
 
-## <a name="functions"></a><span data-ttu-id="4b4e5-136">函数</span><span class="sxs-lookup"><span data-stu-id="4b4e5-136">Functions</span></span>
+## <a name="functions"></a><span data-ttu-id="04507-136">函数</span><span class="sxs-lookup"><span data-stu-id="04507-136">Functions</span></span>
 
-<span data-ttu-id="4b4e5-p104">[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-p104">[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.</span></span> 
+<span data-ttu-id="04507-p104">[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。</span><span class="sxs-lookup"><span data-stu-id="04507-p104">[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.</span></span> 
 
-<span data-ttu-id="4b4e5-p105">受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-p105">The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.</span></span>
+<span data-ttu-id="04507-p105">受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。</span><span class="sxs-lookup"><span data-stu-id="04507-p105">The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.</span></span>
 
-<span data-ttu-id="4b4e5-142">_重要说明_：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-142">_Important notes:_</span></span> 
-* <span data-ttu-id="4b4e5-143">使用 range 对象（而不是范围地址字符串）提供范围输入参数。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-143">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
-* <span data-ttu-id="4b4e5-144">与大部分 API 中使用的从 0 开始编制的索引不同，索引参数是从 1 开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-144">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span> 
+<span data-ttu-id="04507-142">_重要说明_：</span><span class="sxs-lookup"><span data-stu-id="04507-142">_Important notes:_</span></span> 
+* <span data-ttu-id="04507-143">使用 range 对象（而不是范围地址字符串）提供范围输入参数。</span><span class="sxs-lookup"><span data-stu-id="04507-143">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
+* <span data-ttu-id="04507-144">与大部分 API 中使用的从 0 开始编制的索引不同，索引参数是从 1 开始编制索引。</span><span class="sxs-lookup"><span data-stu-id="04507-144">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span> 
 
-<span data-ttu-id="4b4e5-145">示例：**vlookup**</span><span class="sxs-lookup"><span data-stu-id="4b4e5-145">Example: **vlookup**</span></span>
+<span data-ttu-id="04507-145">示例：**vlookup**</span><span class="sxs-lookup"><span data-stu-id="04507-145">Example: **vlookup**</span></span>
 
-<span data-ttu-id="4b4e5-146">在 Excel 电子表格中，`vlookup` 函数需要使用以下参数：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-146">In an Excel spreadsheet, the `vlookup` function takes the following arguments:</span></span>
+<span data-ttu-id="04507-146">在 Excel 电子表格中，`vlookup` 函数需要使用以下参数：</span><span class="sxs-lookup"><span data-stu-id="04507-146">In an Excel spreadsheet, the `vlookup` function takes the following arguments:</span></span>
 
-1. <span data-ttu-id="4b4e5-147">要查找的值（亦称为“查阅值”）。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-147">The value you want to look up, also called the lookup value.</span></span>
-2. <span data-ttu-id="4b4e5-148">查阅值所在的区域。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-148">The range where the lookup value is located.</span></span> <span data-ttu-id="4b4e5-149">请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-149">Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly.</span></span> <span data-ttu-id="4b4e5-150">例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-150">For example, if your lookup value is in cell C2 then your range should start with C.</span></span>
-3. <span data-ttu-id="4b4e5-151">包含返回值的区域的列号。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-151">The column number in the range that contains the return value.</span></span> <span data-ttu-id="4b4e5-152">例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-152">For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.</span></span>
-4. <span data-ttu-id="4b4e5-153">（可选）如果想要近似匹配，可指定 TRUE；如果想要返回值的完全匹配，则可指定 FALSE。
-</span><span class="sxs-lookup"><span data-stu-id="4b4e5-153">Optionally, you can specify TRUE if you want an approximate match or FALSE if you want an exact match of the return value.</span></span> <span data-ttu-id="4b4e5-154">如果未指定，默认值始终为 TRUE 或近似匹配。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-154">If you don't specify anything, the default value will always be TRUE or approximate match.</span></span>
+1. <span data-ttu-id="04507-147">要查找的值（亦称为“查阅值”）。</span><span class="sxs-lookup"><span data-stu-id="04507-147">The value you want to look up, also called the lookup value.</span></span>
+2. <span data-ttu-id="04507-148">查阅值所在的区域。</span><span class="sxs-lookup"><span data-stu-id="04507-148">The range where the lookup value is located.</span></span> <span data-ttu-id="04507-149">请注意，查阅值应始终位于区域中的第一列，这样 VLOOKUP 才能正常运行。</span><span class="sxs-lookup"><span data-stu-id="04507-149">Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly.</span></span> <span data-ttu-id="04507-150">例如，如果查阅值位于单元格 C2，那么区域应从 C 列开始。</span><span class="sxs-lookup"><span data-stu-id="04507-150">For example, if your lookup value is in cell C2 then your range should start with C.</span></span>
+3. <span data-ttu-id="04507-151">包含返回值的区域的列号。</span><span class="sxs-lookup"><span data-stu-id="04507-151">The column number in the range that contains the return value.</span></span> <span data-ttu-id="04507-152">例如，如果指定 B2: D11 作为区域，应将 B 计为第一列，将 C 计为第二列，依此类推。</span><span class="sxs-lookup"><span data-stu-id="04507-152">For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.</span></span>
+4. <span data-ttu-id="04507-153">（可选）如果想要近似匹配，可指定 TRUE；如果想要返回值的完全匹配，则可指定 FALSE。
+</span><span class="sxs-lookup"><span data-stu-id="04507-153">Optionally, you can specify TRUE if you want an approximate match or FALSE if you want an exact match of the return value.</span></span> <span data-ttu-id="04507-154">如果未指定，默认值始终为 TRUE 或近似匹配。</span><span class="sxs-lookup"><span data-stu-id="04507-154">If you don't specify anything, the default value will always be TRUE or approximate match.</span></span>
 
-<span data-ttu-id="4b4e5-155">在单元格中，`vlookup` 函数如下所示：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-155">Inside a cell, the `vlookup` function looks like this:</span></span> 
+<span data-ttu-id="04507-155">在单元格中，`vlookup` 函数如下所示：</span><span class="sxs-lookup"><span data-stu-id="04507-155">Inside a cell, the `vlookup` function looks like this:</span></span> 
 
-<span data-ttu-id="4b4e5-156">=VLOOKUP(查阅值, 包含查阅值的区域, 包含返回值的区域的列号, 视需要为近似匹配指定 TRUE 或为完全匹配指定 FALSE)</span><span class="sxs-lookup"><span data-stu-id="4b4e5-156">=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)</span></span>
+<span data-ttu-id="04507-156">=VLOOKUP(查阅值, 包含查阅值的区域, 包含返回值的区域的列号, 视需要为近似匹配指定 TRUE 或为完全匹配指定 FALSE)</span><span class="sxs-lookup"><span data-stu-id="04507-156">=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)</span></span>
 
-<span data-ttu-id="4b4e5-157">（请参阅 [VLOOKUP Excel 函数](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）</span><span class="sxs-lookup"><span data-stu-id="4b4e5-157">(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span></span>
+<span data-ttu-id="04507-157">（请参阅 [VLOOKUP Excel 函数](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)文档。）</span><span class="sxs-lookup"><span data-stu-id="04507-157">(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span></span>
 
-<span data-ttu-id="4b4e5-158">下面的示例展示了如何使用 Excel REST API 调用 `vlookup`  函数，以及一个或多个输入区域。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-158">The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.</span></span>
-<span data-ttu-id="4b4e5-159">请求：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-159">Request:</span></span> 
+<span data-ttu-id="04507-158">下面的示例展示了如何使用 Excel REST API 调用 `vlookup`  函数，以及一个或多个输入区域。</span><span class="sxs-lookup"><span data-stu-id="04507-158">The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.</span></span>
+<span data-ttu-id="04507-159">请求：</span><span class="sxs-lookup"><span data-stu-id="04507-159">Request:</span></span> 
 
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
@@ -77,7 +78,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="4b4e5-160">响应：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-160">Response:</span></span>
+<span data-ttu-id="04507-160">响应：</span><span class="sxs-lookup"><span data-stu-id="04507-160">Response:</span></span>
 
 ```http
 HTTP code: 200 OK
@@ -92,19 +93,19 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="4b4e5-161">示例：`median`</span><span class="sxs-lookup"><span data-stu-id="4b4e5-161">Example: `median`</span></span>
+<span data-ttu-id="04507-161">示例：`median`</span><span class="sxs-lookup"><span data-stu-id="04507-161">Example: `median`</span></span>
 
-<span data-ttu-id="4b4e5-162">在 Excel 电子表格中，`median` 函数需要使用一个或多个输入区域。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-162">In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.</span></span>
+<span data-ttu-id="04507-162">在 Excel 电子表格中，`median` 函数需要使用一个或多个输入区域。</span><span class="sxs-lookup"><span data-stu-id="04507-162">In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.</span></span>
 
-<span data-ttu-id="4b4e5-163">在单元格中，`median` 函数如以下示例所示：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-163">Inside a cell, the `median` function looks like this example:</span></span>
+<span data-ttu-id="04507-163">在单元格中，`median` 函数如以下示例所示：</span><span class="sxs-lookup"><span data-stu-id="04507-163">Inside a cell, the `median` function looks like this example:</span></span>
 
-<span data-ttu-id="4b4e5-164">=MEDIAN(A2:A6)</span><span class="sxs-lookup"><span data-stu-id="4b4e5-164">=MEDIAN(A2:A6)</span></span>
+<span data-ttu-id="04507-164">=MEDIAN(A2:A6)</span><span class="sxs-lookup"><span data-stu-id="04507-164">=MEDIAN(A2:A6)</span></span>
 
-<span data-ttu-id="4b4e5-165">（请参阅 [MEDIAN Excel 函数](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）</span><span class="sxs-lookup"><span data-stu-id="4b4e5-165">(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span></span>
+<span data-ttu-id="04507-165">（请参阅 [MEDIAN Excel 函数](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)文档。）</span><span class="sxs-lookup"><span data-stu-id="04507-165">(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span></span>
 
-<span data-ttu-id="4b4e5-166">下面的示例展示了如何调用 `median` 函数，以及如何使用 Excel REST API 传递一个或多个输入区域。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-166">The example below shows how to call the `median` function and one or more input ranges with the Excel REST API.</span></span> 
+<span data-ttu-id="04507-166">下面的示例展示了如何调用 `median` 函数，以及如何使用 Excel REST API 传递一个或多个输入区域。</span><span class="sxs-lookup"><span data-stu-id="04507-166">The example below shows how to call the `median` function and one or more input ranges with the Excel REST API.</span></span> 
 
-<span data-ttu-id="4b4e5-167">请求：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-167">Request:</span></span> 
+<span data-ttu-id="04507-167">请求：</span><span class="sxs-lookup"><span data-stu-id="04507-167">Request:</span></span> 
 
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
@@ -120,7 +121,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="4b4e5-168">响应：</span><span class="sxs-lookup"><span data-stu-id="4b4e5-168">Response:</span></span>
+<span data-ttu-id="04507-168">响应：</span><span class="sxs-lookup"><span data-stu-id="04507-168">Response:</span></span>
 
 ```http
 HTTP code: 200 OK
@@ -134,8 +135,8 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
-## <a name="json-representation"></a><span data-ttu-id="4b4e5-169">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4b4e5-169">JSON Representation</span></span>
-<span data-ttu-id="4b4e5-170">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4b4e5-170">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="04507-169">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="04507-169">JSON Representation</span></span>
+<span data-ttu-id="04507-170">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="04507-170">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "keyProperty": "id",

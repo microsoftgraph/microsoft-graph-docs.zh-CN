@@ -2,35 +2,40 @@
 title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
 localization_priority: Normal
-ms.openlocfilehash: df36e2f64972badcf618a52f3e2874a269913706
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b3b25c0359dc5ebb1fac7ab80d51b2711a31b583
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342744"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007009"
 ---
-# <a name="workinghours-resource-type"></a><span data-ttu-id="cb712-103">workingHours 资源类型</span><span class="sxs-lookup"><span data-stu-id="cb712-103">workingHours resource type</span></span>
+# <a name="workinghours-resource-type"></a><span data-ttu-id="afd34-103">workingHours 资源类型</span><span class="sxs-lookup"><span data-stu-id="afd34-103">workingHours resource type</span></span>
 
-<span data-ttu-id="cb712-104">表示特定时区用户一周的工作天数和小时数。</span><span class="sxs-lookup"><span data-stu-id="cb712-104">Represents the days of the week and hours in a specific time zone that the user works.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb712-105">在处理活动或资源规划应用场景中，访问用户的工作时间会有所帮助。</span><span class="sxs-lookup"><span data-stu-id="cb712-105">Having access to a user's working hours is useful in scenarios that handle activity or resource planning.</span></span> <span data-ttu-id="cb712-106">可以[获取](../api/user-get-mailboxsettings.md#request-3)用户的工作时间，并将其[设置](../api/user-update-mailboxsettings.md#request-2)为用户[邮箱设置](mailboxsettings.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="cb712-106">You can [get](../api/user-get-mailboxsettings.md#request-3) and [set](../api/user-update-mailboxsettings.md#request-2) the working hours of a user as part of the user's [mailbox settings](mailboxsettings.md).</span></span> 
+<span data-ttu-id="afd34-104">表示特定时区用户一周的工作天数和小时数。</span><span class="sxs-lookup"><span data-stu-id="afd34-104">Represents the days of the week and hours in a specific time zone that the user works.</span></span>
 
-<span data-ttu-id="cb712-107">可以选择以不同于在 Outlook 客户端设置时区的方式，为你的工作时间设置时区。</span><span class="sxs-lookup"><span data-stu-id="cb712-107">You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client.</span></span> <span data-ttu-id="cb712-108">在某些情况下这很有用，比如当你在一个与平常工作时区不同的地方旅行时。</span><span class="sxs-lookup"><span data-stu-id="cb712-108">This can be useful in cases like when you travel to a different time zone than you usually work in.</span></span> <span data-ttu-id="cb712-109">可以将 Outlook 客户端设置</span><span class="sxs-lookup"><span data-stu-id="cb712-109">You can set the Outlook client</span></span>  
-<span data-ttu-id="cb712-110">为目标时区，以便在你访问时 Outlook 时间值显示为本地时间。</span><span class="sxs-lookup"><span data-stu-id="cb712-110">to the destination time zone so that Outlook time values are displayed in local time while you are there.</span></span>
-<span data-ttu-id="cb712-111">当其他人在你通常的工作地点申请与你进行工作会议时，他们仍然可以在相应的时区遵守你的工作时间。</span><span class="sxs-lookup"><span data-stu-id="cb712-111">When other people request work meetings with you in your usual place of work, they can still respect your working hours in the appropriate time zone.</span></span>
+<span data-ttu-id="afd34-105">在处理活动或资源规划应用场景中，访问用户的工作时间会有所帮助。</span><span class="sxs-lookup"><span data-stu-id="afd34-105">Having access to a user's working hours is useful in scenarios that handle activity or resource planning.</span></span> <span data-ttu-id="afd34-106">可以[获取](../api/user-get-mailboxsettings.md#request-3)用户的工作时间，并将其[设置](../api/user-update-mailboxsettings.md#request-2)为用户[邮箱设置](mailboxsettings.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="afd34-106">You can [get](../api/user-get-mailboxsettings.md#request-3) and [set](../api/user-update-mailboxsettings.md#request-2) the working hours of a user as part of the user's [mailbox settings](mailboxsettings.md).</span></span> 
+
+<span data-ttu-id="afd34-107">可以选择以不同于在 Outlook 客户端设置时区的方式，为你的工作时间设置时区。</span><span class="sxs-lookup"><span data-stu-id="afd34-107">You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client.</span></span> <span data-ttu-id="afd34-108">在某些情况下这很有用，比如当你在一个与平常工作时区不同的地方旅行时。</span><span class="sxs-lookup"><span data-stu-id="afd34-108">This can be useful in cases like when you travel to a different time zone than you usually work in.</span></span> <span data-ttu-id="afd34-109">可以将 Outlook 客户端设置</span><span class="sxs-lookup"><span data-stu-id="afd34-109">You can set the Outlook client</span></span>  
+<span data-ttu-id="afd34-110">为目标时区，以便在你访问时 Outlook 时间值显示为本地时间。</span><span class="sxs-lookup"><span data-stu-id="afd34-110">to the destination time zone so that Outlook time values are displayed in local time while you are there.</span></span>
+<span data-ttu-id="afd34-111">当其他人在你通常的工作地点申请与你进行工作会议时，他们仍然可以在相应的时区遵守你的工作时间。</span><span class="sxs-lookup"><span data-stu-id="afd34-111">When other people request work meetings with you in your usual place of work, they can still respect your working hours in the appropriate time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="cb712-112">属性</span><span class="sxs-lookup"><span data-stu-id="cb712-112">Properties</span></span>
-| <span data-ttu-id="cb712-113">属性</span><span class="sxs-lookup"><span data-stu-id="cb712-113">Property</span></span>     | <span data-ttu-id="cb712-114">类型</span><span class="sxs-lookup"><span data-stu-id="cb712-114">Type</span></span>   |<span data-ttu-id="cb712-115">说明</span><span class="sxs-lookup"><span data-stu-id="cb712-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="afd34-112">属性</span><span class="sxs-lookup"><span data-stu-id="afd34-112">Properties</span></span>
+| <span data-ttu-id="afd34-113">属性</span><span class="sxs-lookup"><span data-stu-id="afd34-113">Property</span></span>     | <span data-ttu-id="afd34-114">类型</span><span class="sxs-lookup"><span data-stu-id="afd34-114">Type</span></span>   |<span data-ttu-id="afd34-115">说明</span><span class="sxs-lookup"><span data-stu-id="afd34-115">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="cb712-116">daysOfWeek</span><span class="sxs-lookup"><span data-stu-id="cb712-116">daysOfWeek</span></span> | <span data-ttu-id="cb712-117">dayOfWeek 集合</span><span class="sxs-lookup"><span data-stu-id="cb712-117">dayOfWeek collection</span></span> | <span data-ttu-id="cb712-118">用户一周工作的天数。</span><span class="sxs-lookup"><span data-stu-id="cb712-118">The days of the week on which the user works.</span></span> |
-| <span data-ttu-id="cb712-119">startTime</span><span class="sxs-lookup"><span data-stu-id="cb712-119">startTime</span></span> | <span data-ttu-id="cb712-120">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="cb712-120">Edm.TimeOfDay</span></span> | <span data-ttu-id="cb712-121">一天中用户开始工作的时间。</span><span class="sxs-lookup"><span data-stu-id="cb712-121">The time of the day that the user starts working.</span></span> |
-| <span data-ttu-id="cb712-122">endTime</span><span class="sxs-lookup"><span data-stu-id="cb712-122">endTime</span></span> | <span data-ttu-id="cb712-123">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="cb712-123">Edm.TimeOfDay</span></span> | <span data-ttu-id="cb712-124">一天中用户停止工作的时间。</span><span class="sxs-lookup"><span data-stu-id="cb712-124">The time of the day that the user stops working.</span></span> |
-| <span data-ttu-id="cb712-125">timeZone</span><span class="sxs-lookup"><span data-stu-id="cb712-125">timeZone</span></span> | [<span data-ttu-id="cb712-126">timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="cb712-126">timeZoneBase</span></span>](timezonebase.md) | <span data-ttu-id="cb712-127">工作时间应用的时区。</span><span class="sxs-lookup"><span data-stu-id="cb712-127">The time zone to which the working hours apply.</span></span> |
+| <span data-ttu-id="afd34-116">daysOfWeek</span><span class="sxs-lookup"><span data-stu-id="afd34-116">daysOfWeek</span></span> | <span data-ttu-id="afd34-117">dayOfWeek 集合</span><span class="sxs-lookup"><span data-stu-id="afd34-117">dayOfWeek collection</span></span> | <span data-ttu-id="afd34-118">用户一周工作的天数。</span><span class="sxs-lookup"><span data-stu-id="afd34-118">The days of the week on which the user works.</span></span> |
+| <span data-ttu-id="afd34-119">startTime</span><span class="sxs-lookup"><span data-stu-id="afd34-119">startTime</span></span> | <span data-ttu-id="afd34-120">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="afd34-120">Edm.TimeOfDay</span></span> | <span data-ttu-id="afd34-121">一天中用户开始工作的时间。</span><span class="sxs-lookup"><span data-stu-id="afd34-121">The time of the day that the user starts working.</span></span> |
+| <span data-ttu-id="afd34-122">endTime</span><span class="sxs-lookup"><span data-stu-id="afd34-122">endTime</span></span> | <span data-ttu-id="afd34-123">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="afd34-123">Edm.TimeOfDay</span></span> | <span data-ttu-id="afd34-124">一天中用户停止工作的时间。</span><span class="sxs-lookup"><span data-stu-id="afd34-124">The time of the day that the user stops working.</span></span> |
+| <span data-ttu-id="afd34-125">timeZone</span><span class="sxs-lookup"><span data-stu-id="afd34-125">timeZone</span></span> | [<span data-ttu-id="afd34-126">timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="afd34-126">timeZoneBase</span></span>](timezonebase.md) | <span data-ttu-id="afd34-127">工作时间应用的时区。</span><span class="sxs-lookup"><span data-stu-id="afd34-127">The time zone to which the working hours apply.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="cb712-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cb712-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="afd34-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="afd34-128">JSON representation</span></span>
 
-<span data-ttu-id="cb712-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cb712-129">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="afd34-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="afd34-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,8 +48,8 @@ ms.locfileid: "33342744"
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "String (timeofday)",
-  "endTime": "String (timeofday)",
+  "startTime": "string (TimeOfDay)",
+  "endTime": "string (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 
@@ -52,14 +57,13 @@ ms.locfileid: "33342744"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
-      Inconsistent types between parameter (String) and table (Object)"
-  ],
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
