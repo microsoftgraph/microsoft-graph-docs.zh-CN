@@ -4,27 +4,28 @@ description: 管理员同步使用 Microsoft Store for Business 应用的门户�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 765eabae0d910e3abd353be7ad5eec0b25b91b6b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 4b3168b4c3266c5e5314813c3ae1ea4ef08765a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997993"
 ---
-# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a><span data-ttu-id="cdb1e-104">microsoftStoreForBusinessPortalSelectionOptions 枚举类型</span><span class="sxs-lookup"><span data-stu-id="cdb1e-104">microsoftStoreForBusinessPortalSelectionOptions enum type</span></span>
+# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a><span data-ttu-id="209dc-104">microsoftStoreForBusinessPortalSelectionOptions 枚举类型</span><span class="sxs-lookup"><span data-stu-id="209dc-104">microsoftStoreForBusinessPortalSelectionOptions enum type</span></span>
 
-> <span data-ttu-id="cdb1e-105">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cdb1e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="209dc-105">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="209dc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cdb1e-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cdb1e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="209dc-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="209dc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cdb1e-107">管理员同步使用 Microsoft Store for Business 应用的门户。</span><span class="sxs-lookup"><span data-stu-id="cdb1e-107">Portal to which admin syncs available Microsoft Store for Business apps.</span></span> <span data-ttu-id="cdb1e-108">这在 Intune 管理控制台中可用。</span><span class="sxs-lookup"><span data-stu-id="cdb1e-108">This is available in the Intune Admin Console.</span></span>
+<span data-ttu-id="209dc-107">管理员同步使用 Microsoft Store for Business 应用的门户。</span><span class="sxs-lookup"><span data-stu-id="209dc-107">Portal to which admin syncs available Microsoft Store for Business apps.</span></span> <span data-ttu-id="209dc-108">这在 Intune 管理控制台中可用。</span><span class="sxs-lookup"><span data-stu-id="209dc-108">This is available in the Intune Admin Console.</span></span>
 
-## <a name="members"></a><span data-ttu-id="cdb1e-109">成员</span><span class="sxs-lookup"><span data-stu-id="cdb1e-109">Members</span></span>
-|<span data-ttu-id="cdb1e-110">成员</span><span class="sxs-lookup"><span data-stu-id="cdb1e-110">Member</span></span>|<span data-ttu-id="cdb1e-111">值</span><span class="sxs-lookup"><span data-stu-id="cdb1e-111">Value</span></span>|<span data-ttu-id="cdb1e-112">说明</span><span class="sxs-lookup"><span data-stu-id="cdb1e-112">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="209dc-109">成员</span><span class="sxs-lookup"><span data-stu-id="209dc-109">Members</span></span>
+|<span data-ttu-id="209dc-110">成员</span><span class="sxs-lookup"><span data-stu-id="209dc-110">Member</span></span>|<span data-ttu-id="209dc-111">值</span><span class="sxs-lookup"><span data-stu-id="209dc-111">Value</span></span>|<span data-ttu-id="209dc-112">说明</span><span class="sxs-lookup"><span data-stu-id="209dc-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cdb1e-113">无</span><span class="sxs-lookup"><span data-stu-id="cdb1e-113">none</span></span>|<span data-ttu-id="cdb1e-114">0</span><span class="sxs-lookup"><span data-stu-id="cdb1e-114">0</span></span>|<span data-ttu-id="cdb1e-115">此选项对帐户不可用</span><span class="sxs-lookup"><span data-stu-id="cdb1e-115">This option is not available for the account</span></span>|
-|<span data-ttu-id="cdb1e-116">companyPortal</span><span class="sxs-lookup"><span data-stu-id="cdb1e-116">companyPortal</span></span>|<span data-ttu-id="cdb1e-117">1</span><span class="sxs-lookup"><span data-stu-id="cdb1e-117">1</span></span>|<span data-ttu-id="cdb1e-118">仅限 Intune 公司门户。</span><span class="sxs-lookup"><span data-stu-id="cdb1e-118">Intune Company Portal only.</span></span>|
-|<span data-ttu-id="cdb1e-119">privateStore</span><span class="sxs-lookup"><span data-stu-id="cdb1e-119">privateStore</span></span>|<span data-ttu-id="cdb1e-120">双面</span><span class="sxs-lookup"><span data-stu-id="cdb1e-120">2</span></span>|<span data-ttu-id="cdb1e-121">仅 MSFB 私人存储。</span><span class="sxs-lookup"><span data-stu-id="cdb1e-121">MSFB Private store only.</span></span>|
+|<span data-ttu-id="209dc-113">无</span><span class="sxs-lookup"><span data-stu-id="209dc-113">none</span></span>|<span data-ttu-id="209dc-114">0</span><span class="sxs-lookup"><span data-stu-id="209dc-114">0</span></span>|<span data-ttu-id="209dc-115">此选项对帐户不可用</span><span class="sxs-lookup"><span data-stu-id="209dc-115">This option is not available for the account</span></span>|
+|<span data-ttu-id="209dc-116">companyPortal</span><span class="sxs-lookup"><span data-stu-id="209dc-116">companyPortal</span></span>|<span data-ttu-id="209dc-117">1</span><span class="sxs-lookup"><span data-stu-id="209dc-117">1</span></span>|<span data-ttu-id="209dc-118">仅限 Intune 公司门户。</span><span class="sxs-lookup"><span data-stu-id="209dc-118">Intune Company Portal only.</span></span>|
+|<span data-ttu-id="209dc-119">privateStore</span><span class="sxs-lookup"><span data-stu-id="209dc-119">privateStore</span></span>|<span data-ttu-id="209dc-120">双面</span><span class="sxs-lookup"><span data-stu-id="209dc-120">2</span></span>|<span data-ttu-id="209dc-121">仅 MSFB 私人存储。</span><span class="sxs-lookup"><span data-stu-id="209dc-121">MSFB Private store only.</span></span>|
 
 
 

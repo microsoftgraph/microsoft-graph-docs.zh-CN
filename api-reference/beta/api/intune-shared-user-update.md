@@ -4,36 +4,37 @@ description: 更新 user 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c4b898a3c9b1907f6b2a05c16daa241b5b363c6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 03a4f28b854e9e94b4bf7a821109e18c4fc0d537
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897882"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979545"
 ---
-# <a name="update-user"></a><span data-ttu-id="b5912-103">更新用户</span><span class="sxs-lookup"><span data-stu-id="b5912-103">Update user</span></span>
+# <a name="update-user"></a><span data-ttu-id="15156-103">更新用户</span><span class="sxs-lookup"><span data-stu-id="15156-103">Update user</span></span>
 
-> <span data-ttu-id="b5912-104">**重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="b5912-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b5912-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b5912-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="15156-104">**重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="15156-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="15156-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="15156-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="b5912-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b5912-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="15156-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="15156-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5912-107">更新 [user](../resources/intune-shared-user.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="b5912-107">Update the properties of a [user](../resources/intune-shared-user.md) object.</span></span>
+<span data-ttu-id="15156-107">更新 [user](../resources/intune-shared-user.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="15156-107">Update the properties of a [user](../resources/intune-shared-user.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b5912-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="b5912-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="15156-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="15156-108">Prerequisites</span></span>
 
-<span data-ttu-id="b5912-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b5912-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15156-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="15156-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5912-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b5912-111">Permission type</span></span>|<span data-ttu-id="b5912-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b5912-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="15156-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="15156-111">Permission type</span></span>|<span data-ttu-id="15156-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="15156-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5912-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b5912-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="b5912-114">&nbsp;&nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="b5912-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="b5912-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5912-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="b5912-116">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="b5912-116">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="b5912-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5912-117">DeviceManagementApps.ReadWrite.All</span></span>|
-| <span data-ttu-id="b5912-118">&nbsp; &nbsp; **载入**</span><span class="sxs-lookup"><span data-stu-id="b5912-118">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="b5912-119">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5912-119">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-| <span data-ttu-id="b5912-120">&nbsp; &nbsp; **疑难解答**</span><span class="sxs-lookup"><span data-stu-id="b5912-120">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="b5912-121">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5912-121">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="b5912-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b5912-122">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b5912-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="b5912-123">Not supported.</span></span>|
-|<span data-ttu-id="b5912-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="b5912-124">Application</span></span>|<span data-ttu-id="b5912-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="b5912-125">Not supported.</span></span>|
+|<span data-ttu-id="15156-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="15156-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="15156-114">&nbsp;&nbsp; **设备管理**</span><span class="sxs-lookup"><span data-stu-id="15156-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="15156-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15156-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="15156-116">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="15156-116">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="15156-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15156-117">DeviceManagementApps.ReadWrite.All</span></span>|
+| <span data-ttu-id="15156-118">&nbsp; &nbsp; **载入**</span><span class="sxs-lookup"><span data-stu-id="15156-118">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="15156-119">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15156-119">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+| <span data-ttu-id="15156-120">&nbsp; &nbsp; **疑难解答**</span><span class="sxs-lookup"><span data-stu-id="15156-120">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="15156-121">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15156-121">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="15156-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="15156-122">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="15156-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="15156-123">Not supported.</span></span>|
+|<span data-ttu-id="15156-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="15156-124">Application</span></span>|<span data-ttu-id="15156-125">不支持。</span><span class="sxs-lookup"><span data-stu-id="15156-125">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b5912-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b5912-126">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15156-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="15156-126">HTTP Request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -43,34 +44,34 @@ ms.locfileid: "33897882"
 PATCH /users/{usersId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b5912-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="b5912-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="15156-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="15156-127">Request headers</span></span>
 
-|<span data-ttu-id="b5912-128">标头</span><span class="sxs-lookup"><span data-stu-id="b5912-128">Header</span></span>|<span data-ttu-id="b5912-129">值</span><span class="sxs-lookup"><span data-stu-id="b5912-129">Value</span></span>|
+|<span data-ttu-id="15156-128">标头</span><span class="sxs-lookup"><span data-stu-id="15156-128">Header</span></span>|<span data-ttu-id="15156-129">值</span><span class="sxs-lookup"><span data-stu-id="15156-129">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5912-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5912-130">Authorization</span></span>|<span data-ttu-id="b5912-131">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b5912-131">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b5912-132">接受</span><span class="sxs-lookup"><span data-stu-id="b5912-132">Accept</span></span>|<span data-ttu-id="b5912-133">application/json</span><span class="sxs-lookup"><span data-stu-id="b5912-133">application/json</span></span>|
+|<span data-ttu-id="15156-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="15156-130">Authorization</span></span>|<span data-ttu-id="15156-131">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="15156-131">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="15156-132">接受</span><span class="sxs-lookup"><span data-stu-id="15156-132">Accept</span></span>|<span data-ttu-id="15156-133">application/json</span><span class="sxs-lookup"><span data-stu-id="15156-133">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5912-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="b5912-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="15156-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="15156-134">Request body</span></span>
 
-<span data-ttu-id="b5912-135">在请求正文中，提供 [user](../resources/intune-shared-user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b5912-135">In the request body, supply a JSON representation for the [user](../resources/intune-shared-user.md) object.</span></span>
+<span data-ttu-id="15156-135">在请求正文中，提供 [user](../resources/intune-shared-user.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="15156-135">In the request body, supply a JSON representation for the [user](../resources/intune-shared-user.md) object.</span></span>
 
-<span data-ttu-id="b5912-136">下表显示创建 [user](../resources/intune-shared-user.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="b5912-136">The following table shows the properties that are required when you create the [user](../resources/intune-shared-user.md).</span></span>
+<span data-ttu-id="15156-136">下表显示创建 [user](../resources/intune-shared-user.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="15156-136">The following table shows the properties that are required when you create the [user](../resources/intune-shared-user.md).</span></span>
 
-|<span data-ttu-id="b5912-137">属性</span><span class="sxs-lookup"><span data-stu-id="b5912-137">Property</span></span>|<span data-ttu-id="b5912-138">类型</span><span class="sxs-lookup"><span data-stu-id="b5912-138">Type</span></span>|<span data-ttu-id="b5912-139">说明</span><span class="sxs-lookup"><span data-stu-id="b5912-139">Description</span></span>|
+|<span data-ttu-id="15156-137">属性</span><span class="sxs-lookup"><span data-stu-id="15156-137">Property</span></span>|<span data-ttu-id="15156-138">类型</span><span class="sxs-lookup"><span data-stu-id="15156-138">Type</span></span>|<span data-ttu-id="15156-139">说明</span><span class="sxs-lookup"><span data-stu-id="15156-139">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b5912-140">id</span><span class="sxs-lookup"><span data-stu-id="b5912-140">id</span></span>|<span data-ttu-id="b5912-141">String</span><span class="sxs-lookup"><span data-stu-id="b5912-141">String</span></span>|<span data-ttu-id="b5912-142">用户的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="b5912-142">Unique identifier of the user.</span></span>|
-|<span data-ttu-id="b5912-143">**载入**</span><span class="sxs-lookup"><span data-stu-id="b5912-143">**Onboarding**</span></span>|
-|<span data-ttu-id="b5912-144">deviceEnrollmentLimit</span><span class="sxs-lookup"><span data-stu-id="b5912-144">deviceEnrollmentLimit</span></span>|<span data-ttu-id="b5912-145">Int32</span><span class="sxs-lookup"><span data-stu-id="b5912-145">Int32</span></span>|<span data-ttu-id="b5912-146">允许用户注册的最大设备数的限制。</span><span class="sxs-lookup"><span data-stu-id="b5912-146">The limit on the maximum number of devices that the user is permitted to enroll.</span></span> <span data-ttu-id="b5912-147">允许的值为 5 或 1000。</span><span class="sxs-lookup"><span data-stu-id="b5912-147">Allowed values are 5 or 1000.</span></span>|
+|<span data-ttu-id="15156-140">id</span><span class="sxs-lookup"><span data-stu-id="15156-140">id</span></span>|<span data-ttu-id="15156-141">String</span><span class="sxs-lookup"><span data-stu-id="15156-141">String</span></span>|<span data-ttu-id="15156-142">用户的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="15156-142">Unique identifier of the user.</span></span>|
+|<span data-ttu-id="15156-143">**载入**</span><span class="sxs-lookup"><span data-stu-id="15156-143">**Onboarding**</span></span>|
+|<span data-ttu-id="15156-144">deviceEnrollmentLimit</span><span class="sxs-lookup"><span data-stu-id="15156-144">deviceEnrollmentLimit</span></span>|<span data-ttu-id="15156-145">Int32</span><span class="sxs-lookup"><span data-stu-id="15156-145">Int32</span></span>|<span data-ttu-id="15156-146">允许用户注册的最大设备数的限制。</span><span class="sxs-lookup"><span data-stu-id="15156-146">The limit on the maximum number of devices that the user is permitted to enroll.</span></span> <span data-ttu-id="15156-147">允许的值为 5 或 1000。</span><span class="sxs-lookup"><span data-stu-id="15156-147">Allowed values are 5 or 1000.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="b5912-148">响应</span><span class="sxs-lookup"><span data-stu-id="b5912-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15156-148">响应</span><span class="sxs-lookup"><span data-stu-id="15156-148">Response</span></span>
 
-<span data-ttu-id="b5912-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [user](../resources/intune-shared-user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b5912-149">If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-shared-user.md) object in the response body.</span></span>
+<span data-ttu-id="15156-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [user](../resources/intune-shared-user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="15156-149">If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-shared-user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5912-150">示例</span><span class="sxs-lookup"><span data-stu-id="b5912-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="15156-150">示例</span><span class="sxs-lookup"><span data-stu-id="15156-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5912-151">请求</span><span class="sxs-lookup"><span data-stu-id="b5912-151">Request</span></span>
+### <a name="request"></a><span data-ttu-id="15156-151">请求</span><span class="sxs-lookup"><span data-stu-id="15156-151">Request</span></span>
 
-<span data-ttu-id="b5912-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b5912-152">Here is an example of the request.</span></span>
+<span data-ttu-id="15156-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="15156-152">Here is an example of the request.</span></span>
 
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}
@@ -80,9 +81,9 @@ Content-length: 2
 {}
 ```
 
-### <a name="response"></a><span data-ttu-id="b5912-153">响应</span><span class="sxs-lookup"><span data-stu-id="b5912-153">Response</span></span>
+### <a name="response"></a><span data-ttu-id="15156-153">响应</span><span class="sxs-lookup"><span data-stu-id="15156-153">Response</span></span>
 
-<span data-ttu-id="b5912-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b5912-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="15156-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="15156-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 200 OK
