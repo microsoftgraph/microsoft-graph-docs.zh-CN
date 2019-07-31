@@ -4,59 +4,61 @@ description: 获取用户、通讯组列表或资源在指定时间段内的忙/
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e39b5e010c57bb74f518321f51cc4f3e4c709637
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 027e3ec5764c0868236b34c90f558b0bd7db45fc
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558410"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932084"
 ---
-# <a name="calendar-getschedule"></a><span data-ttu-id="dfcd5-103">日历：getSchedule</span><span class="sxs-lookup"><span data-stu-id="dfcd5-103">calendar: getSchedule</span></span>
+# <a name="calendar-getschedule"></a><span data-ttu-id="16ae0-103">日历：getSchedule</span><span class="sxs-lookup"><span data-stu-id="16ae0-103">calendar: getSchedule</span></span>
 
-<span data-ttu-id="dfcd5-104">获取用户、通讯组列表或资源（会议室或设备）在指定时间段内的忙/闲状态信息。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
+<span data-ttu-id="16ae0-104">获取用户、通讯组列表或资源（会议室或设备）在指定时间段内的忙/闲状态信息。</span><span class="sxs-lookup"><span data-stu-id="16ae0-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dfcd5-105">权限</span><span class="sxs-lookup"><span data-stu-id="dfcd5-105">Permissions</span></span>
-<span data-ttu-id="dfcd5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="16ae0-105">权限</span><span class="sxs-lookup"><span data-stu-id="16ae0-105">Permissions</span></span>
+<span data-ttu-id="16ae0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="16ae0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dfcd5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dfcd5-108">Permission type</span></span>      | <span data-ttu-id="dfcd5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dfcd5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="16ae0-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="16ae0-108">Permission type</span></span>      | <span data-ttu-id="16ae0-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="16ae0-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dfcd5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dfcd5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dfcd5-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dfcd5-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="dfcd5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dfcd5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dfcd5-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-113">Not supported.</span></span> |
-|<span data-ttu-id="dfcd5-114">Application</span><span class="sxs-lookup"><span data-stu-id="dfcd5-114">Application</span></span> | <span data-ttu-id="dfcd5-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dfcd5-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="16ae0-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="16ae0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="16ae0-111">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="16ae0-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="16ae0-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="16ae0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16ae0-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="16ae0-113">Not supported.</span></span> |
+|<span data-ttu-id="16ae0-114">Application</span><span class="sxs-lookup"><span data-stu-id="16ae0-114">Application</span></span> | <span data-ttu-id="16ae0-115">Calendars.Read、Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="16ae0-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dfcd5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dfcd5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="16ae0-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="16ae0-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendar/getSchedule 
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dfcd5-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="dfcd5-117">Request headers</span></span>
-| <span data-ttu-id="dfcd5-118">名称</span><span class="sxs-lookup"><span data-stu-id="dfcd5-118">Name</span></span>       | <span data-ttu-id="dfcd5-119">类型</span><span class="sxs-lookup"><span data-stu-id="dfcd5-119">Type</span></span> | <span data-ttu-id="dfcd5-120">说明</span><span class="sxs-lookup"><span data-stu-id="dfcd5-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="16ae0-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="16ae0-117">Request headers</span></span>
+| <span data-ttu-id="16ae0-118">名称</span><span class="sxs-lookup"><span data-stu-id="16ae0-118">Name</span></span>       | <span data-ttu-id="16ae0-119">类型</span><span class="sxs-lookup"><span data-stu-id="16ae0-119">Type</span></span> | <span data-ttu-id="16ae0-120">说明</span><span class="sxs-lookup"><span data-stu-id="16ae0-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="dfcd5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="dfcd5-121">Authorization</span></span>  | <span data-ttu-id="dfcd5-122">string</span><span class="sxs-lookup"><span data-stu-id="dfcd5-122">string</span></span>  | <span data-ttu-id="dfcd5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dfcd5-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dfcd5-125">Content-Type</span></span>  | <span data-ttu-id="dfcd5-126">string</span><span class="sxs-lookup"><span data-stu-id="dfcd5-126">string</span></span> | <span data-ttu-id="dfcd5-127">实体正文中的数据性质（为 application/json）。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="dfcd5-128">必需。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-128">Required.</span></span>  |
-| <span data-ttu-id="dfcd5-129">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="dfcd5-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="dfcd5-130">string</span><span class="sxs-lookup"><span data-stu-id="dfcd5-130">string</span></span> | <span data-ttu-id="dfcd5-131">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="dfcd5-132">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="dfcd5-133">可选。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-133">Optional.</span></span> |
+| <span data-ttu-id="16ae0-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="16ae0-121">Authorization</span></span>  | <span data-ttu-id="16ae0-122">string</span><span class="sxs-lookup"><span data-stu-id="16ae0-122">string</span></span>  | <span data-ttu-id="16ae0-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="16ae0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="16ae0-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="16ae0-125">Content-Type</span></span>  | <span data-ttu-id="16ae0-126">string</span><span class="sxs-lookup"><span data-stu-id="16ae0-126">string</span></span> | <span data-ttu-id="16ae0-127">实体正文中的数据性质（为 application/json）。</span><span class="sxs-lookup"><span data-stu-id="16ae0-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="16ae0-128">必需。</span><span class="sxs-lookup"><span data-stu-id="16ae0-128">Required.</span></span>  |
+| <span data-ttu-id="16ae0-129">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="16ae0-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="16ae0-130">string</span><span class="sxs-lookup"><span data-stu-id="16ae0-130">string</span></span> | <span data-ttu-id="16ae0-131">此选项可用于指定响应中开始时间和结束时间的时区。</span><span class="sxs-lookup"><span data-stu-id="16ae0-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="16ae0-132">如果未指定，返回的这些时间值采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="16ae0-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="16ae0-133">可选。</span><span class="sxs-lookup"><span data-stu-id="16ae0-133">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dfcd5-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="dfcd5-134">Request body</span></span>
-<span data-ttu-id="dfcd5-135">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="16ae0-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="16ae0-134">Request body</span></span>
+<span data-ttu-id="16ae0-135">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="16ae0-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="dfcd5-136">属性</span><span class="sxs-lookup"><span data-stu-id="dfcd5-136">Property</span></span>     | <span data-ttu-id="dfcd5-137">类型</span><span class="sxs-lookup"><span data-stu-id="dfcd5-137">Type</span></span>   |<span data-ttu-id="dfcd5-138">说明</span><span class="sxs-lookup"><span data-stu-id="dfcd5-138">Description</span></span>|
+| <span data-ttu-id="16ae0-136">属性</span><span class="sxs-lookup"><span data-stu-id="16ae0-136">Property</span></span>     | <span data-ttu-id="16ae0-137">类型</span><span class="sxs-lookup"><span data-stu-id="16ae0-137">Type</span></span>   |<span data-ttu-id="16ae0-138">说明</span><span class="sxs-lookup"><span data-stu-id="16ae0-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dfcd5-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="dfcd5-139">availabilityViewInterval</span></span>|<span data-ttu-id="dfcd5-140">Int32</span><span class="sxs-lookup"><span data-stu-id="dfcd5-140">Int32</span></span>|<span data-ttu-id="dfcd5-141">表示响应中 **availabilityView** 中的时间段的持续时间。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="dfcd5-142">默认值为 30 分钟，最小值为 6，最大值为 1440。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="dfcd5-143">可选。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-143">Optional.</span></span>|
-|<span data-ttu-id="dfcd5-144">endTime</span><span class="sxs-lookup"><span data-stu-id="dfcd5-144">endTime</span></span>|[<span data-ttu-id="dfcd5-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="dfcd5-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="dfcd5-146">时间段结束的日期、时间和时区。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-146">The date, time, and time zone that the period ends.</span></span>|
-|<span data-ttu-id="dfcd5-147">schedules</span><span class="sxs-lookup"><span data-stu-id="dfcd5-147">schedules</span></span>|<span data-ttu-id="dfcd5-148">String 集合</span><span class="sxs-lookup"><span data-stu-id="dfcd5-148">String collection</span></span>|<span data-ttu-id="dfcd5-149">要获取忙/闲状态信息的用户、通讯组列表或资源的 SMTP 地址集合。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
-|<span data-ttu-id="dfcd5-150">startTime</span><span class="sxs-lookup"><span data-stu-id="dfcd5-150">startTime</span></span>|[<span data-ttu-id="dfcd5-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="dfcd5-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="dfcd5-152">时间段开始的日期、时间和时区。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-152">The date, time, and time zone that the period starts.</span></span>|
+|<span data-ttu-id="16ae0-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="16ae0-139">availabilityViewInterval</span></span>|<span data-ttu-id="16ae0-140">Int32</span><span class="sxs-lookup"><span data-stu-id="16ae0-140">Int32</span></span>|<span data-ttu-id="16ae0-141">表示响应中 **availabilityView** 中的时间段的持续时间。</span><span class="sxs-lookup"><span data-stu-id="16ae0-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="16ae0-142">默认值为 30 分钟，最小值为 6，最大值为 1440。</span><span class="sxs-lookup"><span data-stu-id="16ae0-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="16ae0-143">可选。</span><span class="sxs-lookup"><span data-stu-id="16ae0-143">Optional.</span></span>|
+|<span data-ttu-id="16ae0-144">endTime</span><span class="sxs-lookup"><span data-stu-id="16ae0-144">endTime</span></span>|[<span data-ttu-id="16ae0-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="16ae0-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="16ae0-146">时间段结束的日期、时间和时区。</span><span class="sxs-lookup"><span data-stu-id="16ae0-146">The date, time, and time zone that the period ends.</span></span>|
+|<span data-ttu-id="16ae0-147">schedules</span><span class="sxs-lookup"><span data-stu-id="16ae0-147">schedules</span></span>|<span data-ttu-id="16ae0-148">String 集合</span><span class="sxs-lookup"><span data-stu-id="16ae0-148">String collection</span></span>|<span data-ttu-id="16ae0-149">要获取忙/闲状态信息的用户、通讯组列表或资源的 SMTP 地址集合。</span><span class="sxs-lookup"><span data-stu-id="16ae0-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
+|<span data-ttu-id="16ae0-150">startTime</span><span class="sxs-lookup"><span data-stu-id="16ae0-150">startTime</span></span>|[<span data-ttu-id="16ae0-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="16ae0-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="16ae0-152">时间段开始的日期、时间和时区。</span><span class="sxs-lookup"><span data-stu-id="16ae0-152">The date, time, and time zone that the period starts.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dfcd5-153">响应</span><span class="sxs-lookup"><span data-stu-id="dfcd5-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="16ae0-153">响应</span><span class="sxs-lookup"><span data-stu-id="16ae0-153">Response</span></span>
 
-<span data-ttu-id="dfcd5-154">如果成功，此方法为 `schedules` 参数中的每个对象返回 `200 OK` 响应代码和 [scheduleInformation](../resources/scheduleinformation.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
-## <a name="example"></a><span data-ttu-id="dfcd5-155">示例</span><span class="sxs-lookup"><span data-stu-id="dfcd5-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dfcd5-156">请求</span><span class="sxs-lookup"><span data-stu-id="dfcd5-156">Request</span></span>
-<span data-ttu-id="dfcd5-157">以下示例将获取指定日期、时间和时区的两名用户的忙/闲状态信息。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
+<span data-ttu-id="16ae0-154">如果成功，此方法为 `schedules` 参数中的每个对象返回 `200 OK` 响应代码和 [scheduleInformation](../resources/scheduleinformation.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="16ae0-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
+## <a name="example"></a><span data-ttu-id="16ae0-155">示例</span><span class="sxs-lookup"><span data-stu-id="16ae0-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="16ae0-156">请求</span><span class="sxs-lookup"><span data-stu-id="16ae0-156">Request</span></span>
+<span data-ttu-id="16ae0-157">以下示例将获取指定日期、时间和时区的两名用户的忙/闲状态信息。</span><span class="sxs-lookup"><span data-stu-id="16ae0-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="16ae0-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="16ae0-158">--Http</span></span>](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "calendar_getSchedule"
 }-->
 ```http
@@ -77,11 +79,29 @@ Content-Type: application/json
     "availabilityViewInterval": "60"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="16ae0-159">C#</span><span class="sxs-lookup"><span data-stu-id="16ae0-159">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="dfcd5-158">响应</span><span class="sxs-lookup"><span data-stu-id="dfcd5-158">Response</span></span>
-<span data-ttu-id="dfcd5-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dfcd5-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="16ae0-160">Javascript</span><span class="sxs-lookup"><span data-stu-id="16ae0-160">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="16ae0-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="16ae0-161">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="16ae0-162">Java</span><span class="sxs-lookup"><span data-stu-id="16ae0-162">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="16ae0-163">响应</span><span class="sxs-lookup"><span data-stu-id="16ae0-163">Response</span></span>
+<span data-ttu-id="16ae0-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="16ae0-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.scheduleInformation",
   "isCollection": true

@@ -4,30 +4,31 @@ description: 用于标识展台配置的帐户信息的用户基类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d2b8ae31099d670b52eaea7f701988351d56354
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 7b6a2b026897395f4dc90a0c453eeb2f0a40e0ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968874"
 ---
-# <a name="windowskioskuser-resource-type"></a><span data-ttu-id="22efe-103">windowsKioskUser 资源类型</span><span class="sxs-lookup"><span data-stu-id="22efe-103">windowsKioskUser resource type</span></span>
+# <a name="windowskioskuser-resource-type"></a><span data-ttu-id="663ba-103">windowsKioskUser 资源类型</span><span class="sxs-lookup"><span data-stu-id="663ba-103">windowsKioskUser resource type</span></span>
 
-> <span data-ttu-id="22efe-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="22efe-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="663ba-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="663ba-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="22efe-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="22efe-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="663ba-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="663ba-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="22efe-106">用于标识展台配置的帐户信息的用户基类</span><span class="sxs-lookup"><span data-stu-id="22efe-106">The user base class used to identify the account info for the kiosk configuration</span></span>
+<span data-ttu-id="663ba-106">用于标识展台配置的帐户信息的用户基类</span><span class="sxs-lookup"><span data-stu-id="663ba-106">The user base class used to identify the account info for the kiosk configuration</span></span>
 
-## <a name="properties"></a><span data-ttu-id="22efe-107">属性</span><span class="sxs-lookup"><span data-stu-id="22efe-107">Properties</span></span>
-|<span data-ttu-id="22efe-108">属性</span><span class="sxs-lookup"><span data-stu-id="22efe-108">Property</span></span>|<span data-ttu-id="22efe-109">类型</span><span class="sxs-lookup"><span data-stu-id="22efe-109">Type</span></span>|<span data-ttu-id="22efe-110">说明</span><span class="sxs-lookup"><span data-stu-id="22efe-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="663ba-107">属性</span><span class="sxs-lookup"><span data-stu-id="663ba-107">Properties</span></span>
+|<span data-ttu-id="663ba-108">属性</span><span class="sxs-lookup"><span data-stu-id="663ba-108">Property</span></span>|<span data-ttu-id="663ba-109">类型</span><span class="sxs-lookup"><span data-stu-id="663ba-109">Type</span></span>|<span data-ttu-id="663ba-110">说明</span><span class="sxs-lookup"><span data-stu-id="663ba-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="22efe-111">关系</span><span class="sxs-lookup"><span data-stu-id="22efe-111">Relationships</span></span>
-<span data-ttu-id="22efe-112">无</span><span class="sxs-lookup"><span data-stu-id="22efe-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="663ba-111">关系</span><span class="sxs-lookup"><span data-stu-id="663ba-111">Relationships</span></span>
+<span data-ttu-id="663ba-112">无</span><span class="sxs-lookup"><span data-stu-id="663ba-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="22efe-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="22efe-113">JSON Representation</span></span>
-<span data-ttu-id="22efe-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="22efe-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="663ba-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="663ba-113">JSON Representation</span></span>
+<span data-ttu-id="663ba-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="663ba-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskUser"
