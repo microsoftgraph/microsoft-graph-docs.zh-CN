@@ -4,58 +4,59 @@ description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e0df30888c904f2605449b37eeb6ba6cd56c9862
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ee383b480d36246f03bb999e1b98bc2c7becbdf9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983535"
 ---
-# <a name="participant-invite"></a><span data-ttu-id="c520d-103">参与者: 邀请</span><span class="sxs-lookup"><span data-stu-id="c520d-103">participant: invite</span></span>
+# <a name="participant-invite"></a><span data-ttu-id="ec67d-103">参与者: 邀请</span><span class="sxs-lookup"><span data-stu-id="ec67d-103">participant: invite</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c520d-104">邀请参与者加入活动呼叫。</span><span class="sxs-lookup"><span data-stu-id="c520d-104">Invite participants to the active call.</span></span>
+<span data-ttu-id="ec67d-104">邀请参与者加入活动呼叫。</span><span class="sxs-lookup"><span data-stu-id="ec67d-104">Invite participants to the active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c520d-105">权限</span><span class="sxs-lookup"><span data-stu-id="c520d-105">Permissions</span></span>
-<span data-ttu-id="c520d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c520d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ec67d-105">权限</span><span class="sxs-lookup"><span data-stu-id="ec67d-105">Permissions</span></span>
+<span data-ttu-id="ec67d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ec67d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c520d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c520d-108">Permission type</span></span> | <span data-ttu-id="c520d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c520d-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="ec67d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ec67d-108">Permission type</span></span> | <span data-ttu-id="ec67d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ec67d-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="c520d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c520d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c520d-111">不支持</span><span class="sxs-lookup"><span data-stu-id="c520d-111">Not Supported</span></span>                       |
-| <span data-ttu-id="c520d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c520d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c520d-113">不支持</span><span class="sxs-lookup"><span data-stu-id="c520d-113">Not Supported</span></span>                       |
-| <span data-ttu-id="c520d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c520d-114">Application</span></span>     | <span data-ttu-id="c520d-115">InitiateGroupCalls</span><span class="sxs-lookup"><span data-stu-id="c520d-115">Calls.InitiateGroupCalls.All</span></span>                               |
+| <span data-ttu-id="ec67d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ec67d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ec67d-111">不支持</span><span class="sxs-lookup"><span data-stu-id="ec67d-111">Not Supported</span></span>                       |
+| <span data-ttu-id="ec67d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ec67d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ec67d-113">不支持</span><span class="sxs-lookup"><span data-stu-id="ec67d-113">Not Supported</span></span>                       |
+| <span data-ttu-id="ec67d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ec67d-114">Application</span></span>     | <span data-ttu-id="ec67d-115">InitiateGroupCalls</span><span class="sxs-lookup"><span data-stu-id="ec67d-115">Calls.InitiateGroupCalls.All</span></span>                               |
 
-## <a name="http-request"></a><span data-ttu-id="c520d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c520d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ec67d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ec67d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/invite
 POST /applications/{id}/calls/{id}/participants/invite
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c520d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="c520d-117">Request headers</span></span>
-| <span data-ttu-id="c520d-118">名称</span><span class="sxs-lookup"><span data-stu-id="c520d-118">Name</span></span>          | <span data-ttu-id="c520d-119">说明</span><span class="sxs-lookup"><span data-stu-id="c520d-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="ec67d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ec67d-117">Request headers</span></span>
+| <span data-ttu-id="ec67d-118">名称</span><span class="sxs-lookup"><span data-stu-id="ec67d-118">Name</span></span>          | <span data-ttu-id="ec67d-119">说明</span><span class="sxs-lookup"><span data-stu-id="ec67d-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="c520d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c520d-120">Authorization</span></span> | <span data-ttu-id="c520d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c520d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ec67d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ec67d-120">Authorization</span></span> | <span data-ttu-id="ec67d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ec67d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c520d-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="c520d-123">Request body</span></span>
-<span data-ttu-id="c520d-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="c520d-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ec67d-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="ec67d-123">Request body</span></span>
+<span data-ttu-id="ec67d-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="ec67d-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c520d-125">参数</span><span class="sxs-lookup"><span data-stu-id="c520d-125">Parameter</span></span>      | <span data-ttu-id="c520d-126">类型</span><span class="sxs-lookup"><span data-stu-id="c520d-126">Type</span></span>    |<span data-ttu-id="c520d-127">说明</span><span class="sxs-lookup"><span data-stu-id="c520d-127">Description</span></span>|
+| <span data-ttu-id="ec67d-125">参数</span><span class="sxs-lookup"><span data-stu-id="ec67d-125">Parameter</span></span>      | <span data-ttu-id="ec67d-126">类型</span><span class="sxs-lookup"><span data-stu-id="ec67d-126">Type</span></span>    |<span data-ttu-id="ec67d-127">说明</span><span class="sxs-lookup"><span data-stu-id="ec67d-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c520d-128">participants</span><span class="sxs-lookup"><span data-stu-id="c520d-128">participants</span></span>|<span data-ttu-id="c520d-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="c520d-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>| <span data-ttu-id="c520d-130">要邀请的参与者。</span><span class="sxs-lookup"><span data-stu-id="c520d-130">The participants to invite.</span></span>|
-|<span data-ttu-id="c520d-131">适用</span><span class="sxs-lookup"><span data-stu-id="c520d-131">clientContext</span></span>|<span data-ttu-id="c520d-132">String</span><span class="sxs-lookup"><span data-stu-id="c520d-132">String</span></span>|<span data-ttu-id="c520d-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="c520d-133">The client context.</span></span>|
+|<span data-ttu-id="ec67d-128">participants</span><span class="sxs-lookup"><span data-stu-id="ec67d-128">participants</span></span>|<span data-ttu-id="ec67d-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="ec67d-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>| <span data-ttu-id="ec67d-130">要邀请的参与者。</span><span class="sxs-lookup"><span data-stu-id="ec67d-130">The participants to invite.</span></span>|
+|<span data-ttu-id="ec67d-131">适用</span><span class="sxs-lookup"><span data-stu-id="ec67d-131">clientContext</span></span>|<span data-ttu-id="ec67d-132">String</span><span class="sxs-lookup"><span data-stu-id="ec67d-132">String</span></span>|<span data-ttu-id="ec67d-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="ec67d-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c520d-134">响应</span><span class="sxs-lookup"><span data-stu-id="c520d-134">Response</span></span>
-<span data-ttu-id="c520d-135">返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。</span><span class="sxs-lookup"><span data-stu-id="c520d-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="ec67d-134">响应</span><span class="sxs-lookup"><span data-stu-id="ec67d-134">Response</span></span>
+<span data-ttu-id="ec67d-135">返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。</span><span class="sxs-lookup"><span data-stu-id="ec67d-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c520d-136">示例</span><span class="sxs-lookup"><span data-stu-id="c520d-136">Examples</span></span>
-<span data-ttu-id="c520d-137">下面的示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="c520d-137">The following examples shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="ec67d-136">示例</span><span class="sxs-lookup"><span data-stu-id="ec67d-136">Examples</span></span>
+<span data-ttu-id="ec67d-137">下面的示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="ec67d-137">The following examples shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c520d-138">请求</span><span class="sxs-lookup"><span data-stu-id="c520d-138">Request</span></span>
-<span data-ttu-id="c520d-139">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="c520d-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ec67d-138">请求</span><span class="sxs-lookup"><span data-stu-id="ec67d-138">Request</span></span>
+<span data-ttu-id="ec67d-139">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="ec67d-139">The following example shows the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c520d-140">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="c520d-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ec67d-140">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="ec67d-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite"
@@ -84,28 +85,28 @@ Content-Length: 464
   "clientContext": "clientContext-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c520d-141">C#</span><span class="sxs-lookup"><span data-stu-id="c520d-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ec67d-141">C#</span><span class="sxs-lookup"><span data-stu-id="ec67d-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c520d-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="c520d-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ec67d-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="ec67d-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c520d-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="c520d-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ec67d-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="ec67d-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c520d-144">Java</span><span class="sxs-lookup"><span data-stu-id="c520d-144">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ec67d-144">Java</span><span class="sxs-lookup"><span data-stu-id="ec67d-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c520d-145">响应</span><span class="sxs-lookup"><span data-stu-id="c520d-145">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ec67d-145">响应</span><span class="sxs-lookup"><span data-stu-id="ec67d-145">Response</span></span>
 
-> <span data-ttu-id="c520d-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c520d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ec67d-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ec67d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -119,9 +120,9 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="c520d-148">邀请现有 P2P 会议中的参与者</span><span class="sxs-lookup"><span data-stu-id="c520d-148">Invite Participants in Existing P2P meeting</span></span>
+### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="ec67d-148">邀请现有 P2P 会议中的参与者</span><span class="sxs-lookup"><span data-stu-id="ec67d-148">Invite Participants in Existing P2P meeting</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c520d-149">请求</span><span class="sxs-lookup"><span data-stu-id="c520d-149">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ec67d-149">请求</span><span class="sxs-lookup"><span data-stu-id="ec67d-149">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
@@ -146,7 +147,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c520d-150">响应</span><span class="sxs-lookup"><span data-stu-id="c520d-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ec67d-150">响应</span><span class="sxs-lookup"><span data-stu-id="ec67d-150">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -162,7 +163,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="c520d-151">通知-操作已完成</span><span class="sxs-lookup"><span data-stu-id="c520d-151">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="ec67d-151">通知-操作已完成</span><span class="sxs-lookup"><span data-stu-id="ec67d-151">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -192,7 +193,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="c520d-152">已添加参与者的通知-名单</span><span class="sxs-lookup"><span data-stu-id="c520d-152">Notification - roster updated with participant added</span></span>
+##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="ec67d-152">已添加参与者的通知-名单</span><span class="sxs-lookup"><span data-stu-id="ec67d-152">Notification - roster updated with participant added</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -265,13 +266,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="c520d-153">邀请现有 P2P 会议中的参与者</span><span class="sxs-lookup"><span data-stu-id="c520d-153">Invite Participants in Existing P2P meeting</span></span>
+### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="ec67d-153">邀请现有 P2P 会议中的参与者</span><span class="sxs-lookup"><span data-stu-id="ec67d-153">Invite Participants in Existing P2P meeting</span></span>
 
-<span data-ttu-id="c520d-154">本示例显示现有 P2P 会议中的[邀请参与者](../api/participant-invite.md)的完整 E2E 流。</span><span class="sxs-lookup"><span data-stu-id="c520d-154">This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.</span></span>
+<span data-ttu-id="ec67d-154">本示例显示现有 P2P 会议中的[邀请参与者](../api/participant-invite.md)的完整 E2E 流。</span><span class="sxs-lookup"><span data-stu-id="ec67d-154">This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.</span></span>
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a><span data-ttu-id="c520d-155">使用服务托管媒体应答传入 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="c520d-155">Answer Incoming VOIP call with service hosted media</span></span>
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a><span data-ttu-id="ec67d-155">使用服务托管媒体应答传入 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="ec67d-155">Answer Incoming VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="c520d-156">通知传入</span><span class="sxs-lookup"><span data-stu-id="c520d-156">Notification - Incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="ec67d-156">通知传入</span><span class="sxs-lookup"><span data-stu-id="ec67d-156">Notification - Incoming</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -324,7 +325,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="c520d-157">请求</span><span class="sxs-lookup"><span data-stu-id="c520d-157">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ec67d-157">请求</span><span class="sxs-lookup"><span data-stu-id="ec67d-157">Request</span></span>
 
 ``` http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -350,7 +351,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c520d-158">响应</span><span class="sxs-lookup"><span data-stu-id="c520d-158">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ec67d-158">响应</span><span class="sxs-lookup"><span data-stu-id="ec67d-158">Response</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -366,7 +367,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="c520d-159">通知-建立</span><span class="sxs-lookup"><span data-stu-id="c520d-159">Notification - Establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="ec67d-159">通知-建立</span><span class="sxs-lookup"><span data-stu-id="ec67d-159">Notification - Establishing</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -395,7 +396,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="c520d-160">已建立通知</span><span class="sxs-lookup"><span data-stu-id="c520d-160">Notification - Established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="ec67d-160">已建立通知</span><span class="sxs-lookup"><span data-stu-id="ec67d-160">Notification - Established</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -426,11 +427,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a><span data-ttu-id="c520d-161">不带媒体的加入频道会议</span><span class="sxs-lookup"><span data-stu-id="c520d-161">Join channel meeting without media</span></span>
+### <a name="join-channel-meeting-without-media"></a><span data-ttu-id="ec67d-161">不带媒体的加入频道会议</span><span class="sxs-lookup"><span data-stu-id="ec67d-161">Join channel meeting without media</span></span>
 
-> <span data-ttu-id="c520d-162">**重要说明**: 如果 bot 实例只是为了便于传输而加入, 它应避免媒体协商。</span><span class="sxs-lookup"><span data-stu-id="c520d-162">**IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.</span></span>  <span data-ttu-id="c520d-163">因此, 最好在不添加任何`requestedModalities`或`mediaConfig`的情况下添加它。</span><span class="sxs-lookup"><span data-stu-id="c520d-163">Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.</span></span>
+> <span data-ttu-id="ec67d-162">**重要说明**: 如果 bot 实例只是为了便于传输而加入, 它应避免媒体协商。</span><span class="sxs-lookup"><span data-stu-id="ec67d-162">**IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.</span></span>  <span data-ttu-id="ec67d-163">因此, 最好在不添加任何`requestedModalities`或`mediaConfig`的情况下添加它。</span><span class="sxs-lookup"><span data-stu-id="ec67d-163">Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c520d-164">请求</span><span class="sxs-lookup"><span data-stu-id="c520d-164">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ec67d-164">请求</span><span class="sxs-lookup"><span data-stu-id="ec67d-164">Request</span></span>
 
 ``` http
 POST /app/calls
@@ -466,14 +467,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c520d-165">响应</span><span class="sxs-lookup"><span data-stu-id="c520d-165">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ec67d-165">响应</span><span class="sxs-lookup"><span data-stu-id="ec67d-165">Response</span></span>
 
 ``` http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="c520d-166">通知-建立</span><span class="sxs-lookup"><span data-stu-id="c520d-166">Notification - Establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="ec67d-166">通知-建立</span><span class="sxs-lookup"><span data-stu-id="ec67d-166">Notification - Establishing</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -503,7 +504,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="c520d-167">已建立通知</span><span class="sxs-lookup"><span data-stu-id="c520d-167">Notification - Established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="ec67d-167">已建立通知</span><span class="sxs-lookup"><span data-stu-id="ec67d-167">Notification - Established</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -533,7 +534,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a><span data-ttu-id="c520d-168">邀请参与者进入初始传入呼叫</span><span class="sxs-lookup"><span data-stu-id="c520d-168">Invite participant from initial incoming call</span></span>
+### <a name="invite-participant-from-initial-incoming-call"></a><span data-ttu-id="ec67d-168">邀请参与者进入初始传入呼叫</span><span class="sxs-lookup"><span data-stu-id="ec67d-168">Invite participant from initial incoming call</span></span>
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -555,7 +556,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c520d-169">响应</span><span class="sxs-lookup"><span data-stu-id="c520d-169">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ec67d-169">响应</span><span class="sxs-lookup"><span data-stu-id="ec67d-169">Response</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -572,7 +573,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="c520d-170">通知-操作已完成</span><span class="sxs-lookup"><span data-stu-id="c520d-170">Notification - Operation Completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="ec67d-170">通知-操作已完成</span><span class="sxs-lookup"><span data-stu-id="ec67d-170">Notification - Operation Completed</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -602,7 +603,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="c520d-171">已添加参与者的通知-名单</span><span class="sxs-lookup"><span data-stu-id="c520d-171">Notification - Roster Updated With Participant Added</span></span>
+##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="ec67d-171">已添加参与者的通知-名单</span><span class="sxs-lookup"><span data-stu-id="ec67d-171">Notification - Roster Updated With Participant Added</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -675,7 +676,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a><span data-ttu-id="c520d-172">通知-终止原始 P2P 呼叫</span><span class="sxs-lookup"><span data-stu-id="c520d-172">Notification - terminated the original P2P call</span></span>
+##### <a name="notification---terminated-the-original-p2p-call"></a><span data-ttu-id="ec67d-172">通知-终止原始 P2P 呼叫</span><span class="sxs-lookup"><span data-stu-id="ec67d-172">Notification - terminated the original P2P call</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -705,7 +706,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a><span data-ttu-id="c520d-173">通知-已删除原始 P2P 呼叫</span><span class="sxs-lookup"><span data-stu-id="c520d-173">Notification - Deleted the original P2P call</span></span>
+##### <a name="notification---deleted-the-original-p2p-call"></a><span data-ttu-id="ec67d-173">通知-已删除原始 P2P 呼叫</span><span class="sxs-lookup"><span data-stu-id="ec67d-173">Notification - Deleted the original P2P call</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls

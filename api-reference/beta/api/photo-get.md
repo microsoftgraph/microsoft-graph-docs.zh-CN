@@ -2,53 +2,56 @@
 title: 获取照片
 description: 检索 photo 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 4f0f10e864563a1ab934e5631d98252eb6312e1a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7d7878d6d00e7b010ee954670735b5c4eb64b933
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876924"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988599"
 ---
-# <a name="get-photo"></a><span data-ttu-id="5dcbb-103">获取照片</span><span class="sxs-lookup"><span data-stu-id="5dcbb-103">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="daba9-103">获取照片</span><span class="sxs-lookup"><span data-stu-id="daba9-103">Get photo</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5dcbb-104">检索 photo 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-104">Retrieve the properties and relationships of photo object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5dcbb-105">权限</span><span class="sxs-lookup"><span data-stu-id="5dcbb-105">Permissions</span></span>
-<span data-ttu-id="5dcbb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="daba9-104">检索 photo 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="daba9-104">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="daba9-105">权限</span><span class="sxs-lookup"><span data-stu-id="daba9-105">Permissions</span></span>
+<span data-ttu-id="daba9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="daba9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5dcbb-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="5dcbb-108">Permission type</span></span>      | <span data-ttu-id="5dcbb-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5dcbb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="daba9-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="daba9-108">Permission type</span></span>      | <span data-ttu-id="daba9-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="daba9-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5dcbb-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5dcbb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5dcbb-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="5dcbb-111">Files.Read</span></span>    |
-|<span data-ttu-id="5dcbb-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5dcbb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5dcbb-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="5dcbb-113">Files.Read</span></span>    |
-|<span data-ttu-id="5dcbb-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="5dcbb-114">Application</span></span> | <span data-ttu-id="5dcbb-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-115">Not supported.</span></span> |
+|<span data-ttu-id="daba9-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="daba9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="daba9-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="daba9-111">Files.Read</span></span>    |
+|<span data-ttu-id="daba9-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="daba9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="daba9-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="daba9-113">Files.Read</span></span>    |
+|<span data-ttu-id="daba9-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="daba9-114">Application</span></span> | <span data-ttu-id="daba9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="daba9-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5dcbb-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5dcbb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daba9-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="daba9-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5dcbb-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5dcbb-117">Optional query parameters</span></span>
-<span data-ttu-id="5dcbb-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="daba9-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="daba9-117">Optional query parameters</span></span>
+<span data-ttu-id="daba9-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="daba9-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5dcbb-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="5dcbb-119">Request headers</span></span>
-| <span data-ttu-id="5dcbb-120">名称</span><span class="sxs-lookup"><span data-stu-id="5dcbb-120">Name</span></span>       | <span data-ttu-id="5dcbb-121">类型</span><span class="sxs-lookup"><span data-stu-id="5dcbb-121">Type</span></span> | <span data-ttu-id="5dcbb-122">说明</span><span class="sxs-lookup"><span data-stu-id="5dcbb-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="daba9-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="daba9-119">Request headers</span></span>
+| <span data-ttu-id="daba9-120">名称</span><span class="sxs-lookup"><span data-stu-id="daba9-120">Name</span></span>       | <span data-ttu-id="daba9-121">类型</span><span class="sxs-lookup"><span data-stu-id="daba9-121">Type</span></span> | <span data-ttu-id="daba9-122">说明</span><span class="sxs-lookup"><span data-stu-id="daba9-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="5dcbb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5dcbb-123">Authorization</span></span>  | <span data-ttu-id="5dcbb-124">string</span><span class="sxs-lookup"><span data-stu-id="5dcbb-124">string</span></span>  | <span data-ttu-id="5dcbb-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="daba9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="daba9-123">Authorization</span></span>  | <span data-ttu-id="daba9-124">string</span><span class="sxs-lookup"><span data-stu-id="daba9-124">string</span></span>  | <span data-ttu-id="daba9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="daba9-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5dcbb-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5dcbb-127">Request body</span></span>
-<span data-ttu-id="5dcbb-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="daba9-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="daba9-127">Request body</span></span>
+<span data-ttu-id="daba9-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="daba9-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5dcbb-129">响应</span><span class="sxs-lookup"><span data-stu-id="5dcbb-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="daba9-129">响应</span><span class="sxs-lookup"><span data-stu-id="daba9-129">Response</span></span>
 
-<span data-ttu-id="5dcbb-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [photo](../resources/photo.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="5dcbb-131">示例</span><span class="sxs-lookup"><span data-stu-id="5dcbb-131">Examples</span></span>
-##### <a name="request"></a><span data-ttu-id="5dcbb-132">请求</span><span class="sxs-lookup"><span data-stu-id="5dcbb-132">Request</span></span>
-<span data-ttu-id="5dcbb-133">下面的示例展示了如何请求获取照片元数据。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-133">Here is an example of the request for photo metadata.</span></span>
+<span data-ttu-id="daba9-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [photo](../resources/photo.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="daba9-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="daba9-131">示例</span><span class="sxs-lookup"><span data-stu-id="daba9-131">Examples</span></span>
+##### <a name="request"></a><span data-ttu-id="daba9-132">请求</span><span class="sxs-lookup"><span data-stu-id="daba9-132">Request</span></span>
+<span data-ttu-id="daba9-133">下面的示例展示了如何请求获取照片元数据。</span><span class="sxs-lookup"><span data-stu-id="daba9-133">Here is an example of the request for photo metadata.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5dcbb-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="5dcbb-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="daba9-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="daba9-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -56,26 +59,26 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5dcbb-135">C#</span><span class="sxs-lookup"><span data-stu-id="5dcbb-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="daba9-135">C#</span><span class="sxs-lookup"><span data-stu-id="daba9-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5dcbb-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="5dcbb-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="daba9-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="daba9-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5dcbb-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="5dcbb-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="daba9-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="daba9-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="5dcbb-138">Java</span><span class="sxs-lookup"><span data-stu-id="5dcbb-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="daba9-138">Java</span><span class="sxs-lookup"><span data-stu-id="daba9-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5dcbb-139">响应</span><span class="sxs-lookup"><span data-stu-id="5dcbb-139">Response</span></span>
-<span data-ttu-id="5dcbb-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-140">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="daba9-139">响应</span><span class="sxs-lookup"><span data-stu-id="daba9-139">Response</span></span>
+<span data-ttu-id="daba9-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="daba9-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -92,8 +95,8 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="request"></a><span data-ttu-id="5dcbb-141">请求</span><span class="sxs-lookup"><span data-stu-id="5dcbb-141">Request</span></span>
-<span data-ttu-id="5dcbb-142">下面的示例展示了如何请求获取照片字节。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-142">Here is an example of the request for the photo bytes.</span></span>
+##### <a name="request"></a><span data-ttu-id="daba9-141">请求</span><span class="sxs-lookup"><span data-stu-id="daba9-141">Request</span></span>
+<span data-ttu-id="daba9-142">下面的示例展示了如何请求获取照片字节。</span><span class="sxs-lookup"><span data-stu-id="daba9-142">Here is an example of the request for the photo bytes.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_photo"
@@ -101,8 +104,8 @@ Content-length: 53
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ```
-##### <a name="response"></a><span data-ttu-id="5dcbb-143">响应</span><span class="sxs-lookup"><span data-stu-id="5dcbb-143">Response</span></span>
-<span data-ttu-id="5dcbb-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5dcbb-144">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="daba9-143">响应</span><span class="sxs-lookup"><span data-stu-id="daba9-143">Response</span></span>
+<span data-ttu-id="daba9-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="daba9-144">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored","@odata.type": "stream" } -->
 

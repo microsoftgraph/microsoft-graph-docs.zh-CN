@@ -4,54 +4,55 @@ description: 获取用户邮箱中的所有 Outlook 任务组。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ce0110e166f4422a18332e85dc0f4cc0747e49b3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 191038e169037728a99931df8ee64482bca448a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877420"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988662"
 ---
-# <a name="list-taskgroups"></a><span data-ttu-id="a014d-103">列出 taskGroups</span><span class="sxs-lookup"><span data-stu-id="a014d-103">List taskGroups</span></span>
+# <a name="list-taskgroups"></a><span data-ttu-id="28ab1-103">列出 taskGroups</span><span class="sxs-lookup"><span data-stu-id="28ab1-103">List taskGroups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a014d-104">获取用户邮箱中的所有 Outlook 任务组。</span><span class="sxs-lookup"><span data-stu-id="a014d-104">Get all the Outlook task groups in the user's mailbox.</span></span>
+<span data-ttu-id="28ab1-104">获取用户邮箱中的所有 Outlook 任务组。</span><span class="sxs-lookup"><span data-stu-id="28ab1-104">Get all the Outlook task groups in the user's mailbox.</span></span>
 
-<span data-ttu-id="a014d-105">响应始终包括默认任务组`My Tasks`以及邮箱中已创建的任何其他任务组。</span><span class="sxs-lookup"><span data-stu-id="a014d-105">The response always includes the default task group `My Tasks`, and any other task groups that have been created in the mailbox.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a014d-106">权限</span><span class="sxs-lookup"><span data-stu-id="a014d-106">Permissions</span></span>
-<span data-ttu-id="a014d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a014d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="28ab1-105">响应始终包括默认任务组`My Tasks`以及邮箱中已创建的任何其他任务组。</span><span class="sxs-lookup"><span data-stu-id="28ab1-105">The response always includes the default task group `My Tasks`, and any other task groups that have been created in the mailbox.</span></span>
+## <a name="permissions"></a><span data-ttu-id="28ab1-106">权限</span><span class="sxs-lookup"><span data-stu-id="28ab1-106">Permissions</span></span>
+<span data-ttu-id="28ab1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="28ab1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a014d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a014d-109">Permission type</span></span>      | <span data-ttu-id="a014d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a014d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="28ab1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="28ab1-109">Permission type</span></span>      | <span data-ttu-id="28ab1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="28ab1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a014d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a014d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a014d-112">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="a014d-112">Tasks.Read</span></span>    |
-|<span data-ttu-id="a014d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a014d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a014d-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="a014d-114">Tasks.Read</span></span>    |
-|<span data-ttu-id="a014d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a014d-115">Application</span></span> | <span data-ttu-id="a014d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a014d-116">Not supported.</span></span> |
+|<span data-ttu-id="28ab1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="28ab1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="28ab1-112">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="28ab1-112">Tasks.Read</span></span>    |
+|<span data-ttu-id="28ab1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="28ab1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28ab1-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="28ab1-114">Tasks.Read</span></span>    |
+|<span data-ttu-id="28ab1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="28ab1-115">Application</span></span> | <span data-ttu-id="28ab1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="28ab1-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a014d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a014d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28ab1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="28ab1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskGroups
 GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a014d-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a014d-118">Optional query parameters</span></span>
-<span data-ttu-id="a014d-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a014d-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="28ab1-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="28ab1-118">Optional query parameters</span></span>
+<span data-ttu-id="28ab1-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="28ab1-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a014d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a014d-120">Request headers</span></span>
-| <span data-ttu-id="a014d-121">名称</span><span class="sxs-lookup"><span data-stu-id="a014d-121">Name</span></span>      |<span data-ttu-id="a014d-122">说明</span><span class="sxs-lookup"><span data-stu-id="a014d-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="28ab1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="28ab1-120">Request headers</span></span>
+| <span data-ttu-id="28ab1-121">名称</span><span class="sxs-lookup"><span data-stu-id="28ab1-121">Name</span></span>      |<span data-ttu-id="28ab1-122">说明</span><span class="sxs-lookup"><span data-stu-id="28ab1-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a014d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a014d-123">Authorization</span></span>  | <span data-ttu-id="a014d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a014d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="28ab1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="28ab1-123">Authorization</span></span>  | <span data-ttu-id="28ab1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="28ab1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a014d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a014d-126">Request body</span></span>
-<span data-ttu-id="a014d-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a014d-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28ab1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="28ab1-126">Request body</span></span>
+<span data-ttu-id="28ab1-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="28ab1-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a014d-128">响应</span><span class="sxs-lookup"><span data-stu-id="a014d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28ab1-128">响应</span><span class="sxs-lookup"><span data-stu-id="28ab1-128">Response</span></span>
 
-<span data-ttu-id="a014d-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="a014d-129">If successful, this method returns a `200 OK` response code and collection of [outlookTaskGroup](../resources/outlooktaskgroup.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a014d-130">示例</span><span class="sxs-lookup"><span data-stu-id="a014d-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a014d-131">请求</span><span class="sxs-lookup"><span data-stu-id="a014d-131">Request</span></span>
-<span data-ttu-id="a014d-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a014d-132">Here is an example of the request.</span></span>
+<span data-ttu-id="28ab1-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="28ab1-129">If successful, this method returns a `200 OK` response code and collection of [outlookTaskGroup](../resources/outlooktaskgroup.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="28ab1-130">示例</span><span class="sxs-lookup"><span data-stu-id="28ab1-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="28ab1-131">请求</span><span class="sxs-lookup"><span data-stu-id="28ab1-131">Request</span></span>
+<span data-ttu-id="28ab1-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="28ab1-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a014d-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a014d-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="28ab1-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="28ab1-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_taskgroups"
@@ -59,26 +60,26 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a014d-134">C#</span><span class="sxs-lookup"><span data-stu-id="a014d-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="28ab1-134">C#</span><span class="sxs-lookup"><span data-stu-id="28ab1-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-taskgroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a014d-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="a014d-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="28ab1-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="28ab1-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-taskgroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a014d-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="a014d-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="28ab1-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="28ab1-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-taskgroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a014d-137">Java</span><span class="sxs-lookup"><span data-stu-id="a014d-137">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="28ab1-137">Java</span><span class="sxs-lookup"><span data-stu-id="28ab1-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-taskgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a014d-138">响应</span><span class="sxs-lookup"><span data-stu-id="a014d-138">Response</span></span>
-<span data-ttu-id="a014d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a014d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="28ab1-138">响应</span><span class="sxs-lookup"><span data-stu-id="28ab1-138">Response</span></span>
+<span data-ttu-id="28ab1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="28ab1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
