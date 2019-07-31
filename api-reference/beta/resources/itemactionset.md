@@ -1,25 +1,27 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActionSet 资源提供有关对项目执行 [活动] [itemActivity] 的操作的信息。
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
-ms.openlocfilehash: b88f7514f7871e3c3850da91e4cd90b32f3a69c4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8053942fe96011b018e46681d69d308f65aa5d5f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967145"
 ---
-# <a name="itemactionset-resource-type"></a><span data-ttu-id="98c13-102">ItemActionSet 资源类型</span><span class="sxs-lookup"><span data-stu-id="98c13-102">ItemActionSet resource type</span></span>
+# <a name="itemactionset-resource-type"></a><span data-ttu-id="508b8-103">ItemActionSet 资源类型</span><span class="sxs-lookup"><span data-stu-id="508b8-103">ItemActionSet resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="98c13-103">**ItemActionSet** 资源提供有关构成项目上某个[活动][itemActivity]的操作信息。</span><span class="sxs-lookup"><span data-stu-id="98c13-103">The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.</span></span>
+<span data-ttu-id="508b8-104">**ItemActionSet** 资源提供有关构成项目上某个[活动][itemActivity]的操作信息。</span><span class="sxs-lookup"><span data-stu-id="508b8-104">The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.</span></span>
 
 [itemActivity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="98c13-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="98c13-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="508b8-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="508b8-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,23 +47,23 @@ ms.locfileid: "33345405"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="98c13-105">属性</span><span class="sxs-lookup"><span data-stu-id="98c13-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="508b8-106">属性</span><span class="sxs-lookup"><span data-stu-id="508b8-106">Properties</span></span>
 
-<span data-ttu-id="98c13-106">以下是目前可用的操作。</span><span class="sxs-lookup"><span data-stu-id="98c13-106">Below are the actions that are available today.</span></span>
-<span data-ttu-id="98c13-107">可能会在将来记录新操作，因此，请确保你的应用程序允许处理 **itemActionSet**，而无需执行任何应用程序理解的操作。</span><span class="sxs-lookup"><span data-stu-id="98c13-107">New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.</span></span>
+<span data-ttu-id="508b8-107">以下是目前可用的操作。</span><span class="sxs-lookup"><span data-stu-id="508b8-107">Below are the actions that are available today.</span></span>
+<span data-ttu-id="508b8-108">可能会在将来记录新操作，因此，请确保你的应用程序允许处理 **itemActionSet**，而无需执行任何应用程序理解的操作。</span><span class="sxs-lookup"><span data-stu-id="508b8-108">New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.</span></span>
 
-| <span data-ttu-id="98c13-108">属性名称</span><span class="sxs-lookup"><span data-stu-id="98c13-108">Property name</span></span> | <span data-ttu-id="98c13-109">类型</span><span class="sxs-lookup"><span data-stu-id="98c13-109">Type</span></span>              | <span data-ttu-id="98c13-110">说明</span><span class="sxs-lookup"><span data-stu-id="98c13-110">Description</span></span>
+| <span data-ttu-id="508b8-109">属性名</span><span class="sxs-lookup"><span data-stu-id="508b8-109">Property name</span></span> | <span data-ttu-id="508b8-110">类型</span><span class="sxs-lookup"><span data-stu-id="508b8-110">Type</span></span>              | <span data-ttu-id="508b8-111">说明</span><span class="sxs-lookup"><span data-stu-id="508b8-111">Description</span></span>
 |:--------------|:------------------|:-----------------------------------------
-| <span data-ttu-id="98c13-111">comment</span><span class="sxs-lookup"><span data-stu-id="98c13-111">comment</span></span>       | <span data-ttu-id="98c13-112">[commentAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-112">[commentAction][]</span></span> | <span data-ttu-id="98c13-113">向项目添加了注释。</span><span class="sxs-lookup"><span data-stu-id="98c13-113">A comment was added to the item.</span></span>
-| <span data-ttu-id="98c13-114">create</span><span class="sxs-lookup"><span data-stu-id="98c13-114">create</span></span>        | <span data-ttu-id="98c13-115">[createAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-115">[createAction][]</span></span>  | <span data-ttu-id="98c13-116">创建了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-116">An item was created.</span></span>
-| <span data-ttu-id="98c13-117">delete</span><span class="sxs-lookup"><span data-stu-id="98c13-117">delete</span></span>        | <span data-ttu-id="98c13-118">[deleteAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-118">[deleteAction][]</span></span>  | <span data-ttu-id="98c13-119">删除了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-119">An item was deleted.</span></span>
-| <span data-ttu-id="98c13-120">edit</span><span class="sxs-lookup"><span data-stu-id="98c13-120">edit</span></span>          | <span data-ttu-id="98c13-121">[editAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-121">[editAction][]</span></span>    | <span data-ttu-id="98c13-122">编辑了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-122">An item was edited.</span></span>
-| <span data-ttu-id="98c13-123">mention</span><span class="sxs-lookup"><span data-stu-id="98c13-123">mention</span></span>       | <span data-ttu-id="98c13-124">[mentionAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-124">[mentionAction][]</span></span> | <span data-ttu-id="98c13-125">项目中提及用户。</span><span class="sxs-lookup"><span data-stu-id="98c13-125">A user was mentioned in the item.</span></span>
-| <span data-ttu-id="98c13-126">move</span><span class="sxs-lookup"><span data-stu-id="98c13-126">move</span></span>          | <span data-ttu-id="98c13-127">[moveAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-127">[moveAction][]</span></span>    | <span data-ttu-id="98c13-128">移动了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-128">An item was moved.</span></span>
-| <span data-ttu-id="98c13-129">rename</span><span class="sxs-lookup"><span data-stu-id="98c13-129">rename</span></span>        | <span data-ttu-id="98c13-130">[renameAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-130">[renameAction][]</span></span>  | <span data-ttu-id="98c13-131">重命名了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-131">An item was renamed.</span></span>
-| <span data-ttu-id="98c13-132">restore</span><span class="sxs-lookup"><span data-stu-id="98c13-132">restore</span></span>       | <span data-ttu-id="98c13-133">[restoreAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-133">[restoreAction][]</span></span> | <span data-ttu-id="98c13-134">恢复了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-134">An item was restored.</span></span>
-| <span data-ttu-id="98c13-135">share</span><span class="sxs-lookup"><span data-stu-id="98c13-135">share</span></span>         | <span data-ttu-id="98c13-136">[shareAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-136">[shareAction][]</span></span>   | <span data-ttu-id="98c13-137">共享了项目。</span><span class="sxs-lookup"><span data-stu-id="98c13-137">An item was shared.</span></span>
-| <span data-ttu-id="98c13-138">version</span><span class="sxs-lookup"><span data-stu-id="98c13-138">version</span></span>       | <span data-ttu-id="98c13-139">[versionAction][]</span><span class="sxs-lookup"><span data-stu-id="98c13-139">[versionAction][]</span></span> | <span data-ttu-id="98c13-140">确定了项目的版本。</span><span class="sxs-lookup"><span data-stu-id="98c13-140">An item was versioned.</span></span>
+| <span data-ttu-id="508b8-112">comment</span><span class="sxs-lookup"><span data-stu-id="508b8-112">comment</span></span>       | <span data-ttu-id="508b8-113">[commentAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-113">[commentAction][]</span></span> | <span data-ttu-id="508b8-114">向项目添加了注释。</span><span class="sxs-lookup"><span data-stu-id="508b8-114">A comment was added to the item.</span></span>
+| <span data-ttu-id="508b8-115">create</span><span class="sxs-lookup"><span data-stu-id="508b8-115">create</span></span>        | <span data-ttu-id="508b8-116">[createAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-116">[createAction][]</span></span>  | <span data-ttu-id="508b8-117">创建了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-117">An item was created.</span></span>
+| <span data-ttu-id="508b8-118">delete</span><span class="sxs-lookup"><span data-stu-id="508b8-118">delete</span></span>        | <span data-ttu-id="508b8-119">[deleteAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-119">[deleteAction][]</span></span>  | <span data-ttu-id="508b8-120">删除了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-120">An item was deleted.</span></span>
+| <span data-ttu-id="508b8-121">edit</span><span class="sxs-lookup"><span data-stu-id="508b8-121">edit</span></span>          | <span data-ttu-id="508b8-122">[editAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-122">[editAction][]</span></span>    | <span data-ttu-id="508b8-123">编辑了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-123">An item was edited.</span></span>
+| <span data-ttu-id="508b8-124">mention</span><span class="sxs-lookup"><span data-stu-id="508b8-124">mention</span></span>       | <span data-ttu-id="508b8-125">[mentionAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-125">[mentionAction][]</span></span> | <span data-ttu-id="508b8-126">项目中提及用户。</span><span class="sxs-lookup"><span data-stu-id="508b8-126">A user was mentioned in the item.</span></span>
+| <span data-ttu-id="508b8-127">move</span><span class="sxs-lookup"><span data-stu-id="508b8-127">move</span></span>          | <span data-ttu-id="508b8-128">[moveAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-128">[moveAction][]</span></span>    | <span data-ttu-id="508b8-129">移动了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-129">An item was moved.</span></span>
+| <span data-ttu-id="508b8-130">rename</span><span class="sxs-lookup"><span data-stu-id="508b8-130">rename</span></span>        | <span data-ttu-id="508b8-131">[renameAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-131">[renameAction][]</span></span>  | <span data-ttu-id="508b8-132">重命名了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-132">An item was renamed.</span></span>
+| <span data-ttu-id="508b8-133">restore</span><span class="sxs-lookup"><span data-stu-id="508b8-133">restore</span></span>       | <span data-ttu-id="508b8-134">[restoreAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-134">[restoreAction][]</span></span> | <span data-ttu-id="508b8-135">恢复了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-135">An item was restored.</span></span>
+| <span data-ttu-id="508b8-136">share</span><span class="sxs-lookup"><span data-stu-id="508b8-136">share</span></span>         | <span data-ttu-id="508b8-137">[shareAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-137">[shareAction][]</span></span>   | <span data-ttu-id="508b8-138">共享了项目。</span><span class="sxs-lookup"><span data-stu-id="508b8-138">An item was shared.</span></span>
+| <span data-ttu-id="508b8-139">version</span><span class="sxs-lookup"><span data-stu-id="508b8-139">version</span></span>       | <span data-ttu-id="508b8-140">[versionAction][]</span><span class="sxs-lookup"><span data-stu-id="508b8-140">[versionAction][]</span></span> | <span data-ttu-id="508b8-141">确定了项目的版本。</span><span class="sxs-lookup"><span data-stu-id="508b8-141">An item was versioned.</span></span>
 
 [commentAction]: commentaction.md
 [createAction]: createaction.md
@@ -74,9 +76,9 @@ ms.locfileid: "33345405"
 [shareAction]: shareaction.md
 [versionAction]: versionaction.md
 
-## <a name="remarks"></a><span data-ttu-id="98c13-151">注解</span><span class="sxs-lookup"><span data-stu-id="98c13-151">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="508b8-152">注解</span><span class="sxs-lookup"><span data-stu-id="508b8-152">Remarks</span></span>
 
-<span data-ttu-id="98c13-152">项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="98c13-152">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="508b8-153">项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="508b8-153">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

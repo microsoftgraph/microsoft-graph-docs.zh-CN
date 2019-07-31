@@ -4,59 +4,60 @@ description: 更新 **plannertaskdetails** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a814dd289269c951209f540961929905384b4344
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: a7a0e058d540c3623d6d3d63b11bbfad46c3ab4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448359"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978992"
 ---
-# <a name="update-plannertaskdetails"></a><span data-ttu-id="d05bd-103">更新 plannertaskdetails</span><span class="sxs-lookup"><span data-stu-id="d05bd-103">Update plannertaskdetails</span></span>
+# <a name="update-plannertaskdetails"></a><span data-ttu-id="0815f-103">更新 plannertaskdetails</span><span class="sxs-lookup"><span data-stu-id="0815f-103">Update plannertaskdetails</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d05bd-104">更新 **plannertaskdetails** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="d05bd-104">Update the properties of **plannertaskdetails** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d05bd-105">权限</span><span class="sxs-lookup"><span data-stu-id="d05bd-105">Permissions</span></span>
-<span data-ttu-id="d05bd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0815f-104">更新 **plannertaskdetails** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="0815f-104">Update the properties of **plannertaskdetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0815f-105">权限</span><span class="sxs-lookup"><span data-stu-id="0815f-105">Permissions</span></span>
+<span data-ttu-id="0815f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0815f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d05bd-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d05bd-108">Permission type</span></span>      | <span data-ttu-id="d05bd-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d05bd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0815f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="0815f-108">Permission type</span></span>      | <span data-ttu-id="0815f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0815f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d05bd-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d05bd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d05bd-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d05bd-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d05bd-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d05bd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d05bd-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d05bd-113">Not supported.</span></span>    |
-|<span data-ttu-id="d05bd-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d05bd-114">Application</span></span> | <span data-ttu-id="d05bd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d05bd-115">Not supported.</span></span> |
+|<span data-ttu-id="0815f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0815f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0815f-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0815f-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0815f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0815f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0815f-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="0815f-113">Not supported.</span></span>    |
+|<span data-ttu-id="0815f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="0815f-114">Application</span></span> | <span data-ttu-id="0815f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="0815f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d05bd-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d05bd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0815f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0815f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/details
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="d05bd-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="d05bd-117">Optional request headers</span></span>
-| <span data-ttu-id="d05bd-118">名称</span><span class="sxs-lookup"><span data-stu-id="d05bd-118">Name</span></span>       | <span data-ttu-id="d05bd-119">说明</span><span class="sxs-lookup"><span data-stu-id="d05bd-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="0815f-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="0815f-117">Optional request headers</span></span>
+| <span data-ttu-id="0815f-118">名称</span><span class="sxs-lookup"><span data-stu-id="0815f-118">Name</span></span>       | <span data-ttu-id="0815f-119">说明</span><span class="sxs-lookup"><span data-stu-id="0815f-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="d05bd-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d05bd-120">Authorization</span></span>  | <span data-ttu-id="d05bd-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d05bd-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="d05bd-123">If-Match</span></span>  | <span data-ttu-id="d05bd-p103">要更新的 **plannerTaskDetails** 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p103">Last known ETag value for the **plannerTaskDetails** to be updated. Required.</span></span>|
+| <span data-ttu-id="0815f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0815f-120">Authorization</span></span>  | <span data-ttu-id="0815f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0815f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0815f-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="0815f-123">If-Match</span></span>  | <span data-ttu-id="0815f-p103">要更新的 **plannerTaskDetails** 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="0815f-p103">Last known ETag value for the **plannerTaskDetails** to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d05bd-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="d05bd-126">Request body</span></span>
-<span data-ttu-id="d05bd-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0815f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="0815f-126">Request body</span></span>
+<span data-ttu-id="0815f-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="0815f-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="d05bd-130">属性</span><span class="sxs-lookup"><span data-stu-id="d05bd-130">Property</span></span>     | <span data-ttu-id="d05bd-131">类型</span><span class="sxs-lookup"><span data-stu-id="d05bd-131">Type</span></span>   |<span data-ttu-id="d05bd-132">说明</span><span class="sxs-lookup"><span data-stu-id="d05bd-132">Description</span></span>|
+| <span data-ttu-id="0815f-130">属性</span><span class="sxs-lookup"><span data-stu-id="0815f-130">Property</span></span>     | <span data-ttu-id="0815f-131">类型</span><span class="sxs-lookup"><span data-stu-id="0815f-131">Type</span></span>   |<span data-ttu-id="0815f-132">说明</span><span class="sxs-lookup"><span data-stu-id="0815f-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d05bd-133">checklist</span><span class="sxs-lookup"><span data-stu-id="d05bd-133">checklist</span></span>|[<span data-ttu-id="d05bd-134">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="d05bd-134">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="d05bd-135">任务上的检查表项目集合。</span><span class="sxs-lookup"><span data-stu-id="d05bd-135">The collection of checklist items on the task.</span></span>|
-|<span data-ttu-id="d05bd-136">说明</span><span class="sxs-lookup"><span data-stu-id="d05bd-136">description</span></span>|<span data-ttu-id="d05bd-137">字符串</span><span class="sxs-lookup"><span data-stu-id="d05bd-137">String</span></span>|<span data-ttu-id="d05bd-138">任务描述</span><span class="sxs-lookup"><span data-stu-id="d05bd-138">Description of the task</span></span>|
-|<span data-ttu-id="d05bd-139">previewType</span><span class="sxs-lookup"><span data-stu-id="d05bd-139">previewType</span></span>|<span data-ttu-id="d05bd-140">string</span><span class="sxs-lookup"><span data-stu-id="d05bd-140">string</span></span>|<span data-ttu-id="d05bd-p105">这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p105">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
-|<span data-ttu-id="d05bd-144">references</span><span class="sxs-lookup"><span data-stu-id="d05bd-144">references</span></span>|[<span data-ttu-id="d05bd-145">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="d05bd-145">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="d05bd-146">任务上的引用集合。</span><span class="sxs-lookup"><span data-stu-id="d05bd-146">The collection of references on the task.</span></span>|
+|<span data-ttu-id="0815f-133">checklist</span><span class="sxs-lookup"><span data-stu-id="0815f-133">checklist</span></span>|[<span data-ttu-id="0815f-134">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="0815f-134">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="0815f-135">任务上的检查表项目集合。</span><span class="sxs-lookup"><span data-stu-id="0815f-135">The collection of checklist items on the task.</span></span>|
+|<span data-ttu-id="0815f-136">说明</span><span class="sxs-lookup"><span data-stu-id="0815f-136">description</span></span>|<span data-ttu-id="0815f-137">字符串</span><span class="sxs-lookup"><span data-stu-id="0815f-137">String</span></span>|<span data-ttu-id="0815f-138">任务描述</span><span class="sxs-lookup"><span data-stu-id="0815f-138">Description of the task</span></span>|
+|<span data-ttu-id="0815f-139">previewType</span><span class="sxs-lookup"><span data-stu-id="0815f-139">previewType</span></span>|<span data-ttu-id="0815f-140">string</span><span class="sxs-lookup"><span data-stu-id="0815f-140">string</span></span>|<span data-ttu-id="0815f-p105">这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。当设为 `automatic` 时，由查看任务的应用选择显示的预览。</span><span class="sxs-lookup"><span data-stu-id="0815f-p105">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
+|<span data-ttu-id="0815f-144">references</span><span class="sxs-lookup"><span data-stu-id="0815f-144">references</span></span>|[<span data-ttu-id="0815f-145">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="0815f-145">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="0815f-146">任务上的引用集合。</span><span class="sxs-lookup"><span data-stu-id="0815f-146">The collection of references on the task.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d05bd-147">响应</span><span class="sxs-lookup"><span data-stu-id="d05bd-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0815f-147">响应</span><span class="sxs-lookup"><span data-stu-id="0815f-147">Response</span></span>
 
-<span data-ttu-id="d05bd-148">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerTaskDetails](../resources/plannertaskdetails.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d05bd-148">If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
+<span data-ttu-id="0815f-148">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerTaskDetails](../resources/plannertaskdetails.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0815f-148">If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
 
-<span data-ttu-id="d05bd-p106">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="0815f-p106">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="0815f-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="d05bd-152">示例</span><span class="sxs-lookup"><span data-stu-id="d05bd-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d05bd-153">请求</span><span class="sxs-lookup"><span data-stu-id="d05bd-153">Request</span></span>
-<span data-ttu-id="d05bd-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d05bd-154">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0815f-152">示例</span><span class="sxs-lookup"><span data-stu-id="0815f-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0815f-153">请求</span><span class="sxs-lookup"><span data-stu-id="0815f-153">Request</span></span>
+<span data-ttu-id="0815f-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0815f-154">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d05bd-155">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d05bd-155">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="0815f-155">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="0815f-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertaskdetails"
@@ -96,14 +97,14 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d05bd-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="d05bd-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0815f-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="0815f-156">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d05bd-157">响应</span><span class="sxs-lookup"><span data-stu-id="d05bd-157">Response</span></span>
-<span data-ttu-id="d05bd-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d05bd-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0815f-157">响应</span><span class="sxs-lookup"><span data-stu-id="0815f-157">Response</span></span>
+<span data-ttu-id="0815f-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0815f-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,31 +4,32 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 45e4754fef0dd3a2f7a669e3b3b96692d117c8f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1e8fafe9a3cdce4519cf5755337b016fa587cd06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966900"
 ---
-# <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a><span data-ttu-id="80bbb-103">mailboxUsageQuotaStatusMailboxCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="80bbb-103">mailboxUsageQuotaStatusMailboxCounts resource type</span></span>
+# <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a><span data-ttu-id="d810c-103">mailboxUsageQuotaStatusMailboxCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="d810c-103">mailboxUsageQuotaStatusMailboxCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="80bbb-104">属性</span><span class="sxs-lookup"><span data-stu-id="80bbb-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d810c-104">属性</span><span class="sxs-lookup"><span data-stu-id="d810c-104">Properties</span></span>
 
-| <span data-ttu-id="80bbb-105">属性</span><span class="sxs-lookup"><span data-stu-id="80bbb-105">Property</span></span>              | <span data-ttu-id="80bbb-106">类型</span><span class="sxs-lookup"><span data-stu-id="80bbb-106">Type</span></span>   |
+| <span data-ttu-id="d810c-105">属性</span><span class="sxs-lookup"><span data-stu-id="d810c-105">Property</span></span>              | <span data-ttu-id="d810c-106">类型</span><span class="sxs-lookup"><span data-stu-id="d810c-106">Type</span></span>   |
 | :-------------------- | :----- |
-| <span data-ttu-id="80bbb-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="80bbb-107">reportRefreshDate</span></span>     | <span data-ttu-id="80bbb-108">日期</span><span class="sxs-lookup"><span data-stu-id="80bbb-108">Date</span></span>   |
-| <span data-ttu-id="80bbb-109">underLimit</span><span class="sxs-lookup"><span data-stu-id="80bbb-109">underLimit</span></span>            | <span data-ttu-id="80bbb-110">Int64</span><span class="sxs-lookup"><span data-stu-id="80bbb-110">Int64</span></span>  |
-| <span data-ttu-id="80bbb-111">warningIssued</span><span class="sxs-lookup"><span data-stu-id="80bbb-111">warningIssued</span></span>         | <span data-ttu-id="80bbb-112">Int64</span><span class="sxs-lookup"><span data-stu-id="80bbb-112">Int64</span></span>  |
-| <span data-ttu-id="80bbb-113">sendProhibited</span><span class="sxs-lookup"><span data-stu-id="80bbb-113">sendProhibited</span></span>        | <span data-ttu-id="80bbb-114">Int64</span><span class="sxs-lookup"><span data-stu-id="80bbb-114">Int64</span></span>  |
-| <span data-ttu-id="80bbb-115">sendReceiveProhibited</span><span class="sxs-lookup"><span data-stu-id="80bbb-115">sendReceiveProhibited</span></span> | <span data-ttu-id="80bbb-116">Int64</span><span class="sxs-lookup"><span data-stu-id="80bbb-116">Int64</span></span>  |
-| <span data-ttu-id="80bbb-117">尚</span><span class="sxs-lookup"><span data-stu-id="80bbb-117">indeterminate</span></span>         | <span data-ttu-id="80bbb-118">Int64</span><span class="sxs-lookup"><span data-stu-id="80bbb-118">Int64</span></span>  |
-| <span data-ttu-id="80bbb-119">reportDate</span><span class="sxs-lookup"><span data-stu-id="80bbb-119">reportDate</span></span>            | <span data-ttu-id="80bbb-120">日期</span><span class="sxs-lookup"><span data-stu-id="80bbb-120">Date</span></span>   |
-| <span data-ttu-id="80bbb-121">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="80bbb-121">reportPeriod</span></span>          | <span data-ttu-id="80bbb-122">字符串</span><span class="sxs-lookup"><span data-stu-id="80bbb-122">String</span></span> |
+| <span data-ttu-id="d810c-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="d810c-107">reportRefreshDate</span></span>     | <span data-ttu-id="d810c-108">日期</span><span class="sxs-lookup"><span data-stu-id="d810c-108">Date</span></span>   |
+| <span data-ttu-id="d810c-109">underLimit</span><span class="sxs-lookup"><span data-stu-id="d810c-109">underLimit</span></span>            | <span data-ttu-id="d810c-110">Int64</span><span class="sxs-lookup"><span data-stu-id="d810c-110">Int64</span></span>  |
+| <span data-ttu-id="d810c-111">warningIssued</span><span class="sxs-lookup"><span data-stu-id="d810c-111">warningIssued</span></span>         | <span data-ttu-id="d810c-112">Int64</span><span class="sxs-lookup"><span data-stu-id="d810c-112">Int64</span></span>  |
+| <span data-ttu-id="d810c-113">sendProhibited</span><span class="sxs-lookup"><span data-stu-id="d810c-113">sendProhibited</span></span>        | <span data-ttu-id="d810c-114">Int64</span><span class="sxs-lookup"><span data-stu-id="d810c-114">Int64</span></span>  |
+| <span data-ttu-id="d810c-115">sendReceiveProhibited</span><span class="sxs-lookup"><span data-stu-id="d810c-115">sendReceiveProhibited</span></span> | <span data-ttu-id="d810c-116">Int64</span><span class="sxs-lookup"><span data-stu-id="d810c-116">Int64</span></span>  |
+| <span data-ttu-id="d810c-117">尚</span><span class="sxs-lookup"><span data-stu-id="d810c-117">indeterminate</span></span>         | <span data-ttu-id="d810c-118">Int64</span><span class="sxs-lookup"><span data-stu-id="d810c-118">Int64</span></span>  |
+| <span data-ttu-id="d810c-119">reportDate</span><span class="sxs-lookup"><span data-stu-id="d810c-119">reportDate</span></span>            | <span data-ttu-id="d810c-120">日期</span><span class="sxs-lookup"><span data-stu-id="d810c-120">Date</span></span>   |
+| <span data-ttu-id="d810c-121">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="d810c-121">reportPeriod</span></span>          | <span data-ttu-id="d810c-122">String</span><span class="sxs-lookup"><span data-stu-id="d810c-122">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="80bbb-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="80bbb-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d810c-123">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d810c-123">JSON representation</span></span>
 
-<span data-ttu-id="80bbb-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="80bbb-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d810c-124">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d810c-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
