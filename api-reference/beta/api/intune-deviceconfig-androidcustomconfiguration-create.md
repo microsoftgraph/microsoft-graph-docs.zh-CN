@@ -4,12 +4,13 @@ description: 创建新的 androidCustomConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d240de92566289f4c8d7a2ea29595973a4ebeea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: dc0cfb12a50f5e05f2863318955bdd290d072bd9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971582"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958233"
 ---
 # <a name="create-androidcustomconfiguration"></a>创建 androidCustomConfiguration
 

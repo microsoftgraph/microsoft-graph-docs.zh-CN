@@ -4,12 +4,13 @@ description: 检索附加到事件的 attachment 对象列表。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b4a342e5cee426e6272ed04c42754d8e58cac991
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: aea1e2d7477a7b00a16720cd5ee3c004638d2a99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954515"
 ---
 # <a name="list-attachments"></a>列出附件
 

@@ -2,12 +2,15 @@
 title: 'Filter: apply'
 description: 在给定列中应用给定的筛选条件。
 localization_priority: Normal
-ms.openlocfilehash: b06418a0254c241ab8424aa04a81101f329ef22d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 7ed815297c4bc0e9512208ca3cc257bba3148b05
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954361"
 ---
 # <a name="filter-apply"></a>Filter: apply
 

@@ -4,12 +4,13 @@ description: 读取 androidWorkProfileCompliancePolicy 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5773d37839a9160afe948001b19f3024653d382
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 28f1cc6f5a7ae73da82801079e9e539bd77431b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969650"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951027"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>获取 androidWorkProfileCompliancePolicy
 

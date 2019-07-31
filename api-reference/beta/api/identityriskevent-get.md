@@ -4,12 +4,13 @@ description: 检索 identityriskevent 对象的属性和关系。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: ff271023e0e0e70d8d7251f72fd70eae58426061
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 60749f5b4932ece77a4db6e6bf6c66e47d55e60f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857540"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953162"
 ---
 # <a name="get-identityriskevent"></a>获取 identityRiskEvent
 

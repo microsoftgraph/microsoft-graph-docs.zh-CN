@@ -4,12 +4,13 @@ description: 读取 mobileAppInstallSummary 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a8d2a07ac1a14709bd4b9ce158abbf6d287573b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: dc773fc0a640c9d4ecbdb1b15a31610dcb7699c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960634"
 ---
 # <a name="get-mobileappinstallsummary"></a>获取 mobileAppInstallSummary
 

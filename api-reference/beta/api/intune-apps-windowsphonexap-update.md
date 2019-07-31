@@ -4,12 +4,13 @@ description: 更新 windowsPhoneXAP 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02732588ace6f962a8d0ad10b2c932bba4865c96
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ae0d6b46987b85849e51dd01499ccb21208a019a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959787"
 ---
 # <a name="update-windowsphonexap"></a>更新 windowsPhoneXAP
 

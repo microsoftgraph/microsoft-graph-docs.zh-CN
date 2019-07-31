@@ -4,12 +4,13 @@ description: 验证是否已将文件上载到租户中的特定学校数据同�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 88ddd87c67c5e85eee0335d7b04a94ade383abc3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b0f738f7e122126df2ce3611866e75eb5697b160
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954765"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 

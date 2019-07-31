@@ -4,12 +4,13 @@ description: 读取 androidWorkProfileScepCertificateProfile 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc3d0a57e955621ee2ad8c860f8a770bdfaabd9c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d2eb570ae779d1302710fb626ee3b72432d3a8ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969132"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950516"
 ---
 # <a name="get-androidworkprofilescepcertificateprofile"></a>获取 androidWorkProfileScepCertificateProfile
 

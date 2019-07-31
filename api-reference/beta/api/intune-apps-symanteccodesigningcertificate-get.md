@@ -4,12 +4,13 @@ description: 读取 symantecCodeSigningCertificate 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07cb2e1d2f1355e75cf8c4af19cef16443e918b8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: dea9bf9700c4c5017430ae75907c90de2dee03ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960417"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>获取 symantecCodeSigningCertificate
 

@@ -2,12 +2,15 @@
 title: 获取 governanceRoleDefinition
 description: 检索 governanceRoleDefinition 的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: c263ab9b24866d10bbf0943ea775dd97182ed90e
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 1c9eb59fd3ffaff3963db4f10139d123c6c154c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422330"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954114"
 ---
 # <a name="get-governanceroledefinition"></a>获取 governanceRoleDefinition
 

@@ -4,12 +4,13 @@ description: 拒绝用户日历中的指定事件邀请。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 4df721a04cb685a84c5d5e2f6b863d2f410f7d14
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3fb2d4e2fd99fdb986998ec284b1255d4b22cd39
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859730"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954583"
 ---
 # <a name="event-decline"></a>event: decline
 

@@ -4,12 +4,13 @@ description: 删除 officeClientConfigurationAssignment。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 9cfea5da157aace569d2c6b5132b94a95fe975e6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 211bdad30814ba463982d1d30dccff5cd7604baf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934045"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958905"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>删除 officeClientConfigurationAssignment
 

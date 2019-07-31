@@ -4,12 +4,13 @@ description: 计算出的洞察力, 可返回用户使用的文件列表。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 053f36b893cf2167cd30ea8ca1fe639a6df22494
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 31115a845c3b5af80aaba700e55e0ede05d922b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328649"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953071"
 ---
 # <a name="list-used"></a>使用的列表
 

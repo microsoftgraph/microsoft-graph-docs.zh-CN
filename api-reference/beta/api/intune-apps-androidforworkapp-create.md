@@ -4,12 +4,13 @@ description: 创建新的 androidForWorkApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 029ed51231790ffd983db6f5cf55d15be39d522a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2c0f589e7955ae5f5663f83ec26b327eea9100a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952462"
 ---
 # <a name="create-androidforworkapp"></a>创建 androidForWorkApp
 

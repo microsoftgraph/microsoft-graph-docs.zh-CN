@@ -4,12 +4,13 @@ description: 更新 iosImportedPFXCertificateProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b2a51f2b81a73351b2e0749104f0d29df427c1c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0798c963ea5af7f329b0caed33a5406a00cc5ded
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975810"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948108"
 ---
 # <a name="update-iosimportedpfxcertificateprofile"></a>更新 iosImportedPFXCertificateProfile
 

@@ -2,18 +2,21 @@
 title: verifiedDomain 资源类型
 description: 指定租户的域。 组织实体的**verifiedDomains**属性是**VerifiedDomain**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 088687d4450a5134c53bca6134039f7ba34a7597
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 091bb8e6c1a14f6c173d18acf68679feb6c88eaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964218"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定租户的域。 [组织](organization.md)实体的**verifiedDomains**属性是**VerifiedDomain**的集合。
+指定租户的域。 [组织](organization.md)实体的**VerifiedDomains**属性是**VerifiedDomain**的集合。
 
 
 ## <a name="properties"></a>属性

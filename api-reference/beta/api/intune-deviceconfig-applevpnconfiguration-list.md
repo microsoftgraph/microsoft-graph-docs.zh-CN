@@ -4,12 +4,13 @@ description: 列出 appleVpnConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e724aea0d790d3ce253a31bdb568bc39a71c8ce
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 31c9494234fecbffb9e3285bb3646c30c3afcccf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950290"
 ---
 # <a name="list-applevpnconfigurations"></a>列出 appleVpnConfigurations
 

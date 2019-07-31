@@ -4,12 +4,13 @@ description: 根据标识符检索租户中的学校数据同步配置文件。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b000ccc4912516a4264d83ff053f493e332f9e8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 52d40288237b417138d7ad54a290fc4529f3e10f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322930"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954857"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile
 

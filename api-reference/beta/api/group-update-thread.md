@@ -4,12 +4,13 @@ description: 更新 thread 对象。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2d16569f8dc21abe2c7415aa55ceeef16126393b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: f7e9bdabd9d36ca6e6995eff88e379bb409a84b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442718"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953407"
 ---
 # <a name="update-conversation-thread"></a>更新对话线程
 

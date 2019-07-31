@@ -4,12 +4,13 @@ description: 检索用户所在的学校列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 293e394af1da3213aedf79ecb1fc782b8f737d1d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1709cbf5abaad87e22677ee9222927b2a83a125f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859863"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954681"
 ---
 # <a name="list-schools"></a>列出学校
 

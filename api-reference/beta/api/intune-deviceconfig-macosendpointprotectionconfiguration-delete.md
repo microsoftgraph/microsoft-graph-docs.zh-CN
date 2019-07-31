@@ -4,12 +4,13 @@ description: 删除 macOSEndpointProtectionConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9632d0419d8ec9e222b179210e300ce83f0d4be
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b9bfbe3f87672193ef944f7d9e8581c431abc503
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947345"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>删除 macOSEndpointProtectionConfiguration
 

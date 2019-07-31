@@ -4,12 +4,13 @@ description: 创建新的 iosCustomConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 017cd9ae08611b3f4069ff4946b7dfa978c8c18b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2de760499dd5d8f32b62f3158e8db998040d6cb7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967172"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948633"
 ---
 # <a name="create-ioscustomconfiguration"></a>创建 iosCustomConfiguration
 

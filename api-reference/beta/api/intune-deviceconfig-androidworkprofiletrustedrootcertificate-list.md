@@ -4,12 +4,13 @@ description: 列出 androidWorkProfileTrustedRootCertificate 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ced9d81de841e0425e3bd3b960afe3dfdeb1ead9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 09ce2333710ddaf2d948186c84d421a17cf47cdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950425"
 ---
 # <a name="list-androidworkprofiletrustedrootcertificates"></a>列出 androidWorkProfileTrustedRootCertificates
 

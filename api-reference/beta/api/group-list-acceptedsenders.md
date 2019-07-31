@@ -4,12 +4,13 @@ description: 获取此组的“接受的发件人”列表中的用户或组列�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2ccd38e8f28a348d174afa7cff6025c71262c89f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 372ffe52273bef00d62e4123e56dfa2be7c418cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858539"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953788"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 

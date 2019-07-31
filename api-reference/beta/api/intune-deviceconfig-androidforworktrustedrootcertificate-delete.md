@@ -4,12 +4,13 @@ description: 删除 androidForWorkTrustedRootCertificate。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02470e9ac6a137ac3cd81607274c74e74d8552c8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7af84024965bcfd5b1dc8f6904768b3ccf114500
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970455"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963176"
 ---
 # <a name="delete-androidforworktrustedrootcertificate"></a>删除 androidForWorkTrustedRootCertificate
 

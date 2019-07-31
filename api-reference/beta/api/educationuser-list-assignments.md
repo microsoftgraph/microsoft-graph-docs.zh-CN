@@ -4,12 +4,13 @@ description: 返回为所有类分配给用户的工作分配的列表。 此实
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 566eaa526981a14ab4ce622fbad9b858f5b40ef9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 740ce6999830d7c55218caf8207e2fa6c6ad2aef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33321961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954685"
 ---
 # <a name="list-assignments"></a>列出作业
 

@@ -4,12 +4,13 @@ description: 列出 androidForWorkApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c85f8a796500507205a5e8d1a1bec5c0f8f4a2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8931051d54299e029f8b3e6722c24e3b09297bd7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965366"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952420"
 ---
 # <a name="list-androidforworkapps"></a>列出 androidForWorkApps
 

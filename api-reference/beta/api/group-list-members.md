@@ -4,12 +4,13 @@ description: 获取组的直接成员列表。 组可以将用户、联系人、
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 3cb6c9791e6a94d3d7091f21601db6deb6cb6dfb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c6e48f1d41d90e8072f7f50bd8ed35d970328160
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858414"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953709"
 ---
 # <a name="list-group-members"></a>列出组成员
 

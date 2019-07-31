@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 8c40cf086cc1eddad1a9fdc81e932baf4cf83f05
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9a85277bbc65882af3eaa8b69f1d04faa0bebf15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458276"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956175"
 ---
 # <a name="delete-journals"></a>删除日记
 从 Dynamics 365 Business Central 中删除日记。

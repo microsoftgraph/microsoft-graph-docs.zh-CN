@@ -4,12 +4,13 @@ description: '在租户中创建新的学校数据同步配置文件的请求。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 79e3e19f4361f0fe1fd7cb9090c685e60a46f259
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e4fe25723d146a30ad94bd99491bafe293da523a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954807"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 
@@ -36,7 +37,7 @@ POST /synchronizationProfiles
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-| Content-Type | string | Application/json。 必填。 |
+| Content-Type | string | Application/json。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。

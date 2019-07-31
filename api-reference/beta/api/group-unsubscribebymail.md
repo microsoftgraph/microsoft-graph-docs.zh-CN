@@ -4,12 +4,13 @@ description: '调用此方法将禁用当前用户接收此组的电子邮件通
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: faa471d4a14235dbd1259ffa2a837ed510c21862
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fd1b0ce09f4176e6ca9a3ef6e2b2a47143256e9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857895"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953429"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 

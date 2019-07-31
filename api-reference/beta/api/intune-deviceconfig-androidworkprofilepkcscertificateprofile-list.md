@@ -4,12 +4,13 @@ description: 列出 androidWorkProfilePkcsCertificateProfile 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa93eb896f02e904dbb6163fc1d3805189be9533
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ed727b523b5dc917bf24a7fe1c16d35a2ec74ad0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969153"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950572"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>列出 androidWorkProfilePkcsCertificateProfiles
 

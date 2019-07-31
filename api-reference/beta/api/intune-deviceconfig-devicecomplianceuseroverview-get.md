@@ -4,12 +4,13 @@ description: 读取 deviceComplianceUserOverview 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 627a126f4c13816ad54bec947c6f7d4dcc0e732d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d4d32a2aff00e67d1a08b8b80b552c7768f4f796
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968110"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949508"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>获取 deviceComplianceUserOverview
 

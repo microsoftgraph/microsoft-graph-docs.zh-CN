@@ -4,12 +4,13 @@ description: 读取 macOSEndpointProtectionConfiguration 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8744dc954333dc4b91e3b313e96b5b6736712ba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c1b07251682645379d983a9cf5fc7acd9739ad00
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963308"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947310"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>获取 macOSEndpointProtectionConfiguration
 

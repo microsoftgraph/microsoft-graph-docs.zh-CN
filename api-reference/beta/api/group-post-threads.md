@@ -4,12 +4,13 @@ description: '首先，通过创建线程来启动新的组对话。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ffa0124f658e474588262d868fd5d2a66e3fc7c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: de25d963c8c780313f3cbccb5c106a3b963e6c23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857937"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953505"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
 

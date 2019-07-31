@@ -2,12 +2,15 @@
 title: 获取 impossibleTravelRiskEvent
 description: 检索 impossibletravelriskevent 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 0889a14a9a7fd2654fb122963df5b1cc58d0f5c1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 81487cf62230708d151f67250b9980e18bcbb7c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953141"
 ---
 # <a name="get-impossibletravelriskevent"></a>获取 impossibleTravelRiskEvent
 
