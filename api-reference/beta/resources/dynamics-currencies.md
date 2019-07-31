@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: c0d15b8d20e99537cb2f567a9f8fe12b45dbd389
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ba8ad750831394e2a84fab7ca87d76754838db60
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543068"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012616"
 ---
 # <a name="currencies-resource-type"></a>货币资源类型
 表示 Dynamics 365 Business Central 中使用的货币。

@@ -4,12 +4,13 @@ description: 指示设备上的移动应用的状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f29c035b27a943649d10a3a71512630deb146f7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 90b8df4896288b1e6dca518426317b1075efcd14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988137"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010243"
 ---
 # <a name="mobileappintent-enum-type"></a>mobileAppIntent 枚举类型
 

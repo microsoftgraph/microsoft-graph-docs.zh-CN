@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 此资源表示 SharePoint list 中的项目。
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9f813511ffa8a033d2ee85f8c7e5d2d5a271dd1e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3c05125257eeec9d7b21a7d1eb03de79bc189ccd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009977"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -83,7 +84,7 @@ ms.locfileid: "33345240"
 
 **listItem** 资源具有以下属性。
 
-| 属性名称 | 类型                | 说明
+| 属性名 | 类型                | 说明
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | 此列表项的内容类型
 
@@ -110,7 +111,7 @@ ms.locfileid: "33345240"
 | 关系名称 | 类型                           | 说明
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | [itemActivity][] 集合    | 最近发生在此项上的活动的列表。
-| analytics         | [itemAnalytics][] 资源     | 有关此项上发生的视图活动的分析。
+| 分析         | [itemAnalytics][] 资源     | 此项目上发生的查看活动的相关分析。
 | driveItem         | [driveItem][]                  | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。
 | fields            | [fieldValueSet][]              | 在此列表项上设置的列的值。
 | 版本          | [listItemVersion][] 集合 | 先前版本的列表项的列表。

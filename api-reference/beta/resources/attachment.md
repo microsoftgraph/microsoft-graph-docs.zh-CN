@@ -1,13 +1,16 @@
 ---
 title: attachment 资源类型
-description: 您可以向事件中添加相关内容,
+description: 可向事件添加相关的内容，
 localization_priority: Normal
-ms.openlocfilehash: 5cd02b665e9491ab4cf4b6046571273d88fee7e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6ee3ba645f71b100b78b01fa1821bf91ca21cb26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339024"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013260"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -32,9 +35,9 @@ ms.locfileid: "33339024"
 |[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
 |[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出事件的附件](../api/event-list-attachments.md) | [attachment](attachment.md) 集合 | 获取事件的附件列表。 |
-|[列出邮件的附件](../api/message-list-attachments.md) | [attachment](attachment.md) 集合 | 获取邮件的附件列表。 |
-|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
+|[列出事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
+|[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
+|[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment-delete.md) | 无 |删除事件、邮件、Outlook 任务或帖子上的附件。 |
 
@@ -47,9 +50,9 @@ ms.locfileid: "33339024"
 |contentType|String|MIME 类型。|
 |id|String| 只读。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。|
-|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|name|String|附件的显示名称。 这不必是实际的文件名。|
-|大小|Int32|附件大小，以字节为单位。|
+|lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|名称|字符串|附件的显示名称。 这不必是实际的文件名。|
+|size|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系
 无

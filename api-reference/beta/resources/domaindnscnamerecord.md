@@ -4,12 +4,13 @@ description: 表示添加到租户中特定域的 DNS 区域文件中的 CNAME �
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4de771a543459ffa1529cb2a6bb11e480d645e43
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: a76818c23890a011a4607629b16122a767126178
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657845"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012756"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
 

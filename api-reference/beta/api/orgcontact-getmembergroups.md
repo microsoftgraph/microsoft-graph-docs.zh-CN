@@ -4,12 +4,13 @@ description: 若要调用此 API, 必须有以下权限之一。 若要了解详
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b563b3617410a3e590b6f19158524114491ecf0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e52b47a0406e03c385f4271989f513126fa4fb2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878025"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995557"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 

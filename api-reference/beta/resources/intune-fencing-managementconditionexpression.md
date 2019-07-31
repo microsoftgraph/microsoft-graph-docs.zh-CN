@@ -4,12 +4,13 @@ description: 管理条件表达式是一个表达式, 它在计算时生成一�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25c961174f0fd0481f261cc8939be16ded6d7788
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2758d4223eedafa082901d890ef45103c0e8082a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979191"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011104"
 ---
 # <a name="managementconditionexpression-resource-type"></a>managementConditionExpression 资源类型
 

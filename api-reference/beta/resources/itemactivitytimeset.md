@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActivityTimeSet 资源提供有关项上某个活动发生时间的信息。
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal
-ms.openlocfilehash: 999949f788c215a1e0645577a14b540586108926
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c81bf7885ee1466e293236a987e90e21323daefd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010089"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>ItemActivityTimeSet 资源类型
 

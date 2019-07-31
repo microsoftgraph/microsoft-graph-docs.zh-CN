@@ -4,12 +4,13 @@ description: 读取 onPremisesConditionalAccessSettings 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a423e52c49309eca4c6e8ce8929a09ce9cb8afac
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7e860b8b870730bc97760e9e361686c4f84d12bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980703"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995767"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>获取 onPremisesConditionalAccessSettings
 

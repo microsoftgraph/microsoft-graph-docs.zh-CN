@@ -4,12 +4,13 @@ description: 某个长时间运行的操作的状态。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34e6ff32c250308e71e05cb5d5c4d04d5671535d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a10b652179a8a3d369c07d34cb2681c4986b3abf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012896"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 

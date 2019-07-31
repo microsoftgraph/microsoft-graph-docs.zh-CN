@@ -4,12 +4,13 @@ description: 表示应用程序登录摘要。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c6ecd91bb29abc409a745e92b523948b78552ed4
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType_
+ms.openlocfilehash: d169755679cd60285808c1c93cb31810b1d1939d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013335"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>applicationSignInSummary 资源类型
 

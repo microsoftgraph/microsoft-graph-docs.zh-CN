@@ -2,12 +2,15 @@
 title: singleValueLegacyExtendedProperty 资源类型
 description: '包含单个值的扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: e57091e9ccf525fc10754dab7de464f2ebf7662c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 256fea5b42f367fb9c6d08b2e871bebd825e3451
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343046"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008325"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty 资源类型
 
