@@ -2,14 +2,15 @@
 title: 配置与自定义目标属性的同步
 description: 您可以自定义同步架构, 以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名`officeCode`为的新字段来自定义 Salesforce 订阅。 你将同步从 Azure Active Directory (Azure AD) 设置为 Salesforce, 对于每个用户, 将使用 Azure AD `officeCode`中的`extensionAttribute10`字段的值填充 Salesforce 中的字段。
 localization_priority: Normal
+doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 40fb833e0fc7e57b6b959efe0e13905483cae89f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4b642bc9718f8ce750f55371c5864014d58813e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964849"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
 

@@ -2,12 +2,15 @@
 title: 策略资源类型
 description: '表示 Azure AD 策略。 策略是可在应用程序、服务主体、组或其分配到的整个组织中强制实施的自定义规则。 目前, 只有一种类型的策略是可用的:'
 localization_priority: Normal
-ms.openlocfilehash: 94d99bf107b8db5b264dd6dfe958da0ac53ae02a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4a97caf82a53900ac4ba1e81cebddda114336597
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965808"
 ---
 # <a name="policy-resource-type"></a>策略资源类型
 
@@ -33,7 +36,7 @@ ms.locfileid: "33344202"
 ##  <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|定义|String 集合|特定策略的字符串版本。 请参阅下文。 必需。|
+|定义|String collection|特定策略的字符串版本。 请参阅下文。 必需。|
 |displayName|String|策略的自定义名称。 必需。|
 |IsOrganizationDefault|Boolean|如果设置为 true, 则激活此策略。 对于同一策略类型, 可以有多个策略, 但只有一个策略可以作为组织默认激活。 可选, 默认值为 false。|
 |type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"。 必需。|
@@ -64,7 +67,7 @@ ms.locfileid: "33344202"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:-------------|:-----------|:-----------|
-|appliesTo|[directoryObject](../resources/directoryobject.md) 集合|策略应用于的应用程序、服务主体、组或组织。|
+|appliesTo|[directoryObject](../resources/directoryobject.md) collection|策略应用于的应用程序、服务主体、组或组织。|
 
 ### <a name="token-lifetime-policy"></a>令牌生存期策略
 指定出于不同目的而颁发的令牌的生存期。 此类策略可[分配](../api/policy-assign.md)给应用程序和服务主体。 有四种令牌可以配置其生存期。 在通过客户端进行身份验证期间获取访问/刷新令牌对, 而在通过浏览器进行身份验证期间获取 ID/会话令牌对。

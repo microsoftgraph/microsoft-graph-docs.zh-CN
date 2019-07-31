@@ -4,12 +4,13 @@ description: 删除 macOsVppApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 723d4118428a2f0ad32a502789cca35abc5be3c3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 05a624b05470eaf449f7f887a9de0dfcf0acf87f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962034"
 ---
 # <a name="delete-macosvppapp"></a>删除 macOsVppApp
 

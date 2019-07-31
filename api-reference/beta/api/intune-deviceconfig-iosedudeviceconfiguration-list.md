@@ -4,12 +4,13 @@ description: 列出 iosEduDeviceConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee98846bad268d4c90136f2207c204a35cb2864f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a43b734fcc43e13fd5118a5f0ed475ecc5e977e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966808"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948339"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>列出 iosEduDeviceConfigurations
 

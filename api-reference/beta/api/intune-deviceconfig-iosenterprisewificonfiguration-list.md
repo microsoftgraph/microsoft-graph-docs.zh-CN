@@ -4,12 +4,13 @@ description: 列出 iosEnterpriseWiFiConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0a1091a9ad1d0af604a299ecf7e8d63781b31b5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5449fe2f5bc6ffd59dd86ffded039aa1f0cbbe1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966759"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948262"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>列出 iosEnterpriseWiFiConfigurations
 

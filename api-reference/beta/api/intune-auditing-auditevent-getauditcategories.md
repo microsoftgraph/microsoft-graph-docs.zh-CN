@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c3c6419e9deb925797f66b9c805a647cc31b594
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0da538e7b4b0eded0f41ba37aec56d11bd112a8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972562"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959507"
 ---
 # <a name="getauditcategories-function"></a>getAuditCategories 函数
 

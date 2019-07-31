@@ -4,12 +4,13 @@ description: 列出 cartToClassAssociation 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b160878754ffdda5b02e0ae39b17808cbae34bd8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c1e037e5fa61bac67a4106461e5f2bc9c03fabbf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950201"
 ---
 # <a name="list-carttoclassassociations"></a>列出 cartToClassAssociations
 

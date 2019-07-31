@@ -4,12 +4,13 @@ description: 创建新的 userInstallStateSummary 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 058e5d47773172cce3f91da04f1697aa2ded3e47
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2b2857933d51c3b2f836c520e725c2563043a481
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972093"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959045"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 

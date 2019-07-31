@@ -4,12 +4,13 @@ description: 从学校删除课程。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0b7ac85788c99cf5ba9773a5caced43e4f098386
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 15ab30facb9c8d762e05c37ea8230b3178ab86f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324851"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955220"
 ---
 # <a name="remove-educationclass"></a>删除 educationClass
 
@@ -55,7 +56,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",

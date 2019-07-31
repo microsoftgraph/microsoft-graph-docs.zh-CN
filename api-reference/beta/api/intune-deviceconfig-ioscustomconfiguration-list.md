@@ -4,12 +4,13 @@ description: 列出 iosCustomConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91979bca73358c9ed07d2455169f58a9ab08444f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e5b7e790e34d8afa98d6277cfac07f09754541a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967158"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948654"
 ---
 # <a name="list-ioscustomconfigurations"></a>列出 iosCustomConfigurations
 

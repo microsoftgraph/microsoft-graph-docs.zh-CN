@@ -4,12 +4,13 @@ description: 读取 windowsStoreApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 247ecd6d93b854b88934a1374c16ddd175006e1e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4daf8bad32544cc402f26f2627cb0cfa8b2b6eab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959740"
 ---
 # <a name="get-windowsstoreapp"></a>获取 windowsStoreApp
 

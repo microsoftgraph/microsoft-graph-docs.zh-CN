@@ -4,12 +4,13 @@ description: 删除 cartToClassAssociation。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aed7b22246b62e8403a385ea32a90f49704f4d1b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 67a60296c88da6b678fe7bc36c6a8065d584d686
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968761"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950271"
 ---
 # <a name="delete-carttoclassassociation"></a>删除 cartToClassAssociation
 

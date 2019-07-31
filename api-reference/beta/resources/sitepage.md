@@ -1,23 +1,24 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: 此资源表示 "SitePages" 列表中的页面。
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6a9192423c4caf47913029e3671e975884533333
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965045"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此资源表示 "SitePages"[列表][]中的页面。
-它包含[web 部件][]s 的标题、布局和集合。
+它包含[Web 部件][]s 的标题、布局和集合。
 
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
@@ -28,13 +29,13 @@ ms.locfileid: "33343064"
 |:--------------------------------|:------------------------------
 | [列出页面][]                  | 获取/pages
 | [获取页面][]                    | 获取/pages/{page-id}
-| [Create][]                      | POST/pages
+| [创建][]                      | POST/pages
 | [删除][]                      | 删除/pages/{page-id}
 | [发布][]                     | POST/pages/{page-id}/publish
 
 [列出页面]: ../api/sitepage-list.md
 [获取页面]: ../api/sitepage-get.md
-[Create]: ../api/sitepage-create.md
+[创建]: ../api/sitepage-create.md
 [删除]: ../api/sitepage-delete.md
 [发布]: ../api/sitepage-publish.md
 
@@ -78,27 +79,27 @@ ms.locfileid: "33343064"
 
 ## <a name="properties"></a>属性
 
-**sitePage**资源具有以下属性。
+**SitePage**资源具有以下属性。
 
-| 属性名称    | 类型                         | 说明
+| 属性名    | 类型                         | 说明
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | 页面的内容类型。
 
 ## <a name="page-content"></a>页面内容
 
-**sitePage**资源具有以下内容字段。
+**SitePage**资源具有以下内容字段。
 
-| 属性名称      | 类型                       | 说明
+| 属性名      | 类型                       | 说明
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
 | pageLayout         | string                     | 页面的页面布局的名称。
-| 部件           | [.webpart][]                | 页面上的 web 部件。
+| 部件           | [.Webpart][]                | 页面上的 web 部件。
 
 ## <a name="authoring-metadata"></a>创作元数据
 
-**sitePage**资源具有以下与创作相关的元数据。 publishingState 属性将反映页面创作状态 (如 "已签出" 或 "已发布")。
+**SitePage**资源具有以下与创作相关的元数据。 PublishingState 属性将反映页面创作状态 (如 "已签出" 或 "已发布")。
 
-| 属性名称          | 类型                   | 说明
+| 属性名          | 类型                   | 说明
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | 页面的发布状态和 MM.mm 版本。
 
@@ -117,7 +118,7 @@ ms.locfileid: "33343064"
 
 ## <a name="relationships"></a>关系
 
-**sitePage**资源不具有与其他资源的关系。
+**SitePage**资源不具有与其他资源的关系。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -129,7 +130,7 @@ ms.locfileid: "33343064"
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
 [网站]: site.md
-[.webpart]: webpart.md
+[.Webpart]: webpart.md
 
 <!--
 {

@@ -4,12 +4,13 @@ description: 更新 deviceComplianceActionItem 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b356816632d651b6c2b7bd4939aa9ce0bc73b71
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b64af93beb0986a68040ef9943f561d6730391a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968663"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950012"
 ---
 # <a name="update-devicecomplianceactionitem"></a>更新 deviceComplianceActionItem
 

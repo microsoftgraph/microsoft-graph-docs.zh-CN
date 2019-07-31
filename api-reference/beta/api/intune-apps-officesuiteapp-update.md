@@ -4,12 +4,13 @@ description: 更新 officeSuiteApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 323787fed5c7bb6e63c2e357215180b536f00270
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: debd0ac97e92fdd558136f436d529c5a7477c446
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960473"
 ---
 # <a name="update-officesuiteapp"></a>更新 officeSuiteApp
 

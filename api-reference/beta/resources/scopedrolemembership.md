@@ -2,12 +2,15 @@
 title: scopedRoleMembership 资源类型
 description: 作用域角色成员身份描述了用户目录角色的成员身份, 该角色将进一步限定为管理单元 (AU)。  这提供了一种机制, 允许租户范围内的公司 adminsistrator 将管理权限委派给用户, 以管理组织的某个子集 (由 AU 定义的子集) 中的用户和组。
 localization_priority: Normal
-ms.openlocfilehash: 56a2514fa65033154b6ab69c497c90fde201c28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2580555bf3d10454aad9052f694ff1a62bf4b9b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343455"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965280"
 ---
 # <a name="scopedrolemembership-resource-type"></a>scopedRoleMembership 资源类型
 

@@ -4,12 +4,13 @@ description: 描述 teamsTemplate 实体。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4e960e85e6e8b3017d8f4e0ab89bb85cb4c12f58
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: dde08e6c4ecde3b3a600958a5af5cd93b5fc600f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345743"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964387"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate 资源类型
 

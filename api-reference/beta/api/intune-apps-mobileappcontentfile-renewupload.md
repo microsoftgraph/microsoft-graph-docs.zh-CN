@@ -4,12 +4,13 @@ description: 续订用于应用程序文件上传的 SAS URI。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dfddd886bf33383887d5c52e5a59826de645799
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2a68656efcced3c34057946848f969001972b5c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973979"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960774"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 

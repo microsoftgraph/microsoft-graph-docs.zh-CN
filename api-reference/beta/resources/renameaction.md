@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: itemActivity 上存在 RenameAction 资源指示活动重命名了一个项。
 ms.date: 09/14/2017
 title: RenameAction
 localization_priority: Normal
-ms.openlocfilehash: c204efb50802fb35ea059a923bf1ce0bc08ed519
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d62d3f7f836ece716bdc3e616e1943de8c040652
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965415"
 ---
 # <a name="renameaction-resource-type"></a>RenameAction 资源类型
 

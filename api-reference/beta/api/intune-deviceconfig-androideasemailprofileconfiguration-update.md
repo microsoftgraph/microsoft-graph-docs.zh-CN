@@ -4,12 +4,13 @@ description: 更新 androidEasEmailProfileConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16bf41316b2c80fe6a27e3778b8e74fb5ed7c84e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 486bdecbceb7382fdf0f07dd48b39473e96b2a52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957967"
 ---
 # <a name="update-androideasemailprofileconfiguration"></a>更新 androidEasEmailProfileConfiguration
 

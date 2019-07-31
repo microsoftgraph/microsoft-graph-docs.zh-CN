@@ -4,12 +4,13 @@ description: 读取 macOSTrustedRootCertificate 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cc9ec0eaf8c933b4032f5a1a2e2abe9c2818ca0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9f4502949aae48c33940796f960e67182d3a9932
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947009"
 ---
 # <a name="get-macostrustedrootcertificate"></a>获取 macOSTrustedRootCertificate
 

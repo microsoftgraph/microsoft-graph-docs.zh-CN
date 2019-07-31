@@ -4,12 +4,13 @@ description: 更新策略优先级。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 1a237ac20154e9356ff999bc5c671b02c15c7028
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 964b8c85764193852b80edfb150be8ec6f867b2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958933"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
 

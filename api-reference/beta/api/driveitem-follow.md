@@ -1,15 +1,16 @@
 ---
 author: chackman
-ms.author: chackman
+description: 关注 driveItem。
 title: 关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 45831a12b9d2ad8466c4b176be6e6176f616d3f2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9ae595420a59f36596027cc1438df7e931350333
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861207"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957155"
 ---
 # <a name="follow-drive-item"></a>关注驱动器项
 

@@ -4,12 +4,13 @@ description: 您可以获取有关在组织中使用的客户端和设备的类�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 04599285355d2b34af2c021efcb59ee945486d33
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 2af0b2f2d6d3d411475de012fcec249cb4c4d845
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342888"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964976"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Skype for Business 设备使用情况报表
 
@@ -23,6 +24,6 @@ ms.locfileid: "33342888"
 
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md) | Stream          | [skypeForBusinessDeviceUsageUserDetail](../resources/skypeforbusinessdeviceusageuserdetail.md) | 获取用户的 Skype for Business 设备使用情况的详细信息。 |
+| [获取用户详细信息](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md) | 流          | [skypeForBusinessDeviceUsageUserDetail](../resources/skypeforbusinessdeviceusageuserdetail.md) | 获取用户的 Skype for Business 设备使用情况的详细信息。 |
 | [获取分发用户数](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream          | [skypeForBusinessDeviceUsageDistributionUserCounts](../resources/skypeforbusinessdeviceusagedistributionusercounts.md) | 获取组织中使用唯一设备的用户数。 报表会显示每台设备的用户数，包括 Windows、Windows 手机、Android 手机、iPhone 和 iPad。 |
 | [获取用户数](../api/reportroot-getskypeforbusinessdeviceusageusercounts.md) | Stream          | [skypeForBusinessDeviceUsageUserCounts](../resources/skypeforbusinessdeviceusageusercounts.md) | 获取使用情况趋势，即组织中有多少用户已使用 Skype for Business 应用进行了连接。 还可以按设备类型（Windows、Windows 手机、Android 手机、iPhone 或 iPad）进一步了解整个组织中安装和使用的 Skype for Business 客户端应用。 |

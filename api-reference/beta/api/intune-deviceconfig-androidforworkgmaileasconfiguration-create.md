@@ -4,12 +4,13 @@ description: 创建新的 androidForWorkGmailEasConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ad0e2d80f50681b4a759eae8e622adab647ea4c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8d7058a6eda2695e3704da957fb93fef9f2c5d14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963526"
 ---
 # <a name="create-androidforworkgmaileasconfiguration"></a>创建 androidForWorkGmailEasConfiguration
 

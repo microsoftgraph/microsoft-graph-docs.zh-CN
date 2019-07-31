@@ -4,12 +4,13 @@ description: 更新课程属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e8e5e85ac9a65518cae3a2aee29d70df9245c80e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 023e99264b003ff7083cdb8ada60513c68e3d0ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860507"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955304"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 

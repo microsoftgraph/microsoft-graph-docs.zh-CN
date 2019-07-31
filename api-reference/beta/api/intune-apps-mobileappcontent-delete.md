@@ -4,12 +4,13 @@ description: 删除 mobileAppContent。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a3b4355e46f7e4c074fca8cd2bb6dfb99b1a456
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ca0fe64a39d0d65940f5455b95977efb93d1b27d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960879"
 ---
 # <a name="delete-mobileappcontent"></a>删除 mobileAppContent
 

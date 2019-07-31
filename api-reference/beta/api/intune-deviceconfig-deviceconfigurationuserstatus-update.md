@@ -4,12 +4,13 @@ description: 更新 deviceConfigurationUserStatus 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b95dfd36797c1f7e994b28e11c4e2b62546ca5c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ce4b296905c11e541151de37ec5a641acaf0bbce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948892"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>更新 deviceConfigurationUserStatus
 

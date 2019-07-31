@@ -4,12 +4,13 @@ description: 删除 iosScepCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c77c283389f1c9a061ac96a81fbf26afc37dfe8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7d42a40d66ad7dd0217317a7ee971c84742c34f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948010"
 ---
 # <a name="delete-iosscepcertificateprofile"></a>删除 iosScepCertificateProfile
 

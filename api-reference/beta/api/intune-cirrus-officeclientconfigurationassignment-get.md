@@ -4,12 +4,13 @@ description: 读取 officeClientConfigurationAssignment 对象的属性和关系
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 20b57b5f7de1a59c94845bfd7917e568da3043d0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 047b2d87fd5e0d77837d3a0e40152ea6ba2e0b8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934024"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958891"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>获取 officeClientConfigurationAssignment
 

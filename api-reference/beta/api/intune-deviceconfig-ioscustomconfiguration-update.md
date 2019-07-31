@@ -4,12 +4,13 @@ description: 更新 iosCustomConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 941140510ebbb63d1cfd298baa8f8fe20785eb6a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 379e4d072ab9f56d5c4a1e723fd15d401680af46
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967165"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948668"
 ---
 # <a name="update-ioscustomconfiguration"></a>更新 iosCustomConfiguration
 

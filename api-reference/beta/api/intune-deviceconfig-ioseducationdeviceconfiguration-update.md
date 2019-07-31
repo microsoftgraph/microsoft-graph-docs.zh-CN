@@ -4,12 +4,13 @@ description: 更新 iosEducationDeviceConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71dbdc30c3e698ce1d60be1253cc14aaea4e0d90
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7a2f0689a48716103e47b37af58079587ab96a04
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948388"
 ---
 # <a name="update-ioseducationdeviceconfiguration"></a>更新 iosEducationDeviceConfiguration
 

@@ -4,12 +4,13 @@ description: 读取 androidForWorkTrustedRootCertificate 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5a66658c4537ffa8473e0d6b664c3fd5e04c710
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a2fe81f4204fbc858cc68fec04b00d69dd4b2f93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963148"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>获取 androidForWorkTrustedRootCertificate
 

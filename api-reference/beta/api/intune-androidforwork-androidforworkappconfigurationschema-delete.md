@@ -4,12 +4,13 @@ description: 删除 androidForWorkAppConfigurationSchema。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d376a91980a9529fd2eb423ca73ee79799b8e3bc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6e406aea517552e1dd648f43b1ab52eab5af2eb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966612"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952931"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>删除 androidForWorkAppConfigurationSchema
 

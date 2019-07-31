@@ -4,12 +4,13 @@ description: 读取 androidWorkProfilePkcsCertificateProfile 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf623ad89d402361ad4126060adbf698533e03d6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b6f3f9609458111479bd45a2cba4dd1f978c7e67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969160"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950586"
 ---
 # <a name="get-androidworkprofilepkcscertificateprofile"></a>获取 androidWorkProfilePkcsCertificateProfile
 

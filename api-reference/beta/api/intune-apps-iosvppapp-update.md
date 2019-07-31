@@ -4,12 +4,13 @@ description: 更新 iosVppApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac57d3c4bfb7d6876e20259394d9f3595af6c468
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ddebb83aeb19574d133290c5f0c762bd698f131f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951496"
 ---
 # <a name="update-iosvppapp"></a>更新 iosVppApp
 

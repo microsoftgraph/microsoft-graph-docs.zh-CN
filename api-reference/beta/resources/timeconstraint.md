@@ -4,12 +4,13 @@ description: 根据指定的活动和打开时间段的性质, 将会议时间�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3ce27e94ff4f201def558ae4478e12642efeb638
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8393e4b501815dcbd0195e04ca82cd639d1a84c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342049"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964317"
 ---
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 

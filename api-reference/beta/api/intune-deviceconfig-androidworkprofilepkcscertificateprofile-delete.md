@@ -4,12 +4,13 @@ description: 删除 androidWorkProfilePkcsCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75b973a3d82c6e76d0bd554c130e93f9872376e6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 90585c84045413e61ce66c68eeae7e726103d5ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969167"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950600"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>删除 androidWorkProfilePkcsCertificateProfile
 

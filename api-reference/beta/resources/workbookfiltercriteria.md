@@ -2,12 +2,15 @@
 title: workbookFilterCriteria 资源类型
 description: 表示应用于列的筛选条件。
 localization_priority: Normal
-ms.openlocfilehash: 4906a44c88fdd7cb071b4ea994fee609cda1151c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 6e0b2b09ab464c0a04bf97ed666f3fd3a687e912
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964019"
 ---
 # <a name="workbookfiltercriteria-resource-type"></a>workbookFilterCriteria 资源类型
 

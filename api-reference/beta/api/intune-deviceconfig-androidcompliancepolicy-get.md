@@ -4,12 +4,13 @@ description: 读取 androidCompliancePolicy 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6d78e560b79c23e1481ed7e3f77cd5fddb86373
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4398841a784b54e17a71beb6529ae6d4fe7ad25e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971589"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958282"
 ---
 # <a name="get-androidcompliancepolicy"></a>获取 androidCompliancePolicy
 

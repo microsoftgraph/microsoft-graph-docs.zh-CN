@@ -4,12 +4,13 @@ description: 列出 deviceComplianceSettingState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6154c712a2f671187db54fb3e9a7a95bd9e951b3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 10a1a4fe31ff1a704828453321fde4f7cfbb7e9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968159"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949550"
 ---
 # <a name="list-devicecompliancesettingstates"></a>列出 deviceComplianceSettingStates
 

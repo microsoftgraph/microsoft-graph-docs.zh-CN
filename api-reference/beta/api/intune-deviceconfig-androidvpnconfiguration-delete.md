@@ -4,12 +4,13 @@ description: 删除 androidVpnConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4d47ed551d0105917672344a5b0a6163492a239
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 29666ec39939de09237a4e215e36b953c8cff925
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969811"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962545"
 ---
 # <a name="delete-androidvpnconfiguration"></a>删除 androidVpnConfiguration
 

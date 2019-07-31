@@ -4,12 +4,13 @@ description: 列出 windowsKioskConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 213d1435cf6268381627a61c7252cce49382d371
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 96d6ff1e5efaeda8ea0232a0d1fabef9241180a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962307"
 ---
 # <a name="list-windowskioskconfigurations"></a>列出 windowsKioskConfigurations
 

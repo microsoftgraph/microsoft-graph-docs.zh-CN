@@ -3,13 +3,14 @@ title: targetResource 资源复杂类型-Microsoft Graph API
 description: 定义支持审核日志报告组织 (租户) 活动的 Microsoft Graph API 的 targetResource 实体资源复杂类型。
 author: davidmu1
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: azure-ad
-ms.openlocfilehash: 0a52a8586d8bce211729b8dffe2a43129b94b30d
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: a67cfbccf9d05872ec0d9207ac54c51cda222053
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657649"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964576"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 

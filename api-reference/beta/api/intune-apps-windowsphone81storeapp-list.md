@@ -4,12 +4,13 @@ description: 列出 windowsPhone81StoreApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b24d584667df339796dcb895f6a2176a9925015
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fb513ce9a2c0c01b9669042607cacfd38b18ae44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972933"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959906"
 ---
 # <a name="list-windowsphone81storeapps"></a>列出 windowsPhone81StoreApps
 

@@ -4,12 +4,13 @@ description: 读取 androidOmaCpConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9bd379cac1f19963f25b3e2c298509dc6ef2c21b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f660db2fd87708a1f9ff6a5d74ffe028bbbe77f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962853"
 ---
 # <a name="get-androidomacpconfiguration"></a>获取 androidOmaCpConfiguration
 

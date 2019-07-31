@@ -4,12 +4,13 @@ description: 创建新的 iosEasEmailProfileConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 526403ce3974b16b9bce90d39664ccc98959e256
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e8e098bffcd3b9c6c71a55851ca7bae3a3e027b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967011"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948458"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>创建 iosEasEmailProfileConfiguration
 

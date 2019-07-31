@@ -3,12 +3,14 @@ title: siteActivitySummary 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a49b8e47ca2a6efcc5c5c87702fdea0122b208e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 1258530aea56f7ec26a2f48274935afc809f2fd5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965017"
 ---
 # <a name="siteactivitysummary-resource-type"></a>siteActivitySummary 资源类型
 
@@ -16,12 +18,12 @@ ms.locfileid: "32583597"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | viewedOrEdited    | Int64  |
 | 保持            | Int64  |
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日期   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

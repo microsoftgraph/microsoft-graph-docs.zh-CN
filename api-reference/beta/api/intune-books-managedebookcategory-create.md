@@ -4,12 +4,13 @@ description: 创建新的 managedEBookCategory 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: adaa633667f85f3457492be58ab4522c8139ff92
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2cc73b6e01751ec337c5af73e75c8f0505ce2775
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972170"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959115"
 ---
 # <a name="create-managedebookcategory"></a>创建 managedEBookCategory
 

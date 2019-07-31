@@ -4,12 +4,13 @@ description: 将组添加到生命周期策略。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e52364353587b97e4d6cb983705d228ab93d75b3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 4062d807df2c1613735ccb6d37f56e663fe46d78
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953365"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -26,7 +27,7 @@ ms.locfileid: "33328470"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

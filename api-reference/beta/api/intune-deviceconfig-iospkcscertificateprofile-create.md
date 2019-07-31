@@ -4,12 +4,13 @@ description: 创建新的 iosPkcsCertificateProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ef884c0a06776148bb1ef06be6e0baaff49b718
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 929539256aad6b5a60e436b9170fbdbb5df6c06a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963728"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948094"
 ---
 # <a name="create-iospkcscertificateprofile"></a>创建 iosPkcsCertificateProfile
 

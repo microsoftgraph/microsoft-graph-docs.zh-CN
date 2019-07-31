@@ -2,12 +2,15 @@
 title: 删除 inferenceClassificationOverride
 description: 删除由其 ID 指定的重点收件箱覆盖。
 localization_priority: Normal
-ms.openlocfilehash: 97ce2f0aab82e031fec2b2b96e3ffd8d08c92a3b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 5819b243bafe0fdb9f012bed6ae1f753f1d1150f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857485"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953092"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>删除 inferenceClassificationOverride
 

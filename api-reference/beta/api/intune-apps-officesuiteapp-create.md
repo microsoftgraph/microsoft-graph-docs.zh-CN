@@ -4,12 +4,13 @@ description: 创建新的 officeSuiteApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45425cff407d01f2405a4f15bbb5fb16ea6f4421
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 664fc19eb20079c10352571e9d9d1cdb754bb7d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960508"
 ---
 # <a name="create-officesuiteapp"></a>创建 officeSuiteApp
 

@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be815cfd8f8e70ef99d40fb508afaf970c9c2a1b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3452df9c7e32232d735b1f95cbdfb7150ff0bad9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949347"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>windowsPrivacyAccessControls 操作
 

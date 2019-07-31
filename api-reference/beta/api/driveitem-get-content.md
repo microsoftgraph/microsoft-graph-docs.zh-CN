@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 下载 DriveItem 的主要流（文件）的内容。 只能下载具有 file 属性的 driveItem。
 ms.date: 09/10/2017
 title: 下载文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 435c712a586dfb3661d0f4814bfc87c4ed07922b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6f5d836b5c5dbd382cbf11cf94fc0273515d4806
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861165"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957106"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 

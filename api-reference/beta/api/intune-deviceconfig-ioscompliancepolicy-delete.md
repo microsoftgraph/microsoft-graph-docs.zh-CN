@@ -4,12 +4,13 @@ description: 删除 iosCompliancePolicy。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9bf6180ce563eaa70bd2d4cd2d967d7d17433e9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4a8f6a434d1b9068c1745ebf2bf9f7fdf65f8d83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967277"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948718"
 ---
 # <a name="delete-ioscompliancepolicy"></a>删除 iosCompliancePolicy
 

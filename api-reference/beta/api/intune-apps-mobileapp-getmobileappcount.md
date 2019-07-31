@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59c53332a1b377e34ffc486646abcc503b3997bb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ff1b796bfc9b026ddf6866cc054dd8ab0014cca7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974270"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961103"
 ---
 # <a name="getmobileappcount-function"></a>了 getmobileappcount 函数
 

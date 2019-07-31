@@ -4,12 +4,13 @@ description: 更新 iosScepCertificateProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60f23db7b65836eabd36c493d250dab85e7dc75c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 49c032e02e3f306027b7e946ebb3c0318fb1efd3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963630"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947968"
 ---
 # <a name="update-iosscepcertificateprofile"></a>更新 iosScepCertificateProfile
 

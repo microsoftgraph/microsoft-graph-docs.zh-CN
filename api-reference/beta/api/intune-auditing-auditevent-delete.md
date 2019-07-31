@@ -4,12 +4,13 @@ description: 删除 auditEvent
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee7013f8a514f5aaea67bff4eb6f6d8ad66b6a0c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 51658d6ac3b1441e896adbb7a2494b7ed89199ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959542"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 

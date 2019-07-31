@@ -4,18 +4,19 @@ description: ) 用于 Office 365 中的计划中的任务。 它包含在 planne
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: a9e6b3ac4a9bad8d7402dee28706b5200c623078
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: eed92a62fed8077d2b7ee541feac7e0fa5c73483
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344583"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966001"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerBucket**资源表示 Office 365 中的计划中的任务的存储桶 (或 "自定义列")。 它包含在[plannerPlan](plannerplan.md)中, 并且可以具有[plannerTasks](plannertask.md)的集合。
+**PlannerBucket**资源表示 Office 365 中的计划中的任务的存储桶 (或 "自定义列")。 它包含在[plannerPlan](plannerplan.md)中, 并且可以具有[plannerTasks](plannertask.md)的集合。
 
 
 
@@ -25,7 +26,7 @@ ms.locfileid: "33344583"
 |:---------------|:--------|:----------|
 |[获取 plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |读取**plannerBucket**对象的属性和关系。|
 |[List plannerTasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取 **plannerTask** 对象集合。|
-|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 创建新的**plannerBucket**对象。 |
+|[创建](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 创建新的**plannerBucket**对象。 |
 |[更新](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |更新**plannerBucket**对象。 |
 |[删除](../api/plannerbucket-delete.md) | 无 |删除**plannerBucket**对象。 |
 

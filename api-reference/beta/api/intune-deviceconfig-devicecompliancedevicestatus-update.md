@@ -4,12 +4,13 @@ description: 更新 deviceComplianceDeviceStatus 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e5d2c9712351ad51bf53a06e9a9da17ab5e3159
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fc9ca797d8b9d40cd9598b07947f54988c44e824
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949907"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>更新 deviceComplianceDeviceStatus
 

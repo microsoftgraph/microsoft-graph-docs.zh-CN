@@ -4,12 +4,13 @@ description: 列出 androidWorkProfileCertificateProfileBase 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f559d126590a3b9767e5b9617f488a3f76a0ca0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 948810cb0c7f0f2b0af53628c77396480baa618a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951083"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>列出 androidWorkProfileCertificateProfileBases
 

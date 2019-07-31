@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 parentReference。
 ms.date: 09/10/2017
 title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b18fc6616104f20722721c76fdec8c711c48aa7d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d6398650661a0940c68f2c79563c6a092d8a97ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860989"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957022"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 

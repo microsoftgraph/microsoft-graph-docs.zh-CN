@@ -4,12 +4,13 @@ description: 更新 iosPkcsCertificateProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77879a44a4964283f29be33dcd3d8ef39521db65
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 89f549542e89d95303d09c8ace0c7848eb3c7e52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948050"
 ---
 # <a name="update-iospkcscertificateprofile"></a>更新 iosPkcsCertificateProfile
 

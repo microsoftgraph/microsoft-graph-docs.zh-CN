@@ -4,12 +4,13 @@ description: 读取 androidWorkProfileWiFiConfiguration 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0fd3ab4c3f11f1d10c125b03591d158e8c093af
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 133bba0f0584be755d4423d30d9c4ddffa56f157
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968880"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950306"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>获取 androidWorkProfileWiFiConfiguration
 

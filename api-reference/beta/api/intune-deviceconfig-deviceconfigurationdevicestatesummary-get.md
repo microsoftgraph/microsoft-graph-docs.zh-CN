@@ -4,12 +4,13 @@ description: 读取 deviceConfigurationDeviceStateSummary 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6749091fda9dc0cb2218ed29d821222287cf67cc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 62b5331ff3a908b41036e0be62c89d6d37b6f1c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967753"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949193"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>获取 deviceConfigurationDeviceStateSummary
 

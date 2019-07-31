@@ -4,12 +4,13 @@ description: 更新 deviceComplianceUserOverview 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0cb7d167475a33f1de7e83e2cee36c8c6af7d5a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a7b7ea835fb373c9a650807ca5e456e7b5030fd6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968103"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949515"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>更新 deviceComplianceUserOverview
 

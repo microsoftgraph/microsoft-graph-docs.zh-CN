@@ -4,12 +4,13 @@ description: 返回已提交的资源。 这在学生提交后将对教师可用
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 89f1fc8172909e8bb031be5a055a63ac9a4bd130
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: f3703de6176af8cc475e83408d77d4880e2ef77b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954919"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>获取 educationSubmittedSubmissionResource
 

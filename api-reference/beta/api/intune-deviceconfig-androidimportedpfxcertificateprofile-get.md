@@ -4,12 +4,13 @@ description: 读取 androidImportedPFXCertificateProfile 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7803769aee476f31002272e064f33d4d371f14f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 94252d29bde3772710f23ed4d756d4bafff9e268
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970175"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962874"
 ---
 # <a name="get-androidimportedpfxcertificateprofile"></a>获取 androidImportedPFXCertificateProfile
 

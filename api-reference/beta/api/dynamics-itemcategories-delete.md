@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: de4ecc7a59833522fd359f865fb82d681c770073
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0b0d848af5389e26b53effb70063ee07ae5d4714
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458402"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956217"
 ---
 # <a name="delete-itemcategories"></a>删除 itemCategories
 从 Dynamics 365 Business Central 中删除 itemCategory。

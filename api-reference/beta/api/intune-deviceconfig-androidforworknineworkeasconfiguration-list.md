@@ -4,12 +4,13 @@ description: 列出 androidForWorkNineWorkEasConfiguration 对象的属性和关
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46d44de5de379f91212753eb1b8fae7fc9d33b95
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b90f0161556eabc6260b3a4f0daad36e488bb66c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970623"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963358"
 ---
 # <a name="list-androidforworknineworkeasconfigurations"></a>列出 androidForWorkNineWorkEasConfigurations
 

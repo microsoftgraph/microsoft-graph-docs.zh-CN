@@ -4,12 +4,13 @@ description: 更新 mobileAppContent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fcd81a3fd62b1670b84f9ad43fb5cb5233c0dcc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 42fa5dd5b0d67cdabf50baa834b3245b1c1b6716
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974011"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960865"
 ---
 # <a name="update-mobileappcontent"></a>更新 mobileAppContent
 

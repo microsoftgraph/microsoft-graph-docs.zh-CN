@@ -4,12 +4,13 @@ description: '将资源添加到 "资源" 列表中。 此操作只能由分配�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8eb183d13832767a63800cc4957769eb6062d516
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 36b7f0432577dacb716c0eaa2ee232cc3e49a40e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322871"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955066"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 

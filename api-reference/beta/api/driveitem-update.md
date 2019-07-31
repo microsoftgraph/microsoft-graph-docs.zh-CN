@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 按 ID 或路径更新 DriveItem 元数据。
 ms.date: 09/10/2017
 title: 更新文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f1630c89316755fdb03f3e1a05ef43fb4d400b86
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0fa3002a81310b025c51a4ff52930d3b9087c155
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860885"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956938"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 

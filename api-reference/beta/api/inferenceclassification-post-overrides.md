@@ -2,12 +2,15 @@
 title: 创建 inferenceClassificationOverride
 description: '为由 SMTP 地址标识的发件人创建重点收件箱覆盖。 将对来自该 SMTP 地址的未来邮件进行一致的分类 '
 localization_priority: Normal
-ms.openlocfilehash: 310171e99df0c41b07d3c178fe6ee676f317ea1b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 1eb476df8e973459b2e0b152db3ba11c5506b1a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931146"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953099"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 

@@ -4,12 +4,13 @@ description: 检索与此 **educationUser** 对应的简单目录 **user**。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 7e77b87a57bce1c8265e8a7be13c288bd6fad101
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 27a7c22fa5e36135686f2eed42ddc8e0a8d0dcad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859883"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954709"
 ---
 # <a name="get-user"></a>获取用户
 

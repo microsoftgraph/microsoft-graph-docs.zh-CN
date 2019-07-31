@@ -4,12 +4,13 @@ description: 列出 managedEBookAssignment 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2ee6ee05459b7a57ac2f5d7d814df632b32ad0c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bc2d8fe2c3815ca00d6a0f5fae3dba8ae9339457
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959143"
 ---
 # <a name="list-managedebookassignments"></a>列出 managedEBookAssignments
 

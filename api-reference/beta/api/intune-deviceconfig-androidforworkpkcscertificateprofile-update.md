@@ -4,12 +4,13 @@ description: 更新 androidForWorkPkcsCertificateProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfe30a07591d26a709568127b8b34014ae8fde36
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a46155be8bd5d8a0445b356e3dc2a956a60b528a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963274"
 ---
 # <a name="update-androidforworkpkcscertificateprofile"></a>更新 androidForWorkPkcsCertificateProfile
 

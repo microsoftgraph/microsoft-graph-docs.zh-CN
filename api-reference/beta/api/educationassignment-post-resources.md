@@ -4,12 +4,13 @@ description: odata。键入以指示要创建的资源的类型。 请注意, �
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 408ff1b44fda0d4e9b6f16c2234ed06a4ca24852
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 86cf738f7558814a76d07e7a7eb5ffd22d988d29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955653"
 ---
 # <a name="create-educationassignmentresource"></a>创建 educationAssignmentResource
 

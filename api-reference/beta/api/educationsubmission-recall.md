@@ -4,12 +4,13 @@ description: '指示学生想要参加提交。 仅学生可以执行此操作�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fc365e61def62dbbf65c47d9bc0163f15be9475d
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: apiPageType
+ms.openlocfilehash: d37d34685aabe00bff82de453e68a8ebba36aa3a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34749959"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955073"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: 撤回
 

@@ -4,12 +4,13 @@ description: 读取 ndesConnector 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ade7ff4fca8f6f13fec65c7eb6910f3bf017451
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 75ef4a4c78a78b33d3d5cd8c68faf484f1f1a506
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946633"
 ---
 # <a name="get-ndesconnector"></a>获取 ndesConnector
 

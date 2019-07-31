@@ -4,12 +4,13 @@ description: 删除 macOSCompliancePolicy。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f408716fe55c6bb4bc13d3878ed7fa7a92abc56c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 57fe116ead9c18f14309a1fa4312ebbc93653d9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947562"
 ---
 # <a name="delete-macoscompliancepolicy"></a>删除 macOSCompliancePolicy
 

@@ -4,12 +4,13 @@ description: 列出 androidImportedPFXCertificateProfile 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b58c90bb9ce02c9ccc344e012effa631c2ed9688
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ee3ac5e418737507cf54fac3b16fccb9d4c1b422
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970126"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962860"
 ---
 # <a name="list-androidimportedpfxcertificateprofiles"></a>列出 androidImportedPFXCertificateProfiles
 

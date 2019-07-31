@@ -4,12 +4,13 @@ description: 读取 mobileLobApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71ca4b489ee1ec9478f77a337e08b3730cc94c56
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 284d2cc8b37e3175bcb7ab2e60d5e17600319bb9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973584"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960536"
 ---
 # <a name="get-mobilelobapp"></a>获取 mobileLobApp
 

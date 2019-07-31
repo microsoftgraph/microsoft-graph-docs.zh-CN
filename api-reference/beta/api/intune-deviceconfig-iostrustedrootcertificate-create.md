@@ -4,12 +4,13 @@ description: 创建新的 iosTrustedRootCertificate 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1db4a0764aee2bbc23bcb3cf368d28d5940a3961
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 575e27e1ab8f26f10894053f65507b9444e31e0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947954"
 ---
 # <a name="create-iostrustedrootcertificate"></a>创建 iosTrustedRootCertificate
 

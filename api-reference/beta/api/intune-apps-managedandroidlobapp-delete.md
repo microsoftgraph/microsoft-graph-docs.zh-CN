@@ -4,12 +4,13 @@ description: 删除 managedAndroidLobApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9d286732a97887a9dd355ce8488751fb6ad3295
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f707bf76ec8aa94e4320b6d331a09bd94b44f5ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975047"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961887"
 ---
 # <a name="delete-managedandroidlobapp"></a>删除 managedAndroidLobApp
 

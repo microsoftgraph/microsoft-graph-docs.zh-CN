@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 485d254252bfdf15df5fd8b3faea4b19f6f59f05
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9c9f70c9e0fe91bf4073d7b6470b03a28f2a7f22
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458339"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956315"
 ---
 # <a name="delete-employees"></a>删除员工
 从 Dynamics 365 Business Central 中删除员工。

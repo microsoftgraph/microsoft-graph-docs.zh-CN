@@ -2,12 +2,15 @@
 title: 获取 governanceRoleAssignmentRequest
 description: '获取 governanceRoleAssignmentRequest。 '
 localization_priority: Normal
-ms.openlocfilehash: ce48ed5596d9ad3000bc7ee24ff67c08d0b1814b
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 6ad57ac8f330a28de6f5684f0e0fa07a34878c7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954219"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 

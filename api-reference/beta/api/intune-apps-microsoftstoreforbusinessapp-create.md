@@ -4,12 +4,13 @@ description: 创建新的 microsoftStoreForBusinessApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 536584ec094722652f26cc7dd02c16fbb04a2713
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 15592dbce6bb1fc2665dbfcbc5fc9075cc1420c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974438"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961243"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>创建 microsoftStoreForBusinessApp
 

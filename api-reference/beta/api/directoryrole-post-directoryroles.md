@@ -4,12 +4,13 @@ description: 激活目录角色。 要读取目录角色或更新其成员，首
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 406a88ff0a34301352a39f8d92b21999fd43a7b7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ef4e7ed1661309ea40a3a573fe5b830f65da7c88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957652"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -22,9 +23,9 @@ ms.locfileid: "35862202"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|应用程序 | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

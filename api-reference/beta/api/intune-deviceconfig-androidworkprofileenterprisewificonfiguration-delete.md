@@ -4,12 +4,13 @@ description: 删除 androidWorkProfileEnterpriseWiFiConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3d3a8f447efbc4a41c45464cbd24e61b5222617
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: aef805876519e16851340981a6003389fb484d80
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950880"
 ---
 # <a name="delete-androidworkprofileenterprisewificonfiguration"></a>删除 androidWorkProfileEnterpriseWiFiConfiguration
 

@@ -4,12 +4,13 @@ description: 列出 androidForWorkCompliancePolicy 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a31b1dbefaa89e7f1b210f766781ff735e20e02
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e27b5fcac4707174daf962c8db9d5944744b0c57
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957813"
 ---
 # <a name="list-androidforworkcompliancepolicies"></a>列出 androidForWorkCompliancePolicies
 

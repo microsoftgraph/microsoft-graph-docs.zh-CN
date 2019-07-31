@@ -4,12 +4,13 @@ description: 更新 androidForWorkWiFiConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3f3584dbed7dcbe7f066f3c6e4d50c0bc1c7076
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 34911badbac646d806db2857ae29ad25d865ce8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962993"
 ---
 # <a name="update-androidforworkwificonfiguration"></a>更新 androidForWorkWiFiConfiguration
 

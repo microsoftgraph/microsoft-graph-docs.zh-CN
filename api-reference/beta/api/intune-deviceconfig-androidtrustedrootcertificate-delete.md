@@ -4,12 +4,13 @@ description: 删除 androidTrustedRootCertificate。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6426b25944d44e8d3193f3cfc4a13c15ba3041c8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a81a54815310a8b6c82345fd56b2d1a7c08e9a63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969860"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962615"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>删除 androidTrustedRootCertificate
 

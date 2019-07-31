@@ -2,12 +2,15 @@
 title: 更新 identityProvider
 description: 更新现有 Identityprovider.read.all 中的属性。
 localization_priority: Normal
-ms.openlocfilehash: 851270cdc0c045b8be71bee814ceec7254085466
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 38c2b749563c2f826da1138a2e3b57d4c5077c11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857579"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953169"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 

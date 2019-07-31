@@ -4,12 +4,13 @@ description: 删除了 windowsphone81appx。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11d2901779e354c0dac3a85824da1be131eb6e03
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c4106cc1713348f1b2d805bad0429b93d6d31084
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973087"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960046"
 ---
 # <a name="delete-windowsphone81appx"></a>删除了 windowsphone81appx
 

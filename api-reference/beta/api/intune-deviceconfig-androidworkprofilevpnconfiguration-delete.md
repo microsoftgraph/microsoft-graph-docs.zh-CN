@@ -4,12 +4,13 @@ description: 删除 androidWorkProfileVpnConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01491f93568d62908e58c489f98f093f0f2b9fdd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: be666807183fd131234917b6f0e7641fe7419c2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950390"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>删除 androidWorkProfileVpnConfiguration
 

@@ -4,12 +4,13 @@ description: 更新 iosVpnConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96a22e4fc2e12f4bc9bdf480f6722d01615ba9cc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b17348b88bd6b388cf7c1b52a70996787651e5d0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947723"
 ---
 # <a name="update-iosvpnconfiguration"></a>更新 iosVpnConfiguration
 

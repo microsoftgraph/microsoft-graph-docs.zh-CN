@@ -4,12 +4,13 @@ description: 计算出的洞察力, 返回与用户共享的文件的列表。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: fd3f784ca48c408b8616faaa965b327aec48c538
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 5fa615e27f6fe1833af8d1b7c62c952623f5b703
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953064"
 ---
 # <a name="list-shared"></a>共享的列表
 

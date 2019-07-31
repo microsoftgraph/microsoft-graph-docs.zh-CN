@@ -4,12 +4,13 @@ description: 使用目标组创建新的非安全策略。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 87b30f78cd2c5bf8c97b3b08f2db490152767c0d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 78295df3c9abdb3f3185d312ae31726541a8c89d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933996"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958849"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>创建 windowsOfficeClientConfiguration
 
@@ -51,8 +52,8 @@ POST /officeConfiguration/clientConfigurations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|Office 客户端配置策略的 Id。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|Stream|策略设置 JSON string 二进制格式, 用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|流|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|流|策略设置 JSON string 二进制格式, 用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |说明|String|管理员提供的 office 客户端配置策略的说明。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|管理员提供的 office 客户端配置策略的名称。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|策略的组分配列表。。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
