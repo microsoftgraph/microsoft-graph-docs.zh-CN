@@ -1,34 +1,35 @@
 ---
 title: plannerChecklistItem 资源类型
-description: '**plannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由 checklistItems 对象表示。'
+description: '**PlannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由 checklistItems 对象表示。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: deb168fa123c893d0d3793b0e67f65b6da2819b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9bce6b0089f9e713e66e0354ce58d68cfd17fa7c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344499"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009074"
 ---
-# <a name="plannerchecklistitem-resource-type"></a><span data-ttu-id="19db1-104">plannerChecklistItem 资源类型</span><span class="sxs-lookup"><span data-stu-id="19db1-104">plannerChecklistItem resource type</span></span>
+# <a name="plannerchecklistitem-resource-type"></a><span data-ttu-id="c162f-104">plannerChecklistItem 资源类型</span><span class="sxs-lookup"><span data-stu-id="c162f-104">plannerChecklistItem resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="19db1-105">**plannerChecklistItem**资源表示任务清单中的项。</span><span class="sxs-lookup"><span data-stu-id="19db1-105">The **plannerChecklistItem** resource represents an item in the checklist of a task.</span></span> <span data-ttu-id="19db1-106">任务上的检查表由[checklistItems 对象](plannerchecklistitems.md)表示。</span><span class="sxs-lookup"><span data-stu-id="19db1-106">The checklist on a task is represented by the [checklistItems object](plannerchecklistitems.md).</span></span>
+<span data-ttu-id="c162f-105">**PlannerChecklistItem**资源表示任务清单中的项。</span><span class="sxs-lookup"><span data-stu-id="c162f-105">The **plannerChecklistItem** resource represents an item in the checklist of a task.</span></span> <span data-ttu-id="c162f-106">任务上的检查表由[checklistItems 对象](plannerchecklistitems.md)表示。</span><span class="sxs-lookup"><span data-stu-id="c162f-106">The checklist on a task is represented by the [checklistItems object](plannerchecklistitems.md).</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="19db1-107">属性</span><span class="sxs-lookup"><span data-stu-id="19db1-107">Properties</span></span>
-| <span data-ttu-id="19db1-108">属性</span><span class="sxs-lookup"><span data-stu-id="19db1-108">Property</span></span>     | <span data-ttu-id="19db1-109">类型</span><span class="sxs-lookup"><span data-stu-id="19db1-109">Type</span></span>   |<span data-ttu-id="19db1-110">说明</span><span class="sxs-lookup"><span data-stu-id="19db1-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c162f-107">属性</span><span class="sxs-lookup"><span data-stu-id="c162f-107">Properties</span></span>
+| <span data-ttu-id="c162f-108">属性</span><span class="sxs-lookup"><span data-stu-id="c162f-108">Property</span></span>     | <span data-ttu-id="c162f-109">类型</span><span class="sxs-lookup"><span data-stu-id="c162f-109">Type</span></span>   |<span data-ttu-id="c162f-110">说明</span><span class="sxs-lookup"><span data-stu-id="c162f-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="19db1-111">isChecked</span><span class="sxs-lookup"><span data-stu-id="19db1-111">isChecked</span></span>|<span data-ttu-id="19db1-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="19db1-112">Boolean</span></span>|<span data-ttu-id="19db1-113">Value 是`true`选中该项时为, `false`否则为。</span><span class="sxs-lookup"><span data-stu-id="19db1-113">Value is `true` if the item is checked and `false` otherwise.</span></span>|
-|<span data-ttu-id="19db1-114">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="19db1-114">lastModifiedBy</span></span>|[<span data-ttu-id="19db1-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="19db1-115">identitySet</span></span>](identityset.md)| <span data-ttu-id="19db1-116">只读。</span><span class="sxs-lookup"><span data-stu-id="19db1-116">Read-only.</span></span> <span data-ttu-id="19db1-117">上次修改此 ID 的用户 ID。</span><span class="sxs-lookup"><span data-stu-id="19db1-117">User ID by which this is last modified.</span></span>|
-|<span data-ttu-id="19db1-118">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="19db1-118">lastModifiedDateTime</span></span>|<span data-ttu-id="19db1-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="19db1-119">DateTimeOffset</span></span>|<span data-ttu-id="19db1-120">只读。</span><span class="sxs-lookup"><span data-stu-id="19db1-120">Read-only.</span></span> <span data-ttu-id="19db1-121">上次修改的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="19db1-121">Date and time at which this is last modified.</span></span> <span data-ttu-id="19db1-122">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="19db1-122">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="19db1-123">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="19db1-123">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="19db1-124">orderHint</span><span class="sxs-lookup"><span data-stu-id="19db1-124">orderHint</span></span>|<span data-ttu-id="19db1-125">String</span><span class="sxs-lookup"><span data-stu-id="19db1-125">String</span></span>|<span data-ttu-id="19db1-126">用于设置清单中项的相对顺序。</span><span class="sxs-lookup"><span data-stu-id="19db1-126">Used to set the relative order of items in the checklist.</span></span> <span data-ttu-id="19db1-127">格式定义如下所示。 [](planner-order-hint-format.md)</span><span class="sxs-lookup"><span data-stu-id="19db1-127">The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
-|<span data-ttu-id="19db1-128">title</span><span class="sxs-lookup"><span data-stu-id="19db1-128">title</span></span>|<span data-ttu-id="19db1-129">String</span><span class="sxs-lookup"><span data-stu-id="19db1-129">String</span></span>|<span data-ttu-id="19db1-130">检查表项的标题</span><span class="sxs-lookup"><span data-stu-id="19db1-130">Title of the checklist item</span></span>|
+|<span data-ttu-id="c162f-111">isChecked</span><span class="sxs-lookup"><span data-stu-id="c162f-111">isChecked</span></span>|<span data-ttu-id="c162f-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="c162f-112">Boolean</span></span>|<span data-ttu-id="c162f-113">Value 是`true`选中该项时为, `false`否则为。</span><span class="sxs-lookup"><span data-stu-id="c162f-113">Value is `true` if the item is checked and `false` otherwise.</span></span>|
+|<span data-ttu-id="c162f-114">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="c162f-114">lastModifiedBy</span></span>|[<span data-ttu-id="c162f-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="c162f-115">identitySet</span></span>](identityset.md)| <span data-ttu-id="c162f-116">只读。</span><span class="sxs-lookup"><span data-stu-id="c162f-116">Read-only.</span></span> <span data-ttu-id="c162f-117">上次修改此 ID 的用户 ID。</span><span class="sxs-lookup"><span data-stu-id="c162f-117">User ID by which this is last modified.</span></span>|
+|<span data-ttu-id="c162f-118">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="c162f-118">lastModifiedDateTime</span></span>|<span data-ttu-id="c162f-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c162f-119">DateTimeOffset</span></span>|<span data-ttu-id="c162f-120">只读。</span><span class="sxs-lookup"><span data-stu-id="c162f-120">Read-only.</span></span> <span data-ttu-id="c162f-121">上次修改的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="c162f-121">Date and time at which this is last modified.</span></span> <span data-ttu-id="c162f-122">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="c162f-122">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="c162f-123">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="c162f-123">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="c162f-124">orderHint</span><span class="sxs-lookup"><span data-stu-id="c162f-124">orderHint</span></span>|<span data-ttu-id="c162f-125">String</span><span class="sxs-lookup"><span data-stu-id="c162f-125">String</span></span>|<span data-ttu-id="c162f-126">用于设置清单中项的相对顺序。</span><span class="sxs-lookup"><span data-stu-id="c162f-126">Used to set the relative order of items in the checklist.</span></span> <span data-ttu-id="c162f-127">格式定义如下所示。 [](planner-order-hint-format.md)</span><span class="sxs-lookup"><span data-stu-id="c162f-127">The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="c162f-128">title</span><span class="sxs-lookup"><span data-stu-id="c162f-128">title</span></span>|<span data-ttu-id="c162f-129">String</span><span class="sxs-lookup"><span data-stu-id="c162f-129">String</span></span>|<span data-ttu-id="c162f-130">检查表项的标题</span><span class="sxs-lookup"><span data-stu-id="c162f-130">Title of the checklist item</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="19db1-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="19db1-131">JSON representation</span></span>
-<span data-ttu-id="19db1-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="19db1-132">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c162f-131">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c162f-131">JSON representation</span></span>
+<span data-ttu-id="c162f-132">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c162f-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

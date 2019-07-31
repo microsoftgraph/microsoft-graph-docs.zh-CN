@@ -1,23 +1,25 @@
 ---
 author: psampath
-ms.author: psampath
+description: StoragePlanInformation 资源提供有关驱动器的存储配额计划的信息。
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
-ms.openlocfilehash: 3911d3af5f2149d1043ed246e7c11d287c840842
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d8ddb39f9f7c6443f0e669052084af27b8fd5cec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008080"
 ---
-# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="60a42-102">storagePlanInformation 资源类型</span><span class="sxs-lookup"><span data-stu-id="60a42-102">storagePlanInformation resource type</span></span>
+# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="3ecf4-103">storagePlanInformation 资源类型</span><span class="sxs-lookup"><span data-stu-id="3ecf4-103">storagePlanInformation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="60a42-103">**storagePlanInformation**资源提供有关驱动器的存储配额计划的信息。</span><span class="sxs-lookup"><span data-stu-id="60a42-103">The **storagePlanInformation** resource provides information about the drive's storage quota plans.</span></span>
+<span data-ttu-id="3ecf4-104">**StoragePlanInformation**资源提供有关驱动器的存储配额计划的信息。</span><span class="sxs-lookup"><span data-stu-id="3ecf4-104">The **storagePlanInformation** resource provides information about the drive's storage quota plans.</span></span>
 
-### <a name="json-representation"></a><span data-ttu-id="60a42-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="60a42-104">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="3ecf4-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3ecf4-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,11 +33,11 @@ ms.locfileid: "33342925"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="60a42-105">属性</span><span class="sxs-lookup"><span data-stu-id="60a42-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3ecf4-106">属性</span><span class="sxs-lookup"><span data-stu-id="3ecf4-106">Properties</span></span>
 
-| <span data-ttu-id="60a42-106">属性名称</span><span class="sxs-lookup"><span data-stu-id="60a42-106">Property name</span></span>     | <span data-ttu-id="60a42-107">类型</span><span class="sxs-lookup"><span data-stu-id="60a42-107">Type</span></span>      | <span data-ttu-id="60a42-108">说明</span><span class="sxs-lookup"><span data-stu-id="60a42-108">Description</span></span>                                                             |
+| <span data-ttu-id="3ecf4-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="3ecf4-107">Property name</span></span>     | <span data-ttu-id="3ecf4-108">类型</span><span class="sxs-lookup"><span data-stu-id="3ecf4-108">Type</span></span>      | <span data-ttu-id="3ecf4-109">说明</span><span class="sxs-lookup"><span data-stu-id="3ecf4-109">Description</span></span>                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| <span data-ttu-id="60a42-109">upgradeAvailable</span><span class="sxs-lookup"><span data-stu-id="60a42-109">upgradeAvailable</span></span>  | <span data-ttu-id="60a42-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="60a42-110">Boolean</span></span>   | <span data-ttu-id="60a42-111">指示是否有更高的存储配额计划可用。</span><span class="sxs-lookup"><span data-stu-id="60a42-111">Indicates if there are higher storage quota plans available.</span></span> <span data-ttu-id="60a42-112">只读。</span><span class="sxs-lookup"><span data-stu-id="60a42-112">Read-only.</span></span> |
+| <span data-ttu-id="3ecf4-110">upgradeAvailable</span><span class="sxs-lookup"><span data-stu-id="3ecf4-110">upgradeAvailable</span></span>  | <span data-ttu-id="3ecf4-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="3ecf4-111">Boolean</span></span>   | <span data-ttu-id="3ecf4-112">指示是否有更高的存储配额计划可用。</span><span class="sxs-lookup"><span data-stu-id="3ecf4-112">Indicates if there are higher storage quota plans available.</span></span> <span data-ttu-id="3ecf4-113">只读。</span><span class="sxs-lookup"><span data-stu-id="3ecf4-113">Read-only.</span></span> |
 
 
 <!--
