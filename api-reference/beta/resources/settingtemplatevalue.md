@@ -2,31 +2,34 @@
 title: settingTemplateValue 资源类型
 description: 表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
 localization_priority: Normal
-ms.openlocfilehash: 2277f4b7bb66839164a1b09011d20886baf2bd1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9a49dd291bd9cc7baa31d90ba8e247ac984b1906
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965185"
 ---
-# <a name="settingtemplatevalue-resource-type"></a><span data-ttu-id="64ee7-103">settingTemplateValue 资源类型</span><span class="sxs-lookup"><span data-stu-id="64ee7-103">settingTemplateValue resource type</span></span>
+# <a name="settingtemplatevalue-resource-type"></a><span data-ttu-id="30e64-103">settingTemplateValue 资源类型</span><span class="sxs-lookup"><span data-stu-id="30e64-103">settingTemplateValue resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64ee7-104">表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。</span><span class="sxs-lookup"><span data-stu-id="64ee7-104">Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.</span></span>
+<span data-ttu-id="30e64-104">表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。</span><span class="sxs-lookup"><span data-stu-id="30e64-104">Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="64ee7-105">属性</span><span class="sxs-lookup"><span data-stu-id="64ee7-105">Properties</span></span>
-| <span data-ttu-id="64ee7-106">属性</span><span class="sxs-lookup"><span data-stu-id="64ee7-106">Property</span></span>     | <span data-ttu-id="64ee7-107">类型</span><span class="sxs-lookup"><span data-stu-id="64ee7-107">Type</span></span>   |<span data-ttu-id="64ee7-108">说明</span><span class="sxs-lookup"><span data-stu-id="64ee7-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="30e64-105">属性</span><span class="sxs-lookup"><span data-stu-id="30e64-105">Properties</span></span>
+| <span data-ttu-id="30e64-106">属性</span><span class="sxs-lookup"><span data-stu-id="30e64-106">Property</span></span>     | <span data-ttu-id="30e64-107">类型</span><span class="sxs-lookup"><span data-stu-id="30e64-107">Type</span></span>   |<span data-ttu-id="30e64-108">说明</span><span class="sxs-lookup"><span data-stu-id="30e64-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="64ee7-109">默认</span><span class="sxs-lookup"><span data-stu-id="64ee7-109">defaultValue</span></span>|<span data-ttu-id="64ee7-110">string</span><span class="sxs-lookup"><span data-stu-id="64ee7-110">string</span></span>|<span data-ttu-id="64ee7-111">设置的默认值。</span><span class="sxs-lookup"><span data-stu-id="64ee7-111">Default value for the setting.</span></span> <span data-ttu-id="64ee7-112">只读。</span><span class="sxs-lookup"><span data-stu-id="64ee7-112">Read-only.</span></span>|
-|<span data-ttu-id="64ee7-113">说明</span><span class="sxs-lookup"><span data-stu-id="64ee7-113">description</span></span>|<span data-ttu-id="64ee7-114">string</span><span class="sxs-lookup"><span data-stu-id="64ee7-114">string</span></span>|<span data-ttu-id="64ee7-115">设置的说明。</span><span class="sxs-lookup"><span data-stu-id="64ee7-115">Description of the setting.</span></span> <span data-ttu-id="64ee7-116">只读。</span><span class="sxs-lookup"><span data-stu-id="64ee7-116">Read-only.</span></span>|
-|<span data-ttu-id="64ee7-117">name</span><span class="sxs-lookup"><span data-stu-id="64ee7-117">name</span></span>|<span data-ttu-id="64ee7-118">string</span><span class="sxs-lookup"><span data-stu-id="64ee7-118">string</span></span>|<span data-ttu-id="64ee7-119">设置的名称。</span><span class="sxs-lookup"><span data-stu-id="64ee7-119">Name of the setting.</span></span> <span data-ttu-id="64ee7-120">只读。</span><span class="sxs-lookup"><span data-stu-id="64ee7-120">Read-only.</span></span>|
-|<span data-ttu-id="64ee7-121">类型</span><span class="sxs-lookup"><span data-stu-id="64ee7-121">type</span></span>|<span data-ttu-id="64ee7-122">string</span><span class="sxs-lookup"><span data-stu-id="64ee7-122">string</span></span>|<span data-ttu-id="64ee7-123">设置的类型。</span><span class="sxs-lookup"><span data-stu-id="64ee7-123">Type of the setting.</span></span> <span data-ttu-id="64ee7-124">只读。</span><span class="sxs-lookup"><span data-stu-id="64ee7-124">Read-only.</span></span>|
+|<span data-ttu-id="30e64-109">默认</span><span class="sxs-lookup"><span data-stu-id="30e64-109">defaultValue</span></span>|<span data-ttu-id="30e64-110">string</span><span class="sxs-lookup"><span data-stu-id="30e64-110">string</span></span>|<span data-ttu-id="30e64-111">设置的默认值。</span><span class="sxs-lookup"><span data-stu-id="30e64-111">Default value for the setting.</span></span> <span data-ttu-id="30e64-112">只读。</span><span class="sxs-lookup"><span data-stu-id="30e64-112">Read-only.</span></span>|
+|<span data-ttu-id="30e64-113">说明</span><span class="sxs-lookup"><span data-stu-id="30e64-113">description</span></span>|<span data-ttu-id="30e64-114">string</span><span class="sxs-lookup"><span data-stu-id="30e64-114">string</span></span>|<span data-ttu-id="30e64-115">设置的说明。</span><span class="sxs-lookup"><span data-stu-id="30e64-115">Description of the setting.</span></span> <span data-ttu-id="30e64-116">只读。</span><span class="sxs-lookup"><span data-stu-id="30e64-116">Read-only.</span></span>|
+|<span data-ttu-id="30e64-117">name</span><span class="sxs-lookup"><span data-stu-id="30e64-117">name</span></span>|<span data-ttu-id="30e64-118">string</span><span class="sxs-lookup"><span data-stu-id="30e64-118">string</span></span>|<span data-ttu-id="30e64-119">设置的名称。</span><span class="sxs-lookup"><span data-stu-id="30e64-119">Name of the setting.</span></span> <span data-ttu-id="30e64-120">只读。</span><span class="sxs-lookup"><span data-stu-id="30e64-120">Read-only.</span></span>|
+|<span data-ttu-id="30e64-121">类型</span><span class="sxs-lookup"><span data-stu-id="30e64-121">type</span></span>|<span data-ttu-id="30e64-122">string</span><span class="sxs-lookup"><span data-stu-id="30e64-122">string</span></span>|<span data-ttu-id="30e64-123">设置的类型。</span><span class="sxs-lookup"><span data-stu-id="30e64-123">Type of the setting.</span></span> <span data-ttu-id="30e64-124">只读。</span><span class="sxs-lookup"><span data-stu-id="30e64-124">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="64ee7-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="64ee7-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="30e64-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="30e64-125">JSON representation</span></span>
 
-<span data-ttu-id="64ee7-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="64ee7-126">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="30e64-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="30e64-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
