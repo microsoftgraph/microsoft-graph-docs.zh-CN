@@ -4,12 +4,13 @@ description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 97f182c58af3ac75d816b3e8a0e7a6fb5f3af1d7
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: apiPageType
+ms.openlocfilehash: 77354db4897bc1732e5768326504e44678907222
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908332"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944434"
 ---
 # <a name="call-record"></a>call: record
 

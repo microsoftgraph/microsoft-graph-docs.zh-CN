@@ -4,12 +4,13 @@ description: 获取已为租户创建的 bookingbusiness 对象的集合。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 1dfea8576e8177478a3e21e326bc8dd7402cacfb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9be35103498626dc3ff93389920a0110e4f0b730
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945128"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 

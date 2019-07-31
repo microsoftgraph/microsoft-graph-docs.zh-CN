@@ -4,12 +4,13 @@ description: 检索 chart 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0503f38328c10dec6890181883f6af704b7ed8f4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bec34fbe42970398e5c66038788fc28b6c876b07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944175"
 ---
 # <a name="get-workbookchart"></a>获取 workbookchart
 

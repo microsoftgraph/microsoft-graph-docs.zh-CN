@@ -4,12 +4,13 @@ description: 在 "Azure AD 访问评论" 功能中, 重置当前活动的 access
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ce8bfa99a4071124d5761c4e82ad68ea7a8a05c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 56c402a8180753fdb7e584a3947e809b4639f9f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945961"
 ---
 # <a name="reset-accessreview"></a>重置 accessReview
 

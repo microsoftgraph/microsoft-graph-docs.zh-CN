@@ -4,12 +4,13 @@ description: 删除对话。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 174f3ddbcbae729aa66d913c07de21f878bf3979
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9137ac4acf5f9708b3b472a3a8ac40a4025ec9fc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943188"
 ---
 # <a name="delete-conversation"></a>删除对话
 

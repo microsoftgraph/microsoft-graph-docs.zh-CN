@@ -4,12 +4,13 @@ description: 使用此 API 创建新的 administrativeUnit。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 81b35e8dca3942ca23952ca79257a80612a3a5a1
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 891e281554015ac453a678f78e4f299babf46f4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917954"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945772"
 ---
 # <a name="create-administrativeunit"></a>创建 administrativeUnit
 

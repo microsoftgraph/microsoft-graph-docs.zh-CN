@@ -5,12 +5,13 @@ title: 将项目添加到捆绑包
 description: 将项目添加到 Driveitem 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e6706fecd425162345e718fd43f6dc44e7c6b9db
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: f6680d4903111301f61f11f1975596386dd263be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932670"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944840"
 ---
 # <a name="add-item-to-a-bundle"></a>将项目添加到捆绑包
 

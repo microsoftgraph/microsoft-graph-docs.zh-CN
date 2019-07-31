@@ -4,12 +4,13 @@ description: 读取 windows10CustomConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e64cb0758760396f0c1e1c0ab170dc5652d0c97
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8b94430d0d556c9d69888f83c084df9ff81c90f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976125"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946108"
 ---
 # <a name="get-windows10customconfiguration"></a>获取 windows10CustomConfiguration
 

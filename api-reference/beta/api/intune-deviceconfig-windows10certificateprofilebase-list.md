@@ -4,12 +4,13 @@ description: 列出 windows10CertificateProfileBase 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a792369fb7d8ad21b897e57266407bae91bf0040
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3862a95d4ed8f9f251c8807e71e95cc8c2e15f94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946227"
 ---
 # <a name="list-windows10certificateprofilebases"></a>列出 windows10CertificateProfileBases
 

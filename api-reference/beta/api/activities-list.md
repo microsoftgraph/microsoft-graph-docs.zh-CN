@@ -3,13 +3,16 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
 title: 文件活动
+description: 列出在某个项上或某个层次结构下发生的最近活动。
 localization_priority: Normal
-ms.openlocfilehash: a9617301ae92ff81d2c8c51d9d4ad0f1fd77001c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 075f4f3df4e16e23fa3f90cb7de70a502b1d0aae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855888"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945926"
 ---
 # <a name="enumerate-activities-preview"></a>枚举活动（预览）
 

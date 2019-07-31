@@ -2,12 +2,15 @@
 title: 获取连接器
 description: 检索连接器对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: da0a44864043e013b284e901786ba36a04fb143d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7650da72a4de2488c5f7f44644785cdeca43babe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327534"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943538"
 ---
 # <a name="get-connector"></a>获取连接器
 

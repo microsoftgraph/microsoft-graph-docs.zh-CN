@@ -4,12 +4,13 @@ description: 检索 workbookchartdatalabels 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d51bb0f7edb9df07fdd73be5a07fe5e3991c0c9e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ff77c1201cca916eae34d3df792f93b48a5edaff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864107"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943975"
 ---
 # <a name="get-chartdatalabels"></a>获取 ChartDataLabels
 

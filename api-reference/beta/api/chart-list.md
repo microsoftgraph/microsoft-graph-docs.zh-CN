@@ -4,12 +4,13 @@ description: 检索 chart 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c1d58aa798c7b25fb20acfa9f3c5165898dbd4f0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9a9a0223b33b43def6c0e349c681918e6edece99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864317"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944126"
 ---
 # <a name="list-chartcollection"></a>列出 ChartCollection
 

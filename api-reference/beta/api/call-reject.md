@@ -4,12 +4,13 @@ description: 拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 10557ef74360d90eefe60a85d57d33c02261f4d1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1eb607815310c9751b6c1635cc827221aa14826d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944378"
 ---
 # <a name="call-reject"></a>呼叫: 拒绝
 

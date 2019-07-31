@@ -4,12 +4,13 @@ description: 获取 bookingCustomer 对象的属性和关系。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6501603add6a4df4a3e031e37e1ca1a96fb20a14
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ca93e963fa1ac77128f38449eb67582a11abd736
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865367"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944960"
 ---
 # <a name="get-bookingcustomer"></a>获取 bookingCustomer
 

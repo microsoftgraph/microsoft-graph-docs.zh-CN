@@ -4,12 +4,13 @@ description: 更新 contact 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e8e1bb9332ca6a5821e0c17d12060a9f4044a983
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c3efe31faea1240d34b60aadc4ccfbf19d1dc275
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943352"
 ---
 # <a name="update-contact"></a>更新联系人
 

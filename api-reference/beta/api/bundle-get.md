@@ -5,12 +5,13 @@ title: 获取捆绑包
 description: 获取 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0be042c6f1ce3915db93faa135ba054a3cc6a34f
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: f58595b99bd78f66f42da639db2ac1c3ac8784da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944847"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 

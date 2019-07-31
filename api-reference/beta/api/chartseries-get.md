@@ -4,12 +4,13 @@ description: 检索 chartseries 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2c3721b3f50d7248ad72b520309b2ebb61809511
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: daf01e855b1a652f033a99f057066da2063c3f86
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943750"
 ---
 # <a name="get-chartseries"></a>获取 ChartSeries
 

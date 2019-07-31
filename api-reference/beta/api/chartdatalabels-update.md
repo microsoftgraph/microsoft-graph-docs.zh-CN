@@ -4,12 +4,13 @@ description: 更新 workbookchartdatalabels 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6e2cc9ef16b1201b3a934f3d38a19bbe3c139c53
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 130f16f1270bee1af440180af65ff91bb508184d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864086"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943977"
 ---
 # <a name="update-workbookchartdatalabels"></a>更新 workbookChartDataLabels
 

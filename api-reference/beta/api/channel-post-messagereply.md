@@ -4,12 +4,13 @@ description: 在渠道中回复现有消息。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 040f439fcdcb8caa6c0b1a08594b60626bfe4665
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2fad5650e530f494a0f9a5bbb91d820340dc2a9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864422"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944224"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>在渠道中回复消息
 

@@ -4,12 +4,13 @@ description: 获取指定 bookingbusiness 中的 bookingStaffMember 的属性和
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 3258189da65ee53df9a9da209cfc516467ea06f1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ee754f8543d956e55ccdb40efb330d9cd13ddb12
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944868"
 ---
 # <a name="get-bookingstaffmember"></a>获取 bookingStaffMember
 

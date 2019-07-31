@@ -2,12 +2,15 @@
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 53d31ceedd439359217bcbe9b3e3fb71d335814f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 156a78f14613a555863ef202d4d8827c7ea85e81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856630"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945352"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 

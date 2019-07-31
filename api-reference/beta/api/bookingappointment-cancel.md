@@ -4,12 +4,13 @@ description: 在指定的 bookingbusiness 中取消指定的 bookingAppointment,
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 77fd2c78844454d634bbf2b87c06bca8de169e1b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d7be27f56ce9ab6aeed9feb539fbda1e297860d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857078"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945282"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: 取消
 

@@ -4,12 +4,13 @@ description: 在 "Azure AD access 评论" 功能中, 停止当前处于活动状
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04886032e61a51f55e0e92451e36ea3985339390
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2fd62615a3ed1adc51e1f497b58ed1834bfc0d07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855924"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945940"
 ---
 # <a name="stop-accessreview"></a>停止 accessReview
 

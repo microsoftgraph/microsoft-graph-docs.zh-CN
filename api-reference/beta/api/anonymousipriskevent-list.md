@@ -2,12 +2,15 @@
 title: 列出 anonymousIpRiskEvents
 description: 检索 anonymousipriskevent 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 44f366755396924c15422a44af0712e668327469
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7935b5bcb98d5f7122f3967aeed1313315259a29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945566"
 ---
 # <a name="list-anonymousipriskevents"></a>列出 anonymousIpRiskEvents
 

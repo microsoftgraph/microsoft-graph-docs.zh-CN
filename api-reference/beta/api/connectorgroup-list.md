@@ -2,12 +2,15 @@
 title: 列出 connectorGroups
 description: 检索 connectorgroup 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 13fc3d681daa5abb7b31b5e6df50f630920b1191
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ef77c53d56edc09d0a95ca70d2b4471f23942033
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327577"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943426"
 ---
 # <a name="list-connectorgroups"></a>列出 connectorGroups
 

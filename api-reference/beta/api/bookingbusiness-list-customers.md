@@ -4,12 +4,13 @@ description: 获取 bookingCustomer 对象的列表。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 413e0da2bfff04c89c157ad6aea7b13e0f1348ae
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 43d6d4166de59f1c1589bd44b34c8a562364b336
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865717"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945202"
 ---
 # <a name="list-customers"></a>列出客户
 

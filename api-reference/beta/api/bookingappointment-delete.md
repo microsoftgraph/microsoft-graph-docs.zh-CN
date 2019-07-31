@@ -4,12 +4,13 @@ description: 删除指定 bookingbusiness 中的 bookingAppointment。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 0727ade214a493397202a15970c227ab1432721d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f5f3e51c2fbca1ce2d6a55b5e47f1b1513c552e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945275"
 ---
 # <a name="delete-bookingappointment"></a>删除 bookingAppointment
 

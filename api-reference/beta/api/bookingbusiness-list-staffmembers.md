@@ -4,12 +4,13 @@ description: 获取指定 bookingbusiness 中的 bookingStaffMember 对象的列
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: bc854a508445f6693b835fdf4b8898f30d424216
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 38660695ab3328eed2d9d12d58fb003878ddf6ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945177"
 ---
 # <a name="list-staffmembers"></a>列出 staffMembers
 

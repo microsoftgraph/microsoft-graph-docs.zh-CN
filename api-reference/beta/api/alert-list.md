@@ -4,12 +4,13 @@ description: 检索警报对象列表。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: b592b7d348fe49992d6f6b58b06092e94b19c79f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bf6d639ae197fe1866d09bbc8c9966d65f1a45fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945632"
 ---
 # <a name="list-alerts"></a>列出警报
 

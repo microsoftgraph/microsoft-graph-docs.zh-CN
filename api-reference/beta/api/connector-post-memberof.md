@@ -2,12 +2,15 @@
 title: 将连接器添加到 connectorGroup
 description: 使用此 API 将连接器添加到新的 connectorGroup。
 localization_priority: Normal
-ms.openlocfilehash: d0357e1fc3c911111b392b783e94723e8084e44a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 85ea1046509cc0937b9f2ad0d6372dcc1b222862
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327515"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943508"
 ---
 # <a name="add-connector-to-connectorgroup"></a>将连接器添加到 connectorGroup
 

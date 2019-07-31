@@ -4,12 +4,13 @@ description: 使此业务的日程安排页面对外部客户可用。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 084d812fbdd5e03e502beaf80dce9e7eb9f88b3b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e2885e36c484c871a65c2e4fd66d678b7f3186ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865483"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945037"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: 发布
 

@@ -2,12 +2,15 @@
 title: 列出连接器
 description: 检索连接器对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 69e70bbf0f247b4d702f9cea2e69e2cddcce6272
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a85a1d478adc37da6dafe7850262539993e15ae8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327593"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943503"
 ---
 # <a name="list-connectors"></a>列出连接器
 

@@ -4,12 +4,13 @@ description: 在 "Azure AD access 评论" 功能中, 检索 accessReview 对象�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6a9bd4cfcf97c45f969bfa4641e8555cc9703e72
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d32abb41313a9008e6b222119a9b4d7a95553b0f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855980"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945989"
 ---
 # <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
 

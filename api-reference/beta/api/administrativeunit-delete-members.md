@@ -4,12 +4,13 @@ description: 使用此 API 可从管理单元中删除成员 (用户或组)。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c307a802e2d574950b89c3f5644b5fbf70d90e34
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: c4b95fa5277c46e1aa9a8e2d2710c4236ab4e4dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917929"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945891"
 ---
 # <a name="remove-a-member"></a>删除成员
 

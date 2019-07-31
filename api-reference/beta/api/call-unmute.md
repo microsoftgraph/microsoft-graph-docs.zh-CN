@@ -4,12 +4,13 @@ description: 允许应用程序自行取消静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f1646a21e5f0cad28de6fe3795a4c1fb8e95227e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 83a309dd1ef321bb3149f2d3d0f9b2a48f33ee7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944383"
 ---
 # <a name="call-unmute"></a>呼叫: 取消静音
 

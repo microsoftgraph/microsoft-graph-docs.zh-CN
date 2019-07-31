@@ -2,14 +2,15 @@
 title: 获取附件
 description: 读取附加到事件、邮件、Outlook 任务或帖子的附件的属性和关系。
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f55264b156a6687f0eb9e544f97eaf7df84dbeb3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 09a336da0f2ead60235240b60b3539007df6bd15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945359"
 ---
 # <a name="get-attachment"></a>获取附件
 

@@ -4,12 +4,13 @@ description: 更新 administrativeUnit 对象的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fe3323ad96dbd5599e8ac332d3b5ca372d9c66f9
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 86db267942255ca5cedfd66a2d1ec145096f9af9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918004"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945716"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 

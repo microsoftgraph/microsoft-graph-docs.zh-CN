@@ -4,12 +4,13 @@ description: 在呼叫中开始和停止共享屏幕。 此 API 用于允许应�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75d423e54309853d2fd6b39043a14e5bd5926daf
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fbcc26cc534702ba1c136725a8fbbca2867ece57
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944523"
 ---
 # <a name="call-changescreensharingrole"></a>调用: changeScreenSharingRole
 

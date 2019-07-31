@@ -2,12 +2,15 @@
 title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
-ms.openlocfilehash: a9f0dd682ca09ea9723409193447c07f845e27da
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3515d7538f1d6d74019efaca3c1b374c8750a6ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855454"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945700"
 ---
 # <a name="create-agreement"></a>创建协议
 

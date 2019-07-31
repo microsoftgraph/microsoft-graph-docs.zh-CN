@@ -4,12 +4,13 @@ description: 在指定会话中创建新线程。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: bd12f5a93f3cd52efbabb71c31be1241a02d0c2d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e0bec693da03f9b2c65579c31d4e1843c7635c8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863011"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943125"
 ---
 # <a name="create-thread"></a>创建线程
 

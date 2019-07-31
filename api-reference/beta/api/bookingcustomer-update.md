@@ -4,12 +4,13 @@ description: 更新 bookingCustomer 对象的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 449216d78a48d10aefa2cfdf2c8db164ae11cf46
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 933f272d8addcaf0528e5c141291d8f81f3ecb43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944961"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 

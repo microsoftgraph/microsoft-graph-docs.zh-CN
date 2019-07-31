@@ -4,12 +4,13 @@ description: 获取登录用户的邮箱中的所有联系人 (../me/contacts), 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1d515a4049f764250130d6eba0123737d18e0116
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 230fa87233dfb5bfc2fc22cf2d64a4f6131b1ef0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863167"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943244"
 ---
 # <a name="list-contacts"></a>列出联系人
 

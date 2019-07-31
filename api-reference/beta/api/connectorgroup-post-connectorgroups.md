@@ -2,12 +2,15 @@
 title: 创建 connectorGroup
 description: 使用此 API 创建新的 connectorGroup。
 localization_priority: Normal
-ms.openlocfilehash: 90b3d0cdbdd02876e1dfaf3d6743f6dac2199202
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2b99d52303547bd94deb8c3866e4e62745f5b2d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943398"
 ---
 # <a name="create-connectorgroup"></a>创建 connectorGroup
 

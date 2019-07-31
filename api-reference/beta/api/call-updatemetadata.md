@@ -4,12 +4,13 @@ description: 更新与调用相关联的 appliation 的元数据。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fa2b92118b6a1e0862044427dd73a2a0d2bf3a35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3ccaec3f8a7cbd77bc59ee0753440bfbdfd03b0e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864660"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944405"
 ---
 # <a name="call-updatemetadata"></a>调用: updateMetadata
 

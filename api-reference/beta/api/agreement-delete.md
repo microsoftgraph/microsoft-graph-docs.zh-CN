@@ -2,12 +2,15 @@
 title: 删除协议
 description: 删除协议对象。
 localization_priority: Normal
-ms.openlocfilehash: 2b0bf56bf63a62cacd757035f10f0cbb48a30604
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 629414fc0014b4f54689b9dc0541b3504d033c85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855517"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945688"
 ---
 # <a name="delete-agreement"></a>删除协议
 

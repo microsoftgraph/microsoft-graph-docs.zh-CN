@@ -4,12 +4,13 @@ description: 列出 windows10CustomConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb94e8dab9c1fc58be8a142bfcf657231ae18df1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 59aa8919129e39f02c683a199fd0fe2b5e93ff99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962720"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946080"
 ---
 # <a name="list-windows10customconfigurations"></a>列出 windows10CustomConfigurations
 

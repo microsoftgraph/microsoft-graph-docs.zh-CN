@@ -4,12 +4,13 @@ description: 更新指定通道的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a913f49cfb247e7f7119011321b08301d7203c54
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: b6e8cd0369178917d0a1542e36c8a8ea83b6b7f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438431"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944238"
 ---
 # <a name="patch-channel"></a>修补程序通道
 

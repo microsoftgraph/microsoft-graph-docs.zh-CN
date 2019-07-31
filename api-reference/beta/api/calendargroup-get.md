@@ -4,12 +4,13 @@ description: 检索 calendargroup 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ffb416dbced448791e22ed158cb05d63499f8ef7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 233d457c2a33eeef64a7809976a6dc42f307b832
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944647"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 

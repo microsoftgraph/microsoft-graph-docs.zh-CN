@@ -2,12 +2,15 @@
 title: 删除 connectorGroup
 description: 删除 connectorGroup。
 localization_priority: Normal
-ms.openlocfilehash: 34bf5dd919ddea37f429e61fc9b01c1ee4c2d68c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e8c7d0dc61338b10451f553421b74ad1b41f628f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327629"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943475"
 ---
 # <a name="delete-connectorgroup"></a>删除 connectorGroup
 

@@ -2,12 +2,15 @@
 title: 列出协议
 description: 检索协议对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: bb6ea113238c9a6e991b3ae3068182497969390e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7c07a0308443c1d631122dd22c031789d8eb5acf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855504"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945706"
 ---
 # <a name="list-agreements"></a>列出协议
 

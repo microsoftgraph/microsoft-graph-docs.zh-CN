@@ -4,12 +4,13 @@ description: 为指定的 bookingbusiness 创建新的 bookingService。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: fd948f6f7dea07c4fa9b1b9eee582c244699ce35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e33bbc3906a6e8cb20762fed485e57c92c905003
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865544"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945079"
 ---
 # <a name="create-bookingservice"></a>创建 bookingService
 

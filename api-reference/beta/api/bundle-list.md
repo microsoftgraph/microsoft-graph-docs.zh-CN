@@ -5,12 +5,13 @@ title: 列出捆绑包
 description: 列出用户驱动器中的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b3191418a9d82f0961e920400d74fd429d3febc9
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 1bfb1249c19e44f19e4cc39442ecf67d60e8f6aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944830"
 ---
 # <a name="list-bundles"></a>列出捆绑包
 

@@ -4,12 +4,13 @@ description: 重置图表的源数据。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 29298cca008a5844c7aeea0149fd7d6769ce7c7f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dbbe52d2b031d1ae72bafbb186bbf92e4d27caf2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944112"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 

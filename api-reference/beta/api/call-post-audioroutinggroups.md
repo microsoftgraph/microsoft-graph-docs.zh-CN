@@ -4,12 +4,13 @@ description: 创建新的**audioRoutingGroup**。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb993616e8ed4d55341e74aa7881e6ca76bf310d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 38fa18f34ee457be395c39b0894d1e90828ec772
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864709"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944458"
 ---
 # <a name="create-audio-routing-group"></a>创建音频路由组
 

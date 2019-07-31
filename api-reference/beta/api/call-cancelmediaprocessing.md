@@ -4,12 +4,13 @@ description: 取消所有正在进行的任何 PlayPrompt 或记录操作的媒�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6b0a704ecaad92425efe81b3d33ee7e796acb95b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 11e96bd71dcb26503bdcc4fe05111fad4f1033b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864869"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944580"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用: cancelMediaProcessing
 

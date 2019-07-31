@@ -4,12 +4,13 @@ description: 创建新呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 790a33297646eeb84d70708233089aca6f9f15bf
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: b645180c3f90f0d282aa70282ac362c8365e3f02
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945457"
 ---
 # <a name="create-call"></a>创建调用
 

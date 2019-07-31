@@ -4,12 +4,13 @@ description: 更新 workbookchartaxistitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 57adbf2f6bcb34956aab7415caced87bec43ab98
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e45dd1fcc85aca42414963a062b708e0f20aa51f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864170"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944014"
 ---
 # <a name="update-workbookchartaxistitle"></a>更新 workbookChartAxisTitle
 

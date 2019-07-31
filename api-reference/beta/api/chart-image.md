@@ -4,12 +4,13 @@ description: 通过缩放图表以适应指定的尺寸，将图表呈现为 bas
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e82f0600cb43ba515bfb8bee9ecde90e645ea062
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b75b7700d3b4a862e04a086000831f6fd4b50489
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328080"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944147"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -42,7 +43,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingM
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|height|数字|可选。生成的图像的所需高度。|
+|height|number|可选。生成的图像的所需高度。|
 |width|number|可选。生成的图像的所需宽度。|
 |fittingMode|string|可选。该方法用于将图表缩放到指定的尺寸（如果设置了高度和宽度）。”可能的值是：`Fit`、`FitAndCenter`、`Fill`。|
 

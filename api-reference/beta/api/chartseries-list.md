@@ -4,12 +4,13 @@ description: 检索 chartseries 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 705e67c035be7966ea08b740159f7a092e788eda
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 68fcc75d28e57cf739a8f108d85cf5df5a96ef44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943741"
 ---
 # <a name="list-chartseriescollection"></a>列出 ChartSeriesCollection
 

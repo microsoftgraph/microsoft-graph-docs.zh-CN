@@ -4,12 +4,13 @@ description: 使此业务的计划页面对外部客户不可用。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: df4f9fb74ab0cc82394a90b938f1b7478c99cd07
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c1bd1b7986062487ee9568ecfd0cbc0f5f020efc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865513"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945016"
 ---
 # <a name="bookingbusiness-unpublish"></a>bookingBusiness: 取消发布
 

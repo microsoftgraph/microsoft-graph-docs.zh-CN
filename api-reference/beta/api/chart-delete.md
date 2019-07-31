@@ -4,12 +4,13 @@ description: 删除 chart 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9d2379041e66e1a2b49d8fb6471b0094e3cba44c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 3243765cdf7d9ce049f28a8e489c06e62470210f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328015"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944196"
 ---
 # <a name="chart-delete"></a>Chart: delete
 

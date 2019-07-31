@@ -4,12 +4,13 @@ description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4822460df89474ecc6b5356bc706a744f4f6c523
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2872319e96ee8c51cd93c0af9d67819876efde61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943193"
 ---
 # <a name="get-contract"></a>获取合同
 

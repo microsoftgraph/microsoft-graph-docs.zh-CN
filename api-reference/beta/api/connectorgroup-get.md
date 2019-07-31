@@ -2,12 +2,15 @@
 title: 获取 connectorGroup
 description: 检索 connectorGroup 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: fe638c863d12f20cd352d73d589db691d32dccf6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ac1a8ff709b3795fa4491fca1b75b26ca2b9e138
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943482"
 ---
 # <a name="get-connectorgroup"></a>获取 connectorGroup
 

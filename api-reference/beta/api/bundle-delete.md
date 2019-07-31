@@ -5,12 +5,13 @@ title: 删除捆绑包
 description: 删除 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5bd1fd3f5d9befb538aa797481346a406ff0b53f
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 5854daeabf14e69ec859fe04563e0ee68d76ed22
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944817"
 ---
 # <a name="delete-bundle"></a>删除捆绑包
 

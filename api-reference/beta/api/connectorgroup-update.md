@@ -2,12 +2,15 @@
 title: 更新 connectorGroups
 description: 更新 connectorgroup 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: df45006b57886bd3296d92d34d75de65e5bbec89
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dfc574c9028d5e810a92fd5de4b099d3109bf7ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327570"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943370"
 ---
 # <a name="update-connectorgroups"></a>更新 connectorGroups
 
@@ -39,7 +42,7 @@ PATCH /connectorGroups/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| 可能的值是`applicationProxy`:。|
-|name|String|connectorGroup 的名称。|
+|name|String|ConnectorGroup 的名称。|
 
 ## <a name="response"></a>响应
 

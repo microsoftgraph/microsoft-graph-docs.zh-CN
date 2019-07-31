@@ -4,12 +4,13 @@ description: 更新 contactfolder 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 58dfbe102e153930c603d092a74c2bc7d0a99d3c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1b544f69c2f721d12348dbd9c5ee6b681ce15233
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863217"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943206"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 

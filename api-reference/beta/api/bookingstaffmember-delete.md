@@ -4,12 +4,13 @@ description: 删除指定 bookingbusiness 中的教职员工成员。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: bf693c94d387e328b81f14254716ea22cca0eddd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 80a98fb9e1caed43b87860c17371a3e850e63ee3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865283"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944882"
 ---
 # <a name="delete-bookingstaffmember"></a>删除 bookingStaffMember
 

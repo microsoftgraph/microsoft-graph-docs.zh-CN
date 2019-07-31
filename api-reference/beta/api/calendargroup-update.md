@@ -4,12 +4,13 @@ description: 更新 calendargroup 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: dc1e31227bd31c073ffe86166c8626b0b24e9bb5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b2b6ae3334a22cf3a98e23c9b5068d156792dc2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864965"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944582"
 ---
 # <a name="update-calendargroup"></a>更新 calendarGroup
 

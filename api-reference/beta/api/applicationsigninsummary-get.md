@@ -4,12 +4,13 @@ description: 检索**applicationSigninSummary**对象的属性和关系。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 79a4da401899ce84b0929675da99b346086261a3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 71143a028265c4f13c30c0f63a69112da28a71f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856723"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945408"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 

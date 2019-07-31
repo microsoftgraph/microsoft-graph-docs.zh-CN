@@ -4,12 +4,13 @@ description: 创建新的 androidForWorkCustomConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ed53f4836889fa1ca06415416354de2fff4ec24
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 603fde1c362e7e5e7d69b3d4a8a8cc1f456251e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971015"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943013"
 ---
 # <a name="create-androidforworkcustomconfiguration"></a>创建 androidForWorkCustomConfiguration
 

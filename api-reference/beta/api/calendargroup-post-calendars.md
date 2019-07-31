@@ -4,12 +4,13 @@ description: 此 API 可用于在用户的日历组中新建日历。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 79ea80ff78cfb2320d6db17146a0d85f1cad5008
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: a75d23b759ad715312312d16b36eb7217288c313
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438816"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944602"
 ---
 # <a name="create-calendar"></a>创建日历
 

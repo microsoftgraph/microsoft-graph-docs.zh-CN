@@ -2,12 +2,15 @@
 title: 列出成员
 description: 检索与 connectorGroup 相关联的连接器对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 0ceb5c6e0af7d9b661cbd32c2a7412322be1cf91
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 8bb95fbae074cda735168450c31e2fecf7ea28fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327504"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943447"
 ---
 # <a name="list-members"></a>列出成员
 

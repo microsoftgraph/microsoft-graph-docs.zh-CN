@@ -4,12 +4,13 @@ description: 检索 chartgridlines 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8b043c883ed9c68e3fae64fa02337396cfd3c56b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3ea5e2481fc54e4f44ba91d470e24d1fd4448d30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943902"
 ---
 # <a name="get-chartgridlines"></a>获取 ChartGridlines
 

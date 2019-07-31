@@ -4,12 +4,13 @@ description: 更新 unsupportedDeviceConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b08f68a4fe9ce51e5fb40b0270c4ddf403bc5bf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ee877dc8b42c4140276d18bdf6379b8fa202dc98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976223"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946248"
 ---
 # <a name="update-unsupporteddeviceconfiguration"></a>更新 unsupportedDeviceConfiguration
 

@@ -4,12 +4,13 @@ description: 检索 directoryObject 对象的列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 300a0af65aa09ba9597e976b8a06540c032aa602
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 154d5350279107671b85fae5b072a538159b01e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855247"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945520"
 ---
 # <a name="list-owners"></a>列出所有者
 

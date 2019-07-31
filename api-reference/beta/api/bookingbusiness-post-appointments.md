@@ -4,12 +4,13 @@ description: 为指定的 bookingbusiness 创建新的 bookingAppointment。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6bc67a6e33c860e003cdbc85cd1e0c402570a06c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5e9d6bd8db1254ebd0dff24780eecb8c3fcb8b20
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945105"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 

@@ -4,12 +4,13 @@ description: '在 "Azure AD 访问评论" 功能中, 应用已完成 accessRevie
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1a4c94406afbba762f3c461c06f9ba8252a3cbbc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a278330685e8be053d3ada5adf2edf183998984a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946097"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 

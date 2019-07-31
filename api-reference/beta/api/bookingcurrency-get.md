@@ -4,12 +4,13 @@ description: 获取可用于 Microsoft 预订业务的 bookingCurrency 对象的
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2969bfa6b89b539310d9a20216cbccdbbe68afa5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7db2060eb1307ffae655fae917bd8d07ef516887
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865422"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945009"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 

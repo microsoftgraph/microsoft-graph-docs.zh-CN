@@ -4,12 +4,13 @@ description: 根据其在集合中的位置获取 workbookchart。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7fd1f647733bbd4d49c2e38fcffca1aadccb5282
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 124726b952d5d5f3eb383a4cb1345891ca789055
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438256"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943974"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 

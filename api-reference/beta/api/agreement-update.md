@@ -2,12 +2,15 @@
 title: 更新协议
 description: 更新协议对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: d50f271845077b26b135d1211ee13f365d812e8c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 62546f23e9649144d54500dd169c1f80e1d26905
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945669"
 ---
 # <a name="update-agreement"></a>更新协议
 

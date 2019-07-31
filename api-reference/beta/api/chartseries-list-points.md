@@ -4,12 +4,13 @@ description: 检索 chartpoints 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f37dc6225b04fef7eebfe55894038c4485c2ffa2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ec2c58921f364df70ab852fcd0833c5a1d9487ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863771"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943749"
 ---
 # <a name="list-points"></a>列出点
 

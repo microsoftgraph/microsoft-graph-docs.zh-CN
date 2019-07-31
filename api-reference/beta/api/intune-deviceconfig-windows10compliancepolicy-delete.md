@@ -4,12 +4,13 @@ description: 删除 windows10CompliancePolicy。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b33a1f61e88cae01418f8d895bcc3efb3c949952
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fea2c70bae98d043974d7c87467ab1b988fa8663
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976209"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946192"
 ---
 # <a name="delete-windows10compliancepolicy"></a>删除 windows10CompliancePolicy
 
