@@ -4,12 +4,13 @@ description: Windows 信息保护网络学习摘要实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9bc072c229b574da14c7d02b4c50c54bf051ebba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9eb3028b577e36b1dc2cf8423a50daad092561bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988025"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967138"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>windowsInformationProtectionNetworkLearningSummary 资源类型
 

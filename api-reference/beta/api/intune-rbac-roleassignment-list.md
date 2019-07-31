@@ -4,12 +4,13 @@ description: 列出 roleAssignment 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ea9cf864264deb6b7f1e9bb206ef3ccb4776365
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a29a8b5d4234d37811d6c893b2d9f94f7ae8ea8a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980000"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 

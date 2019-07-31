@@ -2,12 +2,15 @@
 title: 'servicePrincipal: List createdObjects'
 description: 检索 directoryobject 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 486b99d4b2ca9f7a392e82b2495969cbff04b6ff
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d68c3135e546dd063e2b12cc31a8fb26c98d9e5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991371"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 

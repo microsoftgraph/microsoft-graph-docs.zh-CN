@@ -4,12 +4,13 @@ description: '有关收件人的信息性消息, 在用户撰写邮件时向其�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 15f026fd5a6485e5a0549d5987f53e26f0929b75
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 36c8542d549d6e346b02ed92630995e99febbb56
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966852"
 ---
 # <a name="mailtips-resource-type"></a>邮件提示资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "33342758"
 | customMailTip | String | 可在收件人邮箱上设置的自定义邮件提示。 |
 | deliveryRestricted| Boolean | 收件人邮箱是否受到限制, 例如, 仅接受来自预定义的发件人列表的邮件、拒绝来自预定义的发件人列表的邮件, 还是仅接受来自已验证的发件人的邮件。 |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | 要获取其邮件提示的收件人的电子邮件地址。 |
-| error | [mailTipsError](../resources/mailtipserror.md) | [getMailTips](../api/user-getmailtips.md)操作过程中发生的错误。 |
+| error | [mailTipsError](../resources/mailtipserror.md) | [GetMailTips](../api/user-getmailtips.md)操作过程中发生的错误。 |
 | externalMemberCount | Int32 | 如果收件人是通讯组列表, 则为外部成员的数量。 |
 | isModerated |Boolean  | 向收件人发送邮件是否需要审批。 例如, 如果收件人是一个大型通讯组列表, 并且已将仲裁人设置为审批发送到该通讯组列表的邮件, 或者向收件人发送邮件时需要对收件人的经理进行审批。 |
 | mailboxFull | Boolean | 收件人的邮箱完整状态。 |

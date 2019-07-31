@@ -4,12 +4,13 @@ description: 更新 enrollmentTroubleshootingEvent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2239b2bca1f4b35e53d148de888b0fc1a6decc15
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bcdb06d2c25129bc05f680c0412ca87f94ebfa7a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979307"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>更新 enrollmentTroubleshootingEvent
 

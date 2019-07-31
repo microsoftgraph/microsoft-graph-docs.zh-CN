@@ -4,12 +4,13 @@ description: .
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 483aa57cc4781d4d6e8a0e65537eb5b8b6e4526d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 9c0fc9c01a70d91d6d9d93a3c6a28dd28aad28c9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337262"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991973"
 ---
 # <a name="range-boundingrect"></a>Range:BoundingRect
 

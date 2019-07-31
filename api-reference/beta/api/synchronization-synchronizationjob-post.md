@@ -2,14 +2,15 @@
 title: 创建 synchronizationJob
 description: 使用默认同步架构创建新的同步作业。 作业将在禁用状态中创建。 启动同步的呼叫启动作业。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d20481bc771ea81045a3f8017be7d6b1bdab5b81
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 7a766012070d0dae3851a4822408393aea16b694
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869322"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977829"
 ---
 # <a name="create-synchronizationjob"></a>创建 synchronizationJob
 

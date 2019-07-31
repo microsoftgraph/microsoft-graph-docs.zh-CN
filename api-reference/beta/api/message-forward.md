@@ -4,12 +4,13 @@ description: '转发邮件、添加注释或修改任何可更新的属性  '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c2f229054ba8a6948aa948d82208581141a57d3b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e94f79ef5dfa45aa9a398b3261e6bc14091b2bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879625"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992897"
 ---
 # <a name="message-forward"></a>邮件：转发
 

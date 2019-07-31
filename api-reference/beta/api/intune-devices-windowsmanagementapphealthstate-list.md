@@ -4,12 +4,13 @@ description: 列出 windowsManagementAppHealthState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ff924e47098f0ac45037c74a8dfddd5ec908ab9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 59c333d8d6e5d26b4c4a377f6b6ada82d3789d7d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978421"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981155"
 ---
 # <a name="list-windowsmanagementapphealthstates"></a>列出 windowsManagementAppHealthStates
 

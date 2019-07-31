@@ -4,12 +4,13 @@ description: 删除 telecomExpenseManagementPartner。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af946280b917916e322c248e933cb7e1a3905fa7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: efb35bc62c40bb022a5d18f5e9f3da12bb85e8a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979552"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>删除 telecomExpenseManagementPartner
 

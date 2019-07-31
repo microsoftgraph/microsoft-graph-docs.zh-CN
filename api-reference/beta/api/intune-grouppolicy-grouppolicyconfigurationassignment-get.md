@@ -4,12 +4,13 @@ description: 读取 groupPolicyConfigurationAssignment 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36596518265cce8912b0d713a9a4df47636a8f69
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e318147cdf051ce2406d76b4e4c2c8e6d83c6e8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984805"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989964"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>获取 groupPolicyConfigurationAssignment
 

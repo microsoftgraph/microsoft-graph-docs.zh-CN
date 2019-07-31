@@ -2,12 +2,15 @@
 title: locatedRiskEvent 资源类型
 description: '基于位置数据的 Azure Active Directory 标识保护检测到的风险事件。 找到的风险事件类型包括:'
 localization_priority: Normal
-ms.openlocfilehash: 2c7503c08700a0d7c2d2ad67e8868901bdb008e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e024b5311d6385888e7ed8e53ba9e37e8b2d2ed5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345358"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966986"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
@@ -18,7 +21,7 @@ ms.locfileid: "33345358"
 * [来自受恶意软件感染的设备的登录](malwareriskevent.md)
 * [无法移动到非常规位置](impossibletravelriskevent.md)
 * [来自可疑 IP 地址的登录](suspiciousipriskevent.md)
-* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)有关风险事件的完整信息, 请参阅[Azure AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法

@@ -4,12 +4,13 @@ description: 根据行和列编号获取包含单个单元格的 range 对象。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 29fb7c4d487dc9d6bfe029a5156278fb9aacf025
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 9dffd75ed5e70e373f824d11fdcc287ce09f051a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337166"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991945"
 ---
 # <a name="range-cell"></a>Range:单元格
 
@@ -44,7 +45,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|row|数字|要检索的单元格的行号。从零开始编制索引。|
+|row|number|要检索的单元格的行号。从零开始编制索引。|
 |column|number|要检索的单元格的列号。从零开始编制索引。|
 
 ## <a name="response"></a>响应

@@ -4,12 +4,13 @@ description: 创建团队的副本。 此操作还会创建相应组的副本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a78312d755befccff6e4b12cc0ba432e4754317
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 892a6de6dd191b43fe139acf7f8340fd14c8da5a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330591"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990846"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -88,7 +89,7 @@ Content-Type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",
   "truncated": true,

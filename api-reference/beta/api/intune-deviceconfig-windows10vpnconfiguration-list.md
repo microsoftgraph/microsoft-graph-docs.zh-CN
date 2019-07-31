@@ -4,12 +4,13 @@ description: 列出 windows10VpnConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 609ac4ca5a2ebadf81a75492c4190f778c411f59
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a6be4f64e412fde1e09fbb1173f6b7043defc5bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977903"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975128"
 ---
 # <a name="list-windows10vpnconfigurations"></a>列出 windows10VpnConfigurations
 

@@ -4,12 +4,13 @@ description: 获取使用情况趋势，即组织中用户召开和组织的会�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 897e8e7a513fd9abd2d72af3f994ff684f10e295
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fe785f6a86a885baddf8156df4cd07d038cee1c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872184"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991889"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 

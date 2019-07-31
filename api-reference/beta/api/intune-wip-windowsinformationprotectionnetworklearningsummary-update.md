@@ -4,12 +4,13 @@ description: 更新 windowsInformationProtectionNetworkLearningSummary 对象的
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a22e942cd47122939050277be7a7e2661db3bf5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6e2dc00fc79a5e8f64177e8f250ebf075740ee48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990426"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979146"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>更新 windowsInformationProtectionNetworkLearningSummary
 

@@ -4,12 +4,13 @@ description: 读取 groupPolicyPresentationListBox 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95fc56d9f49a17952e30a3bbd5f76720e338c1a9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: f17378ba2455766d792a0ca7033b2782a478dfcc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989467"
 ---
 # <a name="get-grouppolicypresentationlistbox"></a>获取 groupPolicyPresentationListBox
 

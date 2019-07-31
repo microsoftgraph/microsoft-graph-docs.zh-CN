@@ -4,12 +4,13 @@ description: 使用其索引获取 border 对象
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f8ee7b224cd2331984d35cf5134996f589a6d84c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: e95c12bbfc1b6bfe68b97e75ee0acb15549114be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978348"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 

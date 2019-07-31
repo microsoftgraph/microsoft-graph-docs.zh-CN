@@ -4,12 +4,13 @@ description: 列出 networkManagementCondition 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6550024d8b3f9f229e21ccbbe8db69ee65e250a9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5e3a1c2714abcd68d1f569383f3a01e69dfec012
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984959"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990090"
 ---
 # <a name="list-networkmanagementconditions"></a>列出 networkManagementConditions
 

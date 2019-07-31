@@ -4,12 +4,13 @@ description: 更新 importedWindowsAutopilotDeviceIdentity 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45665498ceb3b1ec52fa7f56bb3e4abd6013cae5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 9631e2c44e89adc14e37872f8e837ce756777e74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729990"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980952"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Update importedWindowsAutopilotDeviceIdentity
 

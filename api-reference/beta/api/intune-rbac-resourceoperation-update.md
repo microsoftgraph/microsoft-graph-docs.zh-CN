@@ -4,12 +4,13 @@ description: 更新 resourceOperation 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be70c6a09d15a431cda97c9ec0fab8fef7b9caf1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8692532a235730c207da2e0fcc50abd67c1becb6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980028"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 

@@ -4,12 +4,13 @@ description: 执行排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aab0668a4218298a83ab580404c79d688bf1a703
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c06825da7f29fcfa3adb409f391d62208461400d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990881"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 

@@ -4,12 +4,13 @@ description: 更新 circularGeofenceManagementCondition 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d175c4ada491c7162dae7edc4af461c56f6e69e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6f32e1416bf956b34dd5ca0b7c31d31ed552b933
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964778"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990405"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 

@@ -4,12 +4,13 @@ description: 更新 groupPolicyDefinitionFile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8343106ee53e4e2e038200cd897224d9a0d9d18f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: d808de8d49cf7c8a2b148b8e75bf1530050dc618
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989880"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
 

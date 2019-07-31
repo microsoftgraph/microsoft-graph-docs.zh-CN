@@ -2,12 +2,15 @@
 title: auditActivityInitiator 资源类型
 description: 标识启动活动的资源对象。 发起方可以是用户、应用程序或系统 (被视为应用程序)
 localization_priority: Normal
-ms.openlocfilehash: 14c92a4df42c3d8dbcd6836695df8d6caac3cf87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2f76c071efd10d2d43887bdd5dd04df0d2aa86d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974225"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 标识启动活动的资源对象。 发起方可以是用户、应用程序或系统 (被视为应用程序)

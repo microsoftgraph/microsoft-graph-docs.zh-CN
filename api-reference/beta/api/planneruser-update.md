@@ -4,12 +4,13 @@ description: 更新 plannerUser 对象的属性。 您可以使用此操作在�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 77f76a8b2324fd287cc3f73d1aa78a99accb4ea2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 269741aff4f17a0855bda4681ae49799c03cd4f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992169"
 ---
 # <a name="update-planneruser"></a>更新 plannerUser
 
@@ -34,7 +35,7 @@ PATCH /me/planner
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | Bearer {code}。 必需。|
 | If-Match  | 要更新的**plannerUser**的最新已知 ETag 值。 必需。|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +52,7 @@ PATCH /me/planner
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面展示了示例请求。 此请求将 id 为 "jd8S5gOaFk2S8aWCIAJz42QAAxtD" 的计划 "下一次发布讨论" 添加为用户的收藏夹, 并从 "收藏夹计划" 列表中删除 id 为 "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" 的计划。
+下面展示了示例请求。 此请求将 ID 为 "jd8S5gOaFk2S8aWCIAJz42QAAxtD" 的计划 "下一次发布讨论" 添加为用户的收藏夹, 并从 "收藏夹计划" 列表中删除 ID 为 "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" 的计划。
 它还更新了计划 "jd8S5gOaFk2S8aWCIAJz42QAAxtD" 的上次查看时间。
 <!-- {
   "blockType": "ignored",

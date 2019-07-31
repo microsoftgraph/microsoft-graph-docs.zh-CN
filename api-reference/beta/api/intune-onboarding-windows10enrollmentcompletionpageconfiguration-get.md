@@ -4,12 +4,13 @@ description: 读取 windows10EnrollmentCompletionPageConfiguration 对象的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f86af3d402ce178cc724cffbf9c6d90a540466e1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6ddda0dbf9a66fff1b29509ab3bfea639997dc07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980486"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980196"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>获取 windows10EnrollmentCompletionPageConfiguration
 

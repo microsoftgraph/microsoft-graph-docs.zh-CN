@@ -4,12 +4,13 @@ description: 更新 rangefont 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f25386722996eacece97bd83ca23e5b0dc61e4e2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b26da12468f0f348b13e8ca53fe9fa92d6104398
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978248"
 ---
 # <a name="update-rangefont"></a>更新 rangefont
 

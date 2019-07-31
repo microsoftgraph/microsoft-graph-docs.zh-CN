@@ -4,12 +4,13 @@ description: 删除日程中的班次轮换。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 480cee2ec773b9789673079901c1f8ad36e31e83
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6c6c918d32cde14701688d318797546ae10a64ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869818"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991350"
 ---
 # <a name="delete-shift"></a>删除班次
 

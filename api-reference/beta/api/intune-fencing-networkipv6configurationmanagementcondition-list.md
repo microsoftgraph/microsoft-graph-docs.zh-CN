@@ -4,12 +4,13 @@ description: 列出 networkIPv6ConfigurationManagementCondition 对象的属性�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1450656360654dc4e46899adb57a308f00dbd44b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2e38a6fa5c1c36fc215c82757e4868e84c440a68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990132"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>列出 networkIPv6ConfigurationManagementConditions
 

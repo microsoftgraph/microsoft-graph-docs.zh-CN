@@ -4,12 +4,13 @@ description: 传递优化最大缓存大小类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 947609568cb5fe7d035fadb00580d21bfa79a619
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: aec55f527c461e58b08df0d155ed8e8620a02eaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970715"
 ---
 # <a name="deliveryoptimizationmaxcachesize-resource-type"></a>deliveryOptimizationMaxCacheSize 资源类型
 

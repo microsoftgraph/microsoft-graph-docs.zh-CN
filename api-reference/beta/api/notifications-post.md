@@ -3,12 +3,14 @@ title: 创建和发送通知
 description: '创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中, 并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: a5ed743e93a5cafcb7ee919acbbcee5f2734a5de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063451"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992645"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

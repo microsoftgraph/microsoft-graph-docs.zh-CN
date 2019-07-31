@@ -4,12 +4,13 @@ description: 更新 groupPolicyPresentationCheckBox 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f560061c4b7717a1c8cd420a222aefd4dd1c405
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1581a59291006fd4ca693fa573c735f8097d7f56
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983727"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989740"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>更新 groupPolicyPresentationCheckBox
 

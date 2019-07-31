@@ -4,12 +4,13 @@ description: 读取 windows10NetworkBoundaryConfiguration 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2e16061ec8b7a09c327d3a0407f061c7a361771
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c4dad41e7e028b766fa517881e85d9dff9d4a3b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978085"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977347"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>获取 windows10NetworkBoundaryConfiguration
 

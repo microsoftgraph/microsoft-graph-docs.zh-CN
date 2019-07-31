@@ -3,12 +3,14 @@ title: 删除开放扩展
 description: '从指定的资源实例中删除开放扩展（openTypeExtension 对象）。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 8d2d5b208908509b41a3166e6ee5b1fe435b6ce5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 36b90370237edfd225dd182a65487165b86e74fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878441"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992610"
 ---
 # <a name="delete-open-extension"></a>删除开放扩展
 

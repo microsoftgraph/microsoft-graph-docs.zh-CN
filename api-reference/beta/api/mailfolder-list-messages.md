@@ -4,12 +4,13 @@ description: 列出登录用户的邮箱中的所有邮件, 或邮箱或驱动�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 71f07c458cb7fef2c35e87f26c3ce75a9640ba0a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8baa9559271c6bdf4c8d4577aeaee972b53beed3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880004"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992995"
 ---
 # <a name="list-messages"></a>列出邮件
 

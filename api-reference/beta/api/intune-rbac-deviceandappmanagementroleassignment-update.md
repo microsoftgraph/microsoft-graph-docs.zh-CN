@@ -4,12 +4,13 @@ description: 更新 deviceAndAppManagementRoleAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 932c3a2ff17f072276610fb4ef29342261ededb6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a9848c5d0a9d545444d88f41c489f54d9ba2b502
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980154"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>更新 deviceAndAppManagementRoleAssignment
 

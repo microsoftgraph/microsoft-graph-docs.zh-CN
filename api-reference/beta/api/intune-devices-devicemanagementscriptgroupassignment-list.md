@@ -4,12 +4,13 @@ description: 列出 deviceManagementScriptGroupAssignment 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5aaa72cdbcadc99e2fe30728437abf1c2bec14a8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3c1a30941db4f93839df158960878afb858edac0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958842"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981540"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>列出 deviceManagementScriptGroupAssignments
 

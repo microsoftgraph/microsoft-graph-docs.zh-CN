@@ -4,12 +4,13 @@ description: 在默认笔记本的默认分区中创建新的 OneNote 页面。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: da37b32d3a1559292c47fa58a464b32d7266b19c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 4e70a113cd3a5f43e7a904d49a00840708bb4333
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333081"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992652"
 ---
 # <a name="create-page"></a>创建页面
 

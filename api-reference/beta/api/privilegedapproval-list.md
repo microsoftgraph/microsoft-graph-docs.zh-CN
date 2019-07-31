@@ -2,12 +2,15 @@
 title: 列出 privilegedApproval
 description: 检索 privilegedapproval 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 13302de9547800e5befc8b03c9adc3c8b38c36f6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 54b2d6bb593e8d733a883b77a735a151d71dcd98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875937"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978812"
 ---
 # <a name="list-privilegedapproval"></a>列出 privilegedApproval
 

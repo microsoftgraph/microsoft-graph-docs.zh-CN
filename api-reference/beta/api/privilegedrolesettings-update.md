@@ -2,12 +2,15 @@
 title: 更新 privilegedRoleSettings
 description: 更新给定角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 7142cd14bd81537d33fa2764b9801ade5247181f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b097b0831ed33e826ae62a413a1b3d9f2227b45e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978656"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 

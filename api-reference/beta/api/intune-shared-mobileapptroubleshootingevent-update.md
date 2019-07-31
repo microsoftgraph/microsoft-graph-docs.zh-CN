@@ -4,16 +4,17 @@ description: 介绍了适用于 Intune 的 Microsoft Graph API 的更新 mobileA
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b94a62e896bda2cf6a39b065df0fd698924a4c21
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 58e41160bac079b131b1afe462ddb1309e9137b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979643"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

@@ -2,12 +2,15 @@
 title: 删除策略
 description: 删除策略。
 localization_priority: Normal
-ms.openlocfilehash: 6467259fc0cca067deb25bc561ddf18f54760e92
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 74a937c58a0662c34547f23587206c42d5801fb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337458"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992176"
 ---
 # <a name="delete-policy"></a>删除策略
 

@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationListBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebbd214e4ba46e3c02d7ca9f69730e4ec06262d6
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 6a735edcafcdea881ca0f0291694a7a89a9f8c4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721974"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989530"
 ---
 # <a name="create-grouppolicypresentationlistbox"></a>创建 groupPolicyPresentationListBox
 

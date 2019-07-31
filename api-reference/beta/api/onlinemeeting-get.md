@@ -4,12 +4,13 @@ description: 检索**onlineMeeting**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b1c704ad0ebe417c9e5bf6cbf0a5db64e719fab
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d823d3291e125274c7f2c9ae06be7362ed774701
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992687"
 ---
 # <a name="get-online-meeting"></a>获取联机会议
 

@@ -4,12 +4,13 @@ description: 音频路由组在多方对话中的参与者之间存储专用音�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db5f94f9ac500dfeb97c6eb787783e9f749ae507
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328249"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974274"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 

@@ -4,12 +4,13 @@ description: 更新 groupPolicyConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3feb1799a76c173970bcc7de4c90c1ffd3ff9954
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2056cbe36978d1f0f2e290e414c93c8fe3d50531
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990006"
 ---
 # <a name="update-grouppolicyconfiguration"></a>更新 groupPolicyConfiguration
 

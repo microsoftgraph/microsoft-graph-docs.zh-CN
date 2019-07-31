@@ -4,12 +4,13 @@ description: '创建答复邮件的草稿以包含注释或更新任何邮件属
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a2a30e01c5d294bac6a66584516ea20cb5f0a7fd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b24011e377fca25343096d6729c4f68ea3179996
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879735"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992925"
 ---
 # <a name="message-createreply"></a>message: createReply
 

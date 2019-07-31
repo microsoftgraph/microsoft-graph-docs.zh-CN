@@ -4,16 +4,17 @@ description: 列出 deviceCategory 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e20c9f31c5174dfc60d8d589bae1a5f51de8972a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 2fd109d2f7217ca3716f05eabf6ec064f5c12632
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993646"
 ---
 # <a name="list-devicecategories"></a>列出 deviceCategories
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

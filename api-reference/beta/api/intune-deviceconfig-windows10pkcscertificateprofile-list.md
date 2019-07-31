@@ -4,12 +4,13 @@ description: 列出 windows10PkcsCertificateProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4581ea5967a37ce3f24b102ab3198db16a238402
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 493a533c7549834f7fcd07c8290c96638cb060c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962426"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975324"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>列出 windows10PkcsCertificateProfiles
 

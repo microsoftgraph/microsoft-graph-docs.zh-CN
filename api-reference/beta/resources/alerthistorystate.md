@@ -4,12 +4,13 @@ description: 存储对警报所做的更改。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9467da6f5b088e9b1fadd3797a8b10f4b6e820db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339149"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974421"
 ---
 # <a name="alerthistorystate-resource-type"></a>alertHistoryState 资源类型
 
@@ -23,8 +24,8 @@ ms.locfileid: "33339149"
 |:-------------|:------------|:------------|
 |appId|String| 向警报提交更新 (修补程序) 的呼叫应用程序的应用程序 ID。 应从身份验证令牌中提取 appId, 并且调用应用程序不手动输入该 appId。 |
 |assignedTo|String| 向其分配了警报的用户的 UPN (注意: alert。分配程序仅存储最后一个 value/UPN)。 |
-|comments|String 集合|登录用户输入的注释。|
-|征求|String| 此更新中有关通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
+|comments|字符串集合|登录用户输入的注释。|
+|反馈|String| 此更新中有关通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
 |status|String| 警报状态值 (如果已更新)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`、`dismissed`。|
 |updatedDateTime|DateTimeOffset| 通知更新的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |user|String| 更新了警报的已登录用户 (在用户/委派身份验证模式下) 中的 UPN。 |

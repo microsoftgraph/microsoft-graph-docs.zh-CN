@@ -1,19 +1,22 @@
 ---
 title: businessFlowTemplate 资源类型
-description: 在 azure ad access 评论功能中, `businesFlowTemplate`表示 azure ad 业务流模板。 模板的标识符 (如审阅组的来宾成员) 是由呼叫者在创建访问评审时提供的。
+description: 在 Azure AD access 评论功能中, `businesFlowTemplate`表示 azure ad 业务流模板。 模板的标识符 (如审阅组的来宾成员) 是由呼叫者在创建访问评审时提供的。
 localization_priority: Normal
-ms.openlocfilehash: 0cca72bc8ccd372cdaf9952b385bc63f81b0631d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6890ed724c1a71c69a881ce0e2e70675b3537520
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973487"
 ---
 # <a name="businessflowtemplate-resource-type"></a>businessFlowTemplate 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 azure ad [access 评论](accessreviews-root.md)功能中, `businesFlowTemplate`表示 azure ad 业务流模板。 模板的标识符 (如审阅组的来宾成员) 是由呼叫者在创建访问评审时提供的。
+在 Azure AD [access 评论](accessreviews-root.md)功能中, `businesFlowTemplate`表示 azure ad 业务流模板。 模板的标识符 (如审阅组的来宾成员) 是由呼叫者在创建访问评审时提供的。
 
 当全局管理员 onboards 租户使用访问评论功能时, 将自动生成业务流模板对象。  无法创建其他业务流模板。
 
@@ -31,7 +34,7 @@ ms.locfileid: "33338800"
 | `displayName`            |`String`                | 业务流模板的名称                                                             |
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。
 

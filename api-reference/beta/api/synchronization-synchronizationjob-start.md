@@ -2,14 +2,15 @@
 title: 启动 synchronizationJob
 description: 启动现有的同步作业。 如果作业处于暂停状态, 它将继续处理暂停的点处的更改。 如果作业在隔离中, 隔离状态将被清除。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a06edb983a4efd1ccbd9ab7a6f2f3f88507a2181
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3d65c4c80f2369c5668d890517106b6b53c40b4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869293"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977792"
 ---
 # <a name="start-synchronizationjob"></a>启动 synchronizationJob
 

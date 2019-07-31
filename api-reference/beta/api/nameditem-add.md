@@ -2,12 +2,15 @@
 title: 添加已命名项
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 localization_priority: Normal
-ms.openlocfilehash: 2657326b774d111adbb0012f983eb99acccb15f7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a6d3f18043ef6a922f0389b9f3afc2f82af4b0b8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992771"
 ---
 # <a name="add-named-item"></a>添加已命名项
 

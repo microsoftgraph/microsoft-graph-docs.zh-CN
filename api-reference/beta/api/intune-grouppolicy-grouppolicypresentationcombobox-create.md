@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationComboBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a183ee75a76b9a2d7f0519d4b5bd5f5f73600be5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5af7fee426a3b0630cee30ad7638d622e82af93b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984994"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989754"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>创建 groupPolicyPresentationComboBox
 

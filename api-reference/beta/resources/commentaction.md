@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: CommentAction 资源提供有关对某个项所做的注释活动的信息。
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: c472a0b1b992c91b60174859e4900ffcee04c007
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7782c6e4dd30b503a9be88737ef6bd2dbad109b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341456"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973256"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction 资源类型
 

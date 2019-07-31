@@ -4,12 +4,13 @@ description: 更新 dataSharingConsent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 584830ca0733c6526a4ef44c6bd277bfd952e8fe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 946b4bbb36e34d9c1eb59774b8a7a0ccc93f86c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959192"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981694"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
 

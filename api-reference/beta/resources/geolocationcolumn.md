@@ -1,21 +1,23 @@
 ---
 author: kevklam
-ms.author: kevinlam
+description: ColumnDefinition 资源上的 geolocationColumn 指示该列包含一个地理位置。
 ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal
-ms.openlocfilehash: 1a7af7746dcfddcc67c4bfe9831bee9acfe82152
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7ab8617ea48e02a1deca29e4aed725a938a5a07c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333717"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973518"
 ---
 # <a name="geolocationcolumn-resource-type"></a>geolocationColumn 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[columnDefinition](columndefinition.md)资源上的**geolocationColumn**指示该列包含一个地理位置。
+[ColumnDefinition](columndefinition.md)资源上的**geolocationColumn**指示该列包含一个地理位置。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -29,7 +31,7 @@ ms.locfileid: "33333717"
 
 ## <a name="properties"></a>属性
 
-**geolocationColumn**资源不包含任何属性。
+**GeolocationColumn**资源不包含任何属性。
 
 <!--
 {

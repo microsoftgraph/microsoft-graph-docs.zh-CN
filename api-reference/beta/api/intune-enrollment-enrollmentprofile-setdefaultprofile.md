@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0666529e2e858ff0e10e5151b56295b1ebbe1917
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cea1ab69347cb0e6c60769b9d8cb8254b2b8ebec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981543"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980990"
 ---
 # <a name="setdefaultprofile-action"></a>setDefaultProfile 操作
 

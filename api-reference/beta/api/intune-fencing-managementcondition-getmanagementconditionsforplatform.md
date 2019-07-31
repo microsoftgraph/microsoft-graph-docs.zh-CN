@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ade52245e67ce6628a9ff0cdf580523247f8e671
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 638d6e968f74f5abc05fe0897021c9b6ada54d68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990356"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>getManagementConditionsForPlatform 函数
 

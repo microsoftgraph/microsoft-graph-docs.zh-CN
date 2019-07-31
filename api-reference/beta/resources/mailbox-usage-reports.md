@@ -4,12 +4,13 @@ description: 您可以使用邮箱及其活动级别 (主要基于发送和接�
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 324f936e497142b5f8bab5ea6607005ea1c35c2b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 83530708465673e61c22e087179c9de5a9070c96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345108"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966977"
 ---
 # <a name="mailbox-usage-reports"></a>邮箱使用情况报告
 
@@ -23,7 +24,7 @@ ms.locfileid: "33345108"
 
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [获取邮箱详细信息](../api/reportroot-getmailboxusagedetail.md) | Stream          | [mailboxUsageDetail](../resources/mailboxusagedetail.md) | 获取邮箱使用情况的详细信息。         |
+| [获取邮箱详细信息](../api/reportroot-getmailboxusagedetail.md) | 流          | [mailboxUsageDetail](../resources/mailboxusagedetail.md) | 获取邮箱使用情况的详细信息。         |
 | [获取邮箱数](../api/reportroot-getmailboxusagemailboxcounts.md) | Stream          | [mailboxUsageMailboxCounts](../resources/mailboxusagemailboxcounts.md) | 获取组织中的用户邮箱总数和报表周期内的每日活跃邮箱数。 如果用户发送或阅读任何电子邮件，则将邮箱视为活跃邮箱。 |
 | [获取配额状态邮箱数](../api/reportroot-getmailboxusagequotastatusmailboxcounts.md) | Stream          | [mailboxUsageQuotaStatusMailboxCounts](../resources/mailboxusagequotastatusmailboxcounts.md) | 获取每个配额类别中的用户邮箱数。 |
 | [获取存储](../api/reportroot-getmailboxusagestorage.md) | Stream          | [mailboxUsageStorage](../resources/mailboxusagestorage.md) | 获取组织使用的存储空间。 |

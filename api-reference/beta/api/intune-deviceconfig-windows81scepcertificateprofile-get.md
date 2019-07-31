@@ -4,12 +4,13 @@ description: 读取 windows81SCEPCertificateProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8444f848d0b151f728265d6418fc956dc534dcfe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0344fd8c4f3636374b18cde3db1a39eae601d924
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977777"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977123"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>获取 windows81SCEPCertificateProfile
 

@@ -2,12 +2,15 @@
 title: " controlScore 资源类型"
 description: 此资源包含单个控件的租户分数和说明。
 localization_priority: Normal
-ms.openlocfilehash: 34e94128ff3993a01d37770bea1ad046f936405f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 89e448d828f1f7caef73b14586b06d1df238f100
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973931"
 ---
 #  <a name="controlscore-resource-type"></a>controlScore 资源类型
 

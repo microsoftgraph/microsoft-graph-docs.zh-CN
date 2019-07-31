@@ -4,12 +4,13 @@ description: 设置设备的设备名称。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 757b2c2e78fb9625f6b335dab0e510d406cd366f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ba3b46fcb2e7680b58feaeb397101bcb1910d63b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958268"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981351"
 ---
 # <a name="setdevicename-action"></a>setDeviceName 操作
 

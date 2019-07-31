@@ -4,12 +4,13 @@ description: 读取 groupPolicyPresentationDropdownList 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fe1b54ee57b33d2de7c5d78d8011270607a07a9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d13884a30bbe63da3dca2bc0499f0dfb50802878
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964743"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989572"
 ---
 # <a name="get-grouppolicypresentationdropdownlist"></a>获取 groupPolicyPresentationDropdownList
 

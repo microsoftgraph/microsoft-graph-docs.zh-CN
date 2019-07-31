@@ -4,12 +4,13 @@ description: 删除 resourceOperation。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac1d98c54ad9b951ec9505f3058dbf2c4c60d3db
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a4100e734d8b76479022e0a390d73854d092ac1d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980063"
 ---
 # <a name="delete-resourceoperation"></a>删除 resourceOperation
 

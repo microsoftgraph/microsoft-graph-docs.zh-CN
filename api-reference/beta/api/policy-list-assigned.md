@@ -2,12 +2,15 @@
 title: 为应用程序或服务主体分配的列表策略
 description: 检索分配给应用程序或服务主体的策略对象。
 localization_priority: Normal
-ms.openlocfilehash: 24833a42a8b3df2dfde6894cbcdae89a20c6e1cc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 06eb805b6983c72c14c86780f081554611906181
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332218"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992050"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>为应用程序或服务主体分配的列表策略
 

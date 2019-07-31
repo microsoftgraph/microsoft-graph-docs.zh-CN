@@ -2,12 +2,15 @@
 title: 电话资源类型
 description: 表示电话号码。
 localization_priority: Normal
-ms.openlocfilehash: 643b146f95fcc85be530ce7907c872f56033240e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ad7438e532420d15f14096a0843b42456a4b1fbc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344952"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966113"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 
@@ -19,7 +22,7 @@ ms.locfileid: "33344952"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|数字|string|电话号码。|
+|number|string|电话号码。|
 |type|String|电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

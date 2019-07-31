@@ -2,12 +2,15 @@
 title: 分配策略
 description: 将策略分配给应用程序或服务主体。
 localization_priority: Normal
-ms.openlocfilehash: c690aa85d7471aa6ef5da6d1281dfc679e63a09f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: af128019d35838dd5873de713f011fd5b7f1c6ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337542"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978887"
 ---
 # <a name="assign-policy"></a>分配策略
 

@@ -4,12 +4,13 @@ description: 读取 targetedManagedAppProtection 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b95f13803692fabb8774c5282be6b4b6218596b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 921b0301c8a3e3f78db245d0e53fec7cee5b309e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987472"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980462"
 ---
 # <a name="get-targetedmanagedappprotection"></a>获取 targetedManagedAppProtection
 

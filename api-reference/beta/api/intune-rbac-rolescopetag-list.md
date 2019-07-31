@@ -4,12 +4,13 @@ description: 列出 roleScopeTag 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa520f3d7cb873a12508d0e75744ce923994406f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 178ed3ea09358255482ce95fbab51b584cc53bcf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988424"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993814"
 ---
 # <a name="list-rolescopetags"></a>列出 roleScopeTags
 

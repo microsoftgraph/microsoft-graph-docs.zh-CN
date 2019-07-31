@@ -4,12 +4,13 @@ description: '从团队中的指定通道中删除 (unpins) 选项卡。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f2c6ff92d01e116a33d9fbacf1c9ff4037ada6f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 25214388b270ade11a2e4e78ef102f2efa043aaa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977459"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -57,7 +58,7 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 ```http
 HTTP/1.1 204 No Content
 ```

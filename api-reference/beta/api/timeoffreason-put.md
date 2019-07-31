@@ -4,12 +4,13 @@ description: 替换现有的 timeOffReason。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d546c78cf9fd243b936f04b6368ef82231c01e5f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 587742d146ef0d622fa3eb221c0cfbd5e670211f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867991"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990636"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 

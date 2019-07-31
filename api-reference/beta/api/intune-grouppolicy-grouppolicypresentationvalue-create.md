@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationValue 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed39804e4a00e681d0d0ca1ea45d53b56e754951
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4c3c50b5136345673dd42310607ac7c373cb7398
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989299"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>创建 groupPolicyPresentationValue
 

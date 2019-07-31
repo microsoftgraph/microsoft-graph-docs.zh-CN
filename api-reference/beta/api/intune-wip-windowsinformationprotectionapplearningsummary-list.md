@@ -4,12 +4,13 @@ description: 列出 windowsInformationProtectionAppLearningSummary 对象的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41dd4e12472e118e9b710a5ae8e9773bb49de72c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e1b58a6264a9809bfc4d3c3034dfd22323ea2d75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979160"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>列出 windowsInformationProtectionAppLearningSummaries
 

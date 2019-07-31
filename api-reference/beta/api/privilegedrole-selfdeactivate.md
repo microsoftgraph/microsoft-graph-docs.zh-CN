@@ -2,12 +2,15 @@
 title: 'privilegedRole: selfDeactivate'
 description: 停用分配给请求者的角色。
 localization_priority: Normal
-ms.openlocfilehash: 3161229eb29030691b96c7349e7af0cc2fe5a338
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 534d0c178a0c487050a39fa6f1f92a948d477983
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978784"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 

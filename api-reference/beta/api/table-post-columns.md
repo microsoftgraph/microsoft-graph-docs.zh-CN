@@ -4,12 +4,13 @@ description: 使用此 API 创建新的 TableColumn。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c7656fb96ce90431441d769196428edc85250614
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6d843ae7acc71f9d519bf0c59ab056bf0c393254
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868852"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991147"
 ---
 # <a name="create-tablecolumn"></a>创建 TableColumn
 

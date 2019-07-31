@@ -4,12 +4,13 @@ description: 更新 appleVppTokenTroubleshootingEvent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5538d7736239d9902ab94739c67f3a757f822fa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1f1ffc170ee3914fad6db7f19188e964f0342e83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990909"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979412"
 ---
 # <a name="update-applevpptokentroubleshootingevent"></a>更新 appleVppTokenTroubleshootingEvent
 

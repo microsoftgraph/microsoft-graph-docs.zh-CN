@@ -5,12 +5,13 @@ title: 权限资源类型
 description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e43889f3dcab5c887cffe58cfcc4ac632389f980
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 3f74ecd71a9f411a336c7fb4b5720208ca0ffa42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932462"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966179"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 

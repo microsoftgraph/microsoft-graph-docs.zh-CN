@@ -4,12 +4,13 @@ description: 表示会议请求的邮件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ead65f036fe5537b7e349124b2771eff575be22f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3d691b814517a6180a42ecd13954e019cc75be8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973586"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest 资源类型
 
@@ -83,7 +84,7 @@ ms.locfileid: "33333942"
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。|
 |bodyPreview|String|邮件正文中的前 255 个字符。|
-|类别|String collection|与邮件关联的类别。|
+|categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|字符串|邮件的版本。|
 |conversationId|String|电子邮件所属的对话的 ID。|
@@ -104,7 +105,7 @@ ms.locfileid: "33333942"
 |meetingMessageType|String| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTentativelyAccepted`、`meetingDeclined`。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的上一次结束时间。|
-|previousLocation|[位置](location.md)|所请求会议的上一个位置。|
+|previousLocation|[Location](location.md)|所请求会议的上一个位置。|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的上一次开始时间。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
@@ -123,7 +124,7 @@ ms.locfileid: "33333942"
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md) 集合| 只读。可为 Null。|
 |event|[事件](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
-|extensions|[Extension](extension.md) 集合| 只读。 可为 Null。|
+|extensions|[扩展](extension.md)集合| 只读。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
@@ -135,7 +136,7 @@ ms.locfileid: "33333942"
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。 |
 |[删除](../api/eventmessage-delete.md) | None |更新 eventMessage 对象。 |
 |[复制](../api/message-copy.md)|[邮件](message.md)||
-|[createForward](../api/message-createforward.md)|[邮件](message.md)||
+|[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[邮件](message.md)||
 |[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)||
 |[转发](../api/message-forward.md)|无|转发邮件。 然后邮件保存在已发送邮件文件夹中。|

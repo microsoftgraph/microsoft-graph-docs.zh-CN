@@ -2,12 +2,15 @@
 title: importStatusModel 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: fc1b0271d941b2e91d5b7ecbede9222de34a715e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 917f83f005ba682d54722d51feea3f7ff872b0f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340049"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973484"
 ---
 # <a name="importstatusmodel-resource-type"></a>importStatusModel 资源类型
 

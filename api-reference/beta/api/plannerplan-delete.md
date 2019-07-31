@@ -4,12 +4,13 @@ description: 删除 **plannerPlan**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 56d11c9b50e02b99c4887a44b78748b7622614f9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 62875ee4f66600a6ce4a1c5849d8e41508ac08e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876457"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992225"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 

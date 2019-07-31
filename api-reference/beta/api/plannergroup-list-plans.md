@@ -4,12 +4,13 @@ description: 检索由 group 对象所拥有的 **plannerPlan** 对象的列表�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: ed33d81167e8614c222f66d2a60707e33593f0dd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d062f7b18f8f1d1b7e0a79b948385a08a6f0ed1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876453"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979072"
 ---
 # <a name="list-plans"></a>列出计划
 

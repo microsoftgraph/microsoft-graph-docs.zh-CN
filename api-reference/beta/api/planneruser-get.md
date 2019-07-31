@@ -4,12 +4,13 @@ description: '检索 plannerUser 对象的属性和关系。 返回的属性包�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2ebf13373b0d09443d9f7ecbdc3a09f22aa93f38
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 4bc0bf1ddd07a1f03baa871bd96bf2193fae9e4c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337612"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992204"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 
@@ -35,7 +36,7 @@ GET /users/<id>/planner
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

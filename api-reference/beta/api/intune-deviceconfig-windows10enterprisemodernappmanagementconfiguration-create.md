@@ -4,12 +4,13 @@ description: 创建新的 windows10EnterpriseModernAppManagementConfiguration �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6a0c514543b322dd577ff9780d8fa82a77351bc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7ac0439fc996df50b1b043d940cb1c4569957665
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962608"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976858"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>创建 windows10EnterpriseModernAppManagementConfiguration
 

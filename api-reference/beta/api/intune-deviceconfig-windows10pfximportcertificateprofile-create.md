@@ -4,12 +4,13 @@ description: 创建新的 windows10PFXImportCertificateProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c7f77fda6958970a12368a4d38e3ead0d3a45c6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ea708db50bd163c669c5199f46db1d6a98d6e87d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977249"
 ---
 # <a name="create-windows10pfximportcertificateprofile"></a>创建 windows10PFXImportCertificateProfile
 

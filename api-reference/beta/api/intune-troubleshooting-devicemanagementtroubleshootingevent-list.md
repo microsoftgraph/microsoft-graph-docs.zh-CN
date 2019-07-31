@@ -4,12 +4,13 @@ description: 列出 deviceManagementTroubleshootingEvent 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90dad5df3b0ce97fe6a93a2e0ce992e6dabcc9ae
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 32dcd1eb8d81ed059ebf130f812ccfcbf9acb8bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979426"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>列出 deviceManagementTroubleshootingEvents
 

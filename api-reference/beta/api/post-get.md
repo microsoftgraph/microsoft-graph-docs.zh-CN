@@ -4,12 +4,13 @@ description: '获取指定的线程中帖子的属性和关系。 您可以同�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 13564d8c6e5411f753ce26fd7cf63fc6a2a0fe0a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f03251ecb6ba770bf2057ab95ecac91ab0d8f2c9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992071"
 ---
 # <a name="get-post"></a>获取帖子
 

@@ -2,12 +2,15 @@
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: bf4bbd61a81b1ac83874054bdfc6dfd7f59bdb30
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 613ebaffd381e222142317b4321924fd505c15e1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978770"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 

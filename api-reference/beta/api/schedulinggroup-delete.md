@@ -4,12 +4,13 @@ description: 通过设置 schedulingGroup 的 isActive 属性将其标记为非�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d09ffdf218f3b687d29b2f14cf8bd7a1b4c91ef6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a440ae114960e5290cf8dcd0293bd2e679585a0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870728"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991630"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 

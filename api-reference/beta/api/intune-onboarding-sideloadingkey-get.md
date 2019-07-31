@@ -4,12 +4,13 @@ description: 读取 sideLoadingKey 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1a2c4d7665adccf60007d02cf47b548b351bd5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f04004e701438bfaad7826aef54706dff52475ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980654"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980301"
 ---
 # <a name="get-sideloadingkey"></a>获取 sideLoadingKey
 

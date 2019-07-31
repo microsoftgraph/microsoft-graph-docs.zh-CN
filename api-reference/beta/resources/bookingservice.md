@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c6cf62320a6cfd8e96455e95e1d17c0621d261f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 5f51ec999f0a2048b8dbcbdd533c609eb5a86757
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328308"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974127"
 ---
 # <a name="bookingservice-resource-type"></a>bookingService 资源类型
 
@@ -30,7 +31,7 @@ ms.locfileid: "33328308"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|defaultDuration|持续时间|服务的默认长度, 以天数、小时数、分钟数和秒数表示。 例如, p11d23h59m 59.999999999999 s。 |
+|defaultDuration|持续时间|服务的默认长度, 以天数、小时数、分钟数和秒数表示。 例如, P11D23H59M 59.999999999999 S。 |
 |defaultLocation|[location](location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
 |defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
@@ -44,7 +45,7 @@ ms.locfileid: "33328308"
 |postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
 |preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
-|staffMemberIds|String 集合|代表提供此服务的[教职员工成员](bookingstaffmember.md)。 |
+|staffMemberIds|String collection|代表提供此服务的[教职员工成员](bookingstaffmember.md)。 |
 
 ## <a name="relationships"></a>关系
 无

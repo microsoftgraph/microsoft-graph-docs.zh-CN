@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
 title: 获取列表的元数据
-description: 返回 [列表] [] 的元数据。
+description: 返回列表的元数据。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b60b5b1d6190738d133a030c96149688fc9fc88b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 417d7a02e58d96831b448f8b5365ce819489e723
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993135"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 

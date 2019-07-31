@@ -4,12 +4,13 @@ description: 列出 managedAppStatusRaw 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a3a0cc53803f94b0f3b38ae8c482ddfdef714a0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0cb8d3b2cf7b1292809dfabb11832a8268e3700e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987138"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980637"
 ---
 # <a name="list-managedappstatusraws"></a>列出 managedAppStatusRaws
 

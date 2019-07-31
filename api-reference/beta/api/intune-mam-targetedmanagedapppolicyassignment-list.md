@@ -4,12 +4,13 @@ description: 列出 targetedManagedAppPolicyAssignment 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef67fd30bffa8140ee97efd294e49a7fd6dc1308
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 296df00030537faec013fe66b3a94e50d91e0af2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986863"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980490"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>列出 targetedManagedAppPolicyAssignments
 

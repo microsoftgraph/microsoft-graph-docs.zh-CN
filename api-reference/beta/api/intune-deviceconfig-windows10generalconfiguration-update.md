@@ -4,12 +4,13 @@ description: 更新 windows10GeneralConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60c9585de891471358eb6a56e5cd91d9b848fd16
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8510ebd4eb42830feae24ab52580e9d474134dbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975978"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975415"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 

@@ -2,12 +2,15 @@
 title: 'privilegedRoleAssignment: makePermanent'
 description: 将角色分配标记为永久。
 localization_priority: Normal
-ms.openlocfilehash: 05a3bf4ac8993ecfaa228ce8e41a279a20bc3c5a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: aa0ac75a74b7bba089b40826e4709f2c557f632e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875677"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978769"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 

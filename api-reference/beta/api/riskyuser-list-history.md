@@ -4,12 +4,13 @@ description: 检索风险历史记录
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e8799e8f5bf2de0f2745a1dc5b09ab17a8066e62
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1770cba0e0acdc8a709cd63308fc5b445fc76dd3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871086"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991728"
 ---
 # <a name="list-history-of-riskyuser"></a>RiskyUser 的列表历史记录
 

@@ -4,12 +4,13 @@ description: Apple 设备的使用者名称格式选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99e2e480091ab877f660d9bdc12de7f83f538b71
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 810d87b9f7eb42a9cb8f64f85f2ede2dc8849a94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971142"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 枚举类型
 

@@ -4,12 +4,13 @@ description: 将分区复制到特定笔记本。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 54e3fbb6fb136c2c0d8491271642d3308fd2d5cb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4f81b701561f7e5bb047e458bb04cdadb87d80de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870553"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991560"
 ---
 # <a name="section-copytonotebook"></a>部分: copyToNotebook
 

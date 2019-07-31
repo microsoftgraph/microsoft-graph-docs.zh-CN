@@ -4,12 +4,13 @@ description: 通信服务器用于在一个批处理中发送多个通知的通�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4497e2e1ba28e7f2d0b203f8f982053c5eb8ae1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 770122387b89e96fdd8dbd9077488a9956fd90f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341443"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973249"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications 资源类型
 

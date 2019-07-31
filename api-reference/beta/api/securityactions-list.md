@@ -4,12 +4,13 @@ description: 检索 securityAction 对象的列表。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 03fc31d87ddc530d384d943c17b6e005d380f2e7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8b8c7c9204f25f573e44171c0da241f390bb72ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870273"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991553"
 ---
 # <a name="list-securityactions"></a>列出 securityActions
 

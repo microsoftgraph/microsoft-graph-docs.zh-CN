@@ -4,12 +4,13 @@ description: 获取表示给定范围的矩形交集的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 25c45abdb526a31700fed68007b123e30c41377a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e107154f6f5737065b62928b212491182fee5021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978418"
 ---
 # <a name="range-intersection"></a>Range:Intersection
 

@@ -2,12 +2,15 @@
 title: 删除程序
 description: 在 "Azure AD access 评论" 功能中, 删除一个程序对象。
 localization_priority: Normal
-ms.openlocfilehash: a772117d5e39015012fabd2c81b9787de7d3e2fd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 0db7db7c33ea7c173e4d14b975baa84b612dc471
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875418"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978586"
 ---
 # <a name="delete-program"></a>删除程序
 

@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 580e4d3d7e363d42a7f828ddd6eaaee0d597806e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fdd22a4ecad1291fc16b493109bf1499bad96dde
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984917"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990062"
 ---
 # <a name="create-grouppolicyconfiguration"></a>创建 groupPolicyConfiguration
 

@@ -4,12 +4,13 @@ description: 启动 "加入" 的请求。  必须与相应的 TeamViewer 帐户�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: deddb0d2ac31fd5d395e58e868d11f73b1f053b0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d0fe8c34ea09e2028e03e7f615fe943cb1760794
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979888"
 ---
 # <a name="beginonboarding-action"></a>beginOnboarding 操作
 

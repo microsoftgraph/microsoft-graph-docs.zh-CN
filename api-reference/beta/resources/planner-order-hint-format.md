@@ -4,12 +4,13 @@ description: '`)'
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 6d88fa821aba48538c102ba439439fe22a4d686f
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: conceptualPageType
+ms.openlocfilehash: 56125d94e94033646251edf5d53d2f8b141af29c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639189"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966067"
 ---
 # <a name="using-order-hints-in-planner"></a>使用规划器中的排序提示
 

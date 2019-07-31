@@ -4,12 +4,13 @@ description: 客户端声明的会议地点条件。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ecc29f65cf8296250c3daceddc8b7b5ca1a88381
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d7202f5ba52b1d3331c954e4c6a937d9bc36ae23
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345223"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966975"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 

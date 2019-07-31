@@ -2,12 +2,15 @@
 title: 删除 servicePrincipal
 description: 删除 servicePrincipal。
 localization_priority: Normal
-ms.openlocfilehash: c604886416eba49ae7bbd8c614ce2200a3bc9948
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a9cc1dd301298f7365b2da81217eb1e8cf2d637a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991462"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 

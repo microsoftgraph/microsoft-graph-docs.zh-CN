@@ -4,12 +4,13 @@ description: 删除 groupPolicyConfigurationAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71a758d1b33bc11a0293dc656b7d8336138bfd24
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 08e5b18039598e96b2caec848f73bc3e6b418e28
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984840"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989992"
 ---
 # <a name="delete-grouppolicyconfigurationassignment"></a>删除 groupPolicyConfigurationAssignment
 
