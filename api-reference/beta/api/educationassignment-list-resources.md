@@ -4,12 +4,13 @@ description: 获取与此工作分配相关联的所有资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 2ba4ba24168e6186fd61d58320763f8361d569f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 2baee0d77afe1d42be9e67a2c45b2edb9fe7e19a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324685"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955652"
 ---
 # <a name="list-educationassignmentresources"></a>列出 educationAssignmentResources
 

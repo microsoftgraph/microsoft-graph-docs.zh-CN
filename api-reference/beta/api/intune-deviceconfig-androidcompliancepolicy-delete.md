@@ -4,12 +4,13 @@ description: 删除 androidCompliancePolicy。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04037232f03a859c5c5bc759ad29affcdc6f45f1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fda173735ee66c5b1718c5d23eff10a6e2034865
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958287"
 ---
 # <a name="delete-androidcompliancepolicy"></a>删除 androidCompliancePolicy
 

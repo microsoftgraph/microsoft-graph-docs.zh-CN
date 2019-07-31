@@ -2,12 +2,15 @@
 title: skypeForBusinessPeerToPeerActivityCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 4baf218ed9398a8f208c4d1d44a28579773dea6f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4075af51edb747146a764f8337e3ab2e4734caa4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523453"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964863"
 ---
 # <a name="skypeforbusinesspeertopeeractivitycounts-resource-type"></a>skypeForBusinessPeerToPeerActivityCounts 资源类型
 
@@ -20,8 +23,8 @@ ms.locfileid: "32523453"
 | video             | Int64  |
 | appSharing        | Int64  |
 | fileTransfer      | Int64  |
-| reportRefreshDate | Date   |
-| reportDate        | Date   |
+| reportRefreshDate | 日期   |
+| reportDate        | 日期   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

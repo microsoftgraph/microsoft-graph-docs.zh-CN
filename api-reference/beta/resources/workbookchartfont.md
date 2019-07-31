@@ -4,12 +4,13 @@ description: 此对象表示 chart 对象的字体属性（字体名称、字体
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b710f6245d093717b257f91c8f98bd9ac8bd03a7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0a0cd29ef679d5534dab2ec38d9814fac5a89d29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348632"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964036"
 ---
 # <a name="workbookchartfont-resource-type"></a>workbookChartFont 资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "33348632"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|布尔|表示字体的加粗状态。|
+|bold|boolean|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|

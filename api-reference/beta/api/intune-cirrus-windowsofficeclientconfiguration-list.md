@@ -4,12 +4,13 @@ description: 列出 windowsOfficeClientConfiguration 对象的属性和关系。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 67fb3d6b5a5c8c9f25b8329ec7a27dd410883670
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 26989bc38c4e4abbf5156bea7b562458e17b867e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933989"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958807"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>列出 windowsOfficeClientConfigurations
 

@@ -4,12 +4,13 @@ description: 计算的洞察力, 可返回围绕用户的项目趋势分析的�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 49f777e77663a4c055e186860f791459db57ca9c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 2d84e2c4470b17b3073856a73d0b8cb7251ea830
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953057"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -67,7 +68,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。 请参阅页面底部的 "未截断的示例" 响应。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。 请参阅页面底部的 "未截断的示例" 响应。
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

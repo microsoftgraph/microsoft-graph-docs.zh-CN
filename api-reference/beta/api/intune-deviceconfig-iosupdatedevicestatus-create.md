@@ -4,12 +4,13 @@ description: 创建新的 iosUpdateDeviceStatus 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bfed8ec9b24353c475b229c4dba92d469691434
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f4a0ce10e9e8f77fa0e26910cde4d3b2e96a0d85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977175"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947814"
 ---
 # <a name="create-iosupdatedevicestatus"></a>创建 iosUpdateDeviceStatus
 

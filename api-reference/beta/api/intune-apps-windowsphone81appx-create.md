@@ -4,12 +4,13 @@ description: 创建新的了 windowsphone81appx 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: faf23911e91fb6f62ec8d9da71169f5263d4c946
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0e410c552b2c9e0595576a3df36387b1841ac2dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973115"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960053"
 ---
 # <a name="create-windowsphone81appx"></a>创建了 windowsphone81appx
 

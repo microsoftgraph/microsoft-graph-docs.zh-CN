@@ -4,12 +4,13 @@ description: 列出 win32LobApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bcc5a0fdd2e507bb5959026dca4566133f104bd1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f16355205e9f04d62919f05eddde09499d9889d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973276"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960151"
 ---
 # <a name="list-win32lobapps"></a>列出 win32LobApps
 

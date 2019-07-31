@@ -4,12 +4,13 @@ description: 创建新的 androidDeviceOwnerGeneralDeviceConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16ba295955cc32f932612c5d2d4007ffedca46af
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d6c7868832c15d0c325d19012a8378ec4c36a426
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971428"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958163"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>创建 androidDeviceOwnerGeneralDeviceConfiguration
 

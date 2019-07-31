@@ -3,12 +3,14 @@ title: 通知资源类型
 description: '表示由面向指定用户的应用程序服务器发布的通知。 通知存储在 Microsoft Graph 中, 并分发给用户拥有的不同设备终结点。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 13839cdc946ecaf47e59d37e90fe4be144789a6d
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: f9d9a4ff77190e18b8c090cf9c976decb4edfc3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036478"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965577"
 ---
 # <a name="notification-resource-type"></a>通知资源类型
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -33,7 +35,7 @@ ms.locfileid: "34036478"
 | payload | Edm、JSON 对象 | 这是原始或直观的用户通知的数据内容, 这些通知将传递给应用客户端接收此通知并由其使用。 |
 | rawContent | String | 原始用户通知的通知内容, 该通知内容将传递给应用程序客户端接收此通知并由其使用。 RawContent 和 VisualContent 中至少有一个有效的和需要对 POST 通知请求有效。 |
 | 有效负载。 visual | Edm、JSON 对象 | 直观用户通知的可视内容, 它将由每个移动平台上的通知平台使用, 并为用户呈现。 至少有一个内容和 VisualContent 需要对 POST 通知请求有效。 |
-| 有效负载。标题 | String | 可视用户通知的标题。 必须具有 "标题" 或 "正文"。 |
+| 有效负载. 标题 | String | 可视用户通知的标题。 必须具有 "标题" 或 "正文"。 |
 | 有效负载 | String | 可视化用户通知的正文。 必须具有 "标题" 或 "正文"。 |
 | displayTimeToLive | Int | 设置此通知内容将在每个平台的通知查看器中保留多长时间 (以秒为单位)。 例如, 将通知传递给 Windows 设备时, 此属性的值将传递给 ToastNotification, 以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。 |
 | priority | EnumType | 指示原始用户通知的优先级。 默认情况下, 视觉通知以高优先级发送。 有效值为 "高" 和 "低"。 |

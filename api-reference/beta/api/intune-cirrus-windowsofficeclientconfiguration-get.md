@@ -4,12 +4,13 @@ description: 获取特定的非安全策略 windowsOfficeClientConfiguration 对
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 6cf1a2d9c5f322e49215d7e6fc513eb9e2035d11
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 0c9df4d2f9905979bc7add86b741545098635c1a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934003"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958821"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>获取 windowsOfficeClientConfiguration
 

@@ -2,12 +2,15 @@
 title: signInLocation 资源类型
 description: 提供发生登录的城市、省/市/自治区和国家/地区。
 localization_priority: Normal
-ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: bf0cdec3a2c5feae1b178fc92d02e433d87737a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965024"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
 提供发生登录的城市、省/市/自治区和国家/地区。

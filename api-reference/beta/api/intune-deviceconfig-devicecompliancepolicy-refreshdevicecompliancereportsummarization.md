@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51634cbaa832a4543a2af06a7ea16a325e9becf9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1ac97e026cf2423009c1e20e90d4a6e8d2e983f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968460"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949858"
 ---
 # <a name="refreshdevicecompliancereportsummarization-action"></a>refreshDeviceComplianceReportSummarization 操作
 

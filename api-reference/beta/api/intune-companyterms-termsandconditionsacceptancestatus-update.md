@@ -4,12 +4,13 @@ description: 更新 termsAndConditionsAcceptanceStatus 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9149578ab470e29fa31877cb0e2a94994d3bc9d3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c00d2e4e6a7a05934e22b9d265c98333254429c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971904"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958660"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>更新 termsAndConditionsAcceptanceStatus
 

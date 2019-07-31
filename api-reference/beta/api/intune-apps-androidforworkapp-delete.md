@@ -4,12 +4,13 @@ description: 删除 androidForWorkApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2eb5c0651aee211aa6e37977c77178bdf58a8fea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: eb496d60216e2521ab9dca28cbf76e3cfa46c22f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965359"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952448"
 ---
 # <a name="delete-androidforworkapp"></a>删除 androidForWorkApp
 

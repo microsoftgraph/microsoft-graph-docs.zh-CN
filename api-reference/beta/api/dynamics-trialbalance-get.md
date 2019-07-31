@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0729155ddef94d28afb0cb0a85fd095931ffdbb4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b3e5881964d49fa1a42cf1aa4f9da8fba818d6e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458367"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955867"
 ---
 # <a name="get-trialbalance"></a>获取 trialBalance
 检索 Dynamics 365 Business Central 的试用余额报告对象的属性和关系。

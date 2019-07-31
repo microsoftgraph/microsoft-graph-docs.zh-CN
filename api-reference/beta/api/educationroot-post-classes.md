@@ -4,12 +4,13 @@ description: 创建新课程。 此操作还会创建通用组。 当您使用�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c865a15b8cca394bcce6316e1acc8633dcb7ac8b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2d1bda98c3f81045661257ce44aab34383eb7448
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860422"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955255"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 

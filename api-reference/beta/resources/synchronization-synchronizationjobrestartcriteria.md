@@ -2,14 +2,15 @@
 title: synchronizationJobRestartCriteria 资源类型
 description: '定义[synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md)操作的范围。'
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fda28a84f568b9d535a06226397375f3fa8e444a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 8fb363b74f1daff678d0751aca4a9033b01d9832
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620722"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964653"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria 资源类型
 

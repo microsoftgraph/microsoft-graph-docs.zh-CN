@@ -3,12 +3,14 @@ title: 'driveItem: preview'
 description: 此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5e260e3dc360464b39daa5dde671a1bc11c9c6b6
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: dc2feef9e80a04753efb6b371bffccf514f46233
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956994"
 ---
 # <a name="driveitem-preview"></a>driveItem: preview
 

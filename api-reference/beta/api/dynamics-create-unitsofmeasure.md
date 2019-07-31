@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: a0020ab72ee7bcbbe2b229f209d52bc68691dcb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 41c312a7b118dbe161c56d4eb226ef390d0d3d1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458570"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956539"
 ---
 # <a name="create-unitsofmeasure"></a>创建 unitsOfMeasure
 在 Dynamics 365 Business Central 中创建度量单位对象。

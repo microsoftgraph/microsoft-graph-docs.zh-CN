@@ -4,12 +4,13 @@ description: 更新 androidStoreApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc777baa370df091ade329b973413afec7e5694a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 741fca8a9591a34af83152378b22de9b16351184
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965198"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952056"
 ---
 # <a name="update-androidstoreapp"></a>更新 androidStoreApp
 

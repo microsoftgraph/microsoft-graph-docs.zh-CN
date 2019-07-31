@@ -4,12 +4,13 @@ description: 删除 iosPkcsCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a778c9afb4d13adf5afb89416598e133d55b3b5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 81ed1c5d9da6bee27ffc1f090e7edd5d5ba9ad68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963756"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948080"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>删除 iosPkcsCertificateProfile
 

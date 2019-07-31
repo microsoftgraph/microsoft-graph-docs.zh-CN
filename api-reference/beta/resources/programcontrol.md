@@ -2,12 +2,15 @@
 title: programControl 资源类型
 description: 在 Azure AD access 评论功能中, program control 对象表示一个控件, 将访问权限链接到某个程序。
 localization_priority: Normal
-ms.openlocfilehash: 7d194f3e80f44eb57be0deb7d2ffd71624c385d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 16824c2ed0c053f0cc4f3a0a2903324ff1a2bf5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965633"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
@@ -30,7 +33,7 @@ ms.locfileid: "33344009"
 | `id`                     |`String`                | 程序和控件之间的链接的功能分配的标识符                                      |
 | `programId`              |`String`                | 此控件所属程序的 programId。 创建时为必需项。                            |
 | `controlId`              |`String`                | 控件的 controlId, 特别是 access 评审的标识符。 创建时为必需项。                                                |
-| `controlTypeId`          |`String`                | programControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 创建时为必需项。 |
+| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 创建时为必需项。 |
 | `displayName`            |`String`                | 控件的名称。                                                             |
 | `status`                 |`String`                | 控件的生命周期状态。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 程序控件的创建日期和时间。                                        |
@@ -76,7 +79,7 @@ ms.locfileid: "33344009"
 
 ```
 
-## <a name="the-programresource-complex-type"></a>programResource 复杂类型
+## <a name="the-programresource-complex-type"></a>ProgramResource 复杂类型
 
 程序控制对象中包含的程序资源是对作为访问评审目标的对象的引用的表示形式。
 

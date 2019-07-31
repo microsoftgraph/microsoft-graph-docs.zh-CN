@@ -4,12 +4,13 @@ description: '检索特定的提交。 提交对象表示学生的工作分配�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 97cdc45c8af271d0996ea5edabf145f239162210
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: d33fea58845fb9c9034d4fef100e3393bcdd4188
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325159"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955124"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 

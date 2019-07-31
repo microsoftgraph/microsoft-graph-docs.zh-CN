@@ -4,12 +4,13 @@ description: 更新 androidWorkProfileNineWorkEasConfiguration 对象的属性�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46a932e31cbdba47717a218e52e4a1d5dcffb2e7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 95fb7e8853c0efdb3fd9eb679b5ca2093a3fec81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969230"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950628"
 ---
 # <a name="update-androidworkprofilenineworkeasconfiguration"></a>更新 androidWorkProfileNineWorkEasConfiguration
 

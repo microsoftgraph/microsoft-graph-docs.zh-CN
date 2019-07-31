@@ -4,12 +4,13 @@ description: 删除 windowsMobileMSI。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4885671f71c4181e8ebbbcabfb90571b8d4d8a6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c33e1a0081929262a27da6f11b7268bc878f7215
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973150"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960109"
 ---
 # <a name="delete-windowsmobilemsi"></a>删除 windowsMobileMSI
 

@@ -4,12 +4,13 @@ description: 列出 iosCompliancePolicy 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1647a44960a801dfae1860b7186dc84c0789c34f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2727e5ec0159a708995d7d30590523b7ef906b19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948647"
 ---
 # <a name="list-ioscompliancepolicies"></a>列出 iosCompliancePolicies
 

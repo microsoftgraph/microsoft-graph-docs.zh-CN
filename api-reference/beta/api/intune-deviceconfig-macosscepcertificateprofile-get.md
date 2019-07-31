@@ -4,12 +4,13 @@ description: 读取 macOSScepCertificateProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3f96fd59dfb68b9fbd4a5ccfe12d73c2eef63fd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8b3689a36a081f1d81aa464eb4ac813e13aeffb9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947086"
 ---
 # <a name="get-macosscepcertificateprofile"></a>获取 macOSScepCertificateProfile
 

@@ -2,15 +2,15 @@
 title: teamsAppInstallation 资源类型
 description: '安装在团队中的 teamsApp、聊天或用户的个人作用域。 '
 author: clearab
-doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 55e1246616b7a3d76c6170a02286a2cde2a15d3a
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: resourcePageType
+ms.openlocfilehash: 2dd382e21a92662615535f69edc3ca2c99c0d7b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908507"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964478"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 

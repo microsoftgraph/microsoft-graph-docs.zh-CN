@@ -4,12 +4,13 @@ description: 封装图表数据表的格式属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a4bf03bb2c40ce0dc78c24d76e859d040526cf17
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bd60187d5bc62675b53b4a0a254afa3632e9c1d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348356"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963995"
 ---
 # <a name="workbookchartdatalabelformat-resource-type"></a>workbookChartDataLabelFormat 资源类型
 

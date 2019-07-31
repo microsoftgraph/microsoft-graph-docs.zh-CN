@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 9adab4c18d2c380f949d3fd7894aae4a8de7c0da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 565c4f1222b143ed9635a68bf29d88e544e4c8e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458451"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956301"
 ---
 # <a name="get-employees"></a>获取员工
 检索 Dynamics 365 Business Central 的 employee 对象的属性和关系。

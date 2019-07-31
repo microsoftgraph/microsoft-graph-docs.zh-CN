@@ -4,12 +4,13 @@ description: 列出 macOSCustomConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad7d3df8e187999f15faaf2c664c26a378a33d0a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 092b6ca06fff43850d8434e7fa9f09cfeb2baf5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947464"
 ---
 # <a name="list-macoscustomconfigurations"></a>列出 macOSCustomConfigurations
 

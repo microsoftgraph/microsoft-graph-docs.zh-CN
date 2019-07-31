@@ -4,12 +4,13 @@ description: 创建新的 iosVppEBookAssignment 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9682e5f1d3d539e5a9528404beac4f2b535230f7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c1aa9091572eaf6a476c38a6a4f1b6591cb04d6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959297"
 ---
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 

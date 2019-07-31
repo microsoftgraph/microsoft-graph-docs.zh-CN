@@ -4,12 +4,13 @@ description: '创建新的工作分配。 只有课堂中的教师才能创建�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a27bb6d62897582e659022aea78a0539e09d8c57
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: f8f4b7fe917b9366f852b6fe0b620754890705a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324863"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955360"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 

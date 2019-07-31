@@ -4,12 +4,13 @@ description: 更新 iosDeviceFeaturesConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ecc28e52e8e359332d104cd6de8f6aad4223edc8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 95a454fd5571d13e88efe7bd8dfda948ecae695c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967060"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948465"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>更新 iosDeviceFeaturesConfiguration
 

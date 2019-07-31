@@ -1,15 +1,16 @@
 ---
 title: signIn 资源类型
+doc_type: resourcePageType
 description: 描述 Microsoft Graph API (REST) 的 signIn 资源，这有利于审核用户和应用程序登录活动（beta 版本）。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 886631d83ad9f663597251eaecd49b7659fb6d68
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 6197600854833f7887556c35a511fad61b4539d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965059"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 

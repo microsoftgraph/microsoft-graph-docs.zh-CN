@@ -4,12 +4,13 @@ description: 创建新的 androidDeviceOwnerWiFiConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f796faf5d4db402ebe5f9b12d8ceb7dcb6bff142
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 73c0ec47f811270479cb4b86df169a3cd867ff7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971344"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958093"
 ---
 # <a name="create-androiddeviceownerwificonfiguration"></a>创建 androidDeviceOwnerWiFiConfiguration
 

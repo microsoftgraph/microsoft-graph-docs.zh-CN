@@ -4,12 +4,13 @@ description: 创建新的 deviceConfigurationUserStatus 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f742e5ede58f8a2bc631f404410ebc05d32518e5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d33aa0fdcb33fd702678e8ddfb8faeaddcbdc18a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967571"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948941"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>创建 deviceConfigurationUserStatus
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 06884308987eb8010be965d30d09e064e3d67d5e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b28ec56e2f7fa47726eaff46d37932ddaba16665
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458507"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956273"
 ---
 # <a name="get-generalledgerentries"></a>获取 generalLedgerEntries
 检索 Dynamics 365 Business Central 的总帐条目对象的属性和关系。

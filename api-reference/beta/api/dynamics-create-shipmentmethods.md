@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4f83c186adf72dde6f88082db1a6156ebc7b12af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 178b5c2f7a728970ec12931f6e5bd6c06e1ead81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463619"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956581"
 ---
 # <a name="create-shipmentmethods"></a>创建 shipmentMethods
 在 Dynamics 365 Business Central 中创建装运方法对象。

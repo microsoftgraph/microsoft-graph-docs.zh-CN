@@ -4,12 +4,13 @@ description: 读取 advancedThreatProtectionOnboardingStateSummary 对象的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 834ade4a9f4a97d7905b2f05362302b6b6bd848f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0282fdca49e334857f8b4b114821b5ce804ac3fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971694"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958443"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>获取 advancedThreatProtectionOnboardingStateSummary
 

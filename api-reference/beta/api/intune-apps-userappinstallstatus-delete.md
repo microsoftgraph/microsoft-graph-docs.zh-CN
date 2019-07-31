@@ -4,12 +4,13 @@ description: 删除 userAppInstallStatus。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad03874a18adf62b0801ae5a26a7a87a0d58efd4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b628aeec5a59fa1e4d3385cc7d3b14b8ed9b35c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973465"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960376"
 ---
 # <a name="delete-userappinstallstatus"></a>删除 userAppInstallStatus
 

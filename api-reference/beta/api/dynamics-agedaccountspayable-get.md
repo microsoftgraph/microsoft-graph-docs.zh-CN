@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 8d70ce2aca31a4cbfd3acbe25399cc51b3726d8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5945a7386ce8cd946bd0249c0848d9265e1ed392
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454172"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956861"
 ---
 # <a name="get-agedaccountspayable"></a>获取 agedAccountsPayable
 检索 Dynamics 365 Business Central 的过期帐户应付帐款报告对象的属性和关系。
@@ -23,7 +24,7 @@ ms.locfileid: "32454172"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application|Financials.ReadWrite.All|
+|应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```

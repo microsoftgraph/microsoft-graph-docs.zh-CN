@@ -4,12 +4,13 @@ description: 更新 webApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c685b595fe528a5fbc5cd5a10c007a0dea4564ca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cbe07f822ea9617e4c509795bfe9abdad9a554ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960326"
 ---
 # <a name="update-webapp"></a>更新 webApp
 

@@ -4,12 +4,13 @@ description: 更新 androidCustomConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b84454276e98eb33bc00f1f316d8a89099be104
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 60d2c13abb91f71f0849593b9d3b69267af00ec4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971498"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958177"
 ---
 # <a name="update-androidcustomconfiguration"></a>更新 androidCustomConfiguration
 

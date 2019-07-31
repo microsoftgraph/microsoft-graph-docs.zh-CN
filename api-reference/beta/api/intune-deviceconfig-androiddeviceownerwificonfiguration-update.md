@@ -4,12 +4,13 @@ description: 更新 androidDeviceOwnerWiFiConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84eeedbe09020b61d57f10feb050234acc054c1d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1d0965d5b193f1e72182a9ea0bebaa641a1ca6da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958065"
 ---
 # <a name="update-androiddeviceownerwificonfiguration"></a>更新 androidDeviceOwnerWiFiConfiguration
 

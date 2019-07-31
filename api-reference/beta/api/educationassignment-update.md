@@ -4,12 +4,13 @@ description: 更新工作分配对象。 只有课堂中的教师才能执行此
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 5ede0781374be297bf74d890d1d59eca09850a3c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8c3537a6c14e144147f848dc3cd77388387c3765
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860744"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955696"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 

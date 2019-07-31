@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ShareAction 资源提供了有关共享项的活动的信息。
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
-ms.openlocfilehash: 02098dd5bee739a078d8d9e3e744f7282ccb20bd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 10eb5b870a5ecd80f4a064d1dca496f216bf241d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343192"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965164"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction 资源类型
 

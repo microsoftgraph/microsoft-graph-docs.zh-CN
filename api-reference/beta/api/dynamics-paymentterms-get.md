@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 14f7b2b36b687190817dc348e975ba1a23c99aae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c65e38849520c7f0c67cf2c3e642cd39fcda0594
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956042"
 ---
 # <a name="get-paymentterms"></a>获取 paymentTerms
 检索 Dynamics 365 Business Central 的付款条款对象的属性和关系。

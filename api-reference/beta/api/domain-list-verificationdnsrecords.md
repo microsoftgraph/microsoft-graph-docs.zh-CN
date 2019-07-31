@@ -4,12 +4,13 @@ description: 检索 domainDnsRecord 对象的列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1998f5881e21b7ce8fd93e599eb706370b556f7a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 25b2a2c6af51de4fcc9863621eb7dd45d39cde81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957435"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 

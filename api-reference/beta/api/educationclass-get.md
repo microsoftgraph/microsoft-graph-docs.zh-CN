@@ -4,12 +4,13 @@ description: "  组管理员代表课程中的教师。 如果使用的是委派
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 576d07f13e506737393d9ca19430e556fcfc47d1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2931aaa893379481712ea3cb5a8c1a54d66e919d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860633"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955451"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 

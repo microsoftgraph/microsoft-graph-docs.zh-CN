@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 3391b6a492ea0edad51c49712290ca88f4535106
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 956cc594d7dd4912f5a9c7e5f48c5528c235999f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955993"
 ---
 # <a name="get-shipmentmethods"></a>获取 shipmentMethods
 检索 Dynamics 365 Business Central 的装运方法对象的属性和关系。
@@ -23,7 +24,7 @@ ms.locfileid: "32458514"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application|Financials.ReadWrite.All|
+|应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 

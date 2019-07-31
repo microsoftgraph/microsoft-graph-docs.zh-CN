@@ -4,12 +4,13 @@ description: '更新与工作分配相关联的资源的属性。 只有课堂�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3ce0db2353d91f17f059fe8a2dfd9d6c775e1e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324671"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955549"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 

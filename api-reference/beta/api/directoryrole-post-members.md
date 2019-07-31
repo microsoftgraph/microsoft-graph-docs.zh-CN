@@ -4,12 +4,13 @@ description: 使用此 API 创建新的目录角色成员。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 733370a56c142a9379d95ac3afa39a3d5a91c667
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 1af429043398166a85c2745c02f780c116041c0b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436849"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957638"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -21,9 +22,9 @@ ms.locfileid: "35436849"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

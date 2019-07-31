@@ -4,12 +4,13 @@ description: 删除 officeSuiteApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f36e23fe7d318680db82b5d713d2a2e6428ec555
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ccb71fe1c36e4dacf7df64946c79f38dd02ab2a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960515"
 ---
 # <a name="delete-officesuiteapp"></a>删除 officeSuiteApp
 

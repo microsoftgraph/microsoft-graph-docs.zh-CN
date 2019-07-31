@@ -4,12 +4,13 @@ description: 检索域对象的列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4b6d0d425d6a36729cc21348e555d5158b8ecd10
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 199af22ee85d2cc6a95f8fc43c9a12085c36522a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957414"
 ---
 # <a name="list-domains"></a>列出域
 

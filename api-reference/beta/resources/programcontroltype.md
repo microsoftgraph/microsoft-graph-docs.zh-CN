@@ -2,12 +2,15 @@
 title: programControlType 资源类型
 description: '在 Azure AD access 评论功能中, 将控件与程序关联时使用程序控件类型, 以指示控件所针对的访问评审的类型。  '
 localization_priority: Normal
-ms.openlocfilehash: 489fa6e5cac31165fec9f7ce9939d58fa84cb1ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c7b4360ffa22711c9af9961fbb9f48cee7d29424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965626"
 ---
 # <a name="programcontroltype-resource-type"></a>programControlType 资源类型
 
@@ -31,7 +34,7 @@ ms.locfileid: "33344042"
 | `displayName`            |`String`                | 程序控件类型的名称                                                             |
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。
 

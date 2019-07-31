@@ -4,12 +4,13 @@ description: 删除 mobileAppInstallStatus。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27cd4a9f0c743716998770d3952a1d5a26613b86
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 69151a24df781ce9018ea8319f88b22ab502bb90
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973934"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960739"
 ---
 # <a name="delete-mobileappinstallstatus"></a>删除 mobileAppInstallStatus
 

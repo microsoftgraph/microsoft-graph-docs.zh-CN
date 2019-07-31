@@ -4,12 +4,13 @@ description: 获取特定策略。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 64756af64cbcb2b837cae997519660d81fbaae6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 41e10aeac65be2c623ff0db983c9f8e889a06c89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934073"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958961"
 ---
 # <a name="get-officeclientconfiguration"></a>获取 officeClientConfiguration
 

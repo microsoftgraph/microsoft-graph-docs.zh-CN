@@ -4,12 +4,13 @@ description: 读取 macOSOfficeSuiteApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8623e2b4fb47bbf2b99103c567eb7944849c4361
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e3c4743afa5fbe26e7e8026e460389cbc14eada7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962097"
 ---
 # <a name="get-macosofficesuiteapp"></a>获取 macOSOfficeSuiteApp
 

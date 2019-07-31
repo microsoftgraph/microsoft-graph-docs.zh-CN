@@ -4,12 +4,13 @@ description: 创建新的 windowsUniversalAppX 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f5c4b50a6b1976fb0eea396f431f6f38d7bdaab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fe23f3455ad5495137cf57cf5dcc51400cf3fea9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972730"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959703"
 ---
 # <a name="create-windowsuniversalappx"></a>创建 windowsUniversalAppX
 

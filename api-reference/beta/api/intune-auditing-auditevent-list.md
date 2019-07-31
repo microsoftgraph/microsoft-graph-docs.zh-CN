@@ -4,12 +4,13 @@ description: 列出 auditEvent 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c6538406098f3c0a7b9554c3cdfebd784bb49fe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 24d362fe3b6316f291eecef2f511509859977a99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972541"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959479"
 ---
 # <a name="list-auditevents"></a>列出 auditEvents
 

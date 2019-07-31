@@ -4,12 +4,13 @@ description: 删除 deviceConfigurationGroupAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49654e86287425cd89d3ccb7355266b706dee664
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a190d86dd94df7a55edce51cdd2aebf027e0c30c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949053"
 ---
 # <a name="delete-deviceconfigurationgroupassignment"></a>删除 deviceConfigurationGroupAssignment
 

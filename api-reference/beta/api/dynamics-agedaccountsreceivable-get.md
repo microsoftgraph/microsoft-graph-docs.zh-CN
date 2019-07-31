@@ -6,12 +6,14 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.author: solsen
-ms.openlocfilehash: 7270e50881b9e6358052fef4ae879bbb3dcfc5fe
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.prod: dynamics-365-business-central
+ms.openlocfilehash: 3e23ea971ad16d32d3a651259818524870abedc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712818"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956847"
 ---
 # <a name="get-agedaccountsreceivable"></a>获取 agedAccountsReceivable
 检索 Dynamics 365 Business Central 的已过期的帐户应收帐款报告对象的属性和关系。

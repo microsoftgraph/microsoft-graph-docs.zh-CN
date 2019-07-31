@@ -2,12 +2,15 @@
 title: '使用 Microsoft Graph API 处理 Project 罗马 '
 description: '项目罗马是 Microsoft 计划, 用于构建一个平台, 使应用程序开发人员能够生成强大的跨设备体验。 Project 罗马启用不同的功能, 以便在用户使用相同的 Microsoft 帐户或工作或学校帐户登录时连接不同的服务和客户端终结点。 这使您能够实现以用户任务 (而不是设备) 为中心的跨设备和跨平台体验。 '
 localization_priority: Normal
-ms.openlocfilehash: 3b02f6f6efa61495f226ad80649cf3d1ef50f5ac
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cbec95682b552210781ecd7390726f8d92c4aa03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036561"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965619"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 处理 Project 罗马 
 

@@ -2,12 +2,15 @@
 title: skypeForBusinessOrganizerActivityUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 39ab5844adb9525b4e0f100892927d200609040c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b6fcb2114e78bd9aabb170795b49d80bb58e6844
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534862"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964870"
 ---
 # <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>skypeForBusinessOrganizerActivityUserCounts 资源类型
 
@@ -21,8 +24,8 @@ ms.locfileid: "32534862"
 | web                | Int64  |
 | dialInOut3rdParty  | Int64  |
 | dialInOutMicrosoft | Int64  |
-| reportRefreshDate  | Date   |
-| reportDate         | Date   |
+| reportRefreshDate  | 日期   |
+| reportDate         | 日期   |
 | reportPeriod       | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

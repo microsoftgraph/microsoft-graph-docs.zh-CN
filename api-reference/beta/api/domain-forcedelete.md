@@ -4,12 +4,13 @@ description: 使用异步操作删除域。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3fc5fbf0db3b054a7cece327f209df84c140b35e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 45e5e0c6eb6ed5f42d4c7caca5de02739bbcaf5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957498"
 ---
 # <a name="domain-forcedelete"></a>域: forceDelete
 

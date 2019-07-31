@@ -4,12 +4,13 @@ description: 团队中的 schedulingGroups、倒班、timeOffReasons 和 timesOf
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48b3b5c118a39442469bc6155068664fcebe0ec2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: a404c620b20cfcb69076ecc3bac25f907a12216c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343519"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965325"
 ---
 # <a name="schedule-resource-type"></a>计划资源类型
 
@@ -21,8 +22,8 @@ ms.locfileid: "33343519"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[创建或替换计划](../api/team-put-schedule.md) | [设定](schedule.md) | 创建或替换`schedule`。|
-|[获取日程安排](../api/schedule-get.md) | [设定](schedule.md) | 获取`schedule`。|
+|[创建或替换计划](../api/team-put-schedule.md) | [日程安排](schedule.md) | 创建或替换`schedule`。|
+|[获取日程安排](../api/schedule-get.md) | [日程安排](schedule.md) | 获取`schedule`。|
 |[share](../api/schedule-share.md) | 无 | 与 schedule `schedule`成员共享时间范围。|
 
 ## <a name="properties"></a>属性

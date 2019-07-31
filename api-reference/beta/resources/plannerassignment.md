@@ -1,21 +1,22 @@
 ---
 title: plannerAssignment 资源类型
-description: '**plannerAssignment**资源表示将任务分配给用户。 在开放类型 plannerAssignments 中使用此类型。'
+description: '**PlannerAssignment**资源表示将任务分配给用户。 在开放类型 plannerAssignments 中使用此类型。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: fddb3214417fc1320b6218b4e9fd0266b176e26a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 27b012374882e98da1669ac0921416bc1a9d1c63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344607"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966039"
 ---
 # <a name="plannerassignment-resource-type"></a>plannerAssignment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerAssignment**资源表示将任务分配给用户。 在开放类型[plannerAssignments](plannerassignments.md)中使用此类型。
+**PlannerAssignment**资源表示将任务分配给用户。 在开放类型[plannerAssignments](plannerassignments.md)中使用此类型。
 
 
 ## <a name="properties"></a>属性

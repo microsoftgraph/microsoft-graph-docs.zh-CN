@@ -4,12 +4,13 @@ description: 读取 macOSEnterpriseWiFiConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a69c79d2bbe118c9a2f07ddc3fa629167f8d766
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 38e8051df6d0c6f5539167ad3833c30da9b340bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976783"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947289"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>获取 macOSEnterpriseWiFiConfiguration
 

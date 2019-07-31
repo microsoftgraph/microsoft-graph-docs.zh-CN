@@ -4,12 +4,13 @@ description: 您可以使用 Azure AD 访问评论来配置一次性或定期访
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d38d82d00c5ba83bc3b16cd05b69e99ec7c5aa2e
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: conceptualPageType
+ms.openlocfilehash: 708c8c33d4ae69007a7a1e1e15af71ab69b97e78
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656823"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013505"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
