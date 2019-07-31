@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: columnDefinition 资源上的 dateTimeColumn 指示该列的值为日期或时间。
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: b80e4a2e156baae4fbd8f3b559f061c50b45505f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e0e69e4019530031966cde9f782c2f017ba976fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340972"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973882"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 

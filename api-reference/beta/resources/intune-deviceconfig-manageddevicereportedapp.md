@@ -4,12 +4,13 @@ description: 用于报告的应用程序数据
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e028ec07142a7902ec02b2b8eeccdc9c378170d8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 2f4549ac255913973610e3b09d41b2299229a309
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992022"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970127"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>managedDeviceReportedApp 资源类型
 

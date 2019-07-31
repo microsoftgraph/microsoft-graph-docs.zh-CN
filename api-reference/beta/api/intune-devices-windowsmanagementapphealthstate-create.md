@@ -4,12 +4,13 @@ description: 创建新的 windowsManagementAppHealthState 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cdcb0c26e2ab6687ba6b4aac46fdb12d6539ca9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 87874977dff4d573ff473a801f30a7707648fdf1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978456"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981225"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>创建 windowsManagementAppHealthState
 

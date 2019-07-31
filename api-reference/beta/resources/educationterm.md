@@ -4,12 +4,13 @@ description: 一个学期。 它表示学年的指定部分。 在 educationClas
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e98bb1dc059439dfad927db033759ea54d240716
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e7167cc6db47a2525f81db1bc3841d1bd7d65499
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340585"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972323"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
 

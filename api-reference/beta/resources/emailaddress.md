@@ -4,12 +4,13 @@ description: 表示实体实例的名称和 SMTP 地址, 例如, 邮件收件人
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e8b49e0ff502f6e36e6ca3291d675c839e9ff5e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4f0b36d84ffba5c5a8e39bd7603f92c815cda008
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972213"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 

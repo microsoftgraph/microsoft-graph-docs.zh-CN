@@ -4,12 +4,13 @@ description: '{这是设备中继模块的 API 级概述。'
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b6157d23c642227d2d5d86e701cfe1cac0ece575
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: conceptualPageType
+ms.openlocfilehash: 7fa964731f9e43d5f4e3c4e9912392490bd30dca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973139"
 ---
 # <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>使用设备中继 API 跨设备传输用户体验 (预览)
 

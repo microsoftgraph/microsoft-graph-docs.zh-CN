@@ -4,12 +4,13 @@ description: 提交由工作分配拥有。 提交表示个人 (或组) 在工�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 81c194c08ddc5ed8f5acc38ae84a5478bb7e0229
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334126"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972521"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
@@ -35,7 +36,7 @@ ms.locfileid: "33334126"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|征求|[educationFeedback](educationfeedback.md)|保留反馈属性, 该属性将教师的备注存储回学生。|
+|反馈|[educationFeedback](educationfeedback.md)|保留反馈属性, 该属性将教师的备注存储回学生。|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|保留教师为此提交分配的年级信息。|
 |id|String| 只读。|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|此提交被分配到的所有者。|
@@ -53,7 +54,7 @@ ms.locfileid: "33334126"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
+|resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

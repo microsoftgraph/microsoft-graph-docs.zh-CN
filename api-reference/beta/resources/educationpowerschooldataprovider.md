@@ -4,12 +4,13 @@ description: 用于在将 PowerSchool 用作输入源时设置学校数据同步
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cee763995dd5a75b64d94e5f170d6fea992c20b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6a036435cb7cc1a4ef70960b09feb600fe7f39f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972591"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider 资源
 
@@ -26,7 +27,7 @@ ms.locfileid: "33340563"
 | **connectionUrl** | String | 指向 PowerSchool 实例的连接 URL。 |
 | **clientId** | String |  用于连接到 PowerSchool 的客户端 ID。 |
 | **clientSecret** | String |  用于对与 PowerSchool 实例的连接进行身份验证的客户端密码。 |
-| **schoolsIds** | String 集合 |  要同步的学校列表。 |
+| **schoolsIds** | String collection |  要同步的学校列表。 |
 | **schoolYear** | String |  要同步的学校年。 |
 | **allowTeachersInMultipleSchools** | Boolean |  指示源是否具有单个学生或教师的多个标识符。 |
 | **操作** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 要应用于同步配置文件的可选自定义项。|

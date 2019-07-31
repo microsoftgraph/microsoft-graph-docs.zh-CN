@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e18319683f6dbceddccc9cf83e48cd3ef89f895d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 18017c580637bb53a70b5f7a331ff7be1dc7a07c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972920"
 ---
 # <a name="itemcategories-resource-type"></a>itemCategories 资源类型
 代表 Dynamics 365 Business Central 中的大量项目的类别。
@@ -28,9 +29,9 @@ ms.locfileid: "32543054"
 ## <a name="properties"></a>属性
 | 属性           | 类型   |说明                                     |
 |:-------------------|:-------|:-----------------------------------------------|
-|id                  |GUID    |itemCategory 的唯一 ID。 不可编辑。|
-|code                |string  |itemCategory 代码。                          |
-|displayName         |string  |itemCategories 显示名称。                |
+|id                  |GUID    |ItemCategory 的唯一 ID。 不可编辑。|
+|code                |string  |ItemCategory 代码。                          |
+|displayName         |string  |ItemCategories 显示名称。                |
 |lastModifiedDateTime|datetime|上次修改 itemCategory 的日期/时间。 只读。|  
 
 

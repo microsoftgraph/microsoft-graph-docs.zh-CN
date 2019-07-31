@@ -4,12 +4,13 @@ description: 创建新的 windowsDefenderAdvancedThreatProtectionConfiguration �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8563c1a9a03689042bc8772708cd8afcf6f6cae
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9cc8c2ca1d55ad7480d06214dacca58873b35702
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962083"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982367"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>创建 windowsDefenderAdvancedThreatProtectionConfiguration
 

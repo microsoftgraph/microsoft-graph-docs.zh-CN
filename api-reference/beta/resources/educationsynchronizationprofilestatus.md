@@ -4,12 +4,13 @@ description: '表示学校数据同步配置文件的同步状态。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e54a80df832eba66dcdc5eb08b38feee6f4cd57a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 827d54fbedbf9c6f386063d82fd00e8eddfe7296
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972324"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus 资源类型
 

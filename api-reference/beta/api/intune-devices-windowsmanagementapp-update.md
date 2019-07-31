@@ -4,12 +4,13 @@ description: 更新 windowsManagementApp 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54f981b70266431199e8b3b0968169f91a00d592
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a8c3718274fad980e9b0b2b7b0d227e99dcd9428
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978834"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981239"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 

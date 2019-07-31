@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationValueBoolean 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e191fb84e3c3b2e9bb9d0b15a0e12a455d3f3b9d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bdff6f5a48f3155a5c703c3a7cbbe4edc1d491aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965870"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984739"
 ---
 # <a name="create-grouppolicypresentationvalueboolean"></a>创建 groupPolicyPresentationValueBoolean
 

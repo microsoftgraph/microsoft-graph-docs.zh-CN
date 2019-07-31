@@ -2,12 +2,15 @@
 title: convertIdResult 资源类型
 description: 由 translateExchangeIds 函数执行的 ID 格式转换的结果。
 localization_priority: Normal
-ms.openlocfilehash: 5981f75ee071777f9119d0db2c0078153a160180
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 040b13ab83eacffb33e8903f7d11823adb6e1bf1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973194"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult 资源类型
 

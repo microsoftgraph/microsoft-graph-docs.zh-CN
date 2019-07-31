@@ -4,12 +4,13 @@ description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 294f2a9a6b4775ad30165352dec5520fb0efa804
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 87195cf98406e37e0f4a419833fbc1d101b19563
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966875"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -19,36 +20,36 @@ ms.locfileid: "33342754"
 
 该资源支持通过提供 [delta](../api/mailfolder-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
-**众所周知的文件夹名称**
+**已知文件夹名称**
 
-Outlook 默认情况下会为用户创建某些文件夹。 为方便起见, 您可以在访问这些文件夹时使用下表中已知的文件夹名称, 而不是使用相应的文件夹**id**值。 例如, 可以使用以下查询获取 "草稿" 文件夹, 并使用其已知名称。
+Outlook 默认情况下会为用户创建某些文件夹。 为方便起见，可以在访问这些文件夹时使用已知的文件夹名称来替代使用相应的文件夹 **id** 值。 例如，你可以使用其已知名称和以下查询来获取“草稿”文件夹。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-无论用户邮箱的区域设置如何, 已知名称都有效, 因此上述查询将始终返回用户的 "草稿" 文件夹, 而不管它是如何命名的。
+无论用户邮箱的区域设置如何，已知名称都可以工作，因此无论命名方式如何，上述查询都将始终返回用户的“草稿”文件夹。
 
-| 众所周知的文件夹名称 | 说明 |
+| 已知文件夹名称 | 说明 |
 |:-----------------------|:------------|
-| 档案 | 将存档文件夹邮件发送到在支持它的 Outlook 客户端中使用 One_Click 存档功能时。 **注意:** 这与 Exchange online 的存档邮箱功能不同。 |
-| 待 | 使用 "杂乱" 功能时, "筛选邮件" 文件夹的低优先级邮件将移至。 |
-| 出现 | 邮箱中包含冲突项目的文件夹。 |
-| conversationhistory | skype 保存 IM 对话的文件夹 (如果 skype 已配置为执行此操作)。 |
-| DeletedItems | 文件夹项目被删除时移动到这些项目。 |
-| 模 | 包含未发送邮件的文件夹。 |
-| 收件箱 | "收件箱" 文件夹。 |
-| junkemail | "垃圾邮件" 文件夹。 |
-| localfailures | 包含本地客户端上存在但未能上载到服务器的项目的文件夹。 |
-| msgfolderroot | "信息存储顶部" 文件夹。 此文件夹是在普通邮件客户端 (如 "收件箱") 中显示的文件夹的父文件夹。 |
-| 件 | "发件箱" 文件夹。 |
-| recoverableitemsdeletions | 包含软删除项目的文件夹: 从 "已删除邮件" 文件夹中删除, 或在 Outlook 中按 shift + delete。 此文件夹在任何 Outlook 电子邮件客户端中都不可见, 但最终用户可以通过 outlook 或 web 上的 outlook 中的 "**从服务器恢复已删除邮件**" 功能与它进行交互。 |
-| 已计划 | 包含已计划在收件箱中使用 Outlook for iOS 中的 "日程安排" 功能重新显示的邮件的文件夹。 |
+| archive | 在支持它的 Outlook 客户端中使用 One_Click 存档功能时，将发送存档文件夹邮件。 **注意：** 这与 Exchange Online 的存档邮箱功能并不相同。 |
+| clutter | 使用待筛选邮件功能时，待筛选文件夹低优先级邮件将被移动到这里。 |
+| conflicts | 包含邮箱中冲突项的文件夹。 |
+| conversationhistory | Skype 保存 IM 对话的文件夹（如果 Skype 配置为这样做）。 |
+| deleteditems | 文件夹项被删除时，将被移动到这里。 |
+| drafts | 包含未发送邮件的文件夹。 |
+| inbox | 收件箱文件夹。 |
+| junkemail | “垃圾邮件”文件夹。 |
+| localfailures | 包含本地客户端上存在但无法上载到服务器的项的文件夹。 |
+| msgfolderroot | “最上层的信息文件”文件夹。 此文件夹是在普通邮件客户端（如收件箱）中显示的文件夹的父文件夹。 |
+| outbox | “发件箱”文件夹。 |
+| recoverableitemsdeletions | 包含软删除项的文件夹：从“已删除邮件”文件夹中删除，或者在 Outlook 中按 shift+delete 删除。 此文件夹在任何 Outlook 电子邮件客户端中都不可见，但最终用户可以通过 Outlook 中的“**从服务器恢复已删除邮件**”功能或 Web 上的 Outlook 与其进行交互。 |
+| scheduled | 包含计划使用 Outlook for iOS 中的“计划”功能重新出现在收件箱中的邮件的文件夹。 |
 | searchfolders | 用户邮箱中定义的所有搜索文件夹的父文件夹。 |
-| 已发送邮件 | "已发送邮件" 文件夹。 |
-| serverfailures | 包含服务器上存在但未能同步到本地客户端的项目的文件夹。 |
-| syncissues | 包含由 Outlook 创建的同步日志的文件夹。 |
+| sentitems | 已发送项的文件夹。 |
+| serverfailures | 包含服务器上存在但无法同步到本地客户端的项的文件夹。 |
+| syncissues | 包含 Outlook 创建的同步日志的文件夹。 |
 
 ## <a name="methods"></a>方法
 
@@ -76,7 +77,7 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
-|id|字符串|MailFolder 的唯一标识符。|
+|id|String|MailFolder 的唯一标识符。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
@@ -84,14 +85,14 @@ GET /me/mailFolders/drafts
 
 **有效的访问项计数**
 
-通过`TotalItemCount`文件夹`UnreadItemCount`的和属性, 可以方便地计算文件夹中的已读项目数。
+使用文件夹的 `TotalItemCount` 和 `UnreadItemCount` 的属性可以方便地计算在文件夹中读取的项数。
 使你避免进行可产生重大延迟的查询，如下所示：
 
 ```http
 https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-Outlook 中的邮件文件夹可以包含多种类型的项目, 例如, 收件箱可以包含与邮件项目不同的会议请求项目。 `TotalItemCount`并`UnreadItemCount`在邮件文件夹中包含项目, 而不考虑其项目类型。
+Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可以包含不同于邮件项的会议请求项。 `TotalItemCount` 和 `UnreadItemCount`包括邮件文件夹中的项，无论其项类型如何。
 
 ## <a name="relationships"></a>关系
 
@@ -99,7 +100,7 @@ Outlook 中的邮件文件夹可以包含多种类型的项目, 例如, 收件�
 |:-------------|:-----|:------------|
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
 |messageRules | [messageRule](messagerule.md) 集合 | 适用于用户“收件箱”文件夹的规则集合。 |
-|messages|[Message](message.md) collection|mailFolder 中的邮件集合。|
+|messages|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
 

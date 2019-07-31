@@ -1,21 +1,22 @@
 ---
 title: educationSynchronizationProfile 资源类型
-description: 表示一组用于将源目录中的教育实体和名单信息同步到 azure Active directory (azure AD) 的配置。 此资源提供在学校数据同步中使用的编程表示形式。
+description: 表示一组用于将源目录中的教育实体和名单信息同步到 Azure Active Directory (Azure AD) 的配置。 此资源提供在学校数据同步中使用的编程表示形式。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1926c591a679bd4fd97ceeeb7fab542af9e02544
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d5d79c50d29d4a89aa78b724f7cde747ea90706b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972353"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一组用于将源目录中的教育实体和名单信息同步到 azure Active directory (azure AD) 的配置。 此资源提供在[学校数据同步](https://sds.microsoft.com)中使用的编程表示形式。
+表示一组用于将源目录中的教育实体和名单信息同步到 Azure Active Directory (Azure AD) 的配置。 此资源提供在[学校数据同步](https://sds.microsoft.com)中使用的编程表示形式。
 
 ## <a name="methods"></a>方法
 
@@ -43,7 +44,7 @@ ms.locfileid: "33334042"
 | **licensesToAssign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)集合|  许可证安装程序配置。        |
 | **state** | educationSynchronizationProfileState |  配置文件的状态。 可取值为：`provisioning`、`provisioned`、`provisioningFailed`、`deleting`、`deletionFailed`。          |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|

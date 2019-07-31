@@ -4,12 +4,13 @@ description: 给定设备的 MobileApp 意图和安装状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d6cedfb73b89bff27cc83ec591c0552743170db
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f46374e0b766d07f16becfc4861f6574967e2a1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988109"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967195"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState 资源类型
 

@@ -4,12 +4,13 @@ description: 跳过激活锁
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00979275e2d56811756656acedd2a6419a13323c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 31919eb962ff56647f12b60070fe17d1eb3bd524
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985866"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 

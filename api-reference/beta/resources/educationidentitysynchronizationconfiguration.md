@@ -4,12 +4,13 @@ description: 所有学校数据配置文件标识同步配置的摘要基类。 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 713bb285e739d9182a982f02975a9b9f46761e3a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: e282a9701eaae04aae33d9fd9efc9b86f7df3635
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35736514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972675"
 ---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>educationIdentitySynchronizationConfiguration 资源类型
 

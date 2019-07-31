@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveItemVersion 资源表示特定版本的 DriveItem。
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2f8b846652f930bd7d9337c0accc0ccbe7a60d1a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e3886c27ded6b26082609933d5ac7382dc182b45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334558"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973088"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 

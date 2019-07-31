@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: itemActivity 上存在 CreateAction 资源指示活动已创建一个项。
 ms.date: 09/14/2017
 title: CreateAction
 localization_priority: Normal
-ms.openlocfilehash: 9c704c8416ee37f60afb58205742918ce9e2869f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e47a57e392ef629730a9de68c973d54b2ab5c2fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341006"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973179"
 ---
 # <a name="createaction-resource-type"></a>CreateAction 资源类型
 

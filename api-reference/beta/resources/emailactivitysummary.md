@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 84958874af09b31aafed694c1a62d080a5c798ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 64c9468d79a93b6f82fff0f04206a0fb6e95e4fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506669"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972220"
 ---
 # <a name="emailactivitysummary-resource-type"></a>emailActivitySummary 资源类型
 
@@ -17,12 +18,12 @@ ms.locfileid: "32506669"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | 发送              | Int64  |
 | 享受           | Int64  |
 | 自述              | Int64  |
-| reportDate        | Date   |
-| reportPeriod      | 字符串 |
+| reportDate        | 日期   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

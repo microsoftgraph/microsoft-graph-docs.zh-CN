@@ -4,12 +4,13 @@ description: 创建新的 windowsPhone81TrustedRootCertificate 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f557888fa8606d93b629dfbc0fdb4945d95782ad
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ecec43b1d7bb11ea49d1565083ff535e9960342b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961558"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982037"
 ---
 # <a name="create-windowsphone81trustedrootcertificate"></a>创建 windowsPhone81TrustedRootCertificate
 

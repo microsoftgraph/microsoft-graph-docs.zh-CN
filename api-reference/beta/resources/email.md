@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d74cb4a966b43fbbd88863ef79fa159e9c02cb06
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 76a849d3ac1e80a1dd70be250740449dd2412d94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333902"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972241"
 ---
 # <a name="email-resource-type"></a>电子邮件资源类型
 

@@ -4,12 +4,13 @@ description: 创建新的 windowsHealthMonitoringConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63146c8bf18452a7d41b2beb3b1de83db9d526c0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fece8f0095067393da3d13b773291b89daa2325d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961978"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982170"
 ---
 # <a name="create-windowshealthmonitoringconfiguration"></a>创建 windowsHealthMonitoringConfiguration
 

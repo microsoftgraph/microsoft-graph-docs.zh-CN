@@ -4,12 +4,13 @@ description: 检索**参与者**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 130f125eda3d7b378d1ac933cdf604ecda843095
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a53056e874f0a789f02e2edf6af5cdbf63c92cb5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983556"
 ---
 # <a name="get-participant"></a>获取参与者
 

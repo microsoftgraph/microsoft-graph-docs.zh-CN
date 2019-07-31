@@ -4,12 +4,13 @@ description: 密钥用法选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9001780e62c705bd7655f19325f0ece5938beab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 022cf71b844857e5abafcac8abb4cac3f07ea0d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989397"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970358"
 ---
 # <a name="keyusages-enum-type"></a>keyUsages 枚举类型
 

@@ -4,12 +4,13 @@ description: '提供用于自定义资源实体的学校数据配置文件同步
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 397f4d732bc25d086b2aeae6efc697d2048e6a03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 46cd20bbe016110a313d5b195a518ef81ca05afe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334091"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972451"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>educationSynchronizationCustomization 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "33334091"
 
 提供用于自定义资源实体的学校数据配置文件同步的设置。 自定义项可应用于要同步的所有实体。 
 
->**注意:****synchronizationStartDate**属性仅适用于**StudentEnrollment**实体。
+>**注意:****SynchronizationStartDate**属性仅适用于**StudentEnrollment**实体。
 
 ## <a name="properties"></a>属性
 

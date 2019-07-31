@@ -2,14 +2,15 @@
 title: 列出 calendarView
 description: 从用户的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例，
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a2b810cf77815399abf67ae8ff26177c73b2cf0d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: cbf315de5e88756a840dce6418ef300e7f1034ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867435"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987671"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 

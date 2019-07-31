@@ -4,12 +4,13 @@ description: 获取对任意 OneDrive 帐户执行文件交互的唯一许可用
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ab112fe9d578f4e1b04ee945892e4b51fdec85eb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ff24bd79d4178288fa5212ef3ce8d8b7528d18e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983262"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 

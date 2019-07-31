@@ -4,12 +4,13 @@ description: 读取 windows81TrustedRootCertificate 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43c7a0c7dcf2215f2d34344cc6cbb2b5a804f0a1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1a3bfe347669d152156be730f3ef445fc32e303d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962174"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974932"
 ---
 # <a name="get-windows81trustedrootcertificate"></a>获取 windows81TrustedRootCertificate
 

@@ -4,12 +4,13 @@ description: '用于对教育部门中不同组织类型之间的通用性进行
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 49afe12f4897df80ce78ba28a024883cefeb0a96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a28577dca488cb11bc6c34c7c653e0db1ede3d4e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340476"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972619"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "33340476"
 |displayName|String| 组织显示名称。|
 |externalSource|string| 从中创建此组织的源。 可取值为：`sis`、`manual`、`unknownFutureValue`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无。
 
 

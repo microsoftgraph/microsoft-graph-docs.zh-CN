@@ -4,12 +4,13 @@ description: 列出 depOnboardingSetting 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 204f147b433fe3067ef61c0f935b136f881eddfd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ce24d86083dedf57b00019b733cae441b64778e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980367"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985299"
 ---
 # <a name="list-deponboardingsettings"></a>列出 depOnboardingSettings
 

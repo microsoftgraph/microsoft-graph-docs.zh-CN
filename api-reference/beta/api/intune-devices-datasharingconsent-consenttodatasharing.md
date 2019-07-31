@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 299606c40a7c4b9eb11bbc6c0bf2a71f029b1109
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ef8ce9be7c6d024ecb20fe7fa1825e32c39775c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959311"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981757"
 ---
 # <a name="consenttodatasharing-action"></a>consentToDataSharing 操作
 

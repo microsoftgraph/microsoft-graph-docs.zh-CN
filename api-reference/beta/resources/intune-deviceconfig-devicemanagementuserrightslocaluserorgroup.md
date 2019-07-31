@@ -4,12 +4,13 @@ description: 表示用于用户权限设置的本地用户或组的信息。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1cd7cb3f197e381da0b334ed849d881d071979e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e41a5dbf5d4756e7c635bfdf87aca46f54d8139f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989999"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970407"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 

@@ -4,12 +4,13 @@ description: DefenderSubmitSamplesConsentType 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 388ea6c7c99f2d56d63b5336b13d0ae22e3190d5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 5298c5753e7e870ab56054efa4912b7464468207
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979772"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970862"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>defenderSubmitSamplesConsentType 枚举类型
 

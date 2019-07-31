@@ -1,12 +1,16 @@
 ---
 title: 枚举值
 description: Microsoft Graph 枚举值
-ms.openlocfilehash: dbaa9acc7636bdf629df347efd0f59398083eef3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: enumPageType
+localization_priority: Normal
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 21723975a73ca7288e65e321a3eaeb323dad77b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435960"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972094"
 ---
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值
 

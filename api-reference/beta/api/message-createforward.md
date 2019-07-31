@@ -4,12 +4,13 @@ description: '创建草稿转发邮件以包含注释或更新任何邮件属性
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 28f7a1f412148130faa61a2b1fc3365e1f1bd1b3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e49e72d783ae05cfeb724a08d539bde42cdf415a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983916"
 ---
 # <a name="message-createforward"></a>message: createForward
 

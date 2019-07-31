@@ -4,12 +4,13 @@ description: '存档指定的团队。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9ecef149a8cebf297487c3060bdc51793df8d921
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 224e5082c74f9b75442ff0c3e6a9db31578fa8b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982450"
 ---
 # <a name="archive-team"></a>存档团队
 

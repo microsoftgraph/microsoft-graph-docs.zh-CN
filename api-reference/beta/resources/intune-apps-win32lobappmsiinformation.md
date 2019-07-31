@@ -4,12 +4,13 @@ description: 包含 Win32 应用程序的 MSI 应用程序属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb851430819e9f66d4394d696ddf50eb799886ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d993306cdd5f6c69d373669ed83fab6f986497df
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987360"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971653"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 

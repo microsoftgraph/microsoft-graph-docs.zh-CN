@@ -4,12 +4,13 @@ description: 获取用于加密 Apple 设备注册计划令牌的公钥
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c24c8c2596756b7d7904e9f3979fe405adf2e442
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8b97d666cb146d564101f28c6087e9ecd8b182d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980143"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985322"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 

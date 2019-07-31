@@ -4,12 +4,13 @@ description: 列出 importedAppleDeviceIdentity 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 837b14176441546fce084a4a1746fa43ce80af0d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d901872d94ea313f74f435ff7e83ede4de8198f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982033"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985089"
 ---
 # <a name="list-importedappledeviceidentities"></a>列出 importedAppleDeviceIdentities
 

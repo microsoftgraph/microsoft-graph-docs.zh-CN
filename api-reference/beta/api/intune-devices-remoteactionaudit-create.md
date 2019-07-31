@@ -4,12 +4,13 @@ description: 创建新的 remoteActionAudit 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fd5b9477fe5564dc5dcbaa65f9ca8771684fe73
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5f4573429db6ccb359feb4b4280483b8d7bbe7c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958135"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987073"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 

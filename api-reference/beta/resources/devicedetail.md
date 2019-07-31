@@ -4,12 +4,13 @@ description: 指示与用于登录的设备相关联的设备详细信息。 包
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f3a0d7f141723beb5194860b025fe6fa349eb95a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 45d87629f1ac513fe13c98592637f20f5fac0129
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657698"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973770"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 指示与用于登录的设备相关联的设备详细信息。 包括设备浏览器和操作系统信息 (如果设备是 Azure AD 托管) 等信息。

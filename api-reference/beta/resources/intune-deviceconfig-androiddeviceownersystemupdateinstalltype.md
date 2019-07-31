@@ -4,12 +4,13 @@ description: 适用于 Android 设备所有者的系统更新类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2beb0b2eba9c7c67a04d141ecff1463d4ae550ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 2cfc91de723bb10e39545b570d94ec1944221f9c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971499"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 枚举类型
 

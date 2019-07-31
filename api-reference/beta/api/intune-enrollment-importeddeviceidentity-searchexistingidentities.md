@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3ab3214d5f929d30b3c9bd657f8f49333598958
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c0fa9568578074de4439a07e06ae2981eb741e3a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981844"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985019"
 ---
 # <a name="searchexistingidentities-action"></a>searchExistingIdentities 操作
 

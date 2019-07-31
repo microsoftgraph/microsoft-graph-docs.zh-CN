@@ -4,12 +4,13 @@ description: 从指定分区中检索 page 对象的列表。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: e2e1f506883a177716d3b91519d1ce2a8f85f04d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: fff3108faf20615e769f37ca9ad1f0246efc5c0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982870"
 ---
 # <a name="list-pages"></a>列出页面
 
@@ -22,7 +23,7 @@ ms.locfileid: "33336079"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意: Read、notes。读写    |
+|委派（个人 Microsoft 帐户） | 注意: Read、Notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求

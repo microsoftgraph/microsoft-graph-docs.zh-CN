@@ -4,12 +4,13 @@ description: 检索 table 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cefeb722d082fe0bd9114e6a0ff5977e6246c58a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 96c718871adac11231f08fec2786a351b635b9b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982639"
 ---
 # <a name="get-table"></a>获取表格
 

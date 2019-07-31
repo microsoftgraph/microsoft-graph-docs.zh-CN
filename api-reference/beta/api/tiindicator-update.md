@@ -4,12 +4,13 @@ description: 更新 tiIndicator 对象的属性。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e505ad68f25ebe2fc0057c8d8aa7ac373295c1ba
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: aec339fd51b6c3e5111dadf29f8a8caf5ba3b724
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868167"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990755"
 ---
 # <a name="update-tiindicator"></a>更新 tiIndicator
 

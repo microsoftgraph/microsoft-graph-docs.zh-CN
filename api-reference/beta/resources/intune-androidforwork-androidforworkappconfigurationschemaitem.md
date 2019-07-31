@@ -4,12 +4,13 @@ description: Android for Work 应用程序的自定义配置架构内的单个�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3ac320b0630d7307a56b06cd07b8d4d0d7f12b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fe1e0cb9157463741a9ba4b7e1e6e77f7b454e73
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993471"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971779"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem 资源类型
 

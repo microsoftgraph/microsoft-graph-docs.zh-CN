@@ -4,12 +4,13 @@ description: 创建新的 importedAppleDeviceIdentity 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9696e51cd65ee8342ae1865008c3be744a41ed37
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1edf1c6709c5f71ee1d67fb89ff0d5717498fb95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985117"
 ---
 # <a name="create-importedappledeviceidentity"></a>创建 importedAppleDeviceIdentity
 

@@ -4,12 +4,13 @@ description: 包含联系人的文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe980bc27aed3579a70c52941b1a784696b553e3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4a9fe3263bed04252e8eba5129437d0a7c155d42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341193"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973186"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 

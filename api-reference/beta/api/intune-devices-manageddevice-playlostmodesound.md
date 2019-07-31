@@ -4,12 +4,13 @@ description: 远程锁定
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d68be90221644defb4761ca41dfa00d4bfede02
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2b465a6161a761ece1540990d6a8165ff1281147
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981428"
 ---
 # <a name="playlostmodesound-action"></a>playLostModeSound 操作
 

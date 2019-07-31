@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7822528aacc9d6f104012d43004fbb9aabba127c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d8af9e9337c68fcd4434514b85fa9217c79add26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506690"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972171"
 ---
 # <a name="emailappusageusercounts-resource-type"></a>emailAppUsageUserCounts 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "32506690"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | mailForMac        | Int64  |
 | outlookForMac     | Int64  |
 | outlookForWindows | Int64  |
@@ -27,8 +28,8 @@ ms.locfileid: "32506690"
 | pop3App           | Int64  |
 | imap4App          | Int64  |
 | smtpApp           | Int64  |
-| reportDate        | Date   |
-| reportPeriod      | 字符串 |
+| reportDate        | 日期   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

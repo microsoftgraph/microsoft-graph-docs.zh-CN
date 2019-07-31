@@ -4,12 +4,13 @@ description: IOS 更新配置，允许配置一周内的时间范围，用于安
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 294eaf6a0c1dbafca99106e6886b73ceb3b96436
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5e1c2d631d4cf4ab709f16b40c7d53314c60cda6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970365"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration 资源类型
 

@@ -4,12 +4,13 @@ description: 删除 groupPolicyPresentationMultiTextBox。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 477f00ed94d5a8d0135941249a6079b3cf6a2af4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 34244ce7ea67554980f734bf7d213f8b899471c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964533"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980812"
 ---
 # <a name="delete-grouppolicypresentationmultitextbox"></a>删除 groupPolicyPresentationMultiTextBox
 

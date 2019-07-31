@@ -4,12 +4,13 @@ description: 适用于 Android 工作配置文件 EAS 电子邮件配置文件�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 965470042ba1a5e01cd31c97852f60b869c81fdc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 98282d0ce53ff9a330ba947bd334727c810344bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971198"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>androidWorkProfileEasEmailProfileBase 资源类型
 

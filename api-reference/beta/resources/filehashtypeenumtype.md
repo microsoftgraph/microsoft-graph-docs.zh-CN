@@ -2,12 +2,15 @@
 title: fileHashType 枚举
 description: 文件哈希类型的枚举。
 localization_priority: Normal
-ms.openlocfilehash: a792b2473b6698c308f0248260d7a004d4cf9774
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: enumPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d377d530bf3b9dbdef37178ff6290ba4b63e6ad4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972024"
 ---
 # <a name="filehashtype-enum"></a>fileHashType 枚举
 

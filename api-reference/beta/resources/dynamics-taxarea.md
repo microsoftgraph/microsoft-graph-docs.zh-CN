@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: aeda0ca136c178355a8a8f9589eb7410399ef62a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 09c1c51fed961489d824136f28aaa2f5b3859b44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972892"
 ---
 # <a name="taxareas-resource-type"></a>taxAreas 资源类型
 表示 Dynamics 365 Business Central 中的税务区域资源类型。
@@ -30,7 +31,7 @@ ms.locfileid: "32507229"
 |id|GUID|税务区域的唯一 ID。 不可编辑。|
 |code|字符串, 最大大小为20| 税务区域的代码。|
 |displayName|字符串, 最大大小为50| 税务区域的显示名称。|
-|taxType|字符串|税务区域的税金类型。|
+|taxType|string|税务区域的税金类型。|
 |lastModifiedDateTime|datetime|税区域的最后修改日期时间。 只读。|
 
 ## <a name="relationships"></a>关系

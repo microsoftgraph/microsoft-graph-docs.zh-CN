@@ -4,12 +4,13 @@ description: 获取与表的总计行相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 37dae4173c29182aba2442ada88be366c18cbcb9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6f5027008df7cb9e3174e21760b81cc69ce751b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982604"
 ---
 # <a name="table-totalrowrange"></a>Table:TotalRowRange
 

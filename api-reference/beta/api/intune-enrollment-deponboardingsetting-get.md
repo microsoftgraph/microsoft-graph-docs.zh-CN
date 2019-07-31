@@ -4,12 +4,13 @@ description: 读取 depOnboardingSetting 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0434bb6e93033d2f144f47a2f6503f49f4108bdf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b2e7fbeea13ecc346035df56b7bc997c1b935fb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980192"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985321"
 ---
 # <a name="get-deponboardingsetting"></a>获取 depOnboardingSetting
 

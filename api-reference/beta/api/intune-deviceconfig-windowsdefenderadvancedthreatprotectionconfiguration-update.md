@@ -4,12 +4,13 @@ description: 更新 windowsDefenderAdvancedThreatProtectionConfiguration 对象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8015919cd1bc9f84c7495f3e36fb9f1d8a78a47
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 14c5486e20e8c97414e904c91c78b4b04ea42216
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962027"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982296"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>更新 windowsDefenderAdvancedThreatProtectionConfiguration
 

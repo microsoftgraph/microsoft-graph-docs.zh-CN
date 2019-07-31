@@ -4,12 +4,13 @@ description: '**InvitationParticipant**用于表示与对话邀请关联的一�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56eb1ad90410edca795a8e29ecaa4b8b94e915ee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 570c2740cce2f4bc3b5584ba04ed50c9467591af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345427"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967152"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 

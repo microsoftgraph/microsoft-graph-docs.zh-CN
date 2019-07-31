@@ -4,12 +4,13 @@ description: 适用于工作的 Android 跨配置文件数据共享类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29819b0e18c689056bc0c3d27b869ac8092e6d96
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: ac2e6d2c7004d9f4306aed70b75c8e8d55df822e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992211"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971408"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>androidForWorkCrossProfileDataSharingType 枚举类型
 

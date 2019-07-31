@@ -4,12 +4,13 @@ description: '资源周围的包装, 用于提交。 如果从分配中复制了
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b96607a0d37a3ec8af0f6ff0bad61215d6e9008c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 48f4549354603346e39b5e1f6f387b207e2f14ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972479"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource 资源类型
 

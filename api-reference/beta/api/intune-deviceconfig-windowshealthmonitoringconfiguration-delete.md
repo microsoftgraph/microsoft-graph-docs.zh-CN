@@ -4,12 +4,13 @@ description: 删除 windowsHealthMonitoringConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83a9ad43ab6fa48098e988e80e0756ff6e57aa03
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5645ef6c179e627b8a07ecd0290394b9a7f1be21
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984991"
 ---
 # <a name="delete-windowshealthmonitoringconfiguration"></a>删除 windowsHealthMonitoringConfiguration
 

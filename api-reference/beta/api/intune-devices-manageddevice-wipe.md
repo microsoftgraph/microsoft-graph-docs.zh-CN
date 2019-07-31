@@ -4,12 +4,13 @@ description: 擦除设备
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b7c1c39104180e6edc82fc49b21d2df05687340
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4f3a7f8c7bea6439b810bf7cc9df0be7dd06a81c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981386"
 ---
 # <a name="wipe-action"></a>擦除操作
 

@@ -4,12 +4,13 @@ description: 导出移动配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3027976c37c6b8af1ec30fb8695f778479318ab8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b30a8dafc6f785a1f15e9af49f6c93d7a09c12e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981368"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985194"
 ---
 # <a name="exportmobileconfig-function"></a>exportMobileConfig 函数
 

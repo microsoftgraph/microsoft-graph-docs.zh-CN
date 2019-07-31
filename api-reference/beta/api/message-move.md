@@ -4,12 +4,13 @@ description: 将邮件移动到文件夹。 该操作会在目标文件夹中创
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d4abc154b6c148a77f54ebafb4ed0458bf3b7cfb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e0c96d5a921b4e9a7e3e051ccac9d3678a2b259a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879455"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983914"
 ---
 # <a name="message-move"></a>message: move
 

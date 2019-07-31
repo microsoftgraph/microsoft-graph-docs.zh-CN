@@ -4,12 +4,13 @@ description: 组 id 选项类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62b39847b229839ae1a8874005e50707fd39139e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fc2c900828526ac4d2788c2b91e669bae04f452f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979625"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970743"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>deliveryOptimizationGroupIdSourceOptions 资源类型
 

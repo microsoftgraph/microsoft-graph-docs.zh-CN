@@ -4,12 +4,13 @@ description: 列出 windowsInformationProtectionAppLockerFile 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ca7ebad7e5cb5c2d7359b9b2bbc98113aefd8b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3a57e6eaa89e91c4ca94717d5cc438fc4b1a7901
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963406"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984746"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>列出 windowsInformationProtectionAppLockerFiles
 

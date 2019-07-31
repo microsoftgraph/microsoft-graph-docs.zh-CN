@@ -1,21 +1,22 @@
 ---
 title: callRoute 资源类型
-description: callRoute 类型。
+description: CallRoute 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 06dd1a2265c5a6bda9feba0b51e7fd731d7945c3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9978bffd55f62f0646f84d2405df70eba6232d68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974052"
 ---
 # <a name="callroute-resource-type"></a>callRoute 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-callRoute 类型。
+CallRoute 类型。
 
 ## <a name="properties"></a>属性
 

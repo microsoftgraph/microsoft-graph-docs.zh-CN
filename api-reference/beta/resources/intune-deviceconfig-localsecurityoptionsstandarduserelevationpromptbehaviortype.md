@@ -4,12 +4,13 @@ description: LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3727da24bdf384ad72dc695f110127bb10b2421d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c27c26f374d2fd27056f1dd10c7744969828eab5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989264"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970218"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
 

@@ -4,12 +4,13 @@ description: 更新 windowsProtectionState 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2554684bdd5ebd608ed054171604075ecebcaccc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 470bf1eae7f0efb8feb0759c29749e3ef1549218
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978330"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985635"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 

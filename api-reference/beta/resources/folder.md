@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: '文件夹资源将与文件夹相关的数据项分组到一个单一结构。 '
 ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
-ms.openlocfilehash: 77c13d980590e908de5c7f0a8a7cbf67d1cf031e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: f9cbbba6ae20c56800a5f6f492319f47b7d8017c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340228"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971989"
 ---
 # <a name="folder-resource-type"></a>文件夹资源类型
 

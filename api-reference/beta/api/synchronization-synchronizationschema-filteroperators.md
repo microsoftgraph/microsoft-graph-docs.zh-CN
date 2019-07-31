@@ -2,14 +2,15 @@
 title: 'synchronizationSchema: filterOperators'
 description: 列出作用域筛选器支持的所有运算符。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba5616cd767ff48d0b1d14e2ddf6db9d0c3d1959
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: b61686e6d583a79fc1325ab455e542be73e17d6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982696"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 

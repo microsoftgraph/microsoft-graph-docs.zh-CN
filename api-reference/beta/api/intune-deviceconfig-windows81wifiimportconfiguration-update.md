@@ -4,12 +4,13 @@ description: 更新 windows81WifiImportConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 718f31356565aa28d457b52523b851cc65642a5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d1f395a7fc1a155e31c336531206c2e881eec854
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982387"
 ---
 # <a name="update-windows81wifiimportconfiguration"></a>更新 windows81WifiImportConfiguration
 

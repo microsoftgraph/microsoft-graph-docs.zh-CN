@@ -4,12 +4,13 @@ description: 与**工作分配. 评分**属性一起使用。 这是 educationAs
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 61e6e425730685d4447875cdb074526e7ebc0a17
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 18661c6d0eb0269f429fe22203b59b4f6862f21c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334428"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972801"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>educationAssignmentPointsGradeType 资源类型
 

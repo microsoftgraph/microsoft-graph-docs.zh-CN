@@ -4,12 +4,13 @@ description: 通过提供此配置文件中的配置, 可以指示 Android 设�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 717bf92474e603532b9f36047120c153fc4e8adb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 0b7cba9f70d901be653ac0839acd63831711aed9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992260"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971338"
 ---
 # <a name="androidwificonfiguration-resource-type"></a>androidWiFiConfiguration 资源类型
 

@@ -4,12 +4,13 @@ description: 从表中删除列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c25ddff42ea2aa8542ee922da4f8544e3b4affa5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 3fac49c7f11123f9f0435762b053b47438f5bbdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982534"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 

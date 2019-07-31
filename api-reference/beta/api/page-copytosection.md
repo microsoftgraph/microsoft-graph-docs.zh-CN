@@ -4,12 +4,13 @@ description: 将页面复制到特定分区。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 842647b52902aba153967109f83eec14e1b7d219
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fe8e0a18e91ecdad9daa648eb8a9944cad7a14de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992421"
 ---
 # <a name="page-copytosection"></a>页面: copyToSection
 

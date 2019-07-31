@@ -4,12 +4,13 @@ description: 创建新的 depMacOSEnrollmentProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8021d46954b54e34dfa541f87fee95a911caefba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 11b1863ccd5339b6978809432eb84b8095bc0c4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980269"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985390"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>创建 depMacOSEnrollmentProfile
 

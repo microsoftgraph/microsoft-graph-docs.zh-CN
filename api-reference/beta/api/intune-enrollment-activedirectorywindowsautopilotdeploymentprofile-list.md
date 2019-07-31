@@ -4,12 +4,13 @@ description: 列出 activeDirectoryWindowsAutopilotDeploymentProfile 对象的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c159826aad9906639e0748dacd3a056bb86c859
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b3889b53c4af086bdc5c3cbd1744caada7e9120b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978904"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985605"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>列出 activeDirectoryWindowsAutopilotDeploymentProfiles
 

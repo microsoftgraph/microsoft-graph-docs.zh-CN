@@ -4,12 +4,13 @@ description: Android 设备所有者设备的应用自动更新策略状态的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 703e8bbb46ae289acfa09267052f9c78fe0da912
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: bdc8c5f9064ab68017d9857f384fb17388d0cce7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971548"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 

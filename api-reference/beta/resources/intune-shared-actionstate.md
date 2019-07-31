@@ -4,12 +4,13 @@ description: 设备上操作的状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35fccdc65eec7781f38d366e31ddb1a626005169
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c561f3ea046423e26daeb544d92b89a98e4bc55b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996223"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967516"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 

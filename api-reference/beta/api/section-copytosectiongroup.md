@@ -4,12 +4,13 @@ description: 将分区复制到特定分区组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 5c660087abb363fa5ec6d833ec074c732836a734
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a9a0106b27ec2efeca6ee0cb0b7ec9dfaed0d829
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870539"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982926"
 ---
 # <a name="section-copytosectiongroup"></a>部分: copyToSectionGroup
 
