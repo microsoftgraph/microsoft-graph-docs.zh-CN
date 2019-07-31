@@ -4,30 +4,31 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 371352c42e870f45224999b7a618d1bb694ea512
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 18b86708071f1fab573571703dbb5bc253fcf2ce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506676"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972136"
 ---
-# <a name="emailappusageversionsusercounts-resource-type"></a><span data-ttu-id="22a68-103">emailAppUsageVersionsUserCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="22a68-103">emailAppUsageVersionsUserCounts resource type</span></span>
+# <a name="emailappusageversionsusercounts-resource-type"></a><span data-ttu-id="b047a-103">emailAppUsageVersionsUserCounts 资源类型</span><span class="sxs-lookup"><span data-stu-id="b047a-103">emailAppUsageVersionsUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="22a68-104">属性</span><span class="sxs-lookup"><span data-stu-id="22a68-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b047a-104">属性</span><span class="sxs-lookup"><span data-stu-id="b047a-104">Properties</span></span>
 
-| <span data-ttu-id="22a68-105">属性</span><span class="sxs-lookup"><span data-stu-id="22a68-105">Property</span></span>          | <span data-ttu-id="22a68-106">类型</span><span class="sxs-lookup"><span data-stu-id="22a68-106">Type</span></span>   |
+| <span data-ttu-id="b047a-105">属性</span><span class="sxs-lookup"><span data-stu-id="b047a-105">Property</span></span>          | <span data-ttu-id="b047a-106">类型</span><span class="sxs-lookup"><span data-stu-id="b047a-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="22a68-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="22a68-107">reportRefreshDate</span></span> | <span data-ttu-id="22a68-108">Date</span><span class="sxs-lookup"><span data-stu-id="22a68-108">Date</span></span>   |
-| <span data-ttu-id="22a68-109">outlook2016</span><span class="sxs-lookup"><span data-stu-id="22a68-109">outlook2016</span></span>       | <span data-ttu-id="22a68-110">Int64</span><span class="sxs-lookup"><span data-stu-id="22a68-110">Int64</span></span>  |
-| <span data-ttu-id="22a68-111">outlook2013</span><span class="sxs-lookup"><span data-stu-id="22a68-111">outlook2013</span></span>       | <span data-ttu-id="22a68-112">Int64</span><span class="sxs-lookup"><span data-stu-id="22a68-112">Int64</span></span>  |
-| <span data-ttu-id="22a68-113">outlook2010</span><span class="sxs-lookup"><span data-stu-id="22a68-113">outlook2010</span></span>       | <span data-ttu-id="22a68-114">Int64</span><span class="sxs-lookup"><span data-stu-id="22a68-114">Int64</span></span>  |
-| <span data-ttu-id="22a68-115">outlook2007</span><span class="sxs-lookup"><span data-stu-id="22a68-115">outlook2007</span></span>       | <span data-ttu-id="22a68-116">Int64</span><span class="sxs-lookup"><span data-stu-id="22a68-116">Int64</span></span>  |
-| <span data-ttu-id="22a68-117">流程</span><span class="sxs-lookup"><span data-stu-id="22a68-117">undetermined</span></span>      | <span data-ttu-id="22a68-118">Int64</span><span class="sxs-lookup"><span data-stu-id="22a68-118">Int64</span></span>  |
-| <span data-ttu-id="22a68-119">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="22a68-119">reportPeriod</span></span>      | <span data-ttu-id="22a68-120">字符串</span><span class="sxs-lookup"><span data-stu-id="22a68-120">String</span></span> |
+| <span data-ttu-id="b047a-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="b047a-107">reportRefreshDate</span></span> | <span data-ttu-id="b047a-108">日期</span><span class="sxs-lookup"><span data-stu-id="b047a-108">Date</span></span>   |
+| <span data-ttu-id="b047a-109">outlook2016</span><span class="sxs-lookup"><span data-stu-id="b047a-109">outlook2016</span></span>       | <span data-ttu-id="b047a-110">Int64</span><span class="sxs-lookup"><span data-stu-id="b047a-110">Int64</span></span>  |
+| <span data-ttu-id="b047a-111">outlook2013</span><span class="sxs-lookup"><span data-stu-id="b047a-111">outlook2013</span></span>       | <span data-ttu-id="b047a-112">Int64</span><span class="sxs-lookup"><span data-stu-id="b047a-112">Int64</span></span>  |
+| <span data-ttu-id="b047a-113">outlook2010</span><span class="sxs-lookup"><span data-stu-id="b047a-113">outlook2010</span></span>       | <span data-ttu-id="b047a-114">Int64</span><span class="sxs-lookup"><span data-stu-id="b047a-114">Int64</span></span>  |
+| <span data-ttu-id="b047a-115">outlook2007</span><span class="sxs-lookup"><span data-stu-id="b047a-115">outlook2007</span></span>       | <span data-ttu-id="b047a-116">Int64</span><span class="sxs-lookup"><span data-stu-id="b047a-116">Int64</span></span>  |
+| <span data-ttu-id="b047a-117">流程</span><span class="sxs-lookup"><span data-stu-id="b047a-117">undetermined</span></span>      | <span data-ttu-id="b047a-118">Int64</span><span class="sxs-lookup"><span data-stu-id="b047a-118">Int64</span></span>  |
+| <span data-ttu-id="b047a-119">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="b047a-119">reportPeriod</span></span>      | <span data-ttu-id="b047a-120">String</span><span class="sxs-lookup"><span data-stu-id="b047a-120">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="22a68-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="22a68-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b047a-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b047a-121">JSON representation</span></span>
 
-<span data-ttu-id="22a68-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="22a68-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b047a-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b047a-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

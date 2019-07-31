@@ -4,31 +4,32 @@ description: 创建新的 windowsManagementAppHealthState 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cdcb0c26e2ab6687ba6b4aac46fdb12d6539ca9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 87874977dff4d573ff473a801f30a7707648fdf1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978456"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981225"
 ---
-# <a name="create-windowsmanagementapphealthstate"></a><span data-ttu-id="60207-103">创建 windowsManagementAppHealthState</span><span class="sxs-lookup"><span data-stu-id="60207-103">Create windowsManagementAppHealthState</span></span>
+# <a name="create-windowsmanagementapphealthstate"></a><span data-ttu-id="23016-103">创建 windowsManagementAppHealthState</span><span class="sxs-lookup"><span data-stu-id="23016-103">Create windowsManagementAppHealthState</span></span>
 
-> <span data-ttu-id="60207-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="60207-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="23016-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="23016-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="60207-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="60207-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="23016-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="23016-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="60207-106">创建新的[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="60207-106">Create a new [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object.</span></span>
+<span data-ttu-id="23016-106">创建新的[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="23016-106">Create a new [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="60207-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="60207-107">Prerequisites</span></span>
-<span data-ttu-id="60207-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="60207-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="23016-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="23016-107">Prerequisites</span></span>
+<span data-ttu-id="23016-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="23016-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="60207-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="60207-110">Permission type</span></span>|<span data-ttu-id="60207-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="60207-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="23016-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="23016-110">Permission type</span></span>|<span data-ttu-id="23016-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="23016-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="60207-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="60207-112">Delegated (work or school account)</span></span>|<span data-ttu-id="60207-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60207-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="60207-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="60207-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="60207-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="60207-115">Not supported.</span></span>|
-|<span data-ttu-id="60207-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="60207-116">Application</span></span>|<span data-ttu-id="60207-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="60207-117">Not supported.</span></span>|
+|<span data-ttu-id="23016-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="23016-112">Delegated (work or school account)</span></span>|<span data-ttu-id="23016-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23016-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="23016-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="23016-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="23016-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="23016-115">Not supported.</span></span>|
+|<span data-ttu-id="23016-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="23016-116">Application</span></span>|<span data-ttu-id="23016-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="23016-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="60207-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="60207-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="23016-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="23016-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +38,35 @@ ms.locfileid: "34978456"
 POST /deviceAppManagement/windowsManagementApp/healthStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="60207-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="60207-119">Request headers</span></span>
-|<span data-ttu-id="60207-120">标头</span><span class="sxs-lookup"><span data-stu-id="60207-120">Header</span></span>|<span data-ttu-id="60207-121">值</span><span class="sxs-lookup"><span data-stu-id="60207-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="23016-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="23016-119">Request headers</span></span>
+|<span data-ttu-id="23016-120">标头</span><span class="sxs-lookup"><span data-stu-id="23016-120">Header</span></span>|<span data-ttu-id="23016-121">值</span><span class="sxs-lookup"><span data-stu-id="23016-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="60207-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="60207-122">Authorization</span></span>|<span data-ttu-id="60207-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="60207-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="60207-124">接受</span><span class="sxs-lookup"><span data-stu-id="60207-124">Accept</span></span>|<span data-ttu-id="60207-125">application/json</span><span class="sxs-lookup"><span data-stu-id="60207-125">application/json</span></span>|
+|<span data-ttu-id="23016-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="23016-122">Authorization</span></span>|<span data-ttu-id="23016-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="23016-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="23016-124">接受</span><span class="sxs-lookup"><span data-stu-id="23016-124">Accept</span></span>|<span data-ttu-id="23016-125">application/json</span><span class="sxs-lookup"><span data-stu-id="23016-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="60207-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="60207-126">Request body</span></span>
-<span data-ttu-id="60207-127">在请求正文中, 提供 windowsManagementAppHealthState 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="60207-127">In the request body, supply a JSON representation for the windowsManagementAppHealthState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="23016-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="23016-126">Request body</span></span>
+<span data-ttu-id="23016-127">在请求正文中, 提供 windowsManagementAppHealthState 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23016-127">In the request body, supply a JSON representation for the windowsManagementAppHealthState object.</span></span>
 
-<span data-ttu-id="60207-128">下表显示创建 windowsManagementAppHealthState 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="60207-128">The following table shows the properties that are required when you create the windowsManagementAppHealthState.</span></span>
+<span data-ttu-id="23016-128">下表显示创建 windowsManagementAppHealthState 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="23016-128">The following table shows the properties that are required when you create the windowsManagementAppHealthState.</span></span>
 
-|<span data-ttu-id="60207-129">属性</span><span class="sxs-lookup"><span data-stu-id="60207-129">Property</span></span>|<span data-ttu-id="60207-130">类型</span><span class="sxs-lookup"><span data-stu-id="60207-130">Type</span></span>|<span data-ttu-id="60207-131">说明</span><span class="sxs-lookup"><span data-stu-id="60207-131">Description</span></span>|
+|<span data-ttu-id="23016-129">属性</span><span class="sxs-lookup"><span data-stu-id="23016-129">Property</span></span>|<span data-ttu-id="23016-130">类型</span><span class="sxs-lookup"><span data-stu-id="23016-130">Type</span></span>|<span data-ttu-id="23016-131">说明</span><span class="sxs-lookup"><span data-stu-id="23016-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="60207-132">id</span><span class="sxs-lookup"><span data-stu-id="60207-132">id</span></span>|<span data-ttu-id="60207-133">String</span><span class="sxs-lookup"><span data-stu-id="60207-133">String</span></span>|<span data-ttu-id="60207-134">Windows management 应用运行状况状态的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="60207-134">Unique Identifier for the Windows management app health state</span></span>|
-|<span data-ttu-id="60207-135">healthState</span><span class="sxs-lookup"><span data-stu-id="60207-135">healthState</span></span>|[<span data-ttu-id="60207-136">healthState</span><span class="sxs-lookup"><span data-stu-id="60207-136">healthState</span></span>](../resources/intune-devices-healthstate.md)|<span data-ttu-id="60207-137">Windows 管理应用运行状况状态。</span><span class="sxs-lookup"><span data-stu-id="60207-137">Windows management app health state.</span></span> <span data-ttu-id="60207-138">可取值为：`unknown`、`healthy`、`unhealthy`。</span><span class="sxs-lookup"><span data-stu-id="60207-138">Possible values are: `unknown`, `healthy`, `unhealthy`.</span></span>|
-|<span data-ttu-id="60207-139">installedVersion</span><span class="sxs-lookup"><span data-stu-id="60207-139">installedVersion</span></span>|<span data-ttu-id="60207-140">String</span><span class="sxs-lookup"><span data-stu-id="60207-140">String</span></span>|<span data-ttu-id="60207-141">Windows 管理应用程序已安装版本。</span><span class="sxs-lookup"><span data-stu-id="60207-141">Windows management app installed version.</span></span>|
-|<span data-ttu-id="60207-142">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="60207-142">lastCheckInDateTime</span></span>|<span data-ttu-id="60207-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="60207-143">DateTimeOffset</span></span>|<span data-ttu-id="60207-144">Windows 管理应用程序上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="60207-144">Windows management app last check-in time.</span></span>|
-|<span data-ttu-id="60207-145">deviceName</span><span class="sxs-lookup"><span data-stu-id="60207-145">deviceName</span></span>|<span data-ttu-id="60207-146">String</span><span class="sxs-lookup"><span data-stu-id="60207-146">String</span></span>|<span data-ttu-id="60207-147">在其上安装 Windows management 应用的设备的名称。</span><span class="sxs-lookup"><span data-stu-id="60207-147">Name of the device on which Windows management app is installed.</span></span>|
-|<span data-ttu-id="60207-148">deviceOSVersion</span><span class="sxs-lookup"><span data-stu-id="60207-148">deviceOSVersion</span></span>|<span data-ttu-id="60207-149">String</span><span class="sxs-lookup"><span data-stu-id="60207-149">String</span></span>|<span data-ttu-id="60207-150">Windows 10 OS 版本的 Windows management app 安装在该设备上。</span><span class="sxs-lookup"><span data-stu-id="60207-150">Windows 10 OS version of the device on which Windows management app is installed.</span></span>|
+|<span data-ttu-id="23016-132">id</span><span class="sxs-lookup"><span data-stu-id="23016-132">id</span></span>|<span data-ttu-id="23016-133">String</span><span class="sxs-lookup"><span data-stu-id="23016-133">String</span></span>|<span data-ttu-id="23016-134">Windows management 应用运行状况状态的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="23016-134">Unique Identifier for the Windows management app health state</span></span>|
+|<span data-ttu-id="23016-135">healthState</span><span class="sxs-lookup"><span data-stu-id="23016-135">healthState</span></span>|[<span data-ttu-id="23016-136">healthState</span><span class="sxs-lookup"><span data-stu-id="23016-136">healthState</span></span>](../resources/intune-devices-healthstate.md)|<span data-ttu-id="23016-137">Windows 管理应用运行状况状态。</span><span class="sxs-lookup"><span data-stu-id="23016-137">Windows management app health state.</span></span> <span data-ttu-id="23016-138">可取值为：`unknown`、`healthy`、`unhealthy`。</span><span class="sxs-lookup"><span data-stu-id="23016-138">Possible values are: `unknown`, `healthy`, `unhealthy`.</span></span>|
+|<span data-ttu-id="23016-139">installedVersion</span><span class="sxs-lookup"><span data-stu-id="23016-139">installedVersion</span></span>|<span data-ttu-id="23016-140">String</span><span class="sxs-lookup"><span data-stu-id="23016-140">String</span></span>|<span data-ttu-id="23016-141">Windows 管理应用程序已安装版本。</span><span class="sxs-lookup"><span data-stu-id="23016-141">Windows management app installed version.</span></span>|
+|<span data-ttu-id="23016-142">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="23016-142">lastCheckInDateTime</span></span>|<span data-ttu-id="23016-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="23016-143">DateTimeOffset</span></span>|<span data-ttu-id="23016-144">Windows 管理应用程序上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="23016-144">Windows management app last check-in time.</span></span>|
+|<span data-ttu-id="23016-145">deviceName</span><span class="sxs-lookup"><span data-stu-id="23016-145">deviceName</span></span>|<span data-ttu-id="23016-146">String</span><span class="sxs-lookup"><span data-stu-id="23016-146">String</span></span>|<span data-ttu-id="23016-147">在其上安装 Windows management 应用的设备的名称。</span><span class="sxs-lookup"><span data-stu-id="23016-147">Name of the device on which Windows management app is installed.</span></span>|
+|<span data-ttu-id="23016-148">deviceOSVersion</span><span class="sxs-lookup"><span data-stu-id="23016-148">deviceOSVersion</span></span>|<span data-ttu-id="23016-149">String</span><span class="sxs-lookup"><span data-stu-id="23016-149">String</span></span>|<span data-ttu-id="23016-150">Windows 10 OS 版本的 Windows management app 安装在该设备上。</span><span class="sxs-lookup"><span data-stu-id="23016-150">Windows 10 OS version of the device on which Windows management app is installed.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="60207-151">响应</span><span class="sxs-lookup"><span data-stu-id="60207-151">Response</span></span>
-<span data-ttu-id="60207-152">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="60207-152">If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="23016-151">响应</span><span class="sxs-lookup"><span data-stu-id="23016-151">Response</span></span>
+<span data-ttu-id="23016-152">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="23016-152">If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="60207-153">示例</span><span class="sxs-lookup"><span data-stu-id="60207-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="23016-153">示例</span><span class="sxs-lookup"><span data-stu-id="23016-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="60207-154">请求</span><span class="sxs-lookup"><span data-stu-id="60207-154">Request</span></span>
-<span data-ttu-id="60207-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="60207-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="23016-154">请求</span><span class="sxs-lookup"><span data-stu-id="23016-154">Request</span></span>
+<span data-ttu-id="23016-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="23016-155">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/healthStates
 Content-type: application/json
@@ -81,8 +82,8 @@ Content-length: 300
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="60207-156">响应</span><span class="sxs-lookup"><span data-stu-id="60207-156">Response</span></span>
-<span data-ttu-id="60207-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="60207-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="23016-156">响应</span><span class="sxs-lookup"><span data-stu-id="23016-156">Response</span></span>
+<span data-ttu-id="23016-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="23016-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
