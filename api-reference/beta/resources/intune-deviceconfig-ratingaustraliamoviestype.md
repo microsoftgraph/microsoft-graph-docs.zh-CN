@@ -4,12 +4,13 @@ description: 澳大利亚的电影评级标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df09ba09db619d22de4e59a5976173df5a3daa79
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 968e6e4cd0fdb7c0b2bf0ca203fb57d6cd2085bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969875"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 

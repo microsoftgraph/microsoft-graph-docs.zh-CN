@@ -4,12 +4,13 @@ description: 重置密码操作结果
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5684d5bc61ecde5eb41b258b88e1ae1ff3502f4a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 883818d7061f070f01f3e3c9fdfee9e15f322829
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968258"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult 资源类型
 

@@ -4,12 +4,13 @@ description: 创建新类别。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: eb169310f77e2f4f13a06dbb9871db07dc392101
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 16f7f4bf6ea58aa5d29ae63b95f4b104d0dd1d93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324650"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955365"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 

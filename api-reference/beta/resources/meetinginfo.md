@@ -4,12 +4,13 @@ description: 指定用于创建或加入会议的会议信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3ad2ecbce32727cec26fbf0f9c72d3846e3792af
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: da3e89e0aa28868debd4b6ea98291fa88b42bb0b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966851"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 

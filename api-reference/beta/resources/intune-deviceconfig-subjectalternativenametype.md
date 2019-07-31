@@ -4,12 +4,13 @@ description: "\"主题备用名称\" 选项。"
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c4ba2c564a32879d7a41a53ff5470d040d4db6d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 40f2e16f4196662e9ac164796babaac853d60fc3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964211"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969651"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>subjectAlternativeNameType 枚举类型
 

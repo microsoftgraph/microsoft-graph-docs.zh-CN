@@ -4,12 +4,13 @@ description: 本主题提供由 secureAssessment 资源公开的已声明方法�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91bff1d9f7d74d676bfb6851349f7f79c6bf6bc6
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 7547f25bfde78362205b056992efa32124b59f53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715611"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969280"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>windows10SecureAssessmentConfiguration 资源类型
 

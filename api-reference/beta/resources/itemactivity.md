@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActivity 资源提供有关在项目上或容器内发生的活动的信息。
 ms.date: 09/14/2017
 title: ItemActivity
 localization_priority: Normal
-ms.openlocfilehash: bcb68f94574512fd7e952db036a86f242652851d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: ab96c3169a2d2dc37e6b94ab325866e93fa4d6c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339852"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967092"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity 资源类型
 

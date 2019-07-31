@@ -4,12 +4,13 @@ description: VPN 连接类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c44c2a6e9f576f6ba77c0e4b4954019ade655bc5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e72da7fce320b1da546c9f8d7f5113cbad13dd5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982103"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969217"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 枚举类型
 

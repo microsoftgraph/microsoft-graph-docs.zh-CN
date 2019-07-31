@@ -4,12 +4,13 @@ description: Windows 10 应用程序类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7170e080afbe503100c5f049b7d11f3625b18a23
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 32e8100a0d5f195c29a19e1e91da744504f5be82
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992736"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969266"
 ---
 # <a name="windows10apptype-enum-type"></a>windows10AppType 枚举类型
 

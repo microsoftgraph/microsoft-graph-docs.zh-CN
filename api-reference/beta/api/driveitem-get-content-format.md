@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 使用此 API 检索特定格式的项的内容。
 ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 34e26488555c344904b7bb66df57541db1d98818
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 66054df1e4c58effff8c93850ad9ef18bc42e58d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861192"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957141"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 

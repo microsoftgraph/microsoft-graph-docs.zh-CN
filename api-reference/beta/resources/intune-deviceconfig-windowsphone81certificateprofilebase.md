@@ -4,12 +4,13 @@ description: 基本 Windows Phone 8.1 + 证书配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72afe82938619f57f52ce794d510baf2dcde4c1c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 272ad2f35cd1ecd7fff74a7671eb8c9404a81baa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968818"
 ---
 # <a name="windowsphone81certificateprofilebase-resource-type"></a>windowsPhone81CertificateProfileBase 资源类型
 

@@ -4,12 +4,13 @@ description: 使用此 API 可以通过 owners 导航属性从 Office 365 组、
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 348b9c8938523cef80ceab2084d769f5294421ee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9f95f242dde1447383f07508e686f42ab64b0da1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954011"
 ---
 # <a name="remove-owner"></a>删除所有者
 

@@ -1,21 +1,22 @@
 ---
 title: mediaStream 资源类型
-description: mediaStream 类型。
+description: MediaStream 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69d8088ba161bdf4dbf0482fdab8ad757347126d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966823"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-mediaStream 类型。
+MediaStream 类型。
 
 ## <a name="properties"></a>属性
 

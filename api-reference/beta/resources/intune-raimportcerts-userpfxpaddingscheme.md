@@ -4,12 +4,13 @@ description: 加密提供程序使用的填充方案的受支持的值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a079075d3e0a44a773c854df55df1635d54584c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: a3c4d4d07a3891167838af6de7ea854883a5b1e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967698"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 

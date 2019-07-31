@@ -2,12 +2,15 @@
 title: networkConnection 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 94bf27265f591d32c01e7043d3a10468a924d78a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 90e505abfb9256276d24b81c3d038b2b0882069a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966669"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -26,7 +29,7 @@ ms.locfileid: "33342196"
 |destinationUrl|String|网络连接 URL/URI 字符串-不包括参数。 (例如, "www.contoso.com/products/default.html")|
 |direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
 |domainRegisteredDateTime|DateTimeOffset|注册目标域的日期。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|localDnsName|String|在主机的本地 dns 缓存中显示的本地 dns 名称解析 (例如, 在 "主机" 文件被篡改的情况下)。|
+|localDnsName|String|在主机的本地 DNS 缓存中显示的本地 DNS 名称解析 (例如, 在 "主机" 文件被篡改的情况下)。|
 |natDestinationAddress|String|网络地址转换目标 IP 地址。|
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
@@ -49,7 +52,7 @@ ms.locfileid: "33342196"
 |ggp|第三章| 网关到网关协议。|
 |ipv4|4| Internet 协议版本4。|
 |tcp|型| 传输控制协议。|
-|pup|12 | PARC 通用数据包协议。|
+|pup|12| PARC 通用数据包协议。|
 |udp|×| 用户数据报协议。|
 |idp|22| Internet 数据报协议。|
 |ipv4|41| Internet 协议版本 6 (ipv6)。|
@@ -57,7 +60,7 @@ ms.locfileid: "33342196"
 |ipv6FragmentHeader|44| ipv6 分段标头。|
 |ipSecEncapsulatingSecurityPayload|50| ipv6 封装安全有效负载标头。|
 |ipSecAuthenticationHeader|51| ipv6 身份验证标头。|
-|icmpV6|58| ipv6 的 Internet 控制消息协议。|
+|icmpV6|58| Ipv6 的 Internet 控制消息协议。|
 |ipv6NoNextHeader|59| ipv6 无下一个标头。|
 |ipv6DestinationOptions|60| ipv6 目标选项标头。|
 |点|77| 网络磁盘协议 (非正式)。|

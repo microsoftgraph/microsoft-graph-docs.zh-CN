@@ -2,12 +2,15 @@
 title: onenotePage 资源类型
 description: OneNote 笔记本中的页面。
 localization_priority: Normal
-ms.openlocfilehash: 70b500180185a2b449a2ebbaddb809772486f45e
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3d43f517ec028534e9b443c6e6c6e3e667a09e43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236592"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966417"
 ---
 # <a name="onenotepage-resource-type"></a>onenotePage 资源类型
 

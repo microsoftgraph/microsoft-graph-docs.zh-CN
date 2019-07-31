@@ -4,12 +4,13 @@ description: 用于标识展台配置的多模式应用配置的类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4b6a14eccade2555ef069bcbe6d009b094b81a6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a5cb62fe9423978e1c5a93423770e429127b70de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995439"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968958"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps 资源类型
 

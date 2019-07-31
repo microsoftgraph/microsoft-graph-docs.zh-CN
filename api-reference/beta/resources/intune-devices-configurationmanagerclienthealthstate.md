@@ -4,12 +4,13 @@ description: 配置管理器客户端运行状况
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 618282f2a061ec8327ff93d1af441e088523260b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9356a4aac345137ba93dc85914ddc1a12e44233f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983237"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968552"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>configurationManagerClientHealthState 资源类型
 

@@ -4,12 +4,13 @@ description: 更新 macOSEndpointProtectionConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b404a63879c44b1c9d3e3907a73ba0780050750
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c5e4b2efad23367b3a9b02dedd5994524ddf59c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963315"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947317"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>更新 macOSEndpointProtectionConfiguration
 

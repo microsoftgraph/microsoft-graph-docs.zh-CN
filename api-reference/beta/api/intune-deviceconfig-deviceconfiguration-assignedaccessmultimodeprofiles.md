@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49a8147631966bf93cb3e44cf08ed14854d5c14b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e439f28b74f3d5a8e2b71c0fc338ca5d5abfb6ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949410"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>assignedAccessMultiModeProfiles 操作
 

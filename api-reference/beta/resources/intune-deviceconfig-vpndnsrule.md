@@ -4,12 +4,13 @@ description: VPN DNS 规则定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f2188efc73201aabf98267a77fee96b9c60de9d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 76182d87ec04220ed126165676961e11722f17ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969511"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule 资源类型
 

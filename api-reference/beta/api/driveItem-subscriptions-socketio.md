@@ -3,12 +3,14 @@ title: 获取 websocket 终结点
 description: 在生产应用程序中不支持使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1af28effcb9a0ddecf09f018c5e40c175f94d898
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: 3502db32d790a66051aadddbecfcdd391936cdef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861438"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957267"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 

@@ -4,12 +4,13 @@ description: VPN 按需规则定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa1ac8562ac2a43db43bb359cb189f8a4ed9500b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 02994207955e65b9a9ff4817d74f4b81db6f7f81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987577"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969504"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
 

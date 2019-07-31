@@ -4,12 +4,13 @@ description: 用于标识访问者展台帐户的类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6e35255bc9306700aaaab5b6974650dab682294
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: cc899c8c22acf7890a3bde0dc039fdb4bec1e07b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968832"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>windowsKioskVisitor 资源类型
 

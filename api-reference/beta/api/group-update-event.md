@@ -4,12 +4,13 @@ description: 更新 event 对象。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 70d250949d3b75dc120ca1bb7a0c1857931fe486
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8ecf31c6db1201e1a14769cca8ee36d9e495e14d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953430"
 ---
 # <a name="update-event"></a>更新事件
 

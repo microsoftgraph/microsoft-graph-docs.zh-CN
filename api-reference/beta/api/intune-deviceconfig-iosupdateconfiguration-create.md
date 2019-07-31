@@ -4,12 +4,13 @@ description: 创建新的 iosUpdateConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0548cb809f0eb5013a393c36b2ab73cdffa53cc4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: dbf939c7731461ba7e3d31eec44a9a1d79c94765
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947877"
 ---
 # <a name="create-iosupdateconfiguration"></a>创建 iosUpdateConfiguration
 

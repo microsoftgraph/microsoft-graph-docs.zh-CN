@@ -4,12 +4,13 @@ description: 特定的长时间运行的 OneNote 操作的状态。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: f336021221cd86a45f8c5683a9736cc6f838a913
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3f6a8bdfc6cee8b71fb77fb7778171677acb5df9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341416"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966431"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
 

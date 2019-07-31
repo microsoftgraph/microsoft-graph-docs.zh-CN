@@ -4,12 +4,13 @@ description: 加拿大的电影评分标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cc112ccf178d7c2a7c5d5c5e70a6306b3696b35
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 34396fc9628bd2b77a8735fdce496d28cdea91c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995768"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969882"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 

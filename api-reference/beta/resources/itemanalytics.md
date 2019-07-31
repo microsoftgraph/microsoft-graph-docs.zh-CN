@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemAnalytics 资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
-ms.openlocfilehash: 862b0b14f1efeb3a83dd4b842c0eb995abeabb80
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620260"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967093"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 

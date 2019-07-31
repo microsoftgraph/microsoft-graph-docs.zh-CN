@@ -3,12 +3,14 @@ title: 活动资源类型
 description: 代表某个应用程序内的单个活动, 例如电视节目、文档或视频游戏中的当前市场活动。 当用户参与该活动时, 会将该预订作为历史项目进行捕获, 以指示该活动的开始时间和结束时间。 随着时间的推移, 用户随着时间的推移而重新参与该活动, 会为单个用户活动记录多个历史记录项目。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 4ae3fb47961140a784a1fa15fc606fd8967be96b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: d3be4631db4f1ed5a50a5844475835c1add5d649
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344006"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965605"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -26,7 +28,7 @@ ms.locfileid: "33344006"
 
 |方法 | 返回类型 | 说明|
 |:------|:------------|:-----------|
-|[创建或替换活动](../api/projectrome-put-activity.md) | [活动](projectrome-activity.md) |创建或替换现有活动 (upsert)。 appActivityId 需要是 url 安全的 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式), 但原始 appActivityId 不必是 URL 安全的。 |
+|[创建或替换活动](../api/projectrome-put-activity.md) | [活动](projectrome-activity.md) |创建或替换现有活动 (upsert)。 AppActivityId 需要是 URL 安全的 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式), 但原始 appActivityId 不必是 URL 安全的。 |
 |[删除活动](../api/projectrome-delete-activity.md) | 无内容 | 从您的应用程序中删除该用户的指定活动。|
 |[获取活动](../api/projectrome-get-activities.md) | [活动](projectrome-activity.md)集合 | 获取适用于给定用户的应用程序活动。|
 |[获取最近的活动](../api/projectrome-get-recent-activities.md) | [活动](projectrome-activity.md)集合 | 为给定用户获取应用程序最近的活动, 并根据最近创建或更新的[historyItems](projectrome-historyitem.md)对其进行排序。|
@@ -35,7 +37,7 @@ ms.locfileid: "33344006"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时;作为 Olson id 提供的值, 以便支持跨平台表示形式。|
+|userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时;作为 Olson Id 提供的值, 以便支持跨平台表示形式。|
 |createdDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上创建对象时的 UTC 时间 (UTC)。 |
 |lastModifiedDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上修改对象时的 UTC 时间 (UTC)。 |
 |id | String | 用于 URL 寻址的服务器生成的 ID。|

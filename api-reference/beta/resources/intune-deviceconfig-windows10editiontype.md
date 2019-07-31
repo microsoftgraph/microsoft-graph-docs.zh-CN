@@ -4,12 +4,13 @@ description: Windows 10 版本的类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e304cb77694554443b879b145f9735ab6b315069
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: dc06c29545dffe0117687ecf276dbc6568b61546
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982285"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969245"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 枚举类型
 

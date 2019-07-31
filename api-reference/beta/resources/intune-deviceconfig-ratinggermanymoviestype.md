@@ -4,12 +4,13 @@ description: 德国的电影评分标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10bb7c9b759b23066ac4cfcc7a43f9bc8b2b9d37
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 81db226d6cc929b559ec5af4dc82b9dcb070d18e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969826"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 枚举类型
 

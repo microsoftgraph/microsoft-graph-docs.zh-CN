@@ -4,12 +4,13 @@ description: 从 directoryRole 中删除成员。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c4ec110aa671ddd11327e515308929fb8865235f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6e194ee131c60be9d9563fac04e0ca1fb8f3b5c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957750"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 
@@ -24,9 +25,9 @@ ms.locfileid: "35862300"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | RoleManagement |
 
 ## <a name="http-request"></a>HTTP 请求
 

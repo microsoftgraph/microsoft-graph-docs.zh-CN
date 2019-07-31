@@ -4,12 +4,13 @@ description: VPN 身份验证方法。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 343b8e3809a3f61926521a43d873161b2d5eee5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 20374a3008e84b00ce7622019f4a3b8306a07318
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994312"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969518"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 枚举类型
 

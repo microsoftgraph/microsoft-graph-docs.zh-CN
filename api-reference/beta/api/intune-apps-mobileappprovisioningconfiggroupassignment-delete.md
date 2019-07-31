@@ -4,12 +4,13 @@ description: 删除 mobileAppProvisioningConfigGroupAssignment。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d332aae95d155824c135e12358bf1c18b99f2862
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 357e7fcb0420f26349361e8757e75747e63d9bad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973703"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960641"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>删除 mobileAppProvisioningConfigGroupAssignment
 

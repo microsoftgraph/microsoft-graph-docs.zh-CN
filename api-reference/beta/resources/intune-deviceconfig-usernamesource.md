@@ -4,12 +4,13 @@ description: 用户名源。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7276f4ee72c0aeb5d225fd2adea8cc3d74059f91
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 494011cf268133e06ffcd7753afe18f9557f8be7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978939"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969560"
 ---
 # <a name="usernamesource-enum-type"></a>usernameSource 枚举类型
 

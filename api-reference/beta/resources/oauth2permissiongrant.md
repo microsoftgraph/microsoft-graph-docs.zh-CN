@@ -2,12 +2,15 @@
 title: oAuth2PermissionGrant 资源类型
 description: 表示已授予应用程序 (由服务主体表示) 作为用户或管理员同意过程的一部分的 OAuth 2.0 作用域 (委派权限)。
 localization_priority: Normal
-ms.openlocfilehash: f23d2e7a8b57b324a92a1268ab4cc0393d8906f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 25f012baca1a7dfa5aeb62b8885b00b151a657ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966613"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 

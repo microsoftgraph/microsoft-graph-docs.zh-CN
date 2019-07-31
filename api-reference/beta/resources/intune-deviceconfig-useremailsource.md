@@ -4,12 +4,13 @@ description: 用户名源或电子邮件源的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d51e011fa56dbaaeece99d842806a0083398e0a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 1ed0ff6bac5f40074686a4ae7d7a7f63763c17b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994347"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969574"
 ---
 # <a name="useremailsource-enum-type"></a>userEmailSource 枚举类型
 

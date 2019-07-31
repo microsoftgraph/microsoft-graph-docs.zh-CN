@@ -4,12 +4,13 @@ description: 用于打开 OneNote 笔记本的链接。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 12be75eda0d4f3146332cec0b2eeda09a1d9c5e7
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.openlocfilehash: 866176f1c831c70b7a057d1a53ad6b5fa7e5cda4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966648"
 ---
 # <a name="notebooklinks-resource-type"></a>notebookLinks 资源类型
 

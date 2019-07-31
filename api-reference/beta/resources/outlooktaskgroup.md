@@ -4,12 +4,13 @@ description: '一组文件夹 (outlookTaskFolder), 其中包含 Outlook 任务 (
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: af5599773c6a4edef97356e99daa522760d9b37a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d519e18723ac9fbd38e7cec64a6758b0c9396bc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345527"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966277"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>outlookTaskGroup 资源类型
 

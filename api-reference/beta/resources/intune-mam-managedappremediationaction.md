@@ -4,12 +4,13 @@ description: 要应用于托管应用程序的管理员启动的操作。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df0abade9e6c96b38723702f3b5ee9b0b0bc36a3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 1d935845019e8d90e9f88246bd5c60699b5265e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994669"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967936"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 枚举类型
 

@@ -4,12 +4,13 @@ description: 创建新的 androidWorkProfileGmailEasConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a1047da9be7548454195a21ebadb0c51c4fd5ae
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 297fbd25b50a7e7500a0dc497f7349b84f76fe1f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969328"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950747"
 ---
 # <a name="create-androidworkprofilegmaileasconfiguration"></a>创建 androidWorkProfileGmailEasConfiguration
 

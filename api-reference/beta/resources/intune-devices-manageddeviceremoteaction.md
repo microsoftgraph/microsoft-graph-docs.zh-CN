@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a80eaccb9810563f95556c9a4b6fa33aec570935
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 27e3ef9bef12feedfe7f63498ae49a42f40f8124
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995026"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968356"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
 

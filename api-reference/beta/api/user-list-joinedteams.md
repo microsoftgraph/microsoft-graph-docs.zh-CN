@@ -4,12 +4,12 @@ description: 获取用户不是其直接成员的 Microsoft Teams 团队。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2ee7834dbb9366ab1db726eaf53575b4d4c33d1f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3124f72b30a9ca82efe7f2583a6afc766bed1718
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867272"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931468"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -51,7 +51,8 @@ GET /users/{id}/joinedTeams
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。
+如果成功，此方法在响应正文中返回`200 OK`响应代码和[team](../resources/team.md)对象集合。
+
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

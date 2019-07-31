@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: 驱动器
+title: 驱动器资源类型
+description: 表示用户的 OneDrive 或 SharePoint 中文档库的驱动器资源。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a01a2a8a8ad827145ee98a3ef0687546581d3096
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f47bacdac64a535ba3d7ff695d1aa0c1c46b06b8
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340656"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932005"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -19,6 +19,54 @@ ms.locfileid: "33340656"
 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 
 OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动器。没有 OneDrive 许可证的用户不能拥有可用的默认驱动器。
+
+## <a name="methods"></a>方法
+
+|                        方法                              |         返回类型         | 说明 |
+| :--------------------------------------------------------- | :-------------------------- |-------------|
+| [获取驱动器][drive-get]                                     | 驱动器                       | 获取有关驱动器的元数据 |
+| [获取驱动器根][item-get]                                 | [driveItem][]               | 获取驱动器的根文件夹 |
+| [列出活动][drive-activities]                        | [itemActivity][] 集合 | 列出在驱动器下发生的活动 |
+| [列出关注的项][drive-following]                     | [driveItem][] 集合    | 列出用户的关注 driveItems |
+| [列出子项][item-children]                             | [driveItem][] 集合    | 列出驱动器根文件夹的子项 |
+| [列出变更][item-changes]                               | [driveItem][] 集合    | 列出驱动器中所有 DriveItem 的变更 |
+| [搜索][item-search]                                      | [driveItem][] 集合    | 搜索驱动器中的 DriveItem |
+| [获取特殊文件夹](../api/drive-get-specialfolder.md)    | [driveItem][]               | 通过特殊文件夹的规范名称访问它 |
+
+
+## <a name="properties"></a>属性
+
+| 属性             | 类型                          | 说明                                                                                                                                                                                                                      |
+| :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| createdBy            | [identitySet][]               | 识别创建项目的用户、设备或应用程序。只读。                                                                                                                                                  |
+| createdDateTime      | dateTimeOffset                | 创建项的日期和时间。只读。                                                                                                                                                                                       |
+| description          | String                        | 提供驱动器的用户可见说明。 读写。
+| driveType            | String                        | 说明了由该资源表示的驱动器的类型。OneDrive 个人版驱动器将返回 `personal`。OneDrive for Business 将返回 `business`。SharePoint 文档库将返回 `documentLibrary`。只读。 |
+| id                   | String                        | 驱动器唯一标识符。只读。                                                                                                                                                                                   |
+| lastModifiedBy       | [identitySet][]               | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                                                                           |
+| lastModifiedDateTime | dateTimeOffset                | 上次修改项目的日期和时间。只读。                                                                                                                                                                             |
+| name                 | string                        | 项目名称。读写。                                                                                                                                                                                                |
+| 所有者                | [identitySet](identityset.md) | 可选。拥有此驱动器的用户帐户。只读。                                                                                                                                                                       |
+| 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
+| sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
+| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。 只读。
+| WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
+
+[identitySet]: identityset.md
+[sharepointIds]: sharepointids.md
+[systemFacet]: systemfacet.md
+
+## <a name="relationships"></a>关系
+
+| 关系 | 类型                                 | 说明
+|:-------------|:-------------------------------------|:-----------------------
+| activities   | [itemActivity][] 集合          | 最近发生在此驱动器下的活动的列表。
+| 捆绑      | [driveItem][] 集合             | [捆绑][bundle] (相册和多选共享项目集) 的集合。 只在个人的 OneDrive 中。
+| following    | [driveItem][] 集合             | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
+| items        | [driveItem][] 集合             | 驱动器中包含的所有项。只读。可为 NULL。
+| root         | [driveItem][]                        | 驱动器的根文件夹。只读。
+| special      | [driveItem][] 集合             | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,53 +118,9 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 }
 ```
 
-## <a name="properties"></a>属性
 
-| 属性             | 类型                          | 说明                                                                                                                                                                                                                      |
-| :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdBy            | [identitySet][]               | 识别创建项目的用户、设备或应用程序。只读。                                                                                                                                                  |
-| createdDateTime      | dateTimeOffset                | 创建项的日期和时间。只读。                                                                                                                                                                                       |
-| description          | String                        | 提供驱动器的用户可见说明。 读写。
-| driveType            | String                        | 说明了由该资源表示的驱动器的类型。OneDrive 个人版驱动器将返回 `personal`。OneDrive for Business 将返回 `business`。SharePoint 文档库将返回 `documentLibrary`。只读。 |
-| id                   | String                        | 驱动器唯一标识符。只读。                                                                                                                                                                                   |
-| lastModifiedBy       | [identitySet][]               | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                                                                           |
-| lastModifiedDateTime | dateTimeOffset                | 上次修改项目的日期和时间。只读。                                                                                                                                                                             |
-| name                 | string                        | 项目名称。读写。                                                                                                                                                                                                |
-| 所有者                | [identitySet](identityset.md) | 可选。拥有此驱动器的用户帐户。只读。                                                                                                                                                                       |
-| 配额                | [配额](quota.md)             | 可选。有关驱动器的存储空间配额的信息。只读。                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | 返回对 SharePoint REST 兼容性有用的标识符。只读。                                                                                                                                                         |
-| system               | [systemFacet][]               | 如果存在，则表示这是系统管理的驱动器。 只读。
-| WebUrl               | string (url)                  | 在浏览器中显示此资源的 URL。只读。                                                                                                                                                                        |
-
-[identitySet]: identityset.md
-[sharepointIds]: sharepointids.md
-[systemFacet]: systemfacet.md
-
-## <a name="relationships"></a>关系
-
-| 关系 | 类型                                 | 说明
-|:-------------|:-------------------------------------|:-----------------------
-| activities   | [itemActivity][] 集合          | 最近发生在此驱动器下的活动的列表。
-| items        | [driveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
-| root         | [driveItem](driveitem.md)            | 驱动器的根文件夹。只读。
-| special      | [driveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
-| following    | [driveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
-
-## <a name="methods"></a>方法
-
-|                        常见任务                         |         HTTP 方法         |
-| :--------------------------------------------------------- | :-------------------------- |
-| [获取其他驱动器的驱动器元数据][drive-get]           | `GET /drives/{drive-id}`    |
-| [获取用户默认驱动器的根文件夹][item-get]       | `GET /drive/root`           |
-| [列出驱动器下的活动][drive-activities]        | `GET /drive/activities`     |
-| [列出关注的项][drive-following]                     | `GET /drive/following`      |
-| [列出驱动器下的子项][item-children]             | `GET /drive/root/children`  |
-| [列出驱动器中所有项的变更][item-changes]    | `GET /drive/root/delta`     |
-| [搜索驱动器中的项][item-search]               | `GET /drive/root/search`    |
-| [访问特殊文件夹](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
-
-在上表中，各示例使用的是 `/drive`，但其他路径也同样有效。
-
+[bundle]: bundle.md
+[driveItem]: driveItem.md
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md

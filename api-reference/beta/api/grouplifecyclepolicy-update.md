@@ -4,12 +4,13 @@ description: 更新 groupLifecyclePolicy 资源类型对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c3602e87c2405be2438762dd7a2812a477b1f7cb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f0feb773a96a4358410b2facc0369e78a9f2818f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953281"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 

@@ -4,12 +4,13 @@ description: 可以将数据从/传输到这些应用程序类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ced00d407f680c7281e4a72e493ae0777602d956
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: a6d1c9ed13b35db03d9774bd5da120016d74be8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967999"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 枚举类型
 

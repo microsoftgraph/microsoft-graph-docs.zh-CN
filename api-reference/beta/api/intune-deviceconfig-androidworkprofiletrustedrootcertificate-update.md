@@ -4,12 +4,13 @@ description: 更新 androidWorkProfileTrustedRootCertificate 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2844e6fd71a6d628e93239f170ec6b1a5694a93
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d9af2de5ce883814ceda55318333c18b48cf60c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969006"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950418"
 ---
 # <a name="update-androidworkprofiletrustedrootcertificate"></a>更新 androidWorkProfileTrustedRootCertificate
 

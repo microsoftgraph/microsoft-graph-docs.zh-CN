@@ -4,12 +4,13 @@ description: 用于指示无媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec1c70e233f46ad0098a6a7ee76d4d46f3b82c20
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 97d2ac01b434e211eb8836f04343ef65b9f0ea1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966662"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 

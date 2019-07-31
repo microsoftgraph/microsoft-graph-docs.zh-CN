@@ -4,12 +4,13 @@ description: Windows 设备运行状况监视配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2905634e155d5cc467f865bbf082d156714e8498
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 27c1a7be4e378107cfa94a01379fe3f124e6f54a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968979"
 ---
 # <a name="windowshealthmonitoringconfiguration-resource-type"></a>windowsHealthMonitoringConfiguration 资源类型
 

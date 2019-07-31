@@ -4,12 +4,13 @@ description: 一般可见性状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12ad627d0e2c426967d91932171c823e9a0697a1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 5bfe64eb17014cc8dca26ad9178a4a7dee4cba8c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994340"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969546"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 

@@ -4,12 +4,13 @@ description: 检索特定目录设置对象的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ecb8c56d0de693174fe30fe127a3a60337b7dce4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 48195a099b7fb8c0cc84f4f7dd9455cf18247d4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862091"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957582"
 ---
 # <a name="get-a-directory-setting"></a>获取目录设置
 

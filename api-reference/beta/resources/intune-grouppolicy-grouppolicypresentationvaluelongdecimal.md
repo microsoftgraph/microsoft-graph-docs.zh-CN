@@ -4,12 +4,13 @@ description: 实体表示策略定义上长小数文本框演示文稿的无符�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7bb1bc1c171e5ec91439350d4e00eb22444fcaf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 985d4d983bafd30473f870b8a64b3f29790958c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968118"
 ---
 # <a name="grouppolicypresentationvaluelongdecimal-resource-type"></a>groupPolicyPresentationValueLongDecimal 资源类型
 

@@ -4,12 +4,13 @@ description: 号码范围定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 772ffc59bc9ac4848b6b34eee8c62f8006468784
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: dbc802ef17c6e83d10f93661e7aca05cdc2cee02
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969980"
 ---
 # <a name="numberrange-resource-type"></a>numberRange 资源类型
 

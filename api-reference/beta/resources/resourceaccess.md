@@ -1,19 +1,22 @@
 ---
 title: resourceAccess 资源类型
-description: 指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。 requiredResourceAccess 类型的**resourceAccess**属性是**resourceAccess**的集合。
+description: 指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。 RequiredResourceAccess 类型的**resourceAccess**属性是**resourceAccess**的集合。
 localization_priority: Normal
-ms.openlocfilehash: bb77a12a207e274b27263029d96f4ef260cfe5cb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4c2a909fb2beafeb22f303ef42703b3d57c30854
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965409"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。 [requiredResourceAccess](requiredresourceaccess.md)类型的**resourceAccess**属性是**resourceAccess**的集合。
+指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。 [RequiredResourceAccess](requiredresourceaccess.md)类型的**ResourceAccess**属性是**resourceAccess**的集合。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

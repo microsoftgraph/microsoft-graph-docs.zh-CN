@@ -1,15 +1,16 @@
 ---
 title: 启用的枚举类型
 description: 介绍支持多个工作流的适用于 Intune 的 Microsoft Graph API 的支持枚举。
-author: rolyon
+author: tfitzmac
 localization_priority: Normal
+doc_type: enumPageType
 ms.prod: Intune
-ms.openlocfilehash: 4854b9209d749b86967cc4b8894431d05d785fe7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e0825c77a446ebe6d4946b0c666f5675cde2e4f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967453"
 ---
 # <a name="enablement-enum-type"></a>启用的枚举类型
 

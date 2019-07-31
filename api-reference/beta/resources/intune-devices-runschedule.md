@@ -4,12 +4,13 @@ description: 运行定期设备管理脚本的日程安排。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 009d2a3bdce6629fdc015d1d9b077e1b6071e6c9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 39af50fd0453c061a4a364c11a19046b954d7895
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963819"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968245"
 ---
 # <a name="runschedule-resource-type"></a>runSchedule 资源类型
 

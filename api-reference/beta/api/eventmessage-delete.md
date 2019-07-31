@@ -4,12 +4,13 @@ description: 删除 eventMessage。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 0d5eea3e0b62592886787de5d1d2c91ac91dad6b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7c2025316e2dd3906147b8920d1f233f85999838
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859401"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954401"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
 

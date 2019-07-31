@@ -4,12 +4,13 @@ description: 用于标识展台配置的本地帐户的类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: daa1899e5cbb4215053dd84fc09b5c3b5b4730fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d3f46b47de9d3ce09c6a7d33a4b663cb64f506cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969007"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>windowsKioskLocalUser 资源类型
 

@@ -4,12 +4,13 @@ description: 会议中的参与者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f6446ec0b896854e2566d4de82acfdb53bee893d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b88a59b3d9def58217ca3badd833b275760b49c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342406"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966828"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "33342406"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md)集合 |  |
-| 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| organizer － 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

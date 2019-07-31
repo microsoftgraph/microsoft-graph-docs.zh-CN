@@ -4,12 +4,13 @@ description: OMA 设置字符串定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc59c22933b888227678db70d9a48d601d699a8e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3c54bdab0870dfd4f3b28ae0af9036682f0464a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990244"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969945"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString 资源类型
 

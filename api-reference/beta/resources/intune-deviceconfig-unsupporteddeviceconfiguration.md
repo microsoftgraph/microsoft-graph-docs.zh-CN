@@ -4,12 +4,13 @@ description: 当实体无法映射到 deviceConfiguration 的另一个符合模�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b082a640f127f5f2351b639ec474e3f49557c2bb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 79886f901319be49e0862ae98c3f8d6affd9b57d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964155"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969616"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>unsupportedDeviceConfiguration 资源类型
 

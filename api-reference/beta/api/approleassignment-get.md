@@ -2,12 +2,15 @@
 title: 获取 appRoleAssignment
 description: 检索 approleassignment 对象的属性和关系。
 localization_priority: Priority
-ms.openlocfilehash: 6465134b37bef4791e2f3c9e83d2b34180d5fc3e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 1b9eded012eba7ed9cd2e0354698dc982f219ceb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856644"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945373"
 ---
 # <a name="get-approleassignment"></a>获取 appRoleAssignment
 

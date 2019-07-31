@@ -4,12 +4,13 @@ description: 创建新的 androidTrustedRootCertificate 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8c5ecb4f21bdf719a86aac7cdda3e79c9852a52
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c12d561af51d2badccc2d19e594566cd709ab1e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969867"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962636"
 ---
 # <a name="create-androidtrustedrootcertificate"></a>创建 androidTrustedRootCertificate
 

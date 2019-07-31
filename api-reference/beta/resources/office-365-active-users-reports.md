@@ -4,12 +4,13 @@ description: 您可以使用 Office 365 活动用户报告来确定组织中的�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e31bc0ef8d2fa3147528503902c46b33d4944ce7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: ea93b37e4a22b733274f65d785204764afa34015
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341994"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966592"
 ---
 # <a name="office-365-active-users-reports"></a>Office 365 活跃用户报表
 
@@ -22,6 +23,6 @@ ms.locfileid: "33341994"
 ## <a name="reports"></a>报表
 | 函数                                 | CSV 返回类型 | JSON 返回类型                         | 说明                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getoffice365activeuserdetail.md) | Stream          | [office365ActiveUserDetail](../resources/office365activeuserdetail.md) | 获取 Office 365 活跃用户的详细信息。 |
+| [获取用户详细信息](../api/reportroot-getoffice365activeuserdetail.md) | 流          | [office365ActiveUserDetail](../resources/office365activeuserdetail.md) | 获取 Office 365 活跃用户的详细信息。 |
 | [获取用户数](../api/reportroot-getoffice365activeusercounts.md) | Stream          | [office365ActiveUserCounts](../resources/office365activeusercounts.md) | 按产品获取报表周期内的每日活跃用户数。 |
 | [获取服务用户数](../api/reportroot-getoffice365servicesusercounts.md) | Stream          | [office365ServicesUserCounts](../resources/office365servicesusercounts.md) | 按活动类型和服务获取用户数。 |

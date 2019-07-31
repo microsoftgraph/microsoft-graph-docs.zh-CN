@@ -4,12 +4,13 @@ description: 删除 androidOmaCpConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6bd07ffdf92387655acfbf537025cd76e782a88
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 884523cec0bb898061c7c5d33a3cb38f4f399fe3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970098"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35962844"
 ---
 # <a name="delete-androidomacpconfiguration"></a>删除 androidOmaCpConfiguration
 

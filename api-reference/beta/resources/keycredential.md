@@ -1,19 +1,22 @@
 ---
 title: keyCredential 资源类型
-description: 包含与应用程序或服务主体相关联的密钥凭据。 application 和 servicePrincipal 实体的**keyCredentials**属性是**keyCredential**的集合。
+description: 包含与应用程序或服务主体相关联的密钥凭据。 Application 和 servicePrincipal 实体的**keyCredentials**属性是**keyCredential**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 312821a91bdbb1ad15e136d2b7fc8f9184df4eac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c3caa5c525d654b94d9fe6aa5688cb8f3216b807
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967047"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含与应用程序或服务主体相关联的密钥凭据。 [application](application.md)和[servicePrincipal](serviceprincipal.md)实体的**keyCredentials**属性是**keyCredential**的集合。
+包含与应用程序或服务主体相关联的密钥凭据。 [Application](application.md)和[ServicePrincipal](serviceprincipal.md)实体的**keyCredentials**属性是**keyCredential**的集合。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -4,12 +4,13 @@ description: 表示一个 Excel 表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 330b11869576dc3251b51c7239b9c0aacdc51e70
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1568cc1f08ded8ffdbac04e040bccefe63e9dd02
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963883"
 ---
 # <a name="workbooktable-resource-type"></a>workbookTable 资源类型
 

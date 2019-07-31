@@ -4,12 +4,13 @@ description: Windows 10 企业版新式应用管理配置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 870a81607d2c96b452ecf8081e74ec6db6edc353
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: cd3af4978b033fdd3e34e2255b7a84c6651529ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969254"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>windows10EnterpriseModernAppManagementConfiguration 资源类型
 

@@ -4,12 +4,13 @@ description: 限制用户可以注册的设备数量的设备注册配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a6443bb525d30fb68afa1ee61a2142c64fb09ba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f8ec4d7a7b8467c58852863673e7a66ee49dfd9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995523"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967747"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>deviceEnrollmentLimitConfiguration 资源类型
 

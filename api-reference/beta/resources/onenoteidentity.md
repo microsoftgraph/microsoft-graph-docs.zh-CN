@@ -4,12 +4,13 @@ description: '**支持即将推出**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ee5eb0db40516e1069fe8e40a8711cf97ae18eaa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0a7df80dd3dcd4f4b93edb4e708e65de3f74d775
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341496"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966445"
 ---
 # <a name="onenoteidentity-resource-type"></a>oneNoteIdentity 资源类型
 

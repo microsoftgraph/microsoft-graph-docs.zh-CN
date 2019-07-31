@@ -4,12 +4,13 @@ description: 表示 OnPrem Ndes 连接器的实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 894a96d68e1b835aa92f206b7694df734d0bcdb2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8419d44bd21b9a3ffb5292793657e0794d959831
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970022"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
 

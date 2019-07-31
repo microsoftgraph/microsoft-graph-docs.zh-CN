@@ -4,12 +4,13 @@ description: 列出 windowsUniversalAppXContainedApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48bf307098d4f1ca17fcb7ab80b4ddbfddef056a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4e2aa610e2a5c081686aecde2e3330d6003647a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972625"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959591"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>列出 windowsUniversalAppXContainedApps
 

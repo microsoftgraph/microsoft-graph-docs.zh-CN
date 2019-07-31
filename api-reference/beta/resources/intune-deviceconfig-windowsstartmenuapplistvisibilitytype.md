@@ -4,12 +4,13 @@ description: "\"开始\" 菜单应用程序列表可见性的类型。"
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7aa96bdcdf3aa0baaa9333d1ddb05234c16267db
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 697859c60a8a1fcf5ed4e37877227b134bf61cd9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978792"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968720"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 枚举类型
 

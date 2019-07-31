@@ -4,12 +4,13 @@ description: VPN 路由定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89b07a6f58bcd8ce5159c5bec07d01d2beea9fdd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8c12e39a3f26fe5a25d0dca522e8d2ab3e774957
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969434"
 ---
 # <a name="vpnroute-resource-type"></a>vpnRoute 资源类型
 

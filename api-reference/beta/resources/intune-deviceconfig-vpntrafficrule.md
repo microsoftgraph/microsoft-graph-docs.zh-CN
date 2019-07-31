@@ -4,12 +4,13 @@ description: VPN 流量规则定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db16de3ddcbfe17bd5fe19bfe9e672002324c5cb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 14ca0460684a6063a75032c7c51cebc8baaf5b2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969406"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 

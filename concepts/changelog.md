@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d0ad220d99ddc12671fcdb54c4f3f88a54cb758
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+ms.openlocfilehash: 60ad1361f5d188beacf4a34b040ee46196fb8304
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918053"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35930564"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -223,6 +223,15 @@ ms.locfileid: "35918053"
 |更改|beta|更改了 [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta) 枚举类型上以下属性的类型：<br/>将 **fullScan** 从 2 更改成了 3<br/>将 **quickScan** 从 3 更改成了 4<br/>将 **signatureUpdate** 从 4 更改成了 5<br/>|
 |添加项|beta|向 [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
 |添加项|beta|向 [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
+
+### <a name="files-onedrive"></a>文件 (OneDrive)
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta | 已添加[捆绑](/graph/api/resources/bundle?view=graph-rest-beta)复杂类型 |
+| 添加项 | Beta | 已添加[相册](/graph/api/resources/album?view=graph-rest-beta)复杂类型 |
+| 添加项 | Beta | 向[drive](/graph/api/resources/drive?view=graph-rest-beta) 实体添加了**捆绑** 导航属性 |
+| 添加项 | Beta | 向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 实体添加了 **捆绑** 属性 |
+| 添加项 | Beta | 已向[权限](/graph/api/resources/permission?view=graph-rest-beta)实体添加**授予**操作 |
 
 ### <a name="education"></a>教育
 | 更改类型 | 版本 | 说明                                                                                                                                                      |

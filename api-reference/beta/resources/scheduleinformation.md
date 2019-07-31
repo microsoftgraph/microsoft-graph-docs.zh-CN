@@ -2,12 +2,15 @@
 title: scheduleInformation 资源类型
 description: '表示用户、通讯组列表或资源在指定时间段内的可用性。 '
 localization_priority: Normal
-ms.openlocfilehash: b15d492477368d47fd3ebc9fc00bd3dcfc3e6688
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-teams
+author: ''
+ms.openlocfilehash: 3d6ede4e1085a8be3f78b714f690b79b836abbcb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343512"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965304"
 ---
 # <a name="scheduleinformation-resource-type"></a>scheduleInformation 资源类型
 

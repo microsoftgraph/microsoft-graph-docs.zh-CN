@@ -4,12 +4,12 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42e08989f462def2d1956c7e6fee2ad635f23e5a
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+ms.openlocfilehash: f9121ffad617d6901688718a8982b926959d8626
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34692764"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932575"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限界定为特定 Exchange Online 邮箱 
 

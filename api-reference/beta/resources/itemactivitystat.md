@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActivityStat 资源提供有关在一段时间内发生的活动的信息。
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
-ms.openlocfilehash: 08bbfd414a32e8eb8a0144d879ede55c71c19b89
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 61c410d807869615ed35365743d1ae87b5b6e890
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339872"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967091"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**itemActivityStat**资源提供有关在一段时间内发生的活动的信息。
+**ItemActivityStat**资源提供有关在一段时间内发生的活动的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

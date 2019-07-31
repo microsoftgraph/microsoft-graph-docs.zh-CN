@@ -4,12 +4,13 @@ description: 指示与 VPN 流量规则相关联的应用程序的类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cecbdd0143eaa30f6bd07443c82f1f1eb2f28581
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 576092233498ac86a858a17a6f2e476a72480f36
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991637"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969385"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 枚举类型
 

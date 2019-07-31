@@ -4,12 +4,13 @@ description: 列出用于定义和管理租户组织的基于角色的访问控�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: fe09f89a10524dc255d7e0e647ba793aec2529ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: 3f16673a2a54b4ed0de380ddd4b66aa6c74c1106
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993656"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967677"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 

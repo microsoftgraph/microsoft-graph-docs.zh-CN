@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ff5ca6afc76ab60ab82f045d0309832e34e8d708
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: d1ee3b9cd98ae61bd6322ee49fede6310f78815a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966373"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing 资源类型
 

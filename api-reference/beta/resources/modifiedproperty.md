@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03ae8cb2c36cb811325839341c0fa8b3f395c954
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: dcf55dfc83414b5a516bac6cbeefa3358323b5fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348703"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966691"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty 资源类型
 
