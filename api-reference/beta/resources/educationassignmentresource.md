@@ -4,12 +4,13 @@ description: 一个包装对象, 该对象存储与工作分配相关联的资�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 08a716edabc31c83a7fb3e358fbafd023d5fa784
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 60181a2289b272809cff025abeee83c594ae833e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334406"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006428"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "33334406"
 |id|String| 此资源的 ID。 只读。|
 |resource|[educationResource](educationresource.md)|与此工作分配相关联的资源对象。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无。
 
 

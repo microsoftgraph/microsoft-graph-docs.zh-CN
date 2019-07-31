@@ -4,12 +4,13 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0741955dd2d939c70417e27842dd1964e003a146
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: fe419355d0e7acd89eab856ed362049629fead13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965849"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011909"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 

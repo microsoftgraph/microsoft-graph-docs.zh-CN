@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: IncompleteData facet 指示资源是使用不完整的数据生成的。
 ms.date: 10/06/2017
 title: IncompleteData
 localization_priority: Normal
-ms.openlocfilehash: 40c1b782384076eefc986f67dc1736f191feb7b7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 23d78fa3605259031fc2c408e93a0461bb12cb28
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339963"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006281"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**incompleteData** facet 指示资源是使用不完整的数据生成的。
+**IncompleteData** facet 指示资源是使用不完整的数据生成的。
 中的属性可能提供了有关不完整数据的原因的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式

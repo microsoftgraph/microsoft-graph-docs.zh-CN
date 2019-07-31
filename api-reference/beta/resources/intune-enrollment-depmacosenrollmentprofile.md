@@ -4,12 +4,13 @@ description: DepMacOSEnrollmentProfile 资源表示特定于 macOS 配置的 App
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b848745087c74a77ee33622603aab377c07f705f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 27260614294c553eaa75f3d7e94ec3e54daeedc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987311"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999295"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>depMacOSEnrollmentProfile 资源类型
 

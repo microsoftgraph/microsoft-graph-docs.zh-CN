@@ -4,12 +4,13 @@ description: 密钥存储提供程序 (KSP) 导入选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ed06e011bbd9f64645541ded8929b0f2b5984fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e345e5c3b8490c15edd83fd4d7a4eb70e4be40d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989425"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001038"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>keyStorageProviderOption 枚举类型
 

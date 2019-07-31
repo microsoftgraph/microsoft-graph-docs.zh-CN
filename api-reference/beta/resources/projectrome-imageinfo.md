@@ -3,18 +3,20 @@ title: imageInfo 资源类型
 description: 一个复杂类型, 用于表示**** activity 对象的 visualInfo 部分中的属性属性。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 6ffdacefb11f583f8c9529a36472a01537643c3c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 53496734f79121edd010a429ec0a8da28b16e836
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008885"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个复杂类型, 用于表示**** [activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中的属性属性。
+一个复杂类型, 用于表示**** [Activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中的属性属性。
 
 ## <a name="properties"></a>属性
 

@@ -4,12 +4,13 @@ description: 用于存储自定义设置的键值对
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed0df0d07c21ea41aaad5eb9aac993b35ca28f8c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b5d4a294be690e012d43893e44540658e919c123
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995971"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010425"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 

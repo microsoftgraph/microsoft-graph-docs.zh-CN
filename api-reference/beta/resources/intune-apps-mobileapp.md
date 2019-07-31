@@ -4,12 +4,13 @@ description: 包含 Intune 移动应用基属性的抽象类。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d937495f44fc511b260ee6feb322043bcf9cff7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: df237487d65dab617ccf4c40d18382c9a3062451
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986135"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005203"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 

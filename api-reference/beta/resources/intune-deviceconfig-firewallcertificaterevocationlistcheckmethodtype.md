@@ -4,12 +4,13 @@ description: FirewallCertificateRevocationListCheckMethod 的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbfad062f551bbf53c0e0e27fe40611d6f70dd0e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: ef7f3a636f86139aa5107d1213e6cfe3d173dc51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985862"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001360"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 枚举类型
 

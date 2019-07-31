@@ -4,12 +4,13 @@ description: 尚未记录
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 3e83afe7eb2dc06e6f9c8b2d94bdca4e414c2892
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 412ed7f8a7d68daf7e4cff8cc384a113c337ad4e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004769"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>windowsOfficeClientSecurityConfiguration 资源类型
 
@@ -34,8 +35,8 @@ ms.locfileid: "33949239"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|Office 客户端配置策略的 Id。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|Stream|策略设置 JSON string 二进制格式, 用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|流|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|流|策略设置 JSON string 二进制格式, 用户不能更改这些值。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |说明|String|管理员提供的 office 客户端配置策略的说明。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |displayName|String|管理员提供的 office 客户端配置策略的名称。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |priority|Int32|对于租户下的每个策略, 优先级值应为唯一值, 并将用于冲突解决, 较低值意味着优先级较高。 继承自[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

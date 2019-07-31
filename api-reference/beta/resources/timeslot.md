@@ -2,14 +2,15 @@
 title: timeSlot 资源类型
 description: 时间段。
 localization_priority: Normal
+doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 930e0ca20bf6b69641aeb0410514ec4ad37d7ee7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8843b8418bff068564e5716d715a9ad11579f01b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341944"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007534"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot 资源类型
 

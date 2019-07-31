@@ -2,12 +2,15 @@
 title: secureScore 资源类型
 description: 'top = n, 其中 n = 要检索的数据的天数。 '
 localization_priority: Normal
-ms.openlocfilehash: 1f4ee37b5e257cfb914f45a1260f3572403f00dd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d1db0e97c88f4532bad2052f77a3513084c74aa7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008584"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
@@ -28,19 +31,19 @@ ms.locfileid: "33343372"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   租户 ID 的 GUID 字符串。  |
+|   azureTenantId   |   字符串  |   租户 ID 的 GUID 字符串。  |
 |   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
-|   id  |   String  |   azureTenantId_createdDateTime 的组合。   |
+|   id  |   String  |   AzureTenantId_createdDateTime 的组合。   |
 |   licensedUserCount   |   Int32   |   给定租户的许可用户计数。    |
 |   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
 |   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
 |   maxScore |  双精度  |   指定日期上可能的租户最大分数。    |
-|   enabledServices |   String 集合   |   适用于租户的 Microsoft 提供的服务 (例如, Exchange online、Skype、Sharepoint)。   |
+|   enabledServices |   String collection   |   适用于租户的 Microsoft 提供的服务 (例如, Exchange online、Skype、Sharepoint)。   |
 |   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |作用域内不同作用域 (例如, 按行业划分的平均分数、按座位的平均方式) 和控制类别 (标识、数据、设备、应用程序、基础结构)。 |
 |   controlScores | [controlScore](controlscore.md)集合  |   包含一组控件的租户分数。   |
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。
 

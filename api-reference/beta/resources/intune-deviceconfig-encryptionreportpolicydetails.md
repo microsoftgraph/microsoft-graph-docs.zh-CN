@@ -4,12 +4,13 @@ description: 加密报告的策略详细信息
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ec5a0dcb3b916822f4828801ca82ad4cec7e1e4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d1484e1ed55abb14daccb61e024dc94eb415e031
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004370"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>encryptionReportPolicyDetails 资源类型
 

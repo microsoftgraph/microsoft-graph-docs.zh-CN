@@ -4,12 +4,13 @@ description: Android 工作配置文件 PKCS 证书配置文件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c10ceeb90b04ef4a33cec8737256864fb5861aa8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 6ebc29b75b827f2ef1fa70495ce865594dc36f9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993835"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011622"
 ---
 # <a name="androidworkprofilepkcscertificateprofile-resource-type"></a>androidWorkProfilePkcsCertificateProfile 资源类型
 

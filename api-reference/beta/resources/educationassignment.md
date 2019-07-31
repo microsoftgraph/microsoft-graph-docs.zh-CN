@@ -1,25 +1,26 @@
 ---
 title: educationAssignment 资源类型
-description: '**educationAssignment**资源表示分配给课程中的学生或团队成员的任务或工作单元, 作为其研究的一部分。 只有教师或团队所有者可以创建工作分配。 工作分配包含教师希望学生处理的讲义和任务。 每个学生工作分配都有一个关联的提交, 其中包含其所要求的任何教师所要启用的任何工作。 教师可以将分数和反馈添加到学生打开的提交中。'
+description: '**EducationAssignment**资源表示分配给课程中的学生或团队成员的任务或工作单元, 作为其研究的一部分。 只有教师或团队所有者可以创建工作分配。 工作分配包含教师希望学生处理的讲义和任务。 每个学生工作分配都有一个关联的提交, 其中包含其所要求的任何教师所要启用的任何工作。 教师可以将分数和反馈添加到学生打开的提交中。'
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 9722a5eec59431b4c4c8bbf7dfc9ebfc39d4a459
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 84345bd87cb1b4ba02746045d69ba783d1710804
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006477"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**educationAssignment**资源表示分配给课程中的学生或团队成员的任务或工作单元, 作为其研究的一部分。 只有教师或团队所有者可以创建工作分配。 工作分配包含教师希望学生处理的讲义和任务。 每个学生工作分配都有一个关联的[提交](educationsubmissionresource.md), 其中包含其所要求的任何教师所要启用的任何工作。 教师可以将分数和反馈添加到学生打开的提交中。
+**EducationAssignment**资源表示分配给课程中的学生或团队成员的任务或工作单元, 作为其研究的一部分。 只有教师或团队所有者可以创建工作分配。 工作分配包含教师希望学生处理的讲义和任务。 每个学生工作分配都有一个关联的[提交](educationsubmissionresource.md), 其中包含其所要求的任何教师所要启用的任何工作。 教师可以将分数和反馈添加到学生打开的提交中。
 
 在创建工作分配时, 该工作分配处于草稿状态。 学生无法看到工作分配和提交不会被创建。 您可以使用 "[发布](../api/educationassignment-publish.md)" 操作更改工作分配的状态。 不能使用修补程序请求更改工作分配状态。
 
-在类命名空间中公开分配 api。
+在类命名空间中公开分配 Api。
 
 ## <a name="methods"></a>方法
 
@@ -60,9 +61,9 @@ ms.locfileid: "33334522"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为 Null。|
+|resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为 Null。|
 |提交|[educationSubmission](educationsubmission.md)集合| 发布后, 每个学生都有一个提交对象代表其工作和评分。  只读。 可为 Null。|
-|类别|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
+|categories|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

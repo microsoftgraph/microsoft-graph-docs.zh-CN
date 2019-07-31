@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: DriveRecipient 资源表示用户、组或其他收件人使用 invite 操作进行共享。
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1a121969bf6b36c8afccd367a084a4b75599eaf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f86b79567b4148934f1c9624124026472fbb3395
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012707"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 
@@ -35,9 +36,9 @@ ms.locfileid: "33334590"
 ## <a name="properties"></a>属性
 收件人资源具有以下属性。
 
-| 属性名称 | 类型   | 说明                                                                                             |
+| 属性名 | 类型   | 说明                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | 字符串 | 收件人的电子邮件地址，前提是收件人有关联的电子邮件地址。                  |
+| email         | String | 收件人的电子邮件地址，前提是收件人有关联的电子邮件地址。                  |
 | 别名         | String | Domain 对象的别名，适于电子邮件地址不可用的情况（例如，安全组）。 |
 | objectId      | String | 目录中收件人的唯一标识符。                                               |
 

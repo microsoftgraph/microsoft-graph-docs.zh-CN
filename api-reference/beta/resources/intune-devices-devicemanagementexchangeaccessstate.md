@@ -4,12 +4,13 @@ description: 设备交换访问状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35c110734078484f7bec5aac1ad31df0b66a0473
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 26f75ccd2957d7cc9db9b05bb48f4a9eacc36a17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999897"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
 

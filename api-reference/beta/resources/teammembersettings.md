@@ -4,12 +4,13 @@ description: 用于配置成员是否可以在团队中执行某些操作（例�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 33f1930096ff63968db39e06ddec26c53ae8bcc9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c7c6690eb293581a60cba20d3f3ef63187339c35
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341720"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007695"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 

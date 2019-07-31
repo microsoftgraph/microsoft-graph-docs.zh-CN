@@ -4,12 +4,13 @@ description: 单一登录的 iOS Kerberos 身份验证设置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11875bb07b87cf8c9415660f5961dafa73f54f57
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c68683d5152657fedbd6ac04d191bae104849a8c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995614"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001122"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings 资源类型
 

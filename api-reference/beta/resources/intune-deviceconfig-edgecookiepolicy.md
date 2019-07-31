@@ -4,12 +4,13 @@ description: 指定允许在 Microsoft Edge 中使用哪些 cookie 的可能值�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f22945d3c1ea7eb0b5f69b471a3eec4cc383baa9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 9ceb1f551b4f6fb1227409f2e01d2a1720193399
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989845"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004496"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 

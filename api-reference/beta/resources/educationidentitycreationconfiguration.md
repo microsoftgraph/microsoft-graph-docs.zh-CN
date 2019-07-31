@@ -4,12 +4,13 @@ description: 定义有关创建学校数据配置文件标识的设置。 这些
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e35eed699e1a1439fd94c251e560be902f96bd09
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 09d36a87b8ed1485ce112d40ca8b920290e23997
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006379"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>educationIdentityCreationConfiguration 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "33340552"
 
 定义有关创建学校数据配置文件标识的设置。 这些标识包括学生和教师。 根据这些设置, 将在目录中创建用户。
 
-> **注意:** 如果你打开了目录同步以在本地 Active directory 和 azure Active directory (azure AD) 之间同步, 请改用[educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md)资源。
+> **注意:** 如果你打开了目录同步以在本地 Active Directory 和 Azure Active Directory (Azure AD) 之间同步, 请改用[educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md)资源。
 
 派生自[educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md)。
 

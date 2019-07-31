@@ -4,12 +4,13 @@ description: 包含 Windows Mobile MSI 业务线应用的属性和继承的属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd3840bdfc6682d189f5e1c7909f98f9861b495c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d9f412615e772821e7115da8b6e5b31c12455107
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975649"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005014"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI 资源类型
 

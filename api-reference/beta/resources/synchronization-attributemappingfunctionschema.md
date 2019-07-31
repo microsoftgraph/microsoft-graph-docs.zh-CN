@@ -2,14 +2,15 @@
 title: attributeMappingFunctionSchema 资源类型
 description: 介绍可在属性映射中用于在同步期间转换值的函数。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2290f2c3140d9c955dc3a3d4bc72f9b953a7775f
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 0222a01f2bcea819624d1dcb9f53da7ea0b86b25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007989"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>attributeMappingFunctionSchema 资源类型
 

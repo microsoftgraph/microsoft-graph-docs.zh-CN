@@ -4,12 +4,13 @@ description: 壁纸显示位置说明符的枚举类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69b54215956b9825d738127113305fc36da8e6d4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 65ae2fa4d1eedfa6a4d1fa060826ffdf00f6a264
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985386"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001080"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation 枚举类型
 

@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bcc0e9d1ed5c93c3d9f4ba97165d0413025a89cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9e1a40d962ded7825b72d31675cefb9869750866
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582918"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007618"
 ---
 # <a name="teamsuseractivitycounts-resource-type"></a>teamsUserActivityCounts 资源类型
 
@@ -17,8 +18,8 @@ ms.locfileid: "32582918"
 
 | 属性            | 类型   |
 | :------------------ | :----- |
-| reportRefreshDate   | Date   |
-| reportDate          | Date   |
+| reportRefreshDate   | 日期   |
+| reportDate          | 日期   |
 | teamChatMessages    | Int64  |
 | privateChatMessages | Int64  |
 | calls               | Int64  |

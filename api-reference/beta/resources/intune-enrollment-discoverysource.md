@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44b027f4e30834557c8360efd5e953217ec5eac7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: abbddfb8c90bd9c413f7b388ea52f9b14f22a110
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979401"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999239"
 ---
 # <a name="discoverysource-enum-type"></a>discoverySource 枚举类型
 

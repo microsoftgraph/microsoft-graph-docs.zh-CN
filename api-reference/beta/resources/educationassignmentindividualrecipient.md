@@ -4,12 +4,13 @@ description: '在 assignTo 属性中使用。 当设置为 "单个收件人列�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 39d3fb4875412546cd6f182de05ad1779b05abdd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7408382cadcb53d857bb36b06702f7857d64a8f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006449"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>educationAssignmentIndividualRecipient 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "33334409"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|recipients|String 集合|收件人的 id 的集合。|
+|recipients|String collection|收件人的 id 的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

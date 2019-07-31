@@ -4,12 +4,13 @@ description: 更新 groupPolicyPresentationValueText 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83453ab14672f2509cc06ee07c6067c4ec24a1fb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 77f368cbad8357c420d5b09cd5cf89d84ae7f795
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985722"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995088"
 ---
 # <a name="update-grouppolicypresentationvaluetext"></a>更新 groupPolicyPresentationValueText
 

@@ -4,12 +4,13 @@ description: 表示用于向组织添加外部用户的邀请。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bb0979954421a9b0fe1d5b119e7f060843380a06
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+doc_type: resourcePageType
+ms.openlocfilehash: 2037c747df42177e4735b1aba1d37605d11339d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914663"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010131"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -47,7 +48,7 @@ ms.locfileid: "34914663"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser|[user](user.md)|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 8b1d481d43374d8611f221fb5c3047cdc9cd9148
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1956ddac829a2921aba6ebf438ae4815ca56b8d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328222"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013127"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
 
@@ -40,7 +41,7 @@ ms.locfileid: "33328222"
 |customerPhone|String|客户的电话号码。|
 |duration|持续时间|约会的长度, 以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
 |end|[dateTimeTimeZone](datetimetimezone.md)|约会结束的日期、时间和时区。|
-|id|String| **bookingAppointment**的 ID。 只读。|
+|id|String| **BookingAppointment**的 ID。 只读。|
 |invoiceAmount|双精度|发票上的计费金额。|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|此约会的发票的日期、时间和时区。|
 |invoiceId|String|发票的 ID。|
@@ -57,7 +58,7 @@ ms.locfileid: "33328222"
 |serviceLocation|[location](location.md)|服务的传递位置。|
 |serviceName|String|与此约会相关联的**bookingService**的名称。<br>创建新约会时, 此属性是可选的。 如果未指定, 则通过**serviceId**属性从与约会关联的服务计算。|
 |serviceNotes|String|来自[bookingStaffMember](bookingstaffmember.md)的注释。 此属性的值仅在按 ID 读取此**bookingAppointment**时可用。|
-|staffMemberIds|String 集合|在此约会中计划的每个[bookingStaffMember](bookingstaffmember.md)的 ID。|
+|staffMemberIds|String collection|在此约会中计划的每个[bookingStaffMember](bookingstaffmember.md)的 ID。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 ## <a name="relationships"></a>关系

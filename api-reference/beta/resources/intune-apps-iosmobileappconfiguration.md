@@ -4,12 +4,13 @@ description: 包含 iOS 移动应用配置的属性、继承属性和操作。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eea6da94d447d93ee843b6d9c9599bb734482cfe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3fd2ea6ba029e9a2d02e9e9bc0eb0be19050f431
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986345"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005518"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>iosMobileAppConfiguration 资源类型
 

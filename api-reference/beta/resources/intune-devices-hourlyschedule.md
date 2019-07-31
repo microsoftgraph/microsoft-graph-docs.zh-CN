@@ -4,12 +4,13 @@ description: 定期设备管理脚本的每小时运行计划。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aadd9f6e53288087cea5ee75a5f7cab2b2decbde
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 27ad780bec9037492e967a3dca7b93a2e230d317
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995166"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999729"
 ---
 # <a name="hourlyschedule-resource-type"></a>hourlySchedule 资源类型
 

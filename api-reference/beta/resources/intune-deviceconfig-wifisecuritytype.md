@@ -4,12 +4,13 @@ description: Wi-fi 安全类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2245069bfda8ced7c16d23465d510c98f1bc5eef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 33e0e615a62f62a565196ba3a6c9c814695040e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000534"
 ---
 # <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType 枚举类型
 

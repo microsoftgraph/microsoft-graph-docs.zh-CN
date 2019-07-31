@@ -2,12 +2,15 @@
 title: hostSecurityState 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 670a052fa3d63da0b78ba620dbc6530a8ab122dc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2f9f654b1a68ff393315889d7b2d9286636fcf35
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005833"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 

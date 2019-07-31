@@ -1,21 +1,22 @@
 ---
 title: plannerPlanContextDetails 资源类型
-description: '**plannerPlanContextDetails**资源包含有关 plannerPlanContext 的其他信息。'
+description: '**PlannerPlanContextDetails**资源包含有关 plannerPlanContext 的其他信息。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2a63195280e7f74210ddc02f8d82b602f40343e8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9d4bf7d0a5c2149f826097eedc350e81eb32bf70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344448"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009018"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>plannerPlanContextDetails 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerPlanContextDetails**资源包含有关[plannerPlanContext](plannerplancontext.md)的其他信息。
+**PlannerPlanContextDetails**资源包含有关[plannerPlanContext](plannerplancontext.md)的其他信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

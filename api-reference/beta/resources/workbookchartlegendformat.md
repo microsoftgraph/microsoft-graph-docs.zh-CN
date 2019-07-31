@@ -4,12 +4,13 @@ description: 封装图表图例的格式属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6bd5fd708574950aea8752396b7fd6495ca6b782
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 987753588beeec62ded346d2f2ff8611c0436e48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348584"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007261"
 ---
 # <a name="workbookchartlegendformat-resource-type"></a>workbookChartLegendFormat 资源类型
 

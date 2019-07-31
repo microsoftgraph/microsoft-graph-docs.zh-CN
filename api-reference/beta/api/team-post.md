@@ -4,12 +4,13 @@ description: 新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: fec2c273e4bdd000f0237d15415e0eba8fc9bda1
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: apiPageType
+ms.openlocfilehash: 5e8d6307999ab6db7b614e12ea6117245f473c29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990839"
 ---
 # <a name="create-team"></a>创建团队
 

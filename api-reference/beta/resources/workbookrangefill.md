@@ -4,12 +4,13 @@ description: 表示 range 对象的背景。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eea7337fa4aefb1bde607740b9a2fc78264dae91
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cb61352964323b0ded8733aa52ddd19854e028d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348593"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007093"
 ---
 # <a name="workbookrangefill-resource-type"></a>workbookRangeFill 资源类型
 

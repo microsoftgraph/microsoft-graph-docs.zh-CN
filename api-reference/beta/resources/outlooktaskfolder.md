@@ -4,12 +4,13 @@ description: '包含 Outlook 任务的文件夹 (outlookTask 对象的集合)。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d1299dda44cd698d0f6a1641f53557d2a7c8f342
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 631da782e47325a2ff28eb6ae9eb1447e1b0a14d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345554"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009256"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 

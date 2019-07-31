@@ -4,12 +4,13 @@ description: '包含共享项目的属性的复杂类型。 '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4a2dc75ed2a62d7a67538bdef801bd97133fbd15
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c62fc11c668a5175e0dafa9bdf4c937fecbef798
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005714"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 

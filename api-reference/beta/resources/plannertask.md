@@ -4,12 +4,13 @@ description: '**plannerTask** 资源表示 Office 365 中的规划器任务。�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 9b57330501b25b50f2f01c45087290ee5e6d4d8f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1eb718daad405fb6aaed2f170747bc91dad47b76
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344367"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008997"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 

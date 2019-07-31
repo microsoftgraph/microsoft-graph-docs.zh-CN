@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
-ms.openlocfilehash: ea8c26fa08d58ad089ba0e17d91ead3de3c65ef6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b9c4532c9fc93c37b2faa9ec2d6e7b247280f462
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339860"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007737"
 ---
 # <a name="system-facet"></a>系统 Facet
 

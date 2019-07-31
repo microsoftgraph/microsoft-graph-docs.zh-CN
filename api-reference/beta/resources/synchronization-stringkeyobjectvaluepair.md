@@ -2,14 +2,15 @@
 title: stringKeyObjectValuePair 资源类型
 description: 表示键值对, 其中键是字符串, 值是任意的 JSON 对象。 这是一种 OData 开放类型, 它应具有一个名`value`为的属性, 它是一个有效的 JSON 对象。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b97f1f8bf10005a9e7829ee9280ebf936405b346
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 3ec55eee1f6b5f60e8936f906390d5343fbafbdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620626"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007828"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>stringKeyObjectValuePair 资源类型
 

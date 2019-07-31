@@ -4,12 +4,13 @@ description: Android for Work 应用程序的自定义配置架构内的配置�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f84a115e449a5a4d5c233cdfd8401f5f6ed2641b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: cd3e3d00eb764cb2bc5c0d4b2d9483c90578c660
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993464"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005644"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>androidForWorkAppConfigurationSchemaItemDataType 枚举类型
 

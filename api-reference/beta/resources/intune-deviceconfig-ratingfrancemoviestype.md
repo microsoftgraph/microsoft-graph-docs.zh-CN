@@ -4,12 +4,13 @@ description: 法国的电影评级标签
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 507959d9ba1c245c9bceb99e3e5ccd4fd5ded8c9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 772931b56e692835e7a2b356543dff40a7f37b91
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995747"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000765"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 

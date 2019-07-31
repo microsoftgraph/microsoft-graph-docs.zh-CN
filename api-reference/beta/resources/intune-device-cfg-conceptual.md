@@ -4,12 +4,13 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b651acefa45cee6e4e89c6c391890dd263cc414a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: conceptualPageType
+ms.openlocfilehash: 138fbf66974a63e258c1e7334db8f4c3f03a05ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004758"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 

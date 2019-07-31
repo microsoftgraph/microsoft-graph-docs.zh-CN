@@ -4,12 +4,13 @@ description: 包含所有受支持的文件系统检测类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f13238a5369b1a727c42d1b6285c4bc6d6d58f43
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e77e1a588946ca3a69a993fb561c1b48602602f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004972"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
 

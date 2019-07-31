@@ -4,12 +4,13 @@ description: Windows Phone 8.1 + SCEP 证书配置文件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80f551bfb348bce83a688a098d5c3343cc9ef5c0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 71a5fb0ef64326fe5bcbcf78864000ec1423c874
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996539"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000296"
 ---
 # <a name="windowsphone81scepcertificateprofile-resource-type"></a>windowsPhone81SCEPCertificateProfile 资源类型
 

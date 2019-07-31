@@ -4,12 +4,13 @@ description: 监视文件活动的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8aeec78103897fbd20c370dc2719ce401e96720
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 2039ca95b69f61b88e5b12b28b55977cb63c1b50
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979835"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001780"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 

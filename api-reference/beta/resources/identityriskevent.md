@@ -4,12 +4,13 @@ description: 'Azure Active Directory 标识保护检测到的风险事件。 它
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 654b6380120c0584045d3267bddffb9db88a39aa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7ea0a11931021e828660cc7b03991b8ea96ef1f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005798"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
 
@@ -26,7 +27,7 @@ ms.locfileid: "33339987"
 |[suspiciousIpRiskEvent](suspiciousipriskevent.md) | 来自可疑 IP 地址的登录。 |
 |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | 来自不熟悉位置的登录。 |
 
-有关风险事件的完整信息, 请参阅[Azure AD Identity Protection 文档](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events)。
+有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events)。
 
 ## <a name="methods"></a>方法
 

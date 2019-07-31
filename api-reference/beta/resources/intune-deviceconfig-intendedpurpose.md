@@ -4,12 +4,13 @@ description: PFX 导入选项。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ac39e55e14e5e1a4491e9576e23ab585f894ce5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 03dadcb340c261e3a000d8dc7a8f3add3d5b5411
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988403"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004356"
 ---
 # <a name="intendedpurpose-enum-type"></a>intendedPurpose 枚举类型
 

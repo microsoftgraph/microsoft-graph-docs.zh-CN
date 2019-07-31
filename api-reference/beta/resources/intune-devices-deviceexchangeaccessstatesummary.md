@@ -4,12 +4,13 @@ description: 设备 Exchange 访问状态摘要
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81f9768deaaeebfaebf02beff35a70e795244050
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4bf29cf514e9d2915957ffb18dc618425d326751
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000009"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary 资源类型
 

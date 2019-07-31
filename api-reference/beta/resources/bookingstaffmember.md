@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 0d7461137c1a67d163d750b05fa056a17071561f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1de32728aff808975efd3121c9fd99fd0819b06c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328288"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013085"
 ---
 # <a name="bookingstaffmember-resource-type"></a>bookingStaffMember 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "33328288"
 预订约会时, 预订 API 会考虑以下设置以确定教职员工成员的可用性: 
 
 1. 默认情况下, 业务的运营时间 ( [bookingBusiness](bookingbusiness.md)实体的**businessHours**属性) 表示教职员工成员的正式可用性。
-2. 如果**useBusinessHours**为 false, 则教职员工成员的特定工作时间 ( **bookingStaffmember**实体的**workingHours**属性) 表示该成员的常规可用性。
+2. 如果**useBusinessHours**为 false, 则教职员工成员的特定工作时间 ( **BookingStaffmember**实体的**workingHours**属性) 表示该成员的常规可用性。
 3. 如果**availabilityIsAffectedByPersonalCalendar**为 true, 则预订 API 将首先查看教职员工成员的可用小时数 (由 #1 或 #2 决定), 并在教职员工成员个人的这些时间内验证可用性。日历, 在进行预定前。
 
 ## <a name="methods"></a>方法
@@ -38,12 +39,12 @@ ms.locfileid: "33328288"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True, 则表示如果教职员工成员是 office 365 用户, 则在预定前, 预订 API 将验证教职员工成员在 Office 365 的个人日历中的可用性。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True, 则表示如果教职员工成员是 Office 365 用户, 则在预定前, 预订 API 将验证教职员工成员在 Office 365 的个人日历中的可用性。 |
 |colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 "**员工详细信息**" 页上的调色板。|
-|displayName|字符串|向客户显示的教职员工成员的姓名。 必填。|
+|displayName|字符串|向客户显示的教职员工成员的姓名。 必需。|
 |emailAddress|String|教职员工成员的电子邮件地址。 这可以位于与企业相同的 Office 365 租户中, 也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true, 则可以使用此电子邮件地址。 必需。|
 |id|String| 以 GUID 格式的教职员工成员的 ID。 只读。|
-|role|string| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。 必填。|
+|role|string| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。 必需。|
 |useBusinessHours|Boolean|如果为 True, 则表示教职员工成员的可用性是在企业的**businessHours**属性中指定的。 False 表示可用性由教职员工成员的**workingHours**属性设置决定。|
 |workingHours|[bookingWorkHours](bookingworkhours.md)集合|教职员工成员可用于预订的一周中每一天的小时数。 默认情况下, 它们被初始化为与企业的**businessHours**属性相同。|
 

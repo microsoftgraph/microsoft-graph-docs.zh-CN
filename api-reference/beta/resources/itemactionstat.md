@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActionStat 资源提供有关一段时间内的操作的聚合详细信息。
 ms.date: 09/14/2017
 title: ItemActionStat
 localization_priority: Normal
-ms.openlocfilehash: a0e3bc3f217308d96eaadf6ab367431c7f1b8c3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 719a443af65fd9642feee3bc8ddbc832eb3964c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345434"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010110"
 ---
 # <a name="itemactionstat-resource-type"></a>itemActionStat 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**itemActionStat**资源提供有关一段时间内的操作的聚合详细信息。
+**ItemActionStat**资源提供有关一段时间内的操作的聚合详细信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -4,12 +4,13 @@ description: 设备保护状态实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd507daef4d9055dcabce1e90481e22a77ec8180
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 793cd54995fdac06f53e78c0ffdd4d16dd1c51d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999330"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
 

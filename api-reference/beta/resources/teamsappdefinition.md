@@ -4,12 +4,13 @@ description: 一个版本的 teamsApp 的详细信息。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4b350c5ebe39da336dfe467bb73f5b91270dc31c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c4849afe745a8554243bd37d85cb82d831e00a64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345797"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007702"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 

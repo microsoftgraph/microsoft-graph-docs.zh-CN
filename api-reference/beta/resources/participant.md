@@ -4,12 +4,13 @@ description: 参与者类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4a138267529127562fa9df42d8b20a985939b50e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a903eb34191401100d9b19aa17eba6fb9f5c6617
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009214"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 

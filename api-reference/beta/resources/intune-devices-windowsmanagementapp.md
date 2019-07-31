@@ -4,12 +4,13 @@ description: Windows 管理应用实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3db66a737e86ad66e66be8b9bde88e6024f8233
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 68b7882da1c223d3b06dec7082fa2ae9d002f251
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999393"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp 资源类型
 

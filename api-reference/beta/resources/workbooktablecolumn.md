@@ -4,12 +4,13 @@ description: 代表表格中的一列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: af0472d5cfdd95af731a4d9280b90d3ed1b44621
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 07dbcd2e900ced3fe235300cfab2b4922ddccc9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348611"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007072"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 

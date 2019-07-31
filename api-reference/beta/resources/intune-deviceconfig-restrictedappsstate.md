@@ -4,12 +4,13 @@ description: 受限的应用状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92dec29f6bd5e6a01d5a14d9e1d2041c4e4d98a1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 7e87684fe68ce89038e6566e772d15fe0c526ec9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986702"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000597"
 ---
 # <a name="restrictedappsstate-enum-type"></a>restrictedAppsState 枚举类型
 

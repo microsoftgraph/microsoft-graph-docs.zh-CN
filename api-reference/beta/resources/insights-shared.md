@@ -4,12 +4,13 @@ description: '了解表示与用户共享的文件或由特定用户共享的文
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 128a85bb9aa2e9f51d2393029cce3c27f8c4e6f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 47228e6597f24b9a6d662c7d87643322acaed40b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339977"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006232"
 ---
 # <a name="sharedinsight-resource-type"></a>sharedInsight 资源类型
 
@@ -18,7 +19,7 @@ ms.locfileid: "33339977"
 了解表示与用户共享的文件或由特定用户共享的文件。 支持以下共享文件:
 
 - 直接在电子邮件或会议邀请中附加的文件。
-- onedrive for Bussiness and sharepoint 新式附件-存储在 OneDrive for business 和 sharepoint 中的文件, 用户共享为电子邮件中的链接。
+- OneDrive for Bussiness and SharePoint 新式附件-存储在 OneDrive for Business 和 SharePoint 中的文件, 用户共享为电子邮件中的链接。
 
 **注意**: 我们目前正在努力使用数据填充共享 API 的结果。 发布后的第一周可能缺少一些数据。
 
@@ -37,7 +38,7 @@ ms.locfileid: "33339977"
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用共享文档的属性, 例如文档的 url 和类型。 只读       |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|

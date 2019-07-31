@@ -4,12 +4,13 @@ description: 检索用户对象列表。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a23635ec75befde8216bbb103ac8207ca415a08a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 246003bbbfb44f74d93679874a057eda07c77aed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996208"
 ---
 # <a name="list-users"></a>列出用户
 

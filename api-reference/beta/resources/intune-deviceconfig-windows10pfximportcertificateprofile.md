@@ -4,12 +4,13 @@ description: 不推荐使用
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7393b8b366a4b15914e3bfe899af76f6d8132a81
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b297ea744855428effa2438c5c08a85da1eb58dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982180"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011328"
 ---
 # <a name="windows10pfximportcertificateprofile-resource-type"></a>windows10PFXImportCertificateProfile 资源类型
 

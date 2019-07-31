@@ -4,12 +4,13 @@ description: 表示 converstaionThread 实体中的单个张贴项。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: abfd2b19681b9821377830f1696fa6f754afd711
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9de2bfec6bab126577fa0013a58caac83ad031f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344214"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008983"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -67,7 +68,7 @@ ms.locfileid: "33344214"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|帖子的内容。这是默认属性。此属性可为 NULL。|
-|类别|String 集合|与帖子关联的类别。 每个类别对应于已为用户定义的[outlookCategory](outlookcategory.md)的**displayName**属性。|
+|categories|String collection|与帖子关联的类别。 每个类别对应于已为用户定义的[outlookCategory](outlookcategory.md)的**displayName**属性。|
 |changeKey|字符串|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |conversationId|String|对话的唯一 ID。只读。|
 |conversationThreadId|字符串|对话线程的唯一 ID。只读。|
@@ -85,8 +86,8 @@ ms.locfileid: "33344214"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md) 集合|张贴内容的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 此为只读属性。 可为 Null。|
-|extensions|[Extension](extension.md) 集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
-|inReplyTo|[文章](post.md)|此文章在[conversationThread](conversationthread.md)中答复的早期帖子。 只读。|
+|extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
+|inReplyTo|[Post](post.md)|此文章在[conversationThread](conversationthread.md)中答复的早期帖子。 只读。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|
 
@@ -100,7 +101,7 @@ ms.locfileid: "33344214"
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
 |**附件**| | |
 |[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
-|[添加附件](../api/post-post-attachments.md) |[附件](attachment.md)| 将附件添加到帖子中。 |
+|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|

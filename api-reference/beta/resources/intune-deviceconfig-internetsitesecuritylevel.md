@@ -4,12 +4,13 @@ description: Internet 网站安全级别的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1669ed00f10cad1ccf597a1de2f1d35d818dc17
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 4a1305489ce05b7a78a570b8ef8036b7851f2cef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988354"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004349"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 枚举类型
 

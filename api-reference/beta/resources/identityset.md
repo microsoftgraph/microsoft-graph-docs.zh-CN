@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 了解 identityset 资源是标识资源的键控集合。
 ms.date: 09/10/2017
 title: 了解 identityset
 localization_priority: Normal
-ms.openlocfilehash: b1570fc0ec0a6e28bab569dfae6992675d8b3537
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c43981c1f7e79567afe901217030a0b5abed6f53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006288"
 ---
 # <a name="identityset-resource-type"></a>了解 identityset 资源类型
 
@@ -58,7 +60,7 @@ ms.locfileid: "33333657"
 | 属性    | 类型                    | 说明                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [标识](identity.md) | 可选。与此操作关联的应用程序。  |
-| conversation| [标识](identity.md) | 可选。 与此操作关联的团队或频道。       |
+| 对话| [标识](identity.md) | 可选。 与此操作关联的团队或频道。       |
 | conversationIdentityType| [标识](identity.md) | 可选。 指示**会话**属性是否标识团队或频道。|
 | 设备      | [标识](identity.md) | 可选。与此操作关联的设备。       |
 | phone       | [identity](identity.md) | 可选。 与此操作关联的电话号码。 |

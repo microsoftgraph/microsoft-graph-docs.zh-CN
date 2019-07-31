@@ -4,12 +4,13 @@ description: 列出 embeddedSIMActivationCodePool 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c47086be9d75b9525a6afd5ae873619401e8abb6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6a59ab9518713fdad8456348940068b63216f3fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995347"
 ---
 # <a name="list-embeddedsimactivationcodepools"></a>列出 embeddedSIMActivationCodePools
 

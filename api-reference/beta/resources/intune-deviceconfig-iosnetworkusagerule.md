@@ -4,12 +4,13 @@ description: 网络使用规则允许企业指定托管应用使用网络的方�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dc693eb993e6740098ab90dcae53214d8af4d0c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 52da789c1a01bc74868157b4a81e459b1059856e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995691"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004216"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
 

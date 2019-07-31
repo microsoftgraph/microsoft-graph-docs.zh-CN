@@ -4,12 +4,13 @@ description: 列出为租户组织注册设备的适用于 Intune 终结点 (RES
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 053ae11623f01dc5287a143f3e9db8a6b12e4120
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: f784f3aa837f13f009bd7520e89e045f8d952292
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978176"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999309"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 

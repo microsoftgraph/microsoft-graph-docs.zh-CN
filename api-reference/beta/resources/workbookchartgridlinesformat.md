@@ -4,12 +4,13 @@ description: 封装图表网格线的格式属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 53c6561ef9d7695a0096b928b7be4c7a72432960
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6d32e916b3156082b45cbcaa105fd55e1c377b2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348603"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007275"
 ---
 # <a name="workbookchartgridlinesformat-resource-type"></a>workbookChartGridlinesFormat 资源类型
 

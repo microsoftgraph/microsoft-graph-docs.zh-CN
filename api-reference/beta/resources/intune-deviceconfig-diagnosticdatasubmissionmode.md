@@ -4,12 +4,13 @@ description: 允许设备发送诊断和使用遥测数据, 如 Watson。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf69232ee31bf7fd1eebd440e482d76c052f4fbc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 788da8fd9a239bf26dfd2d9e8d8fbf308d059784
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989922"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004538"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 

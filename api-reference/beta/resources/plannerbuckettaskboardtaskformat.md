@@ -1,21 +1,22 @@
 ---
 title: plannerBucketTaskBoardTaskFormat 资源类型
-description: '**plannerBucketTaskBoardTaskFormat**资源表示用于在任务板的 bucket 视图 (按其分配的存储桶中的任务组织的视图) 中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerBucketTaskBoardTaskFormat**对象。'
+description: '**PlannerBucketTaskBoardTaskFormat**资源表示用于在任务板的 bucket 视图 (按其分配的存储桶中的任务组织的视图) 中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerBucketTaskBoardTaskFormat**对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d40234fd729b849fee9fa789b9ae410eb0147f45
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b9e9713dca07e8eff0b320fcc50c8c48cc46f489
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344588"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009102"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>plannerBucketTaskBoardTaskFormat 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerBucketTaskBoardTaskFormat**资源表示用于在任务板的 bucket 视图 (按其分配的存储桶中的任务组织的视图) 中正确呈现任务的信息。 每个[任务](plannertask.md)都有一个与之关联的**plannerBucketTaskBoardTaskFormat**对象。
+**PlannerBucketTaskBoardTaskFormat**资源表示用于在任务板的 bucket 视图 (按其分配的存储桶中的任务组织的视图) 中正确呈现任务的信息。 每个[任务](plannertask.md)都有一个与之关联的**plannerBucketTaskBoardTaskFormat**对象。
 
 
 ## <a name="methods"></a>方法

@@ -3,12 +3,14 @@ title: 订阅资源类型
 description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的通知。 目前，支持订阅以下资源：
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 6a7fd50a53e68313ba72c8bd5d90b47d2b5b2607
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d70c6d56a95c8725d214b99a4ad45f0245b51173
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537203"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008101"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -60,7 +62,7 @@ ms.locfileid: "34537203"
 | expirationDateTime | DateTimeOffset | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
 | clientState | 字符串 | 可选。 指定服务为每个通知发送的 `clientState` 属性的值。 最大长度为 255 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个通知一起接收的 `clientState` 属性值，客户端可以检查通知是否是由服务发送。 |
 | id | string | 订阅的唯一标识符。只读。 |
-| applicationId | 字符串 | 用于创建订阅的应用程序的标识符。 只读。 |
+| applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期

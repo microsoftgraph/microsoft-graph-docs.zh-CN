@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: columnDefinition 资源上的 lookupColumn 指示从网站中的另一个源查找列的值。
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 04b9a92bfd723b188fc6869717a5665e10b6af30
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8c92bce6b6d7ba401f6b9274f2ba0eee4439929e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345178"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009907"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 

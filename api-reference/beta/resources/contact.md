@@ -4,12 +4,13 @@ description: 联系人是 Outlook 中的一个项目，你可以在这里组织�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6c5c1bf0b04117a4a0ff7761866cf414f008ee7d
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+doc_type: resourcePageType
+ms.openlocfilehash: 8eb692a3671672b82891a66531c64df1fcaa0e5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012882"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 

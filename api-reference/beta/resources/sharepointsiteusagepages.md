@@ -3,12 +3,14 @@ title: sharePointSiteUsagePages 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1a82c0a1174559db6d90e64f1fd1ed1403caa048
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 7e3e1d463faddf823c49c58b4278f3812644cc9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008311"
 ---
 # <a name="sharepointsiteusagepages-resource-type"></a>sharePointSiteUsagePages 资源类型
 
@@ -16,10 +18,10 @@ ms.locfileid: "32584052"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | siteType          | String |
 | pageViewCount     | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日期   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

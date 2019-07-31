@@ -4,12 +4,13 @@ description: termsAndConditionsAssignment 实体表示对给定组的给定条�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36cabb2ca2e6f375701b17901445650740dead73
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c1687f9f77f7b9c34a0a87c2ad6e250e694d5ec4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996608"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004790"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment 资源类型
 

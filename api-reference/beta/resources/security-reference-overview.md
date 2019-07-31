@@ -4,12 +4,13 @@ description: 安全威胁的复杂程度不断提升, 从而影响了全球经�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 71ff9c4eb4e22b20e9c4d9b9ebb7b78ccb6f18f0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343386"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008521"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>使用 Microsoft Graph API 进行安全威胁检测和保护 (预览)
 
@@ -19,7 +20,7 @@ ms.locfileid: "33343386"
 
 智能安全图形将来自世界各地的 Microsoft、安全运营中心和合作伙伴的安全智能组合在一起, 构成集成安全解决方案生态系统。 通过使用机器学习、行为监控和云规模, 智能安全图形可以更好地对威胁进行快速和全面的保护、检测和响应。 [安全 API](security-api-overview.md)将您连接到[智能安全图形](https://www.microsoft.com/en-us/security/intelligence-security-api), 为您提供可操作且具有整体的解决方案。
 
-[identity protection 风险事件 API](identityprotection-root.md)为 Azure AD Premium P1 和 P2 客户提供了轻松访问, 以查询[标识保护所进行的风险检测](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)并在 SIEM 系统和安全应用程序中使用这些事件。
+[Identity protection 风险事件 API](identityprotection-root.md)为 Azure AD Premium P1 和 P2 客户提供了轻松访问, 以查询[标识保护所进行的风险检测](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)并在 SIEM 系统和安全应用程序中使用这些事件。
 
 ## <a name="see-also"></a>另请参阅
 

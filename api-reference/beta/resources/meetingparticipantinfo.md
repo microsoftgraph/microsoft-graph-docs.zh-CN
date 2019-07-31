@@ -4,12 +4,13 @@ description: 会议参与者的相关信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3df338760bd1d2ff74cc79c706944c9b5fa7104d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 62843378d53774d19ad3428e6b52c985761edda2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342392"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009767"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 

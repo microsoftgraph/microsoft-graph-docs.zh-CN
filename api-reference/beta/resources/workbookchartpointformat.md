@@ -4,12 +4,13 @@ description: 表示图表点的格式化对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f0896001fda140ff1d2693b3463c472568f1d28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9c3d968c4d36b8220d505edb6b7503a2b1206416
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007233"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>workbookChartPointFormat 资源类型
 

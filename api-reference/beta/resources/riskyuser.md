@@ -3,13 +3,14 @@ title: riskyUser 资源类型
 description: 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 author: cloudhandler
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 02c1fe3bbbcf532298a5f615971d7ffbc273bf5a
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 3548be0439eaa5335d710a35f51fdbaecb19060c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537293"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008724"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 

@@ -1,21 +1,22 @@
 ---
 title: planner 资源类型
-description: '**planner**资源是 planner 对象模型的入口点。 它返回单一实例**planner**资源。  它不包含任何可用属性。'
+description: '**Planner**资源是 planner 对象模型的入口点。 它返回单一实例**planner**资源。  它不包含任何可用属性。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2f1fb3b7058a87dd7b8390408590371cf1b0e9cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2ef94a7507558279e5295239588e2a8eda512882
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009130"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**planner**资源是 planner 对象模型的入口点。 它返回单一实例**planner**资源。  它不包含任何可用属性。
+**Planner**资源是 planner 对象模型的入口点。 它返回单一实例**planner**资源。  它不包含任何可用属性。
 
 
 ## <a name="methods"></a>方法
@@ -29,7 +30,7 @@ ms.locfileid: "33344616"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 **planner**资源的标识符。|
+|id|String| 只读。 **Planner**资源的标识符。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

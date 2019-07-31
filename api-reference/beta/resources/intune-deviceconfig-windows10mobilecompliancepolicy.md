@@ -4,12 +4,13 @@ description: 此类包含 Windows 10 Mobile 的合规性设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb383a97a88eb5bc917fabc49ea948f9ee6e4f99
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 85dee9a037ec586bd2f0d174a2aa8eb1a67cb1db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982215"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011342"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>windows10MobileCompliancePolicy 资源类型
 

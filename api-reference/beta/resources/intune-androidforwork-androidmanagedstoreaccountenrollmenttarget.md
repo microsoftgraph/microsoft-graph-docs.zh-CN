@@ -4,12 +4,13 @@ description: 适用于帐户的 Android for Work 设备管理目标类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c9ac8cd8f3513495820abc7833600d0f18cb2da
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: dd7366a17fbba75b0f11acaa9e781a5f5179c8d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991455"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005588"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>androidManagedStoreAccountEnrollmentTarget 枚举类型
 

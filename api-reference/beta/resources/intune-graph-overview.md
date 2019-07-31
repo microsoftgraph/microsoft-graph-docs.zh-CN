@@ -4,12 +4,13 @@ description: 列出你可用于管理租户组织及其设备、应用、访问�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 850f1866c83e755d4075a429f16a453409c2bd9a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: a77da0398f782e775412383baa5a85f55dec667d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990216"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998728"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 

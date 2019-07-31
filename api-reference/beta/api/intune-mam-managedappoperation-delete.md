@@ -4,12 +4,13 @@ description: 删除 managedAppOperation。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0726053eabae5d12f352797e3d5e45e1d96437ee
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6d44d2fe28b9293d0d19fcb46b1725b8c5b51c1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986632"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994775"
 ---
 # <a name="delete-managedappoperation"></a>删除 managedAppOperation
 

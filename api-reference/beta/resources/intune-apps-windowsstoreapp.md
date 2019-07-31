@@ -4,12 +4,13 @@ description: 包含 Windows 应用商店应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc78d1dacd4603d1ad48a6dbf112fd5ba10717fc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3a358379c09868d11ed381688f8b151cc8baa73d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978288"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012112"
 ---
 # <a name="windowsstoreapp-resource-type"></a>windowsStoreApp 资源类型
 

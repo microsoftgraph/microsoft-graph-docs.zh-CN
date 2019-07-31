@@ -4,12 +4,13 @@ description: Exchange 中的设备类。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c178ba70c1d61f691e3f53032405de5c9abf0a5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5d03f36a34e6000f13b2033c6b7905fc45f6f6cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993023"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010754"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass 资源类型
 

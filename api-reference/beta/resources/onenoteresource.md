@@ -2,12 +2,15 @@
 title: onenoteResource 资源类型
 description: 'OneNote 页面上的图像或其他文件资源。 '
 localization_priority: Normal
-ms.openlocfilehash: abb60a52b0f32ac2e1bdc024d07f02233db6043c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3884be59ed0eedafa9d4a45c851570d08ea70848
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348570"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009340"
 ---
 # <a name="onenoteresource-resource-type"></a>onenoteResource 资源类型
 
@@ -53,7 +56,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object`标记 (表示 PDF、.docx 和 PNG 等文件) 包含`data`属性中的文件资源的终结点:
+`object`标记 (表示 PDF、.DOCX 和 PNG 等文件) 包含`data`属性中的文件资源的终结点:
 
 ```
 <object
@@ -68,7 +71,7 @@ GET ../onenote/pages/{id}/content
 | 内容 | Edm||
 | contentUrl | String ||
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无。
 
 

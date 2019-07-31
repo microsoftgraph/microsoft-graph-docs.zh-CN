@@ -4,12 +4,13 @@ description: 包含所有受支持的注册表数据检测类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac32e469332c1f28537b904f4d6b5992c7871e7d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 45f961236363f25205763a3d9765453fc8760ad5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986086"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012231"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType 枚举类型
 

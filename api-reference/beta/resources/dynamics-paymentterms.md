@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4ed1f3791474cf6e29038e75fcd3625e4da300a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d367314d5546c59dd251b30e952aa17b9d60ce10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507327"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006596"
 ---
 # <a name="paymentterms-resource-type"></a>paymentTerms 资源类型
 表示 Dynamics 365 Business Central 中的付款期限。
@@ -28,13 +29,13 @@ ms.locfileid: "32507327"
 ## <a name="properties"></a>属性
 | 属性                     | 类型     |说明                                                |
 |:-----------------------------|:-------|:----------------------------------------------------------|
-|id                            |GUID    |paymentTerms 的唯一 ID。 不可编辑。           |
+|id                            |GUID    |PaymentTerms 的唯一 ID。 不可编辑。           |
 |code                          |string  |指定付款期限代码。                           |
 |displayName                   |string  |指定付款期限的显示名称。                   |
-|dueDateCalculation            |字符串  |指定用于计算必须进行付款的日期的公式。|
-|discountDateCalculation       |字符串  |指定用于计算要获取折扣付款所必须进行的日期的公式。|
+|dueDateCalculation            |string  |指定用于计算必须进行付款的日期的公式。|
+|discountDateCalculation       |string  |指定用于计算要获取折扣付款所必须进行的日期的公式。|
 |discountPercent               |数位 |指定针对发票金额的提前付款应用的折扣百分比。|
-|calculateDiscountOnCreditMemos|布尔 |指定是否应将折扣应用于贷方通知单。 **如果为 True** , 则表示将提供折扣, **false**表示不会给出折扣。|
+|calculateDiscountOnCreditMemos|boolean |指定是否应将折扣应用于贷方通知单。 **如果为 True** , 则表示将提供折扣, **false**表示不会给出折扣。|
 |lastModifiedDateTime          |datetime|上次修改 paymentTerms 的日期/时间。 只读。|  
 
 

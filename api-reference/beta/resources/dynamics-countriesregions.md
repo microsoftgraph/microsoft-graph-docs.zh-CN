@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: b6f50ba3046a402f2b8729529675653286808459
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 73f60a48e1b7b3564851271209e195ecbbf171e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507264"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012630"
 ---
 # <a name="countriesregions-resource-type"></a>countriesRegions 资源类型
 代表 Dynamics 365 业务中心中的 countriesRegions 对象, 该业务中心是地址的一部分。
@@ -31,7 +32,7 @@ ms.locfileid: "32507264"
 |id              |GUID        |国家/地区的唯一 ID。 不可编辑。           |
 |code            |string      |指定国家/地区的代码。                    |
 |displayName     |string      |指定国家/地区的显示名称。            |
-|addressFormat   |字符串      |指定在面向外部的文档上显示的地址的格式。 将地址格式链接到国家/地区代码, 以便基于包含该国家/地区代码的卡片或文档的面向外部的文档使用指定的地址格式。|
+|addressFormat   |string      |指定在面向外部的文档上显示的地址的格式。 将地址格式链接到国家/地区代码, 以便基于包含该国家/地区代码的卡片或文档的面向外部的文档使用指定的地址格式。|
 |lastModifiedDateTime|datetime|国家/地区的最后修改日期时间。 只读。|  
 
 

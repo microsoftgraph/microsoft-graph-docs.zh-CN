@@ -4,12 +4,13 @@ description: 包含捆绑包包中的 MacOS LOB 应用程序的属性
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46e84e629f7664f8a5ab33eaa9db6bbc95fd80bc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4ca4d371966781378c9097769d9178de69d8f7d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957757"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012588"
 ---
 # <a name="macoslobchildapp-resource-type"></a>macOSLobChildApp 资源类型
 

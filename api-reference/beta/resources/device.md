@@ -4,12 +4,13 @@ description: 表示在目录中注册的设备。 可以在云中使用设备注
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a19cbe489ae4e9ab3a31d9633433f7c4c7fc075a
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: dad51a2a4a5a0cd248d09d617bd1cd39c6edb852
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657719"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012819"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 

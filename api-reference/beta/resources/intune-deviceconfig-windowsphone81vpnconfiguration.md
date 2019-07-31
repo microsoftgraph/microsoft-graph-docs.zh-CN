@@ -4,12 +4,13 @@ description: 通过提供此配置文件中的配置, 可以指示 Windows Phone
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 780c1f1488a97347084fc67da1055e022510c89f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a8dcff60b0da67b5a73e14e29e9f3e170175e926
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000282"
 ---
 # <a name="windowsphone81vpnconfiguration-resource-type"></a>windowsPhone81VpnConfiguration 资源类型
 

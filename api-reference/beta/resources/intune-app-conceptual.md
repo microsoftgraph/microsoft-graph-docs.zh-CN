@@ -4,12 +4,13 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6c256319d819ca3523f4a7fbeb65a3f1351a6e80
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: 4bae37d3364836d8c706bfd97994c43396fa8143
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006148"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 

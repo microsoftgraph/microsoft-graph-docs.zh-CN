@@ -4,12 +4,13 @@ description: 用于隐私数据访问的 Windows 隐私数据类别说明符。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e86e45f49f21da84b5d0ae6975a032969586f2a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 11b7c71ff9368db822ab66bff558b8716615cbc4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000247"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 

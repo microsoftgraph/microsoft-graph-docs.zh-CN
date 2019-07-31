@@ -4,12 +4,13 @@ description: 包含见解的属性的复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: accd2b0b12f8068ea990fbd611b46053f66d6de4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 06a8d99ba01a8a3fd3d171b800345f81b0819de0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005721"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 

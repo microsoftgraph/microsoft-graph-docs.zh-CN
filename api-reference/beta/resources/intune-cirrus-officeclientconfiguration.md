@@ -4,12 +4,13 @@ description: Office 客户端配置。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: c762158345e957c265d3784e46f2ef91421603be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 3688503cf19d8cebe51b4afe7abd1563257f9192
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004757"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 
@@ -31,8 +32,8 @@ Office 客户端配置。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|Office 客户端配置策略的 Id。|
-|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。|
-|policyPayload|Stream|策略设置 JSON string 二进制格式, 用户不能更改这些值。|
+|userPreferencePayload|流|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。|
+|policyPayload|流|策略设置 JSON string 二进制格式, 用户不能更改这些值。|
 |说明|String|尚未记录|
 |displayName|String|管理员提供的 office 客户端配置策略的说明。|
 |lastModifiedDateTime|日期时间|策略的上次修改日期时间戳。|

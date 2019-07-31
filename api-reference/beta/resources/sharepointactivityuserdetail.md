@@ -3,12 +3,14 @@ title: sharePointActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a7dc324d821dca26ff1083f1e48c258e1955d72f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 3d1c1f1b2bcf919769009bbb65a917c4b9cb84f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008430"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>sharePointActivityUserDetail 资源类型
 
@@ -16,11 +18,11 @@ ms.locfileid: "32583975"
 
 | 属性                  | 类型              |
 | :------------------------ | :---------------- |
-| reportRefreshDate         | Date              |
+| reportRefreshDate         | 日期              |
 | userPrincipalName         | String            |
 | isDeleted                 | Boolean           |
-| deletedDate               | Date              |
-| lastActivityDate          | Date              |
+| deletedDate               | 日期              |
+| lastActivityDate          | 日期              |
 | viewedOrEditedFileCount   | Int64             |
 | syncedFileCount           | Int64             |
 | sharedInternallyFileCount | Int64             |

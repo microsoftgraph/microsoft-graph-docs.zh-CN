@@ -4,12 +4,13 @@ description: 身份验证方法使用报告可帮助组织了解其最终用户�
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a819276b19f2c7fdfe6ed22bd3dd07023ea08992
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+doc_type: conceptualPageType
+ms.openlocfilehash: 4f8886333d5067abc42a583084726c58ec67a659
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645228"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013197"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 

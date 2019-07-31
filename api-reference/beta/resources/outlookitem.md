@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b2c43d81d045ee6b563e7ae81f8fe6fab56bdf83
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 77741fa05f356418e688cdc4a45c5a4750604c3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009277"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -40,7 +41,7 @@ ms.locfileid: "33341846"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类别|String 集合||
+|categories|String collection||
 |changeKey|String||
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|

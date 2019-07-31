@@ -4,12 +4,13 @@ description: 对于租户, Windows 8 和8.1 设备需要 SideLoadingKey 实体�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4da3030c9c9a4a858e7ebcac0f7435a247672d1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 036944ea41ee9b180247577c7c56c2055b33fc2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010712"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 

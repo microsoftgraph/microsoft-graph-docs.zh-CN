@@ -4,12 +4,13 @@ description: 创建新的 androidManagedAppProtection 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0723c951ce3c182412108f6ed2d658ddc45bf1e2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ae7fd0bdb25099e8cee1564f3a9808b827da6432
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985687"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995074"
 ---
 # <a name="create-androidmanagedappprotection"></a>创建 androidManagedAppProtection
 

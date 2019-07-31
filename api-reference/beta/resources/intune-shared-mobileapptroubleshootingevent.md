@@ -4,12 +4,13 @@ description: 介绍了适用于 Intune 的 Microsoft Graph API 的 mobileAppTrou
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 321b57ac590bfddf82b22425103d316a13ba1b9a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: f91bb53926bdcc99d4b7796c40d5679a7685d8e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938872"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010404"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>mobileAppTroubleshootingEvent 资源类型
 

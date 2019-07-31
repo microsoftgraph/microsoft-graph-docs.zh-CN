@@ -4,12 +4,13 @@ description: 通过提供此配置文件中的配置, 可以指示 Android 工�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12ade147c33c79455c0d983412fd05568878725e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: da9489ba5727e344e4a0b1c24ab435ecb0ed18ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011552"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>androidWorkProfileWiFiConfiguration 资源类型
 

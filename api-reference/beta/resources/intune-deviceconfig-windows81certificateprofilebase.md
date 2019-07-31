@@ -4,12 +4,13 @@ description: 设备配置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 394b0b0fa23674467dca98e9385486e8ce86418a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ea95137e448a7b97e52ebe140cdbc575b6b68227
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996622"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000331"
 ---
 # <a name="windows81certificateprofilebase-resource-type"></a>windows81CertificateProfileBase 资源类型
 

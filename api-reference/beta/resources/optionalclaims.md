@@ -2,12 +2,15 @@
 title: optionalClaims 类型
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: b4269fabf6f9170177de1008070f4d76a6535354
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f35a3852202e05015259bbe7693ad3ba078e004a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009284"
 ---
 # <a name="optionalclaims-resource-type"></a>optionalClaims 资源类型
 

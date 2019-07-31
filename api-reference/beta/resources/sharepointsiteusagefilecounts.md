@@ -3,12 +3,14 @@ title: sharePointSiteUsageFileCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1c88cd75e1b38da87042b7b67388ef869c15ec38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 7d1c47b5149bcee4b5a77945b927bfd5d4786dda
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584010"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008360"
 ---
 # <a name="sharepointsiteusagefilecounts-resource-type"></a>sharePointSiteUsageFileCounts 资源类型
 
@@ -16,11 +18,11 @@ ms.locfileid: "32584010"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | siteType          | String |
 | total             | Int64  |
 | 工作            | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日期   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

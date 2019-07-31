@@ -4,12 +4,13 @@ description: 包含 Android 业务线应用的属性和继承的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59e308a8e6c5becea3bc2c7826430ec77cad50c8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4e5010b3e115c714a7ad701738455746f7167eb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991350"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005574"
 ---
 # <a name="androidlobapp-resource-type"></a>androidLobApp 资源类型
 

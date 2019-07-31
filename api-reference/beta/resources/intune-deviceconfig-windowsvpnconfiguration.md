@@ -4,12 +4,13 @@ description: Windows VPN 配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0177eb4e4046037470424a743367e44d1a952d09
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ef0803643cf8b5b93cf1d32dba1e78cdc50e09d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993990"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000093"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>windowsVpnConfiguration 资源类型
 

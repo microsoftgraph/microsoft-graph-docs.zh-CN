@@ -2,12 +2,15 @@
 title: appRole 资源类型
 description: 表示可能由调用其他应用程序的客户端应用程序请求的应用程序角色, 或可用于向指定的应用程序角色中的用户或组分配应用程序的应用程序角色。 ServicePrincipal 实体和 application 实体的**appRoles**属性是**appRole**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 4043d600bd19c61156cccd72f0d4e4f2e8352640
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 35c26e52c5d7eb9529474d08a43b68fceddfc954
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778675"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013316"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 

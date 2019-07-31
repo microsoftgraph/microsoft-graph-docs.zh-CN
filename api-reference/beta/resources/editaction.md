@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: itemActivity 上存在 EditAction 资源指示活动已编辑一个项。
 ms.date: 09/14/2017
 title: EditAction
 localization_priority: Normal
-ms.openlocfilehash: 68e6419206d03ba44cb34919ae46b8f1688d49a0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 374b4f7374ba91360bdaa97e5bc36fb0f5aabbae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006505"
 ---
 # <a name="editaction-resource-type"></a>EditAction 资源类型
 

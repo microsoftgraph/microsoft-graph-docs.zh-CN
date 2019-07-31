@@ -4,12 +4,13 @@ description: 项值定义。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8e8028a4863ee313499f8c4982b569ca25747b3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 998df44aaad34bad21ef23d8134465b74cd71ca7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989376"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001010"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
 

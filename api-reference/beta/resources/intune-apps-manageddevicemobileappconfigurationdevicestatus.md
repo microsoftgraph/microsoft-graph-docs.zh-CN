@@ -4,12 +4,13 @@ description: 包含设备的 MDM 移动应用配置状态的属性、继承属�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24f0275c9606e570db7b56685169667940cb79e3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b412bad72649f1965e9945a9dacf03d6ce6cf3e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989537"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005315"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>managedDeviceMobileAppConfigurationDeviceStatus 资源类型
 

@@ -4,12 +4,13 @@ description: 读取 windowsAutopilotSettings 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 828bb043a24515feb7d04412a5c4685cf4fd4a81
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5ccf606da0c8dbb1a8f93e99c50fb382abedf3e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982733"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995431"
 ---
 # <a name="get-windowsautopilotsettings"></a>获取 windowsAutopilotSettings
 

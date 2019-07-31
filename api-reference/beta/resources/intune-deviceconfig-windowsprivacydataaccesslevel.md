@@ -4,12 +4,13 @@ description: 确定特定 Windows 隐私数据类别的访问级别。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6eea937d05d45e6fcf7fa955df16885067047b3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 44ac906a390aff82e4399181014628725673b1b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000261"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>windowsPrivacyDataAccessLevel 枚举类型
 

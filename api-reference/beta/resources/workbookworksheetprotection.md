@@ -4,12 +4,13 @@ description: 表示对工作表对象的保护。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7e4a2f3130c71df35b1106d1a342004cfc6fdf25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ed6f52074836368eade8851ea32f1e8ef64e493e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348574"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007037"
 ---
 # <a name="workbookworksheetprotection-resource-type"></a>workbookWorksheetProtection 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "33348574"
 |选项|[workbookWorksheetProtectionOptions](workbookworksheetprotectionoptions.md)|工作表保护选项。 只读。|
 |protected|boolean|表示该工作表是否受保护。只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无。
 
 ## <a name="json-representation"></a>JSON 表示形式

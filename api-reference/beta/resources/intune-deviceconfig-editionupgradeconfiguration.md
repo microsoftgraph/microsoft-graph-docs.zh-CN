@@ -4,12 +4,13 @@ description: Windows 10 版本升级配置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 585b950f807623bdb004150f4ba80eade221b803
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 932d98e8d9bf15bf41093192a7738889353109d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989733"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001430"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>editionUpgradeConfiguration 资源类型
 
