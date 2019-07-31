@@ -4,56 +4,57 @@ description: 使用此 API 可从管理单元中删除成员 (用户或组)。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c307a802e2d574950b89c3f5644b5fbf70d90e34
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: c4b95fa5277c46e1aa9a8e2d2710c4236ab4e4dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917929"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945891"
 ---
-# <a name="remove-a-member"></a><span data-ttu-id="6fbd6-103">删除成员</span><span class="sxs-lookup"><span data-stu-id="6fbd6-103">Remove a member</span></span>
+# <a name="remove-a-member"></a><span data-ttu-id="c060f-103">删除成员</span><span class="sxs-lookup"><span data-stu-id="c060f-103">Remove a member</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6fbd6-104">使用此 API 可从管理单元中删除成员 (用户或组)。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-104">Use this API to remove a member (user or group) from an administrative unit.</span></span>
+<span data-ttu-id="c060f-104">使用此 API 可从管理单元中删除成员 (用户或组)。</span><span class="sxs-lookup"><span data-stu-id="c060f-104">Use this API to remove a member (user or group) from an administrative unit.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6fbd6-105">权限</span><span class="sxs-lookup"><span data-stu-id="6fbd6-105">Permissions</span></span>
-<span data-ttu-id="6fbd6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c060f-105">权限</span><span class="sxs-lookup"><span data-stu-id="c060f-105">Permissions</span></span>
+<span data-ttu-id="c060f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c060f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="6fbd6-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6fbd6-108">Permission type</span></span>      | <span data-ttu-id="6fbd6-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6fbd6-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c060f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c060f-108">Permission type</span></span>      | <span data-ttu-id="c060f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c060f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6fbd6-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6fbd6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6fbd6-111">AdministrativeUnit、Directory.accessasuser.all 和所有</span><span class="sxs-lookup"><span data-stu-id="6fbd6-111">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6fbd6-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6fbd6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6fbd6-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-113">Not supported.</span></span>    |
-|<span data-ttu-id="6fbd6-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6fbd6-114">Application</span></span> | <span data-ttu-id="6fbd6-115">AdministrativeUnit</span><span class="sxs-lookup"><span data-stu-id="6fbd6-115">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="c060f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c060f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c060f-111">AdministrativeUnit、Directory.accessasuser.all 和所有</span><span class="sxs-lookup"><span data-stu-id="c060f-111">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="c060f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c060f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c060f-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="c060f-113">Not supported.</span></span>    |
+|<span data-ttu-id="c060f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c060f-114">Application</span></span> | <span data-ttu-id="c060f-115">AdministrativeUnit</span><span class="sxs-lookup"><span data-stu-id="c060f-115">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6fbd6-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6fbd6-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c060f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c060f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /administrativeUnits/{id}/members/{id}/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="6fbd6-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="6fbd6-117">Request headers</span></span>
-| <span data-ttu-id="6fbd6-118">名称</span><span class="sxs-lookup"><span data-stu-id="6fbd6-118">Name</span></span>      |<span data-ttu-id="6fbd6-119">说明</span><span class="sxs-lookup"><span data-stu-id="6fbd6-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c060f-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="c060f-117">Request headers</span></span>
+| <span data-ttu-id="c060f-118">名称</span><span class="sxs-lookup"><span data-stu-id="c060f-118">Name</span></span>      |<span data-ttu-id="c060f-119">说明</span><span class="sxs-lookup"><span data-stu-id="c060f-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6fbd6-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6fbd6-120">Authorization</span></span>  | <span data-ttu-id="6fbd6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c060f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c060f-120">Authorization</span></span>  | <span data-ttu-id="c060f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c060f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6fbd6-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="6fbd6-123">Request body</span></span>
-<span data-ttu-id="6fbd6-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c060f-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="c060f-123">Request body</span></span>
+<span data-ttu-id="c060f-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c060f-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6fbd6-125">响应</span><span class="sxs-lookup"><span data-stu-id="6fbd6-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c060f-125">响应</span><span class="sxs-lookup"><span data-stu-id="c060f-125">Response</span></span>
 
-<span data-ttu-id="6fbd6-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c060f-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="c060f-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6fbd6-128">示例</span><span class="sxs-lookup"><span data-stu-id="6fbd6-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6fbd6-129">请求</span><span class="sxs-lookup"><span data-stu-id="6fbd6-129">Request</span></span>
-<span data-ttu-id="6fbd6-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-130">Here is an example of the request.</span></span> <span data-ttu-id="6fbd6-131">在下面的示例中, id1 表示目标管理单元的标识符, id2 表示要从目标管理单元中删除的成员用户或组的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-131">In the example below, id1 represents the identifier for the target administrative unit, and id2 represents the unique identifier for the member user or group to be removed from the targetted administrative unit.</span></span> 
+## <a name="example"></a><span data-ttu-id="c060f-128">示例</span><span class="sxs-lookup"><span data-stu-id="c060f-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c060f-129">请求</span><span class="sxs-lookup"><span data-stu-id="c060f-129">Request</span></span>
+<span data-ttu-id="c060f-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c060f-130">Here is an example of the request.</span></span> <span data-ttu-id="c060f-131">在下面的示例中, id1 表示目标管理单元的标识符, id2 表示要从目标管理单元中删除的成员用户或组的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="c060f-131">In the example below, id1 represents the identifier for the target administrative unit, and id2 represents the unique identifier for the member user or group to be removed from the targetted administrative unit.</span></span> 
 
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
-##### <a name="response"></a><span data-ttu-id="6fbd6-132">响应</span><span class="sxs-lookup"><span data-stu-id="6fbd6-132">Response</span></span>
-<span data-ttu-id="6fbd6-133">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6fbd6-133">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="c060f-132">响应</span><span class="sxs-lookup"><span data-stu-id="c060f-132">Response</span></span>
+<span data-ttu-id="c060f-133">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c060f-133">Here is an example of the response.</span></span>
  
 ```http
 HTTP/1.1 204 No Content
