@@ -4,76 +4,77 @@ description: 使用异步操作删除域。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3fc5fbf0db3b054a7cece327f209df84c140b35e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 45e5e0c6eb6ed5f42d4c7caca5de02739bbcaf5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957498"
 ---
-# <a name="domain-forcedelete"></a><span data-ttu-id="dcf55-103">域: forceDelete</span><span class="sxs-lookup"><span data-stu-id="dcf55-103">domain: forceDelete</span></span>
+# <a name="domain-forcedelete"></a><span data-ttu-id="22958-103">域: forceDelete</span><span class="sxs-lookup"><span data-stu-id="22958-103">domain: forceDelete</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dcf55-104">使用异步操作删除域。</span><span class="sxs-lookup"><span data-stu-id="dcf55-104">Deletes a domain using an asynchronous operation.</span></span>
+<span data-ttu-id="22958-104">使用异步操作删除域。</span><span class="sxs-lookup"><span data-stu-id="22958-104">Deletes a domain using an asynchronous operation.</span></span>
 
-<span data-ttu-id="dcf55-105">在此操作过程中, 将执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="dcf55-105">The following actions are performed as part of this operation:</span></span>
+<span data-ttu-id="22958-105">在此操作过程中, 将执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="22958-105">The following actions are performed as part of this operation:</span></span>
 
-* <span data-ttu-id="dcf55-106">使用对已删除域的引用重命名用户的 UPN、EmailAddress 和 ProxyAddress。</span><span class="sxs-lookup"><span data-stu-id="dcf55-106">Renames the UPN, EmailAddress, and ProxyAddress of users with references to the deleted domain.</span></span>
+* <span data-ttu-id="22958-106">使用对已删除域的引用重命名用户的 UPN、EmailAddress 和 ProxyAddress。</span><span class="sxs-lookup"><span data-stu-id="22958-106">Renames the UPN, EmailAddress, and ProxyAddress of users with references to the deleted domain.</span></span>
 
-* <span data-ttu-id="dcf55-107">使用对已删除域的引用重命名组的 EmailAddress。</span><span class="sxs-lookup"><span data-stu-id="dcf55-107">Renames the EmailAddress of groups with references to the deleted domain.</span></span>
+* <span data-ttu-id="22958-107">使用对已删除域的引用重命名组的 EmailAddress。</span><span class="sxs-lookup"><span data-stu-id="22958-107">Renames the EmailAddress of groups with references to the deleted domain.</span></span>
 
-* <span data-ttu-id="dcf55-108">将应用程序的 identifierUris 重命名为对已删除的域的引用。</span><span class="sxs-lookup"><span data-stu-id="dcf55-108">Renames the identifierUris of applications with references to the deleted domain.</span></span>
+* <span data-ttu-id="22958-108">将应用程序的 identifierUris 重命名为对已删除的域的引用。</span><span class="sxs-lookup"><span data-stu-id="22958-108">Renames the identifierUris of applications with references to the deleted domain.</span></span>
 
-* <span data-ttu-id="dcf55-109">如果要重命名的对象的数量大于 1000, 则返回错误。</span><span class="sxs-lookup"><span data-stu-id="dcf55-109">If the number of objects to be renamed is greater than 1000, an error is returned.</span></span>
+* <span data-ttu-id="22958-109">如果要重命名的对象的数量大于 1000, 则返回错误。</span><span class="sxs-lookup"><span data-stu-id="22958-109">If the number of objects to be renamed is greater than 1000, an error is returned.</span></span>
 
-* <span data-ttu-id="dcf55-110">如果要重命名的某个应用程序是多租户应用程序, 则会返回错误。</span><span class="sxs-lookup"><span data-stu-id="dcf55-110">If one of the applications to be renamed is a multi-tenant app, an error is returned.</span></span>
+* <span data-ttu-id="22958-110">如果要重命名的某个应用程序是多租户应用程序, 则会返回错误。</span><span class="sxs-lookup"><span data-stu-id="22958-110">If one of the applications to be renamed is a multi-tenant app, an error is returned.</span></span>
 
-<span data-ttu-id="dcf55-111">域删除完成后, 已删除域的 API 操作将返回 404 HTTP 响应代码。</span><span class="sxs-lookup"><span data-stu-id="dcf55-111">After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.</span></span> <span data-ttu-id="dcf55-112">若要验证域的删除, 可以执行[获取域](domain-get.md)。</span><span class="sxs-lookup"><span data-stu-id="dcf55-112">To verify deletion of a domain, you can perform a [get domain](domain-get.md).</span></span> <span data-ttu-id="dcf55-113">如果已成功删除域, 响应中将返回 404 HTTP 响应代码。</span><span class="sxs-lookup"><span data-stu-id="dcf55-113">If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.</span></span>
+<span data-ttu-id="22958-111">域删除完成后, 已删除域的 API 操作将返回 404 HTTP 响应代码。</span><span class="sxs-lookup"><span data-stu-id="22958-111">After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.</span></span> <span data-ttu-id="22958-112">若要验证域的删除, 可以执行[获取域](domain-get.md)。</span><span class="sxs-lookup"><span data-stu-id="22958-112">To verify deletion of a domain, you can perform a [get domain](domain-get.md).</span></span> <span data-ttu-id="22958-113">如果已成功删除域, 响应中将返回 404 HTTP 响应代码。</span><span class="sxs-lookup"><span data-stu-id="22958-113">If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dcf55-114">权限</span><span class="sxs-lookup"><span data-stu-id="dcf55-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="22958-114">权限</span><span class="sxs-lookup"><span data-stu-id="22958-114">Permissions</span></span>
 
-<span data-ttu-id="dcf55-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dcf55-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="22958-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="22958-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="dcf55-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="dcf55-117">Permission type</span></span>      | <span data-ttu-id="dcf55-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dcf55-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="22958-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="22958-117">Permission type</span></span>      | <span data-ttu-id="22958-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="22958-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dcf55-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dcf55-119">Delegated (work or school account)</span></span> | <span data-ttu-id="dcf55-120">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dcf55-120">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="dcf55-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dcf55-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dcf55-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="dcf55-122">Not supported.</span></span>    |
-|<span data-ttu-id="dcf55-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="dcf55-123">Application</span></span> | <span data-ttu-id="dcf55-124">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dcf55-124">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="22958-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="22958-119">Delegated (work or school account)</span></span> | <span data-ttu-id="22958-120">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="22958-120">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="22958-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="22958-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="22958-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="22958-122">Not supported.</span></span>    |
+|<span data-ttu-id="22958-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="22958-123">Application</span></span> | <span data-ttu-id="22958-124">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22958-124">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dcf55-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dcf55-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22958-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="22958-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains/{id}/forceDelete
 ```
 
-> <span data-ttu-id="dcf55-126">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="dcf55-126">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="22958-126">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="22958-126">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="dcf55-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="dcf55-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="22958-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="22958-127">Request headers</span></span>
 
-| <span data-ttu-id="dcf55-128">名称</span><span class="sxs-lookup"><span data-stu-id="dcf55-128">Name</span></span>       | <span data-ttu-id="dcf55-129">说明</span><span class="sxs-lookup"><span data-stu-id="dcf55-129">Description</span></span>|
+| <span data-ttu-id="22958-128">名称</span><span class="sxs-lookup"><span data-stu-id="22958-128">Name</span></span>       | <span data-ttu-id="22958-129">说明</span><span class="sxs-lookup"><span data-stu-id="22958-129">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="dcf55-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcf55-130">Authorization</span></span>  | <span data-ttu-id="dcf55-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dcf55-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="dcf55-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dcf55-133">Content-Type</span></span>  | <span data-ttu-id="dcf55-134">application/json</span><span class="sxs-lookup"><span data-stu-id="dcf55-134">application/json</span></span> |
+| <span data-ttu-id="22958-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="22958-130">Authorization</span></span>  | <span data-ttu-id="22958-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="22958-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="22958-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="22958-133">Content-Type</span></span>  | <span data-ttu-id="22958-134">application/json</span><span class="sxs-lookup"><span data-stu-id="22958-134">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dcf55-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="dcf55-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="22958-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="22958-135">Request body</span></span>
 
-<span data-ttu-id="dcf55-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="dcf55-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="22958-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="22958-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="dcf55-137">参数</span><span class="sxs-lookup"><span data-stu-id="dcf55-137">Parameter</span></span>    | <span data-ttu-id="dcf55-138">类型</span><span class="sxs-lookup"><span data-stu-id="dcf55-138">Type</span></span>   |<span data-ttu-id="dcf55-139">说明</span><span class="sxs-lookup"><span data-stu-id="dcf55-139">Description</span></span>|
+| <span data-ttu-id="22958-137">参数</span><span class="sxs-lookup"><span data-stu-id="22958-137">Parameter</span></span>    | <span data-ttu-id="22958-138">类型</span><span class="sxs-lookup"><span data-stu-id="22958-138">Type</span></span>   |<span data-ttu-id="22958-139">说明</span><span class="sxs-lookup"><span data-stu-id="22958-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dcf55-140">disableUserAccounts</span><span class="sxs-lookup"><span data-stu-id="dcf55-140">disableUserAccounts</span></span>|<span data-ttu-id="dcf55-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="dcf55-141">Boolean</span></span>| <span data-ttu-id="dcf55-142">用于禁用重命名的用户帐户的选项。</span><span class="sxs-lookup"><span data-stu-id="dcf55-142">Option to disable renamed user accounts.</span></span> <span data-ttu-id="dcf55-143">如果用户帐户已禁用, 则不允许用户登录。</span><span class="sxs-lookup"><span data-stu-id="dcf55-143">If a user account is disabled, the user will not be allowed to sign in.</span></span><br><span data-ttu-id="dcf55-144">*True*(默认值)-已禁用作为此操作的一部分重命名的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="dcf55-144">*True* (default) - User accounts renamed as part of this operation are disabled.</span></span><br><span data-ttu-id="dcf55-145">*False* -不禁用作为此操作的一部分重命名的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="dcf55-145">*False* - User accounts renamed as part of this operation are not disabled.</span></span> |
+|<span data-ttu-id="22958-140">disableUserAccounts</span><span class="sxs-lookup"><span data-stu-id="22958-140">disableUserAccounts</span></span>|<span data-ttu-id="22958-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="22958-141">Boolean</span></span>| <span data-ttu-id="22958-142">用于禁用重命名的用户帐户的选项。</span><span class="sxs-lookup"><span data-stu-id="22958-142">Option to disable renamed user accounts.</span></span> <span data-ttu-id="22958-143">如果用户帐户已禁用, 则不允许用户登录。</span><span class="sxs-lookup"><span data-stu-id="22958-143">If a user account is disabled, the user will not be allowed to sign in.</span></span><br><span data-ttu-id="22958-144">*True*(默认值)-已禁用作为此操作的一部分重命名的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="22958-144">*True* (default) - User accounts renamed as part of this operation are disabled.</span></span><br><span data-ttu-id="22958-145">*False* -不禁用作为此操作的一部分重命名的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="22958-145">*False* - User accounts renamed as part of this operation are not disabled.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="dcf55-146">响应</span><span class="sxs-lookup"><span data-stu-id="dcf55-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="22958-146">响应</span><span class="sxs-lookup"><span data-stu-id="22958-146">Response</span></span>
 
-<span data-ttu-id="dcf55-147">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="dcf55-147">If successful, this method returns `200 OK` response code.</span></span> 
+<span data-ttu-id="22958-147">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="22958-147">If successful, this method returns `200 OK` response code.</span></span> 
 
-## <a name="example"></a><span data-ttu-id="dcf55-148">示例</span><span class="sxs-lookup"><span data-stu-id="dcf55-148">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dcf55-149">请求</span><span class="sxs-lookup"><span data-stu-id="dcf55-149">Request</span></span>
+## <a name="example"></a><span data-ttu-id="22958-148">示例</span><span class="sxs-lookup"><span data-stu-id="22958-148">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="22958-149">请求</span><span class="sxs-lookup"><span data-stu-id="22958-149">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dcf55-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="dcf55-150">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="22958-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="22958-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_forcedelete"
@@ -87,26 +88,26 @@ Content-length: 33
   "disableUserAccounts": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dcf55-151">C#</span><span class="sxs-lookup"><span data-stu-id="dcf55-151">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="22958-151">C#</span><span class="sxs-lookup"><span data-stu-id="22958-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dcf55-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="dcf55-152">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="22958-152">Javascript</span><span class="sxs-lookup"><span data-stu-id="22958-152">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dcf55-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="dcf55-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="22958-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="22958-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="dcf55-154">Java</span><span class="sxs-lookup"><span data-stu-id="dcf55-154">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="22958-154">Java</span><span class="sxs-lookup"><span data-stu-id="22958-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="dcf55-155">响应</span><span class="sxs-lookup"><span data-stu-id="dcf55-155">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="22958-155">响应</span><span class="sxs-lookup"><span data-stu-id="22958-155">Response</span></span>
 
 <!-- {
   "blockType": "response",
