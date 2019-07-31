@@ -1,15 +1,16 @@
 ---
 title: 列出 signIn
+doc_type: apiPageType
 description: 描述 Microsoft Graph API (REST) 中 signIn 资源（实体）的列表方法，有助于审核目录（租户）活动（beta 版本）。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 658d4abbbdeaff1f6f6de7c01756d821f4d4433b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ef799169f8a22b99f4340ed4d78e8314b18fb9ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991329"
 ---
 # <a name="list-signins"></a>列出 signIn
 

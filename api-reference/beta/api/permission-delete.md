@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 删除 DriveItem 访问权限。
 ms.date: 09/10/2017
 title: 删除对项目的访问权限
 localization_priority: Normal
-ms.openlocfilehash: 762e800302e3452b4b3f832292dbf0c14e2646a3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 6cbce9310f8538687f7acbc04ebbd8e2c4000b89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877001"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992428"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 

@@ -4,12 +4,13 @@ description: '从组织的应用程序目录中删除应用程序 (租户应用�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 35a131309445f0a84bdc54690e1f88b5a0ad31f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: aaf636772ed79e04d2e65a5d9243ea65a3d2b187
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335222"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990790"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
@@ -27,7 +28,7 @@ ms.locfileid: "33335222"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| Application                            | 不支持|
+| 应用程序                            | 不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

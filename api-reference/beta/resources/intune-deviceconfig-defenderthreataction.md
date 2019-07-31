@@ -4,12 +4,13 @@ description: 要对检测到的恶意软件威胁执行的 Defender 的默认操
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 215b243a6e63ee44163a4127cd3724b37995cdb6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 368d58c125511f235a82d50e54193f0dacc96757
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979737"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970848"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 枚举类型
 

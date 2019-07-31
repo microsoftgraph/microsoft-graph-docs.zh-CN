@@ -4,12 +4,13 @@ description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f33808fd5b1a7ce929b3e22b98cf1754c21fded
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: d833983e0d7fd7f4d2da8e2dea1928748ff2bc74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970240"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 

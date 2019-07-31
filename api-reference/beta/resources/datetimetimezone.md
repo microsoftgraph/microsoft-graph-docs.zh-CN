@@ -2,14 +2,15 @@
 title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
 localization_priority: Normal
+doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e3554386c599b4d36f4041f6e42dc091f9763817
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: 28f9956c065e59a0db1ffbd0b82175546d3e5139
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973111"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 

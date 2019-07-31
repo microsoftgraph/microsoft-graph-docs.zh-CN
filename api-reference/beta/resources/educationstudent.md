@@ -4,12 +4,13 @@ description: 添加到 educationUser 的其他信息，该属性将在用户的 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a7ea110437bdc553448c78b6ad16541223e7d0e9
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: dda08acb0a390bfb8b26d88de15aac72dfa1f5f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750127"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972535"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 

@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28c0f774192f3fde33c654047d10f67ad7cffdcd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 6eb34d4fc1f2855afeaf93fa5fd8878f6896cd0f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980280"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>getEffectiveDeviceEnrollmentConfigurations 函数
 

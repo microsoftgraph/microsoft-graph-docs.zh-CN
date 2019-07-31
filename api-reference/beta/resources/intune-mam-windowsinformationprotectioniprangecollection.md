@@ -4,12 +4,13 @@ description: Windows 信息保护 IP 范围集合
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d6246cfc80e2ecb9d71ce45e333e09bf35521af
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 634131c39d493bf429d9d23f795dee52123edc15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994452"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998246"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection 资源类型
 

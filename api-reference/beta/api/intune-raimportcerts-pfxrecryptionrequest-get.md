@@ -4,12 +4,13 @@ description: 读取 pfxRecryptionRequest 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4c0299a0d5769e7dd9e4454f6c89013da26fb40
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 5e853938bda9881341154572d7a00ceeb251cbb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741293"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984228"
 ---
 # <a name="get-pfxrecryptionrequest"></a>获取 pfxRecryptionRequest
 

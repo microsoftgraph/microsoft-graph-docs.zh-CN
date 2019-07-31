@@ -4,12 +4,13 @@ description: 创建新的 depIOSEnrollmentProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f0f2e433da9cdb103211687910c3bcd3e17af92
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d90a1ee93e95abc24e85832cab7a200cfe57a83f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985474"
 ---
 # <a name="create-depiosenrollmentprofile"></a>创建 depIOSEnrollmentProfile
 

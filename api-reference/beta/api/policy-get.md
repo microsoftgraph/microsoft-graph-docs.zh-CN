@@ -2,12 +2,15 @@
 title: 获取策略
 description: 检索策略的属性。
 localization_priority: Normal
-ms.openlocfilehash: 853809ad26910b73bcf6c957e4c55e60f04dea49
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 435e711c711675b94b089d818b7451b551f8b5ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332211"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978873"
 ---
 # <a name="get-policy"></a>获取策略
 

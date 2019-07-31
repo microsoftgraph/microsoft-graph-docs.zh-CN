@@ -4,12 +4,13 @@ description: Android 工作配置文件自定义配置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9de3d746da4856807e272e6f52db88cb65c41a8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: bf5710c0b6d121a89cf563b9dfa56224694719f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971212"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>androidWorkProfileCustomConfiguration 资源类型
 

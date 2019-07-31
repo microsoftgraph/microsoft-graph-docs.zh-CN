@@ -2,12 +2,15 @@
 title: 列出作业
 description: 检索与角色关联的 privilegedRoleAssignment 对象的列表。 每个 privilegedRoleAssignment 表示为用户分配的角色。
 localization_priority: Normal
-ms.openlocfilehash: 4fb2892a968fffa2566ac6db5d7983b0caa347db
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5deac12d589f97fd64958cf791067142446546ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983360"
 ---
 # <a name="list-assignments"></a>列出作业
 

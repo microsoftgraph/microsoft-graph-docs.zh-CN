@@ -4,12 +4,13 @@ description: 列表属性和importedWindowsAutopilotDeviceIdentity对象关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d99edced6a20f243441fd755ec1e343fc6e6dc61
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 6df249420ef6f899182cb0fdc57a3370ab5be635
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980917"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>列表 importedWindowsAutopilotDeviceIdentities
 

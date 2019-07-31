@@ -4,12 +4,13 @@ description: 列出 windows10PFXImportCertificateProfile 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53c9bb85cb8304a532d1978009ab8bca512f93a5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c895e6d64d5c0cfdb0e8201bf82d86b94bea15e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978022"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977207"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>列出 windows10PFXImportCertificateProfiles
 

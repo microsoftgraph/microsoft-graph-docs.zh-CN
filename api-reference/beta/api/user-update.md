@@ -4,12 +4,13 @@ description: 更新 user 对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 743dc4383cc63ef15ee780d7ad96ac7de3aea55c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bda197e1f0ce619fe0830da38a8b1b5b5df45c0f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996117"
 ---
 # <a name="update-user"></a>更新用户
 

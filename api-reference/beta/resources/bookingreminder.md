@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 18265a9d9e86b79706b6a268df3b8512b7b65111
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a87f504824136fc1f3e3639361e22f78c6719dba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974134"
 ---
 # <a name="bookingreminder-resource-type"></a>bookingReminder 资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "33328197"
 |:---------------|:--------|:----------|
 |message|String|提醒中的邮件。|
 |一定|持续时间|约会开始前的时间量应发送提醒。 它以[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
-|recipients|String| shouold 收到提醒的人员。 可取值为：`allAttendees`、`staff`、`customer`。|
+|recipients|String| Shouold 收到提醒的人员。 可取值为：`allAttendees`、`staff`、`customer`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

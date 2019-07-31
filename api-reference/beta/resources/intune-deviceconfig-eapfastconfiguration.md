@@ -4,12 +4,13 @@ description: EAP 快速配置的可用设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca19e48f07d7bdb2859af9924cd391a9dbdfdf3f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: a16d1ca711acc95b1d66d295890bca224835426e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989887"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001535"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 枚举类型
 

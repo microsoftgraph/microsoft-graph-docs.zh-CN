@@ -4,12 +4,13 @@ description: 删除 intuneBrandingProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82936386f16de80318e4625156963f04c52358e9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e92311810e4fead500b4ab55563fa25a8ff4aa95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990643"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979265"
 ---
 # <a name="delete-intunebrandingprofile"></a>删除 intuneBrandingProfile
 

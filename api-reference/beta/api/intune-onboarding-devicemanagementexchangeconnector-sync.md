@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e9f699ee146444b0924372ebb1b80b2604cabc5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5e4464638ae28b1b82181b5985ab841af7ba9ebe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984368"
 ---
 # <a name="sync-action"></a>sync 操作
 

@@ -2,12 +2,15 @@
 title: 创建单值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个单值扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: 193cf8608829e2f4c06f49fa9675b7384941e7e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f1fdb6a9b329f16c7973a5c60e645d525a8bd913
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982786"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
 
@@ -20,7 +23,7 @@ ms.locfileid: "33330985"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [邮件](../resources/message.md)
 - [Outlook 任务](../resources/outlooktask.md)
@@ -39,7 +42,7 @@ ms.locfileid: "33330985"
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|

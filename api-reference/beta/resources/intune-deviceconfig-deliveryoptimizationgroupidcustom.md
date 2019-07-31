@@ -4,12 +4,13 @@ description: 自定义组 id 类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3dbddceca6f6b7adc023431a8b8157ce02ef379
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5cacb6525627bc013108ce66f6ed26ae34beed9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979646"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970755"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>deliveryOptimizationGroupIdCustom 资源类型
 

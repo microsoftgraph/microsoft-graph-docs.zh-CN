@@ -4,12 +4,13 @@ description: 列出 intuneBrandingProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb93f16a8ca3508eb23688b508d13561365003fd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 67d91ee4efb8bad814aa4abc54a7430652a985bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990594"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979272"
 ---
 # <a name="list-intunebrandingprofiles"></a>列出 intuneBrandingProfiles
 

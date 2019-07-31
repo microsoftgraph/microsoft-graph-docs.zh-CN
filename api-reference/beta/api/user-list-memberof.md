@@ -4,12 +4,13 @@ description: 获取用户是其直接成员的组、目录角色和管理单元�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 33243636157197eb20c99cb303ab7a1037ce6124
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7ee298ab99242c39ae624d0bbe97a7aacf2761aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867180"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987623"
 ---
 # <a name="list-user-memberof"></a>列出用户 memberOf
 

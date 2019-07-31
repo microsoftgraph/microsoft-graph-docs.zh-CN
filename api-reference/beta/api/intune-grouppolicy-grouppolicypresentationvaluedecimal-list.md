@@ -4,12 +4,13 @@ description: 列出 groupPolicyPresentationValueDecimal 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abd25f37b57aca5bd4a733509e41d449decb61dc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d2c2d0d69c9f64f33947fa8f1d2270555756be32
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985561"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989187"
 ---
 # <a name="list-grouppolicypresentationvaluedecimals"></a>列出 groupPolicyPresentationValueDecimals
 

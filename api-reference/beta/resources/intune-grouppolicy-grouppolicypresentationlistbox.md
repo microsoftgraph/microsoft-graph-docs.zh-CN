@@ -4,12 +4,13 @@ description: 表示 ADMX listBox 元素和 ADMX 列表元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4aafe808f2439cd8515126fb6c8a666500dff5cd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: ab67a7571c160e512db4b859a274cece2ac11e5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998630"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>groupPolicyPresentationListBox 资源类型
 

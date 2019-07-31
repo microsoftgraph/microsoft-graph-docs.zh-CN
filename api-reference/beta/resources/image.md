@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 图像资源将与图像相关的属性分组到一个单一结构。
 ms.date: 09/10/2017
 title: 图像
 localization_priority: Normal
-ms.openlocfilehash: a817f5b91c71d186fde1ae1ea0600b9645fe8a66
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c41925443820b96098c03de00f4c3741da0cec95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339979"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973511"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 

@@ -4,16 +4,17 @@ description: 介绍了适用于 Intune 的 Microsoft Graph API 的 List mobileAp
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 4b8a35f6dcaf007282cc53630d656ba499b5b7db
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 7e3f25d4116d2dcbb577be968bf880e785d498b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993562"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>列出 mobileAppTroubleshootingEvents
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

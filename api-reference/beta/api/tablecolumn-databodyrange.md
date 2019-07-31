@@ -4,12 +4,13 @@ description: 获取与列的数据体相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 09f7107d3407b06f8aa85196948fe735e03769fa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1ab3c803608decf951414b115c9c8f1c6a2a5d6e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868713"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982555"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 

@@ -4,12 +4,13 @@ description: 删除 windowsPhone81TrustedRootCertificate。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8367da084406dcd17b0edc3f402404acaa6266ee
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 96d5bff41ebcecce1c35dd8c04401f5a5baec552
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977378"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986552"
 ---
 # <a name="delete-windowsphone81trustedrootcertificate"></a>删除 windowsPhone81TrustedRootCertificate
 

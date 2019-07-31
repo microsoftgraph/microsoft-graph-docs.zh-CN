@@ -4,12 +4,13 @@ description: 删除 windows81GeneralConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18d3bb7ed8a4e9943d9251b43b83d97d17bbe93b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b25bb90ebba2586328a036eb9781d7926f84f002
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977172"
 ---
 # <a name="delete-windows81generalconfiguration"></a>删除 windows81GeneralConfiguration
 

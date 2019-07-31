@@ -4,12 +4,13 @@ description: 获取组中已发布、已阅读和已赞的 Yammer 消息数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 8e072f72b8262beed85761269c544de7df2a5806
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c861dc2e2956f81c3c7497565c5f2f4059e3763b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871344"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983065"
 ---
 # <a name="reportroot-getyammergroupsactivitycounts"></a>reportRoot: getYammerGroupsActivityCounts
 

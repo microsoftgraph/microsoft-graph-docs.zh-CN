@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 679c24b7ef32ef59b34a5885ea745d8c244376b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a135627804e2d6c5be4203c0ee0c229642c70c65
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543131"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973742"
 ---
 # <a name="agedaccountspayable-resource-type"></a>agedAccountsPayable 资源类型
 代表 Dynamics 365 Business Central 中的 agedAccountsPayable 对象, 它显示供应商帐户的帐龄。

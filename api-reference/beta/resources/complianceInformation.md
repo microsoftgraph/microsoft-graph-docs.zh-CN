@@ -2,12 +2,15 @@
 title: " complianceInformation 资源类型"
 description: 此资源包含与安全分数控制相关的合规性数据。
 localization_priority: Normal
-ms.openlocfilehash: 7a3968e6e043d2019100870061c5e34b03b1b8bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b93e01bf6274591282fd5e486bebb878672d8cc3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973228"
 ---
 #  <a name="complianceinformation-resource-type"></a>complianceInformation 资源类型
 

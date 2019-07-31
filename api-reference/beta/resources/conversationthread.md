@@ -4,12 +4,13 @@ description: conversationThread 是 帖子 集合。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 39861bdebbc6bb869a4e55d379fd44b2ceb73400
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a44234c2ec82b0b28df6c9bbf57b8d8069f129f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340999"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973938"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
@@ -42,7 +43,7 @@ conversationThread 是 [帖子](post.md) 集合。
 |lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |uniqueSenders|String collection|向此线程发送邮件的所有用户。|
 |preview|String|来自此对话中最新帖子的正文的简短摘要。|
-|resource.islocked|Boolean|指示线程是否已锁定。|
+|Resource.islocked|Boolean|指示线程是否已锁定。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

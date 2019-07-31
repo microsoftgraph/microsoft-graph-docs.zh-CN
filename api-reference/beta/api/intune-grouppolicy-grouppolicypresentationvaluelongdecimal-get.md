@@ -4,12 +4,13 @@ description: 读取 groupPolicyPresentationValueLongDecimal 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08ad20ac13e61269244a591c5a16ef11f02125e1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 688e09ae188fe336bff6f2f884d5d8991ce2befb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985456"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989033"
 ---
 # <a name="get-grouppolicypresentationvaluelongdecimal"></a>获取 groupPolicyPresentationValueLongDecimal
 

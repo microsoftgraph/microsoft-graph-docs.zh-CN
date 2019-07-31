@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationLongDecimalTextBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3924fa9bce8e0aa56579abc9925886e9f7bba7fa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 521331e6d4024553b37b806969367c578ce3e209
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964617"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989411"
 ---
 # <a name="create-grouppolicypresentationlongdecimaltextbox"></a>创建 groupPolicyPresentationLongDecimalTextBox
 

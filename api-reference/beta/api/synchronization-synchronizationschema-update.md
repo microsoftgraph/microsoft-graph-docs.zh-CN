@@ -2,14 +2,15 @@
 title: 更新 synchronizationSchema
 description: 更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构, 请对 application 对象进行调用。 您必须是应用程序的所有者。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 63e1ed50035cd7d04775a3af66b0127d6da17395
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 374d62edbe5b2ae436067c6df19b0d572cf852b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977627"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 

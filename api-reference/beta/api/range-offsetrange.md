@@ -4,12 +4,13 @@ description: 获取表示与指定区域偏移的区域的对象。返回的区�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5cd6b8251c855e1dd3a059722f8719dae33dd2c9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 260dfe5ed82df1b61c9a616e981afedae43e346e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331893"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978355"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 
@@ -44,7 +45,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|rowOffset|数字|区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。|
+|rowOffset|number|区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。|
 |columnOffset|number|区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。|
 
 ## <a name="response"></a>响应

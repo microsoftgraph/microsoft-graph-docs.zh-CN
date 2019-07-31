@@ -4,12 +4,13 @@ description: 创建新的 windowsInformationProtectionNetworkLearningSummary 对
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b78f83ae101b555450fb6939ff180a95f5e7bb7d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 72dbe090e23db5a912887f99aaa3f72eb5e71485
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979139"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 

@@ -4,12 +4,13 @@ description: 表示将对工作分配进行评分的方式。 这在**工作分�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 6e293ea97bc2b101128f9eb66f0da1f1f042cb72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 5af649da3e34336e1e8a1d45d70ab391c300ab35
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972829"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>educationAssignmentGradeType 资源类型
 

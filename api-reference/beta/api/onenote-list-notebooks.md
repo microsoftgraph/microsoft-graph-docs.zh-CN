@@ -4,12 +4,13 @@ description: 检索 notebook 对象列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: ec135f1681464f3d1185d6222cb6aef2c57f89bc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ffb39628bf9d2c73389835f435050b0f106e7c65
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878919"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988928"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 

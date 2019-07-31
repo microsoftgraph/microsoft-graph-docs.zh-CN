@@ -4,12 +4,13 @@ description: 表示添加到租户中特定域的 DNS 区域文件中的 SRV 记
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fdcee0e05a3088bcb60ddab357db3ad2def497d7
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: b4d96bf39581b0d49c969239bbffc4a9cf97d067
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973104"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord 资源类型
 

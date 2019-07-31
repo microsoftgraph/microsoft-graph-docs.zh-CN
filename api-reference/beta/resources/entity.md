@@ -1,13 +1,16 @@
 ---
 title: 实体资源类型
-description: 无
+description: ''
 localization_priority: Normal
-ms.openlocfilehash: b728addae1cf01026a9977203da20156bcb07cf0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 70b2394d7554d2a011cb7ecaf4fc4da19e1029e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340305"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972108"
 ---
 # <a name="entity-resource-type"></a>实体资源类型
 

@@ -4,12 +4,13 @@ description: 列出 depIOSEnrollmentProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95e19534ce95b7deb78beaae7911b19ac6e0e29b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4b703704ceaab56f9891a3850db06aa35a7be991
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985432"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列出 depIOSEnrollmentProfiles
 

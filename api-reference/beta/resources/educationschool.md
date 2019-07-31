@@ -4,12 +4,13 @@ description: '学校。 **EducationSchool**资源当前与 administrativeUnit �
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9cded9db9ab9d7310a10ab690e05f49dca8711c8
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: 1b5e0807ae73110a921c70beef6a98589db41269
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750141"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972549"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 

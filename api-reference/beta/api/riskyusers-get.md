@@ -3,13 +3,14 @@ title: 获取 riskyUser
 description: 检索**riskyUser**对象的属性和关系。
 localization_priority: Normal
 author: cloudhandler
+doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 12932e22e88271a11f35f5e28dc52cfca78e407c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: cbbb05f34b66b97dbaeeb55da4dececbeabe01ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991749"
 ---
 # <a name="get-riskyuser"></a>获取 riskyUser
 

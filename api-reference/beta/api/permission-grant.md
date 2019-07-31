@@ -5,12 +5,13 @@ title: 授予权限
 description: 授予用户列表访问权限以使用指定的链接
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 710ec2ada243d4753573ef1a069a2dff69ee9690
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: ca427092b169b0a7e9ea13697ee0252c354f3246
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932695"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992449"
 ---
 # <a name="grant-permission"></a>授予权限
 

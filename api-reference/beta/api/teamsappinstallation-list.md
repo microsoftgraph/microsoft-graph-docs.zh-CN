@@ -2,15 +2,15 @@
 title: 列出团队中的应用
 description: 检索在指定团队中安装的应用程序的列表。
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ab4c453b289165a24afcc8d19244e31263abf3d4
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: apiPageType
+ms.openlocfilehash: cd4901aeae8b963c588f8c4671ef75ba09a3ba4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908353"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990769"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 

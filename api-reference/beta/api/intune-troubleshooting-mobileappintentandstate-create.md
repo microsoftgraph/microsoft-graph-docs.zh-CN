@@ -4,12 +4,13 @@ description: 创建新的 mobileAppIntentAndState 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01de9d8ea65f1462c10cc1fa7048bb19cd4cbbe9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bbc2cf3dd51b3ed53c419104a0d3d2800fa3b77b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993352"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 

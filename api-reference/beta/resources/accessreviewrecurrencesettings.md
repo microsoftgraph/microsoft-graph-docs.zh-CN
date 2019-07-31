@@ -2,12 +2,15 @@
 title: accessReviewRecurrenceSettings 资源类型
 description: ''
 localization_priority: Normal
-ms.openlocfilehash: 1a5235639209830d36cf69c027cfd309fab09c3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsofit-identity-platform
+author: ''
+ms.openlocfilehash: 2bf71fe1c715eb96e98b0caf7720cc0d637ee33b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974520"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>accessReviewRecurrenceSettings 资源类型
 

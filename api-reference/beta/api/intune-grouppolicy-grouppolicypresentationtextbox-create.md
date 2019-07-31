@@ -4,12 +4,13 @@ description: 创建新的 groupPolicyPresentationTextBox 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e144f73010f259279b9f71dbd690ae067f8c5521
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9c7c391d350d9a78cabb410fba81a7d11927e89c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964414"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989348"
 ---
 # <a name="create-grouppolicypresentationtextbox"></a>创建 groupPolicyPresentationTextBox
 

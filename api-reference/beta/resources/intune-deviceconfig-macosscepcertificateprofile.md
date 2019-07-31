@@ -4,12 +4,13 @@ description: Mac OS SCEP 证书配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4b59788daccfe32ba3da9cf2cc0bb5bb9584d88
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b43a194240bdf0ad97243f399ecb77b89f5a5122
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992113"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970155"
 ---
 # <a name="macosscepcertificateprofile-resource-type"></a>macOSScepCertificateProfile 资源类型
 

@@ -4,12 +4,13 @@ description: 读取 windows10TeamGeneralConfiguration 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67d91104c3bc6d03dd0f47a1f333d99f965bfbd5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 513ce2df734f7737534d82bf47caca1a2f686691
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977924"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975198"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>获取 windows10TeamGeneralConfiguration
 

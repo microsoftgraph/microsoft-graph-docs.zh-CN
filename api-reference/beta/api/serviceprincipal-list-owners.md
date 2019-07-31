@@ -2,12 +2,15 @@
 title: 'servicePrincipals: 列出所有者'
 description: 检索 servicePrincipal 的所有者列表。
 localization_priority: Normal
-ms.openlocfilehash: fe2f9e03425b03bd1e683fa6e49f25b6c3a82eb8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a221699069f06c8825ac29d65c5730f3f4a56df1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869968"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991336"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: 列出所有者
 

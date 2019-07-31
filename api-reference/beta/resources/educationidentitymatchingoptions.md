@@ -4,12 +4,13 @@ description: 提供源属性和目标属性之间用于匹配用户帐户的映�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 37ebb55fdd5457841ca0083c18518babca7565c4
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+doc_type: resourcePageType
+ms.openlocfilehash: 88a22ff446aaa4fd1e7093ec507372c03afcc42b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972689"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>educationIdentityMatchingOptions 资源类型
 

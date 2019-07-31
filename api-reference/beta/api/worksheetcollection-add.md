@@ -4,12 +4,13 @@ description: 。请在上面启用 ()。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9d50e933556e554c5044c1716556f5c915aba893
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: deef2c869445db92a145518fc5c2297da722daad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866053"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987213"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 

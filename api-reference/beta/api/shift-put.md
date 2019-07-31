@@ -4,12 +4,13 @@ description: 替换现有班次。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: af7fb164dc74a37d4d96789c30a2e9f00b3b234d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7a7c1f965b5cfb3f8ac26677bb6a40507bbc5e7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869776"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982820"
 ---
 # <a name="replace-shift"></a>替换班次
 

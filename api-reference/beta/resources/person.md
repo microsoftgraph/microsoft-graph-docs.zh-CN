@@ -4,12 +4,13 @@ description: 有关来自邮件、联系人和社交网络的人员的信息聚�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 0def5d62dd941122858ffa61bf224a9ef672ad0c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 762d3bf04c891c9a2388368ca90a90ce904dc6e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966158"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 
@@ -49,7 +50,7 @@ ms.locfileid: "33344915"
 |websites|[website](website.md) collection|人员的网站。|
 |yomiCompany|string|人员所在公司的注音日文名称。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无
 

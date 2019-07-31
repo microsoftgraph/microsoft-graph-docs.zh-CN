@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 12b075d273e0228466db063b2c9b91232c32fc2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f1a363f651a6db3d8b99f1fbcb48ffee782ab9c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974183"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "33328243"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 errorexceededfindcountlimit](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md)集合 |获取租户中的 bookingbusiness 对象的集合。 |
+|[列出 Errorexceededfindcountlimit](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md)集合 |获取租户中的 bookingbusiness 对象的集合。 |
 |[创建 bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | 创建新的 Microsoft 预订业务。 |
 |[获取 bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |读取 bookingBusiness 对象的属性和关系。|
 |[更新](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |更新**bookingBusiness**对象中的属性。 |
@@ -41,18 +42,18 @@ ms.locfileid: "33328243"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|企业的街道地址。 **address**属性以及**手机**和**webSiteUrl**将显示在 "业务计划" 页的页脚中。|
+|address|[physicalAddress](physicaladdress.md)|企业的街道地址。 **Address**属性以及**手机**和**webSiteUrl**将显示在 "业务计划" 页的页脚中。|
 |businessHours|[bookingWorkHours](bookingworkhours.md)集合|业务的运行时间。|
 |businessType|String|企业的类型。|
 |defaultCurrencyIso|String|业务在 Microsoft 预订中所运行的货币的代码。|
-|displayName|String|业务的名称, 与客户的接口。 此名称显示在 "业务计划" 页的顶部。|
-|email|字符串|企业的电子邮件地址。|
-|id|String|企业的唯一编程标识符。 只读。|
+|displayName|字符串|业务的名称, 与客户的接口。 此名称显示在 "业务计划" 页的顶部。|
+|email|String|企业的电子邮件地址。|
+|id|字符串|企业的唯一编程标识符。 只读。|
 |isPublished|Boolean|计划页面已提供给外部客户。 使用 "**发布**" 和 "**取消发布**" 操作设置此属性。 只读。|
-|phone|String|企业的电话号码。 **phone**属性, 以及**address**和**webSiteUrl**将显示在 "业务计划" 页的页脚中。|
+|phone|String|企业的电话号码。 **Phone**属性, 以及**address**和**webSiteUrl**将显示在 "业务计划" 页的页脚中。|
 |publicUrl|String|计划页面的 URL, 在[发布](../api/bookingbusiness-publish.md)或[取消](../api/bookingbusiness-unpublish.md)发布页面之后设置。 只读。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
-|webSiteUrl|String|业务网站的 URL。 **webSiteUrl**属性 (与**address**、 **phone**) 显示在 "业务计划" 页的页脚中。|
+|webSiteUrl|String|业务网站的 URL。 **WebSiteUrl**属性 (与**address**、 **phone**) 显示在 "业务计划" 页的页脚中。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

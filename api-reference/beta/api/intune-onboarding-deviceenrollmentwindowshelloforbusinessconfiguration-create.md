@@ -4,12 +4,13 @@ description: 创建新的 deviceEnrollmentWindowsHelloForBusinessConfiguration �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e932b69a1d4a83d9f01bcf734c491556f0480e1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: be8cab2e9d4a5a4412ecc1fa9ea7e8680bdf88b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981186"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984522"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>创建 deviceEnrollmentWindowsHelloForBusinessConfiguration
 

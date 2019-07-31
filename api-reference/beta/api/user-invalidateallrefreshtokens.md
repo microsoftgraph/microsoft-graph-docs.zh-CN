@@ -4,12 +4,13 @@ description: 通过将**refreshTokensValidFromDateTime**用户属性重置为当
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 458e84a53fc56aae50282cc96a61ca62906bcf98
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 55e556bdcd810d040d022df481ae437eb90a5921
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996453"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>用户: invalidateAllRefreshTokens
 

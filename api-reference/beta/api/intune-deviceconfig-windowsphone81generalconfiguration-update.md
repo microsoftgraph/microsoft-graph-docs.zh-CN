@@ -4,12 +4,13 @@ description: 更新 windowsPhone81GeneralConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59099489349d7a9f3e874f8e5b1005d192f3e895
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0da557f0f8ea7d04eb8f0ee85ddf6ca1f9d1ad78
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961628"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982121"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>更新 windowsPhone81GeneralConfiguration
 

@@ -4,12 +4,13 @@ description: 获取此计划中的 timesOff 列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1e361398161e208c19d07365f26cd8a89cbe5998
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7b091c9502db7181a66a4c3528945b3b5d0c1578
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870861"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991637"
 ---
 # <a name="list-timesoff"></a>列出 timesOff
 

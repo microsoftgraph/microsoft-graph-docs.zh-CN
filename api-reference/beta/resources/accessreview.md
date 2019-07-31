@@ -4,12 +4,13 @@ description: '在 Azure AD access 评论功能中, `accessReview`表示访问评
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b1801a7f7cbd52375e4fbbfb42847b29539a2dde
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 4205f0995b0e8c71c8e01991837b4d721ecfaaf7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657733"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974561"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 

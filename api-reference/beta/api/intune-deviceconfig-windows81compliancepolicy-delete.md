@@ -4,12 +4,13 @@ description: 删除 windows81CompliancePolicy。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1003ecbd8453cfd7b4a049548030dc00b5c384ba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 38f73b5df89479dd0d5b6a1e04d0b8b41c6b1305
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962279"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975058"
 ---
 # <a name="delete-windows81compliancepolicy"></a>删除 windows81CompliancePolicy
 

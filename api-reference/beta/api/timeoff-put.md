@@ -4,12 +4,13 @@ description: 替换现有的 timeOff。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 65b1c4a0b7443f19b53158aaf9d5982b8fbc6b90
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c5fc9349b2870e92d2c7e58a7cf18dd43ea303ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990657"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 

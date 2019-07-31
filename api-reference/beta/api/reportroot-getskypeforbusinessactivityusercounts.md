@@ -4,12 +4,13 @@ description: 获取通过 Skype for Business 组织并参与在组织中召开�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: e0fca55a0ef3eb507f87d9eea7333e15a636556a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a6e9a06dcb5d8e627181f8c5488bab755f5fc8e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988060"
 ---
 # <a name="reportroot-getskypeforbusinessactivityusercounts"></a>reportRoot: getSkypeForBusinessActivityUserCounts
 

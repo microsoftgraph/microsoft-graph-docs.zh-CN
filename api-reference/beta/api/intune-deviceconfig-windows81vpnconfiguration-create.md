@@ -4,12 +4,13 @@ description: 创建新的 windows81VpnConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b3cf1f133190411b099c7a5299a446fb3905093
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d984b12f5be072b5196be12f6152ae0cd960047d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977067"
 ---
 # <a name="create-windows81vpnconfiguration"></a>创建 windows81VpnConfiguration
 

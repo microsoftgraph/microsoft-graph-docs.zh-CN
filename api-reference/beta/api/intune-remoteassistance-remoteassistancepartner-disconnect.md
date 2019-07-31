@@ -4,12 +4,13 @@ description: 请求删除活动的 TeamViewer 连接器
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebaf41d44838d87e4e3aeb7229107cdd2881e91e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ba48a556800cedadadcd8577645c6967909858cb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993730"
 ---
 # <a name="disconnect-action"></a>断开连接操作
 

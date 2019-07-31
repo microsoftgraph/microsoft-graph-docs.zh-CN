@@ -4,12 +4,13 @@ description: '可用于跟踪工作项目的 Outlook 项目。 '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 231cb227c33e9f58e0dbe87dbf832b86bf2f017f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: resourcePageType
+ms.openlocfilehash: 17820bd67bdc9f93369d60b4018a51cdf74ededc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459599"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966303"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 

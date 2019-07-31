@@ -4,12 +4,13 @@ description: 检索此组织的组织联系人列表。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 36d4f5de0d4155afc0155e3eb7b713bdda66bc74
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a91753bc4a2ff7ab015bcfde348104462304f128
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988781"
 ---
 # <a name="list-orgcontacts"></a>列出 orgContacts
 

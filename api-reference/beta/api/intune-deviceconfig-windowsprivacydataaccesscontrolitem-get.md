@@ -4,12 +4,13 @@ description: 读取 windowsPrivacyDataAccessControlItem 对象的属性和关系
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bcd8d3c15a64532c31a8b258c90a40f540557e31
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 11d855689f31985880400ddeeb58927aebf37e14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961383"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982044"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>获取 windowsPrivacyDataAccessControlItem
 

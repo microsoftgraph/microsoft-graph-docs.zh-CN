@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: 获取在指定时间间隔内此资源下发生的活动的 itemActivityStats。
 ms.date: 10/06/2017
 title: 按间隔获取项目活动统计
 localization_priority: Normal
-ms.openlocfilehash: 3a05488aefbb01ab147dfff1da0e8d432259b248
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 6d1f7a3b4e6a326f107a0d0ff33db59ed73f2794
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979104"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 
@@ -17,7 +19,7 @@ ms.locfileid: "33333545"
 
 获取在指定时间间隔内此资源下发生的活动的[itemActivityStats][] 。
 
->**注意:****itemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 分析聚合可能不适用于所有操作类型。
 

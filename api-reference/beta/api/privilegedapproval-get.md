@@ -2,12 +2,15 @@
 title: 获取 privilegedApproval
 description: 检索 privilegedapproval 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: a0704a970a93f40f316946aa193359b03f828573
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a18ec656359b070b56c2d2aa4c86588207c7be3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875956"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983371"
 ---
 # <a name="get-privilegedapproval"></a>获取 privilegedApproval
 

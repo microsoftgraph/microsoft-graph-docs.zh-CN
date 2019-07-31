@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementScriptUserState 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfb3c1119af64f949fa5396a28758811d39f4a65
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: caa5843383634f7635ae74ba10ca8330cb69ad12
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981512"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>创建 deviceManagementScriptUserState
 

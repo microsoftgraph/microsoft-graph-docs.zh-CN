@@ -4,12 +4,13 @@ description: 删除 windowsKioskConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0545bbf1d7c0000ef54580b276e9d3eb12f78cc9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 17f34b69a0d7f9bb07013c5676ae30474d01322d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977567"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984935"
 ---
 # <a name="delete-windowskioskconfiguration"></a>删除 windowsKioskConfiguration
 

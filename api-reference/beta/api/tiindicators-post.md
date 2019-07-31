@@ -4,12 +4,13 @@ description: 创建新的 tiIndicator。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 990084b4e928527bbd43ee631489bc165d7f36f1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1400d880885c0f2c929d7ef7e448cfcf15789f8a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990685"
 ---
 # <a name="create-threat-intelligence-indicator"></a>创建威胁情报指标
 

@@ -4,12 +4,13 @@ description: 更新 windowsWifiEnterpriseEAPConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ccfe6338c3650e3d4a23a35022f35e28fbf2e6d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: eae24aa8566f94e4a2a0521d87e1f1e7442ba638
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961124"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986251"
 ---
 # <a name="update-windowswifienterpriseeapconfiguration"></a>更新 windowsWifiEnterpriseEAPConfiguration
 

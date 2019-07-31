@@ -4,12 +4,13 @@ description: 列出用于为租户组织进行板载 (配置和初始化) 设备
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 08f026a4de95c3720c303f6c324690957d83f076
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: cc082578bea7e6b1d477547538e01dbaa1ef2bdb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982460"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998231"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 

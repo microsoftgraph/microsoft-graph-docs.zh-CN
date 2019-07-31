@@ -4,12 +4,13 @@ description: 更新 managedDevice 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c154be3a1691f125a8d2c8f68b28e4c246bb4b3c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c86557fe2f80b8a61a1905d157ebce3eb7251f2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958198"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987122"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 

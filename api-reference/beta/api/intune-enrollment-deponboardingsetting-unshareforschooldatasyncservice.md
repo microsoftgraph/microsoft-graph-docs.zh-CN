@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb546d44f174dd41b041ed5744dfe3e463ec97fb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 28f361306d05f1c3dcef3027c1e3400657c5ce95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980346"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985257"
 ---
 # <a name="unshareforschooldatasyncservice-action"></a>unshareForSchoolDataSyncService 操作
 

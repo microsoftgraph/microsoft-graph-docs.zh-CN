@@ -4,12 +4,13 @@ description: 更新 **plannerBucketTaskBoardTaskFormat** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 87e2383923086eda19a39cb45fe0d635d68e9359
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 08289852d679bb983fa286e3c291f3150686491e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876483"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992239"
 ---
 # <a name="update-plannerbuckettaskboardtaskformat"></a>更新 plannerBucketTaskBoardTaskFormat
 

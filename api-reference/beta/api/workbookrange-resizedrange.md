@@ -4,12 +4,13 @@ description: 获取与当前范围对象类似的范围对象，但其右下角�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 4447ba39c0c6e9517150ba8235f7642f5316651e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e9e332a3ec35dcb5177021ae4057f8f61cf1434c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995907"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 

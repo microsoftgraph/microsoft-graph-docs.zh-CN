@@ -4,12 +4,13 @@ description: 重置范围背景。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cad516285a80dc482e87418b13db6d76d6314446
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c9025888c745a269e9ac0202ab083e2ef3597f2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874575"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978362"
 ---
 # <a name="rangefill-clear"></a>RangeFill: clear
 

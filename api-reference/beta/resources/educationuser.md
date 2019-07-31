@@ -4,12 +4,13 @@ description: 系统中的用户。 这是特定于教育的用户变体，具有
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 028107941c134569caf7f4c1efc13f7d752dcb1b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: aecf1b83c6f8c59c65c6b696aaea4b89352b91cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932004"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972322"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 

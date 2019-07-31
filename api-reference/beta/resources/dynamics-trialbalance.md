@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1a7e906e50ddf39e4c9e2d3d9dde11226c7ec662
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 02e4f039411c992cd1d7335fc2463d660b8ff181
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972871"
 ---
 # <a name="trialbalance-resource-type"></a>trialBalance 资源类型
 表示 Dynamics 365 Business Central 中的试算平衡表。
@@ -25,10 +26,10 @@ ms.locfileid: "32534848"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|数字|string|trialBalance 项目的 G/L 帐号|
+|number|string|TrialBalance 项目的 G/L 帐号|
 |accountId|GUID|记录的 G/L 帐户的唯一标识符。|
 |accountType|string|记录的 G/L 帐户的帐户类型。|
-|显示屏|string|trialBalance 项目的 G/L 帐户名称。|
+|显示屏|string|TrialBalance 项目的 G/L 帐户名称。|
 |totalDebit|string|表示在 G/L 帐户中的借方总额。|
 |totalCredit|string|表示 G/L 帐户中的总贷方金额。|
 |balanceAtDateDebit|string|表示 G/L 帐户中的日期金额的正余额。|

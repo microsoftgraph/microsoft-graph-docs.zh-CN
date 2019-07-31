@@ -4,12 +4,13 @@ description: 列出 remoteAssistancePartner 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e436d9791fa96728b0e118f3db9ccd3b6bb19064
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 640c6e689220d946ea57c72ab5bf7af842bec1cb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989642"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979853"
 ---
 # <a name="list-remoteassistancepartners"></a>列出 remoteAssistancePartners
 

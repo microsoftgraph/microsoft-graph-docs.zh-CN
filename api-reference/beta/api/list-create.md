@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 在 site 中的创建新的 list。
 ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5feed6c868544938adad98165439b6360728f151
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d9d39a2642a6893fd01fd3f8833f4ce79d09966d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993149"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 

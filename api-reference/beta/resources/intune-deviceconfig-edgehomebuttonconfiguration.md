@@ -4,12 +4,13 @@ description: 用于标识可用选项的 "主页" 按钮配置基类
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c88cd93815b2f2fa487c469d8c122cc70e445044
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 068a8cca6c501079bb7e542e66facfe2785def2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989810"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001522"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>edgeHomeButtonConfiguration 资源类型
 

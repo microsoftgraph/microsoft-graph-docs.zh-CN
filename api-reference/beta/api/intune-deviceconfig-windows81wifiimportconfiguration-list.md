@@ -4,12 +4,13 @@ description: 列出 windows81WifiImportConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b488b9773cb4b6b183ab2a2081027dbb42302c1b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d8bda366fed30dce2ed4e51306e33f589620eb4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982408"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>列出 windows81WifiImportConfigurations
 

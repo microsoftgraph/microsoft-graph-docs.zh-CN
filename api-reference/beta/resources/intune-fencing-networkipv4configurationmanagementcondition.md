@@ -4,12 +4,13 @@ description: 可能会定义在设备检测到特定 IP 网络设置时触发的
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b781b89f9cdec6a4c3cfc366513a92ca25ba3e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ea42cb0c48a24a3c50f1a778344f63f5c3562d5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979149"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998686"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
 

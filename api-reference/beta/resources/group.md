@@ -4,12 +4,13 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 81a87d1ec6575516e12edab99ee205056b8b4593
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+doc_type: resourcePageType
+ms.openlocfilehash: a8facfb63a4e88f7fcf31a27342ccdec026147ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971858"
 ---
 # <a name="group-resource-type"></a>组资源类型
 

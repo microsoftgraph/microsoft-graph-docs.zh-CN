@@ -4,12 +4,13 @@ description: 创建新的 roleDefinition 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 605fb719ad8244add490a50338611af662055b05
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 70e6551d2b6f759c1b4e7c108153b379120531ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988494"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979930"
 ---
 # <a name="create-roledefinition"></a>创建 roleDefinition
 

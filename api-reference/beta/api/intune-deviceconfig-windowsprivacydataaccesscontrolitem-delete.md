@@ -4,12 +4,13 @@ description: 删除 windowsPrivacyDataAccessControlItem。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efae2a5c9518da06ff61651746e2efa94eb21cb9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2277d1043dd57b212f9867ebeb6e343b0a0479c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961425"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986398"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>删除 windowsPrivacyDataAccessControlItem
 

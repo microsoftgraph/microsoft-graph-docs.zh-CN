@@ -4,12 +4,13 @@ description: 更新 deviceEnrollmentWindowsHelloForBusinessConfiguration 对象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1b6f7ff95624df82369cb4fd2314525fd7d28ba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cd7b393a28cea8d67415f266b3c85c4de5ba2c7c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981102"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984534"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>更新 deviceEnrollmentWindowsHelloForBusinessConfiguration
 

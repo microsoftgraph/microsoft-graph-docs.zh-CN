@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: driveItem 资源代表文件、文件夹或存储在驱动器中的 其他项。
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 93c73fa61c871afce4ce4c7ed00e3c1ef554ca79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972969"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -114,12 +115,12 @@ ms.locfileid: "33340682"
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
 | folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
-| id                   | String             | 项在驱动器中的唯一标识符。只读。
+| id                   | 字符串             | 项在驱动器中的唯一标识符。只读。
 | image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
-| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
@@ -142,15 +143,15 @@ ms.locfileid: "33340682"
 | 关系       | 类型                        | 说明
 |:-------------------|:----------------------------|:--------------------------
 | activities         | [itemActivity][] 集合 | 最近发生在此项上的活动的列表。
-| analytics          | [itemAnalytics][] 资源  | 有关此项上发生的视图活动的分析。
+| 分析          | [itemAnalytics][] 资源  | 此项目上发生的查看活动的相关分析。
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
+| createdByUser      | [user][]                    | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
 | listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 此为只读属性。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 NULL。
+| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 null。
 | 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性

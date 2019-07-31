@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: columnDefinition 资源上的 defaultColumnValue 指定此列的默认值。
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
-ms.openlocfilehash: 2710986c3234671f75c1d303de6e0a5eefddc2f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 9c59fd3303f014f8f9f78d8abc52b7f7ff59ade1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340973"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973140"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>DefaultColumnValue 资源类型
 
@@ -40,7 +42,7 @@ ms.locfileid: "33340973"
 一次只能指定 **formula** 或 **value** 两者之一。
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-请参阅 [SharePoint 列表中的常用公式示例][ SPFormulas]，了解详细信息。
+有关详细信息, 请参阅[SharePoint 列表中常见公式的示例][SPFormulas]。
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 

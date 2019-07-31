@@ -3,12 +3,14 @@ title: 更新订阅
 description: 通过延长到期时间续订订阅。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 0320ad06516e0d0f7a1def7f294ae8c56a345ebd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: cc37f1fa204c7211ee2489d6b94283b045a5cf97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869420"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977788"
 ---
 # <a name="update-subscription"></a>更新订阅
 

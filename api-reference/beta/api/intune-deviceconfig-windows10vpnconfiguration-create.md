@@ -4,12 +4,13 @@ description: 创建新的 windows10VpnConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6200594d95123281f82a06244c5fc64832bb2fbb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 40a1462757a22030db0640606df270b4b7abf585
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975163"
 ---
 # <a name="create-windows10vpnconfiguration"></a>创建 windows10VpnConfiguration
 

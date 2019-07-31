@@ -4,12 +4,13 @@ description: 删除 managementConditionStatement。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 179d7bccc3019cfe3c123c482da4ec1d6ed1aafe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fae962162065ecca11ae64c95c591a1d6e3d5d85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990328"
 ---
 # <a name="delete-managementconditionstatement"></a>删除 managementConditionStatement
 

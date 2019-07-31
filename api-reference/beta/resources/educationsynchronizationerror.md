@@ -1,21 +1,22 @@
 ---
 title: educationSynchronizationError 资源类型
-description: 表示学校数据配置文件验证和/或同步过程中出现的错误。对于无法验证和/或与 azure Active Directory (azure AD) 同步的每个条目, 都会生成一个唯一的错误。
+description: 表示学校数据配置文件验证和/或同步过程中出现的错误。对于无法验证和/或与 Azure Active Directory (Azure AD) 同步的每个条目, 都会生成一个唯一的错误。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3c512f921e77468bb30e5109eec29afa9b395b7e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 11e5be9893c6a50615774e0d2a8e4d51c9576da6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972409"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示学校数据配置文件验证和/或同步过程中出现的错误。对于无法验证和/或与 azure Active Directory (azure AD) 同步的每个条目, 都会生成一个唯一的错误。
+表示学校数据配置文件验证和/或同步过程中出现的错误。对于无法验证和/或与 Azure Active Directory (Azure AD) 同步的每个条目, 都会生成一个唯一的错误。
 
 ## <a name="methods"></a>方法
 

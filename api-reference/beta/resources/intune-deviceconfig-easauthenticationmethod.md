@@ -4,12 +4,13 @@ description: Exchange 主动同步身份验证方法。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e19f3655e86ae5e34087b01f5ee60848a7cb2f1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f30380374e1cb82294eb3a0fa7a38295a9aceeaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989908"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001549"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>easAuthenticationMethod 枚举类型
 

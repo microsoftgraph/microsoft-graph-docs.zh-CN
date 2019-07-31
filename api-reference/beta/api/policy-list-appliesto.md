@@ -2,12 +2,15 @@
 title: 列出分配了特定策略的应用程序和服务主体
 description: 使用分配的指定策略检索应用程序和服务主体对象。
 localization_priority: Normal
-ms.openlocfilehash: c58822e5e3c90f5774721e425af62b40422d3db2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a3a24b3f54fa6d53b3936664be97cc3da0979a01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337383"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992085"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列出分配了特定策略的应用程序和服务主体
 

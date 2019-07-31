@@ -2,12 +2,15 @@
 title: 更新 oAuth2PermissionGrant
 description: 更新 oAuth2PermissionGrant 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: b54254123b38865e16e9fb5780c06effd538a970
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e959d45d7c8c83c2bc4b744243c8296c328c2962
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992666"
 ---
 # <a name="update-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant
 

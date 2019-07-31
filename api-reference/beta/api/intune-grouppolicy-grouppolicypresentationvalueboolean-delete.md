@@ -4,12 +4,13 @@ description: 删除 groupPolicyPresentationValueBoolean。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e32db13ff68e7b6ac95eec545bb62775fc07917
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f76dbd11910f3e6457ec656f1a2ed527a6f0626f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980122"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989243"
 ---
 # <a name="delete-grouppolicypresentationvalueboolean"></a>删除 groupPolicyPresentationValueBoolean
 

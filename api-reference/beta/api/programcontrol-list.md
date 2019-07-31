@@ -2,12 +2,15 @@
 title: 列出 programControls
 description: 在 Azure AD access 评论功能中, 列出租户中的所有程序中的所有 programControl 对象。
 localization_priority: Normal
-ms.openlocfilehash: 431adc38a6f456990d06f7df6cc343b90bee9084
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 5b18e0f4b5bee3eb70d3682fddf3278fce140889
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988529"
 ---
 # <a name="list-programcontrols"></a>列出 programControls
 

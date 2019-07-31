@@ -4,12 +4,13 @@ description: 管理员同步使用 Microsoft Store for Business 应用的门户�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 765eabae0d910e3abd353be7ad5eec0b25b91b6b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 4b3168b4c3266c5e5314813c3ae1ea4ef08765a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997993"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 

@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: 获取有关在此资源下发生的视图的 itemAnalytics。
 ms.date: 10/06/2017
 title: 获取分析结果
 localization_priority: Normal
-ms.openlocfilehash: 1af4f95549a4970e6bf3758e0d9b0c70f62d9132
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: 47ee4b3d003c81b077e67cf8dca8e8cec047d37d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880285"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993177"
 ---
 # <a name="get-analytics"></a>获取分析结果
 

@@ -1,21 +1,22 @@
 ---
 title: educationExcelResource 资源类型
-description: 'educationResource 的子类。 此资源类型代表一个 Excel 文档。  '
+description: 'EducationResource 的子类。 此资源类型代表一个 Excel 文档。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: be9ea1d08575ad9dc07ac9fe538a597da8db2803
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ef85a92b2629e8a652ce59210018725d6afecb9a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972741"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[educationResource](educationresource.md)的子类。 此资源类型代表一个 Excel 文档。  
+[EducationResource](educationresource.md)的子类。 此资源类型代表一个 Excel 文档。  
  
 >**注意:** Excel 文件必须位于与此资源所属的 "分配" 或 "提交" 对象相关联的资源文件夹中。
 

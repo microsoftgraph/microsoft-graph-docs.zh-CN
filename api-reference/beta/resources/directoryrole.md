@@ -4,12 +4,13 @@ description: 表示 Azure AD Directory 角色。 Azure AD 目录角色也称作*
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ac9b08e2e39bce6a20703089d6bfe69c8b25f55f
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: fef7bdae0d10333c6a538cccb5d30d022daac901
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657901"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973813"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
