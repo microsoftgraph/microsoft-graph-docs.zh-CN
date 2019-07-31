@@ -4,12 +4,13 @@ description: 更新 windows10EasEmailProfileConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c50ec850aa99770b4a7d036bdf9f5bf7092548f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1b66a6bad613f69d8677bc5f7b18184de2b6627f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962706"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976948"
 ---
 # <a name="update-windows10easemailprofileconfiguration"></a>更新 windows10EasEmailProfileConfiguration
 

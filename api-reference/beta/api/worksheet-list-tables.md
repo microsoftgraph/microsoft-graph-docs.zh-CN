@@ -4,12 +4,13 @@ description: 检索 table 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cb04942bb94ad413dfb561093c022c2720c4ac35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6b138cf38a84e624ce2effeedef7b84f4644b2f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866228"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987241"
 ---
 # <a name="list-tables"></a>列出表
 

@@ -4,12 +4,13 @@ description: 计算出的真知灼见, 可返回围绕用户的项目趋势的�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dcc8788bb7c9fd9dcaf887e66e3cc2ae35d00d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: dc7b6176fe4fceeeeea78d63c6b7140568ff6875
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329821"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996187"
 ---
 # <a name="list-trendingaround"></a>列出 trendingAround
 

@@ -4,12 +4,13 @@ description: 从指定分区组中检索分区组列表。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 3a0d6c6ab861ba90494aec5e1515aa09a8af815b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a41ea847cac185aeea61a48c91af79624adb530
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870477"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991525"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 

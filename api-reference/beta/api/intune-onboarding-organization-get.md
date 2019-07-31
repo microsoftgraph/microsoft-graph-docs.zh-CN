@@ -4,12 +4,13 @@ description: 读取 organization 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d698f9c585adae65b35ade16f5b69f26dece4da7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c9bc1cffd3a4a85577108d9714d06711a336e834
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993982"
 ---
 # <a name="get-organization"></a>获取组织
 

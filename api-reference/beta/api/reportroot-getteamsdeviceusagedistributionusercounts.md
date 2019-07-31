@@ -4,12 +4,13 @@ description: 在选定的时间段内按设备类型获取 Microsoft Teams 唯�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f2eb2923d86ed5930cc7a1c37bfaffa1565900bd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 42f8d4f0d129ddaabc62ee22a9a37650d18ba32c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991798"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 

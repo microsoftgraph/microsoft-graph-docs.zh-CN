@@ -4,12 +4,13 @@ description: 定义此访问规则将应用到的设备类型的条件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee2e5e1a4c48f72c00fc15ad7b68f518214e4f1d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 95b7bfaf30619850577fa2ac7fe4604958d22ab0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998143"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>deviceManagementExchangeAccessRuleType 枚举类型
 

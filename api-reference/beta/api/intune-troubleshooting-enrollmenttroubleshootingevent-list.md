@@ -4,12 +4,13 @@ description: 列出 enrollmentTroubleshootingEvent 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87bfe43681d5d1bbd10a98a8673b7c58aaa2f1b3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d4dcfa1d3997e458b88ac91f8ec195edc53270d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993359"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>列出 enrollmentTroubleshootingEvents
 

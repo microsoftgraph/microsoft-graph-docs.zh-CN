@@ -4,12 +4,13 @@ description: 创建新的 OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1fe0e9ac5c4ed1da62bf7419a0bd9e5fefa3a235
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c6562acae94351aef8aa97a822c7ae32bfc75d9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988872"
 ---
 # <a name="create-notebook"></a>创建笔记本
 

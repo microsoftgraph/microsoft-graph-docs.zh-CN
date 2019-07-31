@@ -4,12 +4,13 @@ description: 表示移动威胁防护合作伙伴连接的实体。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b000d99d4dfe88a281549d44308f4f68abaa711
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a01f9ed6fd9ecee04787b86ac718c71427c65ced
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958653"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998007"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector 资源类型
 

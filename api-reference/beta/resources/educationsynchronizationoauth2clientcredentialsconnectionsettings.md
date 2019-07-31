@@ -4,12 +4,13 @@ description: 如果要使用 OAuth2 客户端凭据授予连接到数据提供�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 5b0229ae431c02f85d393ff80b0bba32e32683c9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ffc3af93a90ba0d6991007a64d24b9fb776e8bc8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334027"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972367"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 

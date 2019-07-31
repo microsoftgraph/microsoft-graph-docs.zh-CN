@@ -4,12 +4,13 @@ description: 刷新数据透视表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ff537d8a00f3893a78fb6fbd0c19ad9deac3ae8e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8cfa8e09f91aff4e0415f710fbfa3c2ab3c9c858
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866444"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995921"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 

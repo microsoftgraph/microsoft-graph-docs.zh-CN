@@ -2,12 +2,15 @@
 title: 创建 programControl
 description: 在 "Azure AD access 评论" 功能中, 创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
-ms.openlocfilehash: dafaf94d00ca44159d474078f8dcce3b8de3e670
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4f2c90ce3e36f96ceb8dc77cfb32dad0da13c29c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875334"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988515"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 

@@ -4,12 +4,13 @@ description: BitLocker 固定驱动器策略。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5729952f2700c42eaf28a292ef0f520dfbe89da
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3269fb0865f8cf08a4dbade3d949701b027b84fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971086"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitLockerFixedDrivePolicy 资源类型
 

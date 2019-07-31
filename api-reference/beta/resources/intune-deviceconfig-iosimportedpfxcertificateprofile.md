@@ -4,12 +4,13 @@ description: iOS PFX 导入证书配置文件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce40ea1773a4b10032ee422daf2d28f9158da571
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1239cd372a079ec7674d6f0c44700536cd4b142d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995719"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970428"
 ---
 # <a name="iosimportedpfxcertificateprofile-resource-type"></a>iosImportedPFXCertificateProfile 资源类型
 

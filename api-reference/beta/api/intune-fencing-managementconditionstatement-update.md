@@ -4,12 +4,13 @@ description: 更新 managementConditionStatement 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2292bbf5d2bc2527290ca3da8070e0028f3c4ff9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1e7a9a0c6cdbee6aae2afbd131674e3d19a12d39
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990272"
 ---
 # <a name="update-managementconditionstatement"></a>更新 managementConditionStatement
 

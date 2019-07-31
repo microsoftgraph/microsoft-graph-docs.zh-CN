@@ -4,12 +4,13 @@ description: 介绍删除 Microsoft Graph API (REST) 的用户资源（实体）
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fca240e358b460fd17fc853ab88dc3ade97a16ae
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0e77306748258b915780b4d18a83e5804ad477d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867866"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996495"
 ---
 # <a name="delete-a-user"></a>删除用户
 

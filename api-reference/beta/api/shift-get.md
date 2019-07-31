@@ -4,12 +4,13 @@ description: 按 ID 获取 shift。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e02c7df12eb0ba69400490f6e62d1608ca0c13b4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a3df7bf69b31582a197bed55b7b4906a4aef610f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869804"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982818"
 ---
 # <a name="get-shift"></a>获取 shift
 

@@ -4,12 +4,13 @@ description: 更新 **plannertaskdetails** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a814dd289269c951209f540961929905384b4344
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: a7a0e058d540c3623d6d3d63b11bbfad46c3ab4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448359"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978992"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 

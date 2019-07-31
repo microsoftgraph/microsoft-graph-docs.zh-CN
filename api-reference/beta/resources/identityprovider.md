@@ -2,12 +2,15 @@
 title: identityProvider 资源类型
 description: 表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon 或 LinkedIn。
 localization_priority: Normal
-ms.openlocfilehash: 616f4d30bf6b5aad0bb97a732cf3aaf27e0fd26d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 470d29844470df6f5cd81ba0d40156492c1fd635
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333707"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971807"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 

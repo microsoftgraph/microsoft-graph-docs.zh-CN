@@ -4,12 +4,13 @@ description: 更新 notificationMessageTemplate 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca7850eb3aaa073edea6c5bbe429937e4deefe13
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1ba404f8a0c738891a9791c3f0875ecc2d4d4d99
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994276"
 ---
 # <a name="update-notificationmessagetemplate"></a>更新 notificationMessageTemplate
 

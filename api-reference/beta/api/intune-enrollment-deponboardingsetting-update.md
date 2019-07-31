@@ -4,12 +4,13 @@ description: 更新 depOnboardingSetting 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec9b0eea4cfac39d02f7f7110561d1f6a0756ba3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1187cf203b897d76feaeedb6cbb484f71ab46b07
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985278"
 ---
 # <a name="update-deponboardingsetting"></a>更新 depOnboardingSetting
 

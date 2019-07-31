@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: SharePoint 可以配置为保留列表项的历史记录。
 ms.date: 09/10/2017
 title: 获取 SharePoint 列表记录的以前版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 843c2f501217f7ce1d7923835bf0a7b44a010950
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cf3d0a88f250a954e5143c1000bcf4aaf61c0c1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993065"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>列出 ListItem 的版本（预览）
 

@@ -2,12 +2,15 @@
 title: 列出 suspiciousIpRiskEvents
 description: 检索 suspiciousipriskevent 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 0850d2869c48097c3f2303310fbe7a2e0973db86
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 1758b62dc46223c902e210e06183ab4f3d61f00c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977760"
 ---
 # <a name="list-suspiciousipriskevents"></a>列出 suspiciousIpRiskEvents
 

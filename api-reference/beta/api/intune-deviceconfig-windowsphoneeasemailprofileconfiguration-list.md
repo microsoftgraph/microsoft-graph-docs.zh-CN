@@ -4,12 +4,13 @@ description: 列出 windowsPhoneEASEmailProfileConfiguration 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe45a7a101fe68313f617715226338453f944cc8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 647b7b7b17b1d372c3649b7bad0206c54f72726b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986454"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>列出 windowsPhoneEASEmailProfileConfigurations
 

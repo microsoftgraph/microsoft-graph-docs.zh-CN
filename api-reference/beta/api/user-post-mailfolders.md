@@ -4,12 +4,13 @@ description: 使用此 API 在用户邮箱的根文件夹中新建邮件文件�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d66ff74e1134e735680036a0872f6dea49e1743
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4a98e962cc7b0897c9cdd0a934adcfc08d6a3e2e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996124"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 

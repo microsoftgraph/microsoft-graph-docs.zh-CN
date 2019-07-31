@@ -4,12 +4,13 @@ description: 用于为 TargetedManagedAppProtection 策略未针对的所有用�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52633e80b2cbb969446ae72988eced0684d52e84
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: cbd1a1fe4fa63fb7ec4fccd33f09a10e90299587
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991889"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998462"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection 资源类型
 

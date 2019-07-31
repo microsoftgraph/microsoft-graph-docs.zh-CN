@@ -4,12 +4,13 @@ description: DmaGuardDeviceEnumerationPolicy 的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4e534fca412c6d48ab9ea006f308a114c73def2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 00bf6986f37bd5fd1aae4991dbb7eb5b215e4c6e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001542"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>dmaGuardDeviceEnumerationPolicyType 枚举类型
 

@@ -4,12 +4,13 @@ description: 创建新的 managementConditionStatement 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5cf357169752ef2b73ee22992cde782d063fb6df
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b2790ecd52644a56968ea69c12dc118e587f2e72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984070"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990335"
 ---
 # <a name="create-managementconditionstatement"></a>创建 managementConditionStatement
 

@@ -4,12 +4,13 @@ description: '使用此 API 关闭现有的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6b172fcf56f82404104fd16a780191edc5337c20
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1fea58a37b5cf4747965726442e91070542a9e15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996110"
 ---
 # <a name="close-session"></a>关闭会话
 

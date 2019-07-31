@@ -4,12 +4,13 @@ description: 更改 Outlook 任务的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c0d0736752e1f9127219ac3d7d9a64eb772ad81c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e2eeae9bfebfa7bc30f4a05a1122cbadfe1d53d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992547"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 

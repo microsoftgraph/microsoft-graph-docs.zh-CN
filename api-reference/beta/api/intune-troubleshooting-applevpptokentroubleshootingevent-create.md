@@ -4,12 +4,13 @@ description: 创建新的 appleVppTokenTroubleshootingEvent 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f90c3ac17bc56f3b846f6a3ef174d092577b936f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6d64e5286ef68f56bfb33da3d470e8ee18260e15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957939"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993394"
 ---
 # <a name="create-applevpptokentroubleshootingevent"></a>创建 appleVppTokenTroubleshootingEvent
 

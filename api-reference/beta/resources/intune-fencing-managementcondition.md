@@ -4,12 +4,13 @@ description: 管理条件是可以动态触发的事件, 如地域时限、时�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 046f3280e5ab5ddcd4518b4938f9b8917b3914d9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 41fbe4c93788bfea3f581e4e0788554485f703c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998700"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
 

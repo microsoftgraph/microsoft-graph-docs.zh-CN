@@ -4,12 +4,13 @@ description: 创建新的 windowsInformationProtectionAppLockerFile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d5393fdbf68de218cd146817f68afbd125fa70d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b346a9f78ef2e7afa2036bda7cf8d1d780417400
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987430"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994381"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>创建 windowsInformationProtectionAppLockerFile
 

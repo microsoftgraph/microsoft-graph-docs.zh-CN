@@ -2,12 +2,15 @@
 title: Delete privilegedRoleAssignment
 description: 删除 privilegedRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: 5d5ebe739e8b6da13ca7f0b6b2a2313a378e680c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d4be812f393c2dec95547b8431869238c653164b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875769"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983382"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 

@@ -4,12 +4,13 @@ description: 获取跨与 Office 365 组相关联的所有组网站的文件总�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9e1cb1c443da8c100a01e5a1e43dbc80f8a1e34f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: afd9d6d8e213712df4409a4d0b4996d4846319a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873367"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983339"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 

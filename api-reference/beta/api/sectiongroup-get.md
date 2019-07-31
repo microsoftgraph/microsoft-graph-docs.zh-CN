@@ -4,12 +4,13 @@ description: 检索 sectionGroup 对象的属性和关系。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 1e8bd0a38946bb5ab8efc92f5731ea4e28c3907d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3136f10611e4356b6675ea809fee95dbc4e5e835
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870504"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991574"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
 

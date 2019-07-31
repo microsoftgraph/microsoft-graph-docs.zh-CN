@@ -4,12 +4,13 @@ description: 可能的应用程序类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62eacfe58a9d91acff3a79f95ef45ff35cd4d413
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 70374a75df57be7b814b1ee12dc595ad4f0445e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967124"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 

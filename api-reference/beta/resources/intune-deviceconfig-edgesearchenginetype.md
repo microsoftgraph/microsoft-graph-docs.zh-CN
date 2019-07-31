@@ -4,12 +4,13 @@ description: 允许 IT admind 为受 MDM 控制的设备设置预定义的默认
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65daffdad3510988becccf8f754a639c8b9815b0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 023a72bccb11a1a683105c333458ac3f1b30ee7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996419"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001444"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 枚举类型
 

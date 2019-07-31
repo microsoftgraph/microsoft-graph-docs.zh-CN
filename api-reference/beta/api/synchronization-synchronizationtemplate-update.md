@@ -2,14 +2,15 @@
 title: 更新 synchronizationTemplate
 description: Update (override) 与给定应用程序关联的同步模板。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67892e838d4d4ebad1d0caa282a3c85467185c4f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 565f4dc19d4e9a324aa00c2a1295583e608c1e87
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869037"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982653"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 

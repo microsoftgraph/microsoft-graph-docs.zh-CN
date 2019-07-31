@@ -4,12 +4,13 @@ description: 停用设备
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d960b772666646584119bb3072643c1c5852336
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5b2b497d888fff77e1af7d88e0bdd0861f6579cb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987136"
 ---
 # <a name="retire-action"></a>retire 操作
 

@@ -4,12 +4,13 @@ description: 更新 windows10NetworkBoundaryConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b036bdc6cc2bbdefe6655c8da7d5aaac6d020d0d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e0570bead06b322377e1ab437b04a6baf3916700
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978050"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977270"
 ---
 # <a name="update-windows10networkboundaryconfiguration"></a>更新 windows10NetworkBoundaryConfiguration
 

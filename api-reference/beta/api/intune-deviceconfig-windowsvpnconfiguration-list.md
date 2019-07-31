@@ -4,12 +4,13 @@ description: 列出 windowsVpnConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb90eb6291965ec9ec9a965863ed1f8e68cbebe0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ed19eb76be1a7c583cc6cc3635f585dd8b74d083
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981869"
 ---
 # <a name="list-windowsvpnconfigurations"></a>列出 windowsVpnConfigurations
 

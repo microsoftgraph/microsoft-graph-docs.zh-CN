@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d8f3ce6d54853deec0e0e91ce242aad63aac66f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 18eaa43ea79421d26151cc9a191cc6458217dd0e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987458"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994402"
 ---
 # <a name="assign-action"></a>分配操作
 

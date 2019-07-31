@@ -3,12 +3,14 @@ title: 更新开放扩展
 description: 通过请求正文中的属性更新开放扩展（openTypeExtension 对象）：
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 21bb8eb0f88a84a59de0b6fbf0268f0a4eaf73b8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: b3f71c158f0293ffda1284c7fbb1e56dc0289ba5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878143"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988816"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 

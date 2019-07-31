@@ -4,12 +4,13 @@ description: 删除 deviceManagementPartner。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 23b1243b659b9170b0fd87abe909bfee43ba72ca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cb44ce4fc48cabd6f0b492f929a411a644844793
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980969"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984291"
 ---
 # <a name="delete-devicemanagementpartner"></a>删除 deviceManagementPartner
 

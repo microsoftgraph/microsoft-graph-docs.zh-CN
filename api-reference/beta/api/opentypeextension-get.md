@@ -3,12 +3,14 @@ title: 获取开放扩展
 description: 获取按名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ec0e75b9c72640888e27c78fa04c5c539237b58b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: beaf6064ec6b175b09a648ba6b938089ed2d650c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878217"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983780"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 

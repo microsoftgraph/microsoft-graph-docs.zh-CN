@@ -4,12 +4,13 @@ description: 删除 windowsInformationProtectionAppLockerFile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 464b2b3bb8818170e2a3c28e0852b093f2edaa65
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3469b72cf4b68f13580864dcefdb73b0e46d218d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987402"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984753"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>删除 windowsInformationProtectionAppLockerFile
 

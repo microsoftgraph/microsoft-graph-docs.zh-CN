@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b54fb1d89322551c61c131516e01adefd2775eb0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 92305dc6e4caffd2deccb8902b68e24d4fbde51d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878119"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988809"
 ---
 # <a name="get-organization"></a>获取组织
 

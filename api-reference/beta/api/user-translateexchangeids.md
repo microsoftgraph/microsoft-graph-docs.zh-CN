@@ -4,12 +4,13 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f3c529edadf8ff1f41110ad17ce4c59f63545e4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 984b2cbe3eb321666a19cbcab432fa4a96929c96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866689"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987437"
 ---
 # <a name="user-translateexchangeids"></a>用户: translateExchangeIds
 

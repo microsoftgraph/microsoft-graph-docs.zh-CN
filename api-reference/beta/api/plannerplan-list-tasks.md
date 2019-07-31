@@ -4,12 +4,13 @@ description: 检索与 plannerPlan 对象关联的**plannerTask**对象的列表
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 4a05017270b54695a6822a35797e28d7e4b4e7fd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3510669e9bd8eee56c075d23fe9481629bfd8f4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979020"
 ---
 # <a name="list-tasks"></a>列出任务
 

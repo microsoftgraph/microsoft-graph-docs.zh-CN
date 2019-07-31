@@ -4,12 +4,13 @@ description: 根据组织者和与会者的空闲状况以及指定为参数的�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 522f0396ca8513477f0c27aea6db8bd48f6ef5cd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: df9bcb6068ff42784e90d24353ae4078588e6490
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987843"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 

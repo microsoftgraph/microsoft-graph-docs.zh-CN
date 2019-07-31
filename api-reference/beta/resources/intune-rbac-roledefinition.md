@@ -4,12 +4,13 @@ description: 角色定义资源。 角色定义是在 Intune 中基于角色访�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd73618261e4f5d2d30df33493230ba87be09a03
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 01f8c24fc536418e88677dbc11d742e6d8b64588
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993562"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967559"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition 资源类型
 

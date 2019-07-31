@@ -4,12 +4,13 @@ description: 对用户使用的用户列表计算出的洞察力。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 906a0f579ff66f7df6d2d5e2b72758cdd397182d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 587a9e34db293a738e1242b3d41406bb15990834
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334805"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987479"
 ---
 # <a name="list-workingwith"></a>列出 workingWith
 

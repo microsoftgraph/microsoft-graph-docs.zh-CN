@@ -4,12 +4,13 @@ description: 读取 deviceAndAppManagementRoleAssignment 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccf9132712b0fc164d73c39d8e39d8ad7202c711
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a9ad6387b5ef03d57772e6e6cb732aaded2a1885
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988732"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980224"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>获取 deviceAndAppManagementRoleAssignment
 

@@ -2,12 +2,15 @@
 title: 列出 leakedCredentialsRiskEvents
 description: 检索 leakedcredentialsriskevent 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 4846c9f27ded5beee29f8cfb3212551613190092
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 9345d64f0015e58cb921459aaf6c5b40bd147abd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993163"
 ---
 # <a name="list-leakedcredentialsriskevents"></a>列出 leakedCredentialsRiskEvents
 

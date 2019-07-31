@@ -4,12 +4,13 @@ description: 删除 groupPolicyPresentationValueDecimal。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b006e52220d196eafa99187f3ab24e6a9d7f4f1c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3755f01b105349b3db35defb1b19a4ef797323a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985589"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989264"
 ---
 # <a name="delete-grouppolicypresentationvaluedecimal"></a>删除 groupPolicyPresentationValueDecimal
 

@@ -4,12 +4,13 @@ description: 重新应用当前表上的所有筛选器。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a873e2af298ab388d3b390db7effe888ade55d41
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 440d9d53ea732a67bffecfcfe8751bdc15e88f29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868817"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991042"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 

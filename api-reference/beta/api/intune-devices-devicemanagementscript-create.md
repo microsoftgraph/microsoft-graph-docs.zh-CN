@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementScript 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7a986165fdd454ed5bec2521088bd8a1360511e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b012c48c82844d7b7b4037cad664d0375629ca82
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959067"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981659"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 

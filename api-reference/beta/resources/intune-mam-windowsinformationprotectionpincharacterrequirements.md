@@ -4,12 +4,13 @@ description: Pin 字符要求
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6fa6e899d62383134b5fa76f44da9dfa0e29933
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c5a2a581d761f849b836ccc6173de0a1a2403624
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994459"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998251"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements 枚举类型
 

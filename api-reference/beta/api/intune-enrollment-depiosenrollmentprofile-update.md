@@ -4,12 +4,13 @@ description: 更新 depIOSEnrollmentProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e18a36e1244ee83ff0c31845dec010b14e326739
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3681aae4793c9128d0257384c0ece028813c031e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979408"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985397"
 ---
 # <a name="update-depiosenrollmentprofile"></a>更新 depIOSEnrollmentProfile
 

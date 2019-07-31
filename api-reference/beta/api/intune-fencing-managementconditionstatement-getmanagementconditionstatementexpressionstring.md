@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe6c488a64cb6cb4f31c7b979b001adbd80b6708
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9b6b8a6e5496e82479abdc1d55aa1a0e567ea546
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984056"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990300"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>getManagementConditionStatementExpressionString 函数
 

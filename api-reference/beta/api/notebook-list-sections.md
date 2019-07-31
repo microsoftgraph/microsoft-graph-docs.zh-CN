@@ -4,12 +4,13 @@ description: 从指定的笔记本中检索分区对象的列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 723e0329d3ca5dfbd244d613c58006e530f987b0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1f2379c0d06519c552d7736d0a3cfcd992825ea5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992708"
 ---
 # <a name="list-sections"></a>列出分区
 

@@ -4,12 +4,13 @@ description: 托管应用可能存储其数据的存储位置
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49a55babe167c1c8bb031ccd3618e44e7cc26765
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 596fb9a5a9812cb7ca5919ec1eeb5217b531610d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998441"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 

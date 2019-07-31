@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ItemActionSet 资源提供有关对项目执行 [活动] [itemActivity] 的操作的信息。
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
-ms.openlocfilehash: b88f7514f7871e3c3850da91e4cd90b32f3a69c4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8053942fe96011b018e46681d69d308f65aa5d5f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967145"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet 资源类型
 
@@ -50,7 +52,7 @@ ms.locfileid: "33345405"
 以下是目前可用的操作。
 可能会在将来记录新操作，因此，请确保你的应用程序允许处理 **itemActionSet**，而无需执行任何应用程序理解的操作。
 
-| 属性名称 | 类型              | 说明
+| 属性名 | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------
 | comment       | [commentAction][] | 向项目添加了注释。
 | create        | [createAction][]  | 创建了项目。

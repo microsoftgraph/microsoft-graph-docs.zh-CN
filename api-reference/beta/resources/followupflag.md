@@ -2,12 +2,15 @@
 title: followupFlag 资源类型
 description: 允许设置标记，以便用户在日后跟进项目。 受支持的项包括邮件和联系人。
 localization_priority: Normal
-ms.openlocfilehash: dff12190b984d87ced6a75f2562a6b79dee53b44
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 28f60187fcfb3d41779547b6252edf69c1fc2735
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340252"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971975"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 

@@ -4,12 +4,13 @@ description: '获取长时间运行的 OneNote 操作的状态。 这适用于�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: d5af90f9600d62a800683da444a0470f857ffa56
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e1769517718fc4de647a4bd40fb316fc06a77655
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988851"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 

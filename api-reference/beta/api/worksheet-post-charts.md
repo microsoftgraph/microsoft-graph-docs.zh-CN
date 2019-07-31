@@ -4,12 +4,13 @@ description: 使用此 API 创建新图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dd95cd6cbf33379664a0a67d6e8f4d9dd2b18504
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c26efee25cf23843f8c31bd8365bfcbb673ded11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866171"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987206"
 ---
 # <a name="create-chart"></a>创建图表
 

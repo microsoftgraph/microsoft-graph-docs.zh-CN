@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 45e4754fef0dd3a2f7a669e3b3b96692d117c8f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1e8fafe9a3cdce4519cf5755337b016fa587cd06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966900"
 ---
 # <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>mailboxUsageQuotaStatusMailboxCounts 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "32457128"
 | sendReceiveProhibited | Int64  |
 | 尚         | Int64  |
 | reportDate            | 日期   |
-| reportPeriod          | 字符串 |
+| reportPeriod          | String |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

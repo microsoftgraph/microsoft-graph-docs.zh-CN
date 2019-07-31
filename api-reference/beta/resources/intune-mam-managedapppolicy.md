@@ -4,12 +4,13 @@ description: ManagedAppPolicy 资源表示特定于平台的策略的基类型�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c050415fc9402bdeb064ca6426bfe291e790940b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: bc3047eed950cc547f47fa45fbf609e86ba025bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998378"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy 资源类型
 

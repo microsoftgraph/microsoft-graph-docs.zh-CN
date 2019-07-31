@@ -2,12 +2,15 @@
 title: governancePermission 资源类型
 description: '表示 governanceSubject 对特定 governanceResource 的访问权限。  '
 localization_priority: Normal
-ms.openlocfilehash: cd5b15a85dee7a193962a6072bcdf34b1d4f131a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 8bf32b855ed77ccdf712b1a739ef913d0a3dade0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971940"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 

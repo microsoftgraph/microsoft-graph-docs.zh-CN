@@ -4,12 +4,13 @@ description: 用于配置针对特定安全组和 Android 设备上指定的一�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c882c9e15f6be0e9d553bbed53eee0a281cfd11
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d69f5504e94e60b568302cd6e4fbd5c071362643
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963448"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998512"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 

@@ -4,12 +4,13 @@ description: 用于为指定的一组应用配置详细管理设置的策略
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f6aed7b1372ed2856699507a1774d0050783b24
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ba77fce9e2f1f56bb6cc03104055efad27df5284
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998336"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 

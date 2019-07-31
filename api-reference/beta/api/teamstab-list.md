@@ -4,12 +4,13 @@ description: '检索团队中指定通道中的选项卡列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d9566462439d760e3331037afeae2c4c7b04b060
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a5521b0f450dc8c05f886a83dcf554f6f3315f68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987941"
 ---
 # <a name="list-tabs-in-channel"></a>通道中的列表选项卡
 
@@ -22,7 +23,7 @@ ms.locfileid: "33330139"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
+|委派（工作或学校帐户） | Group. 全部, Group。 Read. All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.Read.All、Group.ReadWrite.All         |
 

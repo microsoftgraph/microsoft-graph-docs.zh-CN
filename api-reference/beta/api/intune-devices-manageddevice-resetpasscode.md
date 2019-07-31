@@ -4,12 +4,13 @@ description: 重置密码
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1eda8a5a3174d4970a8df997678bbd81532f7a4a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9a1f84da8c416bd8b3d8d496bb2519db8c209161
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981379"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode 操作
 

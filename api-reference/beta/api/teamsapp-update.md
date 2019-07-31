@@ -4,12 +4,13 @@ description: '更新之前发布到 Microsoft 团队应用程序目录的应用�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48bf1682821578c786ad9e52b00409f35b6fab66
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 02822690d18076ee5ce2535c06e2856afe89e3c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977547"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>更新发布到组织的应用程序目录的应用程序
 
@@ -27,7 +28,7 @@ ms.locfileid: "33330639"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| Application                            | 不支持|
+| 应用程序                            | 不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

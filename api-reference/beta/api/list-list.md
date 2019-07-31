@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 获取 site 的 lists 的集合。
 ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5eaa02bad7ce4997386a6b113bf7854493a67e90
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0068c927192d22d86ad91fad1c5b0e360312587c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993121"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 

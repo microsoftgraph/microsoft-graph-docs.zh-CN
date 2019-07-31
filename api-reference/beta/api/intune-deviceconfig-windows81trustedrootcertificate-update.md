@@ -4,12 +4,13 @@ description: 更新 windows81TrustedRootCertificate 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cde35a99d5bb2d7fa4109e72382aab18f25c656
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 838fda7cd095a7b8099c9363a4621668cb96d36c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962167"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974904"
 ---
 # <a name="update-windows81trustedrootcertificate"></a>更新 windows81TrustedRootCertificate
 

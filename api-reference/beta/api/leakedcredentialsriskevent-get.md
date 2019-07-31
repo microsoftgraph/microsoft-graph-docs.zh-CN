@@ -2,12 +2,15 @@
 title: 获取 leakedCredentialsRiskEvent
 description: 检索 leakedcredentialsriskevent 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 2fd58105111b7f04976881729e17d073e223ff52
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: ae53a9ee3f9687a9bc4f248804c2e4c9060953f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333538"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979097"
 ---
 # <a name="get-leakedcredentialsriskevent"></a>获取 leakedCredentialsRiskEvent
 

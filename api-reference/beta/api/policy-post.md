@@ -2,12 +2,15 @@
 title: 创建策略
 description: 通过指定显示名称、策略类型和策略说明来创建新的 policy 对象。
 localization_priority: Normal
-ms.openlocfilehash: 4521f6fb032f936aec27cc5cac47d27e62bd2a3a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ca8b2f2d98c577fb053f95110a11f5c3c7b875ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332190"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983437"
 ---
 # <a name="create-policy"></a>创建策略
 
@@ -44,7 +47,7 @@ POST /policies
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|定义|String|[policy](../resources/policy.md)对象的字符串版本。|
+|定义|String|[Policy](../resources/policy.md)对象的字符串版本。|
 |displayName|String|策略的自定义名称。|
 |type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
 

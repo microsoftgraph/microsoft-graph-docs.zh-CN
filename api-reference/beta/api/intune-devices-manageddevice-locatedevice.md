@@ -4,12 +4,13 @@ description: 查找设备
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20a1c0548605f17242d017dedf0e85d7c691abb7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8bc5b2ccf3c65f22fd9332d91dc976b82921bca6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958401"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981442"
 ---
 # <a name="locatedevice-action"></a>locateDevice 操作
 

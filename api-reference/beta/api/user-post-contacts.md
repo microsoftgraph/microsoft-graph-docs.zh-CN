@@ -4,12 +4,13 @@ description: 将联系人添加到联系人根文件夹或其他联系人文件�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a8adc4674ee01ec5a5a89c642e8c8706ae329a43
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cfd65f433531458ed542f742405d3f4d2e5a6d12
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866923"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996180"
 ---
 # <a name="create-contact"></a>创建联系人
 

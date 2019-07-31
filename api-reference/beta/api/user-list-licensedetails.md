@@ -4,12 +4,13 @@ description: 检索 licenseDetails 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c2f918391ee47c839582ad62564d755caa52a450
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 184cf55222a4b783fe038664af92b52f901ff354
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867256"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996229"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 

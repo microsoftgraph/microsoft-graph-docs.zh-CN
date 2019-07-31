@@ -4,12 +4,13 @@ description: 获取给定范围下方的一定数量的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b9b701666e2bedcf4d87fef115e53f4ecba52407
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e25095499de2521fc9b16d6b2e2dbebb0ee2e4f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866341"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995879"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 

@@ -4,12 +4,13 @@ description: 要用于用户的应用程序 PIN 的字符集
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96e92f984b03f4bc5fd0280c4566b0bc35c5dc87
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 413a6b8e229b2f6c441062f7259dc0d0b5a7e385
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998371"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 枚举类型
 

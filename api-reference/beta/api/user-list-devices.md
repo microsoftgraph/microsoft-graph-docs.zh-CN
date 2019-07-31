@@ -4,12 +4,13 @@ description: 获取支持 Project 罗马功能的用户设备列表。 这包括
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc8fedf14d2b61bb407bd5a4eec99ad83c4f1f71
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 292124babfb71ad1c86ae373f123c2f5d57df3b4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996250"
 ---
 # <a name="list-user-devices"></a>列出用户设备
 
@@ -95,7 +96,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "ignored",

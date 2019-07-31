@@ -4,12 +4,13 @@ description: 还原存档的团队。 这将恢复用户发送邮件和编辑团
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3af0f2b0434e1883a95210eaf46129921fd176cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 022dc489b02da8881e7e6e4dbeaa665511dccfd8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335220"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977539"
 ---
 # <a name="unarchive-team"></a>解档团队
 

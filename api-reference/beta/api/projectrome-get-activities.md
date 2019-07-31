@@ -1,20 +1,22 @@
 ---
 title: 获取用户活动
-description: 获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 useractivity.readwrite.createdbyapp useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+description: 获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 4d09f7fef3d6666885e776f70f439f273d3cdb95
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: f45551699329d571a441d32d10c0eb1bffd9faa4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331907"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978502"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 useractivity.readwrite.createdbyapp useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -83,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/activities
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "ignored",

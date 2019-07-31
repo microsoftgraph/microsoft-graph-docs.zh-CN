@@ -2,12 +2,15 @@
 title: 发送设备命令
 description: '此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后, 传入设备的 ID 以向设备发出命令。 支持两种类型的命令: LaunchURI 和 AppServices。 如果使用的是 LaunchURI, 请指定*type*和*载荷*参数。 对于 AppService 调用, 请指定 '
 localization_priority: Normal
-ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: fd45047d673dc6def51d3f417861cf15a38a2f98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336037"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991511"
 ---
 # <a name="send-device-command"></a>发送设备命令
 
@@ -78,7 +81,7 @@ HTTP/1.1 201 OK
 ```
 ## <a name="command-properties"></a>命令属性 
 
-|**Name**|**类型**|**说明**|
+|**名称**|**Type**|**说明**|
 |:----|:------|:------|
 |payload | microsoft. json| 要发送到应用程序服务或启动设备上的 URI 的有效负载。 |
 |responsePayload | microsoft. json| 从目标设备返回的有效负载。 |
@@ -174,7 +177,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "ignored",

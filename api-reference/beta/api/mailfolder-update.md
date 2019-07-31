@@ -4,12 +4,13 @@ description: 更新 mailFolder 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 673906511d959d2d2728a66d18751555f4693606
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 67932ad57b819348d25cf2777311727a8015bf10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984025"
 ---
 # <a name="update-mailfolder"></a>更新 mailFolder
 

@@ -2,12 +2,15 @@
 title: 更新策略
 description: 更新预先存在的策略中的属性。
 localization_priority: Normal
-ms.openlocfilehash: 53b7af8966c932598328e8b78e76022ca6db9c8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337386"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978859"
 ---
 # <a name="update-policy"></a>更新策略
 
@@ -40,7 +43,7 @@ PATCH /policies/{id}
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|定义|String|[policy](../resources/policy.md)对象的字符串化版本。|
+|定义|String|[Policy](../resources/policy.md)对象的字符串化版本。|
 |displayName|String|策略的自定义名称。|
 |isOrganizationDefault|Boolean|指定默认情况下是否应用此策略。|
 |type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|

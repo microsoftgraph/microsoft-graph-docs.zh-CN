@@ -4,12 +4,13 @@ description: 更新 windowsWifiConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49906b4a5679450c32bea3dc1d4828f7007ed593
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 95b52cff4abf20b46bb4d23102118f1832ebb65a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961180"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35981827"
 ---
 # <a name="update-windowswificonfiguration"></a>更新 windowsWifiConfiguration
 
