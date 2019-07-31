@@ -4,32 +4,33 @@ description: 包含移动应用可以在上面运行的可能的 iOS 设备类�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9751d541b0bcb64b68673aa8ca646fb85e70b5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a28f426199280c98ceadd31560b22fa48829d969
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005546"
 ---
-# <a name="iosdevicetype-resource-type"></a><span data-ttu-id="b5674-103">iosDeviceType 资源类型</span><span class="sxs-lookup"><span data-stu-id="b5674-103">iosDeviceType resource type</span></span>
+# <a name="iosdevicetype-resource-type"></a><span data-ttu-id="e4761-103">iosDeviceType 资源类型</span><span class="sxs-lookup"><span data-stu-id="e4761-103">iosDeviceType resource type</span></span>
 
-> <span data-ttu-id="b5674-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b5674-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e4761-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e4761-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b5674-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b5674-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e4761-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e4761-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5674-106">包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。</span><span class="sxs-lookup"><span data-stu-id="b5674-106">Contains properties of the possible iOS device types the mobile app can run on.</span></span>
+<span data-ttu-id="e4761-106">包含移动应用可以在上面运行的可能的 iOS 设备类型的属性。</span><span class="sxs-lookup"><span data-stu-id="e4761-106">Contains properties of the possible iOS device types the mobile app can run on.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b5674-107">属性</span><span class="sxs-lookup"><span data-stu-id="b5674-107">Properties</span></span>
-|<span data-ttu-id="b5674-108">属性</span><span class="sxs-lookup"><span data-stu-id="b5674-108">Property</span></span>|<span data-ttu-id="b5674-109">类型</span><span class="sxs-lookup"><span data-stu-id="b5674-109">Type</span></span>|<span data-ttu-id="b5674-110">说明</span><span class="sxs-lookup"><span data-stu-id="b5674-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e4761-107">属性</span><span class="sxs-lookup"><span data-stu-id="e4761-107">Properties</span></span>
+|<span data-ttu-id="e4761-108">属性</span><span class="sxs-lookup"><span data-stu-id="e4761-108">Property</span></span>|<span data-ttu-id="e4761-109">类型</span><span class="sxs-lookup"><span data-stu-id="e4761-109">Type</span></span>|<span data-ttu-id="e4761-110">说明</span><span class="sxs-lookup"><span data-stu-id="e4761-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b5674-111">iPad</span><span class="sxs-lookup"><span data-stu-id="b5674-111">iPad</span></span>|<span data-ttu-id="b5674-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="b5674-112">Boolean</span></span>|<span data-ttu-id="b5674-113">应用是否应该在 iPad 上运行。</span><span class="sxs-lookup"><span data-stu-id="b5674-113">Whether the app should run on iPads.</span></span>|
-|<span data-ttu-id="b5674-114">iPhoneAndIPod</span><span class="sxs-lookup"><span data-stu-id="b5674-114">iPhoneAndIPod</span></span>|<span data-ttu-id="b5674-115">布尔值</span><span class="sxs-lookup"><span data-stu-id="b5674-115">Boolean</span></span>|<span data-ttu-id="b5674-116">应用是否应该在 iPhone 和 iPod 上运行。</span><span class="sxs-lookup"><span data-stu-id="b5674-116">Whether the app should run on iPhones and iPods.</span></span>|
+|<span data-ttu-id="e4761-111">iPad</span><span class="sxs-lookup"><span data-stu-id="e4761-111">iPad</span></span>|<span data-ttu-id="e4761-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="e4761-112">Boolean</span></span>|<span data-ttu-id="e4761-113">应用是否应该在 iPad 上运行。</span><span class="sxs-lookup"><span data-stu-id="e4761-113">Whether the app should run on iPads.</span></span>|
+|<span data-ttu-id="e4761-114">iPhoneAndIPod</span><span class="sxs-lookup"><span data-stu-id="e4761-114">iPhoneAndIPod</span></span>|<span data-ttu-id="e4761-115">布尔值</span><span class="sxs-lookup"><span data-stu-id="e4761-115">Boolean</span></span>|<span data-ttu-id="e4761-116">应用是否应该在 iPhone 和 iPod 上运行。</span><span class="sxs-lookup"><span data-stu-id="e4761-116">Whether the app should run on iPhones and iPods.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b5674-117">关系</span><span class="sxs-lookup"><span data-stu-id="b5674-117">Relationships</span></span>
-<span data-ttu-id="b5674-118">无</span><span class="sxs-lookup"><span data-stu-id="b5674-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e4761-117">关系</span><span class="sxs-lookup"><span data-stu-id="e4761-117">Relationships</span></span>
+<span data-ttu-id="e4761-118">无</span><span class="sxs-lookup"><span data-stu-id="e4761-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b5674-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b5674-119">JSON Representation</span></span>
-<span data-ttu-id="b5674-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b5674-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e4761-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e4761-119">JSON Representation</span></span>
+<span data-ttu-id="e4761-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e4761-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosDeviceType"

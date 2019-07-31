@@ -2,30 +2,31 @@
 title: stringKeyObjectValuePair 资源类型
 description: 表示键值对, 其中键是字符串, 值是任意的 JSON 对象。 这是一种 OData 开放类型, 它应具有一个名`value`为的属性, 它是一个有效的 JSON 对象。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b97f1f8bf10005a9e7829ee9280ebf936405b346
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 3ec55eee1f6b5f60e8936f906390d5343fbafbdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620626"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007828"
 ---
-# <a name="stringkeyobjectvaluepair-resource-type"></a><span data-ttu-id="d4229-104">stringKeyObjectValuePair 资源类型</span><span class="sxs-lookup"><span data-stu-id="d4229-104">stringKeyObjectValuePair resource type</span></span>
+# <a name="stringkeyobjectvaluepair-resource-type"></a><span data-ttu-id="950c1-104">stringKeyObjectValuePair 资源类型</span><span class="sxs-lookup"><span data-stu-id="950c1-104">stringKeyObjectValuePair resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d4229-105">表示键值对, 其中键是字符串, 值是任意的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d4229-105">Represents a key-value pair where the key is a string and the value is an arbitrary JSON object.</span></span> <span data-ttu-id="d4229-106">这是一种 OData 开放类型, 它应具有一个名`value`为的属性, 它是一个有效的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d4229-106">This is an OData open type that expects to have a property named `value` that is a valid JSON object.</span></span>
+<span data-ttu-id="950c1-105">表示键值对, 其中键是字符串, 值是任意的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="950c1-105">Represents a key-value pair where the key is a string and the value is an arbitrary JSON object.</span></span> <span data-ttu-id="950c1-106">这是一种 OData 开放类型, 它应具有一个名`value`为的属性, 它是一个有效的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="950c1-106">This is an OData open type that expects to have a property named `value` that is a valid JSON object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d4229-107">属性</span><span class="sxs-lookup"><span data-stu-id="d4229-107">Properties</span></span>
-| <span data-ttu-id="d4229-108">属性</span><span class="sxs-lookup"><span data-stu-id="d4229-108">Property</span></span>     | <span data-ttu-id="d4229-109">类型</span><span class="sxs-lookup"><span data-stu-id="d4229-109">Type</span></span>   |<span data-ttu-id="d4229-110">说明</span><span class="sxs-lookup"><span data-stu-id="d4229-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="950c1-107">属性</span><span class="sxs-lookup"><span data-stu-id="950c1-107">Properties</span></span>
+| <span data-ttu-id="950c1-108">属性</span><span class="sxs-lookup"><span data-stu-id="950c1-108">Property</span></span>     | <span data-ttu-id="950c1-109">类型</span><span class="sxs-lookup"><span data-stu-id="950c1-109">Type</span></span>   |<span data-ttu-id="950c1-110">说明</span><span class="sxs-lookup"><span data-stu-id="950c1-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d4229-111">Key</span><span class="sxs-lookup"><span data-stu-id="d4229-111">key</span></span>|<span data-ttu-id="d4229-112">String</span><span class="sxs-lookup"><span data-stu-id="d4229-112">String</span></span>|<span data-ttu-id="d4229-113">键。</span><span class="sxs-lookup"><span data-stu-id="d4229-113">Key.</span></span>|
-|<span data-ttu-id="d4229-114">值</span><span class="sxs-lookup"><span data-stu-id="d4229-114">value</span></span>|<span data-ttu-id="d4229-115">Json</span><span class="sxs-lookup"><span data-stu-id="d4229-115">Json</span></span>|<span data-ttu-id="d4229-116">任意 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d4229-116">Arbitrary JSON object.</span></span>|
+|<span data-ttu-id="950c1-111">Key</span><span class="sxs-lookup"><span data-stu-id="950c1-111">key</span></span>|<span data-ttu-id="950c1-112">String</span><span class="sxs-lookup"><span data-stu-id="950c1-112">String</span></span>|<span data-ttu-id="950c1-113">键。</span><span class="sxs-lookup"><span data-stu-id="950c1-113">Key.</span></span>|
+|<span data-ttu-id="950c1-114">值</span><span class="sxs-lookup"><span data-stu-id="950c1-114">value</span></span>|<span data-ttu-id="950c1-115">Json</span><span class="sxs-lookup"><span data-stu-id="950c1-115">Json</span></span>|<span data-ttu-id="950c1-116">任意 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="950c1-116">Arbitrary JSON object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d4229-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d4229-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="950c1-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="950c1-117">JSON representation</span></span>
 
-<span data-ttu-id="d4229-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d4229-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="950c1-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="950c1-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
