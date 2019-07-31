@@ -4,28 +4,29 @@ description: 通信服务器用于在一个批处理中发送多个通知的通�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4497e2e1ba28e7f2d0b203f8f982053c5eb8ae1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 770122387b89e96fdd8dbd9077488a9956fd90f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341443"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973249"
 ---
-# <a name="commsnotifications-resource-type"></a><span data-ttu-id="188e4-103">commsNotifications 资源类型</span><span class="sxs-lookup"><span data-stu-id="188e4-103">commsNotifications resource type</span></span>
+# <a name="commsnotifications-resource-type"></a><span data-ttu-id="910a0-103">commsNotifications 资源类型</span><span class="sxs-lookup"><span data-stu-id="910a0-103">commsNotifications resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="188e4-104">通信服务器用于在一个批处理中发送多个通知的通知列表。</span><span class="sxs-lookup"><span data-stu-id="188e4-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
+<span data-ttu-id="910a0-104">通信服务器用于在一个批处理中发送多个通知的通知列表。</span><span class="sxs-lookup"><span data-stu-id="910a0-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="188e4-105">属性</span><span class="sxs-lookup"><span data-stu-id="188e4-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="910a0-105">属性</span><span class="sxs-lookup"><span data-stu-id="910a0-105">Properties</span></span>
 
-| <span data-ttu-id="188e4-106">属性</span><span class="sxs-lookup"><span data-stu-id="188e4-106">Property</span></span>       | <span data-ttu-id="188e4-107">类型</span><span class="sxs-lookup"><span data-stu-id="188e4-107">Type</span></span>                                                 | <span data-ttu-id="188e4-108">说明</span><span class="sxs-lookup"><span data-stu-id="188e4-108">Description</span></span>                                   |
+| <span data-ttu-id="910a0-106">属性</span><span class="sxs-lookup"><span data-stu-id="910a0-106">Property</span></span>       | <span data-ttu-id="910a0-107">类型</span><span class="sxs-lookup"><span data-stu-id="910a0-107">Type</span></span>                                                 | <span data-ttu-id="910a0-108">说明</span><span class="sxs-lookup"><span data-stu-id="910a0-108">Description</span></span>                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| <span data-ttu-id="188e4-109">值</span><span class="sxs-lookup"><span data-stu-id="188e4-109">value</span></span>          | <span data-ttu-id="188e4-110">[commsNotification](commsnotification.md)集合</span><span class="sxs-lookup"><span data-stu-id="188e4-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="188e4-111">资源中的更改通知。</span><span class="sxs-lookup"><span data-stu-id="188e4-111">The notification of a change in the resource.</span></span> |
+| <span data-ttu-id="910a0-109">值</span><span class="sxs-lookup"><span data-stu-id="910a0-109">value</span></span>          | <span data-ttu-id="910a0-110">[commsNotification](commsnotification.md)集合</span><span class="sxs-lookup"><span data-stu-id="910a0-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="910a0-111">资源中的更改通知。</span><span class="sxs-lookup"><span data-stu-id="910a0-111">The notification of a change in the resource.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="188e4-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="188e4-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="910a0-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="910a0-112">JSON representation</span></span>
 
-<span data-ttu-id="188e4-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="188e4-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="910a0-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="910a0-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -4,51 +4,52 @@ description: 检索标记为用户收藏的 plannerPlans 的列表。 您可以�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 0e0ee8a174611f44b8fb5af9d45570694a4c9db8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 41011d78af23562464f0eb5678ac2e5e26633f48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992246"
 ---
-# <a name="list-favoriteplans"></a><span data-ttu-id="74547-104">列出 favoritePlans</span><span class="sxs-lookup"><span data-stu-id="74547-104">List favoritePlans</span></span>
+# <a name="list-favoriteplans"></a><span data-ttu-id="6138d-104">列出 favoritePlans</span><span class="sxs-lookup"><span data-stu-id="6138d-104">List favoritePlans</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="74547-105">检索标记为用户收藏的[plannerPlans](../resources/plannerplan.md)的列表。</span><span class="sxs-lookup"><span data-stu-id="74547-105">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="74547-106">您可以通过[更新 plannerUser 资源](planneruser-update.md)将计划标记为收藏。</span><span class="sxs-lookup"><span data-stu-id="74547-106">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
+<span data-ttu-id="6138d-105">检索标记为用户收藏的[plannerPlans](../resources/plannerplan.md)的列表。</span><span class="sxs-lookup"><span data-stu-id="6138d-105">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="6138d-106">您可以通过[更新 plannerUser 资源](planneruser-update.md)将计划标记为收藏。</span><span class="sxs-lookup"><span data-stu-id="6138d-106">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="74547-107">权限</span><span class="sxs-lookup"><span data-stu-id="74547-107">Permissions</span></span>
-<span data-ttu-id="74547-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="74547-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6138d-107">权限</span><span class="sxs-lookup"><span data-stu-id="6138d-107">Permissions</span></span>
+<span data-ttu-id="6138d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6138d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="74547-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="74547-110">Permission type</span></span>      | <span data-ttu-id="74547-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="74547-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6138d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="6138d-110">Permission type</span></span>      | <span data-ttu-id="6138d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6138d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="74547-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="74547-112">Delegated (work or school account)</span></span> | <span data-ttu-id="74547-113">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="74547-113">Group.Read.All</span></span>    |
-|<span data-ttu-id="74547-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="74547-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74547-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="74547-115">Not supported.</span></span>    |
-|<span data-ttu-id="74547-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="74547-116">Application</span></span> | <span data-ttu-id="74547-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="74547-117">Not supported.</span></span> |
+|<span data-ttu-id="6138d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6138d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6138d-113">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="6138d-113">Group.Read.All</span></span>    |
+|<span data-ttu-id="6138d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6138d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6138d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6138d-115">Not supported.</span></span>    |
+|<span data-ttu-id="6138d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="6138d-116">Application</span></span> | <span data-ttu-id="6138d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="6138d-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="74547-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="74547-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6138d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6138d-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
 GET /users/<id>/planner/favoritePlans
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="74547-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="74547-119">Optional query parameters</span></span>
-<span data-ttu-id="74547-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="74547-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6138d-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6138d-119">Optional query parameters</span></span>
+<span data-ttu-id="6138d-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6138d-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="74547-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="74547-121">Request headers</span></span>
-| <span data-ttu-id="74547-122">名称</span><span class="sxs-lookup"><span data-stu-id="74547-122">Name</span></span>      |<span data-ttu-id="74547-123">说明</span><span class="sxs-lookup"><span data-stu-id="74547-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6138d-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="6138d-121">Request headers</span></span>
+| <span data-ttu-id="6138d-122">名称</span><span class="sxs-lookup"><span data-stu-id="6138d-122">Name</span></span>      |<span data-ttu-id="6138d-123">说明</span><span class="sxs-lookup"><span data-stu-id="6138d-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="74547-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="74547-124">Authorization</span></span>  | <span data-ttu-id="74547-125">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="74547-125">Bearer {code}.</span></span> <span data-ttu-id="74547-126">必需。</span><span class="sxs-lookup"><span data-stu-id="74547-126">Required.</span></span>|
+| <span data-ttu-id="6138d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="6138d-124">Authorization</span></span>  | <span data-ttu-id="6138d-125">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="6138d-125">Bearer {code}.</span></span> <span data-ttu-id="6138d-126">必需。</span><span class="sxs-lookup"><span data-stu-id="6138d-126">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="74547-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="74547-127">Request body</span></span>
-<span data-ttu-id="74547-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="74547-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="74547-129">响应</span><span class="sxs-lookup"><span data-stu-id="74547-129">Response</span></span>
-<span data-ttu-id="74547-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[plannerPlan](../resources/plannerplan.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="74547-130">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="74547-131">示例</span><span class="sxs-lookup"><span data-stu-id="74547-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="74547-132">请求</span><span class="sxs-lookup"><span data-stu-id="74547-132">Request</span></span>
-<span data-ttu-id="74547-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="74547-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6138d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="6138d-127">Request body</span></span>
+<span data-ttu-id="6138d-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6138d-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="6138d-129">响应</span><span class="sxs-lookup"><span data-stu-id="6138d-129">Response</span></span>
+<span data-ttu-id="6138d-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[plannerPlan](../resources/plannerplan.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="6138d-130">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6138d-131">示例</span><span class="sxs-lookup"><span data-stu-id="6138d-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6138d-132">请求</span><span class="sxs-lookup"><span data-stu-id="6138d-132">Request</span></span>
+<span data-ttu-id="6138d-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6138d-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="74547-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="74547-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="6138d-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="6138d-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_favoriteplans"
@@ -56,28 +57,28 @@ GET /users/<id>/planner/favoritePlans
 ```http
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="74547-135">C#</span><span class="sxs-lookup"><span data-stu-id="74547-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6138d-135">C#</span><span class="sxs-lookup"><span data-stu-id="6138d-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-favoriteplans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="74547-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="74547-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6138d-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="6138d-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-favoriteplans-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="74547-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="74547-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6138d-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="6138d-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-favoriteplans-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="74547-138">Java</span><span class="sxs-lookup"><span data-stu-id="74547-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="6138d-138">Java</span><span class="sxs-lookup"><span data-stu-id="6138d-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-favoriteplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="74547-139">响应</span><span class="sxs-lookup"><span data-stu-id="74547-139">Response</span></span>
-<span data-ttu-id="74547-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="74547-140">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="6138d-139">响应</span><span class="sxs-lookup"><span data-stu-id="6138d-139">Response</span></span>
+<span data-ttu-id="6138d-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6138d-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="74547-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="74547-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="6138d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6138d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

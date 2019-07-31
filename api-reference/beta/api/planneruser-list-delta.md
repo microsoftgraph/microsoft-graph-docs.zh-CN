@@ -4,36 +4,37 @@ description: 检索对用户订阅的对象所做的更改。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 37a6a1f4eacc3046c61cc088511456565610341c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 99538ef3fc3f07663e52b9865dd8c67ed33c6263
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978929"
 ---
-# <a name="planner-delta"></a><span data-ttu-id="0fc63-103">Planner: delta</span><span class="sxs-lookup"><span data-stu-id="0fc63-103">Planner: delta</span></span>
+# <a name="planner-delta"></a><span data-ttu-id="0cc81-103">Planner: delta</span><span class="sxs-lookup"><span data-stu-id="0cc81-103">Planner: delta</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0fc63-104">检索对用户[订阅](../resources/planner-overview.md#track-changes-using-delta-query)的对象所做的更改。</span><span class="sxs-lookup"><span data-stu-id="0fc63-104">Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.</span></span>
+<span data-ttu-id="0cc81-104">检索对用户[订阅](../resources/planner-overview.md#track-changes-using-delta-query)的对象所做的更改。</span><span class="sxs-lookup"><span data-stu-id="0cc81-104">Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.</span></span>
 
-<span data-ttu-id="0fc63-105">此方法允许应用程序跟踪对用户可从计划程序中的时间段内访问的对象的更改。</span><span class="sxs-lookup"><span data-stu-id="0fc63-105">This method allows your application to track changes to objects that the user can access from within Planner over time.</span></span>
+<span data-ttu-id="0cc81-105">此方法允许应用程序跟踪对用户可从计划程序中的时间段内访问的对象的更改。</span><span class="sxs-lookup"><span data-stu-id="0cc81-105">This method allows your application to track changes to objects that the user can access from within Planner over time.</span></span>
 
-<span data-ttu-id="0fc63-106">此方法的返回值可能包含来自 Planner 的对象的异构类型。</span><span class="sxs-lookup"><span data-stu-id="0fc63-106">The return value of this method might contain hetergenous types of objects from Planner.</span></span>
+<span data-ttu-id="0cc81-106">此方法的返回值可能包含来自 Planner 的对象的异构类型。</span><span class="sxs-lookup"><span data-stu-id="0cc81-106">The return value of this method might contain hetergenous types of objects from Planner.</span></span>
 
-<span data-ttu-id="0fc63-107">有关在 Microsoft Graph 数据中跟踪更改的详细信息, 请参阅[使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="0fc63-107">For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
+<span data-ttu-id="0cc81-107">有关在 Microsoft Graph 数据中跟踪更改的详细信息, 请参阅[使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="0cc81-107">For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0fc63-108">权限</span><span class="sxs-lookup"><span data-stu-id="0fc63-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0cc81-108">权限</span><span class="sxs-lookup"><span data-stu-id="0cc81-108">Permissions</span></span>
 
-<span data-ttu-id="0fc63-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0fc63-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0cc81-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0cc81-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0fc63-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0fc63-111">Permission type</span></span>      | <span data-ttu-id="0fc63-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0fc63-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0cc81-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0cc81-111">Permission type</span></span>      | <span data-ttu-id="0cc81-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0cc81-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0fc63-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0fc63-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0fc63-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0fc63-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0fc63-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0fc63-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0fc63-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0fc63-116">Not supported.</span></span>    |
-|<span data-ttu-id="0fc63-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0fc63-117">Application</span></span> | <span data-ttu-id="0fc63-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="0fc63-118">Not supported.</span></span> |
+|<span data-ttu-id="0cc81-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0cc81-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0cc81-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0cc81-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0cc81-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0cc81-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0cc81-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0cc81-116">Not supported.</span></span>    |
+|<span data-ttu-id="0cc81-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0cc81-117">Application</span></span> | <span data-ttu-id="0cc81-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="0cc81-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0fc63-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0fc63-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0cc81-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0cc81-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,36 +43,36 @@ GET /me/planner/all/delta
 GET /users/<id>/planner/all/delta
 ```
 
-<span data-ttu-id="0fc63-120">在计划程序的 delta 查询实现`$select`中`$expand`, 当前`$filter`不支持任何其他查询参数 (如、或)。</span><span class="sxs-lookup"><span data-stu-id="0fc63-120">No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.</span></span>
+<span data-ttu-id="0cc81-120">在计划程序的 delta 查询实现`$select`中`$expand`, 当前`$filter`不支持任何其他查询参数 (如、或)。</span><span class="sxs-lookup"><span data-stu-id="0cc81-120">No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0fc63-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="0fc63-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0cc81-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="0cc81-121">Request headers</span></span>
 
-| <span data-ttu-id="0fc63-122">名称</span><span class="sxs-lookup"><span data-stu-id="0fc63-122">Name</span></span>           |<span data-ttu-id="0fc63-123">说明</span><span class="sxs-lookup"><span data-stu-id="0fc63-123">Description</span></span>                |
+| <span data-ttu-id="0cc81-122">名称</span><span class="sxs-lookup"><span data-stu-id="0cc81-122">Name</span></span>           |<span data-ttu-id="0cc81-123">说明</span><span class="sxs-lookup"><span data-stu-id="0cc81-123">Description</span></span>                |
 |:---------------|:--------------------------|
-| <span data-ttu-id="0fc63-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0fc63-124">Authorization</span></span>  | <span data-ttu-id="0fc63-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0fc63-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0cc81-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0cc81-124">Authorization</span></span>  | <span data-ttu-id="0cc81-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0cc81-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0fc63-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0fc63-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0cc81-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0cc81-127">Request body</span></span>
 
-<span data-ttu-id="0fc63-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0fc63-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0cc81-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0cc81-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0fc63-129">响应</span><span class="sxs-lookup"><span data-stu-id="0fc63-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0cc81-129">响应</span><span class="sxs-lookup"><span data-stu-id="0cc81-129">Response</span></span>
 
-<span data-ttu-id="0fc63-130">如果成功, 此方法将返回`200 OK`响应代码和要应用于响应正文中的对象的更改集合, 以及要遵循的增量同步链接。</span><span class="sxs-lookup"><span data-stu-id="0fc63-130">If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.</span></span>
+<span data-ttu-id="0cc81-130">如果成功, 此方法将返回`200 OK`响应代码和要应用于响应正文中的对象的更改集合, 以及要遵循的增量同步链接。</span><span class="sxs-lookup"><span data-stu-id="0cc81-130">If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.</span></span>
 
-<span data-ttu-id="0fc63-131">`deltaLink`如果呼叫者使用的是格式不正确的, 则此终结点将返回 HTTP 400。</span><span class="sxs-lookup"><span data-stu-id="0fc63-131">If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.</span></span>
+<span data-ttu-id="0cc81-131">`deltaLink`如果呼叫者使用的是格式不正确的, 则此终结点将返回 HTTP 400。</span><span class="sxs-lookup"><span data-stu-id="0cc81-131">If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.</span></span>
 
-<span data-ttu-id="0fc63-132">如果呼叫`deltaLink`者使用的过旧, 此终结点将返回 HTTP 410。</span><span class="sxs-lookup"><span data-stu-id="0fc63-132">If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.</span></span>
+<span data-ttu-id="0cc81-132">如果呼叫`deltaLink`者使用的过旧, 此终结点将返回 HTTP 410。</span><span class="sxs-lookup"><span data-stu-id="0cc81-132">If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.</span></span>
 
-<span data-ttu-id="0fc63-p103">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="0fc63-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="0cc81-p103">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="0cc81-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="0fc63-136">示例</span><span class="sxs-lookup"><span data-stu-id="0fc63-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0cc81-136">示例</span><span class="sxs-lookup"><span data-stu-id="0cc81-136">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0fc63-137">请求</span><span class="sxs-lookup"><span data-stu-id="0fc63-137">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="0cc81-137">请求</span><span class="sxs-lookup"><span data-stu-id="0cc81-137">Request</span></span>
 
-<span data-ttu-id="0fc63-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0fc63-138">Here is an example of the request.</span></span>
+<span data-ttu-id="0cc81-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0cc81-138">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0fc63-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="0fc63-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="0cc81-139">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="0cc81-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_delta"
@@ -80,29 +81,29 @@ GET /users/<id>/planner/all/delta
 ```http
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0fc63-140">C#</span><span class="sxs-lookup"><span data-stu-id="0fc63-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0cc81-140">C#</span><span class="sxs-lookup"><span data-stu-id="0cc81-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0fc63-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="0fc63-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0cc81-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="0cc81-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0fc63-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="0fc63-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0cc81-142">目标-C</span><span class="sxs-lookup"><span data-stu-id="0cc81-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="0fc63-143">Java</span><span class="sxs-lookup"><span data-stu-id="0fc63-143">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="0cc81-143">Java</span><span class="sxs-lookup"><span data-stu-id="0cc81-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0fc63-144">响应</span><span class="sxs-lookup"><span data-stu-id="0fc63-144">Response</span></span>
-<span data-ttu-id="0fc63-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0fc63-145">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="0cc81-144">响应</span><span class="sxs-lookup"><span data-stu-id="0cc81-144">Response</span></span>
+<span data-ttu-id="0cc81-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0cc81-145">Here is an example of the response.</span></span>
 
-><span data-ttu-id="0fc63-146">**注意：** 为了提高可读性，所示的响应对象可能已缩短。</span><span class="sxs-lookup"><span data-stu-id="0fc63-146">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="0fc63-147">所有已更改的属性都将从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="0fc63-147">All the changed properties will be returned from an actual call.</span></span>
+><span data-ttu-id="0cc81-146">**注意：** 为了提高可读性，所示的响应对象可能已缩短。</span><span class="sxs-lookup"><span data-stu-id="0cc81-146">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="0cc81-147">所有已更改的属性都将从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="0cc81-147">All the changed properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

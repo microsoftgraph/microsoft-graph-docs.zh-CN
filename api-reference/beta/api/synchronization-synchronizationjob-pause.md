@@ -2,56 +2,57 @@
 title: 'synchronizationJob: pause'
 description: 临时停止同步。 所有进度 (包括作业状态) 均保持不变, 作业将从开始调用时停止的位置继续。
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 29b5f01231f36c9c20d6fe653d2898dc7c2c4ceb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0a1503aa6de14f3738248020c10c3b5d53111476
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977785"
 ---
-# <a name="synchronizationjob-pause"></a><span data-ttu-id="14e86-104">synchronizationJob: pause</span><span class="sxs-lookup"><span data-stu-id="14e86-104">synchronizationJob: pause</span></span>
+# <a name="synchronizationjob-pause"></a><span data-ttu-id="d96ce-104">synchronizationJob: pause</span><span class="sxs-lookup"><span data-stu-id="d96ce-104">synchronizationJob: pause</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="14e86-105">临时停止同步。</span><span class="sxs-lookup"><span data-stu-id="14e86-105">Temporarily stop synchronization.</span></span> <span data-ttu-id="14e86-106">所有进度 (包括作业状态) 均保持不变, 作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。</span><span class="sxs-lookup"><span data-stu-id="14e86-106">All the progress, including job state, is persisted, and the job will continue from where it left off when a [Start](../api/synchronization-synchronizationjob-start.md) call is made.</span></span>
+<span data-ttu-id="d96ce-105">临时停止同步。</span><span class="sxs-lookup"><span data-stu-id="d96ce-105">Temporarily stop synchronization.</span></span> <span data-ttu-id="d96ce-106">所有进度 (包括作业状态) 均保持不变, 作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。</span><span class="sxs-lookup"><span data-stu-id="d96ce-106">All the progress, including job state, is persisted, and the job will continue from where it left off when a [Start](../api/synchronization-synchronizationjob-start.md) call is made.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="14e86-107">权限</span><span class="sxs-lookup"><span data-stu-id="14e86-107">Permissions</span></span>
-<span data-ttu-id="14e86-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="14e86-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d96ce-107">权限</span><span class="sxs-lookup"><span data-stu-id="d96ce-107">Permissions</span></span>
+<span data-ttu-id="d96ce-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d96ce-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14e86-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="14e86-110">Permission type</span></span>                        | <span data-ttu-id="14e86-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="14e86-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d96ce-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d96ce-110">Permission type</span></span>                        | <span data-ttu-id="d96ce-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d96ce-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14e86-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="14e86-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="14e86-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14e86-113">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="14e86-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="14e86-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="14e86-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="14e86-115">Not supported.</span></span>  |
-|<span data-ttu-id="14e86-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="14e86-116">Application</span></span>                            |<span data-ttu-id="14e86-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="14e86-117">Not supported.</span></span> | 
+|<span data-ttu-id="d96ce-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d96ce-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="d96ce-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d96ce-113">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="d96ce-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d96ce-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="d96ce-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d96ce-115">Not supported.</span></span>  |
+|<span data-ttu-id="d96ce-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d96ce-116">Application</span></span>                            |<span data-ttu-id="d96ce-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="d96ce-117">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="14e86-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="14e86-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d96ce-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d96ce-118">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="14e86-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="14e86-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d96ce-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d96ce-119">Request headers</span></span>
 
-| <span data-ttu-id="14e86-120">名称</span><span class="sxs-lookup"><span data-stu-id="14e86-120">Name</span></span>           | <span data-ttu-id="14e86-121">类型</span><span class="sxs-lookup"><span data-stu-id="14e86-121">Type</span></span>    | <span data-ttu-id="14e86-122">说明</span><span class="sxs-lookup"><span data-stu-id="14e86-122">Description</span></span>|
+| <span data-ttu-id="d96ce-120">名称</span><span class="sxs-lookup"><span data-stu-id="d96ce-120">Name</span></span>           | <span data-ttu-id="d96ce-121">类型</span><span class="sxs-lookup"><span data-stu-id="d96ce-121">Type</span></span>    | <span data-ttu-id="d96ce-122">说明</span><span class="sxs-lookup"><span data-stu-id="d96ce-122">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="14e86-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="14e86-123">Authorization</span></span>  | <span data-ttu-id="14e86-124">string</span><span class="sxs-lookup"><span data-stu-id="14e86-124">string</span></span>  | <span data-ttu-id="14e86-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="14e86-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d96ce-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d96ce-123">Authorization</span></span>  | <span data-ttu-id="d96ce-124">string</span><span class="sxs-lookup"><span data-stu-id="d96ce-124">string</span></span>  | <span data-ttu-id="d96ce-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d96ce-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="14e86-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="14e86-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d96ce-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d96ce-127">Request body</span></span>
 
-<span data-ttu-id="14e86-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="14e86-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d96ce-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d96ce-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14e86-129">响应</span><span class="sxs-lookup"><span data-stu-id="14e86-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d96ce-129">响应</span><span class="sxs-lookup"><span data-stu-id="d96ce-129">Response</span></span>
 
-<span data-ttu-id="14e86-130">如果成功, 则返回`204 No Content`响应。</span><span class="sxs-lookup"><span data-stu-id="14e86-130">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="14e86-131">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="14e86-131">It does not return anything in the response body.</span></span>
+<span data-ttu-id="d96ce-130">如果成功, 则返回`204 No Content`响应。</span><span class="sxs-lookup"><span data-stu-id="d96ce-130">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="d96ce-131">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d96ce-131">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14e86-132">示例</span><span class="sxs-lookup"><span data-stu-id="14e86-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d96ce-132">示例</span><span class="sxs-lookup"><span data-stu-id="d96ce-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="14e86-133">请求</span><span class="sxs-lookup"><span data-stu-id="14e86-133">Request</span></span>
-<span data-ttu-id="14e86-134">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="14e86-134">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d96ce-133">请求</span><span class="sxs-lookup"><span data-stu-id="d96ce-133">Request</span></span>
+<span data-ttu-id="d96ce-134">请求示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d96ce-134">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="14e86-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="14e86-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d96ce-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d96ce-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_pause"
@@ -59,27 +60,27 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="14e86-136">C#</span><span class="sxs-lookup"><span data-stu-id="14e86-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d96ce-136">C#</span><span class="sxs-lookup"><span data-stu-id="d96ce-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-pause-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14e86-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="14e86-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d96ce-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="d96ce-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-pause-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="14e86-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="14e86-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d96ce-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="d96ce-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-pause-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="14e86-139">Java</span><span class="sxs-lookup"><span data-stu-id="14e86-139">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d96ce-139">Java</span><span class="sxs-lookup"><span data-stu-id="d96ce-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-pause-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="14e86-140">响应</span><span class="sxs-lookup"><span data-stu-id="14e86-140">Response</span></span>
-<span data-ttu-id="14e86-141">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="14e86-141">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="d96ce-140">响应</span><span class="sxs-lookup"><span data-stu-id="d96ce-140">Response</span></span>
+<span data-ttu-id="d96ce-141">响应示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="d96ce-141">The following is an example of a response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
