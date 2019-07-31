@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: b4d5ca27c1248d07ddfa38b4b282282c282e5eef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 55c51b0016876a0b80f35d8d12168bb700881075
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458262"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955930"
 ---
 # <a name="get-taxareas"></a>获取 taxAreas
 检索 Dynamics 365 Business Central 的税务区域对象的属性和关系。

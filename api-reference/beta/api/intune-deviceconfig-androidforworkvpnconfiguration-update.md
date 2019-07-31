@@ -4,12 +4,13 @@ description: 更新 androidForWorkVpnConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0dd9e2c640d73e27c7a603d8acdd235bf042493
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6c3696a5aa9a10f1e38c73f4dbd4ed9f908eb374
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970315"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963064"
 ---
 # <a name="update-androidforworkvpnconfiguration"></a>更新 androidForWorkVpnConfiguration
 

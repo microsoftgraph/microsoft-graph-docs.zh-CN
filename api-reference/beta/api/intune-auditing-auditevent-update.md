@@ -4,12 +4,13 @@ description: 更新 auditEvent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14a44e8ce8cd617101889adf6c7b998db664dd74
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e5a1ecd47f8f8f78411a7d6f53d845964f5a1c43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959486"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 

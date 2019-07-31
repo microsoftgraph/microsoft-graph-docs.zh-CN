@@ -2,12 +2,15 @@
 title: privilegedOperationEvent 资源类型
 description: 表示由角色操作的特权标识管理生成的审核事件, 例如管理员管理特权角色、用户激活他的角色, 以及用户停用他的角色。
 localization_priority: Normal
-ms.openlocfilehash: 58444ab6beac8796dba9945697bc809070f435fe
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 88cc7870ef8db503dd2d0fd5f5de93ddf51bdac4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965759"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
 

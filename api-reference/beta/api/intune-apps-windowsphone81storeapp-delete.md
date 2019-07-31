@@ -4,12 +4,13 @@ description: 删除 windowsPhone81StoreApp。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c44235e5f9180562802390c4036f3f2f91a96284
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bf78569065e738c9b63b1594e025f9e907c40990
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973031"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959885"
 ---
 # <a name="delete-windowsphone81storeapp"></a>删除 windowsPhone81StoreApp
 

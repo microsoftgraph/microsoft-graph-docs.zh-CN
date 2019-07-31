@@ -4,12 +4,13 @@ description: 删除 deviceComplianceDeviceStatus。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 646dedcf14b5e82e9e7e48b812618e191bc679ea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: aeee6d3c0dea70ced83a915bccc36f9b0c5735a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968544"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949954"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>删除 deviceComplianceDeviceStatus
 

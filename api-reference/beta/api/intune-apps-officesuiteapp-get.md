@@ -4,12 +4,13 @@ description: 读取 officeSuiteApp 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f01a01bfd18810d60f18230e449d81513c2b8445
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b00844385e9ba1237596255e9bb7ac6683a77f83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973528"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960494"
 ---
 # <a name="get-officesuiteapp"></a>获取 officeSuiteApp
 

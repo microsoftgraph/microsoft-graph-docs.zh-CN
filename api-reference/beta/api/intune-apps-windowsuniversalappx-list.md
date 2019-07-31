@@ -4,12 +4,13 @@ description: 列出 windowsUniversalAppX 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a71ecb0c39b459a2f9c7b8250bdc9ef4c85ee30
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 23004c58c7a62ee20bd4df0a06600adb7defb36d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959661"
 ---
 # <a name="list-windowsuniversalappxs"></a>列出 windowsUniversalAppXs
 

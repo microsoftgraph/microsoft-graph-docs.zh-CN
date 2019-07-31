@@ -2,12 +2,15 @@
 title: 列出 governanceResources
 description: 检索请求者有权访问的 governanceResource 的集合。
 localization_priority: Normal
-ms.openlocfilehash: 702ab0ae1d47913584a7d3f6e86c939d871d6865
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 15c3e12e2fec08fac8644e59a22aba08311c6dc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954318"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 

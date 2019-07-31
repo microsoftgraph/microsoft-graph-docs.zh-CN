@@ -4,12 +4,13 @@ description: " 并指示已完成评分。 此操作仅可由教师完成。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d2fe5403534fc6e7140c7e0b8e8731707feac5b7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ddf437c60ae4ca56a800bd82b081b149a686eabe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955072"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: release
 
@@ -57,7 +58,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

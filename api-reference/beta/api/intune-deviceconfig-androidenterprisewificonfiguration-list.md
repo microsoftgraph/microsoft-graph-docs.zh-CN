@@ -4,12 +4,13 @@ description: 列出 androidEnterpriseWiFiConfiguration 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afe5ab156e0f58980099aa2200ab74d92456a5b1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1ab9d813101ae0d2b66e0bdda4254ade55207a03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971169"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957911"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>列出 androidEnterpriseWiFiConfigurations
 

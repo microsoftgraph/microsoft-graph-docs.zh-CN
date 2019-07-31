@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0d3c69d3e8ef7951fceefba875dbab2d9949db59
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 088db4752d62ffc521cf397db2692002537d3015
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458423"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956441"
 ---
 # <a name="update-customers"></a>更新客户
 更新 Dynamics 365 Business Central 的 customer 对象的属性。

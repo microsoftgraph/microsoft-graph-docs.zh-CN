@@ -4,12 +4,13 @@ description: 创建新的 androidForWorkVpnConfiguration 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef8e6039bed0d0b80f3306ac6ab875bc58ac4cec
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 04c1cffc90c6b4e6c75a2cd8c46265f742a3d6c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970378"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963120"
 ---
 # <a name="create-androidforworkvpnconfiguration"></a>创建 androidForWorkVpnConfiguration
 

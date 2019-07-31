@@ -4,18 +4,19 @@ description: " 值是 plannerFavoritePlanReference 对象。"
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 8c43108ed5c9e2f27b824d772716c6e467d56942
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 67149f0ccf8ec04fe702a0d77b1fb2f5f6020365
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965945"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>plannerFavoritePlanReferenceCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerFavoritePlanReferenceCollection**资源表示对计划的引用的集合, 这些计划被用户标记为收藏。 此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。 属性值对中的属性名称是对应计划的 ID;值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。
+**PlannerFavoritePlanReferenceCollection**资源表示对计划的引用的集合, 这些计划被用户标记为收藏。 此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。 属性值对中的属性名称是对应计划的 ID;值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。
 
 
 ## <a name="properties"></a>属性

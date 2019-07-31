@@ -2,12 +2,15 @@
 title: 程序资源类型
 description: '在 Azure AD access 评论功能中, 程序是容器, 保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序, 以便更轻松地找到相关的访问评审。  '
 localization_priority: Normal
-ms.openlocfilehash: 7c0016cb194acd7ad8533acb34650b57df720ace
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c6a978ef4bb68c09b2f5659e255d16681c9c805d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965668"
 ---
 # <a name="program-resource-type"></a>程序资源类型
 

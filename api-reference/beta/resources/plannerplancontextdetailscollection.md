@@ -4,19 +4,20 @@ description: " 值是 plannerPlanContextDetails 对象。"
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 2e2f292de763674510f6da5a8aad90fe8e17ab7f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b8adf130dc925a4d9eb17819acf7b2a670a6c7b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344394"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965899"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>plannerPlanContextDetailsCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-**plannerPlanContextDetailsCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是[plannerPlanDetails](plannerplandetails.md)对象的一部分。 属性值对中的属性名称是上下文特定于应用程序的标识符;值是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。
+**PlannerPlanContextDetailsCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是[plannerPlanDetails](plannerplandetails.md)对象的一部分。 属性值对中的属性名称是上下文特定于应用程序的标识符;值是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。
 
 
 ## <a name="properties"></a>属性
