@@ -4,12 +4,13 @@ description: 列出 managedDeviceEncryptionState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12d95ec8159e6cd04f119b8c3033882ebb3bd6d9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 9bc11687b4da52ec170aa9a4e572d22f29a101ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715331"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946619"
 ---
 # <a name="list-manageddeviceencryptionstates"></a>列出 managedDeviceEncryptionStates
 

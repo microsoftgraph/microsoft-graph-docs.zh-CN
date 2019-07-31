@@ -1,21 +1,22 @@
 ---
 title: plannerRecentPlanReferenceCollection 资源类型
-description: '**plannerRecentPlanReferenceCollection**资源表示对用户最近查看的计划的引用集合。 此资源是打开的类型, 并且是 plannerUser 对象的一部分。 属性名称是对应计划的 ID。 属性-值对中的值是 plannerRecentPlanReference 对象。'
+description: '**PlannerRecentPlanReferenceCollection**资源表示对用户最近查看的计划的引用集合。 此资源是打开的类型, 并且是 plannerUser 对象的一部分。 属性名称是对应计划的 ID。 属性-值对中的值是 plannerRecentPlanReference 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a2b2607f8b5cf3dbd91e69ab71a737037cbd0a94
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 474cd321357e698d65b768b94fb867285978984b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965855"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>plannerRecentPlanReferenceCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerRecentPlanReferenceCollection**资源表示对用户最近查看的计划的引用集合。 此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。 属性名称是对应计划的 ID。 属性-值对中的值是[plannerRecentPlanReference](plannerrecentplanreference.md)对象。
+**PlannerRecentPlanReferenceCollection**资源表示对用户最近查看的计划的引用集合。 此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。 属性名称是对应计划的 ID。 属性-值对中的值是[plannerRecentPlanReference](plannerrecentplanreference.md)对象。
 如果将新的引用添加到此集合中, 则当集合的大小超过预先确定的最大值时, 将自动删除最旧的项。
 
 

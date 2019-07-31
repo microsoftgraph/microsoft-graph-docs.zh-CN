@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0de10e65843efbf06968273930c7835a5d4941a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 36be8d31d7ee43c125d77b5cf233c0c63848cf45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458633"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955909"
 ---
 # <a name="delete-taxgroups"></a>删除 taxGroups
 从 Dynamics 365 Business Central 中删除税务组对象。
@@ -23,7 +24,7 @@ ms.locfileid: "32458633"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application|Financials.ReadWrite.All|
+|应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```

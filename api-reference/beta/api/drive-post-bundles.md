@@ -5,12 +5,13 @@ title: 创建捆绑包
 description: 创建 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 34befe2badb842ca996821266b00731cfdd559d5
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 342a03f7fad3b8919774296d8e7fa5562c49b30a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932684"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957302"
 ---
 # <a name="create-bundle"></a>创建捆绑包
 

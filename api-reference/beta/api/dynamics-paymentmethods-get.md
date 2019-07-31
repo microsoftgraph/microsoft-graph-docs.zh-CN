@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: b9c3fa5cc594b50ab2e2ab21e8e57b593ca8c78c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d02cd6eae1ddc9006beeb58020196cbf1766d4e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458290"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956070"
 ---
 # <a name="get-paymentmethods"></a>获取 paymentMethods
 检索 Dynamics 365 Business Central 的付款方式对象的属性和关系。

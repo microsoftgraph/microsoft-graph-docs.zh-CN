@@ -4,12 +4,13 @@ description: 删除 mobileAppCategory。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd3b9e8e9883d68ccd8a5548c834eb0d7ed99c5d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 009bab5930392039f307104701a6585d1e6c82ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974158"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960935"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
 

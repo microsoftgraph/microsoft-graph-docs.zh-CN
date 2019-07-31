@@ -4,12 +4,13 @@ description: 列出 macOSTrustedRootCertificate 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdc3e776b5e918c1f1fc0e8ac2f9743e6b3aac95
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 219ced5b713187d2224f86de076affe9e21d9a49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947023"
 ---
 # <a name="list-macostrustedrootcertificates"></a>列出 macOSTrustedRootCertificates
 

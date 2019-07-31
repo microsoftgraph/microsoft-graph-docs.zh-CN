@@ -4,12 +4,13 @@ description: 更新租户中现有 school 数据同步配置文件的属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 449da9d7aa64ae4a77e73599536fbac42924828b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 9535da9fa454b9a416779e5157200a178b647d37
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324887"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954810"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
 

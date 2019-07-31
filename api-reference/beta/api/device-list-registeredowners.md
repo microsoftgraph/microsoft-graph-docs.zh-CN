@@ -4,12 +4,13 @@ description: 检索身份为已注册设备的所有者的用户列表。 已注
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 479901336f2f38b57aff268e90e0fcd3b7a96f5f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0d9c4a6b9d9f26bb3608ada0211dbe7abf71ad55
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951405"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 

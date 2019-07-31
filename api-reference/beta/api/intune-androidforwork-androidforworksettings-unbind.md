@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b7deffa08b8a061542f09dd116f0bc87ac035a5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4931363ff3fe47480a2b2dcc15e313bf62d74a88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966507"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952658"
 ---
 # <a name="unbind-action"></a>unbind 操作
 

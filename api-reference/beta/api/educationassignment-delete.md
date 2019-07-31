@@ -4,12 +4,13 @@ description: 删除现有工作分配。 只有课堂中的教师才能删除工
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d223de4ba4310b3ec62e37210551b24e43300c5c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 57458e92609fb7cf13d10b7d5f4d61fc7b04df3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860799"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955776"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 

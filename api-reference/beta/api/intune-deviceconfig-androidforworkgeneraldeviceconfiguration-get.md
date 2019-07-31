@@ -4,12 +4,13 @@ description: 读取 androidForWorkGeneralDeviceConfiguration 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68810db92bc5b4272765cf017e5fb15aee0b28c1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cab2022009cac67d466aa0e39213b9b1697acb04
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34970868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963575"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>获取 androidForWorkGeneralDeviceConfiguration
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 6dfb5d68e18c92de4ecb702707b2fdc67fa5ea19
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 31d4907248d64a5200e1dbae9e4b2626f46b2ee1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956553"
 ---
 # <a name="create-taxgroups"></a>创建 taxGroups
 在 Dynamics 365 Business Central 中创建税务组对象。

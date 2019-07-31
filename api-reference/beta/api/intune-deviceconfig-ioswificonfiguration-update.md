@@ -4,12 +4,13 @@ description: 更新 iosWiFiConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f022e623ca693577b45c9864ea26202d5872c7d7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4e973545ab156f0fc4faa65c40f4e2fb6ad342b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947618"
 ---
 # <a name="update-ioswificonfiguration"></a>更新 iosWiFiConfiguration
 

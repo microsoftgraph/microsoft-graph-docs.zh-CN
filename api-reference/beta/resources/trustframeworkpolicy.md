@@ -4,25 +4,26 @@ description: 在 Azure AD B2C 信任框架策略中称为 "自定义策略"。 �
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3160ce5ec75c0b65def8aed44ad89032cd293dee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f573b331b587db50019e71468ec98d0e746e3963
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964184"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>trustFrameworkPolicy 资源类型
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-表示[Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview)中的[信任框架](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)策略 (也称为[自定义策略](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom))。 信任框架策略提供了对用户旅程的完全控制权限。 使用它可以执行以下操作:
+表示[Azure Active DIRECTORY B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview)中的[信任框架](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom)策略 (也称为[自定义策略](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom))。 信任框架策略提供了对用户旅程的完全控制权限。 使用它可以执行以下操作:
 
 * 完全自定义注册和登录体验。
 * 联合任何 SAML、Open ID Connect 或 OAuth2 identity provider。
 * 通过调用 REST 终结点与其他系统或用户数据存储集成。
 * 转换声明并自定义颁发给信赖方应用程序的令牌。
 
-有关详细信息, 请参阅[Azure Active Directory B2C 中的自定义策略](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
+有关详细信息, 请参阅[Azure Active DIRECTORY B2C 中的自定义策略](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)。
 
 ## <a name="methods"></a>方法
 

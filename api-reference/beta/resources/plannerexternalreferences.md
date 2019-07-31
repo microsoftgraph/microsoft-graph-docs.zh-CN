@@ -1,21 +1,22 @@
 ---
 title: plannerExternalReferences 资源类型
-description: '**plannerExternalReferences**资源表示任务的引用集合。 这是开放类型。 它是任务详细信息对象的一部分。 属性-值对中的值是 externalReference 对象。'
+description: '**PlannerExternalReferences**资源表示任务的引用集合。 这是开放类型。 它是任务详细信息对象的一部分。 属性-值对中的值是 externalReference 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6684757b9eb8b1d05a738b5aed887a05e8f32cb3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 65eb2deb04f44bd08be14cf1c0c6d61807552efa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344507"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966018"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>plannerExternalReferences 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerExternalReferences**资源表示任务的引用集合。 这是开放类型。 它是[任务详细信息](plannertaskdetails.md)对象的一部分。 属性-值对中的值是[externalReference](plannerexternalreference.md)对象。
+**PlannerExternalReferences**资源表示任务的引用集合。 这是开放类型。 它是[任务详细信息](plannertaskdetails.md)对象的一部分。 属性-值对中的值是[externalReference](plannerexternalreference.md)对象。
 
 
 ## <a name="properties"></a>属性

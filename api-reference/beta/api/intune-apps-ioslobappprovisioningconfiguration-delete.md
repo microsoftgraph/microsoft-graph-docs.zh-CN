@@ -4,12 +4,13 @@ description: 删除 iosLobAppProvisioningConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 945d3d78271125bf64176e3949602875f5b94f86
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 21ed250057826478f48f0fb7d293d455995a2354
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951874"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>删除 iosLobAppProvisioningConfiguration
 

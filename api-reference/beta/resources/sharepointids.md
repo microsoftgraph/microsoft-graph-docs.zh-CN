@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: SharePointIds 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 01e4c3087f9504255975ab28f935ceed8815b6b0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c7e18e43bcbe9c73500701577c752e7a30d47194
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343092"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965122"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
 

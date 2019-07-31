@@ -4,12 +4,13 @@ description: 接受用户日历中的指定事件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5dc2ea57137f1fabf46fbc8b51371c31b6966241
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5df91e774139cd416459982a5c3d44988299af3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859748"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954611"
 ---
 # <a name="event-accept"></a>event: accept
 

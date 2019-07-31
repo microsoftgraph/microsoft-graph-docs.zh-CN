@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 53da84723042439505a91dee3838426db6ced820
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9463c8ba3c203a5765a79ea81858c9daec5aa689
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956735"
 ---
 # <a name="create-currencies"></a>创建货币
 在 Dynamics 365 Business Central 中创建货币对象。
@@ -23,7 +24,7 @@ ms.locfileid: "32454071"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application|Financials.ReadWrite.All|
+|应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```

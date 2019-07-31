@@ -4,12 +4,13 @@ description: 创建新的 macOSScepCertificateProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1f82ca99fae9be3772813d6f2f079d7f256aa84
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9c42c15d5b6dc6c5b7dc3edc0cb472298a91576d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976622"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947115"
 ---
 # <a name="create-macosscepcertificateprofile"></a>创建 macOSScepCertificateProfile
 

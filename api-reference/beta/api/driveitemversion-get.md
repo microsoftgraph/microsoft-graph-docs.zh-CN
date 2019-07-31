@@ -3,12 +3,14 @@ title: 获取 DriveItemVersion 资源（预览）
 description: 检索 DriveItem 的某个特定版本的元数据。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7bf6fb63660dbd961ce94519ee629a23cfd939da
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: dd381033f5bd2a59722302116283e438192d0c2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860835"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956931"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>获取 DriveItemVersion 资源（预览）
 

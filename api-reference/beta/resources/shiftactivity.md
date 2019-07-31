@@ -4,12 +4,13 @@ description: 代表班次中的活动。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 24946630e9bc3ae9ba418f5c322ab212c022d6d1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType_
+ms.openlocfilehash: 8acfb16235c90cf6067ad5fd6c5d8e82ae239f8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343083"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965073"
 ---
 # <a name="shiftactivity-resource-type"></a>shiftActivity 资源类型
 

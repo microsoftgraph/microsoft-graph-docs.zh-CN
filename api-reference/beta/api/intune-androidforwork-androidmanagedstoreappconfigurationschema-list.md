@@ -4,12 +4,13 @@ description: 列出 androidManagedStoreAppConfigurationSchema 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc691c0b48517e7e828b99e9aba53713fdf8e59c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: eb2044587b33a9f9df11a19e829e1d3a4380a57f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711530"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952490"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>列出 androidManagedStoreAppConfigurationSchemas
 

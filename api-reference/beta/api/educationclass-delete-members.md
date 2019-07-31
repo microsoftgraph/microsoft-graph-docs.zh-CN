@@ -4,12 +4,13 @@ description: 从 educationClass 删除 educationUser
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ac5ee332c58a070d9f25dfb3bde78177fb323b02
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a472686e8922e0671ad0db1f32c74b05ffcdf0ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324946"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955507"
 ---
 # <a name="remove-a-student"></a>删除学生
 
@@ -57,7 +58,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 <!-- {
   "blockType": "response",
   "truncated": true,

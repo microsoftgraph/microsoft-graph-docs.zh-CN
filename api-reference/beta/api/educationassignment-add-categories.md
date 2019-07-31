@@ -4,12 +4,13 @@ description: 将现有 educationCategory 添加到此 educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: afb89d40dd0f074da9ef1f6c7b0aeb1ff952c43f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b5395ab656d0a5e44b4f3a45f7c136009c5bcc61
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325194"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955790"
 ---
 # <a name="add-educationcategories"></a>添加 educationCategories
 

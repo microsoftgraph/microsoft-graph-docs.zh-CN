@@ -4,12 +4,13 @@ description: 列出 mobileAppProvisioningConfigGroupAssignment 对象的属性�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 135fcd81cd3ca0fa221de2550cf864f2f9015a57
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 73438275f1b4bd2abce2c19d0dff594588361cdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960613"
 ---
 # <a name="list-mobileappprovisioningconfiggroupassignments"></a>列出 mobileAppProvisioningConfigGroupAssignments
 

@@ -4,12 +4,13 @@ description: 列出 macOSScepCertificateProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd7d2773047c4681fafd58aa5825e9e2ac784935
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2726f66cfeeb64686820b575303eb1c56dfa2462
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947149"
 ---
 # <a name="list-macosscepcertificateprofiles"></a>列出 macOSScepCertificateProfiles
 

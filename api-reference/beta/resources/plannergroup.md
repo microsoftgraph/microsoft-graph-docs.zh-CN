@@ -1,21 +1,22 @@
 ---
 title: plannerGroup 资源类型
-description: '**plannerGroup**资源提供对组的 Planner 资源的访问。 它不包含任何可用属性。'
+description: '**PlannerGroup**资源提供对组的 Planner 资源的访问。 它不包含任何可用属性。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 043cec9c3953f8c78a37e141a7b0f1259eb89d52
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 308c64e7eb086f48859581cf2d66aae07269fe6e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344478"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965955"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerGroup**资源提供对[组](group.md)的 Planner 资源的访问。 它不包含任何可用属性。
+**PlannerGroup**资源提供对[组](group.md)的 Planner 资源的访问。 它不包含任何可用属性。
 
 ## <a name="methods"></a>方法
 
@@ -26,7 +27,7 @@ ms.locfileid: "33344478"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 **plannerGroup**的标识符|
+|id|String| 只读。 **PlannerGroup**的标识符|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

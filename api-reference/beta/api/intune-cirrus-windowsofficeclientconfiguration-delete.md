@@ -4,12 +4,13 @@ description: 删除特定的非安全策略。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e243e660aa85b7b370da3bbe13f58d1bf89756d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageTypes
+ms.openlocfilehash: 5d4e3456a0147feac57a47ae5cc5caf91fc99de6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958835"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>删除 windowsOfficeClientConfiguration
 

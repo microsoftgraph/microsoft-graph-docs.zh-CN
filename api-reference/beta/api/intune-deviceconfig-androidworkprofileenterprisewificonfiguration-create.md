@@ -4,12 +4,13 @@ description: 创建新的 androidWorkProfileEnterpriseWiFiConfiguration 对象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f521cbfd2b1e913df88d5760115ee884dc54d0e5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 71b59872aa6513711ec066a08307513eaf8eca04
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950894"
 ---
 # <a name="create-androidworkprofileenterprisewificonfiguration"></a>创建 androidWorkProfileEnterpriseWiFiConfiguration
 

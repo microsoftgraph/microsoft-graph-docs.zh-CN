@@ -4,12 +4,13 @@ description: 检索 dataPolicyOperation 对象的属性。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d68d3e6ff9c0a200a1e86b3d2794cdb5dd0e3a57
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1bca70cc1ea312bf2914b2f6dfbe4b804527c7ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951457"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 

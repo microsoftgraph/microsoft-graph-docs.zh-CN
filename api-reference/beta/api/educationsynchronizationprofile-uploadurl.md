@@ -4,12 +4,13 @@ description: 检索用于将源文件上载到租户中特定学校数据同步�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cfac704d337fd9f0b4102bc969ad573bd410a855
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b635ed344870b5e23707dc301f016c9e85f77c18
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859955"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954751"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 

@@ -4,12 +4,13 @@ description: 删除 ndesConnector。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a680f34580405009c0d0dbe13a63c7cd864fb90
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0c788071240b4379e35579ecc7ceb16de88a4f75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976398"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946626"
 ---
 # <a name="delete-ndesconnector"></a>删除 ndesConnector
 

@@ -4,12 +4,13 @@ description: OneNote 笔记本中的分区组。 节组可以包含节和节组�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f1cd9757b0a58afb4183bd917a7a090b14502a36
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4637784ac20d92c82e7a4771c815136ddd3e175a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343392"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965269"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
@@ -65,8 +66,8 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 |:---------------|:--------|:----------|
 |parentNotebook|[笔记](notebook.md)|包含分区组的笔记本。 只读。|
 |parentSectionGroup|[sectionGroup](sectiongroup.md)|包含节组的节组。 只读。|
-|sectionGroups|[sectionGroup](sectiongroup.md)集合|节中的节组。 此为只读属性。 可为 Null。|
-|分区|[onenoteSection](onenotesection.md)集合|分区组中的节。 此为只读属性。 可为 Null。|
+|sectionGroups|[sectionGroup](sectiongroup.md)集合|节中的节组。 此为只读属性。 可为 NULL。|
+|sections|[onenoteSection](onenotesection.md)集合|分区组中的节。 此为只读属性。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
@@ -76,7 +77,7 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 |[创建分区组](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
 |[列出分区组](../api/sectiongroup-list-sectiongroups.md) |[sectionGroup](sectiongroup.md)集合| 获取指定分区组中的分区组的集合。|
 |[创建分区](../api/sectiongroup-post-sections.md) |[onenoteSection](onenotesection.md)| 通过发布到指定分区组中的节集合来创建节。|
-|[列出分区](../api/sectiongroup-list-sections.md) |[onenoteSection](onenotesection.md)集合| 获取指定分区组中的节的集合。|
+|[列出节](../api/sectiongroup-list-sections.md) |[onenoteSection](onenotesection.md)集合| 获取指定分区组中的节的集合。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

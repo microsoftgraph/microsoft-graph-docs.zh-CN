@@ -4,12 +4,13 @@ description: 创建新的 windowsPhoneXAP 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 961faf2ef7703d9dc5dd9dc8bb805992f627beb7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: cd38f3d66bd77dc5a6383bd51ab603f5e63f814b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972898"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959843"
 ---
 # <a name="create-windowsphonexap"></a>创建 windowsPhoneXAP
 

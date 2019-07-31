@@ -4,12 +4,13 @@ description: 读取 managedDeviceMobileAppConfigurationDeviceSummary 对象的�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 412c45a3adcc333210be14efcb80cf266ecdc8e7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e197e34f8855e2da115b3c08f39e84f0c8d2ba4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974725"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961537"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>获取 managedDeviceMobileAppConfigurationDeviceSummary
 

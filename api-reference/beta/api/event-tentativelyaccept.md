@@ -4,12 +4,13 @@ description: 暂时接受用户日历中的指定事件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ce5f4012ded4c4c63a8c4b4fec8f997eb970cf97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a5f3f392e81180b7e67e217481738abafb2a0b8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859450"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954443"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 

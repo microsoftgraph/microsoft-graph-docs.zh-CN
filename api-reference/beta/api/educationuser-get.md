@@ -4,12 +4,13 @@ description: 检索用户的属性和关系。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1a1d14b0fd69fa84c4933dceb612e2aae2667626
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 80893e43de4b0ad639a610f1330de93139b3a19d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859835"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954695"
 ---
 # <a name="get-educationuser"></a>获取 educationUser
 

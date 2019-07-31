@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65c1be4fb9b15746221e8bf88da2cb6314381f06
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 41e957e1fa86614716e3eb25c2fc0e2338d33fc4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952749"
 ---
 # <a name="revoketoken-action"></a>revokeToken 操作
 

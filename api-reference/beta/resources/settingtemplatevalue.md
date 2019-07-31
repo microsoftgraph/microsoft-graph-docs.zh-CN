@@ -2,12 +2,15 @@
 title: settingTemplateValue 资源类型
 description: 表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
 localization_priority: Normal
-ms.openlocfilehash: 2277f4b7bb66839164a1b09011d20886baf2bd1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9a49dd291bd9cc7baa31d90ba8e247ac984b1906
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965185"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 

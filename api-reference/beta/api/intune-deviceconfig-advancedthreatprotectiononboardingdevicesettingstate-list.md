@@ -4,12 +4,13 @@ description: 列出 advancedThreatProtectionOnboardingDeviceSettingState 对象�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce638d63d32ec5abf88699c4dcda9ac27c7b6aa9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fdb6f9cc4403a3835cf1bc1865d36eeec95baba6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971680"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958457"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>列出 advancedThreatProtectionOnboardingDeviceSettingStates
 

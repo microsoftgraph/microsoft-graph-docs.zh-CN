@@ -4,12 +4,13 @@ description: 读取 managedDeviceEncryptionState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb36d0e3b3132cde541604b8256c54576e4d1d63
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: f5a0f28b78d72a6b72b17ddac80c7c7d3383a95c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946654"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>获取 managedDeviceEncryptionState
 

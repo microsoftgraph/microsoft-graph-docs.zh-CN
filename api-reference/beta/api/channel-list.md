@@ -4,12 +4,13 @@ description: 检索此团队中的频道列表。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0ec658f526207512844fe8ebde64da0546103045
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c0f4b99b6e14d473221e96ef598533a3155fc1b8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864443"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944259"
 ---
 # <a name="list-channels"></a>列出频道
 

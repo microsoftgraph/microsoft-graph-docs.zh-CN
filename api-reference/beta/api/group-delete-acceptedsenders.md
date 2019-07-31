@@ -4,12 +4,13 @@ description: '从接受的发件人列表中删除用户或组。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 22e81f8bbbb497b8209e6faa744a54b24029391c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 341f887de0252dd6ae1ebc9f899263c67716658f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329740"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954020"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
 
@@ -79,7 +80,7 @@ DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 ```
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 <!-- {
   "blockType": "response",
