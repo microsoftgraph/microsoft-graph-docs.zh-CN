@@ -4,12 +4,13 @@ description: Windows10SecureAssessment ConfigurationAccount 允许的帐户类�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4fc8f8a163cf6e55e5fd592e3d9e0a08a9655df
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: f1f7e2b6b9cbc32ee41840d96b706322660fd2b2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000555"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 枚举类型
 

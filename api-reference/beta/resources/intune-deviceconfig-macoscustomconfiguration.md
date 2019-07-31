@@ -4,12 +4,13 @@ description: 本主题提供由 macOSCustomConfiguration 资源公开的已声�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc2c1cd56981f29e6531dc08ff63d3860b1babba
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: dc3c58cf4a2fe8546997771158342c0359ccd583
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989215"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001017"
 ---
 # <a name="macoscustomconfiguration-resource-type"></a>macOSCustomConfiguration 资源类型
 

@@ -1,28 +1,29 @@
 ---
 title: plannerUser 资源类型
-description: '**plannerUser**资源为用户提供对 Planner 资源的访问权限。 '
+description: '**PlannerUser**资源为用户提供对 Planner 资源的访问权限。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: fd279e541df4b45e47d1c389d2e8a1e212b01a41
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2229020f00331e761eceeadf0739c84995e5bbdb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008990"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerUser**资源为[用户](user.md)提供对 Planner 资源的访问权限。 
+**PlannerUser**资源为[用户](user.md)提供对 Planner 资源的访问权限。 
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取分配给用户的[plannerTasks](plannertask.md) 。|
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取分配给用户的[plannerTasks](plannertask.md) 。|
 |[列出 favoritePlans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户标记为收藏的[plannerPlans](plannerplan.md) 。|
 |[列出 recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户最近查看过的[plannerPlans](plannerplan.md) 。|
 |[更新](../api/planneruser-update.md) | [plannerUser](planneruser.md)| 更新**plannerUser**对象。 |
@@ -31,7 +32,7 @@ ms.locfileid: "33344338"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 plannerUser 的标识符|
+|id|String| 只读。 PlannerUser 的标识符|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| 包含对用户已标记为收藏夹的计划引用的集合。|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| 包含对计划的引用的集合, 该用户最近在支持最近计划的应用程序中查看了这些计划。|
 

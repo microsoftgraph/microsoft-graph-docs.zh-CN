@@ -2,14 +2,15 @@
 title: Azure AD 同步 API 概述
 description: ') 允许您自动创建、维护和删除云 (软件作为服务或 SaaS) 应用程序 (如 Dropbox、Salesforce、ServiceNow 等) 中的标识。 您可以使用 Microsoft Graph 中的同步 Api 以编程方式管理标识同步, 包括:'
 localization_priority: Normal
+doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c500eeb188461eaf245b6a9149421216cfaf2f43
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 818f5060db1fe4f6c05f0473e438095877ead119
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620498"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007863"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 

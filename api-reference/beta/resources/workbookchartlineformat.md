@@ -4,12 +4,13 @@ description: 封装线条元素的格式选项。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b40c72240771edd3517f2b29df269d83adeec8f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: fe36b0448d430566b51ee836e93d02f08cdbdbd5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007240"
 ---
 # <a name="workbookchartlineformat-resource-type"></a>workbookChartLineFormat 资源类型
 

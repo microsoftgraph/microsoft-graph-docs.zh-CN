@@ -1,21 +1,23 @@
 ---
 author: psampath
-ms.author: psampath
+description: StoragePlanInformation 资源提供有关驱动器的存储配额计划的信息。
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
-ms.openlocfilehash: 3911d3af5f2149d1043ed246e7c11d287c840842
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d8ddb39f9f7c6443f0e669052084af27b8fd5cec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008080"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**storagePlanInformation**资源提供有关驱动器的存储配额计划的信息。
+**StoragePlanInformation**资源提供有关驱动器的存储配额计划的信息。
 
 ### <a name="json-representation"></a>JSON 表示形式
 

@@ -4,12 +4,13 @@ description: 设备威胁防护 API 的设备威胁保护级别。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 895e8bd056c688ed26ba5fe57c688c66ab6ac846
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 46af5513a1f88de1e055b6b9697625e7e6652782
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004531"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 

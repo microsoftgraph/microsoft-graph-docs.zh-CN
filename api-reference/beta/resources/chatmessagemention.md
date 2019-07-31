@@ -4,12 +4,13 @@ description: '表示了 chatmessage 实体中提及的项。 提及可用于用�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: bd1c7854dd8653452fd7230f90faa56576aa5908
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 130b1d536c881991a54e5b6fd06aee2f3f59483a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012959"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 

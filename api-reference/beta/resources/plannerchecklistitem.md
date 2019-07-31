@@ -1,21 +1,22 @@
 ---
 title: plannerChecklistItem 资源类型
-description: '**plannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由 checklistItems 对象表示。'
+description: '**PlannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由 checklistItems 对象表示。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: deb168fa123c893d0d3793b0e67f65b6da2819b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9bce6b0089f9e713e66e0354ce58d68cfd17fa7c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344499"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009074"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由[checklistItems 对象](plannerchecklistitems.md)表示。
+**PlannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由[checklistItems 对象](plannerchecklistitems.md)表示。
 
 
 ## <a name="properties"></a>属性

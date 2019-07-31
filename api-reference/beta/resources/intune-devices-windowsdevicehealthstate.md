@@ -4,12 +4,13 @@ description: 计算机终结点保护状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ac91095b27f7151d53ca81c43b3a77e3b8c0d87
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 3a12ac4e09981e21b51d97109f72569cafe628ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999603"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 枚举类型
 

@@ -4,12 +4,13 @@ description: 用于将设备购物车与教室关联的 CartToClassAssociation�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cdde67e8ffb0d30c631b4bbc39a70ed9b8387da
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 638b672d500f29b807309e52cdd4ddc14181c614
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990160"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001899"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 

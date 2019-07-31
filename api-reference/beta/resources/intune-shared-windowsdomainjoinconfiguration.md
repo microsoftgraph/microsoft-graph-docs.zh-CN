@@ -4,12 +4,13 @@ description: Windows 域加入设备配置。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8b3a0c1b1c92eb95493f8e0ff3d435da8a68ea16
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 2148b96d88cb7f98a22097c33eb7e80f3a8b726e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010334"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>windowsDomainJoinConfiguration 资源类型
 

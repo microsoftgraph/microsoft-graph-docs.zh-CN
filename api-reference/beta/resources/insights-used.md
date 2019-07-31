@@ -4,12 +4,13 @@ description: 表示特定用户使用的文档的洞察力。 该见解将返回
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 407822dc4ff3f0536b0cbff3bf2894ad96d5d878
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2b6e7a7c4df94e9ffbcb34ef200457b4a903eb24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005686"
 ---
 # <a name="usedinsight-resource-type"></a>usedInsight 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "33333550"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[使用的列表](../api/insights-list-used.md) |[usedInsight](insights-used.md)集合| 获取已用文件的列表。|
+|[使用的列表](../api/insights-list-used.md) |[usedInsight](insights-used.md) 集合| 获取已用文件的列表。|
 
 ## <a name="properties"></a>属性
 
@@ -35,7 +36,7 @@ ms.locfileid: "33333550"
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 所用文档的引用属性, 例如文档的 url 和类型。 只读     |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|

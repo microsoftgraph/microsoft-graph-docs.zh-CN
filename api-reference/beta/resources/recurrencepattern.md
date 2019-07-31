@@ -2,12 +2,15 @@
 title: recurrencePattern 资源类型
 description: 描述了定期事件的重复发生频率。
 localization_priority: Normal
-ms.openlocfilehash: 1dd582a9054850b9aa4cf3a8c29aa2366d6aaf2a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 48fca7295d7305fd915cf40a32c227f1fbf08c5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008738"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 

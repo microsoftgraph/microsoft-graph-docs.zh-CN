@@ -1,15 +1,17 @@
 ---
 author: kevinlam
-ms.author: kevinlam
+description: ItemPreviewInfo 资源包含有关如何嵌入 DriveItem 的预览的信息。
 ms.date: 3/16/2018
 title: ItemPreviewInfo-OneDrive API
 localization_priority: Normal
-ms.openlocfilehash: c43626292cd07ad14d27202255a499b413dbae63
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 2d789dacb0f1c1d3daca988f334fca2e8da4b0d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010054"
 ---
 # <a name="itempreviewinfo-resource-type"></a>ItemPreviewInfo 资源类型
 
@@ -37,7 +39,7 @@ ms.locfileid: "33345505"
 
 根据指定选项的当前支持状态, 可能会返回 getUrl、postUrl 或 both。
 
-postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 postUrl 执行 POST, 应相应地设置内容类型。 例如：
+postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 POSTURL 执行 POST, 应相应地设置内容类型。 例如：
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -45,4 +47,4 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-url 和参数的格式应被认为是不透明的。
+Url 和参数的格式应被认为是不透明的。

@@ -4,12 +4,13 @@ description: 租户移动设备管理订阅。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7f81e780ff753cd12f78cf088a54b901e8efefc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 9705c3d64eae5a9e55cf306ee8dd4b32fa291e3e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995313"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999820"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
 

@@ -4,12 +4,13 @@ description: 读取 mdmWindowsInformationProtectionPolicy 对象的属性和关�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aec4776cc3dd41257f5e3008050ef60c6ffe8ccc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b845e51afad429b5283a32fd7d6f3a9c562642ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987010"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994521"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>获取 mdmWindowsInformationProtectionPolicy
 

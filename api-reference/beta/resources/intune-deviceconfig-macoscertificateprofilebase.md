@@ -4,12 +4,13 @@ description: Mac OS 证书配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29f12712c9e1704c9409e938d6c175c9f3bc3788
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4834069f03974147e7e4434c9d543ae860e5342a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989270"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004223"
 ---
 # <a name="macoscertificateprofilebase-resource-type"></a>macOSCertificateProfileBase 资源类型
 

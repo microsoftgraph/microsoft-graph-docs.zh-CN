@@ -4,12 +4,13 @@ description: 'DeviceManagement 资源代表其内容因工作流而异的容器,
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: a6cb82cf68f77e83ec873bcf805004b064dfd9bb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5c74a17564c4594bf547e5ea606dc5acf2ef83ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996083"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010488"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
