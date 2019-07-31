@@ -4,12 +4,13 @@ description: 表示 Azure Active Directory 用户对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9e99cd379d16896ca60bccef6170e256677e8e95
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 012bc306facb514cefed5d872d20a11b164b3374
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938977"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010376"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 

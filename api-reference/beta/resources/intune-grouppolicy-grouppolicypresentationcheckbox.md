@@ -4,12 +4,13 @@ description: 表示一个 ADMX checkBox 元素和一个 ADMX 布尔元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbcff2437270ef7c56846f0945e856a1cc62ba03
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 968fbb7130e00157e0d02e826316a42420673354
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34982964"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010957"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>groupPolicyPresentationCheckBox 资源类型
 

@@ -2,14 +2,15 @@
 title: 配置与目录扩展属性的同步
 description: '你可以自定义同步架构以包含 Azure Active Directory (Azure AD) 目录扩展属性。 本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。 在这种情况下, 您已将 Azure AD Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active Directory 到 Azure AD。 '
 localization_priority: Normal
+doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d7624a90a550fba990be960eb9ebd954ebca6926
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f545057cd6fd64151f85218704b6887d7e925892
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891749"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007975"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 

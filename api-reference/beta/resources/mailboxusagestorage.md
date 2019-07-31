@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 44b97c7b18264e01c86b34bfd8265246f80ab031
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6f4ee4b29c82102db96cd4d71718f7da449776b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524543"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009837"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>mailboxUsageStorage 资源类型
 
@@ -17,9 +18,9 @@ ms.locfileid: "32524543"
 
 | 属性           | 类型   |
 | :----------------- | :----- |
-| reportRefreshDate  | Date   |
+| reportRefreshDate  | 日期   |
 | storageUsedInBytes | Int64  |
-| reportDate         | Date   |
+| reportDate         | 日期   |
 | reportPeriod       | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

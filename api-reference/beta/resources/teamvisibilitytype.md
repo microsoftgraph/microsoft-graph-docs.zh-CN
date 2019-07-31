@@ -4,12 +4,13 @@ description: '介绍团队的可见性。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3891092236012e0f960124d48b868256d58b538c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: enumPageType
+ms.openlocfilehash: 0983d62ddf884df4997ad02bdc9d574bbeafdcae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342029"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007667"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>teamVisibilityType 枚举类型
 

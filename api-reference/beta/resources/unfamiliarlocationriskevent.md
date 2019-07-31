@@ -2,18 +2,21 @@
 title: unfamiliarLocationRiskEvent 资源类型
 description: Azure Active Directory 标识保护检测到的一个风险事件, 其中的帐户登录尝试来自该用户的新位置。 有关风险事件的完整信息, 请参阅 Azure AD Identity Protection 文档。
 localization_priority: Normal
-ms.openlocfilehash: 984f11f7e47a251d49acd315d29504216b7995f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 106310a0ed0f3294842fbe7e2afd29e1d906cdec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345471"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007555"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的一个风险事件, 其中的帐户登录尝试来自该用户的新位置。 有关风险事件的完整信息, 请参阅[Azure AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的一个风险事件, 其中的帐户登录尝试来自该用户的新位置。 有关风险事件的完整信息, 请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法

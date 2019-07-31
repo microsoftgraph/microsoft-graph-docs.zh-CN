@@ -1,22 +1,24 @@
 ---
 author: daspek
-ms.author: dspektor
+description: ContentType 资源代表 SharePoint 中的内容类型。
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: bf35a3cbeee8003db8ed121e5bafbc88df098d9a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: b7376b431154595f9b3d2de1931918b629e74acb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341237"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012861"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ContentType** 资源代表 SharePoint 中的_内容类型_。
-内容类型使你可以定义一组列，这些列必须存在于 [**list**][list] 中的每个 [**listItem**][listItem] 上。
+内容类型允许您定义一组列, 这些列必须存在于列表中[****][listItem]的每个[**列表**][list]中。
 
 [list]: list.md
 [listItem]: listitem.md
@@ -60,7 +62,7 @@ ms.locfileid: "33341237"
 
 ## <a name="relationships"></a>关系
 
-| 属性名称   | 类型                      | 说明
+| 属性名   | 类型                      | 说明
 |:----------------|:--------------------------|:-------------------------------
 | **columnLinks** | [columnLink][] 集合 | 此内容类型所需的列集合
 

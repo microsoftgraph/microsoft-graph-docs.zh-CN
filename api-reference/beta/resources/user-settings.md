@@ -4,12 +4,13 @@ description: '当前用户设置。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3465370a8c22feed925517d2424501e490c17631
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3f79bdc747c5862dd0b2bcf9b2a7dc42b4dd5a17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007549"
 ---
 # <a name="settings-resource-type"></a>设置资源类型
 

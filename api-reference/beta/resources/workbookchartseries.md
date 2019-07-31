@@ -4,12 +4,13 @@ description: 代表图表上的系列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e9ff478a5f7e91c3d116ca2dbd78e20699077aab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c7f7c8108ac17e6705b8bf5f69b0e87f0dc96b31
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348597"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007247"
 ---
 # <a name="workbookchartseries-resource-type"></a>workbookChartSeries 资源类型
 

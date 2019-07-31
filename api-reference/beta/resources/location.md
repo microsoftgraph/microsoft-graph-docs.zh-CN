@@ -2,14 +2,15 @@
 title: 位置资源类型
 description: 表示事件的位置信息。
 localization_priority: Normal
+doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba7be26bc1a96d684ae5c2c5b21921def3273d70
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b96dfb725c6a4e82c61f4d2eac3ebb3602c5d738
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345360"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009949"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 

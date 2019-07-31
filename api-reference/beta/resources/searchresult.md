@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: SearchResult 资源指示项是搜索查询的响应。
 ms.date: 09/10/2017
-title: searchresult.xml
+title: Searchresult.xml
 localization_priority: Normal
-ms.openlocfilehash: 74743839d55dd5a8fc52661fac4a071d7a1730bc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 716a8147c9041ceee64993f9e90ad2f0f9ecb9e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343477"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008605"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult 资源类型
 

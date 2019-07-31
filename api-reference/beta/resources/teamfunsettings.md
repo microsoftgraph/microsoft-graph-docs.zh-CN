@@ -4,12 +4,13 @@ description: 用于配置团队中 Giphy、成员和贴纸使用情况的设置�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0f96157072ac7b6de403f82822226f316c8dcd46
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 05f882a54ab43dce3f985a4913b3f20c4ef3a1f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007709"
 ---
 # <a name="teamfunsettings-resource-type"></a>teamFunSettings 资源类型
 

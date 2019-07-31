@@ -4,12 +4,13 @@ description: 有关 Microsoft 团队中的邮件的信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 552844795d3ba7e8ad4c8a3c3a6dff3c18990bc2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 5a2c7b705078e49c7e3bd68056b698e05d3f83bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339691"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012973"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 

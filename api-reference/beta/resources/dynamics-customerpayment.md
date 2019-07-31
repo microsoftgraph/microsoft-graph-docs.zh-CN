@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 9063a9066c51956596e4f0aa918a2e7a53bf2ab9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4a1c777d51dd1ba706af85f431162cda16b5d25b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543097"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012602"
 ---
 # <a name="customerpayments-resource-type"></a>customerPayments 资源类型
 代表 Dynamics 365 Business Central 中的客户付款。 客户付款作为客户付款日志中的一条线路输入。
@@ -40,7 +41,7 @@ ms.locfileid: "32543097"
 |量|数位|指定客户付款包含的总金额 (包括 VAT)。|
 |appliesToInvoiceId|GUID|与付款相关的发票的唯一 ID。|
 |appliesToInvoiceNumber|字符串, 最大大小为20|与付款相关的发票的编号。|
-|description|字符串, 最大大小为50|客户付款的说明, 由用户或 autocreated 提供。|
+|说明|字符串, 最大大小为50|客户付款的说明, 由用户或 autocreated 提供。|
 |注释|字符串, 最大大小为250|用户在客户付款上指定的注释。|
 |lastModifiedDateTime|datetime|客户付款修改后的最后一个日期/时间。 只读。|
 

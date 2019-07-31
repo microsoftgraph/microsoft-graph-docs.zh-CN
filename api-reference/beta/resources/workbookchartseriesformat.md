@@ -4,12 +4,13 @@ description: 封装图表系列的格式属性
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5d07dbaf17fd715b93dcd039fe3fb9e264bd7f63
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 739a874545047c2ed6927cb4e31d2e006f4e6ba4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007163"
 ---
 # <a name="workbookchartseriesformat-resource-type"></a>workbookChartSeriesFormat 资源类型
 

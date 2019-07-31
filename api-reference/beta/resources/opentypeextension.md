@@ -1,20 +1,22 @@
 ---
 title: openTypeExtension 资源类型（开放扩展）
-description: 开放扩展 (以前称为 Office 365 数据扩展) 提供了一种简单的方法, 可将非类型化属性直接添加到 Microsoft Graph 中的资源。
+description: 借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 2d060a318e615bc9d1d21d38e0c289cff0b3f358
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 260ece8f5764250e4d728dd279d73ac94d77af5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341823"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009319"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-开放扩展 (以前称为 Office 365 数据扩展) 提供了一种简单的方法, 可将非类型化属性直接添加到 Microsoft Graph 中的资源。
+借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
 开放扩展由 **openTypeExtension** 资源表示。 添加到资源的所有开放扩展都会显示在派生自 [extension](extension.md) 抽象类型的 **extensions** 导航属性中。  每个扩展都有 **extensionName** 属性（这是所有扩展的预定义唯一可写属性）和自定义数据。 一种有助于确保扩展名称唯一性的方法是，使用反向域名系统 (DNS) 格式，此格式依赖_用户自己的域_。例如，`Com.Contoso.ContactInfo`。 请勿在扩展名称中使用 Microsoft 域（`Com.Microsoft` 或 `Com.OnMicrosoft`）。
 
 开放扩展示例：[使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
@@ -34,18 +36,18 @@ ms.locfileid: "33341823"
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
 
-## <a name="outlook-specific-considerations"></a>特定于 Outlook 的注意事项
+## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
-Outlook 资源 (事件、邮件或个人联系人) 上的每个打开的扩展均存储在[MAPI 命名属性](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx)中。 为 Outlook 创建开放扩展时, 请考虑 MAPI 命名属性是用户邮箱中的有限资源。 当用户的命名属性配额耗尽时, 不能为该用户创建更多的命名属性。 这可能会导致来自依赖命名属性的客户端的意外行为能够正常运行。
+Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展均存储在 [MAPI 命名属性](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx)中。 为 Outlook 创建开放扩展时，请考虑 MAPI 命名属性为用户邮箱中的有限资源。 当用户的命名属性配额用尽后，无法再为该用户创建任何其他命名属性。 这可能会导致依赖命名属性工作的客户端中出现异常行为。
 
-在 Outlook 资源上创建开放扩展时, 请应用以下准则:
+在 Outlook 资源中创建开放扩展时，请遵循以下指导原则：
 
-- 创建所需的最少分机数。 大多数应用程序不应要求有一个以上的扩展名。 扩展没有任何已定义的属性或结构, 因此您可以将多个值存储在一个扩展中。
-- 避免以可变方式命名扩展名 (例如, 基于用户输入等)。 每次使用尚未在用户邮箱中使用的新名称创建一个打开的扩展时, 都会创建一个新的 MAPI 命名属性。 删除扩展不会删除命名属性。
+- 创建所需的最少数量的扩展。 大多数应用程序只需要一个扩展。 扩展未设定定义的属性或结构，因此，可以在一个扩展中存储多个值。
+- 避免以可变方式命名扩展，如基于用户输入等。 每次使用用户邮箱中先前未使用过的新名称创建开放扩展时，将会创建新的 MAP 命名属性。 删除扩展不会删除命名属性。
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展 (针对 Outlook 资源) 或扩展属性
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）或扩展属性
 
-开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](https://developer.microsoft.com/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 您可以验证元数据公开[ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)的属性。
+开放扩展是大部分涉及存储和访问自定义数据的应用场景的推荐解决方案。 不过，如果需要访问尚未通过 [Microsoft Graph API 元数据](https://developer.microsoft.com/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据，则可以使用[扩展属性及其 REST API](extended-properties-overview.md)。 若要确认元数据公开了哪些属性，请访问 [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

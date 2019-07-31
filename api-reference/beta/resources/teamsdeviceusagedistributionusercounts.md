@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d398782cef79cdf92bc56502f7c6cbf1bcdee99d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1842d2edc9e527d577b6a44e61443018f8309c17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553608"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007611"
 ---
 # <a name="teamsdeviceusagedistributionusercounts-resource-type"></a>teamsDeviceUsageDistributionUserCounts 资源类型
 
@@ -17,7 +18,7 @@ ms.locfileid: "32553608"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | web               | Int64  |
 | windowsPhone      | Int64  |
 | androidPhone      | Int64  |

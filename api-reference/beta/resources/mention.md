@@ -4,12 +4,13 @@ description: 表示基于人员的电子邮件地址的人员通知。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6c182ad015882a0e34289efbecb4dbcfd1cb8369
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342315"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009725"
 ---
 # <a name="mention-resource-type"></a>提及资源类型
 
@@ -23,7 +24,7 @@ ms.locfileid: "33342315"
 
 允许在邮件中使用应用程序集和获取提及的机制启用轻量通知, 其中提出提及的用户可以保留在现有上下文中 (例如, 撰写邮件正文), 而应用程序会设置基础**提及**属性. 提到的`GET` `$filter`人员可以通过或`$expand`查询参数轻松了解是否以及在请求中提及的情况。  
 
-例如, 在 outlook 邮件客户端中, 当用户在撰写`@`邮件时键入时, Outlook 允许用户选择或输入名称来完成 @-提及。 Outlook 在创建和发送邮件或事件之前设置**提及**属性。 Outlook 还使用`GET`与`$filter`和`$expand`的操作, 以让登录用户查找提及用户的邮件, 提醒用户执行操作项目或讨论, 这样可以更快地响应。
+例如, 在 Outlook 邮件客户端中, 当用户在撰写`@`邮件时键入时, Outlook 允许用户选择或输入名称来完成 @-提及。 Outlook 在创建和发送邮件或事件之前设置**提及**属性。 Outlook 还使用`GET`与`$filter`和`$expand`的操作, 以让登录用户查找提及用户的邮件, 提醒用户执行操作项目或讨论, 这样可以更快地响应。
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -75,8 +76,8 @@ ms.locfileid: "33342315"
 |:---------------|:--------|:----------|
 |[Post](../api/user-sendmail.md#request-2)和 send | 无 | 创建并将提及作为新邮件的一部分发送。|
 |[发布](../api/user-post-messages.md#request-2)到新草稿 | 包含一个或多个**提及**对象的[邮件](../resources/message.md)。 | 创建新邮件的草稿并包含一个或多个**提及**的对象。|
-|[获取](../api/user-list-messages.md#request-2)涉及我的邮件 | [邮件](../resources/message.md)集合 | 获取已登录用户邮箱中的所有邮件, 其中包含此用户的**提及**。|
-|[获取](../api/message-get.md#request-2)邮件及其提及内容 | [邮件](../resources/message.md)集合 | 获取邮件并展开邮件中每个**提及**的详细信息。|
+|[获取](../api/user-list-messages.md#request-2)涉及我的邮件 | [message](../resources/message.md) 集合 | 获取已登录用户邮箱中的所有邮件, 其中包含此用户的**提及**。|
+|[获取](../api/message-get.md#request-2)邮件及其提及内容 | [message](../resources/message.md) 集合 | 获取邮件并展开邮件中每个**提及**的详细信息。|
 |[删除](../api/message-delete.md#request-2)提及 | 无 |在已登录用户的邮箱中删除指定邮件中指定的提及项。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

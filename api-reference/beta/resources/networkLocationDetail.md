@@ -2,12 +2,15 @@
 title: networkLocationDetail 资源类型
 description: 指示与网络位置相关联的详细信息。 .
 localization_priority: Normal
-ms.openlocfilehash: c4a5323099258d9670b970b1bb85bd0d01f3cf8d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3b7e12a87889909737cac9a52fadf64231f7f2a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342175"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009606"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail 资源类型
 指示与网络位置相关联的详细信息。
@@ -18,7 +21,7 @@ ms.locfileid: "33342175"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |网络|网络|提供网络的类型。 可能的值为`intranet`、 `extranet` `namedNetwork`、和`trusted`。|
-|networkNames|String 集合|网络的名称。|
+|networkNames|String collection|网络的名称。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

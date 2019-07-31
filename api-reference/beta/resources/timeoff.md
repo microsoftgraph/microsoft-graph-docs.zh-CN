@@ -4,12 +4,13 @@ description: 计划中的非工作单位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 060d155b713b46c36dc5c3c4eed433142822857d
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: resourcePageType_
+ms.openlocfilehash: 8c7d792b834125bdfb8a109c85b2c1f45b18230b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537028"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007653"
 ---
 # <a name="timeoff-resource-type"></a>timeOff 资源类型
 

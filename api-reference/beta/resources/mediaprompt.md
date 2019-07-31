@@ -4,12 +4,13 @@ description: MediaPrompt 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd2a700298c6f8163e3162e244f66468e1a94e7c
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: b8824a6fb2dcef69568821c251d0b44fa3d2edf7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932483"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009781"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 

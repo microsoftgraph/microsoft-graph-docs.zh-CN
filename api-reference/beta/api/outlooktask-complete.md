@@ -4,12 +4,13 @@ description: '完成将**completedDateTime**属性设置为当前日期的 Outlo
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c1d1fb36f94c2948cd2430e07f35c682b0608962
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: afa90b4217aa39cef327c58dbe5216d173dff4f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338048"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995508"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: 完成
 
@@ -19,7 +20,7 @@ ms.locfileid: "33338048"
 
 如果要在定期系列中完成某项任务, 则在响应中, 任务集合将包含系列中已完成的任务以及系列中的下一个任务。
 
-**completedDateTime**属性表示任务完成时的日期。 默认情况下, **completedDateTime**的时间部分设置为午夜 UTC。
+**CompletedDateTime**属性表示任务完成时的日期。 默认情况下, **completedDateTime**的时间部分设置为午夜 UTC。
 
 默认情况下, 此操作 (以及 POST、GET 和 PATCH 任务操作) 返回 UTC 格式的与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 

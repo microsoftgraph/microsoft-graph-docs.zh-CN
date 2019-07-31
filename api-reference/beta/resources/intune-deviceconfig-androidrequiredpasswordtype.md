@@ -4,12 +4,13 @@ description: Android 必需的密码类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2cfbf31bc2c263031e2e850e4caf479abb325ec
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f2377942f5a8dd0a57b0822a1cb9973005e6f321
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011720"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 

@@ -4,12 +4,13 @@ description: 创建新的 remoteAssistancePartner 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdfacf3dca9f5a61d3bbc3ad07b69f3d403112cd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3010e2834b4f4099cad4e33e19143aa7894631fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989656"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995599"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 

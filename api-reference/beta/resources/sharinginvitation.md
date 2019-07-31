@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: SharingInvitation 资源将与邀请相关的数据项分组到一个单一结构中。
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 136f35bc47e304a8dc844a9ee4ac86cd49c8928f
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: eebfa17a08918ec3ac08700577921b1037761086
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639155"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008332"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 

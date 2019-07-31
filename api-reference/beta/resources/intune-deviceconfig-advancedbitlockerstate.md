@@ -4,12 +4,13 @@ description: 高级 BitLocker 状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff590f99d019ec62c0bc08f9dd6b4e34bd78b1f8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 8916392d2870aa7f6279b757487c5a67ac8b99d8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965792"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011902"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 

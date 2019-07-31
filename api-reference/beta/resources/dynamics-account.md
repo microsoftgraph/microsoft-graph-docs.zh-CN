@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4252c20e9d11f67a6de40871b1649a165cbd787c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cd42177d4886793adedc222cb360a2b3e89faa7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012686"
 ---
 # <a name="accounts-resource-type"></a>帐户资源类型
 表示 Dynamics 365 Business Central 中的 account 对象。
@@ -28,9 +29,9 @@ ms.locfileid: "32507572"
 |id|GUID|帐户的唯一 ID。|
 |number|字符串, 最大大小为20|指定 G/L 帐号的号码。|
 |displayName|字符串, 最大大小为50|指定 G/L 帐户的名称。|
-|category|字符串, 最大大小为20|指定 G/L 帐户的类别。|
+|“类别”|字符串, 最大大小为20|指定 G/L 帐户的类别。|
 |子类别|字符串, 最大大小为80|指定 G/L 帐户的帐户类别的子类别。|
-|堵塞|布尔|指定无法将条目投递到 G/L 帐户。 **如果为 True** , 则表示帐户被阻止, 不允许进行发布。|
+|堵塞|boolean|指定无法将条目投递到 G/L 帐户。 **如果为 True** , 则表示帐户被阻止, 不允许进行发布。|
 |lastModifiedDateTime|datetime|帐户修改后的最后一个日期/时间。|
 
 

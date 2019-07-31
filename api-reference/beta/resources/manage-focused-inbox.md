@@ -2,12 +2,15 @@
 title: 管理重点收件箱
 description: '重点收件箱允许您查看收件箱`Focused`的选项卡中的重要邮件, 以及`Other`选项卡中的其余收件箱邮件。分类系统 '
 localization_priority: Normal
-ms.openlocfilehash: 5f4493e45038e12ed7a4459220d568ee647a5388
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 98b89140028d0deeaec674dcc124d39fa72a1cd9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342641"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009809"
 ---
 # <a name="manage-focused-inbox"></a>管理重点收件箱
 

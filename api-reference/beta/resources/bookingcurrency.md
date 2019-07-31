@@ -4,12 +4,13 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6ab74cff24e1f575166f6672523ecc5d94bc1826
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f7b12f8ac48457ed0ea36c2fec2aa39be2ff7a01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328225"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013113"
 ---
 # <a name="bookingcurrency-resource-type"></a>bookingCurrency 资源类型
 

@@ -4,12 +4,13 @@ description: 描述 teamsAsyncOperation 的当前状态。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bd44b7e1feabfba75edaa9bbeb88f1f0ed7a00f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 35975d122adf6411afc6fe4c382d1ff46b41e263
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345740"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007681"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>teamsAsyncOperationStatus 枚举类型
 

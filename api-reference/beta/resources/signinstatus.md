@@ -2,12 +2,15 @@
 title: signInStatus 资源类型
 description: 提供登录的登录状态 (成功或失败)
 localization_priority: Normal
-ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d336e226b2855687da0aae889afd9d92141c895c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008304"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus 资源类型
 提供登录的登录状态 (成功或失败)

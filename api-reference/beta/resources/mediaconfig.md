@@ -4,12 +4,13 @@ description: 用于连接到呼叫的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: aa8ec08ce5f4092a8f3d8c89af4a405d3a5c347d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4d00470d517c4d701a028a1911efe02a6f441639
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009774"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 

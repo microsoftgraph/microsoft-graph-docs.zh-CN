@@ -1,21 +1,22 @@
 ---
 title: plannerFavoritePlanReference 资源类型
-description: '**plannerFavoritePlanReference**资源类型代表对已标记为用户收藏的 plannerPlan 的引用。 '
+description: '**PlannerFavoritePlanReference**资源类型代表对已标记为用户收藏的 plannerPlan 的引用。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 239376a9d1cb8a761cc8f479ff600519b01effcb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 07803375ca31162f0f7e392d81edb83ab2bd6da3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009067"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>plannerFavoritePlanReference 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerFavoritePlanReference**资源类型代表对已标记为用户收藏的[plannerPlan](plannerplan.md)的引用。 客户端应注意, **plannerFavoritePlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
+**PlannerFavoritePlanReference**资源类型代表对已标记为用户收藏的[plannerPlan](plannerplan.md)的引用。 客户端应注意, **plannerFavoritePlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
 
 我们建议客户端在存在差异时通知用户, 并将这些条目保持为最新。
 

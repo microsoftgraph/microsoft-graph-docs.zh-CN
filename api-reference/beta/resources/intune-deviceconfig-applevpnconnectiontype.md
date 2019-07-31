@@ -4,12 +4,13 @@ description: Apple VPN 连接类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f394f2d155ffb272b3b11f55eb8a09cafac63f26
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: ecf7a5c439ef66da173307455a445915226b74f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987654"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011510"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 

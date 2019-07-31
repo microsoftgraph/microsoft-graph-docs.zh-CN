@@ -2,12 +2,15 @@
 title: 收件人资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 367b796f46dce0f68e8077f7eba93ef0216279f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c94bde1d76155a6aa3c2651cfe7106f70e32b78d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343953"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008787"
 ---
 # <a name="recipients-resource-type"></a>收件人资源类型
 
@@ -38,7 +41,7 @@ ms.locfileid: "33343953"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |alias|String||
-|email|字符串||
+|email|String||
 |objectId|String||
 |permissionIdentityType|String||
 

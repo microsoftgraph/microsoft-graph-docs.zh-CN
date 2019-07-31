@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: itemActivity 上存在 VersionAction 资源指示活动导致要创建一个新版本。
 ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
-ms.openlocfilehash: 59977b4ad84615f72dc008d671d64c62a2f4960f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8eeec313ac4ed901d7552e2ad65d02edcaa821cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345049"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007394"
 ---
 # <a name="versionaction-resource-type"></a>VersionAction 资源类型
 

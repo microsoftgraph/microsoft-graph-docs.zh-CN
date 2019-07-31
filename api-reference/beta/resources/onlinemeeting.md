@@ -4,12 +4,13 @@ description: 捕获有关会议的信息, 包括联接 URL、与会者列表和�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 698058fa918462448fcd115d5573e13ada49162e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cd3615f82a4e88d6dc0b07c12ba72e39726e755f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341839"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009354"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 

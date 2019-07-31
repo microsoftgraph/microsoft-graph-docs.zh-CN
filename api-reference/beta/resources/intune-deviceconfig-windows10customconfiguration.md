@@ -4,12 +4,13 @@ description: 本主题提供由 windows10CustomConfiguration 资源公开的已�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4770c265eb416adeb312ec42407161faff19e4af
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4af73a97c2b8b3c2dc282800a9ea85fbc677cebc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992687"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011349"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>windows10CustomConfiguration 资源类型
 

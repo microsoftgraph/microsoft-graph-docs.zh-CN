@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03b11c83afe45966fe8a41597d41bf01605fb331
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 27c2c1153b3f7da6229fe625d46cc61ef65f671a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986233"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010348"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 枚举类型
 

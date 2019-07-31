@@ -4,12 +4,13 @@ description: OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: e63a03b679460f318747f2a81dac9aa859746a9f
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.openlocfilehash: 76d4d8daf17fa6c953ad7bf727c8b6481f7dc8b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009592"
 ---
 # <a name="notebook-resource-type"></a>笔记本资源类型
 

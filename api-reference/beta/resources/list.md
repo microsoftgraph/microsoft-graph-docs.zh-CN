@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: list 资源表示 site 中的列表。
 ms.date: 09/11/2017
 title: List
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5e078c79603235059cbe326c850e51dfa33d2f8e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b79172049278758c77ac620f00c391d52633792b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345331"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009991"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -94,7 +95,7 @@ ms.locfileid: "33345331"
 
 以下属性继承自 ** [baseItem][]**。
 
-| 属性名称            | 类型             | 说明
+| 属性名            | 类型             | 说明
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | 项的唯一标识符。只读。
 | **名称**                 | string           | 项目名称。

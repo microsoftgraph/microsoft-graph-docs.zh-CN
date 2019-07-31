@@ -4,12 +4,13 @@ description: 充当所有设备管理功能的容器的单例实体。
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 7dfa6ead3de28daa0a5e3f4269578028dbc6b766
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 47ee6458d8c045ff99ce244a43e3058d040093fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011972"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration 资源类型
 

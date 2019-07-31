@@ -4,12 +4,13 @@ description: 表示 ADMX 文本元素。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d16d963aa3b3653fee0533befcc7787d636d3fda
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: af27abb9672a65c43ab2892d0dfe81c3b9cafea4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964813"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010922"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>groupPolicyPresentationText 资源类型
 

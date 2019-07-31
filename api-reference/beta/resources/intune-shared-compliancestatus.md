@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68e0d61f71f113582d0a008aa3f10956803f25ff
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 6b468d07b633def38a30e5d793290a7fd336205d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010544"
 ---
 # <a name="compliancestatus-enum-type"></a>complianceStatus 枚举类型
 

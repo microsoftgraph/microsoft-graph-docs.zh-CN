@@ -2,12 +2,15 @@
 title: operationError 资源类型
 description: 描述 teamsAsyncOperation 中的错误。
 localization_priority: Normal
-ms.openlocfilehash: 957f1ed2960c33f2e7bc07f79e7f749a3b9f15a5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 43486d21f7c8f852a965c5378688f826c26ac58b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009298"
 ---
 # <a name="operationerror-resource-type"></a>operationError 资源类型
 

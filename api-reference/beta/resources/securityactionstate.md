@@ -4,12 +4,13 @@ description: 表示 securityAction 状态更改的历史记录。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8f789dab438316f16b9c2607947fa08b7fcefdc2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e3efd29e156b6e0346574c74fad2a30a39ec7131
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343394"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008507"
 ---
 # <a name="securityactionstate-resource-type"></a>securityActionState 资源类型
 

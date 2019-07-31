@@ -1,21 +1,22 @@
 ---
 title: userIdentity 类型
-description: '对于 azure ad 访问审核, 此类型表示访问审核的审阅者的 Azure ad 用户标识。  '
+description: '对于 Azure AD 访问审核, 此类型表示访问审核的审阅者的 Azure AD 用户标识。  '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 554aa9d38b4635ab3410fd95441b5c5045a1f1f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 21342efd10f5e6f66db795a781eb3f0e333975a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345045"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007450"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对于 azure ad[访问审核](accessreviews-root.md), 此类型表示访问评审的创建者或审阅者的 Azure ad 用户标识。  
+对于 Azure AD[访问审核](accessreviews-root.md), 此类型表示访问评审的创建者或审阅者的 Azure ad 用户标识。  
 在 Azure AD 审核日志的上下文中, 这表示已启动或受审核活动影响的用户信息。
 
 此类型继承自[标识](identity.md), 并且具有一个附加属性 (用户的用户主体名称)。
@@ -36,7 +37,7 @@ ms.locfileid: "33345045"
 
 在某些情况下，角色唯一标识符可能不可用。在这种情况下，将返回身份的 **displayName** 属性，但 **id** 属性将从资源中丢失。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。
 

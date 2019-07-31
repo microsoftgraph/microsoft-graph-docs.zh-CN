@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <decription>
 ms.date: 09/14/2017
 title: RestoreAction
 localization_priority: Normal
-ms.openlocfilehash: fa92c4667d3421420b203cfc158c94d1b4cf78dd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 88adfd244e2f8460d6749333cc64a80bf4d47361
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343582"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008689"
 ---
 # <a name="restoreaction-resource-type"></a>RestoreAction 资源类型
 

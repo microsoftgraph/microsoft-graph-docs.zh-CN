@@ -3,12 +3,14 @@ title: sharePointActivityUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9656b39572eac5b6474dd7884eb7d1d2edb17310
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 97fbcb8c611bd497a7bf6613a5bde53738aff5e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583947"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008451"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>sharePointActivityUserCounts 资源类型
 
@@ -16,13 +18,13 @@ ms.locfileid: "32583947"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日期   |
 | visitedPage       | Int64  |
 | viewedOrEdited    | Int64  |
 | 保持            | Int64  |
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日期   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

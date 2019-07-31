@@ -4,12 +4,13 @@ description: 设备类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c1b03a792e4191d24908e38b27e7388b3edf416
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 8425ca78c4d978ce085f3cab56fd8e1e7c6c06bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010460"
 ---
 # <a name="devicetype-enum-type"></a>deviceType 枚举类型
 

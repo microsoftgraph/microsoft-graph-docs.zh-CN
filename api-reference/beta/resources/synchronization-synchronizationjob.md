@@ -2,14 +2,15 @@
 title: synchronizationJob 资源类型
 description: 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分, 您需要授予在目标目录中读取和写入对象的权限, 并自定义作业的同步架构。
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19f30dd20d313d5ab7a46dd9368d391b83ee1993
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: a311c8ae7618778c2dbd8cdbc9a5b30af254eae4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620729"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007793"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 

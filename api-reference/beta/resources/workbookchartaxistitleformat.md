@@ -4,12 +4,13 @@ description: 表示图表坐标轴标题格式。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c98cfee5c776f761c4e84479bb6a4b3f2814bb06
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e992f083bd063ea7708f0aec4261ec04cbcc8539
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348553"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007282"
 ---
 # <a name="workbookchartaxistitleformat-resource-type"></a>workbookChartAxisTitleFormat 资源类型
 

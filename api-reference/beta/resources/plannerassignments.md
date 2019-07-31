@@ -1,25 +1,26 @@
 ---
 title: plannerAssignments 资源类型
-description: '**plannerAssignments**资源表示 plannerTask 资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称 '
+description: '**PlannerAssignments**资源表示 plannerTask 资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2f26bab4eb69a79f4bd18f80128e4445217a1ae7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f49d31f6a46dce0af92cdec3ce76388d1c749276
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009095"
 ---
 # <a name="plannerassignments-resource-type"></a>plannerAssignments 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerAssignments**资源表示[plannerTask](plannertask.md)资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称都是分配给任务的用户对象的 ID。 可以将用户分配给使用其 ID 命名的新属性的任务, 并将[plannerassignment](plannerassignment.md)对象的 orderHint 属性填充为值。 通过将以其 ID 命名的 bookmark 设置为 null, 可以从任务中取消分配工作负责人。
+**PlannerAssignments**资源表示[plannerTask](plannertask.md)资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称都是分配给任务的用户对象的 ID。 可以将用户分配给使用其 ID 命名的新属性的任务, 并将[plannerassignment](plannerassignment.md)对象的 orderHint 属性填充为值。 通过将以其 ID 命名的 bookmark 设置为 null, 可以从任务中取消分配工作负责人。
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 但在这种情况下, 客户端必须提供指定用户的 id 作为属性名称。 必须将属性设置为**plannerAssignment**对象, 才能创建或修改工作负责人, 并为 null 以删除它们。
+可由客户端定义打开类型的属性。 但在这种情况下, 客户端必须提供指定用户的 Id 作为属性名称。 必须将属性设置为**plannerAssignment**对象, 才能创建或修改工作负责人, 并为 null 以删除它们。
 
 示例：
 

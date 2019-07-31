@@ -1,21 +1,22 @@
 ---
 title: tiIndicator 资源类型
-description: 威胁智能 (TI) 指标表示用于标识恶意活动的数据。 如果您的组织使用威胁指示器 (通过生成自己的、从开放源源获取、与合作伙伴组织或社区共享, 或购买数据源), 则通常需要在各种安全性中使用这些指示器用于匹配日志数据的工具。 Graph security tiIndicators 实体允许您将威胁指示器上载到 Microsoft 安全工具, 以执行允许、阻止或警报等操作。
+description: 威胁智能 (TI) 指标表示用于标识恶意活动的数据。 如果您的组织使用威胁指示器 (通过生成自己的、从开放源源获取、与合作伙伴组织或社区共享, 或购买数据源), 则通常需要在各种安全性中使用这些指示器用于匹配日志数据的工具。 Graph Security tiIndicators 实体允许您将威胁指示器上载到 Microsoft 安全工具, 以执行允许、阻止或警报等操作。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f85883394f7218a08f923b29304d2ad22432bb86
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e0e9169e691434ef6e7b92bf7fb07daf0c912aa8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342012"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007639"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-威胁智能 (TI) 指标表示用于标识恶意活动的数据。 如果您的组织使用威胁指示器, 可以通过生成自己的、从开放源源中获取它们、与合作伙伴组织或社区共享, 也可以通过购买数据源进行通信, 因此您可能需要在各种安全性中使用这些指示器用于匹配日志数据的工具。 microsoft Graph Security API **tiIndicators**实体允许您将威胁指示器上载到 Microsoft 安全工具, 以执行允许、阻止或警报等操作。
+威胁智能 (TI) 指标表示用于标识恶意活动的数据。 如果您的组织使用威胁指示器, 可以通过生成自己的、从开放源源中获取它们、与合作伙伴组织或社区共享, 也可以通过购买数据源进行通信, 因此您可能需要在各种安全性中使用这些指示器用于匹配日志数据的工具。 Microsoft Graph Security API **tiIndicators**实体允许您将威胁指示器上载到 Microsoft 安全工具, 以执行允许、阻止或警报等操作。
 
 通过**tiIndicators**上载的威胁指示器将与 Microsoft 威胁情报结合使用, 以为您的组织提供自定义安全解决方案。 使用**tiIndicators**实体时, 您可以指定要通过**targetProduct**属性使用指示器的 Microsoft 安全解决方案, 并指定安全解决方案应对其执行的操作 (允许、阻止或警告)。通过**action**属性应用指示器。
 
@@ -38,43 +39,43 @@ ms.locfileid: "33342012"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
-|activityGroupNames|String 集合|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
+|activityGroupNames|String collection|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
-|azureTenantId|String| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
+|azureTenantId|字符串| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
 |confidence|Int32|一个整数, 表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0– 100, 100 的值为最高。|
 |说明|String| 由指示器表示的威胁的简短说明 (100 个字符或更少)。 **必需。**|
 |diamondModel|[diamondModel](#diamondmodel-values)|此指示器所在的菱形模型的面积。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure`、`victim`。|
-|expirationDateTime|DateTimeOffset| 指示指示器过期时间的日期/时间字符串。 所有指标都必须具有到期日期, 以避免系统中的陈旧指示器持久化。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
+|expirationDateTime|DateTimeOffset| 指示指示器过期时间的日期/时间字符串。 所有指标都必须具有到期日期, 以避免系统中的陈旧指示器持久化。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
 |externalId|String| 将指示器与指示器提供程序的系统 (例如外键) 相结合的标识号。 |
-|id|字符串|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
+|id|String|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
 |ingestedDateTime|DateTimeOffset| 当指标为引入时由系统进行标记。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |isActive|Boolean| 用于停用系统中的指示器。 默认情况下, 提交的任何指示器都设置为活动状态。 但是, 提供程序可能会将此设置为 "False" 的现有指示器提交到系统中停用指示器。|
 |killChain|[killChain](#killchain-values)集合|一个 JSON 字符串数组, 用于描述此指示器针对终止链上的哪个点或点。 有关确切值, 请参阅下面的 "killChain 值"。 |
 |knownFalsePositives|String|指示符可能导致误报的情况。 这应该是可读的文本。|
 |lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称 (如果存在)。 如果所有可能都可以通过 Windows Defender 安全智能[威胁百科全书](https://www.microsoft.com/wdsi/threats)找到, microsoft 将首选 microsoft 恶意软件系列名称。|
+|malwareFamilyNames|String collection|与指示器关联的恶意软件系列名称 (如果存在)。 如果所有可能都可以通过 Windows Defender 安全智能[威胁百科全书](https://www.microsoft.com/wdsi/threats)找到, microsoft 将首选 microsoft 恶意软件系列名称。|
 |passiveOnly|Boolean |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true", 则安全工具将不会通知最终用户已发生 "命中"。 通常情况下, 这通常被视为审核或静默模式, 安全产品只需记录已发生的匹配项, 但不会执行该操作。 默认值为 false。 |
-|度|Int32| 一个整数, 表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0– 5, 其中5为最严重, 0 表示根本不严重。 默认值为3。 |
-|tags|String 集合|存储任意标记/关键字的字符串的 JSON 数组。 |
-|targetProduct|String|一个字符串值, 表示应应用指标的单个安全产品。 可接受的值`Azure Sentinel`为:。 **必需**|
+|severity|Int32| 一个整数, 表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0– 5, 其中5为最严重, 0 表示根本不严重。 默认值为3。 |
+|tags|String collection|存储任意标记/关键字的字符串的 JSON 数组。 |
+|targetProduct|String|一个字符串值, 表示应应用指标的单个安全产品。 可接受的值`Azure Sentinel`为:。 **Required**|
 |threatType|[threatType](#threattype-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。 **必需。**|
 
-### <a name="indicator-observables---email"></a>指标 observable-电子邮件
+### <a name="indicator-observables---email"></a>指标 Observable-电子邮件
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |emailEncoding|String|电子邮件中使用的文本编码的类型。|
 |emailLanguage|String|电子邮件的语言。|
 |emailRecipient|String|收件人电子邮件地址。|
-|emailSenderAddress|String|attacker& # 124; 牺牲品的电子邮件地址。|
-|emailSenderName|String|attacker& # 124; 牺牲品的显示名称。|
+|emailSenderAddress|String|攻击者&#124;受害者的电子邮件地址。|
+|emailSenderName|String|攻击者的显示名称&#124;牺牲品。|
 |emailSourceDomain|String|电子邮件中使用的域。|
 |emailSourceIpAddress|String|电子邮件的源 IP 地址。|
 |emailSubject|String|电子邮件的主题行。|
 |emailXMailer|String|在电子邮件中使用的邮件散播值。|
 
-### <a name="indicator-observables---file"></a>指标 observable-文件
+### <a name="indicator-observables---file"></a>指标 Observable-文件
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -89,7 +90,7 @@ ms.locfileid: "33342012"
 |fileSize|Int64|文件大小 (以字节为单位)。|
 |类型|String| 文件类型的文本说明。 例如, "Word Document" 或 "Binary"。|
 
-### <a name="indicator-observables---network"></a>指标 observable-网络
+### <a name="indicator-observables---network"></a>指标 Observable-网络
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -129,7 +130,7 @@ ms.locfileid: "33342012"
 
 | 成员 | 说明 |
 |:-------|:------------|
-|Actions|Indcates 攻击者利用受危害的系统执行诸如分布式拒绝服务攻击之类的操作。|
+|操作|Indcates 攻击者利用受危害的系统执行诸如分布式拒绝服务攻击之类的操作。|
 |C2|表示操纵受损系统时所使用的控制通道。|
 |Delivery|将攻击代码分发给受害者的过程 (例如, USB、电子邮件、网站)。|
 |具备|利用漏洞的攻击代码 (例如, 代码执行)。|
@@ -142,7 +143,7 @@ ms.locfileid: "33342012"
 | 成员 | 说明 |
 |:-------|:------------|
 |僵尸网络| 指标对僵尸网络节点/成员进行了详细说明。|
-|C2|指标对僵尸网络的命令 & 控件节点进行了详细说明。|
+|C2|指示器详细介绍了僵尸网络的一个命令 & 控件节点。|
 |CryptoMining|涉及此网络地址/URL 的流量是 CyrptoMining/资源滥用的指示。|
 |Darknet|指标是 Darknet 节点/网络的指标。
 |DDoS|与活动或即将到来的 DDoS 市场活动相关的指标。|
@@ -164,7 +165,7 @@ ms.locfileid: "33342012"
 |亮| 共享作用域: 受限。 这是指示器的默认设置, 并且仅将共享限制为 "需要已知" 为1的服务和实现威胁智能2的服务的服务和服务操作员, 这些客户端的系统表现出与指标一致的行为。|
 |红色| 共享作用域: 个人。 这些指标仅可直接共享, 最好是人员。 通常情况下, TLP 红色指示器不会引入, 因为其预定义限制。 如果提交了 TLP 红色指示器, 则还应将 "PassiveOnly" 属性设置`True`为。 |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无。
 

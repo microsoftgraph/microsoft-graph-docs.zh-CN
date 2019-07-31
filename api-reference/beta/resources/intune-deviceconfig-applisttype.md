@@ -4,12 +4,13 @@ description: 合规性应用程序列表的可能值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5df56b14d3c5416a04245ffbccd0b3b887266bde
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: dca4f368f63296ed2fe751080fcce9c51549b280
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011489"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 

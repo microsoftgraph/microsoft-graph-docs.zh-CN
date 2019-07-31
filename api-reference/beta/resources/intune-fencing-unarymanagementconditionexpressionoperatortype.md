@@ -4,12 +4,13 @@ description: 一元管理条件表达式支持的运算符
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2d07531c0385e2b7e5cf4da79da8463cc4009e4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0fb68d441819614f264db915acb0ed178380dd32
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011041"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>unaryManagementConditionExpressionOperatorType 枚举类型
 

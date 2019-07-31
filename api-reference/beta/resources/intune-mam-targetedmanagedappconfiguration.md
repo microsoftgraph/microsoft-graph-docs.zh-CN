@@ -4,12 +4,13 @@ description: 用于将一组自定义设置按原样提供给目标安全组中�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0a43f257e2fd12542ea7d0c1f33a8f2d5ad1b28
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4fc64145d1c821360984656450dc82cc7e44efeb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010852"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>targetedManagedAppConfiguration 资源类型
 

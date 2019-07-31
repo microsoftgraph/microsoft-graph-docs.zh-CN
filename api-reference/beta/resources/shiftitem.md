@@ -1,15 +1,16 @@
 ---
 title: shiftItem 资源类型
-description: shiftItem 代表班次的一个版本。
+description: ShiftItem 代表班次的一个版本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fd5b3d224e60fc3f21b4d484952c7a2643b02407
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: df012df0ec563a29f15e40d3fefbcd1535dc5211
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343036"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008341"
 ---
 # <a name="shiftitem-resource-type"></a>shiftItem 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "33343036"
 | displayName               | string                  | 的名称`shiftItem`。 |
 | startDateTime               | DateTimeOffset                  | 的开始日期和时间`shiftItem`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
 | endDateTime               | DateTimeOffset                 | 的结束日期和时间`shiftItem`。 必需。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| theme | scheduleEntityTheme   |  支持的颜色: 白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
+| theme | scheduleEntityTheme   |  支持的颜色: 白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow. |
 | activities    | [shiftActivity](shiftactivity.md)集合   | 班次的增量部分, 可包含员工在班次中的时间和地点的详细信息。 例如, 工作分配或计划工间休息或午餐。 此为必需属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

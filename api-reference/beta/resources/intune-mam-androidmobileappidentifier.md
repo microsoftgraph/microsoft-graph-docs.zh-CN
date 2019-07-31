@@ -4,12 +4,13 @@ description: Android 应用的标识符。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e49b6a3380600bb30e9203b2cf60400b68159e0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9000c2989dc9b8e41c1f9aa36a05c29fc7a86cfe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994235"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010903"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier 资源类型
 

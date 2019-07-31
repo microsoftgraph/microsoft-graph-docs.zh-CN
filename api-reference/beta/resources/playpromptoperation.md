@@ -4,12 +4,13 @@ description: 用于获取 playPrompt 操作的结果的 playPrompt 操作。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 663675bb895d452c9ad50c89f22f1a51efca20a9
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: resourcePageType
+ms.openlocfilehash: b79fa774c112433b09d75eb04f16823f2dad9b6c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536993"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008976"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 

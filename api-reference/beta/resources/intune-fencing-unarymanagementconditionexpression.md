@@ -4,12 +4,13 @@ description: 使用一元运算计算的管理条件表达式。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5eb5e7ed67b0731cc795ab791c2463294764ead6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 155386e63a5d1f28a3cbe0ed35b9c5f659389bc6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011062"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression 资源类型
 

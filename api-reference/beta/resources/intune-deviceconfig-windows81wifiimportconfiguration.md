@@ -4,12 +4,13 @@ description: Windows 8.1 + Wi-fi 导入配置。 通过配置此配置文件, �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 685e0c744e1031e02aea7dd2f2393972e09cb269
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 998979c3a8e12657da5c13f97309a8c07a698117
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994207"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011286"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>windows81WifiImportConfiguration 资源类型
 

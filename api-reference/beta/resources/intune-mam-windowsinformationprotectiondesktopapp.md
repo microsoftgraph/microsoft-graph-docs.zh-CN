@@ -4,12 +4,13 @@ description: 用于 Windows 信息保护的桌面应用
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cbb67edbbe38687e06c5952399a6d5bf02b5f56
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fcccbc79d09221a51613b3c6150d3916ef932bc1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994557"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010824"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp 资源类型
 

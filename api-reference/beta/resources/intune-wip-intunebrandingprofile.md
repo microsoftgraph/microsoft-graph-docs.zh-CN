@@ -4,12 +4,13 @@ description: 此实体包含在自定义公司门户应用程序的租户级别�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2beeedc1481a4ac01277b31a310fc7f9f30c261a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9e922634ec08e1fab412c160d2d8fe7f45d0dde5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010152"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 

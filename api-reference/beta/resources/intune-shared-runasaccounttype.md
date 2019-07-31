@@ -1,15 +1,16 @@
 ---
 title: runAsAccountType 枚举类型
 description: 介绍了适用于 Intune 的 Microsoft Graph API 的 runAsAccountType 枚举, 该枚举支持多个工作流。
-author: rolyon
+author: tfitzmac
 localization_priority: Normal
+doc_type: enumPageType
 ms.prod: Intune
-ms.openlocfilehash: d2f74ef12f7d04e36bc45edd5e55e7db7d8ecee5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d56a8eb28194abe939a9d89269533f2737c981a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939719"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010362"
 ---
 # <a name="runasaccounttype-enum-type"></a>runAsAccountType 枚举类型
 
