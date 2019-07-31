@@ -4,31 +4,32 @@ description: 更新 organization 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89afccfa33761747c779bad14230dd953965a4e5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 46ee373e5b1d15ea6323f959ad87ba7dcea99c90
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980717"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980329"
 ---
-# <a name="update-organization"></a><span data-ttu-id="a4d43-103">更新组织</span><span class="sxs-lookup"><span data-stu-id="a4d43-103">Update organization</span></span>
+# <a name="update-organization"></a><span data-ttu-id="69282-103">更新组织</span><span class="sxs-lookup"><span data-stu-id="69282-103">Update organization</span></span>
 
-> <span data-ttu-id="a4d43-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a4d43-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="69282-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="69282-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a4d43-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a4d43-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="69282-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="69282-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a4d43-106">更新 [organization](../resources/intune-onboarding-organization.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a4d43-106">Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.</span></span>
+<span data-ttu-id="69282-106">更新 [organization](../resources/intune-onboarding-organization.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="69282-106">Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a4d43-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a4d43-107">Prerequisites</span></span>
-<span data-ttu-id="a4d43-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a4d43-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="69282-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="69282-107">Prerequisites</span></span>
+<span data-ttu-id="69282-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="69282-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a4d43-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a4d43-110">Permission type</span></span>|<span data-ttu-id="a4d43-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a4d43-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="69282-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="69282-110">Permission type</span></span>|<span data-ttu-id="69282-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="69282-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a4d43-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a4d43-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a4d43-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4d43-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="a4d43-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a4d43-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a4d43-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a4d43-115">Not supported.</span></span>|
-|<span data-ttu-id="a4d43-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a4d43-116">Application</span></span>|<span data-ttu-id="a4d43-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a4d43-117">Not supported.</span></span>|
+|<span data-ttu-id="69282-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69282-112">Delegated (work or school account)</span></span>|<span data-ttu-id="69282-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69282-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="69282-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="69282-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="69282-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="69282-115">Not supported.</span></span>|
+|<span data-ttu-id="69282-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="69282-116">Application</span></span>|<span data-ttu-id="69282-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="69282-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a4d43-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a4d43-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69282-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69282-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +38,32 @@ ms.locfileid: "34980717"
 PATCH /organization/{organizationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a4d43-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a4d43-119">Request headers</span></span>
-|<span data-ttu-id="a4d43-120">标头</span><span class="sxs-lookup"><span data-stu-id="a4d43-120">Header</span></span>|<span data-ttu-id="a4d43-121">值</span><span class="sxs-lookup"><span data-stu-id="a4d43-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="69282-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="69282-119">Request headers</span></span>
+|<span data-ttu-id="69282-120">标头</span><span class="sxs-lookup"><span data-stu-id="69282-120">Header</span></span>|<span data-ttu-id="69282-121">值</span><span class="sxs-lookup"><span data-stu-id="69282-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a4d43-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4d43-122">Authorization</span></span>|<span data-ttu-id="a4d43-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a4d43-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a4d43-124">接受</span><span class="sxs-lookup"><span data-stu-id="a4d43-124">Accept</span></span>|<span data-ttu-id="a4d43-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a4d43-125">application/json</span></span>|
+|<span data-ttu-id="69282-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="69282-122">Authorization</span></span>|<span data-ttu-id="69282-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="69282-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="69282-124">接受</span><span class="sxs-lookup"><span data-stu-id="69282-124">Accept</span></span>|<span data-ttu-id="69282-125">application/json</span><span class="sxs-lookup"><span data-stu-id="69282-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a4d43-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a4d43-126">Request body</span></span>
-<span data-ttu-id="a4d43-127">在请求正文中，提供 [organization](../resources/intune-onboarding-organization.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a4d43-127">In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="69282-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="69282-126">Request body</span></span>
+<span data-ttu-id="69282-127">在请求正文中，提供 [organization](../resources/intune-onboarding-organization.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="69282-127">In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.</span></span>
 
-<span data-ttu-id="a4d43-128">下表显示创建 [organization](../resources/intune-onboarding-organization.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a4d43-128">The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).</span></span>
+<span data-ttu-id="69282-128">下表显示创建 [organization](../resources/intune-onboarding-organization.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="69282-128">The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).</span></span>
 
-|<span data-ttu-id="a4d43-129">属性</span><span class="sxs-lookup"><span data-stu-id="a4d43-129">Property</span></span>|<span data-ttu-id="a4d43-130">类型</span><span class="sxs-lookup"><span data-stu-id="a4d43-130">Type</span></span>|<span data-ttu-id="a4d43-131">说明</span><span class="sxs-lookup"><span data-stu-id="a4d43-131">Description</span></span>|
+|<span data-ttu-id="69282-129">属性</span><span class="sxs-lookup"><span data-stu-id="69282-129">Property</span></span>|<span data-ttu-id="69282-130">类型</span><span class="sxs-lookup"><span data-stu-id="69282-130">Type</span></span>|<span data-ttu-id="69282-131">说明</span><span class="sxs-lookup"><span data-stu-id="69282-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a4d43-132">id</span><span class="sxs-lookup"><span data-stu-id="a4d43-132">id</span></span>|<span data-ttu-id="a4d43-133">String</span><span class="sxs-lookup"><span data-stu-id="a4d43-133">String</span></span>|<span data-ttu-id="a4d43-134">对象的 GUID。</span><span class="sxs-lookup"><span data-stu-id="a4d43-134">The GUID for the object.</span></span>|
-|<span data-ttu-id="a4d43-135">mobileDeviceManagementAuthority</span><span class="sxs-lookup"><span data-stu-id="a4d43-135">mobileDeviceManagementAuthority</span></span>|[<span data-ttu-id="a4d43-136">mdmAuthority</span><span class="sxs-lookup"><span data-stu-id="a4d43-136">mdmAuthority</span></span>](../resources/intune-onboarding-mdmauthority.md)|<span data-ttu-id="a4d43-137">移动设备管理机构。</span><span class="sxs-lookup"><span data-stu-id="a4d43-137">Mobile device management authority.</span></span> <span data-ttu-id="a4d43-138">可取值为：`unknown`、`intune`、`sccm`、`office365`。</span><span class="sxs-lookup"><span data-stu-id="a4d43-138">Possible values are: `unknown`, `intune`, `sccm`, `office365`.</span></span>|
-|<span data-ttu-id="a4d43-139">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="a4d43-139">certificateConnectorSetting</span></span>|[<span data-ttu-id="a4d43-140">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="a4d43-140">certificateConnectorSetting</span></span>](../resources/intune-onboarding-certificateconnectorsetting.md)|<span data-ttu-id="a4d43-141">证书连接器设置。</span><span class="sxs-lookup"><span data-stu-id="a4d43-141">Certificate connector setting.</span></span>|
+|<span data-ttu-id="69282-132">id</span><span class="sxs-lookup"><span data-stu-id="69282-132">id</span></span>|<span data-ttu-id="69282-133">String</span><span class="sxs-lookup"><span data-stu-id="69282-133">String</span></span>|<span data-ttu-id="69282-134">对象的 GUID。</span><span class="sxs-lookup"><span data-stu-id="69282-134">The GUID for the object.</span></span>|
+|<span data-ttu-id="69282-135">mobileDeviceManagementAuthority</span><span class="sxs-lookup"><span data-stu-id="69282-135">mobileDeviceManagementAuthority</span></span>|[<span data-ttu-id="69282-136">mdmAuthority</span><span class="sxs-lookup"><span data-stu-id="69282-136">mdmAuthority</span></span>](../resources/intune-onboarding-mdmauthority.md)|<span data-ttu-id="69282-137">移动设备管理机构。</span><span class="sxs-lookup"><span data-stu-id="69282-137">Mobile device management authority.</span></span> <span data-ttu-id="69282-138">可取值为：`unknown`、`intune`、`sccm`、`office365`。</span><span class="sxs-lookup"><span data-stu-id="69282-138">Possible values are: `unknown`, `intune`, `sccm`, `office365`.</span></span>|
+|<span data-ttu-id="69282-139">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="69282-139">certificateConnectorSetting</span></span>|[<span data-ttu-id="69282-140">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="69282-140">certificateConnectorSetting</span></span>](../resources/intune-onboarding-certificateconnectorsetting.md)|<span data-ttu-id="69282-141">证书连接器设置。</span><span class="sxs-lookup"><span data-stu-id="69282-141">Certificate connector setting.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a4d43-142">响应</span><span class="sxs-lookup"><span data-stu-id="a4d43-142">Response</span></span>
-<span data-ttu-id="a4d43-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [organization](../resources/intune-onboarding-organization.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a4d43-143">If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="69282-142">响应</span><span class="sxs-lookup"><span data-stu-id="69282-142">Response</span></span>
+<span data-ttu-id="69282-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [organization](../resources/intune-onboarding-organization.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="69282-143">If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a4d43-144">示例</span><span class="sxs-lookup"><span data-stu-id="a4d43-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="69282-144">示例</span><span class="sxs-lookup"><span data-stu-id="69282-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a4d43-145">请求</span><span class="sxs-lookup"><span data-stu-id="a4d43-145">Request</span></span>
-<span data-ttu-id="a4d43-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a4d43-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="69282-145">请求</span><span class="sxs-lookup"><span data-stu-id="69282-145">Request</span></span>
+<span data-ttu-id="69282-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="69282-146">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}
 Content-type: application/json
@@ -83,8 +84,8 @@ Content-length: 492
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a4d43-147">响应</span><span class="sxs-lookup"><span data-stu-id="a4d43-147">Response</span></span>
-<span data-ttu-id="a4d43-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a4d43-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="69282-147">响应</span><span class="sxs-lookup"><span data-stu-id="69282-147">Response</span></span>
+<span data-ttu-id="69282-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="69282-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
