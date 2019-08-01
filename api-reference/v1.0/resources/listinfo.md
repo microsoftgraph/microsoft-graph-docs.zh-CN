@@ -5,24 +5,24 @@ ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9be9d0dc133c9b62a89504a79ce9da4836337cfe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: listInfo 复杂类型提供有关 list 的其他信息。
+doc_type: resourcePageType
+ms.openlocfilehash: dd6b2d892746c5aafc599b988113aefaa0b9973d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519876"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036412"
 ---
-# <a name="listinfo-resource"></a><span data-ttu-id="f90de-102">ListInfo 资源</span><span class="sxs-lookup"><span data-stu-id="f90de-102">ListInfo resource</span></span>
+# <a name="listinfo-resource"></a><span data-ttu-id="ccee5-103">ListInfo 资源</span><span class="sxs-lookup"><span data-stu-id="ccee5-103">ListInfo resource</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-<span data-ttu-id="f90de-103">**listInfo** 复杂类型提供有关 [list][] 的其他信息。</span><span class="sxs-lookup"><span data-stu-id="f90de-103">The **listInfo** complex type provides additional information about a [list][].</span></span>
+<span data-ttu-id="ccee5-104">**listInfo** 复杂类型提供有关 [list][] 的其他信息。</span><span class="sxs-lookup"><span data-stu-id="ccee5-104">The **listInfo** complex type provides additional information about a [list][].</span></span>
 
 [list]: list.md
 
-## <a name="json-representation"></a><span data-ttu-id="f90de-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f90de-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ccee5-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ccee5-106">JSON representation</span></span>
 
-<span data-ttu-id="f90de-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f90de-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ccee5-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ccee5-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,31 +39,30 @@ ms.locfileid: "32519876"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="f90de-107">属性</span><span class="sxs-lookup"><span data-stu-id="f90de-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ccee5-108">属性</span><span class="sxs-lookup"><span data-stu-id="ccee5-108">Properties</span></span>
 
-| <span data-ttu-id="f90de-108">属性名称</span><span class="sxs-lookup"><span data-stu-id="f90de-108">Property name</span></span>           | <span data-ttu-id="f90de-109">类型</span><span class="sxs-lookup"><span data-stu-id="f90de-109">Type</span></span>    | <span data-ttu-id="f90de-110">说明</span><span class="sxs-lookup"><span data-stu-id="f90de-110">Description</span></span>
+| <span data-ttu-id="ccee5-109">属性名称</span><span class="sxs-lookup"><span data-stu-id="ccee5-109">Property name</span></span>           | <span data-ttu-id="ccee5-110">类型</span><span class="sxs-lookup"><span data-stu-id="ccee5-110">Type</span></span>    | <span data-ttu-id="ccee5-111">说明</span><span class="sxs-lookup"><span data-stu-id="ccee5-111">Description</span></span>
 |:------------------------|:--------|:------------------------------------------------
-| <span data-ttu-id="f90de-111">**contentTypesEnabled**</span><span class="sxs-lookup"><span data-stu-id="f90de-111">**contentTypesEnabled**</span></span> | <span data-ttu-id="f90de-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="f90de-112">Boolean</span></span> | <span data-ttu-id="f90de-113">如果为 `true`，则表明已为此列表启用内容类型。</span><span class="sxs-lookup"><span data-stu-id="f90de-113">If `true`, indicates that content types are enabled for this list.</span></span>
-| <span data-ttu-id="f90de-114">**hidden**</span><span class="sxs-lookup"><span data-stu-id="f90de-114">**hidden**</span></span>              | <span data-ttu-id="f90de-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="f90de-115">Boolean</span></span> | <span data-ttu-id="f90de-116">如果为 `true`，则表明该列表通常在 SharePoint 用户体验中不可见。</span><span class="sxs-lookup"><span data-stu-id="f90de-116">If `true`, indicates that the list is not normally visible in the SharePoint user experience.</span></span>
-| <span data-ttu-id="f90de-117">**template**</span><span class="sxs-lookup"><span data-stu-id="f90de-117">**template**</span></span>            | <span data-ttu-id="f90de-118">String</span><span class="sxs-lookup"><span data-stu-id="f90de-118">String</span></span>  | <span data-ttu-id="f90de-119">一个枚举值，表示创建列表时使用的基本列表模板。</span><span class="sxs-lookup"><span data-stu-id="f90de-119">An enumerated value that represents the base list template used in creating the list.</span></span> <span data-ttu-id="f90de-120">可能的值包括 `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` 等。</span><span class="sxs-lookup"><span data-stu-id="f90de-120">Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.</span></span>
+| <span data-ttu-id="ccee5-112">**contentTypesEnabled**</span><span class="sxs-lookup"><span data-stu-id="ccee5-112">**contentTypesEnabled**</span></span> | <span data-ttu-id="ccee5-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="ccee5-113">Boolean</span></span> | <span data-ttu-id="ccee5-114">如果为 `true`，则表明已为此列表启用内容类型。</span><span class="sxs-lookup"><span data-stu-id="ccee5-114">If `true`, indicates that content types are enabled for this list.</span></span>
+| <span data-ttu-id="ccee5-115">**hidden**</span><span class="sxs-lookup"><span data-stu-id="ccee5-115">**hidden**</span></span>              | <span data-ttu-id="ccee5-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="ccee5-116">Boolean</span></span> | <span data-ttu-id="ccee5-117">如果为 `true`，则表明该列表通常在 SharePoint 用户体验中不可见。</span><span class="sxs-lookup"><span data-stu-id="ccee5-117">If `true`, indicates that the list is not normally visible in the SharePoint user experience.</span></span>
+| <span data-ttu-id="ccee5-118">**template**</span><span class="sxs-lookup"><span data-stu-id="ccee5-118">**template**</span></span>            | <span data-ttu-id="ccee5-119">String</span><span class="sxs-lookup"><span data-stu-id="ccee5-119">String</span></span>  | <span data-ttu-id="ccee5-120">一个枚举值，表示创建列表时使用的基本列表模板。</span><span class="sxs-lookup"><span data-stu-id="ccee5-120">An enumerated value that represents the base list template used in creating the list.</span></span> <span data-ttu-id="ccee5-121">可能的值包括 `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` 等。</span><span class="sxs-lookup"><span data-stu-id="ccee5-121">Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="f90de-121">注解</span><span class="sxs-lookup"><span data-stu-id="f90de-121">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="ccee5-122">注解</span><span class="sxs-lookup"><span data-stu-id="ccee5-122">Remarks</span></span>
 
-<span data-ttu-id="f90de-122">虽然用户创建的大多数列表都有上面列出的一个值，但也可能包含其他值。</span><span class="sxs-lookup"><span data-stu-id="f90de-122">While most lists created by users will have one of the values listed above, other values are possible as well.</span></span>
-<span data-ttu-id="f90de-123">应用应准备好处理未在此处列出的任何值。</span><span class="sxs-lookup"><span data-stu-id="f90de-123">Your app should be prepared to handle any values that are not listed here.</span></span>
-<span data-ttu-id="f90de-124">对于熟悉 SharePoint CSOM API 的开发人员，`template` 值与 `SPListTemplateType` 枚举对应。</span><span class="sxs-lookup"><span data-stu-id="f90de-124">For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.</span></span>
+<span data-ttu-id="ccee5-123">虽然用户创建的大多数列表都有上面列出的一个值，但也可能包含其他值。</span><span class="sxs-lookup"><span data-stu-id="ccee5-123">While most lists created by users will have one of the values listed above, other values are possible as well.</span></span>
+<span data-ttu-id="ccee5-124">应用应准备好处理未在此处列出的任何值。</span><span class="sxs-lookup"><span data-stu-id="ccee5-124">Your app should be prepared to handle any values that are not listed here.</span></span>
+<span data-ttu-id="ccee5-125">对于熟悉 SharePoint CSOM API 的开发人员，`template` 值与 `SPListTemplateType` 枚举对应。</span><span class="sxs-lookup"><span data-stu-id="ccee5-125">For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/listinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
+  "tocPath": ""
+}-->
