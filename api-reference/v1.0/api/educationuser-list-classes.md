@@ -4,12 +4,13 @@ description: '检索 class 对象的列表。 请注意，如果使用委派令�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 3d481ab635fee14902fe636eb28fd95380e7b65e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 00ba036c3fd28d253842839537e52fd66d792e29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887542"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006764"
 ---
 # <a name="list-classes"></a>列出课程
 

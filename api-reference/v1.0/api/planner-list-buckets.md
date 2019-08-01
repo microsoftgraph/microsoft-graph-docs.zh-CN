@@ -4,12 +4,13 @@ description: 检索 **plannerbucket** 对象的列表。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 536c52ef4964bf7c03b211740fd2152004f00d78
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 74ff036e3819b40ff9336806d49d9c7bb73d488b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022500"
 ---
 # <a name="list-buckets"></a>列出存储桶
 

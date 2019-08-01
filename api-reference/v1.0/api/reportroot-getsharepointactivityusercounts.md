@@ -4,12 +4,13 @@ description: 获取活跃用户数趋势。 如果用户执行了文件活动（
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ee26ef70cebe3d2b9ee8f0d0ae2583a1368ef3b9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3a191e1fb90bac9dd29024ab683b2dff735964ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021828"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 

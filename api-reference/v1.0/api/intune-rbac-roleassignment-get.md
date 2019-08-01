@@ -4,12 +4,13 @@ description: 读取 roleAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e35017d31b592c688efedbbe04c20039c745787c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6e5baecf4daaf354c5c6d8a05eef9a6345260f4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023704"
 ---
 # <a name="get-roleassignment"></a>获取 roleAssignment
 

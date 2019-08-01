@@ -4,12 +4,13 @@ description: 获取表示给定范围的矩形交集的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 95e7af555c1ac857272994dc634ed0dc9f1b0fad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2eec5e11e22c6c9724ddb3935166b05ad8a1f38c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975856"
 ---
 # <a name="range-intersection"></a>Range:Intersection
 
@@ -21,7 +22,7 @@ ms.locfileid: "32453253"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +41,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |描述|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |anotherRange|string|将用于确定区域交集的 range 对象或区域地址。|
 

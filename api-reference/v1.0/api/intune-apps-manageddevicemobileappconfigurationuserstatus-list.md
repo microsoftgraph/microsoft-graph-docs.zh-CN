@@ -4,12 +4,13 @@ description: 列出 managedDeviceMobileAppConfigurationUserStatus 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31471db6eea629d09d1a458bafa9e9798a2df2a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4ed50b507d5cb7dc2e18363cbffa8444f7740509
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013960"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>列出 managedDeviceMobileAppConfigurationUserStatuses
 

@@ -4,12 +4,13 @@ description: 获取与 SharePoint 网站中存储的文件进行交互的唯一�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 17e4d806f08cde191ba7757a183e452645ba8343
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e5ef7e928c4a1b40592c1d9708f915442994fd44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893579"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021898"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 

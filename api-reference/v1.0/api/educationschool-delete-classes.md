@@ -4,12 +4,13 @@ description: 从学校删除课程。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3cf61d77171e7dc3161aa3b3cc48d663de784649
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1a0deef07b733153b939eba13b5d0987b106208a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002900"
 ---
 # <a name="remove-educationclass"></a>删除 educationClass
 

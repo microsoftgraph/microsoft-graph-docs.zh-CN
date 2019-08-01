@@ -4,12 +4,13 @@ description: 删除表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b46974f5187074c5a0403c6bae14b5d54d2eeec9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f4697490d62fd1e39b2e9297d1d2baa24f2d7b8c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024544"
 ---
 # <a name="table-delete"></a>Table: delete
 

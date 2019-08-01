@@ -4,12 +4,13 @@ description: 返回与整个行相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eec63b5377afe21dfcdff10e4c25b1c1075b3910
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 784e99c932f7a3dd747b66df6ebf5427504e2336
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894209"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024341"
 ---
 # <a name="tablerow-range"></a>TableRow:Range
 

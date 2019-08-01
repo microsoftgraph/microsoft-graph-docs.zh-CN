@@ -4,12 +4,13 @@ description: 检索 rangeborder 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a1b9cb5938f39c007c5ec47efb9a507d3eae378f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5f62db87104cadaccc307687e8a180e9010de226
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880580"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022117"
 ---
 # <a name="list-borders"></a>列出边框
 

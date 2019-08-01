@@ -4,12 +4,13 @@ description: 读取 iosMobileAppConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5392333d009652fdb9f0ab07b6ce3ad31b6f84a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 67dfbd4e16116fa7ad0af0d26e0e6303cf14df15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577383"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002592"
 ---
 # <a name="get-iosmobileappconfiguration"></a>获取 iosMobileAppConfiguration
 

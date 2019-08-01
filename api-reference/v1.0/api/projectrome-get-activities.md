@@ -1,18 +1,20 @@
 ---
 title: 获取用户活动
-description: 获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 useractivity.readwrite.createdbyapp useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+description: 获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: dce6420e33a5d57eb78d8ea4842ed759ebcdd11c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1a3dad16f96f8b16618a1916bcccf6cf67eb95ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576435"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975884"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
-获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 useractivity.readwrite.createdbyapp useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
+获取给定用户的活动。 与**最近**的 OData 函数不同, 将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +52,7 @@ GET /me/activities
 /me/activities?$top=5
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/activities
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "ignored",

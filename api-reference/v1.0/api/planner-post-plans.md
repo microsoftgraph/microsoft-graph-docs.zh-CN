@@ -4,12 +4,13 @@ description: 使用此 API 新建 **plannerPlan**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 83bd7f04e6f4a5064e0deabf253bb99788610744
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a12afed77d9f9cdb38de095b3713dceb792bace9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881258"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022493"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 

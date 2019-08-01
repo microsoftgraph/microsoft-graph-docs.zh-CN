@@ -4,12 +4,13 @@ description: 获取与表的标头行相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5ca4a460a2aa75f42b121f96f976861bb1d2dbb5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8f2c68e6d8d76589f4b85a6753e382f42fb88f9c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889727"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021444"
 ---
 # <a name="table-headerrowrange"></a>Table:HeaderRowRange
 

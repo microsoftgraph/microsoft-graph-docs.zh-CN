@@ -4,12 +4,13 @@ description: 使用 URL 路径检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1dbc907549fb84261c157e3415e6396a22b38672
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fe9819defc1c34534323a672d5510922e7f21d0e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890176"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022717"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>笔记本: getNotebookFromWebUrl
 

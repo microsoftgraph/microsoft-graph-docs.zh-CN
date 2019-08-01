@@ -2,12 +2,15 @@
 title: 删除照片
 description: 删除照片。
 localization_priority: Normal
-ms.openlocfilehash: ca33cb18af1f613ea58006fe93a32c8cce3734f1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: f4e5a1650e2c75ec16c7625597fccd6111d94b83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855104"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976255"
 ---
 # <a name="delete-photo"></a>删除照片
 

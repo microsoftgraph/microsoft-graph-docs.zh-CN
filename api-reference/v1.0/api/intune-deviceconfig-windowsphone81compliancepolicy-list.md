@@ -4,12 +4,13 @@ description: 列出 windowsPhone81CompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b41b67c1ca9b7daf29e1bc3870ea6a4e71c36210
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d15b686b5081f60a64091fc7a4c5a96a4223a758
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997086"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>列出 windowsPhone81CompliancePolicies
 

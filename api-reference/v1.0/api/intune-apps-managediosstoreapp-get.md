@@ -4,12 +4,13 @@ description: 读取 managedIOSStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 123bf6bc476e018e31d021fbf4666fa530239c50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ce72d4e26b4044b8a1c054d4664806ddc593a6a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002256"
 ---
 # <a name="get-managediosstoreapp"></a>获取 managedIOSStoreApp
 

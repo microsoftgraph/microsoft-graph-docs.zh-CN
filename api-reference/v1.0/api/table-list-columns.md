@@ -4,12 +4,13 @@ description: 检索 tablecolumn 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 49082bc956753ec9cb0a3e65a6cad32513e6c1e6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 63ad7d9c4a0f1a3dc25db27e270ef76f509c206f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024509"
 ---
 # <a name="list-columns"></a>列出列
 

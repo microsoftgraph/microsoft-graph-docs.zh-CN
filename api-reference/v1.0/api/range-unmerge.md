@@ -4,12 +4,13 @@ description: 将范围单元格取消合并为各个单元格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10f4a49593a895de007cc1db1cab77069c3c5b3e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bc1b69e795efad4fec350973396fa49b130422b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975842"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 

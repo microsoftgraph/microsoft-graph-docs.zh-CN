@@ -4,12 +4,13 @@ description: 根据其在系列中的位置检索点。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 47ccfe49ae1469d8be6d65613eb010679cc7891f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 23a74dcd0048716edc46f4f006a083d55f973b89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443306"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003404"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 

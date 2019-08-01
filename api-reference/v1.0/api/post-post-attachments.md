@@ -4,12 +4,13 @@ description: 使用此 API 将 附件 添加到帖子。 自此处起
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a64e855edb514a3447769e007993db53e60b3460
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 19a9f784dee111ce3c903e694a18636c08b6b61b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975947"
 ---
 # <a name="add-attachment"></a>Add attachment
 

@@ -4,12 +4,13 @@ description: 创建团队的副本。 此操作还会创建相应组的副本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c3b6b8e9615491275f981a759fabc4ed6a683373
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe33df030e5f92ee9780c22e1f73b6aa88a021a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534722"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024278"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -56,7 +57,7 @@ POST /teams/{id}/clone
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |classification|String (可选)|描述组的分类 (如低、中或高业务影响)。 如果未指定分类, 则将从原始团队/组复制分类。|
-|description|String (可选)|可选的组说明。 如果未指定此属性, 则它将保留为空。|
+|说明|String (可选)|可选的组说明。 如果未指定此属性, 则它将保留为空。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性, 则将从 displayName 计算。 已知问题: 此属性当前被忽略。|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分的逗号分隔列表。 法律部门是 "应用、选项卡、设置、通道、成员"。|
@@ -88,7 +89,7 @@ Content-Type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",
   "truncated": true,

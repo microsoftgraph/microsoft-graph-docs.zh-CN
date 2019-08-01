@@ -4,12 +4,13 @@ description: 获取 messageRule 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 839955c24d91da45c5066a4c4588d4c69ac6ba98
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 31f82631179cfbd479968980a2bad12cd8604827
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890386"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022836"
 ---
 # <a name="get-rule"></a>获取 rule
 

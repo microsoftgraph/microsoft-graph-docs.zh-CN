@@ -4,12 +4,13 @@ description: 创建一个新表。区域源地址确定将在其下添加表的�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 19b8d825e8b55e2516e495407ca9fe3feeb61cde
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 07f3d5fcb4369a22e89dac7357efae577ea7425c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889531"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021359"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 

@@ -4,12 +4,13 @@ description: 读取 sharedPCConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d3e89306a715749dbcf08da6d118a0de7eabfd2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 14742b16d7133cccc00497eb58e8b4f1f3e84995
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558354"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997363"
 ---
 # <a name="get-sharedpcconfiguration"></a>获取 sharedPCConfiguration
 

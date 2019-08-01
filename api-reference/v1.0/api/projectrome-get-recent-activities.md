@@ -3,12 +3,14 @@ title: 获取最近的用户活动
 description: " #C1. 该服务将查询最近的 historyItems, 然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选, 以便仅返回应用程序所创建的活动。 如果用户特别是活动的, 并且其他应用程序已创建了更新的活动, 则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动, 请使用**nextLink**属性进行分页。"
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 8f33522988e405eb2f05e0a0b719a867690d111f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 63dc61730813cd218dc17cb019b46ef7ea8a701a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890107"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975905"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 

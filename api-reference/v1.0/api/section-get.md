@@ -4,12 +4,13 @@ description: 检索 onenoteSection 对象的属性和关系。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 96c23dccd45b7051ef8df567fcc4d26ad1a895f4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1eeb8c7f1ec2bc57c984d1ff9f9e1f85cc6b1671
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021527"
 ---
 # <a name="get-section"></a>获取分区
 

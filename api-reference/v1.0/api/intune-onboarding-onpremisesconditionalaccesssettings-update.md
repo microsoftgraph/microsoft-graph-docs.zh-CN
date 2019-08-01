@@ -4,12 +4,13 @@ description: 更新 onPremisesConditionalAccessSettings 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4d72f4f4de4dfc3096b78665f9bf5c9953b2527
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1e77767900b40fc3f921d9d3ffd34fd6930bf19c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561521"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024082"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>更新 onPremisesConditionalAccessSettings
 

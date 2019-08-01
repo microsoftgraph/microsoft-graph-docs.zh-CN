@@ -4,12 +4,13 @@ description: 检索 page 对象的属性和关系。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 963aeeec95b9c57dbb0a024aeca2afdfba16a9d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a4605242ca911e9634e79fa5b9761ae2bb8e0ab6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556439"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022549"
 ---
 # <a name="get-page"></a>获取页面
 
@@ -40,7 +41,7 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意: Read、notes。读写    |
+|委派（个人 Microsoft 帐户） | 注意: Read、Notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求

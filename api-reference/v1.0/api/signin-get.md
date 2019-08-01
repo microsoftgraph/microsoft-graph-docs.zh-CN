@@ -4,12 +4,13 @@ description: 介绍 Microsoft Graph API 中登录资源 (实体) 的 get 方法�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 535edf47a43c248240479f6567869f78cb374b18
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f736ebddb81b0729f7e102c064f7e3c590fba9b8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975618"
 ---
 # <a name="get-signin"></a>获取 signIn
 

@@ -4,12 +4,13 @@ description: 更新 eBookInstallSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f9927dc4c757a83afa02f101815536b1b81d81e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b8b57abc37de65d4040ae4f02bb825111ecefca4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570269"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013561"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 

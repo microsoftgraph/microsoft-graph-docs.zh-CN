@@ -4,12 +4,13 @@ description: 检索 contact 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2f5b146d6fa47ed643a4ac1dc1a4a2e2650dcc8b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1482de2bd277f7aa637ddfa10421abbf91c7a44c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885135"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003250"
 ---
 # <a name="get-contact"></a>获取联系人
 

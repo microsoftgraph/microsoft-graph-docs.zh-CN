@@ -4,12 +4,13 @@ description: 清除表上的当前排序。尽管这不能修改表的排序，�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c7461529dfdde7c84816ee34d761debc93718f40
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 39cc8f742da7a31edc45d3e0edb172b86e88ab11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024294"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 

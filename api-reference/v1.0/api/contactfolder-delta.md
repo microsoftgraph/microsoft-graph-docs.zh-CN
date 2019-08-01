@@ -4,12 +4,13 @@ description: 获取用户邮箱中已添加、删除或移除的联系人文件�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: b771a211263d13423ec26a93a08dea8592c4720f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d3ab7309be43f717d6a4a17bfd2eaec8792765fc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003201"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 

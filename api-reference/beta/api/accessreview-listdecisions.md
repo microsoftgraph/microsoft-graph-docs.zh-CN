@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0b31628a44422283ebd3f403a4e83bf2b4d1ccf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 466bf38854f50e2896388af02928641dd9180edf
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946018"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049608"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946018"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.Read.All |
+|应用程序                            | AccessReview、AccessReview、成员身份 |
 
  登录用户还必须位于允许他们阅读访问审核的目录角色中。
 

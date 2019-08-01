@@ -4,12 +4,13 @@ description: 更新 deviceCategory 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a32034bd88c0295eaff9fc5c29e7dc45961bb4ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576963"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023466"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 

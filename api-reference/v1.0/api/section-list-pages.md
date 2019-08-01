@@ -4,16 +4,15 @@ description: 从指定分区中检索 page 对象的列表。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 8d5aae356a703968ca05317e653cad5b9a931161
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8b1150c0470db5bc7d361b962432f8e78e87e7f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521094"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021478"
 ---
 # <a name="list-pages"></a>列出页面
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从指定分区中检索[page](../resources/page.md)对象的列表。
 ## <a name="permissions"></a>权限
@@ -22,7 +21,7 @@ ms.locfileid: "32521094"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意: Read、notes。读写    |
+|委派（个人 Microsoft 帐户） | 注意: Read、Notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -57,7 +56,7 @@ GET /sites/{id}/onenote/sections/{id}/pages
 下面是一个请求示例。
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
+GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。<!-- { "blockType": "ignored" } -->
@@ -89,15 +88,10 @@ Content-length: 393
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List pages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/section-list-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

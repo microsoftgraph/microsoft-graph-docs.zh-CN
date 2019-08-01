@@ -2,12 +2,15 @@
 title: 获取 NamedItem
 description: 检索 nameditem 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 335dc6912dba33e49e41d9b26c408324b29a07b4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1d9d21cbc2238c7f56ee6cfd0d0ea77fefb82c49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022773"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 

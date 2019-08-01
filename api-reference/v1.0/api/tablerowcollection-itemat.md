@@ -4,12 +4,13 @@ description: 根据其在集合中的位置获取行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ecded1222bd50731989aa486dad14367f1c6d3ce
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 764b144129a75a2403108ce707da0dfaa1e0dadc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024334"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 

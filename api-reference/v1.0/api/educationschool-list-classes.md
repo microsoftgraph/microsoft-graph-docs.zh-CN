@@ -4,12 +4,13 @@ description: 检索学校所拥有的课程列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 2a3f449c94138a3fa4b36fe3ca57eb9ee4728d54
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 81f0fcc2f2a12fb960a1ba6f5005b5f856bfb5ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887717"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002879"
 ---
 # <a name="list-educationclasses"></a>列出 educationClasses
 

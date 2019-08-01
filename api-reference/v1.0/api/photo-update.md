@@ -2,12 +2,15 @@
 title: 更新照片
 description: 更新 photo 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 00d8f63509635c4f4aabe0deb02a59efa8af0f3c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 50914a2d96203afe352ac0f8f35814ff2ddb8edb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976241"
 ---
 # <a name="update-photo"></a>更新照片
 

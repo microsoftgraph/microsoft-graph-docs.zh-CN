@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 88a67360fc6d60f9751cecf932dba40dd8be4e08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f9c1bc8747d2057374c4aac6809987572475fdf
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944826"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049636"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
@@ -24,7 +24,7 @@ ms.locfileid: "35944826"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.Read.All |
+|应用程序                            | AccessReview、AccessReview、成员身份 |
 
 登录用户还必须位于允许他们阅读访问审核的目录角色中。
 

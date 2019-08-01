@@ -3,12 +3,14 @@ title: 更新开放扩展
 description: 通过请求正文中的属性更新开放扩展（openTypeExtension 对象）：
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 6465c6b342032ff1e14e43487b534e39f1443ea0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022633"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -26,7 +28,7 @@ ms.locfileid: "32572568"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -62,7 +64,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|相应集合的实例的唯一标识符。必需。|
 |extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -74,7 +76,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 | 名称       | 值 |
 |:---------------|:----------|
-| @odata.type | openTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>响应

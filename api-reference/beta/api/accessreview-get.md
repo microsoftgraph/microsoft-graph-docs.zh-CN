@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 838278fe9b1f77d1dfeae048e932ac62792a4606
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d052357fd5ff609a701753348f6a276d0d12338
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946031"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049539"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -27,9 +27,9 @@ ms.locfileid: "35946031"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.Read.All  |
+|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview.Read.All  |
+|应用程序                            | AccessReview、AccessReview、成员身份  |
 
 若要调用此 API, 登录用户还必须位于允许他们读取访问审核的目录角色中, 或者可以将用户作为访问评审的审阅者进行分配。  有关更多详细信息, 请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
 

@@ -4,12 +4,13 @@ description: 通过缩放图表以适应指定的尺寸，将图表呈现为 bas
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: edcd1fcf52cc020ce4b261aebc115cea302b05c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003740"
 ---
 # <a name="chart-image"></a>图表：图像
 

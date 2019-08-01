@@ -4,12 +4,13 @@ description: 检索 chartlineformat 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e7d71bc33db9c888f275c8bc21ce83fedffbefa2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6f3332163cc266c6d13eb0a57f762f9567542c97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886116"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003439"
 ---
 # <a name="get-chartlineformat"></a>获取 ChartLineFormat
 

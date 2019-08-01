@@ -4,12 +4,13 @@ description: 列出 macOSOfficeSuiteApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05afa8f0794cb263dd9c36b7d21cbd1178559c26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e3fbb33a066a4982fa1316b281152811ac68d16c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002452"
 ---
 # <a name="list-macosofficesuiteapps"></a>列出 macOSOfficeSuiteApps
 

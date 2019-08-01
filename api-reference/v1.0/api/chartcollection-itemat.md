@@ -4,12 +4,13 @@ description: 根据其在集合中的位置获取图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cfdd8c0dce8cf53c29d153e3f774f84877f5e3c7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 029f22ee7af7a1762b1bb9b10790901580860e5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003614"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 

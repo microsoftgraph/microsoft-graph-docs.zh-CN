@@ -4,12 +4,13 @@ description: 在指定的分区组中创建新的 onenoteSection。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 66f5c2c23e7d39d5c8f4c2a6723e340d77505692
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: db574f9c1f45f87b0133490f1e4785bbf35a1547
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882958"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975674"
 ---
 # <a name="create-section"></a>创建分区
 

@@ -4,12 +4,13 @@ description: 获取给定用户的应用限制。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 94448fa6f89935e0577b91f9f49dc319b959b09e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e5d0854febf8fbb2098fb11c65401f22965a5d95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576666"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023369"
 ---
 # <a name="getmanagedapppolicies-function"></a>getManagedAppPolicies 函数
 

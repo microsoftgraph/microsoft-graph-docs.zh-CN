@@ -4,12 +4,13 @@ description: 通过使用联系人文件夹 ID 获取联系人文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 47d5ba998edc35505d8c7fb6a34f2f58d560eb10
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e5ce0f5363682151181b19a11227e5ae4996d124
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003187"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 

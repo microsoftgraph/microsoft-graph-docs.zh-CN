@@ -4,12 +4,13 @@ description: '将行添加到表的末尾。 请注意, API 可以使用此 API 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a6f8ff3c282b687d836bff0add39f0b43f772b75
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 70b4bac141df06140327a8545816c098ec3de93d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450434"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024480"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 

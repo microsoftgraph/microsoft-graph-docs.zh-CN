@@ -4,12 +4,13 @@ description: 读取 iosUpdateConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdf7f7adb4a5b54fd3de2d85b5e40175f62afb5b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 56b616801c76e8c5f1e24ed6b5359cfd7e58af96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997629"
 ---
 # <a name="get-iosupdateconfiguration"></a>获取 iosUpdateConfiguration
 

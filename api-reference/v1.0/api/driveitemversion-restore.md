@@ -3,12 +3,14 @@ title: 还原 DriveItem 的以前版本
 description: 将 DriveItem 的以前版本还原为当前版本。 这将使用以前版本的内容创建一个新版本，但保留该文件的所有现有版本。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c9cddabccf3d3e9d09ae18cd1f1e4aa1743cf0a8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: f6a0208526fcd48f5dffa78a073da2aa8191d851
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881586"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006890"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 

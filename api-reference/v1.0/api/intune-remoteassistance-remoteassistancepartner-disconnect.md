@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14105698ef39601b2c4b96df1163ae5439db9022
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 84fae520e9e60f5227981aefbdb04820b38d71b4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585194"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023592"
 ---
 # <a name="disconnect-action"></a>断开连接操作
 

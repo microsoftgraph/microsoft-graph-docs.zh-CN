@@ -4,12 +4,13 @@ description: 设备配置设备活动报告的元数据
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a92ca929c45e9da34e598df079197fd76a2761bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 55be9ee8ffa1cd2b7dba5e91fe31df7b0f3b58f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576935"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023424"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 

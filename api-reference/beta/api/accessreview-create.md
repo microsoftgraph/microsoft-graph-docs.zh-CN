@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ab1711a370d766631611d9cd5f96635760f98f48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b55a35b3debe6d041c3e20aa54744339b963515c
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946054"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049540"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -29,7 +29,7 @@ ms.locfileid: "35946054"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|应用程序                            | AccessReview 的成员资格 |
 
 调用方还应具有 ProgramControl 权限, 以便在创建访问审核之后, 调用方可以创建[ProgramControl](../resources/programcontrol.md)。
 此外, 登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息, 请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。

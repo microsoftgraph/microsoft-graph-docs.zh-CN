@@ -4,16 +4,15 @@ description: '列出 Microsoft 团队应用程序目录中的应用程序。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 884fd932acddb1352c48e82302a6c345fadf90b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e4d56376628ef95096b14e96334f9bcb9da425f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024229"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>列出 Microsoft 团队应用程序目录中已发布的应用程序
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出 Microsoft 团队应用程序目录中的[应用程序](../resources/teamsapp.md)。
 这包括 Microsoft 团队存储区中的应用程序, 以及组织的应用程序目录 (租户应用程序目录) 中的应用程序。 若要仅从组织的应用程序目录中获取应用`Organization`程序, 请在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
@@ -28,7 +27,7 @@ ms.locfileid: "32521787"
 |:---------------------------------------|:------------------------------------|
 | 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All            |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| Application                            | 不支持                       |
+| 应用程序                            | 不支持                       |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,7 +66,7 @@ GET /appCatalogs/teamsApps
 #### <a name="request"></a>请求
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -98,7 +97,7 @@ Content-Type: application/json
 #### <a name="request"></a>请求
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### <a name="response"></a>响应
@@ -119,12 +118,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

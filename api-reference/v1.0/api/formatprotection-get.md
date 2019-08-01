@@ -2,12 +2,15 @@
 title: 获取 FormatProtection
 description: 检索 formatprotection 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: de72993ab0c6a72b5bc0fff55beb24ad3588f33f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: b226526c1abbfd42d2c4d52c0bb2ae3016f7ada5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002753"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 

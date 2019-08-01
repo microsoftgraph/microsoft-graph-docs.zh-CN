@@ -4,12 +4,13 @@ description: 将 Intune 帐户与适用于企业的 Microsoft Store 同步
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e71bfb1e4ac6d4ce6c31344289eab7fb15b65594
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1b106faf324aa081001aec811ec200e3ac145a6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551398"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023501"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>syncMicrosoftStoreForBusinessApps 操作
 

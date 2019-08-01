@@ -4,13 +4,13 @@ description: 班次是计划中计划工时的单位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: f76cd25a36ba070d9fa8281f31a1520a0d7b4435
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: resourcePageType
+ms.openlocfilehash: d3a91cd7b4f2b4d8e32219514d1190599ac416de
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008339"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049629"
 ---
 # <a name="shift-resource-type"></a>shift 资源类型
 

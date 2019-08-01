@@ -4,12 +4,13 @@ description: 更新 chartdatalabels 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 58cb1b7981221027d695029bf0b4dcf318227235
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 84c2bda2bf07198bb51ea69d1cefdc3689df0261
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886160"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003586"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 

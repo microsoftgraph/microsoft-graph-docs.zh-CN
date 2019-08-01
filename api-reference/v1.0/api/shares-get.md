@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 访问共享项目
 localization_priority: Normal
-ms.openlocfilehash: 887567bc780c65b88989d8df79fdaec0f7b4c676
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 通过使用 shareId 或共享 URL 访问共享 DriveItem 或共享项目集合。
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: d1080c42d3dd6471b2c09ac5a6d013f8e0c4986b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021513"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 

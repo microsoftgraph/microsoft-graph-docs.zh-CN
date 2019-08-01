@@ -4,12 +4,13 @@ description: 对表重新应用当前的排序参数。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3f6694da79b1b7bb73ec324fd51ea30f96aa52db
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 04eea4d3a8ff8f20795f6ff2059b6daf2b0e006f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894060"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024293"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 

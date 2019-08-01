@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更改共享权限
 localization_priority: Normal
-ms.openlocfilehash: 12aa4da4b1d1e2fd6dd143826a8f6057618e5487
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 通过修补 permission 资源更新共享权限的属性。
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: a4c679c117630a78092e0d99a9e2aab2e8785ffd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022535"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 

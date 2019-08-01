@@ -4,12 +4,13 @@ description: 获取用户支持的区域设置和语言列表，用户的邮箱�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 707355732c17890e69bd547305641c73c7941501
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 45e5ab477f9a8b6cb7bd09bca38d7cdd479d205b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892831"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022640"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 

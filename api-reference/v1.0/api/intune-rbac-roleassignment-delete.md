@@ -4,12 +4,13 @@ description: 删除 roleAssignment。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74178c5bbade8383ce0776dfd372b3c9d23ad9fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: afb4c006e4c85bd131ac44663e5b9c088c165a42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584206"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023690"
 ---
 # <a name="delete-roleassignment"></a>删除 roleAssignment
 

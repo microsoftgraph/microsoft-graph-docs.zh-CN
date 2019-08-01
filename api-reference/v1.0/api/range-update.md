@@ -4,12 +4,13 @@ description: 更新 range 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 18302e2f79c3b80168b02ae94e62e28ace92e01a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 4a7a29c429eb7240e13dedfd844d4e1af841e892
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022164"
 ---
 # <a name="update-range"></a>更新区域
 

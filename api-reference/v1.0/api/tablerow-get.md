@@ -4,12 +4,13 @@ description: 检索 tablerow 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0127a74ef488600989e149f5bbee779015859888
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e94e254dabe9341cd653619a485d7f2bf16ab270
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894235"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021338"
 ---
 # <a name="get-tablerow"></a>获取 TableRow
 

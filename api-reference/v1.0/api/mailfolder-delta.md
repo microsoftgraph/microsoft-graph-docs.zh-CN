@@ -4,12 +4,13 @@ description: 获取用户邮箱中已添加、删除或移除的邮件文件夹�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f3d09214a9cc89cfc880dd43d43133d52b979265
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 75dc4e3646eaaae7a0f41e76170d61c3927213e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893130"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023130"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 

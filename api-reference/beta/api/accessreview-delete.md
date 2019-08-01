@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1b447ddc1a627c1a3e42a53916c0de716dc6dec5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adc47fbbee90330af210207470afc25fb859d970
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946053"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049601"
 ---
 # <a name="delete-accessreview"></a>删除 accessReview
 
@@ -24,7 +24,7 @@ ms.locfileid: "35946053"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|应用程序                            | AccessReview 的成员资格 |
 
 调用方还应具有 ProgramControl 权限, 以便它可以删除[ProgramControl](../resources/programcontrol.md)。
 

@@ -4,12 +4,13 @@ description: 获取用户访问的唯一页面数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 93244e62aaa8f90880415ecfd70026db3d86d0be
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 27ae9e868337289871df3fcdf9f11bf93d4cecd7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021838"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 

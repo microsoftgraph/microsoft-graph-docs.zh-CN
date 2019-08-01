@@ -4,12 +4,13 @@ description: 获取设备所属的组。 此 API 请求是可传递的, 并且�
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 31129ca5ed4380f1b01025e9f5e4f0677ce624f2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d2bfa30fd085a07f664d9207dbb0bedef5cc93b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883392"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002956"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 

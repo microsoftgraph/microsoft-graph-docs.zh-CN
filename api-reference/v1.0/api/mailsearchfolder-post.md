@@ -4,12 +4,13 @@ description: 使用此 API 在指定用户的邮箱中创建新的 mailSearchFol
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 949531b1f22cac34c6493cc6d7a1bc415def2e50
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8555760088fb1130485a0f864f88f4d1a4f30d83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856309"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022927"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 

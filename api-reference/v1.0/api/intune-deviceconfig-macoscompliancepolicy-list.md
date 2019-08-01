@@ -4,12 +4,13 @@ description: 列出 macOSCompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d1f5dfb559cda3011e6c2570d5d4954f3c8d1f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 97883e78e1ac673002c906d804b27419ceaae567
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997531"
 ---
 # <a name="list-macoscompliancepolicies"></a>列出 macOSCompliancePolicies
 

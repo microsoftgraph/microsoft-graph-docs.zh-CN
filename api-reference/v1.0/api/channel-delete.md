@@ -4,12 +4,13 @@ description: 删除频道。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e4e84fb7e011a6a4a56dea7a71748fac85f17e07
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b6a2e1f8c0eef45e227affdf0d73417ee90992b8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003880"
 ---
 # <a name="delete-channel"></a>删除频道
 

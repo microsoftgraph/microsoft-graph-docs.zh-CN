@@ -4,12 +4,13 @@ description: 创建新的 auditEvent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a08e7266070e3cbaaa0f639660d806d487ef6cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4218d76a1bee2dcd25da7ffe1c5e06ddc4ae1029
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013652"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -49,7 +50,7 @@ POST /deviceManagement/auditEvents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
+|displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|
@@ -59,7 +60,7 @@ POST /deviceManagement/auditEvents
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|category|String|审核类别。|
+|“类别”|String|审核类别。|
 
 
 

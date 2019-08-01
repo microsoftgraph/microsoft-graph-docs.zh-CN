@@ -4,12 +4,13 @@ description: 从表中删除行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1760f6fb51dd60556710984bac544058b78a8e6c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f8b9139ac4eed6c2acbd68063ddb2b10021196fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520373"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024355"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 

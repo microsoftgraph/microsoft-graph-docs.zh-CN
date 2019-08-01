@@ -4,12 +4,13 @@ description: 删除学校。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1463b9bd23065ab164b4c682ce6dd7bd7f50295e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 37da6e8ca625a92cb81db086003218ecc3680b83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887760"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002893"
 ---
 # <a name="delete-educationschool"></a>删除 educationSchool
 

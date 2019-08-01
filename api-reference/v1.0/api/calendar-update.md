@@ -4,12 +4,13 @@ description: '更新 calendar 对象的属性。 相应日历可以是用户的�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 04aa7b43602b550cf7a1685e7b25ed2875ebfa7a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a07b4f901f3a25c370411765698374cd415d19ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003971"
 ---
 # <a name="update-calendar"></a>更新日历
 

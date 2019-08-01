@@ -4,12 +4,13 @@ description: 检索组织对象列表。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1c5fab3e14cdd58b7cbf9cd64140ec4a866016ee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9824f34b4c9a636dd93d7159501cdf3c5596477f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890622"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976402"
 ---
 # <a name="list-organization"></a>列出组织
 

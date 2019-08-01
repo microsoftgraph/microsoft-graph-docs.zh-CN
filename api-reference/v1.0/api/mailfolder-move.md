@@ -4,12 +4,13 @@ description: 将 Mailfolder 及其内容移动到其他 mailfolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6512ddb86068afebcb5d714438ee732d76276355
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c26b7db6c23f396cefe2eda5c30f71af9809c568
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856484"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022969"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 

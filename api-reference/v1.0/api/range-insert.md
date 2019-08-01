@@ -4,12 +4,13 @@ description: 将单个单元格或一系列单元格插入到工作表中取代�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 9515c01c9764546be91172866df670f92562ab35
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dba4588113466881ef656242c04b705b1a513885
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022222"
 ---
 # <a name="range-insert"></a>Range: insert
 

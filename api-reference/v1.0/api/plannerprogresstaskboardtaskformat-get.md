@@ -4,12 +4,13 @@ description: 检索 **plannerProgressTaskBoardTaskFormat** 对象的属性和关
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8c0e11b0d0a970f45aa3f2c3672e0240298e6aa2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7d46faa28bf3a623fe9cd8117ac23592edfeb896
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887074"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022347"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>获取 plannerProgressTaskBoardTaskFormat
 

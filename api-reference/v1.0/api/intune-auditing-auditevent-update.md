@@ -4,12 +4,13 @@ description: 更新 auditEvent 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0a11e0d070cfa0faeb8048a44a3d75c036c12f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: cc81661d6e117b59050c6f69095bb101a5de90d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579886"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013568"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
@@ -49,7 +50,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
+|displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|
@@ -59,7 +60,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|category|String|审核类别。|
+|“类别”|String|审核类别。|
 
 
 

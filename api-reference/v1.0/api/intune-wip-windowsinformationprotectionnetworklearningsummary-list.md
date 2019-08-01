@@ -4,12 +4,13 @@ description: 列出 windowsInformationProtectionNetworkLearningSummary 对象的
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4b016a26510e571ba85c4d3c17bdf6b684333ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: aa8e78ee3f45464b9aecff0602513ffcd9a180e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576295"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023179"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>列出 windowsInformationProtectionNetworkLearningSummaries
 

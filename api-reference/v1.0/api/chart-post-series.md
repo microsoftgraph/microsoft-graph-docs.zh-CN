@@ -4,12 +4,13 @@ description: 使用此 API 创建新 ChartSeries。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b162466f87567ade1b5f2a5d999087794ba8d7d8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e44b61ea888d92f8947e4a11ef64ae60586394b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882188"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003782"
 ---
 # <a name="create-chartseries"></a>创建 ChartSeries
 

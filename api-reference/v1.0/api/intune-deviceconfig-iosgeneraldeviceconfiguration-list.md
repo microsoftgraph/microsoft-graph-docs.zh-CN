@@ -4,12 +4,13 @@ description: 列出 iosGeneralDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bbb8efe8092d8c8c10b786973cfb6fd3ee38c712
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 69be37a5dd2d5ec7e3283668d46aa53a23d89a7c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554728"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997657"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>列出 iosGeneralDeviceConfigurations
 

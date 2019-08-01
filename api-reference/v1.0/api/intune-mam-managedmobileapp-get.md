@@ -4,12 +4,13 @@ description: 读取 managedMobileApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cdf3a6887b19e31c3ba9afc05f6c1669548bc42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 907d2cce4aaf0a058f546a6fad1bcb154efd9af7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453246"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996621"
 ---
 # <a name="get-managedmobileapp"></a>获取 managedMobileApp
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453246"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

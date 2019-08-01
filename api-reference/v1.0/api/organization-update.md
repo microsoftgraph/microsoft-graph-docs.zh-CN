@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4cafafa13b37c819a15b3ba63e5ec9b1ae2f03d2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 7cd98bfecc68405b613adb5453841094f2e02772
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022668"
 ---
 # <a name="update-organization"></a>更新组织
 

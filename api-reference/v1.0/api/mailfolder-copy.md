@@ -4,12 +4,13 @@ description: 将 mailfolder 及其内容复制到其他 mailfolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 40ad7c42aa75ce0cd7e4153970e7f197a813d2c7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 277d058788efef9ec3ecf9ecb1ea21ab74ccd8c1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893263"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023113"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 

@@ -4,12 +4,13 @@ description: 获取跨所有网站的文件总数和活跃文件数。 如果文
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5654cc2d8ba9aaaa5f7572a784dc9d002806d0b5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0aca7eec4c4991484a3ec4ab6a3a301b704e2144
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021906"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 

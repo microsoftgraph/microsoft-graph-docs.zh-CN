@@ -4,12 +4,13 @@ description: 获取使用情况趋势，即组织中召开的会话的次数和�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a9eb0e67b4ecddca2c9c906bc038333f66f0b6e7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 82648bae520574446c25c247efa25aed9a9ac730
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892232"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024868"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 

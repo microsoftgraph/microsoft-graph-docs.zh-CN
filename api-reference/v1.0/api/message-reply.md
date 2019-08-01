@@ -4,12 +4,13 @@ description: 答复邮件发件人然后邮件保存在已发送邮件文件夹�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7321b424046a327f5d0e87c477aad8ab14f082e1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 826ebacd1d98fc4927aa06829f437b4094915c7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856275"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976669"
 ---
 # <a name="message-reply"></a>消息：答复
 

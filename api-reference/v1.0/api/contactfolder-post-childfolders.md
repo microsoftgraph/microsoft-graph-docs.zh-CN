@@ -4,12 +4,13 @@ description: '创建新的 contactFolder 作为指定文件夹的子文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f9880323522b6ed57985560d8494db59f0c1aff8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 077abf612fdfb3d2146c72d9a83f4f73edde8356
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883854"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003152"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 

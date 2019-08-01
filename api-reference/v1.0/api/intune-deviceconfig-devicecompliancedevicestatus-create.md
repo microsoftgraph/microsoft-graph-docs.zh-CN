@@ -4,12 +4,13 @@ description: 创建新的 deviceComplianceDeviceStatus 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c185490a97a798baba9110c9e28d1750bc8f8ea9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b33cb80c584df64eb7130d24c706b5bb0c16b413
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567842"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997755"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>创建 deviceComplianceDeviceStatus
 
@@ -48,7 +49,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |deviceDisplayName|String|DevicePolicyStatus 的设备名。|
 |userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|

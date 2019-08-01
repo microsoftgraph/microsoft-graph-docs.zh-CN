@@ -4,12 +4,13 @@ description: 更新 managedDeviceMobileAppConfigurationUserSummary 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc12a1322dadc4cfafd28b64ec35002ece2ee34e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 90aadd0cf51843bad7888777c2a8de7a75beb228
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578111"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013918"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>更新 managedDeviceMobileAppConfigurationUserSummary
 

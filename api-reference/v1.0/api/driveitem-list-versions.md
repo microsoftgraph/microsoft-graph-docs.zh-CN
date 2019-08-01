@@ -3,12 +3,14 @@ title: 列出 DriveItem 的版本
 description: OneDrive 和 SharePoint 可以配置为保留文件的历史记录。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2020cfeaaf8a47ca92312a3650813f910d9b9006
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: df141939ee8ad27a96ac079ca04c1572b3f46332
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881719"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006911"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
 

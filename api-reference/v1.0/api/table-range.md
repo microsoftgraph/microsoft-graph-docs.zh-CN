@@ -4,12 +4,13 @@ description: 获取与整个表相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: abbdf211e4ef26d26eac23666244492e2828dfe5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2dcf602836fe7ca7ae2f69c3650fbe0edd1cc996
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891562"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021366"
 ---
 # <a name="table-range"></a>Table:Range
 

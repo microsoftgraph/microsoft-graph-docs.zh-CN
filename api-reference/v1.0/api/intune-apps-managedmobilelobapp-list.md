@@ -4,12 +4,13 @@ description: 列出 managedMobileLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: beb459a714679dd7930c8eaf1bd215e61b62cf11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0b46fc8c0d158402edc167a53b063eadb11578f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453791"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013834"
 ---
 # <a name="list-managedmobilelobapps"></a>列出 managedMobileLobApps
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453791"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

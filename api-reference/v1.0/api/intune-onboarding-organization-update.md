@@ -4,12 +4,13 @@ description: 更新 organization 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01c366d5236a93da64d3f73d733ddfd264110fc0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 195aac351138cc133fbb48877b2e68d27a77954f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561584"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024026"
 ---
 # <a name="update-organization"></a>更新组织
 

@@ -4,12 +4,13 @@ description: 删除 managedIOSStoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff7a8511d767160367a156bd3acae504e7686a14
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 550d4dc9ed223b82ca3629177d2f128cb0c7d17c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584738"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013841"
 ---
 # <a name="delete-managediosstoreapp"></a>删除 managedIOSStoreApp
 

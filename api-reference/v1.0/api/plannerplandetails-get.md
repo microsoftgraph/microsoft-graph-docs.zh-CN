@@ -4,12 +4,13 @@ description: 检索 **plannerplandetails** 对象的属性和关系。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 958097ead1275d9812e1d0de351e0a21bda78e85
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 13f96c22d636224d8e85511ac3515e699aa562b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022393"
 ---
 # <a name="get-plannerplandetails"></a>获取 plannerPlanDetails
 

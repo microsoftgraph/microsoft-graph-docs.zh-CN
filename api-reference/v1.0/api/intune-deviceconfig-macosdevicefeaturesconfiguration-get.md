@@ -4,12 +4,13 @@ description: 读取 macOSDeviceFeaturesConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6bb2d75fc66b97cf4dab6d28261d29cbb7cbd612
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1145cceb036d41df96f9c8dbdcb4653da1c8e945
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562172"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997454"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>获取 macOSDeviceFeaturesConfiguration
 

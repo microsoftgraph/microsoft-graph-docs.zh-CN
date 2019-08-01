@@ -4,12 +4,13 @@ description: 检索 rangefont 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1f636c4de22eee874db50a2642aedb84f6a9a55b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 40220cac8d7c28e93912c56b2bc1ed64be29fb08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883150"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975779"
 ---
 # <a name="get-rangefont"></a>获取 RangeFont
 

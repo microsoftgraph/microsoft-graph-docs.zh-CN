@@ -4,12 +4,13 @@ description: 创建新的 mobileAppContentFile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c78f6575a1d5f66e9989e876a03839ab2a8849
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554425"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002011"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
@@ -50,7 +51,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |:---|:---|:---|
 |azureStorageUri|String|Azure 存储 URI。|
 |isCommitted|Boolean|指示文件是否已提交的值。|
-|id|字符串|文件 ID。|
+|id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
 |name|String|文件名称。|
 |size|Int64|加密前的文件大小。|

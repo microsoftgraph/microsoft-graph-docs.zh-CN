@@ -4,12 +4,13 @@ description: 读取 deviceComplianceActionItem 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2fbbc9ff5625b26bd5dbb6464e87717f3727add
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 23a34f0f3da6023dfb62e270b834549972a72305
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572547"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997776"
 ---
 # <a name="get-devicecomplianceactionitem"></a>获取 deviceComplianceActionItem
 

@@ -4,12 +4,13 @@ description: 检索 tablerow 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 011dca8db958d03ffb49582ff54e66ca9262d964
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ac6b142277b8d72e40455a14570274f03db74f62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024348"
 ---
 # <a name="list-tablerowcollection"></a>列出 TableRowCollection
 
