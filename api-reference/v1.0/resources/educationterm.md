@@ -4,30 +4,29 @@ description: 一个学期。 它表示学年的指定部分。 在 educationClas
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9c26565b552471fe2601d8e3cb629fd933d72937
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463696"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032618"
 ---
-# <a name="educationterm-resource-type"></a><span data-ttu-id="c069f-105">educationTerm 资源类型</span><span class="sxs-lookup"><span data-stu-id="c069f-105">educationTerm resource type</span></span>
+# <a name="educationterm-resource-type"></a><span data-ttu-id="86a3b-105">educationTerm 资源类型</span><span class="sxs-lookup"><span data-stu-id="86a3b-105">educationTerm resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="86a3b-106">一个学期。</span><span class="sxs-lookup"><span data-stu-id="86a3b-106">A term.</span></span> <span data-ttu-id="86a3b-107">它表示学年的指定部分。</span><span class="sxs-lookup"><span data-stu-id="86a3b-107">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="86a3b-108">在 [educationClass](educationclass.md) 中使用。</span><span class="sxs-lookup"><span data-stu-id="86a3b-108">It is used within [educationClass](educationclass.md).</span></span>
 
-<span data-ttu-id="c069f-106">一个学期。</span><span class="sxs-lookup"><span data-stu-id="c069f-106">A term.</span></span> <span data-ttu-id="c069f-107">它表示学年的指定部分。</span><span class="sxs-lookup"><span data-stu-id="c069f-107">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="c069f-108">在 [educationClass](educationclass.md) 中使用。</span><span class="sxs-lookup"><span data-stu-id="c069f-108">It is used within [educationClass](educationclass.md).</span></span>
-
-## <a name="properties"></a><span data-ttu-id="c069f-109">属性</span><span class="sxs-lookup"><span data-stu-id="c069f-109">Properties</span></span>
-| <span data-ttu-id="c069f-110">属性</span><span class="sxs-lookup"><span data-stu-id="c069f-110">Property</span></span>     | <span data-ttu-id="c069f-111">类型</span><span class="sxs-lookup"><span data-stu-id="c069f-111">Type</span></span>   |<span data-ttu-id="c069f-112">说明</span><span class="sxs-lookup"><span data-stu-id="c069f-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="86a3b-109">属性</span><span class="sxs-lookup"><span data-stu-id="86a3b-109">Properties</span></span>
+| <span data-ttu-id="86a3b-110">属性</span><span class="sxs-lookup"><span data-stu-id="86a3b-110">Property</span></span>     | <span data-ttu-id="86a3b-111">类型</span><span class="sxs-lookup"><span data-stu-id="86a3b-111">Type</span></span>   |<span data-ttu-id="86a3b-112">说明</span><span class="sxs-lookup"><span data-stu-id="86a3b-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c069f-113">displayName</span><span class="sxs-lookup"><span data-stu-id="c069f-113">displayName</span></span>| <span data-ttu-id="c069f-114">String</span><span class="sxs-lookup"><span data-stu-id="c069f-114">String</span></span>| <span data-ttu-id="c069f-115">学期的显示名称。</span><span class="sxs-lookup"><span data-stu-id="c069f-115">Display name of the term.</span></span>| 
-|<span data-ttu-id="c069f-116">externalId</span><span class="sxs-lookup"><span data-stu-id="c069f-116">externalId</span></span>|<span data-ttu-id="c069f-117">String</span><span class="sxs-lookup"><span data-stu-id="c069f-117">String</span></span>| <span data-ttu-id="c069f-118">同步系统中的学期 ID。</span><span class="sxs-lookup"><span data-stu-id="c069f-118">ID of term in the syncing system.</span></span>|
-|<span data-ttu-id="c069f-119">startDate</span><span class="sxs-lookup"><span data-stu-id="c069f-119">startDate</span></span>|<span data-ttu-id="c069f-120">日期</span><span class="sxs-lookup"><span data-stu-id="c069f-120">Date</span></span>|<span data-ttu-id="c069f-121">学期开始日期。</span><span class="sxs-lookup"><span data-stu-id="c069f-121">Start of the term.</span></span>|
-|<span data-ttu-id="c069f-122">endDate</span><span class="sxs-lookup"><span data-stu-id="c069f-122">endDate</span></span>|<span data-ttu-id="c069f-123">Date</span><span class="sxs-lookup"><span data-stu-id="c069f-123">Date</span></span>|<span data-ttu-id="c069f-124">学期结束日期。</span><span class="sxs-lookup"><span data-stu-id="c069f-124">End of the term.</span></span>|
+|<span data-ttu-id="86a3b-113">displayName</span><span class="sxs-lookup"><span data-stu-id="86a3b-113">displayName</span></span>| <span data-ttu-id="86a3b-114">String</span><span class="sxs-lookup"><span data-stu-id="86a3b-114">String</span></span>| <span data-ttu-id="86a3b-115">学期的显示名称。</span><span class="sxs-lookup"><span data-stu-id="86a3b-115">Display name of the term.</span></span>| 
+|<span data-ttu-id="86a3b-116">externalId</span><span class="sxs-lookup"><span data-stu-id="86a3b-116">externalId</span></span>|<span data-ttu-id="86a3b-117">String</span><span class="sxs-lookup"><span data-stu-id="86a3b-117">String</span></span>| <span data-ttu-id="86a3b-118">同步系统中的学期 ID。</span><span class="sxs-lookup"><span data-stu-id="86a3b-118">ID of term in the syncing system.</span></span>|
+|<span data-ttu-id="86a3b-119">startDate</span><span class="sxs-lookup"><span data-stu-id="86a3b-119">startDate</span></span>|<span data-ttu-id="86a3b-120">日期</span><span class="sxs-lookup"><span data-stu-id="86a3b-120">Date</span></span>|<span data-ttu-id="86a3b-121">学期开始日期。</span><span class="sxs-lookup"><span data-stu-id="86a3b-121">Start of the term.</span></span>|
+|<span data-ttu-id="86a3b-122">endDate</span><span class="sxs-lookup"><span data-stu-id="86a3b-122">endDate</span></span>|<span data-ttu-id="86a3b-123">Date</span><span class="sxs-lookup"><span data-stu-id="86a3b-123">Date</span></span>|<span data-ttu-id="86a3b-124">学期结束日期。</span><span class="sxs-lookup"><span data-stu-id="86a3b-124">End of the term.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c069f-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c069f-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="86a3b-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="86a3b-125">JSON representation</span></span>
 
-<span data-ttu-id="c069f-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c069f-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="86a3b-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="86a3b-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,15 +47,10 @@ ms.locfileid: "32463696"
 
 <!-- uuid: 4e9d671f-3068-4e09-aba2-b39e81a0e452
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "educationTerm resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationterm.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

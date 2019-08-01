@@ -4,30 +4,31 @@ description: 已登录用户的主邮箱的设置。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 53ded2d60161d833f70a3b747e0ec35953d5bd39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573996"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036300"
 ---
-# <a name="mailboxsettings-resource-type"></a><span data-ttu-id="1c08f-103">mailboxSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="1c08f-103">mailboxSettings resource type</span></span>
+# <a name="mailboxsettings-resource-type"></a><span data-ttu-id="01d04-103">mailboxSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="01d04-103">mailboxSettings resource type</span></span>
 
-<span data-ttu-id="1c08f-104">已登录用户的主邮箱的设置。</span><span class="sxs-lookup"><span data-stu-id="1c08f-104">Settings for the primary mailbox of the signed-in user.</span></span>
+<span data-ttu-id="01d04-104">已登录用户的主邮箱的设置。</span><span class="sxs-lookup"><span data-stu-id="01d04-104">Settings for the primary mailbox of the signed-in user.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="1c08f-105">属性</span><span class="sxs-lookup"><span data-stu-id="1c08f-105">Properties</span></span>
-| <span data-ttu-id="1c08f-106">属性</span><span class="sxs-lookup"><span data-stu-id="1c08f-106">Property</span></span>     | <span data-ttu-id="1c08f-107">类型</span><span class="sxs-lookup"><span data-stu-id="1c08f-107">Type</span></span>   |<span data-ttu-id="1c08f-108">说明</span><span class="sxs-lookup"><span data-stu-id="1c08f-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="01d04-105">属性</span><span class="sxs-lookup"><span data-stu-id="01d04-105">Properties</span></span>
+| <span data-ttu-id="01d04-106">属性</span><span class="sxs-lookup"><span data-stu-id="01d04-106">Property</span></span>     | <span data-ttu-id="01d04-107">类型</span><span class="sxs-lookup"><span data-stu-id="01d04-107">Type</span></span>   |<span data-ttu-id="01d04-108">说明</span><span class="sxs-lookup"><span data-stu-id="01d04-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1c08f-109">archiveFolder</span><span class="sxs-lookup"><span data-stu-id="1c08f-109">archiveFolder</span></span>|<span data-ttu-id="1c08f-110">string</span><span class="sxs-lookup"><span data-stu-id="1c08f-110">string</span></span>|<span data-ttu-id="1c08f-111">用户存档文件夹的文件夹 ID。</span><span class="sxs-lookup"><span data-stu-id="1c08f-111">Folder ID of an archive folder for the user.</span></span>|
-|<span data-ttu-id="1c08f-112">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="1c08f-112">automaticRepliesSetting</span></span>|[<span data-ttu-id="1c08f-113">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="1c08f-113">automaticRepliesSetting</span></span>](automaticrepliessetting.md)|<span data-ttu-id="1c08f-114">自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。</span><span class="sxs-lookup"><span data-stu-id="1c08f-114">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.</span></span>|
-|<span data-ttu-id="1c08f-115">语言</span><span class="sxs-lookup"><span data-stu-id="1c08f-115">language</span></span>|[<span data-ttu-id="1c08f-116">localeInfo</span><span class="sxs-lookup"><span data-stu-id="1c08f-116">localeInfo</span></span>](localeinfo.md)|<span data-ttu-id="1c08f-117">用户的区域设置信息，包括首选语言和国家/地区。</span><span class="sxs-lookup"><span data-stu-id="1c08f-117">The locale information for the user, including the preferred language and country/region.</span></span>|
-|<span data-ttu-id="1c08f-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="1c08f-118">timeZone</span></span>|<span data-ttu-id="1c08f-119">string</span><span class="sxs-lookup"><span data-stu-id="1c08f-119">string</span></span>|<span data-ttu-id="1c08f-120">用户邮箱的默认时区。</span><span class="sxs-lookup"><span data-stu-id="1c08f-120">The default time zone for the user's mailbox.</span></span>|
-|<span data-ttu-id="1c08f-121">workingHours</span><span class="sxs-lookup"><span data-stu-id="1c08f-121">workingHours</span></span>|[<span data-ttu-id="1c08f-122">workingHours</span><span class="sxs-lookup"><span data-stu-id="1c08f-122">workingHours</span></span>](workinghours.md)|<span data-ttu-id="1c08f-123">特定时区用户一周的工作天数和小时数。</span><span class="sxs-lookup"><span data-stu-id="1c08f-123">The days of the week and hours in a specific time zone that the user works.</span></span>|
+|<span data-ttu-id="01d04-109">archiveFolder</span><span class="sxs-lookup"><span data-stu-id="01d04-109">archiveFolder</span></span>|<span data-ttu-id="01d04-110">string</span><span class="sxs-lookup"><span data-stu-id="01d04-110">string</span></span>|<span data-ttu-id="01d04-111">用户存档文件夹的文件夹 ID。</span><span class="sxs-lookup"><span data-stu-id="01d04-111">Folder ID of an archive folder for the user.</span></span>|
+|<span data-ttu-id="01d04-112">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="01d04-112">automaticRepliesSetting</span></span>|[<span data-ttu-id="01d04-113">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="01d04-113">automaticRepliesSetting</span></span>](automaticrepliessetting.md)|<span data-ttu-id="01d04-114">自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。</span><span class="sxs-lookup"><span data-stu-id="01d04-114">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.</span></span>|
+|<span data-ttu-id="01d04-115">语言</span><span class="sxs-lookup"><span data-stu-id="01d04-115">language</span></span>|[<span data-ttu-id="01d04-116">localeInfo</span><span class="sxs-lookup"><span data-stu-id="01d04-116">localeInfo</span></span>](localeinfo.md)|<span data-ttu-id="01d04-117">用户的区域设置信息，包括首选语言和国家/地区。</span><span class="sxs-lookup"><span data-stu-id="01d04-117">The locale information for the user, including the preferred language and country/region.</span></span>|
+|<span data-ttu-id="01d04-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="01d04-118">timeZone</span></span>|<span data-ttu-id="01d04-119">string</span><span class="sxs-lookup"><span data-stu-id="01d04-119">string</span></span>|<span data-ttu-id="01d04-120">用户邮箱的默认时区。</span><span class="sxs-lookup"><span data-stu-id="01d04-120">The default time zone for the user's mailbox.</span></span>|
+|<span data-ttu-id="01d04-121">workingHours</span><span class="sxs-lookup"><span data-stu-id="01d04-121">workingHours</span></span>|[<span data-ttu-id="01d04-122">workingHours</span><span class="sxs-lookup"><span data-stu-id="01d04-122">workingHours</span></span>](workinghours.md)|<span data-ttu-id="01d04-123">特定时区用户一周的工作天数和小时数。</span><span class="sxs-lookup"><span data-stu-id="01d04-123">The days of the week and hours in a specific time zone that the user works.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1c08f-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1c08f-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="01d04-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="01d04-124">JSON representation</span></span>
 
-<span data-ttu-id="1c08f-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1c08f-125">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="01d04-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="01d04-125">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
