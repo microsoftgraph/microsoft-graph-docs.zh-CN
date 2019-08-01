@@ -4,12 +4,13 @@ description: " 不支持 Intune 混合部署。 "
 author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 0c30436c80af8621b1c633d12a11489f7e586f00
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+doc_type: conceptualPageType
+ms.openlocfilehash: a5007c629fd48165ceedd6a829ce8c21fc5e9c10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133850"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027340"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 

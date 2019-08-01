@@ -4,12 +4,13 @@ description: 适用于 Onenote 资源的入口点。
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 8240336bfcb9e45e33172c2c1551b71a65c315e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0311e514c7d15e8b5fafcc94beecaecdcc6d9d49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035852"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 

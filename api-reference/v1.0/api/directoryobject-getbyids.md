@@ -4,12 +4,13 @@ description: select` 查询选项不适用于此操作。
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8452e1a700d4e5c6a63db8bf126ca32c7bfad19d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8e1b1a0bb95d1dec4b8d862810ec2525e4a3c79c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893101"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016846"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 

@@ -4,12 +4,13 @@ description: 可以使用 Microsoft Graph 构建基于用户、用户与其他�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bfd7778d3fdc9675880b98a356dd690c4b1eaec8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: b0744662008b0b82167ce8779f478f260eedee57
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456883"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033486"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 

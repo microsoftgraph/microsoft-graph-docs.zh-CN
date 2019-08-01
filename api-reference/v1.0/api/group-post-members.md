@@ -4,12 +4,13 @@ description: 通过 **members** 导航属性将成员添加到 Office 365 组、
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 71a2eba3523898621231f29be775ba03ae45c517
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 624943ce0ffb1984fa4becb2948b800825dce35f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890073"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016236"
 ---
 # <a name="add-member"></a>添加成员
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。

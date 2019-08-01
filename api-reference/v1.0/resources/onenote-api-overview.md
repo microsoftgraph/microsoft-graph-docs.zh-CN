@@ -1,28 +1,26 @@
 ---
 title: 使用 OneNote REST API
-description: 'Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 OneNote 笔记本、节和页面的授权访问权限。 使用适当的委派或应用程序权限，你的应用程序可以访问已登录用户或租户中任何用户的 OneNote 数据。 '
-localization_priority: Normal
+description: Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 OneNote 笔记本、节和页面的授权访问权限。 使用适当的委派或应用程序权限，你的应用程序可以访问已登录用户或租户中任何用户的 OneNote 数据。
+localization_priority: Priority
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ceb5ac30786ecfd207a2076d471e9d004b60f8d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: c22f38e7002e7619b1e9ee182866e850cf83cdf9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462954"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035915"
 ---
 # <a name="use-the-onenote-rest-api"></a>使用 OneNote REST API
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 OneNote 笔记本、节和页面的授权访问权限。 使用[适当的委派或应用程序权限](/graph/permissions-reference#notes-permissions)，你的应用程序可以访问已登录用户或租户中任何用户的 OneNote 数据。 
+Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 OneNote 笔记本、节和页面的授权访问权限。 使用[适当的委派或应用程序权限](/graph/permissions-reference#notes-permissions)，你的应用程序可以访问已登录用户或租户中任何用户的 OneNote 数据。
 
 ## <a name="root-url"></a>根 URL
 OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式。
 ```
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
-
 URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本：
 
 - `v1.0` 用于稳定的生产代码。
@@ -46,15 +44,16 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 > **注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。
 
 ### <a name="group-notebooks"></a>组笔记本
-
 要访问组所有的笔记本，请使用下列服务根 URL：
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 ### <a name="sharepoint-site-notebooks"></a>SharePoint 网站笔记本
+
 要访问 SharePoint 团队网站拥有的笔记本，请使用下列服务根 URL：
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+

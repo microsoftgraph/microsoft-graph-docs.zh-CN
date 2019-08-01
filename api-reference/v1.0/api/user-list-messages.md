@@ -4,12 +4,13 @@ description: 获取登录用户的邮箱（包括“已删除邮件”和“待�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 408b70ea3cf16278637c9e31bba5a4a9d0c5fd5a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b53ec824e5dd368b0f563c5040270feef0f3ea7d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026829"
 ---
 # <a name="list-messages"></a>列出邮件
 

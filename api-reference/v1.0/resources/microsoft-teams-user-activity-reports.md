@@ -4,12 +4,13 @@ description: 使用 Microsoft Teams 活动报告了解组织中的 Microsoft Tea
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 519094d2c569f418143420909ba871425a4b4af2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 8e8dff7029614f509eaa52d0af27601772c2f9ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036083"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Microsoft Teams 用户活动报告
 

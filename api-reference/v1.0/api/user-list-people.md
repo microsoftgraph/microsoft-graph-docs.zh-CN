@@ -4,12 +4,13 @@ description: 检索一组 person 对象，这些对象按与 user 的相关程�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 316ca4e1e1e3238519bf43e07dc960211060684b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 458194fe0299c5607268afed482a5112e1fda51b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882861"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026774"
 ---
 # <a name="list-people"></a>列出人员
 

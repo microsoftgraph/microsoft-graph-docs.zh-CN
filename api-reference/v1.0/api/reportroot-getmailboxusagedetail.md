@@ -4,12 +4,13 @@ description: 获取邮箱使用情况的详细信息。
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 451be57666719f011ba89992089b54ad16d88f29
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fb297d3be564a585a5346961aa6e39169cf61b92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894426"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025132"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot：getMailboxUsageDetail
 

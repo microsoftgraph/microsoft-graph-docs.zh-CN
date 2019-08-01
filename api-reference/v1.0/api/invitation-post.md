@@ -4,12 +4,13 @@ description: 使用该 API 创建新的邀请。 邀请会将外部用户添加�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 31504e7ee292bad076fdff3cc9268c1a4168f373
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d4d991e5b90c12e698aa2ffefe9b024828c96f0d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888419"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025594"
 ---
 # <a name="create-invitation"></a>创建邀请
 

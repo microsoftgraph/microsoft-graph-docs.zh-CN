@@ -4,12 +4,13 @@ description: 发送请求正文中指定的邮件。默认情况下，邮件保�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9383da54b3cf326f27cc4b6f7c63f0bddb20a60
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e2b61b06a98a1eae4ed1f14adf1125ce0704c7d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893277"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026577"
 ---
 # <a name="send-mail"></a>发送邮件
 

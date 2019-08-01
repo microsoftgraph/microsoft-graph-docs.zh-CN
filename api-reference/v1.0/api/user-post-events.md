@@ -2,14 +2,15 @@
 title: 创建事件
 description: 在用户的默认日历或指定日历中创建事件。
 localization_priority: Priority
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9837f5d203e1d1f02ef93c732633bc5867c6098a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 05d06d396d04cd65066d69d2ba9951625cd75133
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885690"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026752"
 ---
 # <a name="create-event"></a>创建事件
 
