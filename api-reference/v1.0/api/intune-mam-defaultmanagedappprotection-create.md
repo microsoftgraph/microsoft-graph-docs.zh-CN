@@ -4,12 +4,13 @@ description: 创建新的 defaultManagedAppProtection 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9af3387a59b8890fa75b385e2dcaf8c73d823cf6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 26189aeabe2e89926a0c0f1057c34f7cf30d2d7d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020708"
 ---
 # <a name="create-defaultmanagedappprotection"></a>创建 defaultManagedAppProtection
 

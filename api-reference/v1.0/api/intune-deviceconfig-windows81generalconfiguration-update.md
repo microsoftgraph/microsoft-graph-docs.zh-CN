@@ -4,12 +4,13 @@ description: 更新 windows81GeneralConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f76f0c3fb7c4f0ae7fbe35b1ff37ce30ce2c7c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac5115ec2dae19fc111fb0dfea8a8092fbbb031c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019980"
 ---
 # <a name="update-windows81generalconfiguration"></a>更新 windows81GeneralConfiguration
 
@@ -48,33 +49,33 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountsBlockAddingNonMicrosoftAccountEmail|布尔|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
-|applyOnlyToWindows81|布尔|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。|
-|browserBlockAutofill|布尔|指示是否阻止自动填充。|
-|browserBlockAutomaticDetectionOfIntranetSites|布尔|指示是否阻止自动检测 Intranet 站点。|
-|browserBlockEnterpriseModeAccess|布尔|指示是否阻止企业模式访问。|
-|browserBlockJavaScript|布尔|指示是否阻止用户使用 JavaScript。|
-|browserBlockPlugins|布尔|指示是否阻止插件。|
-|browserBlockPopups|布尔|指示是否阻止弹出窗口。|
-|browserBlockSendingDoNotTrackHeader|布尔|指示是否阻止用户发送 Do Not Track 标头。|
-|browserBlockSingleWordEntryOnIntranetSites|布尔|指示是否阻止在 Intranet 站点上使用单字条目。|
-|browserRequireSmartScreen|布尔|指示是否要求用户使用智能屏幕筛选器。|
-|browserEnterpriseModeSiteListLocation|字符串|企业模式网站列表位置。 可能是本地文件、本地网络或 http 位置。|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|指示是否阻止用户将电子邮件帐户添加到未与 Microsoft 帐户关联的设备。|
+|applyOnlyToWindows81|Boolean|指示此策略是否仅适用于 Windows 8.1 的值。 此属性是只读的。|
+|browserBlockAutofill|Boolean|指示是否阻止自动填充。|
+|browserBlockAutomaticDetectionOfIntranetSites|Boolean|指示是否阻止自动检测 Intranet 站点。|
+|browserBlockEnterpriseModeAccess|Boolean|指示是否阻止企业模式访问。|
+|browserBlockJavaScript|Boolean|指示是否阻止用户使用 JavaScript。|
+|browserBlockPlugins|Boolean|指示是否阻止插件。|
+|browserBlockPopups|Boolean|指示是否阻止弹出窗口。|
+|browserBlockSendingDoNotTrackHeader|Boolean|指示是否阻止用户发送 Do Not Track 标头。|
+|browserBlockSingleWordEntryOnIntranetSites|Boolean|指示是否阻止在 Intranet 站点上使用单字条目。|
+|browserRequireSmartScreen|Boolean|指示是否要求用户使用智能屏幕筛选器。|
+|browserEnterpriseModeSiteListLocation|String|企业模式网站列表位置。 可能是本地文件、本地网络或 http 位置。|
 |browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|Internet 安全级别。 可取值为：`userDefined`、`medium`、`mediumHigh`、`high`。|
 |browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|Intranet 安全级别。 可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
 |browserLoggingReportLocation|String|日志记录报表位置。|
-|browserRequireHighSecurityForRestrictedSites|布尔|指示是否要求受限站点具有高安全性。|
-|browserRequireFirewall|布尔|指示是否需要防火墙。|
-|browserRequireFraudWarning|布尔|指示是否需要诈骗警告。|
+|browserRequireHighSecurityForRestrictedSites|Boolean|指示是否要求受限站点具有高安全性。|
+|browserRequireFirewall|Boolean|指示是否需要防火墙。|
+|browserRequireFraudWarning|Boolean|指示是否需要诈骗警告。|
 |browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|受信任的站点安全级别。 可取值为：`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high`。|
-|cellularBlockDataRoaming|布尔|指示是否阻止数据漫游。|
-|diagnosticsBlockDataSubmission|布尔|指示是否阻止诊断数据提交。|
+|cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
+|diagnosticsBlockDataSubmission|Boolean|指示是否阻止诊断数据提交。|
 |passwordBlockPicturePasswordAndPin|Boolean|指示是否阻止用户使用图片密码和 PIN。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
@@ -83,7 +84,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 24|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前登录失败的次数。|
-|storageRequireDeviceEncryption|布尔|指示是否要求对移动设备加密。|
+|storageRequireDeviceEncryption|Boolean|指示是否要求对移动设备加密。|
 |updatesRequireAutomaticUpdates|Boolean|指示是否需要自动更新。|
 |userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md)|用户帐户控制设置。 可取值为：`userDefined`、`alwaysNotify`、`notifyOnAppChanges`、`notifyOnAppChangesWithoutDimming`、`neverNotify`。|
 |workFoldersUrl|String|工作文件夹 URL。|

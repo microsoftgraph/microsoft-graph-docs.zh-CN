@@ -3,12 +3,14 @@ title: 创建或替换活动
 description: 为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的**historyItems** , 则可以使用深层插入。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3f0864d5bdd8e393a21df49ec3fade6930fdcbde
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 8f80d17f64b4f04816670d8e007ca7db82755c0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575308"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025370"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
@@ -32,9 +34,9 @@ ms.locfileid: "32575308"
 PUT /me/activities/{appActivityId}
 ```
 
-> **注意:** url 中的 appActivityId 需要是 url 安全的 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式), 但原始 appActivityId 不必是 URL 安全的。
+> **注意:** URL 中的 appActivityId 需要是 URL 安全的 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式), 但原始 appActivityId 不必是 URL 安全的。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 类型   | 说明               |
 |:--------------|:-------|:--------------------------|
@@ -223,7 +225,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
     "blockType": "ignored",

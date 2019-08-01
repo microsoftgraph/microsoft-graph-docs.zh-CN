@@ -4,12 +4,13 @@ description: 使用此 API 将 附件 添加到事件。 自此处起
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f458795c3107448e02f36b052a37f70e2d93995d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c0f2987814c29bfab914b7efe6c744dec2c6f9e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887280"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015054"
 ---
 # <a name="add-attachment"></a>Add attachment
 

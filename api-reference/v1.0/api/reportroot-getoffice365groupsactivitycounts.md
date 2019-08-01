@@ -4,12 +4,13 @@ description: 获取跨组工作负载的组活动数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: ea2bb93c93c6532a241e5141a4e45436183b93be
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 43cbfe0d7a7a1e8ea76bb446704a4556a9f072c5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025032"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 

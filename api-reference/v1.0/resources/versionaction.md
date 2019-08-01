@@ -5,16 +5,17 @@ title: versionAction 资源类型
 description: VersionAction 对象提供有关导致新项目版本的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0d05ad93c59ba736dd90276fc5e3db6e05740344
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 22f06691824d2ffa5b773a796b4c456cb2fcaecc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970633"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033444"
 ---
 # <a name="versionaction-resource-type"></a>versionAction 资源类型
 
-[activity] [**ItemActivity**]上的**versionAction**资源存在指示活动导致创建一个新版本。
+[**ItemActivity**][activity]上的**versionAction**资源存在指示活动导致创建一个新版本。
 
 >**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

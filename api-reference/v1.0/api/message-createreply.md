@@ -4,12 +4,13 @@ description: 创建回复的草稿以指定邮件。 然后，可以更新草稿
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 409ca69cc1664cf486748ad0c39d888086e54a33
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4dd3ced1d79f80c4406876143f648446c0211f47
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889742"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025419"
 ---
 # <a name="message-createreply"></a>message: createReply
 

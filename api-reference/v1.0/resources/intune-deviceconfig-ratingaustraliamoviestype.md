@@ -4,12 +4,13 @@ description: 澳大利亚的电影评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3106197ce0efd3c0355461df58c5d22c314a08a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 8b0680d55f99da651cc2324220616469c41276a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560800"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027977"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 
@@ -22,11 +23,11 @@ ms.locfileid: "32560800"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|概要|2 |G 分类适用于所有人|
-|parentalGuidance|3 |PG 推荐查看者为15的人, 并提供来自家长或监护人的指导|
-|成熟|4 |不建议在15下对查看器使用 M 分类|
-|agesAbove15|5 |MA15 + 分类不适用于15岁以上的查看器|
-|agesAbove18|6 |R18 + 分类不适用于18岁以上的观众|
+|概要|双面|G 分类适用于所有人|
+|parentalGuidance|第三章|PG 推荐查看者为15的人, 并提供来自家长或监护人的指导|
+|成熟|4|不建议在15下对查看器使用 M 分类|
+|agesAbove15|5|MA15 + 分类不适用于15岁以上的查看器|
+|agesAbove18|型|R18 + 分类不适用于18岁以上的观众|
 
 
 

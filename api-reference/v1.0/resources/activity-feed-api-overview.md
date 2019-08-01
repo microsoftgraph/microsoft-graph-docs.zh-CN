@@ -3,12 +3,14 @@ title: 使用活动源 REST API
 description: '您可以使用 Microsoft Graph 中的活动源 API, 在设备和平台之间恢复用户的活动。 活动源 API 请求通过委派权限和用户活动权限 (可用于个人或工作和学校帐户) 代表用户执行。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 927e83a57a3b199bddbc05394c58facfff89b25c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569471"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030126"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 
@@ -63,7 +65,7 @@ Each activity represents a unique...
 
 - 查看[活动资源](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity)并定义您的应用程序活动, 以帮助用户恢复重要任务。
 - 浏览[自适应卡示例](https://adaptivecards.io/samples/)示例, 以获取活动**pop**的创意。  
-- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
+- 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
 
 **是否要查找更多创意？** 
 
