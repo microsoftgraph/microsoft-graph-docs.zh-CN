@@ -4,12 +4,13 @@ description: 邮件、联系人和社交网络中关于某个人员的信息聚�
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: c92709143ee7def0ede98dfdb81a419df43c4493
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 66c37327f329995a84a8017625f86fde989b4e3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035544"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 

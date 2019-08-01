@@ -4,12 +4,13 @@ description: 获取用户的直接下属。 返回指定此用户作为经理的
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c9549fe4dfc5c91ec4cdc8278ffbeb8165a3b3a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 35b1fd293881bd4320dbfce8de5294ac143489bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888894"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026927"
 ---
 # <a name="list-directreports"></a>列出 directReports
 

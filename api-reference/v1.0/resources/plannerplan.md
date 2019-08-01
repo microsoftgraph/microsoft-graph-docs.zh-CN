@@ -4,12 +4,13 @@ description: '**plannerPlan** 资源表示 Office 365 中的计划。 计划可�
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 9e77f2c0163f9093d931c46098498caa8c43f42c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1f928252963c7796a396e1e342b413d135fb1764
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462289"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035180"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 

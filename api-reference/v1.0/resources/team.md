@@ -4,12 +4,13 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff264052fd1a30c12935a3b7cf0d9e250597a434
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f5694c2708a02e3e6d4d766e9af403dcaefac335
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534449"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033906"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 

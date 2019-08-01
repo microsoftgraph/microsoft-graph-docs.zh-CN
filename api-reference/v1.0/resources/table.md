@@ -4,12 +4,13 @@ description: 表示 Excel 表格。
 author: lumine2008
 localization_priority: Priority
 ms.prod: excel
-ms.openlocfilehash: 97755052a1f0e5cf91fb45987870b498832ee735
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 05ca093ec9ab20d039242d231619bc710ac79925
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033983"
 ---
 # <a name="table-resource-type"></a>表资源类型
 

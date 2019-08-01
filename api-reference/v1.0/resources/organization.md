@@ -4,12 +4,13 @@ description: " 不支持创建和删除操作。 继承自 directoryObject。"
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8b0255883f4e97a7b4aa101073cf0fac1654519e
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: 24144efea87096d16bd6039748fb0bd0dbba87eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035698"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 

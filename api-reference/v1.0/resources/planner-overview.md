@@ -4,12 +4,13 @@ description: 你可以使用 Microsoft Graph 中的 Planner API 创建任务并�
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: d14ec6e535dc8f4ca690f50cdf7712eafcf5d2bb
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+doc_type: conceptualPageType
+ms.openlocfilehash: c2326aef5ba443cad8668669f189d97ca2da65ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820771"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035418"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 

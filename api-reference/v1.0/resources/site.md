@@ -5,12 +5,13 @@ title: site 资源
 description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 40add99dfbeee28d82b3d02def833497c01385df
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 56df3754ab0fc87e839e3eb71db06ea5b05c75e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034172"
 ---
 # <a name="site-resource"></a>site 资源
 

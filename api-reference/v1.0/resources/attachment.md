@@ -2,12 +2,15 @@
 title: attachment 资源类型
 description: 可向事件添加相关的内容，
 localization_priority: Priority
-ms.openlocfilehash: 284895871a0c6a80140ff248045b89d2de104c20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d47fde49a76f00658e39d9a3ae6629cd9bcf56b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030070"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 

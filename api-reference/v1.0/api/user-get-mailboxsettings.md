@@ -4,12 +4,13 @@ description: '获取用户的 mailboxSettings。 这包括自动答复设置（�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 687b25294d257beb8ae25bd94bd0ffd9c3a6ca70
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a577a2cda9206f2b79fc48aa6a6b1ce3af7741d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027144"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 

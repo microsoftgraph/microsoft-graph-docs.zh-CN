@@ -4,12 +4,13 @@ description: 通过 Microsoft Graph，可以访问 Office 365 使用情况报表
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c786d2a6c26a667f44037e1bcb2834dee757ae94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 918c079360ba944c7a94af8321cd384396fc5b0e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034711"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Office 365 使用情况报表
 

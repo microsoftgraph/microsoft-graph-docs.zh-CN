@@ -4,12 +4,13 @@ description: '获取用户邮箱中的 event 对象列表。 该列表中包含�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6dc8b7cc5109b054bb5b8285770c3cfdff6f381a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cfa2debd0c89393fa08751a59203bcac2261f688
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888860"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026906"
 ---
 # <a name="list-events"></a>列出事件
 

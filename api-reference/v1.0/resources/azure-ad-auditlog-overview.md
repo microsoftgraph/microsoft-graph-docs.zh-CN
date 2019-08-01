@@ -4,12 +4,13 @@ description: Azure Active Directory (Azure AD) 可跟踪用户活动和登录指
 localization_priority: Priority
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4df05291b4ce06312f4797b5f89ae49d74246ed5
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: conceptualPageType
+ms.openlocfilehash: 7c91aea96c93065a469b64bb3088540928e2e1d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033073"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 审核日志 API 概述
 

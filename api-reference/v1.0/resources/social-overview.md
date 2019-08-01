@@ -4,12 +4,13 @@ description: 可通过 Microsoft Graph 访问有价值的人员数据。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: bbfbcbf7826190e092929f48d02f98d3bc811153
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 6440012563b2cbebe7482ca11d00d6bfa7f13d5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563740"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034046"
 ---
 # <a name="people-overview"></a>“人员”概述
 

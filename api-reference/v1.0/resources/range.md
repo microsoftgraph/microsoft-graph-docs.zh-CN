@@ -4,12 +4,13 @@ description: 区域表示一个或多个相邻的单元格，如单元格、行�
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a97747f1dc8cfce10f5f219f1970c07b1f982a52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 346991b4cf4d545b3d7ccafb87cab9c9b698c940
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579513"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034942"
 ---
 # <a name="range-resource-type"></a>区域资源类型
 
@@ -71,7 +72,7 @@ ms.locfileid: "32579513"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[WorkbookRangeFormat](rangeformat.md)|返回一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。只读。|
-|sort|[WorkbookRangeSort](rangesort.md)|包含当前区域的工作表。 只读。|
+|sort|[WorkbookRangeSort](rangesort.md)|包含当前区域的工作表。只读。|
 |worksheet|[WorkbookWorksheet](worksheet.md)|包含当前区域的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -4,12 +4,13 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 03a1ffa8770772f57b0e1dc6901dbebfe8b40e23
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d0a4f11a1dd9db580ba5c3a5f9a2981cd21fd157
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987346"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033514"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 

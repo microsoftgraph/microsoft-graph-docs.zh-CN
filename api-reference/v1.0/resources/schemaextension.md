@@ -3,12 +3,14 @@ title: schemaExtension 资源类型（架构扩展）
 description: '可以通过架构扩展定义架构来扩展强类型的自定义数据并将其添加到资源类型。自定义数据在扩展资源上作为复杂类型显示。 '
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 72260112e2b23bf185ea86d039fec9e0af778fb9
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7c0bf49bc0de24cda47e309fdbfb1c4e75b42283
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778346"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034613"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension 资源类型（架构扩展）
 

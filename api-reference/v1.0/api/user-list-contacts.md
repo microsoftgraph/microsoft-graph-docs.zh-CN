@@ -4,12 +4,13 @@ description: 从已登录用户的默认联系人文件夹中获取联系人集�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c56dd378f26aa681a816a619eae659b80f2cd196
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a3532aac45ed2fcabadb2430b032f4bb3d7c9d9a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026962"
 ---
 # <a name="list-contacts"></a>列出联系人
 

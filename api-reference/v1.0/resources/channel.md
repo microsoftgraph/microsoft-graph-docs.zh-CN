@@ -4,12 +4,13 @@ description: '频道是的团队中的消息集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6c1f73746081e5b1e4f78acb91d43e33c1c9bf73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1db6133b4bb4c74e9515a9f14cc6f430ef0e32d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569457"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033012"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "32569457"
 |[列出选项卡](../api/teamstab-list.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
 |[获取选项卡](../api/teamstab-get.md) | [teamsTab](teamstab.md) | 读取固定到频道的选项卡。|
 |[添加选项卡](../api/teamstab-add.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
-|[删除选项卡](../api/teamstab-delete.md) | 无 | 从频道中删除（取消固定）选项卡。|
+|[删除选项卡](../api/teamstab-delete.md) | 无 | 将选项卡添加（固定）到频道。|
 |[更新选项卡](../api/teamstab-update.md) | [teamsTab](teamstab.md) | 更新选项卡属性。|
 
 ## <a name="properties"></a>属性

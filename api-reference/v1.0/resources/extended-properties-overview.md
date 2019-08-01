@@ -4,12 +4,13 @@ description: '扩展属性允许存储自定义数据，并专门用作应用程
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 935f97819155318a6bfc7c77d07bf8a308e512e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: e442c52d324b6e6561bd33b07626f8cd3a394a92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578097"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032555"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 

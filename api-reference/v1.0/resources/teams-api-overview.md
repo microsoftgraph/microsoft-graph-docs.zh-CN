@@ -4,12 +4,13 @@ description: Microsoft Teams 是 Office 365 中基于聊天的工作区，可提
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: b0462b350df52a85a1a452be6ce38def86600eb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: bd21b806635885e5feda3fde4c8fe6463aa9ec62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033829"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 

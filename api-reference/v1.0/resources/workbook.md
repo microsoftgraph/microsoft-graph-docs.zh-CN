@@ -4,12 +4,13 @@ description: 工作簿是顶级对象，它包含相关 workbook 对象，例如
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b4f0a439db5cc430e558f2d43215cb1c5c0f7779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 993063efa6eeddaae6bd70b8112f901342843452
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456869"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033374"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 

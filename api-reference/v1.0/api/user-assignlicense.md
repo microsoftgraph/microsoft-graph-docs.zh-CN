@@ -4,12 +4,13 @@ description: 为用户添加或删除订阅。还可以启用和禁用与订阅�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cdf3e2a0da30630ed725c1fc1d2031a936b03bc0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 16da9fd581033b7b58b044ad74e0bcc2c1d49b8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886934"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027179"
 ---
 # <a name="assignlicense"></a>assignLicense
 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。

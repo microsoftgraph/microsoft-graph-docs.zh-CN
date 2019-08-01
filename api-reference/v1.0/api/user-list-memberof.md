@@ -4,12 +4,13 @@ description: '返回用户是其直接成员的组和目录角色。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c564af17b8db32f77b8f3955b4ee328a9b10713e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 931c046e230d406f3f50313677f256aa31093a44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026857"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
