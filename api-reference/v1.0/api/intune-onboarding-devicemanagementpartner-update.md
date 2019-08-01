@@ -4,29 +4,30 @@ description: 更新 deviceManagementPartner 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb90210e753becbee984cc9c809e3cbdee089bee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a7bcbe549357c7f89702acf2194b153230356e20
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024180"
 ---
-# <a name="update-devicemanagementpartner"></a><span data-ttu-id="65b58-103">更新 deviceManagementPartner</span><span class="sxs-lookup"><span data-stu-id="65b58-103">Update deviceManagementPartner</span></span>
+# <a name="update-devicemanagementpartner"></a><span data-ttu-id="87db2-103">更新 deviceManagementPartner</span><span class="sxs-lookup"><span data-stu-id="87db2-103">Update deviceManagementPartner</span></span>
 
-> <span data-ttu-id="65b58-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="65b58-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="87db2-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="87db2-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="65b58-105">更新 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="65b58-105">Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
+<span data-ttu-id="87db2-105">更新 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="87db2-105">Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="65b58-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="65b58-106">Prerequisites</span></span>
-<span data-ttu-id="65b58-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="65b58-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="87db2-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="87db2-106">Prerequisites</span></span>
+<span data-ttu-id="87db2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="87db2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="65b58-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="65b58-109">Permission type</span></span>|<span data-ttu-id="65b58-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="65b58-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="87db2-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="87db2-109">Permission type</span></span>|<span data-ttu-id="87db2-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="87db2-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="65b58-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="65b58-111">Delegated (work or school account)</span></span>|<span data-ttu-id="65b58-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65b58-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="65b58-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="65b58-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="65b58-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="65b58-114">Not supported.</span></span>|
-|<span data-ttu-id="65b58-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="65b58-115">Application</span></span>|<span data-ttu-id="65b58-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="65b58-116">Not supported.</span></span>|
+|<span data-ttu-id="87db2-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="87db2-111">Delegated (work or school account)</span></span>|<span data-ttu-id="87db2-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87db2-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="87db2-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="87db2-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="87db2-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="87db2-114">Not supported.</span></span>|
+|<span data-ttu-id="87db2-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="87db2-115">Application</span></span>|<span data-ttu-id="87db2-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="87db2-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="65b58-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65b58-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="87db2-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="87db2-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,38 +36,38 @@ ms.locfileid: "32561514"
 PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="65b58-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="65b58-118">Request headers</span></span>
-|<span data-ttu-id="65b58-119">标头</span><span class="sxs-lookup"><span data-stu-id="65b58-119">Header</span></span>|<span data-ttu-id="65b58-120">值</span><span class="sxs-lookup"><span data-stu-id="65b58-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="87db2-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="87db2-118">Request headers</span></span>
+|<span data-ttu-id="87db2-119">标头</span><span class="sxs-lookup"><span data-stu-id="87db2-119">Header</span></span>|<span data-ttu-id="87db2-120">值</span><span class="sxs-lookup"><span data-stu-id="87db2-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="65b58-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="65b58-121">Authorization</span></span>|<span data-ttu-id="65b58-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="65b58-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="65b58-123">接受</span><span class="sxs-lookup"><span data-stu-id="65b58-123">Accept</span></span>|<span data-ttu-id="65b58-124">application/json</span><span class="sxs-lookup"><span data-stu-id="65b58-124">application/json</span></span>|
+|<span data-ttu-id="87db2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="87db2-121">Authorization</span></span>|<span data-ttu-id="87db2-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="87db2-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="87db2-123">接受</span><span class="sxs-lookup"><span data-stu-id="87db2-123">Accept</span></span>|<span data-ttu-id="87db2-124">application/json</span><span class="sxs-lookup"><span data-stu-id="87db2-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="65b58-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="65b58-125">Request body</span></span>
-<span data-ttu-id="65b58-126">在请求正文中，提供 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="65b58-126">In the request body, supply a JSON representation for the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="87db2-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="87db2-125">Request body</span></span>
+<span data-ttu-id="87db2-126">在请求正文中，提供 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="87db2-126">In the request body, supply a JSON representation for the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
 
-<span data-ttu-id="65b58-127">下表显示创建 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="65b58-127">The following table shows the properties that are required when you create the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span></span>
+<span data-ttu-id="87db2-127">下表显示创建 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="87db2-127">The following table shows the properties that are required when you create the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span></span>
 
-|<span data-ttu-id="65b58-128">属性</span><span class="sxs-lookup"><span data-stu-id="65b58-128">Property</span></span>|<span data-ttu-id="65b58-129">类型</span><span class="sxs-lookup"><span data-stu-id="65b58-129">Type</span></span>|<span data-ttu-id="65b58-130">说明</span><span class="sxs-lookup"><span data-stu-id="65b58-130">Description</span></span>|
+|<span data-ttu-id="87db2-128">属性</span><span class="sxs-lookup"><span data-stu-id="87db2-128">Property</span></span>|<span data-ttu-id="87db2-129">类型</span><span class="sxs-lookup"><span data-stu-id="87db2-129">Type</span></span>|<span data-ttu-id="87db2-130">说明</span><span class="sxs-lookup"><span data-stu-id="87db2-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="65b58-131">id</span><span class="sxs-lookup"><span data-stu-id="65b58-131">id</span></span>|<span data-ttu-id="65b58-132">String</span><span class="sxs-lookup"><span data-stu-id="65b58-132">String</span></span>|<span data-ttu-id="65b58-133">实体的 Id</span><span class="sxs-lookup"><span data-stu-id="65b58-133">Id of the entity</span></span>|
-|<span data-ttu-id="65b58-134">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="65b58-134">lastHeartbeatDateTime</span></span>|<span data-ttu-id="65b58-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="65b58-135">DateTimeOffset</span></span>|<span data-ttu-id="65b58-136">管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳</span><span class="sxs-lookup"><span data-stu-id="65b58-136">Timestamp of last heartbeat after admin enabled option Connect to Device management Partner</span></span>|
-|<span data-ttu-id="65b58-137">partnerState</span><span class="sxs-lookup"><span data-stu-id="65b58-137">partnerState</span></span>|[<span data-ttu-id="65b58-138">deviceManagementPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="65b58-138">deviceManagementPartnerTenantState</span></span>](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|<span data-ttu-id="65b58-139">此租户的合作伙伴状态。</span><span class="sxs-lookup"><span data-stu-id="65b58-139">Partner state of this tenant.</span></span> <span data-ttu-id="65b58-140">可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。</span><span class="sxs-lookup"><span data-stu-id="65b58-140">Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span></span>|
-|<span data-ttu-id="65b58-141">partnerAppType</span><span class="sxs-lookup"><span data-stu-id="65b58-141">partnerAppType</span></span>|[<span data-ttu-id="65b58-142">deviceManagementPartnerAppType</span><span class="sxs-lookup"><span data-stu-id="65b58-142">deviceManagementPartnerAppType</span></span>](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|<span data-ttu-id="65b58-143">合作伙伴应用类型。</span><span class="sxs-lookup"><span data-stu-id="65b58-143">Partner App type.</span></span> <span data-ttu-id="65b58-144">可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。</span><span class="sxs-lookup"><span data-stu-id="65b58-144">Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.</span></span>|
-|<span data-ttu-id="65b58-145">singleTenantAppId</span><span class="sxs-lookup"><span data-stu-id="65b58-145">singleTenantAppId</span></span>|<span data-ttu-id="65b58-146">String</span><span class="sxs-lookup"><span data-stu-id="65b58-146">String</span></span>|<span data-ttu-id="65b58-147">合作伙伴单个租户应用 ID</span><span class="sxs-lookup"><span data-stu-id="65b58-147">Partner Single tenant App id</span></span>|
-|<span data-ttu-id="65b58-148">displayName</span><span class="sxs-lookup"><span data-stu-id="65b58-148">displayName</span></span>|<span data-ttu-id="65b58-149">String</span><span class="sxs-lookup"><span data-stu-id="65b58-149">String</span></span>|<span data-ttu-id="65b58-150">合作伙伴显示名称</span><span class="sxs-lookup"><span data-stu-id="65b58-150">Partner display name</span></span>|
-|<span data-ttu-id="65b58-151">isConfigured</span><span class="sxs-lookup"><span data-stu-id="65b58-151">isConfigured</span></span>|<span data-ttu-id="65b58-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="65b58-152">Boolean</span></span>|<span data-ttu-id="65b58-153">是否配置了设备管理合作伙伴</span><span class="sxs-lookup"><span data-stu-id="65b58-153">Whether device management partner is configured or not</span></span>|
-|<span data-ttu-id="65b58-154">whenPartnerDevicesWillBeRemovedDateTime</span><span class="sxs-lookup"><span data-stu-id="65b58-154">whenPartnerDevicesWillBeRemovedDateTime</span></span>|<span data-ttu-id="65b58-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="65b58-155">DateTimeOffset</span></span>|<span data-ttu-id="65b58-156">要删除 PartnerDevices 时的日期/时间（UTC 时间）</span><span class="sxs-lookup"><span data-stu-id="65b58-156">DateTime in UTC when PartnerDevices will be removed</span></span>|
-|<span data-ttu-id="65b58-157">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span><span class="sxs-lookup"><span data-stu-id="65b58-157">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span></span>|<span data-ttu-id="65b58-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="65b58-158">DateTimeOffset</span></span>|<span data-ttu-id="65b58-159">PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）</span><span class="sxs-lookup"><span data-stu-id="65b58-159">DateTime in UTC when PartnerDevices will be marked as NonCompliant</span></span>|
+|<span data-ttu-id="87db2-131">id</span><span class="sxs-lookup"><span data-stu-id="87db2-131">id</span></span>|<span data-ttu-id="87db2-132">String</span><span class="sxs-lookup"><span data-stu-id="87db2-132">String</span></span>|<span data-ttu-id="87db2-133">实体的 Id</span><span class="sxs-lookup"><span data-stu-id="87db2-133">Id of the entity</span></span>|
+|<span data-ttu-id="87db2-134">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="87db2-134">lastHeartbeatDateTime</span></span>|<span data-ttu-id="87db2-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="87db2-135">DateTimeOffset</span></span>|<span data-ttu-id="87db2-136">管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳</span><span class="sxs-lookup"><span data-stu-id="87db2-136">Timestamp of last heartbeat after admin enabled option Connect to Device management Partner</span></span>|
+|<span data-ttu-id="87db2-137">partnerState</span><span class="sxs-lookup"><span data-stu-id="87db2-137">partnerState</span></span>|[<span data-ttu-id="87db2-138">deviceManagementPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="87db2-138">deviceManagementPartnerTenantState</span></span>](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|<span data-ttu-id="87db2-139">此租户的合作伙伴状态。</span><span class="sxs-lookup"><span data-stu-id="87db2-139">Partner state of this tenant.</span></span> <span data-ttu-id="87db2-140">可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。</span><span class="sxs-lookup"><span data-stu-id="87db2-140">Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span></span>|
+|<span data-ttu-id="87db2-141">partnerAppType</span><span class="sxs-lookup"><span data-stu-id="87db2-141">partnerAppType</span></span>|[<span data-ttu-id="87db2-142">deviceManagementPartnerAppType</span><span class="sxs-lookup"><span data-stu-id="87db2-142">deviceManagementPartnerAppType</span></span>](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|<span data-ttu-id="87db2-143">合作伙伴应用类型。</span><span class="sxs-lookup"><span data-stu-id="87db2-143">Partner App type.</span></span> <span data-ttu-id="87db2-144">可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。</span><span class="sxs-lookup"><span data-stu-id="87db2-144">Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.</span></span>|
+|<span data-ttu-id="87db2-145">singleTenantAppId</span><span class="sxs-lookup"><span data-stu-id="87db2-145">singleTenantAppId</span></span>|<span data-ttu-id="87db2-146">String</span><span class="sxs-lookup"><span data-stu-id="87db2-146">String</span></span>|<span data-ttu-id="87db2-147">合作伙伴单个租户应用 ID</span><span class="sxs-lookup"><span data-stu-id="87db2-147">Partner Single tenant App id</span></span>|
+|<span data-ttu-id="87db2-148">displayName</span><span class="sxs-lookup"><span data-stu-id="87db2-148">displayName</span></span>|<span data-ttu-id="87db2-149">String</span><span class="sxs-lookup"><span data-stu-id="87db2-149">String</span></span>|<span data-ttu-id="87db2-150">合作伙伴显示名称</span><span class="sxs-lookup"><span data-stu-id="87db2-150">Partner display name</span></span>|
+|<span data-ttu-id="87db2-151">isConfigured</span><span class="sxs-lookup"><span data-stu-id="87db2-151">isConfigured</span></span>|<span data-ttu-id="87db2-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="87db2-152">Boolean</span></span>|<span data-ttu-id="87db2-153">是否配置了设备管理合作伙伴</span><span class="sxs-lookup"><span data-stu-id="87db2-153">Whether device management partner is configured or not</span></span>|
+|<span data-ttu-id="87db2-154">whenPartnerDevicesWillBeRemovedDateTime</span><span class="sxs-lookup"><span data-stu-id="87db2-154">whenPartnerDevicesWillBeRemovedDateTime</span></span>|<span data-ttu-id="87db2-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="87db2-155">DateTimeOffset</span></span>|<span data-ttu-id="87db2-156">要删除 PartnerDevices 时的日期/时间（UTC 时间）</span><span class="sxs-lookup"><span data-stu-id="87db2-156">DateTime in UTC when PartnerDevices will be removed</span></span>|
+|<span data-ttu-id="87db2-157">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span><span class="sxs-lookup"><span data-stu-id="87db2-157">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span></span>|<span data-ttu-id="87db2-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="87db2-158">DateTimeOffset</span></span>|<span data-ttu-id="87db2-159">PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）</span><span class="sxs-lookup"><span data-stu-id="87db2-159">DateTime in UTC when PartnerDevices will be marked as NonCompliant</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="65b58-160">响应</span><span class="sxs-lookup"><span data-stu-id="65b58-160">Response</span></span>
-<span data-ttu-id="65b58-161">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="65b58-161">If successful, this method returns a `200 OK` response code and an updated [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="87db2-160">响应</span><span class="sxs-lookup"><span data-stu-id="87db2-160">Response</span></span>
+<span data-ttu-id="87db2-161">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="87db2-161">If successful, this method returns a `200 OK` response code and an updated [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="65b58-162">示例</span><span class="sxs-lookup"><span data-stu-id="65b58-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="87db2-162">示例</span><span class="sxs-lookup"><span data-stu-id="87db2-162">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="65b58-163">请求</span><span class="sxs-lookup"><span data-stu-id="65b58-163">Request</span></span>
-<span data-ttu-id="65b58-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="65b58-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="87db2-163">请求</span><span class="sxs-lookup"><span data-stu-id="87db2-163">Request</span></span>
+<span data-ttu-id="87db2-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="87db2-164">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 Content-type: application/json
@@ -85,8 +86,8 @@ Content-length: 502
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="65b58-165">响应</span><span class="sxs-lookup"><span data-stu-id="65b58-165">Response</span></span>
-<span data-ttu-id="65b58-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="65b58-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="87db2-165">响应</span><span class="sxs-lookup"><span data-stu-id="87db2-165">Response</span></span>
+<span data-ttu-id="87db2-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="87db2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

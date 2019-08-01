@@ -3,45 +3,47 @@ title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 2cb6fc4cc68588abb0f5c8a92fa0adfe9b343959
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 328bd1fed3e58855887f8a04eaf9e2176c93ef9c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021436"
 ---
-# <a name="delete-subscription"></a><span data-ttu-id="3b0f5-103">删除订阅</span><span class="sxs-lookup"><span data-stu-id="3b0f5-103">Delete subscription</span></span>
+# <a name="delete-subscription"></a><span data-ttu-id="acacd-103">删除订阅</span><span class="sxs-lookup"><span data-stu-id="acacd-103">Delete subscription</span></span>
 
-<span data-ttu-id="3b0f5-104">删除订阅。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-104">Delete a subscription.</span></span>
+<span data-ttu-id="acacd-104">删除订阅。</span><span class="sxs-lookup"><span data-stu-id="acacd-104">Delete a subscription.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3b0f5-105">权限</span><span class="sxs-lookup"><span data-stu-id="3b0f5-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="acacd-105">权限</span><span class="sxs-lookup"><span data-stu-id="acacd-105">Permissions</span></span>
 
-<span data-ttu-id="3b0f5-106">根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-106">Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="3b0f5-107">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="acacd-106">根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。</span><span class="sxs-lookup"><span data-stu-id="acacd-106">Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="acacd-107">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="acacd-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3b0f5-108">支持的资源</span><span class="sxs-lookup"><span data-stu-id="3b0f5-108">Supported resource</span></span> | <span data-ttu-id="3b0f5-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3b0f5-109">Delegated (work or school account)</span></span> | <span data-ttu-id="3b0f5-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3b0f5-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b0f5-111">应用程序</span><span class="sxs-lookup"><span data-stu-id="3b0f5-111">Application</span></span> |
+| <span data-ttu-id="acacd-108">支持的资源</span><span class="sxs-lookup"><span data-stu-id="acacd-108">Supported resource</span></span> | <span data-ttu-id="acacd-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="acacd-109">Delegated (work or school account)</span></span> | <span data-ttu-id="acacd-110">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="acacd-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acacd-111">应用程序</span><span class="sxs-lookup"><span data-stu-id="acacd-111">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-|[<span data-ttu-id="3b0f5-112">联系人</span><span class="sxs-lookup"><span data-stu-id="3b0f5-112">contact</span></span>](../resources/contact.md) | <span data-ttu-id="3b0f5-113">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-113">Contacts.Read</span></span> | <span data-ttu-id="3b0f5-114">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-114">Contacts.Read</span></span> | <span data-ttu-id="3b0f5-115">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-115">Contacts.Read</span></span> |
-|<span data-ttu-id="3b0f5-116">[driveItem](../resources/driveitem.md)（用户的个人 OneDrive）</span><span class="sxs-lookup"><span data-stu-id="3b0f5-116">[driveItem](../resources/driveitem.md) (user's personal OneDrive)</span></span> | <span data-ttu-id="3b0f5-117">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-117">Not supported</span></span> | <span data-ttu-id="3b0f5-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b0f5-118">Files.ReadWrite</span></span> | <span data-ttu-id="3b0f5-119">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-119">Not supported</span></span> |
-|<span data-ttu-id="3b0f5-120">[driveItem](../resources/driveitem.md) (OneDrive for Business)</span><span class="sxs-lookup"><span data-stu-id="3b0f5-120">[driveItem](../resources/driveitem.md) (OneDrive for Business)</span></span> | <span data-ttu-id="3b0f5-121">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-121">Files.ReadWrite.All</span></span> | <span data-ttu-id="3b0f5-122">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-122">Not supported</span></span> | <span data-ttu-id="3b0f5-123">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-123">Files.ReadWrite.All</span></span> |
-|[<span data-ttu-id="3b0f5-124">事件</span><span class="sxs-lookup"><span data-stu-id="3b0f5-124">event</span></span>](../resources/event.md) | <span data-ttu-id="3b0f5-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-125">Calendars.Read</span></span> | <span data-ttu-id="3b0f5-126">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-126">Calendars.Read</span></span> | <span data-ttu-id="3b0f5-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-127">Calendars.Read</span></span> |
-|[<span data-ttu-id="3b0f5-128">组</span><span class="sxs-lookup"><span data-stu-id="3b0f5-128">group</span></span>](../resources/group.md) | <span data-ttu-id="3b0f5-129">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-129">Group.Read.All</span></span> | <span data-ttu-id="3b0f5-130">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-130">Not supported</span></span> | <span data-ttu-id="3b0f5-131">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-131">Group.Read.All</span></span> |
-|[<span data-ttu-id="3b0f5-132">组对话</span><span class="sxs-lookup"><span data-stu-id="3b0f5-132">group conversation</span></span>](../resources/conversation.md) | <span data-ttu-id="3b0f5-133">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-133">Group.Read.All</span></span> | <span data-ttu-id="3b0f5-134">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-134">Not supported</span></span> | <span data-ttu-id="3b0f5-135">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-135">Not supported</span></span> |
-|[<span data-ttu-id="3b0f5-136">邮件</span><span class="sxs-lookup"><span data-stu-id="3b0f5-136">message</span></span>](../resources/message.md) | <span data-ttu-id="3b0f5-137">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-137">Mail.Read</span></span> | <span data-ttu-id="3b0f5-138">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-138">Mail.Read</span></span> | <span data-ttu-id="3b0f5-139">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="3b0f5-139">Mail.Read</span></span> |
-|<span data-ttu-id="3b0f5-140">安全[警报](../resources/alert.md)</span><span class="sxs-lookup"><span data-stu-id="3b0f5-140">[security alert](../resources/alert.md)</span></span> | <span data-ttu-id="3b0f5-141">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-141">SecurityEvents.ReadWrite.All</span></span> | <span data-ttu-id="3b0f5-142">不支持</span><span class="sxs-lookup"><span data-stu-id="3b0f5-142">Not supported</span></span> | <span data-ttu-id="3b0f5-143">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-143">SecurityEvents.ReadWrite.All</span></span> |
-|[<span data-ttu-id="3b0f5-144">用户</span><span class="sxs-lookup"><span data-stu-id="3b0f5-144">user</span></span>](../resources/user.md) | <span data-ttu-id="3b0f5-145">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-145">User.Read.All</span></span> | <span data-ttu-id="3b0f5-146">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-146">User.Read.All</span></span> | <span data-ttu-id="3b0f5-147">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b0f5-147">User.Read.All</span></span> |
+|[<span data-ttu-id="acacd-112">联系人</span><span class="sxs-lookup"><span data-stu-id="acacd-112">contact</span></span>](../resources/contact.md) | <span data-ttu-id="acacd-113">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-113">Contacts.Read</span></span> | <span data-ttu-id="acacd-114">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-114">Contacts.Read</span></span> | <span data-ttu-id="acacd-115">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-115">Contacts.Read</span></span> |
+|<span data-ttu-id="acacd-116">[driveItem](../resources/driveitem.md)（用户的个人 OneDrive）</span><span class="sxs-lookup"><span data-stu-id="acacd-116">[driveItem](../resources/driveitem.md) (user's personal OneDrive)</span></span> | <span data-ttu-id="acacd-117">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-117">Not supported</span></span> | <span data-ttu-id="acacd-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="acacd-118">Files.ReadWrite</span></span> | <span data-ttu-id="acacd-119">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-119">Not supported</span></span> |
+|<span data-ttu-id="acacd-120">[driveItem](../resources/driveitem.md) (OneDrive for Business)</span><span class="sxs-lookup"><span data-stu-id="acacd-120">[driveItem](../resources/driveitem.md) (OneDrive for Business)</span></span> | <span data-ttu-id="acacd-121">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acacd-121">Files.ReadWrite.All</span></span> | <span data-ttu-id="acacd-122">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-122">Not supported</span></span> | <span data-ttu-id="acacd-123">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acacd-123">Files.ReadWrite.All</span></span> |
+|[<span data-ttu-id="acacd-124">事件</span><span class="sxs-lookup"><span data-stu-id="acacd-124">event</span></span>](../resources/event.md) | <span data-ttu-id="acacd-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-125">Calendars.Read</span></span> | <span data-ttu-id="acacd-126">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-126">Calendars.Read</span></span> | <span data-ttu-id="acacd-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-127">Calendars.Read</span></span> |
+|[<span data-ttu-id="acacd-128">组</span><span class="sxs-lookup"><span data-stu-id="acacd-128">group</span></span>](../resources/group.md) | <span data-ttu-id="acacd-129">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="acacd-129">Group.Read.All</span></span> | <span data-ttu-id="acacd-130">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-130">Not supported</span></span> | <span data-ttu-id="acacd-131">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="acacd-131">Group.Read.All</span></span> |
+|[<span data-ttu-id="acacd-132">组对话</span><span class="sxs-lookup"><span data-stu-id="acacd-132">group conversation</span></span>](../resources/conversation.md) | <span data-ttu-id="acacd-133">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="acacd-133">Group.Read.All</span></span> | <span data-ttu-id="acacd-134">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-134">Not supported</span></span> | <span data-ttu-id="acacd-135">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-135">Not supported</span></span> |
+|[<span data-ttu-id="acacd-136">邮件</span><span class="sxs-lookup"><span data-stu-id="acacd-136">message</span></span>](../resources/message.md) | <span data-ttu-id="acacd-137">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-137">Mail.Read</span></span> | <span data-ttu-id="acacd-138">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-138">Mail.Read</span></span> | <span data-ttu-id="acacd-139">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="acacd-139">Mail.Read</span></span> |
+|<span data-ttu-id="acacd-140">安全[警报](../resources/alert.md)</span><span class="sxs-lookup"><span data-stu-id="acacd-140">[security alert](../resources/alert.md)</span></span> | <span data-ttu-id="acacd-141">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acacd-141">SecurityEvents.ReadWrite.All</span></span> | <span data-ttu-id="acacd-142">不支持</span><span class="sxs-lookup"><span data-stu-id="acacd-142">Not supported</span></span> | <span data-ttu-id="acacd-143">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="acacd-143">SecurityEvents.ReadWrite.All</span></span> |
+|[<span data-ttu-id="acacd-144">用户</span><span class="sxs-lookup"><span data-stu-id="acacd-144">user</span></span>](../resources/user.md) | <span data-ttu-id="acacd-145">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="acacd-145">User.Read.All</span></span> | <span data-ttu-id="acacd-146">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="acacd-146">User.Read.All</span></span> | <span data-ttu-id="acacd-147">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="acacd-147">User.Read.All</span></span> |
 
-> <span data-ttu-id="3b0f5-148">**注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-148">**Note:** There are additional limitations for subscriptions on OneDrive and Outlook items.</span></span> <span data-ttu-id="3b0f5-149">这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-149">The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).</span></span>
+> <span data-ttu-id="acacd-148">**注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。</span><span class="sxs-lookup"><span data-stu-id="acacd-148">**Note:** There are additional limitations for subscriptions on OneDrive and Outlook items.</span></span> <span data-ttu-id="acacd-149">这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。</span><span class="sxs-lookup"><span data-stu-id="acacd-149">The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).</span></span>
 
-- <span data-ttu-id="3b0f5-150">在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-150">On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive.</span></span> <span data-ttu-id="3b0f5-151">在 OneDrive for Business 上，只可以订阅根文件夹。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-151">On OneDrive for Business, you can subscribe to only the root folder.</span></span> <span data-ttu-id="3b0f5-152">对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 driveItem 对象所做更改属于请求的更改类型时，会发送通知。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-152">Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other driveItem objects in its hierarchy.</span></span> <span data-ttu-id="3b0f5-153">无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-153">You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.</span></span>
+- <span data-ttu-id="acacd-150">在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。</span><span class="sxs-lookup"><span data-stu-id="acacd-150">On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive.</span></span> <span data-ttu-id="acacd-151">在 OneDrive for Business 上，只可以订阅根文件夹。</span><span class="sxs-lookup"><span data-stu-id="acacd-151">On OneDrive for Business, you can subscribe to only the root folder.</span></span> <span data-ttu-id="acacd-152">对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 driveItem 对象所做更改属于请求的更改类型时，会发送通知。</span><span class="sxs-lookup"><span data-stu-id="acacd-152">Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other driveItem objects in its hierarchy.</span></span> <span data-ttu-id="acacd-153">无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。</span><span class="sxs-lookup"><span data-stu-id="acacd-153">You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.</span></span>
 
-- <span data-ttu-id="3b0f5-154">在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-154">In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox.</span></span> <span data-ttu-id="3b0f5-155">也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-155">That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.</span></span>
-- <span data-ttu-id="3b0f5-156">订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：</span><span class="sxs-lookup"><span data-stu-id="3b0f5-156">To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:</span></span>
+- <span data-ttu-id="acacd-154">在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。</span><span class="sxs-lookup"><span data-stu-id="acacd-154">In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox.</span></span> <span data-ttu-id="acacd-155">也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。</span><span class="sxs-lookup"><span data-stu-id="acacd-155">That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.</span></span>
+- <span data-ttu-id="acacd-156">订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：</span><span class="sxs-lookup"><span data-stu-id="acacd-156">To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:</span></span>
 
-  - <span data-ttu-id="3b0f5-157">使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-157">Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.</span></span>
-  - <span data-ttu-id="3b0f5-158">切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-158">Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.</span></span>
+  - <span data-ttu-id="acacd-157">使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。</span><span class="sxs-lookup"><span data-stu-id="acacd-157">Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.</span></span>
+  - <span data-ttu-id="acacd-158">切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。</span><span class="sxs-lookup"><span data-stu-id="acacd-158">Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.</span></span>
 
 
-## <a name="http-request"></a><span data-ttu-id="3b0f5-159">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3b0f5-159">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="acacd-159">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="acacd-159">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -49,27 +51,27 @@ ms.locfileid: "35890620"
 DELETE /subscriptions/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3b0f5-160">请求标头</span><span class="sxs-lookup"><span data-stu-id="3b0f5-160">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="acacd-160">请求标头</span><span class="sxs-lookup"><span data-stu-id="acacd-160">Request headers</span></span>
 
-| <span data-ttu-id="3b0f5-161">名称</span><span class="sxs-lookup"><span data-stu-id="3b0f5-161">Name</span></span>       | <span data-ttu-id="3b0f5-162">类型</span><span class="sxs-lookup"><span data-stu-id="3b0f5-162">Type</span></span> | <span data-ttu-id="3b0f5-163">说明</span><span class="sxs-lookup"><span data-stu-id="3b0f5-163">Description</span></span>|
+| <span data-ttu-id="acacd-161">名称</span><span class="sxs-lookup"><span data-stu-id="acacd-161">Name</span></span>       | <span data-ttu-id="acacd-162">类型</span><span class="sxs-lookup"><span data-stu-id="acacd-162">Type</span></span> | <span data-ttu-id="acacd-163">说明</span><span class="sxs-lookup"><span data-stu-id="acacd-163">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="3b0f5-164">Authorization</span><span class="sxs-lookup"><span data-stu-id="3b0f5-164">Authorization</span></span>  | <span data-ttu-id="3b0f5-165">string</span><span class="sxs-lookup"><span data-stu-id="3b0f5-165">string</span></span>  | <span data-ttu-id="3b0f5-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="acacd-164">Authorization</span><span class="sxs-lookup"><span data-stu-id="acacd-164">Authorization</span></span>  | <span data-ttu-id="acacd-165">string</span><span class="sxs-lookup"><span data-stu-id="acacd-165">string</span></span>  | <span data-ttu-id="acacd-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="acacd-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3b0f5-168">请求正文</span><span class="sxs-lookup"><span data-stu-id="3b0f5-168">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="acacd-168">请求正文</span><span class="sxs-lookup"><span data-stu-id="acacd-168">Request body</span></span>
 
-<span data-ttu-id="3b0f5-169">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-169">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="acacd-169">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="acacd-169">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b0f5-170">响应</span><span class="sxs-lookup"><span data-stu-id="3b0f5-170">Response</span></span>
+## <a name="response"></a><span data-ttu-id="acacd-170">响应</span><span class="sxs-lookup"><span data-stu-id="acacd-170">Response</span></span>
 
-<span data-ttu-id="3b0f5-171">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-171">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="acacd-171">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="acacd-171">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b0f5-172">示例</span><span class="sxs-lookup"><span data-stu-id="3b0f5-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="acacd-172">示例</span><span class="sxs-lookup"><span data-stu-id="acacd-172">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3b0f5-173">请求</span><span class="sxs-lookup"><span data-stu-id="3b0f5-173">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="acacd-173">请求</span><span class="sxs-lookup"><span data-stu-id="acacd-173">Request</span></span>
 
-<span data-ttu-id="3b0f5-174">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-174">Here is an example of the request.</span></span>
+<span data-ttu-id="acacd-174">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="acacd-174">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3b0f5-175">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3b0f5-175">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="acacd-175">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="acacd-175">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_subscription"
@@ -78,28 +80,28 @@ DELETE /subscriptions/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3b0f5-176">C#</span><span class="sxs-lookup"><span data-stu-id="3b0f5-176">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="acacd-176">C#</span><span class="sxs-lookup"><span data-stu-id="acacd-176">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3b0f5-177">Javascript</span><span class="sxs-lookup"><span data-stu-id="3b0f5-177">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="acacd-177">Javascript</span><span class="sxs-lookup"><span data-stu-id="acacd-177">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3b0f5-178">目标-C</span><span class="sxs-lookup"><span data-stu-id="3b0f5-178">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="acacd-178">目标-C</span><span class="sxs-lookup"><span data-stu-id="acacd-178">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3b0f5-179">Java</span><span class="sxs-lookup"><span data-stu-id="3b0f5-179">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="acacd-179">Java</span><span class="sxs-lookup"><span data-stu-id="acacd-179">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3b0f5-180">响应</span><span class="sxs-lookup"><span data-stu-id="3b0f5-180">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="acacd-180">响应</span><span class="sxs-lookup"><span data-stu-id="acacd-180">Response</span></span>
 
-<span data-ttu-id="3b0f5-181">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3b0f5-181">Here is an example of the response.</span></span>
+<span data-ttu-id="acacd-181">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="acacd-181">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
