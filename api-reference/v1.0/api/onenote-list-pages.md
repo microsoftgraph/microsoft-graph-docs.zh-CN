@@ -4,12 +4,13 @@ description: 检索 page 对象的列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 72956bafbd526c3391e68358aad2104e51b29773
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562130"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976451"
 ---
 # <a name="list-pages"></a>列出页面
 
@@ -20,7 +21,7 @@ ms.locfileid: "32562130"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
-|委派（个人 Microsoft 帐户） | 注意: Read、notes。读写    |
+|委派（个人 Microsoft 帐户） | 注意: Read、Notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -38,7 +39,7 @@ GET /sites/{id}/onenote/pages
 
 默认响应将展开`parentSection`并选择节的`id`、 `displayName`和`self`属性。 页面`expand`的`parentNotebook`有效值为和`parentSection`。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

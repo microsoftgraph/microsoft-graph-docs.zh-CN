@@ -4,12 +4,13 @@ description: 删除 auditEvent
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8d8cad7b6a711594773cbca10acfa729ce810df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ad4397c6eee6e220a464b2f5b28819bf41ebdb6e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001955"
 ---
 # <a name="delete-auditevent"></a>删除 auditEvent
 

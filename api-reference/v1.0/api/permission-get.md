@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取权限
 localization_priority: Normal
-ms.openlocfilehash: 72450fb39cfd9b4ee862d590b748c43b6ade70e3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 返回特定 permission 资源的有效共享权限。
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: dabbdb7cdcde76a599453638b9146a6302a91159
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886494"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976266"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 

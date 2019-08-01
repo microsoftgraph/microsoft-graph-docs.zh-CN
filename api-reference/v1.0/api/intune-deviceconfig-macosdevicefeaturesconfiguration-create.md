@@ -4,12 +4,13 @@ description: 创建新的 macOSDeviceFeaturesConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a431d88dd5914aa5e6cb90b06900c38d2ce4d244
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8b18a613b36b49a3ba48820c665f78e2a0082b97
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997475"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 

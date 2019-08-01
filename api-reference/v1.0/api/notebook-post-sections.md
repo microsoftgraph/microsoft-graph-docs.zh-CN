@@ -4,12 +4,13 @@ description: 在指定的笔记本中创建新的 onenoteSection。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9985c4fc58ed639d2985c76591dc2bedf6eddabf
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a0c9fa66c2140c5746b1c8e9a0f66280909f1b29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892675"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976479"
 ---
 # <a name="create-section"></a>创建分区
 

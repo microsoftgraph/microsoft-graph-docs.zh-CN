@@ -4,12 +4,13 @@ description: 列出 deviceEnrollmentLimitConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5aebfc4381affb504c2ff1d14a4711c2863337d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 01f1dff263a5b612b92d403c730f1dbf4e29e317
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582827"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974750"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>列出 deviceEnrollmentLimitConfigurations
 

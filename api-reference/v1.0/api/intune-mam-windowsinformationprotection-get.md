@@ -4,12 +4,13 @@ description: 读取 windowsInformationProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16a7776cd0bca373e012e8150166377b6baf31e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9e6ffb88cb7c189f1bf8273f91d924acaa4b6755
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996565"
 ---
 # <a name="get-windowsinformationprotection"></a>获取 windowsInformationProtection
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453657"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

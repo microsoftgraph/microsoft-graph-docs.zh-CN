@@ -4,12 +4,13 @@ description: 读取 managedAppConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 719abd344a497f9bb00947f8d97d692531eafb80
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a11c15d578b9aebdc0b5f2fd0e7e1db40fdd2627
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571168"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996796"
 ---
 # <a name="get-managedappconfiguration"></a>获取 managedAppConfiguration
 

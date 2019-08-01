@@ -4,12 +4,13 @@ description: 删除 managedMobileApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ef5554f48df98038173543f04e734e953369a19
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 25513aef3b4ead7dfd5e2dd578d724a9b5d4cf27
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453735"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996635"
 ---
 # <a name="delete-managedmobileapp"></a>删除 managedMobileApp
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453735"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

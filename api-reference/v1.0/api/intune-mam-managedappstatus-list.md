@@ -4,12 +4,13 @@ description: 列出 managedAppStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe4f7279f76ecc2957933a88e569eb37ebe4f830
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 32911404b7faba66239e87bca8c1cfc766758920
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996656"
 ---
 # <a name="list-managedappstatuses"></a>列出 managedAppStatuses
 

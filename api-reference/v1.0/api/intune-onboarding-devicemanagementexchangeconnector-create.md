@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementExchangeConnector 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8f077b54faa25aa4d56a3192baf91a9a2adc95c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6571cbc4de1c4f7df284f81349bb7e6c1a8b28a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974673"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>创建 deviceManagementExchangeConnector
 

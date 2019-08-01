@@ -4,12 +4,13 @@ description: '将帖子转发给收件人。 您可以在请求中同时指定�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: fe9eee490edb38d17f59680ce1ed8bb3a1c91938
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 12d623e9147936ad052a83a7d8a4a8285e79f2d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886990"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976029"
 ---
 # <a name="post-forward"></a>帖子：转发
 

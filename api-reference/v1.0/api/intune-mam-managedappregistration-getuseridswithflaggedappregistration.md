@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fb55917b9172fa5836e44a864c1ba41e9e06371
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b5d2f59e78b4e4ed5a3fd91769d35d9bf6dab6da
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996677"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>getUserIdsWithFlaggedAppRegistration 函数
 

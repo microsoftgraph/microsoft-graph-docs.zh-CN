@@ -4,12 +4,13 @@ description: 读取 iosManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 109f9d7f828c635db9411b25c9805764a151ec67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a7694394e70a19f2470a84d4efa215304ee87d3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996817"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 

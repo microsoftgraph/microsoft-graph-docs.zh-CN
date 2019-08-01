@@ -2,12 +2,15 @@
 title: 创建单值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个单值扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c90c8fca501e813635e3e3b208c1a5be6808b728
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520821"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975590"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
 
@@ -36,7 +39,7 @@ ms.locfileid: "32520821"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | 组 [日历](../resources/calendar.md) | Group.ReadWrite.All | 不支持 | 不支持 |

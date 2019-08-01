@@ -4,12 +4,13 @@ description: 创建新的 windowsInformationProtectionAppLockerFile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d22e4be6d282ba7750b6c896b2592ea8b0b71a62
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 838731a8a55cf997efc42d43c14119c05e5d2b4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453565"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996579"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>创建 windowsInformationProtectionAppLockerFile
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453565"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,7 +56,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
 |id|String|实体的键。|
-|version|字符串|实体的版本。|
+|version|String|实体的版本。|
 
 
 

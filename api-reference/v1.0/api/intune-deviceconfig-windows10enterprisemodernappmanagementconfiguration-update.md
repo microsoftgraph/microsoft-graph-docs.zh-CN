@@ -4,12 +4,13 @@ description: 更新 windows10EnterpriseModernAppManagementConfiguration 对象�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11f9a96fc301e9175f9b9bce9302ac0da0562c5c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 16162da1d914eb967a256dbbd64e007ca8c3c99c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997321"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>更新 windows10EnterpriseModernAppManagementConfiguration
 

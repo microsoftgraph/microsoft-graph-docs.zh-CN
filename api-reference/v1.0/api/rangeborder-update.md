@@ -4,12 +4,13 @@ description: 更新 rangeborder 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f06c07b68362840da88ef55a05810cbf6e78e8c1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fa1cbefa030df4a4af137585ffd90ce07c0e336d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889876"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975821"
 ---
 # <a name="update-rangeborder"></a>更新 RangeBorder
 

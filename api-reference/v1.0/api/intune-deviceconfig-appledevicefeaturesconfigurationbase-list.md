@@ -4,12 +4,13 @@ description: 列出 appleDeviceFeaturesConfigurationBase 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 788e3b50df2b871146e83d00d578154265536ec8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4f479fa6bbe26b789ec9f3ecce3616e38930de6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562809"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997804"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>列出 appleDeviceFeaturesConfigurationBases
 

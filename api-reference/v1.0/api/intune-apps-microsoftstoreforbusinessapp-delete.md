@@ -4,12 +4,13 @@ description: 删除 microsoftStoreForBusinessApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6358c85f23b899faeced5b9963e5f6b50ed2bd17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: dc4a20755becbb0486c2e4344b5276a486d97de4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453763"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002151"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>删除 microsoftStoreForBusinessApp
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453763"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

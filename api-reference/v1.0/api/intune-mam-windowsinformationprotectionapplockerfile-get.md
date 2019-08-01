@@ -4,12 +4,13 @@ description: 读取 windowsInformationProtectionAppLockerFile 对象的属性和
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8aab25c119ed412f795df31a72170fc9a87122ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f1cab2311337d2f569f4f837c0775c776186ce65
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453551"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996544"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>获取 windowsInformationProtectionAppLockerFile
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453551"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

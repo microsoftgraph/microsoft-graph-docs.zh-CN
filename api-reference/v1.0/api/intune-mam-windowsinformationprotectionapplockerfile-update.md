@@ -4,12 +4,13 @@ description: 更新 windowsInformationProtectionAppLockerFile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97afdcc7a7d0f0025b19ed33e9df2e10e9b275fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9401e7b56726b59afa90c2764e78281ee152695d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453593"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996537"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>更新 windowsInformationProtectionAppLockerFile
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453593"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,7 +56,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
 |id|String|实体的键。|
-|version|字符串|实体的版本。|
+|version|String|实体的版本。|
 
 
 
