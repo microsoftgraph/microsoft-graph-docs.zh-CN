@@ -4,12 +4,13 @@ description: 更新域对象的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b784bb15324b151074e5a535bcca38fcdb942421
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 00e722d762669dc5950bf171e71d8e79ef423648
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883252"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016569"
 ---
 # <a name="update-domain"></a>更新域
 

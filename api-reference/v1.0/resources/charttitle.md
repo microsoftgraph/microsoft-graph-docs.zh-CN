@@ -4,12 +4,13 @@ description: 表示图表的图表标题对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f6c843e24839b51da67bda5ed3484a32c868ae54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b2c65a53dc5ff6ebcbc91438ff0e0e8d55bc3647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032898"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle 资源类型
 

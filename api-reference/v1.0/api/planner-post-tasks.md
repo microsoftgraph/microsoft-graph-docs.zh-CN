@@ -4,12 +4,13 @@ description: 使用此 API 新建 **plannerTask**。
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 9c62ce0ff48154fe848e01f6405109ba1266a76d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 115973cd54d6e995c02dd4ff172e7cd4e15cab46
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455453"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976185"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 

@@ -4,12 +4,13 @@ description: 表示表中的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 44f9a60197c066115f704b45d7382ba88563aaeb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033990"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "32563754"
 |:---------------|:--------|:----------|
 |[获取 TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
 |[更新](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |更新 TableRow 对象。 |
-|[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关的 range 对象。|
+|[区域](../api/tablerow-range.md)|[区域](range.md)|返回与整个行相关的 range 对象。|
 |[删除](../api/tablerow-delete.md)|无|从表中删除行。|
 |[列出](../api/tablerow-list.md) | [WorkbookTableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|根据其在集合中的位置获取行。|

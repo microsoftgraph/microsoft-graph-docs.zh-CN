@@ -4,12 +4,13 @@ description: 此租户的合作伙伴状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c14c1806e65ba180837082288b76e047055f8a9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 103fd9149e7bc17a7f72a5af5ab002f136e616d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037385"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "32583555"
 |:---|:---|:---|
 |unknown|0|合作伙伴状态未知。|
 |才|1|合作伙伴不可用。|
-|enabled|2 |启用合作伙伴。|
-|异常|3 |合作伙伴连接已终止。|
-|拒绝|4 |拒绝合作伙伴邮件。|
-|无|5 |合作伙伴无响应。|
+|enabled|双面|启用合作伙伴。|
+|异常|第三章|合作伙伴连接已终止。|
+|拒绝|4|拒绝合作伙伴邮件。|
+|无|5|合作伙伴无响应。|
 
 
 

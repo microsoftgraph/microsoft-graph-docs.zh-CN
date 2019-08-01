@@ -4,12 +4,13 @@ description: 代表图表坐标轴的主要或次要网格线。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: af1f9576c486174b6aa78dd3196c813e744a1552
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569023"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029797"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
 

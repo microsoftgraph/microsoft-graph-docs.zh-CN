@@ -4,12 +4,13 @@ description: Windows 防火墙配置文件策略。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 065c5f33f596834400c874cd53e7ad3d82d03b56
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: resourcePageType
+ms.openlocfilehash: db737bec9405243ce5b23ac0922b527b8ea2aa3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036540"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030945"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile 资源类型
 

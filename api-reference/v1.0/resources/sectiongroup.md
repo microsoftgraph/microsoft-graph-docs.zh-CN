@@ -4,12 +4,13 @@ description: OneNote 笔记本中的分区组。 节组可以包含节和节组�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ec27343121ba20ef65703f3df1d53e6c62ccc8e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 65511c11810a95dfaf7497b0cc2cb1b1ad89c8a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034550"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
@@ -61,10 +62,10 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。 只读。|
+|parentNotebook|[笔记本](notebook.md)|包含分区组的笔记本。 只读。|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|包含节组的节组。 只读。|
-|sectionGroups|[SectionGroup](sectiongroup.md)集合|节中的节组。 此为只读属性。 可为 Null。|
-|分区|[OnenoteSection](section.md)集合|分区组中的节。 此为只读属性。 可为 Null。|
+|sectionGroups|[SectionGroup](sectiongroup.md) 集合|节中的节组。 此为只读属性。 可为 NULL。|
+|sections|[OnenoteSection](section.md) 集合|分区组中的节。 此为只读属性。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
@@ -72,9 +73,9 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 |:---------------|:--------|:----------|
 |[获取分区组](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
 |[创建分区组](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
-|[列出分区组](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)集合| 获取指定分区组中的分区组的集合。|
+|[列出分区组](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) 集合| 获取指定分区组中的分区组的集合。|
 |[创建分区](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| 通过发布到指定分区组中的节集合来创建节。|
-|[列出分区](../api/sectiongroup-list-sections.md) |[OnenoteSection](section.md)集合| 获取指定分区组中的节的集合。|
+|[列出节](../api/sectiongroup-list-sections.md) |[OnenoteSection](section.md) 集合| 获取指定分区组中的节的集合。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

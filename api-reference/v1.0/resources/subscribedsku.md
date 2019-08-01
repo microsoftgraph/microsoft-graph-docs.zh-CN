@@ -4,12 +4,13 @@ description: 包含有关公司订阅的服务 SKU 的信息。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c3343661f6c72a057c73b70f91a284f3168a9c72
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: resourcePageType
+ms.openlocfilehash: f0e99acd1cfead36cd4f0591591cfbe7cee9d1e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034018"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 

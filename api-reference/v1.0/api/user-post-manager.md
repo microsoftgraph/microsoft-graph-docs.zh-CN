@@ -4,12 +4,13 @@ description: 使用此 API 指定用户的经理。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d31789286659aab66f1a453f8f807fc5c18f6da2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b7979b1189c797ed6470498350e0c111fb9a5c43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885590"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026647"
 ---
 # <a name="assign-a-manager"></a>指定经理
 

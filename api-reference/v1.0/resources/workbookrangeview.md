@@ -4,12 +4,13 @@ description: RangeView 表示父范围的一组可见单元格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d0e30db53ec6e798bf62d5a64aa7d856ddc8f5e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033346"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
 RangeView 表示父范围的一组可见单元格。
@@ -23,13 +24,13 @@ RangeView 表示父范围的一组可见单元格。
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|返回与范围视图相关联的范围对象|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |cellAddresses|Json|代表单元格地址
 |columnCount|Int32|返回可见列数。只读。|
 |formulas|Json|表示采用 A1 表示法的公式。 |
 |formulasLocal|Json|表示采用 A1 表示法的公式，使用用户语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中变为 "=SUMME(A1; 1,5)"。    |
-|formulasR1C1|Json|表示采用 R1C1 表示法的公式。   |
+|formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。   |
 |index|Int32|范围的索引。|
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。只读。 |
 |rowCount|Int32|返回可见行数。只读。  |
@@ -38,7 +39,7 @@ RangeView 表示父范围的一组可见单元格。
 |values|Json|表示指定的 RangeView 的原始值。返回的数据可能是字符串、数字，也可能是布尔值。包含错误的单元格将返回错误字符串。   |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |描述|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |rows|[workbookRangeView](workbookrangeview.md) 集合| 表示一组与范围相关联的范围视图。只读。  只读。|
 

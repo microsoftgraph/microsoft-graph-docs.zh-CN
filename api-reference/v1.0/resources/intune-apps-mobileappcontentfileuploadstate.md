@@ -4,12 +4,13 @@ description: 包含上载请求状态的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50e17bbd002d42b439c8b4377a38532e13ed9f4b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 911253ac7833cdea8ada0e796743c6245af88208
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557850"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028922"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "32557850"
 |:---|:---|:---|
 |success|0|尚未记录|
 |transientError|1|尚未记录|
-|error|2 |尚未记录|
-|unknown|3 |尚未记录|
+|error|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|

@@ -2,12 +2,15 @@
 title: 枚举值
 description: Microsoft Graph 枚举值。
 localization_priority: Normal
-ms.openlocfilehash: 4225ffa152672cd4fd12d231ea9837f11a75b0fa
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+author: ''
+ms.prod: ''
+doc_type: enumPageType
+ms.openlocfilehash: e5dace8eac1e60153661a36b021c049f53b0face
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032562"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 

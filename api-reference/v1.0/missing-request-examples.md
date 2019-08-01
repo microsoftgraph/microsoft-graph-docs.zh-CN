@@ -2,12 +2,15 @@
 title: 将 /me 定义为单一实例
 description: 必须在文档中添加以下内容, 以确保 Markdown-扫描程序
 localization_priority: Normal
-ms.openlocfilehash: 58f5dd45a18753a599b404c6241a5213d216a75a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 82dac0d1b01b9e06c68c8d48fa54d9e728b3a293
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887143"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030147"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 

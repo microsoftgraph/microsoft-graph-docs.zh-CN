@@ -2,12 +2,15 @@
 title: scheduleInformation 资源类型
 description: 表示用户、通讯组列表或资源在指定时间段内的可用性。
 localization_priority: Normal
-ms.openlocfilehash: a19689eeafe9723cdadeb6147700933ab171637c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 4e53ee27de09b105add8c5bd00d7cd551a9c1737
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579266"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034629"
 ---
 # <a name="scheduleinformation-resource-type"></a>scheduleInformation 资源类型
 

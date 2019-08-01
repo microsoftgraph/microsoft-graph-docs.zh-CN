@@ -4,12 +4,13 @@ description: 此类包含适用于 Android 工作配置文件的合规性设置�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b73a4d5631646cdc5781d05b3b8b4758abf8b35
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 88200020d1c889e79f8298eca4d85c36a22e73e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031939"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>androidWorkProfileCompliancePolicy 资源类型
 

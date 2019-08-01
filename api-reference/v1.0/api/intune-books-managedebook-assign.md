@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94c50cf4e3f880f61f1e392d9166c6dfe7a6f5ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 71c6237392e96347f3ee207311afe91b362c4c29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524905"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018482"
 ---
 # <a name="assign-action"></a>分配操作
 

@@ -4,12 +4,13 @@ description: 网络协议的可能值。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f5ab5497676360b96d51220d00e106169eba1df3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 13f6b8f75200b7bdf1778662af6d9455235111c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584773"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034431"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>securityNetworkProtocol 枚举类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "32584773"
 |unknown|-1|未知协议。|
 |ip|0|Internet 协议。|
 |icmp|1| Internet 控制邮件协议。|
-|igmp|2 | Internet 组管理协议。|
-|ggp|3 | 网关到网关协议。|
-|ipv4|4 | Internet 协议版本4。|
-|tcp|6 | 传输控制协议。|
+|igmp|双面| Internet 组管理协议。|
+|ggp|第三章| 网关到网关协议。|
+|ipv4|4| Internet 协议版本4。|
+|tcp|型| 传输控制协议。|
 |pup|12| PARC 通用数据包协议。|
 |udp|×| 用户数据报协议。|
 |idp|22| Internet 数据报协议。|
@@ -34,7 +35,7 @@ ms.locfileid: "32584773"
 |ipv6FragmentHeader|44| ipv6 分段标头。|
 |ipSecEncapsulatingSecurityPayload|50| ipv6 封装安全有效负载标头。|
 |ipSecAuthenticationHeader|51| ipv6 身份验证标头。|
-|icmpV6|58| ipv6 的 Internet 控制消息协议。|
+|icmpV6|58| Ipv6 的 Internet 控制消息协议。|
 |ipv6NoNextHeader|59| ipv6 无下一个标头。|
 |ipv6DestinationOptions|60| ipv6 目标选项标头。|
 |点|77| 网络磁盘协议 (非正式)。|

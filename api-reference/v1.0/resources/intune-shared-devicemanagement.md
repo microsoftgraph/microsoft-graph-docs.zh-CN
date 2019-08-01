@@ -1,21 +1,22 @@
 ---
 title: deviceManagement 资源类型
-description: 'deviceManagement 资源代表其内容因工作流而异的容器, 包括:  '
+description: 'DeviceManagement 资源代表其内容因工作流而异的容器, 包括:  '
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 08f04242b379fee6ebcc4496e10d342fd3ec342e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8f8ef8fcb3d38ca46ab95e63a92e5f108d8a7782
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571910"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036944"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-deviceManagement 资源代表其内容因工作流而异的容器, 包括:  
+DeviceManagement 资源代表其内容因工作流而异的容器, 包括:  
 
 - 审核事件  
 - 公司条款和条件   

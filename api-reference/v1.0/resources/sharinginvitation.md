@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: SharingInvitation 资源将与邀请相关的数据项分组到一个单一结构中。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 011402b40b601642a048b91e3b3f66de0792aaf2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549592"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034242"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 

@@ -4,12 +4,13 @@ description: 列出所有 groupLifecyclePolicy。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e53ef9a83677b52ae9db648690879d5715e294e2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 664063654f1c02883f1595529d4cb6d6b41d1f2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886780"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014611"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 

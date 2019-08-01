@@ -4,12 +4,13 @@ description: 详细介绍租户 (目录) 的用户和应用程序登录活动。
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb73b843643c5ffba1b5cdac3d7fd519819109ba
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 735f7cc453a15ebf36aabc0e4d6a7a845a6c416c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629241"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034228"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 
@@ -37,7 +38,7 @@ ms.locfileid: "33629241"
 |ipAddress|String|用于登录的客户端的 IP 地址。|
 |isInteractive|Boolean|指示登录是否为交互式登录。|
 |location|[signInLocation](signinlocation.md)|提供登录所源于的城市、州和国家/地区代码。|
-|resourceDisplayName|字符串|用户登录到的资源的名称。|
+|resourceDisplayName|String|用户登录到的资源的名称。|
 |resourceId|String|用户登录到的资源的 ID。|
 |riskDetail|riskDetail|提供风险用户、登录或风险事件的特定状态背后的“原因”。 可取值包括：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 值 `none` 表示到目前为止尚未对用户或登录执行任何操作。 <br>**注意:** 此属性的详细信息需要 Azure AD Premium P2 许可证。 其他许可证返回值`hidden`。|
 |riskEventTypes|riskEventTypes|与登录相关联的风险事件类型。 可取值为：`unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic` 和 `unknownFutureValue`。|
@@ -45,8 +46,8 @@ ms.locfileid: "33629241"
 |riskLevelDuringSignIn|riskLevel|登录过程中的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
 |riskState|riskState|报告有风险的用户、登录或风险事件的状态。 可取值包括：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
 |status|[signInStatus](signinstatus.md)|登录状态。 可取值包括 `Success` 和 `Failure`。|
-|userDisplayName|字符串|启动登录的用户的显示名称。|
-|userId|字符串|启动登录的用户的 ID。|
+|userDisplayName|String|启动登录的用户的显示名称。|
+|userId|String|启动登录的用户的 ID。|
 |userPrincipalName|字符串|启动登录的用户的用户主体名称。|
 
 ## <a name="relationships"></a>关系

@@ -4,12 +4,13 @@ description: 检索 workbookpivottable 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bbf8baf1d22491f1542173aacdac8e79d6771933
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a0c6f4cdf8c9b296b04f72b4f96ccc4c5c889b46
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884386"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026320"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 

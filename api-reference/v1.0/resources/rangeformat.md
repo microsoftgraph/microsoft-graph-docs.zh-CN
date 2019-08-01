@@ -4,12 +4,13 @@ description: 一个格式对象，其中封装了区域的字体、填充、边�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: f0e57522812b966c39a6981de964e786d33c5006
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3e1b79c80c20197cc14a5097efdf9eb0513b43e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579499"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034886"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 

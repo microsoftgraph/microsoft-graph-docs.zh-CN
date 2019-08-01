@@ -2,12 +2,15 @@
 title: fileHash 资源类型
 description: 包含有关文件哈希 (加密和位置敏感) 的状态信息。
 localization_priority: Normal
-ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: aabe56237ea44285c93f802268bd68688f16aa05
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564769"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030378"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 

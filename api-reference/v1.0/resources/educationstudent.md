@@ -4,12 +4,13 @@ description: 添加到 educationUser 的其他信息，该属性将在用户的 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 683a290806f9a70f97bda4aa9429a64578fbcd97
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2b8574d790094468d4a74ab5796c18e26b696540
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030490"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 
@@ -19,10 +20,10 @@ ms.locfileid: "32463556"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生的出生日期。|
-|externalId|字符串| 源系统中学生的 ID。|
-|gender|educationGender| 可能的值为: `female`、 `male`、 `other`、 `unknownFutureValue`。|
-|grade|字符串|学生的当前年级。|
-|graduationYear|字符串| 学生从学校毕业的年份。|
+|externalId|String| 源系统中学生的 ID。|
+|gender|educationGender| 可能的值包括 `female`、`male`、`other`、`unknownFutureValue`。|
+|grade|String|学生的当前年级。|
+|graduationYear|String| 学生从学校毕业的年份。|
 |studentNumber|String| 学生编号。|
 
 ## <a name="json-representation"></a>JSON 表示形式

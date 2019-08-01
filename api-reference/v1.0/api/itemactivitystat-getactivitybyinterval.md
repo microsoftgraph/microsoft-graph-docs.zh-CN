@@ -5,12 +5,13 @@ title: 按间隔获取项目活动统计
 description: 获取在指定时间间隔内发生在此资源上的活动的 itemAnalyticyStats。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2f8f2a449ddb730b31275ba2789fb14ea4f279b6
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: apiPageType
+ms.openlocfilehash: 30f06f9bcdfb96f61f39b81152f0c9cd23872e49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025531"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 

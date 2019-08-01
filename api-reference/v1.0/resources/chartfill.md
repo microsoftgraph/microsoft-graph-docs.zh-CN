@@ -4,12 +4,13 @@ description: 表示图表元素的格式填充。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f24d2eea95216ec02cb371f3d016742af77a46e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a81a9ff88479f5779d6387242c410b35dce6f737
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569044"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029790"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill 资源类型
 

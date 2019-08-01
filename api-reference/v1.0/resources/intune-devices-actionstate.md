@@ -4,12 +4,13 @@ description: 设备上操作的状态
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e06b492e41ffa5e2f9aa4b64782e96125ea746a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9e6be5ce422664d5666fd5c76c3ce51ad8a9d798
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548458"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027515"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
@@ -22,11 +23,11 @@ ms.locfileid: "32548458"
 |:---|:---|:---|
 |无|0|操作状态无效|
 |决|1|操作挂起|
-|取消|2 |操作已被取消。|
-|工作|3 |操作处于活动状态。|
-|done|4 |操作已完成, 无错误。|
-|未能|5 |操作失败|
-|notSupported|6 |操作不受支持。|
+|取消|双面|操作已被取消。|
+|工作|第三章|操作处于活动状态。|
+|done|4|操作已完成, 无错误。|
+|未能|5|操作失败|
+|notSupported|型|操作不受支持。|
 
 
 

@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 90b3ba1b95196ca9d355c605342351f5d321c866
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 可以使用 createLink 操作通过共享链接共享 DriveItem。
+doc_type: apiPageType
+ms.openlocfilehash: ebb13629e4e329c6e473dcf700fba58a59d8e8dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881819"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015563"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 

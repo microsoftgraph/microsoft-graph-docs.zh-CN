@@ -2,12 +2,15 @@
 title: Json 资源类型
 description: 表示以 JSON 格式返回的数据
 localization_priority: Normal
-ms.openlocfilehash: 5e41417fadfccdc5e0c0f08675496d50222d3ecb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 53bb564b1cb41829bb18707a196263a1c3030cc9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585151"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036510"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 

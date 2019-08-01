@@ -4,12 +4,13 @@ description: '获取指定文件夹下的文件夹集合。 可以使用 `.../me
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 51ce2a020d794a3aeb141ce0bc6196d24d12f2b8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0367ab74312d5a665c346b90ff59017cab8faff8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881375"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023039"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 

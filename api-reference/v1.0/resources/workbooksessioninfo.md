@@ -4,12 +4,13 @@ description: 提供有关工作簿会话的信息。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 502781c4049c9451f5ed67ff97222abf4df462d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f2e6b925e7cc1790b1c6d4f08bab02fa92f19936
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456834"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033332"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo 资源类型
 
@@ -38,5 +39,5 @@ ms.locfileid: "32456834"
 | 属性 | 类型  | 说明                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | 工作簿会话 的 ID。 |
-| persistChanges | 布尔 |  对于持续会话，值为 `true`。 对于非持续会话（视图模式），值为 `false`。 |
+| persistChanges | boolean |  对于持续会话，值为 `true`。 对于非持续会话（视图模式），值为 `false`。 |
 

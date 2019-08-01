@@ -4,12 +4,13 @@ description: 本主题提供由 windows10TeamGeneralConfiguration 资源公开�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e27ed10158c7ff9f664f005b816868d2eb6a173d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: fda51cdc3f897de85f3aaf17389b4842653c3e2d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463444"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030994"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration 资源类型
 
@@ -32,25 +33,25 @@ ms.locfileid: "32463444"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|azureOperationalInsightsBlockTelemetry|布尔|指示是否阻止 Azure 操作见解。|
-|azureOperationalInsightsWorkspaceId|字符串|Azure 操作见解工作区 ID。|
-|azureOperationalInsightsWorkspaceKey|字符串|Azure 操作见解工作区键。|
-|connectAppBlockAutoLaunch|布尔|指定是否在启动投影时自动启动 Connect 应用。|
-|maintenanceWindowBlocked|布尔|指示是否阻止设置设备更新的维护时段。|
+|azureOperationalInsightsBlockTelemetry|Boolean|指示是否阻止 Azure 操作见解。|
+|azureOperationalInsightsWorkspaceId|String|Azure 操作见解工作区 ID。|
+|azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
+|connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
+|maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
 |maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|
 |maintenanceWindowStartTime|TimeOfDay|设备更新的维护时段开始时间。|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|频道。 可取值为：`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive`。|
-|miracastBlocked|布尔|指示是否阻止无线投影。|
-|miracastRequirePin|布尔|指示是否需要 PIN 才能进行无线投影。|
-|settingsBlockMyMeetingsAndFiles|布尔|指定是否禁用“开始”菜单中的“我的会议和文件”功能，该功能显示来自 Office 365 的已登录用户的会议和文件。|
-|settingsBlockSessionResume|布尔|指定是否允许在会话超时时恢复会话。|
-|settingsBlockSigninSuggestions|布尔|指定是否禁用计划会议的被邀请者自动填充登录对话框。|
+|miracastBlocked|Boolean|指示是否阻止无线投影。|
+|miracastRequirePin|Boolean|指示是否需要 PIN 才能进行无线投影。|
+|settingsBlockMyMeetingsAndFiles|Boolean|指定是否禁用“开始”菜单中的“我的会议和文件”功能，该功能显示来自 Office 365 的已登录用户的会议和文件。|
+|settingsBlockSessionResume|Boolean|指定是否允许在会话超时时恢复会话。|
+|settingsBlockSigninSuggestions|Boolean|指定是否禁用计划会议的被邀请者自动填充登录对话框。|
 |settingsDefaultVolume|Int32|指定新会话的默认音量值。 允许的值为 0-100。 默认值为 45。 有效值为 0 至 100|
 |settingsScreenTimeoutInMinutes|Int32|指定 Hub 屏幕关闭前的分钟数。|
 |settingsSessionTimeoutInMinutes|Int32|指定会话超时前的分钟数。|

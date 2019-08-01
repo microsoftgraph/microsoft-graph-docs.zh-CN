@@ -3,12 +3,14 @@ title: secureScoreControlProfile 资源类型
 description: 表示租户的每个控件数据的安全分数。 默认情况下, 它将返回租户的所有控件, 并可显式提取各个控件。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 98b335d536ab64000b65756f8c60e0f401f028fd
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 40bee951d3030772973911510ebba7cc90f412ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034487"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile 资源类型
 

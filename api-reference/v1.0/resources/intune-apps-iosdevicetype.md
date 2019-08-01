@@ -4,12 +4,13 @@ description: 包含移动应用可以在上面运行的可能的 iOS 设备类�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f3bd1d0aff7e09d5828496de348805075d0b330
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 23d38faeafd9aac0d0e547596de51507b6932c20
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029160"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "32503525"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|iPad|布尔|应用是否应该在 iPad 上运行。|
+|iPad|Boolean|应用是否应该在 iPad 上运行。|
 |iPhoneAndIPod|布尔值|应用是否应该在 iPhone 和 iPod 上运行。|
 
 ## <a name="relationships"></a>关系

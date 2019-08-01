@@ -4,12 +4,13 @@ description: 包含用于为组分配移动应用的属性的抽象类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7cf8b9cda12ac7156e8ffb75f85626af66d7da0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 78f1b9f20139dcb9fc3ccbadb9d8ad59a9c12723
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557843"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028957"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>mobileAppAssignmentSettings 资源类型
 

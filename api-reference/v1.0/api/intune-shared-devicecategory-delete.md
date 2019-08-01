@@ -4,12 +4,13 @@ description: 删除 deviceCategory。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 35dffc1c280caeb10007dbf11d390ac7487d4a61
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3e242cc2e3e1992d37053b71d864207a94b2bf4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577040"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025926"
 ---
 # <a name="delete-devicecategory"></a>删除 deviceCategory
 

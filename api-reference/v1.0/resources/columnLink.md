@@ -4,12 +4,15 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
-ms.openlocfilehash: 435696cc596f73830104ea8ec0619bf40a462d62
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: contentType 上的 columnLink 将网站 columnDefinition 附加到该内容类型。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d3914c4b3cfe18d2dead778116b86134caaf6caa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565784"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029692"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink 资源类型
 

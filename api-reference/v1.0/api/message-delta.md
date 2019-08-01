@@ -4,12 +4,13 @@ description: 获取指定文件夹中已添加、删除或更新的邮件集。
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 82f88fe4b65f7c4deb8e74f6f9a0114c89bc86d8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d383405bd9118518aa6a2fa2807660253c839275
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022934"
 ---
 # <a name="message-delta"></a>message: delta
 

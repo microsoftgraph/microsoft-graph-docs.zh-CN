@@ -4,12 +4,13 @@ description: 读取 importedWindowsAutopilotDeviceIdentityUpload 对象的属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cb9962e4b1328c75558c9ff77b6dabe2f86c4de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1673d6109a243fe0fed6edf6c02c7b4edcb36cb4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583919"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018495"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>获取 importedWindowsAutopilotDeviceIdentityUpload
 

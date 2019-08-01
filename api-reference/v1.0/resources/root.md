@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 方根
 localization_priority: Normal
-ms.openlocfilehash: af69a3242cb8f4673302a8ee08814b06deeb72e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 根 Facet 指示对象是它的层次结构中最顶层的对象。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 6cbeb16ed6f5faa101770dff3d2339196facc5d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579273"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034641"
 ---
 # <a name="root-resource-type"></a>根资源类型
 

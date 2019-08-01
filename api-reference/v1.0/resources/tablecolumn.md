@@ -4,12 +4,13 @@ description: 代表表中的一列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 15a91ce28509e63f6ca7def284aeafe515ed04d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 095317b36c5242cd5e78f58192a242bd4e1f2993
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561304"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033976"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 
@@ -25,7 +26,7 @@ ms.locfileid: "32561304"
 |[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|获取与列的数据体相关的 range 对象。|
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|获取与列的标头行相关的 range 对象。|
 |[区域](../api/tablecolumn-range.md)|[Range](range.md)|获取与整个列相关的 range 对象。|
-|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|获取与列的总计行相关的 range 对象。|
+|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[区域](range.md)|获取与列的总计行相关的 range 对象。|
 |[删除](../api/tablecolumn-delete.md)|无|从表中删除列。|
 |[列出](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md) 集合 |获取 tableColumn 对象的集合。 |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](tablecolumn.md)|根据其在集合中的位置获取列。|

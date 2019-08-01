@@ -5,16 +5,17 @@ title: ItemActionSet 资源类型
 description: ItemActionSet 对象提供有关作为项目活动的一部分发生的操作的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 065a6126e2e4a2f78cecfb2ae5497fac28e16899
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a28a3380761e2d1914d7c088e5927fc5d3addd4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036720"
 ---
 # <a name="itemactionset-resource-type"></a>itemActionSet 资源类型
 
-**ItemActionSet**资源提供有关对项目[活动][ itemActivity]的操作的信息。
+**ItemActionSet**资源提供有关对项目[活动][itemActivity]的操作的信息。
 
 >**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
@@ -24,7 +25,7 @@ ms.locfileid: "33970639"
 
 以下操作当前可用。 由于将来可能会添加新操作, 因此请确保您的应用程序可以处理包含未知操作的**itemActionSet** 。
 
-| 属性名称 | 类型              | 说明
+| 属性名 | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------
 | comment       | [commentAction][] | 向项目添加了注释。
 | create        | [createAction][]  | 创建了项目。

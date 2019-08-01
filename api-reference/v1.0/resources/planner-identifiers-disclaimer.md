@@ -4,12 +4,13 @@ description: 'Planner 中的对象标识符是由服务生成的字符串值。 
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 75c284d576ed6f03691828309fab7ed899c1c066
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 75a0262b085b6649d7390a2a6196d0190cdefc5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462450"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035446"
 ---
 # <a name="identifiers-in-planner"></a>Planner 中的标识符
 

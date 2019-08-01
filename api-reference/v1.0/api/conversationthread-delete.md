@@ -4,12 +4,13 @@ description: 删除 conversationThread。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2779ae7353976a73a675395c653439f4d58f143b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7b99e08c962b4f2b541f147e5b6b4992a830e0b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883651"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015752"
 ---
 # <a name="delete-conversationthread"></a>删除 conversationThread
 

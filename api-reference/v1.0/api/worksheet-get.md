@@ -4,12 +4,13 @@ description: 检索 worksheet 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8de40a02db98e7963bc1acf38fd52ad7321aa7b7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 380c670948a250906cb1e7772f43d461116dc12e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891120"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026269"
 ---
 # <a name="get-worksheet"></a>获取工作表
 

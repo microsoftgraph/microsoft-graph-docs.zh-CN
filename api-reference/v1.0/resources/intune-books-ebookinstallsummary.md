@@ -4,12 +4,13 @@ description: 包含某个设备的书籍安装摘要的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17075183e0541669923a69c140d228cb1cbd4a2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 82bc37303f815e782c3d2aac8e0c1b13eb8e6ec0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028845"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 

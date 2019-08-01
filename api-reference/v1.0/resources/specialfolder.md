@@ -4,16 +4,17 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: d30c1169d859bdb9299744b92efc6ab737c20851
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: SpecialFolder 资源将与特殊文件夹相关的数据项分组到一个单一结构。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e7b5878d091e766ffa5a591c3ea72e4abcad9461
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563726"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034032"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **SpecialFolder** 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 
@@ -63,18 +64,10 @@ ms.locfileid: "32563726"
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
   "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/SpecialFolder"
+} -->

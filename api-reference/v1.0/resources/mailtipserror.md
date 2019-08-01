@@ -4,12 +4,13 @@ description: 操作过程中发生的错误。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 499949c5995025e9327e1f662365b0c5e43c80f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: fd5df6f723ad41f7e6c2074f278cd5f59a902bf6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574003"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036314"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError 资源类型
 

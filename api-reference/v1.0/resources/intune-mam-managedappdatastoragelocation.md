@@ -4,12 +4,13 @@ description: 托管应用可能存储其数据的存储位置
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a294e81556daeafa715a3cd8c496944133ab7be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 070c071b934122533ad474cabd0f9b821c5aa732
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465242"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038092"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 
@@ -21,8 +22,8 @@ ms.locfileid: "32465242"
 |成员|值|说明|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for Business|
-|sharePoint|2 |SharePoint|
-|localStorage|6 |设备上的本地存储|
+|sharePoint|双面|SharePoint|
+|localStorage|型|设备上的本地存储|
 
 
 

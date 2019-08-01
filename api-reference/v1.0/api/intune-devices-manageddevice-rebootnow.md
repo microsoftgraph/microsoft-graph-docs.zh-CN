@@ -4,12 +4,13 @@ description: 重新启动设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb4df13231924ad8a604360d4687d9272543a691
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 861113f3b44d7bbfb2c8f77809de265b8c5ebd30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020960"
 ---
 # <a name="rebootnow-action"></a>rebootNow 操作
 

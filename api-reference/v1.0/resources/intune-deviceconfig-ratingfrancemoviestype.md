@@ -4,12 +4,13 @@ description: 法国的电影评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84099ef903c98ec565cdb60a2ac9d8b74b51123f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: e21ae91a2df8ea8e5a446e3f4f41ec83aa5976d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560730"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031246"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "32560730"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|agesAbove10|2 |10分类禁止将胶片屏蔽到小于10的未成年人|
-|agesAbove12|3 |12分类禁止将胶片屏蔽到12岁下面的未成年人|
-|agesAbove16|4 |16分类禁止将胶片屏蔽到16下的未成年人|
-|agesAbove18|5 |18分类禁止筛选到18岁以上的未成年人|
+|agesAbove10|双面|10分类禁止将胶片屏蔽到小于10的未成年人|
+|agesAbove12|第三章|12分类禁止将胶片屏蔽到12岁下面的未成年人|
+|agesAbove16|4|16分类禁止将胶片屏蔽到16下的未成年人|
+|agesAbove18|5|18分类禁止筛选到18岁以上的未成年人|
 
 
 

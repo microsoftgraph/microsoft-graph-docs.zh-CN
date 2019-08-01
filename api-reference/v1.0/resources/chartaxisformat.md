@@ -4,12 +4,13 @@ description: 封装图表坐标轴的格式属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 92258887c9646890ee63d14aebcd32ada7a8aaa6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1d52063e63e179540bcbd5c3b4ec0cd09fb620d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569247"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029853"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat 资源类型
 
