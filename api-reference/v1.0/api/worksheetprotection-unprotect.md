@@ -4,12 +4,13 @@ description: 解除工作表保护
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8f2d02789d8f23e8df87842853fd4588aacd0092
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5061f31674099b9d07a38e02d88fe1f920cc6c18
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856278"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026031"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 

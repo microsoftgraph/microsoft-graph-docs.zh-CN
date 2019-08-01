@@ -4,12 +4,13 @@ description: 允许 IT 管理员为 MDM 控制的设备设置预定义的默认�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6867dd6b2243541b193b8b741924487f16ff61c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3d733abca0dd390e83e51b25afd1ba7e86886b3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565973"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028376"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine 资源类型
 

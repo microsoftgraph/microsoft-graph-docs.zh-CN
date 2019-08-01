@@ -2,12 +2,15 @@
 title: 图标资源类型
 description: 表示单元格图标。
 localization_priority: Normal
-ms.openlocfilehash: 833fa4cb4061a96b01077c3adeb7dcaed49e0a02
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 734276c4881f4a9c7628afe2a8f6dfa45c308f5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567807"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030210"
 ---
 # <a name="icon-resource-type"></a>图标资源类型
 

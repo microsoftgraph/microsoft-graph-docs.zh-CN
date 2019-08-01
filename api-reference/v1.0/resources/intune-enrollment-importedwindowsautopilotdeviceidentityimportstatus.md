@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0dae6cb2d8962c10091ecf78a076fe3a371f821b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: c3e83493e8d79e60e17414527528d1c77994b92c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523817"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027354"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus 枚举类型
 
@@ -22,9 +23,9 @@ ms.locfileid: "32523817"
 |:---|:---|:---|
 |unknown|0|未知状态。|
 |决|1|挂起状态。|
-|环|2 |部分状态。|
-|complete|3 |完整状态。|
-|error|4 |错误状态。|
+|环|双面|部分状态。|
+|complete|第三章|完整状态。|
+|error|4|错误状态。|
 
 
 

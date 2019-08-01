@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2d0db687524a6d97cebdb42f1263b7ce3190e7be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 179c0b34f1ecd22c29ec178e0d7935677fdb0be9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576928"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025891"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>verifyWindowsEnrollmentAutoDiscovery 函数
 

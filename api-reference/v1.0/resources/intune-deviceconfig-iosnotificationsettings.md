@@ -4,12 +4,13 @@ description: 说明通知设置的项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ce016579729353f69f2e7671ff67b5da0004536
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 38ebee60ad5e4de642103a4cd72ae4f6cea0d9c6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031477"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
@@ -20,14 +21,14 @@ ms.locfileid: "32464587"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|bundleID|字符串|要向其应用这些通知设置的应用的捆绑 ID。|
+|bundleID|String|要向其应用这些通知设置的应用的捆绑 ID。|
 |appName|String|要与 bundleID 关联的应用程序名称。|
 |发布者|String|要与 bundleID 关联的发布者。|
 |enabled|Boolean|指示是否允许此应用使用通知。|
-|showInNotificationCenter|布尔|指示是否可以在通知中心中显示通知。|
-|showOnLockScreen|布尔|指示是否可以在锁定屏幕上显示通知。|
+|showInNotificationCenter|Boolean|指示是否可以在通知中心中显示通知。|
+|showOnLockScreen|Boolean|指示是否可以在锁定屏幕上显示通知。|
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|指示此应用的通知的警报类型。 可取值为：`deviceDefault`、`banner`、`modal`、`none`。|
-|badgesEnabled|布尔|指示是否允许此应用使用徽章。|
+|badgesEnabled|Boolean|指示是否允许此应用使用徽章。|
 |soundsEnabled|布尔值|指示是否允许此应用使用声音。|
 
 ## <a name="relationships"></a>关系

@@ -4,12 +4,13 @@ description: 包含用于为组分配 iOS VPP 电子书的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f472714869d92bcaf2af148dd2f591c19c18425
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ec8b16f40dd56f00b3a48968b582ccca8228eb6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534729"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031995"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment 资源类型
 

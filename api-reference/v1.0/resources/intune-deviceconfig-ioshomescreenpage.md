@@ -4,12 +4,13 @@ description: 包含主屏幕上的应用和文件夹的页面
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4317ac80e7ff6273b809eb747da745f5cf5edb6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d898a1611c05b156ee4b16d042175b6b5c33284d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028173"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>iosHomeScreenPage 资源类型
 

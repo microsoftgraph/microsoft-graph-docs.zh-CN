@@ -4,12 +4,13 @@ description: 表示主屏幕上应用的图标
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67c11096414db0dccad2ccf56ec184a4e3f30397
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cc4e94071e7b81fab82044f65da809f7b17e5b3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554735"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028215"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 

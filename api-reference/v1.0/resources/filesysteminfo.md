@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: 28f5cd631f9ea937150f9bb4c16e3775ea26d5d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: FileSystemInfo 资源包含设备本地文件系统所报告的项目本地版本的属性。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 12f2c0ed0dd10b36adea919795c2ae55f586436a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030336"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
 

@@ -4,12 +4,13 @@ description: 使用此 API 创建新的表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b402a047165a03b2631c0045041e1f50a95de710
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2dbf09cf8732a7bc2667e497b7ec41a088aba379
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569723"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026122"
 ---
 # <a name="create-table"></a>创建表
 

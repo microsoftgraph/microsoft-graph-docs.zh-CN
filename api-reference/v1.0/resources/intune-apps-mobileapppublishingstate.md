@@ -4,12 +4,13 @@ description: 指示应用程序的发布状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 81361cabcd1ebade92e1c81b0c5a1677170473c4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557836"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032135"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 枚举类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "32557836"
 |:---|:---|:---|
 |notPublished|0|应用尚未发布。|
 |处理|1|应用程序正在等待服务端处理。|
-|发布|2 |应用程序已发布。|
+|发布|双面|应用程序已发布。|
 
 
 

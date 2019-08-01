@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
 localization_priority: Normal
-ms.openlocfilehash: 065ac52a4d5216a4b3e62df892c8fe0a07a82ed0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition 资源上的 currencyColumn 指示该列的值代表货币。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d01ae79c8c271f1076d14e44f5f4cb5b147f4b79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574748"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029566"
 ---
 # <a name="currencycolumn-resource-type"></a>CurrencyColumn 资源类型
 

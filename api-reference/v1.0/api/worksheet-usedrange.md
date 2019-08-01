@@ -4,12 +4,13 @@ description: 使用的区域是包含分配了值或格式化的任何单元格�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: bdf2a49f70e1b2e3d50cc45788904feeeef22207
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 756fccce62bab54296e5aa4ba44291ab903e24bf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884246"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026108"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 

@@ -4,16 +4,17 @@ description: '将应用程序发布到 Microsoft 团队应用程序目录。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1e5254d5d75ac2dbb2efa1882845bbfbd40fa291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521759"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021156"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>将应用程序发布到你的组织的应用程序目录
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 将[应用程序](../resources/teamsapp.md)发布到 Microsoft 团队应用程序目录。 具体而言, 此 API 会将应用程序发布到您的组织的目录 (租户应用程序目录);创建的资源将具有`distributionMethod`  =  `organization`。
 
@@ -27,7 +28,7 @@ ms.locfileid: "32521759"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| Application                            | 不支持|
+| 应用程序                            | 不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +56,7 @@ POST /appCatalogs/teamsApps
 ### <a name="request"></a>请求
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 
@@ -78,11 +79,3 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

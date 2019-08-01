@@ -4,12 +4,13 @@ description: '更新 settings 对象的属性。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: eb739ebe4266dc61246fd39f1b4f053ab08a5a75
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac4907867eebd0cf02bf4e978d1a48b1f1b47ce8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026514"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -31,7 +32,7 @@ ms.locfileid: "32573569"
 PATCH /me/settings
 ```
 
-具有 "user id" 或 "userPrincipalName" 的请求只能由用户或具有用户的 ReadWrite 权限的用户访问。 若要了解详细信息, 请参阅[权限](/graph/permissions-reference)。 
+具有“用户ID”或“userPrincipalName”的请求只能由用户或具有 User.ReadWrite.All 权限的用户访问。 若要了解详细信息，请参阅[权限](/graph/permissions-reference)。 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
@@ -50,7 +51,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|设置为 true 确实禁用对[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)API 的代理访问, 并禁用用户对 Office Delve 中的文档的访问权限。 设置为 true 还会影响 Office 365 中显示的内容的相关性 (例如, SharePoint 主页中的建议网站和 OneDrive for business 中的发现视图) 显示较少的相关结果。 此设置反映了[Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)中的控件状态。|
+|contributionToContentDiscoveryDisabled|布尔值|设置为 true 确实禁用对[趋势](/graph/api/resources/insights-trending?view=graph-rest-beta)API 的代理访问, 并禁用用户对 Office Delve 中的文档的访问权限。 设置为 true 还会影响 Office 365 中显示的内容的相关性 (例如, SharePoint 主页中的建议网站和 OneDrive for Business 中的发现视图) 显示较少的相关结果。 此设置反映了[Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)中的控件状态。|
 
 ## <a name="example"></a>示例 
 

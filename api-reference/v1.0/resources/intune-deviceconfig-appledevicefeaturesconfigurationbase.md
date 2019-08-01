@@ -4,12 +4,13 @@ description: Apple 设备功能配置的配置文件。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 23a1e4dc3c55dbc5b7d98bcf2c08e70e82239bee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a7c5f5857ae372e62c2fa1210c180c19d04811b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575189"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028656"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase 资源类型
 

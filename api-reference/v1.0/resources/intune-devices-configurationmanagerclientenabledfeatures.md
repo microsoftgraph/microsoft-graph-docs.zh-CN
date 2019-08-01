@@ -4,12 +4,13 @@ description: Configuration Manager 客户端已启用的功能
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91ffd0180660b33e9ead5210f9b23870af18e29a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 520b21445d4c5a61755ddc78c65b9999a7e45ff0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027494"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -20,11 +21,11 @@ Configuration Manager 客户端已启用的功能
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|inventory|布尔|目录是否由 Intune 管理|
-|modernApps|布尔|现代应用程序是否由 Intune 管理|
-|resourceAccess|布尔|资源访问权限是否由 Intune 管理|
-|deviceConfiguration|布尔|设备配置是否由 Intune 管理|
-|compliancePolicy|布尔|符合性策略是否由 Intune 管理|
+|inventory|Boolean|目录是否由 Intune 管理|
+|modernApps|Boolean|现代应用程序是否由 Intune 管理|
+|resourceAccess|Boolean|资源访问权限是否由 Intune 管理|
+|deviceConfiguration|Boolean|设备配置是否由 Intune 管理|
+|compliancePolicy|Boolean|符合性策略是否由 Intune 管理|
 |windowsUpdateForBusiness|Boolean|适用于企业的 Windows 更新是否由 Intune 管理|
 
 ## <a name="relationships"></a>关系

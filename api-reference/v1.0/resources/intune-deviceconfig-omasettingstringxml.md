@@ -4,12 +4,13 @@ description: OMA 设置字符串 XML 定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4f95201a725969fa125cdf949874686b9155fc3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f6ad3a5e291166813d621e8339adfce6ffe6e2ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568792"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028012"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml 资源类型
 

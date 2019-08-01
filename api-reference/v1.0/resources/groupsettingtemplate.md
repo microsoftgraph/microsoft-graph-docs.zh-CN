@@ -4,12 +4,13 @@ description: 组设置模板表示对租户可用的系统定义设置。 可以
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2b9b95303b72bc111f045010e71459f541e9a9b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3d0624be1511b542da08e76ed5f9c51e60fe58a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029279"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "32570790"
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
 |[获取 groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | 读取某个系统定义的 groupSettingTemplate 对象的特定属性。 |
-|[列出 groupSettingTemplate](../api/groupsettingtemplate-list.md) | [groupSettingTemplate 的集合](groupsettingtemplate.md) |列出所有系统定义的 groupSettingTemplate 对象。|
+|[列出 groupSettingTemplate](../api/groupsettingtemplate-list.md) | [GroupSettingTemplate 的集合](groupsettingtemplate.md) |列出所有系统定义的 groupSettingTemplate 对象。|
 
 ## <a name="properties"></a>属性
 
@@ -29,7 +30,7 @@ ms.locfileid: "32570790"
 |说明|String| 模板的说明。 |
 |displayName|String| 模板的显示名称。 |
 |id|字符串| 模板的唯一标识符。 只读。|
-|值|[settingTemplateValue](settingtemplatevalue.md)集合| settemplatevalues 的集合, 该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
+|values|[settingTemplateValue](settingtemplatevalue.md)集合| Settemplatevalues 的集合, 该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
 
 ## <a name="relationships"></a>关系
 

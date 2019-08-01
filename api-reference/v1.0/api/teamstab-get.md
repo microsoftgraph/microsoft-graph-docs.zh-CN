@@ -4,16 +4,17 @@ description: '检索指定选项卡的属性和关系。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1513893907d6448287f2541ffdc4617ab94ef455
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3d630bcaddd46aaf1428a49035c5502f43be0bfc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522235"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027200"
 ---
 # <a name="get-tab"></a>获取选项卡
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 检索指定[选项卡](../resources/teamstab.md)的属性和关系。 
 
@@ -52,7 +53,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -90,9 +91,6 @@ Content-length: 401
   "description": "Get a channel tab",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

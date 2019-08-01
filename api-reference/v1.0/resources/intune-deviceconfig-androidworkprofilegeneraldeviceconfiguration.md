@@ -4,12 +4,13 @@ description: Android 工作配置文件常规设备配置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39c9a9ee5d995df6ee54809b07d70d347c6a9aea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6289867080952e7b45a68387470c8a476275f3a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575133"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028670"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>androidWorkProfileGeneralDeviceConfiguration 资源类型
 

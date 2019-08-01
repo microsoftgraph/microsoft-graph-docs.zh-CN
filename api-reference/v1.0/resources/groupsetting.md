@@ -4,12 +4,13 @@ description: 组设置控制诸如组显示名称阻止的单词列表的行为,
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42e6c0dc0f0ffd48da84023c5e4ff0d97cb446f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c85b062e955fc15f83728813427f2de5579e297e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030238"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
@@ -34,7 +35,7 @@ ms.locfileid: "32570825"
 |displayName|String| 来自关联模板的此组设置的显示名称。 |
 |id|String| 这些设置的唯一标识符。 只读。 |
 |templateId|String| 用于创建此组设置的模板的唯一标识符。 只读。 |
-|值|[settingValue](settingvalue.md)集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。 |
+|values|[settingValue](settingvalue.md)集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。 |
 
 ## <a name="relationships"></a>关系
 

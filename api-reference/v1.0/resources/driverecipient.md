@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4792a943598911cc2f0b8329016469ca157bda58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: DriveRecipient 资源表示用户、组或其他收件人使用 invite 操作进行共享。
+doc_type: resourcePageType
+ms.openlocfilehash: a198bdc8a50fdb754ba8f9c88ce8e925c548a600
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562718"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029384"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 
@@ -33,9 +35,9 @@ ms.locfileid: "32562718"
 ## <a name="properties"></a>属性
 收件人资源具有以下属性。
 
-| 属性名称 | 类型   | 说明                                                                                             |
+| 属性名 | 类型   | 说明                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | 字符串 | 收件人的电子邮件地址，前提是收件人有关联的电子邮件地址。                  |
+| email         | String | 收件人的电子邮件地址，前提是收件人有关联的电子邮件地址。                  |
 | 别名         | String | Domain 对象的别名，适于电子邮件地址不可用的情况（例如，安全组）。 |
 | objectId      | String | 目录中收件人的唯一标识符。                                               |
 

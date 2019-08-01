@@ -4,12 +4,13 @@ description: '一种表示学校的资源，用于管理所表示学校的课程
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3446b637835facfbe9a03e31dbdb8e9421b2faed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463668"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030504"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -28,24 +29,24 @@ ms.locfileid: "32463668"
 |[List users](../api/educationschool-list-users.md) |[educationUser](educationuser.md) 集合| 获取 **educationUser** 对象集合。|
 |[Remove user](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| 通过 **users** 导航属性从学校删除 **educationUser**。|
 |[Update](../api/educationschool-update.md) | [educationSchool](educationschool.md) |更新 **educationSchool** 对象。 |
-|[Delete](../api/educationschool-delete.md) | 无 |删除 **educationSchool** 对象。 |
+|[删除](../api/educationschool-delete.md) | 无 |删除 **educationSchool** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String|该学校的 GUID。|
-|displayName| 字符串| 学校的显示名称。| 
-|description| 字符串 | 学校描述。| 
-|status| string| 只读。 可能的值为: `inactive`、 `active`、 `expired`、 `deleteable`。|
+|displayName| String| 学校的显示名称。| 
+|说明| 字符串 | 学校描述。| 
+|状态| string| 只读。 可能的值包括 `inactive`、`active`、`expired`、`deleteable`。|
 |externalSource| educationExternalSource| 只读。  可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
-|principalEmail| 字符串| 主体的电子邮件地址。|
-|principalName| 字符串 | 主体名称。|
-|externalPrincipalId| 字符串 | 同步系统中主体的 ID。 |
-|highestGrade|字符串| 教授的最高年级。 |
-|lowestGrade|字符串| 教授的最低年级。 |
-|schoolNumber|字符串| 学校编号。|
+|principalEmail| String| 主体的电子邮件地址。|
+|principalName| String | 主体名称。|
+|externalPrincipalId| String | 同步系统中主体的 ID。 |
+|highestGrade|String| 教授的最高年级。 |
+|lowestGrade|String| 教授的最低年级。 |
+|schoolNumber|String| 学校编号。|
 |externalId|String| 同步系统中学校的 ID。 |
-|phone|字符串| 学校电话号码。 |
+|phone|String| 学校电话号码。 |
 |fax|String| 学校传真号码。 |
 |address|[physicalAddress](physicaladdress.md)| 学校地址。|
 |createdBy|[identitySet](identityset.md)|创建了学校的实体。|

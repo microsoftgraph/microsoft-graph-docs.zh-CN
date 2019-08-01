@@ -4,12 +4,13 @@ description: 英国的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b65561cd54a347e03bbe895d70fec7edfc1b602
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 17fe466de15e919014f71e747dbb42db26769e25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534645"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027872"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 枚举类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "32534645"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|:|2 |允许电视内容带警告消息|
+|:|双面|允许电视内容带警告消息|
 
 
 

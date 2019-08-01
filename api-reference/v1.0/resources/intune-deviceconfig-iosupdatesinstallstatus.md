@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cb94689fb4345fec41cd584b3b636ffbdeea325
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: d73f5bff06dd13e96206aa5d2d9e08d49b34004f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584759"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028152"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "32584759"
 |:---|:---|:---|
 |success|0|尚未记录|
 |可用|1|尚未记录|
-|待机|2 |尚未记录|
-|unknown|3 |尚未记录|
+|待机|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |下载|-2016330712|尚未记录|
 |downloadFailed|-2016330711|尚未记录|
 |downloadRequiresComputer|-2016330710|尚未记录|

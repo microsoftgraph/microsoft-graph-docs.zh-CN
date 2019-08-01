@@ -5,12 +5,13 @@ title: incompleteData 资源类型
 description: IncompleteData facet 指示资源是使用不完整的数据生成的。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f26317cf16f0773852df35941c00e88df145cc31
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 0ac77c5dc4daed9330c4fb71185e9505feee5048
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029237"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 

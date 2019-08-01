@@ -4,12 +4,13 @@ description: 列出 windowsPhone81GeneralConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da67f8563bf689115d22cc10ad48f11e2704c51b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d208753255c1e98f0970a67202807a0bc82e22d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021138"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>列出 windowsPhone81GeneralConfigurations
 

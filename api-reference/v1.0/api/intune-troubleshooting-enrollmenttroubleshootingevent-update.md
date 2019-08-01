@@ -4,12 +4,13 @@ description: 更新 enrollmentTroubleshootingEvent 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a16a24a27a56ab1a733b46fa9ad9b7469f0a8ee3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e17167d2965102618d0033210a69b39db16686a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025636"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>更新 enrollmentTroubleshootingEvent
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID。继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|id|字符串|对象的 UUID。继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|事件发生的时间。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |correlationId|String|用于跟踪服务中的故障的 ID。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|

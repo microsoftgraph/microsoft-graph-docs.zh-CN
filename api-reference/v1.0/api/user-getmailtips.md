@@ -4,12 +4,13 @@ description: 获取一个或多个收件人对登录用户可用的邮件提示�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f0c49f6c13a0ecb6bb35e0aa2c3ca7529e519b8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c089c2a777fce23842ade34059707e4248b05b8c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885115"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027053"
 ---
 # <a name="user-getmailtips"></a>用户: getMailTips
 

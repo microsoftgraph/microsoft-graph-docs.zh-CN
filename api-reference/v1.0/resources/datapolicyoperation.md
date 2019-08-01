@@ -1,3 +1,17 @@
+---
+title: dataPolicyOperation 资源类型
+description: 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如, 公司管理员可以提交数据策略操作请求以导出员工的公司数据, 然后再跟踪该请求。
+author: ''
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+doc_type: resourcePageType
+ms.openlocfilehash: 3c73bef8a640c950b6d85eb74ad93089aaad4f74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029552"
+---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
 表示已提交的数据策略操作。 它包含用于跟踪操作状态的必要信息。 例如, 公司管理员可以提交数据策略操作请求以导出员工的公司数据, 然后再跟踪该请求。
@@ -17,7 +31,7 @@
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|表示在 UTC 时间内使用 ISO 8601 格式完成此数据策略操作的请求的时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 空, 直到操作完成。|
 |id|String| 此操作的唯一键。 |
-|status|string| 可取值为：`notStarted`、`running`、`complete`、`failed` 或 `unknownFutureValue`。|
+|状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
 |storageLocation|String|要为导出请求导出的数据的 URL 位置。|
 |userId|String|对其执行操作的用户的 id。|
 |submittedDateTime|DateTimeOffset|表示在 UTC 时间内提交此数据操作的请求 (使用 ISO 8601 格式)。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

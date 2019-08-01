@@ -4,12 +4,13 @@ description: 本主题提供由 windowsPhone81CustomConfiguration 资源公开�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fca187a71847cf8d2b592d047014ca38933da5e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ba7c65e1336d2bd1c066663d500522549ebd192a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580242"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027592"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>windowsPhone81CustomConfiguration 资源类型
 

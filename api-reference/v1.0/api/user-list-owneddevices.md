@@ -4,12 +4,13 @@ description: 获取用户拥有的设备列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 68e436d8c2788396ead6294896e3770d59dae5bc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8edac4e161b27cf0016965944d5dcd6daf5e2565
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892864"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026802"
 ---
 # <a name="list-owneddevices"></a>List ownedDevices
 

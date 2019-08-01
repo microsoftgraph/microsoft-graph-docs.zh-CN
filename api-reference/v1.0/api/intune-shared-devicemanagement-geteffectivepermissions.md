@@ -4,12 +4,13 @@ description: 检索当前验证的用户的有效权限
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d6c58ae88e2b5cf9a6787529868f8cf9e42879be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3609bb419b9fc7bf39074827915717428224443b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576956"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025884"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 函数
 

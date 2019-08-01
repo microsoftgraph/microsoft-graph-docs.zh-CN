@@ -4,12 +4,13 @@ description: 表示特定用户具有管理功能的 Android 应用的同步详�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 047c9eaf29f96463e6493726b9d1815b3b2eaa01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7505c6183c628e26528b7fe2820373a8be17d359
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027333"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 
@@ -42,7 +43,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 应用正在根设备上运行 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|String|实体的键。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 ## <a name="relationships"></a>关系

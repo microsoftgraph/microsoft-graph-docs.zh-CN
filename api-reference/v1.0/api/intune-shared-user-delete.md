@@ -4,12 +4,13 @@ description: 删除 user。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e66d987c2e88f40dd5b104961e9203dcd636651a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d3d9f883f15dafd496dc2ef0217ef76e859f98bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576809"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025804"
 ---
 # <a name="delete-user"></a>删除用户
 

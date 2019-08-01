@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3ddebda8bd91cef0346384d49bd0fe63fe87f0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 22f29bac84d72c6d511b8b59e34f2a3568aa138c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523355"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030665"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount 资源类型
 

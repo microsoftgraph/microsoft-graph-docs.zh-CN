@@ -4,12 +4,13 @@ description: 包含用于为组分配 iOS LOB 移动应用的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5beacfd60eb2237ed85a95bca21c27a38f956d16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8cb033283c163a30dbedf7088001025c327dbae6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583156"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029165"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
 

@@ -4,12 +4,13 @@ description: 根据其在集合中的位置获取列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2238f2d685508ffd2d1242edfd36c9c8b16af8dc
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: a594f30d9e270d71997243e79996fb94123ee03c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447346"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021314"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 

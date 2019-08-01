@@ -4,12 +4,13 @@ description: 恢复密码
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fed5fa3e910ccc74808f63728d6c3253bb879e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2b90d5029b44148c197592ba8e3751bb1ec3431b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570262"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020953"
 ---
 # <a name="recoverpasscode-action"></a>recoverPasscode 操作
 

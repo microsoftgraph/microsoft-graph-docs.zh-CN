@@ -4,12 +4,13 @@ description: 获取表示范围整列的对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 55afbd72460ca85db6de1466774e03924491bc97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a197c13ec1436c2b71031b63e83ebd752657381c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857093"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025330"
 ---
 # <a name="range-entirecolumn"></a>Range:EntireColumn
 

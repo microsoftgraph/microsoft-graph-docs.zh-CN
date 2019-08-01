@@ -4,12 +4,13 @@ description: 此类包含 iOS 的合规性设置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b63f77acd121ea6fe3499686b2c7c6144aa26d95
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 711d38c0891eaa81b1151d1fd585a2fd69544fb1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580993"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028264"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 

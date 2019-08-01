@@ -4,12 +4,13 @@ description: 获取桌面和设备上激活的 Office 365 订阅数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a59825fdc53f761fd6b38e664db632334c9ab055
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2bfdd3eac135fc0d52d0877a0b29c312fbfec549
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025097"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 

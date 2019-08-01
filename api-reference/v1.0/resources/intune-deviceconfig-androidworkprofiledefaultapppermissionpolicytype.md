@@ -4,12 +4,13 @@ description: Android 工作配置文件默认应用权限策略类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9eec6381feac8c3d9dfd025b9d106aa1f1cf9cdb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575119"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031869"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 
@@ -22,8 +23,8 @@ Android 工作配置文件默认应用权限策略类型。
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
 |提示|1|行.|
-|autoGrant|2 |自动授予。|
-|autoDeny|3 |自动拒绝。|
+|autoGrant|双面|自动授予。|
+|autoDeny|第三章|自动拒绝。|
 
 
 

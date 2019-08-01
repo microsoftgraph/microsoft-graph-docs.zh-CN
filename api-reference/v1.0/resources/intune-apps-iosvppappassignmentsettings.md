@@ -4,12 +4,13 @@ description: 包含用于为组分配 iOS APP 移动应用的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1ff346b9ae786fdc2158a5386625f808e04c181
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d35cd60b1e616f38b8c4c792f7bd766f550b62aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523908"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029118"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
 

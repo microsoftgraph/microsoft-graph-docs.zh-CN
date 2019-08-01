@@ -4,12 +4,13 @@ description: 设备操作系统摘要。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53c806e250d6b201e6dfe49d90685c4144913182
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9877dba58817e8c6dad3676cb6a646750408d4e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574073"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030756"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 

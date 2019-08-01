@@ -4,12 +4,13 @@ description: 锁定操作结果，包含用于解锁的 PIN
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c533d9590acba1518ac3d0dc791af804b9d84452
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 326cfa1305645167146b7e5e8cb56a0774829929
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550635"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030672"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult 资源类型
 
