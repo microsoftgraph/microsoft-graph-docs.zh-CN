@@ -4,51 +4,52 @@ description: '获取此组的“遭拒的发件人”列表中的用户或组列
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 89a3424919dbacdf8e549f49f12db80535145221
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a0e669395d71ca4b0c2312147c4a3e93cfb24d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014883"
 ---
-# <a name="list-rejectedsenders"></a><span data-ttu-id="d1844-103">列出 rejectedSender</span><span class="sxs-lookup"><span data-stu-id="d1844-103">List rejectedSenders</span></span>
-<span data-ttu-id="d1844-104">获取此组的“遭拒的发件人”列表中的用户或组列表。</span><span class="sxs-lookup"><span data-stu-id="d1844-104">Get a list of users or groups that are in the rejected-senders list for this group.</span></span> 
+# <a name="list-rejectedsenders"></a><span data-ttu-id="19432-103">列出 rejectedSender</span><span class="sxs-lookup"><span data-stu-id="19432-103">List rejectedSenders</span></span>
+<span data-ttu-id="19432-104">获取此组的“遭拒的发件人”列表中的用户或组列表。</span><span class="sxs-lookup"><span data-stu-id="19432-104">Get a list of users or groups that are in the rejected-senders list for this group.</span></span> 
 
-<span data-ttu-id="d1844-p101">已拒绝的发件人列表中的用户无法发布到组对话（在 GET 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="d1844-p101">Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="19432-p101">已拒绝的发件人列表中的用户无法发布到组对话（在 GET 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="19432-p101">Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d1844-107">权限</span><span class="sxs-lookup"><span data-stu-id="d1844-107">Permissions</span></span>
-<span data-ttu-id="d1844-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d1844-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="19432-107">权限</span><span class="sxs-lookup"><span data-stu-id="19432-107">Permissions</span></span>
+<span data-ttu-id="19432-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="19432-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d1844-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d1844-110">Permission type</span></span>      | <span data-ttu-id="d1844-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d1844-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="19432-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="19432-110">Permission type</span></span>      | <span data-ttu-id="19432-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="19432-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d1844-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d1844-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d1844-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d1844-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d1844-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d1844-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1844-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d1844-115">Not supported.</span></span>    |
-|<span data-ttu-id="d1844-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d1844-116">Application</span></span> | <span data-ttu-id="d1844-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="d1844-117">Not supported.</span></span> |
+|<span data-ttu-id="19432-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="19432-112">Delegated (work or school account)</span></span> | <span data-ttu-id="19432-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19432-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="19432-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="19432-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19432-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="19432-115">Not supported.</span></span>    |
+|<span data-ttu-id="19432-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="19432-116">Application</span></span> | <span data-ttu-id="19432-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="19432-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d1844-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d1844-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="19432-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="19432-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/rejectedSenders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d1844-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d1844-119">Optional query parameters</span></span>
-<span data-ttu-id="d1844-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="d1844-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="19432-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="19432-119">Optional query parameters</span></span>
+<span data-ttu-id="19432-120">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="19432-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d1844-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="d1844-121">Request headers</span></span>
-| <span data-ttu-id="d1844-122">标头</span><span class="sxs-lookup"><span data-stu-id="d1844-122">Header</span></span>       | <span data-ttu-id="d1844-123">值</span><span class="sxs-lookup"><span data-stu-id="d1844-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="19432-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="19432-121">Request headers</span></span>
+| <span data-ttu-id="19432-122">标头</span><span class="sxs-lookup"><span data-stu-id="19432-122">Header</span></span>       | <span data-ttu-id="19432-123">值</span><span class="sxs-lookup"><span data-stu-id="19432-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d1844-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1844-124">Authorization</span></span>  | <span data-ttu-id="d1844-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d1844-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="19432-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="19432-124">Authorization</span></span>  | <span data-ttu-id="19432-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="19432-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d1844-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d1844-127">Request body</span></span>
-<span data-ttu-id="d1844-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d1844-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="19432-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="19432-127">Request body</span></span>
+<span data-ttu-id="19432-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="19432-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d1844-129">响应</span><span class="sxs-lookup"><span data-stu-id="d1844-129">Response</span></span>
-<span data-ttu-id="d1844-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="d1844-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="19432-129">响应</span><span class="sxs-lookup"><span data-stu-id="19432-129">Response</span></span>
+<span data-ttu-id="19432-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="19432-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d1844-131">示例</span><span class="sxs-lookup"><span data-stu-id="d1844-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="d1844-132">请求</span><span class="sxs-lookup"><span data-stu-id="d1844-132">Request</span></span>
-<span data-ttu-id="d1844-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d1844-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="19432-131">示例</span><span class="sxs-lookup"><span data-stu-id="19432-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="19432-132">请求</span><span class="sxs-lookup"><span data-stu-id="19432-132">Request</span></span>
+<span data-ttu-id="19432-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="19432-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d1844-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d1844-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="19432-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="19432-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rejectedsenders"
@@ -56,28 +57,28 @@ GET /groups/{id}/rejectedSenders
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d1844-135">C#</span><span class="sxs-lookup"><span data-stu-id="d1844-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="19432-135">C#</span><span class="sxs-lookup"><span data-stu-id="19432-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rejectedsenders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d1844-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="d1844-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="19432-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="19432-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rejectedsenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d1844-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="d1844-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="19432-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="19432-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rejectedsenders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="d1844-138">Java</span><span class="sxs-lookup"><span data-stu-id="d1844-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="19432-138">Java</span><span class="sxs-lookup"><span data-stu-id="19432-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rejectedsenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d1844-139">响应</span><span class="sxs-lookup"><span data-stu-id="d1844-139">Response</span></span>
-<span data-ttu-id="d1844-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d1844-140">The following is an example of the response.</span></span>
-><span data-ttu-id="d1844-141">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="d1844-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d1844-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d1844-142">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="19432-139">响应</span><span class="sxs-lookup"><span data-stu-id="19432-139">Response</span></span>
+<span data-ttu-id="19432-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="19432-140">The following is an example of the response.</span></span>
+><span data-ttu-id="19432-141">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="19432-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="19432-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="19432-142">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

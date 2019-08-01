@@ -4,20 +4,23 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition 资源上的 textColumn 指示该列的值为文本。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 37a5bbd985d163cf627f4bc0a16a756eaf00af66
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033654"
 ---
-# <a name="textcolumn-resource-type"></a><span data-ttu-id="f2840-102">TextColumn 资源类型</span><span class="sxs-lookup"><span data-stu-id="f2840-102">TextColumn resource type</span></span>
+# <a name="textcolumn-resource-type"></a><span data-ttu-id="47821-103">TextColumn 资源类型</span><span class="sxs-lookup"><span data-stu-id="47821-103">TextColumn resource type</span></span>
 
-<span data-ttu-id="f2840-103">[columnDefinition](columndefinition.md) 资源上的 **textColumn** 指示该列的值为文本。</span><span class="sxs-lookup"><span data-stu-id="f2840-103">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
+<span data-ttu-id="47821-104">[columnDefinition](columndefinition.md) 资源上的 **textColumn** 指示该列的值为文本。</span><span class="sxs-lookup"><span data-stu-id="47821-104">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f2840-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f2840-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="47821-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="47821-105">JSON representation</span></span>
 
-<span data-ttu-id="f2840-105">下面是 **textColumn** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f2840-105">Here is a JSON representation of a **textColumn** resource.</span></span>
+<span data-ttu-id="47821-106">下面是 **textColumn** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="47821-106">Here is a JSON representation of a **textColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
 ```json
@@ -30,15 +33,15 @@ ms.locfileid: "32456995"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="f2840-106">属性</span><span class="sxs-lookup"><span data-stu-id="f2840-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="47821-107">属性</span><span class="sxs-lookup"><span data-stu-id="47821-107">Properties</span></span>
 
-| <span data-ttu-id="f2840-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="f2840-107">Property name</span></span>                   | <span data-ttu-id="f2840-108">类型</span><span class="sxs-lookup"><span data-stu-id="f2840-108">Type</span></span>    | <span data-ttu-id="f2840-109">说明</span><span class="sxs-lookup"><span data-stu-id="f2840-109">Description</span></span>
+| <span data-ttu-id="47821-108">属性名称</span><span class="sxs-lookup"><span data-stu-id="47821-108">Property name</span></span>                   | <span data-ttu-id="47821-109">类型</span><span class="sxs-lookup"><span data-stu-id="47821-109">Type</span></span>    | <span data-ttu-id="47821-110">说明</span><span class="sxs-lookup"><span data-stu-id="47821-110">Description</span></span>
 |:--------------------------------|:--------|:---------------------------------
-| <span data-ttu-id="f2840-110">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="f2840-110">**allowMultipleLines**</span></span>          | <span data-ttu-id="f2840-111">布尔</span><span class="sxs-lookup"><span data-stu-id="f2840-111">boolean</span></span> | <span data-ttu-id="f2840-112">是否支持多行文本。</span><span class="sxs-lookup"><span data-stu-id="f2840-112">Whether to allow multiple lines of text.</span></span>
-| <span data-ttu-id="f2840-113">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="f2840-113">**appendChangesToExistingText**</span></span> | <span data-ttu-id="f2840-114">布尔</span><span class="sxs-lookup"><span data-stu-id="f2840-114">boolean</span></span> | <span data-ttu-id="f2840-115">对此列的更新应替换现有文本，还是附加到现有文本。</span><span class="sxs-lookup"><span data-stu-id="f2840-115">Whether updates to this column should replace existing text, or append to it.</span></span>
-| <span data-ttu-id="f2840-116">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="f2840-116">**linesForEditing**</span></span>             | <span data-ttu-id="f2840-117">时会</span><span class="sxs-lookup"><span data-stu-id="f2840-117">int32</span></span>   | <span data-ttu-id="f2840-118">文本框的大小。</span><span class="sxs-lookup"><span data-stu-id="f2840-118">The size of the text box.</span></span>
-| <span data-ttu-id="f2840-119">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="f2840-119">**maxLength**</span></span>                   | <span data-ttu-id="f2840-120">时会</span><span class="sxs-lookup"><span data-stu-id="f2840-120">int32</span></span>   | <span data-ttu-id="f2840-121">值的最大字符数。</span><span class="sxs-lookup"><span data-stu-id="f2840-121">The maximum number of characters for the value.</span></span>
-| <span data-ttu-id="f2840-122">**textType**</span><span class="sxs-lookup"><span data-stu-id="f2840-122">**textType**</span></span>                    | <span data-ttu-id="f2840-123">string</span><span class="sxs-lookup"><span data-stu-id="f2840-123">string</span></span>  | <span data-ttu-id="f2840-124">要存储的文本类型。</span><span class="sxs-lookup"><span data-stu-id="f2840-124">The type of text being stored.</span></span> <span data-ttu-id="f2840-125">必须为 `plain` 或 `richText`.的其中一个</span><span class="sxs-lookup"><span data-stu-id="f2840-125">Must be one of `plain` or `richText`</span></span>
+| <span data-ttu-id="47821-111">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="47821-111">**allowMultipleLines**</span></span>          | <span data-ttu-id="47821-112">boolean</span><span class="sxs-lookup"><span data-stu-id="47821-112">boolean</span></span> | <span data-ttu-id="47821-113">是否支持多行文本。</span><span class="sxs-lookup"><span data-stu-id="47821-113">Whether to allow multiple lines of text.</span></span>
+| <span data-ttu-id="47821-114">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="47821-114">**appendChangesToExistingText**</span></span> | <span data-ttu-id="47821-115">boolean</span><span class="sxs-lookup"><span data-stu-id="47821-115">boolean</span></span> | <span data-ttu-id="47821-116">对此列的更新应替换现有文本，还是附加到现有文本。</span><span class="sxs-lookup"><span data-stu-id="47821-116">Whether updates to this column should replace existing text, or append to it.</span></span>
+| <span data-ttu-id="47821-117">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="47821-117">**linesForEditing**</span></span>             | <span data-ttu-id="47821-118">int32</span><span class="sxs-lookup"><span data-stu-id="47821-118">int32</span></span>   | <span data-ttu-id="47821-119">文本框的大小。</span><span class="sxs-lookup"><span data-stu-id="47821-119">The size of the text box.</span></span>
+| <span data-ttu-id="47821-120">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="47821-120">**maxLength**</span></span>                   | <span data-ttu-id="47821-121">int32</span><span class="sxs-lookup"><span data-stu-id="47821-121">int32</span></span>   | <span data-ttu-id="47821-122">值的最大字符数。</span><span class="sxs-lookup"><span data-stu-id="47821-122">The maximum number of characters for the value.</span></span>
+| <span data-ttu-id="47821-123">**textType**</span><span class="sxs-lookup"><span data-stu-id="47821-123">**textType**</span></span>                    | <span data-ttu-id="47821-124">string</span><span class="sxs-lookup"><span data-stu-id="47821-124">string</span></span>  | <span data-ttu-id="47821-125">要存储的文本类型。</span><span class="sxs-lookup"><span data-stu-id="47821-125">The type of text being stored.</span></span> <span data-ttu-id="47821-126">必须为 `plain` 或 `richText`.的其中一个</span><span class="sxs-lookup"><span data-stu-id="47821-126">Must be one of `plain` or `richText`</span></span>
 
 <!-- {
   "type": "#page.annotation",
