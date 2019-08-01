@@ -4,12 +4,13 @@ description: 检索组所属的 groupLifecyclePolicy 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: b5e08c900f864478b8ab510dea5774136df1a255
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 23ac6af1f01f24613f91a3a8f00d922f9f5741ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889161"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014884"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 

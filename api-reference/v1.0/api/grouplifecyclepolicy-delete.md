@@ -4,12 +4,13 @@ description: 删除 groupLifecyclePolicy。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4d829c027c492de55dbcedc8850826e41ec13273
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9a10ed79bfab49b797d5dd9b45376fd0f0a31a16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014667"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>删除 groupLifecyclePolicy
 

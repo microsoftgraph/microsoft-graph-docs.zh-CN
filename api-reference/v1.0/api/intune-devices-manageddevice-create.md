@@ -4,12 +4,13 @@ description: 创建新的 managedDevice 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 320b2fd8878d5ecd0af34152761bda1af6a5985c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 766274595966daeeb00b0802a92bb61c55a32e1f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584692"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018692"
 ---
 # <a name="create-manageddevice"></a>创建 managedDevice
 
@@ -50,49 +51,49 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备唯一标识符|
-|userId|字符串|与设备关联的用户的唯一标识符|
-|deviceName|字符串|设备的名称|
+|id|字符串|设备唯一标识符|
+|userId|String|与设备关联的用户的唯一标识符|
+|deviceName|String|设备的名称|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。|
 |enrolledDateTime|DateTimeOffset|设备的注册时间。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。|
-|operatingSystem|字符串|设备的操作系统。 Windows、iOS 等。|
+|operatingSystem|String|设备的操作系统。 Windows、iOS 等。|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
-|jailBroken|字符串|设备是否已越狱或取得 root 权限。|
+|jailBroken|String|设备是否已越狱或取得 root 权限。|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
-|osVersion|字符串|设备的操作系统版本。|
-|easActivated|布尔|设备是否已激活 Exchange ActiveSync。|
-|easDeviceId|字符串|设备的 Exchange ActiveSync ID。|
+|osVersion|String|设备的操作系统版本。|
+|easActivated|Boolean|设备是否已激活 Exchange ActiveSync。|
+|easDeviceId|String|设备的 Exchange ActiveSync ID。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。|
-|azureADRegistered|布尔|设备是否已注册 Azure Active Directory。|
+|azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
-|activationLockBypassCode|字符串|允许绕过设备上的激活锁的代码。|
-|emailAddress|字符串|与设备关联的用户的电子邮件。|
-|azureADDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。|
+|activationLockBypassCode|String|允许绕过设备上的激活锁的代码。|
+|emailAddress|String|与设备关联的用户的电子邮件。|
+|azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |deviceCategoryDisplayName|String|设备类别显示名称。|
 |isSupervised|Boolean|设备受监督状态|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
-|remoteAssistanceSessionUrl|字符串|允许与设备建立远程协助会话的 URL。|
-|remoteAssistanceSessionErrorDetails|字符串|用于在创建远程协助会话对象时识别问题的错误字符串。|
+|remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。|
+|remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。|
 |isEncrypted|Boolean|设备加密状态|
-|userPrincipalName|String|设备用户主体名称|
-|model|字符串|设备的型号|
-|manufacturer|字符串|设备的制造商|
-|imei|字符串|IMEI|
+|userPrincipalName|字符串|设备用户主体名称|
+|model|String|设备的型号|
+|manufacturer|String|设备的制造商|
+|imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 |serialNumber|字符串|序列号|
-|phoneNumber|字符串|设备的电话号码|
-|androidSecurityPatchLevel|字符串|Android 安全修补程序级别|
-|userDisplayName|字符串|用户显示名称|
+|phoneNumber|String|设备的电话号码|
+|androidSecurityPatchLevel|String|Android 安全修补程序级别|
+|userDisplayName|String|用户显示名称|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr 客户端启用的功能|
-|wiFiMacAddress|字符串|Wi-Fi MAC|
+|wiFiMacAddress|String|Wi-Fi MAC|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。|
-|subscriberCarrier|字符串|订阅者运营商|
-|meid|字符串|MEID|
+|subscriberCarrier|String|订阅者运营商|
+|meid|String|MEID|
 |totalStorageSpaceInBytes|Int64|存储空间总字节数|
 |freeStorageSpaceInBytes|Int64|可用存储空间字节数|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|

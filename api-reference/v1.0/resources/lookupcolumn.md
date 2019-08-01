@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: dbb2fe0f651a269d69b880d18748b27a5b6f457c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition 资源上的 lookupColumn 指示从网站中的另一个源查找列的值。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 5f0299816a1ea53338053708dbd99f7be8428051
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525472"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036342"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
@@ -34,7 +37,7 @@ ms.locfileid: "32525472"
 
 | 属性名称             | 类型    | 说明
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | 布尔 | 指示是否可以从源中选择多个值。
+| **allowMultipleValues**   | boolean | 指示是否可以从源中选择多个值。
 | **allowUnlimitedLength**  | boolean | 指示列中的值是否可以超过 255 个字符的标准限制。
 | **columnName**            | string  | 查找源列的名称。
 | **listId**                | string  | 查找源列表的唯一标识符。

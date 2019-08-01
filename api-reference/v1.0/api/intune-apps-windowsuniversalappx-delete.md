@@ -4,12 +4,13 @@ description: 删除 windowsUniversalAppX。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cfe7f8047c3a1c01650ccf51329b573554c6a82b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5235d20b1086bee93d1172dd8c6a865ebc1ab090
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453756"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015976"
 ---
 # <a name="delete-windowsuniversalappx"></a>删除 windowsUniversalAppX
 
@@ -24,7 +25,7 @@ ms.locfileid: "32453756"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

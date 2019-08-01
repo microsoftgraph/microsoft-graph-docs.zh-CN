@@ -4,12 +4,13 @@ description: 创建新的 windows81GeneralConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c56d80d1ec1a5d222ba87c0eacc548daab4d19d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bbba1af44a624290615078b1fb7647b6a1b5f91b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018867"
 ---
 # <a name="create-windows81generalconfiguration"></a>创建 windows81GeneralConfiguration
 

@@ -4,12 +4,13 @@ description: 向租户添加域。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb9547a6ebdccf57842823412b03ca886841c7e2
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: apiPageType
+ms.openlocfilehash: c048396d54383c84606cc0d903c17b76043ca5ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016550"
 ---
 # <a name="create-domain"></a>创建域
 

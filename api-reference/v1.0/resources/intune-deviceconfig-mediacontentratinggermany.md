@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e3c59bf110c55492db49a81a557cef0b421e328
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b4f2eda6b9666d3b23ea48d96f7a7231e189b4f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572379"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028096"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>mediaContentRatingGermany 资源类型
 

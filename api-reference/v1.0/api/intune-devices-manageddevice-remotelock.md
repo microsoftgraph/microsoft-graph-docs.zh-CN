@@ -4,12 +4,13 @@ description: 远程锁定
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8260dc306499c4118acc3482f22d8730e1b18ed7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 78bd4e725e4bce00a76be2fd03061618537bc111
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565539"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018671"
 ---
 # <a name="remotelock-action"></a>remoteLock 操作
 

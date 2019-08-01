@@ -4,12 +4,13 @@ description: 创建新的 windowsPhone81CompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f544441787f8c5003a0831402d157436febdb1a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a41ff2bb58ad3e13b21a6034045ebb0c7a62d48e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018846"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>创建 windowsPhone81CompliancePolicy
 

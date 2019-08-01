@@ -4,12 +4,13 @@ description: 根据列中的当前数据更改当前范围的列宽，以达到�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: ad6ae979aba1c1ccf1f147175192f3a82a8b1a44
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: eef9a3cf0476cb8f6394965b15cfe26d051a5f74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025244"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 

@@ -4,12 +4,13 @@ description: '检索组的所有者列表。所有者是一组具有 group 对�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: beface16a11784a9d91c771ebc888bf4b15377f7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6815f16ac3829b8c88d86fa4e2bbf187d6639fb5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889066"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014870"
 ---
 # <a name="list-owners"></a>列出所有者
 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 

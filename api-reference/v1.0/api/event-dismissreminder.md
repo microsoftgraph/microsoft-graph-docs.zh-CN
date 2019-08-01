@@ -4,12 +4,13 @@ description: 消除对用户日历中的事件触发的提醒。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b04879b8af87fc58923d6eb8472d8b54ba97d5de
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ce95feee0373105151bcc71b8a70907eddf1c656
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887426"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015053"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 

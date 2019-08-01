@@ -4,12 +4,13 @@ description: 列出 deviceComplianceUserStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02f8c750b06e934d50ab60ac539ecae0e377b3da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 04bb45dadaa2d8540f30d5169b7569e197280db4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574473"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019231"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>列出 deviceComplianceUserStatuses
 

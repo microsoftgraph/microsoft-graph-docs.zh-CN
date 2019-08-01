@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 身份
 localization_priority: Normal
-ms.openlocfilehash: 103657764b2f7073d553a01cd3794c0abecdf4f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 身份资源表示主角的身份。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e545ddc582404f963cab35d1e57f46817c5dfec0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567814"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029258"
 ---
 # <a name="identity-resource-type"></a>Identity 资源类型
 

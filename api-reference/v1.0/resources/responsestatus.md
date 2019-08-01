@@ -2,12 +2,15 @@
 title: responseStatus 资源类型
 description: 会议请求的响应状态。
 localization_priority: Normal
-ms.openlocfilehash: 110b0eb158043b9573deb3e3ced792119bfa91a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 03deeabfd789fe3e8912d5a431af21bc2c8e5256
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579280"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034662"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus 资源类型
 
@@ -17,7 +20,7 @@ ms.locfileid: "32579280"
 
 | 属性 | 类型           | 说明 |
 |:---------|:---------------|:------------|
-| 响应 | responseType   | 响应类型。 可能的值为: `None`、 `Organizer`、 `TentativelyAccepted` `Accepted`、、 `Declined`、 `NotResponded`。
+| 响应 | responseType   | 响应类型。 可能的值包括 `None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。
 | 时间     | DateTimeOffset | 响应返回的日期和时间。它使用 ISO 8601 格式，并始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`
 
 ## <a name="json-representation"></a>JSON 表示形式

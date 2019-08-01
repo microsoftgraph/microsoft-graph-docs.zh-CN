@@ -4,12 +4,13 @@ description: 检索已删除的项目中最近删除项目的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6640d6e95b0a6f396a3c5f31c4575eb06f602e34
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a9c30dbdd2666b4eccfee4b09a7e53ea5a23330b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883295"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015647"
 ---
 # <a name="get-deleted-item"></a>获取已删除的项目
 

@@ -4,12 +4,13 @@ description: 删除 deviceEnrollmentLimitConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15e81ee0637f04657356d802dcf45d90d63ddbd4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0f1ee7f8c268d151049cac5d5cd9c115643f7b51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567396"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018503"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>删除 deviceEnrollmentLimitConfiguration
 

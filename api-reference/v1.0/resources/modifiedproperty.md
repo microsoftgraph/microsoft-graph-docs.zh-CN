@@ -4,12 +4,13 @@ description: 指示 Azure AD 资源中已修改的所有属性, 包括旧值和�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
-ms.openlocfilehash: d87d0170dc811db074026e60efc63df928c65ada
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 0c5375ea3e188d6023e3588531e07877f6de38ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629276"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036097"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "33629276"
 |:---------------|:--------|:----------|
 |displayName|String|指示已更改的目标属性的属性名称。|
 |NewValue|String|指示值的更新值。|
-|oldValue|字符串|指示属性的前一个值 (在更新之前)。|
+|oldValue|String|指示属性的前一个值 (在更新之前)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

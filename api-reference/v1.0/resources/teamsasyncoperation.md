@@ -4,16 +4,17 @@ description: 'Microsoft 团队 async operation 是 transcends 一个 API 请求�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: dea11ee20e09f1de7c058ef7704e6a824ba2f765
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9c604d8823de4f48e4338b9637861e8a09505b78
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033752"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的操作。 这些操作运行时间较长, 或者在发起请求的时间范围内完成的成本太高。
 
@@ -31,7 +32,7 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 |lastActionDateTime|DateTimeOffset |上次更新异步操作的时间。|
 |attemptsCount|Int32|在标记为 "成功" 或 "失败" 之前尝试操作的次数。|
 |targetResourceId|containerparentjob |作为此异步操作 (通常为[团队](../resources/team.md)) 的结果创建或修改的对象的 ID。|
-|targetResourceLocation|字符串|作为此异步操作的结果创建或修改的对象的位置。 应将此 URL 视为不透明值, 而不会将其解析为其组件路径。|
+|targetResourceLocation|string|作为此异步操作的结果创建或修改的对象的位置。 应将此 URL 视为不透明值, 而不会将其解析为其组件路径。|
 |error|[operationError](operationerror.md)|导致异步操作失败的任何错误。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -60,15 +61,10 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "teams async operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

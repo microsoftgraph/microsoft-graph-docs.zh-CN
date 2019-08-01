@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: ceb66fdacd4a108318c84fd9297aca8b2332c3f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d19034475f72984f023cef368e1fec5f75fe456
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579336"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034725"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -57,7 +60,7 @@ ms.locfileid: "32579336"
 | 文件                 | [文件](file.md)                     | 指示远程项是文件。只读。                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | 本地文件系统中的远程项的有关信息。只读。                                                                                          |
 | 文件夹               | [文件夹](folder.md)                 | 指示远程项是文件夹。只读。                                                                                                            |
-| id                   | 字符串                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
+| id                   | String                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
 | name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |

@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementTroubleshootingEvent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f76698479345129f42583bdde5f2dffef986ed3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fd63c88c26f27c30072cb40b61ed54ec96f583bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576596"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025706"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>创建 deviceManagementTroubleshootingEvent
 
@@ -48,7 +49,7 @@ POST /deviceManagement/troubleshootingEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID|
+|id|字符串|对象的 UUID|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
 

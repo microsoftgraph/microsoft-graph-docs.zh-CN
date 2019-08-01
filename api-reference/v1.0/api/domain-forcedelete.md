@@ -4,12 +4,13 @@ description: 使用异步长时间运行的操作删除域。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a662d86f3050fdad5e371f0d62c93745fa98afed
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e8ba8a3a09138e3da1c6ac88b1f6047fcaab8134
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889952"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016676"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 

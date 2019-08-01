@@ -4,12 +4,13 @@ description: 列出 iosUpdateDeviceStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 681495495892e6d00f692bc8aa6c9afca0706e15
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 569a92832e76f56f61ba506ef62b50e72561fd0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549809"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017180"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>列出 iosUpdateDeviceStatuses
 

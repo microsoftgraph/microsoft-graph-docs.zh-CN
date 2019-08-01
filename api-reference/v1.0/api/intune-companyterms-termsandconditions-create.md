@@ -4,12 +4,13 @@ description: 创建新的 termsAndConditions 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29310b8d9f36f74059fa7acbfebb2f3d1ec44ffd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8618444185af036a3b1562e9d777cf57b8f03bff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524566"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019882"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 
@@ -52,8 +53,8 @@ POST /deviceManagement/termsAndConditions
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|description|String|管理员提供的 T&C 策略描述。|
-|title|字符串|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
+|说明|字符串|管理员提供的 T&C 策略描述。|
+|title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|

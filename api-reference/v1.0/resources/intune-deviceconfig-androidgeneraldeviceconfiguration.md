@@ -4,12 +4,13 @@ description: 本主题提供由 androidGeneralDeviceConfiguration 资源公开�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b0f3edb9d53cc42ec92d3330966cafec4bedcfa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: eb63b5c2fe593828f0ae240dd286bd574cb8c7f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028698"
 ---
 # <a name="androidgeneraldeviceconfiguration-resource-type"></a>androidGeneralDeviceConfiguration 资源类型
 

@@ -4,12 +4,13 @@ description: 赋值目标的基类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0be22b791522245c14d576520269add110a3d104
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e6b82ecc36c4fe44cb1bc7faced691a0e8f90ee9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585382"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036993"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget 资源类型
 

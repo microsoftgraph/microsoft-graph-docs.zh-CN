@@ -4,12 +4,13 @@ description: 返回此组所属的全部组。检查是可传递的。注意：�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 80c22aeeb1868759385e087125b8333278097ea4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1a391c8c30fc2dc38893a980ee73006e0960e715
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889272"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014877"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 返回此组所属的全部组。检查是可传递的。注意：组不能是目录角色的成员，因此不会返回任何目录角色。

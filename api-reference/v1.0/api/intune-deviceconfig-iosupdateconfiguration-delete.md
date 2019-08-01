@@ -4,12 +4,13 @@ description: 删除 iosUpdateConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81879842bd41eb20ca9f4c139901a85c1fb8b5ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 73cdd9c35d012b574cd8d6accf7aa706e8cceef9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549991"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017243"
 ---
 # <a name="delete-iosupdateconfiguration"></a>删除 iosUpdateConfiguration
 

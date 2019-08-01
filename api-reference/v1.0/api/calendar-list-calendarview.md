@@ -4,12 +4,13 @@ description: 获取由时间范围定义的日历视图中的事件发生次数�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5b7b0e2f06ab9b3acf0b279c6b8d8d6440636317
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bc520c7c27aa3273b87ccffb67484e4f004df76f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004076"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 

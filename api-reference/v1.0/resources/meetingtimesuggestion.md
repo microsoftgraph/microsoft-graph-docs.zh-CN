@@ -4,12 +4,13 @@ description: '会议建议, 其中包含会议时间、出勤可能性、个人�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 4c5a4cb4d094e7fd7fe9b0e56227a556c6e5b5d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 723468d14ebd089d8ed5b020f56e0c70c426ed9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036202"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
 
@@ -47,7 +48,7 @@ ms.locfileid: "32573975"
 |locations|[location](location.md) 集合|指定此会议时间建议中各个会议地点的名称和地理位置的数组。|
 |meetingTimeSlot|[timeSlot](timeslot.md)|建议的会议时间段。|
 |顺序|Int32|会议时间建议的顺序按其计算可信度值 (从高到低) 进行排序, 然后按 chronology (如果有相同可信度的建议)。 |
-|organizerAvailability|freeBusyStatus| 此会议时间建议中会议组织者的忙/闲状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。|
+|organizerAvailability|freeBusyStatus| 此会议时间建议中会议组织者的忙/闲状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |suggestionReason|String|会议时间建议的理由。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

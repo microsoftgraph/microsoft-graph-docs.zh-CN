@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 006f239acdecb2fb93ecf1d70e25a42b056b9283
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: siteCollection 资源提供有关网站集的详细信息。
+doc_type: resourcePageType
+ms.openlocfilehash: 27a534f2f9afe99a1a5abb1aee91b1b53b29566d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552776"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034158"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 

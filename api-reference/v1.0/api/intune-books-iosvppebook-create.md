@@ -4,12 +4,13 @@ description: 创建新的 iosVppEBook 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6251e3ecda1597653ff2fed9575e7357e89f652f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 267ee13b37657d18a3123cec15eb3ea88d70a47d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577103"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015836"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 

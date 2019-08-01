@@ -4,12 +4,13 @@ description: 更新 windowsInformationProtectionPolicy 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62eb0e3a30e77a8aeb1114e88bc30bbc1675aaf3
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: apiPageType
+ms.openlocfilehash: 898d484a275de53de412ee050717ecbb21e679bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639097"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020472"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>更新 windowsInformationProtectionPolicy
 

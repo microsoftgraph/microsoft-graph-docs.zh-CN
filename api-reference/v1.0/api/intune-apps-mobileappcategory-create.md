@@ -4,12 +4,13 @@ description: 创建新的 mobileAppCategory 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3abe0c2df1695f5e1f27a414265bfc357d832b1a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 71d82b40a7acff811ef474c7c505fbbd6825002b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541687"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016130"
 ---
 # <a name="create-mobileappcategory"></a>创建 mobileAppCategory
 

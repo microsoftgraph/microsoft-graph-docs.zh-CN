@@ -4,12 +4,13 @@ description: 角色分配资源。 角色分配将角色定义与成员和作用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32527fad8db54f865f054f04400897e51638e5c2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 542cd188653465f2482e4a5fe837eeb811fe3bd6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554035"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037126"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 
@@ -31,7 +32,7 @@ ms.locfileid: "32554035"
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色分配的显示或友好名称。|
-|description|String|角色分配的说明。|
+|说明|String|角色分配的说明。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
 ## <a name="relationships"></a>关系

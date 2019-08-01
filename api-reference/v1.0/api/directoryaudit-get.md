@@ -4,12 +4,13 @@ description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体)
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 54cc3df2037a613c122c0c26e5ffe93dddc2d061
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dad7b03cb570eb4d3c34261835d4091b01947fe6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880458"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016970"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 

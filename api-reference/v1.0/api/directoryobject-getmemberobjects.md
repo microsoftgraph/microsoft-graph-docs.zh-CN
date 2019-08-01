@@ -4,12 +4,13 @@ description: " 返回 user、group 或 directory 对象所属的所有组和目�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 43233bb327af8e7c9c4866f92de6d1fbd148fcab
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 78a2b0d3fe108ff7dc90c1ed878f01e3f84e4f80
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890117"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016802"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 

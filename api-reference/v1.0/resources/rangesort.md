@@ -4,12 +4,13 @@ description: 管理对 Range 对象的排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1fa09d156210d7dbe31b5896be071663cc214c64
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: resourcePageType
+ms.openlocfilehash: bf1006197a82d5b1d5d30124e47d7125424f0eee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891661"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034879"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort 资源类型
 

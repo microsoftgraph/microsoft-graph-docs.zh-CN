@@ -4,12 +4,13 @@ description: 这是 OneNote 实体的基本类型。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: a25e50f6929ae6b13bbe59839f035d2e4a31a6fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: febe87c3c57612dae06e3a34a187399e6b94c55a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035824"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>onenoteEntityHierarchyModel 资源
 

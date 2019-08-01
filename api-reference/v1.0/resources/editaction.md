@@ -5,16 +5,17 @@ title: editAction 资源类型
 description: EditAction 对象提供有关编辑项目的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6b4ffcd71f02a7a465aa6f7148063772ab73b596
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 9d53760827b324dc8ea9c6b16629dfc2948c5e01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970638"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029356"
 ---
 # <a name="editaction-resource-type"></a>editAction 资源类型
 
-[activity] [**ItemActivity**]上的**editAction**资源存在指示活动编辑了某个项目。
+[**ItemActivity**][activity]上的**editAction**资源存在指示活动编辑了某个项目。
 
 **注意**: 此资源当前为空。 将来可能会使用其他属性填充它。
 

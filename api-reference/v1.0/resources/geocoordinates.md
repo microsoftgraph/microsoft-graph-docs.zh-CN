@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: cafd9d72e6c7959b32672744959393ae9478c5b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 64b81bc2946658ffc8617662879bc6cb20e25047
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558074"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029307"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 

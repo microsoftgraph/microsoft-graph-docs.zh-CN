@@ -4,12 +4,13 @@ description: 组设置模板表示一组模板，用于创建组设置并在租�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c8d1bfca75705dd7bca696acd8a54c97b3ef8941
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 58166f5248a7f1012304881b0c62c536b5a5a534
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889392"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014471"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 

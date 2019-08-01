@@ -4,12 +4,13 @@ description: 将用户添加为设备的已注册所有者。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb5a3b0ca2b237d3165d083e5d24b808a33ee69d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: f4155e822f8eed989c096f15b4e0767ce237cd79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449118"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015668"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 

@@ -4,12 +4,13 @@ description: 更新 managedDevice 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12c8c2dc628b7fcecef81296ca56f17845b39478
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 48a4b1d8325f53b7a0a88f375257423526cbb170
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018594"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -50,7 +51,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备唯一标识符|
+|id|字符串|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -62,10 +63,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |jailBroken|String|设备是否已越狱或取得 root 权限。|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
 |osVersion|String|设备的操作系统版本。|
-|easActivated|布尔值|设备是否已激活 Exchange ActiveSync。|
+|easActivated|Boolean|设备是否已激活 Exchange ActiveSync。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。|
-|azureADRegistered|布尔值|设备是否已注册 Azure Active Directory。|
+|azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。|
 |emailAddress|String|与设备关联的用户的电子邮件。|
@@ -79,7 +80,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。|
 |isEncrypted|Boolean|设备加密状态|
-|userPrincipalName|String|设备用户主体名称|
+|userPrincipalName|字符串|设备用户主体名称|
 |model|String|设备的型号|
 |manufacturer|String|设备的制造商|
 |imei|String|IMEI|

@@ -4,12 +4,13 @@ description: 执行排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d2bb71abf20cfc89a970430f5b97031c6f58acd8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c802c553006739c03df4f26ff2969a404e442af6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025189"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 

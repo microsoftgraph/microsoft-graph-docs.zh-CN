@@ -4,12 +4,13 @@ description: 介绍 Microsoft Graph API (REST) 的组资源 (实体) 的 delete 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 15bd2c55fd7f5a056510a5025bc816e029267af3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 95638630fd95220760cce6766edbef5dc84cb544
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890707"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014968"
 ---
 # <a name="delete-group"></a>删除组
 

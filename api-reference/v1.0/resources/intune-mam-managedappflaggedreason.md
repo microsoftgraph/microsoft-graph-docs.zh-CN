@@ -4,12 +4,13 @@ description: 用户已被标记的原因
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b6beac5a9e96c2a51905f0306cc4d288b76c530
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 2e8b2e4069981c9223746823f1780ff945b54a6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465312"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038060"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 

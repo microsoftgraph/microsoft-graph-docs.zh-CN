@@ -2,16 +2,17 @@
 title: customTimeZone 资源类型
 description: 表示从标准时间到夏令时的切换不标准（反之亦然）的时区。
 localization_priority: Normal
-ms.openlocfilehash: 7d43de045b99a1163ae8fc74e40d659d10cabe63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9761f4423397279c17a96fc2ad4aa0f8ba6afb9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032758"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示从标准时间到夏令时的切换不标准（反之亦然）的时区。
 
@@ -34,6 +35,7 @@ ms.locfileid: "32574741"
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.timeZoneBase",
   "@odata.type": "microsoft.graph.customTimeZone"
 }-->
 
@@ -49,13 +51,10 @@ ms.locfileid: "32574741"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "customTimeZone resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

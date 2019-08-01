@@ -4,12 +4,13 @@ description: 本主题提供由 Windows10EndpointProtectionConfiguration 资源�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc52880d63a00fe67f0d45d08d974be84881c062
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: e64a218dc9ee507567df1271edb2d27051190cbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620575"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027732"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration 资源类型
 

@@ -1,17 +1,18 @@
 ---
-title: importedwindowsautopilotdeviceidentityupload 函数
+title: Importedwindowsautopilotdeviceidentityupload 函数
 description: 创建具有 autopilot 设备流的上载请求。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9730986d9282abb95f08fb2a297f0b2bb0a3dc6e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ab33dab66b8d9b57a57d8521ea8b27728c8037e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018517"
 ---
-# <a name="autopilotdevicestream-function"></a>importedwindowsautopilotdeviceidentityupload 函数
+# <a name="autopilotdevicestream-function"></a>Importedwindowsautopilotdeviceidentityupload 函数
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

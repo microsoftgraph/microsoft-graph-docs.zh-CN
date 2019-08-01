@@ -4,12 +4,13 @@ description: 包含 Android 移动应用需要的最低操作系统的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2402ad007b794e7d6824e52cce8ff7144c6c33b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 100a6923ab64a8a2d8629ccd6aace36db9263fdd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560870"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032366"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -20,13 +21,13 @@ ms.locfileid: "32560870"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v4_0|布尔值|版本 4.0 或更高版本。|
-|v4_0_3|布尔值|版本 4.0.3 或更高版本。|
-|v4_1|布尔值|版本 4.1 或更高版本。|
-|v4_2|布尔值|版本 4.2 或更高版本。|
-|v4_3|布尔值|版本 4.3 或更高版本。|
-|v4_4|布尔值|版本 4.4 或更高版本。|
-|v5_0|布尔值|版本 5.0 或更高版本。|
+|v4_0|Boolean|版本 4.0 或更高版本。|
+|v4_0_3|Boolean|版本 4.0.3 或更高版本。|
+|v4_1|Boolean|版本 4.1 或更高版本。|
+|v4_2|Boolean|版本 4.2 或更高版本。|
+|v4_3|Boolean|版本 4.3 或更高版本。|
+|v4_4|Boolean|版本 4.4 或更高版本。|
+|v5_0|Boolean|版本 5.0 或更高版本。|
 |v5_1|布尔值|版本 5.1 或更高版本。|
 
 ## <a name="relationships"></a>关系

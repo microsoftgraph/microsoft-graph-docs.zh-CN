@@ -4,12 +4,13 @@ description: 充当所有设备应用管理功能的容器的单例实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4a16d5656c90113c31595824925c79e801002de8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2f73656cd55197ae868c591d02b304f0b389acc1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583660"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036979"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -41,7 +42,7 @@ ms.locfileid: "32583660"
 |mobileAppCategories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|移动应用类别。|
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) 集合|托管设备移动应用程序配置。|
 |mobileApps|[mobileApp](../resources/intune-apps-mobileapp.md) 集合|移动应用。|
-|**books.xml**|
+|**Books.xml**|
 |managedEBooks|[managedEBook](../resources/intune-books-managedebook.md) 集合|托管的电子书。|
 |**移动应用管理 (MAM)**|
 |androidManagedAppProtections|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 集合|Android 托管应用策略。|

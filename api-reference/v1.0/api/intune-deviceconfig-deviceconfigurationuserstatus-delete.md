@@ -4,12 +4,13 @@ description: 删除 deviceConfigurationUserStatus。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d71d56a7aca31dd0503a9fa2ff04253e3cdb831f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2c2107b37696bebbe51793da55d524dc0036beb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568108"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017530"
 ---
 # <a name="delete-deviceconfigurationuserstatus"></a>删除 deviceConfigurationUserStatus
 

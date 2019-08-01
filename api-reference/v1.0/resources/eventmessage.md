@@ -4,12 +4,13 @@ description: 表示会议请求、取消或响应（可以是下列任一行为�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ac344e868d4341ae9a15bf60bd5e2a3e6076d0a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575777"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032548"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -89,7 +90,7 @@ ms.locfileid: "32575777"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md)集合| 只读。可为 NULL。|
+|attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合|为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|

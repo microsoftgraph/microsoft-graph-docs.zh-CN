@@ -4,12 +4,13 @@ description: 更新 managedEBookAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12f703c7d1cd467aff6bfff9bf14c4954870bff7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1e4f7d8fe21e05517d6fdd4738f2e1a2f24b5d36
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524974"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019966"
 ---
 # <a name="update-managedebookassignment"></a>更新 managedEBookAssignment
 

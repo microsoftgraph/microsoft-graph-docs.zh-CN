@@ -4,12 +4,13 @@ description: 列出 iosLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d845f69fc8cf90ef0014e0023d6fa1f265ffd188
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ed401f4d804a3ed4146b51c89d4f3c16e1bcb9ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577432"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014282"
 ---
 # <a name="list-ioslobapps"></a>列出 iosLobApps
 

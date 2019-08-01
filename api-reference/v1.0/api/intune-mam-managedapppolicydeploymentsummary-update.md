@@ -4,12 +4,13 @@ description: 更新 managedAppPolicyDeploymentSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63492e80bedc6a9e785f572e01db7c07b4cde8a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: feb753b0c881a3d5e4a91f181eba9174d1765020
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570930"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018230"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>更新 managedAppPolicyDeploymentSummary
 

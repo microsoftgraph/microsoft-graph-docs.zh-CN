@@ -4,12 +4,13 @@ description: 表示 conversationThread 实体中的各个帖子项。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d594b7f44a39f17427ac395d4cd734d064d8b1ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 43837b1403b7b213b1b8a30002aeb53b8fa297a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548486"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035096"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 表示 [conversationThread](conversationthread.md) 实体中的各个帖子项。
@@ -32,7 +33,7 @@ ms.locfileid: "32548486"
 |[答复](../api/post-reply.md)|无|在组对话中答复帖子，并向指定线程中添加新帖子。|
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
 |**附件**| | |
-|[列出附件](../api/post-list-attachments.md) |[附件](attachment.md)集合| 获取帖子的所有附件。|
+|[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
 |[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
@@ -52,7 +53,7 @@ ms.locfileid: "32548486"
 |categories|String collection|与帖子关联的类别。|
 |changeKey|String|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |conversationId|String|对话的唯一 ID。只读。|
-|conversationThreadId|String|对话线程的唯一 ID。只读。|
+|conversationThreadId|字符串|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
 |hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
@@ -65,7 +66,7 @@ ms.locfileid: "32548486"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) 集合| 只读。可为 NULL。|
+|attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
 |extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
 |inReplyTo|[帖子](post.md)| 只读。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
