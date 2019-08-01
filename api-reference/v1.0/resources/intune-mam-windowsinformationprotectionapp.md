@@ -4,12 +4,13 @@ description: 用于 Windows 信息保护的应用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00d329baea829fa8fb7664895382a377f53461ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 32dd1213bb06fbaa80a744d78453b12f6eeff7dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561200"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037756"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -21,7 +22,7 @@ ms.locfileid: "32561200"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|应用显示名称。|
-|description|String|应用的说明。|
+|说明|字符串|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
 |denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|

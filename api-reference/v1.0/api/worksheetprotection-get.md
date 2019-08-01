@@ -4,12 +4,13 @@ description: 检索 worksheetprotection 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 971255f6472b3a09b0769ea13b72527f8a2459a5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fac20c00bcaf73d581e9ed1ab27d38e532ca73ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884184"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026084"
 ---
 # <a name="get-worksheetprotection"></a>Get WorksheetProtection
 

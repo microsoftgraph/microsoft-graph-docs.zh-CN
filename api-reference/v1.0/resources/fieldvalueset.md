@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
-ms.openlocfilehash: 163bbb9595da84628a0e9d8ca449fdafbf4089b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 表示 listItem 资源中的列值。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: a1a308bfcda1bf913455ca6689dbaca308daecbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032520"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 

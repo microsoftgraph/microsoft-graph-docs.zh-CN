@@ -4,12 +4,13 @@ description: 封装图表系列的格式属性
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fd342e55524d51b6a0382df8ca9310ea162308d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ce9a777936b25ed77b130dc2b2219eba0f72c183
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029748"
 ---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat 资源类型
 

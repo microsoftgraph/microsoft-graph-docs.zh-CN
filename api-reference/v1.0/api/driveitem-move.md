@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: dd5c38420d33a70d056cf4e7189f0d368800b37a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 parentReference。
+doc_type: apiPageType
+ms.openlocfilehash: af4ab635bf7c1287dae267219d3f3542e63c03cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881685"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015395"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 

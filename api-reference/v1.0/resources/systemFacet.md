@@ -4,12 +4,15 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
-ms.openlocfilehash: 356fa44c77280223ee9ff90d9ae54ad541e8d0d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 系统 Facet 指示对象由系统为其自己的操作进行管理。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 78fe776685a2d3f162a6971365d3f41cf6fa7615
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033964"
 ---
 # <a name="system-facet"></a>系统 Facet
 

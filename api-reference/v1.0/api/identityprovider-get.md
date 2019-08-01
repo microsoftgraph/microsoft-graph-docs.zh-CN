@@ -4,12 +4,13 @@ description: 检索现有 identityProvider 中的属性
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 25b3e2733c3dcd9261f2b8ef59a4a98e96cfb401
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 82a8d8a9782f691fa0a0016d3a378a21750901f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880914"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014443"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 

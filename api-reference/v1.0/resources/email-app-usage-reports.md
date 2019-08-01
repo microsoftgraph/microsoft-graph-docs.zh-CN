@@ -4,12 +4,13 @@ description: 电子邮件应用使用情况报表可用于了解用于连接到 
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 00adbec446cda1ea6855c7f52e847f88f42c65bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 1418fbbb672a4470aa7873259707c7039533a86b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555897"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030448"
 ---
 # <a name="email-app-usage-reports"></a>电子邮件应用使用情况报表
 
@@ -21,7 +22,7 @@ ms.locfileid: "32555897"
 
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getemailappusageuserdetail.md) | Stream      | 获取用户在不同电子邮件应用中执行的活动的详细信息。 |
-| [获取应用用户数](../api/reportroot-getemailappusageappsusercounts.md) | Stream      | 获取每个电子邮件应用的唯一用户数。 |
+| [获取用户详细信息](../api/reportroot-getemailappusageuserdetail.md) | 流      | 获取用户在不同电子邮件应用中执行的活动的详细信息。 |
+| [获取应用用户数](../api/reportroot-getemailappusageappsusercounts.md) | 流      | 获取每个电子邮件应用的唯一用户数。 |
 | [获取用户数](../api/reportroot-getemailappusageusercounts.md) | Stream      | 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。 |
 | [获取版本用户数](../api/reportroot-getemailappusageversionsusercounts.md) | Stream      | 按 Outlook 桌面版获取唯一用户数。 |

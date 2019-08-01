@@ -4,12 +4,13 @@ description: 要对检测到的恶意软件威胁执行的 Defender 的默认操
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d3d48415e55ad246f75ca9b32bd169ee102fc67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 0195176f322230b3164856575880b9dadc24bce0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534316"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031778"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 枚举类型
 
@@ -22,11 +23,11 @@ ms.locfileid: "32534316"
 |:---|:---|:---|
 |deviceDefault|0|根据更新定义应用操作。|
 |清理|1|清理检测到的威胁。|
-|隔离|2 |隔离检测到的威胁。|
-|删除|3 |删除检测到的威胁。|
-|允许|4 |允许检测到的威胁。|
-|定制|5 |允许用户确定要对检测到的威胁采取的操作。|
-|数据|6 |阻止检测到的威胁。|
+|隔离|双面|隔离检测到的威胁。|
+|删除|第三章|删除检测到的威胁。|
+|允许|4|允许检测到的威胁。|
+|定制|5|允许用户确定要对检测到的威胁采取的操作。|
+|数据|型|阻止检测到的威胁。|
 
 
 

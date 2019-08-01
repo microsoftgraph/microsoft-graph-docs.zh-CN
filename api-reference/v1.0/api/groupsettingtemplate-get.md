@@ -4,12 +4,13 @@ description: 组设置模板代表可在租户中创建设置的设置模板。 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e841444cb96a23d2bf05a00f920cb846f47e1579
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a18e5260601161114cba224ae573c5c2d30123cb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889382"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014499"
 ---
 # <a name="get-a-group-setting-template"></a>获取组设置模板
 

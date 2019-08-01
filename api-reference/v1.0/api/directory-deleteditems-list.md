@@ -4,12 +4,13 @@ description: 从已删除的项目中检索最近删除的项目列表。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e32b11b0edc3451102cbef1b78afd8c5c7427c94
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9628834cca513b4787b8b73842f6984108b5392a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880473"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015630"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 
