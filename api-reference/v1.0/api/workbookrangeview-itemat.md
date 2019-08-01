@@ -4,12 +4,13 @@ description: 若要调用此 API, 必须有以下权限之一。 若要了解详
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a8d0426c86b6e2a2bdadb50dfd3fb93c5495b1ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c9f453a6fa2dfb3c5777389683004af558f87b26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569905"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026276"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 

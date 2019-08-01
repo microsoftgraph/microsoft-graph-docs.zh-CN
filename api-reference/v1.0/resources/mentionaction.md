@@ -5,12 +5,13 @@ title: mentionAction 资源类型
 description: MentionAction 对象提供有关在活动过程中提及的内容的信息。
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: d8c09de2a36be2cd83d5e33cf2ed948c25819fe4
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 511519439f4079b2d7d618767855582f201c00f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036181"
 ---
 # <a name="mentionaction-resource-type"></a>mentionAction 资源类型
 

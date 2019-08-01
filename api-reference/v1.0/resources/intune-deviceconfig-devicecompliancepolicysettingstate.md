@@ -4,12 +4,13 @@ description: 给定设备的设备符合性策略设置状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4d291f84a8c4404ff5b4425680260997b6b452f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 05f79a5967ae97eb825d85732f207682d9add645
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572414"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028460"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState 资源类型
 
@@ -29,7 +30,7 @@ ms.locfileid: "32572414"
 |userId|String|UserId|
 |userName|String|UserName|
 |userEmail|String|UserEmail|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
 

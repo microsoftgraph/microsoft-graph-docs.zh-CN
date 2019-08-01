@@ -4,12 +4,13 @@ description: 指示与应用的条件访问策略相关的属性, 或与相应�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bb5562b07e60b10a36dafac37d5839d9bacc060a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: d8b569436152e2a57e152f0fe2f2c632f0d2d93a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629339"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033248"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>appliedConditionalAccessPolicy 资源类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "33629339"
 |displayName|String|表示条件访问策略的名称 (示例: "需要对 Salesforce 进行 MFA")。|
 |enforcedGrantControls|String collection|指由条件访问策略强制实施的授予控制 (示例: "需要多重身份验证")。|
 |enforcedSessionControls|String collection|引用由条件访问策略强制实施的会话控件 (示例: "需要应用强制性控制措施")。|
-|id|字符串|条件访问 polic 的唯一 GUID|
-|result|字符串| 指示已触发的 CA 策略的结果。 可能的值是：<br/>`success`<br/>`failure`<br/>`notApplied`-由于未满足策略条件, 因此未应用策略。<br/>`notEnabled`-这是由于策略处于禁用状态。|
+|id|String|条件访问 polic 的唯一 GUID|
+|result|String| 指示已触发的 CA 策略的结果。 可能的值是：<br/>`success`<br/>`failure`<br/>`notApplied`-由于未满足策略条件, 因此未应用策略。<br/>`notEnabled`-这是由于策略处于禁用状态。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

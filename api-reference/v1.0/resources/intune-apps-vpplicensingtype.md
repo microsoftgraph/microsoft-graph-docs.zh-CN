@@ -4,12 +4,13 @@ description: 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73b46c9bcd8680ffbd78c1cfc85cc6dec85126e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 831961fd9e04bff577fe986a2e6309d1cdfbcca0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557927"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032128"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "32557927"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|supportsUserLicensing|布尔值|程序是否支持用户许可类型。|
+|supportsUserLicensing|Boolean|程序是否支持用户许可类型。|
 |supportsDeviceLicensing|布尔值|程序是否支持设备许可类型。|
 
 ## <a name="relationships"></a>关系

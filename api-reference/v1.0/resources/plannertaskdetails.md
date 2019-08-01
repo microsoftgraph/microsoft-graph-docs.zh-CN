@@ -1,19 +1,20 @@
 ---
 title: plannerTaskDetails 资源类型
-description: '**plannerTaskDetails**资源表示有关任务的其他信息。 每个任务对象都有一个详细信息对象。'
+description: '**PlannerTaskDetails**资源表示有关任务的其他信息。 每个任务对象都有一个详细信息对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 75e17200dc52fff385c7be8fb0269a3da20464b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d22c932989b9c0d21350842babd9b4bbf420124c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534323"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035166"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails 资源类型
 
-**plannerTaskDetails**资源表示有关任务的其他信息。 每个[任务](plannertask.md)对象都有一个详细信息对象。
+**PlannerTaskDetails**资源表示有关任务的其他信息。 每个[任务](plannertask.md)对象都有一个详细信息对象。
 
 
 ## <a name="methods"></a>方法
@@ -27,8 +28,8 @@ ms.locfileid: "32534323"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|任务上的检查表项目集合。|
-|description|String|任务描述|
-|id|String| 只读。 任务详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
+|说明|字符串|任务描述|
+|id|字符串| 只读。 任务详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
 |previewType|string|这将设置显示在任务上的预览类型。 可能的值包括 `automatic`、`noPreview`、`checklist`、`description`、`reference`。 将设置为`automatic`显示的预览由查看任务的应用程序选择。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|任务上的引用集合。|
 

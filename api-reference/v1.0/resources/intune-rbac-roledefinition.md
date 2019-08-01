@@ -4,12 +4,13 @@ description: 角色定义资源。 角色定义是在 Intune 中基于角色访�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fca3587ccb26116257b740a91b376259e1e9dd5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: de9df8872f5c9939082076c5e0d94c2c4fe50ed5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553867"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037112"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition 资源类型
 
@@ -31,7 +32,7 @@ ms.locfileid: "32553867"
 |:---|:---|:---|
 |id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色定义的显示名称。|
-|description|String|角色定义的说明。|
+|说明|String|角色定义的说明。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
 |isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
 

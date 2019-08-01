@@ -4,12 +4,13 @@ description: '表示学校的课程。 **educationClass** 资源对应于 Office
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1dc246c3a8f48980b65c896bba4b6fbe1ae66809
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562711"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029328"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "32562711"
 |[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| 通过发布到 teachers 导航属性，为课程添加一个新的 **educationUser**。|
 |[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) 集合| 获取课程的教师列表。|
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
-|[Get group](../api/educationclass-get-group.md) |[group](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
+|[Get group](../api/educationclass-get-group.md) |[组](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
 |[删除](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
 
@@ -49,7 +50,7 @@ ms.locfileid: "32562711"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为空。|
+|成员|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 Null。|
 |schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 NULL。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
 |group|[组](../resources/group.md)| 与此类对应的目录组。|

@@ -4,12 +4,13 @@ description: 表示为托管应用程序加密应用程序数据的级别
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 774312d5f19b223fd33e2c156610f516ae7f48a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 67c74dea08eac63fe22aa003af1c282be85669b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038058"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "32465253"
 |:---|:---|:---|
 |useDeviceSettings|0|应用程序数据根据设备上的默认设置进行加密。|
 |afterDeviceRestart|1|重新启动设备时对应用数据进行加密。|
-|whenDeviceLockedExceptOpenFiles|2 |设备锁定时, 与此策略关联的应用数据将被加密, 但打开的文件中的数据除外|
-|whenDeviceLocked|3 |设备锁定时, 与此策略关联的应用数据将被加密|
+|whenDeviceLockedExceptOpenFiles|双面|设备锁定时, 与此策略关联的应用数据将被加密, 但打开的文件中的数据除外|
+|whenDeviceLocked|第三章|设备锁定时, 与此策略关联的应用数据将被加密|
 
 
 

@@ -4,12 +4,13 @@ description: 表示图表点上的所有数据标签的集合。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 48d6cb0d35e82fc0117a24aad1c5e171bc869870
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e1369ee83abb98d7d673fab4a8f37c2b4c13e317
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029818"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels 资源类型
 
@@ -28,11 +29,11 @@ ms.locfileid: "32569002"
 |:---------------|:--------|:----------|
 |position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为: `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
 |Separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
+|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
 |showValue|布尔|表示数据标签值是否可见的布尔值。|
 
 ## <a name="relationships"></a>关系

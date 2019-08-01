@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a2dbad17a731c8c63b6ef7705c97deab82a90da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 466a2feb979b9427e48765329cbc7e89fd74d635
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565868"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037490"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 
@@ -44,7 +45,7 @@ ms.locfileid: "32565868"
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
-|状态|[启用](../resources/intune-onboarding-enablement.md)|尚未记录。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|state|[启用](../resources/intune-onboarding-enablement.md)|尚未记录。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |securityDeviceRequired|Boolean|尚未记录|
 |unlockWithBiometricsEnabled|Boolean|尚未记录|
 |remotePassportEnabled|Boolean|尚未记录|

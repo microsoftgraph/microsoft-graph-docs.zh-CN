@@ -4,12 +4,13 @@ description: 更新已注册设备的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58f6271c2a9c29fe18755456f6e586aaec8da1ee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: eeffcf9e024d4e0d56bc355e2b5f56b6109e9d8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015626"
 ---
 # <a name="update-device"></a>更新设备
 

@@ -4,16 +4,16 @@ description: 更新指定选项卡的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ed1138d5dbb1aec1cd3e14839b5fffaef4ee5f8f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f2b391055dcb17af41f4bf5522b248a00caa9aa2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521836"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027165"
 ---
 # <a name="update-tab"></a>更新选项卡
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新指定[选项卡](../resources/teamstab.md)的属性。这可用于配置选项卡的内容。
 
@@ -51,7 +51,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -67,7 +67,7 @@ Content-type: application/json
 {
   "id": "tabId",
   "displayName": "My Contoso Tab - updated",
-  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('06805b9e-77e3-4b93-ac81-525eb87513b8')",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -91,9 +91,6 @@ Content-type: application/json
   "description": "Update tab in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

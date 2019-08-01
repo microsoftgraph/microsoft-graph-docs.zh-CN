@@ -4,12 +4,13 @@ description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7e829929df46208ee321f56ae2d9f0144c320d4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574024"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036328"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 

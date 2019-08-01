@@ -4,12 +4,14 @@ ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: columnDefinition 资源上的 personOrGroupColumn 指示列值，该值表示从目录中选择的个人或组。
+doc_type: resourcePageType
+ms.openlocfilehash: d8ce31e7eb044e588f73afefb2b370e161fa7cdf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462471"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035516"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
@@ -33,7 +35,7 @@ ms.locfileid: "32462471"
 | 属性名称              | 类型    | 说明
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
 ## <a name="displayas-options"></a>DisplayAs 选项

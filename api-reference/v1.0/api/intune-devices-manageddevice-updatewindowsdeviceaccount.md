@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72e11dc56bde0ab621c1aa985e8cf1fa390decef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: dd5626a0898ad90ef1cb7561094f8aecc703447f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020904"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>updateWindowsDeviceAccount 操作
 

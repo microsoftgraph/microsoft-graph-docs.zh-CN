@@ -4,12 +4,13 @@ description: 更新 importedWindowsAutopilotDeviceIdentityUpload 对象的属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26cae41f03eb0e6d3febba419071680d45bb6188
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b5bd613884d06fb3b5d10172c71873d4276238a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020799"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>更新 importedWindowsAutopilotDeviceIdentityUpload
 
@@ -50,7 +51,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |:---|:---|:---|
 |id|String|对象的 GUID|
 |createdDateTimeUtc|DateTimeOffset|创建实体时的日期/时间。|
-|状态|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
+|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
 
 
 

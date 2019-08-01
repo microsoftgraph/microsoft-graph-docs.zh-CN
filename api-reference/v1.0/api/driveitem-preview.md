@@ -1,18 +1,20 @@
 ---
 title: 'driveItem: preview'
-description: 此操作允许您获取项目的短生存期可嵌入 url, 以呈现临时预览。
+description: 此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ae5140bf6164aedd051f04c2c43c361f16517e7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1de53b8183f4277c0241a08822ef539613b83a45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572701"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015339"
 ---
 # <a name="driveitem-preview"></a>driveItem: preview
 
-此操作允许您获取项目的短生存期可嵌入 url, 以呈现临时预览。
+此操作允许您获取项目的短生存期可嵌入 Url, 以呈现临时预览。
 
 如果要获取持续生存期的可嵌入链接, 请改用[createLink][] API。
 
@@ -27,7 +29,7 @@ ms.locfileid: "32572701"
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read, 文件. readwrite, 全部文件。
+| 委派（个人 Microsoft 帐户） | Read, 文件. ReadWrite, 全部文件。
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -73,7 +75,7 @@ POST /shares/{shareId}/driveItem/preview
 
 根据指定选项的 embed 支持的当前状态, 可能会返回 getUrl、postUrl 或 both。
 
-postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 postUrl 执行 POST, 应相应地设置内容类型。 例如：
+postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 POSTURL 执行 POST, 应相应地设置内容类型。 例如：
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

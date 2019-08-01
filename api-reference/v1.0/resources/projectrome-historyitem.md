@@ -3,12 +3,14 @@ title: historyItem 资源类型
 description: 表示应用中的活动的历史记录项。 用户活动表示应用程序中的单个目标, 例如电视节目、文档或视频游戏中的当前市场活动。 当用户参与该活动时, 会将该预订作为历史项目进行捕获, 以指示该活动的开始时间和结束时间。 随着时间的推移, 用户随着时间的推移而重新参与该活动, 会为单个用户活动记录多个历史记录项目。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 029c17e09348977752f3ce5632740b2bdac64e46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 38cba88a5605e1c67ae84b684425db3c71f5d51c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579676"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035005"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -27,21 +29,21 @@ ms.locfileid: "32579676"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|状态 | 状态 | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
-|userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时间。 作为 Olson id 提供的值, 以便支持跨平台表示形式。|
+|状态 | status | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
+|userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时间。 作为 Olson Id 提供的值, 以便支持跨平台表示形式。|
 |createdDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上创建对象时的 UTC 时间 (UTC)。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上修改对象时的 UTC 时间 (UTC)。|
 |id | String | 必需。 客户端集的**historyItem**对象的 GUID。|
-|startedDateTime | DateTimeOffset | 必需。 **historyItem** (活动会话) 启动时的 UTC 日期时间。 对于时间线历史记录是必需的。|
+|startedDateTime | DateTimeOffset | 必需。 **HistoryItem** (活动会话) 启动时的 UTC 日期时间。 对于时间线历史记录是必需的。|
 |lastActiveDateTime | DateTimeOffset | 可选。 UTC DateTime 如果**historyItem** (活动会话) 上次被视为活动或已完成-如果为 null, 则**historyItem**状态应为 "正在进行"。|
-|expirationDateTime | DateTimeOffset | 可选。 **historyItem**将被硬删除时的 UTC 日期时间。 可由客户端进行设置。|
+|expirationDateTime | DateTimeOffset | 可选。 **HistoryItem**将被硬删除时的 UTC 日期时间。 可由客户端进行设置。|
 |activeDurationSeconds | int | 可选。 活动用户约定的持续时间。 如果未提供, 则从**startedDateTime**和**lastActiveDateTime**计算。|
 
 ## <a name="relationships"></a>关系
 
 |关系 | 类型 | 说明|
 |:------------|:-----|:-----------|
-|activity| [useractivity.readwrite.createdbyapp](../resources/projectrome-activity.md) | 可选。 NavigationProperty/包含;指向关联活动的导航属性。|
+|activity| [Useractivity.readwrite.createdbyapp](../resources/projectrome-activity.md) | 可选。 NavigationProperty/包含;指向关联活动的导航属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

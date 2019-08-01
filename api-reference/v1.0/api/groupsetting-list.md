@@ -4,12 +4,13 @@ description: 检索组设置对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d7bc242d3ec66616940aaedd11c8e40b4a44d4fa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4699f58442f66dbff3bfa3e3913266776c7f4ac5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884134"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014522"
 ---
 # <a name="list-group-settings"></a>列表组设置
 

@@ -4,16 +4,17 @@ description: 检索指定团队的属性和关系。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0221983538f14ef3f0c0439f8241974091e8dc0b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3be818c2c911385a68f8f49b970b14e1693785ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524363"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024250"
 ---
 # <a name="get-team"></a>获取团队
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 检索指定[团队](../resources/team.md)的属性和关系。
 
@@ -29,6 +30,7 @@ ms.locfileid: "32524363"
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}
@@ -56,7 +58,7 @@ GET /teams/{id}
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
 #### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -103,15 +105,10 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/team-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

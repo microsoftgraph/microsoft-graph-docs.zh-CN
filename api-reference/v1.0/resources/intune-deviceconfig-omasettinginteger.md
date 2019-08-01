@@ -4,12 +4,13 @@ description: OMA 设置整数定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e4896af0e43510eb791f37a72a864a405388e9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f80f8583907a25646643fdd5770d6bce5adcb4b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569016"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028019"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 

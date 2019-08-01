@@ -4,12 +4,13 @@ description: 德国的电影评分标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c00c49022782fd2a677702a72fd202e2bf627604
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 4b4115eaf728c3407416b2d0209757fb1feafd75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560905"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031260"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 枚举类型
 
@@ -22,11 +23,11 @@ ms.locfileid: "32560905"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|概要|2 |Ab 0 Jahren, 无期限限制|
-|agesAbove6|3 |Ab 6 Jahren, 年龄6及更早|
-|agesAbove12|4 |Ab 12 Jahren, 12 岁及更早|
-|agesAbove16|5 |Ab 16 Jahren, 超过16岁及以上|
-|成人|6 |Ab 18 Jahren, 仅成人|
+|概要|双面|Ab 0 Jahren, 无期限限制|
+|agesAbove6|第三章|Ab 6 Jahren, 年龄6及更早|
+|agesAbove12|4|Ab 12 Jahren, 12 岁及更早|
+|agesAbove16|5|Ab 16 Jahren, 超过16岁及以上|
+|成人|型|Ab 18 Jahren, 仅成人|
 
 
 

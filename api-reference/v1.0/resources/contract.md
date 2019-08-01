@@ -4,12 +4,13 @@ description: 表示合作伙伴租户与客户租户之间的现有合作关系�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 66cb110a4c1731b6b5cc31804baf8db9879d7def
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: ca0c12d3f797a9dc3cd8b153fdbc8ef83a33ca24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658048"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029608"
 ---
 # <a name="contract-resource-type"></a>约定资源类型
 表示合作伙伴租户与客户租户之间的现有合作关系。

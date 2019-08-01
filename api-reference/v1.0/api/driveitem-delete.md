@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 删除文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9bb6661ff7a43fbf29c80a77e5b909322bfbf569
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 通过使用其 ID 或路径删除 DriveItem。
+doc_type: apiPageType
+ms.openlocfilehash: c9ee8f0f92625c51e44bca12158822f4054f5004
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881740"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015521"
 ---
 # <a name="delete-a-driveitem"></a>删除 DriveItem
 

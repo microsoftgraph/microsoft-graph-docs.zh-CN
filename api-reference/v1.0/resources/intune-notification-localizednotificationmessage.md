@@ -4,12 +4,13 @@ description: 指定区域设置的通知消息模板的文本内容。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec08211781dc5fb1ae499d7a4fd8436660cc4e84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a4b86f29cbfee74a9401d764bb1c01b2ade0192f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574437"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037595"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "32574437"
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|String|此消息的目标区域设置。|
-|主题|String|消息模板主题。|
+|subject|String|消息模板主题。|
 |messageTemplate|String|消息模板内容。|
 |isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 

@@ -4,12 +4,13 @@ description: 删除 iosVppApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 834dea9bbdaae0db742f8b5b5d7a47d63f5e5963
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 61b317cf68501651e863f85720268baef4049f87
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014205"
 ---
 # <a name="delete-iosvppapp"></a>删除 iosVppApp
 

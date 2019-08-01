@@ -5,12 +5,13 @@ title: 更新 listItem
 description: 更新 **[listItem][]** 上的属性。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: ff13cdf8279e5051e3ebf0f650fc73de9270db14
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d346e9aedf6a9c7061fcfc2e1093ed6257034345
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023121"
 ---
 # <a name="update-listitem"></a>更新 listItem
 

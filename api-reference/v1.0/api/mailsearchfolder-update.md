@@ -4,12 +4,13 @@ description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6dabf71dc7251622d9be1ae7d33cf8ac70c6dfc5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5760946ba7bffaf71e95e0c5481ded19d2f155b3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885073"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025462"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 

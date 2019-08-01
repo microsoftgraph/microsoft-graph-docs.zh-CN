@@ -4,12 +4,13 @@ description: 在草稿箱文件夹中发送邮件。 邮件草稿可以是新邮
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2d8b3dd07fc6db4bdd49c122ab9bcf844bd57d19
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 0ec0d1c60ab705f2ac907899f9c10dea1b9ed10f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884694"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976659"
 ---
 # <a name="message-send"></a>邮件：发送
 

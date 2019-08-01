@@ -2,12 +2,15 @@
 title: fileSecurityState 资源类型
 description: 包含有关与警报相关的文件 (不处理) 的信息。
 localization_priority: Normal
-ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 6e6f30625412022006d88179e3192b1463c797c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032492"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 

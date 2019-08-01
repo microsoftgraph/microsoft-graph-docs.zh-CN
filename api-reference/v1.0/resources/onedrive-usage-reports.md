@@ -4,12 +4,13 @@ description: OneDrive 使用情况报表可用于大致了解 OneDrive 带来的
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: fb27d69b3d63fb3f02b4d21e091d44340ec85541
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 642e655f4b82cae21ff53b3078b179771503788b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035922"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive 使用情况报表
 
@@ -21,7 +22,7 @@ OneDrive 使用情况报表可用于大致了解 OneDrive 带来的价值，具�
 
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | ---------------------------------------- |
-| [获取帐户详细信息](../api/reportroot-getonedriveusageaccountdetail.md) | Stream      | 获取帐户的 OneDrive 使用情况的详细信息。 |
+| [获取帐户详细信息](../api/reportroot-getonedriveusageaccountdetail.md) | 流      | 获取帐户的 OneDrive 使用情况的详细信息。 |
 | [获取帐户数](../api/reportroot-getonedriveusageaccountcounts.md) | Stream      | 获取 OneDrive for Business 活跃网站数趋势。 用户在其中查看、修改、上传、下载、共享或同步文件的任何网站都被视为活跃网站。 |
 | [获取文件数](../api/reportroot-getonedriveusagefilecounts.md) | Stream      | 获取跨所有网站的文件总数和活跃文件数。 如果文件在指定时间段内被保存、同步、修改或共享，则视为活跃文件。 |
 | [获取存储](../api/reportroot-getonedriveusagestorage.md) | Stream      | 获取 OneDrive for Business 使用的存储空间趋势。 |

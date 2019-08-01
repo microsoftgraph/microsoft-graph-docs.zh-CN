@@ -5,16 +5,17 @@ title: itemActivityTimeSet 资源类型
 description: ItemActionSet 对象提供有关项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4ef0b56471afe78b13edc2f6efb25941c9a749df
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 9dce21afc1acc8e93181204e026f74a597c9120f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970656"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036587"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>itemActivityTimeSet 资源类型
 
-**ItemActivityTimeSet**资源提供有关何时发生某个项目的[活动][ activity]的信息。
+**ItemActivityTimeSet**资源提供有关何时发生某个项目的[活动][activity]的信息。
 
 >**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

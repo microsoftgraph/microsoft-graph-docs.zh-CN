@@ -4,16 +4,16 @@ description: '检索团队中指定通道中的选项卡列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027186"
 ---
 # <a name="list-tabs-in-channel"></a>通道中的列表选项卡
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[团队](../resources/team.md)中指定[通道](../resources/channel.md)中的[选项卡](../resources/teamstab.md)列表。 
 
@@ -22,7 +22,7 @@ ms.locfileid: "32521745"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
+|委派（工作或学校帐户） | Group. 全部, Group。 Read. All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.Read.All、Group.ReadWrite.All         |
 
@@ -53,7 +53,7 @@ GET /teams/{id}/channels/{id}/tabs
 #### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>响应
@@ -105,9 +105,6 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

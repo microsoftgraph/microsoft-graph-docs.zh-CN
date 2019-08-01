@@ -2,12 +2,15 @@
 title: 使用 Microsoft Graph API 处理 Project 罗马
 description: 项目罗马是构建跨设备体验平台的 Microsoft 计划。 Project 罗马启用本地客户端或服务上的应用程序, 以便在用户使用用于登录客户端设备的相同 Microsoft 帐户登录时与远程主机上的应用程序和服务进行交互。 这使您可以对用户任务 (而不是设备) 周围的跨设备和跨平台体验进行编程。
 localization_priority: Normal
-ms.openlocfilehash: d103bb68560a39cc4491460969a36bb81bb6da44
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 03b0aefabdb793cc723b1968a900a35800e04a01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579669"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035047"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 处理 Project 罗马
 
@@ -27,7 +30,7 @@ ms.locfileid: "32579669"
 
 当应用程序发布用户活动对象时, 该对象将显示在 Windows 中的一些新 UI 图面上;例如, Cortana 通知和时间线。 您可以在活动对象中指定丰富的元数据 (允许活动仅显示在适当的上下文中) 和丰富的视觉对象 (使用[自适应卡片](https://adaptivecards.io/)标记)。
 
-您可以使用以下 Microsoft Graph api 来创建和检索用户活动:
+您可以使用以下 Microsoft Graph Api 来创建和检索用户活动:
 
 - [创建或替换活动](../api/projectrome-put-activity.md)
 - [获取活动](../api/projectrome-get-activities.md)

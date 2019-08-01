@@ -4,12 +4,13 @@ description: 工作日的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f3f773909b2110a944cfcbc4f632ab7e80e5496
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 259d6fb135d8665d320b7de34ab8aa237b7a879a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575161"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031884"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 
@@ -22,11 +23,11 @@ ms.locfileid: "32575161"
 |:---|:---|:---|
 |日|0|星期日。|
 |星期一|1|星期一。|
-|2001|2 |星期二。|
-|星期三|3 |星期三。|
-|星期三|4 |星期四。|
-|之前|5 |星期五。|
-|星期六|6 |星期六。|
+|2001|双面|星期二。|
+|星期三|第三章|星期三。|
+|星期三|4|星期四。|
+|之前|5|星期五。|
+|星期六|型|星期六。|
 
 
 

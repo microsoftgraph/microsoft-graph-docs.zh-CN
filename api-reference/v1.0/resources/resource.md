@@ -2,12 +2,15 @@
 title: OneNoteResource 资源类型
 description: 'OneNote 页面上的图像或其他文件资源。 '
 localization_priority: Normal
-ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: cd8ea18047aa3f24343411f8dafd7a79357da87b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579322"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034690"
 ---
 # <a name="onenoteresource-resource-type"></a>OneNoteResource 资源类型
 
@@ -51,7 +54,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object`标记 (表示 PDF、.docx 和 PNG 等文件) 包含`data`属性中的文件资源的终结点:
+`object`标记 (表示 PDF、.DOCX 和 PNG 等文件) 包含`data`属性中的文件资源的终结点:
 
 ```
 <object
@@ -74,7 +77,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取资源二进制数据](../api/resource-get.md) | Stream |检索文件或图像资源的二进制数据。|
+|[获取资源二进制数据](../api/resource-get.md) | 流 |检索文件或图像资源的二进制数据。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

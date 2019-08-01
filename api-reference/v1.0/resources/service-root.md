@@ -2,12 +2,15 @@
 title: 服务根
 description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
-ms.openlocfilehash: 7fc6729eac7dc32e0f92770fc3357af960510dd8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 8a4c31b24fd22929fae3d4848c141efacb894ef7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034410"
 ---
 # <a name="service-root"></a>服务根
 
@@ -25,7 +28,7 @@ ms.locfileid: "32549655"
 |[列出 directoryRoleTemplate](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) 集合 |获取 directoryRoleTemplate 对象集合。 |
 |[列出驱动器](../api/drive-list.md) | [驱动器](drive.md) 集合 |获取 drive 对象集合。 |
 |[获取驱动器](../api/drive-get.md) | [驱动器](drive.md)  |获取 drive 对象的属性。 |
-|[创建组](../api/group-post-groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
+|[Create group](../api/group-post-groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
 |[列出组](../api/group-list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
 |[列出组织](../api/organization-get.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
 |[列出 subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |

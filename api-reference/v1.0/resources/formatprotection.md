@@ -2,12 +2,15 @@
 title: FormatProtection 资源类型
 description: 表示对范围对象的格式保护。
 localization_priority: Normal
-ms.openlocfilehash: e4c32c8be8f6ef3aeaaf763ee88998bcbe235503
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: babd1192e216179c59b40d78175f24b0e8366d71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542051"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032436"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
 
@@ -24,7 +27,7 @@ ms.locfileid: "32542051"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|formulaHidden|布尔|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
+|formulaHidden|boolean|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
 |已锁定|boolean|指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。|
 
 ## <a name="relationships"></a>关系

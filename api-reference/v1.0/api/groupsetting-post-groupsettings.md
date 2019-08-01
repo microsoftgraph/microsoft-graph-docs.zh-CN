@@ -4,12 +4,13 @@ description: 根据 groupSettingTemplates 中可用的模板, 使用此 API 创�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 362de1245d41f849e940a3e6e87b42ffbffac522
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f7b32395281a0b70624821b746f19d6b97366815
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884114"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014521"
 ---
 # <a name="create-a-group-setting"></a>创建组设置
 
