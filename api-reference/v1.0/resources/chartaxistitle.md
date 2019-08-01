@@ -4,12 +4,13 @@ description: 表示图表坐标轴的标题。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 877635e2455dcf63c2b420283a2ec858f590fa17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5c89b3e90cce7dcc064dfd7186eafcc26a37dd0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033024"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle 资源类型
 

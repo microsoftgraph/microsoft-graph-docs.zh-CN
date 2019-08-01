@@ -4,12 +4,13 @@ description: 表示图表中的图例。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8eea71707d622f0dc28cc8072fa984de64a8427f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: dcd601f27f0e6869a229fcbe7df195cd65481fd4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569100"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032989"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend 资源类型
 
@@ -27,7 +28,7 @@ ms.locfileid: "32569100"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
-|position|string|表示图例在图表上的位置。 可能的值为: `Top`、 `Bottom`、 `Left` `Right`、、 `Corner`、 `Custom`。|
+|position|string|表示图例在图表上的位置。 可能的值包括 `Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
 |visible|布尔|表示 ChartLegend 对象的可见性的布尔值。|
 
 ## <a name="relationships"></a>关系

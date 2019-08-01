@@ -3,12 +3,14 @@ title: secureScore 资源类型
 description: 表示租户和控制级别上的每日记分数据的租户安全分数。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 89842579457365f7da10509b2b4ade31f55de4f9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 395c5ed0594d1f509bb664b5aee6ea18bb42af0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629262"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034480"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 

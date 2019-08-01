@@ -4,12 +4,13 @@ description: 与会者的可用性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ffdff0945522d04361510cfcc5917381fecfaa03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569359"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030056"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability 资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "32569359"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |attendee|[attendeeBase](attendeebase.md)|电子邮件地址和与会者类型-无论是个人还是资源, 如果是个人或资源, 是必需的还是可选的。|
-|availability|freeBusyStatus| 与会者的忙/闲状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。|
+|availability|freeBusyStatus| 与会者的忙/闲状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

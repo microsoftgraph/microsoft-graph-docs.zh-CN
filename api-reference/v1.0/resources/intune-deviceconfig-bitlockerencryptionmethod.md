@@ -4,12 +4,13 @@ description: BitLockerEncryptionMethod 类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1fd12622a29f4ec1dee1fe044309bb6d0d8bcc1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: c35c96c0ef38fb57d0b0c69a6d2977954d678fec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028558"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>bitLockerEncryptionMethod 枚举类型
 
@@ -20,10 +21,10 @@ BitLockerEncryptionMethod 类型
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|aesCbc128|3 |AES-CBC 128 位。|
-|aesCbc256|4 |AES-CBC 256 位。|
-|xtsAes128|6 |XTS-AES 128 位。|
-|xtsAes256|7 |XTS-AES 256 位。|
+|aesCbc128|第三章|AES-CBC 128 位。|
+|aesCbc256|4|AES-CBC 256 位。|
+|xtsAes128|型|XTS-AES 128 位。|
+|xtsAes256|步|XTS-AES 256 位。|
 
 
 

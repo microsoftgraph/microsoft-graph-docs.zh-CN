@@ -4,12 +4,13 @@ description: 云块级别的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de81e42827f7c153fc81e7fc19d85e54cb780bfa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 908ebaef963b4c7d8baaf8f1cb0ecfb316d33ad2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575182"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031876"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -22,8 +23,8 @@ ms.locfileid: "32575182"
 |:---|:---|:---|
 |notConfigured|0|默认值是, 使用默认的 Windows Defender 防病毒阻止级别, 并提供强大的检测功能, 而不会增加检测合法文件的风险|
 |高效|1|High 适用于强级别的检测。|
-|highPlus|2 |高级别 + 使用高级别, 并应用附加保护措施|
-|zeroTolerance|3 |零耐受性阻止所有未知可执行文件|
+|highPlus|双面|高级别 + 使用高级别, 并应用附加保护措施|
+|zeroTolerance|第三章|零耐受性阻止所有未知可执行文件|
 
 
 

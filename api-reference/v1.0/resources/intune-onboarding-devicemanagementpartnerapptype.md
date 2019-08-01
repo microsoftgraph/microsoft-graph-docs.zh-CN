@@ -4,12 +4,13 @@ description: 合作伙伴应用类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3ff9fe66a987b0ae460724f36485839b97ff933
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 521d948d159e4174aac69e5034ef9e15113dcfd3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583541"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037448"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "32583541"
 |:---|:---|:---|
 |unknown|0|合作伙伴应用类型未知。|
 |singleTenantApp|1|合作伙伴应用程序是 AAD 中的单个租户。|
-|multiTenantApp|2 |AAD 中的合作伙伴应用程序是多租户。|
+|multiTenantApp|双面|AAD 中的合作伙伴应用程序是多租户。|
 
 
 

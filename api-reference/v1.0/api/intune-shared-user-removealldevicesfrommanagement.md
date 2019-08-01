@@ -4,12 +4,13 @@ description: 停用该用户管理的所有设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40baa470968c10bbe26af1d8397306f5b9e3f736
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d35b852ef9694a2e9d8f427ba3bbb98cb2b4c26a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576652"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025762"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
 

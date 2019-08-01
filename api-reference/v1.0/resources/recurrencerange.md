@@ -2,12 +2,15 @@
 title: recurrenceRange 资源类型
 description: '描述了定期事件在哪个日期范围内重复发生。 '
 localization_priority: Normal
-ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d5fee6ad877958b4861360e4e90fbdd688e0011
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034802"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 

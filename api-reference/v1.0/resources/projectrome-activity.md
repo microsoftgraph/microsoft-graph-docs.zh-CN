@@ -3,12 +3,14 @@ title: 活动资源类型
 description: 代表某个应用程序内的单个活动, 例如电视节目、文档或视频游戏中的当前市场活动。 当用户参与该活动时, 会将该预订作为历史项目进行捕获, 以指示该活动的开始时间和结束时间。 随着时间的推移, 用户随着时间的推移而重新参与该活动, 会为单个用户活动记录多个历史记录项目。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: eade448e9585ac3678c81548c242bd467e71df40
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1b0e0f7cd6ed3a7629653719078b1e69eeeffc19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579690"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035026"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -24,7 +26,7 @@ ms.locfileid: "32579690"
 
 |方法 | 返回类型 | 说明|
 |:------|:------------|:-----------|
-|[创建或替换活动](../api/projectrome-put-activity.md) | [活动](projectrome-activity.md) |创建或替换现有活动 (upsert)。 appActivityId 需要是 url 安全的 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式), 但原始 appActivityId 不必是 URL 安全的。 |
+|[创建或替换活动](../api/projectrome-put-activity.md) | [活动](projectrome-activity.md) |创建或替换现有活动 (upsert)。 AppActivityId 需要是 URL 安全的 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式), 但原始 appActivityId 不必是 URL 安全的。 |
 |[删除活动](../api/projectrome-delete-activity.md) | 无内容 | 从您的应用程序中删除该用户的指定活动。|
 |[获取活动](../api/projectrome-get-activities.md) | [活动](projectrome-activity.md)集合 | 获取适用于给定用户的应用程序活动。|
 |[获取最近的活动](../api/projectrome-get-recent-activities.md) | [活动](projectrome-activity.md)集合 | 为给定用户获取应用程序最近的活动, 并根据最近创建或更新的[historyItems](projectrome-historyitem.md)对其进行排序。|
@@ -33,10 +35,10 @@ ms.locfileid: "32579690"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时;作为 Olson id 提供的值, 以便支持跨平台表示形式。|
+|userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时;作为 Olson Id 提供的值, 以便支持跨平台表示形式。|
 |createdDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上创建对象时的 UTC 时间 (UTC)。 |
 |lastModifiedDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上修改对象时的 UTC 时间 (UTC)。 |
-|id | String | 用于 URL 寻址的服务器生成的 ID。|
+|id | 字符串 | 用于 URL 寻址的服务器生成的 ID。|
 |appActivityId | String | 必需。 由呼叫者提供的应用程序上下文中的唯一活动 ID, 之后是不可变的。|
 |activitySourceHost | String | 必需。 表示应用程序的跨平台标识映射的域的 URL。 映射存储为托管在域中或通过 Windows 开发人员中心配置的 JSON 文件。 JSON 文件命名为跨平台-应用标识符, 并在您的 HTTPS 域的根目录 (位于顶级域或包含子域) 中托管。 例如：https://contoso.com 或 https://myapp.contoso.com，但不是 https://myapp.contoso.com/somepath。 您必须具有每个跨平台应用程序标识的唯一文件和域 (或子域)。 例如, Word 与 PowerPoint 需要一个单独的文件和域。|
 |appDisplayName | String | 可选。 用于生成活动的应用程序的简短文本说明, 在用户的本地设备上未安装应用程序时用于生成活动的情况。|
@@ -46,7 +48,7 @@ ms.locfileid: "32579690"
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含用于在 UX 中呈现活动的信息的对象。|
 |contentInfo | 非类型化 JSON 对象 | 可选。 根据[schema.org](https://schema.org)语法的内容的自定义数据 JSON-LD 可扩展说明。|
 |expirationDateTime | DateTimeOffset | 由服务器进行设置。 当对象在服务器上过期时的日期时间 (UTC)。|
-|状态 | 状态 | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
+|status | status | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
 
 ## <a name="relationships"></a>关系
 

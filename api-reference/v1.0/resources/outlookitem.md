@@ -4,12 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3bbfe6119d279a1a708b44128a7d134664d7b040
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7b04d84019cbb38f78ef1df63e4e39480c4d949b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035656"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -40,8 +41,8 @@ ms.locfileid: "32462639"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类别|String collection|与项目关联的类别|
-|changeKey|字符串|标识项目的版本。 每次更改项目时, changeKey 也会更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
+|categories|String collection|与项目关联的类别|
+|changeKey|String|标识项目的版本。 每次更改项目时, changeKey 也会更改。 这样，Exchange 可以将更改应用于该对象的正确版本。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|

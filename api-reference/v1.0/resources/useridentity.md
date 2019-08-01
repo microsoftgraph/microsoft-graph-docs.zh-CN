@@ -4,12 +4,13 @@ description: 在 Azure AD 审核日志的上下文中, 这表示已启动或受�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 018bc8ca3713822295d0acef66e8ec075d276cfe
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 0e72f5338f7281188b7023aed342dd34ee57595e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033500"
 ---
 # <a name="useridentity-resource-type"></a>userIdentity 资源类型
 

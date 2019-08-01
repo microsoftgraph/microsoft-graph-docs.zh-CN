@@ -4,12 +4,13 @@ description: 本主题提供由 androidCustomConfiguration 资源公开的已声
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a31dfa0763ed88e35d9ed3c9eb684b015cd94b7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f42eea1b2b09869d3de20af40c4c568b238fd975
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031967"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>androidCustomConfiguration 资源类型
 

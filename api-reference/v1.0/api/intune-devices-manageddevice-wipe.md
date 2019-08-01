@@ -4,12 +4,13 @@ description: 擦除设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3249421de530cdc8e5e7f9c5a90676572c5b7ae9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8d9bf6cfae1182bf9e63317db09843b86ee1a42c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523887"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020876"
 ---
 # <a name="wipe-action"></a>擦除操作
 
@@ -22,7 +23,7 @@ ms.locfileid: "32523887"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|devicemanagementmanageddevices.readwrite.all、devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
+|委派（工作或学校帐户）|Devicemanagementmanageddevices.readwrite.all、Devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

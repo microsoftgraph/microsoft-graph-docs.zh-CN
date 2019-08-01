@@ -4,12 +4,13 @@ description: 表示适用于某个规则的一组条件和例外情况。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e3f423cdc1c00bdaa7be410fc755b8fe3a065dd3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4cf6edbf7652ae3a7aebcbc73fc398587b1fac30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036090"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
@@ -41,7 +42,7 @@ ms.locfileid: "32564202"
 | notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
 | recipientContains | 集合（字符串） | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
 | senderContains | 集合（字符串） | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
-| sensitivity | sensitivity | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可能的值为: `normal`、 `personal`、 `private`、 `confidential`。 |
+| sensitivity | 敏感度 | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可能的值包括 `normal`、`personal`、`private`、`confidential`。 |
 | sentCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
 | sentOnlyToMe | Boolean | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
 | sentToAddresses | 集合 ([收件人](recipient.md)) | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |

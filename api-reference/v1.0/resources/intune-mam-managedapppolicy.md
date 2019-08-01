@@ -4,12 +4,13 @@ description: ManagedAppPolicy 资源表示特定于平台的策略的基类型�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2615d1331c024c1a04bc7db618e36966cc5bcdff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4aef589e8667dd3002175b478203384cd7cb2181
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465340"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037980"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy 资源类型
 
@@ -28,10 +29,10 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|策略显示名称。|
-|description|字符串|策略的说明。|
+|说明|String|策略的说明。|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系

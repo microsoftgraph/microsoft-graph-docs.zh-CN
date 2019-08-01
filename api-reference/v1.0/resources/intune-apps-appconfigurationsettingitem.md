@@ -4,12 +4,13 @@ description: 包含应用配置设置项的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11ef3a964d166301c04c49730ac084b68e700b7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 91ccefc06ba6a635b9b18e07465ea0332c48f022
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503588"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030175"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "32503588"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|appConfigKey|字符串|应用配置密钥。|
+|appConfigKey|String|应用配置密钥。|
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|应用配置密钥类型。 可取值为：`stringType`、`integerType`、`realType`、`booleanType`、`tokenType`。|
 |appConfigKeyValue|String|应用配置密钥值。|
 

@@ -2,12 +2,15 @@
 title: scheduleItem 资源类型
 description: 一个项目, 该项目描述与用户的默认日历上的实际事件相对应的用户的可用性。 此项也适用于资源 (会议室或设备)。
 localization_priority: Normal
-ms.openlocfilehash: 8a30dcb4394a963e35047fab00391f0cc7eb7715
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: fb544041948d5e46c1ae8c3f6f887f595ddb82e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579168"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034628"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleItem 资源类型
 
@@ -18,10 +21,10 @@ ms.locfileid: "32579168"
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |相应事件结束时的日期、时间和时区。 |
 |isPrivate |Boolean |相应事件的敏感度。 如果已标记`private`事件, 则为 True, 否则为 false。 可选。|
-|位置 |String | 保留或参与的相应事件的位置。 可选。|
+|location |String | 保留或参与的相应事件的位置。 可选。|
 |start |[dateTimeTimeZone](datetimetimezone.md) |相应事件的开始日期、时间和时区。 |
-|状态 |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。 |
-|主题 |String | 相应事件的主题行。 可选。|
+|status |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。 |
+|subject |String | 相应事件的主题行。 可选。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -4,12 +4,13 @@ description: 标识启动活动的资源对象。 发起方可以是用户、应
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d5de4cc65379a3386137c7da79a10c5492dd1427
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 946f548efc8bb8eea731480f303d8d15703dc018
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629346"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033080"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 

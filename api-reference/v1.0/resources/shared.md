@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 共享的内容
 localization_priority: Normal
-ms.openlocfilehash: af426d5e51f87b9fd8894c6e956947cc75f1a38d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 共享 资源指示 DriveItem 已与他人共享。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 547d227aff5b62cf47f3f6c11219a2c55c3e8205
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034326"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 

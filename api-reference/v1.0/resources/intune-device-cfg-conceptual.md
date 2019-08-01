@@ -4,12 +4,13 @@ description: 使用 Microsoft Intune 设备配置工作负载管理你管理的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: eda3d25b712b10feba3aac76135861acbc5a2f86
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 367e2eaa44187684ff241b9b2bc40a81c7729d6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575217"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028740"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 

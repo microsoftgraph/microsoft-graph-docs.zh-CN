@@ -4,17 +4,20 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: ContentType 资源代表 SharePoint 中的内容类型。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b26f9b7a3bafb7b6185aa781c1f842f7c20adab3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561353"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029636"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
 **ContentType** 资源代表 SharePoint 中的_内容类型_。
-内容类型使你可以定义一组列，这些列必须存在于 [**list**][list] 中的每个 [**listItem**][listItem] 上。
+内容类型允许您定义一组列, 这些列必须存在于列表中[****][listItem]的每个[**列表**][list]中。
 
 [list]: list.md
 [listItem]: listitem.md
@@ -50,18 +53,18 @@ ms.locfileid: "32561353"
 |:------------------|:---------------------|:----------------------------------
 | **说明**   | string               | 项目的描述性文本。
 | **group**         | string               | 此内容类型所属的组的名称。 可以帮助组织相关的内容类型。
-| **hidden**        | 布尔              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
+| **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
 | **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个作用域（如某个站点），则会提供对在其中定义内容类型的项的引用。
 | **name**          | string               | 内容类型的名称。
 | **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
-| **readOnly**      | 布尔              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
+| **readOnly**      | boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
 | **sealed**        | boolean              | 如果为 `true`，则不能由用户或通过下推操作修改内容类型。 只有网站集管理员可以密封或解封内容类型。
 
 ## <a name="relationships"></a>关系
 
-| 属性名称   | 类型                      | 说明
+| 属性名   | 类型                      | 说明
 |:----------------|:--------------------------|:-------------------------------
 | **columnLinks** | [columnLink][] 集合 | 此内容类型所需的列集合
 

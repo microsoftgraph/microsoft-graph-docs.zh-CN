@@ -4,12 +4,13 @@ description: 计划操作类型枚举
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd370f9e706955d76de519a518b4659ba46c6d25
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: cea72fa6e48699e540a43ea3938986e19ed351d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534309"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028516"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -22,11 +23,11 @@ ms.locfileid: "32534309"
 |:---|:---|:---|
 |noAction|0|无操作|
 |通告|1|发送通知|
-|数据|2 |阻止 AAD 中的设备|
-|注销|3 |停用设备|
-|擦|4 |擦除设备|
-|removeResourceAccessProfiles|5 |从设备中删除资源访问配置文件|
-|pushNotification|9 |将推送通知发送到设备|
+|数据|双面|阻止 AAD 中的设备|
+|注销|第三章|停用设备|
+|擦|4|擦除设备|
+|removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
+|pushNotification|第|将推送通知发送到设备|
 
 
 

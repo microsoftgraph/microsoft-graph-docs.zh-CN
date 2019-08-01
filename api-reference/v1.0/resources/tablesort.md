@@ -4,12 +4,13 @@ description: 管理对 Table 对象的排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: be607832be82b99853b4cd44cfa5b60449a2c432
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 14dbd96567510a3aefab4fddbc57a196c7734b5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534512"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033913"
 ---
 # <a name="tablesort-resource-type"></a>TableSort 资源类型
 

@@ -4,12 +4,13 @@ description: 表示在域上计划的异步操作的状态。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19da0630abf4b27899af9e5c6be12254d91e9499
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: feefe750997735d9f814f425ffd1380e25800a30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657691"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029412"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 

@@ -4,12 +4,13 @@ description: 表示与 Exchange 环境的连接的实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 172a8ae7bbdbad77da9b7a67d57047441e5a039d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c5994584af0026cbaae4257c6bd538a7c218a019
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583982"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037476"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector 资源类型
 

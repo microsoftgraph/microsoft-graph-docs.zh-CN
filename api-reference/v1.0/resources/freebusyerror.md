@@ -2,12 +2,15 @@
 title: freeBusyError 资源类型
 description: 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 localization_priority: Normal
-ms.openlocfilehash: a08fe8278644ab81f2c1fbe1c7d1530cab27d91b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: ca306ba5a40ffc08147c8e8449ab03bf51afd745
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558088"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030280"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 

@@ -4,12 +4,13 @@ description: 包含审核主角的属性的类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2b2aab468a6638b2e3bb525fd54c6554f5a5694a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584703"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032079"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
@@ -20,13 +21,13 @@ ms.locfileid: "32584703"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|类型|字符串|主角类型。|
+|type|字符串|主角类型。|
 |userPermissions|String collection|执行审核时的用户权限列表。|
-|applicationId|字符串|AAD 应用程序 ID。|
-|applicationDisplayName|字符串|应用程序的名称。|
-|userPrincipalName|String|用户主体名称 (UPN)。|
-|servicePrincipalName|字符串|服务主体名称 (SPN)。|
-|ipAddress|字符串|IPAddress。|
+|applicationId|String|AAD 应用程序 ID。|
+|applicationDisplayName|String|应用程序的名称。|
+|userPrincipalName|字符串|用户主体名称 (UPN)。|
+|servicePrincipalName|String|服务主体名称 (SPN)。|
+|ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
 
 ## <a name="relationships"></a>关系

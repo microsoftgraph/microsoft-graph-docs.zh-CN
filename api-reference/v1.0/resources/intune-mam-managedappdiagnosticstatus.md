@@ -4,12 +4,13 @@ description: 表示诊断状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2477039c3a0ebca3de09a4042691045782848b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 79a89b7084ea006352ad0bc423d0833acfaae86e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038043"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "32465303"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|validationName|字符串|验证友好名称|
+|validationName|String|验证友好名称|
 |state|String|操作状态|
 |mitigationInstruction|String|有关如何降低失败验证的说明|
 

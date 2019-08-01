@@ -4,12 +4,14 @@ ms.date: 09/10/2017
 title: 音频
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8265850a6194938cc3547d081c71256bb2aa9251
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Audio 资源将与音频相关的属性分组到一个单一结构。
+doc_type: resourcePageType
+ms.openlocfilehash: a71b9ee9c65bacc802244bda2e7757e87d9ff35e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030021"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -55,7 +57,7 @@ ms.locfileid: "32569338"
 | **discCount**         | Int16   | 此专辑中的光盘总数。                             |
 | **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
 | **genre**             | string  | 此音频文件的流派。                                        |
-| **hasDrm**            | 布尔 | 指明此文件是否受数字版权管理的保护。   |
+| **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |
 | **isVariableBitrate** | boolean | 指明此文件是否已经过可变比特率编码。            |
 | **title**             | string  | 此音频文件的标题。                                         |
 | **track**             | Int32   | 此音频文件在原始光盘上的曲目编号。    |

@@ -2,12 +2,15 @@
 title: hostSecurityState 资源类型
 description: 包含有关主机的状态信息 (包括设备、计算机等)。
 localization_priority: Normal
-ms.openlocfilehash: 0646547b7f3e31dcf283c1ce423a52b4ae16f013
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: dabe7d0aa026cb1b514e95fbc953dcb1974f8925
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570783"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029272"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 

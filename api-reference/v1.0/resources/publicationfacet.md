@@ -2,12 +2,15 @@
 title: PublicationFacet 资源类型
 description: '**publicationFacet** 资源提供有关 driveItemVersion 或 driveItem 资源发布状态的详细信息。'
 localization_priority: Normal
-ms.openlocfilehash: 3d722f56cf1d587483c672fb7a1b7c05abd3671b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 5189b578d0a996ceb27014d2c5400e508e1e8a56
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579697"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034949"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 

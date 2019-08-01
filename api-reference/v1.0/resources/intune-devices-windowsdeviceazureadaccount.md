@@ -4,12 +4,13 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 272b4d091cd728f095e0002dee7e06c68884d6a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: fe5952ec12dda2b7924b05f1d1fb5f74a40d8f38
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567520"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030644"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount 资源类型
 
@@ -24,7 +25,7 @@ ms.locfileid: "32567520"
 |属性|类型|说明|
 |:---|:---|:---|
 |密码|String|尚未记录 继承自 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|String|尚未记录|
+|userPrincipalName|字符串|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
