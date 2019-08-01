@@ -4,62 +4,63 @@ description: 更新已注册设备的属性。
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 58f6271c2a9c29fe18755456f6e586aaec8da1ee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: eeffcf9e024d4e0d56bc355e2b5f56b6109e9d8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015626"
 ---
-# <a name="update-device"></a><span data-ttu-id="45ff7-103">更新设备</span><span class="sxs-lookup"><span data-stu-id="45ff7-103">Update device</span></span>
+# <a name="update-device"></a><span data-ttu-id="eaf5b-103">更新设备</span><span class="sxs-lookup"><span data-stu-id="eaf5b-103">Update device</span></span>
 
-<span data-ttu-id="45ff7-104">更新已注册设备的属性。</span><span class="sxs-lookup"><span data-stu-id="45ff7-104">Update the properties of a registered device.</span></span>
+<span data-ttu-id="eaf5b-104">更新已注册设备的属性。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-104">Update the properties of a registered device.</span></span>
 
-<span data-ttu-id="45ff7-105">设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。</span><span class="sxs-lookup"><span data-stu-id="45ff7-105">Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.</span></span>
+<span data-ttu-id="eaf5b-105">设备的特定属性只能通过获准的移动设备管理 (MDM) 应用进行更新。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-105">Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="45ff7-106">权限</span><span class="sxs-lookup"><span data-stu-id="45ff7-106">Permissions</span></span>
-<span data-ttu-id="45ff7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="45ff7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="eaf5b-106">权限</span><span class="sxs-lookup"><span data-stu-id="eaf5b-106">Permissions</span></span>
+<span data-ttu-id="eaf5b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45ff7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="45ff7-109">Permission type</span></span>      | <span data-ttu-id="45ff7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="45ff7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eaf5b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="eaf5b-109">Permission type</span></span>      | <span data-ttu-id="eaf5b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="eaf5b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45ff7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="45ff7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="45ff7-112">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="45ff7-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="45ff7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="45ff7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45ff7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="45ff7-114">Not supported.</span></span> |
-|<span data-ttu-id="45ff7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="45ff7-115">Application</span></span> | <span data-ttu-id="45ff7-116">不支持</span><span class="sxs-lookup"><span data-stu-id="45ff7-116">Not supported</span></span> |
+|<span data-ttu-id="eaf5b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="eaf5b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="eaf5b-112">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="eaf5b-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="eaf5b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="eaf5b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eaf5b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-114">Not supported.</span></span> |
+|<span data-ttu-id="eaf5b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="eaf5b-115">Application</span></span> | <span data-ttu-id="eaf5b-116">不支持</span><span class="sxs-lookup"><span data-stu-id="eaf5b-116">Not supported</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="45ff7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="45ff7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eaf5b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="eaf5b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
 ```
-> <span data-ttu-id="45ff7-118">注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。</span><span class="sxs-lookup"><span data-stu-id="45ff7-118">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
+> <span data-ttu-id="eaf5b-118">注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-118">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="45ff7-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="45ff7-119">Request headers</span></span>
-| <span data-ttu-id="45ff7-120">名称</span><span class="sxs-lookup"><span data-stu-id="45ff7-120">Name</span></span>       | <span data-ttu-id="45ff7-121">类型</span><span class="sxs-lookup"><span data-stu-id="45ff7-121">Type</span></span> | <span data-ttu-id="45ff7-122">说明</span><span class="sxs-lookup"><span data-stu-id="45ff7-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="eaf5b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="eaf5b-119">Request headers</span></span>
+| <span data-ttu-id="eaf5b-120">名称</span><span class="sxs-lookup"><span data-stu-id="eaf5b-120">Name</span></span>       | <span data-ttu-id="eaf5b-121">类型</span><span class="sxs-lookup"><span data-stu-id="eaf5b-121">Type</span></span> | <span data-ttu-id="eaf5b-122">说明</span><span class="sxs-lookup"><span data-stu-id="eaf5b-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="45ff7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="45ff7-123">Authorization</span></span>  | <span data-ttu-id="45ff7-124">string</span><span class="sxs-lookup"><span data-stu-id="45ff7-124">string</span></span>  | <span data-ttu-id="45ff7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="45ff7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="eaf5b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="eaf5b-123">Authorization</span></span>  | <span data-ttu-id="eaf5b-124">string</span><span class="sxs-lookup"><span data-stu-id="eaf5b-124">string</span></span>  | <span data-ttu-id="eaf5b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="45ff7-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="45ff7-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="eaf5b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="eaf5b-127">Request body</span></span>
 
-<span data-ttu-id="45ff7-128">在请求正文中，提供应更新的 [device](../resources/device.md) 属性值。</span><span class="sxs-lookup"><span data-stu-id="45ff7-128">In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.</span></span> <span data-ttu-id="45ff7-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="45ff7-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="45ff7-130">为了实现最佳性能，不得添加未变化的现有值。</span><span class="sxs-lookup"><span data-stu-id="45ff7-130">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="eaf5b-128">在请求正文中，提供应更新的 [device](../resources/device.md) 属性值。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-128">In the request body, supply the values for the [device](../resources/device.md) properties that should be updated.</span></span> <span data-ttu-id="eaf5b-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="eaf5b-130">为了实现最佳性能，不得添加未变化的现有值。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-130">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="45ff7-131">属性</span><span class="sxs-lookup"><span data-stu-id="45ff7-131">Property</span></span>     | <span data-ttu-id="45ff7-132">类型</span><span class="sxs-lookup"><span data-stu-id="45ff7-132">Type</span></span>   |<span data-ttu-id="45ff7-133">说明</span><span class="sxs-lookup"><span data-stu-id="45ff7-133">Description</span></span>|
+| <span data-ttu-id="eaf5b-131">属性</span><span class="sxs-lookup"><span data-stu-id="eaf5b-131">Property</span></span>     | <span data-ttu-id="eaf5b-132">类型</span><span class="sxs-lookup"><span data-stu-id="eaf5b-132">Type</span></span>   |<span data-ttu-id="eaf5b-133">说明</span><span class="sxs-lookup"><span data-stu-id="eaf5b-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="45ff7-134">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="45ff7-134">accountEnabled</span></span>|<span data-ttu-id="45ff7-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="45ff7-135">Boolean</span></span>| <span data-ttu-id="45ff7-136">如果帐户已启用，则为 **true**；否则，为 **false**。</span><span class="sxs-lookup"><span data-stu-id="45ff7-136">**true** if the account is enabled; otherwise, **false**.</span></span> |
-|<span data-ttu-id="45ff7-137">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="45ff7-137">operatingSystem</span></span>|<span data-ttu-id="45ff7-138">String</span><span class="sxs-lookup"><span data-stu-id="45ff7-138">String</span></span>|<span data-ttu-id="45ff7-139">设备上的操作系统类型。</span><span class="sxs-lookup"><span data-stu-id="45ff7-139">The type of operating system on the device.</span></span>|
-|<span data-ttu-id="45ff7-140">operatingSystemVersion</span><span class="sxs-lookup"><span data-stu-id="45ff7-140">operatingSystemVersion</span></span>|<span data-ttu-id="45ff7-141">String</span><span class="sxs-lookup"><span data-stu-id="45ff7-141">String</span></span>|<span data-ttu-id="45ff7-142">设备上的操作系统版本</span><span class="sxs-lookup"><span data-stu-id="45ff7-142">The version of the operating system on the device</span></span>|
-|<span data-ttu-id="45ff7-143">displayName</span><span class="sxs-lookup"><span data-stu-id="45ff7-143">displayName</span></span>|<span data-ttu-id="45ff7-144">String</span><span class="sxs-lookup"><span data-stu-id="45ff7-144">String</span></span>|<span data-ttu-id="45ff7-145">设备显示名称。</span><span class="sxs-lookup"><span data-stu-id="45ff7-145">The display name for the device.</span></span>|
-|<span data-ttu-id="45ff7-146">isCompliant</span><span class="sxs-lookup"><span data-stu-id="45ff7-146">isCompliant</span></span>|<span data-ttu-id="45ff7-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="45ff7-147">Boolean</span></span>|<span data-ttu-id="45ff7-148">如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。</span><span class="sxs-lookup"><span data-stu-id="45ff7-148">**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.</span></span> <span data-ttu-id="45ff7-149">这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。</span><span class="sxs-lookup"><span data-stu-id="45ff7-149">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
-|<span data-ttu-id="45ff7-150">isManaged</span><span class="sxs-lookup"><span data-stu-id="45ff7-150">isManaged</span></span>|<span data-ttu-id="45ff7-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="45ff7-151">Boolean</span></span>|<span data-ttu-id="45ff7-152">如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。</span><span class="sxs-lookup"><span data-stu-id="45ff7-152">**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**.</span></span> <span data-ttu-id="45ff7-153">这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。</span><span class="sxs-lookup"><span data-stu-id="45ff7-153">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
+|<span data-ttu-id="eaf5b-134">accountEnabled</span><span class="sxs-lookup"><span data-stu-id="eaf5b-134">accountEnabled</span></span>|<span data-ttu-id="eaf5b-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="eaf5b-135">Boolean</span></span>| <span data-ttu-id="eaf5b-136">如果帐户已启用，则为 **true**；否则，为 **false**。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-136">**true** if the account is enabled; otherwise, **false**.</span></span> |
+|<span data-ttu-id="eaf5b-137">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="eaf5b-137">operatingSystem</span></span>|<span data-ttu-id="eaf5b-138">String</span><span class="sxs-lookup"><span data-stu-id="eaf5b-138">String</span></span>|<span data-ttu-id="eaf5b-139">设备上的操作系统类型。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-139">The type of operating system on the device.</span></span>|
+|<span data-ttu-id="eaf5b-140">operatingSystemVersion</span><span class="sxs-lookup"><span data-stu-id="eaf5b-140">operatingSystemVersion</span></span>|<span data-ttu-id="eaf5b-141">String</span><span class="sxs-lookup"><span data-stu-id="eaf5b-141">String</span></span>|<span data-ttu-id="eaf5b-142">设备上的操作系统版本</span><span class="sxs-lookup"><span data-stu-id="eaf5b-142">The version of the operating system on the device</span></span>|
+|<span data-ttu-id="eaf5b-143">displayName</span><span class="sxs-lookup"><span data-stu-id="eaf5b-143">displayName</span></span>|<span data-ttu-id="eaf5b-144">String</span><span class="sxs-lookup"><span data-stu-id="eaf5b-144">String</span></span>|<span data-ttu-id="eaf5b-145">设备显示名称。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-145">The display name for the device.</span></span>|
+|<span data-ttu-id="eaf5b-146">isCompliant</span><span class="sxs-lookup"><span data-stu-id="eaf5b-146">isCompliant</span></span>|<span data-ttu-id="eaf5b-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="eaf5b-147">Boolean</span></span>|<span data-ttu-id="eaf5b-148">如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-148">**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**.</span></span> <span data-ttu-id="eaf5b-149">这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-149">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
+|<span data-ttu-id="eaf5b-150">isManaged</span><span class="sxs-lookup"><span data-stu-id="eaf5b-150">isManaged</span></span>|<span data-ttu-id="eaf5b-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="eaf5b-151">Boolean</span></span>|<span data-ttu-id="eaf5b-152">如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-152">**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**.</span></span> <span data-ttu-id="eaf5b-153">这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-153">This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="45ff7-154">响应</span><span class="sxs-lookup"><span data-stu-id="45ff7-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eaf5b-154">响应</span><span class="sxs-lookup"><span data-stu-id="eaf5b-154">Response</span></span>
 
-<span data-ttu-id="45ff7-155">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="45ff7-155">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="eaf5b-155">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="eaf5b-155">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45ff7-156">示例</span><span class="sxs-lookup"><span data-stu-id="45ff7-156">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="45ff7-157">请求</span><span class="sxs-lookup"><span data-stu-id="45ff7-157">Request</span></span>
+## <a name="example"></a><span data-ttu-id="eaf5b-156">示例</span><span class="sxs-lookup"><span data-stu-id="eaf5b-156">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="eaf5b-157">请求</span><span class="sxs-lookup"><span data-stu-id="eaf5b-157">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="45ff7-158">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="45ff7-158">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="eaf5b-158">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="eaf5b-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -73,25 +74,25 @@ Content-length: 31
   "accountEnabled": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="45ff7-159">C#</span><span class="sxs-lookup"><span data-stu-id="45ff7-159">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="eaf5b-159">C#</span><span class="sxs-lookup"><span data-stu-id="eaf5b-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="45ff7-160">Javascript</span><span class="sxs-lookup"><span data-stu-id="45ff7-160">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="eaf5b-160">Javascript</span><span class="sxs-lookup"><span data-stu-id="eaf5b-160">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-device-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="45ff7-161">目标-C</span><span class="sxs-lookup"><span data-stu-id="45ff7-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="eaf5b-161">目标-C</span><span class="sxs-lookup"><span data-stu-id="eaf5b-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="45ff7-162">Java</span><span class="sxs-lookup"><span data-stu-id="45ff7-162">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="eaf5b-162">Java</span><span class="sxs-lookup"><span data-stu-id="eaf5b-162">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="45ff7-163">响应</span><span class="sxs-lookup"><span data-stu-id="45ff7-163">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="eaf5b-163">响应</span><span class="sxs-lookup"><span data-stu-id="eaf5b-163">Response</span></span>
 
 <!-- {
   "blockType": "response",
