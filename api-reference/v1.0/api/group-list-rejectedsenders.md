@@ -4,12 +4,13 @@ description: '获取此组的“遭拒的发件人”列表中的用户或组列
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 89a3424919dbacdf8e549f49f12db80535145221
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a0e669395d71ca4b0c2312147c4a3e93cfb24d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014883"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 获取此组的“遭拒的发件人”列表中的用户或组列表。 

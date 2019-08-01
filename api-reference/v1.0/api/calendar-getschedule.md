@@ -4,12 +4,13 @@ description: 获取用户、通讯组列表或资源在指定时间段内的忙/
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 027e3ec5764c0868236b34c90f558b0bd7db45fc
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: ee74761e658a36452dafc7fed077c7d3bb5eaecd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004048"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 

@@ -4,12 +4,13 @@ description: 检索所有 identityProvider
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 788722408838c58e4423d8aac792e5985e9f3c4e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b38dc049dfec8071858c544cd7f3b09d18d021f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880887"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014422"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 

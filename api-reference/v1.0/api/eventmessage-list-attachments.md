@@ -4,12 +4,13 @@ description: 检索 attachment 对象列表。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6207a185284e0f86a6b45ebc7311522c3241541a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9694fd22e71f4a8642104bded27e8e6439e09667
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888221"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014989"
 ---
 # <a name="list-attachments"></a>列出附件
 

@@ -4,12 +4,13 @@ description: Windows Hello 企业版 pin 使用选项
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9f3d7ebb6e44224d637a59220acc9d17c449871
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: f54eb00915958d7da938c633aeddbe8d9f8f7a32
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037210"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage 枚举类型
 
@@ -22,7 +23,7 @@ Windows Hello 企业版 pin 使用选项
 |:---|:---|:---|
 |支持|0|尚未记录|
 |必需|1|尚未记录|
-|许可证|2 |尚未记录|
+|许可证|双面|尚未记录|
 
 
 

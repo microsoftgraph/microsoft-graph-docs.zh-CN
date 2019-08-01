@@ -4,12 +4,13 @@ description: 永久删除已删除的项目中的项目
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4d8e6a51cd89b258a85dcbf6fc5efae97ae2be0b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a22fd0ee6017dbd93735a739eb3cfb4336e432e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883308"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015634"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 

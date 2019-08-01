@@ -4,12 +4,13 @@ description: 列出 androidWorkProfileCompliancePolicy 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 557a3b04c4efd0fd711084626cec7b568b06f014
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ba6a4e291aca863a34838bc20a4dec2f13ab56f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503546"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019546"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>列出 androidWorkProfileCompliancePolicies
 

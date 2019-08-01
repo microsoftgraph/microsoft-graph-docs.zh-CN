@@ -2,15 +2,15 @@
 title: 向团队添加应用
 description: 将应用程序安装到指定的团队。
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7e96f71a605c22071822a2c9d15ae6c06d55e1e6
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: df830e1be8eac1e098e687b640b987c71f473ed1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932355"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027319"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 

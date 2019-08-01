@@ -4,12 +4,13 @@ description: 检索邮件对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 606f082fa98e11965aa6665f84269cb5858345ea
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7efa7e2352a03f60285ac41e1e1023466e639a42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022871"
 ---
 # <a name="get-message"></a>获取邮件
 

@@ -4,12 +4,13 @@ description: 封装整个图表区域的格式属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a447b604807f3ae223445db953d45928eda9f36b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ee39e1fc58fe604ff24433dcb540b44e22bb3ee9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569387"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033003"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat 资源类型
 

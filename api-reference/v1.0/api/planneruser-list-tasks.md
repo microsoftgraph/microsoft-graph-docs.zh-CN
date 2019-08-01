@@ -4,12 +4,13 @@ description: 检索分配给用户的 **plannertask** 对象的列表。
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 5051b61a7d3f89fad7b69bf4498cd25ed790af58
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 003af283a4430343e878d2ccf10471e4fa2b3d8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887003"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975996"
 ---
 # <a name="list-tasks"></a>列出任务
 

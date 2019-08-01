@@ -4,12 +4,13 @@ description: 列出 windows10EnterpriseModernAppManagementConfiguration 对象�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1b2e72cf6fd7169b690550a5a4643b72380c454
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 69506350a2b26525f038ca882967f6e71a705a42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020204"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>列出 windows10EnterpriseModernAppManagementConfigurations
 

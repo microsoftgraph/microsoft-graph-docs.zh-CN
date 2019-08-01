@@ -4,12 +4,13 @@ description: 列出 editionUpgradeConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 601fe4cd684113bc56077c2c802edaa1f2fa9eaf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 811131744826171502bbe461cd8784c537f40fe8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556814"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019028"
 ---
 # <a name="list-editionupgradeconfigurations"></a>列出 editionUpgradeConfigurations
 

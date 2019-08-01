@@ -4,12 +4,13 @@ description: 获取 event 对象。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d4d9a1abefc8a85b255e012013f543ffb6236feb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 61d43f8d1fa87d88c6828d3d20349ca7b66bc99d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889419"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014933"
 ---
 # <a name="get-event"></a>获取事件
 获取 [event](../resources/event.md) 对象。

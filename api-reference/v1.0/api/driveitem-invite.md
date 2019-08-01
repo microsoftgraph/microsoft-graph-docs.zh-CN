@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 129e94aef36e9779dd114848880ddba5243b218e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 发送 DriveItem 的共享邀请。
+doc_type: apiPageType
+ms.openlocfilehash: 3f245cc3b518502f39a6ca2928ea31719661d27b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890798"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015423"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 

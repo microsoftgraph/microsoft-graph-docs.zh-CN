@@ -3,12 +3,14 @@ title: visualInfo 资源类型
 description: 一个代表 activity 对象中的**visualElements**属性的复杂类型。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 416109bb1bb6625330ddfbbb32b8fb688b223134
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9b26fba2e8ea29dab6f753de36e1c981f8e31c2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579683"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035019"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 

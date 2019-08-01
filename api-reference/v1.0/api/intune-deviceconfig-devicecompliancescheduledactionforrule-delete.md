@@ -4,12 +4,13 @@ description: 删除 deviceComplianceScheduledActionForRule。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf23a413ef0b232aa15abeeede16739e3951b453
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d75099c6e79eb41d61a9c925ba26da38f11e4401
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017733"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>删除 deviceComplianceScheduledActionForRule
 

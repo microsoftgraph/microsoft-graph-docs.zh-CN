@@ -4,12 +4,13 @@ description: 表示对合作伙伴租户中的 directory 对象的引用。 继�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bcd26b80ba133ec2f4fa81c9ffb74fc7aac56b17
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 7b8fb49ac74d7f1a603f5f0b74d47751242ae01a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029468"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 

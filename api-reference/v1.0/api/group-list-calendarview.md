@@ -4,12 +4,13 @@ description: 获取由时间范围定义的日历视图中的事件发生次数�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6e23da1448d37caf6065f0dc380a10a5b2f6e120
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 7c1e03aefa55f8d6083b5ed79ef0a13a5d75d153
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016347"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 从群组的默认日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。

@@ -4,12 +4,13 @@ description: Yammer 活动报表可用于了解组织的 Yammer 交互级别，�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 3ceda4e5771e442f4b664de71b595f8c5b6aeaf7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: fcd42485cc6578ae9443ce212ed8d2ec6f1120dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521806"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033213"
 ---
 # <a name="yammer-activity-reports"></a>Yammer 活动报表
 
@@ -21,6 +22,6 @@ Yammer 活动报表可用于了解组织的 Yammer 交互级别，具体是以�
 
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getyammeractivityuserdetail.md) | Stream      | 获取用户执行的 Yammer 活动的详细信息。 |
+| [获取用户详细信息](../api/reportroot-getyammeractivityuserdetail.md) | 流      | 获取用户执行的 Yammer 活动的详细信息。 |
 | [获取活动数](../api/reportroot-getyammeractivitycounts.md) | Stream      | 获取组织中的 Yammer 活动数趋势，具体是以已发布、已阅读和已赞的消息数为依据。 |
 | [获取用户数](../api/reportroot-getyammeractivityusercounts.md) | Stream      | 获取已发布、已阅读和已赞 Yammer 消息的唯一用户数趋势。 |

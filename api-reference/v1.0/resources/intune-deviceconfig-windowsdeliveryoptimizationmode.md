@@ -4,12 +4,13 @@ description: 对等分发的传递优化模式
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9034c7c90257a7ca622cd203d4ab84387fd2014
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 9154a78af87dbef125e5d211aba284d7a0023e84
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463892"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027647"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 
@@ -22,9 +23,9 @@ ms.locfileid: "32463892"
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
 |httpOnly|1|仅限 HTTP, 无对等|
-|httpWithPeeringNat|2 |OS 默认值–在同一网络地址转换器后具有对等的 Http 混合|
-|httpWithPeeringPrivateGroup|3 |通过专用组与对等互连的 HTTP 混合|
-|httpWithInternetPeering|4 |与 Internet 对等混合的 HTTP|
+|httpWithPeeringNat|双面|OS 默认值–在同一网络地址转换器后具有对等的 Http 混合|
+|httpWithPeeringPrivateGroup|第三章|通过专用组与对等互连的 HTTP 混合|
+|httpWithInternetPeering|4|与 Internet 对等混合的 HTTP|
 |simpleDownload|99|无对等的简单下载模式|
 |bypassMode|100|旁路模式。 请勿使用传递优化和改用 BITS|
 

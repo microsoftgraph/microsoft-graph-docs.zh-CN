@@ -4,12 +4,13 @@ description: 对于租户中的每个域, 您可能需要将 DNS 记录添加到
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77dcc09e19038e06974968fae1c4cb6672f2a335
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: a590895a905852b37c7cc14b0390573c7b57e72f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657964"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029426"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
 

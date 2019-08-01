@@ -4,12 +4,13 @@ description: 获取组所属的组。  此操作是可传递的, 还将包括此
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2eee70d3fcc98651e76470f052b13e59f7778d6e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cf5ab293c0d786b8bb9f1c12f4154833be42483f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880943"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014843"
 ---
 # <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
 

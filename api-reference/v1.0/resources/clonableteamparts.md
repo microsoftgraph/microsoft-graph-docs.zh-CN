@@ -2,12 +2,15 @@
 title: clonableTeamParts 枚举类型
 description: '介绍应克隆的团队部分。 '
 localization_priority: Normal
-ms.openlocfilehash: e7f7b1e8fa73bdd4a188e8d8f5d40635d302a023
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: enumPageType
+ms.openlocfilehash: cbc91912bbcacbc26f481380e684ceccc1621784
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584969"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029706"
 ---
 # <a name="clonableteamparts-enum-type"></a>clonableTeamParts 枚举类型
 
@@ -20,7 +23,7 @@ ms.locfileid: "32584969"
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
 |apps|1|复制已安装应用程序的列表。|
-|选项卡|2 |复制通道中的选项卡。|
-|settings|4 |复制团队中的所有设置以及关键组设置。|
-|channels|8 |复制通道结构 (而不是通道中的邮件)。|
+|选项卡|双面|复制通道中的选项卡。|
+|settings|4|复制团队中的所有设置以及关键组设置。|
+|channels|utf-8|复制通道结构 (而不是通道中的邮件)。|
 |members|位|复制团队的成员和所有者。|

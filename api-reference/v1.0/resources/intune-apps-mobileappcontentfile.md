@@ -4,12 +4,13 @@ description: 包含与给定 mobileAppContent 版本关联的单个安装程序�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8edeebdc3df12d3e1a458ae57e805052e47e3d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 48cb6d12234135aa3bdab6eaba123f99faa51bf8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557878"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032156"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
@@ -33,7 +34,7 @@ ms.locfileid: "32557878"
 |:---|:---|:---|
 |azureStorageUri|String|Azure 存储 URI。|
 |isCommitted|Boolean|指示文件是否已提交的值。|
-|id|字符串|文件 ID。|
+|id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
 |name|String|文件名称。|
 |size|Int64|加密前的文件大小。|

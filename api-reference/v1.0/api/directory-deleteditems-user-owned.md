@@ -4,12 +4,13 @@ description: '检索指定用户拥有的最近删除的项目的列表。  '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75d943a37899b6f1d84971305cd473a398b049bb
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: apiPageType
+ms.openlocfilehash: 0a863964f553bedeb4e47c81afefc3aa4f7d39b9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656655"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016935"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**列出用户拥有的已删除项目**
 

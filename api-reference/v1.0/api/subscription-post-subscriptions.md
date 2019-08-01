@@ -3,12 +3,14 @@ title: 创建订阅
 description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: dfb96444206cef77f4e58e35968a20168c868432
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: d0658456a52d9eacac29baaf68903ca944f23fa1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894319"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024607"
 ---
 # <a name="create-subscription"></a>创建订阅
 

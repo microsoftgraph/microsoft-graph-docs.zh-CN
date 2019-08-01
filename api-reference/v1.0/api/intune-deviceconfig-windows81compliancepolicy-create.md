@@ -4,12 +4,13 @@ description: 创建新的 windows81CompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1830887e98b7902d4b013281abdc3cf600d7b671
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6a141025a592a322dec6cd5ba5aeb802c04878f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020064"
 ---
 # <a name="create-windows81compliancepolicy"></a>创建 windows81CompliancePolicy
 

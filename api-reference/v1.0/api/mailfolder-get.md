@@ -4,12 +4,13 @@ description: 检索邮件文件夹对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 139c58dd7fbc24a63bfd4e4af50b6bcd57c928df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a8821cef613a86e7630117a38cef3636eee40e9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023046"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 

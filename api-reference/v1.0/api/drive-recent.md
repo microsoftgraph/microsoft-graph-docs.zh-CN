@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 列出最近的文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 72818351e59605ffddc1a23dd6a5cce8495a4803
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 列出登录用户最近使用的一组项。
+doc_type: apiPageType
+ms.openlocfilehash: 1fb86c8e7edbb6cf553a3f61ec712d45e78cd185
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881854"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016468"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 

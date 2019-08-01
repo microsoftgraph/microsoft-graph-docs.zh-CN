@@ -4,12 +4,13 @@ description: 表示 range 对象的背景。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 75aa4bd91ad6f1038fdc42460c6a3c9ab928a09d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b884312f8c3a9e8e02242023556713be62f8529f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579471"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034907"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill 资源类型
 
@@ -22,7 +23,7 @@ ms.locfileid: "32579471"
 |:---------------|:--------|:----------|
 |[获取 RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |读取 rangeFill 对象的属性和关系。|
 |[更新](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |更新 RangeFill 对象 |
-|[清除](../api/rangefill-clear.md)|无|重置区域背景。|
+|[清除](../api/rangefill-clear.md)|None|重置区域背景。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

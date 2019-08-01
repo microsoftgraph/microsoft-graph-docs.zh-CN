@@ -4,12 +4,13 @@ description: 在任何集成的解决方案中更新可编辑的**alert**属性,
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f7768dfb48c20aaf0d1398a776e498a644b3cdfd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b54682d6cf8c313444175a02b403a28de237ebb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882667"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015808"
 ---
 # <a name="update-alert"></a>更新警报
 

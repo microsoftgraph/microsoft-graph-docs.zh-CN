@@ -4,12 +4,13 @@ description: " 检索 alert 对象的属性和关系。"
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 573519edb0346c5d4b6145b7df6a88524737ae8e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 87a55782a8c2472f941f72fc8dcc24f2206657db
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882651"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015822"
 ---
 # <a name="get-alert"></a>获取警报
 

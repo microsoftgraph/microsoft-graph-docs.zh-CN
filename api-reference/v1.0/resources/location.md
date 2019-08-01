@@ -4,12 +4,13 @@ description: 表示事件的位置信息。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a18dbcbe4228fee0363a13fe89f452703732077a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: bb975753e838d273c8d516472f1963d92413a367
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525451"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036426"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 

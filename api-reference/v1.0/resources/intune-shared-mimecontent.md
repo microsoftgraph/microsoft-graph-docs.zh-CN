@@ -4,12 +4,13 @@ description: 包含通用 MIME 内容的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de4360ce5a8873fde7d3286f55fc0c8993936a7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 24563bb89af91c05dd71aeb284934c0406819711
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571875"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036888"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent 资源类型
 

@@ -4,12 +4,13 @@ description: Miracast 通道的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 436036aa9b5945be94587622a2e6a5cfe4f5d027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: f6ca37c3766efd236facf7cee528252eaf7cf71a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028075"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
@@ -22,16 +23,16 @@ Miracast 通道的可能值。
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |一个|1|次.|
-|two|2 |以下.|
-|three|3 |条.|
-|four|4 |条.|
-|five|5 |五百.|
-|位|6 |位.|
-|条|7 |条.|
-|无穷|8 |无穷.|
-|九点|9 |九点.|
+|two|双面|以下.|
+|three|第三章|条.|
+|four|4|条.|
+|five|5|五百.|
+|位|型|位.|
+|条|步|条.|
+|无穷|utf-8|无穷.|
+|九点|第|九点.|
 |个人|10 |个人.|
-|11|11 |11.|
+|11|11x17|11.|
 |thirtySix|36|36。|
 |40|40|40。|
 |fortyFour|44|44。|

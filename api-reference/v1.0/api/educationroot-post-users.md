@@ -4,12 +4,13 @@ description: 新建用户。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4bdfc4d320bc4ab9e2c9b91ffba421f2e70e5431
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e98261776d967c93a94ecf30afa57bc5e1d97381
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015206"
 ---
 # <a name="create-educationuser"></a>创建 educationUser
 

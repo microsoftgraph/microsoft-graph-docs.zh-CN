@@ -4,12 +4,13 @@ description: 角色分配资源。 角色分配将角色定义与成员和作用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfbb4e3b51f56e447ba69caefbf2b0b5226a5d4f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e4293b5e7efc29ccf25a2b4c72b6b8ceb1a377a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567485"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037182"
 ---
 # <a name="deviceandappmanagementroleassignment-resource-type"></a>deviceAndAppManagementRoleAssignment 资源类型
 

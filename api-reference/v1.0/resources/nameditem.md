@@ -2,12 +2,15 @@
 title: NamedItem 资源类型
 description: 表示单元格区域或值的定义名称。名称可以为基元的已命名对象（如以下类型中所示）、range 对象或对区域的引用。此对象可用于获取与名称相关的 range 对象。
 localization_priority: Normal
-ms.openlocfilehash: e413361cc42a0f8f65e23e12d36b49d2c7bcebb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b53b223a3f9d894f8ab140014528c0cd02c224dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548523"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035999"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem 资源类型
 
@@ -22,8 +25,8 @@ ms.locfileid: "32548523"
 |[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[WorkbookNamedItem](nameditem.md)|使用用户的公式区域设置，将新名称添加到给定范围的集合。|
 |[获取 NamedItem](../api/nameditem-get.md) | [WorkbookNamedItem](nameditem.md) |读取 nameditem 对象的属性和关系。|
 |[更新](../api/nameditem-update.md) | [WorkbookNamedItem](nameditem.md)   |更新 NamedItem 对象。 |
-|[区域](../api/nameditem-range.md)|[Range](range.md)|返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。|
-|[列出](../api/nameditem-list.md) | [WorkbookNamedItem](nameditem.md)集合 |获取 namedItem 对象集合。 |
+|[区域](../api/nameditem-range.md)|[区域](range.md)|返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。|
+|[列出](../api/nameditem-list.md) | [WorkbookNamedItem](nameditem.md) 集合 |获取 namedItem 对象集合。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

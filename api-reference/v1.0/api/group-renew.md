@@ -4,12 +4,13 @@ description: 续订组以更新到期时间。 续订后，组的有效期就会
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 264763a7f5997a989ad54056caa898a450f0da38
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b334c863cd13cee7b046d7e7701302b0607b59f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885437"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014751"
 ---
 # <a name="group-renew"></a>group: renew
 

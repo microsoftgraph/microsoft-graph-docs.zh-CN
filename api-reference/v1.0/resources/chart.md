@@ -4,12 +4,13 @@ description: 表示工作簿中的 chart 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 831cea99e2eefaf87db814b149798506950bf407
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0606528083a282338681f40373ecaccb146428f3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569443"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029888"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
@@ -28,7 +29,7 @@ ms.locfileid: "32569443"
 |[删除](../api/chart-delete.md)|无|删除 chart 对象。|
 |[Setdata](../api/chart-setdata.md)|无|重置图表的源数据。|
 |[Setposition](../api/chart-setposition.md)|无|相对于工作表上的单元格放置图表。|
-|[列出](../api/chart-list.md) | [WorkbookChart](chart.md)集合 |获取 chart 对象集合。 |
+|[列出](../api/chart-list.md) | [WorkbookChart](chart.md) 集合 |获取 chart 对象集合。 |
 |[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|根据其在集合中的位置获取图表。|
 |[添加](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|创建新图表。|
 

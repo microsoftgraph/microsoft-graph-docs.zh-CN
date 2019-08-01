@@ -4,12 +4,13 @@ description: 检索附加到邮件的 attachment 对象列表。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 37583305e53872c8a6bca8dc1c55736de82656c1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e0ece5e9b588fbccf2292582c1675d9fbe15f7cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885016"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022850"
 ---
 # <a name="list-attachments"></a>列出附件
 

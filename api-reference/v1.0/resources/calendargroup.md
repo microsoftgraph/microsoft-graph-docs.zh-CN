@@ -4,12 +4,13 @@ description: 一组用户日历。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5b75ebf253276876129859be7d37ecb6748fc0d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3931359b3b7eec65e2c675fbc5b6ef40176b13fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569401"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033052"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 
@@ -31,7 +32,7 @@ ms.locfileid: "32569401"
 
 | 属性  | 类型   | 说明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name      | String | 组名称。                                                                                                                                                                                           |
+| name      | 字符串 | 组名称。                                                                                                                                                                                           |
 | changeKey | String | 标识日历组的版本。每次日历组更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。 |
 | classId   | Guid   | 类标识符。只读。                                                                                                                                                                          |
 | id        | String | 组的唯一标识符。只读。                                                                                                                                                                 |
