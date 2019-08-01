@@ -4,12 +4,13 @@ description: OneDrive 活动报表可用于获取每个有权使用 OneDrive 的
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9771507e336ecf82b93eb2c12d22f45f47eb74fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: e403d53df04ebf5b76cf695a80c2a03769293f24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462940"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035929"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive 活动报表
 
@@ -21,7 +22,7 @@ OneDrive 活动报表可用于获取每个有权使用 OneDrive 的用户的活�
 
 | 函数                                 | 返回类型 | 说明                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [获取用户详细信息](../api/reportroot-getonedriveactivityuserdetail.md) | Stream      | 获取用户执行的 OneDrive 活动的详细信息。 |
+| [获取用户详细信息](../api/reportroot-getonedriveactivityuserdetail.md) | 流      | 获取用户执行的 OneDrive 活动的详细信息。 |
 | [获取用户数](../api/reportroot-getonedriveactivityusercounts.md) | Stream      | 获取 OneDrive 活跃用户数趋势。 |
 | [获取文件数](../api/reportroot-getonedriveactivityfilecounts.md) | Stream      | 获取对任意 OneDrive 帐户执行文件交互的唯一许可用户数。 |
 

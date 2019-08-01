@@ -4,12 +4,13 @@ description: 介绍 Microsoft Graph API (REST) 的 resourceOperation 资源 (实
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c203b47235d94a3742c5cb0cee401d824feafb46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1f3519255524c38d75b941461682f2538a6ee39a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553986"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037133"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
@@ -32,7 +33,7 @@ ms.locfileid: "32553986"
 |id|字符串|资源操作的键。 只读，且自动生成。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 
 ## <a name="relationships"></a>关系
 无

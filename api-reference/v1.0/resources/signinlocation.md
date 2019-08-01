@@ -4,12 +4,13 @@ description: 提供发生登录的城市、省/市/自治区和国家/地区。
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6f81556526c9de1177248b7015bb276e47cb73d9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 35c6511b7dba69a362b44a9390974913c46b73ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034214"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
 
@@ -19,7 +20,7 @@ ms.locfileid: "33629234"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|字符串|提供发起登录的城市。 这是通过登录活动中的纬度/经度信息计算得出的。|
+|city|String|提供发起登录的城市。 这是通过登录活动中的纬度/经度信息计算得出的。|
 |countryOrRegion|String|提供登录所源于的国家/地区代码信息 (2 个字母代码)。  这是通过登录活动中的纬度/经度信息计算得出的。|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|提供登录所源于的纬度、经度和海拔高度。|
 |state|String|提供登录的起始状态。 这是通过登录活动中的纬度/经度信息计算得出的。|

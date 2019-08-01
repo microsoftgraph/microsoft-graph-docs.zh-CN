@@ -4,12 +4,13 @@ description: 角色定义资源。 角色定义是在 Intune 中基于角色访�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e703909f818535eac7ae00284d15620bce55ba80
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e4e231cab152bf4e9952a6dc65fda63013c33732
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567464"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037168"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>deviceAndAppManagementRoleDefinition 资源类型
 

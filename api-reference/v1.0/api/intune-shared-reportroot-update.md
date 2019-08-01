@@ -4,12 +4,13 @@ description: 更新 reportRoot 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0039490379054ddb98c687957c1af0462a2e7f02
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 66448222ab82776a343296f6bec0be0e9d684852
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576816"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025825"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 

@@ -2,12 +2,15 @@
 title: attendeeBase 资源类型
 description: 与会者类型。
 localization_priority: Normal
-ms.openlocfilehash: d009ef6a58c63017addf8b8a1bdecc1974abbff3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 154584a91fc8844e2745d5198773157c4dfe26d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569352"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033108"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase 资源类型
 

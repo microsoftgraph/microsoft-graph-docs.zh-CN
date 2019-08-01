@@ -3,12 +3,14 @@ title: 创建或替换 historyItem
 description: 为现有用户活动创建新的或替换现有的历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 851862a49a3a6852d70e597d70f5622833c7c087
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575329"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025356"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 
@@ -35,7 +37,7 @@ PUT /me/activities/{id}/historyItems/{id}
 
 Id 必须是 GUID。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|

@@ -4,12 +4,13 @@ description: 若要调用此 API, 必须有以下权限之一。 若要了解详
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 74480dc7c686dc10a9b45dc4dba7a99ce1fe9c11
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a692c215cec5270422dd6bd559519ee4b5e6ce17
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884870"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026305"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 

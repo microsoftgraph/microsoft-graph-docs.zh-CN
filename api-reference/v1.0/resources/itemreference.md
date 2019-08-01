@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: 5c60ee4a0ac8538d71d37403e6f790e32d6a74cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f7d8f6d524b605b544785b0379a273d4c022c9c9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585221"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036524"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 

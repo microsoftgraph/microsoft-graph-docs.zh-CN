@@ -1,17 +1,20 @@
 ---
 title: assignedLicense 资源类型
-description: 表示分配给用户的许可证。 user 实体的**assignedLicenses**属性是**assignedLicense**的集合。
+description: 表示分配给用户的许可证。 User 实体的**assignedLicenses**属性是**assignedLicense**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 1e190060d0aafa4d494240f691b354b28e7697c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: cd551085dac72b2f63e2cb67d9ada978746c0b5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030077"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
 
-表示分配给用户的许可证。 [user](user.md)实体的**assignedLicenses**属性是**assignedLicense**的集合。
+表示分配给用户的许可证。 [User](user.md)实体的**AssignedLicenses**属性是**assignedLicense**的集合。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

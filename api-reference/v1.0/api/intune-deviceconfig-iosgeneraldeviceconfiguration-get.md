@@ -4,12 +4,13 @@ description: 读取 iosGeneralDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb78cfaf40f0ab6b64715e87783346e843b4fc3a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f1ba7855b0c2880f2a5c43f7c0cf6357a660916c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018902"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>获取 iosGeneralDeviceConfiguration
 

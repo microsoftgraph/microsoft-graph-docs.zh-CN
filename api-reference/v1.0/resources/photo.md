@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
-ms.openlocfilehash: 688bee72464c1e518c60720a7f9ca24da1f7d149
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 照片资源提供 driveItem 中的照片和相机属性，例如 EXIF 元数据。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: c86190768c10b04bb55f59104368089cf7c77b18
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462443"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035496"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -41,7 +44,7 @@ ms.locfileid: "32462443"
 | 属性                | 类型           | 说明
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | 表示照片拍摄的时间和日期。只读。
-| **cameraMake**          | 字符串         | 相机制造商。只读。
+| **cameraMake**          | String         | 相机制造商。只读。
 | **cameraModel**         | String         | 相机型号。只读。
 | **fNumber**             | 双精度         | 相机的 F-stop 值。只读。
 | **exposureDenominator** | 双精度         | 相机的曝光时间分数的分母。只读。

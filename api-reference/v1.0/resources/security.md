@@ -4,12 +4,13 @@ description: 安全资源是安全对象模型的入口点。 它返回单一实
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c7bf3f279e50efb451188426d030e356d55ad6be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 87bd321a3c5e66cdc5d4fdc7fcb1407d02fbca1c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034452"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 
@@ -19,9 +20,9 @@ ms.locfileid: "32579210"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出警报](../api/alert-list.md) | [通知](alert.md)集合 | 获取一个警报对象集合。 |
-| [获取通知](../api/alert-get.md) | [通知](alert.md)集合 | 获取一个警报对象。 |
-| [更新警报](../api/alert-update.md) | [通知](alert.md)集合 | 获取一个警报对象。 |
+| [列出警报](../api/alert-list.md) | [警报](alert.md)集合 | 获取一个警报对象集合。 |
+| [获取通知](../api/alert-get.md) | [警报](alert.md)集合 | 获取一个警报对象。 |
+| [更新警报](../api/alert-update.md) | [警报](alert.md)集合 | 获取一个警报对象。 |
 
 ## <a name="properties"></a>属性
 无
@@ -29,7 +30,7 @@ ms.locfileid: "32579210"
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|警报|[通知](alert.md)集合| 只读。可为空。|
+|警报|[警报](alert.md)集合| 只读。可为空。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
