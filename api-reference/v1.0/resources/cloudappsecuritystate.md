@@ -2,28 +2,31 @@
 title: cloudAppSecurityState 资源类型
 description: 包含有关云应用程序 (destinationServiceName、destinationServiceIp) 的状态信息。
 localization_priority: Normal
-ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e000d5d788a293c9aed7b702da2653f42116c0c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584857"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029713"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a><span data-ttu-id="bedec-103">cloudAppSecurityState 资源类型</span><span class="sxs-lookup"><span data-stu-id="bedec-103">cloudAppSecurityState resource type</span></span>
+# <a name="cloudappsecuritystate-resource-type"></a><span data-ttu-id="25eb8-103">cloudAppSecurityState 资源类型</span><span class="sxs-lookup"><span data-stu-id="25eb8-103">cloudAppSecurityState resource type</span></span>
 
-<span data-ttu-id="bedec-104">包含有关云应用程序 (destinationServiceName、destinationServiceIp) 的状态信息。</span><span class="sxs-lookup"><span data-stu-id="bedec-104">Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).</span></span>
+<span data-ttu-id="25eb8-104">包含有关云应用程序 (destinationServiceName、destinationServiceIp) 的状态信息。</span><span class="sxs-lookup"><span data-stu-id="25eb8-104">Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bedec-105">属性</span><span class="sxs-lookup"><span data-stu-id="bedec-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="25eb8-105">属性</span><span class="sxs-lookup"><span data-stu-id="25eb8-105">Properties</span></span>
 
-| <span data-ttu-id="bedec-106">属性</span><span class="sxs-lookup"><span data-stu-id="bedec-106">Property</span></span>     | <span data-ttu-id="bedec-107">类型</span><span class="sxs-lookup"><span data-stu-id="bedec-107">Type</span></span>        | <span data-ttu-id="bedec-108">说明</span><span class="sxs-lookup"><span data-stu-id="bedec-108">Description</span></span> |
+| <span data-ttu-id="25eb8-106">属性</span><span class="sxs-lookup"><span data-stu-id="25eb8-106">Property</span></span>     | <span data-ttu-id="25eb8-107">类型</span><span class="sxs-lookup"><span data-stu-id="25eb8-107">Type</span></span>        | <span data-ttu-id="25eb8-108">说明</span><span class="sxs-lookup"><span data-stu-id="25eb8-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="bedec-109">destinationServiceIp</span><span class="sxs-lookup"><span data-stu-id="bedec-109">destinationServiceIp</span></span>|<span data-ttu-id="bedec-110">字符串</span><span class="sxs-lookup"><span data-stu-id="bedec-110">String</span></span>|<span data-ttu-id="bedec-111">指向云应用程序/服务的连接的目标 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="bedec-111">Destination IP Address of the connection to the cloud application/service.</span></span>|
-|<span data-ttu-id="bedec-112">destinationServiceName</span><span class="sxs-lookup"><span data-stu-id="bedec-112">destinationServiceName</span></span>|<span data-ttu-id="bedec-113">字符串</span><span class="sxs-lookup"><span data-stu-id="bedec-113">String</span></span>|<span data-ttu-id="bedec-114">云应用程序/服务名称 (例如, "Salesforce"、"DropBox" 等)。</span><span class="sxs-lookup"><span data-stu-id="bedec-114">Cloud application/service name (for example "Salesforce", "DropBox", etc.).</span></span>|
-|<span data-ttu-id="bedec-115">riskScore</span><span class="sxs-lookup"><span data-stu-id="bedec-115">riskScore</span></span>|<span data-ttu-id="bedec-116">字符串</span><span class="sxs-lookup"><span data-stu-id="bedec-116">String</span></span>|<span data-ttu-id="bedec-117">提供程序生成/计算的风险分数 (云应用程序/服务)。</span><span class="sxs-lookup"><span data-stu-id="bedec-117">Provider-generated/calculated risk score of the Cloud Application/Service.</span></span> <span data-ttu-id="bedec-118">建议的值范围为 0-1, 这相当于一个百分比。</span><span class="sxs-lookup"><span data-stu-id="bedec-118">Recommended value range of 0-1, which equates to a percentage.</span></span>|
+|<span data-ttu-id="25eb8-109">destinationServiceIp</span><span class="sxs-lookup"><span data-stu-id="25eb8-109">destinationServiceIp</span></span>|<span data-ttu-id="25eb8-110">String</span><span class="sxs-lookup"><span data-stu-id="25eb8-110">String</span></span>|<span data-ttu-id="25eb8-111">指向云应用程序/服务的连接的目标 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="25eb8-111">Destination IP Address of the connection to the cloud application/service.</span></span>|
+|<span data-ttu-id="25eb8-112">destinationServiceName</span><span class="sxs-lookup"><span data-stu-id="25eb8-112">destinationServiceName</span></span>|<span data-ttu-id="25eb8-113">String</span><span class="sxs-lookup"><span data-stu-id="25eb8-113">String</span></span>|<span data-ttu-id="25eb8-114">云应用程序/服务名称 (例如, "Salesforce"、"DropBox" 等)。</span><span class="sxs-lookup"><span data-stu-id="25eb8-114">Cloud application/service name (for example "Salesforce", "DropBox", etc.).</span></span>|
+|<span data-ttu-id="25eb8-115">riskScore</span><span class="sxs-lookup"><span data-stu-id="25eb8-115">riskScore</span></span>|<span data-ttu-id="25eb8-116">String</span><span class="sxs-lookup"><span data-stu-id="25eb8-116">String</span></span>|<span data-ttu-id="25eb8-117">提供程序生成/计算的风险分数 (云应用程序/服务)。</span><span class="sxs-lookup"><span data-stu-id="25eb8-117">Provider-generated/calculated risk score of the Cloud Application/Service.</span></span> <span data-ttu-id="25eb8-118">建议的值范围为 0-1, 这相当于一个百分比。</span><span class="sxs-lookup"><span data-stu-id="25eb8-118">Recommended value range of 0-1, which equates to a percentage.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="bedec-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bedec-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="25eb8-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="25eb8-119">JSON representation</span></span>
 
-<span data-ttu-id="bedec-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bedec-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="25eb8-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="25eb8-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
