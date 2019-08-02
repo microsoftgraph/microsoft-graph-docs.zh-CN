@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 42febb704147ff8076a85df2233186a494f6fffd
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: b3d365b7fe49f7ac6c51318d69fbfd9109f50438
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049587"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062066"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1380,6 +1380,35 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除用户活动或删除无效数据。 (DELETE /me/activities/{id})。
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。 (DELETE /me/activities/{id}/historyItems/{id})。
 
+---
+
+## <a name="feature-rollout-policy-permissions"></a>功能推出策略权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | 读取所有功能推出策略 | 允许应用代表已登录用户读取所有功能推出策略。 | 是 | 否 |
+| _Policy.ReadWrite.FeatureRollout_ | 读取和写入所有功能推出策略 | 允许应用代表已登录用户读取和写入所有功能推出策略。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+无。
+
+### <a name="remarks"></a>说明
+工作或学校帐户必须是租户的全局管理员。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+以下使用对两种委派权限均有效：
+
+* _Policy.Read.All_：读取所有功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_：读取和写入所有功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
 ## <a name="permission-scenarios"></a>权限方案
 
 本节介绍一些面向组织中 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源的常见方案。这些表显示了应用执行方案要求的特定操作所需的权限。请注意，在某些情况下，应用执行特定操作的能力取决于权限是应用程序权限还是委派权限。如果是委派权限，应用的有效权限还将取决于组织内已登录用户的特权。有关详细信息，请参阅[委派权限、应用程序权限和有效权限](auth/auth-concepts.md#microsoft-graph-permissions)。
@@ -1408,3 +1437,4 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 | 应用想要读取和写入所有 Office 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，同时能够更新组成员（若是所有者）。  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
 | 应用想要发现（找到）Office 365 组。它允许用户搜索特定组，然后从枚举列表中选择一个组，从而允许用户加入组。     | _Group.ReadWrite.All_ | 读取和写入所有组|
 | 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|
+

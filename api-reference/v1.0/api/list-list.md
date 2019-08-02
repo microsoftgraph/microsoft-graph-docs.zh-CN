@@ -5,12 +5,14 @@ ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d5ead524312fe1beffc561d8e936c8742c0e723a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 获取网站列表的集合。
+doc_type: apiPageType
+ms.openlocfilehash: 060234e49943d01b1e4e992ddc41c5872ab1f775
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025538"
 ---
 # <a name="enumerate-lists-in-a-site"></a>枚举网站中的列表
 

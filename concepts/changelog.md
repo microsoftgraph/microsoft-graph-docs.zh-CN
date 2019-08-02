@@ -1,14 +1,14 @@
 ---
 title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
-author: ''
+author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 1b20fde223a681cc6fb5a424eb2a914824c9ed81
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: dad880cc84a1c8574d4f697ed283a0fc3af7c198
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049594"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062073"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -71,14 +71,14 @@ ms.locfileid: "36049594"
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项 | v1.0 | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，用于获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-1.0) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) 资源。 |
-| 添加项 | beta | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，用于获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-beta) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) 资源。 |
+| 添加项 | Beta | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ 和 _Organization.ReadWrite.All_，以获取并更新[组织 API](/graph/api/resources/organization?view=graph-rest-beta) 资源以及获取 [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) 资源。 |
 | 添加项 | v1.0 | 在[组](/graph/api/group-delta?view=graph-rest-1.0)中添加了 [group:validateProperties 函数](/graph/api/group-validateproperties?view=graph-rest-1.0)和 [directoryobject:validateProperties 函数](/graph/api/group-validateproperties?view=graph-rest-1.0)，用于验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
 | 添加项 | Beta |向资源类型 [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta) 添加了“version”、“discoveryDateTime”和“discoverabilities”属性。|
 | 添加项 | Beta |添加了 [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) 方法。|
-| 添加项 | beta | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_，以获取和更新[管理单元 API](/graph/api/resources/administrativeunit?view=graph-rest-beta) 资源。 |
+| 添加项 | Beta | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_，以获取和更新[管理单元 API](/graph/api/resources/administrativeunit?view=graph-rest-beta) 资源。 |
 | 添加项 | v1.0 | 添加了[新的委派和应用程序权限](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ 和 _RoleManagement.ReadWrite.Directory_以获取和更新[目录角色 API](/graph/api/resources/directoryRole?view=graph-rest-1.0) 资源并获取[目录角色模板 API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) 资源。 |
-| 添加项 | beta | 添加了 [new application permission](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_，以在[访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta) 中执行获取、创建、更新和删除操作。 |
-
+| 添加项 | Beta | 添加了[新的应用程序权限](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_，以在[访问评审 API](/graph/api/resources/accessreviews-root?view=graph-rest-beta) 中执行获取、创建、更新和删除操作。 |
+| 添加项 | Beta | 向[目录](/graph/api/resources/directory?view=graph-rest-beta)资源添加了新的资源类型 [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta)。 功能推出策略可帮助租户管理员在为整个组织启用一些功能之前，针对特定组试用这些功能。|
 
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
