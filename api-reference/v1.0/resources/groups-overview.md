@@ -4,12 +4,13 @@ description: 组是用户和其他主体的集合，他们共享对 Microsoft �
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 46d8f1db9a2c3c12add07787d62fe02c588cd6ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 7e523fd27aabc5c1051a45f80b5505db2dd51e16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570832"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032422"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -71,7 +72,7 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
 
 安全组用于控制用户对资源的访问。 通过检查用户是否是安全组的成员，应用可以在用户尝试访问应用中的某些安全资源时决定是否授权。 安全组的成员可以是用户和其他安全组。
 
-启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。  启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/zh-CN/library/bb123521%28v=exchg.160%29.aspx)。
+启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。  启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx)。
 
 ### <a name="security-group-example"></a>安全组示例
 
@@ -118,7 +119,7 @@ POST https://graph.microsoft.com/beta/groups
 
 若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 
-> **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/zh-CN/pricing/details/active-directory/) 或更高层拥有许可证。
+> **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) 或更高层拥有许可证。
 
 ## <a name="other-types-of-groups"></a>其他类型的组
 

@@ -4,12 +4,13 @@ description: 检索用户对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 93bb0768a9912a8ea0991e52d01428d9569c663b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5e9c2961baff5cc34d280dac1f318ac879553245
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886200"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027067"
 ---
 # <a name="get-a-user"></a>获取用户
 

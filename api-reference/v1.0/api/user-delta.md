@@ -4,12 +4,13 @@ description: 获得新建、更新或删除的用户，无需对整个用户集�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5782a5d5843a423e746e3104085e73cfaf774c0a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 161f1951883d05e1e39957e30c64eb56ee99931a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027172"
 ---
 # <a name="user-delta"></a>user: delta
 

@@ -3,12 +3,14 @@ title: 使用 Microsoft Graph 中的 SharePoint 网站
 description: Microsoft Graph 中的 SharePoint API 支持以下核心情形：
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: de3c4b91f0e53a9a4efaf135fc91364b1802b2ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: b276193418573cd93baa8459564d22dde73e8bf1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034270"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 
