@@ -2,15 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Drive
+title: 驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a6a406ef5cb011e82d14c54ea0a35cd93eaab837
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
+doc_type: resourcePageType
+ms.openlocfilehash: ba40d2ac0605a255b0b7df05db1e5bebb68c2e42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562836"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030539"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 

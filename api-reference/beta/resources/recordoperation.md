@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 00b05cd86eeb9cf8be26cdc09fb8a9b254b510db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23fb116a80dcd90206d7a0ae5eeec5d756272c3d
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008801"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36061996"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -27,8 +27,8 @@ RecordOperation 类型
 | createdDateTime                | DateTimeOffset              | 创建录制的时间。                                                                                                          |
 | id                             | String                      | 服务器操作 id。只读。 由服务器生成。                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | 操作的上一操作的时间。                                                                                                     |
-| recordResourceAccessToken      | String                      | 检索录制所需的访问令牌。                                                                                              |
-| recordResourceLocation         | String                      | 录制所在的位置。                                                                                                      |
+| recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
+| recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。 由服务器生成。                                                                                             |
 | status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 由服务器生成。                                                 |
 
@@ -53,8 +53,8 @@ RecordOperation 类型
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceAccessToken": "String",
-  "recordResourceLocation": "String",
+  "recordingAccessToken": "String",
+  "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -71,8 +71,8 @@ RecordOperation 类型
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceAccessToken": "<access-token>",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "recordingAccessToken": "<access-token>",
+  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

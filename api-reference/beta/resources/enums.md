@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 21723975a73ca7288e65e321a3eaeb323dad77b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972094"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062054"
 ---
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值
 
@@ -839,6 +839,14 @@ ms.locfileid: "35972094"
 |高效|
 |紧急|
 
+### <a name="stagedfeaturename-values"></a>stagedFeatureName 值
+
+|成员|说明|
+|:---|:---|
+|passthroughAuthentication|传递身份验证|
+|seamlessSso|无缝单一登录|
+|passwordHashSync|密码哈希同步|
+
 ### <a name="tokenissuertype-values"></a>tokenIssuerType 值
 
 |Member|
@@ -865,3 +873,4 @@ ms.locfileid: "35972094"
 |登录|
 |user|
 |向 unknownfuturevalue|
+

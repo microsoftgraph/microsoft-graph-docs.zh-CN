@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ca1a83628ebbb5da2bfec41307b53e01c381883
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc5c80e633055eb6cc1d1914a756bfb80f4332f9
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944456"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062003"
 ---
 # <a name="call-playprompt"></a>调用: playPrompt
 
@@ -19,6 +19,9 @@ ms.locfileid: "35944456"
 在呼叫中播放提示。
 
 有关如何处理操作的详细信息, 请参阅[commsOperation](../resources/commsoperation.md)
+
+> [!Note]
+> 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**playPrompt**操作。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,7 +37,6 @@ ms.locfileid: "35944456"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
-POST /applications/{id}/calls/{id}/playPrompt
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,9 +49,9 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[提示符](../resources/prompt.md)集合| 目前, 仅支持单个提示符, 类型[MediaPrompt](../resources/mediaprompt.md) 。|
-|loop|布尔值| 循环值。 如果为 true, 则表示无限循环。 默认值为 false。 |
-|适用|String|客户端上下文。|
+|提示|MediaPrompt 集合| 目前, 仅支持单个提示符, 类型[MediaPrompt](../resources/mediaprompt.md) 。|
+|loop|Boolean| 循环值。 如果为 True, 则表示无限循环。 默认值为 false。 |
+|适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
 
 ## <a name="response"></a>响应
 如果成功, 此方法在响应`200 OK`正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
@@ -94,6 +96,7 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>响应
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
