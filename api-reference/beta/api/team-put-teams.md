@@ -4,12 +4,13 @@ description: 从组新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9ffcde0aac75ace6438f5187dd2c63696a3ace74
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: b4b40190678813233c0755463e3344c21579913c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990825"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 

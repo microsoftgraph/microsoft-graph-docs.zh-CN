@@ -2,12 +2,15 @@
 title: singleValueLegacyExtendedProperty 资源类型
 description: '包含单个值的扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: f865da1a8a4211ac99a70881b2851b38b8e72727
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 11fb56ec66ffb74a284f0636d4577f911e9993d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549641"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034186"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty 资源类型
 
@@ -20,7 +23,7 @@ ms.locfileid: "32549641"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[帖子](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | 受支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)，但没有 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **singleValueLegacyExtendedProperty**。 |
+|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | 受支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)，但没有 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **singleValueLegacyExtendedProperty**。 |
 |[获取](../api/singlevaluelegacyextendedproperty-get.md) |一个或多个受支持的资源实例（[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md)、[contactFolder](../resources/contactfolder.md) 或[post](../resources/post.md) 组），或通过 [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 对象扩展的一个此类的实例。 |使用 `$expand` 或 `$filter` 获取具有扩展属性的资源实例。|
 
 ## <a name="properties"></a>属性

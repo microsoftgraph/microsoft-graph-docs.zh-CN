@@ -4,12 +4,13 @@ description: 在 chatMessage 中列出所有托管图像。
 localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2511afe199ecadf6d206037e2820708abe737ce8
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: apiPageType
+ms.openlocfilehash: 351e473e0d97ec23c1a4b859d637c40a3e49b7ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35085810"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943552"
 ---
 # <a name="list-chatmessagehostedimages-in-a-chatmessage"></a>在 chatMessage 中列出 chatMessageHostedImages
 

@@ -4,12 +4,13 @@ description: 然后可将这些类别应用于 Intune Azure 控制台中的设�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a0bb1e994bcf42ba91a55fdfc75946204d1f9b06
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 269b022692e04ad3f646b25c3f78045ba42a51a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585331"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036986"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
@@ -29,10 +30,10 @@ ms.locfileid: "32585331"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备类别的唯一标识符。 只读。|
+|id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|description|字符串|设备类别的说明（可选）。|
+|说明|String|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无

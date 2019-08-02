@@ -3,12 +3,14 @@ title: averageComparativeScore 资源类型
 description: 包含基于不同范围的各种不同分数。
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 59faa1c3dcf3f7f2b70807a74878dab796ae4d54
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f128fd22562889a5a537f3815a4003aec9bfc8a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030014"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>averageComparativeScore 资源类型
 
@@ -18,7 +20,7 @@ ms.locfileid: "33629325"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|基本|字符串|范围类型。 可能的值包括 `AllTenants`、`TotalSeats`、`IndustryTypes`。|
+|基本|String|范围类型。 可能的值包括 `AllTenants`、`TotalSeats`、`IndustryTypes`。|
 |averageScore|双精度|指定基准中的平均分数。|
 
 ## <a name="json-representation"></a>JSON 表示形式

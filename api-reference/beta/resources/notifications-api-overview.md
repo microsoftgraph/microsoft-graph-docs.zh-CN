@@ -3,12 +3,14 @@ title: 使用 Microsoft Graph 的通知 REST API
 description: 你可以使用 Microsoft Graph 中的通知 API 向用户发送推送通知。 只需定位要向其发送通知的用户帐户，平台即可向所有设备终结点发送通知。 将通过委派权限和[通知权限]( /graph/permissions_reference)代表用户执行通知 API 请求，这两种权限可与 Microsoft 帐户或工作或学校帐户结合使用。
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 28aa795b1df9b2f4817c69332dd8bc9bf3afb172
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: conceptualPageType
+author: ''
+ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422519"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009585"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>使用 Microsoft Graph 的通知 REST API
 

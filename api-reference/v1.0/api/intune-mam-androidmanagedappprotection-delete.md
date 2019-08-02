@@ -4,12 +4,13 @@ description: 删除 androidManagedAppProtection。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1cac72de8c0d2745b15e6b0582f0628c1b68648
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bef862835d9b18cef8ec5bb2a471f0882836e7cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458794"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020771"
 ---
 # <a name="delete-androidmanagedappprotection"></a>删除 androidManagedAppProtection
 

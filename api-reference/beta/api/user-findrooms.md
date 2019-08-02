@@ -4,12 +4,13 @@ description: '获取用户租户中或特定房间列表中的所有会议室。
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8a106d6e7f33dd8da4efb7d78a3dee589d2af97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 649bc89181071351ead84bde71aaba573ad812ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867706"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987836"
 ---
 # <a name="user-findrooms"></a>用户：findRooms
 

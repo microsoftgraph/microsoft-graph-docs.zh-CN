@@ -4,12 +4,13 @@ description: . 已删除的项目将保留最多 30 天的还原时间。 30 天
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 09f6059ca10b64e30aab06f4dd9ee4f3dc281ef4
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 627ced59fa87a8e950af96173a807da4d500f428
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032744"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 

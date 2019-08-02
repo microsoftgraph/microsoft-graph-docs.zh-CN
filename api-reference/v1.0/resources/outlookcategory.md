@@ -4,12 +4,13 @@ description: 表示用户可以对 Outlook 项目（如邮件和事件）进行�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 490ecaf2e6303cc943646dbed99b3202b8d57525
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 11e3e67a9a8c4a6a9b9bab807985711d246eb0cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462647"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035684"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 
@@ -85,7 +86,7 @@ ms.locfileid: "32462647"
 |[Get category](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |获取指定的 **outlookCategory** 对象的属性和关系。|
 |[Create](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |在用户主类别列表中创建 **outlookCategory** 对象。|
 |[Update](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |更新指定 **outlookCategory** 对象的可写属性 **color**。 |
-|[Delete](../api/outlookcategory-delete.md) | 无 |删除指定的 **outlookCategory** 对象。 |
+|[删除](../api/outlookcategory-delete.md) | 无 |删除指定的 **outlookCategory** 对象。 |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

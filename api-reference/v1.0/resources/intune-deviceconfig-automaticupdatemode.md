@@ -4,12 +4,13 @@ description: 自动更新模式的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fd45ff85cbab934aa2549f13ee3e6671c65f9ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 3a0cc2d3918573fca6480c6eecd07889534cda4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575175"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028572"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -22,10 +23,10 @@ ms.locfileid: "32575175"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |notifyDownload|1|下载时通知。|
-|autoInstallAtMaintenanceTime|2 |在维护时间自动安装。|
-|autoInstallAndRebootAtMaintenanceTime|3 |在维护时间自动安装和重启。|
-|autoInstallAndRebootAtScheduledTime|4 |在计划的时间自动安装和重启。|
-|autoInstallAndRebootWithoutEndUserControl|5 |在没有最终用户控件的情况下自动安装和重启|
+|autoInstallAtMaintenanceTime|双面|在维护时间自动安装。|
+|autoInstallAndRebootAtMaintenanceTime|第三章|在维护时间自动安装和重启。|
+|autoInstallAndRebootAtScheduledTime|4|在计划的时间自动安装和重启。|
+|autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控件的情况下自动安装和重启|
 
 
 

@@ -4,12 +4,13 @@ description: 表示人员类型。
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 270fa800242ae7a25ed0f5959a97b6a70f7cedd3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 36310a469c5ed9289637f9701ce983db12b14fbf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462457"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035488"
 ---
 # <a name="persontype-resource-type"></a>personType 资源类型
 
@@ -38,7 +39,7 @@ ms.locfileid: "32462457"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|class|字符串|数据源的类型，例如 Person。|
+|class|String|数据源的类型，例如 Person。|
 |subclass|String|数据源的次要类型，例如 OrganizationUser。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

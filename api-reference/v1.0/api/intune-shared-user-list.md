@@ -4,12 +4,13 @@ description: 列出 user 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b3981047311673be8c640a35dbc862416427fa31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 97575c3d323641fa0a4f86f92bb8290ad0d7c815
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025783"
 ---
 # <a name="list-users"></a>列出用户
 

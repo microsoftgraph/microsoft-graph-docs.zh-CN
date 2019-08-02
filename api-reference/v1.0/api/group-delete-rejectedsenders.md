@@ -4,12 +4,13 @@ description: 从 "拒绝的发件人" 列表中删除用户或组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f15fce9cb8d3d28e39427d1fa4d4a185b3ebde10
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 892be0dcdf3bc01751622a58ad351dccb52526c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890744"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016423"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 从 "拒绝的发件人" 列表中删除用户或组。

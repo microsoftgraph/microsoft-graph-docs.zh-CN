@@ -5,16 +5,17 @@ title: createAction 资源类型
 description: CreateAction 对象提供有关项目创建的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 95a09dd0e27cac0189d2413bcb0f86efa5371d82
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 755cf1f7d58dc8b1404ff2b3f3a606380066bf6c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970634"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029580"
 ---
 # <a name="createaction-resource-type"></a>createAction 资源类型
 
-[activity] [**ItemActivity**]上的**createAction**资源存在指示活动创建了一个项目。
+[**ItemActivity**][activity]上的**createAction**资源存在指示活动创建了一个项目。
 
 **注意:** 此资源当前为空。 将来可能会使用其他属性填充它。
 

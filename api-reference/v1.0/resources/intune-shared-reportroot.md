@@ -4,12 +4,13 @@ description: 表示一个历史记录报告实例的资源。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 98f29935304c5eac2262049f76a9bcf006aa694b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8a8fa8011ad4550ec80acd0b4d6d2159f10647de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571819"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036860"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 

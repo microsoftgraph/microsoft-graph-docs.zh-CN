@@ -4,12 +4,13 @@ description: 获取范围中包含的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ab08c923d7337f53b96ec4a46246a7d8087794b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 931161995bb84c5b98ed6c6f500df6cb47563999
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582400"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025237"
 ---
 # <a name="range-row"></a>Range:Row
 

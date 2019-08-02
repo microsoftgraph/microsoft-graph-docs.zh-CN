@@ -5,12 +5,13 @@ title: itemActivity 资源类型
 description: ItemActivity 对象提供有关项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 98ae9e4881de18c94490469b10df43b2aaf58140
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: resourcePageType
+ms.openlocfilehash: ddd478794cc3ad87ce29513c45455a9ba2911a52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536685"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036727"
 ---
 # <a name="itemactivity-resource-type"></a>itemActivity 资源类型
 

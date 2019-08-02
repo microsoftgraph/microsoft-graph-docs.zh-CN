@@ -1,19 +1,20 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat 资源类型
-description: '**plannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图 (由任务分配到的用户组织的视图) 中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。'
+description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图 (由任务分配到的用户组织的视图) 中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d59c8c45c998012cacdf4616f1e31f490bec5791
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c85a68a3a9c17a35bc94ee32ebff156198029bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462310"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035348"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat 资源类型
 
-**plannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图 (由任务分配到的用户组织的视图) 中正确呈现任务的信息。 每个[任务](plannertask.md)都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。
+**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图 (由任务分配到的用户组织的视图) 中正确呈现任务的信息。 每个[任务](plannertask.md)都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。
 
 
 ## <a name="methods"></a>方法

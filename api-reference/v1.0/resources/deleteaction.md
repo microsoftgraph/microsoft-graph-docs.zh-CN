@@ -5,16 +5,17 @@ title: deleteAction 资源类型
 description: DeleteAction 对象提供有关删除项目的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ba5004c17f1cc71f66420a81b5eb66603df00eee
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 93f605e74a0a483a94593a9aaa40d6fd30efe914
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970659"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032730"
 ---
 # <a name="deleteaction-resource-type"></a>deleteAction 资源类型
 
-[activity] [**ItemActivity**]上的**deleteAction**资源是否存在指示活动已删除项目。
+[**ItemActivity**][activity]上的**deleteAction**资源是否存在指示活动已删除项目。
 
 >**注意:** 项目活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 

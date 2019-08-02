@@ -4,12 +4,13 @@ description: 表示 Azure Active Directory 用户对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a7a6c87b5c073e00b660db807ff38c454c302d94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d8fc3604329a5062a8fe1afb90c2ac64f52f0bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571846"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036832"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 

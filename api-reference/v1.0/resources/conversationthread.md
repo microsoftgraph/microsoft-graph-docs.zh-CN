@@ -4,12 +4,13 @@ description: conversationThread 是 帖子 集合。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a1a45f5ac6d26b58f1179616d3a6b9b76c6c1618
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 59e54733a0ece0c6fa4bef31282cf30939b676ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549886"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032821"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 conversationThread 是 [帖子](post.md) 集合。
@@ -20,7 +21,7 @@ conversationThread 是 [帖子](post.md) 集合。
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 |获取某个组的所有线程。|
+|[列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 |获取组的所有线程。|
 |[创建线程](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |通过首先创建一个线程，启动一个新对话。在组中创建新对话、对话线程和帖子。|
 |[获取 conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |获取属于某个组的特定线程。 |
 |[更新](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |更新 conversationThread 对象 |
@@ -36,15 +37,15 @@ conversationThread 是 [帖子](post.md) 集合。
 |ccRecipients|[recipient](recipient.md) collection|抄送：线程的收件人。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。||
 |hasAttachments|Boolean|指示此线程中的任意帖子是否至少具有一个附件。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |uniqueSenders|String collection|向此线程发送邮件的所有用户。|
 |preview|String|来自此对话中最新帖子的正文的简短摘要。|
-|resource.islocked|Boolean|指示线程是否已锁定。|
+|Resource.islocked|Boolean|指示线程是否已锁定。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|posts|[帖子](post.md) 集合| 只读。可为 NULL。|
+|posts|[帖子](post.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -4,12 +4,13 @@ description: 在聊天中检索一条消息。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d2335ea5e98816c86aff400685663320afa0325
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6de6859255afcb3437491854c2795aa83507b6f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943601"
 ---
 # <a name="get-chatmessage"></a>获取 chatMessage
 

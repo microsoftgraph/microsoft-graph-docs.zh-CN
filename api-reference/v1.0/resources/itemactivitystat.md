@@ -5,12 +5,13 @@ title: itemActivityStat 资源类型
 description: ItemActivityStat 对象提供有关项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3af10bba565585341d04cdc47702e18e71d8accd
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: bf4396e6da5c56b19d33d7a914d864cb6dd54592
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970640"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036671"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
