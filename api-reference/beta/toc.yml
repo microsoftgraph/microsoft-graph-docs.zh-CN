@@ -7977,6 +7977,23 @@
                   href: api/domain-update.md
                 - name: 验证域
                   href: api/domain-verify.md
+            - name: 功能推出策略
+              href: resources/featurerolloutpolicy.md
+              items:
+                - name: 列表
+                  href: api/directory-list-featurerolloutpolicies.md
+                - name: 获取
+                  href: api/featurerolloutpolicy-get.md
+                - name: 创建
+                  href: api/directory-post-featurerolloutpolicies.md
+                - name: 更新
+                  href: api/featurerolloutpolicy-update.md
+                - name: 删除
+                  href: api/featurerolloutpolicy-delete.md
+                - name: 创建 appliesTo
+                  href: api/featurerolloutpolicy-post-appliesto.md
+                - name: 删除 appliesTo
+                  href: api/featurerolloutpolicy-delete-appliesto.md
             - name: 身份保护
               href: resources/identityprotection-root.md
               items:
@@ -8373,7 +8390,7 @@
             - name: 信任框架策略
               href: resources/trustframeworkpolicy.md
               items:
-                - name: List
+                - name: 列出
                   href: api/trustframework-list-trustframeworkpolicies.md
                 - name: 创建
                   href: api/trustframework-post-trustframeworkpolicy.md
