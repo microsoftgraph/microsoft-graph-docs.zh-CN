@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4ace5e1a1941077b798eb65df6585dd6cff71369
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: de3a18d367cb0b02b70a43ef338abc34acc0e076
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931088"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174699"
 ---
 ```javascript
 
@@ -21,15 +21,16 @@ const playPromptOperation = {
     {
       @odata.type: "#microsoft.graph.mediaPrompt",
       mediaInfo: {
+        @odata.type: "#microsoft.graph.mediaInfo",
         uri: "https://cdn.contoso.com/beep.wav",
         resourceId: "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
-      loop: 5
-    }
-  ]
+    },
+  ],
+  loop: false
 };
 
-let res = await client.api('/app/calls/{id}/playPrompt')
+let res = await client.api('/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt')
     .version('beta')
     .post(playPromptOperation);
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 89620eac9522fd674054b32a5e741366c90f80a8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 3b31ce632404304671f4ac1b6ec4b1e23e5ffe13
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716854"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174707"
 ---
 ```objc
 
@@ -22,7 +22,7 @@ NSMutableArray *activityGroupNamesList = [[NSMutableArray alloc] init];
 [tiIndicator setActivityGroupNames:activityGroupNamesList];
 [tiIndicator setConfidence: 0];
 [tiIndicator setDescription:@"This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."];
-[tiIndicator setExpirationDateTime: "2019-03-02T00:43:37.5031462+03:00"];
+[tiIndicator setExpirationDateTime: "2019-03-01T21:43:37.5031462+00:00"];
 [tiIndicator setExternalId:@"Test--8586509942679764298MS501"];
 [tiIndicator setFileHashType: [MSGraphFileHashType sha256]];
 [tiIndicator setFileHashValue:@"aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313"];

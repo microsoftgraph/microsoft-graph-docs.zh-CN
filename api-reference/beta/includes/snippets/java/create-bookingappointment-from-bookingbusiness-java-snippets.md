@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5b3555dfed8930cd547cdbc4e8f4b745dde5a080
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 444e5fa595bb21819107b865dafc6dde7188daf3
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865614"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174701"
 ---
 ```java
 
@@ -42,13 +42,13 @@ bookingAppointment.customerNotes = "Please be on time.";
 bookingAppointment.customerPhone = "213-555-0199";
 DateTimeTimeZone end = new DateTimeTimeZone();
 end.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.dateTimeTimeZone"));
-end.dateTime = "2018-05-01T15:30:00+03:00";
+end.dateTime = "2018-05-01T12:30:00+00:00";
 end.timeZone = "UTC";
 bookingAppointment.end = end;
 bookingAppointment.invoiceAmount = 10.0;
 DateTimeTimeZone invoiceDate = new DateTimeTimeZone();
 invoiceDate.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.dateTimeTimeZone"));
-invoiceDate.dateTime = "2018-05-01T15:30:00+03:00";
+invoiceDate.dateTime = "2018-05-01T12:30:00+00:00";
 invoiceDate.timeZone = "UTC";
 bookingAppointment.invoiceDate = invoiceDate;
 bookingAppointment.invoiceId = "1001";
@@ -113,7 +113,7 @@ bookingAppointment.serviceName = "Catered bento";
 bookingAppointment.serviceNotes = "Customer requires punctual service.";
 DateTimeTimeZone start = new DateTimeTimeZone();
 start.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.dateTimeTimeZone"));
-start.dateTime = "2018-05-01T15:00:00+03:00";
+start.dateTime = "2018-05-01T12:00:00+00:00";
 start.timeZone = "UTC";
 bookingAppointment.start = start;
 

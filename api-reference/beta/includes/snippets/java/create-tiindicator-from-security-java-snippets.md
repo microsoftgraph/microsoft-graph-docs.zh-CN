@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 12e5cbf9cd9db67be02712dd673ccb0435126d4a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: a0add8657c731f275e2c56201c12e8d8b5dab84d
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868103"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174706"
 ---
 ```java
 
@@ -17,7 +17,7 @@ LinkedList<String> activityGroupNamesList = new LinkedList<String>();
 tiIndicator.activityGroupNames = activityGroupNamesList;
 tiIndicator.confidence = 0;
 tiIndicator.description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.";
-tiIndicator.expirationDateTime = "2019-03-02T00:43:37.5031462+03:00";
+tiIndicator.expirationDateTime = "2019-03-01T21:43:37.5031462+00:00";
 tiIndicator.externalId = "Test--8586509942679764298MS501";
 tiIndicator.fileHashType = FileHashType.SHA256;
 tiIndicator.fileHashValue = "aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313";
