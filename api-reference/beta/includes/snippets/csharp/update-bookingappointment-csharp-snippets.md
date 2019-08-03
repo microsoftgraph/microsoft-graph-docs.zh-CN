@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 111196470cb8727425e2dc22cef0a75f45fe18c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 84e8ccd39bd688965351d6eae5b4785c55c45b4d
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865963"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174702"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var bookingAppointment = new BookingAppointment
         {
             {"@odata.type","#microsoft.graph.dateTimeTimeZone"}
         },
-        DateTime = "2018-05-06T15:30:00+03:00",
+        DateTime = "2018-05-06T12:30:00+00:00",
         TimeZone = "UTC"
     },
     InvoiceDate = new DateTimeTimeZone
@@ -32,7 +32,7 @@ var bookingAppointment = new BookingAppointment
         {
             {"@odata.type","#microsoft.graph.dateTimeTimeZone"}
         },
-        DateTime = "2018-05-06T15:30:00+03:00",
+        DateTime = "2018-05-06T12:30:00+00:00",
         TimeZone = "UTC"
     },
     Start = new DateTimeTimeZone
@@ -41,7 +41,7 @@ var bookingAppointment = new BookingAppointment
         {
             {"@odata.type","#microsoft.graph.dateTimeTimeZone"}
         },
-        DateTime = "2018-05-06T15:00:00+03:00",
+        DateTime = "2018-05-06T12:00:00+00:00",
         TimeZone = "UTC"
     }
 };

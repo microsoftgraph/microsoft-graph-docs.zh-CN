@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2a1ce0cce64b3edc383edcc226550ffa9973cdc7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 38e5eed34ae97179be5f84b891bff807ed726e8e
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716873"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174710"
 ---
 ```objc
 
@@ -24,7 +24,7 @@ NSMutableArray *activityGroupNamesList = [[NSMutableArray alloc] init];
 [value setActivityGroupNames:activityGroupNamesList];
 [value setConfidence: 0];
 [value setDescription:@"This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."];
-[value setExpirationDateTime: "2019-03-02T00:44:03.1668987+03:00"];
+[value setExpirationDateTime: "2019-03-01T21:44:03.1668987+00:00"];
 [value setExternalId:@"Test--8586509942423126760MS164-0"];
 [value setFileHashType: [MSGraphFileHashType sha256]];
 [value setFileHashValue:@"b555c45c5b1b01304217e72118d6ca1b14b7013644a078273cea27bbdc1cf9d6"];
@@ -44,7 +44,7 @@ NSMutableArray *activityGroupNamesList = [[NSMutableArray alloc] init];
 [value setActivityGroupNames:activityGroupNamesList];
 [value setConfidence: 0];
 [value setDescription:@"This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."];
-[value setExpirationDateTime: "2019-03-02T00:44:03.1748779+03:00"];
+[value setExpirationDateTime: "2019-03-01T21:44:03.1748779+00:00"];
 [value setExternalId:@"Test--8586509942423126760MS164-1"];
 [value setFileHashType: [MSGraphFileHashType sha256]];
 [value setFileHashValue:@"1796b433950990b28d6a22456c9d2b58ced1bdfcdf5f16f7e39d6b9bdca4213b"];

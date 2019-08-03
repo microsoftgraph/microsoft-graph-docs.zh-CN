@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5e9093fd8f1b77dfd2c292918c4292c98f2943ff
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 315c81f5940024112bb1d8af7ade7b8fcfaef72e
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933821"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174698"
 ---
 ```javascript
 
@@ -31,7 +31,7 @@ const recordOperation = {
   initialSilenceTimeoutInSeconds: 5,
   maxSilenceTimeoutInSeconds: 2,
   playBeep: true,
-  stopTones: [ "#", "11", "*" ]
+  stopTones: [ "#", "1", "*" ]
 };
 
 let res = await client.api('/app/calls/{id}/record')

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0bf3317e5db80342a005ea755356386de19d500e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 051d4c97968efa1b2ba32f0aaa5732d745941f64
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709908"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36174704"
 ---
 ```objc
 
@@ -18,15 +18,15 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphBookingAppointment *bookingAppointment = [[MSGraphBookingAppointment alloc] init];
 MSGraphDateTimeTimeZone *end = [[MSGraphDateTimeTimeZone alloc] init];
-[end setDateTime: "2018-05-06T15:30:00+03:00"];
+[end setDateTime: "2018-05-06T12:30:00+00:00"];
 [end setTimeZone:@"UTC"];
 [bookingAppointment setEnd:end];
 MSGraphDateTimeTimeZone *invoiceDate = [[MSGraphDateTimeTimeZone alloc] init];
-[invoiceDate setDateTime: "2018-05-06T15:30:00+03:00"];
+[invoiceDate setDateTime: "2018-05-06T12:30:00+00:00"];
 [invoiceDate setTimeZone:@"UTC"];
 [bookingAppointment setInvoiceDate:invoiceDate];
 MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
-[start setDateTime: "2018-05-06T15:00:00+03:00"];
+[start setDateTime: "2018-05-06T12:00:00+00:00"];
 [start setTimeZone:@"UTC"];
 [bookingAppointment setStart:start];
 
