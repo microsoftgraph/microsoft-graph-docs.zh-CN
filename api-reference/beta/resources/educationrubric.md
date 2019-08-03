@@ -1,0 +1,85 @@
+---
+title: educationRubric 资源类型
+description: 可附加到工作分配的评分 rubric
+localization_priority: Normal
+author: dipakboyed
+ms.prod: education
+doc_type: resourcePageType
+ms.openlocfilehash: b43b611465af4dabb62d9dd741eb9a8670f241b9
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173235"
+---
+# <a name="educationrubric-resource-type"></a>educationRubric 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+可附加到工作分配的评分 rubric。 Rubric 与**educationUser** (教师) 相关联, 并附加到一个或多个**educationAssignment**资源。 
+
+有关详细信息, 请参阅[教育版 rubric 概述](https://developer.microsoft.com/graph/docs/concepts/education-rubric-overview)。
+
+## <a name="methods"></a>方法
+
+| 方法       | 返回类型 | 说明 |
+|:-------------|:------------|:------------|
+| [获取 educationRubric](../api/educationrubric-get.md) | [educationRubric](educationrubric.md) | 读取 educationRubric 对象的属性和关系。 |
+| [更新 educationRubric](../api/educationrubric-update.md) | [educationRubric](educationrubric.md) | 更新 educationRubric 对象。 |
+| [删除 educationRubric](../api/educationrubric-delete.md) | 无 | 删除 educationRubric 对象。 |
+
+## <a name="properties"></a>属性
+
+| 属性     | 类型        | 说明 |
+|:-------------|:------------|:------------|
+|createdBy|[identitySet](identityset.md)|创建此资源的用户。|
+|createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|说明|[itemBody](itembody.md)|此 rubric 的说明。|
+|displayName|String|此 rubric 的名称。|
+|评分|[educationAssignmentGradeType](educationassignmentgradetype.md)|此 rubric 的评分类型--null 表示无点 rubric, 或[educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md)为点 rubric。|
+|lastModifiedBy|[identitySet](identityset.md)|修改资源的最后一个用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|等级|[rubricLevel](rubriclevel.md)集合|构成此 rubric 的级别的集合。|
+|特质|[rubricQuality](rubricquality.md)集合|构成此 rubric 的质量的集合。|
+
+## <a name="relationships"></a>关系
+
+无
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationRubric",
+  "baseType": "",
+  "keyProperty": "id"
+}-->
+
+```json
+{
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
+  "displayName": "String",
+  "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "levels": [{"@odata.type": "microsoft.graph.rubricLevel"}],
+  "qualities": [{"@odata.type": "microsoft.graph.rubricQuality"}]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationRubric resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

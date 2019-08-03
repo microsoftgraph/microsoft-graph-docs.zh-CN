@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 18661c6d0eb0269f429fe22203b59b4f6862f21c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef866debcf2c70862aae30048f68bd026c4e5250
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972801"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172792"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>educationAssignmentPointsGradeType 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "35972801"
 
 ```json
 {
-  "maxPoints": "Single"
+  "maxPoints": "Double"
 }
 
 ```

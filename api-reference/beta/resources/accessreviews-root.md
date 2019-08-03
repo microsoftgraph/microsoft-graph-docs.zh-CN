@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 708c8c33d4ae69007a7a1e1e15af71ab69b97e78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013505"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173053"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -69,8 +69,8 @@ ms.locfileid: "36013505"
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或特权角色管理员 |
 |Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或特权角色管理员 |
-|组或应用的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或用户管理员 |
-|组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview.ReadWrite.All | 全局管理员或用户管理员 |
+|组或应用的[accessReview](accessreview.md) | 读取 | AccessReview、AccessReview、成员身份或 AccessReview。 | 全局管理员、安全管理员、安全读者或用户管理员 |
+|组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview 或 AccessReview 的所有成员 | 全局管理员或用户管理员 |
 | [程序](program.md)和[programControl](programcontrol.md)| 读取 | ProgramControl 或 ProgramControl。所有 |  全局管理员、安全管理员、安全读者或用户管理员 |
 | [程序](program.md)和[programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl.ReadWrite.All | 全局管理员或用户管理员 |
 

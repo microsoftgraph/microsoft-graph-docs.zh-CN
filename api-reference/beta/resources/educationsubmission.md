@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 81c194c08ddc5ed8f5acc38ae84a5478bb7e0229
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27467548339dc01f7c95fe55bda159c0569c38ba
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972521"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173039"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "35972521"
 |[获取 educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |读取**educationSubmission**对象的属性和关系。|
 |[列出资源](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md)集合| 获取**educationSubmissionResource**对象集合。|
 |[列出 submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md)集合| 获取**educationSubmissionResource**对象集合。|
+|[列表结果](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md)集合| 获取**educationOutcome**对象集合。|
 |[更新](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |更新**educationSubmission**对象。 |
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|教师使用 return 来表示可以向学生显示成绩/反馈。|
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|学生使用提交来打开工作分配。 这将把资源复制到**submittedResources**文件夹进行评分并更新状态。|
@@ -55,7 +56,8 @@ ms.locfileid: "35972521"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
-|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。可为空。|
+|submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。 可为 Null。|
+|成果|[educationOutcome](educationOutcome.md)集合|只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

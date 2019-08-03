@@ -7273,12 +7273,16 @@
                   href: api/educationuser-list-schools.md
                 - name: 列出课程
                   href: api/educationuser-list-classes.md
+                - name: 列出 rubrics
+                  href: api/educationuser-list-rubrics.md
                 - name: 获取用户
                   href: api/educationuser-get.md
                 - name: 删除用户
                   href: api/educationuser-delete.md
                 - name: 获取 Delta
                   href: api/educationuser-delta.md
+                - name: 创建 rubric
+                  href: api/educationuser-post-rubrics.md
             - name: 作业
               href: resources/educationassignment.md
               items:
@@ -7306,12 +7310,18 @@
                   href: api/educationassignment-list-submissions.md
                 - name: 获取资源文件夹 URL
                   href: api/educationassignment-getresourcesfolderurl.md
+                - name: 获取附加到分配的 rubric
+                  href: api/educationassignment-get-rubric.md
                 - name: 列出类别
                   href: api/educationassignment-list-categories.md
                 - name: 添加类别
                   href: api/educationassignment-add-categories.md
                 - name: 删除类别
                   href: api/educationassignment-remove-category.md
+                - name: 将 rubric 附加到工作分配
+                  href: api/educationassignment-put-rubric.md
+                - name: 从分配中删除 rubric
+                  href: api/educationassignment-delete-rubric.md
             - name: 类别
               href: resources/educationcategory.md
               items:
@@ -7319,6 +7329,15 @@
                   href: api/educationcategory-get.md
                 - name: 删除类别
                   href: api/educationcategory-delete.md
+            - name: Rubric
+              href: resources/educationrubric.md
+              items:
+                - name: 获取 rubric
+                  href: api/educationrubric-get.md
+                - name: 更新 rubric
+                  href: api/educationrubric-update.md
+                - name: 删除 rubric
+                  href: api/educationrubric-delete.md
             - name: 提交
               href: resources/educationsubmission.md
               items:
@@ -7338,12 +7357,19 @@
                   href: api/educationsubmission-unsubmit.md
                 - name: 列出已提交的资源
                   href: api/educationsubmission-list-submittedresources.md
+                - name: 列表结果
+                  href: api/educationsubmission-list-outcomes.md
                 - name: 获取已提交的资源
                   href: api/educationsubmittedsubmissionresource-get.md
                 - name: 成绩提交
                   href: api/educationsubmission-update.md
                 - name: 返回提交
                   href: api/educationsubmission-return.md
+            - name: 结果
+              href: resources/educationoutcome.md
+              items:
+                - name: 更新结果
+                  href: api/educationoutcome-update.md
             - name: 同步配置文件
               href: resources/educationsynchronizationprofile.md
               items:
@@ -9504,9 +9530,9 @@
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
-                - name: 列出
+                - name: List
                   href: api/outlookuser-list-tasks.md
-                - name: 创建
+                - name: Create
                   href: api/outlookuser-post-tasks.md
                 - name: 获取
                   href: api/outlooktask-get.md
@@ -9523,9 +9549,9 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: 列出
+                - name: List
                   href: api/outlookuser-list-taskfolders.md
-                - name: 创建
+                - name: Create
                   href: api/outlookuser-post-taskfolders.md
                 - name: 获取
                   href: api/outlooktaskfolder-get.md
@@ -9540,9 +9566,9 @@
             - name: Outlook 任务组
               href: resources/outlooktaskgroup.md
               items:
-                - name: 列出
+                - name: List
                   href: api/outlookuser-list-taskgroups.md
-                - name: 创建
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: 获取
                   href: api/outlooktaskgroup-get.md

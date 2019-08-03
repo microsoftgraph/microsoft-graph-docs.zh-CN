@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b55a35b3debe6d041c3e20aa54744339b963515c
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 0fe636c531ba4a9b82c44427002937876c8e4178
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049540"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172773"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -27,7 +27,7 @@ ms.locfileid: "36049540"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
+|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | AccessReview 的成员资格 |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 871b1bd777413e07b451fe7e889c69fcf183f62b
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: c8828daf4243ea7bc51a9492944e7fb0a0ed0bd2
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049545"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172724"
 ---
 # <a name="reset-accessreview"></a>重置 accessReview
 
@@ -23,7 +23,7 @@ ms.locfileid: "36049545"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
+|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | AccessReview 的成员资格 |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84345bd87cb1b4ba02746045d69ba783d1710804
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f343edec96af2e51d1bb643abb0652425c54624
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006477"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173046"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -26,15 +26,17 @@ ms.locfileid: "36006477"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取作业](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |读取**educationAssignment**对象的属性和关系。|
-|[创建作业资源](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| 通过发布到 resources 集合创建新的**educationAssignmentResource** 。|
 |[列出资源](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md)集合| 获取**educationAssignmentResource**对象集合。|
 |[列表提交](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md)集合| 获取**educationSubmission**对象集合。|
 |[List categories](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md)集合| 获取**educationCategory**对象集合。|
-|[添加类别](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | 将属于该类的**educationCategory**分配给此工作分配。|
-|[删除类别](../api/educationassignment-remove-category.md) |无| 从此工作分配中删除属于该类的**educationCategory** 。|
+|[创建作业资源](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| 通过发布到 resources 集合创建新的**educationAssignmentResource** 。|
+|[获取作业](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |读取**educationAssignment**对象的属性和关系。|
 |[更新](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |更新**educationAssignment**对象。 |
 |[删除](../api/educationassignment-delete.md) | 无 |删除**educationAssignment**对象。 |
+|[添加类别](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | 将属于该类的**educationCategory**分配给此工作分配。|
+|[删除类别](../api/educationassignment-remove-category.md) |无| 从此工作分配中删除属于该类的**educationCategory** 。|
+|[附加 rubric](../api/educationassignment-put-rubric.md)|无|将现有**educationRubric**附加到此工作分配。|
+|[删除 rubric](../api/educationassignment-delete-rubric.md)|无|将**educationRubric**与此工作分配分离。|
 |[发布](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|将**educationAssignment**对象的状态从 "草稿" 更改为 "已发布"。|
 |[获取资源文件夹 URL](../api/educationassignment-getresourcesfolderurl.md)| string| 应将基于文件的资源的 OneDrive 文件夹放置为工作分配资源的一部分。 文件必须位于此文件夹中才能作为资源添加。|
 
@@ -64,6 +66,7 @@ ms.locfileid: "36006477"
 |resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为 Null。|
 |提交|[educationSubmission](educationsubmission.md)集合| 发布后, 每个学生都有一个提交对象代表其工作和评分。  只读。 可为 Null。|
 |categories|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
+|rubric|[educationRubric](educationrubric.md)|设置时, 评分 rubric 附加到此工作分配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
