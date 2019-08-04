@@ -3,18 +3,30 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: dad880cc84a1c8574d4f697ed283a0fc3af7c198
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: b5cd7eae4aeee8c9426c47d0dc1efd0ea480037c
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062073"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173067"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph API 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
+
+## <a name="august-2019"></a>2019 年 8 月
+
+### <a name="education"></a>教育版
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 添加了新的 [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) 资源。|
+| 添加项 | beta | 添加了用于管理 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) 上的 [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) 资源的 API。|
+| 添加项 | beta | 添加了新的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源。|
+| 添加项 | beta | 添加了用于管理 [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta) 上的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源的 API。|
+| 添加项 | beta | 添加了新的 [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) 资源。|
 
 ## <a name="july-2019"></a>2019 年 7 月
 

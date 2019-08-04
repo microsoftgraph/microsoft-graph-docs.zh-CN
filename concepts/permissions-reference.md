@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: b3d365b7fe49f7ac6c51318d69fbfd9109f50438
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: f71f7a0f880e3897daf7a9ca51502a7d465b3aa2
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062066"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173060"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -53,6 +53,7 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AccessReview.Read.All_ |   读取所有访问评审  | 允许应用代表已登录的用户读取访问评审。 | 是 | 否 |
 | _AccessReview.ReadWrite.All_ |   管理所有访问评审  | 允许应用代表已登录的用户读取和写入访问评审。 | 是 | 否 |
+| _AccessReview.ReadWrite.Membership_ |   管理组和应用成员身份的访问评审 | 允许应用代表已登录的用户读取和写入组和应用的访问评审。 | 是 | 否 |
 
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -63,9 +64,9 @@ Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_
 | _AccessReview.ReadWrite.Membership_ | 管理组和应用成员身份的访问评审 | 允许应用在没有已登录用户的情况下管理组和应用的访问评审。 | 是 |
 
 
-### <a name="remarks"></a>说明
+### <a name="remarks"></a>注解
 
-_AccessReview.Read.All_ 和 _AccessReview.ReadWrite.All_ 仅对工作或学校帐户有效。
+_AccessReview.Read.All_、_AccessReview.ReadWrite.All_ 和 _AccessReview.ReadWrite.Membership_ 仅对于工作或学校帐户有效。
 
 对于通过委派权限读取组或应用的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或用户管理员。 对于通过委派权限读取组或应用的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或用户管理员。
 
