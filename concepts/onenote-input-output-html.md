@@ -4,12 +4,12 @@ description: '创建或更新 OneNote 页时定义页面内容和结构的 HTML 
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 0cc2c0994a5e4d2a45e78c055af466f1c4999de6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fcb4a8127b633ba309212a7160c9e5548836466c
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578750"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639217"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote 页中的输入和输出 HTML
 
@@ -162,20 +162,6 @@ OneNote 页上的图像由 **img** 元素表示。 **img** 元素可以在输入
     data-src-type="image/png"
     data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/$value"  
     data-fullres-src-type="image/png" ... />
-```
-
-默认情况下，图像并不会直接在浏览器中显示，因为它们具有私密性，需要授权才能对其检索，这与页面其他内容一样。 若要获取页面上的图像资源的公共 URL，请在检索页面内容时，在查询字符串中添加 **preAuthenticated=true**（例如：`GET ../pages/{page-id}/content?preAuthenticated=true`）。 返回的公共 URL 的有效期为一小时。 
-
-#### <a name="image-with-public-url-when-preauthenticatedtrue-is-included-in-the-request"></a>在请求中添加 _preAuthenticated=true_ 时带有公共 URL 的图像
-
-```html
-<img 
-    width="170" height="128" 
-    src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-src-type="image/{type}" 
-    data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-fullres-src-type="image/{type}"
-/>
 ```
 
 以下示例说明 **img** 元素在输出 HTML 中可能包含的信息。
@@ -417,7 +403,7 @@ Microsoft Graph 中的 OneNote API 支持以下列表样式：
 </ol>
 ``` 
 
-这是输出 HTML。 请注意，这些样式在单独的 **li** 或 **span** 元素上内嵌返回。
+这是输出 HTML。请注意，这些样式在单独 **li** 或 **span** 元素上内嵌返回。
 
 ```html
 <ol>
