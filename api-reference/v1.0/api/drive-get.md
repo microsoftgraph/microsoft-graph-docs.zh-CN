@@ -5,224 +5,226 @@ ms.date: 09/10/2017
 title: 获取驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: e9d0dcc53675650d93ebe00c88c020a266608e50
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 检索 Drive 资源的属性和关系。
+doc_type: apiPageType
+ms.openlocfilehash: 658db847b8e72c70e7445f673c721ae28ef2d145
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887869"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016529"
 ---
-# <a name="get-drive"></a><span data-ttu-id="3362d-102">获取驱动器</span><span class="sxs-lookup"><span data-stu-id="3362d-102">Get Drive</span></span>
+# <a name="get-drive"></a><span data-ttu-id="1252a-103">获取驱动器</span><span class="sxs-lookup"><span data-stu-id="1252a-103">Get Drive</span></span>
 
-<span data-ttu-id="3362d-103">检索 [Drive](../resources/drive.md) 资源的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3362d-103">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
+<span data-ttu-id="1252a-104">检索 [Drive](../resources/drive.md) 资源的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1252a-104">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
 
-<span data-ttu-id="3362d-104">驱动器是文件系统的顶级容器，例如 OneDrive 或 SharePoint 文档库。</span><span class="sxs-lookup"><span data-stu-id="3362d-104">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
+<span data-ttu-id="1252a-105">驱动器是文件系统的顶级容器，例如 OneDrive 或 SharePoint 文档库。</span><span class="sxs-lookup"><span data-stu-id="1252a-105">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3362d-105">权限</span><span class="sxs-lookup"><span data-stu-id="3362d-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1252a-106">权限</span><span class="sxs-lookup"><span data-stu-id="1252a-106">Permissions</span></span>
 
-<span data-ttu-id="3362d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3362d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1252a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1252a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3362d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3362d-108">Permission type</span></span>      | <span data-ttu-id="3362d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3362d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1252a-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1252a-109">Permission type</span></span>      | <span data-ttu-id="1252a-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1252a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3362d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3362d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3362d-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3362d-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3362d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3362d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3362d-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3362d-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3362d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3362d-114">Application</span></span> | <span data-ttu-id="3362d-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3362d-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="1252a-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1252a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1252a-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1252a-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1252a-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1252a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1252a-114">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1252a-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1252a-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1252a-115">Application</span></span> | <span data-ttu-id="1252a-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1252a-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-current-users-onedrive"></a><span data-ttu-id="3362d-116">获取当前用户的 OneDrive</span><span class="sxs-lookup"><span data-stu-id="3362d-116">Get current user's OneDrive</span></span>
+## <a name="get-current-users-onedrive"></a><span data-ttu-id="1252a-117">获取当前用户的 OneDrive</span><span class="sxs-lookup"><span data-stu-id="1252a-117">Get current user's OneDrive</span></span>
 
-<span data-ttu-id="3362d-117">可以通过 `me` 单一实例访问登录用户的驱动器（如果使用委派身份验证）。</span><span class="sxs-lookup"><span data-stu-id="3362d-117">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
+<span data-ttu-id="1252a-118">可以通过 `me` 单一实例访问登录用户的驱动器（如果使用委派身份验证）。</span><span class="sxs-lookup"><span data-stu-id="1252a-118">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
 
-<span data-ttu-id="3362d-118">如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。</span><span class="sxs-lookup"><span data-stu-id="3362d-118">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+<span data-ttu-id="1252a-119">如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。</span><span class="sxs-lookup"><span data-stu-id="1252a-119">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="3362d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3362d-119">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="1252a-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1252a-120">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3362d-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="3362d-120">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1252a-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="1252a-121">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3362d-121">C#</span><span class="sxs-lookup"><span data-stu-id="3362d-121">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1252a-122">C#</span><span class="sxs-lookup"><span data-stu-id="1252a-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-default-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3362d-122">Javascript</span><span class="sxs-lookup"><span data-stu-id="3362d-122">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1252a-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="1252a-123">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-default-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3362d-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3362d-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1252a-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1252a-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-default-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3362d-124">Java</span><span class="sxs-lookup"><span data-stu-id="3362d-124">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="1252a-125">Java</span><span class="sxs-lookup"><span data-stu-id="1252a-125">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="get-a-users-onedrive"></a><span data-ttu-id="3362d-125">获取用户的 OneDrive</span><span class="sxs-lookup"><span data-stu-id="3362d-125">Get a user's OneDrive</span></span>
+## <a name="get-a-users-onedrive"></a><span data-ttu-id="1252a-126">获取用户的 OneDrive</span><span class="sxs-lookup"><span data-stu-id="1252a-126">Get a user's OneDrive</span></span>
 
-<span data-ttu-id="3362d-126">若要访问用户的 OneDrive 或 OneDrive for Business，应用必须请求对 User 资源获取 **drive** 关系。</span><span class="sxs-lookup"><span data-stu-id="3362d-126">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
+<span data-ttu-id="1252a-127">若要访问用户的 OneDrive 或 OneDrive for Business，应用必须请求对 User 资源获取 **drive** 关系。</span><span class="sxs-lookup"><span data-stu-id="1252a-127">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
 
-<span data-ttu-id="3362d-127">如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。</span><span class="sxs-lookup"><span data-stu-id="3362d-127">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+<span data-ttu-id="1252a-128">如果未设置用户的 OneDrive，但用户有使用 OneDrive 的许可，那么在使用委派身份验证时，该请求将自动设置用户驱动器。</span><span class="sxs-lookup"><span data-stu-id="1252a-128">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="3362d-128">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3362d-128">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="1252a-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1252a-129">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3362d-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="3362d-129">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1252a-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="1252a-130">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3362d-130">C#</span><span class="sxs-lookup"><span data-stu-id="3362d-130">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1252a-131">C#</span><span class="sxs-lookup"><span data-stu-id="1252a-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3362d-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="3362d-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1252a-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="1252a-132">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3362d-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3362d-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1252a-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1252a-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3362d-133">Java</span><span class="sxs-lookup"><span data-stu-id="3362d-133">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="1252a-134">Java</span><span class="sxs-lookup"><span data-stu-id="1252a-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="3362d-134">路径参数</span><span class="sxs-lookup"><span data-stu-id="3362d-134">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="1252a-135">路径参数</span><span class="sxs-lookup"><span data-stu-id="1252a-135">Path parameters</span></span>
 
-| <span data-ttu-id="3362d-135">参数名称</span><span class="sxs-lookup"><span data-stu-id="3362d-135">Parameter name</span></span> | <span data-ttu-id="3362d-136">值</span><span class="sxs-lookup"><span data-stu-id="3362d-136">Value</span></span>  | <span data-ttu-id="3362d-137">说明</span><span class="sxs-lookup"><span data-stu-id="3362d-137">Description</span></span>                                       |
+| <span data-ttu-id="1252a-136">参数名称</span><span class="sxs-lookup"><span data-stu-id="1252a-136">Parameter name</span></span> | <span data-ttu-id="1252a-137">值</span><span class="sxs-lookup"><span data-stu-id="1252a-137">Value</span></span>  | <span data-ttu-id="1252a-138">说明</span><span class="sxs-lookup"><span data-stu-id="1252a-138">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="3362d-138">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="3362d-138">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="3362d-139">string</span><span class="sxs-lookup"><span data-stu-id="3362d-139">string</span></span> | <span data-ttu-id="3362d-140">必需。</span><span class="sxs-lookup"><span data-stu-id="3362d-140">Required.</span></span> <span data-ttu-id="3362d-141">拥有 OneDrive 的用户对象的标识符。</span><span class="sxs-lookup"><span data-stu-id="3362d-141">The identifier for the user object who owns the OneDrive.</span></span> |
+| <span data-ttu-id="1252a-139">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="1252a-139">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="1252a-140">string</span><span class="sxs-lookup"><span data-stu-id="1252a-140">string</span></span> | <span data-ttu-id="1252a-141">必需。</span><span class="sxs-lookup"><span data-stu-id="1252a-141">Required.</span></span> <span data-ttu-id="1252a-142">拥有 OneDrive 的用户对象的标识符。</span><span class="sxs-lookup"><span data-stu-id="1252a-142">The identifier for the user object who owns the OneDrive.</span></span> |
 
-## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="3362d-142">获取与组关联的文档库</span><span class="sxs-lookup"><span data-stu-id="3362d-142">Get the document library associated with a group</span></span>
+## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="1252a-143">获取与组关联的文档库</span><span class="sxs-lookup"><span data-stu-id="1252a-143">Get the document library associated with a group</span></span>
 
-<span data-ttu-id="3362d-143">若要访问组的默认文档库，应用应请求组中的 **drive** 关系。</span><span class="sxs-lookup"><span data-stu-id="3362d-143">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
+<span data-ttu-id="1252a-144">若要访问组的默认文档库，应用应请求组中的 **drive** 关系。</span><span class="sxs-lookup"><span data-stu-id="1252a-144">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="3362d-144">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3362d-144">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="1252a-145">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1252a-145">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3362d-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="3362d-145">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1252a-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="1252a-146">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3362d-146">C#</span><span class="sxs-lookup"><span data-stu-id="3362d-146">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1252a-147">C#</span><span class="sxs-lookup"><span data-stu-id="1252a-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3362d-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="3362d-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1252a-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="1252a-148">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3362d-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3362d-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1252a-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1252a-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3362d-149">Java</span><span class="sxs-lookup"><span data-stu-id="3362d-149">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="1252a-150">Java</span><span class="sxs-lookup"><span data-stu-id="1252a-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="3362d-150">路径参数</span><span class="sxs-lookup"><span data-stu-id="3362d-150">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="1252a-151">路径参数</span><span class="sxs-lookup"><span data-stu-id="1252a-151">Path parameters</span></span>
 
-| <span data-ttu-id="3362d-151">参数名称</span><span class="sxs-lookup"><span data-stu-id="3362d-151">Parameter name</span></span> | <span data-ttu-id="3362d-152">值</span><span class="sxs-lookup"><span data-stu-id="3362d-152">Value</span></span>  | <span data-ttu-id="3362d-153">说明</span><span class="sxs-lookup"><span data-stu-id="3362d-153">Description</span></span>                                       |
+| <span data-ttu-id="1252a-152">参数名称</span><span class="sxs-lookup"><span data-stu-id="1252a-152">Parameter name</span></span> | <span data-ttu-id="1252a-153">值</span><span class="sxs-lookup"><span data-stu-id="1252a-153">Value</span></span>  | <span data-ttu-id="1252a-154">说明</span><span class="sxs-lookup"><span data-stu-id="1252a-154">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="3362d-154">_groupId_</span><span class="sxs-lookup"><span data-stu-id="3362d-154">_groupId_</span></span>      | <span data-ttu-id="3362d-155">string</span><span class="sxs-lookup"><span data-stu-id="3362d-155">string</span></span> | <span data-ttu-id="3362d-156">必需。</span><span class="sxs-lookup"><span data-stu-id="3362d-156">Required.</span></span> <span data-ttu-id="3362d-157">拥有文档库的组的标识符。</span><span class="sxs-lookup"><span data-stu-id="3362d-157">The identifier for the group which owns the document library.</span></span> |
+| <span data-ttu-id="1252a-155">_groupId_</span><span class="sxs-lookup"><span data-stu-id="1252a-155">_groupId_</span></span>      | <span data-ttu-id="1252a-156">string</span><span class="sxs-lookup"><span data-stu-id="1252a-156">string</span></span> | <span data-ttu-id="1252a-157">必需。</span><span class="sxs-lookup"><span data-stu-id="1252a-157">Required.</span></span> <span data-ttu-id="1252a-158">拥有文档库的组的标识符。</span><span class="sxs-lookup"><span data-stu-id="1252a-158">The identifier for the group which owns the document library.</span></span> |
 
-## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="3362d-158">获取某个站点的文档库</span><span class="sxs-lookup"><span data-stu-id="3362d-158">Get the document library for a site</span></span>
+## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="1252a-159">获取某个站点的文档库</span><span class="sxs-lookup"><span data-stu-id="1252a-159">Get the document library for a site</span></span>
 
-<span data-ttu-id="3362d-159">若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。</span><span class="sxs-lookup"><span data-stu-id="3362d-159">To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.</span></span>
+<span data-ttu-id="1252a-160">若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。</span><span class="sxs-lookup"><span data-stu-id="1252a-160">To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="3362d-160">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3362d-160">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="1252a-161">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1252a-161">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3362d-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="3362d-161">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1252a-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="1252a-162">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
 ```http
 GET /sites/{siteId}/drive
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3362d-162">C#</span><span class="sxs-lookup"><span data-stu-id="3362d-162">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1252a-163">C#</span><span class="sxs-lookup"><span data-stu-id="1252a-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-site-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3362d-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="3362d-163">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1252a-164">Javascript</span><span class="sxs-lookup"><span data-stu-id="1252a-164">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-site-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3362d-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3362d-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1252a-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1252a-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-site-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3362d-165">Java</span><span class="sxs-lookup"><span data-stu-id="3362d-165">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="1252a-166">Java</span><span class="sxs-lookup"><span data-stu-id="1252a-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-site-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="3362d-166">路径参数</span><span class="sxs-lookup"><span data-stu-id="3362d-166">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="1252a-167">路径参数</span><span class="sxs-lookup"><span data-stu-id="1252a-167">Path parameters</span></span>
 
-| <span data-ttu-id="3362d-167">参数名称</span><span class="sxs-lookup"><span data-stu-id="3362d-167">Parameter name</span></span> | <span data-ttu-id="3362d-168">值</span><span class="sxs-lookup"><span data-stu-id="3362d-168">Value</span></span>  | <span data-ttu-id="3362d-169">说明</span><span class="sxs-lookup"><span data-stu-id="3362d-169">Description</span></span>                                       |
+| <span data-ttu-id="1252a-168">参数名称</span><span class="sxs-lookup"><span data-stu-id="1252a-168">Parameter name</span></span> | <span data-ttu-id="1252a-169">值</span><span class="sxs-lookup"><span data-stu-id="1252a-169">Value</span></span>  | <span data-ttu-id="1252a-170">说明</span><span class="sxs-lookup"><span data-stu-id="1252a-170">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="3362d-170">_siteId_</span><span class="sxs-lookup"><span data-stu-id="3362d-170">_siteId_</span></span>       | <span data-ttu-id="3362d-171">string</span><span class="sxs-lookup"><span data-stu-id="3362d-171">string</span></span> | <span data-ttu-id="3362d-172">必需。</span><span class="sxs-lookup"><span data-stu-id="3362d-172">Required.</span></span> <span data-ttu-id="3362d-173">包含文档库的站点的标识符。</span><span class="sxs-lookup"><span data-stu-id="3362d-173">The identifier for the site that contains the document library.</span></span> |
+| <span data-ttu-id="1252a-171">_siteId_</span><span class="sxs-lookup"><span data-stu-id="1252a-171">_siteId_</span></span>       | <span data-ttu-id="1252a-172">string</span><span class="sxs-lookup"><span data-stu-id="1252a-172">string</span></span> | <span data-ttu-id="1252a-173">必需。</span><span class="sxs-lookup"><span data-stu-id="1252a-173">Required.</span></span> <span data-ttu-id="1252a-174">包含文档库的站点的标识符。</span><span class="sxs-lookup"><span data-stu-id="1252a-174">The identifier for the site that contains the document library.</span></span> |
 
-## <a name="get-a-drive-by-id"></a><span data-ttu-id="3362d-174">根据 ID 获取驱动器</span><span class="sxs-lookup"><span data-stu-id="3362d-174">Get a drive by ID</span></span>
+## <a name="get-a-drive-by-id"></a><span data-ttu-id="1252a-175">根据 ID 获取驱动器</span><span class="sxs-lookup"><span data-stu-id="1252a-175">Get a drive by ID</span></span>
 
-<span data-ttu-id="3362d-175">如果你有某个驱动器的唯一标识符，则可以直接从顶级驱动器集合来访问它。</span><span class="sxs-lookup"><span data-stu-id="3362d-175">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
+<span data-ttu-id="1252a-176">如果你有某个驱动器的唯一标识符，则可以直接从顶级驱动器集合来访问它。</span><span class="sxs-lookup"><span data-stu-id="1252a-176">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="3362d-176">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3362d-176">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="1252a-177">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1252a-177">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3362d-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="3362d-177">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1252a-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="1252a-178">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
 GET /drives/{drive-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3362d-178">C#</span><span class="sxs-lookup"><span data-stu-id="3362d-178">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1252a-179">C#</span><span class="sxs-lookup"><span data-stu-id="1252a-179">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3362d-179">Javascript</span><span class="sxs-lookup"><span data-stu-id="3362d-179">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1252a-180">Javascript</span><span class="sxs-lookup"><span data-stu-id="1252a-180">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3362d-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3362d-180">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1252a-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1252a-181">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3362d-181">Java</span><span class="sxs-lookup"><span data-stu-id="3362d-181">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="1252a-182">Java</span><span class="sxs-lookup"><span data-stu-id="1252a-182">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="3362d-182">路径参数</span><span class="sxs-lookup"><span data-stu-id="3362d-182">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="1252a-183">路径参数</span><span class="sxs-lookup"><span data-stu-id="1252a-183">Path parameters</span></span>
 
-| <span data-ttu-id="3362d-183">参数名称</span><span class="sxs-lookup"><span data-stu-id="3362d-183">Parameter name</span></span> | <span data-ttu-id="3362d-184">值</span><span class="sxs-lookup"><span data-stu-id="3362d-184">Value</span></span>  | <span data-ttu-id="3362d-185">说明</span><span class="sxs-lookup"><span data-stu-id="3362d-185">Description</span></span>                                       |
+| <span data-ttu-id="1252a-184">参数名称</span><span class="sxs-lookup"><span data-stu-id="1252a-184">Parameter name</span></span> | <span data-ttu-id="1252a-185">值</span><span class="sxs-lookup"><span data-stu-id="1252a-185">Value</span></span>  | <span data-ttu-id="1252a-186">说明</span><span class="sxs-lookup"><span data-stu-id="1252a-186">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="3362d-186">_driveId_</span><span class="sxs-lookup"><span data-stu-id="3362d-186">_driveId_</span></span>      | <span data-ttu-id="3362d-187">字符串</span><span class="sxs-lookup"><span data-stu-id="3362d-187">string</span></span> | <span data-ttu-id="3362d-p105">必需。 请求获取的驱动器的标识符。</span><span class="sxs-lookup"><span data-stu-id="3362d-p105">Required. The identifier for the drive requested.</span></span> |
+| <span data-ttu-id="1252a-187">_driveId_</span><span class="sxs-lookup"><span data-stu-id="1252a-187">_driveId_</span></span>      | <span data-ttu-id="1252a-188">字符串</span><span class="sxs-lookup"><span data-stu-id="1252a-188">string</span></span> | <span data-ttu-id="1252a-p105">必需。 请求获取的驱动器的标识符。</span><span class="sxs-lookup"><span data-stu-id="1252a-p105">Required. The identifier for the drive requested.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3362d-190">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3362d-190">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1252a-191">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1252a-191">Optional query parameters</span></span>
 
-<span data-ttu-id="3362d-191">这些方法支持使用 [$select 查询参数][odata-query-parameters]形成响应。</span><span class="sxs-lookup"><span data-stu-id="3362d-191">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
+<span data-ttu-id="1252a-192">这些方法支持使用 [$select 查询参数][odata-query-parameters]形成响应。</span><span class="sxs-lookup"><span data-stu-id="1252a-192">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3362d-192">响应</span><span class="sxs-lookup"><span data-stu-id="3362d-192">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1252a-193">响应</span><span class="sxs-lookup"><span data-stu-id="1252a-193">Response</span></span>
 
-<span data-ttu-id="3362d-193">每个方法将在响应正文中返回匹配驱动器的 [Drive 资源][drive-resource]。</span><span class="sxs-lookup"><span data-stu-id="3362d-193">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
+<span data-ttu-id="1252a-194">每个方法将在响应正文中返回匹配驱动器的 [Drive 资源][drive-resource]。</span><span class="sxs-lookup"><span data-stu-id="1252a-194">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default" , "get-drive-by-site-id"] } -->
 
@@ -248,9 +250,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="error-response-codes"></a><span data-ttu-id="3362d-194">错误响应代码</span><span class="sxs-lookup"><span data-stu-id="3362d-194">Error response codes</span></span>
+### <a name="error-response-codes"></a><span data-ttu-id="1252a-195">错误响应代码</span><span class="sxs-lookup"><span data-stu-id="1252a-195">Error response codes</span></span>
 
-<span data-ttu-id="3362d-195">如果驱动器不存在且无法自动设置（使用委派身份验证时），将返回 `HTTP 404` 响应。</span><span class="sxs-lookup"><span data-stu-id="3362d-195">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
+<span data-ttu-id="1252a-196">如果驱动器不存在且无法自动设置（使用委派身份验证时），将返回 `HTTP 404` 响应。</span><span class="sxs-lookup"><span data-stu-id="1252a-196">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
