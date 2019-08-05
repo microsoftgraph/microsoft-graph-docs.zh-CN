@@ -2,14 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Permission
+title: 权限
 localization_priority: Priority
-ms.openlocfilehash: f2781726be786c5eb0d4ed8103dc3b9a62137597
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 95a5b9785285cd6286cf9ebefd8d62fa900c3d9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462513"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035481"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 

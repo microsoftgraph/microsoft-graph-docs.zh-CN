@@ -2,15 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: List
+title: 列表
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: ”列表”资源代表网站中的列表。
+doc_type: resourcePageType
+ms.openlocfilehash: 51821bb20188c004af3f2aca868c3cfd953ce19c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570797"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036405"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -115,8 +117,8 @@ ms.locfileid: "32570797"
 
 | 关系名称 | 类型                             | 说明
 |:------------------|:---------------------------------|:----------------------
-| **驱动器**         | [drive][]                        | 仅存在于文档库中。 允许访问作为具有 [driveItems][driveItem] 的 [drive][] 资源的列表。
-| **items**         | Collection([listItem][])         | 列表中包含的所有项。
+| **驱动器**         | [drive][]                        | 仅存在于文档库中。 允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
+| **项目**         | Collection([listItem][])         | 列表中包含的所有项。
 | **columns**       | Collection([columnDefinition][]) | 此列表的字段定义集合。
 | **contentTypes**  | Collection([contentType][])      | 此列表中出现的内容类型的集合。
 

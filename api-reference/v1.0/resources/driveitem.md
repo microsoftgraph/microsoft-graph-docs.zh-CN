@@ -5,12 +5,13 @@ title: DriveItem 资源类型
 description: 项目是 OneDrive API 中的主数据模型。 每项都是一个项目。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a098da44ea4d6861a7d4372c907452721bfc881b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968791"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029370"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -105,7 +106,8 @@ ms.locfileid: "33968791"
 
 下面是 **driveItem** 资源的 JSON 表示形式。
 
-**driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
+
+            **driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
@@ -194,7 +196,7 @@ ms.locfileid: "33968791"
 | [列出权限](../api/driveitem-list-permissions.md) | [权限][]集合 | 检索 driveItem 上的权限集合。
 | [删除权限](../api/permission-delete.md)         | 无内容 | 从 driveItem 中删除权限。
 | [获取 WebSocket 频道][getWebSocket]                    | [订阅][] | 使用 socket.io 接收驱动器的近实时更改通知。
-| [预览项][item-preview]                             | json object | 获取项目的短期可嵌入URL以呈现临时预览。
+| [预览项目][item-preview]                             | json object | 获取项目的短期可嵌入URL以呈现临时预览。
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md

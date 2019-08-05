@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: 通过创建上传会话，使应用可以上传最大大小的文件。
+doc_type: apiPageType
+ms.openlocfilehash: 1e61635d64974d98fa32c60c622ea576aa0ccfbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015528"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 

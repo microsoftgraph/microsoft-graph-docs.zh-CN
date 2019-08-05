@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: e66d302c7397690f6975363f9c3785f8b620756d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 使用此 API 检索特定格式的项的内容。
+doc_type: apiPageType
+ms.openlocfilehash: 6472daba727cb412fb9c4ab3fa3e3b2160b560e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015493"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 

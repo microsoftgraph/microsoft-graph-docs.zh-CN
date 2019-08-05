@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: 同步驱动器的内容
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: fae431014e03b70e9d81d68977a4fa386b5447c7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
+doc_type: apiPageType
+ms.openlocfilehash: bd71a74cbcd77af19d3ddc87d894bc84ddf8dd3b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015514"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
