@@ -4,12 +4,12 @@ description: " Office 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555435"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639211"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
@@ -143,7 +143,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 **previewText** 属性包含来自页面的文本片段。 Microsoft Graph 返回完整短语，最多 300 个字符。 
 
-如果页面包含可用于生成预览 UI 的图像，则 **previewImageUrl** 对象中的 **href** 属性包含指向公共、预验证[图像资源](#image-or-other-file-resource)的链接。 可以在 HTML 中使用此链接。 否则，**href** 返回 null。
+如果页面包含可用于生成预览 UI 的图像，则 **previewImageUrl** 对象中的 **href** 属性包含指向公共[图像资源](#image-or-other-file-resource)的链接。 可以在 HTML 中使用此链接。 否则，**href** 返回 null。
 
 #### <a name="example"></a>示例 
 
