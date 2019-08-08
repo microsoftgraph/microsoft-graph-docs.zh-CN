@@ -454,6 +454,10 @@
             - name: 日历
               href: resources/calendar.md
               items:
+                - name: 获取日历
+                  href: api/calendar-get.md
+                - name: 更新日历
+                  href: api/calendar-update.md
                 - name: 列出事件
                   href: api/group-list-events.md
                 - name: 创建事件
@@ -1490,7 +1494,7 @@
                 - name: 托管设备移动应用配置
                   href: resources/intune-apps-manageddevicemobileappconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-apps-manageddevicemobileappconfiguration-list.md
                     - name: 获取
                       href: api/intune-apps-manageddevicemobileappconfiguration-get.md
@@ -1499,7 +1503,7 @@
                 - name: 托管设备移动应用配置分配
                   href: resources/intune-apps-manageddevicemobileappconfigurationassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
                     - name: 获取
                       href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
@@ -3639,7 +3643,7 @@
                 - name: 组策略演示文稿小数位数文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -3652,7 +3656,7 @@
                 - name: 组策略演示文稿下拉列表
                   href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
@@ -4377,7 +4381,7 @@
                 - name: NDES 连接器
                   href: resources/intune-deviceconfig-ndesconnector.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-ndesconnector-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-ndesconnector-get.md
@@ -4503,7 +4507,7 @@
                 - name: 受限的应用冲突
                   href: resources/intune-deviceconfig-restrictedappsviolation.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-restrictedappsviolation-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-restrictedappsviolation-get.md

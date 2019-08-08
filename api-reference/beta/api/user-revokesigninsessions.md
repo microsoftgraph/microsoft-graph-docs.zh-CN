@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 22f1eebc24c65ce4d8ddf464d7803567c39237d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 824ec1b38b440fc36edafad7aeea8c2d39f9f772
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996159"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245680"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 
@@ -52,6 +52,9 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
+
+>[!NOTE]
+>此 API 存在[已知问题](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code)。 它返回不同的 HTTP 响应代码。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
