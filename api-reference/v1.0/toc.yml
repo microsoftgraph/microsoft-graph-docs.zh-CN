@@ -416,6 +416,10 @@
             - name: 日历
               href: resources/calendar.md
               items:
+                - name: 获取日历
+                  href: api/calendar-get.md
+                - name: 更新日历
+                  href: api/calendar-update.md
                 - name: 列出事件
                   href: api/group-list-events.md
                 - name: 创建事件
@@ -938,7 +942,7 @@
                       href: api/intune-apps-manageddevicemobileappconfiguration-list.md
                     - name: 获取
                       href: api/intune-apps-manageddevicemobileappconfiguration-get.md
-                    - name: 分配操作
+                    - name: assign 操作
                       href: api/intune-apps-manageddevicemobileappconfiguration-assign.md
                 - name: 托管设备移动应用配置分配
                   href: resources/intune-apps-manageddevicemobileappconfigurationassignment.md
@@ -1697,7 +1701,7 @@
                 - name: iOS 常规设备配置
                   href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -1726,7 +1730,7 @@
                 - name: iOS 更新配置
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -2995,7 +2999,7 @@
                 - name: 用户
                   href: resources/intune-shared-user.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-shared-user-list.md
                     - name: 获取
                       href: api/intune-shared-user-get.md

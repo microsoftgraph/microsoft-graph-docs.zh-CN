@@ -5,24 +5,24 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a07b4f901f3a25c370411765698374cd415d19ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08d4a9db0e74490f5402b45ac709cf16ba3e28bd
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003971"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245559"
 ---
 # <a name="update-calendar"></a>更新日历
 
 更新 [calendar](../resources/calendar.md) 对象的属性。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据事件所在的日历类型和请求的权限类型 (委派或应用程序), 需要以下权限之一才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendars.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Calendars.ReadWrite    |
-|应用程序 | Calendars.ReadWrite |
+| 日历 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| 用户日历 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| 组 日历 | Group.ReadWrite.All | 不支持。 | 不支持。 |
+
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [calendar](../resources/calendar.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面的示例更新已登录用户的默认日历的名称。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
