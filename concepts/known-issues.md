@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 13bea7e626232caabb0eb58dc3b9eb7b6d458e9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033255"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245656"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -35,7 +35,11 @@ ms.locfileid: "36033255"
 
 ### <a name="using-delta-query"></a>使用 delta 查询
 
-有关使用 delta 查询方面的已知问题，请参阅本文中的[“delta 查询”部分](#delta-query)。
+有关使用 delta 查询的已知问题，请参阅本文中的 [delta 查询部分](#delta-query)。
+
+### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>调用登录会话返回了错误的 HTTP 代码
+
+[用户: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 返回 `204 No content` 响应表示成功调用；如果请求出现任何错误，则返回 HTTP 错误代码（4xx 或 5xx）。  但是，由于服务问题，此 API 会返回 `200 OK` 和始终为 true 的布尔值参数。  在此问题得到修复之前，简单建议开发人员将所有 2xx 返回代码看作此 API 成功。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

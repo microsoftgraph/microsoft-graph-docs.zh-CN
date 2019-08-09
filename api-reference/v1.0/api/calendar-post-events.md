@@ -5,24 +5,24 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f27d3ad30f9d37c38046c346db85fb2f25402e3b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 559c37348bd2b594e191ba04faf0668198c6e4dc
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003992"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245673"
 ---
 # <a name="create-event"></a>创建事件
 
-使用此 API 在默认或指定的日历中创建新事件。
-## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+使用此 API 在日历中创建新事件。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。 
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendars.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Calendars.ReadWrite    |
-|应用程序 | Calendars.ReadWrite |
+## <a name="permissions"></a>权限
+根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
+
+| 日历 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+| 用户日历 | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| 组日历 | Group.ReadWrite.All | 不支持。 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
