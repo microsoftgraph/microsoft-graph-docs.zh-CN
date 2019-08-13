@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a7c61dfafb96f0a6e4a8e8211ac416d5c7734a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1faa318b043b30b8588332bdb16f898407b0c18b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960081"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322518"
 ---
 # <a name="list-windowsmobilemsis"></a>列出 windowsMobileMSIs
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960081"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -106,6 +106,7 @@ Content-Length: 1407
   ]
 }
 ```
+
 
 
 

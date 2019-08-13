@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bf29cf514e9d2915957ffb18dc618425d326751
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 91f0b831beee100b4c88b23f2a92f2cc0aebbfee
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000009"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320789"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary 资源类型
 
@@ -49,8 +49,6 @@ ms.locfileid: "36000009"
   "unavailableDeviceCount": 1024
 }
 ```
-
-
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: 创建 androidEnterpriseWiFiConfiguration
-description: 创建新的 androidEnterpriseWiFiConfiguration 对象。
+title: 更新 androidDeviceOwnerVpnConfiguration
+description: 更新 androidDeviceOwnerVpnConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b59c921efb5b5b66b5a2962c5e130342f293b0a5
+ms.openlocfilehash: c8146d3813c94c3ef3c6a481d7dbc80c6c03598c
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312402"
+ms.locfileid: "36316881"
 ---
-# <a name="create-androidenterprisewificonfiguration"></a>创建 androidEnterpriseWiFiConfiguration
+# <a name="update-androiddeviceownervpnconfiguration"></a>更新 androidDeviceOwnerVpnConfiguration
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)对象。
+更新[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,8 +35,9 @@ ms.locfileid: "36312402"
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -46,9 +47,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 androidEnterpriseWiFiConfiguration 对象的 JSON 表示形式。
+在请求正文中, 提供[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)对象的 JSON 表示形式。
 
-下表显示创建 androidEnterpriseWiFiConfiguration 时所需的属性。
+下表显示创建[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -63,36 +64,29 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|networkName|String|从[AndroidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)继承的网络名称|
-|ssid|String|这是广播到所有设备的 Wi-fi 网络的名称。 继承自[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|
-|connectAutomatically|Boolean|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示, 并自动将设备连接到 Wlan 网络。 继承自[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|当设置为 true 时, 此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。 继承自[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|
-|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|指示 Wi-fi 终结点是否使用基于 EAP 的安全类型。 继承自[androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)。 可取值为：`open`、`wpaEnterprise`、`wpa2Enterprise`。|
-|eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|指示 Wi-fi 终结点 (路由器) 上的 EAP 协议集的类型。 可取值为：`eapTls`、`eapTtls`、`peap`。|
-|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|指示在将 EAP 类型配置为 PEAP 或 EAP-TTLS 时, 客户端 (设备) 需要使用的身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`derivedCredential`。|
-|innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|EAP 类型为 EAP 时, 用于身份验证的非 EAP 方法 (内部标识)-TTLS 和 Authenticationmethod 为用户名和密码。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
-|innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|当 EAP 类型为 PEAP 且 Authenticationmethod 为用户名和密码时, 用于身份验证的非 EAP 方法 (内部标识)。 可取值为：`none`、`microsoftChapVersionTwo`。|
-|outerIdentityPrivacyTemporaryValue|String|将 EAP 类型配置为 EAP-TTLS 或 PEAP 时启用标识隐私 (外部标识)。 此处提供的字符串用于在用户尝试连接到 Wlan 网络时屏蔽各个用户的用户名。|
-|usernameFormatString|String|用于生成用户名以连接到 wifi 的用户名格式字符串|
-|passwordFormatString|String|用于生成密码以连接到 wifi 的密码格式字符串|
-|preSharedKey|String|用于生成用于连接到 wifi 的密码的 PreSharedKey|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|身份验证方法。 继承自[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)。 可取值为：`certificate`、`usernameAndPassword`、`sharedSecret`、`derivedCredential`。|
+|connectionName|String|向用户显示的连接名称。 继承自[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|role|String|将 "连接类型" 设置为 "脉冲安全" 时的角色。 继承自[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|型|String|连接类型设置为脉冲安全时的领域。 继承自[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|台|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)集合|网络上的 VPN 服务器的列表。 请确保最终用户可以访问这些网络位置。 该集合最多可包含 500 个元素。 继承自[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|连接类型。 可取值为：`ciscoAnyConnect`、`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`、`citrix`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1699
+Content-length: 1417
 
 {
-  "@odata.type": "#microsoft.graph.androidEnterpriseWiFiConfiguration",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -121,32 +115,32 @@ Content-length: 1699
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "networkName": "Network Name value",
-  "ssid": "Ssid value",
-  "connectAutomatically": true,
-  "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "wpaEnterprise",
-  "eapType": "eapTtls",
   "authenticationMethod": "usernameAndPassword",
-  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
-  "usernameFormatString": "Username Format String value",
-  "passwordFormatString": "Password Format String value",
-  "preSharedKey": "Pre Shared Key value"
+  "connectionName": "Connection Name value",
+  "role": "Role value",
+  "realm": "Realm value",
+  "servers": [
+    {
+      "@odata.type": "microsoft.graph.vpnServer",
+      "description": "Description value",
+      "address": "Address value",
+      "isDefaultServer": true
+    }
+  ],
+  "connectionType": "pulseSecure"
 }
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1871
+Content-Length: 1589
 
 {
-  "@odata.type": "#microsoft.graph.androidEnterpriseWiFiConfiguration",
-  "id": "972edff4-dff4-972e-f4df-2e97f4df2e97",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
+  "id": "972962e3-62e3-9729-e362-2997e3622997",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -177,19 +171,19 @@ Content-Length: 1871
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "networkName": "Network Name value",
-  "ssid": "Ssid value",
-  "connectAutomatically": true,
-  "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "wpaEnterprise",
-  "eapType": "eapTtls",
   "authenticationMethod": "usernameAndPassword",
-  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
-  "usernameFormatString": "Username Format String value",
-  "passwordFormatString": "Password Format String value",
-  "preSharedKey": "Pre Shared Key value"
+  "connectionName": "Connection Name value",
+  "role": "Role value",
+  "realm": "Realm value",
+  "servers": [
+    {
+      "@odata.type": "microsoft.graph.vpnServer",
+      "description": "Description value",
+      "address": "Address value",
+      "isDefaultServer": true
+    }
+  ],
+  "connectionType": "pulseSecure"
 }
 ```
 

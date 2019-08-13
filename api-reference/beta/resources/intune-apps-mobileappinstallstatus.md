@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03a6445db16db5bff55b75cebf04bced775b517d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5bedb9308b414c4ea44c814c40dcd32ca33074d1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005140"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322623"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus 资源类型
 
@@ -77,8 +77,6 @@ ms.locfileid: "36005140"
   "displayVersion": "String"
 }
 ```
-
-
 
 
 

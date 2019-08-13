@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a958ad5ed2e6e20ad7a46dfb39f03603de88c40c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e6e71dafb3ed597213e23c717d03d0876102cae
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952644"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322777"
 ---
 # <a name="completesignup-action"></a>completeSignup 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952644"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,7 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

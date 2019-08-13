@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42607d093d12758d4e86aaa9697b1575ef548f97
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a7f2cdcdfed051595355cbf3bf7bf84476d855c4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952924"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322889"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>列出 androidDeviceOwnerEnrollmentProfiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952924"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 898
+Content-Length: 912
 
 {
   "value": [
@@ -85,13 +85,14 @@ Content-Length: 898
         "type": "Type value",
         "value": "dmFsdWU="
       },
-      "scopeTags": [
-        "Scope Tags value"
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
       ]
     }
   ]
 }
 ```
+
 
 
 

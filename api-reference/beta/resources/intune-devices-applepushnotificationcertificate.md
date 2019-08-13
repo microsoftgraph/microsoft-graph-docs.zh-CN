@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d4a5725c6cd046c4baa34316f74a90b4c9fb05f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90e7ede759d9df4197aa193495d8aea26996766e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000044"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319277"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -63,8 +63,6 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
-
-
 
 
 

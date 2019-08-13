@@ -1,24 +1,24 @@
 ---
-title: 获取 androidForWorkNineWorkEasConfiguration
-description: 读取 androidForWorkNineWorkEasConfiguration 对象的属性和关系。
+title: 获取 androidDeviceOwnerEnterpriseWiFiConfiguration
+description: 读取 androidDeviceOwnerEnterpriseWiFiConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4f70298632581ae3fa2ad9d7c4b5554ed3e8aed
+ms.openlocfilehash: a19ca9cb4c4a06da2358857fcd7b131a183d42a1
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312038"
+ms.locfileid: "36316905"
 ---
-# <a name="get-androidforworknineworkeasconfiguration"></a>获取 androidForWorkNineWorkEasConfiguration
+# <a name="get-androiddeviceownerenterprisewificonfiguration"></a>获取 androidDeviceOwnerEnterpriseWiFiConfiguration
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md)对象的属性和关系。
+读取[androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidForWorkNineWorkEasConfiguration](../resources/intune-deviceconfig-androidforworknineworkeasconfiguration.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -68,12 +68,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1612
+Content-Length: 1891
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.androidForWorkNineWorkEasConfiguration",
-    "id": "f8ef19e0-19e0-f8ef-e019-eff8e019eff8",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
+    "id": "7ef0d9c3-d9c3-7ef0-c3d9-f07ec3d9f07e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,15 +104,18 @@ Content-Length: 1612
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "authenticationMethod": "certificate",
-    "durationOfEmailToSync": "oneDay",
-    "emailAddressSource": "primarySmtpAddress",
-    "hostName": "Host Name value",
-    "requireSsl": true,
-    "usernameSource": "userPrincipalName",
-    "syncCalendar": true,
-    "syncContacts": true,
-    "syncTasks": true
+    "networkName": "Network Name value",
+    "ssid": "Ssid value",
+    "connectAutomatically": true,
+    "connectWhenNetworkNameIsHidden": true,
+    "wiFiSecurityType": "wep",
+    "preSharedKey": "Pre Shared Key value",
+    "preSharedKeyIsSet": true,
+    "eapType": "eapTtls",
+    "authenticationMethod": "usernameAndPassword",
+    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+    "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```

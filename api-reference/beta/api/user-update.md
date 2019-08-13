@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bda197e1f0ce619fe0830da38a8b1b5b5df45c0f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82fab22abe760b22f7574e85c9a2bf77cc8bc45a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996117"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325865"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -89,9 +89,14 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>示例 1: 更新已登录用户的属性
+
+#### <a name="request"></a>请求
+
+下面的示例演示了一个请求。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
@@ -101,35 +106,19 @@ PATCH /users/{id | userPrincipalName}
 ```http
 PATCH https://graph.microsoft.com/beta/me
 Content-type: application/json
-Content-length: 491
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value"
+  "officeLocation": "city-value"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -143,8 +132,43 @@ Content-length: 491
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-properties-of-the-specified-user"></a>示例 2: 更新指定用户的属性
+
+#### <a name="request"></a>请求
+
+下面的示例演示了一个请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "update_other_user"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "officeLocation": "city-value"
+}
+```
+
+#### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

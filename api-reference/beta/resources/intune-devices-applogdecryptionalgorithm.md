@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3f57c5ddfb48b4073a3589f4de81b5c8a33bfe7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cb1a5b4fa67bb9a20b62fdbf7b082d4710a1d7b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968616"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319228"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>appLogDecryptionAlgorithm 枚举类型
 
@@ -24,8 +24,6 @@ ms.locfileid: "35968616"
 |成员|值|说明|
 |:---|:---|:---|
 |aes256|0|尚未记录|
-
-
 
 
 
