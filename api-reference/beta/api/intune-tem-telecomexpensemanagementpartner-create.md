@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bc3d22d7a35b729cae49b25e6dccdd3b26b63aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 05b7f9a2ff8eeb99c973e874ab3f085ad91a5bb7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993478"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350529"
 ---
-# <a name="create-telecomexpensemanagementpartner"></a><span data-ttu-id="61bbc-103">创建 telecomExpenseManagementPartner</span><span class="sxs-lookup"><span data-stu-id="61bbc-103">Create telecomExpenseManagementPartner</span></span>
+# <a name="create-telecomexpensemanagementpartner"></a><span data-ttu-id="007e3-103">创建 telecomExpenseManagementPartner</span><span class="sxs-lookup"><span data-stu-id="007e3-103">Create telecomExpenseManagementPartner</span></span>
 
-> <span data-ttu-id="61bbc-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="61bbc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="007e3-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="007e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="61bbc-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="61bbc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="007e3-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="007e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="61bbc-106">创建新的 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="61bbc-106">Create a new [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
+<span data-ttu-id="007e3-106">创建新的 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="007e3-106">Create a new [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="61bbc-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="61bbc-107">Prerequisites</span></span>
-<span data-ttu-id="61bbc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="61bbc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="007e3-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="007e3-107">Prerequisites</span></span>
+<span data-ttu-id="007e3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="007e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="61bbc-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="61bbc-110">Permission type</span></span>|<span data-ttu-id="61bbc-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="61bbc-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="007e3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="007e3-110">Permission type</span></span>|<span data-ttu-id="007e3-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="007e3-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="61bbc-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61bbc-112">Delegated (work or school account)</span></span>|<span data-ttu-id="61bbc-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61bbc-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="61bbc-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61bbc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="61bbc-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="61bbc-115">Not supported.</span></span>|
-|<span data-ttu-id="61bbc-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="61bbc-116">Application</span></span>|<span data-ttu-id="61bbc-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="61bbc-117">Not supported.</span></span>|
+|<span data-ttu-id="007e3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="007e3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="007e3-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="007e3-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="007e3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="007e3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="007e3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="007e3-115">Not supported.</span></span>|
+|<span data-ttu-id="007e3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="007e3-116">Application</span></span>|<span data-ttu-id="007e3-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="007e3-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="61bbc-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61bbc-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="007e3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="007e3-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ ms.locfileid: "35993478"
 POST /deviceManagement/telecomExpenseManagementPartners
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="61bbc-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="61bbc-119">Request headers</span></span>
-|<span data-ttu-id="61bbc-120">标头</span><span class="sxs-lookup"><span data-stu-id="61bbc-120">Header</span></span>|<span data-ttu-id="61bbc-121">值</span><span class="sxs-lookup"><span data-stu-id="61bbc-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="007e3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="007e3-119">Request headers</span></span>
+|<span data-ttu-id="007e3-120">标头</span><span class="sxs-lookup"><span data-stu-id="007e3-120">Header</span></span>|<span data-ttu-id="007e3-121">值</span><span class="sxs-lookup"><span data-stu-id="007e3-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="61bbc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="61bbc-122">Authorization</span></span>|<span data-ttu-id="61bbc-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="61bbc-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="61bbc-124">接受</span><span class="sxs-lookup"><span data-stu-id="61bbc-124">Accept</span></span>|<span data-ttu-id="61bbc-125">application/json</span><span class="sxs-lookup"><span data-stu-id="61bbc-125">application/json</span></span>|
+|<span data-ttu-id="007e3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="007e3-122">Authorization</span></span>|<span data-ttu-id="007e3-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="007e3-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="007e3-124">接受</span><span class="sxs-lookup"><span data-stu-id="007e3-124">Accept</span></span>|<span data-ttu-id="007e3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="007e3-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="61bbc-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="61bbc-126">Request body</span></span>
-<span data-ttu-id="61bbc-127">在请求正文中，提供 telecomExpenseManagementPartner 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="61bbc-127">In the request body, supply a JSON representation for the telecomExpenseManagementPartner object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="007e3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="007e3-126">Request body</span></span>
+<span data-ttu-id="007e3-127">在请求正文中，提供 telecomExpenseManagementPartner 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="007e3-127">In the request body, supply a JSON representation for the telecomExpenseManagementPartner object.</span></span>
 
-<span data-ttu-id="61bbc-128">下表显示创建 telecomExpenseManagementPartner 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="61bbc-128">The following table shows the properties that are required when you create the telecomExpenseManagementPartner.</span></span>
+<span data-ttu-id="007e3-128">下表显示创建 telecomExpenseManagementPartner 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="007e3-128">The following table shows the properties that are required when you create the telecomExpenseManagementPartner.</span></span>
 
-|<span data-ttu-id="61bbc-129">属性</span><span class="sxs-lookup"><span data-stu-id="61bbc-129">Property</span></span>|<span data-ttu-id="61bbc-130">类型</span><span class="sxs-lookup"><span data-stu-id="61bbc-130">Type</span></span>|<span data-ttu-id="61bbc-131">说明</span><span class="sxs-lookup"><span data-stu-id="61bbc-131">Description</span></span>|
+|<span data-ttu-id="007e3-129">属性</span><span class="sxs-lookup"><span data-stu-id="007e3-129">Property</span></span>|<span data-ttu-id="007e3-130">类型</span><span class="sxs-lookup"><span data-stu-id="007e3-130">Type</span></span>|<span data-ttu-id="007e3-131">说明</span><span class="sxs-lookup"><span data-stu-id="007e3-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="61bbc-132">id</span><span class="sxs-lookup"><span data-stu-id="61bbc-132">id</span></span>|<span data-ttu-id="61bbc-133">String</span><span class="sxs-lookup"><span data-stu-id="61bbc-133">String</span></span>|<span data-ttu-id="61bbc-134">TEM 合作伙伴的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="61bbc-134">Unique identifier of the TEM partner.</span></span>|
-|<span data-ttu-id="61bbc-135">displayName</span><span class="sxs-lookup"><span data-stu-id="61bbc-135">displayName</span></span>|<span data-ttu-id="61bbc-136">字符串</span><span class="sxs-lookup"><span data-stu-id="61bbc-136">String</span></span>|<span data-ttu-id="61bbc-137">TEM 合作伙伴的显示名称。</span><span class="sxs-lookup"><span data-stu-id="61bbc-137">Display name of the TEM partner.</span></span>|
-|<span data-ttu-id="61bbc-138">url</span><span class="sxs-lookup"><span data-stu-id="61bbc-138">url</span></span>|<span data-ttu-id="61bbc-139">String</span><span class="sxs-lookup"><span data-stu-id="61bbc-139">String</span></span>|<span data-ttu-id="61bbc-140">TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。</span><span class="sxs-lookup"><span data-stu-id="61bbc-140">URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.</span></span>|
-|<span data-ttu-id="61bbc-141">appAuthorized</span><span class="sxs-lookup"><span data-stu-id="61bbc-141">appAuthorized</span></span>|<span data-ttu-id="61bbc-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="61bbc-142">Boolean</span></span>|<span data-ttu-id="61bbc-143">是否已授权合作伙伴的 AAD 应用访问 Intune。</span><span class="sxs-lookup"><span data-stu-id="61bbc-143">Whether the partner's AAD app has been authorized to access Intune.</span></span>|
-|<span data-ttu-id="61bbc-144">enabled</span><span class="sxs-lookup"><span data-stu-id="61bbc-144">enabled</span></span>|<span data-ttu-id="61bbc-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="61bbc-145">Boolean</span></span>|<span data-ttu-id="61bbc-146">当前是启用还是禁用了 Intune 的 TEM 服务连接。</span><span class="sxs-lookup"><span data-stu-id="61bbc-146">Whether Intune's connection to the TEM service is currently enabled or disabled.</span></span>|
-|<span data-ttu-id="61bbc-147">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="61bbc-147">lastConnectionDateTime</span></span>|<span data-ttu-id="61bbc-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="61bbc-148">DateTimeOffset</span></span>|<span data-ttu-id="61bbc-149">TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。</span><span class="sxs-lookup"><span data-stu-id="61bbc-149">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
+|<span data-ttu-id="007e3-132">id</span><span class="sxs-lookup"><span data-stu-id="007e3-132">id</span></span>|<span data-ttu-id="007e3-133">String</span><span class="sxs-lookup"><span data-stu-id="007e3-133">String</span></span>|<span data-ttu-id="007e3-134">TEM 合作伙伴的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="007e3-134">Unique identifier of the TEM partner.</span></span>|
+|<span data-ttu-id="007e3-135">displayName</span><span class="sxs-lookup"><span data-stu-id="007e3-135">displayName</span></span>|<span data-ttu-id="007e3-136">字符串</span><span class="sxs-lookup"><span data-stu-id="007e3-136">String</span></span>|<span data-ttu-id="007e3-137">TEM 合作伙伴的显示名称。</span><span class="sxs-lookup"><span data-stu-id="007e3-137">Display name of the TEM partner.</span></span>|
+|<span data-ttu-id="007e3-138">url</span><span class="sxs-lookup"><span data-stu-id="007e3-138">url</span></span>|<span data-ttu-id="007e3-139">String</span><span class="sxs-lookup"><span data-stu-id="007e3-139">String</span></span>|<span data-ttu-id="007e3-140">TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。</span><span class="sxs-lookup"><span data-stu-id="007e3-140">URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.</span></span>|
+|<span data-ttu-id="007e3-141">appAuthorized</span><span class="sxs-lookup"><span data-stu-id="007e3-141">appAuthorized</span></span>|<span data-ttu-id="007e3-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="007e3-142">Boolean</span></span>|<span data-ttu-id="007e3-143">是否已授权合作伙伴的 AAD 应用访问 Intune。</span><span class="sxs-lookup"><span data-stu-id="007e3-143">Whether the partner's AAD app has been authorized to access Intune.</span></span>|
+|<span data-ttu-id="007e3-144">enabled</span><span class="sxs-lookup"><span data-stu-id="007e3-144">enabled</span></span>|<span data-ttu-id="007e3-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="007e3-145">Boolean</span></span>|<span data-ttu-id="007e3-146">当前是启用还是禁用了 Intune 的 TEM 服务连接。</span><span class="sxs-lookup"><span data-stu-id="007e3-146">Whether Intune's connection to the TEM service is currently enabled or disabled.</span></span>|
+|<span data-ttu-id="007e3-147">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="007e3-147">lastConnectionDateTime</span></span>|<span data-ttu-id="007e3-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="007e3-148">DateTimeOffset</span></span>|<span data-ttu-id="007e3-149">TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。</span><span class="sxs-lookup"><span data-stu-id="007e3-149">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="61bbc-150">响应</span><span class="sxs-lookup"><span data-stu-id="61bbc-150">Response</span></span>
-<span data-ttu-id="61bbc-151">如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="61bbc-151">If successful, this method returns a `201 Created` response code and a [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="007e3-150">响应</span><span class="sxs-lookup"><span data-stu-id="007e3-150">Response</span></span>
+<span data-ttu-id="007e3-151">如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="007e3-151">If successful, this method returns a `201 Created` response code and a [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="61bbc-152">示例</span><span class="sxs-lookup"><span data-stu-id="61bbc-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="007e3-152">示例</span><span class="sxs-lookup"><span data-stu-id="007e3-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="61bbc-153">请求</span><span class="sxs-lookup"><span data-stu-id="61bbc-153">Request</span></span>
-<span data-ttu-id="61bbc-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="61bbc-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="007e3-153">请求</span><span class="sxs-lookup"><span data-stu-id="007e3-153">Request</span></span>
+<span data-ttu-id="007e3-154">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="007e3-154">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 248
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="61bbc-155">响应</span><span class="sxs-lookup"><span data-stu-id="61bbc-155">Response</span></span>
-<span data-ttu-id="61bbc-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="61bbc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="007e3-155">响应</span><span class="sxs-lookup"><span data-stu-id="007e3-155">Response</span></span>
+<span data-ttu-id="007e3-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="007e3-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -99,6 +99,7 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 
