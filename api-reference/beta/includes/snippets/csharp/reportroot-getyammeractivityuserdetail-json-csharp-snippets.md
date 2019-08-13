@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 18b2c35c2e44f3172172be1db4c52bd012fd810a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f78b9950402aa3e1b31bfa29fb66e0dccbc4e5e9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871551"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36358585"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getYammerActivityUserDetail = await graphClient.Reports
-    .GetYammerActivityUserDetail('D7')
+    .GetYammerActivityUserDetail("D7")
     .Request()
     .GetAsync();
 

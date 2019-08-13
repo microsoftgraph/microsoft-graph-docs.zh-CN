@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca8511f584ae0fe69ee558d4808e333d57259142
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d2aa07ae9064a6e7d04ea7e2f0dc07e06cfb627
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006092"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366887"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36006092"
   "action": "String"
 }
 ```
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 34eca7db2a510a5710de57129771b5758abab45a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 16a7cd32d1b9fb418fb3a913225568bd76c2cfa4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873105"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36360047"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ISiteActivitySummaryCollectionPage getOneDriveActivityUserCounts = graphClient.reports()
-    .getOneDriveActivityUserCounts('D7')
+    .getOneDriveActivityUserCounts("D7")
     .buildRequest()
     .get();
 

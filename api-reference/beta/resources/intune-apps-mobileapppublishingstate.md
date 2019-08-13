@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 98cdcc5db786de9ca38a9a25bfb21ba00e8418b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b117e328d5f99f1a382e5a9964fbeec51b594910
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971660"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367447"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35971660"
 |notPublished|0|应用尚未发布。|
 |处理|1|应用程序正在等待服务端处理。|
 |发布|双面|应用程序已发布。|
-
-
 
 
 

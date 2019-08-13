@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1df54139292a3a641c2c58bfa379c8c17087b3ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ca1c9e911fde412a3fb03b4a05af9edd69fe1c2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001220"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357115"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>iosEasEmailProfileConfiguration 资源类型
 
@@ -154,8 +154,6 @@ ms.locfileid: "36001220"
   "encryptionCertificateType": "String"
 }
 ```
-
-
 
 
 

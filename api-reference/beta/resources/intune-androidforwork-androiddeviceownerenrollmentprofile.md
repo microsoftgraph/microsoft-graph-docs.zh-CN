@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4aa50fdbfeaf4249296c67804dff4e95e3ac8e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba0d5bcef1e1580b27fde4292c248879dda14868
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006204"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366306"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "36006204"
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|scopeTags|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -78,13 +78,11 @@ ms.locfileid: "36006204"
     "type": "String",
     "value": "binary"
   },
-  "scopeTags": [
+  "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
-
 
 
 

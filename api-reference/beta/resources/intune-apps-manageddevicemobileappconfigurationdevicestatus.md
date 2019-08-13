@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b412bad72649f1965e9945a9dacf03d6ce6cf3e2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3037e019409e90792880feb525076ddf2950e8a9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005315"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366663"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>managedDeviceMobileAppConfigurationDeviceStatus 资源类型
 
@@ -67,8 +67,6 @@ ms.locfileid: "36005315"
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

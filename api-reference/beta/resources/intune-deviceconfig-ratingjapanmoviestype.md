@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae17593fdf05f34182fd6b53bfd60da3859c03ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8511194966f2bc0bb2a1de95ff0b554be714c232
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969812"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368231"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35969812"
 |parentalGuidance|第三章|PG-12 分类请求适用于12岁的年轻人的家长指导|
 |agesAbove15|4|R15 + 分类适用于15或更旧的查看者|
 |agesAbove18|5|R18 + 分类适用于18岁或更早的观众|
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 689b78ad1c97d65c555ff9357f97c2425a541af7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 2a15421470b01db7be64ef4927a5c4ebfb0fe5e2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873260"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36360346"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IOffice365GroupsActivityStorageCollectionPage getOffice365GroupsActivityStorage = graphClient.reports()
-    .getOffice365GroupsActivityStorage('D7')
+    .getOffice365GroupsActivityStorage("D7")
     .buildRequest()
     .get();
 

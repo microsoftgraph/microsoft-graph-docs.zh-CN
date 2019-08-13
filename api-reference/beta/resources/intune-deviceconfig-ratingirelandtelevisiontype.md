@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e58781065d290a44e187aff8f11c746affe0474
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ba15fb73b3d6415a4f8737b4148b0374d23f2e5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000660"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368245"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36000660"
 |youngAdults|4|YA 分类适用于 teenage 访问群体|
 |parentalSupervision|5|PS 分类邀请家长和监护人来考虑限制儿童的访问权限|
 |成熟|型|MA 分类适用于成年人|
-
-
 
 
 

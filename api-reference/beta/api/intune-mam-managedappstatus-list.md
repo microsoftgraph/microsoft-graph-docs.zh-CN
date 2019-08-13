@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da26b927b43aa504f2147da43a8a5c92dc61e1cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c264aabc08f7d7b9900b2076bcc25848a97e7ab6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994542"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354056"
 ---
 # <a name="list-managedappstatuses"></a>列出 managedAppStatuses
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994542"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -76,6 +76,7 @@ Content-Length: 227
   ]
 }
 ```
+
 
 
 

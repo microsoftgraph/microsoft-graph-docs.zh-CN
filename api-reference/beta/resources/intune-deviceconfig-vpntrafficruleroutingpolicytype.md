@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5cbbba22017a40ae2f7db41e25f497c09156a2f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 529c42722d8ce3827bb9daa4c0f158cfd92d8383
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969371"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367517"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35969371"
 |无|0|未指定路由策略。|
 |splitTunnel|1|将通过 VPN 路由指定应用的网络流量。|
 |forceTunnel|双面|所有网络流量将通过 VPN 路由。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dfc9dbb0f60cf6e7bcb9a2f695d9758298150585
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df996a3267cc31b80456b74ca6002d3a95467e79
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000667"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368203"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -34,8 +34,6 @@ ms.locfileid: "36000667"
 |agesAbove18|utf-8|R18 分类限制为18年以上及以上的人员|
 |受限|第|将 R 分类限制为特定访问群体|
 |agesAbove16Restricted|10 |RP16 分类要求在16下有一个父或成年人的查看者|
-
-
 
 
 

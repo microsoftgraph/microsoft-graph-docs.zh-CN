@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 945cd410947ed9051951909d8db2cd2c0df73a90
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57bde7d0658c78a1dd7684342d861add9a167156
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971702"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366215"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings 资源类型
 
@@ -89,8 +89,6 @@ ms.locfileid: "35971702"
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
-
 
 
 

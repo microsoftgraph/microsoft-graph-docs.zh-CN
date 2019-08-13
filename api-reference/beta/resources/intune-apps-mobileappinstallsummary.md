@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e836ba4458c72b9ab017fe499634caec79cce551
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47134c68692d588505f3aee89bbdfeb3f0e5e677
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012448"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366544"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary 资源类型
 
@@ -68,8 +68,6 @@ ms.locfileid: "36012448"
   "pendingInstallUserCount": 1024
 }
 ```
-
-
 
 
 

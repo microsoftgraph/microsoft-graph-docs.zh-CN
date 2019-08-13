@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 539c1974505e248bc700a9d804d06c6f8bc4b257
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3cb8c437d5cb943ef4d6f76ed515b917f8a3e10a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005532"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366061"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings 资源类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "36005532"
 |属性|类型|说明|
 |:---|:---|:---|
 |vpnConfigurationId|String|要申请此应用的 VPN 配置 ID。|
+|uninstallOnDeviceRemoval|Boolean|从 Intune 中删除设备时是否卸载应用程序。|
 
 ## <a name="relationships"></a>关系
 无
@@ -41,11 +42,10 @@ ms.locfileid: "36005532"
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosLobAppAssignmentSettings",
-  "vpnConfigurationId": "String"
+  "vpnConfigurationId": "String",
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
-
 
 
 

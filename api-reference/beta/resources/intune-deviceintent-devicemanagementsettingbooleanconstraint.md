@@ -4,12 +4,13 @@ description: 约束强制实施特定的布尔值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 291ee5fa97c0c7b6c77580f2cc55ffce3ff37fdd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9a83a0747e0960aeebaa0de472fae4d587111946
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963959"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364724"
 ---
 # <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>deviceManagementSettingBooleanConstraint 资源类型
 
@@ -43,8 +44,6 @@ ms.locfileid: "34963959"
   "value": true
 }
 ```
-
-
 
 
 
