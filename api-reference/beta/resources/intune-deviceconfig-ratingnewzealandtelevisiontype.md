@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d3201bd3eb23a30633df61a2446e89e1bdef5a71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4aa8ef45e3abe74aa235e7340fd21fa73e083099
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969784"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368189"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35969784"
 |概要|双面|G 分类排除了可能对14下的儿童造成损害的材料|
 |parentalGuidance|第三章|PGR 分类鼓励家长和监护人监督年轻的查看者|
 |成人|4|AO 分类不适用于儿童|
-
-
 
 
 

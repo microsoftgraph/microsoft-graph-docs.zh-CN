@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 576092233498ac86a858a17a6f2e476a72480f36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1762e952bbebfc985f9af9694bfb14e0bdd7d19f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969385"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367545"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35969385"
 |无|0|流量规则不与应用关联。|
 |desktop|1|流量规则与桌面应用程序相关联。|
 |普遍|双面|流量规则与通用应用程序相关联。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68b7882da1c223d3b06dec7082fa2ae9d002f251
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b86d6d6ddad847b1a4b39fd96d61f619e19afaac
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999393"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365221"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp 资源类型
 
@@ -35,7 +35,6 @@ Windows 管理应用实体。
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Windows management 应用的运行状况摘要。|
 |healthStates|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)集合|已安装的 Windows management 应用的运行状况状态列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -53,8 +52,6 @@ Windows 管理应用实体。
   "availableVersion": "String"
 }
 ```
-
-
 
 
 

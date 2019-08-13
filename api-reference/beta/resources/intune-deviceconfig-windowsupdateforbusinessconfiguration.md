@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98de100699da3a0fba9e82995be77fa5bbb9ecd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb2be4e3153d6de8e8af9fa540f97f229088146f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000163"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369540"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 
@@ -73,6 +73,10 @@ ms.locfileid: "36000163"
 |engagedRestartDeadlineInDays|Int32|在非活动时段自动安排和执行挂起的重启的期限 (以天为单位), 有效范围为2到30天|
 |engagedRestartSnoozeScheduleInDays|Int32|用户可推迟预定重启提醒通知的天数, 有效范围为1到3天|
 |engagedRestartTransitionScheduleInDays|Int32|从主动时段之外的计划的自动重启转换为预定重启 (需要用户进行计划, 有效范围为0到30天) 的天数|
+|deadlineForFeatureUpdatesInDays|Int32|自动安装具有介于2到30天的有效范围的功能更新之前的天数|
+|deadlineForQualityUpdatesInDays|Int32|自动安装质量更新前的天数介于2到30天的有效范围内|
+|deadlineGracePeriodInDays|Int32|使用有效范围 (范围为0到7天) 自动重新启动之前的最后期限的天数|
+|postponeRebootUntilAfterDeadline|Boolean|指定设备是否应等到最后期限结束后才能在 active 时段之外进行重新启动|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|指定用于消除 "需要自动重新启动" 通知的方法。 可取值为：`notConfigured`、`automatic`、`user`。|
 |scheduleRestartWarningInHours|Int32|指定自动重新启动警告提醒通知的期限。 支持的值: 2、4、8、12或 24 (小时)。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重启即将发生的警告通知的期限。 支持的值:15、30或 60 (分钟)。|
@@ -163,6 +167,10 @@ ms.locfileid: "36000163"
   "engagedRestartDeadlineInDays": 1024,
   "engagedRestartSnoozeScheduleInDays": 1024,
   "engagedRestartTransitionScheduleInDays": 1024,
+  "deadlineForFeatureUpdatesInDays": 1024,
+  "deadlineForQualityUpdatesInDays": 1024,
+  "deadlineGracePeriodInDays": 1024,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
   "scheduleImminentRestartWarningInMinutes": 1024,
@@ -171,8 +179,6 @@ ms.locfileid: "36000163"
   "updateNotificationLevel": "String"
 }
 ```
-
-
 
 
 

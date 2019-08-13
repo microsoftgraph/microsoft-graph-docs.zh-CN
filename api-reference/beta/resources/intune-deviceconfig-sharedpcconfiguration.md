@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61b93e6721144215cc4f961e6bde2e6e01d0ad41
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e379715df7dd4d28b8cd905415080a0f4410c33
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000513"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367951"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration 资源类型
 
@@ -144,8 +144,6 @@ ms.locfileid: "36000513"
   "fastFirstSignIn": "String"
 }
 ```
-
-
 
 
 

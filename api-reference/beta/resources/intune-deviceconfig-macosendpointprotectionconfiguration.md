@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87ca81c7ae47abd7a278aabade15548a7cd2d720
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2b9232e6cdc8b7549668f3fe93bb86400cad8848
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970211"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356639"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>macOSEndpointProtectionConfiguration 资源类型
 
@@ -138,8 +138,6 @@ MacOS endpoint protection 配置文件。
   "fileVaultPersonalRecoveryKeyRotationInMonths": 1024
 }
 ```
-
-
 
 
 

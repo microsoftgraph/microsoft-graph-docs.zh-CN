@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0202378f9ad582559dc0a60181ec9b4ca0bbe2c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b398e6b78946d1d804e61d84d512261a106aa20e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006176"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366957"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 
@@ -31,8 +31,6 @@ Android 应用程序的自定义配置架构中的配置项目的数据类型
 |bundle|5|尚未记录|
 |bundleArray|型|尚未记录|
 |hidden|步|尚未记录|
-
-
 
 
 

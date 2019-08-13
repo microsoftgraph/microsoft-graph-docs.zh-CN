@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad29f8da4ae24d87e4edb112b144a4f3a2713e8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 41e18a93b32d646501af1da62c07bb5764ea1f89
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967131"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356583"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>intuneBrandingProfileAssignment 资源类型
 
@@ -55,8 +55,6 @@ ms.locfileid: "35967131"
   }
 }
 ```
-
-
 
 
 

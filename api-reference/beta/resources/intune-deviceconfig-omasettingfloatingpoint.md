@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e62fc6f4a1f8df657195551f42f83e22168c73b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7105cf54323a76f2d08552b18dbb04d623e800b7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969931"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368483"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint 资源类型
 
@@ -50,8 +50,6 @@ OMA 设置浮点定义。
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9356a4aac345137ba93dc85914ddc1a12e44233f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab1b47ac9371c0a0806ff03e18bf9cc7eed577f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968552"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369463"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>configurationManagerClientHealthState 资源类型
 
@@ -45,8 +45,6 @@ ms.locfileid: "35968552"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

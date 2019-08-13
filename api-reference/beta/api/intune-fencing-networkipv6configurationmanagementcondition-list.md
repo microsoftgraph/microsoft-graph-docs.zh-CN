@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e38a6fa5c1c36fc215c82757e4868e84c440a68
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a0aa5745baa7771e8370b62446d8949184857666
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990132"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355428"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>列出 networkIPv6ConfigurationManagementConditions
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990132"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -92,6 +92,7 @@ Content-Length: 760
   ]
 }
 ```
+
 
 
 

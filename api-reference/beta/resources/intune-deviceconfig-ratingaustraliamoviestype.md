@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 968e6e4cd0fdb7c0b2bf0ca203fb57d6cd2085bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 638c87c8ae9175f63efe7cb9e91db72ab11edd8a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969875"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368371"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35969875"
 |成熟|4|不建议在15下对查看器使用 M 分类|
 |agesAbove15|5|MA15 + 分类不适用于15岁以上的查看器|
 |agesAbove18|型|R18 + 分类不适用于18岁以上的观众|
-
-
 
 
 

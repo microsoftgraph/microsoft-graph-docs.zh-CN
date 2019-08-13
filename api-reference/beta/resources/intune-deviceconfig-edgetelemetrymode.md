@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: feeecf706a262d38bf956a49bc27d5d32e1e8ddb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa6ea5a2bf187a753705b369f3f8a2558860c3eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001402"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357269"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>edgeTelemetryMode 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36001402"
 |在内|1|仅允许发送 intranet 历史记录: 仅发送 intranet 网站的浏览历史记录数据|
 |访问|双面|仅允许发送 internet 历史记录: 仅发送 internet 网站的浏览历史记录数据|
 |intranetAndInternet|第三章|允许同时发送 intranet 和 internet 历史记录: 为 intranet 和 internet 站点发送浏览历史记录数据|
-
-
 
 
 

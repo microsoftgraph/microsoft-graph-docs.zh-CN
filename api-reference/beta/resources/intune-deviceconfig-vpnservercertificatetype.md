@@ -4,12 +4,13 @@ description: VPN 服务器将提供给 VPN 客户端进行身份验证的证书�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8dfb47dd42056e09c02ca4239ac3a7a2ea12190
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c6b7b9a915383a1e53889add868ee2fa061a9dc7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002068"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367573"
 ---
 # <a name="vpnservercertificatetype-enum-type"></a>vpnServerCertificateType 枚举类型
 
@@ -26,8 +27,6 @@ VPN 服务器将提供给 VPN 客户端进行身份验证的证书类型
 |ecdsa256|1|ECDSA256|
 |ecdsa384|双面|ECDSA384|
 |ecdsa521|第三章|ECDSA521|
-
-
 
 
 

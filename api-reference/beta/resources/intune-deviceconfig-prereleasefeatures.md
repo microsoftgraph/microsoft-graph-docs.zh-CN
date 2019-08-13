@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f809bf6c7ed27825dbda848b3ebb35377ce2bf01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: daf29a7297451de6904ddb590f7b259bb390d0eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000828"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368406"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36000828"
 |settingsOnly|1|仅设置预发布功能。|
 |settingsAndExperimentations|双面|设置和 experimentations 预发布功能。|
 |notAllowed|第三章|不允许使用预发布功能。|
-
-
 
 
 

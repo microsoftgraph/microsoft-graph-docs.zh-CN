@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1c2d631d4cf4ab709f16b40c7d53314c60cda6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47ad74f285303011f0853f8d011cf744fabb98d5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970365"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356863"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration 资源类型
 
@@ -116,8 +116,6 @@ IOS 更新配置，允许配置一周内的时间范围，用于安装 iOS 更�
   "enforcedSoftwareUpdateDelayInDays": 1024
 }
 ```
-
-
 
 
 

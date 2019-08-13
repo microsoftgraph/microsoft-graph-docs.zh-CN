@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2f00dbc0a34780b7384b1d2f95e10240c620fd1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6fa22f9370520b98a87273c364299eabe520652d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000100"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369519"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>windowsUpdateInstallScheduleType 资源类型
 
@@ -39,8 +39,6 @@ ms.locfileid: "36000100"
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
-
-
 
 
 

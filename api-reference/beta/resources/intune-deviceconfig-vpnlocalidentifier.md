@@ -4,12 +4,13 @@ description: VPN 本地标识符的类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62dcdce3cfb4d5466d8c50a44ac5ee3ec825310a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 0ae237e2734b3fa7603db1431944349a8cee295e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730634"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367685"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>vpnLocalIdentifier 枚举类型
 
@@ -25,8 +26,6 @@ VPN 本地标识符的类型
 |deviceFQDN|0|设备完全限定的域名称|
 |empty|1|Empty|
 |clientCertificateSubjectName|双面|客户端证书主题名称|
-
-
 
 
 

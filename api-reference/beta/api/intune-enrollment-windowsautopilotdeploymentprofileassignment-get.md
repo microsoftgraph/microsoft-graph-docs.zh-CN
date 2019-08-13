@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a0d73b3a3650f53ad20ddeb0cb0f3fcabe7f3b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0daadd08932a9abf0032f7a0245d08e818a3eef9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980910"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356072"
 ---
 # <a name="get-windowsautopilotdeploymentprofileassignment"></a>获取 windowsAutopilotDeploymentProfileAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980910"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 261
   }
 }
 ```
+
 
 
 

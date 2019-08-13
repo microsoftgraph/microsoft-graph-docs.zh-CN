@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbc802ef17c6e83d10f93661e7aca05cdc2cee02
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2b300f3d0db3a2a310d0a19408750b1dd9ac5c46
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969980"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368546"
 ---
 # <a name="numberrange-resource-type"></a>numberRange 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "35969980"
   "upperNumber": 1024
 }
 ```
-
-
 
 
 

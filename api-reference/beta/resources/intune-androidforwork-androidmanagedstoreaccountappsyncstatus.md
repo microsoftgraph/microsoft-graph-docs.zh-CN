@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f210612428a3a664a253bcf75669da03bf89bda1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24de6f257f98c5c0d057ad8e3e162fc8f3f7b9ad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005602"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367006"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>androidManagedStoreAccountAppSyncStatus 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36005602"
 |managementServiceError|第三章|尚未记录|
 |unknownError|4|尚未记录|
 |无|5|尚未记录|
-
-
 
 
 
