@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 753123c2cee6ddf670c983f2c56f5e8f53877716
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e8ee9b149c6a7b3fc4f4e4e496aaefe8a9a3852
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026871"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327126"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6bd0374a0e56b88bd7d8c5f231cf861fe7f0d7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb3ae49f62adb674255713d5cfb1949e9bacd39b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005238"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308265"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp 资源类型
 
@@ -109,8 +109,6 @@ ms.locfileid: "36005238"
   "size": 1024
 }
 ```
-
-
 
 
 

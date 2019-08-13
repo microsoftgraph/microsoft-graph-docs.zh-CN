@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c3b28e438eab3be7f034dc197054b0d271f17bf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6d0783637f4b4892956f32f68227fa2a0b6c074a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958282"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310113"
 ---
 # <a name="rotatefilevaultkey-action"></a>rotateFileVaultKey 操作
 
@@ -26,7 +27,7 @@ ms.locfileid: "34958282"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +66,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

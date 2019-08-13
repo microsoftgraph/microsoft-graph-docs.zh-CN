@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ea94f8f8803c268c83d9c6419ad7128339e6d4cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca37de06d50f57eda6c094f195fb5f291181034a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000002"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337585"
 ---
 # <a name="apploguploadstate-enum-type"></a>appLogUploadState 枚举类型
 
@@ -26,8 +26,6 @@ AppLogUploadStatus
 |决|0|请求正在等待处理或在处理|
 |后|1|请求已完成, 且文件已上载到 Azure blob 以供下载。|
 |未能|双面|请求已完成处理且处于错误状态。|
-
-
 
 
 

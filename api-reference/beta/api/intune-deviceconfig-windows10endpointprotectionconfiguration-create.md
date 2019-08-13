@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6080578ae14d0446ca725247be6baa9d7633058e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1207a4f26fbfc64f2be23aa3d6779959cc16e9ee
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976934"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314614"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>创建 windows10EndpointProtectionConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35976934"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -94,7 +94,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定允许哪些用户从网络上的远程位置关闭计算机。 误用此用户权限可能会导致拒绝服务。 仅支持 NotConfigured 和允许的状态。|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定在还原备份的文件和目录时, 哪些用户可以绕过文件、目录、注册表和其他持久对象权限, 并确定哪些用户可以将任何有效的安全主体设置为对象的所有者。 仅支持 NotConfigured 和允许的状态。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户可以获得系统中任何安全对象的所有权, 包括 Active Directory 对象、文件和文件夹、打印机、注册表项、进程和线程。 仅支持 NotConfigured 和允许的状态。|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此安全设置确定阻止将进程注册为服务的服务帐户。 注意: 此安全设置不适用于系统、本地服务或网络服务帐户。 仅支持阻止状态。|
 |xboxServicesEnableXboxGameSaveTask|Boolean|此设置确定是否启用了 xbox 游戏保存 (1) 或禁用 (0)。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定附件管理服务的启动类型是 "自动" (2)、"手动" (3)、"已禁用" (4)。 默认: 手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定 Live Auth Manager 服务的启动类型是否为自动 (2)、手动 (3)、已禁用 (4)。 默认: 手动。 可取值为：`manual`、`automatic`、`disabled`。|
@@ -254,7 +253,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 28958
+Content-length: 28536
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -664,18 +663,6 @@ Content-length: 28958
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "blocked",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "Name value",
-        "description": "Description value",
-        "securityIdentifier": "Security Identifier value"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
   "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -953,7 +940,7 @@ Content-length: 28958
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 29130
+Content-Length: 28708
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1366,18 +1353,6 @@ Content-Length: 29130
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "blocked",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "Name value",
-        "description": "Description value",
-        "securityIdentifier": "Security Identifier value"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
   "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -1649,6 +1624,7 @@ Content-Length: 29130
   }
 }
 ```
+
 
 
 

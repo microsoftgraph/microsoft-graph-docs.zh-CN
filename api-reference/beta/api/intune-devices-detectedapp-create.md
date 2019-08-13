@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b483ce89b4d187d178018db12b99064230e4d8d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc94785ac40cae870edf7abfdd0071406c50d00d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986104"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310638"
 ---
 # <a name="create-detectedapp"></a>创建 detectedApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986104"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -97,6 +97,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

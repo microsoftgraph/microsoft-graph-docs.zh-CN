@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0742621ccf5261c3d4e3d9de5d185aa7e0ec3dfa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f15634242219ebfc56f0cc4c533661c55863a279
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030525"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327128"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/education
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-education-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-education-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

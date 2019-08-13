@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f4e5a1650e2c75ec16c7625597fccd6111d94b83
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ee600d6813e848cb95b2f57abace40b86f40f33c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976255"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309406"
 ---
 # <a name="delete-photo"></a>删除照片
 
@@ -61,7 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

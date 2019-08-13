@@ -4,12 +4,13 @@ description: 设备应用程序管理任务。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2767ec1fee73f7bc9cdc774d53f5d985cdfd2439
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4097125b35f0dc5149315157d3e332204e2b1f78
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001886"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308216"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>deviceAppManagementTask 资源类型
 
@@ -71,8 +72,6 @@ ms.locfileid: "35001886"
   "status": "String"
 }
 ```
-
-
 
 
 

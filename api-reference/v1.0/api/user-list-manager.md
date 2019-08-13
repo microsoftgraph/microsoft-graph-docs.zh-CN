@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 847e207fcc5ec85399f53b59b16c3dc9a4ff34cc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03e8639bdd8bcd95566ae7817fb5a1004377fc0c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026864"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327155"
 ---
 # <a name="list-manager"></a>列出经理
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

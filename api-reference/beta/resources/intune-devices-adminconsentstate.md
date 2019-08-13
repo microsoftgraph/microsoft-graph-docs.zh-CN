@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a9f2d5af545399a02458e174d7c05128a3ef4e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f69fb5d521654ca8adcb2877698d94fc3da8bb7c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000072"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319291"
 ---
 # <a name="adminconsentstate-enum-type"></a>adminConsentState 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000072"
 |notConfigured|0|管理员未配置项目|
 |granted|1|管理员授予的项目|
 |notGranted|双面|Admin deos 不授予项目|
-
-
 
 
 

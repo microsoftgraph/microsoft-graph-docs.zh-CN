@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95b52cff4abf20b46bb4d23102118f1832ebb65a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 87514298b2cb19fb980142954cd386b76bbc9ec8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981827"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313606"
 ---
 # <a name="update-windowswificonfiguration"></a>更新 windowsWifiConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981827"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -193,6 +193,7 @@ Content-Length: 1731
   "forceFIPSCompliance": true
 }
 ```
+
 
 
 

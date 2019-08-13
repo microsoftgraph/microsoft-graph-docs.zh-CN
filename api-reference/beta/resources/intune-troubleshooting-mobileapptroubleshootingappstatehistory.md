@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d145212645283738d1248bd05c50b1f6658460f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62c57d4ed01ab1f454a5356899f9645927680dfd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967215"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313046"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "35967215"
 |属性|类型|说明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Intune 应用程序的操作类型。 可取值为：`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall`。|
-|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`。|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|目标为的 AAD 安全组 id。 可取值为：`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall`。|
+|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`、`error`、`pending`。|
 |errorCode|String|失败的错误代码, 如果没有失败, 则为空。|
 
 ## <a name="relationships"></a>关系
@@ -50,8 +50,6 @@ ms.locfileid: "35967215"
   "errorCode": "String"
 }
 ```
-
-
 
 
 

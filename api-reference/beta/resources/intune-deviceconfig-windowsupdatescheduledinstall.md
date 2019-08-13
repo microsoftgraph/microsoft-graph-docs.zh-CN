@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5819770fb09c36240761a5b54deee4bbe7c638a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 93866da8e1dff5b53303dfd6cbd358fc0280ee30
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000114"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337683"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "36000114"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|每周的计划安装日期。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
+|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|每周的计划安装日期。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
 |scheduledInstallTime|TimeOfDay|一天中的计划安装时间|
 
 ## <a name="relationships"></a>关系
@@ -46,8 +46,6 @@ ms.locfileid: "36000114"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
-
 
 
 

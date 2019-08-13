@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4944cbb0b360f25f90727593caa6fa8de4456cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8903505561f59cd4ae02ae8037bbcab9910e6a7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985453"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309742"
 ---
 # <a name="list-depenrollmentprofiles"></a>列出 depEnrollmentProfiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985453"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 1588
   ]
 }
 ```
+
 
 
 

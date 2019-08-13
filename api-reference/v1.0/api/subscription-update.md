@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 97fb5ceff0c77da2a4e86998299e4a26039fcc28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f0a94b2ed115bf9d0652934cb00f31cd291dc2c0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024593"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341779"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -87,7 +87,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

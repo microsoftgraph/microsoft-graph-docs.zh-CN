@@ -2,12 +2,15 @@
 title: 列出 NamedItemCollection
 description: 检索 nameditem 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 3ef7a99cc9d07cf80be2129be51517c5ecf55037
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: e6e4c3e7d80863d6b10da0018472c4c4be2a86e6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890247"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374573"
 ---
 # <a name="list-nameditemcollection"></a>列出 NamedItemCollection
 
@@ -57,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-nameditemcollection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-nameditemcollection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

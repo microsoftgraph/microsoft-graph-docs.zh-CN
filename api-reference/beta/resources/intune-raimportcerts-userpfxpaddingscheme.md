@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a3c4d4d07a3891167838af6de7ea854883a5b1e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f9a882cd1fdc788782a7c68df1ad38c6cc8d37e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967698"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308132"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 
@@ -23,14 +23,12 @@ ms.locfileid: "35967698"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|不使用填充。|
-|pkcs1|1|使用 PKCS # 1 填充。|
-|oaepSha1|双面|使用 OAEP SHA-1 填充。|
-|oaepSha256|第三章|使用 OAEP SHA-256 填充。|
-|oaepSha384|4|使用 OAEP SHA-384 填充。|
-|oaepSha512|5|使用 OAEP SHA-512 填充。|
-
-
+|无|0|尚未记录|
+|pkcs1|1|尚未记录|
+|oaepSha1|双面|尚未记录|
+|oaepSha256|第三章|尚未记录|
+|oaepSha384|4|尚未记录|
+|oaepSha512|5|尚未记录|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47db108140eba46e3e32b149c49c1e3688e92871
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9efb85223ef27d2c2bd1ac2d38bc9a69340cb5fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981715"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310484"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981715"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -123,6 +123,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

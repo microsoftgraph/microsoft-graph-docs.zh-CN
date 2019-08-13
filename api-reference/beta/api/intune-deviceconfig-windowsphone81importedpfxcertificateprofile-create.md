@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74a29c7a7883ea6bd4561d6c4c566b7415206519
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e616915d07b435134dd8f65fb483253c209e6f3b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982114"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313998"
 ---
 # <a name="create-windowsphone81importedpfxcertificateprofile"></a>创建 windowsPhone81ImportedPFXCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35982114"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -174,6 +174,7 @@ Content-Length: 1536
   "intendedPurpose": "smimeEncryption"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0041ebeb336ba787ef6b77b4eb6901add04cf1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1966be8f5cf8b177df10dd5bc239f0046957f4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975107"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314264"
 ---
 # <a name="update-windows10vpnconfiguration"></a>更新 windows10VpnConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975107"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -393,6 +393,7 @@ Content-Length: 4332
   ]
 }
 ```
+
 
 
 

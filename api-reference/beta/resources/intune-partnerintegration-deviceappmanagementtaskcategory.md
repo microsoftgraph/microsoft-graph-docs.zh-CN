@@ -4,12 +4,13 @@ description: 设备应用管理任务类别。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db4467228c0e623ed5e4559dc77b02e4e77ed6b6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0f951b92b047158e3b016af54b7e45b571e7349b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002600"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308202"
 ---
 # <a name="deviceappmanagementtaskcategory-enum-type"></a>deviceAppManagementTaskCategory 枚举类型
 
@@ -24,8 +25,6 @@ ms.locfileid: "35002600"
 |:---|:---|:---|
 |unknown|0|未知源。|
 |高级威胁防护|1|Windows Defender ATP 威胁 & 漏洞管理。|
-
-
 
 
 

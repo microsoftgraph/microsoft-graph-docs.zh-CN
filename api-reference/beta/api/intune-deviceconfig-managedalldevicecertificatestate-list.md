@@ -4,12 +4,13 @@ description: 列出 managedAllDeviceCertificateState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c99115cc752645af68c16bc722cd85f78d07e9d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 67f2cb17e099f902c4acbcd00e59b2f59c3be856
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725872"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315020"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>列出 managedAllDeviceCertificateStates
 
@@ -26,7 +27,7 @@ ms.locfileid: "35725872"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -84,6 +85,7 @@ Content-Length: 869
   ]
 }
 ```
+
 
 
 

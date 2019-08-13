@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b3689a36a081f1d81aa464eb4ac813e13aeffb9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00a865571b639449c4cc7237c6f9fe7349532ca8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947086"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315188"
 ---
 # <a name="get-macosscepcertificateprofile"></a>获取 macOSScepCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947086"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -135,6 +135,7 @@ Content-Length: 2273
   }
 }
 ```
+
 
 
 

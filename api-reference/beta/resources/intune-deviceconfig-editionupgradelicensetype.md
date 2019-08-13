@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cac77db53b4740e3ba11dbcff4b21774643bdb67
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2f8b668b09c22227e4c7ac6d70cf5c4b3b45d40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001437"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325664"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36001437"
 |productKey|0|产品密钥类型|
 |licenseFile|1|许可证文件类型|
 |notConfigured|双面|NotConfigured|
-
-
 
 
 

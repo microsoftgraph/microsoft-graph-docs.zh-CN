@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 从 list 中删除项。
 doc_type: apiPageType
-ms.openlocfilehash: 9f87510a1b5a773f49ad3a9bb265391647de3ce3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac07e03892476ad160f76dd49ced3b2bcb63ace6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023148"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374017"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-item-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-item-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

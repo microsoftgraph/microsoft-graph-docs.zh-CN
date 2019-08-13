@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementIntentAssignment 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85766b60a3d214e9de6ebb27a132e10ce8d6f4cd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 573612fd318513b58da4c05351b8d785920811f5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960424"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313242"
 ---
 # <a name="create-devicemanagementintentassignment"></a>创建 deviceManagementIntentAssignment
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960424"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -90,6 +91,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

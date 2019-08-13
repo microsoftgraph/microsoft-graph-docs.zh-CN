@@ -4,12 +4,13 @@ description: 读取 deviceManagementTemplateSettingCategory 对象的属性和�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 710e5bcfdbb565ab2a9d4c4bdc305537f5be3aa7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d485a7599909899cb813b27bfd9d8954fc077165
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959668"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313088"
 ---
 # <a name="get-devicemanagementtemplatesettingcategory"></a>获取 deviceManagementTemplateSettingCategory
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959668"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -75,6 +76,7 @@ Content-Length: 195
   }
 }
 ```
+
 
 
 
