@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d69f5504e94e60b568302cd6e4fbd5c071362643
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24ce4a2569926242f39167bc19da7ecd36848a03
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998512"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332370"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
@@ -182,8 +182,6 @@ ms.locfileid: "35998512"
   "customBrowserDisplayName": "String"
 }
 ```
-
-
 
 
 

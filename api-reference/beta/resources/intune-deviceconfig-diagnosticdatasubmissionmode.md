@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 788da8fd9a239bf26dfd2d9e8d8fbf308d059784
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fce6bbe40d985c15c5455c3b83de88ced4cce768
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004538"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332685"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "36004538"
 |vba|双面|发送基本遥测数据。|
 |有所|第三章|发送包含使用率和见解数据的增强遥测数据。|
 |全|4|发送包含诊断数据 (如系统状态) 的完整遥测数据。|
-
-
 
 
 

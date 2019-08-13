@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a6d1c9ed13b35db03d9774bd5da120016d74be8e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71289222f75e37e9fa55edd2ccd15e8c684800f4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967999"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332146"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35967999"
 |allApps|0|所有应用程序。|
 |managedApps|1|托管应用。|
 |无|双面|无应用。|
-
-
 
 
 

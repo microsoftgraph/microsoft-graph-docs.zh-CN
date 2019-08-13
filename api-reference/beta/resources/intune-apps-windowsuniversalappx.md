@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f014b6e01ca45ee264fdae54e6f0a5d14c75e9c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0df54443edf201e49f58973dbed037f259827346
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005021"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335295"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>windowsUniversalAppX 资源类型
 
@@ -136,8 +136,6 @@ ms.locfileid: "36005021"
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

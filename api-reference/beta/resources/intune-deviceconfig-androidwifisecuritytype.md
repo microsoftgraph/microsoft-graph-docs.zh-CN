@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2c8624f8626012c91b77d05745be2bebb9fef77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b55dc8b1b40eb5f9d590447a06cd37d9ffafad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971240"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334274"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35971240"
 |open|0|打开 (无身份验证)。|
 |wpaEnterprise|1|WPA-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
 |wpa2Enterprise|双面|WPA2-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 46af5513a1f88de1e055b6b9697625e7e6652782
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb951e262993b2aee16d911eca10d638f08847a1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004531"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332720"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36004531"
 |中等|第三章|设备威胁保护级别要求: 中。 中型代表设备或设备数据面临中等风险的威胁的严重程度。|
 |高效|4|设备威胁保护级别要求: 高。 High 表示对设备或设备数据带来严重风险的威胁的严重程度。|
 |notSet|10 |设备威胁保护级别要求: 未设置。 未设置表示设备不需要满足威胁保护级别。|
-
-
 
 
 

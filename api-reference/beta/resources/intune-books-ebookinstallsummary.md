@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 128ce50812912941ccad183fd09810ec21bba021
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ef27a3da7f79bb42955c594e58be6732b029c06
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012056"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335177"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary 资源类型
 
@@ -60,8 +60,6 @@ ms.locfileid: "36012056"
   "notInstalledUserCount": 1024
 }
 ```
-
-
 
 
 

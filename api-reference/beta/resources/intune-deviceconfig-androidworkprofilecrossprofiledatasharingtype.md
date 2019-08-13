@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cb5c41a2ac268bc2a5ad0471e512d6fc121a68cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c22cd85964e4f0866ba2f151c32f8ad1cb255ad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011678"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334240"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 枚举类型
 
@@ -27,8 +27,6 @@ Android 工作配置文件跨配置文件数据共享类型。
 |preventAny|1|阻止任何共享。|
 |allowPersonalToWork|双面|允许从个人配置文件到工作配置文件的数据共享请求。|
 |noRestrictions|第三章|共享没有限制。|
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: assign 操作
+title: sendCustomNotificationToCompanyPortal 操作
 description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 782d5dc34ce540fa6ad530afc9a2d369f6fb2f58
+ms.openlocfilehash: 51b776f3ff2633d5b671377e7ef79b4e580fbaae
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328429"
+ms.locfileid: "36350442"
 ---
-# <a name="assign-action"></a>分配操作
+# <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal 操作
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -25,9 +25,9 @@ ms.locfileid: "36328429"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -35,7 +35,10 @@ ms.locfileid: "36328429"
 }
 -->
 ``` http
-POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
+POST /deviceManagement/managedDevices/{managedDeviceId}/sendCustomNotificationToCompanyPortal
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/sendCustomNotificationToCompanyPortal
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/sendCustomNotificationToCompanyPortal
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/sendCustomNotificationToCompanyPortal
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +54,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|managedEBookAssignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|尚未记录|
+|notificationTitle|String|尚未记录|
+|notificationBody|String|尚未记录|
 
 
 
@@ -63,22 +67,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/sendCustomNotificationToCompanyPortal
 
 Content-type: application/json
-Content-length: 318
+Content-length: 105
 
 {
-  "managedEBookAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.managedEBookAssignment",
-      "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      },
-      "installIntent": "required"
-    }
-  ]
+  "notificationTitle": "Notification Title value",
+  "notificationBody": "Notification Body value"
 }
 ```
 

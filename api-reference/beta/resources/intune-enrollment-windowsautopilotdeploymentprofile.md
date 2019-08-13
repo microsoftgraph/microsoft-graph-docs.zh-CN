@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c79cc44ae9ffbe96097a0100f55a22b3d873e0e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 55703bc3b531a3671b70882a18f41522dd9a5c73
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999029"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327764"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
 
@@ -94,8 +94,6 @@ Windows Autopilot 部署配置文件
   ]
 }
 ```
-
-
 
 
 

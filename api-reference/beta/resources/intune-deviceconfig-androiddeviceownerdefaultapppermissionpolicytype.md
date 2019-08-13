@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 306445cd3dcb1d3915f777eeb975c55329255e92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77cdcc713b3b3d785d25299fce2afc4cbba3a9dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971506"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334843"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>androidDeviceOwnerDefaultAppPermissionPolicyType 枚举类型
 
@@ -27,8 +27,6 @@ Android 设备所有者默认应用程序权限策略类型。
 |提示|1|行.|
 |autoGrant|双面|自动授予。|
 |autoDeny|第三章|自动拒绝。|
-
-
 
 
 

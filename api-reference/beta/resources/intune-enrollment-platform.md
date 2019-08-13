@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e3f9c5ab02d85b6f0d2ca1610c2f902dc5563d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e26d2f92cd990951ca2dbff913fc447068e0254b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999036"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327813"
 ---
 # <a name="platform-enum-type"></a>平台枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35999036"
 |时间|第三章|Windows 设备平台|
 |windowsMobile|4|WindowsMobile 设备平台|
 |macOS|5|Mac 设备平台|
-
-
 
 
 

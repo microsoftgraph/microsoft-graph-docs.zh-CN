@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 950750cfc7c3abc1fbfdd61ef1d8c4a67b2deaf0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3ad4bef86e4900d9830dcdac161659cd1f46870c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951762"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330704"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>更新 iosLobAppProvisioningConfigurationAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951762"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 233
   }
 }
 ```
+
 
 
 

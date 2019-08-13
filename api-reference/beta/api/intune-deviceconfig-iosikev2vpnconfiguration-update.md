@@ -4,12 +4,13 @@ description: 更新 iosikEv2VpnConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd02a78889306ab7c79df0ad7b890a502c44ce51
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 5da6789a047500e2fbc419b87f5cb59f35b7f91c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715373"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339195"
 ---
 # <a name="update-iosikev2vpnconfiguration"></a>更新 iosikEv2VpnConfiguration
 
@@ -26,7 +27,7 @@ ms.locfileid: "35715373"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -386,6 +387,7 @@ Content-Length: 4404
   "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
+
 
 
 

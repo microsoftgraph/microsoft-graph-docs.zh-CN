@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7da685d6402e6e23728f6ac57387c74dc92b765
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1d5386ebfdd9e7859b9e6c0d92f60e4687c9c42
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971429"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334701"
 ---
 # <a name="androideasemailprofileconfiguration-resource-type"></a>androidEasEmailProfileConfiguration 资源类型
 
@@ -134,8 +134,6 @@ ms.locfileid: "35971429"
   "customDomainName": "String"
 }
 ```
-
-
 
 
 

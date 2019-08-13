@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ddd167d69674c0e32c184aa0f68bd7698331ee3c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 135509ba9ce5c85e8d4da308b66206f3cab4fe4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004295"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338131"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>firewallPreSharedKeyEncodingMethodType 枚举类型
 
@@ -26,8 +26,6 @@ FirewallPreSharedKeyEncodingMethod 的可能值
 |deviceDefault|0|没有由 Intune 配置的值, 请勿覆盖用户配置的设备默认值|
 |无|1|未对预共享密钥进行编码。 相反, 它将保留为其宽字符格式|
 |utF8|双面|使用 UTF-8 对预共享密钥进行编码|
-
-
 
 
 

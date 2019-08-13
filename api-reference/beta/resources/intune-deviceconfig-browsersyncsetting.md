@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 423d90521529193d2debf778f136a38fb8bbfefa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e8bb7c99f0bd4bf33474671ff6535be938be2fb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971058"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333770"
 ---
 # <a name="browsersyncsetting-enum-type"></a>browserSyncSetting 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35971058"
 |notConfigured|0|默认值–允许跨设备同步浏览器设置。|
 |blockedWithUserOverride|1|阻止跨用户设备同步浏览器设置, 允许用户重写设置。|
 |堵塞|双面|绝对阻止跨用户设备同步浏览器设置。|
-
-
 
 
 

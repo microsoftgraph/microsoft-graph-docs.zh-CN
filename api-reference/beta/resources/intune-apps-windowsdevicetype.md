@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 24c6afeb43ec7b5e4388f2f5e89056db43199b7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e6b09eab5a9bbc40eea3d581938394da379d0a3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005035"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335429"
 ---
 # <a name="windowsdevicetype-enum-type"></a>Windowsdevicetype 更改枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "36005035"
 |流动|双面|是否支持移动 Windows 设备类型。|
 |全息|4|是否支持全息 Windows 设备类型。|
 |team|utf-8|是否支持团队 Windows 设备类型。|
-
-
 
 
 

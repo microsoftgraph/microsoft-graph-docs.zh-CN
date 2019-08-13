@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6570456bfb4ef3168adbca83ccdd1f2bdf9a5e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fd0dc09199d6665de71a34017266b221173cbb8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993513"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350725"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>managedDeviceEnrollmentFailureTrends 函数
 
@@ -71,6 +71,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

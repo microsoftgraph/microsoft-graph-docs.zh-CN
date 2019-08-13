@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 155386e63a5d1f28a3cbe0ed35b9c5f659389bc6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a5eabf837633cc590f16e7bdb4b4a5b9f24432c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011062"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331572"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression 资源类型
 
@@ -48,8 +48,6 @@ ms.locfileid: "36011062"
   }
 }
 ```
-
-
 
 
 

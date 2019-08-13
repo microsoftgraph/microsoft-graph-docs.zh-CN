@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ce7db42c0d070f104942fa5f4c55ae2942bd73b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 708223395789ab67a18df9a09bb0e5e0d5958543
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004734"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334988"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36004734"
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|0|根据其他合规性策略设置合规性状态|
 |合规|1|将合规性设置为不符合|
-
-
 
 
 

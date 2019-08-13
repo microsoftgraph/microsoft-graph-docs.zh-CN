@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b00844385e9ba1237596255e9bb7ac6683a77f83
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33326cf9f7f5ef2bc04798e112c297e421d10741
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960494"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328989"
 ---
 # <a name="get-officesuiteapp"></a>获取 officeSuiteApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960494"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -132,6 +132,7 @@ Content-Length: 1904
   }
 }
 ```
+
 
 
 

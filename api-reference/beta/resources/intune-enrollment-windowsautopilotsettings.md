@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87881810c9498019608794282bd093bd769e755f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f242bd184737daea34446d345eb39c4c2a9027f7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998903"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327680"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings 资源类型
 
@@ -55,8 +55,6 @@ WindowsAutopilotSettings 资源表示用于将数据与 Windows 设备数据同�
   "syncStatus": "String"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,13 @@ description: FileVault 状态
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f122d62f85f90825f5fe3129ec2a314d5886e6f2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 54e8076dc4b4f6ab20f7790d2a650de6c07aa702
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725931"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325566"
 ---
 # <a name="filevaultstate-enum-type"></a>fileVaultState 枚举类型
 
@@ -26,10 +27,6 @@ FileVault 状态
 |driveEncryptedByUser|1|FileVault 已由用户启用, 且不受策略管理|
 |userDeferredEncryption|双面|FileVault 策略已成功安装, 但用户尚未开始加密|
 |escrowNotEnabled|4|FileVault 未启用恢复密钥的保管功能|
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e77e1a588946ca3a69a993fb561c1b48602602f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea2e8ebdac47c1fcd82818e642ce610ba9c31ebf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004972"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335688"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36004972"
 |version|4|版本值类型。|
 |sizeInMB|5|大小检测类型。|
 |doesNotExist|型|指定的文件或文件夹不存在。|
-
-
 
 
 

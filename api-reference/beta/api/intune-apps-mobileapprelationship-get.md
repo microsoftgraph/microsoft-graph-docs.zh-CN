@@ -4,12 +4,13 @@ description: 读取 mobileAppRelationship 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8511d1c557fa1b72154a42f4fb1b84300963ed79
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5d6cccc07d98a330550dca0484d2639a4d29df71
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973626"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336430"
 ---
 # <a name="get-mobileapprelationship"></a>获取 mobileAppRelationship
 
@@ -26,7 +27,7 @@ ms.locfileid: "34973626"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -76,6 +77,7 @@ Content-Length: 226
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9409ddebd69d8b046c522de1c3e58baabc15a2ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab26d2b6cda774f3d2cf3284f92d1901cc4bdf82
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970617"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333210"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -31,8 +31,6 @@ ms.locfileid: "35970617"
 |removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
 |pushNotification|第|将推送通知发送到设备|
 |remoteLock|10 |远程锁定设备|
-
-
 
 
 

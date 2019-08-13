@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e586f3ffa8678a316353d6f75ce8b662c635f34
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 144b7d33d6b02eef85b528c8cb46d230dcd1cdbf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951643"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330564"
 ---
 # <a name="update-iosstoreapp"></a>更新 iosStoreApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951643"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -181,6 +181,7 @@ Content-Length: 1312
   }
 }
 ```
+
 
 
 

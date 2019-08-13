@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6328633a2ed55bbcc4af4dbe389f38bf93f5c10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4564ad51af079543a192762a781110a91117524
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993534"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350543"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>获取 windowsDomainJoinConfiguration
 
@@ -107,6 +107,9 @@ Content-Length: 560
   }
 }
 ```
+
+
+
 
 
 

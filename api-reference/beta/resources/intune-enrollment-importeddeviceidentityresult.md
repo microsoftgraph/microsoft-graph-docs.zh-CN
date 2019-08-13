@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0cf934145e6bd6d26dfd9b5a9f3aafa3c6829a87
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9bdac4b02fd009705ef79acff5656b00c660e9ef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999120"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327904"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>importedDeviceIdentityResult 资源类型
 
@@ -72,8 +72,6 @@ ImportedDeviceIdentityResult 资源表示尝试导入设备标识的结果。
   "status": true
 }
 ```
-
-
 
 
 

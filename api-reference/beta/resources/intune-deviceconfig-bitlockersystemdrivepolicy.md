@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e177397f7714012da7233fb2af95211d525146a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4ffeaca0d5ee305690c05337eeb75787ece9641
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001857"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333763"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy 资源类型
 
@@ -72,8 +72,6 @@ BitLocker 加密基本策略。
   "prebootRecoveryUrl": "String"
 }
 ```
-
-
 
 
 

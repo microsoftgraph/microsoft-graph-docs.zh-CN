@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39af50fd0453c061a4a364c11a19046b954d7895
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f993bbadce163c1f1cb6165ea137336f0a668e93
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968245"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326770"
 ---
 # <a name="runschedule-resource-type"></a>runSchedule 资源类型
 
@@ -39,8 +39,6 @@ ms.locfileid: "35968245"
   "@odata.type": "#microsoft.graph.runSchedule"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac4d30cd2ffadcc795d6414dc09a4ad5c753d41
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 077af30aa9abe14ccc74c57a964074475d07cd4c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000303"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337704"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>windowsPrivacyDataAccessControlItem 资源类型
 
@@ -59,8 +59,6 @@ ms.locfileid: "36000303"
   "appDisplayName": "String"
 }
 ```
-
-
 
 
 

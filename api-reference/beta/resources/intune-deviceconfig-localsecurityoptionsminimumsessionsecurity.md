@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 182c375ae8e70e7190f9860a72d04e7f508bc61e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8dc6a96f5dda3cdba9ea3a57507bef4f32edc5a8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001031"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325524"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 枚举类型
 
@@ -27,8 +27,6 @@ LocalSecurityOptionsMinimumSessionSecurity 的可能值
 |requireNtmlV2SessionSecurity|1|发送 LM & NTLM-如果协商, 则使用 NTLMv2 会话安全性|
 |require128BitEncryption|双面|仅发送 LM & NTLM 响应|
 |ntlmV2And128BitEncryption|第三章|仅发送 LM & NTLMv2 响应|
-
-
 
 
 

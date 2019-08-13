@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 994b36dfc57f87d89e0fb7f66a28047b81948c2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bec1aa210c4446d210d5a59816d09c9eaecab84
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999015"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327708"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>windowsAutopilotProfileAssignmentDetailedStatus 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35999015"
 |:---|:---|:---|
 |无|0|无分配详细状态|
 |hardwareRequirementsNotMet|1|不满足硬件要求。 如果将自部署 AutoPilot 配置文件分配给不安装 TPM 2.0 的设备, 则可能会发生这种情况。|
-
-
 
 
 

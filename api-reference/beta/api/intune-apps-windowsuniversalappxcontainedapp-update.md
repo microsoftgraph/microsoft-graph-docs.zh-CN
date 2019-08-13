@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 172828ebe237ae076274f487826584ed43d2756f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c977ab8c2dbf1881616a24096dcc591bb3a7a03d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959577"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328604"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>更新 windowsUniversalAppXContainedApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959577"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -89,6 +89,7 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 
