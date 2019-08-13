@@ -5,54 +5,54 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ec14407ba58a9e27692b9354ec689efacc3eff5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db147b4b4eb281090f80cbfdfa7da2f86d8262be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982429"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362855"
 ---
-# <a name="update-team"></a><span data-ttu-id="34527-103">更新团队</span><span class="sxs-lookup"><span data-stu-id="34527-103">Update team</span></span>
+# <a name="update-team"></a><span data-ttu-id="5dc01-103">更新团队</span><span class="sxs-lookup"><span data-stu-id="5dc01-103">Update team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="34527-104">更新指定[团队](../resources/team.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="34527-104">Update the properties of the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="5dc01-104">更新指定[团队](../resources/team.md)的属性。</span><span class="sxs-lookup"><span data-stu-id="5dc01-104">Update the properties of the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="34527-105">权限</span><span class="sxs-lookup"><span data-stu-id="34527-105">Permissions</span></span>
-<span data-ttu-id="34527-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="34527-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5dc01-105">权限</span><span class="sxs-lookup"><span data-stu-id="5dc01-105">Permissions</span></span>
+<span data-ttu-id="5dc01-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5dc01-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="34527-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="34527-108">Permission type</span></span>      | <span data-ttu-id="34527-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="34527-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5dc01-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="5dc01-108">Permission type</span></span>      | <span data-ttu-id="5dc01-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5dc01-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="34527-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="34527-110">Delegated (work or school account)</span></span> | <span data-ttu-id="34527-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34527-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="34527-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="34527-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="34527-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="34527-113">Not supported.</span></span>    |
-|<span data-ttu-id="34527-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="34527-114">Application</span></span> | <span data-ttu-id="34527-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34527-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5dc01-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5dc01-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5dc01-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5dc01-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5dc01-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5dc01-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5dc01-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="5dc01-113">Not supported.</span></span>    |
+|<span data-ttu-id="5dc01-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="5dc01-114">Application</span></span> | <span data-ttu-id="5dc01-115">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5dc01-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="34527-116">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="34527-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="34527-117">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。</span><span class="sxs-lookup"><span data-stu-id="34527-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="5dc01-116">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="5dc01-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="5dc01-117">全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。</span><span class="sxs-lookup"><span data-stu-id="5dc01-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="34527-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="34527-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5dc01-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5dc01-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="34527-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="34527-119">Request headers</span></span>
-| <span data-ttu-id="34527-120">标头</span><span class="sxs-lookup"><span data-stu-id="34527-120">Header</span></span>       | <span data-ttu-id="34527-121">值</span><span class="sxs-lookup"><span data-stu-id="34527-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5dc01-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="5dc01-119">Request headers</span></span>
+| <span data-ttu-id="5dc01-120">标头</span><span class="sxs-lookup"><span data-stu-id="5dc01-120">Header</span></span>       | <span data-ttu-id="5dc01-121">值</span><span class="sxs-lookup"><span data-stu-id="5dc01-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="34527-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="34527-122">Authorization</span></span>  | <span data-ttu-id="34527-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="34527-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="34527-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="34527-125">Content-Type</span></span>  | <span data-ttu-id="34527-126">application/json</span><span class="sxs-lookup"><span data-stu-id="34527-126">application/json</span></span>  |
+| <span data-ttu-id="5dc01-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5dc01-122">Authorization</span></span>  | <span data-ttu-id="5dc01-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5dc01-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5dc01-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5dc01-125">Content-Type</span></span>  | <span data-ttu-id="5dc01-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5dc01-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="34527-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="34527-127">Request body</span></span>
-<span data-ttu-id="34527-128">在请求正文中, 提供[team](../resources/team.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="34527-128">In the request body, supply a JSON representation of [team](../resources/team.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5dc01-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="5dc01-127">Request body</span></span>
+<span data-ttu-id="5dc01-128">在请求正文中, 提供[team](../resources/team.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5dc01-128">In the request body, supply a JSON representation of [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="34527-129">响应</span><span class="sxs-lookup"><span data-stu-id="34527-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5dc01-129">响应</span><span class="sxs-lookup"><span data-stu-id="5dc01-129">Response</span></span>
 
-<span data-ttu-id="34527-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="34527-130">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="5dc01-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="5dc01-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="34527-131">示例</span><span class="sxs-lookup"><span data-stu-id="34527-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="34527-132">请求</span><span class="sxs-lookup"><span data-stu-id="34527-132">Request</span></span>
-<span data-ttu-id="34527-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="34527-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5dc01-131">示例</span><span class="sxs-lookup"><span data-stu-id="5dc01-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="5dc01-132">请求</span><span class="sxs-lookup"><span data-stu-id="5dc01-132">Request</span></span>
+<span data-ttu-id="5dc01-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5dc01-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="34527-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="34527-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="5dc01-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="5dc01-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_team"
@@ -79,25 +79,25 @@ Content-length: 211
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="34527-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="34527-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5dc01-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5dc01-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="34527-136">C#</span><span class="sxs-lookup"><span data-stu-id="34527-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5dc01-136">C#</span><span class="sxs-lookup"><span data-stu-id="5dc01-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="34527-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="34527-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5dc01-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="5dc01-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="34527-138">Java</span><span class="sxs-lookup"><span data-stu-id="34527-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="5dc01-138">Java</span><span class="sxs-lookup"><span data-stu-id="5dc01-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="34527-139">响应</span><span class="sxs-lookup"><span data-stu-id="34527-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5dc01-139">响应</span><span class="sxs-lookup"><span data-stu-id="5dc01-139">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
