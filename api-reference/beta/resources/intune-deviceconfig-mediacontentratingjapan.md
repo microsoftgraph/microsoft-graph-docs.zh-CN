@@ -5,32 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8be7c810498f4ae395492c5265fa5cdcc45a9a7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 703e34fa55f33c3ce6fd72ec196f314ffd77f057
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000793"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368707"
 ---
-# <a name="mediacontentratingjapan-resource-type"></a><span data-ttu-id="10488-103">mediaContentRatingJapan 资源类型</span><span class="sxs-lookup"><span data-stu-id="10488-103">mediaContentRatingJapan resource type</span></span>
+# <a name="mediacontentratingjapan-resource-type"></a><span data-ttu-id="3073c-103">mediaContentRatingJapan 资源类型</span><span class="sxs-lookup"><span data-stu-id="3073c-103">mediaContentRatingJapan resource type</span></span>
 
-> <span data-ttu-id="10488-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="10488-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3073c-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3073c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="10488-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="10488-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3073c-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3073c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="10488-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="10488-106">Not yet documented</span></span>
+<span data-ttu-id="3073c-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="3073c-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="10488-107">属性</span><span class="sxs-lookup"><span data-stu-id="10488-107">Properties</span></span>
-|<span data-ttu-id="10488-108">属性</span><span class="sxs-lookup"><span data-stu-id="10488-108">Property</span></span>|<span data-ttu-id="10488-109">类型</span><span class="sxs-lookup"><span data-stu-id="10488-109">Type</span></span>|<span data-ttu-id="10488-110">说明</span><span class="sxs-lookup"><span data-stu-id="10488-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3073c-107">属性</span><span class="sxs-lookup"><span data-stu-id="3073c-107">Properties</span></span>
+|<span data-ttu-id="3073c-108">属性</span><span class="sxs-lookup"><span data-stu-id="3073c-108">Property</span></span>|<span data-ttu-id="3073c-109">类型</span><span class="sxs-lookup"><span data-stu-id="3073c-109">Type</span></span>|<span data-ttu-id="3073c-110">说明</span><span class="sxs-lookup"><span data-stu-id="3073c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="10488-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="10488-111">movieRating</span></span>|[<span data-ttu-id="10488-112">ratingJapanMoviesType</span><span class="sxs-lookup"><span data-stu-id="10488-112">ratingJapanMoviesType</span></span>](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|<span data-ttu-id="10488-113">为日本选择的电影评级。</span><span class="sxs-lookup"><span data-stu-id="10488-113">Movies rating selected for Japan.</span></span> <span data-ttu-id="10488-114">可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。</span><span class="sxs-lookup"><span data-stu-id="10488-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.</span></span>|
-|<span data-ttu-id="10488-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="10488-115">tvRating</span></span>|[<span data-ttu-id="10488-116">ratingJapanTelevisionType</span><span class="sxs-lookup"><span data-stu-id="10488-116">ratingJapanTelevisionType</span></span>](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|<span data-ttu-id="10488-117">为日本选择的电视评级。</span><span class="sxs-lookup"><span data-stu-id="10488-117">TV rating selected for Japan.</span></span> <span data-ttu-id="10488-118">可取值为：`allAllowed`、`allBlocked`、`explicitAllowed`。</span><span class="sxs-lookup"><span data-stu-id="10488-118">Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.</span></span>|
+|<span data-ttu-id="3073c-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="3073c-111">movieRating</span></span>|[<span data-ttu-id="3073c-112">ratingJapanMoviesType</span><span class="sxs-lookup"><span data-stu-id="3073c-112">ratingJapanMoviesType</span></span>](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|<span data-ttu-id="3073c-113">为日本选择的电影评级。</span><span class="sxs-lookup"><span data-stu-id="3073c-113">Movies rating selected for Japan.</span></span> <span data-ttu-id="3073c-114">可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。</span><span class="sxs-lookup"><span data-stu-id="3073c-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.</span></span>|
+|<span data-ttu-id="3073c-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="3073c-115">tvRating</span></span>|[<span data-ttu-id="3073c-116">ratingJapanTelevisionType</span><span class="sxs-lookup"><span data-stu-id="3073c-116">ratingJapanTelevisionType</span></span>](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|<span data-ttu-id="3073c-117">为日本选择的电视评级。</span><span class="sxs-lookup"><span data-stu-id="3073c-117">TV rating selected for Japan.</span></span> <span data-ttu-id="3073c-118">可取值为：`allAllowed`、`allBlocked`、`explicitAllowed`。</span><span class="sxs-lookup"><span data-stu-id="3073c-118">Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="10488-119">关系</span><span class="sxs-lookup"><span data-stu-id="10488-119">Relationships</span></span>
-<span data-ttu-id="10488-120">无</span><span class="sxs-lookup"><span data-stu-id="10488-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3073c-119">关系</span><span class="sxs-lookup"><span data-stu-id="3073c-119">Relationships</span></span>
+<span data-ttu-id="3073c-120">无</span><span class="sxs-lookup"><span data-stu-id="3073c-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="10488-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="10488-121">JSON Representation</span></span>
-<span data-ttu-id="10488-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="10488-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3073c-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3073c-121">JSON Representation</span></span>
+<span data-ttu-id="3073c-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3073c-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingJapan"
@@ -43,8 +43,6 @@ ms.locfileid: "36000793"
   "tvRating": "String"
 }
 ```
-
-
 
 
 

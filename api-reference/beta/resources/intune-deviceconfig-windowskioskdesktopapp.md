@@ -5,40 +5,40 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a61709e0f1c35972f539ce2a29fe54c156d534ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60b930ece0d938527666b2f00e84791aacdc3e59
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370905"
 ---
-# <a name="windowskioskdesktopapp-resource-type"></a><span data-ttu-id="1d8d4-103">windowsKioskDesktopApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="1d8d4-103">windowsKioskDesktopApp resource type</span></span>
+# <a name="windowskioskdesktopapp-resource-type"></a><span data-ttu-id="2a5de-103">windowsKioskDesktopApp 资源类型</span><span class="sxs-lookup"><span data-stu-id="2a5de-103">windowsKioskDesktopApp resource type</span></span>
 
-> <span data-ttu-id="1d8d4-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2a5de-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2a5de-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1d8d4-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2a5de-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2a5de-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1d8d4-106">一类应用程序的基类</span><span class="sxs-lookup"><span data-stu-id="1d8d4-106">The base class for a type of apps</span></span>
+<span data-ttu-id="2a5de-106">一类应用程序的基类</span><span class="sxs-lookup"><span data-stu-id="2a5de-106">The base class for a type of apps</span></span>
 
 
-<span data-ttu-id="1d8d4-107">继承自[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="1d8d4-107">Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>
+<span data-ttu-id="2a5de-107">继承自[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="2a5de-107">Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1d8d4-108">属性</span><span class="sxs-lookup"><span data-stu-id="1d8d4-108">Properties</span></span>
-|<span data-ttu-id="1d8d4-109">属性</span><span class="sxs-lookup"><span data-stu-id="1d8d4-109">Property</span></span>|<span data-ttu-id="1d8d4-110">类型</span><span class="sxs-lookup"><span data-stu-id="1d8d4-110">Type</span></span>|<span data-ttu-id="1d8d4-111">说明</span><span class="sxs-lookup"><span data-stu-id="1d8d4-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2a5de-108">属性</span><span class="sxs-lookup"><span data-stu-id="2a5de-108">Properties</span></span>
+|<span data-ttu-id="2a5de-109">属性</span><span class="sxs-lookup"><span data-stu-id="2a5de-109">Property</span></span>|<span data-ttu-id="2a5de-110">类型</span><span class="sxs-lookup"><span data-stu-id="2a5de-110">Type</span></span>|<span data-ttu-id="2a5de-111">说明</span><span class="sxs-lookup"><span data-stu-id="2a5de-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1d8d4-112">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="1d8d4-112">startLayoutTileSize</span></span>|[<span data-ttu-id="1d8d4-113">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="1d8d4-113">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="1d8d4-114">从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-114">The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="1d8d4-115">可取值为：`hidden`、`small`、`medium`、`wide`、`large`。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-115">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
-|<span data-ttu-id="1d8d4-116">name</span><span class="sxs-lookup"><span data-stu-id="1d8d4-116">name</span></span>|<span data-ttu-id="1d8d4-117">String</span><span class="sxs-lookup"><span data-stu-id="1d8d4-117">String</span></span>|<span data-ttu-id="1d8d4-118">表示从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称</span><span class="sxs-lookup"><span data-stu-id="1d8d4-118">Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
-|<span data-ttu-id="1d8d4-119">appType</span><span class="sxs-lookup"><span data-stu-id="1d8d4-119">appType</span></span>|[<span data-ttu-id="1d8d4-120">windowsKioskAppType</span><span class="sxs-lookup"><span data-stu-id="1d8d4-120">windowsKioskAppType</span></span>](../resources/intune-deviceconfig-windowskioskapptype.md)|<span data-ttu-id="1d8d4-121">从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-121">The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="1d8d4-122">可取值为：`unknown`、`store`、`desktop`、`aumId`。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-122">Possible values are: `unknown`, `store`, `desktop`, `aumId`.</span></span>|
-|<span data-ttu-id="1d8d4-123">autoLaunch</span><span class="sxs-lookup"><span data-stu-id="1d8d4-123">autoLaunch</span></span>|<span data-ttu-id="1d8d4-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="1d8d4-124">Boolean</span></span>|<span data-ttu-id="1d8d4-125">允许在从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序</span><span class="sxs-lookup"><span data-stu-id="1d8d4-125">Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
-|<span data-ttu-id="1d8d4-126">路径</span><span class="sxs-lookup"><span data-stu-id="1d8d4-126">path</span></span>|<span data-ttu-id="1d8d4-127">String</span><span class="sxs-lookup"><span data-stu-id="1d8d4-127">String</span></span>|<span data-ttu-id="1d8d4-128">定义桌面应用程序的路径</span><span class="sxs-lookup"><span data-stu-id="1d8d4-128">Define the path of a desktop app</span></span>|
-|<span data-ttu-id="1d8d4-129">desktopApplicationId</span><span class="sxs-lookup"><span data-stu-id="1d8d4-129">desktopApplicationId</span></span>|<span data-ttu-id="1d8d4-130">String</span><span class="sxs-lookup"><span data-stu-id="1d8d4-130">String</span></span>|<span data-ttu-id="1d8d4-131">定义应用程序的 DesktopApplicationID</span><span class="sxs-lookup"><span data-stu-id="1d8d4-131">Define the DesktopApplicationID of the app</span></span>|
-|<span data-ttu-id="1d8d4-132">desktopApplicationLinkPath</span><span class="sxs-lookup"><span data-stu-id="1d8d4-132">desktopApplicationLinkPath</span></span>|<span data-ttu-id="1d8d4-133">String</span><span class="sxs-lookup"><span data-stu-id="1d8d4-133">String</span></span>|<span data-ttu-id="1d8d4-134">定义应用程序的 DesktopApplicationLinkPath</span><span class="sxs-lookup"><span data-stu-id="1d8d4-134">Define the DesktopApplicationLinkPath of the app</span></span>|
+|<span data-ttu-id="2a5de-112">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="2a5de-112">startLayoutTileSize</span></span>|[<span data-ttu-id="2a5de-113">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="2a5de-113">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="2a5de-114">从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。</span><span class="sxs-lookup"><span data-stu-id="2a5de-114">The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="2a5de-115">可取值为：`hidden`、`small`、`medium`、`wide`、`large`。</span><span class="sxs-lookup"><span data-stu-id="2a5de-115">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
+|<span data-ttu-id="2a5de-116">name</span><span class="sxs-lookup"><span data-stu-id="2a5de-116">name</span></span>|<span data-ttu-id="2a5de-117">String</span><span class="sxs-lookup"><span data-stu-id="2a5de-117">String</span></span>|<span data-ttu-id="2a5de-118">表示从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称</span><span class="sxs-lookup"><span data-stu-id="2a5de-118">Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
+|<span data-ttu-id="2a5de-119">appType</span><span class="sxs-lookup"><span data-stu-id="2a5de-119">appType</span></span>|[<span data-ttu-id="2a5de-120">windowsKioskAppType</span><span class="sxs-lookup"><span data-stu-id="2a5de-120">windowsKioskAppType</span></span>](../resources/intune-deviceconfig-windowskioskapptype.md)|<span data-ttu-id="2a5de-121">从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。</span><span class="sxs-lookup"><span data-stu-id="2a5de-121">The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="2a5de-122">可取值为：`unknown`、`store`、`desktop`、`aumId`。</span><span class="sxs-lookup"><span data-stu-id="2a5de-122">Possible values are: `unknown`, `store`, `desktop`, `aumId`.</span></span>|
+|<span data-ttu-id="2a5de-123">autoLaunch</span><span class="sxs-lookup"><span data-stu-id="2a5de-123">autoLaunch</span></span>|<span data-ttu-id="2a5de-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="2a5de-124">Boolean</span></span>|<span data-ttu-id="2a5de-125">允许在从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序</span><span class="sxs-lookup"><span data-stu-id="2a5de-125">Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
+|<span data-ttu-id="2a5de-126">路径</span><span class="sxs-lookup"><span data-stu-id="2a5de-126">path</span></span>|<span data-ttu-id="2a5de-127">String</span><span class="sxs-lookup"><span data-stu-id="2a5de-127">String</span></span>|<span data-ttu-id="2a5de-128">定义桌面应用程序的路径</span><span class="sxs-lookup"><span data-stu-id="2a5de-128">Define the path of a desktop app</span></span>|
+|<span data-ttu-id="2a5de-129">desktopApplicationId</span><span class="sxs-lookup"><span data-stu-id="2a5de-129">desktopApplicationId</span></span>|<span data-ttu-id="2a5de-130">String</span><span class="sxs-lookup"><span data-stu-id="2a5de-130">String</span></span>|<span data-ttu-id="2a5de-131">定义应用程序的 DesktopApplicationID</span><span class="sxs-lookup"><span data-stu-id="2a5de-131">Define the DesktopApplicationID of the app</span></span>|
+|<span data-ttu-id="2a5de-132">desktopApplicationLinkPath</span><span class="sxs-lookup"><span data-stu-id="2a5de-132">desktopApplicationLinkPath</span></span>|<span data-ttu-id="2a5de-133">String</span><span class="sxs-lookup"><span data-stu-id="2a5de-133">String</span></span>|<span data-ttu-id="2a5de-134">定义应用程序的 DesktopApplicationLinkPath</span><span class="sxs-lookup"><span data-stu-id="2a5de-134">Define the DesktopApplicationLinkPath of the app</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1d8d4-135">关系</span><span class="sxs-lookup"><span data-stu-id="1d8d4-135">Relationships</span></span>
-<span data-ttu-id="1d8d4-136">无</span><span class="sxs-lookup"><span data-stu-id="1d8d4-136">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="2a5de-135">关系</span><span class="sxs-lookup"><span data-stu-id="2a5de-135">Relationships</span></span>
+<span data-ttu-id="2a5de-136">无</span><span class="sxs-lookup"><span data-stu-id="2a5de-136">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1d8d4-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1d8d4-137">JSON Representation</span></span>
-<span data-ttu-id="1d8d4-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1d8d4-138">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2a5de-137">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2a5de-137">JSON Representation</span></span>
+<span data-ttu-id="2a5de-138">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2a5de-138">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskDesktopApp"
@@ -56,8 +56,6 @@ ms.locfileid: "35968992"
   "desktopApplicationLinkPath": "String"
 }
 ```
-
-
 
 
 
