@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6cfd64dbb4b76e2eaa255598d6fe10fc84e639c8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 5678ddb2cd6ef45f7152cc2c0c54077fd744005d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324752"
 ---
 ```java
 
@@ -18,7 +18,7 @@ workbookRangeFormat.rowHeight = 49;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-    .range('$A$1').format()
+    .range("$A$1").format()
     .buildRequest()
     .patch(workbookRangeFormat);
 

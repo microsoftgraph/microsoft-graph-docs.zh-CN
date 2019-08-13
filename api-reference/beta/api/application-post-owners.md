@@ -5,51 +5,51 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3bc691b34e57783ef0f3066bfd26efb53c34b41
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 033c96d74c5cbba3df94c74514b7812bedb02c13
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930435"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318696"
 ---
-# <a name="create-owner"></a><span data-ttu-id="35ad8-103">创建所有者</span><span class="sxs-lookup"><span data-stu-id="35ad8-103">Create owner</span></span>
+# <a name="create-owner"></a><span data-ttu-id="5fa40-103">创建所有者</span><span class="sxs-lookup"><span data-stu-id="5fa40-103">Create owner</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35ad8-104">使用此 API 创建新的所有者。</span><span class="sxs-lookup"><span data-stu-id="35ad8-104">Use this API to create a new owner.</span></span>
+<span data-ttu-id="5fa40-104">使用此 API 创建新的所有者。</span><span class="sxs-lookup"><span data-stu-id="5fa40-104">Use this API to create a new owner.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="35ad8-105">权限</span><span class="sxs-lookup"><span data-stu-id="35ad8-105">Permissions</span></span>
-<span data-ttu-id="35ad8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="35ad8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5fa40-105">权限</span><span class="sxs-lookup"><span data-stu-id="5fa40-105">Permissions</span></span>
+<span data-ttu-id="5fa40-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5fa40-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="35ad8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="35ad8-108">Permission type</span></span>      | <span data-ttu-id="35ad8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="35ad8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5fa40-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="5fa40-108">Permission type</span></span>      | <span data-ttu-id="5fa40-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5fa40-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="35ad8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="35ad8-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="35ad8-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="35ad8-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="35ad8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="35ad8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35ad8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="35ad8-113">Not supported.</span></span>    |
-|<span data-ttu-id="35ad8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="35ad8-114">Application</span></span> | <span data-ttu-id="35ad8-115">Application.readwrite.ownedby 和 "全部读取"。全部、全部读取全部和全部读取全部。</span><span class="sxs-lookup"><span data-stu-id="35ad8-115">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="5fa40-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5fa40-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="5fa40-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5fa40-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="5fa40-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5fa40-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5fa40-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="5fa40-113">Not supported.</span></span>    |
+|<span data-ttu-id="5fa40-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="5fa40-114">Application</span></span> | <span data-ttu-id="5fa40-115">Application.readwrite.ownedby 和 "全部读取"。全部、全部读取全部和全部读取全部。</span><span class="sxs-lookup"><span data-stu-id="5fa40-115">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="35ad8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="35ad8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5fa40-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5fa40-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/owners/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="35ad8-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="35ad8-117">Request headers</span></span>
-| <span data-ttu-id="35ad8-118">名称</span><span class="sxs-lookup"><span data-stu-id="35ad8-118">Name</span></span> | <span data-ttu-id="35ad8-119">说明</span><span class="sxs-lookup"><span data-stu-id="35ad8-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5fa40-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="5fa40-117">Request headers</span></span>
+| <span data-ttu-id="5fa40-118">名称</span><span class="sxs-lookup"><span data-stu-id="5fa40-118">Name</span></span> | <span data-ttu-id="5fa40-119">说明</span><span class="sxs-lookup"><span data-stu-id="5fa40-119">Description</span></span>|
 |:---- |:---------- |
-| <span data-ttu-id="35ad8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="35ad8-120">Authorization</span></span> | <span data-ttu-id="35ad8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="35ad8-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5fa40-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="5fa40-120">Authorization</span></span> | <span data-ttu-id="5fa40-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5fa40-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="35ad8-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="35ad8-123">Request body</span></span>
-<span data-ttu-id="35ad8-124">在请求正文中, 提供要作为所有者分配的目录对象的标识符。</span><span class="sxs-lookup"><span data-stu-id="35ad8-124">In the request body, supply the identifier of the directory object to be assigned as owner.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5fa40-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="5fa40-123">Request body</span></span>
+<span data-ttu-id="5fa40-124">在请求正文中, 提供要作为所有者分配的目录对象的标识符。</span><span class="sxs-lookup"><span data-stu-id="5fa40-124">In the request body, supply the identifier of the directory object to be assigned as owner.</span></span>
 
-## <a name="response"></a><span data-ttu-id="35ad8-125">响应</span><span class="sxs-lookup"><span data-stu-id="35ad8-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5fa40-125">响应</span><span class="sxs-lookup"><span data-stu-id="5fa40-125">Response</span></span>
 
-<span data-ttu-id="35ad8-126">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="35ad8-126">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="5fa40-126">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="5fa40-126">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="35ad8-127">示例</span><span class="sxs-lookup"><span data-stu-id="35ad8-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="35ad8-128">请求</span><span class="sxs-lookup"><span data-stu-id="35ad8-128">Request</span></span>
-<span data-ttu-id="35ad8-129">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="35ad8-129">The following example shows the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5fa40-127">示例</span><span class="sxs-lookup"><span data-stu-id="5fa40-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="5fa40-128">请求</span><span class="sxs-lookup"><span data-stu-id="5fa40-128">Request</span></span>
+<span data-ttu-id="5fa40-129">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="5fa40-129">The following example shows the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="35ad8-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="35ad8-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="5fa40-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="5fa40-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_application"
@@ -64,29 +64,29 @@ Content-length: 30
 }
 
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="35ad8-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="35ad8-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5fa40-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5fa40-131">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="35ad8-132">C#</span><span class="sxs-lookup"><span data-stu-id="35ad8-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5fa40-132">C#</span><span class="sxs-lookup"><span data-stu-id="5fa40-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="35ad8-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="35ad8-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5fa40-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="5fa40-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="35ad8-134">Java</span><span class="sxs-lookup"><span data-stu-id="35ad8-134">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="5fa40-134">Java</span><span class="sxs-lookup"><span data-stu-id="5fa40-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="35ad8-135">响应</span><span class="sxs-lookup"><span data-stu-id="35ad8-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5fa40-135">响应</span><span class="sxs-lookup"><span data-stu-id="5fa40-135">Response</span></span>
 
-<span data-ttu-id="35ad8-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="35ad8-136">The following is an example of the response.</span></span>
+<span data-ttu-id="5fa40-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5fa40-136">The following is an example of the response.</span></span>
 
-><span data-ttu-id="35ad8-137">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="35ad8-137">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="35ad8-138">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="35ad8-138">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="5fa40-137">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="5fa40-137">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5fa40-138">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="5fa40-138">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -5,61 +5,61 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4ac0c0f7f6c34061048dfb861007603674c1fa73
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 56952167daae1cff8068871861f11c48c4c9d076
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172778"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313032"
 ---
-# <a name="add-accessreview-reviewer"></a><span data-ttu-id="ecc2d-105">添加 accessReview 审阅者</span><span class="sxs-lookup"><span data-stu-id="ecc2d-105">Add accessReview reviewer</span></span>
+# <a name="add-accessreview-reviewer"></a><span data-ttu-id="e937a-105">添加 accessReview 审阅者</span><span class="sxs-lookup"><span data-stu-id="e937a-105">Add accessReview reviewer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ecc2d-106">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 更新现有的[accessReview](../resources/accessreview.md)对象以将其他用户添加为审阅者。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to add another user as a reviewer.</span></span>  <span data-ttu-id="ecc2d-107">仅允许对尚未完成的访问权限审核执行此操作, 并且仅适用于显式指定审阅者的访问审核。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-107">This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.</span></span> <span data-ttu-id="ecc2d-108">此操作不允许用于用户查看其自己的访问权限的访问审核, 而不适用于将组所有者分配为审阅者的访问审核。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-108">This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.</span></span> 
+<span data-ttu-id="e937a-106">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 更新现有的[accessReview](../resources/accessreview.md)对象以将其他用户添加为审阅者。</span><span class="sxs-lookup"><span data-stu-id="e937a-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to add another user as a reviewer.</span></span>  <span data-ttu-id="e937a-107">仅允许对尚未完成的访问权限审核执行此操作, 并且仅适用于显式指定审阅者的访问审核。</span><span class="sxs-lookup"><span data-stu-id="e937a-107">This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.</span></span> <span data-ttu-id="e937a-108">此操作不允许用于用户查看其自己的访问权限的访问审核, 而不适用于将组所有者分配为审阅者的访问审核。</span><span class="sxs-lookup"><span data-stu-id="e937a-108">This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="ecc2d-109">权限</span><span class="sxs-lookup"><span data-stu-id="ecc2d-109">Permissions</span></span>
-<span data-ttu-id="ecc2d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e937a-109">权限</span><span class="sxs-lookup"><span data-stu-id="e937a-109">Permissions</span></span>
+<span data-ttu-id="e937a-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e937a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ecc2d-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="ecc2d-112">Permission type</span></span>                        | <span data-ttu-id="ecc2d-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ecc2d-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e937a-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="e937a-112">Permission type</span></span>                        | <span data-ttu-id="e937a-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e937a-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ecc2d-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ecc2d-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="ecc2d-115">AccessReview、AccessReview 和所有</span><span class="sxs-lookup"><span data-stu-id="ecc2d-115">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="ecc2d-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ecc2d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecc2d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-117">Not supported.</span></span> |
-|<span data-ttu-id="ecc2d-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="ecc2d-118">Application</span></span>                            | <span data-ttu-id="ecc2d-119">AccessReview 的成员资格</span><span class="sxs-lookup"><span data-stu-id="ecc2d-119">AccessReview.ReadWrite.Membership</span></span> |
+|<span data-ttu-id="e937a-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e937a-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="e937a-115">AccessReview、AccessReview 和所有</span><span class="sxs-lookup"><span data-stu-id="e937a-115">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="e937a-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e937a-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e937a-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e937a-117">Not supported.</span></span> |
+|<span data-ttu-id="e937a-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="e937a-118">Application</span></span>                            | <span data-ttu-id="e937a-119">AccessReview 的成员资格</span><span class="sxs-lookup"><span data-stu-id="e937a-119">AccessReview.ReadWrite.Membership</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ecc2d-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ecc2d-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e937a-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e937a-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews('{reviewId}')/reviewers
 ```
-## <a name="request-headers"></a><span data-ttu-id="ecc2d-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="ecc2d-121">Request headers</span></span>
-| <span data-ttu-id="ecc2d-122">名称</span><span class="sxs-lookup"><span data-stu-id="ecc2d-122">Name</span></span>         | <span data-ttu-id="ecc2d-123">类型</span><span class="sxs-lookup"><span data-stu-id="ecc2d-123">Type</span></span>        | <span data-ttu-id="ecc2d-124">说明</span><span class="sxs-lookup"><span data-stu-id="ecc2d-124">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e937a-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="e937a-121">Request headers</span></span>
+| <span data-ttu-id="e937a-122">名称</span><span class="sxs-lookup"><span data-stu-id="e937a-122">Name</span></span>         | <span data-ttu-id="e937a-123">类型</span><span class="sxs-lookup"><span data-stu-id="e937a-123">Type</span></span>        | <span data-ttu-id="e937a-124">说明</span><span class="sxs-lookup"><span data-stu-id="e937a-124">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="ecc2d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ecc2d-125">Authorization</span></span> | <span data-ttu-id="ecc2d-126">string</span><span class="sxs-lookup"><span data-stu-id="ecc2d-126">string</span></span> | <span data-ttu-id="ecc2d-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="e937a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="e937a-125">Authorization</span></span> | <span data-ttu-id="e937a-126">string</span><span class="sxs-lookup"><span data-stu-id="e937a-126">string</span></span> | <span data-ttu-id="e937a-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="e937a-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ecc2d-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="ecc2d-129">Request body</span></span>
-<span data-ttu-id="ecc2d-130">在请求正文中, 提供将成为审阅者的用户 ID 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-130">In the request body, supply a JSON representation of the ID of a user who will be a reviewer.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e937a-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="e937a-129">Request body</span></span>
+<span data-ttu-id="e937a-130">在请求正文中, 提供将成为审阅者的用户 ID 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e937a-130">In the request body, supply a JSON representation of the ID of a user who will be a reviewer.</span></span>
 
-<span data-ttu-id="ecc2d-131">下表显示了在更新 accessReview 时可提供的属性。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-131">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
+<span data-ttu-id="e937a-131">下表显示了在更新 accessReview 时可提供的属性。</span><span class="sxs-lookup"><span data-stu-id="e937a-131">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
 
-| <span data-ttu-id="ecc2d-132">属性</span><span class="sxs-lookup"><span data-stu-id="ecc2d-132">Property</span></span>     | <span data-ttu-id="ecc2d-133">类型</span><span class="sxs-lookup"><span data-stu-id="ecc2d-133">Type</span></span>        | <span data-ttu-id="ecc2d-134">说明</span><span class="sxs-lookup"><span data-stu-id="ecc2d-134">Description</span></span> |
+| <span data-ttu-id="e937a-132">属性</span><span class="sxs-lookup"><span data-stu-id="e937a-132">Property</span></span>     | <span data-ttu-id="e937a-133">类型</span><span class="sxs-lookup"><span data-stu-id="e937a-133">Type</span></span>        | <span data-ttu-id="e937a-134">说明</span><span class="sxs-lookup"><span data-stu-id="e937a-134">Description</span></span> |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | <span data-ttu-id="ecc2d-135">用户 ID。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-135">The user ID.</span></span>|
+| `id`        | `String`   | <span data-ttu-id="e937a-135">用户 ID。</span><span class="sxs-lookup"><span data-stu-id="e937a-135">The user ID.</span></span>|
 
 
-## <a name="response"></a><span data-ttu-id="ecc2d-136">响应</span><span class="sxs-lookup"><span data-stu-id="ecc2d-136">Response</span></span>
-<span data-ttu-id="ecc2d-137">如果成功, 此方法将`201, Created`返回响应代码。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-137">If successful, this method returns a `201, Created` response code .</span></span>
+## <a name="response"></a><span data-ttu-id="e937a-136">响应</span><span class="sxs-lookup"><span data-stu-id="e937a-136">Response</span></span>
+<span data-ttu-id="e937a-137">如果成功, 此方法将`201, Created`返回响应代码。</span><span class="sxs-lookup"><span data-stu-id="e937a-137">If successful, this method returns a `201, Created` response code .</span></span>
 
-## <a name="example"></a><span data-ttu-id="ecc2d-138">示例</span><span class="sxs-lookup"><span data-stu-id="ecc2d-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e937a-138">示例</span><span class="sxs-lookup"><span data-stu-id="e937a-138">Example</span></span>
 
-<span data-ttu-id="ecc2d-139">以下是使用其他审阅者更新一次性 (不定期) 访问评审的示例。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-139">This is an example of updating a one-time (not reoccurring) access review with an additional reviewer.</span></span>
+<span data-ttu-id="e937a-139">以下是使用其他审阅者更新一次性 (不定期) 访问评审的示例。</span><span class="sxs-lookup"><span data-stu-id="e937a-139">This is an example of updating a one-time (not reoccurring) access review with an additional reviewer.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ecc2d-140">请求</span><span class="sxs-lookup"><span data-stu-id="ecc2d-140">Request</span></span>
-<span data-ttu-id="ecc2d-141">在请求正文中, 提供 user 对象的 id 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-141">In the request body, supply a JSON representation of the id of the user object.</span></span>
+##### <a name="request"></a><span data-ttu-id="e937a-140">请求</span><span class="sxs-lookup"><span data-stu-id="e937a-140">Request</span></span>
+<span data-ttu-id="e937a-141">在请求正文中, 提供 user 对象的 id 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e937a-141">In the request body, supply a JSON representation of the id of the user object.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ecc2d-142">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="ecc2d-142">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e937a-142">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e937a-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_accessReview_reviewer"
@@ -72,27 +72,27 @@ Content-Type: application/json
     "id":"006111db-0810-4494-a6df-904d368bd81b"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ecc2d-143">C#</span><span class="sxs-lookup"><span data-stu-id="ecc2d-143">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e937a-143">C#</span><span class="sxs-lookup"><span data-stu-id="e937a-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-accessreview-reviewer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ecc2d-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="ecc2d-144">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e937a-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e937a-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-accessreview-reviewer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ecc2d-145">目标-C</span><span class="sxs-lookup"><span data-stu-id="ecc2d-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e937a-145">目标-C</span><span class="sxs-lookup"><span data-stu-id="e937a-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/add-accessreview-reviewer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="ecc2d-146">Java</span><span class="sxs-lookup"><span data-stu-id="ecc2d-146">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="e937a-146">Java</span><span class="sxs-lookup"><span data-stu-id="e937a-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-accessreview-reviewer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ecc2d-147">响应</span><span class="sxs-lookup"><span data-stu-id="ecc2d-147">Response</span></span>
-><span data-ttu-id="ecc2d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ecc2d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e937a-147">响应</span><span class="sxs-lookup"><span data-stu-id="e937a-147">Response</span></span>
+><span data-ttu-id="e937a-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e937a-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

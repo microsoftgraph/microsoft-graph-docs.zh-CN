@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 97bd28b30a3de6afed3ca338cc34330879dd14f7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: cb89f3d4668740eb7a906aa888728df4a8397d84
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892003"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324764"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var workbookRangeFont = new WorkbookRangeFont
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{sheet-id}"]
-    .Range('$C$1').Format.Font
+    .Range("$C$1").Format.Font
     .Request()
     .UpdateAsync(workbookRangeFont);
 

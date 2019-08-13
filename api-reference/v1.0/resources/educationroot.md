@@ -5,41 +5,41 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0742621ccf5261c3d4e3d9de5d185aa7e0ec3dfa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f15634242219ebfc56f0cc4c533661c55863a279
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030525"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327128"
 ---
-# <a name="educationroot-resource-type"></a><span data-ttu-id="7ae4e-103">educationRoot 资源类型</span><span class="sxs-lookup"><span data-stu-id="7ae4e-103">educationRoot resource type</span></span>
+# <a name="educationroot-resource-type"></a><span data-ttu-id="8f6f4-103">educationRoot 资源类型</span><span class="sxs-lookup"><span data-stu-id="8f6f4-103">educationRoot resource type</span></span>
 
-<span data-ttu-id="7ae4e-104">`/education` 命名空间公开特定于教育部门的功能。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-104">The `/education` namespace exposes functionality that is specific to the education sector.</span></span> <span data-ttu-id="7ae4e-105">`/education` 命名空间中的一些对象可在 Microsoft Graph 的其他部分中找到（例如，[users](user.md)）。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-105">Some objects in the `/education` namespace can be found in other parts of Microsoft Graph (for example, [users](user.md)).</span></span> <span data-ttu-id="7ae4e-106">教育命名空间提供有关这些对象特定于教育的属性和功能。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-106">The education namespace provides education-specific properties and features on these objects.</span></span>
+<span data-ttu-id="8f6f4-104">`/education` 命名空间公开特定于教育部门的功能。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-104">The `/education` namespace exposes functionality that is specific to the education sector.</span></span> <span data-ttu-id="8f6f4-105">`/education` 命名空间中的一些对象可在 Microsoft Graph 的其他部分中找到（例如，[users](user.md)）。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-105">Some objects in the `/education` namespace can be found in other parts of Microsoft Graph (for example, [users](user.md)).</span></span> <span data-ttu-id="8f6f4-106">教育命名空间提供有关这些对象特定于教育的属性和功能。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-106">The education namespace provides education-specific properties and features on these objects.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="7ae4e-107">方法</span><span class="sxs-lookup"><span data-stu-id="7ae4e-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="8f6f4-107">方法</span><span class="sxs-lookup"><span data-stu-id="8f6f4-107">Methods</span></span>
 
-| <span data-ttu-id="7ae4e-108">方法</span><span class="sxs-lookup"><span data-stu-id="7ae4e-108">Method</span></span>           | <span data-ttu-id="7ae4e-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="7ae4e-109">Return Type</span></span>    |<span data-ttu-id="7ae4e-110">说明</span><span class="sxs-lookup"><span data-stu-id="7ae4e-110">Description</span></span>|
+| <span data-ttu-id="8f6f4-108">方法</span><span class="sxs-lookup"><span data-stu-id="8f6f4-108">Method</span></span>           | <span data-ttu-id="8f6f4-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="8f6f4-109">Return Type</span></span>    |<span data-ttu-id="8f6f4-110">说明</span><span class="sxs-lookup"><span data-stu-id="8f6f4-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="7ae4e-111">Create educationClass</span><span class="sxs-lookup"><span data-stu-id="7ae4e-111">Create educationClass</span></span>](../api/educationroot-post-classes.md) |[<span data-ttu-id="7ae4e-112">educationClass</span><span class="sxs-lookup"><span data-stu-id="7ae4e-112">educationClass</span></span>](educationclass.md)| <span data-ttu-id="7ae4e-113">通过发布到 classes 集合创建新的 **educationClass**。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-113">Create a new **educationClass** by posting to the classes collection.</span></span>|
-|[<span data-ttu-id="7ae4e-114">List classes</span><span class="sxs-lookup"><span data-stu-id="7ae4e-114">List classes</span></span>](../api/educationroot-list-classes.md) |<span data-ttu-id="7ae4e-115">[educationClass](educationclass.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7ae4e-115">[educationClass](educationclass.md) collection</span></span>| <span data-ttu-id="7ae4e-116">获取 **educationClass** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-116">Get an **educationClass** object collection.</span></span>|
-|[<span data-ttu-id="7ae4e-117">Create educationSchool</span><span class="sxs-lookup"><span data-stu-id="7ae4e-117">Create educationSchool</span></span>](../api/educationroot-post-schools.md) |[<span data-ttu-id="7ae4e-118">educationSchool</span><span class="sxs-lookup"><span data-stu-id="7ae4e-118">educationSchool</span></span>](educationschool.md)| <span data-ttu-id="7ae4e-119">通过发布到 schools 集合创建新的 **educationSchool**。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-119">Create a new **educationSchool** by posting to the schools collection.</span></span>|
-|[<span data-ttu-id="7ae4e-120">List schools</span><span class="sxs-lookup"><span data-stu-id="7ae4e-120">List schools</span></span>](../api/educationroot-list-schools.md) |<span data-ttu-id="7ae4e-121">[educationSchool](educationschool.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7ae4e-121">[educationSchool](educationschool.md) collection</span></span>| <span data-ttu-id="7ae4e-122">获取 **educationSchool** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-122">Get an **educationSchool** object collection.</span></span>|
-|[<span data-ttu-id="7ae4e-123">Create educationUser</span><span class="sxs-lookup"><span data-stu-id="7ae4e-123">Create educationUser</span></span>](../api/educationroot-post-users.md) |[<span data-ttu-id="7ae4e-124">educationUser</span><span class="sxs-lookup"><span data-stu-id="7ae4e-124">educationUser</span></span>](educationuser.md)| <span data-ttu-id="7ae4e-125">通过发布到 users 集合创建新的 **educationUser**。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-125">Create a new **educationUser** by posting to the users collection.</span></span>|
-|[<span data-ttu-id="7ae4e-126">List users</span><span class="sxs-lookup"><span data-stu-id="7ae4e-126">List users</span></span>](../api/educationroot-list-users.md) |<span data-ttu-id="7ae4e-127">[educationUser](educationuser.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7ae4e-127">[educationUser](educationuser.md) collection</span></span>| <span data-ttu-id="7ae4e-128">获取 **educationUser** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-128">Get an **educationUser** object collection.</span></span>|
+|[<span data-ttu-id="8f6f4-111">Create educationClass</span><span class="sxs-lookup"><span data-stu-id="8f6f4-111">Create educationClass</span></span>](../api/educationroot-post-classes.md) |[<span data-ttu-id="8f6f4-112">educationClass</span><span class="sxs-lookup"><span data-stu-id="8f6f4-112">educationClass</span></span>](educationclass.md)| <span data-ttu-id="8f6f4-113">通过发布到 classes 集合创建新的 **educationClass**。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-113">Create a new **educationClass** by posting to the classes collection.</span></span>|
+|[<span data-ttu-id="8f6f4-114">List classes</span><span class="sxs-lookup"><span data-stu-id="8f6f4-114">List classes</span></span>](../api/educationroot-list-classes.md) |<span data-ttu-id="8f6f4-115">[educationClass](educationclass.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8f6f4-115">[educationClass](educationclass.md) collection</span></span>| <span data-ttu-id="8f6f4-116">获取 **educationClass** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-116">Get an **educationClass** object collection.</span></span>|
+|[<span data-ttu-id="8f6f4-117">Create educationSchool</span><span class="sxs-lookup"><span data-stu-id="8f6f4-117">Create educationSchool</span></span>](../api/educationroot-post-schools.md) |[<span data-ttu-id="8f6f4-118">educationSchool</span><span class="sxs-lookup"><span data-stu-id="8f6f4-118">educationSchool</span></span>](educationschool.md)| <span data-ttu-id="8f6f4-119">通过发布到 schools 集合创建新的 **educationSchool**。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-119">Create a new **educationSchool** by posting to the schools collection.</span></span>|
+|[<span data-ttu-id="8f6f4-120">List schools</span><span class="sxs-lookup"><span data-stu-id="8f6f4-120">List schools</span></span>](../api/educationroot-list-schools.md) |<span data-ttu-id="8f6f4-121">[educationSchool](educationschool.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8f6f4-121">[educationSchool](educationschool.md) collection</span></span>| <span data-ttu-id="8f6f4-122">获取 **educationSchool** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-122">Get an **educationSchool** object collection.</span></span>|
+|[<span data-ttu-id="8f6f4-123">Create educationUser</span><span class="sxs-lookup"><span data-stu-id="8f6f4-123">Create educationUser</span></span>](../api/educationroot-post-users.md) |[<span data-ttu-id="8f6f4-124">educationUser</span><span class="sxs-lookup"><span data-stu-id="8f6f4-124">educationUser</span></span>](educationuser.md)| <span data-ttu-id="8f6f4-125">通过发布到 users 集合创建新的 **educationUser**。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-125">Create a new **educationUser** by posting to the users collection.</span></span>|
+|[<span data-ttu-id="8f6f4-126">List users</span><span class="sxs-lookup"><span data-stu-id="8f6f4-126">List users</span></span>](../api/educationroot-list-users.md) |<span data-ttu-id="8f6f4-127">[educationUser](educationuser.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8f6f4-127">[educationUser](educationuser.md) collection</span></span>| <span data-ttu-id="8f6f4-128">获取 **educationUser** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-128">Get an **educationUser** object collection.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="7ae4e-129">属性</span><span class="sxs-lookup"><span data-stu-id="7ae4e-129">Properties</span></span>
-<span data-ttu-id="7ae4e-130">无。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-130">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="8f6f4-129">属性</span><span class="sxs-lookup"><span data-stu-id="8f6f4-129">Properties</span></span>
+<span data-ttu-id="8f6f4-130">无。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-130">None.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="7ae4e-131">关系</span><span class="sxs-lookup"><span data-stu-id="7ae4e-131">Relationships</span></span>
-| <span data-ttu-id="7ae4e-132">关系</span><span class="sxs-lookup"><span data-stu-id="7ae4e-132">Relationship</span></span> | <span data-ttu-id="7ae4e-133">类型</span><span class="sxs-lookup"><span data-stu-id="7ae4e-133">Type</span></span>   |<span data-ttu-id="7ae4e-134">说明</span><span class="sxs-lookup"><span data-stu-id="7ae4e-134">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="8f6f4-131">关系</span><span class="sxs-lookup"><span data-stu-id="8f6f4-131">Relationships</span></span>
+| <span data-ttu-id="8f6f4-132">关系</span><span class="sxs-lookup"><span data-stu-id="8f6f4-132">Relationship</span></span> | <span data-ttu-id="8f6f4-133">类型</span><span class="sxs-lookup"><span data-stu-id="8f6f4-133">Type</span></span>   |<span data-ttu-id="8f6f4-134">说明</span><span class="sxs-lookup"><span data-stu-id="8f6f4-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7ae4e-135">classes</span><span class="sxs-lookup"><span data-stu-id="7ae4e-135">classes</span></span>|<span data-ttu-id="7ae4e-136">[educationClass](educationclass.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7ae4e-136">[educationClass](educationclass.md) collection</span></span>| <span data-ttu-id="7ae4e-137">只读。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-137">Read-only.</span></span> <span data-ttu-id="7ae4e-138">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-138">Nullable.</span></span>|
-|<span data-ttu-id="7ae4e-139">me</span><span class="sxs-lookup"><span data-stu-id="7ae4e-139">me</span></span>|[<span data-ttu-id="7ae4e-140">educationUser</span><span class="sxs-lookup"><span data-stu-id="7ae4e-140">educationUser</span></span>](educationuser.md)| <span data-ttu-id="7ae4e-141">只读。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-141">Read-only.</span></span> <span data-ttu-id="7ae4e-142">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-142">Nullable.</span></span>|
-|<span data-ttu-id="7ae4e-143">schools</span><span class="sxs-lookup"><span data-stu-id="7ae4e-143">schools</span></span>|<span data-ttu-id="7ae4e-144">[educationSchool](educationschool.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7ae4e-144">[educationSchool](educationschool.md) collection</span></span>| <span data-ttu-id="7ae4e-p104">只读。可为 NULL。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-p104">Read-only. Nullable.</span></span>|
-|<span data-ttu-id="7ae4e-147">users</span><span class="sxs-lookup"><span data-stu-id="7ae4e-147">users</span></span>|<span data-ttu-id="7ae4e-148">[educationUser](educationuser.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7ae4e-148">[educationUser](educationuser.md) collection</span></span>| <span data-ttu-id="7ae4e-p105">只读。可为空。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-p105">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="8f6f4-135">classes</span><span class="sxs-lookup"><span data-stu-id="8f6f4-135">classes</span></span>|<span data-ttu-id="8f6f4-136">[educationClass](educationclass.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8f6f4-136">[educationClass](educationclass.md) collection</span></span>| <span data-ttu-id="8f6f4-137">只读。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-137">Read-only.</span></span> <span data-ttu-id="8f6f4-138">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-138">Nullable.</span></span>|
+|<span data-ttu-id="8f6f4-139">me</span><span class="sxs-lookup"><span data-stu-id="8f6f4-139">me</span></span>|[<span data-ttu-id="8f6f4-140">educationUser</span><span class="sxs-lookup"><span data-stu-id="8f6f4-140">educationUser</span></span>](educationuser.md)| <span data-ttu-id="8f6f4-141">只读。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-141">Read-only.</span></span> <span data-ttu-id="8f6f4-142">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-142">Nullable.</span></span>|
+|<span data-ttu-id="8f6f4-143">schools</span><span class="sxs-lookup"><span data-stu-id="8f6f4-143">schools</span></span>|<span data-ttu-id="8f6f4-144">[educationSchool](educationschool.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8f6f4-144">[educationSchool](educationschool.md) collection</span></span>| <span data-ttu-id="8f6f4-p104">只读。可为 NULL。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-p104">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="8f6f4-147">users</span><span class="sxs-lookup"><span data-stu-id="8f6f4-147">users</span></span>|<span data-ttu-id="8f6f4-148">[educationUser](educationuser.md) 集合</span><span class="sxs-lookup"><span data-stu-id="8f6f4-148">[educationUser](educationuser.md) collection</span></span>| <span data-ttu-id="8f6f4-p105">只读。可为空。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-p105">Read-only. Nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7ae4e-151">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7ae4e-151">JSON representation</span></span>
-<span data-ttu-id="7ae4e-152">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7ae4e-152">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8f6f4-151">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8f6f4-151">JSON representation</span></span>
+<span data-ttu-id="8f6f4-152">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8f6f4-152">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -54,7 +54,7 @@ ms.locfileid: "36030525"
 ```
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7ae4e-153">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7ae4e-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8f6f4-153">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="8f6f4-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_education"
@@ -62,19 +62,19 @@ ms.locfileid: "36030525"
 ```http
 GET https://graph.microsoft.com/v1.0/education
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7ae4e-154">C#</span><span class="sxs-lookup"><span data-stu-id="7ae4e-154">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8f6f4-154">C#</span><span class="sxs-lookup"><span data-stu-id="8f6f4-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-education-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7ae4e-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="7ae4e-155">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8f6f4-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f6f4-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-education-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7ae4e-156">目标-C</span><span class="sxs-lookup"><span data-stu-id="7ae4e-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8f6f4-156">目标-C</span><span class="sxs-lookup"><span data-stu-id="8f6f4-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-education-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7ae4e-157">Java</span><span class="sxs-lookup"><span data-stu-id="7ae4e-157">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="8f6f4-157">Java</span><span class="sxs-lookup"><span data-stu-id="8f6f4-157">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-education-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
