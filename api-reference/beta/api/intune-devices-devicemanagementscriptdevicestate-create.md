@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfdade7e7014da121453873349c3a3aee787fe43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f0b9c1c2ba51907bc486b5c31460b6b7f5c1dce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981596"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310400"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>创建 deviceManagementScriptDeviceState
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981596"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,11 +53,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本设备状态实体的密钥。|
-|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`。|
+|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`、`error`、`pending`。|
 |resultMessage|String|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
 |errorDescription|String|与设备管理脚本的错误执行相对应的错误说明。|
+|lastSyncDateTime|DateTimeOffset|Intune 管理扩展将同步到 Intune 的最新时间。|
+|preRemediationDetectionScriptOutput|String|修复前的检测脚本输出。|
+|remediationScriptError|String|修正脚本的错误输出。|
+|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出。|
 
 
 
@@ -71,7 +75,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 281
+Content-length: 588
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -79,7 +83,11 @@ Content-length: 281
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
 
@@ -88,7 +96,7 @@ Content-length: 281
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -97,9 +105,14 @@ Content-Length: 330
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
+
 
 
 

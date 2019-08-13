@@ -4,12 +4,13 @@ description: 检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c30c368b96d4f39baaf30746da1320e866aa163f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e991263fc6b0fee3f4ffb03293b55f38302aa602
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890203"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374503"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -64,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-notebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

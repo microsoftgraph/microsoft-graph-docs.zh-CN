@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70d2f943adee1710c56900191111b3c724bf5e8b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1da2a612a777491731fa0b85e2f754605ffa04bc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968489"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370163"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
@@ -57,8 +57,6 @@ ms.locfileid: "35968489"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
-
 
 
 

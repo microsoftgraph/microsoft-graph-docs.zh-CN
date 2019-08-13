@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 47861edd08b7343e1e9cf6511a3d0c1f70c51d56
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 6182349af1144858079cee74cb61794ef728ac35
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889702"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36307737"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var rows = await graphClient.Me.Drive.Root.Workbook.Worksheets["{id}"]
-    .Range('A1:Z10')
+    .Range("A1:Z10")
     .VisibleView().Rows
     .Request()
     .GetAsync();

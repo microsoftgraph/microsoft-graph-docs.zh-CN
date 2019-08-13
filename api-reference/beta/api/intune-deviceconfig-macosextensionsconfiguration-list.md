@@ -4,12 +4,13 @@ description: 列出 macOSExtensionsConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48034c6cc55909b3889556796940fd48fac878e6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 71a798550a0e7d355d09d2e33ebf966736efc9d4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976685"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315399"
 ---
 # <a name="list-macosextensionsconfigurations"></a>列出 macOSExtensionsConfigurations
 
@@ -26,7 +27,7 @@ ms.locfileid: "34976685"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -115,6 +116,7 @@ Content-Length: 1760
   ]
 }
 ```
+
 
 
 

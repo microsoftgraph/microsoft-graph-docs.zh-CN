@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd0d3badad0276a63b4cfe9b4ce3a7a2b0e861d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63d999af8df12981d8073972a4435bbd9493484
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977228"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314425"
 ---
 # <a name="get-windows10pfximportcertificateprofile"></a>获取 windows10PFXImportCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35977228"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -108,6 +108,7 @@ Content-Length: 1347
   }
 }
 ```
+
 
 
 

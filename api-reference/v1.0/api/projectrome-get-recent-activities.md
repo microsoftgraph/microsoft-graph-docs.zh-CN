@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 63dc61730813cd218dc17cb019b46ef7ea8a701a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75e97f9e3f9917b56e0f990e2d1b74278a25e3ff
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975905"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375665"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recent-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recent-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 528af707ad65d4c7906d39a548983390ec0b21ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf81d61626c29bdd8c8db6cc4caf1e206a6c5e8c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968475"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370142"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35968475"
 |notLicensed|双面|未获得凭据防护许可|
 |notConfigured|第三章|未配置|
 |virtualizationBasedSecurityNotRunning|4|基于虚拟化的安全性未运行|
-
-
 
 
 

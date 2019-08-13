@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c99fee805f65c0678a75c81ae2f4a6bd8dbcf5f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9121fe0632cc8afc42f7cdad2484f6ab595ab7a4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000898"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316176"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>macOSTrustedRootCertificate 资源类型
 
@@ -106,8 +106,6 @@ OS X 受信任的根证书配置文件。
   "certFileName": "String"
 }
 ```
-
-
 
 
 

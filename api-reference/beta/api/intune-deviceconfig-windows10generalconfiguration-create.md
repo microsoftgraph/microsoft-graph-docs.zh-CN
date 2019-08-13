@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fb21e9bf0a426ea9119ec7a277bf87cd8026d9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f630338211db7c3ef7b17305131d4bf0a6ad115
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975485"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314544"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975485"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -61,9 +61,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |taskManagerBlockEndTask|Boolean|指定非管理员是否可以使用任务管理器结束任务。|
+|energySaverOnBatteryThresholdPercentage|Int32|此设置允许您指定节能程序打开时的电池电量水平。 在使用电池时, 将自动打开 (和低于) 指定电池电量级别的节能保护程序。 有效的输入范围 (0-100)。 有效值为 0 至 100|
+|energySaverPluggedInThresholdPercentage|Int32|此设置允许您指定节能程序打开时的电池电量水平。 接通电源时, 将自动打开 (和低于) 指定电池电量级别的节能保护程序。 有效的输入范围 (0-100)。 有效值为 0 至 100|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在使用电池时关闭移动电脑上的盖子时 Windows 采取的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在插入时关闭移动 PC 上的盖子时 Windows 采取的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在使用电池时按下电源按钮时 Windows 采取的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在插入时按下电源按钮时 Windows 采取的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在使用电池时按 "睡眠" 按钮时 Windows 采取的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|此设置指定当用户在插入时按 "睡眠" 按钮时 Windows 采取的操作。 可取值为：`notConfigured`、`noAction`、`sleep`、`hibernate`、`shutdown`。|
+|powerHybridSleepOnBattery|[启用](../resources/intune-shared-enablement.md)|通过此设置, 可以在使用电池时关闭混合睡眠。 如果将此设置设置为禁用, 则当系统转换为睡眠 (待机) 时不会生成 hiberfile。 如果将此设置设置为启用或未配置此策略设置, 则用户将控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|powerHybridSleepPluggedIn|[启用](../resources/intune-shared-enablement.md)|此设置允许你在接通电源时关闭混合睡眠。 如果将此设置设置为禁用, 则当系统转换为睡眠 (待机) 时不会生成 hiberfile。 如果将此设置设置为启用或未配置此策略设置, 则用户将控制此设置。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|应用的 Windows 10 强制更新计划。|
 |enableAutomaticRedeployment|Boolean|允许具有管理权限的用户在设备锁屏的屏幕上使用 CTRL + Win + R 删除所有用户数据和设置, 以便可以自动重新配置设备并将其重新注册到管理中。|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户登录助手 (wlidsvc) NT 服务。 可取值为：`notConfigured`、`disabled`。|
@@ -155,7 +165,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderBlockEndUserAccess|Boolean|是否阻止最终用户访问 Defender。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
 |defenderFilesAndFoldersToExclude|String collection|要从扫描和实时保护中排除的文件和文件夹。|
 |defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
 |defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
@@ -344,7 +354,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 14387
+Content-length: 14855
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -377,6 +387,16 @@ Content-length: 14387
   "displayName": "Display Name value",
   "version": 7,
   "taskManagerBlockEndTask": true,
+  "energySaverOnBatteryThresholdPercentage": 7,
+  "energySaverPluggedInThresholdPercentage": 7,
+  "powerLidCloseActionOnBattery": "noAction",
+  "powerLidCloseActionPluggedIn": "noAction",
+  "powerButtonActionOnBattery": "noAction",
+  "powerButtonActionPluggedIn": "noAction",
+  "powerSleepButtonActionOnBattery": "noAction",
+  "powerSleepButtonActionPluggedIn": "noAction",
+  "powerHybridSleepOnBattery": "enabled",
+  "powerHybridSleepPluggedIn": "enabled",
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -694,7 +714,7 @@ Content-length: 14387
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 14559
+Content-Length: 15027
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -730,6 +750,16 @@ Content-Length: 14559
   "displayName": "Display Name value",
   "version": 7,
   "taskManagerBlockEndTask": true,
+  "energySaverOnBatteryThresholdPercentage": 7,
+  "energySaverPluggedInThresholdPercentage": 7,
+  "powerLidCloseActionOnBattery": "noAction",
+  "powerLidCloseActionPluggedIn": "noAction",
+  "powerButtonActionOnBattery": "noAction",
+  "powerButtonActionPluggedIn": "noAction",
+  "powerSleepButtonActionOnBattery": "noAction",
+  "powerSleepButtonActionPluggedIn": "noAction",
+  "powerHybridSleepOnBattery": "enabled",
+  "powerHybridSleepPluggedIn": "enabled",
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -1041,6 +1071,7 @@ Content-Length: 14559
   ]
 }
 ```
+
 
 
 

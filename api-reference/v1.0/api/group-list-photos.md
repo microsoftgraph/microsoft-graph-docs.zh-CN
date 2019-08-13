@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9190ef5fe88ccba98fb50d4da5f31fce918b3115
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 66b844b7c773628c0d642565e75d25ed42fafe1c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016256"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337216"
 ---
 # <a name="list-photos"></a>List photos
 检索 [profilePhoto](../resources/profilephoto.md) 对象列表。
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photos-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photos-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

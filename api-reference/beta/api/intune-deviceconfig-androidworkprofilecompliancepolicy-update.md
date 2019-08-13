@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7bd7a8d50f6e45a1dcdd6360b4d3da15130b21f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e18aef8fe6f50ecb599a78d69306e7c89d30a8ac
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36311338"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>更新 androidWorkProfileCompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950992"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -170,6 +170,7 @@ Content-Length: 1459
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 97fd1dddcfea444d330d3f620244f8f84ebc3da0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba7de7ee3612c4d1e8e419522e8d18587339343c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000023"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370282"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36000023"
 |installFailed|utf-8|配置管理器代理安装失败。|
 |updateFailed|11x17|从版本 x 更新到配置管理器代理版本 y 的更新失败。 |
 |communicationError|合|Configuration manager 代理在过去能够到达 configuration manager 服务, 但现在无法再访问。 |
-
-
 
 
 

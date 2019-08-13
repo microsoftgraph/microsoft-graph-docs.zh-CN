@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b40c95e9a7cbf95ef518fa3f2c75a52b6ef3950d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e88a4972201c342b61b861c9419b0d02c28a6d7d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006841"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370422"
 ---
 # <a name="list-teachers"></a>列出教师
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teachers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-teachers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

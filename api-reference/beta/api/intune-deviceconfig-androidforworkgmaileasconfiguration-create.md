@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d7058a6eda2695e3704da957fb93fef9f2c5d14
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6f20b1437b0e05bec5a99d5047d0f44cd472b89
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963526"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312115"
 ---
 # <a name="create-androidforworkgmaileasconfiguration"></a>创建 androidForWorkGmailEasConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963526"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -171,6 +171,7 @@ Content-Length: 1436
   "usernameSource": "userPrincipalName"
 }
 ```
+
 
 
 

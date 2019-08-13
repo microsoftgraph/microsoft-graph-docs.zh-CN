@@ -6,12 +6,12 @@ description: 获取有关在此资源下发生的视图的 itemAnalytics。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: dd8ba2295a84c5ff4612b64c4a1b4485c5a95dbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f43c9758cbdfd6e5b9cb3e343f0aa54fb0c9abec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023242"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370646"
 ---
 # <a name="get-itemanalytics"></a>获取 itemAnalytics
 
@@ -75,7 +75,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,12 +4,13 @@ description: 删除 deviceManagementIntentDeviceSettingStateSummary。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51cdac2f7ca3d213190fac59ca047b65e01fd4a8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e19207ef79a78195a8e6f95d5a7d452feaaaa782
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960333"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313172"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>删除 deviceManagementIntentDeviceSettingStateSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960333"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -62,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f4573429db6ccb359feb4b4280483b8d7bbe7c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77774bc58d336429c013dcb391fba95c74512dcc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987073"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310022"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
@@ -27,7 +27,7 @@ ms.locfileid: "35987073"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,11 +55,12 @@ POST /deviceManagement/remoteActionAudits
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[弃用\]请改用 InitiatedByUserPrincipalName。|
 |initiatedByUserPrincipalName|String|启动设备操作的用户的格式为 UPN。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可取值为：`unknown`、`factoryReset`、`removeCompanyData`、`resetPasscode`、`remoteLock`、`enableLostMode`、`disableLostMode`、`locateDevice`、`rebootNow`、`recoverPasscode`、`cleanWindowsDevice`、`logoutSharedAppleDeviceActiveUser`、`quickScan`、`fullScan`、`windowsDefenderUpdateSignatures`、`factoryResetKeepEnrollmentData`、`updateDeviceAccount`、`automaticRedeployment`、`shutDown`、`rotateFileVaultKey`、`getFileVaultKey`。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|发出操作的时间, 以 UTC 表示。|
 |deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|动作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|动作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|managedDeviceId|String|操作目标。|
 
 
 
@@ -73,7 +74,7 @@ POST /deviceManagement/remoteActionAudits
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits
 Content-type: application/json
-Content-length: 455
+Content-length: 504
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -84,7 +85,8 @@ Content-length: 455
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -93,7 +95,7 @@ Content-length: 455
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 553
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -105,9 +107,11 @@ Content-Length: 504
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

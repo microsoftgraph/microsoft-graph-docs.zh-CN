@@ -4,12 +4,13 @@ description: 列出 windowsUpdateState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 215d3c66756ce9072061fedfeb81b25c647bf7b4
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 150d37b7ac39280310596c175d77e4e006c58865
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725926"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313669"
 ---
 # <a name="list-windowsupdatestates"></a>列出 windowsUpdateStates
 
@@ -26,7 +27,7 @@ ms.locfileid: "35725926"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -82,6 +83,7 @@ Content-Length: 630
   ]
 }
 ```
+
 
 
 

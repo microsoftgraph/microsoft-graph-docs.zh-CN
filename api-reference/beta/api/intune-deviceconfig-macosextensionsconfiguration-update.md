@@ -4,12 +4,13 @@ description: 更新 macOSExtensionsConfiguration 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e78c317496ee9e116e9319a0ff28ca8a7478224
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1c852c56daac83609ac044d4c087dc6fc88752a1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963224"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315391"
 ---
 # <a name="update-macosextensionsconfiguration"></a>更新 macOSExtensionsConfiguration
 
@@ -26,7 +27,7 @@ ms.locfileid: "34963224"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -178,6 +179,7 @@ Content-Length: 1555
   ]
 }
 ```
+
 
 
 

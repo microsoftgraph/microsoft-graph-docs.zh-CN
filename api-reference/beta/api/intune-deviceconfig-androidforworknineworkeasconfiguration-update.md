@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cc9192e7f05f679a3918ce39acc52a972c1fafe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b10ef76ca530afef886c5a65d1fe7aa8e387aa06
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963344"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312024"
 ---
 # <a name="update-androidforworknineworkeasconfiguration"></a>更新 androidForWorkNineWorkEasConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963344"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -181,6 +181,7 @@ Content-Length: 1511
   "syncTasks": true
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: 更新 deviceManagementIntent 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd8b85ccab0153b749ff29be13187e3fd2fd4ef6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3ff66aa59b25333e6dd54605161803f8118e05cf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960445"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313263"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960445"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +105,7 @@ Content-Length: 379
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a32ee387de2cf3916dd3d42135c208dc7320d4f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9939ec6cbe0d603d2cdbe24647cb587c73c4ba7e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947282"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315342"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>更新 macOSGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947282"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -111,6 +111,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |classroomForceAutomaticallyJoinClasses|Boolean|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备 (MacOS 10.15 或更高版本) 上的 MacOS 设备上启动的工作。|
 
 
 
@@ -124,7 +125,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3102
+Content-length: 3146
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -212,7 +213,8 @@ Content-length: 3102
   "classroomAppForceUnpromptedScreenObservation": true,
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
-  "classroomForceUnpromptedAppAndDeviceLock": true
+  "classroomForceUnpromptedAppAndDeviceLock": true,
+  "iCloudBlockActivityContinuation": true
 }
 ```
 
@@ -221,7 +223,7 @@ Content-length: 3102
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3274
+Content-Length: 3318
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -312,9 +314,11 @@ Content-Length: 3274
   "classroomAppForceUnpromptedScreenObservation": true,
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
-  "classroomForceUnpromptedAppAndDeviceLock": true
+  "classroomForceUnpromptedAppAndDeviceLock": true,
+  "iCloudBlockActivityContinuation": true
 }
 ```
+
 
 
 

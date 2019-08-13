@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4fe1a9ba5dab42c7af90ec6be611c3a36ae5768
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad72a40e50eb6659cb5983e7038d440756ca44d7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970134"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316162"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>macOSVpnConfiguration 资源类型
 
@@ -176,8 +176,6 @@ ms.locfileid: "35970134"
   "optInToDeviceIdSharing": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 16e7550f01910e36bc5717cf66a90b130d1b3c43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a30e7c62c93947e55466aed318a232af5e697867
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946381"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314838"
 ---
 # <a name="get-sharedpcconfiguration"></a>获取 sharedPCConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946381"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -131,6 +131,7 @@ Content-Length: 2223
   }
 }
 ```
+
 
 
 

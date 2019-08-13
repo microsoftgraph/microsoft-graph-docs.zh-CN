@@ -4,12 +4,13 @@ description: 列出 deviceManagementCollectionSettingInstance 对象的属性和
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93b1edb40d77c89acd2354869add6bfffbb77257
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e190d9bbed02da9cdb821a038c7cdb2ded8ac008
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960767"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313445"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>列出 deviceManagementCollectionSettingInstances
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960767"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +79,7 @@ Content-Length: 259
   ]
 }
 ```
+
 
 
 
