@@ -5,56 +5,56 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: fd9084d963fa3e666f3e0fa75b7ae9bd5288d4ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 991a47d72505ddca791b4fb7bd2c39c9a2f1482a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945219"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318367"
 ---
-# <a name="list-bookings-calendarview"></a><span data-ttu-id="10f3c-103">列出 Bookings 日历视图</span><span class="sxs-lookup"><span data-stu-id="10f3c-103">List Bookings calendarView</span></span>
+# <a name="list-bookings-calendarview"></a><span data-ttu-id="faa30-103">列出 Bookings 日历视图</span><span class="sxs-lookup"><span data-stu-id="faa30-103">List Bookings calendarView</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="10f3c-104">获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合, 该集合在指定的日期范围内发生。</span><span class="sxs-lookup"><span data-stu-id="10f3c-104">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
+<span data-ttu-id="faa30-104">获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合, 该集合在指定的日期范围内发生。</span><span class="sxs-lookup"><span data-stu-id="faa30-104">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="10f3c-105">权限</span><span class="sxs-lookup"><span data-stu-id="10f3c-105">Permissions</span></span>
-<span data-ttu-id="10f3c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="10f3c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="faa30-105">权限</span><span class="sxs-lookup"><span data-stu-id="faa30-105">Permissions</span></span>
+<span data-ttu-id="faa30-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="faa30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10f3c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="10f3c-108">Permission type</span></span>      | <span data-ttu-id="10f3c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="10f3c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="faa30-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="faa30-108">Permission type</span></span>      | <span data-ttu-id="faa30-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="faa30-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="10f3c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="10f3c-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="10f3c-111">BookingsAppointment、全部、预订、全部、登记、全部、预订。所有</span><span class="sxs-lookup"><span data-stu-id="10f3c-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="10f3c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="10f3c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10f3c-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="10f3c-113">Not supported.</span></span>   |
-|<span data-ttu-id="10f3c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="10f3c-114">Application</span></span> | <span data-ttu-id="10f3c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="10f3c-115">Not supported.</span></span>  |
+|<span data-ttu-id="faa30-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="faa30-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="faa30-111">BookingsAppointment、全部、预订、全部、登记、全部、预订。所有</span><span class="sxs-lookup"><span data-stu-id="faa30-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="faa30-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="faa30-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="faa30-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="faa30-113">Not supported.</span></span>   |
+|<span data-ttu-id="faa30-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="faa30-114">Application</span></span> | <span data-ttu-id="faa30-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="faa30-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="10f3c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="10f3c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="faa30-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="faa30-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="10f3c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="10f3c-117">Request headers</span></span>
-| <span data-ttu-id="10f3c-118">名称</span><span class="sxs-lookup"><span data-stu-id="10f3c-118">Name</span></span>       | <span data-ttu-id="10f3c-119">说明</span><span class="sxs-lookup"><span data-stu-id="10f3c-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="faa30-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="faa30-117">Request headers</span></span>
+| <span data-ttu-id="faa30-118">名称</span><span class="sxs-lookup"><span data-stu-id="faa30-118">Name</span></span>       | <span data-ttu-id="faa30-119">说明</span><span class="sxs-lookup"><span data-stu-id="faa30-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="10f3c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="10f3c-120">Authorization</span></span>  | <span data-ttu-id="10f3c-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="10f3c-121">Bearer {code}</span></span>|
+| <span data-ttu-id="faa30-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="faa30-120">Authorization</span></span>  | <span data-ttu-id="faa30-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="faa30-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="10f3c-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="10f3c-122">Request body</span></span>
-<span data-ttu-id="10f3c-123">在请求 URL 中，提供以下查询参数（含值）。</span><span class="sxs-lookup"><span data-stu-id="10f3c-123">In the request URL, provide following query parameters with values.</span></span>
+## <a name="request-body"></a><span data-ttu-id="faa30-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="faa30-122">Request body</span></span>
+<span data-ttu-id="faa30-123">在请求 URL 中，提供以下查询参数（含值）。</span><span class="sxs-lookup"><span data-stu-id="faa30-123">In the request URL, provide following query parameters with values.</span></span>
 
-| <span data-ttu-id="10f3c-124">参数</span><span class="sxs-lookup"><span data-stu-id="10f3c-124">Parameter</span></span>    | <span data-ttu-id="10f3c-125">类型</span><span class="sxs-lookup"><span data-stu-id="10f3c-125">Type</span></span>   |<span data-ttu-id="10f3c-126">说明</span><span class="sxs-lookup"><span data-stu-id="10f3c-126">Description</span></span>|
+| <span data-ttu-id="faa30-124">参数</span><span class="sxs-lookup"><span data-stu-id="faa30-124">Parameter</span></span>    | <span data-ttu-id="faa30-125">类型</span><span class="sxs-lookup"><span data-stu-id="faa30-125">Type</span></span>   |<span data-ttu-id="faa30-126">说明</span><span class="sxs-lookup"><span data-stu-id="faa30-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="10f3c-127">start</span><span class="sxs-lookup"><span data-stu-id="10f3c-127">start</span></span>|<span data-ttu-id="10f3c-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="10f3c-128">DateTimeOffset</span></span>|<span data-ttu-id="10f3c-129">时间范围的开始日期和时间, 以 ISO 8601 格式表示, 如 UTC 或 UTC 时差。</span><span class="sxs-lookup"><span data-stu-id="10f3c-129">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="10f3c-130">例如, 2018 年1月1日午夜 UTC 将如下所示: ' 2018-01-01T00:00: 00Z ', PST 的相同时间如下所示: ' 2017-12-31T16:00:00-08:00 '。</span><span class="sxs-lookup"><span data-stu-id="10f3c-130">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
-|<span data-ttu-id="10f3c-131">end</span><span class="sxs-lookup"><span data-stu-id="10f3c-131">end</span></span>|<span data-ttu-id="10f3c-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="10f3c-132">DateTimeOffset</span></span>|<span data-ttu-id="10f3c-133">时间范围的结束日期和时间, 以 ISO 8601 格式表示, 即 UTC 或 UTC 时差。</span><span class="sxs-lookup"><span data-stu-id="10f3c-133">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="10f3c-134">例如, 2018 年1月1日的 3am UTC 如下所示: ' 2018-01-01T03:00: 00Z ', PST 中的相同时间如下所示: ' 2017-12-31T19:00:00-08:00 '。</span><span class="sxs-lookup"><span data-stu-id="10f3c-134">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
+|<span data-ttu-id="faa30-127">start</span><span class="sxs-lookup"><span data-stu-id="faa30-127">start</span></span>|<span data-ttu-id="faa30-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="faa30-128">DateTimeOffset</span></span>|<span data-ttu-id="faa30-129">时间范围的开始日期和时间, 以 ISO 8601 格式表示, 如 UTC 或 UTC 时差。</span><span class="sxs-lookup"><span data-stu-id="faa30-129">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="faa30-130">例如, 2018 年1月1日午夜 UTC 将如下所示: ' 2018-01-01T00:00: 00Z ', PST 的相同时间如下所示: ' 2017-12-31T16:00:00-08:00 '。</span><span class="sxs-lookup"><span data-stu-id="faa30-130">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
+|<span data-ttu-id="faa30-131">end</span><span class="sxs-lookup"><span data-stu-id="faa30-131">end</span></span>|<span data-ttu-id="faa30-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="faa30-132">DateTimeOffset</span></span>|<span data-ttu-id="faa30-133">时间范围的结束日期和时间, 以 ISO 8601 格式表示, 即 UTC 或 UTC 时差。</span><span class="sxs-lookup"><span data-stu-id="faa30-133">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="faa30-134">例如, 2018 年1月1日的 3am UTC 如下所示: ' 2018-01-01T03:00: 00Z ', PST 中的相同时间如下所示: ' 2017-12-31T19:00:00-08:00 '。</span><span class="sxs-lookup"><span data-stu-id="faa30-134">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="10f3c-135">响应</span><span class="sxs-lookup"><span data-stu-id="10f3c-135">Response</span></span>
-<span data-ttu-id="10f3c-136">如果成功, 此方法在`200, OK`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="10f3c-136">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="faa30-135">响应</span><span class="sxs-lookup"><span data-stu-id="faa30-135">Response</span></span>
+<span data-ttu-id="faa30-136">如果成功, 此方法在`200, OK`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="faa30-136">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10f3c-137">示例</span><span class="sxs-lookup"><span data-stu-id="10f3c-137">Example</span></span>
-<span data-ttu-id="10f3c-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="10f3c-138">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="10f3c-139">请求</span><span class="sxs-lookup"><span data-stu-id="10f3c-139">Request</span></span>
-<span data-ttu-id="10f3c-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="10f3c-140">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="faa30-137">示例</span><span class="sxs-lookup"><span data-stu-id="faa30-137">Example</span></span>
+<span data-ttu-id="faa30-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="faa30-138">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="faa30-139">请求</span><span class="sxs-lookup"><span data-stu-id="faa30-139">Request</span></span>
+<span data-ttu-id="faa30-140">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="faa30-140">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="10f3c-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="10f3c-141">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="faa30-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="faa30-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
@@ -62,27 +62,27 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="10f3c-142">C#</span><span class="sxs-lookup"><span data-stu-id="10f3c-142">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="faa30-142">C#</span><span class="sxs-lookup"><span data-stu-id="faa30-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="10f3c-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="10f3c-143">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="faa30-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="faa30-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="10f3c-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="10f3c-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="faa30-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="faa30-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="10f3c-145">Java</span><span class="sxs-lookup"><span data-stu-id="10f3c-145">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="faa30-145">Java</span><span class="sxs-lookup"><span data-stu-id="faa30-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-getcalendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="10f3c-146">响应</span><span class="sxs-lookup"><span data-stu-id="10f3c-146">Response</span></span>
-<span data-ttu-id="10f3c-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="10f3c-147">The following is an example of the response.</span></span> <span data-ttu-id="10f3c-148">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="10f3c-148">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="10f3c-149">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="10f3c-149">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="faa30-146">响应</span><span class="sxs-lookup"><span data-stu-id="faa30-146">Response</span></span>
+<span data-ttu-id="faa30-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="faa30-147">The following is an example of the response.</span></span> <span data-ttu-id="faa30-148">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="faa30-148">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="faa30-149">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="faa30-149">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

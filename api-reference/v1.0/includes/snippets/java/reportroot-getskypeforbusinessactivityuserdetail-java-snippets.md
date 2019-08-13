@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: fb32324bc13bfa23eab99ed5ce4e8e6083ca116c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 97c6a8d4750833fea54d898238e59ad41bc45dc2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892488"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349204"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getSkypeForBusinessActivityUserDetail('D7')
+    .getSkypeForBusinessActivityUserDetail("D7")
     .buildRequest()
     .get();
 

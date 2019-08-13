@@ -5,30 +5,30 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6bd82f9e901ede49ab2581c7e3be444075e2f6bd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77e0effe9fc486a83aedc440569209f4188a69e3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955535"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324165"
 ---
-# <a name="delete-educationcategory"></a><span data-ttu-id="02312-103">删除 educationCategory</span><span class="sxs-lookup"><span data-stu-id="02312-103">Delete educationCategory</span></span>
+# <a name="delete-educationcategory"></a><span data-ttu-id="991d1-103">删除 educationCategory</span><span class="sxs-lookup"><span data-stu-id="991d1-103">Delete educationCategory</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="02312-104">删除现有类别。</span><span class="sxs-lookup"><span data-stu-id="02312-104">Delete an existing category.</span></span>
+<span data-ttu-id="991d1-104">删除现有类别。</span><span class="sxs-lookup"><span data-stu-id="991d1-104">Delete an existing category.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="02312-105">权限</span><span class="sxs-lookup"><span data-stu-id="02312-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="991d1-105">权限</span><span class="sxs-lookup"><span data-stu-id="991d1-105">Permissions</span></span>
 
-<span data-ttu-id="02312-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="02312-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="991d1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="991d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="02312-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="02312-108">Permission type</span></span>                        | <span data-ttu-id="02312-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="02312-109">Permissions (from least to most privileged)</span></span>             |
+| <span data-ttu-id="991d1-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="991d1-108">Permission type</span></span>                        | <span data-ttu-id="991d1-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="991d1-109">Permissions (from least to most privileged)</span></span>             |
 | :------------------------------------- | :------------------------------------------------------ |
-| <span data-ttu-id="02312-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="02312-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="02312-111">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="02312-111">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="02312-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="02312-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02312-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="02312-113">Not Supported.</span></span>                                          |
-| <span data-ttu-id="02312-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="02312-114">Application</span></span>                            | <span data-ttu-id="02312-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="02312-115">Not Supported.</span></span>                                          |
+| <span data-ttu-id="991d1-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="991d1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="991d1-111">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="991d1-111">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="991d1-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="991d1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="991d1-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="991d1-113">Not Supported.</span></span>                                          |
+| <span data-ttu-id="991d1-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="991d1-114">Application</span></span>                            | <span data-ttu-id="991d1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="991d1-115">Not Supported.</span></span>                                          |
 
-## <a name="http-request"></a><span data-ttu-id="02312-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="02312-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="991d1-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="991d1-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +36,28 @@ ms.locfileid: "35955535"
 DELETE /education/classes/{id}/assignmentCategories/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="02312-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="02312-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="991d1-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="991d1-117">Request headers</span></span>
 
-| <span data-ttu-id="02312-118">标头</span><span class="sxs-lookup"><span data-stu-id="02312-118">Header</span></span>        | <span data-ttu-id="02312-119">值</span><span class="sxs-lookup"><span data-stu-id="02312-119">Value</span></span>                     |
+| <span data-ttu-id="991d1-118">标头</span><span class="sxs-lookup"><span data-stu-id="991d1-118">Header</span></span>        | <span data-ttu-id="991d1-119">值</span><span class="sxs-lookup"><span data-stu-id="991d1-119">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="02312-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="02312-120">Authorization</span></span> | <span data-ttu-id="02312-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="02312-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="991d1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="991d1-120">Authorization</span></span> | <span data-ttu-id="991d1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="991d1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="02312-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="02312-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="991d1-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="991d1-123">Request body</span></span>
 
-<span data-ttu-id="02312-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="02312-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="991d1-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="991d1-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="02312-125">响应</span><span class="sxs-lookup"><span data-stu-id="02312-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="991d1-125">响应</span><span class="sxs-lookup"><span data-stu-id="991d1-125">Response</span></span>
 
-<span data-ttu-id="02312-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="02312-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="991d1-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="991d1-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="02312-128">示例</span><span class="sxs-lookup"><span data-stu-id="02312-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="991d1-128">示例</span><span class="sxs-lookup"><span data-stu-id="991d1-128">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="02312-129">请求</span><span class="sxs-lookup"><span data-stu-id="02312-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="991d1-129">请求</span><span class="sxs-lookup"><span data-stu-id="991d1-129">Request</span></span>
 
-<span data-ttu-id="02312-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="02312-130">The following is an example of the request.</span></span>
+<span data-ttu-id="991d1-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="991d1-130">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="02312-131">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="02312-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="991d1-131">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="991d1-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignment"
@@ -66,28 +66,28 @@ DELETE /education/classes/{id}/assignmentCategories/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCategories/19002
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="02312-132">C#</span><span class="sxs-lookup"><span data-stu-id="02312-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="991d1-132">C#</span><span class="sxs-lookup"><span data-stu-id="991d1-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="02312-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="02312-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="991d1-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="991d1-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="02312-134">目标-C</span><span class="sxs-lookup"><span data-stu-id="02312-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="991d1-134">目标-C</span><span class="sxs-lookup"><span data-stu-id="991d1-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="02312-135">Java</span><span class="sxs-lookup"><span data-stu-id="02312-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="991d1-135">Java</span><span class="sxs-lookup"><span data-stu-id="991d1-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="02312-136">响应</span><span class="sxs-lookup"><span data-stu-id="02312-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="991d1-136">响应</span><span class="sxs-lookup"><span data-stu-id="991d1-136">Response</span></span>
 
-<span data-ttu-id="02312-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="02312-137">The following is an example of the response.</span></span> 
+<span data-ttu-id="991d1-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="991d1-137">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 351b236ba470b5bcd60bbc732da7cdbd40564d32
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 867e064171878a2d487b41e743dbca169822abcd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893526"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321834"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getSharePointActivityUserCounts('D7')
+    .getSharePointActivityUserCounts("D7")
     .buildRequest()
     .get();
 

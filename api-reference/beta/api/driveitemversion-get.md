@@ -5,31 +5,31 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: dd381033f5bd2a59722302116283e438192d0c2f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f69a8c098b86b568508fbd50143b05cab631478
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956931"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324223"
 ---
-# <a name="get-a-driveitemversion-resource-preview"></a><span data-ttu-id="8b5c1-103">获取 DriveItemVersion 资源（预览）</span><span class="sxs-lookup"><span data-stu-id="8b5c1-103">Get a DriveItemVersion resource (preview)</span></span>
+# <a name="get-a-driveitemversion-resource-preview"></a><span data-ttu-id="6229e-103">获取 DriveItemVersion 资源（预览）</span><span class="sxs-lookup"><span data-stu-id="6229e-103">Get a DriveItemVersion resource (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8b5c1-104">检索 [DriveItem](../resources/driveitem.md) 的某个特定版本的元数据。</span><span class="sxs-lookup"><span data-stu-id="8b5c1-104">Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="6229e-104">检索 [DriveItem](../resources/driveitem.md) 的某个特定版本的元数据。</span><span class="sxs-lookup"><span data-stu-id="6229e-104">Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8b5c1-105">权限</span><span class="sxs-lookup"><span data-stu-id="8b5c1-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6229e-105">权限</span><span class="sxs-lookup"><span data-stu-id="6229e-105">Permissions</span></span>
 
-<span data-ttu-id="8b5c1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8b5c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6229e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6229e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b5c1-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8b5c1-108">Permission type</span></span>      | <span data-ttu-id="8b5c1-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8b5c1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6229e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6229e-108">Permission type</span></span>      | <span data-ttu-id="6229e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6229e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b5c1-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8b5c1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8b5c1-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b5c1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b5c1-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8b5c1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b5c1-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b5c1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b5c1-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8b5c1-114">Application</span></span> | <span data-ttu-id="8b5c1-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b5c1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="6229e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6229e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6229e-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6229e-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6229e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6229e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6229e-113">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6229e-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6229e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6229e-114">Application</span></span> | <span data-ttu-id="6229e-115">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6229e-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="8b5c1-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8b5c1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6229e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6229e-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -41,46 +41,46 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 ```
 
-## <a name="response"></a><span data-ttu-id="8b5c1-117">响应</span><span class="sxs-lookup"><span data-stu-id="8b5c1-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6229e-117">响应</span><span class="sxs-lookup"><span data-stu-id="6229e-117">Response</span></span>
 
-<span data-ttu-id="8b5c1-118">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItemVersion](../resources/driveitemversion.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8b5c1-118">If successful, this method returns a `200 OK` response code and a [DriveItemVersion](../resources/driveitemversion.md) object in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="8b5c1-119">示例</span><span class="sxs-lookup"><span data-stu-id="8b5c1-119">Example</span></span>
-
-<span data-ttu-id="8b5c1-120">本示例检索当前用户驱动器中的文件版本。</span><span class="sxs-lookup"><span data-stu-id="8b5c1-120">This example retrieves a version of a file in the current user's drive.</span></span>
-
-### <a name="http-request"></a><span data-ttu-id="8b5c1-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8b5c1-121">HTTP request</span></span>
+<span data-ttu-id="6229e-118">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItemVersion](../resources/driveitemversion.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="6229e-118">If successful, this method returns a `200 OK` response code and a [DriveItemVersion](../resources/driveitemversion.md) object in the response body.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8b5c1-122">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="8b5c1-122">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="6229e-119">示例</span><span class="sxs-lookup"><span data-stu-id="6229e-119">Example</span></span>
+
+<span data-ttu-id="6229e-120">本示例检索当前用户驱动器中的文件版本。</span><span class="sxs-lookup"><span data-stu-id="6229e-120">This example retrieves a version of a file in the current user's drive.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="6229e-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6229e-121">HTTP request</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="6229e-122">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="6229e-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8b5c1-123">C#</span><span class="sxs-lookup"><span data-stu-id="8b5c1-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6229e-123">C#</span><span class="sxs-lookup"><span data-stu-id="6229e-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-single-version-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8b5c1-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="8b5c1-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6229e-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6229e-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-single-version-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8b5c1-125">目标-C</span><span class="sxs-lookup"><span data-stu-id="8b5c1-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6229e-125">目标-C</span><span class="sxs-lookup"><span data-stu-id="6229e-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="8b5c1-126">Java</span><span class="sxs-lookup"><span data-stu-id="8b5c1-126">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="6229e-126">Java</span><span class="sxs-lookup"><span data-stu-id="6229e-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-single-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8b5c1-127">响应</span><span class="sxs-lookup"><span data-stu-id="8b5c1-127">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6229e-127">响应</span><span class="sxs-lookup"><span data-stu-id="6229e-127">Response</span></span>
 
-<span data-ttu-id="8b5c1-128">这将返回版本的集合：</span><span class="sxs-lookup"><span data-stu-id="8b5c1-128">This returns a collection of versions:</span></span>
+<span data-ttu-id="6229e-128">这将返回版本的集合：</span><span class="sxs-lookup"><span data-stu-id="6229e-128">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
 
@@ -101,11 +101,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="8b5c1-129">注解</span><span class="sxs-lookup"><span data-stu-id="8b5c1-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6229e-129">注解</span><span class="sxs-lookup"><span data-stu-id="6229e-129">Remarks</span></span>
 
-<span data-ttu-id="8b5c1-130">OneDrive 不保留文件以前版本的完整元数据。</span><span class="sxs-lookup"><span data-stu-id="8b5c1-130">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="6229e-130">OneDrive 不保留文件以前版本的完整元数据。</span><span class="sxs-lookup"><span data-stu-id="6229e-130">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="8b5c1-131">当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。</span><span class="sxs-lookup"><span data-stu-id="8b5c1-131">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="6229e-131">当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。</span><span class="sxs-lookup"><span data-stu-id="6229e-131">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 
 <!--

@@ -5,53 +5,53 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c5c0a7228d0a32f04ad4d1468ff00d1d3061aa8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3751291cff41e5d37a027b901d3c4a83260d8df9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951258"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319578"
 ---
-# <a name="restore-deleted-item"></a><span data-ttu-id="cfd92-103">恢复已删除的项目</span><span class="sxs-lookup"><span data-stu-id="cfd92-103">Restore deleted item</span></span>
+# <a name="restore-deleted-item"></a><span data-ttu-id="cceca-103">恢复已删除的项目</span><span class="sxs-lookup"><span data-stu-id="cceca-103">Restore deleted item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cfd92-104">从[已删除的项目](../resources/directory.md)中还原最近删除的项目。</span><span class="sxs-lookup"><span data-stu-id="cfd92-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
+<span data-ttu-id="cceca-104">从[已删除的项目](../resources/directory.md)中还原最近删除的项目。</span><span class="sxs-lookup"><span data-stu-id="cceca-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
 
-<span data-ttu-id="cfd92-105">目前，已删除的项目功能仅支持用于 [group](../resources/group.md) 和 [user](../resources/user.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="cfd92-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="cfd92-106">如果意外删除项目，可完全还原该项目。</span><span class="sxs-lookup"><span data-stu-id="cfd92-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
+<span data-ttu-id="cceca-105">目前，已删除的项目功能仅支持用于 [group](../resources/group.md) 和 [user](../resources/user.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="cceca-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="cceca-106">如果意外删除项目，可完全还原该项目。</span><span class="sxs-lookup"><span data-stu-id="cceca-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
 
-<span data-ttu-id="cfd92-107">最近删除的项目将保留最多 30 天的可用时间。</span><span class="sxs-lookup"><span data-stu-id="cfd92-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="cfd92-108">30 天后，该项目将永久删除。</span><span class="sxs-lookup"><span data-stu-id="cfd92-108">After 30 days, the item is permanently deleted.</span></span>
+<span data-ttu-id="cceca-107">最近删除的项目将保留最多 30 天的可用时间。</span><span class="sxs-lookup"><span data-stu-id="cceca-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="cceca-108">30 天后，该项目将永久删除。</span><span class="sxs-lookup"><span data-stu-id="cceca-108">After 30 days, the item is permanently deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cfd92-109">权限</span><span class="sxs-lookup"><span data-stu-id="cfd92-109">Permissions</span></span>
-<span data-ttu-id="cfd92-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cfd92-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cceca-109">权限</span><span class="sxs-lookup"><span data-stu-id="cceca-109">Permissions</span></span>
+<span data-ttu-id="cceca-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cceca-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="cfd92-112">对于用户: Directory.accessasuser.all 的所有用户。</span><span class="sxs-lookup"><span data-stu-id="cfd92-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="cfd92-113">对于组: Directory.accessasuser.all 和 all 的组</span><span class="sxs-lookup"><span data-stu-id="cfd92-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="cceca-112">对于用户: Directory.accessasuser.all 的所有用户。</span><span class="sxs-lookup"><span data-stu-id="cceca-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="cceca-113">对于组: Directory.accessasuser.all 和 all 的组</span><span class="sxs-lookup"><span data-stu-id="cceca-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="cfd92-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cfd92-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cceca-114">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cceca-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cfd92-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="cfd92-115">Request headers</span></span>
-| <span data-ttu-id="cfd92-116">名称</span><span class="sxs-lookup"><span data-stu-id="cfd92-116">Name</span></span>       | <span data-ttu-id="cfd92-117">说明</span><span class="sxs-lookup"><span data-stu-id="cfd92-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cceca-115">请求标头</span><span class="sxs-lookup"><span data-stu-id="cceca-115">Request headers</span></span>
+| <span data-ttu-id="cceca-116">名称</span><span class="sxs-lookup"><span data-stu-id="cceca-116">Name</span></span>       | <span data-ttu-id="cceca-117">说明</span><span class="sxs-lookup"><span data-stu-id="cceca-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="cfd92-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfd92-118">Authorization</span></span>  | <span data-ttu-id="cfd92-119">必需&lt;的&gt; \*\* 持有者令牌</span><span class="sxs-lookup"><span data-stu-id="cfd92-119">Bearer &lt;token&gt; *Required*</span></span>|
-| <span data-ttu-id="cfd92-120">Content-type</span><span class="sxs-lookup"><span data-stu-id="cfd92-120">Content-type</span></span> | <span data-ttu-id="cfd92-121">application/json</span><span class="sxs-lookup"><span data-stu-id="cfd92-121">application/json</span></span> |
+| <span data-ttu-id="cceca-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="cceca-118">Authorization</span></span>  | <span data-ttu-id="cceca-119">必需&lt;的&gt; \*\* 持有者令牌</span><span class="sxs-lookup"><span data-stu-id="cceca-119">Bearer &lt;token&gt; *Required*</span></span>|
+| <span data-ttu-id="cceca-120">Content-type</span><span class="sxs-lookup"><span data-stu-id="cceca-120">Content-type</span></span> | <span data-ttu-id="cceca-121">application/json</span><span class="sxs-lookup"><span data-stu-id="cceca-121">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cfd92-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="cfd92-122">Request body</span></span>
-<span data-ttu-id="cfd92-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cfd92-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cceca-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="cceca-122">Request body</span></span>
+<span data-ttu-id="cceca-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cceca-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cfd92-124">响应</span><span class="sxs-lookup"><span data-stu-id="cfd92-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cceca-124">响应</span><span class="sxs-lookup"><span data-stu-id="cceca-124">Response</span></span>
 
-<span data-ttu-id="cfd92-125">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cfd92-125">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="cceca-125">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cceca-125">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cfd92-126">示例</span><span class="sxs-lookup"><span data-stu-id="cfd92-126">Example</span></span>
-### <a name="request"></a><span data-ttu-id="cfd92-127">请求</span><span class="sxs-lookup"><span data-stu-id="cfd92-127">Request</span></span>
+## <a name="example"></a><span data-ttu-id="cceca-126">示例</span><span class="sxs-lookup"><span data-stu-id="cceca-126">Example</span></span>
+### <a name="request"></a><span data-ttu-id="cceca-127">请求</span><span class="sxs-lookup"><span data-stu-id="cceca-127">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cfd92-128">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="cfd92-128">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cceca-128">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="cceca-128">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directory"
@@ -59,26 +59,26 @@ POST /directory/deleteditems/{id}/restore
 ```http
 POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cfd92-129">C#</span><span class="sxs-lookup"><span data-stu-id="cfd92-129">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cceca-129">C#</span><span class="sxs-lookup"><span data-stu-id="cceca-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cfd92-130">Javascript</span><span class="sxs-lookup"><span data-stu-id="cfd92-130">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cceca-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cceca-130">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cfd92-131">目标-C</span><span class="sxs-lookup"><span data-stu-id="cfd92-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cceca-131">目标-C</span><span class="sxs-lookup"><span data-stu-id="cceca-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="cfd92-132">Java</span><span class="sxs-lookup"><span data-stu-id="cfd92-132">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="cceca-132">Java</span><span class="sxs-lookup"><span data-stu-id="cceca-132">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="cfd92-133">响应</span><span class="sxs-lookup"><span data-stu-id="cfd92-133">Response</span></span>
-<span data-ttu-id="cfd92-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cfd92-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cceca-133">响应</span><span class="sxs-lookup"><span data-stu-id="cceca-133">Response</span></span>
+<span data-ttu-id="cceca-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cceca-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
