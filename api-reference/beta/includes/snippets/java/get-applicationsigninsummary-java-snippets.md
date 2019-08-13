@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 55654847595cc0f13d29d19024c318f12264aed9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 16ca88bd996dd8795475e8d5e43948ab989616b1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856722"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318650"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IApplicationSignInSummaryCollectionPage getAzureADApplicationSignInSummary = graphClient.reports()
-    .getAzureADApplicationSignInSummary('D7')
+    .getAzureADApplicationSignInSummary("D7")
     .buildRequest()
     .get();
 
