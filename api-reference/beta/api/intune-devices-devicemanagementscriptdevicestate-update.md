@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db46807d376decdcbe81484ce097514af849efa7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ffb1732336de34e39868b5687aa9c1fa390dfda6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986013"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310344"
 ---
-# <a name="update-devicemanagementscriptdevicestate"></a><span data-ttu-id="8459a-103">更新 deviceManagementScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="8459a-103">Update deviceManagementScriptDeviceState</span></span>
+# <a name="update-devicemanagementscriptdevicestate"></a><span data-ttu-id="adcc0-103">更新 deviceManagementScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="adcc0-103">Update deviceManagementScriptDeviceState</span></span>
 
-> <span data-ttu-id="8459a-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8459a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="adcc0-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="adcc0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8459a-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8459a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="adcc0-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="adcc0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8459a-106">更新[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8459a-106">Update the properties of a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
+<span data-ttu-id="adcc0-106">更新[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="adcc0-106">Update the properties of a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="8459a-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="8459a-107">Prerequisites</span></span>
-<span data-ttu-id="8459a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8459a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="adcc0-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="adcc0-107">Prerequisites</span></span>
+<span data-ttu-id="adcc0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="adcc0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8459a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8459a-110">Permission type</span></span>|<span data-ttu-id="8459a-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8459a-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="adcc0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="adcc0-110">Permission type</span></span>|<span data-ttu-id="adcc0-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="adcc0-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="8459a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8459a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8459a-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8459a-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="8459a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8459a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8459a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8459a-115">Not supported.</span></span>|
-|<span data-ttu-id="8459a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8459a-116">Application</span></span>|<span data-ttu-id="8459a-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="8459a-117">Not supported.</span></span>|
+|<span data-ttu-id="adcc0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="adcc0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="adcc0-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adcc0-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="adcc0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="adcc0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="adcc0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="adcc0-115">Not supported.</span></span>|
+|<span data-ttu-id="adcc0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="adcc0-116">Application</span></span>|<span data-ttu-id="adcc0-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adcc0-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8459a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8459a-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="adcc0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="adcc0-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,39 +39,43 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8459a-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8459a-119">Request headers</span></span>
-|<span data-ttu-id="8459a-120">标头</span><span class="sxs-lookup"><span data-stu-id="8459a-120">Header</span></span>|<span data-ttu-id="8459a-121">值</span><span class="sxs-lookup"><span data-stu-id="8459a-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="adcc0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="adcc0-119">Request headers</span></span>
+|<span data-ttu-id="adcc0-120">标头</span><span class="sxs-lookup"><span data-stu-id="adcc0-120">Header</span></span>|<span data-ttu-id="adcc0-121">值</span><span class="sxs-lookup"><span data-stu-id="adcc0-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="8459a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8459a-122">Authorization</span></span>|<span data-ttu-id="8459a-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8459a-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="8459a-124">接受</span><span class="sxs-lookup"><span data-stu-id="8459a-124">Accept</span></span>|<span data-ttu-id="8459a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8459a-125">application/json</span></span>|
+|<span data-ttu-id="adcc0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="adcc0-122">Authorization</span></span>|<span data-ttu-id="adcc0-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="adcc0-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="adcc0-124">接受</span><span class="sxs-lookup"><span data-stu-id="adcc0-124">Accept</span></span>|<span data-ttu-id="adcc0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="adcc0-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8459a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8459a-126">Request body</span></span>
-<span data-ttu-id="8459a-127">在请求正文中, 提供[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8459a-127">In the request body, supply a JSON representation for the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="adcc0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="adcc0-126">Request body</span></span>
+<span data-ttu-id="adcc0-127">在请求正文中, 提供[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="adcc0-127">In the request body, supply a JSON representation for the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
 
-<span data-ttu-id="8459a-128">下表显示创建[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8459a-128">The following table shows the properties that are required when you create the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).</span></span>
+<span data-ttu-id="adcc0-128">下表显示创建[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="adcc0-128">The following table shows the properties that are required when you create the [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).</span></span>
 
-|<span data-ttu-id="8459a-129">属性</span><span class="sxs-lookup"><span data-stu-id="8459a-129">Property</span></span>|<span data-ttu-id="8459a-130">类型</span><span class="sxs-lookup"><span data-stu-id="8459a-130">Type</span></span>|<span data-ttu-id="8459a-131">说明</span><span class="sxs-lookup"><span data-stu-id="8459a-131">Description</span></span>|
+|<span data-ttu-id="adcc0-129">属性</span><span class="sxs-lookup"><span data-stu-id="adcc0-129">Property</span></span>|<span data-ttu-id="adcc0-130">类型</span><span class="sxs-lookup"><span data-stu-id="adcc0-130">Type</span></span>|<span data-ttu-id="adcc0-131">说明</span><span class="sxs-lookup"><span data-stu-id="adcc0-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8459a-132">id</span><span class="sxs-lookup"><span data-stu-id="8459a-132">id</span></span>|<span data-ttu-id="8459a-133">String</span><span class="sxs-lookup"><span data-stu-id="8459a-133">String</span></span>|<span data-ttu-id="8459a-134">设备管理脚本设备状态实体的密钥。</span><span class="sxs-lookup"><span data-stu-id="8459a-134">Key of the device management script device state entity.</span></span>|
-|<span data-ttu-id="8459a-135">runState</span><span class="sxs-lookup"><span data-stu-id="8459a-135">runState</span></span>|[<span data-ttu-id="8459a-136">runState</span><span class="sxs-lookup"><span data-stu-id="8459a-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="8459a-137">设备管理脚本最新运行的状态。</span><span class="sxs-lookup"><span data-stu-id="8459a-137">State of latest run of the device management script.</span></span> <span data-ttu-id="8459a-138">可取值为：`unknown`、`success`、`fail`。</span><span class="sxs-lookup"><span data-stu-id="8459a-138">Possible values are: `unknown`, `success`, `fail`.</span></span>|
-|<span data-ttu-id="8459a-139">resultMessage</span><span class="sxs-lookup"><span data-stu-id="8459a-139">resultMessage</span></span>|<span data-ttu-id="8459a-140">String</span><span class="sxs-lookup"><span data-stu-id="8459a-140">String</span></span>|<span data-ttu-id="8459a-141">执行输出的详细信息。</span><span class="sxs-lookup"><span data-stu-id="8459a-141">Details of execution output.</span></span>|
-|<span data-ttu-id="8459a-142">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="8459a-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="8459a-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8459a-143">DateTimeOffset</span></span>|<span data-ttu-id="8459a-144">最近执行设备管理脚本的时间。</span><span class="sxs-lookup"><span data-stu-id="8459a-144">Latest time the device management script executes.</span></span>|
-|<span data-ttu-id="8459a-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="8459a-145">errorCode</span></span>|<span data-ttu-id="8459a-146">Int32</span><span class="sxs-lookup"><span data-stu-id="8459a-146">Int32</span></span>|<span data-ttu-id="8459a-147">与设备管理脚本的错误执行相对应的错误代码。</span><span class="sxs-lookup"><span data-stu-id="8459a-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
-|<span data-ttu-id="8459a-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="8459a-148">errorDescription</span></span>|<span data-ttu-id="8459a-149">String</span><span class="sxs-lookup"><span data-stu-id="8459a-149">String</span></span>|<span data-ttu-id="8459a-150">与设备管理脚本的错误执行相对应的错误说明。</span><span class="sxs-lookup"><span data-stu-id="8459a-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="adcc0-132">id</span><span class="sxs-lookup"><span data-stu-id="adcc0-132">id</span></span>|<span data-ttu-id="adcc0-133">String</span><span class="sxs-lookup"><span data-stu-id="adcc0-133">String</span></span>|<span data-ttu-id="adcc0-134">设备管理脚本设备状态实体的密钥。</span><span class="sxs-lookup"><span data-stu-id="adcc0-134">Key of the device management script device state entity.</span></span>|
+|<span data-ttu-id="adcc0-135">runState</span><span class="sxs-lookup"><span data-stu-id="adcc0-135">runState</span></span>|[<span data-ttu-id="adcc0-136">runState</span><span class="sxs-lookup"><span data-stu-id="adcc0-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="adcc0-137">设备管理脚本最新运行的状态。</span><span class="sxs-lookup"><span data-stu-id="adcc0-137">State of latest run of the device management script.</span></span> <span data-ttu-id="adcc0-138">可取值为：`unknown`、`success`、`fail`、`error`、`pending`。</span><span class="sxs-lookup"><span data-stu-id="adcc0-138">Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.</span></span>|
+|<span data-ttu-id="adcc0-139">resultMessage</span><span class="sxs-lookup"><span data-stu-id="adcc0-139">resultMessage</span></span>|<span data-ttu-id="adcc0-140">String</span><span class="sxs-lookup"><span data-stu-id="adcc0-140">String</span></span>|<span data-ttu-id="adcc0-141">执行输出的详细信息。</span><span class="sxs-lookup"><span data-stu-id="adcc0-141">Details of execution output.</span></span>|
+|<span data-ttu-id="adcc0-142">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="adcc0-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="adcc0-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="adcc0-143">DateTimeOffset</span></span>|<span data-ttu-id="adcc0-144">最近执行设备管理脚本的时间。</span><span class="sxs-lookup"><span data-stu-id="adcc0-144">Latest time the device management script executes.</span></span>|
+|<span data-ttu-id="adcc0-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="adcc0-145">errorCode</span></span>|<span data-ttu-id="adcc0-146">Int32</span><span class="sxs-lookup"><span data-stu-id="adcc0-146">Int32</span></span>|<span data-ttu-id="adcc0-147">与设备管理脚本的错误执行相对应的错误代码。</span><span class="sxs-lookup"><span data-stu-id="adcc0-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="adcc0-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="adcc0-148">errorDescription</span></span>|<span data-ttu-id="adcc0-149">String</span><span class="sxs-lookup"><span data-stu-id="adcc0-149">String</span></span>|<span data-ttu-id="adcc0-150">与设备管理脚本的错误执行相对应的错误说明。</span><span class="sxs-lookup"><span data-stu-id="adcc0-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="adcc0-151">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="adcc0-151">lastSyncDateTime</span></span>|<span data-ttu-id="adcc0-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="adcc0-152">DateTimeOffset</span></span>|<span data-ttu-id="adcc0-153">Intune 管理扩展将同步到 Intune 的最新时间。</span><span class="sxs-lookup"><span data-stu-id="adcc0-153">The latest time that Intune Managment Extension syncs to Intune.</span></span>|
+|<span data-ttu-id="adcc0-154">preRemediationDetectionScriptOutput</span><span class="sxs-lookup"><span data-stu-id="adcc0-154">preRemediationDetectionScriptOutput</span></span>|<span data-ttu-id="adcc0-155">String</span><span class="sxs-lookup"><span data-stu-id="adcc0-155">String</span></span>|<span data-ttu-id="adcc0-156">修复前的检测脚本输出。</span><span class="sxs-lookup"><span data-stu-id="adcc0-156">Output of the detection script before remediation.</span></span>|
+|<span data-ttu-id="adcc0-157">remediationScriptError</span><span class="sxs-lookup"><span data-stu-id="adcc0-157">remediationScriptError</span></span>|<span data-ttu-id="adcc0-158">String</span><span class="sxs-lookup"><span data-stu-id="adcc0-158">String</span></span>|<span data-ttu-id="adcc0-159">修正脚本的错误输出。</span><span class="sxs-lookup"><span data-stu-id="adcc0-159">Error output of the remediation script.</span></span>|
+|<span data-ttu-id="adcc0-160">postRemediationDetectionScriptOutput</span><span class="sxs-lookup"><span data-stu-id="adcc0-160">postRemediationDetectionScriptOutput</span></span>|<span data-ttu-id="adcc0-161">String</span><span class="sxs-lookup"><span data-stu-id="adcc0-161">String</span></span>|<span data-ttu-id="adcc0-162">修正后的检测脚本输出。</span><span class="sxs-lookup"><span data-stu-id="adcc0-162">Detection script output after remediation.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="8459a-151">响应</span><span class="sxs-lookup"><span data-stu-id="8459a-151">Response</span></span>
-<span data-ttu-id="8459a-152">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8459a-152">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="adcc0-163">响应</span><span class="sxs-lookup"><span data-stu-id="adcc0-163">Response</span></span>
+<span data-ttu-id="adcc0-164">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="adcc0-164">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8459a-153">示例</span><span class="sxs-lookup"><span data-stu-id="8459a-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="adcc0-165">示例</span><span class="sxs-lookup"><span data-stu-id="adcc0-165">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8459a-154">请求</span><span class="sxs-lookup"><span data-stu-id="8459a-154">Request</span></span>
-<span data-ttu-id="8459a-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8459a-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="adcc0-166">请求</span><span class="sxs-lookup"><span data-stu-id="adcc0-166">Request</span></span>
+<span data-ttu-id="adcc0-167">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="adcc0-167">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 Content-type: application/json
-Content-length: 281
+Content-length: 588
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -79,16 +83,20 @@ Content-length: 281
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="8459a-156">响应</span><span class="sxs-lookup"><span data-stu-id="8459a-156">Response</span></span>
-<span data-ttu-id="8459a-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8459a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="adcc0-168">响应</span><span class="sxs-lookup"><span data-stu-id="adcc0-168">Response</span></span>
+<span data-ttu-id="adcc0-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="adcc0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -97,9 +105,14 @@ Content-Length: 330
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
+
 
 
 
