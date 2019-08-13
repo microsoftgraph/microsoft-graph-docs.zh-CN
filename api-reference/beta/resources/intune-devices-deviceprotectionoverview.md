@@ -5,40 +5,40 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1efe63f87057952444e17b9c5684cd3ecc20d4c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bcae979d81034155b715a634476b8dc4aa7a9c4a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999799"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369953"
 ---
-# <a name="deviceprotectionoverview-resource-type"></a><span data-ttu-id="700cb-103">deviceProtectionOverview 资源类型</span><span class="sxs-lookup"><span data-stu-id="700cb-103">deviceProtectionOverview resource type</span></span>
+# <a name="deviceprotectionoverview-resource-type"></a><span data-ttu-id="17a39-103">deviceProtectionOverview 资源类型</span><span class="sxs-lookup"><span data-stu-id="17a39-103">deviceProtectionOverview resource type</span></span>
 
-> <span data-ttu-id="700cb-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="700cb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="17a39-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="17a39-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="700cb-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="700cb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="17a39-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="17a39-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="700cb-106">给定设备的硬件信息。</span><span class="sxs-lookup"><span data-stu-id="700cb-106">Hardware information of a given device.</span></span>
+<span data-ttu-id="17a39-106">给定设备的硬件信息。</span><span class="sxs-lookup"><span data-stu-id="17a39-106">Hardware information of a given device.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="700cb-107">属性</span><span class="sxs-lookup"><span data-stu-id="700cb-107">Properties</span></span>
-|<span data-ttu-id="700cb-108">属性</span><span class="sxs-lookup"><span data-stu-id="700cb-108">Property</span></span>|<span data-ttu-id="700cb-109">类型</span><span class="sxs-lookup"><span data-stu-id="700cb-109">Type</span></span>|<span data-ttu-id="700cb-110">说明</span><span class="sxs-lookup"><span data-stu-id="700cb-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="17a39-107">属性</span><span class="sxs-lookup"><span data-stu-id="17a39-107">Properties</span></span>
+|<span data-ttu-id="17a39-108">属性</span><span class="sxs-lookup"><span data-stu-id="17a39-108">Property</span></span>|<span data-ttu-id="17a39-109">类型</span><span class="sxs-lookup"><span data-stu-id="17a39-109">Type</span></span>|<span data-ttu-id="17a39-110">说明</span><span class="sxs-lookup"><span data-stu-id="17a39-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="700cb-111">totalReportedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-111">totalReportedDeviceCount</span></span>|<span data-ttu-id="700cb-112">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-112">Int32</span></span>|<span data-ttu-id="700cb-113">设备计数总数。</span><span class="sxs-lookup"><span data-stu-id="700cb-113">Total device count.</span></span>|
-|<span data-ttu-id="700cb-114">inactiveThreatAgentDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-114">inactiveThreatAgentDeviceCount</span></span>|<span data-ttu-id="700cb-115">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-115">Int32</span></span>|<span data-ttu-id="700cb-116">带有非活动威胁代理计数的设备</span><span class="sxs-lookup"><span data-stu-id="700cb-116">Device with inactive threat agent count</span></span>|
-|<span data-ttu-id="700cb-117">unknownStateThreatAgentDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-117">unknownStateThreatAgentDeviceCount</span></span>|<span data-ttu-id="700cb-118">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-118">Int32</span></span>|<span data-ttu-id="700cb-119">包含威胁代理状态的设备作为未知计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-119">Device with threat agent state as unknown count.</span></span>|
-|<span data-ttu-id="700cb-120">pendingSignatureUpdateDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-120">pendingSignatureUpdateDeviceCount</span></span>|<span data-ttu-id="700cb-121">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-121">Int32</span></span>|<span data-ttu-id="700cb-122">具有旧签名计数的设备。</span><span class="sxs-lookup"><span data-stu-id="700cb-122">Device with old signature count.</span></span>|
-|<span data-ttu-id="700cb-123">cleanDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-123">cleanDeviceCount</span></span>|<span data-ttu-id="700cb-124">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-124">Int32</span></span>|<span data-ttu-id="700cb-125">清洗设备计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-125">Clean device count.</span></span>|
-|<span data-ttu-id="700cb-126">pendingFullScanDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-126">pendingFullScanDeviceCount</span></span>|<span data-ttu-id="700cb-127">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-127">Int32</span></span>|<span data-ttu-id="700cb-128">正在等待完全扫描设备计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-128">Pending full scan device count.</span></span>|
-|<span data-ttu-id="700cb-129">pendingRestartDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-129">pendingRestartDeviceCount</span></span>|<span data-ttu-id="700cb-130">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-130">Int32</span></span>|<span data-ttu-id="700cb-131">等待重新启动设备计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-131">Pending restart device count.</span></span>|
-|<span data-ttu-id="700cb-132">pendingManualStepsDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-132">pendingManualStepsDeviceCount</span></span>|<span data-ttu-id="700cb-133">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-133">Int32</span></span>|<span data-ttu-id="700cb-134">正在等待手动步骤设备计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-134">Pending manual steps device count.</span></span>|
-|<span data-ttu-id="700cb-135">pendingOfflineScanDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-135">pendingOfflineScanDeviceCount</span></span>|<span data-ttu-id="700cb-136">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-136">Int32</span></span>|<span data-ttu-id="700cb-137">等待脱机扫描设备计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-137">Pending offline scan device count.</span></span>|
-|<span data-ttu-id="700cb-138">criticalFailuresDeviceCount</span><span class="sxs-lookup"><span data-stu-id="700cb-138">criticalFailuresDeviceCount</span></span>|<span data-ttu-id="700cb-139">Int32</span><span class="sxs-lookup"><span data-stu-id="700cb-139">Int32</span></span>|<span data-ttu-id="700cb-140">严重故障设备计数。</span><span class="sxs-lookup"><span data-stu-id="700cb-140">Critical failures device count.</span></span>|
+|<span data-ttu-id="17a39-111">totalReportedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-111">totalReportedDeviceCount</span></span>|<span data-ttu-id="17a39-112">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-112">Int32</span></span>|<span data-ttu-id="17a39-113">设备计数总数。</span><span class="sxs-lookup"><span data-stu-id="17a39-113">Total device count.</span></span>|
+|<span data-ttu-id="17a39-114">inactiveThreatAgentDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-114">inactiveThreatAgentDeviceCount</span></span>|<span data-ttu-id="17a39-115">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-115">Int32</span></span>|<span data-ttu-id="17a39-116">带有非活动威胁代理计数的设备</span><span class="sxs-lookup"><span data-stu-id="17a39-116">Device with inactive threat agent count</span></span>|
+|<span data-ttu-id="17a39-117">unknownStateThreatAgentDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-117">unknownStateThreatAgentDeviceCount</span></span>|<span data-ttu-id="17a39-118">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-118">Int32</span></span>|<span data-ttu-id="17a39-119">包含威胁代理状态的设备作为未知计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-119">Device with threat agent state as unknown count.</span></span>|
+|<span data-ttu-id="17a39-120">pendingSignatureUpdateDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-120">pendingSignatureUpdateDeviceCount</span></span>|<span data-ttu-id="17a39-121">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-121">Int32</span></span>|<span data-ttu-id="17a39-122">具有旧签名计数的设备。</span><span class="sxs-lookup"><span data-stu-id="17a39-122">Device with old signature count.</span></span>|
+|<span data-ttu-id="17a39-123">cleanDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-123">cleanDeviceCount</span></span>|<span data-ttu-id="17a39-124">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-124">Int32</span></span>|<span data-ttu-id="17a39-125">清洗设备计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-125">Clean device count.</span></span>|
+|<span data-ttu-id="17a39-126">pendingFullScanDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-126">pendingFullScanDeviceCount</span></span>|<span data-ttu-id="17a39-127">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-127">Int32</span></span>|<span data-ttu-id="17a39-128">正在等待完全扫描设备计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-128">Pending full scan device count.</span></span>|
+|<span data-ttu-id="17a39-129">pendingRestartDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-129">pendingRestartDeviceCount</span></span>|<span data-ttu-id="17a39-130">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-130">Int32</span></span>|<span data-ttu-id="17a39-131">等待重新启动设备计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-131">Pending restart device count.</span></span>|
+|<span data-ttu-id="17a39-132">pendingManualStepsDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-132">pendingManualStepsDeviceCount</span></span>|<span data-ttu-id="17a39-133">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-133">Int32</span></span>|<span data-ttu-id="17a39-134">正在等待手动步骤设备计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-134">Pending manual steps device count.</span></span>|
+|<span data-ttu-id="17a39-135">pendingOfflineScanDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-135">pendingOfflineScanDeviceCount</span></span>|<span data-ttu-id="17a39-136">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-136">Int32</span></span>|<span data-ttu-id="17a39-137">等待脱机扫描设备计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-137">Pending offline scan device count.</span></span>|
+|<span data-ttu-id="17a39-138">criticalFailuresDeviceCount</span><span class="sxs-lookup"><span data-stu-id="17a39-138">criticalFailuresDeviceCount</span></span>|<span data-ttu-id="17a39-139">Int32</span><span class="sxs-lookup"><span data-stu-id="17a39-139">Int32</span></span>|<span data-ttu-id="17a39-140">严重故障设备计数。</span><span class="sxs-lookup"><span data-stu-id="17a39-140">Critical failures device count.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="700cb-141">关系</span><span class="sxs-lookup"><span data-stu-id="700cb-141">Relationships</span></span>
-<span data-ttu-id="700cb-142">无</span><span class="sxs-lookup"><span data-stu-id="700cb-142">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="17a39-141">关系</span><span class="sxs-lookup"><span data-stu-id="17a39-141">Relationships</span></span>
+<span data-ttu-id="17a39-142">无</span><span class="sxs-lookup"><span data-stu-id="17a39-142">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="700cb-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="700cb-143">JSON Representation</span></span>
-<span data-ttu-id="700cb-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="700cb-144">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="17a39-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="17a39-143">JSON Representation</span></span>
+<span data-ttu-id="17a39-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="17a39-144">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceProtectionOverview"
@@ -59,8 +59,6 @@ ms.locfileid: "35999799"
   "criticalFailuresDeviceCount": 1024
 }
 ```
-
-
 
 
 
