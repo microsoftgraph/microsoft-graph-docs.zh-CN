@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 59e4a39f5f8e58ed1d3251c38cd81b87c7434e78
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 1dc19256e8f1d2c4e70e0f13f4ab4b84354bc25f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872816"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36359879"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getSharePointActivityPages = await graphClient.Reports
-    .GetSharePointActivityPages('D7')
+    .GetSharePointActivityPages("D7")
     .Request()
     .GetAsync();
 
