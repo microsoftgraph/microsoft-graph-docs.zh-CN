@@ -4,12 +4,13 @@ description: 读取 windowsUpdateState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa75a1f150e766a5bf225c65acdf715f6520b35
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 508a8f1149dfb1d278a22d25e881f1e1d62755d6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725889"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344145"
 ---
 # <a name="get-windowsupdatestate"></a>获取 windowsUpdateState
 
@@ -26,7 +27,7 @@ ms.locfileid: "35725889"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -83,6 +84,7 @@ Content-Length: 594
   }
 }
 ```
+
 
 
 

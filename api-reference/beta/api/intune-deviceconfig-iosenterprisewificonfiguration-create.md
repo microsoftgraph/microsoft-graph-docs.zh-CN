@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea91a7b84ea41bd6cda285019584eab191da84c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ebe26636c82ec266cc419ea4fad2d55ec756ae14
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948277"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345741"
 ---
 # <a name="create-iosenterprisewificonfiguration"></a>创建 iosEnterpriseWiFiConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948277"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -211,6 +211,7 @@ Content-Length: 2146
   "passwordFormatString": "Password Format String value"
 }
 ```
+
 
 
 

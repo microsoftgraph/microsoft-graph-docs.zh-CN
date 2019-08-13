@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a0721495a8eb217007c0ee1f18942009614696d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 912c32c737ba289168493cbfddd064e76ca91053
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010313"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347780"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 
@@ -35,8 +35,6 @@ ms.locfileid: "36010313"
 |enrollmentRestrictionsEnforced|第|由管理员配置的注册限制阻止了此注册。|
 |clientDisconnected|10 |客户端超时或注册被 enduser 中止。|
 |userAbandonment|11x17|注册已被 enduser 放弃。 (Enduser 已开始加入, 但无法及时完成它)|
-
-
 
 
 

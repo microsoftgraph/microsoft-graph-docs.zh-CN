@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5f519d8fa3dd7fdf50b7c287301f1b13252ab2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b73bf54cc6126671615b710a24a5455ddf548d99
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946771"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345594"
 ---
 # <a name="get-manageddevicecertificatestate"></a>获取 managedDeviceCertificateState
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946771"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -115,6 +115,7 @@ Content-Length: 1637
   }
 }
 ```
+
 
 
 

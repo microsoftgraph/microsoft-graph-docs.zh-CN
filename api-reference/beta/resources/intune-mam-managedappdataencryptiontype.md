@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 37c96fb225dbfb8e23d45872aa7a4bb3cd75fe7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 273303044af0ed6b5a13c1221e99e00ccd57026e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968013"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332174"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35968013"
 |afterDeviceRestart|1|重新启动设备时对应用数据进行加密。|
 |whenDeviceLockedExceptOpenFiles|双面|设备锁定时, 与此策略关联的应用数据将被加密, 但打开的文件中的数据除外|
 |whenDeviceLocked|第三章|设备锁定时, 与此策略关联的应用数据将被加密|
-
-
 
 
 

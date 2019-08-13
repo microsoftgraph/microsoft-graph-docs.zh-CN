@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67118cd8a780a12d5a058bb9c1c0018ea0394a8a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c02c520457914b8609e5a435de70f435fb9e38ee
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962391"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344348"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>列出 windowsIdentityProtectionConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962391"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -119,6 +119,7 @@ Content-Length: 1972
   ]
 }
 ```
+
 
 
 

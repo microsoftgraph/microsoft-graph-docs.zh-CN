@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11b1863ccd5339b6978809432eb84b8095bc0c4f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f02a4564c0d4ebb1471ea3b967c8afb371080c2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985390"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348233"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>创建 depMacOSEnrollmentProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985390"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -174,6 +174,7 @@ Content-Length: 1240
   "chooseYourLockScreenDisabled": true
 }
 ```
+
 
 
 

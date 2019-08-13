@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4d32a2aff00e67d1a08b8b80b552c7768f4f796
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f8cde410a149b88f440ba2761bf8b8d274f9738f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949508"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36346105"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>获取 deviceComplianceUserOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949508"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 391
   }
 }
 ```
+
 
 
 

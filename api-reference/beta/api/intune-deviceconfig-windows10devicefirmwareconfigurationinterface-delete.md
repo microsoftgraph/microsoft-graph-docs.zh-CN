@@ -4,12 +4,13 @@ description: 删除 windows10DeviceFirmwareConfigurationInterface。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20d32e183641673b14244426dfb92f493e9fc25c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c35b723b0381e8b92a9cb640b50436399d34f264
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001676"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345342"
 ---
 # <a name="delete-windows10devicefirmwareconfigurationinterface"></a>删除 windows10DeviceFirmwareConfigurationInterface
 
@@ -26,7 +27,7 @@ ms.locfileid: "35001676"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -64,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

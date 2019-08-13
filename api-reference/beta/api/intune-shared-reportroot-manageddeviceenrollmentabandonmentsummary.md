@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f5f52349edfc9e17b562cd5d338c09ebcf997e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d988136da29680bd32b2ff24427bbf69135ab10
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979636"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350774"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>managedDeviceEnrollmentAbandonmentSummary 函数
 
@@ -81,6 +81,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

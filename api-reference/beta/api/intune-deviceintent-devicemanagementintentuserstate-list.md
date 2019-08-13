@@ -4,12 +4,13 @@ description: 列出 deviceManagementIntentUserState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 755998619dde56dd696a178751480af9ac696f51
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 54a46b5c55f7674f6415c1c4a51b743562cce1e9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960053"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347625"
 ---
 # <a name="list-devicemanagementintentuserstates"></a>列出 deviceManagementIntentUserStates
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960053"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +79,7 @@ Content-Length: 385
   ]
 }
 ```
+
 
 
 

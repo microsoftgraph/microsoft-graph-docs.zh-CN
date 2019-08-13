@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7345ffbef5d8eb02dd7bbf8595ec933c312ab559
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d77f3ef9a2d7fd37edeaf2b4cc25d5e6d5bfcf4f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967384"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347848"
 ---
 # <a name="runstate-enum-type"></a>runState 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "35967384"
 |unknown|0|未知结果。|
 |success|1|脚本成功运行。|
 |失败|双面|脚本运行失败。|
-
-
+|error|第三章|发现脚本命中错误。|
+|决|4|脚本正在挂起中执行。|
 
 
 

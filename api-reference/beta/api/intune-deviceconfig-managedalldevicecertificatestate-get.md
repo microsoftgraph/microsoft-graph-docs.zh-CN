@@ -4,12 +4,13 @@ description: 读取 managedAllDeviceCertificateState 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 879c030e3668c25aef1a18d011c87a22c70f0134
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: ba57a94877db3a94b0021cd931fbeca0896637ec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725875"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345629"
 ---
 # <a name="get-managedalldevicecertificatestate"></a>获取 managedAllDeviceCertificateState
 
@@ -26,7 +27,7 @@ ms.locfileid: "35725875"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -85,6 +86,7 @@ Content-Length: 829
   }
 }
 ```
+
 
 
 

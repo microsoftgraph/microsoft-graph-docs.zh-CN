@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 77b2dcadade32a817f0cb482e32871660ad3b06f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3f8307445360a1b0dd43c8a164dd1f2d8032562
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010446"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348017"
 ---
 # <a name="installintent-enum-type"></a>installIntent 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36010446"
 |必需|1|必需的安装意图。|
 |卸除|双面|卸载安装意向。|
 |availableWithoutEnrollment|第三章|在没有注册安装意向的情况下可用。|
-
-
 
 
 

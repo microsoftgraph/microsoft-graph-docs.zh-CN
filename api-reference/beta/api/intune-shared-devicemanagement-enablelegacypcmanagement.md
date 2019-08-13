@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aefec17df5d16ab2df908a0899535592ed4e7d7f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 16e5eef46ede162e2ed90f8b713f732c1aaad40e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347603"
 ---
 # <a name="enablelegacypcmanagement-action"></a>enableLegacyPcManagement 操作
 
@@ -62,6 +62,9 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableLegacyPcManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

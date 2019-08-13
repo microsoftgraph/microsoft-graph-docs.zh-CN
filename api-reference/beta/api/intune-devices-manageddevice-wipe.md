@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f3a7f8c7bea6439b810bf7cc9df0be7dd06a81c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae6d14234742aa804793502e5d287b5dd04b9f03
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981386"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348639"
 ---
 # <a name="wipe-action"></a>擦除操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981386"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementmanageddevices.readwrite.all、Devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|Devicemanagementmanageddevices.readwrite.all、Devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -85,6 +85,7 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: 获取 easEmailProfileConfigurationBase
-description: 读取 easEmailProfileConfigurationBase 对象的属性和关系。
+title: 获取 androidDeviceOwnerCertificateProfileBase
+description: 读取 androidDeviceOwnerCertificateProfileBase 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f2cd84786bca0047a3a46b0db21cf7cc66aede16
+ms.openlocfilehash: b1dfc1be8334f72d737bf47b436acb2378562770
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345797"
+ms.locfileid: "36345679"
 ---
-# <a name="get-easemailprofileconfigurationbase"></a>获取 easEmailProfileConfigurationBase
+# <a name="get-androiddeviceownercertificateprofilebase"></a>获取 androidDeviceOwnerCertificateProfileBase
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)对象的属性和关系。
+读取[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,9 +35,8 @@ ms.locfileid: "36345797"
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerVpnConfiguration/identityCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,14 +52,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerVpnConfiguration/identityCertificate
 ```
 
 ### <a name="response"></a>响应
@@ -68,12 +67,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1486
+Content-Length: 1734
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.easEmailProfileConfigurationBase",
-    "id": "a3f96310-6310-a3f9-1063-f9a31063f9a3",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerCertificateProfileBase",
+    "id": "19dd17f0-17f0-19dd-f017-dd19f017dd19",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,10 +103,18 @@ Content-Length: 1486
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "usernameSource": "primarySmtpAddress",
-    "usernameAADSource": "primarySmtpAddress",
-    "userDomainNameSource": "netBiosDomainName",
-    "customDomainName": "Custom Domain Name value"
+    "renewalThresholdPercentage": 10,
+    "subjectNameFormat": "commonNameIncludingEmail",
+    "certificateValidityPeriodValue": 14,
+    "certificateValidityPeriodScale": "months",
+    "extendedKeyUsages": [
+      {
+        "@odata.type": "microsoft.graph.extendedKeyUsage",
+        "name": "Name value",
+        "objectIdentifier": "Object Identifier value"
+      }
+    ],
+    "subjectAlternativeNameType": "emailAddress"
   }
 }
 ```

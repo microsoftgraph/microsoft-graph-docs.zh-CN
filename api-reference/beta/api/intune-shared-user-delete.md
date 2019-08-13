@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df68bf0089ca8f3e8aba35cac7f8a9ac5e0872b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ee227e36e3f65ec7964930fb115c2b8041e65b6c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979650"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347407"
 ---
 # <a name="delete-user"></a>删除用户
 
@@ -74,6 +74,9 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

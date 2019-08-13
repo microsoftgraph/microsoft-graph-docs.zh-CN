@@ -4,12 +4,13 @@ description: 更新 windowsUpdateState 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f003e5066e0e2b31b1b629067ffacc92efdd36de
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 35a56a0dea3174a7f196a3cee62a46edd35eafce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725924"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344131"
 ---
 # <a name="update-windowsupdatestate"></a>更新 windowsUpdateState
 
@@ -26,7 +27,7 @@ ms.locfileid: "35725924"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -110,6 +111,7 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
 
 
 

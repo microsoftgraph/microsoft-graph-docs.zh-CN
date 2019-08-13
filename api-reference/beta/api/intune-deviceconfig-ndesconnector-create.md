@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db932816cf4ef6b812a32f14923f350d542f4120
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3743d51d575aed5c4e6ecd7c1232666397c248f1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946640"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345567"
 ---
 # <a name="create-ndesconnector"></a>创建 ndesConnector
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946640"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -93,6 +93,7 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e3f25d4116d2dcbb577be968bf880e785d498b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4dc1a4a960659e70c8131321b17a4c3cce05d09
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993562"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347456"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>列出 mobileAppTroubleshootingEvents
 
@@ -77,6 +77,9 @@ Content-Length: 161
   ]
 }
 ```
+
+
+
 
 
 
