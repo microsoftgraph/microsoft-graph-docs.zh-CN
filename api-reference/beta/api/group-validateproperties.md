@@ -5,70 +5,70 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1419ed265dca33376f3fb3d481b42e3b646ec2dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ee108c1bbffde7ad0afd84cf4a6ec344e30b42e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953379"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323078"
 ---
-# <a name="group-validateproperties"></a><span data-ttu-id="e323c-105">组: validateProperties</span><span class="sxs-lookup"><span data-stu-id="e323c-105">group: validateProperties</span></span>
+# <a name="group-validateproperties"></a><span data-ttu-id="b736a-105">组: validateProperties</span><span class="sxs-lookup"><span data-stu-id="b736a-105">group: validateProperties</span></span>
 
-<span data-ttu-id="e323c-106">验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。</span><span class="sxs-lookup"><span data-stu-id="e323c-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span> <span data-ttu-id="e323c-107">在尝试**更新**Office 365 组之前, 客户端可以使用 API 来确定显示名称或邮件昵称是否有效。</span><span class="sxs-lookup"><span data-stu-id="e323c-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group.</span></span> <span data-ttu-id="e323c-108">若要在创建组之前验证属性, 请使用目录对象的[validateProperties 函数](directoryobject-validateproperties.md)。</span><span class="sxs-lookup"><span data-stu-id="e323c-108">For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.</span></span>
+<span data-ttu-id="b736a-106">验证 Office 365 组的显示名称或邮件昵称是否符合命名策略。</span><span class="sxs-lookup"><span data-stu-id="b736a-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span> <span data-ttu-id="b736a-107">在尝试**更新**Office 365 组之前, 客户端可以使用 API 来确定显示名称或邮件昵称是否有效。</span><span class="sxs-lookup"><span data-stu-id="b736a-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group.</span></span> <span data-ttu-id="b736a-108">若要在创建组之前验证属性, 请使用目录对象的[validateProperties 函数](directoryobject-validateproperties.md)。</span><span class="sxs-lookup"><span data-stu-id="b736a-108">For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.</span></span>
 
-<span data-ttu-id="e323c-109">将为显示名称和邮件昵称属性执行以下验证:</span><span class="sxs-lookup"><span data-stu-id="e323c-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
-1. <span data-ttu-id="e323c-110">验证前缀和后缀命名策略</span><span class="sxs-lookup"><span data-stu-id="e323c-110">Validate the prefix and suffix naming policy</span></span>
-2. <span data-ttu-id="e323c-111">验证 "自定义禁止的词语" 策略</span><span class="sxs-lookup"><span data-stu-id="e323c-111">Validate the custom banned words policy</span></span>
+<span data-ttu-id="b736a-109">将为显示名称和邮件昵称属性执行以下验证:</span><span class="sxs-lookup"><span data-stu-id="b736a-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
+1. <span data-ttu-id="b736a-110">验证前缀和后缀命名策略</span><span class="sxs-lookup"><span data-stu-id="b736a-110">Validate the prefix and suffix naming policy</span></span>
+2. <span data-ttu-id="b736a-111">验证 "自定义禁止的词语" 策略</span><span class="sxs-lookup"><span data-stu-id="b736a-111">Validate the custom banned words policy</span></span>
 
-<span data-ttu-id="e323c-112">此 API 在遇到第一次失败时返回。</span><span class="sxs-lookup"><span data-stu-id="e323c-112">This API returns with the first failure encountered.</span></span> <span data-ttu-id="e323c-113">如果一个或多个属性失败多次验证, 则仅返回第一个验证失败的属性。</span><span class="sxs-lookup"><span data-stu-id="e323c-113">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="e323c-114">但是, 如果仅验证前缀和后缀命名策略, 则可以验证邮件别名和显示名称, 并接收验证错误的集合。</span><span class="sxs-lookup"><span data-stu-id="e323c-114">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
+<span data-ttu-id="b736a-112">此 API 在遇到第一次失败时返回。</span><span class="sxs-lookup"><span data-stu-id="b736a-112">This API returns with the first failure encountered.</span></span> <span data-ttu-id="b736a-113">如果一个或多个属性失败多次验证, 则仅返回第一个验证失败的属性。</span><span class="sxs-lookup"><span data-stu-id="b736a-113">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="b736a-114">但是, 如果仅验证前缀和后缀命名策略, 则可以验证邮件别名和显示名称, 并接收验证错误的集合。</span><span class="sxs-lookup"><span data-stu-id="b736a-114">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e323c-115">权限</span><span class="sxs-lookup"><span data-stu-id="e323c-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b736a-115">权限</span><span class="sxs-lookup"><span data-stu-id="b736a-115">Permissions</span></span>
 
-<span data-ttu-id="e323c-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e323c-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b736a-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b736a-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e323c-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="e323c-118">Permission type</span></span>      | <span data-ttu-id="e323c-119">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e323c-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b736a-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="b736a-118">Permission type</span></span>      | <span data-ttu-id="b736a-119">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b736a-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e323c-120">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e323c-120">Delegated (work or school account)</span></span> | <span data-ttu-id="e323c-121">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e323c-121">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e323c-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e323c-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e323c-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="e323c-123">Not supported.</span></span>    |
-|<span data-ttu-id="e323c-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="e323c-124">Application</span></span> | <span data-ttu-id="e323c-125">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e323c-125">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="b736a-120">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b736a-120">Delegated (work or school account)</span></span> | <span data-ttu-id="b736a-121">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b736a-121">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b736a-122">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b736a-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b736a-123">不支持。</span><span class="sxs-lookup"><span data-stu-id="b736a-123">Not supported.</span></span>    |
+|<span data-ttu-id="b736a-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="b736a-124">Application</span></span> | <span data-ttu-id="b736a-125">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b736a-125">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e323c-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e323c-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b736a-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b736a-126">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /groups/<id>/validateProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e323c-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="e323c-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b736a-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="b736a-127">Request headers</span></span>
 
-| <span data-ttu-id="e323c-128">名称</span><span class="sxs-lookup"><span data-stu-id="e323c-128">Name</span></span>           | <span data-ttu-id="e323c-129">说明</span><span class="sxs-lookup"><span data-stu-id="e323c-129">Description</span></span>      |
+| <span data-ttu-id="b736a-128">名称</span><span class="sxs-lookup"><span data-stu-id="b736a-128">Name</span></span>           | <span data-ttu-id="b736a-129">说明</span><span class="sxs-lookup"><span data-stu-id="b736a-129">Description</span></span>      |
 |:---------------|:-----------------|
-| <span data-ttu-id="e323c-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="e323c-130">Authorization</span></span>  | <span data-ttu-id="e323c-131">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="e323c-131">Bearer {code}</span></span>    |
-| <span data-ttu-id="e323c-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e323c-132">Content-Type</span></span>   | <span data-ttu-id="e323c-133">application/json</span><span class="sxs-lookup"><span data-stu-id="e323c-133">application/json</span></span> |
+| <span data-ttu-id="b736a-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="b736a-130">Authorization</span></span>  | <span data-ttu-id="b736a-131">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="b736a-131">Bearer {code}</span></span>    |
+| <span data-ttu-id="b736a-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b736a-132">Content-Type</span></span>   | <span data-ttu-id="b736a-133">application/json</span><span class="sxs-lookup"><span data-stu-id="b736a-133">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e323c-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="e323c-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b736a-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="b736a-134">Request body</span></span>
 
-<span data-ttu-id="e323c-135">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="e323c-135">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="b736a-135">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="b736a-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e323c-136">参数</span><span class="sxs-lookup"><span data-stu-id="e323c-136">Parameter</span></span>    | <span data-ttu-id="e323c-137">类型</span><span class="sxs-lookup"><span data-stu-id="e323c-137">Type</span></span>   |<span data-ttu-id="e323c-138">说明</span><span class="sxs-lookup"><span data-stu-id="e323c-138">Description</span></span>|
+| <span data-ttu-id="b736a-136">参数</span><span class="sxs-lookup"><span data-stu-id="b736a-136">Parameter</span></span>    | <span data-ttu-id="b736a-137">类型</span><span class="sxs-lookup"><span data-stu-id="b736a-137">Type</span></span>   |<span data-ttu-id="b736a-138">说明</span><span class="sxs-lookup"><span data-stu-id="b736a-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e323c-139">displayName</span><span class="sxs-lookup"><span data-stu-id="e323c-139">displayName</span></span>|<span data-ttu-id="e323c-140">String</span><span class="sxs-lookup"><span data-stu-id="e323c-140">String</span></span>| <span data-ttu-id="e323c-141">要验证的组的显示名称。</span><span class="sxs-lookup"><span data-stu-id="e323c-141">The display name of the group to validate.</span></span> <span data-ttu-id="e323c-142">属性不是单独需要的。</span><span class="sxs-lookup"><span data-stu-id="e323c-142">The property is not individually required.</span></span> <span data-ttu-id="e323c-143">但是, 至少需要一个属性 (displayName 或 mailNickname)。</span><span class="sxs-lookup"><span data-stu-id="e323c-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="e323c-144">mailNickname</span><span class="sxs-lookup"><span data-stu-id="e323c-144">mailNickname</span></span>|<span data-ttu-id="e323c-145">String</span><span class="sxs-lookup"><span data-stu-id="e323c-145">String</span></span>| <span data-ttu-id="e323c-146">要验证的组的邮件别名。</span><span class="sxs-lookup"><span data-stu-id="e323c-146">The mail nickname of the group to validate.</span></span> <span data-ttu-id="e323c-147">属性不是单独需要的。</span><span class="sxs-lookup"><span data-stu-id="e323c-147">The property is not individually required.</span></span> <span data-ttu-id="e323c-148">但是, 至少需要一个属性 (displayName 或 mailNickname)。</span><span class="sxs-lookup"><span data-stu-id="e323c-148">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="e323c-149">onBehalfOfUserId</span><span class="sxs-lookup"><span data-stu-id="e323c-149">onBehalfOfUserId</span></span>|<span data-ttu-id="e323c-150">Guid</span><span class="sxs-lookup"><span data-stu-id="e323c-150">Guid</span></span>| <span data-ttu-id="e323c-151">调用 API 时要模拟的用户的对象 ID。</span><span class="sxs-lookup"><span data-stu-id="e323c-151">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="e323c-152">验证结果针对的是 onBehalfOfUserId 的属性和角色。</span><span class="sxs-lookup"><span data-stu-id="e323c-152">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
+|<span data-ttu-id="b736a-139">displayName</span><span class="sxs-lookup"><span data-stu-id="b736a-139">displayName</span></span>|<span data-ttu-id="b736a-140">String</span><span class="sxs-lookup"><span data-stu-id="b736a-140">String</span></span>| <span data-ttu-id="b736a-141">要验证的组的显示名称。</span><span class="sxs-lookup"><span data-stu-id="b736a-141">The display name of the group to validate.</span></span> <span data-ttu-id="b736a-142">属性不是单独需要的。</span><span class="sxs-lookup"><span data-stu-id="b736a-142">The property is not individually required.</span></span> <span data-ttu-id="b736a-143">但是, 至少需要一个属性 (displayName 或 mailNickname)。</span><span class="sxs-lookup"><span data-stu-id="b736a-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="b736a-144">mailNickname</span><span class="sxs-lookup"><span data-stu-id="b736a-144">mailNickname</span></span>|<span data-ttu-id="b736a-145">String</span><span class="sxs-lookup"><span data-stu-id="b736a-145">String</span></span>| <span data-ttu-id="b736a-146">要验证的组的邮件别名。</span><span class="sxs-lookup"><span data-stu-id="b736a-146">The mail nickname of the group to validate.</span></span> <span data-ttu-id="b736a-147">属性不是单独需要的。</span><span class="sxs-lookup"><span data-stu-id="b736a-147">The property is not individually required.</span></span> <span data-ttu-id="b736a-148">但是, 至少需要一个属性 (displayName 或 mailNickname)。</span><span class="sxs-lookup"><span data-stu-id="b736a-148">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="b736a-149">onBehalfOfUserId</span><span class="sxs-lookup"><span data-stu-id="b736a-149">onBehalfOfUserId</span></span>|<span data-ttu-id="b736a-150">Guid</span><span class="sxs-lookup"><span data-stu-id="b736a-150">Guid</span></span>| <span data-ttu-id="b736a-151">调用 API 时要模拟的用户的对象 ID。</span><span class="sxs-lookup"><span data-stu-id="b736a-151">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="b736a-152">验证结果针对的是 onBehalfOfUserId 的属性和角色。</span><span class="sxs-lookup"><span data-stu-id="b736a-152">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="e323c-153">响应</span><span class="sxs-lookup"><span data-stu-id="e323c-153">Response</span></span>
-<span data-ttu-id="e323c-154">如果成功且没有验证错误, 则该方法返回`204 No Content`响应代码。</span><span class="sxs-lookup"><span data-stu-id="e323c-154">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="e323c-155">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e323c-155">It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b736a-153">响应</span><span class="sxs-lookup"><span data-stu-id="b736a-153">Response</span></span>
+<span data-ttu-id="b736a-154">如果成功且没有验证错误, 则该方法返回`204 No Content`响应代码。</span><span class="sxs-lookup"><span data-stu-id="b736a-154">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="b736a-155">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="b736a-155">It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="e323c-156">如果请求无效, 该方法将返回`400 Bad Request`响应代码。</span><span class="sxs-lookup"><span data-stu-id="e323c-156">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="e323c-157">有关无效请求的详细信息的错误消息将在响应正文中返回。</span><span class="sxs-lookup"><span data-stu-id="e323c-157">An error message with details about the invalid request is returned in the response body.</span></span>
+<span data-ttu-id="b736a-156">如果请求无效, 该方法将返回`400 Bad Request`响应代码。</span><span class="sxs-lookup"><span data-stu-id="b736a-156">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="b736a-157">有关无效请求的详细信息的错误消息将在响应正文中返回。</span><span class="sxs-lookup"><span data-stu-id="b736a-157">An error message with details about the invalid request is returned in the response body.</span></span>
 
-<span data-ttu-id="e323c-158">如果存在验证错误。</span><span class="sxs-lookup"><span data-stu-id="e323c-158">If there is a validation error.</span></span> <span data-ttu-id="e323c-159">此方法返回`422 Unprocessable Entity`响应代码。</span><span class="sxs-lookup"><span data-stu-id="e323c-159">The method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="e323c-160">响应正文中返回一条错误消息和一组错误详细信息。</span><span class="sxs-lookup"><span data-stu-id="e323c-160">An error message and a collection of error details is returned in the response body.</span></span>
+<span data-ttu-id="b736a-158">如果存在验证错误。</span><span class="sxs-lookup"><span data-stu-id="b736a-158">If there is a validation error.</span></span> <span data-ttu-id="b736a-159">此方法返回`422 Unprocessable Entity`响应代码。</span><span class="sxs-lookup"><span data-stu-id="b736a-159">The method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="b736a-160">响应正文中返回一条错误消息和一组错误详细信息。</span><span class="sxs-lookup"><span data-stu-id="b736a-160">An error message and a collection of error details is returned in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e323c-161">示例</span><span class="sxs-lookup"><span data-stu-id="e323c-161">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b736a-161">示例</span><span class="sxs-lookup"><span data-stu-id="b736a-161">Examples</span></span>
 
-<span data-ttu-id="e323c-162">这是一个成功的验证请求的示例。</span><span class="sxs-lookup"><span data-stu-id="e323c-162">This is an example of a successful validation request.</span></span>
+<span data-ttu-id="b736a-162">这是一个成功的验证请求的示例。</span><span class="sxs-lookup"><span data-stu-id="b736a-162">This is an example of a successful validation request.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e323c-163">请求</span><span class="sxs-lookup"><span data-stu-id="e323c-163">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b736a-163">请求</span><span class="sxs-lookup"><span data-stu-id="b736a-163">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e323c-164">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e323c-164">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b736a-164">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b736a-164">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -84,26 +84,26 @@ Content-length: 132
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e323c-165">C#</span><span class="sxs-lookup"><span data-stu-id="e323c-165">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b736a-165">C#</span><span class="sxs-lookup"><span data-stu-id="b736a-165">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e323c-166">Javascript</span><span class="sxs-lookup"><span data-stu-id="e323c-166">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b736a-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b736a-166">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e323c-167">目标-C</span><span class="sxs-lookup"><span data-stu-id="e323c-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b736a-167">目标-C</span><span class="sxs-lookup"><span data-stu-id="b736a-167">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e323c-168">Java</span><span class="sxs-lookup"><span data-stu-id="e323c-168">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="b736a-168">Java</span><span class="sxs-lookup"><span data-stu-id="b736a-168">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e323c-169">响应</span><span class="sxs-lookup"><span data-stu-id="e323c-169">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b736a-169">响应</span><span class="sxs-lookup"><span data-stu-id="b736a-169">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,9 +112,9 @@ Content-length: 132
 HTTP/1.1 204 No Content
 ```
 
-<span data-ttu-id="e323c-170">这是包含验证错误的请求的示例。</span><span class="sxs-lookup"><span data-stu-id="e323c-170">This is an example of a request with validation errors.</span></span>
+<span data-ttu-id="b736a-170">这是包含验证错误的请求的示例。</span><span class="sxs-lookup"><span data-stu-id="b736a-170">This is an example of a request with validation errors.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e323c-171">请求</span><span class="sxs-lookup"><span data-stu-id="e323c-171">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b736a-171">请求</span><span class="sxs-lookup"><span data-stu-id="b736a-171">Request</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/groups/{id}/validateProperties
 Content-type: application/json
@@ -126,7 +126,7 @@ Content-length: 128
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e323c-172">响应</span><span class="sxs-lookup"><span data-stu-id="e323c-172">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b736a-172">响应</span><span class="sxs-lookup"><span data-stu-id="b736a-172">Response</span></span>
 ```http
 HTTP/1.1 422
 Content-type: application/json

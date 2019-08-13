@@ -5,51 +5,51 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ab0b8272d6672e56030a29d9c73625b96de3390a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: de8c30b63abf130535669236a170510f9ccda65d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954940"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323780"
 ---
-# <a name="delete-educationsubmissionresource"></a><span data-ttu-id="dfa84-105">删除 educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="dfa84-105">Delete educationSubmissionResource</span></span>
+# <a name="delete-educationsubmissionresource"></a><span data-ttu-id="2d392-105">删除 educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="2d392-105">Delete educationSubmissionResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dfa84-106">从提交中删除资源。</span><span class="sxs-lookup"><span data-stu-id="dfa84-106">Deletes a resource from the submission.</span></span> <span data-ttu-id="dfa84-107">仅学生可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="dfa84-107">This can only be done by the student.</span></span> <span data-ttu-id="dfa84-108">如果资源是从分配中复制的, 则在删除当前副本后将创建该资源的新副本。</span><span class="sxs-lookup"><span data-stu-id="dfa84-108">If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.</span></span> <span data-ttu-id="dfa84-109">这使您可以将资源 "重置" 为其原始状态。</span><span class="sxs-lookup"><span data-stu-id="dfa84-109">This allows you to "reset" the resource to its original state.</span></span> <span data-ttu-id="dfa84-110">如果资源不是从分配中复制的, 而是从学生添加的, 则只会删除该资源。</span><span class="sxs-lookup"><span data-stu-id="dfa84-110">If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.</span></span>
+<span data-ttu-id="2d392-106">从提交中删除资源。</span><span class="sxs-lookup"><span data-stu-id="2d392-106">Deletes a resource from the submission.</span></span> <span data-ttu-id="2d392-107">仅学生可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="2d392-107">This can only be done by the student.</span></span> <span data-ttu-id="2d392-108">如果资源是从分配中复制的, 则在删除当前副本后将创建该资源的新副本。</span><span class="sxs-lookup"><span data-stu-id="2d392-108">If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.</span></span> <span data-ttu-id="2d392-109">这使您可以将资源 "重置" 为其原始状态。</span><span class="sxs-lookup"><span data-stu-id="2d392-109">This allows you to "reset" the resource to its original state.</span></span> <span data-ttu-id="2d392-110">如果资源不是从分配中复制的, 而是从学生添加的, 则只会删除该资源。</span><span class="sxs-lookup"><span data-stu-id="2d392-110">If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dfa84-111">权限</span><span class="sxs-lookup"><span data-stu-id="dfa84-111">Permissions</span></span>
-<span data-ttu-id="dfa84-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dfa84-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d392-111">权限</span><span class="sxs-lookup"><span data-stu-id="2d392-111">Permissions</span></span>
+<span data-ttu-id="2d392-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2d392-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dfa84-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="dfa84-114">Permission type</span></span>      | <span data-ttu-id="dfa84-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dfa84-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2d392-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="2d392-114">Permission type</span></span>      | <span data-ttu-id="2d392-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2d392-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dfa84-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dfa84-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="dfa84-117">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="dfa84-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="dfa84-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dfa84-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="dfa84-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="dfa84-119">Not supported.</span></span>  |
-|<span data-ttu-id="dfa84-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="dfa84-120">Application</span></span> | <span data-ttu-id="dfa84-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="dfa84-121">Not supported.</span></span> | 
+|<span data-ttu-id="2d392-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2d392-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="2d392-117">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="2d392-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="2d392-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2d392-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2d392-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d392-119">Not supported.</span></span>  |
+|<span data-ttu-id="2d392-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="2d392-120">Application</span></span> | <span data-ttu-id="2d392-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d392-121">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="dfa84-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dfa84-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d392-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2d392-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="dfa84-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="dfa84-123">Request headers</span></span>
-| <span data-ttu-id="dfa84-124">标头</span><span class="sxs-lookup"><span data-stu-id="dfa84-124">Header</span></span>       | <span data-ttu-id="dfa84-125">值</span><span class="sxs-lookup"><span data-stu-id="dfa84-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2d392-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="2d392-123">Request headers</span></span>
+| <span data-ttu-id="2d392-124">标头</span><span class="sxs-lookup"><span data-stu-id="2d392-124">Header</span></span>       | <span data-ttu-id="2d392-125">值</span><span class="sxs-lookup"><span data-stu-id="2d392-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="dfa84-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="dfa84-126">Authorization</span></span>  | <span data-ttu-id="dfa84-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dfa84-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2d392-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d392-126">Authorization</span></span>  | <span data-ttu-id="2d392-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2d392-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="dfa84-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="dfa84-129">Request body</span></span>
-<span data-ttu-id="dfa84-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dfa84-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d392-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="2d392-129">Request body</span></span>
+<span data-ttu-id="2d392-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2d392-130">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="dfa84-131">响应</span><span class="sxs-lookup"><span data-stu-id="dfa84-131">Response</span></span>
-<span data-ttu-id="dfa84-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="dfa84-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2d392-131">响应</span><span class="sxs-lookup"><span data-stu-id="2d392-131">Response</span></span>
+<span data-ttu-id="2d392-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="2d392-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dfa84-134">示例</span><span class="sxs-lookup"><span data-stu-id="dfa84-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dfa84-135">请求</span><span class="sxs-lookup"><span data-stu-id="dfa84-135">Request</span></span>
-<span data-ttu-id="dfa84-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="dfa84-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2d392-134">示例</span><span class="sxs-lookup"><span data-stu-id="2d392-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2d392-135">请求</span><span class="sxs-lookup"><span data-stu-id="2d392-135">Request</span></span>
+<span data-ttu-id="2d392-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2d392-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dfa84-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="dfa84-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="2d392-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="2d392-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationsubmissionresource"
@@ -57,26 +57,26 @@ DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dfa84-138">C#</span><span class="sxs-lookup"><span data-stu-id="dfa84-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="2d392-138">C#</span><span class="sxs-lookup"><span data-stu-id="2d392-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationsubmissionresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dfa84-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="dfa84-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2d392-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d392-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationsubmissionresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dfa84-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="dfa84-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2d392-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="2d392-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationsubmissionresource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="dfa84-141">Java</span><span class="sxs-lookup"><span data-stu-id="dfa84-141">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="2d392-141">Java</span><span class="sxs-lookup"><span data-stu-id="2d392-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationsubmissionresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="dfa84-142">响应</span><span class="sxs-lookup"><span data-stu-id="dfa84-142">Response</span></span>
-<span data-ttu-id="dfa84-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="dfa84-143">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2d392-142">响应</span><span class="sxs-lookup"><span data-stu-id="2d392-142">Response</span></span>
+<span data-ttu-id="2d392-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2d392-143">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
