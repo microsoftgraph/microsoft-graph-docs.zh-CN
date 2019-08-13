@@ -4,13 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: fe419355d0e7acd89eab856ed362049629fead13
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 057181a80c90e5c3c20d62c6f14da35fcea02976
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011909"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335004"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -38,6 +37,7 @@ ms.locfileid: "36011909"
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器客户端已启用的功能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [配置管理器客户端运行状况](intune-devices-configurationmanagerclienthealthstate.md)
+- [Configuration manager 客户端信息](intune-devices-configurationmanagerclientinformation.md)
 - [配置管理器客户端状态](intune-devices-configurationmanagerclientstate.md)
 - [每日计划](intune-devices-dailyschedule.md)
 - [数据共享许可](intune-devices-datasharingconsent.md)
@@ -51,6 +51,10 @@ ms.locfileid: "36011909"
 - [基于 Device Guard 虚拟化的安全硬件要求状态](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [基于 Device Guard 虚拟化的安全状态](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)
+- [设备运行状况脚本](intune-devices-devicehealthscript.md)
+- [设备运行状况脚本符合性规则](intune-devices-devicehealthscriptcompliancerule.md)
+- [设备运行状况脚本符合性规则运算符](intune-devices-devicehealthscriptcomplianceruleoperator.md)
+- [设备运行状况脚本检测类型](intune-devices-devicehealthscriptdetectiontype.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [设备管理布尔值设置实例](intune-deviceintent-devicemanagementbooleansettinginstance.md)
@@ -111,6 +115,8 @@ ms.locfileid: "36011909"
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况](intune-devices-healthstate.md)
 - [每小时计划](intune-devices-hourlyschedule.md)
+- [真知灼见值加倍](intune-devices-insightvaluedouble.md)
+- [真知灼见值 int](intune-devices-insightvalueint.md)
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
@@ -165,6 +171,12 @@ ms.locfileid: "36011909"
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
+- [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
+- [用户体验分析洞察力](intune-devices-userexperienceanalyticsinsight.md)
+- [用户体验分析洞察力价值](intune-devices-userexperienceanalyticsinsightvalue.md)
+- [User experience analytics 指标](intune-devices-userexperienceanalyticsmetric.md)
+- [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
@@ -186,5 +198,5 @@ ms.locfileid: "36011909"
 - [Windows 管理的设备](intune-devices-windowsmanageddevice.md)
 - [Windows 管理应用](intune-devices-windowsmanagementapp.md)
 - [Windows 管理应用运行状况状态](intune-devices-windowsmanagementapphealthstate.md)
-- [Windows 管理应用运行状况摘要](intune-devices-windowsmanagementapphealthsummary.md)
 - [Windows 保护状态](intune-devices-windowsprotectionstate.md)
+

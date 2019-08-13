@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73ca6fddc6b552257b4e1d5d4d67dbfd8a25dfc6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4536f847935346a3ea85c37887daeb1e063f5b0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968062"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332272"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>iosManagedAppProtection 资源类型
 
@@ -174,8 +174,6 @@ ms.locfileid: "35968062"
   "customBrowserProtocol": "String"
 }
 ```
-
-
 
 
 

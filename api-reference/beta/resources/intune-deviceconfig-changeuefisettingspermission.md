@@ -4,12 +4,13 @@ description: 定义为用户授予的权限级别, 以使其能够更改 Uefi �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0959aa5903ca4b902e63ea0ea737c9fe155554c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: a3e3c82d628e8629d88f27f8bdf0f46c499b2c19
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001872"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333658"
 ---
 # <a name="changeuefisettingspermission-enum-type"></a>changeUefiSettingsPermission 枚举类型
 
@@ -24,8 +25,6 @@ ms.locfileid: "35001872"
 |:---|:---|:---|
 |notConfiguredOnly|0|设备默认值, 无意向。|
 |无|1|阻止更改 UEFI 设置权限|
-
-
 
 
 

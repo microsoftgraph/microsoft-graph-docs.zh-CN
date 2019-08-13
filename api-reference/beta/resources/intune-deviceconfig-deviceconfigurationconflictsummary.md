@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f4beeafbf6dd52cc29791bfde917e363c7077e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3ce50b49c34427f1cde7011fb76e566a1e45ba9f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001654"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333014"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>deviceConfigurationConflictSummary 资源类型
 
@@ -65,8 +65,6 @@ ms.locfileid: "36001654"
   "deviceCheckinsImpacted": 1024
 }
 ```
-
-
 
 
 

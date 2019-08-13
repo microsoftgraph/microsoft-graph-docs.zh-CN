@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f2377942f5a8dd0a57b0822a1cb9973005e6f321
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9112074842e3dc661786acfa6c6c223aa5fe225b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011720"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334372"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 
@@ -31,8 +31,6 @@ Android 必需的密码类型。
 |位数|5|需要数字密码。|
 |numericComplex|型|需要数字复杂密码。|
 |任意|步|需要密码或模式, 可以接受。|
-
-
 
 
 

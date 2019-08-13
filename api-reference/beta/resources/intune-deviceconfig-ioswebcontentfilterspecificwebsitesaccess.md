@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32cf57ba7ab96a68914ceeaf0693162ef9ab8e69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58fb9fdaa3df612aef80c4b2c23ad17476940f9f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001052"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325538"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>iosWebContentFilterSpecificWebsitesAccess 资源类型
 
@@ -60,8 +60,6 @@ ms.locfileid: "36001052"
   ]
 }
 ```
-
-
 
 
 

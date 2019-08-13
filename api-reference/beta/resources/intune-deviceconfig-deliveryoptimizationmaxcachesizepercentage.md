@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: adc27f85a4b02adbf5a8a589fd2bd07db0622978
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ad74fa5ad7b044c2fc382ed936123f535c87d38
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970722"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333266"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>deliveryOptimizationMaxCacheSizePercentage 资源类型
 
@@ -44,8 +44,6 @@ ms.locfileid: "35970722"
   "maximumCacheSizePercentage": 1024
 }
 ```
-
-
 
 
 

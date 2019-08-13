@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 397c8300a6acb2226a5f5dcccf630dde5d31bbc1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1e8bd9544c9a9e11ab13f6e2401909528302d93
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000996"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325510"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 
@@ -30,8 +30,6 @@ LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 |promptForCredentials|4|提示输入凭据|
 |promptForConsent|5|同意提示|
 |promptForConsentForNonWindowsBinaries|型|非 Windows 二进制文件的同意提示|
-
-
 
 
 

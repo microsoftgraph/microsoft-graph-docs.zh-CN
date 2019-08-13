@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bbea9d8f9f7c6403a2d5782eff11fda53b2ff685
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e3cd8dfb8a6610632dcf197c2019d250f2a2ed0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005091"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335870"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "36005091"
 |关联表|双面|尚未记录|
 |firstReleaseCurrent|第三章|尚未记录|
 |firstReleaseDeferred|4|尚未记录|
-
-
 
 
 

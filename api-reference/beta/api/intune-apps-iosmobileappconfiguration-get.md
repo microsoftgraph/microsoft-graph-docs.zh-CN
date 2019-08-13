@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7f075ca4a0b3d5434fcd08c2146c1186c82dca6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50f1e9a233f9e002e7fad72cac2a9097fa4eb844
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951713"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330662"
 ---
 # <a name="get-iosmobileappconfiguration"></a>获取 iosMobileAppConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951713"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -95,6 +95,7 @@ Content-Length: 831
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 19a44d1056c8c1be18e2dde93741f9c499848765
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fed316925243fb4f7e702deaf4a0ac3c23396e59
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948481"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339370"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>列出 iosEasEmailProfileConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948481"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -129,6 +129,7 @@ Content-Length: 2486
   ]
 }
 ```
+
 
 
 
