@@ -5,30 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6010549d4a9d81fbb5137f513a026a7e058df5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7660cffd7c45ebd7e0615fbf037de64953823c6c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012336"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335723"
 ---
-# <a name="win32lobappdetection-resource-type"></a><span data-ttu-id="836bd-103">win32LobAppDetection 资源类型</span><span class="sxs-lookup"><span data-stu-id="836bd-103">win32LobAppDetection resource type</span></span>
+# <a name="win32lobappdetection-resource-type"></a><span data-ttu-id="84a84-103">win32LobAppDetection 资源类型</span><span class="sxs-lookup"><span data-stu-id="84a84-103">win32LobAppDetection resource type</span></span>
 
-> <span data-ttu-id="836bd-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="836bd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="84a84-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="84a84-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="836bd-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="836bd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="84a84-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="84a84-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="836bd-106">用于检测 Win32 应用程序的基类</span><span class="sxs-lookup"><span data-stu-id="836bd-106">Base class to detect a Win32 App</span></span>
+<span data-ttu-id="84a84-106">用于检测 Win32 应用程序的基类</span><span class="sxs-lookup"><span data-stu-id="84a84-106">Base class to detect a Win32 App</span></span>
 
-## <a name="properties"></a><span data-ttu-id="836bd-107">属性</span><span class="sxs-lookup"><span data-stu-id="836bd-107">Properties</span></span>
-|<span data-ttu-id="836bd-108">属性</span><span class="sxs-lookup"><span data-stu-id="836bd-108">Property</span></span>|<span data-ttu-id="836bd-109">类型</span><span class="sxs-lookup"><span data-stu-id="836bd-109">Type</span></span>|<span data-ttu-id="836bd-110">说明</span><span class="sxs-lookup"><span data-stu-id="836bd-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="84a84-107">属性</span><span class="sxs-lookup"><span data-stu-id="84a84-107">Properties</span></span>
+|<span data-ttu-id="84a84-108">属性</span><span class="sxs-lookup"><span data-stu-id="84a84-108">Property</span></span>|<span data-ttu-id="84a84-109">类型</span><span class="sxs-lookup"><span data-stu-id="84a84-109">Type</span></span>|<span data-ttu-id="84a84-110">说明</span><span class="sxs-lookup"><span data-stu-id="84a84-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="836bd-111">关系</span><span class="sxs-lookup"><span data-stu-id="836bd-111">Relationships</span></span>
-<span data-ttu-id="836bd-112">无</span><span class="sxs-lookup"><span data-stu-id="836bd-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="84a84-111">关系</span><span class="sxs-lookup"><span data-stu-id="84a84-111">Relationships</span></span>
+<span data-ttu-id="84a84-112">无</span><span class="sxs-lookup"><span data-stu-id="84a84-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="836bd-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="836bd-113">JSON Representation</span></span>
-<span data-ttu-id="836bd-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="836bd-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="84a84-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="84a84-113">JSON Representation</span></span>
+<span data-ttu-id="84a84-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="84a84-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppDetection"
@@ -39,8 +39,6 @@ ms.locfileid: "36012336"
   "@odata.type": "#microsoft.graph.win32LobAppDetection"
 }
 ```
-
-
 
 
 
