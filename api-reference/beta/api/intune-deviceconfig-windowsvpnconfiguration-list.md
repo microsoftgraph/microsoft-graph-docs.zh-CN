@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed19eb76be1a7c583cc6cc3635f585dd8b74d083
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2a8104bd425b05dc0be6c53e6faa6cf3ccc10d35
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981869"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344117"
 ---
-# <a name="list-windowsvpnconfigurations"></a><span data-ttu-id="89657-103">列出 windowsVpnConfigurations</span><span class="sxs-lookup"><span data-stu-id="89657-103">List windowsVpnConfigurations</span></span>
+# <a name="list-windowsvpnconfigurations"></a><span data-ttu-id="af548-103">列出 windowsVpnConfigurations</span><span class="sxs-lookup"><span data-stu-id="af548-103">List windowsVpnConfigurations</span></span>
 
-> <span data-ttu-id="89657-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="89657-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="af548-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="af548-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="89657-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="89657-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="af548-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="af548-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="89657-106">列出[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="89657-106">List properties and relationships of the [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md) objects.</span></span>
+<span data-ttu-id="af548-106">列出[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="af548-106">List properties and relationships of the [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="89657-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="89657-107">Prerequisites</span></span>
-<span data-ttu-id="89657-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="89657-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="af548-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="af548-107">Prerequisites</span></span>
+<span data-ttu-id="af548-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="af548-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="89657-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="89657-110">Permission type</span></span>|<span data-ttu-id="89657-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="89657-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="af548-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="af548-110">Permission type</span></span>|<span data-ttu-id="af548-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="af548-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="89657-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="89657-112">Delegated (work or school account)</span></span>|<span data-ttu-id="89657-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="89657-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="89657-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="89657-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="89657-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="89657-115">Not supported.</span></span>|
-|<span data-ttu-id="89657-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="89657-116">Application</span></span>|<span data-ttu-id="89657-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="89657-117">Not supported.</span></span>|
+|<span data-ttu-id="af548-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="af548-112">Delegated (work or school account)</span></span>|<span data-ttu-id="af548-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="af548-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="af548-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="af548-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="af548-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="af548-115">Not supported.</span></span>|
+|<span data-ttu-id="af548-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="af548-116">Application</span></span>|<span data-ttu-id="af548-117">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="af548-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="89657-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="89657-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="af548-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="af548-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,28 +39,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="89657-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="89657-119">Request headers</span></span>
-|<span data-ttu-id="89657-120">标头</span><span class="sxs-lookup"><span data-stu-id="89657-120">Header</span></span>|<span data-ttu-id="89657-121">值</span><span class="sxs-lookup"><span data-stu-id="89657-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="af548-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="af548-119">Request headers</span></span>
+|<span data-ttu-id="af548-120">标头</span><span class="sxs-lookup"><span data-stu-id="af548-120">Header</span></span>|<span data-ttu-id="af548-121">值</span><span class="sxs-lookup"><span data-stu-id="af548-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="89657-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="89657-122">Authorization</span></span>|<span data-ttu-id="89657-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="89657-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="89657-124">接受</span><span class="sxs-lookup"><span data-stu-id="89657-124">Accept</span></span>|<span data-ttu-id="89657-125">application/json</span><span class="sxs-lookup"><span data-stu-id="89657-125">application/json</span></span>|
+|<span data-ttu-id="af548-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="af548-122">Authorization</span></span>|<span data-ttu-id="af548-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="af548-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="af548-124">接受</span><span class="sxs-lookup"><span data-stu-id="af548-124">Accept</span></span>|<span data-ttu-id="af548-125">application/json</span><span class="sxs-lookup"><span data-stu-id="af548-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="89657-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="89657-126">Request body</span></span>
-<span data-ttu-id="89657-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="89657-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="af548-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="af548-126">Request body</span></span>
+<span data-ttu-id="af548-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="af548-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="89657-128">响应</span><span class="sxs-lookup"><span data-stu-id="89657-128">Response</span></span>
-<span data-ttu-id="89657-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="89657-129">If successful, this method returns a `200 OK` response code and a collection of [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="af548-128">响应</span><span class="sxs-lookup"><span data-stu-id="af548-128">Response</span></span>
+<span data-ttu-id="af548-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="af548-129">If successful, this method returns a `200 OK` response code and a collection of [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="89657-130">示例</span><span class="sxs-lookup"><span data-stu-id="89657-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="af548-130">示例</span><span class="sxs-lookup"><span data-stu-id="af548-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="89657-131">请求</span><span class="sxs-lookup"><span data-stu-id="89657-131">Request</span></span>
-<span data-ttu-id="89657-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="89657-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="af548-131">请求</span><span class="sxs-lookup"><span data-stu-id="af548-131">Request</span></span>
+<span data-ttu-id="af548-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="af548-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="89657-133">响应</span><span class="sxs-lookup"><span data-stu-id="89657-133">Response</span></span>
-<span data-ttu-id="89657-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="89657-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="af548-133">响应</span><span class="sxs-lookup"><span data-stu-id="af548-133">Response</span></span>
+<span data-ttu-id="af548-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="af548-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -115,6 +115,7 @@ Content-Length: 1673
   ]
 }
 ```
+
 
 
 
