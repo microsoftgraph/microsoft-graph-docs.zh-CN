@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b6a2b026897395f4dc90a0c453eeb2f0a40e0ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 476a37c1272220193c6cfdcfd6f237ddd239db37
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968874"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370807"
 ---
 # <a name="windowskioskuser-resource-type"></a>windowsKioskUser 资源类型
 
@@ -39,8 +39,6 @@ ms.locfileid: "35968874"
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
-
-
 
 
 

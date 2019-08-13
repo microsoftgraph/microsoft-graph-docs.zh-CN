@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cbdc718b223d8fe46bc2fd8ca9846bd5d2404784
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f0dafbe9cc5ee2b75c750f2c28c170e0c0eef96
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000877"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368896"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>macOSWiFiConfiguration 资源类型
 
@@ -122,8 +122,6 @@ ms.locfileid: "36000877"
   "preSharedKey": "String"
 }
 ```
-
-
 
 
 

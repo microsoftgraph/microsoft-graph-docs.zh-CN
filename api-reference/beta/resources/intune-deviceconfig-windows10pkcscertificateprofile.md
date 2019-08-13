@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6971e8ad61ff8d290337da73d66ea5d41de065b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62844b9b749673c64e2e36c7a5b46c6d2045a1de
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000373"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369764"
 ---
 # <a name="windows10pkcscertificateprofile-resource-type"></a>windows10PkcsCertificateProfile 资源类型
 
@@ -131,8 +131,6 @@ Windows 10 桌面版和移动前 PKCS 证书配置文件
   ]
 }
 ```
-
-
 
 
 

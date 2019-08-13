@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 91a7aaf37486742fead121f80c3dff457cef8d49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85f5a449fba06bb12a0ee34ca6de1dae484a3573
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010719"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372809"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36010719"
 |异常|第三章|合作伙伴连接已终止。|
 |拒绝|4|拒绝合作伙伴邮件。|
 |无|5|合作伙伴无响应。|
-
-
 
 
 

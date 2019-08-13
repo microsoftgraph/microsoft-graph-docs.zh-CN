@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c64fe517fd610bad07b7a029e120c7657b834f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5451050bb70cb9cdbcc50738da0eb81c659f8e6f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969021"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371024"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup 资源类型
 
@@ -44,8 +44,6 @@ ms.locfileid: "35969021"
   "groupName": "String"
 }
 ```
-
-
 
 
 

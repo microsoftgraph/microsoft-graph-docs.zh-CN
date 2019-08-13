@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5cfa70878f798a6d788a5d9d0523fb75d75c4602
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 41992c5b5b1cd4a620d3e2433524478a931b6c7f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968377"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372333"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult 资源类型
 
@@ -63,8 +63,6 @@ ms.locfileid: "35968377"
   }
 }
 ```
-
-
 
 
 

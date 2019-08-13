@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 70374a75df57be7b814b1ee12dc595ad4f0445e2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bee91f434408be24ef6669820eb6d8aa56927ada
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967124"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371913"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35967124"
 |:---|:---|:---|
 |普遍|1|Windows 通用应用程序|
 |desktop|双面|Windows 桌面应用程序|
-
-
 
 
 

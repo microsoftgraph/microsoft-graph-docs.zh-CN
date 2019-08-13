@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e922634ec08e1fab412c160d2d8fe7f45d0dde5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010152"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371906"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
@@ -54,6 +54,8 @@ ms.locfileid: "36010152"
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 徽标后面有浅背景|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
 |customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
+|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -108,11 +110,11 @@ ms.locfileid: "36010152"
     "type": "String",
     "value": "binary"
   },
-  "customPrivacyMessage": "String"
+  "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
-
-
 
 
 

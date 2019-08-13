@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc72a3b0b8934b5056bad261cc2f11121293f6e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00908d1adb28cd7139be415497f8c972b6326b05
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000366"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369715"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>windows10VpnConfiguration 资源类型
 
@@ -235,8 +235,6 @@ ms.locfileid: "36000366"
   ]
 }
 ```
-
-
 
 
 

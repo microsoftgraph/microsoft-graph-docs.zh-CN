@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2909c1cbc7fd65ff71c36fe777fd8bcbce9749cd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9407e1d035a5cd50db7b071f562acb4eb2d007b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968566"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371983"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
@@ -55,8 +55,6 @@ Configuration Manager 客户端已启用的功能
   "officeApps": true
 }
 ```
-
-
 
 
 

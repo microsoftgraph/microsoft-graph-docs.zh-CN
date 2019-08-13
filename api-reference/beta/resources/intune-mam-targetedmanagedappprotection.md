@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76c997684cb2d0babd48ec71058ebc13ccb3c8a0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fdcdbd3ade2c0e6be503483f82d7852b7e9f8424
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010838"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372963"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>targetedManagedAppProtection 资源类型
 
@@ -140,8 +140,6 @@ ms.locfileid: "36010838"
   "targetedAppManagementLevels": "String"
 }
 ```
-
-
 
 
 

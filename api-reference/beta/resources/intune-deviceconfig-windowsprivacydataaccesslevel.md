@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 44ac906a390aff82e4399181014628725673b1b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 507252538606ccb47d72e8dc60710de04acc9b09
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000261"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369645"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>windowsPrivacyDataAccessLevel 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36000261"
 |forceAllow|1|将允许应用访问指定的隐私数据。|
 |forceDeny|双面|将拒绝应用程序访问指定的隐私数据。|
 |userInControl|第三章|当应用尝试访问指定的隐私数据时, 系统将提示用户。|
-
-
 
 
 

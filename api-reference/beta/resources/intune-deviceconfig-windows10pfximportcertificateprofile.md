@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b297ea744855428effa2438c5c08a85da1eb58dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45b7e55d18ac56fc8b1b4a7d4748534545bf1924
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011328"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369792"
 ---
 # <a name="windows10pfximportcertificateprofile-resource-type"></a>windows10PFXImportCertificateProfile 资源类型
 
@@ -104,8 +104,6 @@ ms.locfileid: "36011328"
   "keyStorageProvider": "String"
 }
 ```
-
-
 
 
 

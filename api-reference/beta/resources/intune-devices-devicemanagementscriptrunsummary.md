@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a2486a52a5ce71805604f9e3d9b8d5bfdd6c85e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9d2b0b92287a045607c02e271155e2e74a2fa90
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999834"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370023"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 
@@ -32,6 +32,9 @@ ms.locfileid: "35999834"
 |id|String|设备管理脚本运行摘要实体的键。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
+|compliantDeviceCount|Int32|合规设备计数。|
+|notCompliantDeviceCount|Int32|不符合的设备计数。|
+|pendingDeviceCount|Int32|挂起的设备计数。|
 |successUserCount|Int32|成功的用户计数。|
 |errorUserCount|Int32|错误用户计数。|
 
@@ -52,12 +55,13 @@ ms.locfileid: "35999834"
   "id": "String (identifier)",
   "successDeviceCount": 1024,
   "errorDeviceCount": 1024,
+  "compliantDeviceCount": 1024,
+  "notCompliantDeviceCount": 1024,
+  "pendingDeviceCount": 1024,
   "successUserCount": 1024,
   "errorUserCount": 1024
 }
 ```
-
-
 
 
 

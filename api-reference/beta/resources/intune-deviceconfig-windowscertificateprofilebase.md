@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3a8f32cea23ee82cba4069e492a3560cd75383e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 551ac6afde8670ade2c66a9208d30ea9e42c29b3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011272"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371213"
 ---
 # <a name="windowscertificateprofilebase-resource-type"></a>windowsCertificateProfileBase 资源类型
 
@@ -111,8 +111,6 @@ ms.locfileid: "36011272"
   "certificateValidityPeriodScale": "String"
 }
 ```
-
-
 
 
 

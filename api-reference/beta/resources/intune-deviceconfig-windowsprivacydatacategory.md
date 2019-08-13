@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 11b7c71ff9368db822ab66bff558b8716615cbc4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60f1e417b937a629f9069e81e51f64cff508f71f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000247"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369638"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
@@ -42,8 +42,6 @@ ms.locfileid: "36000247"
 |tasks|位|允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
 |syncWithDevices|×|允许应用自动与未明确配对用户设备的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
 |trustedDevices|18|允许应用访问受信任的设备。 已添加到 Windows 10 版本 1607 中。|
-
-
 
 
 

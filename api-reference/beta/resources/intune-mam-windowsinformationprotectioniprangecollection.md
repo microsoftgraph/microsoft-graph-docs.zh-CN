@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 634131c39d493bf429d9d23f795dee52123edc15
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f52af0fb969846f645d1cda15c952cf248852f80
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998246"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372893"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection 资源类型
 
@@ -49,8 +49,6 @@ Windows 信息保护 IP 范围集合
   ]
 }
 ```
-
-
 
 
 

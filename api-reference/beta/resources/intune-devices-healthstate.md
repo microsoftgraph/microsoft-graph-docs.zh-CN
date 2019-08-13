@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6bb14eaa531f67bbaa1c812ce143282cc038af6a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e10570e6eac484221c870a63c774237f23c00fcc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968349"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369904"
 ---
 # <a name="healthstate-enum-type"></a>healthState 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35968349"
 |unknown|0|未知状态。|
 |运转|1|正常状态。|
 |正常|双面|不正常状态。|
-
-
 
 
 

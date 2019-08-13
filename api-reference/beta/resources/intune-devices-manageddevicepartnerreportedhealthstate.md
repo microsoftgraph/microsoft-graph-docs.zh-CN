@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8935c5715c9248b7c50f87d8835979906a7b3801
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e9565d1d5dcf08cccfb141cd9947a20805882bf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999757"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372186"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 
@@ -33,8 +33,6 @@ ms.locfileid: "35999757"
 |无|步|移动威胁防护合作伙伴认为设备无响应。 设备运行状况未知。|
 |威胁|utf-8|威胁防御合作伙伴认为设备受到威胁。 这意味着该设备具有活跃的威胁或风险, 最终用户无法轻松修正该设备, 并且用户应联系其 IT 管理员。|
 |配置错误|第|将设备视为与威胁防护合作伙伴配置不正确。 这意味着设备缺少必需的配置文件或配置以使威胁防护合作伙伴正常运行, 因此威胁或风险分析无法完成。|
-
-
 
 
 

@@ -4,12 +4,13 @@ description: 表示意向的设备状态摘要的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72ba65c7b23310a6fb3883bd72579ce838471f4f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d4dcbad68d83978d269108b2a9a1b18a246e0039
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964092"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371416"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>deviceManagementIntentDeviceStateSummary 资源类型
 
@@ -59,8 +60,6 @@ ms.locfileid: "34964092"
   "successCount": 1024
 }
 ```
-
-
 
 
 

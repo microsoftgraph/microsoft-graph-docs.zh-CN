@@ -4,13 +4,13 @@ description: 按流量计费的连接限制设置。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-doc_type: resourcePageType
-ms.openlocfilehash: 449a7fbe374b0c750fc70c8bfc4678db996eb3ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: enumPageType
+ms.openlocfilehash: b75f39befaf2aca569cfa19df9803431e780356c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000801"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368651"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000801"
 |unrestricted|0|L|
 |更正|1|Fixed|
 |变量|双面|变量|
-
-
 
 
 

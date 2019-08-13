@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb212599c56410b7f66d6f8baa8db1d06d36ba60
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e352c25e429a48c7596a057bfd2405f22b58ca8a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000879"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368819"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>managedDeviceEncryptionState 资源类型
 
@@ -79,8 +79,6 @@ ms.locfileid: "36000879"
   ]
 }
 ```
-
-
 
 
 

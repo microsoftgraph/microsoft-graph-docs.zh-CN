@@ -4,13 +4,13 @@ description: WIP 保护强制级别的可能值
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-doc_type: resourcePageType
-ms.openlocfilehash: bd2f1a31004afca7a8c26533bd848011c16fef92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: enumPageType
+ms.openlocfilehash: c5d5846ad8025b040fb853b8ba6f1dc402e0f15f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967859"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373579"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel 枚举类型
 
@@ -27,8 +27,6 @@ WIP 保护强制级别的可能值
 |encryptAndAuditOnly|1|仅加密和审核|
 |encryptAuditAndPrompt|双面|加密、审核和提示|
 |encryptAuditAndBlock|第三章|加密、审核和阻止|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f497922920ab6826bf11ad0ed78234d2c180f7a7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10070c62f7877b5a26cadc89afbcede55f668113
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000802"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368721"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36000802"
   "tvRating": "String"
 }
 ```
-
-
 
 
 

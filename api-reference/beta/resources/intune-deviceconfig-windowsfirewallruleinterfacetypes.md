@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 939cee887395e60d62ddafd752eaeafe4ed4b3f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc2bdad51deb3cb77e58be4f43f09d85ca617171
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011216"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371101"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>windowsFirewallRuleInterfaceTypes 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36011216"
 |远程|1|远程访问接口类型。|
 |无线|双面|无线接口类型。|
 |vlan|4|LAN 接口类型。|
-
-
 
 
 

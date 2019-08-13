@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 170989596004660e14ed5cfbb2296e379bd1c4c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e07a78db6d30ed6256f5491c57c0de7e3af0946
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969056"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371115"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule 资源类型
 
@@ -31,30 +31,14 @@ ms.locfileid: "35969056"
 |协议|Int32|0-255 表示 IP 协议 (TCP = 6, UDP = 17) 的数字。 如果未指定, 则默认值为 All。 有效值为0至255|
 |localPortRanges|String collection|本地端口范围的列表。 例如, "100-120", "200", "300-320"。 如果未指定, 则默认值为 All。|
 |remotePortRanges|String collection|远程端口范围的列表。 例如, "100-120", "200", "300-320"。 如果未指定, 则默认值为 All。|
-|localAddressRanges|String collection|规则所涵盖的本地地址的列表。 有效令牌包括:
-- "*" 表示任何本地地址。 如果存在此标记, 则必须是包含的唯一标记。
-- 可以使用子网掩码或网络前缀表示法指定子网。 如果不指定子网掩码和网络前缀, 则子网掩码默认为255.255.255.255。
-- 有效的 IPv6 地址。
-- 不包含空格的 IPv4 地址范围, 格式为 "起始地址-结束地址"。
-- 不包含空格的 IPv6 地址范围, 格式为 "起始地址-结束地址"。
-默认值为任意地址。 || remoteAddressRanges |字符串集合 |指定规则所涵盖的远程地址的令牌列表。 标记不区分大小写。 有效令牌包括:
-- "*" 表示任何远程地址。 如果存在此标记, 则必须是包含的唯一标记。
-- "Defaultgateway"
-- LDHCP
-- DN
-- 首选
-- "Intranet" (在 Windows 版本 1809 + 上受支持)
-- "RmtIntranet" (在 Windows 版本 1809 + 上受支持)
-- "Internet" (在 Windows 版本 1809 + 上受支持)
-- "Ply2Renders" (在 Windows 版本 1809 + 上受支持)
-- "LocalSubnet" 指示本地子网上的任何本地地址。
-- 可以使用子网掩码或网络前缀表示法指定子网。 如果不指定子网掩码和网络前缀, 则子网掩码默认为255.255.255.255。
-- 有效的 IPv6 地址。
-- 不包含空格的 IPv4 地址范围, 格式为 "起始地址-结束地址"。
-- 不包含空格的 IPv6 地址范围, 格式为 "起始地址-结束地址"。
-默认值为任意地址。 || profileTypes |[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|指定规则所属的配置文件。 如果未指定, 则默认值为 All。 可能的值为`notConfigured`: `domain`、 `private`、 `public`、。 || 操作 |[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|规则强制执行的操作。 如果未指定, 则允许使用默认值。 可能的值为`notConfigured`: `blocked`、 `allowed`、。 || trafficDirection |[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|启用了规则的流量方向。 如果未指定, 则默认值为 Out。可能的值为`notConfigured`: `out`、 `in`、。 || interfaceTypes |[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|规则的接口类型。 可能的值为`notConfigured`: `remoteAccess`、 `wireless`、 `lan`、。 || edgeTraversal |[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|指示是否为此规则启用或禁用边缘遍历。
-EdgeTraversal 设置指示允许特定入站流量通过 Nat 和使用 Teredo 隧道技术的其他边缘设备进行隧道传递。 为了使此设置正常工作, 具有入站防火墙规则的应用程序或服务需要支持 IPv6。 此设置的主应用程序允许主机上的侦听器通过 Teredo IPv6 地址进行全局寻址。
-默认情况下, 新规则已禁用 EdgeTraversal 属性。 可能的值为`notConfigured`: `blocked`、 `allowed`、。 || localUserAuthorizations |String |指定应用程序容器的授权本地用户的列表。 这是安全描述符定义语言 (SDDL) 格式的字符串。 |
+|localAddressRanges|String collection|规则所涵盖的本地地址的列表。 默认值为任意地址。 有效令牌包括:<ul><li>"*" 表示任何本地地址。 如果存在此标记, 则必须是包含的唯一标记。</li><li>可以使用子网掩码或网络前缀表示法指定子网。 如果不指定子网掩码和网络前缀, 则子网掩码默认为255.255.255.255。</li><li>有效的 IPv6 地址。</li><li>不包含空格的 IPv4 地址范围, 格式为 "起始地址-结束地址"。</li><li>不包含空格的 IPv6 地址范围, 格式为 "起始地址-结束地址"。</li></ul>|
+|remoteAddressRanges|String collection|指定规则所涵盖的远程地址的令牌列表。 标记不区分大小写。 默认值为任意地址。 有效令牌包括:<ul><li>"*" 表示任何远程地址。 如果存在此标记, 则必须是包含的唯一标记。</li><li>"Defaultgateway"</li><li>LDHCP</li><li>DN</li><li>首选</li><li>"Intranet" (在 Windows 版本 1809 + 上受支持)</li><li>"RmtIntranet" (在 Windows 版本 1809 + 上受支持)</li><li>"Internet" (在 Windows 版本 1809 + 上受支持)</li><li>"Ply2Renders" (在 Windows 版本 1809 + 上受支持)</li><li>"LocalSubnet" 指示本地子网上的任何本地地址。</li><li>可以使用子网掩码或网络前缀表示法指定子网。 如果不指定子网掩码和网络前缀, 则子网掩码默认为255.255.255.255。</li><li>有效的 IPv6 地址。</li><li>不包含空格的 IPv4 地址范围, 格式为 "起始地址-结束地址"。</li><li>不包含空格的 IPv6 地址范围, 格式为 "起始地址-结束地址"。</li></ul>|
+|profileTypes|[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)|指定规则所属的配置文件。 如果未指定, 则默认值为 All。 可取值为：`notConfigured`、`domain`、`private`、`public`。|
+|action|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|规则强制执行的操作。 如果未指定, 则允许使用默认值。 可取值为：`notConfigured`、`blocked`、`allowed`。|
+|trafficDirection|[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|启用了规则的流量方向。 如果未指定, 则默认值为 Out。可能的值为`notConfigured`: `out`、 `in`、。|
+|interfaceTypes|[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|规则的接口类型。 可取值为：`notConfigured`、`remoteAccess`、`wireless`、`lan`。|
+|edgeTraversal|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|指示是否为此规则启用或禁用边缘遍历。 EdgeTraversal 设置指示允许特定入站流量通过 Nat 和使用 Teredo 隧道技术的其他边缘设备进行隧道传递。 为了使此设置正常工作, 具有入站防火墙规则的应用程序或服务需要支持 IPv6。 此设置的主应用程序允许主机上的侦听器通过 Teredo IPv6 地址进行全局寻址。 默认情况下, 新规则已禁用 EdgeTraversal 属性。 可取值为：`notConfigured`、`blocked`、`allowed`。|
+|localUserAuthorizations|String|指定应用程序容器的授权本地用户的列表。 这是安全描述符定义语言 (SDDL) 格式的字符串。|
 
 ## <a name="relationships"></a>关系
 无
@@ -95,8 +79,6 @@ EdgeTraversal 设置指示允许特定入站流量通过 Nat 和使用 Teredo �
   "localUserAuthorizations": "String"
 }
 ```
-
-
 
 
 

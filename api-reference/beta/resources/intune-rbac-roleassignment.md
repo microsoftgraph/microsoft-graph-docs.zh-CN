@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c72b6ee403a4a0b06cd1181da584dbb7b4729f8d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f9a76366ca97464b4180a693e85d8d68d7358a8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967600"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369253"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 
@@ -67,8 +67,6 @@ ms.locfileid: "35967600"
   ]
 }
 ```
-
-
 
 
 

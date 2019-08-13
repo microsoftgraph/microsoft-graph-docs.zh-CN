@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d435d699b2cd30617a9e709ef8e9ba86eabd46b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9577ba5acf826598b0cefa6cf884bcc25dc50107
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010789"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374202"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 
@@ -47,8 +47,6 @@ Exchange 中的设备访问规则。
   "accessLevel": "String"
 }
 ```
-
-
 
 
 

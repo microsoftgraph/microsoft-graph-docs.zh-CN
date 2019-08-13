@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d921ffbaca07a790060011a9970b4b02b0e8472
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 812282fdbe6cc6bb329682ab3d95e8e036c512f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010698"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374335"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
@@ -38,6 +38,8 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
 |customPrivacyMessage|String|自定义隐私邮件。|
+|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 
 ## <a name="relationships"></a>关系
@@ -85,11 +87,11 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
     "value": "binary"
   },
   "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true,
   "showDisplayNameNextToLogo": true
 }
 ```
-
-
 
 
 

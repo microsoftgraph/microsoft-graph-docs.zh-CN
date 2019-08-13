@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4daa74189c0cba26b74c96fd9cb659b2255e6b5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac112c970fd05f7c697402d3cb3a14782890c7fe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999652"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372123"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -44,8 +44,7 @@ ms.locfileid: "35999652"
 |关闭|18|用户启动一种关闭设备的操作。|
 |rotateFileVaultKey|20|用户启动一个操作以在 mac 上旋转 FileVaultKey。|
 |getFileVaultKey|不足|用户启动一个操作以在 mac 上获取 FileVaultKey。|
-
-
+|setDeviceName|22|用户启动操作以在设备上设置设备名称。|
 
 
 

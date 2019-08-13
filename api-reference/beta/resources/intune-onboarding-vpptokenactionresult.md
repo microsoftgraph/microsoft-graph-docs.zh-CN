@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7195289f52a13d327d98aad1c93fbab622f9960b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b840d37963d8d8b56b0fe2ecd461b32f12368ae5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010656"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373572"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult 资源类型
 
@@ -47,8 +47,6 @@ ms.locfileid: "36010656"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

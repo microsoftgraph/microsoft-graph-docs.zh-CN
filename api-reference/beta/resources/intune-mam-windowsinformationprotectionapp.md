@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61ada685166fbe3ca7ef02fa8f87e5383666e9ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08a1ed7d56c41eee69ee907a9efd91c12fad9b4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967899"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373257"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -49,8 +49,6 @@ ms.locfileid: "35967899"
   "denied": true
 }
 ```
-
-
 
 
 

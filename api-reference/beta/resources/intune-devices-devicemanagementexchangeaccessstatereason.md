@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d6761af448b51c9c434472c4ad43978d34b1b1b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 525f994b19cff11b06109726e7efbc2033cad69a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968458"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370079"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
@@ -39,8 +39,6 @@ ms.locfileid: "35968458"
 |azureADBlockDueToAccessPolicy|日|由 AAD 访问策略吊销的访问状态|
 |compromisedPassword|个|通过密码被破解的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|位|由托管应用程序质询吊销的访问状态|
-
-
 
 
 

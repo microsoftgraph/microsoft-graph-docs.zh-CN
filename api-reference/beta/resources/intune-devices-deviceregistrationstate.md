@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e153ac5c1bfbd09540fd55b5df23eab095e2a002
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 92171fb3e9fc50e516ed4568cceea03c5e0ba1cf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968384"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369932"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
@@ -31,8 +31,6 @@ ms.locfileid: "35968384"
 |certificateReset|型|设备证书已重置。|
 |notRegisteredPendingEnrollment|步|设备未注册且未完成注册。|
 |unknown|utf-8|设备注册状态未知。|
-
-
 
 
 

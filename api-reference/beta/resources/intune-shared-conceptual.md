@@ -4,13 +4,12 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点 (RES
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: c8540b7bd183d21a15ad2e38b5f1bef2caa4d983
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d2252093f222f5908756f312c2e82d591c29920
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010530"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372802"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -34,6 +33,7 @@ ms.locfileid: "36010530"
 - [设备平台类型](intune-shared-deviceplatformtype.md)
 - [设备类型](intune-shared-devicetype.md)
 - [支持](intune-shared-enablement.md)
+- [支持](intune-shared-enablement.md)
 - [排除组分配目标](intune-shared-exclusiongroupassignmenttarget.md)
 - [组分配目标](intune-shared-groupassignmenttarget.md)
 - [安装意图](intune-shared-installintent.md)
@@ -48,7 +48,6 @@ ms.locfileid: "36010530"
 - [报表根目录](intune-shared-reportroot.md)
 - [生成的应用状态](intune-shared-resultantappstate.md)
 - [RGB 颜色](intune-shared-rgbcolor.md)
-- [按帐户类型运行](intune-shared-runasaccounttype.md)
 - [运行状态](intune-shared-runstate.md)
 - [保存的 UI 状态生成选项](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)

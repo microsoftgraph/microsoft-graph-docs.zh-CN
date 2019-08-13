@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 600d01f780274ba00b17355f83692cb1a9581e43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 05e2c56fffd7c804038f77b60f20c2b1ccb17f3d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998324"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372998"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>mdmWindowsInformationProtectionPolicy 资源类型
 
@@ -212,8 +212,6 @@ ms.locfileid: "35998324"
   "isAssigned": true
 }
 ```
-
-
 
 
 

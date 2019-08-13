@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8ec4d7a7b8467c58852863673e7a66ee49dfd9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f4b77ecaeeb23182be2fe867c73675a294528048
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967747"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374349"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>deviceEnrollmentLimitConfiguration 资源类型
 
@@ -70,8 +70,6 @@ ms.locfileid: "35967747"
   "limit": 1024
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d9ae2b3bfb45ff33c5f0a39d746350212db3027c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0c5db4ffaac3a08edad42e7529b62337bf0ed52
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010635"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369358"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "36010635"
 |期满|双面|令牌已过期。|
 |无效|第三章|令牌无效。|
 |assignedToExternalMDM|4|令牌由另一个 MDM 服务管理。|
-
-
 
 
 

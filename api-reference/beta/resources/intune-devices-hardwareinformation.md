@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 874cee0b2b09b3d106d771f2c176ceed3d4d04e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a09b1e4d5e788d19ae0df6f6a02fe46009e5362
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999785"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369925"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "35999785"
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements` 或 `other`。|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构 (LSA) credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
+|osBuildNumber|String|Android 设备上的操作系统内部版本号|
 
 ## <a name="relationships"></a>关系
 无
@@ -88,11 +89,10 @@ ms.locfileid: "35999785"
   "deviceFullQualifiedDomainName": "String",
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
-  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+  "osBuildNumber": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 48d73661e33f55298fc12aac28f551f26c99a71c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6208b85e6e9bb092615401e0f8938ba2ce8ea338
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011188"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371045"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>windowsHealthMonitoringScope 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36011188"
 |取消|0|Undefined|
 |healthMonitoring|1|Windows 设备运行状况监视的基本事件|
 |bootPerformance|双面|启动性能事件|
-
-
 
 
 

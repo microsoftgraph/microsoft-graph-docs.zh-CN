@@ -4,12 +4,13 @@ description: 意向分配实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9a5d5ce8d55f70684ef4ce5e0a3c5ff6bf7e536
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8c9964e3ef34cc000e102b5ecc253acdb54e92e7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964008"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371759"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>deviceManagementIntentAssignment 资源类型
 
@@ -54,8 +55,6 @@ ms.locfileid: "34964008"
   }
 }
 ```
-
-
 
 
 

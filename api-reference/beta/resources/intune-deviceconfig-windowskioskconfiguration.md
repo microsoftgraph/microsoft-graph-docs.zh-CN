@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: edc1b3369a3b3ab0faab2cdb16cc8b9ef396f786
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d11812d885d6be772c8ecf058658446a56eb99b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969014"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370926"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 
@@ -163,8 +163,6 @@ ms.locfileid: "35969014"
   }
 }
 ```
-
-
 
 
 

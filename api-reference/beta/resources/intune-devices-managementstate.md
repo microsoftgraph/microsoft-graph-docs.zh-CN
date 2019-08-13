@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 928f2c1c9e7eb1530bdf7839691cf2469af11077
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a61b9d228589f1d0a1e380ed45720f66faa650af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968335"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372151"
 ---
 # <a name="managementstate-enum-type"></a>managementState 枚举类型
 
@@ -35,8 +35,6 @@ Microsoft Intune 中设备的管理状态。
 |wipeCanceled|第|已取消此设备的擦除命令|
 |retireCanceled|10 |已取消此设备的停用命令|
 |探索|11x17|设备已被发现, 但未完全注册。|
-
-
 
 
 

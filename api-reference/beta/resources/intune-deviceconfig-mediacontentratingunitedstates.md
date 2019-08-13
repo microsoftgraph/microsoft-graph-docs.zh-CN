@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5774ca5290cd6d80370653526d70a2717476df0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb659bfb8fc193e477270e635cecf9f94c7ca114
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000835"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368656"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>mediaContentRatingUnitedStates 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36000835"
   "tvRating": "String"
 }
 ```
-
-
 
 
 

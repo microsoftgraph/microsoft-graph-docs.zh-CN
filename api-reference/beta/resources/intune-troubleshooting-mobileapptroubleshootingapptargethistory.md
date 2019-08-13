@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47a00ec29f91c81c513ef509e763c4071c106b1e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3964702646476f35f7f6e9b7928b69fca83dc5e8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010208"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371304"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>mobileAppTroubleshootingAppTargetHistory 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "36010208"
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |securityGroupId|String|目标为的 AAD 安全组 id。|
-|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`。|
+|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`、`error`、`pending`。|
 |errorCode|String|失败的错误代码, 如果没有失败, 则为空。|
 
 ## <a name="relationships"></a>关系
@@ -50,8 +50,6 @@ ms.locfileid: "36010208"
   "errorCode": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 883818d7061f070f01f3e3c9fdfee9e15f322829
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4634bdb5f7a4baa867f962cd02564c7c84485923
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968258"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372088"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult 资源类型
 
@@ -52,8 +52,6 @@ ms.locfileid: "35968258"
   "passcode": "String"
 }
 ```
-
-
 
 
 

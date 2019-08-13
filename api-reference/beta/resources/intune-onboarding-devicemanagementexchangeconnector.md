@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7c45d1e39fd03d7971499e7bccd4ff6050563b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81286bf99818f47496d6c95371b6e485360ffcb9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010782"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374174"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector 资源类型
 
@@ -70,8 +70,6 @@ ms.locfileid: "36010782"
   "exchangeOrganization": "String"
 }
 ```
-
-
 
 
 

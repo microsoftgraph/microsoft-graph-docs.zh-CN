@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 381fde8c3631c640691af346cccd3199d9018c50
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0798938ff2b0c365938aacaeea4607c0d84b31b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010201"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371318"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail 资源类型
 
@@ -58,8 +58,6 @@ ms.locfileid: "36010201"
   ]
 }
 ```
-
-
 
 
 

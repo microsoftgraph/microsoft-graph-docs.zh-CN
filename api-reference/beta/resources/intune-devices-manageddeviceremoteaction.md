@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 27e3ef9bef12feedfe7f63498ae49a42f40f8124
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2196c0d1284d4bf316a97d3a4cdd010c0c031303
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968356"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372179"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
 
@@ -29,8 +29,7 @@ ms.locfileid: "35968356"
 |quickScan|第三章|尚未记录|
 |signatureUpdate|4|尚未记录|
 |擦|5|尚未记录|
-
-
+|customTextNotification|型|尚未记录|
 
 
 
