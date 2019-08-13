@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58b2bb36b9ca4c13225a91ea48ec097b332cc159
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38e8a8d40f6e2fc34ad7705d5ef6439fe5561639
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958737"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322125"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>列出 windowsOfficeClientSecurityConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958737"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -100,6 +100,9 @@ Content-Length: 1222
   ]
 }
 ```
+
+
+
 
 
 

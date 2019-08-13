@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6d9ae76dd1b498e4ecfea64f7e1d8785374aea4d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ee5620b250913a06fc503706062074771d7f0421
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996152"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325853"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-names-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-names-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

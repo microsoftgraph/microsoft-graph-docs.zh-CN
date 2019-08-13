@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c8840c2b4a34bfd786913cae9697782c1a972e9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20bf04fd3213959c69a54a15db3a93ae97546755
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024971"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349258"
 ---
 # <a name="reportroot-getskypeforbusinessactivityusercounts"></a>reportRoot: getSkypeForBusinessActivityUserCounts
 
@@ -31,7 +31,6 @@ ms.locfileid: "36024971"
 ## <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -74,6 +73,8 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -87,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessActivityUserCoun
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinessactivityusercounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinessactivityusercounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

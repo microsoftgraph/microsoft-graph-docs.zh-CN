@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23a74dcd0048716edc46f4f006a083d55f973b89
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0667ba1f55432708a0fb569b12248b650d88fe28
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003404"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316456"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -26,7 +26,6 @@ ms.locfileid: "36003404"
 
 ## <a name="http-request"></a>HTTP 请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt
@@ -53,6 +52,8 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/item
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -69,7 +70,7 @@ Content-length: 20
   "index": 8
 }
 ```
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartpointscollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

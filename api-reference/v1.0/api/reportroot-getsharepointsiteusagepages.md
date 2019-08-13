@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 245716bf22afeec2ad49ea2fd183bb00a82094d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7471493418d28b401a3e44278713a2ef667f7dc2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021863"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357994"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 
@@ -31,7 +31,6 @@ ms.locfileid: "36021863"
 ## <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -73,6 +72,8 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -86,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsagePages(period=
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getsharepointsiteusagepages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getsharepointsiteusagepages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

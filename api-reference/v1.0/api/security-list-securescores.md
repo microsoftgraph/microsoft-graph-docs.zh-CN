@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: bd5f8ee369f772e0d3ce584af3f8047234ff8c15
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8210f96b4db8a05efc2fa1c82c384ec822c4afb1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975653"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36307873"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescores-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securescores-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

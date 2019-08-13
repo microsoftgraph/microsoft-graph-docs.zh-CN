@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4be7ac1de38a1c27f8ecfdaf7baf66e8dedf0a31
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6c0d7bd3c4a528e277e18277dfe0735062dce3c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955150"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323870"
 ---
 # <a name="get-educationschool"></a>获取 educationSchool
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/education/schools/10001
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

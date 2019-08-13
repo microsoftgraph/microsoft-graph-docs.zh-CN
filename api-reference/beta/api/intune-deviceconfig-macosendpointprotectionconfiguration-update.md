@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c5e4b2efad23367b3a9b02dedd5994524ddf59c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb6176da0a02e16e68c793e4ea7252f63820fd8e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947317"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315440"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>更新 macOSEndpointProtectionConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947317"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -211,6 +211,7 @@ Content-Length: 2224
   "fileVaultPersonalRecoveryKeyRotationInMonths": 12
 }
 ```
+
 
 
 

@@ -6,12 +6,12 @@ title: 签出文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: eeaa36c2aa71469572a31f02b5692727508a62fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b177cc96ba4f228b543cda317727a1051ed2a084
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957225"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324431"
 ---
 # <a name="check-out-a-driveitem-resource"></a>签出 DriveItem 资源
 
@@ -60,7 +60,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 [!INCLUDE [sample-code](../includes/snippets/csharp/checkout-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/checkout-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

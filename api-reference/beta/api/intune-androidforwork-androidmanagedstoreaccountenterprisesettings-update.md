@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 698bb3b11f9df052213257f2c882b7a207cb0bcf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b517e2db80bf3e580a21d5117f7a279144e96c1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952546"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324964"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>更新 androidManagedStoreAccountEnterpriseSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952546"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -142,6 +142,7 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
+
 
 
 

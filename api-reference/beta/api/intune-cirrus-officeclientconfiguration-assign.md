@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af53b8c39a84bfdcdd0115ac8db90bef6359303f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9d548e4ac1ec6f72b600c4e91ecd50e5e455159
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958975"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322259"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958975"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -100,6 +100,9 @@ Content-Length: 274
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba8201baa85ec5caf7a36cbf275936c78c7b85ab
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: fe2a985e6b232a9f7578c1dcd615d16fd42aede2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245465"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317842"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -86,7 +86,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6815f16ac3829b8c88d86fa4e2bbf187d6639fb5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e19a6fa684b22d58e0ab00d4ec7a58a953bc7ffe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014870"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337250"
 ---
 # <a name="list-owners"></a>列出所有者
 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-owners-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-owners-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

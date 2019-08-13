@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2ce68099d04d0d45cedf5c8c76da65bf8366d8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8248cabccc0864f48cbc0fc2375da8c30918ea0e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952574"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324992"
 ---
 # <a name="syncapps-action"></a>syncApps 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952574"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccoun
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

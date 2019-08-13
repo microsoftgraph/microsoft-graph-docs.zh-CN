@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00ece303bb22f8ef991f340be13ec44369734a87
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bafce6e4ec45b6fec733bef583e279d0aa863347
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958612"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322035"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>获取 termsAndConditionsAcceptanceStatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958612"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 289
   }
 }
 ```
+
 
 
 

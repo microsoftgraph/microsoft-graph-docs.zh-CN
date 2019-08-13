@@ -7,12 +7,12 @@ description: 在 SharePoint 租户中搜索与所提供的关键字匹配的网�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 800894f8db91392df040311b9c929aebda2f29d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 561c3056c1760ff9e585523b5aa4cb9a7fc71c2a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024677"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371269"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -43,7 +43,7 @@ GET /sites?search={query}
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

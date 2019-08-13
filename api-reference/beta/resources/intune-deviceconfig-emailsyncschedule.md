@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 14b73fc4cfbf9cf53bdab4c2841403cac4077fa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e4d3645ea2c0eaa7f8f1cf8138f1c0727cfa0d8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001423"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325629"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36001423"
 |thirtyMinutes|4|每三十分钟同步一次。|
 |sixtyMinutes|5|每60分钟同步一次。|
 |basedOnMyUsage|型|根据我的使用情况进行同步。|
-
-
 
 
 

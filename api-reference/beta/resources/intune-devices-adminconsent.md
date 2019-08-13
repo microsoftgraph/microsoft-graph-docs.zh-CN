@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f13e8abbaf20f57e94923918a4e5c2bb5bcf9b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d78333cd683501a8bf4fea0aa3a2e55944d9b5a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968608"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319306"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "35968608"
 |属性|类型|说明|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|将用户和设备数据共享到 Apple 的管理员同意状态。 可取值为：`notConfigured`、`granted`、`notGranted`。|
+|shareUserExperienceAnalyticsData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|获取或设置用于共享用户体验分析数据的管理员同意。 可取值为：`notConfigured`、`granted`、`notGranted`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -38,11 +39,10 @@ ms.locfileid: "35968608"
 ``` json
 {
   "@odata.type": "#microsoft.graph.adminConsent",
-  "shareAPNSData": "String"
+  "shareAPNSData": "String",
+  "shareUserExperienceAnalyticsData": "String"
 }
 ```
-
-
 
 
 

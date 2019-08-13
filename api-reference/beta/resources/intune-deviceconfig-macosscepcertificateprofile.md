@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b43a194240bdf0ad97243f399ecb77b89f5a5122
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f8512d484d400b9a56c080ce04280fec94671148
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970155"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321909"
 ---
 # <a name="macosscepcertificateprofile-resource-type"></a>macOSScepCertificateProfile 资源类型
 
@@ -146,8 +146,6 @@ Mac OS SCEP 证书配置文件。
   ]
 }
 ```
-
-
 
 
 

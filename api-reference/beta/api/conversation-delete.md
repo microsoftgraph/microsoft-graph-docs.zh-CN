@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9137ac4acf5f9708b3b472a3a8ac40a4025ec9fc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c0c46f8e66f4afdd3bedd37d57741aa9edcc3b8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943188"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321538"
 ---
 # <a name="delete-conversation"></a>删除对话
 
@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-conversation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4931363ff3fe47480a2b2dcc15e313bf62d74a88
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f7e8c790a7a9e07171656d2e99f99354994db64
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952658"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322770"
 ---
 # <a name="unbind-action"></a>unbind 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952658"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/un
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 03e5c6f224cd6c31a037ff07ba39ba30feed0bca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca117b860a29b18103380c28289e67f20ddfbf93
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952651"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325048"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952651"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -114,6 +114,7 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
+
 
 
 

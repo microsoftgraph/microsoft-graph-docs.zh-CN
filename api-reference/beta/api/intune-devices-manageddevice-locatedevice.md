@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bc5b2ccf3c65f22fd9332d91dc976b82921bca6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b507a61a3d51bda3791b9daa47dc7adb6dcd7d2b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981442"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310169"
 ---
 # <a name="locatedevice-action"></a>locateDevice 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981442"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,6 +66,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

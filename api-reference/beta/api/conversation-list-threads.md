@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 951bb18d7a99b4db9bf0b3b9217ab89e97fd70fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37e81b13bf2d1ebe2bd8034c7bbc48fa15216e55
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943153"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321503"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threads-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-threads-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

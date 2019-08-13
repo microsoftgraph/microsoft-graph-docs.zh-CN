@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6095eb5a70776d9bfd0cd5f45985599913cafb92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a38fb9959e555dfd24796273c6acd29ff869ab4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999904"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320755"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState 资源类型
 
@@ -103,8 +103,6 @@ ms.locfileid: "35999904"
   "healthAttestationSupportedStatus": "String"
 }
 ```
-
-
 
 
 

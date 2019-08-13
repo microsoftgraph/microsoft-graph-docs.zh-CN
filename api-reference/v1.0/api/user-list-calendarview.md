@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ec5f3b405ff4c000451f4659fddfc6892bd7d01c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cda17e816270c65de4cb496215ace2fdc4b9f1b7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026997"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320020"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

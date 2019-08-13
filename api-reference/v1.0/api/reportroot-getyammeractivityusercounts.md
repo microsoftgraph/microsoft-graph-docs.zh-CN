@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 61dd07d7a709dfe0431665be618683774c8f55eb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5094ef011be91841edf1d6917c62a88c02a956c7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021639"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320350"
 ---
 # <a name="reportroot-getyammeractivityusercounts"></a>reportRoot: getYammerActivityUserCounts
 
@@ -31,7 +31,6 @@ ms.locfileid: "36021639"
 ## <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -74,6 +73,8 @@ CSV 文件包含下面的列标题。
 
 下面展示了示例请求。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -87,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserCounts(period=
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getyammeractivityusercounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getyammeractivityusercounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

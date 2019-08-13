@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: a8ee917e3b5afa20ac0796624bdb411eeea8df36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 051c49468adfdc60508b93932e0b56b2b363c988
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024684"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320021"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 
@@ -20,8 +20,7 @@ ms.locfileid: "36024684"
 
 [网站]: ../resources/site.md
 
-
-            **site** 可按唯一标识符进行寻址，此唯一标识符是下列值的复合 ID：
+**site** 可按唯一标识符进行寻址，此唯一标识符是下列值的复合 ID：
 
 * 网站集主机名称 (contoso.sharepoint.com)
 * 网站集的唯一 ID (GUID)
@@ -84,7 +83,7 @@ GET /sites/{site-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

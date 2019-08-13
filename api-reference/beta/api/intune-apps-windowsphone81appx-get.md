@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 38092f644ff469ea1dd6deca955cf8b09236f739
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 51e36cf2bbf689b08c61a70f8e288c84ada277e9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960011"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322448"
 ---
 # <a name="get-windowsphone81appx"></a>获取了 windowsphone81appx
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960011"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -122,6 +122,7 @@ Content-Length: 1798
   }
 }
 ```
+
 
 
 

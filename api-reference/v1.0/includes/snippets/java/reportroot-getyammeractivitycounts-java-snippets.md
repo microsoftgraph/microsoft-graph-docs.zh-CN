@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: a367c1dd444aa9b74e85f5047c9510a473095401
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 530063dbaf9b9ddc1cc54482888f9c33414cb23f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882973"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320393"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getYammerActivityCounts('D7')
+    .getYammerActivityCounts("D7")
     .buildRequest()
     .get();
 

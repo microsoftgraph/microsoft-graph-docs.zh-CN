@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6698445ce593d3caa3e97bb13a5d1fc26a5cd0d9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 95201bf8fcaf6c4b7efe1a3c552ff4a26c93dd39
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968629"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319263"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails 资源类型
 
@@ -45,8 +45,6 @@ ms.locfileid: "35968629"
   "appLogDecryptionAlgorithm": "String"
 }
 ```
-
-
 
 
 

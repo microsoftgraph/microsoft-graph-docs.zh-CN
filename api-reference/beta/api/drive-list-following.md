@@ -5,12 +5,12 @@ title: 列出关注的项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4c8310314904ffb7affecebf937481a72a83cdcf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8fface18f7b783d463f4df57f97c610a45103ab
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957323"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321185"
 ---
 # <a name="list-followed-items"></a>列出关注的项
 
@@ -42,7 +42,7 @@ GET /me/drive/following
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-followed-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-followed-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

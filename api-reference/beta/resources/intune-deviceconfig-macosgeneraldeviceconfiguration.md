@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 641b31e570990ec57d319b6de58110a35d8c45c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b06b1db2b8e0cb2e09b3f8b05c64ca41683ed2c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004090"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321951"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
@@ -93,6 +93,7 @@ ms.locfileid: "36004090"
 |classroomForceAutomaticallyJoinClasses|Boolean|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备 (MacOS 10.15 或更高版本) 上的 MacOS 设备上启动的工作。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -203,11 +204,10 @@ ms.locfileid: "36004090"
   "classroomAppForceUnpromptedScreenObservation": true,
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
-  "classroomForceUnpromptedAppAndDeviceLock": true
+  "classroomForceUnpromptedAppAndDeviceLock": true,
+  "iCloudBlockActivityContinuation": true
 }
 ```
-
-
 
 
 

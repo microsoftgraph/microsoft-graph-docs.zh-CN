@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6fff27abba5bce945b1f8abd74e94e2060114b17
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 18149f0493f1591c59e5bef98dc9a36f148a600c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000016"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319207"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36000016"
 |error|4|错误。|
 |inGracePeriod|254|Device 不合规, 但仍有权访问公司资源|
 |configManager|255|由配置管理器管理|
-
-
 
 
 

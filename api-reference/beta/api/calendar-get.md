@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c6aba01a6f3b22c8326c05ab40b354b51a6a86a
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: 7f7dcafe4ce76ec8ed9b429b9de255d12e992e41
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317919"
 ---
 # <a name="get-calendar"></a>获取日历
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/me/calendar
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

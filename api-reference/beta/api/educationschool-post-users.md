@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 450a3e3fc4b3b74414acbcb9a35677f6d1f7554c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: de76da4748c821339935ab2f38244dc9eed51be6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955151"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323871"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>向 educationSchool 添加 educationUser
 
@@ -72,7 +72,7 @@ Content-length: 56
   "@odata.id":"https://graph.microsoft.com/beta/education/users/14008"
 }
 ```
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationuser-from-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

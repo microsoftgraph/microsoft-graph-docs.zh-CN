@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f714b89ddd3f26abad849fabe90ebb534cd6b5af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24774167df043326193d7b5cf50ce7eceec0757f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996166"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325932"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reminderview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reminderview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

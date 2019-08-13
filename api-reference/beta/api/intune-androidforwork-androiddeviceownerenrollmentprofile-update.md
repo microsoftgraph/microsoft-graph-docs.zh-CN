@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bd54e607633344faa0331a6cf135063e894f454
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54dff37accee2befa16ab5787dbd199b3f165813
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952945"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322875"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>更新 androidDeviceOwnerEnrollmentProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952945"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|scopeTags|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -77,7 +77,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 613
+Content-length: 627
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -94,8 +94,8 @@ Content-length: 613
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -105,7 +105,7 @@ Content-length: 613
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 785
+Content-Length: 799
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -125,11 +125,12 @@ Content-Length: 785
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
+
 
 
 

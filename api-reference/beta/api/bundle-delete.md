@@ -6,12 +6,12 @@ description: 删除 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5854daeabf14e69ec859fe04563e0ee68d76ed22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b00153cecae8c3f84c1f74d83a977aed8b047cb0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944817"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318010"
 ---
 # <a name="delete-bundle"></a>删除捆绑包
 
@@ -71,7 +71,7 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

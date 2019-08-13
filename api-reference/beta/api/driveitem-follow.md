@@ -5,12 +5,12 @@ title: 关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9ae595420a59f36596027cc1438df7e931350333
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dfd334dfa2356c33138f566e8d591af410b832d0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957155"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324396"
 ---
 # <a name="follow-drive-item"></a>关注驱动器项
 
@@ -65,7 +65,7 @@ POST /me/drive/items/{item-id}/follow
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

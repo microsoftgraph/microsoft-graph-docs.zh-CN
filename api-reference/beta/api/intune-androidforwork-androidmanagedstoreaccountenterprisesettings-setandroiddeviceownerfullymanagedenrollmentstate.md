@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4595f39a5af55dc327c73491db6be22bc0381591
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8ee1ba3fe7b00afb714067deec75f8d20a631e4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952588"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322735"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>setAndroidDeviceOwnerFullyManagedEnrollmentState 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952588"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,7 @@ Content-length: 23
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

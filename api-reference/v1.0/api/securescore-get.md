@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 516134ef6e6f5159e1c03735bd34120afb21dd26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a644aab1b80ac866ce3b67a372a16405b032835
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320041"
 ---
 # <a name="get-securescore"></a>获取 secureScore
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/security/secureScores/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securescore-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

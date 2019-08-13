@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a30c247b92e071ceaec4134cbc1b5df9fd304e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be9e3f5e5cf40465b4f7bc4614ca9a2074eaaa58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943622"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320005"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chats-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chats-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 560c81cc3bbf427efcdc5520c68c042411b3946c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9cc54b6491661169d264a01a1a0a4f0dbcb4369
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963568"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312136"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>列出 androidForWorkGeneralDeviceConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963568"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -141,6 +141,7 @@ Content-Length: 3288
   ]
 }
 ```
+
 
 
 
