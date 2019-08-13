@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82b80ce3803e4b4fa935ca3209b3c233478382f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aba3c4a2f1120b74d4182339fb3778c75f2ff7d3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967810"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342066"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction 资源类型
 
@@ -63,8 +63,6 @@ ms.locfileid: "35967810"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

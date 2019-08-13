@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c92e2f4abd636abd39d67448fa341587847cc58c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1287cef3aa01957eb63119c61a171dbd97f10494
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998721"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326686"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition 资源类型
 
@@ -78,8 +78,6 @@ ms.locfileid: "35998721"
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99737728ba6cf8881dfdce8ad96c3565e28b28aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fdf7096b59fe908dbb310fd27608b59f6a09b22
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950824"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340742"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>创建 androidWorkProfileGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950824"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -261,6 +261,7 @@ Content-Length: 2987
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
+
 
 
 

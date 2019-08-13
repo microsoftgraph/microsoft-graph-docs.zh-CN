@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba4f39fa77028d77eb5931a70adcfaa4f2cbcfef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1837e46a1b431f0a8c13f26805bfc8f4cb9806f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951132"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340910"
 ---
 # <a name="get-androidwificonfiguration"></a>获取 androidWiFiConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951132"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -112,6 +112,7 @@ Content-Length: 1473
   }
 }
 ```
+
 
 
 

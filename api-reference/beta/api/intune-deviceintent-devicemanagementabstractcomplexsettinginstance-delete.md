@@ -4,12 +4,13 @@ description: 删除 deviceManagementAbstractComplexSettingInstance。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5ae02661f4aaeedec3c676da1a51d9fdc39e309
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1dae06786beacf07bfb3706e38c87d669e25e459
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961019"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343970"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettinginstance"></a>删除 deviceManagementAbstractComplexSettingInstance
 
@@ -26,7 +27,7 @@ ms.locfileid: "34961019"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

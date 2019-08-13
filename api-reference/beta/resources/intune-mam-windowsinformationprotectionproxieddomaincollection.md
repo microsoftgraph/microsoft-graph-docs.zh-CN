@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4988cf35315a043f60b12a1ea57e156a746522a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cccaf79205dfd0114a3d26dae1fd547d07811d42
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998259"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342101"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection 资源类型
 
@@ -49,8 +49,6 @@ Windows 信息保护代理域集合
   ]
 }
 ```
-
-
 
 
 

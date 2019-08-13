@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72bef95f0b7ad5e88fcdac9687434d90df58523c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3634961e8aa03076243416ae91009f9a0b39247c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993576"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347477"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>verifyWindowsEnrollmentAutoDiscovery 函数
 
@@ -75,6 +75,9 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
+
 
 
 

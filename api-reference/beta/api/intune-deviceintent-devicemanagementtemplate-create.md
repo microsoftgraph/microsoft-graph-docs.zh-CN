@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementTemplate 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0298ba9d99bd00db8e10e7b5b2afb79a0c7e3ec
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8df263e974037e747eb65169f6d305cef2b7b3b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959766"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343130"
 ---
 # <a name="create-devicemanagementtemplate"></a>创建 deviceManagementTemplate
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959766"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -105,6 +106,7 @@ Content-Length: 383
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

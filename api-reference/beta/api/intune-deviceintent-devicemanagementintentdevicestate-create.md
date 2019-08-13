@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementIntentDeviceState 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f70b2f77808fe4c2b4f15b54198d77d39a484486
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 648247506fe80db7eb6b8ee062ed54f1c94b00cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960291"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343648"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>创建 deviceManagementIntentDeviceState
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960291"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
+
 
 
 

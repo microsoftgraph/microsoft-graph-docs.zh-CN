@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c6e800ab7a42d38b397cfcfd4426e59f4b9ae80b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa441b6c519d9d7e78e39b1ef97731190df8580e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984062"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342861"
 ---
 # <a name="list-rules"></a>列出规则
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messagerules-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

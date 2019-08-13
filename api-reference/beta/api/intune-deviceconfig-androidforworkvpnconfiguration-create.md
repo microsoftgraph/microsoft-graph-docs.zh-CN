@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c1cffc90c6b4e6c75a2cd8c46265f742a3d6c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3db63bd40ba5da854dfe906d56de10f872910ef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963120"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341296"
 ---
 # <a name="create-androidforworkvpnconfiguration"></a>创建 androidForWorkVpnConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963120"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -218,6 +218,7 @@ Content-Length: 1930
   "authenticationMethod": "usernameAndPassword"
 }
 ```
+
 
 
 

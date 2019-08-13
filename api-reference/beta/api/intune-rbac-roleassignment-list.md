@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a29a8b5d4234d37811d6c893b2d9f94f7ae8ea8a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd6beda72df1ed248a029b74cfa4d44797a092bf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980000"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351320"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980000"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 403
   ]
 }
 ```
+
 
 
 

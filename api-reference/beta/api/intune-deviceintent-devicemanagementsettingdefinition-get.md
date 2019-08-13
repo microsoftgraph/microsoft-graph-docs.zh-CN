@@ -4,12 +4,13 @@ description: 读取 deviceManagementSettingDefinition 对象的属性和关系�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e41801e3aa8f7eb01a9ebc6e39d67c5242e8b90d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7ad8396bf8822bf438a1bd9219c2f18f569f4ceb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959941"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343249"
 ---
 # <a name="get-devicemanagementsettingdefinition"></a>获取 deviceManagementSettingDefinition
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959941"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 848
   }
 }
 ```
+
 
 
 

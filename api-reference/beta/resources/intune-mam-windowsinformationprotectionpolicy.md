@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3944e37b77763562140a98206e5e47825d104d20
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c65c2124aec90c2351da5a7ced8a9ba40b826da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967852"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342115"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>windowsInformationProtectionPolicy 资源类型
 
@@ -236,8 +236,6 @@ ms.locfileid: "35967852"
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
-
-
 
 
 

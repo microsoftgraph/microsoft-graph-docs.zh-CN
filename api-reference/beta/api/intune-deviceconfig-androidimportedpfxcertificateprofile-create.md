@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abf5768362e89d7eb4e11b1884f1968c5dabf3f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cac6dbcdf9e3c60f043601764a1ccdca2a96e8ea
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962909"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341135"
 ---
 # <a name="create-androidimportedpfxcertificateprofile"></a>创建 androidImportedPFXCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962909"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -186,6 +186,7 @@ Content-Length: 1664
   "intendedPurpose": "smimeEncryption"
 }
 ```
+
 
 
 

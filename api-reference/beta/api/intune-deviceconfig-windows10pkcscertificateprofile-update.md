@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e4a73d97379bf4c46183f815c4f715d7b16d6ee1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab93add58c7a7ca876a00200cd35dbe45305f45c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975303"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344982"
 ---
 # <a name="update-windows10pkcscertificateprofile"></a>更新 windows10PkcsCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975303"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -199,6 +199,7 @@ Content-Length: 1956
   ]
 }
 ```
+
 
 
 

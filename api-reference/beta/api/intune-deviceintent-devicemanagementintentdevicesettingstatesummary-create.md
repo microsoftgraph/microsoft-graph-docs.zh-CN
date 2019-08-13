@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementIntentDeviceSettingStateSummary 对象
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91ca4f510a70af4fff6790450a209ebec462726c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ed53831d0f8cb04a440f46a721d62ff8883cfba6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960326"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343662"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>创建 deviceManagementIntentDeviceSettingStateSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960326"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +105,7 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: 创建新的 securityBaselineCategoryStateSummary 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edff9cdb1cf0a31fc7273c4c736195bf084a5aa1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 42c21f7584e0f747d2f18203cb10ac6577ee984d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959612"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343060"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>创建 securityBaselineCategoryStateSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959612"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +105,7 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

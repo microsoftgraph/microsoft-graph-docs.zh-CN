@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementIntentSettingCategory 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22359956fa77cddef07701731493e34c4f0a9a6b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 782361aed36923d8f49af25daa12b8f05ba24a18
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960186"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343515"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>创建 deviceManagementIntentSettingCategory
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960186"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +87,7 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

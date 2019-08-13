@@ -4,12 +4,13 @@ description: 删除 deviceManagementStringSettingInstance。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5df1677eb7b20adec8e96f894e1e5a907b403c6f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5ca951579712c0f22e3afd6dd03d901040d87a98
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959871"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343179"
 ---
 # <a name="delete-devicemanagementstringsettinginstance"></a>删除 deviceManagementStringSettingInstance
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959871"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

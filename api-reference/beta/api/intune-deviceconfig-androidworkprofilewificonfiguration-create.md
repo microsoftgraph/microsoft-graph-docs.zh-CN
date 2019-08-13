@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15ea361594a286ed6af89f6085590627c1dff3fc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4f3f4a85687fed65c92148f62e57a7c1ad4ff8d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950327"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340532"
 ---
 # <a name="create-androidworkprofilewificonfiguration"></a>创建 androidWorkProfileWiFiConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950327"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -168,6 +168,7 @@ Content-Length: 1391
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
+
 
 
 

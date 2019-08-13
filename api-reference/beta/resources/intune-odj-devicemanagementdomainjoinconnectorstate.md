@@ -4,12 +4,13 @@ description: ODJ 请求状态。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a584a77c0a921b9d5864270c5a42a9991123eb8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f664a6b57d92f5a8cd2d586f8bc2747ffa6db71c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001914"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342003"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>deviceManagementDomainJoinConnectorState 枚举类型
 
@@ -25,8 +26,6 @@ ODJ 请求状态。
 |工作|0|连接器积极 ping Intune。|
 |error|1|来自最近一小时内的连接器没有任何信号。|
 |不再|双面|来自过去5天内的连接器没有任何信号。|
-
-
 
 
 

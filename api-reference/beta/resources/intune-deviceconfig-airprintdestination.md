@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25d782501033a81ea6324028fadfe75a701b0a07
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8e359e5df1ae55fdc50c42d98c2c5f44f8ea7dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971570"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334939"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination 资源类型
 
@@ -47,8 +47,6 @@ ms.locfileid: "35971570"
   "forceTls": true
 }
 ```
-
-
 
 
 

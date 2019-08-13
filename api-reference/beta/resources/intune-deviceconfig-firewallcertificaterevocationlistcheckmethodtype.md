@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ef7f3a636f86139aa5107d1213e6cfe3d173dc51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 832df7bfacbbba9643f4e1181f454bc60038ffb0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001360"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338152"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 枚举类型
 
@@ -27,8 +27,6 @@ FirewallCertificateRevocationListCheckMethod 的可能值
 |无|1|不检查证书吊销列表|
 |应试|双面|仅当支票确认证书时, 才尝试 CRL 检查并允许证书|
 |无须|第三章|在允许证书之前, 需要进行成功的 CRL 检查|
-
-
 
 
 

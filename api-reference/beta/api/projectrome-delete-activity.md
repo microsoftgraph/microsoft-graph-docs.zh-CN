@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: bfe143e4f3532b9b85ebea587cb8858081d1182f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2e5b23ca9786af7e08a4cf0281ec519274b09a7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35988508"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342213"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
@@ -71,7 +71,7 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-activity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-activity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

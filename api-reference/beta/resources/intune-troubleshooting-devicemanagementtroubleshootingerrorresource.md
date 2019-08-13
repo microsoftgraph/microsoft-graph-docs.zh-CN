@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6454bad98938bc73d4cde8d48229f6146d07c0bb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eaf3cc39efb52bb7f603c636a69d13e3d025ce5f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010303"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347736"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>deviceManagementTroubleshootingErrorResource 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36010303"
   "link": "String"
 }
 ```
-
-
 
 
 

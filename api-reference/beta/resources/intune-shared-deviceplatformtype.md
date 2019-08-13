@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 084583d3886bb73115815c1f3fcce67739b4ed29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a8c2f16f4adf4aa8dd9971f970b4af45fb320f4a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967460"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341989"
 ---
 # <a name="deviceplatformtype-enum-type"></a>devicePlatformType 枚举类型
 
@@ -32,8 +32,6 @@ ms.locfileid: "35967460"
 |windows10AndLater|型|Windows 10 及更高版本。|
 |androidWorkProfile|步|Android 工作配置文件。|
 |unknown|utf-8|陌生.|
-
-
 
 
 

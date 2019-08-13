@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2e94dc37ab819cb8dde2453b83ff2537592963e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20b50f04530c20459944285294c67bd454c785ea
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005133"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342143"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -39,8 +39,6 @@ ms.locfileid: "36005133"
 |commitFilePending|301|尚未记录|
 |commitFileFailed|302|尚未记录|
 |commitFileTimedOut|303|尚未记录|
-
-
 
 
 

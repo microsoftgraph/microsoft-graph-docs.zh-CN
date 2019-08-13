@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b33e7ab511effeab4e8d8e7576b704b092917199
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 000385e1b2faad98bee217d2709f5516ea40b6b6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878599"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342640"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>将 onPremisesAgent 分配给 onPremisesAgentGroup
 
@@ -65,7 +65,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$r
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents/1234b780-965f-4149-85c5-a8c73e58b67d/agentGroups/$ref
 ```
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onpremisesagentgroup-from-onpremisesagent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

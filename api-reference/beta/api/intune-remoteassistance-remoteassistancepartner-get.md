@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c6d322741b97e1eede5ee11d9f79f1bba2148d64
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4ccecbc4e1b9f9218100e02bd42f39c41f796ef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995585"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347645"
 ---
 # <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995585"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -79,6 +79,7 @@ Content-Length: 346
   }
 }
 ```
+
 
 
 
