@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa07ae5ae5da66539da53a02e7d985be471228a7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 892daf67977086b647d74567660d3b4c3d4eec53
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000856"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368749"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>mediaContentRatingFrance 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36000856"
   "tvRating": "String"
 }
 ```
-
-
 
 
 

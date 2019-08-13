@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1efe63f87057952444e17b9c5684cd3ecc20d4c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bcae979d81034155b715a634476b8dc4aa7a9c4a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999799"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369953"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview 资源类型
 
@@ -59,8 +59,6 @@ ms.locfileid: "35999799"
   "criticalFailuresDeviceCount": 1024
 }
 ```
-
-
 
 
 

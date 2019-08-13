@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 30e130a0d482e7334d9a8fb1fc01601ad0094822
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aaf6b8c36ea5d0de5628043f87db89ecc62c6490
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968741"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369617"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35968741"
 |noRestriction|0|此选项将删除对解锁 S 模式的所有限制-默认|
 |数据|1|此选项将阻止用户从 S 模式解锁设备|
 |解锁|双面|此选项将从 S 模式解锁设备|
-
-
 
 
 

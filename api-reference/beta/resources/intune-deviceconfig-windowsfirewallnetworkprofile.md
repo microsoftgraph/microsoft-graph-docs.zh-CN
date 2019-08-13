@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6346225ecc9a6be0c7baccabe39576e3d35bd2ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2be664710caa80bebce04a00089bdb21148b474
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011230"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371143"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile 资源类型
 
@@ -85,8 +85,6 @@ Windows 防火墙配置文件策略。
   "policyRulesFromGroupPolicyNotMerged": true
 }
 ```
-
-
 
 
 

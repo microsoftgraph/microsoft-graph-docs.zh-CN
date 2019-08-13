@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e72da7fce320b1da546c9f8d7f5113cbad13dd5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f16b905161a88b8e07f8f2d3b3f343ac2d693bef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969217"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369694"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 枚举类型
 
@@ -33,8 +33,6 @@ VPN 连接类型。
 |pptp|步|PPTP.|
 |citrix|utf-8|Citrix.|
 |paloAltoGlobalProtect|第|Palo Alto 网络 GlobalProtect。|
-
-
 
 
 
