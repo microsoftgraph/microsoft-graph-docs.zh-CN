@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdbcf69751cf341c78c654580a709b0873213289
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ccc8cd1c1753c844ac5a71f9248f8189dad1e0b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005658"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367097"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode 资源类型
 
@@ -49,8 +49,6 @@ ms.locfileid: "36005658"
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ba404f8a0c738891a9791c3f0875ecc2d4d4d99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9db4438ca5b882436fb6454ebb4b80d548a8ef77
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994276"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353167"
 ---
 # <a name="update-notificationmessagetemplate"></a>更新 notificationMessageTemplate
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994276"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -102,6 +102,7 @@ Content-Length: 372
   ]
 }
 ```
+
 
 
 

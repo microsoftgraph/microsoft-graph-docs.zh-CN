@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c432953e790dfd2e91291d3e5d6a1259a6b403f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4fabb656bca74df874ebb9899c1b136762ccb998
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949396"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340000"
 ---
 # <a name="get-deviceconfiguration"></a>获取 deviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949396"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -107,6 +107,7 @@ Content-Length: 1277
   }
 }
 ```
+
 
 
 

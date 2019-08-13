@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4003278bfcd7919ca081b5eaebc2c7627fd8c1b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50e1e1fe3124f975b241b271e1d0c001c42d3b71
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004237"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357059"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 
@@ -58,13 +58,13 @@ ms.locfileid: "36004237"
 |appsVisibilityList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|可见性列表中的应用列表（可见/可启动应用列表或隐藏/不可启动应用列表，由 AppsVisibilityListType 控制）（iOS 9.3 及更高版本）。 该集合最多可包含 10000 个元素。|
 |appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppsVisibilityList 中的列表类型。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
 |appStoreBlockAutomaticDownloads|Boolean|指示设备处于监督模式时是否阻止自动下载在其他设备上购买的应用（iOS 9.0 及更高版本）。|
-|appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。|
+|appStoreBlocked|Boolean|指示是否阻止用户使用 App Store。 需要受监督设备的 iOS 13 及更高版本。|
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
 |appStoreBlockUIAppInstallation|Boolean|指示是否阻止 App Store 应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
 |appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
 |autoFillForceAuthentication|Boolean|指示在 Safari 中的 autofilling 密码和信用卡信息之前是否强制进行用户身份验证, 以及受监督的设备上的其他应用。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
-|cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
+|cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。 需要受监督设备的 iOS 13 及更高版本。|
 |cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|指示漫游时是否阻止全局背景提取。|
 |cellularBlockPerAppDataModification|Boolean|指示设备处于监督模式时是否允许更改手机应用数据使用设置。|
@@ -91,23 +91,23 @@ ms.locfileid: "36004237"
 |enterpriseAppBlockTrust|Boolean|指示是否阻止用户信任企业应用。|
 |enterpriseAppBlockTrustModification|Boolean|指示是否阻止用户修改企业应用信任设置。|
 |esimBlockModification|Boolean|指示是否允许在受监督的设备的 eSIM 卡上添加或删除手机网络计划。|
-|faceTimeBlocked|Boolean|指示是否阻止用户使用 FaceTime。|
-|findMyFriendsBlocked|Boolean|指示设备处于监督模式时是否阻止查找我的好友。|
-|gamingBlockGameCenterFriends|Boolean|指示是否阻止用户在 Game Center 中拥有好友。|
-|gamingBlockMultiplayer|Boolean|指示是否阻止用户使用多人游戏。|
+|faceTimeBlocked|Boolean|指示是否阻止用户使用 FaceTime。 需要受监督设备的 iOS 13 及更高版本。|
+|findMyFriendsBlocked|Boolean|指示设备处于监督模式时是否阻止更改以查找我的好友。|
+|gamingBlockGameCenterFriends|Boolean|指示是否阻止用户在 Game Center 中拥有好友。 需要受监督设备的 iOS 13 及更高版本。|
+|gamingBlockMultiplayer|Boolean|指示是否阻止用户使用多人游戏。 需要受监督设备的 iOS 13 及更高版本。|
 |gameCenterBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用 Game Center。|
 |hostPairingBlocked|Boolean|指示 iOS 设备处于监督模式时是否允许主机配对控制 iOS 设备可以与之配对的设备。|
 |iBooksStoreBlocked|Boolean|指示设备处于监督模式时是否阻止用户使用 iBooks Store。|
 |iBooksStoreBlockErotica|Boolean|指示是否阻止用户从已标记为情色的 iBookstore 下载媒体。|
 |iCloudBlockActivityContinuation|Boolean|指示是否阻止用户将其在 iOS 设备上启动的工作继续到另一个 iOS 或 macOS 设备。|
-|iCloudBlockBackup|Boolean|指示是否阻止 iCloud 备份。|
-|iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
+|iCloudBlockBackup|Boolean|指示是否阻止 iCloud 备份。 需要受监督设备的 iOS 13 及更高版本。|
+|iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。需要受监督设备的 iOS 13 及更高版本。|
 |iCloudBlockManagedAppsSync|Boolean|指示是否阻止托管应用云同步。|
 |iCloudBlockPhotoLibrary|Boolean|指示是否阻止 iCloud 照片库。|
 |iCloudBlockPhotoStreamSync|Boolean|指示是否阻止 iCloud 照片流同步。|
 |iCloudBlockSharedPhotoStream|Boolean|指示是否阻止共享照片流。|
 |iCloudRequireEncryptedBackup|Boolean|指示是否要求加密备份到 iCloud 的数据。|
-|iTunesBlockExplicitContent|Boolean|指示是否阻止用户访问 iTunes 和 App Store 中的显式内容。|
+|iTunesBlockExplicitContent|Boolean|指示是否阻止用户访问 iTunes 和 App Store 中的显式内容。 需要受监督设备的 iOS 13 及更高版本。|
 |iTunesBlockMusicService|Boolean|指示设备处于监督模式时是否阻止音乐服务并将音乐应用恢复为经典模式（iOS 9.3 及更高版本和 MacOS 10.12 及更高版本）。|
 |iTunesBlockRadio|Boolean|指示设备处于监督模式时是否阻止用户使用 iTunes Radio（iOS 9.3 及更高版本）。|
 |keyboardBlockAutoCorrect|Boolean|指示设备处于监督模式时是否阻止键盘自动更正（iOS 8.1.3 及更高版本）。|
@@ -172,12 +172,12 @@ ms.locfileid: "36004237"
 |passcodeRequired|Boolean|指示是否需要密码。|
 |podcastsBlocked|Boolean|指示在受监督的设备上是否阻止用户使用播客（iOS 8.0 及更高版本）。|
 |proximityBlockSetupToNewDevice|Boolean|指示是否启用提示以在受监督的设备上安装附近设备。|
-|safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
+|safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。 需要受监督设备的 iOS 13 及更高版本。|
 |safariBlockJavaScript|Boolean|指示在 Safari 中是否阻止 JavaScript。|
 |safariBlockPopups|Boolean|指示在 Safari 中是否阻止弹出窗口。|
-|safariBlocked|Boolean|指示是否阻止用户使用 Safari。|
+|safariBlocked|Boolean|指示是否阻止用户使用 Safari。 需要受监督设备的 iOS 13 及更高版本。|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Safari 的 Cookie 设置。 可取值为：`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways`。|
-|safariManagedDomains|String collection|与此处列出的模式匹配的 URL 将被视为托管。|
+|safariManagedDomains|String 集合|与此处列出的模式匹配的 URL 将被视为托管。|
 |safariPasswordAutoFillDomains|String 集合|用户只能通过匹配此处列出的模式的 URL 将密码保存在 Safari 中。 适用于处于监督模式下的设备（iOS 9.3 及更高版本）。|
 |safariRequireFraudWarning|Boolean|指示在 Safari 中是否需要诈骗警告。|
 |screenCaptureBlocked|Boolean|指示是否阻止用户进行屏幕截图。|
@@ -192,7 +192,7 @@ ms.locfileid: "36004237"
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。|
 |classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过教室注册的学生是否会在尝试离开该课程 (iOS 11.3 及更高版本) 时向教师请求权限。|
-|keychainBlockCloudSync|Boolean|指示是否阻止 iCloud 密钥链同步。|
+|keychainBlockCloudSync|Boolean|指示是否阻止 iCloud 密钥链同步。 需要受监督设备的 iOS 13 及更高版本。|
 |pkiBlockOTAUpdates|Boolean|指示是否阻止无线 PKI 更新。 将此限制设置为 false 不会禁用 CRL 和 OCSP 检查 (iOS 7.0 及更高版本)。|
 |privacyForceLimitAdTracking|Boolean|指示广告跟踪是否受限制。(iOS 7.0 及更高版本)。|
 |enterpriseBookBlockBackup|Boolean|指示是否阻止企业书籍备份。|
@@ -213,6 +213,11 @@ ms.locfileid: "36004237"
 |contactsAllowUnmanagedToManagedRead|Boolean|指示非托管应用是否可以从托管联系人帐户读取 (iOS 12.0 或更高版本)。|
 |cellularBlockPersonalHotspotModification|Boolean|指示是否阻止用户修改个人热点设置 (iOS 12.2 或更高版本)。|
 |siriDisableServerLogging|Boolean|指示是否禁用服务器端 Siri 日志记录 (iOS 12.2 或更高版本)。|
+|continuousPathKeyboardBlocked|Boolean|指示设备受到监督时是否阻止连续路径键盘 (iOS 13 或更高版本)。|
+|findMyDeviceInFindMyAppBlocked|Boolean|指示设备受到监督时是否阻止查找我的设备 (iOS 13 或更高版本)。|
+|findMyFriendsInFindMyAppBlocked|Boolean|指示设备受到监督时是否阻止查找我的好友 (iOS 13 或更高版本)。|
+|wiFiBlockPowerModification|Boolean|指示设备受到监督时是否阻止 WiFi 电源修改 (iOS 13 或更高版本)。|
+|iTunesBlocked|Boolean|指示是否阻止 iTunes 应用。 需要受监督设备的 iOS 13 及更高版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -514,11 +519,14 @@ ms.locfileid: "36004237"
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true
+  "siriDisableServerLogging": true,
+  "continuousPathKeyboardBlocked": true,
+  "findMyDeviceInFindMyAppBlocked": true,
+  "findMyFriendsInFindMyAppBlocked": true,
+  "wiFiBlockPowerModification": true,
+  "iTunesBlocked": true
 }
 ```
-
-
 
 
 

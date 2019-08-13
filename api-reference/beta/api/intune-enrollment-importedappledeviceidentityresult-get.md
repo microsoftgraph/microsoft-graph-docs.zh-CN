@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cb6d23dafeb0ef9df018bc726b5d5586bd6fed1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fdca55dd403fc9c7e6951e57e17ce7df5a1c3d40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985047"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356478"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>获取 importedAppleDeviceIdentityResult
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985047"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 675
   }
 }
 ```
+
 
 
 

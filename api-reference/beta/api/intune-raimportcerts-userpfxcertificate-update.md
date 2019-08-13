@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23e6b3e20add16caff4c8d756c963e091132c8ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5873dca7a93f7615ab82cf75ce25e7482fdf6e3b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980203"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351579"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
 
@@ -25,9 +25,9 @@ ms.locfileid: "35980203"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
+|委派（工作或学校帐户）|* * TODO: 确定作用域 * *|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|* * TODO: 确定 AppOnly 作用域 * *|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -118,6 +118,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

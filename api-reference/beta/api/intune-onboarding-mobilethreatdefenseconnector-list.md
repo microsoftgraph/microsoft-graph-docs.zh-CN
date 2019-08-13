@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4d1333fe5fadfd1ead02b8ab8d91c0c975b658b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df4ed11dacc3dfd026f73e29851d52563657ca96
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980336"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352544"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>列出 mobileThreatDefenseConnectors
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980336"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -87,6 +87,7 @@ Content-Length: 764
   ]
 }
 ```
+
 
 
 

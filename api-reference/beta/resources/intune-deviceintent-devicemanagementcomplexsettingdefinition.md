@@ -4,12 +4,13 @@ description: 表示复杂设置的定义的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04a4b4b96448073cd4b78343b4456fc6cd148da8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a7f010b442ba30f3eba728009b15a0a147fa0929
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964148"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365361"
 ---
 # <a name="devicemanagementcomplexsettingdefinition-resource-type"></a>deviceManagementComplexSettingDefinition 资源类型
 
@@ -89,8 +90,6 @@ ms.locfileid: "34964148"
   ]
 }
 ```
-
-
 
 
 

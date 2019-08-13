@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 在列表中创建新的 listItem。
 doc_type: apiPageType
-ms.openlocfilehash: 0abbc953c84da91a83b23c95349468b890153674
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 106d559aa2942cadc3fb23405ad8d6b1eb2fb96c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023158"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370655"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -64,7 +64,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
