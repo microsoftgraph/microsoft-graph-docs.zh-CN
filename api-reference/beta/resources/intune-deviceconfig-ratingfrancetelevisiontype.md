@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b03ca3547ccecf3f126b2865c8e409d4742fde5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 811b6e7b5f39af2421a40f567f93e15f47ca6cd3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969840"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368301"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35969840"
 |agesAbove12|第三章|对于不在12的儿童, 不建议使用-12 分类|
 |agesAbove16|4|对于16下的儿童, 不建议使用-16 分类|
 |agesAbove18|5|对于18岁以上的个人, 不建议使用-18 分类|
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c51d7b967d5aaf5a36bafa2db606434b03d8677b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 64aaafb0d200c3d7211e1325e2dbec814476f129
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893991"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376066"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getOffice365ActiveUserDetail('D7')
+    .getOffice365ActiveUserDetail("D7")
     .buildRequest()
     .get();
 

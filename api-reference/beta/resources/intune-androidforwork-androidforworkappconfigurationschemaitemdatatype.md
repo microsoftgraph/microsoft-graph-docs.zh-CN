@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cd3e3d00eb764cb2bc5c0d4b2d9483c90578c660
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edc854d1e347c15d406a527c047a5bc3f2f43438
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005644"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366257"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>androidForWorkAppConfigurationSchemaItemDataType 枚举类型
 
@@ -31,8 +31,6 @@ Android for Work 应用程序的自定义配置架构内的配置项目的数据
 |bundle|5|尚未记录|
 |bundleArray|型|尚未记录|
 |hidden|步|尚未记录|
-
-
 
 
 

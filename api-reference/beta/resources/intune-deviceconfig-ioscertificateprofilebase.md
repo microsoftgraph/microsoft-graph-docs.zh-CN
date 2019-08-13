@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1d27f0ee47533133903f953d193e9063c799bf8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 483965a17a76d995c631a4ff83427aa952336158
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001241"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357213"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>iosCertificateProfileBase 资源类型
 
@@ -109,8 +109,6 @@ iOS 证书配置文件基。
   "certificateValidityPeriodScale": "String"
 }
 ```
-
-
 
 
 

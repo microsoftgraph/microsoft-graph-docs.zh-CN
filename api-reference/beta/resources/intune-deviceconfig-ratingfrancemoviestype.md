@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 772931b56e692835e7a2b356543dff40a7f37b91
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1785e93581704adf591393e9f4322cfad5a4a13
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000765"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368315"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "36000765"
 |agesAbove12|第三章|12分类禁止将胶片屏蔽到12岁下面的未成年人|
 |agesAbove16|4|16分类禁止将胶片屏蔽到16下的未成年人|
 |agesAbove18|5|18分类禁止筛选到18岁以上的未成年人|
-
-
 
 
 

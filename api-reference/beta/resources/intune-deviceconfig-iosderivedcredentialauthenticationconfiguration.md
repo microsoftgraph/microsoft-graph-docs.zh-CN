@@ -4,12 +4,13 @@ description: iOS 派生的凭据配置文件。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 287fbca36cc1652d63fa7435d348011b144a711a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d28d7aa2d9452a17c28ca664174c95fb36727f24
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989453"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357143"
 ---
 # <a name="iosderivedcredentialauthenticationconfiguration-resource-type"></a>iosDerivedCredentialAuthenticationConfiguration 资源类型
 
@@ -102,8 +103,6 @@ iOS 派生的凭据配置文件。
   "version": 1024
 }
 ```
-
-
 
 
 

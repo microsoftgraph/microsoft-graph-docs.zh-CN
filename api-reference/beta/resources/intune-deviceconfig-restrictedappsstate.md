@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7e87684fe68ce89038e6566e772d15fe0c526ec9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a12fd23ba22031241d3f716591ce029189b61409
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000597"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368105"
 ---
 # <a name="restrictedappsstate-enum-type"></a>restrictedAppsState 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36000597"
 |:---|:---|:---|
 |prohibitedApps|0|禁止的应用|
 |notApprovedApps|1|未批准的应用程序|
-
-
 
 
 

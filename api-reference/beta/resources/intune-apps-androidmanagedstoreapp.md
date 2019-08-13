@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a56361aad140db9b988030038931b2364992542
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 95845844dd03da9e628b2d6d5d70024cd3ee7e03
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006120"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366131"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>androidManagedStoreApp 资源类型
 
@@ -113,8 +113,6 @@ ms.locfileid: "36006120"
   "supportsOemConfig": true
 }
 ```
-
-
 
 
 

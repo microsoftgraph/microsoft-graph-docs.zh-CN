@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b04fa071f35601058f2e9df1a594e88e599da03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 589273034e9cf8f62ca2bd8214a7d633dbe723e6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950110"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340322"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>更新 defaultDeviceCompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950110"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 401
   "version": 7
 }
 ```
+
 
 
 

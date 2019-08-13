@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a61c138cdea69471d10080ddf793553f91e35c77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2f6a8a083da1ef07d91b8203ecd26478ccb7fec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969868"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368385"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35969868"
 |agesAbove9|第三章|9 +、年龄9及更高版本|
 |agesAbove12|4|12 +, 年龄12岁及以上 |
 |agesAbove17|5|17 +、年龄17及更高版本|
-
-
 
 
 

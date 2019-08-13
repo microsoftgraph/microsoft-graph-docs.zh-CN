@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ac97e026cf2423009c1e20e90d4a6e8d2e983f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b42828d4cf8aec8d09922102b58d0aca9e795b17
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949858"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340210"
 ---
 # <a name="refreshdevicecompliancereportsummarization-action"></a>refreshDeviceComplianceReportSummarization 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949858"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

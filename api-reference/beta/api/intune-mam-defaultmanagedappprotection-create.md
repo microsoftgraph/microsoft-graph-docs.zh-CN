@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89cada7633a0b78fd9cca80d5a67818e41baa42b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ca646cddb06ad1c30cee62e423cbdbf3acbf49a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994934"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357325"
 ---
 # <a name="create-defaultmanagedappprotection"></a>创建 defaultManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994934"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -327,6 +327,7 @@ Content-Length: 3918
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
+
 
 
 

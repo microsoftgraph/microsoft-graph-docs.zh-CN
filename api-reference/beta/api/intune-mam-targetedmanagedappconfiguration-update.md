@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1cec240a289012a48a3928f1bf9440966e0f1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 09c5e161acd2ff9c94d1d73b68fbb8085b7750de
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994430"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353762"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>更新 targetedManagedAppConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994430"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -125,6 +125,7 @@ Content-Length: 622
   "isAssigned": true
 }
 ```
+
 
 
 

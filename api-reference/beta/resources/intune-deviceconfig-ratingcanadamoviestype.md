@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 34396fc9628bd2b77a8735fdce496d28cdea91c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1c030b3912a11f77368df537bf50b40549d7902
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969882"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368343"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35969882"
 |agesAbove14|4|14A 分类适用于14岁以上或更早的观众|
 |agesAbove18|5|18A 分类适用于18岁以上或更早的观众|
 |受限|型|R 分类限制为18年和更早|
-
-
 
 
 

@@ -4,12 +4,13 @@ description: MacOS FileVault 的恢复密钥类型
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 193bfc5769da2919f93df9beef38524a57bfece0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 1a72cc8ddb4e9ce28a65e3af006ebec097eda247
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002544"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365053"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>macOSFileVaultRecoveryKeyTypes 枚举类型
 
@@ -25,8 +26,6 @@ MacOS FileVault 的恢复密钥类型
 |notConfigured|0|设备默认值, 无意向。|
 |institutionalRecoveryKey|1|机构恢复密钥类似于 "主" 恢复密钥, 可用于解锁已丢失密码的任何设备。|
 |personalRecoveryKey|双面|个人恢复密钥是唯一的代码, 可用于解锁用户的设备, 即使设备的密码丢失也是如此。|
-
-
 
 
 

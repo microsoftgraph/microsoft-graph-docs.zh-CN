@@ -4,12 +4,13 @@ description: 根据给定的 RegEx 模式强制设置匹配的约束
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 23b2397911afb877f513019e289800823f57a3c9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d0f9a04583bfb9b28546e9057f0530f72558a0be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984476"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364633"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>deviceManagementSettingRegexConstraint 资源类型
 
@@ -43,8 +44,6 @@ ms.locfileid: "34984476"
   "regex": "String"
 }
 ```
-
-
 
 
 

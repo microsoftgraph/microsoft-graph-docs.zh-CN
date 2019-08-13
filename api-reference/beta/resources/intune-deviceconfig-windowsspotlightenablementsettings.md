@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ed79e7d8e22ad77102411f45dab2d815e56214a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 190da30a63b9bdea7fddeb9f0053b5bee5bdcdda
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000240"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369603"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000240"
 |notConfigured|0|未配置 "在锁屏上聚焦" 屏幕|
 |禁用|1|在锁屏屏幕上禁用 Windows 聚焦|
 |enabled|双面|在锁屏屏幕上启用 Windows 聚焦|
-
-
 
 
 
