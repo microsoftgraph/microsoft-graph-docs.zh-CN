@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a064c61a4f1818ee3402eaff2ca6398a7cd4b161
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ad8165e3a2f11f2effa5ec166c428fb00a2f659
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950257"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340434"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>列出 appleDeviceFeaturesConfigurationBases
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950257"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -114,6 +114,7 @@ Content-Length: 1646
   ]
 }
 ```
+
 
 
 

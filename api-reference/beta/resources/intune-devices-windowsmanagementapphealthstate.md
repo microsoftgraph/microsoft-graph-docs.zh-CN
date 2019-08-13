@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bcd116b4b5f5bc9748d16a202ea0dc2a4485299
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd514aaf99af15a70caac96f49c6dbcfddc49d84
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999372"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365207"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState 资源类型
 
@@ -61,8 +61,6 @@ Windows management 应用运行状况状态实体。
   "deviceOSVersion": "String"
 }
 ```
-
-
 
 
 

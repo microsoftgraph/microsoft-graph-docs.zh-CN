@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f7f06865e22263a0b8e082f68808806f8497624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e770a111ed7182660dc1d1b921a0f9a08920bf95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000541"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367937"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
 
@@ -25,8 +25,6 @@ SignInAssistantSettings 的值。
 |:---|:---|:---|
 |notConfigured|0|未配置-wlidsvc Start 将设置为 SERVICE_DEMAND_START。|
 |禁用|1|Disabled-wlidsvc Start 将设置为 SERVICE_DISABLED。|
-
-
 
 
 

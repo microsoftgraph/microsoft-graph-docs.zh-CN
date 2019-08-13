@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1120d433f4aa265fb83040cffb3342ce40ffe0c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9bbaa10487c67223a9ff1e96528c570d902766df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971744"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366243"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>androidForWorkEnrollmentTarget 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35971744"
 |各种|1|尚未记录|
 |特定|双面|尚未记录|
 |targetedAsEnrollmentRestrictions|第三章|尚未记录|
-
-
 
 
 

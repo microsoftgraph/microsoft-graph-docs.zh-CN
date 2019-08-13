@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aff88da4a6684b6887ecc8321d18a0f1e95e8134
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33d6f1307ac999a860cf50d1bca73ac6a994c77e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989250"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354581"
 ---
 # <a name="get-grouppolicypresentationvaluedecimal"></a>获取 groupPolicyPresentationValueDecimal
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989250"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 293
   }
 }
 ```
+
 
 
 

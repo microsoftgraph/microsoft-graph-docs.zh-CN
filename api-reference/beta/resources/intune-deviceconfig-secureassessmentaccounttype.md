@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f1f7e2b6b9cbc32ee41840d96b706322660fd2b2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa4867324541f12113d776e895132b663e0a208b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000555"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368063"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType 枚举类型
 
@@ -27,8 +27,6 @@ Windows10SecureAssessment ConfigurationAccount 允许的帐户类型。
 |domainAccount|1|指示域帐户的格式为 domain\user 或 user@domain.com。|
 |localAccount|双面|指示本地帐户的用户名格式。|
 |localGuestAccount|第三章|以测试名称的格式指示本地来宾帐户。|
-
-
 
 
 

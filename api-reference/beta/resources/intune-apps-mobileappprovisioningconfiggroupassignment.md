@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3264cd2fc67174d5252529976835225559601d01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bef09ef9a51ed1cdcc3fb534fee962bb93c5bb3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012434"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367454"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>mobileAppProvisioningConfigGroupAssignment 资源类型
 
@@ -53,8 +53,6 @@ ms.locfileid: "36012434"
   "id": "String (identifier)"
 }
 ```
-
-
 
 
 

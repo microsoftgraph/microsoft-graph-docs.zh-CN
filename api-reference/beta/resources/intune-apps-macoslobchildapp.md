@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ca4d371966781378c9097769d9178de69d8f7d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b665391a4e7832feea72302db9ffb49c98f69964
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012588"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365914"
 ---
 # <a name="macoslobchildapp-resource-type"></a>macOSLobChildApp 资源类型
 
@@ -45,8 +45,6 @@ ms.locfileid: "36012588"
   "versionNumber": "String"
 }
 ```
-
-
 
 
 

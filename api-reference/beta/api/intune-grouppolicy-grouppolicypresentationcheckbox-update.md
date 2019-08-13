@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1581a59291006fd4ca693fa573c735f8097d7f56
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ad76e25204bfeefb5ba80087f2c85f2cb40b17f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989740"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357927"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>更新 groupPolicyPresentationCheckBox
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989740"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -93,6 +93,7 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
+
 
 
 

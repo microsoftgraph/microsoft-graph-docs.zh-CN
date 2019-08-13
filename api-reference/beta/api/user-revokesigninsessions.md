@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 824ec1b38b440fc36edafad7aeea8c2d39f9f772
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: 69ae5409e859430f7a3cd3e4b2522d82e5867ed7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245680"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362064"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 >[!NOTE]
->此 API 存在[已知问题](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code)。 它返回不同的 HTTP 响应代码。
+>此 API 存在[已知问题](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code)。 它返回不同的 HTTP 响应代码。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

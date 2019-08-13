@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 446e46cab832609073a80ee171decbb668014338
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3892ad8e00d95be00101ba4bc11c38e61e3a59c6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005406"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366719"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>macOsVppAppAssignmentSettings 资源类型
 
@@ -44,8 +44,6 @@ ms.locfileid: "36005406"
   "useDeviceLicensing": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67031c6bdd81052dbc41264104bc5a02566cfd51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a657b0f58bce4e63e27e90c243aa355f1536e534
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012553"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365921"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense 资源类型
 
@@ -59,8 +59,6 @@ MacOS Volume Purchase Program 许可证分配。 此类不支持创建、删除�
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

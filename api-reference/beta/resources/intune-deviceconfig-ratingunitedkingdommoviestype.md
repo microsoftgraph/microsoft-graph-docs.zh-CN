@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8cc13022e3c5ed0a15f715957878bdabdc1794c5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa3fab0afe5ac0ac13312f9d6f4037e62fd9aaaf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000688"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368175"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 
@@ -32,8 +32,6 @@ ms.locfileid: "36000688"
 |agesAbove12Cinema|型|12A, 电影发布适用于12年以上|
 |agesAbove15|步|15, 仅适用于15年和更早的|
 |成人|utf-8|仅适用于成年人|
-
-
 
 
 

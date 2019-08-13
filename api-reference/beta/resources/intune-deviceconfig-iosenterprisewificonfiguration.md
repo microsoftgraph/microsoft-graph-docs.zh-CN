@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5a4a78535166eec06bdd723358648c4c8ed32c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7dca3988355a65ea654f38354ff6a8e55f603634
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001234"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357073"
 ---
 # <a name="iosenterprisewificonfiguration-resource-type"></a>iosEnterpriseWiFiConfiguration 资源类型
 
@@ -143,8 +143,6 @@ ms.locfileid: "36001234"
   "passwordFormatString": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f46781198f477cf209212ea4f1259d975ca9a33
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1fa8b77c104b10213b8f5d4c1a771558db1bbf32
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010138"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356590"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary 资源类型
 
@@ -57,8 +57,6 @@ Windows 信息保护应用学习摘要实体。
   "deviceCount": 1024
 }
 ```
-
-
 
 
 
