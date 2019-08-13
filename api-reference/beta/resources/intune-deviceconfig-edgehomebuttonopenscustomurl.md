@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88310056a70231c0f536420b87fbecff05b73b42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c3fa2465200b216e3519b4eb15700406bd67f16
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001451"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332545"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
 
@@ -44,8 +44,6 @@ ms.locfileid: "36001451"
   "homeButtonCustomURL": "String"
 }
 ```
-
-
 
 
 

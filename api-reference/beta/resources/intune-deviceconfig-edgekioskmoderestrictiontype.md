@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bbd3d13ad39b6acda5fd67d69c8cb2de2f2e7c55
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff024dd8cd27872d0895068fba42e0018fdce011
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001465"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332510"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "36001465"
 |normalMode|双面|正常模式 (Microsoft Edge 的完整版本)。|
 |publicBrowsingSingleApp|第三章|单应用模式中的公共浏览。|
 |publicBrowsingMultiApp|4|多应用模式中的公共浏览 (inPrivate)。|
-
-
 
 
 

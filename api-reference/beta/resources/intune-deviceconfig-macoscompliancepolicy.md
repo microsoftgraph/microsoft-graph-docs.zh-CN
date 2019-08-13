@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d8621d90ca10e0452893f2c2f27b0ed0014eeb1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f094529892306cb6ffe8414063895b6932b631b6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970204"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325405"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy 资源类型
 
@@ -116,8 +116,6 @@ ms.locfileid: "35970204"
   "firewallEnableStealthMode": true
 }
 ```
-
-
 
 
 

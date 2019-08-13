@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 368d58c125511f235a82d50e54193f0dacc96757
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57b5ecf73548bf67bcb1fbfb75ed0730cb308424
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970848"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333413"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35970848"
 |允许|4|允许检测到的威胁。|
 |定制|5|允许用户确定要对检测到的威胁采取的操作。|
 |数据|型|阻止检测到的威胁。|
-
-
 
 
 

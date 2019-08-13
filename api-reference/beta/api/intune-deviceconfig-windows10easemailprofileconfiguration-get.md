@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3fec42098fce3b18ae2a97cdd1a759c500e6d7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78ff32cc634df47caab09fd6d153673f4da01dce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975527"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345293"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>获取 windows10EasEmailProfileConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975527"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 1807
   }
 }
 ```
+
 
 
 

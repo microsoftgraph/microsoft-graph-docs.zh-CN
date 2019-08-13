@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6da503b47f1f8530ca55faf2a9306453dcf6ea2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 454463d86313074d37ba75a99e1466e402fda983
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012364"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335758"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 
@@ -185,8 +185,6 @@ ms.locfileid: "36012364"
   "setupFilePath": "String"
 }
 ```
-
-
 
 
 

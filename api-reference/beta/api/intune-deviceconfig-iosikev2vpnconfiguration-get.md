@@ -4,12 +4,13 @@ description: 读取 iosikEv2VpnConfiguration 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 032e66f68595222ea1c3d2d6a8b9181d19acb164
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 42d6074ef47b8f494b602f4698289ab27a79dbce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715380"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339202"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>获取 iosikEv2VpnConfiguration
 
@@ -26,7 +27,7 @@ ms.locfileid: "35715380"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -202,6 +203,7 @@ Content-Length: 4679
   }
 }
 ```
+
 
 
 

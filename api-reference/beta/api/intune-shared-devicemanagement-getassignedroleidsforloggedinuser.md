@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0279a09b5a017a4a7ea16ba45efc2bb5f5c8a3fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c05c2dea6765a513e1551ecb86b20d435bd13848
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993618"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347560"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 函数
 
@@ -76,6 +76,9 @@ Content-Length: 263
   }
 }
 ```
+
+
+
 
 
 

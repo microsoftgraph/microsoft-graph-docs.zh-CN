@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2de760499dd5d8f32b62f3158e8db998040d6cb7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c39f1443bf1eea20f5379822ed40ed7a5ae8e283
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948633"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339608"
 ---
 # <a name="create-ioscustomconfiguration"></a>创建 iosCustomConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948633"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -162,6 +162,7 @@ Content-Length: 1316
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

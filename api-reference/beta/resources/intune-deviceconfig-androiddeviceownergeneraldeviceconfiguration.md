@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e38e7041e67bcaea470352d71bf50d0524a7ba6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74d6909a275c831190033fd2b6437a9c5fe215da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011860"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334820"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androidDeviceOwnerGeneralDeviceConfiguration 资源类型
 
@@ -59,12 +59,20 @@ ms.locfileid: "36011860"
 |dateTimeConfigurationBlocked|Boolean|指示是否阻止用户手动更改设备上的日期或时间|
 |factoryResetDeviceAdministratorEmails|String collection|在设备出厂重置之前, 将需要进行身份验证的 Google 帐户电子邮件的列表, 然后才能对其进行设置。|
 |factoryResetBlocked|Boolean|指示是否禁用了 "设置" 中的 "恢复出厂设置" 选项。|
+|kioskModeScreenSaverConfigurationEnabled|Boolean|是否启用屏幕保护程序模式或不启用展台模式。|
+|kioskModeScreenSaverImageUrl|String|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
+|kioskModeScreenSaverDisplayTimeInSeconds|Int32|设备将在展台模式下显示屏幕保护程序的秒数。 有效值为0至9999999|
+|kioskModeScreenSaverStartDelayInSeconds|Int32|在 Kiosk 模式下显示屏幕保护程序之前设备需要保持非活动状态的秒数。 有效值为1至9999999|
+|kioskModeScreenSaverDetectMediaDisabled|Boolean|如果音频/视频在展台模式下播放, 则设备屏幕是否应显示屏幕保护程序。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
 |kioskModeWallpaperUrl|String|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
 |kioskModeExitCode|String|退出代码, 以允许用户在设备处于展台模式时从展台模式中进行转义。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|设备处于展台模式时是否显示虚拟 "主页" 按钮。|
+|kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|指示虚拟 home 按钮是否为向上轻扫主页按钮或浮动主页按钮。 可取值为：`notConfigured`、`swipeUp`、`floating`。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|是否允许用户在展台模式下配置蓝牙设置。|
 |kioskModeWiFiConfigurationEnabled|Boolean|是否允许用户在展台模式下配置 Wi-fi 设置。|
+|kioskModeFlashlightConfigurationEnabled|Boolean|是否允许用户在展台模式下使用该模式。|
+|kioskModeMediaVolumeConfigurationEnabled|Boolean|是否允许用户在展台模式下更改媒体音量。|
 |microphoneForceMute|Boolean|指示是否阻止观众在设备上的麦克风。|
 |networkEscapeHatchAllowed|Boolean|指示在引导时设备是否允许连接到临时网络连接。|
 |nfcBlockOutgoingBeam|Boolean|指示是否阻止 NFC 传出横梁。|
@@ -172,6 +180,11 @@ ms.locfileid: "36011860"
     "String"
   ],
   "factoryResetBlocked": true,
+  "kioskModeScreenSaverConfigurationEnabled": true,
+  "kioskModeScreenSaverImageUrl": "String",
+  "kioskModeScreenSaverDisplayTimeInSeconds": 1024,
+  "kioskModeScreenSaverStartDelayInSeconds": 1024,
+  "kioskModeScreenSaverDetectMediaDisabled": true,
   "kioskModeApps": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -184,8 +197,11 @@ ms.locfileid: "36011860"
   "kioskModeWallpaperUrl": "String",
   "kioskModeExitCode": "String",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeVirtualHomeButtonType": "String",
   "kioskModeBluetoothConfigurationEnabled": true,
   "kioskModeWiFiConfigurationEnabled": true,
+  "kioskModeFlashlightConfigurationEnabled": true,
+  "kioskModeMediaVolumeConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -230,8 +246,6 @@ ms.locfileid: "36011860"
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
-
 
 
 

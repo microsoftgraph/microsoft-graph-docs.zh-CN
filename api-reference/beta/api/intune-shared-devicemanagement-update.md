@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43672e497640f64e8efb98edf8f752a0c2415d63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b227d89df59e4b8a7bd975c96befe2c06e8af445
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979762"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350851"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -167,6 +167,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

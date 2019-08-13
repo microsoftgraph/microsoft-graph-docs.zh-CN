@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15d71ce8f6dbb816a1a0d8740f67caecb9428410
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c40779c60a67739c2fc07e5696e3a55fd2cdaf9a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011810"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334631"
 ---
 # <a name="androidforworkeasemailprofilebase-resource-type"></a>androidForWorkEasEmailProfileBase 资源类型
 
@@ -112,8 +112,6 @@ ms.locfileid: "36011810"
   "usernameSource": "String"
 }
 ```
-
-
 
 
 

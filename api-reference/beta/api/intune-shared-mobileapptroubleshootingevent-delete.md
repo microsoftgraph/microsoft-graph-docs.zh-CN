@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b9ae2aafe9fe740d5156f2c756a03a9905aa995
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c0d07216dd1b38373826bc7f112a35c3a0ad0f8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993583"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347449"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>删除 mobileAppTroubleshootingEvent
 
@@ -66,6 +66,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

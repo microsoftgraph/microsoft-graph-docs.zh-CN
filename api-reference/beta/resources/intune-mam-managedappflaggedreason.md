@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8068a97b543f72acc0be818769b0e522c306437e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7aedda5d89d41ba936651c10d81ceeb33dfe603a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332124"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35967992"
 |rootedDevice|1|应用注册在根/解锁设备上运行。|
 |androidBootloaderUnlocked|双面|应用注册在解锁了启用程序的 Android 设备上运行。|
 |androidFactoryRomModified|第三章|应用注册在已修改出厂 ROM 的 Android 设备上运行。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: edbef72265921e5d8c390ffdeaf2dfbae041c912
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 146c1bc84476c76d7ad63f1dfbea4031d4a594a3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968755"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337732"
 ---
 # <a name="windowsphone81trustedrootcertificate-resource-type"></a>windowsPhone81TrustedRootCertificate 资源类型
 
@@ -106,8 +106,6 @@ Windows Phone 8.1 + 受信任的根证书配置文件
   "certFileName": "String"
 }
 ```
-
-
 
 
 

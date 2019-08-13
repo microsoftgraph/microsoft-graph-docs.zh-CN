@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38686cdbda5003beb0ffe9a020325742294605a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f9a660c19bcecf9f57edae7c67c319802b9aee39
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998546"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331278"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>groupPolicyPresentationValue 资源类型
 
@@ -58,8 +58,6 @@ ms.locfileid: "35998546"
   "id": "String (identifier)"
 }
 ```
-
-
 
 
 

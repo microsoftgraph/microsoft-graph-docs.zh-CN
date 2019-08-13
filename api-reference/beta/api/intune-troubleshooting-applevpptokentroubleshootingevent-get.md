@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c5897b48984b944a0372d3ddaf2ce33ee6bcfa8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5d6490bf33733683dbaf4459b6bdc8ff9c2b2fe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979510"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347393"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>获取 appleVppTokenTroubleshootingEvent
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979510"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委派（工作或学校帐户）|* * TODO: 确定作用域 * *|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|* * TODO: 确定 AppOnly 作用域 * *|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -100,6 +100,7 @@ Content-Length: 1003
   }
 }
 ```
+
 
 
 

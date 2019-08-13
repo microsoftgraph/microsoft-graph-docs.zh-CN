@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 32e8100a0d5f195c29a19e1e91da744504f5be82
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd601144e84014ff366bd77884d2828da2833b26
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969266"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337914"
 ---
 # <a name="windows10apptype-enum-type"></a>windows10AppType 枚举类型
 
@@ -25,8 +25,6 @@ Windows 10 应用程序类型。
 |:---|:---|:---|
 |desktop|0|Desktop.|
 |普遍|1|普遍.|
-
-
 
 
 

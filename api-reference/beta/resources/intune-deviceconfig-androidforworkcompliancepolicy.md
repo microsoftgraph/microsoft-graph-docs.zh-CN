@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed8553d8d7291c767598b9de3e588cb2be318d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d29b024bd593c235f7d7962c9da7593144bc0891
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011825"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334687"
 ---
 # <a name="androidforworkcompliancepolicy-resource-type"></a>androidForWorkCompliancePolicy 资源类型
 
@@ -120,8 +120,6 @@ ms.locfileid: "36011825"
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
 
 
 

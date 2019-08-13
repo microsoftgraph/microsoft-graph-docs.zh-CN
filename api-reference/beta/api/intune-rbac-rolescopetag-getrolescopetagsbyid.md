@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 303d2ad206a669ae10a6f289904699d8eeb2e826
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 3eed617bf91294a426e9b255c8bbad5bbdc6f62a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725893"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351131"
 ---
 # <a name="getrolescopetagsbyid-action"></a>getRoleScopeTagsById 操作
 
@@ -26,7 +27,7 @@ ms.locfileid: "35725893"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -80,7 +81,7 @@ Content-length: 65
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 231
+Content-Length: 257
 
 {
   "value": [
@@ -88,11 +89,13 @@ Content-Length: 231
       "@odata.type": "#microsoft.graph.roleScopeTag",
       "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
       "displayName": "Display Name value",
-      "description": "Description value"
+      "description": "Description value",
+      "isBuiltIn": true
     }
   ]
 }
 ```
+
 
 
 

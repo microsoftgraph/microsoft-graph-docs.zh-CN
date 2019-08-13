@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa3fb4f98f20b705c5905eb5fc0f07833815e228
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74c35df1a4e850e446078b1a293bf98b4f048bbb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970918"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333532"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 
@@ -28,8 +28,6 @@ ms.locfileid: "35970918"
 |promptBeforeSendingPersonalData|双面|发送个人数据前提示。|
 |neverSendData|第三章|从不发送数据。|
 |sendAllDataWithoutPrompting|4|在不提示的情况下发送所有数据。|
-
-
 
 
 

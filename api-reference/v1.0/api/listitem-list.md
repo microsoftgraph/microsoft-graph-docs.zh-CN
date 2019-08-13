@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 获取列表中项的集合。
 doc_type: apiPageType
-ms.openlocfilehash: 49ca1090411a1a53be3db193821c14df51edef61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3780797477eeba79f92ce304aa740080844fa8eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023105"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376036"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

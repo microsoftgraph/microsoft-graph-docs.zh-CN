@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4498b733f781aeb82f2bccc8ccd67554f8349e98
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4773c1858eadbb63a7bf0b491793cd0afec94081
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984151"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350662"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>getEffectiveDeviceEnrollmentConfigurations 函数
 
@@ -90,6 +90,9 @@ Content-Length: 422
   ]
 }
 ```
+
+
+
 
 
 

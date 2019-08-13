@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f5be56f89e32bcf1695f9abca96852c7dd28d8bb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00f08528351160ac319a588d673291019d16ca4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999092"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327890"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35999092"
 |unknown|0|ImportedDeviceIdentityType 的值未知。|
 |imei|1|设备标识的类型为 imei。|
 |serialNumber|双面|设备标识的类型为序列号。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8962f38623f3e4dca0bdfcdc8d8df39b4d0922b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7af0097d37b9194790a6fde056500421ed1d3a36
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959535"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336122"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959535"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -113,6 +113,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

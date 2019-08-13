@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67d91ee4efb8bad814aa4abc54a7430652a985bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dab09c4f126b09bce7ab1e882f87bd9a1ecbcd83
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979272"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347253"
 ---
 # <a name="list-intunebrandingprofiles"></a>列出 intuneBrandingProfiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979272"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1625
+Content-Length: 1703
 
 {
   "value": [
@@ -106,11 +106,14 @@ Content-Length: 1625
         "type": "Type value",
         "value": "dmFsdWU="
       },
-      "customPrivacyMessage": "Custom Privacy Message value"
+      "customPrivacyMessage": "Custom Privacy Message value",
+      "isRemoveDeviceDisabled": true,
+      "isFactoryResetDisabled": true
     }
   ]
 }
 ```
+
 
 
 

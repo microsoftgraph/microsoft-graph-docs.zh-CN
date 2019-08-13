@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5d4a294be690e012d43893e44540658e919c123
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69924cf755192d8ddefa074b9ec1cfed53a0d5f7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010425"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347946"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36010425"
   "value": "String"
 }
 ```
-
-
 
 
 

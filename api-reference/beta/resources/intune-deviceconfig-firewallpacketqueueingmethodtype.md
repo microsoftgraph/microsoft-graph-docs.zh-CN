@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 52765eedfc7df894be32184a7a5f071ae27552cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4222580a079fd37b381cdaf78e0b2985029ef34b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001318"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338138"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 枚举类型
 
@@ -28,8 +28,6 @@ FirewallPacketQueueingMethod 的可能值
 |queueInbound|双面|对入站加密的数据包进行排队|
 |queueOutbound|第三章|队列解密出站数据包以供转发|
 |queueBoth|4|对入站和出站数据包进行排队|
-
-
 
 
 
