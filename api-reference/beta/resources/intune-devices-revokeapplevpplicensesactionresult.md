@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10b26592c859ba58ad4759492c34ca3626be32dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb54b4a8f96c35a623a67290b158ee07c9215c1f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999631"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326791"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult 资源类型
 
@@ -54,8 +54,6 @@ ms.locfileid: "35999631"
   "failedLicensesCount": 1024
 }
 ```
-
-
 
 
 

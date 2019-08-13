@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1371fced93fe51d019373a5fe3af8f5764ca5190
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ae2681ce67d924e55ae16ad847a0e80d74a1571
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993506"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350788"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>deviceConfigurationUserActivity 函数
 
@@ -71,6 +71,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

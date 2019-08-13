@@ -4,12 +4,13 @@ description: 删除 iosDerivedCredentialAuthenticationConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8033fedca7f058af5da94fdc160b0c9c6ec2168
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fc036e6790a393ca43aa7029c0b648dcb48f4331
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967130"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339546"
 ---
 # <a name="delete-iosderivedcredentialauthenticationconfiguration"></a>删除 iosDerivedCredentialAuthenticationConfiguration
 
@@ -26,7 +27,7 @@ ms.locfileid: "34967130"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -64,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

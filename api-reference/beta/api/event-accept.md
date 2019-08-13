@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5df91e774139cd416459982a5c3d44988299af3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e30bf28160772a3f1a5fe965b809ef9566d0d60e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954611"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326952"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -87,7 +87,7 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-accept-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-accept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

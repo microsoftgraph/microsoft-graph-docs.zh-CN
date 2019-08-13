@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38da8bcbd0601bbca201b157db3d49d7016e2de3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba796fa7e67d6dcb629cfc180707ca567b02ee8c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35988718"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349919"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/csharp/outlook-task-get-attachments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/outlook-task-get-attachments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

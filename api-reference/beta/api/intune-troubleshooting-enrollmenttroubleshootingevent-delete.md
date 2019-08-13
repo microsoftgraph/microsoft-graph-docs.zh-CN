@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bffabfc706327c0f53b5986f4c13191bf71b7ea6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 321328a29af752700e5f1ae9057e06c8738a4326
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993380"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350249"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>删除 enrollmentTroubleshootingEvent
 
@@ -25,9 +25,9 @@ ms.locfileid: "35993380"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|* * TODO: 确定作用域 * *|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|* * TODO: 确定 AppOnly 作用域 * *|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

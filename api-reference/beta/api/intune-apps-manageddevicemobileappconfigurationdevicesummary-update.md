@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fc63d8466f3cacf35d5adfaa3785d056873e24d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9bd35add678c40a7f79e42994b0cf1c512d3d979
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961523"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329766"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>更新 managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961523"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -111,6 +111,7 @@ Content-Length: 409
   "configurationVersion": 4
 }
 ```
+
 
 
 

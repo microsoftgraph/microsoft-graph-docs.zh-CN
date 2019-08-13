@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 245b3c693d89b83549516981d5b9dfe5aedcdf4e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 739d8bc495cebbc00837b325f68002a5ee8e9903
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999288"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328037"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>depIOSEnrollmentProfile 资源类型
 
@@ -140,8 +140,6 @@ DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册�
   "watchMigrationScreenDisabled": true
 }
 ```
-
-
 
 
 

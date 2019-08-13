@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 023a6394754c4cd840dc711524f7104322b1cc7f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40b1cd400935870682adb1b294e5af7bbadc07fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984130"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350636"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>getManagedDevicesWithAppFailures 函数
 
@@ -70,6 +70,9 @@ Content-Length: 74
   ]
 }
 ```
+
+
+
 
 
 

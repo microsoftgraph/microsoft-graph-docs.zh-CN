@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c34f9e3bfe78ac734b0abba22e451f330778de0a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d329c5f9009d057e3dc6e16e3f61b1f108fad50
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001003"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325482"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType 枚举类型
 
@@ -27,8 +27,6 @@ LocalSecurityOptionsInformationDisplayedOnLockScreen 的可能值
 |管理员|1|用户显示名称、域名和用户名|
 |administratorsAndPowerUsers|双面|仅限用户显示名称|
 |administratorsAndInteractiveUsers|第三章|不显示用户信息|
-
-
 
 
 

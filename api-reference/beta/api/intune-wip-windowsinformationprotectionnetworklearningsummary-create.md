@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 72dbe090e23db5a912887f99aaa3f72eb5e71485
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7515ba1890a006d85897d9d614471ee8bd5ca524
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979139"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350102"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979139"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -90,6 +90,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 

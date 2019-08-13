@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 54eed413065bedeb757a40d56a0f2bb41f55b4b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83817e11f73823419de1654134fe72a0e8f2d688
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971394"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334624"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType 枚举类型
 
@@ -27,8 +27,6 @@ Android For Work 默认应用程序权限策略类型。
 |提示|1|行.|
 |autoGrant|双面|自动授予。|
 |autoDeny|第三章|自动拒绝。|
-
-
 
 
 

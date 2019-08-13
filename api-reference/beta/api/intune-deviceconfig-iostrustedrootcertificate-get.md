@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 769ebc1a7bc544544aa14409e55b100c5d0a7ef8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4dca6f22944e082f9a299114f8c044a30cf0ab79
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947926"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339062"
 ---
 # <a name="get-iostrustedrootcertificate"></a>获取 iosTrustedRootCertificate
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947926"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -108,6 +108,7 @@ Content-Length: 1395
   }
 }
 ```
+
 
 
 

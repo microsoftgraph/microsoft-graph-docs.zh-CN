@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32336a0bc73c7d36ee4763dccbdc8a24197833ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0edaa623b080e7b5884b6fe7c3f8817a1c6aecca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999057"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327792"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings 资源类型
 
@@ -51,8 +51,6 @@ ms.locfileid: "35999057"
   "hideEscapeLink": true
 }
 ```
-
-
 
 
 

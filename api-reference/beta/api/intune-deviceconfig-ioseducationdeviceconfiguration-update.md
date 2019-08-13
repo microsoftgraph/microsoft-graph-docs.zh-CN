@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a2f0689a48716103e47b37af58079587ab96a04
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1ab9682dda8afd9aa17bd68f6d7a6df946809fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948388"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339314"
 ---
 # <a name="update-ioseducationdeviceconfiguration"></a>更新 iosEducationDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948388"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -154,6 +154,7 @@ Content-Length: 1206
   "version": 7
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 750208cd58a70912a437fc17ee4e2b7cc218543e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 244226b557d674eb62faf4ee4df9a913cf0db71a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001409"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332496"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine 资源类型
 
@@ -44,8 +44,6 @@ ms.locfileid: "36001409"
   "edgeSearchEngineType": "String"
 }
 ```
-
-
 
 
 
