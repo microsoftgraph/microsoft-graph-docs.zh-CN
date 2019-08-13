@@ -1,24 +1,24 @@
 ---
-title: 删除 ndesConnector
-description: 删除 ndesConnector。
+title: 删除 androidDeviceOwnerEnterpriseWiFiConfiguration
+description: 删除 androidDeviceOwnerEnterpriseWiFiConfiguration。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2179552beee95db3848a414b9ef3c9586e128fc
+ms.openlocfilehash: 79c4904529d7bd68f4658fb99489f7f263818784
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314945"
+ms.locfileid: "36316907"
 ---
-# <a name="delete-ndesconnector"></a>删除 ndesConnector
+# <a name="delete-androiddeviceownerenterprisewificonfiguration"></a>删除 androidDeviceOwnerEnterpriseWiFiConfiguration
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)。
+删除[androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,7 +35,9 @@ ms.locfileid: "36314945"
 }
 -->
 ``` http
-DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -55,7 +57,7 @@ DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesConnectorId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>响应

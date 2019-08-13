@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdb6f9cc4403a3835cf1bc1865d36eeec95baba6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbc2cbbb3eea354b7bf1207dad779e6292b931b0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958457"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312934"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>列出 advancedThreatProtectionOnboardingDeviceSettingStates
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958457"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 711
   ]
 }
 ```
+
 
 
 

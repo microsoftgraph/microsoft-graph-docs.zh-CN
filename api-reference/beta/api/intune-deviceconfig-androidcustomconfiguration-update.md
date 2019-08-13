@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60d2c13abb91f71f0849593b9d3b69267af00ec4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46d0bf18698b9297741ca201a001349daf891368
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958177"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312731"
 ---
 # <a name="update-androidcustomconfiguration"></a>更新 androidCustomConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958177"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -175,6 +175,7 @@ Content-Length: 1466
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32119d2d8139351edb7796b820d9735b2e363112
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fd3a35186b777c37e49541a9240c41a556fbdf4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948136"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315840"
 ---
 # <a name="get-iosimportedpfxcertificateprofile"></a>获取 iosImportedPFXCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948136"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -108,6 +108,7 @@ Content-Length: 1333
   }
 }
 ```
+
 
 
 

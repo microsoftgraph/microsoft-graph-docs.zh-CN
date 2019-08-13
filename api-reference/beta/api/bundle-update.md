@@ -6,12 +6,12 @@ description: 更新 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e3d7e684b9987aa5bcd4c601654956c84b6f7904
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4dd8c1f540cfd09a1634ff4199cb5fb173b2acc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944809"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317968"
 ---
 # <a name="update-bundle"></a>更新捆绑包
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

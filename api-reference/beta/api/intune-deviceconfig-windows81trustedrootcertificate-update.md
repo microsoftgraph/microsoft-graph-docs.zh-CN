@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 838fda7cd095a7b8099c9363a4621668cb96d36c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48e9805676d2c4764c09f9994e489ae21c832b7f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974904"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314138"
 ---
 # <a name="update-windows81trustedrootcertificate"></a>更新 windows81TrustedRootCertificate
 
@@ -27,7 +27,7 @@ ms.locfileid: "35974904"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -162,6 +162,7 @@ Content-Length: 1370
   "destinationStore": "computerCertStoreIntermediate"
 }
 ```
+
 
 
 

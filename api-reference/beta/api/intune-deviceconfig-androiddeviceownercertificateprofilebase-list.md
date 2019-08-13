@@ -1,24 +1,24 @@
 ---
-title: 列出 androidWorkProfileGeneralDeviceConfigurations
-description: 列出 androidWorkProfileGeneralDeviceConfiguration 对象的属性和关系。
+title: 列出 androidDeviceOwnerCertificateProfileBases
+description: 列出 androidDeviceOwnerCertificateProfileBase 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17f01631a7f2c8874fd89906209e1b48832da19e
+ms.openlocfilehash: e09e63e15b6bd68d5da70d3498b7c5eb4b9ff4e4
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311226"
+ms.locfileid: "36316911"
 ---
-# <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>列出 androidWorkProfileGeneralDeviceConfigurations
+# <a name="list-androiddeviceownercertificateprofilebases"></a>列出 androidDeviceOwnerCertificateProfileBases
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象的属性和关系。
+列出[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -64,13 +64,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3292
+Content-Length: 1836
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
-      "id": "6decda7e-da7e-6dec-7eda-ec6d7edaec6d",
+      "@odata.type": "#microsoft.graph.androidDeviceOwnerCertificateProfileBase",
+      "id": "19dd17f0-17f0-19dd-f017-dd19f017dd19",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -101,42 +101,18 @@ Content-Length: 3292
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "passwordBlockFingerprintUnlock": true,
-      "passwordBlockTrustAgents": true,
-      "passwordExpirationDays": 6,
-      "passwordMinimumLength": 5,
-      "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
-      "passwordPreviousPasswordBlockCount": 2,
-      "passwordSignInFailureCountBeforeFactoryReset": 12,
-      "passwordRequiredType": "lowSecurityBiometric",
-      "workProfileDataSharingType": "preventAny",
-      "workProfileBlockNotificationsWhileDeviceLocked": true,
-      "workProfileBlockAddingAccounts": true,
-      "workProfileBluetoothEnableContactSharing": true,
-      "workProfileBlockScreenCapture": true,
-      "workProfileBlockCrossProfileCallerId": true,
-      "workProfileBlockCamera": true,
-      "workProfileBlockCrossProfileContactsSearch": true,
-      "workProfileBlockCrossProfileCopyPaste": true,
-      "workProfileDefaultAppPermissionPolicy": "prompt",
-      "workProfilePasswordBlockFingerprintUnlock": true,
-      "workProfilePasswordBlockTrustAgents": true,
-      "workProfilePasswordExpirationDays": 1,
-      "workProfilePasswordMinimumLength": 0,
-      "workProfilePasswordMinNumericCharacters": 7,
-      "workProfilePasswordMinNonLetterCharacters": 9,
-      "workProfilePasswordMinLetterCharacters": 6,
-      "workProfilePasswordMinLowerCaseCharacters": 9,
-      "workProfilePasswordMinUpperCaseCharacters": 9,
-      "workProfilePasswordMinSymbolCharacters": 6,
-      "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
-      "workProfilePasswordPreviousPasswordBlockCount": 13,
-      "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-      "workProfilePasswordRequiredType": "lowSecurityBiometric",
-      "workProfileRequirePassword": true,
-      "securityRequireVerifyApps": true,
-      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-      "vpnEnableAlwaysOnLockdownMode": true
+      "renewalThresholdPercentage": 10,
+      "subjectNameFormat": "commonNameIncludingEmail",
+      "certificateValidityPeriodValue": 14,
+      "certificateValidityPeriodScale": "months",
+      "extendedKeyUsages": [
+        {
+          "@odata.type": "microsoft.graph.extendedKeyUsage",
+          "name": "Name value",
+          "objectIdentifier": "Object Identifier value"
+        }
+      ],
+      "subjectAlternativeNameType": "emailAddress"
     }
   ]
 }
