@@ -5,59 +5,59 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7032473ccacedba75061e5c70ccb424e0d06813b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8a28e4de7b1c80ea77932985b8ac117f3fd73409
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016611"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375282"
 ---
-# <a name="list-domainnamereferences"></a><span data-ttu-id="68313-104">列出 domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="68313-104">List domainNameReferences</span></span>
+# <a name="list-domainnamereferences"></a><span data-ttu-id="a0364-104">列出 domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="a0364-104">List domainNameReferences</span></span>
 
-<span data-ttu-id="68313-105">使用对域的引用检索[directoryObject](../resources/directoryobject.md)列表。</span><span class="sxs-lookup"><span data-stu-id="68313-105">Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain.</span></span> <span data-ttu-id="68313-106">返回的列表将包含对域具有依赖性的所有目录对象。</span><span class="sxs-lookup"><span data-stu-id="68313-106">The returned list will contain all directory objects that have a dependency on the domain.</span></span>
+<span data-ttu-id="a0364-105">使用对域的引用检索[directoryObject](../resources/directoryobject.md)列表。</span><span class="sxs-lookup"><span data-stu-id="a0364-105">Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain.</span></span> <span data-ttu-id="a0364-106">返回的列表将包含对域具有依赖性的所有目录对象。</span><span class="sxs-lookup"><span data-stu-id="a0364-106">The returned list will contain all directory objects that have a dependency on the domain.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="68313-107">权限</span><span class="sxs-lookup"><span data-stu-id="68313-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0364-107">权限</span><span class="sxs-lookup"><span data-stu-id="a0364-107">Permissions</span></span>
 
-<span data-ttu-id="68313-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="68313-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a0364-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0364-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="68313-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="68313-110">Permission type</span></span>      | <span data-ttu-id="68313-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="68313-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0364-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0364-110">Permission type</span></span>      | <span data-ttu-id="a0364-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a0364-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="68313-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="68313-112">Delegated (work or school account)</span></span> | <span data-ttu-id="68313-113">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="68313-113">Directory.Read.All</span></span>    |
-|<span data-ttu-id="68313-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="68313-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="68313-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="68313-115">Not supported.</span></span>    |
-|<span data-ttu-id="68313-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="68313-116">Application</span></span> | <span data-ttu-id="68313-117">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68313-117">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="a0364-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0364-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a0364-113">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="a0364-113">Directory.Read.All</span></span>    |
+|<span data-ttu-id="a0364-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0364-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0364-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0364-115">Not supported.</span></span>    |
+|<span data-ttu-id="a0364-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0364-116">Application</span></span> | <span data-ttu-id="a0364-117">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0364-117">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="68313-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="68313-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0364-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0364-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/domainNameReferences
 ```
 
-> <span data-ttu-id="68313-119">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="68313-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="a0364-119">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="a0364-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="68313-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="68313-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a0364-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a0364-120">Optional query parameters</span></span>
 
-<span data-ttu-id="68313-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="68313-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="a0364-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a0364-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="68313-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="68313-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a0364-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0364-122">Request headers</span></span>
 
-| <span data-ttu-id="68313-123">名称</span><span class="sxs-lookup"><span data-stu-id="68313-123">Name</span></span>      |<span data-ttu-id="68313-124">说明</span><span class="sxs-lookup"><span data-stu-id="68313-124">Description</span></span>|
+| <span data-ttu-id="a0364-123">名称</span><span class="sxs-lookup"><span data-stu-id="a0364-123">Name</span></span>      |<span data-ttu-id="a0364-124">说明</span><span class="sxs-lookup"><span data-stu-id="a0364-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="68313-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="68313-125">Authorization</span></span>  | <span data-ttu-id="68313-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="68313-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a0364-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0364-125">Authorization</span></span>  | <span data-ttu-id="a0364-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a0364-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="68313-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="68313-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0364-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0364-128">Request body</span></span>
 
-<span data-ttu-id="68313-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="68313-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="a0364-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a0364-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="68313-130">响应</span><span class="sxs-lookup"><span data-stu-id="68313-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a0364-130">响应</span><span class="sxs-lookup"><span data-stu-id="a0364-130">Response</span></span>
 
-<span data-ttu-id="68313-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="68313-131">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="a0364-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="a0364-131">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="68313-132">示例</span><span class="sxs-lookup"><span data-stu-id="68313-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="68313-133">请求</span><span class="sxs-lookup"><span data-stu-id="68313-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="a0364-132">示例</span><span class="sxs-lookup"><span data-stu-id="a0364-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a0364-133">请求</span><span class="sxs-lookup"><span data-stu-id="a0364-133">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="68313-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="68313-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a0364-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a0364-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_domainnamereferences"
@@ -65,27 +65,27 @@ GET /domains/{id}/domainNameReferences
 ```http
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="68313-135">C#</span><span class="sxs-lookup"><span data-stu-id="68313-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a0364-135">C#</span><span class="sxs-lookup"><span data-stu-id="a0364-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domainnamereferences-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="68313-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="68313-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a0364-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a0364-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-domainnamereferences-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="68313-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="68313-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a0364-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="a0364-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-domainnamereferences-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="68313-138">Java</span><span class="sxs-lookup"><span data-stu-id="68313-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="a0364-138">Java</span><span class="sxs-lookup"><span data-stu-id="a0364-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="68313-139">响应</span><span class="sxs-lookup"><span data-stu-id="68313-139">Response</span></span>
-<span data-ttu-id="68313-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="68313-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a0364-139">响应</span><span class="sxs-lookup"><span data-stu-id="a0364-139">Response</span></span>
+<span data-ttu-id="a0364-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a0364-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

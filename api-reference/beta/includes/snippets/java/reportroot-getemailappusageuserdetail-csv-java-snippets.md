@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: de478f68f0e67b20e5126a175129414c738cd565
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3aa6a499f77e1d7e1270b0891f70fcb49ec3ec0d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873846"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308488"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IEmailAppUsageUserDetailCollectionPage getEmailAppUsageUserDetail = graphClient.reports()
-    .getEmailAppUsageUserDetail('D7')
+    .getEmailAppUsageUserDetail("D7")
     .buildRequest()
     .get();
 

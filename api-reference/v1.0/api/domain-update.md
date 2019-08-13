@@ -5,58 +5,58 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00e722d762669dc5950bf171e71d8e79ef423648
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a86b3fe16fe2b9914e29143dfa92ce1fd7a2bb0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016569"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375231"
 ---
-# <a name="update-domain"></a><span data-ttu-id="45ea5-103">更新域</span><span class="sxs-lookup"><span data-stu-id="45ea5-103">Update domain</span></span>
+# <a name="update-domain"></a><span data-ttu-id="55189-103">更新域</span><span class="sxs-lookup"><span data-stu-id="55189-103">Update domain</span></span>
 
-<span data-ttu-id="45ea5-104">更新域对象的属性。</span><span class="sxs-lookup"><span data-stu-id="45ea5-104">Update the properties of domain object.</span></span>
+<span data-ttu-id="55189-104">更新域对象的属性。</span><span class="sxs-lookup"><span data-stu-id="55189-104">Update the properties of domain object.</span></span>
 
-> <span data-ttu-id="45ea5-105">**重要说明:** 仅已验证的域可以进行更新。</span><span class="sxs-lookup"><span data-stu-id="45ea5-105">**Important:** Only verified domains can be updated.</span></span>
+> <span data-ttu-id="55189-105">**重要说明:** 仅已验证的域可以进行更新。</span><span class="sxs-lookup"><span data-stu-id="55189-105">**Important:** Only verified domains can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="45ea5-106">权限</span><span class="sxs-lookup"><span data-stu-id="45ea5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="55189-106">权限</span><span class="sxs-lookup"><span data-stu-id="55189-106">Permissions</span></span>
 
-<span data-ttu-id="45ea5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="45ea5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="55189-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="55189-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="45ea5-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="45ea5-109">Permission type</span></span>      | <span data-ttu-id="45ea5-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="45ea5-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="55189-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="55189-109">Permission type</span></span>      | <span data-ttu-id="55189-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="55189-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45ea5-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="45ea5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="45ea5-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="45ea5-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="45ea5-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="45ea5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45ea5-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="45ea5-114">Not supported.</span></span>    |
-|<span data-ttu-id="45ea5-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="45ea5-115">Application</span></span> | <span data-ttu-id="45ea5-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45ea5-116">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="55189-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="55189-111">Delegated (work or school account)</span></span> | <span data-ttu-id="55189-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="55189-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="55189-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="55189-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55189-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="55189-114">Not supported.</span></span>    |
+|<span data-ttu-id="55189-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="55189-115">Application</span></span> | <span data-ttu-id="55189-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55189-116">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="45ea5-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="45ea5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55189-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="55189-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
 ```
 
-> <span data-ttu-id="45ea5-118">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="45ea5-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="55189-118">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="55189-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="45ea5-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="45ea5-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="55189-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="55189-119">Request headers</span></span>
 
-| <span data-ttu-id="45ea5-120">名称</span><span class="sxs-lookup"><span data-stu-id="45ea5-120">Name</span></span>       | <span data-ttu-id="45ea5-121">说明</span><span class="sxs-lookup"><span data-stu-id="45ea5-121">Description</span></span>|
+| <span data-ttu-id="55189-120">名称</span><span class="sxs-lookup"><span data-stu-id="55189-120">Name</span></span>       | <span data-ttu-id="55189-121">说明</span><span class="sxs-lookup"><span data-stu-id="55189-121">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="45ea5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="45ea5-122">Authorization</span></span>  | <span data-ttu-id="45ea5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="45ea5-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="45ea5-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="45ea5-125">Content-Type</span></span>  | <span data-ttu-id="45ea5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="45ea5-126">application/json</span></span> |
+| <span data-ttu-id="55189-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="55189-122">Authorization</span></span>  | <span data-ttu-id="55189-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="55189-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="55189-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="55189-125">Content-Type</span></span>  | <span data-ttu-id="55189-126">application/json</span><span class="sxs-lookup"><span data-stu-id="55189-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="45ea5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="45ea5-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="55189-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="55189-127">Request body</span></span>
 
-<span data-ttu-id="45ea5-128">在请求正文中, 提供要更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="45ea5-128">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="45ea5-129">未包含在请求正文中的现有属性将保留其以前的值, 或根据对其他属性值的更改重新计算这些属性。</span><span class="sxs-lookup"><span data-stu-id="45ea5-129">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="45ea5-130">为了获得最佳性能, 仅包含更改的值。</span><span class="sxs-lookup"><span data-stu-id="45ea5-130">For best performance, only include changed values.</span></span>
+<span data-ttu-id="55189-128">在请求正文中, 提供要更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="55189-128">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="55189-129">未包含在请求正文中的现有属性将保留其以前的值, 或根据对其他属性值的更改重新计算这些属性。</span><span class="sxs-lookup"><span data-stu-id="55189-129">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="55189-130">为了获得最佳性能, 仅包含更改的值。</span><span class="sxs-lookup"><span data-stu-id="55189-130">For best performance, only include changed values.</span></span>
 
-## <a name="response"></a><span data-ttu-id="45ea5-131">响应</span><span class="sxs-lookup"><span data-stu-id="45ea5-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="55189-131">响应</span><span class="sxs-lookup"><span data-stu-id="55189-131">Response</span></span>
 
-<span data-ttu-id="45ea5-132">如果成功, 此方法将`204 No Content`返回响应代码, 不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="45ea5-132">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="55189-132">如果成功, 此方法将`204 No Content`返回响应代码, 不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="55189-132">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45ea5-133">示例</span><span class="sxs-lookup"><span data-stu-id="45ea5-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="45ea5-134">请求</span><span class="sxs-lookup"><span data-stu-id="45ea5-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="55189-133">示例</span><span class="sxs-lookup"><span data-stu-id="55189-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="55189-134">请求</span><span class="sxs-lookup"><span data-stu-id="55189-134">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="45ea5-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="45ea5-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="55189-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="55189-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["contoso.com"],
@@ -74,26 +74,26 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="45ea5-136">C#</span><span class="sxs-lookup"><span data-stu-id="45ea5-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="55189-136">C#</span><span class="sxs-lookup"><span data-stu-id="55189-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="45ea5-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="45ea5-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55189-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="55189-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="45ea5-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="45ea5-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="55189-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="55189-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="45ea5-139">Java</span><span class="sxs-lookup"><span data-stu-id="45ea5-139">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="55189-139">Java</span><span class="sxs-lookup"><span data-stu-id="55189-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="45ea5-140">响应</span><span class="sxs-lookup"><span data-stu-id="45ea5-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="55189-140">响应</span><span class="sxs-lookup"><span data-stu-id="55189-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
