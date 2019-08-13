@@ -4,13 +4,12 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 4bae37d3364836d8c706bfd97994c43396fa8143
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0af6b2070b7438aee2f4efcdb9661cf37a265cd9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006148"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366201"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -111,7 +110,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用内容](intune-apps-mobileappcontent.md)
 - [移动应用内容文件](intune-apps-mobileappcontentfile.md)
 - [移动应用内容文件上传状态](intune-apps-mobileappcontentfileuploadstate.md)
-- [移动应用程序 dependecy 类型](intune-apps-mobileappdependecytype.md)
 - [移动应用程序依赖项](intune-apps-mobileappdependency.md)
 - [移动应用程序依赖关系类型](intune-apps-mobileappdependencytype.md)
 - [移动应用安装状态](intune-apps-mobileappinstallstatus.md)
@@ -177,3 +175,4 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
 - [Windows Universal AppX 应用分配设置](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Windows Universal APPX 包含的应用](intune-apps-windowsuniversalappxcontainedapp.md)
+

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: '通过简单上传 API，可以在一个 API 调用中提供新文件的内容或更新现有文件的内容。 '
 doc_type: apiPageType
-ms.openlocfilehash: 0653cf59ca3c67a3a941b2df0d654439da950bc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2918e1fddbd91fe843b4f2d02a470a90f798ec9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015360"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373411"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
 
@@ -111,7 +111,7 @@ The contents of the file goes here.
 [!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 按 ID 或路径更新 DriveItem 元数据。
 doc_type: apiPageType
-ms.openlocfilehash: f1ca58a05bae68bd945d8060820f2b590c659b9b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fbeae35750f46d8f205e489b8d830d3ffa0885e0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015325"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370548"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -79,7 +79,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
