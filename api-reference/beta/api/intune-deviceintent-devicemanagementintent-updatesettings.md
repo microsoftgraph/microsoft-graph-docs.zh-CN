@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1e64ad7386801a47ec9b647a513f4e92afa9345
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4f42a8164d944edb1c23f0f7b2a2d67bc025e0e0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960431"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343683"
 ---
 # <a name="updatesettings-action"></a>updateSettings 操作
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960431"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -84,6 +85,7 @@ Content-length: 252
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

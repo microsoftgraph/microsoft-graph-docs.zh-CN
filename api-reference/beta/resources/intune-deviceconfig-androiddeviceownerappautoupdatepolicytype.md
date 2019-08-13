@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bdc8c5f9064ab68017d9857f384fb17388d0cce7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3491d175f4157bae2229277e35ea937741d06324
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971548"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334862"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>androidDeviceOwnerAppAutoUpdatePolicyType 枚举类型
 
@@ -28,8 +28,6 @@ Android 设备所有者设备的应用自动更新策略状态的可能值。
 |永不|双面|应用程序永远不会自动更新。|
 |wiFiOnly|第三章|仅通过 Wi-fi 自动更新应用程序。|
 |都|4|应用将在任何时候自动更新。 可能会收取数据费用。|
-
-
 
 
 

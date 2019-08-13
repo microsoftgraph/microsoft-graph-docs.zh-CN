@@ -4,12 +4,13 @@ description: 读取 deviceManagementIntentDeviceSettingStateSummary 对象的属
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e0aae24db94332d435f11894497461c693cd0f5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fcff59117a5c4cb6115c14bb58d9bdbc6f8964fa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960340"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343631"
 ---
 # <a name="get-devicemanagementintentdevicesettingstatesummary"></a>获取 deviceManagementIntentDeviceSettingStateSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960340"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -81,6 +82,7 @@ Content-Length: 366
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ba3a78ff5a259f5473ea7843e71bcf8e6272aca1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae3bc2b8509c4007c238779196d0f14ac3ff7749
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331474"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36010992"
 |:---|:---|:---|
 |user|0|标识 "用户配置" 节点下的策略设置的位置。|
 |机器码|1|标识 "计算机配置" 节点下的策略设置的位置。|
-
-
 
 
 
