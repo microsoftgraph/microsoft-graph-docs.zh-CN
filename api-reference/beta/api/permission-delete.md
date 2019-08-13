@@ -6,32 +6,32 @@ title: 删除对项目的访问权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6cbce9310f8538687f7acbc04ebbd8e2c4000b89
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3b8b6954cbd5a8da75889babfcfde00b32a862b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992428"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36346406"
 ---
-# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="b7f70-103">从文件或文件夹中删除共享权限</span><span class="sxs-lookup"><span data-stu-id="b7f70-103">Delete a sharing permission from a file or folder</span></span>
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="b41fa-103">从文件或文件夹中删除共享权限</span><span class="sxs-lookup"><span data-stu-id="b41fa-103">Delete a sharing permission from a file or folder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b7f70-104">删除 [DriveItem](../resources/driveitem.md) 访问权限。</span><span class="sxs-lookup"><span data-stu-id="b7f70-104">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="b41fa-104">删除 [DriveItem](../resources/driveitem.md) 访问权限。</span><span class="sxs-lookup"><span data-stu-id="b41fa-104">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
 
-<span data-ttu-id="b7f70-105">只能删除**非**继承的共享权限。</span><span class="sxs-lookup"><span data-stu-id="b7f70-105">Only sharing permissions that are **not** inherited can be deleted.</span></span>
-<span data-ttu-id="b7f70-106">**InheritedFrom** 属性必须为 `null`。</span><span class="sxs-lookup"><span data-stu-id="b7f70-106">The **inheritedFrom** property must be `null`.</span></span>
+<span data-ttu-id="b41fa-105">只能删除**非**继承的共享权限。</span><span class="sxs-lookup"><span data-stu-id="b41fa-105">Only sharing permissions that are **not** inherited can be deleted.</span></span>
+<span data-ttu-id="b41fa-106">**InheritedFrom** 属性必须为 `null`。</span><span class="sxs-lookup"><span data-stu-id="b41fa-106">The **inheritedFrom** property must be `null`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b7f70-107">权限</span><span class="sxs-lookup"><span data-stu-id="b7f70-107">Permissions</span></span>
-<span data-ttu-id="b7f70-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b7f70-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b41fa-107">权限</span><span class="sxs-lookup"><span data-stu-id="b41fa-107">Permissions</span></span>
+<span data-ttu-id="b41fa-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b41fa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b7f70-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b7f70-110">Permission type</span></span>      | <span data-ttu-id="b7f70-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b7f70-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b41fa-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b41fa-110">Permission type</span></span>      | <span data-ttu-id="b41fa-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b41fa-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b7f70-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b7f70-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b7f70-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7f70-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b7f70-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b7f70-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7f70-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7f70-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b7f70-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b7f70-116">Application</span></span> | <span data-ttu-id="b7f70-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7f70-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b41fa-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b41fa-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b41fa-113">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b41fa-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b41fa-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b41fa-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b41fa-115">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b41fa-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b41fa-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b41fa-116">Application</span></span> | <span data-ttu-id="b41fa-117">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b41fa-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b7f70-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b7f70-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b41fa-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b41fa-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,48 +42,48 @@ DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="b7f70-119">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="b7f70-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="b41fa-119">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="b41fa-119">Optional request headers</span></span>
 
-| <span data-ttu-id="b7f70-120">名称</span><span class="sxs-lookup"><span data-stu-id="b7f70-120">Name</span></span>          | <span data-ttu-id="b7f70-121">类型</span><span class="sxs-lookup"><span data-stu-id="b7f70-121">Type</span></span>   | <span data-ttu-id="b7f70-122">说明</span><span class="sxs-lookup"><span data-stu-id="b7f70-122">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="b41fa-120">名称</span><span class="sxs-lookup"><span data-stu-id="b41fa-120">Name</span></span>          | <span data-ttu-id="b41fa-121">类型</span><span class="sxs-lookup"><span data-stu-id="b41fa-121">Type</span></span>   | <span data-ttu-id="b41fa-122">说明</span><span class="sxs-lookup"><span data-stu-id="b41fa-122">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b7f70-123">if-match</span><span class="sxs-lookup"><span data-stu-id="b7f70-123">if-match</span></span>      | <span data-ttu-id="b7f70-124">string</span><span class="sxs-lookup"><span data-stu-id="b7f70-124">string</span></span> | <span data-ttu-id="b7f70-125">如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。</span><span class="sxs-lookup"><span data-stu-id="b7f70-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="b41fa-123">if-match</span><span class="sxs-lookup"><span data-stu-id="b41fa-123">if-match</span></span>      | <span data-ttu-id="b41fa-124">string</span><span class="sxs-lookup"><span data-stu-id="b41fa-124">string</span></span> | <span data-ttu-id="b41fa-125">如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。</span><span class="sxs-lookup"><span data-stu-id="b41fa-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="b7f70-126">响应</span><span class="sxs-lookup"><span data-stu-id="b7f70-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b41fa-126">响应</span><span class="sxs-lookup"><span data-stu-id="b41fa-126">Response</span></span>
 
-<span data-ttu-id="b7f70-127">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="b7f70-127">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="b41fa-127">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="b41fa-127">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7f70-128">示例</span><span class="sxs-lookup"><span data-stu-id="b7f70-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b41fa-128">示例</span><span class="sxs-lookup"><span data-stu-id="b41fa-128">Example</span></span>
 
-<span data-ttu-id="b7f70-129">本示例从当前用户 OneDrive 的项 {item-id} 中删除标识为 {perm-id} 的权限。</span><span class="sxs-lookup"><span data-stu-id="b7f70-129">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
+<span data-ttu-id="b41fa-129">本示例从当前用户 OneDrive 的项 {item-id} 中删除标识为 {perm-id} 的权限。</span><span class="sxs-lookup"><span data-stu-id="b41fa-129">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b7f70-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b7f70-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b41fa-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="b41fa-130">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b7f70-131">C#</span><span class="sxs-lookup"><span data-stu-id="b7f70-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b41fa-131">C#</span><span class="sxs-lookup"><span data-stu-id="b41fa-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b7f70-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="b7f70-132">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b41fa-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b41fa-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b7f70-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="b7f70-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b41fa-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="b41fa-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b7f70-134">Java</span><span class="sxs-lookup"><span data-stu-id="b7f70-134">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="b41fa-134">Java</span><span class="sxs-lookup"><span data-stu-id="b41fa-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b7f70-135">响应</span><span class="sxs-lookup"><span data-stu-id="b7f70-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b41fa-135">响应</span><span class="sxs-lookup"><span data-stu-id="b41fa-135">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": false } -->
 
@@ -91,9 +91,9 @@ DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permission
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a><span data-ttu-id="b7f70-136">注解</span><span class="sxs-lookup"><span data-stu-id="b7f70-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b41fa-136">注解</span><span class="sxs-lookup"><span data-stu-id="b41fa-136">Remarks</span></span>
 
-* <span data-ttu-id="b7f70-137">具有 `personal`（OneDrive 个人版）**driveType** 的 [驱动器](../resources/drive.md) 无法创建或修改根 DriveItem 上的权限。</span><span class="sxs-lookup"><span data-stu-id="b7f70-137">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
+* <span data-ttu-id="b41fa-137">具有 `personal`（OneDrive 个人版）**driveType** 的 [驱动器](../resources/drive.md) 无法创建或修改根 DriveItem 上的权限。</span><span class="sxs-lookup"><span data-stu-id="b41fa-137">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

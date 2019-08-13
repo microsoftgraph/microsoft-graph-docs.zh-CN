@@ -5,28 +5,26 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 32e8100a0d5f195c29a19e1e91da744504f5be82
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd601144e84014ff366bd77884d2828da2833b26
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969266"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337914"
 ---
-# <a name="windows10apptype-enum-type"></a><span data-ttu-id="c1b8f-103">windows10AppType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="c1b8f-103">windows10AppType enum type</span></span>
+# <a name="windows10apptype-enum-type"></a><span data-ttu-id="dcb9d-103">windows10AppType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="dcb9d-103">windows10AppType enum type</span></span>
 
-> <span data-ttu-id="c1b8f-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c1b8f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="dcb9d-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c1b8f-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c1b8f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dcb9d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c1b8f-106">Windows 10 应用程序类型。</span><span class="sxs-lookup"><span data-stu-id="c1b8f-106">Windows 10 Application type.</span></span>
+<span data-ttu-id="dcb9d-106">Windows 10 应用程序类型。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-106">Windows 10 Application type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c1b8f-107">成员</span><span class="sxs-lookup"><span data-stu-id="c1b8f-107">Members</span></span>
-|<span data-ttu-id="c1b8f-108">成员</span><span class="sxs-lookup"><span data-stu-id="c1b8f-108">Member</span></span>|<span data-ttu-id="c1b8f-109">值</span><span class="sxs-lookup"><span data-stu-id="c1b8f-109">Value</span></span>|<span data-ttu-id="c1b8f-110">说明</span><span class="sxs-lookup"><span data-stu-id="c1b8f-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="dcb9d-107">成员</span><span class="sxs-lookup"><span data-stu-id="dcb9d-107">Members</span></span>
+|<span data-ttu-id="dcb9d-108">成员</span><span class="sxs-lookup"><span data-stu-id="dcb9d-108">Member</span></span>|<span data-ttu-id="dcb9d-109">值</span><span class="sxs-lookup"><span data-stu-id="dcb9d-109">Value</span></span>|<span data-ttu-id="dcb9d-110">说明</span><span class="sxs-lookup"><span data-stu-id="dcb9d-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c1b8f-111">desktop</span><span class="sxs-lookup"><span data-stu-id="c1b8f-111">desktop</span></span>|<span data-ttu-id="c1b8f-112">0</span><span class="sxs-lookup"><span data-stu-id="c1b8f-112">0</span></span>|<span data-ttu-id="c1b8f-113">Desktop.</span><span class="sxs-lookup"><span data-stu-id="c1b8f-113">Desktop.</span></span>|
-|<span data-ttu-id="c1b8f-114">普遍</span><span class="sxs-lookup"><span data-stu-id="c1b8f-114">universal</span></span>|<span data-ttu-id="c1b8f-115">1</span><span class="sxs-lookup"><span data-stu-id="c1b8f-115">1</span></span>|<span data-ttu-id="c1b8f-116">普遍.</span><span class="sxs-lookup"><span data-stu-id="c1b8f-116">Universal.</span></span>|
-
-
+|<span data-ttu-id="dcb9d-111">desktop</span><span class="sxs-lookup"><span data-stu-id="dcb9d-111">desktop</span></span>|<span data-ttu-id="dcb9d-112">0</span><span class="sxs-lookup"><span data-stu-id="dcb9d-112">0</span></span>|<span data-ttu-id="dcb9d-113">Desktop.</span><span class="sxs-lookup"><span data-stu-id="dcb9d-113">Desktop.</span></span>|
+|<span data-ttu-id="dcb9d-114">普遍</span><span class="sxs-lookup"><span data-stu-id="dcb9d-114">universal</span></span>|<span data-ttu-id="dcb9d-115">1</span><span class="sxs-lookup"><span data-stu-id="dcb9d-115">1</span></span>|<span data-ttu-id="dcb9d-116">普遍.</span><span class="sxs-lookup"><span data-stu-id="dcb9d-116">Universal.</span></span>|
 
 
 
