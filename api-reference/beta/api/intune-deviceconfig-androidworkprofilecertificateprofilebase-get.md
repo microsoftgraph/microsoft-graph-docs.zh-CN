@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a2f68f63c34f09b0e5f68a6ebf7468d0d1cd774
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ae67a28b9058d86f6a654fc09458d77022c586b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951090"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36311352"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>获取 androidWorkProfileCertificateProfileBase
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951090"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 1734
   }
 }
 ```
+
 
 
 

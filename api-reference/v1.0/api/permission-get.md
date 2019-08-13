@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 返回特定 permission 资源的有效共享权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: dabbdb7cdcde76a599453638b9146a6302a91159
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83e89f4df915d844e7a722927a8f921701abae58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976266"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309368"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -71,7 +71,7 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

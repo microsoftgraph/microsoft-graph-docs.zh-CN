@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce24d86083dedf57b00019b733cae441b64778e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29c586d1ab3e9f6cba8891a8430a760dd77966d4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985299"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309630"
 ---
 # <a name="list-deponboardingsettings"></a>列出 depOnboardingSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985299"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -88,6 +88,7 @@ Content-Length: 786
   ]
 }
 ```
+
 
 
 

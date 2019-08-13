@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 以异步方式在新父项下或使用新名称创建一个 driveItem 副本（包括任何子项）。
 doc_type: apiPageType
-ms.openlocfilehash: e730d2ecd72a3a88c465373eabd8993c329e8601
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ba0bfcd84f1511aa1cfb0788a576da380600966
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015556"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375133"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

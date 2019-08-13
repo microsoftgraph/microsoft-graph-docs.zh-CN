@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31919eb962ff56647f12b60070fe17d1eb3bd524
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20a0cdd1e47c41fbb941c7a6f9861b97ec43f131
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985866"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310260"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985866"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,6 +66,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
