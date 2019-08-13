@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 207620758c35951f5de5b504889214f5270ef537
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03916d1e41fb89c1ae8a218ca0caa47ccf4afb37
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969714"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368007"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
@@ -69,8 +69,6 @@ ms.locfileid: "35969714"
   "conflictDeviceCount": 1024
 }
 ```
-
-
 
 
 

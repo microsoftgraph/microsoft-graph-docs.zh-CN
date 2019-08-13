@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 8b8c7c9204f25f573e44171c0da241f390bb72ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02538a80ed8264b4e61bbeff57034d71a9cc011b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991553"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364136"
 ---
 # <a name="list-securityactions"></a>列出 securityActions
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/security/securityActions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securityactions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securityactions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

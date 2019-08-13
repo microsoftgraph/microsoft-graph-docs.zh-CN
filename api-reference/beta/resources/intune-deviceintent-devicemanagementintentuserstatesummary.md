@@ -4,12 +4,13 @@ description: 表示意向的用户状态摘要的实体
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce652aae0fdc429436b1d9b170ae635b591e2796
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c934dd2035b628b8424a75c0b95a2e642c67586c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963966"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364752"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>deviceManagementIntentUserStateSummary 资源类型
 
@@ -57,8 +58,6 @@ ms.locfileid: "34963966"
   "successCount": 1024
 }
 ```
-
-
 
 
 

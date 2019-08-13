@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c5fc9349b2870e92d2c7e58a7cf18dd43ea303ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 79dd3e8d631a51338ff3f8db09d1ed915a6fdcbe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990657"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362617"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -91,7 +91,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/csharp/timeoff-put-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
