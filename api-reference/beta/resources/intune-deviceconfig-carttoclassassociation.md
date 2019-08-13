@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 638b672d500f29b807309e52cdd4ddc14181c614
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 952701547c2cdf8a8b7778316f7e1f28739279b3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001899"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333756"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 
@@ -69,8 +69,6 @@ ms.locfileid: "36001899"
   ]
 }
 ```
-
-
 
 
 

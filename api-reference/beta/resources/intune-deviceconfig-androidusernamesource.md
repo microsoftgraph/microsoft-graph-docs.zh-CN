@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 20fa6d1dcf266f480c2cfd3a3c6b495f4aee06f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 97d2686d17e0d913243fda36233dd81b38f2e5db
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004566"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334330"
 ---
 # <a name="androidusernamesource-enum-type"></a>androidUsernameSource 枚举类型
 
@@ -27,8 +27,6 @@ Android 用户名源。
 |userPrincipalName|1|用户主体名称。|
 |samAccountName|双面|用户 sam 帐户名称。|
 |primarySmtpAddress|第三章|主 SMTP 地址。|
-
-
 
 
 

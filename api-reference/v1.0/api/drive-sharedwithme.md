@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索已与驱动器所有者共享的 DriveItem 资源的集合。
 doc_type: apiPageType
-ms.openlocfilehash: fe55d08eb0f5e9d9c264b3457ac77bfa693ac471
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca78c3b618a0c323687dd1e38690a600aa9516fe
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016467"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375154"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 
@@ -44,7 +44,7 @@ GET /me/drive/sharedWithMe
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

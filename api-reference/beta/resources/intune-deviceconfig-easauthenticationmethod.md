@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f30380374e1cb82294eb3a0fa7a38295a9aceeaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dd84d705d1786bf1a340a4220a606dcf62c96abd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001549"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332608"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>easAuthenticationMethod 枚举类型
 
@@ -26,8 +26,6 @@ Exchange 主动同步身份验证方法。
 |usernameAndPassword|0|使用用户名和密码进行身份验证。|
 |证书|1|使用证书进行身份验证。|
 |derivedCredential|双面|使用派生凭据进行身份验证。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd38f3d66bd77dc5a6383bd51ab603f5e63f814b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 31bcaa5d2a8a37f641a4bc84c6baa6bf67469752
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959843"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328647"
 ---
 # <a name="create-windowsphonexap"></a>创建 windowsPhoneXAP
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959843"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -185,6 +185,7 @@ Content-Length: 1409
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

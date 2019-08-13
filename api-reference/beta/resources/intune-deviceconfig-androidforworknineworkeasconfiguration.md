@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16cf448e26956bc3681aff1db4749c64ad16f0d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ffa96454eb7401851278c4e4989143566cac179
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971365"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334575"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>androidForWorkNineWorkEasConfiguration 资源类型
 
@@ -121,8 +121,6 @@ ms.locfileid: "35971365"
   "syncTasks": true
 }
 ```
-
-
 
 
 

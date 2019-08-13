@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67a43871a992d9475bf29a7800ad9e0ee50d56fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca86b4e3912a6a82b715e62c265d31ba8b0e4430
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945534"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318753"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

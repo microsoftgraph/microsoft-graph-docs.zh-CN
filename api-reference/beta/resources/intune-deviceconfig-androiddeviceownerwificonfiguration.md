@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 961a5d42024d89cc2e5ecb9084b9fe836ed06683
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbaeafdc33ec146bc83adf45a9f9715c6b2a4d44
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971486"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334764"
 ---
 # <a name="androiddeviceownerwificonfiguration-resource-type"></a>androidDeviceOwnerWiFiConfiguration 资源类型
 
@@ -116,8 +116,6 @@ ms.locfileid: "35971486"
   "preSharedKeyIsSet": true
 }
 ```
-
-
 
 
 

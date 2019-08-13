@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1573cc7562494705c7fd8b056e00be86c64d5d7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aad2692d868cc24445c827e3bc0ca9a3c6c90c01
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012266"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335611"
 ---
 # <a name="win32lobappnotification-enum-type"></a>win32LobAppNotification 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "36012266"
 |showAll|0|显示所有通知。|
 |showReboot|1|仅显示重新启动通知并禁止其他通知。|
 |hideAll|双面|隐藏所有通知。|
-
-
 
 
 

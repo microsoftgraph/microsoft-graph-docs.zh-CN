@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f394b02eac7e54c7e74a1c6954d6e3a7414e1b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb093e222dcdef3fff552416b2593f73a7c51e51
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999183"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327953"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 枚举类型
 
@@ -29,8 +29,6 @@ ms.locfileid: "35999183"
 |未能|第三章|未注册, 并且存在注册失败记录。|
 |notContacted|4|导入了设备, 但未注册。|
 |堵塞|5|设备已注册为 userless, 但由于应用程序安装失败而被阻止移到用户注册。|
-
-
 
 
 

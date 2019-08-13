@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15592dbce6bb1fc2665dbfcbc5fc9075cc1420c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a58d72044986bfbc55cdcc311f7bdecdf6a2532
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961243"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336836"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>创建 microsoftStoreForBusinessApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961243"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -175,6 +175,7 @@ Content-Length: 1304
   }
 }
 ```
+
 
 
 

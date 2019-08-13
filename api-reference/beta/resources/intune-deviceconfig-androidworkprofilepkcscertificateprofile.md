@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ebc29b75b827f2ef1fa70495ce865594dc36f9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a83857073c8fc17256dd7b29a34bf70434a969be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011622"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334129"
 ---
 # <a name="androidworkprofilepkcscertificateprofile-resource-type"></a>androidWorkProfilePkcsCertificateProfile 资源类型
 
@@ -129,8 +129,6 @@ Android 工作配置文件 PKCS 证书配置文件
   "subjectAlternativeNameFormatString": "String"
 }
 ```
-
-
 
 
 

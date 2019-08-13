@@ -1,24 +1,24 @@
 ---
-title: androidTrustedRootCertificate 资源类型
-description: Android 受信任根证书配置文件
+title: androidDeviceOwnerTrustedRootCertificate 资源类型
+description: Android 设备所有者受信任的根证书配置文件
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7e52730d21aec63c82315a6a0427cb0dd7762a7
+ms.openlocfilehash: 170cd0d1055710be7a59dc7809fd9dd1ba2ba1c2
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334351"
+ms.locfileid: "36336555"
 ---
-# <a name="androidtrustedrootcertificate-resource-type"></a>androidTrustedRootCertificate 资源类型
+# <a name="androiddeviceownertrustedrootcertificate-resource-type"></a>androidDeviceOwnerTrustedRootCertificate 资源类型
 
 > **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 受信任根证书配置文件
+Android 设备所有者受信任的根证书配置文件
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
@@ -26,11 +26,11 @@ Android 受信任根证书配置文件
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 androidTrustedRootCertificates](../api/intune-deviceconfig-androidtrustedrootcertificate-list.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)集合|列出[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)对象的属性和关系。|
-|[获取 androidTrustedRootCertificate](../api/intune-deviceconfig-androidtrustedrootcertificate-get.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|读取[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)对象的属性和关系。|
-|[创建 androidTrustedRootCertificate](../api/intune-deviceconfig-androidtrustedrootcertificate-create.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|创建新的[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)对象。|
-|[删除 androidTrustedRootCertificate](../api/intune-deviceconfig-androidtrustedrootcertificate-delete.md)|无|删除[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)。|
-|[更新 androidTrustedRootCertificate](../api/intune-deviceconfig-androidtrustedrootcertificate-update.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|更新[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)对象的属性。|
+|[列出 androidDeviceOwnerTrustedRootCertificates](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-list.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)集合|列出[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)对象的属性和关系。|
+|[获取 androidDeviceOwnerTrustedRootCertificate](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-get.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|读取[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)对象的属性和关系。|
+|[创建 androidDeviceOwnerTrustedRootCertificate](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-create.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|创建新的[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)对象。|
+|[删除 androidDeviceOwnerTrustedRootCertificate](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md)|无|删除[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)。|
+|[更新 androidDeviceOwnerTrustedRootCertificate](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md)|[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|更新[androidDeviceOwnerTrustedRootCertificate](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -65,12 +65,12 @@ Android 受信任根证书配置文件
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidTrustedRootCertificate"
+  "@odata.type": "microsoft.graph.androidDeviceOwnerTrustedRootCertificate"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidTrustedRootCertificate",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [

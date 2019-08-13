@@ -4,12 +4,13 @@ description: 创建新的 mobileAppDependency 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2b5114c8732567217b3636455550f0697edff6b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 69ff12bb7c0d00457d86d62c467778de2a9223fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973962"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329178"
 ---
 # <a name="create-mobileappdependency"></a>创建 mobileAppDependency
 
@@ -26,7 +27,7 @@ ms.locfileid: "34973962"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -95,6 +96,7 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
+
 
 
 

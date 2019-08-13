@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 968fbb7130e00157e0d02e826316a42420673354
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3d90845f90011396c4ef982d7b575a1d92881747
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010957"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331418"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>groupPolicyPresentationCheckBox 资源类型
 
@@ -62,8 +62,6 @@ ms.locfileid: "36010957"
   "defaultChecked": true
 }
 ```
-
-
 
 
 

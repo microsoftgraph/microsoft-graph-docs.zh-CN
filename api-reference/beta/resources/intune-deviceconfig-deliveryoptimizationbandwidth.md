@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa082417e9f167cd0c09954cef23b14b6bf39c0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a0b9e5404a83b4f801da3ad02fa8f030cd30f635
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970834"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333420"
 ---
 # <a name="deliveryoptimizationbandwidth-resource-type"></a>deliveryOptimizationBandwidth 资源类型
 
@@ -39,8 +39,6 @@ ms.locfileid: "35970834"
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidth"
 }
 ```
-
-
 
 
 

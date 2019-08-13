@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ea01f330ef14efbd43a5ce7c0d66a4e71fad307
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ba14d3b50ff2aeea298171fc93fe1dc6c54161e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986510"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338348"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>更新 windowsPhone81TrustedRootCertificate
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986510"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -158,6 +158,7 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
+
 
 
 

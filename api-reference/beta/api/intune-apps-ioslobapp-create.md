@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b91fd9d744c5e4810c78b6e526fe167e7ca974f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27868a0c42645db9b6f83f2146dc047e11a82385
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951972"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330914"
 ---
 # <a name="create-ioslobapp"></a>创建 iosLobApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951972"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -197,6 +197,7 @@ Content-Length: 1563
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

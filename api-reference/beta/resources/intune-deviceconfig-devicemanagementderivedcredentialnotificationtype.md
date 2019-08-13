@@ -4,12 +4,13 @@ description: 要使用的通知类型的受支持的值。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 556f33b844c648c701376eeaad7d898a229934d1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0d1e1f4922c022215d806cfa83d01d1735c704da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992310"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332790"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>deviceManagementDerivedCredentialNotificationType 枚举类型
 
@@ -25,8 +26,6 @@ ms.locfileid: "34992310"
 |无|0|None|
 |companyPortal|1|公司门户|
 |email|双面|电子邮件|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: abaf5ad79044490da68cf76f9e4dd52d9c9c35ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ffa150c519e8da3a3d204e754b9a2393386d3d9c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000443"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337823"
 ---
 # <a name="windows10easemailprofileconfiguration-resource-type"></a>windows10EasEmailProfileConfiguration 资源类型
 
@@ -128,8 +128,6 @@ ms.locfileid: "36000443"
   "requireSsl": true
 }
 ```
-
-
 
 
 

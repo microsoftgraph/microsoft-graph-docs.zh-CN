@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8bb42c8741b9adbfe67c64fd67b561d1cf59d083
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 856729bbdaa9b178a8b7bf31feac58fc39436066
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969294"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337964"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule 资源类型
 
@@ -45,8 +45,6 @@ ms.locfileid: "35969294"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
-
 
 
 

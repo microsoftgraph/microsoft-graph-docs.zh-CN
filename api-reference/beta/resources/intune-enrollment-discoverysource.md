@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: abbddfb8c90bd9c413f7b388ea52f9b14f22a110
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df46fc6a61b87b4cba006cab6d3aefd579699b34
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999239"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327982"
 ---
 # <a name="discoverysource-enum-type"></a>discoverySource 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35999239"
 |unknown|0|DiscoverySource 未知。|
 |adminImport|双面|设备由管理员导入。|
 |deviceEnrollmentProgram|4|设备由 Apple 设备注册计划 (Dep) 添加。|
-
-
 
 
 

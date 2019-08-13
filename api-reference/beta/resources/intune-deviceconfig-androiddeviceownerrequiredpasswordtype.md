@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 043b2122a346a8540dfd99e4900fc0e59dd22041
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fcccf015e9f2da784c124485ea48c9fbc23f7df5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971487"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334792"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 枚举类型
 
@@ -31,8 +31,6 @@ Android 设备所有者策略需要密码类型。
 |字母数字|5|至少为字母数字密码|
 |alphanumericWithSymbols|型|至少带有符号的字母数字。|
 |lowSecurityBiometric|步|要求低安全基于生物特征的密码。|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d226f384bfc3a525b0a8cad0e72f8db90f70c88
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 712993db47c8f2512cdf81220f267d992e096417
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005007"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335450"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>windowsAppXAppAssignmentSettings 资源类型
 
@@ -44,8 +44,6 @@ ms.locfileid: "36005007"
   "useDeviceContext": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c9b8acdfffa9380681dc1db2b25d3e451fcdeae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 438448d90dcbe5fa1922dfd3b51c28d3d5f80ecf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011370"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337893"
 ---
 # <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36011370"
   "identifier": "String"
 }
 ```
-
-
 
 
 

@@ -4,13 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 138fbf66974a63e258c1e7334db8f4c3f03a05ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2402be0642da8d0f01c30e089fec5947d5260be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004758"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335016"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -32,12 +31,17 @@ ms.locfileid: "36004758"
 - [Android 自定义配置](intune-deviceconfig-androidcustomconfiguration.md)
 - [Android 设备所有者应用自动更新策略类型](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Android 设备所有者电池充电模式](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Android 设备所有者证书配置文件库](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Android 设备所有者合规性策略](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Android 设备所有者企业版 Wi-fi 配置](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android 设备所有者系统更新安装类型](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
+- [Android 设备所有者受信任的根证书](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
+- [Android 设备所有者虚拟家庭按钮类型](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
+- [Android 设备所有者 VPN 配置](intune-deviceconfig-androiddeviceownervpnconfiguration.md)
 - [Android 设备所有者 Wi-Fi 配置](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
 - [Android 设备所有者 Wi-Fi 安全类型](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Android EAP 类型](intune-deviceconfig-androideaptype.md)
@@ -347,11 +351,9 @@ ms.locfileid: "36004758"
 - [OMA 设置整数](intune-deviceconfig-omasettinginteger.md)
 - [OMA 设置字符串](intune-deviceconfig-omasettingstring.md)
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
-- [在本地加密有效负载](intune-raimportcerts-onpremencryptedpayload.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
-- [Pfx recryption 请求](intune-raimportcerts-pfxrecryptionrequest.md)
-- [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
 - [策略平台类型](intune-deviceconfig-policyplatformtype.md)
+- [电源操作类型](intune-deviceconfig-poweractiontype.md)
 - [预发布功能](intune-deviceconfig-prereleasefeatures.md)
 - [分级应用类型](intune-deviceconfig-ratingappstype.md)
 - [分级澳大利亚电影类型](intune-deviceconfig-ratingaustraliamoviestype.md)
@@ -402,6 +404,7 @@ ms.locfileid: "36004758"
 - [可见性设置](intune-deviceconfig-visibilitysetting.md)
 - [VPN 身份验证方法](intune-deviceconfig-vpnauthenticationmethod.md)
 - [VPN 客户端身份验证类型](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [VPN 配置](intune-deviceconfig-vpnconfiguration.md)
 - [VPN 死对等检测速率](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [VPN DNS 规则](intune-deviceconfig-vpndnsrule.md)
 - [VPN 加密算法类型](intune-deviceconfig-vpnencryptionalgorithmtype.md)
@@ -522,3 +525,4 @@ ms.locfileid: "36004758"
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+

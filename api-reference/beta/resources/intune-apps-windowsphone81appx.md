@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6be65a0b505e177d30274b126d68fb947f86fb95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82aea8506fd7dc1fa6793ba7c6d3986b577d5a64
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004986"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335366"
 ---
 # <a name="windowsphone81appx-resource-type"></a>了 windowsphone81appx 资源类型
 
@@ -135,8 +135,6 @@ ms.locfileid: "36004986"
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

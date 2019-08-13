@@ -4,12 +4,13 @@ description: 更新 roleScopeTagAutoAssignment 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69910087d50bfa2e9ae44b5632daeaf439ea62bd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: a6a142f5fe9f9b643622f95568326b06ed2b5d9a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002474"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351026"
 ---
 # <a name="update-rolescopetagautoassignment"></a>更新 roleScopeTagAutoAssignment
 
@@ -26,7 +27,7 @@ ms.locfileid: "35002474"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -90,6 +91,7 @@ Content-Length: 215
   }
 }
 ```
+
 
 
 

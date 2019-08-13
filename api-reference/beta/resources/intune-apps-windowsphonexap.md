@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eded22f21c2a7910c9746853801fb31d0b73e546
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6334d8823420cebf744c737bdd1a76739ca8fda4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335345"
 ---
 # <a name="windowsphonexap-resource-type"></a>windowsPhoneXAP 资源类型
 
@@ -125,8 +125,6 @@ ms.locfileid: "35971632"
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

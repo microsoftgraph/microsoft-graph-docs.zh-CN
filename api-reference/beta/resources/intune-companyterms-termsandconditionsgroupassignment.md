@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56dad9e36315c327cc7f39e075076b296d9af0f0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 121ac9d46450e88d826aa59ffde0216a7aac5231
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971604"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335003"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment 资源类型
 
@@ -55,8 +55,6 @@ TermsAndConditionsGroupAssignment 实体表示将给定条款和条件 (T&C) 策
   "targetGroupId": "String"
 }
 ```
-
-
 
 
 

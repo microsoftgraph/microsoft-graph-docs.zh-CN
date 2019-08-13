@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b647e89e02c53a0e0addf21f5501f8cc87fc960d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4136e8cded6efd3ed7351e080a81a7d91658c54c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952287"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331173"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952287"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -125,6 +125,7 @@ Content-Length: 1704
   }
 }
 ```
+
 
 
 

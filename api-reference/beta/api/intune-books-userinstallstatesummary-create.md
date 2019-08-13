@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b2857933d51c3b2f836c520e725c2563043a481
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33ce8deba11363f27971a3c5bc2ac1fef5c05a45
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959045"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335905"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959045"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -96,6 +96,7 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

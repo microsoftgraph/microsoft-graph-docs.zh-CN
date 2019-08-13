@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3d25b512a088900971c6471e1f66296858a5081
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f2d6cd9480cd38653aa35ed8e70705f6fe6ace3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005056"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335800"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
@@ -64,8 +64,6 @@ ms.locfileid: "36005056"
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
 
 
 

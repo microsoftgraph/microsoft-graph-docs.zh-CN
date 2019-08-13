@@ -4,12 +4,13 @@ description: 包含所有受支持的 Powershell 脚本输出检测类型。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 894dc61909f17244e3325675e198520cae5657ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 42cdd8c15cbf59e51375643852291d2c7e55ee2c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987332"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335590"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>win32LobAppPowerShellScriptDetectionType 枚举类型
 
@@ -29,8 +30,6 @@ ms.locfileid: "34987332"
 |点数|4|输出数据类型为 float。|
 |version|5|输出数据类型为版本。|
 |boolean|型|输出数据类型为布尔值。|
-
-
 
 
 

@@ -6,12 +6,12 @@ title: 更改共享权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: ef46b64db30c6d8ceaf65a2f4a7f4c935834b9b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 726f0fc85593d70b37162df94bce3a504b80b6e7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983493"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349556"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -84,7 +84,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

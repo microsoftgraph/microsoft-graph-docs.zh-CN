@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4eb20785ec070337cdfcf709dc6eb4f19310a3e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5456005027f817080eea44f707c47f10184c0d6f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960543"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329038"
 ---
 # <a name="list-mobilecontainedapps"></a>列出 mobileContainedApps
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960543"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -76,6 +76,7 @@ Content-Length: 150
   ]
 }
 ```
+
 
 
 

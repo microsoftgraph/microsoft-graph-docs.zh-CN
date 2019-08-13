@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c097d8340952bd2260ed0761ec26e4181f05f19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d29588a64ed816314ae671a52f40677b8d266ab
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961005"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329318"
 ---
 # <a name="get-mobileappassignment"></a>获取 mobileAppAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961005"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -82,6 +82,7 @@ Content-Length: 359
   }
 }
 ```
+
 
 
 

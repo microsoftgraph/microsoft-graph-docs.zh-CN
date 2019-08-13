@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3618a7838dcba59a954e35dc3bb1506ef3803972
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4a21faa0be644e9b44e456c7ffa7c3d93829795a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984158"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350638"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 函数
 
@@ -75,6 +75,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 

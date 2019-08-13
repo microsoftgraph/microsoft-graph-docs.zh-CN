@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 19d96ae6c56d0d37e857d6e9e1f0786f225e25e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b54a451ac3e4444d58ad6cdd66abba61d6d69fb4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971464"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334743"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 枚举类型
 
@@ -27,8 +27,6 @@ Android 设备所有者的 wi-fi 安全类型。
 |wep|1|WEP 加密。|
 |wpaPersonal|双面|WPA-个人/WPA2-个人。|
 |wpaEnterprise|4|WPA-企业/WPA2-企业。 必须使用 AndroidDeviceOwnerEnterpriseWifiConfiguration 类型配置企业选项。|
-
-
 
 
 

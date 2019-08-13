@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9ed04bc45a2e8ce728e31a408420fb2fc63573a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 41397aa9d2c10481a9eaab54d70f65a84b4d26c9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011440"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333784"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy 资源类型
 
@@ -45,8 +45,6 @@ BitLocker 可移动驱动器策略。
   "blockCrossOrganizationWriteAccess": true
 }
 ```
-
-
 
 
 

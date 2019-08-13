@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c27c26f374d2fd27056f1dd10c7744969828eab5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd7752774fdebf40b057463b29c2542829d2c61b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970218"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325489"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
 
@@ -27,8 +27,6 @@ LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能值
 |automaticallyDenyElevationRequests|1|自动拒绝提升请求|
 |promptForCredentialsOnTheSecureDesktop|双面|在安全桌面上提示凭据|
 |promptForCredentials|第三章|提示输入凭据|
-
-
 
 
 

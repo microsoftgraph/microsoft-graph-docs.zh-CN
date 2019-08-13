@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ecf7a5c439ef66da173307455a445915226b74f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 19cb7fed4ccdeeffa84aa78c165e95cc2e989afb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011510"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333966"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
@@ -38,8 +38,6 @@ Apple VPN 连接类型。
 |citrixSso|12|Citrix Sso。|
 |paloAltoGlobalProtectV2|13|Palo Alto 网络 GlobalProtect V2。|
 |ikEv2|日|IKEv2.|
-
-
 
 
 

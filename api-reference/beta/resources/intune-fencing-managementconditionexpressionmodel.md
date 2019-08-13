@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a12737a922d69ecd2fc9ceceee34d3700807b5f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1e1562cf7676fcbf95e864f77bed3f849f65f7c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998742"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331656"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>managementConditionExpressionModel 资源类型
 
@@ -42,8 +42,6 @@ ms.locfileid: "35998742"
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
-
-
 
 
 

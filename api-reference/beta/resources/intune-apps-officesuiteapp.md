@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2af74f6c917004a254e5f3b33d9d6f3b7fafea9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1bef472078781b63173deb7896946590a5d9e129
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005098"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335849"
 ---
 # <a name="officesuiteapp-resource-type"></a>officeSuiteApp 资源类型
 
@@ -145,8 +145,6 @@ ms.locfileid: "36005098"
   "officeConfigurationXml": "binary"
 }
 ```
-
-
 
 
 

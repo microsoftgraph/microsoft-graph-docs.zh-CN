@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c8386f19a9a6700aafa9b783c973a3c232f9bf8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff5299072944ba7a9df161e66af72046da537432
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000417"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337791"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration 资源类型
 
@@ -77,7 +77,6 @@ ms.locfileid: "36000417"
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定允许哪些用户从网络上的远程位置关闭计算机。 误用此用户权限可能会导致拒绝服务。 仅支持 NotConfigured 和允许的状态。|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定在还原备份的文件和目录时, 哪些用户可以绕过文件、目录、注册表和其他持久对象权限, 并确定哪些用户可以将任何有效的安全主体设置为对象的所有者。 仅支持 NotConfigured 和允许的状态。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定哪些用户可以获得系统中任何安全对象的所有权, 包括 Active Directory 对象、文件和文件夹、打印机、注册表项、进程和线程。 仅支持 NotConfigured 和允许的状态。|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此安全设置确定阻止将进程注册为服务的服务帐户。 注意: 此安全设置不适用于系统、本地服务或网络服务帐户。 仅支持阻止状态。|
 |xboxServicesEnableXboxGameSaveTask|Boolean|此设置确定是否启用了 xbox 游戏保存 (1) 或禁用 (0)。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定附件管理服务的启动类型是 "自动" (2)、"手动" (3)、"已禁用" (4)。 默认: 手动。 可取值为：`manual`、`automatic`、`disabled`。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|此设置确定 Live Auth Manager 服务的启动类型是否为自动 (2)、手动 (3)、已禁用 (4)。 默认: 手动。 可取值为：`manual`、`automatic`、`disabled`。|
@@ -656,18 +655,6 @@ ms.locfileid: "36000417"
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "String",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "String",
-        "description": "String",
-        "securityIdentifier": "String"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "String",
   "xboxServicesLiveAuthManagerServiceStartupMode": "String",
@@ -939,8 +926,6 @@ ms.locfileid: "36000417"
   }
 }
 ```
-
-
 
 
 

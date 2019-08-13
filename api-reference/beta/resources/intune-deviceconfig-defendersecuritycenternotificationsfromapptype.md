@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aa5428b91f2d4486553dc8995a38553d3c705937
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c9ce9b4e15d6a63c9e7382d85055aa179a193ddc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970876"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333442"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>defenderSecurityCenterNotificationsFromAppType 枚举类型
 
@@ -26,8 +26,6 @@ DefenderSecurityCenterNotificationsFromApp 的可能值
 |notConfigured|0|未配置|
 |blockNoncriticalNotifications|1|阻止非关键通知|
 |blockAllNotifications|双面|阻止所有通知|
-
-
 
 
 

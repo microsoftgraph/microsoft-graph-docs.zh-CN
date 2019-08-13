@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2da99bc698993c57b67cbb009486953e6807c1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a11a58f8edf38225ddbd01edfa4c55457840ac9e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993541"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350536"
 ---
 # <a name="create-windowsdomainjoinconfiguration"></a>创建 windowsDomainJoinConfiguration
 
@@ -129,6 +129,9 @@ Content-Length: 667
   "organizationalUnit": "Organizational Unit value"
 }
 ```
+
+
+
 
 
 

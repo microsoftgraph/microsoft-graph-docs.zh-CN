@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4209421a952ddfbcfa762cd7d5b6c7eb68cba8b2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cde55975dab7b216c904bb15e2d1a8cb3224496b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999225"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328016"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 
@@ -87,8 +87,6 @@ DepOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 09918437827524eeec00b819041a2fadb3705a10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c847e8ce2c30e505a41fc7b7b5a7566f44d36eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004573"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333952"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 枚举类型
 
@@ -28,8 +28,6 @@ ApplicationGuardBlockClipboardSharingType 的可能值
 |blockHostToContainer|双面|阻止剪贴板将数据从主机共享到容器|
 |blockContainerToHost|第三章|阻止剪贴板将数据从容器共享到主机|
 |blockNone|4|阻止剪贴板将数据从主机共享到容器, 也不将其从容器共享到主机|
-
-
 
 
 
