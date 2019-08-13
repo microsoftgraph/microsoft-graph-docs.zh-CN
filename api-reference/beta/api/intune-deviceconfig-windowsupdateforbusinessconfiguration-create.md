@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94b81dd406e3ed4bb7cc1071f1a9f3604b7b492d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81cd90e62533d386be223b34b19bcf53a65125b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986293"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338250"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>创建 windowsUpdateForBusinessConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986293"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -88,6 +88,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |engagedRestartDeadlineInDays|Int32|在非活动时段自动安排和执行挂起的重启的期限 (以天为单位), 有效范围为2到30天|
 |engagedRestartSnoozeScheduleInDays|Int32|用户可推迟预定重启提醒通知的天数, 有效范围为1到3天|
 |engagedRestartTransitionScheduleInDays|Int32|从主动时段之外的计划的自动重启转换为预定重启 (需要用户进行计划, 有效范围为0到30天) 的天数|
+|deadlineForFeatureUpdatesInDays|Int32|自动安装具有介于2到30天的有效范围的功能更新之前的天数|
+|deadlineForQualityUpdatesInDays|Int32|自动安装质量更新前的天数介于2到30天的有效范围内|
+|deadlineGracePeriodInDays|Int32|使用有效范围 (范围为0到7天) 自动重新启动之前的最后期限的天数|
+|postponeRebootUntilAfterDeadline|Boolean|指定设备是否应等到最后期限结束后才能在 active 时段之外进行重新启动|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|指定用于消除 "需要自动重新启动" 通知的方法。 可取值为：`notConfigured`、`automatic`、`user`。|
 |scheduleRestartWarningInHours|Int32|指定自动重新启动警告提醒通知的期限。 支持的值: 2、4、8、12或 24 (小时)。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重启即将发生的警告通知的期限。 支持的值:15、30或 60 (分钟)。|
@@ -107,7 +111,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2676
+Content-length: 2840
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -168,6 +172,10 @@ Content-length: 2676
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -182,7 +190,7 @@ Content-length: 2676
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2848
+Content-Length: 3012
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -246,6 +254,10 @@ Content-Length: 2848
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -254,6 +266,7 @@ Content-Length: 2848
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
+
 
 
 
