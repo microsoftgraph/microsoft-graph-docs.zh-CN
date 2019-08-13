@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92eb0206e55887588d85759fba8b86fc86e7bb2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c77df237faf305144d72732b4ea067874bef56e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961915"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330102"
 ---
 # <a name="list-macosvppappassignedlicenses"></a>列出 macOsVppAppAssignedLicenses
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961915"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 342
   ]
 }
 ```
+
 
 
 

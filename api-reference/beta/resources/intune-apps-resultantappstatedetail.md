@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a9014a83f69a6b5429a532dbd22e991c3a049713
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c41d979e311f31ed32b07ff2b607082367114131
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012392"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335841"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "36012392"
 |minimumOsVersionNotMet|-1002|目标设备上的 OS 版本小于配置的最小值。|
 |minimumDiskSpaceNotMet|-1001|目标设备上的可用磁盘空间小于配置的最小值。|
 |processorArchitectureNotApplicable|-1000|设备体系结构 (例如, x86/amd64) 不适用于应用程序。|
-
-
 
 
 

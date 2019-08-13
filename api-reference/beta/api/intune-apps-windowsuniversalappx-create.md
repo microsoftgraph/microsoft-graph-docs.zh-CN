@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe23f3455ad5495137cf57cf5dcc51400cf3fea9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 52e505e0ab76399dc9a8c6656c2aa2b3ce2e240c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959703"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336220"
 ---
 # <a name="create-windowsuniversalappx"></a>创建 windowsUniversalAppX
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959703"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -200,6 +200,7 @@ Content-Length: 1633
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

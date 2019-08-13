@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e633e0dab4069997843e733431a601697b23dd30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b8f18b36383b9a7bfee6fa541a60248d9f5c851
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011118"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331705"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>locationManagementCondition 资源类型
 
@@ -69,8 +69,6 @@ ms.locfileid: "36011118"
   ]
 }
 ```
-
-
 
 
 

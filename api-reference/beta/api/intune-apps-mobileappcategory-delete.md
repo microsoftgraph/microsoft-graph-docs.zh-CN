@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 009bab5930392039f307104701a6585d1e6c82ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4938f53c71791933a05702e328e4b7665018d44e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960935"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329284"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960935"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

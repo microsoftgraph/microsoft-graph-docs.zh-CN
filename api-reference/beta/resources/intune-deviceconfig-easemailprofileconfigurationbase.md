@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ab60f263ff820886c10cbdb9e4c6fab40c559e2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1311c25a494a60fda9f75c055f0592984352991c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004475"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332622"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>easEmailProfileConfigurationBase 资源类型
 
@@ -107,8 +107,6 @@ Apple 设备功能配置的配置文件。
   "customDomainName": "String"
 }
 ```
-
-
 
 
 

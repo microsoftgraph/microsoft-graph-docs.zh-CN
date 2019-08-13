@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44b388d571218a4f6eff031485ce5e080cfb19ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c2025f26bdb4099e652d1ba094022a470227fb29
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004692"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334512"
 ---
 # <a name="androidforworkscepcertificateprofile-resource-type"></a>androidForWorkScepCertificateProfile 资源类型
 
@@ -146,8 +146,6 @@ ms.locfileid: "36004692"
   ]
 }
 ```
-
-
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 使用此 API 检索特定格式的项的内容。
 doc_type: apiPageType
-ms.openlocfilehash: 6472daba727cb412fb9c4ab3fa3e3b2160b560e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c2757a64e15865e8278fd38dfed49916dd71d133
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015493"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375077"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -68,7 +68,7 @@ GET /me/drive/items/{item-id}/content?format={format}
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

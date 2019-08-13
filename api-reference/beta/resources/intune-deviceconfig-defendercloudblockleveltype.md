@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 928a39e25a02286159ba886bed9c1415b038edbf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc0e99f9d964e80410b10bc48e20ea0a5fd1d608
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001787"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333588"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "36001787"
 |高效|1|High 适用于强级别的检测。|
 |highPlus|双面|高级别 + 使用高级别, 并应用附加保护措施|
 |zeroTolerance|第三章|零耐受性阻止所有未知可执行文件|
-
-
 
 
 

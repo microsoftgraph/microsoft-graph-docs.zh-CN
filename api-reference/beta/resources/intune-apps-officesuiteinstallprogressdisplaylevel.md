@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 32ac5c8f9a6dc538d828c4659d9fa6f9f36a0339
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9414ba9730ae355b2cc1392eb9e90e0e481bc699
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012408"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335856"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>officeSuiteInstallProgressDisplayLevel 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "36012408"
 |:---|:---|:---|
 |无|0|尚未记录|
 |全|1|尚未记录|
-
-
 
 
 

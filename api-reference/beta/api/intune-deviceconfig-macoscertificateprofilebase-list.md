@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b15ab44953871f4f250e9b2138de3a1062ed0d22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 805c0ec6de518ca96e6523a42826261cf25a3c14
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947590"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338915"
 ---
 # <a name="list-macoscertificateprofilebases"></a>列出 macOSCertificateProfileBases
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947590"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 1602
   ]
 }
 ```
+
 
 
 

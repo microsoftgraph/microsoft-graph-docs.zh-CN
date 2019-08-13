@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d7f946f113288ac95c87053a06ffd737de3dddc4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da068811f9a0a2d45ee2bc8f4bda2da088ed1065
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998995"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327694"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "35998995"
 |notAssigned|4|未分配|
 |决|5|挂起分配|
 |未能|型| 分配失败|
-
-
 
 
 

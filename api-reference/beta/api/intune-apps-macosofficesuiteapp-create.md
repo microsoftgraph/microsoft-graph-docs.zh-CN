@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11321fd0e786c5c960b371428ae176a957fb050f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9112d278b1cf560f813a3838b1b796ea4c8bc71c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962085"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330200"
 ---
 # <a name="create-macosofficesuiteapp"></a>创建 macOSOfficeSuiteApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962085"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -145,6 +145,7 @@ Content-Length: 890
   "dependentAppCount": 1
 }
 ```
+
 
 
 

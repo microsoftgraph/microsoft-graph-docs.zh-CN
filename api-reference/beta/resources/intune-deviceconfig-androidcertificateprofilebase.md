@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3cc14696de5abe76ba29a231a0abb387e52b2eb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b77822ad449074e0254e40784ca1f81d1fb11ec3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004678"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334918"
 ---
 # <a name="androidcertificateprofilebase-resource-type"></a>androidCertificateProfileBase 资源类型
 
@@ -118,8 +118,6 @@ Android 证书配置文件基。
   ]
 }
 ```
-
-
 
 
 

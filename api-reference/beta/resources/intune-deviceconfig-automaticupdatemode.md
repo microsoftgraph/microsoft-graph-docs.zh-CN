@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d5df7cc791947e46b5da11c3162c0c5cf945bdd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8d64f3af656a03bd02ecba5db2fbdab288f3693
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011468"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333882"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36011468"
 |autoInstallAndRebootAtScheduledTime|4|在计划的时间自动安装和重启。|
 |autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控件的情况下自动安装和重启|
 |windowsDefault|型|重置为 Windows 默认值。|
-
-
 
 
 

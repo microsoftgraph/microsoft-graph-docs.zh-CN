@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67fabcf6f369db297d104f2273969b4682475084
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77a9fe0aecc6317ef750f066228f28b714b86796
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979671"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350637"
 ---
 # <a name="get-user"></a>获取用户
 
@@ -89,6 +89,9 @@ Content-Length: 118
   }
 }
 ```
+
+
+
 
 
 

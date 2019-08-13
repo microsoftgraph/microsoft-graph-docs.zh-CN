@@ -4,12 +4,13 @@ description: 包含用于检测 Win32 应用程序的文件或文件夹路径
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90d620a13b6472960dad7ab6edd90b1d237387d2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f57206e7fda4eedb55be1e4ceba89323084289dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987318"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335695"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>win32LobAppFileSystemRequirement 资源类型
 
@@ -53,8 +54,6 @@ ms.locfileid: "34987318"
   "detectionType": "String"
 }
 ```
-
-
 
 
 

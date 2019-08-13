@@ -4,12 +4,13 @@ description: 尚未记录
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bc8f646cae00e817b375fddd6a28a8c3fa92c05
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8833467383670500d060246d1714fa6dc2770934
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974242"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336752"
 ---
 # <a name="updaterelationships-action"></a>updateRelationships 操作
 
@@ -26,7 +27,7 @@ ms.locfileid: "34974242"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +87,7 @@ Content-length: 256
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd8a2ec24eac6e7dc76525ea7d94bc42d26e33b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53b6751e8ec51fb3e4e23e95d5b20a6c91efe3f9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011566"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334008"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase 资源类型
 
@@ -109,8 +109,6 @@ Apple 设备功能配置的配置文件。
   ]
 }
 ```
-
-
 
 
 

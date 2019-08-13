@@ -4,12 +4,13 @@ description: 更新 securityBaselineCategoryStateSummary 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 559a4befe8c5a11f7683be35f5ade8a39a323e03
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 67a7211a65fcd7d88e8245e7fd7aba641e655fd6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959591"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349164"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>更新 securityBaselineCategoryStateSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959591"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -104,6 +105,7 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

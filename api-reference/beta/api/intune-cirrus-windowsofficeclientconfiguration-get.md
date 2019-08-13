@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c9df4d2f9905979bc7add86b741545098635c1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e1f34ead1df597a6b94df224398a6f6c2f77ab3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958821"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328226"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>获取 windowsOfficeClientConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958821"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -101,6 +101,9 @@ Content-Length: 1144
   }
 }
 ```
+
+
+
 
 
 

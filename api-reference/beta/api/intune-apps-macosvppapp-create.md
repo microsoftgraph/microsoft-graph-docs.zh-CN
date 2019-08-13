@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bc3acdd5250e4002a232e3cba3b31ba9e81b764
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9bca956520aa9187edb19950e743b76f6fe805aa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962041"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330158"
 ---
 # <a name="create-macosvppapp"></a>创建 macOsVppApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962041"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -216,6 +216,7 @@ Content-Length: 2041
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba89d0101a603634399641ef1f9ccff28c02c42f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 782ed9a68ee3e759e719b14c2241cc1a02e30138
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970778"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333350"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>deliveryOptimizationBandwidthPercentage 资源类型
 
@@ -48,8 +48,6 @@ ms.locfileid: "35970778"
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
-
-
 
 
 

@@ -4,12 +4,13 @@ description: 介绍了如何将子移动应用程序与其父移动应用程序�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e193878122a3a43cd97d05ad1bdc5bea302fcc8a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 97ff0d0331523a93d57c9f14cd8bb45910b9cdb2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991819"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331852"
 ---
 # <a name="mobileapprelationship-resource-type"></a>mobileAppRelationship 资源类型
 
@@ -51,8 +52,6 @@ ms.locfileid: "34991819"
   "targetDisplayName": "String"
 }
 ```
-
-
 
 
 

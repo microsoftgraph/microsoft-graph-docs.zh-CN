@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8fe0b437c2d294ff8603f164f87854bdf60926c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ec5cb1f4eb3bc35696f9ddc4f63b9c7554a1808
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999008"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327736"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -96,8 +96,6 @@ WindowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "managedDeviceId": "String"
 }
 ```
-
-
 
 
 

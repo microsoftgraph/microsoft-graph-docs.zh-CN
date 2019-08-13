@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 339dc8a824073f609ee580042895bd3a59f58e43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e479f925e8b52ae746180851ce52ad116774367
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998434"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332209"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35998434"
 |managedAppsWithPasteIn|1|允许在启用了粘贴的所有托管应用之间进行共享|
 |managedApps|双面|允许在所有托管应用之间进行共享|
 |堵塞|第三章|已禁用应用程序之间的共享|
-
-
 
 
 

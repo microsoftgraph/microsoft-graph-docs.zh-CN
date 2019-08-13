@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8488c5849466c92860c194c0d24540919dd5d810
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56533377462f65428298d2878192faa9e1afb6df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971100"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333861"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 枚举类型
 
@@ -26,8 +26,6 @@ Auto restart 必需的通知开除方法
 |notConfigured|0|未配置|
 |自动|1|自动开除|
 |user|双面|用户开除|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8dcff60b0da67b5a73e14e29e9f3e170175e926
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 97d0da088d76771f88d5838cf973d0f224974a13
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000282"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337718"
 ---
 # <a name="windowsphone81vpnconfiguration-resource-type"></a>windowsPhone81VpnConfiguration 资源类型
 
@@ -145,8 +145,6 @@ ms.locfileid: "36000282"
   ]
 }
 ```
-
-
 
 
 

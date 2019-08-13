@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5006291da4739c494a95ec12970b52807848d37f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c118f1c6eaed6acd1490c0c394acfa969ce4094
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011629"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334169"
 ---
 # <a name="androidworkprofilegmaileasconfiguration-resource-type"></a>androidWorkProfileGmailEasConfiguration 资源类型
 
@@ -115,8 +115,6 @@ ms.locfileid: "36011629"
   "usernameSource": "String"
 }
 ```
-
-
 
 
 

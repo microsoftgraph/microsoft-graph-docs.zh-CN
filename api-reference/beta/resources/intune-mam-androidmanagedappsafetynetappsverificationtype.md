@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 210fffe772918889a74e981d91c7d2cf7ca47224
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eebae7c21b7089718d5dc514511f4e3530db58c7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968069"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332342"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>androidManagedAppSafetyNetAppsVerificationType 枚举类型
 
@@ -25,8 +25,6 @@ ms.locfileid: "35968069"
 |:---|:---|:---|
 |无|0|无要求集|
 |enabled|1|要求 Android 设备已启用 SafetyNet 应用验证|
-
-
 
 
 

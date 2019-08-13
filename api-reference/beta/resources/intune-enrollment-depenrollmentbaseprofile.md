@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d77f585c3c20b7291db93527f910d35b1bcc1df8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 611df6a0aff2c2d3c0d6728aa9bbaa443d772a35
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999274"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328065"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile 资源类型
 
@@ -101,8 +101,6 @@ DepEnrollmentBaseProfile 资源表示 Apple 设备注册计划 (DEP) 注册配�
   "deviceNameTemplate": "String"
 }
 ```
-
-
 
 
 

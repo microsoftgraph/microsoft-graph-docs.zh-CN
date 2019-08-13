@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 001c6d61bdb4faca52292156854a776d6fc47f59
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c0d1a2b293bc8f8331c1f340355a15a4bdb3eed
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968797"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337802"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>windowsPhone81CustomConfiguration 资源类型
 
@@ -113,8 +113,6 @@ ms.locfileid: "35968797"
   ]
 }
 ```
-
-
 
 
 

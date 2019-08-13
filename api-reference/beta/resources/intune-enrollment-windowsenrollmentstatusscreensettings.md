@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80d869c3d80e7c164808147f732bf58bf5c1a15a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f556b8e0f3bd634ce0e8bfe855d6615d9e58d623
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998848"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327666"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
 
@@ -53,8 +53,6 @@ ms.locfileid: "35998848"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
-
-
 
 
 

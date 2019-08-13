@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8916392d2870aa7f6279b757487c5a67ac8b99d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bfce37f4c636778825c40eac084ceea52213b4e2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011902"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334967"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 
@@ -40,8 +40,6 @@ ms.locfileid: "36011902"
 |tpmNotAvailable|8192|TPM 对 BitLocker 不可用。 这意味着 TPM 不存在, 或者设置了 TPM 不可用注册表替代, 或者主机 OS 位于便携/罗马盘上|
 |tpmNotReady|16384|TPM 尚未准备好用于 BitLocker|
 |networkError|32768|网络不可用。 这是恢复密钥备份所必需的。 此报告适用于支持驱动器加密的设备|
-
-
 
 
 

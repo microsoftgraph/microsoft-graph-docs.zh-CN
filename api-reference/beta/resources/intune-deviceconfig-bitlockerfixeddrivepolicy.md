@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3269fb0865f8cf08a4dbade3d949701b027b84fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3724979245c53d980eb66df9d29f3e02aaaf1943
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971086"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333812"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitLockerFixedDrivePolicy 资源类型
 
@@ -54,8 +54,6 @@ BitLocker 固定驱动器策略。
   }
 }
 ```
-
-
 
 
 

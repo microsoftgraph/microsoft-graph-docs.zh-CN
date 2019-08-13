@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eda8f89a905d01b2ae41bb68ec61ec917a8bc264
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad1f8c2d4c680ef3594d29a11eb15edcb708b77a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004818"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335100"
 ---
 # <a name="managedebookcategory-resource-type"></a>managedEBookCategory 资源类型
 
@@ -55,8 +55,6 @@ ms.locfileid: "36004818"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

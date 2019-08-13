@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14e277258f4e8bbad75c3457b6c3da6dd604ff01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a39d99c9b45e39af9104ae3cea2c68fe2898a093
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970816"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333378"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute 资源类型
 
@@ -48,8 +48,6 @@ ms.locfileid: "35970816"
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
-
-
 
 
 

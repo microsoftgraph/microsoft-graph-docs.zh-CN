@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08e9487fc4c3f63399027e0fe40b5c90ba761547
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2399d656f0a6afe59fc32e30e7f05c50037855c0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999162"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327946"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
 
@@ -72,8 +72,6 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
   "platform": "String"
 }
 ```
-
-
 
 
 
