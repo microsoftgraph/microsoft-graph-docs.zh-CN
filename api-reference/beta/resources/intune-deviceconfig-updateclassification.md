@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3575bf0ea001c34e0345448a1b707cf346a71fba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25a7bc809b419cc553a47804c499cbd65695bdce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969588"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367853"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 
@@ -27,8 +27,6 @@ ms.locfileid: "35969588"
 |recommendedAndImportant|1|建议和重要。|
 |重要|双面|重要.|
 |无|第三章|无。|
-
-
 
 
 

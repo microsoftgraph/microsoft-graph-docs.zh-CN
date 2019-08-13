@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 84de417a25f1945093c772803f5fd23c880e7ed3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5d6865958b8a1098b491d2557fa1245ce65d1104
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994878"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354334"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994878"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -138,6 +138,7 @@ Content-Length: 2944
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e6511ba5c57dbdd7ad02b632a5bcd17b59071385
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 04287dbf3e7ea75c8fc9503ede895821eb906f5f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990237"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355414"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>获取 networkIPv4ConfigurationManagementCondition
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990237"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -94,6 +94,7 @@ Content-Length: 756
   }
 }
 ```
+
 
 
 

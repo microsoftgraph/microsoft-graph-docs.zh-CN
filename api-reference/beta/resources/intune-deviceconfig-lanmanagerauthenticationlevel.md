@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f76a0b685a0759a4455d8de805424ddd09758a63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ade139765c9a362cd0c9f9365af0026c51ecb4ce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970281"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356723"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 枚举类型
 
@@ -29,8 +29,6 @@ LanManagerAuthenticationLevel 的可能值
 |lmAndNtlmV2|第三章|仅发送 LM & NTLMv2 响应|
 |lmNtlmV2AndNotLm|4|仅发送 LM & NTLMv2 响应。 拒绝 LM|
 |lmNtlmV2AndNotLmOrNtm|5|仅发送 LM & NTLMv2 响应。 拒绝 LM & NTLM|
-
-
 
 
 

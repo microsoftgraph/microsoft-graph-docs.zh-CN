@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4abe8f9b22cdc75e8e560ddb9e15a75425cb3f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 97ac2092573639db5d46386fe9475df26b136e80
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011412"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368497"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime 资源类型
 
@@ -50,8 +50,6 @@ OMA 设置日期时间定义。
   "value": "String (timestamp)"
 }
 ```
-
-
 
 
 

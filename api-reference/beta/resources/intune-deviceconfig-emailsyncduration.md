@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6e9c13ce0acece82e7a890fd021dac4ab5c7fbb0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc05be47c2adc0764a2cdb1e69f7ec11413320cc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004384"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357192"
 ---
 # <a name="emailsyncduration-enum-type"></a>emailSyncDuration 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36004384"
 |twoWeeks|4|同步两周的电子邮件。|
 |oneMonth|5|同步一个月的电子邮件。|
 |不限制|型|同步无限制的电子邮件持续时间。|
-
-
 
 
 

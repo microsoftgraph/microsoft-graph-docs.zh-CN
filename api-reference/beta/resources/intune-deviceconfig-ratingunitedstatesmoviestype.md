@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aae50d5061e2b3836801c06337678d4d5082c000
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1cc9a4a929b7b563322e8e2a50855592006ca323
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368147"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 
@@ -30,8 +30,6 @@ ms.locfileid: "36000632"
 |parentalGuidance13|4|PG13, 某些材料可能不适用于13岁以下的儿童|
 |受限|5|R, 17 下的查看者需要伴随父或成人监护人|
 |成人|型|NC17, 仅成人|
-
-
 
 
 

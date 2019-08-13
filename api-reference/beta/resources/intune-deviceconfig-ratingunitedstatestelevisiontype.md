@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 22afb0e2dc6c7f36acbc528dc93669611d762f79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 142552da06e0c07fca3d8a59e23ebe536c709495
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969756"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368119"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 枚举类型
 
@@ -31,8 +31,6 @@ ms.locfileid: "35969756"
 |parentalGuidance|5|TV PG、家长指导|
 |childrenAbove14|型|电视-14, 儿童年龄14及更高版本|
 |成人|步|仅限成人的电视-MA|
-
-
 
 
 

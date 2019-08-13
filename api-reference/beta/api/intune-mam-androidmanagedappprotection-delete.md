@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4af3bf6759454b2688a80870c6ccbceccaadd18f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5a2bd2d0c4d14df7c3aefdd20909b59ed22b082
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995109"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354413"
 ---
 # <a name="delete-androidmanagedappprotection"></a>删除 androidManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995109"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppPro
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

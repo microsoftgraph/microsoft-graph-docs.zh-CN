@@ -4,12 +4,13 @@ description: 确定检查等连接是否仍处于活动状态的频率
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eb57153fcb87e782cf549e1038094c7a9b40302
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 65be92650173c122a0ecf0e5c760c509658f7d39
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002719"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367741"
 ---
 # <a name="vpndeadpeerdetectionrate-enum-type"></a>vpnDeadPeerDetectionRate 枚举类型
 
@@ -26,8 +27,6 @@ ms.locfileid: "35002719"
 |无|1|无|
 |降低|双面|低|
 |高效|第三章|高|
-
-
 
 
 

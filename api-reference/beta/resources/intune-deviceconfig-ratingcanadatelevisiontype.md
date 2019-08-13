@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 06385e70c62e982b480d26f9cbbda3ad3c4c79e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cf15a558e4556684c705bce184f9a7bba3b4f17
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969854"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368329"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType 枚举类型
 
@@ -31,8 +31,6 @@ ms.locfileid: "35969854"
 |parentalGuidance|5|PG、家长指导|
 |agesAbove14|型|14 + 分类适用于14岁及更早的查看者|
 |agesAbove18|步|18个以上的分类适用于18岁及更早的查看者|
-
-
 
 
 

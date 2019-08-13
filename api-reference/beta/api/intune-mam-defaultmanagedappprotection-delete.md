@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bddc8b32dc8be45b20bb32283c5ef84be428d724
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2709df125ddb1fa332ade1aa11c8353f767df422
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994920"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354357"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>删除 defaultManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994920"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppPro
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5be0888058275fb2444488ca15fd20e5be39a2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db05bc349c4d5556d5d44db3aabaf12f4cb8159f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981050"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356373"
 ---
 # <a name="update-importeddeviceidentity"></a>更新 importedDeviceIdentity
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981050"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -106,6 +106,7 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
 
 
 

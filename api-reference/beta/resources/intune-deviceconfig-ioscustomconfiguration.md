@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6993cd29b7b9f0d31f6a5c78bddc09c7f1760e3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e079db0e3c31585c617933cee79e4c1be32158f6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004335"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357199"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration 资源类型
 
@@ -108,8 +108,6 @@ ms.locfileid: "36004335"
   "payload": "binary"
 }
 ```
-
-
 
 
 

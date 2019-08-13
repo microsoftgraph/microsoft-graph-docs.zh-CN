@@ -4,12 +4,13 @@ description: 通过提供此配置文件中的配置, 可以指示 iOS 设备连
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69267d6d100f54569450a0469952c5bfe4b788f9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 69a59defd2b92300593efc4385da43db02289426
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737501"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356989"
 ---
 # <a name="iosikev2vpnconfiguration-resource-type"></a>iosikEv2VpnConfiguration 资源类型
 
@@ -240,8 +241,6 @@ ms.locfileid: "35737501"
   "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
-
-
 
 
 

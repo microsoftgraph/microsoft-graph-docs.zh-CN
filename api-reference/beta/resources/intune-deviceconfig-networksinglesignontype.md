@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 196164aa58922d02d4efea9d5301bcb767f900d0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d6c9c2f2458fc4b2a04afd68856b7fcd8021264
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970029"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368595"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 枚举类型
 
@@ -26,8 +26,6 @@ ms.locfileid: "35970029"
 |禁用|0|已禁用|
 |prelogon|1|预登录|
 |postlogon|双面|登录后|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d38f53f343dc3db6e4f81df2fab0484b2a38ea11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 07d61402d5528b21da8601e99c8fa048d7e460c2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980231"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352320"
 ---
 # <a name="delete-vpptoken"></a>删除 vppToken
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980231"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

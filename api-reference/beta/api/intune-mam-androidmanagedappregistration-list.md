@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 714ae4a22a00d5f4dab8fbe07b44b2d928b13876
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 779c317a795353ad098d613a9798e2e83ff8e1ce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994941"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354378"
 ---
 # <a name="list-androidmanagedappregistrations"></a>列出 androidManagedAppRegistrations
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994941"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -96,6 +96,7 @@ Content-Length: 1116
   ]
 }
 ```
+
 
 
 

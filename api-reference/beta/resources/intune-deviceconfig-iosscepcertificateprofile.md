@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab4695e5f2b73b8a90a3a0596f84a80fc081d935
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd5c06dd9bf3f658d1c0c873091ce8b8c9015666
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004202"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356828"
 ---
 # <a name="iosscepcertificateprofile-resource-type"></a>iosScepCertificateProfile 资源类型
 
@@ -144,8 +144,6 @@ iOS SCEP 证书配置文件。
   ]
 }
 ```
-
-
 
 
 

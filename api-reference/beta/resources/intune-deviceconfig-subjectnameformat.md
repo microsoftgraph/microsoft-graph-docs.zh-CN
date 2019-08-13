@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f6a86028f9f024156431b8f6e126eaf5ddadcd6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bf58d4ef7762d4631328d0e0e122a9902bc2c83e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969623"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367867"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 
@@ -32,8 +32,6 @@ ms.locfileid: "35969623"
 |commonNameAsAadDeviceId|步|作为序列号的常用名称。|
 |commonNameAsIntuneDeviceId|utf-8|作为序列号的常用名称。|
 |commonNameAsDurableDeviceId|第|作为序列号的常用名称。|
-
-
 
 
 
