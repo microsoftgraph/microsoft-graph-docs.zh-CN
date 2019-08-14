@@ -5,12 +5,12 @@ description: 描述 Microsoft Graph API (REST) 的 signIn 资源，这有利于�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6197600854833f7887556c35a511fad61b4539d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a0f3977c14ce8e0e53cdbd296ea28c4b79f5762
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965059"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396742"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "35965059"
 |appDisplayName|String|表示 Azure 门户中显示的应用程序名称。|
 |appId|String|表示唯一 GUID（表示 Azure Active Directory 中的应用程序 ID）。|
 |clientAppUsed|String|提供用于登录活动的旧版客户端。例如， 包括浏览器、Exchange Active Sync、新式客户端、IMAP、MAPI SMTP、POP。|
-|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) 集合|提供由相应登录活动触发的条件访问策略列表。|
+|appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) 集合|提供由相应登录活动触发的条件访问策略列表。|
 |conditionalAccessStatus|string| 提供触发的条件访问策略的状态。 可取值为：`success`、`failure`、`notApplied`、`unknownFutureValue`。|
 |originalRequestId|String|身份验证序列中第一个请求的请求 ID。|
 |isInteractive|Boolean|指示登录是否为交互式。|
@@ -89,7 +89,7 @@ ms.locfileid: "35965059"
   "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "originalRequestId": "String",
   "isInteractive": "String",
   "tokenIssuerName": "String",

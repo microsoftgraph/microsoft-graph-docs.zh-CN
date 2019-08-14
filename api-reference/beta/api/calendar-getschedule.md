@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9690412df1f4e1e27edec9d30555fb71f5d0c929
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d152f88e2b29037bf6dcb54dbffebe4b29d8c4cd
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317898"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396714"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -65,7 +65,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/beta/me/calendar/getSchedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -79,7 +79,7 @@ Content-Type: application/json
         "dateTime": "2019-03-15T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "availabilityViewInterval": "60"
+    "availabilityViewInterval": 60
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

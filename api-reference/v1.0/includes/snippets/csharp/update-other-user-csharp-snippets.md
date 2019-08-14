@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d54d3d2cef8ab1acb7933f18975d137a14eaf312
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a77b2874d4e70f79d99c00d0a9895bee1bcb4f80
 ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396917"
+ms.locfileid: "36396833"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var user = new User
     OfficeLocation = "city-value"
 };
 
-await graphClient.Me
+await graphClient.Users["{id}"]
     .Request()
     .UpdateAsync(user);
 

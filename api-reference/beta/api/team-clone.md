@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 892a6de6dd191b43fe139acf7f8340fd14c8da5a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ed4880d80bd94febc4d12deb04ca10a4cb7dad3
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990846"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396735"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -28,7 +28,7 @@ ms.locfileid: "35990846"
 当选项卡被克隆时, 它们将被置于未配置状态--它们将显示在 Microsoft 团队中的选项卡栏上, 在第一次打开它们时, 您将完成配置屏幕。 (如果打开该选项卡的用户没有配置应用的权限, 他们将看到一条消息, 说明该选项卡尚未配置。)
 
 克隆是一项长时间运行的操作。
-在 POST 克隆返回之后, 您需要获取[操作](../resources/teamsasyncoperation.md), 以查看它是 "正在运行" 还是 "已成功" 或 "失败"。 您应继续获取, 直到状态不为 "正在运行"。 建议的获取延迟为5秒。
+在 POST 克隆返回之后, 您需要获取 Location: 头所返回的[操作](../resources/teamsasyncoperation.md), 以查看它是 "正在运行" 还是 "已成功" 或 "失败"。 您应继续获取, 直到状态不为 "正在运行"。 建议的获取延迟为5秒。
 
 ## <a name="permissions"></a>权限
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: c81241620f99f154b4e3cca797e9cdab330bda7d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1c248f59596c5d7de2f51b65298386927aaff1f1
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711267"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396805"
 ---
 ```objc
 
@@ -17,11 +17,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
-[user setAccountEnabled: true];
 NSMutableArray *businessPhonesList = [[NSMutableArray alloc] init];
 [businessPhonesList addObject: @"businessPhones-value"];
 [user setBusinessPhones:businessPhonesList];
-[user setCity:@"city-value"];
+[user setOfficeLocation:@"city-value"];
 
 NSError *error;
 NSData *userData = [user getSerializedDataWithError:&error];
