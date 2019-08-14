@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 64f3465f2cca9a803587aec82f5a86b32e439e67
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d54d3d2cef8ab1acb7933f18975d137a14eaf312
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711266"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396826"
 ---
 ```csharp
 
@@ -13,12 +13,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var user = new User
 {
-    AccountEnabled = true,
     BusinessPhones = new List<String>()
     {
         "businessPhones-value"
     },
-    City = "city-value"
+    OfficeLocation = "city-value"
 };
 
 await graphClient.Me

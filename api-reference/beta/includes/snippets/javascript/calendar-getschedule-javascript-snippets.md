@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d630cc2ba6601cbc82bfbbd6415392637d3b074d
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 357e9ed22c5f0399cff9bc85ed2abe58ef7eee6e
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930909"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396700"
 ---
 ```javascript
 
@@ -25,10 +25,10 @@ const scheduleInformation = {
         dateTime: "2019-03-15T18:00:00",
         timeZone: "Pacific Standard Time"
     },
-    availabilityViewInterval: "60"
+    availabilityViewInterval: 60
 };
 
-let res = await client.api('/me/calendar/getschedule')
+let res = await client.api('/me/calendar/getSchedule')
     .version('beta')
     .post(scheduleInformation);
 

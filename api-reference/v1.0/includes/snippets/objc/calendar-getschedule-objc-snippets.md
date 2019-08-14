@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f41846f8d3d37d8b98db9a1559ceff4fc362ad11
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 53bed3f4a09ae4932eeab090dd568c7397e6106e
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932086"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396770"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/calendar/getschedule"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/calendar/getSchedule"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"outlook.timezone=\"Pacific Standard Time\"" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
@@ -34,7 +34,7 @@ MSGraphDateTimeTimeZone *endTime = [[MSGraphDateTimeTimeZone alloc] init];
 [endTime setTimeZone:@"Pacific Standard Time"];
 payloadDictionary[@"endTime"] = endTime;
 
-NSString *availabilityViewInterval = @"60";
+int32_t availabilityViewInterval = 60;
 payloadDictionary[@"availabilityViewInterval"] = availabilityViewInterval;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

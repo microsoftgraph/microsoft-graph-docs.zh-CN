@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 63fc1cd9741e47567ef44db0cc92bac4535f92fc
+ms.openlocfilehash: 17ceea2235ede1af21a99c71d3f4c90997abe0c0
 ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396910"
+ms.locfileid: "36396896"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

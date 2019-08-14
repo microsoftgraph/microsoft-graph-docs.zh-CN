@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ec92055813b7be1c9f7ffd2b7178d4c6b078820b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: a6e0b178a6b69850e1027588c60845b66cc417fd
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932087"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396777"
 ---
 ```csharp
 
@@ -29,10 +29,10 @@ var endTime = new DateTimeTimeZone
     TimeZone = "Pacific Standard Time"
 };
 
-var availabilityViewInterval = "60";
+var availabilityViewInterval = 60;
 
 await graphClient.Me.Calendar
-    .Getschedule(schedules,endTime,startTime,availabilityViewInterval)
+    .GetSchedule(schedules,endTime,startTime,availabilityViewInterval)
     .Request()
     .Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
     .PostAsync();
