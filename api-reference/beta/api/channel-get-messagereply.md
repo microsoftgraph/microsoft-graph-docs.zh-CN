@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 99b356e566308297e5ef3ac721b34c25e72ea6cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7b50d8830993bcdc9b399b290b9041266b0d7504
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317506"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418780"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-reply-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-message-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

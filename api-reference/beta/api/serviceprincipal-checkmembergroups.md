@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 60623e5e20f2a637f05d4d4da38a55f7f1578e5c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d0339b0239f3a21ece2d32dc8b1815af0c5b9c7d
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364108"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410317"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
@@ -78,10 +78,6 @@ Content-length: 44
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmembergroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9584efff3a52a7ec77cc0985b75db700074d5ebb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e66ceeb9a2c79863dbc1e9324ab3c4225fc70c5e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364584"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410743"
 ---
 # <a name="list-timesoff"></a>列出 timesOff
 
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-timesoff-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/schedule-list-timesoff-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

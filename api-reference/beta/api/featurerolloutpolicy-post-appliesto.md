@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: efdc9e04e7e8554ef6acf5f3df7b2292b2c618e1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf1f67ff84c6ba5bff7c171a16a73d07febca8d3
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323553"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420404"
 ---
 # <a name="assign-appliesto"></a>分配 appliesTo
 
@@ -80,10 +80,6 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-featurerolloutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-featurerolloutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

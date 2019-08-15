@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 08575b415166875290274a5fb88f88543763cbd8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 90e8fef9a32d0c14530d20dce027693acdc1728a
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317142"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418416"
 ---
 # <a name="get-chartgridlines"></a>获取 ChartGridlines
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chartgridlines-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chartgridlines-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

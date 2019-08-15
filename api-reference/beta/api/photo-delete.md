@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 0a1ac84469d43e1d43914ef6815c7cc6d32fe657
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d16b858822681d7ff77fc4cb0ab7db5f7b395642
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349503"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413648"
 ---
 # <a name="delete-photo"></a>删除照片
 
@@ -69,10 +69,6 @@ DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-photo-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

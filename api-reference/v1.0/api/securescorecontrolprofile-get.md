@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ffd4a64467046582e855601b61aeba304101cfa5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 64e86b1f9b3cdcae1512ff549acc972cb0fb0c01
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372022"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420782"
 ---
 # <a name="get-securescorecontrolprofile"></a>获取 secureScoreControlProfile
 
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescorecontrolprofile-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-securescorecontrolprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

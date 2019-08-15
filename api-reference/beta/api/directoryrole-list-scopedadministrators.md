@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1783079f7856d2eccee1c9383cfb19048e366f77
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a32c6e92dfab440c8b62fae2245d0d92d3c139cf
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319518"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417275"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>列出目录角色的 scopedMembers
 
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-scopedmembers-directoryrole-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-scopedmembers-directoryrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

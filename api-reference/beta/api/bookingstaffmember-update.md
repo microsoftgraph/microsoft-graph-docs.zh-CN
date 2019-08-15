@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 57c8d62f11d26167f670a2947a73fc2678e84aae
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9a9e6d429fddfc087506a02191918571fb4c7dc
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318038"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419277"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -140,10 +140,6 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingstaffmember-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-bookingstaffmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

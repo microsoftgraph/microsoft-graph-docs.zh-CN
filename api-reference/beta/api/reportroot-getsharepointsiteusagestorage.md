@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: d371f00d0dd18f89e3dcb3c510fe6d6c9586ecf1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5ea71eb97f5a67e4666d247523e08bcc7a01e412
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36359581"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36411387"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 
@@ -106,10 +106,6 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageStorage(perio
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getsharepointsiteusagestorage-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getsharepointsiteusagestorage-csv-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -168,10 +164,6 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageStorage(perio
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getsharepointsiteusagestorage-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getsharepointsiteusagestorage-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

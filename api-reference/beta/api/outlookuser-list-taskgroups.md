@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc6bdcbc99b682e792218d9d09e066e72cd834f1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a8ad6431095697e3d1eec802f9a552390449fba0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349685"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413984"
 ---
 # <a name="list-taskgroups"></a>列出 taskGroups
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-taskgroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-taskgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

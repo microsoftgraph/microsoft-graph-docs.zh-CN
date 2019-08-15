@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 27417616c3e1ec78da2d953dc69b6b218a42e7c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 34fc848330b8dd089f395829c82cc040887b5c31
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318150"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419396"
 ---
 # <a name="delete-bookingcustomer"></a>删除 bookingCustomer
 
@@ -66,10 +66,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bookingcustomer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-bookingcustomer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8b3a3c80c5ec92ddcec5d1e99e8595be7a09f2dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 076c405df4e45152cf9ee988cf1099969d848486
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324572"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417232"
 ---
 # <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplates
 
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/directoryRoleTemplates
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryroletemplates-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directoryroletemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

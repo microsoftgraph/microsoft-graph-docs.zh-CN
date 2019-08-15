@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2589285b57f757723c840b79f1d67e6c0b1ad506
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 64bbb8a8c2ca86bd06d4a6fffd6c2493939dafd0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361313"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412969"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -31,7 +31,7 @@ ms.locfileid: "36361313"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
-GET /users/<id>/planner/tasks
+GET /users/{id}/planner/tasks
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/me/planner/tasks
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

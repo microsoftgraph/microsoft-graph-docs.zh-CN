@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 664a0f5a05b06e78aa2e54db0d7b8ff99a8f148c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3b8a41fd335d003abeaafaad08850d638716e2f1
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318920"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408564"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -86,10 +86,6 @@ Content-length: 114
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-administrativeunit-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

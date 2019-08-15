@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 72163a15beb9b6b82c4ad60640add3849d60a8b1
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: defcc190f67dc7a78a0069445401e6f624a9a878
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062104"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419739"
 ---
 # <a name="delete-featurerolloutpolicy"></a>删除 featureRolloutPolicy
 

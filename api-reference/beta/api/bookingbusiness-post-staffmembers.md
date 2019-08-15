@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 873d0ffa95be5e9dbcf95bbfa95ac942af9b46d7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 33e6fc77a850e5be4e0fe32f6b68d4aefc46ad89
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318259"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419477"
 ---
 # <a name="create-bookingstaffmember"></a>创建 bookingStaffMember
 
@@ -150,10 +150,6 @@ Content-length: 309
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bookingstaffmember-from-bookingbusiness-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-bookingstaffmember-from-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

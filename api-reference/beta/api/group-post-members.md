@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 64ddd8881cb210a06fff35f0d30d1e3a78c85d81
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6f6b95abf4e1b218744fddc2cbd167671f3acc8c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323246"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420642"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -77,10 +77,6 @@ Content-length: 30
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

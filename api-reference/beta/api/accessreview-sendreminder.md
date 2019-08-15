@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f1292b36e11a86758cf873eff60edc255ca082f1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1314ffa567aedfe615e9d24f27acb04f22b0c010
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319090"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408767"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -30,7 +30,7 @@ ms.locfileid: "36319090"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /accessReviews('<id>')/sendReminder()
+POST /accessReviews/{reviewId}/sendReminder
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -65,10 +65,6 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/sendreminder-accessreview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/sendreminder-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

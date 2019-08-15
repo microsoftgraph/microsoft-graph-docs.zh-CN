@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f394c3a80a6d0dad328403ea96732a5afd146130
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a5eecd3bfef94752dea79208f443ede186285dc9
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318542"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408158"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -180,10 +180,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-file-attachment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -244,10 +240,6 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-item-attachment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -301,10 +293,6 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -416,10 +404,6 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-reference-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

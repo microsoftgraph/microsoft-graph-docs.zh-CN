@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 07a9f8b7fe5ce6656ec1618dba5a3b62274dbdcc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5b716ea35847884a20493ef16ddee0817ae05fa7
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364263"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410533"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
 
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-sectiongroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-sectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

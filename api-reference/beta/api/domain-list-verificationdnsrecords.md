@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbddfa13a57277bdbae2d689b7f7f72218fb1402
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fb1b1d3bf357c0a29c7502c64eeb170e6951530c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321184"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417043"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-verificationdnsrecords-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-verificationdnsrecords-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

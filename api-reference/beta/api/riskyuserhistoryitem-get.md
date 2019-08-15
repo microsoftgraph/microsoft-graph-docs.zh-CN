@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 287989418d90d3835d78a37b41f42565fe2db28b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1fb02e98c17fe9f7875aa83c917ce6fe1c4083b8
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36358249"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410869"
 ---
 # <a name="get-riskyuserhistoryitem"></a>获取 riskyUserHistoryItem
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-historyitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-historyitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

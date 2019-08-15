@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 87b694b9f4c55abbe82b6bd30f98e96b7762df38
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5f304b363a31e1629d438c3aeb6862837715b655
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319830"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417982"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -34,7 +34,7 @@ ms.locfileid: "36319830"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/delta
-GET /users/<id>/contactFolders/delta
+GET /users/{id}/contactFolders/delta
 ```
 
 ## <a name="query-parameters"></a>查询参数
@@ -86,10 +86,6 @@ Prefer: odata.maxpagesize=2
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/contactfolder-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

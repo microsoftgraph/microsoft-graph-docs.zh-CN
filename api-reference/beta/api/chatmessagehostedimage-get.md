@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a86d4cd2fd2bf5ef5fd1c12cdcb612ddab2feee8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f25f2e407426d5754b5d648cf27d1b9c78a82544
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319872"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418073"
 ---
 # <a name="get-chatmessagehostedimage"></a>获取 chatMessageHostedImage
 
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

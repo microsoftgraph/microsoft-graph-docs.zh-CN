@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a274766eb51b2b4fde1cfa35fe3a88188a586ef4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f8e628c2ba8835d42f00116e46b4dfa0527765fe
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316113"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408832"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -36,7 +36,7 @@ ms.locfileid: "36316113"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')
+GET /accessReviews/{reviewId}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

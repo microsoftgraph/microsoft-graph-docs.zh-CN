@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: fb9e59d6c667cc67bf3c5c34ce9de7dd7a1f4c0d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cc4a3c372bc67c373e65008c58f9a506ebad552d
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36360266"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36411611"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -131,10 +131,6 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ServicesUserCounts(peri
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365servicesusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365servicesusercounts-csv-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -162,7 +158,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Exchange Active,Exchange Inactive,OneDrive Active,OneDrive Inactive,SharePoint Active,SharePoint Inactive,Skype For Business Active,Skype For Business Inactive,Yammer Active,Yammer Inactive,Teams Active,Teams Inactive,Report Period
+Report Refresh Date,Exchange Active,Exchange Inactive,OneDrive Active,OneDrive Inactive,SharePoint Active,SharePoint Inactive,Skype For Business Active,Skype For Business Inactive,Yammer Active,Yammer Inactive,Teams Active,Teams Inactive,Office 365 Active,Office 365 Inactive,Report Period
 ```
 
 ### <a name="json"></a>JSON 
@@ -193,10 +189,6 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ServicesUserCounts(peri
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365servicesusercounts-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365servicesusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

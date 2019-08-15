@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: e2e5b23ca9786af7e08a4cf0281ec519274b09a7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 12584b1b84facb6a14155b6ae1cf91112cad33e3
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342213"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412416"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

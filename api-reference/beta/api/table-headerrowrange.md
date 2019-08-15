@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6d23c4c47051e40f2a4f680d44d7ab5fd5962ceb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7616077c50abed1dfca5232647f5d64b21022023
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363314"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36421517"
 ---
 # <a name="table-headerrowrange"></a>Table:HeaderRowRange
 
@@ -68,10 +68,6 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/table-headerrowrange-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/table-headerrowrange-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

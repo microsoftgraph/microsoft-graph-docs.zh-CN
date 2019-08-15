@@ -7,12 +7,12 @@ description: 列出在某个项上或某个层次结构下发生的最近活动�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f794f13e4410cdef7c32c4fd444f31cf66131032
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e7aa64a1ef51b3c374a7ea947818685691811f44
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319046"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408682"
 ---
 # <a name="enumerate-activities-preview"></a>枚举活动（预览）
 
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

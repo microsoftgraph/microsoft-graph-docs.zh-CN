@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: cb2165cd8e010fe47682853605d6e8724550d6d5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5be09bba7a7867d0f994adecbed4e7690e20d61b
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326640"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422296"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -81,6 +81,7 @@ CSV 文件包含下面的列标题。
 - 已使用的 Exchange 邮箱存储（字节）
 - SharePoint 文件总数
 - 已使用的 SharePoint 网站存储（字节）
+- 组 Id
 - 报表周期
 
 ## <a name="example"></a>示例
@@ -143,7 +144,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,Guest Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,Guest Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

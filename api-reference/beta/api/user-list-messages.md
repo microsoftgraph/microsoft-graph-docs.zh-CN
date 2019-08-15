@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 17d68bfdbb80e23b0db84cea4222c0524302008c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3c6cb96d60554c3e2a2dd0d012e5069bae6b1f78
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326063"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422119"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -107,10 +107,6 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -251,10 +247,6 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-messages-with-mentions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### <a name="response-2"></a>响应 2
@@ -331,10 +323,6 @@ Prefer: outlook.body-content-type="text"
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-in-text-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-messages-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

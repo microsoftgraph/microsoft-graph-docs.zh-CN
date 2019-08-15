@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 648b8260ceeb459e0b8337cf76f806697c81f68f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4e2034023c6f8b842ff74aa82ddb42a482c939cc
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319124"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408778"
 ---
 # <a name="remove-accessreview-reviewer"></a>删除 accessReview 审阅者
 
@@ -31,7 +31,7 @@ ms.locfileid: "36319124"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
+DELETE /accessReviews/{reviewId}/reviewers/{userId}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -73,10 +73,6 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-accessreview-reviewer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/remove-accessreview-reviewer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

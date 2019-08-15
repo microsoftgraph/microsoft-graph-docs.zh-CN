@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 790509aa9cc74dcd13ebcbed68e0e5816d6d0566
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 553bcecae386e03f10d19d43e443f666531b1684
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362785"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36421272"
 ---
 # <a name="delete-threat-intelligence-indicator"></a>删除威胁情报指标
 
@@ -75,10 +75,6 @@ DELETE https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-tiindicator-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-tiindicator-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

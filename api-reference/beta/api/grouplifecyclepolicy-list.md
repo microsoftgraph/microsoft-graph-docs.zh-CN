@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e421ec4f345f88acb653651ccb09bdd2ea8efec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4ce6003907356cd9d1f5f46cf5c0c23419996199
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323036"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420550"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-grouplifecyclepolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

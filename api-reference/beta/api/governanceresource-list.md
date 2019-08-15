@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: f8e7640a22ce68fc9d3005f5115519a33cece98e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 10b1ef090de119069917582e1e60448eb07d2a09
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323552"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420391"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governanceresources-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-governanceresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

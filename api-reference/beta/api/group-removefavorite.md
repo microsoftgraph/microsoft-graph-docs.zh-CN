@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 941edb23d6c029e6b1b81fcfa56704ceb9d53388
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce529aba952f83e3758d92ca05badbc89cfe68f3
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323176"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420042"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -67,10 +67,6 @@ POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removefavorite-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-removefavorite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f9ecf28e45a71fc2ec39c84e9945aa9445b03d73
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6f52818f912b3d27fa5afe3f237250ca3b7c735f
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364392"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410589"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextensions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

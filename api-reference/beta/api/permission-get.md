@@ -6,12 +6,12 @@ title: 获取权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: c7853d673d43c9b409ebbdad6f55a192510e770d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: be2b774dba2a612e9cff4d902687cc417034e558
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349574"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413711"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-item-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

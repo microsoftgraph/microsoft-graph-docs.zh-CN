@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab308970fdfa4a9949feb3d9f6d54e57c3688c43
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f11852cd889f246ee2897f6f25adc7b6bda9d932
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321706"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418136"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontents-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

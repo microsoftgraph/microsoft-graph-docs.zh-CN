@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 6b2036d8d49cd13c15bf0c481aee0795306e0809
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f467a85c95c683722ec34979077b36a608dee67
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324413"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36416889"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -64,10 +64,6 @@ GET /me/drive/root/subscriptions/socketIo
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

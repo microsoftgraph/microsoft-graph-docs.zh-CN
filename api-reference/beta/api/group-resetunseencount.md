@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 84047023d4b4c3b994d07f6dd29230e40eae5a4e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7c4eb305c5be86a33b65a27ce7d53a570264cf97
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323162"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420586"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 
@@ -66,10 +66,6 @@ POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-resetunseencount-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-resetunseencount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

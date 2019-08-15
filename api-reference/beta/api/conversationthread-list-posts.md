@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a5a92388545919a234fc39f7701a939b11aef497
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: efe5b29518b203ca23292dd72b49241c9681b6fa
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321510"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417744"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-posts-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-posts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

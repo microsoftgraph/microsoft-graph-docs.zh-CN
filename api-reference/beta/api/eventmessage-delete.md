@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 67215f802fd6abcb5662ab6c672d597284854a1b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f9a5a55f56e2e4cab47efb95fe33cae07d6b6938
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325300"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419844"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
 
@@ -69,10 +69,6 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-eventmessage-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

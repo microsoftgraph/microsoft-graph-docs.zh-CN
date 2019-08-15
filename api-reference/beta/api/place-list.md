@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d9fa52cd75ca49ad1e2f2e52e36dc1c10766370b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1dddab1015265b5eb26ccdd0824c25684ee3421a
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349549"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413606"
 ---
 # <a name="list-places"></a>列表位置
 
@@ -106,10 +106,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -230,10 +226,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -315,10 +307,6 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f612065222a43e67ea82101519b44bad1604c53
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0be0c119d1a0d0a38030dcc9cfacbff16561c997
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363385"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409600"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
 
@@ -77,10 +77,6 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-synchronizationtemplate-from-synchronization-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-synchronizationtemplate-from-synchronization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

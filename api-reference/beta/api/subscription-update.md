@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f2b89b51ff969d6c84036280c6a16e6a99fc32e1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 31636d6b40fd952cb629f2fe309eec887bc22e30
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363632"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409833"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -94,10 +94,6 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

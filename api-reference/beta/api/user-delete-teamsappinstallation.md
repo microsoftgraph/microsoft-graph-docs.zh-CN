@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 39855619704d263b11fdc55b9794fcaa8b07aa2c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c6240cc83575b6f7e0a496d161c424f069634b02
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362485"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409075"
 ---
 # <a name="uninstall-app-for-user"></a>卸载用户的应用程序
 
@@ -72,10 +72,6 @@ DELETE https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delete-teamsapp-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-delete-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

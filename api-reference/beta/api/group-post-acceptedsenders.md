@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dcbe32bf76e7a003048e36a9ab22c953eaaf736b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 827e6d12f8a237718993e49050cb7df2176b0637
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323302"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420663"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 
@@ -73,10 +73,6 @@ Content-length: 30
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-acceptedsender-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-acceptedsender-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

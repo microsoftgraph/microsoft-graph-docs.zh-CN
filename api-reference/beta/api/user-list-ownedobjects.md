@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7d58feb7630a3f0089e60170d6295773fd542009
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 784ffc7b7805832522aff3bd9eb11e409c8775d4
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326049"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422056"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/me/ownedObjects
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-ownedobjects-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-ownedobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

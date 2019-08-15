@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d5d02eab6441941d9bcdcb62bf78c353e26e3e5a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0efdf8309d2e277c473c099f869ee35b463004f9
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362729"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409287"
 ---
 # <a name="update-tiindicator"></a>更新 tiIndicator
 
@@ -139,10 +139,6 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-tiindicator-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

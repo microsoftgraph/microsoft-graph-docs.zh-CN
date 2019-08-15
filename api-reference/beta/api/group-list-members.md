@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 66dfc4b33bf42b6e20a32825ad15401a94a654ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3ab7146977ef143182a3225126dc7c0611451b40
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326287"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420712"
 ---
 # <a name="list-group-members"></a>列出组成员
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

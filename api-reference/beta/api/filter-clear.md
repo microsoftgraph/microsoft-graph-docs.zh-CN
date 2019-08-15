@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: bd9368e8c3b773e412ce6ebfdb78dce23d06428a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e1648cc2c32abca775d242977866da97f8844409
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325223"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419759"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -67,10 +67,6 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/filter-clear-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/filter-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

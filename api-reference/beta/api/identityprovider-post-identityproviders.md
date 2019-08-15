@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: c194a0d8648519288d9e07df02fa834c9c380f7c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 194b539125c0cb0a3c4a73d3e80481994527b368
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322985"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419550"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -92,10 +92,6 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-identityprovider-from-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-identityprovider-from-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

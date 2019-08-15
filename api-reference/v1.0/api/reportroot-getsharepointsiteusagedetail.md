@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 3dd1777cc7a2e45a241fb5487fe7626cbc1c548a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d61c3d1248ad1b15a7933756b03676fe223fb3a
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321802"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422260"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -77,6 +77,7 @@ CSV 文件包含下面的列标题。
 - 已使用的存储（字节）
 - 已分配的存储（字节）
 - 根网站模板
+- 所有者主体名称
 - 报表周期
 
 ## <a name="example"></a>示例
@@ -139,7 +140,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

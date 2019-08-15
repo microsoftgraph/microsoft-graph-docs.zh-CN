@@ -1,22 +1,25 @@
 ---
 title: '调用: subscribeToTone'
-description: 订阅 DTMF (双音多频信号)。 这样, 当用户在 "按键电话" 上按下按键时, 您就会收到通知。
+description: 订阅 DTMF (双音多频信号)。 这样, 您就可以在用户按 "Dialpad" 上的键时收到通知。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2c7960d7e42f9845551cf3396bff9b00d43cc409
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 83e6c1b9795ea1caf27a166fd523c70b51909df0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317576"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418864"
 ---
 # <a name="call-subscribetotone"></a>调用: subscribeToTone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅 DTMF (双音多频信号)。 这样, 你就可以在用户按 "按键时" 电话上的键时收到通知。
+订阅 DTMF (双音多频信号)。 这样, 您就可以在用户按 "Dialpad" 上的键时收到通知。
+
+> [!Note]
+> 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,10 +47,10 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 | 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| 适用  | String  | 客户端上下文。 |
+| 适用  | String  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+如果成功，此方法返回 `200 OK` 响应代码。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -67,7 +70,7 @@ Content-Type: application/json
 Content-Length: 46
 
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -80,10 +83,6 @@ Content-Length: 46
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-subscribetotone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -99,11 +98,21 @@ Content-Length: 46
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+
+{
+  "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
+  "status": "completed",
+  "createdDateTime": "2019-07-18T19:52:30Z",
+  "lastActionDateTime": "2019-07-18T19:52:31Z",
+  "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
+}
 ```
 
-##### <a name="notification---operation-completed"></a>通知-操作已完成
+
+##### <a name="notification---tone-notification"></a>通知-音调通知
+
+通知包含[toneinfo](../resources/toneinfo.md)资源中所按音调的信息。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -119,14 +128,16 @@ Content-Type: application/json
 {
   "value": [
     {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "changeType": "updated",
+      "resource": "/app/calls/421f1100-411f-4a29-8514-dbbb9caff45",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "toneInfo": {
+          "@odata.type": "#microsoft.graph.toneInfo",
+          "sequenceId": 1,
+          "tone": "tone1"
+        }
       }
     }
   ]

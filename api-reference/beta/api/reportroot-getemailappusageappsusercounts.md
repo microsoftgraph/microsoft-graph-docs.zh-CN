@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 59d6b6943957983ed852675687c7a72b61d2caa5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4b221b03a816491c9591aecba0a9582ec8173565
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308603"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36411863"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 
@@ -112,10 +112,6 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageAppsUserCounts(peri
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageappsusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageappsusercounts-csv-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -174,10 +170,6 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageAppsUserCounts(peri
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageappsusercounts-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageappsusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
