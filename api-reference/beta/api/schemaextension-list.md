@@ -5,54 +5,54 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f9ecf28e45a71fc2ec39c84e9945aa9445b03d73
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6f52818f912b3d27fa5afe3f237250ca3b7c735f
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364392"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410589"
 ---
-# <a name="list-schemaextensions"></a><span data-ttu-id="7db54-103">列出 schemaExtension</span><span class="sxs-lookup"><span data-stu-id="7db54-103">List schemaExtensions</span></span>
+# <a name="list-schemaextensions"></a><span data-ttu-id="fc563-103">列出 schemaExtension</span><span class="sxs-lookup"><span data-stu-id="fc563-103">List schemaExtensions</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7db54-104">获取您在当前租户中拥有的任何应用 (可以是**InDevelopment**、**可用**或弃用) 创建的[schemaExtension](../resources/schemaextension.md)对象的列表\*\*\*\*, 以及被标记为**的其他应用程序所拥有的其他所有架构扩展。可用**。</span><span class="sxs-lookup"><span data-stu-id="7db54-104">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
+<span data-ttu-id="fc563-104">获取您在当前租户中拥有的任何应用 (可以是**InDevelopment**、**可用**或弃用) 创建的[schemaExtension](../resources/schemaextension.md)对象的列表\*\*\*\*, 以及被标记为**的其他应用程序所拥有的其他所有架构扩展。可用**。</span><span class="sxs-lookup"><span data-stu-id="fc563-104">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="7db54-105">权限</span><span class="sxs-lookup"><span data-stu-id="7db54-105">Permissions</span></span>
-<span data-ttu-id="7db54-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7db54-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc563-105">权限</span><span class="sxs-lookup"><span data-stu-id="fc563-105">Permissions</span></span>
+<span data-ttu-id="fc563-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fc563-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="7db54-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7db54-108">Permission type</span></span>      | <span data-ttu-id="7db54-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7db54-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc563-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="fc563-108">Permission type</span></span>      | <span data-ttu-id="fc563-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fc563-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7db54-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7db54-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7db54-111">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7db54-111">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="7db54-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7db54-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7db54-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="7db54-113">Not supported.</span></span>    |
-|<span data-ttu-id="7db54-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7db54-114">Application</span></span> | <span data-ttu-id="7db54-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="7db54-115">Directory.Read.All</span></span> |
+|<span data-ttu-id="fc563-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fc563-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fc563-111">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fc563-111">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fc563-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fc563-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc563-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="fc563-113">Not supported.</span></span>    |
+|<span data-ttu-id="fc563-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="fc563-114">Application</span></span> | <span data-ttu-id="fc563-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="fc563-115">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7db54-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7db54-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc563-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fc563-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="7db54-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7db54-117">Optional query parameters</span></span>
-<span data-ttu-id="7db54-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7db54-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fc563-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fc563-117">Optional query parameters</span></span>
+<span data-ttu-id="fc563-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="fc563-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7db54-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7db54-119">Request headers</span></span>
-| <span data-ttu-id="7db54-120">名称</span><span class="sxs-lookup"><span data-stu-id="7db54-120">Name</span></span>      |<span data-ttu-id="7db54-121">说明</span><span class="sxs-lookup"><span data-stu-id="7db54-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fc563-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="fc563-119">Request headers</span></span>
+| <span data-ttu-id="fc563-120">名称</span><span class="sxs-lookup"><span data-stu-id="fc563-120">Name</span></span>      |<span data-ttu-id="fc563-121">说明</span><span class="sxs-lookup"><span data-stu-id="fc563-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7db54-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7db54-122">Authorization</span></span>  | <span data-ttu-id="7db54-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7db54-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7db54-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7db54-125">Content-Type</span></span>   | <span data-ttu-id="7db54-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7db54-126">application/json</span></span> |
+| <span data-ttu-id="fc563-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="fc563-122">Authorization</span></span>  | <span data-ttu-id="fc563-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fc563-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fc563-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fc563-125">Content-Type</span></span>   | <span data-ttu-id="fc563-126">application/json</span><span class="sxs-lookup"><span data-stu-id="fc563-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7db54-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7db54-127">Request body</span></span>
-<span data-ttu-id="7db54-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7db54-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fc563-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="fc563-127">Request body</span></span>
+<span data-ttu-id="fc563-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fc563-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7db54-129">响应</span><span class="sxs-lookup"><span data-stu-id="7db54-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc563-129">响应</span><span class="sxs-lookup"><span data-stu-id="fc563-129">Response</span></span>
 
-<span data-ttu-id="7db54-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="7db54-130">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7db54-131">示例</span><span class="sxs-lookup"><span data-stu-id="7db54-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7db54-132">请求</span><span class="sxs-lookup"><span data-stu-id="7db54-132">Request</span></span>
-<span data-ttu-id="7db54-133">下面的示例演示如何通过筛选其唯一**id**来查看特定项的所有可访问扩展。</span><span class="sxs-lookup"><span data-stu-id="7db54-133">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
+<span data-ttu-id="fc563-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="fc563-130">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fc563-131">示例</span><span class="sxs-lookup"><span data-stu-id="fc563-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fc563-132">请求</span><span class="sxs-lookup"><span data-stu-id="fc563-132">Request</span></span>
+<span data-ttu-id="fc563-133">下面的示例演示如何通过筛选其唯一**id**来查看特定项的所有可访问扩展。</span><span class="sxs-lookup"><span data-stu-id="fc563-133">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7db54-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7db54-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="fc563-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="fc563-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schemaextensions"
@@ -60,26 +60,22 @@ GET /schemaExtensions
 ```http
 GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7db54-135">C#</span><span class="sxs-lookup"><span data-stu-id="7db54-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fc563-135">C#</span><span class="sxs-lookup"><span data-stu-id="fc563-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextensions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7db54-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7db54-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fc563-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fc563-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextensions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7db54-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="7db54-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fc563-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="fc563-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextensions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="7db54-138">Java</span><span class="sxs-lookup"><span data-stu-id="7db54-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7db54-139">响应</span><span class="sxs-lookup"><span data-stu-id="7db54-139">Response</span></span>
-<span data-ttu-id="7db54-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7db54-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fc563-138">响应</span><span class="sxs-lookup"><span data-stu-id="fc563-138">Response</span></span>
+<span data-ttu-id="fc563-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fc563-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,10 +108,10 @@ Content-length: 274
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7db54-143">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7db54-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fc563-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="fc563-142">See also</span></span>
 
-- [<span data-ttu-id="7db54-144">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="7db54-144">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="7db54-145">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="7db54-145">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="fc563-143">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="fc563-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="fc563-144">使用架构扩展向组添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="fc563-144">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

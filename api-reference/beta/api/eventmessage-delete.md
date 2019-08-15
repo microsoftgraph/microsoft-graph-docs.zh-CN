@@ -5,28 +5,28 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 67215f802fd6abcb5662ab6c672d597284854a1b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f9a5a55f56e2e4cab47efb95fe33cae07d6b6938
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325300"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419844"
 ---
-# <a name="delete-eventmessage"></a><span data-ttu-id="4a370-103">删除 eventMessage</span><span class="sxs-lookup"><span data-stu-id="4a370-103">Delete eventMessage</span></span>
+# <a name="delete-eventmessage"></a><span data-ttu-id="e654a-103">删除 eventMessage</span><span class="sxs-lookup"><span data-stu-id="e654a-103">Delete eventMessage</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4a370-104">删除 eventMessage。</span><span class="sxs-lookup"><span data-stu-id="4a370-104">Delete eventMessage.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4a370-105">权限</span><span class="sxs-lookup"><span data-stu-id="4a370-105">Permissions</span></span>
-<span data-ttu-id="4a370-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4a370-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e654a-104">删除 eventMessage。</span><span class="sxs-lookup"><span data-stu-id="e654a-104">Delete eventMessage.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e654a-105">权限</span><span class="sxs-lookup"><span data-stu-id="e654a-105">Permissions</span></span>
+<span data-ttu-id="e654a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e654a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a370-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a370-108">Permission type</span></span>      | <span data-ttu-id="4a370-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4a370-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e654a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e654a-108">Permission type</span></span>      | <span data-ttu-id="e654a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e654a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4a370-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a370-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4a370-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a370-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="4a370-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a370-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a370-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a370-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="4a370-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a370-114">Application</span></span> | <span data-ttu-id="4a370-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a370-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="e654a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e654a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e654a-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e654a-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="e654a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e654a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e654a-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e654a-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="e654a-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e654a-114">Application</span></span> | <span data-ttu-id="e654a-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e654a-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4a370-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a370-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e654a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e654a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
@@ -35,23 +35,23 @@ DELETE /users/{id | userPrincipalName}/messages/{id}
 DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="4a370-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="4a370-117">Request headers</span></span>
-| <span data-ttu-id="4a370-118">名称</span><span class="sxs-lookup"><span data-stu-id="4a370-118">Name</span></span>       | <span data-ttu-id="4a370-119">类型</span><span class="sxs-lookup"><span data-stu-id="4a370-119">Type</span></span> | <span data-ttu-id="4a370-120">说明</span><span class="sxs-lookup"><span data-stu-id="4a370-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e654a-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="e654a-117">Request headers</span></span>
+| <span data-ttu-id="e654a-118">名称</span><span class="sxs-lookup"><span data-stu-id="e654a-118">Name</span></span>       | <span data-ttu-id="e654a-119">类型</span><span class="sxs-lookup"><span data-stu-id="e654a-119">Type</span></span> | <span data-ttu-id="e654a-120">说明</span><span class="sxs-lookup"><span data-stu-id="e654a-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4a370-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a370-121">Authorization</span></span>  | <span data-ttu-id="4a370-122">string</span><span class="sxs-lookup"><span data-stu-id="4a370-122">string</span></span>  | <span data-ttu-id="4a370-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4a370-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e654a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e654a-121">Authorization</span></span>  | <span data-ttu-id="e654a-122">string</span><span class="sxs-lookup"><span data-stu-id="e654a-122">string</span></span>  | <span data-ttu-id="e654a-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e654a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4a370-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a370-125">Request body</span></span>
-<span data-ttu-id="4a370-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4a370-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e654a-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="e654a-125">Request body</span></span>
+<span data-ttu-id="e654a-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e654a-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4a370-127">响应</span><span class="sxs-lookup"><span data-stu-id="4a370-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e654a-127">响应</span><span class="sxs-lookup"><span data-stu-id="e654a-127">Response</span></span>
 
-<span data-ttu-id="4a370-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4a370-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e654a-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e654a-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a370-130">示例</span><span class="sxs-lookup"><span data-stu-id="4a370-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4a370-131">请求</span><span class="sxs-lookup"><span data-stu-id="4a370-131">Request</span></span>
-<span data-ttu-id="4a370-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4a370-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e654a-130">示例</span><span class="sxs-lookup"><span data-stu-id="e654a-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e654a-131">请求</span><span class="sxs-lookup"><span data-stu-id="e654a-131">Request</span></span>
+<span data-ttu-id="e654a-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e654a-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4a370-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="4a370-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e654a-133">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e654a-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_eventmessage"
@@ -59,26 +59,22 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4a370-134">C#</span><span class="sxs-lookup"><span data-stu-id="4a370-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e654a-134">C#</span><span class="sxs-lookup"><span data-stu-id="e654a-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4a370-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4a370-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e654a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e654a-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4a370-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="4a370-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e654a-136">目标-C</span><span class="sxs-lookup"><span data-stu-id="e654a-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-eventmessage-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="4a370-137">Java</span><span class="sxs-lookup"><span data-stu-id="4a370-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="4a370-138">响应</span><span class="sxs-lookup"><span data-stu-id="4a370-138">Response</span></span>
-<span data-ttu-id="4a370-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4a370-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e654a-137">响应</span><span class="sxs-lookup"><span data-stu-id="e654a-137">Response</span></span>
+<span data-ttu-id="e654a-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e654a-138">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

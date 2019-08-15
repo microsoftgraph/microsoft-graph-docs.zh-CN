@@ -5,58 +5,58 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: b4165a9e299a75cfa2260b6b79ce0aff6ed6647a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 147a98c47cd019104c7966ae69c7654cc078d2cb
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326196"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420457"
 ---
-# <a name="create-inferenceclassificationoverride"></a><span data-ttu-id="63737-104">创建 inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="63737-104">Create inferenceClassificationOverride</span></span>
+# <a name="create-inferenceclassificationoverride"></a><span data-ttu-id="3ac6d-104">创建 inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="3ac6d-104">Create inferenceClassificationOverride</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="63737-105">为由 SMTP 地址标识的发件人创建[重点收件箱](../resources/manage-focused-inbox.md)覆盖。</span><span class="sxs-lookup"><span data-stu-id="63737-105">Create a [Focused Inbox](../resources/manage-focused-inbox.md) override for a sender identified by an SMTP address.</span></span> <span data-ttu-id="63737-106">将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。</span><span class="sxs-lookup"><span data-stu-id="63737-106">Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>
+<span data-ttu-id="3ac6d-105">为由 SMTP 地址标识的发件人创建[重点收件箱](../resources/manage-focused-inbox.md)覆盖。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-105">Create a [Focused Inbox](../resources/manage-focused-inbox.md) override for a sender identified by an SMTP address.</span></span> <span data-ttu-id="3ac6d-106">将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-106">Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>
 
-<span data-ttu-id="63737-107">**注意**</span><span class="sxs-lookup"><span data-stu-id="63737-107">**Note**</span></span>
+<span data-ttu-id="3ac6d-107">**注意**</span><span class="sxs-lookup"><span data-stu-id="3ac6d-107">**Note**</span></span>
 
-- <span data-ttu-id="63737-108">如果已存在具有相同 SMTP 地址的替代, 则将使用所提供的值更新该替代的**classifyAs**和**name**字段。</span><span class="sxs-lookup"><span data-stu-id="63737-108">If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.</span></span>
-- <span data-ttu-id="63737-109">基于唯一发件人的 SMTP 地址，邮箱支持的最大替代数目为 1000 个。</span><span class="sxs-lookup"><span data-stu-id="63737-109">The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.</span></span>
-- <span data-ttu-id="63737-110">POST 操作仅支持一次创建一个替代。</span><span class="sxs-lookup"><span data-stu-id="63737-110">The POST operation supports creating only one override at a time.</span></span>
+- <span data-ttu-id="3ac6d-108">如果已存在具有相同 SMTP 地址的替代, 则将使用所提供的值更新该替代的**classifyAs**和**name**字段。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-108">If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.</span></span>
+- <span data-ttu-id="3ac6d-109">基于唯一发件人的 SMTP 地址，邮箱支持的最大替代数目为 1000 个。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-109">The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.</span></span>
+- <span data-ttu-id="3ac6d-110">POST 操作仅支持一次创建一个替代。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-110">The POST operation supports creating only one override at a time.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="63737-111">权限</span><span class="sxs-lookup"><span data-stu-id="63737-111">Permissions</span></span>
-<span data-ttu-id="63737-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="63737-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3ac6d-111">权限</span><span class="sxs-lookup"><span data-stu-id="3ac6d-111">Permissions</span></span>
+<span data-ttu-id="3ac6d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="63737-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="63737-114">Permission type</span></span>      | <span data-ttu-id="63737-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="63737-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3ac6d-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="3ac6d-114">Permission type</span></span>      | <span data-ttu-id="3ac6d-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3ac6d-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="63737-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="63737-116">Delegated (work or school account)</span></span> | <span data-ttu-id="63737-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63737-117">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="63737-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="63737-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63737-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63737-119">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="63737-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="63737-120">Application</span></span> | <span data-ttu-id="63737-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63737-121">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="3ac6d-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3ac6d-116">Delegated (work or school account)</span></span> | <span data-ttu-id="3ac6d-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3ac6d-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="3ac6d-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3ac6d-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ac6d-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3ac6d-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="3ac6d-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="3ac6d-120">Application</span></span> | <span data-ttu-id="3ac6d-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3ac6d-121">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="63737-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="63737-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3ac6d-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3ac6d-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/inferenceClassification/overrides
 POST /users/{id}/inferenceClassification/overrides
 ```
-## <a name="request-headers"></a><span data-ttu-id="63737-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="63737-123">Request headers</span></span>
-| <span data-ttu-id="63737-124">名称</span><span class="sxs-lookup"><span data-stu-id="63737-124">Name</span></span>       | <span data-ttu-id="63737-125">类型</span><span class="sxs-lookup"><span data-stu-id="63737-125">Type</span></span> | <span data-ttu-id="63737-126">说明</span><span class="sxs-lookup"><span data-stu-id="63737-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3ac6d-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="3ac6d-123">Request headers</span></span>
+| <span data-ttu-id="3ac6d-124">名称</span><span class="sxs-lookup"><span data-stu-id="3ac6d-124">Name</span></span>       | <span data-ttu-id="3ac6d-125">类型</span><span class="sxs-lookup"><span data-stu-id="3ac6d-125">Type</span></span> | <span data-ttu-id="3ac6d-126">说明</span><span class="sxs-lookup"><span data-stu-id="3ac6d-126">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="63737-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="63737-127">Authorization</span></span>  | <span data-ttu-id="63737-128">string</span><span class="sxs-lookup"><span data-stu-id="63737-128">string</span></span>  | <span data-ttu-id="63737-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="63737-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="63737-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="63737-131">Content-Type</span></span> | <span data-ttu-id="63737-132">string</span><span class="sxs-lookup"><span data-stu-id="63737-132">string</span></span>  | <span data-ttu-id="63737-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="63737-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="3ac6d-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="3ac6d-127">Authorization</span></span>  | <span data-ttu-id="3ac6d-128">string</span><span class="sxs-lookup"><span data-stu-id="3ac6d-128">string</span></span>  | <span data-ttu-id="3ac6d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3ac6d-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3ac6d-131">Content-Type</span></span> | <span data-ttu-id="3ac6d-132">string</span><span class="sxs-lookup"><span data-stu-id="3ac6d-132">string</span></span>  | <span data-ttu-id="3ac6d-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="63737-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="63737-135">Request body</span></span>
-<span data-ttu-id="63737-136">在请求正文中，提供 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="63737-136">In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3ac6d-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="3ac6d-135">Request body</span></span>
+<span data-ttu-id="3ac6d-136">在请求正文中，提供 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-136">In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="63737-137">响应</span><span class="sxs-lookup"><span data-stu-id="63737-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3ac6d-137">响应</span><span class="sxs-lookup"><span data-stu-id="3ac6d-137">Response</span></span>
 
-<span data-ttu-id="63737-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="63737-138">If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
+<span data-ttu-id="3ac6d-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-138">If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="63737-139">示例</span><span class="sxs-lookup"><span data-stu-id="63737-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="63737-140">请求</span><span class="sxs-lookup"><span data-stu-id="63737-140">Request</span></span>
-<span data-ttu-id="63737-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="63737-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3ac6d-139">示例</span><span class="sxs-lookup"><span data-stu-id="3ac6d-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3ac6d-140">请求</span><span class="sxs-lookup"><span data-stu-id="3ac6d-140">Request</span></span>
+<span data-ttu-id="3ac6d-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-141">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="63737-142">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="63737-142">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3ac6d-142">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3ac6d-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_inferenceclassificationoverride_from_inferenceclassification"
@@ -73,27 +73,23 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="63737-143">C#</span><span class="sxs-lookup"><span data-stu-id="63737-143">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3ac6d-143">C#</span><span class="sxs-lookup"><span data-stu-id="3ac6d-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-inferenceclassificationoverride-from-inferenceclassification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63737-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63737-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3ac6d-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ac6d-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-inferenceclassificationoverride-from-inferenceclassification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="63737-145">目标-C</span><span class="sxs-lookup"><span data-stu-id="63737-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3ac6d-145">目标-C</span><span class="sxs-lookup"><span data-stu-id="3ac6d-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-inferenceclassificationoverride-from-inferenceclassification-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="63737-146">Java</span><span class="sxs-lookup"><span data-stu-id="63737-146">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-inferenceclassificationoverride-from-inferenceclassification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="63737-147">响应</span><span class="sxs-lookup"><span data-stu-id="63737-147">Response</span></span>
-<span data-ttu-id="63737-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="63737-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3ac6d-146">响应</span><span class="sxs-lookup"><span data-stu-id="3ac6d-146">Response</span></span>
+<span data-ttu-id="3ac6d-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3ac6d-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

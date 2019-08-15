@@ -5,35 +5,35 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 57e01f2002600272be2666a4259c659872c0a60f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 097e089a4703a8ff1ac6e34ff5fa282f79ebf00d
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346721"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36414591"
 ---
-# <a name="get-onenoteoperation"></a><span data-ttu-id="7ca3d-104">获取 onenoteOperation</span><span class="sxs-lookup"><span data-stu-id="7ca3d-104">Get onenoteOperation</span></span>
+# <a name="get-onenoteoperation"></a><span data-ttu-id="7cb8e-104">获取 onenoteOperation</span><span class="sxs-lookup"><span data-stu-id="7cb8e-104">Get onenoteOperation</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7ca3d-105">获取长时间运行的 OneNote 操作的状态。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-105">Get the status of a long-running OneNote operation.</span></span> <span data-ttu-id="7ca3d-106">这适用于在响应中返回**操作位置**标头的`CopyNotebook`操作, 例如`CopyToNotebook`、、 `CopyToSectionGroup`、。 `and CopyToSection`</span><span class="sxs-lookup"><span data-stu-id="7ca3d-106">This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.</span></span>   
+<span data-ttu-id="7cb8e-105">获取长时间运行的 OneNote 操作的状态。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-105">Get the status of a long-running OneNote operation.</span></span> <span data-ttu-id="7cb8e-106">这适用于在响应中返回**操作位置**标头的`CopyNotebook`操作, 例如`CopyToNotebook`、、 `CopyToSectionGroup`、。 `and CopyToSection`</span><span class="sxs-lookup"><span data-stu-id="7cb8e-106">This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.</span></span>   
 
-<span data-ttu-id="7ca3d-107">您可以轮询操作-位置终结点, 直到`status`属性返回`completed`或`failed`。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-107">You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.</span></span> 
+<span data-ttu-id="7cb8e-107">您可以轮询操作-位置终结点, 直到`status`属性返回`completed`或`failed`。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-107">You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.</span></span> 
 
-<span data-ttu-id="7ca3d-108">如果状态为`completed`, 则`resourceLocation`属性包含资源终结点 URI。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-108">If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.</span></span> 
+<span data-ttu-id="7cb8e-108">如果状态为`completed`, 则`resourceLocation`属性包含资源终结点 URI。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-108">If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.</span></span> 
 
-<span data-ttu-id="7ca3d-109">如果状态为`failed`, 则错误和`@api.diagnostics`属性将提供错误信息。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-109">If the status is `failed`, the error and `@api.diagnostics` properties provide error information.</span></span>
+<span data-ttu-id="7cb8e-109">如果状态为`failed`, 则错误和`@api.diagnostics`属性将提供错误信息。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-109">If the status is `failed`, the error and `@api.diagnostics` properties provide error information.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7ca3d-110">权限</span><span class="sxs-lookup"><span data-stu-id="7ca3d-110">Permissions</span></span>
-<span data-ttu-id="7ca3d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7cb8e-110">权限</span><span class="sxs-lookup"><span data-stu-id="7cb8e-110">Permissions</span></span>
+<span data-ttu-id="7cb8e-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7ca3d-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="7ca3d-113">Permission type</span></span>      | <span data-ttu-id="7ca3d-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7ca3d-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7cb8e-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="7cb8e-113">Permission type</span></span>      | <span data-ttu-id="7cb8e-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7cb8e-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7ca3d-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7ca3d-115">Delegated (work or school account)</span></span> | <span data-ttu-id="7ca3d-116">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ca3d-116">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7ca3d-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7ca3d-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ca3d-118">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7ca3d-118">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="7ca3d-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="7ca3d-119">Application</span></span> | <span data-ttu-id="7ca3d-120">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ca3d-120">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="7cb8e-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7cb8e-115">Delegated (work or school account)</span></span> | <span data-ttu-id="7cb8e-116">Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cb8e-116">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7cb8e-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7cb8e-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cb8e-118">Notes.Create、Notes.Read、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7cb8e-118">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="7cb8e-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="7cb8e-119">Application</span></span> | <span data-ttu-id="7cb8e-120">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cb8e-120">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7ca3d-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7ca3d-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7cb8e-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7cb8e-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/operations/{id}
@@ -41,26 +41,26 @@ GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="7ca3d-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7ca3d-122">Optional query parameters</span></span>
-<span data-ttu-id="7ca3d-123">无。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-123">None.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7cb8e-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7cb8e-122">Optional query parameters</span></span>
+<span data-ttu-id="7cb8e-123">无。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-123">None.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7ca3d-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="7ca3d-124">Request headers</span></span>
-| <span data-ttu-id="7ca3d-125">名称</span><span class="sxs-lookup"><span data-stu-id="7ca3d-125">Name</span></span>       | <span data-ttu-id="7ca3d-126">类型</span><span class="sxs-lookup"><span data-stu-id="7ca3d-126">Type</span></span> | <span data-ttu-id="7ca3d-127">说明</span><span class="sxs-lookup"><span data-stu-id="7ca3d-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7cb8e-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="7cb8e-124">Request headers</span></span>
+| <span data-ttu-id="7cb8e-125">名称</span><span class="sxs-lookup"><span data-stu-id="7cb8e-125">Name</span></span>       | <span data-ttu-id="7cb8e-126">类型</span><span class="sxs-lookup"><span data-stu-id="7cb8e-126">Type</span></span> | <span data-ttu-id="7cb8e-127">说明</span><span class="sxs-lookup"><span data-stu-id="7cb8e-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="7ca3d-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="7ca3d-128">Authorization</span></span>  | <span data-ttu-id="7ca3d-129">string</span><span class="sxs-lookup"><span data-stu-id="7ca3d-129">string</span></span>  | <span data-ttu-id="7ca3d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7ca3d-132">接受</span><span class="sxs-lookup"><span data-stu-id="7ca3d-132">Accept</span></span> | <span data-ttu-id="7ca3d-133">string</span><span class="sxs-lookup"><span data-stu-id="7ca3d-133">string</span></span> | `application/json` |
+| <span data-ttu-id="7cb8e-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="7cb8e-128">Authorization</span></span>  | <span data-ttu-id="7cb8e-129">string</span><span class="sxs-lookup"><span data-stu-id="7cb8e-129">string</span></span>  | <span data-ttu-id="7cb8e-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7cb8e-132">接受</span><span class="sxs-lookup"><span data-stu-id="7cb8e-132">Accept</span></span> | <span data-ttu-id="7cb8e-133">string</span><span class="sxs-lookup"><span data-stu-id="7cb8e-133">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="7ca3d-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="7ca3d-134">Request body</span></span>
-<span data-ttu-id="7ca3d-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7cb8e-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="7cb8e-134">Request body</span></span>
+<span data-ttu-id="7cb8e-135">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7ca3d-136">响应</span><span class="sxs-lookup"><span data-stu-id="7ca3d-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7cb8e-136">响应</span><span class="sxs-lookup"><span data-stu-id="7cb8e-136">Response</span></span>
 
-<span data-ttu-id="7ca3d-137">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onenoteOperation](../resources/onenoteoperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-137">If successful, this method returns a `200 OK` response code and [onenoteOperation](../resources/onenoteoperation.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7ca3d-138">示例</span><span class="sxs-lookup"><span data-stu-id="7ca3d-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7ca3d-139">请求</span><span class="sxs-lookup"><span data-stu-id="7ca3d-139">Request</span></span>
-<span data-ttu-id="7ca3d-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-140">Here is an example of the request.</span></span>
+<span data-ttu-id="7cb8e-137">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onenoteOperation](../resources/onenoteoperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-137">If successful, this method returns a `200 OK` response code and [onenoteOperation](../resources/onenoteoperation.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7cb8e-138">示例</span><span class="sxs-lookup"><span data-stu-id="7cb8e-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7cb8e-139">请求</span><span class="sxs-lookup"><span data-stu-id="7cb8e-139">Request</span></span>
+<span data-ttu-id="7cb8e-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-140">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7ca3d-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7ca3d-141">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7cb8e-141">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7cb8e-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onenoteoperation"
@@ -68,26 +68,22 @@ GET /sites/{id}/onenote/operations/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7ca3d-142">C#</span><span class="sxs-lookup"><span data-stu-id="7ca3d-142">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7cb8e-142">C#</span><span class="sxs-lookup"><span data-stu-id="7cb8e-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onenoteoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7ca3d-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ca3d-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7cb8e-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7cb8e-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onenoteoperation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7ca3d-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="7ca3d-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7cb8e-144">目标-C</span><span class="sxs-lookup"><span data-stu-id="7cb8e-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onenoteoperation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="7ca3d-145">Java</span><span class="sxs-lookup"><span data-stu-id="7ca3d-145">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-onenoteoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7ca3d-146">响应</span><span class="sxs-lookup"><span data-stu-id="7ca3d-146">Response</span></span>
-<span data-ttu-id="7ca3d-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7ca3d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7cb8e-145">响应</span><span class="sxs-lookup"><span data-stu-id="7cb8e-145">Response</span></span>
+<span data-ttu-id="7cb8e-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7cb8e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

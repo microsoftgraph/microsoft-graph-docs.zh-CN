@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 667322331d4082546634e12b8187ceb2e1efbb4e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e5bf8124be0fa5aede4e8a02f8fdf08061baf5e5
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710441"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408434"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var agreement = new Agreement
     IsViewingBeforeAcceptanceRequired = true
 };
 
-await graphClient.Agreements["'id'"]
+await graphClient.Agreements["{id}"]
     .Request()
     .UpdateAsync(agreement);
 
