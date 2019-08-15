@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2408d08434b97f865ae19cbc70fd1dc16ff6868b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4cfa6fe84c18d4895e5d709d3ab6254258c1b970
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009207"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422280"
 ---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand 资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "36009207"
 |action|String|要在目标元素上执行的操作。 可取值为：`replace`、`append`、`delete`、`insert` 或 `prepend`。|
 |内容|String|要添加到页面的格式标准的 HTML 字符串或任意图像或二进制文件数据。 如果内容包含二进制数据, 则必须使用包含 "命令" 部分`multipart/form-data`的内容类型发送该请求。 |
 |position|String|要添加所提供的内容的位置，与目标元素有关。 可能的值为`after` : (默认) `before`或。|
-|target|String|要更新的元素。 必须是`#<data-id>`或生成`<id>`的元素, 或`body`或`title`关键字。|
+|target|String|要更新的元素。 必须是`#<data-id>`或生成`{id}`的元素, 或`body`或`title`关键字。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

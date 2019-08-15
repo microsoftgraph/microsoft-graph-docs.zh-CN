@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 82d9ccfa20dd5852280e0d4b579c6dc4c71fec9d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5c4e52e0313cdab081a2a08766c11212bf9ec4cc
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361714"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413343"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 
@@ -29,7 +29,7 @@ ms.locfileid: "36361714"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/plans/<id>
+DELETE /planner/plans/{id}
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -57,7 +57,7 @@ DELETE /planner/plans/<id>
   "name": "delete_plannerplan"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/planner/plans/<id>
+DELETE https://graph.microsoft.com/beta/planner/plans/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -70,10 +70,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-plannerplan-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-plannerplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

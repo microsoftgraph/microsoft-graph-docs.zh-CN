@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4bc0bf1ddd07a1f03baa871bd96bf2193fae9e4c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bf4c0bdc613795294e9657a30e27aa42732e1085
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992204"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413018"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 
@@ -30,7 +30,7 @@ ms.locfileid: "35992204"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner
-GET /users/<id>/planner
+GET /users/{id}/planner
 ```
 
 ## <a name="request-headers"></a>请求标头

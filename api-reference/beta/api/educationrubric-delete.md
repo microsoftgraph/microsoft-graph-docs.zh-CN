@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f54816be7872734ecbd6d8a0b46a8a57694b4c68
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: aae747b530e5109fbf56048b34be4b6a418f019c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173151"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36416210"
 ---
 # <a name="delete-educationrubric"></a>删除 educationRubric
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bf993ad93881f34d93337d07360de585ad2ff61e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cb4c72f9646723bbef1d7544396864fb6a49f4f1
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318857"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408437"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -29,7 +29,7 @@ ms.locfileid: "36318857"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /agreements/<id>
+PATCH /agreements/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
@@ -55,7 +55,7 @@ PATCH /agreements/<id>
   "name": "update_agreement"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/agreements/<id>
+PATCH https://graph.microsoft.com/beta/agreements/{id}
 Content-type: application/json
 Content-length: 85
 
@@ -74,10 +74,6 @@ Content-length: 85
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

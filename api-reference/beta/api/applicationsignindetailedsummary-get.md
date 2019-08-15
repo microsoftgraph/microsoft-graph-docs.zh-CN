@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c847aefb1a7e9ab7b18821d2c002bbc96f3c1a7d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7453cf606c017851ab7f21fcaaa1fd956f178bd6
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318675"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408217"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -60,7 +60,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
   "name": "get_applicationsignindetailedsummary"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<id>
+GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsignindetailedsummary-csharp-snippets.md)]
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<i
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationsignindetailedsummary-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-applicationsignindetailedsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

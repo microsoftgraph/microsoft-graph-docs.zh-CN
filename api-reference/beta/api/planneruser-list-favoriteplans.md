@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 59db35272e915bd603e8067d950731bedd9c89d4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 634314abefea7b10414c09af78e6e7fe972e30d0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361350"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413032"
 ---
 # <a name="list-favoriteplans"></a>列出 favoritePlans
 
@@ -31,7 +31,7 @@ ms.locfileid: "36361350"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
-GET /users/<id>/planner/favoritePlans
+GET /users/{id}/planner/favoritePlans
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-favoriteplans-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-favoriteplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6103e01ea9832bd7858215576eaeb4319514d6be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8160074fdf8f034ccf2c5b6836a066c44173034
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978803"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412829"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -30,7 +30,7 @@ ms.locfileid: "35978803"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /privilegedApproval/<id>
+PATCH /privilegedApproval/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|

@@ -6,12 +6,12 @@ title: 取消追随驱动器项目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3ac8e3af809a9e324f69e66d1ef3c6f8f83aa840
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6599b49ae54fc315802880ae3dccfd585585a7ce
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320936"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36416616"
 ---
 # <a name="unfollow-drive-item"></a>取消追随驱动器项目
 
@@ -72,10 +72,6 @@ DELETE /me/drive/items/{item-id}/unfollow
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-item-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unfollow-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2154e419d240a514930df503ec9919f112bf198d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9e10aa20eeab22340006ce1f8f4c25c8f7a61e79
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361441"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413112"
 ---
 # <a name="delete-plannertask"></a>删除 plannerTask
 
@@ -29,7 +29,7 @@ ms.locfileid: "36361441"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/tasks/<id>
+DELETE /planner/tasks/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -56,7 +56,7 @@ DELETE /planner/tasks/<id>
   "name": "delete_plannertask"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/planner/tasks/<id>
+DELETE https://graph.microsoft.com/beta/planner/tasks/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -69,10 +69,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-plannertask-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-plannertask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

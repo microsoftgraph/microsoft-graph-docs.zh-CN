@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 15fe4000cab7cc4925ddb9eac798e9fc768cf185
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2ba85e34a3ce89c072f6a2d955c10505e30eb318
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361266"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412801"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -35,7 +35,7 @@ ms.locfileid: "36361266"
 GET /privilegedRoles/{id}/assignments
 ```
 
-请注意``<id>`` , 它是目标角色 id。
+请注意``{id}`` , 它是目标角色 id。
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
