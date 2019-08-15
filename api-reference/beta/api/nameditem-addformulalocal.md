@@ -5,59 +5,59 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6d9004b74694eea8229f40d9d158ed2020b4df67
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f712700a2421eec2149b4b8ebc7aa0c610ecf781
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342759"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36414873"
 ---
-# <a name="add-named-item-formulalocal"></a><span data-ttu-id="445e1-103">添加已命名项 FormulaLocal</span><span class="sxs-lookup"><span data-stu-id="445e1-103">Add Named Item FormulaLocal</span></span>
-<span data-ttu-id="445e1-104">使用用户的公式区域设置，将新名称添加到给定范围的集合。</span><span class="sxs-lookup"><span data-stu-id="445e1-104">Adds a new name to the collection of the given scope using the user's locale for the formula.</span></span>
+# <a name="add-named-item-formulalocal"></a><span data-ttu-id="54263-103">添加已命名项 FormulaLocal</span><span class="sxs-lookup"><span data-stu-id="54263-103">Add Named Item FormulaLocal</span></span>
+<span data-ttu-id="54263-104">使用用户的公式区域设置，将新名称添加到给定范围的集合。</span><span class="sxs-lookup"><span data-stu-id="54263-104">Adds a new name to the collection of the given scope using the user's locale for the formula.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="445e1-105">权限</span><span class="sxs-lookup"><span data-stu-id="445e1-105">Permissions</span></span>
-<span data-ttu-id="445e1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="445e1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="54263-105">权限</span><span class="sxs-lookup"><span data-stu-id="54263-105">Permissions</span></span>
+<span data-ttu-id="54263-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="54263-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="445e1-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="445e1-108">Permission type</span></span>      | <span data-ttu-id="445e1-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="445e1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="54263-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="54263-108">Permission type</span></span>      | <span data-ttu-id="54263-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="54263-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="445e1-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="445e1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="445e1-111">Files.ReadWrite、Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="445e1-111">Files.ReadWrite, Sites.Read.All</span></span>    |
-|<span data-ttu-id="445e1-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="445e1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="445e1-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="445e1-113">Not supported.</span></span>    |
-|<span data-ttu-id="445e1-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="445e1-114">Application</span></span> | <span data-ttu-id="445e1-115">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="445e1-115">Sites.Read.All</span></span> |
+|<span data-ttu-id="54263-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="54263-110">Delegated (work or school account)</span></span> | <span data-ttu-id="54263-111">Files.ReadWrite、Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="54263-111">Files.ReadWrite, Sites.Read.All</span></span>    |
+|<span data-ttu-id="54263-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="54263-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="54263-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="54263-113">Not supported.</span></span>    |
+|<span data-ttu-id="54263-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="54263-114">Application</span></span> | <span data-ttu-id="54263-115">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="54263-115">Sites.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="445e1-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="445e1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="54263-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="54263-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
 POST /workbook/worksheets({id|name})/names/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="445e1-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="445e1-117">Request headers</span></span>
-| <span data-ttu-id="445e1-118">名称</span><span class="sxs-lookup"><span data-stu-id="445e1-118">Name</span></span>       | <span data-ttu-id="445e1-119">说明</span><span class="sxs-lookup"><span data-stu-id="445e1-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="54263-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="54263-117">Request headers</span></span>
+| <span data-ttu-id="54263-118">名称</span><span class="sxs-lookup"><span data-stu-id="54263-118">Name</span></span>       | <span data-ttu-id="54263-119">说明</span><span class="sxs-lookup"><span data-stu-id="54263-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="445e1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="445e1-120">Authorization</span></span>  | <span data-ttu-id="445e1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="445e1-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="445e1-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="445e1-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="445e1-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="445e1-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="54263-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="54263-120">Authorization</span></span>  | <span data-ttu-id="54263-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="54263-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="54263-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="54263-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="54263-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="54263-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="445e1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="445e1-126">Request body</span></span>
-<span data-ttu-id="445e1-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="445e1-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="54263-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="54263-126">Request body</span></span>
+<span data-ttu-id="54263-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="54263-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="445e1-128">参数</span><span class="sxs-lookup"><span data-stu-id="445e1-128">Parameter</span></span>    | <span data-ttu-id="445e1-129">类型</span><span class="sxs-lookup"><span data-stu-id="445e1-129">Type</span></span>   |<span data-ttu-id="445e1-130">说明</span><span class="sxs-lookup"><span data-stu-id="445e1-130">Description</span></span>|
+| <span data-ttu-id="54263-128">参数</span><span class="sxs-lookup"><span data-stu-id="54263-128">Parameter</span></span>    | <span data-ttu-id="54263-129">类型</span><span class="sxs-lookup"><span data-stu-id="54263-129">Type</span></span>   |<span data-ttu-id="54263-130">说明</span><span class="sxs-lookup"><span data-stu-id="54263-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="445e1-131">name</span><span class="sxs-lookup"><span data-stu-id="445e1-131">name</span></span>|<span data-ttu-id="445e1-132">string</span><span class="sxs-lookup"><span data-stu-id="445e1-132">string</span></span>|<span data-ttu-id="445e1-133">已命名项的名称。</span><span class="sxs-lookup"><span data-stu-id="445e1-133">The name of the named item.</span></span>|
-|<span data-ttu-id="445e1-134">公式</span><span class="sxs-lookup"><span data-stu-id="445e1-134">formula</span></span>|<span data-ttu-id="445e1-135">string</span><span class="sxs-lookup"><span data-stu-id="445e1-135">string</span></span>|<span data-ttu-id="445e1-136">名称将引用的公式或区域。</span><span class="sxs-lookup"><span data-stu-id="445e1-136">The formula or the range that the name will refer to.</span></span>|
-|<span data-ttu-id="445e1-137">comment</span><span class="sxs-lookup"><span data-stu-id="445e1-137">comment</span></span>|<span data-ttu-id="445e1-138">字符串</span><span class="sxs-lookup"><span data-stu-id="445e1-138">string</span></span>|<span data-ttu-id="445e1-139">与此已命名项相关联的注释。</span><span class="sxs-lookup"><span data-stu-id="445e1-139">The comment associated with the named item</span></span>|
+|<span data-ttu-id="54263-131">name</span><span class="sxs-lookup"><span data-stu-id="54263-131">name</span></span>|<span data-ttu-id="54263-132">string</span><span class="sxs-lookup"><span data-stu-id="54263-132">string</span></span>|<span data-ttu-id="54263-133">已命名项的名称。</span><span class="sxs-lookup"><span data-stu-id="54263-133">The name of the named item.</span></span>|
+|<span data-ttu-id="54263-134">公式</span><span class="sxs-lookup"><span data-stu-id="54263-134">formula</span></span>|<span data-ttu-id="54263-135">string</span><span class="sxs-lookup"><span data-stu-id="54263-135">string</span></span>|<span data-ttu-id="54263-136">名称将引用的公式或区域。</span><span class="sxs-lookup"><span data-stu-id="54263-136">The formula or the range that the name will refer to.</span></span>|
+|<span data-ttu-id="54263-137">comment</span><span class="sxs-lookup"><span data-stu-id="54263-137">comment</span></span>|<span data-ttu-id="54263-138">字符串</span><span class="sxs-lookup"><span data-stu-id="54263-138">string</span></span>|<span data-ttu-id="54263-139">与此已命名项相关联的注释。</span><span class="sxs-lookup"><span data-stu-id="54263-139">The comment associated with the named item</span></span>|
 
-## <a name="response"></a><span data-ttu-id="445e1-140">响应</span><span class="sxs-lookup"><span data-stu-id="445e1-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="54263-140">响应</span><span class="sxs-lookup"><span data-stu-id="54263-140">Response</span></span>
 
-<span data-ttu-id="445e1-141">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/workbooknameditem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="445e1-141">If successful, this method returns `200 OK` response code and [NamedItem](../resources/workbooknameditem.md) object in the response body.</span></span>
+<span data-ttu-id="54263-141">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/workbooknameditem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="54263-141">If successful, this method returns `200 OK` response code and [NamedItem](../resources/workbooknameditem.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="445e1-142">示例</span><span class="sxs-lookup"><span data-stu-id="445e1-142">Example</span></span>
-<span data-ttu-id="445e1-143">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="445e1-143">Here is an example of how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="54263-142">示例</span><span class="sxs-lookup"><span data-stu-id="54263-142">Example</span></span>
+<span data-ttu-id="54263-143">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="54263-143">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="445e1-144">请求</span><span class="sxs-lookup"><span data-stu-id="445e1-144">Request</span></span>
-<span data-ttu-id="445e1-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="445e1-145">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="54263-144">请求</span><span class="sxs-lookup"><span data-stu-id="54263-144">Request</span></span>
+<span data-ttu-id="54263-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="54263-145">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="445e1-146">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="445e1-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="54263-146">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="54263-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "NamedItemcollection_add"
@@ -73,27 +73,23 @@ Content-length: 54
   "comment": "Comment for the named item"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="445e1-147">C#</span><span class="sxs-lookup"><span data-stu-id="445e1-147">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="54263-147">C#</span><span class="sxs-lookup"><span data-stu-id="54263-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditemcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="445e1-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="445e1-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="54263-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="54263-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditemcollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="445e1-149">目标-C</span><span class="sxs-lookup"><span data-stu-id="445e1-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="54263-149">目标-C</span><span class="sxs-lookup"><span data-stu-id="54263-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditemcollection-add-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="445e1-150">Java</span><span class="sxs-lookup"><span data-stu-id="445e1-150">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/nameditemcollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="445e1-151">响应</span><span class="sxs-lookup"><span data-stu-id="445e1-151">Response</span></span>
-<span data-ttu-id="445e1-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="445e1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="54263-150">响应</span><span class="sxs-lookup"><span data-stu-id="54263-150">Response</span></span>
+<span data-ttu-id="54263-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="54263-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

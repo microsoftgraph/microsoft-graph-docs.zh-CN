@@ -5,68 +5,68 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4a5b9130a562ff15b1a9c13106c0528246805ce4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a04b56847497aa471ea6f8c5d0cbc99e754e9ef0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346910"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415041"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="e09ca-103">列出附件</span><span class="sxs-lookup"><span data-stu-id="e09ca-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="e0d67-103">列出附件</span><span class="sxs-lookup"><span data-stu-id="e0d67-103">List attachments</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e09ca-104">检索附加到邮件的 [attachment](../resources/attachment.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="e09ca-104">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e09ca-105">权限</span><span class="sxs-lookup"><span data-stu-id="e09ca-105">Permissions</span></span>
-<span data-ttu-id="e09ca-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e09ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e0d67-104">检索附加到邮件的 [attachment](../resources/attachment.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="e0d67-104">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e0d67-105">权限</span><span class="sxs-lookup"><span data-stu-id="e0d67-105">Permissions</span></span>
+<span data-ttu-id="e0d67-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e0d67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e09ca-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e09ca-108">Permission type</span></span>      | <span data-ttu-id="e09ca-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e09ca-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e0d67-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e0d67-108">Permission type</span></span>      | <span data-ttu-id="e0d67-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e0d67-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e09ca-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e09ca-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e09ca-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e09ca-111">Mail.Read</span></span>    |
-|<span data-ttu-id="e09ca-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e09ca-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e09ca-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e09ca-113">Mail.Read</span></span>    |
-|<span data-ttu-id="e09ca-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e09ca-114">Application</span></span> | <span data-ttu-id="e09ca-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e09ca-115">Mail.Read</span></span> |
+|<span data-ttu-id="e0d67-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e0d67-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e0d67-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e0d67-111">Mail.Read</span></span>    |
+|<span data-ttu-id="e0d67-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e0d67-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e0d67-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e0d67-113">Mail.Read</span></span>    |
+|<span data-ttu-id="e0d67-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e0d67-114">Application</span></span> | <span data-ttu-id="e0d67-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="e0d67-115">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e09ca-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e09ca-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e0d67-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e0d67-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="e09ca-117">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="e09ca-117">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+<span data-ttu-id="e0d67-117">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="e0d67-117">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-<span data-ttu-id="e09ca-118">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="e09ca-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="e0d67-118">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="e0d67-118">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-<span data-ttu-id="e09ca-p102">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="e09ca-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="e0d67-p102">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="e0d67-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="e09ca-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e09ca-121">Optional query parameters</span></span>
-<span data-ttu-id="e09ca-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e09ca-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e0d67-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e0d67-121">Optional query parameters</span></span>
+<span data-ttu-id="e0d67-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e0d67-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="e09ca-123">特别是, 您可以使用 $expand 查询参数将所有邮件附件嵌入到其余邮件属性中。</span><span class="sxs-lookup"><span data-stu-id="e09ca-123">In particular, you can use the $expand query parameter to include all of the message attachments inline with the rest of the message properties.</span></span> <span data-ttu-id="e09ca-124">例如：</span><span class="sxs-lookup"><span data-stu-id="e09ca-124">For example:</span></span>
+<span data-ttu-id="e0d67-123">特别是, 您可以使用 $expand 查询参数将所有邮件附件嵌入到其余邮件属性中。</span><span class="sxs-lookup"><span data-stu-id="e0d67-123">In particular, you can use the $expand query parameter to include all of the message attachments inline with the rest of the message properties.</span></span> <span data-ttu-id="e0d67-124">例如：</span><span class="sxs-lookup"><span data-stu-id="e0d67-124">For example:</span></span>
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ```
-## <a name="request-headers"></a><span data-ttu-id="e09ca-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="e09ca-125">Request headers</span></span>
-| <span data-ttu-id="e09ca-126">名称</span><span class="sxs-lookup"><span data-stu-id="e09ca-126">Name</span></span>       | <span data-ttu-id="e09ca-127">类型</span><span class="sxs-lookup"><span data-stu-id="e09ca-127">Type</span></span> | <span data-ttu-id="e09ca-128">说明</span><span class="sxs-lookup"><span data-stu-id="e09ca-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e0d67-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="e0d67-125">Request headers</span></span>
+| <span data-ttu-id="e0d67-126">名称</span><span class="sxs-lookup"><span data-stu-id="e0d67-126">Name</span></span>       | <span data-ttu-id="e0d67-127">类型</span><span class="sxs-lookup"><span data-stu-id="e0d67-127">Type</span></span> | <span data-ttu-id="e0d67-128">说明</span><span class="sxs-lookup"><span data-stu-id="e0d67-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="e09ca-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="e09ca-129">Authorization</span></span>  | <span data-ttu-id="e09ca-130">string</span><span class="sxs-lookup"><span data-stu-id="e09ca-130">string</span></span>  | <span data-ttu-id="e09ca-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e09ca-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e0d67-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="e0d67-129">Authorization</span></span>  | <span data-ttu-id="e0d67-130">string</span><span class="sxs-lookup"><span data-stu-id="e0d67-130">string</span></span>  | <span data-ttu-id="e0d67-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e0d67-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e09ca-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="e09ca-133">Request body</span></span>
-<span data-ttu-id="e09ca-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e09ca-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e0d67-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="e0d67-133">Request body</span></span>
+<span data-ttu-id="e0d67-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e0d67-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e09ca-135">响应</span><span class="sxs-lookup"><span data-stu-id="e09ca-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e0d67-135">响应</span><span class="sxs-lookup"><span data-stu-id="e0d67-135">Response</span></span>
 
-<span data-ttu-id="e09ca-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Attachment](../resources/attachment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e09ca-136">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e09ca-137">示例</span><span class="sxs-lookup"><span data-stu-id="e09ca-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e09ca-138">请求</span><span class="sxs-lookup"><span data-stu-id="e09ca-138">Request</span></span>
-<span data-ttu-id="e09ca-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e09ca-139">Here is an example of the request.</span></span>
+<span data-ttu-id="e0d67-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Attachment](../resources/attachment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e0d67-136">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e0d67-137">示例</span><span class="sxs-lookup"><span data-stu-id="e0d67-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e0d67-138">请求</span><span class="sxs-lookup"><span data-stu-id="e0d67-138">Request</span></span>
+<span data-ttu-id="e0d67-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e0d67-139">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e09ca-140">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e09ca-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e0d67-140">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e0d67-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_get_attachments"
@@ -74,26 +74,22 @@ GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ```http
 GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e09ca-141">C#</span><span class="sxs-lookup"><span data-stu-id="e09ca-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e0d67-141">C#</span><span class="sxs-lookup"><span data-stu-id="e0d67-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-get-attachments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e09ca-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e09ca-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e0d67-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e0d67-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-get-attachments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e09ca-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="e09ca-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e0d67-143">目标-C</span><span class="sxs-lookup"><span data-stu-id="e0d67-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-get-attachments-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="e09ca-144">Java</span><span class="sxs-lookup"><span data-stu-id="e09ca-144">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-get-attachments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="e09ca-145">响应</span><span class="sxs-lookup"><span data-stu-id="e09ca-145">Response</span></span>
-<span data-ttu-id="e09ca-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e09ca-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e0d67-144">响应</span><span class="sxs-lookup"><span data-stu-id="e0d67-144">Response</span></span>
+<span data-ttu-id="e0d67-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e0d67-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

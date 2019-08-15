@@ -5,57 +5,57 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 885eb25e57cb31ff3e5c0f291b9fbcf529ea06ce
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa311ec350683b8e72d2c0f049077e340ef15a2c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342304"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413496"
 ---
-# <a name="update-plannerassignedtotaskboardtaskformat"></a><span data-ttu-id="9029d-103">更新 plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="9029d-103">Update plannerAssignedToTaskBoardTaskFormat</span></span>
+# <a name="update-plannerassignedtotaskboardtaskformat"></a><span data-ttu-id="e28d3-103">更新 plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="e28d3-103">Update plannerAssignedToTaskBoardTaskFormat</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9029d-104">更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="9029d-104">Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="9029d-105">权限</span><span class="sxs-lookup"><span data-stu-id="9029d-105">Permissions</span></span>
-<span data-ttu-id="9029d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9029d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e28d3-104">更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e28d3-104">Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e28d3-105">权限</span><span class="sxs-lookup"><span data-stu-id="e28d3-105">Permissions</span></span>
+<span data-ttu-id="e28d3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e28d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9029d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9029d-108">Permission type</span></span>      | <span data-ttu-id="9029d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9029d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e28d3-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e28d3-108">Permission type</span></span>      | <span data-ttu-id="e28d3-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e28d3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9029d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9029d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9029d-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9029d-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9029d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9029d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9029d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="9029d-113">Not supported.</span></span>    |
-|<span data-ttu-id="9029d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9029d-114">Application</span></span> | <span data-ttu-id="9029d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9029d-115">Not supported.</span></span> |
+|<span data-ttu-id="e28d3-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e28d3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e28d3-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e28d3-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e28d3-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e28d3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e28d3-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e28d3-113">Not supported.</span></span>    |
+|<span data-ttu-id="e28d3-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e28d3-114">Application</span></span> | <span data-ttu-id="e28d3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e28d3-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9029d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9029d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e28d3-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e28d3-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
+PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="9029d-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="9029d-117">Optional request headers</span></span>
-| <span data-ttu-id="9029d-118">名称</span><span class="sxs-lookup"><span data-stu-id="9029d-118">Name</span></span>       | <span data-ttu-id="9029d-119">说明</span><span class="sxs-lookup"><span data-stu-id="9029d-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="e28d3-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="e28d3-117">Optional request headers</span></span>
+| <span data-ttu-id="e28d3-118">名称</span><span class="sxs-lookup"><span data-stu-id="e28d3-118">Name</span></span>       | <span data-ttu-id="e28d3-119">说明</span><span class="sxs-lookup"><span data-stu-id="e28d3-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="9029d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9029d-120">Authorization</span></span>  | <span data-ttu-id="9029d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9029d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9029d-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="9029d-123">If-Match</span></span>  | <span data-ttu-id="9029d-p103">要更新的 **plannerAssignedToTaskBoardTaskFormat** 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="9029d-p103">Last known ETag value for **plannerAssignedToTaskBoardTaskFormat** to be updated. Required.</span></span>|
+| <span data-ttu-id="e28d3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e28d3-120">Authorization</span></span>  | <span data-ttu-id="e28d3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e28d3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e28d3-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="e28d3-123">If-Match</span></span>  | <span data-ttu-id="e28d3-p103">要更新的 **plannerAssignedToTaskBoardTaskFormat** 的上次已知 ETag 值。必需。</span><span class="sxs-lookup"><span data-stu-id="e28d3-p103">Last known ETag value for **plannerAssignedToTaskBoardTaskFormat** to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9029d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9029d-126">Request body</span></span>
-<span data-ttu-id="9029d-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="9029d-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e28d3-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e28d3-126">Request body</span></span>
+<span data-ttu-id="e28d3-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="e28d3-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="9029d-130">属性</span><span class="sxs-lookup"><span data-stu-id="9029d-130">Property</span></span>     | <span data-ttu-id="9029d-131">类型</span><span class="sxs-lookup"><span data-stu-id="9029d-131">Type</span></span>   |<span data-ttu-id="9029d-132">说明</span><span class="sxs-lookup"><span data-stu-id="9029d-132">Description</span></span>|
+| <span data-ttu-id="e28d3-130">属性</span><span class="sxs-lookup"><span data-stu-id="e28d3-130">Property</span></span>     | <span data-ttu-id="e28d3-131">类型</span><span class="sxs-lookup"><span data-stu-id="e28d3-131">Type</span></span>   |<span data-ttu-id="e28d3-132">说明</span><span class="sxs-lookup"><span data-stu-id="e28d3-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9029d-133">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="9029d-133">orderHintsByAssignee</span></span>|[<span data-ttu-id="9029d-134">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="9029d-134">plannerOrderHintsByAssignee</span></span>](../resources/plannerorderhintsbyassignee.md)|<span data-ttu-id="9029d-135">用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。</span><span class="sxs-lookup"><span data-stu-id="9029d-135">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board.</span></span> <span data-ttu-id="9029d-136">每个条目的键是任务分配到的用户之一, 值是 order 提示。</span><span class="sxs-lookup"><span data-stu-id="9029d-136">The key of each entry is one of the users the task is assigned to and the value is the order hint.</span></span> <span data-ttu-id="9029d-137">每个值的格式在 [使用 Planner 中的排序提示] (.。/resources/planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="9029d-137">The format of each value is defined in [Using order hints in Planner(../resources/planner_order_hint_format.md).</span></span>|
-|<span data-ttu-id="9029d-138">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="9029d-138">unassignedOrderHint</span></span>|<span data-ttu-id="9029d-139">字符串</span><span class="sxs-lookup"><span data-stu-id="9029d-139">String</span></span>|<span data-ttu-id="9029d-140">在任务未分配给任何人时, 或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示, 用于在任务板的 "分配给" 视图中对任务进行排序的提示值。</span><span class="sxs-lookup"><span data-stu-id="9029d-140">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to.</span></span> <span data-ttu-id="9029d-141">格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。</span><span class="sxs-lookup"><span data-stu-id="9029d-141">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="e28d3-133">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="e28d3-133">orderHintsByAssignee</span></span>|[<span data-ttu-id="e28d3-134">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="e28d3-134">plannerOrderHintsByAssignee</span></span>](../resources/plannerorderhintsbyassignee.md)|<span data-ttu-id="e28d3-135">用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。</span><span class="sxs-lookup"><span data-stu-id="e28d3-135">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board.</span></span> <span data-ttu-id="e28d3-136">每个条目的键是任务分配到的用户之一, 值是 order 提示。</span><span class="sxs-lookup"><span data-stu-id="e28d3-136">The key of each entry is one of the users the task is assigned to and the value is the order hint.</span></span> <span data-ttu-id="e28d3-137">每个值的格式在 [使用 Planner 中的排序提示] (.。/resources/planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="e28d3-137">The format of each value is defined in [Using order hints in Planner(../resources/planner_order_hint_format.md).</span></span>|
+|<span data-ttu-id="e28d3-138">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="e28d3-138">unassignedOrderHint</span></span>|<span data-ttu-id="e28d3-139">字符串</span><span class="sxs-lookup"><span data-stu-id="e28d3-139">String</span></span>|<span data-ttu-id="e28d3-140">在任务未分配给任何人时, 或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示, 用于在任务板的 "分配给" 视图中对任务进行排序的提示值。</span><span class="sxs-lookup"><span data-stu-id="e28d3-140">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to.</span></span> <span data-ttu-id="e28d3-141">格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。</span><span class="sxs-lookup"><span data-stu-id="e28d3-141">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9029d-142">响应</span><span class="sxs-lookup"><span data-stu-id="9029d-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e28d3-142">响应</span><span class="sxs-lookup"><span data-stu-id="e28d3-142">Response</span></span>
 
-<span data-ttu-id="9029d-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="9029d-143">If successful, this method returns a `200 OK` response code and updated [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="e28d3-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e28d3-143">If successful, this method returns a `200 OK` response code and updated [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="9029d-p107">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="9029d-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="e28d3-p107">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="e28d3-p107">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="9029d-147">示例</span><span class="sxs-lookup"><span data-stu-id="9029d-147">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9029d-148">请求</span><span class="sxs-lookup"><span data-stu-id="9029d-148">Request</span></span>
-<span data-ttu-id="9029d-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9029d-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e28d3-147">示例</span><span class="sxs-lookup"><span data-stu-id="e28d3-147">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e28d3-148">请求</span><span class="sxs-lookup"><span data-stu-id="e28d3-148">Request</span></span>
+<span data-ttu-id="e28d3-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e28d3-149">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9029d-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9029d-150">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e28d3-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e28d3-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannerassignedtotaskboardtaskformat"
@@ -72,26 +72,22 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9029d-151">C#</span><span class="sxs-lookup"><span data-stu-id="9029d-151">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e28d3-151">C#</span><span class="sxs-lookup"><span data-stu-id="e28d3-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerassignedtotaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9029d-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9029d-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e28d3-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e28d3-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerassignedtotaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9029d-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="9029d-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e28d3-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="e28d3-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerassignedtotaskboardtaskformat-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="9029d-154">Java</span><span class="sxs-lookup"><span data-stu-id="9029d-154">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-plannerassignedtotaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="9029d-155">响应</span><span class="sxs-lookup"><span data-stu-id="9029d-155">Response</span></span>
-<span data-ttu-id="9029d-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9029d-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e28d3-154">响应</span><span class="sxs-lookup"><span data-stu-id="e28d3-154">Response</span></span>
+<span data-ttu-id="e28d3-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e28d3-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,54 +5,54 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9309049210234bc8460bc6023e10154db0b10bab
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4cdb3795e0cab3f3ee66fd47f9f8876e56d9d705
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321182"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417134"
 ---
-# <a name="list-directorysettingtemplates"></a><span data-ttu-id="619e8-104">列出 directorySettingTemplates</span><span class="sxs-lookup"><span data-stu-id="619e8-104">List directorySettingTemplates</span></span>
+# <a name="list-directorysettingtemplates"></a><span data-ttu-id="15d71-104">列出 directorySettingTemplates</span><span class="sxs-lookup"><span data-stu-id="15d71-104">List directorySettingTemplates</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="619e8-105">目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。</span><span class="sxs-lookup"><span data-stu-id="619e8-105">Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.</span></span>  <span data-ttu-id="619e8-106">此操作将检索可用的 directorySettingTemplates 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="619e8-106">This operation retrieves the list of available directorySettingTemplates objects.</span></span>
+<span data-ttu-id="15d71-105">目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。</span><span class="sxs-lookup"><span data-stu-id="15d71-105">Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.</span></span>  <span data-ttu-id="15d71-106">此操作将检索可用的 directorySettingTemplates 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="15d71-106">This operation retrieves the list of available directorySettingTemplates objects.</span></span>
 
-> <span data-ttu-id="619e8-107">**注意**: 此 API 的/beta 版本仅适用于组。</span><span class="sxs-lookup"><span data-stu-id="619e8-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="619e8-108">此 API 的/v1.0 版本已重命名为*List groupSettingTemplate*。</span><span class="sxs-lookup"><span data-stu-id="619e8-108">The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.</span></span>
+> <span data-ttu-id="15d71-107">**注意**: 此 API 的/beta 版本仅适用于组。</span><span class="sxs-lookup"><span data-stu-id="15d71-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="15d71-108">此 API 的/v1.0 版本已重命名为*List groupSettingTemplate*。</span><span class="sxs-lookup"><span data-stu-id="15d71-108">The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="619e8-109">权限</span><span class="sxs-lookup"><span data-stu-id="619e8-109">Permissions</span></span>
-<span data-ttu-id="619e8-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="619e8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15d71-109">权限</span><span class="sxs-lookup"><span data-stu-id="15d71-109">Permissions</span></span>
+<span data-ttu-id="15d71-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="15d71-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="619e8-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="619e8-112">Permission type</span></span>      | <span data-ttu-id="619e8-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="619e8-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15d71-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="15d71-112">Permission type</span></span>      | <span data-ttu-id="15d71-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="15d71-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="619e8-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="619e8-114">Delegated (work or school account)</span></span> | <span data-ttu-id="619e8-115">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="619e8-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="619e8-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="619e8-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="619e8-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="619e8-117">Not supported.</span></span>    |
-|<span data-ttu-id="619e8-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="619e8-118">Application</span></span> | <span data-ttu-id="619e8-119">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="619e8-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="15d71-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="15d71-114">Delegated (work or school account)</span></span> | <span data-ttu-id="15d71-115">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="15d71-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="15d71-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="15d71-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15d71-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="15d71-117">Not supported.</span></span>    |
+|<span data-ttu-id="15d71-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="15d71-118">Application</span></span> | <span data-ttu-id="15d71-119">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15d71-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="619e8-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="619e8-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15d71-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="15d71-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directorySettingTemplates
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="619e8-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="619e8-121">Optional query parameters</span></span>
-<span data-ttu-id="619e8-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="619e8-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="15d71-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="15d71-121">Optional query parameters</span></span>
+<span data-ttu-id="15d71-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="15d71-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="619e8-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="619e8-123">Request headers</span></span>
-| <span data-ttu-id="619e8-124">名称</span><span class="sxs-lookup"><span data-stu-id="619e8-124">Name</span></span>      |<span data-ttu-id="619e8-125">说明</span><span class="sxs-lookup"><span data-stu-id="619e8-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15d71-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="15d71-123">Request headers</span></span>
+| <span data-ttu-id="15d71-124">名称</span><span class="sxs-lookup"><span data-stu-id="15d71-124">Name</span></span>      |<span data-ttu-id="15d71-125">说明</span><span class="sxs-lookup"><span data-stu-id="15d71-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="619e8-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="619e8-126">Authorization</span></span>  | <span data-ttu-id="619e8-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="619e8-p105">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="15d71-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="15d71-126">Authorization</span></span>  | <span data-ttu-id="15d71-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="15d71-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="619e8-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="619e8-129">Request body</span></span>
-<span data-ttu-id="619e8-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="619e8-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15d71-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="15d71-129">Request body</span></span>
+<span data-ttu-id="15d71-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="15d71-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="619e8-131">响应</span><span class="sxs-lookup"><span data-stu-id="619e8-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15d71-131">响应</span><span class="sxs-lookup"><span data-stu-id="15d71-131">Response</span></span>
 
-<span data-ttu-id="619e8-132">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directorySettingTemplate](../resources/directorysettingtemplate.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="619e8-132">If successful, this method returns a `200 OK` response code and collection of [directorySettingTemplate](../resources/directorysettingtemplate.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="619e8-133">示例</span><span class="sxs-lookup"><span data-stu-id="619e8-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="619e8-134">请求</span><span class="sxs-lookup"><span data-stu-id="619e8-134">Request</span></span>
-<span data-ttu-id="619e8-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="619e8-135">Here is an example of the request.</span></span>
+<span data-ttu-id="15d71-132">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directorySettingTemplate](../resources/directorysettingtemplate.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="15d71-132">If successful, this method returns a `200 OK` response code and collection of [directorySettingTemplate](../resources/directorysettingtemplate.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="15d71-133">示例</span><span class="sxs-lookup"><span data-stu-id="15d71-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15d71-134">请求</span><span class="sxs-lookup"><span data-stu-id="15d71-134">Request</span></span>
+<span data-ttu-id="15d71-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="15d71-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="619e8-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="619e8-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="15d71-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="15d71-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplates"
@@ -60,26 +60,22 @@ GET /directorySettingTemplates
 ```http
 GET https://graph.microsoft.com/beta/directorySettingTemplates
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="619e8-137">C#</span><span class="sxs-lookup"><span data-stu-id="619e8-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="15d71-137">C#</span><span class="sxs-lookup"><span data-stu-id="15d71-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="619e8-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="619e8-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="15d71-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15d71-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysettingtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="619e8-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="619e8-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="15d71-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="15d71-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplates-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="619e8-140">Java</span><span class="sxs-lookup"><span data-stu-id="619e8-140">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="619e8-141">响应</span><span class="sxs-lookup"><span data-stu-id="619e8-141">Response</span></span>
-<span data-ttu-id="619e8-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="619e8-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="15d71-140">响应</span><span class="sxs-lookup"><span data-stu-id="15d71-140">Response</span></span>
+<span data-ttu-id="15d71-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="15d71-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,28 +5,28 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: fa1bb4553ae31c901ae3073a88a9f0010a7d8978
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a1a6a2bc2b6bf009e1254060ef0f1106526228ae
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346796"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36414607"
 ---
-# <a name="create-notebook"></a><span data-ttu-id="048de-103">创建笔记本</span><span class="sxs-lookup"><span data-stu-id="048de-103">Create notebook</span></span>
+# <a name="create-notebook"></a><span data-ttu-id="7bf5b-103">创建笔记本</span><span class="sxs-lookup"><span data-stu-id="7bf5b-103">Create notebook</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="048de-104">创建新的 OneNote[笔记本](../resources/notebook.md)。</span><span class="sxs-lookup"><span data-stu-id="048de-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="048de-105">权限</span><span class="sxs-lookup"><span data-stu-id="048de-105">Permissions</span></span>
-<span data-ttu-id="048de-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="048de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7bf5b-104">创建新的 OneNote[笔记本](../resources/notebook.md)。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7bf5b-105">权限</span><span class="sxs-lookup"><span data-stu-id="7bf5b-105">Permissions</span></span>
+<span data-ttu-id="7bf5b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="048de-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="048de-108">Permission type</span></span>      | <span data-ttu-id="048de-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="048de-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7bf5b-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7bf5b-108">Permission type</span></span>      | <span data-ttu-id="7bf5b-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7bf5b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="048de-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="048de-110">Delegated (work or school account)</span></span> | <span data-ttu-id="048de-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="048de-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="048de-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="048de-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="048de-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="048de-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="048de-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="048de-114">Application</span></span> | <span data-ttu-id="048de-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="048de-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="7bf5b-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7bf5b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7bf5b-111">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7bf5b-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7bf5b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7bf5b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7bf5b-113">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7bf5b-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="7bf5b-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7bf5b-114">Application</span></span> | <span data-ttu-id="7bf5b-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7bf5b-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="048de-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="048de-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7bf5b-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7bf5b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks
@@ -34,26 +34,26 @@ POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
-## <a name="request-headers"></a><span data-ttu-id="048de-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="048de-117">Request headers</span></span>
-| <span data-ttu-id="048de-118">名称</span><span class="sxs-lookup"><span data-stu-id="048de-118">Name</span></span>       | <span data-ttu-id="048de-119">类型</span><span class="sxs-lookup"><span data-stu-id="048de-119">Type</span></span> | <span data-ttu-id="048de-120">说明</span><span class="sxs-lookup"><span data-stu-id="048de-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7bf5b-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7bf5b-117">Request headers</span></span>
+| <span data-ttu-id="7bf5b-118">名称</span><span class="sxs-lookup"><span data-stu-id="7bf5b-118">Name</span></span>       | <span data-ttu-id="7bf5b-119">类型</span><span class="sxs-lookup"><span data-stu-id="7bf5b-119">Type</span></span> | <span data-ttu-id="7bf5b-120">说明</span><span class="sxs-lookup"><span data-stu-id="7bf5b-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="048de-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="048de-121">Authorization</span></span>  | <span data-ttu-id="048de-122">string</span><span class="sxs-lookup"><span data-stu-id="048de-122">string</span></span>  | <span data-ttu-id="048de-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="048de-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="048de-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="048de-125">Content-Type</span></span> | <span data-ttu-id="048de-126">string</span><span class="sxs-lookup"><span data-stu-id="048de-126">string</span></span> | `application/json` |
+| <span data-ttu-id="7bf5b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7bf5b-121">Authorization</span></span>  | <span data-ttu-id="7bf5b-122">string</span><span class="sxs-lookup"><span data-stu-id="7bf5b-122">string</span></span>  | <span data-ttu-id="7bf5b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7bf5b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7bf5b-125">Content-Type</span></span> | <span data-ttu-id="7bf5b-126">string</span><span class="sxs-lookup"><span data-stu-id="7bf5b-126">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="048de-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="048de-127">Request body</span></span>
-<span data-ttu-id="048de-128">在请求正文中, 提供笔记本的名称。</span><span class="sxs-lookup"><span data-stu-id="048de-128">In the request body, supply a name for the notebook.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="7bf5b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="7bf5b-127">Request body</span></span>
+<span data-ttu-id="7bf5b-128">在请求正文中, 提供笔记本的名称。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-128">In the request body, supply a name for the notebook.</span></span> 
 
-<span data-ttu-id="048de-129">笔记本名称必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="048de-129">Notebook names must be unique.</span></span> <span data-ttu-id="048de-130">名称不能超过128个字符, 也不能包含以下字符:？\/\*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="048de-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
+<span data-ttu-id="7bf5b-129">笔记本名称必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-129">Notebook names must be unique.</span></span> <span data-ttu-id="7bf5b-130">名称不能超过128个字符, 也不能包含以下字符:？\/\*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="7bf5b-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
 
-## <a name="response"></a><span data-ttu-id="048de-131">响应</span><span class="sxs-lookup"><span data-stu-id="048de-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7bf5b-131">响应</span><span class="sxs-lookup"><span data-stu-id="7bf5b-131">Response</span></span>
 
-<span data-ttu-id="048de-132">如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[笔记本](../resources/notebook.md)对象。</span><span class="sxs-lookup"><span data-stu-id="048de-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
+<span data-ttu-id="7bf5b-132">如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[笔记本](../resources/notebook.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="048de-133">示例</span><span class="sxs-lookup"><span data-stu-id="048de-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="048de-134">请求</span><span class="sxs-lookup"><span data-stu-id="048de-134">Request</span></span>
-<span data-ttu-id="048de-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="048de-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7bf5b-133">示例</span><span class="sxs-lookup"><span data-stu-id="7bf5b-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7bf5b-134">请求</span><span class="sxs-lookup"><span data-stu-id="7bf5b-134">Request</span></span>
+<span data-ttu-id="7bf5b-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="048de-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="048de-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7bf5b-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7bf5b-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"
@@ -67,27 +67,23 @@ Content-length: 30
   "displayName": "Notebook name"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="048de-137">C#</span><span class="sxs-lookup"><span data-stu-id="048de-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7bf5b-137">C#</span><span class="sxs-lookup"><span data-stu-id="7bf5b-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-notebook-from-onenote-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="048de-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="048de-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7bf5b-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7bf5b-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-notebook-from-onenote-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="048de-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="048de-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7bf5b-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="7bf5b-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-notebook-from-onenote-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="048de-140">Java</span><span class="sxs-lookup"><span data-stu-id="048de-140">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-notebook-from-onenote-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="048de-141">响应</span><span class="sxs-lookup"><span data-stu-id="048de-141">Response</span></span>
-<span data-ttu-id="048de-p104">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="048de-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7bf5b-140">响应</span><span class="sxs-lookup"><span data-stu-id="7bf5b-140">Response</span></span>
+<span data-ttu-id="7bf5b-p104">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7bf5b-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,43 +5,43 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a1ae965e626d40c7b00f96a61858eb72530e054e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa508d290d8d705a858f37b73d17d57789c6ced9
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326903"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419830"
 ---
-# <a name="get-eventmessage"></a><span data-ttu-id="026a6-103">获取 eventMessage</span><span class="sxs-lookup"><span data-stu-id="026a6-103">Get eventMessage</span></span>
+# <a name="get-eventmessage"></a><span data-ttu-id="228e3-103">获取 eventMessage</span><span class="sxs-lookup"><span data-stu-id="228e3-103">Get eventMessage</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="026a6-104">获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="026a6-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="026a6-105">在事件`$expand`导航属性上\*\*\*\* 应用该参数, 以在与会者的日历中获取关联的[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="026a6-105">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
+<span data-ttu-id="228e3-104">获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="228e3-104">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="228e3-105">在事件`$expand`导航属性上\*\*\*\* 应用该参数, 以在与会者的日历中获取关联的[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="228e3-105">Apply the `$expand` parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="026a6-106">获取 HTML 或文本格式的事件消息正文</span><span class="sxs-lookup"><span data-stu-id="026a6-106">Get the event message body in HTML or text format</span></span>
+### <a name="get-the-event-message-body-in-html-or-text-format"></a><span data-ttu-id="228e3-106">获取 HTML 或文本格式的事件消息正文</span><span class="sxs-lookup"><span data-stu-id="228e3-106">Get the event message body in HTML or text format</span></span>
 
-<span data-ttu-id="026a6-107">事件邮件正文可以是 HTML 格式或文本格式。</span><span class="sxs-lookup"><span data-stu-id="026a6-107">Event message bodies can be in HTML or text format.</span></span>
+<span data-ttu-id="228e3-107">事件邮件正文可以是 HTML 格式或文本格式。</span><span class="sxs-lookup"><span data-stu-id="228e3-107">Event message bodies can be in HTML or text format.</span></span>
 
-<span data-ttu-id="026a6-108">您`Prefer: outlook.body-content-type`可以使用标头指定`GET`在请求中的**body**和**uniqueBody**属性中返回的所需格式:</span><span class="sxs-lookup"><span data-stu-id="026a6-108">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
+<span data-ttu-id="228e3-108">您`Prefer: outlook.body-content-type`可以使用标头指定`GET`在请求中的**body**和**uniqueBody**属性中返回的所需格式:</span><span class="sxs-lookup"><span data-stu-id="228e3-108">You can use the `Prefer: outlook.body-content-type` header to specify the desired format returned in the **body** and **uniqueBody** properties in a `GET` request:</span></span>
 
-- <span data-ttu-id="026a6-109">指定`Prefer: outlook.body-content-type="text"`获取以文本格式返回的事件消息正文。</span><span class="sxs-lookup"><span data-stu-id="026a6-109">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
-- <span data-ttu-id="026a6-110">指定`Prefer: outlook.body-content-type="html"`或直接跳过标头, 以返回 HTML 格式的事件消息正文。</span><span class="sxs-lookup"><span data-stu-id="026a6-110">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
+- <span data-ttu-id="228e3-109">指定`Prefer: outlook.body-content-type="text"`获取以文本格式返回的事件消息正文。</span><span class="sxs-lookup"><span data-stu-id="228e3-109">Specify `Prefer: outlook.body-content-type="text"` to get a event message body returned in text format.</span></span>
+- <span data-ttu-id="228e3-110">指定`Prefer: outlook.body-content-type="html"`或直接跳过标头, 以返回 HTML 格式的事件消息正文。</span><span class="sxs-lookup"><span data-stu-id="228e3-110">Specify `Prefer: outlook.body-content-type="html"`, or just skip the header, to return the event message body in HTML format.</span></span>
 
-<span data-ttu-id="026a6-111">如果指定任何一个标头, 则响应将包含相应`Preference-Applied`的标头作为确认:</span><span class="sxs-lookup"><span data-stu-id="026a6-111">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
+<span data-ttu-id="228e3-111">如果指定任何一个标头, 则响应将包含相应`Preference-Applied`的标头作为确认:</span><span class="sxs-lookup"><span data-stu-id="228e3-111">If you specify either header, the response will include the corresponding `Preference-Applied` header as confirmation:</span></span>
 
-- <span data-ttu-id="026a6-112">对于文本格式请求：`Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="026a6-112">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
-- <span data-ttu-id="026a6-113">对于 HTML 格式请求：`Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="026a6-113">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
+- <span data-ttu-id="228e3-112">对于文本格式请求：`Preference-Applied: outlook.body-content-type="text"`</span><span class="sxs-lookup"><span data-stu-id="228e3-112">For text format requests: `Preference-Applied: outlook.body-content-type="text"`</span></span>
+- <span data-ttu-id="228e3-113">对于 HTML 格式请求：`Preference-Applied: outlook.body-content-type="html"`</span><span class="sxs-lookup"><span data-stu-id="228e3-113">For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="026a6-114">权限</span><span class="sxs-lookup"><span data-stu-id="026a6-114">Permissions</span></span>
-<span data-ttu-id="026a6-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="026a6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="228e3-114">权限</span><span class="sxs-lookup"><span data-stu-id="228e3-114">Permissions</span></span>
+<span data-ttu-id="228e3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="228e3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="026a6-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="026a6-117">Permission type</span></span>      | <span data-ttu-id="026a6-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="026a6-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="228e3-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="228e3-117">Permission type</span></span>      | <span data-ttu-id="228e3-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="228e3-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="026a6-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="026a6-119">Delegated (work or school account)</span></span> | <span data-ttu-id="026a6-120">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="026a6-120">Mail.Read</span></span>    |
-|<span data-ttu-id="026a6-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="026a6-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="026a6-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="026a6-122">Mail.Read</span></span>    |
-|<span data-ttu-id="026a6-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="026a6-123">Application</span></span> | <span data-ttu-id="026a6-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="026a6-124">Mail.Read</span></span> |
+|<span data-ttu-id="228e3-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="228e3-119">Delegated (work or school account)</span></span> | <span data-ttu-id="228e3-120">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="228e3-120">Mail.Read</span></span>    |
+|<span data-ttu-id="228e3-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="228e3-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="228e3-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="228e3-122">Mail.Read</span></span>    |
+|<span data-ttu-id="228e3-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="228e3-123">Application</span></span> | <span data-ttu-id="228e3-124">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="228e3-124">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="026a6-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="026a6-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="228e3-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="228e3-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -50,24 +50,24 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="026a6-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="026a6-126">Optional query parameters</span></span>
-<span data-ttu-id="026a6-127">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="026a6-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="026a6-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="026a6-128">Request headers</span></span>
-| <span data-ttu-id="026a6-129">名称</span><span class="sxs-lookup"><span data-stu-id="026a6-129">Name</span></span>       | <span data-ttu-id="026a6-130">类型</span><span class="sxs-lookup"><span data-stu-id="026a6-130">Type</span></span> | <span data-ttu-id="026a6-131">说明</span><span class="sxs-lookup"><span data-stu-id="026a6-131">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="228e3-126">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="228e3-126">Optional query parameters</span></span>
+<span data-ttu-id="228e3-127">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="228e3-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="228e3-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="228e3-128">Request headers</span></span>
+| <span data-ttu-id="228e3-129">名称</span><span class="sxs-lookup"><span data-stu-id="228e3-129">Name</span></span>       | <span data-ttu-id="228e3-130">类型</span><span class="sxs-lookup"><span data-stu-id="228e3-130">Type</span></span> | <span data-ttu-id="228e3-131">说明</span><span class="sxs-lookup"><span data-stu-id="228e3-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="026a6-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="026a6-132">Authorization</span></span>  | <span data-ttu-id="026a6-133">string</span><span class="sxs-lookup"><span data-stu-id="026a6-133">string</span></span>  | <span data-ttu-id="026a6-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="026a6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="228e3-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="228e3-132">Authorization</span></span>  | <span data-ttu-id="228e3-133">string</span><span class="sxs-lookup"><span data-stu-id="228e3-133">string</span></span>  | <span data-ttu-id="228e3-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="228e3-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="026a6-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="026a6-136">Request body</span></span>
-<span data-ttu-id="026a6-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="026a6-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="228e3-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="228e3-136">Request body</span></span>
+<span data-ttu-id="228e3-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="228e3-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="026a6-138">响应</span><span class="sxs-lookup"><span data-stu-id="026a6-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="228e3-138">响应</span><span class="sxs-lookup"><span data-stu-id="228e3-138">Response</span></span>
 
-<span data-ttu-id="026a6-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="026a6-139">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="026a6-140">示例</span><span class="sxs-lookup"><span data-stu-id="026a6-140">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="026a6-141">请求 1</span><span class="sxs-lookup"><span data-stu-id="026a6-141">Request 1</span></span>
-<span data-ttu-id="026a6-142">第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。</span><span class="sxs-lookup"><span data-stu-id="026a6-142">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
+<span data-ttu-id="228e3-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="228e3-139">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="228e3-140">示例</span><span class="sxs-lookup"><span data-stu-id="228e3-140">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="228e3-141">请求 1</span><span class="sxs-lookup"><span data-stu-id="228e3-141">Request 1</span></span>
+<span data-ttu-id="228e3-142">第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。</span><span class="sxs-lookup"><span data-stu-id="228e3-142">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="026a6-143">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="026a6-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="228e3-143">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="228e3-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -75,26 +75,22 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="026a6-144">C#</span><span class="sxs-lookup"><span data-stu-id="026a6-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="228e3-144">C#</span><span class="sxs-lookup"><span data-stu-id="228e3-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="026a6-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="026a6-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="228e3-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="228e3-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="026a6-146">目标-C</span><span class="sxs-lookup"><span data-stu-id="026a6-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="228e3-146">目标-C</span><span class="sxs-lookup"><span data-stu-id="228e3-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="026a6-147">Java</span><span class="sxs-lookup"><span data-stu-id="026a6-147">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a><span data-ttu-id="026a6-148">响应 1</span><span class="sxs-lookup"><span data-stu-id="026a6-148">Response 1</span></span>
-<span data-ttu-id="026a6-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="026a6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="228e3-147">响应 1</span><span class="sxs-lookup"><span data-stu-id="228e3-147">Response 1</span></span>
+<span data-ttu-id="228e3-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="228e3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -200,10 +196,10 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="026a6-152">请求 2</span><span class="sxs-lookup"><span data-stu-id="026a6-152">Request 2</span></span>
-<span data-ttu-id="026a6-153">第二个示例展示了如何获取与事件消息关联的事件。</span><span class="sxs-lookup"><span data-stu-id="026a6-153">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="026a6-154">它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。</span><span class="sxs-lookup"><span data-stu-id="026a6-154">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="228e3-151">请求 2</span><span class="sxs-lookup"><span data-stu-id="228e3-151">Request 2</span></span>
+<span data-ttu-id="228e3-152">第二个示例展示了如何获取与事件消息关联的事件。</span><span class="sxs-lookup"><span data-stu-id="228e3-152">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="228e3-153">它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。</span><span class="sxs-lookup"><span data-stu-id="228e3-153">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the properties of the event.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="026a6-155">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="026a6-155">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="228e3-154">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="228e3-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
@@ -211,27 +207,23 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=microsoft.graph.eventMessage/event
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="026a6-156">C#</span><span class="sxs-lookup"><span data-stu-id="026a6-156">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="228e3-155">C#</span><span class="sxs-lookup"><span data-stu-id="228e3-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-based-on-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="026a6-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="026a6-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="228e3-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="228e3-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="026a6-158">目标-C</span><span class="sxs-lookup"><span data-stu-id="026a6-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="228e3-157">目标-C</span><span class="sxs-lookup"><span data-stu-id="228e3-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="026a6-159">Java</span><span class="sxs-lookup"><span data-stu-id="026a6-159">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-event-based-on-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a><span data-ttu-id="026a6-160">响应 2</span><span class="sxs-lookup"><span data-stu-id="026a6-160">Response 2</span></span>
-<span data-ttu-id="026a6-161">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="026a6-161">Here is an example of the response.</span></span> <span data-ttu-id="026a6-162">响应中返回关联事件的属性。</span><span class="sxs-lookup"><span data-stu-id="026a6-162">The properties of the associated event are returned in the response.</span></span>
-<span data-ttu-id="026a6-163">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="026a6-163">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="026a6-164">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="026a6-164">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="228e3-158">响应 2</span><span class="sxs-lookup"><span data-stu-id="228e3-158">Response 2</span></span>
+<span data-ttu-id="228e3-159">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="228e3-159">Here is an example of the response.</span></span> <span data-ttu-id="228e3-160">响应中返回关联事件的属性。</span><span class="sxs-lookup"><span data-stu-id="228e3-160">The properties of the associated event are returned in the response.</span></span>
+<span data-ttu-id="228e3-161">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="228e3-161">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="228e3-162">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="228e3-162">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

@@ -5,59 +5,59 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 377c1eb6bdbc0595e43785db8b31f08e4c2b2cb7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ea42198a72864ba15c7f8852c21da991b583014b
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318206"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419466"
 ---
-# <a name="update-bookingbusiness"></a><span data-ttu-id="f136d-103">更新 bookingbusiness</span><span class="sxs-lookup"><span data-stu-id="f136d-103">Update bookingbusiness</span></span>
+# <a name="update-bookingbusiness"></a><span data-ttu-id="3e5c2-103">更新 bookingbusiness</span><span class="sxs-lookup"><span data-stu-id="3e5c2-103">Update bookingbusiness</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f136d-104">更新[bookingBusiness](../resources/bookingbusiness.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="f136d-104">Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f136d-105">权限</span><span class="sxs-lookup"><span data-stu-id="f136d-105">Permissions</span></span>
-<span data-ttu-id="f136d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f136d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3e5c2-104">更新[bookingBusiness](../resources/bookingbusiness.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-104">Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3e5c2-105">权限</span><span class="sxs-lookup"><span data-stu-id="3e5c2-105">Permissions</span></span>
+<span data-ttu-id="3e5c2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f136d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f136d-108">Permission type</span></span>      | <span data-ttu-id="f136d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f136d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3e5c2-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="3e5c2-108">Permission type</span></span>      | <span data-ttu-id="3e5c2-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3e5c2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f136d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f136d-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="f136d-111">全部预订. 全部, 全部预订. 全部</span><span class="sxs-lookup"><span data-stu-id="f136d-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="f136d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f136d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f136d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f136d-113">Not supported.</span></span>   |
-|<span data-ttu-id="f136d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f136d-114">Application</span></span> | <span data-ttu-id="f136d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f136d-115">Not supported.</span></span>  |
+|<span data-ttu-id="3e5c2-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3e5c2-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3e5c2-111">全部预订. 全部, 全部预订. 全部</span><span class="sxs-lookup"><span data-stu-id="3e5c2-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="3e5c2-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3e5c2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e5c2-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-113">Not supported.</span></span>   |
+|<span data-ttu-id="3e5c2-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="3e5c2-114">Application</span></span> | <span data-ttu-id="3e5c2-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="f136d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f136d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e5c2-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3e5c2-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/<id>
+PATCH /bookingBusinesses/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="f136d-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="f136d-117">Optional request headers</span></span>
-| <span data-ttu-id="f136d-118">名称</span><span class="sxs-lookup"><span data-stu-id="f136d-118">Name</span></span>       | <span data-ttu-id="f136d-119">说明</span><span class="sxs-lookup"><span data-stu-id="f136d-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="3e5c2-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="3e5c2-117">Optional request headers</span></span>
+| <span data-ttu-id="3e5c2-118">名称</span><span class="sxs-lookup"><span data-stu-id="3e5c2-118">Name</span></span>       | <span data-ttu-id="3e5c2-119">说明</span><span class="sxs-lookup"><span data-stu-id="3e5c2-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="f136d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f136d-120">Authorization</span></span>  | <span data-ttu-id="f136d-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f136d-121">Bearer {code}</span></span>|
+| <span data-ttu-id="3e5c2-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3e5c2-120">Authorization</span></span>  | <span data-ttu-id="3e5c2-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="3e5c2-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f136d-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="f136d-122">Request body</span></span>
-<span data-ttu-id="f136d-p102">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="f136d-p102">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e5c2-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="3e5c2-122">Request body</span></span>
+<span data-ttu-id="3e5c2-p102">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-p102">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f136d-126">属性</span><span class="sxs-lookup"><span data-stu-id="f136d-126">Property</span></span>     | <span data-ttu-id="f136d-127">类型</span><span class="sxs-lookup"><span data-stu-id="f136d-127">Type</span></span>   |<span data-ttu-id="f136d-128">说明</span><span class="sxs-lookup"><span data-stu-id="f136d-128">Description</span></span>|
+| <span data-ttu-id="3e5c2-126">属性</span><span class="sxs-lookup"><span data-stu-id="3e5c2-126">Property</span></span>     | <span data-ttu-id="3e5c2-127">类型</span><span class="sxs-lookup"><span data-stu-id="3e5c2-127">Type</span></span>   |<span data-ttu-id="3e5c2-128">说明</span><span class="sxs-lookup"><span data-stu-id="3e5c2-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f136d-129">address</span><span class="sxs-lookup"><span data-stu-id="f136d-129">address</span></span>|[<span data-ttu-id="f136d-130">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="f136d-130">physicalAddress</span></span>](../resources/physicaladdress.md)|<span data-ttu-id="f136d-131">企业的街道地址。</span><span class="sxs-lookup"><span data-stu-id="f136d-131">The street address of the business.</span></span>|
-|<span data-ttu-id="f136d-132">businessHours</span><span class="sxs-lookup"><span data-stu-id="f136d-132">businessHours</span></span>|<span data-ttu-id="f136d-133">[bookingWorkHours](../resources/bookingworkhours.md)集合</span><span class="sxs-lookup"><span data-stu-id="f136d-133">[bookingWorkHours](../resources/bookingworkhours.md) collection</span></span>|<span data-ttu-id="f136d-134">业务的运行时间。</span><span class="sxs-lookup"><span data-stu-id="f136d-134">The hours of operation for the business.</span></span>|
-|<span data-ttu-id="f136d-135">businessType</span><span class="sxs-lookup"><span data-stu-id="f136d-135">businessType</span></span>|<span data-ttu-id="f136d-136">String</span><span class="sxs-lookup"><span data-stu-id="f136d-136">String</span></span>|<span data-ttu-id="f136d-137">企业的类型。</span><span class="sxs-lookup"><span data-stu-id="f136d-137">The type of business.</span></span>|
-|<span data-ttu-id="f136d-138">defaultCurrencyIso</span><span class="sxs-lookup"><span data-stu-id="f136d-138">defaultCurrencyIso</span></span>|<span data-ttu-id="f136d-139">String</span><span class="sxs-lookup"><span data-stu-id="f136d-139">String</span></span>|<span data-ttu-id="f136d-140">业务在 Microsoft 预订中所运行的货币的代码。</span><span class="sxs-lookup"><span data-stu-id="f136d-140">The code for the currency that the business operates in on Microsoft Bookings.</span></span>|
-|<span data-ttu-id="f136d-141">displayName</span><span class="sxs-lookup"><span data-stu-id="f136d-141">displayName</span></span>|<span data-ttu-id="f136d-142">字符串</span><span class="sxs-lookup"><span data-stu-id="f136d-142">String</span></span>|<span data-ttu-id="f136d-143">与客户进行交互的企业的名称。</span><span class="sxs-lookup"><span data-stu-id="f136d-143">A name for the business that interfaces with customers.</span></span>|
-|<span data-ttu-id="f136d-144">email</span><span class="sxs-lookup"><span data-stu-id="f136d-144">email</span></span>|<span data-ttu-id="f136d-145">String</span><span class="sxs-lookup"><span data-stu-id="f136d-145">String</span></span>|<span data-ttu-id="f136d-146">企业的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="f136d-146">The email address for the business.</span></span>|
-|<span data-ttu-id="f136d-147">phone</span><span class="sxs-lookup"><span data-stu-id="f136d-147">phone</span></span>|<span data-ttu-id="f136d-148">String</span><span class="sxs-lookup"><span data-stu-id="f136d-148">String</span></span>|<span data-ttu-id="f136d-149">企业的电话号码。</span><span class="sxs-lookup"><span data-stu-id="f136d-149">The telephone number for the business.</span></span>|
-|<span data-ttu-id="f136d-150">schedulingPolicy</span><span class="sxs-lookup"><span data-stu-id="f136d-150">schedulingPolicy</span></span>|[<span data-ttu-id="f136d-151">bookingSchedulingPolicy</span><span class="sxs-lookup"><span data-stu-id="f136d-151">bookingSchedulingPolicy</span></span>](../resources/bookingschedulingpolicy.md)|<span data-ttu-id="f136d-152">指定如何为此公司创建预订。</span><span class="sxs-lookup"><span data-stu-id="f136d-152">Specifies how bookings can be created for this business.</span></span>|
-|<span data-ttu-id="f136d-153">webSiteUrl</span><span class="sxs-lookup"><span data-stu-id="f136d-153">webSiteUrl</span></span>|<span data-ttu-id="f136d-154">String</span><span class="sxs-lookup"><span data-stu-id="f136d-154">String</span></span>|<span data-ttu-id="f136d-155">业务网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="f136d-155">The URL of the business web site.</span></span>|
+|<span data-ttu-id="3e5c2-129">address</span><span class="sxs-lookup"><span data-stu-id="3e5c2-129">address</span></span>|[<span data-ttu-id="3e5c2-130">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="3e5c2-130">physicalAddress</span></span>](../resources/physicaladdress.md)|<span data-ttu-id="3e5c2-131">企业的街道地址。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-131">The street address of the business.</span></span>|
+|<span data-ttu-id="3e5c2-132">businessHours</span><span class="sxs-lookup"><span data-stu-id="3e5c2-132">businessHours</span></span>|<span data-ttu-id="3e5c2-133">[bookingWorkHours](../resources/bookingworkhours.md)集合</span><span class="sxs-lookup"><span data-stu-id="3e5c2-133">[bookingWorkHours](../resources/bookingworkhours.md) collection</span></span>|<span data-ttu-id="3e5c2-134">业务的运行时间。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-134">The hours of operation for the business.</span></span>|
+|<span data-ttu-id="3e5c2-135">businessType</span><span class="sxs-lookup"><span data-stu-id="3e5c2-135">businessType</span></span>|<span data-ttu-id="3e5c2-136">String</span><span class="sxs-lookup"><span data-stu-id="3e5c2-136">String</span></span>|<span data-ttu-id="3e5c2-137">企业的类型。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-137">The type of business.</span></span>|
+|<span data-ttu-id="3e5c2-138">defaultCurrencyIso</span><span class="sxs-lookup"><span data-stu-id="3e5c2-138">defaultCurrencyIso</span></span>|<span data-ttu-id="3e5c2-139">String</span><span class="sxs-lookup"><span data-stu-id="3e5c2-139">String</span></span>|<span data-ttu-id="3e5c2-140">业务在 Microsoft 预订中所运行的货币的代码。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-140">The code for the currency that the business operates in on Microsoft Bookings.</span></span>|
+|<span data-ttu-id="3e5c2-141">displayName</span><span class="sxs-lookup"><span data-stu-id="3e5c2-141">displayName</span></span>|<span data-ttu-id="3e5c2-142">字符串</span><span class="sxs-lookup"><span data-stu-id="3e5c2-142">String</span></span>|<span data-ttu-id="3e5c2-143">与客户进行交互的企业的名称。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-143">A name for the business that interfaces with customers.</span></span>|
+|<span data-ttu-id="3e5c2-144">email</span><span class="sxs-lookup"><span data-stu-id="3e5c2-144">email</span></span>|<span data-ttu-id="3e5c2-145">String</span><span class="sxs-lookup"><span data-stu-id="3e5c2-145">String</span></span>|<span data-ttu-id="3e5c2-146">企业的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-146">The email address for the business.</span></span>|
+|<span data-ttu-id="3e5c2-147">phone</span><span class="sxs-lookup"><span data-stu-id="3e5c2-147">phone</span></span>|<span data-ttu-id="3e5c2-148">String</span><span class="sxs-lookup"><span data-stu-id="3e5c2-148">String</span></span>|<span data-ttu-id="3e5c2-149">企业的电话号码。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-149">The telephone number for the business.</span></span>|
+|<span data-ttu-id="3e5c2-150">schedulingPolicy</span><span class="sxs-lookup"><span data-stu-id="3e5c2-150">schedulingPolicy</span></span>|[<span data-ttu-id="3e5c2-151">bookingSchedulingPolicy</span><span class="sxs-lookup"><span data-stu-id="3e5c2-151">bookingSchedulingPolicy</span></span>](../resources/bookingschedulingpolicy.md)|<span data-ttu-id="3e5c2-152">指定如何为此公司创建预订。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-152">Specifies how bookings can be created for this business.</span></span>|
+|<span data-ttu-id="3e5c2-153">webSiteUrl</span><span class="sxs-lookup"><span data-stu-id="3e5c2-153">webSiteUrl</span></span>|<span data-ttu-id="3e5c2-154">String</span><span class="sxs-lookup"><span data-stu-id="3e5c2-154">String</span></span>|<span data-ttu-id="3e5c2-155">业务网站的 URL。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-155">The URL of the business web site.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f136d-156">响应</span><span class="sxs-lookup"><span data-stu-id="f136d-156">Response</span></span>
-<span data-ttu-id="f136d-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f136d-p103">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f136d-159">示例</span><span class="sxs-lookup"><span data-stu-id="f136d-159">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f136d-160">请求</span><span class="sxs-lookup"><span data-stu-id="f136d-160">Request</span></span>
-<span data-ttu-id="f136d-161">下面的示例更新业务电子邮件地址和日程安排策略, 将公司默认的预定时间段更改为一个小时, 并提前预订30天。</span><span class="sxs-lookup"><span data-stu-id="f136d-161">The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.</span></span>
+## <a name="response"></a><span data-ttu-id="3e5c2-156">响应</span><span class="sxs-lookup"><span data-stu-id="3e5c2-156">Response</span></span>
+<span data-ttu-id="3e5c2-p103">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-p103">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3e5c2-159">示例</span><span class="sxs-lookup"><span data-stu-id="3e5c2-159">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3e5c2-160">请求</span><span class="sxs-lookup"><span data-stu-id="3e5c2-160">Request</span></span>
+<span data-ttu-id="3e5c2-161">下面的示例更新业务电子邮件地址和日程安排策略, 将公司默认的预定时间段更改为一个小时, 并提前预订30天。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-161">The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f136d-162">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f136d-162">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3e5c2-162">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="3e5c2-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness"
@@ -77,26 +77,22 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f136d-163">C#</span><span class="sxs-lookup"><span data-stu-id="f136d-163">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3e5c2-163">C#</span><span class="sxs-lookup"><span data-stu-id="3e5c2-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f136d-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f136d-164">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3e5c2-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e5c2-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f136d-165">目标-C</span><span class="sxs-lookup"><span data-stu-id="f136d-165">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3e5c2-165">目标-C</span><span class="sxs-lookup"><span data-stu-id="3e5c2-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingbusiness-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="f136d-166">Java</span><span class="sxs-lookup"><span data-stu-id="f136d-166">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f136d-167">响应</span><span class="sxs-lookup"><span data-stu-id="f136d-167">Response</span></span>
-<span data-ttu-id="f136d-168">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f136d-168">The following is an example of the response.</span></span> <span data-ttu-id="f136d-169">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f136d-169">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="f136d-170">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f136d-170">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3e5c2-166">响应</span><span class="sxs-lookup"><span data-stu-id="3e5c2-166">Response</span></span>
+<span data-ttu-id="3e5c2-167">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-167">The following is an example of the response.</span></span> <span data-ttu-id="3e5c2-168">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-168">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="3e5c2-169">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3e5c2-169">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

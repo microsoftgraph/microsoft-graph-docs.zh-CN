@@ -5,52 +5,52 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8d78ce8d7f9589e40b9c149c3b53a73b94b3f51c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9a2f5d961f53e030cac0a0b3a82705d2228938e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361000"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412619"
 ---
-# <a name="privilegedroleassignmentrequest-my"></a><span data-ttu-id="17501-103">privilegedRoleAssignmentRequest: my</span><span class="sxs-lookup"><span data-stu-id="17501-103">privilegedRoleAssignmentRequest: my</span></span>
+# <a name="privilegedroleassignmentrequest-my"></a><span data-ttu-id="93c80-103">privilegedRoleAssignmentRequest: my</span><span class="sxs-lookup"><span data-stu-id="93c80-103">privilegedRoleAssignmentRequest: my</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="17501-104">获取请求者的特权角色分配请求。</span><span class="sxs-lookup"><span data-stu-id="17501-104">Get the requester's privileged role assignment requests.</span></span>
+<span data-ttu-id="93c80-104">获取请求者的特权角色分配请求。</span><span class="sxs-lookup"><span data-stu-id="93c80-104">Get the requester's privileged role assignment requests.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="17501-105">权限</span><span class="sxs-lookup"><span data-stu-id="17501-105">Permissions</span></span>
-<span data-ttu-id="17501-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="17501-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="93c80-105">权限</span><span class="sxs-lookup"><span data-stu-id="93c80-105">Permissions</span></span>
+<span data-ttu-id="93c80-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="93c80-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="17501-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="17501-108">Permission type</span></span>                        | <span data-ttu-id="17501-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="17501-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="93c80-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="93c80-108">Permission type</span></span>                        | <span data-ttu-id="93c80-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="93c80-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="17501-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="17501-110">Delegated (work or school account)</span></span> | <span data-ttu-id="17501-111">PrivilegedAccess、AzureAD、Directory.accessasuser.all、All 和</span><span class="sxs-lookup"><span data-stu-id="17501-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="17501-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="17501-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17501-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="17501-113">Not supported.</span></span> |
-|<span data-ttu-id="17501-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="17501-114">Application</span></span>                            | <span data-ttu-id="17501-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="17501-115">Not supported.</span></span> |
+|<span data-ttu-id="93c80-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="93c80-110">Delegated (work or school account)</span></span> | <span data-ttu-id="93c80-111">PrivilegedAccess、AzureAD、Directory.accessasuser.all、All 和</span><span class="sxs-lookup"><span data-stu-id="93c80-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="93c80-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="93c80-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93c80-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="93c80-113">Not supported.</span></span> |
+|<span data-ttu-id="93c80-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="93c80-114">Application</span></span>                            | <span data-ttu-id="93c80-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="93c80-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="17501-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="17501-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="93c80-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="93c80-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignmentRequests/my
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="17501-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="17501-117">Optional query parameters</span></span>
-<span data-ttu-id="17501-118">此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="17501-118">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="93c80-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="93c80-117">Optional query parameters</span></span>
+<span data-ttu-id="93c80-118">此方法支持 [OData 查询参数](http://graph.microsoft.io/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="93c80-118">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="17501-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="17501-119">Request headers</span></span>
-| <span data-ttu-id="17501-120">名称</span><span class="sxs-lookup"><span data-stu-id="17501-120">Name</span></span>      |<span data-ttu-id="17501-121">说明</span><span class="sxs-lookup"><span data-stu-id="17501-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="93c80-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="93c80-119">Request headers</span></span>
+| <span data-ttu-id="93c80-120">名称</span><span class="sxs-lookup"><span data-stu-id="93c80-120">Name</span></span>      |<span data-ttu-id="93c80-121">说明</span><span class="sxs-lookup"><span data-stu-id="93c80-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="17501-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="17501-122">Authorization</span></span>  | <span data-ttu-id="17501-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="17501-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="93c80-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="93c80-122">Authorization</span></span>  | <span data-ttu-id="93c80-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="93c80-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="17501-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="17501-125">Request body</span></span>
-<span data-ttu-id="17501-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="17501-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="93c80-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="93c80-125">Request body</span></span>
+<span data-ttu-id="93c80-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="93c80-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="17501-127">响应</span><span class="sxs-lookup"><span data-stu-id="17501-127">Response</span></span>
-<span data-ttu-id="17501-128">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="17501-128">If successful, this method returns `200 OK` response code and [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) collection object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="93c80-127">响应</span><span class="sxs-lookup"><span data-stu-id="93c80-127">Response</span></span>
+<span data-ttu-id="93c80-128">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="93c80-128">If successful, this method returns `200 OK` response code and [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="17501-129">示例</span><span class="sxs-lookup"><span data-stu-id="17501-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="17501-130">请求</span><span class="sxs-lookup"><span data-stu-id="17501-130">Request</span></span>
-<span data-ttu-id="17501-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="17501-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="93c80-129">示例</span><span class="sxs-lookup"><span data-stu-id="93c80-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="93c80-130">请求</span><span class="sxs-lookup"><span data-stu-id="93c80-130">Request</span></span>
+<span data-ttu-id="93c80-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="93c80-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="17501-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="17501-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="93c80-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="93c80-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedroleassignmentrequest_my)"
@@ -58,27 +58,23 @@ POST /privilegedRoleAssignmentRequests/my
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="17501-133">C#</span><span class="sxs-lookup"><span data-stu-id="17501-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="93c80-133">C#</span><span class="sxs-lookup"><span data-stu-id="93c80-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedroleassignmentrequest-my-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="17501-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="17501-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="93c80-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="93c80-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedroleassignmentrequest-my-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="17501-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="17501-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="93c80-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="93c80-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignmentrequest-my-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="17501-136">Java</span><span class="sxs-lookup"><span data-stu-id="17501-136">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="17501-137">响应</span><span class="sxs-lookup"><span data-stu-id="17501-137">Response</span></span>
-<span data-ttu-id="17501-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="17501-138">The following is an example of the response.</span></span> <span data-ttu-id="17501-139">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="17501-139">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="17501-140">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="17501-140">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="93c80-136">响应</span><span class="sxs-lookup"><span data-stu-id="93c80-136">Response</span></span>
+<span data-ttu-id="93c80-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="93c80-137">The following is an example of the response.</span></span> <span data-ttu-id="93c80-138">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="93c80-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="93c80-139">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="93c80-139">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
