@@ -5,58 +5,58 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c20b53c3647edf4d6c3b03db94d20fc49193d951
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ca4110cb180860448fc7a6cf75d33d832e36a4a1
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362841"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409343"
 ---
-# <a name="add-app-to-team"></a><span data-ttu-id="9459d-103">向团队添加应用</span><span class="sxs-lookup"><span data-stu-id="9459d-103">Add app to team</span></span>
+# <a name="add-app-to-team"></a><span data-ttu-id="f59cf-103">向团队添加应用</span><span class="sxs-lookup"><span data-stu-id="f59cf-103">Add app to team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9459d-104">将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="9459d-104">Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="f59cf-104">将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。</span><span class="sxs-lookup"><span data-stu-id="f59cf-104">Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9459d-105">权限</span><span class="sxs-lookup"><span data-stu-id="9459d-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f59cf-105">权限</span><span class="sxs-lookup"><span data-stu-id="f59cf-105">Permissions</span></span>
 
-<span data-ttu-id="9459d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9459d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f59cf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f59cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9459d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9459d-108">Permission type</span></span>      | <span data-ttu-id="9459d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9459d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f59cf-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f59cf-108">Permission type</span></span>      | <span data-ttu-id="f59cf-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f59cf-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9459d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9459d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9459d-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9459d-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9459d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9459d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9459d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="9459d-113">Not supported.</span></span>    |
-|<span data-ttu-id="9459d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9459d-114">Application</span></span> | <span data-ttu-id="9459d-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9459d-115">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="f59cf-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f59cf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f59cf-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f59cf-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f59cf-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f59cf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f59cf-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f59cf-113">Not supported.</span></span>    |
+|<span data-ttu-id="f59cf-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f59cf-114">Application</span></span> | <span data-ttu-id="f59cf-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f59cf-115">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9459d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9459d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f59cf-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f59cf-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/installedApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9459d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="9459d-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f59cf-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="f59cf-117">Request headers</span></span>
 
-| <span data-ttu-id="9459d-118">标头</span><span class="sxs-lookup"><span data-stu-id="9459d-118">Header</span></span>       | <span data-ttu-id="9459d-119">值</span><span class="sxs-lookup"><span data-stu-id="9459d-119">Value</span></span> |
+| <span data-ttu-id="f59cf-118">标头</span><span class="sxs-lookup"><span data-stu-id="f59cf-118">Header</span></span>       | <span data-ttu-id="f59cf-119">值</span><span class="sxs-lookup"><span data-stu-id="f59cf-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9459d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="9459d-120">Authorization</span></span>  | <span data-ttu-id="9459d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9459d-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f59cf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f59cf-120">Authorization</span></span>  | <span data-ttu-id="f59cf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f59cf-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9459d-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="9459d-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f59cf-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="f59cf-123">Request body</span></span>
 
-| <span data-ttu-id="9459d-124">属性</span><span class="sxs-lookup"><span data-stu-id="9459d-124">Property</span></span>   | <span data-ttu-id="9459d-125">类型</span><span class="sxs-lookup"><span data-stu-id="9459d-125">Type</span></span> |<span data-ttu-id="9459d-126">说明</span><span class="sxs-lookup"><span data-stu-id="9459d-126">Description</span></span>|
+| <span data-ttu-id="f59cf-124">属性</span><span class="sxs-lookup"><span data-stu-id="f59cf-124">Property</span></span>   | <span data-ttu-id="f59cf-125">类型</span><span class="sxs-lookup"><span data-stu-id="f59cf-125">Type</span></span> |<span data-ttu-id="f59cf-126">说明</span><span class="sxs-lookup"><span data-stu-id="f59cf-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9459d-127">teamsApp</span><span class="sxs-lookup"><span data-stu-id="9459d-127">teamsApp</span></span>|<span data-ttu-id="9459d-128">String</span><span class="sxs-lookup"><span data-stu-id="9459d-128">String</span></span>|<span data-ttu-id="9459d-129">要添加的应用程序的 id。</span><span class="sxs-lookup"><span data-stu-id="9459d-129">The id of the app to add.</span></span>|
+|<span data-ttu-id="f59cf-127">teamsApp</span><span class="sxs-lookup"><span data-stu-id="f59cf-127">teamsApp</span></span>|<span data-ttu-id="f59cf-128">String</span><span class="sxs-lookup"><span data-stu-id="f59cf-128">String</span></span>|<span data-ttu-id="f59cf-129">要添加的应用程序的 id。</span><span class="sxs-lookup"><span data-stu-id="f59cf-129">The id of the app to add.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9459d-130">响应</span><span class="sxs-lookup"><span data-stu-id="9459d-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f59cf-130">响应</span><span class="sxs-lookup"><span data-stu-id="f59cf-130">Response</span></span>
 
-<span data-ttu-id="9459d-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9459d-p103">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f59cf-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f59cf-p103">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9459d-133">示例</span><span class="sxs-lookup"><span data-stu-id="9459d-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f59cf-133">示例</span><span class="sxs-lookup"><span data-stu-id="f59cf-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9459d-134">请求</span><span class="sxs-lookup"><span data-stu-id="9459d-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f59cf-134">请求</span><span class="sxs-lookup"><span data-stu-id="f59cf-134">Request</span></span>
 
-<span data-ttu-id="9459d-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9459d-135">The following is an example of the request.</span></span>
+<span data-ttu-id="f59cf-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f59cf-135">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9459d-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9459d-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f59cf-136">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f59cf-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamsApp"
@@ -69,28 +69,24 @@ Content-type: application/json
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9459d-137">C#</span><span class="sxs-lookup"><span data-stu-id="9459d-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f59cf-137">C#</span><span class="sxs-lookup"><span data-stu-id="f59cf-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9459d-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9459d-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f59cf-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f59cf-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9459d-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="9459d-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f59cf-139">目标-C</span><span class="sxs-lookup"><span data-stu-id="f59cf-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/add-teamsapp-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="9459d-140">Java</span><span class="sxs-lookup"><span data-stu-id="9459d-140">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="9459d-141">响应</span><span class="sxs-lookup"><span data-stu-id="9459d-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f59cf-140">响应</span><span class="sxs-lookup"><span data-stu-id="f59cf-140">Response</span></span>
 
-<span data-ttu-id="9459d-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9459d-142">The following is an example of the response.</span></span>
+<span data-ttu-id="f59cf-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f59cf-141">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

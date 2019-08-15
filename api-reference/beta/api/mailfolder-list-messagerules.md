@@ -5,50 +5,50 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aa441b6c519d9d7e78e39b1ef97731190df8580e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 23d66ba789e983e249c9acc2cbd3ca135504677f
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342861"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415279"
 ---
-# <a name="list-rules"></a><span data-ttu-id="46cb5-103">列出规则</span><span class="sxs-lookup"><span data-stu-id="46cb5-103">List rules</span></span>
+# <a name="list-rules"></a><span data-ttu-id="31405-103">列出规则</span><span class="sxs-lookup"><span data-stu-id="31405-103">List rules</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="46cb5-104">获取为用户收件箱定义的所有 [messageRule](../resources/messagerule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="46cb5-104">Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.</span></span>
+<span data-ttu-id="31405-104">获取为用户收件箱定义的所有 [messageRule](../resources/messagerule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="31405-104">Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="46cb5-105">权限</span><span class="sxs-lookup"><span data-stu-id="46cb5-105">Permissions</span></span>
-<span data-ttu-id="46cb5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="46cb5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="31405-105">权限</span><span class="sxs-lookup"><span data-stu-id="31405-105">Permissions</span></span>
+<span data-ttu-id="31405-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="31405-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="46cb5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="46cb5-108">Permission type</span></span>      | <span data-ttu-id="46cb5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="46cb5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="31405-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="31405-108">Permission type</span></span>      | <span data-ttu-id="31405-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="31405-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="46cb5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="46cb5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="46cb5-111">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="46cb5-111">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="46cb5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="46cb5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46cb5-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="46cb5-113">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="46cb5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="46cb5-114">Application</span></span> | <span data-ttu-id="46cb5-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="46cb5-115">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="31405-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="31405-110">Delegated (work or school account)</span></span> | <span data-ttu-id="31405-111">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="31405-111">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="31405-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="31405-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31405-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="31405-113">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="31405-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="31405-114">Application</span></span> | <span data-ttu-id="31405-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="31405-115">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="46cb5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="46cb5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31405-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="31405-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/inbox/messagerules
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="46cb5-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="46cb5-117">Optional query parameters</span></span>
-<span data-ttu-id="46cb5-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="46cb5-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="46cb5-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="46cb5-119">Request headers</span></span>
-| <span data-ttu-id="46cb5-120">名称</span><span class="sxs-lookup"><span data-stu-id="46cb5-120">Name</span></span>       | <span data-ttu-id="46cb5-121">类型</span><span class="sxs-lookup"><span data-stu-id="46cb5-121">Type</span></span> | <span data-ttu-id="46cb5-122">说明</span><span class="sxs-lookup"><span data-stu-id="46cb5-122">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="31405-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="31405-117">Optional query parameters</span></span>
+<span data-ttu-id="31405-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="31405-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="31405-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="31405-119">Request headers</span></span>
+| <span data-ttu-id="31405-120">名称</span><span class="sxs-lookup"><span data-stu-id="31405-120">Name</span></span>       | <span data-ttu-id="31405-121">类型</span><span class="sxs-lookup"><span data-stu-id="31405-121">Type</span></span> | <span data-ttu-id="31405-122">说明</span><span class="sxs-lookup"><span data-stu-id="31405-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="46cb5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="46cb5-123">Authorization</span></span>  | <span data-ttu-id="46cb5-124">string</span><span class="sxs-lookup"><span data-stu-id="46cb5-124">string</span></span>  | <span data-ttu-id="46cb5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="46cb5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="31405-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="31405-123">Authorization</span></span>  | <span data-ttu-id="31405-124">string</span><span class="sxs-lookup"><span data-stu-id="31405-124">string</span></span>  | <span data-ttu-id="31405-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="31405-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="46cb5-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="46cb5-127">Request body</span></span>
-<span data-ttu-id="46cb5-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="46cb5-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="46cb5-129">响应</span><span class="sxs-lookup"><span data-stu-id="46cb5-129">Response</span></span>
-<span data-ttu-id="46cb5-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [messageRule](../resources/messagerule.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="46cb5-130">If successful, this method returns a `200 OK` response code and collection of [messageRule](../resources/messagerule.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="46cb5-131">示例</span><span class="sxs-lookup"><span data-stu-id="46cb5-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="46cb5-132">请求</span><span class="sxs-lookup"><span data-stu-id="46cb5-132">Request</span></span>
-<span data-ttu-id="46cb5-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="46cb5-133">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31405-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="31405-127">Request body</span></span>
+<span data-ttu-id="31405-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="31405-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="31405-129">响应</span><span class="sxs-lookup"><span data-stu-id="31405-129">Response</span></span>
+<span data-ttu-id="31405-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [messageRule](../resources/messagerule.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="31405-130">If successful, this method returns a `200 OK` response code and collection of [messageRule](../resources/messagerule.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="31405-131">示例</span><span class="sxs-lookup"><span data-stu-id="31405-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="31405-132">请求</span><span class="sxs-lookup"><span data-stu-id="31405-132">Request</span></span>
+<span data-ttu-id="31405-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="31405-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="46cb5-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="46cb5-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="31405-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="31405-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messagerules"
@@ -56,26 +56,22 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="46cb5-135">C#</span><span class="sxs-lookup"><span data-stu-id="46cb5-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="31405-135">C#</span><span class="sxs-lookup"><span data-stu-id="31405-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="46cb5-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="46cb5-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="31405-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="31405-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messagerules-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="46cb5-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="46cb5-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="31405-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="31405-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messagerules-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="46cb5-138">Java</span><span class="sxs-lookup"><span data-stu-id="46cb5-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-messagerules-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="46cb5-139">响应</span><span class="sxs-lookup"><span data-stu-id="46cb5-139">Response</span></span>
-<span data-ttu-id="46cb5-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="46cb5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="31405-138">响应</span><span class="sxs-lookup"><span data-stu-id="31405-138">Response</span></span>
+<span data-ttu-id="31405-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="31405-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
