@@ -4,12 +4,13 @@ description: 创建新的 deviceManagementPartner 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34de40589542e74a8f2fec5347c12a3d32637e16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bb9f5ab46787d0279046a6aad38bc8d701517a94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990580"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
