@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e7698e34e2b85a45ed3e994fd955b223a86b83f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 877636cc94bde744e46791c14b573b6bd7412662
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328234"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420824"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>列出 officeClientConfigurationAssignments
 
@@ -25,7 +25,7 @@ ms.locfileid: "36328234"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|* * TODO: 确定作用域 * *|
+|委派（工作或学校帐户）|**TODO: 确定作用域**|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|* * TODO: 确定作用域 * *|
 

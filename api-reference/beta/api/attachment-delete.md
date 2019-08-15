@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 774043c030594ea60c80eb952acbae00e00c47c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53a56b720ed1b1b2def64916f25831473cc79555
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318528"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408185"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -73,8 +73,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messag
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/outlook/tasks/<id>/attachments/{id}
-DELETE /users/<id>/outlook/tasks/<id>/attachments/{id}
+DELETE /me/outlook/tasks/{id}/attachments/{id}
+DELETE /users/{id}/outlook/tasks/{id}/attachments/{id}
 ```
 
 属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
@@ -124,10 +124,6 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

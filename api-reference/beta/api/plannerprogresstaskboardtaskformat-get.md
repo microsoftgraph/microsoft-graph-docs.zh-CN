@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d128cb688e25d70224c3cb94e7ff3f1319fe5088
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a7eac4f30877e406a93cd5f021db41977ca7b91e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361462"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413182"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>获取 plannerProgressTaskBoardTaskFormat
 
@@ -29,7 +29,7 @@ ms.locfileid: "36361462"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/progressTaskBoardFormat
+GET /planner/tasks/{id}/progressTaskBoardFormat
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -56,7 +56,7 @@ GET /planner/tasks/<id>/progressTaskBoardFormat
   "name": "get_plannerprogresstaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
+GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerprogresstaskboardtaskformat-csharp-snippets.md)]
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerprogresstaskboardtaskformat-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-plannerprogresstaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

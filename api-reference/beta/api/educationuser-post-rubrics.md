@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4929ae79aff73971e6095a15ab11bbaa09bf95f4
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: a2baebc9490f5a27bd5e23efe331728e01e3d88c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173095"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415832"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 

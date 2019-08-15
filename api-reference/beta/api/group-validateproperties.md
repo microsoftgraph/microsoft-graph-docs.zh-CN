@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7ee108c1bbffde7ad0afd84cf4a6ec344e30b42e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f58b8d0dde3f998e093450817be82a38c77594c6
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323078"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420523"
 ---
 # <a name="group-validateproperties"></a>组: validateProperties
 
@@ -35,7 +35,7 @@ ms.locfileid: "36323078"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ``` http
-POST /groups/<id>/validateProperties
+POST /groups/{id}/validateProperties
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -94,10 +94,6 @@ Content-length: 132
 
 # <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
