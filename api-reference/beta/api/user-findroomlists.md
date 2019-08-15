@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4c2d3fce0952864ef6eade0df81233be2e03bac0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 401bcdd1b9ad928dec7cf0a0aa3868a5e66a8f61
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362457"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36421160"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 
@@ -36,7 +36,7 @@ ms.locfileid: "36362457"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRoomLists
-GET /users/<id>/findRoomLists
+GET /users/{id}/findRoomLists
 
 ```
 
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-room-lists-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-get-room-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

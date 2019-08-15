@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d152f88e2b29037bf6dcb54dbffebe4b29d8c4cd
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: c359935d7a18c4ff94b2f037b37d52c675a4708b
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396714"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419144"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -92,10 +92,6 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
