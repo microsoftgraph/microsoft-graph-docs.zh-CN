@@ -441,11 +441,11 @@
             - name: Attachment
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -682,11 +682,11 @@
             - name: Attachment
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -781,9 +781,9 @@
               items:
                 - name: 带来
                   href: resources/place.md
-                - name: 会议室资源
+                - name: 会议室类型
                   href: resources/room.md
-                - name: 会议室列表资源
+                - name: 会议室列表类型
                   href: resources/roomlist.md
                 - name: 列表位置
                   href: api/place-list.md
@@ -8562,11 +8562,11 @@
             - name: Attachment
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -9664,11 +9664,11 @@
             - name: 附件
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md

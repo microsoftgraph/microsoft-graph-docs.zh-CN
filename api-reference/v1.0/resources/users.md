@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: b0744662008b0b82167ce8779f478f260eedee57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d171a247b980ef2f1b1d762df696699eae7a1890
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033486"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426403"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -18,7 +18,7 @@ ms.locfileid: "36033486"
 
 通过 Microsoft Graph，你能以两种方式访问 [用户](user.md)
 
-- 通过用户 ID，`/users/{id | userPrincipalName}` 
+- 通过用户 ID，`/users/{id | userPrincipalName}`
 - 通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同
 
 ## <a name="authorization"></a>授权
@@ -36,7 +36,7 @@ ms.locfileid: "36033486"
 
 ## <a name="common-properties"></a>通用属性
 
-以下内容表示获取或列出用户时返回的属性的默认集。 这些是所有可用属性的子集。 要获取更多用户属性，请使用 `$select` 查询参数。 
+以下内容表示获取或列出用户时返回的属性的默认集。 这些是所有可用属性的子集。 要获取更多用户属性，请使用 `$select` 查询参数。
 
 |属性 |说明 |
 |:----------|:-------------|
@@ -51,8 +51,6 @@ ms.locfileid: "36033486"
 |preferredLanguage | 用户的语言首选项。|
 |surname| 用户的姓。 |
 |userPrincipalName| 用户主体名称。 |
-
-<br/>
 
 有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。
 

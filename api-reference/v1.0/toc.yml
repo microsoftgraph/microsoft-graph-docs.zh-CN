@@ -403,11 +403,11 @@
             - name: Attachment
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -620,11 +620,11 @@
             - name: Attachment
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md
@@ -3402,11 +3402,11 @@
             - name: Attachment
               href: resources/attachment.md
               items:
-                - name: 文件附件资源
+                - name: 文件附件类型
                   href: resources/fileattachment.md
-                - name: 项目附件资源
+                - name: 项目附件类型
                   href: resources/itemattachment.md
-                - name: 参考附件资源
+                - name: 引用附件类型
                   href: resources/referenceattachment.md
                 - name: 获取附件
                   href: api/attachment-get.md

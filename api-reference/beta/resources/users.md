@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: a0a1959607e72397e24065a81b7d2362e05002ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d405dcc5e7881c7a404e5ca16f87c889cd5ccc7
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007401"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426410"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -20,10 +20,11 @@ ms.locfileid: "36007401"
 
 通过 Microsoft Graph，你能以两种方式访问用户：
 
-- 通过用户 ID，`/users/{id}` 
+- 通过用户 ID，`/users/{id}`
 - 通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同
 
 ## <a name="authorization"></a>授权
+
 需要以下 [权限](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
 
 - User.ReadBasic.All
@@ -48,6 +49,7 @@ ms.locfileid: "36007401"
 有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。
 
 ## <a name="common-operations"></a>通用操作
+
 >**注意：** 某些操作需要其他权限。
 
 | 路径    | 说明 |
