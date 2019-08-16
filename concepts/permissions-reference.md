@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: f71f7a0f880e3897daf7a9ca51502a7d465b3aa2
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 2fe8b2d9b7a89aec84cdc067fc9e69a647f64ccc
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173060"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437676"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1249,8 +1249,8 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | 阅读所有 trustFramework 策略 | 允许应用代表已登录用户阅读所有 TrustFramework 策略。 | 是 | 否 |
-| _Policy.ReadWrite.TrustFramework_ | 阅读和编写所有 trustFramework 策略 | 允许应用代表已登录用户阅读和编写所有 TrustFramework 策略。 | 是 | 否 |
+| _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
+| _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
 
 ### <a name="remarks"></a>注解
 工作或学校帐户必须是租户的全局管理员。
@@ -1260,8 +1260,8 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 #### <a name="delegated"></a>委派
 以下使用对两种委派权限均有效：
 
-* _Policy.Read.All_：阅读所有 trustFramework 策略 (`GET /beta/trustFramework/policies`)
-* _Policy.ReadWrite.TrustFramework_：阅读和编写所有 trustFramework 策略 (`POST /beta/trustFramework/policies`)
+* _Policy.Read.All_：阅读你组织的策略 (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -1389,8 +1389,8 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | 读取所有功能推出策略 | 允许应用代表已登录用户读取所有功能推出策略。 | 是 | 否 |
-| _Policy.ReadWrite.FeatureRollout_ | 读取和写入所有功能推出策略 | 允许应用代表已登录用户读取和写入所有功能推出策略。 | 是 | 否 |
+| _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
+| _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 无。
@@ -1403,8 +1403,8 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 #### <a name="delegated"></a>委派
 以下使用对两种委派权限均有效：
 
-* _Policy.Read.All_：读取所有功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_：读取和写入所有功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.Read.All_：阅读你组织的策略 (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
