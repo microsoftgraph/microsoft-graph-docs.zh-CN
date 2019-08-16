@@ -8412,6 +8412,33 @@
                           href: api/governanceroleassignmentrequest-update.md
                         - name: 取消
                           href: api/governanceroleassignmentrequest-cancel.md
+            - name: 角色管理
+              href: resources/rolemanagement.md
+              items:
+                - name: 角色定义
+                  href: resources/unifiedroledefinition.md
+                  items:
+                    - name: 列出角色定义
+                      href: api/rbacapplication-list-roledefinitions.md
+                    - name: 创建角色定义
+                      href: api/rbacapplication-post-roledefinitions.md
+                    - name: 获取角色定义
+                      href: api/unifiedroledefinition-get.md
+                    - name: 更新角色定义
+                      href: api/unifiedroledefinition-update.md
+                    - name: 删除角色定义
+                      href: api/unifiedroledefinition-delete.md
+                - name: 角色分配
+                  href: resources/unifiedroleassignment.md
+                  items:
+                    - name: 列表角色分配
+                      href: api/rbacapplication-list-roleassignments.md
+                    - name: 创建角色分配
+                      href: api/rbacapplication-post-roleassignments.md
+                    - name: 获取角色分配
+                      href: api/unifiedroleassignment-get.md
+                    - name: 删除角色分配
+                      href: api/unifiedroleassignment-delete.md
             - name: 服务主体
               href: resources/serviceprincipal.md
               items:

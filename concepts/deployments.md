@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例, 这些实例限制在特定国家/地区的地理边界内, 并由当地人员运营。
-ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 406966a0bc6d1f5729ab96d4bd358ea21e3d9e6e
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133728"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437641"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -38,8 +38,6 @@ ms.locfileid: "35133728"
 |Azure AD（全局服务）|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息, 请参阅[身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案, 请参阅[AZURE ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
-
-> **注意：**[Azure AD v2.0 授权和令牌终结点](https://docs.microsoft.com/azure/active-directory/develop/v2-overview)仅在全局服务中可用；它们尚不支持用于区域云部署。
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph 和 Graph 浏览器服务根终结点
