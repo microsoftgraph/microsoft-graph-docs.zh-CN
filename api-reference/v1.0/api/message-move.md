@@ -5,16 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e51deede6ff3f05cc0f9c4549975a3c46bf56356
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cc2c48ebad59f70a77586a03ba924a6fd9ed7490
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374720"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426417"
 ---
 # <a name="message-move"></a>message: move
 
-将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
+将邮件移动到指定用户的邮箱中的另一个文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
 
 ## <a name="permissions"></a>权限
 
