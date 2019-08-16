@@ -4,12 +4,12 @@ description: '若要访问和操纵 Microsoft Graph 资源，请使用以下一�
 localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
-ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2b1af0aa2d2e31bbaa4fd70ef87a2dddef5284f
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570248"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778626"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>调用 Microsoft Graph API
 
@@ -34,7 +34,7 @@ ms.locfileid: "32570248"
 - `{resource}` 是资源段或路径，如：
   - `users`, `groups`, `devices`, `organization`
   - 解析为登录用户的别名 `me`
-   - 属于用户的资源（如 `me/events`、`me/drive` 或 `me/messages`）
+  - 属于用户的资源（如 `me/events`、`me/drive` 或 `me/messages`）
   - 解析为登录用户所属组织的租户的别名 `myOrganization`
 - `[query_parameters]` 表示其他查询参数，例如 `$filter` 和 `$select`。
 
