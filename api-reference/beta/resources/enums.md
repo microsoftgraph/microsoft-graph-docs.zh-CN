@@ -5,13 +5,23 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: b4df1b1283ae0240e26ba3f63ccfad0094e285d7
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062054"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450478"
 ---
+### <a name="analyticsactivitytype-values"></a>analyticsActivityType 值
+
+| 值
+|:--------------
+| call
+| 参与
+| email
+| 焦点
+| 要求
+
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod 值
 
 |Member|
@@ -36,7 +46,6 @@ ms.locfileid: "36062054"
 |该子|5| 用户的子级。|
 |相互|型| 与用户的未指定关系。|
 |向 unknownfuturevalue|步| 用于将来兼容性的标记值。|
-
 
 ### <a name="scheduleentitytheme-values"></a>scheduleEntityTheme 值
 

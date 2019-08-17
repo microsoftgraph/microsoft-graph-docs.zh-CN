@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2037c747df42177e4735b1aba1d37605d11339d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6a009640b47ce02b1719d6e5535813d365dc9e6
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010131"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450639"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -27,6 +27,8 @@ ms.locfileid: "36010131"
 
 创建邀请会在响应中返回兑现 URL (*inviteRedeemUrl*)。通过将 *sendInvitationMessage* 设置为 true，创建邀请 API 可以自动向邀请的用户发送包含兑现 URL 的电子邮件。还可以自定义要发送至邀请的用户的邮件。反之，如果想要通过一些其他的方法发送兑现 URL，则可以将 *sendInvitationMessage* 设置为 false，然后使用响应中的兑现 URL 创建自己的通信。目前没有可以执行兑现进程的 API。邀请的用户必须单击在上述步骤中的通信中发送的 *inviteRedeemUrl* 链接，并在浏览器中进行交互式兑现流程。完成后，邀请的用户即成为组织中的外部用户。
 
+>[!NOTE]
+>将使用在邀请请求中创建的外部[用户](user.md)资源上的**externalUserState**和**externalUserStateChangeDateTime**属性跟踪邀请状态。
 
 ## <a name="methods"></a>方法
 | 方法       | 返回类型  |说明|
@@ -43,7 +45,7 @@ ms.locfileid: "36010131"
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|状态|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
+|status|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

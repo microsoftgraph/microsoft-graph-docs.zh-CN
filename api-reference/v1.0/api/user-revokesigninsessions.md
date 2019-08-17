@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82a4a6c770e6862d6fc60d29441b8a22714ff497
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1e6f0d737d080314273271063cd970b241366dcc
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372545"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450632"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 
@@ -42,6 +42,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 此操作没有请求内容。

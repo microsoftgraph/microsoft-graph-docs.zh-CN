@@ -9268,6 +9268,33 @@
                   items:
                     - name: 共享的列表
                       href: api/insights-list-shared.md
+            - name: 分析
+              href: resources/useranalytics.md
+              items:
+                - name: 设置
+                  items:
+                    - name: 设置
+                      href: resources/settings.md
+                    - name: 获取设置
+                      href: api/useranalytics-get-settings.md
+                - name: 活动统计信息
+                  items:
+                    - name: 活动统计信息
+                      href: resources/activitystatistics.md
+                    - name: 呼叫统计信息类型
+                      href: resources/callactivitystatistics.md
+                    - name: 聊天统计信息类型
+                      href: resources/chatactivitystatistics.md
+                    - name: 电子邮件统计信息类型
+                      href: resources/emailactivitystatistics.md
+                    - name: 焦点统计信息类型
+                      href: resources/focusactivitystatistics.md
+                    - name: 会议统计信息类型
+                      href: resources/meetingactivitystatistics.md
+                    - name: 列出活动统计信息
+                      href: api/activitystatistics-list.md
+                    - name: 获取活动统计信息
+                      href: api/activitystatistics-get.md
             - name: 有关记录
               href: resources/mention.md
         - name: 任务和计划
@@ -9674,9 +9701,9 @@
             - name: Outlook 任务组
               href: resources/outlooktaskgroup.md
               items:
-                - name: List
+                - name: 列出
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-taskgroups.md
                 - name: 获取
                   href: api/outlooktaskgroup-get.md
