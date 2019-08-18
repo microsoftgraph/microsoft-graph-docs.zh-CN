@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: be76f63f84eab7edc220df93afc1a650c36d1c11
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2150f50d228dc0567152d5ccf233a76f71176d47
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375728"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453108"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -51,7 +51,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_get_attachments"
+  "name": "post_get_attachments_v1"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments
@@ -78,8 +78,9 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachm
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
+  "name": "post_get_attachments_v1",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.attachment)",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "isCollection": true
 } -->
 ```http
@@ -94,7 +95,7 @@ Content-length: 215
       "id": "id-value",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "base64-contentBytes-value",
+      "contentBytes": "contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "isInline": false,
