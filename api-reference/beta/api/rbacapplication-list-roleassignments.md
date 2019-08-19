@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4b7a8065b1b0911e30779ed80dd92ae874e5afb8
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 8783cbc38593b7821be257b1a8b913609898b78d
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437725"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36461400"
 ---
-# <a name="list-unifiedroleassignments"></a><span data-ttu-id="96c07-103">列出 unifiedRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="96c07-103">List unifiedRoleAssignments</span></span>
+# <a name="list-unifiedroleassignments"></a><span data-ttu-id="d5c5d-103">列出 unifiedRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="d5c5d-103">List unifiedRoleAssignments</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="96c07-104">获取提供程序的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="96c07-104">Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the provider.</span></span>
+<span data-ttu-id="d5c5d-104">获取提供程序的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-104">Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the provider.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="96c07-105">权限</span><span class="sxs-lookup"><span data-stu-id="96c07-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5c5d-105">权限</span><span class="sxs-lookup"><span data-stu-id="d5c5d-105">Permissions</span></span>
 
-<span data-ttu-id="96c07-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="96c07-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5c5d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="96c07-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="96c07-108">Permission type</span></span>      | <span data-ttu-id="96c07-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="96c07-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5c5d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d5c5d-108">Permission type</span></span>      | <span data-ttu-id="d5c5d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d5c5d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="96c07-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="96c07-110">Delegated (work or school account)</span></span> | <span data-ttu-id="96c07-111">RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。</span><span class="sxs-lookup"><span data-stu-id="96c07-111">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="96c07-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="96c07-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96c07-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="96c07-113">Not supported.</span></span>    |
-|<span data-ttu-id="96c07-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="96c07-114">Application</span></span> | <span data-ttu-id="96c07-115">RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有</span><span class="sxs-lookup"><span data-stu-id="96c07-115">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="d5c5d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d5c5d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d5c5d-111">RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-111">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="d5c5d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d5c5d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5c5d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-113">Not supported.</span></span>    |
+|<span data-ttu-id="d5c5d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d5c5d-114">Application</span></span> | <span data-ttu-id="d5c5d-115">RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有</span><span class="sxs-lookup"><span data-stu-id="d5c5d-115">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="96c07-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="96c07-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5c5d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d5c5d-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,32 +36,34 @@ ms.locfileid: "36437725"
 GET /roleManagement/directory/roleAssignments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="96c07-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="96c07-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d5c5d-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d5c5d-117">Optional query parameters</span></span>
 
-<span data-ttu-id="96c07-118">此操作需要`$filter`查询参数。</span><span class="sxs-lookup"><span data-stu-id="96c07-118">This operation requires the `$filter` query parameter.</span></span> <span data-ttu-id="96c07-119">您可以对`roleDefinitionId`或`principalId`属性进行筛选。</span><span class="sxs-lookup"><span data-stu-id="96c07-119">You can filter on the `roleDefinitionId` or `principalId` properties.</span></span> <span data-ttu-id="96c07-120">该`roleDefinitionId`属性可以是角色对象 id, 也可以是角色模板对象 id。</span><span class="sxs-lookup"><span data-stu-id="96c07-120">The `roleDefinitionId` property can be either a role object ID or a role template object ID.</span></span> <span data-ttu-id="96c07-121">有关一般信息, 请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="96c07-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="d5c5d-118">此操作需要`$filter`查询参数。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-118">This operation requires the `$filter` query parameter.</span></span> <span data-ttu-id="d5c5d-119">您可以对`roleDefinitionId`或`principalId`属性进行筛选。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-119">You can filter on the `roleDefinitionId` or `principalId` properties.</span></span> <span data-ttu-id="d5c5d-120">该`roleDefinitionId`属性可以是角色对象 id, 也可以是角色模板对象 id。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-120">The `roleDefinitionId` property can be either a role object ID or a role template object ID.</span></span> <span data-ttu-id="d5c5d-121">有关一般信息, 请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="96c07-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="96c07-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d5c5d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="d5c5d-122">Request headers</span></span>
 
-| <span data-ttu-id="96c07-123">名称</span><span class="sxs-lookup"><span data-stu-id="96c07-123">Name</span></span>      |<span data-ttu-id="96c07-124">说明</span><span class="sxs-lookup"><span data-stu-id="96c07-124">Description</span></span>|
+| <span data-ttu-id="d5c5d-123">名称</span><span class="sxs-lookup"><span data-stu-id="d5c5d-123">Name</span></span>      |<span data-ttu-id="d5c5d-124">说明</span><span class="sxs-lookup"><span data-stu-id="d5c5d-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="96c07-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="96c07-125">Authorization</span></span> | <span data-ttu-id="96c07-126">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="96c07-126">Bearer {token}</span></span> |
+| <span data-ttu-id="d5c5d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5c5d-125">Authorization</span></span> | <span data-ttu-id="d5c5d-126">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="d5c5d-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="96c07-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="96c07-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5c5d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d5c5d-127">Request body</span></span>
 
-<span data-ttu-id="96c07-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="96c07-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d5c5d-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="96c07-129">响应</span><span class="sxs-lookup"><span data-stu-id="96c07-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5c5d-129">响应</span><span class="sxs-lookup"><span data-stu-id="d5c5d-129">Response</span></span>
 
-<span data-ttu-id="96c07-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="96c07-130">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="d5c5d-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-130">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="96c07-131">示例</span><span class="sxs-lookup"><span data-stu-id="96c07-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d5c5d-131">示例</span><span class="sxs-lookup"><span data-stu-id="d5c5d-131">Examples</span></span>
 
-### <a name="example-1-request-using-a-filter-on-role-definition-id"></a><span data-ttu-id="96c07-132">示例 1: 使用角色定义 ID 的筛选器请求</span><span class="sxs-lookup"><span data-stu-id="96c07-132">Example 1: Request using a filter on role definition ID</span></span>
+### <a name="example-1-request-using-a-filter-on-role-definition-id"></a><span data-ttu-id="d5c5d-132">示例 1: 使用角色定义 ID 的筛选器请求</span><span class="sxs-lookup"><span data-stu-id="d5c5d-132">Example 1: Request using a filter on role definition ID</span></span>
 
-#### <a name="request"></a><span data-ttu-id="96c07-133">请求</span><span class="sxs-lookup"><span data-stu-id="96c07-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5c5d-133">请求</span><span class="sxs-lookup"><span data-stu-id="d5c5d-133">Request</span></span>
 
-<span data-ttu-id="96c07-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="96c07-134">The following is an example of the request.</span></span>
+<span data-ttu-id="d5c5d-134">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-134">The following is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d5c5d-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d5c5d-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roleAssignments"
@@ -70,10 +72,24 @@ GET /roleManagement/directory/roleAssignments
 ```http
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d5c5d-136">C#</span><span class="sxs-lookup"><span data-stu-id="d5c5d-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="96c07-135">响应</span><span class="sxs-lookup"><span data-stu-id="96c07-135">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5c5d-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5c5d-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roleassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="96c07-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="96c07-136">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5c5d-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="d5c5d-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roleassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="d5c5d-139">响应</span><span class="sxs-lookup"><span data-stu-id="d5c5d-139">Response</span></span>
+
+<span data-ttu-id="d5c5d-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-140">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -129,12 +145,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-request-using-a-filter-on-principal-id"></a><span data-ttu-id="96c07-137">示例 2: 对主体 ID 使用筛选器请求</span><span class="sxs-lookup"><span data-stu-id="96c07-137">Example 2: Request using a filter on principal ID</span></span>
+### <a name="example-2-request-using-a-filter-on-principal-id"></a><span data-ttu-id="d5c5d-141">示例 2: 对主体 ID 使用筛选器请求</span><span class="sxs-lookup"><span data-stu-id="d5c5d-141">Example 2: Request using a filter on principal ID</span></span>
 
-#### <a name="request"></a><span data-ttu-id="96c07-138">请求</span><span class="sxs-lookup"><span data-stu-id="96c07-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5c5d-142">请求</span><span class="sxs-lookup"><span data-stu-id="d5c5d-142">Request</span></span>
 
-<span data-ttu-id="96c07-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="96c07-139">The following is an example of the request.</span></span>
+<span data-ttu-id="d5c5d-143">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-143">The following is an example of the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d5c5d-144">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d5c5d-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roleAssignments"
@@ -143,10 +161,24 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d5c5d-145">C#</span><span class="sxs-lookup"><span data-stu-id="d5c5d-145">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="96c07-140">响应</span><span class="sxs-lookup"><span data-stu-id="96c07-140">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5c5d-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5c5d-146">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roleassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="96c07-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="96c07-141">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5c5d-147">目标-C</span><span class="sxs-lookup"><span data-stu-id="d5c5d-147">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roleassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="d5c5d-148">响应</span><span class="sxs-lookup"><span data-stu-id="d5c5d-148">Response</span></span>
+
+<span data-ttu-id="d5c5d-149">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d5c5d-149">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
