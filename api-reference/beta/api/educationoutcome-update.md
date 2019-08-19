@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2c7b85d3456927e6a63f61f11722dfe8eccf270e
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 0ec9ebc02c10794d6e022de33e12a77cac66620e
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173179"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36461113"
 ---
 # <a name="update-educationoutcome"></a>更新 educationoutcome
 
@@ -61,6 +61,8 @@ EducationOutcome 对象将为以下派生类型之一: **educationPointsOutcome*
 #### <a name="request"></a>请求
 
 下面是更新反馈结果的请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -80,6 +82,12 @@ Content-type: application/json
     }
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -125,6 +133,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面是更新点结果的请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -142,6 +152,12 @@ Content-type: application/json
     }
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -184,6 +200,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 下面是更新 rubric 结果的请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -223,6 +241,12 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

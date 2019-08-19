@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: ecd49dc603fa4ae7c4afdd0120267a47d8f06c43
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173053"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460752"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -41,6 +41,7 @@ ms.locfileid: "36173053"
 |[创建 accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   创建新的 accessReview。 |
 |[删除 accessReview](../api/accessreview-delete.md) | 无。   | 删除 accessReview。 |
 |[更新 accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | 更新 accessReview。 |
+|[列出 accessReviews](../api/accessreview-list.md) |    [accessReview](accessreview.md)集合 |    列出 businessFlowTemplate 的 accessReviews。 |
 |[列出 accessReview 审阅者](../api/accessreview-listreviewers.md) |      [userIdentity](useridentity.md)集合| 获取 accessReview 的审阅者。 |
 |[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) |      无。   |   向 accessReview 添加审阅者。 |
 |[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。  |   从 accessReview 中删除审阅者。 |

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8e628c2ba8835d42f00116e46b4dfa0527765fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ff201c64156c334b756a9cfc8318fd9882154515
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408832"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460813"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -120,13 +120,12 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |说明|
-|:---------------|:--------|:----------|
-|[创建 accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  创建新的 accessReview。 |
-|[列出 programControls](programcontrol-list.md) | [programControl](../resources/programcontrol.md)集合 | 列出租户中的 programControls。 |
-|[列出 accessReview 审阅者](accessreview-listreviewers.md) |     [userIdentity](../resources/useridentity.md)集合|    获取 accessReview 的审阅者。 |
-|[列出 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)集合|    获取 accessReview 的决策。|
-|[列出我的 accessReview 决策](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)集合|    作为审阅者, 请 accessReview 的决策。|
+- [创建 accessReview](accessreview-create.md)
+- [列出 accessReviews](accessreview-list.md)
+- [列出 programControls](programcontrol-list.md)
+- [列出 accessReview 审阅者](accessreview-listreviewers.md)
+- [列出 accessReview 决策](accessreview-listdecisions.md)
+- [列出我的 accessReview 决策](accessreview-listmydecisions.md)
 
 
 <!--

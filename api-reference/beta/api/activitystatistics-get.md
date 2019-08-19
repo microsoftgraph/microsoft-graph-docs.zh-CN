@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9a85211faf15b6edbf843c5c604251dae06ae0a3
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: d538b6389cd2a85768c15679d29d2fc9c11a0ff9
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450710"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460806"
 ---
 # <a name="get-activitystatistics"></a>获取 activityStatistics
 
@@ -65,6 +65,8 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 
 下面的示例请求在2019-06-16 和2019-06-17 之间的日期范围内登录用户的类型 emailActivityStatistics 的统计信息。 有关常规 id 属性格式的详细信息, 请参阅[activity id 属性](../resources/activitystatistics.md#activity-id-property)。
 
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -74,6 +76,20 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-activitystatistics-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-activitystatistics-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-activitystatistics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

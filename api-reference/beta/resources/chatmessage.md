@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f807c45fcff2a5e2ea928105ed970d426cfdc1f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b6912312c66bca8b84ccce9d25ac3c83a2edf9
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974027"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460764"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "35974027"
 |[获取消息回复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取渠道中的单个消息回复。|
 |[在频道中创建了 chatmessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在渠道中创建新的顶级消息。|
 |[在渠道中回复消息](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| 在渠道中回复现有消息。|
+|[在聊天中创建了 chatmessage](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送邮件。|
 |[列出聊天中的消息](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 列出1:1 或组聊天中的邮件。 |
 |[获取聊天中的消息](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 |
 |[列出所有托管图像](../api/chatmessagehostedimage-list-hostedimages.md) | [hostedImage](../resources/chatmessagehostedimage.md)集合| 获取邮件中的所有托管图像。|

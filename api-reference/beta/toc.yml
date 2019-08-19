@@ -7816,14 +7816,16 @@
                 - name: 访问审查
                   href: resources/accessreview.md
                   items:
-                    - name: 创建访问审查
-                      href: api/accessreview-create.md
-                    - name: 删除访问审查
-                      href: api/accessreview-delete.md
+                    - name: 列表访问评审
+                      href: api/accessreview-list.md
                     - name: 获取访问审查
                       href: api/accessreview-get.md
+                    - name: 创建访问审查
+                      href: api/accessreview-create.md
                     - name: 更新访问审查
                       href: api/accessreview-update.md
+                    - name: 删除访问审查
+                      href: api/accessreview-delete.md
                     - name: 添加审阅者
                       href: api/accessreview-addreviewer.md
                     - name: 列出决策

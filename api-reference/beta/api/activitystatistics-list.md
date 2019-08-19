@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 683dacd86088b2d306abbc36a15e890edbdc1ae6
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 1959afcda3c7bc5005cc7ef39a514b7a68d83d42
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450709"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460781"
 ---
 # <a name="list-activitystatistics"></a>列出 activityStatistics
 
@@ -60,6 +60,8 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 ### <a name="request"></a>请求
 
 以下是已登录用户的所有相关活动统计信息的请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -69,6 +71,20 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-activitystatistics-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-activitystatistics-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-activitystatistics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

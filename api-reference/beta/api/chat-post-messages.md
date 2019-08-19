@@ -2,21 +2,21 @@
 title: 创建了 chatmessage
 description: 使用此 API 创建新的了 chatmessage。
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 784c275f3006af144b56c7de17758492f13e8db1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 96099cf2628b31a03013ae680439e97a55f952c5
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418164"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460820"
 ---
 # <a name="create-chatmessage"></a>创建了 chatmessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[聊天](../resources/chat.md)中创建新[邮件](../resources/chatmessage.md)。
+在指定的[聊天](../resources/chat.md)中创建新[邮件](../resources/chatmessage.md)。 此 API 无法创建新聊天, 在创建聊天消息之前, 必须使用 "[列表聊天](chat-list.md)" 方法检索现有聊天的 Id。
 
 ## <a name="permissions"></a>权限
 
