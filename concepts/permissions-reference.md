@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fe8b2d9b7a89aec84cdc067fc9e69a647f64ccc
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437676"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450681"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -73,6 +73,31 @@ _AccessReview.Read.All_、_AccessReview.ReadWrite.All_ 和 _AccessReview.ReadWri
 对于通过委派权限读取 Azure AD 角色的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员、安全管理员、安全读取者或特权角色管理员。 对于通过委派权限写入 Azure AD 角色的访问评审的应用，登录的用户必须是以下管理员角色之一的成员：全局管理员或特权角色管理员。
 
 若要详细了解管理员角色，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。
+
+---
+
+## <a name="analytics-resource-permissions"></a>分析资源权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   读取所有用户活动统计信息。 | 允许应用在没有登录用户的情况下读取用户活动统计信息。 | 是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+无。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+
+* _Analytics.Read_：[列出用户的相关设置](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+* _Analytics.Read_：[获取用户的活动统计信息](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### <a name="application"></a>应用程序
+
+无。
 
 ---
 

@@ -3,12 +3,12 @@ title: Microsoft Graph 中的主要服务和功能
 description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: bb100d4b8c64300681dd0463184cb30b925654d2
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 5a13840584997d37ff6c9d6a4dfb02d0f01c1363
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417708"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450485"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -73,7 +73,8 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 社交智能：人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的社交和工作场所智能](social-intel-concept-overview.md) |
-| 社交智能：文档见解（预览） | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的社交和工作场所智能](social-intel-concept-overview.md)  |
+| 社交智能：文档见解（预览） | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的社交和工作区智能](social-intel-concept-overview.md)  |
+| 社交和工作区智能：分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的社交和工作区智能](social-intel-concept-overview.md) |
 
 
 ## <a name="device-management"></a>设备管理

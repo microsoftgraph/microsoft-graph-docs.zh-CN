@@ -4,12 +4,12 @@ description: Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: a1ab4140272cb227898ba1db79d4ab575073e51f
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: bf50bcd6d55b9c31ebb6ecca4d176ef230bb2bc8
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417715"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450492"
 ---
 # <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的社交和工作场所智能概述
 
@@ -89,7 +89,15 @@ GET /me/people/?$search="topic:beetle"
 
 ![Outlook 网页版中用户的人员卡片屏幕截图，显示最近使用的文件](images/peoplecard-concept.png)
 
+## <a name="why-integrate-with-myanalytics-preview"></a>为什么要与 MyAnalytics（预览版）集成？
+
+
+  [MyAnalytics](https://docs.microsoft.com/zh-CN/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
+
+借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 MyAnalytics 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
+
 ## <a name="api-reference"></a>API 参考
+
 在查找这些服务的 API 参考？
 
 - [Microsoft Graph v1.0 中的人员 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
@@ -97,6 +105,7 @@ GET /me/people/?$search="topic:beetle"
 
 ## <a name="next-steps"></a>后续步骤
 
-* 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件尝试人员和见解 API。 登录，然后选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解(beta)”****。
+* 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解(beta)”**** 和“分析”****。
 * 了解有关[人员 API](people-example.md) 和[人员](/graph/api/resources/person?view=graph-rest-1.0)实体的详细信息。
 * 若要开始使用见解 API，请参阅[使用见解 API](/graph/api/resources/insights?view=graph-rest-beta)。
+* 查找有关[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life) 的详细信息。

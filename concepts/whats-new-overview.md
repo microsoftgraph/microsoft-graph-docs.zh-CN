@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 2e2c608cf05f22ccf9e296520624d7c96fe2b4ce
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3d2b209b08fe92f7866225838ffa0636a1f5609e
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367104"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450646"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -20,10 +20,31 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 
 2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 
 
-在下面查看 Microsoft Graph 中新增功能要点，并查看你可如何[分享你的想法](#want-to-stay-in-the-loop)。 有关 API 更新的详细信息，请参阅 API 更改日志的[八月](changelog.md#august-2019)、[六月](changelog.md#july-2019)部分。 
+在下面查看 Microsoft Graph 中新增功能要点，并查看你可如何[分享你的想法](#want-to-stay-in-the-loop)。 如需了解 API 更新的更多详情，请参阅 API 更改日志的 [8 月](changelog.md#august-2019)、[7 月](changelog.md#july-2019)部分。 
 
 
-## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月：新版本和正式发布版 
+## <a name="august-2019-new-and-generally-available"></a>2019 年 8 月：新版本和正式版 
+
+### <a name="reports"></a>报告
+- 获取与已删除项计数和大小相关的更多[邮箱使用情况数据](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)。
+- 在[获取组活动详细信息](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)时，跟踪 Office 365 组 ID。
+- 在获取 [OneDrive 使用帐户详细信息](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)和 [SharePoint 网站使用情况详细信息](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)时，跟踪所有者主体名称。
+- 在[获取每 Office 365 服务的用户计数报告](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)时，获取 Office 365 上的活动和非活动用户数。
+
+
+## <a name="august-2019-new-in-preview"></a>2019 年 8 月：预览版新增功能
+
+> [!IMPORTANT]
+> _预览_状态下的功能（包括 API 和工具）可能会发生变更，恕不另行通知；一些功能可能永远不会升级为 GA 状态。 请不要在成品应用中使用它们。
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [8 月](changelog.md#august-2019)更新
+
+### <a name="files"></a>文件
+到目前为止，你已可以[关注](/graph/api/driveitem-follow?view=graph-rest-beta) [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)，以便能够便捷访问或方便执行移动、复制和另存为等操作。 现在可以使用[取消关注](/graph/api/driveitem-unfollow?view=graph-rest-beta)操作来停止关注此类驱动器项。
+
+
+## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月：新版本和正式版 
 
 ### <a name="example-code-snippets"></a>代码片段示例
 现在 v1.0 和 beta 参考中的所有 API 主题中提供了 Objective-C 代码片段。 请参阅[获取事件](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)的 Objective-C 示例。
