@@ -2,15 +2,15 @@
 title: fileAttachment 资源类型
 description: '附加到事件、邮件或帖子的文件（如文本文件或 Word 文档）。**contentBytes** '
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e80a4599d79d17829f2bb07bb61d4adf60df607
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 51e087ed466065c755ca801ed430678834e30703
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032506"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453095"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "36032506"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|文件的 Base64 编码内容。|
+|contentBytes|Edm.Binary|文件的 Base64 编码内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|
 |contentLocation|String|请勿使用此属性，因为它不受支持。|
 |contentType|String|附件的内容类型。|
@@ -62,7 +62,7 @@ ms.locfileid: "36032506"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",
