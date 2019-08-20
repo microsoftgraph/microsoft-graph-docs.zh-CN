@@ -1,17 +1,17 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b11538f3da5ffe986f7a57d77cc7f576efeaf2c7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: ca91b04471650f481c6e228da1786653533bb2f0
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35706054"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36465008"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/root/delta"]]];
 [urlRequest setHTTPMethod:@"GET"];
 

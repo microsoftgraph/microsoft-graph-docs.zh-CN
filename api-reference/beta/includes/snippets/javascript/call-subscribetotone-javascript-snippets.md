@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: a3b4e7894dc7a3108c6edbf8757a2e260cd79642
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 652659b3ae7eec1f544e974e30d9913532e32147
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933812"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464973"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const subscribeToToneOperation = {
-  clientContext: "d45324c1-fcb5-430a-902c-f20af696537c"
+  clientContext: "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 };
 
 let res = await client.api('/app/calls/{id}/subscribeToTone')

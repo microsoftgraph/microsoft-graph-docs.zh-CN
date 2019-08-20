@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4f2bf1aca5fd864e92dccb4cc82cf4f0e447c7ff
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 06a8d8625ce5166d1d4b60118d9f79531d251eb0
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708824"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464959"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *clientContext = @"d45324c1-fcb5-430a-902c-f20af696537c";
+NSString *clientContext = @"fd1c7836-4d84-4e24-b6aa-23188688cc54";
 payloadDictionary[@"clientContext"] = clientContext;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
