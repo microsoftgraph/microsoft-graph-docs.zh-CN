@@ -1,17 +1,17 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9d1eaa527b5cb9dca4e60e00e8f94ad1708aa5e6
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d9c57eb3de9ff3640276d79ea877af01f2895ac7
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708810"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464966"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
+var clientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54";
 
 await graphClient.App.Calls["{id}"]
     .SubscribeToTone(clientContext)
