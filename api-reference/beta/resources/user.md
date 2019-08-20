@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 02fcc9db35f59ebca3bc85f1ddc65d8d2f7c3d89
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049622"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450513"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -198,6 +198,7 @@ ms.locfileid: "36049622"
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 Null。|
+|分析|[userAnalytics](useranalytics.md) 集合| 用户的活动统计信息及相关设置。 只读。 可为 Null。|
 |calendar|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
@@ -238,6 +239,7 @@ ms.locfileid: "36049622"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -337,6 +339,7 @@ ms.locfileid: "36049622"
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
+  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],

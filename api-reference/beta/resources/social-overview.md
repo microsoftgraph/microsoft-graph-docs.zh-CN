@@ -1,22 +1,22 @@
 ---
 title: 使用 Microsoft Graph API 在应用中集成社交和工作区智能
-description: Microsoft Graph 支持用户社交环境中的社交手势，并提供对有用人员和社交数据的访问权限。
+description: Microsoft Graph 让用户能够访问有用的社交和工作区数据，还支持用户社交上下文中的社交手势。
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 84e0c82173dad6f08d5911f32ef5c384f041ea19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74beb2a66f103342f6dbc5e5977200751a309c08
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008087"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450667"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成社交和工作区智能
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 支持用户社交环境中的社交手势，并提供对有用人员和社交数据的访问权限。
+Microsoft Graph 让用户能够访问社交和工作区数据，还支持用户社交上下文中的手势。
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>聚合并提取有关人员的特定信息
 
@@ -26,11 +26,18 @@ Microsoft Graph 支持用户社交环境中的社交手势，并提供对有用�
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>帮助用户获得最相关的工作文档
 
-使用见解 API 为用户标识最相关的文档： 
+使用见解 API 为用户标识最相关的文档：
 
 - 列出用户[常用的](../api/insights-list-trending.md)文档
 - 列出用户[使用的](../api/insights-list-used.md)文档
 - 列出[与用户共享或由用户共享的](../api/insights-list-shared.md)文档
+
+## <a name="help-users-gain-insights-into-their-work-patterns"></a>帮助用户深入了解其工作模式
+
+使用分析 API 获取用户的活动统计信息及相关设置：
+
+- [设置](../resources/settings.md)：要让分析 API 为用户返回结果，当前用户分析设置必须显示有效的 MyAnalytics 许可证、选择使用 MyAnalytics，并具有启用了图形的云托管邮箱。
+- [activityStatistics](../resources/activitystatistics.md)：获取整个上周用户花时间参与的 Office 365 活动的相关数据，包括工作时间内及工作之余在[通话](callactivitystatistics.md)、[聊天（即时消息）](chatactivitystatistics.md)、[电子邮件](emailactivitystatistics.md)和[会议](meetingactivitystatistics.md)上花费的小时数，以及可用于[专注工作](focusactivitystatistics.md)的小时数。
 
 ## <a name="manage--mentions"></a>管理 @提及
 
@@ -55,4 +62,3 @@ Include the next sentence when supporting events.
   - [获取邮件中的每个提及的详细信息](../api/message-get.md#request-2)
 
 - [删除邮件中的提及](../api/message-delete.md#request-2)
-
