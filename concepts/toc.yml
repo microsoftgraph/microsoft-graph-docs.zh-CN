@@ -213,16 +213,10 @@ items:
             href: security-concept-overview.md
           - name: 数据流
             href: security-dataflow.md
-          - name: 授权
+          - name: Authorization
             href: security-authorization.md
-          - name: 与 SIEM 集成
-            items:
-              - name: 概述
-                href: security-siemintegration.md
-              - name: Splunk
-                href: security-splunk-siemintegration.md
-              - name: QRadar
-                href: security-qradar-siemintegration.md
+          - name: 集成解决方案
+            href: security-integration.md
           - name: 合作伙伴机遇
             href: security-partner-overview.md
       - name: 网站和列表
