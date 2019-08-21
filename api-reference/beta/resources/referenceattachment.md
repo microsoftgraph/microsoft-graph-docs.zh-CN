@@ -3,14 +3,14 @@ title: referenceAttachment 资源类型
 description: 'OneDrive for Business 云驱动器上的文件夹或文件 (如文本文件或 Word 文档) 的链接, 或附加到的其他受支持的存储位置 '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ef3e2dd5292ee018c0b72c29c8bd6c33fed00f11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 555f465f0452b7ad3c3bf012221efad73dcffd68
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008710"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484322"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment 资源类型
 
@@ -54,6 +54,8 @@ OneDrive for Business 云驱动器上的文件夹或文件 (如文本文件或 W
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],

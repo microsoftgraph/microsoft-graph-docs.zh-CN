@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 7161d8bf17aa573cad61123200785ff254c24feb
-ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
+ms.openlocfilehash: ab81c67bbf0c4d7ab6699d17977c4d1a3907f94e
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36453153"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484315"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -55,6 +55,8 @@ ms.locfileid: "36453153"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

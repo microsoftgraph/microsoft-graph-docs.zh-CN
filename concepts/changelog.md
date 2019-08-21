@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 379db2a2d5a1826928ed43a0818a1e2c55d3a000
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450604"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36462003"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -81,6 +81,7 @@ ms.locfileid: "36450604"
 | 添加项 | Beta | 添加了 [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) 资源，它授予了访问资源的访问权限。 |
 | 添加项 | Beta | 添加了以下操作来支持 unifiedRoleDefinition 资源： <br><ul><li>[列出 unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - 获取面向提供商的 unifiedRoleDefinition 对象列表。</li><li>[创建 unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 创建新的 unifiedRoleDefinition 对象。</li><li>[获取 unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 检索统一角色定义对象的属性和关系。</li><li>[更新 unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - 更新 unifiedRoleDefinition 对象的属性。</li><li>[删除 unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - 删除 unifiedRoleDefinition 对象。</li></ul> |
 | 添加项 | Beta | 添加了以下操作来支持 unifiedRoleAssignment 资源： <br><ul><li>[列出 unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - 获取面向提供商的 unifiedRoleAssignment 对象列表。</li><li>[创建 unifiedRoleAssignment]() -创建新的 unifiedRoleAssignment 对象。</li><li>[获取 unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - 检索 unifiedRoleAssignment 对象的属性和关系。</li><li>[删除 unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) -删除 unifiedRoleAssignment 对象。 |
+| Addition | Beta | 添加了[列出 accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) 操作。 |
 
 ### <a name="reports"></a>报告
 
@@ -611,7 +612,7 @@ ms.locfileid: "36450604"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |beta|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 上引入了 relatedContacts 新属性。|
-|添加项 |v1.0|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) 上引入了 relatedContacts 新属性。|
+|Addition |v1.0|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) 上引入了 relatedContacts 新属性。|
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 
@@ -2210,7 +2211,7 @@ ms.locfileid: "36450604"
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
 |添加项 | Beta | 向 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) 添加了新的 **workingHours** 属性。 请参阅 [workingHours 资源类型](/graph/api/resources/workinghours?view=graph-rest-beta)，获取有关受支持用例的信息。|
-|添加项 | Beta | 添加了以下新复杂类型： <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-beta) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-beta) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-beta) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-beta) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-beta)|
+|添加项 | beta | 添加了以下新复杂类型： <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-beta) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-beta) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-beta) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-beta) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-beta)|
 
 
 ## <a name="september-2017"></a>2017 年 9 月
@@ -2705,7 +2706,7 @@ ms.locfileid: "36450604"
 |添加项|Beta|添加了 [Shared API](/graph/api/resources/insights-shared?view=graph-rest-beta)。<br />新资源：<br />[sharingDetail](/graph/api/resources/insights-sharingdetail?view=graph-rest-beta) <br />[insightIdentity](/graph/api/resources/insights-insightidentity?view=graph-rest-beta) <br />
 |添加项|Beta|添加了 [Used API](/graph/api/resources/insights-used?view=graph-rest-beta)。<br />新资源：<br />[usageDetails](/graph/api/resources/insights-usagedetails?view=graph-rest-beta) <br />
 |更改|Beta|以下资源中的新 **Type** 属性：<br />[resourceVisualization](/graph/api/resources/insights-resourcevisualization?view=graph-rest-beta)。 <br />
-|删除项|Beta|删除了以下实体：<br/>**workingWith**<br/>**trendingAround**<br/>|
+|删除|Beta|删除了以下实体：<br/>**workingWith**<br/>**trendingAround**<br/>|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
