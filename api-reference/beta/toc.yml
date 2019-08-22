@@ -7447,8 +7447,15 @@
                 - name: 返回提交
                   href: api/educationsubmission-return.md
             - name: 结果
-              href: resources/educationoutcome.md
               items:
+                - name: 结果
+                  href: resources/educationoutcome.md
+                - name: 反馈结果类型
+                  href: resources/educationfeedbackoutcome.md
+                - name: 点结果类型
+                  href: resources/educationpointsoutcome.md
+                - name: Rubric 结果类型
+                  href: resources/educationrubricoutcome.md
                 - name: 更新结果
                   href: api/educationoutcome-update.md
             - name: 同步配置文件
@@ -8370,7 +8377,7 @@
                     - name: 托管的资源
                       href: resources/governanceresource.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/governanceresource-list.md
                         - name: 获取
                           href: api/governanceresource-get.md
@@ -8379,7 +8386,7 @@
                     - name: 角色定义
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/governanceroledefinition-list.md
                         - name: 获取
                           href: api/governanceroledefinition-get.md
