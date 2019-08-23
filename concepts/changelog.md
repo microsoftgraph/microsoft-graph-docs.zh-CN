@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
+ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36462003"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36564732"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -93,7 +93,7 @@ ms.locfileid: "36462003"
 | 添加项        | v1.0  | 向 [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
 | 添加项        | v1.0  | 已将 **office365Active** 和 **office365Inactive** 属性添加到 [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) 实体。|
 
-### <a name="social-and-workplace-intelligence-analytics"></a>社交和工作区智能（分析）
+### <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -612,7 +612,7 @@ ms.locfileid: "36462003"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |beta|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 上引入了 relatedContacts 新属性。|
-|Addition |v1.0|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) 上引入了 relatedContacts 新属性。|
+|添加项 |v1.0|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) 上引入了 relatedContacts 新属性。|
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 
@@ -1598,7 +1598,7 @@ ms.locfileid: "36462003"
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta       | 添加了[安全 API](/graph/api/resources/security-api-overview?view=graph-rest-beta)，包括以下资源和操作：<br/>[警报](/graph/api/resources/alert?view=graph-rest-beta)（和相关实体）<br/>[获取警报](/graph/api/alert-get?view=graph-rest-beta)<br/>[列出警报](/graph/api/alert-list?view=graph-rest-beta)<br/>[更新警报](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>添加了以下支持文档：<br/>[错误](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[与 SIEM 集成](security-siemintegration.md)
+| 添加项        | Beta       | 添加了[安全 API](/graph/api/resources/security-api-overview?view=graph-rest-beta)，包括以下资源和操作：<br/>[警报](/graph/api/resources/alert?view=graph-rest-beta)（和相关实体）<br/>[获取警报](/graph/api/alert-get?view=graph-rest-beta)<br/>[列出警报](/graph/api/alert-list?view=graph-rest-beta)<br/>[更新警报](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>添加了以下支持文档：<br/>[错误](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[使用 Microsoft Graph 安全性 API 实现安全解决方案集成](security-integration.md)
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 

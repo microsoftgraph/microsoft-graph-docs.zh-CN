@@ -115,7 +115,11 @@ items:
         href: intune-concept-overview.md
         displayName: Intune
       - name: 教育
-        href: education-concept-overview.md
+        items:
+          - name: 概述
+            href: education-concept-overview.md
+          - name: 评分标准
+            href: education-rubric-overview.md
       - name: 文件
         href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
