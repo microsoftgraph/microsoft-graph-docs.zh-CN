@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a8696e1e5e45045024f9e94ee7cbf575c628e41
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: b62a20c0f8e2c27c982acead15670afdcf92355d
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461432"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622572"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -27,8 +27,9 @@ ms.locfileid: "36461432"
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父[对话](../resources/conversation.md)是可选的。
+
 <!-- { "blockType": "ignored" } -->
-属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -38,6 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 
 特别是, 您可以使用 $expand 查询参数将所有发布附件添加到其余的 post 属性中。 例如：
 
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
 ```
@@ -59,10 +61,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_get_attachments_beta"
+  "name": "post_get_attachments_beta",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJfolA==","AAMkADJ-aHAAA="]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJfolA==/posts/AAMkADJ-aHAAA=/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-get-attachments-beta-csharp-snippets.md)]
@@ -90,23 +93,23 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.fileAttachment",
-      "id": "id-value",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-      "isInline": false,
-      "name": "name-value",
-      "size": 99
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('1848753d-185d-4c08-a4e4-6ee40521d115')/threads('AAQkADJfolA%3D%3D')/posts('AAMkADJ-aHAAA%3D')/attachments",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.fileAttachment",
+            "id": "AAMkADJ-aHAAABEgAQAO5ZYuLGBmNFnelXXQqAN6I=",
+            "lastModifiedDateTime": "2019-08-23T01:53:41Z",
+            "name": "FileAsAttachment.txt",
+            "contentType": "text/plain",
+            "size": 244,
+            "isInline": false,
+            "contentId": null,
+            "contentLocation": null,
+            "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+        }
+    ]
 }
 ```
 

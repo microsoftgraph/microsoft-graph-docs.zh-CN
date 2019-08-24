@@ -2,19 +2,19 @@
 title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78b8fd39741fb58b4386a70bc463de2cf4a4d546
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8482bdc9a19ea1ba5febc805970e0faca83446e3
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347715"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622542"
 ---
 # <a name="delete-attachment"></a>删除附件
 
-从日历事件、电子邮件或组帖子中删除附件。
+从用户日历事件、邮件消息或组帖子中删除附件。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,17 +27,24 @@ ms.locfileid: "36347715"
 -->
 
 ## <a name="http-request"></a>HTTP 请求
-用户或组的默认 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
+用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+属于用户的指定[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Assume group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->

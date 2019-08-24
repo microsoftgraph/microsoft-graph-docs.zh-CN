@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: fc4431ac20c961569ce5cfaa607c2d2ab77240ee
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 11ca850dc7aa24c17f485eb628c7e574bbd4ff4c
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450714"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622605"
 ---
 # <a name="focusactivitystatistics-resource-type"></a>focusActivityStatistics 资源类型
 
@@ -39,6 +39,8 @@ ms.locfileid: "36450714"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

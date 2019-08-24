@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 23e651821bc2385fa6fc163eb856f8b1dea1c054
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0df8c2c586d4522a2287cbdedb909df5b3e4f24e
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375693"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622549"
 ---
 # <a name="post-reply"></a>post: reply
 
-回复帖子，并向组对话中的指定线程添加新帖子。可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。
+回复帖子，并向组对话中的指定线程添加新帖子。 
+
+可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +48,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -137,7 +139,7 @@ Content-length: 1131
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

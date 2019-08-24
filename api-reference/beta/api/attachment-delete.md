@@ -3,20 +3,20 @@ title: 删除附件
 description: 从日历事件、邮件、Outlook 任务或帖子中删除附件。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 53a56b720ed1b1b2def64916f25831473cc79555
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: f3e4a06e86ef5da90851a84055e3162ae475129f
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408185"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622556"
 ---
 # <a name="delete-attachment"></a>删除附件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从日历[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[帖子](../resources/post.md)中删除附件。
+删除用户日历[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[帖子](../resources/post.md)中的附件。
 
 ## <a name="permissions"></a>权限
 
@@ -33,20 +33,44 @@ ms.locfileid: "36408185"
 
 ## <a name="http-request"></a>HTTP 请求
 
-[事件](../resources/event.md)的附件。
-
+用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+
+DELETE /me/calendar/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+属于用户的指定[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
+DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-用户邮箱中的 [邮件](../resources/message.md) 附件。
+属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+
+DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+```
+属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+
+Attachments for a [message](../resources/message.md) in a user's mailbox.
 <!-- { "blockType": "ignored" } -->
 
 ```http

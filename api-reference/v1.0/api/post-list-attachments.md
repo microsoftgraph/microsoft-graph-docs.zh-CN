@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ebd28d96e64ce6fb25bca87a4e1644dab5c0b659
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 4ec8e7b5681d13c09cff59e22bd1e53ae8c75a3b
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461949"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622563"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -25,14 +25,22 @@ ms.locfileid: "36461949"
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父[对话](../resources/conversation.md)是可选的。
+
 <!-- { "blockType": "ignored" } -->
-属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+特别是, 您可以使用 $expand 查询参数将所有发布附件添加到其余的 post 属性中。 例如：
+
+<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
+```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -43,7 +51,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Attachment](../resources/attachment.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[附件](../resources/attachment.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -51,10 +59,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_get_attachments_v1"
+  "name": "post_get_attachments_v1",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJfolA==","AAMkADJ-aHAAA="]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments
+GET https://graph.microsoft.com/v1.0/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJfolA==/posts/AAMkADJ-aHAAA=/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-get-attachments-v1-csharp-snippets.md)]
@@ -86,23 +95,23 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.fileAttachment",
-      "id": "id-value",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
-      "isInline": false,
-      "name": "name-value",
-      "size": 99
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('1848753d-185d-4c08-a4e4-6ee40521d115')/threads('AAQkADJfolA%3D%3D')/posts('AAMkADJ-aHAAA%3D')/attachments",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.fileAttachment",
+            "id": "AAMkADJ-aHAAABEgAQAO5ZYuLGBmNFnelXXQqAN6I=",
+            "lastModifiedDateTime": "2019-08-23T01:53:41Z",
+            "name": "FileAsAttachment.txt",
+            "contentType": "text/plain",
+            "size": 244,
+            "isInline": false,
+            "contentId": null,
+            "contentLocation": null,
+            "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: aa0e4b12ed260c0f6660544e7f48cfe1ca9cd3dc
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 14d926a41680f1292b7599bd76b458705b426719
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450723"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622535"
 ---
 # <a name="meetingactivitystatistics-resource-type"></a>meetingActivityStatistics 资源类型
 
@@ -51,6 +51,8 @@ ms.locfileid: "36450723"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

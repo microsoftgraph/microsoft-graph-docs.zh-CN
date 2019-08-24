@@ -3,20 +3,20 @@ title: attachment 资源类型
 description: 可向事件添加相关的内容，
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6ee3ba645f71b100b78b01fa1821bf91ca21cb26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: da7e66d1edbda224fe547b7e7afc8fd88dc5e5aa
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013260"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622633"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以将相关内容添加到[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或以附件形式[发布](../resources/post.md)。
+可以使用附件的形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或组[帖子](../resources/post.md)添加相关内容。
 
 **附件**是以下附件派生类型的基础资源：
 
@@ -24,18 +24,20 @@ ms.locfileid: "36013260"
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
 * 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）
 
+组日历中的事件不支持附件。
+
 ## <a name="methods"></a>方法
 
 以下方法适用于所有附件派生类型（**fileAttachment**、**itemAttachment** 或 **referenceAttachment**）。
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到事件、邮件、Outlook 任务或帖子的附件的属性和关系。|
-|[Add attachment to an event](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
+|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性和关系。|
+|[向用户事件添加附件](../api/event-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件。|
 |[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
-|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|
+|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
+|[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取用户日历中的事件附件的列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
 |[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |

@@ -1,22 +1,24 @@
 ---
 title: Add attachment
-description: 使用此 API 将 附件 添加到帖子。 自此处起
+description: 创建组帖子时添加附件。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 611489e63c36a922f3eabd3a595680565151ab6f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e82f7d7cc7a0ceaac437cb86020ad62bc470b3e1
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412906"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622571"
 ---
-# <a name="add-attachment"></a>Add attachment
+# <a name="add-attachment"></a>添加附件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将 [附件](../resources/attachment.md) 添加到帖子。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
+创建组帖子时添加[附件](../resources/attachment.md)。 
+
+由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
 
 附件可以是下列类型之一：
 
@@ -36,11 +38,12 @@ ms.locfileid: "36412906"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+在组的[conversationThread](../resources/conversationthread.md)中创建[帖子](../resources/post.md)时包含附件。 指定父[对话](../resources/conversation.md)是可选的。
+
 <!-- { "blockType": "ignored" } -->
-属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
 ```http
-POST /groups/{id}/threads/{id}/posts/{id}/attachments
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -48,31 +51,43 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Attachment](../resources/attachment.md) 对象的 JSON 表示形式。
+在请求正文中, 提供包含**post**参数的 JSON 对象。
+
+| 参数    | 类型   |说明|
+|:---------------|:--------|:----------|
+|帖子|[帖子](../resources/post.md)|要答复的新帖子, 其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Attachment](../resources/attachment.md) 对象。
+如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。
 
-## <a name="example-file-attachment"></a>示例（文件附件）
-
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <a name="examples"></a>示例
+### <a name="example-1-include-a-file-attachment"></a>示例 1: 包含文件附件
+#### <a name="request"></a>请求
+下面的示例展示了在创建帖子时将文件作为附件包含的一个请求。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_post"
+  "name": "create_file_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 142
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "Which quarter does that file cover? See my attachment."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.fileAttachment",
+      "name": "Another file as attachment",
+      "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+    } ]
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -89,99 +104,105 @@ Content-length: 142
 
 ---
 
-
-在请求正文中，提供 [attachment](../resources/attachment.md) 对象的 JSON 表示形式。
-
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_file_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accpted
 ```
 
-## <a name="example-item-attachment"></a>示例（项目附件）
+### <a name="example-2-include-an-item-attachment"></a>示例 2: 包含项目附件
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
+下面的示例展示了在创建帖子时将事件作为附件包含的一个请求。
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
+}-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "name-value",
-  "item": { }
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached an event."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.itemAttachment",
+      "name": "Holiday event", 
+      "item": {
+          "@odata.type": "microsoft.graph.event",
+          "subject": "Discuss gifts for children",
+          "body": {
+              "contentType": "HTML",
+              "content": "Let's look for funding!"
+          },
+          "start": {
+              "dateTime": "2019-12-02T18:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2019-12-02T19:00:00",
+              "timeZone": "Pacific Standard Time"
+          }
+      }
+    } ]
+  }
 }
 ```
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_item_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accepted
 ```
 
-## <a name="example-reference-attachment"></a>示例（参考附件）
+### <a name="example-3-include-a-reference-attachment"></a>示例 3: 包含引用附件
 
-##### <a name="request"></a>请求
-下面的示例展示了向现有帖子添加引用附件的请求。
+#### <a name="request"></a>请求
+下面的示例展示了在创建帖子时包含参考附件的请求。
 附件指向 OneDrive 上的文件夹。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_post",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
-
-```
-POST https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments
+```http
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached a reference to a file on OneDrive."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.referenceAttachment", 
+      "name": "Personal pictures", 
+      "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
+      "providerType": "oneDriveConsumer", 
+      "permission": "Edit", 
+      "isFolder": "True"
+    } ]
+  }
+}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -197,32 +218,14 @@ Content-length: 319
 ---
 
 
-##### <a name="response"></a>响应
-下面的示例展示了完整的响应。
+#### <a name="response"></a>响应
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post"
 } -->
 ```http
-HTTP 201 Created
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments/$entity",
-  "@odata.type": "#microsoft.graph.referenceAttachment",
-  "id": "AAMkAGE1Mg72tgf7hJp0PICVGCc0g=",
-  "lastModifiedDateTime": "2016-03-12T06:04:38Z",
-  "name": "Personal pictures",
-  "contentType": null,
-  "size": 382,
-  "isInline": false,
-  "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-  "providerType": "oneDriveConsumer",
-  "thumbnailUrl": null,
-  "previewUrl": null,
-  "permission": "edit",
-  "isFolder": true
-}
+HTTP/1.1 202 Accpted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
