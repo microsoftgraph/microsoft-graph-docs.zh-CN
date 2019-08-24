@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245656"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622647"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -81,10 +81,6 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 ### <a name="policy"></a>策略
 
 使用 Microsoft Graph 创建并命名 Office 365 组会忽略通过 Outlook Web App 配置的所有 Office 365 组策略。
-
-### <a name="adding-and-getting-attachments-of-group-posts"></a>添加和获取组帖子的附件
-
-向组帖子 [添加](/graph/api/post-post-attachments?view=graph-rest-1.0) 附件、[列出](/graph/api/post-list-attachments?view=graph-rest-1.0) 和获取组帖子的附件目前返回错误消息“OData 请求不受支持”。已经为 `/v1.0` 和 `/beta` 版本推出修复程序，并预计到 2016 年 1 月底会广泛推出。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 
