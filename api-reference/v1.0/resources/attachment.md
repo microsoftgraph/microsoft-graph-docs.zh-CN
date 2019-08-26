@@ -2,19 +2,19 @@
 title: attachment 资源类型
 description: 可向事件添加相关的内容，
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d47fde49a76f00658e39d9a3ae6629cd9bcf56b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 509421f292e1c849ceee17a3db9f348e05ca747b
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030070"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622654"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
-可以附件形式向[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。
+可以附件形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)添加相关内容。
 
 **附件**是以下附件派生类型的基础资源：
 
@@ -22,6 +22,7 @@ ms.locfileid: "36030070"
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
 * 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）
 
+组日历中的事件不支持附件。
 
 ## <a name="methods"></a>方法
 
@@ -29,11 +30,11 @@ ms.locfileid: "36030070"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到事件、邮件或帖子的附件的属性和关系。|
-|[Add attachment to an event](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
+|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件或帖子的附件的属性和关系。|
+|[将附件添加到用户事件中](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件中。|
 |[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
+|[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取用户日历中事件的附件列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment-delete.md) | 无 |删除事件、邮件或帖子的附件。 |
