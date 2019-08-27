@@ -1,16 +1,16 @@
 ---
 title: 获取频道
 description: 检索频道的属性和关系。
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: apiPageType
-ms.openlocfilehash: 8e3bf6e3ece7a39e2eceef661b29af2e64e6bd06
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8690a832484b607e3dcb788232b599952e49fdd0
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418773"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633417"
 ---
 # <a name="get-channel"></a>获取频道
 
@@ -19,6 +19,7 @@ ms.locfileid: "36418773"
 检索[频道](../resources/channel.md)的属性和关系。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,21 +42,27 @@ GET /teams/{id}/channels/{id}
 此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [channel](../resources/channel.md) 对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_channel"
@@ -63,6 +70,7 @@ GET /teams/{id}/channels/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -77,10 +85,12 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+### <a name="response"></a>响应
+
+下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +104,8 @@ Content-length: 201
 {
     "description": "description-value",
     "displayName": "display-name-value",
-    "id": "id-value"
+    "id": "id-value",
+    "membershipType": "membership-type-value"
 }
 ```
 

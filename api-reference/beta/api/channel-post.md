@@ -2,15 +2,15 @@
 title: 创建频道
 description: 在 Microsoft 团队中创建请求正文中指定的新频道。
 localization_priority: Normal
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3039130eabc6f5925feca0b5b4e0e5eb67d01d13
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 66b456188037dff0dc802e96f94452baebcd87af
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418698"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633375"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -21,8 +21,8 @@ ms.locfileid: "36418698"
 > **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,13 +37,16 @@ ms.locfileid: "36418698"
 ```http
 POST /teams/{id}/channels
 ```
+
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
@@ -51,7 +54,9 @@ POST /teams/{id}/channels
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [channel](../resources/channel.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
@@ -82,8 +87,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

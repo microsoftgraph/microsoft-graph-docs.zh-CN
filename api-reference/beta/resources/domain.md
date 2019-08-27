@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e6390b72a7292a9529c11c6200d4c61dcc5355c1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dda30901f93661bafa8fe1a6d73f95a0cfdc4fb9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973814"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633690"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -50,7 +50,7 @@ ms.locfileid: "35973814"
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| 指示为域配置的身份验证类型。 值为 "*托管*" 或 "*联合*"。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联合*指示身份验证通过使用标识提供程序 (如通过 Active Directory 联合身份验证服务的租户的本地 Active directory) 进行联合。 不可为 null |
+|authenticationType|String| 指示为域配置的身份验证类型。 值为 "*托管*" 或 "*联合*"。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联合*指示身份验证通过使用标识提供程序 (如通过 Active Directory 联合身份验证服务的租户的本地 Active directory) 进行联合。 此属性为只读, 且不可为 null。 |
 |availabilityStatus|String| 除非使用了[verify](../api/domain-verify.md)操作, 否则此属性始终为 null。 使用[验证](../api/domain-verify.md)操作时, 会在响应中返回**域**实体。 响应中的**域**实体的**AvailabilityStatus**属性为*AvailableImmediately*或*EmailVerifiedDomainTakeoverScheduled*。|
 |id|String| 域的完全限定的名称。 键、不可变、不可为 null、唯一 |
 |isAdminManaged|Boolean| 如果域的 DNS 记录管理已委派给 Office 365, 则该属性的值为 false。 否则, 该值为 true。 不可为 null |

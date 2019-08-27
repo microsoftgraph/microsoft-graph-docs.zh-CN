@@ -1,16 +1,16 @@
 ---
 title: 修补程序通道
 description: 更新指定通道的属性。
-author: nkramer
+author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6e8cd0369178917d0a1542e36c8a8ea83b6b7f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b951835941c44d4be5f67bf9c9bb0e23cbf288d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944238"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633382"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -18,9 +18,8 @@ ms.locfileid: "35944238"
 
 更新指定[通道](../resources/channel.md)的属性。
 
-> **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
-
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,6 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
@@ -50,7 +50,9 @@ PATCH /teams/{id}/channels/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
@@ -67,7 +69,8 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",

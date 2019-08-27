@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6290b055322c1264117e7aae75573774b4831e72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 328f250b3f3116576734ac4218959576c0930914
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983696"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633669"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
@@ -47,6 +47,8 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面的示例创建一个在指定任务`Cooking`组中调用的任务文件夹。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
@@ -60,6 +62,12 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktaskfolder-from-outlooktaskgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 在请求正文中, 提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。

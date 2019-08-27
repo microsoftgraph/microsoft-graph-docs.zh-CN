@@ -3,14 +3,14 @@ title: 更新 privilegedRoleSettings
 description: 更新给定角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ef9b8db2f4e0d580ec136caa7d827d19f22d6929
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 01737dd7ffbb15e3fd96cad6b9c9c3aa55cc981d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412584"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633655"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -21,7 +21,7 @@ ms.locfileid: "36412584"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
->**注意:** 请求者必须具有以下角色之一: 特权角色管理员、全局管理员、安全管理员或安全阅读者。 
+>**注意:** 请求者必须具有特权角色管理员角色才能更新角色设置。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

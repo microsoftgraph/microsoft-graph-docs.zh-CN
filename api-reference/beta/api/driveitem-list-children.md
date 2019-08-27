@@ -6,12 +6,12 @@ title: 列出文件夹的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0f2fd43c752a3c072d7c031d9f9662bc75a2059f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 91945814dab0ab8793620d413fc0610560253741
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416735"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633284"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-**注意：** 如果集合超出默认页面大小（200 项），则在响应中返回 **@odata.nextLink** 属性以指示有更多项可用，并提供下一页项目的请求 URL。
+**注意:** 如果集合超过默认页面大小 (200 个项目), ** \@** 则在响应中返回 nextLink 属性以指示有更多的可用项目, 并提供下一页项目的请求 URL。
 
 可以通过[可选的查询字符串参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)控制页面大小
 

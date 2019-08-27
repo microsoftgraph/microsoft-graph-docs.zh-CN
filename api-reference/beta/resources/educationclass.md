@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0bc9fa375e3f22087fbf268933370d8a6222654e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006365"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633704"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -52,6 +52,7 @@ ms.locfileid: "36006365"
 | externalId     | String                                | 来自同步系统的课程 ID。                                                |
 | externalName   | String                                | 同步系统中的课程名称。                                                |
 | externalSource | string                                | 此课程的创建方式。 可取值为：`sis`、`manual`、`unknownFutureValue`。 |
+| grade          | string                                | 课程的年级级别。                                                               |
 | mailNickname   | 字符串                                | 向所有成员发送电子邮件的邮件名称（如果已启用）。                         |
 | term           | [educationTerm]                       | 类的术语。                                                                     |
 
@@ -87,6 +88,7 @@ ms.locfileid: "36006365"
   "externalId": "String",
   "externalName": "String",
   "externalSource": "string",
+  "grade": "string",
   "id": "String (identifier)",
   "mailNickname": "String",
   "term": { "@odata.type": "microsoft.graph.educationTerm" }
