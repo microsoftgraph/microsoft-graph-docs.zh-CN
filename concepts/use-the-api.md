@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph API
 description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风格的 Web API。在你注册应用并获取身份验证令牌以用于用户或服务后，可以向 Microsoft Graph API 发送请求。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 18de281cc0becfacfdabe5fb81a68358f04c3747
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 9f95868069c2ffd404076e5b3baf572e21b61eeb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840640"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633242"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -30,7 +30,7 @@ Microsoft Graph 一种是可让你访问 Microsoft 云服务资源的 REST 风�
 * [{HTTP method}](#http-methods) - 在 Microsoft Graph 请求上所使用的 HTTP 方法。
 * [{version}](#version) - 你的应用程序正在使用的 Microsoft Graph API 版本。
 * [{resource}](#resource) - 你正在引用的 Microsoft Graph 中的资源。 
-* [{query-parameters}](#query-parameters-optional) - 可自定义响应的可选 OData 查询选项或 REST 方法参数。
+* [{query-parameters}](#query-parameters) - 可自定义响应的可选 OData 查询选项或 REST 方法参数。
 
 在你发出请求后，响应便会返回，其中包括： 
 

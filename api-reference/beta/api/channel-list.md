@@ -1,16 +1,16 @@
 ---
 title: 列出频道
 description: 检索此团队中的频道列表。
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-doc_type: apiPageType
-ms.openlocfilehash: 5d2fd47ada9cb8ea9f816fab92fe2a27f48bc193
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b96365b6e29e5742ac59d9b202be8c8d2e094db8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418724"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633396"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -19,8 +19,8 @@ ms.locfileid: "36418724"
 检索此[团队](../resources/team.md)中的[频道](../resources/channel.md)列表。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,11 +40,13 @@ GET /teams/{id}/channels
 此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -52,33 +54,39 @@ GET /teams/{id}/channels
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Channel](../resources/channel.md) 对象集合。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_channels"
+  "name": "list_channels"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +103,8 @@ Content-length: 262
     {
       "description": "description-value",
       "displayName": "display-name-value",
-      "id": "id-value"
+      "id": "id-value",
+      "membershipType": "membership-type-value"
     }
   ]
 }
