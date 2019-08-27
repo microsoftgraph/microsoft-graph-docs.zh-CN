@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1f609ff13f09d799c5f1baad3103f18133f7111c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e3f8c5391e890a2a95db94ec32868a40eb02b590
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35719821"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636692"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const workbookRangeFont = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/font')
     .version('beta')
-    .update({workbookRangeFont : workbookRangeFont});
+    .update(workbookRangeFont);
 
 ```

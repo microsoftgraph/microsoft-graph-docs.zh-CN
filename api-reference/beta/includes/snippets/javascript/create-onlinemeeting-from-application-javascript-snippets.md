@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 481efa9c9ff69832bda11ec1ecf52ba63bf62b68
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: b100c9015892f148dbb89b55aa724d52c1785b4e
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933792"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636589"
 ---
 ```javascript
 
@@ -31,6 +31,6 @@ const onlineMeeting = {
 
 let res = await client.api('/app/onlineMeetings')
     .version('beta')
-    .post({onlineMeeting : onlineMeeting});
+    .post(onlineMeeting);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e878bd843278a13b7e695c8f73d13f1037c36e01
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e2bf6ed52c8b9d13a49c98eca5c53fe3f800419d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717085"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636625"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const workbookTableColumn = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}')
     .version('beta')
-    .update({workbookTableColumn : workbookTableColumn});
+    .update(workbookTableColumn);
 
 ```

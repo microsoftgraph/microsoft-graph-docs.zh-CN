@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b12f9562b06c3b6abd27fd511188603bed634215
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 6c8e2ae23f93ec56f3e065ecc7b4f0f6cb4ae27f
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710861"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636598"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const accessReview = {
 
 let res = await client.api('/accessReviews/006111db-0810-4494-a6df-904d368bd81b')
     .version('beta')
-    .update({accessReview : accessReview});
+    .update(accessReview);
 
 ```

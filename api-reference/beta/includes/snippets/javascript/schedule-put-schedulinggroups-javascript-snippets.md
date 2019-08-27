@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7ca0c2db1a0ca2bcab2154de4b843b765aac1a8b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 2e926f028f3be489a254626aec2f4e2caf466c2a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725602"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636686"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const schedulingGroup = {
 
 let res = await client.api('/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}')
     .version('beta')
-    .put({schedulingGroup : schedulingGroup});
+    .put(schedulingGroup);
 
 ```

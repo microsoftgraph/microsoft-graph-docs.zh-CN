@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 381cca61cccff66f1a73a67f14f97727ea827a0c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 6cf0afcd82be742971e9e64a7449365d86ddf4b7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35706660"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636537"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const directoryRole = {
 
 let res = await client.api('/directoryRoles')
     .version('beta')
-    .post({directoryRole : directoryRole});
+    .post(directoryRole);
 
 ```

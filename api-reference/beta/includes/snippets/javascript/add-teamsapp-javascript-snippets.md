@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: cdf130c8e1ec3453affe5c3d179e315963cd15e6
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 113860a84e07a7c65aeee7536e1933dd6086ae22
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931683"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636619"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const teamsAppInstallation = {
 
 let res = await client.api('/teams/87654321-0abc-zqf0-321456789q/installedApps')
     .version('beta')
-    .post({teamsAppInstallation : teamsAppInstallation});
+    .post(teamsAppInstallation);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 59c8334330099357beb862bb586941dd63136f61
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 9f6a2ed5a3f0dd60358319abff2e680cc8da21bd
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717441"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636678"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const subscription = {
 
 let res = await client.api('/subscriptions')
     .version('beta')
-    .post({subscription : subscription});
+    .post(subscription);
 
 ```

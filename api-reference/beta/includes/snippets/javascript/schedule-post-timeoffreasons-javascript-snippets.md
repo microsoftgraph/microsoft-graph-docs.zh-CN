@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 33aa09bda9dd097cf9cd5efc24e7b78562436fd9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 49c34c0f3a531f44ab7f7f9ec89488fc6107691a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35718142"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636687"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const timeOffReason = {
 
 let res = await client.api('/teams/{teamId}/schedule/timeOffReasons')
     .version('beta')
-    .post({timeOffReason : timeOffReason});
+    .post(timeOffReason);
 
 ```

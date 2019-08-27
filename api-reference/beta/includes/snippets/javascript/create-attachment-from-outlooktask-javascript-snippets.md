@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2b8afb2ab222cd54a681fbf8a8f8ccff0a5a5ec5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 766070c2b1386bb1d1d9a32dc63cd77cde4d3293
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35728972"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636665"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const attachment = {
 
 let res = await client.api('/users/{id}/outlook/tasks/{id}/attachments')
     .version('beta')
-    .post({attachment : attachment});
+    .post(attachment);
 
 ```

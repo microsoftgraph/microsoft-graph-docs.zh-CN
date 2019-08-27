@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 338f16b625d17cea2aad3bae6538dabdd759fdb9
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: fd33c460fe9e1a794f0f59e02f8a3480606317c9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461257"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636689"
 ---
 ```javascript
 
@@ -32,6 +32,6 @@ const unifiedRoleDefinition = {
 
 let res = await client.api('/roleManagement/directory/roleDefinitions')
     .version('beta')
-    .post({unifiedRoleDefinition : unifiedRoleDefinition});
+    .post(unifiedRoleDefinition);
 
 ```

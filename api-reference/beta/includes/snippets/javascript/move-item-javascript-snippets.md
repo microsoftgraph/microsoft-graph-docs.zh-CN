@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6cfa6c5e1b51d8b280036455a958f2e4025e1034
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 204e224e22cb1cac9aaec0cc65f1b3e3661b6c1a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705814"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636530"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const driveItem = {
 
 let res = await client.api('/me/drive/items/{item-id}')
     .version('beta')
-    .update({driveItem : driveItem});
+    .update(driveItem);
 
 ```

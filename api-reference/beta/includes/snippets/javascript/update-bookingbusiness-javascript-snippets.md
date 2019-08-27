@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 670d3ff0fac85d37581a60fc8b2a94efe4903893
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 8b4be8d012f26fdb2d6c26416da6c6f03c372231
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709594"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636578"
 ---
 ```javascript
 
@@ -28,6 +28,6 @@ const bookingBusiness = {
 
 let res = await client.api('/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com')
     .version('beta')
-    .update({bookingBusiness : bookingBusiness});
+    .update(bookingBusiness);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f1fa9e89885bcc7bdcd8ad01ef25ca65f1b85f48
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1b42d0a7fb9e44d83676d4e3d5aa3f9af958704d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711616"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636483"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const identityProvider = {
 
 let res = await client.api('/identityProviders')
     .version('beta')
-    .post({identityProvider : identityProvider});
+    .post(identityProvider);
 
 ```

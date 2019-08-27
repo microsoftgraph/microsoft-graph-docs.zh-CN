@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 862f9153f2f5b54a11f248ad40c8baf0132c9d5f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 08684cbe8a908af22c8197762d7075b3e5cba249
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721558"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636725"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const mailFolder = {
 
 let res = await client.api('/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders')
     .version('beta')
-    .post({mailFolder : mailFolder});
+    .post(mailFolder);
 
 ```

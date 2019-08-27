@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7791570662af64a5a34e65ea5df4587bc105f505
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 36d0038eb7030dd8208a49b5f91326f9cd699440
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35719717"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636690"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const workbookRangeBorder = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders')
     .version('beta')
-    .post({workbookRangeBorder : workbookRangeBorder});
+    .post(workbookRangeBorder);
 
 ```

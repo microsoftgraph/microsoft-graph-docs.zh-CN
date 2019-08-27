@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7002995c98e7b918f04422a82703906c85958c74
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: fd72f485c843757a1d6fc7e74b79b08cb88f82b9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725224"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636631"
 ---
 ```javascript
 
@@ -37,6 +37,6 @@ const servicePrincipal = {
 
 let res = await client.api('/servicePrincipals/{id}')
     .version('beta')
-    .update({servicePrincipal : servicePrincipal});
+    .update(servicePrincipal);
 
 ```

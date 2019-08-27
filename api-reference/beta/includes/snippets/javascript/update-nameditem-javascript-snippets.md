@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8271891c1fd6931316c0f0e561ed0fe38754507d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c0dd5b28dbdfc672556aa0af2e57b8e5ecffac98
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721319"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636720"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const workbookNamedItem = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}')
     .version('beta')
-    .update({workbookNamedItem : workbookNamedItem});
+    .update(workbookNamedItem);
 
 ```

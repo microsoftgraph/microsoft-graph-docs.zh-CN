@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: a6ad8dde1e5abf3225d7b3755309dbb1a475b181
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 9b8f0aaf0cb6ee8c115d3ba725bd4eb3d3a71643
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461272"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636638"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const unifiedRoleAssignment = {
 
 let res = await client.api('/roleManagement/directory/roleAssignments')
     .version('beta')
-    .post({unifiedRoleAssignment : unifiedRoleAssignment});
+    .post(unifiedRoleAssignment);
 
 ```

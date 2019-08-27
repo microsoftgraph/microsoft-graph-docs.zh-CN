@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 26a81cc65ddf0b30fb41fdaea6c63f400898dd95
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: e920366cbea97f7e39071277222397f10cbdc2e8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461175"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636511"
 ---
 ```javascript
 
@@ -96,6 +96,6 @@ const educationRubric = {
 
 let res = await client.api('/education/me/rubrics')
     .version('beta')
-    .post({educationRubric : educationRubric});
+    .post(educationRubric);
 
 ```
