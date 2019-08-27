@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 62366f49f3da3db025a2c7bb676fc68fa734e4b0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 358d859c524b38b7a37a4f604b9f40880b4bf498
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720096"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633648"
 ---
 ```javascript
 
@@ -31,6 +31,6 @@ const privilegedRoleSettings = {
 
 let res = await client.api('/privilegedRoles/{id}/settings')
     .version('beta')
-    .put({privilegedRoleSettings : privilegedRoleSettings});
+    .put(privilegedRoleSettings);
 
 ```

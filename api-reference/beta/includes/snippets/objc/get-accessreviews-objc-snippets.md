@@ -1,18 +1,18 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2ecfde9af24d41cf066f0b55950e4667e5353e4f
+ms.openlocfilehash: 8e30b3b02bdafaeb4be41a7763c642baa3678452
 ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633920"
+ms.locfileid: "36633256"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{id}/channels"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/accessReviews?$filter=businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
@@ -20,9 +20,9 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
         NSError *jsonError = nil;
         NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *channelList = [[NSMutableArray alloc] init];
-        channelList = [jsonFinal valueForKey:@"value"];
-        MSGraphChannel *channel = [[MSGraphChannel alloc] initWithDictionary:[channelList objectAtIndex: 0] error:&nserror];
+        NSMutableArray *accessReviewList = [[NSMutableArray alloc] init];
+        accessReviewList = [jsonFinal valueForKey:@"value"];
+        MSGraphAccessReview *accessReview = [[MSGraphAccessReview alloc] initWithDictionary:[accessReviewList objectAtIndex: 0] error:&nserror];
 
 }];
 

@@ -4115,10 +4115,14 @@
               items:
                 - name: 列出频道
                   href: api/channel-list.md
-                - name: 创建频道
-                  href: api/channel-post.md
                 - name: 获取频道
                   href: api/channel-get.md
+                - name: 创建频道
+                  href: api/channel-post.md
+                - name: '更新频道 '
+                  href: api/channel-patch.md
+                - name: 删除频道
+                  href: api/channel-delete.md
             - name: 应用程序目录
               href: resources/teamsapp.md
               items:

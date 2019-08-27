@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: fcaa5d2715159fb4b6448b5146cabe50305edabc
+ms.openlocfilehash: a668fc0b3f92c54060b69568b92826890b0e87f5
 ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633368"
+ms.locfileid: "36633662"
 ---
 ```javascript
 
@@ -15,13 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const channel = {
-  displayName: "Architecture Discussion",
-  description: "This channel is where we debate all future architecture plans"
+const taskfolders = {
+  name: "Cooking"
 };
 
-let res = await client.api('/teams/{id}/channels')
+let res = await client.api('/me/taskgroups/AAMkADIyAAAhrbe-AAA'/taskfolders')
     .version('beta')
-    .post(channel);
+    .post(taskfolders);
 
 ```
