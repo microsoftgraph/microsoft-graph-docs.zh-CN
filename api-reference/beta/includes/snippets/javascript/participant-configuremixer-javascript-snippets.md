@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1167a6e089ccb37ff261b57deacf703d722c3d32
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 95457d909b072d145d41265551fae0e3e423cf86
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933838"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636659"
 ---
 ```javascript
 
@@ -40,6 +40,6 @@ const participant = {
 
 let res = await client.api('/app/calls/{id}/participants/configureMixer')
     .version('beta')
-    .post({participant : participant});
+    .post(participant);
 
 ```

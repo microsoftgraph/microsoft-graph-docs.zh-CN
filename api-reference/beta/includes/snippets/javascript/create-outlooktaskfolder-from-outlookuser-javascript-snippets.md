@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: fd5f436d26cb3d60c492d089ba8c32204e8c8833
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 7224c66e4ded6041ea99885e084b0dd23bd8e566
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720770"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636661"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const outlookTaskFolder = {
 
 let res = await client.api('/me/outlook/taskfolders')
     .version('beta')
-    .post({outlookTaskFolder : outlookTaskFolder});
+    .post(outlookTaskFolder);
 
 ```

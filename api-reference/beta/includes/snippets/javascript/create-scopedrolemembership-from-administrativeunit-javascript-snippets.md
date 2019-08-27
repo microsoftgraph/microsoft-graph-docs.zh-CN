@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b2b6a3f9b4b0240d1d6bd7f4210c7282c7040a0a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: fafa220d2bcc66c3d6befe041a383ffb4513da45
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710623"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636595"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const scopedRoleMembership = {
 
 let res = await client.api('/administrativeUnits/{id}/scopedRoleMembers')
     .version('beta')
-    .post({scopedRoleMembership : scopedRoleMembership});
+    .post(scopedRoleMembership);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e4920fe88da88fabac31bd31939546275cd99289
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 8fd72efe943c26eb532b5687d5e83cc15eac7c5b
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857999"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636494"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const directoryObject = {
 
 let res = await client.api('/groups/{id}/owners/$ref')
     .version('beta')
-    .post({directoryObject : directoryObject});
+    .post(directoryObject);
 
 ```

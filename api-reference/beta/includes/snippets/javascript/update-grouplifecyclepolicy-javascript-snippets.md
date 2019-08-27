@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b87c8b4e56d51f886cc1efd1a3f03df52f0dfd57
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: f917ac0d9802b879090ddf26e2a6dd62fb657c91
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711653"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636487"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const groupLifecyclePolicy = {
 
 let res = await client.api('/groupLifecyclePolicies/{id}')
     .version('beta')
-    .update({groupLifecyclePolicy : groupLifecyclePolicy});
+    .update(groupLifecyclePolicy);
 
 ```

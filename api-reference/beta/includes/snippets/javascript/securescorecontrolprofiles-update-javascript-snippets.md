@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3f59e5537c413e2dd0117eb3350564f55349fec8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: b0109c81f00bd44ccab9cfd58be24976e0dd612f
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717930"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636683"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const secureScoreControlProfile = {
 
 let res = await client.api('/security/secureScoreControlProfiles/AdminMFA')
     .version('beta')
-    .update({secureScoreControlProfile : secureScoreControlProfile});
+    .update(secureScoreControlProfile);
 
 ```

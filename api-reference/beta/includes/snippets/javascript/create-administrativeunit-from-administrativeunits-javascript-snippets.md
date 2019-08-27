@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5e41d508a2a41d6e8e65957c54413b6dd7328eb5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 3b59ddd3779d1d1ad10e67d174ad41e4ab74ad75
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710645"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636597"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const administrativeUnit = {
 
 let res = await client.api('/administrativeUnits')
     .version('beta')
-    .post({administrativeUnit : administrativeUnit});
+    .post(administrativeUnit);
 
 ```

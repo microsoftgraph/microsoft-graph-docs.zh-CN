@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b8aa09edef5102935a246a50ee7c11c27fdd81e9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 3ad35fa3013e96b78321078c2628b3acc001961b
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725205"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636680"
 ---
 ```javascript
 
@@ -66,6 +66,6 @@ const shift = {
 
 let res = await client.api('/teams/{teamId}/schedule/shifts/{shiftId}')
     .version('beta')
-    .put({shift : shift});
+    .put(shift);
 
 ```

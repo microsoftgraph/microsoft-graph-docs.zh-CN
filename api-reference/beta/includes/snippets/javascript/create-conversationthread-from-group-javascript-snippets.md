@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: d0ec590af3d1ebbb4a765565199942d7725b0c93
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 14fd73334394cd5c8f0e306c2265fb3ac8dcfb0a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713507"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636491"
 ---
 ```javascript
 
@@ -33,6 +33,6 @@ const conversationThread = {
 
 let res = await client.api('/groups/{id}/threads')
     .version('beta')
-    .post({conversationThread : conversationThread});
+    .post(conversationThread);
 
 ```

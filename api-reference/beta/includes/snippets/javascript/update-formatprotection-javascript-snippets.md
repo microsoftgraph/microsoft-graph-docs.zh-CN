@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 08bd9f593b78cba34981eede784744ea56808629
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 31b2e206c60e54ad46ae64c87654bb0cfeb0a6e9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712197"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636503"
 ---
 ```javascript
 
@@ -22,6 +22,6 @@ const workbookFormatProtection = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/protection')
     .version('beta')
-    .update({workbookFormatProtection : workbookFormatProtection});
+    .update(workbookFormatProtection);
 
 ```

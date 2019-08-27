@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: befec520fd3342c64171412ec5ff0e0c61e256bb
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: dfc0581d8b29c926773d9b3baedf49533f88a371
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172822"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636505"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const directoryObject = {
 
 let res = await client.api('/directory/featureRolloutPolicies/{id}/appliesTo/$ref')
     .version('beta')
-    .post({directoryObject : directoryObject});
+    .post(directoryObject);
 
 ```

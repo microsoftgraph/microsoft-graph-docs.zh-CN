@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3fbc6055660aa3c9e21fc6c7e0a71ec20ef8ed34
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: bbc84604b82087b9c5ced72264994c142f4b8c54
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710068"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636586"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const appRoleAssignment = {
 
 let res = await client.api('/appRoleAssignments/{id}')
     .version('beta')
-    .update({appRoleAssignment : appRoleAssignment});
+    .update(appRoleAssignment);
 
 ```

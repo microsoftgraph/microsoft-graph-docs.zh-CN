@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4fb1fe8d34e02311ff2aa039a016d6a258d49891
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d2b4c5714e500107fc264c58e6a70f7beee84db7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875015"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636694"
 ---
 ```javascript
 
@@ -22,6 +22,6 @@ const publishedResource = {
 
 let res = await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
     .version('beta')
-    .post({publishedResource : publishedResource});
+    .post(publishedResource);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8e5fbe9bb42988962981337f9db73cdcf208267c
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 7208191a457f3fe13c6285f0ca8cb07cef9d62cb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461495"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636723"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const attachment = {
 
 let res = await client.api('/me/messages/AAMkpsDRVK/attachments')
     .version('beta')
-    .post({attachment : attachment});
+    .post(attachment);
 
 ```

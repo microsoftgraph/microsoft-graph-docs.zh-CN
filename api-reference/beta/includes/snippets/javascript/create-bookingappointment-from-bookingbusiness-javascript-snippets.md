@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7b2510873451ee1ce4ecdb240fc866a901726f61
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: bd2e0986f114c63bac6f8c0ce6bc51248ba0d5ef
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709672"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636583"
 ---
 ```javascript
 
@@ -124,6 +124,6 @@ const bookingAppointment = {
 
 let res = await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments')
     .version('beta')
-    .post({bookingAppointment : bookingAppointment});
+    .post(bookingAppointment);
 
 ```

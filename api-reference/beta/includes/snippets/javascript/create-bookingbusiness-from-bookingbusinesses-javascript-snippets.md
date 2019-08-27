@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b30d372de18860269bde1849a7a9f3f01d2abb3f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: bbe6926eee21b3d87f75805f63a81327237f756f
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709649"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636582"
 ---
 ```javascript
 
@@ -34,6 +34,6 @@ const bookingBusiness = {
 
 let res = await client.api('/bookingBusinesses')
     .version('beta')
-    .post({bookingBusiness : bookingBusiness});
+    .post(bookingBusiness);
 
 ```

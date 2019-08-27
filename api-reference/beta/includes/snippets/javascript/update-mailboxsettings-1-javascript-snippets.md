@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0c22dd0cd41dd1569254a243b7092aa1967f4c59
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: fcd74492d31bab0b1e6c968dc5be4a642b8d805f
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716245"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636602"
 ---
 ```javascript
 
@@ -32,6 +32,6 @@ const mailboxSettings = {
 
 let res = await client.api('/me/mailboxSettings')
     .version('beta')
-    .update({mailboxSettings : mailboxSettings});
+    .update(mailboxSettings);
 
 ```
