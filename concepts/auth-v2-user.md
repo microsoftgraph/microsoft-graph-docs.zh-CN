@@ -4,16 +4,16 @@ description: 若要代表用户使用 Microsoft Graph 读取和写入资源，�
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e72fcd846f433c0ceac48ffc6a01f3f61736415a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc4fa7792cf6913b1a7829c6865dd4a47802f7c7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599805"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633725"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
-若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。
+若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Microsoft 标识平台获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。本主题将介绍一个使用此流程的示例。
 
 ## <a name="authentication-and-authorization-steps"></a>身份验证和授权步骤
 
@@ -31,9 +31,9 @@ ms.locfileid: "33599805"
 
 若要配置应用以使用 OAuth 2.0 授权代码授予流程，将需要在注册应用时保存下列值：
 
-- 应用注册门户分配的应用程序 ID。
+- 应用注册门户分配的应用程序（客户端）ID。
 - 客户端（应用程序）密码，它是一个密码或是一个公钥/私钥对（证书）。 这不是本机应用的必需项。
-- 可以让应用接收来自 Azure AD 的响应的重定向 URL。
+- 可让应用接收来自 Azure AD 的响应的重定向 URL（或回复 URL）。
 
 要分步了解如何在 Azure 门户中配置应用，请参阅[注册应用](./auth-register-app-v2.md)。
 
@@ -73,9 +73,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### <a name="consent-experience"></a>同意体验
 
-此时，用户将需要输入其凭据才能向 Microsoft 进行身份验证。 此 v2.0 终结点还将确保用户已同意 `scope` 查询参数中指示的权限。  如果用户未同意上述任何权限，以及管理员之前未代表组织中的所有用户授予同意，则他们需要同意所需权限。  
+此时，用户将需要输入其凭据才能向 Microsoft 进行身份验证。 Microsoft 标识平台 v2.0 终结点还将确保用户已同意 `scope` 查询参数中指示的权限。  如果用户未同意上述任何权限，以及管理员之前未代表组织中的所有用户授予同意，则他们需要同意所需权限。  
 
-以下是为 Microsoft 帐户呈现的同意对话框示例：
+下面是为 Microsoft 帐户用户呈现的同意对话框示例。
 
 ![Microsoft 帐户的同意对话框](./images/v2-consumer-consent.png)
 
@@ -145,7 +145,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 | 参数 | 说明 |
 | --- | --- |
-| token_type |表示令牌类型值。Azure AD 唯一支持的类型是 Bearer |
+| token_type |表示令牌类型值。Azure AD 唯一支持的类型是 Bearer。 |
 | 范围 |此 access_token 适用的空格分隔的 Microsoft Graph 权限列表。 |
 | expires_in |访问令牌的有效期是多久（以秒为单位）。 |
 | access_token |请求的访问令牌。你的应用可以使用此令牌调用 Microsoft Graph。 |
@@ -153,7 +153,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. 使用访问令牌调用 Microsoft Graph
 
-一旦拥有访问令牌，可以通过将其包含在请求的 `Authorization` 标头中，用其调用 Microsoft Graph。以下请求可以获取已登录用户的个人资料。
+拥有访问令牌后，可通过将其包含在请求的 `Authorization` 标头中，用其调用 Microsoft Graph。以下请求可获取已登录用户的个人资料。
 
 ```
 GET https://graph.microsoft.com/v1.0/me 
@@ -162,7 +162,7 @@ Host: graph.microsoft.com
 
 ```
 
-成功的响应将与此类似（一些响应标头已被删除）：
+成功的响应将与下述内容类似（一些响应标头已被删除）。
 
 ```
 HTTP/1.1 200 OK
@@ -247,24 +247,24 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 你可以代表用户从以下类型的应用中调用 Microsoft Graph:
 
-- 本机/移动应用
-- Web 应用
-- 单页应用 (SPA)
-- 后端 Web API：例如，在本机应用等客户端应用在 Web API 后端实现功能的情况下。 通过 Microsoft 标识平台终结点，客户端应用和后端 Web API 必须具有相同的应用程序 ID。
+- [本机/移动应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Web 应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [单页应用 (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [后端 Web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)：例如，在本机应用等客户端应用在 Web API 后端实现功能的情况下。 通过 Microsoft 标识平台终结点，客户端应用和后端 Web API 必须具有相同的应用程序 ID。
 
-要详细了解 Microsoft 标识平台终结点支持的应用类型，请参阅[应用类型](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows)。
+要详细了解 Microsoft 标识平台终结点支持的应用方案，请参阅[应用方案和身份验证流程](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)。
 
 > **请注意**：Microsoft 标识平台终结点当前不支持通过独立的 Web API 调用 Microsoft Graph。 在此情况下，需要使用 Azure AD 终结点。
 
 若要详细了解如何代表用户从 Microsoft标识平台终结点获取访问 Microsoft Graph 的权限：
 
 - 有关指向不同类型应用的协议文档和入门文章的链接，请参阅 [Microsoft 标识平台终结点文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)。
-- 有关身份验证流的详细说明，请参阅 [v2.0 协议](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols)。
+- 要详细了解受支持的应用程序类型和身份验证流程，请参阅 [v2.0 应用类型](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types)。
 - 要详细了解为 Microsoft 标识平台推荐的 Microsoft 和第三方身份验证库及服务器中间件，请参阅 [Azure Active Directory v2.0 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。
 
 ## <a name="endpoint-considerations"></a>终结点注意事项
 
-Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在诸多区别。 使用 Azure AD 终结点时：
+Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在[诸多区别](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison)。 使用 Azure AD 终结点时：
 
 - 应用将需要为每个平台提供不同的应用程序 ID（客户端 ID）。
 - 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
@@ -274,5 +274,5 @@ Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终
 
 有关代表用户从 Azure AD 终结点获取对 Microsoft Graph 访问的详细信息：
 
-- 有关将 Azure AD 与不同类型的应用结合使用的信息，请参阅 [Azure Active Directory 开发人员指南](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**入门**链接。该指南包含概述主题、代码演练和 Azure AD 终结点支持的不同类型的应用的协议文档的链接。
-- 有关 Active Directory 身份验证库 (ADAL) 以及可与 Azure AD 终结点结合使用的服务器中间件的详细信息，请参阅 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。
+- 要了解如何将 Microsoft 标识平台终结点与不同类型的应用结合使用，请参阅 [Microsoft 标识平台开发人员文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**开始使用**链接。 该文档包含众多链接，可通过它们查看 Microsoft 标识平台终结点支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
+- 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)。

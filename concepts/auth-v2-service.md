@@ -4,18 +4,18 @@ description: 一些应用使用他们自己的标识（而不代表用户）调�
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a47720844196fef3c870d49bce328e750d65a11b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 106d1f79917427e68df4dcc738fb5720c3dd5ad8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599870"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633732"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 
 一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。在许多情况下，这些是在的服务器上运行的后台服务或守护程序，不存在登录用户。此类应用的一个示例是电子邮件存档服务，它可以在夜间保持清醒状态并运行。在某些情况下，具有登录用户的应用可能还需要以他们自己的标识调用 Microsoft Graph。例如，应用可能需要使用以下特定功能，该功能要求在组织中具有比登录用户的提升权限更多的权限。  
 
-使用它们自己的标识调用 Microsoft Graph 的应用使用 OAuth 2.0 客户端凭据授予流从 Azure AD 获取访问令牌。在本主题中，我们将展示配置服务和使用 OAuth 客户端凭据授予流获取访问令牌的基本步骤。
+使用它们自己的标识调用 Microsoft Graph 的应用使用 OAuth 2.0 [客户端凭据授予流](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)从 Azure AD 获取访问令牌。本主题介绍了配置服务和使用 OAuth 客户端凭据授予流获取访问令牌的基本步骤。
 
 ## <a name="authentication-and-authorization-steps"></a>身份验证和授权步骤
 
@@ -48,7 +48,7 @@ ms.locfileid: "33599870"
 
 若要在 [Azure 应用注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)为应用配置应用程序权限：在应用程序的 **API 权限**页面中，选择“**添加权限**”，选择“**Microsoft Graph**”，然后在“**应用程序权限**”下选择你的应用所需的权限。
 
-下面的屏幕快照显示了 Microsoft Graph 应用程序权限的“选择权限”**** 对话框。
+下面的屏幕快照显示了 Microsoft Graph 应用程序权限的“**选择权限**”对话框。
 
 ![Microsoft Graph 应用程序权限的“选择权限”对话框。](./images/auth-v2/v2-application-permissions.png)
 
@@ -203,24 +203,24 @@ Content-Length: 407
 
 以它们自己的标识调用 Microsoft Graph 的应用可分为两个类别：
 
-- 在服务器上运行的没有登录用户的后台服务（守护程序）。
+- 在服务器上运行的没有登录用户的[后台服务（守护程序）](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)。
 - 具有登录用户但仍以它们自己的标识调用 Microsoft Graph 的应用；例如，使用需要具有比登录用户所拥有的提升权限更多权限的功能。
 
 通过自有标识调用 Microsoft Graph 的应用使用 OAuth 2.0 客户端凭据授予流向 Azure AD 进行身份验证并获取令牌。 对于 Microsoft 标识平台终结点，可在下述资源中进一步查看此方案：
 
-- 有关还包含错误响应的客户端凭据授予流的更完整的处理，请参阅 [Azure Active Directory v2.0 和 OAuth 2.0 客户端凭据流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+- 有关还包含错误响应的客户端凭据授予流的更完整的处理，请参阅 [Azure Active Directory v2.0 和 OAuth 2.0 客户端凭据流](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)。
 - 有关从服务中调用 Microsoft Graph 的示例，请参阅 GitHub 上的 [v2.0 守护程序示例](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2)。
-- 要详细了解所推荐的 Microsoft 和第三方身份验证库，请参阅 [Azure Active Directory v2.0 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。
+- 要详细了解所推荐的 Microsoft 和第三方身份验证库，请参阅 [ 标识平台身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries)。
 
 ## <a name="endpoint-considerations"></a>终结点注意事项
 
-Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在诸多区别。 使用 Azure AD 终结点时：
+Microsoft 继续支持 Azure AD 终结点。 在使用 Microsoft 标识平台终结点和使用 Azure AD 终结点之间存在[诸多区别](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison)。 使用 Azure AD 终结点时：
 
 - 如果你的应用是多租户的，则必须在 [Azure 门户](https://portal.azure.com)中将其明确配置为“多租户”。
 - 没有管理员同意终结点 (`/adminconsent`)。 你的应用转而可在运行时期间请求管理员同意，方式是向授权请求添加 `prompt=admin_consent` 参数。 有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
 - 授权和令牌请求中的参数不相同。例如，Azure AD 终结点请求中没有 `scope` 参数；但是，`resource` 参数可用于指定为其请求的授权（用于管理员同意）或令牌的资源 (`resource=https://graph.microsoft.com`) 的 URI。
 
-对于 Azure AD 终结点，可以使用以下资源进一步了解此方案：
+可查看下述资源进一步了解此方案：
 
-- 有关客户端凭据授予流的概述、示例和详细处理的快速链接，请参阅[适用于开发人员的 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide) 的**入门节**中的**服务到服务**。
-- 对于 Azure AD 终结点，可以使用 Azure Active Directory 身份验证库 (ADAL) 从 Azure AD 中获取令牌。ADAL 可用于多个平台，包括 .NET、iOS、Android、JavaScript、Java 和 Node.js。有关 ADAL 和 Azure AD 终结点的 Microsoft 身份验证库的详细信息，请参阅 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。
+- 要了解如何将 Microsoft 标识平台与不同类型的应用结合使用，请参阅 [Microsoft 标识平台文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)中的**开始使用**链接。 该指南包含众多链接，可通过它们查看 Microsoft 标识平台支持的不同类型的应用的概述主题、快速入门、教程、代码示例和协议文档。
+- 要了解可与 Microsoft 标识平台终结点结合使用的 Microsoft 身份验证库 (MSAL) 和服务器中间件，请参阅 [Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。
