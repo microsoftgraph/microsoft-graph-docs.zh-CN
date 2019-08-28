@@ -1,22 +1,22 @@
 ---
 title: 获取 conversationMember
-description: 检索聊天成员。
-author: nkramer
+description: 检索聊天或频道成员。
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ff0ec4dfd39c4f5d2c54be567869d23f362eb87
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a1c4b522a828fcf08fe3b6385f6074aec4497b2a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417821"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633319"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[聊天](../resources/chat.md)中检索 [conversationMember](../resources/conversationmember.md)。
+检索[聊天](../resources/chat.md)或[频道](../resources/channel.md)中的 [conversationMember](../resources/conversationmember.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,15 +24,16 @@ ms.locfileid: "36417821"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|Chat.Read、Chat.ReadWrite|
+|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application |Chat.Read.All、Chat.ReadWrite.All |
+|应用程序| 对于**用户**或**聊天**资源：<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members/{id}
 GET /users/{id}/chats/{id}/members/{id}
+GET /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -55,7 +56,7 @@ GET /users/{id}/chats/{id}/members/{id}
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -81,10 +82,9 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 ---
 
+### <a name="response"></a>响应
 
-##### <a name="response"></a>响应
-
-下面是一个响应示例。 
+下面是一个响应示例。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
