@@ -7965,8 +7965,19 @@
                 - name: 预配日志
                   href: resources/provisioningobjectsummary.md
                   items:
-                    - name: 列出目录预配
+                    - name: 列表设置
                       href: api/provisioningobjectsummary-list.md
+            - name: 基于证书的身份验证配置
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: 列表
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: 获取
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: 创建
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: 删除
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: 合同
               href: resources/contract.md
               items:
@@ -8377,7 +8388,7 @@
                     - name: 托管的资源
                       href: resources/governanceresource.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/governanceresource-list.md
                         - name: 获取
                           href: api/governanceresource-get.md
