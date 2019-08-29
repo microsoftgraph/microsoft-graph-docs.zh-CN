@@ -5,16 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f9a77d6d386632df9f617f46af485220680ea1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd4edf3af292f8266b41f8deab8c06cae564f709
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030420"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667580"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
 [用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
+
+**事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/zh-CN/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -92,7 +94,17 @@ ms.locfileid: "36030420"
 |start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。 默认情况下，开始时间为 UTC 时间。|
 |subject|String|事件的主题行文本。|
 |type|eventType|事件类型。 可能的值包括 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读。|
-|webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
+|webLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果登录邮件，则 Outlook 网页面会在浏览器中打开事件。 否则，Outlook 网页面会提示你进行登录。<br/><br/>可以从 iFrame 中访问此 URL。|
+
+> [!NOTE]
+> **webLink** 属性指定了一个 URL，它仅在 Outlook 网页版早期版本中打开事件。 其 URL 的格式如下所示，其中 _{event-id}_ 是 **id** 属性的 URL 编码值：
+>
+> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+>
+> 要在 Outlook 网页版的当前版本中打开该 URL，请将该 URL 转换为以下格式：
+>
+> `https://outlook.office365.com/calendar/item/{event-id}`
+
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
