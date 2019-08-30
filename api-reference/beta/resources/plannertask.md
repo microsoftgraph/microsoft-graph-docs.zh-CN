@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1eb718daad405fb6aaed2f170747bc91dad47b76
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ced498b9bc56d8f21f96ede67d1a9a6501ddb21
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008997"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677174"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
@@ -46,6 +46,7 @@ ms.locfileid: "36008997"
 |id|String|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
+|priority|Int32|任务的优先级。 值的有效范围介于和`0` ( `10`含) 之间, 并且值越低, 优先级越`0`低 (具有最高`10`优先级, 优先级最低)。  目前, 规划者将`0`值`1`和 "紧急", `2` `3` `4` `5`以及 "重要"、、 `6` `7` 、、和 "低" 的`8` `9` `10`值解释为 "中"。  目前, 规划器将设置`1` "紧急"、 `3` "重要" `5` 、"中" 和`9` "低" 的值。|
 |planId|String|任务所属的计划 ID。|
 |previewType|String|这将设置显示在任务上的预览类型。 可取值为：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|
@@ -91,6 +92,7 @@ ms.locfileid: "36008997"
   "id": "String (identifier)",
   "orderHint": "String",
   "percentComplete": 1024,
+  "priority": 1024,
   "planId": "String",
   "previewType": "String",
   "referenceCount": 1024,
