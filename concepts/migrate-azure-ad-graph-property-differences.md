@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源 (实体) 与 Microsoft Graph 之间
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb1e08410cd8345e1a8e531b62f0bdd391861164
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 75a164925171d49d930492ba44029deb0d73e49d
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450618"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667600"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -193,14 +193,27 @@ Azure AD Graph ServiceEndpoint 资源已重命名为 Microsoft Graph 中的终�
 
 |Azure AD Graph <br>(v 1.6) 属性 |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **companyLastDirSyncTime** | &nbsp;-beta&nbsp;**onPremisesLastSyncDateTime** <br>&nbsp; **** v1.0 onPremisesLastSyncDateTime &nbsp; - |  |
+| **companyLastDirSyncTime** | &nbsp;-beta&nbsp;**onPremisesLastSyncDateTime** <br> &nbsp;**** v1.0 onPremisesLastSyncDateTime&nbsp;- |  |
 | **dirSyncEnabled** | &nbsp;-beta&nbsp;**onPremisesSyncEnabled** <br> &nbsp; **** v1.0 onPremisesSyncEnabled &nbsp; - |  |
-| **provisioningErrors** | &nbsp; - beta &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已被弃用。|
-| **telephoneNumber** | &nbsp;-beta&nbsp;**businessPhones** <br> &nbsp; **** v1.0 businessPhones &nbsp; - |  |
+| **provisioningErrors** | &nbsp;-beta&nbsp;_不可用_ <br> v1.0 1.0&nbsp;-&nbsp;_不可用_ | 此属性及其信息已被弃用。|
+| **telephoneNumber** | &nbsp;-beta&nbsp;**businessPhones** <br> &nbsp;**** v1.0 businessPhones&nbsp;- |  |
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>TrustedCasForPasswordlessAuth 属性差异
 
-Azure AD Graph TrustedCasForPasswordlessAuth 资源已重命名为 Microsoft Graph 中的 certificateBasedAuthConfiguration。  没有属性差异。
+Azure AD Graph TrustedCasForPasswordlessAuth 资源已重命名为[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta), 并且仅在 Microsoft Graph beta endpoing 中可用。 没有属性差异;但是, **certificateAuthorities**属性使用的**certificateAuthority**资源类型存在差异。
+
+### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
+
+将 Azure AD Graph CertificateAuthorityInformation 重命名为 Microsoft Graph 中的**certificateAuthority** 。 属性差异如下所示。
+
+|Azure AD Graph <br>(v 1.6) 属性 |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| **authorityType** | &nbsp;-beta&nbsp;**isRootAuthority**<br> v1.0 尚_不可用_ &nbsp; - &nbsp; | 此属性的类型也已更改为布尔值。 之前, 必须将此属性设置为 "RootAuthority" 或 "IntermediateAuthority"。 将 new 属性设置为**true**等效于 "RootAuthority"。 |
+| **crlDistributionPoint** | &nbsp;-beta&nbsp;**certificateRevocationListUrl** <br> v1.0 尚_不可用_&nbsp;-&nbsp; | |
+| **deltaCrlDistributionPoint** | &nbsp;-beta&nbsp;**deltaCertificateRevocationListUrl** <br> v1.0 尚_不可用_&nbsp;-&nbsp; | |
+| **trustedCertificate** | 试用&nbsp;-&nbsp;版**证书** <br> v1.0 尚_不可用_&nbsp;-&nbsp; | |
+| **trustedIssuer** | &nbsp;-beta&nbsp;**颁发者**<br> v1.0 尚_不可用_&nbsp;-&nbsp; | |
+| **trustedIssuerSki** | &nbsp;-beta&nbsp;**issuerSki**<br> v1.0 尚_不可用_ &nbsp; - &nbsp; | |
 
 ## <a name="next-steps"></a>后续步骤
 
