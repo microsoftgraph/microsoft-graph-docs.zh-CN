@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c6239cc91eb10ecec5d2e037ffa9364e55646e
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: cdcb7f10d068372c167f65a7868672a7cb669107
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633676"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677125"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "36633676"
 |[获取频道](../api/channel-get.md) | [频道](channel.md) | 读取频道的属性和关系。|
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
+|[获取消息 Delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的增量消息。 |
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
 |[列出频道成员](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) 集合| 列出频道的成员。 |
 |[获取频道成员](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| 获取频道的成员。 |
@@ -43,7 +44,7 @@ ms.locfileid: "36633676"
 
 ## <a name="properties"></a>属性
 
-| 属性    | 类型 |说明|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|String|频道的可选文本描述。|
 |displayName|String|在 Microsoft Teams 中呈现在用户面前的频道名称。|
@@ -55,7 +56,7 @@ ms.locfileid: "36633676"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   |说明|
+| 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为空。 此 API 目前仅支持读取消息，但最终也会支持写入消息。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|

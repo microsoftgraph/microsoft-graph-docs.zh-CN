@@ -3,12 +3,12 @@ title: 使用增量查询跟踪 Microsoft Graph 数据更改
 description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 6a7dee807c35bb790d122941f381b8541054e87f
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820799"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677111"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -98,8 +98,9 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 | 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数                                             |
 | 学校（预览版）                                              | [学校](/graph/api/resources/educationschool?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/educationschool-delta?view=graph-rest-beta) 函数                  |
 | 服务主体（预览版）                                   | [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 资源（预览版）的 [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) 函数      |
-| 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数                                                      |
-| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) 资源所有段的 [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) 函数（预览版） |
+| 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数 |
+| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) 资源所有段的 [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) 函数（预览版）|
+| 频道中的 chatMessages（预览版）                            | [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 的 [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) 函数 |
 
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。 为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。 若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta?view=graph-rest-1.0)。
 
