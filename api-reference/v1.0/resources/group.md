@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0a8a4cb0a756b302cda792b0c8d32cef846a5d1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b9b13f10ed63de8f453355113cdc42da69139a3
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029314"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699119"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -130,7 +130,7 @@ ms.locfileid: "36029314"
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/group-renew.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
 |securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 $filter。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 $select 上返回。 |
-|visibility|String| 指定 Office 365 组的可见性。 可能的值为：`private`、`public` 或 `hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定 Office 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
 
 
 ### <a name="group-visibility-options"></a>组可见性选项
@@ -139,9 +139,9 @@ ms.locfileid: "36029314"
  
 |值|说明|
 |:----|-----------|
-| `public` | 任何人均可在不需要所有者许可的情况下加入组。<br>任何人均可查看组的内容。|
-| `private` | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。|
-| `hiddenmembership` | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。<br>非成员无法查看组的成员。<br>管理员（全局、公司、用户和支持人员）可以查看组的成员资格。<br>该组显示在全局通讯簿 (GAL) 中。|
+| 公共 | 任何人均可在不需要所有者许可的情况下加入组。<br>任何人均可查看组的内容。|
+| 私人 | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。|
+| Hiddenmembership | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。<br>非成员无法查看组的成员。<br>管理员（全局、公司、用户和支持人员）可以查看组的成员资格。<br>该组显示在全局通讯簿 (GAL) 中。|
 
 
 ## <a name="relationships"></a>关系

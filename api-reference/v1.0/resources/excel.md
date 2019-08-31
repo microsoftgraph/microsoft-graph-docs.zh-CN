@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 44d24c2757d690542a5afdcc7496d92551502aea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030399"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699126"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -93,7 +93,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。 在这种情况下，可以选择新建一个会话，然后继续。 另一种方法是定期刷新会话，以使会话处于活动状态。 通常，如果永久会话处于不活动状态的时间达到 7 分钟左右，则会话会过期。 如果非永久会话处于不活动状态的时间达到 5 分钟左右，则会过期。 
+>注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。 在这种情况下，可以选择新建一个会话，然后继续。 另一种方法是定期刷新会话，以使会话处于活动状态。 通常，如果永久会话处于不活动状态的时间达到 5 分钟左右，则会话会过期。 如果非永久会话处于不活动状态的时间达到 7 分钟左右，则会过期。 
 
 ## <a name="common-excel-scenarios"></a>常见的 Excel 方案
 
