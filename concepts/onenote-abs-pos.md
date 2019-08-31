@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
 ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/24/2019
 ms.locfileid: "32560928"
