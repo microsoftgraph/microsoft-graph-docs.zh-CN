@@ -384,8 +384,7 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>另请参阅
 
-- 
-  [可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)
+- [可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)
 - [Teams 零售模板入门](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Teams 医疗保健模板入门](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [创建包含团队的组](/graph/teams-create-group-and-team)

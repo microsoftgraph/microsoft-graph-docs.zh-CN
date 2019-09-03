@@ -95,8 +95,7 @@ ms.locfileid: "32570353"
 
 若要查找 ID，请执行以下操作：
 
-* 
-  **Windows 通知服务** - 请参阅[注册应用和接收云服务的凭据](https://docs.microsoft.com/zh-CN/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)和[应用程序注册门户](https://apps.dev.microsoft.com)。
+* **Windows 通知服务** - 请参阅[注册应用和接收云服务的凭据](https://docs.microsoft.com/zh-CN/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)和[应用程序注册门户](https://apps.dev.microsoft.com)。
 * **Apple 推送通知服务** - 请参阅 [APNs 概述](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html)。
 * **Google Cloud Messaging** - 请参阅 [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)。
 

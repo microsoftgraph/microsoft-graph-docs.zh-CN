@@ -146,18 +146,12 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 
 |**应用程序类型**|**身份验证库**|
 |------------------------|----------------------------|
-|
-  [桌面应用 - iOS](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework：适用于 iOS 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|
-  [桌面应用 - Android](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft 身份验证库 (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|
-  [桌面应用 - .Net](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft 身份验证库 (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|
-  [Web 应用 - JavaScript SPA](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[适用于 JavaScript 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|
-  [Web 应用 - .NET Web 服务器](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookie、SystemWeb|
-|
-  [Web 应用 - NodeJS Web 应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[桌面应用 - iOS](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework：适用于 iOS 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[桌面应用 - Android](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft 身份验证库 (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[桌面应用 - .Net](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft 身份验证库 (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web 应用 - JavaScript SPA](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[适用于 JavaScript 的 Microsoft 身份验证库预览版](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web 应用 - .NET Web 服务器](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookie、SystemWeb|
+|[Web 应用 - NodeJS Web 应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 对于不使用任何现有库的应用程序，请参阅[代表用户获取访问权限](auth-v2-user.md)。
 

@@ -68,20 +68,14 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 
 |应用类型|方案描述|
 |:-------|:-------------------|
-| 
-  [选项卡](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview) |在 Microsoft Teams 中呈现内容。|
-| 
-  [机器人](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/bots/bots-overview) |帮助用户通过对话完成任务。|
-| 
-  [连接器](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/connectors/connectors) |将外部服务中的更新发布到渠道。|
-| 
-  [可操作消息](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/cards/cards) |将增强交互添加到连接器卡。|
-| 
-  [消息扩展](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/messaging-extensions) |允许用户查询和共享对话中的信息。|
+| [选项卡](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview) |在 Microsoft Teams 中呈现内容。|
+| [机器人](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/bots/bots-overview) |帮助用户通过对话完成任务。|
+| [连接器](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/connectors/connectors) |将外部服务中的更新发布到渠道。|
+| [可操作消息](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/cards/cards) |将增强交互添加到连接器卡。|
+| [消息扩展](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/messaging-extensions) |允许用户查询和共享对话中的信息。|
 |网站| 在网页中呈现增强的内容。|
 |服务|通过 Web 服务使用 Microsoft Graph 数据增强客户端应用程序。|
-| 
-  [活动源](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
+| [活动源](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/activity-feed)|通过源通知吸引用户。|
 | [通话和联机会议（预览）](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |创建包含机器人的 Microsoft Teams 应用可以启动和参与音频/视频通话、基于互动语音响应 (IVR) 流路由/传输通话和参与联机会议。|
 
 ## <a name="api-reference"></a>API 参考

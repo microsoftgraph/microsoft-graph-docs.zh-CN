@@ -13,7 +13,7 @@ ms.locfileid: "35620176"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>从云解决方案提供商应用程序中调用 Microsoft Graph
 
-> **注意：** 本主题**仅**适用于 Microsoft 云解决方案提供商 (CSP) 应用程序开发者。[Microsoft 云解决方案提供商 (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services 并将其转售给客户。
+> **注意：** 本主题**仅**适用于 Microsoft 云解决方案提供商 (CSP) 应用程序开发者。[Microsoft 云解决方案提供商 (CSP)](https://partner.microsoft.com/zh-CN/cloud-solution-provider) 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services 并将其转售给客户。
 
 本主题介绍如何使应用程序使用[授权代码授予流](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-code)或[服务到服务客户端凭据流](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)，通过 Microsoft Graph 访问合作伙伴托管的客户数据。
 
@@ -78,15 +78,13 @@ CSP 计划使 Microsoft 的合作伙伴可以管理 Microsoft Online Services（
 
 除了代理必须使用其合作伙伴帐户登录之外，这是标准的[授权代码授予流](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-code)。若要查看其工作原理，请假设你的合作伙伴租户是 *partner.com*（这是代理的主租户），并将你的一位客户假设为 *customer.com*：
 
-1. 
-  [获取授权代码：](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code)在我们的示例 ```customer.com``` 中，对于目标租户，你的应用会对 ```/authorize``` 终结点发出请求，且必须使用**客户租户**你的代理将仍然使用其 ```username@partner.com``` 帐户登录。
+1. [获取授权代码：](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code)在我们的示例 ```customer.com``` 中，对于目标租户，你的应用会对 ```/authorize``` 终结点发出请求，且必须使用**客户租户**你的代理将仍然使用其 ```username@partner.com``` 帐户登录。
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. 
-  [使用授权代码获取访问令牌：](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token)在我们的示例 ```customer.com``` 中，当对 ```token``` 终结点发出请求时，你的应用必须将**客户租户**用作目标租户：
+2. [使用授权代码获取访问令牌：](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token)在我们的示例 ```customer.com``` 中，当对 ```token``` 终结点发出请求时，你的应用必须将**客户租户**用作目标租户：
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
@@ -106,7 +104,7 @@ CSP 客户服务当前仅限于单个区域。合作伙伴托管的应用程序�
 
 ## <a name="calling-microsoft-graph-immediately-after-customer-creation"></a>创建客户后立即调用 Microsoft Graph
 
-使用[合作伙伴中心 API](https://partnercenter.microsoft.com/en-us/partner/developer) 创建新客户时会创建新的客户租户。此外，还会创建合作伙伴关系，这使你成为此新客户租户的在案合作伙伴。这种伙伴关系可能需要最多 3 分钟传播给新客户租户。如果应用在创建后直接调用 Microsoft Graph，应用可能会接收拒绝访问错误。当现有客户接受你的邀请时可能会遇到类似延迟。这是因为预先同意依赖于客户租户中现已存在的合作伙伴关系。
+使用[合作伙伴中心 API](https://partnercenter.microsoft.com/zh-CN/partner/developer) 创建新客户时会创建新的客户租户。此外，还会创建合作伙伴关系，这使你成为此新客户租户的在案合作伙伴。这种伙伴关系可能需要最多 3 分钟传播给新客户租户。如果应用在创建后直接调用 Microsoft Graph，应用可能会接收拒绝访问错误。当现有客户接受你的邀请时可能会遇到类似延迟。这是因为预先同意依赖于客户租户中现已存在的合作伙伴关系。
 
 为避免此问题，在调用 Azure AD 以获取令牌（从而调用 Microsoft Graph）之前，我们建议你的合作伙伴应用应在创建客户后等待**三分钟**。 这应该涵盖了大多数情况。 但是，如果等待三分钟后仍收到授权错误，请再等待 60 秒后重试。
 

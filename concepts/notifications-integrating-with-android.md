@@ -377,7 +377,6 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>另请参阅
 
-- 
-  [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-android)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-android)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适用于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 
