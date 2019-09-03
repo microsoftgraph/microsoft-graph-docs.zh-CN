@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633711"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699230"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,12 +17,6 @@ ms.locfileid: "36633711"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="august-2019"></a>2019 年 8 月
-
-### <a name="education"></a>教育版
-
-| 更改类型 | 版本 | 说明                                                                                               |
-| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
-| 添加    | beta    | 向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加了新的属性 **grade**。 |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -61,16 +55,19 @@ ms.locfileid: "36633711"
 |添加项|beta|向 [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta) 枚举类型添加了 **setDeviceName** 成员|
 |添加项|beta|向 [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) 枚举类型添加了 **error** 和 **pending** 成员|
 |添加项|beta|向 [weeklySchedule](/graph/api/resources/intune-deviceconfig-weeklyschedule?view=graph-rest-beta) 枚举类型添加了 **noScheduledScan** 成员|
+|添加项|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement) 实体添加了 **derivedCredentials** 导航属性|
 
 ### <a name="education"></a>教育
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加了新的属性 **grade**。|
 | 添加项 | beta | 添加了新的 [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) 资源。|
 | 添加项 | beta | 添加了用于管理 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 和 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) 上的 [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) 资源的 API。|
 | 添加项 | beta | 添加了新的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源。|
 | 添加项 | beta | 添加了用于管理 [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta) 上的 [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) 资源的 API。|
 | 添加项 | beta | 添加了新的 [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) 资源。|
+| 添加项    | beta    | 向 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) 添加了新的属性 **grade**。 |
 
 ### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
 
@@ -82,12 +79,17 @@ ms.locfileid: "36633711"
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
+| 更改 | Beta | 更改了[列出 provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 命名空间。|
 | 添加项 | Beta | 添加了 [roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta) 资源，可通过它访问 RBAC 提供商提供的角色定义和角色分配。 |
 | 添加项 | Beta | 添加了 [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) 资源，它表示列出可执行的操作的权限列表。 |
 | 添加项 | Beta | 添加了 [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) 资源，它授予了访问资源的访问权限。 |
 | 添加项 | Beta | 添加了以下操作来支持 unifiedRoleDefinition 资源： <br><ul><li>[列出 unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - 获取面向提供商的 unifiedRoleDefinition 对象列表。</li><li>[创建 unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 创建新的 unifiedRoleDefinition 对象。</li><li>[获取 unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 检索统一角色定义对象的属性和关系。</li><li>[更新 unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - 更新 unifiedRoleDefinition 对象的属性。</li><li>[删除 unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - 删除 unifiedRoleDefinition 对象。</li></ul> |
 | 添加项 | Beta | 添加了以下操作来支持 unifiedRoleAssignment 资源： <br><ul><li>[列出 unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - 获取面向提供商的 unifiedRoleAssignment 对象列表。</li><li>[创建 unifiedRoleAssignment]() -创建新的 unifiedRoleAssignment 对象。</li><li>[获取 unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - 检索 unifiedRoleAssignment 对象的属性和关系。</li><li>[删除 unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) -删除 unifiedRoleAssignment 对象。 |
 | Addition | Beta | 添加了[列出 accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) 操作。 |
+|Addition  | Beta | 添加了[用于读取组织联系人](permissions-reference.md#organizational-contact-permissions)的委派和应用程序权限：OrgContact.Read.All |
+| Addition | beta | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)。 |
+| 添加项 | beta | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)。 |
+| Addition | beta | 在 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
 
 ### <a name="reports"></a>报告
 
@@ -107,14 +109,21 @@ ms.locfileid: "36633711"
 | 添加项 | Beta | 引入了新的工作区智能[设置 API](/graph/api/resources/settings?view=graph-rest-beta)，表示用户使用[分析 API](/graph/api/resources/useranalytics?view=graph-rest-beta) 所需的当前设置。 |
 | 添加项 | Beta | 引入了新的 [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) 资源类型及其派生的以下新资源类型：[callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta)、[chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta)、[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta)、[focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) 和 [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta)。 |
 
+### <a name="tasks-and-plans-planner"></a>任务和计划（规划器）
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|Beta|向 [plannerTask](/graph/api/resources/plannertask?view=graph-rest-beta) 实体添加了 **priority** 属性。|
+
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta | 添加了通过[频道消息 delta 查询 API](/graph/api/channel-messages-delta?view=graph-rest-beta) 从频道提取增量消息的功能。|
 | 添加项 | Beta | 添加了[将成员添加到专用频道](/graph/api/conversationmember-add?view=graph-rest-beta)的功能。 |
 | 添加项 | Beta | 添加了[从专用频道中删除成员](/graph/api/conversationmember-delete?view=graph-rest-beta)的功能。 |
 | 添加项 | Beta | 添加了[更新专用频道中成员的角色](/graph/api/conversationmember-update?view=graph-rest-beta)这一功能。 |
-| 新增 | Beta | 向[频道]](/graph/api/resources/channel?view=graph-rest-beta)资源添加了 `membershipType` 属性来显示特定频道是专用频道还是标准频道。 |
+| 新增 | Beta | 向[频道](/graph/api/resources/channel?view=graph-rest-beta)资源添加了 `membershipType` 属性来显示特定频道是专用频道还是标准频道。 |
 
 ## <a name="july-2019"></a>2019 年 7 月
 
@@ -2471,7 +2480,7 @@ ms.locfileid: "36633711"
 | 添加项        | v1.0 和 Beta | 向 **site** 添加了 [onenote](/graph/api/resources/onenote?view=graph-rest-1.0) 导航属性。 |
 | 添加项        | Beta          | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](/graph/api/notebook-copynotebook?view=graph-rest-1.0)。 |
 
-### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能|人员
+### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能 | 人员
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2702,7 +2711,7 @@ ms.locfileid: "36633711"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0          | 新资源 [schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0) 和用于管理以下资源的扩展定义的 CRUD 方法：[contact](/graph/api/resources/contact?view=graph-rest-1.0)、[device](/graph/api/resources/device?view=graph-rest-1.0)、[event](/graph/api/resources/event?view=graph-rest-1.0)、[group](/graph/api/resources/group?view=graph-rest-1.0)、[message](/graph/api/resources/message?view=graph-rest-1.0)、[organization](/graph/api/resources/organization?view=graph-rest-1.0)、[post](/graph/api/resources/post?view=graph-rest-1.0)、[user](/graph/api/resources/user?view=graph-rest-1.0)。请注意，对 [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) 的支持仍和以前一样仅限于测试版本。 |
 | 添加项        | v1.0          | 下列资源中的现有 POST、GET 和 PATCH方法 - [contact](/graph/api/resources/contact?view=graph-rest-1.0)、[device](/graph/api/resources/device?view=graph-rest-1.0)、[event](/graph/api/resources/event?view=graph-rest-1.0)、[group](/graph/api/resources/group?view=graph-rest-1.0)、[message](/graph/api/resources/message?view=graph-rest-1.0)、[organization](/graph/api/resources/organization?view=graph-rest-1.0)、[post](/graph/api/resources/post?view=graph-rest-1.0)、[user](/graph/api/resources/user?view=graph-rest-1.0) - 现在支持添加、获取、更新或删除作为架构扩展存储在相应资源实例中的自定义数据。 |
-| 添加项        | v1.0 和 beta | 现在，你可以使用 `$filter` 来查找具有与特定扩展属性值相匹配的属性的资源实例，如扩展名。有关详细信息，请参阅此[示例](extensibility-schema-groups.md#5-get-a-group-and-its-extension-data)。 |
+| Addition        | v1.0 和 beta | 现在，你可以使用 `$filter` 来查找具有与特定扩展属性值相匹配的属性的资源实例，如扩展名。有关详细信息，请参阅此[示例](extensibility-schema-groups.md#5-get-a-group-and-its-extension-data)。 |
 | 更改          | v1.0 和 beta | [删除架构扩展定义](/graph/api/schemaextension-delete?view=graph-rest-1.0)不再会影响访问基于此定义添加的自定义数据。 |
 | 更改          | v1.0 和 beta | 现在可以将架构扩展复杂类型设为 null，以便将架构扩展从资源实例中删除。 |
 
@@ -3298,7 +3307,7 @@ ms.locfileid: "36633711"
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | Microsoft Graph 上的 Excel REST API 已公开发布。现在可以使用 Office 365 中的 Excel 工作簿构建广泛深入的集成。有关详细信息，请参阅[在 Microsoft Graph 上使用新的 Excel REST API 增强你的应用](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/)博客文章。 |
 
-### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能|人员
+### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能 | 人员
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
