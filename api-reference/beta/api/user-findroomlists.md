@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 401bcdd1b9ad928dec7cf0a0aa3868a5e66a8f61
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 19b240ee27ce7d8c55d3a63dc12982c73a46e524
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421160"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722067"
 ---
 # <a name="user-findroomlists"></a>用户：findRoomLists
 
@@ -67,7 +67,7 @@ GET /users/{id}/findRoomLists
   "blockType": "request",
   "name": "user_get_room_lists"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

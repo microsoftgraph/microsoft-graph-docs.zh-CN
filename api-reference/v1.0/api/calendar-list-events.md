@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8be01d9ca695c5aaff4c9bb05987955a8ef9fc6b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fe16c1c586277967e8de41a67a92f851dc4e1b7d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369162"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726513"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
   "blockType": "request",
   "name": "calendar_get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/events
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

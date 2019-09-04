@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 779eebd5cf283e237e25d7e9fb0b64e1cc8ed1eb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ee0bd3ed59ceb11c3963ac2f64f043ecf8958531
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408328"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719057"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -55,7 +55,7 @@ GET /applications/{id}
   "blockType": "request",
   "name": "get_application"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e19a6fa684b22d58e0ab00d4ec7a58a953bc7ffe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 65afd6b7ff25d4d3659d193435884c949a916776
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337250"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720814"
 ---
 # <a name="list-owners"></a>列出所有者
 检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
@@ -53,7 +53,7 @@ GET /groups/{id}/owners
   "blockType": "request",
   "name": "group_get_owners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

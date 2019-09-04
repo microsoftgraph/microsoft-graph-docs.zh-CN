@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索可用于目标用户、群组或站点的 Drive 资源列表。
 doc_type: apiPageType
-ms.openlocfilehash: 19497085f546d4946b7f4654e992d92e7ec68bcc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 33df5c00844a625976e07fca7bdcee57ad29aea7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375203"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721185"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 
@@ -38,7 +38,7 @@ ms.locfileid: "36375203"
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -68,7 +68,7 @@ GET /groups/{groupId}/drives
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -96,7 +96,7 @@ GET /sites/{siteId}/drives
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /users/{userId}/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -124,7 +124,7 @@ GET /users/{userId}/drives
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drives
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

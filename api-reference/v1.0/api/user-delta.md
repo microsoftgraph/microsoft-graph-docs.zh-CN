@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d3794d2917ce2cb85f3ed5a552c26bb63c2dd04a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 23cdad3959502c71aac1edf19cfb2e8d6342c2db
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373684"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727570"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -113,7 +113,7 @@ GET /users/delta
   "name": "user_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -186,7 +186,7 @@ Content-type: application/json
   "name": "user_delta_select"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -248,7 +248,7 @@ Content-type: application/json
   "name": "user_delta_minimal"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 Prefer: return=minimal
 ```

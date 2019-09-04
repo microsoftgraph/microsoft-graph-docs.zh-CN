@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f69f61bf6f8f5081c81d2806301cf386ad58a5e8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ec663765c572230ad07e469b760c14b9dfd7c2e5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374769"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728690"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -67,7 +67,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
   "sampleKeys": ["AAMkADhMGAAA="],
   "name": "get_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -172,7 +172,7 @@ Content-type: application/json
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
   "name": "get_message_headers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

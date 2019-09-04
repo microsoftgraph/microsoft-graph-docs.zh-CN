@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 52f83a0e4ab5ccaf046d6acbabce18e639a7605e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 51fbd91d521baef806ad91840e7971bc59f03bd0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418101"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719813"
 ---
 # <a name="list-chat-messages"></a>列出聊天消息
 
@@ -69,7 +69,7 @@ GET /chats/{id}/messages
   "blockType": "request",
   "name": "get_chat_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

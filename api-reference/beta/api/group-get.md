@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef3c878319e0b12bcf4b3c4a7c2efa9eac6f85c7
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6d2219133e34cd8b3f25eb0c82855e067122e1f3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420316"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721633"
 ---
 # <a name="get-group"></a>获取组
 
@@ -66,7 +66,7 @@ GET /groups/{id}
   "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -147,7 +147,7 @@ Content-type: application/json
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group_non_default"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

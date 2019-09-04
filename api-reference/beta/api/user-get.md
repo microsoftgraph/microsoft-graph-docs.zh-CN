@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48d3ca98e01c8f00afd7dff02be902a25c7ba773
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1afcd48dcc1f85de696264e1c433d79052391ac1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421104"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722046"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}
   "blockType": "request",
   "name": "get_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

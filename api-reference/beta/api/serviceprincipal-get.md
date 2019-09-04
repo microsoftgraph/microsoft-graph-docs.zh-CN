@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6cc20531d7fb7cf78359d65a748f3ab933a03a26
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: db48b38404de7e6b1cdfa2c7ddce89e33d6c935e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410288"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722459"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
@@ -55,7 +55,7 @@ GET /servicePrincipals/{id}
   "blockType": "request",
   "name": "get_serviceprincipal"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

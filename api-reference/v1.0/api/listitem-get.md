@@ -6,12 +6,12 @@ description: 返回 SharePoint 列表中某个项的元数据。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 458b8e71f8561c6a96177bac38c8ed450110ee24
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 33e277bde234ddc3f470c17d2519f43dc4f4803b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370670"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728795"
 ---
 # <a name="get-listitem"></a>获取 listItem
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

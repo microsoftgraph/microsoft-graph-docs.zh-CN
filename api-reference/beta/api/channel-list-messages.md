@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8fa122672f5ff268326537b94d2995323487fa29
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3eaf72c234dddc8531e9ba427e5bf1c9042b2f58
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418738"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720009"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -70,7 +70,7 @@ GET /teams/{id}/channels/{id}/messages
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"],
   "name": "get_channel_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

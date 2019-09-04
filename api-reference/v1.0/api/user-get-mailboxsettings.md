@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d97fdfed4ce30d4700f78fda82d8be2e5a4481b2
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: cff51b17348613efda4321cd537c51c0a1b81b6f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396861"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729117"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -83,7 +83,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
   "blockType": "request",
   "name": "get_mailboxsettings_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -162,7 +162,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_mailboxsettings_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

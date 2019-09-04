@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: b35cd4f286a8cbdeae98fe38a51ed8c5ede69d58
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7e20a704e8a8e3ed70c895bc71727132d2ed989c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375100"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721171"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -81,7 +81,7 @@ GET /users/{userId}/drive/root/delta
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -149,7 +149,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -225,7 +225,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

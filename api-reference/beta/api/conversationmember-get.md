@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1c4b522a828fcf08fe3b6385f6074aec4497b2a
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c2c4a0ef03b6c190c53374516704007cc6757e1c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633319"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718343"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -65,7 +65,7 @@ GET /teams/{id}/channels/{id}/members/{id}
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
