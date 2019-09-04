@@ -5,28 +5,28 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 26360716433c7276118738564bca8b95f1d7cd59
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8470bd699e19172a5cebb8af60f741f17caf15af
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320541"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729439"
 ---
-# <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a><span data-ttu-id="fb437-103">reportRoot: getTeamsDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="fb437-103">reportRoot: getTeamsDeviceUsageDistributionUserCounts</span></span>
+# <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a><span data-ttu-id="81ae6-103">reportRoot: getTeamsDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="81ae6-103">reportRoot: getTeamsDeviceUsageDistributionUserCounts</span></span>
 
-<span data-ttu-id="fb437-104">在选定的时间段内按设备类型获取 Microsoft Teams 唯一用户数。</span><span class="sxs-lookup"><span data-stu-id="fb437-104">Get the number of Microsoft Teams unique users by device type over the selected time period.</span></span>
+<span data-ttu-id="81ae6-104">在选定的时间段内按设备类型获取 Microsoft Teams 唯一用户数。</span><span class="sxs-lookup"><span data-stu-id="81ae6-104">Get the number of Microsoft Teams unique users by device type over the selected time period.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fb437-105">权限</span><span class="sxs-lookup"><span data-stu-id="fb437-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="81ae6-105">权限</span><span class="sxs-lookup"><span data-stu-id="81ae6-105">Permissions</span></span>
 
-<span data-ttu-id="fb437-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fb437-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="81ae6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="81ae6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fb437-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="fb437-108">Permission type</span></span>                        | <span data-ttu-id="fb437-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fb437-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="81ae6-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="81ae6-108">Permission type</span></span>                        | <span data-ttu-id="81ae6-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="81ae6-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="fb437-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fb437-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="fb437-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb437-111">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="fb437-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fb437-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb437-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="fb437-113">Not supported.</span></span>                           |
-| <span data-ttu-id="fb437-114">应用</span><span class="sxs-lookup"><span data-stu-id="fb437-114">Application</span></span>                            | <span data-ttu-id="fb437-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb437-115">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="81ae6-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="81ae6-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="81ae6-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="81ae6-111">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="81ae6-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="81ae6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81ae6-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="81ae6-113">Not supported.</span></span>                           |
+| <span data-ttu-id="81ae6-114">应用</span><span class="sxs-lookup"><span data-stu-id="81ae6-114">Application</span></span>                            | <span data-ttu-id="81ae6-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="81ae6-115">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="fb437-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fb437-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="81ae6-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="81ae6-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,75 +34,75 @@ ms.locfileid: "36320541"
 GET /reports/getTeamsDeviceUsageDistributionUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="fb437-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="fb437-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="81ae6-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="81ae6-117">Function parameters</span></span>
 
-<span data-ttu-id="fb437-118">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="fb437-118">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="81ae6-118">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="81ae6-118">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="fb437-119">参数</span><span class="sxs-lookup"><span data-stu-id="fb437-119">Parameter</span></span> | <span data-ttu-id="fb437-120">类型</span><span class="sxs-lookup"><span data-stu-id="fb437-120">Type</span></span>   | <span data-ttu-id="fb437-121">说明</span><span class="sxs-lookup"><span data-stu-id="fb437-121">Description</span></span>                              |
+| <span data-ttu-id="81ae6-119">参数</span><span class="sxs-lookup"><span data-stu-id="81ae6-119">Parameter</span></span> | <span data-ttu-id="81ae6-120">类型</span><span class="sxs-lookup"><span data-stu-id="81ae6-120">Type</span></span>   | <span data-ttu-id="81ae6-121">说明</span><span class="sxs-lookup"><span data-stu-id="81ae6-121">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="fb437-122">period</span><span class="sxs-lookup"><span data-stu-id="fb437-122">period</span></span>    | <span data-ttu-id="fb437-123">string</span><span class="sxs-lookup"><span data-stu-id="fb437-123">string</span></span> | <span data-ttu-id="fb437-124">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fb437-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fb437-125">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="fb437-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fb437-126">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="fb437-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="fb437-127">必需。</span><span class="sxs-lookup"><span data-stu-id="fb437-127">Required.</span></span> |
+| <span data-ttu-id="81ae6-122">period</span><span class="sxs-lookup"><span data-stu-id="81ae6-122">period</span></span>    | <span data-ttu-id="81ae6-123">string</span><span class="sxs-lookup"><span data-stu-id="81ae6-123">string</span></span> | <span data-ttu-id="81ae6-124">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="81ae6-124">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="81ae6-125">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="81ae6-125">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="81ae6-126">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="81ae6-126">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="81ae6-127">必需。</span><span class="sxs-lookup"><span data-stu-id="81ae6-127">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="fb437-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="fb437-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="81ae6-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="81ae6-128">Request headers</span></span>
 
-| <span data-ttu-id="fb437-129">名称</span><span class="sxs-lookup"><span data-stu-id="fb437-129">Name</span></span>          | <span data-ttu-id="fb437-130">说明</span><span class="sxs-lookup"><span data-stu-id="fb437-130">Description</span></span>               |
+| <span data-ttu-id="81ae6-129">名称</span><span class="sxs-lookup"><span data-stu-id="81ae6-129">Name</span></span>          | <span data-ttu-id="81ae6-130">说明</span><span class="sxs-lookup"><span data-stu-id="81ae6-130">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="fb437-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="fb437-131">Authorization</span></span> | <span data-ttu-id="fb437-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fb437-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="81ae6-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="81ae6-131">Authorization</span></span> | <span data-ttu-id="81ae6-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="81ae6-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fb437-134">响应</span><span class="sxs-lookup"><span data-stu-id="fb437-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="81ae6-134">响应</span><span class="sxs-lookup"><span data-stu-id="81ae6-134">Response</span></span>
 
-<span data-ttu-id="fb437-135">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="fb437-135">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fb437-136">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="fb437-136">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="81ae6-135">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="81ae6-135">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="81ae6-136">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="81ae6-136">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="fb437-137">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。</span><span class="sxs-lookup"><span data-stu-id="fb437-137">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="81ae6-137">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。</span><span class="sxs-lookup"><span data-stu-id="81ae6-137">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="fb437-138">CSV 文件包含下面的列标题：</span><span class="sxs-lookup"><span data-stu-id="fb437-138">The CSV file has the following headers for columns:</span></span>
+<span data-ttu-id="81ae6-138">CSV 文件包含下面的列标题：</span><span class="sxs-lookup"><span data-stu-id="81ae6-138">The CSV file has the following headers for columns:</span></span>
 
-- <span data-ttu-id="fb437-139">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="fb437-139">Report Refresh Date</span></span>
-- <span data-ttu-id="fb437-140">Web</span><span class="sxs-lookup"><span data-stu-id="fb437-140">Web</span></span>
-- <span data-ttu-id="fb437-141">Windows 手机</span><span class="sxs-lookup"><span data-stu-id="fb437-141">Windows Phone</span></span>
-- <span data-ttu-id="fb437-142">Android 手机</span><span class="sxs-lookup"><span data-stu-id="fb437-142">Android Phone</span></span>
-- <span data-ttu-id="fb437-143">iOS</span><span class="sxs-lookup"><span data-stu-id="fb437-143">iOS</span></span>
-- <span data-ttu-id="fb437-144">Mac</span><span class="sxs-lookup"><span data-stu-id="fb437-144">Mac</span></span>
-- <span data-ttu-id="fb437-145">Windows</span><span class="sxs-lookup"><span data-stu-id="fb437-145">Windows</span></span>
-- <span data-ttu-id="fb437-146">报表周期</span><span class="sxs-lookup"><span data-stu-id="fb437-146">Report Period</span></span>
+- <span data-ttu-id="81ae6-139">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="81ae6-139">Report Refresh Date</span></span>
+- <span data-ttu-id="81ae6-140">Web</span><span class="sxs-lookup"><span data-stu-id="81ae6-140">Web</span></span>
+- <span data-ttu-id="81ae6-141">Windows 手机</span><span class="sxs-lookup"><span data-stu-id="81ae6-141">Windows Phone</span></span>
+- <span data-ttu-id="81ae6-142">Android 手机</span><span class="sxs-lookup"><span data-stu-id="81ae6-142">Android Phone</span></span>
+- <span data-ttu-id="81ae6-143">iOS</span><span class="sxs-lookup"><span data-stu-id="81ae6-143">iOS</span></span>
+- <span data-ttu-id="81ae6-144">Mac</span><span class="sxs-lookup"><span data-stu-id="81ae6-144">Mac</span></span>
+- <span data-ttu-id="81ae6-145">Windows</span><span class="sxs-lookup"><span data-stu-id="81ae6-145">Windows</span></span>
+- <span data-ttu-id="81ae6-146">报表周期</span><span class="sxs-lookup"><span data-stu-id="81ae6-146">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="fb437-147">示例</span><span class="sxs-lookup"><span data-stu-id="fb437-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="81ae6-147">示例</span><span class="sxs-lookup"><span data-stu-id="81ae6-147">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fb437-148">请求</span><span class="sxs-lookup"><span data-stu-id="fb437-148">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="81ae6-148">请求</span><span class="sxs-lookup"><span data-stu-id="81ae6-148">Request</span></span>
 
-<span data-ttu-id="fb437-149">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fb437-149">The following is an example of the request.</span></span>
+<span data-ttu-id="81ae6-149">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="81ae6-149">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fb437-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="fb437-150">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="81ae6-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="81ae6-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getteamsdeviceusagedistributionusercounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fb437-151">C#</span><span class="sxs-lookup"><span data-stu-id="fb437-151">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="81ae6-151">C#</span><span class="sxs-lookup"><span data-stu-id="81ae6-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getteamsdeviceusagedistributionusercounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb437-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fb437-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="81ae6-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="81ae6-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getteamsdeviceusagedistributionusercounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fb437-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="fb437-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="81ae6-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="81ae6-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getteamsdeviceusagedistributionusercounts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="fb437-154">Java</span><span class="sxs-lookup"><span data-stu-id="fb437-154">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="81ae6-154">Java</span><span class="sxs-lookup"><span data-stu-id="81ae6-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getteamsdeviceusagedistributionusercounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fb437-155">响应</span><span class="sxs-lookup"><span data-stu-id="fb437-155">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="81ae6-155">响应</span><span class="sxs-lookup"><span data-stu-id="81ae6-155">Response</span></span>
 
-<span data-ttu-id="fb437-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fb437-156">The following is an example of the response.</span></span>
+<span data-ttu-id="81ae6-156">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="81ae6-156">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -116,7 +116,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="fb437-157">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="fb437-157">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="81ae6-157">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="81ae6-157">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

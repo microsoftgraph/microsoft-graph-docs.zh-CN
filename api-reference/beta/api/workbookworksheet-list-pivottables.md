@@ -5,77 +5,77 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d7d27e0b9569affbb0757449030d3eef5526c3c9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 602a2a38157d68e53edd9673e82fdc8a8a5477ef
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421524"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721850"
 ---
-# <a name="list-pivottables"></a><span data-ttu-id="337fc-103">List pivotTables</span><span class="sxs-lookup"><span data-stu-id="337fc-103">List pivotTables</span></span>
+# <a name="list-pivottables"></a><span data-ttu-id="47eee-103">List pivotTables</span><span class="sxs-lookup"><span data-stu-id="47eee-103">List pivotTables</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="337fc-104">检索 workbookpivottable 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="337fc-104">Retrieve a list of workbookpivottable objects.</span></span>
+<span data-ttu-id="47eee-104">检索 workbookpivottable 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="47eee-104">Retrieve a list of workbookpivottable objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="337fc-105">权限</span><span class="sxs-lookup"><span data-stu-id="337fc-105">Permissions</span></span>
-<span data-ttu-id="337fc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="337fc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="47eee-105">权限</span><span class="sxs-lookup"><span data-stu-id="47eee-105">Permissions</span></span>
+<span data-ttu-id="47eee-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="47eee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="337fc-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="337fc-108">Permission type</span></span>      | <span data-ttu-id="337fc-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="337fc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="47eee-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="47eee-108">Permission type</span></span>      | <span data-ttu-id="47eee-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="47eee-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="337fc-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="337fc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="337fc-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="337fc-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="337fc-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="337fc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="337fc-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="337fc-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="337fc-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="337fc-114">Application</span></span> | <span data-ttu-id="337fc-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="337fc-115">Not supported.</span></span> |
+|<span data-ttu-id="47eee-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="47eee-110">Delegated (work or school account)</span></span> | <span data-ttu-id="47eee-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="47eee-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="47eee-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="47eee-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47eee-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="47eee-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="47eee-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="47eee-114">Application</span></span> | <span data-ttu-id="47eee-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="47eee-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="337fc-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="337fc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="47eee-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="47eee-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="337fc-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="337fc-117">Optional query parameters</span></span>
-<span data-ttu-id="337fc-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="337fc-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="47eee-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="47eee-117">Optional query parameters</span></span>
+<span data-ttu-id="47eee-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="47eee-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="337fc-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="337fc-119">Request headers</span></span>
-| <span data-ttu-id="337fc-120">名称</span><span class="sxs-lookup"><span data-stu-id="337fc-120">Name</span></span>      |<span data-ttu-id="337fc-121">说明</span><span class="sxs-lookup"><span data-stu-id="337fc-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="47eee-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="47eee-119">Request headers</span></span>
+| <span data-ttu-id="47eee-120">名称</span><span class="sxs-lookup"><span data-stu-id="47eee-120">Name</span></span>      |<span data-ttu-id="47eee-121">说明</span><span class="sxs-lookup"><span data-stu-id="47eee-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="337fc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="337fc-122">Authorization</span></span>  | <span data-ttu-id="337fc-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="337fc-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="337fc-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="337fc-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="337fc-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="337fc-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="47eee-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="47eee-122">Authorization</span></span>  | <span data-ttu-id="47eee-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="47eee-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="47eee-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="47eee-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="47eee-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="47eee-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="337fc-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="337fc-128">Request body</span></span>
-<span data-ttu-id="337fc-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="337fc-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="47eee-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="47eee-128">Request body</span></span>
+<span data-ttu-id="47eee-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="47eee-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="337fc-130">响应</span><span class="sxs-lookup"><span data-stu-id="337fc-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="47eee-130">响应</span><span class="sxs-lookup"><span data-stu-id="47eee-130">Response</span></span>
 
-<span data-ttu-id="337fc-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一组 [workbookPivotTableworkbookPivotTable](../resources/workbookpivottable.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="337fc-131">If successful, this method returns a `200 OK` response code and collection of [workbookPivotTable](../resources/workbookpivottable.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="337fc-132">示例</span><span class="sxs-lookup"><span data-stu-id="337fc-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="337fc-133">请求</span><span class="sxs-lookup"><span data-stu-id="337fc-133">Request</span></span>
-<span data-ttu-id="337fc-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="337fc-134">Here is an example of the request.</span></span>
+<span data-ttu-id="47eee-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一组 [workbookPivotTableworkbookPivotTable](../resources/workbookpivottable.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="47eee-131">If successful, this method returns a `200 OK` response code and collection of [workbookPivotTable](../resources/workbookpivottable.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="47eee-132">示例</span><span class="sxs-lookup"><span data-stu-id="47eee-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="47eee-133">请求</span><span class="sxs-lookup"><span data-stu-id="47eee-133">Request</span></span>
+<span data-ttu-id="47eee-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="47eee-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="337fc-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="337fc-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="47eee-135">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="47eee-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_pivottables"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTables
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="337fc-136">C#</span><span class="sxs-lookup"><span data-stu-id="337fc-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="47eee-136">C#</span><span class="sxs-lookup"><span data-stu-id="47eee-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-pivottables-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="337fc-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="337fc-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="47eee-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="47eee-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-pivottables-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="337fc-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="337fc-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="47eee-138">目标-C</span><span class="sxs-lookup"><span data-stu-id="47eee-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-pivottables-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="337fc-139">响应</span><span class="sxs-lookup"><span data-stu-id="337fc-139">Response</span></span>
-<span data-ttu-id="337fc-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="337fc-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="47eee-139">响应</span><span class="sxs-lookup"><span data-stu-id="47eee-139">Response</span></span>
+<span data-ttu-id="47eee-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="47eee-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

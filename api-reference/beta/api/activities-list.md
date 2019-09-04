@@ -7,34 +7,34 @@ description: 列出在某个项上或某个层次结构下发生的最近活动�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e7aa64a1ef51b3c374a7ea947818685691811f44
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 78d08603ff367635b21d2518d3fa8b68b0210aba
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408682"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719232"
 ---
-# <a name="enumerate-activities-preview"></a><span data-ttu-id="644e0-103">枚举活动（预览）</span><span class="sxs-lookup"><span data-stu-id="644e0-103">Enumerate activities (preview)</span></span>
+# <a name="enumerate-activities-preview"></a><span data-ttu-id="fa2fe-103">枚举活动（预览）</span><span class="sxs-lookup"><span data-stu-id="fa2fe-103">Enumerate activities (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="644e0-104">列出在某个项上或某个层次结构下发生的最近[活动](../resources/itemactivity.md)。</span><span class="sxs-lookup"><span data-stu-id="644e0-104">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
+<span data-ttu-id="fa2fe-104">列出在某个项上或某个层次结构下发生的最近[活动](../resources/itemactivity.md)。</span><span class="sxs-lookup"><span data-stu-id="fa2fe-104">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
 
-<span data-ttu-id="644e0-105">**注意：** 活动处于限定预览阶段，尚未对所有租户可用。</span><span class="sxs-lookup"><span data-stu-id="644e0-105">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
+<span data-ttu-id="fa2fe-105">**注意：** 活动处于限定预览阶段，尚未对所有租户可用。</span><span class="sxs-lookup"><span data-stu-id="fa2fe-105">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
 
 [activities]: ../resources/itemactivity.md
 
-## <a name="permissions"></a><span data-ttu-id="644e0-106">权限</span><span class="sxs-lookup"><span data-stu-id="644e0-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa2fe-106">权限</span><span class="sxs-lookup"><span data-stu-id="fa2fe-106">Permissions</span></span>
 
-<span data-ttu-id="644e0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="644e0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fa2fe-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa2fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="644e0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="644e0-109">Permission type</span></span>                        | <span data-ttu-id="644e0-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="644e0-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="fa2fe-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa2fe-109">Permission type</span></span>                        | <span data-ttu-id="fa2fe-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fa2fe-110">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="644e0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="644e0-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="644e0-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="644e0-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="644e0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="644e0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="644e0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="644e0-114">Not supported.</span></span>
-|<span data-ttu-id="644e0-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="644e0-115">Application</span></span>                            | <span data-ttu-id="644e0-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="644e0-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="fa2fe-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa2fe-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fa2fe-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa2fe-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="fa2fe-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa2fe-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa2fe-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa2fe-114">Not supported.</span></span>
+|<span data-ttu-id="fa2fe-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="fa2fe-115">Application</span></span>                            | <span data-ttu-id="fa2fe-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa2fe-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="644e0-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="644e0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa2fe-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa2fe-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,33 +45,33 @@ GET /sites/{site-id}/lists/{list-id}/activities
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```
 
-## <a name="example"></a><span data-ttu-id="644e0-118">示例</span><span class="sxs-lookup"><span data-stu-id="644e0-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa2fe-118">示例</span><span class="sxs-lookup"><span data-stu-id="fa2fe-118">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="644e0-119">请求</span><span class="sxs-lookup"><span data-stu-id="644e0-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fa2fe-119">请求</span><span class="sxs-lookup"><span data-stu-id="fa2fe-119">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="644e0-120">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="644e0-120">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="fa2fe-120">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="fa2fe-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="644e0-121">C#</span><span class="sxs-lookup"><span data-stu-id="644e0-121">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fa2fe-121">C#</span><span class="sxs-lookup"><span data-stu-id="fa2fe-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="644e0-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="644e0-122">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fa2fe-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fa2fe-122">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="644e0-123">目标-C</span><span class="sxs-lookup"><span data-stu-id="644e0-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fa2fe-123">目标-C</span><span class="sxs-lookup"><span data-stu-id="fa2fe-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="644e0-124">响应</span><span class="sxs-lookup"><span data-stu-id="644e0-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fa2fe-124">响应</span><span class="sxs-lookup"><span data-stu-id="fa2fe-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
