@@ -5,34 +5,34 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 401bcdd1b9ad928dec7cf0a0aa3868a5e66a8f61
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 19b240ee27ce7d8c55d3a63dc12982c73a46e524
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421160"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722067"
 ---
-# <a name="user-findroomlists"></a><span data-ttu-id="baa80-103">用户：findRoomLists</span><span class="sxs-lookup"><span data-stu-id="baa80-103">user: findRoomLists</span></span>
+# <a name="user-findroomlists"></a><span data-ttu-id="e1b7c-103">用户：findRoomLists</span><span class="sxs-lookup"><span data-stu-id="e1b7c-103">user: findRoomLists</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="baa80-104">获取租户中定义的会议室列表，如其 [emailAddress](../resources/emailaddress.md) 对象所表示。</span><span class="sxs-lookup"><span data-stu-id="baa80-104">Get the room lists defined in a tenant, as represented by their [emailAddress](../resources/emailaddress.md) objects.</span></span>
+<span data-ttu-id="e1b7c-104">获取租户中定义的会议室列表，如其 [emailAddress](../resources/emailaddress.md) 对象所表示。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-104">Get the room lists defined in a tenant, as represented by their [emailAddress](../resources/emailaddress.md) objects.</span></span>
 
-<span data-ttu-id="baa80-105">租户可以将会议室整理到会议室列表。</span><span class="sxs-lookup"><span data-stu-id="baa80-105">Tenants can organize meeting rooms into room lists.</span></span> <span data-ttu-id="baa80-106">在此 API 中，每个会议室和会议室列表由 [emailAddress](../resources/emailaddress.md) 实例表示。</span><span class="sxs-lookup"><span data-stu-id="baa80-106">Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.</span></span>
-<span data-ttu-id="baa80-107">可以获取租户中的所欲会议室列表、获取租户中的[所有会议室](user-findrooms.md)或获取特定会议室列表的[所有会议室](user-findrooms.md)。</span><span class="sxs-lookup"><span data-stu-id="baa80-107">You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.</span></span>
-
-
-## <a name="permissions"></a><span data-ttu-id="baa80-108">权限</span><span class="sxs-lookup"><span data-stu-id="baa80-108">Permissions</span></span>
-<span data-ttu-id="baa80-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="baa80-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1b7c-105">租户可以将会议室整理到会议室列表。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-105">Tenants can organize meeting rooms into room lists.</span></span> <span data-ttu-id="e1b7c-106">在此 API 中，每个会议室和会议室列表由 [emailAddress](../resources/emailaddress.md) 实例表示。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-106">Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.</span></span>
+<span data-ttu-id="e1b7c-107">可以获取租户中的所欲会议室列表、获取租户中的[所有会议室](user-findrooms.md)或获取特定会议室列表的[所有会议室](user-findrooms.md)。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-107">You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.</span></span>
 
 
-|<span data-ttu-id="baa80-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="baa80-111">Permission type</span></span>      | <span data-ttu-id="baa80-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="baa80-112">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="e1b7c-108">权限</span><span class="sxs-lookup"><span data-stu-id="e1b7c-108">Permissions</span></span>
+<span data-ttu-id="e1b7c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+
+|<span data-ttu-id="e1b7c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e1b7c-111">Permission type</span></span>      | <span data-ttu-id="e1b7c-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e1b7c-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="baa80-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="baa80-113">Delegated (work or school account)</span></span> | <span data-ttu-id="baa80-114">User.ReadBasic.All、User.Read.All</span><span class="sxs-lookup"><span data-stu-id="baa80-114">User.ReadBasic.All, User.Read.All</span></span>    |
-|<span data-ttu-id="baa80-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="baa80-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="baa80-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="baa80-116">Not supported.</span></span>    |
-|<span data-ttu-id="baa80-117">Application</span><span class="sxs-lookup"><span data-stu-id="baa80-117">Application</span></span> | <span data-ttu-id="baa80-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="baa80-118">User.Read.All</span></span> |
+|<span data-ttu-id="e1b7c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e1b7c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e1b7c-114">User.ReadBasic.All、User.Read.All</span><span class="sxs-lookup"><span data-stu-id="e1b7c-114">User.ReadBasic.All, User.Read.All</span></span>    |
+|<span data-ttu-id="e1b7c-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e1b7c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1b7c-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-116">Not supported.</span></span>    |
+|<span data-ttu-id="e1b7c-117">Application</span><span class="sxs-lookup"><span data-stu-id="e1b7c-117">Application</span></span> | <span data-ttu-id="e1b7c-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="e1b7c-118">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="baa80-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="baa80-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1b7c-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e1b7c-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRoomLists
@@ -40,55 +40,55 @@ GET /users/{id}/findRoomLists
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="baa80-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="baa80-120">Request headers</span></span>
-| <span data-ttu-id="baa80-121">名称</span><span class="sxs-lookup"><span data-stu-id="baa80-121">Name</span></span>       | <span data-ttu-id="baa80-122">类型</span><span class="sxs-lookup"><span data-stu-id="baa80-122">Type</span></span> | <span data-ttu-id="baa80-123">说明</span><span class="sxs-lookup"><span data-stu-id="baa80-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e1b7c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e1b7c-120">Request headers</span></span>
+| <span data-ttu-id="e1b7c-121">名称</span><span class="sxs-lookup"><span data-stu-id="e1b7c-121">Name</span></span>       | <span data-ttu-id="e1b7c-122">类型</span><span class="sxs-lookup"><span data-stu-id="e1b7c-122">Type</span></span> | <span data-ttu-id="e1b7c-123">说明</span><span class="sxs-lookup"><span data-stu-id="e1b7c-123">Description</span></span> |
 |:---------------|:----------|:----------|
-| <span data-ttu-id="baa80-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="baa80-124">Authorization</span></span>  | <span data-ttu-id="baa80-125">string</span><span class="sxs-lookup"><span data-stu-id="baa80-125">string</span></span>  | <span data-ttu-id="baa80-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="baa80-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="baa80-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="baa80-128">Content-Type</span></span>  | <span data-ttu-id="baa80-129">string</span><span class="sxs-lookup"><span data-stu-id="baa80-129">string</span></span>  | <span data-ttu-id="baa80-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="baa80-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="e1b7c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e1b7c-124">Authorization</span></span>  | <span data-ttu-id="e1b7c-125">string</span><span class="sxs-lookup"><span data-stu-id="e1b7c-125">string</span></span>  | <span data-ttu-id="e1b7c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e1b7c-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e1b7c-128">Content-Type</span></span>  | <span data-ttu-id="e1b7c-129">string</span><span class="sxs-lookup"><span data-stu-id="e1b7c-129">string</span></span>  | <span data-ttu-id="e1b7c-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="e1b7c-p104">application/json. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="baa80-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="baa80-132">Request body</span></span>
-<span data-ttu-id="baa80-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="baa80-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1b7c-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="e1b7c-132">Request body</span></span>
+<span data-ttu-id="e1b7c-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="baa80-134">响应</span><span class="sxs-lookup"><span data-stu-id="baa80-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e1b7c-134">响应</span><span class="sxs-lookup"><span data-stu-id="e1b7c-134">Response</span></span>
 
-<span data-ttu-id="baa80-135">如果成功，此方法将在响应主体中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="baa80-135">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/emailaddress.md) objects in the response body.</span></span>
+<span data-ttu-id="e1b7c-135">如果成功，此方法将在响应主体中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-135">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/emailaddress.md) objects in the response body.</span></span>
 
-<span data-ttu-id="baa80-136">如果租户中未定义任何列表，则会返回空数组。</span><span class="sxs-lookup"><span data-stu-id="baa80-136">If no lists are defined in the tenant, then an empty array is returned.</span></span>
+<span data-ttu-id="e1b7c-136">如果租户中未定义任何列表，则会返回空数组。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-136">If no lists are defined in the tenant, then an empty array is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="baa80-137">示例</span><span class="sxs-lookup"><span data-stu-id="baa80-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="baa80-138">请求</span><span class="sxs-lookup"><span data-stu-id="baa80-138">Request</span></span>
+## <a name="example"></a><span data-ttu-id="e1b7c-137">示例</span><span class="sxs-lookup"><span data-stu-id="e1b7c-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e1b7c-138">请求</span><span class="sxs-lookup"><span data-stu-id="e1b7c-138">Request</span></span>
 
-<span data-ttu-id="baa80-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="baa80-139">Here is an example of the request.</span></span>
+<span data-ttu-id="e1b7c-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-139">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="baa80-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="baa80-140">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e1b7c-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1b7c-140">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_room_lists"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="baa80-141">C#</span><span class="sxs-lookup"><span data-stu-id="baa80-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e1b7c-141">C#</span><span class="sxs-lookup"><span data-stu-id="e1b7c-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-room-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="baa80-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="baa80-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e1b7c-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1b7c-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-room-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="baa80-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="baa80-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e1b7c-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1b7c-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-room-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="baa80-144">响应</span><span class="sxs-lookup"><span data-stu-id="baa80-144">Response</span></span>
-<span data-ttu-id="baa80-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="baa80-145">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e1b7c-144">响应</span><span class="sxs-lookup"><span data-stu-id="e1b7c-144">Response</span></span>
+<span data-ttu-id="e1b7c-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-145">Here is an example of the response.</span></span> 
 
-<span data-ttu-id="baa80-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="baa80-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e1b7c-p105">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e1b7c-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_get_room_lists",
