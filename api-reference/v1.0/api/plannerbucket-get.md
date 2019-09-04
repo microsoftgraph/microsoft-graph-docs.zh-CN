@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ba096a959b66ffe857d6eecaeefc4208ac2371e0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c72d92c3d75ac5be1e486c0b4e18b31add7b992d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376016"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728529"
 ---
 # <a name="get-plannerbucket"></a>获取 plannerBucket
 
@@ -53,7 +53,7 @@ GET /planner/buckets/{id}
   "blockType": "request",
   "name": "get_plannerbucket"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

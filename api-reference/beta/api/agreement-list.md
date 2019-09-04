@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 1d195d099f070bfe9fbc7fd364ef3f4e96097ec7
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 97f68d6efc07b6da7d74584cfa5b4af0b248c9f1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408513"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719120"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -53,7 +53,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
   "blockType": "request",
   "name": "get_agreements"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

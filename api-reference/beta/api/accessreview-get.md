@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff201c64156c334b756a9cfc8318fd9882154515
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: b0c088f5c8f7a402282d1d205ff52b80e68fac75
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460813"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719302"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -58,7 +58,7 @@ GET /accessReviews/{reviewId}
   "blockType": "request",
   "name": "get_accessReview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

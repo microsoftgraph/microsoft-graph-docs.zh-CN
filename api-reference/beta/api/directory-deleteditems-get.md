@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 44f4f91bcdd883b500a469a99646aec32b524f25
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f5823a123fed255a7372c8532b0911d9116e512f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417513"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719617"
 ---
 # <a name="get-deleted-item"></a>获取已删除的项目
 
@@ -56,7 +56,7 @@ GET /directory/deleteditems/{id}
   "blockType": "request",
   "name": "get_directory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

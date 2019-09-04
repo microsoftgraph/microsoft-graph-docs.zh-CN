@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 74a6fd086645831f2181051233b62be3bc87605c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b01f354cc0ce909108a085a61d200c0517e724c0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364797"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727332"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 返回与 rangeView 资源相关联的范围。
@@ -54,7 +54,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
   "isComposable": true,
   "name": "workbookrangeview_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/range
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: dac1a97ea0a2889b26b305ddd6c3fd3e038b7d93
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: d44203c1d0a2a910182822cfc35565a30e1cd4ae
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461561"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724104"
 ---
 # <a name="get-settings-for-user-analytics"></a>获取用户分析的设置
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
   "name": "get_settings"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

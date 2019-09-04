@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9573bb4eb0ba24fc9945d70d6f68a7a06b75958d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8979e2c9b3582a1e7fc1a1e210405750edcf6883
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420754"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720583"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
@@ -58,7 +58,7 @@ GET /groups/{id}/acceptedSenders
   "blockType": "request",
   "name": "get_acceptedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

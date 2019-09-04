@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 19d2867749a0b53e6b5649610ed6626af56fce38
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 7fd0524affaec2da6a9e21ef679dce539113d8b2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461188"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717993"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>获取附加到 educationAssignment 的 educationRubric
 
@@ -62,7 +62,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
   "name": "get_rubric"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

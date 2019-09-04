@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2be4471e041b1b713ad022ba28c51bdfac8efd85
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1be350f85abc1aab70be667819fdcda433bf720c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416406"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717967"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -53,7 +53,7 @@ GET /education/classes/{id}
   "blockType": "request",
   "name": "get_educationclass"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11023
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

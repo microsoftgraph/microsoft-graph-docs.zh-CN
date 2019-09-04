@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b39f3f0e2b387a8488e757f210a701b54108a052
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1a800ebaeef670e4d6c974a036ac2e68761e73f4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417071"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718120"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
@@ -64,7 +64,7 @@ GET /domains/{id}/domainNameReferences
   "blockType": "request",
   "name": "get_domainnamereferences"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

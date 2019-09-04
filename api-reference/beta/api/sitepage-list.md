@@ -6,12 +6,12 @@ title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 74d21d999fc6075de1a5425e9b37ad09ed455293
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e7fa95ee251e1d33038074da584470895f48761f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977844"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722326"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
 
@@ -35,7 +35,7 @@ ms.locfileid: "35977844"
 
 ## <a name="http-request"></a>HTTP 请求
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 
 ```
@@ -53,7 +53,7 @@ GET /sites/{site-id}/pages
 }
 -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 ```
 

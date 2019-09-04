@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ceb4beff6e724eee9a55141df7c5fefc48a6774
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 334876dc1549bc9a991c003217fda2d8de50838a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375281"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721213"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -63,7 +63,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
   "blockType": "request",
   "name": "get_serviceconfigurationrecords"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06747ed7e0520e8b34f7aeea256da4b0e012492c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 995d9441115e899081bba7b8ab984f3d50e7b272
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408327"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719043"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -54,7 +54,7 @@ GET /applications/{id}/owners
   "blockType": "request",
   "name": "application_get_owners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/{id}/owners
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

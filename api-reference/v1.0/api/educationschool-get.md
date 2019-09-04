@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 44e9c16a84eded9dff26a00a317ec0c96b1f1757
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a44d447c927ce4a7a32fc5de892e82f3eea0204c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365642"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726898"
 ---
 # <a name="get-educationschool"></a>获取 educationSchool
 
@@ -53,7 +53,7 @@ GET /education/users/schools
   "blockType": "request",
   "name": "get_educationschool"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

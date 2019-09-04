@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: da46f7b03aa132d1a3a2f3e787c62c669254bd8b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 272df1dbcf64531a3fcce88778465511022ec6e3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415587"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720247"
 ---
 # <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
@@ -59,7 +59,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

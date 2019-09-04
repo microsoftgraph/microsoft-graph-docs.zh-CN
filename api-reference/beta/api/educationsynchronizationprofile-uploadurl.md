@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8e0c03f5fe7599df2c875015ee89d40a5b3412c9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2ac6bf920b510ca23c2074f009f53aa621007bbe
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415944"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720296"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -58,7 +58,7 @@ GET /synchronizationProfiles/{id}/uploadUrl
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_uploadurl"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uploadUrl
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

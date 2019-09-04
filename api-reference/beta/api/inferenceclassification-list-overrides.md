@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 6ecf9cd37015f5472a744dda3c3e4216e55d1cdf
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 567f4f28459014f47ef619bdc8c4a3000c818264
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419963"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721479"
 ---
 # <a name="list-overrides"></a>列表替代
 
@@ -55,7 +55,7 @@ GET /users/{id}/inferenceClassification/overrides
   "blockType": "request",
   "name": "get_overrides"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

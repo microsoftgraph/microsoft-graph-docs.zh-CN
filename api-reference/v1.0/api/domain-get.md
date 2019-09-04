@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b1a7a2f373c9b227138fa7f6390e5d5e1762ba9e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1448336ac53503f4ee3e79b1c50a75e38d415298
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375308"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721234"
 ---
 # <a name="get-domain"></a>获取域
 
@@ -63,7 +63,7 @@ GET /domains/{id}
   "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

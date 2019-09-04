@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: e19284ad513158914b86318b51c9b244699bfe1a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3c8b4f7cdd3f04aaa5c9b1136fc2e6eaa5798c25
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410394"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722473"
 ---
 # <a name="list-securityactions"></a>列出 securityActions
 
@@ -66,7 +66,7 @@ GET /security/securityActions
   "name": "get_securityactions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/securityActions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

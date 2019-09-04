@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 5765ea64f13e8154474cec52c0531522ff9e9889
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 14a8c80fa3cb75e775d889977132900cb85e772a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409301"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722158"
 ---
 # <a name="get-threat-intelligence-indicator"></a>获取威胁智能指示器
 
@@ -66,7 +66,7 @@ GET /security/tiIndicators/{id}
   "name": "get_tiindicator"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

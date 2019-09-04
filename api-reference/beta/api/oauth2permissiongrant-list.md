@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c10d57342ad68e27b1856e9daf169908165c94bc
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 84dc12fc863dafa8602e99332cf152c217dc23e1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414677"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723859"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -58,7 +58,7 @@ GET /oauth2PermissionGrants
   "blockType": "request",
   "name": "get_oauth2permissiongrants"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

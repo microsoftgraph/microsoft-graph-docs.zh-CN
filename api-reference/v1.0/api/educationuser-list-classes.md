@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6e98d436484f57001fd928828060c2836b38fd37
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: afacfea32cb6c260e9b0185a1b35d5c895c6a3b0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326665"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720982"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -54,7 +54,7 @@ GET /education/users/{id}/classes
   "blockType": "request",
   "name": "get_classes"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/classes
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

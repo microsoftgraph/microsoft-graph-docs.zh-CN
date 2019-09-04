@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d164fd57332dd959823accbaeeaa0334f104b355
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5ba1aede8d6f9a211c8b8827106b9fca9fc8b41d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419389"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718819"
 ---
 # <a name="get-bookingcustomer"></a>获取 bookingCustomer
 
@@ -52,7 +52,7 @@ GET /bookingBusinesses/{id}/customers/{id}
   "blockType": "request",
   "name": "get_bookingcustomer"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1ba394a5f57b19a7bef75e0cae19fb95885b6a85
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a141baf55909ced4fafe953066a6984de7f06614
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420205"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721593"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -56,7 +56,7 @@ GET /groups/{id}/endpoints
   "blockType": "request",
   "name": "get_endpoints"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

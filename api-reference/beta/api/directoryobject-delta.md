@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cd3bdefee1877283a9ffcac8864e7fea47f55170
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f3c547d9589c2b94e261113fafca8adc2f70f688
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417443"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718224"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 
@@ -114,7 +114,7 @@ GET /directoryObjects/delta
   "name": "directory_object_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -204,7 +204,7 @@ Content-type: application/json
   "name": "directoryObject_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 Prefer: return=minimal
 ```
@@ -272,7 +272,7 @@ Content-type: application/json
   "name": "directoryobject_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

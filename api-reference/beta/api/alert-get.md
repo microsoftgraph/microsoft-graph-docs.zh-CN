@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2783b5eb961fd945286b53f4f87ba29085f81530
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f1daccef71f05ea73056ad00cb11c0ddac91b6a4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408424"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719099"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -62,7 +62,7 @@ GET /security/alerts/{id}
   "name": "get_alert"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

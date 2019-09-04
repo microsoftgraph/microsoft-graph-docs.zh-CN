@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e88a4972201c342b61b861c9419b0d02c28a6d7d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2862fa35082372c7642c1e9c86afe189d30c8b42
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370422"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726345"
 ---
 # <a name="list-teachers"></a>列出教师
 
@@ -51,7 +51,7 @@ GET /education/classes/{id}/teachers
   "blockType": "request",
   "name": "get_teachers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fa508d290d8d705a858f37b73d17d57789c6ced9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5b3607e98cf6d83593374280b672772c7c703b09
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419830"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721745"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -72,7 +72,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
   "blockType": "request",
   "name": "get_eventmessage"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -204,7 +204,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=microsoft.graph.eventMessage/event
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

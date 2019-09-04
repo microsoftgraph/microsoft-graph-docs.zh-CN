@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef41be6fd40bce8ac64868f0f55cd7cf4582c496
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2206b54f4a304e3b552b886b9203f7eccce4f927
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420337"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721661"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -116,7 +116,7 @@ GET /groups/delta
   "name": "group_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -190,7 +190,7 @@ Content-type: application/json
   "name": "group_delta_with_selelct"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -246,7 +246,7 @@ Content-type: application/json
   "name": "group_delta_minimal"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
 Prefer: return=minimal
 ```

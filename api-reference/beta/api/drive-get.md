@@ -6,12 +6,12 @@ title: 获取驱动器
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e564303b4d4ac1ad937c10e20c55ee21205947f4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4593959b5940df46d5a81dad95710aa6650511e4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417036"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718175"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -43,7 +43,7 @@ ms.locfileid: "36417036"
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -73,7 +73,7 @@ GET /me/drive
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -107,7 +107,7 @@ GET /users/{idOrUserPrincipalName}/drive
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -141,7 +141,7 @@ GET /groups/{groupId}/drive
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -175,7 +175,7 @@ GET /sites/{siteId}/drive
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{driveId}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

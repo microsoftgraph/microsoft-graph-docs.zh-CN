@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f61f9dc96a68c8901ed6909126250a49e292c39
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c41028059a032479e6cc1b23ffb20b81665792b7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409686"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722256"
 ---
 # <a name="get-synchronizationschema"></a>获取 synchronizationSchema
 
@@ -59,7 +59,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
   "blockType": "request",
   "name": "get_synchronizationschema"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

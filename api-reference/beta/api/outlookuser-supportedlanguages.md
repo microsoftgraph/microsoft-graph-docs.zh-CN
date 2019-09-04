@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e514723055541bf3cd99e4ce92fa48bc771e76e6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 87e3cfe49f72c82f36f40b02d223970b014775b8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413865"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725862"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -58,7 +58,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
   "blockType": "request",
   "name": "user_supportedlanguages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f57b3b38aeef88356dfb2502bf47f84c5e8e16c3
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 4a42c07859a01db350722eb4e7f35ce02d1e4f63
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460990"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720394"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
@@ -64,7 +64,7 @@ GET /education/me/rubrics/{id}
   "name": "get_educationrubric"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 10b1ef090de119069917582e1e60448eb07d2a09
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4e35e3ff91a643ac052a2275b653997ce222136c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420391"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721682"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -54,7 +54,7 @@ GET /privilegedAccess/azureResources/resources
   "blockType": "request",
   "name": "get_governanceresources"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

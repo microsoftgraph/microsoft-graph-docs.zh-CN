@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 455962eb6e456b76dd441f2712c8072f76deea3e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7f63d088d3e202704d7bd22ff6e24b7db69b8d13
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365697"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721395"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
 
@@ -53,7 +53,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}
   "blockType": "request",
   "name": "get_conversationthread"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d538b6389cd2a85768c15679d29d2fc9c11a0ff9
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 4ed9cda5da96957d3fbc1a4aa7e7919e78b74321
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460806"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719211"
 ---
 # <a name="get-activitystatistics"></a>获取 activityStatistics
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
   "name": "get_activitystatistics"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 ```

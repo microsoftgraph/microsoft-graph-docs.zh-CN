@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f11852cd889f246ee2897f6f25adc7b6bda9d932
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3291426ec6cc0b5f98b3bc7f0a1c7465e1e1340c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418136"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719834"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -67,7 +67,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents
   "name": "get_hostedcontents"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

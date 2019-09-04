@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 使用特殊集合可以按名称访问特殊文件夹。
 doc_type: apiPageType
-ms.openlocfilehash: 662ee2f2dae0e3f8684d76fbc18b3315a80133dd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 584e12dacbaf1cc2000e0c1a3d5d0033161444d0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375196"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721178"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 
@@ -40,7 +40,7 @@ ms.locfileid: "36375196"
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{name}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -111,7 +111,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{special-folder-name}/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

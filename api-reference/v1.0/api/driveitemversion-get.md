@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: f9d990887a664989543ef5b817257fa0b83c49ab
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 50232f488e8c727a88953f27b77db15839c1b410
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370527"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721073"
 ---
 # <a name="get-a-driveitemversion-resource"></a>获取 DriveItemVersion 资源
 
@@ -54,7 +54,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

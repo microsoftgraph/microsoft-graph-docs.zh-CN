@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d5aee9cac599c386987e91875dc72d1e66d7a1c0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cce66344a9420efb6a9b78c15c6d6f66a8f20c71
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419197"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718777"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
@@ -53,7 +53,7 @@ GET /businessFlowTemplates
   "blockType": "request",
   "name": "get_businessFlowTemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

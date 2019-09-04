@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a8a61ccf5924f14322edced0b0dee921c47ef85e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f594654f1ba0b980acbc5ea61dc0a7a898f7a71
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416280"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720408"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -53,7 +53,7 @@ GET /education/users
   "blockType": "request",
   "name": "educationroot_get_users"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/users
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

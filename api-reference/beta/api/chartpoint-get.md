@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8c3f02fefd0115f3ebda71a9472eaa10a5c53dbc
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: efb01aa94406bf22a2b417cf43e224de0b3b6994
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418318"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719974"
 ---
 # <a name="get-chartpoint"></a>获取 ChartPoint
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{unde
   "blockType": "request",
   "name": "get_chartpoint"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

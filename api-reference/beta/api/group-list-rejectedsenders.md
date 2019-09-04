@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a3d8450c89a57ee7634a1087a49ef7123883b3f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5bd6f5cb5564cf22809c2bc6973bef254c961a6b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420138"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720520"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 
@@ -58,7 +58,7 @@ GET /groups/{id}/rejectedSenders
   "blockType": "request",
   "name": "get_rejectedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/rejectedSenders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

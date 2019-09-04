@@ -6,12 +6,12 @@ title: 下载文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: aa81ce58c0b0bf273ef1e9e4a94f35fb9ad4c437
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2ab06b06a3a914525a337ab388b1210f8277b65b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416828"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718104"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
@@ -57,7 +57,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

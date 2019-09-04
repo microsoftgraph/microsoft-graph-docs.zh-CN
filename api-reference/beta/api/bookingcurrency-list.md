@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cabe3a75518094bcf2fd8e72a46fab955e355571
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: eb133cf714bfd0a8c74f79e78820d425cc960c9b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419410"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718847"
 ---
 # <a name="list-bookingcurrencies"></a>列出 bookingCurrencies
 
@@ -52,7 +52,7 @@ GET /bookingCurrencies
   "blockType": "request",
   "name": "get_bookingcurrencies"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingCurrencies
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

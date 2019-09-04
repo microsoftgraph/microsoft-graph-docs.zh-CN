@@ -6,12 +6,12 @@ description: 获取 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3dd16fe9d040399201c9d7c034a52673e67c3946
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 495b4b5487ce413c682bbe81589f920132755c64
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419262"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718791"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
@@ -69,7 +69,7 @@ GET /drive/items/{bundle-id}
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -125,7 +125,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

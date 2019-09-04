@@ -6,12 +6,12 @@ title: 列出文件夹的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 91945814dab0ab8793620d413fc0610560253741
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 7aa6f9bf8e624b7b973bf5ed8553f5e2b1944f48
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633284"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719346"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -64,7 +64,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -91,7 +91,7 @@ GET /me/drive/root/children
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

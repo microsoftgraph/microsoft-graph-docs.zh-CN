@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 221da358dd7442e669ea7e3193b22a3cd65c1160
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 0e5c2c2b72f6a1d5916d81ee83a6687ec5901b3c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421209"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722137"
 ---
 # <a name="get-timeoffreason"></a>获取 timeOffReason
 
@@ -63,7 +63,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
   "blockType": "request",
   "name": "timeoffreason-get"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

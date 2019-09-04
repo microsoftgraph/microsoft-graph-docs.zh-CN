@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: db7013f2f98c9e36220a022a8ad5b3ea9f7c269f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7245c76a61099ee080ec9474adfa866fdd7e12c5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370443"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721045"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -51,7 +51,7 @@ GET /education/classes/{id}/members
   "blockType": "request",
   "name": "get_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

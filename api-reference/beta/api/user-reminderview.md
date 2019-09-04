@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d2cb1a86effb8cd9ca56c21a46f1b58c52aad9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 02461aad81bbf76368dc0d7dc7c0c0ad63263c4e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421846"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724097"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
   "blockType": "request",
   "name": "user_reminderview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

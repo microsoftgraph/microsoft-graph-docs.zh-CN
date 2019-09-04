@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 585db70ffefce464b8e556c3caab36e2541c3b41
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6737e8e1c9bb1f119c2f9a37266330c254b6e885
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422007"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724146"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用程序
 
@@ -67,7 +67,7 @@ GET /users/{id}/teamwork/installedApps
   "blockType": "request",
   "name": "user_list_teamsApps"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

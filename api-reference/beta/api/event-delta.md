@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1a90c4c9938e5c4e5eec84089343789243d8859c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3ae1a76b9772307b26224d32c9a7386ae510397c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415741"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720674"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -78,7 +78,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
   "blockType": "request",
   "name": "event_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
 
 Prefer: odata.maxpagesize=2

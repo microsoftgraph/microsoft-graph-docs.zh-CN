@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c734d5995e78103e3759afd78e1ff11dfedc82f4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: af580324ad1e53789bb7d47e8035a91e43306c90
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413781"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723635"
 ---
 # <a name="get-participant"></a>获取参与者
 
@@ -58,7 +58,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
   "blockType": "request",
   "name": "get-participant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

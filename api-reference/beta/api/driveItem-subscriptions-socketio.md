@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 2f467a85c95c683722ec34979077b36a608dee67
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5e87cb25be7ddf41bdf8097f55326bc2bb20a65d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416889"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718101"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -51,7 +51,7 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
-```http
+```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

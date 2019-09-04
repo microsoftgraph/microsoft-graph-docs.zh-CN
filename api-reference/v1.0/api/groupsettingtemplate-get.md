@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b905c8bb905478ac580b13e47cb6e6118154c2b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1bf19585b34c4d66eb22fbd1e34ed15411895c08
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364977"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720717"
 ---
 # <a name="get-a-group-setting-template"></a>获取组设置模板
 
@@ -55,7 +55,7 @@ GET /groupSettingTemplates/{id}
   "blockType": "request",
   "name": "get_groupsettingtemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

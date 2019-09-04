@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ab7661a7f257bb8e16f8b1226b8deafe41346ca7
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: de26ad4d81bbaf24bede8bfc8032bbc5b0abc00c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418507"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718543"
 ---
 # <a name="get-chartdatalabels"></a>获取 ChartDataLabels
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/datalabels
   "blockType": "request",
   "name": "get_chartdatalabels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
