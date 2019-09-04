@@ -6,81 +6,81 @@ title: 获取特殊文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6a4a54ab4445bf6996413d28ed9fac4a33545b92
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a594fb04e6d3b4c1d8185fbb78e288bc825b4227
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417015"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719446"
 ---
-# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="532e3-103">按名称获取特殊文件夹</span><span class="sxs-lookup"><span data-stu-id="532e3-103">Get a special folder by name</span></span>
+# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="78fa9-103">按名称获取特殊文件夹</span><span class="sxs-lookup"><span data-stu-id="78fa9-103">Get a special folder by name</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="532e3-104">使用特殊集合可以按名称访问特殊文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-104">Use the special collection to access a special folder by name.</span></span>
+<span data-ttu-id="78fa9-104">使用特殊集合可以按名称访问特殊文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-104">Use the special collection to access a special folder by name.</span></span>
 
-<span data-ttu-id="532e3-p101">特殊文件夹可以提供简单别名来访问 OneDrive 中的已知文件夹，无需按路径查找（需要本地化）或通过 ID 引用文件夹。如果特殊文件夹被重命名或移到驱动器中的其他位置，此语法将继续查找该文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
+<span data-ttu-id="78fa9-p101">特殊文件夹可以提供简单别名来访问 OneDrive 中的已知文件夹，无需按路径查找（需要本地化）或通过 ID 引用文件夹。如果特殊文件夹被重命名或移到驱动器中的其他位置，此语法将继续查找该文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
 
-<span data-ttu-id="532e3-p102">应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+<span data-ttu-id="78fa9-p102">应用程序第一次尝试向特殊文件夹中写入内容时，如果特殊文件夹不存在，系统会自动创建特殊文件夹。如果用户删除某个特殊文件夹，再次向其写入内容时会重新创建特殊文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
 
-> <span data-ttu-id="532e3-109">**注意：** 如果你拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。</span><span class="sxs-lookup"><span data-stu-id="532e3-109">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
+> <span data-ttu-id="78fa9-109">**注意：** 如果你拥有只读权限并且请求不存在的特殊文件夹，将收到 `403 Forbidden` 错误。</span><span class="sxs-lookup"><span data-stu-id="78fa9-109">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="532e3-110">权限</span><span class="sxs-lookup"><span data-stu-id="532e3-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="78fa9-110">权限</span><span class="sxs-lookup"><span data-stu-id="78fa9-110">Permissions</span></span>
 
-<span data-ttu-id="532e3-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="532e3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="78fa9-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="78fa9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="532e3-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="532e3-113">Permission type</span></span>             |                                           <span data-ttu-id="532e3-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="532e3-114">Permissions (from least to most privileged)</span></span>                                            |
+|            <span data-ttu-id="78fa9-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="78fa9-113">Permission type</span></span>             |                                           <span data-ttu-id="78fa9-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="78fa9-114">Permissions (from least to most privileged)</span></span>                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="532e3-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="532e3-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="532e3-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="532e3-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
-| <span data-ttu-id="532e3-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="532e3-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="532e3-118">Files.ReadWrite.AppFolder、Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="532e3-118">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
-| <span data-ttu-id="532e3-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="532e3-119">Application</span></span>                            | <span data-ttu-id="532e3-120">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="532e3-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
+| <span data-ttu-id="78fa9-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="78fa9-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="78fa9-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78fa9-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="78fa9-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="78fa9-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78fa9-118">Files.ReadWrite.AppFolder、Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78fa9-118">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+| <span data-ttu-id="78fa9-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="78fa9-119">Application</span></span>                            | <span data-ttu-id="78fa9-120">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78fa9-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="532e3-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="532e3-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="78fa9-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="78fa9-121">HTTP Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="532e3-122">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="532e3-122">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="78fa9-122">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="78fa9-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{name}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="532e3-123">C#</span><span class="sxs-lookup"><span data-stu-id="532e3-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="78fa9-123">C#</span><span class="sxs-lookup"><span data-stu-id="78fa9-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="532e3-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="532e3-124">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78fa9-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78fa9-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="532e3-125">目标-C</span><span class="sxs-lookup"><span data-stu-id="532e3-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="78fa9-125">目标-C</span><span class="sxs-lookup"><span data-stu-id="78fa9-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-folder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="special-folder-names"></a><span data-ttu-id="532e3-126">特殊文件夹名称</span><span class="sxs-lookup"><span data-stu-id="532e3-126">Special folder names</span></span>
+### <a name="special-folder-names"></a><span data-ttu-id="78fa9-126">特殊文件夹名称</span><span class="sxs-lookup"><span data-stu-id="78fa9-126">Special folder names</span></span>
 
-<span data-ttu-id="532e3-127">以下是 OneDrive 和 OneDrive for Business 中可用的特殊文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="532e3-127">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
+<span data-ttu-id="78fa9-127">以下是 OneDrive 和 OneDrive for Business 中可用的特殊文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="78fa9-127">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
 
-| <span data-ttu-id="532e3-128">名称</span><span class="sxs-lookup"><span data-stu-id="532e3-128">Name</span></span>        | <span data-ttu-id="532e3-129">文件夹 ID</span><span class="sxs-lookup"><span data-stu-id="532e3-129">Folder id</span></span>    | <span data-ttu-id="532e3-130">说明</span><span class="sxs-lookup"><span data-stu-id="532e3-130">Description</span></span>                                                              |
+| <span data-ttu-id="78fa9-128">名称</span><span class="sxs-lookup"><span data-stu-id="78fa9-128">Name</span></span>        | <span data-ttu-id="78fa9-129">文件夹 ID</span><span class="sxs-lookup"><span data-stu-id="78fa9-129">Folder id</span></span>    | <span data-ttu-id="78fa9-130">说明</span><span class="sxs-lookup"><span data-stu-id="78fa9-130">Description</span></span>                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| <span data-ttu-id="532e3-131">Documents</span><span class="sxs-lookup"><span data-stu-id="532e3-131">Documents</span></span>   | `documents`  | <span data-ttu-id="532e3-132">“文档”文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-132">The Documents folder.</span></span>                                                    |
-| <span data-ttu-id="532e3-133">Photos</span><span class="sxs-lookup"><span data-stu-id="532e3-133">Photos</span></span>      | `photos`     | <span data-ttu-id="532e3-134">“照片”文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-134">The Photos folder.</span></span>                                                       |
-| <span data-ttu-id="532e3-135">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="532e3-135">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="532e3-136">“本机照片备份”文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-136">The Camera Roll Backup folder.</span></span>                                           |
-| <span data-ttu-id="532e3-137">App Root</span><span class="sxs-lookup"><span data-stu-id="532e3-137">App Root</span></span>    | `approot`    | <span data-ttu-id="532e3-p104">应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中</span><span class="sxs-lookup"><span data-stu-id="532e3-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
-| <span data-ttu-id="532e3-140">Music</span><span class="sxs-lookup"><span data-stu-id="532e3-140">Music</span></span>       | `music`      | <span data-ttu-id="532e3-141">“音乐”文件夹。</span><span class="sxs-lookup"><span data-stu-id="532e3-141">The Music folder.</span></span>                                                        |
+| <span data-ttu-id="78fa9-131">Documents</span><span class="sxs-lookup"><span data-stu-id="78fa9-131">Documents</span></span>   | `documents`  | <span data-ttu-id="78fa9-132">“文档”文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-132">The Documents folder.</span></span>                                                    |
+| <span data-ttu-id="78fa9-133">Photos</span><span class="sxs-lookup"><span data-stu-id="78fa9-133">Photos</span></span>      | `photos`     | <span data-ttu-id="78fa9-134">“照片”文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-134">The Photos folder.</span></span>                                                       |
+| <span data-ttu-id="78fa9-135">Camera Roll</span><span class="sxs-lookup"><span data-stu-id="78fa9-135">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="78fa9-136">“本机照片备份”文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-136">The Camera Roll Backup folder.</span></span>                                           |
+| <span data-ttu-id="78fa9-137">App Root</span><span class="sxs-lookup"><span data-stu-id="78fa9-137">App Root</span></span>    | `approot`    | <span data-ttu-id="78fa9-p104">应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中</span><span class="sxs-lookup"><span data-stu-id="78fa9-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
+| <span data-ttu-id="78fa9-140">Music</span><span class="sxs-lookup"><span data-stu-id="78fa9-140">Music</span></span>       | `music`      | <span data-ttu-id="78fa9-141">“音乐”文件夹。</span><span class="sxs-lookup"><span data-stu-id="78fa9-141">The Music folder.</span></span>                                                        |
 
 
-### <a name="optional-query-parameters"></a><span data-ttu-id="532e3-142">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="532e3-142">Optional query parameters</span></span>
+### <a name="optional-query-parameters"></a><span data-ttu-id="78fa9-142">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="78fa9-142">Optional query parameters</span></span>
 
-<span data-ttu-id="532e3-143">此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="532e3-143">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="78fa9-143">此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="78fa9-143">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="532e3-144">响应</span><span class="sxs-lookup"><span data-stu-id="532e3-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="78fa9-144">响应</span><span class="sxs-lookup"><span data-stu-id="78fa9-144">Response</span></span>
 
-<span data-ttu-id="532e3-145">此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="532e3-145">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
+<span data-ttu-id="78fa9-145">此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="78fa9-145">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-<span data-ttu-id="532e3-146">你可以将此处理特殊文件夹内联的方法与对 driveItem 上的属性和关系的其他调用结合使用。</span><span class="sxs-lookup"><span data-stu-id="532e3-146">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
+<span data-ttu-id="78fa9-146">你可以将此处理特殊文件夹内联的方法与对 driveItem 上的属性和关系的其他调用结合使用。</span><span class="sxs-lookup"><span data-stu-id="78fa9-146">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -98,35 +98,35 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="532e3-147">获取特殊文件夹的子文件夹</span><span class="sxs-lookup"><span data-stu-id="532e3-147">Get children of a special folder</span></span>
+## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="78fa9-147">获取特殊文件夹的子文件夹</span><span class="sxs-lookup"><span data-stu-id="78fa9-147">Get children of a special folder</span></span>
 
-<span data-ttu-id="532e3-148">若要请求特殊文件夹的子文件夹，则可以请求 `children` 集合，或使用 [expand](/graph/query-parameters) 选项展开子集合。</span><span class="sxs-lookup"><span data-stu-id="532e3-148">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
+<span data-ttu-id="78fa9-148">若要请求特殊文件夹的子文件夹，则可以请求 `children` 集合，或使用 [expand](/graph/query-parameters) 选项展开子集合。</span><span class="sxs-lookup"><span data-stu-id="78fa9-148">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="532e3-149">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="532e3-149">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="78fa9-149">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="78fa9-149">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="532e3-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="532e3-150">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="78fa9-150">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="78fa9-150">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{name}/children
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="532e3-151">C#</span><span class="sxs-lookup"><span data-stu-id="532e3-151">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="78fa9-151">C#</span><span class="sxs-lookup"><span data-stu-id="78fa9-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="532e3-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="532e3-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78fa9-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78fa9-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="532e3-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="532e3-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="78fa9-153">目标-C</span><span class="sxs-lookup"><span data-stu-id="78fa9-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="532e3-154">响应</span><span class="sxs-lookup"><span data-stu-id="532e3-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="78fa9-154">响应</span><span class="sxs-lookup"><span data-stu-id="78fa9-154">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -144,11 +144,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="532e3-155">注解</span><span class="sxs-lookup"><span data-stu-id="532e3-155">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="78fa9-155">注解</span><span class="sxs-lookup"><span data-stu-id="78fa9-155">Remarks</span></span>
 
-> <span data-ttu-id="532e3-156">**注意：** 带有 `specialFolder` facet 的 DriveItem 指示项目是特殊文件夹，且可以通过 `special` 集合访问。</span><span class="sxs-lookup"><span data-stu-id="532e3-156">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
+> <span data-ttu-id="78fa9-156">**注意：** 带有 `specialFolder` facet 的 DriveItem 指示项目是特殊文件夹，且可以通过 `special` 集合访问。</span><span class="sxs-lookup"><span data-stu-id="78fa9-156">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
 
-<span data-ttu-id="532e3-157">如果应用拥有只读权限，且特殊文件夹尚不存在，那么可能无法请求获取特殊文件夹或其子项，响应为 `404 Not Found` 或 `403 Forbidden` 错误。</span><span class="sxs-lookup"><span data-stu-id="532e3-157">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
+<span data-ttu-id="78fa9-157">如果应用拥有只读权限，且特殊文件夹尚不存在，那么可能无法请求获取特殊文件夹或其子项，响应为 `404 Not Found` 或 `403 Forbidden` 错误。</span><span class="sxs-lookup"><span data-stu-id="78fa9-157">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
 
 <!--
 {

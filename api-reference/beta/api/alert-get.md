@@ -5,30 +5,30 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2783b5eb961fd945286b53f4f87ba29085f81530
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f1daccef71f05ea73056ad00cb11c0ddac91b6a4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408424"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719099"
 ---
-# <a name="get-alert"></a><span data-ttu-id="50a12-103">获取警报</span><span class="sxs-lookup"><span data-stu-id="50a12-103">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="aff5e-103">获取警报</span><span class="sxs-lookup"><span data-stu-id="aff5e-103">Get alert</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="50a12-104">检索[alert](../resources/alert.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="50a12-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="aff5e-104">检索[alert](../resources/alert.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="aff5e-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="50a12-105">权限</span><span class="sxs-lookup"><span data-stu-id="50a12-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="aff5e-105">权限</span><span class="sxs-lookup"><span data-stu-id="aff5e-105">Permissions</span></span>
 
-<span data-ttu-id="50a12-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="50a12-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aff5e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aff5e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="50a12-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="50a12-108">Permission type</span></span>      | <span data-ttu-id="50a12-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="50a12-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aff5e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="aff5e-108">Permission type</span></span>      | <span data-ttu-id="aff5e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aff5e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="50a12-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="50a12-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="50a12-111">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50a12-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="50a12-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="50a12-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="50a12-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="50a12-113">Not supported.</span></span>  |
-|<span data-ttu-id="50a12-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="50a12-114">Application</span></span> | <span data-ttu-id="50a12-115">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50a12-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="aff5e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aff5e-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="aff5e-111">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aff5e-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="aff5e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aff5e-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="aff5e-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="aff5e-113">Not supported.</span></span>  |
+|<span data-ttu-id="aff5e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="aff5e-114">Application</span></span> | <span data-ttu-id="aff5e-115">SecurityEvents.Read.All，SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aff5e-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="50a12-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="50a12-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aff5e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aff5e-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,53 +36,53 @@ ms.locfileid: "36408424"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="50a12-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="50a12-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="aff5e-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="aff5e-117">Request headers</span></span>
 
-| <span data-ttu-id="50a12-118">名称</span><span class="sxs-lookup"><span data-stu-id="50a12-118">Name</span></span>      |<span data-ttu-id="50a12-119">说明</span><span class="sxs-lookup"><span data-stu-id="50a12-119">Description</span></span>|
+| <span data-ttu-id="aff5e-118">名称</span><span class="sxs-lookup"><span data-stu-id="aff5e-118">Name</span></span>      |<span data-ttu-id="aff5e-119">说明</span><span class="sxs-lookup"><span data-stu-id="aff5e-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="50a12-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="50a12-120">Authorization</span></span>  | <span data-ttu-id="50a12-121">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="50a12-121">Bearer {code}.</span></span> <span data-ttu-id="50a12-122">必需。</span><span class="sxs-lookup"><span data-stu-id="50a12-122">Required.</span></span>|
+| <span data-ttu-id="aff5e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="aff5e-120">Authorization</span></span>  | <span data-ttu-id="aff5e-121">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="aff5e-121">Bearer {code}.</span></span> <span data-ttu-id="aff5e-122">必需。</span><span class="sxs-lookup"><span data-stu-id="aff5e-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="50a12-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="50a12-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="aff5e-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="aff5e-123">Request body</span></span>
 
-<span data-ttu-id="50a12-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="50a12-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="aff5e-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="aff5e-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="50a12-125">响应</span><span class="sxs-lookup"><span data-stu-id="50a12-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aff5e-125">响应</span><span class="sxs-lookup"><span data-stu-id="aff5e-125">Response</span></span>
 
-<span data-ttu-id="50a12-126">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。</span><span class="sxs-lookup"><span data-stu-id="50a12-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="50a12-127">如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。</span><span class="sxs-lookup"><span data-stu-id="50a12-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="50a12-128">有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="50a12-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="aff5e-126">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。</span><span class="sxs-lookup"><span data-stu-id="aff5e-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="aff5e-127">如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。</span><span class="sxs-lookup"><span data-stu-id="aff5e-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="aff5e-128">有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。</span><span class="sxs-lookup"><span data-stu-id="aff5e-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="50a12-129">示例</span><span class="sxs-lookup"><span data-stu-id="50a12-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aff5e-129">示例</span><span class="sxs-lookup"><span data-stu-id="aff5e-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="50a12-130">请求</span><span class="sxs-lookup"><span data-stu-id="50a12-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="aff5e-130">请求</span><span class="sxs-lookup"><span data-stu-id="aff5e-130">Request</span></span>
 
-<span data-ttu-id="50a12-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="50a12-131">The following is an example of the request.</span></span>
+<span data-ttu-id="aff5e-131">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="aff5e-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="50a12-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="50a12-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="aff5e-132">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="aff5e-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_alert"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="50a12-133">C#</span><span class="sxs-lookup"><span data-stu-id="50a12-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="aff5e-133">C#</span><span class="sxs-lookup"><span data-stu-id="aff5e-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="50a12-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50a12-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aff5e-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aff5e-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="50a12-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="50a12-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="aff5e-135">目标-C</span><span class="sxs-lookup"><span data-stu-id="aff5e-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="50a12-136">响应</span><span class="sxs-lookup"><span data-stu-id="50a12-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="aff5e-136">响应</span><span class="sxs-lookup"><span data-stu-id="aff5e-136">Response</span></span>
 
-<span data-ttu-id="50a12-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="50a12-137">The following is an example of the response.</span></span>
+<span data-ttu-id="aff5e-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="aff5e-137">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
