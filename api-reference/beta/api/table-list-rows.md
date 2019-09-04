@@ -5,76 +5,76 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5371f4dd968cbfa58bd600445acbd35cdf02a78c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 99bb88587259cfc0deb423df4e41bd0db5601193
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421490"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722221"
 ---
-# <a name="list-rows"></a><span data-ttu-id="5232a-103">列出行</span><span class="sxs-lookup"><span data-stu-id="5232a-103">List rows</span></span>
+# <a name="list-rows"></a><span data-ttu-id="7b05e-103">列出行</span><span class="sxs-lookup"><span data-stu-id="7b05e-103">List rows</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5232a-104">检索 tablerow 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="5232a-104">Retrieve a list of tablerow objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5232a-105">权限</span><span class="sxs-lookup"><span data-stu-id="5232a-105">Permissions</span></span>
-<span data-ttu-id="5232a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5232a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7b05e-104">检索 tablerow 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="7b05e-104">Retrieve a list of tablerow objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7b05e-105">权限</span><span class="sxs-lookup"><span data-stu-id="7b05e-105">Permissions</span></span>
+<span data-ttu-id="7b05e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7b05e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5232a-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="5232a-108">Permission type</span></span>      | <span data-ttu-id="5232a-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5232a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7b05e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7b05e-108">Permission type</span></span>      | <span data-ttu-id="7b05e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7b05e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5232a-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5232a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5232a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5232a-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5232a-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5232a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5232a-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5232a-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5232a-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="5232a-114">Application</span></span> | <span data-ttu-id="5232a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="5232a-115">Not supported.</span></span> |
+|<span data-ttu-id="7b05e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7b05e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7b05e-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b05e-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="7b05e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7b05e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b05e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b05e-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="7b05e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7b05e-114">Application</span></span> | <span data-ttu-id="7b05e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7b05e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5232a-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5232a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b05e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7b05e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5232a-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5232a-117">Optional query parameters</span></span>
-<span data-ttu-id="5232a-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5232a-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="5232a-119">为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。</span><span class="sxs-lookup"><span data-stu-id="5232a-119">For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="5232a-120">这有助于避免较大的结果集带来的性能问题。</span><span class="sxs-lookup"><span data-stu-id="5232a-120">This will help avoid performance problems related to large result sets.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7b05e-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7b05e-117">Optional query parameters</span></span>
+<span data-ttu-id="7b05e-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7b05e-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="7b05e-119">为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。</span><span class="sxs-lookup"><span data-stu-id="7b05e-119">For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="7b05e-120">这有助于避免较大的结果集带来的性能问题。</span><span class="sxs-lookup"><span data-stu-id="7b05e-120">This will help avoid performance problems related to large result sets.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5232a-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="5232a-121">Request headers</span></span>
-| <span data-ttu-id="5232a-122">名称</span><span class="sxs-lookup"><span data-stu-id="5232a-122">Name</span></span>      |<span data-ttu-id="5232a-123">说明</span><span class="sxs-lookup"><span data-stu-id="5232a-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7b05e-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="7b05e-121">Request headers</span></span>
+| <span data-ttu-id="7b05e-122">名称</span><span class="sxs-lookup"><span data-stu-id="7b05e-122">Name</span></span>      |<span data-ttu-id="7b05e-123">说明</span><span class="sxs-lookup"><span data-stu-id="7b05e-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5232a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5232a-124">Authorization</span></span>  | <span data-ttu-id="5232a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5232a-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5232a-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5232a-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="5232a-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="5232a-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="7b05e-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b05e-124">Authorization</span></span>  | <span data-ttu-id="7b05e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7b05e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7b05e-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7b05e-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="7b05e-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="7b05e-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5232a-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="5232a-130">Request body</span></span>
-<span data-ttu-id="5232a-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5232a-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7b05e-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="7b05e-130">Request body</span></span>
+<span data-ttu-id="7b05e-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7b05e-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5232a-132">响应</span><span class="sxs-lookup"><span data-stu-id="5232a-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7b05e-132">响应</span><span class="sxs-lookup"><span data-stu-id="7b05e-132">Response</span></span>
 
-<span data-ttu-id="5232a-133">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookTableRow](../resources/workbooktablerow.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="5232a-133">If successful, this method returns a `200 OK` response code and collection of [workbookTableRow](../resources/workbooktablerow.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5232a-134">示例</span><span class="sxs-lookup"><span data-stu-id="5232a-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5232a-135">请求</span><span class="sxs-lookup"><span data-stu-id="5232a-135">Request</span></span>
-<span data-ttu-id="5232a-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5232a-136">Here is an example of the request.</span></span>
+<span data-ttu-id="7b05e-133">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookTableRow](../resources/workbooktablerow.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="7b05e-133">If successful, this method returns a `200 OK` response code and collection of [workbookTableRow](../resources/workbooktablerow.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7b05e-134">示例</span><span class="sxs-lookup"><span data-stu-id="7b05e-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7b05e-135">请求</span><span class="sxs-lookup"><span data-stu-id="7b05e-135">Request</span></span>
+<span data-ttu-id="7b05e-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7b05e-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5232a-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="5232a-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7b05e-137">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="7b05e-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_table_rows"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5232a-138">C#</span><span class="sxs-lookup"><span data-stu-id="5232a-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7b05e-138">C#</span><span class="sxs-lookup"><span data-stu-id="7b05e-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-table-rows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5232a-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5232a-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7b05e-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7b05e-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-table-rows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5232a-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="5232a-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7b05e-140">目标-C</span><span class="sxs-lookup"><span data-stu-id="7b05e-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-table-rows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5232a-141">响应</span><span class="sxs-lookup"><span data-stu-id="5232a-141">Response</span></span>
-<span data-ttu-id="5232a-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5232a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7b05e-141">响应</span><span class="sxs-lookup"><span data-stu-id="7b05e-141">Response</span></span>
+<span data-ttu-id="7b05e-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7b05e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,10 +96,10 @@ Content-length: 82
 }
 ```
 
-> <span data-ttu-id="5232a-145">
-  \**注意：\** 使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数可逐个浏览许多行。</span><span class="sxs-lookup"><span data-stu-id="5232a-145">**Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of rows.</span></span>
+> <span data-ttu-id="7b05e-145">
+  \**注意：\** 使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数可逐个浏览许多行。</span><span class="sxs-lookup"><span data-stu-id="7b05e-145">**Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of rows.</span></span>
 
-<span data-ttu-id="5232a-146">示例：</span><span class="sxs-lookup"><span data-stu-id="5232a-146">Example:</span></span> 
+<span data-ttu-id="7b05e-146">示例：</span><span class="sxs-lookup"><span data-stu-id="7b05e-146">Example:</span></span> 
 
 `https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5`
 `https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5`

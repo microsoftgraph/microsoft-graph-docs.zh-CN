@@ -5,51 +5,51 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 1b8b27feb5d8f261b39e2fa090d1e708394490ff
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 97fed1e7271ab39bad64f1bb56ac1696e351b4cf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409854"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722291"
 ---
-# <a name="list-subscriptions"></a><span data-ttu-id="e8418-103">列出订阅</span><span class="sxs-lookup"><span data-stu-id="e8418-103">List subscriptions</span></span>
+# <a name="list-subscriptions"></a><span data-ttu-id="98164-103">列出订阅</span><span class="sxs-lookup"><span data-stu-id="98164-103">List subscriptions</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e8418-104">检索 webhook 订阅的列表。</span><span class="sxs-lookup"><span data-stu-id="e8418-104">Retrieve a list of webhook subscriptions.</span></span> <span data-ttu-id="e8418-105">响应的内容取决于在其中调用应用程序的上下文。有关详细信息, 请参阅以下方案。</span><span class="sxs-lookup"><span data-stu-id="e8418-105">The content of the response depends on the context in which the app is calling; see the scenarios below for details.</span></span>
+<span data-ttu-id="98164-104">检索 webhook 订阅的列表。</span><span class="sxs-lookup"><span data-stu-id="98164-104">Retrieve a list of webhook subscriptions.</span></span> <span data-ttu-id="98164-105">响应的内容取决于在其中调用应用程序的上下文。有关详细信息, 请参阅以下方案。</span><span class="sxs-lookup"><span data-stu-id="98164-105">The content of the response depends on the context in which the app is calling; see the scenarios below for details.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e8418-106">权限</span><span class="sxs-lookup"><span data-stu-id="e8418-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="98164-106">权限</span><span class="sxs-lookup"><span data-stu-id="98164-106">Permissions</span></span>
 
-<span data-ttu-id="e8418-107">此 API 支持以下权限范围；要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e8418-107">This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98164-107">此 API 支持以下权限范围；要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="98164-107">This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e8418-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e8418-108">Permission type</span></span>  | <span data-ttu-id="e8418-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e8418-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="98164-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="98164-108">Permission type</span></span>  | <span data-ttu-id="98164-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="98164-109">Permissions (from least to most privileged)</span></span>  |
 |:---------------- |:-------------------------------------------- |
-| <span data-ttu-id="e8418-110">[委派](/graph/auth-v2-user)(工作或学校帐户)</span><span class="sxs-lookup"><span data-stu-id="e8418-110">[Delegated](/graph/auth-v2-user) (work or school account)</span></span> | <span data-ttu-id="e8418-111">[创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。</span><span class="sxs-lookup"><span data-stu-id="e8418-111">Permission required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below).</span></span> |
-| <span data-ttu-id="e8418-112">[委派](/graph/auth-v2-user)(个人 Microsoft 帐户)</span><span class="sxs-lookup"><span data-stu-id="e8418-112">[Delegated](/graph/auth-v2-user) (personal Microsoft account)</span></span> | <span data-ttu-id="e8418-113">[创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。</span><span class="sxs-lookup"><span data-stu-id="e8418-113">Permission required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below).</span></span> |
-| [<span data-ttu-id="e8418-114">Application</span><span class="sxs-lookup"><span data-stu-id="e8418-114">Application</span></span>](/graph/auth-v2-service) | <span data-ttu-id="e8418-115">[创建订阅](subscription-post-subscriptions.md)所需的权限。</span><span class="sxs-lookup"><span data-stu-id="e8418-115">Permission required to [create subscription](subscription-post-subscriptions.md).</span></span> |
+| <span data-ttu-id="98164-110">[委派](/graph/auth-v2-user)(工作或学校帐户)</span><span class="sxs-lookup"><span data-stu-id="98164-110">[Delegated](/graph/auth-v2-user) (work or school account)</span></span> | <span data-ttu-id="98164-111">[创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。</span><span class="sxs-lookup"><span data-stu-id="98164-111">Permission required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below).</span></span> |
+| <span data-ttu-id="98164-112">[委派](/graph/auth-v2-user)(个人 Microsoft 帐户)</span><span class="sxs-lookup"><span data-stu-id="98164-112">[Delegated](/graph/auth-v2-user) (personal Microsoft account)</span></span> | <span data-ttu-id="98164-113">[创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。</span><span class="sxs-lookup"><span data-stu-id="98164-113">Permission required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below).</span></span> |
+| [<span data-ttu-id="98164-114">Application</span><span class="sxs-lookup"><span data-stu-id="98164-114">Application</span></span>](/graph/auth-v2-service) | <span data-ttu-id="98164-115">[创建订阅](subscription-post-subscriptions.md)所需的权限。</span><span class="sxs-lookup"><span data-stu-id="98164-115">Permission required to [create subscription](subscription-post-subscriptions.md).</span></span> |
 
-<span data-ttu-id="e8418-116">响应结果基于调用应用的上下文。</span><span class="sxs-lookup"><span data-stu-id="e8418-116">Response results are based on the context of the calling app.</span></span> <span data-ttu-id="e8418-117">以下是常见方案的摘要：</span><span class="sxs-lookup"><span data-stu-id="e8418-117">The following is a summary of the common scenarios:</span></span>
+<span data-ttu-id="98164-116">响应结果基于调用应用的上下文。</span><span class="sxs-lookup"><span data-stu-id="98164-116">Response results are based on the context of the calling app.</span></span> <span data-ttu-id="98164-117">以下是常见方案的摘要：</span><span class="sxs-lookup"><span data-stu-id="98164-117">The following is a summary of the common scenarios:</span></span>
 
-### <a name="basic-scenarios"></a><span data-ttu-id="e8418-118">基本方案</span><span class="sxs-lookup"><span data-stu-id="e8418-118">Basic scenarios</span></span>
+### <a name="basic-scenarios"></a><span data-ttu-id="98164-118">基本方案</span><span class="sxs-lookup"><span data-stu-id="98164-118">Basic scenarios</span></span>
 
-<span data-ttu-id="e8418-119">最常见的情况是，应用程序希望检索最初为当前登录用户或者检索目录中的所有用户（工作/学校帐户）创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-119">Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in the directory (work/school accounts).</span></span> <span data-ttu-id="e8418-120">除了应用最初用于创建订阅的权限外，这些方案不需要任何特殊权限。</span><span class="sxs-lookup"><span data-stu-id="e8418-120">These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.</span></span>
+<span data-ttu-id="98164-119">最常见的情况是，应用程序希望检索最初为当前登录用户或者检索目录中的所有用户（工作/学校帐户）创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-119">Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in the directory (work/school accounts).</span></span> <span data-ttu-id="98164-120">除了应用最初用于创建订阅的权限外，这些方案不需要任何特殊权限。</span><span class="sxs-lookup"><span data-stu-id="98164-120">These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.</span></span>
 
-| <span data-ttu-id="e8418-121">调用应用程序的上下文</span><span class="sxs-lookup"><span data-stu-id="e8418-121">Context of the calling app</span></span> | <span data-ttu-id="e8418-122">响应包含</span><span class="sxs-lookup"><span data-stu-id="e8418-122">Response contains</span></span> |
+| <span data-ttu-id="98164-121">调用应用程序的上下文</span><span class="sxs-lookup"><span data-stu-id="98164-121">Context of the calling app</span></span> | <span data-ttu-id="98164-122">响应包含</span><span class="sxs-lookup"><span data-stu-id="98164-122">Response contains</span></span> |
 |:-----|:---------------- |
-| <span data-ttu-id="e8418-123">应用程序代表已登录用户（委派权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="e8418-123">App is calling on behalf of the signed-in user (delegated permission).</span></span> <br/><span data-ttu-id="e8418-124">-且-</span><span class="sxs-lookup"><span data-stu-id="e8418-124">-and-</span></span><br/><span data-ttu-id="e8418-125">应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。</span><span class="sxs-lookup"><span data-stu-id="e8418-125">App has the original permission required to [create the subscription](subscription-post-subscriptions.md).</span></span><br/><br/><span data-ttu-id="e8418-126">注意：这适用于个人 Microsoft 帐户和工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="e8418-126">Note: This applies to both personal Microsoft accounts and work/school accounts.</span></span> | <span data-ttu-id="e8418-127">**此应用**仅为登录用户创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-127">Subscriptions created by **this app** for the signed-in user only.</span></span> |
-| <span data-ttu-id="e8418-128">应用程序代表本身（应用程序权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="e8418-128">App is calling on behalf of itself (application permission).</span></span><br/><span data-ttu-id="e8418-129">-且-</span><span class="sxs-lookup"><span data-stu-id="e8418-129">-and-</span></span><br/><span data-ttu-id="e8418-130">应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。</span><span class="sxs-lookup"><span data-stu-id="e8418-130">App has the original permission required to [create the subscription](subscription-post-subscriptions.md).</span></span><br/><br/><span data-ttu-id="e8418-131">注意：这仅适用于工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="e8418-131">Note: This applies to work/school accounts only.</span></span>| <span data-ttu-id="e8418-132">**此应用**仅为自己或者目录中的任何用户创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-132">Subscriptions created by **this app** for itself or for any user in the directory.</span></span>|
+| <span data-ttu-id="98164-123">应用程序代表已登录用户（委派权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="98164-123">App is calling on behalf of the signed-in user (delegated permission).</span></span> <br/><span data-ttu-id="98164-124">-且-</span><span class="sxs-lookup"><span data-stu-id="98164-124">-and-</span></span><br/><span data-ttu-id="98164-125">应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。</span><span class="sxs-lookup"><span data-stu-id="98164-125">App has the original permission required to [create the subscription](subscription-post-subscriptions.md).</span></span><br/><br/><span data-ttu-id="98164-126">注意：这适用于个人 Microsoft 帐户和工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="98164-126">Note: This applies to both personal Microsoft accounts and work/school accounts.</span></span> | <span data-ttu-id="98164-127">**此应用**仅为登录用户创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-127">Subscriptions created by **this app** for the signed-in user only.</span></span> |
+| <span data-ttu-id="98164-128">应用程序代表本身（应用程序权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="98164-128">App is calling on behalf of itself (application permission).</span></span><br/><span data-ttu-id="98164-129">-且-</span><span class="sxs-lookup"><span data-stu-id="98164-129">-and-</span></span><br/><span data-ttu-id="98164-130">应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。</span><span class="sxs-lookup"><span data-stu-id="98164-130">App has the original permission required to [create the subscription](subscription-post-subscriptions.md).</span></span><br/><br/><span data-ttu-id="98164-131">注意：这仅适用于工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="98164-131">Note: This applies to work/school accounts only.</span></span>| <span data-ttu-id="98164-132">**此应用**仅为自己或者目录中的任何用户创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-132">Subscriptions created by **this app** for itself or for any user in the directory.</span></span>|
 
-### <a name="advanced-scenarios"></a><span data-ttu-id="e8418-133">高级方案</span><span class="sxs-lookup"><span data-stu-id="e8418-133">Advanced scenarios</span></span>
+### <a name="advanced-scenarios"></a><span data-ttu-id="98164-133">高级方案</span><span class="sxs-lookup"><span data-stu-id="98164-133">Advanced scenarios</span></span>
 
-<span data-ttu-id="e8418-134">在某些情况下，应用想要检索其他应用创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-134">In some cases, an app wants to retrieve subscriptions created by other apps.</span></span> <span data-ttu-id="e8418-135">例如，用户希望看到任何应用程序代表他们创建的所有订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-135">For example, a user wants to see all subscriptions created by any app on their behalf.</span></span> <span data-ttu-id="e8418-136">或者，管理员可能希望查看其目录中所有应用的所有订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-136">Or, an administrator may want to see all subscriptions from all apps in their directory.</span></span>
-<span data-ttu-id="e8418-137">对于此类方案，委派权限 Subscription.Read.All 是必需的。</span><span class="sxs-lookup"><span data-stu-id="e8418-137">For such scenarios, a delegated permission Subscription.Read.All is required.</span></span>
+<span data-ttu-id="98164-134">在某些情况下，应用想要检索其他应用创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-134">In some cases, an app wants to retrieve subscriptions created by other apps.</span></span> <span data-ttu-id="98164-135">例如，用户希望看到任何应用程序代表他们创建的所有订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-135">For example, a user wants to see all subscriptions created by any app on their behalf.</span></span> <span data-ttu-id="98164-136">或者，管理员可能希望查看其目录中所有应用的所有订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-136">Or, an administrator may want to see all subscriptions from all apps in their directory.</span></span>
+<span data-ttu-id="98164-137">对于此类方案，委派权限 Subscription.Read.All 是必需的。</span><span class="sxs-lookup"><span data-stu-id="98164-137">For such scenarios, a delegated permission Subscription.Read.All is required.</span></span>
 
-| <span data-ttu-id="e8418-138">调用应用程序的上下文</span><span class="sxs-lookup"><span data-stu-id="e8418-138">Context of the calling app</span></span> | <span data-ttu-id="e8418-139">响应包含</span><span class="sxs-lookup"><span data-stu-id="e8418-139">Response contains</span></span> |
+| <span data-ttu-id="98164-138">调用应用程序的上下文</span><span class="sxs-lookup"><span data-stu-id="98164-138">Context of the calling app</span></span> | <span data-ttu-id="98164-139">响应包含</span><span class="sxs-lookup"><span data-stu-id="98164-139">Response contains</span></span> |
 |:-----|:---------------- |
-| <span data-ttu-id="e8418-140">应用程序代表已登录用户（委派权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="e8418-140">App is calling on behalf of the signed-in user (delegated permission).</span></span> <span data-ttu-id="e8418-141">*用户是非管理员*。</span><span class="sxs-lookup"><span data-stu-id="e8418-141">*The user is a non-admin*.</span></span> <br/><span data-ttu-id="e8418-142">-且-</span><span class="sxs-lookup"><span data-stu-id="e8418-142">-and-</span></span><br/><span data-ttu-id="e8418-143">应用程序具有权限 Subscription.Read.All</span><span class="sxs-lookup"><span data-stu-id="e8418-143">App has the permission Subscription.Read.All</span></span><br/><br/><span data-ttu-id="e8418-144">注意：这适用于个人 Microsoft 帐户和工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="e8418-144">Note: This applies to both personal Microsoft accounts and work/school accounts.</span></span> | <span data-ttu-id="e8418-145">**任何应用**仅为登录用户创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-145">Subscriptions created by **any app** for the signed-in user only.</span></span> |
-| <span data-ttu-id="e8418-146">应用程序代表已登录用户（委派权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="e8418-146">App is calling on behalf of the signed-in user (delegated permission).</span></span> <span data-ttu-id="e8418-147">*用户是管理员*。</span><span class="sxs-lookup"><span data-stu-id="e8418-147">*The user is an admin*.</span></span><br/><span data-ttu-id="e8418-148">-且-</span><span class="sxs-lookup"><span data-stu-id="e8418-148">-and-</span></span><br/><span data-ttu-id="e8418-149">应用程序具有权限 Subscription.Read.All</span><span class="sxs-lookup"><span data-stu-id="e8418-149">App has the permission Subscription.Read.All</span></span><br/><br/><span data-ttu-id="e8418-150">注意：这仅适用于工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="e8418-150">Note: This applies to work/school accounts only.</span></span> | <span data-ttu-id="e8418-151">**任何应用**为目录中的**任何用户**创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="e8418-151">Subscriptions created by **any app** for **any user** in the directory.</span></span>|
+| <span data-ttu-id="98164-140">应用程序代表已登录用户（委派权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="98164-140">App is calling on behalf of the signed-in user (delegated permission).</span></span> <span data-ttu-id="98164-141">*用户是非管理员*。</span><span class="sxs-lookup"><span data-stu-id="98164-141">*The user is a non-admin*.</span></span> <br/><span data-ttu-id="98164-142">-且-</span><span class="sxs-lookup"><span data-stu-id="98164-142">-and-</span></span><br/><span data-ttu-id="98164-143">应用程序具有权限 Subscription.Read.All</span><span class="sxs-lookup"><span data-stu-id="98164-143">App has the permission Subscription.Read.All</span></span><br/><br/><span data-ttu-id="98164-144">注意：这适用于个人 Microsoft 帐户和工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="98164-144">Note: This applies to both personal Microsoft accounts and work/school accounts.</span></span> | <span data-ttu-id="98164-145">**任何应用**仅为登录用户创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-145">Subscriptions created by **any app** for the signed-in user only.</span></span> |
+| <span data-ttu-id="98164-146">应用程序代表已登录用户（委派权限）进行调用。</span><span class="sxs-lookup"><span data-stu-id="98164-146">App is calling on behalf of the signed-in user (delegated permission).</span></span> <span data-ttu-id="98164-147">*用户是管理员*。</span><span class="sxs-lookup"><span data-stu-id="98164-147">*The user is an admin*.</span></span><br/><span data-ttu-id="98164-148">-且-</span><span class="sxs-lookup"><span data-stu-id="98164-148">-and-</span></span><br/><span data-ttu-id="98164-149">应用程序具有权限 Subscription.Read.All</span><span class="sxs-lookup"><span data-stu-id="98164-149">App has the permission Subscription.Read.All</span></span><br/><br/><span data-ttu-id="98164-150">注意：这仅适用于工作/学校帐户。</span><span class="sxs-lookup"><span data-stu-id="98164-150">Note: This applies to work/school accounts only.</span></span> | <span data-ttu-id="98164-151">**任何应用**为目录中的**任何用户**创建的订阅。</span><span class="sxs-lookup"><span data-stu-id="98164-151">Subscriptions created by **any app** for **any user** in the directory.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e8418-152">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e8418-152">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98164-152">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="98164-152">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -57,56 +57,56 @@ ms.locfileid: "36409854"
 GET /subscriptions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e8418-153">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e8418-153">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="98164-153">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="98164-153">Optional query parameters</span></span>
 
-<span data-ttu-id="e8418-154">此方法不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e8418-154">This method does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="98164-154">此方法不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="98164-154">This method does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e8418-155">请求标头</span><span class="sxs-lookup"><span data-stu-id="e8418-155">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="98164-155">请求标头</span><span class="sxs-lookup"><span data-stu-id="98164-155">Request headers</span></span>
 
-| <span data-ttu-id="e8418-156">名称</span><span class="sxs-lookup"><span data-stu-id="e8418-156">Name</span></span>       | <span data-ttu-id="e8418-157">类型</span><span class="sxs-lookup"><span data-stu-id="e8418-157">Type</span></span> | <span data-ttu-id="e8418-158">说明</span><span class="sxs-lookup"><span data-stu-id="e8418-158">Description</span></span>|
+| <span data-ttu-id="98164-156">名称</span><span class="sxs-lookup"><span data-stu-id="98164-156">Name</span></span>       | <span data-ttu-id="98164-157">类型</span><span class="sxs-lookup"><span data-stu-id="98164-157">Type</span></span> | <span data-ttu-id="98164-158">说明</span><span class="sxs-lookup"><span data-stu-id="98164-158">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="e8418-159">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8418-159">Authorization</span></span>  | <span data-ttu-id="e8418-160">string</span><span class="sxs-lookup"><span data-stu-id="e8418-160">string</span></span>  | <span data-ttu-id="e8418-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e8418-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="98164-159">Authorization</span><span class="sxs-lookup"><span data-stu-id="98164-159">Authorization</span></span>  | <span data-ttu-id="98164-160">string</span><span class="sxs-lookup"><span data-stu-id="98164-160">string</span></span>  | <span data-ttu-id="98164-p107">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="98164-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e8418-163">请求正文</span><span class="sxs-lookup"><span data-stu-id="e8418-163">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="98164-163">请求正文</span><span class="sxs-lookup"><span data-stu-id="98164-163">Request body</span></span>
 
-<span data-ttu-id="e8418-164">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e8418-164">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="98164-164">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="98164-164">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e8418-165">响应</span><span class="sxs-lookup"><span data-stu-id="e8418-165">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98164-165">响应</span><span class="sxs-lookup"><span data-stu-id="98164-165">Response</span></span>
 
-<span data-ttu-id="e8418-166">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="e8418-166">If successful, this method returns a `200 OK` response code and a list of [subscription](../resources/subscription.md) objects in the response body.</span></span>
+<span data-ttu-id="98164-166">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象列表。</span><span class="sxs-lookup"><span data-stu-id="98164-166">If successful, this method returns a `200 OK` response code and a list of [subscription](../resources/subscription.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e8418-167">示例</span><span class="sxs-lookup"><span data-stu-id="e8418-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98164-167">示例</span><span class="sxs-lookup"><span data-stu-id="98164-167">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e8418-168">请求</span><span class="sxs-lookup"><span data-stu-id="e8418-168">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="98164-168">请求</span><span class="sxs-lookup"><span data-stu-id="98164-168">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e8418-169">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e8418-169">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="98164-169">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="98164-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_subscriptions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e8418-170">C#</span><span class="sxs-lookup"><span data-stu-id="e8418-170">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="98164-170">C#</span><span class="sxs-lookup"><span data-stu-id="98164-170">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e8418-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e8418-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="98164-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98164-171">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e8418-172">目标-C</span><span class="sxs-lookup"><span data-stu-id="e8418-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="98164-172">目标-C</span><span class="sxs-lookup"><span data-stu-id="98164-172">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e8418-173">响应</span><span class="sxs-lookup"><span data-stu-id="e8418-173">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="98164-173">响应</span><span class="sxs-lookup"><span data-stu-id="98164-173">Response</span></span>
 
-<span data-ttu-id="e8418-174">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e8418-174">Here is an example of the response.</span></span> <span data-ttu-id="e8418-175">注意: 为简洁起见, 可能会截断此处显示的响应。</span><span class="sxs-lookup"><span data-stu-id="e8418-175">Note: The response shown here may be truncated for brevity.</span></span> <span data-ttu-id="e8418-176">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e8418-176">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="98164-174">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="98164-174">Here is an example of the response.</span></span> <span data-ttu-id="98164-175">注意: 为简洁起见, 可能会截断此处显示的响应。</span><span class="sxs-lookup"><span data-stu-id="98164-175">Note: The response shown here may be truncated for brevity.</span></span> <span data-ttu-id="98164-176">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="98164-176">All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -151,4 +151,4 @@ Content-length: 586
 }
 -->
 
-<span data-ttu-id="e8418-177">当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。</span><span class="sxs-lookup"><span data-stu-id="e8418-177">When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.</span></span>  <span data-ttu-id="e8418-178">若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="e8418-178">To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="98164-177">当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。</span><span class="sxs-lookup"><span data-stu-id="98164-177">When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.</span></span>  <span data-ttu-id="98164-178">若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="98164-178">To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>

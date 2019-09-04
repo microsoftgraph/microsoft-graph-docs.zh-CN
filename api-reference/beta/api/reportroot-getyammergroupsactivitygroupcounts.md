@@ -5,32 +5,32 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 1ff1de8e165c5418fc46e726fa35debb4cbc44a9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1421771cbfcb6b75cae72b9aa32f414eb2110958
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410967"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724832"
 ---
-# <a name="reportroot-getyammergroupsactivitygroupcounts"></a><span data-ttu-id="d4ecc-103">reportRoot: getYammerGroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="d4ecc-103">reportRoot: getYammerGroupsActivityGroupCounts</span></span>
+# <a name="reportroot-getyammergroupsactivitygroupcounts"></a><span data-ttu-id="f2180-103">reportRoot: getYammerGroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="f2180-103">reportRoot: getYammerGroupsActivityGroupCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d4ecc-104">获取存在的总组数，以及有多少组包含组对话活动。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-104">Get the total number of groups that existed and how many included group conversation activity.</span></span>
+<span data-ttu-id="f2180-104">获取存在的总组数，以及有多少组包含组对话活动。</span><span class="sxs-lookup"><span data-stu-id="f2180-104">Get the total number of groups that existed and how many included group conversation activity.</span></span>
 
-> <span data-ttu-id="d4ecc-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).</span></span>
+> <span data-ttu-id="f2180-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。</span><span class="sxs-lookup"><span data-stu-id="f2180-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d4ecc-106">权限</span><span class="sxs-lookup"><span data-stu-id="d4ecc-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2180-106">权限</span><span class="sxs-lookup"><span data-stu-id="f2180-106">Permissions</span></span>
 
-<span data-ttu-id="d4ecc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f2180-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2180-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d4ecc-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="d4ecc-109">Permission type</span></span>                        | <span data-ttu-id="d4ecc-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d4ecc-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f2180-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2180-109">Permission type</span></span>                        | <span data-ttu-id="f2180-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2180-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="d4ecc-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d4ecc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d4ecc-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d4ecc-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="d4ecc-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d4ecc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d4ecc-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-114">Not supported.</span></span>                           |
-| <span data-ttu-id="d4ecc-115">应用</span><span class="sxs-lookup"><span data-stu-id="d4ecc-115">Application</span></span>                            | <span data-ttu-id="d4ecc-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d4ecc-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="f2180-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2180-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f2180-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2180-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="f2180-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2180-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2180-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f2180-114">Not supported.</span></span>                           |
+| <span data-ttu-id="f2180-115">应用</span><span class="sxs-lookup"><span data-stu-id="f2180-115">Application</span></span>                            | <span data-ttu-id="f2180-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2180-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="d4ecc-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d4ecc-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2180-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2180-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,80 +38,80 @@ ms.locfileid: "36410967"
 GET /reports/getYammerGroupsActivityGroupCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="d4ecc-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="d4ecc-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="f2180-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="f2180-118">Function parameters</span></span>
 
-<span data-ttu-id="d4ecc-119">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="f2180-119">在请求 URL 中，提供以下参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="f2180-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="d4ecc-120">参数</span><span class="sxs-lookup"><span data-stu-id="d4ecc-120">Parameter</span></span> | <span data-ttu-id="d4ecc-121">类型</span><span class="sxs-lookup"><span data-stu-id="d4ecc-121">Type</span></span>   | <span data-ttu-id="d4ecc-122">说明</span><span class="sxs-lookup"><span data-stu-id="d4ecc-122">Description</span></span>                              |
+| <span data-ttu-id="f2180-120">参数</span><span class="sxs-lookup"><span data-stu-id="f2180-120">Parameter</span></span> | <span data-ttu-id="f2180-121">类型</span><span class="sxs-lookup"><span data-stu-id="f2180-121">Type</span></span>   | <span data-ttu-id="f2180-122">说明</span><span class="sxs-lookup"><span data-stu-id="f2180-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="d4ecc-123">period</span><span class="sxs-lookup"><span data-stu-id="d4ecc-123">period</span></span>    | <span data-ttu-id="d4ecc-124">string</span><span class="sxs-lookup"><span data-stu-id="d4ecc-124">string</span></span> | <span data-ttu-id="d4ecc-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="d4ecc-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="d4ecc-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="d4ecc-128">必需。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-128">Required.</span></span> |
+| <span data-ttu-id="f2180-123">period</span><span class="sxs-lookup"><span data-stu-id="f2180-123">period</span></span>    | <span data-ttu-id="f2180-124">string</span><span class="sxs-lookup"><span data-stu-id="f2180-124">string</span></span> | <span data-ttu-id="f2180-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="f2180-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="f2180-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="f2180-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="f2180-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="f2180-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="f2180-128">必需。</span><span class="sxs-lookup"><span data-stu-id="f2180-128">Required.</span></span> |
 
-<span data-ttu-id="d4ecc-129">此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="d4ecc-130">默认输出类型为 text/csv。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-130">The default output type is text/csv.</span></span> <span data-ttu-id="d4ecc-131">但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="f2180-129">此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f2180-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="f2180-130">默认输出类型为 text/csv。</span><span class="sxs-lookup"><span data-stu-id="f2180-130">The default output type is text/csv.</span></span> <span data-ttu-id="f2180-131">但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。</span><span class="sxs-lookup"><span data-stu-id="f2180-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d4ecc-132">请求标头</span><span class="sxs-lookup"><span data-stu-id="d4ecc-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f2180-132">请求标头</span><span class="sxs-lookup"><span data-stu-id="f2180-132">Request headers</span></span>
 
-| <span data-ttu-id="d4ecc-133">名称</span><span class="sxs-lookup"><span data-stu-id="d4ecc-133">Name</span></span>          | <span data-ttu-id="d4ecc-134">说明</span><span class="sxs-lookup"><span data-stu-id="d4ecc-134">Description</span></span>               |
+| <span data-ttu-id="f2180-133">名称</span><span class="sxs-lookup"><span data-stu-id="f2180-133">Name</span></span>          | <span data-ttu-id="f2180-134">说明</span><span class="sxs-lookup"><span data-stu-id="f2180-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="d4ecc-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="d4ecc-135">Authorization</span></span> | <span data-ttu-id="d4ecc-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f2180-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2180-135">Authorization</span></span> | <span data-ttu-id="f2180-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f2180-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="d4ecc-138">响应</span><span class="sxs-lookup"><span data-stu-id="d4ecc-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2180-138">响应</span><span class="sxs-lookup"><span data-stu-id="f2180-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="d4ecc-139">CSV</span><span class="sxs-lookup"><span data-stu-id="d4ecc-139">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="f2180-139">CSV</span><span class="sxs-lookup"><span data-stu-id="f2180-139">CSV</span></span>
 
-<span data-ttu-id="d4ecc-140">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="d4ecc-141">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="f2180-140">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="f2180-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="f2180-141">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="f2180-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="d4ecc-142">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="f2180-142">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="f2180-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="d4ecc-143">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-143">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="f2180-143">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="f2180-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="d4ecc-144">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="d4ecc-144">Report Refresh Date</span></span>
-- <span data-ttu-id="d4ecc-145">总计</span><span class="sxs-lookup"><span data-stu-id="d4ecc-145">Total</span></span>
-- <span data-ttu-id="d4ecc-146">活跃</span><span class="sxs-lookup"><span data-stu-id="d4ecc-146">Active</span></span>
-- <span data-ttu-id="d4ecc-147">报表日期</span><span class="sxs-lookup"><span data-stu-id="d4ecc-147">Report Date</span></span>
-- <span data-ttu-id="d4ecc-148">报表周期</span><span class="sxs-lookup"><span data-stu-id="d4ecc-148">Report Period</span></span>
+- <span data-ttu-id="f2180-144">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="f2180-144">Report Refresh Date</span></span>
+- <span data-ttu-id="f2180-145">总计</span><span class="sxs-lookup"><span data-stu-id="f2180-145">Total</span></span>
+- <span data-ttu-id="f2180-146">活跃</span><span class="sxs-lookup"><span data-stu-id="f2180-146">Active</span></span>
+- <span data-ttu-id="f2180-147">报表日期</span><span class="sxs-lookup"><span data-stu-id="f2180-147">Report Date</span></span>
+- <span data-ttu-id="f2180-148">报表周期</span><span class="sxs-lookup"><span data-stu-id="f2180-148">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="d4ecc-149">JSON</span><span class="sxs-lookup"><span data-stu-id="d4ecc-149">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="f2180-149">JSON</span><span class="sxs-lookup"><span data-stu-id="f2180-149">JSON</span></span>
 
-<span data-ttu-id="d4ecc-150">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-150">If successful, this method returns a `200 OK` response code and a **[yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md)** object in the response body.</span></span>
+<span data-ttu-id="f2180-150">如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="f2180-150">If successful, this method returns a `200 OK` response code and a **[yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d4ecc-151">示例</span><span class="sxs-lookup"><span data-stu-id="d4ecc-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f2180-151">示例</span><span class="sxs-lookup"><span data-stu-id="f2180-151">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="d4ecc-152">CSV</span><span class="sxs-lookup"><span data-stu-id="d4ecc-152">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="f2180-152">CSV</span><span class="sxs-lookup"><span data-stu-id="f2180-152">CSV</span></span>
 
-<span data-ttu-id="d4ecc-153">下面是输出 CSV 的示例。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-153">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="f2180-153">下面是输出 CSV 的示例。</span><span class="sxs-lookup"><span data-stu-id="f2180-153">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d4ecc-154">请求</span><span class="sxs-lookup"><span data-stu-id="d4ecc-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f2180-154">请求</span><span class="sxs-lookup"><span data-stu-id="f2180-154">Request</span></span>
 
-<span data-ttu-id="d4ecc-155">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-155">The following is an example of the request.</span></span>
+<span data-ttu-id="f2180-155">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f2180-155">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d4ecc-156">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d4ecc-156">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f2180-156">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f2180-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getyammergroupsactivitygroupcounts_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityGroupCounts(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d4ecc-157">C#</span><span class="sxs-lookup"><span data-stu-id="d4ecc-157">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f2180-157">C#</span><span class="sxs-lookup"><span data-stu-id="f2180-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getyammergroupsactivitygroupcounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d4ecc-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d4ecc-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2180-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2180-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getyammergroupsactivitygroupcounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d4ecc-159">目标-C</span><span class="sxs-lookup"><span data-stu-id="d4ecc-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2180-159">目标-C</span><span class="sxs-lookup"><span data-stu-id="f2180-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getyammergroupsactivitygroupcounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d4ecc-160">响应</span><span class="sxs-lookup"><span data-stu-id="d4ecc-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f2180-160">响应</span><span class="sxs-lookup"><span data-stu-id="f2180-160">Response</span></span>
 
-<span data-ttu-id="d4ecc-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-161">The following is an example of the response.</span></span>
+<span data-ttu-id="f2180-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f2180-161">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -121,7 +121,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="d4ecc-162">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-162">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="f2180-162">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="f2180-162">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -136,44 +136,44 @@ Content-Type: application/octet-stream
 Report Refresh Date,Total,Active,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="d4ecc-163">JSON</span><span class="sxs-lookup"><span data-stu-id="d4ecc-163">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="f2180-163">JSON</span><span class="sxs-lookup"><span data-stu-id="f2180-163">JSON</span></span>
 
-<span data-ttu-id="d4ecc-164">下面是一个返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-164">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="f2180-164">下面是一个返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="f2180-164">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d4ecc-165">请求</span><span class="sxs-lookup"><span data-stu-id="d4ecc-165">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f2180-165">请求</span><span class="sxs-lookup"><span data-stu-id="f2180-165">Request</span></span>
 
-<span data-ttu-id="d4ecc-166">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-166">The following is an example of the request.</span></span>
+<span data-ttu-id="f2180-166">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f2180-166">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d4ecc-167">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d4ecc-167">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f2180-167">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f2180-167">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getyammergroupsactivitygroupcounts_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityGroupCounts(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d4ecc-168">C#</span><span class="sxs-lookup"><span data-stu-id="d4ecc-168">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f2180-168">C#</span><span class="sxs-lookup"><span data-stu-id="f2180-168">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getyammergroupsactivitygroupcounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d4ecc-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d4ecc-169">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2180-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2180-169">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getyammergroupsactivitygroupcounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d4ecc-170">目标-C</span><span class="sxs-lookup"><span data-stu-id="d4ecc-170">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2180-170">目标-C</span><span class="sxs-lookup"><span data-stu-id="f2180-170">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getyammergroupsactivitygroupcounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d4ecc-171">响应</span><span class="sxs-lookup"><span data-stu-id="d4ecc-171">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f2180-171">响应</span><span class="sxs-lookup"><span data-stu-id="f2180-171">Response</span></span>
 
-<span data-ttu-id="d4ecc-172">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-172">The following is an example of the response.</span></span>
+<span data-ttu-id="f2180-172">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f2180-172">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="d4ecc-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d4ecc-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f2180-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f2180-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
