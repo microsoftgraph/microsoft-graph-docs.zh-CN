@@ -5,82 +5,82 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0878eadd317aef5aa77d88e0f3ade431485ae85c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f52c24bb1b47e1c8c3302ac3b876ae6983d067d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408186"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719010"
 ---
-# <a name="get-applicationsigninsummary"></a><span data-ttu-id="a5a20-103">获取 applicationSignInSummary</span><span class="sxs-lookup"><span data-stu-id="a5a20-103">Get applicationSignInSummary</span></span>
+# <a name="get-applicationsigninsummary"></a><span data-ttu-id="9a057-103">获取 applicationSignInSummary</span><span class="sxs-lookup"><span data-stu-id="9a057-103">Get applicationSignInSummary</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5a20-104">检索[applicationSigninSummary](../resources/applicationsigninsummary.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="a5a20-104">Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.</span></span>
+<span data-ttu-id="9a057-104">检索[applicationSigninSummary](../resources/applicationsigninsummary.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="9a057-104">Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5a20-105">权限</span><span class="sxs-lookup"><span data-stu-id="a5a20-105">Permissions</span></span>
-<span data-ttu-id="a5a20-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="a5a20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9a057-105">权限</span><span class="sxs-lookup"><span data-stu-id="9a057-105">Permissions</span></span>
+<span data-ttu-id="9a057-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="9a057-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="a5a20-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a5a20-108">Permission type</span></span>      | <span data-ttu-id="a5a20-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a5a20-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9a057-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9a057-108">Permission type</span></span>      | <span data-ttu-id="9a057-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9a057-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a5a20-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a5a20-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a5a20-111">Report. All</span><span class="sxs-lookup"><span data-stu-id="a5a20-111">Report.Read.All</span></span> |
-|<span data-ttu-id="a5a20-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a5a20-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5a20-113">不支持</span><span class="sxs-lookup"><span data-stu-id="a5a20-113">Not supported</span></span>   |
-|<span data-ttu-id="a5a20-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a5a20-114">Application</span></span> | <span data-ttu-id="a5a20-115">Report. All</span><span class="sxs-lookup"><span data-stu-id="a5a20-115">Report.Read.All</span></span> | 
+|<span data-ttu-id="9a057-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9a057-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9a057-111">Report. All</span><span class="sxs-lookup"><span data-stu-id="9a057-111">Report.Read.All</span></span> |
+|<span data-ttu-id="9a057-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9a057-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a057-113">不支持</span><span class="sxs-lookup"><span data-stu-id="9a057-113">Not supported</span></span>   |
+|<span data-ttu-id="9a057-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9a057-114">Application</span></span> | <span data-ttu-id="9a057-115">Report. All</span><span class="sxs-lookup"><span data-stu-id="9a057-115">Report.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="a5a20-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a5a20-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9a057-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9a057-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET reports/getAzureADApplicationSignInSummary(period='{period}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="a5a20-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="a5a20-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="9a057-117">函数参数</span><span class="sxs-lookup"><span data-stu-id="9a057-117">Function parameters</span></span>
 
-| <span data-ttu-id="a5a20-118">参数</span><span class="sxs-lookup"><span data-stu-id="a5a20-118">Parameter</span></span> | <span data-ttu-id="a5a20-119">说明</span><span class="sxs-lookup"><span data-stu-id="a5a20-119">Description</span></span> |
+| <span data-ttu-id="9a057-118">参数</span><span class="sxs-lookup"><span data-stu-id="9a057-118">Parameter</span></span> | <span data-ttu-id="9a057-119">说明</span><span class="sxs-lookup"><span data-stu-id="9a057-119">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="a5a20-120">period</span><span class="sxs-lookup"><span data-stu-id="a5a20-120">period</span></span> | <span data-ttu-id="a5a20-121">`D7` (最近七天) 或`D30` (最近30天);其他值会生成错误。</span><span class="sxs-lookup"><span data-stu-id="a5a20-121">Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors.</span></span> |
+| <span data-ttu-id="9a057-120">period</span><span class="sxs-lookup"><span data-stu-id="9a057-120">period</span></span> | <span data-ttu-id="9a057-121">`D7` (最近七天) 或`D30` (最近30天);其他值会生成错误。</span><span class="sxs-lookup"><span data-stu-id="9a057-121">Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="a5a20-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="a5a20-122">Request headers</span></span>
-| <span data-ttu-id="a5a20-123">名称</span><span class="sxs-lookup"><span data-stu-id="a5a20-123">Name</span></span>      |<span data-ttu-id="a5a20-124">说明</span><span class="sxs-lookup"><span data-stu-id="a5a20-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9a057-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="9a057-122">Request headers</span></span>
+| <span data-ttu-id="9a057-123">名称</span><span class="sxs-lookup"><span data-stu-id="9a057-123">Name</span></span>      |<span data-ttu-id="9a057-124">说明</span><span class="sxs-lookup"><span data-stu-id="9a057-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a5a20-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5a20-125">Authorization</span></span> | <span data-ttu-id="a5a20-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="a5a20-126">Bearer {code}</span></span> |
+| <span data-ttu-id="9a057-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="9a057-125">Authorization</span></span> | <span data-ttu-id="9a057-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9a057-126">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a5a20-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a5a20-127">Request body</span></span>
-<span data-ttu-id="a5a20-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a5a20-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9a057-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9a057-127">Request body</span></span>
+<span data-ttu-id="9a057-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9a057-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a5a20-129">响应</span><span class="sxs-lookup"><span data-stu-id="a5a20-129">Response</span></span>
-<span data-ttu-id="a5a20-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[applicationSignInSummary](../resources/applicationsigninsummary.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a5a20-130">If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9a057-129">响应</span><span class="sxs-lookup"><span data-stu-id="9a057-129">Response</span></span>
+<span data-ttu-id="9a057-130">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[applicationSignInSummary](../resources/applicationsigninsummary.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9a057-130">If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5a20-131">示例</span><span class="sxs-lookup"><span data-stu-id="a5a20-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9a057-131">示例</span><span class="sxs-lookup"><span data-stu-id="9a057-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a5a20-132">请求</span><span class="sxs-lookup"><span data-stu-id="a5a20-132">Request</span></span>
-<span data-ttu-id="a5a20-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a5a20-133">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="9a057-132">请求</span><span class="sxs-lookup"><span data-stu-id="9a057-132">Request</span></span>
+<span data-ttu-id="9a057-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9a057-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a5a20-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a5a20-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9a057-134">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="9a057-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationsigninsummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a5a20-135">C#</span><span class="sxs-lookup"><span data-stu-id="a5a20-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9a057-135">C#</span><span class="sxs-lookup"><span data-stu-id="9a057-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsigninsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a5a20-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a5a20-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9a057-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9a057-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationsigninsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a5a20-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="a5a20-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9a057-137">目标-C</span><span class="sxs-lookup"><span data-stu-id="9a057-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationsigninsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="a5a20-138">响应</span><span class="sxs-lookup"><span data-stu-id="a5a20-138">Response</span></span>
-<span data-ttu-id="a5a20-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a5a20-139">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="9a057-138">响应</span><span class="sxs-lookup"><span data-stu-id="9a057-138">Response</span></span>
+<span data-ttu-id="9a057-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9a057-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="a5a20-140">**注意:** 在此处显示的响应对象将缩短 mmight 以提高可读性。</span><span class="sxs-lookup"><span data-stu-id="a5a20-140">**Note:** The response object shown here mmight be shortened for readability.</span></span> <span data-ttu-id="a5a20-141">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a5a20-141">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9a057-140">**注意:** 在此处显示的响应对象将缩短 mmight 以提高可读性。</span><span class="sxs-lookup"><span data-stu-id="9a057-140">**Note:** The response object shown here mmight be shortened for readability.</span></span> <span data-ttu-id="9a057-141">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="9a057-141">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

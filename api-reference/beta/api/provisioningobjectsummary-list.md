@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 98087bf47fb36bc448147aa809f11f574b055e86
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 512c942b6353e722e0de5ca7fe32e33305091ca5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667517"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723348"
 ---
-# <a name="list-provisioningobjectsummary"></a><span data-ttu-id="d02ca-103">列出 provisioningObjectSummary</span><span class="sxs-lookup"><span data-stu-id="d02ca-103">List provisioningObjectSummary</span></span>
+# <a name="list-provisioningobjectsummary"></a><span data-ttu-id="e9117-103">列出 provisioningObjectSummary</span><span class="sxs-lookup"><span data-stu-id="e9117-103">List provisioningObjectSummary</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d02ca-104">获取在你的租户中发生的所有设置事件, 例如, 删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。</span><span class="sxs-lookup"><span data-stu-id="d02ca-104">Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system.</span></span> 
+<span data-ttu-id="e9117-104">获取在你的租户中发生的所有设置事件, 例如, 删除目标应用程序中的组或在从 HR 系统设置用户帐户时创建用户。</span><span class="sxs-lookup"><span data-stu-id="e9117-104">Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="d02ca-105">权限</span><span class="sxs-lookup"><span data-stu-id="d02ca-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e9117-105">权限</span><span class="sxs-lookup"><span data-stu-id="e9117-105">Permissions</span></span>
 
-<span data-ttu-id="d02ca-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d02ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e9117-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e9117-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d02ca-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d02ca-108">Permission type</span></span>      | <span data-ttu-id="d02ca-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d02ca-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e9117-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e9117-108">Permission type</span></span>      | <span data-ttu-id="e9117-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e9117-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d02ca-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d02ca-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d02ca-111">AuditLog 和所有目录。全部读取. 所有</span><span class="sxs-lookup"><span data-stu-id="d02ca-111">AuditLog.Read.All and Directory.Read.All</span></span> |
-|<span data-ttu-id="d02ca-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d02ca-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d02ca-113">不支持</span><span class="sxs-lookup"><span data-stu-id="d02ca-113">Not supported</span></span>   |
-|<span data-ttu-id="d02ca-114">应用</span><span class="sxs-lookup"><span data-stu-id="d02ca-114">Application</span></span> | <span data-ttu-id="d02ca-115">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="d02ca-115">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="e9117-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e9117-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e9117-111">AuditLog 和所有目录。全部读取. 所有</span><span class="sxs-lookup"><span data-stu-id="e9117-111">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="e9117-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e9117-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9117-113">不支持</span><span class="sxs-lookup"><span data-stu-id="e9117-113">Not supported</span></span>   |
+|<span data-ttu-id="e9117-114">应用</span><span class="sxs-lookup"><span data-stu-id="e9117-114">Application</span></span> | <span data-ttu-id="e9117-115">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="e9117-115">AuditLog.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d02ca-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d02ca-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e9117-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e9117-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,89 +36,89 @@ ms.locfileid: "36667517"
 GET /auditLogs/provisioning
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d02ca-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="d02ca-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e9117-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="e9117-117">Optional query parameters</span></span>
 
-<span data-ttu-id="d02ca-118">此方法支持以下 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="d02ca-118">This method supports the following OData query parameter to help customize the response.</span></span> <span data-ttu-id="d02ca-119">请注意, 除了状态之外, 筛选器都是区分大小写的。</span><span class="sxs-lookup"><span data-stu-id="d02ca-119">Note that the filters are all case sensitive except for status.</span></span> 
+<span data-ttu-id="e9117-118">此方法支持以下 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="e9117-118">This method supports the following OData query parameter to help customize the response.</span></span> <span data-ttu-id="e9117-119">请注意, 除了状态之外, 筛选器都是区分大小写的。</span><span class="sxs-lookup"><span data-stu-id="e9117-119">Note that the filters are all case sensitive except for status.</span></span> 
 
-|<span data-ttu-id="d02ca-120">名称</span><span class="sxs-lookup"><span data-stu-id="d02ca-120">Name</span></span>     |<span data-ttu-id="d02ca-121">说明</span><span class="sxs-lookup"><span data-stu-id="d02ca-121">Description</span></span>                            |<span data-ttu-id="d02ca-122">示例</span><span class="sxs-lookup"><span data-stu-id="d02ca-122">Example</span></span>|
+|<span data-ttu-id="e9117-120">名称</span><span class="sxs-lookup"><span data-stu-id="e9117-120">Name</span></span>     |<span data-ttu-id="e9117-121">说明</span><span class="sxs-lookup"><span data-stu-id="e9117-121">Description</span></span>                            |<span data-ttu-id="e9117-122">示例</span><span class="sxs-lookup"><span data-stu-id="e9117-122">Example</span></span>|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[<span data-ttu-id="d02ca-123">$filter</span><span class="sxs-lookup"><span data-stu-id="d02ca-123">$filter</span></span>](/graph/query-parameters#filter-parameter)|<span data-ttu-id="d02ca-124">筛选结果（行）。</span><span class="sxs-lookup"><span data-stu-id="d02ca-124">Filters results (rows).</span></span> |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[<span data-ttu-id="e9117-123">$filter</span><span class="sxs-lookup"><span data-stu-id="e9117-123">$filter</span></span>](/graph/query-parameters#filter-parameter)|<span data-ttu-id="e9117-124">筛选结果（行）。</span><span class="sxs-lookup"><span data-stu-id="e9117-124">Filters results (rows).</span></span> |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 
-<span data-ttu-id="d02ca-125">有关一般信息, 请参阅[OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="d02ca-125">For general information, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="e9117-125">有关一般信息, 请参阅[OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="e9117-125">For general information, see [OData query parameters](/graph/query_parameters).</span></span>
 
-### <a name="attributes-supported-by-the-filter-parameter"></a><span data-ttu-id="d02ca-126">$filter 参数支持的属性</span><span class="sxs-lookup"><span data-stu-id="d02ca-126">Attributes supported by the $filter parameter</span></span>
+### <a name="attributes-supported-by-the-filter-parameter"></a><span data-ttu-id="e9117-126">$filter 参数支持的属性</span><span class="sxs-lookup"><span data-stu-id="e9117-126">Attributes supported by the $filter parameter</span></span>
 
-|<span data-ttu-id="d02ca-127">属性名</span><span class="sxs-lookup"><span data-stu-id="d02ca-127">Attribute name</span></span> |<span data-ttu-id="d02ca-128">支持的运算符</span><span class="sxs-lookup"><span data-stu-id="d02ca-128">Supported operators</span></span>|
+|<span data-ttu-id="e9117-127">属性名</span><span class="sxs-lookup"><span data-stu-id="e9117-127">Attribute name</span></span> |<span data-ttu-id="e9117-128">支持的运算符</span><span class="sxs-lookup"><span data-stu-id="e9117-128">Supported operators</span></span>|
 |:----------------|:------|
-|<span data-ttu-id="d02ca-129">id</span><span class="sxs-lookup"><span data-stu-id="d02ca-129">id</span></span>| <span data-ttu-id="d02ca-130">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-130">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-131">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="d02ca-131">activityDateTime</span></span>| <span data-ttu-id="d02ca-132">eq</span><span class="sxs-lookup"><span data-stu-id="d02ca-132">eq</span></span>|
-|<span data-ttu-id="d02ca-133">tenantid</span><span class="sxs-lookup"><span data-stu-id="d02ca-133">tenantid</span></span>|<span data-ttu-id="d02ca-134">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-134">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-135">jobid</span><span class="sxs-lookup"><span data-stu-id="d02ca-135">jobid</span></span>|<span data-ttu-id="d02ca-136">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-136">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-137">changeid</span><span class="sxs-lookup"><span data-stu-id="d02ca-137">changeid</span></span>|<span data-ttu-id="d02ca-138">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-138">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-139">cycleid</span><span class="sxs-lookup"><span data-stu-id="d02ca-139">cycleid</span></span>|<span data-ttu-id="d02ca-140">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-140">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-141">action</span><span class="sxs-lookup"><span data-stu-id="d02ca-141">action</span></span>|<span data-ttu-id="d02ca-142">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-142">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-143">statusInfo/状态</span><span class="sxs-lookup"><span data-stu-id="d02ca-143">statusInfo/status</span></span>|<span data-ttu-id="d02ca-144">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-144">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-145">sourceSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="d02ca-145">sourceSystem/displayName</span></span>|<span data-ttu-id="d02ca-146">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-146">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-147">targetSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="d02ca-147">targetSystem/displayName</span></span>|<span data-ttu-id="d02ca-148">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-148">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-149">sourceIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="d02ca-149">sourceIdentity/identityType</span></span>|<span data-ttu-id="d02ca-150">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-150">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-151">targetIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="d02ca-151">targetIdentity/identityType</span></span>|<span data-ttu-id="d02ca-152">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-152">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-153">sourceIdentity/id</span><span class="sxs-lookup"><span data-stu-id="d02ca-153">sourceIdentity/id</span></span>|<span data-ttu-id="d02ca-154">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-154">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-155">targetIdentity/id</span><span class="sxs-lookup"><span data-stu-id="d02ca-155">targetIdentity/id</span></span>|<span data-ttu-id="d02ca-156">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-156">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-157">sourceIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="d02ca-157">sourceIdentity/displayName</span></span>|<span data-ttu-id="d02ca-158">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-158">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-159">targetIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="d02ca-159">targetIdentity/displayName</span></span>|<span data-ttu-id="d02ca-160">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-160">eq, contains</span></span>|
-|<span data-ttu-id="d02ca-161">initiatedBy/displayName</span><span class="sxs-lookup"><span data-stu-id="d02ca-161">initiatedBy/displayName</span></span>|<span data-ttu-id="d02ca-162">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="d02ca-162">eq, contains</span></span>|
+|<span data-ttu-id="e9117-129">id</span><span class="sxs-lookup"><span data-stu-id="e9117-129">id</span></span>| <span data-ttu-id="e9117-130">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-130">eq, contains</span></span>|
+|<span data-ttu-id="e9117-131">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="e9117-131">activityDateTime</span></span>| <span data-ttu-id="e9117-132">eq</span><span class="sxs-lookup"><span data-stu-id="e9117-132">eq</span></span>|
+|<span data-ttu-id="e9117-133">tenantid</span><span class="sxs-lookup"><span data-stu-id="e9117-133">tenantid</span></span>|<span data-ttu-id="e9117-134">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-134">eq, contains</span></span>|
+|<span data-ttu-id="e9117-135">jobid</span><span class="sxs-lookup"><span data-stu-id="e9117-135">jobid</span></span>|<span data-ttu-id="e9117-136">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-136">eq, contains</span></span>|
+|<span data-ttu-id="e9117-137">changeid</span><span class="sxs-lookup"><span data-stu-id="e9117-137">changeid</span></span>|<span data-ttu-id="e9117-138">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-138">eq, contains</span></span>|
+|<span data-ttu-id="e9117-139">cycleid</span><span class="sxs-lookup"><span data-stu-id="e9117-139">cycleid</span></span>|<span data-ttu-id="e9117-140">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-140">eq, contains</span></span>|
+|<span data-ttu-id="e9117-141">action</span><span class="sxs-lookup"><span data-stu-id="e9117-141">action</span></span>|<span data-ttu-id="e9117-142">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-142">eq, contains</span></span>|
+|<span data-ttu-id="e9117-143">statusInfo/状态</span><span class="sxs-lookup"><span data-stu-id="e9117-143">statusInfo/status</span></span>|<span data-ttu-id="e9117-144">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-144">eq, contains</span></span>|
+|<span data-ttu-id="e9117-145">sourceSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="e9117-145">sourceSystem/displayName</span></span>|<span data-ttu-id="e9117-146">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-146">eq, contains</span></span>|
+|<span data-ttu-id="e9117-147">targetSystem/displayName</span><span class="sxs-lookup"><span data-stu-id="e9117-147">targetSystem/displayName</span></span>|<span data-ttu-id="e9117-148">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-148">eq, contains</span></span>|
+|<span data-ttu-id="e9117-149">sourceIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="e9117-149">sourceIdentity/identityType</span></span>|<span data-ttu-id="e9117-150">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-150">eq, contains</span></span>|
+|<span data-ttu-id="e9117-151">targetIdentity/identityType</span><span class="sxs-lookup"><span data-stu-id="e9117-151">targetIdentity/identityType</span></span>|<span data-ttu-id="e9117-152">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-152">eq, contains</span></span>|
+|<span data-ttu-id="e9117-153">sourceIdentity/id</span><span class="sxs-lookup"><span data-stu-id="e9117-153">sourceIdentity/id</span></span>|<span data-ttu-id="e9117-154">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-154">eq, contains</span></span>|
+|<span data-ttu-id="e9117-155">targetIdentity/id</span><span class="sxs-lookup"><span data-stu-id="e9117-155">targetIdentity/id</span></span>|<span data-ttu-id="e9117-156">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-156">eq, contains</span></span>|
+|<span data-ttu-id="e9117-157">sourceIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="e9117-157">sourceIdentity/displayName</span></span>|<span data-ttu-id="e9117-158">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-158">eq, contains</span></span>|
+|<span data-ttu-id="e9117-159">targetIdentity/displayName</span><span class="sxs-lookup"><span data-stu-id="e9117-159">targetIdentity/displayName</span></span>|<span data-ttu-id="e9117-160">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-160">eq, contains</span></span>|
+|<span data-ttu-id="e9117-161">initiatedBy/displayName</span><span class="sxs-lookup"><span data-stu-id="e9117-161">initiatedBy/displayName</span></span>|<span data-ttu-id="e9117-162">eq, 包含</span><span class="sxs-lookup"><span data-stu-id="e9117-162">eq, contains</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="d02ca-163">请求标头</span><span class="sxs-lookup"><span data-stu-id="d02ca-163">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e9117-163">请求标头</span><span class="sxs-lookup"><span data-stu-id="e9117-163">Request headers</span></span>
 
-| <span data-ttu-id="d02ca-164">标头</span><span class="sxs-lookup"><span data-stu-id="d02ca-164">Header</span></span>        | <span data-ttu-id="d02ca-165">值</span><span class="sxs-lookup"><span data-stu-id="d02ca-165">Value</span></span>                      |
+| <span data-ttu-id="e9117-164">标头</span><span class="sxs-lookup"><span data-stu-id="e9117-164">Header</span></span>        | <span data-ttu-id="e9117-165">值</span><span class="sxs-lookup"><span data-stu-id="e9117-165">Value</span></span>                      |
 |:--------------|:---------------------------|
-| <span data-ttu-id="d02ca-166">Authorization</span><span class="sxs-lookup"><span data-stu-id="d02ca-166">Authorization</span></span> | <span data-ttu-id="d02ca-167">Bearer {token}（必需）</span><span class="sxs-lookup"><span data-stu-id="d02ca-167">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="e9117-166">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9117-166">Authorization</span></span> | <span data-ttu-id="e9117-167">Bearer {token}（必需）</span><span class="sxs-lookup"><span data-stu-id="e9117-167">Bearer {token} (required)</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d02ca-168">请求正文</span><span class="sxs-lookup"><span data-stu-id="d02ca-168">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e9117-168">请求正文</span><span class="sxs-lookup"><span data-stu-id="e9117-168">Request body</span></span>
 
-<span data-ttu-id="d02ca-169">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d02ca-169">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e9117-169">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e9117-169">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d02ca-170">响应</span><span class="sxs-lookup"><span data-stu-id="d02ca-170">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e9117-170">响应</span><span class="sxs-lookup"><span data-stu-id="e9117-170">Response</span></span>
 
-<span data-ttu-id="d02ca-171">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[provisioningObjectSummary](../resources/provisioningobjectsummary.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="d02ca-171">If successful, this method returns a `200 OK` response code and a collection of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) objects in the response body.</span></span>
+<span data-ttu-id="e9117-171">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[provisioningObjectSummary](../resources/provisioningobjectsummary.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="e9117-171">If successful, this method returns a `200 OK` response code and a collection of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d02ca-172">示例</span><span class="sxs-lookup"><span data-stu-id="d02ca-172">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e9117-172">示例</span><span class="sxs-lookup"><span data-stu-id="e9117-172">Examples</span></span>
 
-### <a name="example-1-successful-request"></a><span data-ttu-id="d02ca-173">示例 1: 成功请求</span><span class="sxs-lookup"><span data-stu-id="d02ca-173">Example 1: Successful request</span></span>
+### <a name="example-1-successful-request"></a><span data-ttu-id="e9117-173">示例 1: 成功请求</span><span class="sxs-lookup"><span data-stu-id="e9117-173">Example 1: Successful request</span></span>
 
-### <a name="request"></a><span data-ttu-id="d02ca-174">请求</span><span class="sxs-lookup"><span data-stu-id="d02ca-174">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e9117-174">请求</span><span class="sxs-lookup"><span data-stu-id="e9117-174">Request</span></span>
 
-<span data-ttu-id="d02ca-175">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d02ca-175">The following is an example of the request.</span></span>
+<span data-ttu-id="e9117-175">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e9117-175">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d02ca-176">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d02ca-176">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e9117-176">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e9117-176">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d02ca-177">C#</span><span class="sxs-lookup"><span data-stu-id="d02ca-177">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e9117-177">C#</span><span class="sxs-lookup"><span data-stu-id="e9117-177">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d02ca-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d02ca-178">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e9117-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9117-178">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d02ca-179">目标-C</span><span class="sxs-lookup"><span data-stu-id="d02ca-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e9117-179">目标-C</span><span class="sxs-lookup"><span data-stu-id="e9117-179">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="d02ca-180">响应</span><span class="sxs-lookup"><span data-stu-id="d02ca-180">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e9117-180">响应</span><span class="sxs-lookup"><span data-stu-id="e9117-180">Response</span></span>
 
-<span data-ttu-id="d02ca-181">下面是一个成功事件的响应示例。</span><span class="sxs-lookup"><span data-stu-id="d02ca-181">The following is an example of the response for a successful event.</span></span>
+<span data-ttu-id="e9117-181">下面是一个成功事件的响应示例。</span><span class="sxs-lookup"><span data-stu-id="e9117-181">The following is an example of the response for a successful event.</span></span>
 
-><span data-ttu-id="d02ca-182">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="d02ca-182">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d02ca-183">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d02ca-183">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="e9117-182">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="e9117-182">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="e9117-183">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e9117-183">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -228,41 +228,41 @@ Content-type: application/json
 }
 
 ```
-### <a name="example-2-error-reponse"></a><span data-ttu-id="d02ca-184">示例 2: 错误响应</span><span class="sxs-lookup"><span data-stu-id="d02ca-184">Example 2: Error reponse</span></span>
+### <a name="example-2-error-reponse"></a><span data-ttu-id="e9117-184">示例 2: 错误响应</span><span class="sxs-lookup"><span data-stu-id="e9117-184">Example 2: Error reponse</span></span>
 
-### <a name="request"></a><span data-ttu-id="d02ca-185">请求</span><span class="sxs-lookup"><span data-stu-id="d02ca-185">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e9117-185">请求</span><span class="sxs-lookup"><span data-stu-id="e9117-185">Request</span></span>
 
-<span data-ttu-id="d02ca-186">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d02ca-186">The following is an example of the request.</span></span>
+<span data-ttu-id="e9117-186">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e9117-186">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d02ca-187">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d02ca-187">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e9117-187">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e9117-187">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary_error"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d02ca-188">C#</span><span class="sxs-lookup"><span data-stu-id="d02ca-188">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e9117-188">C#</span><span class="sxs-lookup"><span data-stu-id="e9117-188">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d02ca-189">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d02ca-189">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e9117-189">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9117-189">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-error-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d02ca-190">目标-C</span><span class="sxs-lookup"><span data-stu-id="d02ca-190">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e9117-190">目标-C</span><span class="sxs-lookup"><span data-stu-id="e9117-190">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="d02ca-191">响应</span><span class="sxs-lookup"><span data-stu-id="d02ca-191">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e9117-191">响应</span><span class="sxs-lookup"><span data-stu-id="e9117-191">Response</span></span>
 
-<span data-ttu-id="d02ca-192">下面的示例演示了失败的设置事件的响应。</span><span class="sxs-lookup"><span data-stu-id="d02ca-192">The following is an example of the response for a failed provisioning event.</span></span>
+<span data-ttu-id="e9117-192">下面的示例演示了失败的设置事件的响应。</span><span class="sxs-lookup"><span data-stu-id="e9117-192">The following is an example of the response for a failed provisioning event.</span></span>
 
-><span data-ttu-id="d02ca-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d02ca-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="e9117-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e9117-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
