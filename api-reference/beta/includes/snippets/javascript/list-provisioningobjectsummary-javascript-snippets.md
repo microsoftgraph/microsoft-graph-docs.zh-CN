@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: faf9e3cdea25e986fc7607eb7cfc00b02496283e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: bdcf3c42e0a7bffbd190d29920b06b263f12d321
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35719996"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723369"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/auditLogs/directoryProvisioning')
+let res = await client.api('/auditLogs/provisioning')
     .version('beta')
     .get();
 

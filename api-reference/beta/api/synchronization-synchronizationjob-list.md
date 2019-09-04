@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ce2585f080f9aa4a5a03bb0495eda5e7d5f7ca76
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: adf545d4be30810f82bf0a8ed0ecb5b7a2adfa5b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409791"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724469"
 ---
 # <a name="list-synchronization-jobs"></a>列出同步作业
 
@@ -57,7 +57,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
   "blockType": "request",
   "name": "get_jobs"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

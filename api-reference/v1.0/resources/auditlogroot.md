@@ -5,12 +5,12 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0baab1704958a46235c22c8f49f93f1f488f072
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 45a6ce64f2f5f8b37f1a555c2bf7a38a87a99acf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370349"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730363"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot 资源类型
 
@@ -60,7 +60,7 @@ ms.locfileid: "36370349"
   "blockType": "request",
   "name": "get_auditLogs"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

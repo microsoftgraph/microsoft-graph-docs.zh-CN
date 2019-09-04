@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 097e089a4703a8ff1ac6e34ff5fa282f79ebf00d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: be1623f7b44a4aca8db7d57aa297520202a00116
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414591"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723838"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
@@ -65,7 +65,7 @@ GET /sites/{id}/onenote/operations/{id}
   "blockType": "request",
   "name": "get_onenoteoperation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

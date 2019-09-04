@@ -6,12 +6,12 @@ title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2a2450429cd7d86196179c32473f28b46a50c0b4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: dbc66bc734d4ef0a47e30ce1e967918e964489a0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409991"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724531"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -37,7 +37,7 @@ ms.locfileid: "36409991"
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

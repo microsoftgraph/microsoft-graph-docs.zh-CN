@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 733c6b6e7e1eef743f4a0f5a620378e5f6d71663
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2488d316daec8462814c86ab603947e28e7852d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372403"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727696"
 ---
 # <a name="get-subscribedsku"></a>获取 subscribedSku
 
@@ -55,7 +55,7 @@ GET /subscribedSkus/{id}
   "blockType": "request",
   "name": "get_subscribedsku"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

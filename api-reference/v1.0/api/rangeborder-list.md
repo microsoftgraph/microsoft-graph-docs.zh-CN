@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bfc5c0979f3a6cd8e4955fd0b598039bb2c6e747
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3dfee7572d7a06baa00cd7f84e5f9b1418190f89
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365097"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729813"
 ---
 # <a name="list-rangebordercollection"></a>列出 RangeBorderCollection
 
@@ -55,7 +55,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
   "blockType": "request",
   "name": "get_rangebordercollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

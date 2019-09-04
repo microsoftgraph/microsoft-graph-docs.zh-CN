@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 33b9b1374a4b48fefde74df49b8e444a0266b931
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 192447ee724ae57ed3bfffae1ba76786969bf4ca
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327425"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728326"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -81,7 +81,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getemailactivityusercounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 002e49963651240e6b74b0581b3025b991da6d0e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6181df72d6532d088f93864c4ce0563169b524b8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413228"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725708"
 ---
 # <a name="get-plannerplandetails"></a>获取 plannerPlanDetails
 
@@ -55,7 +55,7 @@ GET /planner/plans/{id}/details
   "blockType": "request",
   "name": "get_plannerplandetails"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

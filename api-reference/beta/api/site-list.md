@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 0cf51ec84ae506935d30c5e3d1722a1b26a9f1aa
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5f38bcbb79600a009a11fcb300e21742069c9f65
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409987"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722333"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

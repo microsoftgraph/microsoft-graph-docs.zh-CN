@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: a940a1f39694ea36b69ad597e55be19ecbddacc1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6b1fc5f5358fa98c4d903eed7c0b91bac3c35163
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320208"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729347"
 ---
 # <a name="reportroot-getyammergroupsactivitycounts"></a>reportRoot: getYammerGroupsActivityCounts
 
@@ -81,7 +81,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getyammergroupsactivitycounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

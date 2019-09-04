@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f36fbd9094c5c8e2c1852e32b42747ee8c2c2dbd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 829e2a91c3289901843b6fe211e48eac3ce9688b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417632"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718273"
 ---
 # <a name="list-device-transitive-groups"></a>列出设备可传递组
 
@@ -67,7 +67,7 @@ GET /devices/{id}/transitiveMemberOf
   "name": "get_devices_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

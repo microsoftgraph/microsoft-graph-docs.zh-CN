@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5371f4dd968cbfa58bd600445acbd35cdf02a78c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 99bb88587259cfc0deb423df4e41bd0db5601193
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421490"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722221"
 ---
 # <a name="list-rows"></a>列出行
 
@@ -56,7 +56,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
   "blockType": "request",
   "name": "get_table_rows"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

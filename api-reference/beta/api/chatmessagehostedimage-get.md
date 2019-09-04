@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f25f2e407426d5754b5d648cf27d1b9c78a82544
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c71751b6f8ba630f9af69a4c0f754d12db2d9513
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418073"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718385"
 ---
 # <a name="get-chatmessagehostedimage"></a>获取 chatMessageHostedImage
 
@@ -66,7 +66,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}
   "blockType": "request",
   "name": "get_channel_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

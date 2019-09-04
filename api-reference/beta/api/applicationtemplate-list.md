@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 63465f12b60c0b25aec59c9915e7d5aeba134985
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ca603ac58cd5136d8ef4f5da77727380cd27c609
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415713"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718980"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
@@ -73,7 +73,7 @@ GET /applicationTemplates
   "name": "get_applicationtemplates"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

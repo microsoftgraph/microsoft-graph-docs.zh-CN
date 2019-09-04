@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c727b9fcc1a413ca44ba7f7b4d94bfb9814e71a1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7fedd8b1baf811e53890be8d3b309a3751f97131
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375945"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728515"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -52,7 +52,7 @@ GET /planner/plans/{plan-id}/buckets
   "blockType": "request",
   "name": "get_buckets"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/buckets
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

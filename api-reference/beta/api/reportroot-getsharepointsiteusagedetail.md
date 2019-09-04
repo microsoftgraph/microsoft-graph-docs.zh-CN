@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 88463092eb03b3d8cc6b0c63549cd2295b91239d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 509fb3944dba760ec80d04d8f005474bff02fdcf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411443"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722921"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -107,7 +107,7 @@ CSV 文件包含下面的列标题：
   "name": "reportroot_getsharepointsiteusagedetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period='D7')?$format=text/csv
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -167,7 +167,7 @@ Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity
   "name": "reportroot_getsharepointsiteusagedetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period='D7')?$format=application/json
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

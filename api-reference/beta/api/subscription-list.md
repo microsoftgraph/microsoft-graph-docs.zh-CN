@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 1b8b27feb5d8f261b39e2fa090d1e708394490ff
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 97fed1e7271ab39bad64f1bb56ac1696e351b4cf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409854"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722291"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -86,7 +86,7 @@ GET /subscriptions
   "name": "get_subscriptions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

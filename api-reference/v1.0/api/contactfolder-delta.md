@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: df153c009f67e89df08c87de769033f85575d415
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3693cf8b804ff9c01d988b3afa34edb785dc9306
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331943"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721444"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -73,7 +73,7 @@ GET /users/{id}/contactFolders/delta
   "blockType": "request",
   "name": "contactfolder_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
 Prefer: odata.maxpagesize=2
 ```

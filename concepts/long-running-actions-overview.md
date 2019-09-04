@@ -3,12 +3,12 @@ title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 3d1dae399147cb1aed40a045e4365faf15d753f5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 08584750feba670b0041f50696b75b3f7e6910b5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422308"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730314"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 
@@ -139,7 +139,7 @@ Content-type: application/json
   "scopes": "files.readwrite"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

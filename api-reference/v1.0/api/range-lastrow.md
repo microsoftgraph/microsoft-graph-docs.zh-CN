@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4b2fcb71cf305083c52099ab67ac5de2e7735f91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4364b1273dfc88b928bf8d9109024f8889d78320
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375543"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729845"
 ---
 # <a name="range-lastrow"></a>Range:LastRow
 
@@ -56,7 +56,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastRow
   "isComposable": true,
   "name": "range_lastrow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastRow
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

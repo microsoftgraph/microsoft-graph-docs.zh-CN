@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 117cb541b0187565efb18dc0ca83bdb64706fd7b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 07e3b11b51bfb33081f08afa88efd20daf3e2d1f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321799"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728067"
 ---
 # <a name="reportroot-getsharepointactivityuserdetail"></a>reportRoot: getSharePointActivityUserDetail
 
@@ -91,7 +91,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getsharepointactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserDetail(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

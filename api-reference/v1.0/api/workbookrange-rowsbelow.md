@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4c545fc1b2ca6bc38f6e01566d5861bb7f459e1a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: df0873b12842dc345ac5a8f125e4a01d723e5b82
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371276"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727367"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -120,7 +120,7 @@ Content-length: 157
   "name": "workbookrange_rowsBelow_nocount",
   "idempotent": true
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

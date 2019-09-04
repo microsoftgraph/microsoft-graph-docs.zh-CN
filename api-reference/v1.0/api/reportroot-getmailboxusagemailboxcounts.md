@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 8b03bd3a29afc401c63ce3fbe20f3a05a3bfe56d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d7736edaccdf976c8adda3816dcc5c68bb2e74c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327236"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728242"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 
@@ -80,7 +80,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getmailboxusagemailboxcounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageMailboxCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

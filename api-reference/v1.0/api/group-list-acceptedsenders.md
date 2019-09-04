@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b61ad82aed14ed8bafea1c4092f956a2b2da36c4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 51564c0519d02aa1cd9fcf3dee53cea23839f38c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337333"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726800"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 获取此组的“接受的发件人”列表中的用户或组列表。
@@ -54,7 +54,7 @@ GET /groups/{id}/acceptedSenders
   "blockType": "request",
   "name": "get_acceptedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

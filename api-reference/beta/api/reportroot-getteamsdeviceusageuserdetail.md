@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 83d13672b1b69807e48aa426e02e74b740deba26
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3bc3211a919b460ea69215af1f90a050e58302f1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411135"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724949"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -102,7 +102,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getteamsdeviceusageuserdetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')?$format=text/csv
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -162,7 +162,7 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
   "name": "reportroot_getteamsdeviceusageuserdetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')?$format=application/json
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

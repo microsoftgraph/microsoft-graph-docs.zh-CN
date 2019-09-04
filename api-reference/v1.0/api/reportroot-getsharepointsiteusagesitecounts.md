@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 4391198c93d31e1da33d3e36433df4500947639d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b652a05e7d4cb0bf201ae0aab57ca65352362d75
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357972"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728046"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 
@@ -81,7 +81,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getsharepointsiteusagesitecounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageSiteCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

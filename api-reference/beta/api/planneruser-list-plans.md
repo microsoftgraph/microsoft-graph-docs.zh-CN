@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 07ea620cc6a50aa114003306952c1be9eec9ea84
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e506808042519729edb0815ed498dfa0037fa6e8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413004"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725617"
 ---
 # <a name="list-plans"></a>列出计划
 
@@ -58,7 +58,7 @@ GET /drive/root/createdByUser/planner/plans
   "blockType": "request",
   "name": "get_plans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/plans
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1f2f7b39e9d9d7d39fc883889ed3d633514d2a13
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e7ac5d4463d424fdcc31ca98cc3a729b95e5d53b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325325"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727136"
 ---
 # <a name="get-contract"></a>获取合同
 
@@ -60,7 +60,7 @@ GET /contracts/{id}
   "blockType": "request",
   "name": "get_contract"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

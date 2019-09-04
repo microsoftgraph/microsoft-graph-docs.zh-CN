@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 18dd9c89086f3dc802781776648b03746a424387
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: befd5692cf2d1600d1e54049eda131514b5dbf88
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414404"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725995"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -70,7 +70,7 @@ GET /organization
   "name": "get_organization"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 36d7e67c0eb0b30e32c94f7440d12b9332f5ecfb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a6974d5368e1e3a38606e9fe1ddc492dff2b4c1c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410470"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722501"
 ---
 # <a name="list-sections"></a>列出分区
 
@@ -63,7 +63,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
   "blockType": "request",
   "name": "sectiongroup_get_sections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sections
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8a18e47527bee9530cf425c30098e77282715095
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3481dc355b649a1e1313dbe3379eadfdcb5d76b8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411989"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725400"
 ---
 # <a name="list-borders"></a>列出边框
 
@@ -57,7 +57,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
   "blockType": "request",
   "name": "get_borders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

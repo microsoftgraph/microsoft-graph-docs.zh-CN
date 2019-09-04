@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f23734325d6d98ba9a70525228eb2167af728346
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aed60b2227416f34e01752ce2267d342524a6c75
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374629"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730230"
 ---
 # <a name="get-rule"></a>获取 rule
 
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
   "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

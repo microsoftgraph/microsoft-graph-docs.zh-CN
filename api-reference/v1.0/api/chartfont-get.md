@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ecae933ba267b06c1b66d3c67a5d88d7d4744c72
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f1e4185ed1d771a0049c454431fc48bfc90a9850
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316620"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727276"
 ---
 # <a name="get-chartfont"></a>获取 ChartFont
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
   "blockType": "request",
   "name": "get_chartfont"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

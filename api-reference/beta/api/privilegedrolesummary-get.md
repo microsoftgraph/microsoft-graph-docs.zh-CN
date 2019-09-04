@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 82ad380a9ff32aa09b44c07639695c7830f6157e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e87c059ff519cf7c8ce81cf7bc15d2472233f9a6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412563"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723397"
 ---
 # <a name="get-privilegedrolesummary"></a>获取 privilegedRoleSummary
 
@@ -57,7 +57,7 @@ GET /privilegedRoles/{id}?$expand=summary
   "blockType": "request",
   "name": "get_privilegedrolesummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

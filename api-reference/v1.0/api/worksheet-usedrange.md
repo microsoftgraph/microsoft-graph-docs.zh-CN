@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 645814a3f09ac5259047cf73a7b201264c24d067
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: deac7a5e33be0abfba5dd5efab3aaf28f42cddee
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307369"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728831"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
@@ -64,7 +64,7 @@ GET /workbook/worksheets/{id|name}/usedRange
   "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -116,7 +116,7 @@ Content-length: 169
   "isComposable": true,
   "name": "worksheet_usedrange_valuesonly"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

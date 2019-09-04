@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c3598c7e579b8c767c500ed2ab47322520eb50f9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d5039d46b19c7b018210c8e2cb7833624e9636b0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409546"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724412"
 ---
 # <a name="list-columns"></a>列出列
 
@@ -56,7 +56,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
   "blockType": "request",
   "name": "get_columns"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

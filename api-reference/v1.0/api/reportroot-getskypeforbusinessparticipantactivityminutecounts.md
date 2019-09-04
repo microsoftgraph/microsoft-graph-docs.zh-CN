@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 8ad3f2fd5470b0f6bf20d636b10a0adfde1d3481
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6c85ddecb5b40e103c7c5e0638f7879ac5595a9d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320658"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727962"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a>reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts
 
@@ -79,7 +79,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getskypeforbusinessparticipantactivityminutecounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

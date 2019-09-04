@@ -6,12 +6,12 @@ title: 从 SharePoint 列表中获取条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b75a9a8542e4bf92f4e4ad36e5431881623808b7
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b86348b7c1648a7246a9414a2f8d96e694692fd2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415391"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726163"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

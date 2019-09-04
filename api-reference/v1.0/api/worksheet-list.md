@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 270443b38c04b3be2fa7d7ead60b1ddd45ebf7c4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8923d3b95556e006d96c5f13435a98a687bcd95d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307401"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727297"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 
@@ -53,7 +53,7 @@ GET /workbook/worksheets
   "blockType": "request",
   "name": "get_worksheetcollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

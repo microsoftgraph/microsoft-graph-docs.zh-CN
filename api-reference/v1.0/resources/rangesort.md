@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 489ad01f0f94eda385f501a39f32cea6996d632b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f4b5ffac155542615d17db0f6e511cf77c72cc82
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364773"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730307"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort 资源类型
 
@@ -57,7 +57,7 @@ ms.locfileid: "36364773"
   "blockType": "request",
   "name": "range_sort"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

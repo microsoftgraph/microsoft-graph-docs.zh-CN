@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: e991263fc6b0fee3f4ffb03293b55f38302aa602
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2c7bf57d4bf04784ff0f872ed7cdd5a0a6f0123b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374503"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728643"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -58,7 +58,7 @@ GET /sites/{id}/onenote/notebooks/{id}
   "blockType": "request",
   "name": "get_notebook"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

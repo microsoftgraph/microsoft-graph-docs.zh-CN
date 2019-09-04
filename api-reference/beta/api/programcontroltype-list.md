@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 43a06de2f02714dc9e1f6891c92dac98c282cab4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 722178a4295aa95a07db322a581c212172954852
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412451"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725477"
 ---
 # <a name="list-programcontroltypes"></a>列出 programControlTypes
 
@@ -53,7 +53,7 @@ GET /programControlTypes
   "blockType": "request",
   "name": "get_programcontroltype"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/programControlTypes
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

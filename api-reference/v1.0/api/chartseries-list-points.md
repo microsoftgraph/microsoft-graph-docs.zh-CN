@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8b0619a109028cba7265514fd75ae2c61bf34d64
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2e2c6895a23a6d16db4e7b9e5a52e01556378eec
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316435"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721458"
 ---
 # <a name="list-points"></a>列出点
 
@@ -53,7 +53,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
   "blockType": "request",
   "name": "get_points"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

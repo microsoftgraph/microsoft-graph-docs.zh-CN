@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出 DriveItem 中的有效共享权限。
 doc_type: apiPageType
-ms.openlocfilehash: 19fa8efb45570622b969fba060cd8d3da360166c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9700dbd4429ee20b4e2d5921e60d0f506bbfdc8d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376050"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721096"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 DriveItem 中的共享权限
 
@@ -80,7 +80,7 @@ DriveItem 的有效共享权限可能有两个来源：
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

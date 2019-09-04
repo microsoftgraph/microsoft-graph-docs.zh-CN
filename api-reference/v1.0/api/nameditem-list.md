@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e6e4c3e7d80863d6b10da0018472c4c4be2a86e6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 10d51144209e077490bf19fd5ee0de01cd22ef5c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374573"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728642"
 ---
 # <a name="list-nameditemcollection"></a>列出 NamedItemCollection
 
@@ -53,7 +53,7 @@ GET /workbook/names
   "blockType": "request",
   "name": "get_nameditemcollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

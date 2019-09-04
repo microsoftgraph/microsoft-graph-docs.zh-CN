@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: fd92cee745a9db99ebaa42cfaf00d6d63f7bd48b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1f76e3e1f4baf54893d7c0073cd53f462f2917d2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327183"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728207"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
@@ -72,7 +72,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getoffice365activationsusercounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

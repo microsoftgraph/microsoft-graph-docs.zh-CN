@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 087420938b08362057fc07f86c94e024ad18fd4e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: bbc1df4dc8f7c439049b722d2f6c5c10941ec1f4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418759"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718630"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
 
@@ -62,7 +62,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
   "name": "get_channel_message_replies"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184/replies
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

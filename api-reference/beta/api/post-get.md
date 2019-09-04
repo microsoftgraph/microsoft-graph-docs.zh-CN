@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 939b457e927261f1773d9122825ec2e84f928078
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 452fd4d30881011eee607731d9c2fb09d67fa7ea
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412941"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723523"
 ---
 # <a name="get-post"></a>获取帖子
 
@@ -57,7 +57,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
   "blockType": "request",
   "name": "get_post"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts/AQMkADgAAAIJbQAAAA==
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

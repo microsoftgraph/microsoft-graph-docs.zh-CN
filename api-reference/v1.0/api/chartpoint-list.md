@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 230604a4d4f51395e29ee940afe92bcb444ffc35
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0a926205f73be6f98e24fff5a672f1282bbd53e6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316470"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727234"
 ---
 # <a name="list-chartpointscollection"></a>列出 ChartPointsCollection
 
@@ -53,7 +53,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
   "blockType": "request",
   "name": "get_chartpointscollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 7eabd3b86f83283005918670981839c04098318b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bcc45c40b31fb10354d9de0b6d539f376f390611
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321836"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729593"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 
@@ -83,7 +83,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getsharepointactivityusercounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

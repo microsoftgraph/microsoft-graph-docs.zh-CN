@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b326837b2b5bd655f34b3ab96ef55341e1ef2427
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d407cdb6f684a0582f1806aed59c6627c3f6f51
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375582"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729869"
 ---
 # <a name="range-entirerow"></a>Range:EntireRow
 
@@ -56,7 +56,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/entireRow
   "isComposable": true,
   "name": "range_entirerow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/entireRow
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

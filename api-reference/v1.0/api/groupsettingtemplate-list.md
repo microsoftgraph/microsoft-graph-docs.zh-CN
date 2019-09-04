@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56753600485a015cb85e73b35139edcec8b0f9bc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d8421f8d3dceba354171a207d83c3517aab4fb98
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366353"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726765"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 
@@ -57,7 +57,7 @@ GET /groupSettingTemplates
   "blockType": "request",
   "name": "get_groupsettingtemplates"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

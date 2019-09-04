@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 80976240be10ee6a28ec75712f175fe0d20bd153
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: fce36c917975ab59d2f99187029066b4d65f4720
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409315"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722165"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -52,7 +52,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200, OK`响应正文中返回响应代码和[resultInfo](../resources/resultinfo.md)集合对象。
+如果成功, 此方法在`200, OK`响应正文中返回响应代码和[resultInfo](../resources/resultinfo.md)集合对象。 如果存在错误, 则此方法返回`206 Partial Content`响应代码。  有关详细信息, 请参阅[错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors)。
 
 ## <a name="examples"></a>示例
 

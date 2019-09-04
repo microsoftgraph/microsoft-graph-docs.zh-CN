@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 239911c34978cd2fd8ee766fd318343a28057a8c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fbf66a28757c4563a77e23c16f7ee1dae1225227
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365113"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728438"
 ---
 # <a name="range-cell"></a>Range:单元格
 
@@ -62,7 +62,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
   "isComposable": true,
   "name": "range_cell"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

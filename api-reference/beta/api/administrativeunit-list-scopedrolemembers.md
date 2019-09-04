@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c2210b459ac832926012ebb2194528df85a71cf
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 33ce9a36c7af22ac396ca418af2ffba2baa04dc7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408693"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719162"
 ---
 # <a name="list-scopedrolemembers"></a>列出 scopedRoleMembers
 
@@ -55,7 +55,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers
   "blockType": "request",
   "name": "get_scopedrolemember"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

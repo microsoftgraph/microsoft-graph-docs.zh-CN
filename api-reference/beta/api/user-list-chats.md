@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5e73ac5b3eacb64ad8be80bf75f1a1225d70371
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 076e7ad9a8b97b3ddd6238f412f59ac651980722
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408965"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724223"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -66,7 +66,7 @@ GET /users/{id}/chats
   "name": "get_chats"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

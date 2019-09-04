@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f21a238e5cf5cf898b269f012442cfeb329a2baf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d28490495edacc8ea0d14e1043ce918f8c2dc19d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002970"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727080"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 
@@ -53,14 +53,14 @@ GET /devices/{id}/registeredOwners
   "blockType": "request",
   "name": "get_registeredowners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-registeredowners-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-registeredowners-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

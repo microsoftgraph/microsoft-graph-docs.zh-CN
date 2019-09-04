@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 66b844b7c773628c0d642565e75d25ed42fafe1c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3f928419e6d2e6c9eb5a7c433d115482a01aea78
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337216"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726737"
 ---
 # <a name="list-photos"></a>List photos
 检索 [profilePhoto](../resources/profilephoto.md) 对象列表。
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
   "blockType": "request",
   "name": "get_photos"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

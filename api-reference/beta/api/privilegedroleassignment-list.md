@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 31bbf6221c4d8b9fc021aabd8678acb7c64b74a2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c571ff98bd8a84552061ecbb26c9d005ed61ada9
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412728"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725589"
 ---
 # <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
@@ -59,7 +59,7 @@ GET /privilegedRoleAssignments
   "blockType": "request",
   "name": "get_privilegedroleassignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -111,7 +111,7 @@ Content-length: 237
   "blockType": "request",
   "name": "get_privilegedroleassignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -171,7 +171,7 @@ Content-length: 237
   "blockType": "request",
   "name": "get_privilegedroleassignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -231,7 +231,7 @@ Content-length: 237
   "blockType": "request",
   "name": "get_privilegedroleassignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

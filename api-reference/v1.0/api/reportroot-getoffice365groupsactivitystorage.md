@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: bab786c086c6ceaec2dc8edd768a55c9d2327abb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e4b76c78789a7247733e308af82aaa5dec1e334d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373611"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728165"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 
@@ -80,7 +80,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getoffice365groupsactivitystorage"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityStorage(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

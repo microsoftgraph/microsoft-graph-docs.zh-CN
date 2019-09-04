@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: fd011026d1ffdc9c232b77e38f237b87a821f926
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0498c3b0a7c0ab328bf46288ce2d215c0675650b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365098"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729985"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>获取 plannerBucketTaskBoardTaskFormat
 
@@ -53,7 +53,7 @@ GET /planner/tasks/{id}/bucketTaskBoardFormat
   "blockType": "request",
   "name": "get_plannerbuckettaskboardtaskformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardFormat
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

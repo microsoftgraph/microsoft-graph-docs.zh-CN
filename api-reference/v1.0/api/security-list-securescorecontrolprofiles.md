@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4134aa533bf547a8b32b510e4e965139a771f3f4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 004cc602bcee9e044c1afb4feccc15d73d44b0ae
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347701"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729271"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -71,7 +71,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
   "name": "get_securescorecontrolprofiles"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

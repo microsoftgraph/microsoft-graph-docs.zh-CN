@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: ec2d7b21ecd2e6bc631bc6a630e7e3af399782ba
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6bb2afc8e44b5dc64d8d3d509bcdbafe8bd16b9a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320173"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727822"
 ---
 # <a name="get-resource"></a>获取资源
 
@@ -55,7 +55,7 @@ GET /sites/{id}/onenote/resources/{id}/content
   "blockType": "request",
   "name": "get_resource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

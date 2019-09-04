@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 39ba242664a55be6287c6a1c854e2556a6077ccc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 637826d9eb5b26646436fc6ffd77b4c1b272c837
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320483"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729432"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -86,7 +86,7 @@ CSV 文件包含下面的列标题：
   "name": "reportroot_getteamsdeviceusageuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

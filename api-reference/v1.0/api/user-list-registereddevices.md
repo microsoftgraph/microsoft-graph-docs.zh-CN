@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 230773816e2309f6bfbc8babf68c937973f477cd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 59602bdc5de2ff04de41207d15269426d4ad16c6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316232"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727423"
 ---
 # <a name="list-registereddevices"></a>List registeredDevices
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
   "blockType": "request",
   "name": "get_registereddevices"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/registeredDevices
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

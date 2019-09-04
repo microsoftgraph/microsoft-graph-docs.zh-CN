@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d90e92b58dc85629d86c8527e835c4a5520256a6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ce86133178a00a936893af2e585515964bf8cf9
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420698"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721574"
 ---
 # <a name="list-photos"></a>List photos
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
   "blockType": "request",
   "name": "get_photos"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/photos
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

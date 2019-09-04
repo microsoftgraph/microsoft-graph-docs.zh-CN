@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8210f96b4db8a05efc2fa1c82c384ec822c4afb1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4464fb1d06f9b7d69d6accce261ba8e970d3b0f0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307873"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727766"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -71,7 +71,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
   "name": "get_securescores"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

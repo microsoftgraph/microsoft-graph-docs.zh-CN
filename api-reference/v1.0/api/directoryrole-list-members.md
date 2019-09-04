@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e69d2ec79ffc82867df52519c0fa7a5ec7711edd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 931d1f06b968a2a8da68245d16eb0de5fec768f5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375350"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721276"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -52,7 +52,7 @@ GET /directoryRoles/{id}/members
   "blockType": "request",
   "name": "get_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

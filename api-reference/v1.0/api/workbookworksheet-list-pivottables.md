@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a8d216b0a9506239e33d13c4f9d2d66a1d2f50d3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f3a90071115d0976c0254ed55ba295a733b1cb45
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307761"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728879"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 
@@ -53,7 +53,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables
   "blockType": "request",
   "name": "get_pivottables"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

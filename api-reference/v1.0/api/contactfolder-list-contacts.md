@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 640f791a3ef049a7fda24c360ebe4414186f2ae8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2140bcb2f7dada9a83d5754ba9cdcefc635c7522
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347694"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727157"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
   "blockType": "request",
   "name": "contactfolder_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

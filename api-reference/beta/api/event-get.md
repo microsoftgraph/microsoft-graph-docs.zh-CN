@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c193804ead5f980e05a75e224cd1ec0665ecd47
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 40b161aa8e78d699b4f22180fb1817996a2ba48e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419942"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721759"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -98,7 +98,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -205,7 +205,7 @@ Content-length: 1928
   "blockType": "request",
   "name": "get_event_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
@@ -262,7 +262,7 @@ Content-length: 636
   "blockType": "request",
   "name": "get_event_multiple_locations"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

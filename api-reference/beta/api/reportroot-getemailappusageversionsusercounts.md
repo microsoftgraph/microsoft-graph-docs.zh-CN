@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: d3ee94fd72bcdcb0bcb3f84173c7d6fdc8c96130
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b4a71b2929264b386890708ffd87d5ee885c276d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411821"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725323"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 
@@ -93,7 +93,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getemailappusageversionsusercounts_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageVersionsUserCounts(period='D7')?$format=text/csv
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -153,7 +153,7 @@ Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undeterm
   "name": "reportroot_getemailappusageversionsusercounts_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageVersionsUserCounts(period='D7')?$format=application/json
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d7df5d46445578fbdd06f41f2b30533cd10f67cf
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d639e198ec7c337adf6668b1932137bd118cbd5a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409440"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722207"
 ---
 # <a name="get-tablerow"></a>获取 TableRow
 
@@ -56,7 +56,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
   "blockType": "request",
   "name": "get_tablerow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

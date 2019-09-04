@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d89919b7491f9a885da57c2ef42ea27036940984
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 35e22a12cd40c4704f9c1f1c6c2ae192daf87d89
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371654"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727031"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -53,7 +53,7 @@ GET /directoryRoles/{id}
   "blockType": "request",
   "name": "get_directoryrole"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 52843d8264aa46e9042a767236bfb45620549727
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 24990cd8a93373d98171445754af3b619c453b7b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414317"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723747"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: 获取管理器
 
@@ -59,7 +59,7 @@ GET /contacts/{id}/manager
   "name": "get_manager"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts/{id}/manager
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

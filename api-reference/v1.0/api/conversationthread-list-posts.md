@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3f775035b928f6e9668a82d7d13aeaaa51d85bd5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 57c80d2fad897ce1ced442cd1b26007775af0085
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365704"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721374"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -54,7 +54,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
   "blockType": "request",
   "name": "get_posts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

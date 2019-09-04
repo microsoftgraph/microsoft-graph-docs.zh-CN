@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 7471493418d28b401a3e44278713a2ef667f7dc2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7d8eb377ebd5ccffc4f96b5f31e4f21b073a2f44
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357994"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729572"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 
@@ -80,7 +80,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getsharepointsiteusagepages"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsagePages(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

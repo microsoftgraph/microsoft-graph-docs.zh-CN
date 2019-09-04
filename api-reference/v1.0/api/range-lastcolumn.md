@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2660442f59b6d50cb91c81586348d2abb4655fcf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b4645a6615df0b3484d89bc8797f295a5babbf0b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375532"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728375"
 ---
 # <a name="range-lastcolumn"></a>Range:LastColumn
 
@@ -56,7 +56,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastColumn
   "isComposable": true,
   "name": "range_lastcolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastColumn
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

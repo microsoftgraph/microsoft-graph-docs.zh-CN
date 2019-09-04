@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 784ffc7b7805832522aff3bd9eb11e409c8775d4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: abb9e5767ffcb9df0cff0de9421f6b906bdc4835
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422056"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724153"
 ---
 # <a name="list-ownedobjects"></a>List ownedObjects
 
@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
   "blockType": "request",
   "name": "get_ownedobjects"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/ownedObjects
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

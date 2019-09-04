@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出登录用户最近使用的一组项。
 doc_type: apiPageType
-ms.openlocfilehash: 779125be73c19e3e93b5c39ade4b2738bca6a16f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e354a7412c928e75623a2222ddfe9e62c82f8388
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375175"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726947"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 
@@ -38,7 +38,7 @@ ms.locfileid: "36375175"
        "tags": "service.graph",
        "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/recent
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

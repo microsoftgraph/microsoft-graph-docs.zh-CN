@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 49a82c82b04352ac76cfa8445a2682b6add2e933
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b5ff17fb3aac0b765eb9480ddccaee77a88fcf0d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337284"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726786"
 ---
 # <a name="list-grouplifecyclepolicies"></a>列出 groupLifecyclePolicy
 
@@ -53,7 +53,7 @@ GET /groups/{id}/groupLifecyclePolicies
   "blockType": "request",
   "name": "get_grouplifecyclepolicies"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

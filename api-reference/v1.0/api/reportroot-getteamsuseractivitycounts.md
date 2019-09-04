@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 4ed2e7efb3758418e0056dac4690b4d2fc03b921
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fd4833b882e82966048fa86b69fc7bafb2847dd6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320450"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727906"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
@@ -77,7 +77,7 @@ CSV 文件包含下面的列标题：
   "name": "reportroot_getteamsuseractivitycounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f55e4f46b758db9108d675ef36e934852d708997
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 202b26e309a0c49e6d2f7a55baa126dacdae3547
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461626"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722081"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -66,7 +66,7 @@ GET /roleManagement/{rbacApplication}/roleDefinitions/{id}
   "name": "get_unifiedroledefinition"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

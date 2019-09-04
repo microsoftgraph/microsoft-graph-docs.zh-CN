@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 624d4470a9e9d58378cb875b1ebe367aa3f4f7fa
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1c0db16462106002f5496f36c1d14635f287685d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414531"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726016"
 ---
 # <a name="get-onpremisesagentgroup"></a>获取 onPremisesAgentGroup
 
@@ -66,7 +66,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
   "name": "get_onpremisesagentgroup"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/2d55ed41-1619-4848-92bb-0576d3038682/?$expand=publishedResources,agents
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0475fc6896c192a95b0234d0f0e773b00c4feb0a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a2fd268bbc920b3c1a6ef3dc79f5295ff66c2eb1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327106"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727479"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
 
@@ -54,7 +54,7 @@ GET /users/{id}/licenseDetails
   "blockType": "request",
   "name": "get_licensedetails"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

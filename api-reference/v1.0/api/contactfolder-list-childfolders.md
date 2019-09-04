@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1dc7d34f682fe16518328a9b811dd5ceb2a9e8f5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1df6de7e71d25054d62e49228ad8de3e3f78f390
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371782"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721430"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
   "blockType": "request",
   "name": "contactfolder_get_childfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

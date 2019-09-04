@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3a2c61a498e9c13add039914f74f6a815ed20168
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e7aa809cfd2d597e7ac284e5daf4e052fd4282f5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417667"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718306"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -57,7 +57,7 @@ GET /devices/{id}
   "blockType": "request",
   "name": "get_device"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

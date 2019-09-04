@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58acdeaf076654cbcd945a3c6114cc4a82340f2a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e31f43587584a82b5f1e2112f3b18e5d5edf87db
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367421"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729075"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/calendarGroups
   "blockType": "request",
   "name": "get_calendargroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35dd54c1f3dce6df7169a9ae746a33a24d0f19c3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f11528c73c2ecedac17805a6caf58083fc1b375e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368910"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729775"
 ---
 # <a name="get-rangeformat"></a>获取 RangeFormat
 
@@ -55,7 +55,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
   "blockType": "request",
   "name": "get_rangeformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

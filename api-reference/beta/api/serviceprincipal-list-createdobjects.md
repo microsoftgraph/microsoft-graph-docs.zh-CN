@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 613093a668f576ddb150c29765c4a3e45bc709d8
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 34a21301f1f5962486f53e561b9c24f7c5f8faf4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410305"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722445"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 
@@ -55,7 +55,7 @@ GET /servicePrincipals/{id}/createdObjects
   "blockType": "request",
   "name": "serviceprincipals_get_createdobjects"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

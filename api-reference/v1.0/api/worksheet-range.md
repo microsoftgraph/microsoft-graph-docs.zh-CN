@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 949bbefa0f65c3dfa7daf54a092a315101d7ae79
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5aecc0100d0915c16afa72a95e162fa2907b4a55
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307421"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728832"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 
@@ -56,7 +56,7 @@ GET /workbook/worksheets/{id|name}/range
   "blockType": "request",
   "name": "worksheet_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -110,7 +110,7 @@ Content-length: 169
   "blockType": "request",
   "name": "worksheet_range_noaddress"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 检索 DriveItem 资源的 ThumbnailSet 资源集合。
 doc_type: apiPageType
-ms.openlocfilehash: 64a863464bb457e6fd3e9909ff8df6ddd99ec73a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e210f42c7695d7c9f36c142c73621b09b71802e3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349374"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726387"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -68,7 +68,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -125,7 +125,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -178,7 +178,7 @@ Content-Type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -225,7 +225,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -309,7 +309,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

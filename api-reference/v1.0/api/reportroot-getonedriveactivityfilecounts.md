@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 17b217a43aa2511b7b64d2a08b49a2ffb5cdf160
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b5fd8fd8641fda6f7217826dcb1569dd4f3fe370
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373972"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728137"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 
@@ -82,7 +82,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getonedriveactivityfilecounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityFileCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 482c856d0a343cd00495e2f975b830296bb843b9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 09dadd17b305ea4dd78bd87718f9f9896e606997
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373108"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729103"
 ---
 # <a name="list-tablerowcollection"></a>列出 TableRowCollection
 
@@ -54,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
   "blockType": "request",
   "name": "get_tablerowcollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

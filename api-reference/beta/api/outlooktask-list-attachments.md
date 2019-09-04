@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 742590f87f2878f12647eecccf6c900acf94f4d6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cd3d8ff2cc00be10ee8c40fb028c763933c87488
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414131"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723705"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -67,7 +67,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
   "name": "outlook_task_get_attachments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

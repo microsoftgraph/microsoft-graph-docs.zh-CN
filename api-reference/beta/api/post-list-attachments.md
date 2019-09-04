@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b62a20c0f8e2c27c982acead15670afdcf92355d
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 1a2f0fa080792ac7aad25ccb14c8f03bae11706d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622572"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725610"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand
   "name": "post_get_attachments_beta",
   "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJfolA==","AAMkADJ-aHAAA="]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJfolA==/posts/AAMkADJ-aHAAA=/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

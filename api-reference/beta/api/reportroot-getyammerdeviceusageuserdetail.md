@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0ce052c0d3e2eecc423a7ed4a49126ac5c1acc0e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b6ff91494d7f996a1e1a851ccc0ef4d94b842a54
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411016"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722648"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -105,7 +105,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getyammerdeviceusageuserdetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserDetail(period='D7')?$format=text/csv
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -165,7 +165,7 @@ Report Refresh Date,User Principal Name,Display Name,User State,State Change Dat
   "name": "reportroot_getyammerdeviceusageuserdetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserDetail(period='D7')?$format=application/json
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

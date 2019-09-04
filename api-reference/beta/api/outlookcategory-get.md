@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab2d536dac104665ba17f07a4282905412b2fad7
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9f404ac45ee1acc67aa353eb63b17fafa07cd992
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414187"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725911"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 
@@ -56,7 +56,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
   "blockType": "request",
   "name": "get_outlookcategory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

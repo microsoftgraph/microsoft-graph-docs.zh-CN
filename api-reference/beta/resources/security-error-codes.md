@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 2d77a0f21623a98e4041b845e92a23c7574a415d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2291f0009c7d54a62ac30d448a9f97ff8935a569
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008556"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726310"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph 安全性 API 错误响应
 
@@ -50,6 +50,10 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 ```
 
 > **注意:** 每个 HTTP 标头都是一个子项集合, 因此用户可以枚举警告标头并选中所有项目。
+
+## <a name="threat-indicator-bulk-action-errors"></a>威胁指示器批量操作错误
+
+批量操作 (即创建、更新和删除) 可能会生成两个不同的潜在错误代码。  400错误代码指示提供的正文在序列化过程中出现错误, 而206错误代码指示在将一个或多个批量操作与提供程序联合在一起时失败。 响应将包含各个提供商针对每个威胁情报指标的成功/错误数据。 与警报不同, 所有潜在的错误信息都将包含在威胁指示器批量操作响应的正文中。
 
 ## <a name="constraints"></a>约束
 

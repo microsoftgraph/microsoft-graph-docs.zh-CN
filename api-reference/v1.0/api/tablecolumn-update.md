@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1e5c1457dac7db561a5361cfad07e7283b891847
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 07dc8f6ee95dbdd7dbdf2d5424c6736484d34284
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373152"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727633"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
@@ -45,7 +45,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookTableColumn](../resources/tablecolumn.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookTableColumn](../resources/workbooktablecolumn.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

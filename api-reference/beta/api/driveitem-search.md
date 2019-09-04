@@ -6,12 +6,12 @@ title: 搜索文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 87aad67d06863cb1dccd9f419880edb0183b850a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 26a34f5b8ca8a0d0897cba3f3b9cada0b65107c6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416637"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719323"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -62,7 +62,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/search(q='{search-query}')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -121,7 +121,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/search(q='{search-query}')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

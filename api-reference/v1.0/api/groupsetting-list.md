@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 76f5695a6f32a8c03fae384ef5ba39b1c40e528b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0066cad3a8f8ee88c20542d428bf7d9809f2e14f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371617"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726716"
 ---
 # <a name="list-group-settings"></a>列表组设置
 
@@ -62,7 +62,7 @@ GET groups/{id}/settings
   "blockType": "request",
   "name": "get_groupsettings"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

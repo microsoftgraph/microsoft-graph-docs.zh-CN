@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a3ffc345b4b910c7cc4410da099f2fb06d740524
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3d408e1dcdaec6e28ce37b23b5421f86337064bc
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309414"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728592"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -66,7 +66,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
   "blockType": "request",
   "name": "user_supportedtimezones_default"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -134,7 +134,7 @@ Content-type: application/json
   "name": "user_supportedtimezones_iana"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

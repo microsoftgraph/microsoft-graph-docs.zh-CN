@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e72cab3a60843fa53f6a33396f6bfdb10b3a2920
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ffbf81bb458880395f12eca4fd97e0f0d10cba5f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307334"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728823"
 ---
 # <a name="get-worksheetprotection"></a>Get WorksheetProtection
 
@@ -53,7 +53,7 @@ GET /workbook/worksheets/{id|name}/protection
   "blockType": "request",
   "name": "get_worksheetprotection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

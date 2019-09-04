@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3e6a479db3c30a70c5ed7d9b1df80cd8913153dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c42ded971ce355a45889b1d7b3a612ac3ddfc4fa
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307736"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728921"
 ---
 # <a name="list-rangeview-rows"></a>List rangeView rows
 
@@ -53,7 +53,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
   "blockType": "request",
   "name": "get_rows"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/rows
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

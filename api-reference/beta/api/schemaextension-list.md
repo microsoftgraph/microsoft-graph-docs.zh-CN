@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6f52818f912b3d27fa5afe3f237250ca3b7c735f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3ea887605b5c3dd1e7b6ace945fbf5a09983dab2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410589"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722556"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -57,7 +57,7 @@ GET /schemaExtensions
   "blockType": "request",
   "name": "get_schemaextensions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

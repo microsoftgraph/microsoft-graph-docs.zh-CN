@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d1da904da3fec4255b7d8f763b2272bc5af99ba3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 91907145f71794a4872e8ce37aef7936766fa4a7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372348"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729153"
 ---
 # <a name="get-tablecolumn"></a>获取 TableColumn
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookTableColumn](../resources/tablecolumn.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookTableColumn](../resources/workbooktablecolumn.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -54,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
   "blockType": "request",
   "name": "get_tablecolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

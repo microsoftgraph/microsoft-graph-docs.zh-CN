@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 07dbcd2e900ced3fe235300cfab2b4922ddccc9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f4359b712f183ffc634e079aea0d61094a2b013
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007072"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726709"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "36007072"
 |:---------------|:--------|:----------|
 |id|int|返回标识表内的列的唯一键。只读。|
 |Index|INT|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
-|name|string|返回表格列的名称。只读。|
+|name|string|返回表格列的名称。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>关系

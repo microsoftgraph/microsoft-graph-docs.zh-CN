@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7cc257ac683009b84447aec6a3a55f1d48be6a2f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ab19ddb5a3207b41033397611806208d336bb9ff
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365088"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728361"
 ---
 # <a name="get-rangeborder"></a>获取 RangeBorder
 
@@ -55,7 +55,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex
   "blockType": "request",
   "name": "get_rangeborder"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
