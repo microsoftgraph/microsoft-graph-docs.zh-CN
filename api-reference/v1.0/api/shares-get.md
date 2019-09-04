@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 通过使用 shareId 或共享 URL 访问共享 DriveItem 或共享项目集合。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b76d62c2f3beabfb825caea79ca79c55df2d29dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9345130e053b5970e6f38df552c77059cbce9c8a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307838"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729257"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -89,7 +89,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -147,7 +147,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -196,7 +196,7 @@ Content-Type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

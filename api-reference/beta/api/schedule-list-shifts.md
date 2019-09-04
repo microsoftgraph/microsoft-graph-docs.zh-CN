@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 963265383606c91609051cfea4282c41a6d057be
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: bd4723ad1b0a7b4c22887b2482cd431c2370b5a3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410785"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724748"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -65,7 +65,7 @@ GET /teams/{teamId}/schedule/shifts
   "blockType": "request",
   "name": "schedule-list-shifts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

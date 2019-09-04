@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d52fe3969c0419466360ad91468d728ca3199785
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4e517299fdfbb830d782edba98a283ae5f600a7e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373337"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727647"
 ---
 # <a name="tablerow-range"></a>TableRow:Range
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
   "isComposable": true,
   "name": "tablerow_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

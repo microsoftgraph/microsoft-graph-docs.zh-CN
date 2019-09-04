@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c0c305515228f0c2172d6e19f5851758bbe9d490
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d3a888471e37ce0cac38cd60a2eefd1f00865e69
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421734"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724118"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -55,7 +55,7 @@ GET /workbook/names
   "blockType": "request",
   "name": "get_names"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

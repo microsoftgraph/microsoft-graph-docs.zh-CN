@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 61021e305dfd92ea1a75224136905dfc3de8b724
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 00f8bf3b596aa1a4e58beb340fef6e2c94e834e3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421633"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723999"
 ---
 # <a name="get-workbookapplication"></a>获取 workbookApplication
 
@@ -54,7 +54,7 @@ GET /workbook/application
   "blockType": "request",
   "name": "get_workbookApplication"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 83f0c1e65bd5eb26617804236a737d6d043b5a07
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f19cc4d883d22fd87d2bb75b8a0fab1e1d02918a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418262"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718455"
 ---
 # <a name="list-chartseriescollection"></a>列出 ChartSeriesCollection
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series
   "blockType": "request",
   "name": "get_chartseriescollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

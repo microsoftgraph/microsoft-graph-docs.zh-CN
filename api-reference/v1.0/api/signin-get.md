@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5abfdd96004e9aeb792e64713696326bb5b067d8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c74f12330430bcc81953663280403224234f9792
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307824"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727738"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -64,7 +64,7 @@ GET /auditLogs/signIns/{id}
   "name": "get_signin"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

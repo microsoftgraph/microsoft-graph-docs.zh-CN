@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2ab2ad91d827d278676d2d6387c7e820de169328
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 872c1ee40c76631e9a6a477108a36143cf87d6ec
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412087"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723208"
 ---
 # <a name="get-rangefill"></a>获取 RangeFill
 
@@ -57,7 +57,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
   "blockType": "request",
   "name": "get_rangefill"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

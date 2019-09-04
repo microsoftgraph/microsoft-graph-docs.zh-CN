@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 960783cdc3c570e38e84655d25da030ea5439bad
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9894a5dd147a2d24f086a3e8a304af9151afaa23
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411877"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725379"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot：getEmailActivityUserDetail
 
@@ -103,7 +103,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getemailactivityuserdetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailActivityUserDetail(period='D7')?$format=text/csv
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -163,7 +163,7 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Las
   "name": "reportroot_getemailactivityuserdetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailActivityUserDetail(period='D7')?$format=application/json
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

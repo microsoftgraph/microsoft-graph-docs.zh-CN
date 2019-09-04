@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 5be09bba7a7867d0f994adecbed4e7690e20d61b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: db7fee658e16f8331a8a3910f3a8ea014d35c407
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422296"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729691"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -98,7 +98,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getoffice365groupsactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityDetail(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 083fbf14fb3db0687112da8c9c73abe0071a6833
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e02d00b7a849e1cf2c562c817c02cb78e0806953
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410267"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724601"
 ---
 # <a name="list-serviceprincipal-memberof"></a>列出 servicePrincipal memberOf
 
@@ -62,7 +62,7 @@ GET /servicePrincipals/{id}/memberOf
   "blockType": "request",
   "name": "get_serviceprincipal_memberof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

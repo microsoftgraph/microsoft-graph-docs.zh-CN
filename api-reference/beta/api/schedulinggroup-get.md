@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1f97d1ab25f5fd9cb4d88bb72dbe79cdc16a412d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 0ae53f154189bf1c7ab0afe2acaa7568805b3c3f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410652"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722560"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 
@@ -63,7 +63,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
   "blockType": "request",
   "name": "schedule-get-schedulinggroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

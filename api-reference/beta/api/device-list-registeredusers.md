@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e8ab5c81cde1435c8ddac18d4f50dafc75930c98
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 724d53c33e48e2a2b3b1a640a66568aa0395e565
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417654"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719652"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -59,7 +59,7 @@ GET /devices/{id}/registeredUsers
   "blockType": "request",
   "name": "get_registeredusers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/registeredUsers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

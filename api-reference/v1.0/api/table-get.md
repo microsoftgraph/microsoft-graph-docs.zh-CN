@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f54f17ddf6f53366c2e6c46bff0019e3103a8724
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a97433f824c299467da3b7f476c96a06d21790f7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341734"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729201"
 ---
 # <a name="get-table"></a>获取表格
 
@@ -54,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}
   "blockType": "request",
   "name": "get_table"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

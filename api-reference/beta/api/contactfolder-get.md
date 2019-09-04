@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5de49776c57789e04dd40723c4eb4f20ac03661
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3e8121184822f8bf0fc2fa89d3964503a6b3761e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417968"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719757"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
   "blockType": "request",
   "name": "get_contactfolder"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contactFolders/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

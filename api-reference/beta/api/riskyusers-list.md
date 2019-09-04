@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ee16244a6910799fbfdc02ee97a6fcaeeb5d9a5e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 76cba3d86b17445828a34e93653d5f8849affb12
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410827"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722578"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 
@@ -59,7 +59,7 @@ GET /riskyUsers
   "blockType": "request",
   "name": "list_riskyusers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -116,7 +116,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "list_filter_riskyusers"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
