@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索 Drive 资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: 5118dedfde1126a01d445dd5a4c566ac8738902a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5af01a9eea8cb8c362ca99cb22db467ff54e8d62
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365018"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726961"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -42,7 +42,7 @@ ms.locfileid: "36365018"
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -76,7 +76,7 @@ GET /me/drive
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -114,7 +114,7 @@ GET /users/{idOrUserPrincipalName}/drive
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -152,7 +152,7 @@ GET /groups/{groupId}/drive
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drive
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -190,7 +190,7 @@ GET /sites/{siteId}/drive
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

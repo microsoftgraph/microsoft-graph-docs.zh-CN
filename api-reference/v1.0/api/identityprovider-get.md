@@ -5,12 +5,12 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 68790fc9c5c16e2bf3aa87089484c512e02cd1cd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3c58fb35c929659c5b35134f080a92051b8b059d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364963"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726751"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -61,7 +61,7 @@ GET /identityProviders/{id}
   "blockType": "request",
   "name": "get-identityprovider"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

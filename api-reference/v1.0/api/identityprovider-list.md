@@ -5,12 +5,12 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b2269c2023a82156846acc812ad676caedbab2ff
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 781b703458b41ad41849aca2c2e87c826fb00ffa
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364981"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720730"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -61,7 +61,7 @@ GET /identityProviders
   "blockType": "request",
   "name": "list-identityproviders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

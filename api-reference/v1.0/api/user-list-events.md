@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 996013fa0119108606ae80c211e713b55cf90833
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4da15c2df7bfac75f8dea3b727e987469ed0b23b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367420"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727500"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -93,7 +93,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
   "blockType": "request",
   "name": "get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 Prefer: outlook.timezone="Pacific Standard Time"
 ```

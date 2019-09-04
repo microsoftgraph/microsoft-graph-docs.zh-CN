@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23193047cb6f3111a61a9112e70be1cfcdb5deb0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 99697ed0002326e27391b6b44ec912ea5a60514f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367433"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729012"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -62,7 +62,7 @@ GET /users/{id}/joinedTeams
   "blockType": "request",
   "name": "get_joinedteams"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

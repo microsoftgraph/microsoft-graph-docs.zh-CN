@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 65a0aa0b04f2c9a8b02a0fd7f4d3accce08636a5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4edbb397436be86bb305e1695566c7d2a4bb7c07
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316251"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728975"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -78,7 +78,7 @@ GET /users/{id | userPrincipalName}/people
   "name": "get_person_collection"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/people
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

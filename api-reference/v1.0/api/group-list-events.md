@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 822031be9d3bcf222a2c6345bca8a42b57318e46
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2e789f4bd493ea326a727cd6601c33544822c1bd
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337291"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720858"
 ---
 # <a name="list-events"></a>列出事件
 检索 [event](../resources/event.md) 对象列表.
@@ -57,7 +57,7 @@ GET /groups/{id}/calendar/events
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_group_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

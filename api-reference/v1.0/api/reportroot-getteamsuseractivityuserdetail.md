@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 6de0af2b1ec30e21658dc8fa2f4ab6bbb56379db
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce5c4c6d7a1d3271d854d0ecb9d089920f07c842
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369418"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727885"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot：getTeamsUserActivityUserDetail
 
@@ -86,7 +86,7 @@ CSV 文件包含下面的列标题：
   "name": "reportroot_getteamsuseractivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

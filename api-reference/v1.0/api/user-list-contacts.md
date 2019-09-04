@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 36fc9e08a0c8e0c779d3731aa1a435865c5e6ce2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5b8defe631b70e42cd7613eb0ab0e46b144ec76b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327165"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729061"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/
   "blockType": "request",
   "name": "user_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contacts
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

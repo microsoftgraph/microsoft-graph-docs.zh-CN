@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 05ca093ec9ab20d039242d231619bc710ac79925
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c1d9ccd71e49e673235bfca151f5b5db92efd1f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033983"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730293"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "36033983"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[Get Table](../api/table-get.md) | [WorkbookTable](table.md) |读取 table 对象的属性和关系。|
-|[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](tablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
-|[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](tablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
+|[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
+|[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
 |[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| 通过发布到行集合创建新的 TableRow。|
 |[List rows](../api/table-list-rows.md) |[WorkbookTableRow](tablerow.md) 集合| 获取 TableRow 对象的集合。|
 |[Update](../api/table-update.md) | [WorkbookTable](table.md)   |更新 Table 对象。 |
@@ -56,7 +56,7 @@ ms.locfileid: "36033983"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|columns|[WorkbookTableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
+|columns|[WorkbookTableColumn](workbooktablecolumn.md) 集合|表示表中所有列的集合。只读。|
 |rows|[WorkbookTableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
 |sort|[WorkbookTableSort](tablesort.md)|表示表的排序。只读。|
 |worksheet|[WorkbookWorksheet](worksheet.md)|包含当前表的工作表。只读。|

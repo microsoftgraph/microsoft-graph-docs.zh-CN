@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: bd21b806635885e5feda3fde4c8fe6463aa9ec62
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db0809790247e834a64672699b0a4183c04f5458
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033829"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730321"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -28,7 +28,7 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 |[teamsTab](../resources/teamstab.md) |[列出](../api/teamstab-list.md)、[创建](../api/teamstab-add.md)、[读取](../api/teamstab-get.md)、[更新](../api/teamstab-update.md)、[删除](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[列出](../api/teamsapp-list.md)、[发布](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[移除](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/teamsappinstallation-list.md)、[安装](../api/teamsappinstallation-add.md)、[升级](../api/teamsappinstallation-delete.md)、[移除](../api/teamsappinstallation-delete.md) |
-| [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)（预览）| [列出](/graph/api/channel-list-messages?view=graph-rest-beta)、[发送](/graph/api/channel-post-chatmessage?view=graph-rest-beta)、[读取](/graph/api/channel-get-message?view=graph-rest-beta) |
+| [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)（预览）| [列出](/graph/api/channel-list-messages?view=graph-rest-beta)、[发送](/graph/api/channel-post-messages?view=graph-rest-beta)、[读取](/graph/api/channel-get-message?view=graph-rest-beta) |
 | [调用](/graph/api/resources/call?view=graph-rest-beta)（预览）| [应答](/graph/api/call-answer?view=graph-rest-beta)、[拒绝](/graph/api/call-reject?view=graph-rest-beta)、[重定向](/graph/api/call-redirect?view=graph-rest-beta)、[静音](/graph/api/call-mute?view=graph-rest-beta)、[取消静音](/graph/api/call-unmute?view=graph-rest-beta)、[更新元数据](/graph/api/call-updatemetadata?view=graph-rest-beta)、[更改屏幕共享角色](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[列出参与者](/graph/api/call-list-participants?view=graph-rest-beta)、[邀请参与者](/graph/api/participant-invite?view=graph-rest-beta)、[将所有参与者设为静音](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[计划](/graph/api/resources/schedule?view=graph-rest-beta)（预览）| [创建或替换](/graph/api/team-put-schedule?view=graph-rest-beta)、[获取](/graph/api/schedule-get?view=graph-rest-beta)、[共享](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)、[列出](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta)、[获取](/graph/api/schedulinggroup-get?view=graph-rest-beta)、[替换](/graph/api/schedulinggroup-put?view=graph-rest-beta)、[删除](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |

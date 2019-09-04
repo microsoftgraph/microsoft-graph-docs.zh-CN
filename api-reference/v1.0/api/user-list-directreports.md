@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3323f11e0fd30ff849553a67186b7e55f2695616
-ms.sourcegitcommit: dd4501975b50fe47d4eec32cae2ff49638d3a2b4
+ms.openlocfilehash: 61a0ab07a5c8b866dc1f21054f3532fc48486388
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36645519"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729033"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/directReports
   "blockType": "request",
   "name": "get_directreports"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/directReports
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

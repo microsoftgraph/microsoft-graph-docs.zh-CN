@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ec902c5e8fd341b82a0fc6b5dc0f8f4bba139192
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f7a38f6e9978fb2cdccd4b98a1aba5aa4fabc5be
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371850"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721283"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -51,7 +51,7 @@ GET /directoryObjects/{id}
   "blockType": "request",
   "name": "get_directoryobject"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

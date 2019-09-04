@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 8e8ee9b149c6a7b3fc4f4e4e496aaefe8a9a3852
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 484b2320b76da8cd31c6a4fd45ce915aec1315ba
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327126"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729015"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/mailFolders
   "blockType": "request",
   "name": "get_mailfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

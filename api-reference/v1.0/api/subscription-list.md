@@ -5,12 +5,12 @@ localization_priority: Priority
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 845897a17f85ec50f98110a672772d18ad329a58
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec7e5a9e52b7050cc6774b7ca6413b347a702806
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024635"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727675"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -84,14 +84,14 @@ GET /subscriptions
   "name": "get_subscriptions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/subscriptions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

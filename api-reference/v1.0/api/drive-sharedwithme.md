@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索已与驱动器所有者共享的 DriveItem 资源的集合。
 doc_type: apiPageType
-ms.openlocfilehash: ca78c3b618a0c323687dd1e38690a600aa9516fe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 96de7dabf8dac372655261be4928193e8987fd9d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375154"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721150"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 
@@ -37,7 +37,7 @@ ms.locfileid: "36375154"
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

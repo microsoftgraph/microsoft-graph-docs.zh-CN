@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f535a6fa98b8d156a6a578c49ee400d11d90363
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9b323c81d471fc36da58ee0748c66ca7b9ec573d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367195"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728998"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/memberOf
   "blockType": "request",
   "name": "user_get_memberof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/memberOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

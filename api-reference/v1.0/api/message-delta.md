@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c2e21ebde9ec9e2365c0841f43a0323eadadd1d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05f0686dd2a1996aeddc075a91562f427ab612db
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374783"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728683"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -75,7 +75,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
   "blockType": "request",
   "name": "message_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 Prefer: odata.maxpagesize=2
 ```

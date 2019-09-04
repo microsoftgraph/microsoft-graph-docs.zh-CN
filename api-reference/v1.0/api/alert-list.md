@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 44fd601cf004237d7cabda967bb99657d4f4bd25
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 41f5badd0e4a9ef7ae0580a5c231dae7500b020c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373978"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726604"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -79,7 +79,7 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
   "name": "get_alerts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

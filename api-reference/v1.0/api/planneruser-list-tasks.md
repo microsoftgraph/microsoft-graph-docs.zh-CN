@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0b42a0274317a570db285e4bf0089876e4fd924e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e58c4b765f80f8296bf96cdf86c34f42f8492bd8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375756"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729906"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -55,7 +55,7 @@ GET /drive/root/createdByUser/planner/tasks
   "blockType": "request",
   "name": "get_tasks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/planner/tasks
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

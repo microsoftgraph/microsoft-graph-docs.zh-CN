@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7c117c314587aa26502dce1f40cb57dd9c9c44f0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9de4f41bfee17a560da5d971ce6ad2e6562b2bf8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337251"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726758"
 ---
 # <a name="list-members"></a>列出成员
 获取组的直接成员列表。组可将用户、联系人和其他组作为成员。此操作不可传递。
@@ -53,7 +53,7 @@ GET /groups/{id}/members
   "blockType": "request",
   "name": "get_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
