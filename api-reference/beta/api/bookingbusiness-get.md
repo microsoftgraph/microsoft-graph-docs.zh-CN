@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ebf41f24bee2016b51f4d9403988014c9e00683b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 91f90a647e1f52c0dbf1add620250246a2f95150
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415622"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718903"
 ---
 # <a name="get-bookingbusiness"></a>获取 bookingBusiness
 
@@ -52,7 +52,7 @@ GET /bookingBusinesses/{id}
   "blockType": "request",
   "name": "get_bookingbusiness"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

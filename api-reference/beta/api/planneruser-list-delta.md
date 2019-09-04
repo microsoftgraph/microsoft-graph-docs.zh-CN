@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 04bef61f1f14499a2f568a893068a7644673761e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 57ab397437648ee1c6d0c4779e26ea19d1f5cde2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413025"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725631"
 ---
 # <a name="planner-delta"></a>Planner: delta
 
@@ -78,7 +78,7 @@ GET /users/{id}/planner/all/delta
   "name": "get_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

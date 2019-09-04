@@ -6,12 +6,12 @@ title: 检索 SharePoint 列表中的项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a32e43182bfdd9837ec06da08bdb5aa7c004921f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 19f810c2d4f71f2bc296ecd590a493cd22e30f22
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415372"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726156"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

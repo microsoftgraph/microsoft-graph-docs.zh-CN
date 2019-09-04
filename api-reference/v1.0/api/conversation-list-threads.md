@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: edfb34001cd05affeec50aa8b602ee10de3b0437
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72ce57bf47e7188dfe98a57dbb7a9daef2767dd9
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365753"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727115"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -54,7 +54,7 @@ GET /groups/{id}/conversations/{id}/threads
   "blockType": "request",
   "name": "get_threads"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

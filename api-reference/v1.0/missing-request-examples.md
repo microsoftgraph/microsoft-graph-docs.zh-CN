@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 6a9dab0a3f30f69f5b6e53e20f22642769cf63b3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7c47801cd7c76c201f543587012ba22d34660ee7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327092"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730356"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 
@@ -22,7 +22,7 @@ ms.locfileid: "36327092"
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {"blockType": "request", "name": "get_current_user" } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -58,7 +58,7 @@ Content-Type: application/json
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -95,7 +95,7 @@ Content-Type: application/json
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {"blockType": "request", "name": "get_users" } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f1092d2d811591b5e5a05931e38264a8150d4d8c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 026e732a1206a2f984bca16ad24069c2a8074c2e
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415531"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718868"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 
@@ -61,7 +61,7 @@ GET /bookingBusinesses
   "blockType": "request",
   "name": "get_bookingbusinesses"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -114,7 +114,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "query_bookingbusinesses"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

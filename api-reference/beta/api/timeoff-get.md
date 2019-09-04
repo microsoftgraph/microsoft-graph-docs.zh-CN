@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f4456926e1d07dbaf130687a414bac3772ffb0ad
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ffa0f5e1e3068cd8d3be26ae33b360f27d39d7df
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409231"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724300"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 
@@ -63,7 +63,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
   "blockType": "request",
   "name": "timeoff-get"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

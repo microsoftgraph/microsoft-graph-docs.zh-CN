@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 7a645247b3ff251704010415711e84c805e936ca
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 75dbddb3a9462f5fe54a82d47fb5ca7e98dbc160
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420446"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720443"
 ---
 # <a name="list-identityriskevents"></a>列出 identityRiskEvents
 
@@ -53,7 +53,7 @@ GET /identityRiskEvents
   "blockType": "request",
   "name": "get_identityriskevents"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

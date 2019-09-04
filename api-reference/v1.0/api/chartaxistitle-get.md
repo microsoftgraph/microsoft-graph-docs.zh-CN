@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6a33595b9fa0df62be0964b1ca4e67991879e715
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0702933dc3b8420383f871def78afcdf5f9fa5c4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361757"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726415"
 ---
 # <a name="get-chartaxistitle"></a>获取 ChartAxisTitle
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
   "blockType": "request",
   "name": "get_chartaxistitle"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

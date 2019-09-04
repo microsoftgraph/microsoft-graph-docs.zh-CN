@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4eabcd09ed5cdd2fc450e89703ce9828970b71c3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ddf2072116cdf7209c2bf24def5edda6aebadcf
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419757"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721717"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
@@ -66,7 +66,7 @@ GET /directory/featureRolloutPolicies/{id}
   "name": "get_featurerolloutpolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -120,7 +120,7 @@ Content-type: application/json
   "name": "get_featurerolloutpolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

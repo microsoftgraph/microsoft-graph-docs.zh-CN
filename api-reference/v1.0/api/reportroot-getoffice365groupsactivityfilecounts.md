@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: efb4964e5af8045e0d096745f8ef542a1b0a9fa3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2560472cec0d26099875c9e9950a5bfcf86e1159
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373714"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728158"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 
@@ -80,7 +80,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getoffice365groupsactivityfilecounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityFileCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

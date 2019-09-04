@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 852a9d669a66aefa8df9ae0b98c9250d78e88ec0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9fb8ef9cdaaecdb713b6e546d2f543361e9e83ea
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367436"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727514"
 ---
 # <a name="list-createdobjects"></a>List createdObjects
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/createdObjects
   "blockType": "request",
   "name": "get_createdobjects"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/createdObjects
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

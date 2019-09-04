@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 1a69ad85280d3f584d8ae15a1818f9dd80642399
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6a2485653f69fb9c403a3b5bf893c7cf6ee150e7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411723"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723068"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
@@ -93,7 +93,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getoffice365activationsuserdetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$format=text/csv
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -153,7 +153,7 @@ Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated
   "name": "reportroot_getoffice365activationsuserdetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$format=application/json
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

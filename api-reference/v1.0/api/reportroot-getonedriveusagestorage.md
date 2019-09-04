@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c4838820384a8cf37cc0c26cb50cfc698d66ca0e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 28dd14d7d9b2e2e09bcd0f60e3c8a0f8d719a098
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321864"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728102"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 
@@ -80,7 +80,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getonedriveusagestorage"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageStorage(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

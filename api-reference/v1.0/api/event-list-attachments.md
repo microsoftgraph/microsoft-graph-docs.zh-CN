@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50cc1490643442fa81011a42317aa39b96b4b8d9
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 7f433f31fce993c9d9c0bfcca3f8a52d7cb4f72b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461702"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726821"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -84,7 +84,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
   "blockType": "request",
   "name": "event_get_attachments_v1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
