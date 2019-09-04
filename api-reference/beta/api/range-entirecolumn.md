@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2c79cb546aa959c9bbea99b684cee7d52e20c27f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 013a29b9feaed9f69d7bbb2c5dd5a5192f59b7ba
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412283"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725470"
 ---
 # <a name="range-entirecolumn"></a>Range:EntireColumn
 
@@ -56,7 +56,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
   "blockType": "request",
   "name": "range_entirecolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/EntireColumn
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

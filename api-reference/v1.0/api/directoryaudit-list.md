@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ea475ac8715500e8a2337844b1421728e5573fe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 82e281567c919ec6a1ada62c3f506893a435fb9a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372662"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727052"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -87,7 +87,7 @@ GET /auditLogs/directoryaudits
   "name": "get_directoryaudit"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

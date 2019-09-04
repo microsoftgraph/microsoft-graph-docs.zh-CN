@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cd6c2f89d4c057954b536a9c3f57003aa93a7786
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 899a2c7e2f829f296cd55f420dddbb9079d53890
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418094"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719799"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -67,7 +67,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
   "name": "get_chatmessagehostedcontent"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

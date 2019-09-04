@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 4000be4ce44ed38c40b739313a80ad84aa880feb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1d9757264b69ffa552d1baa379e373db84bf97a8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420539"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720457"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -63,7 +63,7 @@ GET /identityProviders
   "blockType": "request",
   "name": "get_identityproviders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 85de1cc95ef5a01eb490e1ea635380fa1474acc2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9e35dd37bf44f75f5519c1e9800be34398e4a535
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316372"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727192"
 ---
 # <a name="get-charttitle"></a>获取 ChartTitle
 
@@ -53,7 +53,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
   "blockType": "request",
   "name": "get_charttitle"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

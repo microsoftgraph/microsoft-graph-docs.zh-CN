@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8515d73db6740d2e1dbf4b2fc90368c02515c70e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 019b309a4c789cef3da5e8ac6f0ccc0aabbe13e3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421175"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722102"
 ---
 # <a name="list-trustframeworkpolicies"></a>列出 trustFrameworkPolicies
 
@@ -66,7 +66,7 @@ GET /trustFramework/policies/
   "blockType": "request",
   "name": "get_trustFrameworks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

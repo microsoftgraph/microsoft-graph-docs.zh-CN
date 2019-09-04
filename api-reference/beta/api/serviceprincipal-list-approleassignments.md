@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: eb8e0d88612e24522d907cb5daabc5d76a1eb3b2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4d4dabb37d57206e1f285c15a8381a91d9cf122b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410310"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724608"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: List appRoleAssignments
 
@@ -55,7 +55,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
   "blockType": "request",
   "name": "get_approleassignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

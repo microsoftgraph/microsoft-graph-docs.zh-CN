@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8a60b5d4a0ab7a13969832e2a46a97a438a6caa5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e778ccb97427c9f00bd98e9a5c29c4d12d3c16ef
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316512"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726394"
 ---
 # <a name="get-chartlineformat"></a>获取 ChartLineFormat
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/
   "blockType": "request",
   "name": "get_chartlineformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

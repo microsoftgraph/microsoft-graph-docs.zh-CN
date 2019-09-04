@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8ad6431095697e3d1eec802f9a552390449fba0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 413dcd41821ab7871106bfac946cf102926ee314
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413984"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725848"
 ---
 # <a name="list-taskgroups"></a>列出 taskGroups
 
@@ -57,7 +57,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
   "blockType": "request",
   "name": "get_taskgroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0878eadd317aef5aa77d88e0f3ade431485ae85c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6f52c24bb1b47e1c8c3302ac3b876ae6983d067d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408186"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719010"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -60,7 +60,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
   "blockType": "request",
   "name": "get_applicationsigninsummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

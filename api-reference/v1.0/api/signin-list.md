@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9500ca9421f74247c86d9cb5f667ede3948833a0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0e619f0d5577ffe4db91142eccc257d9fa93e643
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307766"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729250"
 ---
 # <a name="list-signins"></a>列出 signIn
 
@@ -85,7 +85,7 @@ GET auditLogs/signIns
   "blockType": "request",
   "name": "list_signins"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

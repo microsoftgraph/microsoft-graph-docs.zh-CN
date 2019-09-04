@@ -6,12 +6,12 @@ title: 同步驱动器的内容
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 05fd3409d18ad872a4b61d55e1aa66f6a4f44c85
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a0f56e4806937fbffbb52d772d45294f68292de2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416814"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719407"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -82,7 +82,7 @@ GET /users/{userId}/drive/root/delta
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_first" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/root/delta
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -146,7 +146,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_last" }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -218,7 +218,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

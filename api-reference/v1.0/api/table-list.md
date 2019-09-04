@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5ee7de53fe75d278bc2dd65fed7af0c3d169a588
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8d0633cbc26e50812704b1958cea422a62ccb2dc
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307775"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729154"
 ---
 # <a name="list-tablecollection"></a>列出表集合
 
@@ -54,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables
   "blockType": "request",
   "name": "get_tablecollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

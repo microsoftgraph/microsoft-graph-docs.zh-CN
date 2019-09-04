@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c422cb1c64118d60b3c8d16187bc5092519bc77a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 955afbfb664661032e3f7f9b7989c90f2a4ef9de
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409620"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722242"
 ---
 # <a name="list-existing-synchronization-templates"></a>列出现有同步模板
 
@@ -58,7 +58,7 @@ GET applications/{id}/synchronization/templates
   "blockType": "request",
   "name": "get_synchronizationtemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

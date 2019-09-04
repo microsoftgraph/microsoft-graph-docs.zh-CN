@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2eb1496d45f9b07e2fadad5d751c5159eb73796d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2ec20194408fb34b42cd03d51981b49a181c93b4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420670"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721539"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -68,7 +68,7 @@ GET /groups/{id}/transitiveMembers
   "name": "get_group_transitivemembers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

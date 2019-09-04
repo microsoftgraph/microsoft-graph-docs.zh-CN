@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 265805dc757f4de81f6aaef4d8c0181388f37d36
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 19830e4efb221e2951d093ea097ad3073c7a9f23
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321739"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728088"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 
@@ -79,7 +79,7 @@ CSV 文件包含下面的列标题。
   "name": "reportroot_getsharepointactivitypages"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityPages(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

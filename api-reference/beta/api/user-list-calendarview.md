@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9ec7e3ab963bca6b2710b17cf9c5777ef04bb349
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f32d44d8ba211741166cb5efe20711e7c46f25fa
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362285"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722018"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -87,7 +87,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
   "blockType": "request",
   "name": "user_get_calendarview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

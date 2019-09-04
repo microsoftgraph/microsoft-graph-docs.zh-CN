@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 675f2eaa2f50fa8d789fa2282760d9e4f14ef121
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 09effc950d2a4bbd602721655f1b93cc0215ca02
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413641"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725820"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -56,7 +56,7 @@ GET /drive/root/createdByUser/photo
   "blockType": "request",
   "name": "get_photo"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

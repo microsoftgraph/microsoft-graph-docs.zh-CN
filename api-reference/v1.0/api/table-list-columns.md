@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 02e741a37afb9fd39ed4507eb33dc9a92293c01a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c79d6aff5135268b4eafd4cf1255a61fecc4c770
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341730"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729173"
 ---
 # <a name="list-columns"></a>列出列
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookTableColumn](../resources/tablecolumn.md)对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookTableColumn](../resources/workbooktablecolumn.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -54,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
   "blockType": "request",
   "name": "get_columns"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

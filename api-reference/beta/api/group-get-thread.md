@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ba16a2c74ec7cd63f4205061b34e6a581143e4a2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 05780ea1255dd303ae5f938bcd162317209a1ba4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419605"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720597"
 ---
 # <a name="get-conversation-thread"></a>获取对话线程
 
@@ -56,7 +56,7 @@ GET /groups/{id}/threads/{id}
   "blockType": "request",
   "name": "get_group_thread"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/threads/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q==
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4ef4d646507b9d50c43e907fbc28e22b5af15ad
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 40dcee9163acdfe5fd0a146687a5867172a238c0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409812"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722284"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 
@@ -57,7 +57,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
   "blockType": "request",
   "name": "get_synchronizationjob"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

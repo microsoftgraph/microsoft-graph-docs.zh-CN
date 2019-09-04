@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f7ea97b62b690871e08b232a06a55d2af6a5c7d9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5d1e4ae94bb6b740293e450dbbf5889a89862bf4
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414257"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723733"
 ---
 # <a name="orgcontact-list-directreports"></a>orgContact: List directReports
 
@@ -55,7 +55,7 @@ GET /contacts/{id}/directReports
   "blockType": "request",
   "name": "contacts_get_directreports"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts/{id}/directReports
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

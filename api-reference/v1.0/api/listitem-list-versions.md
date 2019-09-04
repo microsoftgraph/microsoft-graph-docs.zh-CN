@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 5be2ed3c4d6263c769ae127fec605a50e494a6d8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b4a29ce4850ba45f89e2de7cd3fc07a3f6360dd7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376043"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730237"
 ---
 # <a name="listing-versions-of-a-listitem"></a>列出列表的版本
 
@@ -53,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

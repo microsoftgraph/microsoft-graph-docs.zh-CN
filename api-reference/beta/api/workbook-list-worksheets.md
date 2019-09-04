@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 73576415d6a87543da2b78f26df91c3249345e31
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 77547d34b2f0c2d67d57acefeb5cedfb980ae545
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421692"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724055"
 ---
 # <a name="list-worksheets"></a>列出工作表
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets
   "blockType": "request",
   "name": "get_worksheets"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

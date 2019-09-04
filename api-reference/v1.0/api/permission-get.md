@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 返回特定 permission 资源的有效共享权限。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 83e89f4df915d844e7a722927a8f921701abae58
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 367330a2ba1c4f592b8b04a3ab0df7e7f7b94950
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309368"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728557"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 
@@ -64,7 +64,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

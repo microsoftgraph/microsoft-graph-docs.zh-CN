@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 98087bf47fb36bc448147aa809f11f574b055e86
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 512c942b6353e722e0de5ca7fe32e33305091ca5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667517"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723348"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -96,7 +96,7 @@ GET /auditLogs/provisioning
   "name": "list_provisioningobjectsummary"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -240,7 +240,7 @@ Content-type: application/json
   "name": "list_provisioningobjectsummary_error"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

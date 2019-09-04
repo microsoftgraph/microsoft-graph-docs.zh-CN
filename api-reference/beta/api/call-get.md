@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 58863b74b9ad35805054c1b186d6233967bb9cd5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1fdbb43af03cba4ca1b549e51aee1a0745201bfb
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418977"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720132"
 ---
 # <a name="get-call"></a>获取呼叫
 
@@ -59,7 +59,7 @@ GET /applications/{id}/calls/{id}
   "blockType": "request",
   "name": "get-call"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

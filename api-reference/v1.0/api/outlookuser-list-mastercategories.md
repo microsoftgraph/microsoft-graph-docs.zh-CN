@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7423c81f5fbdf8f7f6181ba6079b39b500d6229a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6acf3872d0c1795f0ba0a04c1b944940e074ee2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309446"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730090"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 
@@ -55,7 +55,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories
   "blockType": "request",
   "name": "get_mastercategories"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

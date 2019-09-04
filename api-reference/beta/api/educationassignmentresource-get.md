@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce2e8068e164806ecedcb5707938025d86620fd5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 93f481528e709abf2d84e1c0f98cfcb22e13286c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416483"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718035"
 ---
 # <a name="get-educationassignmentresource"></a>获取 educationAssignmentResource
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignments/{id}/resources/{id}
   "blockType": "request",
   "name": "get_educationassignmentresource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

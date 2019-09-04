@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e998e39118a66cda6ce9473f400736dcde986d50
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e646169249b128e53c8e2c38e99df2a580ed4b66
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408088"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718931"
 ---
 # <a name="get-audio-routing-group"></a>获取音频路由组
 
@@ -59,7 +59,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
   "blockType": "request",
   "name": "get-audioRoutingGroup"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

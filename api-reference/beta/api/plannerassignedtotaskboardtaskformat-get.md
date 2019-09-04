@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6364ea3fbce71bbd84094457cf3d032cef7683a5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: dd3c713136c25cb4cf902b367cb821774e6022c6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413508"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725736"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>获取 plannerAssignedToTaskBoardTaskFormat
 
@@ -54,7 +54,7 @@ GET /planner/tasks/{id}/assignedToTaskBoardFormat
   "blockType": "request",
   "name": "get_plannerassignedtotaskboardtaskformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

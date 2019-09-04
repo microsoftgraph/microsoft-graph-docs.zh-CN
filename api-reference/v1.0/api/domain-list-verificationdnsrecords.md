@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 112c280d44762143bec36e5f56d363eadaf8fcb0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c9b81852e58308fe1ec412853f519a65c2d09d4f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375259"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726954"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
@@ -67,7 +67,7 @@ GET /domains/{id}/verificationDnsRecords
   "blockType": "request",
   "name": "get_verificationdnsrecords"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

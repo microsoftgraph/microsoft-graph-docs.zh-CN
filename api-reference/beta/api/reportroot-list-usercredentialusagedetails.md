@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: e62303bd1f4f19465bbf40f99a3c7700aa6027ca
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 39ff2172ecaaa7f51c16961aef1630e0ddb0e70c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410957"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724804"
 ---
 # <a name="list-usercredentialusagedetails"></a>列出 userCredentialUsageDetails
 
@@ -79,7 +79,7 @@ GET /reports/userCredentialUsageDetails
   "name": "get_usercredentialusagedetails"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

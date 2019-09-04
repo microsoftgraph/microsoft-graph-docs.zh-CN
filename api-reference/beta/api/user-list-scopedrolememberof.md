@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 66f697f1b4b19b3aaa8032ba87919a6dc24c92e2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 929048213fac24186c0fd4594bf16fa21d02b04d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422021"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721885"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -57,7 +57,7 @@ GET /users/{id}/scopedAdministratorOf
   "blockType": "request",
   "name": "get_scopedadministratorof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

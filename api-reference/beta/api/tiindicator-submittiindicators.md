@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4247d33414d4180a770c701396aa8ae21bcd3800
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: bd60df67994ead3a16ba234107e1b6ce3b2408ee
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421244"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724321"
 ---
 # <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
 
@@ -52,7 +52,7 @@ POST /security/tiIndicators/submitTiIndicators
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200, OK`响应正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)集合对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象集合。  如果存在错误, 则此方法返回`206 Partial Content`响应代码。  有关详细信息, 请参阅[错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors)。
 
 ## <a name="examples"></a>示例
 

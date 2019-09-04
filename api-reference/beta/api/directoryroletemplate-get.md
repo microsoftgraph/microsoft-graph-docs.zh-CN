@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5afc44f579d6fab8b61ac69362e7f01f6ebf4558
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1e7440ee50bf3411d040f10beb164d06eed59b1f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417240"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36718148"
 ---
 # <a name="get-directoryroletemplate"></a>获取 directoryRoleTemplate
 
@@ -54,7 +54,7 @@ GET /directoryRoleTemplates/{id}
   "blockType": "request",
   "name": "get_directoryroletemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

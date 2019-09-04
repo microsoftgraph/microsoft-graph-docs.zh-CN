@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fc3e7996b8ad1d580297f18f0fb29a07920ad34f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53636727a9ab6786fc04df95f8c18daad89e52a5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361777"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726422"
 ---
 # <a name="get-chartaxis"></a>获取 ChartAxis
 
@@ -55,7 +55,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
   "blockType": "request",
   "name": "get_chartaxis"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

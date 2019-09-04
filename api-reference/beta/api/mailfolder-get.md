@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c488deff8726acf8b808b8ab1c0a6aa65001f88
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 521529be7cb515a7618f30203f3abf24534a5cfb
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415321"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726170"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -76,7 +76,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
   "name": "get_mailfolder"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -137,7 +137,7 @@ Content-type: application/json
   "name": "get_mailSearchfolder"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

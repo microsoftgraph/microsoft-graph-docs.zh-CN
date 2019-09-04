@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7d1bf1d45a76c219a8087c6aaed81312d7caa80d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 98a01c64fffdfc395c7eef1ab707c10fa6423963
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367412"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727521"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/contactFolders
   "blockType": "request",
   "name": "get_contactfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

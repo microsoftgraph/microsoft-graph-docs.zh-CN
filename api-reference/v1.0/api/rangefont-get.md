@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1a7d8885ea9b7f3a5f6f4d100c9fdd62572096e7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8b04c99887578180f5fe21f18e3e33bc56036340
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365074"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729789"
 ---
 # <a name="get-rangefont"></a>获取 RangeFont
 
@@ -55,7 +55,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
   "blockType": "request",
   "name": "get_rangefont"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

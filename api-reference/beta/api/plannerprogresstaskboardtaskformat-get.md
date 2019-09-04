@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a7eac4f30877e406a93cd5f021db41977ca7b91e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 85ec2c4cb40fad58b65f0cfae9fb15c8a0d0c7e6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413182"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725680"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>获取 plannerProgressTaskBoardTaskFormat
 
@@ -55,7 +55,7 @@ GET /planner/tasks/{id}/progressTaskBoardFormat
   "blockType": "request",
   "name": "get_plannerprogresstaskboardtaskformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

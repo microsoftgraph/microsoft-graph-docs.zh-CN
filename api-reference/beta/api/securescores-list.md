@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 164fd07fd45b9ece52710cf0b197e877de79f471
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e51f61b593fbd7f00e56948a04ccc33cfc9e38a7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410415"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724657"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -62,7 +62,7 @@ GET /security/secureScores
   "name": "securescores_list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

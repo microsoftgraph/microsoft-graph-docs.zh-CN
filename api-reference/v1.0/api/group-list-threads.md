@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ebb4ae5b24e898acb79e0d186e20c0d5fb907fe4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3c656279d51e3acc2093be1e002dc36a73cf8f68
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337193"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726772"
 ---
 # <a name="list-threads"></a>列出线程
 获取某个组的所有线程。
@@ -55,7 +55,7 @@ GET /groups/{id}/threads
   "blockType": "request",
   "name": "group_get_threads"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

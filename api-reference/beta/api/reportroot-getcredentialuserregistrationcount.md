@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 1ec286eb86b3dbeeb5f7687b2af00a36b76348b4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 88483b85cdf653ce14e5722a666b8ded8d279ff5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411919"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723187"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot: getCredentialUserRegistrationCount
 
@@ -65,7 +65,7 @@ GET /reports/getCredentialUserRegistrationCount
   "name": "reportroot_getcredentialuserregistrationcount"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

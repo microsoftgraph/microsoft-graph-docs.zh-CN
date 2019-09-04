@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 453b1198c332409224be76afff933f2097858d64
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 09e01c0c0c44f994b185fc3ae9aab9ea80083c23
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415265"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723985"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
   "blockType": "request",
   "name": "mailfolder_get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

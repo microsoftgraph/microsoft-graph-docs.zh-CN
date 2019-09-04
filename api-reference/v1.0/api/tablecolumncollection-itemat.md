@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: af8a6878f888c001bb5fbeddcccf42f101976265
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f1005a727809b4a6ae1b4713904330ba77aea31d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370639"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727626"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -47,7 +47,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookTableColumn](../resources/tablecolumn.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookTableColumn](../resources/workbooktablecolumn.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
