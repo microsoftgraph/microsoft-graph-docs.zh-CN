@@ -6,34 +6,34 @@ title: 检索 SharePoint 列表中的项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a32e43182bfdd9837ec06da08bdb5aa7c004921f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 19f810c2d4f71f2bc296ecd590a493cd22e30f22
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415372"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726156"
 ---
-# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="e68f9-103">枚举列表中的项</span><span class="sxs-lookup"><span data-stu-id="e68f9-103">Enumerate items in a list</span></span>
+# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="1ebc0-103">枚举列表中的项</span><span class="sxs-lookup"><span data-stu-id="1ebc0-103">Enumerate items in a list</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e68f9-104">获取[列表][]中[项][item]的集合。</span><span class="sxs-lookup"><span data-stu-id="e68f9-104">Get the collection of [items][item] in a [list][].</span></span>
+<span data-ttu-id="1ebc0-104">获取[列表][]中[项][item]的集合。</span><span class="sxs-lookup"><span data-stu-id="1ebc0-104">Get the collection of [items][item] in a [list][].</span></span>
 
 [列表]: ../resources/list.md
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="e68f9-106">权限</span><span class="sxs-lookup"><span data-stu-id="e68f9-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ebc0-106">权限</span><span class="sxs-lookup"><span data-stu-id="1ebc0-106">Permissions</span></span>
 
-<span data-ttu-id="e68f9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e68f9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1ebc0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1ebc0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e68f9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e68f9-109">Permission type</span></span>      | <span data-ttu-id="e68f9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e68f9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1ebc0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1ebc0-109">Permission type</span></span>      | <span data-ttu-id="1ebc0-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1ebc0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e68f9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e68f9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e68f9-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e68f9-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e68f9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e68f9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e68f9-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e68f9-114">Not supported.</span></span>    |
-|<span data-ttu-id="e68f9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e68f9-115">Application</span></span> | <span data-ttu-id="e68f9-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e68f9-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="1ebc0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1ebc0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1ebc0-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ebc0-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1ebc0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1ebc0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ebc0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1ebc0-114">Not supported.</span></span>    |
+|<span data-ttu-id="1ebc0-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1ebc0-115">Application</span></span> | <span data-ttu-id="1ebc0-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ebc0-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e68f9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e68f9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ebc0-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1ebc0-117">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
@@ -41,33 +41,33 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="e68f9-118">示例</span><span class="sxs-lookup"><span data-stu-id="e68f9-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ebc0-118">示例</span><span class="sxs-lookup"><span data-stu-id="1ebc0-118">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e68f9-119">请求</span><span class="sxs-lookup"><span data-stu-id="e68f9-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1ebc0-119">请求</span><span class="sxs-lookup"><span data-stu-id="1ebc0-119">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e68f9-120">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="e68f9-120">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1ebc0-120">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="1ebc0-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e68f9-121">C#</span><span class="sxs-lookup"><span data-stu-id="e68f9-121">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1ebc0-121">C#</span><span class="sxs-lookup"><span data-stu-id="1ebc0-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e68f9-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e68f9-122">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1ebc0-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1ebc0-122">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e68f9-123">目标-C</span><span class="sxs-lookup"><span data-stu-id="e68f9-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1ebc0-123">目标-C</span><span class="sxs-lookup"><span data-stu-id="1ebc0-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e68f9-124">响应</span><span class="sxs-lookup"><span data-stu-id="e68f9-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1ebc0-124">响应</span><span class="sxs-lookup"><span data-stu-id="1ebc0-124">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
