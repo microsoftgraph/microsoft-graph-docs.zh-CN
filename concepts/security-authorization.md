@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e8d7389689477f480d45cacd595f2c96e00d66bd
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621226"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730335"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
@@ -76,7 +76,7 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
     >**注意**：你无需是租户管理员。你将被重定向到“**我的应用程序**”列表。
 2. 选择“**新注册**”。
 3. 在新应用程序的注册页面上，输入“**名称**”的值，然后选择希望支持的帐户类型。 在“**重定向 URI**”字段中，输入重定向 URL。
-4. 选择“**注册**”以创建应用并查看其概述页面。
+4. 选择“**注册**”以创建应用并查看其概述页面。 *
 5. 转到应用的“**API 权限**”页面。
 6. 选择“**添加权限**”，然后在浮出控件中选择“**Microsoft Graph**”。 选择“**委托的权限**”。 使用搜索框查找并选择所需的权限。 如需查看权限列表，请参阅[安全权限](permissions-reference.md#security-permissions)。
 
@@ -97,6 +97,8 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 - 应用程序（客户端）ID
 - 重定向 URL
 - 所需权限列表
+
+与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护 (WDATP) 所需的[用户角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多；因此，只有同时具备 WDATP 和 Microsoft Graph 安全 API 角色的用户才可访问 WDATP 数据。  仅限应用程序的身份验证不受此约束限制；因此，建议使用仅限应用的身份验证令牌。
 
 有关详细信息，请参阅[向 Microsoft 标识平台注册应用](auth-register-app-v2.md)。
 
