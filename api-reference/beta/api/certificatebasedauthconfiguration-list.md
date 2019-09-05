@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 738845b92731df7090754301d90e01049810d072
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 13380b1d1156a2a388ea5b12f48f27077006af12
+ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718683"
+ms.locfileid: "36758291"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>列出 certificateBasedAuthConfigurations
 
@@ -65,7 +65,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration
   "name": "get_certificatebasedauthconfigurations"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
