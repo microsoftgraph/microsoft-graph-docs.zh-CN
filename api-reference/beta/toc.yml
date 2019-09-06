@@ -111,7 +111,7 @@
           href: /graph/sdks/create-client?context=graph/api/beta
         - name: 选择验证提供程序
           href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
-    - name: 使用工具包 (预览)
+    - name: 使用工具包（预览）
       items:
         - name: 工具包概述
           href: /graph/toolkit/overview?context=graph/api/beta
@@ -9688,7 +9688,7 @@
                   href: api/onenote-list-notebooks.md
                 - name: 创建笔记本
                   href: api/onenote-post-notebooks.md
-        - name: 待办任务 (预览)
+        - name: 待办任务（预览）
           href: resources/outlooktask.md
           displayName: Outlook
           items:
@@ -9714,7 +9714,7 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: 列出
+                - name: List
                   href: api/outlookuser-list-taskfolders.md
                 - name: 创建
                   href: api/outlookuser-post-taskfolders.md
@@ -9808,6 +9808,19 @@
                   href: api/workbook-list-worksheets.md
                 - name: 列出名称
                   href: api/workbook-list-names.md
+            - name: 工作簿注释
+              href: resources/workbookcomment.md
+              items:
+                - name: 列表
+                  href: api/workbook-list-comments.md
+                - name: 获取
+                  href: api/workbookcomment-get.md
+                - name: 列表答复
+                  href: api/workbookcomment-list-replies.md
+                - name: 创建答复
+                  href: api/workbookcomment-post-replies.md
+                - name: 获取答复
+                  href: workbookcommentreply-get.md
             - name: 工作表
               href: resources/workbookworksheet.md
               items:
