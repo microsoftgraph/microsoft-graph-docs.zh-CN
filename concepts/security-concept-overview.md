@@ -4,22 +4,21 @@ description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
-ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
+scenarios: getting-started
+ms.openlocfilehash: 7b12653382f88a3b16c370044fc3cb770aa2ac36
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35607390"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792966"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
 Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和合作伙伴，以简化安全操作并改进威胁防护、检测和响应功能。 作为中介服务（或代理），Microsoft Graph 安全性 API 提供了一个编程接口，用于连接多个 [Microsoft Graph 安全提供程序](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0)（亦称为“安全提供程序”或“提供程序”）。 向 Microsoft Graph 安全性 API 发出的请求被联合到所有适用的安全提供程序。 结果以通用架构的形式聚合并返回到发出请求的应用，如下图所示。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 数据流](security-dataflow.md)。
 
-
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 若要了解授权，请参阅[授权和 Microsoft Graph 安全性 API](security-authorization.md)。 若要了解委托的权限和应用权限等权限，请参阅[权限](permissions-reference.md#security-permissions)。
-
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -35,7 +34,7 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 ### <a name="unify-and-standardize-alert-tracking"></a>统一和标准化警报跟踪
 
-连接一次，即可集成来自任何已集成 Microsoft Graph 的安全解决方案的警报，并跨所有解决方案同步警报状态和分配。 还可以通过 [Azure Monitor](https://docs.microsoft.com/zh-CN/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) 将警报流式处理到安全信息和事件管理 (SIEM) 解决方案（如 Splunk 和 IBM QRadar）。 若要详细了解 SIEM 与安全性 API 实体的集成，请参阅[与 SIEM 集成](security-siemintegration.md)。
+连接一次，即可集成来自任何已集成 Microsoft Graph 的安全解决方案的警报，并跨所有解决方案同步警报状态和分配。 还可以使用 Microsoft Graph 安全性 API 连接器将警报流式处理到安全信息和事件管理 (SIEM) 解决方案（如 Splunk）。 有关与安全 API 实体的解决方案集成的详细信息，请参阅[使用 Microsoft Graph 安全性 API 实现安全解决方案集成](security-integration.md)。
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>关联安全警报以改进威胁防护和响应
 

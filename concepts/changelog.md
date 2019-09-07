@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699230"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792952"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -216,6 +216,17 @@ ms.locfileid: "36699230"
 | 添加项 | beta | 添加了[userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta)的资源。 |
 | 添加项 | beta | 向[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加了新方法，为用户个人应用启用以下方法： <br>[列出为用户安装的应用](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[为用户安装应用](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[为用户卸载应用](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[升级为用户安装的应用](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
+### <a name="calls-and-online-meetings"></a>呼叫和联机会议 
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta        | 向[呼叫](/api-reference/beta/resources/call.md)资源添加了 **mediaState** 属性|
+| 更改          | Beta        | 已将 [recordOperation](/api-reference/beta/resources/recordOperation.md) 资源中的 **recordResourceLocation** 属性重命名为 **recordingLocation**|
+| 更改          | Beta        | 已将 [recordOperation](/api-reference/beta/resources/recordOperation.md) 资源中的 **recordResourceAccessToken** 属性重命名为 **recordingAccessToken**|
+| 添加项        | Beta        | 向 [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) 资源添加了 **capabilities** 属性 |
+| 添加项        | Beta        | 向 [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) 资源添加了 **videoTeleconferenceId** 属性 |
+| 添加项        | Beta        | 向 [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) 资源添加了 **producers** 属性 |
+| 添加项        | Beta        | 向 [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) 资源添加了 **contributors** 属性 |
 
 ## <a name="june-2019"></a>2019 年 6 月
 
@@ -613,7 +624,7 @@ ms.locfileid: "36699230"
 
 |更改类型|版本|说明|
 |:---|:---|:---|
-|添加|beta|增加了新实体：<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
+|添加项|beta|增加了新实体：<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[deliveryOptimizationBandwidth](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidth?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthBusinessHoursLimit](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthHoursWithPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdCustom](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidcustom?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSource](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsource?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSourceOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSize](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesize?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizeAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizePercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage?view=graph-rest-beta)<br/>[encryptionReportPolicyDetails](/graph/api/resources/intune-deviceconfig-encryptionreportpolicydetails?view=graph-rest-beta)<br/>|
 |添加项|beta 版本|增加了新枚举类型：<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
 |添加项|beta|向 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
