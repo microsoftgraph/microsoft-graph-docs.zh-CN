@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: fa0f2bbf63c82f451f9c7b91a12dc81a28315b2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4d34c3c57cb215e492b268be7366c876e82eb16
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956427"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791755"
 ---
 # <a name="delete-customerpayments"></a>删除 customerPayments
 从 Dynamics 365 Business Central 中删除 customerPayment。
@@ -23,12 +23,12 @@ ms.locfileid: "35956427"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+DELETE /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -38,7 +38,7 @@ DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPay
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**customerPayments**上的当前标记不匹配, 则不会更新**customerPayments** 。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**customerPayments**上的当前标记不匹配，则不会更新**customerPayments** 。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -55,7 +55,7 @@ DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPay
 下面是一个请求示例。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 **响应** 

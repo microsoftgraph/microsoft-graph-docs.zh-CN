@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9c9f70c9e0fe91bf4073d7b6470b03a28f2a7f22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1fe1be67164c4c615a66fee5a009be36fac169c0
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956315"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791643"
 ---
 # <a name="delete-employees"></a>删除员工
 从 Dynamics 365 Business Central 中删除员工。
@@ -23,12 +23,12 @@ ms.locfileid: "35956315"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-DELETE /financials/companies('{id}')/employees('{id}')
+DELETE /financials/companies/{id}/employees/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -38,7 +38,7 @@ DELETE /financials/companies('{id}')/employees('{id}')
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**员工**的当前标记不匹配, 则不会更新**员工**。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**员工**的当前标记不匹配，则不会更新**员工**。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -53,7 +53,7 @@ DELETE /financials/companies('{id}')/employees('{id}')
 下面是一个请求示例。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
 **响应** 

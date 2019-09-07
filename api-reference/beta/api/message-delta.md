@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dff17040123c0a1fa52327618991d1af31385f7f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 60f3808d779cd42ca4a4bb4b5bf7b15a72d568e9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726086"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792630"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -112,7 +112,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('{id}')/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",

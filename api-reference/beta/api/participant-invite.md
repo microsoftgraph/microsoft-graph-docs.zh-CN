@@ -1,22 +1,26 @@
 ---
-title: '参与者: 邀请'
+title: 参与者：邀请
 description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 31036b5bbafb2c47e91a39507f9b03707be86619
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: aa463a7b300cfc4f3e6a8ad27bf2a7344b41c09d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413767"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792518"
 ---
-# <a name="participant-invite"></a>参与者: 邀请
+# <a name="participant-invite"></a>参与者：邀请
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-邀请参与者加入活动呼叫。
+邀请参与者加入活动的多方呼叫。
+
+有关如何处理长时间运行的参与者邀请操作的详细信息，请参阅[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)。
+
+>**注意：** 此 API 仅支持多方调用。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +35,6 @@ ms.locfileid: "36413767"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/invite
-POST /applications/{id}/calls/{id}/participants/invite
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +51,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+如果成功，此 API 将返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[INVITEPARTICIPANTSOPERATION](../resources/inviteparticipantsoperation.md)对象的 URI。 响应正文包含创建的[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) 。
 
 ## <a name="examples"></a>示例
 下面的示例演示如何调用此 API。
@@ -107,16 +110,25 @@ Content-Length: 464
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+Content-Length: 259
 
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>邀请现有 P2P 会议中的参与者
+## <a name="example---invite-participants-to-an-existing-multiparty-call"></a>示例-邀请参与者加入现有的多方呼叫
 
 ##### <a name="request"></a>请求
 
@@ -173,12 +185,14 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"51\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
@@ -203,8 +217,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
       "resourceData": [
@@ -262,275 +278,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>邀请现有 P2P 会议中的参与者
+## <a name="example---invite-participants-to-a-multiparty-call-replacing-an-existing-peer-to-peer-call"></a>示例-邀请参与者加入多方呼叫，替换现有的对等呼叫
 
-本示例显示现有 P2P 会议中的[邀请参与者](../api/participant-invite.md)的完整 E2E 流。
+本示例假定已在 bot 和 ID `8A34A46B-3D17-4ADC-8DCE-DC4E7D572698`为的用户之间建立了现有的对等呼叫，我们希望在结束对等呼叫时，机器人将用户邀请用户加入到现有的多方呼叫中。
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>使用服务托管媒体应答传入 VOIP 呼叫
-
-##### <a name="notification---incoming"></a>通知传入
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
-        "direction": "incoming",
-        "source": {
-          "@odata.type": "#microsoft.graph.participantInfo",
-          "identity": {
-            "user": {
-              "displayName": "Test User",
-              "language": "en-US",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-            }
-          }
-        },
-        "targets": [
-          {
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity": {
-              "application": {
-                "displayName": "Test BOT",
-                "language": "en-US",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-              }
-            }
-          }
-        ],
-        "requestedModalities": [ "audio", "video" ]
-      }
-    }
-  ]
-}
-```
+有关使用`replacesCallId`替换现有的对等呼叫的详细信息，请参阅[邀请参与者](../resources/invitationparticipantinfo.md)。
 
 ##### <a name="request"></a>请求
-
-``` http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
-{
-  "callback": "https://bot.contoso.com/api/calls",
-  "acceptModalities": [ "audio", "video" ],
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-      {
-        "url": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "url": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
-  }
-}
-```
-
-##### <a name="response"></a>响应
-
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 306
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
-```
-
-##### <a name="notification---establishing"></a>通知-建立
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "establishing"
-      }
-    }
-  ]
-}
-```
-
-##### <a name="notification---established"></a>已建立通知
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": [ "audio", "video" ],
-        "requestedModalities": []
-      }
-    }
-  ]
-}
-```
-
-### <a name="join-channel-meeting-without-media"></a>不带媒体的加入频道会议
-
-> **重要说明**: 如果 bot 实例只是为了便于传输而加入, 它应避免媒体协商。  因此, 最好在不添加任何`requestedModalities`或`mediaConfig`的情况下添加它。
-
-##### <a name="request"></a>请求
-
-``` http
-POST /app/calls
-Content-Type: application/json
-
-{
-  "subject": "Test Call",
-  "callback": "https://bot.contoso.com/api/calls",
-  "source": {
-    "@odata.type": "#microsoft.graph.participantInfo",
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "targetDisposition": "default",
-  "requestedModalities": [],
-  "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-    "messageId": "1507228578052",
-    "replyChainMessageId": "1507228578052"
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-      }
-    }
-  }
-}
-```
-
-##### <a name="response"></a>响应
-
-``` http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
-```
-
-##### <a name="notification---establishing"></a>通知-建立
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-        "@odata.etag": "W/\"5445\"",
-        "state": "establishing",
-        "direction": "outgoing"
-      }
-    }
-  ]
-}
-```
-
-##### <a name="notification---established"></a>已建立通知
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": []
-      }
-    }
-  ]
-}
-```
-
-### <a name="invite-participant-from-initial-incoming-call"></a>邀请参与者进入初始传入呼叫
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -583,8 +337,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
@@ -613,8 +369,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
       "resourceData": [
@@ -672,7 +430,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a>通知-终止原始 P2P 呼叫
+##### <a name="notification---terminated-the-original-peer-to-peer-call"></a>Notification-终止原始的对等呼叫
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -686,8 +444,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -702,7 +462,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a>通知-已删除原始 P2P 呼叫
+##### <a name="notification---deleted-the-original-peer-to-peer-call"></a>Notification-已删除原始的对等呼叫
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -716,14 +476,56 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\""
+      }
+    }
+  ]
+}
+```
+
+## <a name="example---invite-participant-failure"></a>示例-邀请参与者失败
+
+在邀请参与者操作失败的情况下，bot 将收到通知，并将[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) `status`设置为`failed`。
+
+``` http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+        "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.etag": "W/\"51\"",
+        "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
+        "status": "failed",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 0,
+          "message": "addParticipantsfailed for participants: 28:8A34A46B-3D17-4ADC-8DCE-DC4E7D572698 reason: Audio-video modality controller could not invite participant to this conversation., code=580 subcode=5201"
+        },
       }
     }
   ]

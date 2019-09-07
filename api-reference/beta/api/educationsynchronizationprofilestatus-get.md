@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 68a40e061eada2f6d02e06bba3b47460589baf74
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0ce9012d45f195ccbbf4f28ade8a5ad92d97f8c2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720268"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791153"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -24,7 +24,7 @@ ms.locfileid: "36720268"
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration、EduAdministration |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序| EduAdministration、EduAdministration 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -41,7 +41,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -85,7 +85,7 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": "inProgress",
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }

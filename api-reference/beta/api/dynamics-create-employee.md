@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ddfef594c622030b5f0d87a99e7cadeccf8b935c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7be8690da317a727cc93cbe95ba0a7b52ab7aab0
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956679"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792000"
 ---
 # <a name="create-employees"></a>创建员工
 在 Dynamics 365 Business Central 中创建 employee 对象。
@@ -23,12 +23,12 @@ ms.locfileid: "35956679"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-POST /financials/companies('{id}')/employees
+POST /financials/companies/{id}/employees
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -41,10 +41,10 @@ POST /financials/companies('{id}')/employees
 |Content-Type  |application/json         |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供**employees**对象的 JSON 表示形式。
+在请求正文中，提供**employees**对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在```201 Created```响应正文中返回响应代码和**employees**对象。
+如果成功，此方法在```201 Created```响应正文中返回响应代码和**employees**对象。
 
 ## <a name="example"></a>示例
 
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/employees
 下面是一个请求示例。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/employees
+POST https://graph.microsoft.com/beta/financials/companies/{id}/employees
 Content-type: application/json
 
 {
@@ -82,7 +82,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 201 Created
@@ -111,7 +111,7 @@ Content-type: application/json
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/employees('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/employees/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 

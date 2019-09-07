@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 827d54fbedbf9c6f386063d82fd00e8eddfe7296
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3cc519f30b571d6c69dce48b74cd70da7f58e6f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972324"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792808"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "35972324"
 
 表示学校数据[同步配置文件](educationsynchronizationprofile.md)的同步状态。 
 
-> **注意:** 由于后台同步处理的异步特性, 对**educationSynchronizationProfileStatus**的更新可能会延迟。
+> **注意：** 由于后台同步处理的异步特性，对**educationSynchronizationProfileStatus**的更新可能会延迟。
 
 ## <a name="methods"></a>方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "35972324"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **status** | educationSynchronizationStatus | 同步的状态。可能的值为`paused`: `inProgress`、 `success`、 `error`、 `quarantined`、 `validationError`、。 |
+| **status** | educationSynchronizationStatus | 同步的状态。可能的值为`paused`： `inProgress`、 `success`、 `error`、 `quarantined`、 `validationError`、。 |
 | **lastSynchronizationDateTime** | DateTimeOffset | 表示在目录中观察到的最新更改的时间。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -44,7 +44,7 @@ ms.locfileid: "35972324"
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": {"@odata.type":"microsoft.graph.educationSynchronizationStatus"},
     "lastSynchronizationDateTime": "DateTimeOffset"
 }

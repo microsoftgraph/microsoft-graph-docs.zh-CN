@@ -1,18 +1,18 @@
 ---
-title: '呼叫: 应答'
+title: 呼叫：应答
 description: 应答传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d59f48ff3a43e2e72273c6d13a8b16e3a7e96fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8cbdd87e037bb22972394423203f0f9218edf7b2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419018"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792427"
 ---
-# <a name="call-answer"></a>呼叫: 应答
+# <a name="call-answer"></a>呼叫：应答
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,6 @@ ms.locfileid: "36419018"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
-POST /applications/{id}/calls/{id}/answer
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -45,7 +44,7 @@ POST /applications/{id}/calls/{id}/answer
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |用于传递回拨的回拨或订阅 ID。 需要                                                               |
-|acceptedModalities|String collection                         |接受形式的列表。 可能的值为`unknown`: `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`、。 需要 |
+|acceptedModalities|String collection                         |接受形式的列表。 可能的值为`unknown`： `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`、。 需要 |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|媒体配置。 需要                                                                                                            |
 
 ## <a name="response"></a>响应

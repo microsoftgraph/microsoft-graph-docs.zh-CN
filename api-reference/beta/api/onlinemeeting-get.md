@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 874937929d21f0b1533a5344d1e3cc16b2594bf3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0a4a73f048459c3d3d455e5ef0082384366cba1a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726023"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792623"
 ---
 # <a name="get-online-meeting"></a>获取联机会议
 
@@ -18,8 +18,8 @@ ms.locfileid: "36726023"
 
 检索**onlineMeeting**对象的属性和关系。
 
-> **注意:** 此`GET`方法限制为[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。这些 Id 是为云-视频互操作许可的用户生成的, 此方法用于获取加入会议的详细信息。
-> 对于常规流, bot 可以使用`joinURL`加入会议, 而无需进行查找。
+> **注意：** 此`GET`方法限制为[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
+> 对于常规流，bot 可以使用`joinURL`加入会议，而无需进行查找。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,6 @@ ms.locfileid: "36726023"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/{id}
-GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -50,7 +49,7 @@ GET /applications/{id}/onlineMeetings/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onlineMeeting](../resources/onlinemeeting.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[onlineMeeting](../resources/onlinemeeting.md)对象。
 
 ## <a name="example"></a>示例
 

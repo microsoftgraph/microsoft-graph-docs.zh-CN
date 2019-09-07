@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd21ebd579bf5bff48dc1b973b6f8b4b5e6b7c63
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e6f75891a4ca773f9bcb22bc3a659d9a3a411e3b
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408314"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791118"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 
@@ -33,7 +33,6 @@ ms.locfileid: "36408314"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
-POST /applications/{id}/onlineMeetings
 ```
 
 ## <a name="request-headers"></a>请求标头

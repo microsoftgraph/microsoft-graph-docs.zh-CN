@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ce3980118a26276ab712e2c422b9260b8624b31c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c2b5235cdc8f841ad7fb11c5319d236f727d4da
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956511"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791839"
 ---
 # <a name="delete-currencies"></a>删除货币
 从 Dynamics 365 Business Central 中删除货币对象。
@@ -23,12 +23,12 @@ ms.locfileid: "35956511"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-DELETE /financials/companies('{id}')/currencies('{id}')
+DELETE /financials/companies/{id}/currencies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -39,7 +39,7 @@ DELETE /financials/companies('{id}')/currencies('{id}')
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**货币**中的当前标记不匹配, 则**货币**将不会
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**货币**中的当前标记不匹配，则**货币**将不会
  updated. |
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ DELETE /financials/companies('{id}')/currencies('{id}')
 下面是一个请求示例。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
 **响应** 

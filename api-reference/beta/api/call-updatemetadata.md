@@ -1,18 +1,18 @@
 ---
-title: '调用: updateMetadata'
+title: 调用： updateMetadata
 description: 更新与调用相关联的 appliation 的元数据。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b315cde52fbb5be38680272a868c964b9e00c8a9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e777dccdb1eb1925c1c8961c00efe79396f293fd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418822"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792273"
 ---
-# <a name="call-updatemetadata"></a>调用: updateMetadata
+# <a name="call-updatemetadata"></a>调用： updateMetadata
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418822"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateMetadata
-POST /applications/{id}/calls/{id}/updateMetadata
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +47,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

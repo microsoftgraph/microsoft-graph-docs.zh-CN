@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1d18b2093c5b00a6e08ad4a8c8e91161c2d5216e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47ec43ae34a4841cbae04ef9c2fc3530becf96df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955839"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791106"
 ---
 # <a name="update-unitsofmeasure"></a>更新 unitsOfMeasure
 更新 Dynamics 365 Business Central 的度量单位对象的属性。
@@ -23,13 +23,13 @@ ms.locfileid: "35955839"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
 ```
-PATCH /financials/companies('{id}')/unitsOfMeasure('{id}')
+PATCH /financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -40,13 +40,13 @@ PATCH /financials/companies('{id}')/unitsOfMeasure('{id}')
 |------|-----|
 |Authorization |负载. 必需。|
 |Content-Type  |application/json|
-|If-Match      |必需。 如果包含此请求标头, 且提供的 eTag 与**unitsOfMeasure**上的当前标记不匹配, 则不会更新**unitsOfMeasure** 。 |
+|If-Match      |必需。 如果包含此请求标头，且提供的 eTag 与**unitsOfMeasure**上的当前标记不匹配，则不会更新**unitsOfMeasure** 。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的**unitsOfMeasure**对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的**unitsOfMeasure**对象。
 
 ## <a name="example"></a>示例
 
@@ -54,7 +54,7 @@ PATCH /financials/companies('{id}')/unitsOfMeasure('{id}')
 
 下面是一个请求示例。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{id}
 Content-type: application/json
 
 {
@@ -66,7 +66,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 200 OK

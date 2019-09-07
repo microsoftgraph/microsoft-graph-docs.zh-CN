@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 5945a7386ce8cd946bd0249c0848d9265e1ed392
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4884e6ba6d593160f3482de60bee3d358eb3a9ac
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956861"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792224"
 ---
 # <a name="get-agedaccountspayable"></a>获取 agedAccountsPayable
 检索 Dynamics 365 Business Central 的过期帐户应付帐款报告对象的属性和关系。
@@ -23,12 +23,12 @@ ms.locfileid: "35956861"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-GET /financials/companies('{id}')/agedAccountsPayable
+GET /financials/companies/{id}/agedAccountsPayable
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -42,7 +42,7 @@ GET /financials/companies('{id}')/agedAccountsPayable
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**agedAccountsPayable**对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和**agedAccountsPayable**对象。
 
 ## <a name="example"></a>示例
 
@@ -50,14 +50,14 @@ GET /financials/companies('{id}')/agedAccountsPayable
 
 下面是一个请求示例。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
+GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
 **响应**
 
 下面是一个响应示例。 
 
-> **注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

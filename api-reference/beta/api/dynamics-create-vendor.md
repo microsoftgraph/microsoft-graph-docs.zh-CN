@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f4facea69555bd892784b26c17c2d3b79e754258
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4595fca85d85bab0eaec1629a4422c1db5fa9964
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956525"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791853"
 ---
 # <a name="create-vendors"></a>创建供应商
 在 Dynamics 365 Business Central 中创建一个供应商对象。
@@ -23,12 +23,12 @@ ms.locfileid: "35956525"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-POST /financials/companies('{id}')/vendors
+POST /financials/companies/{id}/vendors
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -41,10 +41,10 @@ POST /financials/companies('{id}')/vendors
 |Content-Type  |application/json   |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 "**供应商**" 对象的 JSON 表示形式。
+在请求正文中，提供 "**供应商**" 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在```201 Created```响应正文中返回响应代码和**供应商**对象。
+如果成功，此方法在```201 Created```响应正文中返回响应代码和**供应商**对象。
 
 ## <a name="example"></a>示例
 
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/vendors
 下面是一个请求示例。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/vendors
+POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
 Content-type: application/json
 
 {
@@ -81,7 +81,7 @@ Content-type: application/json
 
 下面是一个响应示例。 
 
-> **注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 HTTP/1.1 201 Created

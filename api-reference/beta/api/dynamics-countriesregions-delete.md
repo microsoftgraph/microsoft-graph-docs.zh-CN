@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 68b0ceaa1beef3528cf3afc228b961fe737f3bac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69374662dd0a33405b17500b9d357db2f5f32b9d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956777"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792077"
 ---
 # <a name="delete-countriesregions"></a>删除 countriesRegions
 从 Dynamics 365 Business Central 中删除国家/地区对象。
@@ -23,12 +23,12 @@ ms.locfileid: "35956777"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-DELETE /financials/companies('{id}')/countriesRegions('{id}')
+DELETE /financials/companies/{id}/countriesRegions/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
@@ -37,7 +37,7 @@ DELETE /financials/companies('{id}')/countriesRegions('{id}')
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**countriesRegions**上的当前标记不匹配, 则不会更新**countriesRegions** 。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**countriesRegions**上的当前标记不匹配，则不会更新**countriesRegions** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -52,7 +52,7 @@ DELETE /financials/companies('{id}')/countriesRegions('{id}')
 下面是一个请求示例。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
 **响应** 

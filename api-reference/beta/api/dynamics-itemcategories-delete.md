@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0b0d848af5389e26b53effb70063ee07ae5d4714
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f422685568c08590a0ba7c8cc7a5fe578f50d9a6
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956217"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791559"
 ---
 # <a name="delete-itemcategories"></a>删除 itemCategories
 从 Dynamics 365 Business Central 中删除 itemCategory。
@@ -23,12 +23,12 @@ ms.locfileid: "35956217"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-DELETE /financials/companies('{id}')/itemCategories('{id}')
+DELETE /financials/companies/{id}/itemCategories/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -38,7 +38,7 @@ DELETE /financials/companies('{id}')/itemCategories('{id}')
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**itemCategories**上的当前标记不匹配, 则不会更新**itemCategories** 。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**itemCategories**上的当前标记不匹配，则不会更新**itemCategories** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -53,7 +53,7 @@ DELETE /financials/companies('{id}')/itemCategories('{id}')
 下面是一个请求示例。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 ```
 
 **响应** 

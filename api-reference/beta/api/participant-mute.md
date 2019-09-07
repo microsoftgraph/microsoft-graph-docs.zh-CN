@@ -1,18 +1,18 @@
 ---
-title: '参与者: 静音'
+title: 参与者：静音
 description: 将呼叫中的特定参与者静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8c78d23dd0fc80f3990160ad74e5c98fb09dc0e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1ae365e8dc033931a5c3cd97e4fd631959d1fe68
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413771"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792539"
 ---
-# <a name="participant-mute"></a>参与者: 静音
+# <a name="participant-mute"></a>参与者：静音
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,6 @@ ms.locfileid: "36413771"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
-POST /applications/{id}/calls/{id}/participants/{id}/mute
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,7 +46,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

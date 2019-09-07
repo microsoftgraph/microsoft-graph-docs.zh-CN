@@ -1,24 +1,24 @@
 ---
 title: 删除程序
-description: 在 "Azure AD access 评论" 功能中, 删除一个程序对象。
+description: 在 "Azure AD access 评论" 功能中，删除一个程序对象。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bf91890b5e339bebc73242172d64f6e710e41b02
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d2451ba6ef8ae993b2ee6be5784bed98fd5f0ea9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412535"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792798"
 ---
 # <a name="delete-program"></a>删除程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 删除一个[程序](../resources/program.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除一个[程序](../resources/program.md)对象。
 
-请勿删除仍与它`programControl`链接的程序, 应首先从该程序中删除或取消这些访问审核, 并将其链接到其他程序。  此外, 请注意, 不能删除内置的默认程序。
+请勿删除仍与它`programControl`链接的程序，应首先从该程序中删除或取消这些访问审核，并将其链接到其他程序。  此外，请注意，不能删除内置的默认程序。
 
 
 ## <a name="permissions"></a>权限
@@ -35,7 +35,7 @@ ms.locfileid: "36412535"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programs('{id}')
+DELETE /programs/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |

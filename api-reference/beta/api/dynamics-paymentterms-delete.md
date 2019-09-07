@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: bd78a3125aaf10199be0e14c5f90148a5bc5d000
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5e203e1a45d7afbe541278819aa4dcacb1a9a0a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956035"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791370"
 ---
 # <a name="delete-paymentterms"></a>删除 paymentTerms
 从 Dynamics 365 Business Central 中删除付款条款对象。
@@ -23,12 +23,12 @@ ms.locfileid: "35956035"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-DELETE /financials/companies('{id}')/paymentTerms('{id}')
+DELETE /financials/companies/{id}/paymentTerms/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -39,7 +39,7 @@ DELETE /financials/companies('{id}')/paymentTerms('{id}')
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**paymentTerms**上的当前标记不匹配, 则不会更新**paymentTerms** 。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与**paymentTerms**上的当前标记不匹配，则不会更新**paymentTerms** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -54,7 +54,7 @@ DELETE /financials/companies('{id}')/paymentTerms('{id}')
 下面是一个请求示例。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
 **响应** 

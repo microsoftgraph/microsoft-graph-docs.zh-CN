@@ -1,18 +1,18 @@
 ---
-title: '呼叫: 静音'
+title: 呼叫：静音
 description: 允许应用程序将其本身设为静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1b0dacce6a2ec9cc489f3d4f94a74d5d5039e916
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7f1f101dfa6270143ce9cc2819776992643f2cb7
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418927"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792325"
 ---
-# <a name="call-mute"></a>呼叫: 静音
+# <a name="call-mute"></a>呼叫：静音
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418927"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/mute
-POST /applications/{id}/calls/{id}/mute
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,7 +46,7 @@ POST /applications/{id}/calls/{id}/mute
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

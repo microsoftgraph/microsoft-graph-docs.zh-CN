@@ -1,22 +1,22 @@
 ---
 title: 删除 programControl
-description: 在 "Azure AD access 评论" 功能中, 删除 programControl 对象。  这会断开某个程序的访问评审。
+description: 在 "Azure AD access 评论" 功能中，删除 programControl 对象。  这会断开某个程序的访问评审。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ba76bad184ef4fb4514b529dac4a1c779d29f01b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 569b084a149308d1ea5d3bc8311e2e6d13634eaa
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412465"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792802"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 删除[programControl](../resources/programcontrol.md)对象。  这会断开某个程序的访问评审。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除[programControl](../resources/programcontrol.md)对象。  这会断开某个程序的访问评审。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "36412465"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programControls('{id}')
+DELETE /programControls/{id}
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |

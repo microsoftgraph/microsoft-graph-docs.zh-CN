@@ -1,25 +1,25 @@
 ---
-title: 'call: record'
+title: call： record
 description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f20b096964b92db4ce393922efc635142698483
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cd42f1099e922e79292cfddb667f38a9e8c9fb3d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317657"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792259"
 ---
-# <a name="call-record"></a>call: record
+# <a name="call-record"></a>call： record
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从呼叫中录制简短的音频剪辑。 如果 bot 希望在发出提示后从呼叫者处捕获语音响应, 这将非常有用。
+从呼叫中录制简短的音频剪辑。 如果 bot 希望在发出提示后从呼叫者处捕获语音响应，这将非常有用。
 
 > [!Note]
-> 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持 record 操作。 此操作不会记录整个调用。 录制的最大长度为5分钟。 录制不会由云通信平台 permamently 保存, 在呼叫结束后不久将被丢弃。 在录制操作完成后, 机器人必须立即下载录制 (使用已完成通知中给出的**recordingLocation**值)。
+> 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持 record 操作。 此操作不会记录整个调用。 录制的最大长度为5分钟。 录制不会由云通信平台 permamently 保存，在呼叫结束后不久将被丢弃。 在录制操作完成后，机器人必须立即下载录制（使用已完成通知中给出的**recordingLocation**值）。
 
 
 ## <a name="permissions"></a>权限
@@ -35,7 +35,6 @@ ms.locfileid: "36317657"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
-POST /applications/{id}/calls/{id}/record
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,17 +47,17 @@ POST /applications/{id}/calls/{id}/record
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合 (如果有)。 客户可以选择单独指定 "playPrompt" 操作, 也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。 当前支持仅作为集合的一部分的单个提示。 |
-|bargeInAllowed|Boolean| 如果为 true, 则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
-|initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录操作之前, 可以从开始时开始的最大初始静音 (用户无声), 并使操作失败。 如果我们正在播放提示, 则此计时器在提示完成后启动。 默认值 = 5 秒, 最小值 = 1 秒, 最大值 = 300 秒 |
-|maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音 (暂停) 时间。 默认值 = 5 秒, 最小值 = 1 秒, 最大值 = 300 秒。|
-|maxRecordDurationInSeconds|Int32| 停止录制前的记录操作的最长持续时间。 默认值 = 5 秒, 最小值 = 1 秒, 最大值 = 300 秒。|
-|playBeep|Boolean| 如果为 true, 则会播放提示音, 指示用户可以开始记录其邮件。 默认值为 true。|
+|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合（如果有）。 客户可以选择单独指定 "playPrompt" 操作，也可以指定为 "record" 的一部分-几乎所有记录都通过提示进行 preceeded。 当前支持仅作为集合的一部分的单个提示。 |
+|bargeInAllowed|Boolean| 如果为 true，则此记录请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录操作之前，可以从开始时开始的最大初始静音（用户无声），并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音（暂停）时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。|
+|maxRecordDurationInSeconds|Int32| 停止录制前的记录操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 300 秒。|
+|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
 |stopTones|String collection|指定结束录音的停止音。|
 |适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
 
 ## <a name="response"></a>响应
-此方法返回`200 OK`响应代码和位置标头, 其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。
+此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

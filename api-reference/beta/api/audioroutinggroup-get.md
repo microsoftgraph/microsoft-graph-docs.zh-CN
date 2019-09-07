@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e646169249b128e53c8e2c38e99df2a580ed4b66
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 2214726a474fc30fb2f1acf2f3c34c7eb4b9f39c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718931"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792449"
 ---
 # <a name="get-audio-routing-group"></a>获取音频路由组
 
@@ -31,7 +31,6 @@ ms.locfileid: "36718931"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups/{id}
-GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -46,7 +45,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
 
 ## <a name="example"></a>示例
 

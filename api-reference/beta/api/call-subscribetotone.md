@@ -1,22 +1,22 @@
 ---
-title: '调用: subscribeToTone'
-description: 订阅 DTMF (双音多频信号)。 这样, 您就可以在用户按 "Dialpad" 上的键时收到通知。
+title: 调用： subscribeToTone
+description: 订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83e6c1b9795ea1caf27a166fd523c70b51909df0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a81c6440d320f74411f1ffefb94a6fea14945b14
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418864"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792525"
 ---
-# <a name="call-subscribetotone"></a>调用: subscribeToTone
+# <a name="call-subscribetotone"></a>调用： subscribeToTone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅 DTMF (双音多频信号)。 这样, 您就可以在用户按 "Dialpad" 上的键时收到通知。
+订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
@@ -34,7 +34,6 @@ ms.locfileid: "36418864"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
-POST /applications/{id}/calls/{id}/subscribeToTone
 ```
 
 ## <a name="request-headers"></a>请求标头

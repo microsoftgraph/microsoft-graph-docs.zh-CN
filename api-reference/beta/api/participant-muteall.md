@@ -1,18 +1,18 @@
 ---
-title: '参与者: muteAll'
+title: 参与者： muteAll
 description: 将呼叫中的所有参与者设为静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bdfe0b3f337b7f5a084e1f557d6fc66ae8b8f0f2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1cf7a3220e391b14cedabbb1c0536b959ad03117
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413739"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792546"
 ---
-# <a name="participant-muteall"></a>参与者: muteAll
+# <a name="participant-muteall"></a>参与者： muteAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,6 @@ ms.locfileid: "36413739"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
-POST /applications/{id}/calls/{id}/participants/muteAll
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +47,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

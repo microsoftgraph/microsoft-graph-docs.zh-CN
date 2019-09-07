@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4422d492e2471e268a78757168da9d56427d592d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 80ec055270f3292e28a68d9ef30526c58c8f210e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720128"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792322"
 ---
 # <a name="list-participants"></a>列出参与者
 
@@ -34,7 +34,6 @@ ms.locfileid: "36720128"
 
 ```http
 GET /app/calls/{id}/participants
-GET /applications/{id}/calls/{id}/participants
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,7 +52,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[参与者](../resources/participant.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[参与者](../resources/participant.md)对象集合。
 
 ## <a name="examples"></a>示例
 

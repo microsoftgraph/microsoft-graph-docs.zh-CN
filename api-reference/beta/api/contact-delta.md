@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c2adfa46d03f01b71a91cf35e20c2e4f7798964
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c35509adf580fb34d175f124ae02513bcfd504d3
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719792"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792252"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -110,7 +110,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "parentFolderId": "parentFolderId-value",

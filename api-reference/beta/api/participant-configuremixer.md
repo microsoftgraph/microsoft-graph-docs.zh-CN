@@ -1,18 +1,18 @@
 ---
-title: '参与者: configureMixer'
+title: 参与者： configureMixer
 description: 为多方对话中的不同参与者配置音频的混合方式。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a8c0da96fe3e868ccdd08eb3db9441ed54f07657
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3db4e78be860539ea91f7203584c7b2ad42c6cfd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413795"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792588"
 ---
-# <a name="participant-configuremixer"></a>参与者: configureMixer
+# <a name="participant-configuremixer"></a>参与者： configureMixer
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,6 @@ ms.locfileid: "36413795"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/configureMixer
-POST /applications/{id}/calls/{id}/participants/configureMixer
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,7 +47,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

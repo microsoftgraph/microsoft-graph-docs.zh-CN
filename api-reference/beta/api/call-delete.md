@@ -5,18 +5,18 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cfc0578261d4821bd4992b3a066c83194e40d1f1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: aa1d0111085fa48f6c6186e764d19210a9f10ae2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418980"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792413"
 ---
 # <a name="delete-call"></a>删除呼叫
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除或挂断活动呼叫。
+删除或挂断活动呼叫。 对于多方呼叫，这只会删除您的呼叫线路;基础多方调用仍将继续。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,6 @@ ms.locfileid: "36418980"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}
-DELETE /applications/{id}/calls/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -58,7 +57,7 @@ DELETE /applications/{id}/calls/{id}
   "name": "delete-call"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/{id}
+DELETE https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
@@ -101,19 +100,20 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminating"
       }
     }
   ]
 }
+  
 ```
 
 ##### <a name="notification---terminated"></a>通知终止
@@ -130,16 +130,19 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
-        "terminationReason": "AppInitiated"
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": "0"
+        }
       }
     }
   ]

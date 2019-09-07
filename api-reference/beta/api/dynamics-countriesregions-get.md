@@ -7,15 +7,15 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e4797a866124daf3877eac29b93f4cf3608938d9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fd0cf37d37e2e9e903f842a1a61c5c19b905372
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956770"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792049"
 ---
 # <a name="get-countriesregions"></a>获取 countriesRegions
-检索 countriesRegions 对象的属性和关系, 以实现 Dynamics 365 Business Central。
+检索 countriesRegions 对象的属性和关系，以实现 Dynamics 365 Business Central。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,12 +23,12 @@ ms.locfileid: "35956770"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派 (个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```
-GET /financials/companies('{id}')/countriesRegions('{id}')
+GET /financials/companies/{id}/countriesRegions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -43,7 +43,7 @@ GET /financials/companies('{id}')/countriesRegions('{id}')
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**countriesRegions**对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和**countriesRegions**对象。
 
 ## <a name="example"></a>示例
 
@@ -51,14 +51,14 @@ GET /financials/companies('{id}')/countriesRegions('{id}')
 
 下面是一个请求示例。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
 **响应**
 
 下面是一个响应示例。 
 
-> **注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

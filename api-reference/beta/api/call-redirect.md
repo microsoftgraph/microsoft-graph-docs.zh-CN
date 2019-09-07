@@ -1,18 +1,18 @@
 ---
-title: '呼叫: 重定向'
+title: 呼叫：重定向
 description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a43f9c6164e69315d60f39c2ae0b9c1ba3df2c9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418892"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792263"
 ---
-# <a name="call-redirect"></a>呼叫: 重定向
+# <a name="call-redirect"></a>呼叫：重定向
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,10 +45,11 @@ POST /applications/{id}/calls/{id}/redirect
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
-|targetDisposition|String|可能的值为:`default`|
-|timeout|Int32|重定向操作的超时时间 (秒)。|
+|targetDisposition|String|可能的值为：`default`|
+|timeout|Int32|重定向操作的超时时间（秒）。|
 |maskCallee|Boolean|指示是否屏蔽被叫方。|
 |maskCaller|Boolean|指示是否屏蔽调用方。|
+|callbackUri|String|允许 bot 提供特定的回调 URI，在此 URI 中，重定向操作的结果将被发布。 这允许将结果发送到触发重定向操作的相同特定 bot 实例。 如果未提供，则将使用 bot 的全局回调 URI。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码

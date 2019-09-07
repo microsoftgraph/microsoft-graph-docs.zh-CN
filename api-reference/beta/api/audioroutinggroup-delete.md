@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9794066fe92f12d3494db184387953b185a5d979
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2e1bea10e2aa19f1503ca96fa34ceac6c033d891
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408116"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792469"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
@@ -31,7 +31,6 @@ ms.locfileid: "36408116"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
-DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头

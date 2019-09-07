@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c41d55a36fa99f2c8cbf4a16d5b17204f44a99d6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 257b9674fda36ea2025dc190e1e30ec477566561
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718719"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792331"
 ---
 # <a name="list-audio-routing-groups"></a>列出音频路由组
 
@@ -31,7 +31,6 @@ ms.locfileid: "36718719"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups
-GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -46,7 +45,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象集合。
 
 ## <a name="example"></a>示例
 
