@@ -7,54 +7,54 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1d18b2093c5b00a6e08ad4a8c8e91161c2d5216e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47ec43ae34a4841cbae04ef9c2fc3530becf96df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955839"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791106"
 ---
-# <a name="update-unitsofmeasure"></a><span data-ttu-id="2b990-103">更新 unitsOfMeasure</span><span class="sxs-lookup"><span data-stu-id="2b990-103">Update unitsOfMeasure</span></span>
-<span data-ttu-id="2b990-104">更新 Dynamics 365 Business Central 的度量单位对象的属性。</span><span class="sxs-lookup"><span data-stu-id="2b990-104">Update the properties of a units of measure object for Dynamics 365 Business Central.</span></span>
+# <a name="update-unitsofmeasure"></a><span data-ttu-id="406da-103">更新 unitsOfMeasure</span><span class="sxs-lookup"><span data-stu-id="406da-103">Update unitsOfMeasure</span></span>
+<span data-ttu-id="406da-104">更新 Dynamics 365 Business Central 的度量单位对象的属性。</span><span class="sxs-lookup"><span data-stu-id="406da-104">Update the properties of a units of measure object for Dynamics 365 Business Central.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2b990-105">权限</span><span class="sxs-lookup"><span data-stu-id="2b990-105">Permissions</span></span>
-<span data-ttu-id="2b990-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2b990-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="406da-105">权限</span><span class="sxs-lookup"><span data-stu-id="406da-105">Permissions</span></span>
+<span data-ttu-id="406da-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="406da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2b990-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2b990-108">Permission type</span></span> |<span data-ttu-id="2b990-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2b990-109">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="406da-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="406da-108">Permission type</span></span> |<span data-ttu-id="406da-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="406da-109">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="2b990-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2b990-110">Delegated (work or school account)</span></span>|<span data-ttu-id="2b990-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b990-111">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="2b990-112">委派 (个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="2b990-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="2b990-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="2b990-113">Not supported.</span></span>|
-|<span data-ttu-id="2b990-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2b990-114">Application</span></span>|<span data-ttu-id="2b990-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b990-115">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="406da-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="406da-110">Delegated (work or school account)</span></span>|<span data-ttu-id="406da-111">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="406da-111">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="406da-112">委派（个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="406da-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="406da-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="406da-113">Not supported.</span></span>|
+|<span data-ttu-id="406da-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="406da-114">Application</span></span>|<span data-ttu-id="406da-115">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="406da-115">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2b990-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2b990-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="406da-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="406da-116">HTTP request</span></span>
 
 ```
-PATCH /financials/companies('{id}')/unitsOfMeasure('{id}')
+PATCH /financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2b990-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2b990-117">Optional query parameters</span></span>
-<span data-ttu-id="2b990-118">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2b990-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="406da-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="406da-117">Optional query parameters</span></span>
+<span data-ttu-id="406da-118">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="406da-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2b990-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2b990-119">Request headers</span></span>
-|<span data-ttu-id="2b990-120">标头</span><span class="sxs-lookup"><span data-stu-id="2b990-120">Header</span></span>|<span data-ttu-id="2b990-121">值</span><span class="sxs-lookup"><span data-stu-id="2b990-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="406da-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="406da-119">Request headers</span></span>
+|<span data-ttu-id="406da-120">标头</span><span class="sxs-lookup"><span data-stu-id="406da-120">Header</span></span>|<span data-ttu-id="406da-121">值</span><span class="sxs-lookup"><span data-stu-id="406da-121">Value</span></span>|
 |------|-----|
-|<span data-ttu-id="2b990-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2b990-122">Authorization</span></span> |<span data-ttu-id="2b990-123">负载.</span><span class="sxs-lookup"><span data-stu-id="2b990-123">Bearer.</span></span> <span data-ttu-id="2b990-124">必需。</span><span class="sxs-lookup"><span data-stu-id="2b990-124">Required.</span></span>|
-|<span data-ttu-id="2b990-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2b990-125">Content-Type</span></span>  |<span data-ttu-id="2b990-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2b990-126">application/json</span></span>|
-|<span data-ttu-id="2b990-127">If-Match</span><span class="sxs-lookup"><span data-stu-id="2b990-127">If-Match</span></span>      |<span data-ttu-id="2b990-128">必需。</span><span class="sxs-lookup"><span data-stu-id="2b990-128">Required.</span></span> <span data-ttu-id="2b990-129">如果包含此请求标头, 且提供的 eTag 与**unitsOfMeasure**上的当前标记不匹配, 则不会更新**unitsOfMeasure** 。</span><span class="sxs-lookup"><span data-stu-id="2b990-129">When this request header is included and the eTag provided does not match the current tag on the **unitsOfMeasure**, the **unitsOfMeasure** will not be updated.</span></span> |
+|<span data-ttu-id="406da-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="406da-122">Authorization</span></span> |<span data-ttu-id="406da-123">负载.</span><span class="sxs-lookup"><span data-stu-id="406da-123">Bearer.</span></span> <span data-ttu-id="406da-124">必需。</span><span class="sxs-lookup"><span data-stu-id="406da-124">Required.</span></span>|
+|<span data-ttu-id="406da-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="406da-125">Content-Type</span></span>  |<span data-ttu-id="406da-126">application/json</span><span class="sxs-lookup"><span data-stu-id="406da-126">application/json</span></span>|
+|<span data-ttu-id="406da-127">If-Match</span><span class="sxs-lookup"><span data-stu-id="406da-127">If-Match</span></span>      |<span data-ttu-id="406da-128">必需。</span><span class="sxs-lookup"><span data-stu-id="406da-128">Required.</span></span> <span data-ttu-id="406da-129">如果包含此请求标头，且提供的 eTag 与**unitsOfMeasure**上的当前标记不匹配，则不会更新**unitsOfMeasure** 。</span><span class="sxs-lookup"><span data-stu-id="406da-129">When this request header is included and the eTag provided does not match the current tag on the **unitsOfMeasure**, the **unitsOfMeasure** will not be updated.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2b990-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="2b990-130">Request body</span></span>
-<span data-ttu-id="2b990-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="2b990-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="406da-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="406da-130">Request body</span></span>
+<span data-ttu-id="406da-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="406da-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2b990-134">响应</span><span class="sxs-lookup"><span data-stu-id="2b990-134">Response</span></span>
-<span data-ttu-id="2b990-135">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的**unitsOfMeasure**对象。</span><span class="sxs-lookup"><span data-stu-id="2b990-135">If successful, this method returns a `200 OK` response code and an updated **unitsOfMeasure** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="406da-134">响应</span><span class="sxs-lookup"><span data-stu-id="406da-134">Response</span></span>
+<span data-ttu-id="406da-135">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的**unitsOfMeasure**对象。</span><span class="sxs-lookup"><span data-stu-id="406da-135">If successful, this method returns a `200 OK` response code and an updated **unitsOfMeasure** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2b990-136">示例</span><span class="sxs-lookup"><span data-stu-id="2b990-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="406da-136">示例</span><span class="sxs-lookup"><span data-stu-id="406da-136">Example</span></span>
 
-<span data-ttu-id="2b990-137">**请求**</span><span class="sxs-lookup"><span data-stu-id="2b990-137">**Request**</span></span>
+<span data-ttu-id="406da-137">**请求**</span><span class="sxs-lookup"><span data-stu-id="406da-137">**Request**</span></span>
 
-<span data-ttu-id="2b990-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2b990-138">Here is an example of the request.</span></span>
+<span data-ttu-id="406da-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="406da-138">Here is an example of the request.</span></span>
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{id}
 Content-type: application/json
 
 {
@@ -62,11 +62,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="2b990-139">**响应**</span><span class="sxs-lookup"><span data-stu-id="2b990-139">**Response**</span></span>
+<span data-ttu-id="406da-139">**响应**</span><span class="sxs-lookup"><span data-stu-id="406da-139">**Response**</span></span>
 
-<span data-ttu-id="2b990-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2b990-140">Here is an example of the response.</span></span> 
+<span data-ttu-id="406da-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="406da-140">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="2b990-141">**注意**: 为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2b990-141">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2b990-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2b990-142">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="406da-141">**注意**：为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="406da-141">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="406da-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="406da-142">All the properties will be returned from an actual call.</span></span>
 
 ```json
 HTTP/1.1 200 OK
