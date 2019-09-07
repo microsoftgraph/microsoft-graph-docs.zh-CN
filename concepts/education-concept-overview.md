@@ -4,12 +4,13 @@ description: Microsoft Graph 中的教育版 API 可增强 Office 365 资源和�
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: c1a93242071f8ad1aa208ca3361f16d08c13d682
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+scenarios: getting-started
+ms.openlocfilehash: 749d97ed3181852751996792e07ca4c573bb1c60
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778752"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792847"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 

@@ -4,12 +4,13 @@ description: 'Microsoft Graph 数据连接可通过核心数据管道为你提�
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 6f82fb3a9e9a5254f36049ab96be8adca41e7be5
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+scenarios: getting-started
+ms.openlocfilehash: 8454405f67e75dcfd11acb215fb44f8342aa59d6
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133745"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792938"
 ---
 # <a name="microsoft-graph-data-connect"></a>Microsoft Graph 数据连接
 
