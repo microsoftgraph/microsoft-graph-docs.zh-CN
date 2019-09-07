@@ -3,12 +3,14 @@ title: Azure AD 标识和访问管理 API 概述
 description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: bd4c71d1cada7badc15178580fd33edfd0e8cc8b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.prod: microsoft-identity-platform
+scenarios: getting-started
+ms.openlocfilehash: 9ed9857ccba80c416386a9cff0d36d8e9ca0ce8f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951262"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792980"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 

@@ -4,12 +4,13 @@ description: Excel 是一个提高工作效率不可或缺的工具。 所有行
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fb116658b087f09dfb3f40b065acb9218e243cee
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+scenarios: getting-started
+ms.openlocfilehash: 23f443766ba2d8539d2a4b79e5df379dce8c252d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639057"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792997"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Excel 工作簿和图表 API 概述
 

@@ -2,12 +2,13 @@
 title: 通过导航 Microsoft Graph 访问数据和方法
 description: 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
 localization_priority: Priority
-ms.openlocfilehash: 2b02ca0ed623fa17d9b640ff0bb1c17c3b3e022e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+scenarios: getting-started
+ms.openlocfilehash: 581efe1b14bb156b3ac53a6a06bf731f11150cb0
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840647"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791041"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>通过导航 Microsoft Graph 访问数据和方法
 

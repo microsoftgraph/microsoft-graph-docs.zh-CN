@@ -4,12 +4,13 @@ description: Outlook 是 Office 365 的消息传递通信中心。 使用它，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 14debcfb59b062e0c29b5024d32e6a5dcc4e7394
-ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
+scenarios: getting-started
+ms.openlocfilehash: 7b5e82864b4dc1d4e9aa4a29577f4fc457795453
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083237"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792973"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 

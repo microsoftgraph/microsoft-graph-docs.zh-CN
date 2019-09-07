@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557915"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36793008"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 
@@ -21,7 +21,7 @@ Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最�
 若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限：
 
 * People.Read - 用于进行常规的 People API 调用，例如 `https://graph.microsoft.com/v1.0/me/people/`。People.Read 需要获得最终用户的同意。
-* People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) 调用时需要。 People.Read.All 需要获得管理员的同意。
+* People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (`https://graph.microsoft.com/v1.0/users/{id}/people`) 调用时需要。 People.Read.All 需要获得管理员的同意。
 
 ## <a name="browse-people"></a>浏览人员
 
