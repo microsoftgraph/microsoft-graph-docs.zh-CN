@@ -5,37 +5,37 @@ ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557915"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36793008"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a><span data-ttu-id="956da-103">在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息</span><span class="sxs-lookup"><span data-stu-id="956da-103">Use the People API in Microsoft Graph to get information about the people most relevant to you</span></span>
+# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a><span data-ttu-id="ae13c-103">在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息</span><span class="sxs-lookup"><span data-stu-id="ae13c-103">Use the People API in Microsoft Graph to get information about the people most relevant to you</span></span>
 
-<span data-ttu-id="956da-p101">Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。人员可以是当地联系人、社交网络或所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。生成此见解的同时，People API 还会提供模糊匹配搜索支持和检索登录用户组织中其他用户的相关用户列表的功能。People API 尤其适用于人员选择应用场景，例如撰写电子邮件或创建会议时。例如，可以在撰写电子邮件的应用场景中使用 People API。</span><span class="sxs-lookup"><span data-stu-id="956da-p101">Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.</span></span>
+<span data-ttu-id="ae13c-p101">Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。相关性由用户的通信和协作模式及业务关系决定。人员可以是当地联系人、社交网络或所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。生成此见解的同时，People API 还会提供模糊匹配搜索支持和检索登录用户组织中其他用户的相关用户列表的功能。People API 尤其适用于人员选择应用场景，例如撰写电子邮件或创建会议时。例如，可以在撰写电子邮件的应用场景中使用 People API。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p101">Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.</span></span>
 
-## <a name="authorization"></a><span data-ttu-id="956da-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="956da-110">Authorization</span></span>
+## <a name="authorization"></a><span data-ttu-id="ae13c-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae13c-110">Authorization</span></span>
 
-<span data-ttu-id="956da-111">若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限：</span><span class="sxs-lookup"><span data-stu-id="956da-111">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
+<span data-ttu-id="ae13c-111">若要在 Microsoft Graph 中调用 People API，应用必须拥有适当的权限：</span><span class="sxs-lookup"><span data-stu-id="ae13c-111">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
 
-* <span data-ttu-id="956da-p102">People.Read - 用于进行常规的 People API 调用，例如 `https://graph.microsoft.com/v1.0/me/people/`。People.Read 需要获得最终用户的同意。</span><span class="sxs-lookup"><span data-stu-id="956da-p102">People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.</span></span>
-* <span data-ttu-id="956da-114">People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) 调用时需要。</span><span class="sxs-lookup"><span data-stu-id="956da-114">People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls.</span></span> <span data-ttu-id="956da-115">People.Read.All 需要获得管理员的同意。</span><span class="sxs-lookup"><span data-stu-id="956da-115">People.Read.All requires admin consent.</span></span>
+* <span data-ttu-id="ae13c-p102">People.Read - 用于进行常规的 People API 调用，例如 `https://graph.microsoft.com/v1.0/me/people/`。People.Read 需要获得最终用户的同意。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p102">People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.</span></span>
+* <span data-ttu-id="ae13c-114">People.Read.All - 在进行检索与登录用户组织中指定用户相关度最高的人员 (`https://graph.microsoft.com/v1.0/users/{id}/people`) 调用时需要。</span><span class="sxs-lookup"><span data-stu-id="ae13c-114">People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls.</span></span> <span data-ttu-id="ae13c-115">People.Read.All 需要获得管理员的同意。</span><span class="sxs-lookup"><span data-stu-id="ae13c-115">People.Read.All requires admin consent.</span></span>
 
-## <a name="browse-people"></a><span data-ttu-id="956da-116">浏览人员</span><span class="sxs-lookup"><span data-stu-id="956da-116">Browse people</span></span>
+## <a name="browse-people"></a><span data-ttu-id="ae13c-116">浏览人员</span><span class="sxs-lookup"><span data-stu-id="ae13c-116">Browse people</span></span>
 
-<span data-ttu-id="956da-p104">此部分中的请求可以获取与登录用户 (`/me`)，或者与登录用户所在组织中的特定用户相关度最高的人员。这些请求需要分别具有 People.Read 或 People.Read.All 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 查询参数更改此设置。</span><span class="sxs-lookup"><span data-stu-id="956da-p104">The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.</span></span>
+<span data-ttu-id="ae13c-p104">此部分中的请求可以获取与登录用户 (`/me`)，或者与登录用户所在组织中的特定用户相关度最高的人员。这些请求需要分别具有 People.Read 或 People.Read.All 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 查询参数更改此设置。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p104">The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.</span></span>
 
-### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="956da-120">获取相关人员集合。</span><span class="sxs-lookup"><span data-stu-id="956da-120">Get a collection of relevant people</span></span>
+### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="ae13c-120">获取相关人员集合。</span><span class="sxs-lookup"><span data-stu-id="ae13c-120">Get a collection of relevant people</span></span>
 
-<span data-ttu-id="956da-121">以下请求根据通信和协作模式及业务关系获取与登录用户 (`/me`) 相关度最高的人员。</span><span class="sxs-lookup"><span data-stu-id="956da-121">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span>
+<span data-ttu-id="ae13c-121">以下请求根据通信和协作模式及业务关系获取与登录用户 (`/me`) 相关度最高的人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-121">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
-<span data-ttu-id="956da-p105">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 查询参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p105">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p105">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 查询参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p105">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -152,15 +152,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="request-a-subsequent-page-of-people"></a><span data-ttu-id="956da-126">请求后续人员页面</span><span class="sxs-lookup"><span data-stu-id="956da-126">Request a subsequent page of people</span></span>
+### <a name="request-a-subsequent-page-of-people"></a><span data-ttu-id="ae13c-126">请求后续人员页面</span><span class="sxs-lookup"><span data-stu-id="ae13c-126">Request a subsequent page of people</span></span>
 
-<span data-ttu-id="956da-p106">如果第一个响应未包含相关人员的完整列表，可以使用 *$top* 和 *$skip* 发出第二个请求，以请求其他信息页面。如果上一个请求包含其他信息，则下一个请求从服务器获取下一个人员页面。</span><span class="sxs-lookup"><span data-stu-id="956da-p106">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
+<span data-ttu-id="ae13c-p106">如果第一个响应未包含相关人员的完整列表，可以使用 *$top* 和 *$skip* 发出第二个请求，以请求其他信息页面。如果上一个请求包含其他信息，则下一个请求从服务器获取下一个人员页面。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p106">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$top=3&$skip=10
 ```
 
-<span data-ttu-id="956da-p107">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 查询参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p107">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p107">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 查询参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p107">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -277,15 +277,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="sort-the-response"></a><span data-ttu-id="956da-133">对响应进行排序</span><span class="sxs-lookup"><span data-stu-id="956da-133">Sort the response</span></span>
+### <a name="sort-the-response"></a><span data-ttu-id="ae13c-133">对响应进行排序</span><span class="sxs-lookup"><span data-stu-id="ae13c-133">Sort the response</span></span>
 
-<span data-ttu-id="956da-p108">默认情况下，按与查询的相关性对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员的顺序。此查询会选择与你相关度最高的人员，按 **displayName** 对他们进行排序，然后返回排序列表上的前 10 个人员。</span><span class="sxs-lookup"><span data-stu-id="956da-p108">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their **displayName**, and then returns the first 10 people on the sorted list.</span></span>
+<span data-ttu-id="ae13c-p108">默认情况下，按与查询的相关性对响应中的人员进行排序。可以使用 *$orderby* 参数更改响应中的人员的顺序。此查询会选择与你相关度最高的人员，按 **displayName** 对他们进行排序，然后返回排序列表上的前 10 个人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p108">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their **displayName**, and then returns the first 10 people on the sorted list.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$orderby=displayName
 ```
 
-<span data-ttu-id="956da-p109">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。以下示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p109">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. The following example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p109">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。以下示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p109">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. The following example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -402,17 +402,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="change-the-number-of-people-and-fields-returned"></a><span data-ttu-id="956da-141">更改返回的人员和字段数</span><span class="sxs-lookup"><span data-stu-id="956da-141">Change the number of people and fields returned</span></span>
+### <a name="change-the-number-of-people-and-fields-returned"></a><span data-ttu-id="ae13c-141">更改返回的人员和字段数</span><span class="sxs-lookup"><span data-stu-id="ae13c-141">Change the number of people and fields returned</span></span>
 
-<span data-ttu-id="956da-142">可以通过设置 *$top* 参数更改响应中返回的人员数。</span><span class="sxs-lookup"><span data-stu-id="956da-142">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
+<span data-ttu-id="ae13c-142">可以通过设置 *$top* 参数更改响应中返回的人员数。</span><span class="sxs-lookup"><span data-stu-id="ae13c-142">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
 
-<span data-ttu-id="956da-p110">以下示例请求与 `/me` 相关度最高的 1,000 个人员。此请求还通过仅请求人员的 **displayName** 来限制从服务器返回的数据量。</span><span class="sxs-lookup"><span data-stu-id="956da-p110">The following example requests the 1,000 people most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the **displayName** of the person.</span></span>
+<span data-ttu-id="ae13c-p110">以下示例请求与 `/me` 相关度最高的 1,000 个人员。此请求还通过仅请求人员的 **displayName** 来限制从服务器返回的数据量。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p110">The following example requests the 1,000 people most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the **displayName** of the person.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$top=1000&$Select=displayName
 ```
 
-<span data-ttu-id="956da-145">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="956da-145">The following example shows the response.</span></span>
+<span data-ttu-id="ae13c-145">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="ae13c-145">The following example shows the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -476,17 +476,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="select-the-fields-to-return"></a><span data-ttu-id="956da-146">选择要返回的字段</span><span class="sxs-lookup"><span data-stu-id="956da-146">Select the fields to return</span></span>
+### <a name="select-the-fields-to-return"></a><span data-ttu-id="ae13c-146">选择要返回的字段</span><span class="sxs-lookup"><span data-stu-id="ae13c-146">Select the fields to return</span></span>
 
-<span data-ttu-id="956da-p111">可以使用 *$select* 参数选择一个或多个字段，限制从服务器返回的数据量。始终会返回 `@odata.id` 字段。</span><span class="sxs-lookup"><span data-stu-id="956da-p111">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.</span></span>
+<span data-ttu-id="ae13c-p111">可以使用 *$select* 参数选择一个或多个字段，限制从服务器返回的数据量。始终会返回 `@odata.id` 字段。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p111">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.</span></span>
 
-<span data-ttu-id="956da-149">以下示例将响应限制为 10 个相关度最高人员的 **displayName** 和 **scoredEmailAddresses**。</span><span class="sxs-lookup"><span data-stu-id="956da-149">The following example limits the response to the **displayName** and **scoredEmailAddresses** of the 10 most relevant people.</span></span>
+<span data-ttu-id="ae13c-149">以下示例将响应限制为 10 个相关度最高人员的 **displayName** 和 **scoredEmailAddresses**。</span><span class="sxs-lookup"><span data-stu-id="ae13c-149">The following example limits the response to the **displayName** and **scoredEmailAddresses** of the 10 most relevant people.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
 ```
 
-<span data-ttu-id="956da-p112">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p112">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p112">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p112">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -528,17 +528,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="use-a-filter-to-limit-the-response"></a><span data-ttu-id="956da-154">使用筛选器限制响应</span><span class="sxs-lookup"><span data-stu-id="956da-154">Use a filter to limit the response</span></span>
+### <a name="use-a-filter-to-limit-the-response"></a><span data-ttu-id="ae13c-154">使用筛选器限制响应</span><span class="sxs-lookup"><span data-stu-id="ae13c-154">Use a filter to limit the response</span></span>
 
-<span data-ttu-id="956da-155">可以使用 *$filter* 参数将响应限制为记录中包含指定条件的那些人员。</span><span class="sxs-lookup"><span data-stu-id="956da-155">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
+<span data-ttu-id="ae13c-155">可以使用 *$filter* 参数将响应限制为记录中包含指定条件的那些人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-155">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
 
-<span data-ttu-id="956da-156">以下查询将响应限制为包含 **personType** 属性的 **person** 实例，该属性将 **person** 分配为**类**，将 **organizationUser** 分配为**子类**。</span><span class="sxs-lookup"><span data-stu-id="956da-156">The following query limits the response to **person** instances with the **personType** property being assigned **person** as **class** and **organizationUser** as **subclass**.</span></span>
+<span data-ttu-id="ae13c-156">以下查询将响应限制为包含 **personType** 属性的 **person** 实例，该属性将 **person** 分配为**类**，将 **organizationUser** 分配为**子类**。</span><span class="sxs-lookup"><span data-stu-id="ae13c-156">The following query limits the response to **person** instances with the **personType** property being assigned **person** as **class** and **organizationUser** as **subclass**.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
 ```
 
-<span data-ttu-id="956da-p113">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p113">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p113">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p113">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -655,17 +655,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="956da-161">选择要在经过筛选的响应中返回的字段</span><span class="sxs-lookup"><span data-stu-id="956da-161">Select the fields to return in a filtered response</span></span>
+### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="ae13c-161">选择要在经过筛选的响应中返回的字段</span><span class="sxs-lookup"><span data-stu-id="ae13c-161">Select the fields to return in a filtered response</span></span>
 
-<span data-ttu-id="956da-162">可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。</span><span class="sxs-lookup"><span data-stu-id="956da-162">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
+<span data-ttu-id="ae13c-162">可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。</span><span class="sxs-lookup"><span data-stu-id="ae13c-162">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
 
-<span data-ttu-id="956da-p114">以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。</span><span class="sxs-lookup"><span data-stu-id="956da-p114">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
+<span data-ttu-id="ae13c-p114">以下示例获取显示名称等于指定名称的人员的 **displayName** 和 **scoredEmailAddresses**。在本示例中，只返回显示名称等于“Lorrie Frye”的人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p114">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
 ```
 
-<span data-ttu-id="956da-165">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="956da-165">The following example shows the response.</span></span>
+<span data-ttu-id="ae13c-165">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="ae13c-165">The following example shows the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -687,17 +687,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="browse-another-users-relevant-people"></a><span data-ttu-id="956da-166">浏览其他用户的相关人员</span><span class="sxs-lookup"><span data-stu-id="956da-166">Browse another user’s relevant people</span></span>
+### <a name="browse-another-users-relevant-people"></a><span data-ttu-id="ae13c-166">浏览其他用户的相关人员</span><span class="sxs-lookup"><span data-stu-id="ae13c-166">Browse another user’s relevant people</span></span>
 
-<span data-ttu-id="956da-167">以下请求获取与登录用户组织中的其他人员相关度最高的人员。</span><span class="sxs-lookup"><span data-stu-id="956da-167">The following request gets the people most relevant to another person in the signed-in user's organization.</span></span> <span data-ttu-id="956da-168">此请求需要具有 People.Read.All 权限。</span><span class="sxs-lookup"><span data-stu-id="956da-168">This request requires the People.Read.All permission.</span></span> <span data-ttu-id="956da-169">上节所述的所有查询参数也都适用。</span><span class="sxs-lookup"><span data-stu-id="956da-169">All the query parameters described in the above sections apply as well.</span></span>
+<span data-ttu-id="ae13c-167">以下请求获取与登录用户组织中的其他人员相关度最高的人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-167">The following request gets the people most relevant to another person in the signed-in user's organization.</span></span> <span data-ttu-id="ae13c-168">此请求需要具有 People.Read.All 权限。</span><span class="sxs-lookup"><span data-stu-id="ae13c-168">This request requires the People.Read.All permission.</span></span> <span data-ttu-id="ae13c-169">上节所述的所有查询参数也都适用。</span><span class="sxs-lookup"><span data-stu-id="ae13c-169">All the query parameters described in the above sections apply as well.</span></span>
 
-<span data-ttu-id="956da-170">在本示例中显示了 Roscoe Seidel 的相关人员。</span><span class="sxs-lookup"><span data-stu-id="956da-170">In this example, Roscoe Seidel's relevant people are displayed.</span></span>
+<span data-ttu-id="ae13c-170">在本示例中显示了 Roscoe Seidel 的相关人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-170">In this example, Roscoe Seidel's relevant people are displayed.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-<span data-ttu-id="956da-p116">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。下面的示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p116">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p116">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。下面的示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p116">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -814,21 +814,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="search-people"></a><span data-ttu-id="956da-175">搜索人员</span><span class="sxs-lookup"><span data-stu-id="956da-175">Search people</span></span>
+## <a name="search-people"></a><span data-ttu-id="ae13c-175">搜索人员</span><span class="sxs-lookup"><span data-stu-id="ae13c-175">Search people</span></span>
 
-<span data-ttu-id="956da-p117">此部分中的请求使你可以搜索登录用户 (`/me`) 及登录用户组织中其他用户的相关人员。这些请求需要具有 People.Read 权限，但搜索其他用户的相关人员时除外，这种情况下需要具有 People.Read.All 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 参数更改此设置。</span><span class="sxs-lookup"><span data-stu-id="956da-p117">The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.</span></span>
+<span data-ttu-id="ae13c-p117">此部分中的请求使你可以搜索登录用户 (`/me`) 及登录用户组织中其他用户的相关人员。这些请求需要具有 People.Read 权限，但搜索其他用户的相关人员时除外，这种情况下需要具有 People.Read.All 权限。默认情况下，每个响应返回 10 个记录，但可以使用 *$top* 参数更改此设置。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p117">The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.</span></span>
 
-### <a name="use-search-to-select-people"></a><span data-ttu-id="956da-179">使用搜索选择人员</span><span class="sxs-lookup"><span data-stu-id="956da-179">Use search to select people</span></span>
+### <a name="use-search-to-select-people"></a><span data-ttu-id="ae13c-179">使用搜索选择人员</span><span class="sxs-lookup"><span data-stu-id="ae13c-179">Use search to select people</span></span>
 
-<span data-ttu-id="956da-180">使用 *$search* 参数选择符合某组特定条件的人员。</span><span class="sxs-lookup"><span data-stu-id="956da-180">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
+<span data-ttu-id="ae13c-180">使用 *$search* 参数选择符合某组特定条件的人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-180">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
 
-<span data-ttu-id="956da-181">以下搜索查询可返回与 `/me` 相关且其 **displayName** 或 \*emailAddress" 包含以字母“j”开头的单词的人员。</span><span class="sxs-lookup"><span data-stu-id="956da-181">The following search query returns people relevant to `/me` whose **displayName** or \*emailAddress" has a word that begins with the letter "j".</span></span>
+<span data-ttu-id="ae13c-181">以下搜索查询可返回与 `/me` 相关且其 **displayName** 或 \*emailAddress" 包含以字母“j”开头的单词的人员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-181">The following search query returns people relevant to `/me` whose **displayName** or \*emailAddress" has a word that begins with the letter "j".</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
 ```
 
-<span data-ttu-id="956da-p118">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="956da-p118">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="ae13c-p118">以下示例显示了相应的响应。默认情况下，每个响应返回 10 个记录。可以使用 *$top* 参数更改此设置。本示例使用 *$top* 将响应限制为三个记录。</span><span class="sxs-lookup"><span data-stu-id="ae13c-p118">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -935,9 +935,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="perform-a-fuzzy-search"></a><span data-ttu-id="956da-186">执行模糊搜索</span><span class="sxs-lookup"><span data-stu-id="956da-186">Perform a fuzzy search</span></span>
+### <a name="perform-a-fuzzy-search"></a><span data-ttu-id="ae13c-186">执行模糊搜索</span><span class="sxs-lookup"><span data-stu-id="ae13c-186">Perform a fuzzy search</span></span>
 
-<span data-ttu-id="956da-187">搜索实现模糊匹配算法。</span><span class="sxs-lookup"><span data-stu-id="956da-187">Searches implement a fuzzy matching algorithm.</span></span> <span data-ttu-id="956da-188">它们根据完全匹配以及搜索意图推断返回结果。</span><span class="sxs-lookup"><span data-stu-id="956da-188">They will return results based on an exact match and also on inferences about the intent of the search.</span></span> <span data-ttu-id="956da-189">例如，假设用户显示名称为“Tyler Lee”，电子邮件地址为 tylerle@example.com，用户位于登录用户的 **people** 集合中。</span><span class="sxs-lookup"><span data-stu-id="956da-189">For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user.</span></span> <span data-ttu-id="956da-190">所有以下搜索都将返回此用户 Tyler 作为结果之一。</span><span class="sxs-lookup"><span data-stu-id="956da-190">All of the following searches will return this user Tyler as one of the results.</span></span>
+<span data-ttu-id="ae13c-187">搜索实现模糊匹配算法。</span><span class="sxs-lookup"><span data-stu-id="ae13c-187">Searches implement a fuzzy matching algorithm.</span></span> <span data-ttu-id="ae13c-188">它们根据完全匹配以及搜索意图推断返回结果。</span><span class="sxs-lookup"><span data-stu-id="ae13c-188">They will return results based on an exact match and also on inferences about the intent of the search.</span></span> <span data-ttu-id="ae13c-189">例如，假设用户显示名称为“Tyler Lee”，电子邮件地址为 tylerle@example.com，用户位于登录用户的 **people** 集合中。</span><span class="sxs-lookup"><span data-stu-id="ae13c-189">For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user.</span></span> <span data-ttu-id="ae13c-190">所有以下搜索都将返回此用户 Tyler 作为结果之一。</span><span class="sxs-lookup"><span data-stu-id="ae13c-190">All of the following searches will return this user Tyler as one of the results.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email
@@ -947,31 +947,31 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### <a name="working-with-feature-implementation"></a><span data-ttu-id="956da-191">“同事”功能实现</span><span class="sxs-lookup"><span data-stu-id="956da-191">Working with feature implementation</span></span>
+### <a name="working-with-feature-implementation"></a><span data-ttu-id="ae13c-191">“同事”功能实现</span><span class="sxs-lookup"><span data-stu-id="ae13c-191">Working with feature implementation</span></span>
  
-<span data-ttu-id="956da-192">配置文件所有者和其他人员之间必须有公共关系，这些人员才会显示在配置文件所有者的列表中。</span><span class="sxs-lookup"><span data-stu-id="956da-192">There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list.</span></span> <span data-ttu-id="956da-193">下图显示了用户 A、与其他用户（用户 B）的关系的索引，以及显示用户关系子集的公共配置文件。</span><span class="sxs-lookup"><span data-stu-id="956da-193">The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.</span></span>
+<span data-ttu-id="ae13c-192">配置文件所有者和其他人员之间必须有公共关系，这些人员才会显示在配置文件所有者的列表中。</span><span class="sxs-lookup"><span data-stu-id="ae13c-192">There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list.</span></span> <span data-ttu-id="ae13c-193">下图显示了用户 A、与其他用户（用户 B）的关系的索引，以及显示用户关系子集的公共配置文件。</span><span class="sxs-lookup"><span data-stu-id="ae13c-193">The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.</span></span>
 
 ![“同事”关系的图像](images/working-with.png)
  
-<span data-ttu-id="956da-195">下面是公共关系的示例：</span><span class="sxs-lookup"><span data-stu-id="956da-195">The following are examples of public relationships:</span></span>
+<span data-ttu-id="ae13c-195">下面是公共关系的示例：</span><span class="sxs-lookup"><span data-stu-id="ae13c-195">The following are examples of public relationships:</span></span>
 
-- <span data-ttu-id="956da-196">在组织结构图中相连的个人：经理、直接下属、同事（其经理相同）</span><span class="sxs-lookup"><span data-stu-id="956da-196">Individuals connected in the org chart: Manager, Direct report, Peers (share the same manager)</span></span> 
-- <span data-ttu-id="956da-197">人数少于 30 的公共组或通讯组列表的成员。</span><span class="sxs-lookup"><span data-stu-id="956da-197">Members of a public group or distribution list with fewer than 30 people.</span></span> <span data-ttu-id="956da-198">公共组具有可在目录中找到的成员身份列表。</span><span class="sxs-lookup"><span data-stu-id="956da-198">Public groups have membership lists that are available in the directory.</span></span>
+- <span data-ttu-id="ae13c-196">在组织结构图中相连的个人：经理、直接下属、同事（其经理相同）</span><span class="sxs-lookup"><span data-stu-id="ae13c-196">Individuals connected in the org chart: Manager, Direct report, Peers (share the same manager)</span></span> 
+- <span data-ttu-id="ae13c-197">人数少于 30 的公共组或通讯组列表的成员。</span><span class="sxs-lookup"><span data-stu-id="ae13c-197">Members of a public group or distribution list with fewer than 30 people.</span></span> <span data-ttu-id="ae13c-198">公共组具有可在目录中找到的成员身份列表。</span><span class="sxs-lookup"><span data-stu-id="ae13c-198">Public groups have membership lists that are available in the directory.</span></span>
  
-<span data-ttu-id="956da-199">如果配置文件所有者与某人通信，并且他们之间没有公共关系（例如组织结构图联系或共同的组），则其他人将看不到他们已在进行通信的事实。</span><span class="sxs-lookup"><span data-stu-id="956da-199">If the profile owner communicates with someone and there is no public relationship between them, such as an org chart connection or a group in common, the fact that they've been communicating will not be visible to others.</span></span>
+<span data-ttu-id="ae13c-199">如果配置文件所有者与某人通信，并且他们之间没有公共关系（例如组织结构图联系或共同的组），则其他人将看不到他们已在进行通信的事实。</span><span class="sxs-lookup"><span data-stu-id="ae13c-199">If the profile owner communicates with someone and there is no public relationship between them, such as an org chart connection or a group in common, the fact that they've been communicating will not be visible to others.</span></span>
 
-<span data-ttu-id="956da-200">人员的排名（即他们出现在配置文件所有者页面上的顺序）由配置文件所有者与列表上人员之间的私人和公共沟通确定。</span><span class="sxs-lookup"><span data-stu-id="956da-200">The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.</span></span>
+<span data-ttu-id="ae13c-200">人员的排名（即他们出现在配置文件所有者页面上的顺序）由配置文件所有者与列表上人员之间的私人和公共沟通确定。</span><span class="sxs-lookup"><span data-stu-id="ae13c-200">The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.</span></span>
  
-<span data-ttu-id="956da-201">私人沟通的示例包括：</span><span class="sxs-lookup"><span data-stu-id="956da-201">Examples of private communication include:</span></span>
-- <span data-ttu-id="956da-202">相互发送电子邮件，另一个人的名字在“收件人”行中</span><span class="sxs-lookup"><span data-stu-id="956da-202">Sending emails to each other where the name of the other person is in the TO line</span></span>
-- <span data-ttu-id="956da-203">通过将用户名称包括在日历邀请中来邀请用户参加会议</span><span class="sxs-lookup"><span data-stu-id="956da-203">Inviting users to meetings by including their name in the calendar invite</span></span> 
+<span data-ttu-id="ae13c-201">私人沟通的示例包括：</span><span class="sxs-lookup"><span data-stu-id="ae13c-201">Examples of private communication include:</span></span>
+- <span data-ttu-id="ae13c-202">相互发送电子邮件，另一个人的名字在“收件人”行中</span><span class="sxs-lookup"><span data-stu-id="ae13c-202">Sending emails to each other where the name of the other person is in the TO line</span></span>
+- <span data-ttu-id="ae13c-203">通过将用户名称包括在日历邀请中来邀请用户参加会议</span><span class="sxs-lookup"><span data-stu-id="ae13c-203">Inviting users to meetings by including their name in the calendar invite</span></span> 
  
-<span data-ttu-id="956da-204">公共交互的示例包括：</span><span class="sxs-lookup"><span data-stu-id="956da-204">Examples of public interaction include:</span></span>
-- <span data-ttu-id="956da-205">作为公共组的一部分相互发送或接收电子邮件</span><span class="sxs-lookup"><span data-stu-id="956da-205">Sending or receiving emails to/from each other as part of a public group</span></span> 
-- <span data-ttu-id="956da-206">作为组的一部分，或在已邀请了超过 X 名用户的情况下邀请用户参加会议</span><span class="sxs-lookup"><span data-stu-id="956da-206">Inviting users to meetings as part of group, or where more than X people are invited</span></span>
+<span data-ttu-id="ae13c-204">公共交互的示例包括：</span><span class="sxs-lookup"><span data-stu-id="ae13c-204">Examples of public interaction include:</span></span>
+- <span data-ttu-id="ae13c-205">作为公共组的一部分相互发送或接收电子邮件</span><span class="sxs-lookup"><span data-stu-id="ae13c-205">Sending or receiving emails to/from each other as part of a public group</span></span> 
+- <span data-ttu-id="ae13c-206">作为组的一部分，或在已邀请了超过 X 名用户的情况下邀请用户参加会议</span><span class="sxs-lookup"><span data-stu-id="ae13c-206">Inviting users to meetings as part of group, or where more than X people are invited</span></span>
  
-<span data-ttu-id="956da-207">排名不会根据用户 A（查看其他人的页面的用户）的身份发生变化。</span><span class="sxs-lookup"><span data-stu-id="956da-207">The ranking doesn’t change based on who User A is (the person looking at someone else's page).</span></span> <span data-ttu-id="956da-208">排名由用户 B（配置文件所有者）和用户 C（显示在配置文件所有者的列表中）之间的交互级别确定。</span><span class="sxs-lookup"><span data-stu-id="956da-208">The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).</span></span>
+<span data-ttu-id="ae13c-207">排名不会根据用户 A（查看其他人的页面的用户）的身份发生变化。</span><span class="sxs-lookup"><span data-stu-id="ae13c-207">The ranking doesn’t change based on who User A is (the person looking at someone else's page).</span></span> <span data-ttu-id="ae13c-208">排名由用户 B（配置文件所有者）和用户 C（显示在配置文件所有者的列表中）之间的交互级别确定。</span><span class="sxs-lookup"><span data-stu-id="ae13c-208">The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).</span></span>
  
-<span data-ttu-id="956da-209">为了使用户 C 出现，配置文件所有者必须位于包含该用户的相对较小的公共组/DL（意味着可在目录中找到成员身份列表）中。</span><span class="sxs-lookup"><span data-stu-id="956da-209">In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).</span></span>
+<span data-ttu-id="ae13c-209">为了使用户 C 出现，配置文件所有者必须位于包含该用户的相对较小的公共组/DL（意味着可在目录中找到成员身份列表）中。</span><span class="sxs-lookup"><span data-stu-id="ae13c-209">In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).</span></span>
  
-<span data-ttu-id="956da-210">组织外部的人员不会显示在配置文件所有者的列表上。</span><span class="sxs-lookup"><span data-stu-id="956da-210">People external to the organization will not show on the profile owner's list.</span></span> <span data-ttu-id="956da-211">通过电子邮件或会议沟通，但不属于同一组织的人员将不会显示在“同事”部分中。</span><span class="sxs-lookup"><span data-stu-id="956da-211">People they email or meet with, but who are not part of the same organization, will not show up in the Working with section.</span></span>
+<span data-ttu-id="ae13c-210">组织外部的人员不会显示在配置文件所有者的列表上。</span><span class="sxs-lookup"><span data-stu-id="ae13c-210">People external to the organization will not show on the profile owner's list.</span></span> <span data-ttu-id="ae13c-211">通过电子邮件或会议沟通，但不属于同一组织的人员将不会显示在“同事”部分中。</span><span class="sxs-lookup"><span data-stu-id="ae13c-211">People they email or meet with, but who are not part of the same organization, will not show up in the Working with section.</span></span>
