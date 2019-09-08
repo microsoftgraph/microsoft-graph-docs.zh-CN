@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 4895dd81a14369d5756d59ee95451f5942e246dc
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622647"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792756"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -40,6 +40,10 @@ ms.locfileid: "36622647"
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>调用登录会话返回了错误的 HTTP 代码
 
 [用户: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 返回 `204 No content` 响应表示成功调用；如果请求出现任何错误，则返回 HTTP 错误代码（4xx 或 5xx）。  但是，由于服务问题，此 API 会返回 `200 OK` 和始终为 true 的布尔值参数。  在此问题得到修复之前，简单建议开发人员将所有 2xx 返回代码看作此 API 成功。
+
+### <a name="incomplete-objects-when-using-getbyids-request"></a>使用 getByIds 请求时对象完整
+
+使用[获取 ID 列表中的目录对象](/graph/api/directoryobject-getbyids?view=graph-rest-1.0)请求对象应返回完整对象。 但是，当前返回的 v1.0 端点上的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象具有一组有限的属性。 作为临时解决方法，当您将该操作与 `$select` 查询选项结合使用时, 将返回更完整的[用户](/graph/api/resources/user?view=graph-rest-1.0)对象。 此行为不符合 OData 规范。 由于此行为可能在将来更新，因此仅在你提供 `$select=` 以及感兴趣的所有属性时，并且仅当此解决方法的未来重大更改可接受时，才使用此解决方法。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -120,7 +124,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 使用以下操作尝试访问其他用户共享的日历中的事件时：
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 可能会看到错误代码为 `ErrorInternalServerTransientError` 的 HTTP 500。导致错误发生的原因是：
@@ -143,7 +147,7 @@ GET \users('{id}')\calendars('{id}')\events
 使用新方法共享的日历看起来与邮箱中的其他日历一样。可以使用日历 REST API 查看或编辑共享日历中的事件，就像查看或编辑自己日历中的事件一样。示例：
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>在用户邮箱中添加和访问基于 ICS 的日历
