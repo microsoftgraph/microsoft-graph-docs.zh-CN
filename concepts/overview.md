@@ -1,14 +1,15 @@
 ---
 title: Microsoft Graph 概述
 description: Microsoft Graph 是 Microsoft 365 中数据和智能的网关。 Microsoft Graph 提供了统一的可编程性模型，通过该模型可利用 Office 365、企业移动性 + 安全性和 Windows 10 中的大量数据。
-author: ''
+author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 90939951c4271425dc03c7330d16150a50cfb8d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+scenarios: getting-started
+ms.openlocfilehash: 576393f0f273f4ed030df5ad8fa51367b1bb4716
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038197"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792476"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph 概述
 
