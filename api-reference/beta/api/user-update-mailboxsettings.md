@@ -1,28 +1,36 @@
 ---
 title: 获取用户的邮箱设置
-description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置 (在收到电子邮件时自动通知人员)、区域设置 (语言和国家/地区)、时区和工作时间。
+description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置（在收到电子邮件时自动通知人员）、区域设置（语言和国家/地区）、时区和工作时间。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe39d03850c9e3d006827593cb4151c0cdac376b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 22cccaaff660c8350c69bc68ccadb28b90786a64
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421797"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822737"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户邮箱的一个或多个设置。这包括[自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）、[区域设置](../resources/localeinfo.md)（语言和国家/地区）、时区和[工作时间](../resources/workinghours.md)的设置。
+启用、配置或禁用以下一个或多个设置作为用户的[mailboxSettings](../resources/mailboxsettings.md)的一部分：
 
-可以作为 [mailboxSettings](../resources/mailboxsettings.md) 的一部分启用、配置或禁用其中的一个或多个设置。
+- [自动答复](../resources/automaticrepliessetting.md)（收到电子邮件后，自动通知人员）
+- dateFormat
+- [区域设置](../resources/localeinfo.md)（语言和国家/地区）
+- timeFormat
+- 时区
+- [working hours － 工作时间](../resources/workinghours.md)
 
-**注意**：不能创建或删除任何邮箱设置。
+更新用户的首选日期或时间格式时，请分别指定[短日期](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。 
 
-更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）。 您还可以进一步自定义时区, 如下面的[示例 2](#request-2)所示。
+更新用户的首选时区时，在 Windows 或[Internet 分配的号码颁发机构（IANA）](https://www.iana.org/time-zones)的时区（也称为 "Olson 时区"）格式中指定它。 您还可以进一步自定义时区，如下面的[示例 2](#example-2)所示。
+
+> [!TIP] 
+> 您不能创建或删除任何邮箱设置。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,13 +60,15 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
+|dateFormat|string|用户邮箱的日期格式。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
+|timeFormat|string|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](../resources/workinghours.md)|用户工作的小时数、一周的天数和时区。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailboxSettings](../resources/mailboxsettings.md) 对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[mailboxSettings](../resources/mailboxsettings.md)对象的更新的属性。
 
 ## <a name="errors"></a>错误
 
@@ -72,8 +82,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | **timeZone** 无效 | 400 | InvalidTimeZone | 提供的时区设置无效。|
 
 
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+## <a name="examples"></a>示例
+### <a name="example-1"></a>示例 1
+#### <a name="request"></a>请求 
 第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复：**status**、**scheduledStartDateTime** 和 **scheduledEndDateTime**。
 
 
@@ -115,7 +126,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 该响应包括自动答复的更新设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -146,8 +157,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>请求 2
+### <a name="example-2"></a>示例 2
+#### <a name="request"></a>请求
 第二个示例通过将 **timeZone** 属性设置为[自定义时区](../resources/customtimezone.md)，为登录用户的工作时间自定义时区。
 
 <!-- {
@@ -192,7 +203,7 @@ Content-Type: application/json
   }
 } 
 ```
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",

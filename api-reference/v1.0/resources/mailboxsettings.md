@@ -5,16 +5,18 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a9fb455d2a67835ff1a3a10f89ee188a21e9956b
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036300"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822779"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
 
-已登录用户的主邮箱的设置。
+[用户](user.md)的主邮箱的设置。
+
+您可以通过查询用户的**mailboxSettings**属性来[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用户的邮箱设置。
 
 
 ## <a name="properties"></a>属性

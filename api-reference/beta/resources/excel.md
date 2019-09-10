@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用 Excel
-description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 你可以通过标识文件在该 URL 中的位置，借助 Drive API 访问工作簿。 例如：
+description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。
 localization_priority: Normal
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 183cc096719ffee6441c93018fd0858d2aaf39a5
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972073"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822744"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -25,7 +25,7 @@ ms.locfileid: "35972073"
 返回属于工作簿的工作表对象的集合。    
 
 
-**注意:** Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持扩展名为 `.xls` 的工作簿。 
+**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿。 不支持扩展名为 `.xls` 的工作簿。 
 
 ## <a name="authorization-and-scopes"></a>授权和范围
 
@@ -92,7 +92,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。 在这种情况下，可以选择新建一个会话，然后继续。 另一种方法是定期刷新会话，以使会话处于活动状态。 通常，如果永久会话处于不活动状态的时间达到 7 分钟左右，则会话会过期。 如果非永久会话处于不活动状态的时间达到 5 分钟左右，则会过期。 
+>注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。 在这种情况下，可以选择新建一个会话，然后继续。 另一种方法是定期刷新会话，以使会话处于活动状态。 通常情况下，持续会话在大约5分钟的不活动状态后过期。 非永久会话在大约7分钟不活动后过期。 
 
 ## <a name="common-excel-scenarios"></a>常见的 Excel 方案
 
@@ -1179,6 +1179,9 @@ content-type: application/json
 }
 ```
 
+在以下情况下，响应中也会返回 null 值：
+- 如果在尝试获取对象的某个属性时出现错误，并且此属性可以设置为 null，则该属性可能会在响应中返回 null 值。
+- 对于 range 对象，当获取整行或整个列的范围时，某些属性可能会返回 null 作为响应。 如果范围大小超过上限（5M 单元格），则某些属性将返回 null 作为值。
 
 ### <a name="blank-input-and-output"></a>空白输入和输出
 

@@ -3,14 +3,14 @@ title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b3b25c0359dc5ebb1fac7ab80d51b2711a31b583
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 46f7cac83806dcf6fe1d4724da0a62a7929cd0c0
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007009"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822723"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "36007009"
 
 表示特定时区用户一周的工作天数和小时数。
 
-在处理活动或资源规划应用场景中，访问用户的工作时间会有所帮助。 可以[获取](../api/user-get-mailboxsettings.md#request-3)用户的工作时间，并将其[设置](../api/user-update-mailboxsettings.md#request-2)为用户[邮箱设置](mailboxsettings.md)的一部分。 
+在处理活动或资源规划应用场景中，访问用户的工作时间会有所帮助。 可以[获取](../api/user-get-mailboxsettings.md#example-3)用户的工作时间，并将其[设置](../api/user-update-mailboxsettings.md#example-2)为用户[邮箱设置](mailboxsettings.md)的一部分。 
 
 可以选择以不同于在 Outlook 客户端设置时区的方式，为你的工作时间设置时区。 在某些情况下这很有用，比如当你在一个与平常工作时区不同的地方旅行时。 可以将 Outlook 客户端设置  
 为目标时区，以便在你访问时 Outlook 时间值显示为本地时间。
