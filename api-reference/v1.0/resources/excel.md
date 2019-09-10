@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用 Excel
-description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive for Business、SharePoint 网站或组驱动器中的 Excel 工作簿。 `Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。 你可以通过标识文件在该 URL 中的位置，借助 Drive API 访问工作簿。 例如：
+description: 你可以使用 Microsoft Graph 来让 Web 和移动应用程序读取和修改存储在 OneDrive for Business、SharePoint 网站或组驱动器中的 Excel 工作簿。
 localization_priority: Priority
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: abbb74553e5993f6760adaf4929678f48b7b2b86
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699126"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822765"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -1182,6 +1182,9 @@ content-type: application/json
 }
 ```
 
+在以下情况下，也会返回 null 值：
+- 如果在尝试获取对象的特定属性时发生错误并且此属性可设置为 null，则该属性可能会返回 null 值。
+- 对于 range 对象，在获取整行或整列的区域时，某些属性可能会返回 null。 如果区域大小超过了上限（5M 单元格），则某些属性将返回 null 值。
 
 ### <a name="blank-input-and-output"></a>空白输入和输出
 
