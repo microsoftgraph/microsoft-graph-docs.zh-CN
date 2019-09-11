@@ -393,6 +393,8 @@ items:
                 href: toolkit/components/agenda.md
               - name: 任务
                 href: toolkit/components/tasks.md
+              - name: 人员选取器
+                href: toolkit/components/people-picker.md
           - name: 提供程序
             items:
               - name: 使用提供程序

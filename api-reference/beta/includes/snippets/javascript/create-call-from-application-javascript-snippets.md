@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 081bf8acfc769792bb227fd8465c6f6796883bbd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: bc477872cf44bf0d3ae7dc69d2e5ea9c04bc552b
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791140"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838760"
 ---
 ```javascript
 
@@ -16,10 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const call = {
-  callbackUri: "https://bot.contoso.com/api/calls",
-  mediaConfig: {
-    @odata.type: "#microsoft.graph.serviceHostedMediaConfig"
-  },
+  @odata.type: "#microsoft.graph.call",
+  callbackUri: "https://bot.contoso.com/callback",
   targets: [
     {
       @odata.type: "#microsoft.graph.participantInfo",
@@ -35,7 +33,10 @@ const call = {
   ],
   requestedModalities: [
     "audio"
-  ]
+  ],
+  mediaConfig: {
+    @odata.type: "#microsoft.graph.serviceHostedMediaConfig",
+  }
 };
 
 let res = await client.api('/app/calls')

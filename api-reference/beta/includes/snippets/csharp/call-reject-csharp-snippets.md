@@ -1,19 +1,19 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9113c2337a936fdfec1d94116c6a451a39443f87
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: d591d12f30b4e37bc061090269c819abcb2d0e82
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35933814"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838830"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reason = RejectReason.None;
+var reason = RejectReason.Busy;
 
-await graphClient.App.Calls["{id}"]
+await graphClient.App.Calls["57dab8b1-894c-409a-b240-bd8beae78896"]
     .Reject(reason,callbackUri)
     .Request()
     .PostAsync();
