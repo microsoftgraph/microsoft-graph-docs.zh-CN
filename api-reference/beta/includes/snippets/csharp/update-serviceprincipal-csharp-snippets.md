@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8100bab2ceddc26d7de500220eff81ea2ec13b89
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c56ba351151c38db254db55d48493a3ac04e6aa5
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725226"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845942"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var servicePrincipal = new ServicePrincipal
     {
         new AddIn
         {
-            Id = "id-value",
+            Id = Guid.Parse("id-value"),
             Type = "type-value",
             Properties = new List<KeyValue>()
             {
@@ -32,7 +32,7 @@ var servicePrincipal = new ServicePrincipal
     },
     AppDisplayName = "appDisplayName-value",
     AppId = "appId-value",
-    AppOwnerOrganizationId = "appOwnerOrganizationId-value",
+    AppOwnerOrganizationId = Guid.Parse("appOwnerOrganizationId-value"),
     AppRoleAssignmentRequired = true
 };
 

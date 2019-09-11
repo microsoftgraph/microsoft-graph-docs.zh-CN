@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: bbce311abd837f04462dff26da907a2b2cdc043b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 5b10feed2e8cfe1a8a11e70a3f30e420f80f4505
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717294"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845958"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var synchronizationTemplate = new SynchronizationTemplate
 {
     Id = "SCIM-Test1",
-    ApplicationId = "{id}",
+    ApplicationId = Guid.Parse("{id}"),
     FactoryTag = "CustomSCIM"
 };
 

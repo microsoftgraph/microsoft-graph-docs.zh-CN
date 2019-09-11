@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: ceeabfadcb0a259dd9a73f75315ef757e7ee6a62
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 6c5906550807da9cb75946b29df6a509049c3292
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865542"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845929"
 ---
 ```csharp
 
@@ -52,7 +52,7 @@ var bookingService = new BookingService
         UniqueId = null,
         UniqueIdType = null
     },
-    DefaultPrice = 10.0,
+    DefaultPrice = 10,
     DefaultPriceType = BookingPriceType.FixedPrice,
     DefaultReminders = new List<BookingReminder>()
     {

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: a82d44c6db47debef263e6dc4b89b9867dc87cbf
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 590a30ffc7f1f13498b3e6d2e8fb651f6f1be208
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708559"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845923"
 ---
 ```csharp
 
@@ -26,7 +26,20 @@ var chatMessage = new ChatMessage
             Id = "74d20c7f34aa4a7fb74e2b30004247c5",
             ContentType = "application/vnd.microsoft.card.thumbnail",
             ContentUrl = null,
-            Content = "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            Content = "{
+      \"title\": \"This is an example of posting a card\",
+      \"subtitle\": \"<h3>This is the subtitle</h3>\",
+      \"text\": \"Here is some body text. <br>\r\nAnd a <a href=\\"http://microsoft.com/\\">hyperlink</a>. <br>\r\nAnd below that is some buttons:\",
+      \"buttons\": [
+        {
+          \"type\": \"messageBack\",
+          \"title\": \"Login to FakeBot\",
+          \"text\": \"login\",
+          \"displayText\": \"login\",
+          \"value\": \"login\"
+        }
+      ]
+    }",
             Name = null,
             ThumbnailUrl = null
         }

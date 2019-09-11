@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b907f6817018228086f2a1fc0c7e6ebd7f657261
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 77fafb086743f0064111174b725e4a27c5dee0fc
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461258"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845949"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var unifiedRoleDefinition = new UnifiedRoleDefinition
             }
         }
     },
-    IsEnabled = "true"
+    IsEnabled = true
 };
 
 await graphClient.RoleManagement.Directory.RoleDefinitions

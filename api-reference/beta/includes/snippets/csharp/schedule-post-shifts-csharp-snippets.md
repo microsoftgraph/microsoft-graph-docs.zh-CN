@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: c74e5800730c8795a988af5856fdf6b72bc456b7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e19d2e614c50e32039e2552ea91e0a8cfac87bbc
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35718163"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845946"
 ---
 ```csharp
 
@@ -20,16 +20,16 @@ var shift = new Shift
     {
         DisplayName = "Day shift",
         Notes = "Please do inventory as part of your shift.",
-        StartDateTime = "2019-03-11T15:00:00Z",
-        EndDateTime = "2019-03-12T00:00:00Z",
+        StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
+        EndDateTime = DateTimeOffset.Parse("2019-03-12T00:00:00Z"),
         Theme = ScheduleEntityTheme.Blue,
         Activities = new List<ShiftActivity>()
         {
             new ShiftActivity
             {
                 IsPaid = true,
-                StartDateTime = "2019-03-11T15:00:00Z",
-                EndDateTime = "2019-03-11T15:15:00Z",
+                StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
+                EndDateTime = DateTimeOffset.Parse("2019-03-11T15:15:00Z"),
                 Code = "",
                 DisplayName = "Lunch"
             }
@@ -39,16 +39,16 @@ var shift = new Shift
     {
         DisplayName = "Day shift",
         Notes = "Please do inventory as part of your shift.",
-        StartDateTime = "2019-03-11T15:00:00Z",
-        EndDateTime = "2019-03-12T00:00:00Z",
+        StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
+        EndDateTime = DateTimeOffset.Parse("2019-03-12T00:00:00Z"),
         Theme = ScheduleEntityTheme.Blue,
         Activities = new List<ShiftActivity>()
         {
             new ShiftActivity
             {
                 IsPaid = true,
-                StartDateTime = "2019-03-11T15:00:00Z",
-                EndDateTime = "2019-03-11T15:30:00Z",
+                StartDateTime = DateTimeOffset.Parse("2019-03-11T15:00:00Z"),
+                EndDateTime = DateTimeOffset.Parse("2019-03-11T15:30:00Z"),
                 Code = "",
                 DisplayName = "Lunch"
             }

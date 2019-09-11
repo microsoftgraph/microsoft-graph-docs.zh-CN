@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: d6b9d312d534c016a0789df681d23444b9191746
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: dfc25a25c1a715aabeb661b8653ce399f7e9e081
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36174700"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845930"
 ---
 ```csharp
 
@@ -64,7 +64,7 @@ var bookingAppointment = new BookingAppointment
         DateTime = "2018-05-01T12:30:00+00:00",
         TimeZone = "UTC"
     },
-    InvoiceAmount = 10.0,
+    InvoiceAmount = 10,
     InvoiceDate = new DateTimeTimeZone
     {
         AdditionalData = new Dictionary<string, object>()
@@ -80,7 +80,7 @@ var bookingAppointment = new BookingAppointment
     OptOutOfCustomerEmail = false,
     PostBuffer = "PT10M",
     PreBuffer = "PT5M",
-    Price = 10.0,
+    Price = 10,
     PriceType = BookingPriceType.FixedPrice,
     Reminders = new List<BookingReminder>()
     {
