@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 245c558e100d2e4b6b515db99d851688314a8a05
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c8e0f3abab7eac1507dd60a20657d3c1a66fefc5
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720344"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845950"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var post = new Post
         ContentType = BodyType.Text,
         Content = "content-value"
     },
-    ReceivedDateTime = "2016-10-19T10:37:00Z",
+    ReceivedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
     HasAttachments = true,
     From = new Recipient
     {
@@ -49,8 +49,8 @@ var post = new Post
         }
     },
     ConversationId = "conversationId-value",
-    CreatedDateTime = "2016-10-19T10:37:00Z",
-    LastModifiedDateTime = "2016-10-19T10:37:00Z",
+    CreatedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
+    LastModifiedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
     ChangeKey = "changeKey-value",
     Categories = new List<String>()
     {
@@ -64,7 +64,7 @@ var post = new Post
     {
         new Attachment
         {
-            LastModifiedDateTime = "2016-10-19T10:37:00Z",
+            LastModifiedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
             Name = "name-value",
             ContentType = "contentType-value",
             Size = 99,

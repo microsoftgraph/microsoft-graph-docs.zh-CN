@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 54da9e3a28a5338a749698a79a5d8b8d610ce080
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: f8baa1b3c35fccd4f59596883a1b7c27e1180146
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35728971"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845951"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = new Attachment
 {
-    LastModifiedDateTime = "datetime-value",
+    LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
     Name = "name-value",
     ContentType = "contentType-value",
     Size = 99,

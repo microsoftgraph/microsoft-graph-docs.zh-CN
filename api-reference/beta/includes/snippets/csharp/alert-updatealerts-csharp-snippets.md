@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8c00e66b2e48a48daab61f11c8fd7da02657704d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 5076a86f82b9d870fa2bd4b27d500f7376581838
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855352"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845935"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var value = new List<Alert>()
     new Alert
     {
         AssignedTo = "String",
-        ClosedDateTime = "String (timestamp)",
+        ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
         Comments = new List<String>()
         {
             "String"

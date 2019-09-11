@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: cbc0d264175c28ee3f5a9373f3992d4420dfe6fb
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 83394ed36bd0789dad614898854ce7d17c41ccd8
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461183"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845921"
 ---
 ```csharp
 
@@ -84,7 +84,7 @@ var educationRubric = new EducationRubric
                     }
                 }
             },
-            Weight = 50.0
+            Weight = 50
         },
         new RubricQuality
         {
@@ -112,7 +112,7 @@ var educationRubric = new EducationRubric
                     }
                 }
             },
-            Weight = 50.0
+            Weight = 50
         }
     },
     Grading = new EducationAssignmentGradeType

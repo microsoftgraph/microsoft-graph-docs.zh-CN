@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3df7242cc7dc9845289883d3bf3897af9c7acd01
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 868c592b430204f90c6c68d4fa64a3fc3d404159
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712218"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845919"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var @event = new Event
     ResponseStatus = new ResponseStatus
     {
         Response = ResponseType.None,
-        Time = "2016-10-19T10:37:00Z"
+        Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z")
     },
     Recurrence = null,
     Uid = "iCalUId-value",

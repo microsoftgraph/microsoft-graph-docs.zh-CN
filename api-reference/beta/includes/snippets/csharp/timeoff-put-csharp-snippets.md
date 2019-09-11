@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 729d9b8c882760599b40ce86d0e021763388f0d7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e79afc336049b632fe8ef51ca9b0ad5b8a5c106c
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716780"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845939"
 ---
 ```csharp
 
@@ -17,15 +17,15 @@ var timeOff = new TimeOff
     SharedTimeOff = new TimeOffItem
     {
         TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-        StartDateTime = "2019-03-11T07:00:00Z",
-        EndDateTime = "2019-03-12T07:00:00Z",
+        StartDateTime = DateTimeOffset.Parse("2019-03-11T07:00:00Z"),
+        EndDateTime = DateTimeOffset.Parse("2019-03-12T07:00:00Z"),
         Theme = ScheduleEntityTheme.White
     },
     DraftTimeOff = new TimeOffItem
     {
         TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-        StartDateTime = "2019-03-11T07:00:00Z",
-        EndDateTime = "2019-03-12T07:00:00Z",
+        StartDateTime = DateTimeOffset.Parse("2019-03-11T07:00:00Z"),
+        EndDateTime = DateTimeOffset.Parse("2019-03-12T07:00:00Z"),
         Theme = ScheduleEntityTheme.Pink
     }
 };
