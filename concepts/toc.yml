@@ -248,6 +248,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: 受保护的 API
             href: teams-protected-apis.md
+          - name: 使用机器人发送主动邮件
+            href: teams-proactive-messaging.md
       - name: 工作簿和图表
         displayName: Excel
         items:
