@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 945f07379304423ce2b12e2ec86d40aac6fe7cff
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.openlocfilehash: 0179d8c3c25e156790be5ad9ba90c0ce34d3b7d8
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775830"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838872"
 ---
 # <a name="list-workbookcommentreplies"></a>列出 workbookCommentReplies
 
@@ -53,6 +53,8 @@ GET /workbook/comments/{id}/replies
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_replies"
@@ -61,6 +63,20 @@ GET /workbook/comments/{id}/replies
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/replies
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

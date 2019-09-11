@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc5b51c7266b5d072dd74a242e4e15f4530c7b17
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e89928ec956f741927643353b86a7213ac62243d
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792371"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838694"
 ---
 # <a name="get-call"></a>获取呼叫
 

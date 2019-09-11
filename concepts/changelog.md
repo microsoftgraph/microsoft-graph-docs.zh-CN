@@ -3,18 +3,27 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e46f95150bc0a50a43fc619955ce36adf48d95e3
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792952"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822751"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此更改日志涵盖了 Microsoft Graph API 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
+
+## <a name="september-2019"></a>2019 年 9 月
+
+### <a name="users--outlook-settings"></a>用户|Outlook 设置
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) 资源的 **dateFormat** 和 **timeFormat** 属性。 属性表示用户的首选日期和时间格式。|
+
 
 ## <a name="august-2019"></a>2019 年 8 月
 
@@ -435,7 +444,7 @@ ms.locfileid: "36792952"
 |添加|beta|向 [androidForWorkCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidforworkcertificateprofilebase?view=graph-rest-beta) 实体添加了 **subjectAlternativeNameType**<br/> 属性|
 |删除|beta|从 [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkpkcscertificateprofile?view=graph-rest-beta) 实体中删除了 **subjectAlternativeNameType**<br/> 属性|
 |删除|beta|从 [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta) 实体中删除了 **subjectAlternativeNameType**<br/> 属性|
-|添加|beta|向 [androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta) 实体添加了 **subjectAlternativeNameType**<br/> 属性|
+|添加项|beta|向 [androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta) 实体添加了 **subjectAlternativeNameType**<br/> 属性|
 |删除|beta|从 [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta) 实体中删除了 **subjectAlternativeNameType**<br/> 属性|
 |删除|beta|从 [androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta) 实体中删除了 **subjectAlternativeNameType**ss<br/> 属性|
 |添加|beta|向 [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta) 实体添加了 **deviceNameTemplate**<br/> 属性|
@@ -624,7 +633,7 @@ ms.locfileid: "36792952"
 
 |更改类型|版本|说明|
 |:---|:---|:---|
-|添加项|beta|增加了新实体：<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
+|添加|beta|增加了新实体：<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[deliveryOptimizationBandwidth](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidth?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthBusinessHoursLimit](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthHoursWithPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdCustom](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidcustom?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSource](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsource?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSourceOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSize](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesize?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizeAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizePercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage?view=graph-rest-beta)<br/>[encryptionReportPolicyDetails](/graph/api/resources/intune-deviceconfig-encryptionreportpolicydetails?view=graph-rest-beta)<br/>|
 |添加项|beta 版本|增加了新枚举类型：<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
 |添加项|beta|向 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
@@ -1418,7 +1427,7 @@ ms.locfileid: "36792952"
 | 添加项        | Beta          | 添加了 [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) 实体及以下 CRUD 方法和操作： <br> [列出](/graph/api/bookingbusiness-list?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) <br> [获取](/graph/api/bookingbusiness-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingbusiness-delete?view=graph-rest-beta) <br> [发布](/graph/api/bookingbusiness-publish?view=graph-rest-beta) <br> [取消发布](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta)。 <br> 详细了解关于与 [Microsoft Bookings API](booking-concept-overview.md) 集成的信息。 |
 | 添加项        | Beta          | 添加了 [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) 实体及以下 CRUD 方法和操作： <br> [列出](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) <br> [获取](/graph/api/bookingappointment-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingappointment-delete?view=graph-rest-beta) <br> [取消](/graph/api/bookingappointment-cancel?view=graph-rest-beta)。 |
 | 添加项        | Beta          | 添加了 [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) 实体和以下方法： <br> [列出](/graph/api/bookingcurrency-list?view=graph-rest-beta) <br> [获取](/graph/api/bookingcurrency-get?view=graph-rest-beta)。 |
-| 添加项        | Beta          | 添加了 [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) 实体和以下 CRUD 方法： <br> [列出](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) <br> [获取](/graph/api/bookingcustomer-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingcustomer-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingcustomer-delete?view=graph-rest-beta)。|
+| 添加项        | Beta          | 添加了 [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) 实体和以下 CRUD 方法： <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) <br> [获取](/graph/api/bookingcustomer-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingcustomer-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingcustomer-delete?view=graph-rest-beta)。|
 | 添加项        | Beta          | 添加了 [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) 实体和以下 CRUD 方法： <br> [列出](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-services?view=graph-rest-beta) <br> [获取](/graph/api/bookingservice-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingservice-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingservice-delete?view=graph-rest-beta)。|
 | 添加项        | Beta          | 添加了 [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) 实体和以下 CRUD 方法： <br> [列出](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) <br> [获取](/graph/api/bookingstaffmember-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingstaffmember-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingstaffmember-delete?view=graph-rest-beta)。|
 | 添加项        | Beta          | 添加了以下复杂类型： <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta) <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta) <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta) <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta) <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta)。|
@@ -3266,12 +3275,16 @@ ms.locfileid: "36792952"
 | Addition        | Beta        | 向事件资源添加了 [forward](/graph/api/event-forward?view=graph-rest-beta) 操作。 |
 | Addition        | Beta        | 向[日历](/graph/api/resources/calendar?view=graph-rest-beta)资源添加了以下属性以支持日历共享：**canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe** 和 **owner**。 |
 
+### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项        | Beta        | 将驱动器根项作为可供订阅的资源添加到了 Webhook。 |
+
 ### <a name="mail-outlook"></a>邮件 (Outlook)
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 添加了 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 复杂类型，其中包括 **automaticRepliesSetting**、**timeZone** 和 **language** 属性。 |
-| 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了 **mailboxSettings** 属性。 |
 | 添加项        | Beta        | 支持在邮件中创建、列出、获取和删除一个或多个[提及](/graph/api/resources/mention?view=graph-rest-beta)实例。“提及”支持在邮件中进行呼叫以获得其他用户的关注。 |
 | 添加项        | Beta        | 添加了对 [getMailTips](/graph/api/user-getmailtips?view=graph-rest-beta) 操作的支持，可以获取特定收件人的所有邮件提示。 添加了以下资源：[automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta)、[mailTips](/graph/api/resources/mailtips?view=graph-rest-beta)、[mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-beta)。 |
 
@@ -3296,12 +3309,13 @@ ms.locfileid: "36792952"
 | 添加项        | Beta        | 添加了 **showInAddressList** 属性来控制 Outlook 全局地址列表是否应包含此用户。 |
 | 添加项        | Beta        | 添加了 **invalidateAllRefreshTokens** 服务操作，可通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序颁发的用户的所有刷新和会话令牌失效。 |
 
-
-### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+### <a name="users--outlook-settings"></a>用户|Outlook 设置
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 将驱动器根项作为可供订阅的资源添加到了 Webhook。 |
+| 添加项        | v1.0        | 添加了 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 复杂类型，其中包括 **automaticRepliesSetting**、**timeZone** 和 **language** 属性。 |
+| 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了 **mailboxSettings** 属性。 |
+
 
 ## <a name="august-2016"></a>2016 年 8 月
 

@@ -1,20 +1,20 @@
 ---
 title: 创建 TableRow
-description: '将行添加到表的末尾。 请注意, API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。 为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。 试验行数, 以确定要在单个 API 调用中使用的理想行数。 '
+description: '将行添加到表的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理，而不是执行单个行插入。 为获得最佳结果，请收集要插入到应用程序中的行，并执行单行添加操作。 试验行数，以确定要在单个 API 调用中使用的理想行数。 '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2753d86d4f6b30cce5b21ea985feb9bc868889cf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1e42dd3ee811ade6854acf0715ec3dff1ba33c5b
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341688"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838745"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
-将行添加到表的末尾。 请注意, API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。 为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。 试验行数, 以确定要在单个 API 调用中使用的理想行数。 
+将行添加到表的末尾。 请注意，API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理，而不是执行单个行插入。 为获得最佳结果，请收集要插入到应用程序中的行，并执行单行添加操作。 试验行数，以确定要在单个 API 调用中使用的理想行数。 
 
 ## <a name="error-handling"></a>错误处理
 
@@ -48,14 +48,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
-|values|Json|表格行 (布尔值或字符串或数字) 的无格式值的二维数组。|
+|values|Json|表格行（布尔值或字符串或数字）的无格式值的二维数组。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [TableRow](../resources/tablerow.md) 对象。
 
 ## <a name="example"></a>示例
-在此示例中, 将两行数据插入到表的末尾。 
+在此示例中，将两行数据插入到表的末尾。 
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -79,6 +79,10 @@ Content-length: 51
 ```
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

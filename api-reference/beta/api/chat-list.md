@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c16e1bf4548fcdb0ebec598a780a8196be26bf6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9a8713b0a65d38c7b160a79c033340ceb9d2366b
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719880"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838670"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -24,9 +24,9 @@ ms.locfileid: "36719880"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Chat.Read   |
+|委派（工作或学校帐户） | 聊天、阅读和读写    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。   |
+|应用程序 | 不支持。   | "聊天室"、"所有"、"全部聊天"   |
 
 ## <a name="http-request"></a>HTTP 请求
 

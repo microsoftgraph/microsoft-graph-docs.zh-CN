@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: edf4dafa40c7323bde788234f1efa4308f401fd3
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.openlocfilehash: 0ec38cda1c2c138f4ae2168fbfe60f9d61b890fd
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775767"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36839069"
 ---
 # <a name="create-workbookcommentreply"></a>创建 workbookCommentReply
 
@@ -53,6 +53,8 @@ POST /workbook/comments/{id}/replies
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment"
@@ -67,6 +69,24 @@ Content-type: application/json
   "contentType": "plain"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-workbookcommentreply-from-workbookcomment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workbookcommentreply-from-workbookcomment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-workbookcommentreply-from-workbookcomment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-workbookcommentreply-from-workbookcomment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

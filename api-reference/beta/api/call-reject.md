@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0134b03e27deeaf24eba3deb9c58b56865ab72d8
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e3befe394aa9451cbb51bd39ba41fb158b67b464
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792280"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838832"
 ---
 # <a name="call-reject"></a>呼叫：拒绝
 
@@ -73,16 +73,16 @@ Content-Length: 24
   "reason": "busy"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp) 
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]    
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript) 
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]    
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)  
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]    
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
 --- 
@@ -158,6 +158,8 @@ Content-Type: application/json
 
 ##### <a name="request"></a>请求
 下面为请求示例。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 
 <!-- {
   "blockType": "ignored",
