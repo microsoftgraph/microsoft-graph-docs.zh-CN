@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: f0c9b51a2872435dcbc8a68312d552cbb1f29ea7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 525778f21f638a158bd6afc747b91bd6dfe866be
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715060"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845961"
 ---
 ```csharp
 
@@ -26,13 +26,13 @@ var attendees = new List<AttendeeBase>()
 
 var locationConstraint = new LocationConstraint
 {
-    IsRequired = "false",
-    SuggestLocation = "false",
+    IsRequired = false,
+    SuggestLocation = false,
     Locations = new List<LocationConstraintItem>()
     {
         new LocationConstraintItem
         {
-            ResolveAvailability = "false",
+            ResolveAvailability = false,
             DisplayName = "Conf room Hood"
         }
     }

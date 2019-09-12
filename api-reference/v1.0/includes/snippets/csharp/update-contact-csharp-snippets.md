@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: e23c1902299b93cb9bd257c3204d21bec6de79c2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 369396d02b2335a19438be2e9565b44950744ae3
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741018"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845963"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var contact = new Contact
         State = "WA",
         PostalCode = "98121"
     },
-    Birthday = "1974-07-22"
+    Birthday = DateTimeOffset.Parse("1974-07-22")
 };
 
 await graphClient.Me.Contacts["{id}"]

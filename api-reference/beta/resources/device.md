@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dad51a2a4a5a0cd248d09d617bd1cd39c6edb852
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a13c39b5d38abb3f44b0fb51ef7a5702ece74b25
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012819"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853824"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -32,6 +32,7 @@ ms.locfileid: "36012819"
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
+|[checkMemberObjects](../api/device-checkmemberobjects.md) | String collection | 检查组、目录角色或管理单元对象的列表中的成员身份。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
@@ -43,8 +44,8 @@ ms.locfileid: "36012819"
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 如果帐户已启用，则为 **true**；否则，为 **false**。 默认值为 true。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
-|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
-|complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |deviceId|Guid| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 null。 |
 |deviceVersion|Int32| 仅供内部使用。 |

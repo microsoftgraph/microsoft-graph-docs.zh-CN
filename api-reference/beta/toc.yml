@@ -8028,6 +8028,8 @@
                   href: api/device-list-memberof.md
                 - name: 列出设备可传递组
                   href: api/device-list-transitivememberof.md
+                - name: 检查 member 对象
+                  href: api/device-checkmemberobjects.md
             - name: 目录对象
               href: resources/directoryobject.md
               items:
@@ -8470,6 +8472,8 @@
                   href: api/serviceprincipal-update.md
                 - name: 删除服务主体
                   href: api/serviceprincipal-delete.md
+                - name: 检查 member 对象
+                  href: api/serviceprincipal-checkmemberobjects.md
             - name: 订阅的 SKU
               href: resources/subscribedsku.md
               items:
@@ -9697,7 +9701,7 @@
               items:
                 - name: List
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-tasks.md
                 - name: 获取
                   href: api/outlooktask-get.md
