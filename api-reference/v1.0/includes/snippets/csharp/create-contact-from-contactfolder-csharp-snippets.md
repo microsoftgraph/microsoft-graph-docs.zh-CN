@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 198a86715044f573f3af9d1b6f5a4020143c45e9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1ae9252ced46b9b186abafa8df78deb0c09ed52d
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35740913"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36845965"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var contact = new Contact
 {
     ParentFolderId = "parentFolderId-value",
-    Birthday = "datetime-value",
+    Birthday = DateTimeOffset.Parse("datetime-value"),
     FileAs = "fileAs-value",
     DisplayName = "displayName-value",
     GivenName = "givenName-value",
