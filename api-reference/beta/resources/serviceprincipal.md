@@ -3,14 +3,14 @@ title: servicePrincipal 资源类型
 description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 02cd5ee8d20ce963205d959cb91229a5621fe92f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: b50a23d2120222d2fd24ede4d4981bba3aa366dc
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008486"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853831"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -120,9 +120,10 @@ ms.locfileid: "36008486"
 |[列出所有者](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) 集合| 获取所有者对象集合。|
 |[更新](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。 |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String 集合||
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String 集合||
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String 集合||
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String 集合|检查指定组列表中的成员身份。|
+|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|String 集合|检查组、目录角色或管理单元对象指定列表中的成员身份。|
+|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String 集合|获取此服务主体所属的组列表。|
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String 集合|获取此服务主体所属的组和目录角色列表。|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

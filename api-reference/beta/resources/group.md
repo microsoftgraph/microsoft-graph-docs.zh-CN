@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a8facfb63a4e88f7fcf31a27342ccdec026147ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f7c28f517def80f2290aa04c838f9910209a752
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971858"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853817"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -49,6 +49,7 @@ ms.locfileid: "35971858"
 |[列出 memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 memberOf 导航属性，获取此组是其直接成员的组和管理单元。|
 |[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出此用户所属的组和管理单元。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String 集合|在一列组中检查成员身份。此函数是可传递的。|
+|[checkMemberObjects](../api/group-checkmemberobjects.md)|String 集合|检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
 |[getMemberObjects](../api/group-getmemberobjects.md)|String 集合|返回组所属的所有组和管理单元。此函数是可传递的。 |
 |[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |基于 directorySettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
@@ -120,7 +121,7 @@ ms.locfileid: "35971858"
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |mailEnabled|布尔|指定是否为启用邮件的组。 <br><br>默认情况下返回。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 <br><br>默认情况下返回。 支持 $filter。|
-|membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
+|membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认情况下返回。|
@@ -135,7 +136,7 @@ ms.locfileid: "35971858"
 |unseenConversationsCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。 此属性与 **unseenCount** 相同。 <br><br>仅在 $select 上返回。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 此属性与 **unseenConversationsCount** 相同。<br><br>仅在 $select 上返回。 |
 |unseenMessagesCount|Int32|自登录用户上次访问该组以来已传递到组对话的新帖子计数。 <br><br>仅在 $select 上返回。|
-|visibility|String| 指定 Office 365 组的可见性。 可能的值为：`private`、`public` 或 `hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定 Office 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
 
 ### <a name="group-visibility-options"></a>组可见性选项
 
@@ -143,9 +144,9 @@ ms.locfileid: "35971858"
  
 |值|说明|
 |:----|-----------|
-| `public` | 任何人均可在不需要所有者许可的情况下加入组。<br>任何人均可查看组的内容。|
-| `private` | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。|
-| `hiddenmembership` | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。<br>非成员无法查看组的成员。<br>管理员（全局、公司、用户和支持人员）可以查看组的成员资格。<br>该组显示在全局通讯簿 (GAL) 中。|
+| 公共 | 任何人均可在不需要所有者许可的情况下加入组。<br>任何人均可查看组的内容。|
+| 私人 | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。|
+| Hiddenmembership | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。<br>非成员无法查看组的成员。<br>管理员（全局、公司、用户和支持人员）可以查看组的成员资格。<br>该组显示在全局通讯簿 (GAL) 中。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

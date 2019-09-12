@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: e7ee182238ea0b1f5216ac9aa79e776a0d225486
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450513"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853810"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -64,6 +64,7 @@ ms.locfileid: "36450513"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|String 集合|检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。|
 |[delta](../api/user-delta.md)|用户集合| 获取用户的增量更改。 |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|基于与会者忙闲状态、位置或时间限制查找会议时间和位置。|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) 集合 | 获取租户中定义的会议室列表。|
@@ -198,7 +199,6 @@ ms.locfileid: "36450513"
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 Null。|
-|分析|[userAnalytics](useranalytics.md) 集合| 用户的活动统计信息及相关设置。 只读。 可为 Null。|
 |calendar|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
@@ -239,7 +239,6 @@ ms.locfileid: "36450513"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -339,7 +338,6 @@ ms.locfileid: "36450513"
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
