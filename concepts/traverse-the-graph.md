@@ -3,12 +3,12 @@ title: 通过导航 Microsoft Graph 访问数据和方法
 description: 除了使用 Microsoft Graph API 读取和写入数据，还可以使用大量的请求模式遍历 Microsoft Graph 中的资源。元数据文档还可帮助你了解 Microsoft Grap 中资源和关系的数据模型。
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: 581efe1b14bb156b3ac53a6a06bf731f11150cb0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b2f9f5002b4743a61bbaf18af2408e10de12d463
+ms.sourcegitcommit: c739cbfab42181adfcda409ca12514ab7f4832b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791041"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982871"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>通过导航 Microsoft Graph 访问数据和方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "36791041"
 > [!NOTE]
 > - 在使用资源 ID 时，应保持与其从 Microsoft Graph API 返回时相同的大小写。
 > - 假设资源 ID、分配的值和其他 base-64 编码的值_区分大小写_。
-> - 假设路径 URL 资源名称、查询参数以及操作参数和值_不区分大小写_。
+> - 假设路径 URL 资源名称、查询参数、操作、函数名称及其请求正文参数（包括任何 API 属性名称和值）均_不区分大小写_。
 
 ## <a name="view-a-collection-of-resources"></a>查看资源集合
 
