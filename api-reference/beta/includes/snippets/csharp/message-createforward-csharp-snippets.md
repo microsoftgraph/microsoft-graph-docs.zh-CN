@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6e4ef5721d63ee4c74dd2476444b8460e544b4a5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 4251c567a8395a213ef815176a72ddac7af07107
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729707"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37045329"
 ---
 ```csharp
 
@@ -30,7 +30,7 @@ var message = new Message
 var comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved.";
 
 await graphClient.Me.Messages["AAMkADA1MTAAAH5JaLAAA="]
-    .CreateForward(message,comment,toRecipients)
+    .CreateForward(toRecipients,message,comment)
     .Request()
     .PostAsync();
 
