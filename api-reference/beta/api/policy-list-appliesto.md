@@ -1,31 +1,31 @@
 ---
 title: 列出分配了特定策略的应用程序和服务主体
-description: 使用分配的指定策略检索应用程序和服务主体对象。
+description: 获取分配了指定策略的应用程序和服务主体对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: a3a24b3f54fa6d53b3936664be97cc3da0979a01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 2158c1183bcbf036c7b4b429675d70b0a0b175de
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992085"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036135"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列出分配了特定策略的应用程序和服务主体
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用分配的指定策略检索[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。
+获取分配了指定策略的[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 ```http
@@ -42,7 +42,7 @@ GET /policies/{id}/appliesTo
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 下面的示例检索分配了特定策略的应用程序和服务主体。

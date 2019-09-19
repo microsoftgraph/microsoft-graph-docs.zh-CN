@@ -1,22 +1,22 @@
 ---
 title: fileAttachment 资源类型
-description: 附加到事件的文件 (如文本文件或 Word 文档)
+description: 附加到事件的文件（如文本文件或 Word 文档）
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: ab81c67bbf0c4d7ab6699d17977c4d1a3907f94e
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 2b73c69b7fdb7099994e9925815d80e2bf99d5f6
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484315"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036219"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-附加到[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的文件 (如文本文件或 Word 文档)。 **ContentBytes**属性包含文件的 base64 编码内容。  
+附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的文件（如文本文件或 Word 文档）。 **ContentBytes**属性包含文件的 base64 编码内容。  
 
 创建文件附件时，在请求正文中包括以下内容：
 
@@ -29,7 +29,7 @@ ms.locfileid: "36484315"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 fileattachment 对象的属性和关系。|
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 fileAttachment 对象的属性、关系或原始内容。|
 |[删除](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
 
 ## <a name="properties"></a>属性

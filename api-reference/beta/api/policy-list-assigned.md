@@ -1,31 +1,31 @@
 ---
 title: 为应用程序或服务主体分配的列表策略
-description: 检索分配给应用程序或服务主体的策略对象。
+description: 获取分配给应用程序或服务主体的策略对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 06eb805b6983c72c14c86780f081554611906181
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 0f237992cc24dd854aefcc516a876da168174307
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992050"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036156"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>为应用程序或服务主体分配的列表策略
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索分配给应用程序或服务主体的[策略](../resources/policy.md)对象。
+获取分配给应用程序或服务主体的[策略](../resources/policy.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ ms.locfileid: "35992050"
 GET /applications/{id}/policies
 ```
 
-> 注意: 请求中的 "id" 是应用程序或服务主体的 "id" 属性, 而不是 "appid" 属性。
+> 注意：请求中的 "id" 是应用程序或服务主体的 "id" 属性，而不是 "appid" 属性。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -45,7 +45,7 @@ GET /applications/{id}/policies
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 下面的示例检索分配给应用程序的策略。

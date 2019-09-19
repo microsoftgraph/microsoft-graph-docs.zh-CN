@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: da7e66d1edbda224fe547b7e7afc8fd88dc5e5aa
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: a71d7940e6825659143e69b2af6290f0671f59ae
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622633"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036093"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "36622633"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性和关系。|
+|[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性、关系或原始内容。|
 |[向用户事件添加附件](../api/event-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件。|
 |[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
 |[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|

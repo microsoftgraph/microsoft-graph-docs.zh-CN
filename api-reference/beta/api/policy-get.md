@@ -3,14 +3,14 @@ title: 获取策略
 description: 检索策略的属性。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 435e711c711675b94b089d818b7451b551f8b5ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 41ba6ec90c74deb7ab9bb1f115871d4e960a4736
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978873"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036233"
 ---
 # <a name="get-policy"></a>获取策略
 
@@ -23,9 +23,9 @@ ms.locfileid: "35978873"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Policy： All、Directory.accessasuser.all、All、All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Read. all、Directory。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /policies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果 unsucccessful
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果 unsucccessful
 
 ## <a name="example"></a>示例
 下面的示例检索特定策略。

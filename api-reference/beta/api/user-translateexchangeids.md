@@ -1,18 +1,18 @@
 ---
-title: '用户: translateExchangeIds'
+title: 用户： translateExchangeIds
 description: 对与 Outlook 相关的资源的标识符进行格式转换。
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6eb044c42ce01c13e45e7088fa3eb6f96fb4820a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f03db0d590546e6967524745d39ae021ea7596d7
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421804"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036149"
 ---
-# <a name="user-translateexchangeids"></a>用户: translateExchangeIds
+# <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "36421804"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:----------------|:--------------------------------------------|
-| 委派（工作或学校帐户） | User.readbasic.all, user. User.readbasic.all, user. all, All, user. all, All: all |
+| 委派（工作或学校帐户） | User.readbasic.all，user. User.readbasic.all，user. all，All，user. all，All： all |
 | 委派（个人 Microsoft 帐户） | User.readbasic.all、用户读取、用户读写 |
 | 应用程序 | User.Read.All、User.ReadWrite.All |
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String collection | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型, 并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
+| inputIds | String collection | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型，并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
 | sourceIdType | exchangeIdFormat | `InputIds`参数中标识符的 ID 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求的 ID 类型。 |
 
@@ -61,20 +61,20 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restId | Microsoft Graph 使用的默认 ID 格式。 |
 | restImmutableEntryId | Microsoft Graph 使用的不可变 ID 格式。 |
 
-二进制格式 (`entryId`和`immutableEntryId`) 是 URL 安全的 base64 编码。 URL-safeness 通过以下方式修改二进制数据的 base64 编码实现:
+二进制格式（`entryId`和`immutableEntryId`）是 URL 安全的 base64 编码。 URL-safeness 通过以下方式修改二进制数据的 base64 编码实现：
 
 - 替换`+`为`-`
 - 替换`/`为`_`
-- 删除任何尾部填充字符 (`=`)
-- 在字符串末尾添加一个整数, 指示原始字符 (`0`、 `1`或`2`) 中的填充字符数
+- 删除任何尾部填充字符（`=`）
+- 在字符串末尾添加一个整数，指示原始字符（`0`、 `1`或`2`）中的填充字符数
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[convertIdResult](../resources/convertidresult.md)集合。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[convertIdResult](../resources/convertidresult.md)集合。
 
 ## <a name="example"></a>示例
 
-下面的示例演示如何将多个标识符从正常的 REST API 格式 (`restId`) 转换为 REST 不可变格式`restImmutableEntryId`()。
+下面的示例演示如何将多个标识符从正常的 REST API 格式（`restId`）转换为 REST 不可变格式`restImmutableEntryId`（）。
 
 ### <a name="request"></a>请求
 
@@ -128,7 +128,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
       "sourceId": "{rest-formatted-id-1}",
@@ -141,7 +140,7 @@ Content-type: application/json
   ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce6b071690a65714cc8414c2c93af215d92f7c1e
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0746cddf987c6fed21fb27c2e0fffb09b596c520
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726128"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036170"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "36726128"
 
 检索[message](../resources/message.md)对象的属性和关系。
 
-例如, 您可以收到一条消息, 并在邮件中展开所有[提及](../resources/mention.md)的实例。
+例如，您可以收到一条消息，并在邮件中展开所有[提及](../resources/mention.md)的实例。
 
 您可以使用`$value`参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
 
@@ -37,11 +37,11 @@ ms.locfileid: "36726128"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.readbasic.all、Mail. Read    |
 |委派（个人 Microsoft 帐户） | User.readbasic.all、Mail. Read    |
-|应用程序 | User.readbasic.all, Mail. Read |
+|应用程序 | User.readbasic.all，Mail. Read |
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取指定的邮件:
+若要获取指定的邮件：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -50,7 +50,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-若要获取指定邮件的 MIME 内容, 请执行以下操作:
+若要获取指定邮件的 MIME 内容，请执行以下操作：
 <!-- { "blockType": "ignored" } --> 
 ```http 
 GET /me/messages/{id}/$value 
@@ -59,7 +59,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-若要获取邮件并展开邮件中的所有提及内容, 请执行以下操作:
+若要获取邮件并展开邮件中的所有提及内容，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -73,7 +73,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 使用`$value`参数获取邮件的 MIME 内容。
 
-使用 " `$expand` **提及**" 导航属性上的查询参数, 可以获取消息, 其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
+使用 " `$expand` **提及**" 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
 
 
 
@@ -89,8 +89,10 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+
+## <a name="examples"></a>示例
+### <a name="example-1"></a>示例 1
+#### <a name="request"></a>请求
 第一个示例获取指定的邮件。 它不指定任何标头以指示要返回的正文的所需格式。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
@@ -116,9 +118,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 
 ---
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 下面是一个响应示例。 **Body**和**uniqueBody**属性以默认的 HTML 格式返回。
-注意: 为简洁起见, 此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
+注意：为简洁起见，此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -146,8 +148,10 @@ Content-length: 523
 }
 ```
 
-##### <a name="request-2"></a>请求 2
-在下一个示例中, 登录用户是 Dana Swope。 此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。
+
+### <a name="example-2"></a>示例 2
+#### <a name="request"></a>请求
+在下一个示例中，登录用户是 Dana Swope。 此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
@@ -172,7 +176,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -270,8 +274,8 @@ Content-length: 2248
 }
 ```
 
-
-##### <a name="request-3"></a>请求 3
+### <a name="example-3"></a>示例 3
+#### <a name="request"></a>请求
 
 第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定邮件的**正文**和**uniqueBody** 。
 
@@ -302,9 +306,9 @@ Prefer: outlook.body-content-type="text"
 ---
 
 
-##### <a name="response-3"></a>响应 3
+#### <a name="response"></a>响应
 
-下面是一个响应示例。 注意: 响应包括用于确认`Preference-Applied: outlook.body-content-type` `Prefer: outlook.body-content-type`请求标头的标头。
+下面是一个响应示例。 注意：响应包括用于确认`Preference-Applied: outlook.body-content-type` `Prefer: outlook.body-content-type`请求标头的标头。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -314,7 +318,6 @@ Prefer: outlook.body-content-type="text"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 1550
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
@@ -332,8 +335,8 @@ Content-length: 1550
     }
 }
 ```
-
-##### <a name="request-4"></a>请求 4
+### <a name="example-4"></a>示例 4
+#### <a name="request"></a>请求
 
 第四个示例演示如何获取特定邮件的 Internet 邮件头。  
 
@@ -363,9 +366,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 ---
 
 
-##### <a name="response-4"></a>响应 4
+#### <a name="response"></a>响应
 
-下面是一个响应示例。 注意: 响应对象中的 Internet 邮件头数已降低为简洁起见。
+下面是一个响应示例。 注意：响应对象中的 Internet 邮件头数已降低为简洁起见。
 
 <!-- {
   "blockType": "response",
@@ -409,8 +412,8 @@ Content-type: application/json
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
-- [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
-- [使用架构扩展向组添加自定义数据（预览）](/graph/extensibility-schema-groups)
+- [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
+- [使用架构扩展向组添加自定义数据](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

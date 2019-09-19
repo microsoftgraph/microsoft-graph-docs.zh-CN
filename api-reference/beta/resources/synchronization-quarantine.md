@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d63082dbe4e8e952d41032a74467cd4c301a857b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 129dc7a07fb111bdf85dfc84eec29375a153e7fa
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964699"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036338"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>synchronizationQuarantine 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "35964699"
 |:---------------|:--------|:----------|
 |currentBegan|DateTimeOffset|上次评估和实施隔离的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |nextAttempt|DateTimeOffset|将进行下次尝试重新评估隔离的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|在于|String|表示为什么强制实施隔离的代码。 可取值为：`EncounteredBaseEscrowThreshold`、`EncounteredTotalEscrowThreshold`、`EncounteredEscrowProportionThreshold`、`EncounteredQuarantineException`、`Unknown`。|
-|seriesBegan|DateTimeOffset|本系列首次实施隔离的日期和时间 (在首次实施隔离时, 系列会启动, 并且在提升隔离后立即重置)。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|seriesCount|Int64|本系列中的次数隔离已重新评估并生效 (当第一次实施隔离时, 系列会启动, 并在提升隔离后立即重置)。|
+|在于|String|表示为什么强制实施隔离的代码。 可取值为：`EncounteredBaseEscrowThreshold`、`EncounteredTotalEscrowThreshold`、`EncounteredEscrowProportionThreshold`、`EncounteredQuarantineException`、`QuarantinedOnDemand`、`TooManyDeletes` 或 `Unknown`。|
+|seriesBegan|DateTimeOffset|本系列首次实施隔离的日期和时间（在首次实施隔离时，系列会启动，并且在提升隔离后立即重置）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|seriesCount|Int64|本系列中的次数隔离已重新评估并生效（当第一次实施隔离时，系列会启动，并在提升隔离后立即重置）。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

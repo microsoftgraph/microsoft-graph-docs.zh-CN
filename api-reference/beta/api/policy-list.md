@@ -1,31 +1,31 @@
 ---
 title: 列表策略
-description: 检索目录中的所有 policy 对象。
+description: 获取目录中的所有 policy 对象。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: d7ab2de4944019eff936554cc4da2e0dc15166c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: ed138813da5cfa539811063df41b283ed610df14
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983451"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036097"
 ---
 # <a name="list-policies"></a>列表策略
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索目录中的所有[policy](../resources/policy.md)对象。
+获取目录中的所有[policy](../resources/policy.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Policy： All、Directory.accessasuser.all、All、All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Read. all、Directory。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /policies
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果不成功 .。。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果不成功 .。。
 
 ## <a name="example"></a>示例
 下面的示例检索所有策略。

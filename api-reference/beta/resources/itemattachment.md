@@ -1,22 +1,22 @@
 ---
 title: itemAttachment 资源类型
-description: 附加到另一个事件的联系人、事件或邮件,
+description: 附加到另一个事件的联系人、事件或邮件，
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: b4220a1428edab2eeab89cabe53efc91bea76a8b
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 166cd8eb5d6add0d96705ae59f38819c64b1465b
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484378"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036296"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-附加到另一个[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的联系人、事件或邮件。  
+附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的联系人、事件或邮件。  
 
 派生自 [附件](attachment.md)。
 
@@ -24,7 +24,7 @@ ms.locfileid: "36484378"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性和关系。|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性、关系或原始内容。|
 |[删除](../api/attachment-delete.md) | 无 |删除 itemAttachment 对象。 |
 
 ## <a name="properties"></a>属性
