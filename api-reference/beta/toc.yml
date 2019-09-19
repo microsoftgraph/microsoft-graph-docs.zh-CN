@@ -303,13 +303,6 @@
                   href: api/user-list-manager.md
                 - name: 分配管理器
                   href: api/user-post-manager.md
-            - name: Outlook 任务
-              href: resources/outlooktask.md
-              items:
-                - name: 列出任务
-                  href: api/outlookuser-list-tasks.md
-                - name: 创建任务
-                  href: api/outlookuser-post-tasks.md
             - name: Outlook 设置
               href: resources/outlookuser.md
               items:
@@ -325,6 +318,13 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: 创建类别
                   href: api/outlookuser-post-mastercategories.md
+            - name: Outlook 任务
+              href: resources/outlooktask.md
+              items:
+                - name: 列出任务
+                  href: api/outlookuser-list-tasks.md
+                - name: 创建任务
+                  href: api/outlookuser-post-tasks.md
             - name: 人员
               href: resources/person.md
               items:
@@ -9824,7 +9824,7 @@
                 - name: 创建答复
                   href: api/workbookcomment-post-replies.md
                 - name: 获取答复
-                  href: workbookcommentreply-get.md
+                  href: api/workbookcommentreply-get.md
             - name: 工作表
               href: resources/workbookworksheet.md
               items:
