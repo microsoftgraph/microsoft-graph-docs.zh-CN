@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 687c2ea46e5e5768a14fa84ae74109fee830d5a3
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 108c17618d8042057263912d015f8a0fa6d2e7ce
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633844"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036205"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -412,34 +412,34 @@ ms.locfileid: "36633844"
 
 ### <a name="categorycolor-values"></a>categoryColor 值
 
-| 成员   |值    
+| 成员   |值
 |:---------|:--------
-| 无     | -1      
-| preset0  | 0       
-| preset1  | 1       
-| preset2  | 双面       
-| preset3  | 第三章       
-| preset4  | 4       
-| preset5  | 5       
-| preset6  | 型       
-| preset7  | 步       
-| preset8  | utf-8       
-| preset9  | 第       
-| preset10 | 10       
-| preset11 | 11x17      
-| preset12 | 12      
-| preset13 | 13      
-| preset14 | 日      
-| preset15 | 个      
-| preset16 | 位      
-| preset17 | ×      
-| preset18 | 18      
-| preset19 | 合      
-| preset20 | 20      
-| preset21 | 不足      
-| preset22 | 22      
-| preset23 | 上午      
-| preset24 | 24      
+| 无     | -1
+| preset0  | 0
+| preset1  | 1
+| preset2  | 双面
+| preset3  | 第三章
+| preset4  | 4
+| preset5  | 5
+| preset6  | 型
+| preset7  | 步
+| preset8  | utf-8
+| preset9  | 第
+| preset10 | 10 
+| preset11 | 11x17
+| preset12 | 12
+| preset13 | 13
+| preset14 | 日
+| preset15 | 个
+| preset16 | 位
+| preset17 | ×
+| preset18 | 18
+| preset19 | 合
+| preset20 | 20
+| preset21 | 不足
+| preset22 | 22
+| preset23 | 上午
+| preset24 | 24
 
 ### <a name="alertfeedback-values"></a>alertFeedback 值
 
@@ -470,7 +470,7 @@ ms.locfileid: "36633844"
 
 ### <a name="connectiondirection-values"></a>connectionDirection 值
 
-网络连接的方向 (入站/出站) 的枚举。
+网络连接的方向（入站/出站）的枚举。
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -561,7 +561,7 @@ ms.locfileid: "36633844"
 
 ### <a name="alertstatus-values"></a>alertStatus 值
 
-警报生命周期状态 (阶段) 的可能值。
+警报生命周期状态（阶段）的可能值。
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -594,7 +594,7 @@ ms.locfileid: "36633844"
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
-每个 Windows 定义的用户帐户类型 (组成员身份) 可能的值。
+每个 Windows 定义的用户帐户类型（组成员身份）可能的值。
 
 |Member|成员|说明|
 |:---|:---|:---|
@@ -655,3 +655,12 @@ ms.locfileid: "36633844"
 | confirmedCompromised
 | 向 unknownfuturevalue
 
+### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
+
+|Member|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restId|
+|restImmutableEntryId|
