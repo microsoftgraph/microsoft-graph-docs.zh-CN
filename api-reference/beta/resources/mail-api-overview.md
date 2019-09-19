@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 759739f12d5cb58e5fc3f4d7c2ab74b64fca4b72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45cb48e15cc1860b23006d7a309b3d63631e41c6
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009886"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036261"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
@@ -49,18 +49,18 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置[邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
 | 查询邮件并在搜索文件夹中获取邮件  | [mailSearchFolder](../resources/mailsearchfolder.md) | [mailSearchFolder 的方法](../resources/mailsearchfolder.md#methods) |
-| 获取邮件或邮件附件的 MIME 内容（预览版） | [邮件](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |
+| 获取邮件或邮件附件的 MIME 内容 | [message](../resources/message.md) | [获取 MIME 内容](/graph/outlook-get-mime-message) |
 | 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [attachment 的方法](../resources/attachment.md#methods) |
 | 获取用户的语言和时区选择 | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)、 <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | 获取或更新用户的自动答复、区域设置、时区或工作时间 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [获取用户的邮箱设置](../api/user-get-mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user-update-mailboxsettings.md) |
 | 获取其他收件人的特殊状态（例如外出）的邮件提醒 | [user](../resources/user.md)、 <br> [mailTips](../resources/mailtips.md) | [获取邮件提醒](../api/user-getmailtips.md) |
-| 如果在其他邮件中提及，则提醒用户（预览） | [mention（预览）](../resources/mention.md) | [获取邮件中的 @-mentions 的详细信息](../api/message-get.md#request-2) |
+| 如果在其他邮件中提及，则提醒用户（预览） | [mention（预览）](../resources/mention.md) | [获取邮件中的 @-mentions 的详细信息](../api/message-get.md#example-2) |
 | 从电子邮件通讯组列表中取消用户的订阅（预览） | [message（预览）](../resources/message.md) | [取消订阅](../api/message-unsubscribe.md) |
 | **邮件和文件夹管理** | | |
 | 组织邮件文件夹层次结构中的邮件 | [mailFolder](../resources/mailfolder.md)  | [mailFolder 的方法](../resources/mailfolder.md#methods) |
-| 对邮件分类 | [outlookCategory（预览）](../resources/outlookcategory.md) | [outlookCategory 的方法](../resources/outlookcategory.md#methods) |
-| 使用收件箱规则自动执行转发特定传入邮件等操作 | [messageRule（预览）](../resources/messagerule.md) | [messageRule 的方法](../resources/messagerule.md#methods) |
-| 获取邮件的 Internet 邮件头 | [message（预览）](../resources/message.md) | [获取邮件的 **internetMessageHeaders** 属性](../api/message-get.md#request-4)。 |
+| 对邮件分类 | [outlookCategory](../resources/outlookcategory.md) | [outlookCategory 的方法](../resources/outlookcategory.md#methods) |
+| 使用收件箱规则自动执行转发特定传入邮件等操作 | [messageRule](../resources/messagerule.md) | [messageRule 的方法](../resources/messagerule.md#methods) |
+| 获取邮件的 Internet 邮件头 | [message](../resources/message.md) | [获取邮件的 **internetMessageHeaders** 属性](../api/message-get.md#example-4)。 |
 | 搜索和筛选邮件 | [邮件](../resources/message.md) | [查询参数](/graph/query-parameters)  |
 | 获取对文件夹中的邮件更改的通知 | [订阅](../resources/subscription.md) | [在 Microsoft Graph 中使用 Webhooks](../resources/webhooks.md) |
 | 同步邮件或邮件文件夹层次结构 | [邮件](../resources/message.md) | [获取文件夹中邮件的增量更改](/graph/delta-query-messages) |

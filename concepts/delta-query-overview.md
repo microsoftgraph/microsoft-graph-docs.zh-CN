@@ -3,12 +3,12 @@ title: 使用增量查询跟踪 Microsoft Graph 数据更改
 description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 6a7dee807c35bb790d122941f381b8541054e87f
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: ee8ad043012a6abe1d8366332dec491740314270
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677111"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036184"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -48,17 +48,26 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 请注意以下相关可选查询参数：
 
-- `$orderby` 不是增量查询支持的查询参数。
- - 不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `nextLink` 序列的任意位置，并以合并逻辑进行处理。
+- `$orderby` 不可用于增量查询。
+     - 不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `nextLink` 序列的任意位置，并以合并逻辑进行处理。
+- `$top` 不可用于增量查询，而且每页中的对象数量可能因资源类型和资源更改类型而异。
 
-对于用户和组，以下限制适用于使用某些查询参数：
+对于用户和组，下列限制适用于使用一些查询参数的 using：
 
 对于用户和组，在使用某些查询参数时受到限制：
 
 - 如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
 - 对于用户和组，分别只有 `manager` 和 `members` 导航属性支持 `$expand`。
 
-- 借助范围筛选器，可以按 objectId 跟踪一个或多个特定用户或组的变更。 例如，以下请求 https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' 或 id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 返回与查询筛选器中指定的 ID 一致的组的变更。
+- 借助范围筛选器，可按对象 ID 跟踪一个或多个特定用户或组的更改。 例如，以下请求会返回与查询筛选器中指定的 ID 相匹配的组的更改。 
+
+<!-- {
+  "blockType": "request",
+  "name": "group_delta"
+}-->
+```http
+https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 
+```
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>delta 查询响应中的资源表示形式
 

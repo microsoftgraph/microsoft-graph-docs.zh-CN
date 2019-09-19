@@ -4,14 +4,14 @@ description: 多用途 Internet 邮件扩展 (MIME) 是一种行业电子邮件�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a0b71e3e87a845c995ec2792bab12fc0fc446b59
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2eadf89007e1127ffbbf9e40506c37b47778da7c
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32655799"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036380"
 ---
-# <a name="get-mime-content-of-a-message-preview"></a>获取邮件的 MIME 内容（预览版）
+# <a name="get-mime-content-of-a-message"></a>获取邮件的 MIME 内容
 
 MIME 是一种行业电子邮件标准。 许多电子邮件应用程序以 MIME 格式创建邮件并将其保存在扩展名为 .EML 的文件中。 
 
@@ -24,7 +24,6 @@ MIME 是一种行业电子邮件标准。 许多电子邮件应用程序以 MIME
 
 然后，你可以将邮件正文内容保存在 .EML 文件中，并将该文件附加到企业系统中的记录，例如 CRM、ERP 和错误跟踪的记录。 
 
-> **重要提示：** 获取 MIME 邮件正文的功能目前仅在 /beta 版本中可用。 与预览状态中的其他 API 类似，它可能会发生变更。 请勿在生产应用中使用此功能。 有关详细信息，请参阅[版本控制和支持](versioning-and-support.md)。
 
 ## <a name="what-is-mime"></a>什么是 MIME？
 
@@ -45,7 +44,7 @@ MIME 是 Internet 电子邮件用于通过 SMTP 传输以下类型内容的标�
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>获取 Outlook 邮件的 MIME 内容
 
-你可以通过在[获取邮件](/graph/api/message-get?view=graph-rest-beta)时附加 `$value` 段来获取邮件的 MIME 表示： 
+你可以通过在[获取邮件](/graph/api/message-get?view=graph-rest-1.0)时附加 `$value` 段来获取邮件的 MIME 表示： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -155,10 +154,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a>获取附加到 Outlook 项目或组帖子的 Outlook 邮件的 MIME 内容
 
-你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event?view=graph-rest-beta)、[邮件](/graph/api/resources/message?view=graph-rest-beta)、[任务](/graph/api/resources/outlooktask?view=graph-rest-beta)或组[帖子](/graph/api/resources/post?view=graph-rest-beta)，你的应用程序可以访问。
+你还可以获取 Outlook 邮件的 MIME 表示，如果邮件附加到 Outlook [事件](/graph/api/resources/event?view=graph-rest-1.0)、[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[任务](/graph/api/resources/outlooktask?view=graph-rest-beta)或组[帖子](/graph/api/resources/post?view=graph-rest-1.0)，你的应用程序可以访问。
 
-为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment
-)时附加 `$value` 段。 以下显示了访问附件的一些常用方法。 有关详细信息，请参阅[获取附件](/graph/api/attachment-get?view=graph-rest-beta#http-request)。
+为此，标识邮件附件，并在[获取该附件](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
+)时附加 `$value` 段。 以下显示了访问附件的一些常用方法。 有关详细信息，请参阅[获取附件](/graph/api/attachment-get?view=graph-rest-1.0#http-request)。
 
 如果邮件附加到用户默认日历中的事件：
 <!-- { "blockType": "ignored" } -->
@@ -190,7 +189,7 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
 ```
 
 以下是答复。 MIME 内容以 `MIME-Version` 标头开头。 
@@ -279,6 +278,6 @@ e.</p>
 
 详细了解以下信息：
 
-- 获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)
+- 获取事件、邮件、Outlook 任务或组帖子的[项目附件的 MIME 内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
-- [使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph beta 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-beta#common-use-cases)。
+- [使用功能邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)

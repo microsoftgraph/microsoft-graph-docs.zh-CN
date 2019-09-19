@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2604a56097635f8211824527dc031483d5c2e42a
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 79c10718ab03cd23d03f9b6b9e9f3e2e2acfa31d
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667509"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036387"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -135,13 +135,17 @@ ms.locfileid: "36667509"
 |webLink|String|要在 Web 上的 Outlook 中打开事件的 URL。<br/><br/>如果登录邮件，则 Outlook 网页面会在浏览器中打开事件。 否则，Outlook 网页面会提示你进行登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
 > [!NOTE]
-> **webLink** 属性指定了一个 URL，它仅在 Outlook 网页版早期版本中打开事件。 其 URL 的格式如下所示，其中 _{event-id}_ 是 **id** 属性的 URL 编码值：
+> **webLink** 属性指定了一个 URL，它仅在 Outlook 网页版早期版本中打开事件。 其 URL 的格式如下所示，其中 _{event-id}_ 是 **id** 属性的 _**URL 编码**_ 值：
 >
-> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+> * 对于工作或学校帐户：`https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> 要在 Outlook 网页版的当前版本中打开该 URL，请将该 URL 转换为以下格式：
+> * 对于 Microsoft 帐户：`https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> `https://outlook.office365.com/calendar/item/{event-id}`
+> 要在 Outlook 网页版的当前版本中打开事件，请将 URL 转换为下述格式之一，并使用该 URL 打开事件： 
+>
+> * 对于工作或学校帐户：`https://outlook.office365.com/calendar/item/{event-id}`
+>
+> * 对于 Microsoft 帐户：`https://outlook.live.com/calendar/item/{event-id}`
 
 
 ## <a name="relationships"></a>关系
