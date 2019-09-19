@@ -3,14 +3,14 @@ title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 6cbcdfbd3406226e23000c472467a42604c16c90
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 20e41f118f0da2248f0744c64ab25d69da8061f2
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419669"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041777"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 
@@ -21,7 +21,7 @@ ms.locfileid: "36419669"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
->**注意:** 此 API 还要求请求者在资源上至少有`Active`一个管理员角色分配`owner` ( `user access administrator`或)。
+>**注意：** 此 API 还要求请求者在资源上至少有`Active`一个管理员角色分配`owner` （ `user access administrator`或）。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,25 +37,25 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | 持有者 {token}|
 | Content-type  | application/json|
 
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供需要更新的[governanceRuleSettings](../resources/governancerulesetting.md)的值。 
+在请求正文中，提供需要更新的[governanceRuleSettings](../resources/governancerulesetting.md)的值。 
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|在管理员尝试添加符合条件的角色分配时评估的规则设置。|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|在管理员尝试添加直接成员角色分配时评估的规则设置。|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试添加符合条件的角色分配时评估的规则设置。 目前不支持这`pimforazurerbac`种情况, 在将来的方案中可能会用到。|
+|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试添加符合条件的角色分配时评估的规则设置。 |
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试激活他的角色分配时评估的规则设置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 NoContent` 响应代码。它不在响应正文中返回任何内容。 
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回标准的 HTTP 错误代码。 此外, 它还返回以下自定义错误代码。
+此 API 返回标准的 HTTP 错误代码。 此外，它还返回以下自定义错误代码。
 
 |错误代码     | 错误消息         | 详细信息             |
 |:--------------| :---------------------|:--------------------|
@@ -72,7 +72,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
   "name": "update_governancerolesetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
+PATCH https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
 Content-length: 350
 

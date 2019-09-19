@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 654208a1163e2d99c0685d72588d64d9b0bf228f
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: 118b8e95c9e5ef7d67d4e1b7792a5a7e4e39a193
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853847"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041724"
 ---
 # <a name="user-checkmemberobjects"></a>用户： checkMemberObjects
 
@@ -63,6 +63,8 @@ POST /users/{id}/checkMemberObjects
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_checkmemberobjects"
@@ -81,6 +83,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-checkmemberobjects-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmemberobjects-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-checkmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
