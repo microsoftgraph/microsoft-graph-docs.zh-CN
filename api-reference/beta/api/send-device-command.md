@@ -1,22 +1,22 @@
 ---
 title: 发送设备命令
-description: '此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后, 传入设备的 ID 以向设备发出命令。 支持两种类型的命令: LaunchURI 和 AppServices。 如果使用的是 LaunchURI, 请指定*type*和*载荷*参数。 对于 AppService 调用, 请指定 '
+description: '此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后，传入设备的 ID 以向设备发出命令。 支持两种类型的命令： LaunchURI 和 AppServices。 如果使用的是 LaunchURI，请指定*type*和*载荷*参数。 对于 AppService 调用，请指定 '
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: fd45047d673dc6def51d3f417861cf15a38a2f98
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f112c7d3253a0a0801b7542f492c6f3f1f675c81
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991511"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053940"
 ---
 # <a name="send-device-command"></a>发送设备命令
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后, 传入设备的 ID 以向设备发出命令。 支持两种类型的命令: LaunchURI 和 AppServices。 如果使用的是 LaunchURI, 请指定*type*和*载荷*参数。 对于 AppService 调用, 指定*type*、*载荷*、 *packageFamilyName*和*appServiceName*参数。
+此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后，传入设备的 ID 以向设备发出命令。 支持两种类型的命令： LaunchURI 和 AppServices。 如果使用的是 LaunchURI，请指定*type*和*载荷*参数。 对于 AppService 调用，指定*type*、*载荷*、 *packageFamilyName*和*appServiceName*参数。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST me/devices/{id}/commands
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供命令属性的 JSON 表示形式。
+在请求正文中，提供命令属性的 JSON 表示形式。
 
 ```json
 {
@@ -79,7 +79,7 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>命令属性 
+### <a name="command-properties"></a>命令属性 
 
 |**名称**|**Type**|**说明**|
 |:----|:------|:------|
@@ -87,19 +87,19 @@ HTTP/1.1 201 OK
 |responsePayload | microsoft. json| 从目标设备返回的有效负载。 |
 |postBackURI | String | 回发 URI 以发送后续的更新通知。 |
 |packageFamilyName | String | Windows 程序包系列应用程序的名称。 |
-|appServiceName | String | 由目标应用程序定义的应用服务的名称。 如果启动应用服务, 则为必需。 |
+|appServiceName | String | 由目标应用程序定义的应用服务的名称。 如果启动应用服务，则为必需。 |
 |type| String | LaunchURI 或 AppService。 |
 |id| String | 已发送到设备的命令的 ID。 |
 |actionStatus | String | 命令的[状态](get-device-command-status.md)。 |
 |error| String| 与目标应用程序中的请求关联的任何错误。 |
 
-## <a name="launch-uri-example"></a>启动 URI 示例
+## <a name="examples"></a>示例
 
-下面的示例展示了 LaunchURI 请求。它会启动一个 URI 或目标设备上的应用程序。 若要启动 URI 或应用, 请使用设备 ID 发出 POST (通过执行 GET 呼叫获取`me/devices`)。 将*类型*参数设置为*LaunchURI* , 并提供 URI 值 (如https://bing.com)。
+### <a name="example-1-launch-uri"></a>示例1：启动 URI 
+
+以下是 LaunchURI 请求的示例;它会启动一个 URI 或目标设备上的应用程序。 若要启动 URI 或应用，请使用设备 ID 发出 POST （通过执行 GET 呼叫获取`me/devices`）。 将*类型*参数设置为*LaunchURI* ，并提供 URI 值（如https://bing.com）。
 
 #### <a name="request"></a>请求
-
-下面展示了示例请求。
 
 <!-- {
   "blockType": "ignored",
@@ -115,10 +115,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
-
 #### <a name="response"></a>响应 
-
-下面是一个响应示例。
 
 <!-- {
   "blockType": "ignored",
@@ -147,11 +144,11 @@ HTTP/1.1 201 OK
 ```
 
 
-## <a name="app-service-example"></a>App service 示例
+### <a name="example-2-app-service"></a>示例2： App service
 
-下面的示例展示了如何在设备上查询应用服务。 若要使用应用服务, 必须使用设备 id (通过执行 GET 呼叫获取`me/devices`) 执行 POST 呼叫。 若要使用以下示例, 必须在目标设备上安装[罗马应用程序](https://aka.ms/romanapp)。
+下面的示例演示如何在设备上查询应用服务。 若要使用应用服务，必须使用设备 ID （通过执行 GET 呼叫获取`me/devices`）执行 POST 调用。 若要使用以下示例，必须在目标设备上安装[罗马应用程序](https://aka.ms/romanapp)。
 
-必须在调用中设置多个附加属性。 *Type*必须设置为*AppService*, *AppServiceName*必须设置为应用程序中定义的应用服务的名称, *PackageFamilyName*必须设置为应用程序清单中定义的程序包系列名称和*有效负载*保留您在目标应用程序中调用的服务的键和值。
+必须在调用中设置多个附加属性。 *Type*必须设置为*AppService*， *AppServiceName*必须设置为应用程序中定义的应用服务的名称， *PackageFamilyName*必须设置为应用程序清单中定义的程序包系列名称和*有效负载*保留您在目标应用程序中调用的服务的键和值。
 
 #### <a name="request"></a>请求
 
@@ -176,8 +173,6 @@ Content-Type: application/json; charset=utf-8
 ```
 
 #### <a name="response"></a>响应
-
-下面展示了示例响应。
 
 <!-- {
   "blockType": "ignored",

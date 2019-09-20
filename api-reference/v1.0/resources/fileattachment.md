@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d71eb6e142097474ac6616456cf6e57ceb8cfb02
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 4975e9b46a4b55429906fbcd9b7b23f8774a47e9
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484350"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036198"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
-事件、邮件或帖子中附加的文件（例如文本文件或 Word 文档）。**contentBytes** 属性包含文件的 base64 编码内容。  
+附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的文件（例如文本文件或 Word 文档）。**contentBytes** 属性包含文件的 base64 编码内容。  
 
 创建文件附件时，在请求正文中包括以下内容：
 
@@ -27,8 +27,8 @@ ms.locfileid: "36484350"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 fileattachment 对象的属性和关系。|
-|[删除](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 fileAttachment 对象的属性、关系或原始内容。|
+|[Delete](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

@@ -78,7 +78,7 @@ items:
             href: outlook-schedule-recurring-events.md
           - name: 获取共享事件
             href: outlook-get-shared-events-calendars.md
-          - name: 不可变 ID（预览版）
+          - name: 不可变 ID
             href: outlook-immutable-id.md
       - name: 跨设备体验
         displayName: Project Rome
@@ -136,7 +136,7 @@ items:
             href: outlook-mail-concept-overview.md
           - name: 自动发送邮件
             href: outlook-create-send-messages.md
-          - name: 获取 MIME 内容（预览版）
+          - name: 获取 MIME 内容
             href: outlook-get-mime-message.md
           - name: 获取共享邮件
             href: outlook-share-messages-folders.md
@@ -144,7 +144,7 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: 整理邮件
             href: outlook-organize-messages.md
-          - name: 不可变 ID（预览版）
+          - name: 不可变 ID
             href: outlook-immutable-id.md
       - name: 注释
         displayName: OneNote
@@ -207,7 +207,7 @@ items:
             href: outlook-contacts-concept-overview.md
           - name: 获取共享联系人
             href: outlook-get-shared-contacts-folders.md
-          - name: 不可变 ID（预览版）
+          - name: 不可变 ID
             href: outlook-immutable-id.md
       - name: 报表
         href: reportroot-concept-overview.md
