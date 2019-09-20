@@ -1,15 +1,16 @@
 ---
-front_matter_title: Basics
+'title:': Authentication and authorization basics for Microsoft Graph
 description: 要调用 Microsoft Graph，应用必须从 Microsoft 标识平台获取一个访问令牌。
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7e532867c9d92e2c2a7dd27e2e17a51fcbc1d2d4
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.custom: graphiamtop20
+ms.openlocfilehash: a1d11cab454ead5f15d405b7674d727c69e71c96
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017764"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054003"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Microsoft Graph 身份验证和授权基础知识
 

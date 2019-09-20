@@ -3,12 +3,13 @@ title: 获取用户的增量更改
 description: Delta 查询可通过调用一系列 delta 函数查询用户的添加、删除或更新。Delta 查询使你无需读取 Microsoft Graph 的整组用户就能够发现用户的更改并进行比较。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: af2dd5baa8785eb74de6c453b3a55978015add17
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526333"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054087"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 

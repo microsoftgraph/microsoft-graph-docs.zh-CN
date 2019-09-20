@@ -3,12 +3,13 @@ title: 使用增量查询跟踪 Microsoft Graph 数据更改
 description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: ee8ad043012a6abe1d8366332dec491740314270
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.custom: graphiamtop20
+ms.openlocfilehash: a74645d8f5b579a28059124eabdf8ccfdb967c4e
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036184"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054075"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 

@@ -4,12 +4,13 @@ description: 应用必须使用 Azure AD 注册。 注册应用会建立一个�
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1014e3089b546f65188a26a00acdcc280b50709b
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.custom: graphiamtop20
+ms.openlocfilehash: f7f2bb2d67e4100c618d41e6a7634f86abb4dae7
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778703"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054038"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>向 Microsoft 标识平台注册应用程序
 

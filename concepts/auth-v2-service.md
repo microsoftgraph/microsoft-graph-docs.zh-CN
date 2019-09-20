@@ -4,12 +4,13 @@ description: 一些应用使用他们自己的标识（而不代表用户）调�
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 106d1f79917427e68df4dcc738fb5720c3dd5ad8
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.custom: graphiamtop20
+ms.openlocfilehash: 32bf00ab3b6ff27d69628bb1acef4d983540d6dc
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633732"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053954"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 

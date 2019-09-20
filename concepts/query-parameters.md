@@ -4,12 +4,13 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: piotrci
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: 8be66640c69177d537d81b77fd43e3c2dd139cda
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: graphiamtop20
+ms.openlocfilehash: 1afae7cf577e098c7905cbb2623c0440f8d480ae
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792903"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054074"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -255,7 +256,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 - [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/zh-CN//library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 

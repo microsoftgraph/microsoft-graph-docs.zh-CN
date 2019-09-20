@@ -3,12 +3,13 @@ title: 使用扩展向资源添加自定义数据
 description: Microsoft Graph 提供单一 API 终结点，以便用户能够通过大量资源（如 user 和 message）访问以人为中心的丰富数据和见解。 你还可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 7c14e9b328d8572142bf19ac232c3405e60b2da4
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.custom: graphiamtop20
+ms.openlocfilehash: 68b58d0ebe8fbcdb81cf23dd5173b64da4ac4ead
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133843"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054094"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 

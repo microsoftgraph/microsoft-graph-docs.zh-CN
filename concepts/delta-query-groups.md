@@ -3,12 +3,13 @@ title: 获取组的增量更改
 description: 使用 delta 查询，可通过一系列 delta 函数调用来查询组的添加、删除或更新。 delta 查询可便于发现组的更改
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 358af439fb69525b75dc2810f890a91dc54f2789
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: fac0aaf0e895c0bdd44434174cf2cc24b99fd5c6
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526097"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053919"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 
