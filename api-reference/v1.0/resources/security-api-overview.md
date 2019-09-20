@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 82ec04d063899c91ea010730492654fed5ac9dd0
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 99c1abd1180acbc6143103ba9049bd6c3776c806
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730342"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041889"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -44,7 +44,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 |[Palo Alto 网络](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **注意：** 新的提供商将会不断加入 Microsoft Graph 安全生态系统。 要请求新的提供商或从现有提供商处获取更长时间的支持，请[在 Microsoft Graph 安全性 GitHub 存储库中提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new)。
 
-与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护 (WDATP) 所需的[用户角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多；因此，只有同时具备 WDATP 和 Microsoft Graph 安全 API 角色的用户才可访问 WDATP 数据。  仅限应用程序的身份验证不受此约束限制；因此，建议使用仅限应用的身份验证令牌。
+与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护所需的[用户角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多。 只有同时具备 Microsoft Defender 高级威胁防护和 Microsoft Graph 安全 API 角色的用户才可访问 Microsoft Defender 高级威胁防护数据。 由于仅限应用程序的身份验证不受此约束限制；我们建议使用仅限应用程序的身份验证令牌。
 
 \*\* Azure 高级威胁防护警报通过 Microsoft Cloud App Security 集成提供。 这意味着只有在已加入[统一 SecOps 预览计划](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)并已将 Azure 高级威胁防护连接到 Microsoft Cloud App Security 的情况下，才能获得 Azure 高级威胁防护警报。
 

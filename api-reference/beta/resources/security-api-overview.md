@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 315c33c141f2df4181c549ab837badc2817b1410
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 810f589c0814a9b843d7b71e17e55036c0266f9e
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726296"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041882"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -46,7 +46,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 |[Palo Alto 网络](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **注意：** 新的提供商将会不断加入 Microsoft Graph 安全生态系统。 要请求新的提供商或从现有提供商处获取更长时间的支持，请[在 Microsoft Graph 安全性 GitHub 存储库中提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new)。
 
-与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护 (WDATP) 所需的[用户角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多；因此，只有同时具备 WDATP 和 Microsoft Graph 安全 API 角色的用户才可访问 WDATP 数据。  仅限应用程序的身份验证不受此约束限制；因此，建议使用仅限应用的身份验证令牌。
+与 Microsoft Graph 安全 API 相比，\* Windows Defender 高级威胁防护所需的[用户角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)更多。 只有同时具备 Microsoft Defender 高级威胁防护和 Microsoft Graph 安全 API 角色的用户才可访问 Microsoft Defender 高级威胁防护数据。 由于仅限应用程序的身份验证不受此约束限制；我们建议使用仅限应用程序的身份验证令牌。
 
 \*\* Azure 高级威胁防护警报通过 Microsoft Cloud App Security 集成提供。 这意味着只有在已加入[统一 SecOps 预览计划](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)并已将 Azure 高级威胁防护连接到 Microsoft Cloud App Security 的情况下，才能获得 Azure 高级威胁防护警报。
 
@@ -65,7 +65,7 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 
 ## <a name="security-actions-preview"></a>安全操作（预览版）
 
-利用 Microsoft Graph 安全性 [securityAction](securityaction.md) 实体立即采取行动来抵御威胁。 当安全分析师发现新的指示器（如恶意文件、URL、域或 IP 地址）时，可立即在你的 Microsoft 安全解决方案中启用保护。 针对特定提供商采取操作，查看所采取的全部操作，还可在需要时取消操作。 请通过 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 尝试安全操作，以使用在警报中看到或在调查期间确定的属性来阻止 Windows 终结点上的恶意活动。
+利用 Microsoft Graph 安全性 [securityAction](securityaction.md) 实体立即采取行动来抵御威胁。 当安全分析师发现新的指示器（如恶意文件、URL、域或 IP 地址）时，可立即在你的 Microsoft 安全解决方案中启用保护。 针对特定提供商采取操作，查看所采取的全部操作，还可在需要时取消操作。 请通过 [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)尝试安全操作，以使用在警报中看到或在调查期间确定的属性来阻止 Windows 终结点上的恶意活动。
 
   > **注意：** 安全操作当前仅支持应用程序权限。
 

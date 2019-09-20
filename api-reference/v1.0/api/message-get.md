@@ -5,18 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ec663765c572230ad07e469b760c14b9dfd7c2e5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fbaf9d07e031369c004ce795b060a303fc8d2575
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728690"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041946"
 ---
 # <a name="get-message"></a>获取邮件
 
 检索[邮件](../resources/message.md)对象的属性和关系。
 
-目前，此操作返回纯 HTML 格式的邮件正文。
+可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -57,8 +57,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+
+
+## <a name="examples"></a>示例
+### <a name="example-1"></a>示例 1
+#### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -88,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 
 ---
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -163,7 +166,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>请求 2
+### <a name="example-2"></a>示例 2
+#### <a name="request"></a>请求
 下一个示例使用 `$select` 查询参数获取邮件的 Internet 邮件标头。 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -193,7 +197,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，将截断响应对象中的邮件标头集。 所有标头都将通过实际调用返回。
 <!-- {
   "blockType": "response",
@@ -229,13 +233,77 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-3"></a>示例 3
+#### <a name="request"></a>请求
+
+第三个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 和 **uniqueBody**。
+
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
+  "name": "get_message_in_text"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
+Prefer: outlook.body-content-type="text"
+```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 注意：响应包含用于确认 `Prefer: outlook.body-content-type` 请求标头的 `Preference-Applied: outlook.body-content-type` 标头。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Preference-Applied: outlook.body-content-type="text"
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
+    "id":"AAMkAGI1AAAoZCfHAAA=",
+    "subject":"Welcome to our group!",
+    "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
+    "body":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
+    },
+    "uniqueBody":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
+    }
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
-- [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
+- [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 -->
 
 
