@@ -33,7 +33,7 @@
         - name: 限制
           href: /graph/throttling?context=graph/api/beta
         - name: 更改通知
-          displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+          displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
           items:
             - name: 概述
               href: /graph/webhooks?context=graph/api/beta
@@ -7490,7 +7490,7 @@
                 - name: 获取同步错误
                   href: api/educationsynchronizationerrors-get.md
         - name: 文件
-          displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+          displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
             - name: 概述
               href: resources/onedrive.md
@@ -9205,7 +9205,7 @@
             - name: 错误
               href: resources/security-error-codes.md
         - name: 网站和列表
-          displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
+          displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
             - name: 概述
               href: resources/sharepoint.md
@@ -9952,7 +9952,7 @@
                 - name: 删除架构扩展
                   href: api/schemaextension-delete.md
             - name: 更改通知
-              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               items:
                 - name: 概述
                   href: resources/webhooks.md

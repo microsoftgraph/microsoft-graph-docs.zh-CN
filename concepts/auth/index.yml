@@ -3,13 +3,14 @@ documentType: LandingData
 title: Microsoft Graph 身份验证概述
 metadata:
   title: Microsoft Graph 身份验证概述
-  description: '了解 OAuth 2.0 的基础知识, 以及如何获取令牌以调用 Microsoft Graph API。'
+  description: 了解 OAuth 2.0 的基础知识，以及如何获取令牌以调用 Microsoft Graph API。
   services: active-directory
   author: CelesteDG
   manager: CelesteDG
   ms.topic: landing-page
   ms.date: 04/26/2019
   ms.reviewer: jawoods
+  ms.custom: graphiamtop20
 abstract:
   description: 了解如何进行身份验证和处理权限以通过 Microsoft Graph 安全地访问数据。 浏览以下文档以了解有关应用注册、身份验证库、授权以及支持 Microsoft Graph 开发的 Microsoft identity 平台的其他部分。
   aside:
@@ -18,7 +19,7 @@ abstract:
       height: 110
       src: /graph/images/appreg-video.png
       width: 250
-    title: 'Microsoft Graph 和应用注册 (7:29)'
+    title: 'Microsoft Graph 和应用注册（7:29）'
     href: 'https://www.youtube.com/watch?v=93j0MmRruFo'
     width: 250
 sections:
@@ -47,11 +48,11 @@ sections:
             html: <p>启用应用程序对合作伙伴托管数据的访问。</p>
             image:
               src: ../images/index/i_api.svg
-            title: 云解决方案提供商 (CSP)
+            title: 云解决方案提供商（CSP）
   - title: Auth Sdk
     items:
       - type: paragraph
-        text: '在与 Microsoft Graph 集成时使用身份验证 SDK 简化了需要编写的代码, 使开发人员能够专注于生成出色体验。 使用 Microsoft 身份验证库 (MSAL) 获得最佳体验, 或选择我们建议的开放源代码中的一个替代方案。'
+        text: 在与 Microsoft Graph 集成时使用身份验证 SDK 简化了需要编写的代码，使开发人员能够专注于生成出色体验。 使用 Microsoft 身份验证库（MSAL）获得最佳体验，或选择我们建议的开放源代码中的一个替代方案。
       - type: table
         style: dataMatrix
         columns:
