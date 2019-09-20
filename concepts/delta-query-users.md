@@ -3,53 +3,54 @@ title: 获取用户的增量更改
 description: Delta 查询可通过调用一系列 delta 函数查询用户的添加、删除或更新。Delta 查询使你无需读取 Microsoft Graph 的整组用户就能够发现用户的更改并进行比较。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: af2dd5baa8785eb74de6c453b3a55978015add17
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526333"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054087"
 ---
-# <a name="get-incremental-changes-for-users"></a><span data-ttu-id="7f3ed-104">获取用户的增量更改</span><span class="sxs-lookup"><span data-stu-id="7f3ed-104">Get incremental changes for users</span></span>
+# <a name="get-incremental-changes-for-users"></a><span data-ttu-id="bb944-104">获取用户的增量更改</span><span class="sxs-lookup"><span data-stu-id="bb944-104">Get incremental changes for users</span></span>
 
-<span data-ttu-id="7f3ed-p102">[Delta 查询](./delta-query-overview.md)可通过调用一系列 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数查询用户的添加、删除或更新。Delta 查询使你无需读取 Microsoft Graph 的整组用户就能够发现用户的更改并进行比较。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p102">[Delta query](./delta-query-overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](/graph/api/user-delta?view=graph-rest-1.0) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.</span></span>
+<span data-ttu-id="bb944-p102">[Delta 查询](./delta-query-overview.md)可通过调用一系列 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数查询用户的添加、删除或更新。Delta 查询使你无需读取 Microsoft Graph 的整组用户就能够发现用户的更改并进行比较。</span><span class="sxs-lookup"><span data-stu-id="bb944-p102">[Delta query](./delta-query-overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](/graph/api/user-delta?view=graph-rest-1.0) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.</span></span>
 
-<span data-ttu-id="7f3ed-p103">以后，对本地配置文件存储使用同步用户功能的客户端可以将增量查询用于初始完全同步和增量同步。通常，客户会对租户中的所有用户进行初始完全同步，之后定期获取对用户的增量更改。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p103">Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.</span></span>
+<span data-ttu-id="bb944-p103">以后，对本地配置文件存储使用同步用户功能的客户端可以将增量查询用于初始完全同步和增量同步。通常，客户会对租户中的所有用户进行初始完全同步，之后定期获取对用户的增量更改。</span><span class="sxs-lookup"><span data-stu-id="bb944-p103">Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.</span></span>
 
-## <a name="tracking-user-changes"></a><span data-ttu-id="7f3ed-109">跟踪用户更改</span><span class="sxs-lookup"><span data-stu-id="7f3ed-109">Tracking user changes</span></span>
+## <a name="tracking-user-changes"></a><span data-ttu-id="bb944-109">跟踪用户更改</span><span class="sxs-lookup"><span data-stu-id="bb944-109">Tracking user changes</span></span>
 
-<span data-ttu-id="7f3ed-p104">跟踪用户更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出用户](/graph/api/user-list?view=graph-rest-1.0)的方式非常相似，除了要包括以下内容：</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p104">Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](/graph/api/user-list?view=graph-rest-1.0), except that you include the following:</span></span>
+<span data-ttu-id="bb944-p104">跟踪用户更改是发出 **delta** 函数的一个或多个 GET 请求。发出 GET 请求与[列出用户](/graph/api/user-list?view=graph-rest-1.0)的方式非常相似，除了要包括以下内容：</span><span class="sxs-lookup"><span data-stu-id="bb944-p104">Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](/graph/api/user-list?view=graph-rest-1.0), except that you include the following:</span></span>
 
-- <span data-ttu-id="7f3ed-112">**delta** 函数。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-112">The **delta** function.</span></span>
-- <span data-ttu-id="7f3ed-113">上一个 GET **delta** 函数调用的[状态令牌](./delta-query-overview.md)（_deltaToken_ 或 _skipToken_）。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-113">A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.</span></span>
+- <span data-ttu-id="bb944-112">**delta** 函数。</span><span class="sxs-lookup"><span data-stu-id="bb944-112">The **delta** function.</span></span>
+- <span data-ttu-id="bb944-113">上一个 GET **delta** 函数调用的[状态令牌](./delta-query-overview.md)（_deltaToken_ 或 _skipToken_）。</span><span class="sxs-lookup"><span data-stu-id="bb944-113">A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7f3ed-114">示例</span><span class="sxs-lookup"><span data-stu-id="7f3ed-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bb944-114">示例</span><span class="sxs-lookup"><span data-stu-id="bb944-114">Example</span></span>
 
-<span data-ttu-id="7f3ed-115">以下示例显示了跟踪用户更改的一系列请求：</span><span class="sxs-lookup"><span data-stu-id="7f3ed-115">The following example shows a series  requests to track changes to users:</span></span>
+<span data-ttu-id="bb944-115">以下示例显示了跟踪用户更改的一系列请求：</span><span class="sxs-lookup"><span data-stu-id="bb944-115">The following example shows a series  requests to track changes to users:</span></span>
 
-1. <span data-ttu-id="7f3ed-116">[初始请求](#initial-request)和[响应](#initial-response)</span><span class="sxs-lookup"><span data-stu-id="7f3ed-116">[Initial request](#initial-request) and [response](#initial-response)</span></span>
-2. <span data-ttu-id="7f3ed-117">[nextLink 请求](#nextlink-request)和[响应](#nextlink-response)</span><span class="sxs-lookup"><span data-stu-id="7f3ed-117">[nextLink request](#nextlink-request) and [response](#nextlink-response)</span></span>
-3. <span data-ttu-id="7f3ed-118">[最终 nextLink 请求](#final-nextlink-request)和[响应](#final-nextlink-response)</span><span class="sxs-lookup"><span data-stu-id="7f3ed-118">[Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)</span></span>
-4. <span data-ttu-id="7f3ed-119">[deltaLink 请求](#deltalink-request)和 [deltaLink 响应](#deltalink-response)</span><span class="sxs-lookup"><span data-stu-id="7f3ed-119">[deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)</span></span>
+1. <span data-ttu-id="bb944-116">[初始请求](#initial-request)和[响应](#initial-response)</span><span class="sxs-lookup"><span data-stu-id="bb944-116">[Initial request](#initial-request) and [response](#initial-response)</span></span>
+2. <span data-ttu-id="bb944-117">[nextLink 请求](#nextlink-request)和[响应](#nextlink-response)</span><span class="sxs-lookup"><span data-stu-id="bb944-117">[nextLink request](#nextlink-request) and [response](#nextlink-response)</span></span>
+3. <span data-ttu-id="bb944-118">[最终 nextLink 请求](#final-nextlink-request)和[响应](#final-nextlink-response)</span><span class="sxs-lookup"><span data-stu-id="bb944-118">[Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)</span></span>
+4. <span data-ttu-id="bb944-119">[deltaLink 请求](#deltalink-request)和 [deltaLink 响应](#deltalink-response)</span><span class="sxs-lookup"><span data-stu-id="bb944-119">[deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)</span></span>
 
-## <a name="initial-request"></a><span data-ttu-id="7f3ed-120">初始请求</span><span class="sxs-lookup"><span data-stu-id="7f3ed-120">Initial request</span></span>
+## <a name="initial-request"></a><span data-ttu-id="bb944-120">初始请求</span><span class="sxs-lookup"><span data-stu-id="bb944-120">Initial request</span></span>
 
-<span data-ttu-id="7f3ed-121">为开始跟踪用户资源的更改，请在用户资源上发出包含 delta 函数的请求。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-121">To begin tracking changes in the user resource, you make a request including the delta function on the user resource.</span></span>
+<span data-ttu-id="bb944-121">为开始跟踪用户资源的更改，请在用户资源上发出包含 delta 函数的请求。</span><span class="sxs-lookup"><span data-stu-id="bb944-121">To begin tracking changes in the user resource, you make a request including the delta function on the user resource.</span></span>
 
-<span data-ttu-id="7f3ed-122">请注意以下事项：</span><span class="sxs-lookup"><span data-stu-id="7f3ed-122">Note the following:</span></span>
+<span data-ttu-id="bb944-122">请注意以下事项：</span><span class="sxs-lookup"><span data-stu-id="bb944-122">Note the following:</span></span>
 
-- <span data-ttu-id="7f3ed-123">请求中包含可选的 $select 查询参数，以演示如何在以后的请求中自动包含查询参数。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-123">The optional $select query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.</span></span>
-- <span data-ttu-id="7f3ed-p105">初始请求不包括状态令牌。状态令牌将用于后续请求中。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p105">The initial request does not include a state token. State tokens will be used in subsequent requests.</span></span>
+- <span data-ttu-id="bb944-123">请求中包含可选的 $select 查询参数，以演示如何在以后的请求中自动包含查询参数。</span><span class="sxs-lookup"><span data-stu-id="bb944-123">The optional $select query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.</span></span>
+- <span data-ttu-id="bb944-p105">初始请求不包括状态令牌。状态令牌将用于后续请求中。</span><span class="sxs-lookup"><span data-stu-id="bb944-p105">The initial request does not include a state token. State tokens will be used in subsequent requests.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-## <a name="initial-response"></a><span data-ttu-id="7f3ed-126">初始响应</span><span class="sxs-lookup"><span data-stu-id="7f3ed-126">Initial response</span></span>
+## <a name="initial-response"></a><span data-ttu-id="bb944-126">初始响应</span><span class="sxs-lookup"><span data-stu-id="bb944-126">Initial response</span></span>
 
-<span data-ttu-id="7f3ed-p106">如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](/graph/api/resources/user?view=graph-rest-1.0)集合对象。假定整组用户过大，则响应还将包含 nextLink 状态令牌。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p106">If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user?view=graph-rest-1.0) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.</span></span>
+<span data-ttu-id="bb944-p106">如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](/graph/api/resources/user?view=graph-rest-1.0)集合对象。假定整组用户过大，则响应还将包含 nextLink 状态令牌。</span><span class="sxs-lookup"><span data-stu-id="bb944-p106">If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user?view=graph-rest-1.0) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.</span></span>
 
-<span data-ttu-id="7f3ed-p107">本示例中，返回 nextLink URL，表示此会话存在要检索的其他数据页面。初始请求的 $select 查询参数已编码为 nextLink URL。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p107">In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.</span></span>
+<span data-ttu-id="bb944-p107">本示例中，返回 nextLink URL，表示此会话存在要检索的其他数据页面。初始请求的 $select 查询参数已编码为 nextLink URL。</span><span class="sxs-lookup"><span data-stu-id="bb944-p107">In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -75,17 +76,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="nextlink-request"></a><span data-ttu-id="7f3ed-131">nextLink 请求</span><span class="sxs-lookup"><span data-stu-id="7f3ed-131">nextLink request</span></span>
+## <a name="nextlink-request"></a><span data-ttu-id="bb944-131">nextLink 请求</span><span class="sxs-lookup"><span data-stu-id="bb944-131">nextLink request</span></span>
 
-<span data-ttu-id="7f3ed-p108">第二个请求指定上一个响应中返回的 `skipToken`。请注意不需要 `$select` 参数，因为 `skipToken` 已将其编码且包含其中。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p108">The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is not required, as the `skipToken` encodes and includes it.</span></span>
+<span data-ttu-id="bb944-p108">第二个请求指定上一个响应中返回的 `skipToken`。请注意不需要 `$select` 参数，因为 `skipToken` 已将其编码且包含其中。</span><span class="sxs-lookup"><span data-stu-id="bb944-p108">The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is not required, as the `skipToken` encodes and includes it.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
-## <a name="nextlink-response"></a><span data-ttu-id="7f3ed-134">nextLink 响应</span><span class="sxs-lookup"><span data-stu-id="7f3ed-134">nextLink response</span></span>
+## <a name="nextlink-response"></a><span data-ttu-id="bb944-134">nextLink 响应</span><span class="sxs-lookup"><span data-stu-id="bb944-134">nextLink response</span></span>
 
-<span data-ttu-id="7f3ed-p109">该响应包含 `nextLink` 和另一个 `skipToken`，表示存在更多可用的用户。继续使用 nextLink URL 发出请求，直到响应中返回 deltaLink URL。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p109">The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.</span></span>
+<span data-ttu-id="bb944-p109">该响应包含 `nextLink` 和另一个 `skipToken`，表示存在更多可用的用户。继续使用 nextLink URL 发出请求，直到响应中返回 deltaLink URL。</span><span class="sxs-lookup"><span data-stu-id="bb944-p109">The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -111,17 +112,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="final-nextlink-request"></a><span data-ttu-id="7f3ed-137">最终 nextLink 请求</span><span class="sxs-lookup"><span data-stu-id="7f3ed-137">Final nextLink request</span></span>
+## <a name="final-nextlink-request"></a><span data-ttu-id="bb944-137">最终 nextLink 请求</span><span class="sxs-lookup"><span data-stu-id="bb944-137">Final nextLink request</span></span>
 
-<span data-ttu-id="7f3ed-138">第三个请求继续使用上次同步请求返回的最新 `skipToken`。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-138">The third request continues to use the latest `skipToken` returned from the last sync request.</span></span> 
+<span data-ttu-id="bb944-138">第三个请求继续使用上次同步请求返回的最新 `skipToken`。</span><span class="sxs-lookup"><span data-stu-id="bb944-138">The third request continues to use the latest `skipToken` returned from the last sync request.</span></span> 
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
 ```
 
-## <a name="final-nextlink-response"></a><span data-ttu-id="7f3ed-139">最终 nextLink 响应</span><span class="sxs-lookup"><span data-stu-id="7f3ed-139">Final nextLink response</span></span>
+## <a name="final-nextlink-response"></a><span data-ttu-id="bb944-139">最终 nextLink 响应</span><span class="sxs-lookup"><span data-stu-id="bb944-139">Final nextLink response</span></span>
 
-<span data-ttu-id="7f3ed-p110">当返回 deltaLink URL 时，不再返回关于资源现有状态的数据。为了执行以后的请求，应用程序使用 deltaLink URL 了解资源更改。保存 `deltaToken`，并在请求 URL 中使用它来发现用户更改。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-p110">When the deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource. Save the `deltaToken` and use it in the request URL to discover changes to users.</span></span> 
+<span data-ttu-id="bb944-p110">当返回 deltaLink URL 时，不再返回关于资源现有状态的数据。为了执行以后的请求，应用程序使用 deltaLink URL 了解资源更改。保存 `deltaToken`，并在请求 URL 中使用它来发现用户更改。</span><span class="sxs-lookup"><span data-stu-id="bb944-p110">When the deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource. Save the `deltaToken` and use it in the request URL to discover changes to users.</span></span> 
 
 ```http
 HTTP/1.1 200 OK
@@ -147,17 +148,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="deltalink-request"></a><span data-ttu-id="7f3ed-143">deltaLink 请求</span><span class="sxs-lookup"><span data-stu-id="7f3ed-143">deltaLink request</span></span>
+## <a name="deltalink-request"></a><span data-ttu-id="bb944-143">deltaLink 请求</span><span class="sxs-lookup"><span data-stu-id="bb944-143">deltaLink request</span></span>
 
-<span data-ttu-id="7f3ed-144">通过使用[上次响应](#final-nextlink-response)中的 `deltaToken`，你将能够获取上次请求以来的已更改用户（添加、删除或更新）。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-144">Using the `deltaToken` from the [last response](#final-nextlink-response), you will be able to get changed (by being added, deleted, or updated) users since the last request.</span></span>
+<span data-ttu-id="bb944-144">通过使用[上次响应](#final-nextlink-response)中的 `deltaToken`，你将能够获取上次请求以来的已更改用户（添加、删除或更新）。</span><span class="sxs-lookup"><span data-stu-id="bb944-144">Using the `deltaToken` from the [last response](#final-nextlink-response), you will be able to get changed (by being added, deleted, or updated) users since the last request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
-## <a name="deltalink-response"></a><span data-ttu-id="7f3ed-145">deltaLink 响应</span><span class="sxs-lookup"><span data-stu-id="7f3ed-145">deltaLink response</span></span>
+## <a name="deltalink-response"></a><span data-ttu-id="bb944-145">deltaLink 响应</span><span class="sxs-lookup"><span data-stu-id="bb944-145">deltaLink response</span></span>
 
-<span data-ttu-id="7f3ed-146">如果未发生更改，则会返回同一 `deltaToken` 且无返回结果。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-146">If no changes have occurred, the same `deltaToken` is returned with no results.</span></span>
+<span data-ttu-id="bb944-146">如果未发生更改，则会返回同一 `deltaToken` 且无返回结果。</span><span class="sxs-lookup"><span data-stu-id="bb944-146">If no changes have occurred, the same `deltaToken` is returned with no results.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -170,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="7f3ed-147">如果发生更改，便会返回相同的 `deltaToken`，其中包括已更改用户的集合。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-147">If changes have occurred, the same `deltaToken` is returned including a collection of changed users.</span></span>
+<span data-ttu-id="bb944-147">如果发生更改，便会返回相同的 `deltaToken`，其中包括已更改用户的集合。</span><span class="sxs-lookup"><span data-stu-id="bb944-147">If changes have occurred, the same `deltaToken` is returned including a collection of changed users.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -196,13 +197,13 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="7f3ed-148">上面示例响应的一些注意事项如下：</span><span class="sxs-lookup"><span data-stu-id="7f3ed-148">Some things to note about the example response above:</span></span>
+<span data-ttu-id="bb944-148">上面示例响应的一些注意事项如下：</span><span class="sxs-lookup"><span data-stu-id="bb944-148">Some things to note about the example response above:</span></span>
 
-- <span data-ttu-id="7f3ed-149">如果用户遭删除，项中包含注释：`@removed` 值为 `"reason": "changed"`。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-149">When the user is deleted, the item contains an annotation: `@removed` with value of `"reason": "changed"`.</span></span>
+- <span data-ttu-id="bb944-149">如果用户遭删除，项中包含注释：`@removed` 值为 `"reason": "changed"`。</span><span class="sxs-lookup"><span data-stu-id="bb944-149">When the user is deleted, the item contains an annotation: `@removed` with value of `"reason": "changed"`.</span></span>
 
-- <span data-ttu-id="7f3ed-150">如果用户遭永久删除，项中包含注释：`@removed` 值为 `"reason": "deleted"`。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-150">When the user is permanently deleted, the item contains an annotation: `@removed` with value of `"reason": "deleted"`.</span></span>
+- <span data-ttu-id="bb944-150">如果用户遭永久删除，项中包含注释：`@removed` 值为 `"reason": "deleted"`。</span><span class="sxs-lookup"><span data-stu-id="bb944-150">When the user is permanently deleted, the item contains an annotation: `@removed` with value of `"reason": "deleted"`.</span></span>
 
-- <span data-ttu-id="7f3ed-151">如果用户被创建或恢复，则没有注释。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-151">When the user is created, or restored, there is no annotation.</span></span>
+- <span data-ttu-id="bb944-151">如果用户被创建或恢复，则没有注释。</span><span class="sxs-lookup"><span data-stu-id="bb944-151">When the user is created, or restored, there is no annotation.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7f3ed-152">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7f3ed-152">See also</span></span>
-<span data-ttu-id="7f3ed-153">[Microsoft Graph delta 查询](delta-query-overview.md)概述。</span><span class="sxs-lookup"><span data-stu-id="7f3ed-153">[Microsoft Graph delta query](delta-query-overview.md) overview.</span></span>
+## <a name="see-also"></a><span data-ttu-id="bb944-152">另请参阅</span><span class="sxs-lookup"><span data-stu-id="bb944-152">See also</span></span>
+<span data-ttu-id="bb944-153">[Microsoft Graph delta 查询](delta-query-overview.md)概述。</span><span class="sxs-lookup"><span data-stu-id="bb944-153">[Microsoft Graph delta query](delta-query-overview.md) overview.</span></span>
