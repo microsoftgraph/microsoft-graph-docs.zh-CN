@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 40dcee9163acdfe5fd0a146687a5867172a238c0
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 57e2590ca33bdbad46fafbc526fb8251ac0f7243
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722284"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113929"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 
@@ -45,7 +45,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功, 则在`200 OK`响应正文中返回具有[synchronizationJob](../resources/synchronization-synchronizationjob.md)的响应。
+如果成功，则在`200 OK`响应正文中返回具有[synchronizationJob](../resources/synchronization-synchronizationjob.md)的响应。
 
 ## <a name="example"></a>示例
 
@@ -111,7 +111,13 @@ Content-length: 2577
         "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",
         "quarantine": null,
         "troubleshootingUrl": null
-    }
+    },
+    "synchronizationJobSettings": [
+      {
+          "name": "QuarantineTooManyDeletesThreshold",
+          "value": "500"
+      }
+    ]
 }
 ```
 

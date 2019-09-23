@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6622bc7859ae8118a129c555349f391891f9c1a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b5a781b6f6c4e3aeea7941ed956b99f182dc3110
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718396"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113861"
 ---
 # <a name="list-replies"></a>列表答复
 
@@ -29,7 +29,7 @@ ms.locfileid: "36718396"
 | 应用程序                            | Chat.Read.All |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前, 您必须请求访问权限。 有关详细信息, 请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，您必须请求访问权限。 有关详细信息，请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,6 @@ ms.locfileid: "36718396"
 
 ```http
 GET /chats/{id}/messages/{id}/replies
-GET /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -93,7 +92,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 159798c8bbb7ace51ee8a4d0d00ab78cf54570c6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1d34841cdc499e2bd0324cba8244f0551362b640
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724167"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113868"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -22,9 +22,9 @@ ms.locfileid: "36724167"
 
 不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
-您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。
+您可以对邮件进行筛选，并只获取那些包含已登录[用户的说明](../resources/mention.md)。
 
-请注意, 默认情况下`GET /me/messages` , 该操作不会返回**提及**属性。 使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。
+请注意，默认情况下`GET /me/messages` ，该操作不会返回**提及**属性。 使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。
 
 在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
@@ -59,7 +59,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-若要获取用户邮箱中包含用户**提及**的所有邮件, 请执行以下操作:
+若要获取用户邮箱中包含用户**提及**的所有邮件，请执行以下操作：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -72,6 +72,18 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 您可以使用`$filter` **mentionsPreview**属性上的查询参数来获取那些提及已登录用户的消息。
 
+### <a name="using-filter-and-orderby-in-the-same-query"></a>在同一查询中使用筛选器和 orderby
+在使用`$filter`和`$orderby`在同一查询中获取邮件时，请务必按以下方式指定属性：
+
+1. 中`$orderby`显示的属性也必须出现在`$filter`中。 
+2. 中`$orderby`出现的属性的顺序与中`$filter`的顺序相同。
+3. 中`$orderby`存在的属性将出现在`$filter`任何不是的属性之前。
+
+如果不这样做，则会导致以下错误：
+
+- 错误代码：`InefficientFilter`
+- 错误消息：`The restriction or sort order is too complex for this operation.`
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -83,7 +95,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[message](../resources/message.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[message](../resources/message.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
@@ -223,7 +235,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>请求 2
-下一个示例将对登录用户邮箱中的所有邮件进行筛选, 以查找那些提及该用户的邮件。 它还`$select`用于在响应中返回每个邮件的属性子集。 
+下一个示例将对登录用户邮箱中的所有邮件进行筛选，以查找那些提及该用户的邮件。 它还`$select`用于在响应中返回每个邮件的属性子集。 
 
 该示例还合并了查询参数字符串中的空格字符的 URL 编码。
 

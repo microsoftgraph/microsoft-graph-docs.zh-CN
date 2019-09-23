@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 083f5aa2a7308b808cc19f5238e625e176dd83eb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1f261ad2463aa191e892f245d99916c5da8abab3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418106"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113840"
 ---
 # <a name="create-chatmessage-reply-in-a-channel"></a>在频道中创建了 chatmessage 回复
 
@@ -34,7 +34,6 @@ ms.locfileid: "36418106"
 
 ```http
 POST /chats/{id}/messages/{id}/replies
-POST /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -45,11 +44,11 @@ POST /users/{id}/chats/{id}/messages/{id}/replies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。
+在请求正文中，提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -93,7 +92,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

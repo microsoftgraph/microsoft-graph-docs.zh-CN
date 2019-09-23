@@ -5,19 +5,19 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1eb442b6f3317ac7c0e2f130442e4a62c7f9c152
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: ce99713637d7607caed40451a0716cb0acde14e4
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841323"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113906"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>onPremisesPublishingProfile 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-各种 Azure 服务 (例如, Azue Active Directory Connect 直通 Authentication、从 Workday 到 Azure AD 用户预配) 允许从公司网络外部对各种本地资源进行条件访问。 可将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理特定的[已发布资源](publishedresource.md)的请求。
-通过[代理组](onpremisesagentgroup.md), 租户管理员可以分配特定的代理来服务特定的已发布内部部署资源。 租户管理员可以将许多代理组合在一起, 然后将每个已发布的资源分配给一个组。 同一本地发布类型的整个实体集由**onPremisesPublishingProfile**表示。
+各种 Azure 服务（例如，Azure Active Directory Connect 直通身份验证、从 Workday 到 Azure AD 用户预配）允许有条件访问公司网络外部的各种本地资源。 可将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理特定的[已发布资源](publishedresource.md)的请求。
+通过[代理组](onpremisesagentgroup.md)，租户管理员可以分配特定的代理来服务特定的已发布内部部署资源。 租户管理员可以将许多代理组合在一起，然后将每个已发布的资源分配给一个组。 同一本地发布类型的整个实体集由**onPremisesPublishingProfile**表示。
 
 ## <a name="methods"></a>方法
 

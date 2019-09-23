@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 5f38bcbb79600a009a11fcb300e21742069c9f65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9b67e60f25f6b180235d256da094d9ee35174be6
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722333"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113924"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
@@ -18,15 +18,15 @@ ms.locfileid: "36722333"
 
 列出组织中符合提供的筛选条件和查询选项的可用[网站][]。
 
-目前仅支持以下查询选项:
+目前仅支持以下查询选项：
 
 | Filter 语句             | Select 语句        | 说明
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织中的所有根级别网站集。 对于发现每个地理位置的主站点很有用。
 
-此外, 您可以对 "/sites" 集合使用**[搜索][]** 查询来查找与给定关键字匹配的网站。
+此外，您可以对 "/sites" 集合使用**[$search][]** 查询，以查找与给定关键字匹配的网站。
 
-[查询]: site-search.md
+[$search]: site-search.md
 [网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
@@ -44,7 +44,7 @@ ms.locfileid: "36722333"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
+GET https://graph.microsoft.com/beta/sites?$filter=siteCollection/root ne null
 ```
 
 ## <a name="example"></a>示例
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
+GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
