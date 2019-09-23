@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: ffe6ac986d3b8518d11e50ca948478e26ffa0f8b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 45edb046cbf6ceffe9451a09ce7098bfb505dc27
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792917"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036366"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1068,6 +1068,38 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 ---
 
+## <a name="policy-permissions"></a>策略权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
+| _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
+| _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Policy.Read.All_ | 阅读你组织的策略 | 允许应用无需登录的用户即可读取你所在组织的所有策略。 | 是 |
+| _Policy.Read.FeatureRollout_ | 读取和写入功能推出策略 | 允许用户无需登录的用户即可读取和写入功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 |
+| _Policy.Read.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用无需登录的用户即可读取和写入你所在组织的信任框架策略。 | 是 |
+
+### <a name="example-usage"></a>用法示例
+
+以下用法对委派权限和应用程序权限均有效：
+
+* _Policy.Read.All_读取你所在组织的策略 (`GET /policies`)
+* _Policy.Read.All_读取你所在组织的信任框架策略 (`GET /beta/trustFramework/policies`)
+* _Policy.Read.All_读取你所在组织的功能推出策略 (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
 ## <a name="programs-and-program-controls-permissions"></a>程序和程序控制权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1294,30 +1326,6 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 ---
 
-## <a name="trust-framework-policy-permissions"></a>信任框架策略权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
-| _Policy.ReadWrite.TrustFramework_ | 读取和写入你组织的信任框架策略 | 允许应用代表已登录用户读取和写入你组织的信任框架策略。 | 是 | 否 |
-
-### <a name="remarks"></a>注解
-工作或学校帐户必须是租户的全局管理员。
-
-### <a name="example-usage"></a>用法示例
-
-#### <a name="delegated"></a>委派
-以下使用对两种委派权限均有效：
-
-* _Policy.Read.All_：阅读你组织的策略 (`GET /beta/trustFramework/policies`)
-* _Policy.ReadWrite.TrustFramework_：读取和写入你组织的信任框架策略 (`POST /beta/trustFramework/policies`)
-
-有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
-
----
-
 ## <a name="user-permissions"></a>用户权限
 
 #### <a name="delegated-permissions"></a>委派权限
@@ -1431,33 +1439,6 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 *   _UserActivity.ReadWrite.CreatedByApp_：发布或更新指定用户活动的历史记录项，以表示用户参与的时间段。 (PUT /me/activities/{id}/historyItems/{id})。
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除用户活动或删除无效数据。 (DELETE /me/activities/{id})。
 *   _UserActivity.ReadWrite.CreatedByApp_：根据用户发起的请求删除历史记录项或删除无效数据。 (DELETE /me/activities/{id}/historyItems/{id})。
-
----
-
-## <a name="feature-rollout-policy-permissions"></a>功能推出策略权限
-
-#### <a name="delegated-permissions"></a>委派权限
-
-|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | 阅读你组织的策略 | 允许应用代表已登录用户阅读你组织的策略。 | 是 | 否 |
-| _Policy.ReadWrite.FeatureRollout_ | 读取和写入你组织的功能推出策略 | 允许应用代表已登录用户读取和写入你组织的功能推出策略。 包括分配用户和组来推出特定功能以及删除此类用户和组的能力。 | 是 | 否 |
-
-#### <a name="application-permissions"></a>应用程序权限
-无。
-
-### <a name="remarks"></a>说明
-工作或学校帐户必须是租户的全局管理员。
-
-### <a name="example-usage"></a>用法示例
-
-#### <a name="delegated"></a>委派
-以下使用对两种委派权限均有效：
-
-* _Policy.Read.All_：阅读你组织的策略 (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_：读取和写入你组织的功能推出策略 (`POST /beta/directory/featureRolloutPolicies`)
-
-有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
 

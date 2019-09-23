@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 51fbd91d521baef806ad91840e7971bc59f03bd0
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 460343393569b1f65e11cc082343e65ee34f199f
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719813"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053947"
 ---
 # <a name="list-chat-messages"></a>列出聊天消息
 
@@ -26,7 +26,7 @@ ms.locfileid: "36719813"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.Read   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Chat.Read.All   |
+|应用程序 | 不支持。   |
 
 > [!NOTE]
 > 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

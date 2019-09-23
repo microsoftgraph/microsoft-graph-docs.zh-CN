@@ -30,6 +30,8 @@ items:
         items:
           - name: 概述
             href: tutorials.md
+          - name: .NET Core
+            href: /graph/tutorials/dotnet-core
           - name: Android
             href: /graph/tutorials/android
           - name: Angular
@@ -38,6 +40,10 @@ items:
             href: /graph/tutorials/aspnet
           - name: Microsoft Flow
             href: /graph/tutorials/flow
+          - name: iOS Objective-C
+            href: /graph/tutorials/ios-objectivec
+          - name: iOS Swift
+            href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
           - name: Node.js
@@ -48,6 +54,8 @@ items:
             href: /graph/tutorials/python
           - name: React
             href: /graph/tutorials/react
+          - name: React Native
+            href: /graph/tutorials/react-native
           - name: Ruby
             href: /graph/tutorials/ruby
           - name: UWP
@@ -122,13 +130,13 @@ items:
             href: education-rubric-overview.md
       - name: 文件
         href: onedrive-concept-overview.md
-        displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+        displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
       - name: Financials（预览版）
         href: dynamics-business-central-concept-overview.md
         displayname: 'Dynamics, Dynamics 365 Business Central'
       - name: 身份和访问控制
         href: azuread-identity-access-management-concept-overview.md
-        displaName: 'Azure AD, Microsoft identity platform'
+        displayName: 'Azure AD, Microsoft identity platform'
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
@@ -225,7 +233,7 @@ items:
             href: security-partner-overview.md
       - name: 网站和列表
         href: sharepoint-concept-overview.md
-        displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
+        displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
       - name: 社交和工作场所智能
         items:
           - name: 概述
@@ -301,7 +309,7 @@ items:
           - name: 限制
             href: throttling.md
           - name: 更改通知
-            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
               - name: 概述
                 href: webhooks.md

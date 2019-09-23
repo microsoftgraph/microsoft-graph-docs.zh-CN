@@ -4,12 +4,12 @@ description: Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 124a2f96f2c59909311fad605beeb1273193d8af
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf8f977d2a8d8e9e9704118718ac0c8da9b6ae77
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364528"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036317"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Microsoft Teams 中的受保护 API
 
@@ -22,6 +22,9 @@ Microsoft Graph 中用于访问敏感数据的 Microsoft Teams API 被视为受�
 * 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[获取消息回复](/graph/api/channel-get-messagereply?view=graph-rest-beta)
 * 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[列出聊天中的消息](/graph/api/chatmessage-list?view=graph-rest-beta)
 * 使用[应用程序权限](auth/auth-concepts.md#microsoft-graph-permissions)的[获取聊天中的消息](/graph/api/chatmessage-get?view=graph-rest-beta)
+
+>[!NOTE]
+>[发送消息](/graph/api/channel-post-messages?view=graph-rest-beta) API 不受保护。
 
 要请求访问这些受保护的 API，请填写下述[请求表单](http://aka.ms/teamsgraph/requestaccess)。 我们每周三查看访问权限请求，每周五部署批准。
 如果除了表单，还想要提供其他信息，可与 [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com) 联系。

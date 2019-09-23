@@ -1,21 +1,19 @@
 ---
 title: 获取 Outlook 资源的不可变标识符
-description: Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
+description: 借助不可变标识符，应用程序可为 Outlook 项获取在项生存期内保持不变的 ID。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e0ddee215b7574e152fa5ffc574d218d5a2f811a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2cdd301bfa9949d750ac3eb0813c958ccc7161d
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554630"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036373"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
 Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你可能从未注意到或已给你带来了极大挫败感，即它们的 ID 会变。 虽然这一行为不是经常发生（只在项移动时才会发生），但对于脱机存储 ID 以供日后使用的应用来说，这可能会导致真正的问题出现。 借助不可变标识符，应用可以获取在项生存期内不变的 ID。
-
-> **重要说明：** 不可变标识符仅适用于 Microsoft Graph /beta 版本。
 
 ## <a name="how-it-works"></a>运作方式
 
@@ -38,18 +36,18 @@ Prefer: IdType="ImmutableId"
 
 以下项支持不可变 ID：
 
-- [message 资源类型](/graph/api/resources/message?view=graph-rest-beta)
-- [attachment 资源类型](/graph/api/resources/attachment?view=graph-rest-beta)
-- [event 资源类型](/graph/api/resources/event?view=graph-rest-beta)
-- [eventMessage 资源类型](/graph/api/resources/eventmessage?view=graph-rest-beta)
-- [contact 资源类型](/graph/api/resources/contact?view=graph-rest-beta)
-- [outlookTask 资源类型](/graph/api/resources/outlooktask?view=graph-rest-beta)
+- [message 资源类型](/graph/api/resources/message)
+- [attachment 资源类型](/graph/api/resources/attachment)
+- [event 资源类型](/graph/api/resources/event)
+- [eventMessage 资源类型](/graph/api/resources/eventmessage)
+- [contact 资源类型](/graph/api/resources/contact)
+- [outlookTask 资源类型](/graph/api/resources/outlooktask)
 
 虽然容器类型（mailFolder、calendar 等）不支持不可变 ID，但其常规 ID 已是常量。
 
 ## <a name="immutable-id-with-change-notifications"></a>使用更改通知发送不可变 ID
 
-可以在[创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)时添加 `Prefer: IdType="ImmutableId"` 头，从而请求 Microsoft Graph 在更改通知中发送不可变 ID。 未使用此头创建的的现有订阅将继续使用默认 ID 格式。 为了将现有订阅切换为使用不可变 ID，必须先删除它们，再使用此头重新创建它们。
+可以在[创建订阅](/graph/api/subscription-post-subscriptions)时添加 `Prefer: IdType="ImmutableId"` 头，从而请求 Microsoft Graph 在更改通知中发送不可变 ID。 未使用此头创建的的现有订阅将继续使用默认 ID 格式。 为了将现有订阅切换为使用不可变 ID，必须先删除它们，再使用此头重新创建它们。
 
 ## <a name="immutable-id-with-delta-query"></a>使用 delta 查询发送不可变 ID
 
@@ -57,9 +55,10 @@ Prefer: IdType="ImmutableId"
 
 ## <a name="updating-existing-data"></a>更新现有数据
 
-如果已获取填充有数千个常规 ID 的数据库，可使用 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta) 函数将这些 ID 迁移为不可变格式。 可以提供一组要转换为目标格式的 ID（最多 1000 个）。
+如果已获取填充有数千个常规 ID 的数据库，可使用 [translateExchangeIds](/graph/api/user-translateexchangeids) 函数将这些 ID 迁移为不可变格式。 可以提供一组要转换为目标格式的 ID（最多 1000 个）。
 
-> **注意：** 也可以使用 `translateExchangeIds` 将 Exchange Web 服务应用迁移到 Microsoft Graph。
+> [!NOTE]
+> 还可使用 `translateExchangeIds` 将 Exchange Web 服务应用程序迁移到 Microsoft Graph。
 
 ### <a name="example"></a>示例
 
@@ -68,7 +67,7 @@ Prefer: IdType="ImmutableId"
 #### <a name="request"></a>请求
 
 ```http
-POST https://graph.microsoft.com/beta/me/translateExchangeIds
+POST https://graph.microsoft.com/v1.0/me/translateExchangeIds
 
 {
   "inputIds" :

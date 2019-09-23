@@ -4,12 +4,12 @@ description: 电子邮件通过 Microsoft Graph 中的邮件资源表示。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 050807fb13f91c506268aadde6757c2de1c4d30c
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440085"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036079"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>自动创建、发送和处理邮件
 
@@ -25,7 +25,7 @@ ms.locfileid: "33440085"
 
 要以编程方式区分草稿和已发送邮件，请选中 **isDraft** 属性。
 
-默认情况下，草稿邮件保存在 `Drafts` 文件夹中，已发送邮件保存在 `Sent Items` 文件夹中。 为方便起见，可以通过相应的[已知文件夹名称](/graph/api/resources/mailfolder?view=graph-rest-1.0)来识别 Drafts 文件夹和 SentItems 文件夹。 
+默认情况下，草稿邮件保存在 `Drafts` 文件夹中，已发送邮件保存在 `Sent Items` 文件夹中。 为方便起见，可以通过相应的[已知文件夹名称](/graph/api/resources/mailfolder?view=graph-rest-1.0)来识别 Drafts 文件夹和 SentItems 文件夹。
 
 ### <a name="setting-the-from-and-sender-properties"></a>设置 from 和 sender 属性
 
@@ -112,5 +112,5 @@ Prefer: outlook.allow-unsafe-html
 - [获取 MIME 内容（预览版）](outlook-get-mime-message.md)
 - [获取共享邮件](outlook-share-messages-folders.md)
 - [从其他用户身份发送 Outlook 邮件](outlook-send-mail-from-other-user.md)
-- [获取 Outlook 资源的不可变标识符（预览版）](outlook-immutable-id.md)
+- [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
 - [使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。
