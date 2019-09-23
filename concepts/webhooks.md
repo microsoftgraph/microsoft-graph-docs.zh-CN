@@ -3,12 +3,12 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 43e4e4893cae46bb5d3bcecc1f0d7e96da4ccfed
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: c07a1e0fb6465a872a1a2e80d4087878c139aabf
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133780"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041931"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -224,15 +224,15 @@ notification 对象具有以下属性：
 
 应处理你的应用收到的每个通知。 应用程序必须至少执行以下任务来处理通知：
 
+1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 未收到 2xx 类代码，它将在大约 4 小时的一段时间内尝试多次发布通知，之后，通知将被删除，且不会发送。
+
+    > **************************************************************************************************************************************************************************************************************************** 只是确认接收通知，防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。
+
 1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 
     > **注意：** 如果不符合这个条件，无需将其视为有效通知。 通知可能不是来自 Microsoft Graph，并且可能是由未授权操作者发送的。 还应调查通知来自何处并采取适当的措施。
 
 1. 基于业务逻辑更新应用程序。
-
-1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 没有收到 2xx 类代码，它将重试多次发送通知。
-
-    > **注意：** 即使 `clientState` 属性与订阅请求提交的属性不匹配，也应发送 `202 - Accepted` 状态代码。 这是一个很好的做法，因为它可以防止潜在的未授权操作者发现你可能不信任他们的通知，并且可能使用该信息来猜测 `clientState` 属性的值。
 
 对请求中的其他通知重复该过程。
 
