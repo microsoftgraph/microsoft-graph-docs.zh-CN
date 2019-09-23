@@ -5,77 +5,76 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 5f38bcbb79600a009a11fcb300e21742069c9f65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9b67e60f25f6b180235d256da094d9ee35174be6
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722333"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113924"
 ---
-# <a name="enumerate-sites"></a><span data-ttu-id="f2b23-103">枚举网站</span><span class="sxs-lookup"><span data-stu-id="f2b23-103">Enumerate sites</span></span>
+# <a name="enumerate-sites"></a><span data-ttu-id="d576f-103">枚举网站</span><span class="sxs-lookup"><span data-stu-id="d576f-103">Enumerate sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f2b23-104">列出组织中符合提供的筛选条件和查询选项的可用[网站][]。</span><span class="sxs-lookup"><span data-stu-id="f2b23-104">List the available [sites][] in an organization that match provided filter criteria and query options.</span></span>
+<span data-ttu-id="d576f-104">列出组织中符合提供的筛选条件和查询选项的可用[网站][]。</span><span class="sxs-lookup"><span data-stu-id="d576f-104">List the available [sites][] in an organization that match provided filter criteria and query options.</span></span>
 
-<span data-ttu-id="f2b23-105">目前仅支持以下查询选项:</span><span class="sxs-lookup"><span data-stu-id="f2b23-105">Only the following query options are currently supported:</span></span>
+<span data-ttu-id="d576f-105">目前仅支持以下查询选项：</span><span class="sxs-lookup"><span data-stu-id="d576f-105">Only the following query options are currently supported:</span></span>
 
-| <span data-ttu-id="f2b23-106">Filter 语句</span><span class="sxs-lookup"><span data-stu-id="f2b23-106">Filter statement</span></span>             | <span data-ttu-id="f2b23-107">Select 语句</span><span class="sxs-lookup"><span data-stu-id="f2b23-107">Select statement</span></span>        | <span data-ttu-id="f2b23-108">说明</span><span class="sxs-lookup"><span data-stu-id="f2b23-108">Description</span></span>
+| <span data-ttu-id="d576f-106">Filter 语句</span><span class="sxs-lookup"><span data-stu-id="d576f-106">Filter statement</span></span>             | <span data-ttu-id="d576f-107">Select 语句</span><span class="sxs-lookup"><span data-stu-id="d576f-107">Select statement</span></span>        | <span data-ttu-id="d576f-108">说明</span><span class="sxs-lookup"><span data-stu-id="d576f-108">Description</span></span>
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | <span data-ttu-id="f2b23-109">列出组织中的所有根级别网站集。</span><span class="sxs-lookup"><span data-stu-id="f2b23-109">Lists all root-level site collections in the organization.</span></span> <span data-ttu-id="f2b23-110">对于发现每个地理位置的主站点很有用。</span><span class="sxs-lookup"><span data-stu-id="f2b23-110">Useful for discovering the home site for each geography.</span></span>
+|`siteCollection/root ne null` | `siteCollection,webUrl` | <span data-ttu-id="d576f-109">列出组织中的所有根级别网站集。</span><span class="sxs-lookup"><span data-stu-id="d576f-109">Lists all root-level site collections in the organization.</span></span> <span data-ttu-id="d576f-110">对于发现每个地理位置的主站点很有用。</span><span class="sxs-lookup"><span data-stu-id="d576f-110">Useful for discovering the home site for each geography.</span></span>
 
-<span data-ttu-id="f2b23-111">此外, 您可以对 "/sites" 集合使用**[搜索][]** 查询来查找与给定关键字匹配的网站。</span><span class="sxs-lookup"><span data-stu-id="f2b23-111">In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.</span></span>
+<span data-ttu-id="d576f-111">此外，您可以对 "/sites" 集合使用**[$search][]** 查询，以查找与给定关键字匹配的网站。</span><span class="sxs-lookup"><span data-stu-id="d576f-111">In addition, you may use a **[$search][]** query against the '/sites' collection to find sites matching given keywords.</span></span>
 
-[查询]: site-search.md
-[search]: site-search.md
+[$search]: site-search.md
 [网站]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="f2b23-114">权限</span><span class="sxs-lookup"><span data-stu-id="f2b23-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d576f-114">权限</span><span class="sxs-lookup"><span data-stu-id="d576f-114">Permissions</span></span>
 
-<span data-ttu-id="f2b23-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f2b23-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d576f-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d576f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2b23-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="f2b23-117">Permission type</span></span>                        | <span data-ttu-id="f2b23-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f2b23-118">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="d576f-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="d576f-117">Permission type</span></span>                        | <span data-ttu-id="d576f-118">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d576f-118">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="f2b23-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f2b23-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="f2b23-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2b23-120">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="f2b23-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f2b23-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2b23-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="f2b23-122">Not supported.</span></span>
-|<span data-ttu-id="f2b23-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="f2b23-123">Application</span></span>                            | <span data-ttu-id="f2b23-124">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2b23-124">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="d576f-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d576f-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="d576f-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d576f-120">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="d576f-121">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d576f-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d576f-122">不支持。</span><span class="sxs-lookup"><span data-stu-id="d576f-122">Not supported.</span></span>
+|<span data-ttu-id="d576f-123">应用程序</span><span class="sxs-lookup"><span data-stu-id="d576f-123">Application</span></span>                            | <span data-ttu-id="d576f-124">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d576f-124">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f2b23-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f2b23-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d576f-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d576f-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
+GET https://graph.microsoft.com/beta/sites?$filter=siteCollection/root ne null
 ```
 
-## <a name="example"></a><span data-ttu-id="f2b23-126">示例</span><span class="sxs-lookup"><span data-stu-id="f2b23-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d576f-126">示例</span><span class="sxs-lookup"><span data-stu-id="d576f-126">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f2b23-127">请求</span><span class="sxs-lookup"><span data-stu-id="f2b23-127">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d576f-127">请求</span><span class="sxs-lookup"><span data-stu-id="d576f-127">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f2b23-128">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="f2b23-128">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d576f-128">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="d576f-128">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
+GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f2b23-129">C#</span><span class="sxs-lookup"><span data-stu-id="f2b23-129">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d576f-129">C#</span><span class="sxs-lookup"><span data-stu-id="d576f-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2b23-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2b23-130">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d576f-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d576f-130">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2b23-131">目标-C</span><span class="sxs-lookup"><span data-stu-id="f2b23-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d576f-131">目标-C</span><span class="sxs-lookup"><span data-stu-id="d576f-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-sites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f2b23-132">响应</span><span class="sxs-lookup"><span data-stu-id="f2b23-132">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d576f-132">响应</span><span class="sxs-lookup"><span data-stu-id="d576f-132">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
