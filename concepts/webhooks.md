@@ -3,12 +3,13 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: c07a1e0fb6465a872a1a2e80d4087878c139aabf
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.custom: graphiamtop20
+ms.openlocfilehash: 85d654e6e42a271500ff8d0c2f3181e7d591f3a6
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041931"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053891"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -226,7 +227,7 @@ notification 对象具有以下属性：
 
 1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 未收到 2xx 类代码，它将在大约 4 小时的一段时间内尝试多次发布通知，之后，通知将被删除，且不会发送。
 
-    > **************************************************************************************************************************************************************************************************************************** 只是确认接收通知，防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。
+    > **注意：** 收到通知后立即发送 `202 - Accepted` 状态代码，甚至在验证其真实性之前。 只是确认接收通知，防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。
 
 1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 
