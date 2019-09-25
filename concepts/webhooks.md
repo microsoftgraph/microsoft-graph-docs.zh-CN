@@ -4,12 +4,12 @@ description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户�
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 85d654e6e42a271500ff8d0c2f3181e7d591f3a6
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 26afa7c71708f617038f8d66c64a7f2a65a1c8d9
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053891"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113875"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -67,6 +67,16 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - 不支持 Azure AD B2C 租户。
 
 - 个人 Microsoft 帐户不支持用户实体的通知。
+
+### <a name="outlook-resource-limitations"></a>Outlook 资源限制
+
+订阅 Outlook 资源（如**邮件**、**事件**或**联系人**）时，如果选择使用资源路径中的*用户主体名称* UPN，则在 UPN 包含撇号的情况下，订阅请求可能会失败。 请考虑使用 GUID 用户 ID 而不是 UPN，以避免遇到此问题。 例如，请勿使用资源路径：
+
+`/users/sh.o'neal@contoso.com/messages`
+
+请使用： 
+
+`/users/{guid-user-id}/messages`
 
 ## <a name="subscription-lifetime"></a>订阅生命周期
 
