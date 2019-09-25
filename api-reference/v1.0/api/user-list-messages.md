@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4e1930e3df3a7f72cb4d9b9701a08530f07043a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 6f0b1edb4de49294780f8d4e00fe9f3f3f6470f3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727458"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113938"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -56,6 +56,19 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+### <a name="using-filter-and-orderby-in-the-same-query"></a>在同一查询中使用 filter 和 orderby
+在同一查询中使用 `$filter` 和 `$orderby` 获取消息时，请确保按以下方式指定属性：
+
+1. `$orderby` 中显示的属性也必须在 `$filter` 中显示。 
+2. `$orderby` 中显示的属性与 `$filter` 中属性的顺序相同。
+3. `$orderby` 中存在的属性显示在 `$filter` 中不存在的任意属性之前。
+
+无法进行此项操作时会导致下列错误：
+
+- 错误代码：`InefficientFilter`
+- 错误消息：`The restriction or sort order is too complex for this operation.`
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|

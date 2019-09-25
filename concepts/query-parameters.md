@@ -5,12 +5,12 @@ author: piotrci
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1afae7cf577e098c7905cbb2623c0440f8d480ae
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 89809e080696163a4794fe554f73509e7f33b9d3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054074"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113812"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -137,7 +137,11 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 - 或 (`or`)
 - 非 (`not`)
  
-通常支持 `startswith` 字符串运算符。 某些 API 支持 `any` lambda 运算符。 有关一些用法示例的信息，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
+通常支持 `startswith` 字符串运算符。 某些 API 支持 `any` lambda 运算符。 
+
+> **注意：** 在同一查询中同时使用 `$filter` 和 `$orderby` 获取消息时，必须[以特定的方式指定属性](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query)。
+
+有关一些用法示例的信息，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
 
 下表展示了一些使用 `$filter` 查询参数的示例。
 
@@ -196,7 +200,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-如果指定 $filter，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter`，由于服务器始终推断 `$filter` 结果的排序顺序，因此必须先在 `$orderby` 中列出 `$filter` 的属性，然后再列出其他任何属性，且必须按照它们在 `$filter` 参数中的顺序列出这些属性。 
+> **注意：** 如果指定 $filter，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter` 获取消息，因为服务器始终会推断 `$filter` 结果的排序顺序，必须[以特定的方式指定属性](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query)。
+
 
 下面的示例展示了如何按 **subject** 和 **importance** 属性筛选查询，再按 **subject**、**importance** 和 **receivedDateTime** 属性进行降序排序。
 
