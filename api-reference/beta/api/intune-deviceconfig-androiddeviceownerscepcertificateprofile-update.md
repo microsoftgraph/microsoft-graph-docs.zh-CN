@@ -1,24 +1,24 @@
 ---
-title: 更新 androidForWorkEnterpriseWiFiConfiguration
-description: 更新 androidForWorkEnterpriseWiFiConfiguration 对象的属性。
+title: 更新 androidDeviceOwnerScepCertificateProfile
+description: 更新 androidDeviceOwnerScepCertificateProfile 对象的属性。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 136ee5f05a4468abe640783d46e878c4292807d1
+ms.openlocfilehash: 80ed9fe5db9810a3af215eeb1ff39acc7f978153
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37176637"
+ms.locfileid: "37171463"
 ---
-# <a name="update-androidforworkenterprisewificonfiguration"></a>更新 androidForWorkEnterpriseWiFiConfiguration
+# <a name="update-androiddeviceownerscepcertificateprofile"></a>更新 androidDeviceOwnerScepCertificateProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)对象的属性。
+更新[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)对象的 JSON 表示形式。
+在请求正文中，提供[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象的 JSON 表示形式。
 
-下表显示创建[androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)时所需的属性。
+下表显示创建[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -64,21 +64,25 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|networkName|String|从[AndroidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md)继承的网络名称|
-|ssid|String|这是广播到所有设备的 Wi-fi 网络的名称。 继承自[androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md)|
-|connectAutomatically|Boolean|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示，并自动将设备连接到 Wlan 网络。 继承自[androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|当设置为 true 时，此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。 继承自[androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md)|
-|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|指示 Wi-fi 终结点是否使用基于 EAP 的安全类型。 继承自[androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md)。 可取值为：`open`、`wpaEnterprise`、`wpa2Enterprise`。|
-|eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|指示 Wi-fi 终结点（路由器）上的 EAP 协议集的类型。 可取值为：`eapTls`、`eapTtls`、`peap`。|
-|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|指示在将 EAP 类型配置为 PEAP 或 EAP-TTLS 时，客户端（设备）需要使用的身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`derivedCredential`。|
-|innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|EAP 类型为 EAP 时，用于身份验证的非 EAP 方法（内部标识）-TTLS 和 Authenticationmethod 为用户名和密码。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
-|innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|当 EAP 类型为 PEAP 且 Authenticationmethod 为用户名和密码时，用于身份验证的非 EAP 方法（内部标识）。 可取值为：`none`、`microsoftChapVersionTwo`。|
-|outerIdentityPrivacyTemporaryValue|String|将 EAP 类型配置为 EAP-TTLS 或 PEAP 时启用标识隐私（外部标识）。 此处提供的字符串用于在用户尝试连接到 Wlan 网络时屏蔽各个用户的用户名。|
+|renewalThresholdPercentage|Int32|证书续订阈值百分比。 从[AndroidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)继承的有效值1到99|
+|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|证书使用者名称格式。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
+|certificateValidityPeriodValue|Int32|证书有效期限的值。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
+|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|证书有效期的小数位数。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)。 可取值为：`days`、`months`、`years`。|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)集合|扩展密钥用法（EKU）设置。 该集合最多可包含 500 个元素。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|证书使用者备用名称类型。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
+|scepServerUrls|String collection|SCEP 服务器 Url|
+|subjectNameFormatString|String|要与 SubjectNameFormat = Custom 一起使用的自定义格式。 示例： CN = {{EmailAddress}}，E = {{EmailAddress}}，OU = 企业用户，O = Contoso Corporation，L = Redmond，ST = WA，C = US|
+|keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP 密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
+|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|SCEP 密钥大小。 可取值为：`size1024`、`size2048`。|
+|hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP 哈希算法。 可取值为：`sha1`、`sha2`。|
+|subjectAlternativeNameFormatString|String|定义 AAD 属性的自定义字符串。|
+|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|目标存储证书。 可取值为：`user`、`machine`。|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)集合|自定义主题备用名称设置。 该集合最多可包含 500 个元素。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -87,10 +91,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1545
+Content-length: 1982
 
 {
-  "@odata.type": "#microsoft.graph.androidForWorkEnterpriseWiFiConfiguration",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -119,16 +123,34 @@ Content-length: 1545
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "networkName": "Network Name value",
-  "ssid": "Ssid value",
-  "connectAutomatically": true,
-  "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "wpaEnterprise",
-  "eapType": "eapTtls",
-  "authenticationMethod": "usernameAndPassword",
-  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+  "renewalThresholdPercentage": 10,
+  "subjectNameFormat": "commonNameIncludingEmail",
+  "certificateValidityPeriodValue": 14,
+  "certificateValidityPeriodScale": "months",
+  "extendedKeyUsages": [
+    {
+      "@odata.type": "microsoft.graph.extendedKeyUsage",
+      "name": "Name value",
+      "objectIdentifier": "Object Identifier value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress",
+  "scepServerUrls": [
+    "Scep Server Urls value"
+  ],
+  "subjectNameFormatString": "Subject Name Format String value",
+  "keyUsage": "digitalSignature",
+  "keySize": "size2048",
+  "hashAlgorithm": "sha2",
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ]
 }
 ```
 
@@ -137,11 +159,11 @@ Content-length: 1545
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1717
+Content-Length: 2154
 
 {
-  "@odata.type": "#microsoft.graph.androidForWorkEnterpriseWiFiConfiguration",
-  "id": "742d953a-953a-742d-3a95-2d743a952d74",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
+  "id": "7d8b9c9a-9c9a-7d8b-9a9c-8b7d9a9c8b7d",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -172,16 +194,34 @@ Content-Length: 1717
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "networkName": "Network Name value",
-  "ssid": "Ssid value",
-  "connectAutomatically": true,
-  "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "wpaEnterprise",
-  "eapType": "eapTtls",
-  "authenticationMethod": "usernameAndPassword",
-  "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-  "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+  "renewalThresholdPercentage": 10,
+  "subjectNameFormat": "commonNameIncludingEmail",
+  "certificateValidityPeriodValue": 14,
+  "certificateValidityPeriodScale": "months",
+  "extendedKeyUsages": [
+    {
+      "@odata.type": "microsoft.graph.extendedKeyUsage",
+      "name": "Name value",
+      "objectIdentifier": "Object Identifier value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress",
+  "scepServerUrls": [
+    "Scep Server Urls value"
+  ],
+  "subjectNameFormatString": "Subject Name Format String value",
+  "keyUsage": "digitalSignature",
+  "keySize": "size2048",
+  "hashAlgorithm": "sha2",
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ]
 }
 ```
 

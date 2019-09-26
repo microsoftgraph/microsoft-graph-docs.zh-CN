@@ -1,24 +1,24 @@
 ---
-title: 获取 macOSTrustedRootCertificate
-description: 读取 macOSTrustedRootCertificate 对象的属性和关系。
+title: 获取 androidDeviceOwnerScepCertificateProfile
+description: 读取 androidDeviceOwnerScepCertificateProfile 对象的属性和关系。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 54b1c16b0e9041138dab4b038b866626b6323f21
+ms.openlocfilehash: 56f269fbfaebd1b47a2f5ce8b5970c1dd23d72f7
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37183924"
+ms.locfileid: "37171467"
 ---
-# <a name="get-macostrustedrootcertificate"></a>获取 macOSTrustedRootCertificate
+# <a name="get-androiddeviceownerscepcertificateprofile"></a>获取 androidDeviceOwnerScepCertificateProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)对象的属性和关系。
+读取[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,8 +35,9 @@ ms.locfileid: "37183924"
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSEnterpriseWiFiConfiguration/rootCertificateForServerValidation
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -52,14 +53,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>响应
@@ -67,12 +68,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1397
+Content-Length: 2293
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.macOSTrustedRootCertificate",
-    "id": "c5fac954-c954-c5fa-54c9-fac554c9fac5",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
+    "id": "7d8b9c9a-9c9a-7d8b-9a9c-8b7d9a9c8b7d",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -103,8 +104,34 @@ Content-Length: 1397
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
-    "certFileName": "Cert File Name value"
+    "renewalThresholdPercentage": 10,
+    "subjectNameFormat": "commonNameIncludingEmail",
+    "certificateValidityPeriodValue": 14,
+    "certificateValidityPeriodScale": "months",
+    "extendedKeyUsages": [
+      {
+        "@odata.type": "microsoft.graph.extendedKeyUsage",
+        "name": "Name value",
+        "objectIdentifier": "Object Identifier value"
+      }
+    ],
+    "subjectAlternativeNameType": "emailAddress",
+    "scepServerUrls": [
+      "Scep Server Urls value"
+    ],
+    "subjectNameFormatString": "Subject Name Format String value",
+    "keyUsage": "digitalSignature",
+    "keySize": "size2048",
+    "hashAlgorithm": "sha2",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
+    ]
   }
 }
 ```

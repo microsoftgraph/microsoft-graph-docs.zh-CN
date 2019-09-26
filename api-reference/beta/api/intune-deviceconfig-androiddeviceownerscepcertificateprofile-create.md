@@ -1,24 +1,24 @@
 ---
-title: 创建 windows10ImportedPFXCertificateProfile
-description: 创建新的 windows10ImportedPFXCertificateProfile 对象。
+title: 创建 androidDeviceOwnerScepCertificateProfile
+description: 创建新的 androidDeviceOwnerScepCertificateProfile 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 712f15ced062ee89f5d3a70b4bd078358b9ffc5f
+ms.openlocfilehash: 3314ba1f9ed4862eb4d5f894a82f565aa51e1fc7
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37182601"
+ms.locfileid: "37171469"
 ---
-# <a name="create-windows10importedpfxcertificateprofile"></a>创建 windows10ImportedPFXCertificateProfile
+# <a name="create-androiddeviceownerscepcertificateprofile"></a>创建 androidDeviceOwnerScepCertificateProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)对象。
+创建新的[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,9 +46,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windows10ImportedPFXCertificateProfile 对象的 JSON 表示形式。
+在请求正文中，提供 androidDeviceOwnerScepCertificateProfile 对象的 JSON 表示形式。
 
-下表显示创建 windows10ImportedPFXCertificateProfile 时所需的属性。
+下表显示创建 androidDeviceOwnerScepCertificateProfile 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -63,18 +63,25 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|renewalThresholdPercentage|Int32|证书续订阈值百分比。 从[WindowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)继承的有效值1到99|
-|keyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|从[WindowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)继承的密钥存储提供程序（KSP）。 可取值为：`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp`。|
-|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|证书使用者名称格式继承自[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|证书使用者备用名称类型继承自[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
-|certificateValidityPeriodValue|Int32|继承自[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)的证书有效期限的值|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|从[WindowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)继承的证书有效期限的小数位数。 可取值为：`days`、`months`、`years`。|
-|intendedPurpose|[intendedPurpose](../resources/intune-deviceconfig-intendedpurpose.md)|尚未记录。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
+|renewalThresholdPercentage|Int32|证书续订阈值百分比。 从[AndroidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)继承的有效值1到99|
+|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|证书使用者名称格式。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
+|certificateValidityPeriodValue|Int32|证书有效期限的值。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
+|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|证书有效期的小数位数。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)。 可取值为：`days`、`months`、`years`。|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)集合|扩展密钥用法（EKU）设置。 该集合最多可包含 500 个元素。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|证书使用者备用名称类型。 继承自[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
+|scepServerUrls|String collection|SCEP 服务器 Url|
+|subjectNameFormatString|String|要与 SubjectNameFormat = Custom 一起使用的自定义格式。 示例： CN = {{EmailAddress}}，E = {{EmailAddress}}，OU = 企业用户，O = Contoso Corporation，L = Redmond，ST = WA，C = US|
+|keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP 密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
+|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|SCEP 密钥大小。 可取值为：`size1024`、`size2048`。|
+|hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP 哈希算法。 可取值为：`sha1`、`sha2`。|
+|subjectAlternativeNameFormatString|String|定义 AAD 属性的自定义字符串。|
+|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|目标存储证书。 可取值为：`user`、`machine`。|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)集合|自定义主题备用名称设置。 该集合最多可包含 500 个元素。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -83,10 +90,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1359
+Content-length: 1982
 
 {
-  "@odata.type": "#microsoft.graph.windows10ImportedPFXCertificateProfile",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -116,12 +123,33 @@ Content-length: 1359
   "displayName": "Display Name value",
   "version": 7,
   "renewalThresholdPercentage": 10,
-  "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
-  "intendedPurpose": "smimeEncryption"
+  "extendedKeyUsages": [
+    {
+      "@odata.type": "microsoft.graph.extendedKeyUsage",
+      "name": "Name value",
+      "objectIdentifier": "Object Identifier value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress",
+  "scepServerUrls": [
+    "Scep Server Urls value"
+  ],
+  "subjectNameFormatString": "Subject Name Format String value",
+  "keyUsage": "digitalSignature",
+  "keySize": "size2048",
+  "hashAlgorithm": "sha2",
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ]
 }
 ```
 
@@ -130,11 +158,11 @@ Content-length: 1359
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1531
+Content-Length: 2154
 
 {
-  "@odata.type": "#microsoft.graph.windows10ImportedPFXCertificateProfile",
-  "id": "b582514b-514b-b582-4b51-82b54b5182b5",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
+  "id": "7d8b9c9a-9c9a-7d8b-9a9c-8b7d9a9c8b7d",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -166,12 +194,33 @@ Content-Length: 1531
   "displayName": "Display Name value",
   "version": 7,
   "renewalThresholdPercentage": 10,
-  "keyStorageProvider": "useTpmKspOtherwiseFail",
   "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
   "certificateValidityPeriodValue": 14,
   "certificateValidityPeriodScale": "months",
-  "intendedPurpose": "smimeEncryption"
+  "extendedKeyUsages": [
+    {
+      "@odata.type": "microsoft.graph.extendedKeyUsage",
+      "name": "Name value",
+      "objectIdentifier": "Object Identifier value"
+    }
+  ],
+  "subjectAlternativeNameType": "emailAddress",
+  "scepServerUrls": [
+    "Scep Server Urls value"
+  ],
+  "subjectNameFormatString": "Subject Name Format String value",
+  "keyUsage": "digitalSignature",
+  "keySize": "size2048",
+  "hashAlgorithm": "sha2",
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ]
 }
 ```
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15f49489909dbdda21aa3a84b47dcbd931e0f5a8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d892badddd3c9b01d6edd8b5f99c708c0924cd59
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311626"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180193"
 ---
 # <a name="list-userexperienceanalyticsbaselines"></a>列出 userExperienceAnalyticsBaselines
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象的属性和关系。
 
@@ -48,7 +48,7 @@ GET /deviceManagement/userExperienceAnalyticsBaselines
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBas
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 275
+Content-Length: 323
 
 {
   "value": [
@@ -72,13 +72,12 @@ Content-Length: 275
       "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
       "displayName": "Display Name value",
       "overallScore": 12,
-      "overallRegressionThreshold": 10
+      "isBuiltIn": true,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
     }
   ]
 }
 ```
-
-
 
 
 

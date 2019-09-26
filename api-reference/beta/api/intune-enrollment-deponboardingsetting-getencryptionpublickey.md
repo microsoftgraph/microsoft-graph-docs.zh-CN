@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 050b9dcc8b718e33f628684d54acd40ea401b162
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 78bf70af97c5964f55d24bed1f4d83e9a1ad2c56
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348191"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185327"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 获取用于加密 Apple 设备注册计划令牌的公钥
 
@@ -48,7 +48,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此函数会在`200 OK`响应正文中返回响应代码和字符串。
+如果成功，此函数会在`200 OK`响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -69,8 +69,6 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
-
-
 
 
 

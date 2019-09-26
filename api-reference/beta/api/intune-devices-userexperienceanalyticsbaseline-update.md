@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: acf31ba513ba45dad93158955a743eafd5848329
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d998d6e744b62edfe69486212bd538c4d62d2a5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350436"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180172"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象的属性。
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象的 JSON 表示形式。
+在请求正文中，提供[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象的 JSON 表示形式。
 
 下表显示创建[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)时所需的属性。
 
@@ -54,12 +54,13 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |id|String|User experience analytics 比较基准的唯一标识符。|
 |displayName|String|User experience analytics 基线的名称。|
 |overallScore|Int32|用户体验分析基准的总体分数。|
-|overallRegressionThreshold|Int32|User experience analytics 比较基准的总体回归阈值。|
+|isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
+|createdDateTime|DateTimeOffset|自定义基线的创建日期。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -68,13 +69,13 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
 Content-type: application/json
-Content-length: 173
+Content-length: 158
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true
 }
 ```
 
@@ -83,18 +84,17 @@ Content-length: 173
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
-
 
 
 

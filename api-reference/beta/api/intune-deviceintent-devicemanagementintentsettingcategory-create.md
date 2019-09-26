@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 782361aed36923d8f49af25daa12b8f05ba24a18
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53bd8ae2d6135a261e06daa979b967d0226d4216
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343515"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180851"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>创建 deviceManagementIntentSettingCategory
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementIntentSettingCategory 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementIntentSettingCategory 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementIntentSettingCategory 时所需的属性。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -87,8 +87,6 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 
