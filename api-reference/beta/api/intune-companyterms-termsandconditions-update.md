@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21cb17ff4787eeb5a52d3cfdd509e5c2ad5a5c82
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6a7ce7fc5818f846fb183293cd86ef1ad3215c4f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328170"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170565"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性。
 
@@ -63,6 +63,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 273
+Content-length: 335
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -85,7 +86,10 @@ Content-length: 273
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -94,7 +98,7 @@ Content-length: 273
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 505
+Content-Length: 567
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -107,11 +111,12 @@ Content-Length: 505
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
 
 
 

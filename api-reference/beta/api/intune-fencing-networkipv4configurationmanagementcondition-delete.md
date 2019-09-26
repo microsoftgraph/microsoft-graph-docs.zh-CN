@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8017a76126a565c3afb580ec8c93f1be63d1c05
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 25e27471940f39c29cf64768131c3cb8a90e9cd6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355442"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184344"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>删除 networkIPv4ConfigurationManagementCondition
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)。
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

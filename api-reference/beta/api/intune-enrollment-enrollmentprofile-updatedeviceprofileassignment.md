@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea7c7f270062efc4d31154232262271803862da5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 617ff0683dff57b04b2be8e38632fe828b1dc180
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309525"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185152"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>updateDeviceProfileAssignment 操作
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -80,8 +80,6 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

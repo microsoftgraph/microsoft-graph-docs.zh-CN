@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b2eec7b3d922efb80b2bcbafe85d744479456e0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5e7a40bc67203225bf23e9388fac31928e4fe8c4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315468"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178759"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>获取 macOSDeviceFeaturesConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) 对象的属性和关系。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2428
+Content-Length: 2703
 
 {
   "value": {
@@ -136,12 +136,20 @@ Content-Length: 2428
     "restartDisabledWhileLoggedIn": true,
     "powerOffDisabledWhileLoggedIn": true,
     "logOutDisabledWhileLoggedIn": true,
-    "screenLockDisableImmediate": true
+    "screenLockDisableImmediate": true,
+    "associatedDomains": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "singleSignOnExtension": {
+      "@odata.type": "microsoft.graph.singleSignOnExtension"
+    }
   }
 }
 ```
-
-
 
 
 

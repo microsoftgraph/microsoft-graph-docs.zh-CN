@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: acc9d9afc0324a9e40604c882245e8c0581f9c52
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d0dd47f64caeec513a504f9160ea162631faeb98
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336528"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172616"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性。
 
@@ -116,8 +116,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a0f66617d0d158205a525d76f48428adb90e633
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d8adb3390ed881ce3241ed746747d0d90a891e63
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329297"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177190"
 ---
 # <a name="update-mobileappassignment"></a>更新 mobileAppAssignment
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象的属性。
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 |id|String|实体的键。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
-|settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
+|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 
 
 
@@ -101,8 +101,6 @@ Content-Length: 322
   }
 }
 ```
-
-
 
 
 

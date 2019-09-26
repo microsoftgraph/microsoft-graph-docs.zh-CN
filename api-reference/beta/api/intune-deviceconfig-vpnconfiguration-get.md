@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aaf3854d5885ac698d56459f8877bcb3e8d31e2f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f2d3da806d25100792c5709afacb59e24da8c518
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36316913"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183140"
 ---
 # <a name="get-vpnconfiguration"></a>获取 vpnConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)对象的属性和关系。
 
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -119,8 +119,6 @@ Content-Length: 1642
   }
 }
 ```
-
-
 
 
 

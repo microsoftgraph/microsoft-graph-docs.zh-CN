@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7f60c3e09d22131f2948420b0a85f41c386243c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d8d8d0d4c6dd644ebe8e8c23087e4797e8a90325
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311617"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180116"
 ---
 # <a name="get-userexperienceanalyticsmetric"></a>获取 userExperienceAnalyticsMetric
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象的属性和关系。
 
@@ -51,7 +51,7 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -66,20 +66,17 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBas
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 223
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
     "id": "1371822e-822e-1371-2e82-71132e827113",
-    "displayName": "Display Name value",
     "value": "<Unknown Primitive Type Edm.Double>",
     "unit": "Unit value"
   }
 }
 ```
-
-
 
 
 

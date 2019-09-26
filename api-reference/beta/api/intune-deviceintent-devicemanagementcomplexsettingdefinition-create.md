@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdee09a0fd921aae24a3cca15c0ecd47842609fb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0e2a758cc7f5892ecf8f02f3e85cf26260b9870d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313452"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181103"
 ---
 # <a name="create-devicemanagementcomplexsettingdefinition"></a>创建 deviceManagementComplexSettingDefinition
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementComplexSettingDefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)对象。
 
@@ -48,7 +48,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementComplexSettingDefinition 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementComplexSettingDefinition 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementComplexSettingDefinition 时所需的属性。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |id|字符串|从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
-|isTopLevel|Boolean|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的集合或复杂设置中。|
+|isTopLevel|Boolean|如果设置是顶级的，则可以对其进行配置，而无需将其包装在从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的集合或复杂设置中。|
 |说明|String|该设置的说明继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |documentationUrl|String|设置从[DeviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)继承的文档的 Url|
 |keywords|String collection|与继承自[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)的设置关联的关键字|
@@ -68,7 +68,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementComplexSettingDefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementComplexSettingDefinition](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -150,8 +150,6 @@ Content-Length: 857
   ]
 }
 ```
-
-
 
 
 

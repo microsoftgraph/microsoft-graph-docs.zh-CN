@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6f17fc66c67fb63540815cecf54d7123c196d3f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 46cd43ad8a9f66414cbb4088904538f48a7f6573
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327568"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178121"
 ---
 # <a name="delete-androidlobapp"></a>删除 androidLobApp
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [androidLobApp](../resources/intune-apps-androidlobapp.md)。
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

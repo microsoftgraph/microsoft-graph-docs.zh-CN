@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c3bae447cc8d1d0cc825a730a40b2de231b2690
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ef428880d04f5a697cbd9a6f991c2d8e1cdac1bb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348199"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185285"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>shareForSchoolDataSyncService 操作
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -63,8 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

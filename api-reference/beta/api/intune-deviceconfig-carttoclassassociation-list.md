@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 686b7f6f789bb2e2befa45976a365d979374e5df
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0c019acb96ecbe43c9dbc05b5c234f244b8f55fb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340413"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175325"
 ---
 # <a name="list-carttoclassassociations"></a>列出 cartToClassAssociations
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的属性和关系。
 
@@ -48,7 +48,7 @@ GET /deviceManagement/cartToClassAssociations
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -85,8 +85,6 @@ Content-Length: 528
   ]
 }
 ```
-
-
 
 
 

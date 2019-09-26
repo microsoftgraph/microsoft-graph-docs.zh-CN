@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67d406b9ace43cf994606cfdecc3bf28b143b340
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e6c56d3a2c5291deb298f6f7d4082e571a5b114f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315482"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178751"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) 对象。
 
@@ -52,17 +52,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。 继承自[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
 |adminShowHostInfo|Boolean|是否在登录窗口中显示管理员主机信息。|
@@ -80,8 +80,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |shutDownDisabledWhileLoggedIn|Boolean|用户登录时是否禁用登录窗口上的 "关闭" 菜单项。|
 |restartDisabledWhileLoggedIn|Boolean|用户登录时是否禁用登录窗口上的重启菜单项。|
 |powerOffDisabledWhileLoggedIn|Boolean|用户登录时登录窗口上的 "断电" 菜单项是否将被禁用。|
-|logOutDisabledWhileLoggedIn|Boolean|用户登录时, 登录窗口上的注销菜单项是否会被禁用。|
+|logOutDisabledWhileLoggedIn|Boolean|用户登录时，登录窗口上的注销菜单项是否会被禁用。|
 |screenLockDisableImmediate|Boolean|是否禁用即时屏幕锁定功能。|
+|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|获取或设置一个列表，该列表将应用程序映射到其关联的域。 该密钥应与应用程序的 ID 匹配，并且值应为 "服务：域" 形式的字符串，其中 domain 是完全限定的主机名（例如 webcredentials:example）。 该集合最多可包含 500 个元素。|
+|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。|
 
 
 
@@ -95,7 +97,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2107
+Content-length: 2362
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -159,7 +161,17 @@ Content-length: 2107
   "restartDisabledWhileLoggedIn": true,
   "powerOffDisabledWhileLoggedIn": true,
   "logOutDisabledWhileLoggedIn": true,
-  "screenLockDisableImmediate": true
+  "screenLockDisableImmediate": true,
+  "associatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.singleSignOnExtension"
+  }
 }
 ```
 
@@ -168,7 +180,7 @@ Content-length: 2107
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2279
+Content-Length: 2534
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -235,11 +247,19 @@ Content-Length: 2279
   "restartDisabledWhileLoggedIn": true,
   "powerOffDisabledWhileLoggedIn": true,
   "logOutDisabledWhileLoggedIn": true,
-  "screenLockDisableImmediate": true
+  "screenLockDisableImmediate": true,
+  "associatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
+  "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.singleSignOnExtension"
+  }
 }
 ```
-
-
 
 
 

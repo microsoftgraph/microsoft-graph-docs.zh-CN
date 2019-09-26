@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea9f0e1350b6045603611a3b14df54574e8e7cd0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d9f43c5b814865c0830da1faa4b245b92c5b92ac
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310239"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180403"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice 操作
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 从共享 Apple 设备中删除用户
 
@@ -81,8 +81,6 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e414801f6bbaee3869158368a39adc82e924361c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e1e50bedbf47296552251a3b23314233572b496a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336465"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172574"
 ---
 # <a name="create-mobileappinstallstatus"></a>创建 mobileAppInstallStatus
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象。
 
@@ -46,7 +46,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 mobileAppInstallStatus 对象的 JSON 表示形式。
+在请求正文中，提供 mobileAppInstallStatus 对象的 JSON 表示形式。
 
 下表显示创建 mobileAppInstallStatus 时所需的属性。
 
@@ -58,7 +58,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |lastSyncDateTime|DateTimeOffset|上次同步日期时间|
 |将 mobileappinstallstatusvalue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|应用程序的安装状态详细信息。 可能的值为`noAdditionalDetails`: `dependencyFailedToInstall`、 `dependencyWithRequirementsNotMet`、 `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet`、、、、、、、、、、、、、、、、 `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|应用程序的安装状态详细信息。 可能的值为`noAdditionalDetails`： `dependencyFailedToInstall`、 `dependencyWithRequirementsNotMet`、 `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet`、、、、、、、、、、、、、、、、 `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|安装或卸载失败的错误代码。|
 |osVersion|String|OS 版本|
 |osDescription|String|OS 说明|
@@ -69,7 +69,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -121,8 +121,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b44c6da84696cc4bafdbcbdb2ddf15d970399bfd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e802f6c593d1a014e8fe8c59f1631673bbb868e2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420838"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170845"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>删除 officeClientConfigurationAssignment
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)。
 
@@ -25,9 +25,9 @@ ms.locfileid: "36420838"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|**TODO: 确定作用域**|
+|委派（工作或学校帐户）|* * TODO：确定作用域 * *|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|* * TODO: 确定作用域 * *|
+|应用程序|* * TODO：确定作用域 * *|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 
