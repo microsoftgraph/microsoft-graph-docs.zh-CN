@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26cc3d7da788de51c3514156a5de8004ca170df7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 225921eac6fefc68e8f697d45fa8ae751fc74221
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351446"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189569"
 ---
 # <a name="getassignedroledetails-function"></a>getAssignedRoleDetails 函数
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 检索当前已通过身份验证的用户分配的角色定义和角色分配。
 
@@ -48,7 +48,7 @@ GET /deviceManagement/getAssignedRoleDetails
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此函数会在`200 OK`响应正文中返回响应代码和[deviceAndAppManagementAssignedRoleDetails](../resources/intune-rbac-deviceandappmanagementassignedroledetails.md) 。
+如果成功，此函数会在`200 OK`响应正文中返回响应代码和[deviceAndAppManagementAssignedRoleDetails](../resources/intune-rbac-deviceandappmanagementassignedroledetails.md) 。
 
 ## <a name="example"></a>示例
 
@@ -77,8 +77,6 @@ Content-Length: 245
   }
 }
 ```
-
-
 
 
 

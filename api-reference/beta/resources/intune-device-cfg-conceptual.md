@@ -1,21 +1,21 @@
 ---
 title: Microsoft Intune 中的设备配置-Microsoft Gaaph API
-description: 列出用于定义租户组织的配置设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
+description: 列出用于定义租户组织的配置设备的 Intune 终结点（REST）的 Microsoft Graph API。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a2402be0642da8d0f01c30e089fec5947d5260be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 85843a95b82caa0de07840c005a322652fdefc5b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335016"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199011"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
 
@@ -38,6 +38,7 @@ ms.locfileid: "36335016"
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
+- [Android 设备所有者 SCEP 证书配置文件](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
 - [Android 设备所有者系统更新安装类型](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Android 设备所有者受信任的根证书](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
 - [Android 设备所有者虚拟家庭按钮类型](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
@@ -112,6 +113,7 @@ ms.locfileid: "36335016"
 - [BitLocker 固定驱动器策略](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [BitLocker 恢复信息类型](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [BitLocker 恢复选项](intune-deviceconfig-bitlockerrecoveryoptions.md)
+- [BitLocker 恢复密码旋转类型](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [BitLocker 可移动驱动器策略](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [BitLocker 系统驱动器策略](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [浏览器同步设置](intune-deviceconfig-browsersyncsetting.md)
@@ -123,6 +125,7 @@ ms.locfileid: "36335016"
 - [证书有效期范围](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [更改 uefi 设置权限](intune-deviceconfig-changeuefisettingspermission.md)
 - [配置用法](intune-deviceconfig-configurationusage.md)
+- [凭据单一登录扩展](intune-deviceconfig-credentialsinglesignonextension.md)
 - [自定义主题替代名称](intune-deviceconfig-customsubjectalternativename.md)
 - [星期几](intune-deviceconfig-dayofweek.md)
 - [默认的设备符合性策略](intune-deviceconfig-defaultdevicecompliancepolicy.md)
@@ -156,7 +159,6 @@ ms.locfileid: "36335016"
 - [设备合规性操作类型](intune-deviceconfig-devicecomplianceactiontype.md)
 - [设备合规性设备概述](intune-deviceconfig-devicecompliancedeviceoverview.md)
 - [设备合规性设备状态](intune-deviceconfig-devicecompliancedevicestatus.md)
-- [设备合规性策略](intune-deviceconfig-devicecompliancepolicy.md)
 - [设备合规性策略分配](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [设备合规性策略设备状态摘要](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
 - [设备合规性策略设置状态](intune-deviceconfig-devicecompliancepolicysettingstate.md)
@@ -165,7 +167,6 @@ ms.locfileid: "36335016"
 - [设备合规性设置状态](intune-deviceconfig-devicecompliancesettingstate.md)
 - [设备合规性用户概述](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [设备合规性用户状态](intune-deviceconfig-devicecomplianceuserstatus.md)
-- [设备配置](intune-deviceconfig-deviceconfiguration.md)
 - [设备配置分配](intune-deviceconfig-deviceconfigurationassignment.md)
 - [设备配置冲突摘要](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [设备配置设备概述](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
@@ -182,9 +183,6 @@ ms.locfileid: "36335016"
 - [设备管理适用性规则 os 版本](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
 - [设备管理适用性规则 os 版本](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [设备管理适用性规则类型](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
-- [设备管理派生的凭据颁发者](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
-- [设备管理派生凭据通知类型](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
-- [设备管理派生的凭据设置](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [设备管理设置](intune-deviceconfig-devicemanagementsettings.md)
 - [设备管理用户权限本地用户或组](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [设备管理用户权限设置](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -274,6 +272,7 @@ ms.locfileid: "36335016"
 - [iOS 主屏幕项](intune-deviceconfig-ioshomescreenitem.md)
 - [iOS 主屏幕页](intune-deviceconfig-ioshomescreenpage.md)
 - [iOS 导入的 PFX 证书配置文件](intune-deviceconfig-iosimportedpfxcertificateprofile.md)
+- [iOS kerberos 单一登录扩展](intune-deviceconfig-ioskerberossinglesignonextension.md)
 - [iOS 网络使用规则](intune-deviceconfig-iosnetworkusagerule.md)
 - [iOS 通知警报类型](intune-deviceconfig-iosnotificationalerttype.md)
 - [iOS 通知设置](intune-deviceconfig-iosnotificationsettings.md)
@@ -292,8 +291,14 @@ ms.locfileid: "36335016"
 - [iOS Web 内容筛选器特定网站访问权限](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [iOS Wi-Fi 配置](intune-deviceconfig-ioswificonfiguration.md)
 - [iOSik ev2 VPN 配置](intune-deviceconfig-iosikev2vpnconfiguration.md)
+- [Kerberos 单一登录扩展](intune-deviceconfig-kerberossinglesignonextension.md)
+- [关键字布尔值对](intune-deviceconfig-keybooleanvaluepair.md)
+- [键整数值对](intune-deviceconfig-keyintegervaluepair.md)
+- [关键实数值对](intune-deviceconfig-keyrealvaluepair.md)
 - [密钥大小](intune-deviceconfig-keysize.md)
 - [密钥存储提供程序选项](intune-deviceconfig-keystorageprovideroption.md)
+- [键字符串值对](intune-deviceconfig-keystringvaluepair.md)
+- [键类型值对](intune-deviceconfig-keytypedvaluepair.md)
 - [密钥使用情况](intune-deviceconfig-keyusages.md)
 - [密钥值](intune-deviceconfig-keyvalue.md)
 - [LAN Manager 身份验证级别](intune-deviceconfig-lanmanagerauthenticationlevel.md)
@@ -316,6 +321,7 @@ ms.locfileid: "36335016"
 - [macOS 网关守卫应用源](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS 常规设备配置](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [macOS 导入的 PFX 证书配置文件](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [macOS kerberos 单一登录扩展](intune-deviceconfig-macoskerberossinglesignonextension.md)
 - [macOS 内核扩展](intune-deviceconfig-macoskernelextension.md)
 - [macOS 启动项目](intune-deviceconfig-macoslaunchitem.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
@@ -388,6 +394,7 @@ ms.locfileid: "36335016"
 - [共享电脑允许的帐户类型](intune-deviceconfig-sharedpcallowedaccounttype.md)
 - [共享的电脑配置](intune-deviceconfig-sharedpcconfiguration.md)
 - [登录助手选项](intune-deviceconfig-signinassistantoptions.md)
+- [单一登录扩展](intune-deviceconfig-singlesignonextension.md)
 - [网站安全级别](intune-deviceconfig-sitesecuritylevel.md)
 - [软件更新状态摘要](intune-deviceconfig-softwareupdatestatussummary.md)
 - [状态管理设置](intune-deviceconfig-statemanagementsetting.md)
@@ -517,12 +524,11 @@ ms.locfileid: "36335016"
 - [Windows 更新安装计划类型](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Windows 更新通知显示选项](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows 更新计划安装](intune-deviceconfig-windowsupdatescheduledinstall.md)
-- [Windows 更新状态](intune-deviceconfig-windowsupdatestate.md)
-- [Windows 更新状态](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows 更新类型](intune-deviceconfig-windowsupdatetype.md)
 - [Windows 用户帐户控制设置](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Windows VPN 配置](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Windows VPN 连接类型](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+
 

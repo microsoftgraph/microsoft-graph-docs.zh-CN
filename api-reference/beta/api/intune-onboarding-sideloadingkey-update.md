@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4eaab991ffe7478dbe4485d9859c0f2f53cfad4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f075e72f11f70050fd6d460cfee4c43144ffbfdd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352383"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190318"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性。
 
@@ -45,14 +45,14 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的 JSON 表示形式。
+在请求正文中，提供[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的 JSON 表示形式。
 
 下表显示创建[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|侧加载密钥唯一 Id。|
-|value|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
+|value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
 |说明|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
@@ -61,7 +61,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -99,8 +99,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
-
 
 
 

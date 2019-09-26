@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9928855684833e7e571857831e2e2f93c5cfaf23
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 59679dc2002d031c96c2161656998b6af6ae7385
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376097"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196908"
 ---
 # <a name="insightvalueint-resource-type"></a>insightValueInt 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用户体验分析洞察力中的价值。
 
@@ -26,6 +26,7 @@ ms.locfileid: "36376097"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
+|值|Int32|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -39,7 +40,8 @@ ms.locfileid: "36376097"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.insightValueInt"
+  "@odata.type": "#microsoft.graph.insightValueInt",
+  "value": 1024
 }
 ```
 

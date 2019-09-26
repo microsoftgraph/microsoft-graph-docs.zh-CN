@@ -1,24 +1,24 @@
 ---
 title: depIOSEnrollmentProfile 资源类型
-description: DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册计划 (DEP) 注册配置文件。 在相应的设备可以通过 DEP 进行注册之前, 必须将此类型的配置文件分配给 Apple DEP 序列号。
+description: DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册计划（DEP）注册配置文件。 在相应的设备可以通过 DEP 进行注册之前，必须将此类型的配置文件分配给 Apple DEP 序列号。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 739d8bc495cebbc00837b325f68002a5ee8e9903
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b5aea279ed44c5849c5d37076c9d9f2597563e06
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328037"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196579"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>depIOSEnrollmentProfile 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册计划 (DEP) 注册配置文件。 在相应的设备可以通过 DEP 进行注册之前, 必须将此类型的配置文件分配给 Apple DEP 序列号。
+DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册计划（DEP）注册配置文件。 在相应的设备可以通过 DEP 进行注册之前，必须将此类型的配置文件分配给 Apple DEP 序列号。
 
 
 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)
@@ -40,10 +40,10 @@ DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册�
 |说明|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
 |requiresUserAuthentication|Boolean|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
 |configurationEndpointUrl|String|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
 |isDefault|Boolean|指示这是否是从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的默认配置文件|
-|supervisedModeEnabled|Boolean|监督模式, 如果启用, 则为 True, 否则为 false。 有关https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息, 请参阅。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|监督模式，如果启用，则为 True，否则为 false。 有关https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息，请参阅。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
 |passCodeDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的密码设置窗格|
 |isMandatory|Boolean|指示是否必须从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
@@ -60,6 +60,7 @@ DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册�
 |diagnosticsDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的诊断设置窗格|
 |displayToneSetupDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
 |privacyPaneDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
+|screenTimeScreenDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的屏幕超时设置|
 |deviceNameTemplate|String|设置文本或名称模式。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)集合|Apple 配置器的管理证书|
@@ -67,15 +68,19 @@ DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册�
 |awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待已配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定了可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
 |enableSharedIPad|Boolean|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
-|companyPortalVppTokenId|String|如果设置, 则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性, 必须设置 "enableAuthenticationViaCompanyPortal"。|
-|enableSingleAppEnrollmentMode|Boolean|通知设备启用单应用模式, 并在注册过程中应用应用锁定。 默认为 false。 若要设置此属性, 必须设置 "enableAuthenticationViaCompanyPortal" 和 "companyPortalVppTokenId"。|
+|companyPortalVppTokenId|String|如果设置，则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal"。|
+|enableSingleAppEnrollmentMode|Boolean|通知设备启用单应用模式，并在注册过程中应用应用锁定。 默认为 false。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal" 和 "companyPortalVppTokenId"。|
 |homeButtonScreenDisabled|Boolean|指示是否禁用 "主页按钮灵敏度" 屏幕|
 |iMessageAndFaceTimeScreenDisabled|Boolean|指示是否禁用 iMessage 和 FaceTime 屏幕|
 |onBoardingScreenDisabled|Boolean|指示是否已禁用载入安装程序屏幕|
-|screenTimeScreenDisabled|Boolean|指示是否禁用屏幕超时设置|
 |simSetupScreenDisabled|Boolean|指示是否禁用了 SIMSetup 屏幕|
 |softwareUpdateScreenDisabled|Boolean|指示是否禁用强制 sofware 更新屏幕|
 |watchMigrationScreenDisabled|Boolean|指示是否禁用监视迁移屏幕|
+|appearanceScreenDisabled|Boolean|指示是否禁用 Apperance 屏幕|
+|expressLanguageScreenDisabled|Boolean|指示是否已禁用 Express 语言屏幕|
+|preferredLanguageScreenDisabled|Boolean|指示是否禁用首选语言屏幕|
+|deviceToDeviceMigrationDisabled|Boolean|指示是否禁用设备到设备迁移|
+|welcomeScreenDisabled|Boolean|指示是否禁用 Weclome 屏幕|
 
 ## <a name="relationships"></a>关系
 无
@@ -116,6 +121,7 @@ DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册�
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "String",
   "iTunesPairingMode": "String",
   "managementCertificates": [
@@ -134,10 +140,14 @@ DepIOSEnrollmentProfile 资源表示特定于 iOS 配置的 Apple 设备注册�
   "homeButtonScreenDisabled": true,
   "iMessageAndFaceTimeScreenDisabled": true,
   "onBoardingScreenDisabled": true,
-  "screenTimeScreenDisabled": true,
   "simSetupScreenDisabled": true,
   "softwareUpdateScreenDisabled": true,
-  "watchMigrationScreenDisabled": true
+  "watchMigrationScreenDisabled": true,
+  "appearanceScreenDisabled": true,
+  "expressLanguageScreenDisabled": true,
+  "preferredLanguageScreenDisabled": true,
+  "deviceToDeviceMigrationDisabled": true,
+  "welcomeScreenDisabled": true
 }
 ```
 
