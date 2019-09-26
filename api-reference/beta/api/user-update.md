@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 79f6ec2c72271319548750a4637aff28dfbd7f02
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1662290791eb996d74f045a032d5f1b581121205
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421776"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203968"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -28,9 +28,11 @@ ms.locfileid: "36421776"
 |应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
 >[!NOTE]
-> - 更新**passwordProfile**属性时, 需要以下权限: directory.accessasuser.all。
-> - 仅允许非管理员用户或分配了以下角色之一的用户更新另一个用户的**businessPhones**、 **mobilePhone**或**OtherMails**属性: 目录读取器、来宾邀请者、消息中心读取器和报告读取器。 有关更多详细信息, 请参阅[AZURE AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员 (密码) 管理员。  对于授予了 User. ReadWrite、All 或 Directory 的所有委派或应用程序权限的应用程序, 情况也是如此。
+> - 更新**passwordProfile**属性时，需要以下权限： directory.accessasuser.all。
+> - 仅允许非管理员用户或分配了以下角色之一的用户更新另一个用户的**businessPhones**、 **mobilePhone**或**OtherMails**属性：目录读取器、来宾邀请者、消息中心读取器和报告读取器。 有关更多详细信息，请参阅[AZURE AD 可用角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的支持人员（密码）管理员。  对于授予了 User. ReadWrite、All 或 Directory 的所有委派或应用程序权限的应用程序，情况也是如此。
 
+>[!NOTE]
+>更新**标识**属性需要用户 ManageIdentities 权限。 此外，不允许将[B2C 本地帐户](../resources/objectidentity.md)添加到现有**user**对象，除非该**用户**对象已包含本地帐户标识。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -61,6 +63,7 @@ PATCH /users/{id | userPrincipalName}
 |employeeId|String|由组织分配给该用户的员工标识符。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|身份|[objectIdentity](../resources/objectidentity.md)集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或社会身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 对**标识**的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType**标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
@@ -84,7 +87,7 @@ PATCH /users/{id | userPrincipalName}
 |userPrincipalName|字符串|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。          |
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**用户**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**用户**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 
@@ -92,7 +95,7 @@ PATCH /users/{id | userPrincipalName}
 
 ## <a name="example"></a>示例
 
-### <a name="example-1-update-properties-of-the-signed-in-user"></a>示例 1: 更新已登录用户的属性
+### <a name="example-1-update-properties-of-the-signed-in-user"></a>示例1：更新已登录用户的属性
 
 #### <a name="request"></a>请求
 
@@ -140,7 +143,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-properties-of-the-specified-user"></a>示例 2: 更新指定用户的属性
+### <a name="example-2-update-properties-of-the-specified-user"></a>示例2：更新指定用户的属性
 
 #### <a name="request"></a>请求
 

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c9042fef0de54465f1876486f9d2bd8a7e67e0a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6706d2073442234f6bb1916b63f9bb96a1f5b9ce
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421874"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203956"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -20,7 +20,7 @@ ms.locfileid: "36421874"
 请求正文包含要创建的用户。 至少必须指定必需的用户属性。 可以选择指定其他任意可写属性。
 
 >[!NOTE]
->若要创建外部用户, 请使用[邀请 API](invitation-post.md)。
+>若要创建外部用户，请使用[邀请 API](invitation-post.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "36421874"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|应用程序 | User.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,28 +47,33 @@ POST /users
 
 在请求正文中，提供 [user](../resources/user.md) 对象的 JSON 表示形式。
 
-下表显示创建用户时所需的属性。
+下表列出了创建用户时所需的属性。 如果您正在创建的用户包含一个**标识**属性，则不需要列出所有属性。 对于[B2C 本地帐户标识](../resources/objectidentity.md)，只有**passwordProfile**是必需的。 对于社会标识，不需要任何属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |启用此帐户时为 true，否则为 false。|
+|accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用`POST`操作, 并在创建用户实例时将自己的数据添加到用户实例中的自定义属性。
+由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用`POST`操作，并在创建用户实例时将自己的数据添加到用户实例中的自定义属性。
+
+默认情况下，通过此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的信息，请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
 
 >[!NOTE]
->默认情况下, 使用此 API 创建的联合用户将被强制每隔12小时登录一次。 有关如何更改此操作的详细信息, 请参阅[令牌生存期异常](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)。
+>不允许将[B2C 本地帐户](../resources/objectidentity.md)添加到现有的**user**对象，除非该**用户**对象已包含本地帐户标识。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 [user](../resources/user.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="example-1-create-a-user"></a>示例1：创建用户
+
+#### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
@@ -111,7 +116,7 @@ Content-type: application/json
 下面是一个响应示例。 
 
 [!NOTE]
-为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -135,6 +140,80 @@ Content-type: application/json
     "preferredLanguage": null,
     "surname": null,
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+}
+```
+
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>示例2：创建具有社交和本地帐户标识的用户
+
+使用具有登录名的本地帐户标识和社交标识创建新用户。 此示例通常用于迁移方案。
+
+#### <a name="request"></a>请求
+
+<!-- {  
+  "blockType": "request",   
+  "name": "create_user_from_users_identities"   
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "identities": [
+    {
+      "signInType": "signInName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": "password-value"
+  }
+}
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType": "signInName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": null
+  }
 }
 ```
 
