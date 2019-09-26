@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f99c4bd2090f751b0a54df6ad408cda463266605
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 475f6b28ee6f4838feccf496af3d94c76f974f23
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350434"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180144"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>更新 userExperienceAnalyticsCategory
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)对象的属性。
 
@@ -47,21 +47,21 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)对象的 JSON 表示形式。
+在请求正文中，提供[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)对象的 JSON 表示形式。
 
 下表显示创建[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析类别的唯一标识符。|
-|displayName|String|用户体验分析类别的名称。|
 |overallScore|Int32|用户体验分析类别的整体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)集合|用户体验分析类别的见解。|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|"用户体验分析" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -70,24 +70,26 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 Content-type: application/json
-Content-length: 484
+Content-length: 572
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
-  "displayName": "Display Name value",
   "overallScore": 12,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData"
 }
 ```
 
@@ -96,29 +98,29 @@ Content-length: 484
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 533
+Content-Length: 621
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "id": "cfd28056-8056-cfd2-5680-d2cf5680d2cf",
-  "displayName": "Display Name value",
   "overallScore": 12,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData"
 }
 ```
-
-
 
 
 

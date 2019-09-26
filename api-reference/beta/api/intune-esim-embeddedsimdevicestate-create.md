@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71e91958cb5dd4538985671a615f42b72c468c3e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4a4da49b24e4641b9ccb06315c0450ed9679d52d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355806"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184513"
 ---
 # <a name="create-embeddedsimdevicestate"></a>创建 embeddedSIMDeviceState
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 embeddedSIMDeviceState 对象的 JSON 表示形式。
+在请求正文中，提供 embeddedSIMDeviceState 对象的 JSON 表示形式。
 
 下表显示创建 embeddedSIMDeviceState 时所需的属性。
 
@@ -55,16 +55,16 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |createdDateTime|DateTimeOffset|嵌入的 SIM 设备状态的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 设备状态的时间。 更新了服务端。|
 |lastSyncDateTime|DateTimeOffset|嵌入的 SIM 设备上次签入的时间。 更新了服务端。|
-|universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UICCID), 用于标识要在其上部署配置文件的硬件。|
-|deviceName|String|订阅预配到的设备名称, 例如, 桌面 JOE|
-|userName|String|订阅预配到的用户名, 例如 joe@contoso.com|
+|universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符（UICCID），用于标识要在其上部署配置文件的硬件。|
+|deviceName|String|订阅预配到的设备名称，例如，桌面 JOE|
+|userName|String|订阅预配到的用户名，例如 joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
 |stateDetails|String|设置状态的字符串说明。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -106,8 +106,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
-
 
 
 

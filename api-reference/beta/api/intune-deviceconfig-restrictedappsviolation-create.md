@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f44b2ecda3829c42bed6fefe088bf7c580d3951c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 041ce9ab5c42f52d5d7900b814f8f64747d3044f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314922"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183455"
 ---
 # <a name="create-restrictedappsviolation"></a>创建 restrictedAppsViolation
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。
 
@@ -45,18 +45,18 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 restrictedAppsViolation 对象的 JSON 表示形式。
+在请求正文中，提供 restrictedAppsViolation 对象的 JSON 表示形式。
 
 下表显示创建 restrictedAppsViolation 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|String|用户唯一标识符, 必须为 Guid|
+|userId|String|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|String|托管设备唯一标识符, 必须为 Guid|
+|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
 |deviceName|String|设备名称|
-|deviceConfigurationId|String|设备配置文件唯一标识符, 必须为 Guid|
+|deviceConfigurationId|String|设备配置文件唯一标识符，必须为 Guid|
 |deviceConfigurationName|String|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -121,8 +121,6 @@ Content-Length: 613
   ]
 }
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 001a0448c5a6bd3a17b3bc56af30aae0e5b22191
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0893e74fb25bf8f3cd926516cfd00fa549dda820
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322315"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171846"
 ---
 # <a name="get-windowsphone81storeapp"></a>获取 windowsPhone81StoreApp
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)对象的属性和关系。
 
@@ -53,7 +53,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -101,8 +101,6 @@ Content-Length: 1018
   }
 }
 ```
-
-
 
 
 

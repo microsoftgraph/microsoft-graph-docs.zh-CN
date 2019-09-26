@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75d1cd221ac64b779007a8ddaab2e9047f7ba2f8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9888bf2bf153413349b03978c0eb9ac0b21457fb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355407"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179927"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>创建 networkIPv4ConfigurationManagementCondition
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象。
 
@@ -46,7 +46,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 networkIPv4ConfigurationManagementCondition 对象的 JSON 表示形式。
+在请求正文中，提供 networkIPv4ConfigurationManagementCondition 对象的 JSON 表示形式。
 
 下表显示创建 networkIPv4ConfigurationManagementCondition 时所需的属性。
 
@@ -60,7 +60,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0.0/8|
+|ipV4Prefix|String|要连接到的 IPv4 子网。 例如，10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
 |ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
@@ -69,7 +69,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -131,8 +131,6 @@ Content-Length: 697
   ]
 }
 ```
-
-
 
 
 
