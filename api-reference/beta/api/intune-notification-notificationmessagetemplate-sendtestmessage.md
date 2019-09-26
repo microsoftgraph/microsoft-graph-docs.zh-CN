@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10eaeb033a75b7b429f5673045090b8e5cd67aee
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6a203edfba77c2fc3bf5a37fee2e4cb56432c5ab
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353273"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191076"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage 操作
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用默认区域设置中指定的 notificationMessageTemplate 发送测试消息
 
@@ -63,8 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTempla
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 
