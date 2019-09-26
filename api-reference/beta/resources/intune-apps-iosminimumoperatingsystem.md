@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b89c35708a71d176e6563f2d05db9b6016184cc5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6ea0caa4112ffc463db38d19ed107ed812d9a857
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366019"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199347"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 移动应用需要的最低操作系统的属性。
 
@@ -28,6 +28,7 @@ ms.locfileid: "36366019"
 |v10_0|Boolean|版本 10.0 或更高版本。|
 |v11_0|布尔值|版本 11.0 或更高版本。|
 |v12_0|Boolean|版本12.0 或更高版本。|
+|v13_0|Boolean|版本13.0 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,7 +47,8 @@ ms.locfileid: "36366019"
   "v9_0": true,
   "v10_0": true,
   "v11_0": true,
-  "v12_0": true
+  "v12_0": true,
+  "v13_0": true
 }
 ```
 

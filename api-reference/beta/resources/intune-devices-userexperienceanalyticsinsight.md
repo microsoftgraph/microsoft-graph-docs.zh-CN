@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36277b147e7eabc6f28aef3877538ebbc429f381
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 70cb1e7405fdffcff0f1fd6a8a8361df6d941788
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341216"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196698"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>userExperienceAnalyticsInsight 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用户体验分析见解是改进用户体验分析分数的建议。
 
@@ -25,7 +25,8 @@ ms.locfileid: "36341216"
 |:---|:---|:---|
 |userExperienceAnalyticsMetricId|String|用户体验分析洞察力的唯一标识符。|
 |insightId|String|用户体验分析洞察力的唯一标识符。|
-|值|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)集合|用户体验分析洞察力的价值。|
+|values|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)集合|用户体验分析洞察力的价值。|
+|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|用户体验分析洞察力的价值。 可取值为：`none`、`informational`、`warning`、`error`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,11 +43,13 @@ ms.locfileid: "36341216"
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsight",
   "userExperienceAnalyticsMetricId": "String",
   "insightId": "String",
-  "value": [
+  "values": [
     {
-      "@odata.type": "microsoft.graph.insightValueDouble"
+      "@odata.type": "microsoft.graph.insightValueDouble",
+      "value": "<Unknown Primitive Type Edm.Double>"
     }
-  ]
+  ],
+  "severity": "String"
 }
 ```
 
