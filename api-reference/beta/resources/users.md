@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 4d405dcc5e7881c7a404e5ca16f87c889cd5ccc7
-ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
+ms.openlocfilehash: ac705194cc69eebe8dbfda9aab37cb7c34a10187
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36426410"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203996"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -32,6 +32,7 @@ ms.locfileid: "36426410"
 - User.ReadWrite
 - User.Read.All
 - User.ReadWrite.All
+- User.ManageIdentities.All
 - Directory.Read.All
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
