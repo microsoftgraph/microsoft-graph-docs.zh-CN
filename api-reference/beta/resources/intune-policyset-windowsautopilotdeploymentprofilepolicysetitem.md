@@ -1,0 +1,77 @@
+---
+title: windowsAutopilotDeploymentProfilePolicySetItem 资源类型
+description: 包含用于 windows autopilot 部署配置文件 PolicySetItem 的属性的类。
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 6ef56b69bee6b0392a09544252a9acf700966d66
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199949"
+---
+# <a name="windowsautopilotdeploymentprofilepolicysetitem-resource-type"></a><span data-ttu-id="f2357-103">windowsAutopilotDeploymentProfilePolicySetItem 资源类型</span><span class="sxs-lookup"><span data-stu-id="f2357-103">windowsAutopilotDeploymentProfilePolicySetItem resource type</span></span>
+
+> <span data-ttu-id="f2357-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f2357-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="f2357-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f2357-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="f2357-106">包含用于 windows autopilot 部署配置文件 PolicySetItem 的属性的类。</span><span class="sxs-lookup"><span data-stu-id="f2357-106">A class containing the properties used for windows autopilot deployment profile PolicySetItem.</span></span>
+
+
+<span data-ttu-id="f2357-107">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-107">Inherits from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="f2357-108">方法</span><span class="sxs-lookup"><span data-stu-id="f2357-108">Methods</span></span>
+|<span data-ttu-id="f2357-109">方法</span><span class="sxs-lookup"><span data-stu-id="f2357-109">Method</span></span>|<span data-ttu-id="f2357-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="f2357-110">Return Type</span></span>|<span data-ttu-id="f2357-111">说明</span><span class="sxs-lookup"><span data-stu-id="f2357-111">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="f2357-112">列出 windowsAutopilotDeploymentProfilePolicySetItems</span><span class="sxs-lookup"><span data-stu-id="f2357-112">List windowsAutopilotDeploymentProfilePolicySetItems</span></span>](../api/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem-list.md)|<span data-ttu-id="f2357-113">[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="f2357-113">[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) collection</span></span>|<span data-ttu-id="f2357-114">列出[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f2357-114">List properties and relationships of the [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) objects.</span></span>|
+|[<span data-ttu-id="f2357-115">获取 windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-115">Get windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../api/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem-get.md)|[<span data-ttu-id="f2357-116">windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-116">windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)|<span data-ttu-id="f2357-117">读取[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f2357-117">Read properties and relationships of the [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) object.</span></span>|
+|[<span data-ttu-id="f2357-118">创建 windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-118">Create windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../api/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem-create.md)|[<span data-ttu-id="f2357-119">windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-119">windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)|<span data-ttu-id="f2357-120">创建新的[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f2357-120">Create a new [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) object.</span></span>|
+|[<span data-ttu-id="f2357-121">删除 windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-121">Delete windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../api/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem-delete.md)|<span data-ttu-id="f2357-122">无</span><span class="sxs-lookup"><span data-stu-id="f2357-122">None</span></span>|<span data-ttu-id="f2357-123">删除[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)。</span><span class="sxs-lookup"><span data-stu-id="f2357-123">Deletes a [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md).</span></span>|
+|[<span data-ttu-id="f2357-124">更新 windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-124">Update windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../api/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem-update.md)|[<span data-ttu-id="f2357-125">windowsAutopilotDeploymentProfilePolicySetItem</span><span class="sxs-lookup"><span data-stu-id="f2357-125">windowsAutopilotDeploymentProfilePolicySetItem</span></span>](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)|<span data-ttu-id="f2357-126">更新[windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="f2357-126">Update the properties of a [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="f2357-127">属性</span><span class="sxs-lookup"><span data-stu-id="f2357-127">Properties</span></span>
+|<span data-ttu-id="f2357-128">属性</span><span class="sxs-lookup"><span data-stu-id="f2357-128">Property</span></span>|<span data-ttu-id="f2357-129">类型</span><span class="sxs-lookup"><span data-stu-id="f2357-129">Type</span></span>|<span data-ttu-id="f2357-130">说明</span><span class="sxs-lookup"><span data-stu-id="f2357-130">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="f2357-131">id</span><span class="sxs-lookup"><span data-stu-id="f2357-131">id</span></span>|<span data-ttu-id="f2357-132">String</span><span class="sxs-lookup"><span data-stu-id="f2357-132">String</span></span>|<span data-ttu-id="f2357-133">MobileAppPolicySetItem 的键。</span><span class="sxs-lookup"><span data-stu-id="f2357-133">Key of the MobileAppPolicySetItem.</span></span> <span data-ttu-id="f2357-134">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-134">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="f2357-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="f2357-135">createdDateTime</span></span>|<span data-ttu-id="f2357-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f2357-136">DateTimeOffset</span></span>|<span data-ttu-id="f2357-137">PolicySetItem 的创建时间。</span><span class="sxs-lookup"><span data-stu-id="f2357-137">Creation time of the PolicySetItem.</span></span> <span data-ttu-id="f2357-138">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-138">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="f2357-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f2357-139">lastModifiedDateTime</span></span>|<span data-ttu-id="f2357-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f2357-140">DateTimeOffset</span></span>|<span data-ttu-id="f2357-141">PolicySetItem 的上次修改时间。</span><span class="sxs-lookup"><span data-stu-id="f2357-141">Last modified time of the PolicySetItem.</span></span> <span data-ttu-id="f2357-142">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-142">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="f2357-143">payloadId</span><span class="sxs-lookup"><span data-stu-id="f2357-143">payloadId</span></span>|<span data-ttu-id="f2357-144">String</span><span class="sxs-lookup"><span data-stu-id="f2357-144">String</span></span>|<span data-ttu-id="f2357-145">PolicySetItem 的 PayloadId。</span><span class="sxs-lookup"><span data-stu-id="f2357-145">PayloadId of the PolicySetItem.</span></span> <span data-ttu-id="f2357-146">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-146">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="f2357-147">itemType</span><span class="sxs-lookup"><span data-stu-id="f2357-147">itemType</span></span>|<span data-ttu-id="f2357-148">String</span><span class="sxs-lookup"><span data-stu-id="f2357-148">String</span></span>|<span data-ttu-id="f2357-149">PolicySetItem 的 policySetType。</span><span class="sxs-lookup"><span data-stu-id="f2357-149">policySetType of the PolicySetItem.</span></span> <span data-ttu-id="f2357-150">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-150">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="f2357-151">displayName</span><span class="sxs-lookup"><span data-stu-id="f2357-151">displayName</span></span>|<span data-ttu-id="f2357-152">String</span><span class="sxs-lookup"><span data-stu-id="f2357-152">String</span></span>|<span data-ttu-id="f2357-153">PolicySetItem 的 DisplayName。</span><span class="sxs-lookup"><span data-stu-id="f2357-153">DisplayName of the PolicySetItem.</span></span> <span data-ttu-id="f2357-154">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="f2357-154">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+|<span data-ttu-id="f2357-155">status</span><span class="sxs-lookup"><span data-stu-id="f2357-155">status</span></span>|[<span data-ttu-id="f2357-156">policySetStatus</span><span class="sxs-lookup"><span data-stu-id="f2357-156">policySetStatus</span></span>](../resources/intune-policyset-policysetstatus.md)|<span data-ttu-id="f2357-157">PolicySetItem 的状态。</span><span class="sxs-lookup"><span data-stu-id="f2357-157">Status of the PolicySetItem.</span></span> <span data-ttu-id="f2357-158">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。</span><span class="sxs-lookup"><span data-stu-id="f2357-158">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md).</span></span> <span data-ttu-id="f2357-159">可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="f2357-159">Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span></span>|
+|<span data-ttu-id="f2357-160">errorCode</span><span class="sxs-lookup"><span data-stu-id="f2357-160">errorCode</span></span>|[<span data-ttu-id="f2357-161">错误</span><span class="sxs-lookup"><span data-stu-id="f2357-161">errorCode</span></span>](../resources/intune-policyset-errorcode.md)|<span data-ttu-id="f2357-162">错误代码（如果发生）。</span><span class="sxs-lookup"><span data-stu-id="f2357-162">Error code if any occured.</span></span> <span data-ttu-id="f2357-163">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)。</span><span class="sxs-lookup"><span data-stu-id="f2357-163">Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md).</span></span> <span data-ttu-id="f2357-164">可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。</span><span class="sxs-lookup"><span data-stu-id="f2357-164">Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.</span></span>|
+|<span data-ttu-id="f2357-165">guidedDeploymentTags</span><span class="sxs-lookup"><span data-stu-id="f2357-165">guidedDeploymentTags</span></span>|<span data-ttu-id="f2357-166">String collection</span><span class="sxs-lookup"><span data-stu-id="f2357-166">String collection</span></span>|<span data-ttu-id="f2357-167">继承自[policySetItem](../resources/intune-policyset-policysetitem.md)的引导部署的标记</span><span class="sxs-lookup"><span data-stu-id="f2357-167">Tags of the guided deployment Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="f2357-168">关系</span><span class="sxs-lookup"><span data-stu-id="f2357-168">Relationships</span></span>
+<span data-ttu-id="f2357-169">无</span><span class="sxs-lookup"><span data-stu-id="f2357-169">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="f2357-170">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f2357-170">JSON Representation</span></span>
+<span data-ttu-id="f2357-171">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f2357-171">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsAutopilotDeploymentProfilePolicySetItem"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfilePolicySetItem",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "payloadId": "String",
+  "itemType": "String",
+  "displayName": "String",
+  "status": "String",
+  "errorCode": "String",
+  "guidedDeploymentTags": [
+    "String"
+  ]
+}
+```
+
+
+
