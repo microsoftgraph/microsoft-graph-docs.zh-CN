@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08a0379061b6135a9a13a90555d51c94e50e8107
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 20cf8419bbcf929cbf0ba5c026ac72437a75ab96
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309994"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188225"
 ---
 # <a name="update-remoteactionaudit"></a>更新 remoteActionAudit
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的属性。
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的 JSON 表示形式。
+在请求正文中，提供[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的 JSON 表示形式。
 
 下表显示创建[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)时所需的属性。
 
@@ -55,8 +55,8 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |deviceDisplayName|String|Intune 设备名称。|
 |userName|String|\[弃用\]请改用 InitiatedByUserPrincipalName。|
 |initiatedByUserPrincipalName|String|启动设备操作的用户的格式为 UPN。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
-|requestDateTime|DateTimeOffset|发出操作的时间, 以 UTC 表示。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`： `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`, `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
+|requestDateTime|DateTimeOffset|发出操作的时间，以 UTC 表示。|
 |deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
 |deviceIMEI|String|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|动作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -111,8 +111,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
-
 
 
 

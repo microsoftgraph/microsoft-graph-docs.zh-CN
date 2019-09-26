@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21c0946eb806c4131151c29a47e5646d6c69d18b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 43193d8bac87dff093435c5961b29fa28e723bb6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352180"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190073"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>更新 windows10EnrollmentCompletionPageConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)对象的属性。
 
@@ -45,32 +45,34 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)对象的 JSON 表示形式。
+在请求正文中，提供[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)对象的 JSON 表示形式。
 
 下表显示创建[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
-|displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
-|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
-|priority|Int32|当用户存在于分配有注册配置的多个组中时, 将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
-|lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
-|version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的设备注册配置的版本|
+|id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
+|displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
+|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|priority|Int32|当用户存在于分配有注册配置的多个组中时，将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
+|lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
+|version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
 |showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
 |blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
 |allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
 |allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
-|installProgressTimeoutInMinutes|Int32|设置安装进度超时 (分钟)|
+|installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
 |allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
 |selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
+|trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
+|disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户后期注册的安装进度|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -79,7 +81,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 583
+Content-length: 684
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -96,7 +98,9 @@ Content-length: 583
   "allowDeviceUseOnInstallFailure": true,
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
-  ]
+  ],
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
 
@@ -105,7 +109,7 @@ Content-length: 583
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 755
+Content-Length: 856
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -125,11 +129,11 @@ Content-Length: 755
   "allowDeviceUseOnInstallFailure": true,
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
-  ]
+  ],
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
 
 
 

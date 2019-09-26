@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 307e8c9430c5eb8d0d7bd6bc51bc772dacb6392b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 37364d18fbdbd7cbd8b92aefca3a02675d17ba45
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371459"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196684"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>userExperienceAnalyticsMetric 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 User experience analytics 指标包含 user experience anlaytics 类别的分数和度量单位。
 
@@ -33,7 +33,6 @@ User experience analytics 指标包含 user experience anlaytics 类别的分数
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|User experience analytics 指标的唯一标识符。|
-|displayName|String|User experience analytics 指标的名称。|
 |值|双精度|User experience analytics 指标的值。|
 |处理器|String|User experience analytics 指标的单位。|
 
@@ -52,7 +51,6 @@ User experience analytics 指标包含 user experience anlaytics 类别的分数
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "displayName": "String",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "String"
 }

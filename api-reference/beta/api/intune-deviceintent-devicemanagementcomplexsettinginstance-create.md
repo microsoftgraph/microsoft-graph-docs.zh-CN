@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd7cc4a8775a66fdc258dcf33f30cd6de2289ee0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ddb126e380c24fa3337d54e4da9116780848a958
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343809"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186083"
 ---
 # <a name="create-devicemanagementcomplexsettinginstance"></a>创建 deviceManagementComplexSettingInstance
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)对象。
 
@@ -48,7 +48,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementComplexSettingInstance 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementComplexSettingInstance 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementComplexSettingInstance 时所需的属性。
 
@@ -61,7 +61,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -93,8 +93,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

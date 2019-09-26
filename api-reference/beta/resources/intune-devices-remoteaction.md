@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ac112c970fd05f7c697402d3cb3a14782890c7fe
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1de6311ca96a4c46e31f5a3fd0711bab20d10116
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372123"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196761"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 远程操作 Intune 支持。
 
@@ -25,11 +25,11 @@ ms.locfileid: "36372123"
 |:---|:---|:---|
 |unknown|0|用户启动未知操作。|
 |factoryReset|1|用户启动一个操作以出厂重置设备。 |
-|removeCompanyData|双面|用户启动一个操作, 以从设备中删除公司数据。 |
-|resetPasscode|第三章|用户启动一个操作以删除 iOS 设备的密码, 或重置 Android/Windows 设备的密码。 |
-|remoteLock|4|用户启动一个操作, 以远程锁定设备。|
-|enableLostMode|5|用户启动一个操作, 以在受监督的 iOS 设备上启用丢失模式。|
-|disableLostMode|型|用户启动一个操作, 以在受监督的 iOS 设备上禁用丢失模式。|
+|removeCompanyData|双面|用户启动一个操作，以从设备中删除公司数据。 |
+|resetPasscode|第三章|用户启动一个操作以删除 iOS 设备的密码，或重置 Android/Windows 设备的密码。 |
+|remoteLock|4|用户启动一个操作，以远程锁定设备。|
+|enableLostMode|5|用户启动一个操作，以在受监督的 iOS 设备上启用丢失模式。|
+|disableLostMode|型|用户启动一个操作，以在受监督的 iOS 设备上禁用丢失模式。|
 |locateDevice|步|用户启动操作以查找受监督的 iOS 设备。|
 |rebootNow|utf-8|用户启动操作以重新启动 Windows 设备。|
 |recoverPasscode|第|用户启动一个操作以重置用于 windows phone 设备上的 passport 的 pin 以供工作。|
@@ -42,6 +42,7 @@ ms.locfileid: "36372123"
 |updateDeviceAccount|位|用户启动操作以更新设备上的帐户。|
 |automaticRedeployment|×|用户启动操作以 automatice 重新部署设备|
 |关闭|18|用户启动一种关闭设备的操作。|
+|rotateBitLockerKeys|合|用户启动一个操作，以在设备上旋转 BitLockerKeys。|
 |rotateFileVaultKey|20|用户启动一个操作以在 mac 上旋转 FileVaultKey。|
 |getFileVaultKey|不足|用户启动一个操作以在 mac 上获取 FileVaultKey。|
 |setDeviceName|22|用户启动操作以在设备上设置设备名称。|

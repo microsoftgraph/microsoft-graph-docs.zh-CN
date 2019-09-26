@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4e23abab9d3bc7b3ca61ba4946b2ed2d4afc625
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b4812d07ff923f7bfc142a7b889856cfd2e44ec6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343557"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185830"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>更新 deviceManagementIntentDeviceState
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象的属性。
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象的 JSON 表示形式。
+在请求正文中，提供[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象的 JSON 表示形式。
 
 下表显示创建[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)时所需的属性。
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -102,8 +102,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f2d6cd9480cd38653aa35ed8e70705f6fe6ace3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f55ecd0eff7e0367e4bd312b35210fe4e9f3bb55
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335800"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199102"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含用户的安装状态的属性。
 
@@ -42,7 +42,7 @@ ms.locfileid: "36335800"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|应用程序|[mobileApp](../resources/intune-apps-mobileapp.md)|指向移动应用程序的导航链接。|
+|应用程序|[mobileApp](../resources/intune-shared-mobileapp.md)|指向移动应用程序的导航链接。|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)集合|设备上的应用程序的安装状态。|
 
 ## <a name="json-representation"></a>JSON 表示形式

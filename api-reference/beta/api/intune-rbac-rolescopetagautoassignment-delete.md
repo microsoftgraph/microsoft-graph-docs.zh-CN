@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 258bc4cfd339bda0050b719e15ef41d1731e1454
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 09ec78bf763e93bd561c71b7d61ea2225168ec51
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351054"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194913"
 ---
 # <a name="delete-rolescopetagautoassignment"></a>删除 roleScopeTagAutoAssignment
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)。
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

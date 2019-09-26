@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97c35f52182a82c2ddf2447e4d22935d8410826c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 248ed14156ae8c24f70b4ecd0ce1f643d55503db
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350914"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194654"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。
 
@@ -24,7 +24,7 @@ ms.locfileid: "36350914"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限&nbsp;类型&nbsp;(按&nbsp;工作流) | 权限（从最高特权到最低特权） |
+| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） | |
 | &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
@@ -39,16 +39,36 @@ ms.locfileid: "36350914"
 | &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
-| 应用程序 | 不支持。 |
-
-
+| 应用程序 | |
+| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
+| &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **设备意向** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
+| &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -90,7 +110,7 @@ GET https://graph.microsoft.com/beta/deviceManagement
 
 下面是响应的示例。 
 
-注意: 为简洁起见, 可能会截断此处显示的响应对象。
+注意：为简洁起见，可能会截断此处显示的响应对象。
 
 ``` http
 HTTP/1.1 200 OK
@@ -139,6 +159,7 @@ Content-Length: 918
   }
 }
 ```
+
 
 
 

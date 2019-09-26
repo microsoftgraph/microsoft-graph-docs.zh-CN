@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98245e618ef6c821502109164e2c726657477b91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e7cff26042555067056683dac65ad98d2e9d51df
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350179"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195312"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 intuneBrandingProfile 对象的 JSON 表示形式。
+在请求正文中，提供 intuneBrandingProfile 对象的 JSON 表示形式。
 
 下表显示创建 intuneBrandingProfile 时所需的属性。
 
@@ -54,7 +54,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|Boolean|一个 Boolean 类型的值, 该值表示是否将配置文件用作默认配置文件|
+|isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
 |displayName|字符串|向最终用户显示的公司/组织名称|
@@ -66,19 +66,19 @@ POST /deviceManagement/intuneBrandingProfiles
 |onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 web 门户中使用的主要主题颜色|
-|showLogo|Boolean|Boolean 类型的值, 该值表示是否显示管理员提供的徽标图像|
-|showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值, 该值表示是否在徽标图像旁边显示管理员提供的显示名称|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 其徽标后面有主题颜色背景|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像, 徽标后面有浅背景|
+|showLogo|Boolean|Boolean 类型的值，该值表示是否显示管理员提供的徽标图像|
+|showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值，该值表示是否在徽标图像旁边显示管理员提供的显示名称|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，其徽标后面有主题颜色背景|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用程序中显示的徽标图像，徽标后面有浅背景|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
 |customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
-|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
-|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值, 该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
+|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -182,8 +182,6 @@ Content-Length: 1506
   "isFactoryResetDisabled": true
 }
 ```
-
-
 
 
 

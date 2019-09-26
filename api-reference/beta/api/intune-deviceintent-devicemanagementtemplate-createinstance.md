@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf4cce6d9fd061204d56f1526e1c917c11562075
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6948eebec231d0c19634b92e69d467e9157727a1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313130"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189023"
 ---
 # <a name="createinstance-action"></a>createInstance 操作
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -60,7 +60,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 
 
 ## <a name="response"></a>响应
-如果成功, 此操作会在`200 OK`响应正文中返回响应代码和[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 。
+如果成功，此操作会在`200 OK`响应正文中返回响应代码和[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 。
 
 ## <a name="example"></a>示例
 
@@ -111,8 +111,6 @@ Content-Length: 418
   }
 }
 ```
-
-
 
 
 

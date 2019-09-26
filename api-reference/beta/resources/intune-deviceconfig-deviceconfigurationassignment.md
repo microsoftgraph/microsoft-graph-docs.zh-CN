@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba4aae7fb8706996e0d80d3c3a227b99233b792d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e344554804044687c7e5b9aa90c6171055b64a16
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333035"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37198192"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备配置分配实体将 AAD 组分配到特定设备配置。
 
@@ -34,6 +34,8 @@ ms.locfileid: "36333035"
 |:---|:---|:---|
 |id|String|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置、direct 或包裹/policySet 的工作分配源。 可取值为：`direct`、`policySets`。|
+|sourceId|String|工作分配的源的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,7 +54,9 @@ ms.locfileid: "36333035"
   "id": "String (identifier)",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
 

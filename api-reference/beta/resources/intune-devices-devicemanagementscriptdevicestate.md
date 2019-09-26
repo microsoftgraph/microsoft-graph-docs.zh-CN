@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86f3dcfefb80765ff13bb8742d88fdd869072f66
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cffc9ed9c5e4c5590386f022e78f52f2efd56666
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370044"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196950"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含设备管理脚本的设备运行状态的属性。
 
@@ -32,7 +32,7 @@ ms.locfileid: "36370044"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本设备状态实体的密钥。|
+|id|String|设备管理脚本设备状态实体的密钥。 此属性是只读的。|
 |runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`、`error`、`pending`。|
 |resultMessage|String|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|

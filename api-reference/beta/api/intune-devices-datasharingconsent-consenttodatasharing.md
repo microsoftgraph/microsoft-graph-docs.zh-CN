@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e6b1a20bb69f69b9b522ff6c81802a7ed01225aa
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aae98c051a0c9ac77807f924f08dfc4e3ca9e3a9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310694"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188806"
 ---
 # <a name="consenttodatasharing-action"></a>consentToDataSharing 操作
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -48,7 +48,7 @@ POST /deviceManagement/dataSharingConsents/{dataSharingConsentId}/consentToDataS
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此操作会在`200 OK`响应正文中返回响应代码和[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 。
+如果成功，此操作会在`200 OK`响应正文中返回响应代码和[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 。
 
 ## <a name="example"></a>示例
 
@@ -78,8 +78,6 @@ Content-Length: 417
   }
 }
 ```
-
-
 
 
 

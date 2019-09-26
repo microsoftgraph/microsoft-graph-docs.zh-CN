@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af8899add4adda1f62f267166020e66fb4a9e79a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ec84abc2150e10592b8a8129e957c88bbba027ca
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343879"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186174"
 ---
 # <a name="create-devicemanagementcollectionsettinginstance"></a>创建 deviceManagementCollectionSettingInstance
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)对象。
 
@@ -48,7 +48,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementCollectionSettingInstance 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementCollectionSettingInstance 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementCollectionSettingInstance 时所需的属性。
 
@@ -61,7 +61,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementCollectionSettingInstance](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -93,8 +93,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

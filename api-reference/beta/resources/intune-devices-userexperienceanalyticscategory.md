@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c04f2caaa7b9ee6c093a58e4c8123250113b3a9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f9bd4947a65d98c465671e338e0d21a6218211f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329641"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196712"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>userExperienceAnalyticsCategory 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 "用户体验分析类别" 实体包含类别的各个指标的分数和见解。
 
@@ -30,9 +30,9 @@ ms.locfileid: "36329641"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户体验分析类别的唯一标识符。|
-|displayName|String|用户体验分析类别的名称。|
 |overallScore|Int32|用户体验分析类别的整体分数。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)集合|用户体验分析类别的见解。|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|"用户体验分析" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -51,20 +51,22 @@ ms.locfileid: "36329641"
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "id": "String (identifier)",
-  "displayName": "String",
   "overallScore": 1024,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "String",
       "insightId": "String",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "String"
     }
-  ]
+  ],
+  "state": "String"
 }
 ```
 

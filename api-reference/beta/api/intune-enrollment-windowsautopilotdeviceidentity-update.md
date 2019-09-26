@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 955cc6ef5b2c768472f827ad627894d5f695c6bd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce444f603db5bb33dcda1a1ce0d02d6bf9fa716b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355967"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187638"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>更新 windowsAutopilotDeviceIdentity
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的属性。
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的 JSON 表示形式。
+在请求正文中，提供[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的 JSON 表示形式。
 
 下表显示创建[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)时所需的属性。
 
@@ -63,7 +63,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |productKey|字符串|Windows autopilot 设备产品密钥。|
 |manufacturer|String|Windows autopilot 设备的 Oem 制造商。|
 |model|String|Windows autopilot 设备的模型名称。|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows autopilot 设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Windows autopilot 设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |lastContactedDateTime|DateTimeOffset|Intune 上次联系 Windows autopilot 设备的日期时间。|
 |addressableUserName|String|可寻址的用户名。|
 |userPrincipalName|String|用户主体名称。|
@@ -76,7 +76,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -142,8 +142,6 @@ Content-Length: 1084
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
-
 
 
 

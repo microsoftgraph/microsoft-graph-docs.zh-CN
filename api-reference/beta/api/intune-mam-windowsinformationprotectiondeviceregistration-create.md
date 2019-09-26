@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd4ebf62b1f43018db2e4d905188e4505e6c9d1d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 089e9546665ced37ff75e95353bbee18342dbc60
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353531"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191496"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>创建 windowsInformationProtectionDeviceRegistration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 windowsInformationProtectionDeviceRegistration 对象的 JSON 表示形式。
+在请求正文中，提供 windowsInformationProtectionDeviceRegistration 对象的 JSON 表示形式。
 
 下表显示创建 windowsInformationProtectionDeviceRegistration 时所需的属性。
 
@@ -55,14 +55,14 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |userId|String|与此设备注册记录相关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
-|deviceType|String|设备类型, 例如, Windows 便携式计算机 VS Windows phone。|
+|deviceType|String|设备类型，例如，Windows 便携式计算机 VS Windows phone。|
 |deviceMacAddress|String|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -102,8 +102,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
-
 
 
 

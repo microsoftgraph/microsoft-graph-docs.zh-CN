@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 012bc306facb514cefed5d872d20a11b164b3374
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50c43fd8c921b42d07ba7a4d64fbe2b6b897fc65
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010376"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196271"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 Azure Active Directory 用户对象。
 
@@ -31,14 +31,14 @@ ms.locfileid: "36010376"
 |**设备管理**|
 |[getLoggedOnManagedDevices 函数](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|尚未记录|
 |[removeAllDevicesFromManagement 操作](../api/intune-shared-user-removealldevicesfrommanagement.md)|无|停用该用户管理的所有设备|
-|**移动应用管理 (MAM)**|
+|**移动应用管理（MAM）**|
 |[getManagedAppDiagnosticStatuses 函数](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) 集合|获取给定用户的诊断验证状态。|
 |[getManagedAppPolicies 函数](../api/intune-shared-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|获取给定用户的应用限制。|
 |[wipeManagedAppRegistrationByDeviceTag 操作](../api/intune-shared-user-wipemanagedappregistrationbydevicetag.md)|无|对含有指定设备标记的应用注册发布擦除操作。|
 |[wipeManagedAppRegistrationsByDeviceTag 操作](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|无|对含有指定设备标记的应用注册发布擦除操作。|
 |**载入**|
 |[exportDeviceAndAppManagementData 函数](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|尚未记录|
-|[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|尚未记录|
+|[getEffectiveDeviceEnrollmentConfigurations 函数](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|尚未记录|
 |**疑难解答**|
 |[getManagedDevicesWithAppFailures 函数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|检索具有失败的应用程序的设备的列表。|
 
@@ -55,10 +55,10 @@ ms.locfileid: "36010376"
 |:---|:---|:---|
 |**设备管理**|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|与用户关联的管理设备。|
-|**移动应用管理 (MAM)**|
+|**移动应用管理（MAM）**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
 |**载入**|
-|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|获取面向用户的注册配置|
+|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|获取面向用户的注册配置|
 |**疑难解答**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|
 |mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)集合|此用户的故障排除事件列表。|

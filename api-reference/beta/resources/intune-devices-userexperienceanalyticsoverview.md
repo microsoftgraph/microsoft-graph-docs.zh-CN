@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff3be73059f913943236bfce8bcb4e729a39081d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 11c7bbe64b1495a9e6cb0b8ac144d1afb539789f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371458"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196670"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>userExperienceAnalyticsOverview 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 User experience analytics 概述实体包含所有类别的总分数和每个指标的分数和见解。
 
@@ -34,6 +34,7 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
 |deviceBootPerformanceOverallScore|Int32|User experience analytics 设备启动性能总分。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳实践总分。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)集合|User experience analytics insights。|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|"用户体验分析" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,13 +59,16 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "String",
       "insightId": "String",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "String"
     }
-  ]
+  ],
+  "state": "String"
 }
 ```
 

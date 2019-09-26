@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d988136da29680bd32b2ff24427bbf69135ab10
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7792bd9aef146b3b12b005510e2a955d072c802f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350774"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195830"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>managedDeviceEnrollmentAbandonmentSummary 函数
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 注册 abandonment 摘要报告的元数据
 ## <a name="prerequisites"></a>先决条件
@@ -27,7 +27,8 @@ ms.locfileid: "36350774"
 |委派（工作或学校帐户）||
 | &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序||
+| &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -81,6 +82,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

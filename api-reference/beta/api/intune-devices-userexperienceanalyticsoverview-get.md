@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31d64bb773666dee7a30058bcfa8d0e7a9d1e412
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c3baa5529a3d313cb4561b89011e88988ddb0fc8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311615"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188253"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>获取 userExperienceAnalyticsOverview
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)对象的属性和关系。
 
@@ -51,7 +51,7 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 758
 
 {
   "value": {
@@ -80,18 +80,19 @@ Content-Length: 624
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
         "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
         "insightId": "Insight Id value",
-        "value": [
+        "values": [
           {
-            "@odata.type": "microsoft.graph.insightValueDouble"
+            "@odata.type": "microsoft.graph.insightValueDouble",
+            "value": "<Unknown Primitive Type Edm.Double>"
           }
-        ]
+        ],
+        "severity": "informational"
       }
-    ]
+    ],
+    "state": "insufficientData"
   }
 }
 ```
-
-
 
 
 

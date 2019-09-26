@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75e653dd1152de9bbb57beea00af65572bc8dda4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e0b2d4734bf98945de87c8ed14afb93dd825d33f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355652"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187441"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象的属性。
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象的 JSON 表示形式。
+在请求正文中，提供[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象的 JSON 表示形式。
 
 下表显示创建[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)时所需的属性。
 
@@ -60,14 +60,14 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|latitude|双精度|以度为单位的纬度, 介于-90 和 + 90 之间 (含)。|
-|longitude|Double|以度为单位的经度, 介于-180 和 + 180 之间 (含)。|
+|latitude|双精度|以度为单位的纬度，介于-90 和 + 90 之间（含）。|
+|longitude|Double|以度为单位的经度，介于-180 和 + 180 之间（含）。|
 |radiusInMeters|单精度|以米为单位的半径。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -117,8 +117,6 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
-
 
 
 

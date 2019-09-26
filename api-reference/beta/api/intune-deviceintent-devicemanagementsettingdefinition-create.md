@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f2c46fa55bb77fd1d201a99c3b1c321d677d9727
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4530d2fa5fc0832e12ec4bbe812c12f4677252de
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343305"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189261"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>创建 deviceManagementSettingDefinition
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)对象。
 
@@ -48,7 +48,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementSettingDefinition 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementSettingDefinition 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementSettingDefinition 时所需的属性。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |id|字符串|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称|
-|isTopLevel|Boolean|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在集合或复杂设置中|
+|isTopLevel|Boolean|如果设置是顶级的，则可以对其进行配置，而无需将其包装在集合或复杂设置中|
 |说明|String|设置的说明|
 |documentationUrl|String|设置文档的 Url|
 |keywords|String collection|与设置相关联的关键字|
@@ -67,7 +67,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -143,8 +143,6 @@ Content-Length: 777
   ]
 }
 ```
-
-
 
 
 
