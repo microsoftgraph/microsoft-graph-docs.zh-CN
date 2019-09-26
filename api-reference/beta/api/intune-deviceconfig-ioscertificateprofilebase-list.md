@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2d9d02e028df47bab5b6c0dedd3fe35d37503f6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d53cf7dc4af7ba69a4b335828b8de94f553a105f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345727"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168052"
 ---
 # <a name="list-ioscertificateprofilebases"></a>列出 iosCertificateProfileBases
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)对象的属性和关系。
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -110,8 +110,6 @@ Content-Length: 1600
   ]
 }
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 614f61d9ed3c627fdf57e39481b1ed7ba677d2ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e107169d0ab7fc996a4b758f43ef360c43c6fd16
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315889"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167667"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>更新 iosGeneralDeviceConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象的属性。
 
@@ -53,17 +53,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountBlockModification|Boolean|指示设备处于监督模式时是否允许帐户修改。|
 |activationLockAllowWhenSupervised|Boolean|指示设备处于监督模式时是否允许激活锁定。|
 |airDropBlocked|Boolean|指示设备处于监督模式时是否允许 AirDrop。|
@@ -80,7 +80,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |appStoreBlockInAppPurchases|Boolean|指示是否阻止用户进行应用内购买。|
 |appStoreBlockUIAppInstallation|Boolean|指示是否阻止 App Store 应用，而不通过主机应用限制安装。 仅适用于监督模式（iOS 9.0 及更高版本）。|
 |appStoreRequirePassword|Boolean|指示使用 App Store 时是否需要密码。|
-|autoFillForceAuthentication|Boolean|指示在 Safari 中的 autofilling 密码和信用卡信息之前是否强制进行用户身份验证, 以及受监督的设备上的其他应用。|
+|autoFillForceAuthentication|Boolean|指示在 Safari 中的 autofilling 密码和信用卡信息之前是否强制进行用户身份验证，以及受监督的设备上的其他应用。|
 |bluetoothBlockModification|Boolean|指示设备处于监督模式时是否允许修改蓝牙设置（iOS 10.0 及更高版本）。|
 |cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。 需要受监督设备的 iOS 13 及更高版本。|
 |cellularBlockDataRoaming|Boolean|指示是否阻止数据漫游。|
@@ -92,7 +92,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificatesBlockUntrustedTlsCertificates|Boolean|指示是否阻止不受信任的 TLS 证书。|
 |classroomAppBlockRemoteScreenObservation|Boolean|指示设备处于监督模式时是否允许 Classroom 应用进行远程屏幕观察（iOS 9.3 及更高版本）。|
 |classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动授予 Classroom 应用上托管课程的教师权限，以便在设备处于监督模式时查看学生的屏幕且不会出现提示。|
-|classroomForceAutomaticallyJoinClasses|Boolean|指示设备处于监督模式时是否自动向教师的请求授予权限, 而不提示学生。|
+|classroomForceAutomaticallyJoinClasses|Boolean|指示设备处于监督模式时是否自动向教师的请求授予权限，而不提示学生。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 仅限监督模式。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
@@ -135,19 +135,21 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |keyboardBlockSpellCheck|Boolean|指示设备处于监督模式时是否阻止键盘拼写检查（iOS 8.1.3 及更高版本）。|
 |kioskModeAllowAssistiveSpeak|Boolean|指示在展台模式下是否允许辅助朗读。|
 |kioskModeAllowAssistiveTouchSettings|Boolean|指示在展台模式下是否允许访问辅助触摸设置。|
-|kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。 此属性的功能对于 OS 默认值是多余的, 已弃用。 请改用 KioskModeBlockAutoLock。|
+|kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockAutoLock。|
 |kioskModeBlockAutoLock|Boolean|指示在展台模式下是否阻止设备自动锁定。|
 |kioskModeAllowColorInversionSettings|Boolean|指示在展台模式下是否允许访问颜色反转设置。|
-|kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。 此属性的功能对于 OS 默认值是多余的, 已弃用。 请改用 KioskModeBlockRingerSwitch。|
+|kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockRingerSwitch。|
 |kioskModeBlockRingerSwitch|Boolean|指示在展台模式下是否阻止使用铃声开关。|
-|kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。 此属性的功能对于 OS 默认值是多余的, 已弃用。 请改用 KioskModeBlockScreenRotation。|
+|kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockScreenRotation。|
 |kioskModeBlockScreenRotation|Boolean|指示在展台模式下是否阻止屏幕旋转。|
-|kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。 此属性的功能对于 OS 默认值是多余的, 已弃用。 请改用 KioskModeBlockSleepButton。|
+|kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockSleepButton。|
 |kioskModeBlockSleepButton|Boolean|指示在展台模式下是否阻止使用 "睡眠" 按钮。|
-|kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。 此属性的功能对于 OS 默认值是多余的, 已弃用。 请改用 KioskModeBlockTouchscreen。|
+|kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockTouchscreen。|
 |kioskModeBlockTouchscreen|Boolean|指示在展台模式下是否阻止使用触摸屏。|
+|kioskModeEnableVoiceControl|Boolean|指示是否在展台模式下启用语音控制。|
+|kioskModeAllowVoiceControlModification|Boolean|指示是否允许用户在展台模式下切换语音控件。|
 |kioskModeAllowVoiceOverSettings|Boolean|指示在展台模式下是否允许访问语音插入设置。|
-|kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。 此属性的功能对于 OS 默认值是多余的, 已弃用。 请改用 KioskModeBlockVolumeButtons。|
+|kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。 此属性的功能对于 OS 默认值是多余的，已弃用。 请改用 KioskModeBlockVolumeButtons。|
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
 |kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
@@ -209,32 +211,32 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |voiceDialingBlocked|Boolean|指示是否阻止语音拨号。|
 |wallpaperBlockModification|Boolean|指示是否允许在受监督的设备上修改墙纸（iOS 9.0 及更高版本）。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|指示设备处于监督模式时是否强制设备仅使用配置文件中的 Wi-Fi 网络。|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过教室注册的学生是否会在尝试离开该课程 (iOS 11.3 及更高版本) 时向教师请求权限。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过教室注册的学生是否会在尝试离开该课程（iOS 11.3 及更高版本）时向教师请求权限。|
 |keychainBlockCloudSync|Boolean|指示是否阻止 iCloud 密钥链同步。 需要受监督设备的 iOS 13 及更高版本。|
-|pkiBlockOTAUpdates|Boolean|指示是否阻止无线 PKI 更新。 将此限制设置为 false 不会禁用 CRL 和 OCSP 检查 (iOS 7.0 及更高版本)。|
-|privacyForceLimitAdTracking|Boolean|指示广告跟踪是否受限制。(iOS 7.0 及更高版本)。|
+|pkiBlockOTAUpdates|Boolean|指示是否阻止无线 PKI 更新。 将此限制设置为 false 不会禁用 CRL 和 OCSP 检查（iOS 7.0 及更高版本）。|
+|privacyForceLimitAdTracking|Boolean|指示广告跟踪是否受限制。（iOS 7.0 及更高版本）。|
 |enterpriseBookBlockBackup|Boolean|指示是否阻止企业书籍备份。|
 |enterpriseBookBlockMetadataSync|Boolean|指示是否阻止企业书籍笔记和突出显示同步。|
-|airPrintBlocked|Boolean|指示是否阻止 AirPrint (iOS 11.0 及更高版本)。|
-|airPrintBlockCredentialsStorage|Boolean|指示是否阻止 Airprint 的用户名和密码的密钥链存储 (iOS 11.0 及更高版本)。|
-|airPrintForceTrustedTLS|Boolean|指示 TLS 打印通信是否需要受信任的证书 (iOS 11.0 及更高版本)。|
-|airPrintBlockiBeaconDiscovery|Boolean|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这样可以防止虚假的 AirPrint 蓝牙信号免受网络流量 (iOS 11.0 及更高版本) 的欺骗。|
-|blockSystemAppRemoval|Boolean|指示是否在受监督的设备 (iOS 11.0 及更高版本) 上阻止从设备中删除系统应用程序。|
-|vpnBlockCreation|Boolean|指示是否阻止创建 VPN 配置 (iOS 11.0 及更高版本)。|
+|airPrintBlocked|Boolean|指示是否阻止 AirPrint （iOS 11.0 及更高版本）。|
+|airPrintBlockCredentialsStorage|Boolean|指示是否阻止 Airprint 的用户名和密码的密钥链存储（iOS 11.0 及更高版本）。|
+|airPrintForceTrustedTLS|Boolean|指示 TLS 打印通信是否需要受信任的证书（iOS 11.0 及更高版本）。|
+|airPrintBlockiBeaconDiscovery|Boolean|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这样可以防止虚假的 AirPrint 蓝牙信号免受网络流量（iOS 11.0 及更高版本）的欺骗。|
+|blockSystemAppRemoval|Boolean|指示是否在受监督的设备（iOS 11.0 及更高版本）上阻止从设备中删除系统应用程序。|
+|vpnBlockCreation|Boolean|指示是否阻止创建 VPN 配置（iOS 11.0 及更高版本）。|
 |appRemovalBlocked|Boolean|指示是否允许删除应用程序。|
-|usbRestrictedModeBlocked|Boolean|指示是否允许在锁定设备时连接到 USB 附件 (iOS 11.4.1 及更高版本)。|
-|passwordBlockAutoFill|Boolean|指示是否允许自动填充密码功能 (iOS 12.0 及更高版本)。|
-|passwordBlockProximityRequests|Boolean|指示是否阻止来自附近设备 (iOS 12.0 及更高版本) 发出请求的密码。|
-|passwordBlockAirDropSharing|Boolean|指示是否阻止使用 AirDrop 密码的共享密码功能 iOS 12.0 及更高版本)。|
-|dateAndTimeForceSetAutomatically|Boolean|指示是否启用日期和时间 "设置自动设置" 功能, 以及用户是否无法关闭该功能 (iOS 12.0 及更高版本)。|
-|contactsAllowManagedToUnmanagedWrite|Boolean|指示托管应用程序是否可以将联系人写入非托管联系人帐户 (iOS 12.0 及更高版本)。|
-|contactsAllowUnmanagedToManagedRead|Boolean|指示非托管应用是否可以从托管联系人帐户读取 (iOS 12.0 或更高版本)。|
-|cellularBlockPersonalHotspotModification|Boolean|指示是否阻止用户修改个人热点设置 (iOS 12.2 或更高版本)。|
-|siriDisableServerLogging|Boolean|指示是否禁用服务器端 Siri 日志记录 (iOS 12.2 或更高版本)。|
-|continuousPathKeyboardBlocked|Boolean|指示设备受到监督时是否阻止连续路径键盘 (iOS 13 或更高版本)。|
-|findMyDeviceInFindMyAppBlocked|Boolean|指示设备受到监督时是否阻止查找我的设备 (iOS 13 或更高版本)。|
-|findMyFriendsInFindMyAppBlocked|Boolean|指示设备受到监督时是否阻止查找我的好友 (iOS 13 或更高版本)。|
-|wiFiBlockPowerModification|Boolean|指示设备受到监督时是否阻止 WiFi 电源修改 (iOS 13 或更高版本)。|
+|usbRestrictedModeBlocked|Boolean|指示是否允许在锁定设备时连接到 USB 附件（iOS 11.4.1 及更高版本）。|
+|passwordBlockAutoFill|Boolean|指示是否允许自动填充密码功能（iOS 12.0 及更高版本）。|
+|passwordBlockProximityRequests|Boolean|指示是否阻止来自附近设备（iOS 12.0 及更高版本）发出请求的密码。|
+|passwordBlockAirDropSharing|Boolean|指示是否阻止使用 AirDrop 密码的共享密码功能 iOS 12.0 及更高版本）。|
+|dateAndTimeForceSetAutomatically|Boolean|指示是否启用日期和时间 "设置自动设置" 功能，以及用户是否无法关闭该功能（iOS 12.0 及更高版本）。|
+|contactsAllowManagedToUnmanagedWrite|Boolean|指示托管应用程序是否可以将联系人写入非托管联系人帐户（iOS 12.0 及更高版本）。|
+|contactsAllowUnmanagedToManagedRead|Boolean|指示非托管应用是否可以从托管联系人帐户读取（iOS 12.0 或更高版本）。|
+|cellularBlockPersonalHotspotModification|Boolean|指示是否阻止用户修改个人热点设置（iOS 12.2 或更高版本）。|
+|siriDisableServerLogging|Boolean|指示是否禁用服务器端 Siri 日志记录（iOS 12.2 或更高版本）。|
+|continuousPathKeyboardBlocked|Boolean|指示设备受到监督时是否阻止连续路径键盘（iOS 13 或更高版本）。|
+|findMyDeviceInFindMyAppBlocked|Boolean|指示设备受到监督时是否阻止查找我的设备（iOS 13 或更高版本）。|
+|findMyFriendsInFindMyAppBlocked|Boolean|指示设备受到监督时是否阻止查找我的好友（iOS 13 或更高版本）。|
+|wiFiBlockPowerModification|Boolean|指示设备受到监督时是否阻止 WiFi 电源修改（iOS 13 或更高版本）。|
 |iTunesBlocked|Boolean|指示是否阻止 iTunes 应用。 需要受监督设备的 iOS 13 及更高版本。|
 
 
@@ -249,7 +251,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10353
+Content-length: 10444
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -389,6 +391,8 @@ Content-length: 10353
   "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
   "kioskModeBlockTouchscreen": true,
+  "kioskModeEnableVoiceControl": true,
+  "kioskModeAllowVoiceControlModification": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -542,7 +546,7 @@ Content-length: 10353
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10525
+Content-Length: 10616
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -685,6 +689,8 @@ Content-Length: 10525
   "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
   "kioskModeBlockTouchscreen": true,
+  "kioskModeEnableVoiceControl": true,
+  "kioskModeAllowVoiceControlModification": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -832,8 +838,6 @@ Content-Length: 10525
   "iTunesBlocked": true
 }
 ```
-
-
 
 
 

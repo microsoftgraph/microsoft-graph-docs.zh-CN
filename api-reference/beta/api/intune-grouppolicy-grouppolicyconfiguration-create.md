@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa030440e0b984809b64f9db8c6b9b020d9a67b2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d839673b15652b446926a3b7651349a7148c7727
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355337"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184232"
 ---
 # <a name="create-grouppolicyconfiguration"></a>创建 groupPolicyConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 groupPolicyConfiguration 对象的 JSON 表示形式。
+在请求正文中，提供 groupPolicyConfiguration 对象的 JSON 表示形式。
 
 下表显示创建 groupPolicyConfiguration 时所需的属性。
 
@@ -60,7 +60,7 @@ POST /deviceManagement/groupPolicyConfigurations
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -94,8 +94,6 @@ Content-Length: 317
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 
