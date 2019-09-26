@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76285db02be34bb0615dc96deeae634cbfe98320
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f19495b6e78e1582bbfdb6f2c3b6d5c00188f0cf
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352754"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190633"
 ---
-# <a name="update-devicemanagementexchangeconnector"></a><span data-ttu-id="38064-103">更新 deviceManagementExchangeConnector</span><span class="sxs-lookup"><span data-stu-id="38064-103">Update deviceManagementExchangeConnector</span></span>
+# <a name="update-devicemanagementexchangeconnector"></a><span data-ttu-id="8d838-103">更新 deviceManagementExchangeConnector</span><span class="sxs-lookup"><span data-stu-id="8d838-103">Update deviceManagementExchangeConnector</span></span>
 
-> <span data-ttu-id="38064-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="38064-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8d838-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8d838-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="38064-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="38064-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8d838-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8d838-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="38064-106">更新 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="38064-106">Update the properties of a [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.</span></span>
+<span data-ttu-id="8d838-106">更新 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8d838-106">Update the properties of a [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="38064-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="38064-107">Prerequisites</span></span>
-<span data-ttu-id="38064-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="38064-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8d838-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="8d838-107">Prerequisites</span></span>
+<span data-ttu-id="8d838-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8d838-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="38064-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="38064-110">Permission type</span></span>|<span data-ttu-id="38064-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="38064-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8d838-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8d838-110">Permission type</span></span>|<span data-ttu-id="8d838-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8d838-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="38064-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="38064-112">Delegated (work or school account)</span></span>|<span data-ttu-id="38064-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38064-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="38064-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="38064-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="38064-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="38064-115">Not supported.</span></span>|
-|<span data-ttu-id="38064-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="38064-116">Application</span></span>|<span data-ttu-id="38064-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38064-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d838-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8d838-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8d838-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d838-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d838-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8d838-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8d838-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8d838-115">Not supported.</span></span>|
+|<span data-ttu-id="8d838-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8d838-116">Application</span></span>|<span data-ttu-id="8d838-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d838-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="38064-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="38064-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d838-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8d838-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,39 +38,39 @@ ms.locfileid: "36352754"
 PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="38064-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="38064-119">Request headers</span></span>
-|<span data-ttu-id="38064-120">标头</span><span class="sxs-lookup"><span data-stu-id="38064-120">Header</span></span>|<span data-ttu-id="38064-121">值</span><span class="sxs-lookup"><span data-stu-id="38064-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8d838-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8d838-119">Request headers</span></span>
+|<span data-ttu-id="8d838-120">标头</span><span class="sxs-lookup"><span data-stu-id="8d838-120">Header</span></span>|<span data-ttu-id="8d838-121">值</span><span class="sxs-lookup"><span data-stu-id="8d838-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="38064-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="38064-122">Authorization</span></span>|<span data-ttu-id="38064-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="38064-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="38064-124">接受</span><span class="sxs-lookup"><span data-stu-id="38064-124">Accept</span></span>|<span data-ttu-id="38064-125">application/json</span><span class="sxs-lookup"><span data-stu-id="38064-125">application/json</span></span>|
+|<span data-ttu-id="8d838-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d838-122">Authorization</span></span>|<span data-ttu-id="8d838-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8d838-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8d838-124">接受</span><span class="sxs-lookup"><span data-stu-id="8d838-124">Accept</span></span>|<span data-ttu-id="8d838-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8d838-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="38064-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="38064-126">Request body</span></span>
-<span data-ttu-id="38064-127">在请求正文中，提供 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="38064-127">In the request body, supply a JSON representation for the [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d838-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8d838-126">Request body</span></span>
+<span data-ttu-id="8d838-127">在请求正文中，提供 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8d838-127">In the request body, supply a JSON representation for the [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.</span></span>
 
-<span data-ttu-id="38064-128">下表显示创建 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="38064-128">The following table shows the properties that are required when you create the [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).</span></span>
+<span data-ttu-id="8d838-128">下表显示创建 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8d838-128">The following table shows the properties that are required when you create the [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).</span></span>
 
-|<span data-ttu-id="38064-129">属性</span><span class="sxs-lookup"><span data-stu-id="38064-129">Property</span></span>|<span data-ttu-id="38064-130">类型</span><span class="sxs-lookup"><span data-stu-id="38064-130">Type</span></span>|<span data-ttu-id="38064-131">说明</span><span class="sxs-lookup"><span data-stu-id="38064-131">Description</span></span>|
+|<span data-ttu-id="8d838-129">属性</span><span class="sxs-lookup"><span data-stu-id="8d838-129">Property</span></span>|<span data-ttu-id="8d838-130">类型</span><span class="sxs-lookup"><span data-stu-id="8d838-130">Type</span></span>|<span data-ttu-id="8d838-131">说明</span><span class="sxs-lookup"><span data-stu-id="8d838-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="38064-132">id</span><span class="sxs-lookup"><span data-stu-id="38064-132">id</span></span>|<span data-ttu-id="38064-133">String</span><span class="sxs-lookup"><span data-stu-id="38064-133">String</span></span>|<span data-ttu-id="38064-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="38064-134">Not yet documented</span></span>|
-|<span data-ttu-id="38064-135">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="38064-135">lastSyncDateTime</span></span>|<span data-ttu-id="38064-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="38064-136">DateTimeOffset</span></span>|<span data-ttu-id="38064-137">Exchange Connector 的上一次同步时间</span><span class="sxs-lookup"><span data-stu-id="38064-137">Last sync time for the Exchange Connector</span></span>|
-|<span data-ttu-id="38064-138">status</span><span class="sxs-lookup"><span data-stu-id="38064-138">status</span></span>|[<span data-ttu-id="38064-139">deviceManagementExchangeConnectorStatus</span><span class="sxs-lookup"><span data-stu-id="38064-139">deviceManagementExchangeConnectorStatus</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|<span data-ttu-id="38064-140">Exchange Connector 状态。</span><span class="sxs-lookup"><span data-stu-id="38064-140">Exchange Connector Status.</span></span> <span data-ttu-id="38064-141">可取值为：`none`、`connectionPending`、`connected`、`disconnected`。</span><span class="sxs-lookup"><span data-stu-id="38064-141">Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.</span></span>|
-|<span data-ttu-id="38064-142">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="38064-142">primarySmtpAddress</span></span>|<span data-ttu-id="38064-143">String</span><span class="sxs-lookup"><span data-stu-id="38064-143">String</span></span>|<span data-ttu-id="38064-144">用于配置服务到服务 Exchange Connector 的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="38064-144">Email address used to configure the Service To Service Exchange Connector.</span></span>|
-|<span data-ttu-id="38064-145">serverName</span><span class="sxs-lookup"><span data-stu-id="38064-145">serverName</span></span>|<span data-ttu-id="38064-146">String</span><span class="sxs-lookup"><span data-stu-id="38064-146">String</span></span>|<span data-ttu-id="38064-147">Exchange 服务器的名称。</span><span class="sxs-lookup"><span data-stu-id="38064-147">The name of the Exchange server.</span></span>|
-|<span data-ttu-id="38064-148">connectorServerName</span><span class="sxs-lookup"><span data-stu-id="38064-148">connectorServerName</span></span>|<span data-ttu-id="38064-149">String</span><span class="sxs-lookup"><span data-stu-id="38064-149">String</span></span>|<span data-ttu-id="38064-150">托管 Exchange Connector 的服务器的名称。</span><span class="sxs-lookup"><span data-stu-id="38064-150">The name of the server hosting the Exchange Connector.</span></span>|
-|<span data-ttu-id="38064-151">exchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="38064-151">exchangeConnectorType</span></span>|[<span data-ttu-id="38064-152">deviceManagementExchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="38064-152">deviceManagementExchangeConnectorType</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|<span data-ttu-id="38064-153">配置的 Exchange Connector 的类型。</span><span class="sxs-lookup"><span data-stu-id="38064-153">The type of Exchange Connector Configured.</span></span> <span data-ttu-id="38064-154">可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。</span><span class="sxs-lookup"><span data-stu-id="38064-154">Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.</span></span>|
-|<span data-ttu-id="38064-155">version</span><span class="sxs-lookup"><span data-stu-id="38064-155">version</span></span>|<span data-ttu-id="38064-156">String</span><span class="sxs-lookup"><span data-stu-id="38064-156">String</span></span>|<span data-ttu-id="38064-157">ExchangeConnectorAgent 版本</span><span class="sxs-lookup"><span data-stu-id="38064-157">The version of the ExchangeConnectorAgent</span></span>|
-|<span data-ttu-id="38064-158">exchangeAlias</span><span class="sxs-lookup"><span data-stu-id="38064-158">exchangeAlias</span></span>|<span data-ttu-id="38064-159">String</span><span class="sxs-lookup"><span data-stu-id="38064-159">String</span></span>|<span data-ttu-id="38064-160">分配到 Exchange 服务器的别名</span><span class="sxs-lookup"><span data-stu-id="38064-160">An alias assigned to the Exchange server</span></span>|
-|<span data-ttu-id="38064-161">exchangeOrganization</span><span class="sxs-lookup"><span data-stu-id="38064-161">exchangeOrganization</span></span>|<span data-ttu-id="38064-162">String</span><span class="sxs-lookup"><span data-stu-id="38064-162">String</span></span>|<span data-ttu-id="38064-163">Exchange 服务器的 Exchange 组织</span><span class="sxs-lookup"><span data-stu-id="38064-163">Exchange Organization to the Exchange server</span></span>|
+|<span data-ttu-id="8d838-132">id</span><span class="sxs-lookup"><span data-stu-id="8d838-132">id</span></span>|<span data-ttu-id="8d838-133">String</span><span class="sxs-lookup"><span data-stu-id="8d838-133">String</span></span>|<span data-ttu-id="8d838-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="8d838-134">Not yet documented</span></span>|
+|<span data-ttu-id="8d838-135">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="8d838-135">lastSyncDateTime</span></span>|<span data-ttu-id="8d838-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8d838-136">DateTimeOffset</span></span>|<span data-ttu-id="8d838-137">Exchange Connector 的上一次同步时间</span><span class="sxs-lookup"><span data-stu-id="8d838-137">Last sync time for the Exchange Connector</span></span>|
+|<span data-ttu-id="8d838-138">status</span><span class="sxs-lookup"><span data-stu-id="8d838-138">status</span></span>|[<span data-ttu-id="8d838-139">deviceManagementExchangeConnectorStatus</span><span class="sxs-lookup"><span data-stu-id="8d838-139">deviceManagementExchangeConnectorStatus</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|<span data-ttu-id="8d838-140">Exchange Connector 状态。</span><span class="sxs-lookup"><span data-stu-id="8d838-140">Exchange Connector Status.</span></span> <span data-ttu-id="8d838-141">可取值为：`none`、`connectionPending`、`connected`、`disconnected`。</span><span class="sxs-lookup"><span data-stu-id="8d838-141">Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.</span></span>|
+|<span data-ttu-id="8d838-142">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="8d838-142">primarySmtpAddress</span></span>|<span data-ttu-id="8d838-143">String</span><span class="sxs-lookup"><span data-stu-id="8d838-143">String</span></span>|<span data-ttu-id="8d838-144">用于配置服务到服务 Exchange Connector 的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="8d838-144">Email address used to configure the Service To Service Exchange Connector.</span></span>|
+|<span data-ttu-id="8d838-145">serverName</span><span class="sxs-lookup"><span data-stu-id="8d838-145">serverName</span></span>|<span data-ttu-id="8d838-146">String</span><span class="sxs-lookup"><span data-stu-id="8d838-146">String</span></span>|<span data-ttu-id="8d838-147">Exchange 服务器的名称。</span><span class="sxs-lookup"><span data-stu-id="8d838-147">The name of the Exchange server.</span></span>|
+|<span data-ttu-id="8d838-148">connectorServerName</span><span class="sxs-lookup"><span data-stu-id="8d838-148">connectorServerName</span></span>|<span data-ttu-id="8d838-149">String</span><span class="sxs-lookup"><span data-stu-id="8d838-149">String</span></span>|<span data-ttu-id="8d838-150">托管 Exchange Connector 的服务器的名称。</span><span class="sxs-lookup"><span data-stu-id="8d838-150">The name of the server hosting the Exchange Connector.</span></span>|
+|<span data-ttu-id="8d838-151">exchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="8d838-151">exchangeConnectorType</span></span>|[<span data-ttu-id="8d838-152">deviceManagementExchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="8d838-152">deviceManagementExchangeConnectorType</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|<span data-ttu-id="8d838-153">配置的 Exchange Connector 的类型。</span><span class="sxs-lookup"><span data-stu-id="8d838-153">The type of Exchange Connector Configured.</span></span> <span data-ttu-id="8d838-154">可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。</span><span class="sxs-lookup"><span data-stu-id="8d838-154">Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.</span></span>|
+|<span data-ttu-id="8d838-155">version</span><span class="sxs-lookup"><span data-stu-id="8d838-155">version</span></span>|<span data-ttu-id="8d838-156">String</span><span class="sxs-lookup"><span data-stu-id="8d838-156">String</span></span>|<span data-ttu-id="8d838-157">ExchangeConnectorAgent 版本</span><span class="sxs-lookup"><span data-stu-id="8d838-157">The version of the ExchangeConnectorAgent</span></span>|
+|<span data-ttu-id="8d838-158">exchangeAlias</span><span class="sxs-lookup"><span data-stu-id="8d838-158">exchangeAlias</span></span>|<span data-ttu-id="8d838-159">String</span><span class="sxs-lookup"><span data-stu-id="8d838-159">String</span></span>|<span data-ttu-id="8d838-160">分配到 Exchange 服务器的别名</span><span class="sxs-lookup"><span data-stu-id="8d838-160">An alias assigned to the Exchange server</span></span>|
+|<span data-ttu-id="8d838-161">exchangeOrganization</span><span class="sxs-lookup"><span data-stu-id="8d838-161">exchangeOrganization</span></span>|<span data-ttu-id="8d838-162">String</span><span class="sxs-lookup"><span data-stu-id="8d838-162">String</span></span>|<span data-ttu-id="8d838-163">Exchange 服务器的 Exchange 组织</span><span class="sxs-lookup"><span data-stu-id="8d838-163">Exchange Organization to the Exchange server</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="38064-164">响应</span><span class="sxs-lookup"><span data-stu-id="38064-164">Response</span></span>
-<span data-ttu-id="38064-165">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="38064-165">If successful, this method returns a `200 OK` response code and an updated [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8d838-164">响应</span><span class="sxs-lookup"><span data-stu-id="8d838-164">Response</span></span>
+<span data-ttu-id="8d838-165">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8d838-165">If successful, this method returns a `200 OK` response code and an updated [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="38064-166">示例</span><span class="sxs-lookup"><span data-stu-id="38064-166">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8d838-166">示例</span><span class="sxs-lookup"><span data-stu-id="8d838-166">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="38064-167">请求</span><span class="sxs-lookup"><span data-stu-id="38064-167">Request</span></span>
-<span data-ttu-id="38064-168">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="38064-168">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8d838-167">请求</span><span class="sxs-lookup"><span data-stu-id="8d838-167">Request</span></span>
+<span data-ttu-id="8d838-168">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8d838-168">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
@@ -90,8 +90,8 @@ Content-length: 490
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="38064-169">响应</span><span class="sxs-lookup"><span data-stu-id="38064-169">Response</span></span>
-<span data-ttu-id="38064-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="38064-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8d838-169">响应</span><span class="sxs-lookup"><span data-stu-id="8d838-169">Response</span></span>
+<span data-ttu-id="8d838-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8d838-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -111,8 +111,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
 
 
 
