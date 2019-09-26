@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 936f0edcbf41fb9556ab8c67dbbd41da42b211dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 52c5b9af710461524658c4ce5ac7a3b33099c68f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353384"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191377"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>创建 windowsInformationProtectionWipeAction
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 windowsInformationProtectionWipeAction 对象的 JSON 表示形式。
+在请求正文中，提供 windowsInformationProtectionWipeAction 对象的 JSON 表示形式。
 
 下表显示创建 windowsInformationProtectionWipeAction 时所需的属性。
 
@@ -62,7 +62,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -102,8 +102,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
-
 
 
 

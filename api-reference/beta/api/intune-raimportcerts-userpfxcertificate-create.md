@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c1154880d26ee10732365e4d21affc7b9ed8643
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 27246f8e95b2db50be9b0a4e26fa962cbbec0560
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351649"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189667"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
 
@@ -25,9 +25,9 @@ ms.locfileid: "36351649"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|* * TODO: 确定作用域 * *|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|* * TODO: 确定 AppOnly 作用域 * *|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceManagement/userPfxCertificates
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 userPFXCertificate 对象的 JSON 表示形式。
+在请求正文中，提供 userPFXCertificate 对象的 JSON 表示形式。
 
 下表显示创建 userPFXCertificate 时所需的属性。
 
@@ -58,7 +58,7 @@ POST /deviceManagement/userPfxCertificates
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
+|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|
@@ -68,7 +68,7 @@ POST /deviceManagement/userPfxCertificates
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -118,8 +118,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

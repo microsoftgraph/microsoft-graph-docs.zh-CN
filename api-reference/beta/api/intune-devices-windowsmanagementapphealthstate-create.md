@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37ce5cd27f00a01a8796789c36e0701d6cf4e89a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b0dfb7e7c4ac94ecc80b87823cfda4f535b9f3c8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348471"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188043"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>创建 windowsManagementAppHealthState
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。
 
@@ -45,13 +45,13 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 windowsManagementAppHealthState 对象的 JSON 表示形式。
+在请求正文中，提供 windowsManagementAppHealthState 对象的 JSON 表示形式。
 
 下表显示创建 windowsManagementAppHealthState 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows management 应用运行状况状态的唯一标识符|
+|id|String|Windows 管理应用运行状况状态的唯一标识符。 此属性是只读的。|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
 |installedVersion|String|Windows 管理应用程序已安装版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入时间。|
@@ -61,7 +61,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -99,8 +99,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
-
 
 
 

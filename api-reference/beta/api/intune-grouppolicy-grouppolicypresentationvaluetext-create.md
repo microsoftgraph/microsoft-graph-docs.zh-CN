@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7fa53d823d66b204af8927c3d21f891c3db4a0e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 80faa33c50c97b6d6e7d34adace6dc9fd6a33a02
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354448"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193506"
 ---
 # <a name="create-grouppolicypresentationvaluetext"></a>创建 groupPolicyPresentationValueText
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 groupPolicyPresentationValueText 对象的 JSON 表示形式。
+在请求正文中，提供 groupPolicyPresentationValueText 对象的 JSON 表示形式。
 
 下表显示创建 groupPolicyPresentationValueText 时所需的属性。
 
@@ -59,7 +59,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -91,8 +91,6 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
-
-
 
 
 

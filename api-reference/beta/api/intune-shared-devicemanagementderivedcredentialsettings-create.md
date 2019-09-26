@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b948df68c5bf1e9467c66e7a4c326e14dd036f8
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: a605c0f868eab3deabbc854b27d62cc9e97769b1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699521"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194577"
 ---
 # <a name="create-devicemanagementderivedcredentialsettings"></a>创建 deviceManagementDerivedCredentialSettings
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)对象。
 
@@ -47,7 +47,7 @@ POST /deviceManagement/derivedCredentials
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementDerivedCredentialSettings 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementDerivedCredentialSettings 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementDerivedCredentialSettings 时所需的属性。
 
@@ -62,7 +62,7 @@ POST /deviceManagement/derivedCredentials
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -98,6 +98,7 @@ Content-Length: 290
   "notificationType": "companyPortal"
 }
 ```
+
 
 
 

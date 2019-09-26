@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 20889790c74c50cac6e38fceeb7fbbff8ed4506e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c8ad461cc53554ce70f04b9b7bdb668aad582d2a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310778"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188876"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 函数
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 下载 Apple 推送通知证书签名请求
 
@@ -48,7 +48,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此函数会在`200 OK`响应正文中返回响应代码和字符串。
+如果成功，此函数会在`200 OK`响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -69,8 +69,6 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
-
-
 
 
 

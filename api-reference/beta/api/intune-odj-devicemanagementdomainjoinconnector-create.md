@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c41b1d7e91570f767b64149a338900e5cb4b1522
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 178d43f041058f4380c7b179d56d7f91d1923a6a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353160"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191097"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>创建 deviceManagementDomainJoinConnector
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/domainJoinConnectors
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 deviceManagementDomainJoinConnector 对象的 JSON 表示形式。
+在请求正文中，提供 deviceManagementDomainJoinConnector 对象的 JSON 表示形式。
 
 下表显示创建 deviceManagementDomainJoinConnector 时所需的属性。
 
@@ -60,7 +60,7 @@ POST /deviceManagement/domainJoinConnectors
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -96,8 +96,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
-
 
 
 

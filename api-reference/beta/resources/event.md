@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 79c10718ab03cd23d03f9b6b9e9f3e2e2acfa31d
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 7c2ae578a92993fd8fb253a19b8cdc13a35cb5b5
+ms.sourcegitcommit: 6c007d70d5e7284c4b9e2b5d909e9087bbdaad93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036387"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37149592"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "37036387"
 > **注释：** 与用户日历、组日历及其事件交互的方式稍有不同：
 
 - 只可以组织 [calendarGroup](calendargroup.md) 中的用户日历。
+- 只能将 [attachment](attachment.md) 对象添加到用户日历中的事件，而不能添加到组日历中的事件。
 - Outlook 将代表组自动接受所有会议请求。 只可以[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)_用户_日历中的会议请求。
 - Outlook 不支持对组事件提供提醒。 只可以[暂停](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)_用户_日历中的[提醒](reminder.md)。
 

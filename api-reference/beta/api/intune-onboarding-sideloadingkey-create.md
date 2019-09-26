@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b55c672869b95ea85f591a67a710d64c90de61b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 166b02eb7ee621aed828aba935220c9b07a2e85b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352410"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190327"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
 
@@ -45,14 +45,14 @@ POST /deviceAppManagement/sideLoadingKeys
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 sideLoadingKey 对象的 JSON 表示形式。
+在请求正文中，提供 sideLoadingKey 对象的 JSON 表示形式。
 
 下表显示创建 sideLoadingKey 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|侧加载密钥唯一 Id。|
-|value|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
+|value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
 |displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
 |说明|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
@@ -61,7 +61,7 @@ POST /deviceAppManagement/sideLoadingKeys
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -99,8 +99,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
-
 
 
 

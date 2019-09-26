@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cde55975dab7b216c904bb15e2d1a8cb3224496b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 21b72d000208e2913eae06f6d88b4bd141194e67
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328016"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196565"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 DepOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 载入服务实例管理用于在 Apple 和 Intune 之间同步数据的 Apple 令牌。
 
@@ -33,6 +33,7 @@ DepOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 
 |[syncWithAppleDeviceEnrollmentProgram 操作](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|无|在 Apple 设备注册计划和 Intune 之间进行同步|
 |[shareForSchoolDataSyncService 操作](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|无|尚未记录|
 |[unshareForSchoolDataSyncService 操作](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|无|尚未记录|
+|[getExpiringVppTokenCount 函数](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

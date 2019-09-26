@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b227d89df59e4b8a7bd975c96befe2c06e8af445
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e8f8b3171eaabedfa085f7685b2f4f7aa1ad87a3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350851"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194591"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。
 
@@ -24,9 +24,9 @@ ms.locfileid: "36350851"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请注意, 该权限根据工作流的不同而有所不同。
+请注意，该权限根据工作流的不同而有所不同。
 
-| 权限&nbsp;类型&nbsp;(按&nbsp;工作流) | 权限（从最高特权到最低特权） |
+| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） ||
 | &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
@@ -41,14 +41,36 @@ ms.locfileid: "36350851"
 | &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
-| 应用程序 | 不支持。 |
+| 应用程序 ||
+| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **设备意向** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -100,7 +122,7 @@ PATCH /deviceManagement
 
 ### <a name="request"></a>请求
 
-下面的示例展示了设备管理工作流后的请求:
+下面的示例展示了设备管理工作流后的请求：
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
@@ -167,6 +189,7 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
 
 
 
