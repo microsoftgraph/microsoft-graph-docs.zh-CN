@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce77b448d381547bfc77b6a27e1e9935f252be5e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d3d53a19408b6a87f0aca2cc4187895d67d4e38
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371462"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196726"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>userExperienceAnalyticsBaseline 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 User experience analytics 基线实体包含比较用户体验分析得分所依据的基线值。
 
@@ -35,7 +35,8 @@ User experience analytics 基线实体包含比较用户体验分析得分所依
 |id|String|User experience analytics 比较基准的唯一标识符。|
 |displayName|String|User experience analytics 基线的名称。|
 |overallScore|Int32|用户体验分析基准的总体分数。|
-|overallRegressionThreshold|Int32|User experience analytics 比较基准的总体回归阈值。|
+|isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
+|createdDateTime|DateTimeOffset|自定义基线的创建日期。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -57,7 +58,8 @@ User experience analytics 基线实体包含比较用户体验分析得分所依
   "id": "String (identifier)",
   "displayName": "String",
   "overallScore": 1024,
-  "overallRegressionThreshold": 1024
+  "isBuiltIn": true,
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

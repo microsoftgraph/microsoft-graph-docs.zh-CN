@@ -1,22 +1,21 @@
 ---
 title: 带有 Intune 的板载托管设备-Microsoft Graph API
-description: 列出用于为租户组织进行板载 (配置和初始化) 设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
+description: 列出用于为租户组织进行板载（配置和初始化）设备的 Intune 终结点（REST）的 Microsoft Graph API。
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: resourcePageType
-ms.openlocfilehash: cc082578bea7e6b1d477547538e01dbaa1ef2bdb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d03cd932386b4b36af2f43beefee5cf59d21395c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998231"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196495"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 你可以通过 Microsoft Intune 注册设备（包括 Windows 电脑）以启用移动设备管理 (MDM)。 本主题介绍在 Intune 管理中注册移动设备的不同方法。 注册设备的方法取决于需要的设备类型、所有权和管理级别。 “自带设备”(BYOD) 注册可让用户注册其个人手机、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。
 
@@ -24,7 +23,6 @@ ms.locfileid: "35998231"
 
 - [证书连接器设置](intune-onboarding-certificateconnectorsetting.md)
 - [设备和应用管理数据](intune-onboarding-deviceandappmanagementdata.md)
-- [设备注册配置](intune-onboarding-deviceenrollmentconfiguration.md)
 - [设备注册限制配置](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [设备注册平台限制](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)

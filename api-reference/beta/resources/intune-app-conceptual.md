@@ -1,25 +1,25 @@
 ---
 title: 如何使用 Microsoft Intune 保护公司应用程序数据-Microsoft Graph API
-description: 列出用于管理租户组织的应用及其策略的 Intune 终结点 (REST) 的 Microsoft Graph API。
+description: 列出用于管理租户组织的应用及其策略的 Intune 终结点（REST）的 Microsoft Graph API。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0af6b2070b7438aee2f4efcdb9661cf37a265cd9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 48ba27d74160c3c9402efb7590c6ff0a7e809ce8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366201"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199367"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可独立于任何移动设备管理 (MDM) 解决方案使用, 因此您可以使用它在设备管理解决方案中使用或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可独立于任何移动设备管理（MDM）解决方案使用，因此您可以使用它在设备管理解决方案中使用或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
@@ -45,6 +45,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Android 托管的应用商店应用配置架构](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android 托管的应用商店应用配置架构项](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android 托管的应用商店应用配置架构项数据类型](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android 托管存储 web 应用](intune-apps-androidmanagedstorewebapp.md)
 - [Android 最低操作系统版本](intune-apps-androidminimumoperatingsystem.md)
 - [Android 权限操作](intune-apps-androidpermissionaction.md)
 - [Android 权限操作类型](intune-apps-androidpermissionactiontype.md)
@@ -59,18 +60,14 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [安装状态](intune-books-installstate.md)
 - [iOS 设备类型](intune-apps-iosdevicetype.md)
 - [iOS LOB 应用](intune-apps-ioslobapp.md)
-- [iOS LOB 应用分配设置](intune-apps-ioslobappassignmentsettings.md)
-- [iOS LOB 应用预配配置](intune-apps-ioslobappprovisioningconfiguration.md)
 - [iOS LOB 应用预配配置分配](intune-apps-ioslobappprovisioningconfigurationassignment.md)
 - [iOS 最低操作系统版本](intune-apps-iosminimumoperatingsystem.md)
 - [iOS 移动应用配置](intune-apps-iosmobileappconfiguration.md)
 - [iOS 应用商店应用](intune-apps-iosstoreapp.md)
-- [iOS 应用商店应用分配设置](intune-apps-iosstoreappassignmentsettings.md)
 - [iOS VPP 应用](intune-apps-iosvppapp.md)
 - [iOS VPP 应用分配的设备许可证](intune-apps-iosvppappassigneddevicelicense.md)
 - [iOS VPP 应用分配的许可证](intune-apps-iosvppappassignedlicense.md)
 - [iOS VPP 应用分配的用户许可证](intune-apps-iosvppappassigneduserlicense.md)
-- [iOS VPP 应用分配设置](intune-apps-iosvppappassignmentsettings.md)
 - [iOS VPP 应用撤销许可证操作结果](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP 电子书](intune-books-iosvppebook.md)
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
@@ -80,7 +77,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [macOS Office 套件应用](intune-apps-macosofficesuiteapp.md)
 - [macOS VPP 应用](intune-apps-macosvppapp.md)
 - [macOS VPP 应用分配的许可证](intune-apps-macosvppappassignedlicense.md)
-- [macOS VPP 应用分配设置](intune-apps-macosvppappassignmentsettings.md)
 - [macOS VPP 应用撤销许可证操作结果](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [托管的 Android LOB 应用](intune-apps-managedandroidlobapp.md)
 - [托管的 Android 应用商店应用](intune-apps-managedandroidstoreapp.md)
@@ -100,12 +96,9 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [托管的移动 LOB 应用](intune-apps-managedmobilelobapp.md)
 - [MDM 应用配置密钥类型](intune-apps-mdmappconfigkeytype.md)
 - [适用于企业的 Microsoft 应用商店应用](intune-apps-microsoftstoreforbusinessapp.md)
-- [适用于企业的 Microsoft 应用商店分配设置](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
 - [适用于企业的 Microsoft Store 包含的应用](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [适用于企业的 Microsoft Store 许可证类型](intune-apps-microsoftstoreforbusinesslicensetype.md)
-- [移动应用](intune-apps-mobileapp.md)
 - [移动应用分配](intune-apps-mobileappassignment.md)
-- [移动应用分配设置](intune-apps-mobileappassignmentsettings.md)
 - [移动应用类别](intune-apps-mobileappcategory.md)
 - [移动应用内容](intune-apps-mobileappcontent.md)
 - [移动应用内容文件](intune-apps-mobileappcontentfile.md)
@@ -138,7 +131,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [VPP 授权类型](intune-apps-vpplicensingtype.md)
 - [Web 应用](intune-apps-webapp.md)
 - [Win32 LOB 应用](intune-apps-win32lobapp.md)
-- [Win32 LOB 应用分配设置](intune-apps-win32lobappassignmentsettings.md)
 - [Win32 LOB 应用检测](intune-apps-win32lobappdetection.md)
 - [Win32 LOB 应用检测运算符](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB 应用文件系统检测](intune-apps-win32lobappfilesystemdetection.md)
@@ -147,7 +139,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用安装体验](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB 应用 msi 信息](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB 应用 msi 包类型](intune-apps-win32lobappmsipackagetype.md)
-- [Win32 LOB 应用通知](intune-apps-win32lobappnotification.md)
 - [Win32 LOB 应用 Power Shell 脚本检测](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32 LOB 应用程序电源命令行管理程序脚本检测类型](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Win32 LOB 应用程序 power shell 脚本要求](intune-apps-win32lobapppowershellscriptrequirement.md)
@@ -159,7 +150,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用返回代码](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB 应用返回代码类型](intune-apps-win32lobappreturncodetype.md)
 - [Windows APPX](intune-apps-windowsappx.md)
-- [Windows AppX 应用分配设置](intune-apps-windowsappxappassignmentsettings.md)
 - [Windows 体系结构](intune-apps-windowsarchitecture.md)
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)
 - [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
@@ -173,6 +163,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows Phone XAP](intune-apps-windowsphonexap.md)
 - [Windows 应用商店应用](intune-apps-windowsstoreapp.md)
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
-- [Windows Universal AppX 应用分配设置](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Windows Universal APPX 包含的应用](intune-apps-windowsuniversalappxcontainedapp.md)
+
 

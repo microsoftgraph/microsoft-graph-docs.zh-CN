@@ -1,21 +1,21 @@
 ---
 title: Microsoft Intune 中的设备管理-Microsoft Graph API
-description: 列出用于定义租户组织的管理设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
+description: 列出用于定义租户组织的管理设备的 Intune 终结点（REST）的 Microsoft Graph API。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 057181a80c90e5c3c20d62c6f14da35fcea02976
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9191d6552f2e93850fce126a5ea90d1f7bba88c7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335004"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37198962"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 - [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
@@ -35,6 +35,8 @@ ms.locfileid: "36335004"
 - [机箱类型](intune-devices-chassistype.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
 - [合规性状态](intune-devices-compliancestate.md)
+- [配置管理器操作](intune-devices-configurationmanageraction.md)
+- [Configuration manager 操作类型](intune-devices-configurationmanageractiontype.md)
 - [配置管理器客户端已启用的功能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [配置管理器客户端运行状况](intune-devices-configurationmanagerclienthealthstate.md)
 - [Configuration manager 客户端信息](intune-devices-configurationmanagerclientinformation.md)
@@ -57,6 +59,7 @@ ms.locfileid: "36335004"
 - [设备运行状况脚本检测类型](intune-devices-devicehealthscriptdetectiontype.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
+- [Device management autopilot 事件](intune-troubleshooting-devicemanagementautopilotevent.md)
 - [设备管理布尔值设置实例](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [设备管理集合设置定义](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [设备管理集合设置实例](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -77,7 +80,6 @@ ms.locfileid: "36335004"
 - [设备管理意向设置类别](intune-deviceintent-devicemanagementintentsettingcategory.md)
 - [设备管理意向用户状态](intune-deviceintent-devicemanagementintentuserstate.md)
 - [设备管理意向用户状态摘要](intune-deviceintent-devicemanagementintentuserstatesummary.md)
-- [设备管理脚本](intune-devices-devicemanagementscript.md)
 - [设备管理脚本分配](intune-devices-devicemanagementscriptassignment.md)
 - [设备管理脚本设备状态](intune-devices-devicemanagementscriptdevicestate.md)
 - [设备管理脚本组分配](intune-devices-devicemanagementscriptgroupassignment.md)
@@ -120,13 +122,13 @@ ms.locfileid: "36335004"
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
+- [日志级别](intune-troubleshooting-loglevel.md)
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
 - [托管设备](intune-devices-manageddevice.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
 - [托管设备型号和制造商](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [托管设备概述](intune-devices-manageddeviceoverview.md)
-- [托管的设备所有者类型](intune-devices-manageddeviceownertype.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
 - [管理代理类型](intune-devices-managementagenttype.md)
@@ -173,11 +175,15 @@ ms.locfileid: "36335004"
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
+- [User experience analytics 运行状况状态](intune-devices-userexperienceanalyticshealthstate.md)
 - [用户体验分析洞察力](intune-devices-userexperienceanalyticsinsight.md)
+- [用户体验分析真知灼见严重程度](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [用户体验分析洞察力价值](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [User experience analytics 指标](intune-devices-userexperienceanalyticsmetric.md)
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
+- [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
+- [Windows autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
 - [Windows 设备 AD 帐户](intune-devices-windowsdeviceadaccount.md)
@@ -199,4 +205,5 @@ ms.locfileid: "36335004"
 - [Windows 管理应用](intune-devices-windowsmanagementapp.md)
 - [Windows 管理应用运行状况状态](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows 保护状态](intune-devices-windowsprotectionstate.md)
+
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5635ac3eb0002d17f3977332a4cd3ca94c47d553
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0edba0a6ba2f26757d544b8bdb33f73461535abe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357661"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193989"
 ---
 # <a name="create-grouppolicypresentationtextbox"></a>创建 groupPolicyPresentationTextBox
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 groupPolicyPresentationTextBox 对象的 JSON 表示形式。
+在请求正文中，提供 groupPolicyPresentationTextBox 对象的 JSON 表示形式。
 
 下表显示创建 groupPolicyPresentationTextBox 时所需的属性。
 
@@ -56,12 +56,12 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|显示在文本框中的本地化默认字符串。 默认值为空白。|
 |必需|Boolean|要求在文本框中输入值。 默认值为 false。|
-|maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
+|maxLength|Int64|一个无符号整数，指定最大文本字符数。 默认值为1023。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -98,8 +98,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
-
 
 
 

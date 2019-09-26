@@ -1,29 +1,28 @@
 ---
 title: 使用 Microsoft Intune 管理移动应用-Microsoft Graph API
-description: 列出与租户组织的移动应用管理 (MAM) 相关的适用于 Intune 终结点 (REST) 的 Microsoft Graph API。
+description: 列出与租户组织的移动应用管理（MAM）相关的适用于 Intune 终结点（REST）的 Microsoft Graph API。
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 208caa1f421a8e9c9da9e9a8bcce048775e13678
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6211e962cb5f2b1ab664001badea9f5e265e47a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332286"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196481"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可独立于任何移动设备管理 (MDM) 解决方案使用, 因此您可以使用它在设备管理解决方案中使用或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可独立于任何移动设备管理（MDM）解决方案使用，因此您可以使用它在设备管理解决方案中使用或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
-- [Android 管理的应用保护](intune-mam-androidmanagedappprotection.md)
 - [Android 管理的应用注册](intune-mam-androidmanagedappregistration.md)
 - [Android 托管应用安全网络应用验证类型](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android 托管应用安全网络设备证明类型](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
@@ -33,7 +32,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [默认托管的应用保护](intune-mam-defaultmanagedappprotection.md)
 - [Intune 品牌打造配置文件](intune-wip-intunebrandingprofile.md)
 - [Intune 品牌打造配置文件分配](intune-wip-intunebrandingprofileassignment.md)
-- [iOS 管理的应用保护](intune-mam-iosmanagedappprotection.md)
 - [iOS 管理的应用注册](intune-mam-iosmanagedappregistration.md)
 - [iOS 移动应用标识符](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
@@ -56,9 +54,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [托管应用状态](intune-mam-managedappstatus.md)
 - [托管应用原始状态](intune-mam-managedappstatusraw.md)
 - [托管移动应用](intune-mam-managedmobileapp.md)
-- [MDM Windows 信息保护策略](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [移动应用标识符](intune-mam-mobileappidentifier.md)
-- [目标托管应用配置](intune-mam-targetedmanagedappconfiguration.md)
 - [目标托管应用程序策略分配](intune-mam-targetedmanagedapppolicyassignment.md)
 - [目标托管应用保护](intune-mam-targetedmanagedappprotection.md)
 - [Windows 信息保护](intune-mam-windowsinformationprotection.md)
@@ -77,4 +73,5 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护资源集合](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows 信息保护应用商店应用](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows 信息保护擦除操作](intune-mam-windowsinformationprotectionwipeaction.md)
+
 

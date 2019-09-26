@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15f634b509d69d74f65b41f051a13eacbbc201e6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e5dacafe8000fefdb11312b9055a3f1a1bcc2a4c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343207"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189205"
 ---
 # <a name="list-devicemanagementsettinginstances"></a>列出 deviceManagementSettingInstances
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)对象的属性和关系。
 
@@ -51,7 +51,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -79,8 +79,6 @@ Content-Length: 249
   ]
 }
 ```
-
-
 
 
 
