@@ -1,24 +1,24 @@
 ---
-title: 删除 androidEasEmailProfileConfiguration
-description: 删除 androidEasEmailProfileConfiguration。
+title: 删除 androidDeviceOwnerScepCertificateProfile
+description: 删除 androidDeviceOwnerScepCertificateProfile。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 042d73f88dcaa2cad9b509a9e6731d42caf7cf5d
+ms.openlocfilehash: 84d94b676e778a1c89df90534d22eed9d097e166
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37169672"
+ms.locfileid: "37171468"
 ---
-# <a name="delete-androideasemailprofileconfiguration"></a>删除 androidEasEmailProfileConfiguration
+# <a name="delete-androiddeviceownerscepcertificateprofile"></a>删除 androidDeviceOwnerScepCertificateProfile
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md)。
+删除[androidDeviceOwnerScepCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

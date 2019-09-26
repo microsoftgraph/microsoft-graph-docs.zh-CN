@@ -1,24 +1,24 @@
 ---
-title: 创建 windowsUniversalAppX
-description: 创建新的 windowsUniversalAppX 对象。
+title: 创建 androidManagedStoreWebApp
+description: 创建新的 androidManagedStoreWebApp 对象。
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5824afcdbdc573fdd5ced2e1a027da817ddfa393
+ms.openlocfilehash: 1029bc54bea5b35abda100a5a64d0d86fa806d19
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171692"
+ms.locfileid: "37178474"
 ---
-# <a name="create-windowsuniversalappx"></a>创建 windowsUniversalAppX
+# <a name="create-androidmanagedstorewebapp"></a>创建 androidManagedStoreWebApp
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的 [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) 对象。
+创建新的[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windowsUniversalAppX 对象的 JSON 表示形式。
+在请求正文中，提供 androidManagedStoreWebApp 对象的 JSON 表示形式。
 
-下表显示创建 windowsUniversalAppX 时所需的属性。
+下表显示创建 androidManagedStoreWebApp 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -69,22 +69,19 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|applicableDeviceTypes|[windowsDeviceType](../resources/intune-apps-windowsdevicetype.md)|可运行此应用的 Windows 设备类型。 可取值为：`none`、`desktop`、`mobile`、`holographic`、`team`。|
-|identityName|String|标识名称。|
-|identityPublisherHash|String|标识发布者哈希。|
-|identityResourceIdentifier|String|标识资源标识符。|
-|isBundle|Boolean|应用是否为捆绑包。|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。|
-|identityVersion|String|标识版本。|
+|packageId|String|包标识符。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appIdentifier|String|标识名称。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|usedLicenseCount|Int32|使用中的 VPP 许可证数量。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|totalLicenseCount|Int32|VPP 许可证的总数。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appStoreUrl|String|"播放工作商店" 应用程序 URL。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isPrivate|Boolean|指示应用程序是否仅适用于给定企业的用户。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Boolean|指示应用程序是否为预安装的系统应用程序。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。 继承自[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) 对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -93,10 +90,10 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1461
+Content-length: 987
 
 {
-  "@odata.type": "#microsoft.graph.windowsUniversalAppX",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -118,28 +115,14 @@ Content-length: 1461
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
-  "committedContentVersion": "Committed Content Version value",
-  "fileName": "File Name value",
-  "size": 4,
-  "applicableArchitectures": "x86",
-  "applicableDeviceTypes": "desktop",
-  "identityName": "Identity Name value",
-  "identityPublisherHash": "Identity Publisher Hash value",
-  "identityResourceIdentifier": "Identity Resource Identifier value",
-  "isBundle": true,
-  "minimumSupportedOperatingSystem": {
-    "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
-    "v8_0": true,
-    "v8_1": true,
-    "v10_0": true,
-    "v10_1607": true,
-    "v10_1703": true,
-    "v10_1709": true,
-    "v10_1803": true,
-    "v10_1809": true,
-    "v10_1903": true
-  },
-  "identityVersion": "Identity Version value"
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 
@@ -148,11 +131,11 @@ Content-length: 1461
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1633
+Content-Length: 1159
 
 {
-  "@odata.type": "#microsoft.graph.windowsUniversalAppX",
-  "id": "4bc47eba-7eba-4bc4-ba7e-c44bba7ec44b",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
+  "id": "e54aecbd-ecbd-e54a-bdec-4ae5bdec4ae5",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -176,28 +159,14 @@ Content-Length: 1633
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
-  "committedContentVersion": "Committed Content Version value",
-  "fileName": "File Name value",
-  "size": 4,
-  "applicableArchitectures": "x86",
-  "applicableDeviceTypes": "desktop",
-  "identityName": "Identity Name value",
-  "identityPublisherHash": "Identity Publisher Hash value",
-  "identityResourceIdentifier": "Identity Resource Identifier value",
-  "isBundle": true,
-  "minimumSupportedOperatingSystem": {
-    "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
-    "v8_0": true,
-    "v8_1": true,
-    "v10_0": true,
-    "v10_1607": true,
-    "v10_1703": true,
-    "v10_1709": true,
-    "v10_1803": true,
-    "v10_1809": true,
-    "v10_1903": true
-  },
-  "identityVersion": "Identity Version value"
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d6cccc07d98a330550dca0484d2639a4d29df71
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0a8e6b3e45ee50ce008066bd06859bdd2a091e39
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336430"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172434"
 ---
 # <a name="get-mobileapprelationship"></a>获取 mobileAppRelationship
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)对象的属性和关系。
 
@@ -51,7 +51,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelati
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -77,8 +77,6 @@ Content-Length: 226
   }
 }
 ```
-
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ed0f57c9fe2ff0b41c1b1cec2f6266eac8f9a99
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1040d732c026492fd10c104637e8803dd98ff880
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355883"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184631"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>创建 embeddedSIMActivationCodePool
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)对象。
 
@@ -45,7 +45,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 embeddedSIMActivationCodePool 对象的 JSON 表示形式。
+在请求正文中，提供 embeddedSIMActivationCodePool 对象的 JSON 表示形式。
 
 下表显示创建 embeddedSIMActivationCodePool 时所需的属性。
 
@@ -55,13 +55,13 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |displayName|String|管理员定义的嵌入式 SIM 激活代码池的名称。|
 |createdDateTime|DateTimeOffset|创建嵌入的 SIM 激活代码池的时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 激活代码池的时间。 更新了服务端。|
-|activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)集合|属于此池的激活代码。 此导航属性用于将激活代码发布到 Intune, 但不能用于从 Intune 读取激活代码。|
+|activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)集合|属于此池的激活代码。 此导航属性用于将激活代码发布到 Intune，但不能用于从 Intune 读取激活代码。|
 |activationCodeCount|Int32|属于此池的激活代码的总计数。|
 
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -111,8 +111,6 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
-
 
 
 

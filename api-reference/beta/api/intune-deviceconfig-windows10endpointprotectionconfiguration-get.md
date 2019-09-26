@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 274e4798d46ab388af2ab856075b15f9a0e4e1f6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 546871f9731e84ae6099fb683034c0551ed0b619
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314600"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182783"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象的属性和关系。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30085
+Content-Length: 30215
 
 {
   "value": {
@@ -643,6 +643,7 @@ Content-Length: 30085
       "policyRulesFromGroupPolicyMerged": true,
       "policyRulesFromGroupPolicyNotMerged": true
     },
+    "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
     "defenderAdobeReaderLaunchChildProcess": "enable",
     "defenderAttackSurfaceReductionExcludedPaths": [
       "Defender Attack Surface Reduction Excluded Paths value"
@@ -750,12 +751,11 @@ Content-Length: 30085
       "encryptionMethod": "aesCbc256",
       "requireEncryptionForWriteAccess": true,
       "blockCrossOrganizationWriteAccess": true
-    }
+    },
+    "bitLockerRecoveryPasswordRotation": "disabled"
   }
 }
 ```
-
-
 
 
 
