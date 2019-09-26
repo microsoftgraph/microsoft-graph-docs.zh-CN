@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88acf8098cca5fcc1d39021ed8e16e10d1a9db3e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ea00be2ab383116f957bb7db35c46a4db95fa1eb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330354"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177680"
 ---
-# <a name="create-iosvppappassigneduserlicense"></a><span data-ttu-id="4de10-103">创建 iosVppAppAssignedUserLicense</span><span class="sxs-lookup"><span data-stu-id="4de10-103">Create iosVppAppAssignedUserLicense</span></span>
+# <a name="create-iosvppappassigneduserlicense"></a><span data-ttu-id="4c211-103">创建 iosVppAppAssignedUserLicense</span><span class="sxs-lookup"><span data-stu-id="4c211-103">Create iosVppAppAssignedUserLicense</span></span>
 
-> <span data-ttu-id="4de10-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4de10-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4c211-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4c211-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4de10-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4de10-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4c211-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4c211-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4de10-106">创建新的[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4de10-106">Create a new [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object.</span></span>
+<span data-ttu-id="4c211-106">创建新的[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4c211-106">Create a new [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4de10-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4de10-107">Prerequisites</span></span>
-<span data-ttu-id="4de10-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4de10-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4c211-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4c211-107">Prerequisites</span></span>
+<span data-ttu-id="4c211-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4c211-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4de10-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4de10-110">Permission type</span></span>|<span data-ttu-id="4de10-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4de10-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4c211-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4c211-110">Permission type</span></span>|<span data-ttu-id="4c211-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4c211-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4de10-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4de10-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4de10-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4de10-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="4de10-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4de10-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4de10-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4de10-115">Not supported.</span></span>|
-|<span data-ttu-id="4de10-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4de10-116">Application</span></span>|<span data-ttu-id="4de10-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4de10-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4c211-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4c211-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4c211-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c211-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4c211-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4c211-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4c211-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4c211-115">Not supported.</span></span>|
+|<span data-ttu-id="4c211-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4c211-116">Application</span></span>|<span data-ttu-id="4c211-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c211-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4de10-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4de10-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4c211-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4c211-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +38,34 @@ ms.locfileid: "36330354"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4de10-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4de10-119">Request headers</span></span>
-|<span data-ttu-id="4de10-120">标头</span><span class="sxs-lookup"><span data-stu-id="4de10-120">Header</span></span>|<span data-ttu-id="4de10-121">值</span><span class="sxs-lookup"><span data-stu-id="4de10-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4c211-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4c211-119">Request headers</span></span>
+|<span data-ttu-id="4c211-120">标头</span><span class="sxs-lookup"><span data-stu-id="4c211-120">Header</span></span>|<span data-ttu-id="4c211-121">值</span><span class="sxs-lookup"><span data-stu-id="4c211-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4de10-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4de10-122">Authorization</span></span>|<span data-ttu-id="4de10-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4de10-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4de10-124">接受</span><span class="sxs-lookup"><span data-stu-id="4de10-124">Accept</span></span>|<span data-ttu-id="4de10-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4de10-125">application/json</span></span>|
+|<span data-ttu-id="4c211-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4c211-122">Authorization</span></span>|<span data-ttu-id="4c211-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4c211-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4c211-124">接受</span><span class="sxs-lookup"><span data-stu-id="4c211-124">Accept</span></span>|<span data-ttu-id="4c211-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4c211-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4de10-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4de10-126">Request body</span></span>
-<span data-ttu-id="4de10-127">在请求正文中, 提供 iosVppAppAssignedUserLicense 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4de10-127">In the request body, supply a JSON representation for the iosVppAppAssignedUserLicense object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4c211-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="4c211-126">Request body</span></span>
+<span data-ttu-id="4c211-127">在请求正文中，提供 iosVppAppAssignedUserLicense 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4c211-127">In the request body, supply a JSON representation for the iosVppAppAssignedUserLicense object.</span></span>
 
-<span data-ttu-id="4de10-128">下表显示创建 iosVppAppAssignedUserLicense 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4de10-128">The following table shows the properties that are required when you create the iosVppAppAssignedUserLicense.</span></span>
+<span data-ttu-id="4c211-128">下表显示创建 iosVppAppAssignedUserLicense 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4c211-128">The following table shows the properties that are required when you create the iosVppAppAssignedUserLicense.</span></span>
 
-|<span data-ttu-id="4de10-129">属性</span><span class="sxs-lookup"><span data-stu-id="4de10-129">Property</span></span>|<span data-ttu-id="4de10-130">类型</span><span class="sxs-lookup"><span data-stu-id="4de10-130">Type</span></span>|<span data-ttu-id="4de10-131">说明</span><span class="sxs-lookup"><span data-stu-id="4de10-131">Description</span></span>|
+|<span data-ttu-id="4c211-129">属性</span><span class="sxs-lookup"><span data-stu-id="4c211-129">Property</span></span>|<span data-ttu-id="4c211-130">类型</span><span class="sxs-lookup"><span data-stu-id="4c211-130">Type</span></span>|<span data-ttu-id="4c211-131">说明</span><span class="sxs-lookup"><span data-stu-id="4c211-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4de10-132">id</span><span class="sxs-lookup"><span data-stu-id="4de10-132">id</span></span>|<span data-ttu-id="4de10-133">String</span><span class="sxs-lookup"><span data-stu-id="4de10-133">String</span></span>|<span data-ttu-id="4de10-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4de10-134">Key of the entity.</span></span> <span data-ttu-id="4de10-135">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4de10-135">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="4de10-136">userEmailAddress</span><span class="sxs-lookup"><span data-stu-id="4de10-136">userEmailAddress</span></span>|<span data-ttu-id="4de10-137">String</span><span class="sxs-lookup"><span data-stu-id="4de10-137">String</span></span>|<span data-ttu-id="4de10-138">用户电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="4de10-138">The user email address.</span></span> <span data-ttu-id="4de10-139">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4de10-139">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="4de10-140">userId</span><span class="sxs-lookup"><span data-stu-id="4de10-140">userId</span></span>|<span data-ttu-id="4de10-141">String</span><span class="sxs-lookup"><span data-stu-id="4de10-141">String</span></span>|<span data-ttu-id="4de10-142">用户 ID。</span><span class="sxs-lookup"><span data-stu-id="4de10-142">The user ID.</span></span> <span data-ttu-id="4de10-143">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4de10-143">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="4de10-144">userName</span><span class="sxs-lookup"><span data-stu-id="4de10-144">userName</span></span>|<span data-ttu-id="4de10-145">String</span><span class="sxs-lookup"><span data-stu-id="4de10-145">String</span></span>|<span data-ttu-id="4de10-146">用户名。</span><span class="sxs-lookup"><span data-stu-id="4de10-146">The user name.</span></span> <span data-ttu-id="4de10-147">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4de10-147">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="4de10-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="4de10-148">userPrincipalName</span></span>|<span data-ttu-id="4de10-149">字符串</span><span class="sxs-lookup"><span data-stu-id="4de10-149">String</span></span>|<span data-ttu-id="4de10-150">用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="4de10-150">The user principal name.</span></span> <span data-ttu-id="4de10-151">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4de10-151">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="4c211-132">id</span><span class="sxs-lookup"><span data-stu-id="4c211-132">id</span></span>|<span data-ttu-id="4c211-133">String</span><span class="sxs-lookup"><span data-stu-id="4c211-133">String</span></span>|<span data-ttu-id="4c211-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4c211-134">Key of the entity.</span></span> <span data-ttu-id="4c211-135">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4c211-135">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="4c211-136">userEmailAddress</span><span class="sxs-lookup"><span data-stu-id="4c211-136">userEmailAddress</span></span>|<span data-ttu-id="4c211-137">String</span><span class="sxs-lookup"><span data-stu-id="4c211-137">String</span></span>|<span data-ttu-id="4c211-138">用户电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="4c211-138">The user email address.</span></span> <span data-ttu-id="4c211-139">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4c211-139">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="4c211-140">userId</span><span class="sxs-lookup"><span data-stu-id="4c211-140">userId</span></span>|<span data-ttu-id="4c211-141">String</span><span class="sxs-lookup"><span data-stu-id="4c211-141">String</span></span>|<span data-ttu-id="4c211-142">用户 ID。</span><span class="sxs-lookup"><span data-stu-id="4c211-142">The user ID.</span></span> <span data-ttu-id="4c211-143">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4c211-143">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="4c211-144">userName</span><span class="sxs-lookup"><span data-stu-id="4c211-144">userName</span></span>|<span data-ttu-id="4c211-145">String</span><span class="sxs-lookup"><span data-stu-id="4c211-145">String</span></span>|<span data-ttu-id="4c211-146">用户名。</span><span class="sxs-lookup"><span data-stu-id="4c211-146">The user name.</span></span> <span data-ttu-id="4c211-147">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4c211-147">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="4c211-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="4c211-148">userPrincipalName</span></span>|<span data-ttu-id="4c211-149">字符串</span><span class="sxs-lookup"><span data-stu-id="4c211-149">String</span></span>|<span data-ttu-id="4c211-150">用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="4c211-150">The user principal name.</span></span> <span data-ttu-id="4c211-151">继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="4c211-151">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4de10-152">响应</span><span class="sxs-lookup"><span data-stu-id="4de10-152">Response</span></span>
-<span data-ttu-id="4de10-153">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4de10-153">If successful, this method returns a `201 Created` response code and a [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4c211-152">响应</span><span class="sxs-lookup"><span data-stu-id="4c211-152">Response</span></span>
+<span data-ttu-id="4c211-153">如果成功，此方法在响应`201 Created`正文中返回响应代码和[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4c211-153">If successful, this method returns a `201 Created` response code and a [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4de10-154">示例</span><span class="sxs-lookup"><span data-stu-id="4de10-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4c211-154">示例</span><span class="sxs-lookup"><span data-stu-id="4c211-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4de10-155">请求</span><span class="sxs-lookup"><span data-stu-id="4de10-155">Request</span></span>
-<span data-ttu-id="4de10-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4de10-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4c211-155">请求</span><span class="sxs-lookup"><span data-stu-id="4c211-155">Request</span></span>
+<span data-ttu-id="4c211-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4c211-156">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 238
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4de10-157">响应</span><span class="sxs-lookup"><span data-stu-id="4de10-157">Response</span></span>
-<span data-ttu-id="4de10-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4de10-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4c211-157">响应</span><span class="sxs-lookup"><span data-stu-id="4c211-157">Response</span></span>
+<span data-ttu-id="4c211-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4c211-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -96,8 +96,6 @@ Content-Length: 287
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 
