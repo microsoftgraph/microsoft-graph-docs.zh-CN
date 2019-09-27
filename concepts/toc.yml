@@ -387,7 +387,7 @@ items:
             href: sdks/create-client.md
           - name: 选择验证提供程序
             href: sdks/choose-authentication-providers.md
-      - name: 使用工具包（预览版）
+      - name: 使用工具包
         items:
           - name: 工具包概述
             href: toolkit/overview.md
