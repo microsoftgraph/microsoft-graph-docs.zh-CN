@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac7f9a8c1bd6155b4824da81e1d6c64cccda7035
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 67079a369f666ab3b689a7a80f51ee58f437bedc
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718609"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275684"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -53,11 +53,13 @@ GET /teams/{id}/channels
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Channel](../resources/channel.md) 对象集合。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-list-all-channels"></a>示例 1：列出所有频道
 
-下面是一个请求示例。
+#### <a name="request"></a>请求
+
+以下示例显示列出所有频道的请求。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,11 +83,11 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels
 
 ---
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-下面是一个响应示例。
+以下是答复。
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -104,7 +106,56 @@ Content-length: 262
       "description": "description-value",
       "displayName": "display-name-value",
       "id": "id-value",
-      "membershipType": "membership-type-value"
+      "membershipType": "membership-type-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-list-all-private-channels"></a>示例 2：列出所有私人频道
+
+#### <a name="request"></a>请求
+
+以下示例显示列出所有私人频道的请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "list_private_channels"
+}-->
+```http
+GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 262
+
+{
+  "value": [
+    {
+      "description": "description-value",
+      "displayName": "display-name-value",
+      "id": "id-value",
+      "membershipType": "membership-type-value",
+      "isFavoriteByDefault": false,
+      "webUrl": "webUrl-value",
+      "email": "email-value"
     }
   ]
 }

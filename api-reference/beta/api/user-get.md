@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1afcd48dcc1f85de696264e1c433d79052391ac1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c3bb42bd8acaecde27bb2df2e9d80eb4e2a70f3e
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722046"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275754"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -52,7 +52,10 @@ GET /users/{id | userPrincipalName}
 当成功处理请求时，此方法会返回 `202 Accepted`，但服务器需要更多时间来完成相关的后台操作。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="example-1-get-the-properties-of-the-signed-in-user"></a>示例 1：获取已登录用户的属性
+
+#### <a name="request"></a>请求
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -91,9 +94,6 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "businessPhones": [
-       "businessPhones-value"
-   ],
    "displayName": "displayName-value",
    "givenName": "givenName-value",
    "jobTitle": "jobTitle-value",
@@ -104,6 +104,47 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### <a name="example-2-get-the-properties-of-the-specified-user"></a>示例 2：获取指定用户的属性
+
+#### <a name="request"></a>请求
+
+以下示例显示了一个请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_other_user"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/{id}
+```
+
+#### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "id": "id-value"
 }
 ```
 

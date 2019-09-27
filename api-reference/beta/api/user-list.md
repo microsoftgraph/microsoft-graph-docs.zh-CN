@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 13550b7a76c7cd9cab1ba43ce5672fcfcf5afe14
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: 7f7a1c2462df5ad336622abc2066f820c4fa1958
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37203955"
+ms.locfileid: "37275750"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/users
 
 下面是一个响应示例。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
