@@ -3,18 +3,18 @@ title: Microsoft Graph 工具包提供程序
 description: Microsoft Graph 工具包提供程序为所有组件启用身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 52b0510fdc79253cb2a448b7a454b1dcfaf01bb9
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778710"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275722"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Microsoft Graph 工具包提供程序
 
 Microsoft Graph 工具包提供程序为所有组件启用身份验证和 Microsoft Graph 访问。 每个提供程序都提供用于获取调用 Microsoft Graph Api 所需的访问令牌的实现。
 
-对于要使用提供程序的组件, 必须将该`Providers.globalProvider`属性设置为要使用的提供程序的值。
+对于要使用提供程序的组件，必须将该`Providers.globalProvider`属性设置为要使用的提供程序的值。
 
 下面的示例演示如何使用 MsalProvider。
 
@@ -24,16 +24,16 @@ Providers.globalProvider = new MsalProvider({
 });
 ```
 
-此工具包实现以下提供程序:
+此工具包实现以下提供程序：
 
 - [MsalProvider](./providers/msal.md)
 - [SharePointProvider](./providers/sharepoint.md)
 - [TeamsProvider](./providers/teams.md)
-- Office 外接程序提供程序 (即将推出)
+- Office 外接程序提供程序（即将推出）
 
 ## <a name="get-started"></a>入门
 
-您可以随时创建提供程序。 我们建议您先创建提供程序, 然后再使用任何组件。 本节介绍如何初始化提供程序。
+您可以随时创建提供程序。 我们建议您先创建提供程序，然后再使用任何组件。 本节介绍如何初始化提供程序。
 
 `Providers`全局变量公开以下属性和函数
 
@@ -43,20 +43,46 @@ Providers.globalProvider = new MsalProvider({
 
 - `function onProviderUpdated(callbackFunction)`
 
-当`callbackFunction`提供程序发生更改或提供程序的状态更改时, 将调用此函数。 `ProvidersChangedState`枚举值将传递给函数以指示更新的内容。
+当`callbackFunction`提供程序发生更改或提供程序的状态更改时，将调用此函数。 `ProvidersChangedState`枚举值将传递给函数以指示更新的内容。
 
 ## <a name="implement-your-own-provider"></a>实现您自己的提供程序
 
-该工具包提供了两种创建新的提供程序的方法:
+该工具包提供了两种创建新的提供程序的方法：
 
 - 通过传入获取`SimpleProvider`访问令牌的函数来创建新的
 - 扩展`IProvider`抽象类
 
-有关详细信息, 请参阅[自定义提供程序](./providers/custom.md)文档中的每一个。
+有关详细信息，请参阅[自定义提供程序](./providers/custom.md)文档中的每一个。
+
+## <a name="using-multiple-providers"></a>使用多个提供程序
+
+在某些情况下，您的应用程序将在不同的环境中运行，并需要不同的提供程序。 例如，应用程序可能同时作为 web 应用程序和 Microsoft 团队选项卡运行，您可能需要使用 MsalProvider 和 TeamsProvider。 对于此方案，所有提供程序组件都`depends-on`具有创建回退链的属性，如下面的示例所示。
+
+```html
+<mgt-teams-provider
+  client-id="[CLIENT-ID]"
+  auth-popup-url="auth.html" ></mgt-teams-provider>
+
+<mgt-msal-provider
+  client-id="[CLIENT-ID]"
+  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+```
+
+在这种情况下，仅当 TeamsProvider 在当前环境中不可用时，才会使用 MsalProvider。
+
+若要在代码中实现相同，可以使用提供`isAvailable`程序上的属性，如下所示。
+
+```ts
+if (TeamsProvider.isAvailable) {
+    Providers.globalProvider = new TeamsProvider(teamsConfig);
+} else {
+    Providers.globalProvider = new MsalProvider(msalConfig)
+}
+```
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>对 Microsoft Graph 进行自己的调用
 
-只要您初始化提供程序 (如上一节中所述), 所有组件都可以访问 Microsoft Graph, 而无需进行任何自定义。 若要获取对组件使用的同一 Microsoft Graph SDK 的引用, 请首先获取对全局 IProvider 的引用, 然后使用该`Graph`对象, 如图所示。
+只要您初始化提供程序（如上一节中所述），所有组件都可以访问 Microsoft Graph，而无需进行任何自定义。 若要获取对组件使用的同一 Microsoft Graph SDK 的引用，请首先获取对全局 IProvider 的引用，然后使用该`Graph`对象，如图所示。
 
 ```js
 import { Providers } from '@microsoft/mgt';
@@ -68,7 +94,7 @@ if (provider) {
 }
 ```
 
-在某些情况下, 您可能需要传递其他权限, 具体取决于您要调用的 API。
+在某些情况下，您可能需要传递其他权限，具体取决于您要调用的 API。
 
 ```js
 import { prepScopes } from '@microsoft/mgt';
@@ -79,4 +105,4 @@ graphClient
   .get();
 ```
 
-该`graph`对象是[MICROSOFT graph Javascript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript)的一个实例, 可以使用它对 microsoft graph 进行任何调用。
+该`graph`对象是[MICROSOFT graph Javascript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript)的一个实例，可以使用它对 microsoft graph 进行任何调用。

@@ -1,25 +1,26 @@
 ---
-title: Microsoft Graph 工具包（预览）
-description: Microsoft Graph 工具包是框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。
+title: Microsoft Graph 工具包
+description: Microsoft Graph 工具包是 resuable、框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。
 localization_priority: Normal
-author: nmetulev
-ms.openlocfilehash: 4509e382b89dcd9c403695df2ff7d99115a7f8b4
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+author: elisenyang
+ms.openlocfilehash: 2b8a7b3b93407410f31b17253f070065b6800b98
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792861"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275827"
 ---
-# <a name="microsoft-graph-toolkit-preview"></a>Microsoft Graph 工具包（预览）
+# <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
 
-Microsoft Graph 工具包是框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。 所有组件都可以访问 Microsoft Graph，而无需进行任何自定义。
+Microsoft Graph 工具包是用于访问和使用 Microsoft Graph 的可重用、框架不可知 web 组件和帮助器的集合。 所有组件都可以访问 Microsoft Graph，而无需进行任何自定义。
 
->[!NOTE]
->此库处于预览阶段，处于早期开发阶段。 我们希望根据来自社区的反馈对所有组件和 Api 进行更改和改进。
+对于想要创建 web 应用、Microsoft 团队选项卡或 SharePoint web 部件以调用 Microsoft Graph 的开发人员而言，Microsoft Graph 工具包是一项非常有用的资源。 通过提供设计为与 Microsoft 365 一样的外观和感觉的 UI 组件，该工具包可减少与平台集成所需的时间和成本。 所有 UI 组件都使用 Microsoft Graph 中的数据进行身份验证和访问。 可以使用 CSS 和模板完全自定义这些组件，以便您可以匹配您的唯一品牌打造并控制组件中显示的内容。
 
 ## <a name="get-started"></a>入门
 
 您可以通过直接引用加载程序（通过 unpkg）或安装 npm 程序包来使用这些组件。
+
+![入门](/images/get-started.gif)
 
 有关如何开始使用 Microsoft Graph 工具包的详细信息，请参阅[入门视频](https://www.youtube.com/watch?v=oZCGb2MMxa0)。
 

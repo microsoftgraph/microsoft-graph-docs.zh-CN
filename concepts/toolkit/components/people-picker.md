@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 2a0680a70ddfd5410e82911e5280c0b1a7e7dcaf
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: d77c6578d79edb60fbba08200dc033f032b39282
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822793"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275843"
 ---
 # <a name="people-picker-component"></a>人员-选取器组件
 
@@ -32,7 +32,7 @@ ms.locfileid: "36822793"
 
 | 属性 | 属性 | 说明                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-max  | 一个整数值，指示要显示的最大用户数。 默认值为6。                                                                                             |
+| showMax  | show-max  | 一个指示要显示的最大用户数的数字值。 默认值为6。                                                                                             |
 | people   | people    | 获取或设置组件呈现的人员列表的人员数组。 使用此属性可访问组件加载的人员。 设置此值可加载自己的人员。 |
 | group    | group     | 一个 string 值，属于 Microsoft Graph 定义的组，用于进一步筛选搜索结果。                                                                            |
 

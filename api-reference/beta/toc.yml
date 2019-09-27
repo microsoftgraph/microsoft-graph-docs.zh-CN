@@ -9656,6 +9656,12 @@
                   href: api/channel-post-messages.md
                 - name: 回复消息
                   href: api/channel-post-messagereply.md
+                - name: 向通道中添加成员
+                  href: api/conversationmember-add.md
+                - name: 从通道中删除成员
+                  href: api/conversationmember-delete.md
+                - name: 更新通道中成员的角色
+                  href: api/conversationmember-update.md
             - name: 聊天
               href: resources/chat.md
               items:
@@ -9671,12 +9677,6 @@
                   href: api/conversationmember-list.md
                 - name: 获取聊天中的一个成员
                   href: api/conversationmember-get.md
-                - name: 将成员添加到聊天
-                  href: api/conversationmember-add.md
-                - name: 从聊天中删除成员
-                  href: api/conversationmember-delete.md
-                - name: 更新聊天中成员的角色
-                  href: api/conversationmember-update.md
             - name: 聊天消息
               href: resources/chatmessage.md
               items:
