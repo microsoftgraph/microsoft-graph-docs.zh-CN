@@ -304,8 +304,9 @@
                 - name: 分配管理器
                   href: api/user-post-manager.md
             - name: Outlook 设置
-              href: resources/outlookuser.md
               items:
+                - name: Outlook 用户
+                  href: resources/outlookuser.md
                 - name: 获取语言选择
                   href: api/outlookuser-supportedlanguages.md
                 - name: 获取时区选择
@@ -318,6 +319,8 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: 创建类别
                   href: api/outlookuser-post-mastercategories.md
+                - name: 转换 Id
+                  href: api/user-translateexchangeids.md
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
@@ -3412,7 +3415,7 @@
                 - name: 设备配置组分配
                   href: resources/intune-deviceconfig-deviceconfigurationgroupassignment.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
@@ -3443,7 +3446,7 @@
                 - name: 设备配置用户状态
                   href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -3639,7 +3642,7 @@
                 - name: 组策略演示文稿组合框
                   href: resources/intune-grouppolicy-grouppolicypresentationcombobox.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-get.md
@@ -3652,7 +3655,7 @@
                 - name: 组策略演示文稿小数位数文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -4068,7 +4071,7 @@
                 - name: iOS 更新设备状态
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -4083,7 +4086,7 @@
                 - name: iOS VPN 配置
                   href: resources/intune-deviceconfig-iosvpnconfiguration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-iosvpnconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosvpnconfiguration-get.md
@@ -6400,7 +6403,7 @@
                 - name: Windows 管理应用运行状况状态
                   href: resources/intune-devices-windowsmanagementapphealthstate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-devices-windowsmanagementapphealthstate-list.md
                     - name: 获取
                       href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -6423,7 +6426,7 @@
                 - name: Android 管理的应用注册
                   href: resources/intune-mam-androidmanagedappregistration.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-mam-androidmanagedappregistration-list.md
                     - name: 获取
                       href: api/intune-mam-androidmanagedappregistration-get.md
@@ -7079,7 +7082,7 @@
                 - name: 设备类别
                   href: resources/intune-shared-devicecategory.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-shared-devicecategory-list.md
                     - name: 获取
                       href: api/intune-shared-devicecategory-get.md
@@ -7284,7 +7287,7 @@
                 - name: 移动应用疑难解答事件
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: 获取
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8368,7 +8371,7 @@
                       href: api/onpremisesagentgroup-get.md
                     - name: 创建
                       href: api/onpremisesagentgroup-post.md
-                    - name: 更新
+                    - name: Update
                       href: api/onpremisesagentgroup-update.md
                     - name: 删除
                       href: api/onpremisesagentgroup-delete.md
