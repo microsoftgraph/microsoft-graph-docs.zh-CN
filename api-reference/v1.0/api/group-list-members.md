@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9de4f41bfee17a560da5d971ce6ad2e6562b2bf8
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 54bc841b35aed618765d661d0df4be25cb07f612
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726758"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275743"
 ---
 # <a name="list-members"></a>列出成员
 获取组的直接成员列表。组可将用户、联系人和其他组作为成员。此操作不可传递。
@@ -20,9 +20,9 @@ ms.locfileid: "36726758"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Directory.Read.All、Directory.AccessAsUser.All   |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Group.Read.All、Directory.Read.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All、Directory.Read.All |
+|应用程序 | User.Read.All、Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

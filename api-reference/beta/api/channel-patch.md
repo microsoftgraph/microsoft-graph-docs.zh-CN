@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b951835941c44d4be5f67bf9c9bb0e23cbf288d
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: b9b8abd495a9ce66458973360a93e47f0bddfdf9
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633382"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275673"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -44,6 +44,8 @@ PATCH /teams/{id}/channels/{id}
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供 [channel](../resources/channel.md) 对象的 JSON 表示形式。
+
+> 注意：不能更新现有`membershipType`频道的值。
 
 ## <a name="response"></a>响应
 

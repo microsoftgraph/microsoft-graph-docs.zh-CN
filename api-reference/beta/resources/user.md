@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e7ee182238ea0b1f5216ac9aa79e776a0d225486
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: 8438f2c98944f0b187a9b182f3572f7df2ab8063
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853810"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203940"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -108,6 +108,7 @@ ms.locfileid: "36853810"
 |givenName|String|用户的名。支持 $filter。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
+|identities|[objectIdentity](objectIdentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 支持 $filter。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|Boolean| 如果用户是资源帐户，则为 **true**，否则为 **false**。 Null 值应视为 **false**。|
 |jobTitle|String|用户的职务。支持 $filter。|
@@ -295,6 +296,7 @@ ms.locfileid: "36853810"
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["string"],
   "isResourceAccount": false,
   "jobTitle": "string",

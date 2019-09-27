@@ -405,6 +405,8 @@ items:
                 href: toolkit/components/tasks.md
               - name: 人员选取器
                 href: toolkit/components/people-picker.md
+              - name: 人员卡片
+                href: toolkit/components/person-card.md
           - name: 提供程序
             items:
               - name: 使用提供程序

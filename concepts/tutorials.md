@@ -3,12 +3,12 @@ title: Microsoft Graph 教程
 description: Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure Active Directory 身份验证并通过 Microsoft Graph 访问数据的基本应用程序。
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: cbc3dc6d03f7cb7c883619eea333d56e7b8472e8
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: ee4fcaf224852d588bdb3f2d00d326a92d3f770d
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053899"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275813"
 ---
 # <a name="microsoft-graph-tutorials"></a>Microsoft Graph 教程
 
@@ -41,6 +41,9 @@ Microsoft Graph 教程是分步培训练习，可以指导你了解基本的 Mic
 
 以下教程重点介绍使用 Microsoft Graph 的特定场景。
 
+
+- [使用带有查询参数的 Microsoft Graph 时优化数据使用](https://docs.microsoft.com/zh-CN/learn/modules/optimize-data-usage/)
+- [使用 Microsoft Graph 优化网络流量](https://docs.microsoft.com/zh-CN/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [更改通知和 Delta 查询](/graph/tutorials/change-notifications)
 
 ## <a name="see-also"></a>另请参阅

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7c2ae578a92993fd8fb253a19b8cdc13a35cb5b5
-ms.sourcegitcommit: 6c007d70d5e7284c4b9e2b5d909e9087bbdaad93
+ms.openlocfilehash: 65a66e39d0548fa994821eb4ae279d9fbc1b2aac
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37149592"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203975"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 

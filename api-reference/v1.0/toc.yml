@@ -289,8 +289,9 @@
                 - name: 分配管理器
                   href: api/user-post-manager.md
             - name: Outlook 设置
-              href: resources/outlookuser.md
               items:
+                - name: Outlook 用户
+                  href: resources/outlookuser.md
                 - name: 获取语言选择
                   href: api/outlookuser-supportedlanguages.md
                 - name: 获取时区选择
@@ -303,6 +304,8 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: 创建类别
                   href: api/outlookuser-post-mastercategories.md
+                - name: 转换 Id
+                  href: api/user-translateexchangeids.md
             - name: Photo
               href: resources/profilephoto.md
               items:
@@ -1499,7 +1502,7 @@
                 - name: 适用于规则的设备符合性计划操作
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -1512,7 +1515,7 @@
                 - name: 设备符合性设置状态
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md

@@ -5,20 +5,18 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66b456188037dff0dc802e96f94452baebcd87af
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: d8a93e130e839fcd8bb6c332331d0b8dd390c147
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633375"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275680"
 ---
 # <a name="create-channel"></a>创建频道
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Microsoft 团队中创建请求正文中指定的新[频道](../resources/channel.md)。
-
-> **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
 ## <a name="permissions"></a>权限
 
@@ -53,11 +51,13 @@ POST /teams/{id}/channels
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [channel](../resources/channel.md) 对象。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-create-a-standard-channel"></a>示例1：创建标准通道
 
-下面是一个请求示例。
+#### <a name="request"></a>请求
+
+下面的示例展示了创建标准频道的请求。
 
 # <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
 <!-- {
@@ -70,7 +70,8 @@ Content-type: application/json
 
 {
   "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans"
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -87,11 +88,11 @@ Content-type: application/json
 
 ---
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
-下面是一个响应示例。
+以下示例显示了相应的响应。
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -107,6 +108,64 @@ Content-length: 201
   "id": "id-value",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
+}
+```
+
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>示例2：代表用户创建专用通道
+
+#### <a name="request"></a>请求
+
+下面的示例演示了创建专用通道并将用户添加为团队所有者的请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+Content-type: application/json
+
+{
+  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "membershipType": "private",
+  "displayName": "My First Private Channel",
+  "description": "This is my first private channels",
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+
+#### <a name="response"></a>响应
+
+以下示例显示了相应的响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
+    "id": "{channel_id}",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "membershipType": "private"
 }
 ```
 
