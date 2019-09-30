@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: 585427b006bf0f1d0f0bc5e241650ad872b428ef
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853803"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187315"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -18,12 +18,104 @@ ms.locfileid: "36853803"
 
 ## <a name="september-2019"></a>2019 年 9 月
 
+### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加|beta|添加的新实体：<br/>[androidDeviceOwnerScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile)<br/>[androidManagedStoreWebApp](/graph/api/resources/intune-apps-androidmanagedstorewebapp)<br/>[appleEnrollmentProfileAssignment](/graph/api/resources/intune-enrollment-appleenrollmentprofileassignment)<br/>[appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile)<br/>[deviceCompliancePolicyPolicySetItem](/graph/api/resources/intune-policyset-devicecompliancepolicypolicysetitem)<br/>[deviceConfigurationPolicySetItem](/graph/api/resources/intune-policyset-deviceconfigurationpolicysetitem)<br/>[deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent)<br/>[deviceManagementScriptPolicySetItem](/graph/api/resources/intune-policyset-devicemanagementscriptpolicysetitem)<br/>[enrollmentRestrictionsConfigurationPolicySetItem](/graph/api/resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem)<br/>[iosLobAppProvisioningConfigurationPolicySetItem](/graph/api/resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem)<br/>[macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection)<br/>[managedAppProtectionPolicySetItem](/graph/api/resources/intune-policyset-managedappprotectionpolicysetitem)<br/>[managedDeviceMobileAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem)<br/>[mdmWindowsInformationProtectionPolicyPolicySetItem](/graph/api/resources/intune-policyset-mdmwindowsinformationprotectionpolicypolicysetitem)<br/>[mobileAppPolicySetItem](/graph/api/resources/intune-policyset-mobileapppolicysetitem)<br/>[policySet](/graph/api/resources/intune-policyset-policyset)<br/>[policySetAssignment](/graph/api/resources/intune-policyset-policysetassignment)<br/>[policySetItem](/graph/api/resources/intune-policyset-policysetitem)<br/>[targetedManagedAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem)<br/>[windows10EnrollmentCompletionPageConfigurationPolicySetItem](/graph/api/resources/intune-policyset-windows10enrollmentcompletionpageconfigurationpolicysetitem)<br/>[windowsAutopilotDeploymentProfilePolicySetItem](/graph/api/resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem)<br/>[windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile)<br/>[windowsFeatureUpdateProfileAssignment](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofileassignment)<br/>|
+|添加项|beta|新增了复杂类型：<br/>[appleOwnerTypeEnrollmentType](/graph/api/resources/intune-enrollment-appleownertypeenrollmenttype)<br/>[configurationManagerAction](/graph/api/resources/intune-devices-configurationmanageraction)<br/>[credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension)<br/>[hasPayloadLinkResultItem](/graph/api/resources/intune-policyset-haspayloadlinkresultitem)<br/>[iosKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-ioskerberossinglesignonextension)<br/>[kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension)<br/>[keyBooleanValuePair](/graph/api/resources/intune-deviceconfig-keybooleanvaluepair)<br/>[keyIntegerValuePair](/graph/api/resources/intune-deviceconfig-keyintegervaluepair)<br/>[keyRealValuePair](/graph/api/resources/intune-deviceconfig-keyrealvaluepair)<br/>[keyStringValuePair](/graph/api/resources/intune-deviceconfig-keystringvaluepair)<br/>[keyTypedValuePair](/graph/api/resources/intune-deviceconfig-keytypedvaluepair)<br/>[macOSKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-macoskerberossinglesignonextension)<br/>[singleSignOnExtension](/graph/api/resources/intune-deviceconfig-singlesignonextension)<br/>|
+|添加项|beta 版本|添加的新枚举类型：<br/>[appleUserInitiatedEnrollmentType](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmenttype)<br/>[bitLockerRecoveryPasswordRotationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype)<br/>[configurationManagerActionType](/graph/api/resources/intune-devices-configurationmanageractiontype)<br/>[deviceAndAppManagementAssignmentSource](/graph/api/resources/intune-shared-deviceandappmanagementassignmentsource)<br/>[errorCode](/graph/api/resources/intune-policyset-errorcode)<br/>[logLevel](/graph/api/resources/intune-troubleshooting-loglevel)<br/>[policySetStatus](/graph/api/resources/intune-policyset-policysetstatus)<br/>[userExperienceAnalyticsHealthState](/graph/api/resources/intune-devices-userexperienceanalyticshealthstate)<br/>[userExperienceAnalyticsInsightSeverity](/graph/api/resources/intune-devices-userexperienceanalyticsinsightseverity)<br/>[windowsAutopilotDeploymentState](/graph/api/resources/intune-troubleshooting-windowsautopilotdeploymentstate)<br/>[windowsAutopilotEnrollmentType](/graph/api/resources/intune-troubleshooting-windowsautopilotenrollmenttype)<br/>|
+|添加项|beta|在 [policySet](/graph/api/resources/intune-policyset-policyset) 上添加了 [update](/graph/api/intune-policyset-policyset-update.md) 操作 |
+|Addition|beta|在 [mobileApp](/graph/api/resources/intune-apps-mobileapp) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-mobileapp-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks.md) 操作 |
+|Addition|beta|在 [macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-macmanagedappprotection-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [mdmWindowsInformationProtectionPolicy](/graph/api/resources/intune-mam-mdmwindowsinformationprotectionpolicy) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [policySet](/graph/api/resources/intune-policyset-policyset) 集合上添加了 [getPolicySets](/graph/api/intune-policyset-policyset-getpolicysets.md) 操作 |
+|添加项|beta|在 [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-devicemanagementscript-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-deviceconfiguration-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-devicecompliancepolicy-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration) 集合上添加了 [hasPayloadLinks](/graph/api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md) 操作 |
+|添加项|beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice) 上添加了 [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) 操作 |
+|添加项|beta|在 [appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile) 上添加了 [setPriority](/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) 操作 |
+|Addition|beta|在 [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) 上添加了 [assign](/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) 操作 |
+|添加项|beta|在 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) 集合上添加了 [getExpiringVppTokenCount](o:getExpiringVppTokenCount:Collection(microsoft.graph.depOnboardingSetting)) 函数 |
+|添加项|beta|向 [androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy) 实体添加了 **deviceThreatProtectionEnabled**、**deviceThreatProtectionRequiredSecurityLevel**、**securityRequireSafetyNetAttestationBasicIntegrity** 和 **securityRequireSafetyNetAttestationCertifiedDevice** 属性|
+|添加项|beta|向 [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration) 实体添加了 **workProfileAllowWidgets** 属性|
+|添加项|beta|向 [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp) 实体添加了 **isPrivate** 和 **isSystemApp** 属性|
+|添加项|beta|向 [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration) 实体添加了 **workProfileAllowWidgets** 属性|
+|添加项|beta|向 [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile) 实体添加了 **screenTimeScreenDisabled** 属性|
+|添加项|beta|向 [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile) 实体添加了 **appearanceScreenDisabled**、**expressLanguageScreenDisabled**、**preferredLanguageScreenDisabled**、**deviceToDeviceMigrationDisabled** 和 **welcomeScreenDisabled** 属性|
+|删除|beta|从 [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile) 实体中删除了 **screenTimeScreenDisabled** 属性|
+|添加项|beta|向 [deviceConfigurationAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationassignment) 实体添加了 **source** 和 **sourceId** 属性|
+|删除|beta|从 [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) 实体中删除了 **runRemediationScript** 属性|
+|添加项|beta|向 [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration) 实体添加了 **singleSignOnExtension** 属性|
+|添加项|beta|向 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration) 实体添加了 **kioskModeEnableVoiceControl** 和 **kioskModeAllowVoiceControlModification** 属性|
+|Addition|beta|向 [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration) 实体添加了 **associatedDomains** 和 **singleSignOnExtension** 属性|
+|添加项|beta|向 [targetedManagedAppPolicyAssignment](/graph/api/resources/intune-mam-targetedmanagedapppolicyassignment) 实体添加了 **source** 和 **sourceId** 属性|
+|Addition|beta|向 [termsAndConditions](/graph/api/resources/intune-companyterms-termsandconditions) 实体添加了 **roleScopeTagIds** 属性|
+|添加项|beta|向 [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline) 实体添加了 **isBuiltIn** 和 **createdDateTime** 属性|
+|删除|beta|从 [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline) 实体中删除了 **overallScore** 和 **overallRegressionThreshold** 属性|
+|删除|beta|从 [userExperienceAnalyticsCategory](/graph/api/resources/intune-devices-userexperienceanalyticscategory) 实体中删除了 **displayName** 和 **overallScore** 属性|
+|删除|beta|从 [userExperienceAnalyticsMetric](/graph/api/resources/intune-devices-userexperienceanalyticsmetric) 实体中删除了 **displayName** 属性|
+|删除|beta|从 [userExperienceAnalyticsOverview](/graph/api/resources/intune-devices-userexperienceanalyticsoverview) 实体中删除了 **overallScore**、**deviceBootPerformanceOverallScore** 和 **bestPracticesOverallScore** 属性|
+|Addition|beta|向 [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration) 实体添加了 **attackSurfaceReductionRules** 和 **bitLockerRecoveryPasswordRotation** 属性|
+|Addition|beta|向 [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration) 实体添加了 **trackInstallProgressForAutopilotOnly** 和 **disableUserStatusTrackingAfterFirstUser** 属性|
+|添加项|beta|向 [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement) 实体添加了 **policySets** 导航属性|
+|添加项|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement) 实体添加了 **appleUserInitiatedEnrollmentProfiles**、**autopilotEvents** 和 **windowsFeatureUpdateProfiles** 导航属性|
+|添加项|beta|向 [insightValueDouble](/graph/api/resources/intune-devices-insightvaluedouble) 复杂类型添加了 **value** 属性|
+|Addition|beta|向 [insightValueInt](/graph/api/resources/intune-devices-insightvalueint) 复杂类型添加了 **value** 属性|
+|添加项|beta|向 [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem) 复杂类型添加了 **v13_0** 属性|
+|添加项|beta|向 [macOSMinimumOperatingSystem](/graph/api/resources/intune-apps-macosminimumoperatingsystem) 复杂类型添加了 **v10_14** 和 **v10_15** 属性|
+|添加项|beta|向 [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight) 复杂类型添加了 **values** 和 **severity** 属性|
+|删除|beta|从 [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight) 复杂类型中删除了 **value** 属性|
+|添加项|beta|向 [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype) 枚举类型添加了 **appleUserEnrollment**、**appleUserEnrollmentWithServiceAccount** 和 **appleUserEnrollmentWithAzureAD** 成员|
+|添加项|beta|向 [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype) 枚举类型添加了 **securityTemplate** 成员|
+|Addition|beta|向 [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction) 枚举类型添加了 **rebootNow** 成员|
+|Addition|beta|向 [remoteAction](/graph/api/resources/intune-devices-remoteaction) 枚举类型添加了 **rotateBitLockerKeys** 成员|
+| 添加项 | Beta | 添加了对写操作的应用程序权限支持：DeviceManagementConfiguration.ReadWrite.All、DeviceManagementApps.ReadWrite.All、DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementRBAC.ReadWrite.All、DeviceManagementServiceConfig.ReadWrite.All |
+| 添加项 | v1.0 | 向 [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem) 复杂类型添加了 **v13_0** 属性。 |
+
+### <a name="calendar-mail-groups"></a>日历、邮件、组
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | v1.0          | 向事件、消息或组帖子添加了[获取文件或项目附件的原始内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)这一功能。 |
+
+### <a name="identity-and-access-azure-ad"></a>标识和访问 (Azure AD)
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 向 [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) 资源添加了 **synchronizationJobSettings** 属性。|
+| Addition | Beta | 为 [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) 资源中的 **reason** 属性添加了新的可能值。|
+
+### <a name="mail-outlook"></a>邮件 (Outlook)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | v1.0          | 添加了[获取消息的 MIME 内容](outlook-get-mime-message.md)的功能。 |
+
+### <a name="users"></a>用户
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | v1.0          | 添加了 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) 方法。|
+
 ### <a name="users--outlook-settings"></a>用户|Outlook 设置
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) 资源的 **dateFormat** 和 **timeFormat** 属性。 属性表示用户的首选日期和时间格式。|
 
+### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项 |beta| 向[团队](/graph/api/resources/team?view=graph-rest-beta)资源添加了 **primaryChannel** 属性。|
+|Addition |beta| 向 [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta) 资源添加了 **allowCreatePrivateChannels** 属性。|
 
 ## <a name="august-2019"></a>2019 年 8 月
 
@@ -232,7 +324,7 @@ ms.locfileid: "36853803"
 | 添加项 | beta | 添加了[userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta)的资源。 |
 | 添加项 | beta | 向[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加了新方法，为用户个人应用启用以下方法： <br>[列出为用户安装的应用](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[为用户安装应用](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[为用户卸载应用](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[升级为用户安装的应用](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
-### <a name="calls-and-online-meetings"></a>呼叫和联机会议 
+### <a name="calls-and-online-meetings"></a>呼叫和联机会议
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -750,7 +842,7 @@ ms.locfileid: "36853803"
 | 添加项 | v1.0 | 向[用户](/graph/api/resources/user?view=graph-rest-1.0)：**employeeId**、**faxNumber**、**onPremisesDistinguishedName**、**showInAddressList** 和 **otherMails** 中添加了新属性。|
 | 添加项 | v1.0 | 向 [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) 复杂类型添加了 **forceChangePasswordNextSignInWithMfa** 属性。|
 | 添加 | v1.0 | 向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **licenseAssignmentStates** 属性以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
-| 添加 | v1.0 | 添加了 **licenseAssignmentState** 资源以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。| 
+| 添加 | v1.0 | 添加了 **licenseAssignmentState** 资源以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 | 添加 | v1.0 | 向 [Group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了 **assignedLicenses**、**licenseProcessingState** 和 **hasMembersWithLicenseErrors** 属性及 **membersWithLicenseErrors** 关系以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 | 添加 | beta 版本 | 向 [organization](/graph/api/resources/user?view=graph-rest-beta) 实体添加了 **createdDateTime** 属性。|
 
@@ -926,7 +1018,7 @@ ms.locfileid: "36853803"
 |添加项|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **intuneBrandingProfiles** 导航属性|
 |添加项|beta|向 [androidMinimumOperatingSystem](/graph/api/resources/intune-apps-androidminimumoperatingsystem?view=graph-rest-beta) 复杂类型添加了 **v6_0**、**v7_0**、**v7_1**、**v8_0**、**v8_1** 和 **v9_0** 属性|
 |添加项|beta|向 [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-beta) 复杂类型添加了 **v12_0** 属性|
-|删除项|beta|从 [win32LobAppPowerShellScriptDetection](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetection?view=graph-rest-beta) 复杂类型中删除了 **runAsLoggedOnUser** 属性|
+|删除|beta|从 [win32LobAppPowerShellScriptDetection](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetection?view=graph-rest-beta) 复杂类型中删除了 **runAsLoggedOnUser** 属性|
 |添加项|beta|向 [osVersionCount](/graph/api/resources/intune-devices-osversioncount?view=graph-rest-beta) 复杂类型添加了 **lastUpdateDateTime** 属性|
 |添加项|beta|向 [windowsMalwareCategoryCount](/graph/api/resources/intune-devices-windowsmalwarecategorycount?view=graph-rest-beta) 复杂类型添加了 **lastUpdateDateTime** 属性|
 |添加项|beta|向 [windowsMalwareExecutionStateCount](/graph/api/resources/intune-devices-windowsmalwareexecutionstatecount?view=graph-rest-beta) 复杂类型添加了 **lastUpdateDateTime** 属性|
@@ -1792,7 +1884,7 @@ ms.locfileid: "36853803"
 | 添加项        | beta        | 添加了新实体 [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta)。 这表示可用于跟踪目的的提交数据策略操作。
 | 添加项        | beta        | 在 [users](/graph/api/resources/users?view=graph-rest-beta) 上添加了 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) 操作。 此操作将提交数据策略操作请求，以导出由 Microsoft 为用户存储的个人数据。 |
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access-directory-apis"></a>标识和访问（目录 API）
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
