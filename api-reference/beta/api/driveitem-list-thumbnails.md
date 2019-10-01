@@ -6,12 +6,12 @@ title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: de6263415cceeb71e7ac2323ccfda67c8c02e017
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 2bed97e65a57c4a7d46336e9dcd845780e9e8d30
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719345"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333225"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -56,7 +56,10 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持使用 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
+此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
+
+此外，此方法支持检索具有原始方向 EXIF 值的缩略图，并且不通过追加`originalOrientation=true`查询参数来使用应用旋转。
+此项当前仅在 OneDrive 个人版上受支持。
 
 ## <a name="response"></a>响应
 
@@ -67,7 +70,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 下面是检索当前用户的 OneDrive 中某个项的可用缩略图的请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
 
 ```msgraph-interactive
@@ -81,7 +84,7 @@ GET /me/drive/items/{item-id}/thumbnails
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-item-thumbnails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-item-thumbnails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,7 +123,7 @@ Content-type: application/json
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
 
 ```msgraph-interactive
@@ -134,7 +137,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-one-thumbnail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-one-thumbnail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -169,7 +172,7 @@ Content-Type: application/json
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
@@ -183,7 +186,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -212,7 +215,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ### <a name="http-request"></a>HTTP 请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
 
 ```msgraph-interactive
@@ -226,7 +229,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-while-listing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-while-listing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -292,7 +295,7 @@ Content-type: application/json
 例如，如果你的应用需要 300x400 的缩略图，可以按如下所示请求获取此大小：
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request","name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
 
 ```msgraph-interactive
@@ -306,7 +309,7 @@ GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-custom-size-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-custom-size-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

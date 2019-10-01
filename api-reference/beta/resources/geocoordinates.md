@@ -1,23 +1,35 @@
 ---
 author: JeremyKelley
-description: GeoCoordinates 资源基于文件中包含的元数据提供位置的地理坐标和海拔。
+description: GeoCoordinates 资源根据文件中包含的元数据提供位置的地理坐标和仰角。
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 98f9c09c4604311c0cc741028565be860eb996ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86de97358591df8dc446b91d0be7a8192c7346f8
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971945"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333253"
 ---
-# <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
+# <a name="geocoordinates-resource-type"></a>geoCoordinates 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置**方面，则该项表示一个已知位置和与其相关的文件。
+根据文件中包含的元数据提供位置的地理坐标和仰角。
+如果[**driveItem**](driveitem.md)具有非 null**位置**facet，则该项目表示一个文件，其中包含一个已知的位置关联。
+
+> [!NOTE]
+> 更新照片的纬度和经度时，必须提供[照片](photo.md)资源（空或其他）。
+
+## <a name="properties"></a>属性
+
+| 属性  | 类型   | 说明
+|:----------|:-------|:--------------------------------------------------------
+| 海拔  | 双精度 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 纬度  | Double | 可选。 此项的纬度（以十进制表示）。 在 OneDrive 个人版上是可写的。
+| longitude | Double | 可选。 此项的经度（以十进制表示）。 在 OneDrive 个人版上是可写的。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,18 +50,6 @@ ms.locfileid: "35971945"
   "longitude": 24.34616
 }
 ```
-
-## <a name="properties"></a>属性
-
-| 属性  | 类型   | 说明
-|:----------|:-------|:--------------------------------------------------------
-| 海拔  | 双精度 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
-| 纬度  | 双精度 | 可选。此项的纬度（以十进制表示）。只读。
-| 经度 | Double | 可选。此项的经度（以十进制表示）。只读。
-
-## <a name="remarks"></a>注解
-
-有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
 <!--
 {

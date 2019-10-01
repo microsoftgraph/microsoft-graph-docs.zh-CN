@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包
 description: Microsoft Graph 工具包是 resuable、框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 2b8a7b3b93407410f31b17253f070065b6800b98
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: f777a6ecd0b7b936c5dad6859ac13b2f9f211ac6
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275827"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333290"
 ---
 # <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
 
@@ -20,13 +20,13 @@ Microsoft Graph 工具包是用于访问和使用 Microsoft Graph 的可重用�
 
 您可以通过直接引用加载程序（通过 unpkg）或安装 npm 程序包来使用这些组件。
 
-![入门](/images/get-started.gif)
+![演示如何引用加载程序以使用工具包组件的动态 gif](images/get-started.gif)
 
 有关如何开始使用 Microsoft Graph 工具包的详细信息，请参阅[入门视频](https://www.youtube.com/watch?v=oZCGb2MMxa0)。
 
 ### <a name="use-via-mgt-loader"></a>通过预加载加载程序使用
 
-请参阅下列[jsfiddle 示例](https://jsfiddle.net/metulev/9phqxLd5/)。
+请参阅以下[jsfiddle 示例](https://jsfiddle.net/metulev/9phqxLd5/)。
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -85,7 +85,7 @@ npm install @microsoft/mgt
 </script>
 ```
 
-## <a name="providers"></a>商会
+## <a name="providers"></a>提供程序
 
 与[提供程序](./providers.md)配合使用时，组件的工作效果最佳。 提供程序公开了组件用来调用 Microsoft Graph 的身份验证和 Api。
 

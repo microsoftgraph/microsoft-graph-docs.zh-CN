@@ -2,26 +2,27 @@
 title: chatMessageHostedContent 资源类型
 description: 聊天消息中承载的内容
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2787138819160a25d72fb9ed273950eee326399c
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 39939d9d61d992e5fd77fd21360ab05e8f83dbd4
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34720891"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333358"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>chatMessageHostedContent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在聊天消息中托管的内容, 如图像或代码段。
+表示在聊天消息中托管的内容，如图像或代码段。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
+| [列出 chatMessageHostedContent](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | 检索邮件的**chatMessageHostedContent**列表。 |
 | [获取 chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | 读取**chatMessageHostedContent**对象的属性和关系。 |
 
 ## <a name="properties"></a>属性

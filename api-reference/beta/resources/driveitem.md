@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 93c73fa61c871afce4ce4c7ed00e3c1ef554ca79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd3b7cd4271f631526a9ba098cd1f6a09f79fe6f
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972969"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333302"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -60,6 +60,7 @@ ms.locfileid: "35972969"
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -123,6 +124,7 @@ ms.locfileid: "35972969"
 | name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
+| pendingOperations    | [pendingOperations][] | 如果存在，则指示指示可能影响 driveItem 状态的一个或多个操作正在等待完成。 只读。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
@@ -145,13 +147,13 @@ ms.locfileid: "35972969"
 | activities         | [itemActivity][] 集合 | 最近发生在此项上的活动的列表。
 | 分析          | [itemAnalytics][] 资源  | 此项目上发生的查看活动的相关分析。
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| createdByUser      | [user][]                    | 创建了项的用户的身份。 只读。
+| createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
 | listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 此为只读属性。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 null。
+| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为空。
 | 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
@@ -184,6 +186,7 @@ ms.locfileid: "35972969"
 | [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [下载特定格式文件][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
+| [还原项目](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [复制项目](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [搜索项目](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
@@ -225,6 +228,7 @@ ms.locfileid: "35972969"
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md

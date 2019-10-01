@@ -6,12 +6,12 @@ title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3d8cee638105339f5e84ac229c2c9c81a2eb65a3
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957190"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333204"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -39,7 +39,7 @@ ms.locfileid: "35957190"
 要开始上载大文件，你的应用程序必须先请求新的上载会话。
 这可以创建一个临时存储位置，在上载完成之前保存文件字节数。
 上载最后一个字节后，上载会话即完成，最终文件会出现在目标文件夹中。
-或者, 可以将最终文件创建推迟到目标中, 直到您显式发出请求来完成上载, 方法是在请求参数中`deferCommit`设置该属性。
+或者，可以将最终文件创建推迟到目标中，直到您显式发出请求来完成上载，方法是在请求参数中`deferCommit`设置该属性。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -56,19 +56,20 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>请求正文
 
 无需请求正文。
-但是, 可以在请求正文中指定属性, 提供有关要上载的文件的其他数据, 并自定义上传操作的语义。
+但是，可以在请求正文中指定属性，提供有关要上载的文件的其他数据，并自定义上传操作的语义。
 
-例如, `item`属性允许设置以下参数:
+例如， `item`属性允许设置以下参数：
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
   "description": "description",
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
 
-下面的示例控制是否已采用 filename 的行为, 还指定在发出显式完成请求之前不应创建最终文件:
+下面的示例控制是否已采用 filename 的行为，还指定在发出显式完成请求之前不应创建最终文件：
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -90,15 +91,8 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
-| 项                 | driveItemUploadableProperties | 有关要上载的文件的数据
-| deferCommit          | Boolean                       | 如果设置为 true, 则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
-
-## <a name="item-properties"></a>项目属性
-
-| 属性             | 类型               | 说明
-|:---------------------|:-------------------|:---------------------------------
-| 说明          | String             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。
-| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关要上载的文件的数据
+| deferCommit          | Boolean                       | 如果设置为 true，则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for Business 上。
 
 ### <a name="request"></a>请求
 
@@ -124,6 +118,8 @@ Content-Type: application/json
 如果成功，此请求的响应将详细说明应将其余请求作为 [UploadSession](../resources/uploadsession.md) 资源发送到哪里。
 
 此资源详细说明了应将文件的字节范围上传到哪里以及上传会话何时到期。
+
+如果指定`fileSize`了该参数，但超过了可用配额， `507 Insufficent Storage`将返回响应，并且不会创建上载会话。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -215,10 +211,14 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>完成文件
 
-如果`deferCommit`为 false 或未设置, 则在将文件的最后一个字节范围放入上载 URL 时, 将自动完成上载。
-如果`deferCommit`为 true, 则在将文件的最后一个字节范围放入上载 url 后, 应将最后一个 POST 请求显式完成上传到包含零长度内容的上载 url。
+如果`deferCommit`为 false 或未设置，则在将文件的最后一个字节范围放入上载 URL 时，将自动完成上载。
 
-上载完成后, 服务器将使用或`HTTP 201 Created` `HTTP 200 OK`发出响应最终请求。
+如果`deferCommit`为 true，则可以通过两种方式显式完成上载：
+- 将文件的最后一个字节范围放入上载 URL 后，将最后一个 POST 请求发送到包含零长度内容的上载 URL （当前仅在 OneDrive for Business 和 SharePoint 上受支持）。
+- 将文件的最后一个字节范围放入上载 URL 后，发送最终的 PUT 请求，方式与[处理上载错误](#handle-upload-errors)的方式相同（当前仅在 OneDrive 个人版上受支持）。
+
+
+上载完成后，服务器将使用或`HTTP 201 Created` `HTTP 200 OK`发出响应最终请求。
 响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -356,7 +356,7 @@ Content-Type: application/json
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_parent}
+PUT /me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 

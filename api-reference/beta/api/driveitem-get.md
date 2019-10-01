@@ -6,12 +6,12 @@ title: 获取文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7c85c3400bc4356258bd1f947525e54a042a35d1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0f7aee77c2a3a97bef8c67789d2a88d14ad0a62f
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719372"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333211"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -52,6 +52,10 @@ GET /users/{userId}/drive/root:/{item-path}
 
 如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
 
+您还可以使用`includeDeletedItems=true`查询参数返回已删除的项目。
+此查询参数仅在以[driveItem](../resources/driveitem.md) by ID 为目标时才有效，否则将被忽略。
+此项当前仅在 OneDrive 个人版上受支持。
+
 ## <a name="optional-request-headers"></a>可选的请求标头
 
 | 名称          | 值  | 说明                                                                                                                                              |
@@ -69,7 +73,7 @@ GET /users/{userId}/drive/root:/{item-path}
 下面是用户的 OneDrive 的根文件夹请求示例。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
 ```msgraph-interactive
@@ -83,7 +87,7 @@ GET /me/drive/root
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

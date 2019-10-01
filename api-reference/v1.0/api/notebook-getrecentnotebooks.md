@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 613c4e1be4599aa97e8879c24a57f3e72729877f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: b268b6a1ee969ef5a6594d306a3c075ca68af0f5
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728613"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333232"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|添加用户拥有的笔记本。 若要添加用户拥有的笔记本，请设置为 `true`；否则，设置为 `false`。 如果不添加 `includePersonalNotebooks` 参数，请求会返回 `400` 错误响应。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 ##### <a name="request"></a>请求
 下面为请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(inc
 [!INCLUDE [sample-code](../includes/snippets/javascript/recent-notebooks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/recent-notebooks-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
