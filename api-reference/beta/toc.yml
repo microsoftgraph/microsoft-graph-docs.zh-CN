@@ -111,13 +111,13 @@
           href: /graph/sdks/create-client?context=graph/api/beta
         - name: 选择验证提供程序
           href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
-    - name: 使用工具包（预览）
+    - name: 使用工具包（预览版）
       items:
         - name: 工具包概述
           href: /graph/toolkit/overview?context=graph/api/beta
         - name: 组件
           items:
-            - name: '['
+            - name: 登录
               href: /graph/toolkit/components/login?context=graph/api/beta
             - name: 人员
               href: /graph/toolkit/components/person?context=graph/api/beta
@@ -127,7 +127,7 @@
               href: /graph/toolkit/components/agenda?context=graph/api/beta
             - name: 任务
               href: /graph/toolkit/components/tasks?context=graph/api/beta
-        - name: 商会
+        - name: 提供程序
           items:
             - name: 使用提供程序
               href: /graph//graph/toolkit/providers?context=graph/api/beta
@@ -135,13 +135,13 @@
               href: /graph/toolkit/providers/msal?context=graph/api/beta
             - name: SharePoint 提供程序
               href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-            - name: Microsoft 团队提供商
+            - name: Microsoft Teams 提供程序
               href: /graph/toolkit/providers/teams?context=graph/api/beta
             - name: 自定义提供程序
               href: /graph/toolkit/providers/custom?context=graph/api/beta
-        - name: 样式组件
+        - name: 对组件进行样式设置
           href: /graph/toolkit/style?context=graph/api/beta
-        - name: 模板化组件
+        - name: 组件模板化
           href: /graph/toolkit/templates?context=graph/api/beta
     - name: 资源
       items:
@@ -3642,7 +3642,7 @@
                 - name: 组策略演示文稿组合框
                   href: resources/intune-grouppolicy-grouppolicypresentationcombobox.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationcombobox-get.md
@@ -3655,7 +3655,7 @@
                 - name: 组策略演示文稿小数位数文本框
                   href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                     - name: 获取
                       href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -4071,7 +4071,7 @@
                 - name: iOS 更新设备状态
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -4086,7 +4086,7 @@
                 - name: iOS VPN 配置
                   href: resources/intune-deviceconfig-iosvpnconfiguration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-iosvpnconfiguration-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-iosvpnconfiguration-get.md
@@ -6403,7 +6403,7 @@
                 - name: Windows 管理应用运行状况状态
                   href: resources/intune-devices-windowsmanagementapphealthstate.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-devices-windowsmanagementapphealthstate-list.md
                     - name: 获取
                       href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -6426,7 +6426,7 @@
                 - name: Android 管理的应用注册
                   href: resources/intune-mam-androidmanagedappregistration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-mam-androidmanagedappregistration-list.md
                     - name: 获取
                       href: api/intune-mam-androidmanagedappregistration-get.md
@@ -7670,6 +7670,8 @@
                   href: api/driveitem-update.md
                 - name: 删除项目
                   href: api/driveitem-delete.md
+                - name: 还原项目
+                  href: api/driveitem-restore.md
                 - name: 移动项目
                   href: api/driveitem-move.md
                 - name: 复制项目
@@ -9409,7 +9411,7 @@
                   href: api/sitepage-delete.md
                 - name: 发布页面
                   href: api/sitepage-publish.md
-        - name: 社会和工作场所智能
+        - name: 社交和工作场所智能
           items:
             - name: 概述
               href: resources/social-overview.md
@@ -9683,12 +9685,10 @@
             - name: 聊天消息
               href: resources/chatmessage.md
               items:
-                - name: 列出承载的图像
-                  href: api/chatmessagehostedimage-list-hostedimages.md
-                - name: 获取托管图像
-                  href: api/chatmessagehostedimage-get.md
-                - name: 获取承载的图像字节
-                  href: api/chatmessagehostedimage-getbytes.md
+                - name: 列出承载的内容
+                  href: api/chatmessage-list-chatmessagehostedcontents.md
+                - name: 获取托管内容
+                  href: api/chatmessagehostedcontent-get.md
             - name: 应用程序目录
               href: resources/teamsapp.md
               items:
