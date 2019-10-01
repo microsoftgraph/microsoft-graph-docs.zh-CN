@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: bc2e5dc6575ebc5a2de2497f70d3e1d50bcdfa52
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 34308ef188987e4c6c32ad5c97d0676e75567c30
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964513"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333370"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -88,6 +88,9 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 
 当采用较慢的路径时，如果当前团队成员或所有者登录到 Microsoft Teams 应用程序/网站，则更改将在一小时内反映出来。
 如果这些用户都未登录到 Microsoft Teams 应用程序/网站，则更改将在其中一个用户登录后一小时内反映出来。
+
+> [!Note] 
+> 租户来宾始终通过慢速路径进行处理。
 
 ## <a name="see-also"></a>另请参阅
 

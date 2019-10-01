@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 585427b006bf0f1d0f0bc5e241650ad872b428ef
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bfaa2aec347b0dd710d0bb52abfaa96d50424eab
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187315"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333281"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -85,11 +85,21 @@ ms.locfileid: "37187315"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0          | 向事件、消息或组帖子添加了[获取文件或项目附件的原始内容](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment)这一功能。 |
 
-### <a name="identity-and-access-azure-ad"></a>标识和访问 (Azure AD)
+### <a name="files-onedrive-for-business-and-onedrive-personal"></a>文件（OneDrive for Business 和 OneDrive 个人版）
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta | 添加了 [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) 和 [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) 资源。 **pendingOperations** 资源适用于 [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) 资源。 |
+| 添加项 | Beta | 向 [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) 资源添加了 [restore](/graph/api/driveitem-restore?view=graph-rest-beta) 操作。 |
+| Addition | Beta | 向 [photo](/graph/api/resources/photo?view=graph-rest-beta) 资源添加了 **orientation** 属性。 |
+| 添加项 | Beta | 向 [hashes](/graph/api/resources/hashes?view=graph-rest-beta) 资源添加了 **sha256Hash** 属性。 |
+
+### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 添加项 | Beta | 向 [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) 资源添加了 **synchronizationJobSettings** 属性。|
+| 添加项 | Beta | 添加了 [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta) 资源，它表示用于登录用户帐户的标识。 |
+| Addition | Beta | 向 [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) 资源添加了 **synchronizationJobSettings** 属性。|
 | Addition | Beta | 为 [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) 资源中的 **reason** 属性添加了新的可能值。|
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
@@ -102,7 +112,8 @@ ms.locfileid: "37187315"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项        | v1.0          | 添加了 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) 方法。|
+| 添加项 | Beta | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 资源添加了 **identities** 属性。 此属性表示此用户可用于登录的标识集。|
+| Addition        | v1.0          | 添加了 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) 方法。|
 
 ### <a name="users--outlook-settings"></a>用户|Outlook 设置
 
@@ -485,7 +496,7 @@ ms.locfileid: "37187315"
 ### <a name="groups"></a>组
 | **更改类型** | **版本** | **说明** |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](https://docs.microsoft.com/zh-CN/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
+| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
 
 ### <a name="identity-and-access-azure-ad--identity-protection"></a>身份和访问（Azure AD）| 身份保护
 
@@ -808,7 +819,7 @@ ms.locfileid: "37187315"
 |:---|:---|:---|
 |添加|beta|添加了新实体：<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>|
 |添加|beta|添加了新复杂类型：<br/>[appLogCollectionDownloadDetails](/graph/api/resources/intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
-|添加|beta 版本|添加了新枚举类型：<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
+|添加|beta 版本|添加的新枚举类型：<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
 |添加|beta|在 [appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta) 上添加了 **createDownloadUrl** 操作 |
 |删除|beta|删除了以下实体：<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
 |添加|beta|向 [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) 实体添加了 **passwordSignInFailureCountBeforeFactoryReset** 属性|
@@ -873,7 +884,7 @@ ms.locfileid: "37187315"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/zh-CN/graph/api/resources/group?view=graph-rest-beta)。|
+| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta)。|
 | 添加项 | beta | 添加了新资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。|
 | 添加 | beta | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 `createdDateTime` 属性。|
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|
@@ -1229,7 +1240,7 @@ ms.locfileid: "37187315"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | Beta | 添加了 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，以及 [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta) 和 [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) 复杂类型，来支持[获取给定时间内用户的空闲/忙碌、可用性信息、通讯组列表和资源](outlook-get-free-busy-schedule.md)。 |
+| Addition | Beta | 添加了 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，以及 [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta) 和 [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) 复杂类型，来支持[获取给定时间内用户的空闲/忙碌、可用性信息、通讯组列表和资源](outlook-get-free-busy-schedule.md)。 |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
