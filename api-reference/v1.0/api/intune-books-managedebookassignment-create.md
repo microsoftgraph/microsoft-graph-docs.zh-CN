@@ -1,33 +1,33 @@
 ---
 title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae5b68a513b61d7576a7d75ddcec3021da0ee9ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c30894d22f1e901046d30f3605317c2bde890fc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018419"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357883"
 ---
-# <a name="create-managedebookassignment"></a><span data-ttu-id="a0ff0-103">创建 managedEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="a0ff0-103">Create managedEBookAssignment</span></span>
+# <a name="create-managedebookassignment"></a><span data-ttu-id="5f38b-103">创建 managedEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="5f38b-103">Create managedEBookAssignment</span></span>
 
-> <span data-ttu-id="a0ff0-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5f38b-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5f38b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a0ff0-105">创建新的 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-105">Create a new [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.</span></span>
+<span data-ttu-id="5f38b-105">创建新的 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5f38b-105">Create a new [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a0ff0-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="a0ff0-106">Prerequisites</span></span>
-<span data-ttu-id="a0ff0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5f38b-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="5f38b-106">Prerequisites</span></span>
+<span data-ttu-id="5f38b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5f38b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0ff0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0ff0-109">Permission type</span></span>|<span data-ttu-id="a0ff0-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a0ff0-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5f38b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5f38b-109">Permission type</span></span>|<span data-ttu-id="5f38b-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5f38b-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0ff0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0ff0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a0ff0-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0ff0-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a0ff0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0ff0-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a0ff0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-114">Not supported.</span></span>|
-|<span data-ttu-id="a0ff0-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0ff0-115">Application</span></span>|<span data-ttu-id="a0ff0-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-116">Not supported.</span></span>|
+|<span data-ttu-id="5f38b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5f38b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="5f38b-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5f38b-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="5f38b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5f38b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5f38b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5f38b-114">Not supported.</span></span>|
+|<span data-ttu-id="5f38b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5f38b-115">Application</span></span>|<span data-ttu-id="5f38b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5f38b-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a0ff0-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0ff0-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f38b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5f38b-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,32 +36,32 @@ ms.locfileid: "36018419"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a0ff0-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0ff0-118">Request headers</span></span>
-|<span data-ttu-id="a0ff0-119">标头</span><span class="sxs-lookup"><span data-stu-id="a0ff0-119">Header</span></span>|<span data-ttu-id="a0ff0-120">值</span><span class="sxs-lookup"><span data-stu-id="a0ff0-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5f38b-118">请求头</span><span class="sxs-lookup"><span data-stu-id="5f38b-118">Request headers</span></span>
+|<span data-ttu-id="5f38b-119">标头</span><span class="sxs-lookup"><span data-stu-id="5f38b-119">Header</span></span>|<span data-ttu-id="5f38b-120">值</span><span class="sxs-lookup"><span data-stu-id="5f38b-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0ff0-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0ff0-121">Authorization</span></span>|<span data-ttu-id="a0ff0-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a0ff0-123">接受</span><span class="sxs-lookup"><span data-stu-id="a0ff0-123">Accept</span></span>|<span data-ttu-id="a0ff0-124">application/json</span><span class="sxs-lookup"><span data-stu-id="a0ff0-124">application/json</span></span>|
+|<span data-ttu-id="5f38b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5f38b-121">Authorization</span></span>|<span data-ttu-id="5f38b-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5f38b-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5f38b-123">接受</span><span class="sxs-lookup"><span data-stu-id="5f38b-123">Accept</span></span>|<span data-ttu-id="5f38b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="5f38b-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a0ff0-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0ff0-125">Request body</span></span>
-<span data-ttu-id="a0ff0-126">在请求正文中，提供 managedEBookAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-126">In the request body, supply a JSON representation for the managedEBookAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f38b-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5f38b-125">Request body</span></span>
+<span data-ttu-id="5f38b-126">在请求正文中，提供 managedEBookAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f38b-126">In the request body, supply a JSON representation for the managedEBookAssignment object.</span></span>
 
-<span data-ttu-id="a0ff0-127">下表显示创建 managedEBookAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-127">The following table shows the properties that are required when you create the managedEBookAssignment.</span></span>
+<span data-ttu-id="5f38b-127">下表显示创建 managedEBookAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="5f38b-127">The following table shows the properties that are required when you create the managedEBookAssignment.</span></span>
 
-|<span data-ttu-id="a0ff0-128">属性</span><span class="sxs-lookup"><span data-stu-id="a0ff0-128">Property</span></span>|<span data-ttu-id="a0ff0-129">类型</span><span class="sxs-lookup"><span data-stu-id="a0ff0-129">Type</span></span>|<span data-ttu-id="a0ff0-130">说明</span><span class="sxs-lookup"><span data-stu-id="a0ff0-130">Description</span></span>|
+|<span data-ttu-id="5f38b-128">属性</span><span class="sxs-lookup"><span data-stu-id="5f38b-128">Property</span></span>|<span data-ttu-id="5f38b-129">类型</span><span class="sxs-lookup"><span data-stu-id="5f38b-129">Type</span></span>|<span data-ttu-id="5f38b-130">说明</span><span class="sxs-lookup"><span data-stu-id="5f38b-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a0ff0-131">id</span><span class="sxs-lookup"><span data-stu-id="a0ff0-131">id</span></span>|<span data-ttu-id="a0ff0-132">String</span><span class="sxs-lookup"><span data-stu-id="a0ff0-132">String</span></span>|<span data-ttu-id="a0ff0-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-133">Key of the entity.</span></span>|
-|<span data-ttu-id="a0ff0-134">target</span><span class="sxs-lookup"><span data-stu-id="a0ff0-134">target</span></span>|[<span data-ttu-id="a0ff0-135">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="a0ff0-135">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="a0ff0-136">电子图书的分配目标。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-136">The assignment target for eBook.</span></span>|
-|<span data-ttu-id="a0ff0-137">installIntent</span><span class="sxs-lookup"><span data-stu-id="a0ff0-137">installIntent</span></span>|[<span data-ttu-id="a0ff0-138">installIntent</span><span class="sxs-lookup"><span data-stu-id="a0ff0-138">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="a0ff0-139">电子图书的安装意图。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-139">The install intent for eBook.</span></span> <span data-ttu-id="a0ff0-140">可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-140">Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
+|<span data-ttu-id="5f38b-131">id</span><span class="sxs-lookup"><span data-stu-id="5f38b-131">id</span></span>|<span data-ttu-id="5f38b-132">String</span><span class="sxs-lookup"><span data-stu-id="5f38b-132">String</span></span>|<span data-ttu-id="5f38b-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="5f38b-133">Key of the entity.</span></span>|
+|<span data-ttu-id="5f38b-134">target</span><span class="sxs-lookup"><span data-stu-id="5f38b-134">target</span></span>|[<span data-ttu-id="5f38b-135">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="5f38b-135">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="5f38b-136">电子图书的分配目标。</span><span class="sxs-lookup"><span data-stu-id="5f38b-136">The assignment target for eBook.</span></span>|
+|<span data-ttu-id="5f38b-137">installIntent</span><span class="sxs-lookup"><span data-stu-id="5f38b-137">installIntent</span></span>|[<span data-ttu-id="5f38b-138">installIntent</span><span class="sxs-lookup"><span data-stu-id="5f38b-138">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="5f38b-139">电子图书的安装意图。</span><span class="sxs-lookup"><span data-stu-id="5f38b-139">The install intent for eBook.</span></span> <span data-ttu-id="5f38b-140">可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。</span><span class="sxs-lookup"><span data-stu-id="5f38b-140">Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a0ff0-141">响应</span><span class="sxs-lookup"><span data-stu-id="a0ff0-141">Response</span></span>
-<span data-ttu-id="a0ff0-142">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-142">If successful, this method returns a `201 Created` response code and a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5f38b-141">响应</span><span class="sxs-lookup"><span data-stu-id="5f38b-141">Response</span></span>
+<span data-ttu-id="5f38b-142">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5f38b-142">If successful, this method returns a `201 Created` response code and a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0ff0-143">示例</span><span class="sxs-lookup"><span data-stu-id="a0ff0-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5f38b-143">示例</span><span class="sxs-lookup"><span data-stu-id="5f38b-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a0ff0-144">请求</span><span class="sxs-lookup"><span data-stu-id="a0ff0-144">Request</span></span>
-<span data-ttu-id="a0ff0-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-145">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5f38b-144">请求</span><span class="sxs-lookup"><span data-stu-id="5f38b-144">Request</span></span>
+<span data-ttu-id="5f38b-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5f38b-145">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 Content-type: application/json
@@ -76,8 +76,8 @@ Content-length: 194
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a0ff0-146">响应</span><span class="sxs-lookup"><span data-stu-id="a0ff0-146">Response</span></span>
-<span data-ttu-id="a0ff0-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a0ff0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5f38b-146">响应</span><span class="sxs-lookup"><span data-stu-id="5f38b-146">Response</span></span>
+<span data-ttu-id="5f38b-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5f38b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -92,6 +92,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

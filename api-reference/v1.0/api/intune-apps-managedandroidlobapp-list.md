@@ -1,33 +1,33 @@
 ---
 title: 列出 managedAndroidLobApps
 description: 列出 managedAndroidLobApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 973966e85480c6b92982424aa4c9a952c78ee674
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ac18f3c3cd3e58041fdef56d40b149e60503af5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014142"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358716"
 ---
-# <a name="list-managedandroidlobapps"></a><span data-ttu-id="30385-103">列出 managedAndroidLobApps</span><span class="sxs-lookup"><span data-stu-id="30385-103">List managedAndroidLobApps</span></span>
+# <a name="list-managedandroidlobapps"></a><span data-ttu-id="5c1d7-103">列出 managedAndroidLobApps</span><span class="sxs-lookup"><span data-stu-id="5c1d7-103">List managedAndroidLobApps</span></span>
 
-> <span data-ttu-id="30385-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="30385-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5c1d7-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="30385-105">列出 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="30385-105">List properties and relationships of the [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) objects.</span></span>
+<span data-ttu-id="5c1d7-105">列出 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-105">List properties and relationships of the [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="30385-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="30385-106">Prerequisites</span></span>
-<span data-ttu-id="30385-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="30385-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5c1d7-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="5c1d7-106">Prerequisites</span></span>
+<span data-ttu-id="5c1d7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="30385-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="30385-109">Permission type</span></span>|<span data-ttu-id="30385-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="30385-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5c1d7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5c1d7-109">Permission type</span></span>|<span data-ttu-id="5c1d7-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5c1d7-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="30385-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="30385-111">Delegated (work or school account)</span></span>|<span data-ttu-id="30385-112">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="30385-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="30385-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="30385-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="30385-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="30385-114">Not supported.</span></span>|
-|<span data-ttu-id="30385-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="30385-115">Application</span></span>|<span data-ttu-id="30385-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="30385-116">Not supported.</span></span>|
+|<span data-ttu-id="5c1d7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5c1d7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="5c1d7-112">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="5c1d7-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="5c1d7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5c1d7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5c1d7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-114">Not supported.</span></span>|
+|<span data-ttu-id="5c1d7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5c1d7-115">Application</span></span>|<span data-ttu-id="5c1d7-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="30385-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="30385-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5c1d7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5c1d7-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,28 +36,28 @@ ms.locfileid: "36014142"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="30385-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="30385-118">Request headers</span></span>
-|<span data-ttu-id="30385-119">标头</span><span class="sxs-lookup"><span data-stu-id="30385-119">Header</span></span>|<span data-ttu-id="30385-120">值</span><span class="sxs-lookup"><span data-stu-id="30385-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5c1d7-118">请求头</span><span class="sxs-lookup"><span data-stu-id="5c1d7-118">Request headers</span></span>
+|<span data-ttu-id="5c1d7-119">标头</span><span class="sxs-lookup"><span data-stu-id="5c1d7-119">Header</span></span>|<span data-ttu-id="5c1d7-120">值</span><span class="sxs-lookup"><span data-stu-id="5c1d7-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="30385-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="30385-121">Authorization</span></span>|<span data-ttu-id="30385-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="30385-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="30385-123">接受</span><span class="sxs-lookup"><span data-stu-id="30385-123">Accept</span></span>|<span data-ttu-id="30385-124">application/json</span><span class="sxs-lookup"><span data-stu-id="30385-124">application/json</span></span>|
+|<span data-ttu-id="5c1d7-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5c1d7-121">Authorization</span></span>|<span data-ttu-id="5c1d7-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5c1d7-123">接受</span><span class="sxs-lookup"><span data-stu-id="5c1d7-123">Accept</span></span>|<span data-ttu-id="5c1d7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="5c1d7-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="30385-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="30385-125">Request body</span></span>
-<span data-ttu-id="30385-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="30385-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5c1d7-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5c1d7-125">Request body</span></span>
+<span data-ttu-id="5c1d7-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="30385-127">响应</span><span class="sxs-lookup"><span data-stu-id="30385-127">Response</span></span>
-<span data-ttu-id="30385-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="30385-128">If successful, this method returns a `200 OK` response code and a collection of [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5c1d7-127">响应</span><span class="sxs-lookup"><span data-stu-id="5c1d7-127">Response</span></span>
+<span data-ttu-id="5c1d7-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-128">If successful, this method returns a `200 OK` response code and a collection of [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="30385-129">示例</span><span class="sxs-lookup"><span data-stu-id="30385-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5c1d7-129">示例</span><span class="sxs-lookup"><span data-stu-id="5c1d7-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="30385-130">请求</span><span class="sxs-lookup"><span data-stu-id="30385-130">Request</span></span>
-<span data-ttu-id="30385-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="30385-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5c1d7-130">请求</span><span class="sxs-lookup"><span data-stu-id="5c1d7-130">Request</span></span>
+<span data-ttu-id="5c1d7-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="30385-132">响应</span><span class="sxs-lookup"><span data-stu-id="30385-132">Response</span></span>
-<span data-ttu-id="30385-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="30385-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5c1d7-132">响应</span><span class="sxs-lookup"><span data-stu-id="5c1d7-132">Response</span></span>
+<span data-ttu-id="5c1d7-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5c1d7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -108,6 +108,7 @@ Content-Length: 1510
   ]
 }
 ```
+
 
 
 

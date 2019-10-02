@@ -1,33 +1,33 @@
 ---
 title: 创建 iosMobileAppConfiguration
 description: 创建新的 iosMobileAppConfiguration 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 454f92450f78ddceabdcf96cb5d77448403cf932
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 66b1e4756c37feea77b73e488e78173b6e4ded5d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002599"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358913"
 ---
-# <a name="create-iosmobileappconfiguration"></a><span data-ttu-id="7a014-103">创建 iosMobileAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="7a014-103">Create iosMobileAppConfiguration</span></span>
+# <a name="create-iosmobileappconfiguration"></a><span data-ttu-id="02b36-103">创建 iosMobileAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="02b36-103">Create iosMobileAppConfiguration</span></span>
 
-> <span data-ttu-id="7a014-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7a014-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="02b36-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="02b36-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7a014-105">创建新的 [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7a014-105">Create a new [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) object.</span></span>
+<span data-ttu-id="02b36-105">创建新的 [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="02b36-105">Create a new [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7a014-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="7a014-106">Prerequisites</span></span>
-<span data-ttu-id="7a014-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7a014-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="02b36-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="02b36-106">Prerequisites</span></span>
+<span data-ttu-id="02b36-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="02b36-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7a014-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7a014-109">Permission type</span></span>|<span data-ttu-id="7a014-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="7a014-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="02b36-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="02b36-109">Permission type</span></span>|<span data-ttu-id="02b36-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="02b36-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7a014-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7a014-111">Delegated (work or school account)</span></span>|<span data-ttu-id="7a014-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a014-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="7a014-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7a014-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7a014-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="7a014-114">Not supported.</span></span>|
-|<span data-ttu-id="7a014-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="7a014-115">Application</span></span>|<span data-ttu-id="7a014-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7a014-116">Not supported.</span></span>|
+|<span data-ttu-id="02b36-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="02b36-111">Delegated (work or school account)</span></span>|<span data-ttu-id="02b36-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02b36-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="02b36-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="02b36-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="02b36-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="02b36-114">Not supported.</span></span>|
+|<span data-ttu-id="02b36-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="02b36-115">Application</span></span>|<span data-ttu-id="02b36-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="02b36-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7a014-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7a014-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02b36-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="02b36-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,38 +36,38 @@ ms.locfileid: "36002599"
 POST /deviceAppManagement/mobileAppConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7a014-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="7a014-118">Request headers</span></span>
-|<span data-ttu-id="7a014-119">标头</span><span class="sxs-lookup"><span data-stu-id="7a014-119">Header</span></span>|<span data-ttu-id="7a014-120">值</span><span class="sxs-lookup"><span data-stu-id="7a014-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="02b36-118">请求头</span><span class="sxs-lookup"><span data-stu-id="02b36-118">Request headers</span></span>
+|<span data-ttu-id="02b36-119">标头</span><span class="sxs-lookup"><span data-stu-id="02b36-119">Header</span></span>|<span data-ttu-id="02b36-120">值</span><span class="sxs-lookup"><span data-stu-id="02b36-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7a014-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7a014-121">Authorization</span></span>|<span data-ttu-id="7a014-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7a014-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7a014-123">接受</span><span class="sxs-lookup"><span data-stu-id="7a014-123">Accept</span></span>|<span data-ttu-id="7a014-124">application/json</span><span class="sxs-lookup"><span data-stu-id="7a014-124">application/json</span></span>|
+|<span data-ttu-id="02b36-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="02b36-121">Authorization</span></span>|<span data-ttu-id="02b36-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="02b36-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="02b36-123">接受</span><span class="sxs-lookup"><span data-stu-id="02b36-123">Accept</span></span>|<span data-ttu-id="02b36-124">application/json</span><span class="sxs-lookup"><span data-stu-id="02b36-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7a014-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="7a014-125">Request body</span></span>
-<span data-ttu-id="7a014-126">在请求正文中，提供 iosMobileAppConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7a014-126">In the request body, supply a JSON representation for the iosMobileAppConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="02b36-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="02b36-125">Request body</span></span>
+<span data-ttu-id="02b36-126">在请求正文中，提供 iosMobileAppConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="02b36-126">In the request body, supply a JSON representation for the iosMobileAppConfiguration object.</span></span>
 
-<span data-ttu-id="7a014-127">下表显示创建 iosMobileAppConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7a014-127">The following table shows the properties that are required when you create the iosMobileAppConfiguration.</span></span>
+<span data-ttu-id="02b36-127">下表显示创建 iosMobileAppConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="02b36-127">The following table shows the properties that are required when you create the iosMobileAppConfiguration.</span></span>
 
-|<span data-ttu-id="7a014-128">属性</span><span class="sxs-lookup"><span data-stu-id="7a014-128">Property</span></span>|<span data-ttu-id="7a014-129">类型</span><span class="sxs-lookup"><span data-stu-id="7a014-129">Type</span></span>|<span data-ttu-id="7a014-130">说明</span><span class="sxs-lookup"><span data-stu-id="7a014-130">Description</span></span>|
+|<span data-ttu-id="02b36-128">属性</span><span class="sxs-lookup"><span data-stu-id="02b36-128">Property</span></span>|<span data-ttu-id="02b36-129">类型</span><span class="sxs-lookup"><span data-stu-id="02b36-129">Type</span></span>|<span data-ttu-id="02b36-130">说明</span><span class="sxs-lookup"><span data-stu-id="02b36-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7a014-131">id</span><span class="sxs-lookup"><span data-stu-id="7a014-131">id</span></span>|<span data-ttu-id="7a014-132">字符串</span><span class="sxs-lookup"><span data-stu-id="7a014-132">String</span></span>|<span data-ttu-id="7a014-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="7a014-133">Key of the entity.</span></span> <span data-ttu-id="7a014-134">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-134">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-135">targetedMobileApps</span><span class="sxs-lookup"><span data-stu-id="7a014-135">targetedMobileApps</span></span>|<span data-ttu-id="7a014-136">String 集合</span><span class="sxs-lookup"><span data-stu-id="7a014-136">String collection</span></span>|<span data-ttu-id="7a014-137">关联的应用。</span><span class="sxs-lookup"><span data-stu-id="7a014-137">the associated app.</span></span> <span data-ttu-id="7a014-138">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-138">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-139">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="7a014-139">createdDateTime</span></span>|<span data-ttu-id="7a014-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7a014-140">DateTimeOffset</span></span>|<span data-ttu-id="7a014-141">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="7a014-141">DateTime the object was created.</span></span> <span data-ttu-id="7a014-142">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-142">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-143">说明</span><span class="sxs-lookup"><span data-stu-id="7a014-143">description</span></span>|<span data-ttu-id="7a014-144">String</span><span class="sxs-lookup"><span data-stu-id="7a014-144">String</span></span>|<span data-ttu-id="7a014-145">管理员提供的设备配置说明。</span><span class="sxs-lookup"><span data-stu-id="7a014-145">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="7a014-146">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-146">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7a014-147">lastModifiedDateTime</span></span>|<span data-ttu-id="7a014-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7a014-148">DateTimeOffset</span></span>|<span data-ttu-id="7a014-149">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="7a014-149">DateTime the object was last modified.</span></span> <span data-ttu-id="7a014-150">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-150">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-151">displayName</span><span class="sxs-lookup"><span data-stu-id="7a014-151">displayName</span></span>|<span data-ttu-id="7a014-152">String</span><span class="sxs-lookup"><span data-stu-id="7a014-152">String</span></span>|<span data-ttu-id="7a014-153">管理员提供的设备配置名称。</span><span class="sxs-lookup"><span data-stu-id="7a014-153">Admin provided name of the device configuration.</span></span> <span data-ttu-id="7a014-154">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-154">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-155">version</span><span class="sxs-lookup"><span data-stu-id="7a014-155">version</span></span>|<span data-ttu-id="7a014-156">Int32</span><span class="sxs-lookup"><span data-stu-id="7a014-156">Int32</span></span>|<span data-ttu-id="7a014-157">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="7a014-157">Version of the device configuration.</span></span> <span data-ttu-id="7a014-158">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7a014-158">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
-|<span data-ttu-id="7a014-159">encodedSettingXml</span><span class="sxs-lookup"><span data-stu-id="7a014-159">encodedSettingXml</span></span>|<span data-ttu-id="7a014-160">Binary</span><span class="sxs-lookup"><span data-stu-id="7a014-160">Binary</span></span>|<span data-ttu-id="7a014-161">mdm 应用配置 Base64 二进制。</span><span class="sxs-lookup"><span data-stu-id="7a014-161">mdm app configuration Base64 binary.</span></span>|
-|<span data-ttu-id="7a014-162">settings</span><span class="sxs-lookup"><span data-stu-id="7a014-162">settings</span></span>|<span data-ttu-id="7a014-163">[appConfigurationSettingItem](../resources/intune-apps-appconfigurationsettingitem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="7a014-163">[appConfigurationSettingItem](../resources/intune-apps-appconfigurationsettingitem.md) collection</span></span>|<span data-ttu-id="7a014-164">应用配置设置项。</span><span class="sxs-lookup"><span data-stu-id="7a014-164">app configuration setting items.</span></span>|
+|<span data-ttu-id="02b36-131">id</span><span class="sxs-lookup"><span data-stu-id="02b36-131">id</span></span>|<span data-ttu-id="02b36-132">字符串</span><span class="sxs-lookup"><span data-stu-id="02b36-132">String</span></span>|<span data-ttu-id="02b36-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="02b36-133">Key of the entity.</span></span> <span data-ttu-id="02b36-134">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-134">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-135">targetedMobileApps</span><span class="sxs-lookup"><span data-stu-id="02b36-135">targetedMobileApps</span></span>|<span data-ttu-id="02b36-136">String 集合</span><span class="sxs-lookup"><span data-stu-id="02b36-136">String collection</span></span>|<span data-ttu-id="02b36-137">关联的应用。</span><span class="sxs-lookup"><span data-stu-id="02b36-137">the associated app.</span></span> <span data-ttu-id="02b36-138">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-138">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-139">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="02b36-139">createdDateTime</span></span>|<span data-ttu-id="02b36-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02b36-140">DateTimeOffset</span></span>|<span data-ttu-id="02b36-141">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="02b36-141">DateTime the object was created.</span></span> <span data-ttu-id="02b36-142">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-142">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-143">说明</span><span class="sxs-lookup"><span data-stu-id="02b36-143">description</span></span>|<span data-ttu-id="02b36-144">String</span><span class="sxs-lookup"><span data-stu-id="02b36-144">String</span></span>|<span data-ttu-id="02b36-145">管理员提供的设备配置说明。</span><span class="sxs-lookup"><span data-stu-id="02b36-145">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="02b36-146">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-146">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="02b36-147">lastModifiedDateTime</span></span>|<span data-ttu-id="02b36-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="02b36-148">DateTimeOffset</span></span>|<span data-ttu-id="02b36-149">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="02b36-149">DateTime the object was last modified.</span></span> <span data-ttu-id="02b36-150">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-150">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-151">displayName</span><span class="sxs-lookup"><span data-stu-id="02b36-151">displayName</span></span>|<span data-ttu-id="02b36-152">String</span><span class="sxs-lookup"><span data-stu-id="02b36-152">String</span></span>|<span data-ttu-id="02b36-153">管理员提供的设备配置名称。</span><span class="sxs-lookup"><span data-stu-id="02b36-153">Admin provided name of the device configuration.</span></span> <span data-ttu-id="02b36-154">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-154">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-155">version</span><span class="sxs-lookup"><span data-stu-id="02b36-155">version</span></span>|<span data-ttu-id="02b36-156">Int32</span><span class="sxs-lookup"><span data-stu-id="02b36-156">Int32</span></span>|<span data-ttu-id="02b36-157">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="02b36-157">Version of the device configuration.</span></span> <span data-ttu-id="02b36-158">继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="02b36-158">Inherited from [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)</span></span>|
+|<span data-ttu-id="02b36-159">encodedSettingXml</span><span class="sxs-lookup"><span data-stu-id="02b36-159">encodedSettingXml</span></span>|<span data-ttu-id="02b36-160">Binary</span><span class="sxs-lookup"><span data-stu-id="02b36-160">Binary</span></span>|<span data-ttu-id="02b36-161">mdm 应用配置 Base64 二进制。</span><span class="sxs-lookup"><span data-stu-id="02b36-161">mdm app configuration Base64 binary.</span></span>|
+|<span data-ttu-id="02b36-162">settings</span><span class="sxs-lookup"><span data-stu-id="02b36-162">settings</span></span>|<span data-ttu-id="02b36-163">[appConfigurationSettingItem](../resources/intune-apps-appconfigurationsettingitem.md) 集合</span><span class="sxs-lookup"><span data-stu-id="02b36-163">[appConfigurationSettingItem](../resources/intune-apps-appconfigurationsettingitem.md) collection</span></span>|<span data-ttu-id="02b36-164">应用配置设置项。</span><span class="sxs-lookup"><span data-stu-id="02b36-164">app configuration setting items.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7a014-165">响应</span><span class="sxs-lookup"><span data-stu-id="7a014-165">Response</span></span>
-<span data-ttu-id="7a014-166">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7a014-166">If successful, this method returns a `201 Created` response code and a [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="02b36-165">响应</span><span class="sxs-lookup"><span data-stu-id="02b36-165">Response</span></span>
+<span data-ttu-id="02b36-166">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="02b36-166">If successful, this method returns a `201 Created` response code and a [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a014-167">示例</span><span class="sxs-lookup"><span data-stu-id="7a014-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="02b36-167">示例</span><span class="sxs-lookup"><span data-stu-id="02b36-167">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7a014-168">请求</span><span class="sxs-lookup"><span data-stu-id="7a014-168">Request</span></span>
-<span data-ttu-id="7a014-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7a014-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="02b36-168">请求</span><span class="sxs-lookup"><span data-stu-id="02b36-168">Request</span></span>
+<span data-ttu-id="02b36-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="02b36-169">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
@@ -93,8 +93,8 @@ Content-length: 534
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7a014-170">响应</span><span class="sxs-lookup"><span data-stu-id="7a014-170">Response</span></span>
-<span data-ttu-id="7a014-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7a014-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="02b36-170">响应</span><span class="sxs-lookup"><span data-stu-id="02b36-170">Response</span></span>
+<span data-ttu-id="02b36-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="02b36-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -122,6 +122,7 @@ Content-Length: 706
   ]
 }
 ```
+
 
 
 

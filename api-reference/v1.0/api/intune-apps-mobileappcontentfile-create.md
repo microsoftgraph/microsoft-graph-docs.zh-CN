@@ -1,33 +1,33 @@
 ---
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1423491fcd22901099cf9064a423b1c33a73f428
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002011"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358226"
 ---
-# <a name="create-mobileappcontentfile"></a><span data-ttu-id="920bf-103">创建 mobileAppContentFile</span><span class="sxs-lookup"><span data-stu-id="920bf-103">Create mobileAppContentFile</span></span>
+# <a name="create-mobileappcontentfile"></a><span data-ttu-id="3d8d3-103">创建 mobileAppContentFile</span><span class="sxs-lookup"><span data-stu-id="3d8d3-103">Create mobileAppContentFile</span></span>
 
-> <span data-ttu-id="920bf-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="920bf-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3d8d3-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="920bf-105">创建新的 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="920bf-105">Create a new [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object.</span></span>
+<span data-ttu-id="3d8d3-105">创建新的 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-105">Create a new [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="920bf-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="920bf-106">Prerequisites</span></span>
-<span data-ttu-id="920bf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="920bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3d8d3-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="3d8d3-106">Prerequisites</span></span>
+<span data-ttu-id="3d8d3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="920bf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="920bf-109">Permission type</span></span>|<span data-ttu-id="920bf-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="920bf-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3d8d3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3d8d3-109">Permission type</span></span>|<span data-ttu-id="3d8d3-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3d8d3-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="920bf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="920bf-111">Delegated (work or school account)</span></span>|<span data-ttu-id="920bf-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="920bf-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="920bf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="920bf-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="920bf-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="920bf-114">Not supported.</span></span>|
-|<span data-ttu-id="920bf-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="920bf-115">Application</span></span>|<span data-ttu-id="920bf-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="920bf-116">Not supported.</span></span>|
+|<span data-ttu-id="3d8d3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3d8d3-111">Delegated (work or school account)</span></span>|<span data-ttu-id="3d8d3-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3d8d3-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="3d8d3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3d8d3-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3d8d3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-114">Not supported.</span></span>|
+|<span data-ttu-id="3d8d3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="3d8d3-115">Application</span></span>|<span data-ttu-id="3d8d3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="920bf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="920bf-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d8d3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3d8d3-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,39 +36,39 @@ ms.locfileid: "36002011"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="920bf-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="920bf-118">Request headers</span></span>
-|<span data-ttu-id="920bf-119">标头</span><span class="sxs-lookup"><span data-stu-id="920bf-119">Header</span></span>|<span data-ttu-id="920bf-120">值</span><span class="sxs-lookup"><span data-stu-id="920bf-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3d8d3-118">请求头</span><span class="sxs-lookup"><span data-stu-id="3d8d3-118">Request headers</span></span>
+|<span data-ttu-id="3d8d3-119">标头</span><span class="sxs-lookup"><span data-stu-id="3d8d3-119">Header</span></span>|<span data-ttu-id="3d8d3-120">值</span><span class="sxs-lookup"><span data-stu-id="3d8d3-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="920bf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="920bf-121">Authorization</span></span>|<span data-ttu-id="920bf-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="920bf-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="920bf-123">接受</span><span class="sxs-lookup"><span data-stu-id="920bf-123">Accept</span></span>|<span data-ttu-id="920bf-124">application/json</span><span class="sxs-lookup"><span data-stu-id="920bf-124">application/json</span></span>|
+|<span data-ttu-id="3d8d3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d8d3-121">Authorization</span></span>|<span data-ttu-id="3d8d3-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3d8d3-123">接受</span><span class="sxs-lookup"><span data-stu-id="3d8d3-123">Accept</span></span>|<span data-ttu-id="3d8d3-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3d8d3-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="920bf-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="920bf-125">Request body</span></span>
-<span data-ttu-id="920bf-126">在请求正文中，提供 mobileAppContentFile 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="920bf-126">In the request body, supply a JSON representation for the mobileAppContentFile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d8d3-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="3d8d3-125">Request body</span></span>
+<span data-ttu-id="3d8d3-126">在请求正文中，提供 mobileAppContentFile 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-126">In the request body, supply a JSON representation for the mobileAppContentFile object.</span></span>
 
-<span data-ttu-id="920bf-127">下表显示了创建 mobileAppContentFile 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="920bf-127">The following table shows the properties that are required when you create the mobileAppContentFile.</span></span>
+<span data-ttu-id="3d8d3-127">下表显示了创建 mobileAppContentFile 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-127">The following table shows the properties that are required when you create the mobileAppContentFile.</span></span>
 
-|<span data-ttu-id="920bf-128">属性</span><span class="sxs-lookup"><span data-stu-id="920bf-128">Property</span></span>|<span data-ttu-id="920bf-129">类型</span><span class="sxs-lookup"><span data-stu-id="920bf-129">Type</span></span>|<span data-ttu-id="920bf-130">说明</span><span class="sxs-lookup"><span data-stu-id="920bf-130">Description</span></span>|
+|<span data-ttu-id="3d8d3-128">属性</span><span class="sxs-lookup"><span data-stu-id="3d8d3-128">Property</span></span>|<span data-ttu-id="3d8d3-129">类型</span><span class="sxs-lookup"><span data-stu-id="3d8d3-129">Type</span></span>|<span data-ttu-id="3d8d3-130">说明</span><span class="sxs-lookup"><span data-stu-id="3d8d3-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="920bf-131">azureStorageUri</span><span class="sxs-lookup"><span data-stu-id="920bf-131">azureStorageUri</span></span>|<span data-ttu-id="920bf-132">String</span><span class="sxs-lookup"><span data-stu-id="920bf-132">String</span></span>|<span data-ttu-id="920bf-133">Azure 存储 URI。</span><span class="sxs-lookup"><span data-stu-id="920bf-133">The Azure Storage URI.</span></span>|
-|<span data-ttu-id="920bf-134">isCommitted</span><span class="sxs-lookup"><span data-stu-id="920bf-134">isCommitted</span></span>|<span data-ttu-id="920bf-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="920bf-135">Boolean</span></span>|<span data-ttu-id="920bf-136">指示文件是否已提交的值。</span><span class="sxs-lookup"><span data-stu-id="920bf-136">A value indicating whether the file is committed.</span></span>|
-|<span data-ttu-id="920bf-137">id</span><span class="sxs-lookup"><span data-stu-id="920bf-137">id</span></span>|<span data-ttu-id="920bf-138">String</span><span class="sxs-lookup"><span data-stu-id="920bf-138">String</span></span>|<span data-ttu-id="920bf-139">文件 ID。</span><span class="sxs-lookup"><span data-stu-id="920bf-139">The File Id.</span></span>|
-|<span data-ttu-id="920bf-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="920bf-140">createdDateTime</span></span>|<span data-ttu-id="920bf-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="920bf-141">DateTimeOffset</span></span>|<span data-ttu-id="920bf-142">创建文件的时间。</span><span class="sxs-lookup"><span data-stu-id="920bf-142">The time the file was created.</span></span>|
-|<span data-ttu-id="920bf-143">name</span><span class="sxs-lookup"><span data-stu-id="920bf-143">name</span></span>|<span data-ttu-id="920bf-144">String</span><span class="sxs-lookup"><span data-stu-id="920bf-144">String</span></span>|<span data-ttu-id="920bf-145">文件名称。</span><span class="sxs-lookup"><span data-stu-id="920bf-145">the file name.</span></span>|
-|<span data-ttu-id="920bf-146">size</span><span class="sxs-lookup"><span data-stu-id="920bf-146">size</span></span>|<span data-ttu-id="920bf-147">Int64</span><span class="sxs-lookup"><span data-stu-id="920bf-147">Int64</span></span>|<span data-ttu-id="920bf-148">加密前的文件大小。</span><span class="sxs-lookup"><span data-stu-id="920bf-148">The size of the file prior to encryption.</span></span>|
-|<span data-ttu-id="920bf-149">sizeEncrypted</span><span class="sxs-lookup"><span data-stu-id="920bf-149">sizeEncrypted</span></span>|<span data-ttu-id="920bf-150">Int64</span><span class="sxs-lookup"><span data-stu-id="920bf-150">Int64</span></span>|<span data-ttu-id="920bf-151">加密后的文件大小。</span><span class="sxs-lookup"><span data-stu-id="920bf-151">The size of the file after encryption.</span></span>|
-|<span data-ttu-id="920bf-152">azureStorageUriExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="920bf-152">azureStorageUriExpirationDateTime</span></span>|<span data-ttu-id="920bf-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="920bf-153">DateTimeOffset</span></span>|<span data-ttu-id="920bf-154">Azure 存储 URI 的到期时间。</span><span class="sxs-lookup"><span data-stu-id="920bf-154">The time the Azure storage Uri expires.</span></span>|
-|<span data-ttu-id="920bf-155">manifest</span><span class="sxs-lookup"><span data-stu-id="920bf-155">manifest</span></span>|<span data-ttu-id="920bf-156">Binary</span><span class="sxs-lookup"><span data-stu-id="920bf-156">Binary</span></span>|<span data-ttu-id="920bf-157">清单信息。</span><span class="sxs-lookup"><span data-stu-id="920bf-157">The manifest information.</span></span>|
-|<span data-ttu-id="920bf-158">uploadState</span><span class="sxs-lookup"><span data-stu-id="920bf-158">uploadState</span></span>|[<span data-ttu-id="920bf-159">mobileAppContentFileUploadState</span><span class="sxs-lookup"><span data-stu-id="920bf-159">mobileAppContentFileUploadState</span></span>](../resources/intune-apps-mobileappcontentfileuploadstate.md)|<span data-ttu-id="920bf-160">当前上传请求的状态。</span><span class="sxs-lookup"><span data-stu-id="920bf-160">The state of the current upload request.</span></span> <span data-ttu-id="920bf-161">可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。</span><span class="sxs-lookup"><span data-stu-id="920bf-161">Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.</span></span>|
+|<span data-ttu-id="3d8d3-131">azureStorageUri</span><span class="sxs-lookup"><span data-stu-id="3d8d3-131">azureStorageUri</span></span>|<span data-ttu-id="3d8d3-132">String</span><span class="sxs-lookup"><span data-stu-id="3d8d3-132">String</span></span>|<span data-ttu-id="3d8d3-133">Azure 存储 URI。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-133">The Azure Storage URI.</span></span>|
+|<span data-ttu-id="3d8d3-134">isCommitted</span><span class="sxs-lookup"><span data-stu-id="3d8d3-134">isCommitted</span></span>|<span data-ttu-id="3d8d3-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="3d8d3-135">Boolean</span></span>|<span data-ttu-id="3d8d3-136">指示文件是否已提交的值。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-136">A value indicating whether the file is committed.</span></span>|
+|<span data-ttu-id="3d8d3-137">id</span><span class="sxs-lookup"><span data-stu-id="3d8d3-137">id</span></span>|<span data-ttu-id="3d8d3-138">String</span><span class="sxs-lookup"><span data-stu-id="3d8d3-138">String</span></span>|<span data-ttu-id="3d8d3-139">文件 ID。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-139">The File Id.</span></span>|
+|<span data-ttu-id="3d8d3-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="3d8d3-140">createdDateTime</span></span>|<span data-ttu-id="3d8d3-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3d8d3-141">DateTimeOffset</span></span>|<span data-ttu-id="3d8d3-142">创建文件的时间。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-142">The time the file was created.</span></span>|
+|<span data-ttu-id="3d8d3-143">name</span><span class="sxs-lookup"><span data-stu-id="3d8d3-143">name</span></span>|<span data-ttu-id="3d8d3-144">String</span><span class="sxs-lookup"><span data-stu-id="3d8d3-144">String</span></span>|<span data-ttu-id="3d8d3-145">文件名称。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-145">the file name.</span></span>|
+|<span data-ttu-id="3d8d3-146">size</span><span class="sxs-lookup"><span data-stu-id="3d8d3-146">size</span></span>|<span data-ttu-id="3d8d3-147">Int64</span><span class="sxs-lookup"><span data-stu-id="3d8d3-147">Int64</span></span>|<span data-ttu-id="3d8d3-148">加密前的文件大小。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-148">The size of the file prior to encryption.</span></span>|
+|<span data-ttu-id="3d8d3-149">sizeEncrypted</span><span class="sxs-lookup"><span data-stu-id="3d8d3-149">sizeEncrypted</span></span>|<span data-ttu-id="3d8d3-150">Int64</span><span class="sxs-lookup"><span data-stu-id="3d8d3-150">Int64</span></span>|<span data-ttu-id="3d8d3-151">加密后的文件大小。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-151">The size of the file after encryption.</span></span>|
+|<span data-ttu-id="3d8d3-152">azureStorageUriExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="3d8d3-152">azureStorageUriExpirationDateTime</span></span>|<span data-ttu-id="3d8d3-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3d8d3-153">DateTimeOffset</span></span>|<span data-ttu-id="3d8d3-154">Azure 存储 URI 的到期时间。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-154">The time the Azure storage Uri expires.</span></span>|
+|<span data-ttu-id="3d8d3-155">manifest</span><span class="sxs-lookup"><span data-stu-id="3d8d3-155">manifest</span></span>|<span data-ttu-id="3d8d3-156">Binary</span><span class="sxs-lookup"><span data-stu-id="3d8d3-156">Binary</span></span>|<span data-ttu-id="3d8d3-157">清单信息。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-157">The manifest information.</span></span>|
+|<span data-ttu-id="3d8d3-158">uploadState</span><span class="sxs-lookup"><span data-stu-id="3d8d3-158">uploadState</span></span>|[<span data-ttu-id="3d8d3-159">mobileAppContentFileUploadState</span><span class="sxs-lookup"><span data-stu-id="3d8d3-159">mobileAppContentFileUploadState</span></span>](../resources/intune-apps-mobileappcontentfileuploadstate.md)|<span data-ttu-id="3d8d3-160">当前上传请求的状态。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-160">The state of the current upload request.</span></span> <span data-ttu-id="3d8d3-161">可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-161">Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="920bf-162">响应</span><span class="sxs-lookup"><span data-stu-id="920bf-162">Response</span></span>
-<span data-ttu-id="920bf-163">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="920bf-163">If successful, this method returns a `201 Created` response code and a [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3d8d3-162">响应</span><span class="sxs-lookup"><span data-stu-id="3d8d3-162">Response</span></span>
+<span data-ttu-id="3d8d3-163">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-163">If successful, this method returns a `201 Created` response code and a [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="920bf-164">示例</span><span class="sxs-lookup"><span data-stu-id="920bf-164">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3d8d3-164">示例</span><span class="sxs-lookup"><span data-stu-id="3d8d3-164">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="920bf-165">请求</span><span class="sxs-lookup"><span data-stu-id="920bf-165">Request</span></span>
-<span data-ttu-id="920bf-166">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="920bf-166">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3d8d3-165">请求</span><span class="sxs-lookup"><span data-stu-id="3d8d3-165">Request</span></span>
+<span data-ttu-id="3d8d3-166">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-166">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 342
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="920bf-167">响应</span><span class="sxs-lookup"><span data-stu-id="920bf-167">Response</span></span>
-<span data-ttu-id="920bf-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="920bf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3d8d3-167">响应</span><span class="sxs-lookup"><span data-stu-id="3d8d3-167">Response</span></span>
+<span data-ttu-id="3d8d3-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3d8d3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -108,6 +108,7 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
 
 
 
