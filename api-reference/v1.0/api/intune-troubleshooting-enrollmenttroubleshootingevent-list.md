@@ -1,20 +1,20 @@
 ---
 title: 列出 enrollmentTroubleshootingEvents
 description: 列出 enrollmentTroubleshootingEvent 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dd03acd651a4a54891a2f5245cff32e1ae308fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d8096866bdb3c9d1a5d832533a821b420abfd9f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023235"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361033"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>列出 enrollmentTroubleshootingEvents
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36023235"
 GET /deviceManagement/troubleshootingEvents
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -82,6 +82,7 @@ Content-Length: 639
   ]
 }
 ```
+
 
 
 

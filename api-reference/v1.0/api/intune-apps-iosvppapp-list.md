@@ -1,20 +1,20 @@
 ---
 title: 列出 iosVppApps
 description: 列出 iosVppApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 605f41f7c498c639417865e721450f949eb79edb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 591bb5baa09392916b2b1b7d3a463a5446862dce
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014219"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355524"
 ---
 # <a name="list-iosvppapps"></a>列出 iosVppApps
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36014219"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -107,6 +107,7 @@ Content-Length: 1575
   ]
 }
 ```
+
 
 
 

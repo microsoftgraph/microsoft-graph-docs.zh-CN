@@ -1,20 +1,20 @@
 ---
 title: 获取 enrollmentTroubleshootingEvent
 description: 读取 enrollmentTroubleshootingEvent 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6686db8c7be23805849542b03ad93392451943d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65b6c0f81afbc74bb99093671f67b59c77726b0c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025664"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361047"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>获取 enrollmentTroubleshootingEvent
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) 对象的属性和关系。
 
@@ -83,6 +83,7 @@ Content-Length: 601
   }
 }
 ```
+
 
 
 

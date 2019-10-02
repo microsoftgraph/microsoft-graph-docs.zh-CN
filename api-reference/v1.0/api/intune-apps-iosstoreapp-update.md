@@ -1,16 +1,16 @@
 ---
 title: 更新 iosStoreApp
 description: 更新 iosStoreApp 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef476d7ad03eb73358b16b75d5e5f5617c7ea0ce
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 69b407288c0005747fe27e077bfc7dfcf0477e4a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196173"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355559"
 ---
 # <a name="update-iosstoreapp"></a>更新 iosStoreApp
 
@@ -36,7 +36,7 @@ ms.locfileid: "37196173"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -163,6 +163,7 @@ Content-Length: 1198
   }
 }
 ```
+
 
 
 
