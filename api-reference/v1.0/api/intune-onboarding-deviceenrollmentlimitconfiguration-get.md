@@ -1,20 +1,20 @@
 ---
 title: 获取 deviceEnrollmentLimitConfiguration
 description: 读取 deviceEnrollmentLimitConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 188e231f2bdc06cfb15ccae13804a197bd8269dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8aa1f53338f025da4a2e4f82def73c19adf3adef
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017999"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362665"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>获取 deviceEnrollmentLimitConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的属性和关系。
 
@@ -80,6 +80,7 @@ Content-Length: 414
   }
 }
 ```
+
 
 
 

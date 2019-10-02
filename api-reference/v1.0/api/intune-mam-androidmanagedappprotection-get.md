@@ -1,20 +1,20 @@
 ---
 title: 获取 androidManagedAppProtection
 description: 读取 androidManagedAppProtection 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36f5b08fbccddbef03e6227600b025857965702f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b1a63ea33922e2e4d624e1917adc077f8b201b57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018510"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363988"
 ---
 # <a name="get-androidmanagedappprotection"></a>获取 androidManagedAppProtection
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 对象的属性和关系。
 
@@ -113,6 +113,7 @@ Content-Length: 1967
   }
 }
 ```
+
 
 
 

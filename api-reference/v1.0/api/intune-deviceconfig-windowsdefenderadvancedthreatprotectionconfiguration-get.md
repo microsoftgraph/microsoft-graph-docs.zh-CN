@@ -1,20 +1,20 @@
 ---
 title: 获取 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 读取 windowsDefenderAdvancedThreatProtectionConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 989fbdae22e3b95e208cef8e56f38394fa2e2cbe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 994634d11457859c72d0d8f326d12514bdd1409b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018839"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364919"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>获取 windowsDefenderAdvancedThreatProtectionConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) 对象的属性和关系。
 
@@ -80,6 +80,7 @@ Content-Length: 476
   }
 }
 ```
+
 
 
 

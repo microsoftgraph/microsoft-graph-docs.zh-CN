@@ -1,20 +1,20 @@
 ---
 title: 更新 remoteAssistancePartner
 description: 更新 remoteAssistancePartner 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c98a949a57b0103beff78fe9023e52ea37496036
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6b8059d37714491ee40c28f5c2cc1a67d964196e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023543"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361586"
 ---
 # <a name="update-remoteassistancepartner"></a>更新 remoteAssistancePartner
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36023543"
 PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -94,6 +94,7 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 

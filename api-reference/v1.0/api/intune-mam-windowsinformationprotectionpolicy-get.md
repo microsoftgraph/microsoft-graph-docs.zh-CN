@@ -1,20 +1,20 @@
 ---
 title: 获取 windowsInformationProtectionPolicy
 description: 读取 windowsInformationProtectionPolicy 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cf3651461b4dba94a0f97c16d833f6fbac6b94e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb823005e96df47c95cafc0f268be277a2959373
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020484"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362945"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>获取 windowsInformationProtectionPolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) 对象的属性和关系。
 
@@ -208,6 +208,7 @@ Content-Length: 4870
   }
 }
 ```
+
 
 
 

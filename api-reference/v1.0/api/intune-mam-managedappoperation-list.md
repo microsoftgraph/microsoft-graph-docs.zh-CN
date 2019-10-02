@@ -1,20 +1,20 @@
 ---
 title: 列出 managedAppOperations
 description: 列出 managedAppOperation 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ba781dfe7dbd9cda5cb7fb28f6d848ce658dba2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63dcad25723a1d178620f323c7fd42969ed1158f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018266"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363666"
 ---
 # <a name="list-managedappoperations"></a>列出 managedAppOperations
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018266"
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -76,6 +76,7 @@ Content-Length: 329
   ]
 }
 ```
+
 
 
 

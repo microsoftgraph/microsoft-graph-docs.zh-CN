@@ -1,20 +1,20 @@
 ---
 title: 列出 androidManagedAppProtections
 description: 列出 androidManagedAppProtection 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c5e49fd142ba7b3e71078c7618d59a34ef547ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7aded0ca0ad0cedc33e844e79c9cffe945b48a98
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020757"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363974"
 ---
 # <a name="list-androidmanagedappprotections"></a>列出 androidManagedAppProtections
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36020757"
 GET /deviceAppManagement/androidManagedAppProtections
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -112,6 +112,7 @@ Content-Length: 2065
   ]
 }
 ```
+
 
 
 

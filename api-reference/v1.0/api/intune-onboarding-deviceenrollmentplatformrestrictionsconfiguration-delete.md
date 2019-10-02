@@ -1,20 +1,20 @@
 ---
 title: 删除 deviceEnrollmentPlatformRestrictionsConfiguration
 description: 删除 deviceEnrollmentPlatformRestrictionsConfiguration。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1ac628d8ce2e2e9b1917af6d723d7d07df4f6ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90f2eb3f657d7403c3175a7419ee3d4a0dcdc700
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018013"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362616"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>删除 deviceEnrollmentPlatformRestrictionsConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018013"
 DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

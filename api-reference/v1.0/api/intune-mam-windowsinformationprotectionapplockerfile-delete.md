@@ -1,20 +1,20 @@
 ---
 title: 删除 windowsInformationProtectionAppLockerFile
 description: 删除 windowsInformationProtectionAppLockerFile。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3de2854b6fef0170be64a369e6a6bdc231fd43e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 169e65d68a96dedb5abd41ab7d82f95625df9e34
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020561"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363050"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>删除 windowsInformationProtectionAppLockerFile
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)。
 
@@ -39,7 +39,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

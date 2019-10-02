@@ -1,20 +1,20 @@
 ---
 title: cleanWindowsDevice 操作
 description: 清理 Windows 设备
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: badddae1181f76f919958fc66a186f51a89c2f30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b21b986c3ffeb1338461e7fdffd7829a7eae1348
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996950"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364513"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 清理 Windows 设备
 
@@ -38,7 +38,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/cleanWindowsDevice
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/cleanWindowsDevice
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -78,6 +78,7 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 更新 targetedManagedAppPolicyAssignment
 description: 更新 targetedManagedAppPolicyAssignment 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2beaa0f25b5000eb02fdc4942a63b66e58f8549d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bbe5aa2cbc69870950844245aedc2adda7f4dd64
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018111"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363162"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) 对象的属性。
 
@@ -40,7 +40,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -93,6 +93,7 @@ Content-Length: 223
   }
 }
 ```
+
 
 
 

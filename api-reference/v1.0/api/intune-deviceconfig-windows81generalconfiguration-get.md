@@ -1,20 +1,20 @@
 ---
 title: 获取 windows81GeneralConfiguration
 description: 读取 windows81GeneralConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dec869e420fbb7ab4eefa328760ec05f6ded14e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20d66276d5655e5d723d00b0da77356c924b6cc5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020029"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365101"
 ---
 # <a name="get-windows81generalconfiguration"></a>获取 windows81GeneralConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md) 对象的属性和关系。
 
@@ -111,6 +111,7 @@ Content-Length: 1964
   }
 }
 ```
+
 
 
 

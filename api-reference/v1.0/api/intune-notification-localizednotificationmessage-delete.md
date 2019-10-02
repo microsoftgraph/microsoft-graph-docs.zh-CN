@@ -1,20 +1,20 @@
 ---
 title: 删除 localizedNotificationMessage
 description: 删除 localizedNotificationMessage。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 726c133f3e76cf33306f41daf5c7f981a3469476
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c90c584d9f1f21541d33450be639c3b367151fa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020471"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362910"
 ---
 # <a name="delete-localizednotificationmessage"></a>删除 localizedNotificationMessage
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36020471"
 DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

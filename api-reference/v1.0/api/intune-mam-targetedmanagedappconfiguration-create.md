@@ -1,20 +1,20 @@
 ---
 title: 创建 targetedManagedAppConfiguration
 description: 创建新的 targetedManagedAppConfiguration 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff469f57819db74f62ad0f300ecd13443be346ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28f226fe49161b78cbb092b4a35e4f96b221d6e4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996558"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363295"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>创建 targetedManagedAppConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35996558"
 POST /deviceAppManagement/targetedManagedAppConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -116,6 +116,7 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
 
 
 

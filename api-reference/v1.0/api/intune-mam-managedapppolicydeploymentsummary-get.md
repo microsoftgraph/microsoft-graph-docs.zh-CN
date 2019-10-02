@@ -1,20 +1,20 @@
 ---
 title: 获取 managedAppPolicyDeploymentSummary
 description: 读取 managedAppPolicyDeploymentSummary 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fa2c0210a2eb09a8e348736cefbc143d3c923632
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f8259fe679a01bde637b4315b6d9dba12aec9d8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996733"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363596"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>获取 managedAppPolicyDeploymentSummary
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) 对象的属性和关系。
 
@@ -90,6 +90,7 @@ Content-Length: 688
   }
 }
 ```
+
 
 
 

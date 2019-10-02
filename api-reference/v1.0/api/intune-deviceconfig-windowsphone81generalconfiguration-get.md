@@ -1,20 +1,20 @@
 ---
 title: 获取 windowsPhone81GeneralConfiguration
 description: 读取 windowsPhone81GeneralConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 860ef04cf76b140fcf927ea564a2cb0b2cce6e54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca10e17a67be7ea59c98a7818b788c8e099175d2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997013"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364723"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>获取 windowsPhone81GeneralConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md) 对象的属性和关系。
 
@@ -115,6 +115,7 @@ Content-Length: 1740
   }
 }
 ```
+
 
 
 

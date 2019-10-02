@@ -1,20 +1,20 @@
 ---
 title: 列出 localizedNotificationMessages
 description: 列出 localizedNotificationMessage 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cafe0e84266d03ce4d5d52bf2d9e40af67a3e02
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba70997ad284a068673e4fa034230f29a0bc8851
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018125"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362875"
 ---
 # <a name="list-localizednotificationmessages"></a>列出 localizedNotificationMessages
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018125"
 GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -77,6 +77,7 @@ Content-Length: 374
   ]
 }
 ```
+
 
 
 

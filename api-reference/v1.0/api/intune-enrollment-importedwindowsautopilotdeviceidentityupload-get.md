@@ -1,20 +1,20 @@
 ---
 title: 获取 importedWindowsAutopilotDeviceIdentityUpload
 description: 读取 importedWindowsAutopilotDeviceIdentityUpload 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1673d6109a243fe0fed6edf6c02c7b4edcb36cb4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85932b962164c3e1e075171ce2b0b5cdc0e91730
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018495"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364058"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>获取 importedWindowsAutopilotDeviceIdentityUpload
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象的属性和关系。
 
@@ -49,7 +49,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -75,6 +75,7 @@ Content-Length: 248
   }
 }
 ```
+
 
 
 

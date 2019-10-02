@@ -1,20 +1,20 @@
 ---
 title: 列出 deviceEnrollmentConfigurations
 description: 列出 deviceEnrollmentConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 871032421bd18eab0a622df0449804fa1da82e3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aee07c0ec4e73a5ba7a5be42f5c57d2c2e652126
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018062"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362742"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>列出 deviceEnrollmentConfigurations
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018062"
 GET /deviceManagement/deviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -78,6 +78,7 @@ Content-Length: 422
   ]
 }
 ```
+
 
 
 

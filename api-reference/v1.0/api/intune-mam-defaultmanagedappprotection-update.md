@@ -1,20 +1,20 @@
 ---
 title: 更新 defaultManagedAppProtection
 description: 更新 defaultManagedAppProtection 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbf315956c5fc7c13f61a4d6cdd978c57a074f09
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 05acd765ac848c576fd08eb327bf1a226089f8a7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020726"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363848"
 ---
 # <a name="update-defaultmanagedappprotection"></a>更新 defaultManagedAppProtection
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36020726"
 PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -67,7 +67,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOfflineBeforeWipeIsEnforced|持续时间|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinRequired|Boolean|指示是否需要应用级 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|maximumPinRetries|Int32|在阻止或擦除托管应用之前, 不正确 pin 重试的最大次数。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumPinRetries|Int32|在阻止或擦除托管应用之前，不正确 pin 重试的最大次数。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |simplePinBlocked|Boolean|指示是否阻止 simplePin。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 PIN 所需的最小 PIN 长度。继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 PIN 的字符集。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`numeric`、`alphanumericAndSymbol`。|
@@ -81,16 +81,16 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。 (仅限 iOS)。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
+|appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。 （仅限 iOS）。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
 |screenCaptureBlocked|Boolean|指示是否阻止捕获屏幕。 （仅限 Android）|
 |encryptAppData|Boolean|指示是否应加密托管应用数据。 （仅限 Android）|
-|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|如果启用此设置, 则在启用设备级加密的情况下禁用应用级加密。 （仅限 Android）|
-|minimumRequiredSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 (仅限 iOS)|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|如果启用此设置，则在启用设备级加密的情况下禁用应用级加密。 （仅限 Android）|
+|minimumRequiredSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 （仅限 iOS）|
 |customSettings|[keyValuePair](../resources/intune-mam-keyvaluepair.md) 集合|要发送给受影响用户的一组字符串键和字符串值对，不被此服务改变|
 |deployedAppCount|Int32|当前策略部署到的应用的计数。|
 |minimumRequiredPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早的必需 Android 安全修补程序级别。 （仅限 Android）|
 |minimumWarningPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早推荐 Android 安全修补程序级别。 （仅限 Android）|
-|faceIdBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用 FaceID 代替 PIN。 (仅限 iOS)|
+|faceIdBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用 FaceID 代替 PIN。 （仅限 iOS）|
 
 
 
@@ -219,6 +219,7 @@ Content-Length: 2143
   "faceIdBlocked": true
 }
 ```
+
 
 
 

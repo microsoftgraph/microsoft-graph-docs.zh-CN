@@ -1,20 +1,20 @@
 ---
 title: 获取 managedAppOperation
 description: 读取 managedAppOperation 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4eb5b1458ee065b473d688c756e6146360c372ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 99f3e74a8f0f8f4cae14af9687c4f5161573b1b1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996761"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363680"
 ---
 # <a name="get-managedappoperation"></a>获取 managedAppOperation
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性和关系。
 
@@ -77,6 +77,7 @@ Content-Length: 303
   }
 }
 ```
+
 
 
 

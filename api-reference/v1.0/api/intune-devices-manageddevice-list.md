@@ -1,20 +1,20 @@
 ---
 title: 列出 managedDevices
 description: 列出 managedDevice 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 528a1242374f721bd690005470155b0f3bb68b24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b08c3aeb372817760b79e75c4348c7a15bdeae32
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018685"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364401"
 ---
 # <a name="list-manageddevices"></a>列出 managedDevices
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。
 
@@ -38,7 +38,7 @@ GET /deviceManagement/managedDevices
 GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -170,6 +170,7 @@ Content-Length: 5130
   ]
 }
 ```
+
 
 
 

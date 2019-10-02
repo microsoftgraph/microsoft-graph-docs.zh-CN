@@ -1,20 +1,20 @@
 ---
 title: downloadApplePushNotificationCertificateSigningRequest 函数
 description: 下载 Apple 推送通知证书签名请求
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c532c55386a25b23ca3cdc218a936b9f8e84adf6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3792a24a8c9868ab8b26e5493725f5929b888a2d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997006"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364632"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 函数
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 下载 Apple 推送通知证书签名请求
 
@@ -36,7 +36,7 @@ ms.locfileid: "35997006"
 GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -46,7 +46,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此函数会在`200 OK`响应正文中返回响应代码和字符串。
+如果成功，此函数会在`200 OK`响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -67,6 +67,7 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
+
 
 
 

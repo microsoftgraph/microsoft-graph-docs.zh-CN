@@ -1,20 +1,20 @@
 ---
 title: 更新 windowsPhone81CompliancePolicy
 description: 更新 windowsPhone81CompliancePolicy 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47d047d19a9e0cbf8bbed7d3d90d6b419a16f9e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4f813941f6595dae8a990511dccfd916cfdd052e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018790"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364905"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>更新 windowsPhone81CompliancePolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018790"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -128,6 +128,7 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

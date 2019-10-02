@@ -1,20 +1,20 @@
 ---
 title: 创建 importedWindowsAutopilotDeviceIdentityUpload
 description: 创建新的 importedWindowsAutopilotDeviceIdentityUpload 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6449402db0af2a79cbeddd22468adbf5592cb6ce
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00866c4648377e66cc56887af2ac4398d31b733f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020869"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364079"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>创建 importedWindowsAutopilotDeviceIdentityUpload
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象。
 
@@ -36,14 +36,14 @@ ms.locfileid: "36020869"
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 importedWindowsAutopilotDeviceIdentityUpload 对象的 JSON 表示形式。
+在请求正文中，提供 importedWindowsAutopilotDeviceIdentityUpload 对象的 JSON 表示形式。
 
 下表显示创建 importedWindowsAutopilotDeviceIdentityUpload 时所需的属性。
 
@@ -56,7 +56,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -88,6 +88,7 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
 
 
 

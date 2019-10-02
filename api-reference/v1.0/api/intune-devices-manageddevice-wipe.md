@@ -1,20 +1,20 @@
 ---
 title: wipe 操作
 description: 擦除设备
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d9bf6cfae1182bf9e63317db09843b86ee1a42c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56d29523f42f1948548bc9a3c16fd988a32ae6c4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020876"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364226"
 ---
 # <a name="wipe-action"></a>擦除操作
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 擦除设备
 
@@ -38,7 +38,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/wipe
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -82,6 +82,7 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

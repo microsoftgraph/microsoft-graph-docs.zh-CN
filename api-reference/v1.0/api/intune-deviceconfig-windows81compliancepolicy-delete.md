@@ -1,20 +1,20 @@
 ---
 title: 删除 windows81CompliancePolicy
 description: 删除 windows81CompliancePolicy。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 533fc3f37250efa4b07c852b7386dda26ea7f484
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 949e4817c540433a62d277ede3fceb0252bf97e1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997167"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365108"
 ---
 # <a name="delete-windows81compliancepolicy"></a>删除 windows81CompliancePolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35997167"
 DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

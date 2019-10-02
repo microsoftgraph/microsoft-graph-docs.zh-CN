@@ -1,20 +1,20 @@
 ---
 title: 列出 windowsUpdateForBusinessConfigurations
 description: 列出 windowsUpdateForBusinessConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e3c07844a579ddbd87e9672f2cce8c3b67cf649
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa81636535a0754409a242b3868ddd7bf4301427
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021100"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364667"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>列出 windowsUpdateForBusinessConfigurations
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36021100"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -94,6 +94,7 @@ Content-Length: 1211
   ]
 }
 ```
+
 
 
 

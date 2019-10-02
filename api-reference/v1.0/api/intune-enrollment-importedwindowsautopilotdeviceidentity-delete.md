@@ -1,20 +1,20 @@
 ---
 title: 删除 importedWindowsAutopilotDeviceIdentity
 description: 删除importedWindowsAutopilotDeviceIdentity。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b30ec15f4111fa4d34b97c84617df5428ab9ff18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03784177e47c7849d10f43788377b8094aa313f8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996880"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364149"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>删除 importedWindowsAutopilotDeviceIdentity
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)。
 
@@ -37,7 +37,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindo
 DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

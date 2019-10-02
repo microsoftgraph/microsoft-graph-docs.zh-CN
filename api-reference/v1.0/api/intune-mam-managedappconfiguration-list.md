@@ -1,20 +1,20 @@
 ---
 title: 列出 managedAppConfigurations
 description: 列出 managedAppConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e47a07c28a1a8a135e04767e5e79046549694547
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa6be1c3bcde8e17a89dbd0fe28b9a330ba86002
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018293"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363729"
 ---
 # <a name="list-managedappconfigurations"></a>列出 managedAppConfigurations
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) 对象的属性和关系。
 
@@ -38,7 +38,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appl
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -86,6 +86,7 @@ Content-Length: 592
   ]
 }
 ```
+
 
 
 

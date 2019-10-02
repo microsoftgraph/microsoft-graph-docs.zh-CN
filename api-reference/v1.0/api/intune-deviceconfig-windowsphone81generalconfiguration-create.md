@@ -1,20 +1,20 @@
 ---
 title: 创建 windowsPhone81GeneralConfiguration
 description: 创建新的 windowsPhone81GeneralConfiguration 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29885620b5d7303fa10a8f335b45d28db220a364
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1de8e06cbc1060a1735c3640d5b440aae80bba0e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997020"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364786"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>创建 windowsPhone81GeneralConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35997020"
 POST /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -198,6 +198,7 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
 
 
 

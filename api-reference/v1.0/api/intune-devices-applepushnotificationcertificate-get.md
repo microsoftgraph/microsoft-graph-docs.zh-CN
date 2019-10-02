@@ -1,20 +1,20 @@
 ---
 title: 获取 applePushNotificationCertificate
 description: 读取 applePushNotificationCertificate 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58ae689c1fdc4e2d337cca10ca1cd4a4ccc1209a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e133dbd6d05ee9412f5eee82d7025525ae9d9d52
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021051"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364611"
 ---
 # <a name="get-applepushnotificationcertificate"></a>获取 applePushNotificationCertificate
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性和关系。
 
@@ -78,6 +78,7 @@ Content-Length: 417
   }
 }
 ```
+
 
 
 

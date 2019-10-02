@@ -1,20 +1,20 @@
 ---
 title: 获取 iosManagedAppProtection
 description: 读取 iosManagedAppProtection 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a7694394e70a19f2470a84d4efa215304ee87d3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 73157875c8ace9f954a30dc3ae0070eb53e0b637
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996817"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363806"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) 对象的属性和关系。
 
@@ -111,6 +111,7 @@ Content-Length: 1839
   }
 }
 ```
+
 
 
 

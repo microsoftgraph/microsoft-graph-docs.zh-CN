@@ -1,20 +1,20 @@
 ---
 title: 删除 managedAppOperation
 description: 删除 managedAppOperation。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c51fe1fc2afe4865afd6baecb93718b6765cef8e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f9d4fe13fda77856836ae7992ab2507917fec32
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018300"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363694"
 ---
 # <a name="delete-managedappoperation"></a>删除 managedAppOperation
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [managedAppOperation](../resources/intune-mam-managedappoperation.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018300"
 DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

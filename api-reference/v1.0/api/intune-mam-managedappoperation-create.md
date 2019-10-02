@@ -1,20 +1,20 @@
 ---
 title: 创建 managedAppOperation
 description: 创建新的 managedAppOperation 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f44e085da304958fa67eef4f8ce566be1245e12
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 840f9c08990107b25da6d6be1cce024f2f0f7f7e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996782"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363708"
 ---
 # <a name="create-managedappoperation"></a>创建 managedAppOperation
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35996782"
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -93,6 +93,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

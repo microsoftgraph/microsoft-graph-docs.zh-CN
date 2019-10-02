@@ -1,20 +1,20 @@
 ---
 title: 列出 importedWindowsAutopilotDeviceIdentityUploads
 description: 列出 importedWindowsAutopilotDeviceIdentityUpload 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e7ad709ae54ec05943d3da20ae8e263a61b791d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6e45f340cc1ce23e08a56418f583a64758ebcaf4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020842"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364037"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>列出 importedWindowsAutopilotDeviceIdentityUploads
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36020842"
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -46,7 +46,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -74,6 +74,7 @@ Content-Length: 270
   ]
 }
 ```
+
 
 
 

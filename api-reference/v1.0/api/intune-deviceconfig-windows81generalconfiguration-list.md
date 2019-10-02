@@ -1,20 +1,20 @@
 ---
 title: 列出 windows81GeneralConfigurations
 description: 列出 windows81GeneralConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bbb9a417db42dff48457a16626698bf8f6985a79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c51ab3c07c5cb337ed608315453d5f47c6571b3b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997111"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365080"
 ---
 # <a name="list-windows81generalconfigurations"></a>列出 windows81GeneralConfigurations
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35997111"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -110,6 +110,7 @@ Content-Length: 2058
   ]
 }
 ```
+
 
 
 

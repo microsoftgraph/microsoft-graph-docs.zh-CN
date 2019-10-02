@@ -1,20 +1,20 @@
 ---
 title: 更新 localizedNotificationMessage
 description: 更新 localizedNotificationMessage 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c7b031ec6ff7007e459715d01a932970a5ceaa8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d5de9a9daf6f41ff24f92f9175bda62d7a81f6b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974778"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362889"
 ---
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35974778"
 PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -96,6 +96,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 
