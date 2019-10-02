@@ -1,20 +1,20 @@
 ---
 title: 删除 iosUpdateDeviceStatus
 description: 删除 iosUpdateDeviceStatus。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49eb8330028f3ffbdafced80e01ad1397182b98a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 447916fff94652120a7cedce7859ba101388a56b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017187"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366186"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>删除 iosUpdateDeviceStatus
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36017187"
 DELETE /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/iosUpdateStatuses/{iosU
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

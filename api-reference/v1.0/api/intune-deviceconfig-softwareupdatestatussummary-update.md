@@ -1,20 +1,20 @@
 ---
 title: 更新 softwareUpdateStatusSummary
 description: 更新 softwareUpdateStatusSummary 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 619208625337a48d11354b41629738a86c873f44
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f19fec8c7d3a00bc187455f0f39128bc5095475d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017026"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365703"
 ---
 # <a name="update-softwareupdatestatussummary"></a>更新 softwareUpdateStatusSummary
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36017026"
 PATCH /deviceManagement/softwareUpdateStatusSummary
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -127,6 +127,7 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
 
 
 

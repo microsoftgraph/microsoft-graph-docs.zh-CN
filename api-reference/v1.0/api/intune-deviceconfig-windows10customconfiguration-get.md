@@ -1,20 +1,20 @@
 ---
 title: 获取 windows10CustomConfiguration
 description: 读取 windows10CustomConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e1cce21eabd2ca82ceb73a22aae136916312c7a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c306cc7216f8f4b7a61c52f5f3cc14c2c76f70da
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016907"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365584"
 ---
 # <a name="get-windows10customconfiguration"></a>获取 windows10CustomConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md) 对象的属性和关系。
 
@@ -87,6 +87,7 @@ Content-Length: 627
   }
 }
 ```
+
 
 
 
