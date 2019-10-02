@@ -1,20 +1,20 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity 资源类型
 description: 导入 Windows AutoPilot 的设备。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 546c887a1520e94ac957376f5472d514b63fb12f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48d7df1d125e5d5494c588ec92e0d2c73a4f317e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030630"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356840"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 导入 Windows AutoPilot 的设备。
 
@@ -65,6 +65,7 @@ ms.locfileid: "36030630"
   }
 }
 ```
+
 
 
 
