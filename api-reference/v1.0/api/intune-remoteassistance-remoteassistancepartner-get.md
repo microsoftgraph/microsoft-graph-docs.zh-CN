@@ -1,20 +1,20 @@
 ---
 title: 获取 remoteAssistancePartner
 description: 读取 remoteAssistancePartner 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0cd11f4b5c6fd2a1ecbe765997139d7d71b4b96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6070c52c5b0df54f1f01c91c22d690e0111565bd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023571"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361614"
 ---
 # <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。
 
@@ -77,6 +77,7 @@ Content-Length: 346
   }
 }
 ```
+
 
 
 

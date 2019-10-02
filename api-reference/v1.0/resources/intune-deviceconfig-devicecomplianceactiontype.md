@@ -1,20 +1,20 @@
 ---
 title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cea72fa6e48699e540a43ea3938986e19ed351d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b729386eeb76197ed426163d1882afc6aec836a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028516"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359654"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 计划操作类型枚举
 
@@ -28,6 +28,7 @@ ms.locfileid: "36028516"
 |擦|4|擦除设备|
 |removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
 |pushNotification|第|将推送通知发送到设备|
+
 
 
 

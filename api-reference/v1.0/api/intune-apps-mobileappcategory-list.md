@@ -1,20 +1,20 @@
 ---
 title: 列出 mobileAppCategories
 description: 列出 mobileAppCategory 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd5a61ee12327af1566878fb303c32ec35c0acca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1a70291d0004817089b9099c7f19cde44a1f4641
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013708"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358296"
 ---
 # <a name="list-mobileappcategories"></a>列出 mobileAppCategories
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 对象的属性和关系。
 
@@ -37,7 +37,7 @@ GET /deviceAppManagement/mobileAppCategories
 GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -75,6 +75,7 @@ Content-Length: 261
   ]
 }
 ```
+
 
 
 

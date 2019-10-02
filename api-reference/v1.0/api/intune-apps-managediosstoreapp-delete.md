@@ -1,16 +1,16 @@
 ---
 title: 删除 managedIOSStoreApp
 description: 删除 managedIOSStoreApp
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e0ad727056722bb0cfb5f0d33abe0eccdb0a5f2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bdf92994dbf92ca82be68fd1ff4f53b0a91bcb57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196110"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358436"
 ---
 # <a name="delete-managediosstoreapp"></a>删除 managedIOSStoreApp
 
@@ -36,7 +36,7 @@ ms.locfileid: "37196110"
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

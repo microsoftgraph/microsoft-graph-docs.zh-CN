@@ -1,20 +1,20 @@
 ---
 title: applePushNotificationCertificate 资源类型
 description: Apple 推送通知证书。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c56f78a596d08037ca68a96bf9cc5aca5fbf148
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 511e70f2ccbb5c79f3b00e0027a62dd9542f0669
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027501"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357071"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Apple 推送通知证书。
 
@@ -57,6 +57,7 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
+
 
 
 

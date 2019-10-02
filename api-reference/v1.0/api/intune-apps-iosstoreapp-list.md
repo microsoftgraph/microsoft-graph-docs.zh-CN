@@ -1,16 +1,16 @@
 ---
 title: 列出 iosStoreApps
 description: 列出 iosStoreApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0a324030d072231ed398d98da6541691a16d4e9
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1f481ad15e46b4a43e1a2133ccf241bd43fdb3c0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196180"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358835"
 ---
 # <a name="list-iosstoreapps"></a>列出 iosStoreApps
 
@@ -36,7 +36,7 @@ ms.locfileid: "37196180"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -105,6 +105,7 @@ Content-Length: 1371
   ]
 }
 ```
+
 
 
 

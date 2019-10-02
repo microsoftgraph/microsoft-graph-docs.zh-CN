@@ -1,20 +1,20 @@
 ---
 title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c50ed17421b88f2cb6137458ff853bfa92796c2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47bbca9073765b5f7a09827b5b1eecb44ba81b6e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031666"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359486"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 给定设备的设备配置设置状态。
 
@@ -67,6 +67,7 @@ ms.locfileid: "36031666"
   "currentValue": "String"
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 创建 androidCustomConfiguration
 description: 创建新的 androidCustomConfiguration 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0c56b8d52dcb7ea7a50c5b74305d9104e044d06
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f43d1f80211825788b06f6d4b893371e2cc96730
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020358"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357631"
 ---
 # <a name="create-androidcustomconfiguration"></a>创建 androidCustomConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36020358"
 POST /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -114,6 +114,7 @@ Content-Length: 574
   ]
 }
 ```
+
 
 
 

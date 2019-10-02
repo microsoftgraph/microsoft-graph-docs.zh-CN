@@ -1,20 +1,20 @@
 ---
 title: 列出 vppTokens
 description: 列出 vppToken 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1441d870806e40b5cacd5c31e24c51aee903353e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bd0571ba6c89ae3ad6396ed11142842fff8aff6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023949"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362069"
 ---
 # <a name="list-vpptokens"></a>列出 vppTokens
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36023949"
 GET /deviceAppManagement/vppTokens
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -83,6 +83,7 @@ Content-Length: 659
   ]
 }
 ```
+
 
 
 

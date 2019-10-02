@@ -1,20 +1,20 @@
 ---
 title: windowsDefenderScanActionResult 资源类型
 description: Windows Defender 最后扫描结果
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e9bcf4d45a184ea54a15bedc85efc6fc9bb4073
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ce77c0e034cacf301dfdfa5df96070bd1944160
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027403"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356882"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows Defender 最后扫描结果
 
@@ -50,6 +50,7 @@ Windows Defender 最后扫描结果
   "scanType": "String"
 }
 ```
+
 
 
 

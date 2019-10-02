@@ -1,20 +1,20 @@
 ---
 title: windowsUpdateInstallScheduleType 资源类型
 description: 尚未记录
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01b265d3375fc12d2efb81c899264504adf37182
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3291df9e721e8f0742e3eedcca241ddbcffbf83c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030959"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357120"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>windowsUpdateInstallScheduleType 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -37,6 +37,7 @@ ms.locfileid: "36030959"
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
 
 
 

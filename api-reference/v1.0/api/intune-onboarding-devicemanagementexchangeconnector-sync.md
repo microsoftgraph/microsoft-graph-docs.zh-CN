@@ -1,20 +1,20 @@
 ---
 title: sync 操作
 description: 尚未记录
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cfb392b6849ac66ad163c5641ef0420b7e5dc52a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7b3ced55f3a9ce94af3812538411aa0f283c18e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974687"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362426"
 ---
 # <a name="sync-action"></a>sync 操作
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -36,7 +36,7 @@ ms.locfileid: "35974687"
 POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -76,6 +76,7 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

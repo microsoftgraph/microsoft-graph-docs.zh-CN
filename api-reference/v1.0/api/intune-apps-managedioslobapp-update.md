@@ -1,16 +1,16 @@
 ---
 title: 更新 managedIOSLobApp
 description: 更新 managedIOSLobApp 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d46fdbed2237bd0a10d13dc9eae994287e67907b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b7f76136556effa242009f38d732e98e0b396aba
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196124"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358478"
 ---
 # <a name="update-managedioslobapp"></a>更新 managedIOSLobApp
 
@@ -36,7 +36,7 @@ ms.locfileid: "37196124"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -184,6 +184,7 @@ Content-Length: 1479
   "buildNumber": "Build Number value"
 }
 ```
+
 
 
 

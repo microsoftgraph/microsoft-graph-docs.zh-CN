@@ -1,20 +1,20 @@
 ---
 title: 删除 mobileAppCategory
 description: 删除 mobileAppCategory。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 905d66c307be7bcd31eb1411b5d635e1c9ec3a18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28ba224ce9329c505ed8f12be83e56e586ad60ae
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013750"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358303"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)。
 
@@ -37,7 +37,7 @@ DELETE /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

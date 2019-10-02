@@ -1,20 +1,20 @@
 ---
 title: 创建 managedEBookAssignment
 description: 创建新的 managedEBookAssignment 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae5b68a513b61d7576a7d75ddcec3021da0ee9ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c30894d22f1e901046d30f3605317c2bde890fc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018419"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357883"
 ---
 # <a name="create-managedebookassignment"></a>创建 managedEBookAssignment
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018419"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -92,6 +92,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

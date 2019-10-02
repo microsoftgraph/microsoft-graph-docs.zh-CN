@@ -1,16 +1,16 @@
 ---
 title: Microsoft Intune 中的设备管理
 description: Microsoft Intune 中的设备管理资源
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 476ae4d03fae4653a1465952074f521d6df1123c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 93af3003f76d87bb49fc7b71735ef3b7209d3baf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031974"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360368"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -56,3 +56,4 @@ ms.locfileid: "36031974"
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
 - [Windows 设备 AD 帐户](intune-devices-windowsdeviceadaccount.md)
 - [Windows 设备 Azure AD 帐户](intune-devices-windowsdeviceazureadaccount.md)
+

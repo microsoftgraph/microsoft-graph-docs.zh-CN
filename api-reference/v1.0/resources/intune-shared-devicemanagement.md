@@ -1,22 +1,22 @@
 ---
 title: deviceManagement 资源类型
-description: 'DeviceManagement 资源代表其内容因工作流而异的容器, 包括:  '
+description: 'DeviceManagement 资源代表其内容因工作流而异的容器，包括：  '
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f8ef8fcb3d38ca46ab95e63a92e5f108d8a7782
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a323cc2925b022823289a5fae87832257f50a102
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036944"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360074"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DeviceManagement 资源代表其内容因工作流而异的容器, 包括:  
+DeviceManagement 资源代表其内容因工作流而异的容器，包括：  
 
 - 审核事件  
 - 公司条款和条件   
@@ -26,7 +26,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器, 包括:
 - 注册配置文件  
 - 通知  
 - 载入策略、设置和详细信息  
-- 基于角色的访问控制 (RBAC) 策略  
+- 基于角色的访问控制（RBAC）策略  
 - 远程协助合作伙伴  
 - 电信 expanse 管理合作伙伴  
 - 疑难解答事件  
@@ -118,6 +118,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器, 包括:
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
 
 
 

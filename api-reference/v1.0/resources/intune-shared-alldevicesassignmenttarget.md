@@ -1,20 +1,20 @@
 ---
 title: allDevicesAssignmentTarget 资源类型
 description: 表示租户中所有托管设备的赋值。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94fe9094af7f4006639b204e08e68cfd919fc597
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ee1cad379cf9958572ad3ba67c0fd9b425952a6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037056"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360549"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示租户中所有托管设备的赋值。
 
@@ -40,6 +40,7 @@ ms.locfileid: "36037056"
   "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
 }
 ```
+
 
 
 

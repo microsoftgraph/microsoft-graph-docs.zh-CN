@@ -1,20 +1,20 @@
 ---
 title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8fc3604329a5062a8fe1afb90c2ac64f52f0bed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15fca0cedc6fe1da81da25688bbc447c1f8f475f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036832"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360102"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 Azure Active Directory 用户对象。
 
@@ -74,3 +74,4 @@ ms.locfileid: "36036832"
     "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
   ]
 }-->
+

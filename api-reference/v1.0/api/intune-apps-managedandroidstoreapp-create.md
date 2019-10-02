@@ -1,20 +1,20 @@
 ---
 title: 创建 managedAndroidStoreApp
 description: 创建新的 managedAndroidStoreApp 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c25d04f87b73771c03864f7ee485a46a5c00b4e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d8b5e665fdfc189e58f94e48561cc3551a25ccf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014120"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358709"
 ---
 # <a name="create-managedandroidstoreapp"></a>创建 managedAndroidStoreApp
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36014120"
 POST /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -162,6 +162,7 @@ Content-Length: 1188
   }
 }
 ```
+
 
 
 

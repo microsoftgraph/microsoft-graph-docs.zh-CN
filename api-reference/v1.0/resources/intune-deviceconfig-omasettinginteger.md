@@ -1,20 +1,20 @@
 ---
 title: omaSettingInteger 资源类型
 description: OMA 设置整数定义。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f80f8583907a25646643fdd5770d6bce5adcb4b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85eeeff4cc9ac897416e587aa5d26be79b59bb59
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028019"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359899"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 OMA 设置整数定义。
 
@@ -48,6 +48,7 @@ OMA 设置整数定义。
   "value": 1024
 }
 ```
+
 
 
 

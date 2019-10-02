@@ -1,20 +1,20 @@
 ---
 title: mediaContentRatingCanada 资源类型
 description: 尚未记录
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9735497f3f2f71f28b8fe9847d2664bd4e65e959
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84f54697d5c6a05f03c28b70e7d6250fa5dd0e46
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028110"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360018"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>mediaContentRatingCanada 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -41,6 +41,7 @@ ms.locfileid: "36028110"
   "tvRating": "String"
 }
 ```
+
 
 
 

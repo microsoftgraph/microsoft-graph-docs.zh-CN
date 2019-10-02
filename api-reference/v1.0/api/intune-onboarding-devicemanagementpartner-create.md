@@ -1,20 +1,20 @@
 ---
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb9f5ab46787d0279046a6aad38bc8d701517a94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e14c043bff85677a305d41b2b0b5807fe8c9dfcf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990580"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362398"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35990580"
 POST /deviceManagement/deviceManagementPartners
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -106,6 +106,7 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
 
 
 

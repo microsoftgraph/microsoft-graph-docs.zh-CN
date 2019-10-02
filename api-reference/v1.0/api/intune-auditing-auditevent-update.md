@@ -1,20 +1,20 @@
 ---
 title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc81661d6e117b59050c6f69095bb101a5de90d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2c0d3aa1e92bd8a255deb40ffd95e3e62289dbf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013568"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358016"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36013568"
 PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -169,6 +169,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 

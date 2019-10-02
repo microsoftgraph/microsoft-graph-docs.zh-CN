@@ -1,20 +1,20 @@
 ---
 title: deviceComplianceActionItem 资源类型
 description: 计划的操作配置
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1858996a6d0e41b7dfa8a2a4854a33878e7e13c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4582fe507271e36851a2cb4a14831c390e366a7e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028530"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359689"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 计划的操作配置
 
@@ -59,6 +59,7 @@ ms.locfileid: "36028530"
   ]
 }
 ```
+
 
 
 

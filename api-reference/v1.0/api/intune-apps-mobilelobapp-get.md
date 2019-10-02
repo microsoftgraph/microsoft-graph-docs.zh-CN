@@ -1,20 +1,20 @@
 ---
 title: 获取 mobileLobApp
 description: 读取 mobileLobApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e3d0bc7fff2725cfe8caca66c42f773e7f52d72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e777471e47dcc6a5e47121568f9afb02111e080
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001990"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358184"
 ---
 # <a name="get-mobilelobapp"></a>获取 mobileLobApp
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) 对象的属性和关系。
 
@@ -93,6 +93,7 @@ Content-Length: 925
   }
 }
 ```
+
 
 
 

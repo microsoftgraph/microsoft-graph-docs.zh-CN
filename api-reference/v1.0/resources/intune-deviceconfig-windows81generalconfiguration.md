@@ -1,20 +1,20 @@
 ---
 title: windows81GeneralConfiguration 资源类型
 description: 本主题提供由 windows81GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35238c98ca0f945fb99bae4aa680025dc8a33038
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 688390fda9e93cc088a4e0f3f7f3301381888760
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030980"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357295"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>windows81GeneralConfiguration 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 windows81GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 
@@ -135,6 +135,7 @@ ms.locfileid: "36030980"
   "workFoldersUrl": "String"
 }
 ```
+
 
 
 

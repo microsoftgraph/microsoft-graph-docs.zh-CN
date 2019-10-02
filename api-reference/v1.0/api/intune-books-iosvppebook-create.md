@@ -1,20 +1,20 @@
 ---
 title: 创建 iosVppEBook
 description: 创建新的 iosVppEBook 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 267ee13b37657d18a3123cec15eb3ea88d70a47d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f0fd2540a72b140995c084e47913e3a8719836a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015836"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357953"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36015836"
 POST /deviceAppManagement/managedEBooks
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -143,6 +143,7 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
 
 
 

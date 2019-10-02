@@ -1,20 +1,20 @@
 ---
 title: 组织资源类型
 description: 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: baf50eb876d33c3fdb08f5f4162ce2f0267fa499
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 258e3683b988aa914cd43f2748a07032d72c08e9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037280"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360739"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 组织资源表示在租户级别操作和配置的全局设置和资源的实例。
 
@@ -67,6 +67,7 @@ ms.locfileid: "36037280"
 
 }
 -->
+
 
 
 

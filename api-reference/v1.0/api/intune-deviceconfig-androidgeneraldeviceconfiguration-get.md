@@ -1,20 +1,20 @@
 ---
 title: 获取 androidGeneralDeviceConfiguration
 description: 读取 androidGeneralDeviceConfiguration 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c71d5fe036bbbfae93b52d9d1dba9a1a96d38a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2452d8267c595ea98a40357175e9e95074d082e2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019623"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357575"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>获取 androidGeneralDeviceConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) 对象的属性和关系。
 
@@ -166,6 +166,7 @@ Content-Length: 3414
   }
 }
 ```
+
 
 
 

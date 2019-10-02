@@ -1,16 +1,16 @@
 ---
 title: 列出 managedIOSLobApps
 description: 列出 managedIOSLobApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebf0c7ec0c55e46900357c0c26fe372d214dee5c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d55fd76600baadcf07897396675659679aa5fde4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196131"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358485"
 ---
 # <a name="list-managedioslobapps"></a>列出 managedIOSLobApps
 
@@ -36,7 +36,7 @@ ms.locfileid: "37196131"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -112,6 +112,7 @@ Content-Length: 1680
   ]
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 创建 mobileAppAssignment
 description: 创建新的 mobileAppAssignment 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3329b768e3e2151893b5886ed50d80b212e345f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0bddcba906fe40becc9e3c32a4a2e31dc7277bba
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002067"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358345"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36002067"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -99,6 +99,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

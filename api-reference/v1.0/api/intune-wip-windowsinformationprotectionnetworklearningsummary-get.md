@@ -1,20 +1,20 @@
 ---
 title: 获取 windowsInformationProtectionNetworkLearningSummary
 description: 读取 windowsInformationProtectionNetworkLearningSummary 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc0767ed0e3adca9ee19eca5b7efdfe300b54546
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8420437cbd4eabed7dabdf50b6b0de3fbd4480be
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025601"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360879"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>获取 windowsInformationProtectionNetworkLearningSummary
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) 对象的属性和关系。
 
@@ -75,6 +75,7 @@ Content-Length: 213
   }
 }
 ```
+
 
 
 

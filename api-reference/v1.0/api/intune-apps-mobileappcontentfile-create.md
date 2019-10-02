@@ -1,20 +1,20 @@
 ---
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1423491fcd22901099cf9064a423b1c33a73f428
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002011"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358226"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36002011"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -108,6 +108,7 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
 
 
 

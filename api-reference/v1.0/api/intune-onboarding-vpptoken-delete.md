@@ -1,20 +1,20 @@
 ---
 title: 删除 vppToken
 description: 删除 vppToken。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d08bb46b3ab4ffa3012ad45405cb3e34ccc0b953
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70826066ed489f2e294ef2b173266edacfe7941c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023984"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362132"
 ---
 # <a name="delete-vpptoken"></a>删除 vppToken
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [vppToken](../resources/intune-onboarding-vpptoken.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36023984"
 DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

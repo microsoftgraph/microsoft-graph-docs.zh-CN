@@ -1,20 +1,20 @@
 ---
 title: 创建 androidWorkProfileCustomConfiguration
 description: 创建新的 androidWorkProfileCustomConfiguration 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c70226b876054c5a01edbae3c9d3fee000bfd422
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f3fefdfb311a00bef04a6bb28753d58253393b7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997832"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357561"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>创建 androidWorkProfileCustomConfiguration
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)对象。
 
@@ -36,14 +36,14 @@ ms.locfileid: "35997832"
 POST /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 androidWorkProfileCustomConfiguration 对象的 JSON 表示形式。
+在请求正文中，提供 androidWorkProfileCustomConfiguration 对象的 JSON 表示形式。
 
 下表显示创建 androidWorkProfileCustomConfiguration 时所需的属性。
 
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceConfigurations
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -114,6 +114,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

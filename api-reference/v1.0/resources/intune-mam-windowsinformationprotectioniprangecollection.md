@@ -1,20 +1,20 @@
 ---
 title: windowsInformationProtectionIPRangeCollection 资源类型
 description: Windows 信息保护 IP 范围集合
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9354704c5326e9f92814e06aee9ef12635c0faa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1774a52b6dd5535443bb24dea5e786fc2c8cff34
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037686"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360641"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 信息保护 IP 范围集合
 
@@ -47,6 +47,7 @@ Windows 信息保护 IP 范围集合
   ]
 }
 ```
+
 
 
 

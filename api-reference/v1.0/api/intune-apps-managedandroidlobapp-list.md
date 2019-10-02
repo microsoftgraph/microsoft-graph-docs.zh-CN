@@ -1,20 +1,20 @@
 ---
 title: 列出 managedAndroidLobApps
 description: 列出 managedAndroidLobApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 973966e85480c6b92982424aa4c9a952c78ee674
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ac18f3c3cd3e58041fdef56d40b149e60503af5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014142"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358716"
 ---
 # <a name="list-managedandroidlobapps"></a>列出 managedAndroidLobApps
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36014142"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -108,6 +108,7 @@ Content-Length: 1510
   ]
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 列出 deviceInstallStates
 description: 列出 deviceInstallState 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0d9424edd4e0381b58cd54ad31681e80095665b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b89f50b884a79896c806d49dd93b0eb274b89b6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013603"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358002"
 ---
 # <a name="list-deviceinstallstates"></a>列出 deviceInstallStates
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性和关系。
 
@@ -37,7 +37,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -81,6 +81,7 @@ Content-Length: 496
   ]
 }
 ```
+
 
 
 

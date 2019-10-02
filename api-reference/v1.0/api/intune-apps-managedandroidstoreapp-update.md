@@ -1,20 +1,20 @@
 ---
 title: 更新 managedAndroidStoreApp
 description: 更新 managedAndroidStoreApp 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c12e9365f0f2b74a9d0aa116c0807b25f891cbda
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e5f8fb536da2b8b2898322edd0adfa711be4b655
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014135"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358681"
 ---
 # <a name="update-managedandroidstoreapp"></a>更新 managedAndroidStoreApp
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36014135"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -162,6 +162,7 @@ Content-Length: 1188
   }
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 创建 windowsMobileMSI
 description: 创建新的 windowsMobileMSI 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d153d731a3911f1070a75744f094b4fd3533b4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 99c68dd86d12dc9078149cd5a7fca0e0ac950d3d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001969"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358127"
 ---
 # <a name="create-windowsmobilemsi"></a>创建 windowsMobileMSI
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36001969"
 POST /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -148,6 +148,7 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

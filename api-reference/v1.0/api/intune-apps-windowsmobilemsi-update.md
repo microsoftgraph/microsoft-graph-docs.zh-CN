@@ -1,20 +1,20 @@
 ---
 title: 更新 windowsMobileMSI
 description: 更新 windowsMobileMSI 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f12f9862b6a2e31a36ee14e774193b9b71c1683b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e1d169986ad198c82ea6657e8a5d66a22abc88d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015956"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358093"
 ---
 # <a name="update-windowsmobilemsi"></a>更新 windowsMobileMSI
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36015956"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -148,6 +148,7 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

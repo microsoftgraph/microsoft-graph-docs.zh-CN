@@ -1,20 +1,20 @@
 ---
 title: syncLicenses 操作
 description: 同步与特定 appleVolumePurchaseProgramToken 关联的许可证
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9236cc09ad279668e4d3185785b908144013709b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ccf421c78af50a95829d1af417dbf892bec3b1d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023977"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362055"
 ---
 # <a name="synclicenses-action"></a>syncLicenses 操作
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 同步与特定 appleVolumePurchaseProgramToken 关联的许可证
 
@@ -36,7 +36,7 @@ ms.locfileid: "36023977"
 POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -81,6 +81,7 @@ Content-Length: 619
   }
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: managedAndroidStoreApp 资源类型
 description: 包含可以使用 Intune 应用保护策略管理的 Android 应用商店应用的属性和继承的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2a55ea1efda6ad1cac4307c1a6c962d365be0c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 64d32bf24ae8f0e6d379f2d6b69d97d6cefb2b08
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029076"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360214"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含可以使用 Intune 应用保护策略管理的 Android 应用商店应用的属性和继承的属性。
 
@@ -105,6 +105,7 @@ ms.locfileid: "36029076"
   }
 }
 ```
+
 
 
 

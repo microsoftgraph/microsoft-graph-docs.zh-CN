@@ -1,20 +1,20 @@
 ---
 title: 更新 mobileAppContent
 description: 更新 mobileAppContent 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2718dd551a1d9bf1d5210d3d668e0bd26951c6fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5345724a920ba3b59abf0adcf726ed27eef8e264
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002025"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358247"
 ---
 # <a name="update-mobileappcontent"></a>更新 mobileAppContent
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppContent](../resources/intune-apps-mobileappcontent.md) 对象的属性。
 
@@ -38,7 +38,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.mobileLobApp
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileLobApp/contentVersions/{mobileAppContentId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -84,6 +84,7 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
 
 
 

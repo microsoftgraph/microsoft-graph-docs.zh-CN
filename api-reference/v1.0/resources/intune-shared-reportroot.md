@@ -1,20 +1,20 @@
 ---
 title: reportRoot 资源类型
 description: 表示一个历史记录报告实例的资源。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a8fa8011ad4550ec80acd0b4d6d2159f10647de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9b2f70bb3286b47fb92985ec3055c0d3470fb23
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036860"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360158"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示一个历史记录报告实例的资源。
 
@@ -69,3 +69,4 @@ Content-Type: application/json
 {
 }
 ```
+

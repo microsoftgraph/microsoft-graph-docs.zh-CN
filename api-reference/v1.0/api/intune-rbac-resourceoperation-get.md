@@ -1,20 +1,20 @@
 ---
 title: 获取 resourceOperation
 description: 读取 resourceOperation 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c29d7894a1aabad08321c1c89dd2e7a393234bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 953aecb71c731fe6494311ec51ebef78ebab2abb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023774"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361866"
 ---
 # <a name="get-resourceoperation"></a>获取 resourceOperation
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性和关系。
 
@@ -76,6 +76,7 @@ Content-Length: 256
   }
 }
 ```
+
 
 
 

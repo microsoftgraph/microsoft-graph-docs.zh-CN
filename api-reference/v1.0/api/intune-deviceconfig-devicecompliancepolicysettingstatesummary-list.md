@@ -1,20 +1,20 @@
 ---
 title: 列出 deviceCompliancePolicySettingStateSummaries
 description: 列出 deviceCompliancePolicySettingStateSummary 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 628d6524f188c0c62e8929774fbde9fdba971280
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce4483f20b0bf5a84498055c9e697567a0874eb6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997638"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359745"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>列出 deviceCompliancePolicySettingStateSummaries
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "35997638"
 GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -82,6 +82,7 @@ Content-Length: 521
   ]
 }
 ```
+
 
 
 

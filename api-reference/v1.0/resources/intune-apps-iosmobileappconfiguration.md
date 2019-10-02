@@ -1,20 +1,20 @@
 ---
 title: iosMobileAppConfiguration 资源类型
 description: 包含 iOS 移动应用配置的属性、继承属性和操作。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36be7edc4ce67fb1a662825ee16ece3d71b9d77f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6560e10b0804d9f10a14af11a2516d560c823e16
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029146"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360244"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>iosMobileAppConfiguration 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 移动应用配置的属性、继承属性和操作。
 
@@ -83,6 +83,7 @@ ms.locfileid: "36029146"
   ]
 }
 ```
+
 
 
 

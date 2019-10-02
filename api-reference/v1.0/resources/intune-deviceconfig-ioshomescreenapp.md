@@ -1,20 +1,20 @@
 ---
 title: iosHomeScreenApp 资源类型
 description: 表示主屏幕上应用的图标
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc4e94071e7b81fab82044f65da809f7b17e5b3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83b9c116f31a8f129394e618cf86e3382c1d528a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028215"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359116"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示主屏幕上应用的图标
 
@@ -44,6 +44,7 @@ ms.locfileid: "36028215"
   "bundleID": "String"
 }
 ```
+
 
 
 

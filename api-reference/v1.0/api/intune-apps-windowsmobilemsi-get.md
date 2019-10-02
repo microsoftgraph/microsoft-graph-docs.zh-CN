@@ -1,20 +1,20 @@
 ---
 title: 获取 windowsMobileMSI
 description: 读取 windowsMobileMSI 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 24400e0e38cd8f0a4b37bd6a31d8293d6b9026d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb6ca4719a7642ec6a48c09b31662893f4d70e72
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013659"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358107"
 ---
 # <a name="get-windowsmobilemsi"></a>获取 windowsMobileMSI
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性和关系。
 
@@ -97,6 +97,7 @@ Content-Length: 1098
   }
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 列出 termsAndConditionses
 description: 列出 termsAndConditions 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e10c75da24a534459e44d50a17c99a3453dd197
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d78689dd84ebea9b7560b978799d3275e3b4131
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019820"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357792"
 ---
 # <a name="list-termsandconditionses"></a>列出 termsAndConditionses
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36019820"
 GET /deviceManagement/termsAndConditions
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -80,6 +80,7 @@ Content-Length: 518
   ]
 }
 ```
+
 
 
 

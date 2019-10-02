@@ -1,16 +1,16 @@
 ---
 title: Microsoft Intune 中的设备配置
 description: 使用 Microsoft Intune 设备配置工作负载管理你管理的所有设备上的设置和功能。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 367e2eaa44187684ff241b9b2bc40a81c7729d6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3136a82dd8d93c44adf96261092873380d47e9e6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028740"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360340"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -182,3 +182,4 @@ ms.locfileid: "36028740"
 - [Windows 更新计划安装](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows 更新类型](intune-deviceconfig-windowsupdatetype.md)
 - [Windows 用户帐户控制设置](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
+

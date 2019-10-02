@@ -1,20 +1,20 @@
 ---
 title: deviceOperatingSystemSummary 资源类型
 description: 设备操作系统摘要。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9877dba58817e8c6dad3676cb6a646750408d4e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62fe2496e505ac0d281381b9d53604aa98094f3c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030756"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356934"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备操作系统摘要。
 
@@ -49,6 +49,7 @@ ms.locfileid: "36030756"
   "unknownCount": 1024
 }
 ```
+
 
 
 

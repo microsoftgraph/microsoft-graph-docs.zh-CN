@@ -1,16 +1,16 @@
 ---
 title: 在 Intune 中注册设备以进行管理
-description: " (BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
+description: " （BYOD）注册允许用户注册其个人电话、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: e78fda940a62490d88921f6286d6421f14de5a96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54a2a8bb3901f1a6938401963e8efcbd9e02f194
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037567"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360585"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -45,3 +45,4 @@ ms.locfileid: "36037567"
 - [VPP 令牌状态](intune-onboarding-vpptokenstate.md)
 - [VPP 令牌同步状态](intune-onboarding-vpptokensyncstatus.md)
 - [Windows Hello 企业版 PIN 使用情况](intune-onboarding-windowshelloforbusinesspinusage.md)
+

@@ -1,20 +1,20 @@
 ---
 title: 创建 mobileAppContent
 description: 创建新的 mobileAppContent 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d999bf2e34f3e84de9f20146fcadfa28f2441beb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8debcf1a1b71864465a42635bf1be08033c6659
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002046"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358282"
 ---
 # <a name="create-mobileappcontent"></a>创建 mobileAppContent
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppContent](../resources/intune-apps-mobileappcontent.md) 对象。
 
@@ -38,7 +38,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.mobileLobApp/
 POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileLobApp/contentVersions
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -84,6 +84,7 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
 
 
 

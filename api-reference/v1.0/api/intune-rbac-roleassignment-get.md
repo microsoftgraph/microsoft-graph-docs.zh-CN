@@ -1,20 +1,20 @@
 ---
 title: 获取 roleAssignment
 description: 读取 roleAssignment 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e5baecf4daaf354c5c6d8a05eef9a6345260f4d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47f63372ffac69c4c8c2a84b07e09935f1ea933b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023704"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361803"
 ---
 # <a name="get-roleassignment"></a>获取 roleAssignment
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [roleAssignment](../resources/intune-rbac-roleassignment.md) 对象的属性和关系。
 
@@ -78,6 +78,7 @@ Content-Length: 275
   }
 }
 ```
+
 
 
 

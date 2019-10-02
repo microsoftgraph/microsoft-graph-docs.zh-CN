@@ -1,20 +1,20 @@
 ---
 title: iosCertificateProfile 资源类型
 description: 设备配置。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e43523ac95f66baf9aa150a961043f1beddde9a0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef712d101a384f12303243d53bc5b3a5322d2b64
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028278"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359192"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>iosCertificateProfile 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备配置。
 
@@ -66,6 +66,7 @@ ms.locfileid: "36028278"
   "version": 1024
 }
 ```
+
 
 
 
