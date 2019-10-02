@@ -1,33 +1,33 @@
 ---
 title: 更新 iosUpdateDeviceStatus
 description: 更新 iosUpdateDeviceStatus 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af4fc0ae93c501ee27d378ac98c767cf7cd11ebb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ba8ce7e9db9143c6389b533b29c2d8cbad8583f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997573"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366144"
 ---
-# <a name="update-iosupdatedevicestatus"></a><span data-ttu-id="45fb7-103">更新 iosUpdateDeviceStatus</span><span class="sxs-lookup"><span data-stu-id="45fb7-103">Update iosUpdateDeviceStatus</span></span>
+# <a name="update-iosupdatedevicestatus"></a><span data-ttu-id="5be03-103">更新 iosUpdateDeviceStatus</span><span class="sxs-lookup"><span data-stu-id="5be03-103">Update iosUpdateDeviceStatus</span></span>
 
-> <span data-ttu-id="45fb7-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="45fb7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5be03-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5be03-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="45fb7-105">更新 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="45fb7-105">Update the properties of a [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) object.</span></span>
+<span data-ttu-id="5be03-105">更新 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="5be03-105">Update the properties of a [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="45fb7-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="45fb7-106">Prerequisites</span></span>
-<span data-ttu-id="45fb7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="45fb7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5be03-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="5be03-106">Prerequisites</span></span>
+<span data-ttu-id="5be03-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5be03-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45fb7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="45fb7-109">Permission type</span></span>|<span data-ttu-id="45fb7-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="45fb7-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5be03-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5be03-109">Permission type</span></span>|<span data-ttu-id="5be03-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5be03-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="45fb7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="45fb7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="45fb7-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45fb7-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="45fb7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="45fb7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="45fb7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="45fb7-114">Not supported.</span></span>|
-|<span data-ttu-id="45fb7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="45fb7-115">Application</span></span>|<span data-ttu-id="45fb7-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="45fb7-116">Not supported.</span></span>|
+|<span data-ttu-id="5be03-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5be03-111">Delegated (work or school account)</span></span>|<span data-ttu-id="5be03-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5be03-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="5be03-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5be03-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5be03-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="5be03-114">Not supported.</span></span>|
+|<span data-ttu-id="5be03-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5be03-115">Application</span></span>|<span data-ttu-id="5be03-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="5be03-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="45fb7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="45fb7-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5be03-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5be03-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,41 +36,41 @@ ms.locfileid: "35997573"
 PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="45fb7-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="45fb7-118">Request headers</span></span>
-|<span data-ttu-id="45fb7-119">标头</span><span class="sxs-lookup"><span data-stu-id="45fb7-119">Header</span></span>|<span data-ttu-id="45fb7-120">值</span><span class="sxs-lookup"><span data-stu-id="45fb7-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5be03-118">请求头</span><span class="sxs-lookup"><span data-stu-id="5be03-118">Request headers</span></span>
+|<span data-ttu-id="5be03-119">标头</span><span class="sxs-lookup"><span data-stu-id="5be03-119">Header</span></span>|<span data-ttu-id="5be03-120">值</span><span class="sxs-lookup"><span data-stu-id="5be03-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="45fb7-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="45fb7-121">Authorization</span></span>|<span data-ttu-id="45fb7-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="45fb7-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="45fb7-123">接受</span><span class="sxs-lookup"><span data-stu-id="45fb7-123">Accept</span></span>|<span data-ttu-id="45fb7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="45fb7-124">application/json</span></span>|
+|<span data-ttu-id="5be03-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5be03-121">Authorization</span></span>|<span data-ttu-id="5be03-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5be03-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5be03-123">接受</span><span class="sxs-lookup"><span data-stu-id="5be03-123">Accept</span></span>|<span data-ttu-id="5be03-124">application/json</span><span class="sxs-lookup"><span data-stu-id="5be03-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="45fb7-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="45fb7-125">Request body</span></span>
-<span data-ttu-id="45fb7-126">在请求正文中，提供 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="45fb7-126">In the request body, supply a JSON representation for the [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5be03-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5be03-125">Request body</span></span>
+<span data-ttu-id="5be03-126">在请求正文中，提供 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5be03-126">In the request body, supply a JSON representation for the [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) object.</span></span>
 
-<span data-ttu-id="45fb7-127">下表显示了创建 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="45fb7-127">The following table shows the properties that are required when you create the [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md).</span></span>
+<span data-ttu-id="5be03-127">下表显示了创建 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="5be03-127">The following table shows the properties that are required when you create the [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md).</span></span>
 
-|<span data-ttu-id="45fb7-128">属性</span><span class="sxs-lookup"><span data-stu-id="45fb7-128">Property</span></span>|<span data-ttu-id="45fb7-129">类型</span><span class="sxs-lookup"><span data-stu-id="45fb7-129">Type</span></span>|<span data-ttu-id="45fb7-130">说明</span><span class="sxs-lookup"><span data-stu-id="45fb7-130">Description</span></span>|
+|<span data-ttu-id="5be03-128">属性</span><span class="sxs-lookup"><span data-stu-id="5be03-128">Property</span></span>|<span data-ttu-id="5be03-129">类型</span><span class="sxs-lookup"><span data-stu-id="5be03-129">Type</span></span>|<span data-ttu-id="5be03-130">说明</span><span class="sxs-lookup"><span data-stu-id="5be03-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="45fb7-131">id</span><span class="sxs-lookup"><span data-stu-id="45fb7-131">id</span></span>|<span data-ttu-id="45fb7-132">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-132">String</span></span>|<span data-ttu-id="45fb7-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="45fb7-133">Key of the entity.</span></span>|
-|<span data-ttu-id="45fb7-134">installStatus</span><span class="sxs-lookup"><span data-stu-id="45fb7-134">installStatus</span></span>|[<span data-ttu-id="45fb7-135">iosUpdatesInstallStatus</span><span class="sxs-lookup"><span data-stu-id="45fb7-135">iosUpdatesInstallStatus</span></span>](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|<span data-ttu-id="45fb7-136">策略报告安装状态。</span><span class="sxs-lookup"><span data-stu-id="45fb7-136">The installation status of the policy report.</span></span> <span data-ttu-id="45fb7-137">可能的值是`success`: `available`、 `idle`、 `unknown` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `sharedDeviceUserLoggedInError`、、 `installing`、、、、、、、、、、、、。 `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation`</span><span class="sxs-lookup"><span data-stu-id="45fb7-137">Possible values are: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.</span></span>|
-|<span data-ttu-id="45fb7-138">osVersion</span><span class="sxs-lookup"><span data-stu-id="45fb7-138">osVersion</span></span>|<span data-ttu-id="45fb7-139">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-139">String</span></span>|<span data-ttu-id="45fb7-140">报告的设备版本。</span><span class="sxs-lookup"><span data-stu-id="45fb7-140">The device version that is being reported.</span></span>|
-|<span data-ttu-id="45fb7-141">deviceId</span><span class="sxs-lookup"><span data-stu-id="45fb7-141">deviceId</span></span>|<span data-ttu-id="45fb7-142">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-142">String</span></span>|<span data-ttu-id="45fb7-143">报告的设备 ID。</span><span class="sxs-lookup"><span data-stu-id="45fb7-143">The device id that is being reported.</span></span>|
-|<span data-ttu-id="45fb7-144">userId</span><span class="sxs-lookup"><span data-stu-id="45fb7-144">userId</span></span>|<span data-ttu-id="45fb7-145">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-145">String</span></span>|<span data-ttu-id="45fb7-146">报告的用户 ID。</span><span class="sxs-lookup"><span data-stu-id="45fb7-146">The User id that is being reported.</span></span>|
-|<span data-ttu-id="45fb7-147">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="45fb7-147">deviceDisplayName</span></span>|<span data-ttu-id="45fb7-148">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-148">String</span></span>|<span data-ttu-id="45fb7-149">DevicePolicyStatus 的设备名。</span><span class="sxs-lookup"><span data-stu-id="45fb7-149">Device name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="45fb7-150">userName</span><span class="sxs-lookup"><span data-stu-id="45fb7-150">userName</span></span>|<span data-ttu-id="45fb7-151">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-151">String</span></span>|<span data-ttu-id="45fb7-152">报告的用户名</span><span class="sxs-lookup"><span data-stu-id="45fb7-152">The User Name that is being reported</span></span>|
-|<span data-ttu-id="45fb7-153">deviceModel</span><span class="sxs-lookup"><span data-stu-id="45fb7-153">deviceModel</span></span>|<span data-ttu-id="45fb7-154">String</span><span class="sxs-lookup"><span data-stu-id="45fb7-154">String</span></span>|<span data-ttu-id="45fb7-155">报告的设备模型</span><span class="sxs-lookup"><span data-stu-id="45fb7-155">The device model that is being reported</span></span>|
-|<span data-ttu-id="45fb7-156">complianceGracePeriodExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="45fb7-156">complianceGracePeriodExpirationDateTime</span></span>|<span data-ttu-id="45fb7-157">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="45fb7-157">DateTimeOffset</span></span>|<span data-ttu-id="45fb7-158">设备符合性宽限期的到期日期/时间</span><span class="sxs-lookup"><span data-stu-id="45fb7-158">The DateTime when device compliance grace period expires</span></span>|
-|<span data-ttu-id="45fb7-159">status</span><span class="sxs-lookup"><span data-stu-id="45fb7-159">status</span></span>|[<span data-ttu-id="45fb7-160">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="45fb7-160">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="45fb7-161">策略报告的符合性状态。</span><span class="sxs-lookup"><span data-stu-id="45fb7-161">Compliance status of the policy report.</span></span> <span data-ttu-id="45fb7-162">可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="45fb7-162">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="45fb7-163">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="45fb7-163">lastReportedDateTime</span></span>|<span data-ttu-id="45fb7-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="45fb7-164">DateTimeOffset</span></span>|<span data-ttu-id="45fb7-165">策略报告的上次修改日期时间。</span><span class="sxs-lookup"><span data-stu-id="45fb7-165">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="45fb7-166">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="45fb7-166">userPrincipalName</span></span>|<span data-ttu-id="45fb7-167">字符串</span><span class="sxs-lookup"><span data-stu-id="45fb7-167">String</span></span>|<span data-ttu-id="45fb7-168">UserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="45fb7-168">UserPrincipalName.</span></span>|
+|<span data-ttu-id="5be03-131">id</span><span class="sxs-lookup"><span data-stu-id="5be03-131">id</span></span>|<span data-ttu-id="5be03-132">String</span><span class="sxs-lookup"><span data-stu-id="5be03-132">String</span></span>|<span data-ttu-id="5be03-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="5be03-133">Key of the entity.</span></span>|
+|<span data-ttu-id="5be03-134">installStatus</span><span class="sxs-lookup"><span data-stu-id="5be03-134">installStatus</span></span>|[<span data-ttu-id="5be03-135">iosUpdatesInstallStatus</span><span class="sxs-lookup"><span data-stu-id="5be03-135">iosUpdatesInstallStatus</span></span>](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|<span data-ttu-id="5be03-136">策略报告安装状态。</span><span class="sxs-lookup"><span data-stu-id="5be03-136">The installation status of the policy report.</span></span> <span data-ttu-id="5be03-137">可能的值是`success`： `available`、 `idle`、 `unknown` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `sharedDeviceUserLoggedInError`、、 `installing`、、、、、、、、、、、、。 `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation`</span><span class="sxs-lookup"><span data-stu-id="5be03-137">Possible values are: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.</span></span>|
+|<span data-ttu-id="5be03-138">osVersion</span><span class="sxs-lookup"><span data-stu-id="5be03-138">osVersion</span></span>|<span data-ttu-id="5be03-139">String</span><span class="sxs-lookup"><span data-stu-id="5be03-139">String</span></span>|<span data-ttu-id="5be03-140">报告的设备版本。</span><span class="sxs-lookup"><span data-stu-id="5be03-140">The device version that is being reported.</span></span>|
+|<span data-ttu-id="5be03-141">deviceId</span><span class="sxs-lookup"><span data-stu-id="5be03-141">deviceId</span></span>|<span data-ttu-id="5be03-142">String</span><span class="sxs-lookup"><span data-stu-id="5be03-142">String</span></span>|<span data-ttu-id="5be03-143">报告的设备 ID。</span><span class="sxs-lookup"><span data-stu-id="5be03-143">The device id that is being reported.</span></span>|
+|<span data-ttu-id="5be03-144">userId</span><span class="sxs-lookup"><span data-stu-id="5be03-144">userId</span></span>|<span data-ttu-id="5be03-145">String</span><span class="sxs-lookup"><span data-stu-id="5be03-145">String</span></span>|<span data-ttu-id="5be03-146">报告的用户 ID。</span><span class="sxs-lookup"><span data-stu-id="5be03-146">The User id that is being reported.</span></span>|
+|<span data-ttu-id="5be03-147">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="5be03-147">deviceDisplayName</span></span>|<span data-ttu-id="5be03-148">String</span><span class="sxs-lookup"><span data-stu-id="5be03-148">String</span></span>|<span data-ttu-id="5be03-149">DevicePolicyStatus 的设备名。</span><span class="sxs-lookup"><span data-stu-id="5be03-149">Device name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="5be03-150">userName</span><span class="sxs-lookup"><span data-stu-id="5be03-150">userName</span></span>|<span data-ttu-id="5be03-151">String</span><span class="sxs-lookup"><span data-stu-id="5be03-151">String</span></span>|<span data-ttu-id="5be03-152">报告的用户名</span><span class="sxs-lookup"><span data-stu-id="5be03-152">The User Name that is being reported</span></span>|
+|<span data-ttu-id="5be03-153">deviceModel</span><span class="sxs-lookup"><span data-stu-id="5be03-153">deviceModel</span></span>|<span data-ttu-id="5be03-154">String</span><span class="sxs-lookup"><span data-stu-id="5be03-154">String</span></span>|<span data-ttu-id="5be03-155">报告的设备模型</span><span class="sxs-lookup"><span data-stu-id="5be03-155">The device model that is being reported</span></span>|
+|<span data-ttu-id="5be03-156">complianceGracePeriodExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="5be03-156">complianceGracePeriodExpirationDateTime</span></span>|<span data-ttu-id="5be03-157">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5be03-157">DateTimeOffset</span></span>|<span data-ttu-id="5be03-158">设备符合性宽限期的到期日期/时间</span><span class="sxs-lookup"><span data-stu-id="5be03-158">The DateTime when device compliance grace period expires</span></span>|
+|<span data-ttu-id="5be03-159">status</span><span class="sxs-lookup"><span data-stu-id="5be03-159">status</span></span>|[<span data-ttu-id="5be03-160">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="5be03-160">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="5be03-161">策略报告的符合性状态。</span><span class="sxs-lookup"><span data-stu-id="5be03-161">Compliance status of the policy report.</span></span> <span data-ttu-id="5be03-162">可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="5be03-162">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="5be03-163">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="5be03-163">lastReportedDateTime</span></span>|<span data-ttu-id="5be03-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5be03-164">DateTimeOffset</span></span>|<span data-ttu-id="5be03-165">策略报告的上次修改日期时间。</span><span class="sxs-lookup"><span data-stu-id="5be03-165">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="5be03-166">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="5be03-166">userPrincipalName</span></span>|<span data-ttu-id="5be03-167">字符串</span><span class="sxs-lookup"><span data-stu-id="5be03-167">String</span></span>|<span data-ttu-id="5be03-168">UserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="5be03-168">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="45fb7-169">响应</span><span class="sxs-lookup"><span data-stu-id="45fb7-169">Response</span></span>
-<span data-ttu-id="45fb7-170">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="45fb7-170">If successful, this method returns a `200 OK` response code and an updated [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5be03-169">响应</span><span class="sxs-lookup"><span data-stu-id="5be03-169">Response</span></span>
+<span data-ttu-id="5be03-170">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5be03-170">If successful, this method returns a `200 OK` response code and an updated [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45fb7-171">示例</span><span class="sxs-lookup"><span data-stu-id="45fb7-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5be03-171">示例</span><span class="sxs-lookup"><span data-stu-id="5be03-171">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="45fb7-172">请求</span><span class="sxs-lookup"><span data-stu-id="45fb7-172">Request</span></span>
-<span data-ttu-id="45fb7-173">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="45fb7-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5be03-172">请求</span><span class="sxs-lookup"><span data-stu-id="5be03-172">Request</span></span>
+<span data-ttu-id="5be03-173">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5be03-173">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 Content-type: application/json
@@ -92,8 +92,8 @@ Content-length: 552
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="45fb7-174">响应</span><span class="sxs-lookup"><span data-stu-id="45fb7-174">Response</span></span>
-<span data-ttu-id="45fb7-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="45fb7-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5be03-174">响应</span><span class="sxs-lookup"><span data-stu-id="5be03-174">Response</span></span>
+<span data-ttu-id="5be03-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5be03-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -115,6 +115,7 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 
