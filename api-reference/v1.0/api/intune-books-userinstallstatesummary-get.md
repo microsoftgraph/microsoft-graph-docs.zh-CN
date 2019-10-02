@@ -1,20 +1,20 @@
 ---
 title: 获取 userInstallStateSummary
 description: 读取 userInstallStateSummary 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87ac0b8d8e04a17d227adb20cf65f7e91baaabc1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c2644334f92708cbb7025fd5fce21f38e6c5e86
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019924"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354614"
 ---
 # <a name="get-userinstallstatesummary"></a>获取 userInstallStateSummary
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) 对象的属性和关系。
 
@@ -77,6 +77,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

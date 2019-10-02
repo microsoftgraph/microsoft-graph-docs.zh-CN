@@ -1,20 +1,20 @@
 ---
 title: 列出 managedEBookAssignments
 description: 列出 managedEBookAssignment 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a3328879ef187da7ac2de6bf7910d3ec2e14fc5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56a32a324f60b714396391a49ab4c928148f8a81
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018356"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354656"
 ---
 # <a name="list-managedebookassignments"></a>列出 managedEBookAssignments
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36018356"
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -76,6 +76,7 @@ Content-Length: 300
   ]
 }
 ```
+
 
 
 

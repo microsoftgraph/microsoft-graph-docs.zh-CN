@@ -1,20 +1,20 @@
 ---
 title: 获取 deviceComplianceScheduledActionForRule
 description: 读取 deviceComplianceScheduledActionForRule 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9bac352efb14f374900a8f9aa6eb0f0702de50c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a5fd9a5c14a58010e36ea403892760e93846ecf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997664"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368972"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>获取 deviceComplianceScheduledActionForRule
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) 对象的属性和关系。
 
@@ -74,6 +74,7 @@ Content-Length: 188
   }
 }
 ```
+
 
 
 

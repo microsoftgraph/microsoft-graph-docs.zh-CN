@@ -1,20 +1,20 @@
 ---
 title: 获取 deviceCompliancePolicyDeviceStateSummary
 description: 读取 deviceCompliancePolicyDeviceStateSummary 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed75d82f7ddb1c1caa328f405f0a0f1852ac0d63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 34fbad8843cd868427edbe2a99a92d5bc1c5924f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997762"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369014"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>获取 deviceCompliancePolicyDeviceStateSummary
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) 对象的属性和关系。
 
@@ -82,6 +82,7 @@ Content-Length: 439
   }
 }
 ```
+
 
 
 

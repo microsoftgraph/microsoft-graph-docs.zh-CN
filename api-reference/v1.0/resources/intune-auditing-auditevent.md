@@ -1,20 +1,20 @@
 ---
 title: auditEvent 资源类型
 description: 包含审核事件的属性的类。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18d56205f0602016f4d2ecdd2587b06ae5c676fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5dfadf90d2498fa13f2367ca7467bbce5f810e3f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028852"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355986"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含审核事件的属性的类。
 
@@ -100,6 +100,7 @@ ms.locfileid: "36028852"
   "category": "String"
 }
 ```
+
 
 
 

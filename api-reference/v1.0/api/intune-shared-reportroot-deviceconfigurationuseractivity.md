@@ -1,20 +1,20 @@
 ---
 title: deviceConfigurationUserActivity 函数
 description: 设备配置用户活动报告的元数据
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d2fbaf3224bb1a1949bb2161694e40568225d1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e1511b29d9f5369d5eb18e24a5d65e5120322f3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025860"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361397"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>deviceConfigurationUserActivity 函数
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备配置用户活动报告的元数据
 
@@ -37,7 +37,7 @@ ms.locfileid: "36025860"
 GET /reports/deviceConfigurationUserActivity
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -70,6 +70,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

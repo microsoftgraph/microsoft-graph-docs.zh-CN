@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 98b02ed4dfdc4d3cd6fbaf1a6447b39618aece54
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e2191102e62cacadddcbbbb270b6afe16af93ff9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721572"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356231"
 ---
 # <a name="list-group-members"></a>列出组成员
 
@@ -24,11 +24,11 @@ ms.locfileid: "36721572"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all、User.readbasic.all、用户、全部、用户、全部读取。所有    |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Read. All, User. All |
+|应用程序 | Group.Read.All、Directory.Read.All |
 
-> 注意: 若要列出隐藏的成员资格组的成员, 则需要使用 Read。隐藏权限是必需的。
+> 注意：若要列出隐藏的成员资格组的成员，则需要使用 Read。隐藏权限是必需的。
  
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ GET /groups/{id}/members
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_members"
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

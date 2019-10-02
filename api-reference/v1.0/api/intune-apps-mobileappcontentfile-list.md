@@ -1,20 +1,20 @@
 ---
 title: 列出 mobileAppContentFiles
 description: 列出 mobileAppContentFile 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76c985ba272231ed7ba68d93b310bfddb3fde7b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ceb168819941fb3d165779208db7c8e2ec1eab6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016018"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355013"
 ---
 # <a name="list-mobileappcontentfiles"></a>列出 mobileAppContentFiles
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36016018"
 GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -81,6 +81,7 @@ Content-Length: 527
   ]
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 列出 microsoftStoreForBusinessApps
 description: 列出 microsoftStoreForBusinessApp 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 730cd03b7f308ce0e54b10784eb5e23900623785
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d18a519558b9ecd855b75998ea10b1a8258b2cc4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002116"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355168"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>列出 microsoftStoreForBusinessApps
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36002116"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -94,6 +94,7 @@ Content-Length: 1070
   ]
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 创建 vppToken
 description: 创建新的 vppToken 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2151cee9f3aaa8eb23f11d5d4d707de1e234e47
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 147deb777f492c6412919a611e49292fa5dda3c2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024012"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362118"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36024012"
 POST /deviceAppManagement/vppTokens
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -54,7 +54,7 @@ POST /deviceAppManagement/vppTokens
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
-|lastSyncDateTime|DateTimeOffset|上次使用 Apple Volume purchase program 服务 (apple Volume purchase program 令牌) 完成应用程序同步的时间。|
+|lastSyncDateTime|DateTimeOffset|上次使用 Apple Volume purchase program 服务（apple Volume purchase program 令牌）完成应用程序同步的时间。|
 |token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
 |lastModifiedDateTime|DateTimeOffset|与 Apple Volume Purchase Program 令牌关联的上次修改日期时间。|
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。|
@@ -114,6 +114,7 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
 
 
 

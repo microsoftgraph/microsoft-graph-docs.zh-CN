@@ -1,20 +1,20 @@
 ---
 title: managedDeviceEnrollmentFailureDetails 函数
 description: 尚未记录
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da38aa1fb497bc5fb1225f2435ed2bd9c4e4b3c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd16afe8aafaefe84f385d13a9a56e823b689130
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025846"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361369"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails 函数
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -37,7 +37,7 @@ ms.locfileid: "36025846"
 GET /reports/managedDeviceEnrollmentFailureDetails
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ### <a name="response"></a>响应
-为简洁起见, 可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 
 ``` http
 HTTP/1.1 200 OK
@@ -81,6 +81,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

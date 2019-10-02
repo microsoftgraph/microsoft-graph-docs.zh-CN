@@ -1,20 +1,20 @@
 ---
 title: 获取 androidWorkProfileCompliancePolicy
 description: 读取 androidWorkProfileCompliancePolicy 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5291c9844eebc19b4030c129fdc9887f84015cee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff8a98468bebc2ea5437d0347faa682de3099d02
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019574"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354446"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>获取 androidWorkProfileCompliancePolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象的属性和关系。
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -99,6 +99,7 @@ Content-Length: 1417
   }
 }
 ```
+
 
 
 

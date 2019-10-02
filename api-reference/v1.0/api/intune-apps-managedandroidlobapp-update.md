@@ -1,20 +1,20 @@
 ---
 title: 更新 managedAndroidLobApp
 description: 更新 managedAndroidLobApp 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32ab9ae624386efd59b7824e8b900ae2ac1d2456
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d564046c72ea1344d9f6a018be2e0e6497f39645
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002404"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355461"
 ---
 # <a name="update-managedandroidlobapp"></a>更新 managedAndroidLobApp
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36002404"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -174,6 +174,7 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
 
 
 

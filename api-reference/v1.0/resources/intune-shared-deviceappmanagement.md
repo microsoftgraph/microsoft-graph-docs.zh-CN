@@ -1,20 +1,20 @@
 ---
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f73656cd55197ae868c591d02b304f0b389acc1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db1564b1887ba6928239d06ed6fafb122e9e3357
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036979"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356091"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 充当所有设备应用管理功能的容器的单例实体。
 ## <a name="methods"></a>方法
@@ -58,7 +58,7 @@ ms.locfileid: "36036979"
 |vppTokens|[vppToken](../resources/intune-onboarding-vpptoken.md) 集合|此组织的 Vpp 令牌列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
-下面是资源的 JSON 表示形式。  请注意, 这只是一个示例。查询对实际查询的响应将包含适用于上下文的属性。  
+下面是资源的 JSON 表示形式。  请注意，这只是一个示例。查询对实际查询的响应将包含适用于上下文的属性。  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -76,6 +76,7 @@ ms.locfileid: "36036979"
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
+
 
 
 

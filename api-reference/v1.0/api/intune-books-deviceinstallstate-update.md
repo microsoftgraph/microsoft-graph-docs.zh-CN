@@ -1,20 +1,20 @@
 ---
 title: 更新 deviceInstallState
 description: 更新 deviceInstallState 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5da7df5df6966cabf5b2435057a09399c00f8152
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86ea7e0963cd33efd284a66c34d10d27d80932a9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015864"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354803"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象的属性。
 
@@ -37,7 +37,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceIn
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates/{deviceInstallStateId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -107,6 +107,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 获取 deviceCompliancePolicy
 description: 读取 deviceCompliancePolicy 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11bd97c5df21dfd52157f8828471664af889a70d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5616e533c70212848c058bbe535709d39e53ed3e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017852"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369035"
 ---
 # <a name="get-devicecompliancepolicy"></a>获取 deviceCompliancePolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) 对象的属性和关系。
 
@@ -78,6 +78,7 @@ Content-Length: 365
   }
 }
 ```
+
 
 
 

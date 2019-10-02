@@ -1,20 +1,20 @@
 ---
 title: 获取 deviceCategory
 description: 读取 deviceCategory 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1341a64d5f6301ce930531c8881291246a460c6f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ad4c146eb4a5344b87becdf3e82ae76b0808153
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023480"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361509"
 ---
 # <a name="get-devicecategory"></a>获取 deviceCategory
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性和关系。
 
@@ -81,6 +81,7 @@ Content-Length: 211
   }
 }
 ```
+
 
 
 

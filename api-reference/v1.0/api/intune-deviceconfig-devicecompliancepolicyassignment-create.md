@@ -1,20 +1,20 @@
 ---
 title: 创建 deviceCompliancePolicyAssignment
 description: 创建新的 deviceCompliancePolicyAssignment 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b62cd5be14503bd6d725a1ede08b281f7a13c3be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e4718f6c245eb03e165f75d0f47e69e7edc405f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019413"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354229"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>创建 deviceCompliancePolicyAssignment
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36019413"
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -89,6 +89,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

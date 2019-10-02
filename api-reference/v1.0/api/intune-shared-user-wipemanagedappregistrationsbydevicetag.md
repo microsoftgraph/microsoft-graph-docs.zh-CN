@@ -1,20 +1,20 @@
 ---
 title: wipeManagedAppRegistrationsByDeviceTag 操作
 description: 对包含指定设备标记的应用注册发布擦除操作。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bea86526d1c8770ac1800442d5e0f2e06318fb58
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5bb3db444086792a1ccc2ade6daa8ca2328ec99
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025720"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361215"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 对包含指定设备标记的应用注册发布擦除操作。
 
@@ -37,7 +37,7 @@ ms.locfileid: "36025720"
 POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -77,6 +77,7 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

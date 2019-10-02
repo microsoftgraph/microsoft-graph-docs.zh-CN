@@ -1,20 +1,20 @@
 ---
 title: 创建 telecomExpenseManagementPartner
 description: 创建新的 telecomExpenseManagementPartner 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58399603c12c7560dc1707b3c4badcee6700d6cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c434c3c9563fa7f7a21fd573fefae4bd842ee2f8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023372"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361180"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>创建 telecomExpenseManagementPartner
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36023372"
 POST /deviceManagement/telecomExpenseManagementPartners
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -97,6 +97,7 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 

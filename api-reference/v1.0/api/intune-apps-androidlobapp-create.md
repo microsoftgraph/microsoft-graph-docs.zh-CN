@@ -1,20 +1,20 @@
 ---
 title: 创建 androidLobApp
 description: 创建新的 androidLobApp 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a399549a624b0e72604637673c4ca86e7ff4b590
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1a0e40c55971c4dabc0f4988702231194ba5d713
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014345"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355727"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [androidLobApp](../resources/intune-apps-androidlobapp.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36014345"
 POST /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -168,6 +168,7 @@ Content-Length: 1247
   "versionCode": "Version Code value"
 }
 ```
+
 
 
 

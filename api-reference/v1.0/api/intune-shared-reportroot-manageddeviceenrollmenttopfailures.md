@@ -1,20 +1,20 @@
 ---
 title: managedDeviceEnrollmentTopFailures 函数
 description: 尚未记录
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfd5710a310bba3d794902eaf01027538819f1bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b75d6598dfc619227a96105f86e5dace746941f9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023361"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361362"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures 函数
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -37,7 +37,7 @@ ms.locfileid: "36023361"
 GET /reports/managedDeviceEnrollmentTopFailures
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -77,6 +77,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

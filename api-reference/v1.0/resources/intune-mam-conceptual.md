@@ -1,16 +1,16 @@
 ---
 title: 如何通过 Microsoft Intune 保护公司的应用数据
 description: Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 0b516160f468300e08e5f1294ab4951e169a80a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f655e8b80a2f07164a8560146e1f1e2d4c1f7ec
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038190"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356553"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -72,3 +72,4 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护代理域集合](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows 信息保护资源集合](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows 信息保护应用商店应用](intune-mam-windowsinformationprotectionstoreapp.md)
+

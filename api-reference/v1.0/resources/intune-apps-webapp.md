@@ -1,20 +1,20 @@
 ---
 title: webApp 资源类型
 description: 包含 Web 应用的属性和继承的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc8751ca34225da39ad8430619c9b189b5c448b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 55b8f8466a01b1477aedf027a1a078840355c015
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028884"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369049"
 ---
 # <a name="webapp-resource-type"></a>webApp 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Web 应用的属性和继承的属性。
 
@@ -89,6 +89,7 @@ ms.locfileid: "36028884"
   "useManagedBrowser": true
 }
 ```
+
 
 
 

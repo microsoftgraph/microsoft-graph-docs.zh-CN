@@ -1,20 +1,20 @@
 ---
 title: iosMobileAppIdentifier 资源类型
 description: iOS 应用的标识符。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7388e6872eb48d3aba188448c263f492d913f79b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c85d0f1a2bedffe8525c2012487646c4364ec2ff
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038148"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356497"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 iOS 应用的标识符。
 
@@ -42,6 +42,7 @@ iOS 应用的标识符。
   "bundleId": "String"
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 创建 androidWorkProfileCompliancePolicy
 description: 创建新的 androidWorkProfileCompliancePolicy 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23709a2b9949afeaf0872db32a59f1304a37bc1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9053cb0f85718ad9996a20f5a4251ef98de8412f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019588"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354467"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>创建 androidWorkProfileCompliancePolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。
 
@@ -36,14 +36,14 @@ ms.locfileid: "36019588"
 POST /deviceManagement/deviceCompliancePolicies
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供 androidWorkProfileCompliancePolicy 对象的 JSON 表示形式。
+在请求正文中，提供 androidWorkProfileCompliancePolicy 对象的 JSON 表示形式。
 
 下表显示创建 androidWorkProfileCompliancePolicy 时所需的属性。
 
@@ -80,7 +80,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -158,6 +158,7 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

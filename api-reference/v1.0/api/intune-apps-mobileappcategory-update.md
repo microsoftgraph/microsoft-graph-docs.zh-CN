@@ -1,20 +1,20 @@
 ---
 title: 更新 mobileAppCategory
 description: 更新 mobileAppCategory 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: feb3f3884bfa35b06bd6de9a718312716a45ca51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cfcd3868210e286711671d9e56a5e4f5d5f4f8f2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013701"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355083"
 ---
 # <a name="update-mobileappcategory"></a>更新 mobileAppCategory
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 对象的属性。
 
@@ -37,7 +37,7 @@ PATCH /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -88,6 +88,7 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

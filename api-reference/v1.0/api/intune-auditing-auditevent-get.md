@@ -1,20 +1,20 @@
 ---
 title: 获取 auditEvent
 description: 读取 auditEvent 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 865bbab96d7a7602ea0e324603370a4cb1cb5a0f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b711362bd9aecf38c863157c97136776a868d33a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001871"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354859"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性和关系。
 
@@ -111,6 +111,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: remoteAssistancePartner 资源类型
 description: remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7bd14d3978e629c75ee9c232a07f88446ca545d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc989eb09b84102130dad7cce2b55ae785452f00
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037049"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355867"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 
@@ -59,6 +59,7 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 删除 deviceCategory
 description: 删除 deviceCategory。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e242cc2e3e1992d37053b71d864207a94b2bf4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 623a05d3e6ae7049b185e4a7a6503396e215219a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025926"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361516"
 ---
 # <a name="delete-devicecategory"></a>删除 deviceCategory
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [deviceCategory](../resources/intune-shared-devicecategory.md)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "36025926"
 DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

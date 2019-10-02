@@ -1,20 +1,20 @@
 ---
 title: vppLicensingType 资源类型
 description: 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 831961fd9e04bff577fe986a2e6309d1cdfbcca0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 587c5e319490807369590585e53a06e0dcc7f2bb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032128"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369056"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
 
@@ -41,6 +41,7 @@ ms.locfileid: "36032128"
   "supportsDeviceLicensing": true
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 获取 managedDeviceMobileAppConfigurationDeviceStatus
 description: 读取 managedDeviceMobileAppConfigurationDeviceStatus 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9afcd2d65644d8881975359014223b31cf860c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 699359cd7bdafeba6b1d721743af72d0452647cd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002284"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355384"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>获取 managedDeviceMobileAppConfigurationDeviceStatus
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)对象的属性和关系。
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -80,6 +80,7 @@ Content-Length: 531
   }
 }
 ```
+
 
 
 

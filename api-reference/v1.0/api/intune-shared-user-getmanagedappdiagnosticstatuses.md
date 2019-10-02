@@ -1,20 +1,20 @@
 ---
 title: getManagedAppDiagnosticStatuses 函数
 description: 获取给定用户的诊断验证状态。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c12d3f03fd608f23a94afcf4ac7a2a75a6d8f846
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3ff023842e487997489ace66bad68b51c686cd91
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025797"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361292"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 函数
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 获取给定用户的诊断验证状态。
 
@@ -37,7 +37,7 @@ ms.locfileid: "36025797"
 GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -77,6 +77,7 @@ Content-Length: 249
   ]
 }
 ```
+
 
 
 

@@ -1,27 +1,27 @@
 ---
 title: 获取 deviceManagement
 description: 读取 deviceManagement 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c2e24770280509ee3823bb2a662792e809def33
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd689c80863504e5ae3766a11684a83ed89d086b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023452"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361467"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限&nbsp;类型&nbsp;(按&nbsp;工作流) | 权限（从最高特权到最低特权） |
+| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） | |
 | &nbsp;&nbsp;审核 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
@@ -105,6 +105,7 @@ Content-Length: 918
   }
 }
 ```
+
 
 
 

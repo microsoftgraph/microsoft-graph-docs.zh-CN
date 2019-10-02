@@ -1,20 +1,20 @@
 ---
 title: 更新 windowsUniversalAppX
 description: 更新 windowsUniversalAppX 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21df53aa0f7cdcb9c239193851f7ea12d293c2b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c11c649b6ce7e56dab0aa5556874dfa619055a4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015901"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354894"
 ---
 # <a name="update-windowsuniversalappx"></a>更新 windowsUniversalAppX
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) 对象的属性。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36015901"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -170,6 +170,7 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

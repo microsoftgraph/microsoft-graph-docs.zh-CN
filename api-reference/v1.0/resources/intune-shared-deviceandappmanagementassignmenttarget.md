@@ -1,20 +1,20 @@
 ---
 title: deviceAndAppManagementAssignmentTarget 资源类型
 description: 赋值目标的基类型。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6b82ecc36c4fe44cb1bc7faced691a0e8f90ee9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 008522c21c5c447d6ed1b17d045c0d9ee715cc6a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036993"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37353998"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 赋值目标的基类型。
 
@@ -37,6 +37,7 @@ ms.locfileid: "36036993"
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
+
 
 
 

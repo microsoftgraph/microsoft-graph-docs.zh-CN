@@ -1,20 +1,20 @@
 ---
 title: getEffectivePermissions 函数
 description: 检索当前验证的用户的有效权限
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3609bb419b9fc7bf39074827915717428224443b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 407d1aba20bb5b8391999233442d46a23171151d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025884"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361453"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 函数
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 检索当前验证的用户的有效权限
 
@@ -37,7 +37,7 @@ ms.locfileid: "36025884"
 GET /deviceManagement/getEffectivePermissions
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -91,6 +91,7 @@ Content-Length: 471
   ]
 }
 ```
+
 
 
 

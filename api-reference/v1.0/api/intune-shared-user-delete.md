@@ -1,25 +1,25 @@
 ---
 title: 删除用户
 description: 删除 user。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3d9f883f15dafd496dc2ef0217ef76e859f98bb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 876a155a5bc6a1cd609d446682195f1198e3ca01
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025804"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361313"
 ---
 # <a name="delete-user"></a>删除用户
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [user](../resources/intune-shared-user.md)。
 
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -40,7 +40,7 @@ ms.locfileid: "36025804"
 DELETE /users/{usersId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -67,6 +67,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

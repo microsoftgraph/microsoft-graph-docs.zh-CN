@@ -1,25 +1,25 @@
 ---
 title: 更新 deviceAppManagement
 description: 更新 deviceAppManagement 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f74931844c8013194ffaf1194614f9f7b0ad3d24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6688abbafbe042b1ebc16103117e75dccd3c0cf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023508"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361544"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意, 相应的权限根据工作流的不同而有所不同。
+若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，相应的权限根据工作流的不同而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -36,7 +36,7 @@ ms.locfileid: "36023508"
 PATCH /deviceAppManagement
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -71,7 +71,7 @@ Content-length: 2
 
 ## <a name="example-response"></a>响应示例
 
-为简洁起见, 可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 
 ``` http
 HTTP/1.1 200 OK
@@ -83,6 +83,7 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
+
 
 
 
