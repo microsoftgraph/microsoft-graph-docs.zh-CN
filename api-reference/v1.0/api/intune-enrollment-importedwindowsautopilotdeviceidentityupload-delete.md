@@ -1,33 +1,33 @@
 ---
 title: 删除 importedWindowsAutopilotDeviceIdentityUpload
 description: 删除 importedWindowsAutopilotDeviceIdentityUpload。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ce6f21a7e40366ba7286fca9495f6d11e142a62
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6d6df4cce01161079d075369c8c7d65264657598
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996866"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364072"
 ---
-# <a name="delete-importedwindowsautopilotdeviceidentityupload"></a><span data-ttu-id="e7d13-103">删除 importedWindowsAutopilotDeviceIdentityUpload</span><span class="sxs-lookup"><span data-stu-id="e7d13-103">Delete importedWindowsAutopilotDeviceIdentityUpload</span></span>
+# <a name="delete-importedwindowsautopilotdeviceidentityupload"></a><span data-ttu-id="89f87-103">删除 importedWindowsAutopilotDeviceIdentityUpload</span><span class="sxs-lookup"><span data-stu-id="89f87-103">Delete importedWindowsAutopilotDeviceIdentityUpload</span></span>
 
-> <span data-ttu-id="e7d13-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e7d13-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="89f87-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="89f87-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e7d13-105">删除[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)。</span><span class="sxs-lookup"><span data-stu-id="e7d13-105">Deletes a [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).</span></span>
+<span data-ttu-id="89f87-105">删除[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)。</span><span class="sxs-lookup"><span data-stu-id="89f87-105">Deletes a [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e7d13-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="e7d13-106">Prerequisites</span></span>
-<span data-ttu-id="e7d13-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e7d13-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="89f87-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="89f87-106">Prerequisites</span></span>
+<span data-ttu-id="89f87-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="89f87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e7d13-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e7d13-109">Permission type</span></span>|<span data-ttu-id="e7d13-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e7d13-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="89f87-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="89f87-109">Permission type</span></span>|<span data-ttu-id="89f87-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="89f87-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e7d13-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e7d13-111">Delegated (work or school account)</span></span>|<span data-ttu-id="e7d13-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7d13-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="e7d13-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e7d13-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e7d13-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7d13-114">Not supported.</span></span>|
-|<span data-ttu-id="e7d13-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e7d13-115">Application</span></span>|<span data-ttu-id="e7d13-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7d13-116">Not supported.</span></span>|
+|<span data-ttu-id="89f87-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="89f87-111">Delegated (work or school account)</span></span>|<span data-ttu-id="89f87-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89f87-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="89f87-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="89f87-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="89f87-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="89f87-114">Not supported.</span></span>|
+|<span data-ttu-id="89f87-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="89f87-115">Application</span></span>|<span data-ttu-id="89f87-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="89f87-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e7d13-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e7d13-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="89f87-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="89f87-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +36,32 @@ ms.locfileid: "35996866"
 DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e7d13-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="e7d13-118">Request headers</span></span>
-|<span data-ttu-id="e7d13-119">标头</span><span class="sxs-lookup"><span data-stu-id="e7d13-119">Header</span></span>|<span data-ttu-id="e7d13-120">值</span><span class="sxs-lookup"><span data-stu-id="e7d13-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="89f87-118">请求头</span><span class="sxs-lookup"><span data-stu-id="89f87-118">Request headers</span></span>
+|<span data-ttu-id="89f87-119">标头</span><span class="sxs-lookup"><span data-stu-id="89f87-119">Header</span></span>|<span data-ttu-id="89f87-120">值</span><span class="sxs-lookup"><span data-stu-id="89f87-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e7d13-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7d13-121">Authorization</span></span>|<span data-ttu-id="e7d13-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e7d13-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e7d13-123">接受</span><span class="sxs-lookup"><span data-stu-id="e7d13-123">Accept</span></span>|<span data-ttu-id="e7d13-124">application/json</span><span class="sxs-lookup"><span data-stu-id="e7d13-124">application/json</span></span>|
+|<span data-ttu-id="89f87-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="89f87-121">Authorization</span></span>|<span data-ttu-id="89f87-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="89f87-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="89f87-123">接受</span><span class="sxs-lookup"><span data-stu-id="89f87-123">Accept</span></span>|<span data-ttu-id="89f87-124">application/json</span><span class="sxs-lookup"><span data-stu-id="89f87-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e7d13-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="e7d13-125">Request body</span></span>
-<span data-ttu-id="e7d13-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e7d13-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89f87-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="89f87-125">Request body</span></span>
+<span data-ttu-id="89f87-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="89f87-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7d13-127">响应</span><span class="sxs-lookup"><span data-stu-id="e7d13-127">Response</span></span>
-<span data-ttu-id="e7d13-128">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="e7d13-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="89f87-127">响应</span><span class="sxs-lookup"><span data-stu-id="89f87-127">Response</span></span>
+<span data-ttu-id="89f87-128">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="89f87-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e7d13-129">示例</span><span class="sxs-lookup"><span data-stu-id="e7d13-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="89f87-129">示例</span><span class="sxs-lookup"><span data-stu-id="89f87-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e7d13-130">请求</span><span class="sxs-lookup"><span data-stu-id="e7d13-130">Request</span></span>
-<span data-ttu-id="e7d13-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7d13-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="89f87-130">请求</span><span class="sxs-lookup"><span data-stu-id="89f87-130">Request</span></span>
+<span data-ttu-id="89f87-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="89f87-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
 ```
 
-### <a name="response"></a><span data-ttu-id="e7d13-132">响应</span><span class="sxs-lookup"><span data-stu-id="e7d13-132">Response</span></span>
-<span data-ttu-id="e7d13-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e7d13-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="89f87-132">响应</span><span class="sxs-lookup"><span data-stu-id="89f87-132">Response</span></span>
+<span data-ttu-id="89f87-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="89f87-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
