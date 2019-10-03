@@ -1,20 +1,20 @@
 ---
 title: appListItem 资源类型
 description: 表示托管应用程序列表中的应用
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b9aa0a35767078b7c91f72b7a8b06a450cc9f33
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c43b559f1c1994d34ae0d4202b4970227d029df7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028607"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366739"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示托管应用程序列表中的应用
 
@@ -45,6 +45,7 @@ ms.locfileid: "36028607"
   "appId": "String"
 }
 ```
+
 
 
 

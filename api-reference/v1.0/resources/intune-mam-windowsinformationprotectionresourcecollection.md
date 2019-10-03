@@ -1,20 +1,20 @@
 ---
 title: windowsInformationProtectionResourceCollection 资源类型
 description: Windows 信息保护资源集合
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 754f5ce902ca4cb5bb63be41f0e8094cc0738c26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81b3a75533f70c57e31fe0f56770a281b66c61af
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037637"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366928"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 信息保护资源集合
 
@@ -43,6 +43,7 @@ Windows 信息保护资源集合
   ]
 }
 ```
+
 
 
 

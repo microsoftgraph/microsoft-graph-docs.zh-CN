@@ -1,20 +1,20 @@
 ---
 title: deviceEnrollmentPlatformRestriction 资源类型
 description: 平台特定注册限制
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 380e40f04c21bb4276c859597610fa3af769fd11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edf64c6aaa2a9745b28543bd3dc3a458b7d8869e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037518"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367236"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 平台特定注册限制
 
@@ -45,6 +45,7 @@ ms.locfileid: "36037518"
   "osMaximumVersion": "String"
 }
 ```
+
 
 
 

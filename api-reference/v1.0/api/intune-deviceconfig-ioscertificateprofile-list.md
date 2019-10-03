@@ -1,20 +1,20 @@
 ---
 title: 列出 iosCertificateProfiles
 description: 列出 iosCertificateProfile 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cb3fee49f8537b1d5ea3ca3b57c6879d27fe703
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9773a5098ac99d0b0b326bc7f25cb1a3d4176468
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019007"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368426"
 ---
 # <a name="list-ioscertificateprofiles"></a>列出 iosCertificateProfiles
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md) 对象的属性和关系。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36019007"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -77,6 +77,7 @@ Content-Length: 392
   ]
 }
 ```
+
 
 
 

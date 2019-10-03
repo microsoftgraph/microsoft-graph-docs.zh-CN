@@ -1,20 +1,20 @@
 ---
 title: microsoftStoreForBusinessApp 资源类型
 description: 适用于企业的 Microsoft Store 应用。 此类不支持创建、删除或更新。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30791ea28bafe83168c475a466d92460f3ce7cd9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db5115514e51a9d4947d0db25339d12fce0e3d15
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032267"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368167"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>microsoftStoreForBusinessApp 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 适用于企业的 Microsoft Store 应用。 此类不支持创建、删除或更新。
 
@@ -95,6 +95,7 @@ ms.locfileid: "36032267"
   "packageIdentityName": "String"
 }
 ```
+
 
 
 

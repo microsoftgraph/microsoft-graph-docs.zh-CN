@@ -1,20 +1,20 @@
 ---
 title: deviceManagementExchangeConnectorType 枚举类型
 description: Exchange Connector 的类型。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cff16857b9cd646db2da18c662447527173673e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fdb99f770e719d05ef097820ff5fff56b7f0a74d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037434"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367964"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 枚举类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Exchange Connector 的类型。
 
@@ -25,6 +25,7 @@ Exchange Connector 的类型。
 |otg|1|连接到 O365 多租户 Exchange 环境|
 |serviceToService|双面|Intune 服务直接连接到 O365 多租户 Exchange 环境|
 |专用|第三章|连接到 O365 专用 Exchange 环境。|
+
 
 
 

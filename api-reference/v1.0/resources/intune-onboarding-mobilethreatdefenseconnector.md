@@ -1,20 +1,20 @@
 ---
 title: mobileThreatDefenseConnector 资源类型
 description: 表示移动威胁防护合作伙伴连接的实体。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e21789aeaf34066e34215df2d8cc6dcde2d331d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45cd18a7afea2a8a8c56a7cb04354c2af7511822
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037343"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367866"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示移动威胁防护合作伙伴连接的实体。
 
@@ -65,6 +65,7 @@ ms.locfileid: "36037343"
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
 
 
 

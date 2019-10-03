@@ -1,20 +1,20 @@
 ---
 title: managedAndroidLobApp 资源类型
 description: 包含托管 Android 业务线应用的属性和继承的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15f0d30a7dc40fd2de71dc8fa120aaa96cb8f0e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9743acafd5e72ef1f283c152e0c3575d62323e28
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029090"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366487"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含托管 Android 业务线应用的属性和继承的属性。
 
@@ -114,6 +114,7 @@ ms.locfileid: "36029090"
   "versionCode": "String"
 }
 ```
+
 
 
 

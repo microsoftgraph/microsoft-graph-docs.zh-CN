@@ -1,20 +1,20 @@
 ---
 title: 创建 deviceConfigurationDeviceStatus
 description: 创建新的 deviceConfigurationDeviceStatus 对象。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c83485f8e9b0d92502eb2295351c8550f83f47f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 817dabc8e2a75b7e0cecbc60064a311f0cafb320
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019140"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368706"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>创建 deviceConfigurationDeviceStatus
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 对象。
 
@@ -36,7 +36,7 @@ ms.locfileid: "36019140"
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
@@ -103,6 +103,7 @@ Content-Length: 478
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: 获取 iosCompliancePolicy
 description: 读取 iosCompliancePolicy 对象的属性和关系。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f58ebd0fd350dc9962bb80fd4da79f115ee3be77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9556c1548078ed54444105c5383197f25e258fa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018986"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368384"
 ---
 # <a name="get-ioscompliancepolicy"></a>获取 iosCompliancePolicy
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) 对象的属性和关系。
 
@@ -92,6 +92,7 @@ Content-Length: 978
   }
 }
 ```
+
 
 
 

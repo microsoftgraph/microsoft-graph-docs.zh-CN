@@ -1,20 +1,20 @@
 ---
 title: mobileThreatPartnerTenantState 枚举类型
 description: 此租户的合作伙伴状态。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f0ae38e6d0d19ecacc77f66a5a9ef3e3d1f540d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59dfe09f7792ea77edd945bcab732960e9643f0f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037364"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368300"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此租户的合作伙伴状态。
 
@@ -25,6 +25,7 @@ ms.locfileid: "36037364"
 |可用|1|合作伙伴可用。|
 |enabled|双面|启用合作伙伴。|
 |无|第三章|合作伙伴无响应。|
+
 
 
 

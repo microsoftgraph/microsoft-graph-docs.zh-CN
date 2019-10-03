@@ -1,20 +1,20 @@
 ---
 title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed7427e05e8d48f090f991b45e3a46cbc2985b01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8063d01ade277f659dcbabed05fbaa443c57fdc0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031113"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367726"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设置状态的设备合规性策略和配置摘要
 
@@ -67,6 +67,7 @@ ms.locfileid: "36031113"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 
