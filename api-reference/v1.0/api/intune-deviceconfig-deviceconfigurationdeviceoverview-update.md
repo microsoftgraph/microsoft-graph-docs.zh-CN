@@ -1,33 +1,33 @@
 ---
 title: 更新 deviceConfigurationDeviceOverview
 description: 更新 deviceConfigurationDeviceOverview 对象的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e47f904a5ee1216a63ed304411fca708995cc1e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71a9f21fc3688952d4b1dd75922c0298121475ed
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017517"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368727"
 ---
-# <a name="update-deviceconfigurationdeviceoverview"></a><span data-ttu-id="2502b-103">更新 deviceConfigurationDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="2502b-103">Update deviceConfigurationDeviceOverview</span></span>
+# <a name="update-deviceconfigurationdeviceoverview"></a><span data-ttu-id="4327d-103">更新 deviceConfigurationDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="4327d-103">Update deviceConfigurationDeviceOverview</span></span>
 
-> <span data-ttu-id="2502b-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2502b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4327d-104">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4327d-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2502b-105">更新 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="2502b-105">Update the properties of a [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.</span></span>
+<span data-ttu-id="4327d-105">更新 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4327d-105">Update the properties of a [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2502b-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="2502b-106">Prerequisites</span></span>
-<span data-ttu-id="2502b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2502b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4327d-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="4327d-106">Prerequisites</span></span>
+<span data-ttu-id="4327d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4327d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2502b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2502b-109">Permission type</span></span>|<span data-ttu-id="2502b-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2502b-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4327d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4327d-109">Permission type</span></span>|<span data-ttu-id="4327d-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4327d-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2502b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2502b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2502b-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2502b-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="2502b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2502b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2502b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="2502b-114">Not supported.</span></span>|
-|<span data-ttu-id="2502b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2502b-115">Application</span></span>|<span data-ttu-id="2502b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2502b-116">Not supported.</span></span>|
+|<span data-ttu-id="4327d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4327d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4327d-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4327d-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="4327d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4327d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4327d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4327d-114">Not supported.</span></span>|
+|<span data-ttu-id="4327d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4327d-115">Application</span></span>|<span data-ttu-id="4327d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="4327d-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2502b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2502b-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4327d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4327d-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,37 +36,37 @@ ms.locfileid: "36017517"
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2502b-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="2502b-118">Request headers</span></span>
-|<span data-ttu-id="2502b-119">标头</span><span class="sxs-lookup"><span data-stu-id="2502b-119">Header</span></span>|<span data-ttu-id="2502b-120">值</span><span class="sxs-lookup"><span data-stu-id="2502b-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4327d-118">请求头</span><span class="sxs-lookup"><span data-stu-id="4327d-118">Request headers</span></span>
+|<span data-ttu-id="4327d-119">标头</span><span class="sxs-lookup"><span data-stu-id="4327d-119">Header</span></span>|<span data-ttu-id="4327d-120">值</span><span class="sxs-lookup"><span data-stu-id="4327d-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2502b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2502b-121">Authorization</span></span>|<span data-ttu-id="2502b-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2502b-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2502b-123">接受</span><span class="sxs-lookup"><span data-stu-id="2502b-123">Accept</span></span>|<span data-ttu-id="2502b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="2502b-124">application/json</span></span>|
+|<span data-ttu-id="4327d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4327d-121">Authorization</span></span>|<span data-ttu-id="4327d-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4327d-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4327d-123">接受</span><span class="sxs-lookup"><span data-stu-id="4327d-123">Accept</span></span>|<span data-ttu-id="4327d-124">application/json</span><span class="sxs-lookup"><span data-stu-id="4327d-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2502b-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="2502b-125">Request body</span></span>
-<span data-ttu-id="2502b-126">在请求正文中，提供 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2502b-126">In the request body, supply a JSON representation for the [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4327d-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="4327d-125">Request body</span></span>
+<span data-ttu-id="4327d-126">在请求正文中，提供 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4327d-126">In the request body, supply a JSON representation for the [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.</span></span>
 
-<span data-ttu-id="2502b-127">下表显示创建 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="2502b-127">The following table shows the properties that are required when you create the [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).</span></span>
+<span data-ttu-id="4327d-127">下表显示创建 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4327d-127">The following table shows the properties that are required when you create the [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).</span></span>
 
-|<span data-ttu-id="2502b-128">属性</span><span class="sxs-lookup"><span data-stu-id="2502b-128">Property</span></span>|<span data-ttu-id="2502b-129">类型</span><span class="sxs-lookup"><span data-stu-id="2502b-129">Type</span></span>|<span data-ttu-id="2502b-130">说明</span><span class="sxs-lookup"><span data-stu-id="2502b-130">Description</span></span>|
+|<span data-ttu-id="4327d-128">属性</span><span class="sxs-lookup"><span data-stu-id="4327d-128">Property</span></span>|<span data-ttu-id="4327d-129">类型</span><span class="sxs-lookup"><span data-stu-id="4327d-129">Type</span></span>|<span data-ttu-id="4327d-130">说明</span><span class="sxs-lookup"><span data-stu-id="4327d-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2502b-131">id</span><span class="sxs-lookup"><span data-stu-id="2502b-131">id</span></span>|<span data-ttu-id="2502b-132">String</span><span class="sxs-lookup"><span data-stu-id="2502b-132">String</span></span>|<span data-ttu-id="2502b-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="2502b-133">Key of the entity.</span></span>|
-|<span data-ttu-id="2502b-134">pendingCount</span><span class="sxs-lookup"><span data-stu-id="2502b-134">pendingCount</span></span>|<span data-ttu-id="2502b-135">Int32</span><span class="sxs-lookup"><span data-stu-id="2502b-135">Int32</span></span>|<span data-ttu-id="2502b-136">挂起设备的数量</span><span class="sxs-lookup"><span data-stu-id="2502b-136">Number of pending devices</span></span>|
-|<span data-ttu-id="2502b-137">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="2502b-137">notApplicableCount</span></span>|<span data-ttu-id="2502b-138">Int32</span><span class="sxs-lookup"><span data-stu-id="2502b-138">Int32</span></span>|<span data-ttu-id="2502b-139">不适用设备的数量</span><span class="sxs-lookup"><span data-stu-id="2502b-139">Number of not applicable devices</span></span>|
-|<span data-ttu-id="2502b-140">successCount</span><span class="sxs-lookup"><span data-stu-id="2502b-140">successCount</span></span>|<span data-ttu-id="2502b-141">Int32</span><span class="sxs-lookup"><span data-stu-id="2502b-141">Int32</span></span>|<span data-ttu-id="2502b-142">成功设备的数量</span><span class="sxs-lookup"><span data-stu-id="2502b-142">Number of succeeded devices</span></span>|
-|<span data-ttu-id="2502b-143">errorCount</span><span class="sxs-lookup"><span data-stu-id="2502b-143">errorCount</span></span>|<span data-ttu-id="2502b-144">Int32</span><span class="sxs-lookup"><span data-stu-id="2502b-144">Int32</span></span>|<span data-ttu-id="2502b-145">错误设备的数量</span><span class="sxs-lookup"><span data-stu-id="2502b-145">Number of error devices</span></span>|
-|<span data-ttu-id="2502b-146">failedCount</span><span class="sxs-lookup"><span data-stu-id="2502b-146">failedCount</span></span>|<span data-ttu-id="2502b-147">Int32</span><span class="sxs-lookup"><span data-stu-id="2502b-147">Int32</span></span>|<span data-ttu-id="2502b-148">失败设备的数量</span><span class="sxs-lookup"><span data-stu-id="2502b-148">Number of failed devices</span></span>|
-|<span data-ttu-id="2502b-149">lastUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="2502b-149">lastUpdateDateTime</span></span>|<span data-ttu-id="2502b-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2502b-150">DateTimeOffset</span></span>|<span data-ttu-id="2502b-151">上次更新时间</span><span class="sxs-lookup"><span data-stu-id="2502b-151">Last update time</span></span>|
-|<span data-ttu-id="2502b-152">configurationVersion</span><span class="sxs-lookup"><span data-stu-id="2502b-152">configurationVersion</span></span>|<span data-ttu-id="2502b-153">Int32</span><span class="sxs-lookup"><span data-stu-id="2502b-153">Int32</span></span>|<span data-ttu-id="2502b-154">用于此概述的策略版本</span><span class="sxs-lookup"><span data-stu-id="2502b-154">Version of the policy for that overview</span></span>|
+|<span data-ttu-id="4327d-131">id</span><span class="sxs-lookup"><span data-stu-id="4327d-131">id</span></span>|<span data-ttu-id="4327d-132">String</span><span class="sxs-lookup"><span data-stu-id="4327d-132">String</span></span>|<span data-ttu-id="4327d-133">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4327d-133">Key of the entity.</span></span>|
+|<span data-ttu-id="4327d-134">pendingCount</span><span class="sxs-lookup"><span data-stu-id="4327d-134">pendingCount</span></span>|<span data-ttu-id="4327d-135">Int32</span><span class="sxs-lookup"><span data-stu-id="4327d-135">Int32</span></span>|<span data-ttu-id="4327d-136">挂起设备的数量</span><span class="sxs-lookup"><span data-stu-id="4327d-136">Number of pending devices</span></span>|
+|<span data-ttu-id="4327d-137">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="4327d-137">notApplicableCount</span></span>|<span data-ttu-id="4327d-138">Int32</span><span class="sxs-lookup"><span data-stu-id="4327d-138">Int32</span></span>|<span data-ttu-id="4327d-139">不适用设备的数量</span><span class="sxs-lookup"><span data-stu-id="4327d-139">Number of not applicable devices</span></span>|
+|<span data-ttu-id="4327d-140">successCount</span><span class="sxs-lookup"><span data-stu-id="4327d-140">successCount</span></span>|<span data-ttu-id="4327d-141">Int32</span><span class="sxs-lookup"><span data-stu-id="4327d-141">Int32</span></span>|<span data-ttu-id="4327d-142">成功设备的数量</span><span class="sxs-lookup"><span data-stu-id="4327d-142">Number of succeeded devices</span></span>|
+|<span data-ttu-id="4327d-143">errorCount</span><span class="sxs-lookup"><span data-stu-id="4327d-143">errorCount</span></span>|<span data-ttu-id="4327d-144">Int32</span><span class="sxs-lookup"><span data-stu-id="4327d-144">Int32</span></span>|<span data-ttu-id="4327d-145">错误设备的数量</span><span class="sxs-lookup"><span data-stu-id="4327d-145">Number of error devices</span></span>|
+|<span data-ttu-id="4327d-146">failedCount</span><span class="sxs-lookup"><span data-stu-id="4327d-146">failedCount</span></span>|<span data-ttu-id="4327d-147">Int32</span><span class="sxs-lookup"><span data-stu-id="4327d-147">Int32</span></span>|<span data-ttu-id="4327d-148">失败设备的数量</span><span class="sxs-lookup"><span data-stu-id="4327d-148">Number of failed devices</span></span>|
+|<span data-ttu-id="4327d-149">lastUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="4327d-149">lastUpdateDateTime</span></span>|<span data-ttu-id="4327d-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4327d-150">DateTimeOffset</span></span>|<span data-ttu-id="4327d-151">上次更新时间</span><span class="sxs-lookup"><span data-stu-id="4327d-151">Last update time</span></span>|
+|<span data-ttu-id="4327d-152">configurationVersion</span><span class="sxs-lookup"><span data-stu-id="4327d-152">configurationVersion</span></span>|<span data-ttu-id="4327d-153">Int32</span><span class="sxs-lookup"><span data-stu-id="4327d-153">Int32</span></span>|<span data-ttu-id="4327d-154">用于此概述的策略版本</span><span class="sxs-lookup"><span data-stu-id="4327d-154">Version of the policy for that overview</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2502b-155">响应</span><span class="sxs-lookup"><span data-stu-id="2502b-155">Response</span></span>
-<span data-ttu-id="2502b-156">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2502b-156">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4327d-155">响应</span><span class="sxs-lookup"><span data-stu-id="4327d-155">Response</span></span>
+<span data-ttu-id="4327d-156">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4327d-156">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2502b-157">示例</span><span class="sxs-lookup"><span data-stu-id="2502b-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4327d-157">示例</span><span class="sxs-lookup"><span data-stu-id="4327d-157">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2502b-158">请求</span><span class="sxs-lookup"><span data-stu-id="2502b-158">Request</span></span>
-<span data-ttu-id="2502b-159">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2502b-159">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4327d-158">请求</span><span class="sxs-lookup"><span data-stu-id="4327d-158">Request</span></span>
+<span data-ttu-id="4327d-159">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4327d-159">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 284
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2502b-160">响应</span><span class="sxs-lookup"><span data-stu-id="2502b-160">Response</span></span>
-<span data-ttu-id="2502b-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2502b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4327d-160">响应</span><span class="sxs-lookup"><span data-stu-id="4327d-160">Response</span></span>
+<span data-ttu-id="4327d-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4327d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -103,6 +103,7 @@ Content-Length: 333
   "configurationVersion": 4
 }
 ```
+
 
 
 
