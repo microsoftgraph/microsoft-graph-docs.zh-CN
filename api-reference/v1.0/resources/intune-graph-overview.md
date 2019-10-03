@@ -1,20 +1,20 @@
 ---
 title: 使用 Intune Graph API
 description: " 不支持 Intune 混合部署。 "
-author: tfitzmac
+author: davidmu1
 localization_priority: Priority
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: a5007c629fd48165ceedd6a829ce8c21fc5e9c10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7e7b6bf83f9ddbc4a274d7595c9fd40d9dc7aaa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027340"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356588"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
+> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/zh-CN/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
 适用于 Intune 的 Microsoft Graph API 允许以编程方式访问租户的 Intune 信息；API 会执行与可通过 **Azure 门户**执行的相同 Intune 操作。  
 
@@ -40,7 +40,7 @@ Intune 向 Microsoft Graph API 提供数据的方式与其他云服务相同，�
 
 ## <a name="accessing-the-microsoft-graph-api-for-intune"></a>访问适用于 Intune 的 Microsoft Graph API
 
-Intune 同时支持[委托的权限](https://docs.microsoft.com/graph/auth-v2-user)和[应用程序权限](https://docs.microsoft.com/graph/auth-v2-service)。 读取和写入操作都支持委托的权限。 目前，只有读取操作支持应用程序权限。 委托的权限和应用程序权限都支持单租户应用程序和多租户应用程序。 若要详细了解可通过 Microsoft Graph 获取的权限，请参阅 [ Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference)。
+Intune 同时支持[委托的权限](https://docs.microsoft.com/graph/auth-v2-user)和[应用程序权限](https://docs.microsoft.com/graph/auth-v2-service)。 委托的权限和应用程序权限都支持读取和写入操作。 委托的权限和应用程序权限都支持单租户应用程序和多租户应用程序。 若要详细了解可通过 Microsoft Graph 获取的权限，请参阅 [ Microsoft Graph 权限参考](https://docs.microsoft.com/graph/permissions-reference)。
 
 ## <a name="using-permissions"></a>使用权限
 
@@ -50,3 +50,4 @@ Microsoft Graph API 通过权限控制对资源的访问。 作为开发者，�
 
 - 了解[如何使用 Azure AD](https://docs.microsoft.com/zh-CN/intune/intune-graph-apis) 访问适用于 Intune 的 Microsoft Graph API。  
 - 浏览 [PowerShell Intune 示例](https://github.com/microsoftgraph/powershell-intune-samples)，这些示例演示如何在工作示例上下文中使用适用于 Intune 的 Microsoft Graph API。
+

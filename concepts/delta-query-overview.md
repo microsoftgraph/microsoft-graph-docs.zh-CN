@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a74645d8f5b579a28059124eabdf8ccfdb967c4e
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 4ea9156f89ac1e979c0f6c83e3b6ae828333fbbd
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054075"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333344"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -115,6 +115,49 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。 为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。 若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta?view=graph-rest-1.0)。
 
 > \*\* Planner 资源的使用模式与其他支持资源类似，仅存在些许差异。  有关详细信息，请参阅[跟踪 Planner 更改](/graph/api/planneruser-list-delta?view=graph-rest-beta)。
+
+### <a name="limitations"></a>限制
+
+#### <a name="properties-stored-outside-of-the-main-data-store"></a>在主数据存储外部存储的属性
+
+某些资源包含一些存储在资源主数据存储外部的属性（例如，用户资源大部分存储在 Azure AD 系统中，而 **skills** 之类的一些属性存储在 SharePoint Online 中）。 目前，在更改跟踪中不支持这些属性；对其中一个属性所做的更改不会导致在增量查询响应中显示对象。 目前，仅在主数据存储中存储的属性会触发增量查询中的更改。
+
+若要验证属性是否可在增量查询中使用，请尝试对资源集合执行常规 `GET` 操作，然后选择感兴趣的属性。 例如，可尝试对用户集合使用 **skills** 属性。
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/?$select=skills
+```
+
+由于 **skills** 属性存储在 Azure AD 外部，因此响应如下。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 501 Not Implemented
+Content-type: application/json
+
+{
+    "error": {
+        "code": "NotImplemented",
+        "message": "This operation target is not yet supported.",
+        "innerError": {
+            "request-id": "...",
+            "date": "2019-09-20T21:47:50"
+        }
+    }
+}
+```
+
+据此可得知，**user** 资源的增量查询不支持 **skills** 属性。
+
+#### <a name="navigation-properties"></a>导航属性
+
+不支持导航属性。 例如，不能跟踪对用户集合所做的更改，这些更改将包含对用户 **photo** 属性所做的更改；**photo** 是一个存储在用户实体之外的导航属性，且对其进行的更改不会导致增量响应中包含用户对象。
 
 ## <a name="prerequisites"></a>先决条件
 
