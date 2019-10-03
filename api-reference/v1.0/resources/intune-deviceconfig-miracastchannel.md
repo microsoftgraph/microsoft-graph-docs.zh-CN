@@ -1,27 +1,27 @@
 ---
 title: miracastChannel 枚举类型
 description: Miracast 通道的可能值。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f6ca37c3766efd236facf7cee528252eaf7cf71a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cfdd02dfc444b41ad5ea248b9f033255f1178636
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028075"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367376"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Miracast 通道的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|定制|0|用户定义, 默认值, 无意向。|
+|定制|0|用户定义，默认值，无意向。|
 |一个|1|次.|
 |two|双面|以下.|
 |three|第三章|条.|
@@ -42,6 +42,7 @@ Miracast 通道的可能值。
 |oneHundredFiftySeven|157|OneHundredFifty-七。|
 |oneHundredSixtyOne|161|OneHundredSixty-One。|
 |oneHundredSixtyFive|165|OneHundredSixty-5。|
+
 
 
 

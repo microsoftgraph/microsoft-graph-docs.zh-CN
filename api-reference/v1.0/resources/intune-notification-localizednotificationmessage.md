@@ -1,20 +1,20 @@
 ---
 title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4b86f29cbfee74a9401d764bb1c01b2ade0192f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0205e9e9f91b2c2a1edd5f0d997ebc69286b5042
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037595"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367292"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 指定区域设置的通知消息模板的文本内容。
 
@@ -59,6 +59,7 @@ ms.locfileid: "36037595"
   "isDefault": true
 }
 ```
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: iosStoreApp 资源类型
 description: 包含 iOS 应用商店应用的属性和继承的属性。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e9593ba8437d47a75a09e97c5a0b4777f2391f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a06cdb81eb309b0162f5031c7ce49ef960921b4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032324"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366522"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 iOS 应用商店应用的属性和继承的属性。
 
@@ -100,10 +100,12 @@ ms.locfileid: "36032324"
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   }
 }
 ```
+
 
 
 

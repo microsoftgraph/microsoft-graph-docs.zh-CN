@@ -1,20 +1,20 @@
 ---
 title: windowsInformationProtectionAppLearningSummary 资源类型
 description: Windows 信息保护应用学习摘要实体。
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aadf33ecc48f1f384ec38bdb4c531343f6bd08bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 571d214040e97216ece4b8b7f04cc93e0e22ad72
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036701"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367194"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary 资源类型
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 信息保护应用学习摘要实体。
 
@@ -55,6 +55,7 @@ Windows 信息保护应用学习摘要实体。
   "deviceCount": 1024
 }
 ```
+
 
 
 
