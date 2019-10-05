@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 1262813dd9ad54e8845ed000625d602ef0ff0c94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa5b9f8d28cc77878fe1da261621b63163595828
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030154"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402646"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -31,7 +31,7 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 3. [访问 Lisa 在 OneDrive for Business 上的文件](./api/driveitem-list-children.md)，查找最后修改[文件](./resources/driveitem.md)的人员的[身份](./resources/identityset.md)，并导航到此人的个人资料。
 4. 在 Exchange Online 中[访问 Lisa 的日历](./api/calendar-get.md)，并[确定 Lisa 与团队成员在接下来的两周内会面的最佳时间](./api/user-findmeetingtimes.md)。
 5. 在 Lisa 的日历中[订阅](./api/subscription-post-subscriptions.md)并[跟踪更改](./api/event-delta.md)，当她花费在会议上的时间超过 80% 时通知她。
-6. 设置当 Lisa 不在办公室时的[自动答复](./api/user-update-mailboxsettings.md#example)。
+6. 设置当 Lisa 不在办公室时的[自动答复](./api/user-update-mailboxsettings.md#example-1)。
 7. 根据通信、协作和业务关系，[获取与 Lisa 最相关的人员](./api/user-list-people.md)。
 8. 在 Lisa 的 OneDrive for Business 的 Excel 文件中，从一个[图表](./resources/chart.md)获取最新销售预测。
 9. [在 Planner 中查找分配给 Lisa 的任务](./api/planneruser-list-tasks.md)。

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: aad6f09762e815fc4c0a473141439cfe074b781c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 82c23195ea91c71f15e05cb575557ec413a48089
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893278"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402920"
 ---
 ```java
 
@@ -36,7 +36,7 @@ internetMessageHeadersList.add(internetMessageHeaders1);
 message.internetMessageHeaders = internetMessageHeadersList;
 
 graphClient.me()
-    .sendMail(message,saveToSentItems)
+    .sendMail(message,null)
     .buildRequest()
     .post();
 
