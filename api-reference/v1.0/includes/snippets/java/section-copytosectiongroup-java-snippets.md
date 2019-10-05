@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 761c22795daf8163e5596b12b22fd4d3faa9d563
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 31d7db2f8e4dc3f0b6eb0154b3665749d25c9b93
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884079"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402725"
 ---
 ```java
 
@@ -18,7 +18,7 @@ String groupId = "groupId-value";
 String renameAs = "renameAs-value";
 
 graphClient.me().onenote().sections("{id}")
-    .copyToSectionGroup(id,groupId,renameAs,siteCollectionId,siteId)
+    .copyToSectionGroup(id,groupId,renameAs,null,null)
     .buildRequest()
     .post();
 

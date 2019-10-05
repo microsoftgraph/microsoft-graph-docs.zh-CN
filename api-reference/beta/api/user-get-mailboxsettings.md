@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 296a5225ca924374a3c38242207f7f329b2e8401
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 2989be09e15ecc7ab6a0bf976ac9c6069b55023e
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822807"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402492"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -20,7 +20,7 @@ ms.locfileid: "36822807"
 
 用户可以通过 Outlook 客户端为其邮箱设置以下设置：
 
-- [自动答复](../resources/automaticrepliessetting.md)（收到电子邮件后，自动通知人员）
+- [自动答复](../resources/automaticrepliessetting.md)（收到电子邮件后自动通知人员）
 - 日期格式
 - [区域设置](../resources/localeinfo.md)（语言和国家/地区）
 - 时间格式
@@ -50,7 +50,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-若要获取特定设置-仅限自动答复设置、区域设置、时区或工作时间：
+若要获取特定设置-仅限自动答复设置、日期格式、区域设置、时间格式、时区或工作时间：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -99,7 +99,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 #### <a name="request"></a>请求 
 第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复的设置、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -177,7 +177,7 @@ Content-type: application/json
 #### <a name="request"></a>请求
 第二个示例专门获取已登录用户邮箱的自动答复设置。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_2"
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

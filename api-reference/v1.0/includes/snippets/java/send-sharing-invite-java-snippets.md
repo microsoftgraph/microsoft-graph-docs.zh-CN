@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 66f30ce9cb3af0f26eba320aec6aa8d734fd5c21
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3c5a10716640de706b8e52849c84fcf31ff4aa1e
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890799"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402801"
 ---
 ```java
 
@@ -19,9 +19,9 @@ recipientsList.add(recipients);
 
 String message = "Here's the file that we're collaborating on.";
 
-boolean requireSignIn = True;
+boolean requireSignIn = true;
 
-boolean sendInvitation = True;
+boolean sendInvitation = true;
 
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("write");

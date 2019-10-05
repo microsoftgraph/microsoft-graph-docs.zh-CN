@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 217f31582fafdb221d6f537ed9de543a53e31cbf
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 4c851437a8f108f56f5e587b93281094013e1b8d
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35719720"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402527"
 ---
 ```csharp
 
@@ -38,7 +38,7 @@ var method = "method-value";
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
     .Range().Sort
-    .Apply(fields,matchCase,hasHeaders,orientation,method)
+    .Apply(matchCase,hasHeaders,orientation,method,fields)
     .Request()
     .PostAsync();
 

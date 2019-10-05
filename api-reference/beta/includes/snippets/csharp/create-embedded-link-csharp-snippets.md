@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: b6bd4665a76282fe1e553b2f9e1255d0358b0eef
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 533411775a8b325a6b88f4efdade0feb7acfdb4d
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713155"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402186"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var type = "embed";
 
 await graphClient.Me.Drive.Items["{item-id}"]
-    .CreateLink(type,scope,expirationDateTime,password,message,recipients)
+    .CreateLink(type,null,null,null,null,null)
     .Request()
     .PostAsync();
 
