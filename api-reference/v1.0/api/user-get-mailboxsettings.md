@@ -1,26 +1,35 @@
 ---
 title: 获取用户的邮箱设置
 description: '获取用户的 mailboxSettings。 这包括自动答复设置（自动通知用户 '
-localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+localization_priority: Normal
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cff51b17348613efda4321cd537c51c0a1b81b6f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 779a92c3f1da597b0b66ef1fb723d8d8436556fa
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729117"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402898"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
-获取用户的 [mailboxSettings](../resources/mailboxsettings.md)。这包括自动答复（收到发件人的电子邮件时自动通知发件人）、区域设置（语言和国家/地区）、时区和工作时间的设置。
+获取用户的 [mailboxSettings](../resources/mailboxsettings.md)。 可以查看所有邮箱设置或获取特定设置。
 
-可以查看所有邮箱设置或获取特定设置。
+用户可通过 Outlook 客户端为其邮箱设置以下设置：
 
-时区是用户可以为用户邮箱设置的首选设置之一。 有效的时区格式包括 Windows 时区格式和 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）格式。 Windows 时区是默认格式。 
+- [自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）
+- 日期格式
+- [区域设置](../resources/localeinfo.md)（语言和国家/地区）
+- 时间格式
+- 时区
+- [工作时间](../resources/workinghours.md)
 
-获取用户的首选时区时，时区按创建时的格式返回。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。
+用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](https://docs.microsoft.com/zh-CN/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/zh-CN/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
+
+通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。 管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。 Windows 时区是默认格式。 
+
+此 `GET` 操作以管理员设置的格式返回用户的首选时区。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,21 +41,27 @@ ms.locfileid: "36729117"
 |应用程序 | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-获取用户的所有邮箱设置：
+若要获取用户的所有邮箱设置：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-获取特定设置，例如，仅获取自动答复设置、区域设置、时区或工作时间设置：
+若要获取特定设置 - 仅限自动答复设置、日期格式、区域设置、时间格式、时区或工作时间：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 
+GET /me/mailboxSettings/dateFormat
+GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
+
+GET /me/mailboxSettings/timeFormat
+GET /users/{id|userPrincipalName}/mailboxSettings/timeFormat
 
 GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
@@ -55,7 +70,7 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -70,13 +85,17 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
+- 字符串（适用于 **dateFormat**）
 - [localeInfo](../resources/localeinfo.md) 对象
+- 字符串（适用于 **timeFormat**）
 - 字符串（适用于 **timeZone**）
 - [workingHours](../resources/workinghours.md)
 
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
-第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括时区、自动答复、区域设置（语言和国家/地区）和工作时间设置。
+## <a name="examples"></a>示例
+
+### <a name="example-1"></a>示例 1
+#### <a name="request"></a>请求 
+第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间设置。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -86,26 +105,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response-1"></a>响应 1
-该响应包括所有的邮箱设置。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+该响应包括已登录用户的所有邮箱设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -150,11 +152,14 @@ Content-type: application/json
         "timeZone":{
             "name":"Pacific Standard Time"
         }
-    }
+    },
+    "dateFormat": "MM/dd/yyyy",
+    "timeFormat": "hh:mm tt"
 }
 ```
 
-##### <a name="request-2"></a>请求 2
+### <a name="example-2"></a>示例 2
+#### <a name="request"></a>请求
 第二个示例专门获取已登录用户邮箱的自动答复设置。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -177,13 +182,9 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 该响应仅包括自动答复设置。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -212,8 +213,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-3"></a>请求 3
+### <a name="example-3"></a>示例 3
+#### <a name="request"></a>请求
 第三个示例专门获取已登录用户邮箱的工作时间设置。
 <!-- {
   "blockType": "ignored",
@@ -222,7 +223,7 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
-##### <a name="response-3"></a>响应 3
+#### <a name="response"></a>响应
 该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",

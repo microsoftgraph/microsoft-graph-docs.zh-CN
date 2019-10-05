@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1ba15a7c10a5755d8e03b3b5c18f95353ac733e9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f3c2b2f7ea3e6f401a00c3b92500abea86a769e7
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884064"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402935"
 ---
 ```java
 
@@ -58,7 +58,7 @@ boolean returnSuggestionReasons = true;
 String minimumAttendeePercentage = "100";
 
 graphClient.me()
-    .findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,maxCandidates,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
+    .findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
     .buildRequest( requestOptions )
     .post();
 
