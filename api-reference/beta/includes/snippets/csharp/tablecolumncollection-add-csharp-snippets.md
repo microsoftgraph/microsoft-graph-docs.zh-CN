@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5e4f7d16293f55c6dc6ca5e725a72222c0e0a4ef
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e8ff875d4a8b9153b2370cbc393ff48a75958739
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35724651"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402497"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var values = new List<Json>()
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
-    .Add(index,values,name)
+    .Add(index,values,null)
     .Request()
     .PostAsync();
 

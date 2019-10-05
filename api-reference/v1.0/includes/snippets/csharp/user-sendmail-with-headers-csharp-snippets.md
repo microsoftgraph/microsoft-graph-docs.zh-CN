@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 3ecbfd64fb26438641d658e14a6142eeee791e27
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 98db3f89c5ee7acf8c2eff230b0784fe3d73a05f
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711399"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402921"
 ---
 ```csharp
 
@@ -45,7 +45,7 @@ var message = new Message
 };
 
 await graphClient.Me
-    .SendMail(message,saveToSentItems)
+    .SendMail(message,null)
     .Request()
     .PostAsync();
 

@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: a565d687e05cad30b71b17cde1f028ca56410548
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1d1a516da30f2ce74edce130e1bb893c8babde6f
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717001"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402534"
 ---
 ```csharp
 
@@ -33,7 +33,7 @@ var matchCase = true;
 var method = "method-value";
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Sort
-    .Apply(fields,matchCase,method)
+    .Apply(matchCase,method,fields)
     .Request()
     .PostAsync();
 

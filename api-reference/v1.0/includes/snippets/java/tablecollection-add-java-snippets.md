@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 808e0d3254b3a1a656d22c95e930c0ed721f47a9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0a9bd354733c808ee2dfeda57dd3fce9c0faae2d
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889532"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402682"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 String address = "Sheet1!A1:D5";
 
-boolean hasHeaders = True;
+boolean hasHeaders = true;
 
 graphClient.me().drive().items("{id}").workbook().tables()
     .add(address,hasHeaders)

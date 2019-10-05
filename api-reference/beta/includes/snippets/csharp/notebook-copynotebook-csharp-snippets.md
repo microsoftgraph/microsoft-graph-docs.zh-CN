@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7af19f122901e1b7ab213989b9fd6e1a5f72a5fa
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1c8496341efb44efb0a4304c4ae6dfec99549f75
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729391"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402511"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var groupId = "groupId-value";
 var renameAs = "renameAs-value";
 
 await graphClient.Me.Onenote.Notebooks["{id}"]
-    .CopyNotebook(groupId,renameAs,notebookFolder,siteCollectionId,siteId)
+    .CopyNotebook(groupId,renameAs,null,null,null)
     .Request()
     .PostAsync();
 

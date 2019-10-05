@@ -1,11 +1,11 @@
 ---
 description: 自动生成的文件。 不修改
-ms.openlocfilehash: 497ae67c34b9058605129acbfcbfe74842cc4a99
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: a332e99d6bf9de7b88f3dc9de1a30553c37982dd
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881820"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402816"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 String type = "embed";
 
 graphClient.me().drive().items("{item-id}")
-    .createLink(type,scope)
+    .createLink(type,null)
     .buildRequest()
     .post();
 
