@@ -3415,7 +3415,7 @@
                 - name: 设备配置组分配
                   href: resources/intune-deviceconfig-deviceconfigurationgroupassignment.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
@@ -3446,7 +3446,7 @@
                 - name: 设备配置用户状态
                   href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -7082,7 +7082,7 @@
                 - name: 设备类别
                   href: resources/intune-shared-devicecategory.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-shared-devicecategory-list.md
                     - name: 获取
                       href: api/intune-shared-devicecategory-get.md
@@ -7287,7 +7287,7 @@
                 - name: 移动应用疑难解答事件
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: 获取
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8373,7 +8373,7 @@
                       href: api/onpremisesagentgroup-get.md
                     - name: 创建
                       href: api/onpremisesagentgroup-post.md
-                    - name: Update
+                    - name: 更新
                       href: api/onpremisesagentgroup-update.md
                     - name: 删除
                       href: api/onpremisesagentgroup-delete.md
@@ -9593,6 +9593,10 @@
                   href: api/user-list-joinedteams.md
                 - name: 列出所有团队
                   href: /graph/teams-list-all-teams?context=graph/api/beta
+                - name: 获取团队照片
+                  href: api/team-get-photo.md
+                - name: 更新团队照片
+                  href: api/team-update-photo.md
             - name: 组（团队）
               href: resources/group.md
               items:
