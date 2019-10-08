@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: a3adfca811e6b4c770ebe97d3279f4568db8d3ed
-ms.sourcegitcommit: cfcd58f09bc44de0a32ecf4c627267035902a07e
+ms.openlocfilehash: ea123de2fea1efdc4647238f6a953e21d49901db
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37278612"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418208"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -21,6 +21,23 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 
 
 在下面查看 Microsoft Graph 中新增功能要点，并查看你可如何[分享你的想法](#want-to-stay-in-the-loop)。 如需了解 API 更新的更多详情，请参阅 API 更改日志的 [9 月](changelog.md#september-2019)和 [8 月](changelog.md#august-2019)部分。 
+
+
+## <a name="october-2019-new-and-generally-available"></a>2019 年 10 月：新版本和正式版
+
+### <a name="mail"></a>邮件
+使用新的 **message** 参数更新[回复](/graph/api/message-reply?view=graph-rest-1.0)邮件时任何可写的 [message](/graph/api/resources/message?view=graph-rest-1.0) 属性，例如 [将收件人添加到回复](/graph/api/message-reply#example ?view=graph-rest-1.0)。
+
+### <a name="users"></a>用户
+[获取](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0)或[设置](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0)[用户邮箱](/graph/api/resources/mailboxsettings?view=graph-rest-1.0)的用户首选日期和时间格式设置。 
+
+## <a name="october-2019-new-in-preview"></a>2019 年 10 月：预览版中的新增功能
+
+> [!IMPORTANT]
+> _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在生产应用中使用它们。
+
+### <a name="groups"></a>组
+使用 **hideFromAddressLists** 和 **hideFromOutlookClients** 属性在 Outlook 用户界面的某些部分或 Outlook 客户端中控制[组](/graph/api/resources/group?view=graph-rest-beta)的可见性。
 
 ## <a name="september-2019-new-and-generally-available"></a>2019 年 9 月：新版本和正式版
 
@@ -42,6 +59,9 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 ### <a name="mail"></a>邮件
 [获取邮件的 MIME 内容](outlook-get-mime-message.md)。
 
+### <a name="microsoft-graph-toolkit"></a>Microsoft Graph 工具包
+使用 [Microsoft Graph 工具包](toolkit/overview.md)开发生产应用，该应用提供一致的 Microsoft 365 外观，可以节省从 Microsoft Graph 进行身份验证和访问数据的时间。
+
 ## <a name="september-2019-new-in-preview"></a>2019 年 9 月：预览版中的新增功能
 
 > [!IMPORTANT]
@@ -50,53 +70,27 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 ### <a name="devices-and-apps"></a>设备和应用
 Intune [9 月](changelog.md#september-2019)更新
 
-### <a name="identity-and-access"></a>标识和访问
-用于在租户的云应用程序中[同步标识](/graph/api/resources/synchronization-overview?view=graph-rest-beta)的增强功能：
+### <a name="files"></a>文件
+- 增强的同步支持：
 
-- 存储[同步作业](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)的设置
-- 指定对同步作业施加[隔离](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta)的原因
+  - 使用新的 **pendingOperations** 属性标识可能影响 [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) 的二进制内容的操作。
+  - [还原](/graph/api/driveitem-restore?view=graph-rest-beta)已删除的 **driveItem**。 
+- 使用安全哈希算法 (SHA-256) 增强[文件](/graph/api/resources/file?view=graph-rest-beta)数据安全性和完整性。
+- 获取或设置[照片](/graph/api/resources/photo?view=graph-rest-beta)的方向。 OneDrive 个人版上支持设置。
+
+### <a name="identity-and-access"></a>标识和访问
+- 使用新的 **identities** 属性并获取[用户](/graph/api/resources/user?view=graph-rest-beta)可用于登录帐户的标识。 这些标识可由组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供。
+- 用于在租户的云应用程序中[同步标识](/graph/api/resources/synchronization-overview?view=graph-rest-beta)的增强功能：
+
+  - 存储[同步作业](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)的设置
+  - 指定对同步作业施加[隔离](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta)的原因
 
 ### <a name="teamwork"></a>团队合作
-对[团队](/graph/api/resources/team?view=graph-rest-beta)的**常规**频道提供编程支持，并且支持自定义[成员设置](/graph/api/resources/teammembersettings?view=graph-rest-beta)以允许团队成员在**团队**中创建私人频道。
+使用[团队](/graph/api/resources/team?view=graph-rest-beta)的**常规**频道或自定义[成员设置](/graph/api/resources/teammembersettings?view=graph-rest-beta)，让团队成员在**团队**中创建专用频道。
 
 ### <a name="users"></a>用户
 - 获取或更新[用户](/graph/api/resources/user?view=graph-rest-beta)用于登录帐户的标识。 这些标识可由商业组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供。
 - 获取或更新用户的[邮箱首选日期和时间格式设置](/graph/api/resources/mailboxsettings?view=graph-rest-beta)。
-
-## <a name="august-2019-new-and-generally-available"></a>2019 年 8 月：新版本和正式版 
-
-### <a name="reports"></a>报告
-- 获取与已删除项计数和大小相关的更多[邮箱使用情况数据](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)。
-- 在[获取组活动详细信息](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)时，跟踪 Office 365 组 ID。
-- 在获取 [OneDrive 使用帐户详细信息](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)和 [SharePoint 网站使用情况详细信息](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)时，跟踪所有者主体名称。
-- 在[获取每 Office 365 服务的用户计数报告](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)时，获取 Office 365 上的活动和非活动用户数。
-
-### <a name="security"></a>安全性
-- 使用新的[适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon)将多个合作伙伴产品的安全警报和看法传输至 Splunk，从而更轻松地实时关联其安全性数据。 有关详细信息，请参阅[公告](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972)。 
-- [查看由 Microsoft 或者与安全性 API 相关的 Microsoft 合作伙伴构建的其他解决方案和连接器列表](security-integration.md)，使你以统一的格式使用数据。
-
-
-## <a name="august-2019-new-in-preview"></a>2019 年 8 月：预览版新增功能
-
-> [!IMPORTANT]
-> _预览_状态下的功能（包括 API 和工具）可能会发生变更，恕不另行通知；一些功能可能永远不会升级为 GA 状态。 请不要在成品应用中使用它们。
-
-### <a name="devices-and-apps"></a>设备和应用
-Intune [8 月](changelog.md#august-2019)更新
-
-### <a name="education"></a>教育版
-- 将[教师](/graph/api/resources/educationuser?view=graph-rest-beta)或[作业](/graph/api/resources/educationassignment?view=graph-rest-beta)与[评分标准](/graph/api/resources/educationrubric?view=graph-rest-beta)相关联，以解释特定作业质量和等级。 质量示例为拼写和语法，等级示例为“良好”和“不良”。 可以进一步将点数和权重与评分标准相关联。 有关详细信息，请参阅[教育版评分标准概述](education-rubric-overview.md)。
-- 评估作业并从[反馈](/graph/api/resources/educationfeedbackoutcome?view=graph-rest-beta)、[数字等级](/graph/api/resources/educationpointsoutcome?view=graph-rest-beta)或[评分标准](/graph/api/resources/educationrubricoutcome?view=graph-rest-beta)方面展示结果。
-
-### <a name="files"></a>文件
-到目前为止，你已可以[关注](/graph/api/driveitem-follow?view=graph-rest-beta) [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)，以便能够便捷访问或方便执行移动、复制和另存为等操作。 现在可以使用[取消关注](/graph/api/driveitem-unfollow?view=graph-rest-beta)操作来停止关注此类驱动器项。
-
-### <a name="identity-and-access"></a>身份和访问
-- 基于角色的访问控制 (RBAC) 提供商可以在 Azure Active Director 中[管理角色](/graph/api/resources/rolemanagement?view=graph-rest-beta)，方法是[定义可以在特定资源上执行的角色操作](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta)，基于这些角色定义为用户[分配角色](/graph/api/resources/unifiedroleassignment?view=graph-rest-beta)，为他们授权相应的资源访问权限。
-- 管理员可以[列出访问审查](/graph/api/accessreview-list?view=graph-rest-beta)，以高效地审核组成员身份、企业应用程序访问权限和角色分配。 定期访问审查可确保只有相应的人员才能继续以特定方式访问资源。
-
-### <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
-最终用户可以使用 Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) 应用获取与管理时间、工作协作和工作生活平衡有关的见解。 现在，你可以使用[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) 整合与工作活动（如呼叫、聊天和电子邮件）所花时间相关的数据、以帮助提高用户的工作效率和幸福感。 
 
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环

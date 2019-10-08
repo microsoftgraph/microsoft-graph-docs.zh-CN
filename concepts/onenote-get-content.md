@@ -4,12 +4,12 @@ description: " Office 365 中的企业笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 2db43dd8ec2d0cf58f2938b78054986823f433c4
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639211"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418209"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
@@ -543,7 +543,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **注意：** 检索条目默认数量（即，它们不指定 **top** 表达式）的页面的 GET 请求在响应中将返回一个 **@odata.nextLink** 链接，你可使用此链接获取接下来的 20 个条目。
+> **注意：** 检索条目默认数量（即，它们不指定 **top** 表达式）的页面的 GET 请求在响应中将返回一个 **\@odata.nextLink** 链接，你可使用此链接获取接下来的 20 个条目。
  
 
 <a name="supported-odata-query-string-options"></a>
