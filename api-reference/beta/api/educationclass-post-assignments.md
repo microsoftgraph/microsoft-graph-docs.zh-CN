@@ -1,22 +1,22 @@
 ---
 title: 创建 educationAssignment
-description: '创建新的工作分配。 只有课堂中的教师才能创建工作分配。 工作分配从草稿状态开始, 这意味着在调用 publish 之前, 学生将看不到分配。  '
+description: '创建新的工作分配。 只有课堂中的教师才能创建工作分配。 工作分配从草稿状态开始，这意味着在调用 publish 之前，学生将看不到分配。  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f8f4b7fe917b9366f852b6fe0b620754890705a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fe916bf7b37e7c7ee2e0487185b585075fd32cc
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955360"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418228"
 ---
 # <a name="create-educationassignment"></a>创建 educationAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的工作分配。 只有课堂中的教师才能创建工作分配。 工作分配从草稿状态开始, 这意味着在调用 publish 之前, 学生将看不到分配。  
+创建新的工作分配。 只有课堂中的教师才能创建工作分配。 工作分配从草稿状态开始，这意味着在调用 publish 之前，学生将看不到分配。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,11 +40,11 @@ POST /education/classes/{id}/assignments
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供[educationAssignment](../resources/educationassignment.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationAssignment](../resources/educationassignment.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -76,7 +76,7 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-在请求正文中, 提供[educationAssignment](../resources/educationassignment.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationAssignment](../resources/educationassignment.md)对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -100,6 +100,7 @@ Content-length: 279
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "2014-02-01T00:00:00Z",
   "classId": "11018",
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "createdBy": {
       "application": null,
       "device": null,

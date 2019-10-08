@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a7b201dcafa69fa17650b0d4154ad558d0a78c96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d8cb3f99e06cffa6c418222929e0065a2931f30
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955437"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418249"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -50,7 +50,7 @@ GET /education/classes/{id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -95,6 +95,7 @@ Content-length: 344
       "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
       "assignedDateTime": "2014-02-01T00:00:00Z",
       "classId": "11018",
+      "closeDateTime": "2014-02-11T00:00:00Z",
       "createdBy": {
           "application": null,
           "device": null,

@@ -2,40 +2,41 @@
 title: conversationMember 资源类型
 description: 表示对话中的用户。
 localization_priority: Normal
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca5115922dfb40239b8ca290a39f3c5953d4e4ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e20a1aa0ef42f41a3fc300f804bb5477b5fe1cb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973973"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633697"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[聊天](chat.md)中的用户。
+表示[聊天](chat.md)或[频道](channel.md)中的用户。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出聊天成员](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。|
-|[获取聊天成员](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | 获取聊天中的单个用户。|
+|[列出聊天成员](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) 集合 | 获取聊天中所有用户的列表。|
+|[获取聊天成员](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | 获取聊天中的单个用户。|
+|[列出成员](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) 集合 | 获取包含聊天或频道中所有用户的列表。|
+|[获取成员](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | 获取聊天或频道中的一位用户。|
+|[添加成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| 向频道添加成员。|
+|[更新成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| 更新频道中的成员。|
+|[删除成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道中的成员。|
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型   |说明|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。 用户的唯一 ID。|
 |displayName| string | 用户的显示名称。 |
 |角色| string 集合 | 该用户的角色。 |
-
-## <a name="relationships"></a>关系
-
-无
 
 ## <a name="json-representation"></a>JSON 表示形式
 

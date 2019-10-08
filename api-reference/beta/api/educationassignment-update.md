@@ -1,22 +1,22 @@
 ---
 title: 更新 educationassignment
-description: 更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意, 不能使用 PATCH 请求来更改工作分配的状态。 使用 "发布" 操作可更改工作分配状态。
+description: 更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意，不能使用 PATCH 请求来更改工作分配的状态。 使用 "发布" 操作可更改工作分配状态。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0da35dc423380958d10fdb750a561c13bc711f00
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 591f9cbdc4d1d83af74dddca34102ad23e6d31a5
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416511"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418242"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意, 不能使用 PATCH 请求来更改工作分配的状态。 使用 "[发布](../api/educationassignment-publish.md)" 操作可更改工作分配状态。
+更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意，不能使用 PATCH 请求来更改工作分配的状态。 使用 "[发布](../api/educationassignment-publish.md)" 操作可更改工作分配状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,18 +47,19 @@ PATCH /education/classes/{id}/assignments/{id}
 |allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 应将分配发布给学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
+|closeDateTime|DateTimeOffset| 将为提交关闭工作分配的日期。 这是可选字段，如果工作分配不 allowLateSubmissions 或 closeDateTime 与 dueDateTime 相同，则可以为 null，但如果指定，则它必须大于或等于 dueDateTime。|
 |displayName|String| 分配的名称。 |
 |dueDateTime|DateTimeOffset| 日期工作分配到期。 |
 |评分|educationAssignmentGradeType| 将如何对工作分配进行评分。|
 |指令|itemBody| 向学生分配的说明以及工作分配。 |
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignment](../resources/educationassignment.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignment](../resources/educationassignment.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationassignment"
@@ -85,7 +86,7 @@ Content-length: 279
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -113,6 +114,7 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
   "assignedDateTime": "2014-01-01T00:00:00Z"

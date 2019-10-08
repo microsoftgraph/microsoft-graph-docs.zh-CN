@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e983f217af71b6e27f750599ee2f8db295da5fec
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 5ffab7e11675996e79aed746cfe4624b28e37aab
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173368"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418284"
 ---
 # <a name="educationmakecoderesource-resource-type"></a>educationMakeCodeResource 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "36173368"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|mkcd|String|MakeCode 项目的 ID|
-|url|String|MakeCode 资源类型的主机 (例如, arcade、microbit)|
+|projectId|String|MakeCode 项目的 ID|
+|hostWebUrl|String|MakeCode 资源类型的主机（例如，arcade、microbit）|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,8 +40,8 @@ ms.locfileid: "36173368"
 
 ```json
 {
-  "mkcd": "String",
-  "url": "String"
+  "projectId": "String",
+  "hostWebUrl": "String"
 }
 ```
 
