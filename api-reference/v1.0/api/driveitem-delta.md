@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: 7e20a704e8a8e3ed70c895bc71727132d2ed989c
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8ec4129558d96844ef0150c8ef8dcdfd01decba8
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721171"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418319"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -64,10 +64,10 @@ GET /users/{userId}/drive/root/delta
 
 除了 DriveItems 集合，此响应还包括以下属性之一：
 
-| 名称                 | 值  | 说明                                                                                                                                      |
+| 名称                 | 值  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
-| **@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **@odata.nextLink**。用于在将来读取下一组更改。  |
+| **\@odata.nextLink**  | url    | 如果当前集有其他更改，用来检索下一可用更改页的 URL。                                        |
+| **\@odata.deltaLink** | url    | 返回当前所有更改后返回的 URL，而不是 **\@odata.nextLink**。 用于在将来读取下一组更改。  |
 
 ## <a name="example-initial-request"></a>示例（初始请求）
 
@@ -135,7 +135,8 @@ Content-type: application/json
 }
 ```
 
-此响应包含第一页的更改，**@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
+此响应包含第一页的更改，**\@odata.nextLink** 属性指示当前的项目集中有更多项目。
+在检索完所有项目页之前，你的应用程序应继续请求 **\@odata.nextLink** 的 URL 值。
 
 ## <a name="example-last-page-in-a-set"></a>示例（集中的最后一页）
 
@@ -201,7 +202,7 @@ Content-type: application/json
 
 此响应表示名为 `folder2` 的项目已被删除，并在初始请求和此请求之间添加或修改了 `file.txt` 项目以更新本地状态。
 
-最后一页的项目将包括 **@odata.deltaLink** 属性，此属性提供的 URL 以后可用于检索自当前项目集起的更改。
+最后一页的项目将包括 **\@odata.deltaLink** 属性，此属性提供的 URL 以后可用于检索自当前项目集以来的更改。
 
 可能会发生本服务无法为特定标记提供更改列表的情况（例如，如果客户端在连接断开很长时间后尝试重新使用旧标记，或如果服务器状态已更改并需要新标记）。在这些情况下，本服务将返回带有错误响应的 `HTTP 410 Gone` 错误（包含以下错误代码之一）和 `Location` 标头（包含从头开始全新的增量枚举的新 nextLink）。完成全部枚举后，将返回的项目与本地状态进行比较，并遵循以下说明。
 

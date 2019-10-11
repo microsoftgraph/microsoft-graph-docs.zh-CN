@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: e5f297dc236899f0fbd362c7ef369897b7bc7786
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 55fd093150794ad23884ee130db7612046e7d068
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719868"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439875"
 ---
 # <a name="chatmessages-delta"></a>chatMessages：delta
 
@@ -40,6 +40,9 @@ ms.locfileid: "36719868"
 |委派（工作或学校帐户）     |Group.Read.All、Group.ReadWrite.All          |
 |委派（个人 Microsoft 帐户） |不支持                                |
 |应用程序                            |Group.Read.All、Group.ReadWrite.All          |
+
+> [!NOTE]
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +82,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](https://docs.microsoft.com/zh-CN/graph/api/resources/chatmessage?view=graph-rest-beta) 对象集合。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) 对象集合。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 ## <a name="examples"></a>示例
 

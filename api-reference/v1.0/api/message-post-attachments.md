@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d1602df904e7d84fb924a2ea88f40f95f0df55f
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: ef8e2d442f2a084f16f4b39300d6d195bf6ed3c3
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461950"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37427919"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -71,7 +71,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
@@ -96,7 +96,7 @@ Content-length: 142
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -141,7 +141,7 @@ Content-length: 202
 下面是一个请求示例。
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_item_attachment_from_message_v1"
 }-->
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7885e45be21084a4b1fd635d6e95a2289fec2a3e
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 5e31839a9eb1c0e80e23e909a1d87f6c2b84428d
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461173"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439762"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
@@ -22,11 +22,11 @@ ms.locfileid: "36461173"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
+| 权限类型                        | 权限（从最低特权到最高特权）             |
+| :------------------------------------- | :------------------------------------------------------ |
 | 委派（工作或学校帐户）     | EduAssignments、ReadWriteBasic、EduAssignments |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 委派（个人 Microsoft 帐户） | 不支持。                                          |
+| 应用程序                            | 不支持。                                          |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,27 +38,27 @@ POST /education/me/rubrics
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称          | 说明   |
-|:--------------|:--------------|
+| 名称          | 说明    |
+| :------------ | :------------- |
 | Authorization | 持有者 {token} |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[educationRubric](../resources/educationrubric.md)对象的 JSON 表示形式。
+在请求正文中，提供[educationRubric](../resources/educationrubric.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和新的[educationRubric](../resources/educationrubric.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[educationRubric](../resources/educationrubric.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-posting-a-credit-rubric"></a>示例 1: 过帐信用卡 Rubric
+### <a name="example-1-posting-a-credit-rubric"></a>示例1：过帐信用卡 Rubric
 
 #### <a name="request"></a>请求
 
-下面的示例演示了如何将信用卡 rubric (没有点的 rubric) 发布的请求。
+下面的示例演示了如何将信用卡 rubric （没有点的 rubric）发布的请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser"
@@ -142,7 +142,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -154,7 +154,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -238,7 +238,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-posting-a-points-rubric"></a>示例 2: 发布点 Rubric
+### <a name="example-2-posting-a-points-rubric"></a>示例2：发布点 Rubric
 
 下面的示例演示了使用点发布 rubric 的请求。
 <!-- {
@@ -335,7 +335,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

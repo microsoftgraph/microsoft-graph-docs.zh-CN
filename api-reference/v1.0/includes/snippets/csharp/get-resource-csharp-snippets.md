@@ -1,23 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 718c5013662f7edff1d9c61b6fbd2a8d0a654eb5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6d9380b5d249aff7a75710f0bb630aecccef71e3
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722229"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428854"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var resources = await graphClient.Me.Onenote.Resources["{id}"]
+var stream = await graphClient.Me.Onenote.Resources["{id}"].Content
     .Request()
-    .Select( e => new {
-             e.Content 
-             })
     .GetAsync();
-
-var content = resources.Content;
 
 ```

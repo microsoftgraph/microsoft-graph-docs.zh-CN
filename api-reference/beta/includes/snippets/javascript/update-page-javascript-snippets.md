@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: e47d3f4023ffdeb2a766de10f8ad5ca562ccdba9
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f6ec02de37009e3440b97543112fdf9a9e4eb35e
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636709"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428818"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const Stream = [
+const stream = [
    {
     'target':'#para-id',
     'action':'insert',
@@ -31,6 +31,6 @@ const Stream = [
 
 let res = await client.api('/me/onenote/pages/{id}/content')
     .version('beta')
-    .update(Stream);
+    .update(stream);
 
 ```

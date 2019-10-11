@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 6f7c28f517def80f2290aa04c838f9910209a752
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: e9a6c55dc65b11c130f63bd1e112911d49808d7d
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853817"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418312"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -115,6 +115,8 @@ ms.locfileid: "36853817"
 |expirationDateTime|DateTimeOffset| 设置的组的过期时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含 `Unified`，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认情况下返回。 支持 $filter。|
 |hasMembersWithLicenseErrors|Boolean| 指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>GET 操作从未返回此属性。 可将它用作 $filter 参数，获取具有许可证错误的成员的组（也就是说，此属性的筛选器为 **true**）。|
+|hideFromAddressLists |Boolean |如果该组未显示在 Outlook 用户界面的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
+|hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。 <br><br>仅在 $select 上返回。 只读。 |
@@ -231,6 +233,8 @@ ms.locfileid: "36853817"
   "displayName": "string",
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
+  "hideFromAddressLists": false,
+  "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isFavorite": true,
   "isSubscribedByMail": true,

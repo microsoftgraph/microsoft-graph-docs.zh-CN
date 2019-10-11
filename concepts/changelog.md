@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: bfaa2aec347b0dd710d0bb52abfaa96d50424eab
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: dcd7203c948329577580b2045ecbdb2f2c27c13d
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333281"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418305"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -16,7 +16,40 @@ ms.locfileid: "37333281"
 
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
+## <a name="october-2019"></a>2019 年 10 月
+
+### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta | 添加了[获取团队照片](/graph/api/team-get-photo?view=graph-rest-beta)和[更新团队照片](/graph/api/team-update-photo?view=graph-rest-beta)方法。 |
+
+### <a name="groups"></a>组
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | Beta          |向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了 **hideFromAddressLists** 和 **hideFromOutlookClients** 属性，用于控制一个组在 Outlook 用户界面中的可见性。|
+
+### <a name="mail-outlook"></a>邮件 (Outlook)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | v1.0          | 向[即时回复消息](/graph/api/message-reply?view=graph-rest-1.0)的方法添加了 **message** 参数。 |
+
+### <a name="users--outlook-settings"></a>用户|Outlook 设置
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | V1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 资源的 **dateFormat** 和 **timeFormat** 属性。 属性表示用户的首选日期和时间格式。|
+
 ## <a name="september-2019"></a>2019 年 9 月
+
+### <a name="education"></a>教育
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 向 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) 添加了新属性 **closeDateTime**。|
+| 更改 | beta | 在 [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) 资源中，已将属性名称 **mkcd** 更改为 **projectId** 并将 **url** 更改为 **hostWebUrl**。|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -1240,7 +1273,7 @@ ms.locfileid: "37333281"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | 添加了 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，以及 [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta) 和 [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) 复杂类型，来支持[获取给定时间内用户的空闲/忙碌、可用性信息、通讯组列表和资源](outlook-get-free-busy-schedule.md)。 |
+| 添加项 | Beta | 添加了 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，以及 [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta) 和 [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) 复杂类型，来支持[获取给定时间内用户的空闲/忙碌、可用性信息、通讯组列表和资源](outlook-get-free-busy-schedule.md)。 |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
 
@@ -3528,7 +3561,7 @@ ms.locfileid: "37333281"
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 添加了 inferenceClassification 资源类型。 |
 | 添加项        | Beta        | 向 mailboxsettings 添加了 timeZone。   |
-| 添加        | Beta        | 向 _user_ 添加了 API _findMeetingTimes_to。   |
+| Addition        | Beta        | 向 _user_ 添加了 API _findMeetingTimes_to。   |
 
 ## <a name="april-2016"></a>2016 年 4 月
 

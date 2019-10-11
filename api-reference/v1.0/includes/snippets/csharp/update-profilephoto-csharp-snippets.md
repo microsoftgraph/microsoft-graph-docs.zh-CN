@@ -1,20 +1,20 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: dd9af7e5b3a02d00b164e2b2aaa2b40cd62dbd02
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fbc0f42c44b78e10f3927e64200900125f27f6f8
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739589"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428843"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var Stream = "Binary data for the image"
+var stream = "Binary data for the image"
 
 await graphClient.Me.Photo.Content
     .Request()
-    .PutAsync(Stream);
+    .PutAsync(stream);
 
 ```

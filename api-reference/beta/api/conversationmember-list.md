@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c42fd03fbc2ab0a44c6c23af151ade58ef64396e
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 00d3a31d11f354204a64c1957d611a06f5c004be
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719694"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439804"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -27,6 +27,9 @@ ms.locfileid: "36719694"
 |委派（工作或学校帐户）|Chat.Read、Chat.ReadWrite|
 |委派（个人 Microsoft 帐户）|不支持|
 |Application| Chat.Read.All、Chat.ReadWrite.All |
+
+> [!NOTE]
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

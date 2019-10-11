@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 779a92c3f1da597b0b66ef1fb723d8d8436556fa
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
-ms.translationtype: HT
+ms.openlocfilehash: d4cb9e9a665ea6e1a06162ddc6cee3067f0e21d1
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402898"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37427758"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -25,7 +25,7 @@ ms.locfileid: "37402898"
 - 时区
 - [工作时间](../resources/workinghours.md)
 
-用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](https://docs.microsoft.com/zh-CN/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/zh-CN/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
+用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
 
 通过从管理员为其邮箱服务器设置的[支持时区](outlookuser-supportedtimezones.md)中进行选择，用户可以在任何 Outlook 客户端上设置自己喜欢的时区。 管理员能够以 Windows 时区格式或者以 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（也称为“Olson 时区”）格式设置时区。 Windows 时区是默认格式。 
 
@@ -97,7 +97,6 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 #### <a name="request"></a>请求 
 第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间设置。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -180,6 +179,10 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

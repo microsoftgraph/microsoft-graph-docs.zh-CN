@@ -5,23 +5,23 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0a224df7acdc0396d13743433d2cb407eb500d06
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: d26efae5860b918563a265bde12dbfafe68b21fe
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402828"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37427961"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
 启用、配置或禁用以下一个或多个设置作为用户的[mailboxSettings](../resources/mailboxsettings.md)的一部分：
 
-- [自动答复](../resources/automaticrepliessetting.md)（收到电子邮件后自动通知人员）
+- [自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）
 - dateFormat
 - [区域设置](../resources/localeinfo.md)（语言和国家/地区）
 - timeFormat
 - 时区
-- [working hours － 工作时间](../resources/workinghours.md)
+- [工作时间](../resources/workinghours.md)
 
 更新用户的首选日期或时间格式时，请分别指定[短日期](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式。 
 
@@ -58,9 +58,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
-|dateFormat|string|用户邮箱的日期格式。|
+|dateFormat|字符串|用户邮箱的日期格式。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
-|timeFormat|string|用户邮箱的时间格式。|
+|timeFormat|字符串|用户邮箱的时间格式。|
 |timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](../resources/workinghours.md)|用户工作的小时数、一周的天数和时区。|
 
@@ -110,6 +110,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxsettings-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 该响应包括自动答复的更新设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。

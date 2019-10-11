@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bd4e4179003891794f11bdb6be1f142cfd00e8a6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: a2860ecb5258d17183d6e4de5b53bafdd03b93f0
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720744"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439784"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -21,37 +21,46 @@ ms.locfileid: "36720744"
 <!-- Please verify the revision to the delegated token text. -->
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduRoster.ReadBasic  |
-|委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+| 权限类型                        | 权限（从最低特权到最高特权） |
+| :------------------------------------- | :------------------------------------------ |
+| 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/classes
 GET /education/users/{id}/classes
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+
+| 标头        | 值                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationClass](../resources/educationclass.md) 对象的集合。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_classes"
@@ -67,13 +76,14 @@ GET https://graph.microsoft.com/beta/education/me/classes
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。

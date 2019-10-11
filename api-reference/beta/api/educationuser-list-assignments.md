@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 20e6cd176f335eed2f27ccbaaca1f939d677e328
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 2d014f6859622d8ec5fd5240706f77736fa86897
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418221"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439755"
 ---
 # <a name="list-assignments"></a>列出作业
 
@@ -19,13 +19,14 @@ ms.locfileid: "37418221"
 返回为所有类分配给用户的工作分配的列表。 此实用程序命名空间允许呼叫者在单个呼叫中查找所有学生的分配，而无需从每个班级中请求分配。 工作分配列表包含从类命名空间中获取工作分配的详细信息所需的内容。 分配上的所有其他操作都应使用类命名空间。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
-|委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。 | 
+| 权限类型                        | 权限（从最低特权到最高特权）                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| 委派（工作或学校帐户）     | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                                         |
+| 应用程序                            | 不支持。                                                                                         |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -33,19 +34,27 @@ ms.locfileid: "37418221"
 GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 标头       | 值 |
-|:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+
+| 标头        | 值                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象集合。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {
@@ -55,10 +64,13 @@ GET /education/users/{id}/assignments
 ```http 
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
+
 ##### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 
 <!-- {
   "blockType": "ignored",

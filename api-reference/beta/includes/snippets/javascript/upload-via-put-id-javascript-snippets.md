@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8e2a12544f9a71d416f2928ba6a873a420923dab
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 93d8c31e0dc79253fc3d4a36ed4bd1df06af5ef1
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636529"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428796"
 ---
 ```javascript
 
@@ -15,10 +15,10 @@ const options = {
 
 const client = Client.init(options);
 
-const Stream = The contents of the file goes here.;
+const stream = The contents of the file goes here.;
 
 let res = await client.api('/me/drive/items/{item-id}/content')
     .version('beta')
-    .put(Stream);
+    .put(stream);
 
 ```

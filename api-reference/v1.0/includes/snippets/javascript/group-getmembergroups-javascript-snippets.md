@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0a63fbb6408eb33cdf14df9d705bef95789a9df0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0ba1b943c8b2fcc427bc9d342fcbbc7e098a9f75
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732457"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428855"
 ---
 ```javascript
 
@@ -15,11 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   securityEnabledOnly: false
 };
 
 let res = await client.api('/groups/{id}/getMemberGroups')
-    .post(String);
+    .post(string);
 
 ```

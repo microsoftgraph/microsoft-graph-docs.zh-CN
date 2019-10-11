@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f3b20410ded987ba0c73de4767e36075d2593434
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e911091bb4e1b5cd3179f781dd0d2f326f121a3d
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355853"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439861"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -28,6 +28,9 @@ ms.locfileid: "37355853"
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序| 对于**用户**或**聊天**资源：<br/>"聊天室"、"所有"、"全部聊天"<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
 
+> [!NOTE]
+> 在使用应用程序权限调用此 API 之前，您必须请求访问权限。 有关详细信息，请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
@@ -38,11 +41,11 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
 GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此操作不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -89,7 +92,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

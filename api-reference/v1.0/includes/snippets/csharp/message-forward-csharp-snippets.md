@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1f5c98976264eff5f6a0ca36090d6693998fb565
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9cad8533a7adbf4f6efebe2a7aaef1587318fad9
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732110"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428845"
 ---
 ```csharp
 
@@ -26,7 +26,7 @@ var toRecipients = new List<Recipient>()
 };
 
 await graphClient.Me.Messages["{id}"]
-    .Forward(comment,toRecipients)
+    .Forward(toRecipients,null,comment)
     .Request()
     .PostAsync();
 

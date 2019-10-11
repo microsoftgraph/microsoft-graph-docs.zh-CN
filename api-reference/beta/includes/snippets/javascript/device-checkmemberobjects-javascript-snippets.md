@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c05b7ca2de03f9221826a8ffe383955144b963e6
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fbf28092cb78367a1494b6ae900d644f1f48aba3
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041741"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428803"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   ids: [
     "80a963dd-84af-4eb8-b2a6-781e444d4fb0",
     "62e90394-69f5-4237-9190-012177145e10",
@@ -26,6 +26,6 @@ const String = {
 
 let res = await client.api('/devices/{id}/checkMemberObjects')
     .version('beta')
-    .post(String);
+    .post(string);
 
 ```

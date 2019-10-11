@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9ab8f450447a623a56b7f951f726fcf268fa08b1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8f58fd2b14b5bb06d2d80c2dbe337c31a3b1de9e
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714381"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428813"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphString *String = [[MSGraphString alloc] initWithData:data error:&nserror];
+        MSGraphString *string = [[MSGraphString alloc] initWithData:data error:&nserror];
 
 }];
 
