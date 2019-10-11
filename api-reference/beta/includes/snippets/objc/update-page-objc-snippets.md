@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 959a21339e9cc90c85edf83f1085d2b0d53c6728
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d91e452d387b970128b28e4a545e7b0ac83f4551
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35728703"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428819"
 ---
 ```objc
 
@@ -16,22 +16,22 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-NSMutableArray *StreamList = [[NSMutableArray alloc] init];
-MSGraphStream *Stream = [[MSGraphStream alloc] init];
-[Stream setTarget:@"#para-id"];
-[Stream setAction:@"insert"];
-[Stream setPosition:@"before"];
-[Stream setContent:@"<img src=\"image-url-or-part-name\" alt=\"image-alt-text\" />"];
-[StreamList addObject: Stream];
-MSGraphStream *Stream = [[MSGraphStream alloc] init];
-[Stream setTarget:@"#list-id"];
-[Stream setAction:@"append"];
-[Stream setContent:@"<li>new-page-content</li>"];
-[StreamList addObject: Stream];
+NSMutableArray *streamList = [[NSMutableArray alloc] init];
+MSGraphStream *stream = [[MSGraphStream alloc] init];
+[stream setTarget:@"#para-id"];
+[stream setAction:@"insert"];
+[stream setPosition:@"before"];
+[stream setContent:@"<img src=\"image-url-or-part-name\" alt=\"image-alt-text\" />"];
+[streamList addObject: stream];
+MSGraphStream *stream = [[MSGraphStream alloc] init];
+[stream setTarget:@"#list-id"];
+[stream setAction:@"append"];
+[stream setContent:@"<li>new-page-content</li>"];
+[streamList addObject: stream];
 
 NSError *error;
-NSData *StreamData = [Stream getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:StreamData];
+NSData *streamData = [stream getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:streamData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

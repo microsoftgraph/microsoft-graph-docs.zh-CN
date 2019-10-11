@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6ac25c065e1e9f528866b61d77d4dc34f5105c0b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: df7eefa4526f90cde95dd0c2cc2cd47643b5ec3d
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739588"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428844"
 ---
 ```javascript
 
@@ -15,9 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-const Stream = Binary data for the image;
+const stream = Binary data for the image;
 
 let res = await client.api('/me/photo/$value')
-    .put({Stream : Stream});
+    .put(stream);
 
 ```

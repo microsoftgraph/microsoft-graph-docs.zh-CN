@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 78c28e2e90cc391ec9cd37cdca577da7749a4b55
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 78e0dea1220686cb1bc2cbc065586784961c586b
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35739051"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428842"
 ---
 ```csharp
 
@@ -16,13 +16,8 @@ var queryOptions = new List<QueryOption>()
     new QueryOption("format", "{format}")
 };
 
-var items = await graphClient.Me.Drive.Items["{item-id}"]
+var stream = await graphClient.Me.Drive.Items["{item-id}"].Content
     .Request( queryOptions )
-    .Select( e => new {
-             e.Content 
-             })
     .GetAsync();
-
-var content = items.Content;
 
 ```

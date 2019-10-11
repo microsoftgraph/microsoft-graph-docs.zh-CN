@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 778a82b8785195b6d06a58e7a5473016c4f6b1c9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c595bf454215bf6b46c325494bcc8f0f813ef118
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884709"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428853"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 String comment = "comment-value";
 
 graphClient.me().messages("{id}")
-    .replyAll(comment)
+    .replyAll(null,comment)
     .buildRequest()
     .post();
 
