@@ -792,11 +792,11 @@
                   href: api/place-list.md
                 - name: 获取位置
                   href: api/place-get.md
-        - name: 呼叫和联机会议
-          displayName: Microsoft Teams
+        - name: 云通信
+          displayName: Cloud communications
           items:
             - name: 概述
-              href: resources/calls-api-overview.md
+              href: resources/communications-api-overview.md
             - name: 呼叫
               href: resources/call.md
               items:
@@ -908,7 +908,7 @@
             - name: 预订业务
               href: resources/bookingbusiness.md
               items:
-                - name: List
+                - name: 列表
                   href: api/bookingbusiness-list.md
                 - name: Create
                   href: api/bookingbusiness-post-bookingbusinesses.md
@@ -949,7 +949,7 @@
             - name: 预订客户
               href: resources/bookingcustomer.md
               items:
-                - name: List
+                - name: 列表
                   href: api/bookingbusiness-list-customers.md
                 - name: Create
                   href: api/bookingbusiness-post-customers.md
@@ -962,7 +962,7 @@
             - name: 预订服务
               href: resources/bookingservice.md
               items:
-                - name: List
+                - name: 列表
                   href: api/bookingbusiness-list-services.md
                 - name: Create
                   href: api/bookingbusiness-post-services.md
@@ -975,7 +975,7 @@
             - name: 预订职员
               href: resources/bookingstaffmember.md
               items:
-                - name: List
+                - name: 列表
                   href: api/bookingbusiness-list-staffmembers.md
                 - name: Create
                   href: api/bookingbusiness-post-staffmembers.md
@@ -7161,7 +7161,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                     - name: 更新
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                    - name: List
+                    - name: 列表
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                     - name: 创建
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-create.md
@@ -7998,7 +7998,7 @@
                 - name: 业务流模板
                   href: resources/businessflowtemplate.md
                   items:
-                    - name: List
+                    - name: 列表
                       href: api/businessflowtemplate-list.md
                 - name: 程序
                   href: resources/program.md
@@ -8007,7 +8007,7 @@
                       href: api/program-create.md
                     - name: 删除
                       href: api/program-delete.md
-                    - name: List
+                    - name: 列表
                       href: api/program-list.md
                     - name: 更新
                       href: api/program-update.md
@@ -8020,7 +8020,7 @@
                       href: api/programcontrol-create.md
                     - name: 删除
                       href: api/programcontrol-delete.md
-                    - name: List
+                    - name: 列表
                       href: api/programcontrol-list.md
                 - name: 程序控制类型
                   href: resources/programcontroltype.md
@@ -9847,7 +9847,7 @@
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
-                - name: List
+                - name: 列表
                   href: api/outlookuser-list-tasks.md
                 - name: Create
                   href: api/outlookuser-post-tasks.md
@@ -9855,7 +9855,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktask-delete.md
                 - name: 完全
                   href: api/outlooktask-complete.md
@@ -9866,7 +9866,7 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: List
+                - name: 列表
                   href: api/outlookuser-list-taskfolders.md
                 - name: Create
                   href: api/outlookuser-post-taskfolders.md
@@ -9874,7 +9874,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在文件夹中列出任务
                   href: api/outlooktaskfolder-list-tasks.md
@@ -9883,7 +9883,7 @@
             - name: Outlook 任务组
               href: resources/outlooktaskgroup.md
               items:
-                - name: List
+                - name: 列表
                   href: api/outlookuser-list-taskgroups.md
                 - name: Create
                   href: api/outlookuser-post-taskgroups.md
@@ -9891,7 +9891,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在组中列出任务文件夹
                   href: api/outlooktaskfolder-list-tasks.md
