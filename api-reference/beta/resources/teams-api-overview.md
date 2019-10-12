@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 34308ef188987e4c6c32ad5c97d0676e75567c30
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 9ac012d6de0e6ef191b008c8e2569b0fa0654574
+ms.sourcegitcommit: 99cbeac2ca652632d2946c4740133c9b82c8e992
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333370"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "37477050"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -29,7 +29,7 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 |[teamsApp](../resources/teamsapp.md)|[列出](../api/teamsapp-list.md)、[发布](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[移除](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/teamsappinstallation-list.md)、[安装](../api/teamsappinstallation-add.md)、[升级](../api/teamsappinstallation-delete.md)、[移除](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md)（预览）| [列出](../api/channel-list-messages.md)、[发送](../api/channel-post-messages.md)、[读取](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[调用](/graph/api/resources/call?view=graph-rest-beta)（预览） | [应答](/graph/api/call-answer?view=graph-rest-beta)、[拒绝](/graph/api/call-reject?view=graph-rest-beta)、[重定向](/graph/api/call-redirect?view=graph-rest-beta)、[静音](/graph/api/call-mute?view=graph-rest-beta)、[取消静音](/graph/api/call-unmute?view=graph-rest-beta)、[更新元数据](/graph/api/call-updatemetadata?view=graph-rest-beta)、[更改屏幕共享角色](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[列出参与者](/graph/api/call-list-participants?view=graph-rest-beta)、[邀请参与者](/graph/api/participant-invite?view=graph-rest-beta)、[将所有参与者设为静音](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[调用](/graph/api/resources/communications-api-overview.md)（预览） | [应答](/graph/api/call-answer?view=graph-rest-beta)、[拒绝](/graph/api/call-reject?view=graph-rest-beta)、[重定向](/graph/api/call-redirect?view=graph-rest-beta)、[静音](/graph/api/call-mute?view=graph-rest-beta)、[取消静音](/graph/api/call-unmute?view=graph-rest-beta)、[更新元数据](/graph/api/call-updatemetadata?view=graph-rest-beta)、[更改屏幕共享角色](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[列出参与者](/graph/api/call-list-participants?view=graph-rest-beta)、[邀请参与者](/graph/api/participant-invite?view=graph-rest-beta)、[将所有参与者设为静音](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[计划](/graph/api/resources/schedule?view=graph-rest-beta)（预览）| [创建或替换](/graph/api/team-put-schedule?view=graph-rest-beta)、[获取](/graph/api/schedule-get?view=graph-rest-beta)、[共享](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)、[列出](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta)、[获取](/graph/api/schedulinggroup-get?view=graph-rest-beta)、[替换](/graph/api/schedulinggroup-put?view=graph-rest-beta)、[删除](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[排班](/graph/api/resources/shift?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-shifts?view=graph-rest-beta)、[列出](/graph/api/schedule-list-shifts?view=graph-rest-beta)、[获取](/graph/api/shift-get?view=graph-rest-beta)、[替换](/graph/api/shift-put?view=graph-rest-beta)、[删除](/graph/api/shift-delete?view=graph-rest-beta) |
@@ -51,7 +51,7 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 - 持久聊天仅适用于 Microsoft Teams。 此功能由[频道](../resources/channel.md)和 [chatMessage](../resources/chatmessage.md) 资源按层次结构表示。
 - 组对话仅适用于 Office 365 组。 此功能由[对话](../resources/conversation.md)、[conversationThread](../resources/conversationthread.md) 和[帖子](../resources/post.md)资源按层次结构表示。 
 - [列出加入的团队](../api/user-list-joinedteams.md)方法仅适用于 Microsoft Teams。
-- [呼叫和在线会议 API](./calls-api-overview.md) 仅适用于 Microsoft Teams。
+- [呼叫和在线会议 API](./communications-api-overview.md) 仅适用于 Microsoft Teams。
 - 另请参阅[已知问题](/graph/known-issues)以了解这些 API。
 
 >注意：如果在 Microsoft Teams 应用（而非独立应用中）使用组 API（例如，作为 Microsoft Teams 中运行的选项卡或自动程序的一部分），请按照在 Microsoft Teams 页面中使用 Microsoft Graph 一文中的说明操作。
