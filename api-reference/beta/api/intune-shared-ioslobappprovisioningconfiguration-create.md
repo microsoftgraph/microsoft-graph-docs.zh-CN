@@ -5,35 +5,35 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 178f4f30c944749d9913dffe5a2ee583e1de97d7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 308936a5ee39f8accd3675a2be9b95634643ad59
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199741"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538124"
 ---
-# <a name="create-ioslobappprovisioningconfiguration"></a><span data-ttu-id="dadd8-103">创建 iosLobAppProvisioningConfiguration</span><span class="sxs-lookup"><span data-stu-id="dadd8-103">Create iosLobAppProvisioningConfiguration</span></span>
+# <a name="create-ioslobappprovisioningconfiguration"></a><span data-ttu-id="4919d-103">创建 iosLobAppProvisioningConfiguration</span><span class="sxs-lookup"><span data-stu-id="4919d-103">Create iosLobAppProvisioningConfiguration</span></span>
 
-> <span data-ttu-id="dadd8-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="dadd8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4919d-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4919d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dadd8-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="dadd8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4919d-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4919d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dadd8-106">创建新的[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="dadd8-106">Create a new [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) object.</span></span>
+<span data-ttu-id="4919d-106">创建新的[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4919d-106">Create a new [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="dadd8-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="dadd8-107">Prerequisites</span></span>
-<span data-ttu-id="dadd8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dadd8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4919d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4919d-107">Prerequisites</span></span>
+<span data-ttu-id="4919d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4919d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dadd8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="dadd8-110">Permission type</span></span>|<span data-ttu-id="dadd8-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="dadd8-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4919d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4919d-110">Permission type</span></span>|<span data-ttu-id="4919d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4919d-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="dadd8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dadd8-112">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="dadd8-113">&nbsp;&nbsp; **应用**</span><span class="sxs-lookup"><span data-stu-id="dadd8-113">&nbsp; &nbsp; **Apps**</span></span> | <span data-ttu-id="dadd8-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dadd8-114">DeviceManagementApps.ReadWrite.All</span></span>|
-| <span data-ttu-id="dadd8-115">&nbsp;&nbsp; **策略集**</span><span class="sxs-lookup"><span data-stu-id="dadd8-115">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="dadd8-116">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dadd8-116">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="dadd8-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dadd8-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dadd8-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="dadd8-118">Not supported.</span></span>|
-|<span data-ttu-id="dadd8-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="dadd8-119">Application</span></span>||
-| <span data-ttu-id="dadd8-120">&nbsp;&nbsp; **应用**</span><span class="sxs-lookup"><span data-stu-id="dadd8-120">&nbsp; &nbsp; **Apps**</span></span> | <span data-ttu-id="dadd8-121">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dadd8-121">DeviceManagementApps.ReadWrite.All</span></span>|
-| <span data-ttu-id="dadd8-122">&nbsp;&nbsp; **策略集**</span><span class="sxs-lookup"><span data-stu-id="dadd8-122">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="dadd8-123">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dadd8-123">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4919d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4919d-112">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="4919d-113">&nbsp;&nbsp; **应用**</span><span class="sxs-lookup"><span data-stu-id="4919d-113">&nbsp; &nbsp; **Apps**</span></span> | <span data-ttu-id="4919d-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4919d-114">DeviceManagementApps.ReadWrite.All</span></span>|
+| <span data-ttu-id="4919d-115">&nbsp;&nbsp; **策略集**</span><span class="sxs-lookup"><span data-stu-id="4919d-115">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="4919d-116">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4919d-116">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4919d-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4919d-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4919d-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="4919d-118">Not supported.</span></span>|
+|<span data-ttu-id="4919d-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="4919d-119">Application</span></span>||
+| <span data-ttu-id="4919d-120">&nbsp;&nbsp; **应用**</span><span class="sxs-lookup"><span data-stu-id="4919d-120">&nbsp; &nbsp; **Apps**</span></span> | <span data-ttu-id="4919d-121">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4919d-121">DeviceManagementApps.ReadWrite.All</span></span>|
+| <span data-ttu-id="4919d-122">&nbsp;&nbsp; **策略集**</span><span class="sxs-lookup"><span data-stu-id="4919d-122">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="4919d-123">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4919d-123">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dadd8-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dadd8-124">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4919d-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4919d-124">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -42,39 +42,39 @@ ms.locfileid: "37199741"
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dadd8-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="dadd8-125">Request headers</span></span>
-|<span data-ttu-id="dadd8-126">标头</span><span class="sxs-lookup"><span data-stu-id="dadd8-126">Header</span></span>|<span data-ttu-id="dadd8-127">值</span><span class="sxs-lookup"><span data-stu-id="dadd8-127">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4919d-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="4919d-125">Request headers</span></span>
+|<span data-ttu-id="4919d-126">标头</span><span class="sxs-lookup"><span data-stu-id="4919d-126">Header</span></span>|<span data-ttu-id="4919d-127">值</span><span class="sxs-lookup"><span data-stu-id="4919d-127">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="dadd8-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="dadd8-128">Authorization</span></span>|<span data-ttu-id="dadd8-129">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="dadd8-129">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="dadd8-130">接受</span><span class="sxs-lookup"><span data-stu-id="dadd8-130">Accept</span></span>|<span data-ttu-id="dadd8-131">application/json</span><span class="sxs-lookup"><span data-stu-id="dadd8-131">application/json</span></span>|
+|<span data-ttu-id="4919d-128">授权</span><span class="sxs-lookup"><span data-stu-id="4919d-128">Authorization</span></span>|<span data-ttu-id="4919d-129">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4919d-129">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4919d-130">接受</span><span class="sxs-lookup"><span data-stu-id="4919d-130">Accept</span></span>|<span data-ttu-id="4919d-131">application/json</span><span class="sxs-lookup"><span data-stu-id="4919d-131">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dadd8-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="dadd8-132">Request body</span></span>
-<span data-ttu-id="dadd8-133">在请求正文中，提供 iosLobAppProvisioningConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dadd8-133">In the request body, supply a JSON representation for the iosLobAppProvisioningConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4919d-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="4919d-132">Request body</span></span>
+<span data-ttu-id="4919d-133">在请求正文中，提供 iosLobAppProvisioningConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4919d-133">In the request body, supply a JSON representation for the iosLobAppProvisioningConfiguration object.</span></span>
 
-<span data-ttu-id="dadd8-134">下表显示创建 iosLobAppProvisioningConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="dadd8-134">The following table shows the properties that are required when you create the iosLobAppProvisioningConfiguration.</span></span>
+<span data-ttu-id="4919d-134">下表显示创建 iosLobAppProvisioningConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="4919d-134">The following table shows the properties that are required when you create the iosLobAppProvisioningConfiguration.</span></span>
 
-|<span data-ttu-id="dadd8-135">属性</span><span class="sxs-lookup"><span data-stu-id="dadd8-135">Property</span></span>|<span data-ttu-id="dadd8-136">类型</span><span class="sxs-lookup"><span data-stu-id="dadd8-136">Type</span></span>|<span data-ttu-id="dadd8-137">说明</span><span class="sxs-lookup"><span data-stu-id="dadd8-137">Description</span></span>|
+|<span data-ttu-id="4919d-135">属性</span><span class="sxs-lookup"><span data-stu-id="4919d-135">Property</span></span>|<span data-ttu-id="4919d-136">类型</span><span class="sxs-lookup"><span data-stu-id="4919d-136">Type</span></span>|<span data-ttu-id="4919d-137">说明</span><span class="sxs-lookup"><span data-stu-id="4919d-137">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dadd8-138">id</span><span class="sxs-lookup"><span data-stu-id="dadd8-138">id</span></span>|<span data-ttu-id="dadd8-139">字符串</span><span class="sxs-lookup"><span data-stu-id="dadd8-139">String</span></span>|<span data-ttu-id="dadd8-140">实体的键。</span><span class="sxs-lookup"><span data-stu-id="dadd8-140">Key of the entity.</span></span>|
-|<span data-ttu-id="dadd8-141">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="dadd8-141">expirationDateTime</span></span>|<span data-ttu-id="dadd8-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dadd8-142">DateTimeOffset</span></span>|<span data-ttu-id="dadd8-143">可选的配置文件到期日期和时间。</span><span class="sxs-lookup"><span data-stu-id="dadd8-143">Optional profile expiration date and time.</span></span>|
-|<span data-ttu-id="dadd8-144">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="dadd8-144">payloadFileName</span></span>|<span data-ttu-id="dadd8-145">String</span><span class="sxs-lookup"><span data-stu-id="dadd8-145">String</span></span>|<span data-ttu-id="dadd8-146">有效负载文件名（\*. mobileprovision</span><span class="sxs-lookup"><span data-stu-id="dadd8-146">Payload file name (\*.mobileprovision</span></span> | <span data-ttu-id="dadd8-147">\*.xml)。</span><span class="sxs-lookup"><span data-stu-id="dadd8-147">\*.xml).</span></span>|
-|<span data-ttu-id="dadd8-148">payload</span><span class="sxs-lookup"><span data-stu-id="dadd8-148">payload</span></span>|<span data-ttu-id="dadd8-149">Binary</span><span class="sxs-lookup"><span data-stu-id="dadd8-149">Binary</span></span>|<span data-ttu-id="dadd8-150">有效负载。</span><span class="sxs-lookup"><span data-stu-id="dadd8-150">Payload.</span></span> <span data-ttu-id="dadd8-151">（UTF8 编码的字节数组）</span><span class="sxs-lookup"><span data-stu-id="dadd8-151">(UTF8 encoded byte array)</span></span>|
-|<span data-ttu-id="dadd8-152">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="dadd8-152">roleScopeTagIds</span></span>|<span data-ttu-id="dadd8-153">String collection</span><span class="sxs-lookup"><span data-stu-id="dadd8-153">String collection</span></span>|<span data-ttu-id="dadd8-154">此 iOS LOB 应用设置配置实体的作用域标记列表。</span><span class="sxs-lookup"><span data-stu-id="dadd8-154">List of Scope Tags for this iOS LOB app provisioning configuration entity.</span></span>|
-|<span data-ttu-id="dadd8-155">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="dadd8-155">createdDateTime</span></span>|<span data-ttu-id="dadd8-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dadd8-156">DateTimeOffset</span></span>|<span data-ttu-id="dadd8-157">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="dadd8-157">DateTime the object was created.</span></span>|
-|<span data-ttu-id="dadd8-158">说明</span><span class="sxs-lookup"><span data-stu-id="dadd8-158">description</span></span>|<span data-ttu-id="dadd8-159">String</span><span class="sxs-lookup"><span data-stu-id="dadd8-159">String</span></span>|<span data-ttu-id="dadd8-160">管理员提供的设备配置说明。</span><span class="sxs-lookup"><span data-stu-id="dadd8-160">Admin provided description of the Device Configuration.</span></span>|
-|<span data-ttu-id="dadd8-161">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="dadd8-161">lastModifiedDateTime</span></span>|<span data-ttu-id="dadd8-162">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dadd8-162">DateTimeOffset</span></span>|<span data-ttu-id="dadd8-163">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="dadd8-163">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="dadd8-164">displayName</span><span class="sxs-lookup"><span data-stu-id="dadd8-164">displayName</span></span>|<span data-ttu-id="dadd8-165">String</span><span class="sxs-lookup"><span data-stu-id="dadd8-165">String</span></span>|<span data-ttu-id="dadd8-166">管理员提供的设备配置名称。</span><span class="sxs-lookup"><span data-stu-id="dadd8-166">Admin provided name of the device configuration.</span></span>|
-|<span data-ttu-id="dadd8-167">version</span><span class="sxs-lookup"><span data-stu-id="dadd8-167">version</span></span>|<span data-ttu-id="dadd8-168">Int32</span><span class="sxs-lookup"><span data-stu-id="dadd8-168">Int32</span></span>|<span data-ttu-id="dadd8-169">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="dadd8-169">Version of the device configuration.</span></span>|
+|<span data-ttu-id="4919d-138">id</span><span class="sxs-lookup"><span data-stu-id="4919d-138">id</span></span>|<span data-ttu-id="4919d-139">字符串</span><span class="sxs-lookup"><span data-stu-id="4919d-139">String</span></span>|<span data-ttu-id="4919d-140">实体的键。</span><span class="sxs-lookup"><span data-stu-id="4919d-140">Key of the entity.</span></span>|
+|<span data-ttu-id="4919d-141">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="4919d-141">expirationDateTime</span></span>|<span data-ttu-id="4919d-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4919d-142">DateTimeOffset</span></span>|<span data-ttu-id="4919d-143">可选的配置文件到期日期和时间。</span><span class="sxs-lookup"><span data-stu-id="4919d-143">Optional profile expiration date and time.</span></span>|
+|<span data-ttu-id="4919d-144">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="4919d-144">payloadFileName</span></span>|<span data-ttu-id="4919d-145">String</span><span class="sxs-lookup"><span data-stu-id="4919d-145">String</span></span>|<span data-ttu-id="4919d-146">有效负载文件名（\*. mobileprovision</span><span class="sxs-lookup"><span data-stu-id="4919d-146">Payload file name (\*.mobileprovision</span></span> | <span data-ttu-id="4919d-147">\*.xml)。</span><span class="sxs-lookup"><span data-stu-id="4919d-147">\*.xml).</span></span>|
+|<span data-ttu-id="4919d-148">payload</span><span class="sxs-lookup"><span data-stu-id="4919d-148">payload</span></span>|<span data-ttu-id="4919d-149">Binary</span><span class="sxs-lookup"><span data-stu-id="4919d-149">Binary</span></span>|<span data-ttu-id="4919d-150">有效负载。</span><span class="sxs-lookup"><span data-stu-id="4919d-150">Payload.</span></span> <span data-ttu-id="4919d-151">（UTF8 编码的字节数组）</span><span class="sxs-lookup"><span data-stu-id="4919d-151">(UTF8 encoded byte array)</span></span>|
+|<span data-ttu-id="4919d-152">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="4919d-152">roleScopeTagIds</span></span>|<span data-ttu-id="4919d-153">String 集合</span><span class="sxs-lookup"><span data-stu-id="4919d-153">String collection</span></span>|<span data-ttu-id="4919d-154">此 iOS LOB 应用设置配置实体的作用域标记列表。</span><span class="sxs-lookup"><span data-stu-id="4919d-154">List of Scope Tags for this iOS LOB app provisioning configuration entity.</span></span>|
+|<span data-ttu-id="4919d-155">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="4919d-155">createdDateTime</span></span>|<span data-ttu-id="4919d-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4919d-156">DateTimeOffset</span></span>|<span data-ttu-id="4919d-157">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="4919d-157">DateTime the object was created.</span></span>|
+|<span data-ttu-id="4919d-158">说明</span><span class="sxs-lookup"><span data-stu-id="4919d-158">description</span></span>|<span data-ttu-id="4919d-159">String</span><span class="sxs-lookup"><span data-stu-id="4919d-159">String</span></span>|<span data-ttu-id="4919d-160">管理员提供的设备配置说明。</span><span class="sxs-lookup"><span data-stu-id="4919d-160">Admin provided description of the Device Configuration.</span></span>|
+|<span data-ttu-id="4919d-161">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4919d-161">lastModifiedDateTime</span></span>|<span data-ttu-id="4919d-162">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4919d-162">DateTimeOffset</span></span>|<span data-ttu-id="4919d-163">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="4919d-163">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="4919d-164">displayName</span><span class="sxs-lookup"><span data-stu-id="4919d-164">displayName</span></span>|<span data-ttu-id="4919d-165">String</span><span class="sxs-lookup"><span data-stu-id="4919d-165">String</span></span>|<span data-ttu-id="4919d-166">管理员提供的设备配置名称。</span><span class="sxs-lookup"><span data-stu-id="4919d-166">Admin provided name of the device configuration.</span></span>|
+|<span data-ttu-id="4919d-167">version</span><span class="sxs-lookup"><span data-stu-id="4919d-167">version</span></span>|<span data-ttu-id="4919d-168">Int32</span><span class="sxs-lookup"><span data-stu-id="4919d-168">Int32</span></span>|<span data-ttu-id="4919d-169">设备配置的版本。</span><span class="sxs-lookup"><span data-stu-id="4919d-169">Version of the device configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="dadd8-170">响应</span><span class="sxs-lookup"><span data-stu-id="dadd8-170">Response</span></span>
-<span data-ttu-id="dadd8-171">如果成功，此方法在响应`201 Created`正文中返回响应代码和[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="dadd8-171">If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4919d-170">响应</span><span class="sxs-lookup"><span data-stu-id="4919d-170">Response</span></span>
+<span data-ttu-id="4919d-171">如果成功，此方法在响应`201 Created`正文中返回响应代码和[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4919d-171">If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dadd8-172">示例</span><span class="sxs-lookup"><span data-stu-id="dadd8-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4919d-172">示例</span><span class="sxs-lookup"><span data-stu-id="4919d-172">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dadd8-173">请求</span><span class="sxs-lookup"><span data-stu-id="dadd8-173">Request</span></span>
-<span data-ttu-id="dadd8-174">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="dadd8-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4919d-173">请求</span><span class="sxs-lookup"><span data-stu-id="4919d-173">Request</span></span>
+<span data-ttu-id="4919d-174">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4919d-174">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
@@ -94,8 +94,8 @@ Content-length: 375
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="dadd8-175">响应</span><span class="sxs-lookup"><span data-stu-id="dadd8-175">Response</span></span>
-<span data-ttu-id="dadd8-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dadd8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4919d-175">响应</span><span class="sxs-lookup"><span data-stu-id="4919d-175">Response</span></span>
+<span data-ttu-id="4919d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4919d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -117,6 +117,8 @@ Content-Length: 547
   "version": 7
 }
 ```
+
+
 
 
 
