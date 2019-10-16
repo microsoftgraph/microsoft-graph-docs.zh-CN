@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 611b4aadacbdbc8ebfebb619deeb931b6d3bdb2a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9de22e32170f8907aa7fc030e49bf89324fc667b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195725"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536866"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
 
@@ -42,7 +42,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/beta/users/{usersId}/removeAllDevicesFromManage
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

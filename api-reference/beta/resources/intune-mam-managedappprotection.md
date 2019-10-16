@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55ce6448cb599e3438eac8077a6bfab852edeb23
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6c59246bfedd177cc36d2c162544ef4c312fb4fb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373943"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538866"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于为指定的一组应用配置详细管理设置的策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "36373943"
 |说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|持续时间|设备未连接到 Internet 时在该时间段后检查访问权限。|
@@ -52,7 +52,7 @@ ms.locfileid: "36373943"
 |saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
 |periodOfflineBeforeWipeIsEnforced|持续时间|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。|
 |pinRequired|Boolean|指示是否需要应用级 pin。|
-|maximumPinRetries|Int32|在阻止或擦除托管应用之前, 不正确 pin 重试的最大次数。|
+|maximumPinRetries|Int32|在阻止或擦除托管应用之前，不正确 pin 重试的最大次数。|
 |simplePinBlocked|Boolean|指示是否阻止 simplePin。|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 pin 所需的最小 pin 长度。|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 pin 的字符集。 可取值为：`numeric`、`alphanumericAndSymbol`。|
@@ -62,17 +62,20 @@ ms.locfileid: "36373943"
 |printBlocked|Boolean|指示是否允许从托管应用进行打印。|
 |fingerprintBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 pin。|
 |disableAppPinIfDevicePinIsSet|Boolean|指示如果设置了设备 pin，是否需要使用应用 pin。|
-|minimumRequiredOsVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
-|minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
-|minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
+|minimumRequiredOsVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。|
+|minimumWarningOsVersion|字符串|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
+|minimumRequiredAppVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。|
-|minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
-|minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
-|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true, 则定义在设备为根或已越狱时的托管应用行为 (阻止或擦除)。 可取值为：`block`、`wipe`、`warn`。|
-|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为, 即阻止或擦除。 可取值为：`block`、`wipe`、`warn`。|
-|pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是无生物识别密码) 超时|
+|minimumWipeOsVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|minimumWipeAppVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true，则定义在设备为根或已越狱时的托管应用行为（阻止或擦除）。 可取值为：`block`、`wipe`、`warn`。|
+|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为，即阻止或擦除。 可取值为：`block`、`wipe`、`warn`。|
+|pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin （而不是无生物识别密码）超时|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定应用程序通知限制。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
+|previousPinBlockCount|Int32|需要 pin 才能与此属性中指定的编号唯一。|
+|maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|允许的最大设备威胁级别，如 MTD 应用程序所报告的那样。 可取值为：`notConfigured`、`secured`、`low`、`medium`、`high`。|
+|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|确定在不满足移动威胁防御威胁阈值时要采取的操作。 警告不是此属性的受支持的值。 可取值为：`block`、`wipe`、`warn`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -131,7 +134,10 @@ ms.locfileid: "36373943"
   "appActionIfMaximumPinRetriesExceeded": "String",
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
   "allowedOutboundClipboardSharingExceptionLength": 1024,
-  "notificationRestriction": "String"
+  "notificationRestriction": "String",
+  "previousPinBlockCount": 1024,
+  "maximumAllowedDeviceThreatLevel": "String",
+  "mobileThreatDefenseRemediationAction": "String"
 }
 ```
 

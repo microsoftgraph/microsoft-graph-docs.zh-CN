@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14dc510f043462dcd33236f3eb5e458e3094291a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c4fa77998e67c42e88644a4d31c96f5d20316c26
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199722"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538040"
 ---
 # <a name="haspayloadlinks-action"></a>hasPayloadLinks 操作
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/hasPayloadLink
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -98,6 +98,8 @@ Content-Length: 249
   ]
 }
 ```
+
+
 
 
 

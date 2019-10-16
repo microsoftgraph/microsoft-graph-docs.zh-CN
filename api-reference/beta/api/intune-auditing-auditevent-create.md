@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e76837c935e6f3c88f4946684305844ab3c01589
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b3ac337d274d8137796a6f2f14591ac08ca2a229
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171552"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534951"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -41,7 +41,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,17 +52,17 @@ POST /deviceManagement/auditEvents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|事件显示名称。|
-|componentName|String|组件名称。|
+|displayName|字符串|事件显示名称。|
+|componentName|字符串|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|String|活动的友好名称。|
+|activity|字符串|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|String|执行的活动类型。|
-|activityOperationType|String|活动的 HTTP 操作类型。|
+|activityType|字符串|执行的活动类型。|
+|activityOperationType|字符串|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|String|审核类别。|
+|“类别”|字符串|审核类别。|
 
 
 
@@ -76,7 +76,7 @@ POST /deviceManagement/auditEvents
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1390
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -93,7 +93,14 @@ Content-length: 1390
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -126,7 +133,7 @@ Content-length: 1390
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -144,7 +151,14 @@ Content-Length: 1439
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -171,6 +185,8 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
 
 
 

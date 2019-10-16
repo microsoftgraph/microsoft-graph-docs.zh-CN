@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e90382c1a4e50aa7f880d836c592662c94ce587
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 584acec07d7c3446fa4fb648289ab17a44bd1b80
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180081"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526930"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>更新 userExperienceAnalyticsOverview
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,12 +51,14 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 概述的唯一标识符。|
+|id|字符串|User experience analytics 概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总分。|
 |deviceBootPerformanceOverallScore|Int32|User experience analytics 设备启动性能总分。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳实践总分。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)集合|User experience analytics insights。|
-|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|"用户体验分析" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|User experience analytics 概述的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|User experience analytics "BootPerformance" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|User experience analytics "BestPractices" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 
 
@@ -70,7 +72,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 650
+Content-length: 760
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -91,7 +93,9 @@ Content-length: 650
       "severity": "informational"
     }
   ],
-  "state": "insufficientData"
+  "state": "insufficientData",
+  "deviceBootPerformanceHealthState": "insufficientData",
+  "bestPracticesHealthState": "insufficientData"
 }
 ```
 
@@ -100,7 +104,7 @@ Content-length: 650
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 699
+Content-Length: 809
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -122,9 +126,13 @@ Content-Length: 699
       "severity": "informational"
     }
   ],
-  "state": "insufficientData"
+  "state": "insufficientData",
+  "deviceBootPerformanceHealthState": "insufficientData",
+  "bestPracticesHealthState": "insufficientData"
 }
 ```
+
+
 
 
 

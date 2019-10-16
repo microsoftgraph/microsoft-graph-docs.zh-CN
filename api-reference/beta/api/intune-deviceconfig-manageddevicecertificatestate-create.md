@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41562229ea9b385a85a7cb2100abc718be03e490
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 468452c661ec1ac48d5fa5a9ec6533061726606b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37183658"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533395"
 ---
 # <a name="create-manageddevicecertificatestate"></a>创建 managedDeviceCertificateState
 
@@ -37,6 +37,7 @@ ms.locfileid: "37183658"
 ``` http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSPkcsCertificateProfile/managedDeviceCertificateStates
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/managedDeviceCertificateStates
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidPkcsCertificateProfile/managedDeviceCertificateStates
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidScepCertificateProfile/managedDeviceCertificateStates
@@ -58,7 +59,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -77,20 +78,20 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|使用者名称格式。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|使用者可选名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|certificateProfileDisplayName|String|证书配置文件显示名称|
+|certificateProfileDisplayName|字符串|证书配置文件显示名称|
 |deviceDisplayName|String|设备显示名称|
 |userDisplayName|String|用户显示名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|上次证书颁发状态更改|
 |lastCertificateStateChangeDateTime|DateTimeOffset|上次证书颁发状态更改|
-|certificateIssuer|String|颁发者|
-|certificateThumbprint|String|为|
-|certificateSerialNumber|String|序列号|
+|certificateIssuer|字符串|颁发者|
+|certificateThumbprint|字符串|为|
+|certificateSerialNumber|字符串|序列号|
 |certificateKeyLength|Int32|密钥长度|
-|certificateEnhancedKeyUsage|String|扩展密钥用法|
+|certificateEnhancedKeyUsage|字符串|扩展密钥用法|
 |certificateValidityPeriod|Int32|有效期|
-|certificateSubjectNameFormatString|String|自定义主题名称格式的主题名称格式字符串|
-|certificateSubjectAlternativeNameFormatString|String|自定义格式的使用者可选名称格式字符串|
+|certificateSubjectNameFormatString|字符串|自定义主题名称格式的主题名称格式字符串|
+|certificateSubjectAlternativeNameFormatString|字符串|自定义格式的使用者可选名称格式字符串|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
 |certificateErrorCode|Int32|错误代码|
 
@@ -173,6 +174,8 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
+
+
 
 
 

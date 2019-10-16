@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4542f202c08b97d2107fb8085a89acee640ee490
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4ee489c1cfae88b7a2832f517bafc78131d56b36
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194682"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537083"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -115,6 +115,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

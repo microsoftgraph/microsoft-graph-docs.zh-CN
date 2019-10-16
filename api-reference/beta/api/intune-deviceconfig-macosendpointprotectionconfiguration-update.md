@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 656d3041a68d9351b0fd212c8d0286e3f7bf92d2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 3260130b6d4eec10018205149a975b5c67e8f906
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37178639"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533621"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>更新 macOSEndpointProtectionConfiguration
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -73,8 +73,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |fileVaultEnabled|Boolean|是否应启用 FileVault。|
 |fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|如果启用了 FileVault，则需要确定要使用的恢复密钥的类型。 . 可取值为：`notConfigured`、`institutionalRecoveryKey`、`personalRecoveryKey`。|
 |fileVaultInstitutionalRecoveryKeyCertificate|Binary|如果所选恢复密钥类型包括 InstitutionalRecoveryKey，则为必需。 用于设置机构恢复密钥的 DER 编码证书文件。|
-|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|要在 UI 中显示的机构恢复密钥证书的文件名。 （* der）。|
-|fileVaultPersonalRecoveryKeyHelpMessage|String|如果所选恢复密钥类型包括 PersonalRecoveryKey，则为必需。 向用户显示一条简短消息，说明他们如何检索其个人恢复密钥。|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|字符串|要在 UI 中显示的机构恢复密钥证书的文件名。 （* der）。|
+|fileVaultPersonalRecoveryKeyHelpMessage|字符串|如果所选恢复密钥类型包括 PersonalRecoveryKey，则为必需。 向用户显示一条简短消息，说明他们如何检索其个人恢复密钥。|
 |fileVaultAllowDeferralUntilSignOut|Boolean|可选。 如果设置为 true，则用户可以推迟启用 FileVault，直到他们注销。|
 |fileVaultNumberOfTimesUserCanIgnore|Int32|可选。 使用 Defer 选项时，此值是用户可以在 FileVault 之前忽略启用 FileVault 的提示的最大次数，用户将需要这些用户才能登录。 如果设置为-1，则在启用 FileVault 之前，它将始终提示启用 FileVault，但它将允许用户绕过启用 FileVault。 将此设置为0将禁用该功能。|
 |fileVaultDisablePromptAtSignOut|Boolean|可选。 使用 Defer 选项时，如果设置为 true，则不提示用户在注销时启用 FileVault。|
@@ -211,6 +211,8 @@ Content-Length: 2224
   "fileVaultPersonalRecoveryKeyRotationInMonths": 12
 }
 ```
+
+
 
 
 

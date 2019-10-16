@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6569a767d6aa68e9bc75361d8b39dceba5f0a72
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 90ca1e2537e09fa0aa88429be7e4e7c3316e1ecc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196593"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37524424"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
 
@@ -35,10 +35,11 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |serialNumber|String|设备序列号|
-|requestedEnrollmentProfileId|String|注册配置文件 Id 管理员打算在下次注册时应用到设备|
+|requestedEnrollmentProfileId|字符串|注册配置文件 Id 管理员打算在下次注册时应用到设备|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|已将时间注册配置文件分配给设备|
 |isSupervised|Boolean|指示 Apple 设备是否受到监督。 有关详细信息，请参阅：https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
+|isDeleted|Boolean|指示设备是否已从 Apple Business Manager 中删除|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
 |说明|String|设备的说明|
@@ -65,6 +66,7 @@ ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
   "requestedEnrollmentProfileAssignmentDateTime": "String (timestamp)",
   "isSupervised": true,
   "discoverySource": "String",
+  "isDeleted": true,
   "createdDateTime": "String (timestamp)",
   "lastContactedDateTime": "String (timestamp)",
   "description": "String",

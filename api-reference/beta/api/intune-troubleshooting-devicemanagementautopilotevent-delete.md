@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2de0fa4d8b046f6cdfcc300ced556750839f5307
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 95bf1313916de0390a226b40d96e366a267c8eb7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199812"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537746"
 ---
 # <a name="delete-devicemanagementautopilotevent"></a>删除 deviceManagementAutopilotEvent
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

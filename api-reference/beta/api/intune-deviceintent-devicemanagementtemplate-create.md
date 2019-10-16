@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71f43ce3b9d1245c3a55156bae394d8f56acf148
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5cfad05be88be74a0c346413c119413c6cc1d5fe
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189037"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37532720"
 ---
 # <a name="create-devicemanagementtemplate"></a>创建 deviceManagementTemplate
 
@@ -42,7 +42,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,10 +55,11 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |id|字符串|模板 ID|
 |displayName|String|模板的显示名称|
 |说明|String|模板的说明|
-|versionInfo|String|模板的版本信息|
+|versionInfo|字符串|模板的版本信息|
 |isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
 |intentCount|Int32|从此模板创建的意向数。|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`。|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`。|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |publishedDateTime|DateTimeOffset|发布模板时|
 
 
@@ -73,7 +74,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 334
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -83,6 +84,7 @@ Content-length: 334
   "isDeprecated": true,
   "intentCount": 11,
   "templateType": "specializedDevices",
+  "platformType": "androidForWork",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
@@ -92,7 +94,7 @@ Content-length: 334
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 383
+Content-Length: 420
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -103,9 +105,12 @@ Content-Length: 383
   "isDeprecated": true,
   "intentCount": 11,
   "templateType": "specializedDevices",
+  "platformType": "androidForWork",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
+
 
 
 

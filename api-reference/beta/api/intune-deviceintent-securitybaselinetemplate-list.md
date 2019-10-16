@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86d8d0be1812a4dc2dd6f6fec176e42afe4de62c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d13ea42549f3244720bfac6bb8ff1be93e6914f0
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37179437"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531929"
 ---
 # <a name="list-securitybaselinetemplates"></a>列出 securityBaselineTemplates
 
@@ -42,7 +42,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/templates
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 452
+Content-Length: 493
 
 {
   "value": [
@@ -77,11 +77,14 @@ Content-Length: 452
       "isDeprecated": true,
       "intentCount": 11,
       "templateType": "specializedDevices",
+      "platformType": "androidForWork",
       "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
     }
   ]
 }
 ```
+
+
 
 
 

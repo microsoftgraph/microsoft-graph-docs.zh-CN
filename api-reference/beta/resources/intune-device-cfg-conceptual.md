@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 85843a95b82caa0de07840c005a322652fdefc5b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: adbd49f77950f06e6e09969bd7cae5841493865f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199011"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538621"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -36,6 +36,9 @@ ms.locfileid: "37199011"
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android 设备所有者企业版 Wi-fi 配置](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Android 设备所有者全局代理](intune-deviceconfig-androiddeviceownerglobalproxy.md)
+- [Android 设备所有者全局代理自动配置](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
+- [Android 设备所有者全局代理直接](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android 设备所有者 SCEP 证书配置文件](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -324,6 +327,7 @@ ms.locfileid: "37199011"
 - [macOS kerberos 单一登录扩展](intune-deviceconfig-macoskerberossinglesignonextension.md)
 - [macOS 内核扩展](intune-deviceconfig-macoskernelextension.md)
 - [macOS 启动项目](intune-deviceconfig-macoslaunchitem.md)
+- [macOS PKCS 证书配置文件](intune-deviceconfig-macospkcscertificateprofile.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS 信任的根证书](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 配置](intune-deviceconfig-macosvpnconfiguration.md)
@@ -358,7 +362,6 @@ ms.locfileid: "37199011"
 - [OMA 设置字符串](intune-deviceconfig-omasettingstring.md)
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
-- [策略平台类型](intune-deviceconfig-policyplatformtype.md)
 - [电源操作类型](intune-deviceconfig-poweractiontype.md)
 - [预发布功能](intune-deviceconfig-prereleasefeatures.md)
 - [分级应用类型](intune-deviceconfig-ratingappstype.md)

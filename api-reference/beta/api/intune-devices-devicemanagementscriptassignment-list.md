@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e4b10d55aee973995e13170938bbabd79b71c8ca
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 558045e354f465480dd50b98333451b58fc38b43
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188603"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530823"
 ---
 # <a name="list-devicemanagementscriptassignments"></a>列出 deviceManagementScriptAssignments
 
@@ -35,13 +35,14 @@ ms.locfileid: "37188603"
 }
 -->
 ``` http
+GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +56,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignm
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 ```
 
 ### <a name="response"></a>响应
@@ -77,6 +78,8 @@ Content-Length: 274
   ]
 }
 ```
+
+
 
 
 

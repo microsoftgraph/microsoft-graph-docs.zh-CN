@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62c57d4ed01ab1f454a5356899f9645927680dfd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 97f27f44cfc4af676384dfddfea2afbbbdbe21c6
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313046"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37525208"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 移动应用故障排除事件中包含的历史记录项。
 
@@ -28,8 +28,8 @@ ms.locfileid: "36313046"
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|目标为的 AAD 安全组 id。 可取值为：`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall`。|
-|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`、`error`、`pending`。|
-|errorCode|String|失败的错误代码, 如果没有失败, 则为空。|
+|runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|errorCode|String|失败的错误代码，如果没有失败，则为空。|
 
 ## <a name="relationships"></a>关系
 无
