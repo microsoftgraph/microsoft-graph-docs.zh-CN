@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b14448adf62baa5d448ab9cac12f23cc30b6802c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: acecc5bd9449fcd5e4f0c3ea98f313e5f1fb5a88
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180515"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530480"
 ---
 # <a name="list-devicemanagementscriptdevicestates"></a>列出 deviceManagementScriptDeviceStates
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 714
+Content-Length: 391
 
 {
   "value": [
@@ -75,15 +75,13 @@ Content-Length: 714
       "resultMessage": "Result Message value",
       "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
       "errorCode": 9,
-      "errorDescription": "Error Description value",
-      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-      "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-      "remediationScriptError": "Remediation Script Error value",
-      "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+      "errorDescription": "Error Description value"
     }
   ]
 }
 ```
+
+
 
 
 

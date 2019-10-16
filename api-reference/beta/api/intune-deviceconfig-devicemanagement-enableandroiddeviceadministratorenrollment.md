@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6437d769c1a88b23ac6e11368b8bba6bf3f295b8
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: ce9308d6c25f83d1938dcb280d66c4b970b962a4
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699084"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533992"
 ---
 # <a name="enableandroiddeviceadministratorenrollment-action"></a>enableAndroidDeviceAdministratorEnrollment 操作
 
@@ -41,7 +41,7 @@ POST /deviceManagement/enableAndroidDeviceAdministratorEnrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableAndroidDeviceAdmini
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

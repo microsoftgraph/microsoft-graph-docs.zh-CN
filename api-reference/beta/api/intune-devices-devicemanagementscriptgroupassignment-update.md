@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25edfdba027d045fe36f1971eccbade0f0a8cf20
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 55a38a0ba03e5aef2ab1217b5c145cf9717a0352
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180473"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530403"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>更新 deviceManagementScriptGroupAssignment
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +51,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
-|targetGroupId|String|要作为脚本目标的 Azure Active Directory 组的 Id。|
+|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
+|targetGroupId|字符串|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
 
@@ -87,6 +87,8 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
 
 
 

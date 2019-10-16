@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 48ba27d74160c3c9402efb7590c6ff0a7e809ce8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 026ea6ad1db21579f3532f23fd2eca5759265e87
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199367"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538586"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -73,6 +73,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS VPP 电子书分配](intune-books-iosvppebookassignment.md)
 - [macOS LOB 应用](intune-apps-macoslobapp.md)
 - [macOS LOB 子应用](intune-apps-macoslobchildapp.md)
+- [microsoft edge 应用的 macOS](intune-apps-macosmicrosoftedgeapp.md)
 - [macOS 最低操作系统版本](intune-apps-macosminimumoperatingsystem.md)
 - [macOS Office 套件应用](intune-apps-macosofficesuiteapp.md)
 - [macOS VPP 应用](intune-apps-macosvppapp.md)
@@ -95,6 +96,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [托管的 iOS 应用商店应用](intune-apps-managediosstoreapp.md)
 - [托管的移动 LOB 应用](intune-apps-managedmobilelobapp.md)
 - [MDM 应用配置密钥类型](intune-apps-mdmappconfigkeytype.md)
+- [Microsoft edge 通道](intune-apps-microsoftedgechannel.md)
 - [适用于企业的 Microsoft 应用商店应用](intune-apps-microsoftstoreforbusinessapp.md)
 - [适用于企业的 Microsoft Store 包含的应用](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [适用于企业的 Microsoft Store 许可证类型](intune-apps-microsoftstoreforbusinesslicensetype.md)
@@ -147,11 +149,13 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用注册表检测类型](intune-apps-win32lobappregistrydetectiontype.md)
 - [Win32 LOB 应用程序注册表要求](intune-apps-win32lobappregistryrequirement.md)
 - [Win32 LOB 应用要求](intune-apps-win32lobapprequirement.md)
+- [Win32 LOB 应用重启行为](intune-apps-win32lobapprestartbehavior.md)
 - [Win32 LOB 应用返回代码](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB 应用返回代码类型](intune-apps-win32lobappreturncodetype.md)
 - [Windows APPX](intune-apps-windowsappx.md)
 - [Windows 体系结构](intune-apps-windowsarchitecture.md)
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)
+- [Windows microsoft edge 应用](intune-apps-windowsmicrosoftedgeapp.md)
 - [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows office 客户端配置](intune-cirrus-windowsofficeclientconfiguration.md)
@@ -164,5 +168,3 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 应用商店应用](intune-apps-windowsstoreapp.md)
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
 - [Windows Universal APPX 包含的应用](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

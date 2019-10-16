@@ -4,12 +4,12 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点（RE
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 56950c21527c4bf72dd57e71d27f0b1be2e47046
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1420f751866224905f1636205de173e3bd117451
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196341"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539167"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -62,7 +62,9 @@ ms.locfileid: "37196341"
 - [MIME 内容](intune-shared-mimecontent.md)
 - [移动应用](intune-shared-mobileapp.md)
 - [移动应用分配设置](intune-shared-mobileappassignmentsettings.md)
+- [移动应用安装时间设置](intune-shared-mobileappinstalltimesettings.md)
 - [移动应用疑难解答事件](intune-shared-mobileapptroubleshootingevent.md)
+- [策略平台类型](intune-shared-policyplatformtype.md)
 - [代理域](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [报表根目录](intune-shared-reportroot.md)
@@ -78,6 +80,7 @@ ms.locfileid: "37196341"
 - [VPP 令牌操作失败原因](intune-shared-vpptokenactionfailurereason.md)
 - [Win32 LOB 应用分配设置](intune-shared-win32lobappassignmentsettings.md)
 - [Win32 LOB 应用通知](intune-shared-win32lobappnotification.md)
+- [Win32 LOB 应用重启设置](intune-shared-win32lobapprestartsettings.md)
 - [Windows AppX 应用分配设置](intune-shared-windowsappxappassignmentsettings.md)
 - [Windows Autopilot Deployment 配置文件](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)

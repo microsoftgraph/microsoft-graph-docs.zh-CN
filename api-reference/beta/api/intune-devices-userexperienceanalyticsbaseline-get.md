@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 30f4fa54c494f75633df530124841ab04e146eb2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: de70a3447f9c5474d1f0df409afb0607f4e9116e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188260"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527588"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>获取 userExperienceAnalyticsBaseline
 
@@ -44,7 +44,7 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -79,6 +79,8 @@ Content-Length: 297
   }
 }
 ```
+
+
 
 
 

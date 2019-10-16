@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 246f7d00920a096e4e1af328e7bcb7d76c3ba448
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0137f38e73c9038d012e9123b3c6a8d160c65e0d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188631"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531495"
 ---
 # <a name="update-devicehealthscript"></a>更新 deviceHealthScript
 
@@ -35,13 +35,13 @@ ms.locfileid: "37188631"
 }
 -->
 ``` http
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
+PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,20 +51,19 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本的唯一标识符。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|displayName|字符串|设备管理脚本的名称。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|说明|String|设备管理脚本的可选说明。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义，脚本将在从[DeviceManagementScript](../resources/intune-shared-devicemanagementscript.md)继承后运行。|
-|scriptContent|Binary|脚本内容。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|fileName|String|脚本文件名。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。 继承自[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为从[DeviceManagementScript](../resources/intune-shared-devicemanagementscript.md)继承的32位运行的值|
-|complianceRule|[deviceHealthScriptComplianceRule](../resources/intune-devices-devicehealthscriptcompliancerule.md)|尚未记录|
-|remediationScriptContent|Binary|尚未记录|
+|id|字符串|设备运行状况脚本的唯一标识符|
+|发布者|字符串|设备运行状况脚本发布者的名称|
+|version|String|设备运行状况脚本的版本|
+|displayName|字符串|设备运行状况脚本的名称|
+|说明|String|设备运行状况脚本的说明|
+|detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
+|remediationScriptContent|Binary|修正 powershell 脚本的全部内容|
+|createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
+|lastModifiedDateTime|DateTimeOffset|修改设备运行状况脚本的时间戳。 此属性是只读的。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
+|runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
+|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
 
 
 
@@ -76,32 +75,24 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 712
+Content-length: 483
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
+  "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "c2NyaXB0Q29udGVudA==",
+  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "string",
-    "operator": "equal",
-    "detectionValue": "Detection Value value"
-  },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
+  ]
 }
 ```
 
@@ -110,35 +101,29 @@ Content-length: 712
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 884
+Content-Length: 655
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "id": "bcb60502-0502-bcb6-0205-b6bc0205b6bc",
+  "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "c2NyaXB0Q29udGVudA==",
+  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "string",
-    "operator": "equal",
-    "detectionValue": "Detection Value value"
-  },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
+  ]
 }
 ```
+
+
 
 
 
