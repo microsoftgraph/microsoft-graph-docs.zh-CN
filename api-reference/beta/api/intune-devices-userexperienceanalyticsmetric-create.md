@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be303d476524af2711937dd73d8f93d244e05d24
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9c5cad99ad28ad97f568d6a724e92725eeaa6264
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188197"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527231"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>创建 userExperienceAnalyticsMetric
 
@@ -35,13 +35,16 @@ ms.locfileid: "37188197"
 }
 -->
 ``` http
+POST /deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
+POST /deviceManagement/userExperienceAnalyticsRegressionSummary/manufacturerRegression
+POST /deviceManagement/userExperienceAnalyticsRegressionSummary/operatingSystemRegression
 POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,9 +54,9 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标的唯一标识符。|
+|id|字符串|User experience analytics 指标的唯一标识符。|
 |值|双精度|User experience analytics 指标的值。|
-|处理器|String|User experience analytics 指标的单位。|
+|处理器|字符串|User experience analytics 指标的单位。|
 
 
 
@@ -65,7 +68,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
+POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
 Content-type: application/json
 Content-length: 147
 
@@ -90,6 +93,8 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4558fd45dfcf2c9c8ef485e224332065a505c439
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 81790f99aaa02e4f59d648292b6adccfa66f14b7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37193443"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535728"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4119
+Content-Length: 4525
 
 {
   "value": {
@@ -115,6 +115,9 @@ Content-Length: 4119
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
     "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -160,10 +163,15 @@ Content-Length: 4119
     "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
     "customBrowserProtocol": "Custom Browser Protocol value",
     "customBrowserPackageId": "Custom Browser Package Id value",
-    "customBrowserDisplayName": "Custom Browser Display Name value"
+    "customBrowserDisplayName": "Custom Browser Display Name value",
+    "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
+    "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
+    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
   }
 }
 ```
+
+
 
 
 

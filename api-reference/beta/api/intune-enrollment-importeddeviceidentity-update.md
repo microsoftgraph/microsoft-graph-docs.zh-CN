@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60a2230ae85a5937752a5d96347b3b9b3c32229a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: ef37d62092f224539355d8ec3ea8b0a65a79227c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187861"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535875"
 ---
 # <a name="update-importeddeviceidentity"></a>更新 importedDeviceIdentity
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|导入的设备标识的 Id|
-|importedDeviceIdentifier|String|导入的设备标识符|
+|importedDeviceIdentifier|字符串|导入的设备标识符|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|导入的设备标识的类型。 可取值为：`unknown`、`imei`、`serialNumber`。|
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
@@ -106,6 +106,8 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
+
 
 
 
