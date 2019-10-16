@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7faebd89f9e8823c9b56443db6d8cd994923a2f9
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 685aadaf1f2daf806a5e4dde040423958bcff889
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633543"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544196"
 ---
 ```csharp
 
@@ -20,12 +20,8 @@ var post = new Post
     },
     Attachments = new List<Attachment>()
     {
-        new Attachment
+        new ReferenceAttachment
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"@odata.type","#microsoft.graph.referenceAttachment"}
-            },
             Name = "Personal pictures",
             SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
             ProviderType = "oneDriveConsumer",

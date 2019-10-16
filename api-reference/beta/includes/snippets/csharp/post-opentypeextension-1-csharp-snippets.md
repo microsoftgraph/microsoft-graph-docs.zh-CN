@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 04230414b68d1fde64016bc08524006fc40db2e7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f3be1198598a0533702ebfec8513afc7f2a11f6f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878352"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544189"
 ---
 ```csharp
 
@@ -31,12 +31,8 @@ var message = new Message
     },
     Extensions = new List<Extension>()
     {
-        new Extension
+        new OpenTypeExtension
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"@odata.type","microsoft.graph.openTypeExtension"}
-            },
             ExtensionName = "Com.Contoso.Referral",
             CompanyName = "Wingtip Toys",
             ExpirationDate = "2015-12-30T11:00:00Z",

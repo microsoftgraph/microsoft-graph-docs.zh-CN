@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a94f1f003d1eed9f407cbb104d36c7ff57e002ec
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d3b4b114cdb03b2c7733748115f13ebb9d37ce99
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838762"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544183"
 ---
 ```csharp
 
@@ -13,31 +13,15 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var call = new Call
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#microsoft.graph.call"}
-    },
     CallbackUri = "https://bot.contoso.com/callback",
     Targets = new List<ParticipantInfo>()
     {
         new ParticipantInfo
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"@odata.type","#microsoft.graph.participantInfo"}
-            },
             Identity = new IdentitySet
             {
-                AdditionalData = new Dictionary<string, object>()
-                {
-                    {"@odata.type","#microsoft.graph.identitySet"}
-                },
                 User = new Identity
                 {
-                    AdditionalData = new Dictionary<string, object>()
-                    {
-                        {"@odata.type","#microsoft.graph.identity"}
-                    },
                     DisplayName = "John",
                     Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
                 }
@@ -48,12 +32,8 @@ var call = new Call
     {
         Modality.Audio
     },
-    MediaConfig = new MediaConfig
+    MediaConfig = new ServiceHostedMediaConfig
     {
-        AdditionalData = new Dictionary<string, object>()
-        {
-            {"@odata.type","#microsoft.graph.serviceHostedMediaConfig"}
-        }
     }
 };
 

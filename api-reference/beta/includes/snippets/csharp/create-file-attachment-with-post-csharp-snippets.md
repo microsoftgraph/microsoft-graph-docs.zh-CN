@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 9d29b2bd62958b0b77e13c5e7c92f1241a580308
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0b73b1f11dd73935e0011b2f270040f47b83439f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633564"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544195"
 ---
 ```csharp
 
@@ -20,12 +20,8 @@ var post = new Post
     },
     Attachments = new List<Attachment>()
     {
-        new Attachment
+        new FileAttachment
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"@odata.type","#microsoft.graph.fileAttachment"}
-            },
             Name = "Another file as attachment",
             ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
         }

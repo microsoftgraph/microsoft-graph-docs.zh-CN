@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f89534bffeff6c7b12391d7a97b8715cb110b34e
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7d0f87d621356c71a2daeda99565cabc7ce57b22
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845927"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544176"
 ---
 ```csharp
 
@@ -13,12 +13,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var callbackUri = "callbackUri-value";
 
-var mediaConfig = new MediaConfig
+var mediaConfig = new AppHostedMediaConfig
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#microsoft.graph.appHostedMediaConfig"}
-    },
     Blob = "<media config blob>"
 };
 

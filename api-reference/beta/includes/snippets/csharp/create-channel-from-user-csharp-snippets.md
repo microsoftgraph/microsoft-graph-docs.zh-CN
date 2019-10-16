@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 54deaaf5fa0eb3193e26a7653855f813c7637008
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 827c43302bff85a0d75e538199a8fd77a08f44b0
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402276"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544175"
 ---
 ```csharp
 
@@ -13,21 +13,16 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var channel = new Channel
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#Microsoft.Teams.Core.channel"}
-    },
     MembershipType = ChannelMembershipType.Private,
     DisplayName = "My First Private Channel",
     Description = "This is my first private channels",
     Members = new List<ConversationMember>()
     {
-        new ConversationMember
+        new AadUserConversationMember
         {
             AdditionalData = new Dictionary<string, object>()
             {
-                {"user@odata.bind","https://graph.microsoft.com/beta/users('{user_id}')"},
-                {"@odata.type","#microsoft.graph.aadUserConversationMember"}
+                {"user@odata.bind","https://graph.microsoft.com/beta/users('{user_id}')"}
             },
             Roles = new List<String>()
             {
