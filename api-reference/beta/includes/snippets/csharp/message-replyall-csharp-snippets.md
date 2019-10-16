@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1b52e9502634ef13f2637a31678769cd34b527f4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ec016b4b22fedea790ce77abe4f1291d325a5983
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879556"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544190"
 ---
 ```csharp
 
@@ -15,12 +15,8 @@ var message = new Message
 {
     Attachments = new List<Attachment>()
     {
-        new Attachment
+        new FileAttachment
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"@odata.type","#microsoft.graph.fileAttachment"}
-            },
             Name = "guidelines.txt",
             ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
         }

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6c5906550807da9cb75946b29df6a509049c3292
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 165b513e355c2ae918657f75298924d061dfbe29
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845929"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544179"
 ---
 ```csharp
 
@@ -13,58 +13,54 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingService = new BookingService
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"staffMemberIds@odata.type","#Collection(String)"},
-        {"defaultReminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
-        {"defaultPriceType@odata.type","#microsoft.graph.bookingPriceType"},
-        {"@odata.type","#microsoft.graph.bookingService"}
-    },
     DefaultDuration = "PT1H30M",
     DefaultLocation = new Location
     {
-        AdditionalData = new Dictionary<string, object>()
-        {
-            {"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
-            {"locationType@odata.type","#microsoft.graph.locationType"},
-            {"@odata.type","#microsoft.graph.location"}
-        },
         Address = new PhysicalAddress
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"type@odata.type","#microsoft.graph.physicalAddressType"},
-                {"@odata.type","#microsoft.graph.physicalAddress"}
-            },
             City = "Buffalo",
             CountryOrRegion = "USA",
             PostalCode = "98052",
             PostOfficeBox = null,
             State = "NY",
             Street = "4567 First Street",
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"type@odata.type","#microsoft.graph.physicalAddressType"}
+            },
             Type = null
         },
         Coordinates = null,
         DisplayName = "Contoso Lunch Delivery",
         LocationEmailAddress = null,
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+            {"locationType@odata.type","#microsoft.graph.locationType"}
+        },
         LocationType = null,
         LocationUri = null,
         UniqueId = null,
         UniqueIdType = null
     },
     DefaultPrice = 10,
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"staffMemberIds@odata.type","#Collection(String)"},
+        {"defaultReminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
+        {"defaultPriceType@odata.type","#microsoft.graph.bookingPriceType"}
+    },
     DefaultPriceType = BookingPriceType.FixedPrice,
     DefaultReminders = new List<BookingReminder>()
     {
         new BookingReminder
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"},
-                {"@odata.type","#microsoft.graph.bookingReminder"}
-            },
             Message = "Please be reminded that this service is tomorrow.",
             Offset = "P1D",
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"}
+            },
             Recipients = BookingReminderRecipients.AllAttendees
         }
     },
@@ -76,10 +72,6 @@ var bookingService = new BookingService
     PreBuffer = "PT5M",
     SchedulingPolicy = new BookingSchedulingPolicy
     {
-        AdditionalData = new Dictionary<string, object>()
-        {
-            {"@odata.type","#microsoft.graph.bookingSchedulingPolicy"}
-        },
         AllowStaffSelection = true,
         MaximumAdvance = "P10D",
         MinimumLeadTime = "PT10H",

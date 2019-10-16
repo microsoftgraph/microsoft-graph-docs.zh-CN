@@ -1,22 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6a500e4d5d77f83d2bcaf6d71884a6872b0e6022
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: cf500660433c52c8ac1973e7105cbeb0bc2822c9
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859325"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544170"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = new Attachment
+var attachment = new FileAttachment
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#Microsoft.OutlookServices.FileAttachment"}
-    },
     Name = "name-value",
     ContentType = "contentType-value",
     IsInline = false,
