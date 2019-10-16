@@ -5,28 +5,28 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: de8f7b302403a1f64e068aa530e2f0e25220540c
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: f2843f068bf8abb7612afdc0a21b68234324e52b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36839035"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538663"
 ---
-# <a name="list-workbookcommentreplies"></a><span data-ttu-id="a65e4-103">列出 workbookCommentReplies</span><span class="sxs-lookup"><span data-stu-id="a65e4-103">List workbookCommentReplies</span></span>
+# <a name="list-workbookcommentreplies"></a><span data-ttu-id="08c80-103">列出 workbookCommentReplies</span><span class="sxs-lookup"><span data-stu-id="08c80-103">List workbookCommentReplies</span></span>
 
-<span data-ttu-id="a65e4-104">检索[workbookCommentReply](../resources/workbookcommentreply.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="a65e4-104">Retrieve a list of [workbookCommentReply](../resources/workbookcommentreply.md) objects.</span></span>
+<span data-ttu-id="08c80-104">检索[workbookCommentReply](../resources/workbookcommentreply.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="08c80-104">Retrieve a list of [workbookCommentReply](../resources/workbookcommentreply.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a65e4-105">权限</span><span class="sxs-lookup"><span data-stu-id="a65e4-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="08c80-105">权限</span><span class="sxs-lookup"><span data-stu-id="08c80-105">Permissions</span></span>
 
-<span data-ttu-id="a65e4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a65e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="08c80-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="08c80-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a65e4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a65e4-108">Permission type</span></span>                        | <span data-ttu-id="a65e4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a65e4-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="08c80-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="08c80-108">Permission type</span></span>                        | <span data-ttu-id="08c80-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="08c80-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a65e4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a65e4-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a65e4-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a65e4-111">Files.ReadWrite</span></span> |
-| <span data-ttu-id="a65e4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a65e4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a65e4-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a65e4-113">Not supported.</span></span> |
-| <span data-ttu-id="a65e4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a65e4-114">Application</span></span>                            | <span data-ttu-id="a65e4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a65e4-115">Not supported.</span></span> |
+| <span data-ttu-id="08c80-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="08c80-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="08c80-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="08c80-111">Files.ReadWrite</span></span> |
+| <span data-ttu-id="08c80-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="08c80-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08c80-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="08c80-113">Not supported.</span></span> |
+| <span data-ttu-id="08c80-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="08c80-114">Application</span></span>                            | <span data-ttu-id="08c80-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="08c80-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a65e4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a65e4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08c80-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="08c80-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,59 +34,59 @@ ms.locfileid: "36839035"
 GET /workbook/comments/{id}/replies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a65e4-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a65e4-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="08c80-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="08c80-117">Request headers</span></span>
 
-| <span data-ttu-id="a65e4-118">名称</span><span class="sxs-lookup"><span data-stu-id="a65e4-118">Name</span></span>      |<span data-ttu-id="a65e4-119">说明</span><span class="sxs-lookup"><span data-stu-id="a65e4-119">Description</span></span>|
+| <span data-ttu-id="08c80-118">名称</span><span class="sxs-lookup"><span data-stu-id="08c80-118">Name</span></span>      |<span data-ttu-id="08c80-119">说明</span><span class="sxs-lookup"><span data-stu-id="08c80-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a65e4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a65e4-120">Authorization</span></span> | <span data-ttu-id="a65e4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a65e4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="08c80-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="08c80-120">Authorization</span></span> | <span data-ttu-id="08c80-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="08c80-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a65e4-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="a65e4-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="08c80-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="08c80-123">Request body</span></span>
 
-<span data-ttu-id="a65e4-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a65e4-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="08c80-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="08c80-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a65e4-125">响应</span><span class="sxs-lookup"><span data-stu-id="a65e4-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="08c80-125">响应</span><span class="sxs-lookup"><span data-stu-id="08c80-125">Response</span></span>
 
-<span data-ttu-id="a65e4-126">如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookCommentReply](../resources/workbookcommentreply.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="a65e4-126">If successful, this method returns a `200 OK` response code and a collection of [workbookCommentReply](../resources/workbookcommentreply.md) objects in the response body.</span></span>
+<span data-ttu-id="08c80-126">如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookCommentReply](../resources/workbookcommentreply.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="08c80-126">If successful, this method returns a `200 OK` response code and a collection of [workbookCommentReply](../resources/workbookcommentreply.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a65e4-127">示例</span><span class="sxs-lookup"><span data-stu-id="a65e4-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="08c80-127">示例</span><span class="sxs-lookup"><span data-stu-id="08c80-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a65e4-128">请求</span><span class="sxs-lookup"><span data-stu-id="a65e4-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="08c80-128">请求</span><span class="sxs-lookup"><span data-stu-id="08c80-128">Request</span></span>
 
-<span data-ttu-id="a65e4-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a65e4-129">The following is an example of the request.</span></span>
+<span data-ttu-id="08c80-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="08c80-129">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a65e4-130">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="a65e4-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="08c80-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="08c80-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_replies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a65e4-131">C#</span><span class="sxs-lookup"><span data-stu-id="a65e4-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="08c80-131">C#</span><span class="sxs-lookup"><span data-stu-id="08c80-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a65e4-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a65e4-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="08c80-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08c80-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a65e4-133">目标-C</span><span class="sxs-lookup"><span data-stu-id="a65e4-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="08c80-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08c80-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a65e4-134">Java</span><span class="sxs-lookup"><span data-stu-id="a65e4-134">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="08c80-134">Java</span><span class="sxs-lookup"><span data-stu-id="08c80-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-replies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a65e4-135">响应</span><span class="sxs-lookup"><span data-stu-id="a65e4-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="08c80-135">响应</span><span class="sxs-lookup"><span data-stu-id="08c80-135">Response</span></span>
 
-<span data-ttu-id="a65e4-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a65e4-136">The following is an example of the response.</span></span>
+<span data-ttu-id="08c80-136">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="08c80-136">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="a65e4-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a65e4-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="08c80-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="08c80-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
