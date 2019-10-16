@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b595f8fdcc680ff93693f0fcee7f618386aa0740
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 68204c747aa983ed44cf2c30fb056baaa7de7225
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199940"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539146"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "37199940"
 |[List deviceConfigurations](../api/intune-shared-deviceconfiguration-list.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) 集合|列出 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) 对象的属性和关系。|
 |[Get deviceConfiguration](../api/intune-shared-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|读取 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) 对象的属性和关系。|
 |**设备配置**|
-|[分配操作](../api/intune-shared-deviceconfiguration-assign.md)|deviceConfigurationAssignment 集合|尚未记录|
+|[assign 操作](../api/intune-shared-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|尚未记录|
 |[windowsPrivacyAccessControls 操作](../api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md)|无|尚未记录|
 |[assignedAccessMultiModeProfiles 操作](../api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md)|无|尚未记录|
-|[getTargetedUsersAndDevices 操作](../api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md)|deviceConfigurationTargetedUserAndDevice 集合|尚未记录|
+|[getTargetedUsersAndDevices 操作](../api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune-deviceconfig-deviceconfigurationtargeteduseranddevice.md)集合|尚未记录|
 |**策略集**|
 |[hasPayloadLinks 操作](../api/intune-shared-deviceconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)集合|尚未记录|
 
@@ -38,7 +38,7 @@ ms.locfileid: "37199940"
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。|
@@ -52,12 +52,12 @@ ms.locfileid: "37199940"
 |关系|类型|说明|
 |:---|:---|:---|
 |**设备配置**|
-|groupAssignments|deviceConfigurationGroupAssignment 集合|设备配置文件的组分配列表。|
-|assignments|deviceConfigurationAssignment 集合|设备配置文件的分配列表。|
-|deviceStatuses|deviceConfigurationDeviceStatus 集合|按设备的设备配置安装状态。|
-|userStatuses|deviceConfigurationUserStatus 集合|按用户的设备配置安装状态。|
-|deviceStatusOverview|deviceConfigurationDeviceOverview|设备配置设备状态概述|
-|userStatusOverview|deviceConfigurationUserOverview|设备配置用户状态概述|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。|
+|assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要|
 
 ## <a name="json-representation"></a>JSON 表示形式

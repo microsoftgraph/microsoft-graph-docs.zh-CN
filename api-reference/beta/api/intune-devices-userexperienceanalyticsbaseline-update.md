@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d998d6e744b62edfe69486212bd538c4d62d2a5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bdd07e16c0f0388ce8dac22f0296695d59cc92dc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180172"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527518"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>更新 userExperienceAnalyticsBaseline
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 比较基准的唯一标识符。|
+|id|字符串|User experience analytics 比较基准的唯一标识符。|
 |displayName|String|User experience analytics 基线的名称。|
 |overallScore|Int32|用户体验分析基准的总体分数。|
 |isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
@@ -95,6 +95,8 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
 
 
 
