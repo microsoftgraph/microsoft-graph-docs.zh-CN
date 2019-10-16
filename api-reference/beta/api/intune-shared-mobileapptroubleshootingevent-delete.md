@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c431df2b79f0b3dfa0a75fd66cb4d6ec173ce7d5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c32000aea49146c7b2239d681584da61b223a4b8
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194451"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537956"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>删除 mobileAppTroubleshootingEvent
 
@@ -27,11 +27,11 @@ ms.locfileid: "37194451"
 |:---|:---|
 |委派（工作或学校帐户）||
 |&nbsp;&nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 |&nbsp;&nbsp; **设备管理**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **疑难解答**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **故障排除**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -46,7 +46,7 @@ DELETE /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -68,6 +68,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

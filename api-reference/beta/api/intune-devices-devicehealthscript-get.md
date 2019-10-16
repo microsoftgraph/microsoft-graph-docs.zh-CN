@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b06692a9eb152a458dfdc5795a351ffe820f5e59
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 3de82de3bb8164e863f227c7f3d83625af9664ea
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188645"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531621"
 ---
 # <a name="get-devicehealthscript"></a>获取 deviceHealthScript
 
@@ -35,7 +35,7 @@ ms.locfileid: "37188645"
 }
 -->
 ``` http
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
+GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -58,7 +58,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ```
 
 ### <a name="response"></a>响应
@@ -66,37 +66,31 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 951
+Content-Length: 706
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceHealthScript",
     "id": "bcb60502-0502-bcb6-0205-b6bc0205b6bc",
+    "publisher": "Publisher value",
+    "version": "Version value",
     "displayName": "Display Name value",
     "description": "Description value",
-    "runSchedule": {
-      "@odata.type": "microsoft.graph.runSchedule"
-    },
-    "scriptContent": "c2NyaXB0Q29udGVudA==",
+    "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+    "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "runAsAccount": "user",
     "enforceSignatureCheck": true,
-    "fileName": "File Name value",
+    "runAs32Bit": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ],
-    "runAs32Bit": true,
-    "complianceRule": {
-      "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-      "detectionType": "string",
-      "operator": "equal",
-      "detectionValue": "Detection Value value"
-    },
-    "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
+    ]
   }
 }
 ```
+
+
 
 
 

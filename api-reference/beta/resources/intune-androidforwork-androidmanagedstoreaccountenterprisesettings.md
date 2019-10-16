@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57bde7d0658c78a1dd7684342d861add9a167156
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5ac06a9c20058e760e675a8658c466a46cb9f30d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366215"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536614"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 适用于 Android 托管存储帐户的企业设置。
 
@@ -25,21 +25,22 @@ ms.locfileid: "36366215"
 |:---|:---|:---|
 |[获取 androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|读取[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)对象的属性和关系。|
 |[更新 androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-update.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|更新[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)对象的属性。|
+|[approveApps 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps.md)|无|尚未记录|
 |[requestSignupUrl 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestsignupurl.md)|String|尚未记录|
 |[completeSignup 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|无|尚未记录|
 |[syncApps 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|无|尚未记录|
 |[取消绑定操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|无|尚未记录|
-|[createGooglePlayWebToken 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|生成在可嵌入组件中使用的 web 令牌。|
+|[createGooglePlayWebToken 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|字符串|生成在可嵌入组件中使用的 web 令牌。|
 |[setAndroidDeviceOwnerFullyManagedEnrollmentState 操作](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|无|将 AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled 设置为给定值。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Android 应用商店帐户企业设置标识符|
+|id|字符串|Android 应用商店帐户企业设置标识符|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|使用 Google EMM API 的租户的绑定状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
-|ownerUserPrincipalName|String|创建了企业的所有者 UPN|
+|ownerUserPrincipalName|字符串|创建了企业的所有者 UPN|
 |ownerOrganizationName|String|在加入 Android 企业时使用的组织名称|
 |lastModifiedDateTime|DateTimeOffset|Android 企业版设置的上次修改时间|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|指示哪些用户可以在 Android 企业版设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|

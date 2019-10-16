@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e457e0e0cdc5f58d061a64cf73222a3b4e81c486
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e46fe73445f6af8f1e7e9ca44de4f6305ceb0eb7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180543"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530746"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>更新 deviceManagementScriptAssignment
 
@@ -35,13 +35,14 @@ ms.locfileid: "37180543"
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceManagementScriptAssignmentId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments/{deviceManagementScriptAssignmentId}
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +52,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
+|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
@@ -64,7 +65,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments/{deviceManagementScriptAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceManagementScriptAssignmentId}
 Content-type: application/json
 Content-length: 172
 
@@ -91,6 +92,8 @@ Content-Length: 221
   }
 }
 ```
+
+
 
 
 

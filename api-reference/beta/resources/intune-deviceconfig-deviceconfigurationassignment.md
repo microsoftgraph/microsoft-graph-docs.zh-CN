@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e344554804044687c7e5b9aa90c6171055b64a16
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: af6c3715e106e446d76c1e7b250e79e713cef079
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198192"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538887"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
@@ -32,10 +32,10 @@ ms.locfileid: "37198192"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|分配的键。|
+|id|字符串|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置、direct 或包裹/policySet 的工作分配源。 可取值为：`direct`、`policySets`。|
-|sourceId|String|工作分配的源的标识符。|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置、direct 或包裹/policySet 的工作分配源。 此属性是只读的。 可取值为：`direct`、`policySets`。|
+|sourceId|字符串|工作分配的源的标识符。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无

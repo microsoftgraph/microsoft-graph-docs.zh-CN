@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cffc9ed9c5e4c5590386f022e78f52f2efd56666
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: aa8b654bbab64cdc7c523074c20b8555df3e2c8a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196950"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538796"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState 资源类型
 
@@ -32,16 +32,12 @@ ms.locfileid: "37196950"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本设备状态实体的密钥。 此属性是只读的。|
-|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`、`error`、`pending`。|
-|resultMessage|String|执行输出的详细信息。|
+|id|字符串|设备管理脚本设备状态实体的密钥。 此属性是只读的。|
+|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
+|resultMessage|字符串|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
 |errorDescription|String|与设备管理脚本的错误执行相对应的错误说明。|
-|lastSyncDateTime|DateTimeOffset|Intune 管理扩展将同步到 Intune 的最新时间。|
-|preRemediationDetectionScriptOutput|String|修复前的检测脚本输出。|
-|remediationScriptError|String|修正脚本的错误输出。|
-|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -64,11 +60,7 @@ ms.locfileid: "37196950"
   "resultMessage": "String",
   "lastStateUpdateDateTime": "String (timestamp)",
   "errorCode": 1024,
-  "errorDescription": "String",
-  "lastSyncDateTime": "String (timestamp)",
-  "preRemediationDetectionScriptOutput": "String",
-  "remediationScriptError": "String",
-  "postRemediationDetectionScriptOutput": "String"
+  "errorDescription": "String"
 }
 ```
 

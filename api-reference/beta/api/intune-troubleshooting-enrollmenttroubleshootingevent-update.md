@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36266ee1b50ff4c3c29d29562ae8421621e07f4f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 28a22bdf5b19d0c90ccb05c7952008748ade1e93
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195382"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536719"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>更新 enrollmentTroubleshootingEvent
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,16 +53,16 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |:---|:---|:---|
 |id|字符串|对象的 UUID。继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|事件发生的时间。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|String|用于跟踪服务中的故障的 ID。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|correlationId|字符串|用于跟踪服务中的故障的 ID。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|名|String|与疑难解答事件对应的事件名称。 它是一个继承自[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)的可选字段|
+|名|字符串|与疑难解答事件对应的事件名称。 它是一个继承自[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)的可选字段|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关从[DeviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)继承的故障排除事件的其他信息|
-|managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
-|operatingSystem|String|操作系统。|
-|osVersion|String|操作系统版本。|
+|managedDeviceIdentifier|字符串|Intune 创建或收集的设备标识符。|
+|operatingSystem|字符串|操作系统。|
+|osVersion|字符串|操作系统版本。|
 |userId|String|尝试注册设备的用户的标识符。|
-|deviceId|String|Azure AD 设备标识符。|
-|enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|注册类型。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`、`appleUserEnrollmentWithAzureAD`。|
+|deviceId|字符串|Azure AD 设备标识符。|
+|enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Highlevel 失败类别。 可取值为：`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`、`userAbandonment`。|
 |failureReason|String|详细失败原因。|
 
@@ -161,6 +161,8 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
+
+
 
 
 

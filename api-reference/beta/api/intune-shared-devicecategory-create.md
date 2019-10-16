@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2715d1a16b1647f23d85002f52c9c789d5c47668
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: abcf67a8094033ce2a77ca6dae301c1b11a1297d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194731"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537104"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCategories
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -99,6 +99,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

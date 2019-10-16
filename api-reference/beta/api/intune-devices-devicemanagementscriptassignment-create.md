@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 38e480d742d4926b8d3edb5b78086cf318975598
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e31e19da1a9aad5a96ba8bdb3b87a2c2acc3add7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180578"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531040"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>创建 deviceManagementScriptAssignment
 
@@ -35,13 +35,14 @@ ms.locfileid: "37180578"
 }
 -->
 ``` http
+POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
+|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
@@ -64,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 Content-type: application/json
 Content-length: 172
 
@@ -91,6 +92,8 @@ Content-Length: 221
   }
 }
 ```
+
+
 
 
 

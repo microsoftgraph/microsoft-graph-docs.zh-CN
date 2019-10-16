@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 00449c7653a319c88ca150a5f0cf850868f6586b
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: a43dedd654f67a7c8ffa84931476526a2f44bb44
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402613"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538421"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ MSGraphUser *user = [[MSGraphUser alloc] init];
 [user setDisplayName:@"John Smith"];
 NSMutableArray *identitiesList = [[NSMutableArray alloc] init];
 MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
-[identities setSignInType:@"signInName"];
+[identities setSignInType:@"userName"];
 [identities setIssuer:@"contoso.onmicrosoft.com"];
 [identities setIssuerAssignedId:@"johnsmith"];
 [identitiesList addObject: identities];

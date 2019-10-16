@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14b9829dcdabc17a9ce9e3a741bf2ca80adca4c1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e0734e66888c4616b6bd0c4624c64bbab68fb823
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196971"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538481"
 ---
 # <a name="securitybaselinetemplate-resource-type"></a>securityBaselineTemplate 资源类型
 
@@ -38,17 +38,18 @@ ms.locfileid: "37196971"
 |id|字符串|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板 ID|
 |displayName|String|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板的显示名称|
 |说明|String|模板的说明继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|versionInfo|String|模板的版本信息继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|versionInfo|字符串|模板的版本信息继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |intentCount|Int32|从此模板创建的意向数。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`。|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`。|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |publishedDateTime|DateTimeOffset|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承发布模板时|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|此模板继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)的所有设置的集合|
-|categories|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)集合|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板中的设置类别的集合|
+|类别|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)集合|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板中的设置类别的集合|
 |migratableTo|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)集合|模板集合此模板可从[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)中迁移到继承|
 |deviceStateSummary|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|安全基准设备状态摘要|
 |deviceStates|[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)集合|安全基准设备状态|
@@ -72,6 +73,7 @@ ms.locfileid: "37196971"
   "isDeprecated": true,
   "intentCount": 1024,
   "templateType": "String",
+  "platformType": "String",
   "publishedDateTime": "String (timestamp)"
 }
 ```

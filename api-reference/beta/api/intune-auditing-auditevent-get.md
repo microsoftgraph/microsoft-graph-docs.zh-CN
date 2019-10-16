@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23ce49e80b06e778018f5088744dbbfe1df84dc3
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 30553750e6cdca7bd7b74ba81051998437a80a96
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171524"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534944"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 
@@ -44,7 +44,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1538
+Content-Length: 1747
 
 {
   "value": {
@@ -85,7 +85,14 @@ Content-Length: 1538
       "userPrincipalName": "User Principal Name value",
       "servicePrincipalName": "Service Principal Name value",
       "ipAddress": "Ip Address value",
-      "userId": "User Id value"
+      "userId": "User Id value",
+      "scopeTags": [
+        {
+          "@odata.type": "microsoft.graph.scopeTagInfo",
+          "scopeTagName": "Scope Tag Name value",
+          "scopeTagId": "Scope Tag Id value"
+        }
+      ]
     },
     "activity": "Activity value",
     "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -113,6 +120,8 @@ Content-Length: 1538
   }
 }
 ```
+
+
 
 
 

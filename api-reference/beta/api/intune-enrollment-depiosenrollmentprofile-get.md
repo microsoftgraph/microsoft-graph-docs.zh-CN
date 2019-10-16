@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e602786b7b7c49fb2f9a5027583b44754991245
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 21f3ec0cacb83e13071ee8453f084a070e8e26e1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187882"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536060"
 ---
 # <a name="get-depiosenrollmentprofile"></a>获取 depIOSEnrollmentProfile
 
@@ -44,7 +44,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2166
+Content-Length: 2200
 
 {
   "value": {
@@ -98,6 +98,7 @@ Content-Length: 2166
     "privacyPaneDisabled": true,
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
+    "configurationWebUrl": true,
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -126,6 +127,8 @@ Content-Length: 2166
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 601521456898ac69a0a34ac400514c46efa77550
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8718a8ede026e236a00fd49521c10359545061be
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188500"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530228"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>更新 deviceManagementScriptUserState
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
-|userPrincipalName|String|特定用户的用户主体名称。|
+|userPrincipalName|字符串|特定用户的用户主体名称。|
 
 
 
@@ -93,6 +93,8 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a5048e5c01e22d9c0922f9620916c3bc4251b07
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 84fcdda3990642f42c9dcaed0616aed4c9946b7f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188281"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527728"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|摘要的唯一标识符|
+|id|字符串|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 943
+Content-length: 1082
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -86,7 +86,11 @@ Content-length: 943
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -113,7 +117,7 @@ Content-length: 943
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1056
+Content-Length: 1195
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -128,7 +132,11 @@ Content-Length: 1056
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -150,6 +158,8 @@ Content-Length: 1056
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

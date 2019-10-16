@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27246f8e95b2db50be9b0a4e26fa962cbbec0560
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 06cc1ad70417e771a6ab0a20b45be3c9c735bfad
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189667"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537308"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
@@ -41,7 +41,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -52,16 +52,16 @@ POST /deviceManagement/userPfxCertificates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|PFX 证书的唯一标识符。|
-|为|String|SHA-1 PFX 证书的指纹。|
+|为|字符串|SHA-1 PFX 证书的指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|String|PFX 证书的用户主体名称。|
+|userPrincipalName|字符串|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
-|providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
+|providerName|字符串|用于加密此 blob 的加密提供程序。|
+|名|字符串|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
-|encryptedPfxPassword|String|加密的 PFX 密码。|
+|encryptedPfxPassword|字符串|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 
@@ -118,6 +118,8 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

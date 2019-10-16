@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85487883069c7456da3404dce7e013c166bbe790
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d4297fbb4e6693d422a3c65a81890c9f84b8aeac
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195781"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536922"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -30,13 +30,13 @@ ms.locfileid: "37195781"
 | &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 | &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ POST /users
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ POST /users
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|用户的唯一标识符。|
+|id|字符串|用户的唯一标识符。|
 |**入职**||
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
@@ -103,6 +103,8 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
 
 
 

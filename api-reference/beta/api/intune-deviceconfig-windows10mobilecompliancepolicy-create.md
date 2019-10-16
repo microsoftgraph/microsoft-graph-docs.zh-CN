@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94ad774345ced021664c233df93e6fda6f9492d7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 56c530a38eff24da72496f1f188ff89bcec94b9a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37182531"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533156"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>创建 windows10MobileCompliancePolicy
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -67,7 +67,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordRequireToUnlockFromIdle|Boolean|需要密码才可解锁空闲设备。|
-|osMinimumVersion|String|最低 Windows Phone 版本。|
+|osMinimumVersion|字符串|最低 Windows Phone 版本。|
 |osMaximumVersion|String|最高 Windows Phone 版本。|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
 |bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
@@ -172,6 +172,8 @@ Content-Length: 1330
   ]
 }
 ```
+
+
 
 
 

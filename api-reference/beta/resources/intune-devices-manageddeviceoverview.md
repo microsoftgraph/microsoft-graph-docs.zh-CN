@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32fa68eac8c4003c6a8b95f0a6a725d5eaee9047
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 02f0f159886b652f75ef01d31c731fb1f4424d7e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372235"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538782"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 托管设备的摘要数据
 
@@ -29,7 +29,7 @@ ms.locfileid: "36372235"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|摘要的唯一标识符|
+|id|字符串|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -63,7 +63,11 @@ ms.locfileid: "36372235"
     "macOSCount": 1024,
     "windowsMobileCount": 1024,
     "windowsCount": 1024,
-    "unknownCount": 1024
+    "unknownCount": 1024,
+    "androidDedicatedCount": 1024,
+    "androidDeviceAdminCount": 1024,
+    "androidFullyManagedCount": 1024,
+    "androidWorkProfileCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

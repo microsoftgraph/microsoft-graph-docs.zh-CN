@@ -1,24 +1,24 @@
 ---
 title: assignLicense
-description: 添加或删除用户的许可证, 以启用或禁用其对 Microsoft 云产品的使用。 例如, 组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅, 此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息, 请参阅此 Technet 文章。
+description: 添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此 Technet 文章。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eea6d5b838eb3f5d2169d98b0a258befe27a74ab
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 18fc553403faf29a9f99186afc001fdd87a33dbb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421185"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37524527"
 ---
-# <a name="assignlicense"></a>assignLicense
+# <a name="user-assignlicense"></a>用户： assignLicense
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加或删除用户的许可证, 以启用或禁用其对 Microsoft 云产品的使用。 例如, 组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅, 此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息, 请参阅此[Technet 文章](https://technet.microsoft.com/en-us/library/mt765146.aspx)。
+添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此[Technet 文章](https://technet.microsoft.com/en-us/library/mt765146.aspx)。
 
-若要获取目录中可用的订阅, 请执行[Get subscribedsku 请求](subscribedsku-list.md)。 
+若要获取目录中可用的订阅，请执行[Get subscribedsku 请求](subscribedsku-list.md)。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,13 +50,13 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和更新的[user](../resources/user.md)对象。
+如果成功，此方法在`200 OK`响应正文中返回响应代码和更新的[user](../resources/user.md)对象。
 
 ## <a name="example"></a>示例
 向用户添加许可证。
 ##### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"
@@ -88,7 +88,7 @@ Content-length: 185
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-assignlicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -111,7 +111,7 @@ Content-length: 185
 ```
 
 ##### <a name="response"></a>响应
-在这两个示例中, 响应是更新的用户对象。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+在这两个示例中，响应是更新的用户对象。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

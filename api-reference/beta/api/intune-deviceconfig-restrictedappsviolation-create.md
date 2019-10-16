@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 041ce9ab5c42f52d5d7900b814f8f64747d3044f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e924ee8421c3acbf68cdd2e883d3b22ff4fcddec
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37183455"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533360"
 ---
 # <a name="create-restrictedappsviolation"></a>创建 restrictedAppsViolation
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,11 +54,11 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
 |userId|String|用户唯一标识符，必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|String|托管设备唯一标识符，必须为 Guid|
-|deviceName|String|设备名称|
-|deviceConfigurationId|String|设备配置文件唯一标识符，必须为 Guid|
-|deviceConfigurationName|String|设备配置文件名称|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
+|managedDeviceId|字符串|托管设备唯一标识符，必须为 Guid|
+|deviceName|字符串|设备名称|
+|deviceConfigurationId|字符串|设备配置文件唯一标识符，必须为 Guid|
+|deviceConfigurationName|字符串|设备配置文件名称|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合|违反受限制的应用程序的列表|
 
@@ -121,6 +121,8 @@ Content-Length: 613
   ]
 }
 ```
+
+
 
 
 

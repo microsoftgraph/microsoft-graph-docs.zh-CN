@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae7e210dff4e0aeb8d6c5806b1b63ec06eb55eb9
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1bcf192a78888ece145c7d60ebcfd887fb873531
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196068"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536201"
 ---
 # <a name="list-devicecategories"></a>列出 deviceCategories
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceCategories
 
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -84,6 +84,8 @@ Content-Length: 233
   ]
 }
 ```
+
+
 
 
 

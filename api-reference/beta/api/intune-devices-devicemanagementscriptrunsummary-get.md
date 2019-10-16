@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5036669c93843446ca9c3925bf3eac35428e350d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6454bdc80f01074810b59ca8a18a3a05dccd1958
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188568"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530354"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>获取 deviceManagementScriptRunSummary
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSumm
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 356
+Content-Length: 259
 
 {
   "value": {
@@ -74,14 +74,13 @@ Content-Length: 356
     "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
     "successDeviceCount": 2,
     "errorDeviceCount": 0,
-    "compliantDeviceCount": 4,
-    "notCompliantDeviceCount": 7,
-    "pendingDeviceCount": 2,
     "successUserCount": 0,
     "errorUserCount": 14
   }
 }
 ```
+
+
 
 
 

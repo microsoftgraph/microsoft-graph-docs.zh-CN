@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd569d614a85d522d50c8f0d038ce2962992644b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 41ade55fe86d77d1aac89cd8ed5a4a98e9b19a2b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188512"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37529927"
 ---
 # <a name="disablelostmode-action"></a>disableLostMode 操作
 
@@ -36,6 +36,7 @@ ms.locfileid: "37188512"
 -->
 ``` http
 POST /deviceManagement/managedDevices/{managedDeviceId}/disableLostMode
+POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/disableLostMode
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/disableLostMode
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/disableLostMode
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/disableLostMode
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,6 +67,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

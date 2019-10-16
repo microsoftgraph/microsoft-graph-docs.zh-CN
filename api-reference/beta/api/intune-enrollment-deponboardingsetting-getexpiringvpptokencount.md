@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 747c373646d6c5f29ab3947abfcc1d2da7f72a0c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: aa32e0a09c038cead24c5c988a7cc33f464757fb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191852"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535952"
 ---
 # <a name="getexpiringvpptokencount-function"></a>getExpiringVppTokenCount 函数
 
@@ -41,7 +41,7 @@ GET /deviceManagement/depOnboardingSettings/getExpiringVppTokenCount
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -76,6 +76,8 @@ Content-Length: 18
   "value": 8
 }
 ```
+
+
 
 
 

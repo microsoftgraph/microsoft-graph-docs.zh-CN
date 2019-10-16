@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 721362f205f25fc114c91d7ad48ccc6a43ba6d61
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6ad25f0eb426d06d7d13a8f9c622fcc54f037319
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185397"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536025"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>列出 depMacOSEnrollmentProfiles
 
@@ -41,7 +41,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1442
+Content-Length: 1478
 
 {
   "value": [
@@ -96,6 +96,7 @@ Content-Length: 1442
       "privacyPaneDisabled": true,
       "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
+      "configurationWebUrl": true,
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
@@ -105,6 +106,8 @@ Content-Length: 1442
   ]
 }
 ```
+
+
 
 
 

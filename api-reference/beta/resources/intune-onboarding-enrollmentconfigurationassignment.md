@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed753720116456f11d67e9adbbb998222ed7191
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d74b8462dc99476b120f3b468e34b731c3db314b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371346"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538985"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 注册配置分配
 
@@ -32,8 +32,10 @@ ms.locfileid: "36371346"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|注册配置分配的键|
+|id|字符串|注册配置分配的键|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|表示对租户中托管设备的分配|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、direct 或 policySet 的资源类型。 可取值为：`direct`、`policySets`。|
+|sourceId|字符串|用于部署到组的资源的标识符|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,7 +54,9 @@ ms.locfileid: "36371346"
   "id": "String (identifier)",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
 

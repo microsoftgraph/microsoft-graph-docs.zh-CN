@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d5c86f87aa112354843125bbf5f842e3b833e22
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 089d7934d406940d477fa44b27140be8a9dc4e90
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37168514"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534195"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>获取 deviceCompliancePolicyAssignment
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 315
 
 {
   "value": {
@@ -74,10 +74,14 @@ Content-Length: 250
     "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
     "target": {
       "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-    }
+    },
+    "source": "policySets",
+    "sourceId": "Source Id value"
   }
 }
 ```
+
+
 
 
 

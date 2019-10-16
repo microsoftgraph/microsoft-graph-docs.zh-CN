@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 178f4f30c944749d9913dffe5a2ee583e1de97d7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 308936a5ee39f8accd3675a2be9b95634643ad59
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199741"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538124"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,7 +59,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
 |payloadFileName|String|有效负载文件名（*. mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
+|roleScopeTagIds|String 集合|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
@@ -117,6 +117,8 @@ Content-Length: 547
   "version": 7
 }
 ```
+
+
 
 
 

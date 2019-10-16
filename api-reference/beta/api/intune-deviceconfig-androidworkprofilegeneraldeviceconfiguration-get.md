@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f53d74446ab81b0aacfb66dc65e8bc60388cc08
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1326dc5d2e73b6de4782e98c6bbb4b89b4cec02c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37175867"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534335"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>获取 androidWorkProfileGeneralDeviceConfiguration
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3180
+Content-Length: 3248
 
 {
   "value": {
@@ -140,10 +140,13 @@ Content-Length: 3180
     "securityRequireVerifyApps": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnEnableAlwaysOnLockdownMode": true,
-    "workProfileAllowWidgets": true
+    "workProfileAllowWidgets": true,
+    "workProfileBlockPersonalAppInstallsFromUnknownSources": true
   }
 }
 ```
+
+
 
 
 

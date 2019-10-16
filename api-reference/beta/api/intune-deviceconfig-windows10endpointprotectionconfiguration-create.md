@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 360895177308aca3b3780b6ebd5c7f15f557e7bb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 21464085633ace88d3321ffd5c80e8e30bde9ce6
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37182811"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533226"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>创建 windows10EndpointProtectionConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -102,9 +102,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|阻止用户向此计算机添加新的 Microsoft 帐户。|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|启用不受密码保护的本地帐户从物理设备以外的位置进行登录。默认值为已启用|
 |localSecurityOptionsDisableAdministratorAccount|Boolean|确定是否启用或禁用本地管理员帐户。|
-|localSecurityOptionsAdministratorAccountName|String|定义要与帐户 "管理员" 的安全标识符（SID）相关联的不同帐户名称。|
+|localSecurityOptionsAdministratorAccountName|字符串|定义要与帐户 "管理员" 的安全标识符（SID）相关联的不同帐户名称。|
 |localSecurityOptionsDisableGuestAccount|Boolean|确定来宾帐户是否已启用或已禁用。|
-|localSecurityOptionsGuestAccountName|String|定义要与帐户 "来宾" 的安全标识符（SID）相关联的不同帐户名称。|
+|localSecurityOptionsGuestAccountName|字符串|定义要与帐户 "来宾" 的安全标识符（SID）相关联的不同帐户名称。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|阻止便携式计算机在无需登录的情况下被移除。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|仅在将打印机驱动程序连接到共享打印机时，才将其限制为仅供管理员安装。|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|如果启用此设置，则仅允许交互式登录用户访问 CD-ROM 媒体。|
@@ -114,11 +114,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|要求用户在登录前按 CTRL + ALT + DEL。|
 |localSecurityOptionsHideLastSignedInUser|Boolean|不显示上次在此设备上登录的用户的用户名。|
 |localSecurityOptionsHideUsernameAtSignIn|Boolean|在输入凭据后以及显示设备桌面之前，请勿显示登录此设备的人员的用户名。|
-|localSecurityOptionsLogOnMessageTitle|String|为尝试登录的用户设置消息标题。|
-|localSecurityOptionsLogOnMessageText|String|为尝试登录的用户设置消息文本。|
+|localSecurityOptionsLogOnMessageTitle|字符串|为尝试登录的用户设置消息标题。|
+|localSecurityOptionsLogOnMessageText|字符串|为尝试登录的用户设置消息文本。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|阻止 PKU2U 对此设备的身份验证请求，以使用联机标识。|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体的 UI 帮助程序布尔值|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|字符串|编辑默认的安全描述符定义语言字符串，以允许或拒绝用户和组对 SAM 进行远程调用。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定用于网络登录的质询/响应身份验证协议。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
@@ -160,10 +160,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderSecurityCenterDisableSecureBootUI|Boolean|用于在 "设备安全性" 下禁用安全引导区域的显示。|
 |defenderSecurityCenterDisableTroubleshootingUI|Boolean|用于在 "设备安全性" 下禁用安全过程故障排除的显示。|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|用于在检测到易受攻击的固件时禁用显示更新 TPM 固件。|
-|defenderSecurityCenterOrganizationDisplayName|String|向用户显示的公司名称。|
-|defenderSecurityCenterHelpEmail|String|向用户显示的电子邮件地址。|
-|defenderSecurityCenterHelpPhone|String|向用户显示的电话号码或 Skype ID。|
-|defenderSecurityCenterHelpURL|String|"帮助" 门户 URL 将向用户显示。|
+|defenderSecurityCenterOrganizationDisplayName|字符串|向用户显示的公司名称。|
+|defenderSecurityCenterHelpEmail|字符串|向用户显示的电子邮件地址。|
+|defenderSecurityCenterHelpPhone|字符串|向用户显示的电话号码或 Skype ID。|
+|defenderSecurityCenterHelpURL|字符串|"帮助" 门户 URL 将向用户显示。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|要从应用程序的显示区域中显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置向最终用户显示 IT 联系人信息的位置。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
 |windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|配置 windows defender TamperProtection 设置。 可取值为：`notConfigured`、`enable`、`disable`。|
@@ -180,7 +180,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置域网络的防火墙配置文件设置|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置公用网络的防火墙配置文件设置|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置专用网络的防火墙配置文件设置|
-|attackSurfaceReductionRules|String|攻击面减少规则|
 |defenderAdobeReaderLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|值，该值指示 Adobe Reader 创建子进程的行为。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderAttackSurfaceReductionExcludedPaths|String 集合|要从攻击面减少规则中排除的 exe 文件和文件夹的列表|
 |defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|值，该值指示插入到其他进程中的 Office 应用程序的行为。 可取值为：`userDefined`、`block`、`auditMode`。|
@@ -207,7 +206,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|一个值，该值指示是否应从电子邮件（web 邮件/邮件客户端）中删除可执行内容（exe、dll、ps、js、vbs 等）的执行。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|指示使用针对 ransomeware 的高级防护的值。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|值，该值指示受保护文件夹的行为。 可取值为：`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification`。|
-|defenderGuardedFoldersAllowedAppPaths|String collection|允许访问受保护文件夹的 exe 路径列表|
+|defenderGuardedFoldersAllowedAppPaths|String 集合|允许访问受保护文件夹的 exe 路径列表|
 |defenderAdditionalGuardedFolders|String 集合|要添加到受保护文件夹列表的文件夹路径列表|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|值，该值指示 NetworkProtection 的行为。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderExploitProtectionXml|Binary|包含有关 Exploit Protection 详细信息的 xml 内容。|
@@ -255,7 +254,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 28662
+Content-length: 28588
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -826,7 +825,6 @@ Content-length: 28662
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
-  "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
   "defenderAdobeReaderLaunchChildProcess": "enable",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
@@ -944,7 +942,7 @@ Content-length: 28662
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 28834
+Content-Length: 28760
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1518,7 +1516,6 @@ Content-Length: 28834
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
-  "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
   "defenderAdobeReaderLaunchChildProcess": "enable",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
@@ -1630,6 +1627,8 @@ Content-Length: 28834
   "bitLockerRecoveryPasswordRotation": "disabled"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a300487fa99a301b2b17895dd31c8c24ec639256
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 19178783406e2db27d2e4f1e21decd73bd1e854b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37168206"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534076"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>创建 deviceConfigurationGroupAssignment
 
@@ -40,7 +40,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertific
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/groupAssignments
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/groupAssignments
@@ -49,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -59,8 +58,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
+|id|字符串|实体的键。|
+|targetGroupId|字符串|要将设备配置定向到的 AAD 组的 Id。|
 |excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
 
 
@@ -98,6 +97,8 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
+
+
 
 
 

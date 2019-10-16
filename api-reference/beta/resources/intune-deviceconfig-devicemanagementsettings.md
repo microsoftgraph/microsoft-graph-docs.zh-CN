@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 726fe757e8db9b1d965c617476006d4866b040ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fdc01e2c9cd4aabf47c900bd38bb2b0f7035308b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332762"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538964"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
-> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
-> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。 有效值为 0 至 120|
+|deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。|
 |isScheduledActionEnabled|Boolean|是否为规则的计划操作启用此功能。|
 |secureByDefault|Boolean|它为 true 时，如果不存在目标符合性策略，则设备应为不符合。|
 |enhancedJailBreak|Boolean|功能是否已启用或不适用于增强的 jailbreak 检测。|
-|deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入, 则可能会删除公司数据, 并且设备将不受管理。 有效值为30至270|
+|deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入，则可能会删除公司数据，并且设备将不受管理。 有效值为30至270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
-|derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
+|derivedCredentialUrl|字符串|派生的凭据提供程序自助服务 URI。|
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
 
 ## <a name="relationships"></a>关系

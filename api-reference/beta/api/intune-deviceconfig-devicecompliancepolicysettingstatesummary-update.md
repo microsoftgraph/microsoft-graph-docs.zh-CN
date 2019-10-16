@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fe7e5cc6f25dafc33186f2a12b554b6eabb1b95
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0274588c0feb913838d6ab9033e306bfe9072b0f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37175024"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534167"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>更新 deviceCompliancePolicySettingStateSummary
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,10 +51,10 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|setting|String|设置类名和属性名。|
+|id|字符串|实体的键。|
+|setting|字符串|设置类名和属性名。|
 |settingName|String|设置的名称。|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|
 |notApplicableDeviceCount|Int32|不适用设备的数量|
 |compliantDeviceCount|Int32|兼容设备的数量|
@@ -114,6 +114,8 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

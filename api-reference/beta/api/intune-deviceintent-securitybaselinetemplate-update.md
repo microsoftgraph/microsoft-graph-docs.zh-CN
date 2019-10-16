@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e981787745ffa6d3f466f6d97244f640ee2469f0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bbf27bc75e66e5c00a1d2f631980be70061c1e1d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180711"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531880"
 ---
 # <a name="update-securitybaselinetemplate"></a>更新 securityBaselineTemplate
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,10 +55,11 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 |id|字符串|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板 ID|
 |displayName|String|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板的显示名称|
 |说明|String|模板的说明继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|versionInfo|String|模板的版本信息继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|versionInfo|字符串|模板的版本信息继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |intentCount|Int32|从此模板创建的意向数。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`。|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`。|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |publishedDateTime|DateTimeOffset|从[DeviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承发布模板时|
 
 
@@ -73,7 +74,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 334
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
@@ -83,6 +84,7 @@ Content-length: 334
   "isDeprecated": true,
   "intentCount": 11,
   "templateType": "specializedDevices",
+  "platformType": "androidForWork",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
@@ -92,7 +94,7 @@ Content-length: 334
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 383
+Content-Length: 420
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
@@ -103,9 +105,12 @@ Content-Length: 383
   "isDeprecated": true,
   "intentCount": 11,
   "templateType": "specializedDevices",
+  "platformType": "androidForWork",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
+
 
 
 
