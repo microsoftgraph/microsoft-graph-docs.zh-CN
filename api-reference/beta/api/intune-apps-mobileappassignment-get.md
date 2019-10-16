@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e7bf1697e2cd8f6b0f16a4e130bc813b4fd98c1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6c4088379281b8dd2832bbfbc4cd567c24bb84ea
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37177204"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535175"
 ---
 # <a name="get-mobileappassignment"></a>获取 mobileAppAssignment
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 359
+Content-Length: 424
 
 {
   "value": {
@@ -78,10 +78,14 @@ Content-Length: 359
     },
     "settings": {
       "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-    }
+    },
+    "source": "policySets",
+    "sourceId": "Source Id value"
   }
 }
 ```
+
+
 
 
 

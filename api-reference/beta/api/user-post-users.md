@@ -5,19 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4604fdf6bed68d378c7a3ab12f9fa126c1a37bcb
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 17a1f89c11386f48ac695bcc4b2b13ff5c68fb86
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356805"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538424"
 ---
 # <a name="create-user"></a>创建用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新[用户](../resources/user.md)。
-请求正文包含要创建的用户。 至少必须指定必需的用户属性。 可以选择指定其他任意可写属性。
+创建新[用户](../resources/user.md)。请求正文包含要创建的用户。必须至少为用户指定所需的属性。您可以选择指定任何其他可写属性。
 
 >[!NOTE]
 >若要创建外部用户，请使用[邀请 API](invitation-post.md)。
@@ -52,7 +51,7 @@ POST /users
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolean |如果帐户已启用，则为 True;否则为 false。|
-|displayName |string |要在用户的通讯簿中显示的名称。|
+|displayName |字符串 |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
@@ -164,7 +163,7 @@ Content-type: application/json
   "displayName": "John Smith",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },

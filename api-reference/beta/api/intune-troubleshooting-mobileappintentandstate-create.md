@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 143c3e9195be68e842e59ea600bfebe7515eb8aa
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f831181fed06b195d3232bbb9e9ae41c5a046c12
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195354"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537697"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 
@@ -41,7 +41,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -127,6 +127,8 @@ Content-Length: 880
   ]
 }
 ```
+
+
 
 
 

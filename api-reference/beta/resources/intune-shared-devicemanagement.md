@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb66cec59189cb0fb6622f9349d8b340fadfc979
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f800c9a2eed631c5cfef07d042c2393366468007
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196333"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538754"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -29,6 +29,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 设备管理
 - 电子 SIM （ESIM）
 - 防御
+- 组策略分析
 - 通知
 - 载入策略、设置和详细信息
 - 策略集
@@ -36,6 +37,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 远程访问
 - 远程协助合作伙伴
 - 基于角色的访问控制（RBAC）策略
+- Reporting
 - 电信 expanse 管理合作伙伴
 - 疑难解答事件
 - Windows 信息保护摘要
@@ -60,7 +62,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|与设备关联的唯一标识符。|
+|id|字符串|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -74,6 +76,8 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可取值为：`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
 |订阅|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|租户的订阅。 可取值为：`none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Windows 设备的恶意软件概述。|
+|**组策略分析**|
+|groupPolicyObjectFiles|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)集合|已上载的组策略对象文件的列表。|
 |**载入**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 |**Odj**|
@@ -115,16 +119,24 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |意向|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)集合|设备管理意向|
 |settingDefinitions|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)集合|设备管理意向设置定义|
 |模版|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)集合|可用模板|
-|categories|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
+|类别|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
 |**设备管理**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple 推送通知证书。|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)集合|数据共享同意。|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|检测到与设备关联的应用的列表。|
 |deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)集合|与租户关联的设备管理脚本的列表。|
+|deviceHealthScripts|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)集合|与租户关联的设备运行状况脚本的列表。|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|设备概述|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|托管设备列表。|
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)集合|与租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)集合|租户中受影响的恶意软件的列表。|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)集合|MobileAppTroubleshootingEvent 的集合属性。|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|用户体验分析概述|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)集合|用户体验分析基线|
+|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)集合|用户体验分析类别|
+|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)集合|User experience analytics 设备性能|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|用户体验分析回归概况摘要|
+|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)集合|User experience analytics 设备启动历史记录|
 |**开户**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|每个租户的多个 DEP 令牌集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|导入的设备标识。|
@@ -137,6 +149,8 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |**防御**|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md)集合|与公司的设备管理相关联的管理条件。|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合|与公司的设备管理相关联的管理条件语句。|
+|**组策略分析**|
+|groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)集合|组策略迁移报告的列表。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) 集合|通知消息模板。|
 |**载入**|
@@ -165,6 +179,8 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) 集合|角色分配。|
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) 集合|角色定义。|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|角色范围标记。|
+|**报告**|
+|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|单独报告|
 |**软件更新**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)集合|Windows 功能更新配置文件的集合|
 |**电信费用管理（TEM）**|

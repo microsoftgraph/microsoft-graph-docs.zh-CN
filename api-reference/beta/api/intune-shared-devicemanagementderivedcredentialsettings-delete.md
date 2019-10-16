@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d6996bc7ae162af5721219d9b0597f3738017aa
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 62574dec6669d2d366cd396bcc0dd0cfd45e1154
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194563"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538180"
 ---
 # <a name="delete-devicemanagementderivedcredentialsettings"></a>删除 deviceManagementDerivedCredentialSettings
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/derivedCredentials/{deviceManagementDerivedCredentialSe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,6 +65,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/derivedCredentials/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

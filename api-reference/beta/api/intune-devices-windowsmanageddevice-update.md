@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6204b6854771d264695f01f238e377da04c3776
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: fbbba9d58a14abe0bfe4c52450c3b46f0deb464b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180032"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526468"
 ---
 # <a name="update-windowsmanageddevice"></a>更新 windowsManagedDevice
 
@@ -36,6 +36,7 @@ ms.locfileid: "37180032"
 -->
 ``` http
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,7 +57,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |:---|:---|:---|
 |id|字符串|设备的唯一标识符。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceName|String|设备的名称。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceName|字符串|设备的名称。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |所有者|[所有者](../resources/intune-devices-ownertype.md)|设备的所有权。 可以是从[ManagedDevice](../resources/intune-devices-manageddevice.md)继承的 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|设备的所有权。 可以是从[ManagedDevice](../resources/intune-devices-manageddevice.md)继承的 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -65,46 +66,46 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的机箱类型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
-|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|operatingSystem|字符串|设备的操作系统。 Windows、iOS 等。此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可能的值为`desktop`： `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer`、、、、、、、、、、、、、、、、 `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`。|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|easDeviceId|字符串|设备的 Exchange ActiveSync ID。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`、`appleUserEnrollmentWithAzureAD`。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否已启用或禁用了丢失模式。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`disabled`、`enabled`。|
-|activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|emailAddress|String|与设备关联的用户的电子邮件。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureActiveDirectoryDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|activationLockBypassCode|字符串|允许绕过设备上的激活锁的代码。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|emailAddress|字符串|与设备关联的用户的电子邮件。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureActiveDirectoryDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureADDeviceId|字符串|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
-|deviceCategoryDisplayName|String|设备类别显示名称。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceCategoryDisplayName|字符串|设备类别显示名称。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |isSupervised|Boolean|设备监督状态。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
-|remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|remoteAssistanceSessionUrl|字符串|允许与设备建立远程协助会话的 URL。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |isEncrypted|Boolean|设备加密状态。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |userPrincipalName|字符串|设备用户主体名称。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|model|String|设备的模型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|manufacturer|String|设备的制造商。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|imei|String|IMEI. 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|model|字符串|设备的模型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|manufacturer|字符串|设备的制造商。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|imei|字符串|IMEI. 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期时的日期时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |serialNumber|字符串|SerialNumber. 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|phoneNumber|String|设备的电话号码。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|phoneNumber|字符串|设备的电话号码。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|androidSecurityPatchLevel|字符串|Android 安全修补程序级别。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |userDisplayName|String|用户显示名称。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr 客户端启用的功能。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|wiFiMacAddress|String|Wi-fi MAC。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|wiFiMacAddress|字符串|Wi-fi MAC。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|subscriberCarrier|String|订阅者运营商。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|meid|String|MEID. 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|subscriberCarrier|字符串|订阅者运营商。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|meid|字符串|MEID. 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |totalStorageSpaceInBytes|Int64|总存储量（以字节为单位）。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |freeStorageSpaceInBytes|Int64|以字节为单位的可用存储空间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -115,9 +116,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|String 集合|此设备实例的范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|由 IT 管理员创建的设备上的注释继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -493,6 +494,8 @@ Content-Length: 7569
   }
 }
 ```
+
+
 
 
 

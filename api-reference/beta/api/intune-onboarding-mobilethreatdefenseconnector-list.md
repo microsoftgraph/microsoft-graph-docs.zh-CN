@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a72ea49cad2fa4de9949e3bb992ead90cba93468
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e388778abead3bc6eaa97341594a805c8c12a899
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190444"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536544"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>列出 mobileThreatDefenseConnectors
 
@@ -41,7 +41,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnect
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 876
 
 {
   "value": [
@@ -72,6 +72,8 @@ Content-Length: 764
       "id": "e4bede14-de14-e4be-14de-bee414debee4",
       "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
       "partnerState": "available",
+      "androidMobileApplicationManagementEnabled": true,
+      "iosMobileApplicationManagementEnabled": true,
       "androidEnabled": true,
       "iosEnabled": true,
       "windowsEnabled": true,
@@ -87,6 +89,8 @@ Content-Length: 764
   ]
 }
 ```
+
+
 
 
 

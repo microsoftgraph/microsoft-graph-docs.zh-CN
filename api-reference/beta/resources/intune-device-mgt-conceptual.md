@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9191d6552f2e93850fce126a5ea90d1f7bba88c7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5d684352b1b910b7b340e7eb319178fc1666a5ef
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198962"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538614"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -54,9 +54,9 @@ ms.locfileid: "37198962"
 - [基于 Device Guard 虚拟化的安全状态](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)
 - [设备运行状况脚本](intune-devices-devicehealthscript.md)
-- [设备运行状况脚本符合性规则](intune-devices-devicehealthscriptcompliancerule.md)
-- [设备运行状况脚本符合性规则运算符](intune-devices-devicehealthscriptcomplianceruleoperator.md)
-- [设备运行状况脚本检测类型](intune-devices-devicehealthscriptdetectiontype.md)
+- [设备运行状况脚本分配](intune-devices-devicehealthscriptassignment.md)
+- [设备运行状况脚本设备状态](intune-devices-devicehealthscriptdevicestate.md)
+- [设备运行状况脚本运行摘要](intune-devices-devicehealthscriptrunsummary.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management autopilot 事件](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -108,6 +108,7 @@ ms.locfileid: "37198962"
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
 - [设备保护概述](intune-devices-deviceprotectionoverview.md)
 - [设备注册状态](intune-devices-deviceregistrationstate.md)
+- [磁盘类型](intune-devices-disktype.md)
 - [嵌入式 SIM 卡激活代码](intune-esim-embeddedsimactivationcode.md)
 - [嵌入式 SIM 卡激活代码池](intune-esim-embeddedsimactivationcodepool.md)
 - [嵌入式 SIM 卡激活代码池分配](intune-esim-embeddedsimactivationcodepoolassignment.md)
@@ -156,6 +157,7 @@ ms.locfileid: "37198962"
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
 - [操作系统版本计数](intune-devices-osversioncount.md)
 - [所有者类型](intune-devices-ownertype.md)
+- [修正状态](intune-devices-remediationstate.md)
 - [远程操作](intune-devices-remoteaction.md)
 - [远程操作审核](intune-devices-remoteactionaudit.md)
 - [远程协助载入状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
@@ -164,6 +166,7 @@ ms.locfileid: "37198962"
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [运行计划](intune-devices-runschedule.md)
+- [范围标记信息](intune-auditing-scopetaginfo.md)
 - [安全基准类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基准设备状态](intune-deviceintent-securitybaselinedevicestate.md)
@@ -175,12 +178,16 @@ ms.locfileid: "37198962"
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
+- [User experience analytics 设备性能](intune-devices-userexperienceanalyticsdeviceperformance.md)
+- [User experience analytics 设备启动历史记录](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [User experience analytics 运行状况状态](intune-devices-userexperienceanalyticshealthstate.md)
 - [用户体验分析洞察力](intune-devices-userexperienceanalyticsinsight.md)
 - [用户体验分析真知灼见严重程度](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [用户体验分析洞察力价值](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [User experience analytics 指标](intune-devices-userexperienceanalyticsmetric.md)
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
+- [用户体验分析回归概况摘要](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [用户体验分析汇总者](intune-devices-userexperienceanalyticssummarizedby.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Windows autopilot 注册类型](intune-troubleshooting-windowsautopilotenrollmenttype.md)

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8b7039fc497e5c0ec4b81934a9fa3e6b2d90636
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: de897da4bee7976130d19acc1c9325c894a11e5a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195375"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536712"
 ---
 # <a name="delete-mobileappintentandstate"></a>删除 mobileAppIntentAndState
 
@@ -41,7 +41,7 @@ DELETE /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

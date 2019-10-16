@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1da40eeacecd81ef9c95d18aa66f716745e3325
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6cb6f5ccde71db36ac02bedb7847ed43b3d060dd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199734"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538110"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>列出 iosLobAppProvisioningConfigurations
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -89,6 +89,8 @@ Content-Length: 632
   ]
 }
 ```
+
+
 
 
 

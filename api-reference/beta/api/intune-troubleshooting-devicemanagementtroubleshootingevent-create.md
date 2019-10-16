@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 16ba4cb1fc2c9c140af500fa44b0e2a5d2059852
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: ac8756cf7e3c7073e803861a983c2f8ef2b066fb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195508"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537732"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>创建 deviceManagementTroubleshootingEvent
 
@@ -41,7 +41,7 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /deviceManagement/troubleshootingEvents
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。|
-|名|String|与疑难解答事件对应的事件名称。 它是可选字段|
+|名|字符串|与疑难解答事件对应的事件名称。 它是可选字段|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对，提供有关疑难解答事件的其他信息|
 
 
@@ -137,6 +137,8 @@ Content-Length: 901
   ]
 }
 ```
+
+
 
 
 

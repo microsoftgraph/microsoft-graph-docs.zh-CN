@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b11e6d16087d378255fb7b4bcc801daeeaeeecdb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 00c935495ac7823cfd4a8b763ba357f709863706
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198358"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37525250"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>androidWorkProfileGeneralDeviceConfiguration 资源类型
 
@@ -37,7 +37,7 @@ Android 工作配置文件常规设备配置。
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -80,9 +80,10 @@ Android 工作配置文件常规设备配置。
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|所需的工作配置文件密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
 |workProfileRequirePassword|Boolean|对于工作配置文件，密码是必需的|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
-|vpnAlwaysOnPackageIdentifier|String|为 always on VPN 启用锁定模式。|
+|vpnAlwaysOnPackageIdentifier|字符串|为 always on VPN 启用锁定模式。|
 |vpnEnableAlwaysOnLockdownMode|Boolean|为 always on VPN 启用锁定模式。|
 |workProfileAllowWidgets|Boolean|允许来自工作配置文件应用程序的小部件。|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|阻止从个人配置文件中的未知源进行应用程序安装。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -173,7 +174,8 @@ Android 工作配置文件常规设备配置。
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "String",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
 

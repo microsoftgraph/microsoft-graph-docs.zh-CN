@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 30b53a1a0adcfe9a2ae0b73c9b990f49cc712dd9
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 4fddb5eac07994fa9b1b837320e2e5891f8e38c1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36839108"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539272"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 
@@ -54,13 +54,13 @@ GET workbook/comments
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_comments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-comments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-comments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

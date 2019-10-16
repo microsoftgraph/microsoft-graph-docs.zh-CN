@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 866a7702f182c0d6bdac28f8eb0c0a45b61632ae
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 378e0a6c01fbfaf15f902711f9dc4ab87647fc02
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188001"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526447"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>更新 windowsManagementAppHealthState
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,12 +51,12 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用运行状况状态的唯一标识符。 此属性是只读的。|
+|id|字符串|Windows 管理应用运行状况状态的唯一标识符。 此属性是只读的。|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|String|Windows 管理应用程序已安装版本。|
+|installedVersion|字符串|Windows 管理应用程序已安装版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入时间。|
 |deviceName|String|在其上安装 Windows management 应用的设备的名称。|
-|deviceOSVersion|String|Windows 10 OS 版本的 Windows management app 安装在该设备上。|
+|deviceOSVersion|字符串|Windows 10 OS 版本的 Windows management app 安装在该设备上。|
 
 
 
@@ -99,6 +99,8 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
+
 
 
 

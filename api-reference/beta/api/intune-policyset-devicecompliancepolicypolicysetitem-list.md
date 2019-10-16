@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4731bfa40570bd5f396da573534be027370460a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 828657d056a1fae948940b92e5fc8548909e358d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37192025"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536495"
 ---
 # <a name="list-devicecompliancepolicypolicysetitems"></a>列出 deviceCompliancePolicyPolicySetItems
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -84,6 +84,8 @@ Content-Length: 570
   ]
 }
 ```
+
+
 
 
 

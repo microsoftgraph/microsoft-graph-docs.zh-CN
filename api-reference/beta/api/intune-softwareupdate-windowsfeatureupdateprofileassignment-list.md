@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 363ff5f2f3fe9b0a8d855a2f97c08979406eb17b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 665a9ae56b6b5404497003690a6787575caad9a6
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199819"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537774"
 ---
 # <a name="list-windowsfeatureupdateprofileassignments"></a>列出 windowsFeatureUpdateProfileAssignments
 
@@ -41,7 +41,7 @@ GET /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -77,6 +77,8 @@ Content-Length: 279
   ]
 }
 ```
+
+
 
 
 

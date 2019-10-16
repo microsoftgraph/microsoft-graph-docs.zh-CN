@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb5d7c7cd07f29715639c61ca5c877e802cdbd0b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c2758d04b9283a3804417ea409bbc19769fb6d1b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199807"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536754"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>更新 deviceManagementAutopilotEvent
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,14 +56,14 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |deviceRegisteredDateTime|DateTimeOffset|设备注册日期。|
 |enrollmentStartDateTime|DateTimeOffset|设备注册开始日期。|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|注册类型。 可取值为：`unknown`、`azureADJoinedWithAutopilotProfile`、`offlineDomainJoined`、`azureADJoinedUsingDeviceAuthWithAutopilotProfile`、`azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`、`azureADJoinedWithOfflineAutopilotProfile`、`azureADJoinedWithWhiteGlove`、`offlineDomainJoinedWithWhiteGlove`、`offlineDomainJoinedWithOfflineAutopilotProfile`。|
-|deviceSerialNumber|String|设备序列号。|
+|deviceSerialNumber|字符串|设备序列号。|
 |managedDeviceName|String|托管设备名称。|
-|userPrincipalName|String|用于注册设备的用户主体名称。|
-|windowsAutopilotDeploymentProfileDisplayName|String|Autopilot 配置文件名称。|
+|userPrincipalName|字符串|用于注册设备的用户主体名称。|
+|windowsAutopilotDeploymentProfileDisplayName|字符串|Autopilot 配置文件名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|注册状态，如 "已注册"，失败。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|注册状态页面配置文件名称|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|字符串|注册状态页面配置文件名称|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|部署状态，如成功、失败、InProgress、SuccessWithTimeout。 可取值为：`unknown`、`success`、`inProgress`、`failure`、`successWithTimeout`。|
-|osVersion|String|设备操作系统版本。|
+|osVersion|字符串|设备操作系统版本。|
 |deploymentDuration|持续时间|包含注册的 Autopilot 部署持续时间。|
 |deploymentTotalDuration|持续时间|从注册到桌面屏幕的总部署持续时间。|
 |devicePreparationDuration|持续时间|在设备注册中花费的时间。|
@@ -73,7 +73,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |deploymentEndDateTime|DateTimeOffset|部署结束时间。|
 |targetedAppCount|Int32|目标应用程序的计数。|
 |targetedPolicyCount|Int32|目标策略的计数。|
-|enrollmentFailureDetails|String|注册失败详细信息。|
+|enrollmentFailureDetails|字符串|注册失败详细信息。|
 
 
 
@@ -150,6 +150,8 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
+
 
 
 

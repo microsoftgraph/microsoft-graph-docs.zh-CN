@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff6e33f7f62fe196e7f6ef532282ba4e73d5e3f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4e30b98ffa30a306e816c73418b927f4369f729a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185019"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535917"
 ---
 # <a name="update-importedappledeviceidentity"></a>更新 importedAppleDeviceIdentity
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,10 +53,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |serialNumber|String|设备序列号|
-|requestedEnrollmentProfileId|String|注册配置文件 Id 管理员打算在下次注册时应用到设备|
+|requestedEnrollmentProfileId|字符串|注册配置文件 Id 管理员打算在下次注册时应用到设备|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|已将时间注册配置文件分配给设备|
 |isSupervised|Boolean|指示 Apple 设备是否受到监督。 有关详细信息，请参阅：https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple 设备发现源。 可取值为：`unknown`、`adminImport`、`deviceEnrollmentProgram`。|
+|isDeleted|Boolean|指示设备是否已从 Apple Business Manager 中删除|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
 |说明|String|设备的说明|
@@ -75,7 +76,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
 Content-type: application/json
-Content-length: 497
+Content-length: 519
 
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
@@ -84,6 +85,7 @@ Content-length: 497
   "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
   "isSupervised": true,
   "discoverySource": "adminImport",
+  "isDeleted": true,
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
   "enrollmentState": "enrolled",
@@ -96,7 +98,7 @@ Content-length: 497
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 605
+Content-Length: 627
 
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
@@ -106,6 +108,7 @@ Content-Length: 605
   "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
   "isSupervised": true,
   "discoverySource": "adminImport",
+  "isDeleted": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
@@ -113,6 +116,8 @@ Content-Length: 605
   "platform": "ios"
 }
 ```
+
+
 
 
 

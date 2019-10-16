@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 749dd91fb22fe9465599e6ec32070f3adfb0f5e8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e80069c3c2b8a7068c16f2c919c9e1e367e5a161
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174247"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535567"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
@@ -41,7 +41,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,19 +51,19 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|accountId|String|注册配置文件隶属的租户 GUID。|
+|accountId|字符串|注册配置文件隶属的租户 GUID。|
 |id|字符串|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
 |说明|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
-|tokenValue|String|为此注册配置文件最新创建的令牌的值。|
+|tokenValue|字符串|为此注册配置文件最新创建的令牌的值。|
 |tokenCreationDateTime|DateTimeOffset|创建最近创建的令牌的日期时间。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 
@@ -130,7 +130,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

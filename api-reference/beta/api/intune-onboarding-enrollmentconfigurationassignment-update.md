@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 51283929885acec13c6ef8f28eb0fe1c7b4871e4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 95c8173ddddeb759ce81f37d4e243fb7411aa648
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190514"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536565"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>更新 enrollmentConfigurationAssignment
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +51,10 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|注册配置分配的键|
+|id|字符串|注册配置分配的键|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|表示对租户中托管设备的分配|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、direct 或 policySet 的资源类型。 可取值为：`direct`、`policySets`。|
+|sourceId|字符串|用于部署到组的资源的标识符|
 
 
 
@@ -66,13 +68,15 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 173
+Content-length: 234
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -81,16 +85,20 @@ Content-length: 173
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 283
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "705b021c-021c-705b-1c02-5b701c025b70",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df2546c8c011ac68043f969cfd7ddd78323ca2db
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f7d9b1c58bcbaadd78bba3b1d01713123fca0b4b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190430"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536537"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>更新 mobileThreatDefenseConnector
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,9 +51,11 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
+|androidMobileApplicationManagementEnabled|Boolean|对于 Android，请设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
+|iosMobileApplicationManagementEnabled|Boolean|对于 IOS，获取或设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |windowsEnabled|Boolean|对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
@@ -78,12 +80,14 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 Content-type: application/json
-Content-length: 622
+Content-length: 726
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -103,13 +107,15 @@ Content-length: 622
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 671
+Content-Length: 775
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "id": "e4bede14-de14-e4be-14de-bee414debee4",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -123,6 +129,8 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
+
+
 
 
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 4cf681a4032181872f97e87dbb7ab8fdf3fa5ea2
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 66487d83b5ff08c6d394383448310eb131852af7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402614"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538422"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var user = new User
     {
         new ObjectIdentity
         {
-            SignInType = "signInName",
+            SignInType = "userName",
             Issuer = "contoso.onmicrosoft.com",
             IssuerAssignedId = "johnsmith"
         },

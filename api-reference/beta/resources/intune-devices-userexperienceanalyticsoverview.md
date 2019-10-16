@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11c7bbe64b1495a9e6cb0b8ac144d1afb539789f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 90a33468dfe0d68303625f7a682fdc23d34b7504
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196670"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536109"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>userExperienceAnalyticsOverview 资源类型
 
@@ -29,12 +29,14 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 概述的唯一标识符。|
+|id|字符串|User experience analytics 概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总分。|
 |deviceBootPerformanceOverallScore|Int32|User experience analytics 设备启动性能总分。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳实践总分。|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)集合|User experience analytics insights。|
-|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|"用户体验分析" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|User experience analytics 概述的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|User experience analytics "BootPerformance" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|User experience analytics "BestPractices" 类别的当前运行状况状态。 可取值为：`unknown`、`insufficientData`、`needsAttention`、`meetingGoals`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,7 +70,9 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
       "severity": "String"
     }
   ],
-  "state": "String"
+  "state": "String",
+  "deviceBootPerformanceHealthState": "String",
+  "bestPracticesHealthState": "String"
 }
 ```
 

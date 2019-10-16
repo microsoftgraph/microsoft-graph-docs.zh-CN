@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 347b7f1a7d462b642fa3b7928cfcb0f3723d55e4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 92da318170cb8040f1c0267243c41ca6ec20e65f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198864"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538600"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>androidDeviceOwnerGeneralDeviceConfiguration 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "37198864"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -57,16 +57,17 @@ ms.locfileid: "37198864"
 |cellularBlockWiFiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。|
 |dataRoamingBlocked|Boolean|指示是否阻止用户使用数据漫游。|
 |dateTimeConfigurationBlocked|Boolean|指示是否阻止用户手动更改设备上的日期或时间|
-|factoryResetDeviceAdministratorEmails|String collection|在设备出厂重置之前，将需要进行身份验证的 Google 帐户电子邮件的列表，然后才能对其进行设置。|
+|factoryResetDeviceAdministratorEmails|String 集合|在设备出厂重置之前，将需要进行身份验证的 Google 帐户电子邮件的列表，然后才能对其进行设置。|
 |factoryResetBlocked|Boolean|指示是否禁用了 "设置" 中的 "恢复出厂设置" 选项。|
+|globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|代理是与主机、端口和已排除的主机直接建立的。|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|是否启用屏幕保护程序模式或不启用展台模式。|
-|kioskModeScreenSaverImageUrl|String|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
+|kioskModeScreenSaverImageUrl|字符串|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|设备将在展台模式下显示屏幕保护程序的秒数。 有效值为0至9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|在 Kiosk 模式下显示屏幕保护程序之前设备需要保持非活动状态的秒数。 有效值为1至9999999|
 |kioskModeScreenSaverDetectMediaDisabled|Boolean|如果音频/视频在展台模式下播放，则设备屏幕是否应显示屏幕保护程序。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
-|kioskModeWallpaperUrl|String|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
-|kioskModeExitCode|String|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
+|kioskModeWallpaperUrl|字符串|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
+|kioskModeExitCode|字符串|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|设备处于展台模式时是否显示虚拟 "主页" 按钮。|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|指示虚拟 home 按钮是否为向上轻扫主页按钮或浮动主页按钮。 可取值为：`notConfigured`、`swipeUp`、`floating`。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|是否允许用户在展台模式下配置蓝牙设置。|
@@ -88,7 +89,7 @@ ms.locfileid: "37198864"
 |passwordMinimumUpperCaseCharacters|Int32|指示设备密码所需的最小上限 caseletter 字符数。 有效值为1至16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动时间（毫秒）。|
 |passwordPreviousPasswordCountToBlock|Int32|指示密码历史记录的长度，其中用户将不能输入与历史记录中的任何密码相同的新密码。 有效值为 0 至 24|
-|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|指示设备上所需的最小密码质量。 可取值为：`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`。|
+|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|指示设备上所需的最小密码质量。 可取值为：`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`customPassword`。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|指示用户在擦除设备之前可以输入不正确密码的次数。 有效值为 4 至 11|
 |playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|指示设备的播放存储模式。 可取值为：`notConfigured`、`allowList`、`blockList`。|
 |safeBootBlocked|Boolean|指示是否禁用重新启动设备到安全启动。|
@@ -107,7 +108,7 @@ ms.locfileid: "37198864"
 |usersBlockAdd|Boolean|指示是否禁用添加用户和配置文件。|
 |usersBlockRemove|Boolean|指示是否禁用从设备中删除其他用户。|
 |volumeBlockAdjustment|Boolean|指示是否禁用了调整主音量。|
-|vpnAlwaysOnPackageIdentifier|String|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
+|vpnAlwaysOnPackageIdentifier|字符串|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
 |vpnAlwaysOnLockdownMode|Boolean|如果指定了 always on VPN 包名称，则在断开 VPN 连接时是否锁定网络流量。|
 |wifiBlockEditConfigurations|Boolean|指示是否阻止用户编辑 wifi 连接设置。|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|指示是否阻止用户仅编辑策略定义的网络。|
@@ -180,6 +181,10 @@ ms.locfileid: "37198864"
     "String"
   ],
   "factoryResetBlocked": true,
+  "globalProxy": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+    "proxyAutoConfigURL": "String"
+  },
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "String",
   "kioskModeScreenSaverDisplayTimeInSeconds": 1024,

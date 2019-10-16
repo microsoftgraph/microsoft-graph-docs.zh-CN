@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: befd5692cf2d1600d1e54049eda131514b5dbf88
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: db808f972c712b13a157c8b55a32985a57143b9d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36725995"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536628"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -18,7 +18,7 @@ ms.locfileid: "36725995"
 
 获取当前经过身份验证的组织的属性和关系。
 
-由于**组织**资源支持[扩展](/graph/extensibility-overview), 因此您还可以使用操作`GET`来获取**组织**实例中的自定义属性和扩展数据。
+由于**组织**资源支持[扩展](/graph/extensibility-overview)，因此您还可以使用操作`GET`来获取**组织**实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "36725995"
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | 全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、全部、读写。 |
 
-> **注意**: 授予用户的应用程序。读取权限只能读取组织的**id**、 **displayName**和**verifiedDomains**属性。  所有其他属性将返回 `null` 值。 若要读取所有属性, 请使用组织关系。
+> **注意**：授予用户的应用程序。读取权限只能读取组织的**id**、 **displayName**和**verifiedDomains**属性。  所有其他属性将返回 `null` 值。 若要读取所有属性，请使用组织关系。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ GET /organization
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [organization](../resources/organization.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一个[组织](../resources/organization.md)对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -64,7 +64,7 @@ GET /organization
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organization"
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/organization
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

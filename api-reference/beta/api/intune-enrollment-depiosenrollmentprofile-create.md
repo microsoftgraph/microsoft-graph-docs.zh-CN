@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74b7b3db64ad1e7b492d4f1ca7af09c0c0a0fc68
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8afb06dcb52305cd3c2434ed37c3c5e7f5c6617f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187868"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536067"
 ---
 # <a name="create-depiosenrollmentprofile"></a>创建 depIOSEnrollmentProfile
 
@@ -41,7 +41,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -55,16 +55,16 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
 |说明|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
 |requiresUserAuthentication|Boolean|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
-|configurationEndpointUrl|String|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
+|configurationEndpointUrl|字符串|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
 |enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
 |isDefault|Boolean|指示这是否是从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的默认配置文件|
 |supervisedModeEnabled|Boolean|监督模式，如果启用，则为 True，否则为 false。 有关https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息，请参阅。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supportDepartment|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
+|supportDepartment|字符串|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
 |passCodeDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的密码设置窗格|
 |isMandatory|Boolean|指示是否必须从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
 |locationDisabled|Boolean|指示是否禁用从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承位置服务设置窗格|
-|supportPhoneNumber|String|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的电话号码|
+|supportPhoneNumber|字符串|支持从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的电话号码|
 |profileRemovalDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的配置文件删除选项|
 |restoreBlocked|Boolean|指示是否阻止从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的还原设置窗格|
 |appleIdDisabled|Boolean|指示是否禁用了 Apple id 设置窗格从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
@@ -77,14 +77,15 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |displayToneSetupDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
 |privacyPaneDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
 |screenTimeScreenDisabled|Boolean|指示是否禁用了从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的屏幕超时设置|
-|deviceNameTemplate|String|设置文本或名称模式。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|deviceNameTemplate|字符串|设置文本或名称模式。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|configurationWebUrl|Boolean|从[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的设置助理登录 URL|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)集合|Apple 配置器的管理证书|
 |restoreFromAndroidDisabled|Boolean|指示是否禁用从 Android 还原|
 |awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待已配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定了可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
 |enableSharedIPad|Boolean|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
-|companyPortalVppTokenId|String|如果设置，则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal"。|
+|companyPortalVppTokenId|字符串|如果设置，则指示应使用哪种 Vpp 令牌来部署带设备许可的公司门户。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal"。|
 |enableSingleAppEnrollmentMode|Boolean|通知设备启用单应用模式，并在注册过程中应用应用锁定。 默认为 false。 若要设置此属性，必须设置 "enableAuthenticationViaCompanyPortal" 和 "companyPortalVppTokenId"。|
 |homeButtonScreenDisabled|Boolean|指示是否禁用 "主页按钮灵敏度" 屏幕|
 |iMessageAndFaceTimeScreenDisabled|Boolean|指示是否禁用 iMessage 和 FaceTime 屏幕|
@@ -110,7 +111,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1992
+Content-length: 2024
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -140,6 +141,7 @@ Content-length: 1992
   "privacyPaneDisabled": true,
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
+  "configurationWebUrl": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -173,7 +175,7 @@ Content-length: 1992
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2041
+Content-Length: 2073
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -204,6 +206,7 @@ Content-Length: 2041
   "privacyPaneDisabled": true,
   "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "Device Name Template value",
+  "configurationWebUrl": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -231,6 +234,8 @@ Content-Length: 2041
   "welcomeScreenDisabled": true
 }
 ```
+
+
 
 
 

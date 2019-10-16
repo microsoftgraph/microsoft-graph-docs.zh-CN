@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c0e304af885579aaf4ad42fb5c5391d7f12d2fb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: a4b93130c66977d9ccf3f0ad2fcedfbfe9cae6c7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199752"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538159"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 |runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
@@ -127,6 +127,8 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
+
 
 
 

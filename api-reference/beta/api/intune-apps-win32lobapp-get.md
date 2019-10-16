@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1e0ab916ac34c90b9e254872b89a653b6bfdac1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c74418ab381b397525896f41a2902db091595a0c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37172084"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535119"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3151
+Content-Length: 3192
 
 {
   "value": {
@@ -143,7 +143,8 @@ Content-Length: 3151
     ],
     "installExperience": {
       "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-      "runAsAccount": "user"
+      "runAsAccount": "user",
+      "deviceRestartBehavior": "allow"
     },
     "returnCodes": [
       {
@@ -166,6 +167,8 @@ Content-Length: 3151
   }
 }
 ```
+
+
 
 
 

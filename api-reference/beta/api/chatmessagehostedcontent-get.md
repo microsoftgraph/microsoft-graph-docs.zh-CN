@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e911091bb4e1b5cd3179f781dd0d2f326f121a3d
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: bdeeb14eff0adf31fefe757cee646d61727f12dd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439861"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535623"
 ---
 # <a name="get-chatmessagehostedcontent"></a>获取 chatMessageHostedContent
 
@@ -24,12 +24,12 @@ ms.locfileid: "37439861"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>聊天、阅读和读写<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All|
+|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 对于**用户**或**聊天**资源：<br/>"聊天室"、"所有"、"全部聊天"<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
+|应用程序| 对于**用户**或**聊天**资源：<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于**频道**资源：<br/>Group.Read.All、Group.ReadWrite.All |
 
 > [!NOTE]
-> 在使用应用程序权限调用此 API 之前，您必须请求访问权限。 有关详细信息，请参阅[Microsoft 团队中的受保护 api](/graph/teams-protected-apis)。
+> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,9 +41,9 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
 GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
+此操作不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -122,7 +122,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_chatmessagehostedcontent"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

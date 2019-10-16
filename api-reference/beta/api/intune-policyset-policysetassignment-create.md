@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e9827b9222ba4b02457cc40486f8fad3357baca6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d95a41b843844edf43f430c19685a689d2d73917
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191917"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536313"
 ---
 # <a name="create-policysetassignment"></a>创建 policySetAssignment
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PolicySetAssignment 的键。|
+|id|字符串|PolicySetAssignment 的键。|
 |lastModifiedDateTime|DateTimeOffset|PolicySetAssignment 的上次修改时间。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|PolicySetAssignment 的目标组|
 
@@ -93,6 +93,8 @@ Content-Length: 272
   }
 }
 ```
+
+
 
 
 

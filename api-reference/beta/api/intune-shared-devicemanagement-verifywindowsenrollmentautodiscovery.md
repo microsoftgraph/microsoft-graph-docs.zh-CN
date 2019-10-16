@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: adb4c92419839cb020bdab8fb1552552bf3bdabd
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6d1df1f86545f8f54c71da696d4f4307241f00a3
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194570"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536145"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>verifyWindowsEnrollmentAutoDiscovery 函数
 
@@ -42,7 +42,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -76,6 +76,8 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
 
 
 

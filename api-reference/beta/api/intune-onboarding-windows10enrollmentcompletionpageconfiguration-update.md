@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43193d8bac87dff093435c5961b29fa28e723bb6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 96014ec1d36d87752aa2a26f5542be633a85638d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190073"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537634"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>更新 windows10EnrollmentCompletionPageConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,10 +62,10 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
 |allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
 |allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
-|customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
+|customErrorMessage|字符串|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
 |allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
+|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
 |trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
 |disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户后期注册的安装进度|
 
@@ -134,6 +134,8 @@ Content-Length: 856
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
+
 
 
 

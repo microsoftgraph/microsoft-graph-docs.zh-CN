@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33b2f4f7e0d07059438041b96a540c0ad2f64c96
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 89df51f0908799f90482f6563c040b0521f807c0
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190101"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537641"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>获取 windows10EnrollmentCompletionPageConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -93,6 +93,8 @@ Content-Length: 915
   }
 }
 ```
+
+
 
 
 

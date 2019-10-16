@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 81847d3a3b675900b343b8c993144f5f3f2eb2d9
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e6bd3af41119a7f8393ed4bf444eb4a86555cc56
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191993"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537571"
 ---
 # <a name="get-enrollmentrestrictionsconfigurationpolicysetitem"></a>获取 enrollmentRestrictionsConfigurationPolicySetItem
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -87,6 +87,8 @@ Content-Length: 582
   }
 }
 ```
+
+
 
 
 

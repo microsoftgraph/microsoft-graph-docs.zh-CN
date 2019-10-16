@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bff01991a56b5a4fd6c63f591fb973c430987e98
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6f614cdda7b6c5c6d1e8a21544e0f428b1198a90
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187735"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535854"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>创建 windowsAutopilotDeploymentProfileAssignment
 
@@ -41,7 +41,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;。必需。|
+|授权|Bearer &lt;token&gt;。必需。|
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,8 +51,10 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|分配的键。|
+|id|字符串|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Windows Autopilot 部署配置文件的分配目标。|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、direct 或包裹/policySet 的资源类型。 可取值为：`direct`、`policySets`。|
+|sourceId|字符串|用于部署到组的资源的标识符|
 
 
 
@@ -66,13 +68,15 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments
 Content-type: application/json
-Content-length: 183
+Content-length: 244
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -81,16 +85,20 @@ Content-length: 183
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 232
+Content-Length: 293
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
   "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 

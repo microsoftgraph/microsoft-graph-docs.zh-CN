@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85bd8b77d4a863256e705a7823ca7567891681d4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 2248277d9deac12a191f6908fa3442658e5fcc46
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199941"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539153"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "37199941"
 |[List deviceCompliancePolicies](../api/intune-shared-devicecompliancepolicy-list.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 集合|列出 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 对象的属性和关系。|
 |[Get deviceCompliancePolicy](../api/intune-shared-devicecompliancepolicy-get.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|读取 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) 对象的属性和关系。|
 |**设备配置**|
-|[分配操作](../api/intune-shared-devicecompliancepolicy-assign.md)|deviceCompliancePolicyAssignment 集合|尚未记录|
-|[scheduleActionsForRules 操作](../api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md)|无|尚未记录|
-|[refreshDeviceComplianceReportSummarization 操作](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|无|尚未记录|
+|[assign 操作](../api/intune-shared-devicecompliancepolicy-assign.md)|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 集合|尚未记录|
+|scheduleActionsForRules 操作|无|尚未记录|
+|refreshDeviceComplianceReportSummarization 操作] （.。。/api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|无|尚未记录|
 |**策略集**|
 |[hasPayloadLinks 操作](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)集合|尚未记录|
 
@@ -36,7 +36,7 @@ ms.locfileid: "37199941"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
@@ -53,7 +53,7 @@ ms.locfileid: "37199941"
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|设备符合性设备状态概述|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md)|设备符合性用户状态概述|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|符合性设置状态设备摘要|
-|assignments|deviceCompliancePolicyAssignment 集合|此符合性策略的分配集合。|
+|assignments|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 集合|此符合性策略的分配集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
