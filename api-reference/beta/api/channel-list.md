@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e42b43abb3dadab1bdcffb594630982b579b854d
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d075fbcf2f912c125f1af65ae7368a2a6b2c75bc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355923"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535644"
 ---
 # <a name="list-channels"></a>列出频道
 
@@ -127,7 +127,7 @@ Content-length: 262
   "blockType": "request",
   "name": "list_private_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
