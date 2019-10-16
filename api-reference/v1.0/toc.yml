@@ -111,13 +111,13 @@
           href: /graph/sdks/create-client?context=graph/api/1.0
         - name: 选择验证提供程序
           href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
-    - name: 使用工具包（预览）
+    - name: 使用工具包（预览版）
       items:
         - name: 工具包概述
           href: /graph/toolkit/overview?context=graph/api/1.0
         - name: 组件
           items:
-            - name: '['
+            - name: 登录
               href: /graph/toolkit/components/login?context=graph/api/1.0
             - name: 人员
               href: /graph/toolkit/components/person?context=graph/api/1.0
@@ -127,7 +127,7 @@
               href: /graph/toolkit/components/agenda?context=graph/api/1.0
             - name: 任务
               href: /graph/toolkit/components/tasks?context=graph/api/1.0
-        - name: 商会
+        - name: 提供程序
           items:
             - name: 使用提供程序
               href: /graph/toolkit/providers?context=graph/api/1.0
@@ -135,13 +135,13 @@
               href: /graph/toolkit/providers/msal?context=graph/api/1.0
             - name: SharePoint 提供程序
               href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-            - name: Microsoft 团队提供商
+            - name: Microsoft Teams 提供程序
               href: /graph/toolkit/providers/teams?context=graph/api/1.0
             - name: 自定义提供程序
               href: /graph/toolkit/providers/custom?context=graph/api/1.0
-        - name: 样式组件
+        - name: 对组件进行样式设置
           href: /graph/toolkit/style?context=graph/api/1.0
-        - name: 模板化组件
+        - name: 组件模板化
           href: /graph/toolkit/templates?context=graph/api/1.0
     - name: 资源
       items:
@@ -1502,7 +1502,7 @@
                 - name: 适用于规则的设备符合性计划操作
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -1515,7 +1515,7 @@
                 - name: 设备符合性设置状态
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: 获取
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -3198,6 +3198,17 @@
                       href: api/signin-list.md
                     - name: 获取登录
                       href: api/signin-get.md
+            - name: 基于证书的身份验证配置
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: 列表
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: Create
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: 获取
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: 删除
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: 合同
               href: resources/contract.md
               items:

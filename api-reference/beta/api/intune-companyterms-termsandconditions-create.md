@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 972f0bbc19a7e9571ec85b643ef8d917a92a49ec
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4652d429478af1513e6ff12ed01ccc4babde5dbb
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170628"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534923"
 ---
-# <a name="create-termsandconditions"></a><span data-ttu-id="18974-103">创建 termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="18974-103">Create termsAndConditions</span></span>
+# <a name="create-termsandconditions"></a><span data-ttu-id="3ce87-103">创建 termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="3ce87-103">Create termsAndConditions</span></span>
 
-> <span data-ttu-id="18974-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="18974-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3ce87-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3ce87-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="18974-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="18974-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3ce87-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3ce87-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="18974-106">创建新的 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="18974-106">Create a new [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
+<span data-ttu-id="3ce87-106">创建新的 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3ce87-106">Create a new [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="18974-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="18974-107">Prerequisites</span></span>
-<span data-ttu-id="18974-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="18974-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3ce87-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="3ce87-107">Prerequisites</span></span>
+<span data-ttu-id="3ce87-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3ce87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="18974-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="18974-110">Permission type</span></span>|<span data-ttu-id="18974-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="18974-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3ce87-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="3ce87-110">Permission type</span></span>|<span data-ttu-id="3ce87-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3ce87-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="18974-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="18974-112">Delegated (work or school account)</span></span>|<span data-ttu-id="18974-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18974-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="18974-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="18974-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="18974-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="18974-115">Not supported.</span></span>|
-|<span data-ttu-id="18974-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="18974-116">Application</span></span>|<span data-ttu-id="18974-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18974-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="3ce87-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3ce87-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3ce87-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ce87-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="3ce87-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3ce87-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3ce87-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3ce87-115">Not supported.</span></span>|
+|<span data-ttu-id="3ce87-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="3ce87-116">Application</span></span>|<span data-ttu-id="3ce87-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ce87-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="18974-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="18974-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3ce87-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3ce87-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,40 +38,40 @@ ms.locfileid: "37170628"
 POST /deviceManagement/termsAndConditions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="18974-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="18974-119">Request headers</span></span>
-|<span data-ttu-id="18974-120">标头</span><span class="sxs-lookup"><span data-stu-id="18974-120">Header</span></span>|<span data-ttu-id="18974-121">值</span><span class="sxs-lookup"><span data-stu-id="18974-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3ce87-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="3ce87-119">Request headers</span></span>
+|<span data-ttu-id="3ce87-120">标头</span><span class="sxs-lookup"><span data-stu-id="3ce87-120">Header</span></span>|<span data-ttu-id="3ce87-121">值</span><span class="sxs-lookup"><span data-stu-id="3ce87-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="18974-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="18974-122">Authorization</span></span>|<span data-ttu-id="18974-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="18974-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="18974-124">接受</span><span class="sxs-lookup"><span data-stu-id="18974-124">Accept</span></span>|<span data-ttu-id="18974-125">application/json</span><span class="sxs-lookup"><span data-stu-id="18974-125">application/json</span></span>|
+|<span data-ttu-id="3ce87-122">授权</span><span class="sxs-lookup"><span data-stu-id="3ce87-122">Authorization</span></span>|<span data-ttu-id="3ce87-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3ce87-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3ce87-124">接受</span><span class="sxs-lookup"><span data-stu-id="3ce87-124">Accept</span></span>|<span data-ttu-id="3ce87-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3ce87-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="18974-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="18974-126">Request body</span></span>
-<span data-ttu-id="18974-127">在请求正文中，提供 termsAndConditions 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="18974-127">In the request body, supply a JSON representation for the termsAndConditions object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3ce87-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="3ce87-126">Request body</span></span>
+<span data-ttu-id="3ce87-127">在请求正文中，提供 termsAndConditions 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3ce87-127">In the request body, supply a JSON representation for the termsAndConditions object.</span></span>
 
-<span data-ttu-id="18974-128">下表显示创建 termsAndConditions 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="18974-128">The following table shows the properties that are required when you create the termsAndConditions.</span></span>
+<span data-ttu-id="3ce87-128">下表显示创建 termsAndConditions 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="3ce87-128">The following table shows the properties that are required when you create the termsAndConditions.</span></span>
 
-|<span data-ttu-id="18974-129">属性</span><span class="sxs-lookup"><span data-stu-id="18974-129">Property</span></span>|<span data-ttu-id="18974-130">类型</span><span class="sxs-lookup"><span data-stu-id="18974-130">Type</span></span>|<span data-ttu-id="18974-131">说明</span><span class="sxs-lookup"><span data-stu-id="18974-131">Description</span></span>|
+|<span data-ttu-id="3ce87-129">属性</span><span class="sxs-lookup"><span data-stu-id="3ce87-129">Property</span></span>|<span data-ttu-id="3ce87-130">类型</span><span class="sxs-lookup"><span data-stu-id="3ce87-130">Type</span></span>|<span data-ttu-id="3ce87-131">说明</span><span class="sxs-lookup"><span data-stu-id="3ce87-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="18974-132">id</span><span class="sxs-lookup"><span data-stu-id="18974-132">id</span></span>|<span data-ttu-id="18974-133">字符串</span><span class="sxs-lookup"><span data-stu-id="18974-133">String</span></span>|<span data-ttu-id="18974-134">T&C 策略的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="18974-134">Unique identifier of the T&C policy.</span></span>|
-|<span data-ttu-id="18974-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="18974-135">createdDateTime</span></span>|<span data-ttu-id="18974-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="18974-136">DateTimeOffset</span></span>|<span data-ttu-id="18974-137">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="18974-137">DateTime the object was created.</span></span>|
-|<span data-ttu-id="18974-138">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="18974-138">modifiedDateTime</span></span>|<span data-ttu-id="18974-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="18974-139">DateTimeOffset</span></span>|<span data-ttu-id="18974-140">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="18974-140">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="18974-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="18974-141">lastModifiedDateTime</span></span>|<span data-ttu-id="18974-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="18974-142">DateTimeOffset</span></span>|<span data-ttu-id="18974-143">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="18974-143">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="18974-144">displayName</span><span class="sxs-lookup"><span data-stu-id="18974-144">displayName</span></span>|<span data-ttu-id="18974-145">String</span><span class="sxs-lookup"><span data-stu-id="18974-145">String</span></span>|<span data-ttu-id="18974-146">管理员提供的 T&C 策略名称。</span><span class="sxs-lookup"><span data-stu-id="18974-146">Administrator-supplied name for the T&C policy.</span></span> |
-|<span data-ttu-id="18974-147">说明</span><span class="sxs-lookup"><span data-stu-id="18974-147">description</span></span>|<span data-ttu-id="18974-148">字符串</span><span class="sxs-lookup"><span data-stu-id="18974-148">String</span></span>|<span data-ttu-id="18974-149">管理员提供的 T&C 策略描述。</span><span class="sxs-lookup"><span data-stu-id="18974-149">Administrator-supplied description of the T&C policy.</span></span>|
-|<span data-ttu-id="18974-150">title</span><span class="sxs-lookup"><span data-stu-id="18974-150">title</span></span>|<span data-ttu-id="18974-151">String</span><span class="sxs-lookup"><span data-stu-id="18974-151">String</span></span>|<span data-ttu-id="18974-152">管理员提供的条款和条件标题。</span><span class="sxs-lookup"><span data-stu-id="18974-152">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="18974-153">这会向用户显示，提示用户接受 T&C 策略。</span><span class="sxs-lookup"><span data-stu-id="18974-153">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="18974-154">bodyText</span><span class="sxs-lookup"><span data-stu-id="18974-154">bodyText</span></span>|<span data-ttu-id="18974-155">String</span><span class="sxs-lookup"><span data-stu-id="18974-155">String</span></span>|<span data-ttu-id="18974-156">管理员提供的条款和条件正文文本，通常为条款本身。</span><span class="sxs-lookup"><span data-stu-id="18974-156">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="18974-157">这会向用户显示，提示用户接受 T&C 策略。</span><span class="sxs-lookup"><span data-stu-id="18974-157">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="18974-158">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="18974-158">acceptanceStatement</span></span>|<span data-ttu-id="18974-159">String</span><span class="sxs-lookup"><span data-stu-id="18974-159">String</span></span>|<span data-ttu-id="18974-160">管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。</span><span class="sxs-lookup"><span data-stu-id="18974-160">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="18974-161">这会向用户显示，提示用户接受 T&C 策略。</span><span class="sxs-lookup"><span data-stu-id="18974-161">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="18974-162">version</span><span class="sxs-lookup"><span data-stu-id="18974-162">version</span></span>|<span data-ttu-id="18974-163">Int32</span><span class="sxs-lookup"><span data-stu-id="18974-163">Int32</span></span>|<span data-ttu-id="18974-164">指示当前条款版本的整数。</span><span class="sxs-lookup"><span data-stu-id="18974-164">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="18974-165">当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。</span><span class="sxs-lookup"><span data-stu-id="18974-165">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
-|<span data-ttu-id="18974-166">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="18974-166">roleScopeTagIds</span></span>|<span data-ttu-id="18974-167">String collection</span><span class="sxs-lookup"><span data-stu-id="18974-167">String collection</span></span>|<span data-ttu-id="18974-168">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="18974-168">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="3ce87-132">id</span><span class="sxs-lookup"><span data-stu-id="3ce87-132">id</span></span>|<span data-ttu-id="3ce87-133">字符串</span><span class="sxs-lookup"><span data-stu-id="3ce87-133">String</span></span>|<span data-ttu-id="3ce87-134">T&C 策略的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="3ce87-134">Unique identifier of the T&C policy.</span></span>|
+|<span data-ttu-id="3ce87-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="3ce87-135">createdDateTime</span></span>|<span data-ttu-id="3ce87-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3ce87-136">DateTimeOffset</span></span>|<span data-ttu-id="3ce87-137">创建对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="3ce87-137">DateTime the object was created.</span></span>|
+|<span data-ttu-id="3ce87-138">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="3ce87-138">modifiedDateTime</span></span>|<span data-ttu-id="3ce87-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3ce87-139">DateTimeOffset</span></span>|<span data-ttu-id="3ce87-140">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="3ce87-140">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="3ce87-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="3ce87-141">lastModifiedDateTime</span></span>|<span data-ttu-id="3ce87-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3ce87-142">DateTimeOffset</span></span>|<span data-ttu-id="3ce87-143">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="3ce87-143">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="3ce87-144">displayName</span><span class="sxs-lookup"><span data-stu-id="3ce87-144">displayName</span></span>|<span data-ttu-id="3ce87-145">字符串</span><span class="sxs-lookup"><span data-stu-id="3ce87-145">String</span></span>|<span data-ttu-id="3ce87-146">管理员提供的 T&C 策略名称。</span><span class="sxs-lookup"><span data-stu-id="3ce87-146">Administrator-supplied name for the T&C policy.</span></span> |
+|<span data-ttu-id="3ce87-147">说明</span><span class="sxs-lookup"><span data-stu-id="3ce87-147">description</span></span>|<span data-ttu-id="3ce87-148">字符串</span><span class="sxs-lookup"><span data-stu-id="3ce87-148">String</span></span>|<span data-ttu-id="3ce87-149">管理员提供的 T&C 策略描述。</span><span class="sxs-lookup"><span data-stu-id="3ce87-149">Administrator-supplied description of the T&C policy.</span></span>|
+|<span data-ttu-id="3ce87-150">title</span><span class="sxs-lookup"><span data-stu-id="3ce87-150">title</span></span>|<span data-ttu-id="3ce87-151">String</span><span class="sxs-lookup"><span data-stu-id="3ce87-151">String</span></span>|<span data-ttu-id="3ce87-152">管理员提供的条款和条件标题。</span><span class="sxs-lookup"><span data-stu-id="3ce87-152">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="3ce87-153">这会向用户显示，提示用户接受 T&C 策略。</span><span class="sxs-lookup"><span data-stu-id="3ce87-153">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="3ce87-154">bodyText</span><span class="sxs-lookup"><span data-stu-id="3ce87-154">bodyText</span></span>|<span data-ttu-id="3ce87-155">字符串</span><span class="sxs-lookup"><span data-stu-id="3ce87-155">String</span></span>|<span data-ttu-id="3ce87-156">管理员提供的条款和条件正文文本，通常为条款本身。</span><span class="sxs-lookup"><span data-stu-id="3ce87-156">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="3ce87-157">这会向用户显示，提示用户接受 T&C 策略。</span><span class="sxs-lookup"><span data-stu-id="3ce87-157">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="3ce87-158">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="3ce87-158">acceptanceStatement</span></span>|<span data-ttu-id="3ce87-159">String</span><span class="sxs-lookup"><span data-stu-id="3ce87-159">String</span></span>|<span data-ttu-id="3ce87-160">管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。</span><span class="sxs-lookup"><span data-stu-id="3ce87-160">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="3ce87-161">这会向用户显示，提示用户接受 T&C 策略。</span><span class="sxs-lookup"><span data-stu-id="3ce87-161">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="3ce87-162">version</span><span class="sxs-lookup"><span data-stu-id="3ce87-162">version</span></span>|<span data-ttu-id="3ce87-163">Int32</span><span class="sxs-lookup"><span data-stu-id="3ce87-163">Int32</span></span>|<span data-ttu-id="3ce87-164">指示当前条款版本的整数。</span><span class="sxs-lookup"><span data-stu-id="3ce87-164">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="3ce87-165">当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。</span><span class="sxs-lookup"><span data-stu-id="3ce87-165">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
+|<span data-ttu-id="3ce87-166">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="3ce87-166">roleScopeTagIds</span></span>|<span data-ttu-id="3ce87-167">String 集合</span><span class="sxs-lookup"><span data-stu-id="3ce87-167">String collection</span></span>|<span data-ttu-id="3ce87-168">此实体实例的范围标记列表。</span><span class="sxs-lookup"><span data-stu-id="3ce87-168">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="18974-169">响应</span><span class="sxs-lookup"><span data-stu-id="18974-169">Response</span></span>
-<span data-ttu-id="18974-170">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="18974-170">If successful, this method returns a `201 Created` response code and a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3ce87-169">响应</span><span class="sxs-lookup"><span data-stu-id="3ce87-169">Response</span></span>
+<span data-ttu-id="3ce87-170">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3ce87-170">If successful, this method returns a `201 Created` response code and a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18974-171">示例</span><span class="sxs-lookup"><span data-stu-id="18974-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3ce87-171">示例</span><span class="sxs-lookup"><span data-stu-id="3ce87-171">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="18974-172">请求</span><span class="sxs-lookup"><span data-stu-id="18974-172">Request</span></span>
-<span data-ttu-id="18974-173">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="18974-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3ce87-172">请求</span><span class="sxs-lookup"><span data-stu-id="3ce87-172">Request</span></span>
+<span data-ttu-id="3ce87-173">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3ce87-173">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions
 Content-type: application/json
@@ -91,8 +91,8 @@ Content-length: 335
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="18974-174">响应</span><span class="sxs-lookup"><span data-stu-id="18974-174">Response</span></span>
-<span data-ttu-id="18974-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="18974-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3ce87-174">响应</span><span class="sxs-lookup"><span data-stu-id="3ce87-174">Response</span></span>
+<span data-ttu-id="3ce87-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3ce87-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -115,6 +115,8 @@ Content-Length: 567
   ]
 }
 ```
+
+
 
 
 

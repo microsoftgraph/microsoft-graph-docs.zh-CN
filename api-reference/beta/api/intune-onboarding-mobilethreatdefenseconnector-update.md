@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df2546c8c011ac68043f969cfd7ddd78323ca2db
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f7d9b1c58bcbaadd78bba3b1d01713123fca0b4b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190430"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536537"
 ---
-# <a name="update-mobilethreatdefenseconnector"></a><span data-ttu-id="35f9d-103">更新 mobileThreatDefenseConnector</span><span class="sxs-lookup"><span data-stu-id="35f9d-103">Update mobileThreatDefenseConnector</span></span>
+# <a name="update-mobilethreatdefenseconnector"></a><span data-ttu-id="0787f-103">更新 mobileThreatDefenseConnector</span><span class="sxs-lookup"><span data-stu-id="0787f-103">Update mobileThreatDefenseConnector</span></span>
 
-> <span data-ttu-id="35f9d-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="35f9d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0787f-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0787f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="35f9d-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="35f9d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0787f-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0787f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="35f9d-106">更新 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="35f9d-106">Update the properties of a [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object.</span></span>
+<span data-ttu-id="0787f-106">更新 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="0787f-106">Update the properties of a [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="35f9d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="35f9d-107">Prerequisites</span></span>
-<span data-ttu-id="35f9d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="35f9d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0787f-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="0787f-107">Prerequisites</span></span>
+<span data-ttu-id="0787f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0787f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="35f9d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="35f9d-110">Permission type</span></span>|<span data-ttu-id="35f9d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="35f9d-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0787f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="0787f-110">Permission type</span></span>|<span data-ttu-id="0787f-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0787f-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="35f9d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="35f9d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="35f9d-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35f9d-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="35f9d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="35f9d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="35f9d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="35f9d-115">Not supported.</span></span>|
-|<span data-ttu-id="35f9d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="35f9d-116">Application</span></span>|<span data-ttu-id="35f9d-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35f9d-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0787f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0787f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0787f-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0787f-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0787f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0787f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0787f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="0787f-115">Not supported.</span></span>|
+|<span data-ttu-id="0787f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="0787f-116">Application</span></span>|<span data-ttu-id="0787f-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0787f-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="35f9d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="35f9d-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0787f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0787f-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,52 +38,56 @@ ms.locfileid: "37190430"
 PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="35f9d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="35f9d-119">Request headers</span></span>
-|<span data-ttu-id="35f9d-120">标头</span><span class="sxs-lookup"><span data-stu-id="35f9d-120">Header</span></span>|<span data-ttu-id="35f9d-121">值</span><span class="sxs-lookup"><span data-stu-id="35f9d-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0787f-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="0787f-119">Request headers</span></span>
+|<span data-ttu-id="0787f-120">标头</span><span class="sxs-lookup"><span data-stu-id="0787f-120">Header</span></span>|<span data-ttu-id="0787f-121">值</span><span class="sxs-lookup"><span data-stu-id="0787f-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="35f9d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="35f9d-122">Authorization</span></span>|<span data-ttu-id="35f9d-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="35f9d-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="35f9d-124">接受</span><span class="sxs-lookup"><span data-stu-id="35f9d-124">Accept</span></span>|<span data-ttu-id="35f9d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="35f9d-125">application/json</span></span>|
+|<span data-ttu-id="0787f-122">授权</span><span class="sxs-lookup"><span data-stu-id="0787f-122">Authorization</span></span>|<span data-ttu-id="0787f-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0787f-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0787f-124">接受</span><span class="sxs-lookup"><span data-stu-id="0787f-124">Accept</span></span>|<span data-ttu-id="0787f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0787f-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="35f9d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="35f9d-126">Request body</span></span>
-<span data-ttu-id="35f9d-127">在请求正文中，提供 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="35f9d-127">In the request body, supply a JSON representation for the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0787f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="0787f-126">Request body</span></span>
+<span data-ttu-id="0787f-127">在请求正文中，提供 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0787f-127">In the request body, supply a JSON representation for the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object.</span></span>
 
-<span data-ttu-id="35f9d-128">下表显示了创建 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="35f9d-128">The following table shows the properties that are required when you create the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md).</span></span>
+<span data-ttu-id="0787f-128">下表显示了创建 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="0787f-128">The following table shows the properties that are required when you create the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md).</span></span>
 
-|<span data-ttu-id="35f9d-129">属性</span><span class="sxs-lookup"><span data-stu-id="35f9d-129">Property</span></span>|<span data-ttu-id="35f9d-130">类型</span><span class="sxs-lookup"><span data-stu-id="35f9d-130">Type</span></span>|<span data-ttu-id="35f9d-131">说明</span><span class="sxs-lookup"><span data-stu-id="35f9d-131">Description</span></span>|
+|<span data-ttu-id="0787f-129">属性</span><span class="sxs-lookup"><span data-stu-id="0787f-129">Property</span></span>|<span data-ttu-id="0787f-130">类型</span><span class="sxs-lookup"><span data-stu-id="0787f-130">Type</span></span>|<span data-ttu-id="0787f-131">说明</span><span class="sxs-lookup"><span data-stu-id="0787f-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="35f9d-132">id</span><span class="sxs-lookup"><span data-stu-id="35f9d-132">id</span></span>|<span data-ttu-id="35f9d-133">String</span><span class="sxs-lookup"><span data-stu-id="35f9d-133">String</span></span>|<span data-ttu-id="35f9d-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="35f9d-134">Not yet documented</span></span>|
-|<span data-ttu-id="35f9d-135">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="35f9d-135">lastHeartbeatDateTime</span></span>|<span data-ttu-id="35f9d-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="35f9d-136">DateTimeOffset</span></span>|<span data-ttu-id="35f9d-137">从数据同步合作伙伴接收到上一个检测信号的日期/时间</span><span class="sxs-lookup"><span data-stu-id="35f9d-137">DateTime of last Heartbeat recieved from the Data Sync Partner</span></span>|
-|<span data-ttu-id="35f9d-138">partnerState</span><span class="sxs-lookup"><span data-stu-id="35f9d-138">partnerState</span></span>|[<span data-ttu-id="35f9d-139">mobileThreatPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="35f9d-139">mobileThreatPartnerTenantState</span></span>](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|<span data-ttu-id="35f9d-140">此帐户的数据同步合作伙伴状态。</span><span class="sxs-lookup"><span data-stu-id="35f9d-140">Data Sync Partner state for this account.</span></span> <span data-ttu-id="35f9d-141">可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。</span><span class="sxs-lookup"><span data-stu-id="35f9d-141">Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.</span></span>|
-|<span data-ttu-id="35f9d-142">androidEnabled</span><span class="sxs-lookup"><span data-stu-id="35f9d-142">androidEnabled</span></span>|<span data-ttu-id="35f9d-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-143">Boolean</span></span>|<span data-ttu-id="35f9d-144">对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-144">For Android, set whether data from the data sync partner should be used during compliance evaluations</span></span>|
-|<span data-ttu-id="35f9d-145">iosEnabled</span><span class="sxs-lookup"><span data-stu-id="35f9d-145">iosEnabled</span></span>|<span data-ttu-id="35f9d-146">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-146">Boolean</span></span>|<span data-ttu-id="35f9d-147">对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-147">For IOS, get or set whether data from the data sync partner should be used during compliance evaluations</span></span>|
-|<span data-ttu-id="35f9d-148">windowsEnabled</span><span class="sxs-lookup"><span data-stu-id="35f9d-148">windowsEnabled</span></span>|<span data-ttu-id="35f9d-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-149">Boolean</span></span>|<span data-ttu-id="35f9d-150">对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-150">For Windows, get or set whether data from the data sync partner should be used during compliance evaluations</span></span>|
-|<span data-ttu-id="35f9d-151">macEnabled</span><span class="sxs-lookup"><span data-stu-id="35f9d-151">macEnabled</span></span>|<span data-ttu-id="35f9d-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-152">Boolean</span></span>|<span data-ttu-id="35f9d-153">对于 Mac，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-153">For Mac, get or set whether data from the data sync partner should be used during compliance evaluations</span></span>|
-|<span data-ttu-id="35f9d-154">androidDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="35f9d-154">androidDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="35f9d-155">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-155">Boolean</span></span>|<span data-ttu-id="35f9d-156">对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-156">For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
-|<span data-ttu-id="35f9d-157">iosDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="35f9d-157">iosDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="35f9d-158">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-158">Boolean</span></span>|<span data-ttu-id="35f9d-159">对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-159">For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
-|<span data-ttu-id="35f9d-160">windowsDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="35f9d-160">windowsDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="35f9d-161">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-161">Boolean</span></span>|<span data-ttu-id="35f9d-162">对于 Windows，在将设备标记为合规之前，设置 Intune 是否必须接收来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-162">For Windows, set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
-|<span data-ttu-id="35f9d-163">macDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="35f9d-163">macDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="35f9d-164">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-164">Boolean</span></span>|<span data-ttu-id="35f9d-165">对于 Mac，获取或设置 Intune 是否必须在标记符合设备的之前从数据同步合作伙伴接收数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-165">For Mac, get or set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
-|<span data-ttu-id="35f9d-166">partnerUnsupportedOsVersionBlocked</span><span class="sxs-lookup"><span data-stu-id="35f9d-166">partnerUnsupportedOsVersionBlocked</span></span>|<span data-ttu-id="35f9d-167">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-167">Boolean</span></span>|<span data-ttu-id="35f9d-168">获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备</span><span class="sxs-lookup"><span data-stu-id="35f9d-168">Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner</span></span>|
-|<span data-ttu-id="35f9d-169">partnerUnresponsivenessThresholdInDays</span><span class="sxs-lookup"><span data-stu-id="35f9d-169">partnerUnresponsivenessThresholdInDays</span></span>|<span data-ttu-id="35f9d-170">Int32</span><span class="sxs-lookup"><span data-stu-id="35f9d-170">Int32</span></span>|<span data-ttu-id="35f9d-171">获取或设置每个租户允许此合作伙伴集成不响应的天数</span><span class="sxs-lookup"><span data-stu-id="35f9d-171">Get or Set days the per tenant tolerance to unresponsiveness for this partner integration</span></span>|
-|<span data-ttu-id="35f9d-172">allowPartnerToCollectIOSApplicationMetadata</span><span class="sxs-lookup"><span data-stu-id="35f9d-172">allowPartnerToCollectIOSApplicationMetadata</span></span>|<span data-ttu-id="35f9d-173">Boolean</span><span class="sxs-lookup"><span data-stu-id="35f9d-173">Boolean</span></span>|<span data-ttu-id="35f9d-174">对于 IOS 设备，管理员可以配置数据同步合作伙伴是否可以从 Intune 收集有关已安装应用程序的元数据</span><span class="sxs-lookup"><span data-stu-id="35f9d-174">For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune</span></span>|
+|<span data-ttu-id="0787f-132">id</span><span class="sxs-lookup"><span data-stu-id="0787f-132">id</span></span>|<span data-ttu-id="0787f-133">字符串</span><span class="sxs-lookup"><span data-stu-id="0787f-133">String</span></span>|<span data-ttu-id="0787f-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0787f-134">Not yet documented</span></span>|
+|<span data-ttu-id="0787f-135">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="0787f-135">lastHeartbeatDateTime</span></span>|<span data-ttu-id="0787f-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0787f-136">DateTimeOffset</span></span>|<span data-ttu-id="0787f-137">从数据同步合作伙伴接收到上一个检测信号的日期/时间</span><span class="sxs-lookup"><span data-stu-id="0787f-137">DateTime of last Heartbeat recieved from the Data Sync Partner</span></span>|
+|<span data-ttu-id="0787f-138">partnerState</span><span class="sxs-lookup"><span data-stu-id="0787f-138">partnerState</span></span>|[<span data-ttu-id="0787f-139">mobileThreatPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="0787f-139">mobileThreatPartnerTenantState</span></span>](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|<span data-ttu-id="0787f-140">此帐户的数据同步合作伙伴状态。</span><span class="sxs-lookup"><span data-stu-id="0787f-140">Data Sync Partner state for this account.</span></span> <span data-ttu-id="0787f-141">可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。</span><span class="sxs-lookup"><span data-stu-id="0787f-141">Possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.</span></span>|
+|<span data-ttu-id="0787f-142">androidMobileApplicationManagementEnabled</span><span class="sxs-lookup"><span data-stu-id="0787f-142">androidMobileApplicationManagementEnabled</span></span>|<span data-ttu-id="0787f-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-143">Boolean</span></span>|<span data-ttu-id="0787f-144">对于 Android，请设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。</span><span class="sxs-lookup"><span data-stu-id="0787f-144">For Android, set whether data from the data sync partner should be used during Mobile Application Management (MAM) evaluations.</span></span> <span data-ttu-id="0787f-145">每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。</span><span class="sxs-lookup"><span data-stu-id="0787f-145">Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.</span></span>|
+|<span data-ttu-id="0787f-146">iosMobileApplicationManagementEnabled</span><span class="sxs-lookup"><span data-stu-id="0787f-146">iosMobileApplicationManagementEnabled</span></span>|<span data-ttu-id="0787f-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-147">Boolean</span></span>|<span data-ttu-id="0787f-148">对于 IOS，获取或设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。</span><span class="sxs-lookup"><span data-stu-id="0787f-148">For IOS, get or set whether data from the data sync partner should be used during Mobile Application Management (MAM) evaluations.</span></span> <span data-ttu-id="0787f-149">每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。</span><span class="sxs-lookup"><span data-stu-id="0787f-149">Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.</span></span>|
+|<span data-ttu-id="0787f-150">androidEnabled</span><span class="sxs-lookup"><span data-stu-id="0787f-150">androidEnabled</span></span>|<span data-ttu-id="0787f-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-151">Boolean</span></span>|<span data-ttu-id="0787f-152">对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-152">For Android, set whether data from the data sync partner should be used during compliance evaluations</span></span>|
+|<span data-ttu-id="0787f-153">iosEnabled</span><span class="sxs-lookup"><span data-stu-id="0787f-153">iosEnabled</span></span>|<span data-ttu-id="0787f-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-154">Boolean</span></span>|<span data-ttu-id="0787f-155">对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-155">For IOS, get or set whether data from the data sync partner should be used during compliance evaluations</span></span>|
+|<span data-ttu-id="0787f-156">windowsEnabled</span><span class="sxs-lookup"><span data-stu-id="0787f-156">windowsEnabled</span></span>|<span data-ttu-id="0787f-157">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-157">Boolean</span></span>|<span data-ttu-id="0787f-158">对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-158">For Windows, get or set whether data from the data sync partner should be used during compliance evaluations</span></span>|
+|<span data-ttu-id="0787f-159">macEnabled</span><span class="sxs-lookup"><span data-stu-id="0787f-159">macEnabled</span></span>|<span data-ttu-id="0787f-160">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-160">Boolean</span></span>|<span data-ttu-id="0787f-161">对于 Mac，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-161">For Mac, get or set whether data from the data sync partner should be used during compliance evaluations</span></span>|
+|<span data-ttu-id="0787f-162">androidDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="0787f-162">androidDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="0787f-163">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-163">Boolean</span></span>|<span data-ttu-id="0787f-164">对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-164">For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
+|<span data-ttu-id="0787f-165">iosDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="0787f-165">iosDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="0787f-166">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-166">Boolean</span></span>|<span data-ttu-id="0787f-167">对于 iOS 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-167">For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
+|<span data-ttu-id="0787f-168">windowsDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="0787f-168">windowsDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="0787f-169">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-169">Boolean</span></span>|<span data-ttu-id="0787f-170">对于 Windows，在将设备标记为合规之前，设置 Intune 是否必须接收来自数据同步合作伙伴的数据</span><span class="sxs-lookup"><span data-stu-id="0787f-170">For Windows, set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
+|<span data-ttu-id="0787f-171">macDeviceBlockedOnMissingPartnerData</span><span class="sxs-lookup"><span data-stu-id="0787f-171">macDeviceBlockedOnMissingPartnerData</span></span>|<span data-ttu-id="0787f-172">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-172">Boolean</span></span>|<span data-ttu-id="0787f-173">对于 Mac，获取或设置 Intune 是否必须在标记符合设备的之前从数据同步合作伙伴接收数据</span><span class="sxs-lookup"><span data-stu-id="0787f-173">For Mac, get or set whether Intune must receive data from the data sync partner prior to marking a device compliant</span></span>|
+|<span data-ttu-id="0787f-174">partnerUnsupportedOsVersionBlocked</span><span class="sxs-lookup"><span data-stu-id="0787f-174">partnerUnsupportedOsVersionBlocked</span></span>|<span data-ttu-id="0787f-175">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-175">Boolean</span></span>|<span data-ttu-id="0787f-176">获取或设置是否阻止不符合数据同步合作伙伴最低版本要求的启用平台上的设备</span><span class="sxs-lookup"><span data-stu-id="0787f-176">Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner</span></span>|
+|<span data-ttu-id="0787f-177">partnerUnresponsivenessThresholdInDays</span><span class="sxs-lookup"><span data-stu-id="0787f-177">partnerUnresponsivenessThresholdInDays</span></span>|<span data-ttu-id="0787f-178">Int32</span><span class="sxs-lookup"><span data-stu-id="0787f-178">Int32</span></span>|<span data-ttu-id="0787f-179">获取或设置每个租户允许此合作伙伴集成不响应的天数</span><span class="sxs-lookup"><span data-stu-id="0787f-179">Get or Set days the per tenant tolerance to unresponsiveness for this partner integration</span></span>|
+|<span data-ttu-id="0787f-180">allowPartnerToCollectIOSApplicationMetadata</span><span class="sxs-lookup"><span data-stu-id="0787f-180">allowPartnerToCollectIOSApplicationMetadata</span></span>|<span data-ttu-id="0787f-181">Boolean</span><span class="sxs-lookup"><span data-stu-id="0787f-181">Boolean</span></span>|<span data-ttu-id="0787f-182">对于 IOS 设备，管理员可以配置数据同步合作伙伴是否可以从 Intune 收集有关已安装应用程序的元数据</span><span class="sxs-lookup"><span data-stu-id="0787f-182">For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="35f9d-175">响应</span><span class="sxs-lookup"><span data-stu-id="35f9d-175">Response</span></span>
-<span data-ttu-id="35f9d-176">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="35f9d-176">If successful, this method returns a `200 OK` response code and an updated [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0787f-183">响应</span><span class="sxs-lookup"><span data-stu-id="0787f-183">Response</span></span>
+<span data-ttu-id="0787f-184">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0787f-184">If successful, this method returns a `200 OK` response code and an updated [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="35f9d-177">示例</span><span class="sxs-lookup"><span data-stu-id="35f9d-177">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0787f-185">示例</span><span class="sxs-lookup"><span data-stu-id="0787f-185">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="35f9d-178">请求</span><span class="sxs-lookup"><span data-stu-id="35f9d-178">Request</span></span>
-<span data-ttu-id="35f9d-179">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="35f9d-179">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0787f-186">请求</span><span class="sxs-lookup"><span data-stu-id="0787f-186">Request</span></span>
+<span data-ttu-id="0787f-187">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0787f-187">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 Content-type: application/json
-Content-length: 622
+Content-length: 726
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -98,18 +102,20 @@ Content-length: 622
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="35f9d-180">响应</span><span class="sxs-lookup"><span data-stu-id="35f9d-180">Response</span></span>
-<span data-ttu-id="35f9d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="35f9d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0787f-188">响应</span><span class="sxs-lookup"><span data-stu-id="0787f-188">Response</span></span>
+<span data-ttu-id="0787f-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0787f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 671
+Content-Length: 775
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "id": "e4bede14-de14-e4be-14de-bee414debee4",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
+  "androidMobileApplicationManagementEnabled": true,
+  "iosMobileApplicationManagementEnabled": true,
   "androidEnabled": true,
   "iosEnabled": true,
   "windowsEnabled": true,
@@ -123,6 +129,8 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
+
+
 
 
 

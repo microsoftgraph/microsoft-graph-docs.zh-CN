@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 51283929885acec13c6ef8f28eb0fe1c7b4871e4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 95c8173ddddeb759ce81f37d4e243fb7411aa648
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190514"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536565"
 ---
-# <a name="update-enrollmentconfigurationassignment"></a><span data-ttu-id="ce1ac-103">更新 enrollmentConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="ce1ac-103">Update enrollmentConfigurationAssignment</span></span>
+# <a name="update-enrollmentconfigurationassignment"></a><span data-ttu-id="7ce4f-103">更新 enrollmentConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="7ce4f-103">Update enrollmentConfigurationAssignment</span></span>
 
-> <span data-ttu-id="ce1ac-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7ce4f-104">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ce1ac-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7ce4f-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ce1ac-106">更新 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-106">Update the properties of a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
+<span data-ttu-id="7ce4f-106">更新 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-106">Update the properties of a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ce1ac-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="ce1ac-107">Prerequisites</span></span>
-<span data-ttu-id="ce1ac-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7ce4f-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="7ce4f-107">Prerequisites</span></span>
+<span data-ttu-id="7ce4f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce1ac-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce1ac-110">Permission type</span></span>|<span data-ttu-id="ce1ac-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ce1ac-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7ce4f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7ce4f-110">Permission type</span></span>|<span data-ttu-id="7ce4f-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="7ce4f-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ce1ac-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce1ac-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ce1ac-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce1ac-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="ce1ac-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce1ac-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ce1ac-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-115">Not supported.</span></span>|
-|<span data-ttu-id="ce1ac-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ce1ac-116">Application</span></span>|<span data-ttu-id="ce1ac-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce1ac-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7ce4f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7ce4f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7ce4f-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ce4f-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7ce4f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7ce4f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7ce4f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-115">Not supported.</span></span>|
+|<span data-ttu-id="7ce4f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7ce4f-116">Application</span></span>|<span data-ttu-id="7ce4f-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ce4f-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ce1ac-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce1ac-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ce4f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7ce4f-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,59 +38,67 @@ ms.locfileid: "37190514"
 PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ce1ac-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce1ac-119">Request headers</span></span>
-|<span data-ttu-id="ce1ac-120">标头</span><span class="sxs-lookup"><span data-stu-id="ce1ac-120">Header</span></span>|<span data-ttu-id="ce1ac-121">值</span><span class="sxs-lookup"><span data-stu-id="ce1ac-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7ce4f-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7ce4f-119">Request headers</span></span>
+|<span data-ttu-id="7ce4f-120">标头</span><span class="sxs-lookup"><span data-stu-id="7ce4f-120">Header</span></span>|<span data-ttu-id="7ce4f-121">值</span><span class="sxs-lookup"><span data-stu-id="7ce4f-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ce1ac-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce1ac-122">Authorization</span></span>|<span data-ttu-id="ce1ac-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ce1ac-124">接受</span><span class="sxs-lookup"><span data-stu-id="ce1ac-124">Accept</span></span>|<span data-ttu-id="ce1ac-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ce1ac-125">application/json</span></span>|
+|<span data-ttu-id="7ce4f-122">授权</span><span class="sxs-lookup"><span data-stu-id="7ce4f-122">Authorization</span></span>|<span data-ttu-id="7ce4f-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7ce4f-124">接受</span><span class="sxs-lookup"><span data-stu-id="7ce4f-124">Accept</span></span>|<span data-ttu-id="7ce4f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7ce4f-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ce1ac-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ce1ac-126">Request body</span></span>
-<span data-ttu-id="ce1ac-127">在请求正文中，提供 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-127">In the request body, supply a JSON representation for the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ce4f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="7ce4f-126">Request body</span></span>
+<span data-ttu-id="7ce4f-127">在请求正文中，提供 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-127">In the request body, supply a JSON representation for the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object.</span></span>
 
-<span data-ttu-id="ce1ac-128">下表显示创建 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-128">The following table shows the properties that are required when you create the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span></span>
+<span data-ttu-id="7ce4f-128">下表显示创建 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-128">The following table shows the properties that are required when you create the [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span></span>
 
-|<span data-ttu-id="ce1ac-129">属性</span><span class="sxs-lookup"><span data-stu-id="ce1ac-129">Property</span></span>|<span data-ttu-id="ce1ac-130">类型</span><span class="sxs-lookup"><span data-stu-id="ce1ac-130">Type</span></span>|<span data-ttu-id="ce1ac-131">说明</span><span class="sxs-lookup"><span data-stu-id="ce1ac-131">Description</span></span>|
+|<span data-ttu-id="7ce4f-129">属性</span><span class="sxs-lookup"><span data-stu-id="7ce4f-129">Property</span></span>|<span data-ttu-id="7ce4f-130">类型</span><span class="sxs-lookup"><span data-stu-id="7ce4f-130">Type</span></span>|<span data-ttu-id="7ce4f-131">说明</span><span class="sxs-lookup"><span data-stu-id="7ce4f-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ce1ac-132">id</span><span class="sxs-lookup"><span data-stu-id="ce1ac-132">id</span></span>|<span data-ttu-id="ce1ac-133">String</span><span class="sxs-lookup"><span data-stu-id="ce1ac-133">String</span></span>|<span data-ttu-id="ce1ac-134">注册配置分配的键</span><span class="sxs-lookup"><span data-stu-id="ce1ac-134">Key of the enrollment configuration assignment</span></span>|
-|<span data-ttu-id="ce1ac-135">target</span><span class="sxs-lookup"><span data-stu-id="ce1ac-135">target</span></span>|[<span data-ttu-id="ce1ac-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="ce1ac-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="ce1ac-137">表示对租户中托管设备的分配</span><span class="sxs-lookup"><span data-stu-id="ce1ac-137">Represents an assignment to managed devices in the tenant</span></span>|
+|<span data-ttu-id="7ce4f-132">id</span><span class="sxs-lookup"><span data-stu-id="7ce4f-132">id</span></span>|<span data-ttu-id="7ce4f-133">字符串</span><span class="sxs-lookup"><span data-stu-id="7ce4f-133">String</span></span>|<span data-ttu-id="7ce4f-134">注册配置分配的键</span><span class="sxs-lookup"><span data-stu-id="7ce4f-134">Key of the enrollment configuration assignment</span></span>|
+|<span data-ttu-id="7ce4f-135">target</span><span class="sxs-lookup"><span data-stu-id="7ce4f-135">target</span></span>|[<span data-ttu-id="7ce4f-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="7ce4f-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="7ce4f-137">表示对租户中托管设备的分配</span><span class="sxs-lookup"><span data-stu-id="7ce4f-137">Represents an assignment to managed devices in the tenant</span></span>|
+|<span data-ttu-id="7ce4f-138">source</span><span class="sxs-lookup"><span data-stu-id="7ce4f-138">source</span></span>|[<span data-ttu-id="7ce4f-139">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="7ce4f-139">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="7ce4f-140">用于部署到组、direct 或 policySet 的资源类型。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-140">Type of resource used for deployment to a group, direct or policySet.</span></span> <span data-ttu-id="7ce4f-141">可取值为：`direct`、`policySets`。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-141">Possible values are: `direct`, `policySets`.</span></span>|
+|<span data-ttu-id="7ce4f-142">sourceId</span><span class="sxs-lookup"><span data-stu-id="7ce4f-142">sourceId</span></span>|<span data-ttu-id="7ce4f-143">字符串</span><span class="sxs-lookup"><span data-stu-id="7ce4f-143">String</span></span>|<span data-ttu-id="7ce4f-144">用于部署到组的资源的标识符</span><span class="sxs-lookup"><span data-stu-id="7ce4f-144">Identifier for resource used for deployment to a group</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ce1ac-138">响应</span><span class="sxs-lookup"><span data-stu-id="ce1ac-138">Response</span></span>
-<span data-ttu-id="ce1ac-139">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-139">If successful, this method returns a `200 OK` response code and an updated [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7ce4f-145">响应</span><span class="sxs-lookup"><span data-stu-id="7ce4f-145">Response</span></span>
+<span data-ttu-id="7ce4f-146">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-146">If successful, this method returns a `200 OK` response code and an updated [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce1ac-140">示例</span><span class="sxs-lookup"><span data-stu-id="ce1ac-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7ce4f-147">示例</span><span class="sxs-lookup"><span data-stu-id="7ce4f-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ce1ac-141">请求</span><span class="sxs-lookup"><span data-stu-id="ce1ac-141">Request</span></span>
-<span data-ttu-id="ce1ac-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7ce4f-148">请求</span><span class="sxs-lookup"><span data-stu-id="7ce4f-148">Request</span></span>
+<span data-ttu-id="7ce4f-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-149">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 173
+Content-length: 234
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ce1ac-143">响应</span><span class="sxs-lookup"><span data-stu-id="ce1ac-143">Response</span></span>
-<span data-ttu-id="ce1ac-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ce1ac-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7ce4f-150">响应</span><span class="sxs-lookup"><span data-stu-id="7ce4f-150">Response</span></span>
+<span data-ttu-id="7ce4f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7ce4f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 283
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "705b021c-021c-705b-1c02-5b701c025b70",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 
