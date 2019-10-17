@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b5e0807ae73110a921c70beef6a98589db41269
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63fa37dacea7fee6d4378a2a6040a5cf71f3790
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972549"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553934"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -46,15 +46,14 @@ ms.locfileid: "35972549"
 | 说明         | String                                | 学校描述。                         |
 | displayName         | 字符串                                | 学校的显示名称。                        |
 | externalId          | String                                | 同步系统中学校的 ID。                    |
-| externalPrincipalId | String                                | 同步系统中主体的 ID。                 |
+| externalPrincipalId | 字符串                                | 同步系统中主体的 ID。                 |
 | externalSource      | string                                | 只读。 可能的值是：`sis` 或 `manual`。 |
-| fax                 | String                                | 学校传真号码。                              |
-| highestGrade        | String                                | 教授的最高年级。                              |
-| lowestGrade         | String                                | 教授的最低年级。                               |
+| highestGrade        | 字符串                                | 教授的最高年级。                              |
+| lowestGrade         | 字符串                                | 教授的最低年级。                               |
 | phone               | String                                | 学校电话号码。                            |
-| principalEmail      | String                                | 主体的电子邮件地址。                    |
-| principalName       | String                                | 主体名称。                             |
-| schoolNumber        | String                                | 学校编号。                                     |
+| principalEmail      | 字符串                                | 主体的电子邮件地址。                    |
+| principalName       | 字符串                                | 主体名称。                             |
+| schoolNumber        | 字符串                                | 学校编号。                                     |
 
 ## <a name="relationships"></a>关系
 
@@ -86,7 +85,6 @@ ms.locfileid: "35972549"
   "externalId": "String",
   "externalPrincipalId": "String",
   "externalSource": "string",
-  "fax": "String",
   "highestGrade": "String",
   "id": "String (identifier)",
   "lowestGrade": "String",

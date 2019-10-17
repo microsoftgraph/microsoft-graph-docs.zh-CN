@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 357f47f549e96b0f7c7ce0ecec4b5c791b5d3897
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 94c6c40a91ce09937778ab33bb2c5ed21e8aa3d1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714564"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554895"
 ---
 ```csharp
 
@@ -32,7 +32,6 @@ var educationSchool = new EducationSchool
         Street = "12345 Main St."
     },
     ExternalId = "10002",
-    Fax = "+1 (253) 555-0101",
     Phone = "+1 (253) 555-0102"
 };
 

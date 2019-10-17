@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e9a6c55dc65b11c130f63bd1e112911d49808d7d
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 91fcc069fa3262a536f306c719683eb6df6f15f1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418312"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536621"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -59,7 +59,8 @@ ms.locfileid: "37418312"
 |[删除设置](../api/directorysetting-delete.md) | 无 |删除 setting 对象。 |
 |[List endpoints](../api/group-list-endpoints.md) |[endpoint](endpoint.md) 集合| 获取 endpoint 对象集合。 |
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
-|[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 | 
+|[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+|[assignLicense](../api/group-assignlicense.md) | [组](group.md) |为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。|
 |**Calendar**| | |
 |[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
 |[获取事件](../api/group-get-event.md) |[event](event.md)|读取 event 对象的属性。|
@@ -134,6 +135,7 @@ ms.locfileid: "37418312"
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要多值属性筛选器表达式的 **any** 运算符。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
 |securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 $filter。|
+|securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|String|指定 Office 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenConversationsCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。 此属性与 **unseenCount** 相同。 <br><br>仅在 $select 上返回。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 此属性与 **unseenConversationsCount** 相同。<br><br>仅在 $select 上返回。 |
@@ -250,6 +252,7 @@ ms.locfileid: "37418312"
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
+  "securityIdentifier": "string",
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
