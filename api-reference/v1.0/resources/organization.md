@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 24144efea87096d16bd6039748fb0bd0dbba87eb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e628e0a05810ae49ab02dc2ddb9b634a47056025
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035698"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539244"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "36035698"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取组织](../api/organization-get.md) | [组织](organization.md) |读取 organization 对象的属性和关系。|
+|[获取组织](../api/organization-get.md) | [organization](organization.md) 集合|读取 organization 对象的属性和关系。|
 |[更新](../api/organization-update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
 |**开放扩展**| 
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -62,6 +62,7 @@ ms.locfileid: "36035698"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
+|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) 集合| 用于管理基于证书的身份验证配置的导航属性。 只能在集合中创建 certificateBasedAuthConfiguration 的单个实例。  |
 |extensions|[扩展](extension.md)集合|为组织定义的开放扩展集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f09db42930d1f3d99039a6584db051a91edaeea1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 66b894b272f9b57e41869cb95f4acebb5dd6a399
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718427"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535637"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -27,7 +27,13 @@ ms.locfileid: "36718427"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Chat.Read   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。   |
+|应用程序 | Chat.Read.All、Chat.ReadWrite.All   |
+
+> [!NOTE]
+> 借助应用程序权限，支持获取一次聊天，但不支持[获取聊天列表](chat-list.md)。
+
+> [!NOTE]
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 
