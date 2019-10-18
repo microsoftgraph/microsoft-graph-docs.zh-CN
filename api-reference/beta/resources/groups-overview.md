@@ -66,7 +66,7 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
     "visibility": "Public"
 }
 ```
-若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/zh-CN/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>安全组和启用邮件的安全组
 
@@ -117,7 +117,7 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
+若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 
 > **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) 或更高层拥有许可证。
 

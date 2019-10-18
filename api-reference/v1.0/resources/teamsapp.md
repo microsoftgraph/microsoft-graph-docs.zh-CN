@@ -33,9 +33,9 @@ ms.locfileid: "36033808"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
-| externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
-| displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
+| id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
+| externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
+| displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
 | distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。 |
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值

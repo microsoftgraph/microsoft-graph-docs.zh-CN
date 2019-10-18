@@ -29,7 +29,7 @@ ms.locfileid: "36792868"
 
 ![通过创建团队、添加成员和所有者、配置团队设置、添加渠道、安装应用、添加选项卡和适时存档或删除团队来自动化团队生命周期。](images/teams-lifecycle.png)
 
-当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Office 365 组过期策略](https://support.office.com/zh-CN/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
+当业务问题得到解决且不再需要团队时，可使用 Microsoft Teams API 来[存档](/graph/api/team-archive?view=graph-rest-1.0)或[删除](/graph/api/group-delete?view=graph-rest-1.0)团队。 如果在创建团队时已了解团队的最长持续时间，则可为团队设置 [Office 365 组过期策略](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)，以便根据该策略自动删除团队。
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>即使在无人参与的情况下也可以完成工作
 

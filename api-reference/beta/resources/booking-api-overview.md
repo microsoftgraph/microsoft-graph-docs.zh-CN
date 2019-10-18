@@ -29,7 +29,7 @@ Microsoft Bookings 可让小型企业所有者以最少量的设置管理客户�
 
 第一次客户预约之前，请完成以下步骤。 确保为相应的操作提供适当的[访问令牌](/graph/auth-overview)。
 
-1. 确保企业具有 [Office 365 商业高级版](https://products.office.com/zh-CN/business/office-365-business-premium)订阅。
+1. 确保企业具有 [Office 365 商业高级版](https://products.office.com/en-us/business/office-365-business-premium)订阅。
 2. 通过向实体集发送 POST 操作来创建新的 **bookingBusiness**。 至少应为新企业指定客户将看到的名称：
 <!-- { "blockType": "ignored" } -->
 ```http

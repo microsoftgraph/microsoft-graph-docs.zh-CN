@@ -16,7 +16,7 @@ ms.locfileid: "36038183"
 
 ![Postman 图像](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-本文介绍了如何快速掌握 Postman 和 Microsoft Graph。 此外，还可以使用 [Graph 管理器](https://developer.microsoft.com/zh-CN/graph/graph-explorer)直接在 Web 浏览器中浏览 Microsoft Graph API。
+本文介绍了如何快速掌握 Postman 和 Microsoft Graph。 此外，还可以使用 [Graph 管理器](https://developer.microsoft.com/en-us/graph/graph-explorer)直接在 Web 浏览器中浏览 Microsoft Graph API。
 
 ## <a name="accessing-the-collection"></a>访问集合
 可通过以下两种方法来访问 Postman 中的集合：使用集合或参与集合。 必须先在计算机上运行 [Postman](https://www.getpostman.com/)。

@@ -16,7 +16,7 @@ ms.locfileid: "36426396"
 
 mailFolder 中的邮件。
 
-从 Exchange Online 邮箱发送的单个电子邮件的 **toRecipients**、**ccRecipients** 和 **bccRecipients** 属性包含的最大收件人数为 500。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/zh-CN/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
+从 Exchange Online 邮箱发送的单个电子邮件的 **toRecipients**、**ccRecipients** 和 **bccRecipients** 属性包含的最大收件人数为 500。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
 该资源支持：
 
@@ -85,7 +85,7 @@ mailFolder 中的邮件。
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](https://docs.microsoft.com/zh-CN/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/zh-CN/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|

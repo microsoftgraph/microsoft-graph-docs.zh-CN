@@ -50,7 +50,7 @@ ms.locfileid: "36032555"
 
 - 作为命名属性，由扩展属性类型、名称空间和字符串名称标识。
 - 作为命名属性，由扩展属性类型、名称空间和数字标识符标识。
-- 采用属性标记格式，由扩展属性类型和 [MAPI 属性标记](https://docs.microsoft.com/zh-CN/office/client-developer/outlook/mapi/mapi-property-tags)标识。
+- 采用属性标记格式，由扩展属性类型和 [MAPI 属性标记](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags)标识。
 
 接下来的两个表描述了应用于单值和多值扩展属性的这些格式。 {_type_} 表示一个或多个扩展属性值的类型。 示例中使用的是 string、integer 和这些类型的数组。
 
@@ -71,7 +71,7 @@ ms.locfileid: "36032555"
 | "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | 用属性标记标识预定义的属性。 |
 
 
-使用任一命名属性格式将单值或多值扩展属性定义为自定义属性。 在这两种格式中，第一种采用字符串名称 (**Name**) 的格式是易于参考的首选格式。 命名属性的[属性标识符](https://docs.microsoft.com/zh-CN/office/client-developer/outlook/mapi/mapi-property-identifier-overview)在 0x8000-0xfffe 范围内。
+使用任一命名属性格式将单值或多值扩展属性定义为自定义属性。 在这两种格式中，第一种采用字符串名称 (**Name**) 的格式是易于参考的首选格式。 命名属性的[属性标识符](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview)在 0x8000-0xfffe 范围内。
 
 使用属性标记格式访问由 MAPI 或客户端或服务器预定义的属性，以及尚未在 Microsoft Graph 中公开的属性。 这些属性的属性标识符在 0x0001-0x7fff 范围内。 不要尝试使用属性标记格式定义自定义属性。 
 

@@ -261,7 +261,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 - [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/zh-CN//library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 

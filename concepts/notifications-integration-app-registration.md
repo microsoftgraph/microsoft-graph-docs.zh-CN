@@ -22,7 +22,7 @@ ms.locfileid: "35778633"
 
 
 > [!NOTE]
-> 如果没有 Microsoft 帐户并想要使用此类帐户，请转至  [Microsoft 帐户](https://account.microsoft.com/account)页面。 如果正在编写需要将 Azure AD v1.0 用作工作或学校帐户的身份验证和标识框架的应用，请参阅  [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。 如果你想了解或使用新聚合的 Microsoft 标识平台 (v2.0)，请参阅[比较 Microsoft 标识平台终结点和 Azure AD v1.0 终结点](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/azure-ad-endpoint-comparison)。
+> 如果没有 Microsoft 帐户并想要使用此类帐户，请转至  [Microsoft 帐户](https://account.microsoft.com/account)页面。 如果正在编写需要将 Azure AD v1.0 用作工作或学校帐户的身份验证和标识框架的应用，请参阅  [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)。 如果你想了解或使用新聚合的 Microsoft 标识平台 (v2.0)，请参阅[比较 Microsoft 标识平台终结点和 Azure AD v1.0 终结点](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison)。
 
 注册应用时，请将应用程序 ID/客户端 ID 置于方便使用的位置。 后续在 [Microsoft 合作伙伴中心](https://partner.microsoft.com/)注册应用程序以获取跨设备体验时，需要此 ID。
 
@@ -59,6 +59,6 @@ ms.locfileid: "35778633"
 
 ## <a name="next-steps"></a>后续步骤
 
-详细了解[权限和同意](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/v2-permissions-and-consent)或查看 Microsoft Graph [权限参考](https://docs.microsoft.com/zh-CN/graph/permissions-reference)。
+详细了解[权限和同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)或查看 Microsoft Graph [权限参考](https://docs.microsoft.com/en-us/graph/permissions-reference)。
 
 现在，你已注册应用，请转至[合作伙伴中心](https://partner.microsoft.com/)设置应用程序以获取跨设备体验，并定位相应的应用平台以获取通过 Microsoft Graph 发送的通知。 有关详细信息，请参阅[载入跨设备体验](notifications-integration-cross-device-experiences-onboarding.md)。 

@@ -45,7 +45,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
-|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/zh-CN/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
+|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
 |isArchived|Boolean|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|

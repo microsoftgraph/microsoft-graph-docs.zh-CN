@@ -13,7 +13,7 @@ ms.locfileid: "35932575"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限界定为特定 Exchange Online 邮箱 
 
-一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 这些是在服务器上运行的后台服务或守护程序，不存在登录用户。 这些应用使用 [OAuth 2.0 客户端凭据授权流](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)来进行身份验证并配置应用程序权限，这使得这些应用能够访问组织在 Exchange Online 上的所有邮箱。 例如，Mail.Read 应用程序权限使应用能够读取所有邮箱中的邮件而无需用户登录。 
+一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 这些是在服务器上运行的后台服务或守护程序，不存在登录用户。 这些应用使用 [OAuth 2.0 客户端凭据授权流](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)来进行身份验证并配置应用程序权限，这使得这些应用能够访问组织在 Exchange Online 上的所有邮箱。 例如，Mail.Read 应用程序权限使应用能够读取所有邮箱中的邮件而无需用户登录。 
 
 管理员如果想要将应用限制为访问特定邮箱集，则可以使用 **New-ApplicationAccessPolicy** PowerShell cmdlet 来配置访问权限。 本文介绍了配置应用程序访问策略的基本步骤。
 
@@ -22,7 +22,7 @@ ms.locfileid: "35932575"
 ## <a name="configure-applicationaccesspolicy"></a>配置应用程序访问策略
 
 若要配置应用程序访问策略并限制应用程序权限的范围：
-1.  连接到 Exchange Online PowerShell。 有关详细信息，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/zh-CN/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1.  连接到 Exchange Online PowerShell。 有关详细信息，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 2.  标识应用客户端 ID 和限制应用可访问的启用邮件的安全组。
 
