@@ -12,27 +12,27 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/26/2019
 ms.locfileid: "35908591"
 ---
-# <a name="teamwork-resource-type"></a><span data-ttu-id="9a233-103">teamwork 资源类型</span><span class="sxs-lookup"><span data-stu-id="9a233-103">teamwork resource type</span></span>
+# <a name="teamwork-resource-type"></a><span data-ttu-id="893b4-103">teamwork 资源类型</span><span class="sxs-lookup"><span data-stu-id="893b4-103">teamwork resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9a233-104">可供组织使用的 Microsoft Teams 功能范围的容器。</span><span class="sxs-lookup"><span data-stu-id="9a233-104">A container for the range of Microsoft Teams functionalities that are available for the organization.</span></span>
+<span data-ttu-id="893b4-104">可供组织使用的 Microsoft Teams 功能范围的容器。</span><span class="sxs-lookup"><span data-stu-id="893b4-104">A container for the range of Microsoft Teams functionalities that are available for the organization.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9a233-105">属性</span><span class="sxs-lookup"><span data-stu-id="9a233-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="893b4-105">属性</span><span class="sxs-lookup"><span data-stu-id="893b4-105">Properties</span></span>
 
-| <span data-ttu-id="9a233-106">属性</span><span class="sxs-lookup"><span data-stu-id="9a233-106">Property</span></span> | <span data-ttu-id="9a233-107">类型</span><span class="sxs-lookup"><span data-stu-id="9a233-107">Type</span></span> | <span data-ttu-id="9a233-108">说明</span><span class="sxs-lookup"><span data-stu-id="9a233-108">Description</span></span> |
+| <span data-ttu-id="893b4-106">属性</span><span class="sxs-lookup"><span data-stu-id="893b4-106">Property</span></span> | <span data-ttu-id="893b4-107">类型</span><span class="sxs-lookup"><span data-stu-id="893b4-107">Type</span></span> | <span data-ttu-id="893b4-108">说明</span><span class="sxs-lookup"><span data-stu-id="893b4-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9a233-109">id</span><span class="sxs-lookup"><span data-stu-id="9a233-109">id</span></span>|<span data-ttu-id="9a233-110">string</span><span class="sxs-lookup"><span data-stu-id="9a233-110">string</span></span>| <span data-ttu-id="9a233-111">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="9a233-111">A unique identifier for the Announcement.</span></span> |
+|<span data-ttu-id="893b4-109">id</span><span class="sxs-lookup"><span data-stu-id="893b4-109">id</span></span>|<span data-ttu-id="893b4-110">string</span><span class="sxs-lookup"><span data-stu-id="893b4-110">string</span></span>| <span data-ttu-id="893b4-111">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="893b4-111">A unique identifier for the Announcement.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="9a233-112">关系</span><span class="sxs-lookup"><span data-stu-id="9a233-112">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="893b4-112">关系</span><span class="sxs-lookup"><span data-stu-id="893b4-112">Relationships</span></span>
 
-| <span data-ttu-id="9a233-113">关系</span><span class="sxs-lookup"><span data-stu-id="9a233-113">Relationship</span></span> | <span data-ttu-id="9a233-114">类型</span><span class="sxs-lookup"><span data-stu-id="9a233-114">Type</span></span> | <span data-ttu-id="9a233-115">说明</span><span class="sxs-lookup"><span data-stu-id="9a233-115">Description</span></span> |
+| <span data-ttu-id="893b4-113">关系</span><span class="sxs-lookup"><span data-stu-id="893b4-113">Relationship</span></span> | <span data-ttu-id="893b4-114">类型</span><span class="sxs-lookup"><span data-stu-id="893b4-114">Type</span></span> | <span data-ttu-id="893b4-115">说明</span><span class="sxs-lookup"><span data-stu-id="893b4-115">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9a233-116">installedApps</span><span class="sxs-lookup"><span data-stu-id="9a233-116">installedApps</span></span>|<span data-ttu-id="9a233-117">[teamsAppInstallation](teamsappinstallation.md) 集合</span><span class="sxs-lookup"><span data-stu-id="9a233-117">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="9a233-118">此用户的个人范围内安装的应用。</span><span class="sxs-lookup"><span data-stu-id="9a233-118">The apps installed in the personal scope of this user.</span></span>|
+|<span data-ttu-id="893b4-116">installedApps</span><span class="sxs-lookup"><span data-stu-id="893b4-116">installedApps</span></span>|<span data-ttu-id="893b4-117">[teamsAppInstallation](teamsappinstallation.md) 集合</span><span class="sxs-lookup"><span data-stu-id="893b4-117">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="893b4-118">此用户的个人范围内安装的应用。</span><span class="sxs-lookup"><span data-stu-id="893b4-118">The apps installed in the personal scope of this user.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9a233-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9a233-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="893b4-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="893b4-119">JSON representation</span></span>
 
-<span data-ttu-id="9a233-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9a233-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="893b4-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="893b4-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,6 +60,6 @@ ms.locfileid: "35908591"
 }
 -->
 
-## <a name="see-also"></a><span data-ttu-id="9a233-121">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9a233-121">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="893b4-121">另请参阅</span><span class="sxs-lookup"><span data-stu-id="893b4-121">See Also</span></span>
 
-- [<span data-ttu-id="9a233-122">userTeamwork 资源类型</span><span class="sxs-lookup"><span data-stu-id="9a233-122">userTeamwork resource</span></span>](userteamwork.md)
+- [<span data-ttu-id="893b4-122">userTeamwork 资源类型</span><span class="sxs-lookup"><span data-stu-id="893b4-122">userTeamwork resource</span></span>](userteamwork.md)

@@ -12,33 +12,33 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/04/2019
 ms.locfileid: "36758298"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="d89b4-103">获取 ID 列表中的目录对象</span><span class="sxs-lookup"><span data-stu-id="d89b4-103">Get directory objects from a list of ids</span></span>
+# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="509e3-103">获取 ID 列表中的目录对象</span><span class="sxs-lookup"><span data-stu-id="509e3-103">Get directory objects from a list of ids</span></span>
 
-<span data-ttu-id="d89b4-104">返回 ID 列表中指定的目录对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-104">Returns the directory objects specified in a list of IDs.</span></span>
-
->[!NOTE]
-><span data-ttu-id="d89b4-105">返回的目录对象是包含其所有属性的完整对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-105">The directory objects returned are the full objects containing all their properties.</span></span> <span data-ttu-id="d89b4-106">`$select` 查询选项不适用于此操作。</span><span class="sxs-lookup"><span data-stu-id="d89b4-106">select\` query option is not available for this operation.</span></span>
+<span data-ttu-id="509e3-104">返回 ID 列表中指定的目录对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-104">Returns the directory objects specified in a list of IDs.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="d89b4-107">此 API 存在一个[已知问题](/graph/known-issues#incomplete-objects-when-using-getbyids-request)。</span><span class="sxs-lookup"><span data-stu-id="d89b4-107">This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request).</span></span> <span data-ttu-id="d89b4-108">返回的目录对象并非都是包含其所有属性的完整对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-108">Not all directory objects returned are the full objects containing all their properties.</span></span>
+><span data-ttu-id="509e3-105">返回的目录对象是包含其所有属性的完整对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-105">The directory objects returned are the full objects containing all their properties.</span></span> <span data-ttu-id="509e3-106">`$select` 查询选项不适用于此操作。</span><span class="sxs-lookup"><span data-stu-id="509e3-106">select\` query option is not available for this operation.</span></span>
 
-<span data-ttu-id="d89b4-109">该函数的一些常见用途是：</span><span class="sxs-lookup"><span data-stu-id="d89b4-109">Some common uses for this function are to:</span></span>
+>[!NOTE]
+><span data-ttu-id="509e3-107">此 API 存在一个[已知问题](/graph/known-issues#incomplete-objects-when-using-getbyids-request)。</span><span class="sxs-lookup"><span data-stu-id="509e3-107">This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request).</span></span> <span data-ttu-id="509e3-108">返回的目录对象并非都是包含其所有属性的完整对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-108">Not all directory objects returned are the full objects containing all their properties.</span></span>
 
-* <span data-ttu-id="d89b4-110">将返回 ID 集合的函数（例如 [getMemberObjects](directoryobject-getmemberobjects.md) 或 [getMemberGroups](directoryobject-getmembergroups.md)）返回的 ID 解析到其后备目录对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-110">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.</span></span>
-* <span data-ttu-id="d89b4-111">将应用程序保存在外部存储中的 ID 解析到其后备目录对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-111">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
+<span data-ttu-id="509e3-109">该函数的一些常见用途是：</span><span class="sxs-lookup"><span data-stu-id="509e3-109">Some common uses for this function are to:</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d89b4-112">权限</span><span class="sxs-lookup"><span data-stu-id="d89b4-112">Permissions</span></span>
+* <span data-ttu-id="509e3-110">将返回 ID 集合的函数（例如 [getMemberObjects](directoryobject-getmemberobjects.md) 或 [getMemberGroups](directoryobject-getmembergroups.md)）返回的 ID 解析到其后备目录对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-110">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.</span></span>
+* <span data-ttu-id="509e3-111">将应用程序保存在外部存储中的 ID 解析到其后备目录对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-111">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
 
-<span data-ttu-id="d89b4-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d89b4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="509e3-112">权限</span><span class="sxs-lookup"><span data-stu-id="509e3-112">Permissions</span></span>
+
+<span data-ttu-id="509e3-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="509e3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="d89b4-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="d89b4-115">Permission type</span></span>      | <span data-ttu-id="d89b4-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d89b4-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="509e3-115">权限类型</span><span class="sxs-lookup"><span data-stu-id="509e3-115">Permission type</span></span>      | <span data-ttu-id="509e3-116">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="509e3-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d89b4-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d89b4-117">Delegated (work or school account)</span></span> | <span data-ttu-id="d89b4-118">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d89b4-118">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="d89b4-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d89b4-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d89b4-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="d89b4-120">Not supported.</span></span>    |
-|<span data-ttu-id="d89b4-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="d89b4-121">Application</span></span> | <span data-ttu-id="d89b4-122">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="d89b4-122">Directory.Read.All</span></span> |
+|<span data-ttu-id="509e3-117">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="509e3-117">Delegated (work or school account)</span></span> | <span data-ttu-id="509e3-118">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="509e3-118">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="509e3-119">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="509e3-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="509e3-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="509e3-120">Not supported.</span></span>    |
+|<span data-ttu-id="509e3-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="509e3-121">Application</span></span> | <span data-ttu-id="509e3-122">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="509e3-122">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d89b4-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d89b4-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="509e3-123">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="509e3-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,32 +46,32 @@ ms.locfileid: "36758298"
 POST /directoryObjects/getByIds
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d89b4-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="d89b4-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="509e3-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="509e3-124">Request headers</span></span>
 
-| <span data-ttu-id="d89b4-125">名称</span><span class="sxs-lookup"><span data-stu-id="d89b4-125">Name</span></span>       | <span data-ttu-id="d89b4-126">类型</span><span class="sxs-lookup"><span data-stu-id="d89b4-126">Type</span></span> | <span data-ttu-id="d89b4-127">说明</span><span class="sxs-lookup"><span data-stu-id="d89b4-127">Description</span></span>|
+| <span data-ttu-id="509e3-125">名称</span><span class="sxs-lookup"><span data-stu-id="509e3-125">Name</span></span>       | <span data-ttu-id="509e3-126">类型</span><span class="sxs-lookup"><span data-stu-id="509e3-126">Type</span></span> | <span data-ttu-id="509e3-127">说明</span><span class="sxs-lookup"><span data-stu-id="509e3-127">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d89b4-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="d89b4-128">Authorization</span></span>  | <span data-ttu-id="d89b4-129">string</span><span class="sxs-lookup"><span data-stu-id="d89b4-129">string</span></span>  | <span data-ttu-id="d89b4-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d89b4-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d89b4-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d89b4-132">Content-Type</span></span>  | <span data-ttu-id="d89b4-133">string</span><span class="sxs-lookup"><span data-stu-id="d89b4-133">string</span></span> | <span data-ttu-id="d89b4-134">application/json</span><span class="sxs-lookup"><span data-stu-id="d89b4-134">application/json</span></span>  |
+| <span data-ttu-id="509e3-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="509e3-128">Authorization</span></span>  | <span data-ttu-id="509e3-129">string</span><span class="sxs-lookup"><span data-stu-id="509e3-129">string</span></span>  | <span data-ttu-id="509e3-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="509e3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="509e3-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="509e3-132">Content-Type</span></span>  | <span data-ttu-id="509e3-133">string</span><span class="sxs-lookup"><span data-stu-id="509e3-133">string</span></span> | <span data-ttu-id="509e3-134">application/json</span><span class="sxs-lookup"><span data-stu-id="509e3-134">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d89b4-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="d89b4-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="509e3-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="509e3-135">Request body</span></span>
 
-<span data-ttu-id="d89b4-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="509e3-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d89b4-137">参数</span><span class="sxs-lookup"><span data-stu-id="d89b4-137">Parameter</span></span>   | <span data-ttu-id="d89b4-138">类型</span><span class="sxs-lookup"><span data-stu-id="d89b4-138">Type</span></span> |<span data-ttu-id="d89b4-139">说明</span><span class="sxs-lookup"><span data-stu-id="d89b4-139">Description</span></span>|
+| <span data-ttu-id="509e3-137">参数</span><span class="sxs-lookup"><span data-stu-id="509e3-137">Parameter</span></span>   | <span data-ttu-id="509e3-138">类型</span><span class="sxs-lookup"><span data-stu-id="509e3-138">Type</span></span> |<span data-ttu-id="509e3-139">说明</span><span class="sxs-lookup"><span data-stu-id="509e3-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d89b4-140">ids</span><span class="sxs-lookup"><span data-stu-id="d89b4-140">ids</span></span>|<span data-ttu-id="d89b4-141">String collection</span><span class="sxs-lookup"><span data-stu-id="d89b4-141">String collection</span></span>| <span data-ttu-id="d89b4-142">要返回其对象的 ID 集合。</span><span class="sxs-lookup"><span data-stu-id="d89b4-142">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> <span data-ttu-id="d89b4-143">最多可以指定 1000 个 ID。</span><span class="sxs-lookup"><span data-stu-id="d89b4-143">You can specify up to 1000 IDs.</span></span> |
-|<span data-ttu-id="d89b4-144">types</span><span class="sxs-lookup"><span data-stu-id="d89b4-144">types</span></span>|<span data-ttu-id="d89b4-145">String collection</span><span class="sxs-lookup"><span data-stu-id="d89b4-145">String collection</span></span>| <span data-ttu-id="d89b4-146">指定要搜索的资源集合集的资源类型集合。</span><span class="sxs-lookup"><span data-stu-id="d89b4-146">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="d89b4-147">如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型。</span><span class="sxs-lookup"><span data-stu-id="d89b4-147">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="d89b4-148">可以在该集合中指定派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) 的任何对象，例如：[user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) 等。</span><span class="sxs-lookup"><span data-stu-id="d89b4-148">Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-v1.0), [group](/graph/api/resources/group?view=graph-rest-v1.0), [device](/graph/api/resources/device?view=graph-rest-v1.0), and so on.</span></span> <span data-ttu-id="d89b4-149">若要搜索对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0)。</span><span class="sxs-lookup"><span data-stu-id="d89b4-149">To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/zh-CN/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0).</span></span> <span data-ttu-id="d89b4-150">如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用除外。</span><span class="sxs-lookup"><span data-stu-id="d89b4-150">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/zh-CN/cloud-solution-provider) partner organization.</span></span> <span data-ttu-id="d89b4-151">这些值不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="d89b4-151">The following values are not case sensitive:</span></span>|
+|<span data-ttu-id="509e3-140">ids</span><span class="sxs-lookup"><span data-stu-id="509e3-140">ids</span></span>|<span data-ttu-id="509e3-141">String collection</span><span class="sxs-lookup"><span data-stu-id="509e3-141">String collection</span></span>| <span data-ttu-id="509e3-142">要返回其对象的 ID 集合。</span><span class="sxs-lookup"><span data-stu-id="509e3-142">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> <span data-ttu-id="509e3-143">最多可以指定 1000 个 ID。</span><span class="sxs-lookup"><span data-stu-id="509e3-143">You can specify up to 1000 IDs.</span></span> |
+|<span data-ttu-id="509e3-144">types</span><span class="sxs-lookup"><span data-stu-id="509e3-144">types</span></span>|<span data-ttu-id="509e3-145">String collection</span><span class="sxs-lookup"><span data-stu-id="509e3-145">String collection</span></span>| <span data-ttu-id="509e3-146">指定要搜索的资源集合集的资源类型集合。</span><span class="sxs-lookup"><span data-stu-id="509e3-146">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="509e3-147">如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型。</span><span class="sxs-lookup"><span data-stu-id="509e3-147">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="509e3-148">可以在该集合中指定派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) 的任何对象，例如：[user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) 等。</span><span class="sxs-lookup"><span data-stu-id="509e3-148">Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-v1.0), [group](/graph/api/resources/group?view=graph-rest-v1.0), [device](/graph/api/resources/device?view=graph-rest-v1.0), and so on.</span></span> <span data-ttu-id="509e3-149">若要搜索对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0)。</span><span class="sxs-lookup"><span data-stu-id="509e3-149">To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/zh-CN/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0).</span></span> <span data-ttu-id="509e3-150">如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用除外。</span><span class="sxs-lookup"><span data-stu-id="509e3-150">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/zh-CN/cloud-solution-provider) partner organization.</span></span> <span data-ttu-id="509e3-151">这些值不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="509e3-151">The following values are not case sensitive:</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d89b4-152">响应</span><span class="sxs-lookup"><span data-stu-id="d89b4-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="509e3-152">响应</span><span class="sxs-lookup"><span data-stu-id="509e3-152">Response</span></span>
 
-<span data-ttu-id="d89b4-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 String 集合对象。</span><span class="sxs-lookup"><span data-stu-id="d89b4-153">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="509e3-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 String 集合对象。</span><span class="sxs-lookup"><span data-stu-id="509e3-153">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d89b4-154">示例</span><span class="sxs-lookup"><span data-stu-id="d89b4-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="509e3-154">示例</span><span class="sxs-lookup"><span data-stu-id="509e3-154">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d89b4-155">请求</span><span class="sxs-lookup"><span data-stu-id="d89b4-155">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="509e3-155">请求</span><span class="sxs-lookup"><span data-stu-id="509e3-155">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d89b4-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="d89b4-156">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="509e3-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="509e3-156">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getById"
@@ -86,28 +86,28 @@ Content-type: application/json
     "types":["user"]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d89b4-157">C#</span><span class="sxs-lookup"><span data-stu-id="d89b4-157">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="509e3-157">C#</span><span class="sxs-lookup"><span data-stu-id="509e3-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getbyid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d89b4-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d89b4-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="509e3-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="509e3-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getbyid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d89b4-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d89b4-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="509e3-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="509e3-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getbyid-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="d89b4-160">Java</span><span class="sxs-lookup"><span data-stu-id="d89b4-160">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="509e3-160">Java</span><span class="sxs-lookup"><span data-stu-id="509e3-160">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getbyid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="d89b4-161">响应</span><span class="sxs-lookup"><span data-stu-id="d89b4-161">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="509e3-161">响应</span><span class="sxs-lookup"><span data-stu-id="509e3-161">Response</span></span>
 
-<span data-ttu-id="d89b4-p107">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d89b4-p107">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="509e3-p107">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="509e3-p107">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
