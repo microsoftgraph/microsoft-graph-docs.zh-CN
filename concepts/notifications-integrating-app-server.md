@@ -26,7 +26,7 @@ Microsoft Graph 通知要求你的应用程序服务使用代表 (OBO) 流向用
 
 4.  标识服务返回基于 OBO 的令牌和刷新令牌。 应用程序服务可以使用此访问令牌向用户发布通知。
 
-若要详细了解 OAuth 2.0 OBO 流，请参阅[代表流中使用委派用户标识的服务到服务调用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow)。 有关此流与 Microsoft Graph 通知如何搭配使用的详细信息，请参阅[应用程序服务示例](https://aka.ms/gnsample-appservice)。
+若要详细了解 OAuth 2.0 OBO 流，请参阅[代表流中使用委派用户标识的服务到服务调用](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow)。 有关此流与 Microsoft Graph 通知如何搭配使用的详细信息，请参阅[应用程序服务示例](https://aka.ms/gnsample-appservice)。
 
 > [!NOTE]
 > Microsoft Graph 通知目前使用带有未来计划的 OBO 身份验证流，以此进一步简化此身份验证，并消除维护访问令牌和刷新令牌的需要。

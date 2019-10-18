@@ -34,7 +34,7 @@ ms.locfileid: "34063280"
 1. 应用程序逻辑。 此步骤可捕获用于触发向用户发布通知的事件。 这是特定于应用的逻辑，它可以是 Microsoft Graph 中的事件或其他内容的数据更新（例如新的日历事件或任务分配），也可以是应用服务希望向用户通知的其他内容。
 2. 应用服务器通过 Microsoft Graph 通知 API 向目标用户发布通知。 有关详细信息，请参阅[服务器端集成](notifications-integrating-app-server.md)。
 3. 在收到包含新通知的 Web 请求后，Microsoft Graph 通知会在此应用和此用户的云中安全地保留通知内容。
-4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](https://docs.microsoft.com/zh-CN/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
+4. 对于订阅接收此用户通知的每个应用客户端实例，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，应用程序是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
 5. 由传入的推送通知向应用程序发出信号后，它会要求 SDK 获取用户通知存储区中的更改。 
 6. SDK 将与 Microsoft Graph 中的用户通知存储区建立安全且合规的连接。
 7. SDK 将获取数据更改 - 在本例中为新通知内容。 
@@ -57,7 +57,7 @@ ms.locfileid: "34063280"
 2. 调用客户端 SDK 以更新或删除通知的应用。 目前，我们公布了两种与状态更改相关的属性 - **userActionState** 和 **readState**，但是，应用程序可以定义这些状态以及何时需要更新它们。 例如，当用户消除通知弹出窗口时，你可以将 **userActionState** 更新为“已消除”。 当用户单击通知弹出窗口并启动应用以使用相应的应用内容时，你可以将 **userActionState** 更新为“已激活”和并将 **readState** 更新为“已读”。 
 3. 调用相应的 API 以更新或删除通知后，SDK 将调用云中的用户通知存储区，以将此更改扇出至同一登录用户的其他应用客户端实例。 
 4. 从客户端接收更新/删除请求时，Microsoft Graph 通知将更新通知存储区，并标识已订阅此更改的其他应用客户端实例。
-5. 对于每个应用客户端订阅，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，它是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](https://docs.microsoft.com/zh-CN/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
+5. 对于每个应用客户端订阅，Microsoft Graph 通知会通过操作系统提供的本机推送服务发送信号以通知应用客户端。 在这种情况下，它是 Windows 上的 UWP 应用，它使用“[WNS 推送原始通知](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview)”来发送信号。 
 6. 由传入的推送通知向应用程序发出信号后，它会要求 SDK 获取用户通知存储区中的更改。 
 7. SDK 将与 Microsoft Graph 中的用户通知存储区建立安全且合规的连接。
 8. SDK 获取数据更改 - 在这种情况下，更改为通知状态更新或通知删除。 
@@ -88,8 +88,8 @@ ms.locfileid: "34063280"
 
 有关在 UWP 应用中包含和使用 NuGet 程序包的更多详细信息，请参阅：
 
-* [使用来自 nuget.org 的程序包](https://docs.microsoft.com/zh-CN/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* [快速入门：在 Visual Studio 中安装和使用程序包](https://docs.microsoft.com/zh-CN/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [使用来自 nuget.org 的程序包](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [快速入门：在 Visual Studio 中安装和使用程序包](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>初始化连接设备平台
@@ -111,7 +111,7 @@ platform.Start();
 
 SDK 发起的所有 Web 调用（包括检索新传入通知的内容、更新通知状态等）都会读取或写入用户的数据，因此始终需要有效的访问令牌。 SDK 要求你处理以下事件 - 在请求访问令牌或访问令牌失效时调用 - 以确保在初始化平台后正确处理用户的访问令牌。 
 
-#### <a name="accountmanageraccesstokenrequestedasync"></a>AccountManager_AccessTokenRequestedAsync
+#### <a name="accountmanager_accesstokenrequestedasync"></a>AccountManager_AccessTokenRequestedAsync
 
 有关完整实施，请参阅 [Windows 应用示例](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs)。 
 
@@ -135,7 +135,7 @@ private async void AccountManager_AccessTokenRequestedAsync(ConnectedDevicesAcco
 }
 ```
 
-#### <a name="accountmanageraccesstokeninvalidated"></a>AccountManager_AccessTokenInvalidated
+#### <a name="accountmanager_accesstokeninvalidated"></a>AccountManager_AccessTokenInvalidated
 
 有关完整实施，请参阅 [Windows 应用示例](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs)。 
 
@@ -152,7 +152,7 @@ Microsoft Graph 通知使用 WNS（Windows 上的本机推送平台）向客户�
 
 因此，需要一个允许原始推送通知成功通过的有效 WNS 通道。 以下事件回调负责处理 WNS 推送通道过期。 
 
-#### <a name="notificationregistrationmanagernotificationregistrationstatechanged"></a>NotificationRegistrationManager_NotificationRegistrationStateChanged
+#### <a name="notificationregistrationmanager_notificationregistrationstatechanged"></a>NotificationRegistrationManager_NotificationRegistrationStateChanged
 
 有关完整实施，请参阅 [Windows 应用示例](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs)。 
 
@@ -277,6 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>另请参阅
 
-- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-windows/)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-windows/)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适用于 Windows UWP 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

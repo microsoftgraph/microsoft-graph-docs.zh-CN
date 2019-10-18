@@ -90,7 +90,7 @@ target 'iOSSample' do
 
 客户端 SDK 构建在称为“连接设备平台”的基础结构之上。 在使用任何功能之前，必须在你的应用中初始化该平台。 应该通过 **AppDelegate** 方法执行初始化步骤，因为在通知方案发生之前必须执行这些步骤。
 
-你必须通过实例化 [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/zh-CN/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) 类来构建并初始化该平台。 在执行此操作之前，请确保挂接事件处理程序，如图所示，因为在启动平台后，事件可能会开始触发。  
+你必须通过实例化 [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) 类来构建并初始化该平台。 在执行此操作之前，请确保挂接事件处理程序，如图所示，因为在启动平台后，事件可能会开始触发。  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -251,6 +251,6 @@ SDK 成功提取数据更改之后，将会调用事件回调且应用客户端�
 
 ## <a name="see-also"></a>另请参阅
 
-- [API 参考](https://docs.microsoft.com/zh-CN/windows/project-rome/notifications/api-reference-for-ios/)，以获取与 SDK 中的通知功能相关的整套 API。 
+- [API 参考](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-ios/)，以获取与 SDK 中的通知功能相关的整套 API。 
 - 适合于 Android 应用的[客户端示例](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications)。
 - 适合于发布通知的[应用服务器示例](notifications-integrating-app-server.md)。 

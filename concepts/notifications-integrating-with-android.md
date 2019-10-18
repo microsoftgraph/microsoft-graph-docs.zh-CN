@@ -116,7 +116,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 客户端 SDK 构建在称为“连接设备平台”的基础结构之上。 在使用任何功能之前，必须在你的应用中初始化该平台。 应该通过主类 **OnCreate** 方法执行初始化步骤，因为在通知方案发生之前必须执行这些步骤。
 
-你必须通过实例化 [**ConnectedDevicesPlatform**](https://docs.microsoft.com/zh-CN/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) 类来构建并初始化该平台。 执行此操作之前，请确保连接事件处理程序，因为启动平台之后，可能会开始触发事件。 
+你必须通过实例化 [**ConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) 类来构建并初始化该平台。 执行此操作之前，请确保连接事件处理程序，因为启动平台之后，可能会开始触发事件。 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);
