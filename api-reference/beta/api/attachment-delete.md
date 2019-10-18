@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: f3e4a06e86ef5da90851a84055e3162ae475129f
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 14d012fbd33ce0ae29c700821822974fc0f5b316
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622556"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37581222"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -22,10 +22,10 @@ ms.locfileid: "36622556"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件: Mail. ReadWrite
-* 如果访问事件中的附件: 日历. 读写
-* 如果访问 Outlook 任务中的附件: Tasks. ReadWrite
-* 如果访问组帖子中的附件: Group. ReadWrite. All
+* 如果访问邮件中的附件： Mail. ReadWrite
+* 如果访问事件中的附件：日历. 读写
+* 如果访问 Outlook 任务中的附件： Tasks. ReadWrite
+* 如果访问组帖子中的附件： Group. ReadWrite. All
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -69,8 +69,8 @@ DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-
-Attachments for a [message](../resources/message.md) in a user's mailbox.
+```
+用户邮箱中的 [邮件](../resources/message.md) 附件。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -129,7 +129,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 下面的示例展示了用于删除事件的附件的请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -146,7 +146,7 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
