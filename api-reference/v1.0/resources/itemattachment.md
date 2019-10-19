@@ -5,16 +5,16 @@ localization_priority: Priority
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 7df14ea5d6611cb3771aeb23250c1e65fb6e60a4
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 554a1cd2e0f6059cf9213f1f19d756349ef000fc
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484357"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37036359"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
-附加到另一个事件、邮件或帖子的联系人、事件或邮件。  
+附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的联系人、事件或邮件。  
 
 派生自 [附件](attachment.md)。
 
@@ -22,7 +22,7 @@ ms.locfileid: "36484357"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性和关系。|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性、关系或原始内容。|
 |[删除](../api/attachment-delete.md) | 无 |删除 itemAttachment 对象。 |
 
 ## <a name="properties"></a>属性
