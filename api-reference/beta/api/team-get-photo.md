@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 69bb246199ab38d3a17fc5ce30dce6f011f87b0a
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: ab94922ed34b01be43a7776f017341a2b47f474d
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418340"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598231"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 
@@ -33,9 +33,9 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
