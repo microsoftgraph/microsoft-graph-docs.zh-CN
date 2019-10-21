@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 66bc08d3692cc303b029fe5ae99d54064c55d76b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3594cd441db31522cf5338f4a8365548132b05ed
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538817"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37581243"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -24,6 +24,7 @@ ms.locfileid: "37538817"
 |:----------------|:------------|:-----------------------------------------|
 | 添加项 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **securityIdentifier** 属性。 |
 | 添加 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **mdmAppId** 属性。 |
+| 添加 | Beta | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-beta) 实体。 |
 | 添加 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0)。 |
 | 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0)。 |
 | 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-v1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
@@ -272,8 +273,7 @@ ms.locfileid: "37538817"
 |添加项|beta|向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 添加了 **energySaverOnBatteryThresholdPercentage**、**energySaverPluggedInThresholdPercentage**、**powerLidCloseActionOnBattery**、**powerLidCloseActionPluggedIn**、**powerButtonActionOnBattery**、**powerButtonActionPluggedIn**、**powerSleepButtonActionOnBattery****powerSleepButtonActionPluggedIn**、**powerHybridSleepOnBattery** 和 **powerHybridSleepPluggedIn** 属性|
 |添加项|beta|向 [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) 实体添加了 **deadlineForFeatureUpdatesInDays**、**deadlineForQualityUpdatesInDays**、**deadlineGracePeriodInDays** 和 **postponeRebootUntilAfterDeadline** 属性|
 |添加项|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **userExperienceAnalyticsOverview**、**userExperienceAnalyticsBaselines** 和 **userExperienceAnalyticsCategories** 导航属性|
-|删除|beta|从 [windowsManagementApp](/graph/api/resources/intune-devices-windowsmanagementapp?view=graph-rest-beta) 中删除了 **healthSummary** 导航属性|
-|添加项|beta|向 [adminConsent](/graph/api/resources/intune-devices-adminconsent?view=graph-rest-beta) 复杂类型添加了 **shareUserExperienceAnalyticsData** 属性|
+|删除|beta|从 [windowsManagementApp](/graph/api/resources/intune-devices-windowsmanagementapp?view=graph-rest-beta) 中删除了 **healthSummary** 导航属性||添加项|beta|向 [adminConsent](/graph/api/resources/intune-devices-adminconsent?view=graph-rest-beta) 复杂类型添加了 **shareUserExperienceAnalyticsData** 属性|
 |添加项|beta|向 [hardwareInformation](/graph/api/resources/intune-devices-hardwareinformation?view=graph-rest-beta) 复杂类型添加了 **osBuildNumber** 属性|
 |添加项|beta|向 [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta) 复杂类型添加了 **isRemoveDeviceDisabled** 和 **isFactoryResetDisabled** 属性|
 |添加项|beta|向 [iosLobAppAssignmentSettings](/graph/api/resources/intune-apps-ioslobappassignmentsettings?view=graph-rest-beta) 复杂类型添加了 **uninstallOnDeviceRemoval** 属性|
@@ -320,11 +320,10 @@ ms.locfileid: "37538817"
 | 添加项 | Beta | 添加了[组](/graph/api/resources/group?view=graph-rest-beta)资源的 [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta) 操作。 |
 | 添加项 | Beta | 添加了 [servicePrincipal](/graph/api/resources/serviceprinciple?view=graph-rest-beta) 资源的 [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) 操作。 |
 | 添加项 | Beta | 添加了[用户](/graph/api/resources/user?view=graph-rest-beta)资源的 [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta) 操作。 |
-|添加项  | Beta | 添加了[用于读取组织联系人](permissions-reference.md#organizational-contact-permissions)的委派和应用程序权限：OrgContact.Read.All |
+| 添加项 | Beta | 添加了[用于读取组织联系人](permissions-reference.md#organizational-contact-permissions)的委派和应用程序权限：OrgContact.Read.All |
 | Addition | beta | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)。 |
 | 添加项 | beta | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)。 |
 | Addition | beta | 在 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
-
 
 ### <a name="reports"></a>报告
 
@@ -1239,7 +1238,7 @@ ms.locfileid: "37538817"
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|v1.0|在 [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-apps-manageddevicemobileappconfiguration-assign?view=graph-rest-1.0) 操作 |
-|Addition|beta|添加了新实体：<br/>[officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta)<br/>[officeClientConfigurationAssignment](/graph/api/resources/intune-cirrus-officeclientconfigurationassignment?view=graph-rest-beta)<br/>[officeConfiguration](/graph/api/resources/intune-cirrus-officeconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientSecurityConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientsecurityconfiguration?view=graph-rest-beta)<br/>|
+|添加|beta|添加了新实体：<br/>[officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta)<br/>[officeClientConfigurationAssignment](/graph/api/resources/intune-cirrus-officeclientconfigurationassignment?view=graph-rest-beta)<br/>[officeConfiguration](/graph/api/resources/intune-cirrus-officeconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientSecurityConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientsecurityconfiguration?view=graph-rest-beta)<br/>|
 |添加项|beta|添加了新复杂类型：<br/>[officeClientCheckinStatus](/graph/api/resources/intune-cirrus-officeclientcheckinstatus?view=graph-rest-beta)<br/>[officeConfigurationAssignmentTarget](/graph/api/resources/intune-cirrus-officeconfigurationassignmenttarget?view=graph-rest-beta)<br/>[officeConfigurationGroupAssignmentTarget](/graph/api/resources/intune-cirrus-officeconfigurationgroupassignmenttarget?view=graph-rest-beta)<br/>[officeUserCheckinSummary](/graph/api/resources/intune-cirrus-officeusercheckinsummary?view=graph-rest-beta)<br/>|
 |添加项|beta|在 [officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-cirrus-officeclientconfiguration-assign?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta) 集合上添加了 **updatePrioritie** 操作 |
@@ -2624,7 +2623,7 @@ ms.locfileid: "37538817"
 | 添加项        | beta        | 向 [Site][Site-beta] 资源添加了 **contentTypes** 关系。 |
 | 添加项        | beta        | 向 [BooleanColumn][BooleanColumn-beta] 类型添加了 **outputType** 属性。 |
 | 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
-| 添加项        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
+| 添加        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
 | 添加        | beta        | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
 | 更改          | beta        | 在 [LookupColumn][LookupColumn-beta] 复杂类型上将 **allowMultipleValue** 属性重命名为 **allowMultipleValues**。 |
 | 更改          | beta        | 在 [PersonOrGroupColumn][PersonOrGroupColumn-beta] 复杂类型上将 **chooseFrom** 属性重命名为 **chooseFromType**。 |
@@ -3449,7 +3448,7 @@ ms.locfileid: "37538817"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 目前以下资源支持[扩展属性](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0)：message、mailFolder、event、calendar、contact、contactFolder、group event、group calendar、group post。 |
+| 添加        | v1.0        | 目前以下资源支持[扩展属性](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0)：message、mailFolder、event、calendar、contact、contactFolder、group event、group calendar、group post。 |
 
 ### <a name="groups"></a>组
 
