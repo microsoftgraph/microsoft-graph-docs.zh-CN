@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
 ms.openlocfilehash: da39adb0a1a25d0ea83844a20745541107b32563
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36420803"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
@@ -46,11 +46,11 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id={id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>示例 1: 从组的 "拒绝的发件人" 列表中删除用户。
+### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>示例1：从组的 "拒绝的发件人" 列表中删除用户。
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_user_from_rejectedsenderslist_of_group"
@@ -66,7 +66,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-user-from-rejectedsenderslist-of-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-user-from-rejectedsenderslist-of-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -82,10 +82,10 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>示例 2: 从组的 "拒绝-发件人" 列表中删除组。
+### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>示例2：从组的 "拒绝-发件人" 列表中删除组。
 #### <a name="request"></a>请求
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_group_from_rejectedsenderslist_of_group"
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-group-from-rejectedsenderslist-of-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-group-from-rejectedsenderslist-of-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

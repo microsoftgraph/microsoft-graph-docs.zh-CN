@@ -6,10 +6,10 @@ author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
 ms.openlocfilehash: fa311ec350683b8e72d2c0f049077e340ef15a2c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36413496"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
@@ -42,8 +42,8 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。 每个条目的键是任务分配到的用户之一, 值是 order 提示。 每个值的格式在 [使用 Planner 中的排序提示] (.。/resources/planner_order_hint_format.md).|
-|unassignedOrderHint|字符串|在任务未分配给任何人时, 或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示, 用于在任务板的 "分配给" 视图中对任务进行排序的提示值。 格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。 每个条目的键是任务分配到的用户之一，值是 order 提示。 每个值的格式在 [使用 Planner 中的排序提示] （.。/resources/planner_order_hint_format.md).|
+|unassignedOrderHint|字符串|在任务未分配给任何人时，或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示，用于在任务板的 "分配给" 视图中对任务进行排序的提示值。 格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
 
 ## <a name="response"></a>响应
 
@@ -55,7 +55,7 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannerassignedtotaskboardtaskformat"
@@ -80,7 +80,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerassignedtotaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerassignedtotaskboardtaskformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
 ms.openlocfilehash: 425b3f8c3fa744c33defc7790ede0871ff60fef2
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36633536"
 ---
 # <a name="add-attachment"></a>添加附件
@@ -51,22 +51,22 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供包含**post**参数的 JSON 对象。
+在请求正文中，提供包含**post**参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|帖子|[帖子](../resources/post.md)|要答复的新帖子, 其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。|
+|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-include-a-file-attachment"></a>示例 1: 包含文件附件
+### <a name="example-1-include-a-file-attachment"></a>示例1：包含文件附件
 #### <a name="request"></a>请求
 下面的示例展示了在创建帖子时将文件作为附件包含的一个请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_with_post",
@@ -98,7 +98,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,7 +114,7 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>示例 2: 包含项目附件
+### <a name="example-2-include-an-item-attachment"></a>示例2：包含项目附件
 
 #### <a name="request"></a>请求
 下面的示例展示了在创建帖子时将事件作为附件包含的一个请求。
@@ -169,13 +169,13 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>示例 3: 包含引用附件
+### <a name="example-3-include-a-reference-attachment"></a>示例3：包含引用附件
 
 #### <a name="request"></a>请求
 下面的示例展示了在创建帖子时包含参考附件的请求。
 附件指向 OneDrive 上的文件夹。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_with_post",
@@ -211,7 +211,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

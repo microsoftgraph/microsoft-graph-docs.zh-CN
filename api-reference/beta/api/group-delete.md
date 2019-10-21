@@ -1,15 +1,15 @@
 ---
 title: 删除组-Microsoft Graph API
-description: 介绍 Microsoft Graph API (REST) 的组资源 (实体) 的 delete 方法。
+description: 介绍 Microsoft Graph API （REST）的组资源（实体）的 delete 方法。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
 ms.openlocfilehash: 7d0172909e13e8a0315f72b13bed353f2033507e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36419602"
 ---
 # <a name="delete-group"></a>删除组
@@ -18,7 +18,7 @@ ms.locfileid: "36419602"
 
 删除组。  
 
-删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
+删除后，Office 365 组将移至临时容器，并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ DELETE /groups/{id}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_group"
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

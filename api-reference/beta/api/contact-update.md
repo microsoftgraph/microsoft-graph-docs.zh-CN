@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: cc60a830771482d4233c879707e62013d74c838a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36418010"
 ---
 # <a name="update-contact"></a>更新联系人
@@ -59,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |categories|String|与联系人关联的类别。|
 |children|String||
 |companyName|String|联系人所在公司的名称。|
-|department|String|联系人所在的部门。|
+|部门|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在更新操作中将其作为 displayName。|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md)集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
@@ -75,8 +75,8 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](../resources/phone.md) collection |与联系人关联的电话号码, 例如, 家庭电话、移动电话和商务电话。 |
-|postalAddresses |[physicalAddress](../resources/physicaladdress.md)集合 |与联系人关联的地址, 例如家庭地址和公司地址。 |
+|phones |[phone](../resources/phone.md) collection |与联系人关联的电话号码，例如，家庭电话、移动电话和商务电话。 |
+|postalAddresses |[physicalAddress](../resources/physicaladdress.md)集合 |与联系人关联的地址，例如家庭地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
@@ -87,16 +87,16 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |yomiGivenName|字符串|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
-由于**联系人**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**联系人**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于**联系人**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**联系人**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[contact](../resources/contact.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[contact](../resources/contact.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面的示例更新指定联系人的个人电子邮件地址。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_contact"
@@ -129,7 +129,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
