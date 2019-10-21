@@ -4,12 +4,12 @@ description: 借助不可变标识符，应用程序可为 Outlook 项获取在�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a2cdd301bfa9949d750ac3eb0813c958ccc7161d
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: ca07e359f710d8538fe51f221895eca1beb08ec2
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37439939"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
@@ -29,8 +29,9 @@ Prefer: IdType="ImmutableId"
 
 只要项一直在同一邮箱中，它的不可变 ID 就不变。 也就是说，即使项移到邮箱中的其他文件夹中，不可变 ID 也不变。 不过，不可变 ID 在以下情况下会变：
 
-- 用户将项移到存档邮箱中
-- 用户先将项导出（到 PST 等，作为 MSG 文件），再将它重新导入邮箱
+- 用户将该项移到存档邮箱中。
+- 用户先将该项导出（到 PST 等，作为 MSG 文件），再将它重新导入邮箱。
+- 用户发送草稿邮件。 “已发送邮件”中副本的不可变 ID 与草稿邮件的不可变 ID 并不是同一 ID。
 
 ## <a name="items-that-support-immutable-id"></a>支持不可变 ID 的项
 
