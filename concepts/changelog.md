@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 3594cd441db31522cf5338f4a8365548132b05ed
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 2250f2afd44f37e1833a7dad5f49d37cd6bae965
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37581243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598252"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -118,7 +118,7 @@ ms.locfileid: "37581243"
 ### <a name="users"></a>用户
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项 | beta | 添加了 [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta)，它可用于重新处理[用户](/graph/api/resources/mailboxsettings?view=graph-rest-beta)的所有基于组的许可证分配。 |
+| 添加项 | beta | 添加了 [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta)，它可用于重新处理[用户](/graph/api/resources/mailboxsettings?view=graph-rest-beta)的所有基于组的许可证分配。 |
 
 ### <a name="users--outlook-settings"></a>用户|Outlook 设置
 
@@ -1238,7 +1238,7 @@ ms.locfileid: "37581243"
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|v1.0|在 [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-apps-manageddevicemobileappconfiguration-assign?view=graph-rest-1.0) 操作 |
-|添加|beta|添加了新实体：<br/>[officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta)<br/>[officeClientConfigurationAssignment](/graph/api/resources/intune-cirrus-officeclientconfigurationassignment?view=graph-rest-beta)<br/>[officeConfiguration](/graph/api/resources/intune-cirrus-officeconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientSecurityConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientsecurityconfiguration?view=graph-rest-beta)<br/>|
+|添加项|beta|添加了新实体：<br/>[officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta)<br/>[officeClientConfigurationAssignment](/graph/api/resources/intune-cirrus-officeclientconfigurationassignment?view=graph-rest-beta)<br/>[officeConfiguration](/graph/api/resources/intune-cirrus-officeconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientconfiguration?view=graph-rest-beta)<br/>[windowsOfficeClientSecurityConfiguration](/graph/api/resources/intune-cirrus-windowsofficeclientsecurityconfiguration?view=graph-rest-beta)<br/>|
 |添加项|beta|添加了新复杂类型：<br/>[officeClientCheckinStatus](/graph/api/resources/intune-cirrus-officeclientcheckinstatus?view=graph-rest-beta)<br/>[officeConfigurationAssignmentTarget](/graph/api/resources/intune-cirrus-officeconfigurationassignmenttarget?view=graph-rest-beta)<br/>[officeConfigurationGroupAssignmentTarget](/graph/api/resources/intune-cirrus-officeconfigurationgroupassignmenttarget?view=graph-rest-beta)<br/>[officeUserCheckinSummary](/graph/api/resources/intune-cirrus-officeusercheckinsummary?view=graph-rest-beta)<br/>|
 |添加项|beta|在 [officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-cirrus-officeclientconfiguration-assign?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [officeClientConfiguration](/graph/api/resources/intune-cirrus-officeclientconfiguration?view=graph-rest-beta) 集合上添加了 **updatePrioritie** 操作 |
@@ -2623,7 +2623,7 @@ ms.locfileid: "37581243"
 | 添加项        | beta        | 向 [Site][Site-beta] 资源添加了 **contentTypes** 关系。 |
 | 添加项        | beta        | 向 [BooleanColumn][BooleanColumn-beta] 类型添加了 **outputType** 属性。 |
 | 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
-| 添加        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
+| 添加项        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
 | 添加        | beta        | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
 | 更改          | beta        | 在 [LookupColumn][LookupColumn-beta] 复杂类型上将 **allowMultipleValue** 属性重命名为 **allowMultipleValues**。 |
 | 更改          | beta        | 在 [PersonOrGroupColumn][PersonOrGroupColumn-beta] 复杂类型上将 **chooseFrom** 属性重命名为 **chooseFromType**。 |
@@ -3448,7 +3448,7 @@ ms.locfileid: "37581243"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加        | v1.0        | 目前以下资源支持[扩展属性](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0)：message、mailFolder、event、calendar、contact、contactFolder、group event、group calendar、group post。 |
+| 添加项        | v1.0        | 目前以下资源支持[扩展属性](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0)：message、mailFolder、event、calendar、contact、contactFolder、group event、group calendar、group post。 |
 
 ### <a name="groups"></a>组
 
