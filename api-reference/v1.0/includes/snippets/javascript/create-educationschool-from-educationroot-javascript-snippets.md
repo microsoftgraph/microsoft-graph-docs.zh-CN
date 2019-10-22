@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d968d04c0a552b4b3af4e70071b0954ecb7cd158
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 334da94eb53e080a948d278eaaf2070e0aedb895
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731100"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37553956"
 ---
 ```javascript
 
@@ -34,11 +34,10 @@ const educationSchool = {
     street: "12345 Main St."
   },
   externalId: "10002",
-  fax: "+1 (253) 555-0101",
   phone: "+1 (253) 555-0102",
 };
 
 let res = await client.api('/education/schools')
-    .post({educationSchool : educationSchool});
+    .post(educationSchool);
 
 ```

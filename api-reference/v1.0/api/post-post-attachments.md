@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1a7024b7de3e57cf6cc04ae30034a5df08b352b1
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 9cef56cbe87db5923accb362804434b1501c32d1
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622661"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36633767"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -49,22 +49,22 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中, 提供包含**post**参数的 JSON 对象。
+在请求正文中，提供包含**post**参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|帖子|[帖子](../resources/post.md)|要答复的新帖子, 其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。|
+|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。
 
 ## <a name="examples"></a>示例
-### <a name="example-1-include-a-file-attachment"></a>示例 1: 包含文件附件
+### <a name="example-1-include-a-file-attachment"></a>示例1：包含文件附件
 #### <a name="request"></a>请求
 下面的示例展示了在创建帖子时将文件作为附件包含的一个请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_with_post",
@@ -89,19 +89,19 @@ Content-type: application/json
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-post-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-post-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-post-objc-snippets.md)]
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-post-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -116,7 +116,7 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>示例 2: 包含项目附件
+### <a name="example-2-include-an-item-attachment"></a>示例2：包含项目附件
 
 #### <a name="request"></a>请求
 下面的示例展示了在创建帖子时将事件作为附件包含的一个请求。
@@ -171,12 +171,14 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>示例 3: 包含引用附件
+### <a name="example-3-include-a-reference-attachment"></a>示例3：包含引用附件
 
 #### <a name="request"></a>请求
 下面的示例展示了在创建帖子时包含参考附件的请求。
 附件指向 OneDrive 上的文件夹。
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_with_post",
@@ -203,6 +205,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-with-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-with-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-with-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 下面是一个响应示例。

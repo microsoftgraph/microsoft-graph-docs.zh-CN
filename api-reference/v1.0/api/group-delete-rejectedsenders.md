@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 892be0dcdf3bc01751622a58ad351dccb52526c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83615c5148e1cf90e59c0e258fa5f5519f35e97c
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016423"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36337473"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 从 "拒绝的发件人" 列表中删除用户或组。
@@ -47,7 +47,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_rejectedSender_from_group"
@@ -59,11 +59,11 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-rejectedsender-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-rejectedsender-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-rejectedsender-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

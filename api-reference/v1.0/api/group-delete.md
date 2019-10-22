@@ -1,22 +1,22 @@
 ---
 title: 删除组-Microsoft Graph API
-description: 介绍 Microsoft Graph API (REST) 的组资源 (实体) 的 delete 方法。
+description: 介绍 Microsoft Graph API （REST）的组资源（实体）的 delete 方法。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 95638630fd95220760cce6766edbef5dc84cb544
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14181c3cd79f275542042c9be301185ba31b2364
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014968"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36337431"
 ---
 # <a name="delete-group"></a>删除组
 
 删除组。  
 
-删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
+删除后，Office 365 组将移至临时容器，并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +55,7 @@ DELETE /groups/{id}
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_group"
@@ -67,11 +67,11 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

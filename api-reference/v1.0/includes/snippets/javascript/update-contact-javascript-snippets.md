@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 16c1afc802e1b96ee7fa595fae16aa5f562b38d8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ffcccf2269a01b6d63e87bbdff4f91a14a9e402c
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741019"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36636879"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const contact = {
 };
 
 let res = await client.api('/me/contacts/{id}')
-    .update({contact : contact});
+    .update(contact);
 
 ```
