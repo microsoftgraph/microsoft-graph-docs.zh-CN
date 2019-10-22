@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f7320e477d1565334ecd52ff5c2c13f655ff8cab
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f3f66e72ab23f97265a7f15d00d4e206be25a345
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887803"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37553952"
 ---
 ```java
 
@@ -30,7 +30,6 @@ address.state = "CA";
 address.street = "12345 Main St.";
 educationSchool.address = address;
 educationSchool.externalId = "10002";
-educationSchool.fax = "+1 (253) 555-0101";
 educationSchool.phone = "+1 (253) 555-0102";
 
 graphClient.education().schools()

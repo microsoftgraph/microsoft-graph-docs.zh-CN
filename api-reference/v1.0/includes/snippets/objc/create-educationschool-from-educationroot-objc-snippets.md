@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d5c0db008395fccabe8b37b4d583f65e53a26c34
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 221b618d9221e1f50645f8f82d817cceb0873ec4
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731099"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37553955"
 ---
 ```objc
 
@@ -35,7 +35,6 @@ MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
 [address setStreet:@"12345 Main St."];
 [educationSchool setAddress:address];
 [educationSchool setExternalId:@"10002"];
-[educationSchool setFax:@"+1 (253) 555-0101"];
 [educationSchool setPhone:@"+1 (253) 555-0102"];
 
 NSError *error;

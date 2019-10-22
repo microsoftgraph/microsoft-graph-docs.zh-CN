@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 63d34903d1a0b0d54f7fcdde0dbcd7a5871ff7e6
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8026b8e22548d2e9114c1fbf00f40f389ab04ce8
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731534"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36636806"
 ---
 ```javascript
 
@@ -22,6 +22,6 @@ const plannerBucket = {
 };
 
 let res = await client.api('/planner/buckets')
-    .post({plannerBucket : plannerBucket});
+    .post(plannerBucket);
 
 ```

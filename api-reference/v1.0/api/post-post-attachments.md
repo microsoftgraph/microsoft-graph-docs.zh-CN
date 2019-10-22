@@ -5,66 +5,66 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1a7024b7de3e57cf6cc04ae30034a5df08b352b1
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 9cef56cbe87db5923accb362804434b1501c32d1
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622661"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36633767"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="04e4b-103">添加附件</span><span class="sxs-lookup"><span data-stu-id="04e4b-103">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="a2ca2-103">添加附件</span><span class="sxs-lookup"><span data-stu-id="a2ca2-103">Add attachment</span></span>
 
-<span data-ttu-id="04e4b-104">创建组帖子时添加[附件](../resources/attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="04e4b-104">Add an [attachment](../resources/attachment.md) when creating a group post.</span></span>
+<span data-ttu-id="a2ca2-104">创建组帖子时添加[附件](../resources/attachment.md)。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-104">Add an [attachment](../resources/attachment.md) when creating a group post.</span></span>
 
-<span data-ttu-id="04e4b-105">由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。</span><span class="sxs-lookup"><span data-stu-id="04e4b-105">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+<span data-ttu-id="a2ca2-105">由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-105">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
 
-<span data-ttu-id="04e4b-106">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="04e4b-106">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="a2ca2-106">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="a2ca2-106">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="04e4b-107">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="04e4b-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="04e4b-108">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="04e4b-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="04e4b-109">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="04e4b-109">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="a2ca2-107">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="a2ca2-108">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="a2ca2-109">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-109">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="04e4b-110">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="04e4b-110">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="a2ca2-110">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-110">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="04e4b-111">权限</span><span class="sxs-lookup"><span data-stu-id="04e4b-111">Permissions</span></span>
-<span data-ttu-id="04e4b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="04e4b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a2ca2-111">权限</span><span class="sxs-lookup"><span data-stu-id="a2ca2-111">Permissions</span></span>
+<span data-ttu-id="a2ca2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="04e4b-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="04e4b-114">Permission type</span></span>      | <span data-ttu-id="04e4b-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="04e4b-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a2ca2-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="a2ca2-114">Permission type</span></span>      | <span data-ttu-id="a2ca2-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a2ca2-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="04e4b-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="04e4b-116">Delegated (work or school account)</span></span> | <span data-ttu-id="04e4b-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04e4b-117">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="04e4b-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="04e4b-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04e4b-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="04e4b-119">Not supported.</span></span>    |
-|<span data-ttu-id="04e4b-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="04e4b-120">Application</span></span> | <span data-ttu-id="04e4b-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04e4b-121">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="a2ca2-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a2ca2-116">Delegated (work or school account)</span></span> | <span data-ttu-id="a2ca2-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a2ca2-117">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a2ca2-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a2ca2-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2ca2-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-119">Not supported.</span></span>    |
+|<span data-ttu-id="a2ca2-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="a2ca2-120">Application</span></span> | <span data-ttu-id="a2ca2-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a2ca2-121">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="04e4b-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="04e4b-122">HTTP request</span></span>
-<span data-ttu-id="04e4b-123">在组的[conversationThread](../resources/conversationthread.md)中创建[帖子](../resources/post.md)时包含附件。</span><span class="sxs-lookup"><span data-stu-id="04e4b-123">Include an attachment when creating a [post](../resources/post.md) in a [conversationThread](../resources/conversationthread.md) of a group.</span></span> <span data-ttu-id="04e4b-124">指定父[对话](../resources/conversation.md)是可选的。</span><span class="sxs-lookup"><span data-stu-id="04e4b-124">Specifying the parent [conversation](../resources/conversation.md) is optional.</span></span>
+## <a name="http-request"></a><span data-ttu-id="a2ca2-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a2ca2-122">HTTP request</span></span>
+<span data-ttu-id="a2ca2-123">在组的[conversationThread](../resources/conversationthread.md)中创建[帖子](../resources/post.md)时包含附件。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-123">Include an attachment when creating a [post](../resources/post.md) in a [conversationThread](../resources/conversationthread.md) of a group.</span></span> <span data-ttu-id="a2ca2-124">指定父[对话](../resources/conversation.md)是可选的。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-124">Specifying the parent [conversation](../resources/conversation.md) is optional.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
-## <a name="request-headers"></a><span data-ttu-id="04e4b-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="04e4b-125">Request headers</span></span>
-| <span data-ttu-id="04e4b-126">标头</span><span class="sxs-lookup"><span data-stu-id="04e4b-126">Header</span></span>       | <span data-ttu-id="04e4b-127">值</span><span class="sxs-lookup"><span data-stu-id="04e4b-127">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a2ca2-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="a2ca2-125">Request headers</span></span>
+| <span data-ttu-id="a2ca2-126">标头</span><span class="sxs-lookup"><span data-stu-id="a2ca2-126">Header</span></span>       | <span data-ttu-id="a2ca2-127">值</span><span class="sxs-lookup"><span data-stu-id="a2ca2-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="04e4b-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="04e4b-128">Authorization</span></span>  | <span data-ttu-id="04e4b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="04e4b-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a2ca2-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2ca2-128">Authorization</span></span>  | <span data-ttu-id="a2ca2-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="04e4b-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="04e4b-131">Request body</span></span>
-<span data-ttu-id="04e4b-132">在请求正文中, 提供包含**post**参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="04e4b-132">In the request body, provide a JSON object that includes a **post** parameter.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a2ca2-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="a2ca2-131">Request body</span></span>
+<span data-ttu-id="a2ca2-132">在请求正文中，提供包含**post**参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-132">In the request body, provide a JSON object that includes a **post** parameter.</span></span>
 
-| <span data-ttu-id="04e4b-133">参数</span><span class="sxs-lookup"><span data-stu-id="04e4b-133">Parameter</span></span>    | <span data-ttu-id="04e4b-134">类型</span><span class="sxs-lookup"><span data-stu-id="04e4b-134">Type</span></span>   |<span data-ttu-id="04e4b-135">说明</span><span class="sxs-lookup"><span data-stu-id="04e4b-135">Description</span></span>|
+| <span data-ttu-id="a2ca2-133">参数</span><span class="sxs-lookup"><span data-stu-id="a2ca2-133">Parameter</span></span>    | <span data-ttu-id="a2ca2-134">类型</span><span class="sxs-lookup"><span data-stu-id="a2ca2-134">Type</span></span>   |<span data-ttu-id="a2ca2-135">说明</span><span class="sxs-lookup"><span data-stu-id="a2ca2-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="04e4b-136">帖子</span><span class="sxs-lookup"><span data-stu-id="04e4b-136">post</span></span>|[<span data-ttu-id="04e4b-137">帖子</span><span class="sxs-lookup"><span data-stu-id="04e4b-137">post</span></span>](../resources/post.md)|<span data-ttu-id="04e4b-138">要答复的新帖子, 其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。</span><span class="sxs-lookup"><span data-stu-id="04e4b-138">The new post that is being replied with, which includes one or more attachments in an [attachment](../resources/attachment.md) collection.</span></span>|
+|<span data-ttu-id="a2ca2-136">帖子</span><span class="sxs-lookup"><span data-stu-id="a2ca2-136">post</span></span>|[<span data-ttu-id="a2ca2-137">帖子</span><span class="sxs-lookup"><span data-stu-id="a2ca2-137">post</span></span>](../resources/post.md)|<span data-ttu-id="a2ca2-138">要答复的新帖子，其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-138">The new post that is being replied with, which includes one or more attachments in an [attachment](../resources/attachment.md) collection.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="04e4b-139">响应</span><span class="sxs-lookup"><span data-stu-id="04e4b-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a2ca2-139">响应</span><span class="sxs-lookup"><span data-stu-id="a2ca2-139">Response</span></span>
 
-<span data-ttu-id="04e4b-p104">如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。</span><span class="sxs-lookup"><span data-stu-id="04e4b-p104">If successful, this method returns `202 Accepted` response code. It does not return a response body.</span></span>
+<span data-ttu-id="a2ca2-p104">如果成功，此方法返回 `202 Accepted` 响应代码。它不返回响应正文。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-p104">If successful, this method returns `202 Accepted` response code. It does not return a response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="04e4b-142">示例</span><span class="sxs-lookup"><span data-stu-id="04e4b-142">Examples</span></span>
-### <a name="example-1-include-a-file-attachment"></a><span data-ttu-id="04e4b-143">示例 1: 包含文件附件</span><span class="sxs-lookup"><span data-stu-id="04e4b-143">Example 1: Include a file attachment</span></span>
-#### <a name="request"></a><span data-ttu-id="04e4b-144">请求</span><span class="sxs-lookup"><span data-stu-id="04e4b-144">Request</span></span>
-<span data-ttu-id="04e4b-145">下面的示例展示了在创建帖子时将文件作为附件包含的一个请求。</span><span class="sxs-lookup"><span data-stu-id="04e4b-145">Here is an example of a request that includes a file as an attachment when creating a post.</span></span>
+## <a name="examples"></a><span data-ttu-id="a2ca2-142">示例</span><span class="sxs-lookup"><span data-stu-id="a2ca2-142">Examples</span></span>
+### <a name="example-1-include-a-file-attachment"></a><span data-ttu-id="a2ca2-143">示例1：包含文件附件</span><span class="sxs-lookup"><span data-stu-id="a2ca2-143">Example 1: Include a file attachment</span></span>
+#### <a name="request"></a><span data-ttu-id="a2ca2-144">请求</span><span class="sxs-lookup"><span data-stu-id="a2ca2-144">Request</span></span>
+<span data-ttu-id="a2ca2-145">下面的示例展示了在创建帖子时将文件作为附件包含的一个请求。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-145">Here is an example of a request that includes a file as an attachment when creating a post.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="04e4b-146">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="04e4b-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a2ca2-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="a2ca2-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_with_post",
@@ -88,26 +88,26 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="04e4b-147">C#</span><span class="sxs-lookup"><span data-stu-id="04e4b-147">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-post-csharp-snippets.md)]
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a2ca2-147">C#</span><span class="sxs-lookup"><span data-stu-id="a2ca2-147">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="04e4b-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04e4b-148">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-post-javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a2ca2-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a2ca2-148">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="04e4b-149">目标-C</span><span class="sxs-lookup"><span data-stu-id="04e4b-149">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-post-objc-snippets.md)]
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a2ca2-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a2ca2-149">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="04e4b-150">Java</span><span class="sxs-lookup"><span data-stu-id="04e4b-150">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-post-java-snippets.md)]
+# <a name="javatabjava"></a>[<span data-ttu-id="a2ca2-150">Java</span><span class="sxs-lookup"><span data-stu-id="a2ca2-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="04e4b-151">响应</span><span class="sxs-lookup"><span data-stu-id="04e4b-151">Response</span></span>
-<span data-ttu-id="04e4b-152">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="04e4b-152">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="a2ca2-151">响应</span><span class="sxs-lookup"><span data-stu-id="a2ca2-151">Response</span></span>
+<span data-ttu-id="a2ca2-152">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-152">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_with_post"
@@ -116,10 +116,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a><span data-ttu-id="04e4b-153">示例 2: 包含项目附件</span><span class="sxs-lookup"><span data-stu-id="04e4b-153">Example 2: Include an item attachment</span></span>
+### <a name="example-2-include-an-item-attachment"></a><span data-ttu-id="a2ca2-153">示例2：包含项目附件</span><span class="sxs-lookup"><span data-stu-id="a2ca2-153">Example 2: Include an item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="04e4b-154">请求</span><span class="sxs-lookup"><span data-stu-id="04e4b-154">Request</span></span>
-<span data-ttu-id="04e4b-155">下面的示例展示了在创建帖子时将事件作为附件包含的一个请求。</span><span class="sxs-lookup"><span data-stu-id="04e4b-155">Here is an example of a request that includes an event as an attachment when creating a post.</span></span>
+#### <a name="request"></a><span data-ttu-id="a2ca2-154">请求</span><span class="sxs-lookup"><span data-stu-id="a2ca2-154">Request</span></span>
+<span data-ttu-id="a2ca2-155">下面的示例展示了在创建帖子时将事件作为附件包含的一个请求。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-155">Here is an example of a request that includes an event as an attachment when creating a post.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -161,8 +161,8 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="04e4b-156">响应</span><span class="sxs-lookup"><span data-stu-id="04e4b-156">Response</span></span>
-<span data-ttu-id="04e4b-157">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="04e4b-157">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="a2ca2-156">响应</span><span class="sxs-lookup"><span data-stu-id="a2ca2-156">Response</span></span>
+<span data-ttu-id="a2ca2-157">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-157">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_with_post"
@@ -171,12 +171,14 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a><span data-ttu-id="04e4b-158">示例 3: 包含引用附件</span><span class="sxs-lookup"><span data-stu-id="04e4b-158">Example 3: Include a reference attachment</span></span>
+### <a name="example-3-include-a-reference-attachment"></a><span data-ttu-id="a2ca2-158">示例3：包含引用附件</span><span class="sxs-lookup"><span data-stu-id="a2ca2-158">Example 3: Include a reference attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="04e4b-159">请求</span><span class="sxs-lookup"><span data-stu-id="04e4b-159">Request</span></span>
-<span data-ttu-id="04e4b-160">下面的示例展示了在创建帖子时包含参考附件的请求。</span><span class="sxs-lookup"><span data-stu-id="04e4b-160">Here is an example of a request that includes a reference attachment when creating a post.</span></span>
-<span data-ttu-id="04e4b-161">附件指向 OneDrive 上的文件夹。</span><span class="sxs-lookup"><span data-stu-id="04e4b-161">The attachment points to a folder on OneDrive.</span></span>
+#### <a name="request"></a><span data-ttu-id="a2ca2-159">请求</span><span class="sxs-lookup"><span data-stu-id="a2ca2-159">Request</span></span>
+<span data-ttu-id="a2ca2-160">下面的示例展示了在创建帖子时包含参考附件的请求。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-160">Here is an example of a request that includes a reference attachment when creating a post.</span></span>
+<span data-ttu-id="a2ca2-161">附件指向 OneDrive 上的文件夹。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-161">The attachment points to a folder on OneDrive.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a2ca2-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="a2ca2-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_with_post",
@@ -203,9 +205,27 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a2ca2-163">C#</span><span class="sxs-lookup"><span data-stu-id="a2ca2-163">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-with-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="04e4b-162">响应</span><span class="sxs-lookup"><span data-stu-id="04e4b-162">Response</span></span>
-<span data-ttu-id="04e4b-163">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="04e4b-163">Here is an example of the response.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a2ca2-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a2ca2-164">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-with-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a2ca2-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a2ca2-165">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-with-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="a2ca2-166">Java</span><span class="sxs-lookup"><span data-stu-id="a2ca2-166">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="a2ca2-167">响应</span><span class="sxs-lookup"><span data-stu-id="a2ca2-167">Response</span></span>
+<span data-ttu-id="a2ca2-168">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a2ca2-168">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_with_post"
