@@ -1,28 +1,28 @@
 ---
 title: onPremisesProvisioningError 资源类型
-description: 表示将本地目录同步到 Azure Active Directory 时用户和组实体的目录同步错误。
+description: 表示将本地目录同步到 Azure Active Directory 时用户组和联系人资源的目录同步错误。
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: davidmu1
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3fd16b43d35cb12e7b9c7f82dc59f940994bc1b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ccbb10bdf5dba14a01a572198dbdbbafb2534eb7
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035742"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621650"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError 资源类型
 
-表示将本地目录同步到 Azure Active Directory 时[用户](user.md)和[组](group.md)实体的目录同步错误。
+表示将本地目录同步到 Azure Active Directory 时[用户](user.md)、[组](group.md)和[orgContact](orgcontact.md)资源的目录同步错误。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|“类别”|String| 设置错误的类别。 注意: 目前, 只有一个可能的值。 可能的值: *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
+|“类别”|String| 设置错误的类别。 注意：目前，只有一个可能的值。 可能的值： *PropertyConflict* -指示属性值不是唯一的。 其他对象包含相同的属性值。 |
 |occurredDateTime|DateTimeOffset| 发生错误的日期和时间。 |
-|propertyCausingError|String| 导致错误的目录属性的名称。 当前可能的值: *UserPrincipalName*或*ProxyAddress* |
+|propertyCausingError|String| 导致错误的目录属性的名称。 当前可能的值： *UserPrincipalName*或*ProxyAddress* |
 |value|String| 导致错误的属性的值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

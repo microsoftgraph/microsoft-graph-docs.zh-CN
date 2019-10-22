@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bf54a6a949340d3d2aef9df64e3b75ce5d666d04
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cc082819183841f23038d57ec59d540126e8df10
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421909"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622487"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -18,7 +18,9 @@ ms.locfileid: "36421909"
 
 在用户的默认日历或指定日历中创建[事件](../resources/event.md)。
 
-您可以将事件的每个开始和结束时间的时区指定为其值的一部分, 因为**start**和**end**属性的类型为[datetimetimezone type](../resources/datetimetimezone.md) 。 首先[查找支持的](outlookuser-supportedtimezones.md)时区, 以确保只设置已为用户的邮箱服务器配置的时区。 
+默认情况下，在创建事件时， **allowNewTimeProposals**属性设置为 true，这意味着被邀请者可以为事件建议不同的日期/时间。 有关如何建议时间以及如何接收和接受新的时间建议的详细信息，请参阅[建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
+
+可以将事件的各开始和结束时间的时区指定为其值的一部分，因为**开始**和**结束**属性为 [dateTimeTimeZone](../resources/datetimetimezone.md) 类型。 首先[找到支持的时区](outlookuser-supportedtimezones.md)，以确保仅设置针对用户的邮箱服务器配置的时区。 
 
 发送事件时，服务器会向所有与会者发送邀请。
 
@@ -81,7 +83,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ##### <a name="request-1"></a>请求 1
 下面展示了示例请求。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -90,13 +92,12 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -117,7 +118,8 @@ Content-length: 600
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -128,13 +130,13 @@ Content-length: 600
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 ##### <a name="response-1"></a>响应 1
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
@@ -166,7 +168,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
@@ -178,6 +180,7 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -236,7 +239,7 @@ Content-length: 2197
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -302,8 +305,8 @@ Content-length: 1390
     {
       "displayName": "Home Office"
     }
-  ]
-
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -314,7 +317,7 @@ Content-length: 1390
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -364,6 +367,7 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -454,7 +458,7 @@ Content-length: 2985
 ##### <a name="request-3"></a>请求 3
 第三个示例展示了如何创建定期事件。 事件在 2017 年 9 月 4 日至年底期间每星期一的中午 12:00 点到下午 2:00 点之间发生。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -511,7 +515,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -559,6 +563,7 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"

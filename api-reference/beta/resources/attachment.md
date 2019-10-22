@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: a71d7940e6825659143e69b2af6290f0671f59ae
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: a6810ff870124a793bee40ec9df66ae7cb5eabc8
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036093"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621657"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以使用附件的形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或组[帖子](../resources/post.md)添加相关内容。
+可以使用附件的形式向用户[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或组[帖子](../resources/post.md)添加相关内容。 
+
+组日历中的事件不支持附件。
 
 **附件**是以下附件派生类型的基础资源：
 
@@ -24,7 +26,9 @@ ms.locfileid: "37036093"
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
 * 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）
 
-组日历中的事件不支持附件。
+>**注意**：由于在每个 REST 请求的总大小中目前有4mb 的限制，这通常会限制可添加到 4 mb 以下的文件或项目附件的大小。 
+>
+> 但是，如果您要附加到邮件的文件介于3MB 和150MB 之间，则可以[创建上载会话](../api/attachment-createuploadsession.md)并以迭代方式上载要附加的文件的范围。 有关示例，请参阅[将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments)。
 
 ## <a name="methods"></a>方法
 
@@ -33,11 +37,12 @@ ms.locfileid: "37036093"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性、关系或原始内容。|
-|[向用户事件添加附件](../api/event-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件。|
-|[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
+|[将附件添加到用户事件中](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件中。|
+|[将附件添加到邮件中](../api/message-post-attachments.md) | [attachment](attachment.md) |将文件、项目或将附件链接添加到邮件中。 如果附加文件，文件大小必须小于4MB。|
+|[创建会话以附加大型文件](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的**邮件**。 文件大小必须介于3MB 和150MB 之间。|
 |[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取用户日历中的事件附件的列表。 |
+|[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取用户日历中事件的附件列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
 |[列出 Outlook 任务的附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md) 集合 | 获取 Outlook 任务的附件列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
@@ -50,11 +55,11 @@ ms.locfileid: "37036093"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME 类型。|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |名称|字符串|附件的显示名称。 这不必是实际的文件名。|
-|size|Int32|附件大小，以字节为单位。|
+|大小|Int32|附件大小，以字节为单位。|
 
 ## <a name="relationships"></a>关系
 无

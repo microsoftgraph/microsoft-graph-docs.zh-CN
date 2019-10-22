@@ -3,14 +3,14 @@ title: 与会者资源类型
 description: 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 435a9b3badf20ddb79affd4e40e5ca8b66ff34c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 4e906a2f7f9d95cd3c3623d1f84c41aedded6cc4
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974288"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621585"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
@@ -23,9 +23,10 @@ ms.locfileid: "35974288"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
+|emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
+|proposedNewTime|[timeSlot](timeslot.md)|与会者为开始和结束会议请求建议的备用日期/时间。 如果与会者尚未建议其他时间，则 GET 事件响应中不包含此属性。|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
 |type|String|与会者类型：`required`、`optional`、`resource`。|
-|emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -34,16 +35,17 @@ ms.locfileid: "35974288"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "proposedNewTime"
   ],
   "@odata.type": "microsoft.graph.attendee"
 }-->
 
 ```json
 {
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "proposedNewTime": {"@odata.type": "microsoft.graph.timeSlot"},
   "status": {"@odata.type": "microsoft.graph.responseStatus"},
-  "type": "String",
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "type": "String"
 }
 
 ```

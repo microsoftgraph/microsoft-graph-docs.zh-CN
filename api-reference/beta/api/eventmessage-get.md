@@ -5,29 +5,29 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b3607e98cf6d83593374280b672772c7c703b09
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c353c8962e86606c45563c4fb066e1496b0426b0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721745"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621404"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 在事件`$expand`导航属性上**** 应用该参数, 以在与会者的日历中获取关联的[事件](../resources/event.md)。
+获取 [eventMessage](../resources/eventmessage.md) 对象的属性和关系。 在事件`$expand`导航属性上**** 应用该参数，以在与会者的日历中获取关联的[事件](../resources/event.md)。
 
 ### <a name="get-the-event-message-body-in-html-or-text-format"></a>获取 HTML 或文本格式的事件消息正文
 
 事件邮件正文可以是 HTML 格式或文本格式。
 
-您`Prefer: outlook.body-content-type`可以使用标头指定`GET`在请求中的**body**和**uniqueBody**属性中返回的所需格式:
+您`Prefer: outlook.body-content-type`可以使用标头指定`GET`在请求中的**body**和**uniqueBody**属性中返回的所需格式：
 
 - 指定`Prefer: outlook.body-content-type="text"`获取以文本格式返回的事件消息正文。
-- 指定`Prefer: outlook.body-content-type="html"`或直接跳过标头, 以返回 HTML 格式的事件消息正文。
+- 指定`Prefer: outlook.body-content-type="html"`或直接跳过标头，以返回 HTML 格式的事件消息正文。
 
-如果指定任何一个标头, 则响应将包含相应`Preference-Applied`的标头作为确认:
+如果指定任何一个标头，则响应将包含相应`Preference-Applied`的标头作为确认：
 
 - 对于文本格式请求：`Preference-Applied: outlook.body-content-type="text"`
 - 对于 HTML 格式请求：`Preference-Applied: outlook.body-content-type="html"`
@@ -63,11 +63,13 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+## <a name="examples"></a>示例
+
+### <a name="example-1"></a>示例 1
+#### <a name="request"></a>请求
 第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -83,13 +85,13 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
@@ -195,11 +197,11 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>请求 2
+### <a name="example-2"></a>示例 2
+#### <a name="request"></a>请求
 第二个示例展示了如何获取与事件消息关联的事件。 它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
@@ -215,13 +217,13 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。 响应中返回关联事件的属性。
 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {

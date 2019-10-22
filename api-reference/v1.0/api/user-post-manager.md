@@ -1,21 +1,22 @@
 ---
-title: 指定经理
-description: 使用此 API 指定用户的经理。
+title: 分配管理器
+description: 分配用户的经理。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3a137ce36dd1a4a0da76d698e5f35689bca6590
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 36b24ef7b6e9fb7a35be3c87723b650581ec982c
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450660"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621446"
 ---
-# <a name="assign-a-manager"></a>指定经理
+# <a name="assign-manager"></a>分配管理器
 
-使用此 API 指定用户的经理。
-> 注意：不能指定直接下属，请改用此 API。
+分配用户的经理。
+> [!NOTE]
+> 您不能分配直接下属，也不能分配。而是使用此 API。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,12 +33,13 @@ ms.locfileid: "36450660"
 PUT /users/{id}/manager/$ref
 ```
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 标头       | 值 |
+|:---------------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-type   | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md) 或 [user](../resources/user.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的[directoryObject](../resources/directoryobject.md)、[用户](../resources/user.md)或[组织联系人](../resources/orgcontact.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -45,9 +47,9 @@ PUT /users/{id}/manager/$ref
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_manager_from_group"
@@ -69,7 +71,7 @@ Content-length: xxx
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-manager-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-manager-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -79,9 +81,9 @@ Content-length: xxx
 
 ---
 
-在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。
+>**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

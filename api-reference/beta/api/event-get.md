@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 40b161aa8e78d699b4f22180fb1817996a2ba48e
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: aea62864e4369ad7f8cc8f23e1513911f8284976
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621439"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -93,7 +93,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。 
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event"
@@ -110,7 +110,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -176,8 +176,18 @@ Content-length: 1928
         {
             "type":"required",
             "status":{
-                "response":"none",
+                "response":"tentativelyAccepted",
                 "time":"0001-01-01T00:00:00Z"
+            },
+            "proposedNewTime": {
+                "start": {
+                    "dateTime": "2019-08-16T12:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-08-16T14:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
             },
             "emailAddress":{
                 "name":"Dana Swope",
@@ -200,7 +210,7 @@ Content-length: 1928
 该请求还使用 `$select` 查询参数返回特定属性。 如果没有 `$select` 参数，将返回所有事件属性。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_in_text"
@@ -217,7 +227,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -257,7 +267,7 @@ Content-length: 636
 第三个示例演示如何获取一个指定多个位置的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_multiple_locations"
@@ -273,7 +283,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -282,7 +292,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 ##### <a name="response-3"></a>响应 3
 下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
 
-由于请求未指定`Prefer: outlook.timezone` any 或`Prefer: outlook.body-content-type`标头, 因此**开始**和**结束**属性显示在默认的 UTC 时区中, 而正文采用的是默认的 HTML 格式。  
+由于请求未指定`Prefer: outlook.timezone` any 或`Prefer: outlook.body-content-type`标头，因此**开始**和**结束**属性显示在默认的 UTC 时区中，而正文采用的是默认的 HTML 格式。  
 
 <!-- {
   "blockType": "response",

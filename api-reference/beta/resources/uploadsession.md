@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-description: <descrption>
-ms.date: 09/10/2017
-title: UploadSession
+description: 表示用于将大型文件上载到 OneDrive、OneDrive for Business 或 SharePoint 文档库，或作为 Outlook 邮件对象的文件附件的迭代过程的信息。
+title: uploadSession 资源类型
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6b047c8eed22647083da07f2e7722269fb872783
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: non-product-specific
+ms.openlocfilehash: 9bf40360d841c88413cb4f08b603432f86e1d8aa
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964219"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621390"
 ---
-# <a name="uploadsession-resource"></a>UploadSession 资源
+# <a name="uploadsession-resource-type"></a>uploadSession 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**UploadSession** 资源提供了有关如何将大文件上传到 OneDrive、OneDrive for Business 或 SharePoint 文档库的信息。
+表示用于将大型文件上载到 OneDrive、OneDrive for Business 或 SharePoint 文档库的迭代过程的信息，或作为附件的 Outlook[邮件](message.md)对象。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -26,14 +25,15 @@ ms.locfileid: "35964219"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ "uploadUrl", "nextExpectedRanges" ],
-  "@odata.type": "microsoft.graph.uploadSession"
+  "@odata.type": "microsoft.graph.uploadSession",
+  "baseType": null
 }-->
 
 ```json
 {
-  "uploadUrl": "https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337",
-  "expirationDateTime": "2015-01-29T09:21:55.523Z",
-  "nextExpectedRanges": ["0-"]
+  "uploadUrl": "String",
+  "expirationDateTime": "String (timestamp)",
+  "nextExpectedRanges": ["String"]
 }
 ```
 
@@ -43,11 +43,12 @@ ms.locfileid: "35964219"
 | 属性       | 类型              |说明
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | 以 UTC 表示的上载会话过期的日期和时间。在此过期时间之前必须上载完整的文件文件。
-| nextExpectedRanges | String collection | 字节范围集合，文件服务器缺失。这些区域索引均从零开始，格式为“开始-结束”（例如，“0-26”指示该文件的前 27 个字节)。
+| nextExpectedRanges | String collection | 将文件上载到文档库时，这是文件的服务器缺少的字节范围的集合。 这些区域的索引为零，格式为 "{start}-{end}" （例如，"0-26" 表示文件的前27个字节）。 将文件作为 Outlook 邮件附件（而不是区域集合）上载时，此属性始终指示单个值 "{start}"，即文件中应开始下一次上载的位置。
 | uploadUrl          | String            | 接受文件字节范围的 PUT 请求的 URL 端点。
 
 ## <a name="see-also"></a>另请参阅
 
+- [将大型文件作为附件附加到 Outlook 邮件](/graph/outlook-large-attachments)
 - [通过上传会话上传大文件](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

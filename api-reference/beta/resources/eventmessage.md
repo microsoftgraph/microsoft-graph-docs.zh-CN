@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d22287c8c2605a623829adc94e8d05db1e1ec020
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71bdd5fe708bcc49f27f02e84c645cdeff29638c
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973609"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622445"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "35973609"
 
 表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。
 
-**EventMessage**实体派生自[邮件](message.md), [eventMessageRequest](eventmessagerequest.md)派生自**eventMessage**并表示会议请求。 **meetingMessageType** 属性确定事件邮件类型。
+**eventMessage** 实体派生自 [message](message.md)。 **eventMessage**是[eventMessageRequest](eventmessagerequest.md)和[eventMessageResponse](eventmessageresponse.md)的基本类型。 **meetingMessageType** 属性确定事件邮件类型。
 
-如果组织者或应用发送会议请求，会议请求以 **eventMessage** 实例（其中包含 **meetingRequest** 的 **meetingMessageType**）的形式，发送到与会者收件箱中。 此外，Outlook 会自动在与会者日历中创建 **event** 实例，其中 **showAs** 属性设置为 **tentative**。
+当组织者或应用发送会议请求时，会议请求以**eventMessage**实例的形式到达被邀请者的邮箱中， **meetingMessageType**为**meetingRequest**。 此外，Outlook 会自动在被邀请者的日历中创建一个**事件**实例，并将**showAs**属性为 "**暂定**"。
 
-若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以以编程方式代表与会者响应事件, 即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
+若要获取被邀请者邮箱中关联事件的属性，应用可以使用**eventMessage**的**事件**导航属性，如此[get 事件消息示例](../api/eventmessage-get.md#example-2)中所示。 应用程序还可以通过编程方式代表被邀请者响应事件，即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
 
-除了会议请求外, 可以在与会者的收件箱文件夹中找到**eventMessage**实例, 因为事件组织者取消会议, 或者由于与会者响应会议请求而在组织者的收件箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
+除了会议请求之外，在被邀请者的邮箱中可以找到**eventMessage**实例，因为事件组织者取消了会议，或者由于与会者响应会议请求而在组织者邮箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -33,10 +33,12 @@ ms.locfileid: "35973609"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.message",
   "optionalProperties": [
     "attachments",
     "event",
     "extensions",
+    "mentions",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
@@ -52,7 +54,7 @@ ms.locfileid: "35973609"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "binary",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "DateTimeOffset",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
@@ -64,6 +66,7 @@ ms.locfileid: "35973609"
   "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isAllDay": "Boolean",
+  "isDelegated": true,
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isOutOfDate": "Boolean",
@@ -72,6 +75,7 @@ ms.locfileid: "35973609"
   "lastModifiedDateTime": "DateTimeOffset",
   "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
+  "mentionsPreview": {"@odata.type": "microsoft.graph.mentionsPreview"},
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
   "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
@@ -100,18 +104,19 @@ ms.locfileid: "35973609"
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|字符串|邮件的版本。|
 |conversationId|String|电子邮件所属对话的 ID。|
-|conversationIndex|Binary|电子邮件所属对话的索引。|
+|conversationIndex|Edm.Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
 |flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
-|id|字串符号| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]只读。 |
+|id|String| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 |
 |isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
+|isDelegated|Boolean|如果代理可访问此会议请求，则为 True，否则为 false。 默认为 false。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
 |isOutOfDate|Boolean|指示此会议请求是否已由较新的请求发出。|
@@ -120,6 +125,7 @@ ms.locfileid: "35973609"
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |location|[位置](location.md)|请求的会议的位置。|
 |meetingMessageType|String| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTentativelyAccepted`、`meetingDeclined`。|
+|mentionsPreview|[mentionsPreview](mentionspreview.md)|邮件中的提及的相关信息。处理 `GET` /messages 请求时，服务器会设置此属性并默认将其包含在响应中。若邮件中无提及，则服务器返回 NULL。可选。 |
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
@@ -129,7 +135,7 @@ ms.locfileid: "35973609"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|String|所需会议的类型: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|type|String|所需会议的类型： `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |UnsubscribeData|String|从 List-Unsubscribe 标头中解析的有效条目。若 UnsubscribeEnabled 属性为 true，则这是 List-Unsubscribe 标头中的邮件命令的数据。|
 |UnsubscribeEnabled|Boolean|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
@@ -141,6 +147,7 @@ ms.locfileid: "35973609"
 |attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
+|提及|[mention](mention.md) 集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 eventMessage 定义的单值扩展属性的集合。只读。可为 Null。|
 

@@ -2,15 +2,15 @@
 title: 列出事件
 description: '从用户的默认日历或指定的日历获取事件对象列表。 '
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 57178ff22c5a46a2a8128616cb18803003b63d16
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 2693a8e8114592f0f2ec984e557e83acb70187c0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724202"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622480"
 ---
 # <a name="list-events"></a>列出事件
 

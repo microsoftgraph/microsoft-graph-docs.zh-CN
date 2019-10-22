@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 396c6de88d20c10d5e8da2d4d36ac4aaf55e82a8
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 7322c0268312a5beb61d0c7c900817e31821c6fc
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461498"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622504"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -26,9 +26,11 @@ ms.locfileid: "36461498"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-您可以通过发布到现有邮件的附件集合, 或在正在[起草](../api/user-post-messages.md)的新邮件中添加附件, 或[在即时创建和发送](../api/user-sendmail.md)附件。
+您可以通过发布到现有[邮件](../resources/message.md)的附件集合，或在正在[起草](../api/user-post-messages.md)的新邮件中添加附件，或[在即时创建和发送](../api/user-sendmail.md)附件。
 
-由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
+>**注意**：由于在每个 REST 请求的总大小中目前有4mb 的限制，这通常会限制可添加到 4 mb 以下的文件或项目附件的大小。 
+>
+> 但是，如果您要附加到邮件的文件介于3MB 和150MB 之间，则可以[创建上载会话](attachment-createuploadsession.md)并以迭代方式上载要附加的文件的范围。 有关示例，请参阅[将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +52,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。
+用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。 
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -66,14 +68,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`201 Created`响应正文中返回响应代码和[附件](../resources/attachment.md)对象。
+如果成功，此方法在`201 Created`响应正文中返回响应代码和[附件](../resources/attachment.md)对象。
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_message_beta"
@@ -97,7 +99,7 @@ Content-length: 142
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -199,7 +201,7 @@ Content-length: 162
 下面的示例展示了向现有邮件添加引用附件的请求。
 附件指向 OneDrive 上的文件夹。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",
@@ -228,7 +230,7 @@ Content-length: 319
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,0 +1,108 @@
+---
+title: 列出 directReports
+description: 获取联系人的直接下属。
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: f75c23e3b6b1aa79aeea0a812f7175a1b70f52e0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622599"
+---
+# <a name="list-directreports"></a>列出 directReports
+
+获取此[组织联系人](../resources/orgcontact.md)的直接下属。
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | OrgContact 和 Group. all、Read. All |
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+GET /contacts/{id}/directReports
+```
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持`$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+
+## <a name="request-headers"></a>请求标头
+| 标头       | 值 |
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
+## <a name="example"></a>示例
+##### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "contacts_get_directreports"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/contacts/{id}/directReports
+```
+
+##### <a name="response"></a>响应
+下面是一个响应示例。
+>**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 455
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.user",
+      "id": "24fcbca3-c3e2-48bf-9ffc-c7f81b81483d",
+      "businessPhones": [
+          "+1 205 555 0108"
+      ],
+      "displayName": "Diego Siciliani",
+      "givenName": "Diego",
+      "jobTitle": "CVP Finance",
+      "mail": "DiegoS@contoso.com",
+      "mobilePhone": null,
+      "officeLocation": "14/1108",
+      "preferredLanguage": "en-US",
+      "surname": "Siciliani",
+      "userPrincipalName": "DiegoS@contoso.com"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List directReports",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

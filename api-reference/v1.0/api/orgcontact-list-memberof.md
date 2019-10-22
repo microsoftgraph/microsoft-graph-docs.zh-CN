@@ -1,0 +1,101 @@
+---
+title: 列出 memberOf
+description: 列出此 organizaitonal 联系人所属的组。
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 1607fec5a1e329d3d6e472bd4c258bc483a1c5a1
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622596"
+---
+# <a name="list-memberof"></a>列出 memberOf
+
+列出此[组织联系人](../resources/orgcontact.md)所属的组。
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | OrgContact 和 Group. all、Read. All |
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+GET /contacts/{id}/memberOf
+```
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` 来帮助自定义响应。
+
+## <a name="request-headers"></a>请求标头
+| 标头       | 值 |
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
+## <a name="example"></a>示例
+##### <a name="request"></a>请求
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "contact_get_memberof"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
+```
+
+##### <a name="response"></a>响应
+下面是一个响应示例。
+>**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 155
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "024bbfa0-fe5a-4fce-9227-bd6ccf1324bb",
+      "createdDateTime": "2018-01-18T18:54:43Z",
+      "description": "Best group ever created",
+      "displayName": "Best Group",
+      "groupTypes": [],
+      "isAssignableToRole": null,
+      "onPremisesProvisioningErrors": []
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List memberOf",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
