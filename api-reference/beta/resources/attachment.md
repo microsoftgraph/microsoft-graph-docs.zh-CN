@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: a6810ff870124a793bee40ec9df66ae7cb5eabc8
+ms.openlocfilehash: 0ab32470a7ecf5e00d10ccada984096d16537f1b
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621657"
+ms.locfileid: "37632673"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "37621657"
 * 项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）
 * 文件链接（[referenceAttachment](../resources/referenceattachment.md) 资源）
 
->**注意**：由于在每个 REST 请求的总大小中目前有4mb 的限制，这通常会限制可添加到 4 mb 以下的文件或项目附件的大小。 
+>**注意**：可以添加到 4 MB 以下的文件或项目附件的大小有限制。 
 >
 > 但是，如果您要附加到邮件的文件介于3MB 和150MB 之间，则可以[创建上载会话](../api/attachment-createuploadsession.md)并以迭代方式上载要附加的文件的范围。 有关示例，请参阅[将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "37621657"
 |:---------------|:--------|:----------|
 |[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取附加到用户事件、邮件、Outlook 任务或帖子的附件的属性、关系或原始内容。|
 |[将附件添加到用户事件中](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件中。|
-|[将附件添加到邮件中](../api/message-post-attachments.md) | [attachment](attachment.md) |将文件、项目或将附件链接添加到邮件中。 如果附加文件，文件大小必须小于4MB。|
+|[将附件添加到邮件中](../api/message-post-attachments.md) | [attachment](attachment.md) |将文件、项目或将附件链接添加到邮件中。 此操作将限制可添加到 4 MB 以下的附件的大小。|
 |[创建会话以附加大型文件](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的**邮件**。 文件大小必须介于3MB 和150MB 之间。|
 |[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到 Outlook 任务中。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
