@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0a4f11a1dd9db580ba5c3a5f9a2981cd21fd157
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2c70da69f96a9fdbd13ca8a829ab717d4ffd13e
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033514"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37036331"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "36033514"
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| 返回用户所属的所有组和目录角色。检查是可传递的。 |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|返回指定开始时间和结束时间范围内的日历提醒列表。|
 |[revokeSignInSessions](../api/user-revokesigninsessions.md)| 无 |通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |[convertIdResult](convertidresult.md) 集合| 对与 Outlook 相关的资源的标识符进行格式转换。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
