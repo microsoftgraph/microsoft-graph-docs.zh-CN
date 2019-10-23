@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 15041ab0efccf741aae7ea7b0eed4905ebc74423
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 3544152a727bc37ad610bb532ea1d1dfff1b6cc5
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621397"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637643"
 ---
 ### <a name="attachmenttype-values"></a>attachmentType 值
 
@@ -899,3 +899,63 @@ ms.locfileid: "37621397"
 |user|
 |向 unknownfuturevalue|
 
+### <a name="conditionalaccesspolicystate"></a>conditionalAccessPolicyState
+
+|成员|
+|:---|
+|enabled|
+|禁用|
+
+### <a name="conditionalaccessclientapp"></a>conditionalAccessClientApp
+
+| 成员       |
+|:--------------|
+|浏览器|
+|新式|
+|easSupported|
+|easUnsupported|
+|相互|
+
+### <a name="conditionalaccessgrantcontrol"></a>conditionalAccessGrantControl
+
+| 成员       |
+|:--------------|
+|数据|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+
+### <a name="cloudappsecuritysessioncontroltype"></a>cloudAppSecuritySessionControlType
+
+| 成员       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+
+### <a name="signinfrequencytype"></a>signinFrequencyType
+
+| 成员       |
+|:--------------|
+|之前|
+|花费|
+
+### <a name="persistentbrowsersessionmode"></a>persistentBrowserSessionMode
+
+| 成员       |
+|:--------------|
+|都|
+|永不|
+
+### <a name="conditionalaccessdeviceplatform"></a>conditionalAccessDevicePlatform
+
+| 成员       |
+|:--------------|
+|android|
+|iOS|
+|时间|
+|windowsPhone|
+|macOS|
+|各种|

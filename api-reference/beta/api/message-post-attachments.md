@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7322c0268312a5beb61d0c7c900817e31821c6fc
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 05cdbdbc5cc044f30a3dd2f8ea63dcf6fac50222
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622504"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637565"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -28,7 +28,7 @@ ms.locfileid: "37622504"
 
 您可以通过发布到现有[邮件](../resources/message.md)的附件集合，或在正在[起草](../api/user-post-messages.md)的新邮件中添加附件，或[在即时创建和发送](../api/user-sendmail.md)附件。
 
->**注意**：由于在每个 REST 请求的总大小中目前有4mb 的限制，这通常会限制可添加到 4 mb 以下的文件或项目附件的大小。 
+>**注意**：此操作限制了可以添加到 4 MB 以下的附件的大小。
 >
 > 但是，如果您要附加到邮件的文件介于3MB 和150MB 之间，则可以[创建上载会话](attachment-createuploadsession.md)并以迭代方式上载要附加的文件的范围。 有关示例，请参阅[将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments)。
 ## <a name="permissions"></a>权限

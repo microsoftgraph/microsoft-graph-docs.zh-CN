@@ -8246,6 +8246,22 @@
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: 删除
                   href: api/certificatebasedauthconfiguration-delete.md
+            - name: 条件访问
+              items:
+                - name: 策略
+                  items:
+                    - name: 条件访问策略
+                      href: resources/conditionalaccesspolicy.md
+                    - name: 列出
+                      href: api/conditionalaccessroot-list-policies.md
+                    - name: Create
+                      href: api/conditionalaccessroot-post-policies.md
+                    - name: 获取
+                      href: api/conditionalaccesspolicy-get.md
+                    - name: 更新
+                      href: api/conditionalaccesspolicy-update.md
+                    - name: 删除
+                      href: api/conditionalaccesspolicy-delete.md
             - name: 合同
               href: resources/contract.md
               items:

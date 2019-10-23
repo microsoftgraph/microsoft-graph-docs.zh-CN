@@ -5,12 +5,12 @@ author: piotrci
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 16c165be9afe53a6540f1c5fe7faa41d88cb21b3
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 5ac971cbb06bcf7309e1bdf51afecd3b172ca2b8
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054101"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622414"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>在应用中对 Microsoft Graph 数据进行分页 
 
@@ -22,21 +22,21 @@ ms.locfileid: "37054101"
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-如果结果包含超过 5 个用户，则 Microsoft Graph 将返回一个下列类似的 `@odata:nextLink` 属性以及第一页的用户。
+如果结果包含超过 5 个用户，则 Microsoft Graph 将返回一个下列类似的 `@odata.nextLink` 属性以及第一页的用户。
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
 ```
 
-可以通过将 `@odata:nextLink` 属性的 URL 值发送到 Microsoft Graph 来检索结果的下一页。 
+可以通过将 `@odata.nextLink` 属性的 URL 值发送到 Microsoft Graph 来检索结果的下一页。 
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
-Microsoft Graph 将继续通过每次响应返回对 `@odata:nextLink` 属性中下一页数据的引用，直到读取结果的所有页面。
+Microsoft Graph 将继续通过每次响应返回对 `@odata.nextLink` 属性中下一页数据的引用，直到读取结果的所有页面。
 
->**重要说明：** 应该在请求的 `@odata:nextLink` 属性中包括整个 URL，以获取下一页结果。 根据正在对其执行查询的 API， `@odata:nextLink` URL 值将包含 `$skiptoken` 或 `$skip` 查询参数。 该 URL 还包含原始请求中存在的所有其他查询参数。 请勿尝试提取 `$skiptoken` 或 `$skip` 值，也不要在不同的请求中使用它。 
+>**重要说明：** 应该在请求的 `@odata.nextLink` 属性中包括整个 URL，以获取下一页结果。 根据正在对其执行查询的 API， `@odata.nextLink` URL 值将包含 `$skiptoken` 或 `$skip` 查询参数。 该 URL 还包含原始请求中存在的所有其他查询参数。 请勿尝试提取 `$skiptoken` 或 `$skip` 值，也不要在不同的请求中使用它。 
 
 分页行为因 Microsoft Graph API 不同而异。 处理分页数据时，应考虑以下几点：
 
