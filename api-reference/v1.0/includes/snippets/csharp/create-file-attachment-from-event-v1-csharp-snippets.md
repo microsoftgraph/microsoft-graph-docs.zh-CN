@@ -1,22 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c894b48bec84ff734661eb389307461a3b885616
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7506b512122f9b2b69e7ef69c1bc4da9fded1c89
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461745"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544185"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = new Attachment
+var attachment = new FileAttachment
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#microsoft.graph.fileAttachment"}
-    },
     Name = "menu.txt",
     ContentBytes = "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 };

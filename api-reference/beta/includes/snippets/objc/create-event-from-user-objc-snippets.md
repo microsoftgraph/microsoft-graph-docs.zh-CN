@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1634b3f0452fd49abce6511d7b5cda71190daf36
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1ab6b2c9907aa8df27903df5b164c364237362d3
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35723935"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636946"
 ---
 ```objc
 
@@ -21,7 +21,7 @@ MSGraphEvent *event = [[MSGraphEvent alloc] init];
 [event setSubject:@"Let's go for lunch"];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"Does late morning work for you?"];
+[body setContent:@"Does noon work for you?"];
 [event setBody:body];
 MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
 [start setDateTime: "2017-04-15T12:00:00"];
@@ -43,6 +43,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setAllowNewTimeProposals: true];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

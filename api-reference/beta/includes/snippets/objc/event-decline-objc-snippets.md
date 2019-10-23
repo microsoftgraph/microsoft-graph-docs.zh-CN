@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 222bd6ab7c0b7dacea794246836cc26c6d46ed85
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ecd12771d0cd6571ac5178b36fcd8887e0a829e1
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714362"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636944"
 ---
 ```objc
 
@@ -18,11 +18,22 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *comment = @"comment-value";
+NSString *comment = @"I won't be able to make this week. How about next week?";
 payloadDictionary[@"comment"] = comment;
 
 BOOL sendResponse = YES;
 payloadDictionary[@"sendResponse"] = sendResponse;
+
+MSGraphTimeSlot *proposedNewTime = [[MSGraphTimeSlot alloc] init];
+MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
+[start setDateTime: "2019-12-02T18:00:00"];
+[start setTimeZone:@"Pacific Standard Time"];
+[proposedNewTime setStart:start];
+MSGraphDateTimeTimeZone *end = [[MSGraphDateTimeTimeZone alloc] init];
+[end setDateTime: "2019-12-02T19:00:00"];
+[end setTimeZone:@"Pacific Standard Time"];
+[proposedNewTime setEnd:end];
+payloadDictionary[@"proposedNewTime"] = proposedNewTime;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

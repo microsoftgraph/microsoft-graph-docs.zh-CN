@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 41bb14a7470cdf544b26e0819839906491b4ad4a
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 353ee506cf13430035984b0d0269bba8d356fcfd
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636609"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636942"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const event = {
   subject: "Let's go for lunch",
   body: {
     contentType: "HTML",
-    content: "Does late morning work for you?"
+    content: "Does noon work for you?"
   },
   start: {
       dateTime: "2017-04-15T12:00:00",
@@ -40,7 +40,8 @@ const event = {
       },
       type: "required"
     }
-  ]
+  ],
+  allowNewTimeProposals: true
 };
 
 let res = await client.api('/me/events')
