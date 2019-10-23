@@ -5,16 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eceb79cf733c453e9d44d7b7f1a7acdd562a2ed5
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: a09be08a90d819e7d430f9fb03c69b831a288b36
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427884"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37632591"
 ---
 # <a name="add-attachment"></a>Add attachment
 
-使用此 API 将 [附件](../resources/attachment.md) 添加到事件。由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
+使用此 API 将 [附件](../resources/attachment.md) 添加到事件。 此操作将限制可添加到 4 MB 以下的附件的大小。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "37427884"
 |应用程序 | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
+用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).

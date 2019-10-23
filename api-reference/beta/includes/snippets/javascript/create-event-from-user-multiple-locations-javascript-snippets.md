@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8b892592b6baab956bd63d74ddd565295520c21f
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 47d56be493034680eaece13b3c5d44fce701bad3
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636610"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636939"
 ---
 ```javascript
 
@@ -70,8 +70,8 @@ const event = {
     {
       displayName: "Home Office"
     }
-  ]
-
+  ],
+  allowNewTimeProposals: true
 };
 
 let res = await client.api('/me/events')

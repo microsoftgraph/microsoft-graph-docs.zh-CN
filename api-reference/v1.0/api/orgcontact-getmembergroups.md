@@ -1,50 +1,60 @@
 ---
-title: 列出 memberOf
-description: 列出此 organizaitonal 联系人所属的组。
+title: orgContact： getMemberGroups
+description: 返回组织联系人所属的所有组。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6548d78fced9d0869712ea2644e4f05dffcb0e0c
+ms.openlocfilehash: bfff689d075fc874c3ce31b2992cf90286af3049
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37633909"
+ms.locfileid: "37633966"
 ---
-# <a name="list-memberof"></a>列出 memberOf
+# <a name="orgcontact-getmembergroups"></a>orgContact： getMemberGroups
 
-列出此[组织联系人](../resources/orgcontact.md)所属的组。
+返回[组织联系人](../resources/orgcontact.md)所属的所有组。 检查是可传递的，这和读取 **memberOf** 导航属性不同，后者仅返回用户是其直接成员的组。
+
+此函数支持在 Azure Active Directory （Azure AD）中预配的 Office 365 和其他类型的组。 每个请求可以返回的最大组数为 2046 组。 
+
+>[!NOTE]
+>Office 365 组不能包含组。 Office 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All  |
+|委派（工作或学校帐户） | OrgContact 和 Group. all、Read. All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | OrgContact 和 Group. all、Read. All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /contacts/{id}/memberOf
-```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` 来帮助自定义响应。
+POST /contacts/{id}/getMemberGroups
 
+```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
-|:-----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+|:---------------|:----------|
+| Authorization  |  Bearer {token}。必需。 |
+| Content-type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供具有以下参数的 JSON 对象。
+
+| 参数    | 类型   |说明|
+|:---------------|:--------|:----------|
+|securityEnabledOnly|Boolean|设置为`false`。 只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和字符串集合对象。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -52,25 +62,31 @@ GET /contacts/{id}/memberOf
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "contact_get_memberof"
+  "name": "orgcontact_getmembergroups"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
+```http
+POST https://graph.microsoft.com/v1.0/contacts/{id}/getMemberGroups
+Content-type: application/json
+Content-length: 33
+
+{
+  "securityEnabledOnly": false
+}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/contact-get-memberof-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-getmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/contact-get-memberof-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/contact-get-memberof-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/contact-get-memberof-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/orgcontact-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -78,30 +94,22 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。
->**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意**：为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "string",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
+Content-length: 39
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.group",
-      "id": "024bbfa0-fe5a-4fce-9227-bd6ccf1324bb",
-      "createdDateTime": "2018-01-18T18:54:43Z",
-      "description": "Best group ever created",
-      "displayName": "Best Group",
-      "groupTypes": [],
-      "isAssignableToRole": null,
-      "onPremisesProvisioningErrors": []
-    }
+    "groupId-value1",
+    "groupId-value2"
   ]
 }
 ```
@@ -111,7 +119,7 @@ Content-length: 155
 <!--
 {
   "type": "#page.annotation",
-  "description": "List memberOf",
+  "description": "orgContact: getMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

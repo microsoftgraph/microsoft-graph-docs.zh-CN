@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9cef56cbe87db5923accb362804434b1501c32d1
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: b8e6a59dc0d8bf20ddac6c39c4c92081061d2946
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633767"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37632689"
 ---
 # <a name="add-attachment"></a>添加附件
 
 创建组帖子时添加[附件](../resources/attachment.md)。
 
-由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
+此操作将限制可添加到 4 MB 以下的附件的大小。
 
 附件可以是下列类型之一：
 
