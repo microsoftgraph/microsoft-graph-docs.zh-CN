@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 4895dd81a14369d5756d59ee95451f5942e246dc
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e981530f3efa38f49655427085267a9fc0206835
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792756"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638804"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -361,6 +361,12 @@ JSON 批处理请求目前限定为 20 个单独请求。
     ```PowerShell
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
+
+## <a name="identity-and-access"></a>标识和访问
+
+### <a name="conditional-access-policies-and-named-locations"></a>条件访问策略和命名位置
+
+条件访问策略和命名位置 API 的写入操作需要以下两个权限：Policy.ReadWrite.ConditionalAccess 和 Directory.AccessAsUser.All。 通常，最低特权权限 Policy.ReadWrite.ConditionalAccess 应该足够了。 目前，你应该获取包含这两个权限的令牌。
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>只有 Office 365 REST 或 Azure AD Graph API 才具有的功能
 
