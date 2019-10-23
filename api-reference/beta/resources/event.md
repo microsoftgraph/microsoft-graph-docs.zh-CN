@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 65a66e39d0548fa994821eb4ae279d9fbc1b2aac
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: 3e8da555b062576c70a849280f83f713c2a627a0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37203975"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621376"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -53,6 +53,7 @@ ms.locfileid: "37203975"
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -100,7 +101,8 @@ ms.locfileid: "37203975"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|与会者|[Attendee](attendee.md) 集合|事件的与会者集合。|
+|allowNewTimeProposals| 布尔值 | 如果会议组织者允许被邀请者在响应时建议新时间，则为`True`；否则为 `false`。 可选。 默认值为 `true`。 |
+|attendees|[Attendee](attendee.md) 集合|事件的与会者集合。|
 |body|[ItemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
 |bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
 |categories|String collection|与事件相关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
@@ -124,7 +126,7 @@ ms.locfileid: "37203975"
 |originalStartTimeZone|字符串|创建事件时设置的开始时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+|responseRequested|布尔值|默认值为 true，表示组织者愿意被邀请者发送事件响应。|
 |responseStatus|[ResponseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
 |sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|定期系列主项的 ID（如果此事件是定期系列的一部分）。|

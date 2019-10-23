@@ -5,16 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81a7936f713e769b8025dfde0b2f3d42f7234d44
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1ff81baf734d39e225031dc836fbd33d330efced
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727472"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622190"
 ---
 # <a name="list-manager"></a>列出经理
 
-获取用户的经理。 返回指定为用户经理的用户或联系人。
+获取用户的经理。 返回指定为用户经理的用户或组织联系人。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,12 +31,11 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+## <a name="request-headers"></a>请求头
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -46,7 +45,7 @@ GET /users/{id | userPrincipalName}/manager
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,7 +74,8 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": false,

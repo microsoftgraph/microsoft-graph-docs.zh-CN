@@ -5,17 +5,17 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86a50debcddc05eeee41279bd20d3dfd5b12081b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: caa00e74298eb7d744412ffdc85298d804ef615d
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621355"
 ---
 # <a name="add-member"></a>添加成员
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
 
-可以添加用户或其他组。 
+可以添加用户、组织联系人或其他组。 
 
 > [!IMPORTANT]
 > 仅能将用户添加到 Office 365 组。
@@ -36,12 +36,13 @@ POST /groups/{id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| 标头       | 值 |
+|:---------------|:----------|
+| Authorization  | Bearer {token}。必需。 |
+| Content-type   | appication/json。 必填。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 JSON 表示形式。
+在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md)、[group](../resources/group.md) 或 [organizational contact](../resources/orgcontact.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
@@ -82,11 +83,9 @@ Content-length: 30
 
 ---
 
-在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 `id` 的JSON 表示形式。
-
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

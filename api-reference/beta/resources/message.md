@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f23d8ffcda224931950dc9c2d2cd2ade01322c36
-ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
+ms.openlocfilehash: c4cfb5297e4bae7689017f1e60738be5077604bc
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36426312"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622442"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -55,7 +55,7 @@ ms.locfileid: "36426312"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "string (binary)",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -103,7 +103,7 @@ ms.locfileid: "36426312"
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属对话的 ID。|
-|conversationIndex|Binary|电子邮件所属对话的索引。|
+|conversationIndex|Edm.Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|

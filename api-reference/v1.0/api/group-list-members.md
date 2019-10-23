@@ -1,19 +1,19 @@
 ---
 title: 列出成员
-description: 获取组的直接成员列表。 组可将用户、联系人和其他组作为成员。
+description: 获取组的直接成员列表。 组可将用户、组织联系人和其他组作为成员。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 54bc841b35aed618765d661d0df4be25cb07f612
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: a3a2dd63e5f91ce9df26d6b649d3d005bf73f545
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275743"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622559"
 ---
 # <a name="list-members"></a>列出成员
-获取组的直接成员列表。组可将用户、联系人和其他组作为成员。此操作不可传递。
+获取组的直接成员列表。组可将用户、组织联系人和其他组作为成员。此操作不可传递。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,18 +31,18 @@ GET /groups/{id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+## <a name="request-headers"></a>请求头
+| 标头       | 值 |
+|:-----------|:----------|
+| Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
+如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 #### <a name="response"></a>响应
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,

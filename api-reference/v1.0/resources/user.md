@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2c70da69f96a9fdbd13ca8a829ab717d4ffd13e
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 232f20f4266cc2d23580f0f7db9fdf48a9d02f41
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37036331"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622176"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -48,7 +48,8 @@ ms.locfileid: "37036331"
 |[List contactFolders](../api/user-list-contactfolders.md) |[ContactFolder](contactfolder.md) 集合| 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。|
 |[创建 contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| 通过发布到 contactFolders 集合创建新 ContactFolder。|
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| 从 directReports 导航属性中获取向此用户报告的用户和联系人。|
-|[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | 从 manager 导航属性中获取是此用户的经理的用户或联系人。|
+|[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | 从 manager 导航属性中获取是此用户的经理的用户或组织联系人。|
+|[分配管理器](../api/user-post-manager.md) |[directoryObject](directoryobject.md) | 分配用户或组织联系人，作为该用户的经理。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| 从 memberOf 导航属性中获取此用户是其直接成员的组和目录角色。|
 |[List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出用户所属的组和目录角色。 此操作是可传递的，并包括用户以嵌套方式所属的组。 |
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| 从 ownedDevices 导航属性中获取此用户所拥有的设备。|
@@ -97,6 +98,7 @@ ms.locfileid: "37036331"
 |interests|String collection|用户介绍自身兴趣的列表。|
 |isResourceAccount|Boolean| 如果用户是资源帐户，则为 **true**，否则为 **false**。 Null 值应视为 **false**。|
 |jobTitle|String|用户的职务。支持 $filter。|
+|lastPasswordChangeDateTime| DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 日期和时间信息采用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”|
 |legalAgeGroupClassification|String| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读状态，基于 `ageGroup` 和 `consentProvidedForMinor` 属性计算得出。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。 只读。|
 |mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
@@ -397,6 +399,7 @@ ms.locfileid: "37036331"
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "lastPasswordChangeDateTime": "String (timestamp)",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
