@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 scenarios: getting-started
-ms.openlocfilehash: bbcf0f7ab8061309b7864913b15dad427a86e889
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b245261e8e0840932cbfc5a8d37a70196dce27f1
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792995"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621383"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -105,6 +105,7 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
   - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
   - [获取用户和资源的忙/闲日程安排](outlook-get-free-busy-schedule.md)
   - [在 Outlook 中将重复约会安排为定期事件](outlook-schedule-recurring-events.md)
+  - [在 Outlook 日历中建议会议时间](outlook-calendar-meeting-proposals.md)
   - [获取共享事件](outlook-get-shared-events-calendars.md)
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
 - 查看 Outlook [日历 API](/graph/api/resources/calendar?view=graph-rest-1.0) 参考。

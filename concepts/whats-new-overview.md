@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ea123de2fea1efdc4647238f6a953e21d49901db
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: a851421ce76295bb2954621af9302b9eb420a8c0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418208"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622183"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -26,7 +26,7 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 ## <a name="october-2019-new-and-generally-available"></a>2019 年 10 月：新版本和正式版
 
 ### <a name="mail"></a>邮件
-使用新的 **message** 参数更新[回复](/graph/api/message-reply?view=graph-rest-1.0)邮件时任何可写的 [message](/graph/api/resources/message?view=graph-rest-1.0) 属性，例如 [将收件人添加到回复](/graph/api/message-reply#example ?view=graph-rest-1.0)。
+使用新的 **message** 参数更新[回复](/graph/api/message-reply?view=graph-rest-1.0)邮件时任何可写的 [message](/graph/api/resources/message?view=graph-rest-1.0) 属性，例如，[将收件人添加到回复](/graph/api/message-reply#example?view=graph-rest-1.0)。
 
 ### <a name="users"></a>用户
 [获取](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0)或[设置](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0)[用户邮箱](/graph/api/resources/mailboxsettings?view=graph-rest-1.0)的用户首选日期和时间格式设置。 
@@ -36,8 +36,16 @@ Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新�
 > [!IMPORTANT]
 > _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为 GA 状态。 请不要在生产应用中使用它们。
 
+### <a name="calendar"></a>日历
+
+会议组织者可以[允许被邀请者提议备选会议时间](outlook-calendar-meeting-proposals.md)。 当收到包含建议的备选时间的会议响应时，组织者可以决定接受该建议并[更新](/graph/api/event-update?view=graph-rest-beta)会议时间。
+
 ### <a name="groups"></a>组
 使用 **hideFromAddressLists** 和 **hideFromOutlookClients** 属性在 Outlook 用户界面的某些部分或 Outlook 客户端中控制[组](/graph/api/resources/group?view=graph-rest-beta)的可见性。
+
+### <a name="mail"></a>邮件
+
+通过创建[上载会话](/graph/api/resources/uploadsession?view=graph-rest-beta)，[将高达 150MB 的大文件附加到](outlook-large-attachments.md) [message](/graph/api/resources/message?view=graph-rest-beta) 实例，并迭代上载文件的范围，直至文件的所有字节都已上载。 
 
 ## <a name="september-2019-new-and-generally-available"></a>2019 年 9 月：新版本和正式版
 
