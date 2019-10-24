@@ -111,6 +111,8 @@
           href: /graph/sdks/create-client?context=graph/api/beta
         - name: 选择验证提供程序
           href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+        - name: 创建请求
+          href: /graph/sdks/create-requests?context=graph/api/beta
     - name: 使用工具包（预览版）
       items:
         - name: 工具包概述
@@ -7495,7 +7497,7 @@
                   items:
                     - name: 获取
                       href: api/intune-shared-windowsautopilotdeploymentprofile-get.md
-                    - name: assign 操作
+                    - name: 分配操作
                       href: api/intune-shared-windowsautopilotdeploymentprofile-assign.md
                     - name: hasPayloadLinks 操作
                       href: api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md
@@ -8238,7 +8240,7 @@
             - name: 基于证书的身份验证配置
               href: resources/certificatebasedauthconfiguration.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: 获取
                   href: api/certificatebasedauthconfiguration-get.md
@@ -8269,6 +8271,48 @@
                   href: api/contract-get.md
                 - name: 列出合同
                   href: api/contract-list.md
+            - name: 条件访问
+              items:
+                - name: 命名位置
+                  items:
+                    - name: 命名位置
+                      items:
+                        - name: 命名位置
+                          href: resources/namedlocation.md
+                        - name: 列表
+                          href: api/conditionalaccessroot-list-namedlocations.md
+                        - name: 获取
+                          href: api/namedlocation-get.md
+                        - name: 删除
+                          href: api/namedlocation-delete.md
+                    - name: 国家/地区命名的位置
+                      items:
+                        - name: 国家/地区命名的位置
+                          href: resources/countrynamedlocation.md
+                        - name: 列出
+                          href: api/conditionalaccessroot-list-namedlocations.md
+                        - name: Create
+                          href: api/conditionalaccessroot-post-namedlocations.md
+                        - name: 获取
+                          href: api/countrynamedlocation-get.md
+                        - name: 更新
+                          href: api/countrynamedlocation-update.md
+                        - name: 删除
+                          href: api/countrynamedlocation-delete.md
+                    - name: IP 命名位置
+                      items:
+                        - name: IP 命名位置
+                          href: resources/ipnamedlocation.md
+                        - name: 列出
+                          href: api/conditionalaccessroot-list-namedlocations.md
+                        - name: Create
+                          href: api/conditionalaccessroot-post-namedlocations.md
+                        - name: 获取
+                          href: api/ipnamedlocation-get.md
+                        - name: 更新
+                          href: api/ipnamedlocation-update.md
+                        - name: 删除
+                          href: api/ipnamedlocation-delete.md
             - name: 数据策略操作
               href: resources/datapolicyoperation.md
               items:

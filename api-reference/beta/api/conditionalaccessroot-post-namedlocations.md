@@ -1,0 +1,190 @@
+---
+title: 创建 namedLocation
+description: 创建新的 namedLocation。
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: d5d6962a9cae9eb3a49177ecaa4d17a0c4181881
+ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37653725"
+---
+# <a name="create-namedlocation"></a>创建 namedLocation
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+创建新的[namedLocation](../resources/namedlocation.md)对象。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:--------------------------------------------|
+| 委派（工作或学校帐户）     | ConditionalAccess 和 Directory.accessasuser.all 的所有 |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+>[!NOTE]
+>此 API 需要多个权限。 有关详细信息，请参阅[已知问题](/graph/known-issues#conditional-access-policies-and-named-locations)。
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /conditionalAccess/namedLocations
+```
+
+## <a name="request-headers"></a>请求标头
+
+| 名称          | 说明   |
+|:--------------|:--------------|
+| Authorization | Bearer {token}。必需。 |
+| Content-Type  | application/json. Required. |
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供[ipNamedLocation](../resources/ipnamedlocation.md)或[COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md)对象的 JSON 表示形式。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[ipNamedLocation](../resources/ipnamedlocation.md)或[countryNamedLocation](../resources/countrynamedlocation.md)对象。
+
+## <a name="examples"></a>示例
+
+### <a name="example-1-create-an-ipnamedlocation"></a>示例1：创建 ipNamedLocation
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "create_namedlocation_from_conditionalaccessroot"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "displayName": "Untrusted IP named location",
+    "isTrusted": false,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "12.34.221.11/22"
+        },
+        {
+            "@odata.type": "#microsoft.graph.iPv6CidrRange",
+            "cidrAddress": "2001:0:9d38:90d6:0:0:0:0/63"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#namedLocations/$entity",
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "id": "0854951d-5fc0-4eb1-b392-9b2c9d7949c2",
+    "displayName": "Untrusted IP named location",
+    "modifiedDateTime": "2019-09-04T01:11:34.9387578Z",
+    "createdDateTime": "2019-09-04T01:11:34.9387578Z",
+    "isTrusted": false,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "12.34.221.11/22"
+        },
+        {
+            "@odata.type": "#microsoft.graph.iPv6CidrRange",
+            "cidrAddress": "2001:0:9d38:90d6:0:0:0:0/63"
+        }
+    ]
+}
+```
+### <a name="example-2-create-a-countrynamedlocation"></a>示例2：创建 countryNamedLocation
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "create_namedlocation_from_conditionalaccessroot"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "displayName": "Named location with unknown countries and regions",
+    "countriesAndRegions": [
+        "US",
+        "GB"
+    ],
+    "includeUnknownCountriesAndRegions": true
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#namedLocations/$entity",
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "id": "1c4427fd-0885-4a3d-8b23-09a899ffa959",
+    "displayName": "Named location with unknown countries and regions",
+    "modifiedDateTime": "2019-09-04T01:08:02.5249255Z",
+    "createdDateTime": "2019-09-04T01:08:02.5249255Z",
+    "countriesAndRegions": [
+        "US",
+        "GB"
+    ],
+    "includeUnknownCountriesAndRegions": true
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create namedLocation",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

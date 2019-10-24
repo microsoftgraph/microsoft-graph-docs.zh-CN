@@ -1,0 +1,334 @@
+---
+title: 列出 namedLocations
+description: 获取 namedLocation 对象的列表。
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 4f5f7d52efa504df499e50cd3ebaa37359255493
+ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37653809"
+---
+# <a name="list-namedlocations"></a>列出 namedLocations
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+获取[namedLocation](../resources/namedlocation.md)对象的列表。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:--------------------------------------------|
+| 委派（工作或学校帐户）     | Policy.Read.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序                            | 不支持。 |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /conditionalAccess/namedLocations
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+`$count`此方法支持、 `$filter`、 `$orderBy` `$select` `$skip`、、和`$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+
+## <a name="request-headers"></a>请求头
+
+| 名称      |说明|
+|:----------|:----------|
+| Authorization | Bearer {token}。必需。 |
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[namedLocation](../resources/namedlocation.md)对象集合。
+
+## <a name="examples"></a>示例
+
+### <a name="example-1-list-all-namedlocations"></a>示例1：列出所有 namedLocations
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06e4ff15-ca6b-4843-9c34-3fdd1ce8f739",
+            "displayName": "IPv4 named location",
+            "modifiedDateTime": "2019-07-26T18:00:43.5796446Z",
+            "createdDateTime": "2018-06-22T11:56:12Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "6.5.4.3/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.126.125.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1b7f0916-7677-40d8-97a1-d606f4ed8fcf",
+            "displayName": "Country named location",
+            "modifiedDateTime": "2018-09-10T16:54:53.7238848Z",
+            "createdDateTime": "2018-09-10T16:54:53.7238848Z",
+            "countriesAndRegions": [
+                "US",
+                "CA"
+            ],
+            "includeUnknownCountriesAndRegions": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### <a name="example-2-list-all-ipnamedlocations"></a>示例2：列出所有 ipNamedLocations
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06e4ff15-ca6b-4843-9c34-3fdd1ce8f739",
+            "displayName": "IPv4 named location",
+            "modifiedDateTime": "2019-07-26T18:00:43.5796446Z",
+            "createdDateTime": "2018-06-22T11:56:12Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "6.5.4.3/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.126.125.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>示例3：列出在特定日期之后创建的所有 namedLocations
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=createdDateTime ge 2019-09-01T00:00:00Z
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>示例4：列出包含特定国家或地区的所有 countryNamedLocations
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1b7f0916-7677-40d8-97a1-d606f4ed8fcf",
+            "displayName": "Country named location",
+            "modifiedDateTime": "2018-09-10T16:54:53.7238848Z",
+            "createdDateTime": "2018-09-10T16:54:53.7238848Z",
+            "countriesAndRegions": [
+                "US",
+                "CA"
+            ],
+            "includeUnknownCountriesAndRegions": false
+        }
+    ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List namedLocations",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
