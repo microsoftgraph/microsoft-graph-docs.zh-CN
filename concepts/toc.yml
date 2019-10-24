@@ -1,5 +1,7 @@
 name: Graph 文档
-metadata: {}
+metadata:
+  experimental: true
+  experiment_id: b8938daf-1bcb-4f
 items:
   - name: Microsoft Graph 文档
     href: index.yml
@@ -82,6 +84,8 @@ items:
             href: findmeetingtimes-example.md
           - name: 获取忙/闲日程安排
             href: outlook-get-free-busy-schedule.md
+          - name: 建议新的会议时间（预览版）
+            href: outlook-calendar-meeting-proposals.md
           - name: 安排定期事件
             href: outlook-schedule-recurring-events.md
           - name: 获取共享事件
@@ -150,6 +154,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: 从其他用户身份发送邮件
             href: outlook-send-mail-from-other-user.md
+          - name: 附加大型文件（预览版）
+            href: outlook-large-attachments.md
           - name: 整理邮件
             href: outlook-organize-messages.md
           - name: 不可变 ID
