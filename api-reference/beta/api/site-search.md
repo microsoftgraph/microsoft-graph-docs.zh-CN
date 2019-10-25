@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: 在 SharePoint 租户中搜索与所提供的关键字匹配的网站。
+description: 在 SharePoint 租户中搜索与所提供的关键字匹配的 网站。
 ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8e1ab05789438d793cd10ec2598c62bdec0414c3
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: 89b55be4ab81d59be37e2b3d20ff84a51f75991b
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113896"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726232"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -32,9 +32,11 @@ ms.locfileid: "37113896"
 |应用程序                            | Sites.Read.All、Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
+```http
+GET /sites?$search={query}
+```
 
-
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
 ```msgraph-interactive
@@ -48,7 +50,7 @@ GET https://graph.microsoft.com/beta/sites?$search={query}
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

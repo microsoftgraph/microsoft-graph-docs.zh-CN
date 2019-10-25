@@ -5,18 +5,18 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d44203c1d0a2a910182822cfc35565a30e1cd4ae
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7eaaa230617deea00a7c60589505809066e80c62
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724104"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726283"
 ---
 # <a name="get-settings-for-user-analytics"></a>获取用户分析的设置
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[settings](../resources/settings.md)对象的属性, 使其适用于分析 API。
+检索[settings](../resources/settings.md)对象的属性，使其适用于分析 API。
 
 ## <a name="permissions"></a>权限
 
@@ -26,21 +26,21 @@ ms.locfileid: "36724104"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | User.Read |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/settings
+GET /me/analytics/settings
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法不支持用于自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -52,7 +52,7 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和请求的[设置](../resources/settings.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[设置](../resources/settings.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
 
 下面展示了示例请求。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_settings"
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

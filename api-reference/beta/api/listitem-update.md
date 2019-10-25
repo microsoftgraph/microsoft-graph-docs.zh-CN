@@ -6,12 +6,12 @@ title: 更新 SharePoint 列表中的记录
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0c67ca1ee4deeb793bde68713d0ad6a235a31144
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8ddc87113fb94660f11f8f9113ac11c62e389375
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415371"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726290"
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 
@@ -34,7 +34,7 @@ ms.locfileid: "36415371"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## <a name="optional-request-headers"></a>可选的请求标头
@@ -54,7 +54,7 @@ PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{it
 listItem 上的所有其他值都保持独立。 
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -74,7 +74,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

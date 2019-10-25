@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d719268a8b3e6ff044e928485449320b77bbeff4
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 53913b3c194100b7484faf62081d1be6180b5aec
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37581206"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37724655"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
 
@@ -26,12 +26,13 @@ ms.locfileid: "37581206"
 | :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | EduRoster.ReadBasic                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
+| Application                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
-```http GET /education/schools
+```http 
+GET /education/schools
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

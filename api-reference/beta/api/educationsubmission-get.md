@@ -5,20 +5,20 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d33fea58845fb9c9034d4fef100e3393bcdd4188
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae29f712aab1cd767b0c5e65d74eca7a487af4d8
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955124"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726208"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定的提交。 提交对象表示学生的工作分配。 与提交相关联的资源表示这一工作。 仅向其分配提交的学生可以查看和修改提交。 教师具有对所有提交的完全访问权限。 
+检索特定的提交。 提交对象表示学生的工作分配。 与提交相关联的资源表示这一工作。 仅向其分配提交的学生可以查看和修改提交。 教师具有对所有提交的完全访问权限。
 
-教师的评分和反馈也是此对象的一部分。 只有教师可以添加或更改成绩和反馈。 在发布工作分配之前, 学生将看不到评分或反馈。 基本权限不包括评分和反馈, 但包括其他所有内容。
+教师的评分和反馈是与此对象相关联的[educationOutcome](../resources/educationoutcome.md)的一部分。 只有教师可以添加或更改成绩和反馈。 在发布工作分配之前，学生将看不到评分或反馈。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "35955124"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmission](../resources/educationsubmission.md)对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmission](../resources/educationsubmission.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -72,29 +72,6 @@ Content-type: application/json
 Content-length: 712
 
 {
-    "feedback": {
-      text: {
-        "content": "Good work!",
-        "contentType": "Text"
-      },
-      feedbackDateTime: "2014-01-01T00:00:00Z",
-      feedbackBy: {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012"
-        }
-      },
-      "@odata.type": "microsoft.graph.educationFeedback"
-      },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015"

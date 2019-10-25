@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 4ed9cda5da96957d3fbc1a4aa7e7919e78b74321
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: ebe19c4523ea9929ae77c9f4c408396f7b147b2c
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719211"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37723847"
 ---
 # <a name="get-activitystatistics"></a>获取 activityStatistics
 
@@ -26,26 +26,24 @@ ms.locfileid: "36719211"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 分析。读取 |
+| 委派（工作或学校帐户）     | Analytics.Read |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" }  -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/{id}
-
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
-
+GET /me/analytics/activitystatistics/{id}
+GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法不支持用于自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -57,16 +55,16 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将返回`200 OK`响应代码和请求的活动统计信息类型, 这是从[activityStatistics](../resources/activitystatistics.md)中派生的以下资源之一: {[Call](../resources/callactivitystatistics.md), [Chat](../resources/chatactivitystatistics.md), [Email](../resources/emailactivitystatistics.md), [Focus](../resources/focusactivitystatistics.md),和[会议](../resources/meetingactivitystatistics.md)}。
+如果成功，此方法将返回`200 OK`响应代码和请求的活动统计信息类型，这是从[activityStatistics](../resources/activitystatistics.md)中派生的以下资源之一： {[Call](../resources/callactivitystatistics.md)， [Chat](../resources/chatactivitystatistics.md)， [Email](../resources/emailactivitystatistics.md)， [Focus](../resources/focusactivitystatistics.md)，和[会议](../resources/meetingactivitystatistics.md)}。
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-下面的示例请求在2019-06-16 和2019-06-17 之间的日期范围内登录用户的类型 emailActivityStatistics 的统计信息。 有关常规 id 属性格式的详细信息, 请参阅[activity id 属性](../resources/activitystatistics.md#activity-id-property)。
+下面的示例请求在2019-06-16 和2019-06-17 之间的日期范围内登录用户的类型 emailActivityStatistics 的统计信息。 有关常规 id 属性格式的详细信息，请参阅[activity id 属性](../resources/activitystatistics.md#activity-id-property)。
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -84,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activitystatistics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activitystatistics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +91,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-
 
 #### <a name="response"></a>响应
 
-下面的示例演示了一个响应, 该响应获取特定活动和一天的已登录用户的活动统计信息。
+下面的示例演示了一个响应，该响应获取特定活动和一天的已登录用户的活动统计信息。
 
 <!-- {
   "blockType": "response",

@@ -1,22 +1,22 @@
 ---
-title: 'educationSubmission: release'
+title: educationSubmission： release
 description: " 并指示已完成评分。 此操作仅可由教师完成。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ddf437c60ae4ca56a800bd82b081b149a686eabe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ac32d42367d68e405263c66a9bdd980bb652ae5
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955072"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726191"
 ---
-# <a name="educationsubmission-release"></a>educationSubmission: release
+# <a name="educationsubmission-release"></a>educationSubmission： release
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作使与此提交相关联的评分和反馈可供学生使用。 这会将提交状态从 "已提交" 更改为 "已发布", 并指示已完成评分。 此操作仅可由教师完成。
+此操作将使[educationOutcome](../resources/educationoutcome.md) ，其中包括与此提交相关的任何成绩或反馈，以供学生使用。 这会将提交状态从 "已提交" 更改为 "已发布"，并指示已完成评分。 此操作仅可由教师完成。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "35955072"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

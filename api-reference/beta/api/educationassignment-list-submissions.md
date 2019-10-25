@@ -1,22 +1,22 @@
 ---
 title: 列表提交
-description: 列出与此工作分配相关联的所有提交。 教师可以获取所有提交, 而学生只能获取与之关联的提交。
+description: 列出与此工作分配相关联的所有提交。 教师可以获取所有提交，而学生只能获取与之关联的提交。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 236c5dc88a50ad537f2142cc3a8e8dc5084c2c5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0aa4e8119ba1d06d11e703545300411cf70d561
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955640"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37724555"
 ---
 # <a name="list-submissions"></a>列表提交
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此工作分配相关联的所有提交。 教师可以获取所有提交, 而学生只能获取与之关联的提交。
+列出与此工作分配相关联的所有提交。 教师可以获取所有提交，而学生只能获取与之关联的提交。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "35955640"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmission](../resources/educationsubmission.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmission](../resources/educationsubmission.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -55,7 +55,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -73,30 +73,6 @@ Content-length: 873
 {
   "value": [
     {
-      "feedback": {
-        "text": {
-          "content": "Good work!",
-          "contentType": "Text"
-        },
-        "feedbackDateTime": "2014-01-01T00:00:00Z",
-        "feedbackBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-          "@odata.type": "microsoft.graph.identitySet"
-        },
-        "@odata.type": "microsoft.graph.educationFeedback"
-        },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015",

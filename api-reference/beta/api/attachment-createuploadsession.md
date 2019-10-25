@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116b73b53689c01e346568b6b5d67e56fb31b283
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 541173547ba8222ca5b64cb3396e972be5b017fc
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621603"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37719451"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "37621603"
 
 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的[邮件](../resources/message.md)。
 
-使用此方法可以将3MB 和150MB 之间的大小的文件附加到**邮件**。 若要在4MB 下附加大小的文件，只需[在 "附件" 导航属性上进行发布](message-post-attachments.md)即可。 
+使用此方法可将大小为 3 MB 和 150 MB 的文件附加到**邮件**中。 若要在 4 MB 下附加大小的文件，只需[在 "附件" 导航属性上进行发布](message-post-attachments.md)即可。 
 
 作为响应的一部分，此操作将返回可在后续顺序`PUT`查询中使用的上载 URL。 每个`PUT`操作的请求标头允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
 
@@ -31,6 +31,8 @@ ms.locfileid: "37621603"
 
 有关示例，请参阅[将大型文件附加到 Outlook 邮件](/graph/outlook-large-attachments)。
 
+> [!TIP]
+> Exchange Online 允许管理员自定义 Office 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
 
 ## <a name="permissions"></a>权限
 
@@ -85,6 +87,8 @@ POST /me/messages/{id}/attachments/createUploadSession
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -103,6 +107,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

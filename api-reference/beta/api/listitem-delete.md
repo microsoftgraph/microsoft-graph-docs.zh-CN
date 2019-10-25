@@ -6,12 +6,12 @@ title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 39f0d032277cf38c50c51df99d4a65ac44cf8740
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: bb109a9b4ff4079b71ad5dd4fdc8e48c2dbda8c8
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415405"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726225"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -19,7 +19,7 @@ ms.locfileid: "36415405"
 
 从 [list][] 中删除项。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "36415405"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="optional-request-headers"></a>可选的请求标头
@@ -54,7 +54,7 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 ## <a name="example"></a>示例
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
 ```http
@@ -68,7 +68,7 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

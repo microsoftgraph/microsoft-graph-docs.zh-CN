@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 97bf2cee1f7297fceef895a9b2df1acb3192a226
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: db4722b3bb4e648d276c2e4e9b642d68a1caa5a9
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719197"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37723760"
 ---
 # <a name="list-activitystatistics"></a>列出 activityStatistics
 
@@ -24,24 +24,24 @@ ms.locfileid: "36719197"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 分析。读取 |
+| 委派（工作或学校帐户）     | Analytics.Read |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics 
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
+GET /me/analytics/activitystatistics 
+GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法不支持用于自定义响应的可选查询参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[activityStatistics](../resources/activitystatistics.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[activityStatistics](../resources/activitystatistics.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 
 以下是已登录用户的所有相关活动统计信息的请求示例。
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activitystatistics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activitystatistics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ### <a name="response"></a>响应
 
-以下是用户的所有相关活动统计信息响应的示例。 此响应仅显示一周的活动的第一天, 以缩短可读性。
+以下是用户的所有相关活动统计信息响应的示例。 此响应仅显示一周的活动的第一天，以缩短可读性。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

@@ -6,12 +6,12 @@ title: 检索 SharePoint 列表中的项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 19f810c2d4f71f2bc296ecd590a493cd22e30f22
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1cd2bdf856f89068708ac670c239b6d27fd7ded2
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726156"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726297"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -19,7 +19,7 @@ ms.locfileid: "36726156"
 
 获取[列表][]中[项][item]的集合。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
 ## <a name="permissions"></a>权限
@@ -35,9 +35,9 @@ ms.locfileid: "36726156"
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+GET /sites/{site-id}/lists/{list-id}/items
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
 ## <a name="example"></a>示例
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 #### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items" } -->
 
 ```msgraph-interactive
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
