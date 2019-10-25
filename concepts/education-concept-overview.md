@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 scenarios: getting-started
-ms.openlocfilehash: 749d97ed3181852751996792e07ca4c573bb1c60
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: c5d00f5940c547a1f95381144f4a2af56f3ab125
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792847"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726406"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
@@ -49,7 +49,7 @@ Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内�
 以下是由作业 API 启用的几个方案示例：
 
 - [添加到应用程序的作业链接](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [对于链接到应用程序的作业，将成绩分配给各个学生](/graph/api/educationsubmission-update?view=graph-rest-beta)
+- [对于链接到应用程序的作业，将成绩等结果分配给各个学生](/graph/api/educationoutcome-update?view=graph-rest-beta)
 - [创建学生仪表板以显示哪些作业何时截止](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
 
 
