@@ -7497,7 +7497,7 @@
                   items:
                     - name: 获取
                       href: api/intune-shared-windowsautopilotdeploymentprofile-get.md
-                    - name: 分配操作
+                    - name: assign 操作
                       href: api/intune-shared-windowsautopilotdeploymentprofile-assign.md
                     - name: hasPayloadLinks 操作
                       href: api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md
@@ -7710,8 +7710,6 @@
                   href: api/educationsubmission-list-outcomes.md
                 - name: 获取已提交的资源
                   href: api/educationsubmittedsubmissionresource-get.md
-                - name: 成绩提交
-                  href: api/educationsubmission-update.md
                 - name: 返回提交
                   href: api/educationsubmission-return.md
             - name: 结果
@@ -8240,7 +8238,7 @@
             - name: 基于证书的身份验证配置
               href: resources/certificatebasedauthconfiguration.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: 获取
                   href: api/certificatebasedauthconfiguration-get.md
@@ -8252,7 +8250,7 @@
               items:
                 - name: 策略
                   items:
-                    - name: 条件访问策略
+                    - name: 条件性访问策略
                       href: resources/conditionalaccesspolicy.md
                     - name: 列出
                       href: api/conditionalaccessroot-list-policies.md
@@ -8264,22 +8262,13 @@
                       href: api/conditionalaccesspolicy-update.md
                     - name: 删除
                       href: api/conditionalaccesspolicy-delete.md
-            - name: 合同
-              href: resources/contract.md
-              items:
-                - name: 获取合同
-                  href: api/contract-get.md
-                - name: 列出合同
-                  href: api/contract-list.md
-            - name: 条件访问
-              items:
                 - name: 命名位置
                   items:
                     - name: 命名位置
                       items:
                         - name: 命名位置
                           href: resources/namedlocation.md
-                        - name: 列表
+                        - name: 列出
                           href: api/conditionalaccessroot-list-namedlocations.md
                         - name: 获取
                           href: api/namedlocation-get.md
@@ -8313,6 +8302,13 @@
                           href: api/ipnamedlocation-update.md
                         - name: 删除
                           href: api/ipnamedlocation-delete.md
+            - name: 合同
+              href: resources/contract.md
+              items:
+                - name: 获取合同
+                  href: api/contract-get.md
+                - name: 列出合同
+                  href: api/contract-list.md
             - name: 数据策略操作
               href: resources/datapolicyoperation.md
               items:
