@@ -3,14 +3,14 @@ title: 删除 identityProvider
 description: 删除现有的 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: cceaea97f613c33ea2a104a7cf0b4d09077949e6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 07fde1e891c3ffb49d21114ade5a252fd686a611
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420543"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734442"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36420543"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|IdentityProvider.ReadWrite.All|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -58,7 +58,7 @@ DELETE /identityProviders/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

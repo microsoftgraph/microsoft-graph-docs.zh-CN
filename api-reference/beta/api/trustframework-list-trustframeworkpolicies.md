@@ -5,16 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 019b309a4c789cef3da5e8ac6f0ccc0aabbe13e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 32b6314409bd9253e85d8a9df31cf005d0fe3983
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722102"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734470"
 ---
 # <a name="list-trustframeworkpolicies"></a>列出 trustFrameworkPolicies
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 检索租户/目录中的[trustFrameworkPolicies](../resources/trustframeworkpolicy.md)列表。
 
@@ -24,9 +24,9 @@ ms.locfileid: "36722102"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|TrustFramework、Policy、Read. All|
+|委派（工作或学校帐户）|Policy.Read.All|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|Policy.Read.All|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -52,7 +52,7 @@ GET /trustFramework/policies/
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文的 JSON 表示形式中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象集合。
+如果成功，此方法在响应`200 OK`正文的 JSON 表示形式中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -61,7 +61,7 @@ GET /trustFramework/policies/
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_trustFrameworks"
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworks-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

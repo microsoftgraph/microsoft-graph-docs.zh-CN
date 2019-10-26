@@ -3,14 +3,14 @@ title: 更新 identityProvider
 description: 更新现有 Identityprovider.read.all 中的属性。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: c0b13dd9eece28a2910f1034a9a484d932a9c6a8
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1cbbac43b7c47ee7aa160bf1e66a94e1afdb0c60
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420495"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734428"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36420495"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序| IdentityProvider.ReadWrite.All|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -65,7 +65,7 @@ PATCH /identityProviders/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -87,7 +87,7 @@ Content-length: 41
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

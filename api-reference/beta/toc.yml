@@ -8882,6 +8882,40 @@
                   href: api/trustframework-put-trustframeworkpolicy.md
                 - name: 删除
                   href: api/trustframeworkpolicy-delete.md
+            - name: 信任框架键集
+              href: resources/trustframeworkkeyset.md
+              items:
+                - name: 列出
+                  href: api/trustframework-list-keysets.md
+                - name: 创建
+                  href: api/trustframework-post-keysets.md
+                - name: 获取
+                  href: api/trustframeworkkeyset-get.md
+                - name: 更新
+                  href: api/trustframeworkkeyset-update.md
+                - name: 删除
+                  href: api/trustframeworkkeyset-delete.md
+                - name: 生成密钥
+                  href: api/trustframeworkkeyset-generatekey.md
+                - name: 获取活动密钥
+                  href: api/trustframeworkkeyset-getactivekey.md
+                - name: 上传证书
+                  href: api/trustframeworkkeyset-uploadcertificate.md
+                - name: 上传私钥
+                  href: api/trustframeworkkeyset-uploadpkcs12.md
+                - name: 上传密码
+                  href: api/trustframeworkkeyset-uploadsecret.md
+            - name: 用户流
+              href: resources/identityuserflow.md
+              items:
+                - name: 列出
+                  href: api/identityuserflow-list.md
+                - name: 创建
+                  href: api/identityuserflow-post-userflows.md
+                - name: 获取
+                  href: api/identityuserflow-get.md
+                - name: 删除
+                  href: api/identityuserflow-delete.md
         - name: 邮件
           displayName: 'Outlook, Outlook mail'
           items:

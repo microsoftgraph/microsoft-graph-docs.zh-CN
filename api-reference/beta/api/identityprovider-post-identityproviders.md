@@ -3,14 +3,14 @@ title: 创建 identityProvider
 description: 通过指定显示名称、identityProvider 类型、客户端 ID 和客户端密码，创建新的 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 194b539125c0cb0a3c4a73d3e80481994527b368
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 96d794670c185e8c06b0cf5c34315dbb2f2fbadc
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419550"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734456"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36419550"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|IdentityProvider.ReadWrite.All|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -53,7 +53,7 @@ POST /identityProviders
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
-|type|字符串|标识提供程序类型。 它必须是下列值之一: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
+|type|字符串|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 
 ## <a name="response"></a>响应
 
@@ -66,7 +66,7 @@ POST /identityProviders
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
@@ -90,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-identityprovider-from-identityproviders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-identityprovider-from-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

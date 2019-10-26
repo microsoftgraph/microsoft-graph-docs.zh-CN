@@ -1,22 +1,22 @@
 ---
 title: 更新 trustFrameworkPolicy
-description: '此操作将更新现有的 trustFrameworkPolicy 对象, 如果不存在, 则创建一个。 '
+description: '此操作将更新现有的 trustFrameworkPolicy 对象，如果不存在，则创建一个。 '
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f5aa7f489faecb053ddad2734c1318c3cba7ed71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ade1f27b65b5149a0847fb39ab7efd16042e018
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977445"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734477"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>更新或创建 trustFrameworkPolicy
 
->**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+>**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-更新现有[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) , 如果不存在, 则创建一个。
+更新现有[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，如果不存在，则创建一个。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "35977445"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|TrustFramework、全部写读。|
+|委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -43,19 +43,19 @@ PUT /trustFramework/policies/{id}/$value
 |名称|说明|
 |:---------------|:----------|
 |Authorization|Bearer {token}。必需。|
-|Content-Type|application/xml。 必需。|
+|Content-Type|application/xml。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。 
+在请求正文中，提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。 
 
->**注意:** 内容类型必须为`application/xml`。
+>**注意：** 内容类型必须为`application/xml`。
 
 ## <a name="response"></a>响应
 
-响应将为以下之一:
-- 如果存在[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) , 则成功的请求将返回`200 OK`响应代码。
-- 如果[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)不存在, 则成功的请求将返回`201 Created`响应代码。
+响应将为以下之一：
+- 如果存在[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，则成功的请求将返回`200 OK`响应代码。
+- 如果[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)不存在，则成功的请求将返回`201 Created`响应代码。
 - 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例

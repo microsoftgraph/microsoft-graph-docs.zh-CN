@@ -5,16 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e71048b1ffc461228670521fd971e6df293cd5e4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 77363aa262314b8d6a6d7ff3470327569159e1e7
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409196"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734421"
 ---
 # <a name="delete-trustframeworkpolicy"></a>删除 trustFrameworkPolicy
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 删除现有的[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "36409196"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -58,7 +58,7 @@ DELETE /trustFramework/policies/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_trustFrameworkPolicy"
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-trustframeworkpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-trustframeworkpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

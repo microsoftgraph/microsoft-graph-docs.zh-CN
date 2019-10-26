@@ -5,16 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac3e1546e72e91988ef5339ad201fab7f3f2224d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 39dd9cbc14ae0dc6040618619595dd4cceb0dadc
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990566"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734463"
 ---
 # <a name="create-trustframeworkpolicy"></a>创建 trustFrameworkPolicy
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 创建新的[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象。
 
@@ -26,7 +26,7 @@ ms.locfileid: "35990566"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|Policy.ReadWrite.TrustFramework|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -42,15 +42,15 @@ POST /trustFramework/policies
 |名称|说明|
 |:---------------|:----------|
 |Authorization|Bearer {token}。必需。|
-|Content-Type|application/xml。 必需。|
+|Content-Type|application/xml。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。 内容类型必须是 `application/xml`。
+在请求正文中，提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。 内容类型必须是 `application/xml`。
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`201 Created`正文中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法在响应`201 Created`正文中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 

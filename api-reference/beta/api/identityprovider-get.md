@@ -3,14 +3,14 @@ title: 获取 identityProvider
 description: 检索现有 Identityprovider.read.all 的属性。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 9d1d7c30b1fb70afe07a21f1c3835f6fcb714bbe
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 676c5c879b3aa09e18ce1f4f6f374f11d4db1352
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721514"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734435"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36721514"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|不支持。|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户必须是租户的全局管理员。
 
@@ -58,7 +58,7 @@ GET /identityProviders/{id}
 ##### <a name="request"></a>请求
 
 
-# <a name="httptabhttp"></a>[HTTP.SYS](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[目标-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
