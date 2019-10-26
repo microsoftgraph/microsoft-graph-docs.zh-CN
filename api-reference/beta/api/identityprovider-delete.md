@@ -3,62 +3,62 @@ title: 删除 identityProvider
 description: 删除现有的 identityProvider。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: cceaea97f613c33ea2a104a7cf0b4d09077949e6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 07fde1e891c3ffb49d21114ade5a252fd686a611
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420543"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734442"
 ---
-# <a name="delete-identityprovider"></a><span data-ttu-id="14c4f-103">删除 identityProvider</span><span class="sxs-lookup"><span data-stu-id="14c4f-103">Delete identityProvider</span></span>
+# <a name="delete-identityprovider"></a><span data-ttu-id="b08d8-103">删除 identityProvider</span><span class="sxs-lookup"><span data-stu-id="b08d8-103">Delete identityProvider</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="14c4f-104">删除现有的 [identityProvider](../resources/identityprovider.md)。</span><span class="sxs-lookup"><span data-stu-id="14c4f-104">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
+<span data-ttu-id="b08d8-104">删除现有的 [identityProvider](../resources/identityprovider.md)。</span><span class="sxs-lookup"><span data-stu-id="b08d8-104">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="14c4f-105">权限</span><span class="sxs-lookup"><span data-stu-id="14c4f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b08d8-105">权限</span><span class="sxs-lookup"><span data-stu-id="b08d8-105">Permissions</span></span>
 
-<span data-ttu-id="14c4f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="14c4f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b08d8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b08d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14c4f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="14c4f-108">Permission type</span></span>      | <span data-ttu-id="14c4f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="14c4f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b08d8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="b08d8-108">Permission type</span></span>      | <span data-ttu-id="b08d8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b08d8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="14c4f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="14c4f-110">Delegated (work or school account)</span></span>|<span data-ttu-id="14c4f-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14c4f-111">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="14c4f-112">委派（Microsoft 个人帐户）</span><span class="sxs-lookup"><span data-stu-id="14c4f-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="14c4f-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="14c4f-113">Not supported.</span></span>|
-|<span data-ttu-id="14c4f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="14c4f-114">Application</span></span>|<span data-ttu-id="14c4f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="14c4f-115">Not supported.</span></span>|
+|<span data-ttu-id="b08d8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b08d8-110">Delegated (work or school account)</span></span>|<span data-ttu-id="b08d8-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b08d8-111">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="b08d8-112">委派（Microsoft 个人帐户）</span><span class="sxs-lookup"><span data-stu-id="b08d8-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="b08d8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="b08d8-113">Not supported.</span></span>|
+|<span data-ttu-id="b08d8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="b08d8-114">Application</span></span>|<span data-ttu-id="b08d8-115">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b08d8-115">IdentityProvider.ReadWrite.All</span></span>|
 
-<span data-ttu-id="14c4f-116">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="14c4f-116">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="b08d8-116">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="b08d8-116">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="14c4f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="14c4f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b08d8-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b08d8-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /identityProviders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="14c4f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="14c4f-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b08d8-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b08d8-118">Request headers</span></span>
 
-|<span data-ttu-id="14c4f-119">名称</span><span class="sxs-lookup"><span data-stu-id="14c4f-119">Name</span></span>|<span data-ttu-id="14c4f-120">说明</span><span class="sxs-lookup"><span data-stu-id="14c4f-120">Description</span></span>|
+|<span data-ttu-id="b08d8-119">名称</span><span class="sxs-lookup"><span data-stu-id="b08d8-119">Name</span></span>|<span data-ttu-id="b08d8-120">说明</span><span class="sxs-lookup"><span data-stu-id="b08d8-120">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="14c4f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="14c4f-121">Authorization</span></span>|<span data-ttu-id="14c4f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="14c4f-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b08d8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b08d8-121">Authorization</span></span>|<span data-ttu-id="b08d8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b08d8-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="14c4f-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="14c4f-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b08d8-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="b08d8-124">Request body</span></span>
 
-<span data-ttu-id="14c4f-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="14c4f-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b08d8-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b08d8-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14c4f-126">响应</span><span class="sxs-lookup"><span data-stu-id="14c4f-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b08d8-126">响应</span><span class="sxs-lookup"><span data-stu-id="b08d8-126">Response</span></span>
 
-<span data-ttu-id="14c4f-127">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="14c4f-127">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="b08d8-127">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="b08d8-127">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14c4f-128">示例</span><span class="sxs-lookup"><span data-stu-id="14c4f-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b08d8-128">示例</span><span class="sxs-lookup"><span data-stu-id="b08d8-128">Example</span></span>
 
-<span data-ttu-id="14c4f-129">以下示例会删除 **identityProvider**。</span><span class="sxs-lookup"><span data-stu-id="14c4f-129">The following example deletes an **identityProvider**.</span></span>
+<span data-ttu-id="b08d8-129">以下示例会删除 **identityProvider**。</span><span class="sxs-lookup"><span data-stu-id="b08d8-129">The following example deletes an **identityProvider**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="14c4f-130">请求</span><span class="sxs-lookup"><span data-stu-id="14c4f-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b08d8-130">请求</span><span class="sxs-lookup"><span data-stu-id="b08d8-130">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="14c4f-131">HTTP.SYS</span><span class="sxs-lookup"><span data-stu-id="14c4f-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b08d8-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="b08d8-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -66,22 +66,22 @@ DELETE /identityProviders/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="14c4f-132">C#</span><span class="sxs-lookup"><span data-stu-id="14c4f-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b08d8-132">C#</span><span class="sxs-lookup"><span data-stu-id="b08d8-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="14c4f-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="14c4f-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b08d8-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b08d8-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="14c4f-134">目标-C</span><span class="sxs-lookup"><span data-stu-id="14c4f-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b08d8-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b08d8-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="14c4f-135">响应</span><span class="sxs-lookup"><span data-stu-id="14c4f-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b08d8-135">响应</span><span class="sxs-lookup"><span data-stu-id="b08d8-135">Response</span></span>
 
 <!-- {
   "blockType": "response",
