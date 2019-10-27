@@ -8885,6 +8885,8 @@
             - name: 信任框架键集
               href: resources/trustframeworkkeyset.md
               items:
+                - name: 信任框架密钥
+                  href: resources/trustframeworkkey.md
                 - name: 列出
                   href: api/trustframework-list-keysets.md
                 - name: 创建
@@ -8901,7 +8903,7 @@
                   href: api/trustframeworkkeyset-getactivekey.md
                 - name: 上传证书
                   href: api/trustframeworkkeyset-uploadcertificate.md
-                - name: 上传私钥
+                - name: 上传 PKCS12 证书
                   href: api/trustframeworkkeyset-uploadpkcs12.md
                 - name: 上传密码
                   href: api/trustframeworkkeyset-uploadsecret.md
