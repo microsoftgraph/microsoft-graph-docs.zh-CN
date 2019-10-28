@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 57dff2056c2ebaafc7d5b5ac752f9261e7169010
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: af7fa42e18fa9d90d7f6f238cfeb86bd6efe7d4c
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726486"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734491"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -20,10 +20,25 @@ ms.locfileid: "37726486"
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>身份和访问 (Azure AD) | 条件访问
 
-|更改类型|版本|说明|
-|:---|:---|:---|
-|添加|beta|添加了新实体类型：<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
-|Addition|beta|新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | beta | 添加了新实体类型：<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
+| Addition | beta | 新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
+
+### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 添加了新实体类型：[Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
+| 添加项 | Beta | 添加了新实体类型：[Identityuserflow] (/graph/api/resources/identityuserflow?view=graph-rest beta |
+| Addition | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
+| 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
+| 添加项 | Beta 和 v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **securityIdentifier** 属性。 |
+| 添加 | Beta 和 v1.0 | 向 [device](/graph/api/resources/group?view=graph-rest-1.0) 资源添加了 **mdmAppId** 属性。 |
+| 添加 | Beta | 已将 **manufacturer** 和 **model** 属性添加到 [device](/graph/api/resources/device?view=graph-rest-beta) 实体。 |
+| 添加 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0)。 |
+| 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0)。 |
+| 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-v1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
 
 ### <a name="calendar"></a>日历
 
@@ -106,7 +121,7 @@ ms.locfileid: "37726486"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 删除项 | beta | 已从 [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta) 删除[以前公布的](https://developer.microsoft.com/zh-CN/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta)已弃用的属性 **grade** 和 **feedback**。 现在可通过 [educationOutcome](/graph/api/educationsubmission-list-outcome?view=graph-rest-beta) 访问成绩和反馈。|
+| 删除项 | beta | 已从 [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta) 删除[以前公布的](https://developer.microsoft.com/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta)已弃用的属性 **grade** 和 **feedback**。 现在可通过 [educationOutcome](/graph/api/educationsubmission-list-outcome?view=graph-rest-beta) 访问成绩和反馈。|
 
 ### <a name="groups"></a>组
 
@@ -647,7 +662,7 @@ ms.locfileid: "37726486"
 ### <a name="groups"></a>组
 | **更改类型** | **版本** | **说明** |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
+| 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
 
 ### <a name="identity-and-access-azure-ad--identity-protection"></a>身份和访问（Azure AD）| 身份保护
 
@@ -759,7 +774,7 @@ ms.locfileid: "37726486"
 | Addition | beta | 为**访问评审** API 添加了新的应用程序权限：AccessReview.Read.All、ProgramControl.Read.All 和 ProgramControl.ReadWrite.All。 有关详细信息，请参阅[访问评审 API 参考](/graph/api/resources/accessreviews-root?view=graph-rest-beta)。 |
 | Addition | beta | 对[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加 **signInSessionsValidFromDateTime** 属性。 这是 **refreshTokensValidFromDateTime** 属性的重命名，但两个属性将均受支持，以使客户端顺畅迁移。 将在接下来的几个月中删除 **refreshTokensValidFromDateTime** 属性。|
 | Addition | beta | 对[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加 **revokeSignInSessions** 操作。 这是 **invalidateAllRefreshTokens** 属性的重命名，但两项服务操作将均受支持，以使客户端顺畅迁移。 将在接下来的几个月中删除旧的服务操作 **invalidateAllRefreshTokens**。 |
-| 添加项 | Beta |引入了新的资源类型[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)以支持[Azure Active Directory B2C](https://docs.microsoft.com/zh-CN/azure/active-directory-b2c/active-directory-b2c-overview)。 此资源类型支持[创建](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[列表](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[获取](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、[更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)和[删除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)操作。|
+| 添加项 | Beta |引入了新的资源类型[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)以支持[Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview)。 此资源类型支持[创建](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[列表](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[获取](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、[更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)和[删除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)操作。|
 
 ### <a name="mail-outlook"></a>邮件 (Outlook)
 
@@ -1003,7 +1018,7 @@ ms.locfileid: "37726486"
 | 添加项 | v1.0 | 在[用户](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0)、[组](/graph/api/group-list-transitivemembersof?view=graph-rest-beta)和[设备](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0)上添加了 transitiveMemberOf 新方法。|
 | 添加项 | v1.0 | 向[用户](/graph/api/resources/user?view=graph-rest-1.0)：**employeeId**、**faxNumber**、**onPremisesDistinguishedName**、**showInAddressList** 和 **otherMails** 中添加了新属性。|
 | 添加项 | v1.0 | 向 [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) 复杂类型添加了 **forceChangePasswordNextSignInWithMfa** 属性。|
-| 添加 | v1.0 | 向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **licenseAssignmentStates** 属性以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
+| Addition | v1.0 | 向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **licenseAssignmentStates** 属性以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 | 添加 | v1.0 | 添加了 **licenseAssignmentState** 资源以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 | 添加 | v1.0 | 向 [Group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了 **assignedLicenses**、**licenseProcessingState** 和 **hasMembersWithLicenseErrors** 属性及 **membersWithLicenseErrors** 关系以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 | 添加 | beta 版本 | 向 [organization](/graph/api/resources/user?view=graph-rest-beta) 实体添加了 **createdDateTime** 属性。|
@@ -1035,7 +1050,7 @@ ms.locfileid: "37726486"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/zh-CN/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta)。|
+| 添加项 | beta | 已将新属性 `expirationDateTime` 添加到 [group expiration](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle) 的[组](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)。|
 | 添加项 | beta | 添加了新资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。|
 | 添加 | beta | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 `createdDateTime` 属性。|
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|
