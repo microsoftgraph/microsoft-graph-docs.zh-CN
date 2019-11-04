@@ -1,97 +1,85 @@
 ---
 title: 通知资源类型
-description: '表示由面向指定用户的应用程序服务器发布的通知。 通知存储在 Microsoft Graph 中, 并分发给用户拥有的不同设备终结点。 '
+description: '表示由面向指定用户的应用程序服务器发布的通知。 通知存储在 Microsoft Graph 中，并分发给用户拥有的不同设备终结点。 '
 localization_priority: Normal
-ms.prod: project-rome
+ms.prod: notifications
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: f9d9a4ff77190e18b8c090cf9c976decb4edfc3d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+author: merzink
+ms.openlocfilehash: 8b1207007e113d42291ac07f1c5220f74e168261
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965577"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939346"
 ---
-# <a name="notification-resource-type"></a><span data-ttu-id="60fb5-104">通知资源类型</span><span class="sxs-lookup"><span data-stu-id="60fb5-104">notification resource type</span></span>
+# <a name="notification-resource-type"></a><span data-ttu-id="db575-104">通知资源类型</span><span class="sxs-lookup"><span data-stu-id="db575-104">notification resource type</span></span>
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="60fb5-105">表示由面向指定用户的应用程序服务器发布的通知。</span><span class="sxs-lookup"><span data-stu-id="60fb5-105">Represents a notification that is published by an app server that targets a specified user.</span></span> <span data-ttu-id="60fb5-106">通知存储在 Microsoft Graph 中, 并分发给用户拥有的不同设备终结点。</span><span class="sxs-lookup"><span data-stu-id="60fb5-106">The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user.</span></span> 
+<span data-ttu-id="db575-105">表示由面向指定用户的应用程序服务器发布的通知。</span><span class="sxs-lookup"><span data-stu-id="db575-105">Represents a notification that is published by an app server that targets a specified user.</span></span> <span data-ttu-id="db575-106">通知存储在 Microsoft Graph 中，并分发给用户拥有的不同设备终结点。</span><span class="sxs-lookup"><span data-stu-id="db575-106">The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user.</span></span> 
 
-<span data-ttu-id="60fb5-107">通知可以是操作系统可解释的可视化通知有效负载, 包括 Windows、Android 和 iOS 平台。</span><span class="sxs-lookup"><span data-stu-id="60fb5-107">A notification can be a visual notification payload that can be interpreted by the operating system, including Windows, Android, and iOS platforms.</span></span> <span data-ttu-id="60fb5-108">它还可以是应用程序客户端传递和处理的数据有效负载, 然后在每个设备上确定相应的用户体验–通常是与生成的原始数据有效负载中的内容相对应的可视化通知 UIsmu.</span><span class="sxs-lookup"><span data-stu-id="60fb5-108">It can also be a data payload that's delivered to and handled by app clients, which then determine the corresponding user experience on each device – usually, a visual notification UI that corresponds to the content in the original data payload that's generated locally.</span></span> 
+<span data-ttu-id="db575-107">通知可以是操作系统（Windows、Android 和 iOS 平台）可解释的视觉通知负载。</span><span class="sxs-lookup"><span data-stu-id="db575-107">A notification can be a visual notification payload that can be interpreted by the operating system (Windows, Android, and iOS platforms).</span></span> <span data-ttu-id="db575-108">它还可以是由应用程序客户端（包括 web）传递和处理的数据有效负载（rawContent），然后在每个设备上确定相应的用户体验。</span><span class="sxs-lookup"><span data-stu-id="db575-108">It can also be a data payload (rawContent) that's delivered to and handled by app clients (including web), which then determine the corresponding user experience on each device.</span></span>  <span data-ttu-id="db575-109">这通常是本地生成的 visual 通知 UI，与原始数据有效负载中的内容相对应。</span><span class="sxs-lookup"><span data-stu-id="db575-109">This is usually a visual notification UI, generated locally, that corresponds to the content in the original data payload.</span></span> 
 
-<span data-ttu-id="60fb5-109">当用户在视觉通知中进行操作时, 应用程序客户端可以使用客户端 Project 罗马 SDK 更新 Microsoft Graph 中相应通知源的状态, 例如, 将通知标记为已关闭。</span><span class="sxs-lookup"><span data-stu-id="60fb5-109">When a user acts on a visual notification, the app client can then use client-side Project Rome SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed.</span></span> <span data-ttu-id="60fb5-110">然后, 该更新将分发到所有其他应用程序客户端终结点, 客户端将相应地处理更改, 例如, 通过关闭通知阻止用户查看冗余信息。</span><span class="sxs-lookup"><span data-stu-id="60fb5-110">The update will then be distributed to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information.</span></span> <span data-ttu-id="60fb5-111">应用程序客户端可以在过期之前 (甚至在将其标记为解除标记时) 访问相同的通知资源, 这是通过[Project 罗马 SDK](https://github.com/Microsoft/project-rome)的通知历史记录。</span><span class="sxs-lookup"><span data-stu-id="60fb5-111">App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [Project Rome SDK](https://github.com/Microsoft/project-rome).</span></span> 
+<span data-ttu-id="db575-110">当用户在视觉通知中进行操作时，应用程序客户端可以使用客户端通知 SDK 更新 Microsoft Graph 中相应通知源的状态（例如，通过将通知标记为已关闭）。</span><span class="sxs-lookup"><span data-stu-id="db575-110">When a user acts on a visual notification, the app client can then use the client-side notifications SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed.</span></span> <span data-ttu-id="db575-111">然后，该更新将分发到所有其他应用程序客户端终结点，客户端将相应地处理更改，例如，通过关闭通知阻止用户查看冗余信息。</span><span class="sxs-lookup"><span data-stu-id="db575-111">The update will then be distributed to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information.</span></span> <span data-ttu-id="db575-112">应用程序客户端可以在过期之前（甚至在将其标记为 "已解除" 时）访问相同的通知资源，这是通过[通知 SDK](https://aka.ms/GNSDK)的通知历史记录。</span><span class="sxs-lookup"><span data-stu-id="db575-112">App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [notification SDK](https://aka.ms/GNSDK).</span></span> 
 
-## <a name="methods"></a><span data-ttu-id="60fb5-112">方法</span><span class="sxs-lookup"><span data-stu-id="60fb5-112">Methods</span></span>
-|<span data-ttu-id="60fb5-113">方法</span><span class="sxs-lookup"><span data-stu-id="60fb5-113">Method</span></span> | <span data-ttu-id="60fb5-114">返回类型</span><span class="sxs-lookup"><span data-stu-id="60fb5-114">Return Type</span></span> | <span data-ttu-id="60fb5-115">说明</span><span class="sxs-lookup"><span data-stu-id="60fb5-115">Description</span></span>|
+> [!NOTE]
+> <span data-ttu-id="db575-113">通知状态更新（如 "已读" 或 "已消除"）将不会扇到 web 终结点。</span><span class="sxs-lookup"><span data-stu-id="db575-113">Notification state updates, such as read or dismissed, will not be fanned out to web endpoints.</span></span> <span data-ttu-id="db575-114">这是因为跨不同浏览器的 web 推送需要向用户显示可视 toast 通知。</span><span class="sxs-lookup"><span data-stu-id="db575-114">This is because web pushes across various browsers require visual toast notifications to be displayed to a user.</span></span> <span data-ttu-id="db575-115">由于状态更改没有对应的可视化内容，因此将仅扇针对 Windows、iOS 或 Android 平台的通知。</span><span class="sxs-lookup"><span data-stu-id="db575-115">Because state changes have no corresponding visual content, they will only be fanned-out for notifications targeting Windows, iOS, or Android platforms.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="db575-116">方法</span><span class="sxs-lookup"><span data-stu-id="db575-116">Methods</span></span>
+|<span data-ttu-id="db575-117">方法</span><span class="sxs-lookup"><span data-stu-id="db575-117">Method</span></span> | <span data-ttu-id="db575-118">返回类型</span><span class="sxs-lookup"><span data-stu-id="db575-118">Return Type</span></span> | <span data-ttu-id="db575-119">说明</span><span class="sxs-lookup"><span data-stu-id="db575-119">Description</span></span>|
 |:------|:------------|:-----------|
-|[<span data-ttu-id="60fb5-116">创建通知</span><span class="sxs-lookup"><span data-stu-id="60fb5-116">Create notification</span></span>](../api/notifications-post.md) | [<span data-ttu-id="60fb5-117">通告</span><span class="sxs-lookup"><span data-stu-id="60fb5-117">notification</span></span>](projectrome-notification.md) |<span data-ttu-id="60fb5-118">创建并发送通知。</span><span class="sxs-lookup"><span data-stu-id="60fb5-118">Create and send a notification.</span></span> |
+|[<span data-ttu-id="db575-120">创建通知</span><span class="sxs-lookup"><span data-stu-id="db575-120">Create notification</span></span>](../api/user-post-notifications.md) | [<span data-ttu-id="db575-121">通告</span><span class="sxs-lookup"><span data-stu-id="db575-121">notification</span></span>](projectrome-notification.md) |<span data-ttu-id="db575-122">创建并发送通知。</span><span class="sxs-lookup"><span data-stu-id="db575-122">Create and send a notification.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="60fb5-119">属性</span><span class="sxs-lookup"><span data-stu-id="60fb5-119">Properties</span></span>
-|<span data-ttu-id="60fb5-120">名称</span><span class="sxs-lookup"><span data-stu-id="60fb5-120">Name</span></span> | <span data-ttu-id="60fb5-121">类型</span><span class="sxs-lookup"><span data-stu-id="60fb5-121">Type</span></span> | <span data-ttu-id="60fb5-122">说明</span><span class="sxs-lookup"><span data-stu-id="60fb5-122">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="db575-123">属性</span><span class="sxs-lookup"><span data-stu-id="db575-123">Properties</span></span>
+|<span data-ttu-id="db575-124">名称</span><span class="sxs-lookup"><span data-stu-id="db575-124">Name</span></span> | <span data-ttu-id="db575-125">类型</span><span class="sxs-lookup"><span data-stu-id="db575-125">Type</span></span> | <span data-ttu-id="db575-126">描述</span><span class="sxs-lookup"><span data-stu-id="db575-126">Description</span></span>|
 |:----|:-----|:-----------|
-| <span data-ttu-id="60fb5-123">targetHostName</span><span class="sxs-lookup"><span data-stu-id="60fb5-123">targetHostName</span></span> | <span data-ttu-id="60fb5-124">String</span><span class="sxs-lookup"><span data-stu-id="60fb5-124">String</span></span> | <span data-ttu-id="60fb5-125">表示呼叫服务要为其发布通知的应用程序的主机名 (针对给定用户)。</span><span class="sxs-lookup"><span data-stu-id="60fb5-125">Represents the host name of the app to which the calling service wants to post the notification, for the given user.</span></span> |
-| <span data-ttu-id="60fb5-126">appNotificationId</span><span class="sxs-lookup"><span data-stu-id="60fb5-126">appNotificationId</span></span> | <span data-ttu-id="60fb5-127">String</span><span class="sxs-lookup"><span data-stu-id="60fb5-127">String</span></span> | <span data-ttu-id="60fb5-128">通知的应用程序服务器设置的唯一 id, 用于标识和定位单个通知。</span><span class="sxs-lookup"><span data-stu-id="60fb5-128">The unique id set by the app server of a notification that is used to identify and target an individual notification.</span></span> |
-| <span data-ttu-id="60fb5-129">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="60fb5-129">expirationDateTime</span></span> | <span data-ttu-id="60fb5-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="60fb5-130">DateTimeOffset</span></span> | <span data-ttu-id="60fb5-131">在用户通知上设置 UTC 过期时间-当时间启动时, 将从 Microsoft Graph 通知源存储中完全删除通知, 并且不再是通知历史记录的一部分。</span><span class="sxs-lookup"><span data-stu-id="60fb5-131">Sets a UTC expiration time on a user notification - when time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history.</span></span> <span data-ttu-id="60fb5-132">最大值为30天。</span><span class="sxs-lookup"><span data-stu-id="60fb5-132">Max value is 30 days.</span></span> |
-| <span data-ttu-id="60fb5-133">payload</span><span class="sxs-lookup"><span data-stu-id="60fb5-133">payload</span></span> | <span data-ttu-id="60fb5-134">Edm、JSON 对象</span><span class="sxs-lookup"><span data-stu-id="60fb5-134">Edm.ComplexType, JSON object</span></span> | <span data-ttu-id="60fb5-135">这是原始或直观的用户通知的数据内容, 这些通知将传递给应用客户端接收此通知并由其使用。</span><span class="sxs-lookup"><span data-stu-id="60fb5-135">This is the data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification.</span></span> |
-| <span data-ttu-id="60fb5-136">rawContent</span><span class="sxs-lookup"><span data-stu-id="60fb5-136">payload.rawContent</span></span> | <span data-ttu-id="60fb5-137">String</span><span class="sxs-lookup"><span data-stu-id="60fb5-137">String</span></span> | <span data-ttu-id="60fb5-138">原始用户通知的通知内容, 该通知内容将传递给应用程序客户端接收此通知并由其使用。</span><span class="sxs-lookup"><span data-stu-id="60fb5-138">The notification content of a raw user notification that will be delivered to and consumed by the app client receiving this notification.</span></span> <span data-ttu-id="60fb5-139">RawContent 和 VisualContent 中至少有一个有效的和需要对 POST 通知请求有效。</span><span class="sxs-lookup"><span data-stu-id="60fb5-139">At least one of Payload.RawContent and Payload.VisualContent needs to be valid for a POST Notification request.</span></span> |
-| <span data-ttu-id="60fb5-140">有效负载。 visual</span><span class="sxs-lookup"><span data-stu-id="60fb5-140">payload.visual</span></span> | <span data-ttu-id="60fb5-141">Edm、JSON 对象</span><span class="sxs-lookup"><span data-stu-id="60fb5-141">Edm.ComplexType, JSON object</span></span> | <span data-ttu-id="60fb5-142">直观用户通知的可视内容, 它将由每个移动平台上的通知平台使用, 并为用户呈现。</span><span class="sxs-lookup"><span data-stu-id="60fb5-142">The visual content of a visual user notification, which will be consumed by the notification platform on each mobile platform and rendered for the users.</span></span> <span data-ttu-id="60fb5-143">至少有一个内容和 VisualContent 需要对 POST 通知请求有效。</span><span class="sxs-lookup"><span data-stu-id="60fb5-143">At least one of Content and VisualContent needs to be valid for a POST Notification request.</span></span> |
-| <span data-ttu-id="60fb5-144">有效负载. 标题</span><span class="sxs-lookup"><span data-stu-id="60fb5-144">payload.visual.title</span></span> | <span data-ttu-id="60fb5-145">String</span><span class="sxs-lookup"><span data-stu-id="60fb5-145">String</span></span> | <span data-ttu-id="60fb5-146">可视用户通知的标题。</span><span class="sxs-lookup"><span data-stu-id="60fb5-146">The title of a visual user notification.</span></span> <span data-ttu-id="60fb5-147">必须具有 "标题" 或 "正文"。</span><span class="sxs-lookup"><span data-stu-id="60fb5-147">Must have either title or body.</span></span> |
-| <span data-ttu-id="60fb5-148">有效负载</span><span class="sxs-lookup"><span data-stu-id="60fb5-148">payload.visual.body</span></span> | <span data-ttu-id="60fb5-149">String</span><span class="sxs-lookup"><span data-stu-id="60fb5-149">String</span></span> | <span data-ttu-id="60fb5-150">可视化用户通知的正文。</span><span class="sxs-lookup"><span data-stu-id="60fb5-150">The body of a visual user notification.</span></span> <span data-ttu-id="60fb5-151">必须具有 "标题" 或 "正文"。</span><span class="sxs-lookup"><span data-stu-id="60fb5-151">Must have either title or body.</span></span> |
-| <span data-ttu-id="60fb5-152">displayTimeToLive</span><span class="sxs-lookup"><span data-stu-id="60fb5-152">displayTimeToLive</span></span> | <span data-ttu-id="60fb5-153">Int</span><span class="sxs-lookup"><span data-stu-id="60fb5-153">Int</span></span> | <span data-ttu-id="60fb5-154">设置此通知内容将在每个平台的通知查看器中保留多长时间 (以秒为单位)。</span><span class="sxs-lookup"><span data-stu-id="60fb5-154">Sets how long (in seconds) this notification content will stay in each platform’s notification viewer.</span></span> <span data-ttu-id="60fb5-155">例如, 将通知传递给 Windows 设备时, 此属性的值将传递给 ToastNotification, 以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。</span><span class="sxs-lookup"><span data-stu-id="60fb5-155">For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.</span></span> |
-| <span data-ttu-id="60fb5-156">priority</span><span class="sxs-lookup"><span data-stu-id="60fb5-156">priority</span></span> | <span data-ttu-id="60fb5-157">EnumType</span><span class="sxs-lookup"><span data-stu-id="60fb5-157">EnumType</span></span> | <span data-ttu-id="60fb5-158">指示原始用户通知的优先级。</span><span class="sxs-lookup"><span data-stu-id="60fb5-158">Indicates the priority of a raw user notification.</span></span> <span data-ttu-id="60fb5-159">默认情况下, 视觉通知以高优先级发送。</span><span class="sxs-lookup"><span data-stu-id="60fb5-159">Visual notifications are sent with high priority by default.</span></span> <span data-ttu-id="60fb5-160">有效值为 "高" 和 "低"。</span><span class="sxs-lookup"><span data-stu-id="60fb5-160">Valid values are High and Low.</span></span> |
-| <span data-ttu-id="60fb5-161">名</span><span class="sxs-lookup"><span data-stu-id="60fb5-161">groupName</span></span> | <span data-ttu-id="60fb5-162">String</span><span class="sxs-lookup"><span data-stu-id="60fb5-162">String</span></span> | <span data-ttu-id="60fb5-163">此通知所属的组的名称。</span><span class="sxs-lookup"><span data-stu-id="60fb5-163">The name of the group that this notification belongs to.</span></span> <span data-ttu-id="60fb5-164">它由开发人员设置, 用于将通知分组在一起。</span><span class="sxs-lookup"><span data-stu-id="60fb5-164">It is set by the developer for the purpose of grouping notifications together.</span></span> |
-| <span data-ttu-id="60fb5-165">targetPolicy</span><span class="sxs-lookup"><span data-stu-id="60fb5-165">targetPolicy</span></span> | <span data-ttu-id="60fb5-166">Edm、JSON 对象</span><span class="sxs-lookup"><span data-stu-id="60fb5-166">Edm.ComplexType, JSON object</span></span> | <span data-ttu-id="60fb5-167">目标策略对象在两个不同的级别 (应针对其目标的终结点类型 (Windows、iOS 和 Android) 以及应针对目标的特定终结点 (由订阅 id 标识) 中处理通知传递策略。</span><span class="sxs-lookup"><span data-stu-id="60fb5-167">Target policy object handles notification delivery policy at two different levels - endpoint types (Windows, iOS and Android) that should be targeted, and specific endpoints (identified by subscription ids) that should be targeted.</span></span> |
-| <span data-ttu-id="60fb5-168">targetPolicy.platformTypes</span><span class="sxs-lookup"><span data-stu-id="60fb5-168">targetPolicy.platformTypes</span></span> | <span data-ttu-id="60fb5-169">Edm、集合 (EnumType)</span><span class="sxs-lookup"><span data-stu-id="60fb5-169">Edm.ComplexType, Collection (EnumType)</span></span> | <span data-ttu-id="60fb5-170">使用将通知分发筛选到特定平台或平台。</span><span class="sxs-lookup"><span data-stu-id="60fb5-170">Use to filter the notification distribution to a specific platform or platforms.</span></span> <span data-ttu-id="60fb5-171">默认情况下, 将启用所有 "推送终结点类型" (iOS、Windows 和 Android)。</span><span class="sxs-lookup"><span data-stu-id="60fb5-171">By default, all push endpoint types (iOS, Windows, and Android) are enabled.</span></span> |
+| <span data-ttu-id="db575-127">targetHostName</span><span class="sxs-lookup"><span data-stu-id="db575-127">targetHostName</span></span> | <span data-ttu-id="db575-128">字符串</span><span class="sxs-lookup"><span data-stu-id="db575-128">String</span></span> | <span data-ttu-id="db575-129">表示呼叫服务要为其发布通知的应用程序的主机名（针对给定用户）。</span><span class="sxs-lookup"><span data-stu-id="db575-129">Represents the host name of the app to which the calling service wants to post the notification, for the given user.</span></span> <span data-ttu-id="db575-130">如果将 web 终结点作为目标（请参阅**targetPolicy**），请确保**targetHostName**与在应用程序 JSON 属性中的客户端创建订阅时使用的名称相同。</span><span class="sxs-lookup"><span data-stu-id="db575-130">If targeting web endpoints (see **targetPolicy.platformTypes**), ensure that **targetHostName** is the same as the name used when creating a subscription on the client side within the application JSON property.</span></span> |
+| <span data-ttu-id="db575-131">appNotificationId</span><span class="sxs-lookup"><span data-stu-id="db575-131">appNotificationId</span></span> | <span data-ttu-id="db575-132">字符串</span><span class="sxs-lookup"><span data-stu-id="db575-132">String</span></span> | <span data-ttu-id="db575-133">通知的应用程序服务器设置的唯一 ID，用于标识和定位单个通知。</span><span class="sxs-lookup"><span data-stu-id="db575-133">The unique ID set by the app server of a notification that is used to identify and target an individual notification.</span></span> |
+| <span data-ttu-id="db575-134">名</span><span class="sxs-lookup"><span data-stu-id="db575-134">groupName</span></span> | <span data-ttu-id="db575-135">字符串</span><span class="sxs-lookup"><span data-stu-id="db575-135">String</span></span> | <span data-ttu-id="db575-136">此通知所属的组的名称。</span><span class="sxs-lookup"><span data-stu-id="db575-136">The name of the group that this notification belongs to.</span></span> <span data-ttu-id="db575-137">它由开发人员设置，用于将通知分组在一起。</span><span class="sxs-lookup"><span data-stu-id="db575-137">It is set by the developer for the purpose of grouping notifications together.</span></span> |
+| <span data-ttu-id="db575-138">targetPolicy</span><span class="sxs-lookup"><span data-stu-id="db575-138">targetPolicy</span></span> | [<span data-ttu-id="db575-139">targetPolicyEndpoints</span><span class="sxs-lookup"><span data-stu-id="db575-139">targetPolicyEndpoints</span></span>](targetpolicyendpoints.md) | <span data-ttu-id="db575-140">目标策略对象处理应针对的终结点类型（Windows、iOS、Android 和 WebPush）的通知传递策略（针对给定用户）。</span><span class="sxs-lookup"><span data-stu-id="db575-140">Target policy object handles notification delivery policy for endpoint types that should be targeted (Windows, iOS, Android and WebPush) for the given user.</span></span> |
+| <span data-ttu-id="db575-141">payload</span><span class="sxs-lookup"><span data-stu-id="db575-141">payload</span></span> | [<span data-ttu-id="db575-142">payloadTypes</span><span class="sxs-lookup"><span data-stu-id="db575-142">payloadTypes</span></span>](payloadtypes.md)| <span data-ttu-id="db575-143">这是原始或直观的用户通知的数据内容，这些通知将传递给应用客户端接收此通知并由其使用。</span><span class="sxs-lookup"><span data-stu-id="db575-143">This is the data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification.</span></span> |
+| <span data-ttu-id="db575-144">displayTimeToLive</span><span class="sxs-lookup"><span data-stu-id="db575-144">displayTimeToLive</span></span> | <span data-ttu-id="db575-145">Int32</span><span class="sxs-lookup"><span data-stu-id="db575-145">Int32</span></span> | <span data-ttu-id="db575-146">设置此通知内容将在每个平台的通知查看器中保留多长时间（以秒为单位）。</span><span class="sxs-lookup"><span data-stu-id="db575-146">Sets how long (in seconds) this notification content will stay in each platform’s notification viewer.</span></span> <span data-ttu-id="db575-147">例如，将通知传递给 Windows 设备时，此属性的值将传递给 ToastNotification，以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。</span><span class="sxs-lookup"><span data-stu-id="db575-147">For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.</span></span> |
+| <span data-ttu-id="db575-148">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="db575-148">expirationDateTime</span></span> | <span data-ttu-id="db575-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="db575-149">DateTimeOffset</span></span> | <span data-ttu-id="db575-150">使用 ISO 8601 格式为用户通知设置 UTC 过期日期和时间（例如，1月1日午夜 UTC，2019将如下所示： `'2019-01-01T00:00:00Z'`）。</span><span class="sxs-lookup"><span data-stu-id="db575-150">Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: `'2019-01-01T00:00:00Z'`).</span></span> <span data-ttu-id="db575-151">当时间启动时，通知将从 Microsoft Graph 通知源存储中完全删除，并且不再是通知历史记录的一部分。</span><span class="sxs-lookup"><span data-stu-id="db575-151">When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history.</span></span> <span data-ttu-id="db575-152">最大值为30天。</span><span class="sxs-lookup"><span data-stu-id="db575-152">Max value is 30 days.</span></span> |
+| <span data-ttu-id="db575-153">priority</span><span class="sxs-lookup"><span data-stu-id="db575-153">priority</span></span> | <span data-ttu-id="db575-154">string</span><span class="sxs-lookup"><span data-stu-id="db575-154">string</span></span> | <span data-ttu-id="db575-155">指示原始用户通知的优先级。</span><span class="sxs-lookup"><span data-stu-id="db575-155">Indicates the priority of a raw user notification.</span></span> <span data-ttu-id="db575-156">默认情况下，视觉通知以高优先级发送。</span><span class="sxs-lookup"><span data-stu-id="db575-156">Visual notifications are sent with high priority by default.</span></span> <span data-ttu-id="db575-157">有效值为 `None`、`High` 和 `Low`。</span><span class="sxs-lookup"><span data-stu-id="db575-157">Valid values are `None`, `High` and `Low`.</span></span> |
+| <span data-ttu-id="db575-158">fallbackPolicy</span><span class="sxs-lookup"><span data-stu-id="db575-158">fallbackPolicy</span></span> | [<span data-ttu-id="db575-159">fallbackPolicy</span><span class="sxs-lookup"><span data-stu-id="db575-159">fallbackPolicy</span></span>](fallbackpolicy.md) | <span data-ttu-id="db575-160">可选回退策略对象仅处理 iOS 终结点的通知回退策略，旨在用于由于特定于平台的限制而无法发送到设备的高优先级原始通知（例如节电模式）。</span><span class="sxs-lookup"><span data-stu-id="db575-160">Optional fallback policy object handles notification fallback policy for iOS endpoints only and is designed to be used for high-priority raw notifications that might not be delivered to devices due to platform specific restrictions (e.g. battery saver mode).</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="60fb5-172">关系</span><span class="sxs-lookup"><span data-stu-id="60fb5-172">Relationships</span></span>
-<span data-ttu-id="60fb5-173">无。</span><span class="sxs-lookup"><span data-stu-id="60fb5-173">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="60fb5-174">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="60fb5-174">JSON representation</span></span>
-<span data-ttu-id="60fb5-175">以下是在发布传递到目标操作系统的直接直观通知时, 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="60fb5-175">The following is a JSON representation of the resource when you publish a direct visual notification that is delivered to the destination operating system.</span></span>
+## <a name="relationships"></a><span data-ttu-id="db575-161">关系</span><span class="sxs-lookup"><span data-stu-id="db575-161">Relationships</span></span>
+<span data-ttu-id="db575-162">无。</span><span class="sxs-lookup"><span data-stu-id="db575-162">None.</span></span>
+
+
+## <a name="json-representation"></a><span data-ttu-id="db575-163">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="db575-163">JSON representation</span></span>
+<span data-ttu-id="db575-164">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="db575-164">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.notification",
+  "baseType": "",
+  "keyProperty": "id"
+}-->
 
 ```json
-{   
+{
   "targetHostName": "String",
-  "appNotificationId": "String",
-  "expirationDateTime": "DateTimeOffset",
-  "payload":  
-  {
-    "visualContent": 
-    {
-      "title": "String",
-      "body": "String"
-    },
-  },
-  "displayTimeToLive": "Int",
-  "priority": "Enum",
-  "groupName": "String",
-  "targetPolicy":
-  {
-    "platformTypes": [ 
-      "Enum"
-    ]
-  }
+  "appNotificationid": "String (identifier)",
+  "groupName": "String", 
+  "targetPolicy": {"@odata.type": "microsoft.graph.targetPolicyEndpoints"},
+  "payload": {"@odata.type": "microsoft.graph.payloadTypes"},
+  "displayTimeToLive": 1024,
+  "expirationDateTime": "String (timestamp)",
+  "priority": "string",
+  "fallbackPolicy": {"@odata.type": "microsoft.graph.fallbackpolicy"},  
 }
 ```
 
-<span data-ttu-id="60fb5-176">以下是在发布传递给应用程序客户端的原始数据通知时的资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="60fb5-176">The following is a JSON representation of the resource when you publish a raw data notification that is delivered to app clients.</span></span>
-```json
-{   
-  "targetHostName": "String",
-  "appNotificationId": "String",
-  "expirationDateTime": "DateTimeOffset",
-  "payload":  
-  {
-    "rawContent": "String"
-  },
-  "displayTimeToLive": "Int",
-  "priority": "Enum",
-  "groupName": "String",
-  "targetPolicy":
-  {
-    "platformTypes": [ 
-      "Enum"
-    ]
-  }
-}
-```
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "notification resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

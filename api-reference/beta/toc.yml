@@ -747,6 +747,15 @@
                   href: api/calendargroup-list-calendars.md
                 - name: 在日历组中创建日历
                   href: api/calendargroup-post-calendars.md
+            - name: 日历权限
+              href: resources/calendarpermission.md
+              items:
+                - name: 获取
+                  href: api/calendarpermission-get.md
+                - name: 更新
+                  href: api/calendarpermission-update.md
+                - name: 删除
+                  href: api/calendarpermission-delete.md
             - name: 日历视图
               href: api/calendar-list-calendarview.md
               items:
@@ -798,6 +807,8 @@
                   href: api/place-list.md
                 - name: 获取位置
                   href: api/place-get.md
+                - name: 更新位置
+                  href: api/place-update.md
         - name: 云通信
           displayName: Cloud communications
           items:
@@ -7497,7 +7508,7 @@
                   items:
                     - name: 获取
                       href: api/intune-shared-windowsautopilotdeploymentprofile-get.md
-                    - name: assign 操作
+                    - name: 分配操作
                       href: api/intune-shared-windowsautopilotdeploymentprofile-assign.md
                     - name: hasPayloadLinks 操作
                       href: api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md
@@ -8200,10 +8211,30 @@
                   href: api/application-update.md
                 - name: 删除应用程序
                   href: api/application-delete.md
+                - name: 列出已删除的应用程序
+                  href: api/directory-deleteditems-list.md
+                - name: 获取已删除的应用程序
+                  href: api/directory-deleteditems-get.md
+                - name: 永久删除应用程序
+                  href: api/directory-deleteditems-delete.md
+                - name: 还原已删除的应用程序
+                  href: api/directory-deleteditems-restore.md
+                - name: 添加密码
+                  href: api/application-addpassword.md
+                - name: 删除密码
+                  href: api/application-removepassword.md
+                - name: 创建扩展
+                  href: api/application-post-extensionproperty.md
+                - name: 列表扩展
+                  href: api/application-list-extensionproperty.md
+                - name: 删除扩展
+                  href: api/application-delete-extensionproperty.md
                 - name: 列出所有者
                   href: api/application-list-owners.md
-                - name: 分配所有者
+                - name: 添加所有者
                   href: api/application-post-owners.md
+                - name: 删除所有者
+                  href: api/application-delete-owners.md
                 - name: 应用程序模板
                   href: resources/applicationtemplate.md
                   items:
@@ -8238,7 +8269,7 @@
             - name: 基于证书的身份验证配置
               href: resources/certificatebasedauthconfiguration.md
               items:
-                - name: 列出
+                - name: 列表
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: 获取
                   href: api/certificatebasedauthconfiguration-get.md
@@ -8268,7 +8299,7 @@
                       items:
                         - name: 命名位置
                           href: resources/namedlocation.md
-                        - name: 列出
+                        - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
                         - name: 获取
                           href: api/namedlocation-get.md
@@ -8430,6 +8461,63 @@
                   href: api/domain-update.md
                 - name: 验证域
                   href: api/domain-verify.md
+            - name: 权利管理
+              href: resources/entitlementmanagement-root.md
+              items:
+                - name: 访问包
+                  href: resources/accesspackage.md
+                  items:
+                    - name: 列出
+                      href: api/accesspackage-list.md
+                    - name: 创建
+                      href: api/accesspackage-post.md
+                    - name: 获取
+                      href: api/accesspackage-get.md
+                    - name: 删除
+                      href: api/accesspackage-delete.md
+                - name: 访问包分配
+                  href: resources/accesspackageassignment.md
+                  items:
+                    - name: 列出
+                      href: api/accesspackageassignment-list.md
+                - name: 访问包分配策略
+                  href: resources/accesspackageassignmentpolicy.md
+                  items:
+                    - name: 列出
+                      href: api/accesspackageassignmentpolicy-list.md
+                    - name: 创建
+                      href: api/accesspackageassignmentpolicy-post.md
+                    - name: 获取
+                      href: api/accesspackageassignmentpolicy-get.md
+                    - name: 删除
+                      href: api/accesspackageassignmentpolicy-delete.md
+                - name: 访问包分配请求
+                  href: resources/accesspackageassignmentrequest.md
+                  items:
+                    - name: 列出
+                      href: api/accesspackageassignmentrequest-list.md
+                    - name: 创建
+                      href: api/accesspackageassignmentrequest-post.md
+                    - name: 获取
+                      href: api/accesspackageassignmentrequest-get.md
+                - name: 访问包分配资源角色
+                  href: resources/accesspackageassignmentresourcerole.md
+                  items:
+                    - name: 列出
+                      href: api/accesspackageassignmentresourcerole-list.md
+                - name: 访问包目录
+                  href: resources/accesspackagecatalog.md
+                  items:
+                    - name: 列出
+                      href: api/accesspackagecatalog-list.md
+                    - name: 创建
+                      href: api/accesspackagecatalog-post.md
+                    - name: 获取
+                      href: api/accesspackagecatalog-get.md
+                    - name: 删除
+                      href: api/accesspackagecatalog-delete.md
+                    - name: 列出资源
+                      href: api/accesspackagecatalog-list-accesspackageresources.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
               items:
@@ -8514,6 +8602,23 @@
                   href: api/identityprovider-update.md
                 - name: 删除标识提供程序
                   href: api/identityprovider-delete.md
+            - name: 信息保护
+              items:
+                - name: 标签
+                  href: resources/informationprotectionlabel.md
+                  items:
+                    - name: 列表标签
+                      href: api/informationprotectionpolicy-list-labels.md
+                    - name: 获取标签
+                      href: api/informationprotectionlabel-get.md
+                    - name: 评估应用程序
+                      href: api/informationprotectionlabel-evaluateapplication.md
+                    - name: 评估分类结果
+                      href: api/informationprotectionlabel-evaluateclassificationresults.md
+                    - name: 评估删除
+                      href: api/informationprotectionlabel-evaluateremoval.md
+                    - name: 提取标签
+                      href: api/informationprotectionlabel-extractlabel.md
             - name: 邀请管理器
               href: resources/invitation.md
               items:
@@ -8796,6 +8901,10 @@
                   href: api/serviceprincipal-update.md
                 - name: 删除服务主体
                   href: api/serviceprincipal-delete.md
+                - name: 添加密码
+                  href: api/serviceprincipal-addpassword.md
+                - name: 删除密码
+                  href: api/serviceprincipal-removepassword.md
                 - name: 检查 member 对象
                   href: api/serviceprincipal-checkmemberobjects.md
             - name: 订阅的 SKU
@@ -9181,13 +9290,14 @@
                 - name: 获取资源
                   href: api/resource-get.md
         - name: 通知
-          href: resources/notifications-api-overview.md
           items:
+            - name: 概述
+              href: resources/notifications-api-overview.md
             - name: 通知
               href: resources/projectrome-notification.md
               items:
                 - name: 创建和发送通知
-                  href: api/notifications-post.md
+                  href: api/user-post-notifications.md
         - name: 个人联系人
           href: resources/contact.md
           displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -9506,6 +9616,67 @@
                       href: api/reportroot-getyammergroupsactivitygroupcounts.md
                     - name: 获取活动计数
                       href: api/reportroot-getyammergroupsactivitycounts.md
+        - name: 搜索（预览）
+          displayname: Microsoft Search API
+          items:
+            - name: 查询
+              items:
+                - name: 概述
+                  href: resources/search-api-overview.md
+                - name: 查询数据
+                  href: api/search-query.md
+            - name: 索引
+              items:
+                - name: 概述
+                  href: resources/indexing-api-overview.md
+                - name: 外部连接
+                  items:
+                    - name: 外部连接
+                      href: resources/externalconnection.md
+                    - name: 列出外部连接
+                      href: api/externalconnection-list.md
+                    - name: 获取外部连接
+                      href: api/externalconnection-get.md
+                    - name: 创建外部连接
+                      href: api/external-post-connections.md
+                    - name: 更新外部连接
+                      href: api/externalconnection-update.md
+                    - name: 删除外部连接
+                      href: api/externalconnection-delete.md
+                    - name: 创建架构
+                      href: api/externalconnection-post-schema.md
+                    - name: Get 操作
+                      href: api/connectionoperation-get.md
+                    - name: 创建外部项
+                      href: api/externalconnection-put-items.md
+                - name: 架构
+                  items:
+                    - name: 架构
+                      href: resources/schema.md
+                    - name: 获取架构
+                      href: api/schema-get.md
+                    - name: 创建架构
+                      href: api/externalconnection-post-schema.md
+                - name: 外部项
+                  items:
+                    - name: 外部项
+                      href: resources/externalitem.md
+                    - name: 创建外部项
+                      href: api/externalconnection-put-items.md
+                    - name: 更新外部项
+                      href: api/externalitem-update.md
+                    - name: 删除外部项
+                      href: api/externalitem-delete.md
+                - name: 外部文件
+                  items:
+                    - name: 外部文件
+                      href: resources/externalfile.md
+                    - name: 创建外部文件
+                      href: api/externalconnection-put-items.md
+                    - name: 更新外部文件
+                      href: api/externalitem-update.md
+                    - name: 删除外部文件
+                      href: api/externalitem-delete.md
         - name: 安全性
           displayname: 'Security API, Microsoft Graph Security API'
           items:
@@ -9629,7 +9800,7 @@
                   href: api/sitepage-delete.md
                 - name: 发布页面
                   href: api/sitepage-publish.md
-        - name: 社交和工作场所智能
+        - name: 人员和工作区智能
           items:
             - name: 概述
               href: resources/social-overview.md
@@ -9659,9 +9830,9 @@
             - name: 分析
               href: resources/useranalytics.md
               items:
-                - name: Settings
+                - name: 设置
                   items:
-                    - name: Settings
+                    - name: 设置
                       href: resources/settings.md
                     - name: 获取设置
                       href: api/useranalytics-get-settings.md
@@ -9685,6 +9856,65 @@
                       href: api/activitystatistics-get.md
             - name: 有关记录
               href: resources/mention.md
+            - name: 配置文件
+              href: resources/profile.md
+              items:
+                - name: 获取配置文件
+                  href: api/profile-get.md
+                - name: 删除配置文件
+                  href: api/profile-delete.md
+                - name: 列表帐户
+                  href: api/profile-list-account.md
+                - name: 列出 anniversariles
+                  href: api/profile-list-anniversaries.md
+                - name: 创建周年纪念
+                  href: api/profile-post-anniversaries.md
+                - name: 列出教育活动
+                  href: api/profile-list-educationalactivities.md
+                - name: 创建教育活动
+                  href: api/profile-post-educationalactivities.md
+                - name: 创建电子邮件地址
+                  href: api/profile-post-emails.md
+                - name: 列出电子邮件地址
+                  href: api/profile-list-emails.md
+                - name: 创建利息
+                  href: api/profile-post-interests.md
+                - name: 列出兴趣
+                  href: api/profile-list-interests.md
+                - name: 创建语言
+                  href: api/profile-post-languages.md
+                - name: 列出语言
+                  href: api/profile-list-languages.md
+                - name: 创建名称
+                  href: api/profile-post-names.md
+                - name: 列出名称
+                  href: api/profile-list-names.md
+                - name: 列出网站
+                  href: api/profile-list-websites.md
+                - name: 创建电话号码
+                  href: api/profile-post-phones.md
+                - name: 列出电话号码
+                  href: api/profile-list-phones.md
+                - name: 创建位置
+                  href: api/profile-post-positions.md
+                - name: 列表位置
+                  href: api/profile-list-positions.md
+                - name: 创建项目
+                  href: api/profile-post-projects.md
+                - name: 列出项目
+                  href: api/profile-list-projects.md
+                - name: 创建技能
+                  href: api/profile-post-skills.md
+                - name: 列表技能
+                  href: api/profile-list-skills.md
+                - name: 创建 web 帐户
+                  href: api/profile-post-webaccounts.md
+                - name: 列出 web 帐户
+                  href: api/profile-list-webaccounts.md
+                - name: 创建网站
+                  href: api/profile-post-websites.md
+                - name: 列出网站
+                  href: api/profile-list-websites.md
         - name: 任务和计划
           displayName: Planner
           items:
@@ -10103,13 +10333,13 @@
               items:
                 - name: 列出
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: 创建
                   href: api/outlookuser-post-taskgroups.md
                 - name: 获取
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: Delete
+                - name: 删除
                   href: api/outlooktaskfolder-delete.md
                 - name: 在组中列出任务文件夹
                   href: api/outlooktaskfolder-list-tasks.md
